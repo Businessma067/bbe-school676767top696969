@@ -33,68 +33,68 @@
     "tables_markdown": null
   },
   {
-    "case_id": "MATH 2.137",
-    "id": "math-2-137",
-    "title": "Klausuraufgaben – 1",
+    "case_id": "MATH 2.MOCK.CALC",
+    "id": "MATH 2.MOCK.CALC",
+    "title": "Mehrstufige Algebra mit Schranken",
     "chapter": 2,
-    "subsection": "2.5",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "subsection": "2.4",
+    "difficulty_level": "5/5",
+    "context": "Jede Aussage ist eine unabhängige elementare Algebra-Prüfung.\n\nNacheinander erscheinen: verschachtelter Bruch, $2\\times 2$-Linearsystem, Polynomprodukt, rationale Gleichung und Wurzelgleichung.\n\nEntscheide, ob jede Aussage wahr oder falsch ist. Die Aussagen nennen Schranken, keine fertigen Endergebnisse.",
     "statements": [
-      "Für alle reellen $x$, $y$, $z$ gilt $x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$.",
-      "Bei $t=2$ sind sowohl $\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}$ als auch $\\dfrac{t+1}{2t+1}$ gleich $\\dfrac{3}{5}$.",
-      "Für $u>0$ und $v>0$ mit $u\\neq v$ gilt $\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$.",
-      "Bei $x=-2$, $y=3$ sind sowohl $|xy|$ als auch $|x|\\,|y|$ gleich $6$.",
-      "Wenn $p>q$, dann $p^2>q^2$."
+      "Für $x=2$ ist der verschachtelte Quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ streng kleiner als $0{,}8$.",
+      "Die eindeutige Lösung des Systems $3u-2v=11$, $2u+5v=3$ erfüllt $u+v>3$.",
+      "Der Wert von $\\dfrac{(2x^{3}-5x+1)(3x-4)}{x^{2}-1}$ bei $x=2$ ist streng größer als $4$.",
+      "Über den reellen Zahlen mit $x\\ne\\pm 2$ ist jede Lösung von $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ streng kleiner als $2$.",
+      "Die positive Lösung von $\\sqrt{x+7}-\\sqrt{x-1}=2$ ist streng größer als $3$."
     ],
     "answer_key": [
       true,
+      false,
       true,
-      true,
-      true,
+      false,
       false
     ],
+    "solution_overview": "Berechne jeden Ausdruck vollständig und vergleiche danach mit der Schranke — die Aussagen nennen nie die fertige Zahl.\n\nBei $x=2$ ist der verschachtelte Quotient $5/7\\approx 0{,}714<0{,}8$. Das System liefert $u=61/19$, $v=-17/19$, Summe $44/19\\approx 2{,}32\\ngtr 3$. Das Polynomprodukt ergibt $14/3\\approx 4{,}67>4$. Die rationale Gleichung hat die einzige Lösung $x=2{,}5\\nless 2$. Die Wurzelgleichung hat die positive Lösung $x=2\\ngtr 3$.",
     "tactical_explanations": [
-      "**A.** → Wahr\n\nRechne die rechte Seite aus und vergleiche sie mit der linken.\n\nDie drei Quadrate der Differenzen:\n\n$$(x-y)^2=x^2-2xy+y^2$$\n\n$$(y-z)^2=y^2-2yz+z^2$$\n\n$$(z-x)^2=z^2-2zx+x^2$$\n\nAddieren und halbieren:\n\n$$\\tfrac12\\bigl[(x-y)^2+(y-z)^2+(z-x)^2\\bigr]=x^2+y^2+z^2-xy-yz-zx$$\n\nBeide Seiten stimmen für alle reellen $x$, $y$, $z$ überein.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nVereinfache den Kettenbruch von innen nach außen, mit $t\\neq 0$, $t\\neq -1$ und $t\\neq -\\tfrac12$.\n\nInnerste Summe:\n\n$$1+\\frac{1}{t}=\\frac{t+1}{t}$$\n\nErster Kehrwert:\n\n$$\\frac{1}{1+\\frac{1}{t}}=\\frac{t}{t+1}$$\n\nÄußere Summe:\n\n$$1+\\frac{t}{t+1}=\\frac{2t+1}{t+1}$$\n\nÄußerer Kehrwert:\n\n$$\\dfrac{1}{1+\\dfrac{1}{1+\\frac{1}{t}}}=\\dfrac{t+1}{2t+1}$$\n\nEinsetzen von $t=2$ liefert auf beiden Seiten\n\n$$\\dfrac{2+1}{2\\cdot 2+1}=\\dfrac{3}{5}$$\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nMache den Nenner wurzelfrei, indem du mit dem konjugierten Ausdruck $\\sqrt{u}-\\sqrt{v}$ erweiterst.\n\n$$\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{(\\sqrt{u}-\\sqrt{v})^{2}}{(\\sqrt{u}+\\sqrt{v})(\\sqrt{u}-\\sqrt{v})}=\\dfrac{(\\sqrt{u}-\\sqrt{v})^{2}}{u-v}$$\n\nDer Zähler nach der binomischen Formel:\n\n$$(\\sqrt{u}-\\sqrt{v})^{2}=u-2\\sqrt{uv}+v$$\n\nZusammen also\n\n$$\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$$\n\nWegen $u\\neq v$ ist der Nenner ungleich null, die Umformung also zulässig. Das ist genau die behauptete Form.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nSetze $x=-2$ und $y=3$ in beide Betragsausdrücke ein.\n\nErst multiplizieren, dann Betrag:\n\n$$xy=(-2)\\cdot 3=-6$$\n\n$$|xy|=|-6|=6$$\n\nErst Beträge, dann multiplizieren:\n\n$$|x|=|-2|=2,\\qquad |y|=|3|=3$$\n\n$$|x|\\,|y|=2\\cdot 3=6$$\n\nBeide Seiten ergeben $6$, genau den behaupteten Wert. Allgemein gilt $|xy|=|x|\\,|y|$ für alle reellen $x,y$; hier ist es die konkrete Zahlenprobe.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nQuadrieren erhält die Ordnung nicht auf ganz $\\mathbb{R}$.\n\nZerlege die Differenz der Quadrate:\n\n$$p^{2}-q^{2}=(p-q)(p+q)$$\n\nAus $p>q$ folgt $p-q>0$, aber der Faktor $p+q$ kann negativ sein. Dann ist das Produkt negativ.\n\nGegenbeispiel $p=-1$, $q=-3$: es gilt $-1>-3$, aber\n\n$$p^{2}=1,\\qquad q^{2}=9,\\qquad 1<9$$\n\nAus $p>q$ folgt also nicht $p^{2}>q^{2}$.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nBei $x=2$:\n$$\n\\dfrac{3}{2}-\\dfrac{2}{3}=\\dfrac{5}{6},\\qquad \\dfrac{5}{3}-\\dfrac{1}{2}=\\dfrac{7}{6},\\qquad \\dfrac{5/6}{7/6}=\\dfrac{5}{7}\\approx 0{,}714<0{,}8.\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nAus $2u+5v=3$ folgt $v=(3-2u)/5$. Einsetzen in $3u-2v=11$:\n$$\n15u-2(3-2u)=55 \\Rightarrow 19u=61 \\Rightarrow u=\\dfrac{61}{19},\\quad v=-\\dfrac{17}{19}.\n$$\n$$\nu+v=\\dfrac{44}{19}\\approx 2{,}32 \\ngtr 3.\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Wahr\n\nBei $x=2$: Zähler $(16-10+1)\\cdot(6-4)=7\\cdot 2=14$, Nenner $3$, Quotient $14/3\\approx 4{,}667>4$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGemeinsamer Nenner $x^{2}-4$:\n$$\n\\dfrac{2x}{x^{2}-4}=\\dfrac{5}{x^{2}-4}\\quad(x\\ne\\pm 2)\\Rightarrow x=\\dfrac{5}{2}=2{,}5.\n$$\nDie einzige Lösung $2{,}5$ ist nicht streng kleiner als $2$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nIsolieren und quadrieren:\n$$\n\\sqrt{x+7}=2+\\sqrt{x-1}\\Rightarrow x+7=x+3+4\\sqrt{x-1}\\Rightarrow x=2.\n$$\nProbe: $\\sqrt{9}-\\sqrt{1}=2$. Die positive Lösung $2$ ist nicht $>3$.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "5/5",
-    "solution_overview": "Fünf kurze Einzelprüfungen aus der Termumformung. Die binomische Formel $(a-b)^2=a^2-2ab+b^2$ trägt A und C, der Kettenbruch in B wird von innen nach außen vereinfacht, D ist die Multiplikativität des Betrags $|xy|=|x|\\,|y|$, und E scheitert an der dritten binomischen Formel:\n\n$$p^{2}-q^{2}=(p-q)(p+q)$$\n\nQuadrieren ist nur auf $[0,\\infty)$ monoton; bei negativen Zahlen kippt die Ordnung.",
     "figure": null,
     "tables_markdown": null
   },
   {
-    "case_id": "MATH 11.60",
-    "id": "math-11-60",
-    "title": "Bewertung zweier Franchise-Zahlungen mit gemeinsamem Zeithorizont",
+    "case_id": "MATH 3.MOCK.MORT5",
+    "id": "MATH 3.MOCK.MORT5",
+    "title": "Sechs Zahlungen — gestaffelte Zinsen und Halbzeit des Kapitals",
     "chapter": 3,
-    "subsection": "3.3",
-    "context": "Ein Franchisevertrag sichert einem Investor zwei Zahlungen des Franchisenehmers zu: USD 30 000 in genau 5 Jahren und USD 55 000 in genau 10 Jahren, also nach dem doppelten Horizont. Diskontiert wird stetig mit 8 % pro Jahr. Weil der zweite Zahlungszeitpunkt genau doppelt so weit entfernt liegt, ist sein Diskontfaktor das Quadrat des ersten. Die Aufgabe verwendet $K_1 = 30000$ bei $t_1 = 5$, $K_2 = 55000$ bei $t_2 = 10$ und $r = 0{,}08$.",
+    "subsection": "3.2",
+    "difficulty_level": "5/5",
+    "context": "Ein Kredit über EUR $87{,}500$ wird durch sechs gleiche Jahresendzahlungen bei effektivem Jahreszins $7{,}5\\%$ getilgt. Sei $A$ die Zahlung und $B_{k}$ das Restkapital unmittelbar nach der Zahlung in Jahr $k$ ($B_{0}=87{,}500$).\n\nEntscheide, ob jede Aussage wahr oder falsch ist.",
     "statements": [
-      "Der Diskontfaktor für die 5-Jahres-Zahlung beträgt etwa 0,6703.",
-      "Der Diskontfaktor für die 10-Jahres-Zahlung beträgt etwa 0,4493.",
-      "Der Barwert der Zahlung über USD 30 000 beträgt etwa USD 21 500,00.",
-      "Der Barwert der Zahlung über USD 55 000 beträgt etwa USD 26 000,00.",
-      "Der gesamte Barwert, den der Investor heute für beide Zahlungen zahlen sollte, beträgt etwa USD 47 500,00."
+      "Die gleichbleibende Zahlung $A$ liegt streng zwischen EUR $18{,}500$ und EUR $18{,}800$.",
+      "Die Zinsen in Jahr $1$ übersteigen die Zinsen in Jahr $2$ um streng mehr als EUR $900$.",
+      "Unmittelbar nach der dritten Zahlung ist noch mehr als die Hälfte des ursprünglichen Kapitals offen.",
+      "Die Zinsen in Jahr $5$ sind streng kleiner als EUR $2{,}600$.",
+      "Die gesamten Zinsen über die sechs Jahre sind streng kleiner als EUR $24{,}000$."
     ],
     "answer_key": [
       true,
       true,
-      false,
-      false,
+      true,
+      true,
       false
     ],
+    "solution_overview": "Annuität:\n$$\nA=87{,}500\\cdot\\dfrac{0{,}075}{1-1{,}075^{-6}}\\approx 18{,}641.\n$$\nZinsdifferenz Jahr 1 zu 2 $\\approx 906$. Rest nach Zahlung 3: $B_{3}\\approx 48{,}480>43{,}750$. Zinsen Jahr 5 $\\approx 2{,}510$. Gesamtzinsen $6A-87{,}500\\approx 24{,}346$.",
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStetige Diskontierung mit $r=0{,}08$ über $t_1=5$ Jahre benutzt den Faktor $e^{-rt}$:\n\n$$e^{-0{,}08\\cdot 5}=e^{-0{,}4}$$\n\nNumerisch ist $e^{-0{,}4}\\approx 0{,}670320$, gerundet also $0{,}6703$. Das ist genau der behauptete Wert.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDer zweite Horizont ist $t_2=10=2\\cdot 5$, also\n\n$$e^{-0{,}08\\cdot 10}=e^{-0{,}8}=\\left(e^{-0{,}4}\\right)^{2}$$\n\nMit $e^{-0{,}4}\\approx 0{,}6703$ folgt\n\n$$(0{,}6703)^{2}\\approx 0{,}4493$$\n\nDirekt gerechnet ist $e^{-0{,}8}\\approx 0{,}449329$, gerundet $0{,}4493$. Das passt zur Behauptung.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nBarwert der ersten Zahlung:\n\n$$\\mathrm{BW}_{1}=30\\,000\\cdot e^{-0{,}4}\\approx 30\\,000\\cdot 0{,}67032=20\\,109{,}60$$\n\nBehauptet werden rund $21\\,500$. Aber\n\n$$20\\,109{,}60\\neq 21\\,500$$\n\nDie Abweichung von fast USD 1400 ist keine Rundungsfrage.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nBarwert der zweiten Zahlung:\n\n$$\\mathrm{BW}_{2}=55\\,000\\cdot e^{-0{,}8}\\approx 55\\,000\\cdot 0{,}449329=24\\,713{,}09$$\n\nBehauptet werden rund $26\\,000$. Aber\n\n$$24\\,713{,}09\\neq 26\\,000$$\n\nAuch hier liegt die Behauptung deutlich zu hoch.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nAddiere die beiden Barwerte aus C und D:\n\n$$\\mathrm{BW}=\\mathrm{BW}_{1}+\\mathrm{BW}_{2}\\approx 20\\,109{,}60+24\\,713{,}09=44\\,822{,}69$$\n\nBehauptet werden rund $47\\,500$. Aber\n\n$$44\\,822{,}69\\neq 47\\,500$$\n\nDer korrekte Gesamtbarwert liegt bei rund USD 44 823.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\n$$\nA=87{,}500\\cdot\\dfrac{0{,}075}{1-1{,}075^{-6}}.\n$$\nMit $1{,}075^{6}\\approx 1{,}543$ folgt $A\\approx 18{,}641$, also $18{,}500<A<18{,}800$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\n$$\nI_{1}=0{,}075\\cdot 87{,}500=6{,}562{,}5.\n$$\nNach der ersten Zahlung $B_{1}\\approx 75{,}421$, also $I_{2}\\approx 5{,}657$ und $I_{1}-I_{2}\\approx 906>900$.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nFortschreiben: $B_{1}\\approx 75{,}421$, $B_{2}\\approx 62{,}436$, $B_{3}\\approx 48{,}480$. Hälfte des Kapitals ist $43{,}750$, und $B_{3}>43{,}750$.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nWeiter: $B_{4}\\approx 33{,}472$, also $I_{5}=0{,}075\\cdot B_{4}\\approx 2{,}510<2{,}600$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$\n6A-87{,}500\\approx 111{,}846-87{,}500=24{,}346>24{,}000.\n$$\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "5/5",
-    "solution_overview": "Zwei Zahlungen, stetige Diskontierung. Bei stetiger Verzinsung mit der Rate $r$ hat eine Zahlung $K$ nach $t$ Jahren den Barwert\n\n$$\\mathrm{BW}=K\\,e^{-rt}$$\n\n**Teil 1: Ansatz.**\n\n$$K_1 = 30\\,000,\\qquad t_1 = 5,\\qquad K_2 = 55\\,000,\\qquad t_2 = 10,\\qquad r = 0{,}08$$\n\n**Teil 2: Rechnung.**\n\n$$e^{-0{,}08\\cdot 5}=e^{-0{,}4}\\approx 0{,}6703$$\n\n$$e^{-0{,}08\\cdot 10}=e^{-0{,}8}\\approx 0{,}4493$$\n\nWeil $t_2=2t_1$ ist, gilt $(0{,}6703)^{2}\\approx 0{,}4493$.\n\n$$\\mathrm{BW}_1 = 30\\,000\\,e^{-0{,}4}\\approx 20\\,109{,}60$$\n\n$$\\mathrm{BW}_2 = 55\\,000\\,e^{-0{,}8}\\approx 24\\,713{,}09$$\n\n$$\\mathrm{BW} = 20\\,109{,}60+24\\,713{,}09\\approx 44\\,822{,}69$$\n\nDer faire Preis heute liegt also bei rund USD 44 823.",
     "figure": null,
     "tables_markdown": null
   },
@@ -132,35 +132,35 @@
     "tables_markdown": null
   },
   {
-    "case_id": "MATH 5.17",
-    "id": "math-5-17",
-    "title": "Wasserwerk Riverside, Streit um die Rechnung",
+    "case_id": "MATH 5.MOCK.BLEND",
+    "id": "MATH 5.MOCK.BLEND",
+    "title": "Dreistrom-Oktanmischung mit Vorgabeverhältnis",
     "chapter": 5,
-    "subsection": "5",
-    "context": "Eine Kundin wendet sich an das Wasserwerk Riverside wegen zweier aufeinanderfolgender Rechnungen. Im Mai verbrauchte sie 18 m³ und erhielt eine Rechnung über USD 56,10 — auf diese Mai-Rechnung wurde allerdings ein Säumniszuschlag von 10 % auf den gesamten Rechnungsbetrag aufgeschlagen. Im Juni verbrauchte sie 25 m³ ohne Zuschlag und zahlte USD 65,00. Die Abrechnungsstelle behauptet, die Grundgebühr betrage USD 18,00 und der Arbeitspreis USD 1,85 je m³.",
+    "subsection": "5.3",
+    "difficulty_level": "5/5",
+    "context": "Eine Raffinerie mischt leichte Destillate (Oktanindex $90\\%$), Mittelware ($70\\%$) und Naphtha ($40\\%$) zu einem Fertigkraftstoff von genau $200$ Litern bei $72\\%$ Oktan.\n\nLeichte Destillate kosten EUR $2{,}40$ pro Liter, Mittelware EUR $1{,}80$ pro Liter, Naphtha EUR $1{,}20$ pro Liter.\n\nVorgabe: Die Mischung muss genau doppelt so viel Mittelware wie leichte Destillate verwenden.\n\nEntscheide, ob jede Aussage wahr oder falsch ist.",
     "statements": [
-      "Die Behauptung der Abrechnungsstelle, die monatliche Grundgebühr betrage USD 18,00, ist richtig.",
-      "Der Arbeitspreis beträgt USD 2,00 je Kubikmeter.",
-      "Nach Herausrechnen des Säumniszuschlags betrug die eigentliche Wasserrechnung im Mai USD 51,00.",
-      "Einer Kundin mit 40 m³ Verbrauch in einem Monat würden USD 85,00 berechnet.",
-      "Wäre derselbe Säumniszuschlag von 10 % auf die Juni-Rechnung über USD 65,00 angewendet worden, hätte die Summe USD 71,50 betragen."
+      "In der eindeutigen Mischung, die Volumen-, Oktan- und Vorgabeziele erfüllt, werden mehr als $55$ Liter leichte Destillate verwendet.",
+      "Diese Mischung verwendet streng weniger als $20$ Liter Naphtha.",
+      "Die gesamten Materialkosten dieser $200$-Liter-Mischung übersteigen EUR $370$.",
+      "Würde die Vorgabe auf gleiche Volumen von leichten Destillaten und Mittelware geändert (bei weiterhin $200$ Litern und $72\\%$ Oktan), so würde das Naphtha-Volumen steigen.",
+      "Unter der ursprünglichen Vorgabe macht Mittelware mehr als $55\\%$ des Fertigprodukts nach Volumen aus."
     ],
     "answer_key": [
+      true,
       false,
       true,
       true,
-      false,
       true
     ],
+    "solution_overview": "Mit $L$, $M$, $N$ und $M=2L$:\n$$\nL+M+N=200,\\qquad 0{,}9L+0{,}7M+0{,}4N=144.\n$$\nLösung $L=640/11\\approx 58{,}18$, $M=1280/11\\approx 116{,}36$, $N=280/11\\approx 25{,}45$. Kosten $\\approx 379{,}64$. Bei $M=L$ wird $N=40$ (Naphtha steigt). Mittelware-Anteil $32/55\\approx 58{,}2\\%$.",
     "tactical_explanations": [
-      "**A.** → Falsch\n\nVergleiche den berechneten Wert der Grundgebühr mit der Behauptung der Abrechnungsstelle.\n\nAus dem Gleichungssystem folgt\n\n$$x = 15$$\n\nBehauptet wird\n\n$$x = 18{,}00$$\n\nDie Grundgebühr liegt tatsächlich bei USD 15,00, nicht bei USD 18,00.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nLies den Arbeitspreis aus dem gelösten Gleichungssystem ab.\n\nDie Differenz der beiden Rechnungen ohne Zuschlag betrifft nur den Verbrauch:\n\n$$7y = 65 - 51 = 14$$\n\n$$y = 2$$\n\nDer Arbeitspreis beträgt also USD 2,00 je Kubikmeter — genau wie behauptet, und nicht die von der Abrechnungsstelle genannten USD 1,85.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nRechne den Säumniszuschlag aus der Mai-Rechnung heraus. Ein Zuschlag von 10 % bedeutet Multiplikation mit dem Faktor $1{,}10$, also Division durch $1{,}10$ zum Zurückrechnen:\n\n$$\\frac{56{,}10}{1{,}10} = 51$$\n\nProbe: $51 \\cdot 1{,}10 = 56{,}10$.\n\nDie eigentliche Wasserrechnung im Mai betrug also USD 51,00, genau wie behauptet. Kontrolle mit den Werten $x = 15$ und $y = 2$: $15 + 18 \\cdot 2 = 51$.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nDie Rechnung setzt sich aus Grundgebühr und verbrauchsabhängigem Anteil zusammen:\n\n$$R = x + q\\cdot y$$\n\nMit den berechneten Werten $x = 15$ und $y = 2$ sowie $q = 40$:\n\n$$40 \\cdot 2 = 80$$\n\n$$15 + 80 = 95$$\n\nBerechnet werden also USD 95,00, behauptet werden USD 85,00. Die Werte stimmen nicht überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nEin Säumniszuschlag von 10 % auf den gesamten Rechnungsbetrag ist die Multiplikation mit $1{,}10$.\n\nDie Juni-Rechnung lautet über USD 65,00, also\n\n$$65 \\cdot 1{,}10 = 71{,}50$$\n\nDas ist genau der behauptete Betrag von USD 71,50.\n\nDie Aussage ist wahr."
+      "**A.** → Wahr\n\nAus $M=2L$ und den beiden Bilanzgleichungen folgt $L=640/11\\approx 58{,}18>55$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$$\nN=280/11\\approx 25{,}45 \\nless 20.\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Wahr\n\n$$\n\\text{Kosten}=\\dfrac{2{,}4\\cdot 640+1{,}8\\cdot 1280+1{,}2\\cdot 280}{11}=\\dfrac{4176}{11}\\approx 379{,}64>370.\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nMit $M=L$: $2L+N=200$ und $1{,}6L+0{,}4N=144$ liefern $L=80$, $M=80$, $N=40$.\nUrsprünglich war $N=280/11\\approx 25{,}45$. Also steigt das Naphtha-Volumen von $\\approx 25{,}45$ auf $40$.\n\nDie Aussage ist wahr.",
+      "**E.** → Wahr\n\n$$\n\\dfrac{M}{200}=\\dfrac{1280}{2200}=\\dfrac{32}{55}\\approx 58{,}18\\%>55\\%.\n$$\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "\\frac{2}{5}",
-    "solution_overview": "Im Mai: 18 m³ und USD 56,10 nach einem Säumniszuschlag von 10 % auf den gesamten Betrag. Im Juni: 25 m³ ohne Zuschlag für USD 65,00. Die Abrechnungsstelle behauptet USD 18,00 Grundgebühr und USD 1,85 je m³.\n\n**Teil 1: Gleichungssystem aufstellen.**\n\nSei $x$ die monatliche Grundgebühr und $y$ der Preis je Kubikmeter. Vor dem Aufstellen der Mai-Gleichung muss der Zuschlag von 10 % herausgerechnet werden:\n\n$$\\frac{56{,}10}{1{,}10} = 51$$\n\n$$x + 18y = 51 \\tag{1}$$\n\n$$x + 25y = 65 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nGleichung (1) von (2) abziehen:\n\n$$7y = 14$$\n\n$$y = 2$$\n\nEinsetzen in (1):\n\n$$x + 36 = 51$$\n\n$$x = 15$$\n\n**Ergebnis.** Grundgebühr USD 15,00, Arbeitspreis USD 2,00 je m³.",
     "figure": null,
     "tables_markdown": null
   },
@@ -259,7 +259,7 @@
       "**E.** → Wahr\n\nDie Aufteilung sechs zu vierundzwanzig kostet\n\n$$C_{1}(6)+C_{2}(24)=6^{2}+\\tfrac{24^{2}}{4}=36+144=180$$\n\nVergleich mit der in der Behauptung genannten Schranke $200$:\n\n$$180<200$$\n\nDer Indexwert liegt unter $200$, wie behauptet.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "4/5",
-    "solution_overview": "Dreißig Tausend Brote werden zwischen $C_{1}(q)=aq^{2}$ und $C_{2}(q)=bq^{2}$ aufgeteilt. Ein Durchlauf von $10$ Tausend auf Linie 1 ergab $100$, einer von $8$ Tausend auf Linie 2 ergab $16$.\n\n**Teil 1: Modell aufstellen.**\n\nSeien $q_{1}$ und $q_{2}$ die beiden Mengen in Tausend Broten mit $q_{1}+q_{2}=30$. Jeder protokollierte Durchlauf bestimmt einen Koeffizienten:\n\n$$a\\cdot 10^{2}=100 \\tag{1}$$\n\n$$b\\cdot 8^{2}=16 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nAus (1) folgt $a=1$, aus (2) folgt $b=\\tfrac{1}{4}$. Die Kostenfunktionen lauten also $C_{1}(q)=q^{2}$ und $C_{2}(q)=\\tfrac{q^{2}}{4}$.\n\nDie günstigste Aufteilung im Inneren gleicht die Grenzkosten an. Aus $2q_{1}=\\tfrac{1}{2}q_{2}$ folgt $q_{2}=4q_{1}$, zusammen mit $q_{1}+q_{2}=30$ also\n\n$$q_{1}=6,\\qquad q_{2}=24$$\n\nRandlösung und innere Aufteilung kosten\n\n$$C_{2}(30)=225,\\qquad C_{1}(6)+C_{2}(24)=36+144=180$$\n\n**Ergebnis.** $a=1$, $b=\\tfrac{1}{4}$, Aufteilung $(6,24)$, Randlösung $225$, Aufteilung $180$.",
+    "solution_overview": "Dreißig Tausend Brote werden zwischen $C_{1}(q)=aq^{2}$ und $C_{2}(q)=bq^{2}$ aufgeteilt. Ein Durchlauf von $10$ Tausend auf Linie 1 ergab $100$, einer von $8$ Tausend auf Linie 2 ergab $16$.\n\n**Teil 1: Modell aufstellen.**\n\nSeien $q_{1}$ und $q_{2}$ die beiden Mengen in Tausend Broten mit $q_{1}+q_{2}=30$. Jeder protokollierte Durchlauf bestimmt einen Koeffizienten:\n\n$$a\\cdot 10^{2}=100 $$\n\n$$b\\cdot 8^{2}=16 $$\n\n**Teil 2: Lösen.**\n\nAus (1) folgt $a=1$, aus (2) folgt $b=\\tfrac{1}{4}$. Die Kostenfunktionen lauten also $C_{1}(q)=q^{2}$ und $C_{2}(q)=\\tfrac{q^{2}}{4}$.\n\nDie günstigste Aufteilung im Inneren gleicht die Grenzkosten an. Aus $2q_{1}=\\tfrac{1}{2}q_{2}$ folgt $q_{2}=4q_{1}$, zusammen mit $q_{1}+q_{2}=30$ also\n\n$$q_{1}=6,\\qquad q_{2}=24$$\n\nRandlösung und innere Aufteilung kosten\n\n$$C_{2}(30)=225,\\qquad C_{1}(6)+C_{2}(24)=36+144=180$$\n\n**Ergebnis.** $a=1$, $b=\\tfrac{1}{4}$, Aufteilung $(6,24)$, Randlösung $225$, Aufteilung $180$.",
     "figure": null,
     "tables_markdown": null
   },
@@ -363,68 +363,68 @@
     "tables_markdown": null
   },
   {
-    "case_id": "MATH 12.150",
-    "id": "math-12-150",
-    "title": "Ein Quiz-Wettbewerb (Vergleich zweier Formate)",
+    "case_id": "MATH 12.186",
+    "id": "MATH 12.186",
+    "title": "Zwei Spuren und drei Verdächtige",
     "chapter": 12,
     "subsection": "12.4",
-    "context": "Eine Quizliga wählt zwischen zwei Quizformaten mit je 4 Fragen. In Format A ist $X$ die Anzahl der richtigen Antworten mit $P(X=0)=0{,}05$, $P(X=1)=0{,}20$, $P(X=2)=0{,}35$, $P(X=3)=0{,}30$ und $P(X=4)=0{,}10$. In Format B gilt $P(X=0)=0{,}15$, $P(X=1)=0{,}20$, $P(X=2)=0{,}15$, $P(X=3)=0{,}30$ und $P(X=4)=0{,}20$.",
+    "difficulty_level": "5/5",
+    "context": "Ein Wildhüter vermutet eines von drei Tieren: Kojote (Prior $50\\%$), Fuchs ($30\\%$) oder Luchs ($20\\%).\n\nBedingt auf die Art ist die Wahrscheinlichkeit einer großen Pfote $70\\%$ beim Kojoten, $20\\%$ beim Fuchs und $55\\%$ beim Luchs.\n\nUnabhängig davon enthält Kot mit Fell mit Wahrscheinlichkeit $60\\%$ (Kojote), $80\\%$ (Fuchs) bzw. $40\\%$ (Luchs).\n\nAm Ort findet der Wildhüter beides: große Pfote und Kot mit Fell. Die beiden Spuren seien bedingt auf die Art unabhängig.\n\nEntscheide, ob jede Aussage wahr oder falsch ist.",
     "statements": [
-      "Beide Formate haben denselben Erwartungswert von $X$.",
-      "Format B hat eine größere Varianz von $X$ als Format A.",
-      "In Format A trägt der Wert $x = 4$ mehr zur Varianz von $X$ bei als $x = 0$.",
-      "In Format B trägt der Wert $x = 4$ mehr zur Varianz von $X$ bei als $x = 0$.",
-      "Die Standardabweichung von B ist mehr als doppelt so groß wie die Standardabweichung von A."
+      "Die Wahrscheinlichkeit, dass beide Spuren gefunden werden, ist insgesamt größer als $25\\%$.",
+      "Die Wahrscheinlichkeit, dass die Art Kojote ist UND beide Spuren gefunden werden, beträgt $21\\%$.",
+      "Die Wahrscheinlichkeit, dass die Art Kojote ist, gegeben beide Spuren, ist größer als $75\\%$.",
+      "Die Wahrscheinlichkeit, dass mindestens eine der beiden Spuren fehlt, ist gleich $1$ minus der Wahrscheinlichkeit, dass beide Spuren gefunden werden.",
+      "Die Wahrscheinlichkeit, dass die Art Fuchs ist, gegeben beide Spuren, ist größer als die Wahrscheinlichkeit, dass die Art Luchs ist, gegeben beide Spuren."
     ],
     "answer_key": [
       true,
       true,
-      true,
       false,
-      false
+      true,
+      true
     ],
+    "solution_overview": "Mit Unabhängigkeit bedingt auf die Art:\n$$\nP(P\\cap S\\mid C)=0{,}42,\\quad P(P\\cap S\\mid F)=0{,}16,\\quad P(P\\cap S\\mid B)=0{,}22.\n$$\nTotale Wahrscheinlichkeit $P(P\\cap S)=0{,}50\\cdot 0{,}42+0{,}30\\cdot 0{,}16+0{,}20\\cdot 0{,}22=0{,}302$. Joint Kojote $0{,}21$, Posterior $0{,}21/0{,}302\\approx 0{,}695$. Fuchs-Posterior $\\approx 0{,}159$, Luchs $\\approx 0{,}146$.",
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDer Erwartungswert ist die Summe aus Ausprägung mal Wahrscheinlichkeit, $E[X]=\\sum x\\,P(X=x)$.\n\nFormat A:\n\n$$E[X_A] = 0{,}20 + 0{,}70 + 0{,}90 + 0{,}40 = 2{,}20$$\n\nFormat B:\n\n$$E[X_B] = 0{,}20 + 0{,}30 + 0{,}90 + 0{,}80 = 2{,}20$$\n\nBeide Erwartungswerte betragen $2{,}20$ und sind damit gleich.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDie Varianz misst die Streuung um den Mittelwert, $\\mathrm{Var}(X) = E[X^{2}] - \\left(E[X]\\right)^{2}$.\n\n$$\\mathrm{Var}(X_A) = 5{,}90 - 4{,}84 = 1{,}06$$\n\n$$\\mathrm{Var}(X_B) = 6{,}70 - 4{,}84 = 1{,}86$$\n\nDer Vergleich ergibt\n\n$$1{,}86 > 1{,}06$$\n\nFormat B streut also stärker, obwohl beide denselben Erwartungswert haben.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nDer Beitrag eines Wertes $x$ zur Varianz ist $P(X=x)\\left(x-E[X]\\right)^{2}$. Für Format A ist $E[X_A]=2{,}20$.\n\nBeitrag von $x=4$:\n\n$$0{,}10\\cdot (4 - 2{,}20)^{2} = 0{,}10\\cdot 3{,}24 = 0{,}324$$\n\nBeitrag von $x=0$:\n\n$$0{,}05\\cdot (0 - 2{,}20)^{2} = 0{,}05\\cdot 4{,}84 = 0{,}242$$\n\nDer Vergleich ergibt\n\n$$0{,}324 > 0{,}242$$\n\nIn Format A trägt $x=4$ also mehr zur Varianz bei als $x=0$.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nDieselbe Rechnung für Format B, wieder mit $E[X_B]=2{,}20$.\n\nBeitrag von $x=4$:\n\n$$0{,}20\\cdot (4 - 2{,}20)^{2} = 0{,}20\\cdot 3{,}24 = 0{,}648$$\n\nBeitrag von $x=0$:\n\n$$0{,}15\\cdot (0 - 2{,}20)^{2} = 0{,}15\\cdot 4{,}84 = 0{,}726$$\n\nDer Vergleich ergibt\n\n$$0{,}648 < 0{,}726$$\n\nObwohl $x=0$ in Format B seltener ist, wiegt der größere Abstand zum Mittelwert schwerer. Der Wert $x=4$ trägt also nicht mehr bei als $x=0$.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nDie Standardabweichung ist die Wurzel der Varianz.\n\n$$\\sigma_A = \\sqrt{1{,}06}\\approx 1{,}0296$$\n\n$$\\sigma_B = \\sqrt{1{,}86}\\approx 1{,}3638$$\n\nDas Doppelte von $\\sigma_A$ ist\n\n$$2\\cdot 1{,}0296 \\approx 2{,}0592$$\n\nVergleich mit $\\sigma_B$:\n\n$$1{,}3638 < 2{,}0592$$\n\nDie Standardabweichung von B ist also nicht mehr als doppelt so groß wie die von A; das Verhältnis beträgt nur etwa $1{,}32$.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\n$$\nP(P\\cap S)=0{,}5\\cdot 0{,}42+0{,}3\\cdot 0{,}16+0{,}2\\cdot 0{,}22=0{,}302>0{,}25.\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\n$$\nP(C\\cap P\\cap S)=0{,}5\\cdot 0{,}42=0{,}21.\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$\nP(C\\mid P\\cap S)=\\dfrac{0{,}21}{0{,}302}\\approx 0{,}695 \\ngtr 0{,}75.\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nDas Ereignis „mindestens eine Spur fehlt“ ist das Komplement von „beide Spuren“. Also $P(A^{c})=1-P(A)$.\n\nDie Aussage ist wahr.",
+      "**E.** → Wahr\n\n$$\nP(F\\mid P\\cap S)=\\dfrac{0{,}048}{0{,}302}\\approx 0{,}159,\\qquad P(B\\mid P\\cap S)=\\dfrac{0{,}044}{0{,}302}\\approx 0{,}146.\n$$\nAlso ist die Fuchs-Posterior größer.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "5/5",
-    "solution_overview": "Verglichen werden zwei Quizformate A und B. In beiden Fällen beschreibt die Zufallsvariable $X$ die Anzahl richtiger Antworten bei $4$ Fragen; die Wahrscheinlichkeitsverteilung ist jeweils vorgegeben.\n\n**Teil 1: Erwartungswerte.** Es gilt $E[X]=\\sum x\\,P(X=x)$.\n\n$$E[X_A] = 0\\cdot 0{,}05 + 1\\cdot 0{,}20 + 2\\cdot 0{,}35 + 3\\cdot 0{,}30 + 4\\cdot 0{,}10 = 2{,}20$$\n\n$$E[X_B] = 0\\cdot 0{,}15 + 1\\cdot 0{,}20 + 2\\cdot 0{,}15 + 3\\cdot 0{,}30 + 4\\cdot 0{,}20 = 2{,}20$$\n\nBeide Formate haben also denselben Erwartungswert $2{,}20$.\n\n**Teil 2: Varianzen.** Mit $\\mathrm{Var}(X)=E[X^{2}]-\\left(E[X]\\right)^{2}$ und\n\n$$E[X_A^{2}] = 0 + 0{,}20 + 1{,}40 + 2{,}70 + 1{,}60 = 5{,}90$$\n\n$$E[X_B^{2}] = 0 + 0{,}20 + 0{,}60 + 2{,}70 + 3{,}20 = 6{,}70$$\n\nfolgt\n\n$$\\mathrm{Var}(X_A) = 5{,}90 - 2{,}20^{2} = 5{,}90 - 4{,}84 = 1{,}06$$\n\n$$\\mathrm{Var}(X_B) = 6{,}70 - 2{,}20^{2} = 6{,}70 - 4{,}84 = 1{,}86$$\n\n**Teil 3: Standardabweichungen.**\n\n$$\\sigma_A = \\sqrt{1{,}06}\\approx 1{,}0296,\\qquad \\sigma_B = \\sqrt{1{,}86}\\approx 1{,}3638$$\n\nDer Beitrag eines einzelnen Wertes $x$ zur Varianz ist $P(X=x)\\left(x-E[X]\\right)^{2}$.",
-    "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20560%20620%22%20width%3D%22560%22%20height%3D%22620%22%20role%3D%22img%22%3E%3Cg%3E%3Crect%20width%3D%22560%22%20height%3D%22300%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22/%3E%3Ctext%20x%3D%22280.0%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EFormat%20A%3C/text%3E%3Cline%20x1%3D%2258%22%20y1%3D%2242%22%20x2%3D%2258%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2258%22%20y1%3D%22252%22%20x2%3D%22536%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2254%22%20y1%3D%22252.0%22%20x2%3D%22536%22%20y2%3D%22252.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22256.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.00%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22199.5%22%20x2%3D%22536%22%20y2%3D%22199.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22203.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.10%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22147.0%22%20x2%3D%22536%22%20y2%3D%22147.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22151.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.21%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2294.5%22%20x2%3D%22536%22%20y2%3D%2294.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2298.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.31%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2242.0%22%20x2%3D%22536%22%20y2%3D%2242.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2246.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.41%3C/text%3E%3Ctext%20x%3D%2218%22%20y%3D%22147.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%20transform%3D%22rotate%28-90%2018%20147.0%29%22%3EProbability%3C/text%3E%3Crect%20x%3D%2270.0%22%20y%3D%22226.6%22%20width%3D%2281.2%22%20height%3D%2225.4%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22220.6%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.05%3C/text%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C/text%3E%3Crect%20x%3D%22163.2%22%20y%3D%22150.3%22%20width%3D%2281.2%22%20height%3D%22101.7%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22144.3%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.2%3C/text%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C/text%3E%3Crect%20x%3D%22256.4%22%20y%3D%2274.0%22%20width%3D%2281.2%22%20height%3D%22178.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22297.0%22%20y%3D%2268.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.35%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C/text%3E%3Crect%20x%3D%22349.6%22%20y%3D%2299.5%22%20width%3D%2281.2%22%20height%3D%22152.5%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22390.2%22%20y%3D%2293.5%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.3%3C/text%3E%3Ctext%20x%3D%22390.2%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C/text%3E%3Crect%20x%3D%22442.8%22%20y%3D%22201.2%22%20width%3D%2281.2%22%20height%3D%2250.8%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22195.2%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.1%3C/text%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3EValue%20of%20X%3C/text%3E%3C/g%3E%3Cg%20transform%3D%22translate%280%2C310%29%22%3E%3Crect%20width%3D%22560%22%20height%3D%22300%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22/%3E%3Ctext%20x%3D%22280.0%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EFormat%20B%3C/text%3E%3Cline%20x1%3D%2258%22%20y1%3D%2242%22%20x2%3D%2258%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2258%22%20y1%3D%22252%22%20x2%3D%22536%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2254%22%20y1%3D%22252.0%22%20x2%3D%22536%22%20y2%3D%22252.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22256.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.00%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22199.5%22%20x2%3D%22536%22%20y2%3D%22199.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22203.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.09%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22147.0%22%20x2%3D%22536%22%20y2%3D%22147.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22151.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.18%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2294.5%22%20x2%3D%22536%22%20y2%3D%2294.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2298.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.27%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2242.0%22%20x2%3D%22536%22%20y2%3D%2242.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2246.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.35%3C/text%3E%3Ctext%20x%3D%2218%22%20y%3D%22147.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%20transform%3D%22rotate%28-90%2018%20147.0%29%22%3EProbability%3C/text%3E%3Crect%20x%3D%2270.0%22%20y%3D%22163.0%22%20width%3D%2281.2%22%20height%3D%2289.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22157.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.15%3C/text%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C/text%3E%3Crect%20x%3D%22163.2%22%20y%3D%22133.4%22%20width%3D%2281.2%22%20height%3D%22118.6%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22127.4%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.2%3C/text%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C/text%3E%3Crect%20x%3D%22256.4%22%20y%3D%22163.0%22%20width%3D%2281.2%22%20height%3D%2289.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22157.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.15%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C/text%3E%3Crect%20x%3D%22349.6%22%20y%3D%2274.0%22%20width%3D%2281.2%22%20height%3D%22178.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22390.2%22%20y%3D%2268.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.3%3C/text%3E%3Ctext%20x%3D%22390.2%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C/text%3E%3Crect%20x%3D%22442.8%22%20y%3D%22133.4%22%20width%3D%2281.2%22%20height%3D%22118.6%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22127.4%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.2%3C/text%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3EValue%20of%20X%3C/text%3E%3C/g%3E%3C/svg%3E",
-    "tables_markdown": "| x | 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- | --- |\n| Format A | 0,05 | 0,2 | 0,35 | 0,3 | 0,1 |\n\n| x | 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- | --- |\n| Format B | 0,15 | 0,2 | 0,15 | 0,3 | 0,2 |"
+    "figure": null,
+    "tables_markdown": null
   },
   {
-    "case_id": "MATH 13.78",
-    "id": "math-13-78",
-    "title": "Screening in einer Gemeindeklinik",
+    "case_id": "MATH 13.36",
+    "id": "MATH 13.36",
+    "title": "Zwei Werke — Bestandsfreigaben und Schwanzvergleich",
     "chapter": 13,
-    "subsection": "13.5",
-    "context": "An einem Screening-Tag mit 80 unabhängigen Patienten werden positive und negative Befunde im Verhältnis 3 : 17 erwartet. Die Standardabweichung der Anzahl der positiven Befunde an diesem Tag beträgt $\\sqrt{10{,}2}$. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "subsection": "13.4",
+    "difficulty_level": "5/5",
+    "context": "Werk A prüft Lose zu $17$ Stück; jedes Stück ist unabhängig mit Wahrscheinlichkeit $0{,}43$ fehlerfrei.\n\nWerk B prüft Lose zu $29$ Stück; jedes Stück ist unabhängig mit Wahrscheinlichkeit $0{,}61$ fehlerfrei.\n\nDas Los von A besteht, wenn mindestens $87\\%$ der Stücke fehlerfrei sind.\n\nDas Los von B besteht, wenn mindestens $79\\%$ der Stücke fehlerfrei sind.\n\nEntscheide, ob jede Aussage wahr oder falsch ist.",
     "statements": [
-      "Ein einzelner Patient wird mit der Wahrscheinlichkeit 0,85 negativ getestet.",
-      "Unter den nächsten 20 Patienten beträgt die erwartete Anzahl positiver Befunde 4.",
-      "Bei 40 Patienten beträgt die Varianz der Anzahl positiver Befunde 5,1.",
-      "Die Wahrscheinlichkeit für 3 aufeinanderfolgende positive Befunde ist kleiner als 0,005.",
-      "Die Wahrscheinlichkeit für höchstens 1 positiven Befund unter den nächsten 8 Patienten ist größer als 0,7."
+      "Das Los von Werk A besteht bereits bei mindestens $14$ fehlerfreien Stücken.",
+      "Die Wahrscheinlichkeit, dass das Los von Werk A besteht, ist größer als die Wahrscheinlichkeit von genau $15$ fehlerfreien Stücken.",
+      "Werk B hat mehr als $150$-mal so hohe Wahrscheinlichkeit, dass sein Los besteht, wie Werk A.",
+      "Die erwartete Anzahl fehlerfreier Stücke bei Werk A ist größer als $8$.",
+      "Die Standardabweichung der Anzahl fehlerfreier Stücke ist bei Werk B höher als bei Werk A."
     ],
     "answer_key": [
-      true,
       false,
       true,
       true,
-      false
+      false,
+      true
     ],
+    "solution_overview": "Schwellen in ganze Anzahlen umrechnen: A braucht $X\\ge\\lceil 0{,}87\\cdot 17\\rceil=\\lceil 14{,}79\\rceil=15$; B braucht $Y\\ge\\lceil 0{,}79\\cdot 29\\rceil=\\lceil 22{,}91\\rceil=23$. Bestandsereignis A ist $X\\ge 15$, strikt größer als $P(X=15)$. Erwartung $17\\cdot 0{,}43=7{,}31\\ngtr 8$. Standardabweichungen vergleichen über $\\sqrt{np(1-p)}$.",
     "tactical_explanations": [
-      "**A.** → Wahr\n\nBestimme zuerst die Trefferwahrscheinlichkeit aus dem Verhältnis $3:17$:\n\n$$p = \\dfrac{3}{3+17} = \\dfrac{3}{20} = 0{,}15$$\n\nJeder Patient wird entweder positiv oder negativ getestet, die Gegenwahrscheinlichkeit ist also\n\n$$1-p = 1-0{,}15 = 0{,}85$$\n\nDas stimmt mit der behaupteten Wahrscheinlichkeit überein.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nFür eine binomialverteilte Anzahl $X\\sim\\mathrm{Bin}(n;\\,p)$ ist der Erwartungswert das Produkt aus Anzahl der Versuche und Trefferwahrscheinlichkeit:\n\n$$E[X] = np$$\n\nMit $n=20$ und $p=0{,}15$:\n\n$$E[X] = 20\\cdot 0{,}15 = 3$$\n\nBehauptet werden $4$, berechnet ergibt sich $3$.\n\nDie Aussage ist falsch.",
-      "**C.** → Wahr\n\nFür $X\\sim\\mathrm{Bin}(n;\\,p)$ lautet die Varianzformel\n\n$$\\mathrm{Var}(X) = np(1-p)$$\n\nEinsetzen von $n=40$, $p=0{,}15$ und $1-p=0{,}85$:\n\n$$\\mathrm{Var}(X) = 40\\cdot 0{,}15\\cdot 0{,}85$$\n\n$$40\\cdot 0{,}15 = 6,\\qquad 6\\cdot 0{,}85 = 5{,}1$$\n\nDas ist genau die behauptete Varianz.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nDie Befunde sind unabhängig, eine Serie von Treffern multipliziert also dieselbe Wahrscheinlichkeit $p$:\n\n$$P(\\text{3 positive Befunde in Folge}) = p^{3}$$\n\nMit $p=0{,}15$:\n\n$$p^{3} = (0{,}15)^{3} = 0{,}003375$$\n\nVergleich mit der Schranke $0{,}005$:\n\n$$0{,}003375 < 0{,}005$$\n\nDie behauptete Ungleichung gilt also.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nSei $X\\sim\\mathrm{Bin}(8;\\,0{,}15)$. „Höchstens 1 positiver Befund“ ist die Vereinigung der unvereinbaren Fälle $X=0$ und $X=1$:\n\n$$P(X\\le 1) = \\sum_{x=0}^{1} \\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nDie beiden Einzelwahrscheinlichkeiten:\n\n$$P(X = 0) = \\binom{8}{0}(0{,}15)^{0}(0{,}85)^{8}\\approx 0{,}2725$$\n\n$$P(X = 1) = \\binom{8}{1}(0{,}15)^{1}(0{,}85)^{7}\\approx 0{,}3847$$\n\nAddieren:\n\n$$P(X\\le 1) \\approx 0{,}2725 + 0{,}3847 = 0{,}6572$$\n\nVergleich mit der Schranke $0{,}7$:\n\n$$0{,}6572 < 0{,}7$$\n\nDie behauptete Ungleichung gilt also nicht.\n\nDie Aussage ist falsch."
+      "**A.** → Falsch\n\n$87\\%$ von $17$ ist $14{,}79$. „Mindestens $87\\%$“ verlangt $X\\ge 15$, nicht schon $14$.\n\nDie Aussage ist falsch.",
+      "**B.** → Wahr\n\nDas Bestandsereignis ist $X\\ge 15$, also $P(X\\ge 15)=P(X=15)+P(X=16)+P(X=17)>P(X=15)$.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nA braucht $X\\ge 15$ bei $\\mathrm{Bin}(17,0{,}43)$, B braucht $Y\\ge 23$ bei $\\mathrm{Bin}(29,0{,}61)$.\nDie rechten Schwänze ergeben näherungsweise $P(X\\ge 15)\\approx 0{,}0002$ und $P(Y\\ge 23)\\approx 0{,}0299$, also\n$$\n\\dfrac{P(Y\\ge 23)}{P(X\\ge 15)}\\approx 194>150.\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$$\nE[X]=17\\cdot 0{,}43=7{,}31 \\ngtr 8.\n$$\n\nDie Aussage ist falsch.",
+      "**E.** → Wahr\n\n$$\n\\mathrm{SD}_A=\\sqrt{17\\cdot 0{,}43\\cdot 0{,}57}\\approx 2{,}04,\\qquad \\mathrm{SD}_B=\\sqrt{29\\cdot 0{,}61\\cdot 0{,}39}\\approx 2{,}63.\n$$\nAlso $\\mathrm{SD}_B>\\mathrm{SD}_A$.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "5/5",
-    "solution_overview": "An einem Screening-Tag mit 80 unabhängigen Patienten werden positive und negative Befunde im Verhältnis 3 : 17 erwartet; die Standardabweichung der positiven Befunde beträgt $\\sqrt{10{,}2}$.\n\nAus dem Verhältnis $3:17$ folgt die Trefferwahrscheinlichkeit\n\n$$p = \\dfrac{3}{3+17} = 0{,}15$$\n\nDie Anzahl der positiven Befunde wird als $X\\sim\\mathrm{Bin}(80;\\,0{,}15)$ modelliert. Probe über die Standardabweichung:\n\n$$\\mathrm{Var}(X)=np(1-p)=80\\cdot 0{,}15\\cdot 0{,}85=10{,}2$$\n\nFür Teilgruppen der Größe $n$ gelten dieselben Formeln $E[X]=np$ und $\\mathrm{Var}(X)=np(1-p)$, und Einzelwahrscheinlichkeiten folgen aus\n\n$$P(X=x)=\\binom{n}{x}p^{x}(1-p)^{n-x}$$",
     "figure": null,
     "tables_markdown": null
   }
