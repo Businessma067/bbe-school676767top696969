@@ -7,8 +7,7 @@ import { Eye, EyeOff } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
-import { useLanguage } from "@/lib/i18n/context";
-import { hreflangLinks, localizePath } from "@/lib/i18n/locale-path";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/signup")({
   component: SignupPage,
@@ -24,7 +23,6 @@ export const Route = createFileRoute("/signup")({
 
 export function SignupPage() {
   const navigate = useLocalizedNavigate();
-  const { lang } = useLanguage();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
@@ -34,7 +32,6 @@ export function SignupPage() {
   const [agree, setAgree] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [info, setInfo] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -65,7 +62,6 @@ export function SignupPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
-    setInfo(null);
     const first = firstName.trim();
     const last = lastName.trim();
     const phoneClean = phone.trim();
@@ -83,12 +79,11 @@ export function SignupPage() {
     const emailNorm = email.trim().toLowerCase();
     setLoading(true);
     try {
-      // Same scheme as before admin panel: implicit link → /account
       const { data, error: err } = await supabase.auth.signUp({
         email: emailNorm,
         password,
         options: {
-          emailRedirectTo: `${window.location.origin}${localizePath("/account", lang)}`,
+          emailRedirectTo: `${window.location.origin}/confirm-email`,
           data: {
             display_name: displayName,
             first_name: first,
@@ -114,34 +109,9 @@ export function SignupPage() {
       }
 
       sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
-      setInfo("Check your email to confirm your account, then sign in.");
+      navigate({ to: "/confirm-email" });
     } catch (err: any) {
       console.error("Signup failed", err);
-      setError(friendlyAuthError(err, "Could not create account."));
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleResend = async () => {
-    setError(null);
-    setInfo(null);
-    const pending =
-      email.trim().toLowerCase() || sessionStorage.getItem("bbe.pendingConfirmEmail") || "";
-    if (!/^\S+@\S+\.\S+$/.test(pending)) {
-      setError("Enter a valid email address.");
-      return;
-    }
-    setLoading(true);
-    try {
-      const { error: err } = await supabase.auth.resend({
-        type: "signup",
-        email: pending,
-        options: { emailRedirectTo: `${window.location.origin}${localizePath("/account", lang)}` },
-      });
-      if (err) throw err;
-      setInfo("Check your email to confirm your account, then sign in.");
-    } catch (err) {
       setError(friendlyAuthError(err, "Could not create account."));
     } finally {
       setLoading(false);
@@ -213,7 +183,6 @@ export function SignupPage() {
         </label>
 
         {error && <p className="text-sm text-destructive">{error}</p>}
-        {info && <p className="text-sm text-primary">{info}</p>}
 
         <button
           type="submit"
@@ -222,17 +191,6 @@ export function SignupPage() {
         >
           {loading ? "Creating account…" : "Create account"}
         </button>
-
-        {info ? (
-          <button
-            type="button"
-            disabled={loading}
-            onClick={() => void handleResend()}
-            className="w-full rounded-md border border-border px-4 py-2.5 text-sm font-semibold hover:bg-secondary disabled:opacity-60"
-          >
-            Resend confirmation email
-          </button>
-        ) : null}
       </form>
       <p className="mt-6 text-center text-sm text-muted-foreground">
         Already have an account?{" "}

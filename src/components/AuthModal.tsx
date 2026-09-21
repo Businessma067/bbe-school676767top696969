@@ -12,8 +12,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { friendlyAuthError } from "@/lib/auth-ui";
 import { signInWithGoogle } from "@/lib/google-auth";
 import { cn } from "@/lib/utils";
-import { useLanguage } from "@/lib/i18n/context";
-import { localizePath } from "@/lib/i18n/locale-path";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 
 type Mode = "signin" | "signup";
 
@@ -31,7 +30,7 @@ export function AuthModal({
   onSignedIn,
   defaultMode = "signin",
 }: AuthModalProps) {
-  const { lang } = useLanguage();
+  const navigate = useLocalizedNavigate();
   const [mode, setMode] = useState<Mode>(defaultMode);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,20 +41,17 @@ export function AuthModal({
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [info, setInfo] = useState<string | null>(null);
 
   useEffect(() => {
     if (!open) return;
     setMode(defaultMode);
     setError(null);
-    setInfo(null);
     setLoading(false);
   }, [open, defaultMode]);
 
   const switchMode = (next: Mode) => {
     setMode(next);
     setError(null);
-    setInfo(null);
   };
 
   const handleGoogle = async () => {
@@ -79,7 +75,6 @@ export function AuthModal({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
-    setInfo(null);
 
     if (!/^\S+@\S+\.\S+$/.test(email)) {
       setError("Enter a valid email address.");
@@ -110,7 +105,7 @@ export function AuthModal({
           email: emailNorm,
           password,
           options: {
-            emailRedirectTo: `${window.location.origin}${localizePath("/account", lang)}`,
+            emailRedirectTo: `${window.location.origin}/confirm-email`,
             data: {
               display_name: displayName,
               first_name: first,
@@ -139,8 +134,8 @@ export function AuthModal({
         }
 
         sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
-        setInfo("Check your email to confirm your account, then sign in.");
-        setMode("signin");
+        onOpenChange(false);
+        navigate({ to: "/confirm-email" });
       } catch (err) {
         setError(friendlyAuthError(err, "Could not create account."));
       } finally {
@@ -312,7 +307,6 @@ export function AuthModal({
           )}
 
           {error && <p className="text-sm text-destructive">{error}</p>}
-          {info && <p className="text-sm text-primary">{info}</p>}
 
           <button
             type="submit"

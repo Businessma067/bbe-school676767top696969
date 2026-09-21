@@ -24,7 +24,6 @@ function AuthPage() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [info, setInfo] = useState<string | null>(null);
 
   const handleGoogle = async () => {
     setError(null);
@@ -42,17 +41,17 @@ function AuthPage() {
   const handleEmail = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
-    setInfo(null);
     setLoading(true);
     try {
       if (mode === "signup") {
         const { error } = await supabase.auth.signUp({
           email,
           password,
-          options: { emailRedirectTo: window.location.origin },
+          options: { emailRedirectTo: `${window.location.origin}/confirm-email` },
         });
         if (error) throw error;
-        setInfo("Check your email to confirm your account, then sign in.");
+        sessionStorage.setItem("bbe.pendingConfirmEmail", email.trim().toLowerCase());
+        navigate({ to: "/confirm-email" });
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
@@ -137,7 +136,6 @@ function AuthPage() {
             </div>
 
             {error && <p className="text-sm text-destructive">{error}</p>}
-            {info && <p className="text-sm text-primary">{info}</p>}
 
             <button
               type="submit"
@@ -157,7 +155,6 @@ function AuthPage() {
                   onClick={() => {
                     setMode("signup");
                     setError(null);
-                    setInfo(null);
                   }}
                 >
                   Create one
@@ -171,7 +168,6 @@ function AuthPage() {
                   onClick={() => {
                     setMode("signin");
                     setError(null);
-                    setInfo(null);
                   }}
                 >
                   Sign in
