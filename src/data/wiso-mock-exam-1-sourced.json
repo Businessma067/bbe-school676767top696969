@@ -1010,7 +1010,7 @@
       "chapter": 12,
       "subsection": "12.4",
       "difficulty_level": "5/5",
-      "context": "Ein Wildhüter vermutet eines von drei Tieren: Kojote (Prior $50\\%$), Fuchs ($30\\%$) oder Luchs ($20\\%).\n\nBedingt auf die Art ist die Wahrscheinlichkeit einer großen Pfote $70\\%$ beim Kojoten, $20\\%$ beim Fuchs und $55\\%$ beim Luchs.\n\nUnabhängig davon enthält Kot mit Fell mit Wahrscheinlichkeit $60\\%$ (Kojote), $80\\%$ (Fuchs) bzw. $40\\%$ (Luchs).\n\nAm Ort findet der Wildhüter beides: große Pfote und Kot mit Fell. Die beiden Spuren seien bedingt auf die Art unabhängig.\n\nEntscheide, ob jede Aussage wahr oder falsch ist.",
+      "context": "Ein Wildhüter vermutet eines von drei Tieren: Kojote (Prior $50\\%$), Fuchs ($30\\%$) oder Luchs ($20\\%$).\n\nBedingt auf die Art ist die Wahrscheinlichkeit einer großen Pfote $70\\%$ beim Kojoten, $20\\%$ beim Fuchs und $55\\%$ beim Luchs.\n\nUnabhängig davon enthält Kot mit Fell mit Wahrscheinlichkeit $60\\%$ (Kojote), $80\\%$ (Fuchs) bzw. $40\\%$ (Luchs).\n\nAm Ort findet der Wildhüter beides: große Pfote und Kot mit Fell. Die beiden Spuren seien bedingt auf die Art unabhängig.\n\nEntscheide, ob jede Aussage wahr oder falsch ist.",
       "statements": [
         "Die Wahrscheinlichkeit, dass beide Spuren gefunden werden, ist insgesamt größer als $25\\%$.",
         "Die Wahrscheinlichkeit, dass die Art Kojote ist UND beide Spuren gefunden werden, beträgt $21\\%$.",
