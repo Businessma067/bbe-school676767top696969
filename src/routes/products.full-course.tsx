@@ -35,13 +35,13 @@ export const Route = createFileRoute("/products/full-course")({
     ],
     links: [...hreflangLinks("/products/full-course"), { rel: "canonical", href: "https://bbe-school.com/products/full-course" }],
     meta: [
-      { title: "Full BBE Course — Unlock Full Access" },
+      { title: "Full BBE Course | Full Access | BBE School" },
       {
         name: "description",
         content:
-          "The complete WU BBE entrance exam preparation system: 2000+ tasks, full mock exams, explanations, and direct human support.",
+          "The complete WU BBE entrance exam preparation system: practice tasks, full mock exams, explanations, and support.",
       },
-      { property: "og:title", content: "Full BBE Course — Unlock Full Access" },
+      { property: "og:title", content: "Full BBE Course | Full Access | BBE School" },
       {
         property: "og:description",
         content:
@@ -113,77 +113,77 @@ const fullCourseFaqs = [
   {
     question: "What is included in the Full Course?",
     answer:
-      "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, explanations, Mock Exams, the text highlighter tool, all speed simulators, and the digital answer sheet simulator.",
+      "You get the full task bank across all subjects, explanations under each statement, mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.",
   },
   {
     question: "Is this a subscription or a one-time payment?",
     answer:
-      "It is a strict one-time payment of €449. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
+      "It is a one-time payment of €449 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.",
   },
   {
     question: "How do explanations work?",
     answer:
-      "When you request a breakdown for any task, the platform returns a direct explanation and highlights the relevant sentence in the source text.",
+      "When you open a breakdown for a task, you get a direct explanation and, where it helps, a highlight of the relevant sentence in the source text.",
   },
   {
     question: "Are the questions identical to the real WU Vienna entrance exam?",
     answer:
-      "Yes, our database of 1,200+ cases is engineered strictly based on the institutional structure, negative scoring logic, and deceptive True/False phrasing style used by the examiners over the last years.",
+      "They follow the same structure, negative scoring logic, and True/False phrasing style the examiners have used in recent years. They are not leaked past papers.",
   },
   {
     question: "What if the university updates the official exam literature?",
     answer:
-      "All updates are fully covered. Our team monitors the university portal daily. If any changes are made to the official chapters, mathematics requirements, or exam literature, the platform database is updated immediately at zero additional cost to you.",
+      "Updates are included. When WU changes chapters, math requirements, or exam literature, we update the bank at no extra cost.",
   },
   {
     question: "Does the platform cover all three exam subjects equally?",
     answer:
-      "Yes. The course provides 100% comprehensive training for all three blocks. It contains dedicated, heavy question databases and specialized toolkits for Business/Economics contexts, Mathematics functions/graphs, and English Proficiency logic.",
+      "Yes. There are dedicated banks and tools for Business and Economics, Mathematics, and English, so you can train each block properly.",
   },
   {
     question: "Why is the Answer Sheet Simulator included?",
     answer:
-      "Over 15% of applicants fail simply because they misalign text rows or panic during the final minutes of transferring answers onto the physical paper. This simulator which you can find in every Mock Exam is a precise digital copy of the official optical sheet, training your muscle memory to avoid costly technical mistakes under stress.",
+      "A meaningful share of applicants lose points by misaligning rows or panicking while transferring answers onto the physical sheet. The simulator in each mock is a digital copy of the official optical sheet so that habit is already practised before exam day.",
   },
   {
     question: "How does the platform handle the negative scoring system?",
     answer:
-      "The platform replicates the exact negative point system used by the university, where incorrect answers deduct your score. The system automatically tracks this, teaching you the precise risk management of when to answer and when it is safer to skip a task.",
+      "Incorrect answers deduct points the same way they do at WU. The mocks teach when answering is worth the risk and when leaving a field blank is safer.",
   },
   {
     question: "Can I study using my mobile phone?",
     answer:
-      "Yes. The platform works on a smartphone, tablet, laptop, or desktop. You can run drills, review flashcards, solve tasks, and read explanations.",
+      "Yes. It works on a smartphone, tablet, laptop, or desktop, so you can run drills, review flashcards, solve tasks, and read explanations wherever you are.",
   },
   {
     question: "Can two students share one account?",
     answer:
-      "No. Every account is strictly personal and tied to your individual analytics dashboard, progress tracking, and achievements. Simultaneous logins from different devices will automatically trigger our security system and lock the account.",
+      "No. Each account is personal and tied to one analytics dashboard. Simultaneous logins from different devices can lock the account.",
   },
   {
     question: "How much time per day should I spend to guarantee success?",
     answer:
-      "No course or software can ever guarantee your admission, success depends entirely on your personal discipline. However, data shows that students who train on our platform for 45 to 60 minutes daily achieve a success rate of 41.3%, compared to the general average of 8%.",
+      "No course can guarantee admission, because that still depends on your own work. Students who train here for about 45 to 60 minutes a day have reached a 41.3% success rate in our cohort, against about 8% in the general pool.",
   },
   {
     question: "Are there full-length mock exams included?",
     answer:
-      "Yes. The course unlocks complete, realistic 120-minute mock simulation tests that mix tasks from all three subjects under severe time limits, mimicking the exact time-pressure atmosphere of the real exam hall.",
+      "Yes. You get complete 120-minute mocks that mix all three subjects under the same kind of time pressure as the real hall.",
   },
   {
     question: "What if I get completely stuck on a complex task?",
     answer:
-      "You are never left without help. Your AI Study Companion is available 24/7 inside every question view to instantly break down complex equations, logic chains, or vocabulary rules into simple, human-friendly steps with 0-ms delay.",
+      "The study assistant sits inside the question view and can break equations, logic chains, or vocabulary rules into smaller steps when you need a push.",
   },
   {
     question: "Can my parents pay for my course access?",
     answer:
-      "Yes. Our checkout utilizes globally secure payment gateways supporting all major credit cards, Apple Pay, Google Pay, and standard European bank transfers, allowing a secure process.",
+      "Yes. Checkout supports major cards, Apple Pay, Google Pay, and standard European bank transfers.",
   },
   {
     question: "How long does it take to get access after the payment?",
     answer:
-      "The entire activation process is fully automated. The exact millisecond your payment is processed, your platform account is created, the database unlocks, and you can start your training session within 30 seconds.",
+      "Activation is automatic. Once payment clears, the account unlocks and you can start within about half a minute.",
   },
 ];
 

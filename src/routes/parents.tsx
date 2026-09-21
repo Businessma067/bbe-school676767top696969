@@ -13,20 +13,20 @@ export const Route = createFileRoute("/parents")({
   head: () => ({
     links: [...hreflangLinks("/parents"), { rel: "canonical", href: "https://bbe-school.com/parents" }],
     meta: [
-      { title: "A Frank Audit for Parents — The Real Cost of WU Vienna Admission | BBE School" },
+      { title: "A frank note for parents | The real cost of WU Vienna admission | BBE School" },
       {
         name: "description",
         content:
-          "An honest breakdown for parents: the true structural cost of the WU Vienna BBE entrance exam, the €60,000+ backup-plan trap, and how a €359 simulator becomes financial insurance.",
+          "A plain breakdown for parents: what the WU Vienna entrance exam costs a family if the applicant misses a seat, and how focused prep changes that math.",
       },
       {
         property: "og:title",
-        content: "A Frank Audit for Parents — The Real Cost of WU Vienna Admission",
+        content: "A frank note for parents | The real cost of WU Vienna admission",
       },
       {
         property: "og:description",
         content:
-          "3000+ applicants. 240 seats. Penalty marking. Here is what actually happens at the WU Vienna entrance test, and what a wrong preparation strategy costs a family.",
+          "Thousands of applicants, a fixed number of seats, and penalty marking: what actually happens at the WU Vienna entrance test, and what a wrong prep plan costs.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -63,12 +63,12 @@ export function ParentsPage() {
       >
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <h1 className="font-display text-[1.75rem] font-bold leading-[1.15] tracking-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-5xl sm:leading-tight lg:text-6xl">
-            A Frank Audit for Parents:
+            A frank note for parents:
             <br />
-            <span className="text-[#F0A64D]">The Real Cost of WU Vienna Admission</span>
+            <span className="text-[#F0A64D]">what WU admission actually costs</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-6 sm:text-lg">
-            Weigh the time and money spent on a failed admission.
+            Weigh the time and money a failed admission can cost the family.
           </p>
         </div>
       </section>
@@ -85,38 +85,38 @@ export function ParentsPage() {
             </h2>
           </div>
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-            The mandatory in-person BBE entrance test at WU Vienna is closer to a filtering conveyor
-            than to a classroom exam. Imagine a huge convention hall, more than 3000 applicants from
-            across the world, echoing announcements, and exactly 240 seats on the other side of the
-            door. That is over 12 candidates competing for a single desk.
+            The in-person BBE entrance test at WU Vienna is closer to a sorting hall than to a
+            classroom exam. Picture a convention floor, more than 3000 applicants from across the
+            world, echoing announcements, and about 240 seats on the other side of the door. That is
+            more than twelve candidates for every desk.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            The volume of competitors is not the hardest part. The real difficulty is buried in the
+            The volume of competitors is not the hardest part. The real difficulty sits in the
             structural rules the university uses to separate the top of the funnel:
           </p>
           <ul className="mt-6 space-y-4 text-base leading-relaxed text-foreground sm:text-lg">
             <li className="flex gap-3">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E85D3A]" />
               <span>
-                <strong className="font-semibold">A brutal time constraint.</strong> Your child gets
-                less than a minute per statement to scan a dense English passage or work through a
+                <strong className="font-semibold">A hard clock.</strong> Your child gets less than a
+                minute per statement to scan a dense English passage or work through a
                 data-sufficiency style problem entirely in their head.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E85D3A]" />
               <span>
-                <strong className="font-semibold">A penalty-marking system.</strong> At WU Vienna a
-                wrong answer does not just score zero. The computer actively subtracts points from
-                what the student got right elsewhere.
+                <strong className="font-semibold">Penalty marking.</strong> At WU Vienna a wrong
+                answer does not just score zero. The computer subtracts points from what the student
+                got right elsewhere.
               </span>
             </li>
           </ul>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             If a candidate panics under the clock and starts guessing blindly, a strong paper can
-            collapse to zero in minutes. That is why straight-A students with expensive private
-            tutors still fail here every single year. They were never taught how to manage the clock
-            and the penalty system at the same time.
+            collapse in minutes. That is why straight-A students with expensive private tutors still
+            fail here every year: they were never taught how to manage the clock and the penalty
+            system at the same time.
           </p>
         </article>
 
@@ -182,9 +182,8 @@ export function ParentsPage() {
           </div>
 
           <p className="mt-8 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Meanwhile, studying at world-class WU Vienna is effectively free, aside from token
-            student fees. Getting into the Top-240 is financially equivalent to saving more than
-            €60,000 in liquid family capital.
+            Meanwhile, studying at WU Vienna is effectively free aside from token student fees.
+            Getting into the Top-240 is financially close to saving more than €60,000 for the family.
           </p>
         </article>
 
@@ -207,17 +206,16 @@ export function ParentsPage() {
               03
             </span>
             <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-              How we hack the system
+              How this prep is built
             </h2>
           </div>
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-            We do not copy-paste dry economics textbooks at your child. The person who built this
-            platform sat through the exact WU Vienna exam, finished 24th, and felt the weight of
-            every penalty mark on their own answer sheet. Out of that experience came an interactive
-            exam simulator that costs{" "}
+            We do not dump dry economics textbooks on your child. The person who built this platform
+            sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer
+            sheet. Out of that came an interactive exam simulator for{" "}
             <strong className="font-semibold text-foreground">€359 for the Full BBE Course</strong>.
-            It is not an educational expense. It is a direct financial insurance policy against
-            burning €60,000+ later.
+            Treat it less like a random course fee and more like insurance against burning €60,000+
+            later.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
             The simulator trains your child's muscle memory in two tactics that regular tutors do
@@ -238,10 +236,9 @@ export function ParentsPage() {
                 Containerizing losses
               </h4>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                We train the student to leave uncertain fields completely blank. The WU marking
-                system awards exactly 0 for a blank, and does not subtract. That single habit
-                isolates a passing score while the rest of the hall commits penalty suicide out of
-                panic.
+                We train the student to leave uncertain fields blank. The WU marking system awards 0
+                for a blank and does not subtract, so that habit protects a passing score while other
+                applicants lose points guessing out of panic.
               </p>
             </div>
           </div>
@@ -251,10 +248,10 @@ export function ParentsPage() {
               The bottom line
             </p>
             <p className="mt-3 text-base leading-relaxed text-foreground sm:text-lg">
-              You can rely on standard school knowledge and possibly burn €60,000+ on private
-              tuition or a lost foundation year. Or you can invest <strong>€359</strong> into a
-              specialized simulator that teaches your child how to survive the actual WU Vienna
-              constraints and secure a seat on a free, world-class program. The choice is yours.
+              You can rely on standard school knowledge and risk burning €60,000+ on private tuition
+              or a lost foundation year, or you can invest <strong>€359</strong> in a simulator that
+              teaches your child how to handle the WU Vienna clock and penalty rules and keep a seat
+              on an affordable program.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <LocalizedLink

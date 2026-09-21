@@ -28,17 +28,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [...hreflangLinks("/"), { rel: "canonical", href: "https://bbe-school.com/" }],
     meta: [
-      { title: "WU Vienna Exam Prep — BBE & WiSo | BBE School" },
+      { title: "WU Vienna Exam Prep for BBE and WiSo | BBE School" },
       {
         name: "description",
         content:
-          "Step-by-step preparation for your 2027 WU exam. Choose BBE (English) or WiSo (German) and prepare with practice questions, mock exams, and study tools.",
+          "Prep for the 2027 WU entrance exam on BBE or WiSo with practice questions, timed mocks, and study tools built around the real format.",
       },
-      { property: "og:title", content: "WU Vienna Exam Prep — BBE & WiSo | BBE School" },
+      { property: "og:title", content: "WU Vienna Exam Prep for BBE and WiSo | BBE School" },
       {
         property: "og:description",
         content:
-          "Prepare for WU Vienna’s BBE or WiSo entrance exam: practice questions, timed mocks, mock builder, and study tools.",
+          "Practice questions, timed mocks, a mock builder, and study tools for WU Vienna’s BBE or WiSo entrance exam.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://bbe-school.com/" },
@@ -68,10 +68,10 @@ const EXAM_OPTIONS: ExamOption[] = [
     label: "BBE",
     title: "Business and Economics (BBE)",
     description:
-      "WU’s English-taught bachelor. Smaller intake (~240 places), international cohort, winter start only. The exam tests Economics & Business, English, and Mathematics.",
+      "WU’s English-taught bachelor with a smaller intake of about 240 places, an international cohort, and a winter start only. The exam covers Economics and Business, English, and Mathematics.",
     differences: [
-      "Exam & study language: English",
-      "~240 places — highly selective",
+      "Exam and study language: English",
+      "About 240 places, highly selective",
       "Subjects: Economics, Math, English",
       "Winter semester start only",
     ],
@@ -83,10 +83,10 @@ const EXAM_OPTIONS: ExamOption[] = [
     label: "WiSo",
     title: "Business, Economics and Social Sciences (WiSo)",
     description:
-      "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension — not English.",
+      "WU’s German-taught bachelor with a much larger intake of about 2,703 places. The exam covers economics fundamentals, Mathematics, and German reading comprehension, with no English section.",
     differences: [
-      "Exam & study language: German",
-      "~2,703 places — broader intake",
+      "Exam and study language: German",
+      "About 2,703 places, broader intake",
       "Subjects: Economics, Math, German",
       "Winter or summer start possible",
     ],
@@ -106,28 +106,28 @@ const FEATURE_CARDS: {
     id: "questions",
     title: "3,000+ practice questions",
     description:
-      "A growing bank of exam-style cases across every content area — with step-by-step explanations under each statement so you learn the logic, not just the answer.",
+      "A growing bank of exam-style cases across every content area, with a short explanation under each statement so you learn the logic instead of only the answer key.",
     icon: BookOpen,
   },
   {
     id: "mocks",
     title: "Full timed mock exams",
     description:
-      "Sit complete simulations with real pacing pressure, partial-credit scoring, and review that shows exactly where points were won or lost.",
+      "Sit complete simulations with real pacing pressure and partial-credit scoring, then review where points were won or lost.",
     icon: ClipboardList,
   },
   {
     id: "builder",
     title: "Custom mock builder",
     description:
-      "Build your own timed sets by topic and difficulty to close weak spots without wasting hours on material you already know.",
+      "Build your own timed sets by topic and difficulty so you can close weak spots without spending hours on material you already know.",
     icon: Layers,
   },
   {
     id: "tools",
     title: "Study tools",
     description:
-      "Quick drills between full practice sessions — flip flash cards for definitions and formulas, race through matching boards, or take a tutor exam for a random theory quiz with instant feedback.",
+      "Between full practice sessions you can flip flash cards for definitions and formulas, race through matching boards, or take a short tutor quiz with instant feedback.",
     icon: Puzzle,
     tools: [
       {
@@ -136,7 +136,7 @@ const FEATURE_CARDS: {
       },
       {
         name: "Matching",
-        blurb: "Pair each term with its meaning on a timed board — same decks, different drill.",
+        blurb: "Pair each term with its meaning on a timed board using the same decks in a different drill.",
       },
       {
         name: "Tutor exam",
@@ -185,8 +185,8 @@ export function Index() {
                 WiSo and BBE
               </p>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                One platform. Two entrance exams. Pick the path that matches how you want to study at
-                WU Vienna.
+                One platform for both entrance paths: pick the track that matches how you want to study
+                at WU Vienna.
               </p>
             </div>
 
@@ -289,7 +289,7 @@ export function Index() {
                 Why Choose US
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
-                Everything you need to prepare for a WU entrance exam — built around the real format,
+                Everything you need to prepare for a WU entrance exam, built around the real format,
                 scoring, and time pressure.
               </p>
             </div>
@@ -342,13 +342,10 @@ export function Index() {
         >
           <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              A triple-accredited elite business school.
-              <br />
-              <span className="text-white/95">Almost free education.</span>
+              A triple-accredited business school with tuition that stays close to free
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              One 2-hour exam stands between your family and a world-class degree at almost zero
-              cost.
+              One two-hour exam sits between your family and a strong degree at almost zero cost.
             </p>
           </div>
         </section>
@@ -361,10 +358,10 @@ export function Index() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
                 Private tutors in Vienna charge{" "}
-                <span className="text-why-us-fg">€50 to €100 per hour</span> just to read textbook
-                slides with you. Top-tier education at WU Vienna costs literally{" "}
-                <span className="text-caramel-deep">10 times less</span> than comparable schools in
-                the UK or US. A focused prep investment protects a{" "}
+                <span className="text-why-us-fg">€50 to €100 per hour</span> just to walk through
+                textbook slides. Tuition at WU Vienna is often{" "}
+                <span className="text-caramel-deep">about ten times lower</span> than comparable
+                schools in the UK or US, so a focused prep investment protects a{" "}
                 <span className="font-semibold text-why-us-fg">€100,000 financial advantage</span>.
               </p>
               <CapitalBars />
@@ -374,10 +371,9 @@ export function Index() {
                 Top-tier outcomes
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
-                WU Vienna is a premier target university for the world&apos;s elite firms — but only
-                for the <span className="text-caramel-deep">top 10% of the class</span>. Training for
-                brutal exam pressure now builds the analytical stamina you need later in recruitment
-                cycles.
+                WU Vienna is a target school for many strong firms, though recruiters usually look at
+                the <span className="text-caramel-deep">top of the class</span>. Training for exam
+                pressure now builds the analytical stamina you will need later in recruitment cycles.
               </p>
               <PlacementsTicker />
             </div>
@@ -389,33 +385,31 @@ export function Index() {
           <div className="mx-auto max-w-3xl">
             <div className="text-center">
               <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-                A Frank Audit for Parents:
+                A frank note for parents:
                 <br />
-                <span className="text-muted-foreground">The Real Cost of WU Vienna Admission</span>
+                <span className="text-muted-foreground">what WU admission actually costs</span>
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Before choosing a preparation strategy for BBE or WiSo, look at what your child is
-                actually walking into at WU Vienna — and what a wrong plan costs the family in real
-                euros.
+                Before you pick a preparation plan for BBE or WiSo, look at what your child walks into
+                at WU Vienna and what a wrong plan costs the family in real euros.
               </p>
             </div>
 
             <div className="relative mt-8">
               <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
                 <p>
-                  The WU Vienna entrance exams are not regular school tests. They are filtering
-                  conveyors. A massive hall, thousands of applicants, echoing announcements — and a
-                  fixed number of seats on the other side. BBE offers about 240 places; WiSo offers
-                  far more, but both still sort a crowded field under the same kind of pressure.
+                  The WU Vienna entrance exams are not ordinary school tests. They sort a crowded hall
+                  of applicants under announcements and a fixed number of seats on the other side. BBE
+                  offers about 240 places and WiSo offers far more, yet both still filter hard under
+                  the same kind of pressure.
                 </p>
                 <p>
-                  The volume of competitors is not even the hardest part. The real difficulty is
-                  buried in the structural rules the university uses to break the field. Your child
-                  gets less than a minute per statement — whether that means a dense English passage
-                  (BBE) or German reading and economics wording (WiSo) — or a data-sufficiency style
-                  problem worked entirely in their head. And at WU Vienna a wrong answer does not
-                  just score zero. The computer actively subtracts points from what the student got
-                  right elsewhere.
+                  The volume of competitors is not even the hardest part. The real difficulty sits in
+                  the structural rules the university uses to break the field. Your child gets less
+                  than a minute per statement, whether that is a dense English passage on BBE, German
+                  reading and economics wording on WiSo, or a data-sufficiency style problem worked
+                  entirely in their head. At WU Vienna a wrong answer does not just score zero: the
+                  computer subtracts points from what the student got right elsewhere.
                 </p>
               </div>
 
@@ -455,7 +449,7 @@ export function Index() {
         >
           <div className="mx-auto max-w-5xl px-4 py-12 text-center sm:px-6 sm:py-14 lg:px-8 lg:py-16">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Voices from the exam hall floor.
+              Notes from people who sat the exam
             </h2>
           </div>
         </section>
@@ -464,7 +458,7 @@ export function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-10 max-w-3xl">
               <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-                Students&apos; reviews right after receiving an acceptance letter.
+                What students wrote after they got an acceptance letter
               </h2>
             </div>
             <div className="grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -633,7 +627,7 @@ function CapitalBars() {
   }, []);
 
   const rows = [
-    { label: "Private tutoring trap", width: 92, value: "€8–15k+" },
+    { label: "Private tutoring trap", width: 92, value: "€8 to 15k+" },
     { label: "Focused platform prep", width: 28, value: "One investment" },
   ];
 
@@ -680,7 +674,7 @@ const reports = [
     id: 0,
     name: "Anna, Vienna",
     quote:
-      "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click — I stopped guessing and started managing risk.",
+      "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click, and I stopped guessing and started managing risk.",
     badge: "Rank: 19th",
   },
   {

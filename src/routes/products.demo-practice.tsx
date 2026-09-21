@@ -20,13 +20,13 @@ export const Route = createFileRoute("/products/demo-practice")({
     ],
     links: [...hreflangLinks("/products/demo-practice"), { rel: "canonical", href: "https://bbe-school.com/products/demo-practice" }],
     meta: [
-      { title: "Demo-Practice Package — BBE School" },
+      { title: "Demo-Practice Package | BBE School" },
       {
         name: "description",
         content:
           "Free trial: 50+ baseline WU BBE exam cases across three subjects with step-by-step explanations.",
       },
-      { property: "og:title", content: "Demo-Practice Package — BBE School" },
+      { property: "og:title", content: "Demo-Practice Package | BBE School" },
       {
         property: "og:description",
         content: "Free trial with 50+ baseline cases across three subjects.",
@@ -46,37 +46,37 @@ const demoFaqs = [
   {
     question: "Is this completely free? Do I need to link a credit card?",
     answer:
-      "Yes, it is 100% free. No credit card required. You only need an Email to create your account so the site can save your progress if you close the tab.",
+      "Yes, it is free and you do not need a credit card. You only need an email so we can save your progress if you close the tab.",
   },
   {
     question: "Does the free trial look and work exactly like the paid version?",
     answer:
-      "Yes, the interface, buttons, fonts, and mobile design are 100% identical. You will practice in the exact same workspace as premium members.",
+      "Yes. The interface, buttons, fonts, and mobile layout match the paid workspace, so you practise in the same environment.",
   },
   {
     question: "How does this trial compare to the Full Course?",
     answer:
-      "The free trial contains a limited set of cases and does not include extra features like the AI Assistant or timing tests. However, it is a fully working, high-quality sample so you can test the platform before buying.",
+      "The free trial has a limited set of cases and leaves out extras like the study assistant and timing tests, but it is a working sample of the real platform before you buy.",
   },
   {
     question: "Who is this free package designed for?",
     answer:
-      "For beginners who want to check their basic knowledge, skeptical students who want to test our question quality first-hand, and anyone looking for a quick 30-minute practice check.",
+      "For beginners checking their basics, for sceptical students who want to test question quality first, and for anyone who wants a short practice session.",
   },
   {
     question: "Do these free cases reflect the actual difficulty of the WU Vienna exam?",
     answer:
-      "Yes, these are not easy warm-up tests. All questions fully match the real difficulty, terms, and tricky traps that university professors use in the actual exam.",
+      "Yes. These are not easy warm-ups. The questions match the difficulty, terms, and traps used in the real exam.",
   },
   {
     question: "Does the free package include step-by-step solutions?",
     answer:
-      "Yes. Every single question has a clear, point-by-point explanation underneath to show you exactly why it is True or False and fix your mistakes immediately.",
+      "Yes. Every question has a clear explanation underneath that shows why it is true or false.",
   },
   {
     question: "Will my trial progress be saved if I upgrade to the Full Course later?",
     answer:
-      "Yes, everything is saved in our database. When you choose to unlock full premium access, all your history and performance stats will transfer automatically.",
+      "Yes. Your history stays in the database, and when you unlock full access it carries over.",
   },
 ];
 

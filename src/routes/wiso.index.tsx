@@ -96,7 +96,7 @@ export function WisoLandingPage() {
               </h1>
 
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                wirtschaftliche Grundkenntnisse, Mathematik, and deutsches Sprachverständnis sit at the
+                Wirtschaftliche Grundkenntnisse, Mathematik, and deutsches Sprachverständnis sit at the
                 centre of the WiSo Aufnahmeprüfung, and this track is built around those three pillars
                 rather than around BBE English.
               </p>

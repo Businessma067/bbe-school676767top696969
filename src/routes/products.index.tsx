@@ -59,13 +59,13 @@ export const Route = createFileRoute("/products/")({
   head: () => ({
     links: [...hreflangLinks("/products"), { rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
-      { title: "Products — BBE & WiSo | BBE School" },
+      { title: "Products for BBE and WiSo | BBE School" },
       {
         name: "description",
         content:
           "Explore BBE School products for both WU tracks: Demo-Practice, Full BBE Course, and Full WiSo Course.",
       },
-      { property: "og:title", content: "Products — BBE & WiSo | BBE School" },
+      { property: "og:title", content: "Products for BBE and WiSo | BBE School" },
       {
         property: "og:description",
         content:
@@ -113,7 +113,7 @@ const products: Product[] = [
     title: "Full BBE Course",
     image: FULL_COURSE_IMAGE,
     description:
-      "1500+ practice cases across Economics, Mathematics and English — timing modules, full mocks, study assistant, and detailed task breakdowns.",
+      "1500+ practice cases across Economics, Mathematics and English, plus timing modules, full mocks, a study assistant, and clear task breakdowns.",
     cta: "Buy course · €449",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
@@ -125,7 +125,7 @@ const products: Product[] = [
     title: "Full WiSo Course",
     image: WISO_COURSE_IMAGE,
     description:
-      "WiSo-track prep: Wirtschaft verstehen economics, mathematics, and German reading comprehension — on dedicated /wiso URLs, visually distinct from BBE.",
+      "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.",
     cta: "Buy course · €449",
     to: "/wiso/products/full-course",
     ownedCta: "Go to course",
@@ -158,7 +158,7 @@ export function ProductsPage() {
               Our products
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              BBE and WiSo full courses — pick the exam track you are preparing for.
+              BBE and WiSo full courses: pick the exam track you are preparing for.
             </p>
           </div>
 

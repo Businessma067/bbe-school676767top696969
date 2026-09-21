@@ -42,7 +42,7 @@ export const Route = createFileRoute("/wiso/products/full-course")({
         content:
           "Full WiSo Course: Wirtschaft verstehen economics, mathematics, German reading, mocks and study tools for the WU Vienna WiSo exam.",
       },
-      { property: "og:title", content: "Full WiSo Course | Unlock WiSo Prep" },
+      { property: "og:title", content: "Full WiSo Course | WiSo Prep" },
       {
         property: "og:description",
         content:

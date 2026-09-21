@@ -29,17 +29,17 @@ export const Route = createFileRoute("/bbe")({
   head: () => ({
     links: [...hreflangLinks("/bbe"), { rel: "canonical", href: "https://bbe-school.com/bbe" }],
     meta: [
-      { title: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+      { title: "WU Vienna BBE Exam Prep | Practice Simulator | BBE School" },
       {
         name: "description",
         content:
-          "Prepare for the WU Vienna BBE entrance exam with 1500+ realistic cases, timed mock exams and step-by-step explanations for Economics, Mathematics and English.",
+          "Prepare for the WU Vienna BBE entrance exam with realistic cases, timed mock exams, and step-by-step explanations for Economics, Mathematics, and English.",
       },
-      { property: "og:title", content: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+      { property: "og:title", content: "WU Vienna BBE Exam Prep | Practice Simulator | BBE School" },
       {
         property: "og:description",
         content:
-          "Practice the real BBE exam format: True/False cases, partial-credit scoring, timed mocks and tactical explanations.",
+          "Practice the real BBE exam format with True/False cases, partial-credit scoring, timed mocks, and clear explanations.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://bbe-school.com/bbe" },
@@ -74,7 +74,8 @@ export function BbeLandingPage() {
               </h1>
 
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Master every detail and tactic of the actual exam.
+                Learn the format, scoring, and pacing of the actual exam, then practise until it feels
+                familiar.
               </p>
 
               <div
@@ -132,13 +133,10 @@ export function BbeLandingPage() {
         >
           <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              A triple-accredited elite business school.
-              <br />
-              <span className="text-white/95">Almost free education.</span>
+              A triple-accredited business school with tuition that stays close to free
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              One 2-hour exam stands between your family and a world-class degree at almost zero
-              cost.
+              One two-hour exam sits between your family and a strong degree at almost zero cost.
             </p>
           </div>
         </section>
@@ -151,10 +149,9 @@ export function BbeLandingPage() {
                 Why Choose US
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
-                The standards at WU Vienna are exceptionally high. Let's be honest: entry
-                competition is brutal, and no software can ever guarantee your admission. Success
-                requires hard, disciplined work. But our data proves how we shift the odds in your
-                favor.
+                Standards at WU Vienna are high, and entry is competitive. No software can guarantee
+                admission, because that still takes disciplined work, but our numbers show how
+                preparation shifts the odds.
               </p>
             </div>
           </div>
@@ -186,7 +183,7 @@ export function BbeLandingPage() {
         >
           <div className="mx-auto max-w-5xl px-4 py-12 text-center sm:px-6 sm:py-14 lg:px-8 lg:py-16">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Voices from the exam hall floor.
+              Notes from people who sat the exam
             </h2>
           </div>
         </section>
@@ -196,7 +193,7 @@ export function BbeLandingPage() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-10 max-w-3xl">
               <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-                Students' reviews right after receiving an acceptance letter.
+                What students wrote after they got an acceptance letter
               </h2>
             </div>
 
@@ -541,18 +538,12 @@ function WhyUsSlider() {
             <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
               <p className="text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
                 Private tutors in Vienna charge{" "}
-                <span className="text-why-us-fg">€50 to €100 per hour</span> just to read
-                textbook slides with you — that is a financial black hole. Furthermore, top-tier
-                university education at WU Vienna costs literally{" "}
-                <span className="text-caramel-deep">10 times less</span> in tuition than comparable
-                business schools in the UK or US, making it the highest ROI investment in your
-                future. A single one-time investment in our platform saves you thousands of euros in
-                useless prep costs, protecting your path to an incredibly affordable, world-class
-                degree. Failing the exam means losing a{" "}
-                <span className="font-semibold text-why-us-fg">
-                  €100,000 financial advantage
-                </span>
-                .
+                <span className="text-why-us-fg">€50 to €100 per hour</span> just to walk through
+                textbook slides, which adds up fast. Tuition at WU Vienna is often{" "}
+                <span className="text-caramel-deep">about ten times lower</span> than comparable
+                business schools in the UK or US, so a one-time prep investment can protect a path to
+                an affordable degree. Missing the exam means giving up a{" "}
+                <span className="font-semibold text-why-us-fg">€100,000 financial advantage</span>.
               </p>
               <CapitalBars />
             </div>
@@ -561,12 +552,11 @@ function WhyUsSlider() {
           {/* Slide 03 — Top-Tier Career Outcomes */}
           <WhySlide title="Top-Tier Career Outcomes">
             <p className="max-w-3xl text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
-              WU Vienna is a premier target university for the world's elite firms, but only for the{" "}
-              <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just
-              the first filter. By training your brain to handle brutal exam pressure now, you build
-              the raw analytical stamina required to later survive intense recruitment cycles and
-              secure elite international career placements. BBE alumni consistently secure top-tier
-              offers across global financial and consulting hubs.
+              WU Vienna is a target school for many strong firms, though recruiters usually look at
+              the <span className="text-caramel-deep">top of the class</span>. Getting in is only
+              the first filter. Training under exam pressure now builds the analytical stamina you
+              need later in recruitment cycles, and BBE alumni regularly land offers across finance
+              and consulting hubs.
             </p>
             <PlacementsTicker />
           </WhySlide>
@@ -753,7 +743,7 @@ const reports = [
     id: 5,
     name: "Daniel, Ljubljana",
     quote:
-      "I am grateful to bbe school for providing clear, structured questions that offer the best possible simulation of the actual live exam. Time management also played a crucial role. Another important factor were simply brilliant time-management tools — ones I hadn't seen before — were exactly what helped me meet the deadline.",
+      "I am grateful to bbe school for providing clear, structured questions that offer the best possible simulation of the actual live exam. Time management also played a crucial role. The time-management tools I hadn't seen before were exactly what helped me meet the deadline.",
     badge: "Rank: 7th",
     fire: true,
   },
