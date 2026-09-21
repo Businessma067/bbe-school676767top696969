@@ -56,6 +56,30 @@ export const uiExtraDe: Record<string, string> = {
   "Terms of Service & Privacy Policy": "Nutzungsbedingungen & Datenschutzrichtlinie",
   "Check your email to confirm your account, then sign in.":
     "Prüfe deine E-Mail, um dein Konto zu bestätigen, und melde dich dann an.",
+  "Check your email": "Prüfe deine E-Mail",
+  "We sent a confirmation link to finish creating your account.":
+    "Wir haben dir einen Bestätigungslink geschickt, um dein Konto zu erstellen.",
+  "We sent a confirmation link to ": "Wir haben einen Bestätigungslink an ",
+  ". Open the email and tap the link, then sign in.":
+    " gesendet. Öffne die E-Mail, tippe auf den Link und melde dich dann an.",
+  "Open the confirmation email we sent you, then tap the link inside. After that you can sign in.":
+    "Öffne die Bestätigungs-E-Mail und tippe auf den Link darin. Danach kannst du dich anmelden.",
+  "Confirmation email sent. Check your inbox and spam folder.":
+    "Bestätigungs-E-Mail gesendet. Prüfe Posteingang und Spam-Ordner.",
+  "Could not resend confirmation email.": "Bestätigungs-E-Mail konnte nicht erneut gesendet werden.",
+  "Continue to sign in": "Weiter zur Anmeldung",
+  "Back to sign up": "Zurück zur Registrierung",
+  "Confirming your email…": "E-Mail wird bestätigt…",
+  "Checking the link from your email…": "Link aus der E-Mail wird geprüft…",
+  "All set.": "Fertig.",
+  "Something went wrong.": "Etwas ist schiefgelaufen.",
+  "Email confirmed. Taking you to your dashboard…":
+    "E-Mail bestätigt. Weiterleitung zum Dashboard…",
+  "Could not confirm email.": "E-Mail konnte nicht bestätigt werden.",
+  "Request a new email": "Neue E-Mail anfordern",
+  "This confirmation link is invalid or has expired. Request a new email from the confirmation page.":
+    "Dieser Bestätigungslink ist ungültig oder abgelaufen. Fordere auf der Bestätigungsseite eine neue E-Mail an.",
+  "Just a moment…": "Einen Moment…",
   "Hide password": "Passwort verbergen",
   "Show password": "Passwort anzeigen",
   "Please accept the Terms of Service and Privacy Policy to continue.":
@@ -265,6 +289,30 @@ export const uiExtraUk: Record<string, string> = {
   "Terms of Service & Privacy Policy": "Умовами використання та Політикою конфіденційності",
   "Check your email to confirm your account, then sign in.":
     "Перевірте пошту, щоб підтвердити обліковий запис, потім увійдіть.",
+  "Check your email": "Перевірте пошту",
+  "We sent a confirmation link to finish creating your account.":
+    "Ми надіслали посилання для підтвердження, щоб завершити створення облікового запису.",
+  "We sent a confirmation link to ": "Ми надіслали посилання підтвердження на ",
+  ". Open the email and tap the link, then sign in.":
+    ". Відкрийте лист, натисніть посилання, потім увійдіть.",
+  "Open the confirmation email we sent you, then tap the link inside. After that you can sign in.":
+    "Відкрийте лист підтвердження та натисніть посилання всередині. Після цього можна увійти.",
+  "Confirmation email sent. Check your inbox and spam folder.":
+    "Лист підтвердження надіслано. Перевірте вхідні та папку спаму.",
+  "Could not resend confirmation email.": "Не вдалося повторно надіслати лист підтвердження.",
+  "Continue to sign in": "Перейти до входу",
+  "Back to sign up": "Назад до реєстрації",
+  "Confirming your email…": "Підтвердження email…",
+  "Checking the link from your email…": "Перевіряємо посилання з листа…",
+  "All set.": "Готово.",
+  "Something went wrong.": "Щось пішло не так.",
+  "Email confirmed. Taking you to your dashboard…":
+    "Email підтверджено. Переходимо в кабінет…",
+  "Could not confirm email.": "Не вдалося підтвердити email.",
+  "Request a new email": "Надіслати новий лист",
+  "This confirmation link is invalid or has expired. Request a new email from the confirmation page.":
+    "Це посилання підтвердження недійсне або застаріло. Запросіть новий лист на сторінці підтвердження.",
+  "Just a moment…": "Хвилинку…",
   "Hide password": "Сховати пароль",
   "Show password": "Показати пароль",
   "Please accept the Terms of Service and Privacy Policy to continue.":
