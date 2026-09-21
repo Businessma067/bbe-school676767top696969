@@ -222,10 +222,10 @@ function dashCircleLitStrength(
   if (inside === 0) return 0;
 
   // Coverage of dash samples inside the circle (0→1), eased for a soft blink.
+  // ~1 sample on first contact already reads as a soft start; full by ~3 samples
+  // so the glow holds for most of the crossing.
   const cover = inside / (DASH_SAMPLES + 1);
-  // Reach full brightness once a meaningful stretch of the dash is inside,
-  // so the glow holds for most of the crossing instead of spiking mid-pass.
-  const t = Math.min(1, cover / 0.28);
+  const t = Math.min(1, cover / 0.12);
   return t * t * (3 - 2 * t);
 }
 
