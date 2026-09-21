@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/dialog";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { SCORING_CONFIG } from "@/config/scoring-config";
 import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
 import {
@@ -20,6 +19,7 @@ import {
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exams";
+import { WISO_MOCK_EXAM_1_SECTION_COUNTS } from "@/lib/wiso-mock-exam-1-content";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import { storeExamTrack } from "@/lib/exam-track";
 import { fetchMockAttempts, type MockAttempt } from "@/lib/user-progress";
@@ -298,22 +298,28 @@ export function WisoMockExamsPage() {
           <div className="rounded-xl border border-border bg-secondary/40 p-4 text-sm">
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Wirtschaft</span>
-              <span className="font-semibold">{SCORING_CONFIG.economics.taskCount} Fragen</span>
+              <span className="font-semibold">
+                {WISO_MOCK_EXAM_1_SECTION_COUNTS.economics} Fragen
+              </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Deutsch</span>
-              <span className="font-semibold">{SCORING_CONFIG.german.taskCount} Fragen</span>
+              <span className="font-semibold">
+                {WISO_MOCK_EXAM_1_SECTION_COUNTS.german} Fragen
+              </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Mathematik</span>
-              <span className="font-semibold">{SCORING_CONFIG.math.taskCount} Fragen</span>
+              <span className="font-semibold">
+                {WISO_MOCK_EXAM_1_SECTION_COUNTS.math} Fragen
+              </span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="font-semibold">Gesamt</span>
               <span className="font-semibold">
-                {SCORING_CONFIG.economics.taskCount +
-                  SCORING_CONFIG.german.taskCount +
-                  SCORING_CONFIG.math.taskCount}{" "}
+                {WISO_MOCK_EXAM_1_SECTION_COUNTS.economics +
+                  WISO_MOCK_EXAM_1_SECTION_COUNTS.german +
+                  WISO_MOCK_EXAM_1_SECTION_COUNTS.math}{" "}
                 Fragen
               </span>
             </div>

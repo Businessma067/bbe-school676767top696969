@@ -52,8 +52,8 @@ export const SCORING_CONFIG = {
   },
   /** WiSo German reading (Sprachverständnis) — same per-task max as BBE English texts. */
   german: {
-    taskCount: 10,
-    totalPoints: 10 * ENGLISH_POINTS_BY_TYPE.text,
+    taskCount: 11,
+    totalPoints: 11 * ENGLISH_POINTS_BY_TYPE.text,
     defaultMaxPerTask: ENGLISH_POINTS_BY_TYPE.text,
   },
   /** BBE written exam total (Economics 60 + Mathematics 69 + English 31). */

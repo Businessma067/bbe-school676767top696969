@@ -1,8 +1,8 @@
 /**
  * Curated WiSo Mock Exam 1:
  * - Economics (Wirtschaft verstehen) → German reading → Math
- * - Hardest chapter tasks from WiSo Full Course banks
- * - German Sprachverständnis only (no BBE English grammar/vocab mix)
+ * - Math mirrors BBE Mock 1 task IDs with full German teacher explanations
+ * - German: 11 Sprachverständnis tasks (t.2×10 + one t.1 hardest with own passage)
  */
 
 import sourced from "@/data/wiso-mock-exam-1-sourced.json";
@@ -23,6 +23,8 @@ type SourcedTask = {
   tactical_explanations?: string[];
   kind?: string;
   with_passage?: boolean;
+  passage_override?: string;
+  passage_title_override?: string;
   difficulty_level?: string;
   solution_overview?: string;
   figure?: string;
@@ -56,11 +58,19 @@ function unwrapSourced(mod: unknown): SourcedBundle {
 
 const bundle = unwrapSourced(sourced);
 
-/** Full published math maxima (14 tasks). */
-export const WISO_MOCK_EXAM_1_MATH_POINTS = MATH_POINTS_PER_TASK;
+/** Same published maxima as BBE mocks: first 13 of 14. */
+export const WISO_MOCK_EXAM_1_MATH_POINTS = MATH_POINTS_PER_TASK.slice(0, 13);
+
+export const WISO_MOCK_EXAM_1_SECTION_COUNTS = {
+  economics: bundle.economics.length,
+  german: bundle.german.tasks.length,
+  math: bundle.math.length,
+} as const;
 
 export const WISO_MOCK_EXAM_1_QUESTION_COUNT =
-  bundle.economics.length + bundle.german.tasks.length + bundle.math.length;
+  WISO_MOCK_EXAM_1_SECTION_COUNTS.economics +
+  WISO_MOCK_EXAM_1_SECTION_COUNTS.german +
+  WISO_MOCK_EXAM_1_SECTION_COUNTS.math;
 
 export const WISO_MOCK_EXAM_1_POINTS_TOTAL =
   bundle.economics.length * SCORING_CONFIG.economics.defaultMaxPerTask +
@@ -68,7 +78,7 @@ export const WISO_MOCK_EXAM_1_POINTS_TOTAL =
   WISO_MOCK_EXAM_1_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 export const WISO_MOCK_EXAM_1_CONTENT_REV =
-  "2026-09-20a · 34q · WiSo hardest banks · DE reading t.2";
+  "2026-09-21a · 34q · 10+11+13 · BBE-math DE · t.2+t.1 reading";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
@@ -157,9 +167,13 @@ export function buildWisoMockExam1Questions(examId = "wiso-mock-1"): ExamQuestio
     );
   }
 
-  const passage = bundle.german.passage;
+  const defaultPassage = bundle.german.passage;
   for (const task of bundle.german.tasks) {
     index += 1;
+    const kind = task.kind ?? "text";
+    const showPassage =
+      task.with_passage === true || (task.with_passage !== false && kind === "text");
+    const passage = task.passage_override?.trim() || defaultPassage;
     questions.push(
       fromBankTask({
         examId,
@@ -172,7 +186,7 @@ export function buildWisoMockExam1Questions(examId = "wiso-mock-1"): ExamQuestio
         explanations: task.tactical_explanations ?? [],
         scrub: "soft",
         subtopicTag: task.case_id ?? task.subsection,
-        passage,
+        passage: showPassage ? passage : undefined,
       }),
     );
   }
