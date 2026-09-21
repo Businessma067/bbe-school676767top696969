@@ -18,6 +18,7 @@ import {
   Tooltip,
 } from "recharts";
 import { ZoomableImage } from "@/components/ZoomableImage";
+import { WISO_ECONOMICS_FIGURES } from "@/components/theory/wiso-economics-figures";
 import { cn } from "@/lib/utils";
 
 const ACCENT = "#C45C1A";
@@ -2797,6 +2798,7 @@ const FIGURES: Record<string, () => ReactNode> = {
   "log-basic": LogBasic,
   "log-bases": LogBases,
 
+  ...WISO_ECONOMICS_FIGURES,
 };
 
 export function TheoryFigure({ id, caption, className }: Props) {
