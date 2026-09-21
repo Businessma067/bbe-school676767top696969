@@ -216,7 +216,7 @@ export function DemoPracticeProduct() {
           </EnrollButton>
 
           <p className="mt-3 text-center text-xs text-muted-foreground">
-            ✓ 100% Free • Instant web access
+            Free · Instant web access
           </p>
 
           {/* Long description */}
@@ -294,7 +294,7 @@ export function DemoPracticeProduct() {
           {/* FAQ */}
           <section className="mt-14">
             <h2 className="mb-6 text-center font-display text-xl font-semibold tracking-tight text-foreground">
-              Frequently Asked Questions — Demo-Practice
+              Frequently Asked Questions for Demo-Practice
             </h2>
             <SeoFaq className="rounded-2xl border border-border bg-card p-4 shadow-sm" items={demoFaqs} />
           </section>
