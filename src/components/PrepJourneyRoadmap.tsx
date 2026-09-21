@@ -164,123 +164,69 @@ const COMET_DELAY_MS = 400;
 const COMET_DASH = 0.09;
 const PATH_VB_W = 1000;
 const PATH_VB_H = 320;
+/** Samples along the visible dash for screen-space hit tests. */
+const DASH_SAMPLES = 20;
 
-/**
- * With stroke-dasharray COMET_DASH+(1-COMET_DASH) and dashoffset = 1-u,
- * the visible dash covers [u, u+COMET_DASH) (wrapping at 1).
- *
- * Strength is 0 until the leading edge touches the circle, then eases up
- * quickly, stays bright while the dash crosses, and eases down as the
- * trail leaves — smooth blink over the exact geometric pass window.
- */
-function cometLitStrength(u: number, f: number, r: number): number {
-  if (r <= 0) return 0;
+type SvgLayout = {
+  total: number;
+  left: number;
+  top: number;
+  scaleX: number;
+  scaleY: number;
+};
 
-  const passStart = f - r - COMET_DASH;
-  const passEnd = f + r;
-  const passLen = passEnd - passStart;
-  if (passLen <= 0) return 0;
-
-  // Ease in/out over a fixed fraction of the pass (not a thin mid spike).
-  const FADE = 0.22;
-
-  const envelope = (phase: number): number => {
-    if (phase <= 0 || phase >= 1) return 0;
-    if (phase < FADE) {
-      const t = phase / FADE;
-      return t * t * (3 - 2 * t);
-    }
-    if (phase > 1 - FADE) {
-      const t = (1 - phase) / FADE;
-      return t * t * (3 - 2 * t);
-    }
-    return 1;
+function readSvgLayout(path: SVGPathElement, svg: SVGSVGElement): SvgLayout {
+  const rect = svg.getBoundingClientRect();
+  return {
+    total: path.getTotalLength(),
+    left: rect.left,
+    top: rect.top,
+    scaleX: rect.width / PATH_VB_W,
+    scaleY: rect.height / PATH_VB_H,
   };
-
-  const samples = u + COMET_DASH > 1 ? [u, u - 1] : [u];
-  let best = 0;
-  for (const uu of samples) {
-    if (uu < passStart || uu > passEnd) continue;
-    best = Math.max(best, envelope((uu - passStart) / passLen));
-  }
-  return best;
 }
 
-type NodePathHit = { f: number; r: number };
-
-function measureNodePathHit(
+/**
+ * Screen-space overlap of the visible dash [u, u+DASH) with the node circle.
+ * Strength eases from 0 at first contact to 1 while the dash crosses, then
+ * back to 0 as it leaves — matches the pixels the user actually sees.
+ */
+function dashCircleLitStrength(
   path: SVGPathElement,
-  svg: SVGSVGElement,
+  layout: SvgLayout,
+  u: number,
   nodeEl: HTMLElement,
-): NodePathHit {
-  const total = path.getTotalLength();
-  const svgRect = svg.getBoundingClientRect();
-  const scaleX = svgRect.width / PATH_VB_W;
-  const scaleY = svgRect.height / PATH_VB_H;
+): number {
   const nr = nodeEl.getBoundingClientRect();
   const cx = nr.left + nr.width / 2;
   const cy = nr.top + nr.height / 2;
-  const radiusPx = Math.min(nr.width, nr.height) / 2;
-  const r2 = radiusPx * radiusPx;
+  const rad = Math.min(nr.width, nr.height) / 2;
+  if (rad <= 1 || layout.total <= 0) return 0;
 
-  const screenDist2 = (f: number) => {
-    const pt = path.getPointAtLength(Math.min(1, Math.max(0, f)) * total);
-    const x = svgRect.left + pt.x * scaleX;
-    const y = svgRect.top + pt.y * scaleY;
-    return (x - cx) ** 2 + (y - cy) ** 2;
-  };
+  let inside = 0;
+  let minDist = Infinity;
+  const { total, left, top, scaleX, scaleY } = layout;
 
-  let bestF = 0;
-  let bestD = Infinity;
-  const COARSE = 320;
-  for (let i = 0; i <= COARSE; i++) {
-    const f = i / COARSE;
-    const d = screenDist2(f);
-    if (d < bestD) {
-      bestD = d;
-      bestF = f;
-    }
-  }
-  // Local refine
-  const span = 1 / COARSE;
-  for (let i = 0; i <= 40; i++) {
-    const f = bestF - span + (2 * span * i) / 40;
-    if (f < 0 || f > 1) continue;
-    const d = screenDist2(f);
-    if (d < bestD) {
-      bestD = d;
-      bestF = f;
-    }
+  for (let i = 0; i <= DASH_SAMPLES; i++) {
+    let t = u + (COMET_DASH * i) / DASH_SAMPLES;
+    if (t > 1) t -= 1;
+    if (t < 0) t += 1;
+    const pt = path.getPointAtLength(t * total);
+    const x = left + pt.x * scaleX;
+    const y = top + pt.y * scaleY;
+    const d = Math.hypot(x - cx, y - cy);
+    if (d < minDist) minDist = d;
+    if (d <= rad) inside += 1;
   }
 
-  const inside = (f: number) => screenDist2(f) <= r2;
+  if (inside === 0) return 0;
 
-  const edge = (from: number, to: number, wantInsideAtTo: boolean) => {
-    let a = from;
-    let b = to;
-    for (let i = 0; i < 28; i++) {
-      const m = (a + b) / 2;
-      if (inside(m) === wantInsideAtTo) b = m;
-      else a = m;
-    }
-    return (a + b) / 2;
-  };
-
-  let forward = bestF;
-  {
-    const probe = Math.min(1, bestF + 0.22);
-    if (inside(probe)) forward = probe;
-    else if (inside(bestF)) forward = edge(bestF, probe, false);
-  }
-  let backward = bestF;
-  {
-    const probe = Math.max(0, bestF - 0.22);
-    if (inside(probe)) backward = probe;
-    else if (inside(bestF)) backward = edge(probe, bestF, true);
-  }
-
-  const r = Math.max((forward - backward) / 2, 0.012);
-  return { f: bestF, r };
+  // Coverage of dash samples inside the circle (0→1), eased for a soft blink.
+  const cover = inside / (DASH_SAMPLES + 1);
+  // Reach full brightness once a meaningful stretch of the dash is inside,
+  // so the glow holds for most of the crossing instead of spiking mid-pass.
+  const t = Math.min(1, cover / 0.28);
+  return t * t * (3 - 2 * t);
 }
 
 function NodeCircle({
@@ -446,12 +392,7 @@ function SpreadDesktopRoadmap({
   const cometRef = useRef<SVGPathElement | null>(null);
   const hitElsRef = useRef<Array<HTMLDivElement | null>>([null, null, null, null]);
   const litStrengthRef = useRef<Array<number>>([0, 0, 0, 0]);
-  const hitsRef = useRef<NodePathHit[]>([
-    { f: 0, r: 0.036 },
-    { f: 0.3348, r: 0.036 },
-    { f: 0.6688, r: 0.036 },
-    { f: 1, r: 0.036 },
-  ]);
+  const layoutRef = useRef<SvgLayout | null>(null);
 
   useEffect(() => {
     const svg = svgRef.current;
@@ -471,22 +412,12 @@ function SpreadDesktopRoadmap({
       return hit?.closest(".prep-roadmap-node-pass-wrap") as HTMLElement | null;
     };
 
-    const remmeasure = () => {
-      const next: NodePathHit[] = [];
-      for (let i = 0; i < 4; i++) {
-        const el = hitElsRef.current[i];
-        if (!el) {
-          next.push(hitsRef.current[i]!);
-          continue;
-        }
-        next.push(measureNodePathHit(path, svg, el));
-      }
-      hitsRef.current = next;
+    const refreshLayout = () => {
+      layoutRef.current = readSvgLayout(path, svg);
     };
+    refreshLayout();
 
-    // Nodes mount in the same commit; measure after layout.
-    const measureRaf = requestAnimationFrame(() => remmeasure());
-    const ro = new ResizeObserver(() => remmeasure());
+    const ro = new ResizeObserver(() => refreshLayout());
     ro.observe(svg);
     for (const el of hitElsRef.current) {
       if (el) ro.observe(el);
@@ -498,7 +429,7 @@ function SpreadDesktopRoadmap({
     const setLitStrength = (index: number, strength: number) => {
       const prev = litStrengthRef.current[index] ?? 0;
       const next = strength < 0.004 ? 0 : strength;
-      if (Math.abs(prev - next) < 0.003) return;
+      if (Math.abs(prev - next) < 0.002) return;
       litStrengthRef.current[index] = next;
       const wrap = wrapFor(index);
       if (!wrap) return;
@@ -514,10 +445,14 @@ function SpreadDesktopRoadmap({
       }
       comet.style.strokeDashoffset = String(1 - u);
 
-      const hits = hitsRef.current;
+      const layout = layoutRef.current ?? readSvgLayout(path, svg);
       for (let i = 0; i < 4; i++) {
-        const hit = hits[i]!;
-        setLitStrength(i, cometLitStrength(u, hit.f, hit.r));
+        const el = hitElsRef.current[i];
+        if (!el) {
+          setLitStrength(i, 0);
+          continue;
+        }
+        setLitStrength(i, dashCircleLitStrength(path, layout, u, el));
       }
 
       raf = requestAnimationFrame(tick);
@@ -535,7 +470,6 @@ function SpreadDesktopRoadmap({
     reduced.addEventListener("change", onMotionChange);
 
     return () => {
-      cancelAnimationFrame(measureRaf);
       cancelAnimationFrame(raf);
       ro.disconnect();
       reduced.removeEventListener("change", onMotionChange);
