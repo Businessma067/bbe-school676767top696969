@@ -1,7 +1,7 @@
 /**
  * Curated WiSo Mock Exam 1:
  * - Economics (Wirtschaft verstehen) → German reading → Math
- * - Math mirrors BBE Mock 1 task IDs with full German teacher explanations
+ * - Math mirrors BBE Mock 2 task types (not Mock 1 clones) with German teacher explanations
  * - German: 11 Sprachverständnis tasks (t.2×10 + one t.1 hardest with own passage)
  */
 
@@ -78,7 +78,7 @@ export const WISO_MOCK_EXAM_1_POINTS_TOTAL =
   WISO_MOCK_EXAM_1_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 export const WISO_MOCK_EXAM_1_CONTENT_REV =
-  "2026-09-21a · 34q · 10+11+13 · BBE-math DE · t.2+t.1 reading";
+  "2026-09-21b · 34q · 10+11+13 · Mock2-type math DE · t.2+t.1 reading";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
