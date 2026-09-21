@@ -601,57 +601,9 @@ body.flashcard-swiping {
 }
 
 /**
- * Soft blink + expand when the comet reaches each node.
- * Duration/delay must match .prep-roadmap-comet; flash peaks at 0% of the cycle.
+ * Soft blink driven by --prep-lit (0..1) from the comet∩circle overlap.
+ * Strength eases in as the leading edge enters and out as the trail leaves.
  */
-@keyframes prep-roadmap-node-pass {
-  /* Peak at 0% so animation-delay == comet arrival time. */
-  0% {
-    transform: scale(1.07);
-    filter: brightness(1.1);
-  }
-  3.5% {
-    transform: scale(1.03);
-    filter: brightness(1.04);
-  }
-  8%,
-  100% {
-    transform: scale(1);
-    filter: brightness(1);
-  }
-}
-
-@keyframes prep-roadmap-node-spark {
-  0% {
-    opacity: 0.5;
-    transform: scale(1.22);
-  }
-  3.5% {
-    opacity: 0.18;
-    transform: scale(1.34);
-  }
-  8%,
-  100% {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-}
-
-@keyframes prep-roadmap-node-glow {
-  0% {
-    box-shadow:
-      0 0 0 2px color-mix(in oklab, var(--prep-accent) 28%, transparent),
-      0 0 14px -2px color-mix(in oklab, var(--prep-accent) 42%, transparent);
-  }
-  3.5% {
-    box-shadow: 0 0 8px -3px color-mix(in oklab, var(--prep-accent) 22%, transparent);
-  }
-  8%,
-  100% {
-    box-shadow: 0 0 0 0 transparent;
-  }
-}
-
 .prep-roadmap-path {
   stroke-dasharray: none;
   stroke-dashoffset: 0;
@@ -664,8 +616,10 @@ body.flashcard-swiping {
 }
 
 .prep-roadmap-node-pass-wrap {
+  --prep-lit: 0;
   transform-origin: center;
-  animation: prep-roadmap-node-pass 8.5s linear infinite;
+  transform: scale(calc(1 + 0.075 * var(--prep-lit)));
+  filter: brightness(calc(1 + 0.12 * var(--prep-lit)));
   will-change: transform, filter;
 }
 
@@ -679,8 +633,12 @@ body.flashcard-swiping {
   position: absolute;
   inset: 0;
   border-radius: 9999px;
-  animation: prep-roadmap-node-glow 8.5s linear infinite;
-  will-change: box-shadow;
+  opacity: var(--prep-lit);
+  box-shadow:
+    0 0 0 calc(2.5px * var(--prep-lit)) color-mix(in oklab, var(--prep-accent) 30%, transparent),
+    0 0 calc(16px * var(--prep-lit)) calc(-2px * var(--prep-lit))
+      color-mix(in oklab, var(--prep-accent) 46%, transparent);
+  will-change: opacity, box-shadow;
 }
 
 .prep-roadmap-node-spark {
@@ -691,12 +649,12 @@ body.flashcard-swiping {
   background:
     radial-gradient(
       circle,
-      color-mix(in oklab, var(--prep-accent) 38%, transparent) 0%,
-      color-mix(in oklab, var(--prep-accent) 12%, transparent) 42%,
+      color-mix(in oklab, var(--prep-accent) 40%, transparent) 0%,
+      color-mix(in oklab, var(--prep-accent) 14%, transparent) 42%,
       transparent 70%
     );
-  opacity: 0;
-  animation: prep-roadmap-node-spark 8.5s linear infinite;
+  opacity: calc(0.55 * var(--prep-lit));
+  transform: scale(calc(0.94 + 0.32 * var(--prep-lit)));
   will-change: opacity, transform;
 }
 
@@ -722,22 +680,16 @@ body.flashcard-swiping {
 .prep-roadmap-here-ring-2 {
   animation-delay: 1.3s;
 }
-@keyframes prep-roadmap-comet {
-  from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 
 .prep-roadmap-comet {
   stroke-dasharray: 0.09 0.91;
   stroke-dashoffset: 1;
-  animation: prep-roadmap-comet 8.5s linear 0.4s infinite;
 }
 
-
+/* JS-driven comet: no CSS keyframes — dashoffset set each frame. */
+.prep-roadmap-comet--js {
+  animation: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
   .practice-panel-enter,
@@ -757,7 +709,8 @@ body.flashcard-swiping {
   .prep-roadmap-node-glow,
   .prep-roadmap-comet,
   .prep-roadmap-here-ring {
-    animation: none;
+    animation: none !important;
+    transition: none !important;
   }
 
   .prep-roadmap-comet,
@@ -781,5 +734,14 @@ body.flashcard-swiping {
     transform: none;
     filter: none;
     box-shadow: none;
+  }
+
+  .prep-roadmap-node-pass-wrap {
+    --prep-lit: 0;
+  }
+
+  .prep-roadmap-node-glow,
+  .prep-roadmap-node-spark {
+    opacity: 0;
   }
 }

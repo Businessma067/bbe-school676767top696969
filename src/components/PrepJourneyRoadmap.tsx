@@ -1,4 +1,6 @@
-import type { CSSProperties } from "react";
+"use client";
+
+import { useEffect, useRef, type CSSProperties } from "react";
 import { cn } from "@/lib/utils";
 
 type Milestone = {
@@ -156,22 +158,113 @@ function MilestoneIcon({
   );
 }
 
-/** Comet: 8.5s linear, 0.4s delay, dash 0.09 of pathLength 1. */
-const COMET_DURATION_S = 8.5;
-const COMET_DELAY_S = 0.4;
-/** Half dash length — flash when comet center sits on the node. */
-const COMET_HALF_DASH = 0.045;
-/**
- * Arc-length fractions of the desktop path at the four circle centers
- * (M125→375→625→875). Last node uses near-end so the head still overlaps.
- */
-const NODE_PATH_FRACTIONS = [0, 0.3348, 0.6688, 0.955] as const;
+/** Comet travel: 8.5s linear after 0.4s delay; dash is 0.09 of pathLength 1. */
+const COMET_DURATION_MS = 8500;
+const COMET_DELAY_MS = 400;
+const COMET_DASH = 0.09;
+const PATH_VB_W = 1000;
+const PATH_VB_H = 320;
 
-function nodePassDelay(index: number): string {
-  const f = NODE_PATH_FRACTIONS[index] ?? index / 3;
-  // Comet center at fraction f when progress u = f - halfDash (clamped).
-  const u = Math.max(0, f - COMET_HALF_DASH);
-  return `${COMET_DELAY_S + u * COMET_DURATION_S}s`;
+/**
+ * With stroke-dasharray COMET_DASH+(1-COMET_DASH) and dashoffset = 1-u,
+ * the visible dash covers [u, u+COMET_DASH) (wrapping at 1).
+ * Strength is a sine envelope over the exact geometric pass:
+ * 0 when the leading edge first touches the circle, peaks mid-pass,
+ * 0 when the trailing edge leaves — smooth blink, no snap.
+ */
+function cometLitStrength(u: number, f: number, r: number): number {
+  if (r <= 0) return 0;
+
+  const passStart = f - r - COMET_DASH;
+  const passEnd = f + r;
+  const passLen = passEnd - passStart;
+  if (passLen <= 0) return 0;
+
+  const samples = u + COMET_DASH > 1 ? [u, u - 1] : [u];
+  let best = 0;
+  for (const uu of samples) {
+    if (uu < passStart || uu > passEnd) continue;
+    const phase = (uu - passStart) / passLen;
+    best = Math.max(best, Math.sin(phase * Math.PI));
+  }
+  return best;
+}
+
+type NodePathHit = { f: number; r: number };
+
+function measureNodePathHit(
+  path: SVGPathElement,
+  svg: SVGSVGElement,
+  nodeEl: HTMLElement,
+): NodePathHit {
+  const total = path.getTotalLength();
+  const svgRect = svg.getBoundingClientRect();
+  const scaleX = svgRect.width / PATH_VB_W;
+  const scaleY = svgRect.height / PATH_VB_H;
+  const nr = nodeEl.getBoundingClientRect();
+  const cx = nr.left + nr.width / 2;
+  const cy = nr.top + nr.height / 2;
+  const radiusPx = Math.min(nr.width, nr.height) / 2;
+  const r2 = radiusPx * radiusPx;
+
+  const screenDist2 = (f: number) => {
+    const pt = path.getPointAtLength(Math.min(1, Math.max(0, f)) * total);
+    const x = svgRect.left + pt.x * scaleX;
+    const y = svgRect.top + pt.y * scaleY;
+    return (x - cx) ** 2 + (y - cy) ** 2;
+  };
+
+  let bestF = 0;
+  let bestD = Infinity;
+  const COARSE = 320;
+  for (let i = 0; i <= COARSE; i++) {
+    const f = i / COARSE;
+    const d = screenDist2(f);
+    if (d < bestD) {
+      bestD = d;
+      bestF = f;
+    }
+  }
+  // Local refine
+  const span = 1 / COARSE;
+  for (let i = 0; i <= 40; i++) {
+    const f = bestF - span + (2 * span * i) / 40;
+    if (f < 0 || f > 1) continue;
+    const d = screenDist2(f);
+    if (d < bestD) {
+      bestD = d;
+      bestF = f;
+    }
+  }
+
+  const inside = (f: number) => screenDist2(f) <= r2;
+
+  const edge = (from: number, to: number, wantInsideAtTo: boolean) => {
+    let a = from;
+    let b = to;
+    for (let i = 0; i < 28; i++) {
+      const m = (a + b) / 2;
+      if (inside(m) === wantInsideAtTo) b = m;
+      else a = m;
+    }
+    return (a + b) / 2;
+  };
+
+  let forward = bestF;
+  {
+    const probe = Math.min(1, bestF + 0.22);
+    if (inside(probe)) forward = probe;
+    else if (inside(bestF)) forward = edge(bestF, probe, false);
+  }
+  let backward = bestF;
+  {
+    const probe = Math.max(0, bestF - 0.22);
+    if (inside(probe)) backward = probe;
+    else if (inside(bestF)) backward = edge(probe, bestF, true);
+  }
+
+  const r = Math.max((forward - backward) / 2, 0.012);
+  return { f: bestF, r };
 }
 
 function NodeCircle({
@@ -180,15 +273,16 @@ function NodeCircle({
   size = "md",
   accent,
   youAreHereLabel,
+  nodeRef,
 }: {
   milestone: Milestone;
   index: number;
   size?: "sm" | "md" | "lg";
   accent: PrepRoadmapAccent;
   youAreHereLabel: string;
+  nodeRef?: (el: HTMLDivElement | null) => void;
 }) {
   const color = accentVar(accent);
-  const passDelay = nodePassDelay(index);
   const dim =
     size === "lg"
       ? "h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]"
@@ -200,8 +294,9 @@ function NodeCircle({
 
   return (
     <div
+      ref={nodeRef}
       className="prep-roadmap-node-pass-wrap relative"
-      style={{ animationDelay: passDelay }}
+      style={{ ["--prep-lit" as string]: 0 } as CSSProperties}
     >
       <div
         className={cn(
@@ -229,22 +324,12 @@ function NodeCircle({
       >
         <span
           className="prep-roadmap-node-glow"
-          style={
-            {
-              animationDelay: passDelay,
-              ["--prep-accent" as string]: color,
-            } as CSSProperties
-          }
+          style={{ ["--prep-accent" as string]: color } as CSSProperties}
           aria-hidden
         />
         <span
           className="prep-roadmap-node-spark"
-          style={
-            {
-              animationDelay: passDelay,
-              ["--prep-accent" as string]: color,
-            } as CSSProperties
-          }
+          style={{ ["--prep-accent" as string]: color } as CSSProperties}
           aria-hidden
         />
         {milestone.youAreHere && (
@@ -338,11 +423,109 @@ function SpreadDesktopRoadmap({
   const pathD =
     "M125 173 C 250 173, 280 237, 375 237 S 530 173, 625 173 S 790 230, 875 230";
 
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const pathRef = useRef<SVGPathElement | null>(null);
+  const cometRef = useRef<SVGPathElement | null>(null);
+  const nodeElsRef = useRef<Array<HTMLDivElement | null>>([null, null, null, null]);
+  const litStrengthRef = useRef<Array<number>>([0, 0, 0, 0]);
+  const hitsRef = useRef<NodePathHit[]>([
+    { f: 0, r: 0.036 },
+    { f: 0.3348, r: 0.036 },
+    { f: 0.6688, r: 0.036 },
+    { f: 1, r: 0.036 },
+  ]);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    const path = pathRef.current;
+    const comet = cometRef.current;
+    if (!svg || !path || !comet) return;
+
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reduced.matches) {
+      comet.style.strokeDashoffset = "0";
+      comet.style.opacity = "0";
+      return;
+    }
+
+    const remmeasure = () => {
+      const next: NodePathHit[] = [];
+      for (let i = 0; i < 4; i++) {
+        const el = nodeElsRef.current[i];
+        if (!el) {
+          next.push(hitsRef.current[i]!);
+          continue;
+        }
+        next.push(measureNodePathHit(path, svg, el));
+      }
+      hitsRef.current = next;
+    };
+
+    // Nodes mount in the same commit; measure after layout.
+    const measureRaf = requestAnimationFrame(() => remmeasure());
+    const ro = new ResizeObserver(() => remmeasure());
+    ro.observe(svg);
+    for (const el of nodeElsRef.current) {
+      if (el) ro.observe(el);
+    }
+
+    const startedAt = performance.now();
+    let raf = 0;
+
+    const setLitStrength = (index: number, strength: number) => {
+      const prev = litStrengthRef.current[index] ?? 0;
+      const next = strength < 0.004 ? 0 : strength;
+      if (Math.abs(prev - next) < 0.003) return;
+      litStrengthRef.current[index] = next;
+      const el = nodeElsRef.current[index];
+      if (!el) return;
+      el.style.setProperty("--prep-lit", next.toFixed(4));
+    };
+
+    const tick = (now: number) => {
+      const elapsed = now - startedAt;
+      let u = 0;
+      if (elapsed > COMET_DELAY_MS) {
+        // Delay once (CSS animation-delay semantics), then loop the 8.5s travel.
+        u = ((elapsed - COMET_DELAY_MS) % COMET_DURATION_MS) / COMET_DURATION_MS;
+      }
+      comet.style.strokeDashoffset = String(1 - u);
+
+      const hits = hitsRef.current;
+      for (let i = 0; i < 4; i++) {
+        const hit = hits[i]!;
+        setLitStrength(i, cometLitStrength(u, hit.f, hit.r));
+      }
+
+      raf = requestAnimationFrame(tick);
+    };
+
+    raf = requestAnimationFrame(tick);
+
+    const onMotionChange = () => {
+      if (reduced.matches) {
+        cancelAnimationFrame(raf);
+        comet.style.opacity = "0";
+        for (let i = 0; i < 4; i++) setLitStrength(i, 0);
+      }
+    };
+    reduced.addEventListener("change", onMotionChange);
+
+    return () => {
+      cancelAnimationFrame(measureRaf);
+      cancelAnimationFrame(raf);
+      ro.disconnect();
+      reduced.removeEventListener("change", onMotionChange);
+      for (let i = 0; i < 4; i++) setLitStrength(i, 0);
+    };
+  }, []);
+
   return (
     <div className="relative hidden h-[300px] w-full overflow-visible md:block lg:h-[320px]">
       <svg
+        ref={svgRef}
         className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-        viewBox="0 0 1000 320"
+        viewBox={`0 0 ${PATH_VB_W} ${PATH_VB_H}`}
         preserveAspectRatio="none"
         aria-hidden
       >
@@ -356,6 +539,7 @@ function SpreadDesktopRoadmap({
           </filter>
         </defs>
         <path
+          ref={pathRef}
           className="prep-roadmap-path text-foreground"
           d={pathD}
           fill="none"
@@ -368,7 +552,8 @@ function SpreadDesktopRoadmap({
           vectorEffect="non-scaling-stroke"
         />
         <path
-          className="prep-roadmap-comet"
+          ref={cometRef}
+          className="prep-roadmap-comet prep-roadmap-comet--js"
           d={pathD}
           fill="none"
           stroke={color}
@@ -402,6 +587,9 @@ function SpreadDesktopRoadmap({
                 size="lg"
                 accent={accent}
                 youAreHereLabel={youAreHereLabel}
+                nodeRef={(el) => {
+                  nodeElsRef.current[i] = el;
+                }}
               />
               {n.caption === "below" && (
                 <div
