@@ -29,8 +29,8 @@ export function PrivacyPage() {
         <div className="mt-8 space-y-10 text-sm leading-relaxed text-foreground">
           <section className="space-y-4">
             <p>
-              This Privacy Policy explains how Yehor Basatskyi, a private entrepreneur (ФОП)
-              registered in Ukraine (&quot;BBE School,&quot; &quot;we,&quot; &quot;us,&quot;
+              This Privacy Policy explains how BBE School, operated by a private entrepreneur
+              (ФОП) registered in Ukraine (&quot;BBE School,&quot; &quot;we,&quot; &quot;us,&quot;
               &quot;our&quot;), collects, uses, and protects your personal data when you use
               bbe-school.com (the &quot;Site&quot;) and the BBE School Full Course exam preparation
               service (the &quot;Service&quot;).
@@ -57,7 +57,7 @@ export function PrivacyPage() {
           <section className="space-y-4">
             <h2 className="font-display text-xl font-bold tracking-tight">1. Who We Are</h2>
             <p>
-              BBE School is operated by Yehor Basatskyi, a private entrepreneur (ФОП). For the
+              BBE School is operated by a private entrepreneur (ФОП) registered in Ukraine. For the
               purposes of the GDPR, we act as the{" "}
               <strong className="font-semibold">data controller</strong> for personal data collected
               through the Site and the Service.

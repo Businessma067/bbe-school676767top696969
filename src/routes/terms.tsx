@@ -27,8 +27,8 @@ export function TermsPage() {
             <p>
               These Terms of Service (&quot;Terms&quot;) govern your access to and use of bbe-school.com
               (the &quot;Site&quot;) and the BBE School Full Course exam preparation service (the
-              &quot;Service&quot;), operated by Yehor Basatskyi, a private entrepreneur (ФОП)
-              registered in Ukraine.
+              &quot;Service&quot;), operated by a private entrepreneur (ФОП) registered in
+              Ukraine.
             </p>
             <p>
               By creating an account, purchasing the Full Course, or otherwise using the Site, you
