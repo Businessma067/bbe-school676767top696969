@@ -17,6 +17,7 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -188,22 +189,15 @@ export function BbeLandingPage() {
           </div>
         </section>
 
-        {/* FIELD REPORTS — light */}
-        <section id="reviews" className="px-6 py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-10 max-w-3xl">
-              <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-                What students wrote after they got an acceptance letter
-              </h2>
-            </div>
-
-            <div className="grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
-              {reports.map((report) => (
-                <ReviewCard key={report.id} report={report} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <PinnedReviewsBoard
+          title="What students wrote after they got an acceptance letter"
+          reports={reports}
+          badgeExtraFor={(report) =>
+            report.fire ? (
+              <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />
+            ) : null
+          }
+        />
 
         {/* FAQ */}
         <div id="faq">
@@ -242,39 +236,6 @@ export function BbeLandingPage() {
         </footer>
       </main>
     </div>
-  );
-}
-
-function ReviewCard({ report }: { report: (typeof reports)[0] }) {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <article className="flex flex-col justify-between border-t border-border pt-8">
-      <div>
-        <p className={cn("leading-relaxed text-muted-foreground", !expanded && "line-clamp-3")}>
-          &ldquo;{report.quote}&rdquo;
-        </p>
-        <button
-          onClick={() => setExpanded((v) => !v)}
-          className="mt-3 text-xs font-semibold text-primary hover:underline focus:outline-none"
-          aria-label={expanded ? "Show less" : "Show more"}
-        >
-          {expanded ? "Show less" : "Show more"}
-        </button>
-      </div>
-      <div className="mt-8">
-        <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
-        <div
-          className="mt-3 inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1"
-        >
-          <span className="text-xs font-semibold tracking-wide text-foreground">
-            {report.badge}
-          </span>
-          {report.fire && (
-            <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />
-          )}
-        </div>
-      </div>
-    </article>
   );
 }
 

@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useState } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
-import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
 import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
@@ -209,20 +209,11 @@ export function WisoLandingPage() {
           </div>
         </section>
 
-        <section id="reviews" className="px-6 py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-10 max-w-3xl">
-              <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-                What students told us after the WiSo Aufnahmeprüfung
-              </h2>
-            </div>
-            <div className="grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
-              {wisoReports.map((report) => (
-                <ReviewCard key={report.id} report={report} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <PinnedReviewsBoard
+          title="What students told us after the WiSo Aufnahmeprüfung"
+          reports={wisoReports}
+          accent="wiso"
+        />
 
         <div id="faq">
           <WisoFaqAccordion />
@@ -331,30 +322,3 @@ const wisoReports = [
     badge: "WiSo · accepted",
   },
 ];
-
-function ReviewCard({ report }: { report: (typeof wisoReports)[0] }) {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <article className="flex flex-col justify-between border-t border-border pt-8">
-      <div>
-        <p className={cn("leading-relaxed text-muted-foreground", !expanded && "line-clamp-3")}>
-          &ldquo;{report.quote}&rdquo;
-        </p>
-        <button
-          type="button"
-          onClick={() => setExpanded((v) => !v)}
-          className="mt-3 text-xs font-semibold text-indigo-700 hover:underline focus:outline-none dark:text-indigo-300"
-          aria-label={expanded ? "Show less" : "Show more"}
-        >
-          {expanded ? "Show less" : "Show more"}
-        </button>
-      </div>
-      <div className="mt-8">
-        <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
-        <div className="mt-3 inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1">
-          <span className="text-xs font-semibold tracking-wide text-foreground">{report.badge}</span>
-        </div>
-      </div>
-    </article>
-  );
-}

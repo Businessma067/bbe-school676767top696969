@@ -751,3 +751,31 @@ body.flashcard-swiping {
     opacity: 0;
   }
 }
+
+/* Pinned acceptance notes — paper cards hanging from binder clips */
+.review-pin-paper {
+  transform: rotate(var(--review-tilt, 0deg));
+  transition:
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 500ms ease;
+}
+
+.review-pin:hover .review-pin-paper {
+  transform: rotate(0deg) translateY(-4px);
+  filter: brightness(1.02);
+}
+
+.review-pin:focus-within .review-pin-paper {
+  transform: rotate(0deg) translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-pin-paper,
+  .review-pin:hover .review-pin-paper,
+  .review-pin:focus-within .review-pin-paper {
+    transition: none;
+    transform: none;
+    filter: none;
+  }
+}
