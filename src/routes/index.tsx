@@ -582,9 +582,12 @@ function MockBuilderOrbit() {
     { label: "Start" },
   ] as const;
 
-  // Slightly faster lap; short arc so the tip stays with each node highlight.
+  // Faster lap; highlight when the LEADING tip first touches a node (not the trail).
   const cycleSec = 10;
   const stepSec = cycleSec / steps.length;
+  // Must match stroke-dasharray painted length in styles.css (pathLength=100).
+  const dashLen = 8;
+  const tipLeadSec = (dashLen / 100) * cycleSec;
 
   return (
     <div
@@ -629,7 +632,9 @@ function MockBuilderOrbit() {
           const dy = 50 + Math.sin(rad) * dotR;
           const lx = 50 + Math.cos(rad) * labelR;
           const ly = 50 + Math.sin(rad) * labelR;
-          const delay = `${index * stepSec}s`;
+          // Tip is dashLen ahead of the trail. Fire when tip first touches this node.
+          // Negative delay wraps correctly in CSS so step 0 lights as the tip hits Topic.
+          const delay = `${index * stepSec - tipLeadSec}s`;
           return (
             <div key={step.label}>
               <span
