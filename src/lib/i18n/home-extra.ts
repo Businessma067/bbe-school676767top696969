@@ -128,6 +128,12 @@ export const homeExtraDe: Record<string, string> = {
   "576": "576",
   "729": "729",
   "100": "100",
+
+  // ---------- Why us mock-builder orbit ----------
+  Topics: "Themen",
+  Level: "Niveau",
+  Mix: "Mix",
+  Timed: "Timed",
 };
 
 export const homeExtraUk: Record<string, string> = {
@@ -255,4 +261,10 @@ export const homeExtraUk: Record<string, string> = {
   "576": "576",
   "729": "729",
   "100": "100",
+
+  // ---------- Why us mock-builder orbit ----------
+  Topics: "Теми",
+  Level: "Рівень",
+  Mix: "Мікс",
+  Timed: "Таймер",
 };

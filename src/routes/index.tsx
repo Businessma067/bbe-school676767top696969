@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useRef, useState } from "react";
+import { Suspense, lazy, useEffect, useRef, useState, type CSSProperties } from "react";
 import {
   BookOpen,
   ClipboardList,
@@ -295,13 +295,13 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mt-10 grid items-start gap-5 sm:grid-cols-2 sm:gap-6">
+            <div className="mt-10 grid items-stretch gap-5 sm:grid-cols-2 sm:gap-6">
               {FEATURE_CARDS.map((feature) => {
                 const Icon = feature.icon;
                 return (
                   <article
                     key={feature.id}
-                    className="rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-8"
+                    className="flex h-full flex-col rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-8"
                   >
                     <div className="grid h-11 w-11 place-items-center rounded-xl bg-caramel-deep/20 text-caramel-deep">
                       <Icon className="h-5 w-5" />
@@ -312,6 +312,7 @@ export function Index() {
                     <p className="mt-2 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">
                       {feature.description}
                     </p>
+                    {feature.id === "builder" ? <MockBuilderOrbit /> : null}
                     {feature.tools ? (
                       <ul className="mt-4 space-y-2.5">
                         {feature.tools.map((tool) => (
@@ -569,6 +570,79 @@ function SiteFooter() {
         © 2026 BBE School. Not affiliated with WU Vienna.
       </p>
     </footer>
+  );
+}
+
+function MockBuilderOrbit() {
+  const steps = [
+    { label: "Topics", angle: -90, labelClass: "bottom-full left-1/2 mb-2 -translate-x-1/2" },
+    { label: "Level", angle: 0, labelClass: "left-full top-1/2 ml-2 -translate-y-1/2" },
+    { label: "Mix", angle: 90, labelClass: "left-1/2 top-full mt-2 -translate-x-1/2" },
+    { label: "Timed", angle: 180, labelClass: "right-full top-1/2 mr-2 -translate-y-1/2" },
+  ] as const;
+
+  return (
+    <div
+      className="mock-builder-orbit mt-6 flex flex-1 flex-col items-center justify-center"
+      aria-hidden
+    >
+      <div className="relative h-[10rem] w-[10rem] sm:h-[11rem] sm:w-[11rem]">
+        <svg className="absolute inset-0 h-full w-full" viewBox="0 0 160 160" fill="none">
+          <circle
+            cx="80"
+            cy="80"
+            r="54"
+            className="mock-builder-orbit-ring"
+            stroke="currentColor"
+            strokeWidth="1.25"
+          />
+          <circle
+            cx="80"
+            cy="80"
+            r="54"
+            className="mock-builder-orbit-progress"
+            stroke="currentColor"
+            strokeWidth="1.75"
+            strokeLinecap="round"
+          />
+        </svg>
+
+        <span className="mock-builder-orbit-arm" aria-hidden>
+          <span className="mock-builder-orbit-token" />
+        </span>
+
+        {steps.map((step, index) => {
+          const rad = (step.angle * Math.PI) / 180;
+          const x = 50 + Math.cos(rad) * 33.75;
+          const y = 50 + Math.sin(rad) * 33.75;
+          return (
+            <div
+              key={step.label}
+              className="mock-builder-orbit-step absolute -translate-x-1/2 -translate-y-1/2"
+              style={
+                {
+                  left: `${x}%`,
+                  top: `${y}%`,
+                  ["--step-delay" as string]: `${index * 1.6}s`,
+                } as CSSProperties
+              }
+            >
+              <span className="mock-builder-orbit-dot grid h-8 w-8 place-items-center rounded-full border text-[11px] font-semibold tabular-nums sm:h-9 sm:w-9 sm:text-xs">
+                {index + 1}
+              </span>
+              <span
+                className={cn(
+                  "mock-builder-orbit-label absolute whitespace-nowrap text-[10px] font-semibold tracking-wide uppercase sm:text-[11px]",
+                  step.labelClass,
+                )}
+              >
+                {step.label}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
