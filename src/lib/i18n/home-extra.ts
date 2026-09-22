@@ -75,7 +75,6 @@ export const homeExtraDe: Record<string, string> = {
   // ---------- Reviews ----------
   "Show less": "Weniger anzeigen",
   "Acceptance notes": "Notizen zur Zusage",
-  "Field note": "Feldnotiz",
   "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click — I stopped guessing and started managing risk.":
     "Die Probeprüfungen fühlten sich beängstigend nah am echten Ding an. Die Scoring-Erklärungen haben endlich das Teilpunkte-System klar gemacht — ich habe aufgehört zu raten und angefangen, Risiko zu managen.",
   "Math used to eat my whole clock. After timed drills I finished with minutes left. Economics statements stopped feeling like traps once I learned the wording patterns.":
@@ -189,7 +188,6 @@ export const homeExtraUk: Record<string, string> = {
   // ---------- Reviews ----------
   "Show less": "Показати менше",
   "Acceptance notes": "Нотатки після зарахування",
-  "Field note": "Польова нотатка",
   "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click — I stopped guessing and started managing risk.":
     "Пробні іспити були моторошно близькі до реального. Пояснення оцінювання нарешті прояснили систему часткових балів — я перестав гадати і почав керувати ризиком.",
   "Math used to eat my whole clock. After timed drills I finished with minutes left. Economics statements stopped feeling like traps once I learned the wording patterns.":

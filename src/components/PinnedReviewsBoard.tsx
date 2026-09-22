@@ -11,9 +11,6 @@ export type PinnedReview = {
 
 type Accent = "default" | "wiso";
 
-const TILTS = [-1.55, 1.25, -0.7, 1.6, -1.15, 0.9] as const;
-const LIFTS = [0, 10, 4, 14, 2, 8] as const;
-
 function BinderClip({ accent }: { accent: Accent }) {
   const shell = accent === "wiso" ? "#384264" : "#2f2c27";
   const shellEdge = accent === "wiso" ? "#55628a" : "#4e4a42";
@@ -59,30 +56,17 @@ function BinderClip({ accent }: { accent: Accent }) {
 
 function PinnedReviewCard({
   report,
-  index,
   accent,
   badgeExtra,
 }: {
   report: PinnedReview;
-  index: number;
   accent: Accent;
   badgeExtra?: ReactNode;
 }) {
   const [expanded, setExpanded] = useState(false);
-  const tilt = TILTS[index % TILTS.length];
-  const lift = LIFTS[index % LIFTS.length];
 
   return (
-    <article
-      className={cn(
-        "review-pin group relative flex h-full flex-col pt-8",
-        "hover:z-10",
-      )}
-      style={{
-        ["--review-tilt" as string]: `${tilt}deg`,
-        marginTop: lift,
-      }}
-    >
+    <article className="review-pin group relative flex h-full flex-col pt-8 hover:z-10">
       <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 transition-transform duration-500 group-hover:-translate-y-0.5">
         <BinderClip accent={accent} />
       </div>
@@ -136,15 +120,10 @@ function PinnedReviewCard({
           {expanded ? "Show less" : "Show more"}
         </button>
 
-        <div className="mt-auto flex items-end justify-between gap-3 border-t border-border/60 pt-4">
-          <div>
-            <p className="font-display text-sm font-semibold tracking-tight text-foreground">
-              {report.name}
-            </p>
-            <p className="mt-0.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground/80">
-              Field note
-            </p>
-          </div>
+        <div className="mt-auto flex items-center justify-between gap-3 border-t border-border/60 pt-4">
+          <p className="font-display text-sm font-semibold tracking-tight text-foreground">
+            {report.name}
+          </p>
           <div
             className={cn(
               "inline-flex shrink-0 items-center gap-1.5 rounded-[2px] border px-2.5 py-1",
@@ -220,11 +199,10 @@ export function PinnedReviewsBoard({
           />
 
           <div className="grid items-start gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-7">
-            {reports.map((report, index) => (
+            {reports.map((report) => (
               <PinnedReviewCard
                 key={report.id}
                 report={report}
-                index={index}
                 accent={accent}
                 badgeExtra={badgeExtraFor?.(report)}
               />
