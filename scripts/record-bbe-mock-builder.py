@@ -260,11 +260,11 @@ async def demo(page):
 
     # Show the handoff to the next question (no teleport).
     nxt = page.get_by_role("button", name=re.compile(r"^Next$", re.I))
-    await soft_click(page, nxt, 640, steps=36, move_ms=500)
+    await soft_click(page, nxt, 720, steps=36, move_ms=500)
     await page.get_by_text("Question 2 /", exact=False).first.wait_for(
         state="visible", timeout=10000
     )
-    await page.wait_for_timeout(580)
+    await page.wait_for_timeout(1100)
 
 
 async def main():
@@ -303,7 +303,7 @@ async def main():
         css_h=H,
         dpr=DPR,
         fps=FPS,
-        target_dur=16.0,
+        target_dur=17.5,
     )
 
 
