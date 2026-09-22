@@ -96,7 +96,7 @@
   },
   "MATH 10.1.6": {
     "title": "Verschachtelte Exponential-Log-Kompositionen mit Buchstaben",
-    "context": "Fixiere die Buchstaben $a>0$ und $k\\in\\mathbb{R}$. Betrachte die verschachtelten Ausdrücke $e^{k\\ln a}$, $a^{k}$, $\\ln(e^{kt})$ und $e_{\\ln(P_0)+kt}$ mit $P_0>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Fixiere die Buchstaben $a>0$ und $k\\in\\mathbb{R}$. Betrachte die verschachtelten Ausdrücke $e^{k\\ln a}$, $a^{k}$, $\\ln(e^{kt})$ und $e^{\\ln(P_0)+kt}$ mit $P_0>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Mit $a=e$ und $k=2$ sind sowohl $e^{k\\ln a}$ als auch $a^{k}$ gleich $e^{2}$.",
       "Wenn $P(t)=P_0 e^{kt}$, dann gilt $\\ln P(t)=\\ln P_0+kt$ für jedes $t$.",
