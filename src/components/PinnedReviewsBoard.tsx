@@ -21,7 +21,7 @@ function PulseDot({ accent, delayMs }: { accent: Accent; delayMs: number }) {
       style={{ animationDelay: `${delayMs}ms` }}
       aria-hidden
     >
-      <span className="review-pin-dot-ring" />
+      <span className="review-pin-dot-ring" style={{ animationDelay: `${delayMs}ms` }} />
       <span className="review-pin-dot-core" />
     </span>
   );
@@ -41,34 +41,36 @@ function PinnedReviewCard({
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <article className="review-pin group relative flex h-full flex-col pt-3 hover:z-10">
-      <PulseDot accent={accent} delayMs={delayMs} />
+    <article className="review-pin group relative flex h-full flex-col pt-3.5 hover:z-10">
+      <div className="relative flex h-full flex-col">
+        {/* Half on the paper, half above the edge */}
+        <PulseDot accent={accent} delayMs={delayMs} />
 
-      <div
-        className={cn(
-          "relative flex h-full flex-col overflow-hidden rounded-[3px] border px-5 pb-5 pt-7",
-          "bg-[color-mix(in_oklab,var(--color-card)_88%,#faf7f1)] dark:bg-[color-mix(in_oklab,var(--color-card)_90%,#2c281f)]",
-          "border-border/70",
-          "shadow-[0_18px_34px_-22px_rgba(20,18,14,0.55),0_1px_0_rgba(255,255,255,0.55)_inset]",
-          "dark:shadow-[0_18px_34px_-22px_rgba(0,0,0,0.65),0_1px_0_rgba(255,255,255,0.06)_inset]",
-          "before:pointer-events-none before:absolute before:inset-x-3 before:top-5 before:h-px before:bg-foreground/[0.06]",
-          "after:pointer-events-none after:absolute after:inset-y-4 after:left-0 after:w-[3px] after:rounded-r-full",
-          accent === "wiso"
-            ? "after:bg-indigo-600/60 dark:after:bg-indigo-400/50"
-            : "after:bg-caramel-deep/60",
-          "review-pin-paper origin-top",
-        )}
-      >
-        <span
+        <div
           className={cn(
-            "pointer-events-none absolute -left-1 top-3 select-none font-display text-6xl leading-none opacity-[0.09]",
-            accent === "wiso" ? "text-indigo-800 dark:text-indigo-200" : "text-foreground",
+            "relative flex h-full flex-col overflow-hidden rounded-[3px] border px-5 pb-5 pt-8",
+            "bg-[color-mix(in_oklab,var(--color-card)_88%,#faf7f1)] dark:bg-[color-mix(in_oklab,var(--color-card)_90%,#2c281f)]",
+            "border-border/70",
+            "shadow-[0_18px_34px_-22px_rgba(20,18,14,0.55),0_1px_0_rgba(255,255,255,0.55)_inset]",
+            "dark:shadow-[0_18px_34px_-22px_rgba(0,0,0,0.65),0_1px_0_rgba(255,255,255,0.06)_inset]",
+            "before:pointer-events-none before:absolute before:inset-x-3 before:top-6 before:h-px before:bg-foreground/[0.06]",
+            "after:pointer-events-none after:absolute after:inset-y-4 after:left-0 after:w-[3px] after:rounded-r-full",
+            accent === "wiso"
+              ? "after:bg-indigo-600/60 dark:after:bg-indigo-400/50"
+              : "after:bg-caramel-deep/60",
+            "review-pin-paper origin-top",
           )}
-          aria-hidden
-          data-no-i18n
         >
-          “
-        </span>
+          <span
+            className={cn(
+              "pointer-events-none absolute -left-1 top-4 select-none font-display text-6xl leading-none opacity-[0.09]",
+              accent === "wiso" ? "text-indigo-800 dark:text-indigo-200" : "text-foreground",
+            )}
+            aria-hidden
+            data-no-i18n
+          >
+            “
+          </span>
 
         <p
           className={cn(
@@ -106,6 +108,7 @@ function PinnedReviewCard({
             <span className="font-display text-[11px] font-semibold tracking-wide">{report.badge}</span>
             {badgeExtra}
           </div>
+        </div>
         </div>
       </div>
     </article>
