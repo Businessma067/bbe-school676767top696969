@@ -75,32 +75,32 @@ async def demo(page):
     dont = page.get_by_role("button", name="Don't know", exact=True)
 
     # Hold on WORD "amortisation" so the opener matches the reference.
-    await page.wait_for_timeout(900)
-    await soft_click(page, flip, 400, steps=14)
-    await soft_click(page, know, 580, steps=14)
+    await page.wait_for_timeout(1400)
+    await soft_click(page, flip, 550, steps=18)
+    await soft_click(page, know, 780, steps=18)
 
     for _ in range(25):
         if "enable" in (await card_term(page)).lower():
             break
-        await page.wait_for_timeout(70)
+        await page.wait_for_timeout(90)
     else:
         raise SystemExit(f"expected enable after Know, got {await card_term(page)!r}")
-    await soft_click(page, page.get_by_role("button", name="1. Synonyms"), 340, steps=14)
+    await soft_click(page, page.get_by_role("button", name="1. Synonyms"), 480, steps=18)
 
-    await soft_click(page, flip, 380, steps=14)
-    await soft_click(page, dont, 560, steps=14)
+    await soft_click(page, flip, 550, steps=18)
+    await soft_click(page, dont, 780, steps=18)
 
     for _ in range(25):
         if "inelastic" in (await card_term(page)).lower():
             break
-        await page.wait_for_timeout(70)
+        await page.wait_for_timeout(90)
     else:
         raise SystemExit(f"expected inelastic after Don't know, got {await card_term(page)!r}")
 
-    await soft_click(page, flip, 400, steps=14)
-    await soft_click(page, know, 520, steps=14)
+    await soft_click(page, flip, 550, steps=18)
+    await soft_click(page, know, 720, steps=18)
     # End mid-exit like the reference (don't wait for the next card to settle).
-    await page.wait_for_timeout(180)
+    await page.wait_for_timeout(350)
 
 
 async def main():
@@ -138,7 +138,7 @@ async def main():
         css_h=H,
         dpr=DPR,
         fps=FPS,
-        target_dur=9.4,
+        target_dur=9.5,
     )
 
 

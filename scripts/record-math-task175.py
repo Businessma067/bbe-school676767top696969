@@ -99,7 +99,7 @@ async def prep(page):
 
 
 async def demo(page):
-    await page.wait_for_timeout(120)
+    await page.wait_for_timeout(200)
     await page.evaluate(
         """() => {
           const btn = [...document.querySelectorAll('button')]
@@ -107,30 +107,30 @@ async def demo(page):
           btn?.scrollIntoView({ block: 'end' });
         }"""
     )
-    await page.wait_for_timeout(80)
+    await page.wait_for_timeout(140)
 
     boxes = page.locator('button[role="checkbox"]:not([disabled])')
     await boxes.first.wait_for(state="visible", timeout=20000)
     for i in (0, 1, 3):  # A, B, D — answer key T,T,F,T,F
-        await soft_click(page, boxes.nth(i), 110, steps=8)
+        await soft_click(page, boxes.nth(i), 200, steps=12)
 
-    await page.wait_for_timeout(60)
+    await page.wait_for_timeout(120)
     await soft_click(
         page,
         page.locator("button").filter(has_text=re.compile(r"Check Answers", re.I)).first,
-        320,
-        steps=10,
+        480,
+        steps=14,
     )
 
     if not await open_solution_panel(page):
         raise SystemExit("solution panel did not open")
-    await page.wait_for_timeout(120)
+    await page.wait_for_timeout(200)
 
-    ok = await scroll_solution(page, ms=4800)
+    ok = await scroll_solution(page, ms=5200)
     print(f"scrolled solution panel: {ok}", flush=True)
     if not ok:
         raise SystemExit("failed to scroll solution panel")
-    await page.wait_for_timeout(220)
+    await page.wait_for_timeout(320)
 
 
 async def main():
@@ -170,7 +170,7 @@ async def main():
         css_h=H,
         dpr=DPR,
         fps=FPS,
-        target_dur=9.2,
+        target_dur=9.4,
     )
 
 
