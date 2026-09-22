@@ -50,7 +50,7 @@ const BBE_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "1710 / 982",
+    aspect: "3420 / 1966",
   },
   {
     key: "english",
@@ -86,7 +86,7 @@ const WISO_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/wiso/demo-practice/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "1710 / 982",
+    aspect: "3420 / 1966",
   },
   {
     key: "german",

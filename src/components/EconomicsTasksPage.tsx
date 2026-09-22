@@ -16,7 +16,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
-  practiceInlineAiButtonClass,
   practicePanelSectionLabelClass,
   practiceSubmitButtonClass,
   practiceTryAgainButtonClass,
@@ -872,7 +871,6 @@ export function EconomicsTasksPage({
               task={displayCase}
               index={activeIdx}
               onClose={() => setShowExplanations(false)}
-              onRequestAi={(i) => requestExplanation(activeCase, i)}
             />
           ) : null}
         </EconomicsPracticeAside>
@@ -1226,12 +1224,10 @@ function AllExplanationsPanel({
   task,
   index,
   onClose,
-  onRequestAi,
 }: {
   task: Case;
   index: number;
   onClose: () => void;
-  onRequestAi: (i: number) => void;
 }) {
   const letters = "ABCDEF";
   const body = [
@@ -1271,18 +1267,6 @@ function AllExplanationsPanel({
       </div>
       <div className="practice-scroll min-h-0 flex-1 bg-card px-7 py-7 sm:px-9 sm:py-8 lg:overflow-y-auto">
         <EconAnswerKeyTable answerKey={task.answer_key} />
-        <div className="mb-6 flex flex-wrap gap-2">
-          {task.statements.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => onRequestAi(i)}
-              className={practiceInlineAiButtonClass(false)}
-            >
-              AI · {letters[i] ?? i + 1}
-            </button>
-          ))}
-        </div>
         <ExplanationProse text={body} />
       </div>
     </div>
