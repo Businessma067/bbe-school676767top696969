@@ -8,8 +8,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { SiteHeader } from "@/components/SiteHeader";
-import { SCORING_CONFIG } from "@/config/scoring-config";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
+import { MOCK_EXAM_SECTION_COUNTS } from "@/lib/mock-exam-1-content";
 import {
   MOCK_EXAMS,
   getExamsForTier,
@@ -33,13 +33,13 @@ export const Route = createFileRoute("/mock-exams/")({
       {
         name: "description",
         content:
-          "Full-length WU BBE mock exams: 35 tasks, 160 points, scored with the official wi2 method.",
+          "Full-length WU BBE mock exams: 34 tasks, 159 points, scored with the official wi2 method.",
       },
       { property: "og:title", content: "Mock Exams — BBE School" },
       {
         property: "og:description",
         content:
-          "Full-length WU BBE mock exams: 35 tasks, 160 points, scored with the official wi2 method.",
+          "Full-length WU BBE mock exams: 34 tasks, 159 points, scored with the official wi2 method.",
       },
     ],
   }),
@@ -269,29 +269,34 @@ function MockExamsPage() {
           <DialogHeader>
             <DialogTitle className="font-display text-xl">{selected?.title}</DialogTitle>
             <DialogDescription>
-              Full-length simulation, {SCORING_CONFIG.examTotalPoints} points total.
+              Full-length simulation,{" "}
+              {selected?.pointsTotal ?? MOCK_EXAMS[0]?.pointsTotal} points total.
             </DialogDescription>
           </DialogHeader>
 
           <div className="rounded-xl border border-border bg-secondary/40 p-4 text-sm">
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Economics</span>
-              <span className="font-semibold">{SCORING_CONFIG.economics.taskCount} questions</span>
+              <span className="font-semibold">
+                {MOCK_EXAM_SECTION_COUNTS.economics} questions
+              </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">English</span>
-              <span className="font-semibold">{SCORING_CONFIG.english.taskCount} questions</span>
+              <span className="font-semibold">
+                {MOCK_EXAM_SECTION_COUNTS.english} questions
+              </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Math</span>
-              <span className="font-semibold">{SCORING_CONFIG.math.taskCount} questions</span>
+              <span className="font-semibold">{MOCK_EXAM_SECTION_COUNTS.math} questions</span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="font-semibold">Total</span>
               <span className="font-semibold">
-                {SCORING_CONFIG.economics.taskCount +
-                  SCORING_CONFIG.english.taskCount +
-                  SCORING_CONFIG.math.taskCount}{" "}
+                {MOCK_EXAM_SECTION_COUNTS.economics +
+                  MOCK_EXAM_SECTION_COUNTS.english +
+                  MOCK_EXAM_SECTION_COUNTS.math}{" "}
                 questions
               </span>
             </div>
