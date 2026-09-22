@@ -286,98 +286,98 @@
   },
   "MATH 10.1.16": {
     "title": "$a^{t}$ als stetige Intensität $\\ln a$ umschreiben",
-    "context": "Fixieren Ergebnissen eines Buchstabens $a>0$, Ersuchen 1, und schreiben $f(t)=a^{t}$. Sehen Sie $f$ als einen stetigen-exponentialen Pfad.",
+    "context": "Es sei $a>0$, $a\\neq 1$, und $P(t)=P_0 a^{t}$ mit $P_0>0$. Dieselbe Familie kann als $P(t)=P_0 e^{kt}$ mit einer geeigneten Intensität $k$ geschrieben werden. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Mit $a=e$ und $t=2$ sind sowohl $f(t)=a^{t}$ als auch $e^{t\\ln a}$ gleich $e^{2}$.",
-      "Das stetige Intensitätsset von $f$ ist $a$.",
-      "Das stetige Intensitätsset von $f(t)=a^{t}$ ist $a-1$.",
-      "Die Verdoppelungszeit (wenn $a>1$ ) entspricht $\\dfrac{\\ln 2}{\\ln a}$.",
-      "$a^{t}=(1+(a-1))^{t}$ impliziert, dass das stetige Intensität $a-1$ entspricht."
+      "Die passende stetige Intensität ist $k=\\ln a$.",
+      "Die passende stetige Intensität ist $k=a$.",
+      "Die passende stetige Intensität ist $k=a-1$.",
+      "Für $a>1$ ist die Verdopplungszeit $T=\\dfrac{\\ln 2}{\\ln a}$.",
+      "Für $0<a<1$ ist $P$ auf $[0,\\infty)$ streng wachsend."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDurch Definition der realen Leistung mit positiver Basis,\n\n $$ a^{t} = e^{t\\ln a}$$\n\nfür jeden echten Adder. Das ist genau die stetig-exponentiell Schreibweise von $f$.\n\nKonkrete Prüfung der umformulierten Behauptung. Durch Definition $a^{t}=e^{t\\ln a}$; bei diesen Buchstaben beide gleich $e^{2}$ Feststellung.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDas Ablesen der Intensität aus MA Verhandlungen gebilligter $e^{t\\ln a}$ zeigt, dass der öffentlich zugängliche Koeffizient von $t$ $\\ln a$ ist.\n\n $$ f(t) = e^{(\\ln a)\\,t}$$\n\nDie Intensität ist $\\ln a$, nicht der Basisbuchstabe $a$ selbst.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um Behauptungsaussage B zu verweigern.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nDas diskrete einjährige Netz für die geometrische Sequenz $a^{n}$ ist $a-1$, aber das stetige Intensität ist der Logarithmus.\n\n $$\\ln a\\neq a-1$$\n\nwenn $a\\neq 1$ im Allgemeinen (sie stimmen nur am Messerrand $a=e^{a-1}$ zu ). Die Behauptung, dass das stetige Intensität $a-1$ gleicht, verwirrt die beiden Schreibweisen.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nVerdoppelung bedeutet $a^{T}=2$, wenn $a>1$.\n\n $$ e^{T\\ln a} = 2$$\n\n $$ T\\ln a = \\ln 2$$\n\n $$ T = \\frac{\\ln 2}{\\ln a}$$\n\nDas ist die kontinuierliche Verdopplungszeit für Intensität $\\ln a$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDie algebraische Neuschreibung $a=1+(a-1)$ ist tautologisch und ändert nicht die stetige Intensität. Schreiben\n\n $$ a^{t} = \\bigl(1+(a-1)\\bigr)^{t}$$\n\nnoch hat stetige Intensitäten $\\ln a$, nicht $a-1$. Passend zu einem diskreten Faktor $1+r$ zu stetige Intensitäten erfordert $k=\\ln(1+r)$, so hier $r=a-1$ würde Intensität $\\ln a$, die Bestätigung der Behauptung ist falsch.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nSchreibe die Potenz über die Exponentialfunktion um.\n\n$$a^{t}=e^{t\\ln a}$$\n\n$$P(t)=P_0 e^{(\\ln a)\\,t}$$\n\nDie stetige Intensität ist daher $k=\\ln a$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nDie Identität $a^{t}=e^{t\\ln a}$ zeigt $k=\\ln a$, nicht $k=a$. Generisch gilt $a\\neq\\ln a$.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage B abzulehnen.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDer diskrete Nettosatz $a-1$ ist der Einjahreszuwachs der Basis $a$, nicht die stetige Intensität.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nVerdopplung löst $a^{T}=2$.\n\n$$T\\ln a=\\ln 2$$\n\n$$T=\\frac{\\ln 2}{\\ln a}$$\n\nbei $a>1$. Das ist die behauptete Verdopplungszeit.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $0<a<1$ ist $\\ln a<0$, also die Intensität negativ und $P$ streng fallend auf $[0,\\infty)$, nicht wachsend.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Eine Macht mit Buchstabenbasis als stetig-exponentiell umzuschreiben.\n\n $$ a^{t}=e^{t\\ln a}$$\n\nDas stetige Intensität ist daher, nicht die Basis und trojan nicht das diskrete Netz."
+    "solution_overview": "Die Umschreibung $a^{t}=e^{t\\ln a}$ liefert die stetige Intensität $k=\\ln a$, nicht die Basis $a$ und nicht den diskreten Nettosatz $a-1$. Verdopplung löst $a^{T}=2$."
   },
   "MATH 10.1.17": {
     "title": "Hybrid — ganzzahlige Verdopplungstabelle trifft stetige Intensität $\\ln 2$",
-    "context": "Die Tabelle zeichnet exakte Level eines stetigen-exponentiell Pfades zu ganzzahligen Zeiten auf. Die Figur skizziert denselben Pfad. Behandeln Sie das Muster als $P(t)=e^{kt}$ mit dem unbekannten Buchstaben $k$, der wiederhergestellt werden soll (hier berufliches $P_0=1$ ).",
+    "context": "Die Tabelle hält exakte Niveaus eines stetig-exponentiellen Pfades zu ganzzahligen Zeiten fest. Die Abbildung skizziert denselben Pfad. Behandle das Muster als $P(t)=e^{kt}$ mit unbekanntem Buchstaben $k$, der zu rekonstruieren ist (hier $P_0=1$). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die nachfolgenden Verhältnisse entsprechen $2$, so dass MATH Untersuchungen1 und $k=2$ AUF.",
-      "Sozialversicherung: Der rekonstruierte Pfad ist $P(t)=2^{t}$.",
-      "Sozialversicherungszeit entspricht $1$.",
-      "Sozialversicherung: Die gleiche Tabelle wird nicht durch Intensität $k=2$ erzeugt.",
-      "Sozialversicherung: Passend zum Integer Grid behebt $P_0$ und $k$, so ist die TEXTserweiterung über Integer hinaus einzigartig."
+      "Aufeinanderfolgende Verhältnisse sind gleich $2$, also $e^{k}=2$ und $k=2$.",
+      "Der rekonstruierte Pfad ist $P(t)=2^{t}$.",
+      "Die Verdopplungszeit ist gleich $1$.",
+      "Dieselbe Tabelle wird nicht von der Intensität $k=2$ erzeugt.",
+      "Das Treffen des ganzzahligen Gitters fixiert $P_0$ und $k$, daher ist die stetige Fortsetzung jenseits der ganzen Zahlen eindeutig."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nDie aufeinander folgenden Verhältnisse sind tatsächlich $2$, so dass der einjährige kontinuierliche Faktor erfüllt\n\n $$ e^{k} = 2$$\n\nSozialversicherung.\n\n $$ k = \\ln 2$$\n\nDer Behauptung springt von $e^{k}=2$ zu $k=2$, was die exponentielle Gleichung mit ihrer Lösung verwechselt.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nMit $P_0=1$ und $k=\\ln 2$,\n\n $$\nP(t) = e^{(\\ln 2)\\,t} = 2^{t}\n$$\n\nDieser rekonstruierte Pfad reproduziert die Tabelle an jeder ganzen Zahl und erweitert sie kontinuierlich.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nZeit für Intensität $k=\\ln 2$ ist\n\n $$\nT_2 = \\frac{\\ln 2}{k} = \\frac{\\ln 2}{\\ln 2} = 1\n$$\n\nDer Schritt der Einheit des Tisches ist genau eine Verdopplungszeit.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nIntensität $k=2$ würde sukzessive Verhältnisse erzeugen\n\n $$ e^{2}\\approx 7.389$$\n\nDie tabellarischen Werte $1,2,4,8$ sind die Kräfte von $2$, nicht von MATH AntiMalware5BESTIMMUNGEN, so dass die Intensität $k=2$ die Tabelle nicht generiert.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nEin stetig-exponentiell $P(t)=P_0 e^{kt}$ wird komplett durch das Paar $(P_0,k)$ bestimmt. Die Integerproben fixieren $P_0=1$ und $k=\\ln 2$, so dass der staatliche Wert bei jedem nicht-integer $t$ bereits durch dieses einzigartige Paar bestimmt wird.\n\nDie Aussage ist richtig."
+      "**A.** → Falsch\n\nDie aufeinanderfolgenden Verhältnisse sind tatsächlich $2$, also $e^{k}=2$. Der natürliche Logarithmus liefert $k=\\ln 2$. Die Behauptung springt fälschlich zu $k=2$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nMit $P_0=1$ und $k=\\ln 2$ gilt $P(t)=e^{(\\ln 2)\\,t}=2^{t}$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$T_2=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 2}=1$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nIntensität $k=2$ würde Verhältnisse $e^{2}\\approx 7{,}389$ statt $2$ erzeugen. Die Werte $1,2,4,8$ passen nicht zu $k=2$.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nDas Paar $(P_0,k)=(1,\\ln 2)$ ist durch die ganzzahligen Stichproben festgelegt; die stetige Fortsetzung ist eindeutig.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Die ganze Tabelle verdoppelt sich bei jedem Schritt, so dass aufeinander folgende Verhältnisse gleich $2$ sind.\n\n $$\n\\frac{P(n+1)}{P(n)} = 2 = e^{k}\\implies k = \\ln 2\n$$\n\nMit $P_0=1$ ist der stetigen Pfad $P(t)=2^{t}$. Die Verdoppelungszeit ist $1$, und die kontinuierliche Verlängerung der Ganzzahl ist einzigartig."
+    "solution_overview": "Aufeinanderfolgende Verhältnisse gleich $2$ erzwingen $e^{k}=2$, also $k=\\ln 2$. Mit $P_0=1$ ist $P(t)=2^{t}$, Verdopplungszeit $1$, stetige Fortsetzung eindeutig."
   },
   "MATH 10.1.18": {
-    "title": "„Für jedes“ und „genau dann“ in Exponential-Behauptungen",
-    "context": "$P(t)=P_0 e^{kt}$ mit $P_0>0$. Die Quantifikatoren Entfaltung über Echtzeit und über Buchstabenparameter wie geschrieben.",
+    "title": "„Für jedes“ und „genau dann, wenn“ in Exponentialaussagen",
+    "context": "Durchgehend gelte $P(t)=P_0 e^{kt}$ mit $P_0>0$. Quantoren laufen über reelle Zeiten und über Buchstabenparameter wie geschrieben. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für jeden $k\\in\\mathbb{R}$ ist $P$ oben auf $[0,\\infty)$ nicht gebunden.",
-      "$P$ ist oben auf $[0,\\infty)$ genau dann ungebunden, Entfaltung von $k>0$.",
-      "Für jeden $P_0>0$ und jeden MA Ansätze 1 hält die Identität $P(0)=2P_0$.",
-      "Für jeden $t>0$ nimmt die Karte $k\\mapsto P(t)$ ab.",
-      "Die Gleichheit $P(t)=P_0$ für jeden $t$ hält genau, wenn Entfaltung $k=0$."
+      "Für jedes $k\\in\\mathbb{R}$ ist $P$ auf $[0,\\infty)$ nach oben unbeschränkt.",
+      "$P$ ist auf $[0,\\infty)$ genau dann nach oben unbeschränkt, wenn $k>0$.",
+      "Für jedes $P_0>0$ und jedes $k$ gilt die Identität $P(0)=2P_0$.",
+      "Für jedes $t>0$ ist die Abbildung $k\\mapsto P(t)$ fallend.",
+      "Die Gleichheit $P(t)=P_0$ für jedes $t$ gilt genau dann, wenn $k=0$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nWenn $k\\le 0$, der Pfad ist oben auf $[0,\\infty)$ Übermittlung: für $k=0$ ist es die Konstante $P_0$, und für $k<0$ fällt es in Richtung $0$. Die universelle Behauptung, dass jede Intensität produziert heart Pfad schlägt daher fehl, sobald $k\\le 0$.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um Behauptungsaussage A zu verwerfen.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nWenn $k>0$,\n\n $$ P(t) = P_0 e^{kt}\\to+\\infty\\qquad(t\\to\\infty)$$\n\n $P$ ist also oben auf $[0,\\infty)$ ungebunden. Wenn $k\\le 0$ der Pfad bei den meisten $P_0$ bleibt. Auslastung hält genau für positive Intensität.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nZur Zeit Null gibt der stetigen Pfad immer die Anfangsebene zurück.\n\n $$\nP(0) = P_0 e^{0} = P_0\n$$\n\nDie Identität $P(0)=2P_0$ würde $P_0=2P_0$, also $P_0=0$, die $P_0>0$ widerspricht. Der Behauptung scheitert Auslastung für jeden zulässigen Start.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um die Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nFix $t>0$ und unterscheiden in Bezug auf die Intensität Buchstaben.\n\n $$\\frac{\\partial}{\\partial k}P(t) = t P_0 e^{kt}>0$$\n\nGrößere $k$ erhöht $P(t)$, so dass die Karte $k\\mapsto P(t)$ stark erhöht ist, nicht abnimmt.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Ausgabe reicht aus, um die Aussage D abzulehnen.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nFordere $P(t)=P_0$ für jedes reelle $t$.\n\n$$P_0 e^{kt} = P_0$$\n\n$$e^{kt} = 1$$\n\nDie zweite Identität gilt für alle $t$ genau dann, wenn $k=0$. Umgekehrt liefert $k=0$ den konstanten Pfad $P\\equiv P_0$. Konstanz für jedes $t$ gilt genau dann, wenn die Intensität verschwindet.\n\nDie Aussage ist richtig."
+      "**A.** → Falsch\n\nBei $k\\le 0$ ist der Pfad auf $[0,\\infty)$ nach oben beschränkt. Die Allaussage scheitert.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage A abzulehnen.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBei $k>0$ gilt $P(t)\\to+\\infty$; bei $k\\le 0$ bleibt der Pfad höchstens bei $P_0$. Unbeschränktheit genau bei $k>0$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$P(0)=P_0$, nicht $2P_0$.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$\\partial_k P(t)=t P_0 e^{kt}>0$ für $t>0$, also streng wachsend in $k$, nicht fallend.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage D abzulehnen.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$P(t)=P_0$ für alle $t$ genau dann, wenn $k=0$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Die Quantifikatoren auf MA Statistical Track verfolgen das Zeichen der Intensität. Unboundedness auf $[0,\\infty)$ hält genau, wenn $k>0$, während Beständigkeit für alle $t$ erfordert $k=0$. Für jeden festen $t>0$ die Karte $k\\mapsto P_0 e^{kt}$ steigt mit $k$."
+    "solution_overview": "Unbeschränktheit auf $[0,\\infty)$ gilt genau bei $k>0$; Konstanz für alle $t$ verlangt $k=0$. Für festes $t>0$ steigt $k\\mapsto P_0 e^{kt}$."
   },
   "MATH 10.1.19": {
-    "title": "Stückweises Wachstum, dann Zerfall — Buchstaben $k_+,k_-$",
-    "context": "Ein Biomarker folgt $k_+>0$ auf $[0,T]$ Ausdehnung und $-k_-$ mit $k_->0$ nach $T$: $$ P(t)=\\begin{cases}P_0 e^{k_+ t},&0\\le t\\le T,\\P_0 e^{k_+ T}e^{-k_-(t-T)},&t>T.\\end{cases}$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Stückweises Wachstum dann Zerfall — Buchstaben $k_+,k_-$",
+    "context": "Ein Biomarker folgt der Intensität $k_+>0$ auf $[0,T]$ und der Intensität $-k_-$ mit $k_->0$ nach $T$: $$P(t)=\\begin{cases}P_0 e^{k_+ t},&0\\le t\\le T,\\\\P_0 e^{k_+ T}e^{-k_-(t-T)},&t>T.\\end{cases}$$ Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der Spitzenwert auf $[0,\\infty)$ entspricht $P(T)=P_0 e^{k_+ T}$ Ausdehnung.",
-      "Für $t>T$ ist die Halbwertszeit im Verhältnis zum Gipfel $\\dfrac{\\ln 2}{k_+}$.",
-      "Die Langzeitgrenze $\\lim_{t\\to\\infty}P(t)$ entspricht $P_0$. Ausdehnung",
-      "$\\ln P$ steigt mit der Steigung $k_+$ vor $T$ und fällt mit der Steigung $-k_-$ danach.",
-      "Wenn MATH Zubereitungen0, ist der Pfad symmetrisch zu $t=T$ in Kalenderzeit für alle Horizonte."
+      "Der Spitzenwert auf $[0,\\infty)$ ist gleich $P(T)=P_0 e^{k_+ T}$.",
+      "Für $t>T$ ist die Halbwertszeit relativ zur Spitze $\\dfrac{\\ln 2}{k_+}$.",
+      "Der langfristige Grenzwert $\\lim_{t\\to\\infty}P(t)$ ist gleich $P_0$.",
+      "$\\ln P$ steigt mit Steigung $k_+$ vor $T$ und fällt mit Steigung $-k_-$ danach.",
+      "Wenn $k_+=k_-$, ist der Pfad für alle Horizonte kalenderzeitsymmetrisch um $t=T$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAuf $[0,T]$ steigt der Pfad, weil $k_+>0$; das Maximum auf diesem Intervall liegt daher am rechten Endpunkt.\n\n$$P(T) = P_0 e^{k_+ T}$$\n\nNach $T$ ist der Faktor $e^{-k_-(t-T)}$ streng fallend in $t$, sodass spätere Werte unter $P(T)$ liegen. Der globale Peak auf $[0,\\infty)$ ist daher genau $P(T)$.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nNach dem Wechsel hat die Zerfallsintensität den Absolutbetrag $k_-$, nicht $k_+$.\n\n$$P(T+h) = P(T)\\,e^{-k_- h}$$\n\nDie Halbwertszeit relativ zum Peak löst $e^{-k_- h}=1/2$, also\n\n$$h = \\frac{\\ln 2}{k_-}$$\n\nDie behauptete Formel $\\ln 2/k_+$ verwendet den Wachstums- statt den Zerfallsbuchstaben.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nSenden Sie $t\\to\\infty$ im Zerfallsteil.\n\n $$ P(t) = P_0 e^{k_+ T}e^{-k_-(t-T)}\\to 0$$\n\nDie Langzeitgrenze ist $0$ Yourself manage, nicht die Anfangsstufe MATH Abschluß4.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um die Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nNimm Logarithmus auf jedem Stück.\n\n $$\\ln P(t) = \\ln P_0+k_+ t\\qquad(0\\le t\\le T)$$\n\n $$\\ln P(t) = \\ln P_0+k_+ T-k_-(t-T)\\qquad(t>T)$$\n\nDie Halblog-Slope ist $k_+$ vor dem Schalter und $-k_-$ danach, passend zum Behauptung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nAuch wenn $k_+=k_-$, Invaliditätssymmetrie über $t=T$ würde erfordern, dass $P(T+h)=P(T-h)$ für jede zulässige $h$.\n\n $$ P(T+h) = P_0 e^{k_+ T}e^{-k_+ h}$$\n\n $$ P(T-h) = P_0 e^{k_+(T-h)}$$\n\nDiese stimmen für alle $h$ erst nach dem Erzwingen zusätzlicher Einschränkungen, die für generische $T$ fehlschlagen. Gleichkraftgrößen geben nicht von selbst Spiegelsymmetrie in Kalenderzeit für alleREHORMEN.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nAuf $[0,T]$ wachsend, Maximum bei $T$: $P(T)=P_0 e^{k_+ T}$. Danach streng fallend, also globale Spitze $P(T)$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nNach dem Wechsel gilt Halbwertszeit $\\ln 2/k_-$, nicht $\\ln 2/k_+$.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$P(t)\\to 0$ für $t\\to\\infty$, nicht $P_0$.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nSemi-Log-Steigung $k_+$ vor $T$ und $-k_-$ danach.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$P(T+h)=P_0 e^{k_+ T}e^{-k_+ h}$ und $P(T-h)=P_0 e^{k_+(T-h)}$ stimmen für generisches $T$ nicht für alle $h$ überein.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Der Biomarker steigt mit Intensität $k_+$ bis zum Schalter an Ausdehnung, dann zerfällt er mit Intensität $-k_-$.\n\n $$ P(T)=P_0 e^{k_+ T}$$\n\nist der Peak. Nach $T$ ist die Halbwertszeit relativ Ausdehnung $\\ln 2/k_-$, und $\\ln P$ ändert Neigung von $k_+$ zu $-k_-$. Die langfristige Grenze ist $0$, nicht $P_0$."
+    "solution_overview": "Spitze $P(T)=P_0 e^{k_+ T}$; danach Halbwertszeit $\\ln 2/k_-$; Semi-Log-Steigung wechselt von $k_+$ zu $-k_-$; Grenzwert $0$."
   },
   "MATH 10.1.20": {
-    "title": "Einheitenfalle — Buchstabe $M$ Millionen versus Rohzahlen",
-    "context": "Eine Stadtbevölkerung wird als $M(t)$ Millionen Einwohner mit $M(t)=M_0 e^{kt}$, Buchstaben $M_0>0$ und $k\\in\\mathbb{R}$ gemeldet. Die Rohbelegschaft ist $H(t)=10^6\\,M(t)$.",
+    "title": "Einheitenfalle — Buchstabe $M$ Millionen versus Rohzählungen",
+    "context": "Eine Stadtbevölkerung wird als $M(t)$ Millionen Einwohner mit $M(t)=M_0 e^{kt}$ berichtet, Buchstaben $M_0>0$ und $k\\in\\mathbb{R}$. Die Rohkopfzahl ist $H(t)=10^{6}\\,M(t)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "$H$ gehorcht dem gleichen stetigen Intensitätssatz $k$ wie $M$.",
-      "Die Verdoppelungszeit für $H$ ist ein Millionen Mal die Verdoppelungszeit für $M$.",
-      "$\\ln H(t)=\\ln M(t)-\\ln(10^6)$.",
-      "Halblog-Abhänge von $H$ und $M$ stimmen zu.",
-      "Wenn $M_0=3$, dann $H(0)=3$ auch."
+      "$H$ gehorcht derselben stetigen Intensität $k$ wie $M$.",
+      "Die Verdopplungszeit für $H$ ist eine Million Mal die Verdopplungszeit für $M$.",
+      "$\\ln H(t)=\\ln M(t)-\\ln(10^{6})$.",
+      "Die Semi-Log-Steigungen von $H$ und $M$ stimmen überein.",
+      "Wenn $M_0=3$, dann ist auch $H(0)=3$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nBestimmen Sie die konstante Einheitenumwandlung aus dem Exponential.\n\n $$ H(t)=10^{6} M_0 e^{kt}$$\n\n $$ H(t)=1000000 M_0 e^{kt}$$\n\nDer Koeffizient von $t$ im Exponenten ist immer noch $k$, so dass $H$ gehorcht der gleichen stetigen Intensität wie Entsorgungs- $M$.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDie Zeit hängt nur von der Intensität ab.\n\n $$ T_2 = \\frac{\\ln 2}{k}$$\n\nDas gleiche $k$ regiert sowohl $M$ als auch $H$, so dass sie dieselbe Verdoppelungszeit haben. Skalierung um eine Furnishings multipliziert Sozialversicherungszeit nicht.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um Behauptungsaussage B zu verweigern.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nNimm das Logarithmus der Personalabteilung.\n\n $$\\ln H(t)=\\ln(10^{6} M(t))$$\n\n $$\n\\ln H(t)=\\ln(1000000 M(t)) = \\ln(10^{6})+\\ln M(t)\n$$\n\nDie Konstante $\\ln(10^{6})$ wird hinzugefügt, nicht subtrahiert. Die behauptete Identität mit einem Minuszeichen ist falsch.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um die Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nDie beiden Log-Levels unterscheiden.\n\n $$\\frac{d}{dt}\\ln H(t)=\\frac{d}{dt}\\bigl(\\ln(10^{6})+\\ln M(t)\\bigr)$$\n\n $$\n\\frac{d}{dt}\\ln H(t)=\\frac{d}{dt}\\bigl(\\ln(1000000)+\\ln M(t)\\bigr) = \\frac{d}{dt}\\ln M(t) = k\n$$\n\nDie Halblog-Steilhänge stimmen überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nWenn $M_0=3$, ist die Anzahl der Mitarbeiter zur Zeit Null\n\n $$ H(0)=10^{6}\\cdot M(0)$$\n\n $$\nH(0)=1000000\\cdot M(0) = 10^{6}\\cdot 3 = 3\\cdot 10^{6}\n$$\n\nNicht $3$. Durch das Abwerfen der Einheitenkonvertierung werden Millionen mit Rohzahlen verwechselt.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht aus, um Aussage E abzulehnen.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$H(t)=10^{6} M_0 e^{kt}$ hat dieselbe Intensität $k$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nVerdopplungszeit $T_2=\\ln 2/k$ hängt nur von $k$ ab; Einheiten skalieren die Uhr nicht.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage B abzulehnen.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$\\ln H=\\ln(10^{6})+\\ln M$; die Konstante wird addiert, nicht subtrahiert.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage C abzulehnen.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nBeide Semi-Log-Steigungen sind $k$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$H(0)=3\\cdot 10^{6}$, nicht $3$.\n\nEin einziges generisches Gegenbeispiel unter den Buchstaben der Aufgabenstellung reicht, um Aussage E abzulehnen.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Wechseleinheiten vervielfachen den Level durch eine positive Konstante und lassen die Intensität unberührt.\n\n $$\nH(t) = 10^{6} M(t) = 10^{6} M_0 e^{kt}\n$$\n\nIntensität, Verdopplungszeit und Halblog-Slope sind invariant. Rohe Anzahl zum Zeitpunkt Null ist $10^{6} M_0$, nicht $M_0$."
+    "solution_overview": "Einheitenwechsel multipliziert das Niveau mit einer positiven Konstanten und lässt Intensität, Verdopplungszeit und Semi-Log-Steigung invariant. $H(0)=10^{6}M_0$."
   },
   "MATH 10.1.21": {
     "title": "Einen stetigen Wachstumsgraphen in Buchstaben lesen",
