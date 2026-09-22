@@ -2,15 +2,15 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
- * Creating an invoice with `displayType: "iframe"` returns an embeddable
- * widget URL. Embed it with `allow="payment *"` so buyers can pay by card,
- * Apple Pay, or Google Pay on our site without a top-level redirect to
- * pay.mbnk.biz.
+ * Returns a hosted `pageUrl` (pay.mbnk.biz / pay.monobank.ua). Open it as a
+ * top-level navigation — not in an iframe. Apple Pay fails inside a
+ * cross-origin iframe because the site origin is not the Apple Pay merchant
+ * domain; full-page checkout also scrolls normally on mobile and shows
+ * card, Apple Pay, and Google Pay.
  *
  * Docs:
  *  - POST /api/merchant/invoice/create
  *  - GET  /api/merchant/invoice/status?invoiceId=...
- *  - https://monobank.ua/api-docs/acquiring/methods/ia/docs--widget-frame
  */
 
 const MONO_API = "https://api.monobank.ua/api/merchant";
@@ -37,7 +37,7 @@ async function monoToken(): Promise<string> {
   const token = (await getServerSecret("MONOBANK_TOKEN")) ?? monoTokenSyncFallback();
   if (!token) {
     throw new Error(
-      "MONOBANK_TOKEN is not configured on the server. Add a Cloud secret named exactly MONOBANK_TOKEN in Lovable (More → Cloud → Secrets), then republish/update the preview. This is required for both on-site checkout and Monobank redirect.",
+      "MONOBANK_TOKEN is not configured on the server. Add a Cloud secret named exactly MONOBANK_TOKEN in Lovable (More → Cloud → Secrets), then republish/update the preview. This is required for Monobank checkout.",
     );
   }
   return token;
@@ -83,9 +83,6 @@ export async function createMonoInvoice(input: {
       ...(input.webHookUrl ? { webHookUrl: input.webHookUrl } : {}),
       validity: 3600,
       paymentType: "debit",
-      // Official embeddable widget (card + Apple Pay + Google Pay). Host iframe
-      // must set allow="payment *" per Monobank docs.
-      displayType: "iframe",
     }),
   });
 
