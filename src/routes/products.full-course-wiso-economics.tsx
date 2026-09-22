@@ -18,7 +18,6 @@ import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
-  practiceInlineAiButtonClass,
   practicePanelSectionLabelClass,
   practiceSubmitButtonClass,
   practiceTryAgainButtonClass,
@@ -721,7 +720,6 @@ function EconomicsTasks() {
               task={activeCase}
               index={activeIdx}
               onClose={() => setShowExplanations(false)}
-              onRequestAi={(i) => requestExplanation(activeCase, i)}
             />
           ) : null}
         </EconomicsPracticeAside>
@@ -1074,13 +1072,11 @@ function CaseCard({
 function AllExplanationsPanel({
   task,
   index,
-  onClose,
-  onRequestAi,
+  onClose
 }: {
   task: Case;
   index: number;
   onClose: () => void;
-  onRequestAi: (i: number) => void;
 }) {
   const letters = "ABCDEF";
   const body = [
@@ -1120,18 +1116,6 @@ function AllExplanationsPanel({
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
         <EconAnswerKeyTable answerKey={task.answer_key} />
-        <div className="mb-6 flex flex-wrap gap-2">
-          {task.statements.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => onRequestAi(i)}
-              className={practiceInlineAiButtonClass(false)}
-            >
-              AI · {letters[i] ?? i + 1}
-            </button>
-          ))}
-        </div>
         <ExplanationProse text={body} />
       </div>
     </div>
