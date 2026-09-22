@@ -205,7 +205,7 @@ async def prep(page):
 
 
 async def demo(page):
-    await page.wait_for_timeout(480)
+    await page.wait_for_timeout(360)
 
     await open_chapter(page, 2)
     await check_subtopic(page, 2, r"2\.1")
@@ -218,53 +218,55 @@ async def demo(page):
     await open_chapter(page, 5)
     await check_subtopic(page, 5, r"5\.1")
     await close_chapter(page, 5)
-    await page.wait_for_timeout(240)
+    await page.wait_for_timeout(180)
 
     await page.get_by_text("Drag the point", exact=False).first.wait_for(
         state="visible", timeout=8000
     )
     await drag_weight_handle(page, dx=78, dy=-44)
-    await page.wait_for_timeout(220)
-    await drag_weight_handle(page, dx=-48, dy=30)
-    await page.wait_for_timeout(220)
+    await page.wait_for_timeout(160)
 
     count = page.locator("#custom-q-count")
-    await soft_click(page, count, 280, steps=30, move_ms=440)
+    await soft_click(page, count, 240, steps=28, move_ms=400)
     await count.fill("")
-    await page.wait_for_timeout(80)
-    await count.type("12", delay=70)
-    await page.wait_for_timeout(140)
+    await page.wait_for_timeout(60)
+    await count.type("12", delay=55)
+    await page.wait_for_timeout(100)
     await count.press("Enter")
-    await page.wait_for_timeout(260)
+    await page.wait_for_timeout(200)
 
     create = page.get_by_role(
         "button", name=re.compile(r"Create Economics Mock from Full Course", re.I)
     )
-    await soft_click(page, create, 720, steps=36, move_ms=520)
+    await soft_click(page, create, 640, steps=34, move_ms=460)
 
     dialog = page.get_by_role("dialog")
     await dialog.wait_for(state="visible", timeout=10000)
-    await page.wait_for_timeout(300)
+    await page.wait_for_timeout(240)
     untimed = dialog.get_by_role("button", name=re.compile(r"Untimed practice", re.I))
-    await soft_click(page, untimed, 900, steps=34, move_ms=480)
+    await soft_click(page, untimed, 820, steps=32, move_ms=440)
 
     await page.get_by_text("Question 1 /", exact=False).first.wait_for(
         state="visible", timeout=20000
     )
-    await page.wait_for_timeout(420)
+    await page.wait_for_timeout(360)
     boxes = page.locator('button[role="checkbox"]')
     await boxes.first.wait_for(state="visible", timeout=10000)
     for i in (0, 3):
-        await soft_click(page, boxes.nth(i), 340, steps=32, move_ms=440)
-        await page.wait_for_timeout(120)
+        await soft_click(page, boxes.nth(i), 300, steps=30, move_ms=400)
+        await page.wait_for_timeout(100)
 
-    # Show the handoff to the next question (no teleport).
+    # Visible handoff: glide to Next, click, dwell on Q2.
     nxt = page.get_by_role("button", name=re.compile(r"^Next$", re.I))
-    await soft_click(page, nxt, 720, steps=36, move_ms=500)
+    await soft_click(page, nxt, 560, steps=34, move_ms=460)
     await page.get_by_text("Question 2 /", exact=False).first.wait_for(
         state="visible", timeout=10000
     )
-    await page.wait_for_timeout(1100)
+    await page.get_by_text("Demand rises after a successful campaign", exact=False).first.wait_for(
+        state="visible", timeout=8000
+    )
+    print("on question 2", flush=True)
+    await page.wait_for_timeout(1400)
 
 
 async def main():
@@ -303,7 +305,7 @@ async def main():
         css_h=H,
         dpr=DPR,
         fps=FPS,
-        target_dur=17.5,
+        target_dur=18.5,
     )
 
 
