@@ -42,14 +42,7 @@ function overviewCopy(locale: UiLocale) {
       accuracyBySubject: "Trefferquote nach Fach",
       accuracyBySubjectHint: "Anteil richtig beurteilter Aussagen je Abschnitt.",
       noSectionData: "Keine Abschnittsdaten.",
-      accuracyByChapter: "Trefferquote nach Kapitel",
-      noChapterData: "Keine Kapiteldaten.",
-      chapterHintOrdered: "Kapitel von schwächsten zu stärksten.",
-      chapterHintCustom: "Kapitel-Tags erscheinen bei Custom-Mock-Builder-Prüfungen.",
-      chapterEmpty: "Dieser Durchgang hat keine Kapitel-Labels — die Auswertung bleibt auf Fachebene.",
       whatNext: "Was als Nächstes lernen",
-      whatNextTopics:
-        "Themen unter 70 % brauchen einen weiteren Durchgang. Ab 85 % sitzt es.",
       whatNextSections:
         "Abschnitte unter 70 % brauchen einen weiteren Durchgang. Ab 85 % sitzt es.",
       review: "Wiederholen",
@@ -61,12 +54,9 @@ function overviewCopy(locale: UiLocale) {
       emptyBand: "Nichts in diesem Band.",
       emptyHolding: "Noch nichts bei 85 %.",
       sections: "Abschnitte",
-      topics: "Themen",
-      chapters: "Kapitel",
       questions: "Aufgaben",
       questionsHint: "A–E zeigen die Beurteilung, nicht ob du „richtig“ angekreuzt hast.",
       section: "Fach",
-      topic: "Thema",
       statements: "Aussagen",
       points: "Punkte",
       accuracy: "Trefferquote",
@@ -105,13 +95,7 @@ function overviewCopy(locale: UiLocale) {
     accuracyBySubject: "Accuracy by subject",
     accuracyBySubjectHint: "Share of statements judged correctly in each section.",
     noSectionData: "No section data.",
-    accuracyByChapter: "Accuracy by chapter",
-    noChapterData: "No chapter data.",
-    chapterHintOrdered: "Chapters ordered from weakest to strongest.",
-    chapterHintCustom: "Chapter tags appear on Custom Mock Builder exams.",
-    chapterEmpty: "This sitting has no chapter labels, so the breakdown stays at subject level.",
     whatNext: "What to study next",
-    whatNextTopics: "Topics below 70% need another pass. 85% and above are holding.",
     whatNextSections: "Sections below 70% need another pass. 85% and above are holding.",
     review: "Review",
     reviewHint: "Under 70% of statements judged correctly.",
@@ -122,12 +106,9 @@ function overviewCopy(locale: UiLocale) {
     emptyBand: "Nothing in this band.",
     emptyHolding: "Nothing reached 85% yet.",
     sections: "Sections",
-    topics: "Topics",
-    chapters: "Chapters",
     questions: "Questions",
     questionsHint: "A–E show judgment, not whether you ticked True.",
     section: "Section",
-    topic: "Topic",
     statements: "Statements",
     points: "Points",
     accuracy: "Accuracy",
@@ -424,8 +405,6 @@ export function ExamResultOverview({
     answeredTasks,
     tasks,
     sections,
-    topics,
-    hasTopicBreakdown,
     medianSeconds,
     meanSeconds,
     toReview,
@@ -626,9 +605,7 @@ export function ExamResultOverview({
       <section>
         <div className="mb-4">
           <h2 className="font-display text-xl font-semibold tracking-tight">{copy.whatNext}</h2>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {hasTopicBreakdown ? copy.whatNextTopics : copy.whatNextSections}
-          </p>
+          <p className="mt-1 text-sm text-muted-foreground">{copy.whatNextSections}</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
           <FocusList
@@ -653,7 +630,6 @@ export function ExamResultOverview({
       </section>
 
       <GroupTable title={copy.sections} rows={sections} copy={copy} />
-      {hasTopicBreakdown ? <GroupTable title={copy.topics} rows={topics} copy={copy} /> : null}
 
       <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border px-5 py-4 sm:px-6">
@@ -666,7 +642,6 @@ export function ExamResultOverview({
               <tr className="border-b border-border text-muted-foreground">
                 <th className="px-5 py-2.5 font-medium sm:px-6">{locale === "de" ? "A" : "Q"}</th>
                 <th className="px-3 py-2.5 font-medium">{copy.section}</th>
-                {hasTopicBreakdown ? <th className="px-3 py-2.5 font-medium">{copy.topic}</th> : null}
                 <th className="px-3 py-2.5 font-medium">{copy.statements}</th>
                 <th className="px-3 py-2.5 text-right font-medium">{copy.points}</th>
                 <th className="px-3 py-2.5 text-right font-medium">{copy.accuracy}</th>
@@ -691,11 +666,6 @@ export function ExamResultOverview({
                       </button>
                     </td>
                     <td className="px-3 py-3.5 text-muted-foreground">{smLabel}</td>
-                    {hasTopicBreakdown ? (
-                      <td className="max-w-[14rem] truncate px-3 py-3.5 text-muted-foreground">
-                        {task.topicLabel}
-                      </td>
-                    ) : null}
                     <td className="px-3 py-3.5">
                       <StatementCells task={task} copy={copy} />
                     </td>

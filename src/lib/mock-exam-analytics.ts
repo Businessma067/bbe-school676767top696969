@@ -284,28 +284,8 @@ export function buildExamAnalytics(
     (a, b) => SUBJECT_ORDER.indexOf(a.key as SubjectKey) - SUBJECT_ORDER.indexOf(b.key as SubjectKey),
   );
 
-  const hasTopicBreakdown = questions.some((q) => Boolean(q.subtopicTag?.trim()));
-  const topics = hasTopicBreakdown
-    ? groupRows(
-        tasks,
-        (t) => t.topicKey,
-        (t) => t.topicLabel,
-        (t) => SUBJECT_META[t.question.subject].color,
-      )
-    : [];
-
-  const chapterTasks = tasks.filter((t) => t.chapterKey && t.chapterLabel);
-  const chapters = chapterTasks.length
-    ? groupRows(
-        chapterTasks,
-        (t) => t.chapterKey!,
-        (t) => t.chapterLabel!,
-        (t) => SUBJECT_META[t.question.subject].color,
-      )
-    : [];
-
   const times = tasks.map((t) => t.seconds);
-  const focus = splitFocus(hasTopicBreakdown ? topics : sections);
+  const focus = splitFocus(sections);
 
   return {
     tasks,
@@ -317,9 +297,6 @@ export function buildExamAnalytics(
     statementCount,
     statementPct: statementCount ? Math.round((statementCorrect / statementCount) * 100) : 0,
     sections,
-    topics,
-    chapters,
-    hasTopicBreakdown,
     secondsTaken: attempt?.secondsTaken ?? null,
     timed: attempt?.timed ?? false,
     answeredTasks: tasks.filter((t) => t.statements.some((s) => s.userMarked)).length,
