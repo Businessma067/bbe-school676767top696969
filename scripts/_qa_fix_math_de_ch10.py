@@ -9,10 +9,9 @@ import re
 import time
 from pathlib import Path
 
-from deep_translator import MyMemoryTranslator
 
-ROOT = Path("/workspace")
-DE_PATH = ROOT / "src/data/wiso/math-de-ch10.json"
+ROOT = Path("/tmp/ch10-work")
+DE_PATH = ROOT / "math-de-ch10.json"
 EN_PATH = Path("/tmp/wiso-math-en/ch10.json")
 CACHE_PATH = Path("/tmp/wiso-math-qa-ch10-mt-cache.json")
 OUT_REPORT = Path("/tmp/wiso-math-qa-ch10-report.md")
@@ -347,6 +346,47 @@ PHRASES: list[tuple[str, str]] = [
 
 POST_FIXES: list[tuple[str, str]] = [
 
+    ("Dauerkraft", "stetige Intensität"),
+    ("Dauer kraft", "stetige Intensität"),
+    ("Dauer-Kraft", "stetige Intensität"),
+    ("die Kraft", "die Intensität"),
+    ("Der Kraft", "Die Intensität"),
+    ("einer Kraft", "einer Intensität"),
+    ("Kraftbuchstabe", "Intensitätsbuchstabe"),
+    ("Buchstabenkraft", "Buchstaben-Intensität"),
+    ("kontinuierliche Kraft", "stetige Intensität"),
+    ("kontinuierlichen Kraft", "stetigen Intensität"),
+    ("kontinuierlicher Kraft", "stetiger Intensität"),
+    ("kontinuierliche Intensität", "stetige Intensität"),
+    ("kontinuierlichen Intensität", "stetigen Intensität"),
+    ("kontinuierlicher Intensität", "stetiger Intensität"),
+    ("kontinuierlicher Pfad", "stetiger Pfad"),
+    ("kontinuierlichen Pfad", "stetigen Pfad"),
+    ("kontinuierliche Pfad", "stetige Pfad"),
+    ("kontinuierliches Modell", "stetiges Modell"),
+    ("Logbuch", "natürlicher Logarithmus"),
+    ("natürliches Logbuch", "natürlicher Logarithmus"),
+    ("natürlichen Logbuch", "natürlichen Logarithmus"),
+    ("Protokoll", "Logarithmus"),
+    ("natürliches Protokoll", "natürlicher Logarithmus"),
+    ("natürlichen Protokoll", "natürlichen Logarithmus"),
+    ("Verdopplungszeit von", "Verdopplungszeit"),
+    ("Verdopplung von Zeit", "Verdopplungszeit"),
+    ("Halbwertszeit von", "Halbwertszeit"),
+    ("Anspruch", "Behauptung"),
+    ("dem Anspruch", "der Behauptung"),
+    ("Der Anspruch", "Die Behauptung"),
+    ("den Anspruch", "die Behauptung"),
+    ("Neuaufbau", "Rekonstruktion"),
+    ("neu aufgebaut", "rekonstruiert"),
+    ("wiederaufgebaut", "rekonstruiert"),
+    ("wiederhergestellt", "rekonstruiert"),
+    ("Zensus", "Bestandszahlen"),
+    ("Volkszählung", "Bestandszahlen"),
+    ("Markiere sie mit Wahr oder Falsch", "Markiere sie mit Richtig oder Falsch"),
+    ("→ Wahr", "→ Richtig"),
+    ("Die Aussage ist wahr.", "Die Aussage ist richtig."),
+
     # --- Ch10 MT garble cleanup ---
     ("Logbuch", "natürlicher Logarithmus"),
     ("natürlicher natürlicher Logarithmus", "natürlicher Logarithmus"),
@@ -552,12 +592,17 @@ def needs_mt(text: str) -> bool:
     return en_n >= 2 and en_n > de_n
 
 
+
 class Translator:
     def __init__(self) -> None:
         self.cache: dict[str, str] = {}
         if CACHE_PATH.exists():
             self.cache = json.loads(CACHE_PATH.read_text())
-        self.backend = MyMemoryTranslator(source="en-US", target="de-DE")
+        import argostranslate.translate as at
+        langs = at.get_installed_languages()
+        en = next(l for l in langs if l.code == "en")
+        de = next(l for l in langs if l.code == "de")
+        self.backend = en.get_translation(de)
         self.calls = 0
 
     def save(self) -> None:
@@ -567,39 +612,33 @@ class Translator:
         key = hashlib.sha1(chunk.encode()).hexdigest()
         if key in self.cache:
             return self.cache[key]
-        # MyMemory limit ~500 chars
-        if len(chunk) > 450:
-            # split on sentence boundaries
+        if len(chunk) > 800:
             parts = re.split(r"(?<=[.!?])\s+", chunk)
             out: list[str] = []
             buf = ""
-            for p in parts:
-                if len(buf) + len(p) + 1 > 450 and buf:
+            for part in parts:
+                if len(buf) + len(part) + 1 > 800 and buf:
                     out.append(self.translate_chunk(buf))
-                    buf = p
+                    buf = part
                 else:
-                    buf = f"{buf} {p}".strip() if buf else p
+                    buf = f"{buf} {part}".strip() if buf else part
             if buf:
                 out.append(self.translate_chunk(buf))
             result = " ".join(out)
             self.cache[key] = result
             return result
-        for attempt in range(6):
-            try:
-                time.sleep(0.35 + 0.15 * attempt)
-                result = self.backend.translate(chunk)
-                self.calls += 1
-                self.cache[key] = result
-                if self.calls % 20 == 0:
-                    self.save()
-                return result
-            except Exception as e:
-                wait = 2 ** attempt
-                print(f"  MT retry {attempt+1}: {e}; sleep {wait}s")
-                time.sleep(wait)
-        print(f"  MT FAILED, leaving English: {chunk[:80]}")
-        self.cache[key] = chunk
-        return chunk
+        try:
+            result = self.backend.translate(chunk)
+            self.calls += 1
+            self.cache[key] = result
+            if self.calls % 50 == 0:
+                self.save()
+            return result
+        except Exception as e:
+            print(f"  Argos FAILED: {e}; leaving English: {chunk[:80]}")
+            self.cache[key] = chunk
+            return chunk
+
 
 
 def translate_field(text: str, tr: Translator) -> str:
