@@ -222,6 +222,42 @@ function Meter({ pct, color }: { pct: number; color: string }) {
   );
 }
 
+/** Y-axis tick: one line with ellipsis so chapter names never wrap. */
+function OneLineCategoryTick({
+  x = 0,
+  y = 0,
+  payload,
+  width = 168,
+}: {
+  x?: number;
+  y?: number;
+  payload?: { value?: string | number };
+  width?: number;
+}) {
+  const label = String(payload?.value ?? "");
+  const boxW = Math.max(48, width - 8);
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <title>{label}</title>
+      <foreignObject x={-boxW} y={-9} width={boxW} height={18}>
+        <div
+          style={{
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            textAlign: "right",
+            fontSize: 11,
+            lineHeight: "18px",
+            color: "var(--muted-foreground)",
+          }}
+        >
+          {label}
+        </div>
+      </foreignObject>
+    </g>
+  );
+}
+
 function ChartFrame({
   title,
   hint,
