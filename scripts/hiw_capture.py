@@ -112,7 +112,7 @@ async def glide(page, x, y, steps=28):
     await page.mouse.move(x, y, steps=steps)
 
 
-async def soft_click(page, locator, pause=550):
+async def soft_click(page, locator, pause=550, steps=28):
     try:
         await locator.scroll_into_view_if_needed()
     except Exception:
@@ -123,8 +123,8 @@ async def soft_click(page, locator, pause=550):
     except Exception:
         pass
     if box:
-        await glide(page, box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
-        await page.wait_for_timeout(160)
+        await glide(page, box["x"] + box["width"] / 2, box["y"] + box["height"] / 2, steps=steps)
+        await page.wait_for_timeout(60 if steps <= 16 else 120)
     await locator.click(force=True)
     await page.wait_for_timeout(pause)
 
@@ -281,7 +281,9 @@ def encode_hiw(
         capture_output=True, text=True,
     )
     dur = float((probe.stdout or "0").strip() or "0")
-    if 6.5 <= dur < target_dur - 0.4:
+    # Never slow a snappy capture down to pad length — that makes answering look sluggish.
+    # Only compress when the raw clip overshoots the budget.
+    if dur > target_dur + 0.12:
         factor = target_dur / dur
         subprocess.run(
             [
