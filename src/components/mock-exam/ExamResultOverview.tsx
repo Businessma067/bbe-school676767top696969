@@ -311,17 +311,11 @@ function GroupTable({
             {rows.map((row) => (
               <tr key={row.key} className="border-b border-border last:border-b-0">
                 <td className="px-5 py-4 sm:px-6">
-                  <div className="flex items-center gap-2.5">
-                    <span
-                      className="h-2 w-2 shrink-0 rounded-full bg-caramel-deep"
-                      aria-hidden
-                    />
-                    <div className="min-w-0">
-                      <p className="truncate font-medium">{row.label}</p>
-                      <p className="mt-0.5 text-xs text-muted-foreground">
-                        {row.taskCount} {row.taskCount === 1 ? copy.task : copy.tasks}
-                      </p>
-                    </div>
+                  <div className="min-w-0">
+                    <p className="truncate font-medium">{row.label}</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
+                      {row.taskCount} {row.taskCount === 1 ? copy.task : copy.tasks}
+                    </p>
                   </div>
                   <div className="mt-2 max-w-xs">
                     <Meter pct={row.accuracyPct} color={row.color} />
@@ -694,7 +688,7 @@ export function ExamResultOverview({
               <BarChart
                 data={chapterBars}
                 layout="vertical"
-                margin={{ top: 4, right: 16, left: 8, bottom: 4 }}
+                margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
               >
                 <CartesianGrid stroke={GRID} horizontal={false} />
                 <XAxis
@@ -708,10 +702,11 @@ export function ExamResultOverview({
                 <YAxis
                   type="category"
                   dataKey="name"
-                  width={128}
-                  tick={axisTick}
+                  width={172}
+                  tick={<OneLineCategoryTick width={172} />}
                   axisLine={false}
                   tickLine={false}
+                  interval={0}
                 />
                 <Tooltip
                   contentStyle={tipStyle()}
