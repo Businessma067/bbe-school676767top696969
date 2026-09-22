@@ -654,8 +654,14 @@ def main() -> None:
     reviewed = 0
 
     # Preserve key order as in EN list
+    SKIP = {f"MATH 10.1.{i}" for i in range(1, 9)}  # hand-fixed
     for task in en_list:
         cid = task["case_id"]
+        if cid in SKIP:
+            new_de[cid] = old_de[cid]
+            reviewed += 1
+            print(f"[{reviewed}/{len(en_list)}] {cid} SKIP (hand-fixed)")
+            continue
         reviewed += 1
         print(f"[{reviewed}/{len(en_list)}] {cid}")
         out = {
