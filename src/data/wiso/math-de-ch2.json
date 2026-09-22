@@ -2565,21 +2565,21 @@
     "solution_overview": ""
   },
   "MATH 2.136": {
-    "title": "Mixed slogans that look like product rules",
+    "title": "Gemischte Slogans, die wie Produktregeln aussehen",
     "context": "Es sei $x$ eine reelle Zahl. Welche der folgenden Aussagen ist/sind richtig?",
     "statements": [
-      "Bei $a=-1$, $|a-1|+|a-7|$ist gleich$6$.",
-      "Code Companion$|z+h|=|z|+|h|$is written as an identity.",
-      "Whenever a real point lies between $3$ and $9$einschließlich der Summe seiner Entfernungen zu$3$ and to $9$entspricht der Länge dieses Segments unter dem ständigen Definitionsmenge-Label$D_{1}$.",
-      "Treating $|4n|$austauschbar mit$|n|+4$is proposed.",
-      "Bei $u=0$, $|u-3|=3<5$ and $0\\in(-2,8)$; at $u=9$scheitert die Ungleichheit."
+      "Bei $a=-1$, $|a-1|+|a-7|$ ist gleich $6$.",
+      "Die Begleitformel $|z+h|=|z|+|h|$ wird als Identität geschrieben.",
+      "Liegt ein reeller Punkt zwischen $3$ und $9$ einschließlich, so ist die Summe seiner Abstände zu $3$ und zu $9$ gleich der Länge dieses Intervalls (Bezeichnung $D_{1}$).",
+      "Es wird vorgeschlagen, $|4n|$ als austauschbar mit $|n|+4$.",
+      "Bei $u=0$, $|u-3|=3<5$ und $0\\in(-2,8)$; at $u=9$, scheitert die Ungleichung."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nWithout restricting $x$ to $[1,7]$, die Summe der Abstände eine V-förmige stückweise lineare Funktion mit minimaler$6$, nicht die Konstante$6$Mrs Virginia Bottemley,\n\nBei der Prüfstelle$x=0$:\n\n$$\n|0-1|+|0-7|=8\n$$\n\nDa $8\\neq 6$, der unbeschränkte Behauptung scheitert\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Setze$a=-1$; die Summe übersteigt die Behauptunged-Konstante.\n\n$$\na=-1\n$$\n\n$$\n|a-1|+|a-7|\n$$\n\n$$\n6\n$$\n\nDie Aussage ist falsch.",
-      "**B.** → Falsch\n\nThe triangle inequality says$|n+k|\\le|n|+|k|$, mit Gleichheit nur für Summanden mit gleichem Vorzeichen (oder Null).\n\n$$\n|z+h|\n$$\n\n$$\n|z+h|=|z|+|h|\n$$\n\nCounter-example $n=1$, $k=-1$:\n\n$$\n|1+(-1)|=0\n$$\n\n$$\n|1|+|-1|=2\n$$\n\nDa $0\\neq 2$, the printed identity fails for all real pairs\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nAuf das geschlossene Intervall$[3,9]$ a point $x$sits between the two marks, so the two distances add to the gap:\n\n$$\n3\n$$\n\n$$\n9\n$$\n\n$$\nD_{1}\n$$\n\n$$\n|x-3|+|x-9|=9-3\n$$\n\n$$\n6\n$$\n\nDiese Konstante entspricht der Länge des Segments von$3$ to $9$.\n\nEin Vergleich der reduzierten Form mit der angegebenen rechten Seite zeigt, dass sie übereinstimmen.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nHomogeneous scaling and translation are different operations on Absolutbetrag.\n\n$$\n|4n|=|4|\\,|n|\n$$\n\n$$\n4|n|,\n$$\n\nwhile $|n|+4$ shifts by four. Bei $n=0$:\n\n$$\n|4\\cdot 0|=0,\n$$\n\n$$\n|0|+4=4.\n$$\n\nDa $0\\neq 4$sind die beiden Ausdrücke nicht austauschbar.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nEine Ungleichung der Form$|u-3|<5$ says $u$Innerhalb von$5$ of $3$die sich zu einer doppelten Ungleichung entfaltet:\n\n$$\nu\n$$\n\n$$\nu=0\n$$\n\n$$\n|u-3|\n$$\n\n$$\n|u-3|=3<5\n$$\n\n$$\n0\\in(-2,8)\n$$\n\n$$\nu\n$$\n\n$$\nu=9\n$$\n\n$$\n-5<u-3<5\n$$\n\n$$\n-2<u<8\n$$\n\nAdding $3$across all three parts gives exactly the printed interval, and every step is reversible, so the biconditional holds.\n\nKonkrete Prüfung der umgeschriebenen Behauptung.$(-2,8)$.\n\nDie Aussage ist richtig."
+      "**A.** → Falsch\n\nOhne die Einschränkung auf das Intervall ist die Abstandssumme V-förmig und nicht konstant $6$.\n\n$$\n|0-1|+|0-7|=8\n$$\n\n$$\na=-1\n$$\n\n$$\n|a-1|+|a-7|\n$$\n\n$$\n6\n$$\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDie Dreiecksungleichung liefert $|z+h|\\le|z|+|h|$; Gleichheit gilt nicht für alle reellen Paare.\n\n$$\n|z+h|\n$$\n\n$$\n|z+h|=|z|+|h|\n$$\n\n$$\n|1+(-1)|=0\n$$\n\n$$\n|1|+|-1|=2\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nAuf dem abgeschlossenen Intervall $[3,9]$ addieren sich die Abstände zur Intervalllänge.\n\n$$\n3\n$$\n\n$$\n9\n$$\n\n$$\nD_{1}\n$$\n\n$$\n|x-3|+|x-9|=9-3\n$$\n\n$$\n6\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nHomogene Skalierung $|4n|=4|n|$ ist nicht dasselbe wie Translation $|n|+4$.\n\n$$\n|4n|=|4|\\,|n|\n$$\n\n$$\n4|n|,\n$$\n\n$$\n|4\\cdot 0|=0,\n$$\n\n$$\n|0|+4=4.\n$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie Ungleichung $|u-3|<5$ entfaltet sich zum offenen Intervall $(-2,8)$.\n\n$$\nu\n$$\n\n$$\nu=0\n$$\n\n$$\n|u-3|\n$$\n\n$$\n|u-3|=3<5\n$$\n\n$$\n0\\in(-2,8)\n$$\n\n$$\nu\n$$\n\n$$\nu=9\n$$\n\n$$\n-5<u-3<5\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2587,18 +2587,18 @@
     "title": "Klausuraufgaben – 1",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für alle reellen $x$, $y$, $z$, es gilt, dass$x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$.",
-      "Bei $t=2$, both$\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}$ and $\\dfrac{t+1}{2t+1}$ equal $\\dfrac{3}{5}$.",
-      "Für $u>0$ and $v>0$zusammen mit$u\\neq v$, es gilt, dass$\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$.",
-      "Bei $x=-2$, $y=3$, both$|xy|$ and $|x|\\,|y|$ equal $6$.",
-      "Wenn $p>q$dann$p^2>q^2$."
+      "Für alle reellen $x $, $y $, $z $, gilt $x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$.",
+      "Bei $t=2$, sowohl $\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}$ und $\\dfrac{t+1}{2t+1}$ gleich $\\dfrac{3}{5}$.",
+      "Für $u>0$ und $v>0$ with $u\\neq v $, gilt $\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$.",
+      "Bei $x=-2$, $y=3$, sowohl $|xy|$ und $|x|\\,|y|$ gleich $6$.",
+      "Wenn $p>q $, then $p^2>q^2$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie algebraische Identität erweitert die rechte Seite in die gleiche quadratische Form wie die linke.\n\nMultipliziere aus jeder quadratischen Differenz:\n\n$$\n(x-y)^2=x^2-2xy+y^2\n$$\n\n$$\n(y-z)^2=y^2-2yz+z^2\n$$\n\n$$\n(z-x)^2=z^2-2zx+x^2\n$$\n\nAddieren und dividieren durch$2$:\n\n$$\n\\tfrac12\\bigl[(x-y)^2+(y-z)^2+(z-x)^2\\bigr]=x^2+y^2+z^2-xy-yz-zx\n$$\n\nThe two sides match identically for every real$x$, $y$, $z$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nVereinfachen den fortlaufenden Anteil von der innersten Schicht nach außen, mit$t\\neq0$, $t\\neq-1$, and $t\\neq-\\tfrac12$.\n\nInnermost sum:\n\n$$\n1+\\frac{1}{t}=\\frac{t+1}{t}\n$$\n\nFirst reciprocal:\n\n$$\n\\frac{1}{1+\\frac{1}{t}}=\\frac{t}{t+1}\n$$\n\nOuter sum:\n\n$$\n1+\\frac{t}{t+1}=\\frac{2t+1}{t+1}\n$$\n\nOuter reciprocal:\n\n$$\n\\dfrac{1}{1+\\dfrac{1}{1+\\frac{1}{t}}}=\\dfrac{t+1}{2t+1}\n$$\n\nThat is exactly die Behauptunged value.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Beide Seiten sind gleich$3/5$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nLöschen die Wurzeln im Nenner, indem Sie mit dem Konjugat dieses Nenners multiplizieren.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\nu\\neq v\n$$\n\n$$\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}\n$$\n\n$$\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}\n$$\n\nMultipliziere Zähler und Nenner mit$\\sqrt{u}-\\sqrt{v}$:\n\n$$\n\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{(\\sqrt{u}-\\sqrt{v})^2}{u-v}\n$$\n\nMultipliziere aus dem quadrierten Zähler:\n\n$$\n(\\sqrt{u}-\\sqrt{v})^2=u-2\\sqrt{uv}+v\n$$\n\nSo\n\n$$\n\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{u+v-2\\sqrt{uv}}{u-v}\n$$\n\nwhich is die Behauptunged rationalized form.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nSetze the given numbers$x=-2$ and $y=3$into both absolute-value expressions.\n\nProdukt zuerst, dann Absolutbetrag:\n\n$$\nxy=(-2)\\cdot 3=-6\n$$\n\n$$\n|xy|=|-6|=6\n$$\n\nAbsolutbetrags zuerst, dann Produkt:\n\n$$\n|x|=|-2|=2,\\qquad |y|=|3|=3\n$$\n\n$$\n|x|\\,|y|=2\\cdot 3=6\n$$\n\nBeide Seiten sind gleich $6$, was genau die Behauptunged common value ist. (Im Allgemeinen$|xy|=|x||y|$Für jede $x,y$; this letter is the concrete numerical check.)\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nSquaring is not order-preserving on the whole real line.\n\n$$\np>q\n$$\n\n$$\np^2>q^2\n$$\n\nFaktorisiere den Unterschied von Quadraten:\n\n$$\np^2-q^2=(p-q)(p+q)\n$$\n\nWenn $p>q$dann$p-q>0$, but $p+q$ may still be negative.\n\nGegenbeispiel: $p=-1$, $q=-3$ gives $p>q$ yet\n\n$$\np^2=1<9\n$$\n\n$$\nq^2\n$$\n\nSo $p>q$ does not force $p^{2}>q^{2}$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nMultipliziere die Quadrate rechts aus und vergleiche mit der linken quadratischen Form.\n\n$$\n(x-y)^2=x^2-2xy+y^2\n$$\n\n$$\n(y-z)^2=y^2-2yz+z^2\n$$\n\n$$\n(z-x)^2=z^2-2zx+x^2\n$$\n\n$$\n\\tfrac12\\bigl[(x-y)^2+(y-z)^2+(z-x)^2\\bigr]=x^2+y^2+z^2-xy-yz-zx\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nVereinfache den Kettenbruch von innen nach außen und setze $t=2$ ein.\n\n$$\n1+\\frac{1}{t}=\\frac{t+1}{t}\n$$\n\n$$\n\\frac{1}{1+\\frac{1}{t}}=\\frac{t}{t+1}\n$$\n\n$$\n1+\\frac{t}{t+1}=\\frac{2t+1}{t+1}\n$$\n\n$$\n\\dfrac{1}{1+\\dfrac{1}{1+\\frac{1}{t}}}=\\dfrac{t+1}{2t+1}\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nErweitere mit dem Konjugierten des Nenners und multipliziere den Zähler aus.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\nu\\neq v\n$$\n\n$$\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}\n$$\n\n$$\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}\n$$\n\n$$\n\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{(\\sqrt{u}-\\sqrt{v})^2}{u-v}\n$$\n\n$$\n(\\sqrt{u}-\\sqrt{v})^2=u-2\\sqrt{uv}+v\n$$\n\n$$\n\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{u+v-2\\sqrt{uv}}{u-v}\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nSetze $x=-2$ und $y=3$ in beide Absolutbetragsausdrücke ein.\n\n$$\nxy=(-2)\\cdot 3=-6\n$$\n\n$$\n|xy|=|-6|=6\n$$\n\n$$\n|x|=|-2|=2,\\qquad |y|=|3|=3\n$$\n\n$$\n|x|\\,|y|=2\\cdot 3=6\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nQuadrieren erhält die Ordnung nicht auf ganz $\\mathbb{R}$; Gegenbeispiel mit negativen Zahlen.\n\n$$\np>q\n$$\n\n$$\np^2>q^2\n$$\n\n$$\np^2-q^2=(p-q)(p+q)\n$$\n\n$$\np^2=1<9\n$$\n\n$$\nq^2\n$$\n\nDie Aussage ist falsch."
     ],
     "solution_overview": ""
   },
@@ -2606,18 +2606,18 @@
     "title": "Klausuraufgaben – 2",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Gl.$\\dfrac{1}{z-1}=\\dfrac1z$ has no reelle Lösung.",
-      "Die Gl.$\\sqrt{z+3}=z+1$ has exactly one reelle Lösung.",
-      "Die Gl.$|z|=z^2$ has exactly three reelle Lösungen.",
-      "Das Polynom$y^3-2y+1$ist teilbar durch$y-1$.",
-      "Wenn $0<p<1$dann$\\dfrac1p<1$."
+      "Die Gleichung $\\dfrac{1}{z-1}=\\dfrac1z $ hat keine reelle Lösung.",
+      "Die Gleichung $\\sqrt{z+3}=z+1$ hat genau eine reelle Lösung.",
+      "Die Gleichung $|z|=z^2$ hat genau drei reelle Lösungen.",
+      "Das Polynom $y^3-2y+1$ ist teilbar durch $y-1$.",
+      "Wenn $0<p<1$, then $\\dfrac1p<1$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nReziprozitäten auf der Definitionsmenge löschen$z\\neq0$ and $z\\neq1$, then check whether a candidate survives.\n\n$$\n\\dfrac{1}{z-1}\n$$\n\n$$\n\\dfrac{1}{z-1}=\\dfrac1z\n$$\n\nAngenommen $z\\neq0$ and $z\\neq1$:\n\n$$\n\\dfrac{1}{z-1}=\\dfrac{1}{z}\n$$\n\nÜberkreuz multiplizieren:\n\n$$\nz=z-1\n$$\n\n$$\n0=-1\n$$\n\nDie Gleichung ist widersprüchlich, so dass keine realen$z$ works.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nQuadriere beide Seiten erst nach Prüfung der Domäne der Hauptquadratwurzel und der rechten Seite.\n\nRequire$z+3\\ge0$ and $z+1\\ge0$, so $z\\ge-1$. Square:\n\n$$\nz+3=(z+1)^2\n$$\n\n$$\nz+3=z^2+2z+1\n$$\n\n$$\n0=z^2+z-2\n$$\n\n$$\n(z+2)(z-1)=0\n$$\n\nCandidates $z=-2$ and $z=1$. Only $z=1$ lies in $z\\ge-1$. Check:\n\n$$\n\\sqrt{1+3}=2\n$$\n\n$$\n1+1\n$$\n\nExactly one reelle Lösung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nSchreibe um $|z|=z^2$mit der stückweisen Definition von Absolutbetrag.\n\nAuf $z\\ge 0$:\n\n$$\nz=z^2\n$$\n\n$$\nz^2-z=0\n$$\n\n$$\nz(z-1)=0\n$$\n\nso $z=0$ or $z=1$.\n\nAuf $z<0$:\n\n$$\n-z=z^2\n$$\n\n$$\nz^2+z=0\n$$\n\n$$\nz(z+1)=0\n$$\n\ndem Stammverzeichnis$z=0$ is not in $z<0$, while $z=-1$is. Check:\n\n$$\n|-1|=1\n$$\n\n$$\n(-1)^2\n$$\n\nThe three reelle Lösungen are$-1$, $0$, and $1$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nEin linearer Faktor teilt ein Polynom genau dann, wenn der Rest an seiner Wurzel Null ist (Faktorsatz).\n\n$$\ny^3-2y+1\n$$\n\n$$\ny-1\n$$\n\nBewerten den Kubik an der vorgeschlagenen Wurzel$y=1$:\n\n$$\n1^3-2\\cdot1+1\n$$\n\n$$\n1-2+1\n$$\n\n$$\n0\n$$\n\nDer Rest ist$0$, so $y-1$ divides $y^3-2y+1$. Die Behauptung stimmt genau mit dem Faktorsatz überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nIm Intervall der offenen Einheit ist der Kehrwert größer als eins, nicht kleiner.\n\n$$\n0<p<1\n$$\n\n$$\n\\dfrac1p<1\n$$\n\nNehmen den inneren Punkt$p=\\dfrac{1}{2}$:\n\n$$\n\\dfrac{1}{p}=2\n$$\n\n$$\n2>1\n$$\n\nDie Behauptung asserts $\\dfrac{1}{p}<1$für jede$0<p<1$, which already fails at this single witness.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nAuf $z\\neq0,1$ führt Überkreuzmultiplikation zum Widerspruch $0=-1$.\n\n$$\n\\dfrac{1}{z-1}\n$$\n\n$$\n\\dfrac{1}{z-1}=\\dfrac1z\n$$\n\n$$\n\\dfrac{1}{z-1}=\\dfrac{1}{z}\n$$\n\n$$\nz=z-1\n$$\n\n$$\n0=-1\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nNach Definitionsprüfung und Quadrieren bleibt genau der Kandidat $z=1$.\n\n$$\nz+3=(z+1)^2\n$$\n\n$$\nz+3=z^2+2z+1\n$$\n\n$$\n0=z^2+z-2\n$$\n\n$$\n(z+2)(z-1)=0\n$$\n\n$$\n\\sqrt{1+3}=2\n$$\n\n$$\n1+1\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nStückweise Auswertung von $|z|=z^2$ liefert die drei Lösungen $-1,0,1$.\n\n$$\nz=z^2\n$$\n\n$$\nz^2-z=0\n$$\n\n$$\nz(z-1)=0\n$$\n\n$$\n-z=z^2\n$$\n\n$$\nz^2+z=0\n$$\n\n$$\nz(z+1)=0\n$$\n\n$$\n|-1|=1\n$$\n\n$$\n(-1)^2\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nNach dem Faktorsatz teilt $y-1$ das Polynom, weil der Wert an $y=1$ null ist.\n\n$$\ny^3-2y+1\n$$\n\n$$\ny-1\n$$\n\n$$\n1^3-2\\cdot1+1\n$$\n\n$$\n1-2+1\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nIm Intervall $(0,1)$ ist der Kehrwert größer als $1$, nicht kleiner.\n\n$$\n0<p<1\n$$\n\n$$\n\\dfrac1p<1\n$$\n\n$$\n\\dfrac{1}{p}=2\n$$\n\n$$\n2>1\n$$\n\nDie Aussage ist falsch."
     ],
     "solution_overview": ""
   },
@@ -2625,18 +2625,18 @@
     "title": "Klausuraufgaben – 3",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Es gilt:$\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}$.",
-      "Die Lösungsmenge der Ungleichung$|z-2|\\le1$is the interval$[1,3]$.",
-      "Die Gl.$q^2=q$ has exactly one reelle Lösung.",
-      "Wenn $u$, $v$, $w$sind ungleich Null mit$u+v+w=0$dann$\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=-3$.",
-      "Für $t\\ge0$, the equation$\\sqrt t=t$holds precisely when$t=0$ or $t=1$."
+      "Es gilt $\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}$.",
+      "Die Lösungsmenge der Ungleichung $|z-2|\\le1$ is the interval $[1,3]$.",
+      "Die Gleichung $q^2=q $ hat genau eine reelle Lösung.",
+      "Wenn $u $, $v $, $w $ are nonzero with $u+v+w=0$, then $\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=-3$.",
+      "Für $t\\ge0$, the equation $\\sqrt t=t $ holds precisely when $t=0$ or $t=1$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nA denesting identity is verified by squaring the proposed nonnegative rechte Seite and recovering the radicand.\n\n$$\n\\sqrt{7+4\\sqrt{3}}\n$$\n\n$$\n\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}\n$$\n\nMit $2+\\sqrt{3}>0$, expand:\n\n$$\n(2+\\sqrt{3})^2=4+4\\sqrt{3}+3\n$$\n\n$$\n7+4\\sqrt{3}\n$$\n\nTaking the principal square root of both sides:\n\n$$\n\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}\n$$\n\nDie quadratische Form stimmt mit der Behauptung überein, so dass die Entstauung korrekt ist.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nAn absolute-value inequality $|z-c|\\le r$beschreibt das geschlossene Intervall des Radius$r$Über das ZDEMO$c$.\n\n$$\n|z-2|\\le1\n$$\n\n$$\n[1,3]\n$$\n\nUnfold the inequality about the center$2$:\n\n$$\n|z-2|\\le1\\Longleftrightarrow-1\\le z-2\\le1\n$$\n\nAdd $2$durch jeden Teil der Kette:\n\n$$\n1\\le z\\le3\n$$\n\nThat is exactly the closed interval$[1,3]$. Compare with die Behauptung: the Lösungsmenge matches.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nBringen jeden Begriff auf eine Seite und faktorisieren Sie, bevor Sie reelle Wurzeln zählen.\n\n$$\nq^2\n$$\n\n$$\nq^2=q\n$$\n\nStart from die Behauptunged equation:\n\n$$\nq^2-q=0\n$$\n\n$$\nq(q-1)=0\n$$\n\nDie Wurzeln sind$q=0$ and $q=1$. Prüfe both:$0^2=0$ and $1^2=1$. Es gibt zwei unterschiedliche reelle Lösungen, nicht genau eine.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nUse $u+v+w=0$jede paarweise Summe durch den entgegengesetzten Buchstaben zu ersetzen.\n\n$$\nu\n$$\n\n$$\nv\n$$\n\n$$\nw\n$$\n\n$$\nu+v+w\n$$\n\n$$\nu+v+w=0\n$$\n\n$$\n\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}\n$$\n\n$$\n\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=-3\n$$\n\nFrom $u+v=-w$, $v+w=-u$, and $w+u=-v$:\n\n$$\n\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=\\dfrac{-w}{w}+\\dfrac{-u}{u}+\\dfrac{-v}{v}\n$$\n\n$$\n-1-1-1\n$$\n\n$$\n-3\n$$\n\nwith each letter nonzero. That stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nAuf $t\\ge0$beidseits der$\\sqrt{t}=t$sind nicht negativ, so dass die Quadratur reversibel ist.\n\n$$\nt\\ge0\n$$\n\n$$\n\\sqrt t\n$$\n\n$$\n\\sqrt t=t\n$$\n\n$$\nt\n$$\n\n$$\nt=0\n$$\n\n$$\nt\n$$\n\n$$\nt=1\n$$\n\nSquare:\n\n$$\nt=t^{2}\n$$\n\n$$\nt^{2}-t=0\n$$\n\n$$\nt(t-1)=0\n$$\n\nThe solutions are$t=0$ and $t=1$, both admissible in$t\\ge0$.\n\nEs erscheint keine andere nichtnegative Wurzel, daher gilt die Gleichung genau bei diesen beiden Werten.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nQuadriere die vorgeschlagene nichtnegative rechte Seite und vergleiche mit dem Radikanden.\n\n$$\n\\sqrt{7+4\\sqrt{3}}\n$$\n\n$$\n\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}\n$$\n\n$$\n(2+\\sqrt{3})^2=4+4\\sqrt{3}+3\n$$\n\n$$\n7+4\\sqrt{3}\n$$\n\n$$\n\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$|z-2|\\le1$ beschreibt genau das abgeschlossene Intervall $[1,3]$.\n\n$$\n|z-2|\\le1\n$$\n\n$$\n[1,3]\n$$\n\n$$\n|z-2|\\le1\\Longleftrightarrow-1\\le z-2\\le1\n$$\n\n$$\n1\\le z\\le3\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$q^2-q=0$ faktorisiert zu $q(q-1)=0$ und hat zwei reelle Lösungen.\n\n$$\nq^2\n$$\n\n$$\nq^2=q\n$$\n\n$$\nq^2-q=0\n$$\n\n$$\nq(q-1)=0\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nMit $u+v=-w$ usw. wird jede Summe der Kehrwerte zu $-1$, insgesamt $-3$.\n\n$$\nu\n$$\n\n$$\nv\n$$\n\n$$\nw\n$$\n\n$$\nu+v+w\n$$\n\n$$\nu+v+w=0\n$$\n\n$$\n\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}\n$$\n\n$$\n\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=-3\n$$\n\n$$\n\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=\\dfrac{-w}{w}+\\dfrac{-u}{u}+\\dfrac{-v}{v}\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nAuf $t\\ge0$ ist Quadrieren umkehrbar; die Lösungen sind $t=0$ und $t=1$.\n\n$$\nt\\ge0\n$$\n\n$$\n\\sqrt t\n$$\n\n$$\n\\sqrt t=t\n$$\n\n$$\nt\n$$\n\n$$\nt=0\n$$\n\n$$\nt\n$$\n\n$$\nt=1\n$$\n\n$$\nt=t^{2}\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2644,18 +2644,18 @@
     "title": "Klausuraufgaben – 4",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für $u>0$ and $v>0$, es gilt, dass$|u-v|=u-v$.",
-      "Wenn $a+b=s$ and $ab=p$for reelle Zahlen$s$ and $p$dann$a^3+b^3=s^3-3ps$.",
-      "Wenn $x\\neq0$ and $x+\\dfrac1x=k$für reelle$k$dann$x^2+\\dfrac1{x^2}=k^2-2$.",
-      "Bei $z=2$, both$z^{-1}+z^{-2}$ and $\\dfrac{1}{z+z^2}$ equal $\\dfrac{3}{4}$.",
-      "Auf the angegebene Definitionsmenge$x\\ge5$, the principal-root expression$\\sqrt{(x-5)^2}$vereinfacht zu$x-5$."
+      "Für $u>0$ und $v>0$, gilt $|u-v|=u-v $.",
+      "Wenn $a+b=s $ und $ab=p $ for real numbers $s $ und $p $, then $a^3+b^3=s^3-3ps $.",
+      "Wenn $x\\neq0$ und $x+\\dfrac1x=k $ for some real $k $, then $x^2+\\dfrac1{x^2}=k^2-2$.",
+      "Bei $z=2$, sowohl $z^{-1}+z^{-2}$ und $\\dfrac{1}{z+z^2}$ gleich $\\dfrac{3}{4}$.",
+      "Auf der angegebenen Definitionsmenge $x\\ge5$, der Hauptwurzelausdruck $\\sqrt{(x-5)^2}$ vereinfacht sich zu $x-5$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nAbsolutbetrag equals the signed difference only when that difference is nonnegative.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\n|u-v|\n$$\n\n$$\n|u-v|=u-v\n$$\n\n$$\n|u-v|=u-v\\Longleftrightarrow u-v\\ge0\\Longleftrightarrow u\\ge v\n$$\n\nPositivity $u>0$ and $v>0$ alone does not force $u\\ge v$. Gegenbeispiel $u=1$, $v=2$:\n\n$$\n|1-2|=1\\neq-1\n$$\n\n$$\n1-2\n$$\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nMultipliziere aus $(a+b)^{3}$und neu anordnen, um die Summe von Kuben in Bezug auf$s=a+b$ and $p=ab$.\n\n$$\na+b\n$$\n\n$$\na+b=s\n$$\n\n$$\nab\n$$\n\n$$\nab=p\n$$\n\n$$\ns\n$$\n\n$$\np\n$$\n\n$$\na^3+b^3\n$$\n\n$$\na^3+b^3=s^3-3ps\n$$\n\nExpand:\n\n$$\n(a+b)^{3}=a^{3}+b^{3}+3ab(a+b)\n$$\n\nTherefore\n\n$$\na^{3}+b^{3}=(a+b)^{3}-3ab(a+b)\n$$\n\nSetze $s$ and $p$:\n\n$$\na^{3}+b^{3}=s^{3}-3ps\n$$\n\nDas ist die Behauptunged-Formel.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nQuadriere die gegebene Kehrwertsummen-Identität und ziehe den Kreuzterm ab$2$.\n\n$$\nx\\neq0\n$$\n\n$$\nx+\\dfrac1x\n$$\n\n$$\nx+\\dfrac1x=k\n$$\n\n$$\nk\n$$\n\n$$\nx^2+\\dfrac1{x^2}\n$$\n\n$$\nx^2+\\dfrac1{x^2}=k^2-2\n$$\n\nGiven $x+\\dfrac{1}{x}=k$zusammen mit$x\\neq0$:\n\n$$\n\\left(x+\\dfrac{1}{x}\\right)^2=x^2+2+\\dfrac{1}{x^2}\n$$\n\n$$\nk^2=x^2+\\dfrac{1}{x^2}+2\n$$\n\nRearrange:\n\n$$\nx^2+\\dfrac{1}{x^2}=k^2-2\n$$\n\nDas ist genau die Behauptunged-Formel.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nKombinieren die linke Seite über einen gemeinsamen Nenner und vergleiche mit der rechten.\n\n$$\nz^{-1}+z^{-2}=\\dfrac{1}{z}+\\dfrac{1}{z^2}\n$$\n\n$$\n\\dfrac{z+1}{z^2}\n$$\n\nDie Behauptung writes $\\dfrac{1}{z+z^2}=\\dfrac{1}{z(1+z)}$. Für $z=1$:\n\n$$\n\\dfrac{1+1}{1}=2\\neq\\dfrac{1}{1+1}\n$$\n\n$$\n\\dfrac12\n$$\n\nThe sides disagree.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Left$1/2+1/4=3/4$, right $1/(2+4)=1/6$; they disagree.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nAuf die Behauptunged-Halblinie hebt die Hauptquadratwurzel das Quadrat ohne Absolutwert-Knick auf.\n\n$$\nx\\ge5\n$$\n\n$$\n\\sqrt{(x-5)^2}\n$$\n\n$$\nx-5\n$$\n\nAuf $x\\ge5$die Menge;$x-5$ist nicht negativ, so dass die Hauptquadratwurzel den Absolutbetrag fallen lässt.\n\n$$\n\\sqrt{(x-5)^2}=|x-5|\n$$\n\n$$\n|x-5|=x-5\n$$\n\n$$\n(x\\ge5)\n$$\n\nAlso $\\sqrt{(x-5)^{2}}=x-5$auf die angegebene Definitionsmenge.\n\nDie Aussage ist richtig."
+      "**A.** → Falsch\n\n$|u-v|=u-v$ gilt nur für $u\\ge v$; Positivität allein erzwingt das nicht.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\n|u-v|\n$$\n\n$$\n|u-v|=u-v\n$$\n\n$$\n|u-v|=u-v\\Longleftrightarrow u-v\\ge0\\Longleftrightarrow u\\ge v\n$$\n\n$$\n|1-2|=1\\neq-1\n$$\n\n$$\n1-2\n$$\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nAus $(a+b)^3$ folgt $a^3+b^3=s^3-3ps$.\n\n$$\na+b\n$$\n\n$$\na+b=s\n$$\n\n$$\nab\n$$\n\n$$\nab=p\n$$\n\n$$\ns\n$$\n\n$$\np\n$$\n\n$$\na^3+b^3\n$$\n\n$$\na^3+b^3=s^3-3ps\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nQuadrieren von $x+1/x=k$ und Abziehen von $2$ liefert die behauptete Formel.\n\n$$\nx\\neq0\n$$\n\n$$\nx+\\dfrac1x\n$$\n\n$$\nx+\\dfrac1x=k\n$$\n\n$$\nk\n$$\n\n$$\nx^2+\\dfrac1{x^2}\n$$\n\n$$\nx^2+\\dfrac1{x^2}=k^2-2\n$$\n\n$$\n\\left(x+\\dfrac{1}{x}\\right)^2=x^2+2+\\dfrac{1}{x^2}\n$$\n\n$$\nk^2=x^2+\\dfrac{1}{x^2}+2\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGemeinsamer Nenner zeigt: die Seiten sind bei $z=2$ nicht beide $3/4$.\n\n$$\nz^{-1}+z^{-2}=\\dfrac{1}{z}+\\dfrac{1}{z^2}\n$$\n\n$$\n\\dfrac{z+1}{z^2}\n$$\n\n$$\n\\dfrac{1+1}{1}=2\\neq\\dfrac{1}{1+1}\n$$\n\n$$\n\\dfrac12\n$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nAuf $x\\ge5$ ist $x-5\\ge0$, also $\\sqrt{(x-5)^2}=x-5$.\n\n$$\nx\\ge5\n$$\n\n$$\n\\sqrt{(x-5)^2}\n$$\n\n$$\nx-5\n$$\n\n$$\n\\sqrt{(x-5)^2}=|x-5|\n$$\n\n$$\n|x-5|=x-5\n$$\n\n$$\n(x\\ge5)\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2663,18 +2663,18 @@
     "title": "Klausuraufgaben – 5",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Wenn $a+b+c=0$dann$a^2+b^2+c^2=-2(ab+bc+ca)$.",
-      "The Lösungsmenge of the equation$\\dfrac{1}{x-1}=\\dfrac{2}{x+1}$ is $\\{3\\}$.",
-      "Für $p>0$and every positive ganze Zahl$n$, es gilt, dass$\\left(p^{1/n}\\right)^n=p$.",
-      "Bei $x=-3$, both$|x|$ and $3$zustimmen, und$|x|\\ge 0$.",
+      "Wenn $a+b+c=0$, then $a^2+b^2+c^2=-2(ab+bc+ca)$.",
+      "Die Lösungsmenge der Gleichung $\\dfrac{1}{x-1}=\\dfrac{2}{x+1}$ is $\\{3\\}$.",
+      "Für $p>0$ und every positive integer $n $, gilt $\\left(p^{1/n}\\right)^n=p $.",
+      "Bei $x=-3$, sowohl $|x|$ als auch $3$ überein, und $|x|\\ge 0$.",
       "Bei $b=1/2$, $b^3\\ge b^2$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nQuadriere the linear relation$a+b+c=0$and rearrange the mixed products.\n\n$$\na+b+c\n$$\n\n$$\na+b+c=0\n$$\n\n$$\na^2+b^2+c^2\n$$\n\n$$\na^2+b^2+c^2=-2(ab+bc+ca)\n$$\n\nQuadriere beidseitig:\n\n$$\n(a+b+c)^{2}=0\n$$\n\nExpand:\n\n$$\na^{2}+b^{2}+c^{2}+2(ab+bc+ca)=0\n$$\n\nIsolate the sum of squares:\n\n$$\na^{2}+b^{2}+c^{2}=-2(ab+bc+ca)\n$$\n\nThat is die Behauptunged identity.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nLöschen die Bruchgleichung auf der Domäne$x\\ne\\pm1$, then check the candidate.\n\nAngenommen$x\\ne1$ and $x\\ne-1$:\n\n$$\n\\dfrac{1}{x-1}=\\dfrac{2}{x+1}\n$$\n\nÜberkreuz multiplizieren:\n\n$$\nx+1=2(x-1)\n$$\n\n$$\nx+1=2x-2\n$$\n\n$$\n3=x\n$$\n\nWert$x=3$ avoids $\\pm1$. Die Substitution bestätigt, dass beide Seiten gleich sind$\\dfrac{1}{2}$. The Lösungsmenge is$\\{3\\}$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nFür $p>0$the principal$n$die Wurzel ist definiert als die eindeutige positive Zahl, deren$n$th power is$p$.\n\n$$\np>0\n$$\n\n$$\nn\n$$\n\n$$\n\\left(p^{1/n}\\right)^n\n$$\n\n$$\n\\left(p^{1/n}\\right)^n=p\n$$\n\nNach dieser Definition für jede positive ganze Zahl$n$:\n\nPrüfe einen numerischen Zeugen mit$p=16$ and $n=2$:\n\n$$\n\\bigl(16^{1/2}\\bigr)^2=4^2\n$$\n\n$$\n16\n$$\n\nThe identity recovers$p$, passende die Behauptung für jede positive ganze Zahl$n$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nAbsolutbetrag splits at the kink where the inside vanishes, here at$x=3$.\n\n$$\nx\n$$\n\n$$\nx=-3\n$$\n\n$$\n|x|\n$$\n\n$$\n3\n$$\n\n$$\n|x|\\ge 0\n$$\n\nAuf the right half-line$x\\ge3$ one has $x-3\\ge0$, so\n\n$$\n|x-3|=x-3\n$$\n\nAuf the left half-line$x<3$ one has $x-3<0$, so\n\n$$\n|x-3|=-(x-3)\n$$\n\n$$\n3-x\n$$\n\nNumeric check at $x=1$: $|1-3|=2=3-1$. Bei $x=5$: $|5-3|=2=5-3$. The piecewise form stimmt mit der Behauptung überein.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Setze$x=-3$: $|-3|=3\\ge 0$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nCompare $b^3$ and $b^2$durch Factoring, dann testen Sie einen negativen Zeugen.\n\n$$\nb\n$$\n\n$$\nb=1/2\n$$\n\n$$\nb^3\\ge b^2\n$$\n\nFaktorisiere die Differenz:\n\n$$\nb^3-b^2=b^2(b-1)\n$$\n\nBei dem negativen Testpunkt$b=-1$:\n\n$$\n(-1)^3=-1\n$$\n\n$$\n(-1)^2=1\n$$\n\nDa $-1\\ngeqslant1$, die Ungleichheit$b^3\\ge b^2$scheitert. Die Behauptung gilt nicht für jede reale$b$.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. $(1/2)^3=1/8\\not\\ge1/4$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nQuadriere $a+b+c=0$ und stelle nach der Quadratsumme um.\n\n$$\na+b+c\n$$\n\n$$\na+b+c=0\n$$\n\n$$\na^2+b^2+c^2\n$$\n\n$$\na^2+b^2+c^2=-2(ab+bc+ca)\n$$\n\n$$\n(a+b+c)^{2}=0\n$$\n\n$$\na^{2}+b^{2}+c^{2}+2(ab+bc+ca)=0\n$$\n\n$$\na^{2}+b^{2}+c^{2}=-2(ab+bc+ca)\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nÜberkreuzmultiplikation auf $x\\ne\\pm1$ liefert den Kandidaten $x=3$.\n\n$$\n\\dfrac{1}{x-1}=\\dfrac{2}{x+1}\n$$\n\n$$\nx+1=2(x-1)\n$$\n\n$$\nx+1=2x-2\n$$\n\n$$\n3=x\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie $n$-te Hauptwurzel ist so definiert, dass ihre $n$-te Potenz $p$ zurückgibt.\n\n$$\np>0\n$$\n\n$$\nn\n$$\n\n$$\n\\left(p^{1/n}\\right)^n\n$$\n\n$$\n\\left(p^{1/n}\\right)^n=p\n$$\n\n$$\n\\bigl(16^{1/2}\\bigr)^2=4^2\n$$\n\n$$\n16\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nBei $x=-3$ gilt $|x|=3\\ge0$; beide Seiten stimmen überein.\n\n$$\nx=-3\n$$\n\n$$\n|x|=|-3|=3\n$$\n\n$$\n|x|\\ge 0\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $b=1/2$ ist $b^3=1/8\\not\\ge 1/4=b^2$.\n\n$$\nb\n$$\n\n$$\nb=1/2\n$$\n\n$$\nb^3\\ge b^2\n$$\n\n$$\nb^3-b^2=b^2(b-1)\n$$\n\n$$\n(-1)^3=-1\n$$\n\n$$\n(-1)^2=1\n$$\n\nDie Aussage ist falsch."
     ],
     "solution_overview": ""
   },
@@ -2682,18 +2682,18 @@
     "title": "Klausuraufgaben – 6",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Wenn $abc\\neq0$ and $ab+bc+ca=0$dann$\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
-      "Für $s>0$, es gilt, dass$\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
-      "Bei $v=0$, $|v-1|=1<2$ and $0\\in(-1,3)$; at $v=4$, $|4-1|=3\\nless 2$.",
-      "Wenn $s+t=u$dann$s^3+t^3+3stu=u^3$.",
-      "Für $z>1$, es gilt, dass$\\dfrac{z+1}{z-1}>1$."
+      "Wenn $abc\\neq0$ und $ab+bc+ca=0$, then $\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
+      "Für $s>0$, gilt $\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
+      "Bei $v=0$, $|v-1|=1<2$ und $0\\in(-1,3)$; at $v=4$, $|4-1|=3\\nless 2$.",
+      "Wenn $s+t=u $, then $s^3+t^3+3stu=u^3$.",
+      "Für $z>1$, gilt $\\dfrac{z+1}{z-1}>1$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nWrite the sum of reciprocals over the common denominator$abc$, then use$ab+bc+ca=0$.\n\nZusammenfassen:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}\n$$\n\nThe numerator is exactly$ab+bc+ca$die durch Hypothese verschwindet, und$abc\\ne0$.\n\nAuch die Summe der Kehrwerte beträgt$0$.\n\n$$\nabc\\neq0\n$$\n\n$$\nab+bc+ca=0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b+\\dfrac1c=0\n$$\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nSchreibe um den Radikanden als Quadrat, dann vergleiche mit die Behauptunged rechte Seite.\n\nFür $s>0$:\n\n$$\ns+\\dfrac{1}{s}-2=\\left(\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right)^2\n$$\n\n$$\n\\sqrt{s+\\dfrac{1}{s}-2}=\\left|\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right|\n$$\n\nDie Behauptung writes $\\sqrt{s}+\\dfrac{1}{\\sqrt{s}}$, which is strictly larger whenever$s\\neq1$. Bei $s=4$:\n\n$$\n\\left|2-\\tfrac12\\right|=\\tfrac32\\neq2+\\tfrac12\n$$\n\n$$\n\\tfrac52\n$$\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nA strict absolute-value inequality $|v-c|<r$describes the open interval of radius$r$ about $c$.\n\n$$\nv\n$$\n\n$$\nv=0\n$$\n\n$$\n|v-1|\n$$\n\n$$\n|v-1|=1<2\n$$\n\n$$\n0\\in(-1,3)\n$$\n\n$$\nv\n$$\n\n$$\nv=4\n$$\n\n$$\n|4-1|\n$$\n\n$$\n|4-1|=3\\nless 2\n$$\n\nUnfold about the center$1$:\n\n$$\n|v-1|<2\\Longleftrightarrow-2<v-1<2\n$$\n\nAdd $1$through the chain:\n\n$$\n-1<v<3\n$$\n\nThat matches die Behauptunged open interval exactly. Numeric check: at$v=0$, $|0-1|=1<2$; at $v=4$, $|4-1|=3\\nless2$.\n\nKonkrete Prüfung der umgeschriebenen Behauptung.$(-1,3)$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nMultipliziere aus $(s+t)^{3}$und identifizieren Sie die Summe mit dem dritten Buchstaben$u$.\n\nCube the sum:\n\n$$\n(s+t)^{3}=s^{3}+3s^{2}t+3st^{2}+t^{3}\n$$\n\n$$\n(s+t)^{3}=s^{3}+t^{3}+3st(s+t)\n$$\n\nReplace $s+t$ by $u$:\n\n$$\nu^{3}=s^{3}+t^{3}+3stu\n$$\n\nRearrange:\n\n$$\ns^{3}+t^{3}+3stu=u^{3}.\n$$\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nCompare the fraction with$1$by subtracting on the domain$z>1$.\n\n$$\nz>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}-1=\\dfrac{(z+1)-(z-1)}{z-1}\n$$\n\n$$\n\\dfrac{2}{z-1}\n$$\n\nFür $z>1$der Nenner positiv ist, also$\\dfrac{2}{z-1}>0$, hence $\\dfrac{z+1}{z-1}>1$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDie Kehrwertsumme hat Zähler $ab+bc+ca=0$ und Nenner $abc\\neq0$.\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}\n$$\n\n$$\nabc\\neq0\n$$\n\n$$\nab+bc+ca=0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b+\\dfrac1c=0\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nDer Radikand ist $(\\sqrt s-1/\\sqrt s)^2$; die Wurzel ist der Absolutbetrag, nicht die Summe.\n\n$$\ns+\\dfrac{1}{s}-2=\\left(\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right)^2\n$$\n\n$$\n\\sqrt{s+\\dfrac{1}{s}-2}=\\left|\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right|\n$$\n\n$$\n\\left|2-\\tfrac12\\right|=\\tfrac32\\neq2+\\tfrac12\n$$\n\n$$\n\\tfrac52\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$|v-1|<2$ beschreibt das offene Intervall $(-1,3)$; die Testpunkte passen.\n\n$$\nv\n$$\n\n$$\nv=0\n$$\n\n$$\n|v-1|\n$$\n\n$$\n|v-1|=1<2\n$$\n\n$$\n0\\in(-1,3)\n$$\n\n$$\nv\n$$\n\n$$\nv=4\n$$\n\n$$\n|4-1|\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nAus $(s+t)^3$ mit $s+t=u$ folgt $s^3+t^3+3stu=u^3$.\n\n$$\n(s+t)^{3}=s^{3}+3s^{2}t+3st^{2}+t^{3}\n$$\n\n$$\n(s+t)^{3}=s^{3}+t^{3}+3st(s+t)\n$$\n\n$$\nu^{3}=s^{3}+t^{3}+3stu\n$$\n\n$$\ns^{3}+t^{3}+3stu=u^{3}.\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nFür $z>1$ ist $\\dfrac{z+1}{z-1}-1=\\dfrac{2}{z-1}>0$.\n\n$$\nz>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}-1=\\dfrac{(z+1)-(z-1)}{z-1}\n$$\n\n$$\n\\dfrac{2}{z-1}\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2701,18 +2701,18 @@
     "title": "Klausuraufgaben – 7",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für von null verschiedene $a$ and $b$zusammen mit$a+b\\neq0$, es gilt, dass$\\dfrac{a^{-1}-b^{-1}}{a^{-1}+b^{-1}}=\\dfrac{b-a}{b+a}$.",
+      "Für von null verschiedene $a $ und $b $ with $a+b\\neq0$, gilt $\\dfrac{a^{-1}-b^{-1}}{a^{-1}+b^{-1}}=\\dfrac{b-a}{b+a}$.",
       "Bei $x=10$, $\\dfrac{|x|}{1+|x|}=\\dfrac{10}{11}<1$.",
-      "Wenn $u+v+w=0$dann$u^3+v^3+w^3=0$.",
-      "Bei $x=1$, beidseits der$\\dfrac{x^2-1}{x-1}=x+1$are defined and equal.",
-      "Für $a>0$ and $b>0$, es gilt, dass$\\sqrt{a+b}<\\sqrt a+\\sqrt b$."
+      "Wenn $u+v+w=0$, then $u^3+v^3+w^3=0$.",
+      "Bei $x=1$, beide Seiten von $\\dfrac{x^2-1}{x-1}=x+1$ sind definiert und gleich.",
+      "Für $a>0$ und $b>0$, gilt $\\sqrt{a+b}<\\sqrt a+\\sqrt b $."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSchreibe um jede negative Potenz als Kehrwert und lösche den zusammengesetzten Anteil.\n\n$$\n\\dfrac{a^{-1}-b^{-1}}{a^{-1}+b^{-1}}=\\left(\\dfrac{1}{a}-\\dfrac{1}{b}\\right)\\div\\left(\\dfrac{1}{a}+\\dfrac{1}{b}\\right)=\\dfrac{b-a}{ab}\\cdot\\dfrac{ab}{b+a}=\\dfrac{b-a}{a+b}\n$$\n\nKürze $ab$(ungleich Null) im obigen Produkt zu erreichen:\n\n$$\n\\dfrac{b-a}{a+b}\n$$\n\n$$\n\\dfrac{-(a-b)}{a+b}\n$$\n\nwhich matches die Behauptunged form.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nVergleichen die nichtnegative Menge$|x|$with the strictly larger denominator$1+|x|$.\n\n$$\nx\n$$\n\n$$\nx=10\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}=\\dfrac{10}{11}<1\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}<1\\Longleftrightarrow|x|<1+|x|\n$$\n\nund ist äquivalent zu$0<1$sicherlich nicht.\n\nDer begrenzte Ausdruck ist also strikt kleiner als$1$Für jede $x$.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. The fraction is always strictly below$1$für endliche$x$.\n\n$$\nx=10\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}=\\dfrac{10}{11}<1\n$$\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nUnter $u+v+w=0$ one has $u^{3}+v^{3}+w^{3}=3uvw$, not necessarily $0$.\n\n$$\nu+v+w\n$$\n\n$$\nu+v+w=0\n$$\n\n$$\nu^3+v^3+w^3\n$$\n\n$$\nu^3+v^3+w^3=0\n$$\n\nIdentity:\n\n$$\nu^3+v^3+w^3-3uvw=(u+v+w)(u^2+v^2+w^2-uv-vw-wu)\n$$\n\nMit $u+v+w=0$dies zwingt$u^{3}+v^{3}+w^{3}=3uvw$.\n\nGegenbeispiel $u=1,v=1,w=-2$: sum zero but $1+1-8=-6\\ne0$.\n\n$$\nu+v+w=0\n$$\n\n$$\nu^3+v^3+w^3=0\n$$\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nFaktorisiere den Zähler als Differenz von Quadraten und kürze auf der angegebenen Definitionsmenge.\n\n$$\n\\dfrac{x^2-1}{x-1}\n$$\n\n$$\n\\dfrac{x^2-1^2}{x-1}\n$$\n\n$$\n\\dfrac{(x-1)(x+1)}{x-1}\n$$\n\n$$\nx+1\n$$\n\nThe reduced form stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nQuadriere beide positiven Seiten nach der Feststellung$\\sqrt{a}+\\sqrt{b}>\\sqrt{a+b}$ist gleichbedeutend mit einem positiven Kreuzterm.\n\n$$\na>0\n$$\n\n$$\nb>0\n$$\n\n$$\n\\sqrt{a+b}<\\sqrt a+\\sqrt b\n$$\n\nFür $a>0$, $b>0$:\n\n$$\n(\\sqrt{a}+\\sqrt{b})^2=a+b+2\\sqrt{ab}>a+b\n$$\n\n$$\n(\\sqrt{a+b})^2\n$$\n\nDa both square roots are positive,\n\n$$\n\\sqrt{a}+\\sqrt{b}>\\sqrt{a+b}\n$$\n\nwhich rearranges to die Behauptunged strict inequality$\\sqrt{a+b}<\\sqrt{a}+\\sqrt{b}$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nSchreibe negative Potenzen als Kehrwerte und kürze den Doppelbruch.\n\n$$\n\\dfrac{a^{-1}-b^{-1}}{a^{-1}+b^{-1}}=\\left(\\dfrac{1}{a}-\\dfrac{1}{b}\\right)\\div\\left(\\dfrac{1}{a}+\\dfrac{1}{b}\\right)=\\dfrac{b-a}{ab}\\cdot\\dfrac{ab}{b+a}=\\dfrac{b-a}{a+b}\n$$\n\n$$\n\\dfrac{b-a}{a+b}\n$$\n\n$$\n\\dfrac{-(a-b)}{a+b}\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$|x|<1+|x|$ gilt stets; der Bruch ist streng kleiner als $1$.\n\n$$\nx\n$$\n\n$$\nx=10\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}=\\dfrac{10}{11}<1\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}<1\\Longleftrightarrow|x|<1+|x|\n$$\n\n$$\nx=10\n$$\n\n$$\n\\dfrac{|x|}{1+|x|}=\\dfrac{10}{11}<1\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nUnter $u+v+w=0$ gilt $u^3+v^3+w^3=3uvw$, nicht notwendig $0$.\n\n$$\nu+v+w\n$$\n\n$$\nu+v+w=0\n$$\n\n$$\nu^3+v^3+w^3\n$$\n\n$$\nu^3+v^3+w^3=0\n$$\n\n$$\nu^3+v^3+w^3-3uvw=(u+v+w)(u^2+v^2+w^2-uv-vw-wu)\n$$\n\n$$\nu+v+w=0\n$$\n\n$$\nu^3+v^3+w^3=0\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nBei $x=1$ ist die linke Seite nicht definiert; Kürzen gilt nur für $x\\neq1$.\n\n$$\n\\dfrac{x^2-1}{x-1}\n$$\n\n$$\n\\dfrac{x^2-1^2}{x-1}\n$$\n\n$$\n\\dfrac{(x-1)(x+1)}{x-1}\n$$\n\n$$\nx+1\n$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nQuadrieren liefert den positiven Mischterm $2\\sqrt{ab}$; die strikte Ungleichung folgt.\n\n$$\na>0\n$$\n\n$$\nb>0\n$$\n\n$$\n\\sqrt{a+b}<\\sqrt a+\\sqrt b\n$$\n\n$$\n(\\sqrt{a}+\\sqrt{b})^2=a+b+2\\sqrt{ab}>a+b\n$$\n\n$$\n(\\sqrt{a+b})^2\n$$\n\n$$\n\\sqrt{a}+\\sqrt{b}>\\sqrt{a+b}\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2720,18 +2720,18 @@
     "title": "Klausuraufgaben – 8",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für reelle Zahlen $a$ and $b$, the identity$|a+b|=|a|+|b|$hält, wenn und nur wenn$ab\\ge0$.",
-      "Wenn die Gleichung$ax^2+bx+c=0$zusammen mit$a\\neq0$keine reelle Lösung hat, dann$b^2>4ac$.",
-      "Wenn $x$, $y$, and $z$ungleich Null sind und$\\dfrac xy=\\dfrac yz$dann$y^2=xz$.",
-      "Für $p>0$zusammen mit$p\\neq1$, es gilt, dass$\\dfrac{1}{\\sqrt p-1}=\\dfrac{\\sqrt p+1}{p-1}$.",
-      "Für alle reellen $x$, the difference$|x+1|-|x-1|$ remains between $-2$ and $2$, inclusive."
+      "Für reelle Zahlen $a $ und $b $, die Identität $|a+b|=|a|+|b|$ holds if und only if $ab\\ge0$.",
+      "Wenn die Gleichung $ax^2+bx+c=0$ with $a\\neq0$ hat keine reelle Lösung, then $b^2>4ac $.",
+      "Wenn $x $, $y $, und $z $ are nonzero und $\\dfrac xy=\\dfrac yz $, then $y^2=xz $.",
+      "Für $p>0$ with $p\\neq1$, gilt $\\dfrac{1}{\\sqrt p-1}=\\dfrac{\\sqrt p+1}{p-1}$.",
+      "Für alle reellen $x $, die Differenz $|x+1|-|x-1|$ bleibt zwischen $-2$ und $2$, einschließlich."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nThe triangle equality$|a+b|=|a|+|b|$holds precisely when$a$ and $b$ do not have opposite signs.\n\n$$\na\n$$\n\n$$\nb\n$$\n\n$$\n|a+b|\n$$\n\n$$\n|a+b|=|a|+|b|\n$$\n\n$$\nab\\ge0\n$$\n\nWenn $ab\\ge 0$dann$a$ and $b$beide nicht negativ oder beide nicht positiv sind und\n\nWenn$ab<0$, the vectors cancel partly, so the strict inequality holds:\n\n$$\n|a+b|<|a|+|b|\n$$\n\nExample: $a=2$, $b=-3$ gives $|-1|=1<2+3=5$. Somit equality holds if and only if$ab\\ge 0$.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nKeine wirkliche Wurzel für eine quadratische$ax^2+bx+c=0$zusammen mit$a\\neq0$means a negative discriminant.\n\nThe discriminant is$b^2-4ac$. No reelle Lösung means\n\n$$\nb^2-4ac<0\\Longleftrightarrow b^2<4ac\n$$\n\nDie Behauptung asserts $b^2>4ac$, which is the opposite (two distinct real roots).\n\n$$\nax^2+bx+c=0\n$$\n\n$$\na\\neq0\n$$\n\n$$\nb^2>4ac\n$$\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nClear a proportion by cross-multiplying when every letter is nonzero.\n\n$$\nx\n$$\n\n$$\ny\n$$\n\n$$\nz\n$$\n\n$$\n\\dfrac xy\n$$\n\n$$\n\\dfrac xy=\\dfrac yz\n$$\n\n$$\ny^2\n$$\n\n$$\ny^2=xz\n$$\n\nStart from the given ratio equality:\n\n$$\n\\dfrac{x}{y}=\\dfrac{y}{z}\n$$\n\nCross-multiply (valid since $y\\neq0$ and $z\\neq0$):\n\n$$\nxz=y\\cdot y\n$$\n\n$$\nxz=y^2\n$$\n\nwhich rearranges to$y^2=xz$. Die Behauptung is exactly this cross-product identity.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nRationalize a denominator of the form$\\sqrt{p}-1$durch Multiplikation mit dem Konjugat$\\sqrt{p}+1$.\n\nAuf der Definitionsmenge$p>0$, $p\\neq1$:\n\n$$\n\\dfrac{1}{\\sqrt{p}-1}\\cdot\\dfrac{\\sqrt{p}+1}{\\sqrt{p}+1}=\\dfrac{\\sqrt{p}+1}{p-1}\n$$\n\nPrüfe with$p=4$:\n\n$$\n\\dfrac{1}{2-1}=1,\n$$\n\n$$\n\\dfrac{2+1}{4-1}\n$$\n\n$$\n1\n$$\n\nThe two sides agree, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nSplit at the kinks$x=-1$ and $x=1$, dann bewerten$|x+1|-|x-1|$ on each interval.\n\nFür $x\\ge 1$:\n\n$$\n|x+1|-|x-1|=(x+1)-(x-1)\n$$\n\n$$\n2\n$$\n\nFür $-1\\le x\\le 1$:\n\n$$\n|x+1|-|x-1|=(x+1)-(1-x)\n$$\n\n$$\n2x\n$$\n\nand $-2\\le 2x\\le 2$.\n\nFür $x\\le -1$:\n\n$$\n|x+1|-|x-1|=-(x+1)-(1-x)\n$$\n\n$$\n-2\n$$\n\nIn every case the difference lies in$[-2,2]$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$|a+b|=|a|+|b|$ gilt genau bei nicht entgegengesetzten Vorzeichen, äquivalent zu $ab\\ge0$.\n\n$$\na\n$$\n\n$$\nb\n$$\n\n$$\n|a+b|\n$$\n\n$$\n|a+b|=|a|+|b|\n$$\n\n$$\nab\\ge0\n$$\n\n$$\n|a+b|<|a|+|b|\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nKeine reelle Wurzel bedeutet negative Diskriminante $b^2-4ac<0$, nicht $b^2>4ac$.\n\n$$\nb^2-4ac<0\\Longleftrightarrow b^2<4ac\n$$\n\n$$\nax^2+bx+c=0\n$$\n\n$$\na\\neq0\n$$\n\n$$\nb^2>4ac\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜberkreuzmultiplikation der Proportion liefert $y^2=xz$.\n\n$$\nx\n$$\n\n$$\ny\n$$\n\n$$\nz\n$$\n\n$$\n\\dfrac xy\n$$\n\n$$\n\\dfrac xy=\\dfrac yz\n$$\n\n$$\ny^2\n$$\n\n$$\ny^2=xz\n$$\n\n$$\n\\dfrac{x}{y}=\\dfrac{y}{z}\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nErweitere mit $\\sqrt p+1$ und erhalte die rationalisierte Form.\n\n$$\n\\dfrac{1}{\\sqrt{p}-1}\\cdot\\dfrac{\\sqrt{p}+1}{\\sqrt{p}+1}=\\dfrac{\\sqrt{p}+1}{p-1}\n$$\n\n$$\n\\dfrac{1}{2-1}=1,\n$$\n\n$$\n\\dfrac{2+1}{4-1}\n$$\n\n$$\n1\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nStückweise Auswertung zeigt: die Differenz liegt stets in $[-2,2]$.\n\n$$\n|x+1|-|x-1|=(x+1)-(x-1)\n$$\n\n$$\n2\n$$\n\n$$\n|x+1|-|x-1|=(x+1)-(1-x)\n$$\n\n$$\n2x\n$$\n\n$$\n|x+1|-|x-1|=-(x+1)-(1-x)\n$$\n\n$$\n-2\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2739,18 +2739,18 @@
     "title": "Klausuraufgaben – 9",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für $u>0$ and $v>0$, es gilt, dass$\\left(u^2v\\right)^3=u^6v^3$.",
-      "Wenn $a+b+c=0$ and $abc\\neq0$dann$\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=0$.",
-      "Für $x\\ge0$, es gilt, dass$\\sqrt x+\\sqrt{x+2\\sqrt x+1}=2\\sqrt x+1$.",
-      "Für real $x$, die Ungleichheit$|2x-1|<3$is equivalent to the open interval$-1<x<2$.",
-      "Für every positive ganze Zahl $n$, the polynomial$u^n-1$ist teilbar durch$u-1$."
+      "Für $u>0$ und $v>0$, gilt $\\left(u^2v\\right)^3=u^6v^3$.",
+      "Wenn $a+b+c=0$ und $abc\\neq0$, then $\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=0$.",
+      "Für $x\\ge0$, gilt $\\sqrt x+\\sqrt{x+2\\sqrt x+1}=2\\sqrt x+1$.",
+      "Für reelle $x $, the inequality $|2x-1|<3$ is equivalent to the open interval $-1<x<2$.",
+      "Für jede positive ganze Zahl $n $, the polynomial $u^n-1$ ist teilbar durch $u-1$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDistribute an outer exponent across a product, then multiply exponents on matching bases.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\n\\left(u^2v\\right)^3\n$$\n\n$$\n\\left(u^2v\\right)^3=u^6v^3\n$$\n\nStart from $(u^{2}v)^{3}$zusammen mit$u,v>0$:\n\n$$\n(u^{2}v)^{3}=(u^{2})^{3}\\,v^{3}\n$$\n\n$$\nu^{6}v^{3}\n$$\n\nDie Exponenten auf$u$ multiply as $2\\cdot3=6$, and the factor$v$ contributes $v^{3}$. That stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nClear a common denominator and use the stem hypothesis that the sum of the variables is zero.\n\n$$\na+b+c\n$$\n\n$$\na+b+c=0\n$$\n\n$$\nabc\\neq0\n$$\n\n$$\n\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}\n$$\n\n$$\n\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=0\n$$\n\nWrite each term with denominator$abc$ after using $a+b+c=0$.\n\n$$\n\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=\\dfrac{c+a+b}{abc}\n$$\n\n$$\n\\dfrac{a+b+c}{abc}\n$$\n\nThe numerator vanishes by hypothesis, so the sum is$0$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nVervollständige das Quadrat unter dem Radikal, bevor du die Hauptquadratwurzel nimmst.\n\n$$\nx\\ge0\n$$\n\n$$\n\\sqrt x+\\sqrt{x+2\\sqrt x+1}\n$$\n\n$$\n\\sqrt x+\\sqrt{x+2\\sqrt x+1}=2\\sqrt x+1\n$$\n\nRecognize $\\sqrt{x+2\\sqrt{x}+1}$als perfektes Quadrat für$x\\ge0$.\n\n$$\nx+2\\sqrt{x}+1=(\\sqrt{x}+1)^2\n$$\n\n$$\n\\sqrt{x+2\\sqrt{x}+1}=\\sqrt{x}+1\n$$\n\nAdd $\\sqrt{x}$:\n\n$$\n\\sqrt{x}+\\sqrt{x+2\\sqrt{x}+1}=2\\sqrt{x}+1.\n$$\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nSchreibe um die Betragsungleichung als zweiseitige lineare Ungleichung, dann löse auf.\n\n$$\nx\n$$\n\n$$\n|2x-1|<3\n$$\n\n$$\n-1<x<2\n$$\n\nUnfold:\n\n$$\n|2x-1|<3\\Longleftrightarrow-3<2x-1<3\n$$\n\nAdd $1$:\n\n$$\n-2<2x<4\n$$\n\nDivide by $2$:\n\n$$\n-1<x<2\n$$\n\nDas ist genau das Behauptunged open interval. Prüfe-Endpunkte sind ausgeschlossen: bei$x=-1$, $|-2-1|=3\\nless3$.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nThe difference-of-powers factorization (equivalently the factor theorem at$u=1$) shows $u-1$ divides $u^n-1$.\n\n$$\nn\n$$\n\n$$\nu^n-1\n$$\n\n$$\nu-1\n$$\n\nFür every positive ganze Zahl $n$:\n\n$$\nu^n-1=(u-1)\\bigl(u^{n-1}+u^{n-2}+\\cdots+u+1\\bigr)\n$$\n\nEvaluate at the root:$1^n-1=0$, also der Rest ist Null. Für$n=3$:\n\n$$\nu^3-1=(u-1)(u^2+u+1)\n$$\n\nAlso $u-1$ divides $u^n-1$for every positive ganze Zahl$n$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nPotenzregeln: äußerer Exponent verteilt sich; Exponenten gleicher Basen multiplizieren sich.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\n\\left(u^2v\\right)^3\n$$\n\n$$\n\\left(u^2v\\right)^3=u^6v^3\n$$\n\n$$\n(u^{2}v)^{3}=(u^{2})^{3}\\,v^{3}\n$$\n\n$$\nu^{6}v^{3}\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nGemeinsamer Nenner und $a+b+c=0$ erzwingen, dass die Kehrwertsumme verschwindet.\n\n$$\na+b+c\n$$\n\n$$\na+b+c=0\n$$\n\n$$\nabc\\neq0\n$$\n\n$$\n\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}\n$$\n\n$$\n\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=0\n$$\n\n$$\n\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=\\dfrac{c+a+b}{abc}\n$$\n\n$$\n\\dfrac{a+b+c}{abc}\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nVervollständige das Quadrat unter der Wurzel und ziehe die Hauptwurzel.\n\n$$\nx\\ge0\n$$\n\n$$\n\\sqrt x+\\sqrt{x+2\\sqrt x+1}\n$$\n\n$$\n\\sqrt x+\\sqrt{x+2\\sqrt x+1}=2\\sqrt x+1\n$$\n\n$$\nx+2\\sqrt{x}+1=(\\sqrt{x}+1)^2\n$$\n\n$$\n\\sqrt{x+2\\sqrt{x}+1}=\\sqrt{x}+1\n$$\n\n$$\n\\sqrt{x}+\\sqrt{x+2\\sqrt{x}+1}=2\\sqrt{x}+1.\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$|2x-1|<3$ ist äquivalent zu $-1<x<2$.\n\n$$\nx\n$$\n\n$$\n|2x-1|<3\n$$\n\n$$\n-1<x<2\n$$\n\n$$\n|2x-1|<3\\Longleftrightarrow-3<2x-1<3\n$$\n\n$$\n-2<2x<4\n$$\n\n$$\n-1<x<2\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nNach dem Faktorsatz teilt $u-1$ stets $u^n-1$.\n\n$$\nn\n$$\n\n$$\nu^n-1\n$$\n\n$$\nu-1\n$$\n\n$$\nu^n-1=(u-1)\\bigl(u^{n-1}+u^{n-2}+\\cdots+u+1\\bigr)\n$$\n\n$$\nu^3-1=(u-1)(u^2+u+1)\n$$\n\nDie Aussage ist richtig."
     ],
     "solution_overview": ""
   },
@@ -2758,24 +2758,24 @@
     "title": "Klausuraufgaben – 10",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für von null verschiedene $x$ and $y$, es gilt, dass$\\dfrac yx+\\dfrac xy=\\dfrac{x^2+y^2}{xy}$.",
-      "Bei $v=2$, both$\\sqrt{(v-2)^2}$ and $v-2$ equal a common value.",
-      "Bei $q=2$, both$|q|-|q-2|$ and $2$ equal a common value.",
-      "Wenn $a^2=ac$ and $a\\neq0$dann$a=c$.",
-      "Wenn $a+b=s$ and $ab=p$zusammen mit$p\\neq0$ and $s\\neq0$dann$\\dfrac1a+\\dfrac1b=\\dfrac ps$."
+      "Für von null verschiedene $x $ und $y $, gilt $\\dfrac yx+\\dfrac xy=\\dfrac{x^2+y^2}{xy}$.",
+      "Bei $v=2$, sowohl $\\sqrt{(v-2)^2}$ und $v-2$ gleich a common value.",
+      "Bei $q=2$, sowohl $|q|-|q-2|$ und $2$ gleich a common value.",
+      "Wenn $a^2=ac $ und $a\\neq0$, then $a=c $.",
+      "Wenn $a+b=s $ und $ab=p $ with $p\\neq0$ und $s\\neq0$, then $\\dfrac1a+\\dfrac1b=\\dfrac ps $."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nCombine the two reciprocal-style fractions over the common denominator$xy$.\n\n$$\nx\n$$\n\n$$\ny\n$$\n\n$$\n\\dfrac yx+\\dfrac xy\n$$\n\n$$\n\\dfrac yx+\\dfrac xy=\\dfrac{x^2+y^2}{xy}\n$$\n\nAuf der Definitionsmenge$xy\\neq0$:\n\n$$\n\\dfrac{y}{x}+\\dfrac{x}{y}=\\dfrac{y\\cdot y+x\\cdot x}{xy}\n$$\n\n$$\n\\dfrac{y^2+x^2}{xy}\n$$\n\n$$\n\\dfrac{x^2+y^2}{xy}\n$$\n\nPrüfe with$x=2$, $y=4$: left side $\\dfrac{4}{2}+\\dfrac{2}{4}=2+\\dfrac12=\\dfrac52$, right side $\\dfrac{4+16}{8}=\\dfrac{20}{8}=\\dfrac52$. The sides match.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDie Hauptquadratwurzel gibt einen nichtnegativen Wert zurück, so dass sie den Absolutbetrag und nicht den vorzeichenbehafteten linearen Ausdruck erzeugt.\n\n$$\n\\sqrt{(v-2)^2}=|v-2|\n$$\n\nBei $v=0$: $|0-2|=2\\neq-2=0-2$. The identity$\\sqrt{(v-2)^2}=v-2$fails for$v<2$.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Setze $v=2$; the two sides disagree.\n\n$$\nv=2\n$$\n\n$$\n\\sqrt{(v-2)^2}\n$$\n\n$$\nv-2\n$$\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nThe difference of Absolutbetrags$|q|-|q-2|$is not a constant; test a convenient real point.\n\n$$\nq\n$$\n\n$$\nq=2\n$$\n\n$$\n|q|-|q-2|\n$$\n\n$$\n2\n$$\n\nBei $q=0$:\n\n$$\n|0|-|0-2|=0-2\n$$\n\n$$\n-2\n$$\n\nCompare with die Behauptunged constant$2$:\n\n$$\n-2\\neq2\n$$\n\nDie Identität schlägt bereits fehl. Für Vollständigkeit, unter$q=3$: $|3|-|3-2|=3-1=2$, so dass der Wert gleich$2$only on part of the line, not for every real$q$.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Setze $q=2$; the two sides disagree.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nKürze a common nonzero factor after rearranging to a product equal to zero.\n\nVon$a^2=ac$zusammen mit$a\\neq0$:\n\n$$\na^2-ac=0\n$$\n\n$$\na(a-c)=0\n$$\n\nEin Produkt ist nur dann Null, wenn ein Faktor verschwindet. Da$a\\neq0$, necessarily\n\n$$\na-c=0\n$$\n\n$$\na=c\n$$\n\nNumeric check: if $a=5$ and $a^2=ac$dann$25=5c$ forces $c=5$. The implication holds.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nExpress the sum of reciprocals through the elementary symmetric data.\n\n$$\na+b\n$$\n\n$$\na+b=s\n$$\n\n$$\nab\n$$\n\n$$\nab=p\n$$\n\n$$\np\\neq0\n$$\n\n$$\ns\\neq0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac ps\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{s}{p}\n$$\n\nDie Behauptung writes $\\dfrac{p}{s}$. Mit $s\\neq0$ and $p\\neq0$, $\\dfrac{s}{p}\\neq\\dfrac{p}{s}$ in general (e.g. $s=5$, $p=6$).\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nBringe die Summe der Quotienten auf den Nenner $xy$.\n\n$$\nx\n$$\n\n$$\ny\n$$\n\n$$\n\\dfrac yx+\\dfrac xy\n$$\n\n$$\n\\dfrac yx+\\dfrac xy=\\dfrac{x^2+y^2}{xy}\n$$\n\n$$\n\\dfrac{y}{x}+\\dfrac{x}{y}=\\dfrac{y\\cdot y+x\\cdot x}{xy}\n$$\n\n$$\n\\dfrac{y^2+x^2}{xy}\n$$\n\n$$\n\\dfrac{x^2+y^2}{xy}\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$\\sqrt{(v-2)^2}=|v-2|$; die Behauptung ohne Absolutbetrag gilt nicht für alle $v$.\n\n$$\n\\sqrt{(v-2)^2}=|v-2|\n$$\n\n$$\nv=2\n$$\n\n$$\n\\sqrt{(v-2)^2}\n$$\n\n$$\nv-2\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$|q|-|q-2|$ ist nicht konstant $2$; ein Testpunkt widerlegt die Behauptung.\n\n$$\nq\n$$\n\n$$\nq=2\n$$\n\n$$\n|q|-|q-2|\n$$\n\n$$\n2\n$$\n\n$$\n|0|-|0-2|=0-2\n$$\n\n$$\n-2\n$$\n\n$$\n-2\\neq2\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAus $a^2=ac$ und $a\\neq0$ folgt nach Kürzen $a=c$.\n\n$$\na^2-ac=0\n$$\n\n$$\na(a-c)=0\n$$\n\n$$\na-c=0\n$$\n\n$$\na=c\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$\\dfrac1a+\\dfrac1b=\\dfrac{a+b}{ab}=\\dfrac s p$, nicht $\\dfrac p s$.\n\n$$\na+b\n$$\n\n$$\na+b=s\n$$\n\n$$\nab\n$$\n\n$$\nab=p\n$$\n\n$$\np\\neq0\n$$\n\n$$\ns\\neq0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac ps\n$$\n\nDie Aussage ist falsch."
     ],
     "solution_overview": ""
   },
   "MATH 2.147": {
     "title": "Klausuraufgaben – 11",
-    "context": "An algebra archive stores two reelle Zahlen $a$ and $b$nur durch die Aufzeichnungen$a+b=10$ and $ab=21$. Die ursprüngliche Reihenfolge wurde nicht aufgezeichnet, daher muss jede Schlussfolgerung aus symmetrischen Identitäten oder aus dem Quadratischen mit Wurzeln folgen$a$ and $b$Bei der Prüfung wird keine dezimale Näherung verwendet.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$a^2+b^2=58$.",
       "$(a-b)^2=16$.",
@@ -2784,36 +2784,36 @@
       "$\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSum of squares follows from the square of the sum after the mixed product is peeled off.\n\nBeginnen vom Quadrat der aufgezeichneten Summe:\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\nRearrange to isolate the sum of squares:\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\nSetze $a+b=10$ and $ab=21$:\n\n$$\na^2+b^2=10^2-2\\cdot21\n$$\n\n$$\na^2+b^2=100-42\n$$\n\n$$\na^2+b^2=58\n$$\n\nDie Behauptung behauptet den gleichen Wert$58$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie quadratische Lücke$(a-b)^{2}$is another elementary identity in$a+b$ and $ab$.\n\nMultipliziere aus $(a-b)^{2}$and rewrite in elementary symmetric form:\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\nSetze the archive values:\n\n$$\n(a-b)^2=10^2-4\\cdot21\n$$\n\n$$\n(a-b)^2=100-84\n$$\n\n$$\n(a-b)^2=16\n$$\n\nDie Behauptung ist$(a-b)^2=16$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nKuben erweitern sich um die gleiche Summe und das gleiche Produkt; der mittlere Term ist$3ab(a+b)$.\n\nDie Kuben-Summen-Identität liest\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\nSetze $a+b=10$ and $ab=21$:\n\n$$\na^3+b^3=10^3-3\\cdot21\\cdot10\n$$\n\n$$\na^3+b^3=1000-630\n$$\n\n$$\na^3+b^3=370\n$$\n\nDie Behauptung asserts $371$, aber die Identität erzeugt$370$.\n\nDa $370\\ne371$, die Behauptung does not hold.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nThe unordered pair$\\{a,b\\}$ist genau die Wurzelmenge der monischen Quadratischen mit diesen Koeffizienten.\n\nBilden das monische Quadrat mit der Summe$a+b$and product$ab$:\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-10t+21=0\n$$\n\nFaktorisiere the linke Seite:\n\n$$\nt^2-10t+21=(t-3)(t-7)\n$$\n\nThe roots are therefore$t=3$ and $t=7$, so\n\n$$\n\\{a,b\\}=\\{3,7\\}\n$$\n\nDas passt zu den Behauptunged ungeordneten Paaren.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nSum of reciprocals is the elementary quotient of sum by product.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\nSetze $a+b=10$ and $ab=21$:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}\n$$\n\nDie Behauptung asserts $\\dfrac{21}{10}$. Da $\\dfrac{10}{21}\\neq\\dfrac{21}{10}$, die Behauptung does not hold.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Quadratsumme folgt aus $(a+b)^2$ nach Abziehen des Mischterms.\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\n$$\na^2+b^2=10^2-2\\cdot21\n$$\n\n$$\na^2+b^2=100-42\n$$\n\n$$\na^2+b^2=58\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$(a-b)^2=(a+b)^2-4ab$ liefert den behaupteten Wert.\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\n$$\n(a-b)^2=10^2-4\\cdot21\n$$\n\n$$\n(a-b)^2=100-84\n$$\n\n$$\n(a-b)^2=16\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Kubensumme über Summe und Produkt ergibt nicht den behaupteten Zahlenwert.\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\n$$\na^3+b^3=10^3-3\\cdot21\\cdot10\n$$\n\n$$\na^3+b^3=1000-630\n$$\n\n$$\na^3+b^3=370\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Wurzelmenge der monischen Quadratgleichung ist $\\{3,7\\}$.\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-10t+21=0\n$$\n\n$$\nt^2-10t+21=(t-3)(t-7)\n$$\n\n$$\n\\{a,b\\}=\\{3,7\\}\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Kehrwertsumme ist $\\dfrac{a+b}{ab}$, nicht der behauptete Bruch.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Nur die elementarsymmetrischen Daten $a+b=10$ und $ab=21$ sind aufgezeichnet. Jede Behauptung muss aus diesen beiden Zahlen folgen (oder aus dem monischen Quadrat $t^{2}-10t+21=0$ mit den Wurzeln $a$ und $b$).\n\nDie zugrunde liegenden Identitäten sind\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nEinsetzen der Archivwerte liefert $a^{2}+b^{2}=58$, $(a-b)^{2}=16$, $a^{3}+b^{3}=370$ und $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}$. Die Faktorisierung $t^{2}-10t+21=(t-3)(t-7)$ zeigt $\\{a,b\\}=\\{3,7\\}$."
+    "solution_overview": ""
   },
   "MATH 2.148": {
     "title": "Klausuraufgaben – 12",
-    "context": "A symbolic calculator studies $R(x)=\\dfrac{x^2-4}{x-2}$ and $S(x)=\\dfrac1{x-2}+\\dfrac1{x+2}$. Der erste Ausdruck ist definiert für$x\\ne 2$, while the second also excludes$x=-2$. Simplifications must retain these original domain restrictions even after factors cancel.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "$R(x)=x+2$ on its domain.",
+      "$R(x)=x+2$ auf ihrer Definitionsmenge.",
       "$R(2)=4$.",
       "$S(x)=\\dfrac{2x}{x^2-4}$.",
       "$S(0)=0$.",
-      "$S(x)=0$ has exactly one reelle Lösung."
+      "$S(x)=0$ hat genau eine reelle Lösung."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAuf der Definitionsmenge$x\\ne2$, faktorisieren Sie die Differenz von Quadraten im Zähler und heben Sie den gemeinsamen linearen Faktor auf.\n\nFaktorisiere first:\n\n$$\nx^{2}-4=(x-2)(x+2)\n$$\n\nDivide by the remaining linear factor:\n\n$$\nR(x)=\\dfrac{(x-2)(x+2)}{x-2}\n$$\n\n$$\nR(x)=x+2\n$$\n\n$$\n(x\\ne2)\n$$\n\nDie vereinfachte Form ist genau$x+2$Auf dem domäine\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nThe expression$R(x)$is undefined at the excluded point$x=2$, so dass der Wert$R(2)$ist nicht durch die Formel definiert.\n\n$$\nR(2)\n$$\n\n$$\nR(2)=4\n$$\n\nSetze the forbidden input into the original fraction:\n\n$$\nR(2)=\\dfrac{2^{2}-4}{2-2}\n$$\n\n$$\n\\dfrac{0}{0}\n$$\n\nDer Nenner verschwindet, also$R$hat zu diesem Zeitpunkt keinen endlichen Wert.\n\nDie Behauptung behauptet$R(2)=4$, which would require evaluating past a hole in the domain.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nKombinieren die beiden Kehrwerte über den gemeinsamen Nenner$(x-2)(x+2)$.\n\n$$\nS(x)=\\dfrac{1}{x-2}+\\dfrac{1}{x+2}\n$$\n\n$$\n\\dfrac{(x+2)+(x-2)}{(x-2)(x+2)}\n$$\n\n$$\n\\dfrac{2x}{x^2-4}\n$$\n\n$$\n(x\\neq\\pm2)\n$$\n\nDas entspricht der Behauptunged vereinfachten Form.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nAuf der Definitionsmenge$x\\neq\\pm2$, combine the reciprocals in$S$und an der zulässigen Stelle bewerten$x=0$.\n\nWiederherstellen der Einzelfraktionsform:\n\n$$\nS(x)=\\dfrac{1}{x-2}+\\dfrac{1}{x+2}\n$$\n\n$$\n\\dfrac{2x}{x^2-4}\n$$\n\n$$\n(x\\neq\\pm2)\n$$\n\nSetze $x=0$:\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-4}\n$$\n\n$$\n\\dfrac{0}{-4}\n$$\n\n$$\n0\n$$\n\nDa $0\\neq\\pm2$, the point is in the domain, and the value equals die Behauptunged$0$.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nSolve $S(x)=0$Auf dem domäine$x\\ne\\pm2$.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\nVerwenden des wiederhergestellten Formulars:\n\n$$\n\\dfrac{2x}{x^{2}-4}=0\n$$\n\nEin Bruch ist nur dann Null, wenn sein Zähler Null ist und der Nenner nicht:\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nAnd $0\\ne\\pm2$, so $x=0$is admissible.\n\nNo other numerator root exists, so there is exactly one reelle Lösung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nAuf $x\\neq2$ kürzt die Differenz der Quadrate zu $x+2$.\n\n$$\nx^{2}-4=(x-2)(x+2)\n$$\n\n$$\nR(x)=\\dfrac{(x-2)(x+2)}{x-2}\n$$\n\n$$\nR(x)=x+2\n$$\n\n$$\n(x\\ne2)\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBei $x=2$ ist $R$ nicht definiert; $R(2)$ existiert nicht.\n\n$$\nR(2)\n$$\n\n$$\nR(2)=4\n$$\n\n$$\nR(2)=\\dfrac{2^{2}-4}{2-2}\n$$\n\n$$\n\\dfrac{0}{0}\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Summe der Kehrwerte hat den angegebenen gemeinsamen Nenner.\n\n$$\nS(x)=\\dfrac{1}{x-2}+\\dfrac{1}{x+2}\n$$\n\n$$\n\\dfrac{(x+2)+(x-2)}{(x-2)(x+2)}\n$$\n\n$$\n\\dfrac{2x}{x^2-4}\n$$\n\n$$\n(x\\neq\\pm2)\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nEinsetzen von $x=0$ in $S$ liefert $0$.\n\n$$\nS(x)=\\dfrac{1}{x-2}+\\dfrac{1}{x+2}\n$$\n\n$$\n\\dfrac{2x}{x^2-4}\n$$\n\n$$\n(x\\neq\\pm2)\n$$\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-4}\n$$\n\n$$\n\\dfrac{0}{-4}\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$S(x)=0$ erzwingt Zähler $0$ bei definiertem Nenner; genau eine Lösung.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\n$$\n\\dfrac{2x}{x^{2}-4}=0\n$$\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Arbeite auf den angegebenen Definitionsmengen: $R$ schließt $x=2$ aus, und $S$ schließt $x=\\pm2$ aus. Faktoriere und kürze vor dem Auswerten, und fasse die beiden Kehrwerte in $S$ über einem gemeinsamen Nenner zusammen.\n\n$$\nR(x) = \\dfrac{x^{2}-4}{x-2} = \\dfrac{(x-2)(x+2)}{x-2} = x+2\\quad(x\\ne2)\n$$\n\n$$\nS(x) = \\dfrac{1}{x-2}+\\dfrac{1}{x+2} = \\dfrac{2x}{x^{2}-4}\\quad(x\\ne\\pm2)\n$$\n\nInsbesondere gilt $S(0)=0$, und $S(x)=0$ erzwingt $x=0$ auf dem Definitionsbereich."
+    "solution_overview": ""
   },
   "MATH 2.149": {
     "title": "Klausuraufgaben – 13",
-    "context": "A materials model fixes a positive scale variable at $x=16$. The report uses the principal real roots and the exponent laws$x^r x^s=x^{r+s}$ and $(x^r)^s=x^{rs}$. Negative Exponenten werden als Kehrwerte interpretiert, und alle Behauptungen beziehen sich auf denselben positiven Wert von$x$.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$x^{1/2}=4$.",
       "$x^{1/4}=2$.",
@@ -2822,36 +2822,36 @@
       "$x^0=0$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nThe materials model fixes the positive scale at$x=16$. The principal square root is the unique nonnegative number whose square is$16$.\n\n$$\nx^{1/2}\n$$\n\n$$\nx^{1/2}=4\n$$\n\nCompute:\n\n$$\nx^{1/2}=\\sqrt{16}\n$$\n\n$$\n4^2=16\n$$\n\n$$\nx^{1/2}=4\n$$\n\nDie Behauptung asserts $x^{1/2}=4$, which matches the principal root of the fixed scale$x=16$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nMit der festen Waage$x=16$ist die vierte Hauptwurzel die positive Quadratwurzel der Hauptquadratwurzel.\n\nVerkette die Wurzelgesetze:\n\n$$\nx^{1/4}=(x^{1/2})^{1/2}\n$$\n\n$$\nx^{1/2}=\\sqrt{16}\n$$\n\n$$\n4\n$$\n\n$$\nx^{1/4}=4^{1/2}\n$$\n\n$$\n2\n$$\n\nCheck: $2^4=16$. Die Behauptung $x^{1/4}=2$ matches.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nA negative exponent means the reciprocal of the corresponding positive power, at the fixed scale$x=16$.\n\nNehmen zuerst die Hauptquadratwurzel:\n\n$$\nx^{1/2}=\\sqrt{16}\n$$\n\n$$\n4\n$$\n\nThen invert:\n\n$$\nx^{-1/2}=\\dfrac{1}{x^{1/2}}\n$$\n\n$$\n\\dfrac{1}{4}\n$$\n\nDie Behauptung asserts $x^{-1/2}=\\dfrac{1}{4}$die mit dem Kehrwert von$4$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nSchreibe um the fractional power$x^{3/4}$as a cube of the fourth root, using the fixed scale$x=16$.\n\nAus der Bewertung der vierten Wurzel:\n\n$$\nx^{1/4}=2\n$$\n\nRaise to the third power:\n\n$$\nx^{3/4}=(x^{1/4})^3\n$$\n\n$$\n2^3\n$$\n\n$$\n8\n$$\n\nAlternatively, $x^{3/4}=(x^{1/2})\\cdot(x^{1/4})=4\\cdot2=8$. Die Behauptung $x^{3/4}=8$ matches.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nJede ungleich Null reelle Zahl an die Macht$0$ist gleich$1$, not $0$. The scale is fixed at$x=16\\neq0$.\n\nNach der Null-Exponenten-Regel:\n\n$$\nx^{0}=1\n$$\n\n$$\n(x\n$$\n\n$$\n16\\neq0)\n$$\n\nCompare with die Behauptung$x^{0}=0$:\n\n$$\n1\\neq0\n$$\n\nNumeric check: $16^{0}=1$. Der geltend gemachte Wert$0$is wrong.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nMit der festen Skala $x=16$ ist die Hauptquadratwurzel $4$.\n\n$$\nx^{1/2}\n$$\n\n$$\nx^{1/2}=4\n$$\n\n$$\nx^{1/2}=\\sqrt{16}\n$$\n\n$$\n4^2=16\n$$\n\n$$\nx^{1/2}=4\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie vierte Hauptwurzel von $16$ ist $2$.\n\n$$\nx^{1/4}=(x^{1/2})^{1/2}\n$$\n\n$$\nx^{1/2}=\\sqrt{16}\n$$\n\n$$\n4\n$$\n\n$$\nx^{1/4}=4^{1/2}\n$$\n\n$$\n2\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nNegativer Exponent liefert den Kehrwert $1/4$.\n\n$$\nx^{1/2}=\\sqrt{16}\n$$\n\n$$\n4\n$$\n\n$$\nx^{-1/2}=\\dfrac{1}{x^{1/2}}\n$$\n\n$$\n\\dfrac{1}{4}\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$16^{3/4}=(16^{1/4})^3=2^3=8$.\n\n$$\nx^{1/4}=2\n$$\n\n$$\nx^{3/4}=(x^{1/4})^3\n$$\n\n$$\n2^3\n$$\n\n$$\n8\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nJede von null verschiedene Zahl zur Potenz $0$ ist $1$, nicht $0$.\n\n$$\nx^{0}=1\n$$\n\n$$\n(x\n$$\n\n$$\n16\\neq0)\n$$\n\n$$\n1\\neq0\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Skala ist auf dem positiven Wert $x=16$ fixiert. Reelle Hauptwurzeln und die Potenzgesetze $x^{r}x^{s}=x^{r+s}$ und $(x^{r})^{s}=x^{rs}$ gelten; negative Exponenten bedeuten Kehrwerte.\n\n$$\nx^{1/2} = 4,\\qquad x^{1/4} = 2,\\qquad x^{-1/2} = \\dfrac{1}{4},\\qquad x^{3/4} = 8\n$$\n\nAußerdem gilt $x^{0}=1$ für dieses von null verschiedene $x$."
+    "solution_overview": ""
   },
   "MATH 2.150": {
     "title": "Klausuraufgaben – 14",
-    "context": "A calibration reading $x$wird akzeptiert, wenn seine Entfernung zum Ziel 4 höchstens 3 Einheiten beträgt, geschrieben$|x-4|\\le 3$. A warning band uses the strict version$|x-4|<3$. The endpoint readings are physically possible and all readings are real.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "The accepted interval is$[1,7]$.",
-      "$x=1$is accepted.",
-      "$x=7$lies in the warning band.",
-      "There are$7$ accepted integer readings.",
-      "$|x-4|>3$ means $1<x<7$."
+      "Das Annahmeintervall ist $[1,7]$.",
+      "$x=1$ wird angenommen.",
+      "$x=7$ liegt in der Warnzone.",
+      "Es gibt $7$ angenommene ganzzahlige Messwerte.",
+      "$|x-4|>3$ bedeutet $1<x<7$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nTranslate the closed distance inequality$|x-4|\\le3$in ein geschlossenes Intervall um das Ziel$4$.\n\n$$\n[1,7]\n$$\n\nUnfold:\n\n$$\n|x-4|\\le3\\Longleftrightarrow-3\\le x-4\\le3\n$$\n\nAdd $4$through the chain:\n\n$$\n1\\le x\\le7\n$$\n\nDas ist das geschlossene Intervall$[1,7]$. Endpoints: $|1-4|=3\\le3$ and $|7-4|=3\\le3$, both accepted. Die Behauptung matches.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nEin geschlossenes Akzeptanzintervall umfasst jeden endlichen Endpunkt, testen Sie also die Ungleichung dort.\n\n$$\nx\n$$\n\n$$\nx=1\n$$\n\nAn endpoint of the closed acceptance interval is included.\n\nPrüfe die Akzeptanzungleichheit bei$x=1$:\n\n$$\n| 1-4 |=|-3|\n$$\n\n$$\n3\n$$\n\n$$\n|1-4|\\le3\n$$\n\nThe inequality holds, so$x=1$is accepted.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nDas Warnband ist die strikte Ungleichheit$|x-4|<3$, so endpoints of the acceptance interval are excluded.\n\n$$\nx\n$$\n\n$$\nx=7\n$$\n\nBei the right endpoint$x=7$:\n\n$$\n|7-4|=3\n$$\n\nThe warning test requires$|x-4|<3$, but\n\n$$\n3\\nless3\n$$\n\nAlso $x=7$fails the strict test. It is accepted ($|7-4|\\le3$) aber nicht im Warnband.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nCount the integers lying in the closed acceptance interval$[1,7]$ coming from $|x-4|\\le3$.\n\n$$\n7\n$$\n\nDie ganzen Zahlen von$1$ through $7$ are\n\n$$\n1,2,3,4,5,6,7\n$$\n\nThe inclusive count is\n\n$$\n7-1+1=7\n$$\n\nEs gibt genau$7$ accepted integer readings, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDer komplementäre Bereich liegt außerhalb des geschlossenen Intervalls, nicht innerhalb der offenen Mitte.\n\n$$\n|x-4|>3\n$$\n\n$$\n1<x<7\n$$\n\nNach definition,\n\n$$\n|x-4|>3\\Longleftrightarrow\\bigl(x<1\\bigr)\\lor\\bigl(x>7\\bigr)\n$$\n\nDie Behauptung instead writes $1<x<7$, which is the warning band$|x-4|<3$.\n\nDiese beiden Regionen sind disjunkt.\n\n$$\n|x-4|>3\n$$\n\n$$\n1<x<7\n$$\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$|x-4|\\le3$ beschreibt das abgeschlossene Intervall $[1,7]$.\n\n$$\n[1,7]\n$$\n\n$$\n|x-4|\\le3\\Longleftrightarrow-3\\le x-4\\le3\n$$\n\n$$\n1\\le x\\le7\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDer Endpunkt $x=1$ gehört zum abgeschlossenen Annahmeintervall.\n\n$$\nx\n$$\n\n$$\nx=1\n$$\n\n$$\n| 1-4 |=|-3|\n$$\n\n$$\n3\n$$\n\n$$\n|1-4|\\le3\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Warnzone ist streng $|x-4|<3$; $x=7$ liegt nicht darin.\n\n$$\nx\n$$\n\n$$\nx=7\n$$\n\n$$\n|7-4|=3\n$$\n\n$$\n3\\nless3\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie ganzen Zahlen in $[1,7]$ sind genau sieben Stück.\n\n$$\n7\n$$\n\n$$\n1,2,3,4,5,6,7\n$$\n\n$$\n7-1+1=7\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$|x-4|>3$ beschreibt das Äußere, nicht das offene Innere $(1,7)$.\n\n$$\n|x-4|>3\n$$\n\n$$\n1<x<7\n$$\n\n$$\n|x-4|>3\\Longleftrightarrow\\bigl(x<1\\bigr)\\lor\\bigl(x>7\\bigr)\n$$\n\n$$\n|x-4|>3\n$$\n\n$$\n1<x<7\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Der Abstand zum Zielwert $4$ wird durch $|x-4|$ gemessen. Die Akzeptanzregel $|x-4|\\le3$ ist das abgeschlossene Intervall $[1,7]$, während das Warnband $|x-4|<3$ das offene Intervall $(1,7)$ ist.\n\nDie Endpunkte $x=1$ und $x=7$ werden akzeptiert, liegen aber nicht im Warnband. Es gibt $7$ ganze Zahlen in $[1,7]$. Die komplementäre Ungleichung $|x-4|>3$ ist $x<1$ oder $x>7$, nicht das offene Mittelintervall."
+    "solution_overview": ""
   },
   "MATH 2.151": {
     "title": "Klausuraufgaben – 15",
-    "context": "An algebra archive stores two reelle Zahlen $a$ and $b$nur durch die Aufzeichnungen$a+b=9$ and $ab=20$. Die ursprüngliche Reihenfolge wurde nicht aufgezeichnet, daher muss jede Schlussfolgerung aus symmetrischen Identitäten oder aus dem Quadratischen mit Wurzeln folgen$a$ and $b$Bei der Prüfung wird keine dezimale Näherung verwendet.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$a^2+b^2=41$.",
       "$(a-b)^2=1$.",
@@ -2860,36 +2860,36 @@
       "$\\dfrac1a+\\dfrac1b=\\dfrac{20}{9}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSum of squares follows from the square of the sum after the mixed product is peeled off.\n\nBeginnen vom Quadrat der aufgezeichneten Summe:\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\nRearrange to isolate the sum of squares:\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\nSetze $a+b=9$ and $ab=20$:\n\n$$\na^2+b^2=9^2-2\\cdot20\n$$\n\n$$\na^2+b^2=81-40\n$$\n\n$$\na^2+b^2=41\n$$\n\nDie Behauptung behauptet den gleichen Wert$41$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie quadratische Lücke$(a-b)^{2}$is another elementary identity in$a+b$ and $ab$.\n\nMultipliziere aus $(a-b)^{2}$and rewrite in elementary symmetric form:\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\nSetze the archive values:\n\n$$\n(a-b)^2=9^2-4\\cdot20\n$$\n\n$$\n(a-b)^2=81-80\n$$\n\n$$\n(a-b)^2=1\n$$\n\nDie Behauptung ist$(a-b)^2=1$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nKuben erweitern sich um die gleiche Summe und das gleiche Produkt; der mittlere Term ist$3ab(a+b)$.\n\nDie Kuben-Summen-Identität liest\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\nSetze $a+b=9$ and $ab=20$:\n\n$$\na^3+b^3=9^3-3\\cdot20\\cdot9\n$$\n\n$$\na^3+b^3=729-540\n$$\n\n$$\na^3+b^3=189\n$$\n\nDie Behauptung asserts $190$, aber die Identität erzeugt$189$.\n\nDa $189\\ne190$, die Behauptung does not hold.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nThe unordered pair$\\{a,b\\}$ist genau die Wurzelmenge der monischen Quadratischen mit diesen Koeffizienten.\n\nBilden das monische Quadrat mit der Summe$a+b$and product$ab$:\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-9t+20=0\n$$\n\nFaktorisiere the linke Seite:\n\n$$\nt^2-9t+20=(t-4)(t-5)\n$$\n\nThe roots are therefore$t=4$ and $t=5$, so\n\n$$\n\\{a,b\\}=\\{4,5\\}\n$$\n\nDas passt zu den Behauptunged ungeordneten Paaren.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nSum of reciprocals is the elementary quotient of sum by product.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{20}{9}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\nSetze $a+b=9$ and $ab=20$:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{9}{20}\n$$\n\nDie Behauptung asserts $\\dfrac{20}{9}$. Da $\\dfrac{9}{20}\\neq\\dfrac{20}{9}$, die Behauptung does not hold.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Quadratsumme folgt aus $(a+b)^2$ nach Abziehen des Mischterms.\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\n$$\na^2+b^2=9^2-2\\cdot20\n$$\n\n$$\na^2+b^2=81-40\n$$\n\n$$\na^2+b^2=41\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$(a-b)^2=(a+b)^2-4ab$ liefert den behaupteten Wert.\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\n$$\n(a-b)^2=9^2-4\\cdot20\n$$\n\n$$\n(a-b)^2=81-80\n$$\n\n$$\n(a-b)^2=1\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Kubensumme über Summe und Produkt ergibt nicht den behaupteten Wert.\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\n$$\na^3+b^3=9^3-3\\cdot20\\cdot9\n$$\n\n$$\na^3+b^3=729-540\n$$\n\n$$\na^3+b^3=189\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Wurzelmenge ist $\\{4,5\\}$.\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-9t+20=0\n$$\n\n$$\nt^2-9t+20=(t-4)(t-5)\n$$\n\n$$\n\\{a,b\\}=\\{4,5\\}\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Kehrwertsumme ist $\\dfrac{a+b}{ab}$, nicht der behauptete Bruch.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{20}{9}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{9}{20}\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Nur die elementarsymmetrischen Daten $a+b=9$ und $ab=20$ sind aufgezeichnet. Jede Behauptung muss aus diesen beiden Zahlen folgen (oder aus dem monischen Quadrat $t^{2}-9t+20=0$ mit den Wurzeln $a$ und $b$).\n\nDie zugrunde liegenden Identitäten sind\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nEinsetzen der Archivwerte liefert $a^{2}+b^{2}=41$, $(a-b)^{2}=1$, $a^{3}+b^{3}=189$ und $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{9}{20}$. Die Faktorisierung $t^{2}-9t+20=(t-4)(t-5)$ zeigt $\\{a,b\\}=\\{4,5\\}$."
+    "solution_overview": ""
   },
   "MATH 2.152": {
     "title": "Klausuraufgaben – 16",
-    "context": "A symbolic calculator studies $R(x)=\\dfrac{x^2-9}{x-3}$ and $S(x)=\\dfrac1{x-3}+\\dfrac1{x+3}$. Der erste Ausdruck ist definiert für$x\\ne 3$, while the second also excludes$x=-3$. Simplifications must retain these original domain restrictions even after factors cancel.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "$R(x)=x+3$ on its domain.",
+      "$R(x)=x+3$ auf ihrer Definitionsmenge.",
       "$R(3)=6$.",
       "$S(x)=\\dfrac{2x}{x^2-9}$.",
       "$S(0)=0$.",
-      "$S(x)=0$ has exactly one reelle Lösung."
+      "$S(x)=0$ hat genau eine reelle Lösung."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAuf der Definitionsmenge$x\\ne3$, faktorisieren Sie die Differenz von Quadraten im Zähler und heben Sie den gemeinsamen linearen Faktor auf.\n\nFaktorisiere first:\n\n$$\nx^{2}-9=(x-3)(x+3)\n$$\n\nDivide by the remaining linear factor:\n\n$$\nR(x)=\\dfrac{(x-3)(x+3)}{x-3}\n$$\n\n$$\nR(x)=x+3\n$$\n\n$$\n(x\\ne3)\n$$\n\nDie vereinfachte Form ist genau$x+3$Auf dem domäine\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nThe expression$R(x)$is undefined at the excluded point$x=3$, so dass der Wert$R(3)$ist nicht durch die Formel definiert.\n\n$$\nR(3)\n$$\n\n$$\nR(3)=6\n$$\n\nSetze the forbidden input into the original fraction:\n\n$$\nR(3)=\\dfrac{3^{2}-9}{3-3}\n$$\n\n$$\n\\dfrac{0}{0}\n$$\n\nDer Nenner verschwindet, also$R$hat zu diesem Zeitpunkt keinen endlichen Wert.\n\nDie Behauptung behauptet$R(3)=6$, which would require evaluating past a hole in the domain.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nKombinieren die beiden Kehrwerte über den gemeinsamen Nenner$(x-3)(x+3)$.\n\n$$\nS(x)=\\dfrac{1}{x-3}+\\dfrac{1}{x+3}\n$$\n\n$$\n\\dfrac{(x+3)+(x-3)}{(x-3)(x+3)}\n$$\n\n$$\n\\dfrac{2x}{x^2-9}\n$$\n\n$$\n(x\\neq\\pm3)\n$$\n\nDas entspricht der Behauptunged vereinfachten Form.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nAuf der Definitionsmenge$x\\neq\\pm3$, combine the reciprocals in$S$und an der zulässigen Stelle bewerten$x=0$.\n\nWiederherstellen der Einzelfraktionsform:\n\n$$\nS(x)=\\dfrac{1}{x-3}+\\dfrac{1}{x+3}\n$$\n\n$$\n\\dfrac{2x}{x^2-9}\n$$\n\n$$\n(x\\neq\\pm3)\n$$\n\nSetze $x=0$:\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-9}\n$$\n\n$$\n\\dfrac{0}{-9}\n$$\n\n$$\n0\n$$\n\nDa $0\\neq\\pm3$, the point is in the domain, and the value equals die Behauptunged$0$.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nSolve $S(x)=0$Auf dem domäine$x\\ne\\pm3$.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\nVerwenden des wiederhergestellten Formulars:\n\n$$\n\\dfrac{2x}{x^{2}-9}=0\n$$\n\nEin Bruch ist nur dann Null, wenn sein Zähler Null ist und der Nenner nicht:\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nAnd $0\\ne\\pm3$, so $x=0$is admissible.\n\nNo other numerator root exists, so there is exactly one reelle Lösung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nAuf $x\\neq3$ kürzt die Differenz der Quadrate zu $x+3$.\n\n$$\nx^{2}-9=(x-3)(x+3)\n$$\n\n$$\nR(x)=\\dfrac{(x-3)(x+3)}{x-3}\n$$\n\n$$\nR(x)=x+3\n$$\n\n$$\n(x\\ne3)\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBei $x=3$ ist $R$ nicht definiert.\n\n$$\nR(3)\n$$\n\n$$\nR(3)=6\n$$\n\n$$\nR(3)=\\dfrac{3^{2}-9}{3-3}\n$$\n\n$$\n\\dfrac{0}{0}\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Summe der Kehrwerte hat den Nenner $x^2-9$.\n\n$$\nS(x)=\\dfrac{1}{x-3}+\\dfrac{1}{x+3}\n$$\n\n$$\n\\dfrac{(x+3)+(x-3)}{(x-3)(x+3)}\n$$\n\n$$\n\\dfrac{2x}{x^2-9}\n$$\n\n$$\n(x\\neq\\pm3)\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nEinsetzen von $x=0$ in $S$ liefert $0$.\n\n$$\nS(x)=\\dfrac{1}{x-3}+\\dfrac{1}{x+3}\n$$\n\n$$\n\\dfrac{2x}{x^2-9}\n$$\n\n$$\n(x\\neq\\pm3)\n$$\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-9}\n$$\n\n$$\n\\dfrac{0}{-9}\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$S(x)=0$ hat auf der Definitionsmenge genau eine reelle Lösung.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\n$$\n\\dfrac{2x}{x^{2}-9}=0\n$$\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Arbeite auf den angegebenen Definitionsmengen: $R$ schließt $x=3$ aus, und $S$ schließt $x=\\pm3$ aus. Faktoriere und kürze vor dem Auswerten, und fasse die beiden Kehrwerte in $S$ über einem gemeinsamen Nenner zusammen.\n\n$$\nR(x) = \\dfrac{x^{2}-9}{x-3} = \\dfrac{(x-3)(x+3)}{x-3} = x+3\\quad(x\\ne3)\n$$\n\n$$\nS(x) = \\dfrac{1}{x-3}+\\dfrac{1}{x+3} = \\dfrac{2x}{x^{2}-9}\\quad(x\\ne\\pm3)\n$$\n\nInsbesondere gilt $S(0)=0$, und $S(x)=0$ erzwingt $x=0$ auf dem Definitionsbereich."
+    "solution_overview": ""
   },
   "MATH 2.153": {
     "title": "Klausuraufgaben – 17",
-    "context": "A materials model fixes a positive scale variable at $x=81$. The report uses the principal real roots and the exponent laws$x^r x^s=x^{r+s}$ and $(x^r)^s=x^{rs}$. Negative Exponenten werden als Kehrwerte interpretiert, und alle Behauptungen beziehen sich auf denselben positiven Wert von$x$.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$x^{1/2}=9$.",
       "$x^{1/4}=3$.",
@@ -2898,36 +2898,36 @@
       "$x^0=0$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nThe materials model fixes the positive scale at$x=81$. The principal square root is the unique nonnegative number whose square is$81$.\n\n$$\nx^{1/2}\n$$\n\n$$\nx^{1/2}=9\n$$\n\nCompute:\n\n$$\nx^{1/2}=\\sqrt{81}\n$$\n\n$$\n9^2=81\n$$\n\n$$\nx^{1/2}=9\n$$\n\nDie Behauptung asserts $x^{1/2}=9$, which matches the principal root of the fixed scale$x=81$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nMit der festen Waage$x=81$ist die vierte Hauptwurzel die positive Quadratwurzel der Hauptquadratwurzel.\n\nVerkette die Wurzelgesetze:\n\n$$\nx^{1/4}=(x^{1/2})^{1/2}\n$$\n\n$$\nx^{1/2}=\\sqrt{81}\n$$\n\n$$\n9\n$$\n\n$$\nx^{1/4}=9^{1/2}\n$$\n\n$$\n3\n$$\n\nCheck: $3^4=81$. Die Behauptung $x^{1/4}=3$ matches.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nA negative exponent means the reciprocal of the corresponding positive power, at the fixed scale$x=81$.\n\nNehmen zuerst die Hauptquadratwurzel:\n\n$$\nx^{1/2}=\\sqrt{81}\n$$\n\n$$\n9\n$$\n\nThen invert:\n\n$$\nx^{-1/2}=\\dfrac{1}{x^{1/2}}\n$$\n\n$$\n\\dfrac{1}{9}\n$$\n\nDie Behauptung asserts $x^{-1/2}=\\dfrac{1}{9}$die mit dem Kehrwert von$9$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nSchreibe um the fractional power$x^{3/4}$as a cube of the fourth root, using the fixed scale$x=81$.\n\nAus der Bewertung der vierten Wurzel:\n\n$$\nx^{1/4}=3\n$$\n\nRaise to the third power:\n\n$$\nx^{3/4}=(x^{1/4})^3\n$$\n\n$$\n3^3\n$$\n\n$$\n27\n$$\n\nAlternatively, $x^{3/4}=(x^{1/2})\\cdot(x^{1/4})=9\\cdot3=27$. Die Behauptung $x^{3/4}=27$ matches.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nJede ungleich Null reelle Zahl an die Macht$0$ist gleich$1$, not $0$. The scale is fixed at$x=81\\neq0$.\n\nNach der Null-Exponenten-Regel:\n\n$$\nx^{0}=1\n$$\n\n$$\n(x\n$$\n\n$$\n81\\neq0)\n$$\n\nCompare with die Behauptung$x^{0}=0$:\n\n$$\n1\\neq0\n$$\n\nNumeric check: $81^{0}=1$. Der geltend gemachte Wert$0$is wrong.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nMit der festen Skala $x=81$ ist die Hauptquadratwurzel $9$.\n\n$$\nx^{1/2}\n$$\n\n$$\nx^{1/2}=9\n$$\n\n$$\nx^{1/2}=\\sqrt{81}\n$$\n\n$$\n9^2=81\n$$\n\n$$\nx^{1/2}=9\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie vierte Hauptwurzel von $81$ ist $3$.\n\n$$\nx^{1/4}=(x^{1/2})^{1/2}\n$$\n\n$$\nx^{1/2}=\\sqrt{81}\n$$\n\n$$\n9\n$$\n\n$$\nx^{1/4}=9^{1/2}\n$$\n\n$$\n3\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nNegativer Exponent liefert den Kehrwert $1/9$.\n\n$$\nx^{1/2}=\\sqrt{81}\n$$\n\n$$\n9\n$$\n\n$$\nx^{-1/2}=\\dfrac{1}{x^{1/2}}\n$$\n\n$$\n\\dfrac{1}{9}\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$81^{3/4}=3^3=27$.\n\n$$\nx^{1/4}=3\n$$\n\n$$\nx^{3/4}=(x^{1/4})^3\n$$\n\n$$\n3^3\n$$\n\n$$\n27\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$x^0=1$ für $x=81\\neq0$, nicht $0$.\n\n$$\nx^{0}=1\n$$\n\n$$\n(x\n$$\n\n$$\n81\\neq0)\n$$\n\n$$\n1\\neq0\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Skala ist auf dem positiven Wert $x=81$ fixiert. Reelle Hauptwurzeln und die Potenzgesetze $x^{r}x^{s}=x^{r+s}$ und $(x^{r})^{s}=x^{rs}$ gelten; negative Exponenten bedeuten Kehrwerte.\n\n$$\nx^{1/2} = 9,\\qquad x^{1/4} = 3,\\qquad x^{-1/2} = \\dfrac{1}{9},\\qquad x^{3/4} = 27\n$$\n\nAußerdem gilt $x^{0}=1$ für dieses von null verschiedene $x$."
+    "solution_overview": ""
   },
   "MATH 2.154": {
     "title": "Klausuraufgaben – 18",
-    "context": "A calibration reading $x$is accepted when its distance from the target 5 is at most 3 units, written$|x-5|\\le 3$. A warning band uses the strict version$|x-5|<3$. The endpoint readings are physically possible and all readings are real.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "The accepted interval is$[2,8]$.",
-      "$x=2$is accepted.",
-      "$x=8$lies in the warning band.",
-      "There are$7$ accepted integer readings.",
-      "$|x-5|>3$ means $2<x<8$."
+      "Das Annahmeintervall ist $[2,8]$.",
+      "$x=2$ wird angenommen.",
+      "$x=8$ liegt in der Warnzone.",
+      "Es gibt $7$ angenommene ganzzahlige Messwerte.",
+      "$|x-5|>3$ bedeutet $2<x<8$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nTranslate the closed distance inequality$|x-5|\\le3$in ein geschlossenes Intervall um das Ziel$5$.\n\n$$\n[2,8]\n$$\n\nUnfold:\n\n$$\n|x-5|\\le3\\Longleftrightarrow-3\\le x-5\\le3\n$$\n\nAdd $5$through the chain:\n\n$$\n2\\le x\\le8\n$$\n\nDas ist das geschlossene Intervall$[2,8]$. Endpoints: $|2-5|=3\\le3$ and $|8-5|=3\\le3$, both accepted. Die Behauptung matches.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nEin geschlossenes Akzeptanzintervall umfasst jeden endlichen Endpunkt, testen Sie also die Ungleichung dort.\n\n$$\nx\n$$\n\n$$\nx=2\n$$\n\nAn endpoint of the closed acceptance interval is included.\n\nPrüfe die Akzeptanzungleichheit bei$x=2$:\n\n$$\n| 2-5 |=|-3|\n$$\n\n$$\n3\n$$\n\n$$\n|2-5|\\le3\n$$\n\nThe inequality holds, so$x=2$is accepted.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nDas Warnband ist die strikte Ungleichheit$|x-5|<3$, so endpoints of the acceptance interval are excluded.\n\n$$\nx\n$$\n\n$$\nx=8\n$$\n\nBei the right endpoint$x=8$:\n\n$$\n|8-5|=3\n$$\n\nThe warning test requires$|x-5|<3$, but\n\n$$\n3\\nless3\n$$\n\nAlso $x=8$fails the strict test. It is accepted ($|8-5|\\le3$) aber nicht im Warnband.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nCount the integers lying in the closed acceptance interval$[2,8]$ coming from $|x-5|\\le3$.\n\n$$\n7\n$$\n\nDie ganzen Zahlen von$2$ through $8$ are\n\n$$\n2,3,4,5,6,7,8\n$$\n\nThe inclusive count is\n\n$$\n8-2+1=7\n$$\n\nEs gibt genau$7$ accepted integer readings, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDer komplementäre Bereich liegt außerhalb des geschlossenen Intervalls, nicht innerhalb der offenen Mitte.\n\n$$\n|x-5|>3\n$$\n\n$$\n2<x<8\n$$\n\nNach definition,\n\n$$\n|x-5|>3\\Longleftrightarrow\\bigl(x<2\\bigr)\\lor\\bigl(x>8\\bigr)\n$$\n\nDie Behauptung instead writes $2<x<8$, which is the warning band$|x-5|<3$.\n\nDiese beiden Regionen sind disjunkt.\n\n$$\n|x-5|>3\n$$\n\n$$\n2<x<8\n$$\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$|x-5|\\le3$ beschreibt das abgeschlossene Intervall $[2,8]$.\n\n$$\n[2,8]\n$$\n\n$$\n|x-5|\\le3\\Longleftrightarrow-3\\le x-5\\le3\n$$\n\n$$\n2\\le x\\le8\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDer Endpunkt $x=2$ gehört zum abgeschlossenen Annahmeintervall.\n\n$$\nx\n$$\n\n$$\nx=2\n$$\n\n$$\n| 2-5 |=|-3|\n$$\n\n$$\n3\n$$\n\n$$\n|2-5|\\le3\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Warnzone ist streng $|x-5|<3$; $x=8$ liegt nicht darin.\n\n$$\nx\n$$\n\n$$\nx=8\n$$\n\n$$\n|8-5|=3\n$$\n\n$$\n3\\nless3\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie ganzen Zahlen in $[2,8]$ sind genau sieben Stück.\n\n$$\n7\n$$\n\n$$\n2,3,4,5,6,7,8\n$$\n\n$$\n8-2+1=7\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$|x-5|>3$ beschreibt das Äußere, nicht $(2,8)$.\n\n$$\n|x-5|>3\n$$\n\n$$\n2<x<8\n$$\n\n$$\n|x-5|>3\\Longleftrightarrow\\bigl(x<2\\bigr)\\lor\\bigl(x>8\\bigr)\n$$\n\n$$\n|x-5|>3\n$$\n\n$$\n2<x<8\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Der Abstand zum Zielwert $5$ wird durch $|x-5|$ gemessen. Die Akzeptanzregel $|x-5|\\le3$ ist das abgeschlossene Intervall $[2,8]$, während das Warnband $|x-5|<3$ das offene Intervall $(2,8)$ ist.\n\nDie Endpunkte $x=2$ und $x=8$ werden akzeptiert, liegen aber nicht im Warnband. Es gibt $7$ ganze Zahlen in $[2,8]$. Die komplementäre Ungleichung $|x-5|>3$ ist $x<2$ oder $x>8$, nicht das offene Mittelintervall."
+    "solution_overview": ""
   },
   "MATH 2.155": {
     "title": "Klausuraufgaben – 19",
-    "context": "An algebra archive stores two reelle Zahlen $a$ and $b$nur durch die Aufzeichnungen$a+b=11$ and $ab=18$. Die ursprüngliche Reihenfolge wurde nicht aufgezeichnet, daher muss jede Schlussfolgerung aus symmetrischen Identitäten oder aus dem Quadratischen mit Wurzeln folgen$a$ and $b$Bei der Prüfung wird keine dezimale Näherung verwendet.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$a^2+b^2=85$.",
       "$(a-b)^2=49$.",
@@ -2936,31 +2936,31 @@
       "$\\dfrac1a+\\dfrac1b=\\dfrac{18}{11}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSum of squares follows from the square of the sum after the mixed product is peeled off.\n\nBeginnen vom Quadrat der aufgezeichneten Summe:\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\nRearrange to isolate the sum of squares:\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\nSetze $a+b=11$ and $ab=18$:\n\n$$\na^2+b^2=11^2-2\\cdot18\n$$\n\n$$\na^2+b^2=121-36\n$$\n\n$$\na^2+b^2=85\n$$\n\nDie Behauptung behauptet den gleichen Wert$85$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie quadratische Lücke$(a-b)^{2}$is another elementary identity in$a+b$ and $ab$.\n\nMultipliziere aus $(a-b)^{2}$and rewrite in elementary symmetric form:\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\nSetze the archive values:\n\n$$\n(a-b)^2=11^2-4\\cdot18\n$$\n\n$$\n(a-b)^2=121-72\n$$\n\n$$\n(a-b)^2=49\n$$\n\nDie Behauptung ist$(a-b)^2=49$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nKuben erweitern sich um die gleiche Summe und das gleiche Produkt; der mittlere Term ist$3ab(a+b)$.\n\nDie Kuben-Summen-Identität liest\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\nSetze $a+b=11$ and $ab=18$:\n\n$$\na^3+b^3=11^3-3\\cdot18\\cdot11\n$$\n\n$$\na^3+b^3=1331-594\n$$\n\n$$\na^3+b^3=737\n$$\n\nDie Behauptung asserts $738$, aber die Identität erzeugt$737$.\n\nDa $737\\ne738$, die Behauptung does not hold.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nThe unordered pair$\\{a,b\\}$ist genau die Wurzelmenge der monischen Quadratischen mit diesen Koeffizienten.\n\nBilden das monische Quadrat mit der Summe$a+b$and product$ab$:\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-11t+18=0\n$$\n\nFaktorisiere the linke Seite:\n\n$$\nt^2-11t+18=(t-2)(t-9)\n$$\n\nThe roots are therefore$t=2$ and $t=9$, so\n\n$$\n\\{a,b\\}=\\{2,9\\}\n$$\n\nDas passt zu den Behauptunged ungeordneten Paaren.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nSum of reciprocals is the elementary quotient of sum by product.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{18}{11}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\nSetze $a+b=11$ and $ab=18$:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{11}{18}\n$$\n\nDie Behauptung asserts $\\dfrac{18}{11}$. Da $\\dfrac{11}{18}\\neq\\dfrac{18}{11}$, die Behauptung does not hold.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Quadratsumme folgt aus $(a+b)^2$ nach Abziehen des Mischterms.\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\n$$\na^2+b^2=11^2-2\\cdot18\n$$\n\n$$\na^2+b^2=121-36\n$$\n\n$$\na^2+b^2=85\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$(a-b)^2=(a+b)^2-4ab$ liefert den behaupteten Wert.\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\n$$\n(a-b)^2=11^2-4\\cdot18\n$$\n\n$$\n(a-b)^2=121-72\n$$\n\n$$\n(a-b)^2=49\n$$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Kubensumme über Summe und Produkt ergibt nicht den behaupteten Wert.\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\n$$\na^3+b^3=11^3-3\\cdot18\\cdot11\n$$\n\n$$\na^3+b^3=1331-594\n$$\n\n$$\na^3+b^3=737\n$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Wurzelmenge ist $\\{2,9\\}$.\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-11t+18=0\n$$\n\n$$\nt^2-11t+18=(t-2)(t-9)\n$$\n\n$$\n\\{a,b\\}=\\{2,9\\}\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Kehrwertsumme ist $\\dfrac{a+b}{ab}$, nicht der behauptete Bruch.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{18}{11}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{11}{18}\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Nur die elementarsymmetrischen Daten $a+b=11$ und $ab=18$ sind aufgezeichnet. Jede Behauptung muss aus diesen beiden Zahlen folgen (oder aus dem monischen Quadrat $t^{2}-11t+18=0$ mit den Wurzeln $a$ und $b$).\n\nDie zugrunde liegenden Identitäten sind\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nEinsetzen der Archivwerte liefert $a^{2}+b^{2}=85$, $(a-b)^{2}=49$, $a^{3}+b^{3}=737$ und $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{11}{18}$. Die Faktorisierung $t^{2}-11t+18=(t-2)(t-9)$ zeigt $\\{a,b\\}=\\{2,9\\}$."
+    "solution_overview": ""
   },
   "MATH 2.156": {
     "title": "Klausuraufgaben – 20",
-    "context": "A symbolic calculator studies $R(x)=\\dfrac{x^2-16}{x-4}$ and $S(x)=\\dfrac1{x-4}+\\dfrac1{x+4}$. Der erste Ausdruck ist definiert für$x\\ne 4$, while the second also excludes$x=-4$. Simplifications must retain these original domain restrictions even after factors cancel.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "$R(x)=x+4$ on its domain.",
+      "$R(x)=x+4$ auf ihrer Definitionsmenge.",
       "$R(4)=8$.",
       "$S(x)=\\dfrac{2x}{x^2-16}$.",
       "$S(0)=0$.",
-      "$S(x)=0$ has exactly one reelle Lösung."
+      "$S(x)=0$ hat genau eine reelle Lösung."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAuf der Definitionsmenge$x\\ne4$, faktorisieren Sie die Differenz von Quadraten im Zähler und heben Sie den gemeinsamen linearen Faktor auf.\n\nFaktorisiere first:\n\n$$\nx^{2}-16=(x-4)(x+4)\n$$\n\nDivide by the remaining linear factor:\n\n$$\nR(x)=\\dfrac{(x-4)(x+4)}{x-4}\n$$\n\n$$\nR(x)=x+4\n$$\n\n$$\n(x\\ne4)\n$$\n\nDie vereinfachte Form ist genau$x+4$Auf dem domäine\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nThe expression$R(x)$is undefined at the excluded point$x=4$, so dass der Wert$R(4)$ist nicht durch die Formel definiert.\n\n$$\nR(4)\n$$\n\n$$\nR(4)=8\n$$\n\nSetze the forbidden input into the original fraction:\n\n$$\nR(4)=\\dfrac{4^{2}-16}{4-4}\n$$\n\n$$\n\\dfrac{0}{0}\n$$\n\nDer Nenner verschwindet, also$R$hat zu diesem Zeitpunkt keinen endlichen Wert.\n\nDie Behauptung behauptet$R(4)=8$, which would require evaluating past a hole in the domain.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nKombinieren die beiden Kehrwerte über den gemeinsamen Nenner$(x-4)(x+4)$.\n\n$$\nS(x)=\\dfrac{1}{x-4}+\\dfrac{1}{x+4}\n$$\n\n$$\n\\dfrac{(x+4)+(x-4)}{(x-4)(x+4)}\n$$\n\n$$\n\\dfrac{2x}{x^2-16}\n$$\n\n$$\n(x\\neq\\pm4)\n$$\n\nDas entspricht der Behauptunged vereinfachten Form.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nAuf der Definitionsmenge$x\\neq\\pm4$, combine the reciprocals in$S$und an der zulässigen Stelle bewerten$x=0$.\n\nWiederherstellen der Einzelfraktionsform:\n\n$$\nS(x)=\\dfrac{1}{x-4}+\\dfrac{1}{x+4}\n$$\n\n$$\n\\dfrac{2x}{x^2-16}\n$$\n\n$$\n(x\\neq\\pm4)\n$$\n\nSetze $x=0$:\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-16}\n$$\n\n$$\n\\dfrac{0}{-16}\n$$\n\n$$\n0\n$$\n\nDa $0\\neq\\pm4$, the point is in the domain, and the value equals die Behauptunged$0$.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nSolve $S(x)=0$Auf dem domäine$x\\ne\\pm4$.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\nVerwenden des wiederhergestellten Formulars:\n\n$$\n\\dfrac{2x}{x^{2}-16}=0\n$$\n\nEin Bruch ist nur dann Null, wenn sein Zähler Null ist und der Nenner nicht:\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nAnd $0\\ne\\pm4$, so $x=0$is admissible.\n\nNo other numerator root exists, so there is exactly one reelle Lösung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nAuf $x\\neq4$ kürzt die Differenz der Quadrate zu $x+4$.\n\n$$\nx^{2}-16=(x-4)(x+4)\n$$\n\n$$\nR(x)=\\dfrac{(x-4)(x+4)}{x-4}\n$$\n\n$$\nR(x)=x+4\n$$\n\n$$\n(x\\ne4)\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBei $x=4$ ist $R$ nicht definiert.\n\n$$\nR(4)\n$$\n\n$$\nR(4)=8\n$$\n\n$$\nR(4)=\\dfrac{4^{2}-16}{4-4}\n$$\n\n$$\n\\dfrac{0}{0}\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Summe der Kehrwerte hat den Nenner $x^2-16$.\n\n$$\nS(x)=\\dfrac{1}{x-4}+\\dfrac{1}{x+4}\n$$\n\n$$\n\\dfrac{(x+4)+(x-4)}{(x-4)(x+4)}\n$$\n\n$$\n\\dfrac{2x}{x^2-16}\n$$\n\n$$\n(x\\neq\\pm4)\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nEinsetzen von $x=0$ in $S$ liefert $0$.\n\n$$\nS(x)=\\dfrac{1}{x-4}+\\dfrac{1}{x+4}\n$$\n\n$$\n\\dfrac{2x}{x^2-16}\n$$\n\n$$\n(x\\neq\\pm4)\n$$\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-16}\n$$\n\n$$\n\\dfrac{0}{-16}\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$S(x)=0$ hat auf der Definitionsmenge genau eine reelle Lösung.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\n$$\n\\dfrac{2x}{x^{2}-16}=0\n$$\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Arbeite auf den angegebenen Definitionsmengen: $R$ schließt $x=4$ aus, und $S$ schließt $x=\\pm4$ aus. Faktoriere und kürze vor dem Auswerten, und fasse die beiden Kehrwerte in $S$ über einem gemeinsamen Nenner zusammen.\n\n$$\nR(x) = \\dfrac{x^{2}-16}{x-4} = \\dfrac{(x-4)(x+4)}{x-4} = x+4\\quad(x\\ne4)\n$$\n\n$$\nS(x) = \\dfrac{1}{x-4}+\\dfrac{1}{x+4} = \\dfrac{2x}{x^{2}-16}\\quad(x\\ne\\pm4)\n$$\n\nInsbesondere gilt $S(0)=0$, und $S(x)=0$ erzwingt $x=0$ auf dem Definitionsbereich."
+    "solution_overview": ""
   }
 }
