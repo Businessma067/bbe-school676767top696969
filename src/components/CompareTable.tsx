@@ -1,11 +1,13 @@
+import { Fragment } from "react";
 import { Check, X } from "lucide-react";
 
-type ColKey = "free" | "full";
+type ColKey = "free" | "full" | "wiso";
 
 type ComparisonCell = {
   label: string;
   free: string;
   full: string;
+  wiso: string;
 };
 
 type ComparisonSection = {
@@ -17,25 +19,26 @@ const comparisonSections: ComparisonSection[] = [
   {
     title: "Features",
     rows: [
-      { label: "Math Tasks", free: "50", full: "800+" },
-      { label: "Economics Tasks", free: "35", full: "500+" },
-      { label: "English Tasks", free: "10", full: "240+" },
-      { label: "Textbook Theory", free: "❌", full: "Full materials" },
-      { label: "Answer Sheet Simulator", free: "❌", full: "tick" },
-      { label: "Interactive Speed Simulators", free: "❌", full: "tick" },
-      { label: "Mock Exams", free: "❌", full: "7+ exams with answer sheets" },
+      { label: "Math Tasks", free: "50", full: "1000+", wiso: "1500+" },
+      { label: "Economics Tasks", free: "35", full: "600+", wiso: "800+" },
+      { label: "English Tasks", free: "10", full: "400+", wiso: "❌" },
+      { label: "German Reading", free: "❌", full: "❌", wiso: "Included" },
+      { label: "Textbook Theory", free: "❌", full: "Full materials", wiso: "Wirtschaft verstehen" },
+      { label: "Answer Sheet Simulator", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Interactive Speed Simulators", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Mock Exams", free: "❌", full: "7+ exams with answer sheets", wiso: "WiSo mocks with answer sheets" },
     ],
   },
   {
     title: "Insider Guide",
     rows: [
-      { label: "Step by step explanations", free: "tick", full: "tick" },
-      { label: "AI Study Assistant", free: "❌", full: "tick" },
-      { label: "Tactical Trap Callouts", free: "❌", full: "tick" },
-      { label: "Dynamic Focus Heatmap", free: "❌", full: "tick" },
-      { label: "Support Chat", free: "❌", full: "tick" },
-      { label: "Achievements & Medals Tab", free: "❌", full: "tick" },
-      { label: "OSA Guide", free: "❌", full: "tick" },
+      { label: "Step by step explanations", free: "tick", full: "tick", wiso: "tick" },
+      { label: "AI Study Assistant", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Tactical Trap Callouts", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Dynamic Focus Heatmap", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Support Chat", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Achievements & Medals Tab", free: "❌", full: "tick", wiso: "tick" },
+      { label: "OSA Guide", free: "❌", full: "tick", wiso: "tick" },
     ],
   },
 ];
@@ -43,7 +46,10 @@ const comparisonSections: ComparisonSection[] = [
 const columns: { key: ColKey; label: string }[] = [
   { key: "free", label: "Free Sample" },
   { key: "full", label: "BBE Full Course" },
+  { key: "wiso", label: "WiSo Full Course" },
 ];
+
+const COL_COUNT = columns.length + 1;
 
 function renderValue(value: string) {
   if (value === "tick" || value === "✔️") {
@@ -55,7 +61,6 @@ function renderValue(value: string) {
   return value;
 }
 
-
 export function CompareTable({
   highlight,
   heading = "Compare plans",
@@ -66,8 +71,12 @@ export function CompareTable({
   subheading?: string;
 }) {
   const dimClass = "opacity-30 grayscale";
-  const hiClass =
+  const hiClassBbe =
     "relative bg-gradient-to-b from-[#C2643A0d] to-transparent ring-2 ring-[#C2643A] shadow-[0_0_24px_-4px_rgba(194,100,58,0.55)]";
+  const hiClassWiso =
+    "relative bg-gradient-to-b from-indigo-500/10 to-transparent ring-2 ring-indigo-600 shadow-[0_0_24px_-4px_rgba(79,70,229,0.45)]";
+
+  const hiClassFor = (key: ColKey) => (key === "wiso" ? hiClassWiso : hiClassBbe);
 
   return (
     <section className="mt-14 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
@@ -81,7 +90,7 @@ export function CompareTable({
 
         {/* Desktop table */}
         <div className="hidden overflow-x-auto rounded-2xl border border-border bg-background sm:block">
-          <table className="w-full min-w-[480px] border-collapse text-[11px]">
+          <table className="w-full min-w-[640px] border-collapse text-[11px]">
             <thead>
               <tr className="border-b border-border bg-muted/50">
                 <th className="sticky left-0 z-10 w-[170px] bg-muted px-2.5 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
@@ -89,12 +98,12 @@ export function CompareTable({
                 </th>
                 {columns.map((col) => {
                   const isHi = highlight === col.key;
-                  const isDim = highlight && !isHi;
+                  const isDim = Boolean(highlight && !isHi);
                   return (
                     <th
                       key={col.key}
                       className={`px-2.5 py-1.5 text-center font-display text-[9px] font-semibold uppercase tracking-widest ${
-                        isHi ? "text-foreground bg-muted " + hiClass : "text-muted-foreground bg-muted/50"
+                        isHi ? `text-foreground bg-muted ${hiClassFor(col.key)}` : "bg-muted/50 text-muted-foreground"
                       } ${isDim ? dimClass : ""}`}
                     >
                       {col.label}
@@ -105,10 +114,10 @@ export function CompareTable({
             </thead>
             <tbody>
               {comparisonSections.map((section, sectionIdx) => (
-                <>
-                  <tr key={section.title} className="border-t border-border">
+                <Fragment key={section.title}>
+                  <tr className="border-t border-border">
                     <td
-                      colSpan={3}
+                      colSpan={COL_COUNT}
                       className="sticky left-0 z-10 bg-background px-2.5 py-1 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-caramel-deep"
                     >
                       {section.title}
@@ -124,12 +133,12 @@ export function CompareTable({
                       </td>
                       {columns.map((col) => {
                         const isHi = highlight === col.key;
-                        const isDim = highlight && !isHi;
+                        const isDim = Boolean(highlight && !isHi);
                         return (
                           <td
                             key={col.key}
                             className={`px-2.5 py-1.5 text-center font-medium text-foreground/80 ${
-                              isHi ? hiClass : ""
+                              isHi ? hiClassFor(col.key) : ""
                             } ${isDim ? dimClass : ""}`}
                           >
                             {renderValue(row[col.key])}
@@ -138,12 +147,12 @@ export function CompareTable({
                       })}
                     </tr>
                   ))}
-                  {sectionIdx < comparisonSections.length - 1 && (
+                  {sectionIdx < comparisonSections.length - 1 ? (
                     <tr className="border-t border-border">
-                      <td colSpan={3} className="h-1 bg-background" />
+                      <td colSpan={COL_COUNT} className="h-1 bg-background" />
                     </tr>
-                  )}
-                </>
+                  ) : null}
+                </Fragment>
               ))}
             </tbody>
           </table>
@@ -152,7 +161,7 @@ export function CompareTable({
         {/* Mobile unified table */}
         <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-0 border-collapse text-[10px]">
+            <table className="w-full min-w-[520px] border-collapse text-[10px]">
               <thead>
                 <tr className="border-b border-border bg-muted/50">
                   <th className="sticky left-0 z-10 w-[120px] bg-muted px-2 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
@@ -160,12 +169,12 @@ export function CompareTable({
                   </th>
                   {columns.map((col) => {
                     const isHi = highlight === col.key;
-                    const isDim = highlight && !isHi;
+                    const isDim = Boolean(highlight && !isHi);
                     return (
                       <th
                         key={col.key}
                         className={`px-1.5 py-1.5 text-center font-display text-[9px] font-semibold uppercase tracking-widest ${
-                          isHi ? "text-foreground bg-muted " + hiClass : "text-muted-foreground bg-muted/50"
+                          isHi ? `text-foreground bg-muted ${hiClassFor(col.key)}` : "bg-muted/50 text-muted-foreground"
                         } ${isDim ? dimClass : ""}`}
                       >
                         {col.label}
@@ -176,10 +185,10 @@ export function CompareTable({
               </thead>
               <tbody>
                 {comparisonSections.map((section, sectionIdx) => (
-                  <>
-                    <tr key={section.title} className="border-t border-border">
+                  <Fragment key={section.title}>
+                    <tr className="border-t border-border">
                       <td
-                        colSpan={3}
+                        colSpan={COL_COUNT}
                         className="sticky left-0 z-10 bg-background px-2 py-1 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-caramel-deep"
                       >
                         {section.title}
@@ -195,12 +204,12 @@ export function CompareTable({
                         </td>
                         {columns.map((col) => {
                           const isHi = highlight === col.key;
-                          const isDim = highlight && !isHi;
+                          const isDim = Boolean(highlight && !isHi);
                           return (
                             <td
                               key={col.key}
                               className={`px-1.5 py-1.5 text-center text-[10px] font-medium text-foreground/80 ${
-                                isHi ? hiClass : ""
+                                isHi ? hiClassFor(col.key) : ""
                               } ${isDim ? dimClass : ""}`}
                             >
                               {renderValue(row[col.key])}
@@ -209,12 +218,12 @@ export function CompareTable({
                         })}
                       </tr>
                     ))}
-                    {sectionIdx < comparisonSections.length - 1 && (
+                    {sectionIdx < comparisonSections.length - 1 ? (
                       <tr className="border-t border-border">
-                        <td colSpan={3} className="h-1 bg-background" />
+                        <td colSpan={COL_COUNT} className="h-1 bg-background" />
                       </tr>
-                    )}
-                  </>
+                    ) : null}
+                  </Fragment>
                 ))}
               </tbody>
             </table>
