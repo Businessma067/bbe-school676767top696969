@@ -15,36 +15,44 @@ const TILTS = [-1.55, 1.25, -0.7, 1.6, -1.15, 0.9] as const;
 const LIFTS = [0, 10, 4, 14, 2, 8] as const;
 
 function BinderClip({ accent }: { accent: Accent }) {
-  const body = accent === "wiso" ? "#4a5680" : "#5c574e";
-  const arm = accent === "wiso" ? "#6d79a3" : "#7a756b";
-  const shine = accent === "wiso" ? "#c5cce0" : "#d2cec4";
+  const shell = accent === "wiso" ? "#384264" : "#2f2c27";
+  const shellEdge = accent === "wiso" ? "#55628a" : "#4e4a42";
+  const wire = accent === "wiso" ? "#c2c8d8" : "#d7d2c8";
   return (
     <svg
-      viewBox="0 0 48 58"
-      className="pointer-events-none h-12 w-10 drop-shadow-[0_2px_3px_rgba(0,0,0,0.28)]"
+      viewBox="0 0 64 70"
+      className="pointer-events-none h-14 w-12 drop-shadow-[0_2px_2px_rgba(0,0,0,0.22)]"
       aria-hidden
     >
-      {/* spring loop */}
+      {/* left binder handle */}
       <path
-        d="M16 22 V12.5 C16 7.5 20 3.8 24.8 3.8 C29.6 3.8 33.6 7.5 33.6 12.5 V22"
+        d="M22 34 V16 C22 9.5 26.8 4.5 32 4.5"
         fill="none"
-        stroke={arm}
-        strokeWidth="3.4"
+        stroke={wire}
+        strokeWidth="2.6"
         strokeLinecap="round"
       />
-      {/* clip jaws */}
+      {/* right binder handle */}
       <path
-        d="M10 20.5 H38 C40.2 20.5 41.8 22.4 41.5 24.5 L39.2 42.5 C38.9 45.1 36.7 47 34 47 H14 C11.3 47 9.1 45.1 8.8 42.5 L6.5 24.5 C6.2 22.4 7.8 20.5 10 20.5 Z"
-        fill={body}
+        d="M42 34 V16 C42 9.5 37.2 4.5 32 4.5"
+        fill="none"
+        stroke={wire}
+        strokeWidth="2.6"
+        strokeLinecap="round"
+      />
+      {/* folded metal body */}
+      <path
+        d="M14 32 H50 L46 62 H18 Z"
+        fill={shell}
       />
       <path
-        d="M12.2 24 H35.8 C36.9 24 37.7 25 37.5 26.1 L35.8 39.4 C35.6 40.7 34.5 41.6 33.2 41.6 H14.8 C13.5 41.6 12.4 40.7 12.2 39.4 L10.5 26.1 C10.3 25 11.1 24 12.2 24 Z"
-        fill={shine}
-        opacity="0.22"
+        d="M18 36 H46 L43.5 56 H20.5 Z"
+        fill={shellEdge}
+        opacity="0.55"
       />
-      {/* handle ridge */}
-      <rect x="18" y="27.5" width="12" height="3.2" rx="1.2" fill={shine} opacity="0.55" />
-      <rect x="20" y="33" width="8" height="5.5" rx="1" fill={shine} opacity="0.2" />
+      {/* top fold lip */}
+      <rect x="16" y="30" width="32" height="6" rx="1.5" fill={shellEdge} />
+      <rect x="20" y="31.5" width="24" height="2" rx="1" fill={wire} opacity="0.35" />
     </svg>
   );
 }
