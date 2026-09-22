@@ -173,8 +173,137 @@ export function buildTutorExam(
   const pool = poolFromSections(sections, sectionId);
   if (pool.length === 0) return [];
 
+  // How-it-works recording can pin the first questions (see scripts/record-tutor-exam.py).
+  const hiw =
+    typeof window !== "undefined"
+      ? (
+          window as unknown as {
+            __HIW_TUTOR?: {
+              terms: string[];
+              modes?: TutorExamMode[];
+              choiceTerms?: string[][];
+            };
+          }
+        ).__HIW_TUTOR
+      : undefined;
+
+  if (hiw?.terms?.length) {
+    const byTerm = new Map(pool.map((c) => [c.term, c]));
+    const forced: TutorExamQuestion[] = [];
+    for (let i = 0; i < hiw.terms.length; i++) {
+      const card = byTerm.get(hiw.terms[i]!);
+      if (!card) continue;
+      const mode = hiw.modes?.[i] ?? (Math.random() < 0.5 ? "define" : "identify");
+      const q = makeQuestionForced(card, pool, locale, mode, hiw.choiceTerms?.[i]);
+      forced.push(q);
+    }
+    if (forced.length) {
+      const rest = shuffleCopy(pool.filter((c) => !hiw.terms.includes(c.term)))
+        .slice(0, Math.max(0, Math.min(size, pool.length) - forced.length))
+        .map((card) => makeQuestion(card, pool, locale));
+      return [...forced, ...rest];
+    }
+  }
+
   const picked = shuffleCopy(pool).slice(0, Math.min(size, pool.length));
   return picked.map((card) => makeQuestion(card, pool, locale));
+}
+
+function makeQuestionForced(
+  card: TutorExamCard,
+  pool: TutorExamCard[],
+  locale: TutorExamLocale,
+  mode: TutorExamMode,
+  choiceTerms?: string[],
+): TutorExamQuestion {
+  const prompts = TUTOR_PROMPTS[locale];
+  if (mode === "define") {
+    if (choiceTerms?.length) {
+      const byTerm = new Map(pool.map((c) => [c.term, c]));
+      const ordered = choiceTerms
+        .map((t) => byTerm.get(t))
+        .filter((c): c is TutorExamCard => !!c);
+      if (ordered.length >= CHOICE_COUNT) {
+        const choices = ordered.slice(0, CHOICE_COUNT).map((c, i) => ({
+          id: `opt-${i}-${c.id}`,
+          label: c.explanation,
+        }));
+        const correctIdx = ordered.findIndex((c) => c.id === card.id);
+        return {
+          id: `q-define-${card.id}-hiw`,
+          mode,
+          prompt: prompts.define,
+          stem: card.term,
+          choices,
+          correctChoiceId: choices[correctIdx]?.id ?? choices[0]!.id,
+          revealTerm: card.term,
+          revealExplanation: card.explanation,
+          sectionTitle: card.sectionTitle,
+        };
+      }
+    }
+    const distractors = shuffleCopy(
+      uniqueByLabel(pool, (c) => c.explanation, card.id),
+    );
+    const { choices, correctChoiceId } = buildChoices(
+      card,
+      distractors,
+      (c) => c.explanation,
+    );
+    return {
+      id: `q-define-${card.id}-hiw`,
+      mode,
+      prompt: prompts.define,
+      stem: card.term,
+      choices,
+      correctChoiceId,
+      revealTerm: card.term,
+      revealExplanation: card.explanation,
+      sectionTitle: card.sectionTitle,
+    };
+  }
+
+  let distractors = shuffleCopy(uniqueByLabel(pool, (c) => c.term, card.id));
+  if (choiceTerms?.length) {
+    const byTerm = new Map(pool.map((c) => [c.term, c]));
+    const ordered = choiceTerms
+      .map((t) => byTerm.get(t))
+      .filter((c): c is TutorExamCard => !!c);
+    if (ordered.length >= CHOICE_COUNT) {
+      const choices = ordered.slice(0, CHOICE_COUNT).map((c, i) => ({
+        id: `opt-${i}-${c.id}`,
+        label: c.term,
+      }));
+      const correctIdx = ordered.findIndex((c) => c.id === card.id);
+      return {
+        id: `q-identify-${card.id}-hiw`,
+        mode,
+        prompt: prompts.identify,
+        stem: card.explanation,
+        choices,
+        correctChoiceId: choices[correctIdx]?.id ?? choices[0]!.id,
+        revealTerm: card.term,
+        revealExplanation: card.explanation,
+        sectionTitle: card.sectionTitle,
+      };
+    }
+    distractors = choiceTerms
+      .filter((t) => t !== card.term)
+      .map((t) => byTerm.get(t))
+      .filter((c): c is TutorExamCard => !!c);
+  }
+  const { choices, correctChoiceId } = buildChoices(card, distractors, (c) => c.term);
+  return {
+    id: `q-identify-${card.id}-hiw`,
+    mode,
+    prompt: prompts.identify,
+    stem: card.explanation,
+    choices,
+    correctChoiceId,
+    revealTerm: card.term,
+    revealExplanation: card.explanation,
+    sectionTitle: card.sectionTitle,
+  };
 }
 
 export const TUTOR_GREETINGS = [

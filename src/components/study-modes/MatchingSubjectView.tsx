@@ -145,12 +145,32 @@ export function MatchingSubjectView({
   const startRound = useCallback(
     (nextSection: string | "all", nextRound?: number) => {
       const pool = poolFromSections(subject.sections, nextSection);
-      // Demo uses a normal 5-pair board; reshuffle / new round stay locked via attemptDemoNav.
-      const picked = pickRound(pool, ROUND_SIZE);
-      const ids = picked.map((p) => p.id);
+      // How-it-works recording can pin left/right order (see scripts/record-matching.py).
+      const hiw = (
+        window as unknown as {
+          __HIW_MATCHING?: { left: string[]; right: string[] };
+        }
+      ).__HIW_MATCHING;
+      let picked = pickRound(pool, ROUND_SIZE);
+      let ids = picked.map((p) => p.id);
+      let left = shuffleCopy(ids);
+      let right = shuffleCopy(ids);
+      if (hiw?.left?.length && hiw?.right?.length) {
+        const byTerm = new Map(pool.map((p) => [p.term, p]));
+        const forced = hiw.left
+          .map((term) => byTerm.get(term))
+          .filter((p): p is Pair => !!p);
+        if (forced.length === hiw.left.length) {
+          picked = forced;
+          ids = forced.map((p) => p.id);
+          const idByTerm = new Map(forced.map((p) => [p.term, p.id]));
+          left = hiw.left.map((t) => idByTerm.get(t)!).filter(Boolean);
+          right = hiw.right.map((t) => idByTerm.get(t)!).filter(Boolean);
+        }
+      }
       setPairs(picked);
-      setLeftOrder(shuffleCopy(ids));
-      setRightOrder(shuffleCopy(ids));
+      setLeftOrder(left);
+      setRightOrder(right);
       setSelectedLeft(null);
       setSelectedRight(null);
       setMatched(new Set());

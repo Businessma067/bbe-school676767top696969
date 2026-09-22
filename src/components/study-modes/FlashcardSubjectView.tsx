@@ -292,14 +292,26 @@ export function FlashcardSubjectView({
         // Next card enters from the opposite side of the swipe (deck feel).
         const from = dir === "right" ? "left" : "right";
         setEnterFrom(from);
-        const { index: nextIndex, queue } = takeNextFromQueue(
-          queueRef.current,
-          deckRef.current,
-          nextProgress,
-          key,
-        );
-        queueRef.current = queue;
-        setIndex(nextIndex);
+        // How-it-works recording can pin the next terms (see scripts/record-flashcards.py).
+        const hiwNext = (window as unknown as { __HIW_FLASH_NEXT?: string[] }).__HIW_FLASH_NEXT;
+        const forcedTerm = Array.isArray(hiwNext) ? hiwNext.shift() : undefined;
+        const forcedIdx =
+          forcedTerm != null
+            ? deckRef.current.findIndex((c) => c.term === forcedTerm)
+            : -1;
+        if (forcedIdx >= 0) {
+          setIndex(forcedIdx);
+          queueRef.current = [];
+        } else {
+          const { index: nextIndex, queue } = takeNextFromQueue(
+            queueRef.current,
+            deckRef.current,
+            nextProgress,
+            key,
+          );
+          queueRef.current = queue;
+          setIndex(nextIndex);
+        }
         setSeen((n) => n + 1);
         window.setTimeout(() => {
           setEnterFrom(null);
