@@ -850,7 +850,7 @@ body.flashcard-swiping {
 /* Why Us — Custom mock builder process orbit */
 .mock-builder-orbit {
   color: color-mix(in oklab, var(--color-caramel-deep) 88%, white);
-  --orbit-cycle: 14s;
+  --orbit-cycle: 10s;
 }
 
 .mock-builder-orbit-ring {
@@ -859,11 +859,11 @@ body.flashcard-swiping {
 
 /*
   Traveling arc on pathLength=100.
-  Tip reaches each node every 20% of the lap (5 steps).
+  Short dash keeps the glowing tip on the active node as highlights fire.
 */
 .mock-builder-orbit-progress {
   color: var(--color-caramel-deep);
-  stroke-dasharray: 14 86;
+  stroke-dasharray: 8 92;
   transform-origin: 80px 80px;
   transform: rotate(-90deg);
   animation: mock-builder-orbit-draw var(--orbit-cycle) linear infinite;
@@ -896,17 +896,7 @@ body.flashcard-swiping {
 
 @keyframes mock-builder-orbit-dot-hit {
   0%,
-  2%,
-  18%,
-  100% {
-    border-color: rgba(255, 255, 255, 0.2);
-    background: color-mix(in oklab, var(--color-why-us-card) 72%, #1f1c18);
-    color: color-mix(in oklab, var(--color-why-us-fg) 62%, transparent);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    transform: translate(-50%, -50%) scale(1);
-  }
-  4%,
-  12% {
+  10% {
     border-color: color-mix(in oklab, var(--color-caramel-deep) 80%, white);
     background: color-mix(in oklab, var(--color-caramel-deep) 30%, #1a1612);
     color: #fff4ef;
@@ -916,18 +906,24 @@ body.flashcard-swiping {
       0 0 14px color-mix(in oklab, var(--color-caramel-deep) 45%, transparent);
     transform: translate(-50%, -50%) scale(1.08);
   }
+  16%,
+  100% {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: color-mix(in oklab, var(--color-why-us-card) 72%, #1f1c18);
+    color: color-mix(in oklab, var(--color-why-us-fg) 62%, transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @keyframes mock-builder-orbit-label-hit {
   0%,
-  2%,
-  18%,
+  10% {
+    color: color-mix(in oklab, var(--color-caramel-deep) 45%, white);
+  }
+  16%,
   100% {
     color: color-mix(in oklab, var(--color-why-us-fg) 48%, transparent);
-  }
-  4%,
-  12% {
-    color: color-mix(in oklab, var(--color-caramel-deep) 45%, white);
   }
 }
 

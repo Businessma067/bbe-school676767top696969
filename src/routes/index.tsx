@@ -582,7 +582,8 @@ function MockBuilderOrbit() {
     { label: "Start" },
   ] as const;
 
-  const cycleSec = 14;
+  // Slightly faster lap; short arc so the tip stays with each node highlight.
+  const cycleSec = 10;
   const stepSec = cycleSec / steps.length;
 
   return (
@@ -591,7 +592,7 @@ function MockBuilderOrbit() {
       aria-hidden
       style={{ ["--orbit-cycle" as string]: `${cycleSec}s` }}
     >
-      <div className="relative h-[12.5rem] w-[12.5rem] sm:h-[13.5rem] sm:w-[13.5rem]">
+      <div className="relative h-[14.5rem] w-[14.5rem] sm:h-[15.5rem] sm:w-[15.5rem]">
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 160 160"
@@ -600,7 +601,7 @@ function MockBuilderOrbit() {
           <circle
             cx="80"
             cy="80"
-            r="48"
+            r="44"
             className="mock-builder-orbit-ring"
             stroke="currentColor"
             strokeWidth="1.5"
@@ -608,7 +609,7 @@ function MockBuilderOrbit() {
           <circle
             cx="80"
             cy="80"
-            r="48"
+            r="44"
             className="mock-builder-orbit-progress"
             stroke="currentColor"
             strokeWidth="2.25"
@@ -620,33 +621,35 @@ function MockBuilderOrbit() {
         {steps.map((step, index) => {
           const angle = -90 + index * (360 / steps.length);
           const rad = (angle * Math.PI) / 180;
-          const dotR = 30;
-          const labelR = 43.5;
+          // Match SVG ring r=44 in 160 viewBox → 27.5% from center.
+          const dotR = (44 / 160) * 100;
+          const labelR = 41;
           const dx = 50 + Math.cos(rad) * dotR;
           const dy = 50 + Math.sin(rad) * dotR;
           const lx = 50 + Math.cos(rad) * labelR;
           const ly = 50 + Math.sin(rad) * labelR;
+          const delay = `${index * stepSec}s`;
           return (
             <div key={step.label}>
               <span
                 className="mock-builder-orbit-dot absolute grid h-7 w-7 place-items-center rounded-full border text-[10px] font-semibold tabular-nums sm:h-8 sm:w-8 sm:text-[11px]"
-                style={{
-                  left: `${dx}%`,
-                  top: `${dy}%`,
-                  animationDelay: `${index * stepSec}s`,
-                }}
+                style={{ left: `${dx}%`, top: `${dy}%`, animationDelay: delay }}
               >
                 {index + 1}
               </span>
               <span
-                className="mock-builder-orbit-label absolute w-[4.6rem] text-center text-[10px] font-semibold leading-tight tracking-wide uppercase sm:w-[5rem] sm:text-[11px]"
-                style={{
-                  left: `${lx}%`,
-                  top: `${ly}%`,
-                  animationDelay: `${index * stepSec}s`,
-                }}
+                className="mock-builder-orbit-label absolute w-[3rem] text-center text-[9px] font-semibold leading-[1.05] tracking-wide uppercase sm:w-[3.25rem] sm:text-[10px]"
+                style={{ left: `${lx}%`, top: `${ly}%`, animationDelay: delay }}
               >
-                {step.label}
+                {step.label === "Subtopic" ? (
+                  <>
+                    Sub
+                    <br />
+                    topic
+                  </>
+                ) : (
+                  step.label
+                )}
               </span>
             </div>
           );
