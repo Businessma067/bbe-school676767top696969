@@ -1,7 +1,7 @@
 {
   "MATH 13.01": {
     "title": "Multiple-Choice-Raten",
-    "context": "Eine Multiple-Choice-Prüfung mit 10 Fragen hat 4 Antwortmöglichkeiten pro Frage (1 richtig). Person A rät jede Antwort zufällig (p = 0,25). Person B hat gelernt und kennt den Stoff gut (p = 0,90). Zum Bestehen braucht eine Person mindestens 7 von 10 korrekt. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Multiple-Choice-Prüfung mit 10 Fragen hat 4 Antwortmöglichkeiten pro Frage (1 richtig). Person A rät jede Antwort zufällig (p = 0,25). Person B hat gelernt und kennt den Stoff gut (p = 0,90). Zum Bestehen braucht eine Person mindestens 7 von 10 korrekt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit, dass Person A durch Raten ein perfektes 10/10 erzielt, ist kleiner als 0.01%.",
       "Die Wahrscheinlichkeit, dass Person B besteht, ist größer als die Wahrscheinlichkeit von genau 7.",
@@ -20,7 +20,7 @@
   },
   "MATH 13.02": {
     "title": "Freiwürfe — Rookie gegen Allstar",
-    "context": "Ein Basketballspieler wirft 10 Freiwürfe. Spieler A ist ein Rookie (p = 0,55 pro Wurf). Spieler B ist ein Allstar (p = 0,85 pro Wurf). Ein „Clutch“-Bonus wird vergeben, wenn mindestens 8 von 10 Würfen sitzen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Basketballspieler wirft 10 Freiwürfe. Spieler A ist ein Rookie (p = 0,55 pro Wurf). Spieler B ist ein Allstar (p = 0,85 pro Wurf). Ein „Clutch“-Bonus wird vergeben, wenn mindestens 8 von 10 Würfen sitzen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Spieler B hat mehr als 20% Chance, alle 10 Würfe hintereinander zu treffen.",
       "Die Wahrscheinlichkeit, dass Spieler A den Clutch-Bonus erhält, ist größer als die Wahrscheinlichkeit von genau 8.",
@@ -39,7 +39,7 @@
   },
   "MATH 13.03": {
     "title": "Werks-Chargenzertifizierung",
-    "context": "Ein Werk prüft 20 Einheiten pro Charge. Prüfer A ist frisch geschult (p = 0,75, jede Einheit korrekt zu klassifizieren). Prüfer B ist erfahren (p = 0,95). Die Zertifizierung einer Charge erfordert, mindestens 18 von 20 Einheiten korrekt zu klassifizieren. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Werk prüft 20 Einheiten pro Charge. Prüfer A ist frisch geschult (p = 0,75, jede Einheit korrekt zu klassifizieren). Prüfer B ist erfahren (p = 0,95). Die Zertifizierung einer Charge erfordert, mindestens 18 von 20 Einheiten korrekt zu klassifizieren. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit eines fehlerfreien Durchlaufs von Prüfer A ist kleiner als 0.2%.",
       "Die Wahrscheinlichkeit, dass Prüfer A die Charge zertifiziert, ist größer als die Wahrscheinlichkeit von genau 18.",
@@ -58,9 +58,9 @@
   },
   "MATH 13.04": {
     "title": "Erstkontakt-Lösungen",
-    "context": "Ein Callcenter erfasst, ob Anrufe beim ersten Kontakt gelöst werden, aus 15 Anrufen pro Schicht. Agent A ist Auszubildende/r (p = 0,60 pro Anruf). Agent B ist erfahrene/r Agent/in (p = 0,88 pro Anruf). Ein Leistungsbonus erfordert, mindestens 13 von 15 Anrufen beim ersten Kontakt zu lösen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Callcenter erfasst, ob Anrufe beim ersten Kontakt gelöst werden, aus 15 Anrufen pro Schicht. Agent A ist Auszubildende/r (p = 0,60 pro Anruf). Agent B ist erfahrene/r Agent/in (p = 0,88 pro Anruf). Ein Leistungsbonus erfordert, mindestens 13 von 15 Anrufen beim ersten Kontakt zu lösen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Agent B Wahrscheinlichkeit, alle 15 Anrufe beim ersten Kontakt zu klären ist größer als 15%.",
+      "Die Wahrscheinlichkeit, dass Agent B alle 15 Anrufe beim ersten Kontakt klärt, ist größer als 15%.",
       "Die Wahrscheinlichkeit, dass Agent A den Bonus erhält, ist größer als die Wahrscheinlichkeit von genau 13.",
       "Agent B ist mehr als 25-mal so wahrscheinlich wie Agent A, den Bonus zu erhalten.",
       "Die Anzahl der Erstkontakt-Lösungen von Agent A hat eine Standardabweichung größer als 2.",
@@ -77,7 +77,7 @@
   },
   "MATH 13.05": {
     "title": "Saatgut-Keimschalen",
-    "context": "Ein Gärtner bepflanzt Schalen mit 12 Samen. Saatgutcharge A ist Altbestand (p = 0,40 Keimchance pro Samen). Saatgutcharge B ist frischer Bestand (p = 0,85). Eine Schale gilt als „Vollschalen-Erfolg“, wenn mindestens 10 der 12 Samen keimen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Gärtner bepflanzt Schalen mit 12 Samen. Saatgutcharge A ist Altbestand (p = 0,40 Keimchance pro Samen). Saatgutcharge B ist frischer Bestand (p = 0,85). Eine Schale gilt als „Vollschalen-Erfolg“, wenn mindestens 10 der 12 Samen keimen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Saatgutcharge A hat weniger als 1-in-1000 Chance, dass alle 12 Samen keimen.",
       "Die Wahrscheinlichkeit, dass Charge B einen Vollschalen-Erfolg erzielt, ist größer als die Wahrscheinlichkeit von genau 10.",
@@ -96,7 +96,7 @@
   },
   "MATH 13.06": {
     "title": "Flughafen-Sicherheitsaudit",
-    "context": "Ein Flughafen prüft 25 Testgepäckstücke pro Audit. Agent A ist frisch zertifiziert (p = 0,70, ein verbotenes Stück korrekt zu markieren). Agent B ist Veteran (p = 0,93). Zum Bestehen des Audits muss ein Agent mindestens 22 von 25 Gepäckstücken korrekt markieren. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Flughafen prüft 25 Testgepäckstücke pro Audit. Agent A ist frisch zertifiziert (p = 0,70, ein verbotenes Stück korrekt zu markieren). Agent B ist Veteran (p = 0,93). Zum Bestehen des Audits muss ein Agent mindestens 22 von 25 Gepäckstücken korrekt markieren. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Agent A Wahrscheinlichkeit für einen fehlerfreien Screening-Lauf ist kleiner als 0.01%.",
       "Die Wahrscheinlichkeit, dass Agent B das Audit besteht, ist größer als die Wahrscheinlichkeit von genau 23.",
@@ -115,7 +115,7 @@
   },
   "MATH 13.07": {
     "title": "Bogenschießen-Medaillenrunde",
-    "context": "Ein Bogenschießwettbewerb vergibt eine Medaille für mindestens 8 Treffer ins Gold von 9 Pfeilen. Schütze A ist Fortgeschrittene/r (p = 0,65 pro Pfeil). Schütze B ist Elite (p = 0,97 pro Pfeil). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Bogenschießwettbewerb vergibt eine Medaille für mindestens 8 Treffer ins Gold von 9 Pfeilen. Schütze A ist Fortgeschrittene/r (p = 0,65 pro Pfeil). Schütze B ist Elite (p = 0,97 pro Pfeil). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Schütze B Wahrscheinlichkeit für eine perfekte Runde ist größer als 75%.",
       "Die Wahrscheinlichkeit, dass Schütze A die Medaille erhält, ist größer als die Wahrscheinlichkeit von genau 8.",
@@ -134,7 +134,7 @@
   },
   "MATH 13.08": {
     "title": "Restaurant-Zufriedenheitsumfrage",
-    "context": "Zwei Restaurants befragen je 14 Kunden zur Zufriedenheit. Restaurant A ist neu (p = 0,50, dass ein Kunde zufrieden ist). Restaurant B ist etabliert (p = 0,80). Eine „gute Bewertung“ erfordert mindestens 11 von 14 zufriedenen Kunden. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Restaurants befragen je 14 Kunden zur Zufriedenheit. Restaurant A ist neu (p = 0,50, dass ein Kunde zufrieden ist). Restaurant B ist etabliert (p = 0,80). Eine „gute Bewertung“ erfordert mindestens 11 von 14 zufriedenen Kunden. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Restaurant B Wahrscheinlichkeit für einen perfekten Lauf ist größer als 5%.",
       "Die Wahrscheinlichkeit, dass Restaurant A eine gute Bewertung erhält, ist größer als die Wahrscheinlichkeit von genau 11.",
@@ -153,7 +153,7 @@
   },
   "MATH 13.09": {
     "title": "Phishing-Sensibilisierungstest",
-    "context": "Ein Unternehmen führt einen Phishing-E-Mail-Test mit 18 E-Mails durch. Personal A ist ungeschult (p = 0,45, eine Phishing-Mail korrekt zu erkennen). Personal B ist geschult (p = 0,91). Das Bestehen der Sicherheitsprüfung erfordert, mindestens 15 von 18 Phishing-Mails korrekt zu erkennen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Unternehmen führt einen Phishing-E-Mail-Test mit 18 E-Mails durch. Personal A ist ungeschult (p = 0,45, eine Phishing-Mail korrekt zu erkennen). Personal B ist geschult (p = 0,91). Das Bestehen der Sicherheitsprüfung erfordert, mindestens 15 von 18 Phishing-Mails korrekt zu erkennen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Personal A Wahrscheinlichkeit, alle 18 Phishing-E-Mails perfekt zu erkennen ist kleiner als 0.001%.",
       "Die Wahrscheinlichkeit, dass Personal B die Sicherheitsprüfung besteht, ist größer als die Wahrscheinlichkeit von genau 16.",
@@ -172,7 +172,7 @@
   },
   "MATH 13.10": {
     "title": "Prognose-Genauigkeitspreis",
-    "context": "Zwei Meteorologen erstellen je 10 Tagesprognosen. Meteorologe A hat eine solide Bilanz (p = 0,60, an einem gegebenen Tag richtig zu liegen). Meteorologe B ist sehr genau (p = 0,95). Ein Genauigkeitspreis erfordert mindestens 8 von 10 korrekte Prognosen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Meteorologen erstellen je 10 Tagesprognosen. Meteorologe A hat eine solide Bilanz (p = 0,60, an einem gegebenen Tag richtig zu liegen). Meteorologe B ist sehr genau (p = 0,95). Ein Genauigkeitspreis erfordert mindestens 8 von 10 korrekte Prognosen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Meteorologe B Wahrscheinlichkeit für eine perfekte Woche ist größer als 60%.",
       "Die Wahrscheinlichkeit, dass Meteorologe A den Genauigkeitspreis gewinnt, ist größer als die Wahrscheinlichkeit von genau 9.",
@@ -191,7 +191,7 @@
   },
   "MATH 13.11": {
     "title": "Fertigungs-Einheiten-Audit",
-    "context": "Ein Fertigungswerk prüft 20 Testeinheiten pro Inspektion. Prüfer A ist frisch geschult (p = 0,55, eine fehlerhafte Einheit korrekt zu erkennen). Prüfer B ist Veteran (p = 0,88). Zum Bestehen des Audits muss ein Prüfer mindestens 17 von 20 Einheiten korrekt erkennen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Fertigungswerk prüft 20 Testeinheiten pro Inspektion. Prüfer A ist frisch geschult (p = 0,55, eine fehlerhafte Einheit korrekt zu erkennen). Prüfer B ist Veteran (p = 0,88). Zum Bestehen des Audits muss ein Prüfer mindestens 17 von 20 Einheiten korrekt erkennen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Prüfer A Wahrscheinlichkeit für eine fehlerfreie Inspektion ist kleiner als 0.0005%.",
       "Die Wahrscheinlichkeit, dass Prüfer B das Audit besteht, ist größer als die Wahrscheinlichkeit von genau 17.",
@@ -210,7 +210,7 @@
   },
   "MATH 13.12": {
     "title": "Prüfung aufgezeichneter Anrufe",
-    "context": "Ein Callcenter prüft 16 aufgezeichnete Anrufe pro Mitarbeiter. Personal A ist neu eingestellt (p = 0,60, einen Anruf korrekt zu lösen). Personal B ist erfahrene/r Agent/in (p = 0,92). Zum Bestehen der Prüfung muss ein Mitarbeiter mindestens 14 von 16 Anrufen korrekt lösen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Callcenter prüft 16 aufgezeichnete Anrufe pro Mitarbeiter. Personal A ist neu eingestellt (p = 0,60, einen Anruf korrekt zu lösen). Personal B ist erfahrene/r Agent/in (p = 0,92). Zum Bestehen der Prüfung muss ein Mitarbeiter mindestens 14 von 16 Anrufen korrekt lösen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Personal A Wahrscheinlichkeit, alle 16 Anrufe korrekt zu klären ist größer als 0.02%.",
       "Die Wahrscheinlichkeit, dass Personal B die Prüfung besteht, ist größer als die Wahrscheinlichkeit von genau 14.",
@@ -229,7 +229,7 @@
   },
   "MATH 13.13": {
     "title": "Tippgenauigkeitstest",
-    "context": "Zwei Bewerber absolvieren einen Tippgenauigkeitstest mit 12 Fragen. Tipper A ist Anfänger (p = 0,50, eine Zeile korrekt zu tippen). Tipper B ist erfahren (p = 0,75). Zum Bestehen müssen mindestens 9 von 12 Zeilen korrekt getippt werden. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Bewerber absolvieren einen Tippgenauigkeitstest mit 12 Fragen. Tipper A ist Anfänger (p = 0,50, eine Zeile korrekt zu tippen). Tipper B ist erfahren (p = 0,75). Zum Bestehen müssen mindestens 9 von 12 Zeilen korrekt getippt werden. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Tipper B Wahrscheinlichkeit für einen fehlerfreien Test ist größer als 3%.",
       "Die Wahrscheinlichkeit, dass Tipper A den Test besteht, ist größer als die Wahrscheinlichkeit von genau 9.",
@@ -248,7 +248,7 @@
   },
   "MATH 13.14": {
     "title": "Cybersicherheits-Angriffsübung",
-    "context": "Ein Unternehmen führt eine Cybersicherheitsübung mit 22 simulierten Angriffen durch. Personal A ist ungeschult (p = 0,40, einen Angriff korrekt zu erkennen). Personal B ist geschult (p = 0,89). Zum Bestehen der Übung müssen mindestens 19 von 22 Angriffen korrekt erkannt werden. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Unternehmen führt eine Cybersicherheitsübung mit 22 simulierten Angriffen durch. Personal A ist ungeschult (p = 0,40, einen Angriff korrekt zu erkennen). Personal B ist geschult (p = 0,89). Zum Bestehen der Übung müssen mindestens 19 von 22 Angriffen korrekt erkannt werden. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Personal A Wahrscheinlichkeit, alle 22 Angriffe perfekt zu erkennen ist kleiner als 0.00001%.",
       "Die Wahrscheinlichkeit, dass Personal B die Übung besteht, ist größer als die Wahrscheinlichkeit von genau 19.",
@@ -267,7 +267,7 @@
   },
   "MATH 13.15": {
     "title": "Acht-Freiwürfe-Wettbewerb",
-    "context": "Zwei Basketballspieler versuchen je 8 Freiwürfe in einem Wettbewerb. Spieler A ist solider Werfer (p = 0,55 pro Versuch). Spieler B ist Elitewerfer (p = 0,90 pro Versuch). Ein Preis erfordert mindestens 7 von 8 getroffenen Freiwürfen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Basketballspieler versuchen je 8 Freiwürfe in einem Wettbewerb. Spieler A ist solider Werfer (p = 0,55 pro Versuch). Spieler B ist Elitewerfer (p = 0,90 pro Versuch). Ein Preis erfordert mindestens 7 von 8 getroffenen Freiwürfen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Spieler B Wahrscheinlichkeit für eine perfekte Runde ist größer als 45%.",
       "Die Wahrscheinlichkeit, dass Spieler B den Preis erhält, ist größer als die Wahrscheinlichkeit von genau 7.",
@@ -286,13 +286,13 @@
   },
   "MATH 13.16": {
     "title": "Diagnostikkit-Zertifizierung",
-    "context": "Ein Labor testet zwei Diagnostikkits an 15 bekannt positiven Proben. Kit A ist ein älteres Modell (p = 0,65, eine positive Probe korrekt zu erkennen). Kit B ist ein neueres Modell (p = 0,94). Ein Kit wird zertifiziert, wenn es mindestens 13 von 15 Proben korrekt erkennt. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Labor testet zwei Diagnostikkits an 15 bekannt positiven Proben. Kit A ist ein älteres Modell (p = 0,65, eine positive Probe korrekt zu erkennen). Kit B ist ein neueres Modell (p = 0,94). Ein Kit wird zertifiziert, wenn es mindestens 13 von 15 Proben korrekt erkennt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Wahrscheinlichkeit von Kit A, keine der 15 Proben zu erkennen, ist größer als 0.0001%.",
+      "Die Wahrscheinlichkeit, dass Kit A keine der 15 Proben erkennt, ist größer als 0,0001%.",
       "Die Wahrscheinlichkeit, dass Kit B zertifiziert wird, ist größer als die Wahrscheinlichkeit von genau 13.",
-      "Kit B ist mehr als 15-mal so wahrscheinlich wie Kit A, be certified.",
-      "Kit A Standardabweichung der Anzahl korrekter Erkennungen ist größer als das Doppelte von der Standardabweichung von Kit B.",
-      "Die erwartete Anzahl von korrekter Erkennungen bei Kit A ist kleiner als 10."
+      "Kit B ist mehr als 15-mal so wahrscheinlich wie Kit A, zertifiziert zu werden.",
+      "Die Standardabweichung der Anzahl korrekter Erkennungen bei Kit A ist mehr als doppelt so groß wie die bei Kit B.",
+      "Die erwartete Anzahl korrekter Erkennungen bei Kit A ist kleiner als 10."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nNull Erfolge bedeutet, dass jeder Versuch scheitert. Bei unabhängigen Versuchen ist diese Wahrscheinlichkeit die Misserfolgswahrscheinlichkeit, multipliziert über alle $n$ Versuche:\n\n$$\nP(X = 0) = (1-p)^{n}\n$$\n\nFür Seite A, $p = 0.65$, so $1-p = 0.35$ and $n = 15$:\n\n$$\nP(X = 0)\n$$\n\n$$\n(0.35)^{15} = 1.448841 \\times 10^{-7}\n$$\n\n$$\n1.4488 \\times 10^{-5}\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.0001\\%$. Wir erhalten etwa $1.4488 \\times 10^{-5}\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -305,13 +305,13 @@
   },
   "MATH 13.17": {
     "title": "Produktionslinien-Chargen",
-    "context": "Zwei Produktionslinien fertigen je eine Charge von 10 Einheiten. Linie A ist ältere Ausrüstung (p = 0,45, eine akzeptable Einheit zu erzeugen). Linie B ist neu kalibriert (p = 0,85). Eine Charge besteht die Inspektion, wenn mindestens 8 von 10 Einheiten akzeptabel sind. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Produktionslinien fertigen je eine Charge von 10 Einheiten. Linie A ist ältere Ausrüstung (p = 0,45, eine akzeptable Einheit zu erzeugen). Linie B ist neu kalibriert (p = 0,85). Eine Charge besteht die Inspektion, wenn mindestens 8 von 10 Einheiten akzeptabel sind. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit, dass Linie B genau 8 akzeptable Einheiten erzeugt, ist mehr als 10-mal so groß wie die Wahrscheinlichkeit, dass Linie A genau 8 akzeptable Einheiten erzeugt.",
-      "Die Wahrscheinlichkeit, dass die Charge die Inspektion besteht von Linie B, ist größer als die Wahrscheinlichkeit von genau 8.",
-      "Die Wahrscheinlichkeit, dass Linie A produces at most 8 acceptable units ist kleiner als 95%.",
-      "Die Standardabweichung von Linie A in der Anzahl von akzeptabler Einheiten ist mehr als 1.3-mal so groß wie die von Linie B.",
-      "Die erwartete Anzahl von akzeptabler Einheiten für Linie B ist genau doppelt so groß wie die von Linie A."
+      "Die Wahrscheinlichkeit, dass die Charge von Linie B die Inspektion besteht, ist größer als die Wahrscheinlichkeit von genau 8.",
+      "Die Wahrscheinlichkeit, dass Linie A höchstens 8 akzeptable Einheiten erzeugt, ist kleiner als 95%.",
+      "Die Standardabweichung der Anzahl akzeptabler Einheiten bei Linie A ist mehr als 1,3-mal so groß wie die bei Linie B.",
+      "Die erwartete Anzahl akzeptabler Einheiten für Linie B ist genau doppelt so groß wie die für Linie A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDie Binomial-PMF an einem einzelnen Punkt ist\n\n$$\nP(X = k) = \\binom{n}{k} p^{k}(1-p)^{n-k}\n$$\n\nSeite A ($n = 10$, $p = 0.45$):\n\n$$\nP(X_A = 8) = \\binom{10}{8}(0.45)^{8}(0.55)^{2} \\approx 0.02289\n$$\n\n$$\n\\binom{10}{8} = 45\n$$\n\n$$\nP(X_B = 8) = \\binom{10}{8}(0.85)^{8}(0.15)^{2} \\approx 0.275897\n$$\n\nRatio $\\frac{P_B}{P_A} \\approx 12.053$.\n\nDiese Wahrscheinlichkeiten mit der Behauptung abgleichen.\n\nDie Aussage ist richtig.",
@@ -324,13 +324,13 @@
   },
   "MATH 13.18": {
     "title": "Verkaufsgespräch-Abschlüsse",
-    "context": "Zwei Vertriebsmitarbeiter führen je 25 Anrufe an einem Tag. Vertreter A ist neu (p = 0,30, einen Anruf in einen Verkauf umzuwandeln). Vertreter B ist erfahren (p = 0,68). Ein Vertreter hat einen „starken Tag“, wenn mehr als die Hälfte der 25 Anrufe konvertieren, also mindestens 13 Abschlüsse. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Vertriebsmitarbeiter führen je 25 Anrufe an einem Tag. Vertreter A ist neu (p = 0,30, einen Anruf in einen Verkauf umzuwandeln). Vertreter B ist erfahren (p = 0,68). Ein Vertreter hat einen „starken Tag“, wenn mehr als die Hälfte der 25 Anrufe konvertieren, also mindestens 13 Abschlüsse. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Vertreter A Wahrscheinlichkeit, alle 25 Anrufe zu konvertieren ist größer als 0.0000001%.",
+      "Die Wahrscheinlichkeit, dass Vertreter A alle 25 Anrufe konvertiert, ist größer als 0,0000001%.",
       "Die Wahrscheinlichkeit, dass Vertreter A einen starken Tag hat, ist größer als die Wahrscheinlichkeit von genau 13.",
-      "Vertreter B ist mehr als 50-mal so wahrscheinlich wie Vertreter A, have a strong day.",
-      "Die Varianz von Vertreter A in der Anzahl von Abschlüsse ist größer als die Varianz von Vertreter B.",
-      "Die erwartete Anzahl von Abschlüsse für Vertreter B ist mehr als doppelt so groß wie die von Vertreter A."
+      "Vertreter B ist mehr als 50-mal so wahrscheinlich wie Vertreter A, einen starken Tag zu haben.",
+      "Die Varianz der Anzahl der Abschlüsse bei Vertreter A ist größer als die bei Vertreter B.",
+      "Die erwartete Anzahl der Abschlüsse für Vertreter B ist mehr als doppelt so groß wie die für Vertreter A."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.3$ und $n = 25$:\n\n$$\nP(X = 25)\n$$\n\n$$\n(0.3)^{25} = 0\n$$\n\n$$\n8.4729 \\times 10^{-12}\\%\n$$\n\nDie Behauptung vergleicht dies mit $1 \\times 10^{-7}\\%$. Wir erhalten etwa $8.4729 \\times 10^{-12}\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -343,11 +343,11 @@
   },
   "MATH 13.19": {
     "title": "Probeklausur-Ergebnisse",
-    "context": "Zwei Studierende beantworten je 20 Fragen in einer Probeklausur. Student A hat mäßig gelernt (p = 0,50, eine Frage korrekt zu beantworten). Student B hat intensiv gelernt (p = 0,80). Zum Bestehen sind mindestens 10 von 20 Fragen korrekt nötig. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Studierende beantworten je 20 Fragen in einer Probeklausur. Student A hat mäßig gelernt (p = 0,50, eine Frage korrekt zu beantworten). Student B hat intensiv gelernt (p = 0,80). Zum Bestehen sind mindestens 10 von 20 Fragen korrekt nötig. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit von Student A, unter der Bestehensschwelle zu landen, ist größer als 40%.",
       "Die Wahrscheinlichkeit, dass Student B besteht, ist größer als die Wahrscheinlichkeit von genau 10.",
-      "Student B ist mehr als doppelt so wahrscheinlich wie Student A, bestehen.",
+      "Student B ist mehr als doppelt so wahrscheinlich wie Student A, zu bestehen.",
       "Die Standardabweichung von Student A in der Anzahl korrekter Antworten ist genau 25% höher als die von Student B.",
       "Der mittlere Punktestand von Student B übersteigt den Mittelwert von Student A um mindestens 6 Punkte."
     ],
@@ -362,7 +362,7 @@
   },
   "MATH 13.20": {
     "title": "Chirurgische Erfolgsraten",
-    "context": "Zwei Chirurgen führen je 14 Eingriffe eines bestimmten Typs in einem Jahr durch. Chirurg A hat eine starke Bilanz (p = 0,75 Erfolg pro Eingriff). Chirurg B hat eine herausragende Bilanz (p = 0,96 Erfolg pro Eingriff). Ein Chirurg erreicht den Maßstab, wenn mindestens 12 von 14 Eingriffen gelingen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Chirurgen führen je 14 Eingriffe eines bestimmten Typs in einem Jahr durch. Chirurg A hat eine starke Bilanz (p = 0,75 Erfolg pro Eingriff). Chirurg B hat eine herausragende Bilanz (p = 0,96 Erfolg pro Eingriff). Ein Chirurg erreicht den Maßstab, wenn mindestens 12 von 14 Eingriffen gelingen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit eines fehlerfreien Jahres von Chirurg B ist mehr als 30-mal so groß wie die von Chirurg A.",
       "Die Wahrscheinlichkeit, dass Chirurg A den Maßstab erreicht, ist größer als die Wahrscheinlichkeit von genau 12.",
@@ -381,13 +381,13 @@
   },
   "MATH 13.21": {
     "title": "Fehlerfreie Werkschargen",
-    "context": "Werk A prüft Chargen von 18 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,72. Werk B prüft Chargen von 24 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,91. Eine Charge „besteht“, wenn mindestens 90 % ihrer Einheiten fehlerfrei sind. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Werk A prüft Chargen von 18 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,72. Werk B prüft Chargen von 24 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,91. Eine Charge „besteht“, wenn mindestens 90 % ihrer Einheiten fehlerfrei sind. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Charge von Werk A besteht mit mindestens 16 fehlerfreien Einheiten.",
-      "Die Wahrscheinlichkeit, dass die batch passes von Werk A, ist größer als die Wahrscheinlichkeit von genau 17.",
+      "Die Wahrscheinlichkeit, dass die Charge von Werk A besteht, ist größer als die Wahrscheinlichkeit von genau 17.",
       "Werk B ist mehr als 25-mal so wahrscheinlich wie Werk A, dass seine Charge besteht.",
-      "Die Varianz von Werk A in der Anzahl von fehlerfreier Einheiten ist höher als die von Werk B.",
-      "Die Standardabweichung von Werk B in der Anzahl von fehlerfreier Einheiten ist höher als die von Werk A."
+      "Die Varianz der Anzahl fehlerfreier Einheiten bei Werk A ist höher als die bei Werk B.",
+      "Die Standardabweichung der Anzahl fehlerfreier Einheiten bei Werk B ist höher als die bei Werk A."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEine prozentuale Schwelle muss in eine ganzzahlige Anzahl umgerechnet werden. $90\\%$ von $n = 18$ ist\n\n$$\n90\\% \\times 18 = 16.2.\n$$\n\n„Mindestens 90 %“ bedeutet, dass die Erfolgsanzahl $X$ mindestens $16.2$ sein muss. Weil $X$ ganzzahlig ist, gilt $X \\ge \\lceil 16.2 \\rceil = 17$.\n\nDie Aussage verwendet „mindestens 16“, aber die korrekte ganzzahlige Schwelle ist $17$ (Aufrundung, nicht Abschneiden von 16.2 to 16 when a fractional unit would still fall short of the percentage).\n\nDie Aussage ist falsch.",
@@ -400,7 +400,7 @@
   },
   "MATH 13.22": {
     "title": "Doppelte Qualitätsprüfungen",
-    "context": "Zwei unabhängige Qualitätsprüfungen laufen jeweils auf derselben Charge von 30 identischen Komponenten. Prüfung A markiert eine Komponente mit Wahrscheinlichkeit 0,15 pro Komponente als fehlerhaft. Prüfung B markiert eine Komponente mit Wahrscheinlichkeit 0,85 pro Komponente als fehlerhaft. Es sei X die Anzahl der von jeder Prüfung markierten Komponenten. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei unabhängige Qualitätsprüfungen laufen jeweils auf derselben Charge von 30 identischen Komponenten. Prüfung A markiert eine Komponente mit Wahrscheinlichkeit 0,15 pro Komponente als fehlerhaft. Prüfung B markiert eine Komponente mit Wahrscheinlichkeit 0,85 pro Komponente als fehlerhaft. Es sei X die Anzahl der von jeder Prüfung markierten Komponenten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Varianz von Prüfung A in der Anzahl markierter Komponenten ist gleich der Varianz von Prüfung B in der Anzahl markierter Komponenten.",
       "Die erwartete Anzahl markierter Komponenten bei Prüfung B ist genau 21 mehr als Check A's.",
@@ -419,7 +419,7 @@
   },
   "MATH 13.23": {
     "title": "Kalibrierlinien-Akzeptanz",
-    "context": "Zwei Kalibrierlinien erzeugen je Chargen von 20 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,75 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Kalibrierlinien erzeugen je Chargen von 20 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,75 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit von Linie A, im mittleren Bereich zu landen, ist mehr als 5-mal so groß wie die von Linie B.",
       "Für Linie A ist die Wahrscheinlichkeit des mittleren Bereichs größer als die Wahrscheinlichkeit von genau 8.",
@@ -432,13 +432,13 @@
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 8 bis 12, nicht nur die einzelne Anzahl 8. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=8)$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nFür Linie A sind Erwartungswert und Standardabweichung einer binomialverteilten Anzahl\n\n$$\nE[A] = np = 20\\cdot 0.4 = 8\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{np(1-p)} = \\sqrt{4.8} \\approx 2.191\n$$\n\nEine Standardabweichung um den Erwartungswert ist das Intervall\n\n$$\n\\bigl[8-2.191,\\ 8+2.191\\bigr] \\approx [5.809,\\ 10.191]\n$$\n\nDer mittlere Bereich $[8,12]$ reicht bis $12$, was außerhalb dieses Intervalls liegt. Der mittlere Bereich liegt also nicht vollständig innerhalb einer Standardabweichung vom Mittelwert von Linie A.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 20 \\cdot 0.75\n$$\n\n$$\n20 \\times 0.75 = 15\n$$\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDie Linien-Mittelwerte und die Standardabweichung von Linie B sind\n\n$$\nE[A] = 20\\cdot 0.4 = 8\n$$\n\n$$\nE[B] = 20\\cdot 0.75 = 15\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{20\\cdot 0.75\\cdot 0.25} = \\sqrt{3.75} \\approx 1.936\n$$\n\nDie Lücke vom Mittelwert von A zum Mittelwert von B, gemessen in Einheiten von $\\mathrm{SD}(B)$, is\n\n$$\n\\frac{E[B]-E[A]}{\\mathrm{SD}(B)} = \\frac{7}{1.936} \\approx 3.615\n$$\n\nDa $3.615 > 3$, liegt der Mittelwert von Linie A mehr als drei Standardabweichungen von Linie B unter dem Mittelwert von Linie B.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nDie Linien-Mittelwerte und die Standardabweichung von Linie B sind\n\n$$\nE[A] = 20\\cdot 0.4 = 8\n$$\n\n$$\nE[B] = 20\\cdot 0.75 = 15\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{20\\cdot 0.75\\cdot 0.25} = \\sqrt{3.75} \\approx 1.936\n$$\n\nDie Lücke vom Mittelwert von A zum Mittelwert von B, gemessen in Einheiten von $\\mathrm{SD}(B)$, ist\n\n$$\n\\frac{E[B]-E[A]}{\\mathrm{SD}(B)} = \\frac{7}{1.936} \\approx 3.615\n$$\n\nDa $3.615 > 3$, liegt der Mittelwert von Linie A mehr als drei Standardabweichungen von Linie B unter dem Mittelwert von Linie B.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Zwei Kalibrierlinien erzeugen je Chargen von 20 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,75 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 20$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.4$, Seite B hat $p_B = 0.75$."
   },
   "MATH 13.24": {
     "title": "Team-Versuchserfolge",
-    "context": "Zwei Teams absolvieren je 16 unabhängige Versuche. Team A gelingt jeder Versuch mit Wahrscheinlichkeit 0,50. Team B gelingt jeder Versuch mit Wahrscheinlichkeit 0,85. Ein Team „schafft die Schwelle“, wenn es mindestens 12 von 16 Versuchen erfolgreich absolviert. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Teams absolvieren je 16 unabhängige Versuche. Team A gelingt jeder Versuch mit Wahrscheinlichkeit 0,50. Team B gelingt jeder Versuch mit Wahrscheinlichkeit 0,85. Ein Team „schafft die Schwelle“, wenn es mindestens 12 von 16 Versuchen erfolgreich absolviert. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Differenz zwischen der Wahrscheinlichkeit von Team B und Team A, die Schwelle zu schaffen, ist größer als 0.85.",
       "Die Wahrscheinlichkeit, dass Team B die Schwelle schafft, ist größer als die Wahrscheinlichkeit von genau 12.",
@@ -457,13 +457,13 @@
   },
   "MATH 13.25": {
     "title": "Prüfer-Compliance-Schwelle",
-    "context": "Prüfer A prüft 50 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,50, und wir betrachten die Chance auf mindestens 28 regelkonforme. Prüfer B prüft 10 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,90, und wir betrachten die Chance auf mindestens 9 regelkonforme. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Prüfer A prüft 50 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,50, und wir betrachten die Chance auf mindestens 28 regelkonforme. Prüfer B prüft 10 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,90, und wir betrachten die Chance auf mindestens 9 regelkonforme. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer A ist genau 25.",
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer B ist kleiner als 8.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer A ist genau 25.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer B ist kleiner als 8.",
       "Prüfer A hat weniger wahrscheinlich mindestens 28 regelkonforme Transaktionen als 27 oder weniger.",
-      "Prüfer B ist mehr als 4-mal so wahrscheinlich wie Prüfer A, meet the stated threshold.",
-      "Die Standardabweichung von Prüfer A in der Anzahl von regelkonformer Transaktionen ist mehr als three-mal so groß wie die von Prüfer B."
+      "Prüfer B ist mehr als 4-mal so wahrscheinlich wie Prüfer A, die angegebene Schwelle zu erreichen.",
+      "Die Standardabweichung der Anzahl regelkonformer Transaktionen bei Prüfer A ist mehr als dreimal so groß wie die bei Prüfer B."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer A $n = 50$ und $p = 0.50$:\n\n$$\nE[A] = 50 \\cdot 0.50\n$$\n\n$$\n50 \\times 0.5 = 25\n$$\n\n.\n\nDie Aussage ist richtig.",
@@ -476,13 +476,13 @@
   },
   "MATH 13.26": {
     "title": "Erweiterte Werksinspektion",
-    "context": "Werk A prüft Chargen von 22 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,65. Werk B prüft Chargen von 20 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,92. Eine Charge „besteht“, wenn mindestens 85 % der Einheiten von Werk A fehlerfrei sind oder mindestens 90 % der Einheiten von Werk B fehlerfrei sind (jedes Werk an seiner eigenen Schwelle gemessen). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Werk A prüft Chargen von 22 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,65. Werk B prüft Chargen von 20 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,92. Eine Charge „besteht“, wenn mindestens 85 % der Einheiten von Werk A fehlerfrei sind oder mindestens 90 % der Einheiten von Werk B fehlerfrei sind (jedes Werk an seiner eigenen Schwelle gemessen). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Charge von Werk A besteht mit mindestens 18 fehlerfreien Einheiten.",
-      "Die Wahrscheinlichkeit, dass die batch passes von Werk A, ist größer als die Wahrscheinlichkeit von genau 19.",
+      "Die Wahrscheinlichkeit, dass die Charge von Werk A besteht, ist größer als die Wahrscheinlichkeit von genau 19.",
       "Werk B ist mehr als 30-mal so wahrscheinlich wie Werk A, dass seine Charge besteht.",
-      "Die Varianz von Werk A in der Anzahl von fehlerfreier Einheiten ist mehr als dreimal so groß wie die Varianz von Werk B.",
-      "Die Standardabweichung von Werk B in der Anzahl von fehlerfreier Einheiten ist höher als die von Werk A."
+      "Die Varianz der Anzahl fehlerfreier Einheiten bei Werk A ist mehr als dreimal so groß wie die Varianz bei Werk B.",
+      "Die Standardabweichung der Anzahl fehlerfreier Einheiten bei Werk B ist höher als die bei Werk A."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEine prozentuale Schwelle muss in eine ganzzahlige Anzahl umgerechnet werden. $85\\%$ von $n = 22$ ist\n\n$$\n85\\% \\times 22 = 18.7.\n$$\n\n„Mindestens 85 %“ bedeutet, dass die Erfolgsanzahl $X$ mindestens $18.7$ sein muss. Weil $X$ ganzzahlig ist, gilt $X \\ge \\lceil 18.7 \\rceil = 19$.\n\nDie Aussage verwendet „mindestens 18“, aber die korrekte ganzzahlige Schwelle ist $19$ (Aufrundung, nicht Abschneiden von 18.7 to 18 when a fractional unit would still fall short of the percentage).\n\nDie Aussage ist falsch.",
@@ -495,7 +495,7 @@
   },
   "MATH 13.27": {
     "title": "Doppelte Inspektionsmarkierungen",
-    "context": "Zwei unabhängige Inspektionsprüfungen laufen jeweils auf derselben Charge von 35 identischen Komponenten. Prüfung A markiert eine Komponente mit Wahrscheinlichkeit 0,22 pro Komponente als fehlerhaft. Prüfung B markiert eine Komponente mit Wahrscheinlichkeit 0,78 pro Komponente als fehlerhaft. Es sei X die Anzahl der von jeder Prüfung markierten Komponenten. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei unabhängige Inspektionsprüfungen laufen jeweils auf derselben Charge von 35 identischen Komponenten. Prüfung A markiert eine Komponente mit Wahrscheinlichkeit 0,22 pro Komponente als fehlerhaft. Prüfung B markiert eine Komponente mit Wahrscheinlichkeit 0,78 pro Komponente als fehlerhaft. Es sei X die Anzahl der von jeder Prüfung markierten Komponenten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Varianz von Prüfung A in der Anzahl markierter Komponenten ist gleich der Varianz von Prüfung B in der Anzahl markierter Komponenten.",
       "Die erwartete Anzahl markierter Komponenten von Prüfung B ist mehr als 4-mal so groß wie die von Prüfung A.",
@@ -505,7 +505,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nFür eine binomialverteilte Anzahl $X \\sim \\mathrm{Bin}(n,p)$ schreibe $X$ als Summe von $n$ unabhängigen Bernoulli-Versuchen mit Erfolgswahrscheinlichkeit $p$. Jeder Versuch hat Varianz $p(1-p)$, und Varianzen unabhängiger Summanden addieren sich, also\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nDas ist am größten, wenn $p$ am nächsten bei $\\frac{1}{2}$ liegt, nicht wenn $p$ selbst am größten ist.\n\nSeite A mit $n_A = 35$, $p_A = 0.22$:\n\n$$\n\\mathrm{Var}(A) = 35 \\cdot 0.22 \\cdot 0.78\n$$\n\n$$\n35 \\times 0.22 = 7.7\n$$\n\n$$\n7.7 \\times 0.78 = 6.006\n$$\n\nSeite B mit $n_B = 35$, $p_B = 0.78$:\n\n$$\n\\mathrm{Var}(B) = 35 \\cdot 0.78 \\cdot 0.22\n$$\n\n$$\n35 \\times 0.78 = 27.3\n$$\n\n$$\n27.3 \\times 0.22 = 6.006\n$$\n\nAlso $\\mathrm{Var}(A) = 6.006$ und $\\mathrm{Var}(B) = 6.006$.\n\nDer Vergleich in der Behauptung ist richtig.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 35 \\cdot 0.22\n$$\n\n$$\n35 \\times 0.22 = 7.7\n$$\n\n$$\nE[B] = 35 \\cdot 0.78\n$$\n\n$$\n35 \\times 0.78 = 27.3\n$$\n\nDas Erwartungswertverhältnis (B relativ zu A) ist\n\n$$\n\\frac{E[B]}{E[A]} = \\frac{27.3}{7.7}\n$$\n\n$$\n3.5455\n$$\n\nCompared with $4$: $3.5455 \\le 4$.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 35 \\cdot 0.22\n$$\n\n$$\n35 \\times 0.22 = 7.7\n$$\n\n$$\nE[B] = 35 \\cdot 0.78\n$$\n\n$$\n35 \\times 0.78 = 27.3\n$$\n\nDas Erwartungswertverhältnis (B relativ zu A) ist\n\n$$\n\\frac{E[B]}{E[A]} = \\frac{27.3}{7.7}\n$$\n\n$$\n3.5455\n$$\n\nIm Vergleich mit $4$: $3.5455 \\le 4$.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nDie Binomial-PMF an einem einzelnen Punkt ist\n\n$$\nP(X = k) = \\binom{n}{k} p^{k}(1-p)^{n-k}\n$$\n\nSeite A ($n = 35$, $p = 0.22$):\n\n$$\nP(X_A = 0) = \\binom{35}{0}(0.22)^{0}(0.78)^{35} \\approx 0.000167\n$$\n\n$$\n\\binom{35}{0} = 1\n$$\n\n$$\nP(X_B = 0) = \\binom{35}{0}(0.78)^{0}(0.22)^{35} \\approx 0\n$$\n\nDiese Wahrscheinlichkeiten mit der Behauptung abgleichen.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\n“At most 10” means $X \\le 10$:\n\n$$\nP(X \\le 10) = \\sum_{x = 0}^{10} \\binom{35}{x} p^{x}(1-p)^{35-x}\n$$\n\n$$\n0.8718\n$$\n\n$$\n87.18\\%\n$$\n\nFür Seite A sind das etwa 87.18\\%.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfung A $n = 35$ und $p = 0.22$:\n\n$$\nE[A] = 35 \\cdot 0.22\n$$\n\n$$\n35 \\times 0.22 = 7.7\n$$\n\nDa $7.7 \\le 8$.\n\nDie Aussage ist falsch."
@@ -514,7 +514,7 @@
   },
   "MATH 13.28": {
     "title": "Produktions-Akzeptanzraten",
-    "context": "Zwei Produktionslinien erzeugen je Chargen von 25 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,72 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Produktionslinien erzeugen je Chargen von 25 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,72 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit von Linie A, im mittleren Bereich zu landen, ist mehr als 70-mal so groß wie die von Linie B.",
       "Für Linie A ist die Wahrscheinlichkeit des mittleren Bereichs größer als die Wahrscheinlichkeit von genau 8.",
@@ -526,14 +526,14 @@
       "**A.** → Richtig\n\nDas Ereignis „zwischen 8 und 12 einschließlich“ ist die Summe der Punktmassen $X = 8,\\ldots,12$:\n\n$$\nP(8 \\le X \\le 12) = \\sum_{x = 8}^{12} \\binom{n}{x} p^{x}(1-p)^{n-x}\n$$\n\nSeite A: $P \\approx 0.6927 \\approx 69.27\\%$.\n\nSeite B: $P \\approx 0.0096 \\approx 0.96\\%$.\n\nVerhältnis (A relativ zu B) $\\approx 72.481$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 8 bis 12, nicht nur die einzelne Anzahl 8. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=8)$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$\nE[X] = np,\\quad \\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\n$$\nn_A = 25,\\ p_A = 0.4\n$$\n\n= 2.4495.\n\nMittelwert 10; SA 2,4495. Das Intervall [8, 12] reicht 2 vom Mittelwert.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$\nE[X] = np = 25\\cdot0.72\n$$\n\n$$\n25 \\times 0.72 = 18\n$$\n\n= 18.\n\n= 18, which is not inside [8, 12].\n\nDie Aussage ist falsch. Ein Studierender, der 18 mit dem nächsten Endpunkt vergleicht, statt zu fragen, ob es in [8, 12] liegt, würde die Aussage als wahr markieren.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$$\nE[X] = np = 25\\cdot0.72\n$$\n\n$$\n25 \\times 0.72 = 18\n$$\n\n= 18.\n\n= 18, und das liegt nicht in [8, 12].\n\nDie Aussage ist falsch. Ein Studierender, der 18 mit dem nächsten Endpunkt vergleicht, statt zu fragen, ob es in [8, 12] liegt, würde die Aussage als wahr markieren.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n\\dfrac{|E[A]-E[B]|}{\\mathrm{SD}(\\mathrm{ref})} = |10-18|/2.245\n$$\n\n= 3.5635, was größer als 3 ist.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Zwei Produktionslinien erzeugen je Chargen von 25 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,72 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 25$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.4$, Seite B hat $p_B = 0.72$."
   },
   "MATH 13.29": {
     "title": "Erweiterte Teamversuche",
-    "context": "Zwei Teams absolvieren je 20 unabhängige Versuche. Team A gelingt jeder Versuch mit Wahrscheinlichkeit 0,45. Team B gelingt jeder Versuch mit Wahrscheinlichkeit 0,80. Ein Team „schafft die Schwelle“, wenn es mindestens 15 von 20 Versuchen erfolgreich absolviert. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Teams absolvieren je 20 unabhängige Versuche. Team A gelingt jeder Versuch mit Wahrscheinlichkeit 0,45. Team B gelingt jeder Versuch mit Wahrscheinlichkeit 0,80. Ein Team „schafft die Schwelle“, wenn es mindestens 15 von 20 Versuchen erfolgreich absolviert. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Differenz zwischen der Wahrscheinlichkeit von Team B und Team A, die Schwelle zu schaffen, ist größer als 0.75.",
       "Die Wahrscheinlichkeit, dass Team B die Schwelle schafft, ist größer als die Wahrscheinlichkeit von genau 15.",
@@ -552,13 +552,13 @@
   },
   "MATH 13.30": {
     "title": "Großes Audit zur Compliance",
-    "context": "Prüfer A prüft 60 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,50, und wir betrachten die Chance auf mindestens 33 regelkonforme. Prüfer B prüft 20 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,95, und wir betrachten die Chance auf mindestens 19 regelkonforme. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Prüfer A prüft 60 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,50, und wir betrachten die Chance auf mindestens 33 regelkonforme. Prüfer B prüft 20 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,95, und wir betrachten die Chance auf mindestens 19 regelkonforme. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer A ist genau 30.",
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer B ist kleiner als 18.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer A ist genau 30.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer B ist kleiner als 18.",
       "Prüfer A hat weniger wahrscheinlich mindestens 33 regelkonforme Transaktionen als 32 oder weniger.",
-      "Prüfer B ist mehr als 3-mal so wahrscheinlich wie Prüfer A, meet the stated threshold.",
-      "Die Standardabweichung von Prüfer A in der Anzahl von regelkonformer Transaktionen ist mehr als three-mal so groß wie die von Prüfer B."
+      "Prüfer B ist mehr als 3-mal so wahrscheinlich wie Prüfer A, die angegebene Schwelle zu erreichen.",
+      "Die Standardabweichung der Anzahl regelkonformer Transaktionen bei Prüfer A ist mehr als dreimal so groß wie die bei Prüfer B."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer A $n = 60$ und $p = 0.50$:\n\n$$\nE[A] = 60 \\cdot 0.50\n$$\n\n$$\n60 \\times 0.5 = 30\n$$\n\n.\n\nDie Aussage ist richtig.",
@@ -571,13 +571,13 @@
   },
   "MATH 13.31": {
     "title": "Support-Warteschlangen-Tickets",
-    "context": "Support-Warteschlange A bearbeitet 28 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,78 gelöst. Support-Warteschlange B bearbeitet 16 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,94 gelöst. Ein Tag ist für eine Warteschlange „im Ziel“, wenn höchstens 15 % der Tickets dieser Warteschlange bis Tagesende ungelöst bleiben. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Support-Warteschlange A bearbeitet 28 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,78 gelöst. Support-Warteschlange B bearbeitet 16 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,94 gelöst. Ein Tag ist für eine Warteschlange „im Ziel“, wenn höchstens 15 % der Tickets dieser Warteschlange bis Tagesende ungelöst bleiben. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Warteschlange A ist nur dann im Ziel, wenn die Anzahl ungelöster Tickets höchstens 4 beträgt.",
-      "Die Wahrscheinlichkeit, dass Warteschlange A is on target, ist größer als die Wahrscheinlichkeit von genau 24.",
-      "Warteschlange B ist mehr als 4-mal so wahrscheinlich wie Warteschlange A, be on target.",
-      "Die Varianz von Warteschlange A in der Anzahl von gelöster Tickets ist mehr als five-mal so groß wie die Varianz von Warteschlange B.",
-      "Die Standardabweichung von Warteschlange B in der Anzahl von gelöster Tickets ist höher als die von Warteschlange A."
+      "Die Wahrscheinlichkeit, dass Warteschlange A im Ziel ist, ist größer als die Wahrscheinlichkeit von genau 24.",
+      "Warteschlange B ist mehr als 4-mal so wahrscheinlich wie Warteschlange A, im Ziel zu sein.",
+      "Die Varianz der Anzahl gelöster Tickets bei Warteschlange A ist mehr als fünfmal so groß wie die Varianz bei Warteschlange B.",
+      "Die Standardabweichung der Anzahl gelöster Tickets bei Warteschlange B ist höher als die bei Warteschlange A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEine prozentuale Schwelle muss in eine ganzzahlige Anzahl umgerechnet werden. $15\\%$ von $n = 28$ ist\n\n$$\n15\\% \\times 28 = 4.2.\n$$\n\n„Höchstens 15 % ungelöst“ bedeutet, dass die ungelöste Anzahl $U$ die Ungleichung $U \\le 4.2$ erfüllt. Weil $U$ ganzzahlig ist, gilt $U \\le \\lfloor 4.2 \\rfloor = 4$.\n\nDie ganzzahlige Schwelle der Aussage ist 4, was $\\lfloor 4.2 \\rfloor = 4$ entspricht.\n\nDie Aussage ist richtig.",
@@ -586,17 +586,17 @@
       "**D.** → Richtig\n\nFür $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nQueue A ($n_A = 28$, $p_A = 0.78$):\n\n$$\n\\mathrm{Var}(A) = 28 \\cdot 0.78 \\cdot 0.22\n$$\n\nQueue B ($n_B = 16$, $p_B = 0.94$):\n\n$$\n\\mathrm{Var}(B) = 16 \\cdot 0.94 \\cdot 0.06\n$$\n\nDas Verhältnis ist\n\n$$\n\\frac{\\mathrm{Var}(A)}{\\mathrm{Var}(B)} = \\frac{4.8048}{0.9024}\n$$\n\n$$\n5.32\n$$\n\nDa $5.32 > 5$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Standardabweichung ist die positive Quadratwurzel der Varianz. Für $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nSeite A ($n_A = 28$, $p_A = 0.78$):\n\n$$\n\\mathrm{Var}(A) = 4.8048\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{4.8048}\n$$\n\n$$\n2.192\n$$\n\nSeite B ($n_B = 16$, $p_B = 0.94$):\n\n$$\n\\mathrm{Var}(B) = 0.9024\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{0.9024}\n$$\n\n$$\n0.95\n$$\n\nVergleich von $\\mathrm{SD}(A) \\approx 2.192$ mit $\\mathrm{SD}(B) \\approx 0.95$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Support-Warteschlange A bearbeitet 28 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,78 gelöst. Support-Warteschlange B bearbeitet 16 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,94 gelöst. Ein Tag ist für eine Warteschlange „im Ziel“, wenn höchstens 15 % der Tickets dieser Warteschlange bis Tagesende ungelöst bleiben.\n\nWir modellieren Seite A als $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ mit $n_A = 28$, $p_A = 0.78$ und Seite B als $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ mit $n_B = 16$, $p_B = 0.94$.\n\nThe “at most 15% unresolved” rule is a count cutoff, not a literal fractional ticket count. Für Seite A, $15\\%\\times 28 = 4.2$, so unresolved tickets can be at most $u_A = \\lfloor 4.2 \\rfloor = 4$. With $X$ = number resolved, that is $X \\ge 24$. For side B, $u_B = 2$ and $X \\ge 14$."
+    "solution_overview": "Support-Warteschlange A bearbeitet 28 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,78 gelöst. Support-Warteschlange B bearbeitet 16 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0,94 gelöst. Ein Tag ist für eine Warteschlange „im Ziel“, wenn höchstens 15 % der Tickets dieser Warteschlange bis Tagesende ungelöst bleiben.\n\nWir modellieren Seite A als $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ mit $n_A = 28$, $p_A = 0.78$ und Seite B als $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ mit $n_B = 16$, $p_B = 0.94$.\n\nDie Regel „höchstens 15 % ungelöst“ ist eine ganzzahlige Anzahlschranke, keine wörtliche Bruchzahl von Tickets. Für Seite A gilt $15\\%\\times 28 = 4.2$, also dürfen höchstens $u_A = \\lfloor 4.2 \\rfloor = 4$ Tickets ungelöst bleiben. Mit $X$ = Anzahl gelöster Tickets bedeutet das $X \\ge 24$. Für Seite B gilt $u_B = 2$ und $X \\ge 14$."
   },
   "MATH 13.32": {
     "title": "Screening-Test-Stichproben",
-    "context": "Screening-Test A wird an 500 unabhängigen Proben durchgeführt und liefert bei einer gegebenen Probe mit Wahrscheinlichkeit 0,004 ein falsch positives Ergebnis. Screening-Test B wird an einem anderen Satz von 500 unabhängigen Proben durchgeführt und liefert mit Wahrscheinlichkeit 0,012 ein falsch positives Ergebnis. Die beiden Tests sind voneinander unabhängig. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Screening-Test A wird an 500 unabhängigen Proben durchgeführt und liefert bei einer gegebenen Probe mit Wahrscheinlichkeit 0,004 ein falsch positives Ergebnis. Screening-Test B wird an einem anderen Satz von 500 unabhängigen Proben durchgeführt und liefert mit Wahrscheinlichkeit 0,012 ein falsch positives Ergebnis. Die beiden Tests sind voneinander unabhängig. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl von falsch positiver Ergebnisse bei Test A ist genau 2.",
-      "Test A Wahrscheinlichkeit für null Fehlalarme ist größer als 0.20.",
-      "Die Wahrscheinlichkeit, dass beide Tests null Fehlalarme liefern, ist kleiner als $0{,}001$.",
-      "Die Wahrscheinlichkeit, dass mindestens einer der beiden Tests mindestens ein falsch positives Ergebnis liefert, ist kleiner als 0.999.",
-      "Test B Standardabweichung der Fehlalarm-Anzahl ist größer als das 1.5-Fache von Test A Standardabweichung."
+      "Die erwartete Anzahl falsch positiver Ergebnisse bei Test A ist genau 2.",
+      "Die Wahrscheinlichkeit für null Fehlalarme bei Test A ist größer als 0,20.",
+      "Die Wahrscheinlichkeit, dass beide Tests null Fehlalarme liefern, ist kleiner als 0,001.",
+      "Die Wahrscheinlichkeit, dass mindestens einer der beiden Tests mindestens ein falsch positives Ergebnis liefert, ist kleiner als 0,999.",
+      "Die Standardabweichung der Fehlalarm-Anzahl bei Test B ist mehr als 1,5-mal so groß wie die bei Test A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Test A, $n = 500$ and $p = 0.004$:\n\n$$\nE[A] = 500 \\cdot 0.004\n$$\n\n$$\n500 \\times 0.004 = 2\n$$\n\n.\n\nDie Aussage ist richtig.",
@@ -605,11 +605,11 @@
       "**D.** → Falsch\n\nDas komplementäre Ereignis ist, dass beide Tests null falsch positive Ergebnisse melden; subtrahiere daher die Wahrscheinlichkeit dieses Ereignisses von 1, um die Chance zu erhalten, dass mindestens ein Test ein falsch positives Ergebnis meldet:\n\n$$\n1 - P(A = 0)P(B = 0) = 1 - (0.996)^{500}(0.988)^{500} \\approx 0.9997\n$$\n\nDa $0.9997 \\ge 0.999$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n\\mathrm{SD}(A) = \\sqrt{500 \\cdot 0.004 \\cdot 0.996}\n$$\n\n$$\n1.411\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{500 \\cdot 0.012 \\cdot 0.988}\n$$\n\n$$\n2.435\n$$\n\n$$\n\\frac{\\mathrm{SD}(B)}{\\mathrm{SD}(A)}\n$$\n\n$$\n\\frac{2.435}{1.411}\n$$\n\n$$\n1.73\n$$\n\nDa $1.73 > 1.5$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Screening-Test A wird an 500 unabhängigen Proben durchgeführt und liefert bei einer gegebenen Probe mit Wahrscheinlichkeit 0,004 ein falsch positives Ergebnis. Screening-Test B wird an einem anderen Satz von 500 unabhängigen Proben durchgeführt und liefert mit Wahrscheinlichkeit 0,012 ein falsch positives Ergebnis. Die beiden Tests sind voneinander unabhängig.\n\nWe model Test A as $X_A \\sim \\mathrm{Bin}(500, 0.004)$ and Test B as $X_B \\sim \\mathrm{Bin}(500, 0.012)$."
+    "solution_overview": "Screening-Test A wird an 500 unabhängigen Proben durchgeführt und liefert bei einer gegebenen Probe mit Wahrscheinlichkeit 0,004 ein falsch positives Ergebnis. Screening-Test B wird an einem anderen Satz von 500 unabhängigen Proben durchgeführt und liefert mit Wahrscheinlichkeit 0,012 ein falsch positives Ergebnis. Die beiden Tests sind voneinander unabhängig.\n\nWir modellieren Test A als $X_A \\sim \\mathrm{Bin}(500, 0.004)$ und Test B als $X_B \\sim \\mathrm{Bin}(500, 0.012)$."
   },
   "MATH 13.33": {
     "title": "Dreißig Freiwürfe",
-    "context": "Spieler A versucht 30 Freiwürfe und trifft jeden Wurf unabhängig mit Wahrscheinlichkeit 0,72. Spieler B versucht ebenfalls 30 Freiwürfe und trifft jeden Wurf unabhängig mit Wahrscheinlichkeit 0,55. Eine Leistung gilt als „im Tempo“, wenn der Spieler zwischen 18 und 22 Würfen einschließlich trifft. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Spieler A versucht 30 Freiwürfe und trifft jeden Wurf unabhängig mit Wahrscheinlichkeit 0,72. Spieler B versucht ebenfalls 30 Freiwürfe und trifft jeden Wurf unabhängig mit Wahrscheinlichkeit 0,55. Eine Leistung gilt als „im Tempo“, wenn der Spieler zwischen 18 und 22 Würfen einschließlich trifft. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Tempo-Wahrscheinlichkeit von Spieler A ist mehr als 1.5-mal so groß wie die von Spieler B.",
       "Für Spieler A ist die Tempo-Wahrscheinlichkeit größer als die Wahrscheinlichkeit von genau 18.",
@@ -621,14 +621,14 @@
       "**A.** → Richtig\n\nDas Ereignis „zwischen 18 und 22 einschließlich“ ist die Summe der Punktmassen $X = 18,\\ldots,22$:\n\n$$\nP(18 \\le X \\le 22) = \\sum_{x = 18}^{22} \\binom{n}{x} p^{x}(1-p)^{n-x}\n$$\n\nSeite A: $P \\approx 0.5807 \\approx 58.07\\%$.\n\nSeite B: $P \\approx 0.3471 \\approx 34.71\\%$.\n\nVerhältnis (A relativ zu B) $\\approx 1.673$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 18 bis 22, nicht nur die einzelne Anzahl 18. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=18)$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$$\n\\mathrm{median}\\approx\\lfloor(n+1)p\\rfloor,\\quad E[X] = np\n$$\n\n$$\n(n_B+1)p_B = (30+1)\\cdot0.55 = 17.05\n$$\n\n= 17.\n\nSpieler B hat Mittelwert 16,5. Die nächste ganze Zahl ist 16. Der Binomialmedian ist 17.\n\nDie Aussage ist falsch. Ein Studierender, der den Mittelwert bereits als Median behandelt, würde die Aussage als wahr markieren.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\n$$\nE[X] = np = 30\\cdot0.55\n$$\n\n$$\n30 \\times 0.55 = 16.5\n$$\n\n= 16.5.\n\n= 16.5, which is not inside [18, 22].\n\nDie Aussage ist falsch. Ein Studierender, der 16,5 mit dem nächsten Endpunkt vergleicht, statt zu fragen, ob es in [18, 22] liegt, würde die Aussage als wahr markieren.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$$\nE[X] = np = 30\\cdot0.55\n$$\n\n$$\n30 \\times 0.55 = 16.5\n$$\n\n= 16.5.\n\n= 16.5, und das liegt nicht in [18, 22].\n\nDie Aussage ist falsch. Ein Studierender, der 16,5 mit dem nächsten Endpunkt vergleicht, statt zu fragen, ob es in [18, 22] liegt, würde die Aussage als wahr markieren.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n\\dfrac{|E[A]-E[B]|}{\\mathrm{SD}(\\mathrm{ref})} = |21.6-16.5|/2.4593\n$$\n\n= 2.0738, was größer als 2 ist.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Spieler A versucht 30 Freiwürfe und trifft jeden Wurf unabhängig mit Wahrscheinlichkeit 0,72. Spieler B versucht ebenfalls 30 Freiwürfe und trifft jeden Wurf unabhängig mit Wahrscheinlichkeit 0,55. Eine Leistung gilt als „im Tempo“, wenn der Spieler zwischen 18 und 22 Würfen einschließlich trifft.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 30$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.72$, Seite B hat $p_B = 0.55$."
   },
   "MATH 13.34": {
     "title": "Stündliche Produktionseinheiten",
-    "context": "Produktionslinie 1 fertigt 12 Einheiten pro Stunde, jede unabhängig fehlerfrei mit Wahrscheinlichkeit 0,65. Produktionslinie 2 fertigt 18 Einheiten pro Stunde, jede unabhängig fehlerfrei mit Wahrscheinlichkeit 0,80. Jede Einheit beider Linien landet in einem gemeinsamen Sammelbehälter, daher ist die stündliche Gesamtzahl die Summe der beiden unabhängigen Anzahlen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Produktionslinie 1 fertigt 12 Einheiten pro Stunde, jede unabhängig fehlerfrei mit Wahrscheinlichkeit 0,65. Produktionslinie 2 fertigt 18 Einheiten pro Stunde, jede unabhängig fehlerfrei mit Wahrscheinlichkeit 0,80. Jede Einheit beider Linien landet in einem gemeinsamen Sammelbehälter, daher ist die stündliche Gesamtzahl die Summe der beiden unabhängigen Anzahlen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Gesamtzahl fehlerfreier Einheiten im gemeinsamen Behälter folgt einer Binomialverteilung.",
       "Die mittlere Anzahl fehlerfreier Einheiten im gemeinsamen Behälter ist genau 22.2.",
@@ -647,13 +647,13 @@
   },
   "MATH 13.35": {
     "title": "Prüfer-C-Compliance",
-    "context": "Prüfer C prüft 45 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,60, und wir betrachten die Chance auf höchstens 30 regelkonforme. Prüfer D prüft 40 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,45, und wir betrachten die Chance auf mindestens 22 regelkonforme. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Prüfer C prüft 45 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,60, und wir betrachten die Chance auf höchstens 30 regelkonforme. Prüfer D prüft 40 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,45, und wir betrachten die Chance auf mindestens 22 regelkonforme. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer C ist genau 27.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer C ist genau 27.",
       "Prüfer C hat wahrscheinlicher höchstens 30 regelkonforme Transaktionen als mehr als 30.",
-      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer C ist genau 9 mehr als Auditor D's.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer C ist genau 9 mehr als bei Prüfer D.",
       "Prüfer D hat weniger wahrscheinlich mindestens 22 regelkonforme Transaktionen als 21 oder weniger.",
-      "Die Varianz von Prüfer C in der Anzahl von regelkonformer Transaktionen ist mehr als 1.2-mal so groß wie die Varianz von Prüfer D."
+      "Die Varianz der Anzahl regelkonformer Transaktionen bei Prüfer C ist mehr als 1,2-mal so groß wie die Varianz bei Prüfer D."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer C, $n = 45$ and $p = 0.60$:\n\n$$\nE[C] = 45 \\cdot 0.60\n$$\n\n$$\n45 \\times 0.6 = 27\n$$\n\n.\n\nDie Aussage ist richtig.",
@@ -662,20 +662,20 @@
       "**D.** → Richtig\n\nDie beiden Ereignisse sind Komplemente einer ganzzahligen Anzahl, daher addieren sich ihre Wahrscheinlichkeiten zu $1$. Die direkte Berechnung der Wahrscheinlichkeit des oberen Schwanzes zeigt, dass sie kleiner ist als $\\frac{1}{2}$, also kleiner als die komplementäre Wahrscheinlichkeit des unteren Schwanzes.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n\\mathrm{Var}(C) = 45 \\cdot 0.60 \\cdot 0.40\n$$\n\n$$\n\\mathrm{Var}(D) = 40 \\cdot 0.45 \\cdot 0.55\n$$\n\n$$\n\\frac{\\mathrm{Var}(C)}{\\mathrm{Var}(D)} = \\frac{10.8}{9.9}\n$$\n\n$$\n1.09\n$$\n\nDa $1.09 \\le 1.2$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Prüfer C prüft 45 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,60, und wir betrachten die Chance auf höchstens 30 regelkonforme. Prüfer D prüft 40 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,45, und wir betrachten die Chance auf mindestens 22 regelkonforme.\n\nWe model Auditor C as $X_C \\sim \\mathrm{Bin}(45, 0.60)$ and Auditor D as $X_D \\sim \\mathrm{Bin}(40, 0.45)$."
+    "solution_overview": "Prüfer C prüft 45 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,60, und wir betrachten $P(X \\le 30)$. Prüfer D prüft 40 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,45, und wir betrachten $P(X \\ge 22)$.\n\nWir modellieren Prüfer C als $X_C \\sim \\mathrm{Bin}(45, 0.60)$ und Prüfer D als $X_D \\sim \\mathrm{Bin}(40, 0.45)$."
   },
   "MATH 13.36": {
     "title": "Werkschargen mit niedriger Ausbeute",
-    "context": "Werk A prüft Chargen von 17 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,43. Werk B prüft Chargen von 29 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,61. Die Charge von Werk A besteht, wenn mindestens 87 % ihrer Einheiten fehlerfrei sind. Die Charge von Werk B besteht, wenn mindestens 79 % ihrer Einheiten fehlerfrei sind. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Werk A prüft Chargen von 17 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,43. Werk B prüft Chargen von 29 Einheiten; jede Einheit ist unabhängig fehlerfrei mit Wahrscheinlichkeit 0,61. Die Charge von Werk A besteht, wenn mindestens 87 % ihrer Einheiten fehlerfrei sind. Die Charge von Werk B besteht, wenn mindestens 79 % ihrer Einheiten fehlerfrei sind. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Charge von Werk A besteht mit mindestens 14 fehlerfreien Einheiten.",
-      "Die Wahrscheinlichkeit, dass die batch passes von Werk A, ist größer als die Wahrscheinlichkeit von genau 15.",
+      "Die Wahrscheinlichkeit, dass die Charge von Werk A besteht, ist größer als die Wahrscheinlichkeit von genau 15.",
       "Werk B ist mehr als 150-mal so wahrscheinlich wie Werk A, dass seine Charge besteht.",
-      "Die erwartete Anzahl von fehlerfreier Einheiten bei Werk A ist größer als 8.",
-      "Die Standardabweichung von Werk B in der Anzahl von fehlerfreier Einheiten ist höher als die von Werk A."
+      "Die erwartete Anzahl fehlerfreier Einheiten bei Werk A ist größer als 8.",
+      "Die Standardabweichung der Anzahl fehlerfreier Einheiten bei Werk B ist höher als die bei Werk A."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nEine prozentuale Schwelle muss in eine ganzzahlige Anzahl umgerechnet werden. $87\\%$ von $n = 17$ ist\n\n$$\n87\\% \\times 17 = 14.79.\n$$\n\n„Mindestens 87 %“ bedeutet, dass die Erfolgsanzahl $X$ mindestens $14.79$ sein muss. Weil $X$ ganzzahlig ist, gilt $X \\ge \\lceil 14.79 \\rceil = 15$.\n\nDie Aussage verwendet „mindestens 14“, aber die korrekte ganzzahlige Schwelle ist $15$ (Aufrundung, nicht Abschneiden von 14.79 to 14 when a fractional unit would still fall short of the percentage).\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nEine prozentuale Schwelle muss in eine ganzzahlige Anzahl umgerechnet werden. $87\\%$ von $n = 17$ ist\n\n$$\n87\\% \\times 17 = 14.79.\n$$\n\n„Mindestens 87 %“ bedeutet, dass die Erfolgsanzahl $X$ mindestens $14.79$ sein muss. Weil $X$ ganzzahlig ist, gilt $X \\ge \\lceil 14.79 \\rceil = 15$.\n\nDie Aussage verwendet „mindestens 14“, aber die korrekte ganzzahlige Schwelle ist $15$ (Aufrunden, nicht Abschneiden von $14{,}79$ auf $14$ — ein Bruchteil einer Einheit würde die Prozentgrenze noch verfehlen).\n\nDie Aussage ist falsch.",
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von mindestens 15, nicht nur die einzelne Anzahl 15. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=15)$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nJede Seite hat ihr eigenes Paar $(n,k)$: Seite A braucht $X_A\\ge 15$ bei $n_A=17$, Seite B braucht $X_B\\ge 23$ bei $n_B=29$.\n\n$$\nP(X_A\\ge 15)=\\sum_{x=15}^{17}\\binom{17}{x}p_A^{x}(1-p_A)^{17-x}\n$$\n\n$$\nP(X_B\\ge 23)=\\sum_{x=23}^{29}\\binom{29}{x}p_B^{x}(1-p_B)^{29-x}\n$$\n\nMit $p_A=0{,}43$ und $p_B=0{,}61$ ergeben die oberen Schwänze $P_A\\approx 0{,}02\\%$ und $P_B\\approx 2{,}99\\%$.\n\n$$\n\\frac{P_B(X_B\\ge 23)}{P_A(X_A\\ge 15)}\\approx\\frac{2{,}99\\%}{0{,}02\\%}\\approx 193{,}86>150\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 17 \\cdot 0.43\n$$\n\n$$\n17 \\times 0.43 = 7.31\n$$\n\nDie Behauptung vergleicht diesen Erwartungswert mit $8$. $E[A] = 7.31$ ist nicht größer als $8$.\n\nDie Aussage ist falsch.",
@@ -685,7 +685,7 @@
   },
   "MATH 13.37": {
     "title": "Komponenten-Markierungsprüfungen",
-    "context": "Zwei unabhängige Inspektionsprüfungen laufen jeweils auf derselben Charge von 23 identischen Komponenten. Prüfung A markiert eine Komponente mit Wahrscheinlichkeit 0,34 pro Komponente als fehlerhaft. Prüfung B markiert eine Komponente mit Wahrscheinlichkeit 0,66 pro Komponente als fehlerhaft. Es sei X die Anzahl der von jeder Prüfung markierten Komponenten. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei unabhängige Inspektionsprüfungen laufen jeweils auf derselben Charge von 23 identischen Komponenten. Prüfung A markiert eine Komponente mit Wahrscheinlichkeit 0,34 pro Komponente als fehlerhaft. Prüfung B markiert eine Komponente mit Wahrscheinlichkeit 0,66 pro Komponente als fehlerhaft. Es sei X die Anzahl der von jeder Prüfung markierten Komponenten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Varianz von Prüfung A in der Anzahl markierter Komponenten ist gleich der Varianz von Prüfung B in der Anzahl markierter Komponenten.",
       "Die erwartete Anzahl markierter Komponenten von Prüfung B ist mehr als doppelt so groß wie die von Prüfung A.",
@@ -704,7 +704,7 @@
   },
   "MATH 13.38": {
     "title": "Linie A gegen Linie B — Chargen",
-    "context": "Produktionslinie A fertigt Chargen von 27 Einheiten mit Akzeptanzwahrscheinlichkeit 0,48 pro Einheit. Produktionslinie B fertigt Chargen von 19 Einheiten mit Akzeptanzwahrscheinlichkeit 0,77 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 9 und 14 einschließlich liegt. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Produktionslinie A fertigt Chargen von 27 Einheiten mit Akzeptanzwahrscheinlichkeit 0,48 pro Einheit. Produktionslinie B fertigt Chargen von 19 Einheiten mit Akzeptanzwahrscheinlichkeit 0,77 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 9 und 14 einschließlich liegt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit von Linie A, im mittleren Bereich zu landen, ist mehr als 1.5-mal so groß wie die von Linie B.",
       "Für Linie A ist die Wahrscheinlichkeit des mittleren Bereichs größer als die Wahrscheinlichkeit von genau 9.",
@@ -717,13 +717,13 @@
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 9 bis 14, nicht nur die einzelne Anzahl 9. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=9)$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nFür Linie A sind Erwartungswert und Standardabweichung einer binomialverteilten Anzahl\n\n$$\nE[A] = np = 27\\cdot 0.48 = 12.96\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{np(1-p)} = \\sqrt{6.7392} \\approx 2.596\n$$\n\nEine Standardabweichung um den Erwartungswert ist das Intervall\n\n$$\n\\bigl[12.96-2.596,\\ 12.96+2.596\\bigr] \\approx [10.364,\\ 15.556]\n$$\n\nDer mittlere Bereich $[9,14]$ beginnt bei $9$, was unterhalb dieses Intervalls liegt. Der mittlere Bereich liegt also nicht vollständig innerhalb einer Standardabweichung vom Mittelwert von Linie A.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 19 \\cdot 0.77\n$$\n\n$$\n19 \\times 0.77 = 14.63\n$$\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDie beiden Mittelwerte und die Standardabweichung von Linie A sind\n\n$$\nE[A] = 27\\cdot 0.48 = 12.96\n$$\n\n$$\nE[B] = 19\\cdot 0.77 = 14.63\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{6.7392} \\approx 2.596\n$$\n\nDie Lücke zwischen den Mittelwerten, gemessen in Einheiten von $\\mathrm{SD}(A)$, is\n\n$$\n\\frac{E[B]-E[A]}{\\mathrm{SD}(A)} = \\frac{1.67}{2.596} \\approx 0.643\n$$\n\nDa $0.643 > 0.6$, gilt die Behauptung.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nDie beiden Mittelwerte und die Standardabweichung von Linie A sind\n\n$$\nE[A] = 27\\cdot 0.48 = 12.96\n$$\n\n$$\nE[B] = 19\\cdot 0.77 = 14.63\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{6.7392} \\approx 2.596\n$$\n\nDie Lücke zwischen den Mittelwerten, gemessen in Einheiten von $\\mathrm{SD}(A)$, ist\n\n$$\n\\frac{E[B]-E[A]}{\\mathrm{SD}(A)} = \\frac{1.67}{2.596} \\approx 0.643\n$$\n\nDa $0.643 > 0.6$, gilt die Behauptung.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Produktionslinie A fertigt Chargen von 27 Einheiten mit Akzeptanzwahrscheinlichkeit 0,48 pro Einheit. Produktionslinie B fertigt Chargen von 19 Einheiten mit Akzeptanzwahrscheinlichkeit 0,77 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 9 und 14 einschließlich liegt.\n\nWir modellieren Seite A als $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ mit $n_A = 27$, $p_A = 0.48$ und Seite B als $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ mit $n_B = 19$, $p_B = 0.77$."
   },
   "MATH 13.39": {
     "title": "Dreiundzwanzig-Versuchs-Teams",
-    "context": "Zwei Teams absolvieren je 23 unabhängige Versuche. Team A gelingt jeder Versuch mit Wahrscheinlichkeit 0,37. Team B gelingt jeder Versuch mit Wahrscheinlichkeit 0,83. Ein Team „schafft die Schwelle“, wenn es mindestens 17 von 23 Versuchen erfolgreich absolviert. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Teams absolvieren je 23 unabhängige Versuche. Team A gelingt jeder Versuch mit Wahrscheinlichkeit 0,37. Team B gelingt jeder Versuch mit Wahrscheinlichkeit 0,83. Ein Team „schafft die Schwelle“, wenn es mindestens 17 von 23 Versuchen erfolgreich absolviert. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Differenz zwischen der Wahrscheinlichkeit von Team B und Team A, die Schwelle zu schaffen, ist größer als 0.9.",
       "Die Wahrscheinlichkeit, dass Team B die Schwelle schafft, ist größer als die Wahrscheinlichkeit von genau 17.",
@@ -742,13 +742,13 @@
   },
   "MATH 13.40": {
     "title": "Prüfer-E-Schwelle",
-    "context": "Prüfer E prüft 53 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,43, und wir betrachten die Chance auf mindestens 27 regelkonforme. Prüfer F prüft 31 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,89, und wir betrachten die Chance auf mindestens 29 regelkonforme. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Prüfer E prüft 53 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,43, und wir betrachten die Chance auf mindestens 27 regelkonforme. Prüfer F prüft 31 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,89, und wir betrachten die Chance auf mindestens 29 regelkonforme. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer E ist kleiner als 23.",
-      "Die erwartete Anzahl von regelkonformer Transaktionen bei Prüfer F ist kleiner als 27.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer E ist kleiner als 23.",
+      "Die erwartete Anzahl regelkonformer Transaktionen bei Prüfer F ist kleiner als 27.",
       "Prüfer E hat weniger wahrscheinlich mindestens 27 regelkonforme Transaktionen als 26 oder weniger.",
-      "Prüfer F ist mehr als 3-mal so wahrscheinlich wie Prüfer E, meet the stated threshold.",
-      "Die Varianz von Prüfer E in der Anzahl von regelkonformer Transaktionen ist mehr als four-mal so groß wie die Varianz von Prüfer F."
+      "Prüfer F ist mehr als 3-mal so wahrscheinlich wie Prüfer E, die angegebene Schwelle zu erreichen.",
+      "Die Varianz der Anzahl regelkonformer Transaktionen bei Prüfer E ist mehr als viermal so groß wie die Varianz bei Prüfer F."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nE[E] = 53 \\cdot 0.43\n$$\n\n$$\n53 \\times 0.43 = 22.79\n$$\n\nDa $22.79 < 23$.\n\nDie Aussage ist richtig.",
@@ -757,30 +757,30 @@
       "**D.** → Falsch\n\n$$\nP_E(X \\ge 27)\n$$\n\n$$\n0.1517\n$$\n\n$$\nP_F(X \\ge 29)\n$$\n\n$$\n0.3220\n$$\n\n$$\n\\frac{P_F(X \\ge 29)}{P_E(X \\ge 27)}\n$$\n\n$$\n\\frac{0.3220}{0.1517}\n$$\n\n$$\n2.12\n$$\n\nDa $2.12 \\le 3$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n\\mathrm{Var}(E) = 53 \\cdot 0.43 \\cdot 0.57\n$$\n\n$$\n\\mathrm{Var}(F) = 31 \\cdot 0.89 \\cdot 0.11\n$$\n\n$$\n\\frac{\\mathrm{Var}(E)}{\\mathrm{Var}(F)} = \\frac{12.9903}{3.0349}\n$$\n\n$$\n4.28\n$$\n\nDa $4.28 > 4$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Prüfer E prüft 53 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,43, und wir betrachten die Chance auf mindestens 27 regelkonforme. Prüfer F prüft 31 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,89, und wir betrachten die Chance auf mindestens 29 regelkonforme.\n\nWe model Auditor E as $X_E \\sim \\mathrm{Bin}(53, 0.43)$ and Auditor F as $X_F \\sim \\mathrm{Bin}(31, 0.89)$."
+    "solution_overview": "Prüfer E prüft 53 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,43, und wir betrachten $P(X \\ge 27)$. Prüfer F prüft 31 unabhängige Transaktionen, jede regelkonform mit Wahrscheinlichkeit 0,89, und wir betrachten $P(X \\ge 29)$.\n\nWir modellieren Prüfer E als $X_E \\sim \\mathrm{Bin}(53, 0.43)$ und Prüfer F als $X_F \\sim \\mathrm{Bin}(31, 0.89)$."
   },
   "MATH 13.41": {
     "title": "Seltene Komponentenausfälle",
-    "context": "Komponente A wird an 2.500 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0012 pro Einheit aus. Komponente B wird an 6.000 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0005 pro Einheit aus. Beide haben dieselbe erwartete Anzahl an Ausfällen, np = 3. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Komponente A wird an 2.500 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0012 pro Einheit aus. Komponente B wird an 6.000 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0005 pro Einheit aus. Beide haben dieselbe erwartete Anzahl an Ausfällen, np = 3. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Komponente A und Komponente B haben genau gleiche Wahrscheinlichkeiten für null Ausfälle.",
-      "Die Varianz von Komponente A in der Anzahl der Ausfälle ist kleiner als die Varianz von Komponente B.",
-      "Komponente B Wahrscheinlichkeit für null Ausfälle ist größer als 0.04.",
-      "Die Standardabweichung von Komponente A in der Anzahl von failures ist höher als die von Komponente B.",
+      "Die Varianz der Anzahl der Ausfälle bei Komponente A ist kleiner als die Varianz bei Komponente B.",
+      "Die Wahrscheinlichkeit für null Ausfälle bei Komponente B ist größer als 0,04.",
+      "Die Standardabweichung der Anzahl der Ausfälle bei Komponente A ist höher als die bei Komponente B.",
       "Die Wahrscheinlichkeit, dass Komponente A mindestens 1 Ausfall hat, ist höher als die Wahrscheinlichkeit, dass Komponente B mindestens 1 Ausfall hat."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nGleiche Erwartungswerte $np$ erzwingen keine gleichen Wahrscheinlichkeiten für null Ausfälle, weil\n\n$$\nP(X = 0) = (1-p)^{n}\n$$\n\nstill depends on $n$ and $p$ separately.\n\n$$\nP_A(X = 0) = (0.9988)^{2500} \\approx 0.04970\n$$\n\n$$\nP_B(X = 0) = (0.9995)^{6000} \\approx 0.04975\n$$\n\nThese are close but not exactly equal.\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nGleiche Erwartungswerte $np$ erzwingen keine gleichen Wahrscheinlichkeiten für null Ausfälle, weil\n\n$$\nP(X = 0) = (1-p)^{n}\n$$\n\nhängt weiterhin separat von $n$ und $p$ ab.\n\n$$\nP_A(X = 0) = (0.9988)^{2500} \\approx 0.04970\n$$\n\n$$\nP_B(X = 0) = (0.9995)^{6000} \\approx 0.04975\n$$\n\nDiese Werte liegen nah beieinander, sind aber nicht genau gleich.\n\nDie Aussage ist falsch.",
       "**B.** → Richtig\n\n$$\n\\mathrm{Var}(A) = 2500 \\cdot 0.0012 \\cdot 0.9988\n$$\n\n$$\n2500 \\times 0.0012 = 3\n$$\n\n$$\n3 \\times 0.9988 = 2.9964\n$$\n\n$$\n\\mathrm{Var}(B) = 6000 \\cdot 0.0005 \\cdot 0.9995\n$$\n\n$$\n6000 \\times 0.0005 = 3\n$$\n\n$$\n3 \\times 0.9995 = 2.9985\n$$\n\nDa $2.9964 < 2.9985$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nZero failures means every unit survives:\n\n$$\nP(X = 0) = (1-p)^{n} = (0.9995)^{6000} \\approx 0.04975\n$$\n\nDa $0.04975 > 0.04$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nNull Ausfälle bedeuten, dass jede Einheit übersteht:\n\n$$\nP(X = 0) = (1-p)^{n} = (0.9995)^{6000} \\approx 0.04975\n$$\n\nDa $0.04975 > 0.04$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\n$$\n\\mathrm{SD}(A) = \\sqrt{2.9964}\n$$\n\n$$\n1.7310\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{2.9985}\n$$\n\n$$\n1.7316\n$$\n\nDa $\\mathrm{SD}(A) < \\mathrm{SD}(B)$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\nP(X \\ge 1) = 1 - (1-p)^{n}\n$$\n\n$$\nP_A(X \\ge 1) \\approx 1 - 0.04970 = 0.95030\n$$\n\n$$\nP_B(X \\ge 1) \\approx 1 - 0.04975 = 0.95025\n$$\n\nDa $0.95030 > 0.95025$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Komponente A wird an 2.500 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0012 pro Einheit aus. Komponente B wird an 6.000 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0005 pro Einheit aus. Beide haben dieselbe erwartete Anzahl an Ausfällen, np = 3.\n\nWe model Component A as $X_A \\sim \\mathrm{Bin}(2500, 0.0012)$ and Component B as $X_B \\sim \\mathrm{Bin}(6000, 0.0005)$."
+    "solution_overview": "Komponente A wird an 2.500 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0012 pro Einheit aus. Komponente B wird an 6.000 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0005 pro Einheit aus. Beide haben dieselbe erwartete Anzahl an Ausfällen, $np = 3$.\n\nWir modellieren Komponente A als $X_A \\sim \\mathrm{Bin}(2500, 0.0012)$ und Komponente B als $X_B \\sim \\mathrm{Bin}(6000, 0.0005)$."
   },
   "MATH 13.42": {
     "title": "Mutations-Typ-Raten",
-    "context": "Mutationstyp 1 tritt unabhängig in jeder von 5.000 Proben mit Wahrscheinlichkeit 0,0006 pro Probe auf. Mutationstyp 2 tritt unabhängig in jeder von 60 Proben mit Wahrscheinlichkeit 0,05 pro Probe auf. Beide haben dieselbe erwartete Anzahl, np = 3. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Mutationstyp 1 tritt unabhängig in jeder von 5.000 Proben mit Wahrscheinlichkeit 0,0006 pro Probe auf. Mutationstyp 2 tritt unabhängig in jeder von 60 Proben mit Wahrscheinlichkeit 0,05 pro Probe auf. Beide haben dieselbe erwartete Anzahl, np = 3. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Typ 1 und Typ 2 haben genau gleiche Wahrscheinlichkeiten für null Mutationen.",
       "Für Typ 1 ist die Wahrscheinlichkeit von null Mutationen größer als 0.04.",
@@ -789,23 +789,23 @@
       "Die Standardabweichung der Mutationsanzahl bei Typ 1 ist kleiner als bei Typ 2."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nEqual means do not force equal zero counts:\n\n$$\nP_1(X = 0) = (0.9994)^{5000} \\approx 0.04974\n$$\n\n$$\nP_2(X = 0) = (0.95)^{60} \\approx 0.04607\n$$\n\nThese differ.\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nGleiche Erwartungswerte erzwingen keine gleichen Null-Anzahlen:\n\n$$\nP_1(X = 0) = (0.9994)^{5000} \\approx 0.04974\n$$\n\n$$\nP_2(X = 0) = (0.95)^{60} \\approx 0.04607\n$$\n\nDiese Werte unterscheiden sich.\n\nDie Aussage ist falsch.",
       "**B.** → Richtig\n\n$$\nP_1(X = 0) = (0.9994)^{5000} \\approx 0.04974 > 0.04\n$$\n\n.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$$\nP_2(X = 0) = (0.95)^{60} \\approx 0.04607 \\le 0.05\n$$\n\n.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\n$$\n\\mathrm{Var}(1) = 5000 \\cdot 0.0006 \\cdot 0.9994\n$$\n\n$$\n5000 \\times 0.0006 = 3\n$$\n\n$$\n3 \\times 0.9994 = 2.9982\n$$\n\n$$\n\\mathrm{Var}(2) = 60 \\cdot 0.05 \\cdot 0.95\n$$\n\n$$\n60 \\times 0.05 = 3\n$$\n\n$$\n3 \\times 0.95 = 2.85\n$$\n\nDa $2.9982 > 2.85$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n\\mathrm{SD}(1) = \\sqrt{2.9982}\n$$\n\n$$\n1.732\n$$\n\n$$\n\\mathrm{SD}(2) = \\sqrt{2.85}\n$$\n\n$$\n1.688\n$$\n\nDa $\\mathrm{SD}(1) > \\mathrm{SD}(2)$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Mutationstyp 1 tritt unabhängig in jeder von 5.000 Proben mit Wahrscheinlichkeit 0,0006 pro Probe auf. Mutationstyp 2 tritt unabhängig in jeder von 60 Proben mit Wahrscheinlichkeit 0,05 pro Probe auf. Beide haben dieselbe erwartete Anzahl, np = 3.\n\nWe model Type 1 as $X_1 \\sim \\mathrm{Bin}(5000, 0.0006)$ and Type 2 as $X_2 \\sim \\mathrm{Bin}(60, 0.05)$."
+    "solution_overview": "Mutationstyp 1 tritt unabhängig in jeder von 5.000 Proben mit Wahrscheinlichkeit 0,0006 pro Probe auf. Mutationstyp 2 tritt unabhängig in jeder von 60 Proben mit Wahrscheinlichkeit 0,05 pro Probe auf. Beide haben dieselbe erwartete Anzahl, $np = 3$.\n\nWir modellieren Typ 1 als $X_1 \\sim \\mathrm{Bin}(5000, 0.0006)$ und Typ 2 als $X_2 \\sim \\mathrm{Bin}(60, 0.05)$."
   },
   "MATH 13.43": {
     "title": "Serverfehler-Anfragen",
-    "context": "Dienst A bearbeitet 9.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00007 einen Serverfehler zurückgibt. Dienst B bearbeitet 20.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00004 einen Serverfehler zurückgibt. Die beiden Dienste arbeiten unabhängig voneinander. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Dienst A bearbeitet 9.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00007 einen Serverfehler zurückgibt. Dienst B bearbeitet 20.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00004 einen Serverfehler zurückgibt. Die beiden Dienste arbeiten unabhängig voneinander. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Wahrscheinlichkeit von Dienst A für mindestens einen Fehler ist kleiner als 0.40.",
-      "Dienst B ist mehr als 1.2-mal so wahrscheinlich wie Dienst A, have at least one error.",
-      "Die erwartete Gesamtzahl der Fehler über beide Dienste zusammen ist 1.43.",
-      "Die Standardabweichung von Dienst B in der Anzahl von errors ist höher als die von Dienst A.",
-      "Die erwartete Anzahl von errors bei Dienst A ist größer als Service B's."
+      "Die Wahrscheinlichkeit, dass Dienst A mindestens einen Fehler hat, ist kleiner als 0,40.",
+      "Dienst B ist mehr als 1,2-mal so wahrscheinlich wie Dienst A, mindestens einen Fehler zu haben.",
+      "Die erwartete Gesamtzahl der Fehler über beide Dienste zusammen ist 1,43.",
+      "Die Standardabweichung der Fehleranzahl bei Dienst B ist höher als die bei Dienst A.",
+      "Die erwartete Anzahl der Fehler bei Dienst A ist größer als die bei Dienst B."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\n$$\nP(X_A \\ge 1) = 1 - (1-0.00007)^{9000}\n$$\n\n$$\n1 - 0.5326 = 0.4674\n$$\n\nDa $0.4674 \\ge 0.40$.\n\nDie Aussage ist falsch.",
@@ -814,11 +814,11 @@
       "**D.** → Richtig\n\n$$\n\\mathrm{SD}(A) = \\sqrt{9000 \\cdot 0.00007 \\cdot 0.99993}\n$$\n\n$$\n0.794\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{20000 \\cdot 0.00004 \\cdot 0.99996}\n$$\n\n$$\n0.894\n$$\n\nDa $\\mathrm{SD}(B) > \\mathrm{SD}(A)$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\nE[A] = 9000 \\cdot 0.00007\n$$\n\n$$\n9000 \\times 7 \\times 10^{-5} = 0.63\n$$\n\n$$\nE[B] = 20000 \\cdot 0.00004\n$$\n\n$$\n20000 \\times 4 \\times 10^{-5} = 0.8 = 0.80\n$$\n\nDa $0.63 < 0.80$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Dienst A bearbeitet 9.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00007 einen Serverfehler zurückgibt. Dienst B bearbeitet 20.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00004 einen Serverfehler zurückgibt. Die beiden Dienste arbeiten unabhängig voneinander.\n\nWe model Service A as $X_A \\sim \\mathrm{Bin}(9000, 0.00007)$ and Service B as $X_B \\sim \\mathrm{Bin}(20000, 0.00004)$."
+    "solution_overview": "Dienst A bearbeitet 9.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00007 einen Serverfehler zurückgibt. Dienst B bearbeitet 20.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00004 einen Serverfehler zurückgibt. Die beiden Dienste arbeiten unabhängig voneinander.\n\nWir modellieren Dienst A als $X_A \\sim \\mathrm{Bin}(9000, 0.00007)$ und Dienst B als $X_B \\sim \\mathrm{Bin}(20000, 0.00004)$."
   },
   "MATH 13.44": {
     "title": "Gerät mit drei Komponenten",
-    "context": "Ein Gerät hat drei unabhängige Komponenten, so angeordnet, dass das Gerät in einem gegebenen Zyklus ausfällt, wenn mindestens eine Komponente ausfällt. Komponente 1 fällt mit Wahrscheinlichkeit 0,00031 pro Zyklus aus, Komponente 2 mit Wahrscheinlichkeit 0,00047 pro Zyklus und Komponente 3 mit Wahrscheinlichkeit 0,00022 pro Zyklus. Das Gerät läuft über 2.500 unabhängige Zyklen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Gerät hat drei unabhängige Komponenten, so angeordnet, dass das Gerät in einem gegebenen Zyklus ausfällt, wenn mindestens eine Komponente ausfällt. Komponente 1 fällt mit Wahrscheinlichkeit 0,00031 pro Zyklus aus, Komponente 2 mit Wahrscheinlichkeit 0,00047 pro Zyklus und Komponente 3 mit Wahrscheinlichkeit 0,00022 pro Zyklus. Das Gerät läuft über 2.500 unabhängige Zyklen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Geräteausfallwahrscheinlichkeit pro Zyklus weicht von der Summe der drei Komponenten-Ausfallwahrscheinlichkeiten um weniger als 0.000001 ab.",
       "Über 2,500 unabhängige Zyklen ist die erwartete Anzahl von Geräteausfällen größer als 2.5.",
@@ -833,17 +833,17 @@
       "**D.** → Richtig\n\nDas Ignorieren der Komponenten 2 und 3 verwendet $1-p_1 = 0.99969$, während die wahre Wahrscheinlichkeit ohne Ausfall $(1-p_1)(1-p_2)(1-p_3) \\approx 0.99900032$ ist. Absolute Differenz $\\approx 0.00068968$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Standardabweichung ist die positive Quadratwurzel der Varianz. Für $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nMit $n = 2500$ und $p \\approx 0.00099968$: $\\mathrm{SD}(X) \\approx 1.5801$.\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Ein Gerät hat drei unabhängige Komponenten, so angeordnet, dass das Gerät in einem gegebenen Zyklus ausfällt, wenn mindestens eine Komponente ausfällt. Komponente 1 fällt mit Wahrscheinlichkeit 0,00031 pro Zyklus aus, Komponente 2 mit Wahrscheinlichkeit 0,00047 pro Zyklus und Komponente 3 mit Wahrscheinlichkeit 0,00022 pro Zyklus. Das Gerät läuft über 2.500 unabhängige Zyklen.\n\nA cycle fails if at least one component fails:\n\n$$\np = 1-(1-p_1)(1-p_2)(1-p_3) = 1-(0.99969)(0.99953)(0.99978)\n$$\n\n$$\\approx 0.00099968.$$\n\nLet $X \\sim \\mathrm{Bin}(n,p)$ with $n = 2500$ and $p = 0.00099968$."
+    "solution_overview": "Ein Gerät hat drei unabhängige Komponenten, so angeordnet, dass das Gerät in einem gegebenen Zyklus ausfällt, wenn mindestens eine Komponente ausfällt. Komponente 1 fällt mit Wahrscheinlichkeit 0,00031 pro Zyklus aus, Komponente 2 mit Wahrscheinlichkeit 0,00047 pro Zyklus und Komponente 3 mit Wahrscheinlichkeit 0,00022 pro Zyklus. Das Gerät läuft über 2.500 unabhängige Zyklen.\n\nEin Zyklus fällt aus, wenn mindestens eine Komponente ausfällt:\n\n$$\np = 1-(1-p_1)(1-p_2)(1-p_3) = 1-(0.99969)(0.99953)(0.99978)\n$$\n\n$$\\approx 0.00099968.$$\n\nEs sei $X \\sim \\mathrm{Bin}(n,p)$ mit $n = 2500$ und $p = 0.00099968$."
   },
   "MATH 13.45": {
     "title": "Anzahl fehlerhafter Werkeile",
-    "context": "Ein Werk produziert 1.800 Einheiten; jede ist unabhängig mit Wahrscheinlichkeit 0,0015 fehlerhaft. Es sei X die Anzahl fehlerhafter Einheiten. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Werk produziert 1.800 Einheiten; jede ist unabhängig mit Wahrscheinlichkeit 0,0015 fehlerhaft. Es sei X die Anzahl fehlerhafter Einheiten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl von defectives ist exactly 2.7.",
-      "Die Wahrscheinlichkeit von zero defectives ist größer als 0.05.",
-      "Die Wahrscheinlichkeit von höchstens einem fehlerhaften Stück ist größer als die Wahrscheinlichkeit von genau einem fehlerhaften Stück.",
-      "Die Wahrscheinlichkeit von höchstens one defective ist größer als 0.30.",
-      "Die Standardabweichung der Anzahl fehlerhafter Stücke ist größer als 2."
+      "Die erwartete Anzahl fehlerhafter Einheiten ist genau 2,7.",
+      "Die Wahrscheinlichkeit für null fehlerhafte Einheiten ist größer als 0,05.",
+      "Die Wahrscheinlichkeit für höchstens eine fehlerhafte Einheit ist größer als die Wahrscheinlichkeit für genau eine fehlerhafte Einheit.",
+      "Die Wahrscheinlichkeit für höchstens eine fehlerhafte Einheit ist größer als 0,30.",
+      "Die Standardabweichung der Anzahl fehlerhafter Einheiten ist größer als 2."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nE[X] = np = 1800 \\cdot 0.0015\n$$\n\n$$\n1800 \\times 0.0015 = 2.7 = 2.7\n$$\n\n.\n\nDie Aussage ist richtig.",
@@ -852,16 +852,16 @@
       "**D.** → Falsch\n\n$$\nP(X \\le 1) = P(X = 0) + P(X = 1) \\approx 0.06707 + 0.18136 = 0.2484\n$$\n\nDa $0.2484 \\le 0.30$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)} = \\sqrt{1800 \\cdot 0.0015 \\cdot 0.9985} \\approx 1.642\n$$\n\nDa $1.642 \\le 2$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Ein Werk produziert 1.800 Einheiten; jede ist unabhängig mit Wahrscheinlichkeit 0,0015 fehlerhaft. Es sei X die Anzahl fehlerhafter Einheiten.\n\nWe model $X \\sim \\mathrm{Bin}(1800, 0.0015)$."
+    "solution_overview": "Ein Werk produziert 1.800 Einheiten; jede ist unabhängig mit Wahrscheinlichkeit 0,0015 fehlerhaft. Es sei $X$ die Anzahl fehlerhafter Einheiten.\n\nWir modellieren $X \\sim \\mathrm{Bin}(1800, 0.0015)$."
   },
   "MATH 13.46": {
     "title": "Bäckerei-Qualitätskontrolle",
-    "context": "Eine Bäckerei prüft Chargen von 12 Broten. Charge A stammt von der Morgenlinie (p = 0,70, Qualitätsstandards zu erfüllen). Charge B stammt von der Nachmittagslinie (p = 0,95). Eine Charge besteht die QS, wenn mindestens 10 von 12 Broten die Standards erfüllen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Bäckerei führt eine Qualitätskontrolle an 18 Gebäckstücken pro Charge durch. Bäcker A ist Auszubildende/r (p = 0,45, ein Gebäckstück spezifikationsgerecht zu formen). Bäcker B ist erfahren (p = 0,85). Zum Bestehen der Prüfung müssen mindestens 15 der 18 Gebäckstücke korrekt geformt sein. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Wahrscheinlichkeit einer fehlerfreien Charge von Bäcker A ist kleiner als 0.0001%.",
+      "Die Wahrscheinlichkeit einer fehlerfreien Charge bei Bäcker A ist kleiner als 0,0001%.",
       "Die Wahrscheinlichkeit, dass Bäcker B die Prüfung besteht, ist größer als die Wahrscheinlichkeit von genau 15.",
       "Bäcker B ist mehr als 750-mal so wahrscheinlich wie Bäcker A, die Prüfung zu bestehen.",
-      "Die Varianz von Bäcker A in der Anzahl korrekt geformter Gebäckstücke ist mehr als doppelt so groß wie die Varianz von Bäcker B.",
+      "Die Varianz der Anzahl korrekt geformter Gebäckstücke bei Bäcker A ist mehr als doppelt so groß wie die Varianz bei Bäcker B.",
       "Die mittlere Anzahl korrekt geformter Gebäckstücke für Bäcker B ist mehr als 90% höher als für Bäcker A."
     ],
     "tactical_explanations": [
@@ -871,11 +871,11 @@
       "**D.** → Falsch\n\nFür eine binomialverteilte Anzahl $X \\sim \\mathrm{Bin}(n,p)$ schreibe $X$ als Summe von $n$ unabhängigen Bernoulli-Versuchen mit Erfolgswahrscheinlichkeit $p$. Jeder Versuch hat Varianz $p(1-p)$, und Varianzen unabhängiger Summanden addieren sich, also\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nDas ist am größten, wenn $p$ am nächsten bei $\\frac{1}{2}$ liegt, nicht wenn $p$ selbst am größten ist.\n\nSeite A mit $n_A = 18$, $p_A = 0.45$:\n\n$$\n\\mathrm{Var}(A) = 18 \\cdot 0.45 \\cdot 0.55\n$$\n\nSeite B mit $n_B = 18$, $p_B = 0.85$:\n\n$$\n\\mathrm{Var}(B) = 18 \\cdot 0.85 \\cdot 0.15\n$$\n\nDas Varianzverhältnis ist\n\n$$\n\\frac{\\mathrm{Var}(A)}{\\mathrm{Var}(B)} = \\frac{4.455}{2.295} \\approx 1.94\n$$\n\n.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 18 \\cdot 0.45\n$$\n\n$$\n18 \\times 0.45 = 8.1\n$$\n\n$$\nE[B] = 18 \\cdot 0.85\n$$\n\n$$\n18 \\times 0.85 = 15.3\n$$\n\nDie prozentuale Zunahme von B gegenüber A ist\n\n$$\n100\\Big(\\frac{E[B]}{E[A]} - 1\\Big)\n$$\n\n$$\n88.89\\%\n$$\n\n.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Eine Bäckerei prüft Chargen von 12 Broten. Charge A stammt von der Morgenlinie (p = 0,70, Qualitätsstandards zu erfüllen). Charge B stammt von der Nachmittagslinie (p = 0,95). Eine Charge besteht die QS, wenn mindestens 10 von 12 Broten die Standards erfüllen.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 18$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.45$, Seite B hat $p_B = 0.85$.\n\nDie Erfolgsschwelle des Szenarios ist mindestens $k = 15$ Erfolge von $n = 18$."
+    "solution_overview": "Eine Bäckerei führt eine Qualitätskontrolle an 18 Gebäckstücken pro Charge durch. Bäcker A ist Auszubildende/r (p = 0,45, ein Gebäckstück spezifikationsgerecht zu formen). Bäcker B ist erfahren (p = 0,85). Zum Bestehen der Prüfung müssen mindestens 15 der 18 Gebäckstücke korrekt geformt sein.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 18$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.45$, Seite B hat $p_B = 0.85$.\n\nDie Erfolgsschwelle des Szenarios ist mindestens $k = 15$ Erfolge von $n = 18$."
   },
   "MATH 13.47": {
     "title": "Automatisierte Testfälle",
-    "context": "Zwei automatisierte Testpakete führen je 20 Testfälle aus. Paket A ist ein älteres Framework (p = 0,55, einen Testfall korrekt zu bestehen). Paket B ist ein neueres Framework (p = 0,90). Ein Paket gilt als zuverlässig, wenn mindestens 17 von 20 Testfällen korrekt bestehen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei automatisierte Testpakete führen je 20 Testfälle aus. Paket A ist ein älteres Framework (p = 0,55, einen Testfall korrekt zu bestehen). Paket B ist ein neueres Framework (p = 0,90). Ein Paket gilt als zuverlässig, wenn mindestens 17 von 20 Testfällen korrekt bestehen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Tester A Wahrscheinlichkeit, alle 25 Testfälle korrekt zu markieren ist kleiner als 0.0000001%.",
       "Die Wahrscheinlichkeit, dass Tester B das Tor schafft, ist größer als die Wahrscheinlichkeit von genau 22.",
@@ -894,13 +894,13 @@
   },
   "MATH 13.48": {
     "title": "Zehn-Pfeile-Bogenschießen",
-    "context": "Zwei Bogenschützen schießen je 10 Pfeile in einem Wettbewerb. Schütze A ist Vereinsschütze (p = 0,60 pro Pfeil). Schütze B ist Elite (p = 0,95 pro Pfeil). Ein Preis erfordert, das Ziel bei mindestens 9 von 10 Pfeilen zu treffen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Zwei Bogenschützen schießen je 10 Pfeile in einem Wettbewerb. Schütze A ist Vereinsschütze (p = 0,60 pro Pfeil). Schütze B ist Elite (p = 0,95 pro Pfeil). Ein Preis erfordert, das Ziel bei mindestens 9 von 10 Pfeilen zu treffen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Schütze B Wahrscheinlichkeit für eine perfekte Runde ist größer als 60%.",
+      "Die Wahrscheinlichkeit einer perfekten Runde bei Schütze B ist größer als 60%.",
       "Die Wahrscheinlichkeit, dass Schütze B den Preis erhält, ist größer als die Wahrscheinlichkeit von genau 9.",
       "Schütze B ist mehr als 20-mal so wahrscheinlich wie Schütze A, den Preis zu erhalten.",
-      "Die Varianz von Schütze A in der Anzahl von arrows hit ist mehr als 5-mal so groß wie die Varianz von Schütze B.",
-      "Die erwartete Anzahl von Schütze B getroffenen Pfeilen übersteigt die von Schütze A um mehr als 3."
+      "Die Varianz der Anzahl getroffener Pfeile bei Schütze A ist mehr als 5-mal so groß wie die Varianz bei Schütze B.",
+      "Die erwartete Anzahl getroffener Pfeile von Schütze B übersteigt die von Schütze A um mehr als 3."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite B $p = 0.95$ und $n = 10$:\n\n$$\nP(X = 10)\n$$\n\n$$\n(0.95)^{10} = 0.598736939238\n$$\n\n$$\n59.87\\%\n$$\n\nDie Behauptung vergleicht dies mit $60\\%$. Wir erhalten etwa $59.8737\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -913,13 +913,13 @@
   },
   "MATH 13.49": {
     "title": "Kunden-E-Mail-Lösungen",
-    "context": "Ein Callcenter prüft 14 Kunden-E-Mails pro Agent. Agent A ist neu eingearbeitet (p = 0,50, eine E-Mail in einer Antwort korrekt zu lösen). Agent B ist erfahrene/r Agent/in (p = 0,80). Zum Bestehen der Prüfung muss ein Agent mindestens 12 von 14 E-Mails korrekt lösen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Callcenter prüft 14 Kunden-E-Mails pro Agent. Agent A ist neu eingearbeitet (p = 0,50, eine E-Mail in einer Antwort korrekt zu lösen). Agent B ist erfahrene/r Agent/in (p = 0,80). Zum Bestehen der Prüfung muss ein Agent mindestens 12 von 14 E-Mails korrekt lösen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Agent A Wahrscheinlichkeit, alle 14 E-Mails korrekt zu klären ist größer als 0.007%.",
+      "Die Wahrscheinlichkeit, dass Agent A alle 14 E-Mails korrekt löst, ist größer als 0,007%.",
       "Die Wahrscheinlichkeit, dass Agent B die Prüfung besteht, ist größer als die Wahrscheinlichkeit von genau 12.",
       "Agent B ist mehr als 70-mal so wahrscheinlich wie Agent A, die Prüfung zu bestehen.",
-      "Die Varianz von Agent A in der Anzahl von correctly resolved emails ist mehr als 1.5-mal so groß wie die Varianz von Agent B.",
-      "Die mittlere Anzahl von correctly resolved emails für Agent B ist mehr als 60% höher als für Agent A."
+      "Die Varianz der Anzahl korrekt gelöster E-Mails bei Agent A ist mehr als 1,5-mal so groß wie die Varianz bei Agent B.",
+      "Die mittlere Anzahl korrekt gelöster E-Mails für Agent B ist mehr als 60% höher als für Agent A."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.5$ und $n = 14$:\n\n$$\nP(X = 14)\n$$\n\n$$\n(0.5)^{14} = 6.103516 \\times 10^{-5}\n$$\n\n$$\n0.01\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.007\\%$. Wir erhalten etwa $0.0061\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -932,7 +932,7 @@
   },
   "MATH 13.50": {
     "title": "Diagnose-Scan-Prüfung",
-    "context": "Ein Krankenhaus lässt 30 Scans in einer Diagnose-Genauigkeitsübung prüfen. Radiologe A ist Assistenzarzt (p = 0,65, einen Scan korrekt zu lesen). Radiologe B ist erfahrene/r Oberarzt/ärztin (p = 0,97). Zum Bestehen der Übung muss ein Radiologe mindestens 27 von 30 Scans korrekt lesen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Krankenhaus lässt 30 Scans in einer Diagnose-Genauigkeitsübung prüfen. Radiologe A ist Assistenzarzt (p = 0,65, einen Scan korrekt zu lesen). Radiologe B ist erfahrene/r Oberarzt/ärztin (p = 0,97). Zum Bestehen der Übung muss ein Radiologe mindestens 27 von 30 Scans korrekt lesen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Radiologe A Wahrscheinlichkeit, alle 30 Scans korrekt zu lesen ist kleiner als 0.0002%.",
       "Die Wahrscheinlichkeit, dass Radiologe B die Übung besteht, ist größer als die Wahrscheinlichkeit von genau 27.",
@@ -951,13 +951,13 @@
   },
   "MATH 13.51": {
     "title": "Flughafen-Schicht-Screening",
-    "context": "Ein Flughafen prüft 28 Gepäckstücke pro Schicht. Screener A ist frisch zertifiziert (p = 0,42, ein verbotenes Stück korrekt zu markieren). Screener B ist Veteran (p = 0,91). Zum Bestehen des Schichtaudits muss ein Screener mindestens 24 von 28 Gepäckstücken korrekt markieren. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Flughafen prüft 28 Gepäckstücke pro Schicht. Screener A ist frisch zertifiziert (p = 0,42, ein verbotenes Stück korrekt zu markieren). Screener B ist Veteran (p = 0,91). Zum Bestehen des Schichtaudits muss ein Screener mindestens 24 von 28 Gepäckstücken korrekt markieren. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Screener A Wahrscheinlichkeit für eine fehlerfreie Schicht ist kleiner als 0.0000000025%.",
-      "Die Wahrscheinlichkeit von Screener A für zwischen 18 und 22 korrekte Markierungen ist größer als die Wahrscheinlichkeit von genau 18.",
-      "Screener B ist mehr als 400,000-mal so wahrscheinlich wie Screener A, das Schichtaudit zu bestehen.",
+      "Die Wahrscheinlichkeit einer fehlerfreien Schicht bei Screener A ist kleiner als 0,0000000025%.",
+      "Die Wahrscheinlichkeit, dass Screener A zwischen 18 und 22 korrekte Markierungen hat, ist größer als die Wahrscheinlichkeit von genau 18.",
+      "Screener B ist mehr als 400.000-mal so wahrscheinlich wie Screener A, das Schichtaudit zu bestehen.",
       "Screener A ist weniger als halb so wahrscheinlich wie Screener B, im Bereich 18–22 zu landen.",
-      "Die Standardabweichung von Screener A in der Anzahl von correct flags ist mehr als 1.75-mal so groß wie die von Screener B."
+      "Die Standardabweichung der Anzahl korrekter Markierungen bei Screener A ist mehr als 1,75-mal so groß wie die bei Screener B."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.42$ und $n = 28$:\n\n$$\nP(X = 28)\n$$\n\n$$\n(0.42)^{28} = 0\n$$\n\n$$\n2.8248 \\times 10^{-9}\\%\n$$\n\nDie Behauptung vergleicht dies mit $2.5 \\times 10^{-9}\\%$. Wir erhalten etwa $2.8248 \\times 10^{-9}\\%$, was über der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -970,13 +970,13 @@
   },
   "MATH 13.52": {
     "title": "Impfstoff-Antikörper-Klassifikation",
-    "context": "In einer Impfstoffstudie klassifizieren Labormitarbeiter Antikörperantworten über 35 Proben. Tech A ist Erstjahresanalytiker (p = 0,38, eine Probe korrekt zu klassifizieren). Tech B ist leitende/r Analytiker/in (p = 0,94). Zum Bestehen der Zertifizierung muss ein Techniker mindestens 30 von 35 Proben korrekt klassifizieren. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einer Impfstoffstudie klassifizieren Labormitarbeiter Antikörperantworten über 35 Proben. Tech A ist Erstjahresanalytiker (p = 0,38, eine Probe korrekt zu klassifizieren). Tech B ist leitende/r Analytiker/in (p = 0,94). Zum Bestehen der Zertifizierung muss ein Techniker mindestens 30 von 35 Proben korrekt klassifizieren. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Tech A Wahrscheinlichkeit, alle 35 Proben korrekt zu klassifizieren ist kleiner als 0.0000000000002%.",
-      "Die Wahrscheinlichkeit von Tech A für zwischen 22 und 27 korrekte Klassifikationen ist größer als die Wahrscheinlichkeit von genau 22.",
-      "Tech B ist mehr als 150,000,000-mal so wahrscheinlich wie Tech A, die Zertifizierung zu bestehen.",
+      "Die Wahrscheinlichkeit, dass Tech A alle 35 Proben korrekt klassifiziert, ist kleiner als 0,0000000000002%.",
+      "Die Wahrscheinlichkeit, dass Tech A zwischen 22 und 27 korrekte Klassifikationen hat, ist größer als die Wahrscheinlichkeit von genau 22.",
+      "Tech B ist mehr als 150.000.000-mal so wahrscheinlich wie Tech A, die Zertifizierung zu bestehen.",
       "Tech A landet mehr als dreimal so häufig wie Tech B im Intervall $22$–$27$.",
-      "Die Standardabweichung von Tech A in der Anzahl von correct classifications ist mehr als doppelt so groß wie die von Tech B."
+      "Die Standardabweichung der Anzahl korrekter Klassifikationen bei Tech A ist mehr als doppelt so groß wie die bei Tech B."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.38$ und $n = 35$:\n\n$$\nP(X = 35)\n$$\n\n$$\n(0.38)^{35} = 0\n$$\n\n$$\n0\\%\n$$\n\nDie Behauptung vergleicht dies mit $0\\%$. Wir erhalten etwa $0\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -989,13 +989,13 @@
   },
   "MATH 13.53": {
     "title": "Montagelinie-Fehlerinspektion",
-    "context": "An einer Montagelinie prüfen Arbeiter 24 Einheiten pro Schicht auf versteckte Fehler. Arbeiter A ist in der Ausbildung (p = 0,47, einen Fehler korrekt zu finden). Arbeiter B ist zertifizierte/r Prüfer/in (p = 0,89). Zum Bestehen des Schichtaudits muss ein Arbeiter mindestens 20 von 24 Fehlern korrekt finden. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "An einer Montagelinie prüfen Arbeiter 24 Einheiten pro Schicht auf versteckte Fehler. Arbeiter A ist in der Ausbildung (p = 0,47, einen Fehler korrekt zu finden). Arbeiter B ist zertifizierte/r Prüfer/in (p = 0,89). Zum Bestehen des Schichtaudits muss ein Arbeiter mindestens 20 von 24 Fehlern korrekt finden. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Arbeiter B Wahrscheinlichkeit für eine fehlerfreie Schicht ist größer als 6%.",
-      "Die Wahrscheinlichkeit von Arbeiter A für zwischen 16 und 19 korrekte Funde ist größer als die Wahrscheinlichkeit von genau 16.",
-      "Arbeiter B ist mehr als 3,200-mal so wahrscheinlich wie Arbeiter A, das Schichtaudit zu bestehen.",
+      "Die Wahrscheinlichkeit einer fehlerfreien Schicht bei Arbeiter B ist größer als 6%.",
+      "Die Wahrscheinlichkeit, dass Arbeiter A zwischen 16 und 19 korrekte Funde hat, ist größer als die Wahrscheinlichkeit von genau 16.",
+      "Arbeiter B ist mehr als 3.200-mal so wahrscheinlich wie Arbeiter A, das Schichtaudit zu bestehen.",
       "Arbeiter A ist weniger als ein Drittel so wahrscheinlich wie Arbeiter B, im Bereich 16–19 zu landen.",
-      "Die Standardabweichung von Arbeiter A in der Anzahl von correct catches ist mehr als 1.6-mal so groß wie die von Arbeiter B."
+      "Die Standardabweichung der Anzahl korrekter Funde bei Arbeiter A ist mehr als 1,6-mal so groß wie die bei Arbeiter B."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite B $p = 0.89$ und $n = 24$:\n\n$$\nP(X = 24)\n$$\n\n$$\n(0.89)^{24} = 0.061004259453\n$$\n\n$$\n6.1\\%\n$$\n\nDie Behauptung vergleicht dies mit $6\\%$. Wir erhalten etwa $6.1004\\%$, was über der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -1008,7 +1008,7 @@
   },
   "MATH 13.54": {
     "title": "Aufsatz-Bewertungsgenauigkeit",
-    "context": "Eine Prüfagentur lässt Bewerter 20 Aufsätze gegen einen Referenzschlüssel bewerten. Bewerter A ist frisch geschult (p = 0,52, bei einem gegebenen Aufsatz dem Referenzschlüssel zu entsprechen). Bewerter B ist erfahrene/r Bewerter/in (p = 0,90). Zum Bestehen der Prüfung muss ein Bewerter bei mindestens 17 von 20 Aufsätzen dem Referenzschlüssel entsprechen. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Prüfagentur lässt Bewerter 20 Aufsätze gegen einen Referenzschlüssel bewerten. Bewerter A ist frisch geschult (p = 0,52, bei einem gegebenen Aufsatz dem Referenzschlüssel zu entsprechen). Bewerter B ist erfahrene/r Bewerter/in (p = 0,90). Zum Bestehen der Prüfung muss ein Bewerter bei mindestens 17 von 20 Aufsätzen dem Referenzschlüssel entsprechen. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wahrscheinlichkeit von Bewerter A, bei allen 20 Aufsätzen dem Referenzschlüssel zu entsprechen, ist kleiner als 0.0002%.",
       "Die Wahrscheinlichkeit von Bewerter A für zwischen 14 und 16 übereinstimmende Aufsätze ist größer als die Wahrscheinlichkeit von genau 14.",
@@ -1027,13 +1027,13 @@
   },
   "MATH 13.55": {
     "title": "Flugverkehrskontroll-Simulator",
-    "context": "Ein Flugverkehrskontroll-Simulator führt 32 Szenarien pro Zertifizierungsversuch durch. Controller A ist Auszubildende/r (p = 0,44, ein Szenario korrekt zu lösen). Controller B ist zertifizierte/r Controller/in (p = 0,92). Zum Bestehen der Zertifizierung muss ein Controller mindestens 27 von 32 Szenarien korrekt lösen. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Flugverkehrskontroll-Simulator führt 32 Szenarien pro Zertifizierungsversuch durch. Controller A ist Auszubildende/r (p = 0,44, ein Szenario korrekt zu lösen). Controller B ist zertifizierte/r Controller/in (p = 0,92). Zum Bestehen der Zertifizierung muss ein Controller mindestens 27 von 32 Szenarien korrekt lösen. (Bewertungsschema in Aussage F: +5 Punkte für jeden korrekten Treffer, −2 Punkte für jeden Fehltreffer.). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Controller A Wahrscheinlichkeit, alle 32 Szenarien korrekt zu klären ist kleiner als 0.00000000038%.",
-      "Die Wahrscheinlichkeit von Controller A für zwischen 20 und 24 korrekte Lösungen ist größer als die Wahrscheinlichkeit von genau 20.",
-      "Controller B ist mehr als 320,000-mal so wahrscheinlich wie Controller A, die Zertifizierung zu bestehen.",
+      "Die Wahrscheinlichkeit, dass Controller A alle 32 Szenarien korrekt löst, ist kleiner als 0,00000000038%.",
+      "Die Wahrscheinlichkeit, dass Controller A zwischen 20 und 24 korrekte Lösungen hat, ist größer als die Wahrscheinlichkeit von genau 20.",
+      "Controller B ist mehr als 320.000-mal so wahrscheinlich wie Controller A, die Zertifizierung zu bestehen.",
       "Controller A landet mehr als neunmal so häufig wie Controller B im Intervall $20$–$24$.",
-      "Die Standardabweichung von Controller A in der Anzahl von correct resolutions ist mehr als 1.8-mal so groß wie die von Controller B."
+      "Die Standardabweichung der Anzahl korrekter Lösungen bei Controller A ist mehr als 1,8-mal so groß wie die bei Controller B."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.44$ und $n = 32$:\n\n$$\nP(X = 32)\n$$\n\n$$\n(0.44)^{32} = 0\n$$\n\n$$\n3.8948 \\times 10^{-10}\\%\n$$\n\nDie Behauptung vergleicht dies mit $3.8 \\times 10^{-10}\\%$. Wir erhalten etwa $3.8948 \\times 10^{-10}\\%$, was über der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -1046,7 +1046,7 @@
   },
   "MATH 13.76": {
     "title": "Regionale Tennistour",
-    "context": "Über eine volle Hallensaison mit 40 unabhängigen Matches beträgt die erwartete Anzahl an Siegen eines Spielers 27,2. Es wird angenommen, dass die Siegchance in jedem Match gleich ist. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Über eine volle Hallensaison mit 40 unabhängigen Matches beträgt die erwartete Anzahl an Siegen eines Spielers 27,2. Es wird angenommen, dass die Siegchance in jedem Match gleich ist. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das nächste Match geht mit Wahrscheinlichkeit 0.32 verloren.",
       "Die erwartete Anzahl an Siegen in den nächsten 12 Matches ist 4.08.",
@@ -1065,13 +1065,13 @@
   },
   "MATH 13.77": {
     "title": "Festival-Essensstand",
-    "context": "Ein Festival-Essensstand erfasst, ob jeder Kunde zufrieden geht. In einem typischen Block von 16 unabhängigen Bestellungen beträgt die erwartete Anzahl zufriedener Kunden 12,8. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Festival-Essensstand erfasst, ob jeder Kunde zufrieden geht. In einem typischen Block von 16 unabhängigen Bestellungen beträgt die erwartete Anzahl zufriedener Kunden 12,8. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An individual order leaves an unsatisfied customer mit Wahrscheinlichkeit 0.2.",
-      "Über die nächsten 5 orders ist die erwartete Anzahl von zufriedener Kunden genau 4.",
-      "Für diese 16 orders beträgt die Varianz der Anzahl von zufriedener Kunden 3.2.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 orders yields a satisfied customer is greater than 0.45.",
-      "Die Wahrscheinlichkeit von mindestens 4 zufriedener Kunden von 5 ist größer als die Wahrscheinlichkeit von genau 4 zufriedener Kunden von 5."
+      "Eine einzelne Bestellung hinterlässt mit Wahrscheinlichkeit 0,2 einen unzufriedenen Kunden.",
+      "Über die nächsten 5 Bestellungen ist die erwartete Anzahl zufriedener Kunden genau 4.",
+      "Für diese 16 Bestellungen beträgt die Varianz der Anzahl zufriedener Kunden 3,2.",
+      "Die Wahrscheinlichkeit, dass jede der nächsten 4 Bestellungen einen zufriedenen Kunden ergibt, ist größer als 0,45.",
+      "Die Wahrscheinlichkeit von mindestens 4 zufriedenen Kunden von 5 ist größer als die Wahrscheinlichkeit von genau 4 zufriedenen Kunden von 5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12.8}{16} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1084,13 +1084,13 @@
   },
   "MATH 13.78": {
     "title": "Gemeindeklinik-Screening",
-    "context": "An einem Screening-Tag mit 80 unabhängigen Patienten werden Positive und Negative im Verhältnis 3 : 17 erwartet. Die Standardabweichung der Anzahl der Positiven an diesem Tag ist $\\sqrt{10.2}$. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "An einem Screening-Tag mit 80 unabhängigen Patienten werden Positive und Negative im Verhältnis 3 : 17 erwartet. Die Standardabweichung der Anzahl der Positiven an diesem Tag ist $\\sqrt{10.2}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein gegebener Patient screeniert mit Wahrscheinlichkeit $0{,}85{,}$ negativ.",
-      "Unter den nächsten 20 patients beträgt die erwartete Anzahl von positiver Screenings 4.",
-      "Für 40 patients beträgt die Varianz der Anzahl von positiver Screenings 5.1.",
-      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden positive screens ist kleiner als 0.005.",
-      "Die Wahrscheinlichkeit von höchstens 1 positivem Screening unter den nächsten 8 Patienten ist größer als 0.7."
+      "Ein gegebener Patient wird mit Wahrscheinlichkeit 0,85 negativ gescreent.",
+      "Unter den nächsten 20 Patienten beträgt die erwartete Anzahl positiver Screenings 4.",
+      "Für 40 Patienten beträgt die Varianz der Anzahl positiver Screenings 5,1.",
+      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden positiven Screenings ist kleiner als 0,005.",
+      "Die Wahrscheinlichkeit von höchstens 1 positivem Screening unter den nächsten 8 Patienten ist größer als 0,7."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{3}{3+17} = 0.15\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.15\n$$\n\n$$\n1 - 0.15 = 0.85\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1103,7 +1103,7 @@
   },
   "MATH 13.79": {
     "title": "Nachtkurier-Audit",
-    "context": "Ein Kurier schloss ein Audit von 50 unabhängigen Abendlieferungen ab. Die erwartete Anzahl pünktlicher Lieferungen war 42, und die Varianz dieser Anzahl war 6,72. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Kurier schloss ein Audit von 50 unabhängigen Abendlieferungen ab. Die erwartete Anzahl pünktlicher Lieferungen war 42, und die Varianz dieser Anzahl war 6,72. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die nächste Lieferung kommt mit Wahrscheinlichkeit $0{,}16$ zu spät.",
       "In einem Lauf von 15 Lieferungen übersteigt die erwartete Anzahl pünktlicher Lieferungen 13.",
@@ -1122,13 +1122,13 @@
   },
   "MATH 13.80": {
     "title": "Programmierwettbewerb-Auto-Bewerter",
-    "context": "In einem Wettbewerb mit 35 unabhängigen Einreichungen akzeptiert der Auto-Bewerter im Mittel 14. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einem Wettbewerb mit 35 unabhängigen Einreichungen akzeptiert der Auto-Bewerter im Mittel 14. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Eine gegebene Einreichung wird mit Wahrscheinlichkeit $0{,}6$ abgelehnt.",
-      "Für diese 35 submissions beträgt die Varianz der Anzahl von akzeptierter Einreichungen 8.4.",
-      "Über die nächsten 10 submissions ist die erwartete Anzahl von akzeptierter Einreichungen kleiner als 5.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 3 submissions yields an accepted submission is greater than 0.1.",
-      "Die Wahrscheinlichkeit von höchstens 2 angenommenen Einreichungen unter den nächsten 6 Einreichungen ist größer als 0.5."
+      "Eine gegebene Einreichung wird mit Wahrscheinlichkeit 0,6 abgelehnt.",
+      "Für diese 35 Einreichungen beträgt die Varianz der Anzahl akzeptierter Einreichungen 8,4.",
+      "Über die nächsten 10 Einreichungen ist die erwartete Anzahl akzeptierter Einreichungen kleiner als 5.",
+      "Die Wahrscheinlichkeit, dass jede der nächsten 3 Einreichungen akzeptiert wird, ist größer als 0,1.",
+      "Die Wahrscheinlichkeit von höchstens 2 akzeptierten Einreichungen unter den nächsten 6 Einreichungen ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{14}{35} = 0.4\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.4\n$$\n\n$$\n1 - 0.4 = 0.6\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1141,13 +1141,13 @@
   },
   "MATH 13.81": {
     "title": "Lager-Kommissioniergenauigkeit",
-    "context": "Ein Lager prüft 25 unabhängige Kommissionierungen. Die erwartete Anzahl korrekter Kommissionierungen ist 20, und die Varianz der korrekten Anzahl ist 4. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Lager prüft 25 unabhängige Kommissionierungen. Die erwartete Anzahl korrekter Kommissionierungen ist 20, und die Varianz der korrekten Anzahl ist 4. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die nächste Kommissionierung ist mit Wahrscheinlichkeit 0.2 inkorrekt.",
-      "In einem Lauf von 15 picks übersteigt die erwartete Anzahl von korrekter Kommissionierungen 13.",
-      "Für 25 picks beträgt die Varianz der Anzahl von korrekter Kommissionierungen 4.",
-      "Die Chance, dass jede/r der nächsten 3 Kommissionierungen eine korrekte Kommissionierung ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 korrekter Kommissionierungen in den nächsten 8 picks ist größer als 0.20."
+      "Der nächste Pick ist mit Wahrscheinlichkeit 0,2 inkorrekt.",
+      "In einem Lauf von 15 Picks übersteigt die erwartete Anzahl korrekter Picks 13.",
+      "Für 25 Picks beträgt die Varianz der Anzahl korrekter Picks 4.",
+      "Die Chance, dass jeder der nächsten 3 Picks korrekt ist, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 korrekten Picks in den nächsten 8 Picks ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{20}{25} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1160,7 +1160,7 @@
   },
   "MATH 13.82": {
     "title": "Sprachlabor-Hörtest",
-    "context": "In einem Hörquiz mit 20 unabhängigen Items wird erwartet, dass ein Studierender 15 korrekt beantwortet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einem Hörquiz mit 20 unabhängigen Items wird erwartet, dass ein Studierender 15 korrekt beantwortet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das nächste Item wird mit Wahrscheinlichkeit 0.25 falsch beantwortet.",
       "Die erwartete Anzahl richtiger Antworten unter den nächsten $12$ Items beträgt $4{,}5$.",
@@ -1179,7 +1179,7 @@
   },
   "MATH 13.83": {
     "title": "Sensoren an Bike-Sharing-Stationen",
-    "context": "Ein Wartungsprotokoll umfasst $60$ unabhängige Dock-Sensoren. Defekte und funktionierende Sensoren werden im Verhältnis $1:4$ erwartet. Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "context": "Ein Wartungsprotokoll umfasst $60$ unabhängige Dock-Sensoren. Defekte und funktionierende Sensoren werden im Verhältnis $1:4$ erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein gegebener Sensor funktioniert (ist nicht defekt) mit Wahrscheinlichkeit $0{,}8$.",
       "Unter den nächsten $20$ Sensoren beträgt die erwartete Anzahl defekter Sensoren $5$.",
@@ -1198,13 +1198,13 @@
   },
   "MATH 13.84": {
     "title": "Hotelbuchungs-Bestätigungen",
-    "context": "Ein Hotel erfasst 30 unabhängige Buchungsanfragen. Die erwartete Anzahl bestätigter Buchungen ist 24. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Hotel erfasst 30 unabhängige Buchungsanfragen. Die erwartete Anzahl bestätigter Buchungen ist 24. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An individual request is not confirmed mit Wahrscheinlichkeit 0.2.",
-      "Über die nächsten 5 requests ist die erwartete Anzahl von bestätigter Buchungen genau 4.",
-      "Für diese 30 requests beträgt die Varianz der Anzahl von bestätigter Buchungen 6.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 requests yields a confirmed booking is greater than 0.45.",
-      "Die Wahrscheinlichkeit von mindestens 4 bestätigter Buchungen von 5 ist größer als die Wahrscheinlichkeit von genau 4 bestätigter Buchungen von 5."
+      "Eine einzelne Anfrage wird mit Wahrscheinlichkeit 0,2 nicht bestätigt.",
+      "Über die nächsten 5 Anfragen ist die erwartete Anzahl bestätigter Buchungen genau 4.",
+      "Für diese 30 Anfragen beträgt die Varianz der Anzahl bestätigter Buchungen 6.",
+      "Die Wahrscheinlichkeit, dass jede der nächsten 4 Anfragen eine bestätigte Buchung ergibt, ist größer als 0,45.",
+      "Die Wahrscheinlichkeit von mindestens 4 bestätigten Buchungen von 5 ist größer als die Wahrscheinlichkeit von genau 4 bestätigten Buchungen von 5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{24}{30} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1217,13 +1217,13 @@
   },
   "MATH 13.85": {
     "title": "Apotheken-Rezeptprüfungen",
-    "context": "Eine Apotheke prüft 40 unabhängige Rezepte. Die erwartete Anzahl zur Nachverfolgung markierter Rezepte ist 8, mit Varianz 6,4. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Apotheke prüft 40 unabhängige Rezepte. Die erwartete Anzahl zur Nachverfolgung markierter Rezepte ist 8, mit Varianz 6,4. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein gegebenes Rezept wird mit Wahrscheinlichkeit $0{,}8$ ohne Nachkontrolle freigegeben.",
-      "Für diese 40 prescriptions beträgt die Varianz der Anzahl von markierter Rezepte 6.4.",
-      "Über die nächsten 10 prescriptions ist die erwartete Anzahl von markierter Rezepte kleiner als 5.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 3 prescriptions yields a flagged prescription is greater than 0.1.",
-      "Die Wahrscheinlichkeit von höchstens 2 markierten Rezepten unter den nächsten 6 Rezepten ist größer als 0.5."
+      "Ein gegebenes Rezept wird mit Wahrscheinlichkeit 0,8 ohne Nachkontrolle freigegeben.",
+      "Für diese 40 Rezepte beträgt die Varianz der Anzahl markierter Rezepte 6,4.",
+      "Über die nächsten 10 Rezepte ist die erwartete Anzahl markierter Rezepte kleiner als 5.",
+      "Die Wahrscheinlichkeit, dass jedes der nächsten 3 Rezepte markiert wird, ist größer als 0,1.",
+      "Die Wahrscheinlichkeit von höchstens 2 markierten Rezepten unter den nächsten 6 Rezepten ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{8}{40} = 0.2\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.2\n$$\n\n$$\n1 - 0.2 = 0.8\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1236,7 +1236,7 @@
   },
   "MATH 13.86": {
     "title": "Museum-Audioguide-Rückgaben",
-    "context": "Über 45 unabhängige Audioguide-Ausleihen beträgt die erwartete Anzahl fristgerecht zurückgegebener Geräte 36. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Über 45 unabhängige Audioguide-Ausleihen beträgt die erwartete Anzahl fristgerecht zurückgegebener Geräte 36. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die nächste Ausleihe wird mit Wahrscheinlichkeit 0.2 verspätet zurückgegeben.",
       "Die erwartete Anzahl pünktlicher Rückgaben unter den nächsten $12$ Ausleihen beträgt $4{,}8$.",
@@ -1255,13 +1255,13 @@
   },
   "MATH 13.87": {
     "title": "Startup-Demo-Konversionen",
-    "context": "Ein Vertriebsteam führte 25 unabhängige Produktdemos durch. Die erwartete Anzahl an Konversionen war 10, und die Standardabweichung der Konversionen war $\\sqrt{6}$. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Vertriebsteam führte 25 unabhängige Produktdemos durch. Die erwartete Anzahl an Konversionen war 10, und die Standardabweichung der Konversionen war $\\sqrt{6}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die nächste Demo konvertiert nicht mit Wahrscheinlichkeit 0.6.",
-      "In einem Lauf von 15 demos übersteigt die erwartete Anzahl von Abschlüsse 7.",
-      "Für 25 demos beträgt die Varianz der Anzahl von Abschlüsse 6.",
-      "Die Chance, dass jede/r der nächsten 3 Demos eine Konversion ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 Abschlüsse in den nächsten 8 demos ist größer als 0.20."
+      "Die nächste Demo führt mit Wahrscheinlichkeit 0,6 zu keinem Abschluss.",
+      "In einem Lauf von 15 Demos übersteigt die erwartete Anzahl von Abschlüssen 7.",
+      "Für 25 Demos beträgt die Varianz der Anzahl von Abschlüssen 6.",
+      "Die Chance, dass jede der nächsten 3 Demos einen Abschluss ergibt, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 Abschlüssen in den nächsten 8 Demos ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10}{25} = 0.4\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.4\n$$\n\n$$\n1 - 0.4 = 0.6\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1274,7 +1274,7 @@
   },
   "MATH 13.88": {
     "title": "Campusbus-Pünktlichkeit",
-    "context": "Über 50 unabhängige Busankünfte werden pünktliche und verspätete Ankünfte im Verhältnis 4 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Über 50 unabhängige Busankünfte werden pünktliche und verspätete Ankünfte im Verhältnis 4 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein gegebener/s arrival arrives late mit Wahrscheinlichkeit 0.2.",
       "Unter den nächsten 20 arrivals beträgt die erwartete Anzahl von pünktlicher Ankünfte 17.",
@@ -1293,7 +1293,7 @@
   },
   "MATH 13.89": {
     "title": "Escape-Room-Rätsellösungen",
-    "context": "In einem Escape Room mit 12 unabhängigen Rätseln beträgt die erwartete Anzahl innerhalb der Zeit gelöster Rätsel 7,2. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einem Escape Room mit 12 unabhängigen Rätseln beträgt die erwartete Anzahl innerhalb der Zeit gelöster Rätsel 7,2. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das nächste Rätsel bleibt mit Wahrscheinlichkeit $0{,}4$ ungelöst.",
       "Die erwartete Anzahl gelöster Rätsel unter den nächsten $12$ Rätseln beträgt $3{,}6$.",
@@ -1312,13 +1312,13 @@
   },
   "MATH 13.90": {
     "title": "Wildkamera-Auslösungen",
-    "context": "Eine Wildkamera erfasst 48 unabhängige Nachtfenster. Die erwartete Anzahl Fenster mit Tierauslösung ist 12, mit Varianz 9. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Wildkamera erfasst 48 unabhängige Nachtfenster. Die erwartete Anzahl Fenster mit Tierauslösung ist 12, mit Varianz 9. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein gegebener/s night window has no animal trigger mit Wahrscheinlichkeit 0.75.",
-      "Für diese 48 night windows beträgt die Varianz der Anzahl von Tierauslösungen 9.",
-      "Über die nächsten 10 night windows ist die erwartete Anzahl von Tierauslösungen kleiner als 5.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 3 night windows yields an animal trigger is greater than 0.1.",
-      "Die Wahrscheinlichkeit von höchstens 2 animal triggers unter den nächsten 6 night windows ist größer als 0.5."
+      "Ein gegebenes Nachtfenster hat mit Wahrscheinlichkeit 0,75 keinen Tierauslöser.",
+      "Für diese 48 Nachtfenster beträgt die Varianz der Anzahl von Tierauslösern 9.",
+      "Über die nächsten 10 Nachtfenster ist die erwartete Anzahl von Tierauslösern kleiner als 5.",
+      "Die Wahrscheinlichkeit, dass jedes der nächsten 3 Nachtfenster einen Tierauslöser ergibt, ist größer als 0,1.",
+      "Die Wahrscheinlichkeit von höchstens 2 Tierauslösern unter den nächsten 6 Nachtfenstern ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12}{48} = 0.25\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.25\n$$\n\n$$\n1 - 0.25 = 0.75\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1331,13 +1331,13 @@
   },
   "MATH 13.91": {
     "title": "Theater-Ticket-Zusatzverkäufe",
-    "context": "Eine Theaterkasse bearbeitet 32 unabhängige Ticketverkäufe. Die erwartete Anzahl Verkäufe mit Zusatzverkauf ist 12,8. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Theaterkasse bearbeitet 32 unabhängige Ticketverkäufe. Die erwartete Anzahl Verkäufe mit Zusatzverkauf ist 12,8. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An individual sale has no upsell mit Wahrscheinlichkeit 0.6.",
-      "Über die nächsten 5 sales ist die erwartete Anzahl von Zusatzverkäufe genau 2.",
-      "Für diese 32 sales beträgt die Varianz der Anzahl von Zusatzverkäufe 9.6.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 sales yields an upsell is greater than 0.45.",
-      "Die Wahrscheinlichkeit von mindestens 4 Zusatzverkäufe von 5 ist größer als die Wahrscheinlichkeit von genau 4 Zusatzverkäufe von 5."
+      "Ein einzelner Verkauf hat mit Wahrscheinlichkeit 0,6 keinen Zusatzverkauf.",
+      "Über die nächsten 5 Verkäufe ist die erwartete Anzahl von Zusatzverkäufen genau 2.",
+      "Für diese 32 Verkäufe beträgt die Varianz der Anzahl von Zusatzverkäufen 9,6.",
+      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 Verkäufe einen Zusatzverkauf ergibt, ist größer als 0,45.",
+      "Die Wahrscheinlichkeit von mindestens 4 Zusatzverkäufen von 5 ist größer als die Wahrscheinlichkeit von genau 4 Zusatzverkäufen von 5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12.8}{32} = 0.4\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.4\n$$\n\n$$\n1 - 0.4 = 0.6\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1350,13 +1350,13 @@
   },
   "MATH 13.92": {
     "title": "Labor-Pipetten-Kalibrierungen",
-    "context": "Techniker kalibrieren 20 unabhängige Pipetten. Die erwartete Anzahl, die beim ersten Versuch bestehen, ist 17, und die Varianz ist 2,55. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Techniker kalibrieren 20 unabhängige Pipetten. Die erwartete Anzahl, die beim ersten Versuch bestehen, ist 17, und die Varianz ist 2,55. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die nächste Pipette scheitert beim ersten Versuch mit Wahrscheinlichkeit 0.15.",
-      "In einem Lauf von 15 pipettes übersteigt die erwartete Anzahl von Bestehen beim ersten Versuch 13.",
-      "Für 25 pipettes beträgt die Varianz der Anzahl von Bestehen beim ersten Versuch 3.1875.",
-      "Die Chance, dass jede/r der nächsten 3 Pipetten ein Bestehen beim ersten Versuch ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 Bestehen beim ersten Versuch in den nächsten 8 pipettes ist größer als 0.20."
+      "Die nächste Pipette scheitert beim ersten Versuch mit Wahrscheinlichkeit 0,15.",
+      "In einem Lauf von 15 Pipetten übersteigt die erwartete Anzahl von Bestehen beim ersten Versuch 13.",
+      "Für 25 Pipetten beträgt die Varianz der Anzahl von Bestehen beim ersten Versuch 3,1875.",
+      "Die Chance, dass jede der nächsten 3 Pipetten beim ersten Versuch besteht, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 Bestehen beim ersten Versuch in den nächsten 8 Pipetten ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{17}{20} = 0.85\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.85\n$$\n\n$$\n1 - 0.85 = 0.15\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1369,13 +1369,13 @@
   },
   "MATH 13.93": {
     "title": "Online-Quiz mit Sofortfeedback",
-    "context": "Ein Quiz hat 15 unabhängige Multiple-Choice-Items. Die erwartete Anzahl korrekter Antworten ist 9. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Quiz hat 15 unabhängige Multiple-Choice-Items. Die erwartete Anzahl korrekter Antworten ist 9. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Das nächste Item ist mit Wahrscheinlichkeit 0.4 inkorrekt.",
-      "Die erwartete Anzahl richtiger Items unter den nächsten $12$ Items beträgt $3{,}6$.",
-      "Die Varianz der Anzahl richtigen Items unter 50 items beträgt 12.",
-      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden correct items ist kleiner als 0.3.",
-      "Die Wahrscheinlichkeit von höchstens 4 richtigen Items unter den nächsten 6 items ist größer als 0.5."
+      "Das nächste Item ist mit Wahrscheinlichkeit 0,4 inkorrekt.",
+      "Die erwartete Anzahl richtiger Items unter den nächsten 12 Items beträgt 3,6.",
+      "Die Varianz der Anzahl richtiger Items unter 50 Items beträgt 12.",
+      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden richtigen Items ist kleiner als 0,3.",
+      "Die Wahrscheinlichkeit von höchstens 4 richtigen Items unter den nächsten 6 Items ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{9}{15} = 0.6\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.6\n$$\n\n$$\n1 - 0.6 = 0.4\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1388,7 +1388,7 @@
   },
   "MATH 13.94": {
     "title": "Flughafenlounge-WLAN-Sitzungen",
-    "context": "Über 70 unabhängige WLAN-Sitzungen werden erfolgreiche und abgebrochene Verbindungen im Verhältnis 4 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Über 70 unabhängige WLAN-Sitzungen werden erfolgreiche und abgebrochene Verbindungen im Verhältnis 4 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein gegebener/s session drops mit Wahrscheinlichkeit 0.2.",
       "Unter den nächsten 20 sessions beträgt die erwartete Anzahl von erfolgreicher Verbindungen 17.",
@@ -1407,7 +1407,7 @@
   },
   "MATH 13.95": {
     "title": "Spendenzusagen von Tür zu Tür",
-    "context": "Freiwillige besuchen $40$ unabhängige Haushalte. Die erwartete Anzahl von Zusagen ist $10$, mit Standardabweichung $\\sqrt{7{,}5}$. Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "context": "Freiwillige besuchen $40$ unabhängige Haushalte. Die erwartete Anzahl von Zusagen ist $10$, mit Standardabweichung $\\sqrt{7{,}5}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der nächste Haushalt liefert keine Zusage mit Wahrscheinlichkeit $0{,}75$.",
       "In einer Folge von $15$ Haushalten übersteigt die erwartete Anzahl von Zusagen $4$.",
@@ -1426,13 +1426,13 @@
   },
   "MATH 13.96": {
     "title": "Bäckerei-Morgenchargen-QS",
-    "context": "Eine Bäckerei prüft 28 unabhängige Brote. Die erwartete Anzahl, die Qualitätsstandards erfüllen, ist 22,4. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Bäckerei prüft 28 unabhängige Brote. Die erwartete Anzahl, die Qualitätsstandards erfüllen, ist 22,4. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An individual loaf is rejected mit Wahrscheinlichkeit 0.2.",
-      "Über die nächsten 5 loaves ist die erwartete Anzahl von qualitätsgerechter Brote genau 4.",
-      "Für diese 28 loaves beträgt die Varianz der Anzahl von qualitätsgerechter Brote 5.6.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 loaves yields a quality loaf is greater than 0.45.",
-      "Die Wahrscheinlichkeit von mindestens 4 qualitätsgerechter Brote von 5 ist größer als die Wahrscheinlichkeit von genau 4 qualitätsgerechter Brote von 5."
+      "Ein einzelnes Brot wird mit Wahrscheinlichkeit 0,2 zurückgewiesen.",
+      "Über die nächsten 5 Brote ist die erwartete Anzahl qualitätsgerechter Brote genau 4.",
+      "Für diese 28 Brote beträgt die Varianz der Anzahl qualitätsgerechter Brote 5,6.",
+      "Die Wahrscheinlichkeit, dass jedes der nächsten 4 Brote ein Qualitätsbrot ergibt, ist größer als 0,45.",
+      "Die Wahrscheinlichkeit von mindestens 4 qualitätsgerechten Broten von 5 ist größer als die Wahrscheinlichkeit von genau 4 qualitätsgerechten Broten von 5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{22.4}{28} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1445,13 +1445,13 @@
   },
   "MATH 13.97": {
     "title": "Schwimmwettkampf-Regelstarts",
-    "context": "In einem Wettkampf mit 24 unabhängigen Starts beträgt die erwartete Anzahl regelkonformer Starts 19,2, und die Varianz ist 3,84. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einem Wettkampf mit 24 unabhängigen Starts beträgt die erwartete Anzahl regelkonformer Starts 19,2, und die Varianz ist 3,84. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der nächste Start ist mit Wahrscheinlichkeit 0.2 ein Fehlstart.",
-      "In einem Lauf von 15 starts übersteigt die erwartete Anzahl von regelkonformer Starts 13.",
-      "Für 25 starts beträgt die Varianz der Anzahl von regelkonformer Starts 4.",
-      "Die Chance, dass jede/r der nächsten 3 Starts einen regelkonformen Start ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 regelkonformer Starts in den nächsten 8 starts ist größer als 0.20."
+      "Der nächste Start ist mit Wahrscheinlichkeit 0,2 ungültig.",
+      "In einem Lauf von 15 Starts übersteigt die erwartete Anzahl regelkonformer Starts 13.",
+      "Für 25 Starts beträgt die Varianz der Anzahl regelkonformer Starts 4.",
+      "Die Chance, dass jeder der nächsten 3 Starts einen regelkonformen Start ergibt, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 regelkonformen Starts in den nächsten 8 Starts ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{19.2}{24} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1464,7 +1464,7 @@
   },
   "MATH 13.98": {
     "title": "Bibliotheks-Reservierungsabholungen",
-    "context": "Von 36 unabhängigen Reservierungen beträgt die erwartete Anzahl innerhalb von 48 Stunden abgeholter 27. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Von 36 unabhängigen Reservierungen beträgt die erwartete Anzahl innerhalb von 48 Stunden abgeholter 27. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die nächste Reservierung wird mit Wahrscheinlichkeit 0.25 verpasst.",
       "Die erwartete Anzahl pünktlicher Abholungen unter den nächsten $12$ Reservierungen beträgt $4{,}5$.",
@@ -1483,7 +1483,7 @@
   },
   "MATH 13.99": {
     "title": "App-Push-Benachrichtigungs-Öffnungen",
-    "context": "Eine Kampagne sendet 100 unabhängige Push-Benachrichtigungen. Öffnungen und Ignorierungen werden im Verhältnis 3 : 7 erwartet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Kampagne sendet 100 unabhängige Push-Benachrichtigungen. Öffnungen und Ignorierungen werden im Verhältnis 3 : 7 erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Eine gegebene Benachrichtigung wird mit Wahrscheinlichkeit $0{,}7$ ignoriert.",
       "Unter den nächsten 20 notifications beträgt die erwartete Anzahl von Öffnungen 7.",
@@ -1502,13 +1502,13 @@
   },
   "MATH 13.100": {
     "title": "Saugroboter-Raumabschlüsse",
-    "context": "Ein Roboter versucht 18 unabhängige Raumreinigungen. Die erwartete Anzahl ohne menschliche Hilfe abgeschlossener Reinigungen ist 12,6, mit Varianz 3,78. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Roboter versucht 18 unabhängige Raumreinigungen. Die erwartete Anzahl ohne menschliche Hilfe abgeschlossener Reinigungen ist 12,6, mit Varianz 3,78. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der nächste Raum braucht mit Wahrscheinlichkeit $0{,}3$ menschliche Hilfe.",
-      "In einem Lauf von 15 rooms übersteigt die erwartete Anzahl von ununterstützter Abschlüsse 11.",
-      "Für 25 rooms beträgt die Varianz der Anzahl von ununterstützter Abschlüsse 5.25.",
-      "Die Chance, dass jede/r der nächsten 3 Räume einen ununterstützten Abschluss ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 ununterstützter Abschlüsse in den nächsten 8 rooms ist größer als 0.20."
+      "Der nächste Raum braucht mit Wahrscheinlichkeit 0,3 menschliche Hilfe.",
+      "In einem Lauf von 15 Räumen übersteigt die erwartete Anzahl ununterstützter Abschlüsse 11.",
+      "Für 25 Räume beträgt die Varianz der Anzahl ununterstützter Abschlüsse 5,25.",
+      "Die Chance, dass jeder der nächsten 3 Räume ununterstützt abgeschlossen wird, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 ununterstützten Abschlüssen in den nächsten 8 Räumen ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12.6}{18} = 0.7\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.7\n$$\n\n$$\n1 - 0.7 = 0.3\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1521,7 +1521,7 @@
   },
   "MATH 13.101": {
     "title": "Debattierturnier-Münzwürfe",
-    "context": "Ein Turnier nutzt 20 unabhängige Münzwürfe zur Seitenverteilung. Die erwartete Anzahl an Kopf ist 11. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Turnier nutzt 20 unabhängige Münzwürfe zur Seitenverteilung. Die erwartete Anzahl an Kopf ist 11. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der nächste Wurf landet mit Wahrscheinlichkeit $0{,}45$ auf Zahl.",
       "Die erwartete Anzahl Kopf unter den nächsten $12$ Würfen beträgt $3{,}3$.",
@@ -1540,13 +1540,13 @@
   },
   "MATH 13.102": {
     "title": "Acker-Bodenfeuchte-Alarme",
-    "context": "Sensoren prüfen 45 unabhängige Feldparzellen. Die erwartete Anzahl an Dürrealarmen ist 9. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Sensoren prüfen 45 unabhängige Feldparzellen. Die erwartete Anzahl an Dürrealarmen ist 9. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein gegebener/s plot raises no alert mit Wahrscheinlichkeit 0.8.",
-      "Für diese 45 plots beträgt die Varianz der Anzahl von Dürrealarme 7.2.",
-      "Über die nächsten 10 plots ist die erwartete Anzahl von Dürrealarme kleiner als 5.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 3 plots yields a drought alert is greater than 0.1.",
-      "Die Wahrscheinlichkeit von höchstens 2 drought alerts unter den nächsten 6 plots ist größer als 0.5."
+      "Ein gegebenes Feld löst mit Wahrscheinlichkeit 0,8 keinen Dürrealarm aus.",
+      "Für diese 45 Felder beträgt die Varianz der Anzahl von Dürrealarmen 7,2.",
+      "Über die nächsten 10 Felder ist die erwartete Anzahl von Dürrealarmen kleiner als 5.",
+      "Die Wahrscheinlichkeit, dass jedes der nächsten 3 Felder einen Dürrealarm ergibt, ist größer als 0,1.",
+      "Die Wahrscheinlichkeit von höchstens 2 Dürrealarmen unter den nächsten 6 Feldern ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{9}{45} = 0.2\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.2\n$$\n\n$$\n1 - 0.2 = 0.8\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1559,13 +1559,13 @@
   },
   "MATH 13.103": {
     "title": "Kino-Treuekarten-Scans",
-    "context": "In einem Kino werden 60 unabhängige Ticketkäufe erfasst. Die erwartete Anzahl, die eine Treuekarte scannen, ist 36, mit SA $\\sqrt{14.4}$. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einem Kino werden 60 unabhängige Ticketkäufe erfasst. Die erwartete Anzahl, die eine Treuekarte scannen, ist 36, mit SA $\\sqrt{14.4}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der nächste Kauf hat mit Wahrscheinlichkeit 0.4 keinen Treuekarten-Scan.",
-      "In einem Lauf von 15 purchases übersteigt die erwartete Anzahl von Treuekarten-Scans 10.",
-      "Für 25 purchases beträgt die Varianz der Anzahl von Treuekarten-Scans 6.",
-      "Die Chance, dass jede/r der nächsten 3 Käufe einen Treuekarten-Scan ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 Treuekarten-Scans in den nächsten 8 purchases ist größer als 0.20."
+      "Der nächste Kauf führt mit Wahrscheinlichkeit 0,3 zu keinem Treuekarten-Scan.",
+      "In einem Lauf von 15 Käufen übersteigt die erwartete Anzahl von Treuekarten-Scans 10.",
+      "Für 25 Käufe beträgt die Varianz der Anzahl von Treuekarten-Scans 6.",
+      "Die Chance, dass jeder der nächsten 3 Käufe einen Treuekarten-Scan ergibt, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 Treuekarten-Scans in den nächsten 8 Käufen ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{36}{60} = 0.6\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.6\n$$\n\n$$\n1 - 0.6 = 0.4\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1578,13 +1578,13 @@
   },
   "MATH 13.104": {
     "title": "Skilift-Durchgangskontrollen",
-    "context": "Ein Lift bearbeitet 80 unabhängige Fahrgäste. Gültige und ungültige Pässe werden im Verhältnis 9 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Lift bearbeitet 80 unabhängige Fahrgäste. Gültige und ungültige Pässe werden im Verhältnis 9 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Eine gegebene Mitfahrgelegenheit ist mit Wahrscheinlichkeit $0{,}1$ ungültig.",
-      "Unter den nächsten 20 riders beträgt die erwartete Anzahl von gültiger Pässe 19.",
-      "Für 40 riders beträgt die Varianz der Anzahl von gültiger Pässe 3.6.",
-      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden valid passes ist kleiner als 0.005.",
-      "Die Wahrscheinlichkeit von höchstens 5 gültigen Pässen unter den nächsten 8 Fahrgästen ist größer als 0.7."
+      "Eine gegebene Mitfahrgelegenheit ist mit Wahrscheinlichkeit 0,1 ungültig.",
+      "Unter den nächsten 20 Fahrgästen beträgt die erwartete Anzahl gültiger Pässe 19.",
+      "Für 40 Fahrgäste beträgt die Varianz der Anzahl gültiger Pässe 3,6.",
+      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden gültigen Pässen ist kleiner als 0,005.",
+      "Die Wahrscheinlichkeit von höchstens 5 gültigen Pässen unter den nächsten 8 Fahrgästen ist größer als 0,7."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{9}{9+1} = 0.9\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.9\n$$\n\n$$\n1 - 0.9 = 0.1\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1597,13 +1597,13 @@
   },
   "MATH 13.105": {
     "title": "Podcast-Werbe-Klickraten",
-    "context": "Eine Werbung läuft in 50 unabhängigen Episoden. Die erwartete Anzahl an Klicks ist 5. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Werbung läuft in 50 unabhängigen Episoden. Die erwartete Anzahl an Klicks ist 5. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein gegebener/s episode gets no click mit Wahrscheinlichkeit 0.9.",
-      "Für diese 50 episodes beträgt die Varianz der Anzahl von Klicks 4.5.",
-      "Über die nächsten 10 episodes ist die erwartete Anzahl von Klicks kleiner als 5.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 3 episodes yields a click-through is greater than 0.1.",
-      "Die Wahrscheinlichkeit von höchstens 2 click-throughs unter den nächsten 6 episodes ist größer als 0.5."
+      "Eine gegebene Episode erhält mit Wahrscheinlichkeit 0,9 keinen Klick.",
+      "Für diese 50 Episoden beträgt die Varianz der Anzahl von Klicks 4,5.",
+      "Über die nächsten 10 Episoden ist die erwartete Anzahl von Klicks kleiner als 5.",
+      "Die Wahrscheinlichkeit, dass jede der nächsten 3 Episoden einen Klick ergibt, ist größer als 0,1.",
+      "Die Wahrscheinlichkeit von höchstens 2 Klicks unter den nächsten 6 Episoden ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{5}{50} = 0.1\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.1\n$$\n\n$$\n1 - 0.1 = 0.9\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1616,13 +1616,13 @@
   },
   "MATH 13.106": {
     "title": "Campus-Drucker-Auftragserfolg",
-    "context": "Ein Computerlabor führt 22 unabhängige Druckaufträge aus. Die erwartete Anzahl fehlerfrei abgeschlossener Aufträge ist 17,6, und die Varianz ist 3,52. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Computerlabor führt 22 unabhängige Druckaufträge aus. Die erwartete Anzahl fehlerfrei abgeschlossener Aufträge ist 17,6, und die Varianz ist 3,52. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der nächste Druckauftrag scheitert mit Wahrscheinlichkeit $0{,}2$.",
-      "In einem Lauf von 15 print jobs übersteigt die erwartete Anzahl von fehlerfreier Aufträge 13.",
-      "Für 25 print jobs beträgt die Varianz der Anzahl von fehlerfreier Aufträge 4.",
-      "Die Chance, dass jede/r der nächsten 3 Druckaufträge einen fehlerfreien Auftrag ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 fehlerfreier Aufträge in den nächsten 8 print jobs ist größer als 0.20."
+      "Der nächste Druckauftrag scheitert mit Wahrscheinlichkeit 0,2.",
+      "In einem Lauf von 15 Druckaufträgen übersteigt die erwartete Anzahl fehlerfreier Aufträge 13.",
+      "Für 25 Druckaufträge beträgt die Varianz der Anzahl fehlerfreier Aufträge 4.",
+      "Die Chance, dass jeder der nächsten 3 Druckaufträge fehlerfrei ist, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 fehlerfreien Aufträgen in den nächsten 8 Druckaufträgen ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{17.6}{22} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1635,13 +1635,13 @@
   },
   "MATH 13.107": {
     "title": "Brettspiel-Kritische Treffer",
-    "context": "In einer Kampagne mit 30 unabhängigen Angriffswürfen beträgt die erwartete Anzahl kritischer Treffer 6. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "In einer Kampagne mit 30 unabhängigen Angriffswürfen beträgt die erwartete Anzahl kritischer Treffer 6. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An individual attack roll is not a critical hit mit Wahrscheinlichkeit 0.8.",
-      "Über die nächsten 5 attack rolls ist die erwartete Anzahl von kritischer Treffer genau 1.",
-      "Für diese 30 attack rolls beträgt die Varianz der Anzahl von kritischer Treffer 6.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 attack rolls yields a critical hit is greater than 0.45.",
-      "Die Wahrscheinlichkeit von mindestens 4 kritischer Treffer von 5 ist größer als die Wahrscheinlichkeit von genau 4 kritischer Treffer von 5."
+      "Ein einzelner Angriffswurf ist mit Wahrscheinlichkeit 0,8 kein kritischer Treffer.",
+      "Über die nächsten 5 Angriffswürfe ist die erwartete Anzahl kritischer Treffer genau 1.",
+      "Für diese 30 Angriffswürfe beträgt die Varianz der Anzahl kritischer Treffer 6.",
+      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 Angriffswürfe einen kritischen Treffer ergibt, ist größer als 0,45.",
+      "Die Wahrscheinlichkeit von mindestens 4 kritischen Treffern von 5 ist größer als die Wahrscheinlichkeit von genau 4 kritischen Treffern von 5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{6}{30} = 0.2\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.2\n$$\n\n$$\n1 - 0.2 = 0.8\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1654,7 +1654,7 @@
   },
   "MATH 13.108": {
     "title": "Hafen-Nebelhorn-Tests",
-    "context": "Hafenpersonal führt 14 unabhängige Nebelhorn-Tests durch. Die erwartete Anzahl klar hörbarer Tests ist 11,2. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Hafenpersonal führt 14 unabhängige Nebelhorn-Tests durch. Die erwartete Anzahl klar hörbarer Tests ist 11,2. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der nächste Tests scheitert mit Wahrscheinlichkeit $0{,}2$.",
       "Die erwartete Anzahl hörbarer Tests unter den nächsten $12$ Tests beträgt $4{,}8$.",
@@ -1673,7 +1673,7 @@
   },
   "MATH 13.109": {
     "title": "Blutspende-Terminwahrnehmungen",
-    "context": "Eine Klinik bucht 55 unabhängige Spendetermine. Erscheinungen und Fernbleiben werden im Verhältnis 4 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Klinik bucht 55 unabhängige Spendetermine. Erscheinungen und Fernbleiben werden im Verhältnis 4 : 1 erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein gegebener Termin ist mit Wahrscheinlichkeit $0{,}2$ ein Nichterscheinen.",
       "Unter den nächsten 20 appointments beträgt die erwartete Anzahl von Erscheinungen 17.",
@@ -1692,7 +1692,7 @@
   },
   "MATH 13.110": {
     "title": "Drohnenlieferungs-Abwurfgenauigkeit",
-    "context": "Eine Drohne führt 16 unabhängige Abwürfe durch. Die erwartete Anzahl im Zielgebiet landender Abwürfe ist 12, mit Varianz 3. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Drohne führt 16 unabhängige Abwürfe durch. Die erwartete Anzahl im Zielgebiet landender Abwürfe ist 12, mit Varianz 3. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der nächste Abwurf verfehlt mit Wahrscheinlichkeit $0{,}25$ das Ziel.",
       "In einem Lauf von 15 drops übersteigt die erwartete Anzahl von zielgenauer Abwürfe 12.",
@@ -1711,7 +1711,7 @@
   },
   "MATH 13.111": {
     "title": "Musikfestival-Armband-Scans",
-    "context": "An einem Eingangstor werden 90 unabhängige Armband-Scans protokolliert. Die erwartete Anzahl erfolgreicher Scans ist 81, mit SA $\\sqrt{8.1}$. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "An einem Eingangstor werden 90 unabhängige Armband-Scans protokolliert. Die erwartete Anzahl erfolgreicher Scans ist 81, mit SA $\\sqrt{8.1}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der nächste Scan scheitert mit Wahrscheinlichkeit $0{,}1$.",
       "In einem Lauf von 15 scans übersteigt die erwartete Anzahl von erfolgreicher Scans 13.",
@@ -1730,7 +1730,7 @@
   },
   "MATH 13.112": {
     "title": "Nachhilfe-Hausaufgaben-Erledigungen",
-    "context": "Ein Tutor prüft 18 unabhängige Hausaufgabensätze. Die erwartete Anzahl vor der Sitzung erledigter Sätze ist 10,8. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Tutor prüft 18 unabhängige Hausaufgabensätze. Die erwartete Anzahl vor der Sitzung erledigter Sätze ist 10,8. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der nächste Hausaufgabensatz ist mit Wahrscheinlichkeit 0.4 unvollständig.",
       "Die erwartete Anzahl abgeschlossener Sets unter den nächsten $12$ Hausaufgaben-Sets beträgt $3{,}6$.",
@@ -1749,13 +1749,13 @@
   },
   "MATH 13.113": {
     "title": "Eiscreme-Maschine-Selbstreinigungen",
-    "context": "Ein Eisladen führt 26 unabhängige Selbstreinigungszyklen durch. Die erwartete Anzahl ohne Störmeldung abgeschlossener Zyklen ist 20,8. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Eisladen führt 26 unabhängige Selbstreinigungszyklen durch. Die erwartete Anzahl ohne Störmeldung abgeschlossener Zyklen ist 20,8. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An individual cycle raises a fault alert mit Wahrscheinlichkeit 0.2.",
-      "Über die nächsten 5 cycles ist die erwartete Anzahl von sauberer Abschlüsse genau 4.",
-      "Für diese 26 cycles beträgt die Varianz der Anzahl von sauberer Abschlüsse 5.2.",
-      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 cycles yields a clean finish is greater than 0.45.",
-      "Die Wahrscheinlichkeit von mindestens 4 sauberer Abschlüsse von 5 ist größer als die Wahrscheinlichkeit von genau 4 sauberer Abschlüsse von 5."
+      "Ein einzelner Zyklus löst mit Wahrscheinlichkeit 0,2 einen Fehleralarm aus.",
+      "Über die nächsten 5 Zyklen ist die erwartete Anzahl sauberer Abschlüsse genau 4.",
+      "Für diese 26 Zyklen beträgt die Varianz der Anzahl sauberer Abschlüsse 5,2.",
+      "Die Wahrscheinlichkeit, dass jeder der nächsten 4 Zyklen einen sauberen Abschluss ergibt, ist größer als 0,45.",
+      "Die Wahrscheinlichkeit von mindestens 4 sauberen Abschlüssen von 5 ist größer als die Wahrscheinlichkeit von genau 4 sauberen Abschlüssen von 5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{20.8}{26} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1768,13 +1768,13 @@
   },
   "MATH 13.114": {
     "title": "Archäologie-Fundstücke",
-    "context": "Ein Grabungsteam untersucht 64 unabhängige Bodenquadrate. Funde und leere Quadrate werden im Verhältnis 1 : 3 erwartet. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Grabungsteam untersucht 64 unabhängige Bodenquadrate. Funde und leere Quadrate werden im Verhältnis 1 : 3 erwartet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein gegebenes Bodenquadrat ist mit Wahrscheinlichkeit $0{,}75$ leer.",
-      "Unter den nächsten 20 soil squares beträgt die erwartete Anzahl von Artefaktfunde 6.",
-      "Für 40 soil squares beträgt die Varianz der Anzahl von Artefaktfunde 7.5.",
-      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden artifact finds ist kleiner als 0.005.",
-      "Die Wahrscheinlichkeit von höchstens 1 artifact find unter den nächsten 8 soil squares ist größer als 0.7."
+      "Ein gegebenes Bodenquadrat ist mit Wahrscheinlichkeit 0,75 leer.",
+      "Unter den nächsten 20 Bodenquadraten beträgt die erwartete Anzahl von Artefaktfunden 6.",
+      "Für 40 Bodenquadrate beträgt die Varianz der Anzahl von Artefaktfunden 7,5.",
+      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden Artefaktfunden ist kleiner als 0,005.",
+      "Die Wahrscheinlichkeit von höchstens 1 Artefaktfund unter den nächsten 8 Bodenquadraten ist größer als 0,7."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{1}{1+3} = 0.25\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.25\n$$\n\n$$\n1 - 0.25 = 0.75\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
@@ -1787,13 +1787,13 @@
   },
   "MATH 13.115": {
     "title": "Satelliten-Paket-Bestätigungen",
-    "context": "Eine Bodenstation sendet 40 unabhängige Pakete. Die erwartete Anzahl empfangener Bestätigungen ist 34, und die Varianz ist 5,1. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Eine Bodenstation sendet 40 unabhängige Pakete. Die erwartete Anzahl empfangener Bestätigungen ist 34, und die Varianz ist 5,1. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Das nächste Paket geht mit Wahrscheinlichkeit 0.15 verloren.",
-      "In einem Lauf von 15 packets übersteigt die erwartete Anzahl von Bestätigungen 13.",
-      "Für 25 packets beträgt die Varianz der Anzahl von Bestätigungen 3.1875.",
-      "Die Chance, dass jede/r der nächsten 3 Pakete eine Bestätigung ergibt, ist kleiner als 0.55.",
-      "Die Chance von höchstens 5 Bestätigungen in den nächsten 8 packets ist größer als 0.20."
+      "Das nächste Paket geht mit Wahrscheinlichkeit 0,15 verloren.",
+      "In einem Lauf von 15 Paketen übersteigt die erwartete Anzahl von Bestätigungen 13.",
+      "Für 25 Pakete beträgt die Varianz der Anzahl von Bestätigungen 3,1875.",
+      "Die Chance, dass jedes der nächsten 3 Pakete eine Bestätigung ergibt, ist kleiner als 0,55.",
+      "Die Chance von höchstens 5 Bestätigungen in den nächsten 8 Paketen ist größer als 0,20."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.85\n$$\n\n$$\n1 - 0.85 = 0.15\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
