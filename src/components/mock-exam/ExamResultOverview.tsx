@@ -2,8 +2,6 @@ import { useMemo, type CSSProperties, type ReactNode } from "react";
 import {
   Area,
   AreaChart,
-  Bar,
-  BarChart,
   CartesianGrid,
   Cell,
   Pie,
@@ -222,42 +220,6 @@ function Meter({ pct, color }: { pct: number; color: string }) {
   );
 }
 
-/** Y-axis tick: one line with ellipsis so chapter names never wrap. */
-function OneLineCategoryTick({
-  x = 0,
-  y = 0,
-  payload,
-  width = 168,
-}: {
-  x?: number;
-  y?: number;
-  payload?: { value?: string | number };
-  width?: number;
-}) {
-  const label = String(payload?.value ?? "");
-  const boxW = Math.max(48, width - 8);
-  return (
-    <g transform={`translate(${x},${y})`}>
-      <title>{label}</title>
-      <foreignObject x={-boxW} y={-9} width={boxW} height={18}>
-        <div
-          style={{
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            textAlign: "right",
-            fontSize: 11,
-            lineHeight: "18px",
-            color: "var(--muted-foreground)",
-          }}
-        >
-          {label}
-        </div>
-      </foreignObject>
-    </g>
-  );
-}
-
 function ChartFrame({
   title,
   hint,
@@ -463,7 +425,6 @@ export function ExamResultOverview({
     tasks,
     sections,
     topics,
-    chapters,
     hasTopicBreakdown,
     medianSeconds,
     meanSeconds,
@@ -500,18 +461,6 @@ export function ExamResultOverview({
         max: s.max,
       })),
     [sections],
-  );
-
-  const chapterBars = useMemo(
-    () =>
-      [...chapters]
-        .sort((a, b) => a.accuracyPct - b.accuracyPct)
-        .map((c, i) => ({
-          name: c.label,
-          accuracy: c.accuracyPct,
-          color: brandFill(i),
-        })),
-    [chapters],
   );
 
   const tickEvery = tasks.length > 20 ? 4 : tasks.length > 12 ? 2 : 1;
@@ -613,8 +562,7 @@ export function ExamResultOverview({
         )}
       </ChartFrame>
 
-      <div className="grid gap-6 lg:grid-cols-2">
-        <ChartFrame title={copy.accuracyBySubject} hint={copy.accuracyBySubjectHint}>
+      <ChartFrame title={copy.accuracyBySubject} hint={copy.accuracyBySubjectHint}>
           {subjectPie.length === 0 ? (
             <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
               {copy.noSectionData}
@@ -675,54 +623,6 @@ export function ExamResultOverview({
           )}
         </ChartFrame>
 
-        <ChartFrame
-          title={copy.accuracyByChapter}
-          hint={chapterBars.length ? copy.chapterHintOrdered : copy.chapterHintCustom}
-        >
-          {chapterBars.length === 0 ? (
-            <div className="flex h-full items-center justify-center px-6 text-center text-sm text-muted-foreground">
-              {copy.chapterEmpty}
-            </div>
-          ) : (
-            <ResponsiveContainer width="100%" height="100%" debounce={80}>
-              <BarChart
-                data={chapterBars}
-                layout="vertical"
-                margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
-              >
-                <CartesianGrid stroke={GRID} horizontal={false} />
-                <XAxis
-                  type="number"
-                  domain={[0, 100]}
-                  tick={axisTick}
-                  axisLine={false}
-                  tickLine={false}
-                  tickFormatter={(v) => `${v}%`}
-                />
-                <YAxis
-                  type="category"
-                  dataKey="name"
-                  width={172}
-                  tick={<OneLineCategoryTick width={172} />}
-                  axisLine={false}
-                  tickLine={false}
-                  interval={0}
-                />
-                <Tooltip
-                  contentStyle={tipStyle()}
-                  formatter={(value) => [`${value}%`, copy.accuracy]}
-                />
-                <Bar dataKey="accuracy" radius={[0, 4, 4, 0]} maxBarSize={18} isAnimationActive={false}>
-                  {chapterBars.map((row) => (
-                    <Cell key={row.name} fill={row.color} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          )}
-        </ChartFrame>
-      </div>
-
       <section>
         <div className="mb-4">
           <h2 className="font-display text-xl font-semibold tracking-tight">{copy.whatNext}</h2>
@@ -754,7 +654,6 @@ export function ExamResultOverview({
 
       <GroupTable title={copy.sections} rows={sections} copy={copy} />
       {hasTopicBreakdown ? <GroupTable title={copy.topics} rows={topics} copy={copy} /> : null}
-      {chapters.length > 0 ? <GroupTable title={copy.chapters} rows={chapters} copy={copy} /> : null}
 
       <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border px-5 py-4 sm:px-6">
