@@ -357,12 +357,10 @@ export function Index() {
                 Capital preservation
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
-                Private tutors in Vienna charge{" "}
-                <span className="text-why-us-fg">€50 to €100 per hour</span> just to walk through
-                textbook slides. Tuition at WU Vienna is often{" "}
-                <span className="text-caramel-deep">about ten times lower</span> than comparable
-                schools in the UK or US, so a focused prep investment protects a{" "}
-                <span className="font-semibold text-why-us-fg">€100,000 financial advantage</span>.
+                Private tutors in Vienna charge €50 to €100 per hour just to walk through textbook
+                slides. Tuition at WU Vienna is often about ten times lower than comparable schools
+                in the UK or US, so a focused prep investment protects a €100,000 financial
+                advantage.
               </p>
               <CapitalBars />
             </div>
@@ -372,8 +370,8 @@ export function Index() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
                 WU Vienna is a target school for many strong firms, though recruiters usually look at
-                the <span className="text-caramel-deep">top of the class</span>. Training for exam
-                pressure now builds the analytical stamina you will need later in recruitment cycles.
+                the top of the class. Training for exam pressure now builds the analytical stamina
+                you will need later in recruitment cycles.
               </p>
               <PlacementsTicker />
             </div>

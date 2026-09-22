@@ -7,6 +7,7 @@ import { wuViennaExtraDe, wuViennaExtraUk } from "./wu-vienna-extra";
 import { hubGapExtraDe, hubGapExtraUk } from "./hub-gap-extra";
 import { homeExtraDe, homeExtraUk } from "./home-extra";
 import { wisoHubExtraDe, wisoHubExtraUk } from "./wiso-hub-extra";
+import { copyVoiceExtraDe, copyVoiceExtraUk } from "./copy-voice-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -411,6 +412,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...hubGapExtraDe,
     ...homeExtraDe,
     ...wisoHubExtraDe,
+    ...copyVoiceExtraDe,
     ...baseDictionary.de,
   },
   uk: {
@@ -423,6 +425,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...hubGapExtraUk,
     ...homeExtraUk,
     ...wisoHubExtraUk,
+    ...copyVoiceExtraUk,
     ...baseDictionary.uk,
   },
 };

@@ -98,17 +98,16 @@ export function ParentsPage() {
             <li className="flex gap-3">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E85D3A]" />
               <span>
-                <strong className="font-semibold">A hard clock.</strong> Your child gets less than a
-                minute per statement to scan a dense English passage or work through a
-                data-sufficiency style problem entirely in their head.
+                A hard clock. Your child gets less than a minute per statement to scan a dense
+                English passage or work through a data-sufficiency style problem entirely in their
+                head.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E85D3A]" />
               <span>
-                <strong className="font-semibold">Penalty marking.</strong> At WU Vienna a wrong
-                answer does not just score zero. The computer subtracts points from what the student
-                got right elsewhere.
+                Penalty marking. At WU Vienna a wrong answer does not just score zero. The computer
+                subtracts points from what the student got right elsewhere.
               </span>
             </li>
           </ul>
@@ -160,9 +159,7 @@ export function ParentsPage() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Enrolling in a private institution in the EU or UK (Frankfurt School and similar)
                 typically means around €20,000 per year in tuition. Across a 3-year Bachelor cycle
-                that is a direct{" "}
-                <strong className="font-semibold text-foreground">€60,000 cash drain</strong> from
-                the parents.
+                that is a direct €60,000 cash drain from the parents.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -174,9 +171,8 @@ export function ParentsPage() {
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 A mandatory preparatory year means throwing 1 to 2 extra years of your child's life
-                into limbo. Add European rent, food, pocket money and a delayed career start, and
-                you are looking at another{" "}
-                <strong className="font-semibold text-foreground">€25,000+</strong> of liquid loss.
+                into limbo. Add European rent, food, pocket money and a delayed career start, and you
+                are looking at another €25,000+ of liquid loss.
               </p>
             </div>
           </div>
@@ -212,8 +208,7 @@ export function ParentsPage() {
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
             We do not dump dry economics textbooks on your child. The person who built this platform
             sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer
-            sheet. Out of that came an interactive exam simulator for{" "}
-            <strong className="font-semibold text-foreground">€359 for the Full BBE Course</strong>.
+            sheet. Out of that came an interactive exam simulator for €359 for the Full BBE Course.
             Treat it less like a random course fee and more like insurance against burning €60,000+
             later.
           </p>
@@ -249,9 +244,9 @@ export function ParentsPage() {
             </p>
             <p className="mt-3 text-base leading-relaxed text-foreground sm:text-lg">
               You can rely on standard school knowledge and risk burning €60,000+ on private tuition
-              or a lost foundation year, or you can invest <strong>€359</strong> in a simulator that
-              teaches your child how to handle the WU Vienna clock and penalty rules and keep a seat
-              on an affordable program.
+              or a lost foundation year, or you can invest €359 in a simulator that teaches your
+              child how to handle the WU Vienna clock and penalty rules and keep a seat on an
+              affordable program.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <LocalizedLink

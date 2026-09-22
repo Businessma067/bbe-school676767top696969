@@ -527,9 +527,8 @@ function WhyUsSlider() {
               />
             </div>
             <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-why-us-fg sm:text-xl">
-              Our students achieve a success rate{" "}
-              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-              applicant pool.
+              Our students achieve a success rate nearly 6 times higher than the general applicant
+              pool.
             </p>
           </WhySlide>
 
@@ -537,13 +536,11 @@ function WhyUsSlider() {
           <WhySlide title="Capital Preservation">
             <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
               <p className="text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
-                Private tutors in Vienna charge{" "}
-                <span className="text-why-us-fg">€50 to €100 per hour</span> just to walk through
-                textbook slides, which adds up fast. Tuition at WU Vienna is often{" "}
-                <span className="text-caramel-deep">about ten times lower</span> than comparable
-                business schools in the UK or US, so a one-time prep investment can protect a path to
-                an affordable degree. Missing the exam means giving up a{" "}
-                <span className="font-semibold text-why-us-fg">€100,000 financial advantage</span>.
+                Private tutors in Vienna charge €50 to €100 per hour just to walk through textbook
+                slides, which adds up fast. Tuition at WU Vienna is often about ten times lower than
+                comparable business schools in the UK or US, so a one-time prep investment can
+                protect a path to an affordable degree. Missing the exam means giving up a €100,000
+                financial advantage.
               </p>
               <CapitalBars />
             </div>
@@ -553,10 +550,9 @@ function WhyUsSlider() {
           <WhySlide title="Top-Tier Career Outcomes">
             <p className="max-w-3xl text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
               WU Vienna is a target school for many strong firms, though recruiters usually look at
-              the <span className="text-caramel-deep">top of the class</span>. Getting in is only
-              the first filter. Training under exam pressure now builds the analytical stamina you
-              need later in recruitment cycles, and BBE alumni regularly land offers across finance
-              and consulting hubs.
+              the top of the class. Getting in is only the first filter. Training under exam
+              pressure now builds the analytical stamina you need later in recruitment cycles, and
+              BBE alumni regularly land offers across finance and consulting hubs.
             </p>
             <PlacementsTicker />
           </WhySlide>
