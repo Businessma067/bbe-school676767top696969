@@ -582,12 +582,11 @@ function MockBuilderOrbit() {
     { label: "Start" },
   ] as const;
 
-  // Faster lap; highlight when the LEADING tip first touches a node (not the trail).
+  // Faster lap; highlight a beat before the leading tip reaches the node center.
   const cycleSec = 10;
   const stepSec = cycleSec / steps.length;
-  // Must match stroke-dasharray painted length in styles.css (pathLength=100).
-  const dashLen = 8;
-  const tipLeadSec = (dashLen / 100) * cycleSec;
+  // Dash length 8 + small early bias so glow starts as the tip approaches.
+  const tipLeadSec = (12 / 100) * cycleSec;
 
   return (
     <div

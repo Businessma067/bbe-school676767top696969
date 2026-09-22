@@ -859,9 +859,9 @@ body.flashcard-swiping {
 
 /*
   Traveling arc on pathLength=100, dash length 8.
-  Trail at progress p, leading tip at p+8. Highlights use delay
-  (stepIndex * cycle/5 - 0.08 * cycle) so they fire when the tip
-  first touches the node — not when the trailing end arrives.
+  Trail at progress p, leading tip at p+8. Highlights lead the tip slightly
+  (delay = stepIndex * cycle/5 - 0.12 * cycle) so the glow starts as the
+  tip approaches the node.
 */
 .mock-builder-orbit-progress {
   color: var(--color-caramel-deep);
