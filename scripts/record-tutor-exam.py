@@ -61,8 +61,8 @@ async def click_choice_b_distributive(page):
     try:
         box = await a.bounding_box()
         if box:
-            await glide(page, box["x"] + box["width"] / 2, box["y"] + box["height"] / 2, steps=14)
-            await page.wait_for_timeout(220)
+            await glide(page, box["x"] + box["width"] / 2, box["y"] + box["height"] / 2, steps=16)
+            await page.wait_for_timeout(300)
     except Exception:
         pass
 
@@ -73,7 +73,7 @@ async def click_choice_b_distributive(page):
         choice = page.locator("ul button, li button").filter(
             has_text=re.compile(r"Distributive law", re.I)
         ).first
-    await soft_click(page, choice, 580, steps=14)
+    await soft_click(page, choice, 700, steps=16)
     for _ in range(20):
         text = await body_text(page)
         if any(
@@ -88,18 +88,18 @@ async def click_choice_b_distributive(page):
 
 async def demo(page):
     # Brief beat on All topics (reference opener).
-    await page.wait_for_timeout(900)
+    await page.wait_for_timeout(1200)
 
-    await soft_click(page, page.get_by_role("button", name=re.compile(r"^Logic$")), 420, steps=14)
-    await page.wait_for_timeout(450)
+    await soft_click(page, page.get_by_role("button", name=re.compile(r"^Logic$")), 500, steps=16)
+    await page.wait_for_timeout(550)
 
     # Arm HIW pins just before Elementary algebra so Q1/Q2 match the reference.
     await page.evaluate(HIW_INIT)
     await soft_click(
         page,
         page.get_by_role("button", name=re.compile(r"^Elementary algebra$")),
-        420,
-        steps=14,
+        520,
+        steps=16,
     )
     # Ensure HIW pins applied after section change.
     text = await body_text(page)
@@ -109,7 +109,7 @@ async def demo(page):
         if "Multiplication distributes" not in text:
             raise SystemExit("HIW tutor Q1 not applied")
 
-    await page.wait_for_timeout(220)
+    await page.wait_for_timeout(320)
     await click_choice_b_distributive(page)
 
     await page.evaluate(
@@ -117,13 +117,13 @@ async def demo(page):
           document.scrollingElement?.scrollBy({ top: 160, behavior: 'smooth' });
         }"""
     )
-    await page.wait_for_timeout(320)
+    await page.wait_for_timeout(420)
 
     nxt = page.get_by_role("button", name=re.compile(r"Next question", re.I))
     await nxt.first.wait_for(state="visible", timeout=8000)
-    await soft_click(page, nxt.first, 480, steps=14)
+    await soft_click(page, nxt.first, 580, steps=16)
 
-    await page.wait_for_timeout(320)
+    await page.wait_for_timeout(400)
     text = await body_text(page)
     if "Difference of squares" in text:
         # Hover near option C then settle on D — matches reference pacing.
@@ -141,14 +141,14 @@ async def demo(page):
                         page,
                         box["x"] + box["width"] * 0.55,
                         box["y"] + box["height"] / 2,
-                        steps=12,
+                        steps=14,
                     )
-                    await page.wait_for_timeout(280)
+                    await page.wait_for_timeout(360)
             except Exception:
                 pass
-        await page.wait_for_timeout(420)
+        await page.wait_for_timeout(550)
     else:
-        await page.wait_for_timeout(600)
+        await page.wait_for_timeout(700)
 
 
 async def main():
@@ -185,7 +185,7 @@ async def main():
         css_h=H,
         dpr=DPR,
         fps=FPS,
-        target_dur=9.2,
+        target_dur=9.5,
     )
 
 

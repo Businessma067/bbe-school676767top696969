@@ -77,13 +77,13 @@ async def match_pair(page, concept: str, meaning_re: str, pause=380):
     right = page.locator('[data-match-side="right"]').filter(
         has_text=re.compile(meaning_re, re.I)
     ).first
-    await soft_click(page, left, 140, steps=12)
-    await soft_click(page, right, pause, steps=12)
+    await soft_click(page, left, 180, steps=14)
+    await soft_click(page, right, pause, steps=14)
 
 
 async def demo(page):
     # Hold on All topics opener (reference starts here before topic 2).
-    await page.wait_for_timeout(1200)
+    await page.wait_for_timeout(1500)
 
     # Arm HIW pins, then switch to topic 2 so startRound applies the reference board.
     await page.evaluate(HIW_INIT)
@@ -91,14 +91,14 @@ async def demo(page):
         "button",
         name=re.compile(r"2\.\s*Economic Systems", re.I),
     )
-    await soft_click(page, topic, 420, steps=14)
+    await soft_click(page, topic, 520, steps=16)
     terms = await left_terms(page)
     print(f"topic-2 board: {terms}", flush=True)
     if set(terms) != set(
         ["Market", "Oligopoly", "Market economy", "Cartel", "Marginal cost"]
     ):
         # Reshuffle once so startRound re-reads HIW pins.
-        await soft_click(page, page.get_by_role("button", name=re.compile(r"^Reshuffle$", re.I)), 350)
+        await soft_click(page, page.get_by_role("button", name=re.compile(r"^Reshuffle$", re.I)), 400)
         terms = await left_terms(page)
         print(f"after reshuffle: {terms}", flush=True)
         if set(terms) != set(
@@ -108,9 +108,9 @@ async def demo(page):
 
     for i, (concept, meaning_re) in enumerate(MATCH_STEPS):
         # Wrong attempt (i==2) pauses a touch longer so Accuracy 67% is readable.
-        pause = 420 if i == 2 else (280 if i < len(MATCH_STEPS) - 1 else 400)
+        pause = 560 if i == 2 else (360 if i < len(MATCH_STEPS) - 1 else 480)
         await match_pair(page, concept, meaning_re, pause=pause)
-    await page.wait_for_timeout(260)
+    await page.wait_for_timeout(350)
 
 
 async def main():
