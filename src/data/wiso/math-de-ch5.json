@@ -1141,13 +1141,13 @@
   },
   "MATH 5.61": {
     "title": "Klausuraufgaben – 1",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Ein Observatorium verkaufte 140 Eintritte zu \\$18 für Erwachsene und \\$10 für Kinder und nahm \\$2{,}048 ein. Sind die beiden Eintrittszahlen unbekannt, impliziert die Einnahme $85$ Erwachseneneintritte.",
-      "Ein Gewächshaus mischt eine unbekannte Masse $8\\%$-Stickstoffboden mit einer unbekannten Masse $20\\%$-Boden. Die $60$-kg-Mischung testet auf $13\\%$, und die Leitung behauptet, $25$ kg kämen aus dem $20\\%$-Vorrat.",
-      "Eine Geigenlehrerin und eine Schülerin haben zusammen $66$ Jahre, und die Lehrerin ist $24$ Jahre älter. Löst man die beiden gegenwärtigen Alter, ist die Lehrerin $48$ Jahre alt.",
-      "Eine Vermessungsdrohne fliegt mit Rückenwind mit $78$ km/h und gegen denselben Wind mit $54$ km/h. Behandelt man Stillluft- und Windgeschwindigkeit als Unbekannte, beträgt die Stillluftgeschwindigkeit $66$ km/h.",
-      "Eine Bäckerei stellt Muffin- und Törtchenbleche her. Ein Plan hat $x+y=46$ Bleche und verbraucht $2x+5y=158$ Kilogramm Mischung. Diese beiden Ressourcengrenzen ergeben $28$ Muffinbleche."
+      "An observatory sold 140 admissions, charging \\$18 für Erwachsene und \\$10 für Kinder und gesammelt \\$2{,}048. Wenn die beiden Eintrittszahlen unbekannt sind, impliziert die Quittung $85$ Zulassung von Erwachsenen.",
+      "Ein Gewächshaus kombiniert eine unbekannte Masse von $8\\%$ Stickstoffboden mit unbekannter Masse von $20\\%$ Boden. Die $60$ kg blend tests at $13\\%$und die Manageransprüche $25$ kg kam von der $20\\%$ stock.",
+      "Ein Geigenlehrer und ein Schüler haben ein kombiniertes Alter von $66$ Jahre und der Lehrer ist $24$ Jahre älter. Die Lösung der beiden gegenwärtigen Zeitalter macht den Lehrer $48$ Jahre alt.",
+      "Eine Umfragedrohne fliegt mit Rückenwind an $78$ km/h und in den gleichen Wind bei $54$ km/h. Behandlung von Stillluftgeschwindigkeit und Windgeschwindigkeit als unbekannt, seine Stillluftgeschwindigkeit ist $66$ km/h.",
+      "Eine Bäckerei stellt Muffin-Trays und Tart-Trays her. Ein Plan hat $x+y=46$ trays und uses $2x+5y=158$ Kilogramm Mischung. Diese beiden Ressourcenlimits geben $28$ muffin trays."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=140,\\quad 18x+10y=2048\n$$\n\n$$\n1\\cdot 10 = 10,\\quad 1\\cdot 18 = 18\n$$\n\n$$\n\\Delta = 10 - 18 = -8\n$$\n\n$$\n140\\cdot 10 = 1400,\\quad 1\\cdot 2048 = 2048,\\quad 1400 - 2048 = -648\n$$\n\n$$\nx = \\frac{-648}{-8} = 81\n$$\n\n$$\n1\\cdot 2048 = 2048,\\quad 140\\cdot 18 = 2520,\\quad 2048 - 2520 = -472\n$$\n\n$$\ny = \\frac{-472}{-8} = 59\n$$\n\nDas System gibt $81$ für die Zulassung von Erwachsenen, nicht $85$.\n\nDie Aussage ist falsch.",
@@ -1160,13 +1160,13 @@
   },
   "MATH 5.62": {
     "title": "Klausuraufgaben – 2",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Ein Kühlsystem braucht $50$ Liter nur aus $30\\%$- und $70\\%$-Frostschutzmittel. Um auf $46\\%$ zu kommen, muss die Mechanikerin $20$ Liter der stärkeren Flüssigkeit einfüllen.",
-      "Vor acht Jahren war eine Architektin dreimal so alt wie ein Praktikant damals; heute addieren sich ihre Alter zu $72$. Diese Bedingungen setzen das aktuelle Alter der Architektin auf $46$ Jahre.",
-      "Zwei Etikettendrucker produzieren zusammen $92$ Etiketten pro Minute; der neuere produziert jede Minute $18$ mehr als der ältere. Die Rate des neueren Druckers beträgt $55$ Etiketten/min.",
-      "Eine Gießerei plant Bronze- und Stahlchargen. Ofenzeit ergibt $3x+2y=94$, Arbeitszeit $x+4y=88$. Der Plan enthält $15$ Bronzechargen.",
-      "Bei einem Laternenfestival waren 96 Wochenendpässe entweder VIP zu \\$45 oder regulär zu \\$27. Die Einnahmen erreichten \\$3{,}312, daher sagt die Organisation, $40$ seien VIP-Pässe gewesen."
+      "Ein Kühlsystem braucht $50$ nur aus Litern $30\\%$ und $70\\%$ Frostschutzmittel. Zum Abschluss: $46\\%$Der Mechaniker muss gießen $20$ Liter der stärkeren Flüssigkeit.",
+      "Vor acht Jahren war ein Architekt dreimal so alt wie ein Praktikant; heute ist ihr Alter insgesamt $72$. Diese Bedingungen setzen das aktuelle Alter des Architekten auf $46$ Jahre.",
+      "Zwei Etikettendrucker produzieren zusammen $92$ Etiketten pro Minute; die neuere produziert $18$ Mehr als der Ältere pro Minute. Die Rate des neueren Druckers ist $55$ labels/min.",
+      "Eine Gießerei plant Bronze- und Stahlchargen. Ofenzeit gibt $3x+2y=94$, während Arbeit gibt $x+4y=88$. Der Zeitplan enthält $15$ bronze batches.",
+      "Bei einem Laternenfestival waren 96 Wochenendpässe entweder VIP bei \\$45 or regular at \\$27. Erreichte Einnahmen \\$3{,}312, so sagt der Organisator $40$ Es waren VIP-Pässe."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=50,\\quad 70x+30y=2300\n$$\n\n$$\n1\\cdot 30 = 30,\\quad 1\\cdot 70 = 70\n$$\n\n$$\n\\Delta = 30 - 70 = -40\n$$\n\n$$\n50\\cdot 30 = 1500,\\quad 1\\cdot 2300 = 2300,\\quad 1500 - 2300 = -800\n$$\n\n$$\nx = \\frac{-800}{-40} = 20\n$$\n\n$$\n1\\cdot 2300 = 2300,\\quad 50\\cdot 70 = 3500,\\quad 2300 - 3500 = -1200\n$$\n\n$$\ny = \\frac{-1200}{-40} = 30\n$$\n\nDas System gibt $20$ Liter für Liter 70 Prozent Frostschutzmittel, genau wie behauptet.\n\nDie Aussage ist wahr.",
@@ -1179,13 +1179,13 @@
   },
   "MATH 5.63": {
     "title": "Klausuraufgaben – 3",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Eine Großmutter ist jetzt viermal so alt wie ihre Enkelin. In $12$ Jahren wird sie dann doppelt so alt sein wie die Enkelin. Die Großmutter ist derzeit $30$ Jahre alt.",
-      "Zwei Radfahrer fahren drei Stunden in entgegengesetzte Richtungen und entfernen sich um $330$ km. Eine/r fährt $14$ km/h schneller als die/der andere. Die langsamere Geschwindigkeit beträgt $48$ km/h.",
-      "Eine Textilaufsicht schreibt $2x+6y=48$ und $x+3y=24$ für Hemden- und Jackenläufe. Die beiden Aufzeichnungen beschreiben ein System ohne Lösung.",
-      "Eine Fähre beförderte 85 bezahlte Fahrzeuge: Autos kosten \\$24 und Motorräder \\$14. Das Manifest über \\$1{,}770 würde bei gemeinsamer Lösung der beiden Fahrzeugzahlen $58$ Autotarife erfordern.",
-      "Eine Rösterei stellt eine $40$-kg-Mischung aus Bohnen zu \\$12 und \\$21 pro Kilogramm her. Die gewünschten Durchschnittskosten sind \\$15.60, also müssen $21$ kg die Premium-Bohnen sein."
+      "Eine Großmutter ist jetzt viermal so alt wie ihre Enkelin. In $12$ Jahre wird sie dann doppelt so alt sein wie die Enkelin. Die Großmutter ist derzeit $30$ Jahre.",
+      "Zwei Radfahrer fahren in entgegengesetzte Richtungen für drei Stunden und getrennt von $330$ km. Eine Fahrt $14$ km/h schneller als der andere. Die langsamere Geschwindigkeit ist $48$ km/h.",
+      "A textile supervisor writes $2x+6y=48$ und $x+3y=24$ für Hemd und Jacke läuft. Die beiden Aufzeichnungen beschreiben ein System ohne Lösung.",
+      "Eine Fähre beförderte 85 bezahlte Fahrzeuge: Autos kosten \\$24 und Motorräder kosten \\$14. \\$1{,}770 Manifest würde erfordern $58$ Autopreise, wenn die beiden Fahrzeugzählungen zusammen gelöst werden.",
+      "A roaster builds a $40$ kg Mischung aus Bohnen Kosten \\$12 und \\$21 je Kilogramm. Die gewünschten Durchschnittskosten sind \\$15.60, so $21$ kg müssen die Premiumbohnen sein."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x-4y=0,\\quad 1x-2y=12\n$$\n\n$$\n1\\cdot (-2) = -2,\\quad (-4)\\cdot 1 = -4\n$$\n\n$$\n\\Delta = -2 - (-4) = 2\n$$\n\n$$\n0\\cdot (-2) = 0,\\quad (-4)\\cdot 12 = -48,\\quad 0 - (-48) = 48\n$$\n\n$$\nx = \\frac{48}{2} = 24\n$$\n\n$$\n1\\cdot 12 = 12,\\quad 0\\cdot 1 = 0,\\quad 12 - 0 = 12\n$$\n\n$$\ny = \\frac{12}{2} = 6\n$$\n\nDas System gibt $24$ Jahre für das gegenwärtige Alter der Großmutter, nicht $30$ Jahre.\n\nDie Aussage ist falsch.",
@@ -1198,13 +1198,13 @@
   },
   "MATH 5.64": {
     "title": "Klausuraufgaben – 4",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Eine Flussfähre legt $84$ km flussabwärts in drei Stunden und $48$ km flussaufwärts in drei Stunden zurück. Sind Boots- und Strömungsgeschwindigkeit die beiden Unbekannten, beträgt die Strömung $6$ km/h.",
-      "Ein Ökologie-Team packt Fluss- und Waldproben-Kits. Gewicht erfordert $4x+3y=87$ und Flaschenzahl $2x+5y=89$. Die Anzahl der Fluss-Kits beträgt $15$.",
-      "Ein Archiv druckte 230 Seiten für einen Kunden. Farbseiten kosten \\$0.65, Schwarzweißseiten \\$0.15, und die Rechnung betrug \\$69.50. Die Anzahl der Farbseiten war $70$.",
-      "Eine Erzsendung wird aus $18\\%$- und $42\\%$-Kupfererz zusammengestellt. Eine $75$-Tonnen-Sendung mit $26\\%$ Gehalt enthält $19$ Tonnen des reicheren Erzes.",
-      "Eine Kuratorin war $30$, als eine Assistentin $12$ war. Ihre aktuellen Alter addieren sich zu $74$, und der Altersunterschied hat sich nicht geändert. Die Kuratorin ist jetzt $46$ Jahre alt."
+      "A river ferry covers $84$ km flussabwärts in drei Stunden und $48$ km vorgelagert in drei Stunden. Wenn Bootsgeschwindigkeit und aktuelle Geschwindigkeit die beiden Unbekannten sind, läuft der Strom bei $6$ km/h.",
+      "An ecology team packs river und forest sample kits. Weight requires $4x+3y=87$ und Flaschenzahl erfordert $2x+5y=89$Die River-Kit-Zählung ist $15$.",
+      "Ein Archiv druckte 230 Seiten für einen Kunden. Kosten für Farbseiten \\$0,65 Schwarz-Weiß-Seiten kosten \\$0,15 und die Rechnung wurde \\$69.50. Die Anzahl der Farbseiten war $70$.",
+      "Eine Erzsendung wird aus $18\\%$ und $42\\%$ copper ore. A $75$-ton shipment assaying $26\\%$ contains $19$ Tonnen des reicheren Erzes.",
+      "Ein Kurator war $30$ Wenn ein Assistent $12$Ihr aktuelles Alter fügt hinzu $74$Ihr Altersunterschied hat sich nicht geändert. Der Kurator ist jetzt $46$ Jahre."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=28,\\quad 1x-1y=16\n$$\n\n$$\n1\\cdot (-1) = -1,\\quad 1\\cdot 1 = 1\n$$\n\n$$\n\\Delta = -1 - 1 = -2\n$$\n\n$$\n28\\cdot (-1) = -28,\\quad 1\\cdot 16 = 16,\\quad -28 - 16 = -44\n$$\n\n$$\nx = \\frac{-44}{-2} = 22\n$$\n\n$$\n1\\cdot 16 = 16,\\quad 28\\cdot 1 = 28,\\quad 16 - 28 = -12\n$$\n\n$$\ny = \\frac{-12}{-2} = 6\n$$\n\nDas System gibt $6$ km/h für die aktuelle Geschwindigkeit, genau wie beansprucht.\n\nDie Aussage ist wahr.",
@@ -1217,13 +1217,13 @@
   },
   "MATH 5.65": {
     "title": "Klausuraufgaben – 5",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Ein Versandmanifest sagt $3x+9y=75$ Containereinheiten, aber ein skalierter Inspektionsbericht sagt $x+3y=28$. Das resultierende Containerzahl-System hat unendlich viele Lösungen.",
-      "Eine Skihütte vermietete 72 Ausrüstungssets. Ganztag-Sets brachten je \\$58 und Halbtag-Sets je \\$34, bei Gesamteinnahmen von \\$3{,}312. Das erzwingt $36$ Ganztag-Vermietungen.",
-      "Eine Klinik verdünnt $12\\%$-Kochsalzlösung mit $3\\%$-Kochsalzlösung und verwendet nur diese beiden Vorräte. Für $30$ Liter bei $6\\%$ beträgt der $12\\%$-Anteil $13$ Liter.",
-      "In fünf Jahren wird eine Pilotin $11$ Jahre älter sein als das Doppelte des dannigen Alters eines Kadetten. Ihre heutigen Alter addieren sich zu $55$. Das gegenwärtige Alter der Pilotin beträgt $42$ Jahre.",
-      "Zwei Montage-Crews fertigen zusammen $46$ Paneele pro Tag, und Crew A fertigt $8$ mehr als Crew B. Die Tagesrate von Crew A beträgt $31$ Paneele/Tag."
+      "A shipping manifest says $3x+9y=75$ container units, but a scaled inspection record says $x+3y=28$Das resultierende Container-Count-System hat unendlich viele Lösungen.",
+      "Eine Skihütte mietete 72 Ausrüstungssets. Ganztägige Sets mitgebracht \\$58 jeweils und Halbtagessets \\$jeweils 34 für Gesamteinnahmen von \\$3{,}312. Diese Kräfte $36$ Ganztagesmieten.",
+      "A clinic dilutes $12\\%$ Salzlösung mit $3\\%$ Salzlösung, wobei nur diese beiden Bestände verwendet werden. für $30$ liters at $6\\%$, $12\\%$ Teil ist $13$ liters.",
+      "In fünf Jahren wird ein Pilot $11$ Jahre älter als zweimal das zukünftige Alter eines Kadetten. Ihr Alter heute summiert sich auf $55$Das gegenwärtige Alter des Piloten ist $42$ Jahre.",
+      "Zwei Einbaupersonal komplett $46$ Panels pro Tag zusammen und Crew A komplettiert $8$ mehr als Crew B. Die tägliche Rate von Crew A ist $31$ Panels/Tag."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\nVergleichen Sie beide Koeffizienten und Konstanten, um zu bestimmen, wie viele Schnittpunkte die beiden Einschränkungen haben.\n\n$$\n3x+9y=75,\\quad 1x+3y=28\n$$\n\n$$\n3\\cdot 3 = 9,\\quad 9\\cdot 1 = 9\n$$\n\n$$\n\\Delta = 9 - 9 = 0\n$$\n\n$$\n(1,3)=0.333333(3,9)\n$$\n\n$$\n28\\ne 0.333333(75)=25\n$$\n\nDie Algebra gibt keine Lösung, nicht unendlich viele Lösungen.\n\nDie Aussage ist falsch.",
@@ -1236,13 +1236,13 @@
   },
   "MATH 5.66": {
     "title": "Klausuraufgaben – 6",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Ein Nachtmarkt bereitete 150 Obst-/Gemüsekörbe vor, große zu \\$22 und kleine zu \\$13. Der Verkauf aller Körbe ergab \\$2{,}535. Der Verkaufsmix enthält $65$ große Körbe.",
-      "Eine Wandmalerin mischt $25\\%$-Pigmentfarbe und $55\\%$-Pigmentfarbe zu $24$ Litern mit Pigmentanteil $37{,}5\\%$. Die stärkere Farbe trägt $8$ Liter bei.",
-      "Eine Produzentin ist sechs Jahre jünger als das Dreifache des Alters einer Darstellerin, und zusammen sind sie $62$ Jahre alt. Das Alter der Darstellerin beträgt $17$ Jahre.",
-      "Die Bodengeschwindigkeit eines Frachtflugzeugs beträgt $610$ km/h mit Rückenwind und $530$ km/h dagegen. Die Geschwindigkeit in Stillluft beträgt $560$ km/h.",
-      "Eine Schule stellt Chemie- und Physik-Kits zusammen. Die Anzahl ist $x+y=70$, und der Komponentenverbrauch ist $7x+4y=370$. Daher werden $30$ Chemie-Kits zusammengestellt."
+      "A night market prepared 150 produce baskets, large ones priced at \\$22 und small ones at \\$13. Verkauf aller Körbe \\$2{,}535. Der Verkaufsmix enthält $65$ large baskets.",
+      "A muralist mixes $25\\%$ Pigmentfarbe und $55\\%$ Pigmentfarbe in $24$ Liter, deren Pigmentanteil $37.5\\%$Die stärkere Farbe trägt dazu bei $8$ liters.",
+      "Ein Produzent ist sechs Jahre jünger als dreimal so alt wie ein Performer, während er zusammen $62$ Jahre alt. Das Alter des Darstellers ist $17$ Jahre.",
+      "Die Bodengeschwindigkeit eines Frachtflugzeugs ist $610$ km/h bei Rückenwind und $530$ km/h dagegen. Die Geschwindigkeit des Flugzeugs in stiller Luft ist $560$ km/h.",
+      "Eine Schule montiert Chemie und Physik-Kits. Die Zählung ist $x+y=70$und Komponenteneinsatz ist $7x+4y=370$. Daher $30$ Chemie-Kits werden zusammengebaut."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=150,\\quad 22x+13y=2535\n$$\n\n$$\n1\\cdot 13 = 13,\\quad 1\\cdot 22 = 22\n$$\n\n$$\n\\Delta = 13 - 22 = -9\n$$\n\n$$\n150\\cdot 13 = 1950,\\quad 1\\cdot 2535 = 2535,\\quad 1950 - 2535 = -585\n$$\n\n$$\nx = \\frac{-585}{-9} = 65\n$$\n\n$$\n1\\cdot 2535 = 2535,\\quad 150\\cdot 22 = 3300,\\quad 2535 - 3300 = -765\n$$\n\n$$\ny = \\frac{-765}{-9} = 85\n$$\n\nDas System gibt $65$ für große Körbe, genau wie beansprucht.\n\nDie Aussage ist wahr.",
@@ -1255,13 +1255,13 @@
   },
   "MATH 5.67": {
     "title": "Klausuraufgaben – 7",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Eine Raffinerie mischt B10- und B50-Biodiesel. Wenn $80$ Tausend Liter insgesamt B25 sein müssen, sollten $35$ Liter aus B50 entnommen werden.",
-      "Vor zehn Jahren war das Alter einer Wissenschaftlerin das Doppelte des Alters einer Technikerin; in zehn Jahren werden ihre Alter sich zu $94$ addieren. Die Wissenschaftlerin ist jetzt $46$ Jahre alt.",
-      "Zwei Pumpen füllen parallel $150$ Liter pro Minute. Die Hauptpumpe fördert das Doppelte der Backup-Rate plus $6$ Liter pro Minute. Die Rate der Backup-Pumpe beträgt $51$ Liter/min.",
-      "Eine Obstplantage pflanzt Apfel- und Birnenreihen. Flächenbedingungen lauten $5x+3y=144$ und Bewässerungsbedingungen $2x+4y=108$. Die Apfelreihen-Lösung ist $18$.",
-      "Ein Wissenschaftsmuseum gab 110 Armbänder aus, teils mit VR zu \\$31 und der Rest nur Ausstellung zu \\$19. Die Kasse nahm \\$2{,}606 ein, was bedeutet, dass $50$ VR-Armbänder ausgegeben wurden."
+      "A refinery combines B10 und B50 biodiesel. If $80$ Tausend Liter müssen insgesamt B25 sein, dann $35$ Liter sollten aus B50 entnommen werden.",
+      "Vor zehn Jahren war das Alter eines Wissenschaftlers doppelt so alt wie das eines Technikers; in zehn Jahren wird sich ihr Alter auf $94$Der Wissenschaftler ist jetzt $46$ Jahre.",
+      "Zwei Pumpen füllen $150$ Liter pro Minute parallel. Die Hauptpumpe bewegt sich doppelt so hoch wie die Backup-Rate plus $6$ Liter pro Minute. Die Rate der Reservepumpe ist $51$ liters/min.",
+      "An orchard plants apple und pear rows. Land constraints read $5x+3y=144$ und Bewässerungsbeschränkungen $2x+4y=108$Die Apfelreihenlösung ist $18$.",
+      "Ein Wissenschaftsmuseum ausgestellt 110 Armbänder, einige einschließlich VR für \\$31 und der Rest nur für \\$19. Der Schreibtisch nahm \\$2{,}606, was bedeutet, $50$ VR-Armbänder wurden ausgestellt."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=80,\\quad 50x+10y=2000\n$$\n\n$$\n1\\cdot 10 = 10,\\quad 1\\cdot 50 = 50\n$$\n\n$$\n\\Delta = 10 - 50 = -40\n$$\n\n$$\n80\\cdot 10 = 800,\\quad 1\\cdot 2000 = 2000,\\quad 800 - 2000 = -1200\n$$\n\n$$\nx = \\frac{-1200}{-40} = 30\n$$\n\n$$\n1\\cdot 2000 = 2000,\\quad 80\\cdot 50 = 4000,\\quad 2000 - 4000 = -2000\n$$\n\n$$\ny = \\frac{-2000}{-40} = 50\n$$\n\nDas System gibt $30$ Liter für tausend Liter B50, nicht $35$ liters.\n\nDie Aussage ist falsch.",
@@ -1274,13 +1274,13 @@
   },
   "MATH 5.68": {
     "title": "Klausuraufgaben – 8",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
     "statements": [
-      "Ein Elternteil ist $27$ Jahre älter als ein Kind. Nach neun Jahren wird das Alter des Elternteils das $\\frac{5}{2}$-fache des kindlichen Alters dann sein. Das aktuelle Alter des Kindes beträgt $9$ Jahre.",
-      "Zwei Kuriere starten $24$ km auseinander und fahren aufeinander zu; sie treffen sich nach $0{,}2$ Stunde. Die/der schnellere fährt $20$ km/h schneller, also fährt die/der langsamere mit $45$ km/h.",
-      "Ein Krankenhaus besetzt examinierte Pflegekräfte und Hilfskräfte in einer Schicht. Kopfzahl ergibt $x+y=52$ und Qualifikationseinheiten $3x+y=100$. Die Schicht nutzt $24$ examinierte Pflegekräfte.",
-      "Ein Nachtzug buchte 64 Liegeplätze zu \\$120 und Sitzplätze zu \\$68 und nahm von diesen 64 Reisenden \\$5{,}704 ein. Die Lösung der beiden Buchungszahlen ergibt $22$ Liegeplätze.",
-      "Eine Futtermühle verwendet $16\\%$- und $28\\%$-Proteinmehle für $90$ Tonnen bei $22\\%$ Protein. Das proteinreiche Mehl muss $45$ Tonnen liefern."
+      "Ein Elternteil ist $27$ Jahre älter als ein Kind. Nach neun Jahren ist das Alter des Elternteils $\\frac{5}{2}$-mal so groß wie das Alter des Kindes dann. Das derzeitige Alter des Kindes beträgt $9$ Jahre.",
+      "Zwei Kuriere starten $24$ km voneinander entfernt und fahren aufeinander zu; sie treffen sich nach $0{,}2$ Stunden. Der schnellere Kurier ist $20$ km/h schneller, also fährt der langsamere mit $45$ km/h.",
+      "Ein Krankenhaus besetzt eine Schicht mit examinierten Pflegekräften und Hilfskräften. Die Kopfzahl liefert $x+y=52$, die Qualifikationseinheiten $3x+y=100$. Die Schicht beschäftigt $24$ examinierte Pflegekräfte.",
+      "Ein Nachtzug buchte $64$ Plätze zu $\\$120$ (Schlafabteil) und zu $\\$68$ (Großraum), insgesamt $\\$5{,}704$ von diesen $64$ Reisenden. Die Lösung der beiden Buchungszahlen liefert $22$ Schlafabteilplätze.",
+      "Eine Futtermühle mischt Mahlzeiten mit $16\\%$ und $28\\%$ Protein zu $90$ Tonnen mit $22\\%$ Protein. Die proteinreiche Mahlzeit muss $45$ Tonnen liefern."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreibe beide Bedingungen als lineare Gleichungen in den beiden Unbekannten und löse das System nach der in der Behauptung genannten Größe.\n\n$$\n1x-1y=27,\\quad 2x-5y=27\n$$\n\n$$\n1\\cdot (-5) = -5,\\quad (-1)\\cdot 2 = -2\n$$\n\n$$\n\\Delta = -5 - (-2) = -3\n$$\n\n$$\n27\\cdot (-5) = -135,\\quad (-1)\\cdot 27 = -27,\\quad -135 - (-27) = -108\n$$\n\n$$\nx = \\frac{-108}{-3} = 36\n$$\n\n$$\n1\\cdot 27 = 27,\\quad 27\\cdot 2 = 54,\\quad 27 - 54 = -27\n$$\n\n$$\ny = \\frac{-27}{-3} = 9\n$$\n\nDas System liefert $9$ Jahre für das derzeitige Kindesalter, genau wie behauptet.\n\nDie Aussage ist wahr.",
@@ -1293,13 +1293,13 @@
   },
   "MATH 5.69": {
     "title": "Klausuraufgaben – 9",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Ein Paar Erntemaschinen verarbeitet $84$ Reihen pro Stunde. Die Rate der größeren ist genau das Doppelte der kleineren. Die größere Maschine schafft $63$ Reihen/Stunde.",
-      "Für Bühnenplattformen und Lichttürme erfasst ein Eventplan $4x+2y=60$ und $6x+3y=90$. Diese beiden Nebenbedingungen ergeben unendlich viele Lösungen.",
-      "Eine Wohltätigkeitsorganisation druckte 200 Los-Tickets, Gold zu \\$25 und Silber zu \\$8. Die ausverkaufte Ziehung brachte \\$2{,}450. Genau $55$ der Tickets müssen Gold gewesen sein.",
-      "Eine Juwelierin schmilzt $40$ Gramm einer $30\\%$-Goldlegierung mit einer reicheren $75\\%$-Legierung ohne Reingold. Eine finale $48\\%$-Legierung erfordert $16$ Gramm des reicheren Materials.",
-      "Die Alter zweier Geschwister unterscheiden sich um $7$ Jahre. Vor vier Jahren war das ältere Geschwister $\\frac{3}{2}$-mal so alt wie das jüngere damals. Das ältere Geschwister ist jetzt $28$ Jahre alt."
+      "Ein Paar Harvesterprozesse $84$ Zeilen pro Stunde. Die größere Ernterate ist genau doppelt so hoch wie die der kleineren. Die größeren Maschinengriffe $63$ Zeilen/Stunde.",
+      "Für Bühnenbühnen und Lichttürme, ein Veranstaltungsplan Aufzeichnungen $4x+2y=60$ und $6x+3y=90$Diese beiden Zwänge ergeben unendlich viele Lösungen.",
+      "Eine wohltätigkeitsorganisation druckte 200 verlosungskarten, gold bei. \\$25 und silver at \\$8. Die ausverkaufte Ziehung wurde aufgehoben \\$2{,}450. Genau $55$ Die Tickets müssen Gold sein.",
+      "A jeweler melts $40$ Gramm $30\\%$ Goldlegierung mit einem reicheren $75\\%$ Legierung, ohne reines Gold. A $48\\%$ Endlegierung erfordert $16$ Gramm des reicheren Materials.",
+      "Das Alter von zwei Geschwistern unterscheidet sich durch $7$ Jahre. Vor vier Jahren waren die älteren Geschwister $\\frac32$ Mal das Alter der jüngeren Geschwister dann. Die älteren Geschwister sind jetzt $28$ Jahre."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=84,\\quad 1x-2y=0\n$$\n\n$$\n1\\cdot (-2) = -2,\\quad 1\\cdot 1 = 1\n$$\n\n$$\n\\Delta = -2 - 1 = -3\n$$\n\n$$\n84\\cdot (-2) = -168,\\quad 1\\cdot 0 = 0,\\quad -168 - 0 = -168\n$$\n\n$$\nx = \\frac{-168}{-3} = 56\n$$\n\n$$\n1\\cdot 0 = 0,\\quad 84\\cdot 1 = 84,\\quad 0 - 84 = -84\n$$\n\n$$\ny = \\frac{-84}{-3} = 28\n$$\n\nDas System gibt $56$ Reihen/Stunde für große Ernterate, nicht $63$ Zeilen/Stunde.\n\nDie Aussage ist falsch.",
@@ -1312,13 +1312,13 @@
   },
   "MATH 5.70": {
     "title": "Klausuraufgaben – 10",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Eine Telekom-Bestellung kombiniert Glasfaser- und Funkknoten. Budgeteinheiten erfüllen $6x+5y=137$, Technikerstunden $2x+3y=63$. Die Glasfaserknoten-Anzahl beträgt $12$.",
-      "Ein Jachthafen erfasste 90 Liegeplatz-Vermietungen, Übernachtung zu \\$75 und Tagesmiete zu \\$35. Die Kasse zeigte \\$4{,}350, also beträgt die unbekannte Übernachtungszahl $27$.",
-      "Eine Hygiene-Crew hat $20\\%$- und $80\\%$-Alkohollösungen. Ihre $45$-Liter-Desinfektionscharge muss $60\\%$ Alkohol sein, was $30$ Liter der $80\\%$-Lösung zuweist.",
-      "Das Alter einer Regisseurin plus das Doppelte des Alters einer Schauspielerin ist $96$, während das Doppelte des Regisseurinnenalters minus das Schauspielerinnenalter $57$ ist. Die Regisseurin ist $36$ Jahre alt.",
-      "Zwei Züge nähern sich einander mit kombiniert $170$ km/h; der ostwärts fahrende ist $30$ km/h schneller. Der westwärts fahrende Zug bewegt sich mit $70$ km/h."
+      "Ein Telekommunikationsauftrag kombiniert Fiber und Wireless Nodes. Haushaltseinheiten erfüllen $6x+5y=137$ und technician hours satisfy $2x+3y=63$Die Faserknotenzahl ist $12$.",
+      "A marina logged 90 slip rentals, overnight at \\$75 und daytime at \\$35. Das Register zeigte \\$4{,}350, so dass die unbekannte Übernachtzählung $27$.",
+      "Eine Sanitärmannschaft hat $20\\%$ und $80\\%$ alcohol solutions. Its $45$-Liter Desinfektionsansatz muss $60\\%$ Alkohol, der zuordnet $30$ Liter an den $80\\%$ Lösung.",
+      "Alter eines Regisseurs plus doppelt so alt wie ein Schauspieler $96$, während das doppelte alter des regisseurs minus das alter des schauspielers ist. $57$Der Direktor ist $36$ Jahre alt.",
+      "Zwei Züge nähern sich einander an einem kombinierten $170$ km/h; der Ostzug ist $30$ km/h schneller. Der westwärts fahrende Zug fährt $70$ km/h."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n6x+5y=137,\\quad 2x+3y=63\n$$\n\n$$\n6\\cdot 3 = 18,\\quad 5\\cdot 2 = 10\n$$\n\n$$\n\\Delta = 18 - 10 = 8\n$$\n\n$$\n137\\cdot 3 = 411,\\quad 5\\cdot 63 = 315,\\quad 411 - 315 = 96\n$$\n\n$$\nx = \\frac{96}{8} = 12\n$$\n\n$$\n6\\cdot 63 = 378,\\quad 137\\cdot 2 = 274,\\quad 378 - 274 = 104\n$$\n\n$$\ny = \\frac{104}{8} = 13\n$$\n\nDas System gibt $12$ für Faserknoten, genau wie beansprucht.\n\nDie Aussage ist wahr.",
@@ -1331,13 +1331,13 @@
   },
   "MATH 5.71": {
     "title": "Klausuraufgaben – 11",
-    "context": "Bei einer Kino-Gala kauften 180 Gäste jeweils genau ein Ticket. Ein 3D-Ticket kostete \\$16 und ein Standardticket \\$11. Die Kasse nahm \\$2{,}430 ein, ohne Rabatte, Rückerstattungen oder Gratis-Eintritte. Es sei $x$ die Anzahl der 3D-Tickets und $y$ die der Standardtickets. Die Geschäftsführung löst das zweigliedrige Kassensystem einmal, bevor sie die fünf Behauptungen prüft.",
+    "context": "Bei einer Kinogala kauften jeweils 180 Gäste genau ein Ticket. 3D Ticket Kosten \\$16 und ein Standardticket kosten \\$11. Die Kassenbuchkasse \\$2{,}430, ohne Rabatte, Rückerstattungen oder kostenlose Eintritte. lassen $x$ die Anzahl der 3D-Tickets und $y$ Anzahl der Standardtickets. Der Manager möchte, dass ein gelöstes Ticket-Ledger für alle Schecks verwendet wird.",
     "statements": [
-      "Die Zählgleichung lautet $x+y=180$.",
-      "Die Einnahmengleichung lautet $16x+11y=2430$.",
+      "Die Zählgleichung ist $x+y=180$.",
+      "Die Einnahmengleichung ist $16x+11y=2430$.",
       "Die Gala verkaufte 99 3D-Tickets.",
       "Die beiden Ticketzahlen unterscheiden sich um 10.",
-      "3D-Tickets trugen \\$1{,}600 zu den Einnahmen bei."
+      "3D tickets supplied \\$1{,}600 Einnahmen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDie Patron Total übersetzt direkt in eine Zählgleichung. mit$x$ für 3D Tickets und $y$ für Standardtickets,\n\n$$x + y = 180$$\n\nDie Übersicht hat dies bereits als Gleichung (1) aufgezeichnet. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1350,13 +1350,13 @@
   },
   "MATH 5.72": {
     "title": "Klausuraufgaben – 12",
-    "context": "Eine Saftbar muss 70 Liter nur aus einem $35\\%$-Mangogetränk und einem $10\\%$-Mangogetränk herstellen. Die fertige Mischung muss $25\\%$ Mango sein, und es wird kein Wasser oder andere Zutat zugesetzt. Es sei $x$ die Liter des stärkeren und $y$ die des schwächeren Getränks. Das Chargenblatt muss Gesamtvolumen und Mangogehalt abstimmen, bevor eine Behauptung geprüft wird.",
+    "context": "Ein Saftriegel muss 70 Liter mit nur einem $35\\%$ mango drink und a $10\\%$ Mangogetränk. Die fertige Mischung muss $25\\%$ Mango und kein Wasser oder andere Zutat zugesetzt wird. lassen $x$ werden Liter des stärkeren Getränks und $y$ Liter des schwächeren Getränks. Das Chargenblatt muss den Gesamtvolumen- und Mangogehalt in Einklang bringen, bevor ein Aussage geprüft wird.",
     "statements": [
-      "Die Volumengleichung lautet $x+y=70$.",
-      "Die Mangogleichung lautet $35x+10y=1750$.",
-      "Die Charge verwendet 42 Liter des stärkeren Getränks.",
-      "Die Charge verwendet 30 Liter des schwächeren Getränks.",
-      "Die beiden Quellvolumina sind gleich."
+      "Die Volumengleichung ist $x+y=70$.",
+      "Die Mangogleichung ist $35x+10y=1750$.",
+      "Die Charge verwendet 42 Liter stärkeres Getränk.",
+      "Die Charge verwendet 30 Liter schwächeres Getränk.",
+      "Die beiden Quellenvolumina sind gleich."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nDas Gesamtvolumen ist die Summe der beiden Quellenbeträge:\n\n$$x + y = 70$$\n\nDie Übersicht hat diese Volumengleichung bereits aufgezeichnet. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1369,12 +1369,12 @@
   },
   "MATH 5.73": {
     "title": "Klausuraufgaben – 13",
-    "context": "Ein Hotel verwendet einen zweistelligen Zimmercode. Der Code plus die durch Umkehren seiner Ziffern gebildete Zahl ist 121, und die Zehnerziffer ist um 3 größer als die Einerziffer. Es sei $x$ die Zehner- und $y$ die Einerziffer; beide müssen Dezimalziffern sein und $x$ ist ungleich null. Die Rezeption löst das Ziffernsystem einmal, bevor sie Aussagen über den Code prüft.",
+    "context": "Ein Hotel verwendet einen zweistelligen Zimmercode. Der Code plus die Zahl, die durch Umkehren seiner Ziffern gebildet wird, ist 121 und die Zehnerziffer ist 3 größer als die Einheitenziffer. lassen $x$ die Zehnerstelle und $y$ die Einheiten sind einstellig; beide müssen Dezimalstellen sein und $x$ ist ungleich Null. Der Angestellte löst das Ziffernsystem einmal, bevor er eine Aussage über den Code überprüft.",
     "statements": [
-      "Die Ziffernsumme lautet $x+y=11$.",
-      "Die Zifferndifferenz lautet $x-y=4$.",
-      "Die Zehnerziffer ist 8.",
-      "Der Zimmercode ist 74.",
+      "Die Ziffernsumme ist $x+y=11$.",
+      "Die Zifferndifferenz ist $x-y=4$.",
+      "Die Zehnerstelle ist 8.",
+      "Die Zimmervorwahl ist 74.",
       "Der umgekehrte Code ist 48."
     ],
     "tactical_explanations": [
@@ -1388,13 +1388,13 @@
   },
   "MATH 5.74": {
     "title": "Klausuraufgaben – 14",
-    "context": "Zwei Montageroboter produzieren zusammen 108 Gehäuse pro Stunde. Roboter X produziert 12 Gehäuse pro Stunde mehr als Roboter Y, und beide Raten bleiben über die Stunde konstant. Es seien $x$ und $y$ die Stundenraten von X und Y. Die Produktionsingenieurin löst die kombinierte Rate und die Differenzbedingung einmal und nutzt diese Lösung für alle fünf Prüfungen.",
+    "context": "Zwei Montageroboter produzieren 108 Gehäuse pro Stunde, wenn sie zusammenlaufen. Roboter X produziert 12 mehr Gehäuse pro Stunde als Roboter Y und beide Raten bleiben über die Stunde konstant. lassen $x$ und $y$ sind die Stundensätze von X und Y. Der Produktionsingenieur löst die Combined-Rate- und Differenzbedingungen einmalig und nutzt diese Lösung dann für alle fünf Prüfungen.",
     "statements": [
-      "Die Ratengleichungen lauten $x+y=108$ und $x-y=12$.",
-      "Roboter X produziert 60 Gehäuse pro Stunde.",
+      "Die Ratengleichungen sind $x+y=108$ und $x-y=12$.",
+      "Robot X produziert 60 Gehäuse pro Stunde.",
       "Roboter Y produziert 48 Gehäuse pro Stunde.",
       "Roboter X ist doppelt so schnell wie Roboter Y.",
-      "In zwei Stunden produziert Roboter Y 108 Gehäuse."
+      "In zwei Stunden produziert der Roboter Y 108 Gehäuse."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nKombinierte Produktion und die angegebene Lücke übersetzen in\n\n$$x + y = 108$$\n\n$$x - y = 12$$\n\nDie Übersicht erfasste bereits beide Gleichungen. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1407,10 +1407,10 @@
   },
   "MATH 5.75": {
     "title": "Klausuraufgaben – 15",
-    "context": "Eine Zeitung modelliert kleine Anzeigen durch $x$ und große durch $y$. Ein Produktionsdatensatz ergibt $2x+5y=40$, ein zweiter $6x+15y=120$. Das Personal muss entscheiden, ob sich die beiden Geraden einmal schneiden, nie schneiden oder zusammenfallen, und dann mögliche nichtnegative ganzzahlige Pläne beschreiben. Beide Datensätze gelten als exakte Nebenbedingungen.",
+    "context": "A newspaper models small ads by $x$ und große Anzeigen von $y$. Ein Produktionsrekord ergibt $2x+5y=40$, während ein zweiter Rekord gibt $6x+15y=120$Das Personal muss entscheiden, ob sich die beiden Linien einmal treffen, nie treffen oder übereinstimmen, und dann mögliche nicht negative ganzzahlige Fahrpläne beschreiben. Beide Datensätze werden als exakte Einschränkungen behandelt.",
     "statements": [
-      "Die zweite Gleichung ist das Dreifache der ersten.",
-      "Das System hat unendlich viele reelle Lösungen.",
+      "Die zweite Gleichung ist dreimal die erste.",
+      "Das System hat unendlich viele reale Lösungen.",
       "Das System hat keine Lösung.",
       "$(x,y)=(10,5)$ erfüllt beide Gleichungen.",
       "Jede Lösung hat $x=20$."
@@ -1426,13 +1426,13 @@
   },
   "MATH 5.76": {
     "title": "Klausuraufgaben – 16",
-    "context": "Ein Flughafen-Kiosk gab in einer Schicht 160 Transitpässe aus. Expresspässe kosteten \\$21 und Lokalpässe \\$12, und die Kassensumme betrug \\$2{,}460. Keine Pässe waren gratis oder erstattet. Es sei $x$ die Anzahl Express- und $y$ die Anzahl Lokalpässe. Die Aufsicht löst das zweigliedrige Verkaufsjournal einmal, bevor sie die fünf Behauptungen prüft.",
+    "context": "Ein Flughafen-Kiosk ausgestellt 160 Transit-Pässe während einer Schicht. Expresspasskosten \\$Kosten für 21 und lokale Pässe \\$12 und die Registersumme war \\$2{,}460. Keine Pässe wurden kostenlos oder erstattet. lassen $x$ Expresspässe zählen und $y$ lokale Pässe zählen. Der Supervisor löst das Verkaufsbuch mit zwei Gleichungen einmal, bevor er die fünf Aussagen testet.",
     "statements": [
-      "Die Verkaufsgleichungen lauten $x+y=160$ und $21x+12y=2460$.",
+      "Die Verkaufsgleichungen sind $x+y=160$ und $21x+12y=2460$.",
       "Der Kiosk verkaufte 60 Expresspässe.",
-      "Der Kiosk verkaufte 100 Lokalpässe.",
-      "Die Einnahmen aus Expresspässen betrugen \\$1{,}200.",
-      "Die Einnahmen aus Lokalpässen überstiegen die aus Expresspässen."
+      "Der Kiosk verkaufte 100 lokale Pässe.",
+      "Express-Pass-Einnahmen wurden \\$1{,}200.",
+      "Die Einnahmen aus dem Gebietsfremdkapital überstiegen die Einnahmen aus dem Verkauf von Immobilien."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nPass counts und register total übersetzen in\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\nDie Übersicht erfasste bereits beide Verkaufsgleichungen. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1445,13 +1445,13 @@
   },
   "MATH 5.77": {
     "title": "Klausuraufgaben – 17",
-    "context": "Ein Teehändler stellt eine 50-kg-Mischung aus Tee zu \\$18 pro Kilogramm und Tee zu \\$30 pro Kilogramm her. Die Zutatenkosten müssen im Schnitt \\$22.80 pro Kilogramm betragen, ohne anderen Tee oder Zusatzkosten in der Mischung. Es sei $x$ die Kilogramm Premium-Tee und $y$ die Standard-Tee. Der Händler löst für jede Behauptung ein Masse-Kosten-System.",
+    "context": "Ein Teehändler macht eine 50 kg Mischung mit Tee, der kostet \\$18 pro Kilogramm und Tee, der kostet \\$30 je Kilogramm. Die Zutatenkosten müssen durchschnittlich \\$22,80 pro Kilogramm, ohne anderen Tee oder zusätzliche Kosten in der Mischung. lassen $x$ Kilogramm Premium-Tee und $y$ Kilogramm Standardtee. Der Händler löst ein Massenkostensystem für jeden Aussage.",
     "statements": [
-      "Die Massengleichung lautet $x+y=50$.",
-      "Die Kostengleichung lautet $30x+18y=1150$.",
+      "Die Massengleichung ist $x+y=50$.",
+      "Die Kostengleichung ist $30x+18y=1150$.",
       "Die Mischung verwendet 20 kg Premium-Tee.",
-      "Premium-Tee trägt \\$780 zu den Kosten bei.",
-      "Standard-Tee trägt 32 kg bei."
+      "Premium tea contributes \\$780 Kosten.",
+      "Standard tea contributes 32 kg."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDie Gesamtmasse ist die Summe der beiden Klassen:\n\n$$x + y = 50$$\n\nDie Übersicht hat bereits diese Massengleichung aufgezeichnet. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1464,13 +1464,13 @@
   },
   "MATH 5.78": {
     "title": "Klausuraufgaben – 18",
-    "context": "Ein zweistelliges Wettbewerbsabzeichen hat Ziffern, die zwei gewichteten Regeln genügen. Viermal die Zehnerziffer minus die Einerziffer ergibt 29, während zweimal die Zehnerziffer plus die Einerziffer 19 ergibt. Es sei $x$ die Zehner- und $y$ die Einerziffer, beide auf Dezimalziffern beschränkt und $x$ ungleich null. Die Registratur löst dieses eine Ziffernsystem, bevor sie Abzeichen-Behauptungen prüft.",
+    "context": "Ein zweistelliges Wettbewerbsabzeichen hat Ziffern, die zwei gewichteten Regeln entsprechen. Viermal die Zehnerziffer minus die Einheitenziffer ist 29, während zweimal die Zehnerziffer plus die Einheitenziffer 19 ist. lassen $x$ die Zehnerstelle und $y$ die Einheiten Ziffer, wobei beide auf Dezimalstellen beschränkt sind und $x$ nicht Null. Der Registrar löst dieses einstellige System, bevor er einen Badge-Aussage bewertet.",
     "statements": [
-      "Die Gleichungen lauten $4x-y=29$ und $2x+y=19$.",
-      "Die Zehnerziffer ist 8.",
-      "Die Einerziffer ist 4.",
+      "Die Gleichungen sind $4x-y=29$ und $2x+y=19$.",
+      "Die Zehnerstelle ist 8.",
+      "Die Einheitenziffer ist 4.",
       "Die Abzeichennummer ist 83.",
-      "Das umgekehrte Abzeichen ist um 38 größer als das Original."
+      "Das umgekehrte Abzeichen ist 38 größer als das Original."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDer Stiel liefert bereits die beiden linearen Bedingungen\n\n$$4x - y = 29$$\n\n$$2x + y = 19$$\n\nDie Übersicht verwendet genau diese Gleichungen. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1483,13 +1483,13 @@
   },
   "MATH 5.79": {
     "title": "Klausuraufgaben – 19",
-    "context": "Ein Fischerboot fährt mit 25 Knoten mit Gezeitenströmung und mit 17 Knoten gegen dieselbe Strömung. Stillwasser- und Gezeitengeschwindigkeit sind in beiden Beobachtungen konstant. Es sei $x$ die Stillwassergeschwindigkeit des Boots und $y$ die Gezeitengeschwindigkeit. Die Hafenmeisterin löst das Mit-/Gegenstrom-System einmal und nutzt diese Raten für alle Strecken- und Geschwindigkeitsprüfungen.",
+    "context": "Ein Fischerboot fährt mit 25 Knoten mit Gezeitenströmung und 17 Knoten gegen die gleiche Strömung. Seine Stillwassergeschwindigkeit und die Gezeitengeschwindigkeit sind in beiden Beobachtungen konstant. lassen $x$ sei die Stillwassergeschwindigkeit des Bootes und $y$ Gezeitengeschwindigkeit. Der Hafenmeister löst das nachgelagerte System einmal und verwendet diese Tarife für alle Distanz- und Geschwindigkeitskontrollen.",
     "statements": [
-      "Die Geschwindigkeitsgleichungen lauten $x+y=25$ und $x-y=17$.",
+      "Die Geschwindigkeitsgleichungen sind $x+y=25$ und $x-y=17$.",
       "Die Stillwassergeschwindigkeit beträgt 22 Knoten.",
       "Die Gezeitengeschwindigkeit beträgt 4 Knoten.",
       "Die Gezeitengeschwindigkeit beträgt 6 Knoten.",
-      "In 3 Stunden gegen den Strom legt das Boot 54 Seemeilen zurück."
+      "In 3 flussaufwärts gelegenen Stunden deckt das Boot 54 nautische Meilen ab."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nVerwende die berechneten Werte aus dem Überblick für diese behauptungsspezifische Prüfung.\n\nNachgelagerte und vorgelagerte Drehzahlen\n\n$$x + y = 25$$\n\n$$x - y = 17$$\n\nDie Übersicht erfasste bereits beide Geschwindigkeitsgleichungen. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1502,13 +1502,13 @@
   },
   "MATH 5.80": {
     "title": "Klausuraufgaben – 20",
-    "context": "Eine Fischerei packt Kabeljau- und Lachskörbe. Eisverbrauch ergibt $4x+3y=123$, Packzeit $2x+5y=121$, wobei $x$ die Anzahl der Kabeljaukörbe und $y$ die der Lachskörbe ist. Beide Ressourcendatensätze gelten für dieselbe Schicht und sind exakt. Die Aufsicht löst dieses eine lineare System, bevor sie Produktionszahlen und Ressourcensummen prüft.",
+    "context": "A Fischerei packt Kabeljaukörbe und Lachskörbe. Eisnutzung gibt $4x+3y=123$, während Packzeit gibt $2x+5y=121$, wobei $x$ die Anzahl der Kabeljaukörbe und $y$ die Lachskorbzahl. Beide Ressourceneinträge gelten für denselben Shift und sind exakt. Der Betreuer löst dieses eine lineare System, bevor er die Produktionszahlen und Ressourcensummen überprüft.",
     "statements": [
-      "Das Eliminieren von $x$ ergibt $7y=119$.",
-      "Die Schicht packt 18 Kabeljaukörbe.",
+      "Eliminating $x$ Gaben $7y=119$.",
+      "Die Shiftpacks 18 Kabeljaukörbe.",
       "Die Schicht packt 17 Lachskörbe.",
-      "Die Schicht packt insgesamt 36 Körbe.",
-      "Kabeljaukörbe verbrauchen 70 Einheiten der ersten Ressource."
+      "Die Shiftpakete 36 Körbe insgesamt.",
+      "Kabeljaukörbe verwenden 70 Einheiten der ersten Ressource."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDer Eliminierungsschritt der Übersicht erzeugt\n\n$$7y = 119$$\n\nVor der Lösung für $y$. Das stimmt mit der Behauptung überein.\n\nDer angezeigte Vergleich erledigt den Aussage.\n\nDie Aussage ist wahr.",
