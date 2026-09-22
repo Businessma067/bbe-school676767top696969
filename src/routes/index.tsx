@@ -617,12 +617,12 @@ function CapitalBars() {
 function PlacementsTicker() {
   const logos = ["McKinsey", "BCG", "Bain", "J.P. Morgan", "Goldman Sachs", "Deloitte"];
   return (
-    <div className="mt-8 overflow-hidden rounded-xl border border-white/12 bg-black/25 py-4">
-      <div className="flex animate-[marquee_28s_linear_infinite] gap-10 whitespace-nowrap px-4">
-        {[...logos, ...logos].map((name, i) => (
+    <div className="mt-8 rounded-xl border border-white/12 bg-black/25 px-4 py-4 sm:px-5">
+      <div className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-3.5">
+        {logos.map((name) => (
           <span
-            key={`${name}-${i}`}
-            className="text-sm font-semibold tracking-wide text-why-us-fg/70"
+            key={name}
+            className="text-center text-sm font-semibold tracking-wide text-why-us-fg/70"
           >
             {name}
           </span>
