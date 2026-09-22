@@ -678,7 +678,7 @@
     "context": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
     "statements": [
       "Die Ungleichung $x^{2} - 6x + 9 < 0$ Es gibt keine Lösung, da ein Quadrat niemals negativ ist.",
-      "Die Ungleichung $x^{2} - 9 \\ge 0$ means $x \\ge 3$.",
+      "Die Ungleichung $x^{2} - 9 \\ge 0$ bedeutet $x \\ge 3$.",
       "Die Ungleichung $x^{2} - 4x + 4 > 0$ gilt für alle realen x, ohne Ausnahmen.",
       "Die Ungleichung $x^{2} + 5x + 4 \\le 0$ \"'n'nn's der en'f :'n :'n'"
     ],
@@ -2170,7 +2170,7 @@
     "statements": [
       "Die Thrombozytenviabilität nach $h$ ganzen Stunden Lagerung ist $V(h)=12-0.15h^{2}$. Einheiten bleiben ausgabefähig, solange $V(h)>3$. Dann ist jede ganze Stunde $h\\in\\{0,1,\\ldots,8\\}$ noch ausgabefähig.",
       "Die Orchestergraben-Luftfeuchtigkeit $H$ muss $|H-50|\\le 8$ und $H>40$ erfüllen. Dann sind die zulässigen Feuchtigkeiten genau $42<H<58$.",
-      "Tidal-pool depth (metres) $t$ s gewalt, um , und ums $d(t)=-0.5t^{2}+3t+2$ auf $0\\le t\\le 8$. Sampling requires $d(t)\\ge 4.5$. dann ist die Probenahme war genau für $1\\le t\\le 5$.",
+      "Die Gezeitentümpel-Tiefe (in Metern) $t$ Stunden nach Niedrigwasser ist $d(t)=-0.5t^{2}+3t+2$ auf $0\\le t\\le 8$. Probenahme erfordert $d(t)\\ge 4.5$. Dann ist Probenahme genau für $1\\le t\\le 5$ möglich.",
       "Die biquadratische Ungleichung $x^{4}-13x^{2}+36<0$ hat die Lösungsmenge $(-3,-2)\\cup(2,3)$.",
       "Jede Trübungs-Sampling-Strecke verwendet 3 Filter bei 2,50 EUR, eine Flasche bei 4 EUR und 1,50 EUR Transport. Bei einem Budget von 200 EUR und 90 Filtern auf Lager ist die maximale Anzahl von Läufen kleiner als 25."
     ],
@@ -2378,7 +2378,7 @@
     "context": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
     "statements": [
       "Ein Observatorium darf öffnen, wenn die Bewölkung $c\\%$ die Bedingung $c\\le 40$ erfüllt und die Feuchtigkeit $h=30+0.5c$ die Bedingung $|h-45|\\le 15$ erfüllt. Dann liegt jede zulässige Bewölkung in $0\\le c\\le 40$.",
-      "Für die ersten drei Länder mit dem ersten Ziel für die erste Dekade: Das Management möchte mindestens 20 Sitzungen in einem Block. Dann ist ein solcher Block machbar.",
+      "Ein Trampolinpark hat 12 Aufsichtsplätze und 50 Paar Griffsocken (2 Paar pro Sitzung). Das Management möchte mindestens 20 Sitzungen in einem Block. Dann ist ein solcher Block machbar.",
       "Die Ungleichung $\\sqrt{|x|-1}<2$ hat die Lösungsmenge $(-5,-1]\\cup[1,5)$.",
       "Die Ungleichung $|x+2|-|x-3|\\ge 1$ hat die Lösungsmenge $[1,\\infty)$.",
       "Plakate brauchen eine Fläche von mindestens $0.5\\,\\mathrm{m}^{2}$ auf einer $0.7\\,\\mathrm{m}$ breiten Rolle (also erfüllt die Höhe $h$ in Metern $0.7h\\ge 0.5$) und den Tintenverbrauch $12h\\le 10$. Dann erfüllt jedes zulässige $h$ die Bedingung $0.7\\le h\\le 0.85$."

@@ -6,7 +6,7 @@
       "Die Wahrscheinlichkeit, dass Person A durch Raten ein perfektes 10/10 erzielt, ist kleiner als 0.01%.",
       "Die Wahrscheinlichkeit, dass Person B besteht, ist größer als die Wahrscheinlichkeit von genau 7.",
       "Person B ist mindestens 300-mal so wahrscheinlich wie Person A, die Prüfung zu bestehen.",
-      "Person B hat eine höhere Varianz in der Anzahl von korrekter Antworten als Person A.",
+      "Person B hat eine höhere Varianz in der Anzahl korrekter Antworten als Person A.",
       "Die mittlere Anzahl korrekter Antworten von Person A ist genau ein Viertel der Gesamtzahl der Fragen."
     ],
     "tactical_explanations": [
@@ -44,7 +44,7 @@
       "Die Wahrscheinlichkeit eines fehlerfreien Durchlaufs von Prüfer A ist kleiner als 0.2%.",
       "Die Wahrscheinlichkeit, dass Prüfer A die Charge zertifiziert, ist größer als die Wahrscheinlichkeit von genau 18.",
       "Prüfer B ist mindestens 10-mal so wahrscheinlich wie Prüfer A, die Charge zu zertifizieren.",
-      "Die Varianz von Prüfer A in der Anzahl von korrekt klassifizierter Einheiten ist mehr als 4-mal so groß wie die Varianz von Prüfer B.",
+      "Die Varianz der Anzahl korrekt klassifizierter Einheiten bei Prüfer A ist mehr als 4-mal so groß wie die Varianz bei Prüfer B.",
       "Im Durchschnitt erreicht Prüfer A die Zertifizierungsschwelle von 18 korrekt klassifizierten Einheiten nicht."
     ],
     "tactical_explanations": [
@@ -71,7 +71,7 @@
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 13 bis 15, nicht nur die einzelne Anzahl 13. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=13)$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nDie Schwelle zu schaffen bedeutet mindestens $13$ Erfolge von $15$. Das ist der obere Binomialschwanz\n\n$$\nP(X \\ge 13) = \\sum_{x = 13}^{15} \\binom{15}{x} p^{x} (1-p)^{15-x}\n$$\n\nSeite A ($n=15$, $p=0.6$) liefert $P_A(X\\ge 13)\\approx 2.71\\%$.\nSeite B ($n=15$, $p=0.88$) liefert $P_B(X\\ge 13)\\approx 73.46\\%$.\n\n$$\n\\frac{P_B(X\\ge 13)}{P_A(X\\ge 13)} \\approx \\frac{73.46\\%}{2.71\\%} \\approx 27.09\n$$\n\nWegen $27.09 > 25$.\n\nDie Aussage ist richtig.\n",
       "**D.** → Falsch\n\nDie Standardabweichung ist die positive Quadratwurzel der Varianz. Für $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nSeite A ($n_A = 15$, $p_A = 0.6$):\n\n$$\n\\mathrm{Var}(A) = 3.6\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{3.6}\n$$\n\n$$\n1.897\n$$\n\nSeite B ($n_B = 15$, $p_B = 0.88$):\n\n$$\n\\mathrm{Var}(B) = 1.584\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{1.584}\n$$\n\n$$\n1.259\n$$\n\nVergleich von $\\mathrm{SD}(A) \\approx 1.897$ mit $\\mathrm{SD}(B) \\approx 1.259$.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 15 \\cdot 0.88\n$$\n\n$$\n15 \\times 0.88 = 13.2\n$$\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 15 \\cdot 0.88\n$$\n\n$$\n15 \\times 0.88 = 13.2\n$$\n\nDa $13.2 > 13$, überschreitet der Erwartungswert die Bonus-Schwelle von 13.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Ein Callcenter erfasst, ob Anrufe beim ersten Kontakt gelöst werden, aus 15 Anrufen pro Schicht. Agent A ist Auszubildende/r (p = 0,60 pro Anruf). Agent B ist erfahrene/r Agent/in (p = 0,88 pro Anruf). Ein Leistungsbonus erfordert, mindestens 13 von 15 Anrufen beim ersten Kontakt zu lösen.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 15$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.6$, Seite B hat $p_B = 0.88$.\n\nDie Erfolgsschwelle des Szenarios ist mindestens $k = 13$ Erfolge von $n = 15$."
   },
@@ -82,8 +82,8 @@
       "Saatgutcharge A hat weniger als 1-in-1000 Chance, dass alle 12 Samen keimen.",
       "Die Wahrscheinlichkeit, dass Charge B einen Vollschalen-Erfolg erzielt, ist größer als die Wahrscheinlichkeit von genau 10.",
       "Charge B ist mehr als 300-mal so wahrscheinlich wie Charge A, einen Vollschalen-Erfolg zu erzielen.",
-      "Charge A hat eine niedrigere Varianz in der Anzahl von gekeimter Samen als Charge B.",
-      "Die mittlere Anzahl von gekeimter Samen für Charge B ist mehr als doppelt so groß wie der Mittelwert für Charge A."
+      "Charge A hat eine niedrigere Varianz in der Anzahl gekeimter Samen als Charge B.",
+      "Die mittlere Anzahl gekeimter Samen für Charge B ist mehr als doppelt so groß wie der Mittelwert für Charge A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.4$ und $n = 12$:\n\n$$\nP(X = 12)\n$$\n\n$$\n(0.4)^{12} = 1.677722 \\times 10^{-5}\n$$\n\n$$\n0\\%\n$$\n\nDer Vergleich dieses Wertes mit der Behauptung zeigt.\n\nDie Aussage ist richtig.",
@@ -101,8 +101,8 @@
       "Agent A Wahrscheinlichkeit für einen fehlerfreien Screening-Lauf ist kleiner als 0.01%.",
       "Die Wahrscheinlichkeit, dass Agent B das Audit besteht, ist größer als die Wahrscheinlichkeit von genau 23.",
       "Agent B ist mehr als 80-mal so wahrscheinlich wie Agent A, das Audit zu bestehen.",
-      "Die Varianz von Agent A in der Anzahl von korrekt markierter Gepäckstücke ist mehr als dreimal so groß wie die Varianz von Agent B.",
-      "Die mittlere Anzahl von korrekt markierter Gepäckstücke für Agent B ist mehr als 35% höher als für Agent A."
+      "Die Varianz der Anzahl korrekt markierter Gepäckstücke bei Agent A ist mehr als dreimal so groß wie die Varianz bei Agent B.",
+      "Die mittlere Anzahl korrekt markierter Gepäckstücke für Agent B ist mehr als 35% höher als für Agent A."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.7$ und $n = 25$:\n\n$$\nP(X = 25)\n$$\n\n$$\n(0.7)^{25} = 0.000134106862\n$$\n\n$$\n0.01\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.01\\%$. Wir erhalten etwa $0.0134\\%$, was über der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -120,8 +120,8 @@
       "Schütze B Wahrscheinlichkeit für eine perfekte Runde ist größer als 75%.",
       "Die Wahrscheinlichkeit, dass Schütze A die Medaille erhält, ist größer als die Wahrscheinlichkeit von genau 8.",
       "Schütze B ist mehr als 8-mal so wahrscheinlich wie Schütze A, die Medaille zu erhalten.",
-      "Die Varianz von Schütze A in der Anzahl von Treffer ins Gold ist mehr als 8-mal so groß wie die Varianz von Schütze B.",
-      "Die erwartete Anzahl von Treffer ins Gold für Schütze B ist mindestens 3 mehr als für Schütze A."
+      "Die Varianz der Anzahl von Treffern ins Gold bei Schütze A ist mehr als 8-mal so groß wie die Varianz bei Schütze B.",
+      "Die erwartete Anzahl von Treffern ins Gold für Schütze B ist mindestens 3 mehr als für Schütze A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite B $p = 0.97$ und $n = 9$:\n\n$$\nP(X = 9)\n$$\n\n$$\n(0.97)^{9} = 0.760231058655\n$$\n\n$$\n76.02\\%\n$$\n\nDie Behauptung vergleicht dies mit $75\\%$. Wir erhalten etwa $76.0231\\%$, was über der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -158,8 +158,8 @@
       "Personal A Wahrscheinlichkeit, alle 18 Phishing-E-Mails perfekt zu erkennen ist kleiner als 0.001%.",
       "Die Wahrscheinlichkeit, dass Personal B die Sicherheitsprüfung besteht, ist größer als die Wahrscheinlichkeit von genau 16.",
       "Personal B ist mehr als 6,000-mal so wahrscheinlich wie Personal A, die Sicherheitsprüfung zu bestehen.",
-      "Die Varianz von Personal A in der Anzahl von korrekt erkannter E-Mails ist mehr als 3.5-mal so groß wie die Varianz von Personal B.",
-      "Die mittlere Anzahl von korrekt erkannter E-Mails für Personal B ist mehr als doppelt so groß wie der Mittelwert für Personal A."
+      "Die Varianz der Anzahl korrekt erkannter E-Mails bei Personal A ist mehr als 3,5-mal so groß wie die Varianz bei Personal B.",
+      "Die mittlere Anzahl korrekt erkannter E-Mails für Personal B ist mehr als doppelt so groß wie der Mittelwert für Personal A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.45$ und $n = 18$:\n\n$$\nP(X = 18)\n$$\n\n$$\n(0.45)^{18} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n5.7257 \\times 10^{-5}\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.001\\%$. Wir erhalten etwa $5.7257 \\times 10^{-5}\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -177,8 +177,8 @@
       "Meteorologe B Wahrscheinlichkeit für eine perfekte Woche ist größer als 60%.",
       "Die Wahrscheinlichkeit, dass Meteorologe A den Genauigkeitspreis gewinnt, ist größer als die Wahrscheinlichkeit von genau 9.",
       "Meteorologe B ist mehr als 20-mal so wahrscheinlich wie Meteorologe A, den Genauigkeitspreis zu gewinnen.",
-      "Die Varianz von Meteorologe A in der Anzahl von korrekter Prognosen ist mehr als 5-mal so groß wie die Varianz von Meteorologe B.",
-      "Die erwartete Anzahl von korrekter Prognosen für Meteorologe B übersteigt die von Meteorologe A um mehr als 3."
+      "Die Varianz der Anzahl korrekter Prognosen bei Meteorologe A ist mehr als 5-mal so groß wie die Varianz bei Meteorologe B.",
+      "Die erwartete Anzahl korrekter Prognosen für Meteorologe B übersteigt die von Meteorologe A um mehr als 3."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite B $p = 0.95$ und $n = 10$:\n\n$$\nP(X = 10)\n$$\n\n$$\n(0.95)^{10} = 0.598736939238\n$$\n\n$$\n59.87\\%\n$$\n\nDie Behauptung vergleicht dies mit $60\\%$. Wir erhalten etwa $59.8737\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -196,8 +196,8 @@
       "Prüfer A Wahrscheinlichkeit für eine fehlerfreie Inspektion ist kleiner als 0.0005%.",
       "Die Wahrscheinlichkeit, dass Prüfer B das Audit besteht, ist größer als die Wahrscheinlichkeit von genau 17.",
       "Prüfer B ist mehr als 150-mal so wahrscheinlich wie Prüfer A, das Audit zu bestehen.",
-      "Die Varianz von Prüfer A in der Anzahl von korrekt erkannter Einheiten ist mehr als doppelt so groß wie die Varianz von Prüfer B.",
-      "Die mittlere Anzahl von korrekt erkannter Einheiten für Prüfer B ist mehr als 65% höher als für Prüfer A."
+      "Die Varianz der Anzahl korrekt erkannter Einheiten bei Prüfer A ist mehr als doppelt so groß wie die Varianz bei Prüfer B.",
+      "Die mittlere Anzahl korrekt erkannter Einheiten für Prüfer B ist mehr als 65% höher als für Prüfer A."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.55$ und $n = 20$:\n\n$$\nP(X = 20)\n$$\n\n$$\n(0.55)^{20} = 6.415844 \\times 10^{-6}\n$$\n\n$$\n0\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.0005\\%$. Wir erhalten etwa $0.0006\\%$, was über der Schwelle liegt.\n\nDie Aussage ist falsch.",
@@ -215,8 +215,8 @@
       "Personal A Wahrscheinlichkeit, alle 16 Anrufe korrekt zu klären ist größer als 0.02%.",
       "Die Wahrscheinlichkeit, dass Personal B die Prüfung besteht, ist größer als die Wahrscheinlichkeit von genau 14.",
       "Personal B ist mehr als 50-mal so wahrscheinlich wie Personal A, die Prüfung zu bestehen.",
-      "Die Varianz von Personal A in der Anzahl von korrekt gelöster Anrufe ist mehr als dreimal so groß wie die Varianz von Personal B.",
-      "Die mittlere Anzahl von korrekt gelöster Anrufe für Personal B ist mehr als 55% höher als für Personal A."
+      "Die Varianz der Anzahl korrekt gelöster Anrufe bei Personal A ist mehr als dreimal so groß wie die Varianz bei Personal B.",
+      "Die mittlere Anzahl korrekt gelöster Anrufe für Personal B ist mehr als 55% höher als für Personal A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.6$ und $n = 16$:\n\n$$\nP(X = 16)\n$$\n\n$$\n(0.6)^{16} = 0.000282110991\n$$\n\n$$\n0.03\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.02\\%$. Wir erhalten etwa $0.0282\\%$, was über der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -234,8 +234,8 @@
       "Tipper B Wahrscheinlichkeit für einen fehlerfreien Test ist größer als 3%.",
       "Die Wahrscheinlichkeit, dass Tipper A den Test besteht, ist größer als die Wahrscheinlichkeit von genau 9.",
       "Tipper B ist mehr als 9-mal so wahrscheinlich wie Tipper A, den Test zu bestehen.",
-      "Tipper A hat eine niedrigere Varianz in der Anzahl von korrekter Zeilen als Tipper B.",
-      "Die erwartete Anzahl von korrekter Zeilen für Tipper B ist genau 50% höher als für Tipper A."
+      "Tipper A hat eine niedrigere Varianz in der Anzahl korrekter Zeilen als Tipper B.",
+      "Die erwartete Anzahl korrekter Zeilen für Tipper B ist genau 50% höher als für Tipper A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite B $p = 0.75$ und $n = 12$:\n\n$$\nP(X = 12)\n$$\n\n$$\n(0.75)^{12} = 0.031676352024\n$$\n\n$$\n3.17\\%\n$$\n\nDie Behauptung vergleicht dies mit $3\\%$. Wir erhalten etwa $3.1676\\%$, was über der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -253,8 +253,8 @@
       "Personal A Wahrscheinlichkeit, alle 22 Angriffe perfekt zu erkennen ist kleiner als 0.00001%.",
       "Die Wahrscheinlichkeit, dass Personal B die Übung besteht, ist größer als die Wahrscheinlichkeit von genau 19.",
       "Personal B ist mehr als 80,000-mal so wahrscheinlich wie Personal A, die Übung zu bestehen.",
-      "Die Varianz von Personal A in der Anzahl von korrekt erkannter Angriffe ist mehr als 2.5-mal so groß wie die Varianz von Personal B.",
-      "Die mittlere Anzahl von korrekt erkannter Angriffe für Personal B ist mehr als doppelt so groß wie der Mittelwert für Personal A."
+      "Die Varianz der Anzahl korrekt erkannter Angriffe bei Personal A ist mehr als 2,5-mal so groß wie die Varianz bei Personal B.",
+      "Die mittlere Anzahl korrekt erkannter Angriffe für Personal B ist mehr als doppelt so groß wie der Mittelwert für Personal A."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nEin perfekter Durchlauf bedeutet, dass jeder der $n$ Versuche erfolgreich ist. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A $p = 0.4$ und $n = 22$:\n\n$$\nP(X = 22)\n$$\n\n$$\n(0.4)^{22} = 1.759219 \\times 10^{-9}\n$$\n\n$$\n1.7592 \\times 10^{-7}\\%\n$$\n\nDie Behauptung vergleicht dies mit $1 \\times 10^{-5}\\%$. Wir erhalten etwa $1.7592 \\times 10^{-7}\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist richtig.",
@@ -431,7 +431,7 @@
       "**A.** → Richtig\n\nDas Ereignis „zwischen 8 und 12 einschließlich“ ist die Summe der Punktmassen $X = 8,\\ldots,12$:\n\n$$\nP(8 \\le X \\le 12) = \\sum_{x = 8}^{12} \\binom{n}{x} p^{x}(1-p)^{n-x}\n$$\n\nSeite A: $P \\approx 0.5631 \\approx 56.31\\%$.\n\nSeite B: $P \\approx 0.1016 \\approx 10.16\\%$.\n\nVerhältnis (A relativ zu B) $\\approx 5.541$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 8 bis 12, nicht nur die einzelne Anzahl 8. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=8)$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nFür Linie A sind Erwartungswert und Standardabweichung einer binomialverteilten Anzahl\n\n$$\nE[A] = np = 20\\cdot 0.4 = 8\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{np(1-p)} = \\sqrt{4.8} \\approx 2.191\n$$\n\nEine Standardabweichung um den Erwartungswert ist das Intervall\n\n$$\n\\bigl[8-2.191,\\ 8+2.191\\bigr] \\approx [5.809,\\ 10.191]\n$$\n\nDer mittlere Bereich $[8,12]$ reicht bis $12$, was außerhalb dieses Intervalls liegt. Der mittlere Bereich liegt also nicht vollständig innerhalb einer Standardabweichung vom Mittelwert von Linie A.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 20 \\cdot 0.75\n$$\n\n$$\n20 \\times 0.75 = 15\n$$\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 20 \\cdot 0.75\n$$\n\n$$\n20 \\times 0.75 = 15\n$$\n\nDer mittlere Bereich ist $[8,12]$. Wegen $E[B]=15 \\notin [8,12]$ liegt der Mittelwert nicht im mittleren Bereich.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDie Linien-Mittelwerte und die Standardabweichung von Linie B sind\n\n$$\nE[A] = 20\\cdot 0.4 = 8\n$$\n\n$$\nE[B] = 20\\cdot 0.75 = 15\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{20\\cdot 0.75\\cdot 0.25} = \\sqrt{3.75} \\approx 1.936\n$$\n\nDie Lücke vom Mittelwert von A zum Mittelwert von B, gemessen in Einheiten von $\\mathrm{SD}(B)$, ist\n\n$$\n\\frac{E[B]-E[A]}{\\mathrm{SD}(B)} = \\frac{7}{1.936} \\approx 3.615\n$$\n\nDa $3.615 > 3$, liegt der Mittelwert von Linie A mehr als drei Standardabweichungen von Linie B unter dem Mittelwert von Linie B.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Zwei Kalibrierlinien erzeugen je Chargen von 20 Einheiten. Linie A hat eine Akzeptanzwahrscheinlichkeit von 0,40 pro Einheit. Linie B hat eine Akzeptanzwahrscheinlichkeit von 0,75 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 8 und 12 einschließlich liegt.\n\nWir modellieren jede Seite als binomialverteilte Anzahl mit $n = 20$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.4$, Seite B hat $p_B = 0.75$."
@@ -467,7 +467,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer A $n = 50$ und $p = 0.50$:\n\n$$\nE[A] = 50 \\cdot 0.50\n$$\n\n$$\n50 \\times 0.5 = 25\n$$\n\n.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer B $n = 10$ und $p = 0.90$:\n\n$$\nE[B] = 10 \\cdot 0.90\n$$\n\n$$\n10 \\times 0.9 = 9\n$$\n\nDa $9 \\ge 8$.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer B $n = 10$ und $p = 0.90$:\n\n$$\nE[B] = 10 \\cdot 0.90\n$$\n\n$$\n10 \\times 0.9 = 9\n$$\n\nWegen $E[B]=9 \\ge 8$ ist die Behauptung „kleiner als 8“ falsch.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nDie beiden Ereignisse sind Komplemente einer ganzzahligen Anzahl, daher addieren sich ihre Wahrscheinlichkeiten zu $1$. Die direkte Berechnung der Wahrscheinlichkeit des oberen Schwanzes zeigt, dass sie kleiner ist als $\\frac{1}{2}$, also kleiner als die komplementäre Wahrscheinlichkeit des unteren Schwanzes.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nJede Schwelle zu schaffen bedeutet, die Binomialwahrscheinlichkeiten des oberen Schwanzes zu summieren:\n\n$$\nP_A(X \\ge 28) = \\sum_{x = 28}^{50} \\binom{50}{x}(0.50)^{x}(0.50)^{50-x} \\approx 0.2399\n$$\n\n$$\nP_B(X \\ge 9) = \\sum_{x = 9}^{10} \\binom{10}{x}(0.90)^{x}(0.10)^{10-x} \\approx 0.7361\n$$\n\nDas Verhältnis ist\n\n$$\n\\frac{P_B(X \\ge 9)}{P_A(X \\ge 28)}\n$$\n\n$$\n\\frac{0.7361}{0.2399}\n$$\n\n$$\n3.07\n$$\n\nDa $3.07 \\le 4$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDie Standardabweichung ist $\\mathrm{SD}(X) = \\sqrt{np(1-p)}$.\n\nAuditor A: $\\mathrm{SD}(A) = \\sqrt{50 \\cdot 0.50 \\cdot 0.50} = \\sqrt{12.5} \\approx 3.536$\n\nAuditor B: $\\mathrm{SD}(B) = \\sqrt{10 \\cdot 0.90 \\cdot 0.10} = \\sqrt{0.9} \\approx 0.949$\n\nDas Verhältnis ist\n\n$$\n\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)}\n$$\n\n$$\n\\frac{3.536}{0.949}\n$$\n\n$$\n3.73\n$$\n\nDa $3.73 > 3$.\n\nDie Aussage ist richtig."
@@ -562,7 +562,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer A $n = 60$ und $p = 0.50$:\n\n$$\nE[A] = 60 \\cdot 0.50\n$$\n\n$$\n60 \\times 0.5 = 30\n$$\n\n.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer B $n = 20$ und $p = 0.95$:\n\n$$\nE[B] = 20 \\cdot 0.95\n$$\n\n$$\n20 \\times 0.95 = 19\n$$\n\nDa $19 \\ge 18$.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Prüfer B $n = 20$ und $p = 0.95$:\n\n$$\nE[B] = 20 \\cdot 0.95\n$$\n\n$$\n20 \\times 0.95 = 19\n$$\n\nWegen $E[B]=19 \\ge 18$ ist die Behauptung „kleiner als 18“ falsch.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nDie beiden Ereignisse sind Komplemente einer ganzzahligen Anzahl, daher addieren sich ihre Wahrscheinlichkeiten zu $1$. Die direkte Berechnung der Wahrscheinlichkeit des oberen Schwanzes zeigt, dass sie kleiner ist als $\\frac{1}{2}$, also kleiner als die komplementäre Wahrscheinlichkeit des unteren Schwanzes.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nJede Schwelle zu schaffen bedeutet, die Binomialwahrscheinlichkeiten des oberen Schwanzes zu summieren:\n\n$$\nP_A(X \\ge 33)\n$$\n\n$$\n0.2595\n$$\n\n$$\nP_B(X \\ge 19)\n$$\n\n$$\n0.7358\n$$\n\nDas Verhältnis ist\n\n$$\n\\frac{P_B(X \\ge 19)}{P_A(X \\ge 33)}\n$$\n\n$$\n\\frac{0.7358}{0.2595}\n$$\n\n$$\n2.84\n$$\n\nDa $2.84 \\le 3$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDie Standardabweichung ist $\\mathrm{SD}(X) = \\sqrt{np(1-p)}$.\n\nAuditor A: $\\mathrm{SD}(A) = \\sqrt{60 \\cdot 0.50 \\cdot 0.50} = \\sqrt{15} \\approx 3.873$\n\nAuditor B: $\\mathrm{SD}(B) = \\sqrt{20 \\cdot 0.95 \\cdot 0.05} = \\sqrt{0.95} \\approx 0.975$\n\nDas Verhältnis ist\n\n$$\n\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)}\n$$\n\n$$\n\\frac{3.873}{0.975}\n$$\n\n$$\n3.97\n$$\n\nDa $3.97 > 3$.\n\nDie Aussage ist richtig."
@@ -592,11 +592,11 @@
     "title": "Screening-Test-Stichproben",
     "context": "Screening-Test A wird an 500 unabhängigen Proben durchgeführt und liefert bei einer gegebenen Probe mit Wahrscheinlichkeit 0,004 ein falsch positives Ergebnis. Screening-Test B wird an einem anderen Satz von 500 unabhängigen Proben durchgeführt und liefert mit Wahrscheinlichkeit 0,012 ein falsch positives Ergebnis. Die beiden Tests sind voneinander unabhängig. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erwartete Anzahl falsch positiver Ergebnisse bei Test A ist genau 2.",
-      "Die Wahrscheinlichkeit für null Fehlalarme bei Test A ist größer als 0,20.",
-      "Die Wahrscheinlichkeit, dass beide Tests null Fehlalarme liefern, ist kleiner als 0,001.",
-      "Die Wahrscheinlichkeit, dass mindestens einer der beiden Tests mindestens ein falsch positives Ergebnis liefert, ist kleiner als 0,999.",
-      "Die Standardabweichung der Fehlalarm-Anzahl bei Test B ist mehr als 1,5-mal so groß wie die bei Test A."
+      "Die erwartete Anzahl von falsch positiver Ergebnisse bei Test A ist genau 2.",
+      "Test A Wahrscheinlichkeit für null Fehlalarme ist größer als 0.20.",
+      "Die Wahrscheinlichkeit, dass beide Tests null Fehlalarme liefern, ist kleiner als $0{,}001$.",
+      "Die Wahrscheinlichkeit, dass mindestens einer der beiden Tests mindestens ein falsch positives Ergebnis liefert, ist kleiner als 0.999.",
+      "Test B Standardabweichung der Fehlalarm-Anzahl ist größer als das 1.5-Fache von Test A Standardabweichung."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Erwartungswert einer binomialverteilten Anzahl ist $E[X] = np$.\n\nFür Test A, $n = 500$ and $p = 0.004$:\n\n$$\nE[A] = 500 \\cdot 0.004\n$$\n\n$$\n500 \\times 0.004 = 2\n$$\n\n.\n\nDie Aussage ist richtig.",
@@ -716,7 +716,7 @@
       "**A.** → Richtig\n\nDas Ereignis „zwischen 9 und 14 einschließlich“ ist die Summe der Punktmassen $X = 9,\\ldots,14$:\n\n$$\nP(9 \\le X \\le 14) = \\sum_{x = 9}^{14} \\binom{n}{x} p^{x}(1-p)^{n-x}\n$$\n\nSeite A: $P \\approx 0.6822 \\approx 68.22\\%$.\n\nSeite B: $P \\approx 0.4509 \\approx 45.09\\%$.\n\nVerhältnis (A relativ zu B) $\\approx 1.513$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 9 bis 14, nicht nur die einzelne Anzahl 9. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, daher ist die Ereigniswahrscheinlichkeit streng größer als $P(X=9)$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nFür Linie A sind Erwartungswert und Standardabweichung einer binomialverteilten Anzahl\n\n$$\nE[A] = np = 27\\cdot 0.48 = 12.96\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{np(1-p)} = \\sqrt{6.7392} \\approx 2.596\n$$\n\nEine Standardabweichung um den Erwartungswert ist das Intervall\n\n$$\n\\bigl[12.96-2.596,\\ 12.96+2.596\\bigr] \\approx [10.364,\\ 15.556]\n$$\n\nDer mittlere Bereich $[9,14]$ beginnt bei $9$, was unterhalb dieses Intervalls liegt. Der mittlere Bereich liegt also nicht vollständig innerhalb einer Standardabweichung vom Mittelwert von Linie A.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 19 \\cdot 0.77\n$$\n\n$$\n19 \\times 0.77 = 14.63\n$$\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDer Erwartungswert einer binomialverteilten Anzahl ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen mit jeweils Erwartungswert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[B] = 19 \\cdot 0.77\n$$\n\n$$\n19 \\times 0.77 = 14.63\n$$\n\nDer mittlere Bereich ist $[9,14]$. Wegen $E[B]=14.63 \\notin [9,14]$ liegt der Mittelwert nicht im mittleren Bereich.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDie beiden Mittelwerte und die Standardabweichung von Linie A sind\n\n$$\nE[A] = 27\\cdot 0.48 = 12.96\n$$\n\n$$\nE[B] = 19\\cdot 0.77 = 14.63\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{6.7392} \\approx 2.596\n$$\n\nDie Lücke zwischen den Mittelwerten, gemessen in Einheiten von $\\mathrm{SD}(A)$, ist\n\n$$\n\\frac{E[B]-E[A]}{\\mathrm{SD}(A)} = \\frac{1.67}{2.596} \\approx 0.643\n$$\n\nDa $0.643 > 0.6$, gilt die Behauptung.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Produktionslinie A fertigt Chargen von 27 Einheiten mit Akzeptanzwahrscheinlichkeit 0,48 pro Einheit. Produktionslinie B fertigt Chargen von 19 Einheiten mit Akzeptanzwahrscheinlichkeit 0,77 pro Einheit. Eine Charge ist „mittig“, wenn die Anzahl akzeptabler Einheiten zwischen 9 und 14 einschließlich liegt.\n\nWir modellieren Seite A als $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ mit $n_A = 27$, $p_A = 0.48$ und Seite B als $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ mit $n_B = 19$, $p_B = 0.77$."
@@ -773,7 +773,7 @@
       "**A.** → Falsch\n\nGleiche Erwartungswerte $np$ erzwingen keine gleichen Wahrscheinlichkeiten für null Ausfälle, weil\n\n$$\nP(X = 0) = (1-p)^{n}\n$$\n\nhängt weiterhin separat von $n$ und $p$ ab.\n\n$$\nP_A(X = 0) = (0.9988)^{2500} \\approx 0.04970\n$$\n\n$$\nP_B(X = 0) = (0.9995)^{6000} \\approx 0.04975\n$$\n\nDiese Werte liegen nah beieinander, sind aber nicht genau gleich.\n\nDie Aussage ist falsch.",
       "**B.** → Richtig\n\n$$\n\\mathrm{Var}(A) = 2500 \\cdot 0.0012 \\cdot 0.9988\n$$\n\n$$\n2500 \\times 0.0012 = 3\n$$\n\n$$\n3 \\times 0.9988 = 2.9964\n$$\n\n$$\n\\mathrm{Var}(B) = 6000 \\cdot 0.0005 \\cdot 0.9995\n$$\n\n$$\n6000 \\times 0.0005 = 3\n$$\n\n$$\n3 \\times 0.9995 = 2.9985\n$$\n\nDa $2.9964 < 2.9985$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nNull Ausfälle bedeuten, dass jede Einheit übersteht:\n\n$$\nP(X = 0) = (1-p)^{n} = (0.9995)^{6000} \\approx 0.04975\n$$\n\nDa $0.04975 > 0.04$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$\n\\mathrm{SD}(A) = \\sqrt{2.9964}\n$$\n\n$$\n1.7310\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{2.9985}\n$$\n\n$$\n1.7316\n$$\n\nDa $\\mathrm{SD}(A) < \\mathrm{SD}(B)$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$$\n\\mathrm{SD}(A) = \\sqrt{2.9964}\n$$\n\n$$\n1.7310\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{2.9985}\n$$\n\n$$\n1.7316\n$$\n\nWegen $\\mathrm{SD}(A) < \\mathrm{SD}(B)$ ist die Behauptung „höher als bei B“ falsch.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\nP(X \\ge 1) = 1 - (1-p)^{n}\n$$\n\n$$\nP_A(X \\ge 1) \\approx 1 - 0.04970 = 0.95030\n$$\n\n$$\nP_B(X \\ge 1) \\approx 1 - 0.04975 = 0.95025\n$$\n\nDa $0.95030 > 0.95025$.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Komponente A wird an 2.500 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0012 pro Einheit aus. Komponente B wird an 6.000 unabhängigen Einheiten getestet und fällt unabhängig mit Wahrscheinlichkeit 0,0005 pro Einheit aus. Beide haben dieselbe erwartete Anzahl an Ausfällen, $np = 3$.\n\nWir modellieren Komponente A als $X_A \\sim \\mathrm{Bin}(2500, 0.0012)$ und Komponente B als $X_B \\sim \\mathrm{Bin}(6000, 0.0005)$."
@@ -793,7 +793,7 @@
       "**B.** → Richtig\n\n$$\nP_1(X = 0) = (0.9994)^{5000} \\approx 0.04974 > 0.04\n$$\n\n.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$$\nP_2(X = 0) = (0.95)^{60} \\approx 0.04607 \\le 0.05\n$$\n\n.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\n$$\n\\mathrm{Var}(1) = 5000 \\cdot 0.0006 \\cdot 0.9994\n$$\n\n$$\n5000 \\times 0.0006 = 3\n$$\n\n$$\n3 \\times 0.9994 = 2.9982\n$$\n\n$$\n\\mathrm{Var}(2) = 60 \\cdot 0.05 \\cdot 0.95\n$$\n\n$$\n60 \\times 0.05 = 3\n$$\n\n$$\n3 \\times 0.95 = 2.85\n$$\n\nDa $2.9982 > 2.85$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$\n\\mathrm{SD}(1) = \\sqrt{2.9982}\n$$\n\n$$\n1.732\n$$\n\n$$\n\\mathrm{SD}(2) = \\sqrt{2.85}\n$$\n\n$$\n1.688\n$$\n\nDa $\\mathrm{SD}(1) > \\mathrm{SD}(2)$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\n$$\n\\mathrm{SD}(1) = \\sqrt{2.9982}\n$$\n\n$$\n1.732\n$$\n\n$$\n\\mathrm{SD}(2) = \\sqrt{2.85}\n$$\n\n$$\n1.688\n$$\n\nWegen $\\mathrm{SD}(1) > \\mathrm{SD}(2)$ ist die Behauptung „kleiner als bei Typ 2“ falsch.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Mutationstyp 1 tritt unabhängig in jeder von 5.000 Proben mit Wahrscheinlichkeit 0,0006 pro Probe auf. Mutationstyp 2 tritt unabhängig in jeder von 60 Proben mit Wahrscheinlichkeit 0,05 pro Probe auf. Beide haben dieselbe erwartete Anzahl, $np = 3$.\n\nWir modellieren Typ 1 als $X_1 \\sim \\mathrm{Bin}(5000, 0.0006)$ und Typ 2 als $X_2 \\sim \\mathrm{Bin}(60, 0.05)$."
   },
@@ -811,7 +811,7 @@
       "**A.** → Falsch\n\n$$\nP(X_A \\ge 1) = 1 - (1-0.00007)^{9000}\n$$\n\n$$\n1 - 0.5326 = 0.4674\n$$\n\nDa $0.4674 \\ge 0.40$.\n\nDie Aussage ist falsch.",
       "**B.** → Falsch\n\n$$\nP(X_A \\ge 1)\n$$\n\n$$\n0.4674\n$$\n\n$$\nP(X_B \\ge 1) = 1 - (1-0.00004)^{20000}\n$$\n\n$$\n0.5507\n$$\n\n$$\n\\frac{P(X_B \\ge 1)}{P(X_A \\ge 1)}\n$$\n\n$$\n\\frac{0.5507}{0.4674}\n$$\n\n$$\n1.18\n$$\n\nDa $1.18 \\le 1.2$.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nMeans always add:\n\n$$\nE[X_A + X_B] = E[X_A] + E[X_B] = 9000\\cdot 0.00007 + 20000\\cdot 0.00004 = 0.63 + 0.80 = 1.43\n$$\n\n.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$\n\\mathrm{SD}(A) = \\sqrt{9000 \\cdot 0.00007 \\cdot 0.99993}\n$$\n\n$$\n0.794\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{20000 \\cdot 0.00004 \\cdot 0.99996}\n$$\n\n$$\n0.894\n$$\n\nDa $\\mathrm{SD}(B) > \\mathrm{SD}(A)$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$\n\\mathrm{SD}(A) = \\sqrt{9000 \\cdot 0.00007 \\cdot 0.99993}\n$$\n\n$$\n0.794\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{20000 \\cdot 0.00004 \\cdot 0.99996}\n$$\n\n$$\n0.894\n$$\n\nWegen $\\mathrm{SD}(B) > \\mathrm{SD}(A)$ trifft die Behauptung zu.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\nE[A] = 9000 \\cdot 0.00007\n$$\n\n$$\n9000 \\times 7 \\times 10^{-5} = 0.63\n$$\n\n$$\nE[B] = 20000 \\cdot 0.00004\n$$\n\n$$\n20000 \\times 4 \\times 10^{-5} = 0.8 = 0.80\n$$\n\nDa $0.63 < 0.80$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Dienst A bearbeitet 9.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00007 einen Serverfehler zurückgibt. Dienst B bearbeitet 20.000 Anfragen, von denen jede unabhängig mit Wahrscheinlichkeit 0,00004 einen Serverfehler zurückgibt. Die beiden Dienste arbeiten unabhängig voneinander.\n\nWir modellieren Dienst A als $X_A \\sim \\mathrm{Bin}(9000, 0.00007)$ und Dienst B als $X_B \\sim \\mathrm{Bin}(20000, 0.00004)$."
@@ -820,18 +820,18 @@
     "title": "Gerät mit drei Komponenten",
     "context": "Ein Gerät hat drei unabhängige Komponenten, so angeordnet, dass das Gerät in einem gegebenen Zyklus ausfällt, wenn mindestens eine Komponente ausfällt. Komponente 1 fällt mit Wahrscheinlichkeit 0,00031 pro Zyklus aus, Komponente 2 mit Wahrscheinlichkeit 0,00047 pro Zyklus und Komponente 3 mit Wahrscheinlichkeit 0,00022 pro Zyklus. Das Gerät läuft über 2.500 unabhängige Zyklen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Geräteausfallwahrscheinlichkeit pro Zyklus weicht von der Summe der drei Komponenten-Ausfallwahrscheinlichkeiten um weniger als 0.000001 ab.",
-      "Über 2,500 unabhängige Zyklen ist die erwartete Anzahl von Geräteausfällen größer als 2.5.",
-      "Über 2,500 Zyklen ist die Wahrscheinlichkeit mindestens eines Geräteausfalls größer als 0.90.",
-      "Das Ignorieren der Komponenten 2 und 3 ändert die Wahrscheinlichkeit ohne Ausfall in einem Zyklus um mehr als 0.0005.",
-      "Die Standardabweichung der Anzahl Geräteausfällen über 2,500 Zyklen ist größer als 2."
+      "Die Ausfallwahrscheinlichkeit des Geräts pro Zyklus weicht von der Summe der drei Komponenten-Ausfallwahrscheinlichkeiten um weniger als 0,000001 ab.",
+      "Über 2.500 unabhängige Zyklen ist die erwartete Anzahl an Geräteausfällen größer als 2,5.",
+      "Über 2.500 Zyklen ist die Wahrscheinlichkeit mindestens eines Geräteausfalls größer als 0,90.",
+      "Das Ignorieren der Komponenten 2 und 3 ändert die Wahrscheinlichkeit keines Ausfalls in einem Zyklus um mehr als 0,0005.",
+      "Die Standardabweichung der Anzahl an Geräteausfällen über 2.500 Zyklen ist größer als 2."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDas Gerät fällt in einem Zyklus aus, wenn mindestens eine unabhängige Komponente ausfällt, also\n\n$$\np = 1 - (1-p_1)(1-p_2)(1-p_3) = 1 - (0.99969)(0.99953)(0.99978)\n$$\n\n$$\n0.00099968\n$$\n\nDie Summe erster Ordnung $p_1+p_2+p_3 = 0.001$ weicht von der exakten Vereinigung um $3.1727 \\times 10^{-7}$ ab.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nFür $X \\sim \\mathrm{Bin}(n,p)$ ist der Erwartungswert $E[X] = np$.\n\n$$\nE[X] = 2500 \\cdot 0.001\n$$\n\n$$\n2500 \\times 0.001 = 2.5 = 2.4992\n$$\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nFür $X \\sim \\mathrm{Bin}(n,p)$ ist der Erwartungswert $E[X] = np$.\n\n$$\nE[X] = 2500 \\cdot 0.001\n$$\n\n$$\n2500 \\times 0.001 = 2.5 = 2.4992\n$$\n\nMit dem exakten $p \\approx 0.00099968$ ist $E[X] \\approx 2.4992$, also nicht größer als $2.5$.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nEs sei $p \\approx 0.00099968$ die Geräteausfallwahrscheinlichkeit pro Zyklus und $X \\sim \\mathrm{Bin}(2500, p)$ die Anzahl ausfallender Zyklen.\n\n$$\nP(X \\ge 1) = 1 - (1-p)^{2500}\n$$\n\n$$\n1 - 0.08205 = 0.91795\n$$\n\nDa $0.91795 > 0.90$.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nDas Ignorieren der Komponenten 2 und 3 verwendet $1-p_1 = 0.99969$, während die wahre Wahrscheinlichkeit ohne Ausfall $(1-p_1)(1-p_2)(1-p_3) \\approx 0.99900032$ ist. Absolute Differenz $\\approx 0.00068968$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDie Standardabweichung ist die positive Quadratwurzel der Varianz. Für $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nMit $n = 2500$ und $p \\approx 0.00099968$: $\\mathrm{SD}(X) \\approx 1.5801$.\n\nIm Vergleich zur Behauptung.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nDie Standardabweichung ist die positive Quadratwurzel der Varianz. Für $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nMit $n = 2500$ und $p \\approx 0.00099968$: $\\mathrm{SD}(X) \\approx 1.5801$.\n\nDie Behauptung verlangt $\\mathrm{SD}(X) > 2$; berechnet ist $\\mathrm{SD}(X) \\approx 1.5801 < 2$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Ein Gerät hat drei unabhängige Komponenten, so angeordnet, dass das Gerät in einem gegebenen Zyklus ausfällt, wenn mindestens eine Komponente ausfällt. Komponente 1 fällt mit Wahrscheinlichkeit 0,00031 pro Zyklus aus, Komponente 2 mit Wahrscheinlichkeit 0,00047 pro Zyklus und Komponente 3 mit Wahrscheinlichkeit 0,00022 pro Zyklus. Das Gerät läuft über 2.500 unabhängige Zyklen.\n\nEin Zyklus fällt aus, wenn mindestens eine Komponente ausfällt:\n\n$$\np = 1-(1-p_1)(1-p_2)(1-p_3) = 1-(0.99969)(0.99953)(0.99978)\n$$\n\n$$\\approx 0.00099968.$$\n\nEs sei $X \\sim \\mathrm{Bin}(n,p)$ mit $n = 2500$ und $p = 0.00099968$."
   },
@@ -1258,8 +1258,8 @@
     "context": "Ein Vertriebsteam führte 25 unabhängige Produktdemos durch. Die erwartete Anzahl an Konversionen war 10, und die Standardabweichung der Konversionen war $\\sqrt{6}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die nächste Demo führt mit Wahrscheinlichkeit 0,6 zu keinem Abschluss.",
-      "In einem Lauf von 15 Demos übersteigt die erwartete Anzahl von Abschlüssen 7.",
-      "Für 25 Demos beträgt die Varianz der Anzahl von Abschlüssen 6.",
+      "In einem Lauf von 15 Demos übersteigt die erwartete Anzahl der Abschlüsse 7.",
+      "Für 25 Demos beträgt die Varianz der Anzahl der Abschlüsse 6.",
       "Die Chance, dass jede der nächsten 3 Demos einen Abschluss ergibt, ist kleiner als 0,55.",
       "Die Chance von höchstens 5 Abschlüssen in den nächsten 8 Demos ist größer als 0,20."
     ],
@@ -1561,7 +1561,7 @@
     "title": "Kino-Treuekarten-Scans",
     "context": "In einem Kino werden 60 unabhängige Ticketkäufe erfasst. Die erwartete Anzahl, die eine Treuekarte scannen, ist 36, mit SA $\\sqrt{14.4}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der nächste Kauf führt mit Wahrscheinlichkeit 0,3 zu keinem Treuekarten-Scan.",
+      "Der nächste Kauf führt mit Wahrscheinlichkeit 0,4 zu keinem Treuekarten-Scan.",
       "In einem Lauf von 15 Käufen übersteigt die erwartete Anzahl von Treuekarten-Scans 10.",
       "Für 25 Käufe beträgt die Varianz der Anzahl von Treuekarten-Scans 6.",
       "Die Chance, dass jeder der nächsten 3 Käufe einen Treuekarten-Scan ergibt, ist kleiner als 0,55.",
@@ -1656,11 +1656,11 @@
     "title": "Hafen-Nebelhorn-Tests",
     "context": "Hafenpersonal führt 14 unabhängige Nebelhorn-Tests durch. Die erwartete Anzahl klar hörbarer Tests ist 11,2. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der nächste Tests scheitert mit Wahrscheinlichkeit $0{,}2$.",
-      "Die erwartete Anzahl hörbarer Tests unter den nächsten $12$ Tests beträgt $4{,}8$.",
-      "Die Varianz der Anzahl audible tests unter 50 tests beträgt 8.",
-      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden audible tests ist kleiner als 0.3.",
-      "Die Wahrscheinlichkeit von höchstens 4 hörbaren Tests unter den nächsten 6 Tests ist größer als 0.5."
+      "Der nächste Test scheitert mit Wahrscheinlichkeit 0,2.",
+      "Die erwartete Anzahl hörbarer Tests unter den nächsten 12 Tests beträgt 4,8.",
+      "Die Varianz der Anzahl hörbarer Tests unter 50 Tests beträgt 8.",
+      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden hörbaren Tests ist kleiner als 0,3.",
+      "Die Wahrscheinlichkeit von höchstens 4 hörbaren Tests unter den nächsten 6 Tests ist größer als 0,5."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{11.2}{14} = 0.8\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
