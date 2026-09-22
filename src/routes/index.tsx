@@ -174,15 +174,15 @@ export function Index() {
       />
 
       <main>
-        <section className="relative overflow-hidden px-4 pt-8 pb-10 sm:px-6 sm:pt-12 sm:pb-14 lg:px-8 lg:pt-14">
+        <section className="relative overflow-hidden px-4 pt-12 pb-16 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <ExamCountdown className="mb-5 sm:mb-6" />
+              <ExamCountdown className="mb-6" />
 
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Step by step preparation for your 2027 WU exam
               </h1>
-              <p className="mt-3 font-display text-lg font-semibold tracking-wide text-muted-foreground sm:text-xl">
+              <p className="mt-4 font-display text-lg font-semibold tracking-wide text-muted-foreground sm:text-xl">
                 WiSo and BBE
               </p>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -191,7 +191,7 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mx-auto mt-10 grid max-w-5xl items-stretch gap-4 md:grid-cols-2 md:gap-6">
+            <div className="mx-auto mt-10 grid max-w-5xl items-stretch gap-5 md:grid-cols-2 md:gap-6">
               {EXAM_OPTIONS.map((exam) => {
                 const isWiso = exam.id === "wiso";
                 return (
@@ -271,7 +271,7 @@ export function Index() {
               })}
             </div>
 
-            <div className="mt-6 text-center">
+            <div className="mt-8 text-center">
               <LocalizedLink
                 to="/bbe-vs-wiso"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
@@ -283,7 +283,7 @@ export function Index() {
           </div>
         </section>
 
-        <section id="why-choose-us" className="relative overflow-hidden bg-why-us-bg px-6 py-16 lg:px-8 lg:py-20">
+        <section id="why-choose-us" className="relative overflow-hidden bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="relative mx-auto max-w-5xl">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
@@ -295,13 +295,13 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mt-10 grid items-start gap-4 sm:grid-cols-2 sm:gap-5">
+            <div className="mt-10 grid items-start gap-5 sm:grid-cols-2 sm:gap-6">
               {FEATURE_CARDS.map((feature) => {
                 const Icon = feature.icon;
                 return (
                   <article
                     key={feature.id}
-                    className="rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-7"
+                    className="rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-8"
                   >
                     <div className="grid h-11 w-11 place-items-center rounded-xl bg-caramel-deep/20 text-caramel-deep">
                       <Icon className="h-5 w-5" />
@@ -341,18 +341,18 @@ export function Index() {
             backgroundPosition: "center",
           }}
         >
-          <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
               A triple-accredited business school with tuition that stays close to free
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:text-lg">
               One two-hour exam sits between your family and a strong degree at almost zero cost.
             </p>
           </div>
         </section>
 
-        <section className="bg-why-us-bg px-6 py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-14">
+        <section className="bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-12">
             <div>
               <h2 className="font-display text-2xl font-semibold text-why-us-fg sm:text-3xl">
                 Capital preservation
@@ -380,7 +380,7 @@ export function Index() {
         </section>
 
         {/* PARENTS — frank audit teaser (shared for BBE & WiSo) */}
-        <section className="relative bg-background px-6 py-16 lg:px-8 lg:py-20">
+        <section className="relative bg-background px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl">
             <div className="text-center">
               <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -394,7 +394,7 @@ export function Index() {
               </p>
             </div>
 
-            <div className="relative mt-8">
+            <div className="relative mt-10">
               <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
                 <p>
                   The WU Vienna entrance exams are not ordinary school tests. They sort a crowded hall
@@ -446,7 +446,7 @@ export function Index() {
             backgroundPosition: "center 30%",
           }}
         >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
+          <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
               Notes from people who sat the exam
             </h2>
@@ -470,7 +470,7 @@ export function Index() {
 
 function SiteFooter() {
   return (
-    <footer className="border-t border-border bg-card px-6 py-12 lg:px-8">
+    <footer className="border-t border-border bg-card px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <p className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">

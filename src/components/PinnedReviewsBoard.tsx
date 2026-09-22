@@ -129,7 +129,7 @@ export function PinnedReviewsBoard({
   className?: string;
 }) {
   return (
-    <section id="reviews" className={cn("relative px-6 py-16 lg:px-8 lg:py-20", className)}>
+    <section id="reviews" className={cn("relative px-4 py-16 sm:px-6 lg:px-8 lg:py-20", className)}>
       <div
         className={cn(
           "pointer-events-none absolute inset-0 opacity-[0.55]",
@@ -149,7 +149,7 @@ export function PinnedReviewsBoard({
       />
 
       <div className="relative mx-auto max-w-7xl">
-        <div className="relative mb-10 max-w-3xl sm:mb-12">
+        <div className="relative mb-10 max-w-3xl">
           <p
             className={cn(
               "mb-3 text-[11px] font-semibold uppercase tracking-[0.22em]",

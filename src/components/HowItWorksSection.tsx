@@ -303,14 +303,14 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   }, [tab, subject, tool, zoomed]);
 
   return (
-    <section id="how-it-works" className="relative bg-background px-3 py-14 sm:px-5 lg:px-6 lg:py-20">
+    <section id="how-it-works" className="relative bg-background px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-[90rem] text-center">
         <h2 className="font-display text-[1.75rem] font-semibold text-foreground sm:text-4xl lg:text-5xl">
           How it works
         </h2>
       </div>
 
-      <div className="mx-auto mt-6 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2 sm:mt-8">
+      <div className="mx-auto mt-8 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2">
         {MAIN_TABS.map((item) => {
           const active = tab === item.key;
           return (
@@ -331,7 +331,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
         })}
       </div>
 
-      <div className="relative mx-auto mt-8 max-w-[90rem]">
+      <div className="relative mx-auto mt-10 max-w-[90rem]">
         <div
           ref={stageRef}
           className="relative rounded-2xl border border-border bg-card px-4 py-4 shadow-sm sm:px-10 sm:py-5 lg:px-12 lg:py-5"
