@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useRef, useState, type CSSProperties } from "react";
+import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import {
   BookOpen,
   ClipboardList,
