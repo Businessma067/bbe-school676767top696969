@@ -853,133 +853,54 @@ body.flashcard-swiping {
 }
 
 .mock-builder-orbit-ring {
-  color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.14);
 }
 
+/* Slow traveling arc — pathLength=100 so dash units are percentages of the ring. */
 .mock-builder-orbit-progress {
-  color: color-mix(in oklab, var(--color-caramel-deep) 75%, white);
-  stroke-dasharray: 84 255;
+  color: var(--color-caramel-deep);
+  stroke-dasharray: 18 82;
   transform-origin: 80px 80px;
   transform: rotate(-90deg);
-  animation: mock-builder-orbit-draw 6.4s cubic-bezier(0.45, 0.05, 0.25, 1) infinite;
-}
-
-.mock-builder-orbit-arm {
-  position: absolute;
-  inset: 0;
-  animation: mock-builder-orbit-spin 6.4s cubic-bezier(0.45, 0.05, 0.25, 1) infinite;
-}
-
-.mock-builder-orbit-token {
-  position: absolute;
-  left: 50%;
-  top: 16.25%;
-  width: 0.55rem;
-  height: 0.55rem;
-  margin-left: -0.275rem;
-  margin-top: -0.275rem;
-  border-radius: 9999px;
-  background: var(--color-caramel-deep);
-  box-shadow:
-    0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 28%, transparent),
-    0 0 14px color-mix(in oklab, var(--color-caramel-deep) 55%, transparent);
+  animation: mock-builder-orbit-draw 14s linear infinite;
+  filter: drop-shadow(0 0 4px color-mix(in oklab, var(--color-caramel-deep) 45%, transparent));
 }
 
 .mock-builder-orbit-dot {
-  border-color: rgba(255, 255, 255, 0.18);
-  background: color-mix(in oklab, var(--color-why-us-card) 70%, #1f1c18);
-  color: color-mix(in oklab, var(--color-why-us-fg) 55%, transparent);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: color-mix(in oklab, var(--color-why-us-card) 72%, #1f1c18);
+  color: color-mix(in oklab, var(--color-why-us-fg) 62%, transparent);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  animation: mock-builder-orbit-step 6.4s ease-in-out infinite;
-  animation-delay: var(--step-delay, 0s);
 }
 
 .mock-builder-orbit-label {
-  color: color-mix(in oklab, var(--color-why-us-fg) 42%, transparent);
-  animation: mock-builder-orbit-label 6.4s ease-in-out infinite;
-  animation-delay: var(--step-delay, 0s);
+  color: color-mix(in oklab, var(--color-why-us-fg) 48%, transparent);
 }
 
 @keyframes mock-builder-orbit-draw {
-  0% {
-    stroke-dashoffset: 0;
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.95;
-  }
-  100% {
-    stroke-dashoffset: -339;
-    opacity: 0.35;
-  }
-}
-
-@keyframes mock-builder-orbit-spin {
   from {
-    transform: rotate(0deg);
+    stroke-dashoffset: 0;
   }
   to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes mock-builder-orbit-step {
-  0%,
-  18%,
-  100% {
-    transform: scale(0.94);
-    border-color: rgba(255, 255, 255, 0.16);
-    background: color-mix(in oklab, var(--color-why-us-card) 70%, #1f1c18);
-    color: color-mix(in oklab, var(--color-why-us-fg) 50%, transparent);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  }
-  4%,
-  14% {
-    transform: scale(1.08);
-    border-color: color-mix(in oklab, var(--color-caramel-deep) 80%, white);
-    background: color-mix(in oklab, var(--color-caramel-deep) 22%, #1a1612);
-    color: #fff4ef;
-    box-shadow:
-      0 0 0 4px color-mix(in oklab, var(--color-caramel-deep) 18%, transparent),
-      0 0 18px color-mix(in oklab, var(--color-caramel-deep) 35%, transparent);
-  }
-}
-
-@keyframes mock-builder-orbit-label {
-  0%,
-  18%,
-  100% {
-    color: color-mix(in oklab, var(--color-why-us-fg) 38%, transparent);
-    opacity: 0.75;
-  }
-  4%,
-  14% {
-    color: color-mix(in oklab, var(--color-caramel-deep) 55%, white);
-    opacity: 1;
+    stroke-dashoffset: -100;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mock-builder-orbit-progress,
-  .mock-builder-orbit-arm,
-  .mock-builder-orbit-dot,
-  .mock-builder-orbit-label {
+  .mock-builder-orbit-progress {
     animation: none;
-  }
-
-  .mock-builder-orbit-arm {
-    opacity: 0;
+    stroke-dasharray: 100 0;
+    opacity: 0.55;
+    filter: none;
   }
 
   .mock-builder-orbit-dot {
-    transform: none;
-    border-color: color-mix(in oklab, var(--color-caramel-deep) 55%, white);
+    border-color: color-mix(in oklab, var(--color-caramel-deep) 50%, white);
     color: #fff4ef;
-    background: color-mix(in oklab, var(--color-caramel-deep) 18%, #1a1612);
+    background: color-mix(in oklab, var(--color-caramel-deep) 16%, #1a1612);
   }
 
   .mock-builder-orbit-label {
-    color: color-mix(in oklab, var(--color-why-us-fg) 70%, transparent);
-    opacity: 1;
+    color: color-mix(in oklab, var(--color-why-us-fg) 72%, transparent);
   }
 }
