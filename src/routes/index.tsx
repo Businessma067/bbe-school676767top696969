@@ -574,7 +574,6 @@ function SiteFooter() {
 }
 
 function MockBuilderOrbit() {
-  // Five evenly spaced steps on the ring (start at top, +72° each).
   const steps = [
     { label: "Topic" },
     { label: "Subtopic" },
@@ -583,12 +582,16 @@ function MockBuilderOrbit() {
     { label: "Start" },
   ] as const;
 
+  const cycleSec = 14;
+  const stepSec = cycleSec / steps.length;
+
   return (
     <div
       className="mock-builder-orbit mt-6 flex flex-1 flex-col items-center justify-center"
       aria-hidden
+      style={{ ["--orbit-cycle" as string]: `${cycleSec}s` }}
     >
-      <div className="relative h-[11.5rem] w-[11.5rem] sm:h-[12.5rem] sm:w-[12.5rem]">
+      <div className="relative h-[12.5rem] w-[12.5rem] sm:h-[13.5rem] sm:w-[13.5rem]">
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 160 160"
@@ -597,7 +600,7 @@ function MockBuilderOrbit() {
           <circle
             cx="80"
             cy="80"
-            r="52"
+            r="48"
             className="mock-builder-orbit-ring"
             stroke="currentColor"
             strokeWidth="1.5"
@@ -605,35 +608,43 @@ function MockBuilderOrbit() {
           <circle
             cx="80"
             cy="80"
-            r="52"
+            r="48"
             className="mock-builder-orbit-progress"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="2.25"
             strokeLinecap="round"
             pathLength={100}
           />
         </svg>
 
         {steps.map((step, index) => {
-          const angle = -90 + index * 72;
+          const angle = -90 + index * (360 / steps.length);
           const rad = (angle * Math.PI) / 180;
-          const dotR = 32.5;
-          const labelR = 46;
-          const x = 50 + Math.cos(rad) * dotR;
-          const y = 50 + Math.sin(rad) * dotR;
+          const dotR = 30;
+          const labelR = 43.5;
+          const dx = 50 + Math.cos(rad) * dotR;
+          const dy = 50 + Math.sin(rad) * dotR;
           const lx = 50 + Math.cos(rad) * labelR;
           const ly = 50 + Math.sin(rad) * labelR;
           return (
             <div key={step.label}>
               <span
-                className="mock-builder-orbit-dot absolute grid h-7 w-7 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border text-[10px] font-semibold tabular-nums sm:h-8 sm:w-8 sm:text-[11px]"
-                style={{ left: `${x}%`, top: `${y}%` }}
+                className="mock-builder-orbit-dot absolute grid h-7 w-7 place-items-center rounded-full border text-[10px] font-semibold tabular-nums sm:h-8 sm:w-8 sm:text-[11px]"
+                style={{
+                  left: `${dx}%`,
+                  top: `${dy}%`,
+                  animationDelay: `${index * stepSec}s`,
+                }}
               >
                 {index + 1}
               </span>
               <span
-                className="mock-builder-orbit-label absolute -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-[10px] font-semibold tracking-wide uppercase sm:text-[11px]"
-                style={{ left: `${lx}%`, top: `${ly}%` }}
+                className="mock-builder-orbit-label absolute w-[4.6rem] text-center text-[10px] font-semibold leading-tight tracking-wide uppercase sm:w-[5rem] sm:text-[11px]"
+                style={{
+                  left: `${lx}%`,
+                  top: `${ly}%`,
+                  animationDelay: `${index * stepSec}s`,
+                }}
               >
                 {step.label}
               </span>

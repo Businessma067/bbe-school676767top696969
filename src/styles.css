@@ -850,20 +850,24 @@ body.flashcard-swiping {
 /* Why Us — Custom mock builder process orbit */
 .mock-builder-orbit {
   color: color-mix(in oklab, var(--color-caramel-deep) 88%, white);
+  --orbit-cycle: 14s;
 }
 
 .mock-builder-orbit-ring {
   color: rgba(255, 255, 255, 0.14);
 }
 
-/* Slow traveling arc — pathLength=100 so dash units are percentages of the ring. */
+/*
+  Traveling arc on pathLength=100.
+  Tip reaches each node every 20% of the lap (5 steps).
+*/
 .mock-builder-orbit-progress {
   color: var(--color-caramel-deep);
-  stroke-dasharray: 18 82;
+  stroke-dasharray: 14 86;
   transform-origin: 80px 80px;
   transform: rotate(-90deg);
-  animation: mock-builder-orbit-draw 14s linear infinite;
-  filter: drop-shadow(0 0 4px color-mix(in oklab, var(--color-caramel-deep) 45%, transparent));
+  animation: mock-builder-orbit-draw var(--orbit-cycle) linear infinite;
+  filter: drop-shadow(0 0 5px color-mix(in oklab, var(--color-caramel-deep) 50%, transparent));
 }
 
 .mock-builder-orbit-dot {
@@ -871,10 +875,14 @@ body.flashcard-swiping {
   background: color-mix(in oklab, var(--color-why-us-card) 72%, #1f1c18);
   color: color-mix(in oklab, var(--color-why-us-fg) 62%, transparent);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transform: translate(-50%, -50%);
+  animation: mock-builder-orbit-dot-hit var(--orbit-cycle) linear infinite;
 }
 
 .mock-builder-orbit-label {
   color: color-mix(in oklab, var(--color-why-us-fg) 48%, transparent);
+  transform: translate(-50%, -50%);
+  animation: mock-builder-orbit-label-hit var(--orbit-cycle) linear infinite;
 }
 
 @keyframes mock-builder-orbit-draw {
@@ -886,11 +894,53 @@ body.flashcard-swiping {
   }
 }
 
+@keyframes mock-builder-orbit-dot-hit {
+  0%,
+  2%,
+  18%,
+  100% {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: color-mix(in oklab, var(--color-why-us-card) 72%, #1f1c18);
+    color: color-mix(in oklab, var(--color-why-us-fg) 62%, transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  4%,
+  12% {
+    border-color: color-mix(in oklab, var(--color-caramel-deep) 80%, white);
+    background: color-mix(in oklab, var(--color-caramel-deep) 30%, #1a1612);
+    color: #fff4ef;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 22%, transparent),
+      0 0 14px color-mix(in oklab, var(--color-caramel-deep) 45%, transparent);
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@keyframes mock-builder-orbit-label-hit {
+  0%,
+  2%,
+  18%,
+  100% {
+    color: color-mix(in oklab, var(--color-why-us-fg) 48%, transparent);
+  }
+  4%,
+  12% {
+    color: color-mix(in oklab, var(--color-caramel-deep) 45%, white);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .mock-builder-orbit-progress {
+  .mock-builder-orbit-progress,
+  .mock-builder-orbit-dot,
+  .mock-builder-orbit-label {
     animation: none;
+  }
+
+  .mock-builder-orbit-progress {
     stroke-dasharray: 100 0;
-    opacity: 0.55;
+    opacity: 0.45;
     filter: none;
   }
 
@@ -898,6 +948,8 @@ body.flashcard-swiping {
     border-color: color-mix(in oklab, var(--color-caramel-deep) 50%, white);
     color: #fff4ef;
     background: color-mix(in oklab, var(--color-caramel-deep) 16%, #1a1612);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transform: translate(-50%, -50%);
   }
 
   .mock-builder-orbit-label {
