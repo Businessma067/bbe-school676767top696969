@@ -631,8 +631,7 @@ function MockBuilderOrbit() {
           const dy = 50 + Math.sin(rad) * dotR;
           const lx = 50 + Math.cos(rad) * labelR;
           const ly = 50 + Math.sin(rad) * labelR;
-          // Tip is dashLen ahead of the trail. Fire when tip first touches this node.
-          // Negative delay wraps correctly in CSS so step 0 lights as the tip hits Topic.
+          // Fire slightly before the tip reaches the node center.
           const delay = `${index * stepSec - tipLeadSec}s`;
           return (
             <div key={step.label}>
