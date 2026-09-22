@@ -752,7 +752,7 @@ body.flashcard-swiping {
   }
 }
 
-/* Pinned acceptance notes — paper cards hanging from binder clips */
+/* Pinned acceptance notes — paper cards with pulse pin dots */
 .review-pin-paper {
   transform: translateY(0);
   transition:
@@ -773,6 +773,62 @@ body.flashcard-swiping {
   transform: translateY(-3px);
 }
 
+.review-pin-dot {
+  display: grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.review-pin-dot-core,
+.review-pin-dot-ring {
+  grid-area: 1 / 1;
+  border-radius: 9999px;
+}
+
+.review-pin-dot-core {
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--review-dot, #c2643a);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--review-dot, #c2643a) 35%, transparent);
+}
+
+.review-pin-dot-ring {
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid var(--review-dot, #c2643a);
+  opacity: 0.55;
+  animation: review-dot-pulse 2.8s ease-out infinite;
+}
+
+.review-pin-dot--orange {
+  --review-dot: var(--color-caramel-deep);
+}
+
+.review-pin-dot--wiso {
+  --review-dot: #c2643a;
+}
+
+.review-pin:hover .review-pin-dot-core {
+  transform: scale(1.08);
+  transition: transform 400ms ease;
+}
+
+@keyframes review-dot-pulse {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .review-pin-paper,
   .review-pin:hover .review-pin-paper,
@@ -780,5 +836,11 @@ body.flashcard-swiping {
     transition: none;
     transform: none;
     filter: none;
+  }
+
+  .review-pin-dot-ring {
+    animation: none;
+    opacity: 0.35;
+    transform: scale(1);
   }
 }

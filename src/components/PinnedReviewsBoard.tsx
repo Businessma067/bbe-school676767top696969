@@ -11,46 +11,19 @@ export type PinnedReview = {
 
 type Accent = "default" | "wiso";
 
-function BinderClip({ accent }: { accent: Accent }) {
-  const shell = accent === "wiso" ? "#384264" : "#2f2c27";
-  const shellEdge = accent === "wiso" ? "#55628a" : "#4e4a42";
-  const wire = accent === "wiso" ? "#c2c8d8" : "#d7d2c8";
+function PulseDot({ accent, delayMs }: { accent: Accent; delayMs: number }) {
   return (
-    <svg
-      viewBox="0 0 64 70"
-      className="pointer-events-none h-14 w-12 drop-shadow-[0_2px_2px_rgba(0,0,0,0.22)]"
+    <span
+      className={cn(
+        "review-pin-dot pointer-events-none absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2",
+        accent === "wiso" ? "review-pin-dot--wiso" : "review-pin-dot--orange",
+      )}
+      style={{ animationDelay: `${delayMs}ms` }}
       aria-hidden
     >
-      {/* left binder handle */}
-      <path
-        d="M22 34 V16 C22 9.5 26.8 4.5 32 4.5"
-        fill="none"
-        stroke={wire}
-        strokeWidth="2.6"
-        strokeLinecap="round"
-      />
-      {/* right binder handle */}
-      <path
-        d="M42 34 V16 C42 9.5 37.2 4.5 32 4.5"
-        fill="none"
-        stroke={wire}
-        strokeWidth="2.6"
-        strokeLinecap="round"
-      />
-      {/* folded metal body */}
-      <path
-        d="M14 32 H50 L46 62 H18 Z"
-        fill={shell}
-      />
-      <path
-        d="M18 36 H46 L43.5 56 H20.5 Z"
-        fill={shellEdge}
-        opacity="0.55"
-      />
-      {/* top fold lip */}
-      <rect x="16" y="30" width="32" height="6" rx="1.5" fill={shellEdge} />
-      <rect x="20" y="31.5" width="24" height="2" rx="1" fill={wire} opacity="0.35" />
-    </svg>
+      <span className="review-pin-dot-ring" />
+      <span className="review-pin-dot-core" />
+    </span>
   );
 }
 
@@ -58,27 +31,27 @@ function PinnedReviewCard({
   report,
   accent,
   badgeExtra,
+  delayMs,
 }: {
   report: PinnedReview;
   accent: Accent;
   badgeExtra?: ReactNode;
+  delayMs: number;
 }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <article className="review-pin group relative flex h-full flex-col pt-8 hover:z-10">
-      <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 transition-transform duration-500 group-hover:-translate-y-0.5">
-        <BinderClip accent={accent} />
-      </div>
+    <article className="review-pin group relative flex h-full flex-col pt-3 hover:z-10">
+      <PulseDot accent={accent} delayMs={delayMs} />
 
       <div
         className={cn(
-          "relative flex h-full flex-col overflow-hidden rounded-[3px] border px-5 pb-5 pt-9",
+          "relative flex h-full flex-col overflow-hidden rounded-[3px] border px-5 pb-5 pt-7",
           "bg-[color-mix(in_oklab,var(--color-card)_88%,#faf7f1)] dark:bg-[color-mix(in_oklab,var(--color-card)_90%,#2c281f)]",
           "border-border/70",
           "shadow-[0_18px_34px_-22px_rgba(20,18,14,0.55),0_1px_0_rgba(255,255,255,0.55)_inset]",
           "dark:shadow-[0_18px_34px_-22px_rgba(0,0,0,0.65),0_1px_0_rgba(255,255,255,0.06)_inset]",
-          "before:pointer-events-none before:absolute before:inset-x-3 before:top-[3.25rem] before:h-px before:bg-foreground/[0.06]",
+          "before:pointer-events-none before:absolute before:inset-x-3 before:top-5 before:h-px before:bg-foreground/[0.06]",
           "after:pointer-events-none after:absolute after:inset-y-4 after:left-0 after:w-[3px] after:rounded-r-full",
           accent === "wiso"
             ? "after:bg-indigo-600/60 dark:after:bg-indigo-400/50"
@@ -88,7 +61,7 @@ function PinnedReviewCard({
       >
         <span
           className={cn(
-            "pointer-events-none absolute -left-1 top-4 select-none font-display text-6xl leading-none opacity-[0.09]",
+            "pointer-events-none absolute -left-1 top-3 select-none font-display text-6xl leading-none opacity-[0.09]",
             accent === "wiso" ? "text-indigo-800 dark:text-indigo-200" : "text-foreground",
           )}
           aria-hidden
@@ -187,23 +160,14 @@ export function PinnedReviewsBoard({
           </h2>
         </div>
 
-        <div className="relative rounded-[4px] border border-border/60 bg-[color-mix(in_oklab,var(--color-muted)_35%,var(--color-card))] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] sm:p-7 dark:bg-[color-mix(in_oklab,var(--color-muted)_25%,var(--color-card))] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
-          <div
-            className={cn(
-              "pointer-events-none absolute left-6 right-6 top-[1.65rem] hidden h-px sm:block",
-              accent === "wiso"
-                ? "bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"
-                : "bg-gradient-to-r from-transparent via-foreground/30 to-transparent",
-            )}
-            aria-hidden
-          />
-
+        <div className="relative rounded-[4px] border border-border/60 bg-[color-mix(in_oklab,var(--color-muted)_35%,var(--color-card))] p-4 pt-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] sm:p-7 sm:pt-8 dark:bg-[color-mix(in_oklab,var(--color-muted)_25%,var(--color-card))] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
           <div className="grid items-start gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-7">
-            {reports.map((report) => (
+            {reports.map((report, index) => (
               <PinnedReviewCard
                 key={report.id}
                 report={report}
                 accent={accent}
+                delayMs={(index % 6) * 280}
                 badgeExtra={badgeExtraFor?.(report)}
               />
             ))}
