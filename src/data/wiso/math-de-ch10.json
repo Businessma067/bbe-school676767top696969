@@ -1493,7 +1493,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreibe $8$ als reine Intensität von $2$ um und wenden Sie das Machtgesetz für eine beliebige Basis $b>1$ an.\n\n $$8=2^{3}$$\n\n $$8=8$$\n\n $$\\log_{b}8=\\log_{b}(2^{3})$$\n\n $$\n\\log_{b}8=\\log_{b}(8) = 3\\log_{b}2\n$$\n\nBei $f(2)=k$ ist dies genau $f(8)=3k$, also ist die Dreifach-Beziehung konsistent.\n\nDie Schrifthöhe $k$ storniert im Verhältnis $f(8)/f(2)=3$, wenn $k\\neq 0$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nWenn $k=1$, dann $f(2)=\\log_{b}2=1$. Die einzigartige Basis, die Höhe $1$ am Eingang $2$ Strategien zurückgibt, ist die Basis selbst.\n\n $$ b = 2$$\n\n $k=1$ pinnt die Basis bei $2$.\n\n $b^{1}=2$ zwingt die Basis auf $2$, wenn $k=1$ gleich ist.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nWenn $k=1$, dann $f(2)=\\log_{b}2=1$. Die einzigartige Basis, die Höhe $1$ am Eingang $2$ zurückgibt, ist die Basis selbst.\n\n $$ b = 2$$\n\n $k=1$ pinnt die Basis bei $2$.\n\n $b^{1}=2$ zwingt die Basis auf $2$, wenn $k=1$ gleich ist.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nMit $k=1$ und $b=2$ bereits erholt, bewerten Sie bei $16=2^{4}$.\n\n $$\nf(16) = \\log_{2}16 = \\log_{2}(2^{4}) = 4\n$$\n\nDie behauptete Höhe $4$ entspricht.\n\nVier multiplikative Faktoren von $2$ erhöhen die Basis- $2$ -Log von $4$.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nDie Beziehung $\\log_{b}8=3\\log_{b}2$ ist eine Instanz des Machtgesetzes und hängt nicht von der jeweiligen Basis ab.\n\n $$\\log_{b}(2^{3}) = 3\\log_{b}2\\qquad(b>1)$$\n\nDaher hält $f(8)=3f(2)$ für jede Basis $b>1$.\n\nFür diese Power-Identität ist keine spezielle Wahl von $b$ über $b>1$ hinaus erforderlich.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nDas Machtgesetz bewegt einen echten Exponenten über einen Logarithmus.\n\n $$\\log(a^{c}) = c\\log a\\qquad(a>0)$$\n\nEs ist eine der drei grundlegenden Logarithmus-Identitäten.\n\nIn exponential language, $b^{c\\log a}=(b^{\\log a})^{c}=a^{c}$.\n\nKonkrete Prüfung der umformulierten Behauptung. Berechnen $\\log_2 64=6$ und $2\\cdot3=6$.\n\nDie Aussage ist richtig."
@@ -1939,7 +1939,7 @@
   },
   "MATH 10.3.10": {
     "title": "Angewandte Buchstaben — BIP-pro-Kopf-Intensität über Logs",
-    "context": "Gesamt BIP und Bevölkerung folgen $Y(t)=Y_0 e^{gt}$ und MATHitude Strategien mit $Y_0=100$, $g=0.03$, MATH keinerlei Daten,. Pro Kopf Durchführung ist MATH Anteilseigner6HEIM.",
+    "context": "Gesamt BIP und Bevölkerung folgen $Y(t)=Y_0 e^{gt}$ und MATHitude mit $Y_0=100$, $g=0.03$, MATH keinerlei Daten,. Pro Kopf Durchführung ist MATH Anteilseigner6HEIM.",
     "statements": [
       "Die Veränderung des Bruttosozialprodukts pro Kopf über $20$ Jahre entspricht $(g-p)t$.",
       "Diese Protokolländerung übersteigt $0.5$.",
