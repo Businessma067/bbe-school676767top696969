@@ -196,6 +196,45 @@ function CustomMockBuilderPage() {
     setBuilding(true);
     setError(null);
     try {
+      // How-it-works recording can inject a prebuilt mock (see scripts/record-bbe-mock-builder.py).
+      const hiwRow =
+        typeof window !== "undefined"
+          ? (
+              window as unknown as {
+                __HIW_CUSTOM_MOCK?: {
+                  id: string;
+                  user_id: string;
+                  subject: CustomMockSubjectId;
+                  title: string;
+                  chapters: string[];
+                  question_count: number;
+                  duration_minutes: number;
+                  points_total: number;
+                  questions: unknown[];
+                  created_at: string;
+                };
+              }
+            ).__HIW_CUSTOM_MOCK
+          : undefined;
+      if (hiwRow?.id && hiwRow.questions?.length) {
+        cacheCustomMock(hiwRow as never);
+        const summary: CustomMockSummary = {
+          id: hiwRow.id,
+          examId: `custom-${hiwRow.id}`,
+          title: hiwRow.title,
+          subject: hiwRow.subject,
+          chapters: hiwRow.chapters,
+          questionCount: hiwRow.question_count,
+          durationMinutes: hiwRow.duration_minutes,
+          pointsTotal: hiwRow.points_total,
+          createdAt: hiwRow.created_at,
+        };
+        setHistory((prev) => [summary, ...(prev ?? []).filter((m) => m.id !== summary.id)]);
+        setWithAnswerSheet(true);
+        setSelected(summary);
+        return;
+      }
+
       const args: GenerateArgs = {
         subject,
         subtopics: selectedSubtopics,
