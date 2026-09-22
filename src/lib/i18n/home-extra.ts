@@ -114,6 +114,17 @@ export const homeExtraDe: Record<string, string> = {
   "Exam day has arrived": "Der Prüfungstag ist da",
   Previous: "Zurück",
   Next: "Weiter",
+
+  // ---------- Compare plans ----------
+  "German Reading": "Deutschlesen",
+  Included: "Enthalten",
+  "WiSo mocks with answer sheets": "WiSo-Mocks mit Antwortbögen",
+  "7+ exams with answer sheets": "7+ Prüfungen mit Antwortbögen",
+  "1000+": "1000+",
+  "600+": "600+",
+  "400+": "400+",
+  "1500+": "1500+",
+  "800+": "800+",
 };
 
 export const homeExtraUk: Record<string, string> = {
@@ -227,4 +238,15 @@ export const homeExtraUk: Record<string, string> = {
   "Exam day has arrived": "День іспиту настав",
   Previous: "Назад",
   Next: "Далі",
+
+  // ---------- Compare plans ----------
+  "German Reading": "Німецьке читання",
+  Included: "Включено",
+  "WiSo mocks with answer sheets": "Моки WiSo з бланками відповідей",
+  "7+ exams with answer sheets": "7+ іспитів із бланками відповідей",
+  "1000+": "1000+",
+  "600+": "600+",
+  "400+": "400+",
+  "1500+": "1500+",
+  "800+": "800+",
 };
