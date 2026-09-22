@@ -145,8 +145,8 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
     body: "Drill Wirtschaft verstehen terms, math formulas, and German reading vocabulary. Flip each card, rate how well you know it, and build recall before the exam.",
     cta: "Open Flashcards",
     href: "/wiso/flashcards",
-    video: "/how-it-works/flashcards.mp4",
-    poster: "/how-it-works/flashcards-poster.jpg",
+    video: "/how-it-works/wiso-flashcards.mp4",
+    poster: "/how-it-works/wiso-flashcards-poster.jpg",
     aspect: "3420 / 1966",
   },
   {
@@ -156,8 +156,8 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
     body: "Pair each term with its definition in a timed matching board. Same WiSo decks as the flashcards, just a different drill.",
     cta: "Open Matching",
     href: "/wiso/matching",
-    video: "/how-it-works/matching.mp4",
-    poster: "/how-it-works/matching-poster.jpg",
+    video: "/how-it-works/wiso-matching.mp4",
+    poster: "/how-it-works/wiso-matching-poster.jpg",
     aspect: "3420 / 1966",
   },
   {
@@ -167,8 +167,8 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
     body: "The tutor picks fresh WiSo theory questions every run. Answer, get instant feedback, and keep drilling until the wording feels familiar.",
     cta: "Open Tutor Exam",
     href: "/wiso/tutor-exam",
-    video: "/how-it-works/tutor-exam.mp4",
-    poster: "/how-it-works/tutor-exam-poster.jpg",
+    video: "/how-it-works/wiso-tutor-exam.mp4",
+    poster: "/how-it-works/wiso-tutor-exam-poster.jpg",
     aspect: "3420 / 1966",
   },
 ];

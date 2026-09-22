@@ -167,6 +167,17 @@ export function FlashcardSubjectView({
     let next = buildDeck(progressKey, subject.sections, sectionId);
     // Demo: only the first card is available.
     if (demoRevealLocked) next = next.slice(0, 1);
+    // How-it-works recording can pin the opening term (see scripts/record-*-flashcards.py).
+    const hiwStart =
+      typeof window !== "undefined"
+        ? (window as unknown as { __HIW_FLASH_START?: string }).__HIW_FLASH_START
+        : undefined;
+    if (typeof hiwStart === "string" && hiwStart && !demoRevealLocked) {
+      const startIdx = next.findIndex((c) => c.term === hiwStart);
+      if (startIdx > 0) {
+        next = [...next.slice(startIdx), ...next.slice(0, startIdx)];
+      }
+    }
     setDeck(next);
 
     // English modes share the same words — stay on the current word when switching.
