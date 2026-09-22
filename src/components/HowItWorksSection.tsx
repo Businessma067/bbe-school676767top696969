@@ -5,8 +5,7 @@ import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { cn } from "@/lib/utils";
 
-/** Mock exams / Mock Builder temporarily hidden from How it works. */
-type MainTab = "course" | "games";
+type MainTab = "course" | "mock-builder" | "games";
 type CourseSubject = "economics" | "math" | "english" | "german";
 type StudyTool = "flashcards" | "matching" | "tutor-exam";
 export type HowItWorksTrack = "bbe" | "wiso";
@@ -24,9 +23,29 @@ type ShowcaseSlide = {
   aspect: string;
 };
 
-const MAIN_TABS: { key: MainTab; label: string }[] = [
+const BBE_MAIN_TABS: { key: MainTab; label: string }[] = [
+  { key: "course", label: "Course" },
+  { key: "mock-builder", label: "Mock Builder" },
+  { key: "games", label: "Study tools" },
+];
+
+const WISO_MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
   { key: "games", label: "Study tools" },
+];
+
+const BBE_MOCK_BUILDER: ShowcaseSlide[] = [
+  {
+    key: "mock-builder",
+    label: "Mock Builder",
+    title: "Build a mock around your weak spots",
+    body: "Open chapters, pick subtopics, shape the mixer, set the question count, then start and mark the first question — a mock built from the Full Course.",
+    cta: "Open Mock Builder",
+    href: "/products/custom-mock-builder",
+    video: "/how-it-works/mock-builder.mp4",
+    poster: "/how-it-works/mock-builder-poster.jpg",
+    aspect: "3420 / 1966",
+  },
 ];
 
 const BBE_COURSE_SUBJECTS: ShowcaseSlide[] = [
@@ -182,6 +201,7 @@ const INITIAL_LIGHTBOX_ZOOM = 1;
 export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }) {
   const courseSubjects = track === "wiso" ? WISO_COURSE_SUBJECTS : BBE_COURSE_SUBJECTS;
   const studyTools = track === "wiso" ? WISO_STUDY_TOOLS : BBE_STUDY_TOOLS;
+  const mainTabs = track === "wiso" ? WISO_MAIN_TABS : BBE_MAIN_TABS;
   const [tab, setTab] = useState<MainTab>("course");
   const [subject, setSubject] = useState<CourseSubject>(
     track === "wiso" ? "economics" : "economics",
@@ -193,8 +213,9 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
 
-  const slides = tab === "games" ? studyTools : courseSubjects;
-  const activeKey = tab === "games" ? tool : subject;
+  const slides =
+    tab === "games" ? studyTools : tab === "mock-builder" ? BBE_MOCK_BUILDER : courseSubjects;
+  const activeKey = tab === "games" ? tool : tab === "mock-builder" ? "mock-builder" : subject;
   const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
 
@@ -202,12 +223,12 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     const i = (next + slides.length) % slides.length;
     const key = slides[i].key;
     if (tab === "games") setTool(key as StudyTool);
-    else setSubject(key as CourseSubject);
+    else if (tab !== "mock-builder") setSubject(key as CourseSubject);
   };
 
   const setSlideKey = (key: string) => {
     if (tab === "games") setTool(key as StudyTool);
-    else setSubject(key as CourseSubject);
+    else if (tab !== "mock-builder") setSubject(key as CourseSubject);
   };
 
   const openZoom = () => {
@@ -311,7 +332,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
       </div>
 
       <div className="mx-auto mt-8 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2">
-        {MAIN_TABS.map((item) => {
+        {mainTabs.map((item) => {
           const active = tab === item.key;
           return (
             <button
