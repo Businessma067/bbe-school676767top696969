@@ -238,13 +238,13 @@
       "Die Aussage „$x \\in A \\Rightarrow x \\in B$“ ist für alle x wahr."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSchreibe die Intervallbedingungen:\n\n$$A=(0,10]\\iff 0<x\\le 10$$\n\n$$B=[5,15)\\iff 5\\le x<15$$\n\nZugehörigkeit zu beiden verlangt beide Ungleichungen:\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nDie strengere untere Schranke ist $5$, die strengere obere ist $10$:\n\n$$5\\le x\\le 10$$\n\n$$A\\cap B=[5,10]$$\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\nSchreibe die Intervallbedingungen:\n\n$$A=(0,10]\\genau dann wenn 0<x\\le 10$$\n\n$$B=[5,15)\\genau dann wenn 5\\le x<15$$\n\nZugehörigkeit zu beiden verlangt beide Ungleichungen:\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nDie strengere untere Schranke ist $5$, die strengere obere ist $10$:\n\n$$5\\le x\\le 10$$\n\n$$A\\cap B=[5,10]$$\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\nZugehörigkeit zur Vereinigung verlangt mindestens eine der Bedingungen\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nDie linkesten Punkte kommen aus $A$, also $x>0$. Die rechtesten kommen aus $B$, also $x<15$. Am rechten Endpunkt von $A$:\n\n$$10\\in A$$\n\n$$10<15$$\n\nalso ist $10$ enthalten. Aber $15$ selbst erfüllt $x<15$ nicht. Auch enthält $A$ niemals $0$. Folglich\n\n$$A\\cup B=(0,15)$$\n\nDie Behauptung schreibt $(0,15]$ und schließt $15$ fälschlich ein.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nPrüfe $x=10$ gegen beide Intervalle:\n\n$$0<10\\le 10$$\n\nalso $10\\in A$. Und\n\n$$5\\le 10<15$$\n\nalso $10\\in B$. Daher\n\n$$10\\in A\\cap B$$\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nDie Differenz $A\\setminus B$ braucht $x\\in A$ und $x\\notin B$. Prüfe $x=5$:\n\n$$5\\le 5<15$$\n\nalso $5\\in B$. Daher\n\n$$5\\notin A\\setminus B$$\n\nobwohl $5\\in A$, weil $0<5\\le 10$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie Implikation $x\\in A\\Rightarrow x\\in B$ scheitert, wenn ein Punkt von $A$ nicht in $B$ liegt. Nimm\n\n$$x=1$$\n\n$$0<1\\le 10$$\n\nalso $1\\in A$. Aber\n\n$$5\\le 1<15$$\n\nist falsch, also $1\\notin B$. Die Implikation gilt nicht für alle $x$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Übersetze Klammern zuerst in Ungleichungen.\n\n$$A=(0,10] \\iff 0 < x \\le 10, \\qquad B=[5,15) \\iff 5 \\le x < 15.$$\n\nDie Schnittmenge nimmt die strengeren Schranken. Die Vereinigung läuft vom linkesten offenen Ende zum rechtesten offenen Ende. Die Differenz $A\\setminus B$ enthält Punkte von $A$, die nicht in $B$ liegen. Die Implikation $x\\in A \\Rightarrow x\\in B$ für alle $x$ ist die Inklusion $A\\subseteq B$."
+    "solution_overview": "Übersetze Klammern zuerst in Ungleichungen.\n\n$$A=(0,10] \\genau dann wenn 0 < x \\le 10, \\qquad B=[5,15) \\genau dann wenn 5 \\le x < 15.$$\n\nDie Schnittmenge nimmt die strengeren Schranken. Die Vereinigung läuft vom linkesten offenen Ende zum rechtesten offenen Ende. Die Differenz $A\\setminus B$ enthält Punkte von $A$, die nicht in $B$ liegen. Die Implikation $x\\in A \\Rightarrow x\\in B$ für alle $x$ ist die Inklusion $A\\subseteq B$."
   },
   "MATH 1.14": {
     "title": "Drei-Museen-Besuche und Inklusion-Exklusion",
@@ -922,17 +922,17 @@
       "Wenn das Schulden-Einkommens-Verhältnis einer Antragstellerin unter 40% liegt, wird der Kredit unabhängig von der Bonitätsnote auf jeden Fall bewilligt."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Konjunktion verlangt, dass beide Bankprüfungen gelten. Antragstellerin P erfüllt den Bonitätsprüfung und den Ratio-Prüfung:\n\n$$750\\ge 700$$\n\n$$35\\%<40\\%$$\n\nDaher\n\n$$\nR(P)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}\n$$\n\nDie Behauptung sagt, P erfülle beide geforderten Bedingungen — das stimmt.\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\nDie Konjunktion verlangt, dass beide Bankprüfungen gelten. Antragstellerin P erfüllt die Bonitätsprüfung und die Ratio-Prüfung:\n\n$$750\\ge 700$$\n\n$$35\\%<40\\%$$\n\nDaher\n\n$$\nR(P)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}\n$$\n\nDie Behauptung sagt, P erfülle beide geforderten Bedingungen — das stimmt.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\nDie Bankregel lautet „Bewilligung nur wenn $R$“, also\n\n$$L\\Rightarrow R$$\n\nnicht die Umkehrung $R\\Rightarrow L$. Dass P beide Prüfungen erfüllt, erzwingt die Bewilligung nicht. Beide Wahrheitswerte von $L$ wären mit $R=\\mathrm{T}$ verträglich.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nQ scheitert, sobald einer der Prüfungen scheitert. Antragstellerin Q besteht den Bonitätsprüfung:\n\n$$720\\ge 700$$\n\nDer Ratio-Prüfung scheitert:\n\n$$45\\%<40\\%$$\n\nist falsch. Daher gilt nicht beides.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nQ scheitert, sobald einer der Prüfungen scheitert. Antragstellerin Q besteht die Bonitätsprüfung:\n\n$$720\\ge 700$$\n\nDie Ratio-Prüfung scheitert:\n\n$$45\\%<40\\%$$\n\nist falsch. Daher gilt nicht beides.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nAus $L\\Rightarrow R$ folgt die Kontraposition\n\n$$\\neg R\\Rightarrow\\neg L$$\n\nQ hat $\\neg R$, also folgt $\\neg L$: der Kredit wird nicht bewilligt.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Bank verlangt die Konjunktion beider Bedingungen. Ein gutes Ratio allein ohne ausreichende Bonität erfüllt $R$ nicht und erzwingt daher keine Bewilligung.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Schreibe $R$ für die Bankanforderung (Bonität mindestens $700$ und Schulden-Einkommens-Verhältnis unter $40\\%$) und $L$ für „der Kredit wird bewilligt“. Die Formulierung ist „bewilligt nur wenn $R$“, also $L\\Rightarrow R$. Das ist notwendig, nicht hinreichend. P erfüllt $R$; Q nicht. Aus $\\neg R$ folgt $\\neg L$, aber aus $R$ folgt nicht $L$."
   },
   "MATH 1.50": {
-    "title": "Der Diskursuniversum ist die Menge der reellen Zahlen",
-    "context": "Die Grundmenge (Universe of Discourse) ist die Menge der reellen Zahlen $\\mathbb{R}$.",
+    "title": "Die Grundmenge ist die Menge der reellen Zahlen $\\mathbb{R}$",
+    "context": "Die Grundmenge ist die Menge der reellen Zahlen $\\mathbb{R}$.",
     "statements": [
       "Die Negation von \"$\\forall x\\, (x^2 \\ge 0)$\" ist \"$\\exists x\\, (x^2 < 0)$\".",
       "Die Aussage \"$\\exists x\\, (x^2 = -1)$\" ist wahr.",
@@ -1160,7 +1160,7 @@
   },
   "MATH 1.62": {
     "title": "Senioren-Transitrabatt: Regel",
-    "context": "Ein Transitrabatt gilt für Fahrgäste, die mindestens 65 Jahre alt sind UND (eine anerkannte Behinderung haben ODER ein Jahreseinkommen unter \\$20.000 haben). Fahrgast P ist 70, hat keine Behinderung und verdient \\$18.000. Fahrgast Q ist 67, hat eine anerkannte Behinderung und verdient \\$50.000. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Ein Transitrabatt gilt für Fahrgäste, die mindestens 65 Jahre alt sind UND (eine anerkannte Behinderung haben ODER ein Jahreseinkommen unter \\$20.000 haben). Fahrgast P ist 70, hat keine Behinderung und verdient \\$18.000. Fahrgast Q ist 67, hat eine anerkannte Behinderung und verdient \\$50.000. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Fahrgast P erfüllt die Voraussetzungen für den Rabatt.",
       "Fahrgast Q (67 Jahre, anerkannte Behinderung, Einkommen \\$50.000) erfüllt die Voraussetzungen für den Rabatt NICHT, weil das Einkommen zu hoch ist.",
@@ -1241,7 +1241,7 @@
       "Die Negation dieser Behauptung lautet: „Eine Studierende lernt mindestens 10 Stunden und besteht nicht.“",
       "Die Umkehrung „Wenn eine Studierende besteht, dann hat sie mindestens 10 Stunden gelernt“ muss wahr sein, sobald die Originalbehauptung wahr ist.",
       "Anna besteht die Prüfung, ohne überhaupt zu lernen (sie kannte den Stoff bereits). Das ist ein Gegenbeispiel zur Umkehrung, aber nicht zur Originalbehauptung.",
-      "Die Form „Wenn eine Studierende weniger als 10 Stunden lernt, besteht sie nicht“ ist das logische Äquivalent der Kontraposition.",
+      "Die Inverse „Wenn eine Studierende weniger als 10 Stunden lernt, besteht sie nicht“ ist das logische Äquivalent der Kontraposition.",
       "Wenn wir wissen, dass eine Studierende nicht bestanden hat, dürfen wir über die Kontraposition schließen, dass sie weniger als 10 Stunden gelernt hat."
     ],
     "tactical_explanations": [
@@ -1444,99 +1444,99 @@
     "solution_overview": "Mindestens 250 Stunden sind notwendig, nicht hinreichend. Unter 250 Stunden folgt keine Lizenz. Über 250 Stunden ohne Lizenz ist möglich, wie Pilot A zeigt."
   },
   "MATH 1.77": {
-    "title": "Bankkreditbewilligung",
-    "context": "Die Kreditgenehmigungsregel einer Bank besagt: Ein Antragsteller wird genehmigt, wenn und nur [(Kredit-Score ist mindestens 700) ODER (hat einen qualifizierten Mitunterzeichner)] UND B.S wirrm.sp.,rm.emkwm., ESsermingem. Antragsteller Q hat eine Kreditwürdigkeit von 720, kein Mitunterzeichner und ein Schulden-Einkommens-Verhältnis von 45.",
+    "title": "Bankkredit: Genehmigungsregel",
+    "context": "Die Kreditgenehmigungsregel einer Bank lautet: Eine Antragstellerin wird genau dann genehmigt, wenn [(Bonitätsnote mindestens 700) ODER (qualifizierte Mithaftende vorhanden)] UND (Schulden-Einkommens-Verhältnis unter 40\\%). Antragstellerin P hat Bonitätsnote 650, eine qualifizierte Mithaftende und ein Schulden-Einkommens-Verhältnis von 35\\%. Antragstellerin Q hat Bonitätsnote 720, keine Mithaftende und ein Schulden-Einkommens-Verhältnis von 45\\%.",
     "statements": [
-      "Der Antragsteller P, mit einem Kredit-Score von 650, einem qualifizierten Mit-Unternehmer und einem Verschuldungsverhältnis von 35%, wird für das Darlehen genehmigt, weil sein Kredit-Score allein unter 700 liegt.",
-      "Antragsteller Q ist für das Darlehen genehmigt.",
-      "Wennlag der Mindestgewinn eines Antragstellers bei mindestens um als solche amtlich anerkannten 700, wird er unabhängig von seinem Verhältnis zu den prozentualen Einkünften im Verhältnis zu den prozentualen Einkünften im Verhältnis zu den amtlich anerkannten Einkünften amtlich anerkannt.",
-      "Wenn die Schuldenquote eines Antragstellers 40% oder mehr beträgt, können sie niemals genehmigt werden, auch nicht mit einem hohen Kredit-Score oder einem Mitunterzeichner.",
-      "Es ist möglich, dass ein Antragsteller mit einem Kredit-Score unter 700 genehmigt wird, vorausgesetzt, er hat einen Mitunterzeichner und ein Schulden-Einkommens-Verhältnis unter 40%."
+      "Antragstellerin P (Bonitätsnote 650, qualifizierte Mithaftende, Schulden-Einkommens-Verhältnis 35\\%) wird NICHT genehmigt, weil ihre Bonitätsnote allein unter 700 liegt.",
+      "Antragstellerin Q wird für den Kredit genehmigt.",
+      "Wenn die Bonitätsnote einer Antragstellerin mindestens 700 beträgt, wird sie unabhängig vom Schulden-Einkommens-Verhältnis stets genehmigt.",
+      "Wenn das Schulden-Einkommens-Verhältnis einer Antragstellerin 40\\% oder mehr beträgt, kann sie niemals genehmigt werden — auch nicht mit hoher Bonitätsnote oder Mithaftender.",
+      "Es ist möglich, dass eine Antragstellerin mit Bonitätsnote unter 700 genehmigt wird, sofern sie eine Mithaftende hat und das Schulden-Einkommens-Verhältnis unter 40\\% liegt."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nGenehmigung iff $(\\mathrm{score}\\ge 700\\vee\\mathrm{cosign})\\wedge(\\mathrm{DTI}<40\\%)$. Für P:\n\n$$650\\ge 700$$\n\nist falsch, aber\n\n$$\\mathrm{cosign}=\\mathrm{T}$$\n\n$$35<40$$\n\nso\n\n$$(\\mathrm{F}\\vee\\mathrm{T})\\wedge\\mathrm{T}=\\mathrm{T}$$\n\nP ist genehmigt. Die Behauptung, dass P nicht akzeptiert ist, ist falsch.\n\nDie Aussage ist falsch.",
-      "**B.** → Falsch\n\nFür Q:\n\n$$720\\ge 700$$\n\n$$45<40$$\n\nist falsch. Die Konjunktion scheitert. Q ist nicht genehmigt.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nScore $\\ge 700$ still needs $\\mathrm{DTI}<40\\%$. Not always approved.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nWenn $\\mathrm{DTI}\\ge 40\\%$, scheitert das zweite Konjunkt, also ist Bewilligung unmöglich.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nP ist genau eine solche Antragstellerin: Note unter $700$, Mithaftende, $\\mathrm{DTI}<40\\%$, und bewilligt.\n\nDie Aussage ist richtig."
+      "**A.** → Falsch\n\nGenehmigung gilt genau dann, wenn $(\\mathrm{score}\\ge 700\\vee\\mathrm{cosign})\\wedge(\\mathrm{DTI}<40\\%)$. Für P:\n\n$$650\\ge 700$$\n\nist falsch, aber\n\n$$\\mathrm{cosign}=\\mathrm{T}$$\n\n$$35<40$$\n\nalso\n\n$$(\\mathrm{F}\\vee\\mathrm{T})\\wedge\\mathrm{T}=\\mathrm{T}$$\n\nP wird genehmigt. Die Behauptung, P werde nicht genehmigt, ist falsch.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nFür Q:\n\n$$720\\ge 700$$\n\n$$45<40$$\n\nist falsch. Die Konjunktion scheitert. Q wird nicht genehmigt.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nBonitätsnote $\\ge 700$ reicht nicht; zusätzlich braucht man $\\mathrm{DTI}<40\\%$. Eine Genehmigung ist also nicht immer gegeben.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nWenn $\\mathrm{DTI}\\ge 40\\%$, scheitert das zweite Konjunkt — Genehmigung ist dann unmöglich.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nP ist genau ein solcher Fall: Note unter $700$, Mithaftende, $\\mathrm{DTI}<40\\%$, und genehmigt.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Schreibe $S$ für Bonität mindestens $700$, $C$ für eine qualifizierte Mithaftende und $D$ für ein Schulden-Einkommens-Verhältnis unter $40\\%$. Bewilligung gilt genau dann, wenn\n\n$$(S \\lor C) \\land D$$\n\nInnerhalb der Klammer sind Note und Mithaftende Alternativen. Außerhalb ist $D$ für jede Antragstellerin erforderlich und kann nicht ausgeglichen werden."
+    "solution_overview": "Schreibe $S$ für Bonitätsnote mindestens $700$, $C$ für eine qualifizierte Mithaftende und $D$ für Schulden-Einkommens-Verhältnis unter $40\\%$. Genehmigung gilt genau dann, wenn\n\n$$(S \\lor C) \\land D$$\n\nIn der Klammer sind Note und Mithaftende Alternativen. Außerhalb davon ist $D$ für jede Antragstellerin nötig und kann nicht ausgeglichen werden."
   },
   "MATH 1.78": {
-    "title": "Sams Treuepunkte und die Umkehrung einer Dessert-Regel",
-    "context": "Eine Restaurantregel besagt: „Wenn eine Kundin Dessert bestellt, erhält sie einen Treuepunkt.“ Gast Sam erhielt einen Treuepunkt, bestellte aber kein Dessert.",
+    "title": "Sams Treuepunkt und die Umkehrung einer Dessert-Regel",
+    "context": "Eine Restaurantregel besagt: „Wenn eine Kundin Dessert bestellt, erhält sie einen Treuepunkt.“ Gast Sam erhielt einen Treuepunkt, bestellte aber kein Dessert; er bekam ihn im Rahmen einer Geburtstagsaktion.",
     "statements": [
-      "Sams Fall ist ein Gegenbeispiel zur Umkehrung der Regel.",
-      "Sams Fall widerlegt die Originalregel nicht.",
-      "Sams Fall widerlegt die Originalregel.",
-      "Die Negation der Originalregel lautet: „Eine Kundin bestellt Dessert und erhält keinen Treuepunkt.“",
-      "Die Kontraposition der Regel lautet: „Wenn eine Kundin keinen Treuepunkt erhält, dann hat sie kein Dessert bestellt.“"
+      "Sams Fall ist genau das, was man braucht, um die Umkehrung zu widerlegen: „Wenn eine Kundin einen Treuepunkt erhält, dann hat sie Dessert bestellt.“",
+      "Ein Widerspruchsbeweis von „nicht jede punktberechtigte Kundin hat Dessert bestellt“ beginnt mit der Annahme des Gegenteils — „jede Kundin mit Punkt hat Dessert bestellt“ — und zeigt dann, dass Sams Fall diese Annahme verletzt.",
+      "Sams Fall widerlegt auch die Originalregel, dass Dessertbestellung einen Treuepunkt garantiert.",
+      "Die korrekt gebildete Negation der Originalregel verlangt eine Kundin, die Dessert bestellt und KEINEN Punkt erhält — ein völlig anderes Szenario als Sams Fall.",
+      "Die Inverse „Wenn eine Kundin kein Dessert bestellt, erhält sie keinen Punkt“ wird durch Sams Fall direkt widerlegt."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSam: kein Dessert, aber Punkt. Das widerlegt die Umkehrung „Punkt $\\Rightarrow$ Dessert“.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie Originalregel $D\\Rightarrow$ Punkt scheitert nur bei Dessert ohne Punkt. Sams Fall ist Punkt ohne Dessert.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nWie in B: Original bleibt unberührt.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nNegation von $D\\Rightarrow$ Punkt ist $D\\land\\neg$Punkt.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nKontraposition: kein Punkt $\\Rightarrow$ kein Dessert.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nSam: $\\neg\\mathrm{Dessert}$ und $\\mathrm{Point}$. Das widerlegt die Umkehrung $\\mathrm{Point}\\Rightarrow\\mathrm{Dessert}$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nEin Widerspruchsbeweis von „nicht jede Punktempfängerin hat Dessert bestellt“ nimmt an, jede Punktempfängerin habe Dessert bestellt — und Sams Fall verletzt genau diese Annahme.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Originalregel $D\\Rightarrow\\mathrm{Point}$ wird durch einen Punkt ohne Dessert nicht widerlegt.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Negation von $D\\Rightarrow\\mathrm{Point}$ verlangt eine Kundin mit Dessert und ohne Punkt.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nSam widerlegt direkt die Inverse $\\neg D\\Rightarrow\\neg\\mathrm{Point}$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Mit $D$: Dessert und Punkt-Erhalt ist die Regel $D\\Rightarrow$ Punkt. Sam (Punkt ohne Dessert) trifft die Umkehrung, nicht das Original. Negation und Kontraposition wie üblich."
+    "solution_overview": "Schreibe $P$ für „die Kundin bestellt Dessert“ und $Q$ für „die Kundin erhält einen Treuepunkt“. Die Regel lautet\n\n$$P \\Rightarrow Q$$\n\nSam erhielt einen Geburtstagspunkt ohne Dessert, also ist $P$ falsch und $Q$ wahr. Eine Implikation wird nur durch wahre Prämisse und falsche Konklusion widerlegt."
   },
   "MATH 1.79": {
     "title": "Verschachtelte Quantoren mit einer Produktgleichung",
-    "context": "Betrachte die Aussage: „Zu jeder positiven ganzen Zahl $m$ gibt es eine positive ganze Zahl $n$ mit $m\\cdot n=100$.“",
+    "context": "Betrachte die Aussage: „Zu jeder positiven ganzen Zahl $m$ gibt es eine positive ganze Zahl $n$ mit $m \\cdot n = 100$.“",
     "statements": [
-      "Die Aussage behauptet: $\\forall m\\in\\mathbb{Z}^{+}\\,\\exists n\\in\\mathbb{Z}^{+}\\,(m\\cdot n=100)$.",
-      "Die Aussage ist richtig.",
-      "Für $m=3$ existiert ein solches positives ganzzahliges $n$.",
-      "Die Aussage mit vertauschten Quantoren „Es gibt ein positives ganzzahliges $n$, sodass für jedes positive ganze $m$ gilt $m\\cdot n=100$“ ist falsch.",
-      "Ein einziges $n$ kann nicht für jedes positive $m$ die Gleichung $m\\cdot n=100$ erfüllen."
+      "Die Aussage gilt für $m = 4$ (es gibt ein $n$ mit $4n = 100$).",
+      "Die Aussage gilt für $m = 3$ (es gibt ein $n$ mit $3n = 100$).",
+      "Die Gesamtaussage („für jedes $m$ gibt es ein $n$ …“) ist wahr.",
+      "Die korrekte Negation der Gesamtaussage lautet: „Es gibt eine positive ganze Zahl $m$, sodass für jede positive ganze Zahl $n$ gilt $m \\cdot n \\neq 100$.“",
+      "Das Vertauschen der Quantoren zu „Es gibt ein $n$, sodass für jedes $m$ gilt $m \\cdot n = 100$“ ergibt ebenfalls eine falsche Aussage."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie umgangssprachliche Formulierung ist genau die All-Existenz-Aussage.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nFür $m=3$ müsste $n=100/3$ positiv ganz sein — ist es nicht. Die Allaussage scheitert.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\n$100/3$ ist nicht ganzzahlig.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nDie Existenz-All-Variante verlangt ein festes $n$ für alle $m$ und ist erst recht falsch.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nEin festes $n$ kann nicht zugleich $1\\cdot n=100$ und $2\\cdot n=100$ erfüllen.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nFür $m=4$:\n\n$$4\\cdot n=100$$\n\n$$n=\\frac{100}{4}$$\n\n$$n=25$$\n\n$$25\\in\\mathbb{Z}^{+}$$\n\nalso existiert ein Zeuge.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nFür $m=3$:\n\n$$3\\cdot n=100$$\n\n$$n=\\frac{100}{3}$$\n\nist nicht ganzzahlig. Kein positives ganzzahliges $n$ funktioniert.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDa $m=3$ scheitert, ist die Allaussage „für jedes $m$“ falsch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Negation von $\\forall m\\,\\exists n\\,(mn=100)$ ist\n\n$$\\exists m\\,\\forall n\\,(mn\\neq 100)$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nEin einziges $n$ kann nicht für jedes positive $m$ die Gleichung $m\\cdot n=100$ erfüllen. Die vertauschten Quantoren sind ebenfalls falsch.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Die All-Existenz-Form verlangt zu jedem $m$ ein passendes $n$. Schon $m=3$ scheitert. Die vertauschte Quantorenreihenfolge ist ebenfalls falsch."
+    "solution_overview": "Die Aussage ist $\\forall m\\, \\exists n$ mit $m \\cdot n = 100$, wobei $m$ und $n$ positive ganze Zahlen sind. Die Reihenfolge zählt: $n$ darf von $m$ abhängen. Für festes $m$ erzwingt die Gleichung\n\n$$n = \\frac{100}{m}$$\n\nund dieses $n$ ist nur legal, wenn $m$ ein Teiler von $100$ ist. Negation vertauscht jeden Quantor und verneint die Gleichung. Vertauschte Quantoren verlangen ein $n$, das für jedes $m$ zugleich funktioniert."
   },
   "MATH 1.80": {
-    "title": "Eine Diebstahlsermittlung",
-    "context": "Es gab einen Diebstahl, und genau eine von vier Verdächtigen — Ann, Ben, Cara, Dan — ist schuldig. Bekannt ist:\n\n(1) Wenn Ann schuldig ist, dann ist Ben unschuldig.\n\n(2) Wenn Ben schuldig ist, dann ist Cara schuldig.\n\n(3) Cara ist unschuldig.\n\n(4) Entweder Ann oder Dan ist schuldig (nicht beide, nicht keine).",
+    "title": "Eine Diebstahlermittlung",
+    "context": "Es gab einen Diebstahl, und genau eine von vier Verdächtigen — Ann, Ben, Cara, Dan — ist schuldig. Bekannt ist:\n\n(1) Wenn Ann schuldig ist, dann ist Dan unschuldig.\n\n(2) Wenn Ben unschuldig ist, dann ist Cara unschuldig.\n\n(3) Dan ist schuldig.\n\n(4) Wenn Cara schuldig ist, dann ist Ann schuldig.",
     "statements": [
-      "Ben ist unschuldig.",
+      "Dan ist schuldig.",
       "Ann ist schuldig.",
-      "Dan ist unschuldig.",
-      "Aussage (1) ist wahr, unabhängig davon, ob Ann schuldig ist.",
-      "Genau eine der vier Personen ist schuldig, und diese Person ist Dan."
+      "Hinweis (2) ist nötig, um zu folgern, dass Cara unschuldig ist — ohne ihn ließe sich Caras Unschuld nicht etablieren.",
+      "Hinweis (1) liefert hier keine zusätzliche Information, weil seine Prämisse (Ann ist schuldig) falsch ist.",
+      "Selbst ohne die Information, dass genau eine Verdächtige schuldig ist, sagt Hinweis (3) allein bereits, dass Dan schuldig ist."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAus (3) Cara unschuldig und (2) $B\\Rightarrow C$ folgt per Kontraposition $\\neg B$. Ben ist unschuldig.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nAus (4) XOR zwischen Ann und Dan sowie $\\neg B$ und $\\neg C$ bleibt Dan als Schuldige — nicht Ann.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nDan ist die Schuldige; „Dan ist unschuldig“ ist falsch.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nAnn ist unschuldig, also ist die Prämisse von (1) falsch und die Implikation (1) wahr.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nGenau eine ist schuldig, und die Kette erzwingt Dan.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nHinweis (3) besagt, dass Dan schuldig ist. Mit genau einer Schuldigen ist Dan die Täterin.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nWäre Ann schuldig, erzwänge (1), dass Dan unschuldig ist — Widerspruch zu (3). Also ist Ann nicht schuldig.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nAus (3) und „genau eine Schuldige“ folgt bereits ohne (2), dass Cara unschuldig ist. Hinweis (2) ist dafür nicht nötig.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAnn ist unschuldig, also ist die Prämisse von (1) falsch und (1) ist wahr — ohne neue Einschränkung, sobald Ann ausgeschieden ist.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nHinweis (3) behauptet allein, dass Dan schuldig ist, auch ohne die Einzigkeitsprämisse.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Aus Caras Unschuld und $B\\Rightarrow C$ folgt Bens Unschuld. Mit XOR zwischen Ann und Dan und den übrigen Unschuldsfolgerungen bleibt Dan als einzige Schuldige."
+    "solution_overview": "Genau eine von Ann, Ben, Cara und Dan ist schuldig. Schreibe $A,B,C,D$ für die vier Schuld-Atome. Die Hinweise sind\n\n$$A \\Rightarrow \\neg D, \\qquad \\neg B \\Rightarrow \\neg C, \\qquad D, \\qquad C \\Rightarrow A$$\n\nHinweis (3) ist die schlichte Behauptung, dass Dan schuldig ist. Zusammen mit der Einzigkeit sind Ann, Ben und Cara unschuldig."
   },
   "MATH 1.81": {
     "title": "Eine Insel der Wahrheitssager und Lügner",
-    "context": "Verehrte sich dichsprachen- \"Kresetzungen Bund--------.\" Y sagt: \"X und ich sind beide Lügner.\"",
+    "context": "Auf einer Insel sagt jede Einwohnerin entweder immer die Wahrheit oder lügt immer. Zwei Einwohnerinnen machen Aussagen: X sagt: „Y lügt immer.“ Y sagt: „X und ich sind beide Lügnerinnen.“",
     "statements": [
-      "X ist ein Wahrsager.",
-      "Der ist ann .",
-      ";; Weil davon; ;; ;;",
-      "Es gibt zwei gleichermaßen gültige Lösungen für die Arten von Xhas und Y.",
-      "Es ist nicht, ob man mit-B. Kohäsion."
+      "X ist Wahrheitssagerin.",
+      "Y ist Wahrheitssagerin.",
+      "Ys Aussage („X und ich sind beide Lügnerinnen“) ist falsch.",
+      "Es gibt zwei gleichermaßen gültige Lösungen für die Typen von X und Y.",
+      "Wäre X eine Lügnerin, führte das zu einem logischen Widerspruch."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAn einem an luftverbind, ener/ bestimmungsgemäßen Position verbindert. Es ist dies so, die Kohäsion befache be:\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nAus dem Buchstaben A ist Y ein Lügner.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nDer Menge von Y behauptet, beide seien Lügner, aber X ist ein aber eines, Tischeristen.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nDie einzigartige konsistente Zuordnung ist X Wahrheitserzähler, Y Lügner.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nWenn X ein Lügner wäre, dann ist \"Y immer lügen\" falsch, also ist Y ein Wahrheitserzähler. Dann ist der Menge von Y. wahr, der beides lügt, der Widerspruch.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nWäre Y Wahrheitssagerin, wäre „X und ich sind beide Lügnerinnen“ wahr und würde Y zur Lügnerin machen — Widerspruch. Also ist Y Lügnerin. Dann ist Xs „Y lügt immer“ wahr, also ist X Wahrheitssagerin.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nAus Teil A ist Y eine Lügnerin.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nYs Satz behauptet, beide seien Lügnerinnen, aber X ist Wahrheitssagerin — der Satz ist falsch.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDie einzig konsistente Zuordnung ist: X Wahrheitssagerin, Y Lügnerin.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nWäre X Lügnerin, wäre „Y lügt immer“ falsch, also wäre Y Wahrheitssagerin. Dann wäre Ys Satz wahr und würde beide zu Lügnerinnen machen — Widerspruch.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "**Teil 1: Aufbau.**\n\nJeder Bewohner ist Wahrheitssager oder Lügner. Schreibe $x$ dafür, dass X Wahrheitssager ist, und $y$ dafür, dass Y Wahrheitssager ist. X behauptet $\\neg y$. Y behauptet $\\neg x \\land \\neg y$. Der Satz eines Wahrheitssagers ist wahr. Der Satz eines Lügners ist falsch.\n\n**Teil 2: Lösung.**\n\nWenn $x$ falsch ist, dann ist Xs Satz falsch, also ist $y$ wahr. Dann ist Ys Satz wahr, was $\\neg y$ erzwingt. Y kann nicht zugleich Wahrheitssager und Lügner sein, also kann X kein Lügner sein.\n\nDie überlebende Belegung ist $x$ wahr und $y$ falsch: X ist Wahrheitssager und Y ist Lügner."
+    "solution_overview": "**Teil 1: Aufbau.**\n\nJede Einwohnerin ist Wahrheitssagerin oder Lügnerin. Schreibe $x$ dafür, dass X Wahrheitssagerin ist, und $y$ dafür, dass Y Wahrheitssagerin ist. X behauptet $\\neg y$. Y behauptet $\\neg x \\land \\neg y$. Der Satz einer Wahrheitssagerin ist wahr; der einer Lügnerin ist falsch.\n\n**Teil 2: Lösung.**\n\nIst $x$ falsch, dann ist Xs Satz falsch, also ist $y$ wahr. Dann ist Ys Satz wahr und erzwingt $\\neg y$. Y kann nicht beides sein, also kann X keine Lügnerin sein.\n\nDie überlebende Zuordnung ist $x$ wahr und $y$ falsch: X ist Wahrheitssagerin und Y ist Lügnerin."
   },
   "MATH 1.82": {
     "title": "Quantorenreihenfolge: Prüfungspunkte",
@@ -1599,18 +1599,18 @@
     "title": "Fünf unabhängige Prüfungen zu Beweis- und Negationstechnik",
     "context": "Mehrere unabhängige Miniszenarien prüfen, ob ein Beweis oder eine Negation korrekt aufgebaut ist.",
     "statements": [
-      "Der Beweis von „es gibt keine kleinste positive reelle Zahl“ durch Annahme einer solchen Zahl $x$ und Bildung von $x/2$ als noch kleinerer positiven Zahl ist korrekt aufgebaut.",
-      "Ein „Beweis“ von „$\\sqrt{3}$ ist irrational“, der mit „Angenommen, $\\sqrt{3}$ ist irrational“ beginnt und von dort fortfährt, ist korrekt aufgebaut.",
-      "Die Negation von „Alle Flüge sind verspätet und alle Züge sind pünktlich“ lautet „Kein Flug ist verspätet oder kein Zug ist pünktlich“ — das ist die korrekte Negation.",
-      "Für „Manche Mitarbeitende kommen immer zu spät“ (eine Mitarbeitende ist an jedem Tag zu spät) lautet die korrekte Negation „Keine Mitarbeitende kommt jemals zu spät“.",
-      "Ein erfüllender Wert beweist eine Existenzaussage; eine Allaussage braucht ein Argument für jedes Element."
+      "Der Beweis von „es gibt keine kleinste positive reelle Zahl“ durch die Annahme, eine solche Zahl $x$ existiere, und den Hinweis, dass $x/2$ kleiner ist (Widerspruch), ist ein gültiger Widerspruchsbeweis.",
+      "Ein „Beweis“ von „$\\sqrt{3}$ ist irrational“, der mit „Angenommen, $\\sqrt{3}$ ist irrational“ beginnt und von dort fortfährt, ist ein gültiger Widerspruchsbeweis.",
+      "Die Negation von „Alle Flüge sind verspätet und alle Züge sind pünktlich“ lautet „Kein Flug ist verspätet und kein Zug ist pünktlich.“",
+      "Für „Manche Mitarbeitende kommen immer zu spät“ (eine Mitarbeitende ist an jedem Tag zu spät) lautet die korrekte Negation „Alle Mitarbeitenden kommen nie zu spät.“",
+      "Ein erfüllender Wert beweist eine Existenzaussage; eine Allaussage braucht ein Argument für einen beliebigen Wert, nicht nur eine endliche Prüfung."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nWiderspruch: Annahme eines Minimums $x>0$, dann $0<x/2<x$ — Widerspruch. Korrekt.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nMan muss das Gegenteil annehmen ($\\sqrt{3}$ sei rational), nicht die Behauptung selbst.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nNegation von $A\\land B$ ist $\\neg A\\lor\\neg B$: „mindestens ein Flug nicht verspätet oder mindestens ein Zug nicht pünktlich“ — nicht die behauptete starke Form mit „kein“.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nNegation von „es gibt jemanden, der jeden Tag zu spät kommt“ ist „jede Person hat mindestens einen Tag ohne Verspätung“ — nicht „niemand kommt je zu spät“.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nExistenz braucht einen Zeugen; Allquantor braucht allgemeine Abdeckung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nMan nimmt das Gegenteil an (es gebe eine kleinste positive reelle Zahl $x$) und erzeugt mit $x/2$ eine noch kleinere positive Zahl — Widerspruch. Das ist die klassische Widerspruchsform.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nEin Widerspruchsbeweis von „$\\sqrt{3}$ ist irrational“ muss annehmen, $\\sqrt{3}$ sei rational — nicht schon die zu beweisende Irrationalität.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDie Negation von $P\\land Q$ ist $\\neg P\\lor\\neg Q$, nicht $\\neg P\\land\\neg Q$. Die zitierte Form ist daher falsch.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n„Manche Mitarbeitende kommen immer zu spät“ hat die Form $\\exists x\\,\\forall t\\, L(x,t)$. Die Negation ist $\\forall x\\,\\exists t\\,\\neg L(x,t)$ („zu jeder Person gibt es einen Tag ohne Verspätung“), nicht „alle sind nie zu spät“.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEine Existenzaussage braucht einen Zeugen; eine Allaussage braucht ein Argument für ein beliebiges Element, nicht nur endlich viele Stichproben.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Widerspruchsbeweise starten mit der Negation der Behauptung. De Morgan und Quantornegation müssen die Struktur erhalten: $\\neg(A\\land B)=\\neg A\\lor\\neg B$, und $\\neg\\exists\\forall$ wird zu $\\forall\\exists\\neg$."
   },
@@ -1735,14 +1735,14 @@
       "Das Passwort „aaaaaaaaaaaa“ ist ein echtes Gegenbeispiel und zeigt, dass die Richtlinie als absolute Regel falsch ist.",
       "Die Umkehrung „Wenn ein Passwort stark ist, hat es mindestens 12 Zeichen“ ist eine logisch getrennte Behauptung, deren Wahrheit separat geprüft werden muss.",
       "Ein 8-Zeichen-Passwort mit hoher Zufälligkeit, das in diesem System nicht als stark gilt, widerlegt direkt die Umkehrung.",
-      "Die Form „Wenn ein Passwort unter 12 Zeichen hat, ist es nicht stark“ ist logisch äquivalent zur Kontraposition — also wahr genau dann, wenn die Originalrichtlinie wahr ist.",
+      "Die Inverse „Wenn ein Passwort unter 12 Zeichen hat, ist es nicht stark“ ist logisch äquivalent zur Kontraposition — daher kann ihre Wahrheit nicht aus der Originalrichtlinie gefolgert werden.",
       "Da die Kontraposition einer falschen Aussage manchmal trotzdem wahr sein kann, lässt sich nicht bestimmen, ob „Wenn ein Passwort nicht stark ist, hat es unter 12 Zeichen“ wahr ist."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLänge $12$, aber nicht stark: $P\\land\\neg Q$ widerlegt $P\\Rightarrow Q$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nUmkehrung und Original sind unabhängig.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nEin schwaches kurzes Passwort ist $\\neg P\\land\\neg Q$ und trifft die Umkehrung $Q\\Rightarrow P$ nicht.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung, nicht zur Kontraposition.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Inverse ist nicht logisch äquivalent zur Kontraposition. Die Kontraposition wäre „Wenn ein Passwort nicht stark ist, hat es unter 12 Zeichen“. Die Behauptung verwechselt Inverse und Kontraposition.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nKontraposition ist immer äquivalent zum Original; mit dem Original fällt auch sie.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Mit $P$: Länge $\\ge 12$ und $Q$: stark gilt die Richtlinie $P\\Rightarrow Q$. „aaaaaaaaaaaa“ widerlegt sie und damit die Kontraposition. Umkehrung und $\\neg P\\Rightarrow\\neg Q$ sind ein anderes Paar."
@@ -1882,22 +1882,22 @@
   },
   "MATH 1.100": {
     "title": "Drei Bewohner der Insel",
-    "context": "Auf derselben Insel (Wahrheitserzähler sagen immer die Wahrheit, Lügner lügen immer) sprechen drei Einwohner. J sagt: „Genau einer von uns ist sagt. L sagt: K und ich sind der gleiche Typ‘.",
+    "context": "Auf derselben Insel (Wahrheitssager sagen immer die Wahrheit, Lügner lügen immer) sprechen drei Einwohner. J sagt: „Genau einer von uns ist Wahrheitssager.“ K sagt: „J lügt.“ L sagt: „K und ich sind vom gleichen Typ (beide Wahrheitssager oder beide Lügner).“",
     "statements": [
       "J ist ein Lügner.",
-      "K ist ein Wahrsager.",
-      "L ist auch il",
-      "Der Stamm der besten der anderen.",
-      "Es gibt eine weitere konsistente Zuordnung von Typen (neben dem gefundenen), die auch alle drei Aussagen erfüllt."
+      "K ist ein Wahrheitssager.",
+      "L ist ein Wahrheitssager.",
+      "Genau einer der drei Einwohner ist Wahrheitssager.",
+      "Es gibt eine weitere konsistente Typzuordnung (neben der gefundenen), die ebenfalls alle drei Aussagen erfüllt."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Behauptung sagt, dass J ein Lügner ist. Prüfe das Gegenteil und nimm an, J sei Wahrheitssager. Dann muss Js Satz wahr sein, also ist genau einer der drei ein Wahrheitssager. Da J diesen einen Platz schon besetzt, müssen K und L beide Lügner sein:\n\n$$J = \\text{true},\\quad K = L = \\text{false}$$\n\nKs Satz „J lügt“ ist dann falsch, was zu K als Lügner passt. Aber L sagt, dass K und L vom gleichen Typ sind. Unter dieser Zuordnung sind beide Lügner, also wäre Ls Satz wahr. Ein Lügner kann keinen wahren Satz sagen — der Fall „J Wahrheitssager“ scheitert.\n\nDaher kann J kein Wahrheitssager sein und muss ein Lügner sein.\n\nDie Aussage ist richtig.\n",
-      "**B.** → Richtig\n\nDie Behauptung sagt, dass K ein Wahrheitssager ist. Aus Teil A ist J bereits als Lügner erzwungen. Ks Satz lautet genau „J lügt“, und dieser Inhalt ist wahr:\n\n$$\\neg J\\quad\\Rightarrow\\quad \\text{Ks Satz ist wahr}$$\n\nDer Typ eines Bewohners muss zum Wahrheitswert des gesprochenen Satzes passen. K kann also kein Lügner sein, während diese wahre Anschuldigung geäußert wird. K ist Wahrheitssager.\n\nDie Aussage ist richtig.\n",
-      "**C.** → Richtig\n\nDie Behauptung sagt, L sei Wahrheitssager. Die gemeinsame Erzwingung hat J als Lügner und K als Wahrheitssager. Versuche, L ebenfalls zum Lügner zu machen:\n\n$$J = \\text{false},\\quad K = \\text{true},\\quad L = \\text{false}$$\n\nDann wäre K der einzige Wahrheitssager. Das macht Js Satz „Genau einer von uns ist Wahrheitssager“ wahr. Aber J ist bereits als Lügner erzwungen, also ist dieser Fall unmöglich.\n\nDie einzige Alternative ist $L=\\text{true}$. Mit K und L beide Wahrheitssager ist Ls Satz „gleicher Typ“ tatsächlich wahr.\n\nDie Aussage ist richtig.\n",
-      "**D.** → Falsch\n\nAus den Teilen A–C folgen die Typen:\n\n$$\n\\begin{aligned}\nJ&\\text{ ist Lügner}\\\\\nK&\\text{ ist Wahrheitssager}\\\\\nL&\\text{ ist Wahrheitssager}\n\\end{aligned}\n$$\n\nZähle die Wahrheitssager:\n\n$$0+1=1,\\quad 1+1=2$$\n\nGenau zwei Bewohner sind Wahrheitssager, nicht einer. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.\n",
-      "**E.** → Falsch\n\nDie Behauptung verlangt eine zweite Zuordnung; teile zuerst nach Js Typ. Ist J Wahrheitssager, zwingt Js Satz K und L zu Lügnern, aber dann sagt L wahrheitsgemäß, dass K und L vom gleichen Typ sind. Dieser Ast scheitert.\n\nIst J ein Lügner, ist Ks Vorwurf „J lügt“ wahr, also muss K Wahrheitssager sein. Teile nun nach L. Ist L ein Lügner, ist K der einzige Wahrheitssager — das macht Js Satz wahr und bricht Js Lügner-Typ. Also muss L Wahrheitssager sein:\n\n$$J = \\text{liar},\\quad K = L = \\text{truth-teller}$$\n\nIn dieser Zuordnung ist Js Satz falsch, Ks Satz wahr und Ls Satz wahr — sie bleibt bestehen. Jede Alternative ist gescheitert; es gibt keine zweite Zuordnung.\n\nDie Aussage ist falsch.\n"
+      "**A.** → Richtig\n\nDie Behauptung sagt, J sei Lügner. Prüfe das Gegenteil und nimm an, J sei Wahrheitssager. Dann muss Js Satz wahr sein, also ist genau einer der drei Wahrheitssager. Da J diesen Platz schon besetzt, müssen K und L beide Lügner sein:\n\n$$J = \\text{true},\\quad K = L = \\text{false}$$\n\nKs Satz „J lügt“ ist dann falsch, was zu K als Lügner passt. Aber L sagt, K und L seien vom gleichen Typ. Unter dieser Zuordnung sind beide Lügner, also wäre Ls Satz wahr. Ein Lügner kann keinen wahren Satz äußern — der Fall „J Wahrheitssager“ scheitert.\n\nAlso kann J kein Wahrheitssager sein und muss Lügner sein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nAus Teil A ist J bereits als Lügner erzwungen. Ks Satz lautet genau „J lügt“, und dieser Inhalt ist wahr:\n\n$$\\neg J\\quad\\Rightarrow\\quad \\text{Ks Satz ist wahr}$$\n\nDer Typ muss zum Wahrheitswert des Satzes passen. K kann also kein Lügner sein, während diese wahre Anschuldigung geäußert wird. K ist Wahrheitssager.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie gemeinsame Erzwingung hat J als Lügner und K als Wahrheitssager. Versuche, L ebenfalls zum Lügner zu machen:\n\n$$J = \\text{false},\\quad K = \\text{true},\\quad L = \\text{false}$$\n\nDann wäre K der einzige Wahrheitssager. Das macht Js Satz „Genau einer von uns ist Wahrheitssager“ wahr. Aber J ist bereits als Lügner erzwungen — Widerspruch.\n\nDie einzige Alternative ist $L=\\text{true}$. Mit K und L beide Wahrheitssager ist Ls „gleicher Typ“-Satz tatsächlich wahr.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nAus den Teilen A–C folgen die Typen:\n\n$$\n\\begin{aligned}\nJ&\\text{ ist Lügner}\\\\\nK&\\text{ ist Wahrheitssager}\\\\\nL&\\text{ ist Wahrheitssager}\n\\end{aligned}\n$$\n\nZähle die Wahrheitssager: genau zwei, nicht einer. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Behauptung verlangt eine zweite Zuordnung; teile zuerst nach Js Typ. Ist J Wahrheitssager, zwingt Js Satz K und L zu Lügnern, aber dann sagt L wahrheitsgemäß, dass K und L vom gleichen Typ sind. Dieser Ast scheitert.\n\nIst J Lügner, ist Ks Vorwurf „J lügt“ wahr, also muss K Wahrheitssager sein. Teile nun nach L. Ist L Lügner, ist K der einzige Wahrheitssager — das macht Js Satz wahr und bricht Js Lügner-Typ. Also muss L Wahrheitssager sein:\n\n$$J = \\text{liar},\\quad K = L = \\text{truth-teller}$$\n\nIn dieser Zuordnung ist Js Satz falsch, Ks wahr und Ls wahr — sie überlebt. Jede Alternative scheitert; es bleibt keine zweite Zuordnung.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "**Teil 1: Aufbau.**\n\nDer Typ jedes Inselbewohners muss zur Richtigkeit seiner Aussage passen. Schreibe $J$, $K$ und $L$ dafür, Wahrheitssager zu sein. J behauptet, dass genau einer der drei Wahrheitssager ist. K behauptet, dass J lügt. L behauptet, dass $K$ und $L$ denselben Typ haben.\n\nKs Satz ist genau dann wahr, wenn J lügt, also haben $J$ und $K$ entgegengesetzte Typen.\n\n**Teil 2: Lösung.**\n\nWenn $J$ wahr ist, dann existiert genau ein Wahrheitssager, nämlich J, also sind $K$ und $L$ beide falsch. Dann ist Ls „gleicher Typ“-Satz wahr, was ein Lügner nicht sagen kann. Also ist $J$ falsch.\n\nDann ist Ks Anschuldigung wahr, also ist $K$ wahr. Wäre $L$ falsch, wäre $K$ der einzige Wahrheitssager und Js Satz wäre wahr, was ein Lügner nicht sagen kann. Also ist $L$ wahr.\n\nDie eindeutige Belegung ist $J$ falsch, $K$ wahr, $L$ wahr: J Lügner, K und L Wahrheitssager."
+    "solution_overview": "**Teil 1: Aufbau.**\n\nDer Typ jedes Inselbewohners muss zur Richtigkeit seiner Aussage passen. Schreibe $J$, $K$ und $L$ dafür, Wahrheitssager zu sein. J behauptet, dass genau einer der drei Wahrheitssager ist. K behauptet, dass J lügt. L behauptet, dass $K$ und $L$ denselben Typ haben.\n\nKs Satz ist genau dann wahr, wenn J lügt, also haben $J$ und $K$ entgegengesetzte Typen.\n\n**Teil 2: Lösung.**\n\nIst $J$ wahr, dann existiert genau ein Wahrheitssager, nämlich J, also sind $K$ und $L$ beide falsch. Dann ist Ls „gleicher Typ“-Satz wahr, was ein Lügner nicht sagen kann. Also ist $J$ falsch.\n\nDann ist Ks Anschuldigung wahr, also ist $K$ wahr. Wäre $L$ falsch, wäre $K$ der einzige Wahrheitssager und Js Satz wäre wahr, was ein Lügner nicht sagen kann. Also ist $L$ wahr.\n\nDie einzig mögliche Zuordnung ist $J$ falsch, $K$ wahr, $L$ wahr: J Lügner, K und L Wahrheitssager."
   },
   "MATH 1.101": {
     "title": "Konferenz-Anwesenheitsregeln",
@@ -2053,7 +2053,7 @@
   },
   "MATH 1.109": {
     "title": "Klausuraufgaben – 1",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Sei $R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$. Sowohl $\\{0\\}\\in R$ als auch $\\{\\{0\\}\\}\\subseteq R$ gelten.",
       "Gegeben $A=\\{1,2,4,7\\}$, $B=\\{2,3,4,8\\}$ und $C=\\{4,5,8\\}$, ist die Menge $(A\\cap B)\\cup C$ gleich $\\{2,4,5,8\\}$.",
@@ -2072,7 +2072,7 @@
   },
   "MATH 1.110": {
     "title": "Klausuraufgaben – 2",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Auf einer Konferenz mit $90$ Personen besuchten $52$ das Sprachpanel, $41$ das Datenpanel und $18$ beide. Genau $21$ Personen besuchten keines der beiden Panels.",
       "Eine Regel der Form $p\\rightarrow q$ ist stets logisch äquivalent zu ihrer Umkehrung $q\\rightarrow p$.",
@@ -2091,7 +2091,7 @@
   },
   "MATH 1.111": {
     "title": "Klausuraufgaben – 3",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Negation von $p\\wedge q$ ist logisch äquivalent zu $\\neg p\\vee\\neg q$.",
       "Über den ganzen Zahlen ist $\\forall n\\ \\exists m\\ (m>n)$ wahr.",
@@ -2110,7 +2110,7 @@
   },
   "MATH 1.112": {
     "title": "Klausuraufgaben – 4",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Es gibt eine ganze Zahl $g$, sodass jede ganze Zahl $n$ die Ungleichung $n\\le g$ erfüllt.",
       "Hat eine Menge $X$ drei Elemente, dann hat $\\mathcal P(\\mathcal P(X))$ $256$ Elemente.",
@@ -2129,7 +2129,7 @@
   },
   "MATH 1.113": {
     "title": "Klausuraufgaben – 5",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Aus einem sechs-symboligen Alphabet, das $x$ und $y$ enthält, gibt es fünf zweielementige Teilmengen, die $x$ enthalten und $y$ nicht enthalten.",
       "Ein Gewächshaus hat $30$ rote Pflanzen, $22$ duftende und $9$, die beides sind. Es gibt $19$ Pflanzen, die rot, aber nicht duftend sind.",
@@ -2148,7 +2148,7 @@
   },
   "MATH 1.114": {
     "title": "Klausuraufgaben – 6",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "In $U=\\{1,2,\\ldots,15\\}$ seien $A$ die Vielfachen von $3$ und $B=\\{1,2,3,4\\}$. Dann gilt $(A\\cup B)^{c}=\\{5,7,8,10,11,13,14\\}$.",
       "Die Äquivalenz $p\\leftrightarrow q$ ist äquivalent zu $(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$.",
@@ -2167,7 +2167,7 @@
   },
   "MATH 1.115": {
     "title": "Klausuraufgaben – 7",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ersetzt man beide Aussagen in einer Implikation durch ihre Negationen, ohne die Positionen zu tauschen, so entsteht eine zur Originalimplikation äquivalente Formel.",
       "Über den reellen Zahlen gilt $\\forall x\\ \\exists y\\ (y^{2}=x)$.",
@@ -2186,7 +2186,7 @@
   },
   "MATH 1.116": {
     "title": "Klausuraufgaben – 8",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Im Bereich der ganzen Zahlen gibt es ein $x$, das $x+y=y$ für jede ganze Zahl $y$ erfüllt.",
       "Sei $A=\\{n\\in\\mathbb{Z}:n^{2}=16\\}$. Dann gilt $|A|=2$ und $\\{4\\}\\in A$.",
@@ -2205,7 +2205,7 @@
   },
   "MATH 1.117": {
     "title": "Klausuraufgaben – 9",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Nach Ausschluss von $\\emptyset$ und der vollen Menge bleiben bei einer vier-elementigen Menge $14$ Teilmengen übrig.",
       "Für beliebige $A,B\\subseteq U$ ist das Komplement von $A\\setminus B$ gleich $A^{c}\\cup B$.",
@@ -2224,7 +2224,7 @@
   },
   "MATH 1.118": {
     "title": "Klausuraufgaben – 10",
-    "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das Komplement von $A\\triangle B$ besteht genau aus den Elementen, die zu beiden oder zu keiner der Mengen $A$ und $B$ gehören.",
       "Die Kontraposition $\\neg q\\rightarrow\\neg p$ hat stets denselben Wahrheitswert wie $p\\rightarrow q$.",
