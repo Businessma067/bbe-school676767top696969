@@ -19,10 +19,10 @@ const comparisonSections: ComparisonSection[] = [
   {
     title: "Features",
     rows: [
-      { label: "Math Tasks", free: "50", full: "1000+", wiso: "1500+" },
-      { label: "Economics Tasks", free: "35", full: "600+", wiso: "800+" },
-      { label: "English Tasks", free: "10", full: "400+", wiso: "❌" },
-      { label: "German Reading", free: "❌", full: "❌", wiso: "Included" },
+      { label: "Math Tasks", free: "70", full: "1870", wiso: "1870" },
+      { label: "Economics Tasks", free: "33", full: "913", wiso: "576" },
+      { label: "English Tasks", free: "6", full: "729", wiso: "❌" },
+      { label: "German Reading", free: "❌", full: "❌", wiso: "100" },
       { label: "Textbook Theory", free: "❌", full: "Full materials", wiso: "Wirtschaft verstehen" },
       { label: "Answer Sheet Simulator", free: "❌", full: "tick", wiso: "tick" },
       { label: "Interactive Speed Simulators", free: "❌", full: "tick", wiso: "tick" },
