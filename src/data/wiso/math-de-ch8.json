@@ -875,7 +875,7 @@
   },
   "MATH 8.47": {
     "title": "Bremsenergie-Index aus einer Geschwindigkeitsänderung",
-    "context": "Ein Flottensicherheitsbericht punktet Bremsenergie durch den Index $E(v)=A v^{2}$, wo $v>0$ Geschwindigkeit in Kilometer pro Stunde ist. Der Bericht gibt $A$ nicht an: Er besagt nur, dass die Erhöhung der Testgeschwindigkeit von $30$ auf $50$ Kilometer pro Stunde den Index um exakt $80$ Punkte erhöht hat. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Flottensicherheitsbericht bewertet Bremsenergie über den Index $E(v)=A v^{2}$, wobei $v>0$ die Geschwindigkeit in Kilometer pro Stunde ist. Der Bericht gibt $A$ nicht an: er hält nur fest, dass die Erhöhung der Testgeschwindigkeit von $30$ auf $50$ Kilometer pro Stunde den Index um genau $80$ Punkte erhöht hat. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Gleiche Geschwindigkeitsstufen erhöhen den Index um mehr calls bei höheren Geschwindigkeiten als bei niedrigeren.",
       "Bei $40$ kiloMeter pro Stunde liegt der Index bereits über $70$.",
