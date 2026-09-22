@@ -74,7 +74,7 @@ function publicSiteOrigin(request: Request): string {
   }
 }
 
-/** Creates a Monobank iframe invoice and returns the embeddable payment page URL. */
+/** Creates a Monobank invoice and returns the hosted payment page URL. */
 export const createCheckout = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => CheckoutInput.parse(d))
@@ -130,8 +130,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         ccy: currencyCode,
         destination: product.name,
         reference,
-        // Intermediate result page verifies status then sends users to /payment/success
-        // (same as classic BBE checkout), including when the pay widget is iframed.
+        // Intermediate result page verifies status then sends users to /payment/success.
         redirectUrl: `${returnOrigin}/payment-result`,
         webHookUrl: `${webhookOrigin}/api/public/payment/webhook`,
         basketName: product.name,
