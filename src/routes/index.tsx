@@ -592,7 +592,7 @@ function MockBuilderOrbit() {
       aria-hidden
       style={{ ["--orbit-cycle" as string]: `${cycleSec}s` }}
     >
-      <div className="relative h-[14.5rem] w-[14.5rem] sm:h-[15.5rem] sm:w-[15.5rem]">
+      <div className="relative h-[15.5rem] w-[15.5rem] sm:h-[16.5rem] sm:w-[16.5rem]">
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 160 160"
@@ -623,7 +623,8 @@ function MockBuilderOrbit() {
           const rad = (angle * Math.PI) / 180;
           // Match SVG ring r=44 in 160 viewBox → 27.5% from center.
           const dotR = (44 / 160) * 100;
-          const labelR = 41;
+          // Longer labels (2 Subtopic, 5 Start sits near Topic) sit farther out.
+          const labelR = step.label === "Subtopic" || step.label === "Start" ? 46.5 : 43;
           const dx = 50 + Math.cos(rad) * dotR;
           const dy = 50 + Math.sin(rad) * dotR;
           const lx = 50 + Math.cos(rad) * labelR;
@@ -638,18 +639,15 @@ function MockBuilderOrbit() {
                 {index + 1}
               </span>
               <span
-                className="mock-builder-orbit-label absolute w-[3rem] text-center text-[9px] font-semibold leading-[1.05] tracking-wide uppercase sm:w-[3.25rem] sm:text-[10px]"
+                className={cn(
+                  "mock-builder-orbit-label absolute text-center text-[9px] font-semibold leading-none tracking-wide uppercase sm:text-[10px]",
+                  step.label === "Subtopic"
+                    ? "w-auto max-w-none whitespace-nowrap px-0.5"
+                    : "w-[3.25rem] sm:w-[3.5rem]",
+                )}
                 style={{ left: `${lx}%`, top: `${ly}%`, animationDelay: delay }}
               >
-                {step.label === "Subtopic" ? (
-                  <>
-                    Sub
-                    <br />
-                    topic
-                  </>
-                ) : (
-                  step.label
-                )}
+                {step.label}
               </span>
             </div>
           );
