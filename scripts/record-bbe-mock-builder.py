@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Film BBE How-it-works Mock Builder: pick topics → mixer → build → start → answer → next."""
+"""Film BBE How-it-works Mock Builder: expand chapters → multi-select one chapter → mixer → exam → next."""
 from __future__ import annotations
 
 import asyncio
@@ -26,8 +26,20 @@ W, H, DPR, FPS = 1710, 983, 2, 60
 
 MOCK_ID = "hiw-bbe-mock-builder"
 
+# Slower defaults so compression does not make the cursor look frantic.
+MOVE_MS = 780
+MOVE_STEPS = 52
+CLICK_PAUSE = 620
 
-def _q(index: int, stem: str, tag: str):
+
+def _q(index: int, stem: str, tag: str, statements: list[str] | None = None):
+    texts = statements or [
+        "Scarcity means unlimited wants meet limited resources.",
+        "Opportunity cost is irrelevant under scarcity.",
+        "Trade-offs disappear when prices rise.",
+        "Choice is forced by scarcity.",
+        "Scarcity is only a temporary shortage.",
+    ]
     return {
         "id": f"{MOCK_ID}-q{index}",
         "index": index,
@@ -42,15 +54,7 @@ def _q(index: int, stem: str, tag: str):
                 "isTrue": j in (0, 3),
                 "explanation": "",
             }
-            for j, text in enumerate(
-                [
-                    "Scarcity means unlimited wants meet limited resources.",
-                    "Opportunity cost is irrelevant under scarcity.",
-                    "Trade-offs disappear when prices rise.",
-                    "Choice is forced by scarcity.",
-                    "Scarcity is only a temporary shortage.",
-                ]
-            )
+            for j, text in enumerate(texts)
         ],
     }
 
@@ -60,17 +64,28 @@ HIW_MOCK = {
     "user_id": "00000000-0000-4000-8000-000000000001",
     "subject": "economics",
     "title": "Custom Economics · 12q",
-    "chapters": ["2.1", "4.1", "5.1"],
+    "chapters": ["2.1", "2.2", "2.3"],
     "question_count": 12,
     "duration_minutes": 24,
     "points_total": 60,
     "created_at": "2026-09-22T12:00:00.000Z",
     "questions": [
         _q(1, "A firm faces rising scarcity in its input market.", "#2.1 - Being part of the economy"),
-        _q(2, "Demand rises after a successful campaign.", "#5.1 - What a product is"),
-        _q(3, "A partnership raises capital for expansion.", "#4.1 - Sole proprietorship / sole traders"),
+        _q(
+            2,
+            "Households weigh opportunity cost when choosing how to spend Saturday.",
+            "#2.2 - Scarcity of resources and opportunity cost",
+            [
+                "Opportunity cost is the next-best alternative given up.",
+                "Scarcity disappears once prices are posted.",
+                "Every choice has a trade-off under limited means.",
+                "Money cost alone always equals opportunity cost.",
+                "Free goods still face opportunity cost if time is scarce.",
+            ],
+        ),
+        _q(3, "Markets coordinate decisions across buyers and sellers.", "#2.3 - Economics is the study of economic decisions"),
         *[
-            _q(i, f"Practice case {i} on the selected topics.", "#2.1 - Being part of the economy")
+            _q(i, f"Practice case {i} on chapter 2 topics.", "#2.1 - Being part of the economy")
             for i in range(4, 13)
         ],
     ],
@@ -81,8 +96,7 @@ def _ease(t: float) -> float:
     return t * t * (3.0 - 2.0 * t)
 
 
-async def smooth_scroll_by(page, dy: float, ms: int = 520):
-    """Animate document scrollTop — feels like a real scroll, no jump."""
+async def smooth_scroll_by(page, dy: float, ms: int = 640):
     if abs(dy) < 8:
         return
     await page.evaluate(
@@ -100,28 +114,27 @@ async def smooth_scroll_by(page, dy: float, ms: int = 520):
         })""",
         [float(dy), int(ms)],
     )
-    await page.wait_for_timeout(40)
+    await page.wait_for_timeout(50)
 
 
-async def reveal(page, locator, pad: float = 0.45):
-    """Bring locator into view with one smooth scroll — never scrollIntoView jump."""
-    for _ in range(4):
+async def reveal(page, locator, pad: float = 0.42):
+    for _ in range(5):
         box = await locator.bounding_box()
         if not box:
-            await page.wait_for_timeout(60)
+            await page.wait_for_timeout(70)
             continue
         mid_y = box["y"] + box["height"] / 2
         target = H * pad
         delta = mid_y - target
-        if abs(delta) < 48:
+        if abs(delta) < 40:
             return box
-        ms = max(380, min(720, int(abs(delta) * 0.85)))
+        ms = max(480, min(900, int(abs(delta) * 1.05)))
         await smooth_scroll_by(page, delta, ms=ms)
-        await page.wait_for_timeout(80)
+        await page.wait_for_timeout(100)
     return await locator.bounding_box()
 
 
-async def soft_click(page, locator, pause=480, steps=38, move_ms=520):
+async def soft_click(page, locator, pause=CLICK_PAUSE, steps=MOVE_STEPS, move_ms=MOVE_MS):
     await reveal(page, locator)
     box = await locator.bounding_box()
     if box:
@@ -132,7 +145,7 @@ async def soft_click(page, locator, pause=480, steps=38, move_ms=520):
             steps=steps,
             duration_ms=move_ms,
         )
-        await page.wait_for_timeout(150)
+        await page.wait_for_timeout(200)
     await locator.click(force=True)
     await page.wait_for_timeout(pause)
 
@@ -146,21 +159,13 @@ async def chapter_row(page, num: int):
 
 
 async def open_chapter(page, num: int):
-    await soft_click(page, await chapter_btn(page, num), 420, steps=34, move_ms=480)
-
-
-async def close_chapter(page, num: int):
-    # Collapse after picking so the page stays short and scrolls stay small.
-    row = await chapter_row(page, num)
-    if await row.locator("input[type=checkbox]").count() == 0:
-        return
-    await soft_click(page, await chapter_btn(page, num), 320, steps=28, move_ms=400)
+    await soft_click(page, await chapter_btn(page, num), pause=540)
 
 
 async def check_subtopic(page, chapter: int, label: str):
     row = await chapter_row(page, chapter)
     item = row.locator("label").filter(has_text=re.compile(label, re.I)).first
-    await soft_click(page, item, 380, steps=32, move_ms=460)
+    await soft_click(page, item, pause=520)
 
 
 async def drag_weight_handle(page, dx=70, dy=-36):
@@ -172,24 +177,24 @@ async def drag_weight_handle(page, dx=70, dy=-36):
         raise SystemExit("no weight handle box")
     x = box["x"] + box["width"] / 2
     y = box["y"] + box["height"] / 2
-    await glide(page, x, y, steps=34, duration_ms=480)
-    await page.wait_for_timeout(160)
+    await glide(page, x, y, steps=44, duration_ms=700)
+    await page.wait_for_timeout(220)
     await page.mouse.down()
-    await page.wait_for_timeout(70)
-    steps = 24
+    await page.wait_for_timeout(100)
+    steps = 32
     for i in range(1, steps + 1):
         t = _ease(i / steps)
         await page.mouse.move(x + dx * t, y + dy * t)
-        await page.wait_for_timeout(20)
-    await page.wait_for_timeout(80)
+        await page.wait_for_timeout(26)
+    await page.wait_for_timeout(120)
     await page.mouse.up()
-    await page.wait_for_timeout(300)
+    await page.wait_for_timeout(420)
 
 
 async def prep(page):
     await page.goto(f"{BASE}/products/custom-mock-builder", wait_until="domcontentloaded")
     await hide_chrome(page)
-    await page.wait_for_timeout(1400)
+    await page.wait_for_timeout(1500)
     await page.get_by_role("heading", name="Select topics & subtopics").wait_for(
         state="visible", timeout=20000
     )
@@ -200,73 +205,80 @@ async def prep(page):
         }""",
         HIW_MOCK,
     )
-    # Ease into the picker instead of starting at the hero.
-    await smooth_scroll_by(page, 260, ms=560)
+    await smooth_scroll_by(page, 240, ms=700)
 
 
 async def demo(page):
+    await page.wait_for_timeout(500)
+
+    # One continuous pass: expand a few chapters, then multi-select inside Chapter 2.
+    await open_chapter(page, 2)
+    await page.wait_for_timeout(280)
+    await open_chapter(page, 4)
+    await page.wait_for_timeout(280)
+    await open_chapter(page, 5)
     await page.wait_for_timeout(360)
 
-    await open_chapter(page, 2)
-    await check_subtopic(page, 2, r"2\.1")
-    await close_chapter(page, 2)
-
-    await open_chapter(page, 4)
-    await check_subtopic(page, 4, r"4\.1")
-    await close_chapter(page, 4)
-
-    await open_chapter(page, 5)
-    await check_subtopic(page, 5, r"5\.1")
-    await close_chapter(page, 5)
-    await page.wait_for_timeout(180)
+    # Stay in Chapter 2 and pick several topics (no collapse / bounce back up).
+    await reveal(page, await chapter_btn(page, 2), pad=0.28)
+    await page.wait_for_timeout(200)
+    for label in (r"2\.1", r"2\.2", r"2\.3"):
+        await check_subtopic(page, 2, label)
+        await page.wait_for_timeout(180)
 
     await page.get_by_text("Drag the point", exact=False).first.wait_for(
         state="visible", timeout=8000
     )
-    await drag_weight_handle(page, dx=78, dy=-44)
-    await page.wait_for_timeout(160)
+    await page.wait_for_timeout(280)
+    await drag_weight_handle(page, dx=86, dy=-48)
+    await page.wait_for_timeout(320)
 
     count = page.locator("#custom-q-count")
-    await soft_click(page, count, 240, steps=28, move_ms=400)
+    await soft_click(page, count, pause=400)
     await count.fill("")
-    await page.wait_for_timeout(60)
-    await count.type("12", delay=55)
-    await page.wait_for_timeout(100)
+    await page.wait_for_timeout(80)
+    await count.type("12", delay=95)
+    await page.wait_for_timeout(160)
     await count.press("Enter")
-    await page.wait_for_timeout(200)
+    await page.wait_for_timeout(320)
 
     create = page.get_by_role(
         "button", name=re.compile(r"Create Economics Mock from Full Course", re.I)
     )
-    await soft_click(page, create, 640, steps=34, move_ms=460)
+    await soft_click(page, create, pause=780)
 
     dialog = page.get_by_role("dialog")
     await dialog.wait_for(state="visible", timeout=10000)
-    await page.wait_for_timeout(240)
+    await page.wait_for_timeout(380)
     untimed = dialog.get_by_role("button", name=re.compile(r"Untimed practice", re.I))
-    await soft_click(page, untimed, 820, steps=32, move_ms=440)
+    await soft_click(page, untimed, pause=980)
 
     await page.get_by_text("Question 1 /", exact=False).first.wait_for(
         state="visible", timeout=20000
     )
-    await page.wait_for_timeout(360)
+    await page.wait_for_timeout(520)
     boxes = page.locator('button[role="checkbox"]')
     await boxes.first.wait_for(state="visible", timeout=10000)
     for i in (0, 3):
-        await soft_click(page, boxes.nth(i), 300, steps=30, move_ms=400)
-        await page.wait_for_timeout(100)
+        await soft_click(page, boxes.nth(i), pause=480)
+        await page.wait_for_timeout(160)
 
-    # Visible handoff: glide to Next, click, dwell on Q2.
+    # Show the next question loading in clearly.
     nxt = page.get_by_role("button", name=re.compile(r"^Next$", re.I))
-    await soft_click(page, nxt, 560, steps=34, move_ms=460)
+    await soft_click(page, nxt, pause=720)
     await page.get_by_text("Question 2 /", exact=False).first.wait_for(
         state="visible", timeout=10000
     )
-    await page.get_by_text("Demand rises after a successful campaign", exact=False).first.wait_for(
-        state="visible", timeout=8000
-    )
+    await page.get_by_text(
+        "Households weigh opportunity cost when choosing how to spend Saturday",
+        exact=False,
+    ).first.wait_for(state="visible", timeout=8000)
     print("on question 2", flush=True)
-    await page.wait_for_timeout(1400)
+    # Let the new stem sit on screen so the handoff is obvious.
+    await page.wait_for_timeout(1600)
+    # Light scroll over the new statements so loading feels alive.
+    await smooth_scroll_by(page, 120, ms=700)
+    await page.wait_for_timeout(700)
 
 
 async def main():
@@ -295,7 +307,7 @@ async def main():
 
     span = frames[-1][1] - frames[0][1]
     print(f"captured {len(frames)} frames, span={span:.2f}s")
-    # Mild compress only — heavy speedup makes motion look abrupt again.
+    # Keep playback close to real timing — only trim if clearly over budget.
     encode_hiw(
         frames,
         out_mp4=OUT / "mock-builder.mp4",
@@ -305,7 +317,7 @@ async def main():
         css_h=H,
         dpr=DPR,
         fps=FPS,
-        target_dur=18.5,
+        target_dur=30.0,
     )
 
 
