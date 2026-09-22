@@ -96,8 +96,17 @@ export const MOCK_EXAM_1_ENGLISH_POINTS = [
 /** Math: one existing hard task per chapter → first 13 published maxima. */
 export const MOCK_EXAM_1_MATH_POINTS = MATH_POINTS_PER_TASK.slice(0, 13);
 
+/** Shared by curated BBE mocks 1–6 (econ → english → math). */
+export const MOCK_EXAM_SECTION_COUNTS = {
+  economics: bundle.economics.length,
+  english: bundle.english.tasks.length,
+  math: bundle.math.length,
+} as const;
+
 export const MOCK_EXAM_1_QUESTION_COUNT =
-  bundle.economics.length + bundle.english.tasks.length + bundle.math.length;
+  MOCK_EXAM_SECTION_COUNTS.economics +
+  MOCK_EXAM_SECTION_COUNTS.english +
+  MOCK_EXAM_SECTION_COUNTS.math;
 
 export const MOCK_EXAM_1_POINTS_TOTAL =
   bundle.economics.length * SCORING_CONFIG.economics.defaultMaxPerTask +
