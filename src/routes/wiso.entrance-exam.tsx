@@ -14,6 +14,7 @@ import {
   WisoInfoCallout,
   WisoPrimaryButton,
   WisoTextLink,
+  WisoWuSourceLink,
 } from "@/components/wiso-exam/WisoExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { WisoExamShell, WisoSection, WisoStatGrid } from "@/components/wiso-exam/WisoExamShell";
@@ -23,6 +24,7 @@ import {
   WISO_FORMAT_NOTE,
   WISO_PRACTICE_ROUTES,
 } from "@/config/wiso-exam-hub";
+import { BBE_EXAM_FORMAT } from "@/config/bbe-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { cn } from "@/lib/utils";
@@ -76,7 +78,7 @@ const faqs = [
   },
   {
     question: "How many questions are on the WiSo exam?",
-    answer: `WU confirms the exam is entirely multiple choice. Recent cycles are often described with about ${WISO_EXAM_FORMAT.questionCount} questions; the exact per-question template is not spelled out in the FAQ the way BBE materials sometimes are. Confirm your cycle on official WU pages.`,
+    answer: `Based on the most recent exam: ${WISO_EXAM_FORMAT.questionCount} questions total, split into ${WISO_EXAM_FORMAT.economicsQuestions} Economics, ${WISO_EXAM_FORMAT.germanQuestions} German reading comprehension, and ${WISO_EXAM_FORMAT.mathQuestions} Mathematics. Confirm your cycle on official WU pages.`,
   },
   {
     question: "How is WiSo scored?",
@@ -112,11 +114,11 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
   },
   {
     field: "Question format",
-    detail: "Entirely multiple choice (exact per-question template: confirm for your cycle)",
+    detail: "Entirely multiple choice",
   },
   {
-    field: "Question count (recent descriptions)",
-    detail: `About ${WISO_EXAM_FORMAT.questionCount} (not a hard WU FAQ constant)`,
+    field: "Question count",
+    detail: `${WISO_EXAM_FORMAT.questionCount} total: ${WISO_EXAM_FORMAT.economicsQuestions} Economics, ${WISO_EXAM_FORMAT.germanQuestions} German, ${WISO_EXAM_FORMAT.mathQuestions} Mathematics`,
   },
   { field: "Available places (2026/27)", detail: String(WISO_EXAM_FORMAT.places) },
   { field: "Registration window", detail: WISO_EXAM_FORMAT.cycle.registrationWindow },
@@ -140,6 +142,11 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
 const compareRows = [
   { label: "Language", bbe: "English", wiso: "German" },
   { label: "Places (2026/27)", bbe: "~240", wiso: String(WISO_EXAM_FORMAT.places) },
+  {
+    label: "Questions (most recent)",
+    bbe: `${BBE_EXAM_FORMAT.questionCount} (${BBE_EXAM_FORMAT.economicsQuestions} / ${BBE_EXAM_FORMAT.englishQuestions} / ${BBE_EXAM_FORMAT.mathQuestions})`,
+    wiso: `${WISO_EXAM_FORMAT.questionCount} (${WISO_EXAM_FORMAT.economicsQuestions} / ${WISO_EXAM_FORMAT.germanQuestions} / ${WISO_EXAM_FORMAT.mathQuestions})`,
+  },
   { label: "Semester start", bbe: "Winter only", wiso: "Winter or summer" },
   { label: "Language pillar", bbe: "English", wiso: "German reading" },
   { label: "Economics guide", bbe: "Fuhrmann (English)", wiso: "Wirtschaft verstehen (German)" },
@@ -188,12 +195,15 @@ export function WisoEntranceExamPage() {
             items={[
               { label: "Places", value: String(WISO_EXAM_FORMAT.places) },
               { label: "Duration", value: `${WISO_EXAM_FORMAT.durationHours}h` },
-              { label: "Questions*", value: `~${WISO_EXAM_FORMAT.questionCount}` },
+              { label: "Questions", value: String(WISO_EXAM_FORMAT.questionCount) },
               { label: "Language", value: "German" },
             ]}
           />
           <WisoInfoCallout label="Most recent structure" tone="official">
-            {WISO_FORMAT_NOTE}
+            <p>{WISO_FORMAT_NOTE}</p>
+            <p className="mt-2">
+              <WisoWuSourceLink />
+            </p>
           </WisoInfoCallout>
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             <dl>
@@ -234,6 +244,33 @@ export function WisoEntranceExamPage() {
         </WisoSection>
 
         <WisoSection id="subjects" title="What the exam tests">
+          <p>
+            The exam covers three areas. Question counts below reflect the most recent exam.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border">
+            <table className="w-full min-w-[28rem] text-left text-sm">
+              <thead className="bg-secondary/60 text-foreground">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Section</th>
+                  <th className="px-4 py-3 font-semibold">Questions</th>
+                </tr>
+              </thead>
+              <tbody className="text-foreground">
+                <tr className="border-t border-border">
+                  <td className="px-4 py-3 text-foreground">Economics</td>
+                  <td className="px-4 py-3">{WISO_EXAM_FORMAT.economicsQuestions}</td>
+                </tr>
+                <tr className="border-t border-border bg-secondary/30">
+                  <td className="px-4 py-3 text-foreground">German reading comprehension</td>
+                  <td className="px-4 py-3">{WISO_EXAM_FORMAT.germanQuestions}</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-4 py-3 text-foreground">Mathematics</td>
+                  <td className="px-4 py-3">{WISO_EXAM_FORMAT.mathQuestions}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div className="grid gap-4 md:grid-cols-3">
             <SubjectCard
               icon={<BookOpen className="h-5 w-5" />}

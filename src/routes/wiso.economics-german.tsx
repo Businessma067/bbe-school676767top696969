@@ -5,11 +5,14 @@ import {
   WisoInfoCallout,
   WisoPrimaryButton,
   WisoTextLink,
+  WisoWuSourceLink,
 } from "@/components/wiso-exam/WisoExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { WisoExamShell, WisoSection, WisoStatGrid } from "@/components/wiso-exam/WisoExamShell";
 import {
   WISO_ECONOMICS_CHAPTERS,
+  WISO_EXAM_FORMAT,
+  WISO_FORMAT_NOTE,
   WISO_PRACTICE_ROUTES,
 } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
@@ -166,20 +169,27 @@ export function WisoEconomicsGermanPage() {
           </p>
         </WisoSection>
 
-        <WisoInfoCallout label="Official study guide" tone="official">
-          Download Wirtschaft verstehen from wu.ac.at each year (usually late February). Authors include
-          Feurstein and Fuhrmann. Chapter structure is stable even when the PDF is reissued. PDF example
-          for 2026/27: Wirtschaft_verstehen_Aufnahmeprüfung_2026.pdf on wu.ac.at.
+        <WisoInfoCallout label="Most recent exam structure" tone="official">
+          <p>{WISO_FORMAT_NOTE}</p>
+          <p className="mt-2">
+            <WisoWuSourceLink />
+          </p>
         </WisoInfoCallout>
 
         <WisoStatGrid
           items={[
-            { label: "Econ guide", value: "WU PDF" },
-            { label: "Chapters", value: "4" },
+            { label: "Econ questions", value: String(WISO_EXAM_FORMAT.economicsQuestions) },
+            { label: "German questions", value: String(WISO_EXAM_FORMAT.germanQuestions) },
             { label: "Language pillar", value: "German" },
             { label: "English section?", value: "No" },
           ]}
         />
+
+        <WisoInfoCallout label="Official study guide" tone="note">
+          Download Wirtschaft verstehen from wu.ac.at each year (usually late February). Authors include
+          Feurstein and Fuhrmann. Chapter structure is stable even when the PDF is reissued. PDF example
+          for 2026/27: Wirtschaft_verstehen_Aufnahmeprüfung_2026.pdf on wu.ac.at.
+        </WisoInfoCallout>
 
         <WisoSection id="economics" title="Economics: Wirtschaft verstehen">
           <p>

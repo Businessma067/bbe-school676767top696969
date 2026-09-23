@@ -5,6 +5,7 @@ import {
   WisoInfoCallout,
   WisoPrimaryButton,
   WisoTextLink,
+  WisoWuSourceLink,
 } from "@/components/wiso-exam/WisoExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { WisoExamShell, WisoSection, WisoStatGrid } from "@/components/wiso-exam/WisoExamShell";
@@ -143,7 +144,11 @@ export function WisoMathematicsPage() {
             with language adapted to German.
           </p>
           <p>
-            {WISO_FORMAT_NOTE}
+            {WISO_FORMAT_NOTE} Mathematics carried {WISO_EXAM_FORMAT.mathQuestions} of the{" "}
+            {WISO_EXAM_FORMAT.questionCount} questions.
+          </p>
+          <p className="mt-2">
+            <WisoWuSourceLink />
           </p>
         </WisoSection>
 
@@ -155,10 +160,10 @@ export function WisoMathematicsPage() {
 
         <WisoStatGrid
           items={[
+            { label: "Math questions", value: String(WISO_EXAM_FORMAT.mathQuestions) },
             { label: "Duration", value: `${WISO_EXAM_FORMAT.durationHours}h exam` },
             { label: "Language", value: "German" },
             { label: "Official skriptum", value: "None" },
-            { label: "Scoring", value: "Teilpunkte" },
           ]}
         />
 

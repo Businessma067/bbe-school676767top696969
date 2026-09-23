@@ -5,6 +5,7 @@ import {
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
+  BbeWuSourceLink,
 } from "@/components/bbe-exam/BbeExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
@@ -154,7 +155,10 @@ export function BbeAdmissionPage() {
 
         <BbeSection id="entrance-exam" title="Entrance exam">
           <BbeInfoCallout label="Most recent exam structure" tone="official">
-            {BBE_FORMAT_NOTE}
+            <p>{BBE_FORMAT_NOTE}</p>
+            <p className="mt-2">
+              <BbeWuSourceLink />
+            </p>
           </BbeInfoCallout>
           <ul className="list-disc space-y-2 pl-5">
             <li>

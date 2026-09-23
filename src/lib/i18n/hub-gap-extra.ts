@@ -23,8 +23,8 @@ export const hubGapExtraDe: Record<string, string> = {
     "Die Übungsbewertung von BBE School verwendet 60 Punkte für Wirtschaft (10 Aufgaben × 6), 31 für Englisch (11 Aufgaben; Text 4 · Grammatik 3 · Wortschatz 2) und 69 für Mathematik (14 Aufgaben mit Maxima pro Frage), insgesamt 160 Punkte. Ungefähre Gewichtung: Wirtschaft 37,5 %, Englisch 19 %, Mathematik 43 %.",
   "Based on the most recent exam: 10 Economics & Business questions (approx. 37.5% score weighting) and 11 English questions (approx. 19% score weighting).":
     "Laut der letzten Prüfung: 10 Fragen Wirtschaft & Betriebswirtschaft (ca. 37,5 % Gewichtung) und 11 Englischfragen (ca. 19 % Gewichtung).",
-  "Based on the most recent exam: 14 mathematics questions, with approximately 43% score weighting.":
-    "Laut der letzten Prüfung: 14 Mathematikfragen mit etwa 43 % Gewichtung.",
+  "Based on the most recent exam: 13 mathematics questions, with approximately 43% score weighting.":
+    "Laut der letzten Prüfung: 13 Mathematikfragen mit etwa 43 % Gewichtung.",
 
   // ---------- Scoring page copy that diverged from generated keys ----------
   "In BBE School practice and mocks, task maxima follow the most recent exam’s published point distribution (Economics uniform; English by question type; Mathematics per task):":
@@ -111,8 +111,8 @@ export const hubGapExtraUk: Record<string, string> = {
     "Система оцінювання практики BBE School використовує 60 балів за економіку (10 завдань × 6), 31 за англійську (11 завдань; текст 4 · граматика 3 · словник 2) і 69 за математику (14 завдань із максимумами за питання), загалом 160 балів. Приблизна вага: економіка 37,5 %, англійська 19 %, математика 43 %.",
   "Based on the most recent exam: 10 Economics & Business questions (approx. 37.5% score weighting) and 11 English questions (approx. 19% score weighting).":
     "За останнім іспитом: 10 питань з економіки та бізнесу (прибл. 37,5 % ваги) і 11 питань з англійської (прибл. 19 % ваги).",
-  "Based on the most recent exam: 14 mathematics questions, with approximately 43% score weighting.":
-    "За останнім іспитом: 14 питань з математики з приблизно 43 % ваги.",
+  "Based on the most recent exam: 13 mathematics questions, with approximately 43% score weighting.":
+    "За останнім іспитом: 13 питань з математики з приблизно 43 % ваги.",
 
   // ---------- Scoring page copy that diverged from generated keys ----------
   "In BBE School practice and mocks, task maxima follow the most recent exam’s published point distribution (Economics uniform; English by question type; Mathematics per task):":
