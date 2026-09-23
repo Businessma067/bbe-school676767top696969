@@ -220,6 +220,19 @@ async def capture_screencast(page, ctx, act_fn, frames_dir: Path, w: int, h: int
         shutil.rmtree(frames_dir)
     frames_dir.mkdir(parents=True)
     cdp = await ctx.new_cdp_session(page)
+    # Force a true device-pixel backing store so screencast isn't 1× then upscaled soft.
+    try:
+        await cdp.send(
+            "Emulation.setDeviceMetricsOverride",
+            {
+                "width": int(w),
+                "height": int(h),
+                "deviceScaleFactor": float(dpr),
+                "mobile": False,
+            },
+        )
+    except Exception:
+        pass
     frames: list[tuple[Path, float]] = []
     t0 = time.monotonic()
 
@@ -237,9 +250,9 @@ async def capture_screencast(page, ctx, act_fn, frames_dir: Path, w: int, h: int
         "Page.startScreencast",
         {
             "format": "jpeg",
-            "quality": 98,
-            "maxWidth": w * dpr,
-            "maxHeight": h * dpr,
+            "quality": 100,
+            "maxWidth": int(w * dpr),
+            "maxHeight": int(h * dpr),
             "everyNthFrame": 1,
         },
     )
@@ -293,8 +306,8 @@ def encode_hiw(
     subprocess.run(
         [
             "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),
-            "-vf", f"fps={fps},scale={out_w}:{out_h}:flags=lanczos,format=yuv420p",
-            "-c:v", "libx264", "-preset", "slow", "-crf", "14",
+            "-vf", f"fps={fps},scale={out_w}:{out_h}:flags=lanczos:force_original_aspect_ratio=decrease,pad={out_w}:{out_h}:(ow-iw)/2:(oh-ih)/2,format=yuv420p",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "12",
             "-profile:v", "high", "-pix_fmt", "yuv420p",
             "-movflags", "+faststart", "-an", str(raw_mp4),
         ],
@@ -314,7 +327,7 @@ def encode_hiw(
             [
                 "ffmpeg", "-y", "-i", str(raw_mp4),
                 "-filter:v", f"setpts={factor:.5f}*PTS,fps={fps}",
-                "-c:v", "libx264", "-preset", "slow", "-crf", "14",
+                "-c:v", "libx264", "-preset", "slow", "-crf", "12",
                 "-profile:v", "high", "-pix_fmt", "yuv420p",
                 "-movflags", "+faststart", "-an", str(out_mp4),
             ],
