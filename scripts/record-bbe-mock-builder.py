@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Film BBE Mock Builder HIW — continuous mouse, scrollbar-like scroll.
+"""Film BBE Mock Builder HIW — human-like scroll, continuous mouse.
 
 Choreography:
   open Ch.2 → open Ch.3 → tick 3.3 / 3.4 / 3.5 by mouse only →
-  glide to sticky weight handle (no scroll-up) → nudge mixer →
-  set 12q → Create → Timed → mark Q1 fast/smooth → Next → mark Q2.
+  glide to sticky weight handle (no scroll-up) → drag mixer farther →
+  smooth scroll to 12q → Create → Timed → mark Q1 → Next → mark Q2.
 """
 from __future__ import annotations
 
@@ -28,12 +28,10 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "public" / "how-it-works"
 TMP = Path("/tmp/hiw-bbe-mock-builder-hq")
 
-# Retina capture so high-res playback stays sharp.
 W, H, DPR, FPS = 1710, 983, 2, 60
 
 MOCK_ID = "hiw-bbe-mock-builder"
 
-# Dense, smooth cursor — short enough that encode barely compresses.
 MOVE_MS = 520
 MOVE_STEPS = 48
 CLICK_PAUSE = 280
@@ -132,41 +130,56 @@ def _ease(t: float) -> float:
     return t * t * (3.0 - 2.0 * t)
 
 
-async def wheel_scroll_by(page, dy: float, ms: int = 900):
-    """Scrollbar-like page scroll via many small wheel ticks (captures well on screencast)."""
-    if abs(dy) < 4:
+async def human_scroll_by(page, dy: float, ms: int | None = None):
+    """Animate document scrollTop — real motion frames, never jump/scrollIntoView."""
+    if abs(dy) < 3:
         return
-    # Dense ticks (~60Hz) so encode keeps temporal detail instead of looking ~15 FPS.
-    ticks = max(36, min(96, int(abs(dy) / 8)))
-    delay = max(10, int(ms / ticks))
-    for i in range(1, ticks + 1):
-        t0 = (i - 1) / ticks
-        t1 = i / ticks
-        step = dy * (_ease(t1) - _ease(t0))
-        await page.mouse.wheel(0, step)
-        await page.wait_for_timeout(delay)
-    await page.wait_for_timeout(40)
+    # ~1.4px/ms feels like a person dragging the scrollbar / trackpad.
+    duration = int(ms if ms is not None else max(900, min(2200, abs(dy) * 1.45)))
+    await page.evaluate(
+        """([dy, ms]) => new Promise((res) => {
+          const el = document.scrollingElement || document.documentElement;
+          const start = el.scrollTop;
+          const max = Math.max(0, el.scrollHeight - el.clientHeight);
+          const target = Math.max(0, Math.min(max, start + dy));
+          const dist = target - start;
+          if (Math.abs(dist) < 1) { res(); return; }
+          const t0 = performance.now();
+          const ease = (t) => t * t * (3 - 2 * t);
+          const step = (now) => {
+            const p = Math.min(1, (now - t0) / ms);
+            el.scrollTop = start + dist * ease(p);
+            if (p < 1) requestAnimationFrame(step);
+            else {
+              el.scrollTop = target;
+              res();
+            }
+          };
+          requestAnimationFrame(step);
+        })""",
+        [float(dy), int(duration)],
+    )
+    # Let screencast pick up the last frames of the ease.
+    await page.wait_for_timeout(120)
 
 
-async def reveal_if_needed(page, locator, pad: float = 0.42):
-    """Only scroll when the target is off-screen — never bounce an already-visible control."""
-    for _ in range(5):
+async def reveal_smooth(page, locator, pad: float = 0.48):
+    """Bring target into view with animated scroll only (no teleport)."""
+    for _ in range(6):
         box = await locator.bounding_box()
         if not box:
-            await page.wait_for_timeout(60)
+            await page.wait_for_timeout(70)
             continue
-        top = box["y"]
-        bot = box["y"] + box["height"]
-        # Fully / mostly visible → leave scroll alone.
-        if top >= 40 and bot <= H - 40:
-            return box
         mid_y = box["y"] + box["height"] / 2
-        delta = mid_y - H * pad
-        if abs(delta) < 28:
+        # Comfortable band — don't micro-adjust.
+        low, high = H * (pad - 0.12), H * (pad + 0.12)
+        if low <= mid_y <= high and box["y"] >= 36 and box["y"] + box["height"] <= H - 36:
             return box
-        ms = max(700, min(1400, int(abs(delta) * 1.35)))
-        await wheel_scroll_by(page, delta, ms=ms)
-        await page.wait_for_timeout(70)
+        delta = mid_y - H * pad
+        if abs(delta) < 24:
+            return box
+        await human_scroll_by(page, delta)
+        await page.wait_for_timeout(80)
     return await locator.bounding_box()
 
 
@@ -178,22 +191,19 @@ async def mouse_click(
     steps=MOVE_STEPS,
     move_ms=MOVE_MS,
     allow_scroll=False,
-    pad=0.42,
+    pad=0.48,
 ):
     if allow_scroll:
-        await reveal_if_needed(page, locator, pad=pad)
+        await reveal_smooth(page, locator, pad=pad)
     box = await locator.bounding_box()
     if not box:
-        raise SystemExit(f"no box for click target")
-    await glide(
-        page,
-        box["x"] + box["width"] / 2,
-        box["y"] + box["height"] / 2,
-        steps=steps,
-        duration_ms=move_ms,
-    )
+        raise SystemExit("no box for click target")
+    x = box["x"] + box["width"] / 2
+    y = box["y"] + box["height"] / 2
+    await glide(page, x, y, steps=steps, duration_ms=move_ms)
     await page.wait_for_timeout(90)
-    await locator.click(force=True)
+    # Coordinate click — never locator.click() (that scrollIntoView-teleports).
+    await page.mouse.click(x, y)
     await page.wait_for_timeout(pause)
 
 
@@ -206,21 +216,26 @@ async def chapter_row(page, num: int):
 
 
 async def open_chapter(page, num: int):
-    # Chapters stay in view after the initial settle — mouse only.
-    await mouse_click(page, await chapter_btn(page, num), pause=420)
+    btn = await chapter_btn(page, num)
+    await btn.wait_for(state="visible", timeout=10000)
+    await mouse_click(page, btn, pause=420, allow_scroll=True, pad=0.4)
 
 
 async def check_subtopic(page, chapter: int, label: str):
     row = await chapter_row(page, chapter)
     item = row.locator("label").filter(has_text=re.compile(label, re.I)).first
-    # Mouse glide between checkboxes — do not scroll the page down.
+    await item.wait_for(state="visible", timeout=10000)
+    box = await item.bounding_box()
+    # If the next tick sits below the fold, ease down a little — never jump.
+    if box and box["y"] + box["height"] > H - 56:
+        await human_scroll_by(page, (box["y"] + box["height"] / 2) - H * 0.62)
     await mouse_click(page, item, pause=240, move_ms=440, steps=42, allow_scroll=False)
 
 
-async def drag_weight_handle(page, dx=64, dy=-28):
+async def drag_weight_handle(page, dx=130, dy=48):
     handle = page.locator("[data-weight-handle]").first
-    await handle.wait_for(state="visible", timeout=10000)
-    # Sticky panel on the right — NEVER reveal/scroll; that was the wasted “go up”.
+    await handle.wait_for(state="visible", timeout=12000)
+    # Sticky panel — glide only; do not scroll the page up.
     box = await handle.bounding_box()
     if not box:
         raise SystemExit("no weight handle box")
@@ -229,15 +244,15 @@ async def drag_weight_handle(page, dx=64, dy=-28):
     await glide(page, x, y, steps=44, duration_ms=560)
     await page.wait_for_timeout(140)
     await page.mouse.down()
-    await page.wait_for_timeout(70)
-    steps = 32
+    await page.wait_for_timeout(80)
+    steps = 44
     for i in range(1, steps + 1):
         t = _ease(i / steps)
         await page.mouse.move(x + dx * t, y + dy * t)
-        await page.wait_for_timeout(16)
-    await page.wait_for_timeout(80)
+        await page.wait_for_timeout(18)
+    await page.wait_for_timeout(100)
     await page.mouse.up()
-    await page.wait_for_timeout(280)
+    await page.wait_for_timeout(320)
 
 
 async def prep(page):
@@ -254,8 +269,7 @@ async def prep(page):
         }""",
         HIW_MOCK,
     )
-    # Gentle settle into the picker — one scrollbar-like nudge.
-    await wheel_scroll_by(page, 220, ms=780)
+    await human_scroll_by(page, 220, ms=1000)
 
 
 async def demo(page):
@@ -266,32 +280,36 @@ async def demo(page):
     await open_chapter(page, 3)
     await page.wait_for_timeout(260)
 
-    # Pick 3.3 → 3.4 → 3.5 with the mouse only (no page scroll between ticks).
     for label in (r"3\.3", r"3\.4", r"3\.5"):
         await check_subtopic(page, 3, label)
         await page.wait_for_timeout(90)
 
-    await page.get_by_text("Drag the point", exact=False).first.wait_for(
-        state="visible", timeout=8000
+    await page.locator("[data-weight-handle]").first.wait_for(
+        state="visible", timeout=12000
     )
     await page.wait_for_timeout(160)
-    # Straight to the sticky diagram — nudge once, no scroll-up detour.
-    await drag_weight_handle(page, dx=78, dy=22)
-    await page.wait_for_timeout(200)
+    # Bigger mixer move so the weight shift reads clearly.
+    await drag_weight_handle(page, dx=145, dy=55)
+    await page.wait_for_timeout(220)
 
     count = page.locator("#custom-q-count")
-    await mouse_click(page, count, pause=260, allow_scroll=True, pad=0.55)
-    await count.fill("")
+    # Explicit human scroll down to the count field (this was the teleport).
+    await reveal_smooth(page, count, pad=0.55)
+    await mouse_click(page, count, pause=260, allow_scroll=False)
+    # Keyboard only after focus — locator.fill/type would scrollIntoView-teleport.
+    await page.keyboard.press("Control+a")
+    await page.keyboard.press("Backspace")
     await page.wait_for_timeout(50)
-    await count.type("12", delay=70)
+    await page.keyboard.type("12", delay=70)
     await page.wait_for_timeout(100)
-    await count.press("Enter")
+    await page.keyboard.press("Enter")
     await page.wait_for_timeout(220)
 
     create = page.get_by_role(
         "button", name=re.compile(r"Create Economics Mock from Full Course", re.I)
     )
-    await mouse_click(page, create, pause=700, allow_scroll=True, pad=0.72)
+    await reveal_smooth(page, create, pad=0.78)
+    await mouse_click(page, create, pause=700, allow_scroll=False)
 
     dialog = page.get_by_role("dialog")
     await dialog.wait_for(state="visible", timeout=10000)
@@ -305,7 +323,6 @@ async def demo(page):
     await page.wait_for_timeout(320)
     boxes = page.locator('button[role="checkbox"]')
     await boxes.first.wait_for(state="visible", timeout=10000)
-    # Faster answering, still continuous glide.
     for i in (0, 2):
         await mouse_click(
             page,
@@ -372,8 +389,8 @@ async def main():
 
     span = frames[-1][1] - frames[0][1]
     print(f"captured {len(frames)} frames, span={span:.2f}s")
-    # Keep near natural length so setpts doesn't drop temporal resolution to ~15 FPS.
-    target = min(28.0, max(22.0, span * 0.92))
+    # Slightly longer budget so the visible scroll ease isn't time-compressed away.
+    target = min(30.0, max(24.0, span * 0.94))
     encode_hiw(
         frames,
         out_mp4=OUT / "mock-builder.mp4",
