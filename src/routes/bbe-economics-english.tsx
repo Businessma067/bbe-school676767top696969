@@ -6,6 +6,7 @@ import {
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
+  BbeWuSourceLink,
 } from "@/components/bbe-exam/BbeExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
@@ -83,7 +84,10 @@ export function BbeEconomicsEnglishPage() {
     >
       <div className="space-y-16">
         <BbeInfoCallout label="Most recent exam structure" tone="official">
-          {BBE_FORMAT_NOTE}
+          <p>{BBE_FORMAT_NOTE}</p>
+          <p className="mt-2">
+            <BbeWuSourceLink />
+          </p>
         </BbeInfoCallout>
 
         <div className="space-y-14">

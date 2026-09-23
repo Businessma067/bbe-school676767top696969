@@ -57,6 +57,9 @@ export const WISO_PRACTICE_ROUTES = {
 } as const;
 
 export const WISO_OFFICIAL_LINKS = {
+  /** Next steps / selection procedure overview for WiSo. */
+  selectionProcedure:
+    "https://www.wu.ac.at/studium/bewerbung-und-zulassung/naechste-schritte/0/35/39/6/2?cHash=fa02f407b56774ad263f28d33c4560d7",
   faq: "https://www.wu.ac.at/studium/bachelor/wirtschafts-und-sozialwissenschaften/ueberblick/aufnahmeverfahren/faqs-aufnahmeverfahren",
   economicsPdf:
     "https://www.wu.ac.at/fileadmin/wu/h/programs/bachelor/Wirtschaft_verstehen_Aufnahmepr%C3%BCfung_2026.pdf",
@@ -67,12 +70,11 @@ export const WISO_OFFICIAL_LINKS = {
 
 export const WISO_EXAM_FORMAT = {
   durationHours: 2,
-  /**
-   * [3rd party — verify] Recent prep/cycle descriptions often cite ~34 questions.
-   * WU FAQ confirms entirely MCQ but does not publish an exact official count.
-   * Prefer WISO_FORMAT_NOTE whenever this number is shown to readers.
-   */
-  questionCount: 34,
+  /** Most recent WiSo Aufnahmeprüfung structure (same framing as BBE hub). */
+  questionCount: 32,
+  economicsQuestions: 10,
+  germanQuestions: 9,
+  mathQuestions: 13,
   /** Three content areas per WU FAQ — not English. */
   areas: {
     economics: "Economics (wirtschaftliche Grundkenntnisse)",
@@ -93,12 +95,10 @@ export const WISO_EXAM_FORMAT = {
 } as const;
 
 /**
- * Format note used across hub pages.
- * Do not hard-claim BBE’s 34×5 true/false layout as official WiSo format.
+ * Format note used across hub pages — keep parallel to BBE_FORMAT_NOTE.
  */
 export const WISO_FORMAT_NOTE =
-  "WU confirms a 2-hour, in-person, entirely multiple-choice Aufnahmeprüfung at VIECON. The exact per-question layout (single-correct vs multi-select vs five true/false statements under one stem) is not spelled out in the public FAQ. Some recent prep and cycle descriptions mention roughly 34 questions with five statements each; treat that as unverified until WU publishes detail. Always confirm the current cycle on wu.ac.at.";
-
+  "The most recent WiSo Aufnahmeprüfung had 32 questions over 2 hours: 10 Economics, 9 German reading comprehension, and 13 Mathematics. WU confirms a 2-hour, in-person, entirely multiple-choice exam at VIECON; the university may adjust the selection procedure in future years.";
 /** Official economics study guide chapters (Wirtschaft verstehen, 2026/27). [WU] */
 export const WISO_ECONOMICS_CHAPTERS = [
   {

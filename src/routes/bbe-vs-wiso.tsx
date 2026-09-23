@@ -18,6 +18,7 @@ import {
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection, BbeStatGrid } from "@/components/bbe-exam/BbeExamShell";
 import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
+import { WISO_EXAM_FORMAT } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { cn } from "@/lib/utils";
@@ -277,7 +278,7 @@ export function BbeVsWisoPage() {
                 "Economics & business fundamentals",
                 "English grammar, vocabulary, and reading",
                 "Mathematics at Austrian school-leaving depth",
-                `Most recent BBE structure: ${BBE_EXAM_FORMAT.questionCount} questions in ${BBE_EXAM_FORMAT.durationHours} hours`,
+                `Most recent BBE structure: ${BBE_EXAM_FORMAT.questionCount} questions in ${BBE_EXAM_FORMAT.durationHours} hours (${BBE_EXAM_FORMAT.economicsQuestions} Economics, ${BBE_EXAM_FORMAT.englishQuestions} English, ${BBE_EXAM_FORMAT.mathQuestions} Math)`,
               ]}
               accent="bbe"
             />
@@ -288,7 +289,7 @@ export function BbeVsWisoPage() {
                 "Economics & business fundamentals",
                 "German language comprehension",
                 "Mathematics",
-                "Multiple-choice only; held in person when the procedure runs",
+                `Most recent WiSo structure: ${WISO_EXAM_FORMAT.questionCount} questions in ${WISO_EXAM_FORMAT.durationHours} hours (${WISO_EXAM_FORMAT.economicsQuestions} Economics, ${WISO_EXAM_FORMAT.germanQuestions} German, ${WISO_EXAM_FORMAT.mathQuestions} Math)`,
               ]}
               accent="wiso"
             />

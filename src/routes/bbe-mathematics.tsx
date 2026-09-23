@@ -8,6 +8,7 @@ import {
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
+  BbeWuSourceLink,
 } from "@/components/bbe-exam/BbeExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection, BbeStatGrid } from "@/components/bbe-exam/BbeExamShell";
@@ -110,9 +111,14 @@ export function BbeMathematicsPage() {
             ]}
           />
           <BbeInfoCallout label="Most recent exam structure" tone="official">
-            {BBE_FORMAT_NOTE} Mathematics carried {BBE_EXAM_FORMAT.mathQuestions} of the{" "}
-            {BBE_EXAM_FORMAT.questionCount} questions with approximately{" "}
-            {BBE_EXAM_FORMAT.scoreWeighting.mathematics} score weighting.
+            <p>
+              {BBE_FORMAT_NOTE} Mathematics carried {BBE_EXAM_FORMAT.mathQuestions} of the{" "}
+              {BBE_EXAM_FORMAT.questionCount} questions with approximately{" "}
+              {BBE_EXAM_FORMAT.scoreWeighting.mathematics} score weighting.
+            </p>
+            <p className="mt-2">
+              <BbeWuSourceLink />
+            </p>
           </BbeInfoCallout>
         </BbeSection>
 

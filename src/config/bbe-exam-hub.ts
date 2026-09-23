@@ -64,16 +64,22 @@ export const BBE_PRACTICE_ROUTES = {
   fullCourse: "/products/full-course",
 } as const;
 
+/** Official WU pages for BBE admissions / selection procedure. */
+export const BBE_OFFICIAL_LINKS = {
+  selectionProcedure:
+    "https://www.wu.ac.at/en/programs/bachelors-programs/business-and-economics/overview/selection-procedure-bbe-1",
+} as const;
+
 /**
  * Format facts from the most recent exam structure described in the guide.
  * Present as previous/latest; next cycle expected similar.
  */
 export const BBE_EXAM_FORMAT = {
-  questionCount: 35,
+  questionCount: 34,
   durationHours: 2,
   economicsQuestions: 10,
   englishQuestions: 11,
-  mathQuestions: 14,
+  mathQuestions: 13,
   /** Approximate score weighting from section point totals — NOT share of questions. */
   scoreWeighting: {
     economics: "37.5%",
@@ -93,8 +99,7 @@ export const BBE_EXAM_FORMAT = {
 } as const;
 
 export const BBE_FORMAT_NOTE =
-  "The most recent BBE entrance exam had 35 questions over 2 hours. WU has used a similar structure in past cycles, though the university may adjust the selection procedure in future years.";
-
+  "The most recent BBE entrance exam had 34 questions over 2 hours: 10 Economics & Business, 11 English, and 13 Mathematics. WU has used a similar structure in past cycles, though the university may adjust the selection procedure in future years.";
 export const MATH_TOPICS = [
   {
     id: "logic",

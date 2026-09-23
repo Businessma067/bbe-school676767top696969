@@ -4,6 +4,7 @@ import {
   WisoInfoCallout,
   WisoPrimaryButton,
   WisoTextLink,
+  WisoWuSourceLink,
 } from "@/components/wiso-exam/WisoExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { WisoExamShell, WisoSection } from "@/components/wiso-exam/WisoExamShell";
@@ -122,6 +123,9 @@ export function WisoAdmissionPage() {
             for BBE).
           </p>
           <p>{WISO_FORMAT_NOTE}</p>
+          <p className="mt-2">
+            <WisoWuSourceLink />
+          </p>
         </WisoSection>
 
         <WisoInfoCallout label="Fees" tone="official">

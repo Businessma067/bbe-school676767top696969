@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import type { CSSProperties, ReactNode } from "react";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
+import { WISO_OFFICIAL_LINKS, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { isLocalizablePath } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
@@ -121,6 +121,24 @@ export function WisoInfoCallout({
       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{label}</p>
       <div className="mt-2 text-[0.98rem] leading-relaxed text-foreground">{children}</div>
     </aside>
+  );
+}
+
+/** Official WU source link for WiSo selection-procedure facts. */
+export function WisoWuSourceLink({ className }: { className?: string }) {
+  return (
+    <a
+      href={WISO_OFFICIAL_LINKS.selectionProcedure}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        "inline-flex items-center gap-1 font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300",
+        className,
+      )}
+    >
+      Source: WU WiSo selection procedure
+      <ExternalLink className="h-3.5 w-3.5 shrink-0" aria-hidden />
+    </a>
   );
 }
 

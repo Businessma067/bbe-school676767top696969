@@ -16,6 +16,7 @@ import {
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
+  BbeWuSourceLink,
 } from "@/components/bbe-exam/BbeExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection, BbeStatGrid } from "@/components/bbe-exam/BbeExamShell";
@@ -240,7 +241,10 @@ export function BbeEntranceExamHubPage() {
             ]}
           />
           <BbeInfoCallout label="Most recent exam structure" tone="official">
-            {BBE_FORMAT_NOTE}
+            <p>{BBE_FORMAT_NOTE}</p>
+            <p className="mt-2">
+              <BbeWuSourceLink />
+            </p>
           </BbeInfoCallout>
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             <dl>

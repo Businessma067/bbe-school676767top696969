@@ -34,8 +34,8 @@ export const extraDe: Record<string, string> = {
     "Eine schriftliche Multiple-Choice-Prüfung vor Ort, Teil des Aufnahmeverfahrens für das englischsprachige Bachelorprogramm Business and Economics der WU Wien, die stattfindet, wenn es mehr Anmeldungen als Plätze gibt.",
   "Economics & Business, English language skills, and mathematics.":
     "Wirtschaft & Betriebswirtschaft, Englischkenntnisse und Mathematik.",
-  "Based on the most recent exam: 35 questions total, split into 10 Economics & Business, 11 English, and 14 Mathematics.":
-    "Laut der letzten Prüfung: insgesamt 35 Fragen, aufgeteilt in 10 Wirtschaft & Betriebswirtschaft, 11 Englisch und 14 Mathematik.",
+  "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.":
+    "Laut der letzten Prüfung: insgesamt 34 Fragen, aufgeteilt in 10 Wirtschaft & Betriebswirtschaft, 11 Englisch und 13 Mathematik.",
   "2 hours, based on the most recent exam structure.":
     "2 Stunden, basierend auf der letzten Prüfungsstruktur.",
   "Difficulty varies by section. Math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.":
@@ -194,8 +194,8 @@ export const extraUk: Record<string, string> = {
     "Письмовий очний тест із варіантами відповіді, що є частиною відбору на англомовну бакалаврську програму Business and Economics у WU Відень; проводиться, якщо заявок більше, ніж місць.",
   "Economics & Business, English language skills, and mathematics.":
     "Економіка та бізнес, англійська мова і математика.",
-  "Based on the most recent exam: 35 questions total, split into 10 Economics & Business, 11 English, and 14 Mathematics.":
-    "За останнім іспитом: 35 запитань загалом — 10 з економіки та бізнесу, 11 з англійської та 14 з математики.",
+  "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.":
+    "За останнім іспитом: 34 запитання загалом — 10 з економіки та бізнесу, 11 з англійської та 13 з математики.",
   "2 hours, based on the most recent exam structure.":
     "2 години, за структурою останнього іспиту.",
   "Difficulty varies by section. Math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.":
