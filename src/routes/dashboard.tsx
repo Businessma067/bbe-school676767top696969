@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
+import { getCurrentAuthState, peekAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
 import {
   COURSE_CATALOG,
@@ -24,19 +24,12 @@ import { syncMyPaidEnrollments } from "@/lib/payments.functions";
 import { fetchCustomMocks, fetchWisoCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
-import {
-  WISO_CUSTOM_MOCK_SUBJECTS,
-  wisoSubjectFromDb,
-} from "@/config/wiso-custom-mock-builder";
+import { WISO_CUSTOM_MOCK_SUBJECTS, wisoSubjectFromDb } from "@/config/wiso-custom-mock-builder";
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
-import {
-  FlashcardsModeArt,
-  MatchingModeArt,
-  TutorModeArt,
-} from "@/components/study-modes/ModeArt";
+import { FlashcardsModeArt, MatchingModeArt, TutorModeArt } from "@/components/study-modes/ModeArt";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { LockedFeaturePanel, LockedToolCard } from "@/components/CourseLockedView";
 import {
@@ -55,8 +48,26 @@ import {
 } from "lucide-react";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
-import { tierAtLeast } from "@/lib/entitlements";
+import {
+  accessOwnsWisoFull,
+  peekAccessState,
+  tierAtLeast,
+  type AccessState,
+} from "@/lib/entitlements";
 import { WISO_DASHBOARD_STUDY } from "@/lib/wiso-study-ui";
+
+/** Study-tool unlock flags from the shared entitlements cache (warm after header load). */
+function studyToolAccessFromState(
+  access: AccessState | null,
+  isAdmin: boolean,
+): { hasWisoFull: boolean; hasBbePaid: boolean } {
+  if (isAdmin) return { hasWisoFull: true, hasBbePaid: true };
+  if (!access) return { hasWisoFull: false, hasBbePaid: false };
+  return {
+    hasWisoFull: accessOwnsWisoFull(access),
+    hasBbePaid: tierAtLeast(access.tier, "lite"),
+  };
+}
 
 export type DashboardTab = "courses" | "mocks" | "custom" | "games";
 
@@ -114,7 +125,12 @@ function DashboardPage() {
   const stickyTabRef = useRef<DashboardTab>(searchTab ?? "courses");
   if (searchTab) stickyTabRef.current = searchTab;
   const tab = searchTab ?? stickyTabRef.current;
-  const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
+  // Reuse header auth cache so /dashboard?tab=games does not wait on profiles/roles.
+  const [auth, setAuth] = useState<AuthState | null | undefined>(() => {
+    if (typeof window === "undefined") return undefined;
+    const peeked = peekAuthState();
+    return peeked.ready ? peeked.auth : undefined;
+  });
 
   const setTab = (next: DashboardTab) => {
     void navigateHome({ to: "/dashboard", search: { tab: next }, replace: true });
@@ -137,16 +153,21 @@ function DashboardPage() {
       setAuth(next);
       // Repair paid purchases that never got an enrollments row (e.g. WiSo)
       // so Dashboard → My courses always lists what the user bought.
-      try {
-        const synced = await syncMyPaidEnrollments();
-        if (synced.granted.length > 0) {
-          const { clearAccessStateCache } = await import("@/lib/entitlements");
-          clearAccessStateCache();
-        }
-      } catch (err) {
-        console.error("dashboard: syncMyPaidEnrollments", err);
-      }
-      const [e, t, m, s, cBbe, cWiso] = await Promise.all([
+      // Run in parallel with progress fetches — Study tools must not wait on sync.
+      const syncPromise = syncMyPaidEnrollments()
+        .then(async (synced) => {
+          if (synced.granted.length > 0) {
+            const { clearAccessStateCache } = await import("@/lib/entitlements");
+            clearAccessStateCache();
+          }
+          return synced;
+        })
+        .catch((err) => {
+          console.error("dashboard: syncMyPaidEnrollments", err);
+          return null;
+        });
+
+      const progressPromise = Promise.all([
         fetchEnrollments(),
         fetchTaskAttempts(),
         fetchMockAttempts(),
@@ -154,6 +175,13 @@ function DashboardPage() {
         fetchCustomMocks(),
         fetchWisoCustomMocks(),
       ]);
+
+      const [synced, progress] = await Promise.all([syncPromise, progressPromise]);
+      if (cancelled) return;
+
+      const [e0, t, m, s, cBbe, cWiso] = progress;
+      // Sync may have just written enrollments — refetch so My courses is accurate.
+      const e = synced && synced.granted.length > 0 ? await fetchEnrollments() : e0;
       if (cancelled) return;
       setEnrollments(e);
       setTasks(t);
@@ -179,7 +207,10 @@ function DashboardPage() {
   }
 
   const initial = auth.name.charAt(0).toUpperCase();
-  const loading =
+  // Progress bundle is only required for Courses / Mock Exams / Custom Mocks.
+  // Study tools render immediately from the entitlements cache (already warm
+  // when arriving from the header "Study tools" link).
+  const progressLoading =
     enrollments === null ||
     tasks === null ||
     mocks === null ||
@@ -187,13 +218,16 @@ function DashboardPage() {
     customMocks === null;
 
   const isAdmin = auth.role === "admin";
-  const hasWisoFull =
-    !loading && (isAdmin || ownsProductSlug(enrollments!, WISO_FULL_COURSE_SLUG));
-  const bbeTier = !loading ? highestBbeTier(enrollments!) : "none";
-  const hasBbePaid =
-    !loading && (isAdmin || tierAtLeast(bbeTier === "none" ? "demo" : bbeTier, "lite"));
+  const cachedTools = studyToolAccessFromState(peekAccessState(), isAdmin);
+  const hasWisoFull = enrollments
+    ? isAdmin || ownsProductSlug(enrollments, WISO_FULL_COURSE_SLUG)
+    : cachedTools.hasWisoFull;
+  const bbeTier = enrollments ? highestBbeTier(enrollments) : "none";
+  const hasBbePaid = enrollments
+    ? isAdmin || tierAtLeast(bbeTier === "none" ? "demo" : bbeTier, "lite")
+    : cachedTools.hasBbePaid;
   // Mock Exams / Custom Mocks are BBE-paid tools today.
-  const paidToolsLocked = !loading && !isAdmin && !hasBbePaid;
+  const paidToolsLocked = !isAdmin && !hasBbePaid;
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -278,10 +312,18 @@ function DashboardPage() {
             <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>
               Courses
             </MobileTab>
-            <MobileTab active={tab === "mocks"} locked={paidToolsLocked} onClick={() => setTab("mocks")}>
+            <MobileTab
+              active={tab === "mocks"}
+              locked={paidToolsLocked}
+              onClick={() => setTab("mocks")}
+            >
               Mock Exams
             </MobileTab>
-            <MobileTab active={tab === "custom"} locked={paidToolsLocked} onClick={() => setTab("custom")}>
+            <MobileTab
+              active={tab === "custom"}
+              locked={paidToolsLocked}
+              onClick={() => setTab("custom")}
+            >
               Custom
             </MobileTab>
             <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
@@ -290,7 +332,9 @@ function DashboardPage() {
           </div>
 
           <div className="mt-8">
-            {loading ? (
+            {tab === "games" ? (
+              <GamesTab hasWisoFull={hasWisoFull} hasBbePaid={hasBbePaid} />
+            ) : progressLoading ? (
               <p className="text-sm text-muted-foreground">Loading your progress…</p>
             ) : tab === "courses" ? (
               <CoursesTab
@@ -307,17 +351,13 @@ function DashboardPage() {
               ) : (
                 <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
               )
-            ) : tab === "custom" ? (
-              paidToolsLocked ? (
-                <LockedFeaturePanel feature="mock-builder" />
-              ) : (
-                <CustomMocksTab
-                  customMocks={customMocks!}
-                  attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
-                />
-              )
+            ) : paidToolsLocked ? (
+              <LockedFeaturePanel feature="mock-builder" />
             ) : (
-              <GamesTab hasWisoFull={hasWisoFull} hasBbePaid={hasBbePaid} />
+              <CustomMocksTab
+                customMocks={customMocks!}
+                attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
+              />
             )}
           </div>
         </main>
@@ -449,9 +489,7 @@ function CoursesTab({
                 }
                 className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
-                <p className="text-xs text-muted-foreground">
-                  {COURSE_CATALOG[slug].tier} access
-                </p>
+                <p className="text-xs text-muted-foreground">{COURSE_CATALOG[slug].tier} access</p>
                 <h3 className="mt-1 font-display text-base font-bold">
                   {COURSE_CATALOG[slug].name}
                 </h3>
@@ -785,13 +823,7 @@ function StudyToolSection({
   );
 }
 
-function GamesTab({
-  hasWisoFull,
-  hasBbePaid,
-}: {
-  hasWisoFull: boolean;
-  hasBbePaid: boolean;
-}) {
+function GamesTab({ hasWisoFull, hasBbePaid }: { hasWisoFull: boolean; hasBbePaid: boolean }) {
   const showWiso = hasWisoFull;
   const showBbe = hasBbePaid;
   const showBoth = showWiso && showBbe;
@@ -827,9 +859,7 @@ function GamesTab({
     <div className="space-y-10">
       <div>
         <h2 className="font-display text-xl font-bold tracking-tight">
-          {showWiso && !showBbe
-            ? WISO_DASHBOARD_STUDY.studyToolsHeading
-            : "Study tools"}
+          {showWiso && !showBbe ? WISO_DASHBOARD_STUDY.studyToolsHeading : "Study tools"}
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">
           {showBoth
@@ -844,9 +874,7 @@ function GamesTab({
         <StudyToolSection
           track="wiso"
           title={
-            showBoth
-              ? WISO_DASHBOARD_STUDY.sectionTitle
-              : WISO_DASHBOARD_STUDY.sectionTitleSolo
+            showBoth ? WISO_DASHBOARD_STUDY.sectionTitle : WISO_DASHBOARD_STUDY.sectionTitleSolo
           }
           blurb={WISO_DASHBOARD_STUDY.sectionBlurb}
           cards={wisoToolCards()}
@@ -953,9 +981,7 @@ function CustomMocksTab({
         </div>
       )}
 
-      {sortedAttempts.length > 0 && (
-        <MockScoreTrend attempts={sortedAttempts} />
-      )}
+      {sortedAttempts.length > 0 && <MockScoreTrend attempts={sortedAttempts} />}
 
       <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
         <h3 className="mb-3 px-3 pt-2 font-display text-lg font-bold tracking-tight">
