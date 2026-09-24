@@ -571,55 +571,84 @@ function StudyToolsCycle({
 }: {
   tools: { name: string; blurb: string; kind: "flashcards" | "matching" | "tutor" }[];
 }) {
+  const [active, setActive] = useState(0);
+  const [reduceMotion, setReduceMotion] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const sync = () => setReduceMotion(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion || tools.length < 2) return;
+    const id = window.setInterval(() => {
+      setActive((i) => (i + 1) % tools.length);
+    }, 3200);
+    return () => window.clearInterval(id);
+  }, [reduceMotion, tools.length]);
+
   return (
-    <div
-      className="study-tools-cycle mt-6 flex flex-1 flex-col"
-      aria-hidden
-      style={{ ["--stc-cycle" as string]: "9s" }}
-    >
-      <div className="study-tools-cycle-stage relative min-h-[10.5rem] flex-1 sm:min-h-[11rem]">
-        {tools.map((tool, index) => (
-          <div
-            key={tool.name}
-            className={cn("study-tools-cycle-slide", `study-tools-cycle-slide-${index}`)}
-          >
-            <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>
-              {tool.kind === "flashcards" ? (
-                <>
-                  <span className="stc-card stc-card-back" />
-                  <span className="stc-card stc-card-front">
-                    <span className="stc-card-term">NPV</span>
-                  </span>
-                </>
-              ) : null}
-              {tool.kind === "matching" ? (
-                <>
-                  <span className="stc-chip">Elasticity</span>
-                  <span className="stc-arrow" />
-                  <span className="stc-chip stc-chip-dim">%ΔQ / %ΔP</span>
-                </>
-              ) : null}
-              {tool.kind === "tutor" ? (
-                <>
-                  <span className="stc-bot" />
-                  <span className="stc-bubble">True or false?</span>
-                </>
-              ) : null}
+    <div className="study-tools-cycle mt-6 flex flex-1 flex-col" aria-hidden>
+      <div
+        className={cn(
+          "study-tools-cycle-stage relative flex-1",
+          reduceMotion ? "min-h-0" : "min-h-[11.5rem] sm:min-h-[12rem]",
+        )}
+      >
+        {tools.map((tool, index) => {
+          const isActive = reduceMotion || index === active;
+          return (
+            <div
+              key={tool.name}
+              className={cn(
+                "study-tools-cycle-slide",
+                isActive ? "is-active" : "is-idle",
+                reduceMotion && "is-static",
+              )}
+            >
+              <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>
+                {tool.kind === "flashcards" ? (
+                  <>
+                    <span className="stc-card stc-card-back" />
+                    <span className="stc-card stc-card-front">
+                      <span className="stc-card-term">NPV</span>
+                    </span>
+                  </>
+                ) : null}
+                {tool.kind === "matching" ? (
+                  <>
+                    <span className="stc-chip">Elasticity</span>
+                    <span className="stc-arrow" />
+                    <span className="stc-chip stc-chip-dim">%ΔQ / %ΔP</span>
+                  </>
+                ) : null}
+                {tool.kind === "tutor" ? (
+                  <>
+                    <span className="stc-bot" />
+                    <span className="stc-bubble">True or false?</span>
+                  </>
+                ) : null}
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75">
+                <span className="font-semibold text-why-us-fg">{tool.name}.</span> {tool.blurb}
+              </p>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75">
-              <span className="font-semibold text-why-us-fg">{tool.name}.</span> {tool.blurb}
-            </p>
-          </div>
-        ))}
+          );
+        })}
       </div>
-      <div className="study-tools-cycle-dots mt-4 flex items-center justify-center gap-2">
-        {tools.map((tool, index) => (
-          <span
-            key={tool.name}
-            className={cn("study-tools-cycle-dot", `study-tools-cycle-dot-${index}`)}
-          />
-        ))}
-      </div>
+      {!reduceMotion ? (
+        <div className="study-tools-cycle-dots mt-4 flex items-center justify-center gap-2">
+          {tools.map((tool, index) => (
+            <span
+              key={tool.name}
+              className={cn("study-tools-cycle-dot", index === active && "is-active")}
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -893,7 +893,6 @@ body.flashcard-swiping {
 
 /* Why Us — Study tools sequential showcase */
 .study-tools-cycle {
-  --stc-cycle: 9s;
   color: color-mix(in oklab, var(--color-caramel-deep) 88%, white);
 }
 
@@ -907,45 +906,45 @@ body.flashcard-swiping {
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
-  transform: translateY(0.7rem);
+  transform: translateY(0.55rem);
   pointer-events: none;
-  animation: study-tools-cycle-slide var(--stc-cycle) ease-in-out infinite;
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease;
 }
 
-.study-tools-cycle-slide-0 {
-  animation-delay: 0s;
+.study-tools-cycle-slide.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 1;
 }
 
-.study-tools-cycle-slide-1 {
-  animation-delay: calc(var(--stc-cycle) / -3);
+.study-tools-cycle-slide.is-idle {
+  opacity: 0;
+  transform: translateY(0.45rem);
+  z-index: 0;
 }
 
-.study-tools-cycle-slide-2 {
-  animation-delay: calc(var(--stc-cycle) * -2 / 3);
+.study-tools-cycle-slide.is-static {
+  position: relative;
+  grid-area: auto;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  transition: none;
 }
 
-@keyframes study-tools-cycle-slide {
-  0%,
-  4% {
-    opacity: 0;
-    transform: translateY(0.7rem);
-  }
-  10%,
-  28% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  34%,
-  100% {
-    opacity: 0;
-    transform: translateY(-0.45rem);
-  }
+.study-tools-cycle-stage:has(.is-static) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .study-tools-cycle-visual {
   position: relative;
   display: flex;
-  height: 4.75rem;
+  height: 5rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -979,14 +978,20 @@ body.flashcard-swiping {
   left: calc(50% - 1.95rem);
   background: color-mix(in oklab, var(--color-why-us-card) 55%, #2a241e);
   transform: rotate(-11deg) translateY(0.15rem);
-  animation: study-tools-card-drift var(--stc-cycle) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-card-back {
+  animation: study-tools-card-drift 3.2s ease-in-out infinite;
 }
 
 .stc-card-front {
   left: calc(50% - 1.15rem);
   background: color-mix(in oklab, var(--color-caramel-deep) 28%, #1c1713);
   transform: rotate(7deg);
-  animation: study-tools-card-flip var(--stc-cycle) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-card-front {
+  animation: study-tools-card-flip 3.2s ease-in-out infinite;
 }
 
 .stc-card-term {
@@ -1014,7 +1019,10 @@ body.flashcard-swiping {
   font-size: 0.68rem;
   font-weight: 600;
   color: #fff4ef;
-  animation: study-tools-chip-in var(--stc-cycle) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-chip {
+  animation: study-tools-chip-in 3.2s ease-in-out infinite;
 }
 
 .stc-chip-dim {
@@ -1032,7 +1040,10 @@ body.flashcard-swiping {
     linear-gradient(currentColor, currentColor) calc(100% - 1px) 50% / 1.5px 40% no-repeat;
   color: color-mix(in oklab, var(--color-caramel-deep) 70%, white);
   clip-path: polygon(0 38%, 62% 38%, 62% 12%, 100% 50%, 62% 88%, 62% 62%, 0 62%);
-  animation: study-tools-arrow-pulse var(--stc-cycle) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-arrow {
+  animation: study-tools-arrow-pulse 3.2s ease-in-out infinite;
 }
 
 .study-tools-cycle-visual.is-tutor {
@@ -1052,7 +1063,10 @@ body.flashcard-swiping {
     radial-gradient(circle at 65% 32%, #fff4ef 0 18%, transparent 19%),
     color-mix(in oklab, var(--color-caramel-deep) 42%, #1a1612);
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 16%, transparent);
-  animation: study-tools-bot-glow var(--stc-cycle) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-bot {
+  animation: study-tools-bot-glow 3.2s ease-in-out infinite;
 }
 
 .stc-bot::after {
@@ -1076,7 +1090,10 @@ body.flashcard-swiping {
   font-weight: 600;
   line-height: 1.25;
   color: color-mix(in oklab, var(--color-why-us-fg) 88%, transparent);
-  animation: study-tools-bubble-in var(--stc-cycle) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-bubble {
+  animation: study-tools-bubble-in 3.2s ease-in-out infinite;
 }
 
 .study-tools-cycle-dot {
@@ -1084,32 +1101,14 @@ body.flashcard-swiping {
   height: 0.4rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.22);
-  animation: study-tools-cycle-dot var(--stc-cycle) linear infinite;
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
 }
 
-.study-tools-cycle-dot-0 {
-  animation-delay: 0s;
-}
-
-.study-tools-cycle-dot-1 {
-  animation-delay: calc(var(--stc-cycle) / -3);
-}
-
-.study-tools-cycle-dot-2 {
-  animation-delay: calc(var(--stc-cycle) * -2 / 3);
-}
-
-@keyframes study-tools-cycle-dot {
-  0%,
-  28% {
-    background: color-mix(in oklab, var(--color-caramel-deep) 70%, white);
-    transform: scale(1.2);
-  }
-  34%,
-  100% {
-    background: rgba(255, 255, 255, 0.22);
-    transform: scale(1);
-  }
+.study-tools-cycle-dot.is-active {
+  background: color-mix(in oklab, var(--color-caramel-deep) 70%, white);
+  transform: scale(1.25);
 }
 
 @keyframes study-tools-card-drift {
@@ -1124,13 +1123,13 @@ body.flashcard-swiping {
 
 @keyframes study-tools-card-flip {
   0%,
-  18% {
+  35% {
     transform: rotate(7deg) scale(1);
   }
-  28% {
-    transform: rotate(4deg) scale(1.04);
+  50% {
+    transform: rotate(4deg) scale(1.05);
   }
-  38%,
+  65%,
   100% {
     transform: rotate(7deg) scale(1);
   }
@@ -1138,33 +1137,27 @@ body.flashcard-swiping {
 
 @keyframes study-tools-chip-in {
   0%,
-  8% {
+  12% {
     opacity: 0.55;
     transform: translateY(0.2rem);
   }
-  16%,
-  28% {
+  28%,
+  100% {
     opacity: 1;
     transform: translateY(0);
-  }
-  100% {
-    opacity: 0.85;
   }
 }
 
 @keyframes study-tools-arrow-pulse {
   0%,
-  12% {
+  18% {
     opacity: 0.35;
     transform: scaleX(0.85);
   }
-  20%,
-  30% {
+  32%,
+  100% {
     opacity: 1;
     transform: scaleX(1);
-  }
-  100% {
-    opacity: 0.7;
   }
 }
 
@@ -1173,31 +1166,26 @@ body.flashcard-swiping {
   100% {
     box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 12%, transparent);
   }
-  20%,
-  30% {
+  40% {
     box-shadow: 0 0 0 5px color-mix(in oklab, var(--color-caramel-deep) 28%, transparent);
   }
 }
 
 @keyframes study-tools-bubble-in {
   0%,
-  10% {
+  12% {
     opacity: 0;
     transform: translateX(-0.35rem);
   }
-  18%,
-  30% {
+  28%,
+  100% {
     opacity: 1;
     transform: translateX(0);
-  }
-  100% {
-    opacity: 0.9;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .study-tools-cycle-slide,
-  .study-tools-cycle-dot,
   .stc-card-back,
   .stc-card-front,
   .stc-chip,
@@ -1205,25 +1193,7 @@ body.flashcard-swiping {
   .stc-bot,
   .stc-bubble {
     animation: none !important;
-  }
-
-  .study-tools-cycle-slide {
-    position: relative;
-    grid-area: auto;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-  }
-
-  .study-tools-cycle-stage {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    min-height: 0;
-  }
-
-  .study-tools-cycle-dots {
-    display: none;
+    transition: none !important;
   }
 }
 
