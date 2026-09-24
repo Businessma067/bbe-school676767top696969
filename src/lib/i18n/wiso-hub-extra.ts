@@ -578,7 +578,7 @@ export const wisoHubExtraDe: Record<string, string> = {
   "WU context for WiSo applicants": "WU-Kontext für WiSo-Bewerber:innen",
   "WiSo places": "WiSo-Plätze",
   "WiSo places is by written-exam performance. The OSA is ungraded and does not enter that ranking.": "WiSo-Plätze erfolgt nach Leistung in der schriftlichen Prüfung. Die OSA wird nicht benotet und geht nicht in dieses Ranking ein.",
-  "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page is a practical sequence you can adapt to your calendar before": "WiSo-Prep scheitert auf vorhersehbare Weise: es wie BBE mit deutschen Labels zu behandeln, die Kapitel 2 und 4 aus Wirtschaft verstehen zu überspringen, Teilpunktesystem-Strategie zu ignorieren oder deutsches Lesen nie zu timen. Diese Seite ist eine praktische Sequenz, die du an deinen Kalender anpassen kannst vor",
+  "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page lays out a practical sequence you can adapt to your calendar before": "WiSo-Prep scheitert auf vorhersehbare Weise: es wie BBE mit deutschen Labels zu behandeln, die Kapitel 2 und 4 aus Wirtschaft verstehen zu überspringen, Teilpunktesystem-Strategie zu ignorieren oder deutsches Lesen nie zu timen. Diese Seite legt eine praktische Sequenz aus, die du an deinen Kalender anpassen kannst vor",
   "WiSo prep only works when the language of practice matches the exam. This course stays on German economics wording, German reading, and math on /wiso URLs, so you never waste weeks on BBE English passages you will not see.": "WiSo-Prep funktioniert nur, wenn die Übungssprache zur Prüfung passt. Dieser Kurs bleibt bei deutscher Wirtschaftsformulierung, deutschem Lesen und Mathe auf /wiso-URLs, damit du keine Wochen mit BBE-Englischtexten verbrennst, die du nicht siehst.",
   "WiSo scoring explained →": "WiSo-Bewertung erklärt →",
   "WiSo shares an admissions calendar with BBE but is a separate exam and a separate applicant pool. If you only remember one difference, remember this: the language pillar is German reading comprehension, not English.": "WiSo teilt den Zulassungskalender mit BBE, ist aber eine eigene Prüfung und ein eigener Bewerber:innen-Pool. Wenn du dir nur einen Unterschied merkst, merke dir dies: Die Sprachsäule ist deutsches Leseverständnis, nicht Englisch.",
@@ -775,7 +775,8 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Descriptive statistics, elementary probability, and interpreting data statements under exam time pressure.": "Описова статистика, елементарна ймовірність і інтерпретація тверджень про дані під тиском часу іспиту.",
   "Descriptive stats, elementary probability, and conditional reasoning under partial-credit scoring, where one wrong tick can erase hard-won calculation credit.": "Описова статистика, елементарна ймовірність і умовне міркування за частковим оцінюванням, де одна хибна галочка може стерти важко здобуті розрахункові бали.",
   "Digital transformation of products and business models": "Цифрова трансформація продуктів і бізнес-моделей",
-  "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik — WiSo-spezifisch": "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik, WiSo-spezifisch",
+  "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik — WiSo-spezifisch":
+    "Цифрова трансформація та бізнес-моделі, інтернет-платформи, економічна інформатика — специфіка WiSo",
   "Digitalisation and Wirtschaftsinformatik": "Цифровізація та Wirtschaftsinformatik",
   "Do unanswered options cost points?": "Чи коштують балів непозначені варіанти?",
   "Does Fuhrmann mean WiSo equals BBE economics?": "Чи означає Fuhrmann, що WiSo дорівнює економіці BBE?",
@@ -952,8 +953,9 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Multi-correct questions (max / r and max / f)": "Питання з кількома правильними відповідями (max / r і max / f)",
   "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard, just not surprising.": "Моя слабкість, занадто швидко стрибати між предметами. Коротші змішані сети це виправили. Іспит усе одно відчувався складним, просто вже не несподіваним.",
   "Myth to ignore": "Міф, який варто ігнорувати",
-  "Nachhaltigkeit und planetare Grenzen": "Nachhaltigkeit und planetare Grenzen",
-  "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie — WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text": "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie, WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text",
+  "Nachhaltigkeit und planetare Grenzen": "Сталість і планетарні межі",
+  "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie — WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text":
+    "Сталість, планетарні межі, декаплінг, економіка добробуту — специфіка WiSo порівняно з текстом Fuhrmann для BBE",
   "Necessary vs sufficient conditions": "Необхідні vs достатні умови",
   "Never timing mixed sets, because untimed accuracy does not transfer to a 2-hour paper.": "Ніколи не таймувати змішані сети, точність без таймера не переноситься на 2-годинну роботу.",
   "Next steps": "Наступні кроки",
@@ -1174,7 +1176,8 @@ export const wisoHubExtraUk: Record<string, string> = {
   "wirtschaftliche Grundkenntnisse, Mathematik, and deutsches Sprachverständnis sit at the centre of the WiSo Aufnahmeprüfung, and this track is built around those three pillars rather than around BBE English.": "wirtschaftliche Grundkenntnisse, Mathematik і deutsches Sprachverständnis стоять у центрі WiSo Aufnahmeprüfung, і цей трек зібраний саме навколо цих трьох опор, а не навколо англійської BBE.",
   "Wirtschafts- und Sozialwissenschaften": "Wirtschafts- und Sozialwissenschaften",
   "Wirtschafts- und Sozialwissenschaften (WiSo), German-taught": "Wirtschafts- und Sozialwissenschaften (WiSo), німецькомовна програма",
-  "Wirtschaftskreislauf, Knappheit und Opportunitätskosten, Arbeitsteilung und Spezialisierung, Geld, Zinsen und Inflation": "Wirtschaftskreislauf, Knappheit und Opportunitätskosten, Arbeitsteilung und Spezialisierung, Geld, Zinsen und Inflation",
+  "Wirtschaftskreislauf, Knappheit und Opportunitätskosten, Arbeitsteilung und Spezialisierung, Geld, Zinsen und Inflation":
+    "Кругообіг економіки, обмеженість і альтернативна вартість, поділ праці та спеціалізація, гроші, відсотки та інфляція",
   "WiSo (": "WiSo (",
   "WiSo (Wirtschafts- und Sozialwissenschaften) is WU Vienna’s German-taught bachelor. It runs in the same admissions cycle and registration window as BBE, but it is a separate exam with a separate applicant pool and a much larger intake (~": "WiSo (Wirtschafts- und Sozialwissenschaften), німецькомовний бакалавр WU Wien. Він іде в тому ж циклі вступу й вікні реєстрації, що й BBE, але це окремий іспит з окремим пулом абітурієнтів і значно більшим набором (~",
   "WiSo also allows winter or summer program start after a successful procedure, unlike BBE’s winter-only start. That flexibility matters for planning, but it does not change the need to finish registration and the OSA on time.": "WiSo також дозволяє початок програми взимку або влітку після успішної процедури, на відміну від лише зимового старту BBE. Ця гнучкість важлива для планування, але не скасовує потреби вчасно завершити реєстрацію та OSA.",
@@ -1250,7 +1253,7 @@ export const wisoHubExtraUk: Record<string, string> = {
   "WU context for WiSo applicants": "Контекст WU для абітурієнтів WiSo",
   "WiSo places": "Місця WiSo",
   "WiSo places is by written-exam performance. The OSA is ungraded and does not enter that ranking.": "місць WiSo формується за результатами письмового іспиту. OSA не оцінюється і не входить у цей рейтинг.",
-  "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page is a practical sequence you can adapt to your calendar before": "WiSo-prep провалюється передбачувано: ставитись як до BBE з німецькими ярликами, пропускати розділи 2 і 4 Wirtschaft verstehen, ігнорувати стратегію Teilpunktesystem або ніколи не таймити німецьке читання. Ця сторінка, практична послідовність, яку ти можеш підлаштувати під свій календар перед",
+  "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page lays out a practical sequence you can adapt to your calendar before": "Підготовка до WiSo провалюється передбачувано: ставитись як до BBE з німецькими ярликами, пропускати розділи 2 і 4 Wirtschaft verstehen, ігнорувати стратегію Teilpunktesystem або ніколи не таймити німецьке читання. Ця сторінка викладає практичну послідовність, яку ти можеш підлаштувати під свій календар перед",
   "WiSo prep only works when the language of practice matches the exam. This course stays on German economics wording, German reading, and math on /wiso URLs, so you never waste weeks on BBE English passages you will not see.": "Підготовка до WiSo працює лише коли мова практики збігається з іспитом. Цей курс лишається на німецькому економічному формулюванні, німецькому читанні й математиці на /wiso URL, тож ти не витратиш тижні на англійські пасажі BBE, яких не буде.",
   "WiSo scoring explained →": "Оцінювання WiSo пояснено →",
   "WiSo shares an admissions calendar with BBE but is a separate exam and a separate applicant pool. If you only remember one difference, remember this: the language pillar is German reading comprehension, not English.": "WiSo має спільний календар вступу з BBE, але це окремий іспит і окремий пул абітурієнтів. Якщо запам’ятаєш лише одну різницю, запам’ятай це: мовна складова — німецьке читання з розумінням, а не англійська.",
@@ -1345,4 +1348,26 @@ export const wisoHubExtraUk: Record<string, string> = {
   "2h": "2 год",
   "score = (correctMarks × max/r) − (wrongMarks × max/f)":
     "score = (correctMarks × max/r) − (wrongMarks × max/f)",
+
+  // ---------- Wirtschaft verstehen chapter titles / topics (German source → UK) ----------
+  "Grundlagen der Wirtschaft": "Основи економіки",
+  "Wirtschaft, Gesellschaft und Umwelt": "Економіка, суспільство та довкілля",
+  Unternehmensgrundlagen: "Основи підприємств",
+  Digitalisierung: "Цифровізація",
+  "Unternehmensarten und Rechtsformen, Eigentum und Finanzierungsquellen, Rechnungswesen":
+    "Типи підприємств і правові форми, власність і джерела фінансування, облік",
+  Wirtschaftskreislauf: "Кругообіг економіки",
+  "Knappheit und Opportunitätskosten": "Обмеженість і альтернативна вартість",
+  "Arbeitsteilung und Spezialisierung": "Поділ праці та спеціалізація",
+  "Geld, Zinsen und Inflation": "Гроші, відсотки та інфляція",
+  "Einbettung der Wirtschaft in Gesellschaft und Umwelt":
+    "Вбудованість економіки в суспільство та довкілля",
+  "Entkopplung von Wachstum und Umweltschäden": "Декаплінг зростання від шкоди довкіллю",
+  Wohlfahrtsökonomie: "Економіка добробуту",
+  "Unternehmensarten und Rechtsformen": "Типи підприємств і правові форми",
+  "Eigentum und Finanzierungsquellen": "Власність і джерела фінансування",
+  Rechnungswesen: "Облік",
+  "Digitale Transformation und Geschäftsmodelle": "Цифрова трансформація та бізнес-моделі",
+  Internetplattformen: "Інтернет-платформи",
+  Wirtschaftsinformatik: "Економічна інформатика",
 };
