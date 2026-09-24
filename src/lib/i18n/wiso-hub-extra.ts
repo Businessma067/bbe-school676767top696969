@@ -530,6 +530,26 @@ export const wisoHubExtraDe: Record<string, string> = {
   "WiSo Mock Exams | BBE School": "WiSo Mock Exams | BBE School",
   "WiSo mocks →": "WiSo-Mocks →",
   "WiSo opens far more places than BBE, and yet the written exam still sorts thousands of applicants under the same partial-credit pressure, so the hall feels no softer on the day.": "WiSo öffnet deutlich mehr Plätze als BBE, und trotzdem sortiert die schriftliche Prüfung Tausende Bewerber:innen unter demselben Teilpunkte-Druck, sodass der Saal am Tag nicht weicher wirkt.",
+  "WiSo opens far more places than BBE, but the written exam still sorts thousands of people under the same partial credit pressure. The hall does not feel softer on the day.":
+    "WiSo öffnet deutlich mehr Plätze als BBE, aber die schriftliche Prüfung sortiert trotzdem Tausende Menschen unter demselben Teilpunkte-Druck. Der Saal fühlt sich am Tag nicht weicher an.",
+  "German is not only an exam section": "Deutsch ist nicht nur ein Prüfungsteil",
+  "If you stay in Austria or anywhere in the DACH region after graduation, strong German is part of ordinary working life. Offices, clients, and public services still run on it. Starting that work now for the Aufnahmeprüfung is early practice for the country you are walking into, not a side quest you can postpone forever.":
+    "Wenn du nach dem Abschluss in Österreich oder irgendwo in der DACH-Region bleibst, gehört starkes Deutsch zum normalen Arbeitsleben. Büros, Kund:innen und Behörden laufen weiterhin darauf. Diese Arbeit jetzt für die Aufnahmeprüfung anzufangen ist frühes Training für das Land, in das du gehst, kein Nebenprojekt, das man ewig aufschieben kann.",
+  "Larger intake than BBE": "Größere Aufnahme als BBE",
+  "BBE places": "BBE-Plätze",
+  "Same campus, English track": "Gleicher Campus, englischer Track",
+  "Exam language": "Prüfungssprache",
+  "Reading, economics wording, math stems": "Lesen, Wirtschaftsformulierung, Mathe-Stems",
+  "Where German pays off": "Wo Deutsch sich auszahlt",
+  "Austria, Germany, Switzerland": "Österreich, Deutschland, Schweiz",
+  "BBE keeps English as the language pillar, which is useful if your plan is a fully international classroom and English first careers. WiSo asks you to build German under exam pressure instead. That looks harder on paper, and it is harder in the hall, but it is also closer to how life after WU often looks if you stay in Vienna or move across the DACH job market.":
+    "BBE hält Englisch als Sprachsäule, was nützlich ist, wenn dein Plan ein internationales Klassenzimmer und englischsprachige Karrieren zuerst sind. WiSo verlangt, Deutsch unter Prüfungsdruck aufzubauen. Das wirkt auf dem Papier schwerer, und im Saal ist es auch schwerer, aber es liegt näher an dem, wie das Leben nach der WU oft aussieht, wenn du in Wien bleibst oder über den DACH-Arbeitsmarkt gehst.",
+  "Places matter too. WiSo publishes an intake in the low thousands while BBE sits near two hundred forty. More seats do not make the paper gentle. They do mean the German track is a real scale pathway onto the same campus, with winter or summer start options after a successful procedure.":
+    "Auch die Plätze zählen. WiSo veröffentlicht eine Aufnahme im niedrigen Tausenderbereich, während BBE bei etwa zweihundertvierzig liegt. Mehr Sitze machen die Prüfung nicht sanft. Sie bedeuten aber, dass der deutsche Track ein echter Skalenweg auf denselben Campus ist, mit Winter- oder Sommerstart nach erfolgreichem Verfahren.",
+  "So the practical argument is simple. You will need serious German anyway if Austria or the wider DACH region is where you want to study and work. Using the Aufnahmeprüfung as the first hard deadline is usually cleaner than waiting until lectures begin and then discovering how much language still sits between you and the material.":
+    "Das praktische Argument ist einfach. Du brauchst sowieso ernsthaftes Deutsch, wenn Österreich oder die weitere DACH-Region der Ort ist, an dem du studieren und arbeiten willst. Die Aufnahmeprüfung als erste harte Deadline zu nutzen ist meist sauberer, als zu warten, bis die Vorlesungen beginnen, und dann zu merken, wie viel Sprache noch zwischen dir und dem Stoff steht.",
+  "Compare BBE and WiSo": "BBE und WiSo vergleichen",
+  "WU context for WiSo applicants": "WU-Kontext für WiSo-Bewerber:innen",
   "WiSo places": "WiSo-Plätze",
   "WiSo places is by written-exam performance. The OSA is ungraded and does not enter that ranking.": "WiSo-Plätze erfolgt nach Leistung in der schriftlichen Prüfung. Die OSA wird nicht benotet und geht nicht in dieses Ranking ein.",
   "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page is a practical sequence you can adapt to your calendar before": "WiSo-Prep scheitert auf vorhersehbare Weise: es wie BBE mit deutschen Labels zu behandeln, die Kapitel 2 und 4 aus Wirtschaft verstehen zu überspringen, Teilpunktesystem-Strategie zu ignorieren oder deutsches Lesen nie zu timen. Diese Seite ist eine praktische Sequenz, die du an deinen Kalender anpassen kannst vor",
