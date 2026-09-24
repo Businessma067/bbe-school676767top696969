@@ -55,6 +55,55 @@ function formatDelta(n: number) {
   return "0";
 }
 
+function ReviewViewToggle({
+  showTaskReview,
+  onShowResults,
+  onShowTasks,
+  de,
+}: {
+  showTaskReview: boolean;
+  onShowResults: () => void;
+  onShowTasks: () => void;
+  de: boolean;
+}) {
+  return (
+    <div
+      role="tablist"
+      aria-label={de ? "Ansicht wechseln" : "Switch view"}
+      className="inline-flex rounded-full border border-border bg-card p-1 shadow-sm"
+    >
+      <button
+        type="button"
+        role="tab"
+        aria-selected={!showTaskReview}
+        onClick={onShowResults}
+        className={cn(
+          "rounded-full px-5 py-2 text-sm font-semibold transition-colors",
+          !showTaskReview
+            ? "bg-foreground text-background shadow-sm"
+            : "text-muted-foreground hover:text-foreground",
+        )}
+      >
+        {de ? "Ergebnis" : "Results"}
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected={showTaskReview}
+        onClick={onShowTasks}
+        className={cn(
+          "rounded-full px-5 py-2 text-sm font-semibold transition-colors",
+          showTaskReview
+            ? "bg-foreground text-background shadow-sm"
+            : "text-muted-foreground hover:text-foreground",
+        )}
+      >
+        {de ? "Aufgaben" : "Tasks"}
+      </button>
+    </div>
+  );
+}
+
 function ReviewExamPage() {
   const { examId } = Route.useParams();
   const [exam, setExam] = useState<MockExamSummary | null>(null);
@@ -179,55 +228,47 @@ function ReviewExamPage() {
         left={de ? <TrackBrandMark forceTrack="wiso" /> : undefined}
         hideTrackSwitcher={de}
         actions={
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setShowTaskReview(false)}
-              className={cn(
-                "rounded-md border px-3 py-1.5 text-xs font-semibold transition-colors",
-                !showTaskReview
-                  ? "border-foreground bg-foreground text-background"
-                  : "border-border bg-card hover:bg-secondary",
-              )}
-            >
-              {de ? "Ergebnis" : "Results"}
-            </button>
-            <button
-              type="button"
-              onClick={() => setShowTaskReview(true)}
-              className={cn(
-                "rounded-md border px-3 py-1.5 text-xs font-semibold transition-colors",
-                showTaskReview
-                  ? "border-foreground bg-foreground text-background"
-                  : "border-border bg-card hover:bg-secondary",
-              )}
-            >
-              {de ? "Aufgaben" : "Tasks"}
-            </button>
-            <Link
-              to={
-                isCustom
-                  ? de
-                    ? "/wiso/mock-builder"
-                    : "/products/custom-mock-builder"
-                  : de
-                    ? "/wiso/mock-exams"
-                    : "/mock-exams"
-              }
-              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
-            >
-              {isCustom
+          <Link
+            to={
+              isCustom
                 ? de
-                  ? "← WiSo Mock-Builder"
-                  : "← Custom Mock Builder"
+                  ? "/wiso/mock-builder"
+                  : "/products/custom-mock-builder"
                 : de
-                  ? "← Alle Probeprüfungen"
-                  : "← All mock exams"}
-            </Link>
-          </div>
+                  ? "/wiso/mock-exams"
+                  : "/mock-exams"
+            }
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            {isCustom
+              ? de
+                ? "← WiSo Mock-Builder"
+                : "← Custom Mock Builder"
+              : de
+                ? "← Alle Probeprüfungen"
+                : "← All mock exams"}
+          </Link>
         }
       />
       <main className={`${PRACTICE_BODY} flex-col py-8 sm:py-10`}>
+        <div className="sticky top-16 z-20 -mx-1 mb-6 flex flex-col gap-3 rounded-2xl border border-border bg-background/95 px-3 py-3 shadow-sm backdrop-blur-sm sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {de ? "Ansicht" : "View"}
+            </p>
+            <p className="mt-0.5 text-sm text-muted-foreground">
+              {de
+                ? "Ergebnisübersicht oder Aufgaben mit Lösungen und Erklärungen."
+                : "Score overview, or tasks with answers and explanations."}
+            </p>
+          </div>
+          <ReviewViewToggle
+            showTaskReview={showTaskReview}
+            onShowResults={() => setShowTaskReview(false)}
+            onShowTasks={() => setShowTaskReview(true)}
+            de={de}
+          />
+        </div>
         {!showTaskReview ? (
           <ExamResultOverview
             examTitle={exam?.title ?? (de ? "Probeprüfung" : "Mock Exam")}
@@ -236,6 +277,9 @@ function ReviewExamPage() {
             onOpenTask={(index) => {
               setCurrentIndex(index);
               setShowTaskReview(true);
+              if (typeof window !== "undefined") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
             }}
           />
         ) : current ? (

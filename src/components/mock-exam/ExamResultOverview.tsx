@@ -55,7 +55,8 @@ function overviewCopy(locale: UiLocale) {
       emptyHolding: "Noch nichts bei 85 %.",
       sections: "Abschnitte",
       questions: "Aufgaben",
-      questionsHint: "A–E zeigen die Beurteilung, nicht ob du „richtig“ angekreuzt hast.",
+      questionsHint:
+        "Zeile antippen → Aufgabe mit Lösungen und Erklärungen. A–E = Beurteilung, nicht dein True-Kreuz.",
       section: "Fach",
       statements: "Aussagen",
       points: "Punkte",
@@ -107,7 +108,8 @@ function overviewCopy(locale: UiLocale) {
     emptyHolding: "Nothing reached 85% yet.",
     sections: "Sections",
     questions: "Questions",
-    questionsHint: "A–E show judgment, not whether you ticked True.",
+    questionsHint:
+      "Tap a row to open that task with answers and explanations. A–E show judgment, not whether you ticked True.",
     section: "Section",
     statements: "Statements",
     points: "Points",
@@ -651,19 +653,31 @@ export function ExamResultOverview({
             <tbody>
               {tasks.map((task, index) => {
                 const smLabel = subjectLabel(task.question.subject as SubjectKey, locale);
+                const openLabel = locale === "de"
+                  ? `Aufgabe ${task.question.index} mit Lösungen öffnen`
+                  : `Open question ${task.question.index} with answers`;
                 return (
-                  <tr key={task.question.id} className="border-b border-border last:border-b-0">
+                  <tr
+                    key={task.question.id}
+                    className="group cursor-pointer border-b border-border last:border-b-0 transition-colors hover:bg-secondary/40"
+                    onClick={() => onOpenTask(index)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        onOpenTask(index);
+                      }
+                    }}
+                    tabIndex={0}
+                    role="link"
+                    aria-label={openLabel}
+                  >
                     <td className="px-5 py-3.5 sm:px-6">
-                      <button
-                        type="button"
-                        onClick={() => onOpenTask(index)}
-                        className="font-medium tabular-nums text-foreground underline-offset-4 hover:underline"
-                      >
+                      <span className="font-medium tabular-nums text-foreground underline-offset-4 group-hover:underline">
                         {task.question.index}
                         {task.flagged ? (
                           <span className="ml-1.5 text-xs text-muted-foreground">{copy.flagged}</span>
                         ) : null}
-                      </button>
+                      </span>
                     </td>
                     <td className="px-3 py-3.5 text-muted-foreground">{smLabel}</td>
                     <td className="px-3 py-3.5">
