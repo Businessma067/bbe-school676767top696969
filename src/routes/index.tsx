@@ -101,7 +101,7 @@ const FEATURE_CARDS: {
   title: string;
   description: string;
   icon: typeof BookOpen;
-  tools?: { name: string; blurb: string }[];
+  tools?: { name: string; blurb: string; kind: "flashcards" | "matching" | "tutor" }[];
 }[] = [
   {
     id: "questions",
@@ -127,21 +127,23 @@ const FEATURE_CARDS: {
   {
     id: "tools",
     title: "Study tools",
-    description:
-      "Between full practice sessions you can flip flash cards for definitions and formulas, race through matching boards, or take a short tutor quiz with instant feedback.",
+    description: "Quick drills between full practice sessions until recall feels automatic.",
     icon: Puzzle,
     tools: [
       {
         name: "Flash cards",
         blurb: "Flip through definitions, formulas, and vocab until recall feels automatic.",
+        kind: "flashcards" as const,
       },
       {
         name: "Matching",
         blurb: "Pair each term with its meaning on a timed board using the same decks in a different drill.",
+        kind: "matching" as const,
       },
       {
         name: "Tutor exam",
         blurb: "A short random theory quiz with instant feedback from the tutor robot.",
+        kind: "tutor" as const,
       },
     ],
   },
@@ -313,16 +315,7 @@ export function Index() {
                       {feature.description}
                     </p>
                     {feature.id === "builder" ? <MockBuilderOrbit /> : null}
-                    {feature.tools ? (
-                      <ul className="mt-4 space-y-2.5">
-                        {feature.tools.map((tool) => (
-                          <li key={tool.name} className="text-sm leading-relaxed text-why-us-fg/75">
-                            <span className="font-semibold text-why-us-fg">{tool.name}.</span>{" "}
-                            {tool.blurb}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
+                    {feature.tools ? <StudyToolsCycle tools={feature.tools} /> : null}
                   </article>
                 );
               })}
@@ -570,6 +563,64 @@ function SiteFooter() {
         © 2026 BBE School. Not affiliated with WU Vienna.
       </p>
     </footer>
+  );
+}
+
+function StudyToolsCycle({
+  tools,
+}: {
+  tools: { name: string; blurb: string; kind: "flashcards" | "matching" | "tutor" }[];
+}) {
+  return (
+    <div
+      className="study-tools-cycle mt-6 flex flex-1 flex-col"
+      aria-hidden
+      style={{ ["--stc-cycle" as string]: "9s" }}
+    >
+      <div className="study-tools-cycle-stage relative min-h-[10.5rem] flex-1 sm:min-h-[11rem]">
+        {tools.map((tool, index) => (
+          <div
+            key={tool.name}
+            className={cn("study-tools-cycle-slide", `study-tools-cycle-slide-${index}`)}
+          >
+            <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>
+              {tool.kind === "flashcards" ? (
+                <>
+                  <span className="stc-card stc-card-back" />
+                  <span className="stc-card stc-card-front">
+                    <span className="stc-card-term">NPV</span>
+                  </span>
+                </>
+              ) : null}
+              {tool.kind === "matching" ? (
+                <>
+                  <span className="stc-chip">Elasticity</span>
+                  <span className="stc-arrow" />
+                  <span className="stc-chip stc-chip-dim">%ΔQ / %ΔP</span>
+                </>
+              ) : null}
+              {tool.kind === "tutor" ? (
+                <>
+                  <span className="stc-bot" />
+                  <span className="stc-bubble">True or false?</span>
+                </>
+              ) : null}
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75">
+              <span className="font-semibold text-why-us-fg">{tool.name}.</span> {tool.blurb}
+            </p>
+          </div>
+        ))}
+      </div>
+      <div className="study-tools-cycle-dots mt-4 flex items-center justify-center gap-2">
+        {tools.map((tool, index) => (
+          <span
+            key={tool.name}
+            className={cn("study-tools-cycle-dot", `study-tools-cycle-dot-${index}`)}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
 

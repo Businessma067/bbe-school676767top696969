@@ -40,8 +40,8 @@ export const homeExtraDe: Record<string, string> = {
     "Absolviere komplette Simulationen mit echtem Tempo-Druck, Teilpunkte-Bewertung und Review, das genau zeigt, wo Punkte gewonnen oder verloren wurden.",
   "Build your own timed sets by topic and difficulty to close weak spots without wasting hours on material you already know.":
     "Baue eigene Timed-Sets nach Thema und Schwierigkeit, um Schwachstellen zu schließen — ohne Stunden an Stoff zu verschwenden, den du schon kannst.",
-  "Quick drills between full practice sessions — flip flash cards for definitions and formulas, race through matching boards, or take a tutor exam for a random theory quiz with instant feedback.":
-    "Schnelle Drills zwischen den großen Übungseinheiten — Karteikarten für Definitionen und Formeln, Matching-Boards im Tempo oder ein Tutor-Exam als zufälliges Theorie-Quiz mit Sofortfeedback.",
+  "Quick drills between full practice sessions until recall feels automatic.":
+    "Schnelle Drills zwischen den großen Übungseinheiten, bis der Abruf automatisch sitzt.",
   "Flash cards": "Karteikarten",
   "Flash cards.": "Karteikarten.",
   "Flip through definitions, formulas, and vocab until recall feels automatic.":
@@ -174,8 +174,8 @@ export const homeExtraUk: Record<string, string> = {
     "Повні симуляції з реальним темпом, частковим оцінюванням і розбором, який показує, де саме бали виграно чи втрачено.",
   "Build your own timed sets by topic and difficulty to close weak spots without wasting hours on material you already know.":
     "Збирай власні timed-набори за темами й складністю, щоб закривати слабкі місця — без годин на вже відомий матеріал.",
-  "Quick drills between full practice sessions — flip flash cards for definitions and formulas, race through matching boards, or take a tutor exam for a random theory quiz with instant feedback.":
-    "Швидкі тренування між повними сесіями — картки для визначень і формул, matching-дошки на швидкість або tutor exam як випадковий теорквиз із миттєвим фідбеком.",
+  "Quick drills between full practice sessions until recall feels automatic.":
+    "Швидкі тренування між повними сесіями, доки пригадування не стане автоматичним.",
   "Flash cards": "Картки",
   "Flash cards.": "Картки.",
   "Flip through definitions, formulas, and vocab until recall feels automatic.":

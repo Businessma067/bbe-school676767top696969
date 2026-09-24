@@ -30,7 +30,7 @@ const COPY_EN: Record<
     title: string;
     subtitle: string;
     cta: string;
-    pairLabel: (n: number, topics: number, id: string) => string;
+    pairLabel: (n: number, topics: number) => string;
     matchingBlurb: (title: string) => string;
     tutorBlurb: (title: string) => string;
     comingSoon: string;
@@ -40,8 +40,7 @@ const COPY_EN: Record<
     title: "Flashcards",
     subtitle: "Choose a subject to drill terms and formulas.",
     cta: "Study flashcards →",
-    pairLabel: (n, topics, id) =>
-      id === "english" ? `${n} cards · 3 modes` : `${n} cards · ${topics} topics`,
+    pairLabel: (n, topics) => `${n} cards · ${topics} topics`,
     matchingBlurb: (title) =>
       `Match terms and formulas to their definitions from the ${title.toLowerCase()} deck.`,
     tutorBlurb: (title) =>
@@ -79,7 +78,7 @@ function resolveCopy(kind: StudyToolKind, locale: StudyUiLocale) {
     title: de.title,
     subtitle: de.subtitle,
     cta: de.cta,
-    pairLabel: (n: number, topics: number, _id: string) => {
+    pairLabel: (n: number, topics: number) => {
       if (kind === "tutor-exam") {
         return WISO_STUDY_INDEX_COPY["tutor-exam"].pairLabel(n);
       }
@@ -203,7 +202,7 @@ export function StudyToolsSubjectIndex({
                     <p className="mt-3 text-xs font-semibold text-muted-foreground">
                       {s.comingSoon
                         ? copy.comingSoon
-                        : copy.pairLabel(n, s.sections.length, s.id)}
+                        : copy.pairLabel(n, s.sections.length)}
                     </p>
                     <span
                       className={

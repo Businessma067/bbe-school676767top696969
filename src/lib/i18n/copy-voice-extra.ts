@@ -20,8 +20,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Absolviere komplette Simulationen mit echtem Zeitdruck und Teilpunkte-Bewertung, und sieh danach, wo Punkte gewonnen oder verloren wurden.",
   "Build your own timed sets by topic and difficulty so you can close weak spots without spending hours on material you already know.":
     "Baue eigene timed Sets nach Thema und Schwierigkeit, damit du Lücken schließt, ohne Stunden an Stoff zu verlieren, den du schon kannst.",
-  "Between full practice sessions you can flip flash cards for definitions and formulas, race through matching boards, or take a short tutor quiz with instant feedback.":
-    "Zwischen vollen Übungssessions kannst du Karteikarten für Definitionen und Formeln durchblättern, Matching-Boards durchspielen oder ein kurzes Tutor-Quiz mit sofortigem Feedback machen.",
+  "Quick drills between full practice sessions until recall feels automatic.":
+    "Zwischen vollen Übungssessions kannst du kurze Drills machen, bis der Abruf automatisch sitzt.",
   "Pair each term with its meaning on a timed board using the same decks in a different drill.":
     "Ordne jeden Begriff seiner Bedeutung auf einem timed Board zu, mit denselben Decks in einem anderen Drill.",
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":
@@ -202,8 +202,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Пройди повні симуляції з реальним тиском часу й оцінюванням частковими балами, а потім розбери, де бали набрано чи втрачено.",
   "Build your own timed sets by topic and difficulty so you can close weak spots without spending hours on material you already know.":
     "Збирай власні timed-набори за темою й складністю, щоб закривати слабкі місця без годин на матеріал, який ти вже знаєш.",
-  "Between full practice sessions you can flip flash cards for definitions and formulas, race through matching boards, or take a short tutor quiz with instant feedback.":
-    "Між повними сесіями практики можна гортати картки з визначеннями й формулами, проходити matching-дошки або коротке tutor-квіз із миттєвим фідбеком.",
+  "Quick drills between full practice sessions until recall feels automatic.":
+    "Між повними сесіями практики — короткі drills, доки пригадування не стане автоматичним.",
   "Pair each term with its meaning on a timed board using the same decks in a different drill.":
     "Зістав кожен термін із його значенням на timed-дошці з тими самими колодами в іншому форматі тренування.",
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":
