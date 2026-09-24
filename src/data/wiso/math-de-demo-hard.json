@@ -1,7 +1,7 @@
 {
   "MATH 1.01": {
     "title": "Parametrische arithmetische Folgen als Mengen: Schnitt, Vereinigung und Differenz",
-    "context": "Es sei ein reeller Parameter $a>0$. Definiere\n\n $$A=\\{a,a+2,a+4,a+6,a+8\\},\\quad B=\\{a+4,a+6,a+8,a+10,a+12\\},\\quad C=\\{a+6,a+8,a+10,a+12,a+14\\}.$$ \n\nUniversum $U=\\{a+2k:k\\in\\mathbb{Z},\\,0\\le k\\le 7\\}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei ein reeller Parameter $a>0$. Definiere\n\n $$A=\\{a,a+2,a+4,a+6,a+8\\},\\quad B=\\{a+4,a+6,a+8,a+10,a+12\\},\\quad C=\\{a+6,a+8,a+10,a+12,a+14\\}.$$ \n\nUniversum $U=\\{a+2k:k\\in\\mathbb{Z},\\,0\\le k\\le 7\\}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $|A\\cap B|=3$ und $A\\cap B=\\{a+4,a+6,a+8\\}$.",
       " $|A\\cup C|=7$ für jedes $a>0$.",
@@ -20,7 +20,7 @@
   },
   "MATH 1.02": {
     "title": "Parametrische Mengenbeschreibungen und ein quadratischer Filter",
-    "context": "lassen $k\\ge 2$ Sei eine ganze Zahl. Definieren\n\n $$A=\\{x\\in\\mathbb{Z}:x^{2}=k^{2}\\},\\ B=\\{k,-k\\},\\ C=\\{x\\in\\mathbb{N}:x^{2}=k^{2}\\},$$ \n\nmit $\\mathbb{N}=\\{1,2,3,\\ldots\\}$, und\n\n $$D=\\{x\\in\\mathbb{Z}:x^{2}-5kx+6k^{2}=0\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $k\\ge 2$ eine ganze Zahl sein. Definiere\n\n $$A=\\{x\\in\\mathbb{Z}:x^{2}=k^{2}\\},\\ B=\\{k,-k\\},\\ C=\\{x\\in\\mathbb{N}:x^{2}=k^{2}\\},$$ \n\nmit $\\mathbb{N}=\\{1,2,3,\\ldots\\}$, und\n\n $$D=\\{x\\in\\mathbb{Z}:x^{2}-5kx+6k^{2}=0\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $A=B$ und $|A|=2$ für jede ganze Zahl $k\\ge 2$.",
       " $C=B$ wann immer $k=4$.",
@@ -39,13 +39,13 @@
   },
   "MATH 1.03": {
     "title": "Potenzmenge einer parametrischen dreielementigen Menge",
-    "context": "lassen $n\\ge 3$ eine ganze Zahl sein und $S=\\{n,n+1,n+2\\}$. Write $\\mathcal{P}(S)$ für den Leistungssatz.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $n\\ge 3$ eine ganze Zahl und $S=\\{n,n+1,n+2\\}$. Bezeichne mit $\\mathcal{P}(S)$ die Potenzmenge.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|\\mathcal{P}(S)|=8$ und $\\emptyset\\in\\mathcal{P}(S)$.",
-      " $\\{n,n+1\\}\\in S$.",
-      "Die Zahl der $2$ -element subsets of $S$ gleich $\\binom{3}{2}=3$.",
-      " $S\\subsetneq S$.",
-      "If $n=7$, then $\\{7,9\\}\\in\\mathcal{P}(S)$ und $|\\mathcal{P}(S)|=2^{3}$."
+      "$|\\mathcal{P}(S)|=8$ und $\\emptyset\\in\\mathcal{P}(S)$.",
+      "$\\{n,n+1\\}\\in S$.",
+      "Die Anzahl der $2$-elementigen Teilmengen von $S$ ist gleich $\\binom{3}{2}=3$.",
+      "$S\\subsetneq S$.",
+      "Wenn $n=7$, dann gilt $\\{7,9\\}\\in\\mathcal{P}(S)$ und $|\\mathcal{P}(S)|=2^{3}$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$|\\mathcal{P}(S)|=2^{3}=8,\\qquad\\emptyset\\subseteq S\\implies\\emptyset\\in\\mathcal{P}(S)$$ \n\nListing confirms eight subsets: $\\emptyset$, drei Singletons, drei Doubletons und $S$ itself, totaling $1+3+3+1=8$.\n\nJede angezeigte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jedes Zwischenschritt auf einer eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter noch einmal genau und vergleiche erst dann den resultierenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung behauptet wird.\n\nDie Aussage ist richtig.",
@@ -58,7 +58,7 @@
   },
   "MATH 1.04": {
     "title": "Zugehörigkeit versus Teilmenge bei einer gemischt-typisierten parametrischen Menge",
-    "context": "lassen $t$ real sein und $M=\\{t,\\,\\{t\\},\\,\\{t,t+1\\}\\}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $t$ real sein und $M=\\{t,\\,\\{t\\},\\,\\{t,t+1\\}\\}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $|M|=3$ für jede reale $t$.",
       " $t\\subseteq M$.",
@@ -77,7 +77,7 @@
   },
   "MATH 1.05": {
     "title": "Parametrische Differenz, Vereinigungsmächtigkeit und symmetrische Differenz",
-    "context": "lassen $m\\ge 1$ be an integer.\n\n $$P=\\{m,m+1,m+2,m+3,m+4\\},\\quad Q=\\{m+2,m+3,m+4,m+5,m+6\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $m\\ge 1$ eine ganze Zahl sein.\n\n $$P=\\{m,m+1,m+2,m+3,m+4\\},\\quad Q=\\{m+2,m+3,m+4,m+5,m+6\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $P\\setminus Q=\\{m,m+1\\}$ und $|P\\setminus Q|=2$.",
       " $Q\\setminus P=\\{m+5\\}$ und $|Q\\setminus P|=1$.",
@@ -96,7 +96,7 @@
   },
   "MATH 1.06": {
     "title": "Drei parametrische Mengen und vollständige Inklusion-Exklusion",
-    "context": "lassen $r\\ge 2$ be an integer.\n\n $$A=\\{r,r+1,r+2,r+3\\},\\ B=\\{r+2,r+3,r+4,r+5\\},\\ C=\\{r+3,r+4,r+5,r+6\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $r\\ge 2$ eine ganze Zahl sein.\n\n $$A=\\{r,r+1,r+2,r+3\\},\\ B=\\{r+2,r+3,r+4,r+5\\},\\ C=\\{r+3,r+4,r+5,r+6\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $|A\\cap B\\cap C|=1$ und $A\\cap B\\cap C=\\{r+3\\}$.",
       " $|A\\cup B\\cup C|=6$.",
@@ -114,14 +114,14 @@
     "solution_overview": " $$A\\cap B=\\{r+2,r+3\\}\\ (|A\\cap B|=2);\\ A\\cap C=\\{r+3\\};$$ \n\n $$B\\cap C=\\{r+3,r+4,r+5\\}\\ (|B\\cap C|=3);\\ A\\cap B\\cap C=\\{r+3\\}.$$ \n\nIE: $4+4+4-2-1-3+1=7$. Union $=\\{r,\\ldots,r+6\\}$.\n\nDie Buchstaben nutzen diese gewonnenen Werte neu und ergänzen nur den behauptungsspezifischen Test."
   },
   "MATH 1.07": {
-    "title": "Zwei-Kurs-Einschreibung mit parametrisierten Kopfzahlen",
-    "context": "A cohort of $N=120$ Studenten. lassen $E$ Ökonometrie sein und $S$ Statistics. Data: $|E|=a+40$, $|S|=a+55$, $|E\\cap S|=a+15$, where $a$ is an integer, $0\\le a\\le 20$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Zwei-Kurs-Belegung mit parametrisierten Teilnehmerzahlen",
+    "context": "Eine Kohorte von $N=120$ Studierenden. Es seien $E$ die Menge der Ökonometrie-Teilnehmenden und $S$ die Menge der Statistik-Teilnehmenden. Gegeben: $|E|=a+40$, $|S|=a+55$, $|E\\cap S|=a+15$, wobei $a$ eine ganze Zahl mit $0\\le a\\le 20$ ist.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|E\\cup S|=a+80$ für jedes zulässige $a$.",
-      "If $a=10$, then $|E\\cup S|=90$ und $|E\\cap S|\\ge 25$.",
-      "Die Anzahl der Ökonometrie ist nur gleich $25$ when $a=10$.",
-      "If $a=10$, then at least $35$ students take neither course.",
-      " $|E\\setminus S|=|S\\setminus E|$ für jedes zulässige $a$."
+      "$|E\\cup S|=a+80$ für jedes zulässige $a$.",
+      "Für $a=10$ gilt $|E\\cup S|=90$ und $|E\\cap S|\\ge 25$.",
+      "Die Zahl derjenigen, die nur Ökonometrie belegen, ist gleich $25$, wenn $a=10$.",
+      "Für $a=10$ belegen mindestens $35$ Studierende keinen der beiden Kurse.",
+      "$|E\\setminus S|=|S\\setminus E|$ für jedes zulässige $a$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$|E\\cup S|=(a+40)+(a+55)-(a+15)=a+80$$ \n\nIdentität gilt für jedes zulässige $a$.\n\nDer Parameter $a$ Storniert in der Inklusions-Ausschluss-Kombination $(a+40)+(a+55)-(a+15)$ Verlassen des affinen Gesetzes $a+80$.\n\nJede angezeigte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jedes Zwischenschritt auf einer eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter noch einmal genau und vergleiche erst dann den resultierenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung behauptet wird.\n\nDie Aussage ist richtig.",
@@ -134,7 +134,7 @@
   },
   "MATH 1.08": {
     "title": "Paarweise disjunkte Blöcke und eine Partition eines parametrischen Universums",
-    "context": "lassen $n\\ge 3$ eine ganze Zahl sein und $U=\\{1,2,\\ldots,3n\\}$. Definiere\n\n $$A_1=\\{1,\\ldots,n\\},\\ A_2=\\{n+1,\\ldots,2n\\},\\ A_3=\\{2n+1,\\ldots,3n\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $n\\ge 3$ eine ganze Zahl sein und $U=\\{1,2,\\ldots,3n\\}$. Definiere\n\n $$A_1=\\{1,\\ldots,n\\},\\ A_2=\\{n+1,\\ldots,2n\\},\\ A_3=\\{2n+1,\\ldots,3n\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $A_1,A_2,A_3$ paarweise disjunkt sind und $A_1\\cup A_2\\cup A_3=U$.",
       " $|A_1|=|A_2|=|A_3|=n$ und $|U|=3n$.",
@@ -153,13 +153,13 @@
   },
   "MATH 1.09": {
     "title": "Komplemente mit parametrischem Universum und De Morgan",
-    "context": "lassen $|U|=n$ mit $n=50$. Sets $A,B\\subseteq U$ satisfy $|A|=18+k$, $|B|=22+k$, $|A\\cap B|=8+k$, where $k$ is an integer, $0\\le k\\le 10$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $|U|=n$ mit $n=50$. Mengen $A,B\\subseteq U$ erfüllen $|A|=18+k$, $|B|=22+k$, $|A\\cap B|=8+k$, wobei $k$ eine ganze Zahl mit $0\\le k\\le 10$ ist.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|A\\cup B|=32+k$ für jedes zulässige $k$.",
-      " $|A^{c}|=32-k$ und $|B^{c}|=28-k$.",
+      "$|A\\cup B|=32+k$ für jedes zulässige $k$.",
+      "$|A^{c}|=32-k$ und $|B^{c}|=28-k$.",
       "De Morgan: $|(A\\cup B)^{c}|=|A^{c}\\cap B^{c}|=18-k$.",
-      "If $k=4$, then $|A^{c}\\cup B^{c}|>40$.",
-      "If $k=4$, then $|A\\setminus B|=10$."
+      "Für $k=4$ gilt $|A^{c}\\cup B^{c}|>40$.",
+      "Für $k=4$ gilt $|A\\setminus B|=10$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$|A\\cup B|=(18+k)+(22+k)-(8+k)=32+k$$ \n\nDie $k$ -terms cancel: $(18+k)+(22+k)-(8+k)=32+k$, giving a uniform law in $k$.\n\nJede angezeigte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jedes Zwischenschritt auf einer eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter noch einmal genau und vergleiche erst dann den resultierenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung behauptet wird.\n\nDie Aussage ist richtig.",
@@ -172,13 +172,13 @@
   },
   "MATH 1.10": {
     "title": "Komplemente von Vereinigung und Schnitt bei überlappenden parametrischen Mengen",
-    "context": "Universum $U=\\{1,2,\\ldots,30\\}$. Lassen Sie $p$ be an integer, $2\\le p\\le 8$, und Set\n\n $$A=\\{1,2,\\ldots,10+p\\},\\qquad B=\\{8,9,\\ldots,20+p\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Universum $U=\\{1,2,\\ldots,30\\}$. Es sei $p$ eine ganze Zahl, $2\\le p\\le 8$, und setze\n\n$$A=\\{1,2,\\ldots,10+p\\},\\qquad B=\\{8,9,\\ldots,20+p\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|A\\cap B|=3+p$ und $|A\\cup B|=23+p$.",
-      " $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ as sets (De Morgan identity).",
-      " $|A^{c}\\cap B^{c}|=7-p$.",
-      "If $p=5$, then $|A\\setminus B|=7$.",
-      "If $p=5$, then $|(A\\cap B)^{c}|=20$."
+      "$|A\\cap B|=3+p$ und $|A\\cup B|=23+p$.",
+      "$(A\\cup B)^{c}=A^{c}\\cap B^{c}$ als Mengen (De-Morgan-Identität).",
+      "$|A^{c}\\cap B^{c}|=7-p$.",
+      "Wenn $p=5$, dann gilt $|A\\setminus B|=7$.",
+      "Wenn $p=5$, dann gilt $|(A\\cap B)^{c}|=20$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nOverlap $\\{8,\\ldots,10+p\\}$ has size $3+p$ EU-Größe:\n\n $$|A|+|B|-|A\\cap B|=(10+p)+(13+p)-(3+p)=23+p$$ \n\n(using $|B|=20+p-8+1=13+p$ ).\n\nOverlap length $(10+p)-8+1=3+p$ und $|B|=13+p$ Kombinieren, um Union Größe zu geben $(10+p)+(13+p)-(3+p)=23+p$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist richtig.",
@@ -190,14 +190,14 @@
     "solution_overview": " $A=\\{1,\\ldots,10+p\\}$, $B=\\{8,\\ldots,20+p\\}$. Overlap starts at $8$ und endet mit $10+p$:\n\n $$A\\cap B=\\{8,\\ldots,10+p\\},\\ |A\\cap B|=(10+p)-8+1=3+p.$$ \n\n $$|A\\cup B|=(10+p)+(20+p-7)-(3+p)=23+p.$$ \n\n $$|(A\\cup B)^{c}|=30-(23+p)=7-p.$$ \n\n $$|A\\setminus B|=|A|-|A\\cap B|=(10+p)-(3+p)=7.$$ \n\nAt $p=5$: $|A\\cap B|=8$, $|(A\\cap B)^{c}|=22$."
   },
   "MATH 1.11": {
-    "title": "Prüfung einer parametrischen Familie auf die Partitionsaxiome",
-    "context": "lassen $n\\ge 4$ und $X=\\{0,1,\\ldots,n-1\\}$. Betrachten Sie die Sammlung\n\n $$\\mathcal{F}=\\bigl\\{\\{0,1\\},\\{2,3\\},\\{4,\\ldots,n-1\\}\\bigr\\}$$ when $n\\ge 5$ und interpretieren Sie den dritten Block als leer, wenn $n=4$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Prüfung einer parametrischen Zerlegung auf die Partitionsaxiome",
+    "context": "Es sei $n\\ge 4$ und $X=\\{0,1,\\ldots,n-1\\}$. Betrachte die Familie\n\n$$\\mathcal{F}=\\bigl\\{\\{0,1\\},\\{2,3\\},\\{4,\\ldots,n-1\\}\\bigr\\}$$ für $n\\ge 5$, und interpretiere den dritten Block als leer, falls $n=4$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "If $n=6$, then $\\mathcal{F}$ partitions $X$.",
-      "If $n=4$, then $\\mathcal{F}$ partitions $X$.",
-      "die zu $\\mathcal{F}$ sind paarweise disjunkt für jeden $n\\ge 5$.",
-      "If $n=8$, then $|\\mathcal{F}|=3$ Und das sind die größten die Größe hat $4$.",
-      "für $n=6$,,,, $5$ belongs to exactly one block of $\\mathcal{F}$."
+      "Wenn $n=6$, dann zerlegt $\\mathcal{F}$ die Menge $X$.",
+      "Wenn $n=4$, dann zerlegt $\\mathcal{F}$ die Menge $X$.",
+      "Die Blöcke von $\\mathcal{F}$ sind für jedes $n\\ge 5$ paarweise disjunkt.",
+      "Wenn $n=8$, dann gilt $|\\mathcal{F}|=3$ und der größte Block hat die Mächtigkeit $4$.",
+      "Für $n=6$ gehört das Element $5$ zu genau einem Block von $\\mathcal{F}$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$n=6$: blocks $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,5\\}$ sind nicht leer, paarweise disjunkt, Union $X=\\{0,\\ldots,5\\}$. Partition.\n\nAt $n=6$ den, den und dem der $\\{4,5\\}$ ist nicht leer, und die drei Blöcke decken $\\{0,1,2,3,4,5\\}$ ohne Überlappung.\n\nJede vorhandene Identität wird auf zwei Seiten geprüft, vor dem endgültigen Vergleich mit der Behauptung gilt.\n\nDie Aussagen sind richtig.\n\nDie Aussage ist richtig.",
@@ -210,13 +210,13 @@
   },
   "MATH 1.12": {
     "title": "Abzählen von Teilmengen einer parametrischen $n$-Menge",
-    "context": "lassen $n=6$ und $A=\\{1,2,3,4,5,6\\}$. Lassen Sie $k$ zählte an Pro Weil $0\\le k\\le n$. Write $\\binom{n}{k}$ für die Zahl der $k$ -subsets. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $n=6$ und $A=\\{1,2,3,4,5,6\\}$. Es sei $k$ ein ganzzahliger Parameter mit $0\\le k\\le n$. Schreibe $\\binom{n}{k}$ für die Anzahl der $k$-elementigen Teilmengen.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|\\mathcal{P}(A)|=64$ und $\\binom{6}{0}+\\binom{6}{6}=2$.",
-      " $\\binom{6}{2}=15$ und $\\binom{6}{4}=15$.",
-      "Die Zahln der Untergruppen sind von $A$ mit einem $5$ Element gleich $7$.",
-      "Wenn ein $A$ Verändern Sie den Strom der $5$ -set has size $32$.",
-      " $\\binom{6}{3}=18$."
+      "$|\\mathcal{P}(A)|=64$ und $\\binom{6}{0}+\\binom{6}{6}=2$.",
+      "$\\binom{6}{2}=15$ und $\\binom{6}{4}=15$.",
+      "Die Anzahl der Teilmengen von $A$ mit mindestens $5$ Elementen ist gleich $7$.",
+      "Wird ein Element aus $A$ entfernt, so hat die Potenzmenge der entstandenen $5$-Menge die Mächtigkeit $32$.",
+      "$\\binom{6}{3}=18$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$2^{6}=64,\\qquad\\binom{6}{0}+\\binom{6}{6}=1+1=2$$ \n\nPower-set size $2^{6}=64$ und die beiden extremen Binomialkoeffizienten sind gleich $1$, summing to $2$.\n\nJede angezeigte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jedes Zwischenschritt auf einer eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter noch einmal genau und vergleiche erst dann den resultierenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung behauptet wird.\n\nDie Aussage ist richtig.",
@@ -229,7 +229,7 @@
   },
   "MATH 1.13": {
     "title": "Halboffene Intervalle mit Parameter und universellem Komplement",
-    "context": "lassen $a$ Real sein mit $a>2$ Innerhalb des Universums $U=[0,a+5]$, ene, Definiere\n\n $$I=[0,a),\\qquad J=[a-2,a+3],\\qquad K=(a+1,a+5].$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $a$ Real sein mit $a>2$ Innerhalb des Universums $U=[0,a+5]$, ene, Definiere\n\n $$I=[0,a),\\qquad J=[a-2,a+3],\\qquad K=(a+1,a+5].$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $I\\cap J=[a-2,a)$ und die Länge der $I\\cap J$ gleich $2$.",
       " $I\\cup J=[0,a+3]$ für jeden $a>2$.",
@@ -247,14 +247,14 @@
     "solution_overview": "Intersezieren undraten Endpunkte sorgfältig.\n\n $$I\\cap J=[a-2,a),$$ \n\nmit Länge $2$. Also\n\n $$I\\cup J=[0,a+3],\\qquad J\\cap K=(a+1,a+3],$$ \n\nund die Länge der $J\\cap K$ is $2$ Seit jedem Punkt der $I$ is $<a$ für jeden Punkt $K$ is $>a+1$, one has $I\\cap K=\\emptyset$. At $a=4$: $I\\cap J=[2,4)$ contains $3$, but $K=(5,9]$ does not."
   },
   "MATH 1.14": {
-    "title": "Drei-Mengen-Venn-Zählungen mit Parameter $k$",
-    "context": "In a club of $N=100$ Mitglieder, lassen $A$, $B$, $C$ die son, die die-Annahme, die drei-sund-sons- zu verbreiten, die drei Gürtel $|A|=30+k$, $|B|=28+k$, $|C|=26+k$, $|A\\cap B|=10+k$, $|A\\cap C|=8+k$, $|B\\cap C|=7+k$, $|A\\cap B\\cap C|=3+k$, where $k$ is an integer, $0\\le k\\le 5$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Dreifache Venn-Zählung mit Parameter $k$",
+    "context": "In einem Club mit $N=100$ Mitgliedern seien $A$, $B$, $C$ die Mengen der Teilnehmenden an drei Workshops. Anzahlen: $|A|=30+k$, $|B|=28+k$, $|C|=26+k$, $|A\\cap B|=10+k$, $|A\\cap C|=8+k$, $|B\\cap C|=7+k$, $|A\\cap B\\cap C|=3+k$, wobei $k$ eine ganze Zahl mit $0\\le k\\le 5$ ist.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|A\\cup B\\cup C|=62+k$ für jedes zulässige $k$.",
-      "If $k=2$, then $|A\\cup B\\cup C|=64$.",
-      "If $k=2$, dann wird nur die Zahl $A$ gleich $17$.",
-      "If $k=2$, then at least $40$ Mitglieder, der von den einzelnen",
-      "Der einzige Tag $A$ Zahl gleich $15$ für jedes zulässige $k$."
+      "$|A\\cup B\\cup C|=62+k$ für jedes zulässige $k$.",
+      "Für $k=2$ gilt $|A\\cup B\\cup C|=64$.",
+      "Für $k=2$ ist die Zahl der nur an $A$ Teilnehmenden gleich $17$.",
+      "Für $k=2$ nehmen mindestens $40$ Mitglieder an keinem der drei Workshops teil.",
+      "Die Nur-$A$-Anzahl ist für jedes zulässige $k$ gleich $15$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nArbeitslosigkeit\n\nSummieren Sie die sieben IE:\n\n $$30+28+26-10-8-7+3+k(1+1+1-1-1-1+1)=62+k$$ \n\nCollecting coefficients of $k$ in IE: $1+1+1-1-1-1+1=1$ So ist die Union $62+k$.\n\nJede angezeigte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jedes Zwischenschritt auf einer eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter noch einmal genau und vergleiche erst dann den resultierenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung behauptet wird.\n\nDie Aussage ist richtig.",
@@ -267,7 +267,7 @@
   },
   "MATH 1.15": {
     "title": "Endliche versus unendliche parametrische Mengen und Mächtigkeitsvergleiche",
-    "context": "lassen $m\\ge 2$ Sei eine ganze Zahl. Definieren\n\n $$F=\\{1,2,\\ldots,m\\},\\quad E=\\{2,4,\\ldots,2m\\},\\quad N=\\mathbb{N}=\\{1,2,3,\\ldots\\},\\quad Z_{\\ge 0}=\\{0,1,2,\\ldots\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $m\\ge 2$ eine ganze Zahl sein. Definiere\n\n $$F=\\{1,2,\\ldots,m\\},\\quad E=\\{2,4,\\ldots,2m\\},\\quad N=\\mathbb{N}=\\{1,2,3,\\ldots\\},\\quad Z_{\\ge 0}=\\{0,1,2,\\ldots\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $|F|=m$ und $|E|=m$, so there exists a bijection $F\\to E$.",
       " $E\\subsetneq N$ und $|E|=|N|$.",
@@ -286,7 +286,7 @@
   },
   "MATH 1.16": {
     "title": "Mengenbeschreibung gerader Zahlen mit Parameter und Zugehörigkeitstests",
-    "context": "lassen $t\\ge 3$ f eine ganze Zahl zu sein, und den endgültigen Satz zu Definiere\n\n $$E_t=\\{2,4,6,\\ldots,2t\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $t\\ge 3$ f eine ganze Zahl zu sein, und den endgültigen Satz zu Definiere\n\n $$E_t=\\{2,4,6,\\ldots,2t\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $|E_t|=t$ und $2t\\in E_t$.",
       " $t\\in E_t$ für jede ungerade ganze Zahl $t\\ge 3$.",
@@ -305,7 +305,7 @@
   },
   "MATH 1.17": {
     "title": "Quadratische Mengenbeschreibung mit Parameter $k$ und ganzzahligen Wurzeln",
-    "context": "lassen $k\\ge 2$ Sei eine ganze Zahl. Definieren\n\n $$Q=\\{x\\in\\mathbb{Z}:x^{2}-(2k+1)x+k(k+1)=0\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $k\\ge 2$ eine ganze Zahl sein. Definiere\n\n $$Q=\\{x\\in\\mathbb{Z}:x^{2}-(2k+1)x+k(k+1)=0\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $Q=\\{k,k+1\\}$ und $|Q|=2$.",
       " $k\\in Q$ und $k+1\\in Q$.",
@@ -323,14 +323,14 @@
     "solution_overview": "Factor: $x^{2}-(2k+1)x+k(k+1)=(x-k)(x-k-1)$. Roots $k$ und $k+1$, beide Integer $\\ge 2$. Discriminant $(2k+1)^{2}-4k(k+1)=4k^{2}+4k+1-4k^{2}-4k=1$.\n\nDie Buchstaben nutzen diese gewonnenen Werte neu und ergänzen nur den behauptungsspezifischen Test."
   },
   "MATH 1.18": {
-    "title": "Potenzmenge einer vierelementigen parametrischen Menge",
-    "context": "lassen $b\\ge 1$ eine ganze Zahl sein und $W=\\{b,b+1,b+2,b+3\\}$. Write $\\mathcal{P}(W)$ für den Leistungssatz.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Potenzmenge einer parametrischen vierelementigen Menge",
+    "context": "Es sei $b\\ge 1$ eine ganze Zahl und $W=\\{b,b+1,b+2,b+3\\}$. Bezeichne mit $\\mathcal{P}(W)$ die Potenzmenge.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|\\mathcal{P}(W)|=16$ und $\\binom{4}{2}=6$.",
-      " $\\{b,b+3\\}\\in\\mathcal{P}(W)$ und $\\{b,b+3\\}\\subseteq W$.",
-      "Die Zahl der $3$ -element subsets of $W$ gleich $4$.",
-      "If $b=10$, then $\\{10,11,12,13\\}\\in\\mathcal{P}(W)$.",
-      " $|\\mathcal{P}(W)|=2^{|W|}=12$."
+      "$|\\mathcal{P}(W)|=16$ und $\\binom{4}{2}=6$.",
+      "$\\{b,b+3\\}\\in\\mathcal{P}(W)$ und $\\{b,b+3\\}\\subseteq W$.",
+      "Die Anzahl der $3$-elementigen Teilmengen von $W$ ist gleich $4$.",
+      "Wenn $b=10$, dann gilt $\\{10,11,12,13\\}\\in\\mathcal{P}(W)$.",
+      "$|\\mathcal{P}(W)|=2^{|W|}=12$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$|\\mathcal{P}(W)|=2^{4}=16,\\qquad\\binom{4}{2}=6$$ \n\nPower-set size $2^{4}=16$ und $\\binom{4}{2}=6$ die Standardzählformeln für eine $4$ -Set.\n\nJede angezeigte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nFühren Sie jedes Zwischenschritt in der eigenen Displayzeile auf, ersetzen Sie die gesuchten Kennzahlen noch einmal genau, und erfassen Sie erst dann den genauen, in der die Live-Anweisung vermittelten Wert in der Handwecke.\n\nEs ist ein\n\nDie Aussage ist richtig.",
@@ -343,7 +343,7 @@
   },
   "MATH 1.19": {
     "title": "Teilmengenkette mit Parameter und echter Enthaltensein-Relation",
-    "context": "lassen $c\\ge 2$ Sei eine ganze Zahl. Definieren\n\n $$X=\\{c\\},\\quad Y=\\{c,c+1\\},\\quad Z=\\{c,c+1,c+2\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $c\\ge 2$ eine ganze Zahl sein. Definiere\n\n $$X=\\{c\\},\\quad Y=\\{c,c+1\\},\\quad Z=\\{c,c+1,c+2\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $X\\subsetneq Y\\subsetneq Z$.",
       " $|X|=1$, $|Y|=2$, $|Z|=3$.",
@@ -362,7 +362,7 @@
   },
   "MATH 1.20": {
     "title": "Prüfung, ob eine Familie eine parametrische Menge partitioniert",
-    "context": "lassen $n\\ge 6$ und $S=\\{1,2,\\ldots,n\\}$.\n\n $$\\mathcal{G}=\\bigl\\{\\{1,2,3\\},\\{3,4,5\\},\\{6,7,\\ldots,n\\}\\bigr\\}.$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $n\\ge 6$ und $S=\\{1,2,\\ldots,n\\}$.\n\n $$\\mathcal{G}=\\bigl\\{\\{1,2,3\\},\\{3,4,5\\},\\{6,7,\\ldots,n\\}\\bigr\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $\\mathcal{G}$ Es gelingt nicht, eine Teilung von $S$ Weil sich zwei Blöcke schneiden.",
       " $\\{1,2,3\\}\\cap\\{3,4,5\\}=\\{3\\}\\neq\\emptyset$.",
@@ -381,7 +381,7 @@
   },
   "MATH 2.01": {
     "title": "Ausmultiplizieren von $(px+q)^{2}$ mit Parametern und numerischer Probe",
-    "context": "Es seien $p$ und $q$ von null verschiedene reelle Zahlen und $x$ reell. Betrachte die Identität\n\n $$(px+q)^{2}=p^{2}x^{2}+2pqx+q^{2}.$$ \n\nEine konkrete Probe $p=3$, $q=-4$, $x=2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es seien $p$ und $q$ von null verschiedene reelle Zahlen und $x$ reell. Betrachte die Identität\n\n $$(px+q)^{2}=p^{2}x^{2}+2pqx+q^{2}.$$ \n\nEine konkrete Probe $p=3$, $q=-4$, $x=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Expansion $(px+q)^{2}$ yields $p^{2}x^{2}+2pqx+q^{2}$ für alle reellen $p,q,x$.",
       "If $p=3$ und $q=-4$, then $(3x-4)^{2}=9x^{2}-24x+16$.",
@@ -400,7 +400,7 @@
   },
   "MATH 2.02": {
     "title": "Differenz von Quadraten mit skalierten Parametern",
-    "context": "lassen $a,b$ nicht Null Reale sein und $k$ einem reellen Parameter. Studie\n\n $$(ak)^{2}-(bk)^{2}=(a-b)(a+b)k^{2}.$$ \n\nEine Sonde verwendet $a=5$, $b=3$, $k=2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $a,b$ von null verschiedene reelle Zahlen sein und $k$ ein reeller Parameter. Studie\n\n $$(ak)^{2}-(bk)^{2}=(a-b)(a+b)k^{2}.$$ \n\nEine Sonde verwendet $a=5$, $b=3$, $k=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(ak)^{2}-(bk)^{2}=(a^{2}-b^{2})k^{2}$ für alle reellen $a,b,k$.",
       "If $a=5$, $b=3$, $k=2$, then $(ak)^{2}-(bk)^{2}=64$.",
@@ -419,7 +419,7 @@
   },
   "MATH 2.03": {
     "title": "Elementare Summe und Produkt mit linearem Parameter",
-    "context": "lassen $s=u+v$ und $p=uv$ für real $u,v$ Ein Parameter $m$ über das verschobene Paar eintritt $u'=u+m$, $v'=v+m$ Hinse zur-Use $u=3$, $v=5$, $m=2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $s=u+v$ und $p=uv$ für real $u,v$ Ein Parameter $m$ über das verschobene Paar eintritt $u'=u+m$, $v'=v+m$ Eine Probe verwendet $u=3$, $v=5$, $m=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $u^{2}+v^{2}=s^{2}-2p$ für alle reellen $u,v$.",
       "If $u=3$, $v=5$, then $u^{2}+v^{2}=34$ und $s^{2}-2p=34$.",
@@ -438,7 +438,7 @@
   },
   "MATH 2.04": {
     "title": "Kubensummen-Identität bei verschwindender Dreiersumme",
-    "context": "lassen $x,y,z$ Sie werden mit $x+y+z=0$. Recall\n\n $$x^{3}+y^{3}+z^{3}-3xyz=(x+y+z)(x^{2}+y^{2}+z^{2}-xy-yz-zx).$$ \n\nEine Sonde verwendet $x=4$, $y=-1$, $z=-3$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $x,y,z$ Sie werden mit $x+y+z=0$. Erinnerung:\n\n $$x^{3}+y^{3}+z^{3}-3xyz=(x+y+z)(x^{2}+y^{2}+z^{2}-xy-yz-zx).$$ \n\nEine Sonde verwendet $x=4$, $y=-1$, $z=-3$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "If $x+y+z=0$, then $x^{3}+y^{3}+z^{3}=3xyz$.",
       "At $x=4$, $y=-1$, $z=-3$, one has $x+y+z=0$ und $x^{3}+y^{3}+z^{3}=3xyz=-36$.",
@@ -457,7 +457,7 @@
   },
   "MATH 2.05": {
     "title": "Binomische Entwicklung von $(x+y)^{n}$ mit einer Koeffizientenprobe",
-    "context": "lassen $n=4$ und überlegt $(x+y)^{4}$ Ein Parameter $t$ erscheint in der Bewertung $(t+1)^{4}$ im Vergleich zum expandierten Polynom $x=t$, $y=1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $n=4$ und überlegt $(x+y)^{4}$ Ein Parameter $t$ erscheint in der Bewertung $(t+1)^{4}$ im Vergleich zum expandierten Polynom $x=t$, $y=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(x+y)^{4}=x^{4}+4x^{3}y+6x^{2}y^{2}+4xy^{3}+y^{4}$.",
       "Der Koeffizient von $x^{2}y^{2}$ in $(x+y)^{4}$ gleich $\\binom{4}{2}=6$.",
@@ -476,7 +476,7 @@
   },
   "MATH 2.06": {
     "title": "Binomische Entwicklung von $(a+b)^{5}$ mit numerischer Kontrolle",
-    "context": "Expand $(a+b)^{5}$ Sondenersatz $a=2$, $b=-1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Entwickle $(a+b)^{5}$ Sondenersatz $a=2$, $b=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(a+b)^{5}=a^{5}+5a^{4}b+10a^{3}b^{2}+10a^{2}b^{3}+5ab^{4}+b^{5}$.",
       "Der Koeffizient von $a^{3}b^{2}$ gleich $\\binom{5}{2}=10$.",
@@ -495,7 +495,7 @@
   },
   "MATH 2.07": {
     "title": "Kubus eines linearen Binoms mit Parametern",
-    "context": "lassen $c,d$ be nonzero reals. Expand $(cx-d)^{3}$ Hinse zur-Use $c=2$, $d=3$, $x=2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $c,d$ von null verschiedene reelle Zahlen sein. Entwickle $(cx-d)^{3}$ Eine Probe verwendet $c=2$, $d=3$, $x=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(cx-d)^{3}=c^{3}x^{3}-3c^{2}dx^{2}+3cd^{2}x-d^{3}$.",
       "If $c=2$, $d=3$, then $(2x-3)^{3}=8x^{3}-36x^{2}+54x-27$.",
@@ -514,7 +514,7 @@
   },
   "MATH 2.08": {
     "title": "Quadratische Ergänzung mit einem Parameter, der um eins danebenliegt",
-    "context": "lassen $h$ werden. mit $x^{2}+2hx+h^{2}=(x+h)^{2}$ mit dem nahen Polynom $x^{2}+2hx+h^{2}-1$ Hinse zur-Use $h=3$, $x=1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $h$ werden. mit $x^{2}+2hx+h^{2}=(x+h)^{2}$ mit dem nahen Polynom $x^{2}+2hx+h^{2}-1$ Eine Probe verwendet $h=3$, $x=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $x^{2}+2hx+h^{2}=(x+h)^{2}$ für alle reellen $x,h$.",
       " $x^{2}+2hx+h^{2}-1=(x+h)^{2}-1=(x+h-1)(x+h+1)$.",
@@ -533,7 +533,7 @@
   },
   "MATH 2.09": {
     "title": "Quadratentwicklung dreier Terme mit Gruppierungsparameter",
-    "context": "lassen $a,b,c$ be reals. Expand $(a+b+c)^{2}$ Hinse zur-Use $a=2$, $b=3$, $c=-1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $a,b,c$ reelle Zahlen sein. Entwickle $(a+b+c)^{2}$ Eine Probe verwendet $a=2$, $b=3$, $c=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$.",
       "Die Gruppierung als $((a+b)+c)^{2}=(a+b)^{2}+2(a+b)c+c^{2}$ liefert dieselbe Entwicklung.",
@@ -552,7 +552,7 @@
   },
   "MATH 2.10": {
     "title": "Vorzeichenwechsel, die nur den Kreuzterm ändern",
-    "context": "Compare $(a+b)^{2}$ und $(a-b)^{2}$ für real $a,b$ Hinse zur-Use $a=7$, $b=2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Compare $(a+b)^{2}$ und $(a-b)^{2}$ für real $a,b$ Eine Probe verwendet $a=7$, $b=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(a+b)^{2}-(a-b)^{2}=4ab$ für alle reellen $a,b$.",
       " $(a-b)^{2}=a^{2}-2ab+b^{2}$.",
@@ -571,7 +571,7 @@
   },
   "MATH 2.11": {
     "title": "Identifikation des verdoppelten mittleren Terms mit Parameter",
-    "context": "lassen $m,n$ be nonzero reals. Write $(m+n)^{2}=m^{2}+\\square+n^{2}$ und $\\square$ Hinse zur-Use $m=4$, $n=-3$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $m,n$ von null verschiedene reelle Zahlen sein. Schreibe $(m+n)^{2}=m^{2}+\\square+n^{2}$ und $\\square$ Eine Probe verwendet $m=4$, $n=-3$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die fehlende Mittelfrist ist $2mn$.",
       "If $m=4$, $n=-3$, then $(m+n)^{2}=1$ und $m^{2}+2mn+n^{2}=1$.",
@@ -590,7 +590,7 @@
   },
   "MATH 2.12": {
     "title": "Quadrate dreier Terme mit weggelassenem Faktor zwei",
-    "context": "lassen $a,b,c$ be reals. A faulty expansion claims $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+ab+ac+bc$ Hinse zur-Use $a=1$, $b=1$, $c=1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $a,b,c$ reelle Zahlen sein. Eine fehlerhafte Entwicklung behauptet $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+ab+ac+bc$ Eine Probe verwendet $a=1$, $b=1$, $c=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die richtige Erweiterung ist $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$.",
       "At $a=b=c=1$, das richtige Quadrat gleicht $9$.",
@@ -609,7 +609,7 @@
   },
   "MATH 2.13": {
     "title": "Kubusentwicklung, bei der ungeradzahlige Kreuzterme bestehen bleiben",
-    "context": "Expand $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ Hinse zur-Use $a=2$, $b=-1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Entwickle $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ Eine Probe verwendet $a=2$, $b=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ für alle reellen $a,b$.",
       "At $a=2$, $b=-1$, one has $(a+b)^{3}=1$.",
@@ -628,7 +628,7 @@
   },
   "MATH 2.14": {
     "title": "Rückgewinnung von $x^{3}+y^{3}$ aus Summen- und Produktparametern",
-    "context": "lassen $s=x+y$ und $p=xy$. Then $x^{3}+y^{3}=s^{3}-3sp$ Hinse zur-Use $s=5$, $p=6$ (so $\\{x,y\\}=\\{2,3\\}$ ). Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $s=x+y$ und $p=xy$. Dann $x^{3}+y^{3}=s^{3}-3sp$ Eine Probe verwendet $s=5$, $p=6$ (so $\\{x,y\\}=\\{2,3\\}$ ).\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $x^{3}+y^{3}=s^{3}-3sp$ für alle reellen $x,y$.",
       "At $s=5$, $p=6$, one has $x^{3}+y^{3}=35$.",
@@ -647,7 +647,7 @@
   },
   "MATH 2.15": {
     "title": "Biquadratische Differenz $x^{4}-y^{4}$ mit Parameter",
-    "context": "Factor $x^{4}-y^{4}$ Hinse zur-Use $x=3$, $y=1$ und eine skalierte Version $(kx)^{4}-(ky)^{4}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Factor $x^{4}-y^{4}$ Eine Probe verwendet $x=3$, $y=1$ und eine skalierte Version $(kx)^{4}-(ky)^{4}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $x^{4}-y^{4}=(x^{2}-y^{2})(x^{2}+y^{2})=(x-y)(x+y)(x^{2}+y^{2})$.",
       "At $x=3$, $y=1$, one has $x^{4}-y^{4}=80$.",
@@ -666,7 +666,7 @@
   },
   "MATH 2.16": {
     "title": "Reziproke Quadrate aus Summe und Produkt",
-    "context": "lassen $s=x+y$ und $p=xy$ mit $xy\\neq 0$. Then\n\n $$\\frac{1}{x^{2}}+\\frac{1}{y^{2}}=\\frac{s^{2}-2p}{p^{2}}.$$ \n\nEine Sonde verwendet $x=2$, $y=4$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $s=x+y$ und $p=xy$ mit $xy\\neq 0$. Dann\n\n $$\\frac{1}{x^{2}}+\\frac{1}{y^{2}}=\\frac{s^{2}-2p}{p^{2}}.$$ \n\nEine Sonde verwendet $x=2$, $y=4$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{x^{2}+y^{2}}{x^{2}y^{2}}=\\dfrac{s^{2}-2p}{p^{2}}$.",
       "At $x=2$, $y=4$, one has $s=6$, $p=8$, und $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{5}{16}$.",
@@ -685,7 +685,7 @@
   },
   "MATH 2.17": {
     "title": "Viertermiger Ausdruck, gruppiert als Differenz von Quadraten",
-    "context": "Berücksichtigung $a^{2}+2ab+b^{2}-c^{2}$ für Real $a,b,c$ Hinse zur-Use $a=3$, $b=1$, $c=2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Berücksichtigung $a^{2}+2ab+b^{2}-c^{2}$ für Real $a,b,c$ Eine Probe verwendet $a=3$, $b=1$, $c=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $a^{2}+2ab+b^{2}-c^{2}=(a+b)^{2}-c^{2}=(a+b-c)(a+b+c)$.",
       "At $a=3$, $b=1$, $c=2$, der Wert ist gleich $12$.",
@@ -704,7 +704,7 @@
   },
   "MATH 2.18": {
     "title": "Halbierte Summe dreier quadrierter Abstände mit Parameter",
-    "context": "dass es $x,y,z$ apro —\n\n $$G=\\frac{1}{2}\\bigl((x-y)^{2}+(y-z)^{2}+(z-x)^{2}\\bigr).$$ \n\nEine Sonde verwendet $x=5$, $y=1$, $z=3$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "dass es $x,y,z$ apro —\n\n $$G=\\frac{1}{2}\\bigl((x-y)^{2}+(y-z)^{2}+(z-x)^{2}\\bigr).$$ \n\nEine Sonde verwendet $x=5$, $y=1$, $z=3$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $G=x^{2}+y^{2}+z^{2}-xy-yz-zx$ für alle reellen $x,y,z$.",
       "At $x=5$, $y=1$, $z=3$, one has $G=13$.",
@@ -723,13 +723,13 @@
   },
   "MATH 2.19": {
     "title": "Zyklisches Produkt $(x+y)(y+z)(z+x)$ mit numerischer Probe",
-    "context": "lassen $x,y,z$ real sein und $P=(x+y)(y+z)(z+x)$ Hinse zur-Use $x=1$, $y=2$, $z=3$. Lassen Sie $s=x+y+z$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es seien $x,y,z$ reelle Zahlen und $P=(x+y)(y+z)(z+x)$. Eine Probe verwendet $x=1$, $y=2$, $z=3$. Es sei $s=x+y+z$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "At $x=1$, $y=2$, $z=3$, one has $P=60$.",
-      "If $z=0$, then $P=(x+y)yx=(x+y)xy$.",
-      "an der Sonde, $s=6$ und $P=s(xy+yz+zx)-xyz$.",
-      "Die Identität $P=s(xy+yz+zx)-xyz$ für alle Reellen $x,y,z$.",
-      "an der Sonde, $P=72$."
+      "Bei $x=1$, $y=2$, $z=3$ gilt $P=60$.",
+      "Wenn $z=0$, dann gilt $P=(x+y)yx=(x+y)xy$.",
+      "Bei der Probe gilt $s=6$ und $P=s(xy+yz+zx)-xyz$.",
+      "Die Identität $P=s(xy+yz+zx)-xyz$ gilt für alle reellen $x,y,z$.",
+      "Bei der Probe gilt $P=72$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$(1+2)(2+3)(3+1)=3\\cdot5\\cdot4=60$$ \n\n $$3\\cdot5\\cdot4=60$$ wertet das zyklische Produkt an der Sonde aus.\n\nJede relevante Identität wird auf zwei Seiten geprüft, bevor der entsprechende Vergleich mit der Behauptung erfolgt.\n\nVerfolge jedes Zwischenschritt auf einer eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter noch einmal genau und vergleiche erst dann den resultierenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung angegeben wird.\n\nDie Aussage ist richtig.",
@@ -742,7 +742,7 @@
   },
   "MATH 2.20": {
     "title": "Gemischte Vorzeichen in einem Dreierbuchstaben-Quadrat",
-    "context": "Expand $(a-b+c)^{2}$ Hinse zur-Use $a=5$, $b=2$, $c=1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Entwickle $(a-b+c)^{2}$ Eine Probe verwendet $a=5$, $b=2$, $c=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       " $(a-b+c)^{2}=a^{2}+b^{2}+c^{2}-2ab+2ac-2bc$.",
       "At $a=5$, $b=2$, $c=1$, one has $(a-b+c)^{2}=16$.",
@@ -760,14 +760,14 @@
     "solution_overview": "Treat as $(a+c-b)^{2}=a^{2}+c^{2}+b^{2}+2ac-2ab-2cb$ Sonde: $a-b+c=4$, square $16$. Cross block $-2ab+2ac-2bc=-20+10-4=-14$. Squares $25+4+1=30$; $30-14=16$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
   "MATH 11.01": {
-    "title": "Nominale versus stetige Verzinsung eines parametrisierten Depotguthabens",
-    "context": "Ein Unternehmen legt $P=\\$8{,}735.00$ auf einem Depotkonto mit nominellem Jahreszinssatz $r=7.95\\%$ und monatlicher Gutschrift an. Ein Treasury-Modell verwendet denselben Nominalsatz $r$ bei stetiger Verzinsung. Wachstumsbehauptungen nutzen $a=3$ Jahre; eine Kurzhorizont-Kontrolle nutzt $b=2$ Jahre. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Nominale versus stetige Verzinsung bei einer parametrisierten Depotanlage",
+    "context": "Ein Unternehmen hinterlegt $P=\\$8{,}735.00$ auf einem Depotkonto mit nominalem Jahreszinssatz $r=7.95\\%$ und monatlicher Gutschrift. Ein Finanzmodell verwendet denselben Nominalzins $r$ unter stetiger Verzinsung. Wachstumsaussagen beziehen sich auf $a=3$ Jahre; eine Kurzfristprüfung verwendet $b=2$ Jahre.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche stärkere $0.6625\\%$ und die effektive Jahresrate unter monatlicher Verzinsung überschreitet $8.24\\%$.",
-      "Unter kontinuierlicher Verzinsung bei gleichem $r$ die effektive Jahresrate die monatliche effektive Rate um mehr als $0.04$ percentage points.",
-      "After $a=3$ Jahre der monatlichen Verzinsung, der zukünftige Wert von $P$ Überschreit $\\$11{,}050$.",
-      "Kommentar zu Be-Be-Berufung-Zu-Be-Bebe-Be-I-Be-Be-Be-Be-Be sucht $P$ after $a=3$ Jahre übersteigen den monatlich kompoundierenden Zukunftswert mehr als $\\$18$.",
-      "Verkürzung des Horizonts von $a=3$ to $b=2$ Jahre unter monatlichen Compound untersucht den Dollarzinhass um mehr als $35\\%$ der dreijährigen Zinsen."
+      "Der monatliche Periodenzinssatz beträgt $0.6625\\%$, und die effektive Jahresrate bei monatlicher Verzinsung übersteigt $8.24\\%$.",
+      "Bei stetiger Verzinsung mit demselben Nominalzins $r$ übersteigt die effektive Jahresrate die monatliche Effektivrate um mehr als $0.04$ Prozentpunkte.",
+      "Nach $a=3$ Jahren monatlicher Verzinsung übersteigt der Endwert von $P$ den Betrag $\\$11{,}050$.",
+      "Der Endwert bei stetiger Verzinsung von $P$ nach $a=3$ Jahren übersteigt den Endwert bei monatlicher Verzinsung um mehr als $\\$18$.",
+      "Eine Verkürzung des Horizonts von $a=3$ auf $b=2$ Jahre bei monatlicher Verzinsung verringert den verdienten Dollarzins um mehr als $35\\%$ des Dreijahreszinses."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=0.6625\\%$ und $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nDer monatliche Periodenzinssatz ist der Nominalsatz geteilt durch zwölf:\n\n $$\ni=\\frac{0.0795}{12}=0.006625\n$$ \n\n $$\ni=0.6625\\%\n$$ \n\nEffektiver Jahreszinssatz bei monatlicher Verzinsung:\n\n $$\nR_{\\mathrm{m}}=(1+0.006625)^{12}-1\\approx0.082462\n$$ \n\n $$\n8.246\\%>8.24\\%\n$$ \n\nBeide Teile der Konjunktion gelten.\n\nDie Aussage ist richtig.",
@@ -779,14 +779,14 @@
     "solution_overview": "Gewinne die gemeinsamen Zinssätze und Salden einmal:\n\n $$\nr=0.0795\\qquad i=\\frac{r}{12}=0.006625=0.6625\\%\n$$ \n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.082462=8.246\\%\n$$ \n\n $$\nR_{\\mathrm{c}}=e^{r}-1\\approx0.082746=8.275\\%\n$$ \n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\\approx11{,}079.00\n$$ \n\n $$\nFV_{\\mathrm{c}}(3)=8{,}735.00e^{0.0795\\cdot 3}\\approx11{,}087.72\n$$ \n\n $$\nFV_{\\mathrm{m}}(2)\\approx10{,}235.00\\qquad I_3\\approx2{,}344.00\\qquad I_2\\approx1{,}500.00\n$$ "
   },
   "MATH 11.02": {
-    "title": "Siebenjähriges Quartalswachstum mit einer Falle in der Mitte des Horizonts",
-    "context": "A municipal reserve of $P=\\$12{,}480.00$ earns nominal $r=6.84\\%$ compounded quarterly ( $m=4$. Die geplante Haltezeit ist $t=7$ years. A mid-horizon checkpoint uses $k=5$ Jahre unter der gleichen periodischen Rate.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Siebenjähriges Wachstum mit vierteljährlicher Verzinsung und Zwischenkontrolle",
+    "context": "Eine kommunale Reserve von $P=\\$12{,}480.00$ verzinst sich mit Nominalzins $r=6.84\\%$ vierteljährlich ($m=4$). Die geplante Haltedauer beträgt $t=7$ Jahre. Eine Zwischenkontrolle nach $k=5$ Jahren verwendet denselben Periodenzinssatz.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die vierteljährliche periodische Rate ist genau $1.71\\%$, und die Anzahl der Verzinsungsperioden über $t=7$ years is $28$.",
-      "Das Gleichgewicht nach $t=7$ Jahre überschreiten $\\$20{,}000$.",
-      "Der Fünfjahressaldo unter dem gleichen Konto ist strikt weniger als $50\\%$ der siebenjährigen Balance.",
-      "Total percentage growth of $P$ over $t=7$ Jahre überschreiten $62\\%$.",
-      "Wenn der gleiche Nennwert $r$ wurden jährlich statt vierteljährlich für $t=7$ In den kommenden den Menschen weiterhin den Wert $\\$19{,}800$."
+      "Der vierteljährliche Periodenzinssatz beträgt genau $1.71\\%$, und die Anzahl der Zinsperioden über $t=7$ Jahre ist $28$.",
+      "Der Kontostand nach $t=7$ Jahren übersteigt $\\$20{,}000$.",
+      "Der Fünfjahresstand unter demselben Konto liegt streng unter $50\\%$ des Siebenjahresstands.",
+      "Das gesamte prozentuale Wachstum von $P$ über $t=7$ Jahre übersteigt $62\\%$.",
+      "Würde derselbe Nominalzins $r$ über $t=7$ Jahre jährlich statt vierteljährlich verzinst, so überstiege der Endwert dennoch $\\$19{,}800$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=1.71\\%$ und $N=28$.\n\nPeriodic rate:\n\n $$\ni=\\frac{0.0684}{4}=0.017100=1.71\\%\n$$ \n\nPeriod count:\n\n $$\nN=4\\cdot7=28\n$$ \n\nBeide Teilbehauptungen:-:-.\n\nDie Aussage ist richtig.",
@@ -798,14 +798,14 @@
     "solution_overview": "Stellen Sie das Quartalsmodell einmal wieder her.\n\n $$\ni=\\frac{0.0684}{4}=0.017100=1.71\\%\\qquad N=4\\cdot7=28\n$$ \n\n $$\nFV(7)=12{,}480.00(1+0.017100)^{28}\\approx20{,}063.05\n$$ \n\n $$\nFV(5)=12{,}480.00(1+0.017100)^{20}\\approx17{,}518.13\n$$ \n\n $$\nFV_{\\mathrm{ann}}=12{,}480.00(1+0.0684)^{7}\\approx19{,}831.33\\qquad\\frac{FV(7)-P}{P}\\approx0.6076\n$$ "
   },
   "MATH 11.03": {
-    "title": "Zwei Festgeldanlagen mit widersprüchlichen Nominalsätzen und Frequenzen",
-    "context": "Ein Treuhänder verdrängt zwei Einjahres-Einlagen für $P=\\$15{,}640.00$. Offer $A$ quotes nominal $r_A=7.15\\%$ compounded quarterly. Offer $B$ quotes nominal $r_B=7.25\\%$ Einzelt Die Präferenz gilt für die höhere Jahrese:\n\nEs wurden die Begleit Einflüsse der Sie wurden durchraff Einflüsse, die Manran wurden durch die. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Zwei Termineinlagen mit widersprüchlichen Nominalquotierungen und Frequenzen",
+    "context": "Ein Finanzleiter vergleicht zwei einjährige Termineinlagen für das Kapital $P=\\$15{,}640.00$. Angebot $A$ nennt den Nominalzins $r_A=7.15\\%$ mit vierteljährlicher Verzinsung. Angebot $B$ nennt den Nominalzins $r_B=7.25\\%$ mit halbjährlicher Verzinsung. Bevorzugt wird die höhere effektive Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Spezifische Fangquoten $A$ Überschreit $7.33\\%$.",
-      "Spezifische Fangquoten $B$ Überschreit $7.43\\%$.",
-      "Offer $B$ hat die strikt höhere effektive Jahresrate, mit $R_B-R_A$ exceeding $0.01$ percentage points.",
-      "ein $A$ compounds $4$ times per year while Offer $B$ compounds only $2$ times, Offer $A$ muss den höheren effektiven Satz erzielen, obwohl $r_A<r_B$.",
-      "On principal $P$, Offer $A$ earns more than $\\$1{,}120$ of interest in one year."
+      "Die effektive Jahresrate von Angebot $A$ übersteigt $7.33\\%$.",
+      "Die effektive Jahresrate von Angebot $B$ übersteigt $7.43\\%$.",
+      "Angebot $B$ hat die streng höhere effektive Jahresrate, wobei $R_B-R_A$ mehr als $0.01$ Prozentpunkte beträgt.",
+      "Weil Angebot $A$ $4$-mal pro Jahr verzinst und Angebot $B$ nur $2$-mal, muss Angebot $A$ die höhere Effektivrate liefern, obwohl $r_A<r_B$.",
+      "Auf dem Kapital $P$ verdient Angebot $A$ in einem Jahr mehr als $\\$1{,}120$ an Zinsen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $R_A\\approx7.344\\%$.\n\n $$\nR_A=\\left(1+\\frac{0.0715}{4}\\right)^4-1\n$$ \n\n $$\n\\approx0.073440\n$$ \n\n $$\n7.344\\%>7.33\\%\n$$ \n\nOffer $A$ löscht den angegebenen Boden.\n\nDie Aussage ist richtig.",
@@ -818,7 +818,7 @@
   },
   "MATH 11.04": {
     "title": "Umwandlung des APR einer Handelskarte mit täglicher Verzinsung als Kontrafaktum",
-    "context": "A revolving store balance of $B=\\$2{,}847.65$ quotes a nominal APR $r=21.9\\%$ mit monatlicher Verzinsung () $n=12$: a (sofern zutreffend) $r$ unter täglichem Compoundieren mit a $365$ -day year. No grace period applies. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A revolving store balance of $B=\\$2{,}847.65$ quotes a nominal APR $r=21.9\\%$ mit monatlicher Verzinsung () $n=12$: a (sofern zutreffend) $r$ unter täglichem Compoundieren mit a $365$ -day year. No grace period applies.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die monatliche stärkere $1.825\\%$, und die monatlichen Zinsen auf $B$ Überschreit $\\$50$.",
       "Die effektive Jahresrate unter monatlicher Verzinsung übersteigt $24.0\\%$.",
@@ -836,14 +836,14 @@
     "solution_overview": "Einmalige periodische und effektive Raten wiederherstellen.\n\n $$\ni=\\frac{0.219}{12}=0.018250=1.825\\%\n$$ \n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.242376=24.238\\%\n$$ \n\n $$\nR_{\\mathrm{d}}=\\left(1+\\frac{0.219}{365}\\right)^{365}-1\\approx0.244750=24.475\\%\n$$ \n\n $$\nB\\cdot i\\approx51.97\\qquad B(1+i)^{12}\\approx3{,}537.85\n$$ "
   },
   "MATH 11.05": {
-    "title": "Geschäftseinlage mit Quartalsverzinsung versus ein halbjährlicher Zwilling",
-    "context": "A business deposit of $P=\\$9{,}375.50$ earns nominal $r=6.25\\%$ vierteljährlich zusammengesetzt. Die geplante Laufzeit ist $t=4$ Jahre. Ein Zwillingskonto verwendet denselben Notätigkeit $r$ but compounds semiannually. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Vierteljährliche Firmeneinlage versus ein halbjährliches Zwillingskonto",
+    "context": "Eine Firmeneinlage von $P=\\$9{,}375.50$ verzinst sich mit Nominalzins $r=6.25\\%$ vierteljährlich. Die geplante Laufzeit beträgt $t=4$ Jahre. Ein Zwillingskonto verwendet denselben Nominalzins $r$, verzinst aber halbjährlich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die vierteljährliche periodische Rate ist $1.5625\\%$ Unter $t=4$ Mit der Zeit: $\\$12{,}000$.",
-      "Der Halbjahreszwilling endet strikt über dem Quartalsergebnis nach $t=4$ years.",
-      "Die effektive Jahresrate des Quartalskontos übersteigt $6.40\\%$.",
-      "Dollar-Zinsen auf dem Quartalskonto über $t=4$ Jahre überschreiten $\\$2{,}700$.",
-      "Die Wiedergabe der kontinuierlichen Einmischung an den gleichen Soll-Bakter $r$... $t$ -year balance by more than $\\$12$."
+      "Der vierteljährliche Periodenzinssatz beträgt $1.5625\\%$, und nach $t=4$ Jahren übersteigt das vierteljährliche Konto $\\$12{,}000$.",
+      "Das halbjährliche Zwillingskonto endet nach $t=4$ Jahren streng oberhalb des vierteljährlichen Kontos.",
+      "Die effektive Jahresrate des vierteljährlichen Kontos übersteigt $6.40\\%$.",
+      "Der Dollarzins auf dem vierteljährlichen Konto über $t=4$ Jahre übersteigt $\\$2{,}700$.",
+      "Ersetzt man die vierteljährliche Verzinsung durch stetige Verzinsung mit demselben Nominalzins $r$, so steigt der $t$-Jahres-Kontostand um mehr als $\\$12$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nPeriodic rate $i_q=1.5625\\%$.\n\n $$\ni_q=\\frac{0.0625}{4}=0.015625\n$$ \n\nBalance:\n\n $$\nFV_q\\approx12{,}015.13\n$$ \n\n $$\n12{,}015.13>12{,}000\n$$ \n\nBeide Teilbehauptungen gelten.\n\nDie Aussage ist richtig.",
@@ -855,14 +855,14 @@
     "solution_overview": "Stellen Sie beide Verzinsungspfade einmal zurück.\n\n $$\ni_q=\\frac{0.0625}{4}=0.015625\\qquad R_q=(1+i_q)^4-1\\approx0.063980\n$$ \n\n $$\nFV_q=9{,}375.50(1+0.015625)^{16}\\approx12{,}015.13\n$$ \n\n $$\nFV_s=9{,}375.50\\left(1+\\frac{0.0625}{2}\\right)^{8}\\approx11{,}992.40\n$$ \n\n $$\nFV_c=9{,}375.50e^{0.0625\\cdot4}\\approx12{,}038.38\n$$ "
   },
   "MATH 11.06": {
-    "title": "Verdopplungszeit bei monatlicher Verzinsung mit Zinssatz-Kontrafaktum",
-    "context": "An endowment must double under nominal $r=6.84\\%$ monatlich zusammengesetzt ( $m=12$ ). A counterfactual quotes $r'=7.20\\%$ mit den gleichen monatlichen frequenzen. Es wurden keine anderen Einzahlungen als den ersten.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Verdopplungszeit bei monatlicher Verzinsung mit Zinssatz-Alternativszenario",
+    "context": "Eine Stiftung muss sich bei Nominalzins $r=6.84\\%$ mit monatlicher Verzinsung ($m=12$) verdoppeln. Ein Alternativszenario nennt $r'=7.20\\%$ mit derselben monatlichen Frequenz. Außer dem Anfangskapital erfolgen keine weiteren Einzahlungen.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche periodische Rate am $r$ gleich $0.570\\%$.",
-      "Die genaue Anzahl der Monate, die erforderlich sind, zu verdoppeln, übersteigt $121$.",
-      "Die Verdopplungszeit ist strikt weniger als $10.20$ years.",
-      "Erhöhung der Nominalquote $r'=7.20\\%$ verkürzt die Verdopplungszeit um mehr als $0.40$ years.",
-      "After exactly $120$ Monate im Original $r$, der Akkumulationsfaktor $(1+i)^{120}$ Überschreit $2.00$."
+      "Der monatliche Periodenzinssatz bei $r$ beträgt $0.570\\%$.",
+      "Die genaue Anzahl der für die Verdopplung benötigten Monate übersteigt $121$.",
+      "Die Verdopplungszeit ist streng kleiner als $10.20$ Jahre.",
+      "Eine Erhöhung der Nominalquote auf $r'=7.20\\%$ verkürzt die Verdopplungszeit um mehr als $0.40$ Jahre.",
+      "Nach genau $120$ Monaten beim ursprünglichen $r$ übersteigt der Aufzinsungsfaktor $(1+i)^{120}$ den Wert $2.00$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=0.570\\%$.\n\n $$\ni=\\frac{0.0684}{12}=0.005700\n$$ \n\n $$\n=0.570\\%\n$$ \n\nMit der Zeit ist dies der Fall.\n\nDie Aussage ist richtig.",
@@ -874,14 +874,14 @@
     "solution_overview": "Verdoppeln Sie die Gleichung einmal.\n\n $$\ni=\\frac{0.0684}{12}=0.005700\n$$ \n\n $$\n(1+i)^{N}=2\\implies N=\\frac{\\ln 2}{\\ln(1+i)}\\approx121.9510\n$$ \n\n $$\nt=\\frac{N}{12}\\approx10.1626\n$$ \n\n $$\ni'=0.006000\\qquad t'\\approx9.6559\\qquad(1+i)^{120}\\approx1.977944\n$$ "
   },
   "MATH 11.07": {
-    "title": "Ein Nominalsatz für jährliche, quartalsweise, monatliche und stetige Verzinsung",
-    "context": "Eine nominale Jahresrate $r=8.1\\%$ Angeboten wird nach vier Verzinsungskonventionen: jährlich, vierteljährlich, monatlich und kontinuierlich. Hauptforderung $P=\\$5{,}500$ wird nur für Dollar-Vergleiche über ein Jahr verwendet.\n\nBedeutet jede Aussage. Markateur mit Richtig oder Falsch. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Ein Nominalzins bei jährlicher, vierteljährlicher, monatlicher und stetiger Verzinsung",
+    "context": "Ein nominaler Jahreszinssatz $r=8.1\\%$ wird unter vier Verzinsungskonventionen angeboten: jährlich, vierteljährlich, monatlich und stetig. Das Kapital $P=\\$5{,}500$ dient nur für Dollarvergleiche über ein Jahr.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Monat-Billitions-Blatt-Billitions-Billschnitts-Billitions--Billims-Billims-Billims-Billig-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Billims-Betims-Billims-Bill. $0.10$ percentage points.",
-      "Der kontinuierliche effektive Jahrespreis übersteigt $8.43\\%$.",
-      "Sein monatliches Compounding wächst $P$ to more than $\\$5{,}950$.",
-      "Somit ist $r=8.1\\%$; gesamt $R_{\\mathrm{ann}}<R_{\\mathrm{q}}<R_{\\mathrm{m}}<R_{\\mathrm{c}}$ hält.",
-      "Die Jahres-Minus-Kapazität wird durch die $0.40$ percentage points."
+      "Die monatliche effektive Jahresrate übersteigt die vierteljährliche effektive Jahresrate um mehr als $0.10$ Prozentpunkte.",
+      "Die stetige effektive Jahresrate übersteigt $8.43\\%$.",
+      "Ein Jahr monatlicher Verzinsung lässt $P$ auf mehr als $\\$5{,}950$ anwachsen.",
+      "Für diesen Nominalzins $r=8.1\\%$ gilt die Ordnung $R_{\\mathrm{ann}}<R_{\\mathrm{q}}<R_{\\mathrm{m}}<R_{\\mathrm{c}}$.",
+      "Die Differenz der Effektivraten stetig minus jährlich übersteigt $0.40$ Prozentpunkte."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nMonatlich-minus-vierteljährliche Lücke:\n\n $$\n(R_{\\mathrm{m}}-R_{\\mathrm{q}})\\cdot 100\\approx0.0582\n$$ \n\n $$\n0.0582\\nless 0.10\n$$ \n\nDas ist der $0.10$ percentage points.\n\nDie Aussage ist falsch.",
@@ -893,14 +893,14 @@
     "solution_overview": "Konvertieren Sie mit der jeweiligen Fabrikation.\n\n $$\nR_{\\mathrm{ann}}=0.081\\qquad R_{\\mathrm{q}}\\approx0.083494\n$$ \n\n $$\nR_{\\mathrm{m}}\\approx0.084076\\qquad R_{\\mathrm{c}}\\approx0.084371\n$$ \n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$ "
   },
   "MATH 11.08": {
-    "title": "Zehnjährige Monatseinlage mit einer Jahreszins-Illusion",
-    "context": "A certificate starts at $P=\\$6{,}420.00$ mit Nominalwert $r=5.55\\%$ monatlich zusammengesetzt für $t=10$ years. An illusory linear projection multiplies $P$ by $(1+rt)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Zehnjährige monatliche Einlage mit einer jährlichen Ratenillusion",
+    "context": "Ein Zertifikat startet bei $P=\\$6{,}420.00$ mit Nominalzins $r=5.55\\%$ und monatlicher Verzinsung über $t=10$ Jahre. Eine illusorische lineare Projektion multipliziert $P$ mit $(1+rt)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche stärkere $0.4625\\%$.",
-      "After $t=10$ Jahre der zusammengesetzte Saldo übersteigt $\\$11{,}000$.",
-      "Die illusorische lineare Projektion $P(1+rt)$ dies über das erhabeneswertste Maß hinausgeht.",
-      "Gesamtwandelwert übersteigt $70\\%$ of $P$.",
-      "Wenn die Verzinsung vierteljährlich bei denselben Nominalwerten $r$ für $t=10$ über die Zeit, an dem $\\$11{,}000$."
+      "Der monatliche Periodenzinssatz beträgt $0.4625\\%$.",
+      "Nach $t=10$ Jahren übersteigt der aufgezinsste Kontostand $\\$11{,}000$.",
+      "Die illusorische lineare Projektion $P(1+rt)$ übersteigt den wahren aufgezinssten Kontostand.",
+      "Das gesamte Zinswachstum übersteigt $70\\%$ von $P$.",
+      "Würde bei demselben Nominalzins $r$ über $t=10$ Jahre vierteljährlich verzinst, so überstiege der Kontostand dennoch $\\$11{,}000$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=\\frac{0.0555}{12}=0.004625=0.4625\\%\n$$ \n\nMit der Zeit ist dies der Fall.\n\nDie Aussage ist richtig.",
@@ -913,7 +913,7 @@
   },
   "MATH 11.09": {
     "title": "Erforderliche Wachstumsrate von \\$50{,}000 auf \\$80{,}000 in acht Jahren",
-    "context": "Die $PV=\\$50{,}000$ to $FV=\\$80{,}000$ in $t=8$ sowie Jahre. Lösen Sie den erforderlichen konstanten jährlichen effektiven Zinssatz und den nominale Zinssatz, der mit der monatlichen Zinseszinzuzinsung arbeitet.\n\nBewertet jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die $PV=\\$50{,}000$ to $FV=\\$80{,}000$ in $t=8$ sowie Jahre. Lösen Sie den erforderlichen konstanten jährlichen effektiven Zinssatz und den nominale Zinssatz, der mit der monatlichen Zinseszinzuzinsung arbeitet.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die erforderliche effektive Jahresrate übersteigt $5.95\\%$.",
       "Die geforderte effektive Jahresrate ist strikt als $6.00\\%$.",
@@ -931,14 +931,14 @@
     "solution_overview": "Invertieren Sie die Compound-Growth-Gleichung einmal.\n\n $$\n(1+R)^8=\\frac{80000}{50000}=1.6\n$$ \n\n $$\nR=1.6^{1/8}-1\\approx0.060511=6.051\\%\n$$ \n\n $$\nr_m=12\\bigl(1.6^{1/96}-1\\bigr)\\approx0.058895=5.889\\%\n$$ \n\n $$\n50000(1.05)^8\\approx73{,}872.77\\qquad\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$ "
   },
   "MATH 11.10": {
-    "title": "Kreditnehmerwahl zwischen monatlichen und quartalsweisen Darlehensangeboten",
-    "context": "A borrower needs $L=\\$24{,}800$. Bank $A$ quotes nominal $r_A=9.6\\%$ Monatlich gerechnet Bank $B$ quotes nominal $r_B=9.75\\%$ vierteljährlich zusammengesetzt. Der günstigere Kredit ist derjenige mit der niedrigeren effektiven Jahresrate.\n\nBergung Bergung oder Flüssig. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Kreditnehmerwahl zwischen monatlicher und vierteljährlicher Kreditquote",
+    "context": "Ein Kreditnehmer benötigt $L=\\$24{,}800$. Bank $A$ nennt den Nominalzins $r_A=9.6\\%$ mit monatlicher Verzinsung. Bank $B$ nennt den Nominalzins $r_B=9.75\\%$ mit vierteljährlicher Verzinsung. Der günstigere Kredit ist der mit der niedrigeren effektiven Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Bank $A$ Der effektive Jahreszinssatz übersteigt $9.98\\%$.",
-      "Bank $B$ Der effektive Jahreszins liegt strikt unter der Bank $A$ effektive Jahresrate um mehr als $0.05$ percentage points.",
-      "On a one-year interest-only comparison, Bank $A$ costs more than $\\$2{,}400$ on principal $L$.",
-      "Weil die Bank $B$ gibt den höheren Nominalsatz an $r_B=9.75\\%>r_A=9.6\\%$ Sie werden die Verlegenen, um die zu machen erwartet werden, um die Verlegenen zu machen, um die Verlegenen zu machen,",
-      "Die effektive Zinslücke $|R_A-R_B|$ is less than $0.15$ percentage points."
+      "Die effektive Jahresrate von Bank $A$ übersteigt $9.98\\%$.",
+      "Die effektive Jahresrate von Bank $B$ liegt streng unter der effektiven Jahresrate von Bank $A$ um mehr als $0.05$ Prozentpunkte.",
+      "Bei einem einjährigen Nur-Zins-Vergleich kostet Bank $A$ auf dem Kapital $L$ mehr als $\\$2{,}400$.",
+      "Weil Bank $B$ den höheren Nominalzins $r_B=9.75\\%>r_A=9.6\\%$ nennt, muss sie bei jeder Verzinsungskonvention der teurere Kredit sein.",
+      "Die Effektivratendifferenz $|R_A-R_B|$ ist kleiner als $0.15$ Prozentpunkte."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR_A\\approx10.034\\%\n$$ \n\n $$\n10.034\\%>9.98\\%\n$$ \n\nRäumt den Boden.\n\nDie Aussage ist richtig.",
@@ -950,14 +950,14 @@
     "solution_overview": "Konvertieren Sie beide Darlehens-Quotes einmal.\n\n $$\nR_A=\\left(1+\\frac{0.096}{12}\\right)^{12}-1\\approx0.100339=10.034\\%\n$$ \n\n $$\nR_B=\\left(1+\\frac{0.0975}{4}\\right)^4-1\\approx0.101123=10.112\\%\n$$ \n\n $$\nL R_A\\approx2{,}488.40\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
   },
   "MATH 11.11": {
-    "title": "Rückrechnung einer sechsjährigen Monatseinlage aus bekanntem Endwert",
-    "context": "A deposit matures at $FV=\\$18{,}750.00$ after $t=6$ years under nominal $r=6.48\\%$ Monatlich zusammengesetzt. Wiederherstellen des ursprünglichen Hauptes $PV$ Ein jährliches Kontrafaktum verwendet dasselbe Nominal $r$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Rekonstruktion einer sechsjährigen monatlichen Einlage aus bekanntem Endwert",
+    "context": "Eine Einlage erreicht den Endwert $FV=\\$18{,}750.00$ nach $t=6$ Jahren bei Nominalzins $r=6.48\\%$ mit monatlicher Verzinsung. Bestimme das ursprüngliche Kapital $PV$. Ein Alternativszenario mit jährlicher Verzinsung verwendet denselben Nominalzins $r$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche stärkere $0.540\\%$, und die Zahl der Monate in der Amtszeit ist $72$.",
-      "Die zurückgeforderte ursprüngliche Hauptzahl übersteigt $\\$12{,}800$.",
-      "LÜHLL verbessert die AAAHLLA AAAHL AHLL AAHL AAA $r$ herrsche, um zu we anzugeben $FV$ wäre strikt größer als die monatliche Zusammensetzung $PV$ by more than $\\$100$.",
-      "Der Abzinsungsfaktor $(1+i)^{-N}$ is strikt weniger als $0.68$.",
-      "Wenn der Begriff gekürzt wurde auf $t'=4$ Jahre bei der gleichen Rate, die Eröffnungs-Einlage für die gleichen $FV$ would exceed $\\$14{,}500$."
+      "Der monatliche Periodenzinssatz beträgt $0.540\\%$, und die Anzahl der Monate in der Laufzeit ist $72$.",
+      "Das rekonstruierte ursprüngliche Kapital übersteigt $\\$12{,}800$.",
+      "Bei jährlicher Verzinsung mit demselben Nominalzins $r$ wäre die nötige Anfangseinlage für denselben $FV$ streng größer als das $PV$ bei monatlicher Verzinsung um mehr als $\\$100$.",
+      "Der Diskontierungsfaktor $(1+i)^{-N}$ ist streng kleiner als $0.68$.",
+      "Würde die Laufzeit auf $t'=4$ Jahre bei demselben Monatssatz verkürzt, so überstiege die nötige Anfangseinlage für denselben $FV$ den Betrag $\\$14{,}500$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=\\frac{0.0648}{12}=0.005400=0.540\\%\n$$ \n\n $$\nN=12\\cdot6=72\n$$ \n\nBeide Teilbehauptungen stimmen überein.\n\nDie Aussage ist richtig.",
@@ -969,14 +969,14 @@
     "solution_overview": "Den Barwert einmalig wiederherstellen.\n\n $$\ni=\\frac{0.0648}{12}=0.005400\\qquad N=72\n$$ \n\n $$\nPV=\\frac{18{,}750.00}{(1+0.005400)^{72}}\\approx12{,}723.36\n$$ \n\n $$\nPV_{\\mathrm{ann}}=\\frac{18{,}750.00}{(1+0.0648)^{6}}\\approx12{,}864.50\n$$ \n\n $$\n(1+i)^{-N}\\approx0.678579\\qquad PV_4=\\frac{18{,}750.00}{(1+i)^{48}}\\approx14{,}478.88\n$$ "
   },
   "MATH 11.12": {
-    "title": "Benötigte Monate, um \\$4{,}000 auf \\$6{,}000 bei monatlicher Verzinsung wachsen zu lassen",
-    "context": "Ein Sparer beginnt mit $PV=\\$4{,}000$; $FV=\\$6{,}000$ under nominal $r=5.76\\%$ Verschraubt. Die Schellen und Schrauben werden dabei. A. AKKKPIPP VERKLEPP AKK PK AKKKKKKKPPPKE. $r'=6.00\\%$ monatlich.\n\nBewertete Angaben Kämmerlinge, die unter den Nummern 1 und 2 lit. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Monate bis zum Wachstum von \\$4{,}000 auf \\$6{,}000 bei monatlicher Verzinsung",
+    "context": "Ein Sparer beginnt mit $PV=\\$4{,}000$ und benötigt $FV=\\$6{,}000$ bei Nominalzins $r=5.76\\%$ mit monatlicher Verzinsung. Bestimme die benötigte Zeit. Ein Alternativszenario verwendet $r'=6.00\\%$ monatlich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche stärkere $0.480\\%$.",
+      "Der monatliche Periodenzinssatz beträgt $0.480\\%$.",
       "Die genaue Anzahl der benötigten Monate übersteigt $84$.",
-      "Zur Zeit auf der????? $7.50$ years.",
-      "Erhöhung der Nominalquote $r'=6.00\\%$ verkürzt die benötigte Zeit um mehr als $0.30$ years.",
-      "After exactly $60$ Monate im Original $r$,,,,,,,,,,, schon über $\\$5{,}400$."
+      "Die benötigte Zeit ist streng kleiner als $7.50$ Jahre.",
+      "Eine Erhöhung der Nominalquote auf $r'=6.00\\%$ verkürzt die benötigte Zeit um mehr als $0.30$ Jahre.",
+      "Nach genau $60$ Monaten beim ursprünglichen $r$ übersteigt der Kontostand bereits $\\$5{,}400$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=0.480\\%\n$$ \n\nStimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -988,14 +988,14 @@
     "solution_overview": "Solve $(1+i)^{N}=FV/PV$ once.\n\n $$\ni=\\frac{0.0576}{12}=0.004800\\qquad\\frac{FV}{PV}=1.5\n$$ \n\n $$\nN=\\frac{\\ln 1.5}{\\ln(1+i)}\\approx84.6745\\qquad t\\approx7.0562\n$$ \n\nAt $r'=0.06$: $i'=0.005$, $N'=\\frac{\\ln 1.5}{\\ln 1.005}\\approx81.2956$, $t'\\approx6.7746$.\n\n $$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ "
   },
   "MATH 11.13": {
-    "title": "Tägliche Geldmarktverzinsung versus monatliche und stetige Zwillinge",
-    "context": "A money-market deposit of $P=\\$9{,}200.00$ quotes nominal $r=4.95\\%$ mit täglichem Compounding auf a $365$ -Tag Jahr für $t=3$ Jahre. Vergleichen Sie mit der monatlichen und kontinuierlichen Verzinsung bei demselben Nominalwert $r$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Tägliche Geldmarktverzinsung versus monatliches und stetiges Zwillingskonto",
+    "context": "Eine Geldmarkteinlage von $P=\\$9{,}200.00$ nennt den Nominalzins $r=4.95\\%$ mit täglicher Verzinsung auf Basis eines $365$-Tage-Jahres über $t=3$ Jahre. Vergleiche mit monatlicher und stetiger Verzinsung bei demselben Nominalzins $r$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die tägliche periodische Rate ist gleich $0.01356\\%$.",
-      "After $t=3$ Jahre der täglichen Verzinsung,, die Balance über $\\$10{,}650$.",
-      "Der gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigene gewichtseigen- Kursen der - gewichts- und gewichts- und gewichtsgewicht der gewichts- gewichtsgewichte: $\\$2$.",
-      "Der Monats-Compounding-Saldo ist weitaus den Strich unter dem Tages-Saldo von mehr als $\\$2$.",
-      "Die effektive tägliche Jahresrate übersteigt $5.07\\%$ when tested against $5.06\\%$."
+      "Der tägliche Periodenzinssatz beträgt $0.01356\\%$.",
+      "Nach $t=3$ Jahren täglicher Verzinsung übersteigt der Kontostand $\\$10{,}650$.",
+      "Der Kontostand bei stetiger Verzinsung übersteigt den Tageskontostand um mehr als $\\$2$.",
+      "Der Kontostand bei monatlicher Verzinsung liegt streng unter dem Tageskontostand um mehr als $\\$2$.",
+      "Die tägliche effektive Jahresrate übersteigt $5.07\\%$, wenn man gegen $5.06\\%$ prüft."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni_d=0.00013562=0.01356\\%\n$$ \n\nStimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -1007,14 +1007,14 @@
     "solution_overview": "Stellen Sie die drei Compounding-Pfade einmalig wieder her.\n\n $$\ni_d=\\frac{0.0495}{365}=0.00013562\n$$ \n\n $$\nFV_d=9{,}200.00(1+i_d)^{1095}\\approx10{,}672.75\n$$ \n\n $$\nFV_m\\approx10{,}669.59\\qquad FV_c\\approx10{,}672.85\n$$ \n\n $$\nR_d=(1+i_d)^{365}-1\\approx0.050742\n$$ "
   },
   "MATH 11.14": {
-    "title": "Wahre Jahreskosten einer Handelskarte bei einem APR von $24.9\\%$",
-    "context": "A store card quotes nominal APR $r=24.9\\%$ mit monatlicher Verzinsung auf einem revolvierenden Saldo $B=\\$1{,}635.40$ Umrechnen auf den effektiven Jahreszinssatz und die Kosten für ein Jahr unter der Annahme, dass der Saldo konstant gehalten wird (nur Zinsen).\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Wahre Jahreskosten einer Ladenkarte aus einer nominalen Jahreszinsrate von $24.9\\%$",
+    "context": "Eine Ladenkarte nennt den Nominalzins $r=24.9\\%$ mit monatlicher Verzinsung auf einem umlaufenden Saldo $B=\\$1{,}635.40$. Rechne in die effektive Jahresrate und die Einjahreskosten um unter der Annahme, dass der Saldo konstant gehalten wird (reine Zinsbetrachtung).\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche stärkere $2.075\\%$.",
+      "Der monatliche Periodenzinssatz beträgt $2.075\\%$.",
       "Die effektive Jahresrate übersteigt $28.0\\%$.",
-      "Sein monatliches Compounding wächst $B$ above $\\$2{,}100$.",
-      "Die Effektiv-Minus-Lücke überschreitet $3.0$ percentage points.",
-      "Wenn die APR geschnitten wurden $r'=21.9\\%$ monatlich würde die effektive Jahresrate noch übersteigen $24.0\\%$."
+      "Ein Jahr monatlicher Verzinsung lässt $B$ über $\\$2{,}100$ anwachsen.",
+      "Die Differenz Effektivrate minus Nominalzins übersteigt $3.0$ Prozentpunkte.",
+      "Würde der Nominalzins auf $r'=21.9\\%$ monatlich gesenkt, so überstiege die effektive Jahresrate dennoch $24.0\\%$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=2.075\\%\n$$ \n\nStimmt überein.\n\nDie Aussage ist richtig.",
@@ -1026,14 +1026,14 @@
     "solution_overview": "Konvertieren Sie den APR einmal.\n\n $$\ni=\\frac{0.249}{12}=0.020750\\qquad R=(1+i)^{12}-1\\approx0.279478\n$$ \n\n $$\nB(1+i)^{12}\\approx2{,}092.46\n$$ \n\nAt $r'=0.219$: $R'\\approx0.242376$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 11.15": {
-    "title": "Effektive Zinssätze für einen Nominalsatz von $10\\%$ bei fünf Frequenzen",
-    "context": "A nominal rate $r=10\\%$ wird unter Jahres-, Halbjahres-, Quartals-, Monats- und kontinuierlicher Verzinsung umgerechnet. Hauptforderung $P=\\$1{,}000$ wird nur für einjährige Dollar-Zinsvergleiche verwendet.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Effektivraten für einen Nominalzins von $10\\%$ bei fünf Frequenzen",
+    "context": "Ein Nominalzins $r=10\\%$ wird unter jährlicher, halbjährlicher, vierteljährlicher, monatlicher und stetiger Verzinsung umgerechnet. Das Kapital $P=\\$1{,}000$ dient nur für einjährige Dollar-Zinsvergleiche.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Eintreten für den ein $10.38\\%$.",
-      "Die monatliche effektive Jahresrate übersteigt die Quartalsrate um mehr als $0.05$ percentage points.",
-      "Kontinuier Grundkörper $r=10\\%$ ergibt eine effektive Jahresrate strikt über $10.52\\%$.",
-      "einem Jahr der monatlichen Verzinsung $P$ earns more than $\\$105$ of interest.",
-      "Die kontinuierlich-minus-jährliche Lücke überschreitet $0.60$ percentage points."
+      "Die vierteljährliche effektive Jahresrate übersteigt $10.38\\%$.",
+      "Die monatliche effektive Jahresrate übersteigt die vierteljährliche Rate um mehr als $0.05$ Prozentpunkte.",
+      "Stetige Verzinsung bei $r=10\\%$ liefert eine effektive Jahresrate streng über $10.52\\%$.",
+      "Ein Jahr monatlicher Verzinsung auf $P$ verdient mehr als $\\$105$ an Zinsen.",
+      "Die Differenz stetig minus jährlich übersteigt $0.60$ Prozentpunkte."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR_4\\approx10.3813\\%\n$$ \n\n $$\n10.3813\\%>10.38\\%\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1045,14 +1045,14 @@
     "solution_overview": "Konvertieren Sie jede Frequenz einmal.\n\n $$\nR_1=0.10\\qquad R_2\\approx0.102500\\qquad R_4\\approx0.103813\n$$ \n\n $$\nR_{12}\\approx0.104713\\qquad R_c\\approx0.105171\n$$ \n\n $$\n1000 R_{12}\\approx104.71\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
   },
   "MATH 11.16": {
-    "title": "Konstante Wachstumsrate, die das BIP in $80$ Jahren mit $50$ multipliziert",
-    "context": "Real GDP must rise by a factor of $M=50$ over $T=80$ Verbindungen; Anbindung an die Erreichungs- ändert sich. $g$ und die kontinuierliche Wachstumsrate $\\rho$ satisfying $e^{\\rho T}=M$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Konstante Wachstumsrate, die das BIP in $80$ Jahren um den Faktor $50$ vermehrt",
+    "context": "Das reale BIP muss über $T=80$ Jahre um den Faktor $M=50$ steigen. Bestimme die konstante jährliche effektive Wachstumsrate $g$ sowie die stetige Wachstumsrate $\\rho$ mit $e^{\\rho T}=M$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die erforderliche effektive Jahreswachstumsrate übersteigt $4.80\\%$.",
-      "Die erforderliche effektive Jahreswachstumsibel ist strikt. $5.00\\%$.",
-      "Die kontinuierliche Wachstumsrate $\\rho$ Überschreit $4.70\\%$.",
-      "At $g=4.00\\%$ in den in den in den in den in den mit den in den in dengierreien:se-ab-abbetrieb: in den in den den in den ern, die ernn der träge, in den in den mit den in den en: die in dense der eu- USB-ab den in die Kohäsion: Zeuge: die in den in den in den in den in den in den in den onnen der mit den in den in den mit den in den in den den kern... $20$.",
-      "Einzeit- $g$ is strikt weniger als $15$ years."
+      "Die erforderliche jährliche effektive Wachstumsrate übersteigt $4.80\\%$.",
+      "Die erforderliche jährliche effektive Wachstumsrate ist streng kleiner als $5.00\\%$.",
+      "Die stetige Wachstumsrate $\\rho$ übersteigt $4.70\\%$.",
+      "Bei $g=4.00\\%$ jährlicher Effektivrate vermehrt achtzigjähriges Wachstum das BIP um mehr als den Faktor $20$.",
+      "Die Verdopplungszeit bei dem ermittelten $g$ ist streng kleiner als $15$ Jahre."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ng\\approx5.012\\%>4.80\\%\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1064,14 +1064,14 @@
     "solution_overview": "„Virres-Virres-Virres\n\n $$\n(1+g)^{80}=50\\implies g=50^{1/80}-1\\approx0.050116=5.012\\%\n$$ \n\n $$\n\\rho=\\frac{\\ln 50}{80}\\approx0.048900=4.890\\%\n$$ \n\n $$\n(1.04)^{80}\\approx23.050\\qquad\\frac{\\ln 2}{\\ln(1+g)}\\approx14.175\n$$ "
   },
   "MATH 11.17": {
-    "title": "Monatlicher Tilgungsfonds für eine Studiengebührenrechnung von $\\$25{,}000$ in sieben Jahren",
-    "context": "A household must accumulate $G=\\$25{,}000$ in $t=7$ Jahre. Das Konto verdient nominal $r=5.4\\%$ monatlich zusammengesetzt.. Gleiche Einlagen zum Monatsende $C$ eine gewöhnliche Annuität bilden. Wiedereinziehung $C$, und auch die Gegenwart dieser Zahlungsmittel.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Monatlicher Tilgungsfonds für eine Studiengebühr von $\\$25{,}000$ in sieben Jahren",
+    "context": "Ein Haushalt muss den Betrag $G=\\$25{,}000$ in $t=7$ Jahren ansparen. Das Konto verzinst sich mit Nominalzins $r=5.4\\%$ monatlich. Gleiche Monatsende-Einzahlungen $C$ bilden eine nachschüssige Rente. Bestimme $C$ sowie den Barwert dieses Zahlungsstroms.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die monatliche stärkere $0.450\\%$, und die Anzahl der Einlagen ist $84$.",
+      "Der monatliche Periodenzinssatz beträgt $0.450\\%$, und die Anzahl der Einzahlungen ist $84$.",
       "Die erforderliche monatliche Einzahlung übersteigt $\\$250$.",
-      "Der kumulierte Wert Annuitätsfaktor $s_{\\overline{N}|}$ Überschreit $101.8$.",
-      "Der Barwert des wieder eingezogenen Zahlungsstroms übersteigt $\\$17{,}500$.",
-      "Wenn der No Etablier $r'=6.0\\%$ monatlich, die benötigte monatliche Anzahlung würde fallen um mehr als $\\$8$."
+      "Der Endwert-Rentenfaktor $s_{\\overline{N}|}$ übersteigt $101.8$.",
+      "Der Barwert des rekonstruierten Zahlungsstroms übersteigt $\\$17{,}500$.",
+      "Steige der Nominalzins auf $r'=6.0\\%$ monatlich, so fiele die erforderliche monatliche Einzahlung um mehr als $\\$8$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=0.450\\%\\qquad N=84\n$$ \n\nBeide Teilbehauptungen stimmen überein.\n\nDie Aussage ist richtig.",
@@ -1083,14 +1083,14 @@
     "solution_overview": "Hole die normale Annuität sinkende Ablage einmal.\n\n $$\ni=\\frac{0.054}{12}=0.004500\\qquad N=84\n$$ \n\n $$\ns_{\\overline{N}|}=\\frac{(1+i)^{N}-1}{i}\\approx101.805776\n$$ \n\n $$\nC=\\frac{G}{s_{\\overline{N}|}}\\approx245.57\n$$ \n\n $$\na_{\\overline{N}|}=\\frac{1-(1+i)^{-N}}{i}\\approx69.819602\\qquad PV=C a_{\\overline{N}|}\\approx17{,}145.29\n$$ \n\nAt $r'=0.06$: $i'=0.005$, $s'\\approx104.0739$, $C'\\approx240.21$."
   },
   "MATH 11.18": {
-    "title": "Neunjährige quartalsweise Barwert-Rekonstruktion",
-    "context": "A certificate is worth $FV=\\$22{,}140.00$ after $t=9$ years under nominal $r=7.12\\%$ Quartalsweise zusammengesetzt. Wiederherstellung der ursprünglichen Einzahlung $PV$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Neunjährige vierteljährliche Rekonstruktion des Barwerts",
+    "context": "Ein Zertifikat ist nach $t=9$ Jahren $FV=\\$22{,}140.00$ wert bei Nominalzins $r=7.12\\%$ mit vierteljährlicher Verzinsung. Bestimme die ursprüngliche Einlage $PV$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die vierteljährliche periodische Rate entspricht $1.780\\%$, und $N=36$ quarters elapse.",
-      "Die zurückgewonnene $PV$ is strikt weniger als $\\$12{,}000$.",
-      "Untermonats-Compounding zum gleichen nominal $r$ a. a. a. $FV$ wäre strikt kleiner als das Quartal $PV$ by more than $\\$30$.",
-      "Gesamtzuwachs für den Gesamtzuwachs auf der Basisseite $PV$ to $FV$ Überschreit $85\\%$.",
-      "If only $t'=6$ verblieben auf demselben $FV$ zum Quartalszinssatz würde die erforderliche Eröffnungseinlage überschreiten $\\$14{,}500$."
+      "Der vierteljährliche Periodenzinssatz beträgt $1.780\\%$, und es vergehen $N=36$ Quartale.",
+      "Das rekonstruierte $PV$ ist streng kleiner als $\\$12{,}000$.",
+      "Bei monatlicher Verzinsung mit demselben Nominalzins $r$ wäre die nötige Anfangseinlage für denselben $FV$ streng kleiner als das vierteljährliche $PV$ um mehr als $\\$30$.",
+      "Das gesamte prozentuale Wachstum von $PV$ auf $FV$ übersteigt $85\\%$.",
+      "Blieben bis zumselben $FV$ bei dem vierteljährlichen Zinssatz nur noch $t'=6$ Jahre, so überstiege die nötige Anfangseinlage $\\$14{,}500$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=1.780\\%\\qquad N=36\n$$ \n\nBeides Match.\n\nDie Aussage ist richtig.",
@@ -1102,14 +1102,14 @@
     "solution_overview": "Einmalig den vorliegenden Quartalswert zurückbekommen.\n\n $$\ni=\\frac{0.0712}{4}=0.017800\\qquad N=36\n$$ \n\n $$\nPV=\\frac{22{,}140.00}{(1+i)^{N}}\\approx11{,}730.85\n$$ \n\nZwillingsmonat $PV_m=\\frac{22{,}140.00}{(1+0.0712/12)^{108}}\\approx11{,}687.03$.\n\n $$\n\\frac{FV-PV}{PV}\\approx0.8873\\qquad PV_6\\approx14{,}497.03\n$$ "
   },
   "MATH 11.19": {
-    "title": "Drei einjährige Festgeldkonten, die näher beieinander liegen als ihre Nominalsätze vermuten lassen",
-    "context": "Drei einjährige Zertifikate beginnen $P=\\$10{,}000$. CD $1$ quotes $5.80\\%$ monatlich, d. h. $2$ quotes $5.85\\%$ Quartale und CD $3$ quotes $5.90\\%$ jährlich. Ausgehend von der effektiven Jahreszinssatz\n\nBewertete jede Aussage. Markiere über Richtig oder Falsch. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Drei einjährige Festgelder, die näher beieinander liegen als ihre Nominalquoten suggerieren",
+    "context": "Drei einjährige Festgelder starten jeweils bei $P=\\$10{,}000$. Festgeld $1$ nennt $5.80\\%$ monatlich, Festgeld $2$ nennt $5.85\\%$ vierteljährlich und Festgeld $3$ nennt $5.90\\%$ jährlich. Ordne nach effektiver Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "CD $1$ Der effektive Jahreszinssatz übersteigt $5.95\\%$.",
-      "CD $2$ Effektive Jahresrate übersteigt CD $1$.'''",
-      "CD $3$... en den jeweiligen.",
-      "Zum Beispiel, dass „weckere“se-senuffe-more-morre-mor richterstatterin fliesen aus: \"Premor-morre-mor-er\"-morre-more-more-more-more-mort-more-morta-m ergreifen-more-more-more-more-more-more-more-more-mor-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-more-mor-more-more\"-msor nachhaltig $0.10$ percentage points.",
-      "On principal $P$, die, ergänzung zu,. $\\$596$ of interest in one year."
+      "Die effektive Jahresrate von Festgeld $1$ übersteigt $5.95\\%$.",
+      "Die effektive Jahresrate von Festgeld $2$ übersteigt die effektive Jahresrate von Festgeld $1$.",
+      "Festgeld $3$ hat die höchste effektive Jahresrate der drei.",
+      "Die Spanne zwischen bester und schlechtester Effektivrate übersteigt $0.10$ Prozentpunkte.",
+      "Auf dem Kapital $P$ verdient das beste Festgeld in einem Jahr mehr als $\\$596$ an Zinsen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR_1\\approx5.9567\\%>5.95\\%\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1121,14 +1121,14 @@
     "solution_overview": "Konvertieren Sie alle drei Zitate einmal.\n\n $$\nR_1=(1+0.058/12)^{12}-1\\approx0.059567\n$$ \n\n $$\nR_2=(1+0.0585/4)^4-1\\approx0.059796\n$$ \n\n $$\nR_3=0.059\n$$ \n\nBest rate $\\max(R_1,R_2,R_3)\\approx0.059796$; interest $P\\max\\approx597.96$."
   },
   "MATH 11.20": {
-    "title": "Wettlauf zu $\\$22{,}000$ unter zwei unterschiedlich verzinsten Konten",
-    "context": "Account $A$ starts at $P_A=\\$15{,}000$ mit Nominalwert $r_A=6.00\\%$ ‟ monatlich.‟ $B$ starts at $P_B=\\$15{,}200$ mit Nominalwert $r_B=5.50\\%$ Quartalsspeicher. Beidesspeicher $T=\\$22{,}000$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Wettlauf auf $\\$22{,}000$ bei zwei unterschiedlich verzinsten Konten",
+    "context": "Konto $A$ startet bei $P_A=\\$15{,}000$ mit Nominalzins $r_A=6.00\\%$ und monatlicher Verzinsung. Konto $B$ startet bei $P_B=\\$15{,}200$ mit Nominalzins $r_B=5.50\\%$ und vierteljährlicher Verzinsung. Beide streben $T=\\$22{,}000$ an.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Account $A$ reaches $T$ in strikt weniger als $6.40$ years when compared against $6.50$ years.",
-      "Account $B$ reaches $T$ in strikt weniger als $7.00$ years.",
-      "Account $A$ reaches $T$ Streng früher als Account $B$ mit einem Zeitabstand größer als $0.30$ years.",
-      "After exactly $5$ years, Account $A$ Der Saldo übersteigt bereits $\\$20{,}500$.",
-      "After exactly $5$ years, Account $B$ 'Saldo liegt immer noch streng unten $\\$20{,}000$."
+      "Konto $A$ erreicht $T$ in streng weniger als $6.40$ Jahren, verglichen mit $6.50$ Jahren.",
+      "Konto $B$ erreicht $T$ in streng weniger als $7.00$ Jahren.",
+      "Konto $A$ erreicht $T$ streng früher als Konto $B$, mit einem Zeitvorsprung von mehr als $0.30$ Jahren.",
+      "Nach genau $5$ Jahren übersteigt der Kontostand von Konto $A$ bereits $\\$20{,}500$.",
+      "Nach genau $5$ Jahren liegt der Kontostand von Konto $B$ noch streng unter $\\$20{,}000$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nt_A\\approx6.3991<6.50\n$$ \n\nAccount $A$ hits before $6.50$ years.\n\nDie Aussage ist richtig.",
@@ -1141,7 +1141,7 @@
   },
   "MATH 4.01": {
     "title": "Zweipreisige Ticketkasse mit Erwachsenenzuschlag als Kontrafaktum",
-    "context": "Eine Kasse verkauft $a=47$ Erwachsenentickets zu je $p=\\$18.50$ und $b=83$ Kindertickets zu je $q=\\$11.25$. Ein Kontrafaktum addiert einen pauschalen Erwachsenenzuschlag von $s=\\$2.75$ während die Kinderpreise unverändert bleiben. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Kasse verkauft $a=47$ Erwachsenentickets zu je $p=\\$18.50$ und $b=83$ Kindertickets zu je $q=\\$11.25$. Ein Kontrafaktum addiert einen pauschalen Erwachsenenzuschlag von $s=\\$2.75$ während die Kinderpreise unverändert bleiben.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Gesamteinnahmen ohne Umlage übersteigen $\\$1{,}800$.",
       "Adults contribute strikt mehr als $55\\%$ der nicht erhobenen Einnahmen.",
@@ -1160,7 +1160,7 @@
   },
   "MATH 4.02": {
     "title": "Lineare Gleichung mit Parametern auf beiden Seiten",
-    "context": "Solve $3.6x-14.8=2.4x+9.2$ für $x$ Ein skalierter Zwilling ersetzt den $3.6$ coefficient by $a=4.8$ Während alle anderen konstant bleiben. Eine zweite Überprüfung wertet beide Seiten bei $x=k$ mit $k=18$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Solve $3.6x-14.8=2.4x+9.2$ für $x$ Ein skalierter Zwilling ersetzt den $3.6$ coefficient by $a=4.8$ Während alle anderen konstant bleiben. Eine zweite Überprüfung wertet beide Seiten bei $x=k$ mit $k=18$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die einzigartige Lösung der ursprünglichen Gleichung ist $x=20$.",
       "Substituting $x=20$ Die Kohäsions- Sicherheiten sabens verlierten sich verlustsabsabsabsabsabsabrechnung $58$.",
@@ -1178,14 +1178,14 @@
     "solution_overview": "Löse die ursprüngliche Gleichung einmal.\n\n $$\n3.6x-14.8=2.4x+9.2\n$$ \n\n $$\n(3.6-2.4)x=9.2+14.8\n$$ \n\n $$\n1.2x=24\\qquad x=20\n$$ \n\nTwin $4.8x-14.8=2.4x+9.2$:\n\n $$\n(4.8-2.4)x=24\\qquad x'=10\n$$ \n\nAt $x=20$ auf der linken Seite gleich $57.2$. At $k=18$ auf der linken Seite gleich $50$ und rechte Seite gleich $52.4$."
   },
   "MATH 4.03": {
-    "title": "Geschwisteralter mit festem Abstand und Summenbedingung",
-    "context": "Two siblings differ in age by $d=7$ Und es ist Einzug gehalten. $s=53$. Lassen Sie $y$ aus ist das jüngere Alter. aus ist die Lücke zu $d'=9$ Dabei bleibt die gleiche Summe.\n\nBewertet jede Anweisung. Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich Nämlich N. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Geschwisteralter mit fester Differenz und Summenbedingung",
+    "context": "Zwei Geschwister unterscheiden sich im Alter um $d=7$ Jahre, und ihre Alterssumme beträgt $s=53$. Es sei $y$ das jüngere Alter. Ein Alternativszenario vergrößert die Differenz auf $d'=9$ bei gleicher Summe.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Das jüngere Alter ist $y=23$ und das höhere Alter den $28$.",
-      "Die älteren Geschwister machen mehr aus als $55\\%$ Dies sind vergrößerten Alters.",
-      "Under gap $d'=9$ und die Kohäsions auch noch mehr, wenn die Menschen in den letzten Jahren $1$ Jahr im Vergleich zum Original $y$.",
-      "die Menge $3y-2(y+d)$ Überschreit $5$.",
-      ".... $700$."
+      "Das jüngere Alter ist $y=23$, und das ältere Alter übersteigt $28$.",
+      "Das ältere Geschwister macht mehr als $55\\%$ der gemeinsamen Alterssumme aus.",
+      "Bei Differenz $d'=9$ und gleicher Summe fällt das jüngere Alter um mehr als $1$ Jahr gegenüber dem ursprünglichen $y$.",
+      "Die Größe $3y-2(y+d)$ übersteigt $5$.",
+      "Das Produkt der beiden ursprünglichen Alter übersteigt $700$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ny=23\\qquad y+d=30>28\n$$ \n\nBeide Teilbehauptungen gelten.\n\nDie Aussage ist richtig.",
@@ -1198,7 +1198,7 @@
   },
   "MATH 4.04": {
     "title": "Verschachtelte Klammern vor dem Isolieren einer vorzeichenbehafteten Unbekannten",
-    "context": "Solve $2(3x-4)-5(x+1)=3(x-8)+17$ Ein Zwilling ersetzt den äußeren Faktor $2$ by $a=3$ farben in beiden Seiten der wechselte $x=0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Solve $2(3x-4)-5(x+1)=3(x-8)+17$ Ein Zwilling ersetzt den äußeren Faktor $2$ by $a=3$ farben in beiden Seiten der wechselte $x=0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die eindeutige Lösung ist $x=-3$.",
       "Substituieren der Lösung in die ursprüngliche linke Seite ergibt einen Wert von mehr als $-20$.",
@@ -1216,14 +1216,14 @@
     "solution_overview": "Klare Klammern und einmal lösen.\n\n $$\n2(3x-4)-5(x+1)=3(x-8)+17\n$$ \n\n $$\n6x-8-5x-5=3x-24+17\n$$ \n\n $$\nx-13=3x-7\\qquad -6=2x\\qquad x=-3\n$$ \n\nZwilling mit äußerem Faktor $3$: $x'=10$. At $x=0$ auf der linken Seite gleich $-13$ und rechte Seite gleich $-7$."
   },
   "MATH 4.05": {
-    "title": "Beseitigen einer linearen Gleichung mit vier Nennern in einem Schritt",
-    "context": "Solve $\\dfrac{2x}{5}+\\dfrac{7}{4}=\\dfrac{3x}{10}-\\dfrac{1}{2}$ Ein Zwilling verdoppelt jeden Zählerkoeffizienten von $x$ Während die konstanten Begriffe $\\dfrac{7}{4}$ und $-\\dfrac{1}{2}$ stay fixed. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Lineare Gleichung mit vier Nennern in einem Zug freimachen",
+    "context": "Löse $\\dfrac{2x}{5}+\\dfrac{7}{4}=\\dfrac{3x}{10}-\\dfrac{1}{2}$. Eine Zwillingsgleichung verdoppelt jeden Zählerkoeffizienten von $x$, während die Konstanten $\\dfrac{7}{4}$ und $-\\dfrac{1}{2}$ unverändert bleiben.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die eindeutige Lösung ist $x=-22.5$.",
-      "Die Lösung ist strikt weniger als $-20$.",
-      "Im Zwilling ist die neue Lösung strikt weniger als $-15$.",
-      "Nach Multiplikation der ursprünglichen Gleichung durch $20$ Ganz gleich ist derjenige Wert, der dem gleich gleich ist. $8$.",
-      "Der absolute Wert der ursprünglichen Lösung übersteigt $22$."
+      "Die Lösung ist streng kleiner als $-20$.",
+      "In der Zwillingsgleichung ist die neue Lösung streng kleiner als $-15$.",
+      "Nach Multiplikation der ursprünglichen Gleichung mit $20$ übersteigt der Absolutbetrag der Konstanten auf der rechten Seite vor dem Zusammenfassen gleichartiger Terme den Wert $8$.",
+      "Der Absolutbetrag der ursprünglichen Lösung übersteigt $22$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick gewonnen: $x=-22.5$.\n\n $$\nx=-22.5\n$$ \n\nStimmt überein.\n\nDie Aussage ist richtig.",
@@ -1236,7 +1236,7 @@
   },
   "MATH 4.06": {
     "title": "Zwei-Sorten-Kaffeemischung mit Ziel-Durchschnittspreis",
-    "context": "A roaster blends $a$ kg of Grade A at $\\$12.40$ /kg mit $b$ kg of Grade B at $\\$8.60$ /kg in ein $50$ kg batch priced at $\\$10.50$ Nm/g $a$ und $b$. A counterfactual targets $\\$10.80$ /kg instead. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A roaster blends $a$ kg of Grade A at $\\$12.40$ /kg mit $b$ kg of Grade B at $\\$8.60$ /kg in ein $50$ kg batch priced at $\\$10.50$ Nm/g $a$ und $b$. A counterfactual targets $\\$10.80$ /kg instead.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Vermischt $24$ kg of Grade A.",
       "Grade B ist genau die Hälfte der $50$ kg batch.",
@@ -1255,7 +1255,7 @@
   },
   "MATH 4.07": {
     "title": "Normalarbeitszeit und Überstunden mit unbekanntem Stundenlohn",
-    "context": "A worker logs $8$ regular hours at wage $w$ und $3$ overtime hours at $1.5w$. Total pay is $\\$214.50$. A counterfactual pays overtime at $1.75w$ für die gleichen Stunden und gleichen Gesamtlohn, Wiedereinziehung eines neuen Lohns $w'$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A worker logs $8$ regular hours at wage $w$ und $3$ overtime hours at $1.5w$. Total pay is $\\$214.50$. A counterfactual pays overtime at $1.75w$ für die gleichen Stunden und gleichen Gesamtlohn, Wiedereinziehung eines neuen Lohns $w'$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der wieder eingezogene reguläre Lohn übersteigt $\\$17$.",
       "Überstundenvergütung im ursprünglichen Vertrag übersteigt $\\$75$.",
@@ -1273,14 +1273,14 @@
     "solution_overview": "Beide Löhne einmal zurückholen.\n\n $$\n8w+4.5w=214.5\\qquad 12.5w=214.5\\qquad w=17.16\n$$ \n\nOvertime dollars $4.5w=77.22$; regular $8w=137.28$.\n\nTwin $8w'+3\\cdot 1.75w'=214.5$: $8w'+5.25w'=214.5$, $13.25w'=214.5$, $w'=16.19$."
   },
   "MATH 4.08": {
-    "title": "Lineare Gleichung mit zwei Brüchen und Dezimalnennern",
-    "context": "Solve $\\dfrac{x}{3.5}+18=\\dfrac{x}{2.8}-6$. A twin replaces $18$ by $b=12$ Zur Linken, während jede andere\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Lineare Zweibruchgleichung mit Dezimalnennern",
+    "context": "Löse $\\dfrac{x}{3.5}+18=\\dfrac{x}{2.8}-6$. Ein Zwilling ersetzt auf der linken Seite $18$ durch $b=12$, während alle übrigen Terme unverändert bleiben.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die eindeutige Lösung ist $x=336$.",
-      "Die Lösung Überschüsse $300$.",
-      "Im Zwilling mit $b=12$ Die neue Lösung übersteigt $280$.",
-      "Der Koeffizient $\\dfrac{1}{3.5}-\\dfrac{1}{2.8}$ gleich $-\\dfrac{1}{14}$.",
-      "Substituting $x=300$ in die ursprüngliche linke Seite ergibt einen Wert strikt niedriger als die ursprüngliche rechte Seite bei $x=300$."
+      "Die Lösung übersteigt $300$.",
+      "Im Zwilling mit $b=12$ übersteigt die neue Lösung $280$.",
+      "Der Koeffizient $\\dfrac{1}{3.5}-\\dfrac{1}{2.8}$ ist gleich $-\\dfrac{1}{14}$.",
+      "Setzt man $x=300$ in die ursprüngliche linke Seite ein, so erhält man einen Wert, der streng kleiner ist als die ursprüngliche rechte Seite bei $x=300$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick gewonnen: $x=336$.\n\n $$\nx=336\n$$ \n\nStimmt überein.\n\nDie Aussage ist richtig.",
@@ -1293,7 +1293,7 @@
   },
   "MATH 4.09": {
     "title": "Säureverdünnung auf eine vorgeschriebene Zwischenkonzentration",
-    "context": "A lab mixes $a$ litres of $12\\%$ Säure mit $b$ litres of $4\\%$ acid to obtain $40$ litres at $7.5\\%$. Wiederfindung $a$ und $b$. A counterfactual targets $8\\%$ instead of $7.5\\%$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A lab mixes $a$ litres of $12\\%$ Säure mit $b$ litres of $4\\%$ acid to obtain $40$ litres at $7.5\\%$. Wiederfindung $a$ und $b$. A counterfactual targets $8\\%$ instead of $7.5\\%$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der einzigartige Mix verwendet mehr als $17$,. $12\\%$ stock.",
       "Die $4\\%$ Mehr als die Hälfte (Be) der Aktien, die mehr als dies zum‟ $40$ litres.",
@@ -1312,7 +1312,7 @@
   },
   "MATH 4.10": {
     "title": "Parameter $k$, der eindeutige, leere oder ganz $\\mathbb{R}$ als Lösungsmenge festlegt",
-    "context": "Berücksichtigung $(k-3)x=6$ Betrachten Sie auch die Begleitergleichung $(k-3)x=0$. Classify solution sets as $k$ varies. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Berücksichtigung $(k-3)x=6$ Betrachten Sie auch die Begleitergleichung $(k-3)x=0$. Classify solution sets as $k$ varies.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "If $k=5$, die Gleichung $(k-3)x=6$ has unique solution $x=3$.",
       "If $k=3$, die Gleichung $(k-3)x=6$ has infinitely many solutions.",
@@ -1330,14 +1330,14 @@
     "solution_overview": "Klassifizieren durch den Koeffizienten von $x$.\n\nIf $k\\neq 3$, then $x=\\dfrac{6}{k-3}$ ist die einzigartige Lösung für $(k-3)x=6$.\n\nIf $k=3$, then $(k-3)x=6$ becomes $0=6$, was unmöglich ist, so dass der Lösungssatz leer ist.\n\nKompanie $(k-3)x=0$: if $k=3$ Es gibt $0=0$ Wahr für alle $x$; if $k\\neq 3$ then $x=0$ only.\n\nAt $k=4$: $x=\\dfrac{6}{1}=6$. At $k=5$: $x=\\dfrac{6}{2}=3$."
   },
   "MATH 4.11": {
-    "title": "Zwei Zulaufrohre und ein Ablauf an einem gemeinsamen Tank",
-    "context": "Pipe $A$ alone fills a tank in $6$ hours; pipe $B$ alone fills it in $8$ hours; drain $C$ alone empties it in $12$ hours. First run $A$ und $B$ zusammen mit $C$ geschlossen. Dann öfffähige alle drei.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Zwei Füllrohre und ein Ablauf an einem gemeinsamen Tank",
+    "context": "Rohr $A$ allein füllt einen Tank in $6$ Stunden; Rohr $B$ allein füllt ihn in $8$ Stunden; Ablauf $C$ allein leert ihn in $12$ Stunden. Zuerst laufen $A$ und $B$ gemeinsam bei geschlossenem $C$. Danach werden alle drei geöffnet.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "nur $A$ und $B$ Natürlich, ober immer $3.5$ hours.",
-      "nur $A$ und $B$ oberhalb oder oberhalb $0.30$ tanks per hour.",
-      "mit $A$, $B$, und $C$ alle geöffnet, die Nettofüllzeit überschreitet $4.5$ hours.",
-      "Das Öffnen des Abflusses verlängert die Füllzeit um mehr als $1.2$ hours relative to $A$ und $B$ alone.",
-      "Der Nettopreis mit allen drei offenen gleich $\\dfrac{5}{24}$ tanks per hour."
+      "Bei nur offenen Rohren $A$ und $B$ ist die Füllzeit streng kleiner als $3.5$ Stunden.",
+      "Bei nur offenen Rohren $A$ und $B$ übersteigt die kombinierte Füllrate $0.30$ Tanks pro Stunde.",
+      "Bei offenen $A$, $B$ und $C$ übersteigt die Netto-Füllzeit $4.5$ Stunden.",
+      "Das Öffnen des Ablaufs verlängert die Füllzeit um mehr als $1.2$ Stunden gegenüber nur $A$ und $B$.",
+      "Die Netto-Rate bei allen drei offenen Rohren ist gleich $\\dfrac{5}{24}$ Tanks pro Stunde."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nt_{AB}=\\dfrac{24}{7}\\approx3.4286<3.5\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1349,14 +1349,14 @@
     "solution_overview": "Add rates once.\n\n $$r_A=\\frac{1}{6}\\qquad r_B=\\frac{1}{8}\\qquad r_C=\\frac{1}{12}$$ \n\n $$r_A+r_B=\\frac{7}{24}\\qquad t_{AB}=\\frac{24}{7}\\approx 3.4286$$ \n\n $$r_A+r_B-r_C=\\frac{5}{24}\\qquad t_{ABC}=\\frac{24}{5}=4.8$$ \n\nLengthening $t_{ABC}-t_{AB}\\approx1.3714$."
   },
   "MATH 4.12": {
-    "title": "Begegnung frontal und Verfolgung in derselben Richtung auf einer $31.5$-km-Strecke",
-    "context": "Runner $A$ moves at $12$ km/h und Läufer $B$ at $9$ km/h on a straight $D=31.5$ Fahrtrichtung Zuerst beginnen sie an entgegengesetzten Enden und laufen aufeinander zu. Separat, $B$ starts $D$ km ahead of $A$ Beide laufen in die gleiche Richtung.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Frontales Treffen und Verfolgung in gleicher Richtung auf einer Strecke von $31.5$ km",
+    "context": "Läufer $A$ bewegt sich mit $12$ km/h und Läufer $B$ mit $9$ km/h auf einer geraden Strecke der Länge $D=31.5$ km. Zuerst starten sie an gegenüberliegenden Enden und laufen aufeinander zu. Separat startet $B$ um $D$ km vor $A$, und beide laufen in dieselbe Richtung.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Im Head-on-Fall treffen sie sich in strikt weniger als $1.6$ hours.",
-      "Im Head-on-Fall, $A$ has covered more than $17$....",
-      "Im Fall der Verfolgung, $A$ needs more than $10$ hours to catch $B$.",
-      "-:::::::: $6.5$.",
-      "After $1$ Stand-of-Rennen, Stand-of- $10$ km."
+      "Im Begegnungsfall treffen sie sich in streng weniger als $1.6$ Stunden.",
+      "Im Begegnungsfall hat $A$ zum Treffzeitpunkt mehr als $17$ km zurückgelegt.",
+      "Im Verfolgungsfall braucht $A$ mehr als $10$ Stunden, um $B$ einzuholen.",
+      "Die Verfolgungszeit übersteigt das Sechsfache der Begegnungszeit mit einem Verhältnis streng größer als $6.5$.",
+      "Nach $1$ Stunde Begegnungslauf ist die verbleibende Distanz zwischen ihnen streng kleiner als $10$ km."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nt_{\\mathrm{meet}}=1.5<1.6\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1369,13 +1369,13 @@
   },
   "MATH 4.13": {
     "title": "Rechteckiger Garten aus Umfang und Längen-Breiten-Differenz",
-    "context": "A rectangular garden has perimeter $86$ m. Länge überschreitet Breite um $a=7$ m.s. $L$ und $W$ sozialer Bereich und diagonal.\n\nBewertet jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein rechteckiger Garten hat den Umfang $86$ m. Die Länge übersteigt die Breite um $a=7$ m. Bestimme $L$ und $W$ sowie Fläche und Diagonale.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Breite ist $W=18$ m und die Länge mehr als $24$ m.",
-      "Das Gebiet ist $400$ m $^2$.",
-      "Die Diagonale ist strikt weniger als $30$ m.",
-      "Wenn die Längenbreitenlücke auf $a'=9$ auf der gleichen zu sein, um zu sein.",
-      "Width is more than $40\\%$ des Umfangs."
+      "Die Breite beträgt $W=18$ m und die Länge übersteigt $24$ m.",
+      "Die Fläche übersteigt $400$ m$^2$.",
+      "Die Diagonale ist streng kleiner als $30$ m.",
+      "Steige die Längen-Breiten-Differenz bei gleichem Umfang auf $a'=9$ m, so würde die Fläche zunehmen.",
+      "Die Breite beträgt mehr als $40\\%$ des Umfangs."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nW=18\\qquad L=25>24\n$$ \n\nBeide Teilbehauptungen gelten.\n\nDie Aussage ist richtig.",
@@ -1388,13 +1388,13 @@
   },
   "MATH 4.14": {
     "title": "Zwei Einkaufsrechnungen, aus denen Stückpreise rekonstruiert werden",
-    "context": "Four items of type $X$ und drei Arten $Y$ cost $\\$50.00$. Two of type $X$ und fünf des Typs $Y$ cost $\\$44.00$.Einbringung der Stückpreise $x$ und $y$ Ein Kontrafaktum ersetzt die zweite Rechnung durch $2x+5y=40$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Vier Artikel vom Typ $X$ und drei vom Typ $Y$ kosten $\\$50.00$. Zwei vom Typ $X$ und fünf vom Typ $Y$ kosten $\\$44.00$. Bestimme die Stückpreise $x$ und $y$. Ein Alternativszenario ersetzt die zweite Rechnung durch $2x+5y=40$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der Preis für den Sonderpreis von $X$ Überschreit $\\$8$.",
-      "Der Preis für den Sonderpreis von $Y$ is strikt weniger als $\\$5.50$.",
-      "One $X$ Schaltnetz $Y$ together cost more than $\\$13.50$.",
-      "Gek wie auf dem stern auf den handel mit dem gehaltttätigkeits auf dem wie nur....... $2x+5y=40$ Die neue $y$ übertrifft das Original $y$.",
-      "Original $x$ über das Original hinaus $y$ by more than $\\$2.80$."
+      "Der eindeutige Stückpreis von $X$ übersteigt $\\$8$.",
+      "Der eindeutige Stückpreis von $Y$ ist streng kleiner als $\\$5.50$.",
+      "Ein $X$ und ein $Y$ zusammen kosten mehr als $\\$13.50$.",
+      "Unter der alternativen zweiten Rechnung $2x+5y=40$ übersteigt das neue $y$ das ursprüngliche $y$.",
+      "Das ursprüngliche $x$ übersteigt das ursprüngliche $y$ um mehr als $\\$2.80$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nx\\approx8.4286>8\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1406,14 +1406,14 @@
     "solution_overview": "Eliminate once.\n\n $$\n4x+3y=50\\qquad 2x+5y=44\n$$ \n\nDie zweite Gleichung verdoppeln:\n\n $$\n4x+10y=88\n$$ \n\nSubtrahieren Sie die erste: grund\n\n $$\n7y=38\\qquad y=\\dfrac{38}{7}\\approx5.4286\n$$ \n\n $$\n4x+3\\cdot\\dfrac{38}{7}=50\\qquad x=\\dfrac{59}{7}\\approx8.4286\n$$ \n\nCounterfactual $4x+3y=50$, $2x+5y=40$: double second $4x+10y=80$; subtract $7y=30$, $y'=\\dfrac{30}{7}$; $x'=\\dfrac{65}{7}\\approx9.2857$."
   },
   "MATH 4.15": {
-    "title": "Aufschlag und anschließender Rabatt mit absoluter Regalgebühr",
-    "context": "A good costs $c=\\$64$. It is marked up by $28\\%$, then discounted by $15\\%$ Aus der markierten Preis. Unabhängig davon ist eine Regalgebühr von $\\$3.50$ wird nach dem Rabatt hinzugefügt. Ein Zwilling überspringt den Markup und nur Rabatte $15\\%$ Kosten vor der gleichen Gebühr.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Aufschlag und danach Rabatt mit einer absoluten Regalgebühr",
+    "context": "Eine Ware kostet $c=\\$64$. Sie wird um $28\\%$ aufgeschlagen und anschließend um $15\\%$ vom Aufschlagspreis rabattiert. Separat wird nach dem Rabatt eine Regalgebühr von $\\$3.50$ addiert. Ein Zwilling überspringt den Aufschlag und rabattiert nur $15\\%$ vom Einkaufspreis vor derselben Gebühr.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Vorher Discounter $\\$80$.",
-      "Der Preis nach Aufschlag und Rabatt (vor Gebühr) ist strikt weniger als $\\$70$.",
-      "Nach dem Ausstoßen $\\$3.50$ Gebühr, der Regalpreis übersteigt $\\$73.50$.",
-      "Die auf die Funktion auf die Funktion ab auf die (p\")\" /t\"\"\"\"\"\"\"fähige\"\"\"\"\"\"\"\"\"\"v\"'\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" $\\$10$.",
-      "Net multiplicative factor $1.28\\times 0.85$ Überschreit $1.10$."
+      "Der Aufschlagspreis vor dem Rabatt übersteigt $\\$80$.",
+      "Der Preis nach Aufschlag und Rabatt (vor der Gebühr) ist streng kleiner als $\\$70$.",
+      "Nach Addition der Gebühr von $\\$3.50$ übersteigt der Regalpreis $\\$73.50$.",
+      "Der Zwillingspfad (nur Rabatt, dann Gebühr) ergibt einen Regalpreis, der streng um mehr als $\\$10$ unter dem Aufschlag-Rabatt-Gebühr-Pfad liegt.",
+      "Der multiplikative Nettofaktor $1.28\\times 0.85$ übersteigt $1.10$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nM=81.92>80\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1425,14 +1425,14 @@
     "solution_overview": "Verfassen Sie den Preispfad einmal.\n\n $$\nM=c\\cdot 1.28=81.92\n$$ \n\n $$\nD=M\\cdot 0.85=69.63\n$$ \n\n $$\nS=D+3.50=73.13\n$$ \n\nTwin: $D_t=c\\cdot 0.85=54.40$, $S_t=57.90$.\n\nFactor $1.28\\times 0.85=1.088$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 4.16": {
-    "title": "Boot in Strömung: Stillwassergeschwindigkeit aus Berg- und Talfahrt",
-    "context": "A boat does $18$ km/h stromabwärts und $12$ km/h. Stille Wassergeschwindigkeit $b$ und der Strom $c$. A $45$ Der AAF steht für jeden AAA.\n\nSofernn! Sofernn! zylindrischen!. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Boot in einer Strömung: Stillwassergeschwindigkeit aus Auf- und Abstromraten",
+    "context": "Ein Boot fährt stromabwärts mit $18$ km/h und stromaufwärts mit $12$ km/h. Bestimme die Stillwassergeschwindigkeit $b$ und die Strömung $c$. Eine Strecke von $45$ km wird in beide Richtungen zeitlich erfasst.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Geschwindigkeit bei der Stilllegung $15$ km/h und der Strom ist gleich $3$ km/h.",
-      "Die regenerative $45$ km leg takes strikt mehr als $3.5$ hours.",
-      "Die $45$......treppt auf: $6$ hours.",
-      "Downstream time is less than $60\\%$ of upstream time.",
-      "Wenn der Strom steigt $1$ km/h bei gleicher Stillwassergeschwindigkeit, stromseitige Geschwindigkeit unterschreiten würde $10$ km/h."
+      "Die Stillwassergeschwindigkeit beträgt $15$ km/h und die Strömung beträgt $3$ km/h.",
+      "Die stromaufwärts gerichtete Strecke von $45$ km dauert streng mehr als $3.5$ Stunden.",
+      "Die Rundreisezeit für je $45$ km in beide Richtungen übersteigt $6$ Stunden.",
+      "Die stromabwärts gerichtete Zeit beträgt weniger als $60\\%$ der stromaufwärts gerichteten Zeit.",
+      "Steige die Strömung um $1$ km/h bei gleicher Stillwassergeschwindigkeit, so fiele die stromaufwärts gerichtete Geschwindigkeit unter $10$ km/h."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nb=15.0\\qquad c=3.0\n$$ \n\nBeides Match.\n\nDie Aussage ist richtig.",
@@ -1445,7 +1445,7 @@
   },
   "MATH 4.17": {
     "title": "Stab, unterteilt im Verhältnis $2:5:8$, und eine separate Bruchgleichung",
-    "context": "A rod of length $L=3.75$ m in drei Stück im Verhältnis geschnitten $2:5:8$. Separately solve $\\dfrac{2}{5}n+18=n-7$ für $n$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A rod of length $L=3.75$ m in drei Stück im Verhältnis geschnitten $2:5:8$. Separately solve $\\dfrac{2}{5}n+18=n-7$ für $n$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das längste Stück übersteigt $1.90$ m.",
       "Das kürzeste Stück ist nach $0.55$ m.",
@@ -1463,14 +1463,14 @@
     "solution_overview": "„Splited the rod und lösen Sie die fraktionierte Gleichung einmal.\n\n $$\nL=3.75\\qquad p_1=\\dfrac{2}{15}L=0.5\\qquad p_2=\\dfrac{5}{15}L=1.25\\qquad p_3=\\dfrac{8}{15}L=2.0\n$$ \n\n $$\\frac{2}{5}n+18=n-7$$ \n\n $$\\frac{2}{5}n-n=-25\\qquad -\\frac{3}{5}n=-25\\qquad n=\\frac{125}{3}$$ \n\n $\\dfrac{2}{5}n=16.666666666666668$."
   },
   "MATH 4.18": {
-    "title": "Lineare Bruchgleichung, bereinigt durch das Zwölffache",
-    "context": "Solve $\\dfrac{x+3}{4}-\\dfrac{2x-1}{6}=\\dfrac{5}{3}$. A twin replaces $\\dfrac{5}{3}$ by $\\dfrac{7}{3}$ rechts.\n\nBewertete jede Aussage. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Gebrochen-lineare Gleichung, die durch ein Zwölffaches freigemacht wird",
+    "context": "Löse $\\dfrac{x+3}{4}-\\dfrac{2x-1}{6}=\\dfrac{5}{3}$. Ein Zwilling ersetzt auf der rechten Seite $\\dfrac{5}{3}$ durch $\\dfrac{7}{3}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die eindeutige Lösung ist $x=-9$.",
-      "Die lösung ist strikt größer als $-10$.",
-      "Im Zwilling übertrifft die neue Lösung $-12$.",
-      "After multiplying through by $12$ Die Konst christ en beigetragen von $\\dfrac{5}{3}$ gleich $20$.",
-      "Substituting $x=-6$ Die Kohäsions- Sicherheiten sabens verlierten sich verlustsabsabsabsabsabsabrechnung $\\dfrac{5}{3}$."
+      "Die Lösung ist streng größer als $-10$.",
+      "Im Zwilling übersteigt die neue Lösung $-12$.",
+      "Nach Multiplikation mit $12$ beträgt die von $\\dfrac{5}{3}$ beigetragene Konstante $20$.",
+      "Setzt man $x=-6$ in die ursprüngliche linke Seite ein, so erhält man einen Wert, der streng kleiner ist als $\\dfrac{5}{3}$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n** A. ** → Richtig\n\nwie ein intensives $x=-9$ Matches.\n\nDie Aussage ist richtig.",
@@ -1483,13 +1483,13 @@
   },
   "MATH 4.19": {
     "title": "Wochenlohn mit Überstundenzuschlag und prozentualem Abzug",
-    "context": "Hourly base wage is $w=\\$14.80$. A week has $36$ und deren sowie $6$ overtime hours paid at $1.5w$. Gross pay is taxed by withholding $18\\%$. A twin withholds $22\\%$ instead. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Der stündliche Grundlohn beträgt $w=\\$14.80$. Eine Woche hat $36$ reguläre Stunden und $6$ Überstunden, die mit $1.5w$ vergütet werden. Vom Bruttolohn werden $18\\%$ einbehalten. Ein Zwilling behält statt dessen $22\\%$ ein.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      ". $\\$530$.",
-      "Overtime pay is strikt weniger als $\\$140$.",
-      "Net pay after $18\\%$ einbehaltene Beträge $\\$550$.",
-      "Raising withholding to $22\\%$ cuts net pay by more than $\\$25$ relativ zum $18\\%$ net.",
-      "Overtime Accounts für mehr als $22\\%$ of gross pay."
+      "Der reguläre Lohn übersteigt $\\$530$.",
+      "Der Überstundenlohn ist streng kleiner als $\\$140$.",
+      "Der Nettolohn nach $18\\%$ Einbehalt übersteigt $\\$550$.",
+      "Eine Erhöhung des Einbehalts auf $22\\%$ mindert den Nettolohn um mehr als $\\$25$ gegenüber dem Netto bei $18\\%$.",
+      "Die Überstunden machen mehr als $22\\%$ des Bruttolohns aus."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR=532.80>530\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
@@ -1501,14 +1501,14 @@
     "solution_overview": "Bauen Sie Brutto und Netto einmal.\n\n $$\nR=36\\cdot14.8=532.80\\qquad O=6\\cdot 1.5\\cdot14.8=133.20\n$$ \n\n $$\nG=R+O=666.00\\qquad N_{18}=0.82G=546.12\n$$ \n\n $$\nN_{22}=0.78G=519.48\n$$ \n\nOvertime share of gross: $\\dfrac{O}{G}\\approx0.2000$."
   },
   "MATH 4.20": {
-    "title": "Eilende Uhr: Umrechnung der angezeigten in die wahre verstrichene Zeit",
-    "context": "A clock gains $2.5$ Minuten pro echter Stunde. Zuerst zeigt die Uhr $4$ hours $20$ Minuten, die nach einer wertmäßigen $T$ Separat, finde heraus, wie viele wirkliche Stunden vor der Uhr vergehen $12$ minutes fast. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Voreilende Uhr: angezeigte verstrichene Zeit in wahre verstrichene Zeit umrechnen",
+    "context": "Eine Uhr geht pro wahrer Stunde um $2.5$ Minuten vor. Zuerst zeigt die Uhr $4$ Stunden $20$ Minuten seit dem Abgleich an; bestimme die wahre verstrichene Zeit $T$. Separat: nach wie vielen wahren Stunden geht die Uhr um $12$ Minuten vor?\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Wahrheits-Zeit, die einer Anzeige entspricht $4$ h $20$ min is strikt weniger als $4.20$ hours.",
-      "Diese wahre vergangene Zeit übersteigt $4.10$ hours.",
-      "Die Uhr ist $12$ minutes fast after more than $4.5$ Echte Stunden.",
-      "In those $4.5+$ Echte Stunden für eine $12$ Minute Vorsprung, die Uhr selbst um mehr als $5$ hours.",
-      "Gain over $T$ Of $4$ h $20$ min Anzeige: $10$ minutes."
+      "Die wahre verstrichene Zeit, die einer angezeigten Dauer von $4$ h $20$ min entspricht, ist streng kleiner als $4.20$ Stunden.",
+      "Diese wahre verstrichene Zeit übersteigt $4.10$ Stunden.",
+      "Die Uhr geht nach mehr als $4.5$ wahren Stunden um $12$ Minuten vor.",
+      "In diesen $4.5+$ wahren Stunden, die für einen Vorsprung von $12$ Minuten nötig sind, schreitet die Uhr selbst um mehr als $5$ Stunden vor.",
+      "Der Vorsprung über $T$ wahre Stunden zur Anzeige von $4$ h $20$ min übersteigt $10$ Minuten."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nT\\approx4.1600<4.20\n$$ \n\nStrenglich weniger als $4.20$ hours.\n\nDie Aussage ist richtig.",
@@ -1520,14 +1520,14 @@
     "solution_overview": "Konvertieren Sie Verstärkung einmal in einen Skalierungsfaktor.\n\nPro wahrer Stunde rückt die Uhr vor $62.5$ minutes, so\n\n $$\nC=T\\cdot\\dfrac{62.5}{60}\n$$ \n\nmit Anzeige $C=\\dfrac{13}{3}$ hours:\n\n $$\nT=\\dfrac{13}{3}\\cdot\\dfrac{60}{62.5}\\approx4.1600\n$$ \n\ngroßer Publikums $12$ -minute lead: $2.5T=12$, $T_{12}=4.8$.\n\nClock advance over $T_{12}$: $T_{12}\\cdot\\dfrac{62.5}{60}=5.0$.\n\nGain over recovered $T$: $2.5T\\approx10.400$ minutes."
   },
   "MATH 5.01": {
-    "title": "Drei-Stoff-Premium-Mischung mit verdoppeltem Midgrade-Auftrag",
-    "context": "Ein Mischpult mischt Premium-Bestand ($95\\%$ Oktanzahl), Midgrade ($80\\%$), und Verschnitt ($55\\%$) in genau$240$Liter Fertigkraftstoff bei$78\\%$ octane.\n\nPremium kostet EUR $2.80$ pro Liter, Midgrade EUR $2.10$ pro Liter, und Verschnitt EUR $1.40$ pro Liter.\n\nRegel: Die Mischung muss genau doppelt so viele Liter Midgrade wie Premium verwenden. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Dreistrom-Premiummischung mit verdoppelter Mittelqualitäts-Vorgabe",
+    "context": "Ein Mischpult vermengt Premiumware (Oktanzahlindex $95\\%$), Mittelqualität ($80\\%$) und Verdünner ($55\\%$) zu genau $240$ Litern Fertigkraftstoff mit Oktanzahl $78\\%$.\n\nPremium kostet EUR $2.80$ pro Liter, Mittelqualität EUR $2.10$ pro Liter und Verdünner EUR $1.40$ pro Liter.\n\nVorgabe: Die Mischung muss genau doppelt so viele Liter Mittelqualität wie Premium verwenden.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "In der eindeutigen Mischung, die Volumen, Oktanzahl und die $M=2P$ Regel erfüllt, übersteigt das Premiumvolumen strikt $60$Liter.",
-      "Diese Mischung verwendet strikt weniger als $50$ Liter Verschnitt.",
+      "In der eindeutigen Mischung, die Volumen, Oktanzahl und die Vorgabe $M=2P$ erfüllt, übersteigt das Premiumvolumen streng $60$ Liter.",
+      "Diese Mischung verwendet streng weniger als $50$ Liter Verdünner.",
       "Die gesamten Materialkosten der $240$-Liter-Mischung übersteigen EUR $505$.",
-      "Wenn die Police zu gleichen Volumina von Prämie und Midgrade (die Beibehaltung der)$240$-Liter und$78\\%$Ziele), Cuttervolumen würde über steigen$56$Liter.",
-      "Unter der ursprünglichen Regel macht Midgrade mehr als $50\\%$ des Fertigvolumens aus."
+      "Würde die Vorgabe auf gleiche Volumina von Premium und Mittelqualität umgestellt (bei denselben Zielen von $240$ Litern und $78\\%$), so stiege das Verdünnervolumen über $56$ Liter.",
+      "Unter der ursprünglichen Vorgabe macht die Mittelqualität mehr als $50\\%$ des Fertigvolumens aus."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Überblick hat bereits rekonstruiert $P=\\dfrac{184}{3}$.\n\n$$\n\\frac{184}{3}=61.\\overline{3}\n$$\n\n$$\n61.\\overline{3}>60\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDie Aussage ist richtig.",
@@ -1540,7 +1540,7 @@
   },
   "MATH 5.02": {
     "title": "Parametrische Ordner- und Hefter-Rechnungen mit Batch-Skalierungsfaktor",
-    "context": "Ein Schreibwarenlager berechnet Ordner und Hefter zu festen Stückpreisen $x$und$y$ (in Euro). Die Auftragskraft verwendet einen positiven ganzzahligen Batch-Skalierungsfaktor $k$.\n\nRechnung Alpha: $2k$ Ordner und $3k$ Hefter kosten EUR $17k$.\n\nRechnung Beta: $5k$ Ordner und $2k$ Hefter kosten EUR $24k$.\n\nDie Stückpreise hängen nicht ab von $k$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Schreibwarenlager berechnet Ordner und Hefter zu festen Stückpreisen $x$und$y$ (in Euro). Die Auftragskraft verwendet einen positiven ganzzahligen Batch-Skalierungsfaktor $k$.\n\nRechnung Alpha: $2k$ Ordner und $3k$ Hefter kosten EUR $17k$.\n\nRechnung Beta: $5k$ Ordner und $2k$ Hefter kosten EUR $24k$.\n\nDie Stückpreise hängen nicht ab von $k$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der wiedereingezogene Bindemittelpreis genügt$x>\\dfrac{7}{2}$.",
       "Der Ordnerpreis entspricht$\\dfrac{37}{11}$ euros.",
@@ -1559,7 +1559,7 @@
   },
   "MATH 5.03": {
     "title": "Kupfer–Zink–Zinn-Legierung mit verdoppelter Zink-Gießregel",
-    "context": "Eine Gießerei stellt eine Legierung aus Kupfer ($92\\%$ Reinheitsindex), zinc ($60\\%$), und tin ($30\\%$) in genau$180$ kg Fertigmetall mit Reinheitsindex $70\\%$.\n\nKupfer kostet EUR $8.40$ pro kg, zinc EUR $3.60$ pro kg, und tin EUR $12.00$ pro kg.\n\nGießregel: Die Zinkmasse muss genau das Doppelte der Kupfermasse betragen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Gießerei stellt eine Legierung aus Kupfer ($92\\%$ Reinheitsindex), zinc ($60\\%$), und tin ($30\\%$) in genau$180$ kg Fertigmetall mit Reinheitsindex $70\\%$.\n\nKupfer kostet EUR $8.40$ pro kg, zinc EUR $3.60$ pro kg, und tin EUR $12.00$ pro kg.\n\nGießregel: Die Zinkmasse muss genau das Doppelte der Kupfermasse betragen.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Kupfermasse in der eindeutigen machbaren Legierung übersteigt$58$ kg.",
       "Tin accounts for more than $2\\%$ of finished mass.",
@@ -1578,7 +1578,7 @@
   },
   "MATH 5.04": {
     "title": "Zwei Charterstrecken mit gemeinsamem Boarding-Zuschlag",
-    "context": "A river charter bills diesel launch hours at EUR $x$pro Stunde und elektrische Ausschreibungsstunden zu EUR$y$ pro Stunde, plus a fixed boarding surcharge of EUR $s$ on every booking.\n\nMorning: $3$Diesel Stunden und$2$ tender hours, total EUR $118$.\n\nAfternoon: $5$Diesel Stunden und$4$ tender hours, total EUR $196$.\n\nBeide Buchungen verwenden den gleichen Zuschlag, und die Schreibtischberichte$s=16$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A river charter bills diesel launch hours at EUR $x$pro Stunde und elektrische Ausschreibungsstunden zu EUR$y$ pro Stunde, plus a fixed boarding surcharge of EUR $s$ on every booking.\n\nMorning: $3$Diesel Stunden und$2$ tender hours, total EUR $118$.\n\nAfternoon: $5$Diesel Stunden und$4$ tender hours, total EUR $196$.\n\nBeide Buchungen verwenden den gleichen Zuschlag, und die Schreibtischberichte$s=16$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Diesel launch time is billed at more than EUR $22$ pro Stunde.",
       "Tender time is billed at EUR $18$ pro Stunde.",
@@ -1596,14 +1596,14 @@
     "solution_overview": "$$\n3x+2y+s=118,\\qquad 5x+4y+s=196,\\qquad s=16\n$$\n\n$$\n3x+2y=102,\\qquad 5x+4y=180\n$$\n\n$$\n6x+4y=204\\qquad\\Rightarrow\\qquad x=24,\\quad y=15\n$$\n\n**Antwort.** $x=24$, $y=15$, $s=16$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
   },
   "MATH 5.05": {
-    "title": "Zwei-Konten-Sparaufteilung mit gekoppelter Zinsdifferenz",
-    "context": "A household splits EUR $24000$ between account $A$(Jahressatz)$3\\%$) und Konto$B$(Jahressatz)$4\\%$).\n\nPolicy: account $B$ holds exactly $\\dfrac{3}{5}$ as much principal as account $A$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Zweikonto-Sparaufteilung mit verknüpfter Zinsdifferenz",
+    "context": "Ein Haushalt teilt EUR $24000$ auf Konto $A$ (jährlicher Zinssatz $3\\%$) und Konto $B$ (jährlicher Zinssatz $4\\%$) auf.\n\nVorgabe: Konto $B$ hält genau $\\dfrac{3}{5}$ so viel Kapital wie Konto $A$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Account $A$ holds exactly EUR $15000$ of principal.",
-      "Account $B$ holds more than EUR $9500$.",
-      "Einjährige Zinsen auf den Split übersteigen EUR$800$.",
-      "Wenn das Verhältnis zu$a=\\dfrac{3}{5}b$Bei gleichem Kapital und gleichen Zinssätzen würden die Einjahreszinsen unter EUR fallen$810$.",
-      "Unter dem ursprünglichen Split, Konto$A$verdient strikt mehr Zinsen als Konto$B$ in one year."
+      "Konto $A$ hält genau EUR $15000$ Kapital.",
+      "Konto $B$ hält mehr als EUR $9500$.",
+      "Die Einjahreszinsen der Aufteilung übersteigen EUR $800$.",
+      "Würde das Verhältnis bei gleichem Gesamtkapital und denselben Zinssätzen auf $a=\\dfrac{3}{5}b$ umgedreht, so fielen die Einjahreszinsen unter EUR $810$.",
+      "Unter der ursprünglichen Aufteilung verdient Konto $A$ in einem Jahr streng mehr Zinsen als Konto $B$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$a=15000$$entspricht dem Anspruch.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDie Aussage ist richtig.",
@@ -1616,7 +1616,7 @@
   },
   "MATH 5.06": {
     "title": "Stuhlqualität-Lieferung mit festem Preisabstand und Wertbindung",
-    "context": "A workshop sells standard chairs at EUR $s$und Deluxe Stühle bei EUR$d$, mit der ständigen Regel$d=s+45$.\n\nA shipment of $40$Standard und$25$ deluxe chairs is valued at EUR $8375$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A workshop sells standard chairs at EUR $s$und Deluxe Stühle bei EUR$d$, mit der ständigen Regel$d=s+45$.\n\nA shipment of $40$Standard und$25$ deluxe chairs is valued at EUR $8375$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Standardstuhlpreis übersteigt EUR$110$.",
       "Der Deluxe Stuhl Preis ist genau EUR$155$.",
@@ -1635,7 +1635,7 @@
   },
   "MATH 5.07": {
     "title": "Mobilfunktarif mit rekonstruiertem Minutenpreis und Grundgebühr",
-    "context": "A prepaid plan bills EUR $f$ fixed fee plus EUR $r$ pro Minute.\n\nMonth 1: $180$ minutes, total EUR $46.80$.\n\nMonth 2: $250$ minutes, total EUR $58.00$.\n\nDie Gebühr und der Minutensatz sind über Monate hinweg konstant. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A prepaid plan bills EUR $f$ fixed fee plus EUR $r$ pro Minute.\n\nMonth 1: $180$ minutes, total EUR $46.80$.\n\nMonth 2: $250$ minutes, total EUR $58.00$.\n\nDie Gebühr und der Minutensatz sind über Monate hinweg konstant.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Minutensatz ist strikt kleiner als EUR$0.18$.",
       "Die Fixgebühr entspricht EUR$20$.",
@@ -1653,14 +1653,14 @@
     "solution_overview": "$$\nf+180r=46.80 \\tag{1}\n$$\n\n$$\nf+250r=58.00 \\tag{2}\n$$\n\nSubtract:\n\n$$\n70r=11.20\\qquad\\Rightarrow\\qquad r=0.16\n$$\n\n$$\nf=46.80-180\\cdot 0.16=46.80-28.80=18\n$$\n\n**Antwort.** $f=18$, $r=0.16$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
   },
   "MATH 5.08": {
-    "title": "Zwei-Linien-Wochenproduktion mit ausschussbereinigtem Gleichgewicht",
-    "context": "Line $X$ produces $x$Pre-Scrap-Einheiten pro Woche und Line$Y$ produces $y$.\n\nPre-scrap totals satisfy $x+y=1000$. After scrapping $8\\%$ of Line $X$und$5\\%$ of Line $Y$Die Pflanzenschiffe genau$935$ good units. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Zweilinien-Wochenoutput mit ausschussbereinigtem Gleichgewicht",
+    "context": "Linie $X$ produziert $x$ Einheiten vor Ausschuss pro Woche und Linie $Y$ produziert $y$.\n\nDie Vor-Ausschuss-Summen erfüllen $x+y=1000$. Nach Ausschuss von $8\\%$ der Linie $X$ und $5\\%$ der Linie $Y$ liefert das Werk genau $935$ gute Einheiten aus.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Line $X$ produces exactly $500$ pre-scrap units.",
-      "Line $Y$ produces strikt mehr als $520$ pre-scrap units.",
-      "Gute Einheiten von Line$X$ alone exceed $450$.",
-      "Wenn Linie$X$ scrap rose to $10\\%$ while Line $Y$ scrap stayed $5\\%$und Pre-Scrap-Gesamtsummen geblieben$x+y=1000$mit$0.90x+0.95y=935$, then $x$würde fallen unter$500$.",
-      "Unter den ursprünglichen Schrottquoten ist die gesamte gute Leistung gleich$935$."
+      "Linie $X$ produziert genau $500$ Einheiten vor Ausschuss.",
+      "Linie $Y$ produziert streng mehr als $520$ Einheiten vor Ausschuss.",
+      "Die guten Einheiten allein von Linie $X$ übersteigen $450$.",
+      "Steige der Ausschuss von Linie $X$ auf $10\\%$, während der Ausschuss von Linie $Y$ bei $5\\%$ bleibt und die Vor-Ausschuss-Summen $x+y=1000$ mit $0.90x+0.95y=935$ weiterhin gelten, so fiele $x$ unter $500$.",
+      "Unter den ursprünglichen Ausschussraten ist der gesamte Gutoutput gleich $935$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$x=500$$ matches.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDie Aussage ist richtig.",
@@ -1673,7 +1673,7 @@
   },
   "MATH 5.09": {
     "title": "Zwei-Filialen-Nettoerlöse zur Rekonstruktion von Sofa- und Tischpreisen",
-    "context": "East branch sold $12$Sofas und$18$ tables for EUR $27600$ net.\n\nWest branch sold $20$Sofas und$10$ tables for EUR $31000$ net.\n\nSofa price $s$und Tabellenpreis$t$sind in beiden Zweigen gleich. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "East branch sold $12$Sofas und$18$ tables for EUR $27600$ net.\n\nWest branch sold $20$Sofas und$10$ tables for EUR $31000$ net.\n\nSofa price $s$und Tabellenpreis$t$sind in beiden Zweigen gleich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein Sofa kostet mehr als EUR$1150$.",
       "Eine Tabelle kostet EUR$800$.",
@@ -1692,7 +1692,7 @@
   },
   "MATH 5.10": {
     "title": "Druckerei-Stücksätze gegenüber einem rivalisierenden Pauschalangebot",
-    "context": "In-house rates: EUR $c$pro Farbseite und EUR$b$pro Schwarz-Weiß-Seite.\n\nJob A: $400$Farbe und$600$B&W kostet EUR$520$.\n\nJob B: $250$Farbe und$900$B&W kostet EUR$445$.\n\nA rival quotes a flat EUR $0.55$pro Seite für jeden Mix. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "In-house rates: EUR $c$pro Farbseite und EUR$b$pro Schwarz-Weiß-Seite.\n\nJob A: $400$Farbe und$600$B&W kostet EUR$520$.\n\nJob B: $250$Farbe und$900$B&W kostet EUR$445$.\n\nA rival quotes a flat EUR $0.55$pro Seite für jeden Mix.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Farbseitenpreis übersteigt EUR$0.90$.",
       "Der B&W-Seitenpreis entspricht EUR$0.25$.",
@@ -1711,7 +1711,7 @@
   },
   "MATH 5.11": {
     "title": "Drei-Artikel-Foodtruck-Margenbindung mit Rezeptverhältnis",
-    "context": "A food truck sells bowls at EUR $b$, wraps at EUR $w$, und drinks at EUR $d$.\n\nLunch: $30$ bowls, $40$ wraps, $50$ drinks → EUR $920$.\nDinner: $45$ bowls, $20$ wraps, $35$ drinks → EUR $800$.\nPolicy: $w=b-2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A food truck sells bowls at EUR $b$, wraps at EUR $w$, und drinks at EUR $d$.\n\nLunch: $30$ bowls, $40$ wraps, $50$ drinks → EUR $920$.\nDinner: $45$ bowls, $20$ wraps, $35$ drinks → EUR $800$.\nPolicy: $w=b-2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Eine Schüssel kostet mehr als EUR$8$.",
       "Ein Wrap kostet EUR$7.50$.",
@@ -1730,7 +1730,7 @@
   },
   "MATH 5.12": {
     "title": "Buchhandlung Hard-/Softcover-Absatz mit Margenparameter",
-    "context": "Hardcovers sell at EUR $h$und Taschenbücher bei EUR$p$, mit Store Rule$h=2p+a$wobei der Einschussparameter$a=4$.\n\nJanuary: $50$Hardcovers und$120$ paperbacks → EUR $2860$.\nDie gleichen Preise gelten im Februar. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Hardcovers sell at EUR $h$und Taschenbücher bei EUR$p$, mit Store Rule$h=2p+a$wobei der Einschussparameter$a=4$.\n\nJanuary: $50$Hardcovers und$120$ paperbacks → EUR $2860$.\nDie gleichen Preise gelten im Februar.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein Taschenbuch kostet mehr als EUR$12$.",
       "Ein Hardcover kostet EUR$28$.",
@@ -1749,7 +1749,7 @@
   },
   "MATH 5.13": {
     "title": "Mobilflyer mit Gesprächs- und Datenpreisen aus zwei Tarifen",
-    "context": "Plan rates: EUR $t$pro Gesprächsminute und EUR$g$pro Gigabyte.\n\nFlyer plan S: $100$Talk Buckets und$8$ GB → EUR $39$.\nFlyer plan L: $300$Talk Buckets und$15$ GB → EUR $92$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Plan rates: EUR $t$pro Gesprächsminute und EUR$g$pro Gigabyte.\n\nFlyer plan S: $100$Talk Buckets und$8$ GB → EUR $39$.\nFlyer plan L: $300$Talk Buckets und$15$ GB → EUR $92$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Gigabyte Rate übersteigt EUR$2.70$.",
       "One Talk Bucket kostet EUR$0.20$.",
@@ -1768,7 +1768,7 @@
   },
   "MATH 5.14": {
     "title": "Pension-Buchung mit Zimmer- und Frühstückspreisen aus zwei Nächten",
-    "context": "Zimmerpreis EUR$r$Frühstückspaket EUR$f$ are fixed.\n\nMonday: $8$Zimmer und$6$ breakfasts → EUR $1120$.\nTuesday: $5$Zimmer und$9$ breakfasts → EUR $865$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Zimmerpreis EUR$r$Frühstückspaket EUR$f$ are fixed.\n\nMonday: $8$Zimmer und$6$ breakfasts → EUR $1120$.\nTuesday: $5$Zimmer und$9$ breakfasts → EUR $865$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Zimmerpreis übersteigt EUR$115$.",
       "Frühstück kostet EUR$30$.",
@@ -1787,7 +1787,7 @@
   },
   "MATH 5.15": {
     "title": "Lager-SKU-Bewertung mit Dreifach-Mix-Nebenbedingung",
-    "context": "SKUs $A$, $B$, und $C$ have unit values $a$, $b$, und $c$ euros.\n\nStock count 1: $40$ of $A$, $25$ of $B$, $10$ of $C$, total value EUR $3920$.\nStock count 2: $20$ of $A$, $50$ of $B$, $15$ of $C$, total value EUR $4800$.\nPolicy: $c=2a$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "SKUs $A$, $B$, und $C$ have unit values $a$, $b$, und $c$ euros.\n\nStock count 1: $40$ of $A$, $25$ of $B$, $10$ of $C$, total value EUR $3920$.\nStock count 2: $20$ of $A$, $50$ of $B$, $15$ of $C$, total value EUR $4800$.\nPolicy: $c=2a$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "SKU $A$über EUR bewertet wird$43$.",
       "SKU $B$ is valued at EUR $50$.",
@@ -1806,7 +1806,7 @@
   },
   "MATH 5.16": {
     "title": "Personaleinsatzvertrag mit rekonstruierten Normal- und Überstundenlöhnen",
-    "context": "Normalstundensatz EUR$r$und Überstundensatz EUR$v$, mit Vertragsregel$v=\\dfrac{3}{2}r$.\n\nWeek 1: $32$regelmäßig und$8$ overtime hours → EUR $1120$.\nWoche 2 verwendet die gleichen Preise. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Normalstundensatz EUR$r$und Überstundensatz EUR$v$, mit Vertragsregel$v=\\dfrac{3}{2}r$.\n\nWeek 1: $32$regelmäßig und$8$ overtime hours → EUR $1120$.\nWoche 2 verwendet die gleichen Preise.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der reguläre Satz übersteigt EUR$25$.",
       "Overtime pays EUR $40$ pro Stunde.",
@@ -1825,7 +1825,7 @@
   },
   "MATH 5.18": {
     "title": "Zwei Taxitarife rekonstruiert aus einer gemeinsamen Flughafenstrecke",
-    "context": "CityCab: flag EUR $f_c$ plus EUR $p_c$pro km.\nMetroX: flag EUR $f_m$ plus EUR $p_m$pro km.\n\nA $12$Kilometerlaufkosten EUR$28.80$über CityCab und EUR$31.20$ on MetroX.\nA $20$Kilometerlaufkosten EUR$44.00$über CityCab und EUR$47.20$ on MetroX. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "CityCab: flag EUR $f_c$ plus EUR $p_c$pro km.\nMetroX: flag EUR $f_m$ plus EUR $p_m$pro km.\n\nA $12$Kilometerlaufkosten EUR$28.80$über CityCab und EUR$31.20$ on MetroX.\nA $20$Kilometerlaufkosten EUR$44.00$über CityCab und EUR$47.20$ on MetroX.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der CityCab-Preis pro Kilometer liegt streng unter EUR$2.00$.",
       "MetroX's flag equals EUR $6.00$.",
@@ -1844,7 +1844,7 @@
   },
   "MATH 5.19": {
     "title": "Angebotsvergleich mit gemeinsamen Stückkosten und Rüstgebühr",
-    "context": "Vendor Alpha: setup EUR $S$ plus EUR $u$ pro Stück.\nVendor Beta: setup EUR $2S$ plus EUR $\\dfrac{u}{2}$ pro Stück.\n\nAn order of $40$Stückkosten EUR$520$von Alpha und EUR$440$von Beta. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Vendor Alpha: setup EUR $S$ plus EUR $u$ pro Stück.\nVendor Beta: setup EUR $2S$ plus EUR $\\dfrac{u}{2}$ pro Stück.\n\nAn order of $40$Stückkosten EUR$520$von Alpha und EUR$440$von Beta.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Stückkosten von Alpha übersteigen EUR$9$.",
       "Alpha's setup fee is EUR $100$.",
@@ -1863,7 +1863,7 @@
   },
   "MATH 5.20": {
     "title": "Holdings-Dashboard zur Rekonstruktion zweier Divisionsmargen",
-    "context": "Division Alpha contributes margin $m_a$und Beta$m_b$(Euro pro Projekt).\n\nQuarter board: $6$Alpha und$4$ Beta projects → EUR $52000$ margin.\nNext board: $3$Alpha und$9$ Beta projects → EUR $57000$ margin. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Division Alpha contributes margin $m_a$und Beta$m_b$(Euro pro Projekt).\n\nQuarter board: $6$Alpha und$4$ Beta projects → EUR $52000$ margin.\nNext board: $3$Alpha und$9$ Beta projects → EUR $57000$ margin.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Alphas Projektmarge übersteigt EUR$5500$.",
       "Die Beta-Marge pro Projekt entspricht EUR$4500$.",
@@ -1881,14 +1881,14 @@
     "solution_overview": "$$\n6m_a+4m_b=52000 \\tag{1}\n$$\n\n$$\n3m_a+9m_b=57000 \\tag{2}\n$$\n\nDivide (1) by $2$: $3m_a+2m_b=26000$. Multiply by $3$: $9m_a+6m_b=78000$.\nMultiply (2) by $3$: $9m_a+27m_b=171000$.\n\n$$\n21m_b=93000\\Rightarrow m_b=\\frac{31000}{7},\\quad 3m_a+2\\cdot\\frac{31000}{7}=26000\n$$\n\n$$\n3m_a=\\frac{182000-62000}{7}=\\frac{120000}{7}\\Rightarrow m_a=\\frac{40000}{7}\n$$\n\n**Antwort.** $m_a=\\dfrac{40000}{7}$, $m_b=\\dfrac{31000}{7}$."
   },
   "MATH 5.21": {
-    "title": "Fitnessstudio-Gebührenrekonstruktion mit Peak- und Off-Peak-Preisen",
-    "context": "Peak session EUR $p$und Off-Peak-EUR$o$, mit Club-Regel$p=o+q$ where surcharge $q=6$.\n\nMember pack: $10$Peak und$15$ off-peak → EUR $420$.\nDie gleichen preise gelten für walk-in-sitzungen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Wiederherstellung von Studiogebühren mit Peak- und Off-Peak-Preisen",
+    "context": "Peak-Einheit EUR $p$ und Off-Peak EUR $o$, mit Clubregel $p=o+q$ und Zuschlag $q=6$.\n\nMitgliederpaket: $10$ Peak- und $15$ Off-Peak-Einheiten → EUR $420$.\nDieselben Preise gelten für Einzelbesuche.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Eine Off-Peak-Sitzung kostet mehr als EUR$14$.",
-      "Eine Peak Session kostet EUR$20$.",
-      "Acht Peak- und acht Off-Peak-Sitzungen zusammen übersteigen EUR$275$.",
-      "Wenn der Zuschlag auf$q=8$Bei gleicher Packungsmischung und Gesamtmenge würde der Off-Peak-Preis sinken.",
-      "Unter dem ursprünglichen zuschlag sind peak sessions weniger als.$50\\%$ more expensive than off-peak sessions."
+      "Eine Off-Peak-Einheit kostet mehr als EUR $14$.",
+      "Eine Peak-Einheit kostet EUR $20$.",
+      "Acht Peak- und acht Off-Peak-Einheiten zusammen übersteigen EUR $275$.",
+      "Steige der Zuschlag bei derselben Paketmischung und demselben Gesamtwert auf $q=8$, so fiele der Off-Peak-Preis.",
+      "Unter dem ursprünglichen Zuschlag sind Peak-Einheiten um weniger als $50\\%$ teurer als Off-Peak-Einheiten."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\\frac{72}{5}=14.4>14$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDie Aussage ist richtig.",
@@ -1901,7 +1901,7 @@
   },
   "MATH 6.01": {
     "title": "Parametrische rationale Ungleichung mit Polverschiebung $x=a$",
-    "context": "Sei $a=3$. Betrachte rationale Ungleichungen in der reellen Variablen $x$ deren Pol bei $x=a$ und deren Zählernullstelle bei $x=2a-1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $a=3$. Betrachte rationale Ungleichungen in der reellen Variablen $x$ deren Pol bei $x=a$ und deren Zählernullstelle bei $x=2a-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$a=3$, die Lösungsmenge von $\\dfrac{x-(2a-1)}{x-a}\\le 0$ is $3<x\\le 5$.",
       "für$a=3$, die Lösungsmenge von $\\dfrac{x-(2a-1)}{x-a}\\ge 0$ is $(-\\infty,3]\\cup[5,\\infty)$.",
@@ -1920,7 +1920,7 @@
   },
   "MATH 6.02": {
     "title": "Quadrat-über-linear-Ungleichung mit Buchstabenkoeffizienten",
-    "context": "Sei $k=4$. Study $\\dfrac{x^{2}-k^{2}}{x-(k-1)}\\le 0$und verwandte Intervallansprüche. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $k=4$. Untersuche $\\dfrac{x^{2}-k^{2}}{x-(k-1)}\\le 0$und verwandte Intervallansprüche.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$k=4$, die Lösungsmenge von $\\dfrac{x^{2}-k^{2}}{x-(k-1)}\\le 0$ is $(-\\infty,-4]\\cup(3,4]$.",
       "für$k=4$, der Punkt$x=3$ gehört zu dieser Lösungsmenge.",
@@ -1939,7 +1939,7 @@
   },
   "MATH 6.03": {
     "title": "Betragsungleichung gekoppelt an eine rationale Schwelle",
-    "context": "Sei $c=5$. Consider $|2x-c|\\le x+1$zusammen mit dem damit verbundenen rationalen Schnitt$\\dfrac{x-c}{x+2}>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $c=5$. Betrachte $|2x-c|\\le x+1$zusammen mit dem damit verbundenen rationalen Schnitt$\\dfrac{x-c}{x+2}>0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$c=5$, die Lösungsmenge von $|2x-c|\\le x+1$ is $\\dfrac{4}{3}\\le x\\le 6$.",
       "Die Nummer$x=0$zufrieden stellend$|2x-5|\\le x+1$.",
@@ -1958,7 +1958,7 @@
   },
   "MATH 6.04": {
     "title": "Rationale Ungleichung mit quadriertem Zähler und falscher Singleton-Falle",
-    "context": "Sei $m=2$. Study $\\dfrac{(x+m)^{2}}{x-(m+1)}\\ge 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $m=2$. Untersuche $\\dfrac{(x+m)^{2}}{x-(m+1)}\\ge 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$m=2$, die Lösungsmenge von $\\dfrac{(x+m)^{2}}{x-(m+1)}\\ge 0$ is exactly $x>3$.",
       "für$m=2$, $x=-2$zufrieden stellend$\\dfrac{(x+2)^{2}}{x-3}\\ge 0$.",
@@ -1977,7 +1977,7 @@
   },
   "MATH 6.05": {
     "title": "Zweifaktor-rationale Ungleichung mit Parameter $b$",
-    "context": "Sei $b=3$. Consider $\\dfrac{(x-b)(x-2b)}{x+b}<0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $b=3$. Betrachte $\\dfrac{(x-b)(x-2b)}{x+b}<0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$b=3$, die Lösungsmenge von $\\dfrac{(x-b)(x-2b)}{x+b}<0$ is $(-\\infty,-3)\\cup(3,6)$.",
       "für$b=3$, $x=0$Diese strenge Ungleichung befriedigt.",
@@ -1996,7 +1996,7 @@
   },
   "MATH 6.06": {
     "title": "Rationale Ungleichung über einem quadratischen Nenner",
-    "context": "Sei $p=2$. Study $\\dfrac{x+p}{x^{2}-9}>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $p=2$. Untersuche $\\dfrac{x+p}{x^{2}-9}>0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$p=2$, die Lösungsmenge von $\\dfrac{x+p}{x^{2}-9}>0$ is $(-3,-2)\\cup(3,\\infty)$.",
       "Der Punkt$x=-3$ist enthalten, weil die Ungleichung nur im Zählersinn streng ist.",
@@ -2015,7 +2015,7 @@
   },
   "MATH 6.07": {
     "title": "Quadratische Ungleichung mit führendem Buchstabenkoeffizienten",
-    "context": "Sei $a=2$und$h=3$. Study $a(x-h)(x+h)\\le 0$, i.e. $2(x^{2}-9)\\le 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $a=2$und$h=3$. Untersuche $a(x-h)(x+h)\\le 0$, i.e. $2(x^{2}-9)\\le 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$a=2$und$h=3$, die Lösungsmenge von $a(x-h)(x+h)\\le 0$ is $[-3,3]$.",
       "Wenn der Leitkoeffizient zu$a=-2$mit dem gleichen$h=3$Die Lösung von$a(x^{2}-9)\\le 0$ would remain $[-3,3]$.",
@@ -2034,7 +2034,7 @@
   },
   "MATH 6.08": {
     "title": "Zusammengesetzte rationale Ungleichung über kritische-Punkte-Algebra",
-    "context": "Sei $r=1$. Study $\\dfrac{x-2r}{x+4r}\\cdot\\dfrac{x-6r}{x-r}\\ge 0$ simplified at $r=1$ to $\\dfrac{(x-2)(x-6)}{(x+4)(x-1)}\\ge 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $r=1$. Untersuche $\\dfrac{x-2r}{x+4r}\\cdot\\dfrac{x-6r}{x-r}\\ge 0$ simplified at $r=1$ to $\\dfrac{(x-2)(x-6)}{(x+4)(x-1)}\\ge 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$r=1$, die Lösungsmenge von $\\dfrac{(x-2r)(x-6r)}{(x+4r)(x-r)}\\ge 0$ is $(-\\infty,-4)\\cup(1,2]\\cup[6,\\infty)$.",
       "Der Punkt$x=1$ gehört zu dieser Lösungsmenge.",
@@ -2053,7 +2053,7 @@
   },
   "MATH 6.09": {
     "title": "Betrag einer Linearform gegenüber einer parametrischen Schranke",
-    "context": "Sei $t=4$. Solve $|x-t|\\ge 2t-x$Vergleichen Sie Intervallansprüche. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $t=4$. Solve $|x-t|\\ge 2t-x$Vergleichen Sie Intervallansprüche.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$t=4$, die Lösungsmenge von $|x-t|\\ge 2t-x$ is $[6,\\infty)$.",
       "Die Nummer$x=5$zufrieden stellend$|x-4|\\ge 8-x$.",
@@ -2072,7 +2072,7 @@
   },
   "MATH 6.10": {
     "title": "Intervallalgebra auf verschachtelten rationalen Lösungsmengen",
-    "context": "Sei $s=2$. Define\n\n$$\nS=\\left\\{x:\\dfrac{x-s}{x+2s}\\le 0\\right\\},\\qquad T=\\left\\{x:\\dfrac{x-3s}{x-s}\\ge 0\\right\\}.\n$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $s=2$. Definiere\n\n$$\nS=\\left\\{x:\\dfrac{x-s}{x+2s}\\le 0\\right\\},\\qquad T=\\left\\{x:\\dfrac{x-3s}{x-s}\\ge 0\\right\\}.\n$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$s=2$, $S=(-4,2]$.",
       "für$s=2$, $T=(-\\infty,2]\\cup[6,\\infty)$.",
@@ -2091,7 +2091,7 @@
   },
   "MATH 6.11": {
     "title": "Rationale Ungleichung mit wiederholtem Linearfaktor im Zähler",
-    "context": "Sei $n=3$. Study $\\dfrac{(x-n)^{2}(x+n)}{x-2n}\\le 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $n=3$. Untersuche $\\dfrac{(x-n)^{2}(x+n)}{x-2n}\\le 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$n=3$, die Lösungsmenge von $\\dfrac{(x-n)^{2}(x+n)}{x-2n}\\le 0$ is $[-3,6)$.",
       "für$n=3$, $x=6$ erfüllt die nichtstrikte Ungleichung.",
@@ -2110,7 +2110,7 @@
   },
   "MATH 6.12": {
     "title": "Differenz von Brüchen, reduziert auf eine einzige Ungleichung",
-    "context": "Sei $q=4$. Consider $\\dfrac{1}{x-q}-\\dfrac{1}{x+q}\\ge 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $q=4$. Betrachte $\\dfrac{1}{x-q}-\\dfrac{1}{x+q}\\ge 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$q=4$, die Lösungsmenge von $\\dfrac{1}{x-q}-\\dfrac{1}{x+q}\\ge 0$ is $(-\\infty,-4)\\cup(4,\\infty)$.",
       "Die Endpunkte$x=\\pm 4$sind enthalten, weil die Ungleichung nicht streng ist.",
@@ -2129,7 +2129,7 @@
   },
   "MATH 6.13": {
     "title": "Quadratische Ungleichung über einen Parametersatz in Scheitelpunktform",
-    "context": "Sei $u=5$und$v=4$. Study $(x-u)^{2}\\le v^{2}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $u=5$und$v=4$. Untersuche $(x-u)^{2}\\le v^{2}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$u=5$und$v=4$, die Lösungsmenge von $(x-u)^{2}\\le v^{2}$ is $[1,9]$.",
       "Die gleiche Ungleichung mit einer umgedrehten Strenge$(x-5)^{2}<16$hat eine Lösung$(1,9)$.",
@@ -2148,7 +2148,7 @@
   },
   "MATH 6.14": {
     "title": "Rationale Ungleichung nach Freimachen eines positiven Faktors $w$",
-    "context": "Sei $w=5>0$. Study $\\dfrac{w(x-1)}{(x-4)(x+2)}\\le 0$. Because $w>0$Die Ungleichung reduziert sich auf$\\dfrac{x-1}{(x-4)(x+2)}\\le 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $w=5>0$. Untersuche $\\dfrac{w(x-1)}{(x-4)(x+2)}\\le 0$. Because $w>0$Die Ungleichung reduziert sich auf$\\dfrac{x-1}{(x-4)(x+2)}\\le 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$w=5$, die Lösungsmenge von $\\dfrac{w(x-1)}{(x-4)(x+2)}\\le 0$ is $(-\\infty,-2)\\cup[1,4)$.",
       "If $w$ gewechselt zu $-5$Der Lösungsmenge würde unverändert bleiben.",
@@ -2167,7 +2167,7 @@
   },
   "MATH 6.15": {
     "title": "System zweier Ungleichungen mit gemeinsamem Parameter $d$",
-    "context": "Sei $d=2$Betrachten Sie die gleichzeitigen Bedingungen$\\dfrac{x-d}{x+3d}\\ge 0$und$|x|\\le 3d$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $d=2$Betrachten Sie die gleichzeitigen Bedingungen$\\dfrac{x-d}{x+3d}\\ge 0$und$|x|\\le 3d$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$d=2$Die Lösung des simultanen Systems ist$[2,6]$.",
       "Der Pol$x=-6$löst das simultane System, weil$|-6|\\le 6$.",
@@ -2186,7 +2186,7 @@
   },
   "MATH 6.16": {
     "title": "Vorzeichenwechsel kubisch-über-linear mit Parameter $h$",
-    "context": "Sei $h=1$. Study $\\dfrac{(x-h)(x-2h)(x-4h)}{x+h}>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $h=1$. Untersuche $\\dfrac{(x-h)(x-2h)(x-4h)}{x+h}>0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$h=1$, die Lösungsmenge von $\\dfrac{(x-h)(x-2h)(x-4h)}{x+h}>0$ is $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$.",
       "für$h=1$, $x=0$ erfüllt die strikte Ungleichung.",
@@ -2205,7 +2205,7 @@
   },
   "MATH 6.17": {
     "title": "Betrags-Konjunktion mit rationaler Nebenbedingung",
-    "context": "Sei $g=3$. Solve $|x-2g|+|x+g|\\le 9$und dann auf$x>g$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $g=3$. Solve $|x-2g|+|x+g|\\le 9$und dann auf$x>g$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$g=3$Die Lösung von$|x-2g|+|x+g|\\le 9$ is $[-3,6]$.",
       "Imposante die zusätzliche Bedingung$x>g$liefert die Lösung$(3,6]$.",
@@ -2224,7 +2224,7 @@
   },
   "MATH 6.18": {
     "title": "Rationale Ungleichung, äquivalent zu einer Quadratischen nach Freimachen",
-    "context": "Sei $z=2$. Study $\\dfrac{x^{2}-(z+1)x+z}{x-2z}\\le 0$, i.e. $\\dfrac{x^{2}-3x+2}{x-4}\\le 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $z=2$. Untersuche $\\dfrac{x^{2}-(z+1)x+z}{x-2z}\\le 0$, i.e. $\\dfrac{x^{2}-3x+2}{x-4}\\le 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$z=2$, die Lösungsmenge von $\\dfrac{x^{2}-(z+1)x+z}{x-2z}\\le 0$ is $(-\\infty,1]\\cup[2,4)$.",
       "für$z=2$, $x=1.5$ erfüllt die Ungleichung.",
@@ -2243,7 +2243,7 @@
   },
   "MATH 6.19": {
     "title": "Verschachtelte Intervallbehauptung aus zwei parametrischen Schnitten",
-    "context": "Sei $e=5$. Define\n\n$$\nA=\\left\\{x:|x-e|\\le 2\\right\\},\\qquad B=\\left\\{x:\\dfrac{x-(e-1)}{x-(e+2)}\\le 0\\right\\}.\n$$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $e=5$. Definiere\n\n$$\nA=\\left\\{x:|x-e|\\le 2\\right\\},\\qquad B=\\left\\{x:\\dfrac{x-(e-1)}{x-(e+2)}\\le 0\\right\\}.\n$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$e=5$, $A\\cap B=[4,7)$.",
       "für$e=5$, $B=[4,7]$.",
@@ -2262,7 +2262,7 @@
   },
   "MATH 6.20": {
     "title": "Gemischter Betrags- und Rational-Abschluss der Klausur",
-    "context": "Sei $y_0=4$. Consider $|3x-y_0|\\le 2x+1$Zusammen mit dem rationalen Schnitt$\\dfrac{x-y_0}{2x+y_0}>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $y_0=4$. Betrachte $|3x-y_0|\\le 2x+1$Zusammen mit dem rationalen Schnitt$\\dfrac{x-y_0}{2x+y_0}>0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "für$y_0=4$Die Lösung von$|3x-y_0|\\le 2x+1$ is $\\dfrac{3}{5}\\le x\\le 5$.",
       "für$y_0=4$Die Lösung von$\\dfrac{x-y_0}{2x+y_0}>0$ is $(-\\infty,-2)\\cup(4,\\infty)$.",
@@ -2281,7 +2281,7 @@
   },
   "MATH 7.01": {
     "title": "Scheitelpunktform, Wertebereich und Gerade–Parabel-Schnitte mit Bruchparametern",
-    "context": "Eine Parabel ist in Scheitelpunktform gegeben $g(x)=\\dfrac{5}{4}\\left(x-\\dfrac{8}{5}\\right)^{2}-\\dfrac{13}{10}$ und eine Gerade durch $f(x)=\\dfrac{3}{2}x-\\dfrac{11}{5}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Parabel ist in Scheitelpunktform gegeben $g(x)=\\dfrac{5}{4}\\left(x-\\dfrac{8}{5}\\right)^{2}-\\dfrac{13}{10}$ und eine Gerade durch $f(x)=\\dfrac{3}{2}x-\\dfrac{11}{5}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Scheitelpunkt von $g$ is $\\left(\\dfrac{8}{5},-\\dfrac{13}{10}\\right)$.",
       "Die Graphen von $f$und$g$ schneiden sich in genau einem reellen Punkt.",
@@ -2300,7 +2300,7 @@
   },
   "MATH 7.02": {
     "title": "Quadratische Ergänzung mit unschönen rationalen Koeffizienten",
-    "context": "Betrachten Sie die Quadrate$g(x)=\\dfrac{7}{3}x^{2}-\\dfrac{28}{5}x+\\dfrac{11}{6}$zusammen mit der Linie$f(x)=\\dfrac{5}{4}x-\\dfrac{9}{10}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Betrachten Sie die Quadrate$g(x)=\\dfrac{7}{3}x^{2}-\\dfrac{28}{5}x+\\dfrac{11}{6}$zusammen mit der Linie$f(x)=\\dfrac{5}{4}x-\\dfrac{9}{10}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Symmetrieachse von $g$ is $x=\\dfrac{6}{5}$.",
       "Nach Abschluss des Quadrats, die Scheitelhöhe der$g$ equals $-\\dfrac{229}{150}$.",
@@ -2319,7 +2319,7 @@
   },
   "MATH 7.03": {
     "title": "Diskriminantenanalyse von Gerade–Parabel-Schnitten",
-    "context": "Sei $g(x)=x^{2}-\\dfrac{11}{3}x+\\dfrac{5}{4}$und$f(x)=\\dfrac{5}{6}x-\\dfrac{7}{12}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $g(x)=x^{2}-\\dfrac{11}{3}x+\\dfrac{5}{4}$und$f(x)=\\dfrac{5}{6}x-\\dfrac{7}{12}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Graphen von $f$und$g$ schneiden sich in genau zwei verschiedenen reellen Punkten.",
       "Die Summe der Abszissen dieser Schnittpunkte ist gleich$\\dfrac{9}{2}$.",
@@ -2338,7 +2338,7 @@
   },
   "MATH 7.04": {
     "title": "Nach unten geöffnete Scheitelpunktform mit Bruchverschiebung und Höhenvergleichen",
-    "context": "Ein projektilartiges Höhenmodell ist in Vertexform geschrieben als$g(x)=-3\\left(x+\\dfrac{7}{6}\\right)^{2}+\\dfrac{41}{12}$, und a reference line is $f(x)=2x-\\dfrac{5}{4}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein projektilartiges Höhenmodell ist in Vertexform geschrieben als$g(x)=-3\\left(x+\\dfrac{7}{6}\\right)^{2}+\\dfrac{41}{12}$, und a reference line is $f(x)=2x-\\dfrac{5}{4}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Scheitelpunkt von $g$ is $\\left(-\\dfrac{7}{6},\\dfrac{41}{12}\\right)$.",
       "Der größte Wert, der durch$g$ equals $\\dfrac{41}{12}$.",
@@ -2357,7 +2357,7 @@
   },
   "MATH 7.05": {
     "title": "Lösung eines Gerade–Parabel-Systems und Ablesen des Scheitels der Quadratischen",
-    "context": "Eine Parabel und eine Linie sind gegeben durch$g(x)=2x^{2}-5x-3$und$f(x)=-x+7$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Parabel und eine Linie sind gegeben durch$g(x)=2x^{2}-5x-3$und$f(x)=-x+7$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Abszissen der Schnittpunkte von$f$und$g$ are $1+\\sqrt{6}$und$1-\\sqrt{6}$.",
       "Die Graphen von $f$und$g$ schneiden sich in genau einem reellen Punkt.",
@@ -2376,7 +2376,7 @@
   },
   "MATH 7.06": {
     "title": "Scheitelpunktform-Schnitte mit ganzzahlig freigemachter Quadratischer",
-    "context": "Sei $g(x)=4\\left(x-\\dfrac{5}{8}\\right)^{2}+\\dfrac{7}{16}$und$f(x)=\\dfrac{1}{2}x+1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $g(x)=4\\left(x-\\dfrac{5}{8}\\right)^{2}+\\dfrac{7}{16}$und$f(x)=\\dfrac{1}{2}x+1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Scheitelpunkt von $g$ is $\\left(\\dfrac{5}{8},\\dfrac{7}{16}\\right)$.",
       "Der Mindestwert von$g$Überschreitung$\\dfrac{1}{2}$.",
@@ -2395,7 +2395,7 @@
   },
   "MATH 7.07": {
     "title": "Achse, Scheitelhöhe und Wurzeldiskriminante einer unschönen Quadratischen",
-    "context": "Consider $g(x)=\\dfrac{3}{5}x^{2}-\\dfrac{12}{7}x+\\dfrac{8}{15}$und die flache Linie$f(x)=\\dfrac{1}{4}x+\\dfrac{2}{3}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Betrachte $g(x)=\\dfrac{3}{5}x^{2}-\\dfrac{12}{7}x+\\dfrac{8}{15}$und die flache Linie$f(x)=\\dfrac{1}{4}x+\\dfrac{2}{3}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Symmetrieachse von $g$ is $x=\\dfrac{10}{7}$.",
       "Die Scheitelhöhe des$g$ equals $-\\dfrac{508}{735}$.",
@@ -2414,7 +2414,7 @@
   },
   "MATH 7.08": {
     "title": "Unschöne Gerade–Parabel-Kreuzungen und die Achse der Quadratischen",
-    "context": "Sei $g(x)=\\dfrac{1}{2}x^{2}-\\dfrac{7}{3}x+\\dfrac{5}{6}$und$f(x)=-\\dfrac{2}{5}x+\\dfrac{11}{15}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Sei $g(x)=\\dfrac{1}{2}x^{2}-\\dfrac{7}{3}x+\\dfrac{5}{6}$und$f(x)=-\\dfrac{2}{5}x+\\dfrac{11}{15}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Graphen von $f$und$g$ schneiden sich in genau zwei verschiedenen reellen Punkten.",
       "Die Summe des Schnittpunkts Abszissen ist gleich$\\dfrac{58}{15}$.",
@@ -2433,7 +2433,7 @@
   },
   "MATH 7.09": {
     "title": "Scheitelpunktform-Höhenmodell mit Bruchscheitel und Wertebereich",
-    "context": "A height function (metres after $x$ seconds) is $H(x)=-\\dfrac{5}{4}x^{2}+6x+\\dfrac{12}{5}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A height function (metres after $x$ seconds) is $H(x)=-\\dfrac{5}{4}x^{2}+6x+\\dfrac{12}{5}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Höhe ist am größten$x=\\dfrac{12}{5}$.",
       "Die größte mögliche Höhe ist gleich$\\dfrac{48}{5}$ metres.",
@@ -2452,7 +2452,7 @@
   },
   "MATH 7.10": {
     "title": "Faktorisierte Quadratische, Vieta und Schnitte mit fallender Geraden",
-    "context": "A quadratic arrives factored as $g(x)=\\left(2x-3\\right)\\left(x+\\dfrac{5}{4}\\right)$Neben der Linie$f(x)=-\\dfrac{3}{2}x+4$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A quadratic arrives factored as $g(x)=\\left(2x-3\\right)\\left(x+\\dfrac{5}{4}\\right)$Neben der Linie$f(x)=-\\dfrac{3}{2}x+4$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Wurzeln von$g$ are $\\dfrac{3}{2}$und$-\\dfrac{5}{4}$.",
       "Die Summe der Wurzeln$g$ equals $\\dfrac{1}{4}$.",
@@ -2471,7 +2471,7 @@
   },
   "MATH 8.01": {
     "title": "Rekonstruktion von $k$ und $n$ aus zwei Masse–Seiten-Tabellenzeilen",
-    "context": "Ein Harzblock gehorcht $m=k\\cdot s^{n}$ Gramm für die Seitenlänge $s>0$ Zentimeter. Zwei Laborzeilen erfassen $(s,m)=(4,48)$ und $(16,384)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Harzblock gehorcht $m=k\\cdot s^{n}$ Gramm für die Seitenlänge $s>0$ Zentimeter. Zwei Laborzeilen erfassen $(s,m)=(4,48)$ und $(16,384)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der aus den beiden Zeilen rekonstruierte Exponent ist $n=\\dfrac{3}{2}$.",
       "Der aus den beiden Zeilen rekonstruierte Koeffizient ist $k=6$.",
@@ -2490,7 +2490,7 @@
   },
   "MATH 8.02": {
     "title": "Zwei Messgerät-Potenzgesetze aus gepaarten Tabellenzeilen rekonstruiert",
-    "context": "Ein Flusspegel meldet die Last $L(t)=k_{L}\\,t^{n_{L}}$ Kilogramm und die Trübung $R(t)=k_{R}\\,t^{n_{R}}$ Einheiten für $t>0$ Stunden. Lastzeilen: $(t,L)=(4,20)$ und $(16,40)$. Trübungszeilen: $(t,R)=(2,18)$ und $(6,2)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Flusspegel meldet die Last $L(t)=k_{L}\\,t^{n_{L}}$ Kilogramm und die Trübung $R(t)=k_{R}\\,t^{n_{R}}$ Einheiten für $t>0$ Stunden. Lastzeilen: $(t,L)=(4,20)$ und $(16,40)$. Trübungszeilen: $(t,R)=(2,18)$ und $(6,2)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der aus den beiden Lastzeilen rekonstruierte Lastexponent ist $n_{L}=\\dfrac{1}{2}$.",
       "Der aus den beiden Trübungszeilen rekonstruierte Trübungsexponent ist $n_{R}=-1$.",
@@ -2509,7 +2509,7 @@
   },
   "MATH 8.03": {
     "title": "Bake-Abklingen und Paketzählung aus Zwei-Punkt-Tabellen rekonstruiert",
-    "context": "Eine Bake gehorcht $S(x)=k_{S}\\,x^{n_{S}}$ Millivolt und ein Leser protokolliert $T(x)=k_{T}\\,x^{n_{T}}$ Tausend Pakete, jeweils für $x>0$. Bake-Zeilen: $(x,S)=(2,40)$ und $(4,5)$. Leser-Zeilen: $(x,T)=(9,12)$ und $(25,20)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Bake gehorcht $S(x)=k_{S}\\,x^{n_{S}}$ Millivolt und ein Leser protokolliert $T(x)=k_{T}\\,x^{n_{T}}$ Tausend Pakete, jeweils für $x>0$. Bake-Zeilen: $(x,S)=(2,40)$ und $(4,5)$. Leser-Zeilen: $(x,T)=(9,12)$ und $(25,20)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Bake-Exponent ist $n_{S}=-3$.",
       "Der Leser-Exponent ist $n_{T}=\\dfrac{1}{2}$.",
@@ -2528,7 +2528,7 @@
   },
   "MATH 8.04": {
     "title": "Gemeinkostenverteilung und Fertigungsstunden aus dualen Kalibriertabellen",
-    "context": "Eine Werkstatt verteilt Gemeinkosten $U(q)=k_{U}\\,q^{n_{U}}$ Euro je Einheit und benötigt $V(q)=k_{V}\\,q^{n_{V}}$ Fertigungsstunden für die Auftragsgröße $q>0$. Gemeinkostenzeilen: $(q,U)=(5,120)$ und $(15,40)$. Fertigungszeilen: $(q,V)=(8,12)$ und $(27,27)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Werkstatt verteilt Gemeinkosten $U(q)=k_{U}\\,q^{n_{U}}$ Euro je Einheit und benötigt $V(q)=k_{V}\\,q^{n_{V}}$ Fertigungsstunden für die Auftragsgröße $q>0$. Gemeinkostenzeilen: $(q,U)=(5,120)$ und $(15,40)$. Fertigungszeilen: $(q,V)=(8,12)$ und $(27,27)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der Gemeinkostenexponent ist $n_{U}=-1$.",
       "Der Fertigungsexponent ist $n_{V}=\\dfrac{2}{3}$.",
@@ -2547,7 +2547,7 @@
   },
   "MATH 8.05": {
     "title": "Abfülllinien-Potenzgesetz mit unbekanntem Koeffizienten und Exponenten",
-    "context": "Eine Abfülllinie läuft mit $Q(s)=A s^{n}$ Kisten pro Stunde für $s>0$ Mitarbeiter. Zwei geprüfte Schichten erfassen $(s,Q)=(16,24)$ und $(81,54)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Abfülllinie läuft mit $Q(s)=A s^{n}$ Kisten pro Stunde für $s>0$ Mitarbeiter. Zwei geprüfte Schichten erfassen $(s,Q)=(16,24)$ und $(81,54)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der rekonstruierte Exponent ist $n=\\dfrac{1}{2}$.",
       "Der rekonstruierte Koeffizient ist $A=6$.",
@@ -2566,7 +2566,7 @@
   },
   "MATH 8.06": {
     "title": "Zwei Wartungsindizes aus Tabellen kalibriert und verglichen",
-    "context": "Zwei Wartungsindizes für $n>0$ Maschinen gehorchen $F(n)=k_{F}\\,n^{p}$ und $G(n)=k_{G}\\,n^{q}$. Index-$F$-Zeilen: $(n,F)=(2,8)$ und $(4,32)$. Index-$G$-Zeilen: $(n,G)=(2,8)$ und $(4,64)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Zwei Wartungsindizes für $n>0$ Maschinen gehorchen $F(n)=k_{F}\\,n^{p}$ und $G(n)=k_{G}\\,n^{q}$. Index-$F$-Zeilen: $(n,F)=(2,8)$ und $(4,32)$. Index-$G$-Zeilen: $(n,G)=(2,8)$ und $(4,64)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das rekonstruierte Modell für $F$ lautet $F(n)=2n^{2}$.",
       "Das rekonstruierte Modell für $G$ lautet $G(n)=n^{3}$.",
@@ -2585,7 +2585,7 @@
   },
   "MATH 8.07": {
     "title": "Gemischte Wurzeltransformationen, Definitionsbereiche und zusammengesetzte Ablesungen",
-    "context": "Ein Kalibrierblatt wendet $L(x)=x^{1/2}$, $M(x)=x^{1/3}$ und $N(x)=x^{-1/2}$ auf eine rohe Sensorablesung $x$ an. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Kalibrierblatt wendet $L(x)=x^{1/2}$, $M(x)=x^{1/3}$ und $N(x)=x^{-1/2}$ auf eine rohe Sensorablesung $x$ an.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$L(0)=0$.",
       "$M(-27)=-3$.",
@@ -2604,7 +2604,7 @@
   },
   "MATH 8.08": {
     "title": "Filterbank-Druckabfall aus zwei Kartuschenzahlen rekonstruiert",
-    "context": "Der Druckabfall einer Filterbank gehorcht $P(x)=k\\,x^{n}$ Kilopascal für $x>0$ Kartuschen im Betrieb. Zwei Serviceprotokolle erfassen $(x,P)=(4,6)$ und $(9,4)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Der Druckabfall einer Filterbank gehorcht $P(x)=k\\,x^{n}$ Kilopascal für $x>0$ Kartuschen im Betrieb. Zwei Serviceprotokolle erfassen $(x,P)=(4,6)$ und $(9,4)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der rekonstruierte Exponent ist $n=-\\dfrac{1}{2}$.",
       "Der rekonstruierte Koeffizient ist $k=12$.",
@@ -2623,7 +2623,7 @@
   },
   "MATH 8.09": {
     "title": "Primer-Potenzgesetz mit unbekanntem Exponenten aus zwei Plattenradien",
-    "context": "Primer für eine kreisförmige Platte gehorcht $y(r)=A r^{n}$ Litern für den Radius $r>0$ Meter. Zwei erfasste Aufträge geben $(r,y)=(2,20)$ und $(6,180)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Primer für eine kreisförmige Platte gehorcht $y(r)=A r^{n}$ Litern für den Radius $r>0$ Meter. Zwei erfasste Aufträge geben $(r,y)=(2,20)$ und $(6,180)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der rekonstruierte Exponent ist $n=2$.",
       "Der rekonstruierte Koeffizient ist $A=5$.",
@@ -2642,7 +2642,7 @@
   },
   "MATH 8.10": {
     "title": "Bremsenergie-Index mit rekonstruiertem quadratischem Potenzgesetz und Prozentfallen",
-    "context": "Ein Bremsenergie-Index gehorcht $E(v)=k\\,v^{n}$ Punkten für die Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde. Zwei instrumentierte Annäherungen erfassen $(v,E)=(10,50)$ und $(20,200)$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Bremsenergie-Index gehorcht $E(v)=k\\,v^{n}$ Punkten für die Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde. Zwei instrumentierte Annäherungen erfassen $(v,E)=(10,50)$ und $(20,200)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der rekonstruierte Exponent ist $n=2$.",
       "Der rekonstruierte Koeffizient ist $k=\\dfrac{1}{2}$.",

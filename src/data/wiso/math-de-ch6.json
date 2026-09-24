@@ -1900,7 +1900,7 @@
   },
   "MATH 6.102": {
     "title": "Klausuraufgaben – 14",
-    "context": "Dass dies ascher gezogen wurden, ist nicht zu schlussfolgern. Vor und und undartige und endddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd zuddd zudddenddddddddd Abschließendddd einesd nurdddd nurdddddddddddddddddddddddd rddd DEFINITION: DEFINITION 1",
+    "context": "Eine Werkstatt hat Aufträge für mindestens $40$ Kits. Jedes Kit verbraucht $2$ kg Material A, $3$ kg Material B und $1{,}5$ Arbeitsstunden. Verfügbar sind $100$ kg A, $180$ kg B und $72$ Arbeitsstunden. Die Produktionsanzahl muss eine nichtnegative ganze Zahl sein und alle Ressourcengrenzen gleichzeitig einhalten.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Material A erlaubt höchstens $50$ Kits.",
       "Material B erlaubt höchstens $60$ Kits.",
@@ -2356,12 +2356,12 @@
   },
   "MATH 6.126": {
     "title": "Klausuraufgaben – 38",
-    "context": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Eine Gezeitenturbine darf erzeugen, wenn die Strömungsgeschwindigkeit $s$ die Bedingungen $1.2\\le s\\le 3.5$ und $|s-2|\\ge 0.3$ erfüllt. Dann ist jede Geschwindigkeit in $[1.2,3.5]$ zulässig.",
-      "Der Druckabfall in einer Pipeline über $L$ Kilometer ist $P=0.05L^{2}$. Die Forderungen $P\\le 20$ und $L\\ge 8$ erzwingen $8\\le L\\le 20$.",
-      "Die Ungleichung $|5-2x|>|x+4|$ Nach $x<\\dfrac13$ oder $x>9$.",
-      "Jeder andere, $0.04$ : : : : und : : $0.06$ Um Lee m e bl e bl e bl e glas swerte bl re ll ll bl . bl e angesiedelte bl ig liver bl vom bl gläs bl il welchen bl gl V - bl umfassend mit strukturiert bl Dendden dnackddderssindddndd blndddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrndddrnddrnddrnddrnddrdddrnddsindddrdddrnddrdtrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrndrndrnddrndrantdrinkd ndrnddrnddrnddrnddrnddrinkdrnddrndddrubdrnddrnddrnddrnddrnddrnddrndddhrdrddrnddrnddrndnddrnd blrddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrndd",
+      "Der Druckverlust einer Pipeline über $L$ Kilometer beträgt $P=0.05L^{2}$. Aus $P\\le 20$ und $L\\ge 8$ folgt $8\\le L\\le 20$.",
+      "Die Ungleichung $|5-2x|>|x+4|$ gilt genau dann, wenn $x<\\dfrac13$ oder $x>9$.",
+      "Jeder Nahrungsmittelriegel verbraucht $0.04$ kg Proteinpulver zu $25$ EUR/kg, $0.06$ kg Hafer zu $3$ EUR/kg und eine Verpackung zu $0.20$ EUR. Bei einem Budget von $120$ EUR und $3$ kg Pulver ist die maximale Anzahl Riegel kleiner als $70$.",
       "Die Ungleichung $\\dfrac{2x+1}{x-4}+3\\ge 0$ hat die Lösungsmenge $\\bigl(-\\infty,\\dfrac{11}{5}\\bigr]\\cup(4,\\infty)$."
     ],
     "tactical_explanations": [

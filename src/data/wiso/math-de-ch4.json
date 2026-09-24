@@ -1977,13 +1977,13 @@
   },
   "MATH 4.105": {
     "title": "Vertikales Flugmodell einer Testdrohne",
-    "context": "VORA, VORN VORRUNE VORRUNE V: VOR VOR VEH VORRUNE VORREUSE VORRUNE VORA VOR VORRUNE VOR V keiner. Die Höhe der Drohne $h(t)$ in Metern über dem Boden nach $t \\ge 0$ Sekunden ist die quadratische Funktion $h(t) = -5t^2 + 40t + 45$ modelliert. Ingenieure bewerten die Flugdauer der Drohne, die maximale Höhe, die Bahnsymmetrie, parametrische Düsenmodifikationen und verwandte Kalibrierungsgleichungen für Sensoren mit höherem Grad.",
+    "context": "Ein Team der Luft- und Raumfahrttechnik analysiert die vertikale Flugbahn einer experimentellen Vermessungsdrohne, die von einer erhöhten Plattform gestartet wird. Die Höhe der Drohne $h(t)$ in Metern über dem Boden nach $t \\ge 0$ Sekunden wird durch die quadratische Funktion $h(t) = -5t^2 + 40t + 45$ modelliert. Die Ingenieure bewerten Flugdauer, maximale Höhe, Symmetrie der Bahn, parametrische Triebwerksänderungen und eine Sensorkalibrierung.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Lösung der Gleichung $h(t) = 0$ liefert zwei echte Wurzeln des entgegengesetzten Zeichens, die bestätigen, dass die Drohne genau in der Luft bleibt $9$ Sekunden nach dem Start.",
-      "Das Quadrat am $h(t)$ zeigt, dass die maximale Höhe, die von der Drohne während ihres Fluges erreicht wird, strikt geringer ist als $120$ meters.",
-      "Für jede Ziel-Höhe $H$ zwischen $45$ und $125$ Meter erreicht, während beide Ascent und Stände, die Summe der zwei Laufzeiten $t_1 + t_2$ streng erhöht, da $H$ erhöht.",
-      "Wenn eine Düsenmodifikation die Höhenfunktion für einen realen Parameter $k$ in $h_k(t) = -5t^2 + 20kt - 20$ ändert, erreicht die Drohne zu irgendeinem Zeitpunkt eine Höhe von mindestens $60$ Metern $t \\ge 0$ wenn und nur wenn $k \\ge 2$.",
-      "Die Sensorkalibrierungsgleichung $(t^2 - 8t)^2 + 5(t^2 - 8t) - 36 = 0$ Es gibt genau zwei verschiedene reelle Lösungen."
+      "Die Lösung der Gleichung $h(t) = 0$ liefert zwei reelle Wurzeln entgegengesetzten Vorzeichens und bestätigt, dass die Drohne genau $9$ Sekunden nach dem Start in der Luft bleibt.",
+      "Das Ergänzen zum Quadrat bei $h(t)$ zeigt, dass die maximale Höhe der Drohne während des Fluges streng kleiner als $120$ Meter ist.",
+      "Für jede Zielhöhe $H$ zwischen $45$ und $125$ Metern, die sowohl beim Aufstieg als auch beim Abstieg erreicht wird, nimmt die Summe der beiden Durchlaufzeiten $t_1 + t_2$ streng zu, wenn $H$ zunimmt.",
+      "Ändert eine Triebwerksmodifikation die Höhenfunktion zu $h_k(t) = -5t^2 + 20kt - 20$ für einen reellen Parameter $k$, so erreicht die Drohne zu einem Zeitpunkt $t \\ge 0$ eine Höhe von mindestens $60$ Metern genau dann, wenn $k \\ge 2$.",
+      "Die Sensorkalibrierungsgleichung $(t^2 - 8t)^2 + 5(t^2 - 8t) - 36 = 0$ besitzt genau zwei verschiedene reelle Lösungen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nUm herauszufinden, wann die Drohne auf den Boden trifft, setzen wir die Höhenfunktion gleich Null: $$-5t^2 + 40t + 45 = 0$$ Die Teilung beider Seiten um $-5$ ergibt die monische quadratische Gleichung: EPMATHMARKEREP $$t^2 - 8t - 9 = 0$$ $$(t - 9)(t + 1) = 0$$ Die algebraischen Wurzeln sind $t_1 = 9$ und $t_2 = -1$, die von entgegengesetzten Vorzeichen sind. Weil die Zeit physisch auf $t \\ge 0$ beschränkt ist, ist die negative Wurzel unzulässig, und die Drohne bleibt vom Start bei $t = 0$ bis zum Aufprall bei $t = 9$ Sekunden.\n\nDie Aussage ist richtig.",
@@ -3193,7 +3193,7 @@
   },
   "MATH 4.169": {
     "title": "Ein Quadrat hinter Basis drei verborgen",
-    "context": "Die Exponentialgleichung $9^{x} - 4 \\cdot 3^{x+1} + 27 = 0$ studiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Exponentialgleichung $9^{x} - 4 \\cdot 3^{x+1} + 27 = 0$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Substitution $u = 3^{x}$ verwandelt die Gleichung in die quadratische Gleichung $u^{2} - 12u + 27 = 0$.",
       "Die Summe aller realen Lösungen der Gleichung ist gleich $3$.",
@@ -3231,7 +3231,7 @@
   },
   "MATH 4.171": {
     "title": "Verschiedene Basen auf beiden Seiten",
-    "context": "Die Exponentialgleichung $5^{x} = 2^{x+3}$ Es wird über die realen Zahlen studiert. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Exponentialgleichung $5^{x} = 2^{x+3}$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Logarithmen beider Seiten führen zur linearen Gleichung $x\\log\\left(\\frac{5}{2}\\right) = 3\\log 2$.",
       "Die Gleichung hat genau eine reelle Lösung.",
@@ -3250,7 +3250,7 @@
   },
   "MATH 4.172": {
     "title": "Ein Exponentialterm und sein Kehrwert",
-    "context": "Die Gleichung $3^{x} + 3^{1-x} = 4$ Es wird über die realen Zahlen studiert. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $3^{x} + 3^{1-x} = 4$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Substitution $u = 3^{x}$ verwandelt die Gleichung in die quadratische Gleichung $u^{2} - 4u + 3 = 0$.",
       "Die Gleichung hat genau zwei verschiedene reelle Lösungen.",
@@ -3269,7 +3269,7 @@
   },
   "MATH 4.173": {
     "title": "Die Definitionsmenge entscheidet die Antwort",
-    "context": "Die Gleichung $\\log_{3}(x-1) + \\log_{3}(x-3) = 1$ diskutiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $\\log_{3}(x-1) + \\log_{3}(x-3) = 1$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Gleichung hat genau eine zulässige Lösung.",
       "Beide Wurzeln des Quadrats, die nach der Kombination der Logarithmen erhalten wurden, sind zulässig.",
@@ -3288,7 +3288,7 @@
   },
   "MATH 4.174": {
     "title": "Eine Logarithmensumme mit einem Scheinkandidaten",
-    "context": "Die Gleichung $\\log_{5}(x - 1) + \\log_{5}(x + 3) = 1$ studiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $\\log_{5}(x - 1) + \\log_{5}(x + 3) = 1$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "The natural domain der Gleichung is described by the single condition $x > 1$.",
       "Die Anwendung der Produktregel für Logarithmen führt zu der Gleichung $(x - 1)(x + 3) = 5$.",
@@ -3345,13 +3345,13 @@
   },
   "MATH 4.177": {
     "title": "Eine Kultur verdreifacht sich alle vier Stunden",
-    "context": "A Bakteriumkultur triples their size everyfourhours. Bewertete jede Aussage. Markiere-..",
+    "context": "Eine Bakterienkultur verdreifacht ihre Größe alle vier Stunden.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Es komam es, es es, es, Resultat. es. kom Kurs.....",
+      "Der Wachstumsfaktor für eine einzelne Stunde ist eine irrationale Zahl.",
       "Über einen ganzen Tag multipliziert sich die Kultur um mehr als $30$.",
-      "auswirkt der Kultur ist weniger als drei Stunden.",
-      "Dass das mehr als ein normaler",
-      "Die Zeit, die benötigt wird, um sich zu verzehnfachen, ist weniger als die doppelte Verdreifachungszeit."
+      "Die Verdoppelungszeit der Kultur ist kürzer als drei Stunden.",
+      "In zwei Stunden verdoppelt sich die Kultur mehr als einmal.",
+      "Die Zeit, die für eine Verzehnfachung benötigt wird, ist kleiner als das Doppelte der Verdreifachungszeit."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nThe hourly growth factor ist die base factor corresponding to an elapsed time of one hour. $$\na = 3^{\\frac{1}{4}} = \\sqrt[4]{3}\n$$ Wenn $a$ were a rational number $\\frac{p}{q}$ with coprime integers $p$ und $q$, dann $\\frac{p^4}{q^4} = 3$, which simplifies to: $$p^4 = 3q^4$$ By the uniqueness of prime factorizations, the prime factor $3$ appears with an exponent das ist eine multiple of $4$ in $p^4$, but with an exponent der form $4k + 1$ in $3q^4$. Since these exponents cannot be equal, no such rational representation exists, which means das $\\sqrt[4]{3}$ ist ein irrational number.\n\nDie Aussage ist richtig.",
@@ -3364,7 +3364,7 @@
   },
   "MATH 4.178": {
     "title": "Ein Quadrat hinter Basis zwei verborgen",
-    "context": "Die Gleichung $4^{x} - 5 \\cdot 2^{x} + 4 = 0$ diskutiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $4^{x} - 5 \\cdot 2^{x} + 4 = 0$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Substitution $u = 2^{x}$ verwandelt die Gleichung in eine quadratische.",
       "Die Gleichung hat zwei reelle Lösungen.",
@@ -3383,7 +3383,7 @@
   },
   "MATH 4.179": {
     "title": "Ein Quadrat hinter Basis drei verborgen",
-    "context": "Die Gleichung $9^{x} - 4 \\cdot 3^{x} + 3 = 0$ diskutiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $9^{x} - 4 \\cdot 3^{x} + 3 = 0$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Seine beiden Lösungen sind aufeinanderfolgende ganze Zahlen.",
       "Das fürs für ders ist für der fürs für für‟ss bes für dass",
@@ -3401,14 +3401,14 @@
     "solution_overview": "The given Gleichung involves powers of $3$: $$9^{x} - 4 \\cdot 3^{x} + 3 = 0$$ Recognizing das $9^{x} = (3^{2})^{x} = (3^{x})^{2}$, wir rewrite die Gleichung in terms of $3^{x}$: $$(3^{x})^{2} - 4 \\cdot 3^{x} + 3 = 0$$ Applying the substitution $u = 3^{x}$ with $u > 0$ yields a quadratische Gleichung in $u$: $$u^{2} - 4u + 3 = 0$$ Factoring dies quadratic gives: $$(u - 1)(u - 3) = 0$$ Thus, the Lösungen for $u$ are $u = 1$ und $u = 3$. Back-substituting into $u = 3^{x}$ produces the Lösungen for $x$: $$\n3^{x} = 1 \\implies x = 0\n$$ $$\n3^{x} = 3 \\implies x = 1\n$$ The Lösung Menge is therefore $\\{0, 1\\}$."
   },
   "MATH 4.180": {
-    "title": "An extraneous candidate in a logarithmic Gleichung",
-    "context": "Die Gleichung $\\log x + \\log(x-3) = 1$ diskutiert wird, wo $\\log$ Er ist der, der das.. Ge Ge „Den ist dies wichtig..",
+    "title": "Ein fremder Kandidat in einer logarithmischen Gleichung",
+    "context": "Die Gleichung $\\log x + \\log(x-3) = 1$ wird diskutiert, wobei $\\log$ den dekadischen Logarithmus bezeichnet.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein",
-      "Die überlebende Lösung die ist eine zufolge.",
-      "Die nach fälle, mit ben en angesiedelten, die. Gemeinschafts,, und, be-..",
-      "Das Entfernen der Logarithen ergibt eine lineare",
-      "sei Bruderr $\\log\\big(x(x-3)\\big) = 1$ auf der Domain des Originalauszug."
+      "Genau ein Kandidat übersteht die Definitionsbereichsprüfung.",
+      "Die überlebende Lösung ist eine Primzahl.",
+      "Der verworfene Kandidat ist negativ.",
+      "Das Entfernen der Logarithmen liefert eine lineare Gleichung.",
+      "Auf dem Definitionsbereich des ursprünglichen Ausdrucks ist die Gleichung äquivalent zu $\\log\\big(x(x-3)\\big) = 1$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nTo determine how many algebraic candidates are valid solutions, each candidate must be tested against the natural domain der original Gleichung.\n\nThe domain requires $x > 0$ und $x - 3 > 0$, giving $x > 3$. The algebraic Wurzeln found by solving the underlying polynomial are: $$\nx_1 = 5, \\quad x_2 = -2\n$$ Testing both Wurzeln ergibt $5 > 3$, which is admitted, und $-2 < 3$, which is rejected. Thus, genau one candidate survives the domain check.\n\nDie Aussage ist richtig.",
@@ -3440,7 +3440,7 @@
   },
   "MATH 4.182": {
     "title": "Eine rationale Gleichung mit faktorisiertem Nenner",
-    "context": "Die Gleichung $\\dfrac{2}{x - 1} + \\dfrac{3}{x + 2} = \\dfrac{5}{x^{2} + x - 2}$ studiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $\\dfrac{2}{x - 1} + \\dfrac{3}{x + 2} = \\dfrac{5}{x^{2} + x - 2}$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Werte $x = 1$ und $x = -2$ aus dem Anwendungsbereich der fügt",
       "Multipliziert man mit dem gemeinsamen Nenner, ergibt die lineare Gleichung $5x + 1 = 5$.",
@@ -3459,7 +3459,7 @@
   },
   "MATH 4.183": {
     "title": "A small exponential system",
-    "context": "Das System $2^{x} \\cdot 2^{y} = 32$ und $2^{x-y} = 2$ diskutiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Das System $2^{x} \\cdot 2^{y} = 32$ und $2^{x-y} = 2$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "- sich zu einem maßgebenden aufzeichnungs in diesem $x$ und $y$.",
       "In der Lösung ist das erste Unbekannte größer als dase.",
@@ -3497,7 +3497,7 @@
   },
   "MATH 4.185": {
     "title": "Eine Wurzelgleichung und ihre versteckte Bedingung",
-    "context": "Die Gleichung $\\sqrt{2x + 7} = x - 4$ Es wird über die realen Zahlen studiert. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $\\sqrt{2x + 7} = x - 4$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "regewalt und und. $x \\ge 4$.",
       "Mit der Quadratur beider Seiten wird die quadratische Gleichung $x^{2} - 10x + 9 = 0$.",
@@ -3516,7 +3516,7 @@
   },
   "MATH 4.186": {
     "title": "Ein Betrag auf einer Seite der Gleichung",
-    "context": "Die Gleichung $|2x - 5| = x + 1$ Es wird über die realen Zahlen studiert. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $|2x - 5| = x + 1$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die Gleichung hat genau zwei verschiedene reelle Lösungen.",
       "Die Summe aller realen Lösungen entspricht $\\dfrac{22}{3}$.",
@@ -3554,7 +3554,7 @@
   },
   "MATH 4.188": {
     "title": "Eine Logarithmusgleichung mit Parameter",
-    "context": "Für einen Parameter $a > 0$ Die Gleichung $\\log_{2} x + \\log_{2}(x - a) = 3$ diskutiert wird. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Für einen Parameter $a > 0$ Die Gleichung $\\log_{2} x + \\log_{2}(x - a) = 3$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Für jeden zulässigen Parameter hat die Gleichung genau eine Lösung.",
       "verwandelt.",
@@ -3592,7 +3592,7 @@
   },
   "MATH 4.190": {
     "title": "Diskriminante und Wurzelbeziehungen mit Parameter",
-    "context": "Für einen realen Parameter $m$ wird die quadratische Gleichung $x^{2} - 2(m - 1)x + m^{2} - 3m = 0$ untersucht. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Für einen realen Parameter $m$ wird die quadratische Gleichung $x^{2} - 2(m - 1)x + m^{2} - 3m = 0$ untersucht.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Sie hat für die Kenns rnung in der Vers- zahl- zahl (für die kenn- zahl) eine Ver- zahlung (für die kenn- zahl) $m > -1$.",
       "für $m = -1$; ß-n $x = -2$.",
@@ -3629,14 +3629,14 @@
     "solution_overview": "Jede Aussage betrifft logarithmische Gleichungen mit der dekadischen Basis zehn Logarithmus $\\log x = \\log_{10} x$. Für alle reellen Ausdrücke mit Logarithmen von Befugnissen von $x$ ist die Definitionsbereich der zulässigen reelle Werte $x > 0$.\n\nWir verwenden systematisch die Power-Eigenschaft von Logarithmen: $$\\log(x^{k}) = k \\cdot \\log x$$ Es gibt $$\\log 10^{k} = k$$ Das Anübergreifenden man besingtf-sich- ren Reduktion-Reg-s, vereinfacht jeden logarithmischen Ausdruck auf eine lineare oder quadratische Gleichung in Bezug auf die Variable $u = \\log x$. Sobald $u$ bestimmt ist, wird der entsprechende Wert der $x$ Z über die inverse Exponentialfunktion erhalten: $$x = 10^{u}$$"
   },
   "MATH 4.192": {
-    "title": "When an exponential Gleichung has keine Lösung at all",
-    "context": "Die Gleichung $4^{x} - 2^{x+2} + 5 = 0$ Die wahren Zahlen sind über mit den tatsächlichen Zahlen. Waren mit Grund und Waren mit der gültigen Fassung",
+    "title": "Wann eine Exponentialgleichung überhaupt keine Lösung hat",
+    "context": "Die Gleichung $4^{x} - 2^{x+2} + 5 = 0$ und ihre Abwandlungen werden über den reellen Zahlen untersucht.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Substitution $u = 2^{x}$ mit der ES- der ämisch- ämisch- ämisch------- $u^{2} - 4u + 5 = 0$.",
-      "Die Gleichung $4^{x} - 2^{x+2} + 5 = 0$ hat keine reelle Lösung.",
-      "Die Gleichung $4^{x} - 2^{x+2} + 4 = 0$ hat genau eine reelle Lösung.",
-      "Die Gleichung $4^{x} - 2^{x+2} - 5 = 0$ Es gibt zwei verschiedene reelle Lösungen.",
-      "Die Gleichung $4^{x} - 2^{x+2} + c = 0$ die legung lassen die bergen ganzen, die. $0 < c < 4$."
+      "Die Substitution $u = 2^{x}$ formt die Gleichung in $u^{2} - 4u + 5 = 0$ um.",
+      "Die Gleichung $4^{x} - 2^{x+2} + 5 = 0$ besitzt keine reelle Lösung.",
+      "Die Gleichung $4^{x} - 2^{x+2} + 4 = 0$ besitzt genau eine reelle Lösung.",
+      "Die Gleichung $4^{x} - 2^{x+2} - 5 = 0$ besitzt zwei verschiedene reelle Lösungen.",
+      "Die Gleichung $4^{x} - 2^{x+2} + c = 0$ besitzt genau für die Werte $0 < c < 4$ zwei verschiedene reelle Lösungen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nWir der uns für den er die Zeuge der um den autonomen oder $2$ liefert: $$\n4^{x} = (2^{x})^{2}, \\qquad 2^{x+2} = 4 \\cdot 2^{x}\n$$ Einsetzen von $u = 2^{x}$ in die Gleichung vorangegangenen ergibt $$u^{2} - 4u + 5 = 0$$ Es ist auffähigkeit ist, dass dies ist, ist, dass es\n\nDie Aussage ist richtig.",
@@ -3649,7 +3649,7 @@
   },
   "MATH 4.193": {
     "title": "Ein Logarithmus eines quadratischen Ausdrucks",
-    "context": "Die Gleichung $\\log_{3}\\left(x^{2} - 2x + 9\\right) = 2$ Es wird über die realen Zahlen studiert. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Gleichung $\\log_{3}\\left(x^{2} - 2x + 9\\right) = 2$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die is -Ģ.- $x$.",
       "Die Gleichung hat zwei verschiedene reelle Lösungen.",
@@ -4354,10 +4354,10 @@
     "title": "Klausuraufgaben – 37",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein rechteckiges Gartenbett ist $4$ dies die Firma die verwandelte und die Siege der ö ver die i com com????? l?com? en k?????? er????????????????????????? Dadurch? l? nichtnicht Ir??? Protest???????????????? - Ihre?????? s?? ith? s??????? ner Falz? der $96$ m $^{2}$;;;; $8$ m.",
-      "heller $15\\%$ Bleichmittel müssen zu versen $6\\%$. Addieren von $2$.......",
-      "Die Gleichung $2^{x} = 32$ hat die eindeutige reelle Lösung $x = 5$.",
-      "A prize money of $12200$ EUR is split so the $2$ nd placed obtains $80\\%$ der $1$ st, und the $3$ rd obtains $80\\%$ der $2$ nd. Dann the prize für die $2$ nd place is $4000$ EUR.",
+      "Ein rechteckiges Gartenbeet ist $4$ m länger als breit und hat die Fläche $96$ m$^{2}$. Der Landschaftsgärtner schließt daraus, dass die längere Seite $8$ m misst.",
+      "Zwei Liter $15\\%$-Bleichmittel sollen auf $6\\%$ verdünnt werden. Es wird behauptet, dass das Hinzufügen von $2$ Litern Wasser die richtige Konzentration ergibt.",
+      "Die Gleichung $2^{x} = 32$ besitzt die eindeutige reelle Lösung $x = 5$.",
+      "Ein Preisgeld von $12200$ EUR wird so aufgeteilt, dass der Zweitplatzierte $80\\%$ des Erstplatzierten und der Drittplatzierte $80\\%$ des Zweitplatzierten erhält. Dann beträgt der Preis für den zweiten Platz $4000$ EUR.",
       "Die Lösung der Gleichung $2x + 1 = x + 8$ ist eine ungerade ganze Zahl."
     ],
     "tactical_explanations": [
