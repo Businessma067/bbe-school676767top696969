@@ -5,6 +5,7 @@ import {
   CourseLockedView,
   courseLockFeatureForPath,
 } from "@/components/CourseLockedView";
+import { safeInternalReturnPath } from "@/lib/auth-return";
 import {
   accessOwnsProduct,
   fetchAccessState,
@@ -96,6 +97,9 @@ export function RequireFullCourse({
   }
 
   if (status === "login") {
+    const returnTo =
+      safeInternalReturnPath(`${pathname}${typeof window !== "undefined" ? window.location.search : ""}`) ??
+      undefined;
     return (
       <div className="flex min-h-screen items-center justify-center bg-background px-6">
         <div className="max-w-sm text-center">
@@ -109,6 +113,7 @@ export function RequireFullCourse({
           </p>
           <LocalizedLink
             to="/login"
+            search={returnTo ? { returnTo } : undefined}
             className="mt-6 inline-flex rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
           >
             {de ? "Anmelden" : "Sign in"}

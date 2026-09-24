@@ -668,7 +668,7 @@ export function WuViennaOverviewPage() {
           </ul>
           <div className="flex flex-col gap-3 sm:flex-row">
             <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Try free BBE demo prep</BbePrimaryButton>
-            <BbeGhostButton to={BBE_PRACTICE_ROUTES.mockExams}>Take a diagnostic mock</BbeGhostButton>
+            <BbeGhostButton to={BBE_PRACTICE_ROUTES.demoMock}>Take a diagnostic mock</BbeGhostButton>
           </div>
         </BbeSection>
 

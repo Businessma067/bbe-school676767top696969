@@ -482,7 +482,7 @@ export function BbeVsWisoPage() {
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbeTextLink to={BBE_PRACTICE_ROUTES.demo}>free demo course →</BbeTextLink>
-            <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>diagnostic-style mock exam →</BbeTextLink>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.demoMock}>diagnostic-style mock exam →</BbeTextLink>
           </div>
           <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             <img
@@ -551,7 +551,7 @@ export function BbeVsWisoPage() {
           </p>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Start the free demo course</BbePrimaryButton>
-            <BbeGhostButton to={BBE_PRACTICE_ROUTES.mockExams}>Open diagnostic mocks</BbeGhostButton>
+            <BbeGhostButton to={BBE_PRACTICE_ROUTES.demoMock}>Open diagnostic mocks</BbeGhostButton>
           </div>
         </aside>
       </div>

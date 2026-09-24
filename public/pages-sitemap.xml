@@ -210,20 +210,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/full-course"/>
   </url>
   <url>
-    <loc>https://bbe-school.com/products/lite-bbe-course</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/lite-bbe-course"/>
-  </url>
-  <url>
     <loc>https://bbe-school.com/demo-practice</loc>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-practice"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-practice"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/demo-practice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-practice"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/demo-mock</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-mock"/>
   </url>
   <url>
     <loc>https://bbe-school.com/demo-practice/economics</loc>
@@ -446,20 +446,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/full-course"/>
   </url>
   <url>
-    <loc>https://bbe-school.com/de/products/lite-bbe-course</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/lite-bbe-course"/>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/de/demo-practice</loc>
+    <loc>https://bbe-school.com/demo-practice</loc>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-practice"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-practice"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/demo-practice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-practice"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/demo-mock</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-mock"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk</loc>
@@ -670,19 +670,19 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/full-course"/>
   </url>
   <url>
-    <loc>https://bbe-school.com/uk/products/lite-bbe-course</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/lite-bbe-course"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/lite-bbe-course"/>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/uk/demo-practice</loc>
+    <loc>https://bbe-school.com/demo-practice</loc>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-practice"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-practice"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/demo-practice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-practice"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/demo-mock</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-mock"/>
   </url>
 </urlset>

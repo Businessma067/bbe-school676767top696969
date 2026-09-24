@@ -77,7 +77,7 @@ const steps = [
     id: "diagnostic",
     title: "Take a diagnostic test",
     body: "Sit a diagnostic-style set or early mock to see how you handle Economics, English and Mathematics under the real stem style.",
-    link: { to: BBE_PRACTICE_ROUTES.mockExams, label: "Open mock exams / diagnostics →" },
+    link: { to: BBE_PRACTICE_ROUTES.demoMock, label: "Open mock exams / diagnostics →" },
   },
   {
     id: "assess-math",
@@ -107,7 +107,7 @@ export function BbeExamPreparationPage() {
       heroActions={
         <>
           <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Try the Free Demo Course →</BbePrimaryButton>
-          <BbePrimaryButton to={BBE_PRACTICE_ROUTES.mockExams}>Start with a diagnostic</BbePrimaryButton>
+          <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demoMock}>Start with a diagnostic</BbePrimaryButton>
         </>
       }
     >

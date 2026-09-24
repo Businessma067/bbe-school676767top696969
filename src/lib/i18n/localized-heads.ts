@@ -21,6 +21,7 @@ import { Route as WisoFullCourseRoute } from "@/routes/wiso.products.full-course
 import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice.index";
 import { Route as WisoMockExamsRoute } from "@/routes/wiso.mock-exams";
 import { Route as DemoPracticeRoute } from "@/routes/demo-practice.index";
+import { Route as DemoMockRoute } from "@/routes/demo-mock";
 import { Route as AnswerSheetRoute } from "@/routes/features.answer-sheet";
 import { Route as ImportantFeaturesRoute } from "@/routes/important-features";
 import { Route as ParentsRoute } from "@/routes/parents";
@@ -84,6 +85,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/products/demo-practice": () => headFrom(DemoPracticeProductRoute),
   "/products/full-course": () => headFrom(FullCourseRoute),
   "/demo-practice": () => headFrom(DemoPracticeRoute),
+  "/demo-mock": () => headFrom(DemoMockRoute),
   "/login": () => headFrom(LoginRoute),
   "/signup": () => headFrom(SignupRoute),
   "/reset-password": () => headFrom(ResetPasswordRoute),

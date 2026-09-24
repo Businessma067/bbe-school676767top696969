@@ -464,6 +464,7 @@ function TakeExamPage() {
   }, [questions, flaggedSet]);
 
   if (needsAuth) {
+    const returnTo = `/demo-mock`;
     return (
       <div className="flex min-h-screen items-center justify-center bg-background px-6 font-sans text-foreground">
         <div className="max-w-sm text-center">
@@ -477,12 +478,14 @@ function TakeExamPage() {
           <div className="mt-6 flex flex-col items-stretch gap-2 sm:flex-row sm:justify-center">
             <LocalizedLink
               to="/signup"
+              search={{ returnTo }}
               className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground"
             >
               Create a free account
             </LocalizedLink>
             <LocalizedLink
               to="/login"
+              search={{ returnTo }}
               className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold hover:bg-secondary"
             >
               Sign in

@@ -212,7 +212,7 @@ export function BbeEntranceExamHubPage() {
       heroActions={
         <>
           <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Start the Free Demo Course</BbePrimaryButton>
-          <BbeGhostButton to={BBE_PRACTICE_ROUTES.mockExams}>Take a Diagnostic Test</BbeGhostButton>
+          <BbeGhostButton to={BBE_PRACTICE_ROUTES.demoMock}>Take a Diagnostic Test</BbeGhostButton>
         </>
       }
     >
@@ -534,7 +534,7 @@ export function BbeEntranceExamHubPage() {
             <ResourceCard
               icon={<ClipboardList className="h-4 w-4" />}
               title="Mock & diagnostic"
-              to={BBE_PRACTICE_ROUTES.mockExams}
+              to={BBE_PRACTICE_ROUTES.demoMock}
               body="Diagnostic-style sets and full mock exams"
             />
           </div>

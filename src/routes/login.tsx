@@ -7,8 +7,15 @@ import { signInWithGoogle } from "@/lib/google-auth";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
+
+type LoginSearch = { returnTo?: string };
 
 export const Route = createFileRoute("/login")({
+  validateSearch: (search: Record<string, unknown>): LoginSearch => {
+    const returnTo = safeInternalReturnPath(search.returnTo);
+    return returnTo ? { returnTo } : {};
+  },
   component: LoginPage,
   head: () => ({
     links: [...hreflangLinks("/login"), { rel: "canonical", href: "https://bbe-school.com/login" }],
@@ -22,6 +29,8 @@ export const Route = createFileRoute("/login")({
 
 export function LoginPage() {
   const navigate = useLocalizedNavigate();
+  const { returnTo } = Route.useSearch();
+  const afterAuth = returnTo ?? "/dashboard";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -32,24 +41,25 @@ export function LoginPage() {
     let cancelled = false;
     (async () => {
       const auth = await getCurrentAuthState();
-      if (!cancelled && auth) navigate({ to: "/dashboard" });
+      if (!cancelled && auth) navigate({ to: afterAuth });
     })();
     return () => {
       cancelled = true;
     };
-  }, [navigate]);
+  }, [navigate, afterAuth]);
 
   const handleGoogle = async () => {
     setError(null);
     setLoading(true);
-    const result = await signInWithGoogle();
+    if (returnTo) stashAuthReturnTo(returnTo);
+    const result = await signInWithGoogle({ redirectTo: returnTo ?? afterAuth });
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
     if (result.redirected) return;
-    navigate({ to: "/dashboard" });
+    navigate({ to: afterAuth });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -61,7 +71,7 @@ export function LoginPage() {
     try {
       const { error: err } = await supabase.auth.signInWithPassword({ email, password });
       if (err) throw err;
-      navigate({ to: "/dashboard" });
+      navigate({ to: afterAuth });
     } catch (err: any) {
       console.error("Login failed", err);
       setError(friendlyAuthError(err, "Incorrect email or password."));
@@ -91,7 +101,13 @@ export function LoginPage() {
       </div>
       <p className="mt-6 text-center text-sm text-muted-foreground">
         No account?{" "}
-        <LocalizedLink to="/signup" className="font-semibold text-primary hover:underline">Create one</LocalizedLink>
+        <LocalizedLink
+          to="/signup"
+          search={returnTo ? { returnTo } : undefined}
+          className="font-semibold text-primary hover:underline"
+        >
+          Create one
+        </LocalizedLink>
       </p>
     </AuthShell>
   );

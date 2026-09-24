@@ -1,15 +1,24 @@
 import { lovable } from "@/integrations/lovable/index";
 import { supabase } from "@/integrations/supabase/client";
+import { currentReturnPath, safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
 
 /**
  * Google via Lovable broker — same path as before the admin-panel auth changes.
  * Works on Lovable preview/prod (route `/~oauth/initiate`).
  * On localhost the broker is missing; we still call the same API so behaviour matches
  * the old signup/login buttons.
+ *
+ * The broker always returns to `origin`; we stash `redirectTo` (or the current URL)
+ * in sessionStorage so AuthReturnRedirect can send the user back afterward.
  */
-export async function signInWithGoogle(_options?: {
+export async function signInWithGoogle(options?: {
   redirectTo?: string;
 }): Promise<{ error: Error | null; redirected: boolean }> {
+  const returnPath =
+    safeInternalReturnPath(options?.redirectTo) ??
+    safeInternalReturnPath(currentReturnPath());
+  if (returnPath) stashAuthReturnTo(returnPath);
+
   const result = await lovable.auth.signInWithOAuth("google", {
     redirect_uri: window.location.origin,
   });

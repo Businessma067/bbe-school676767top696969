@@ -28,6 +28,7 @@ import { Route as ImportantFeaturesRouteImport } from './routes/important-featur
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
+import { Route as DemoMockRouteImport } from './routes/demo-mock'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ConfirmEmailRouteImport } from './routes/confirm-email'
 import { Route as BbeVsWisoRouteImport } from './routes/bbe-vs-wiso'
@@ -230,6 +231,11 @@ const FlashcardsRoute = FlashcardsRouteImport.update({
 const DemoPracticeRoute = DemoPracticeRouteImport.update({
   id: '/demo-practice',
   path: '/demo-practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemoMockRoute = DemoMockRouteImport.update({
+  id: '/demo-mock',
+  path: '/demo-mock',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardRoute = DashboardRouteImport.update({
@@ -816,6 +822,7 @@ export interface FileRoutesByFullPath {
   '/bbe-vs-wiso': typeof BbeVsWisoRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
+  '/demo-mock': typeof DemoMockRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
@@ -943,6 +950,7 @@ export interface FileRoutesByTo {
   '/bbe-vs-wiso': typeof BbeVsWisoRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
+  '/demo-mock': typeof DemoMockRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
@@ -1054,6 +1062,7 @@ export interface FileRoutesById {
   '/bbe-vs-wiso': typeof BbeVsWisoRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
+  '/demo-mock': typeof DemoMockRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
@@ -1185,6 +1194,7 @@ export interface FileRouteTypes {
     | '/bbe-vs-wiso'
     | '/confirm-email'
     | '/dashboard'
+    | '/demo-mock'
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
@@ -1312,6 +1322,7 @@ export interface FileRouteTypes {
     | '/bbe-vs-wiso'
     | '/confirm-email'
     | '/dashboard'
+    | '/demo-mock'
     | '/forgot-password'
     | '/important-features'
     | '/login'
@@ -1422,6 +1433,7 @@ export interface FileRouteTypes {
     | '/bbe-vs-wiso'
     | '/confirm-email'
     | '/dashboard'
+    | '/demo-mock'
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
@@ -1552,6 +1564,7 @@ export interface RootRouteChildren {
   BbeVsWisoRoute: typeof BbeVsWisoRoute
   ConfirmEmailRoute: typeof ConfirmEmailRoute
   DashboardRoute: typeof DashboardRoute
+  DemoMockRoute: typeof DemoMockRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
   ForgotPasswordRoute: typeof ForgotPasswordRoute
@@ -1719,6 +1732,13 @@ declare module '@tanstack/react-router' {
       path: '/demo-practice'
       fullPath: '/demo-practice'
       preLoaderRoute: typeof DemoPracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demo-mock': {
+      id: '/demo-mock'
+      path: '/demo-mock'
+      fullPath: '/demo-mock'
+      preLoaderRoute: typeof DemoMockRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dashboard': {
@@ -2868,6 +2888,7 @@ const rootRouteChildren: RootRouteChildren = {
   BbeVsWisoRoute: BbeVsWisoRoute,
   ConfirmEmailRoute: ConfirmEmailRoute,
   DashboardRoute: DashboardRoute,
+  DemoMockRoute: DemoMockRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,
   ForgotPasswordRoute: ForgotPasswordRoute,

@@ -59,6 +59,8 @@ export const BBE_PRACTICE_ROUTES = {
   english: "/demo-practice/english",
   flashcards: "/flashcards",
   economicsFlashcards: "/flashcards/$subject",
+  /** Public single free diagnostic mock (sign-in required to start). */
+  demoMock: "/demo-mock",
   mockExams: "/mock-exams",
   products: "/products",
   fullCourse: "/products/full-course",

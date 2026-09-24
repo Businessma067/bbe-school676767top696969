@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import type { NavItem } from "@/config/site-nav";
 import { ExamTrackSwitcher } from "@/components/ExamTrackSwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { safeInternalReturnPath } from "@/lib/auth-return";
 import { getCurrentAuthState, peekAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
 import { NavItemLink } from "./NavItemLink";
@@ -38,6 +40,10 @@ export function MobileNav({
 }: MobileNavProps) {
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
+  const returnTo = useRouterState({
+    select: (s) => safeInternalReturnPath(`${s.location.pathname}${s.location.search}`) ?? undefined,
+  });
+  const authSearch = returnTo ? { returnTo } : undefined;
   const peeked = typeof window !== "undefined" ? peekAuthState() : null;
   const [auth, setAuth] = useState<AuthState | null>(() => peeked?.auth ?? null);
   const [authReady, setAuthReady] = useState(() => Boolean(peeked?.ready || peeked?.auth));
@@ -122,6 +128,7 @@ export function MobileNav({
             <div className="flex flex-col gap-2 border-t border-border px-4 py-4 sm:px-6 lg:hidden" data-no-i18n>
               <LocalizedLink
                 to="/login"
+                search={authSearch}
                 onClick={() => setOpen(false)}
                 className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold hover:bg-secondary"
               >
@@ -129,6 +136,7 @@ export function MobileNav({
               </LocalizedLink>
               <LocalizedLink
                 to="/signup"
+                search={authSearch}
                 onClick={() => setOpen(false)}
                 className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90"
               >

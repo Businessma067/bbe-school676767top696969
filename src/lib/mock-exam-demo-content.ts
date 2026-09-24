@@ -96,8 +96,16 @@ export const MOCK_EXAM_DEMO_ENGLISH_POINTS = [
 
 export const MOCK_EXAM_DEMO_MATH_POINTS = MATH_POINTS_PER_TASK.slice(0, 13);
 
+export const MOCK_EXAM_DEMO_SECTION_COUNTS = {
+  economics: bundle.economics.length,
+  english: bundle.english.tasks.length,
+  math: bundle.math.length,
+} as const;
+
 export const MOCK_EXAM_DEMO_QUESTION_COUNT =
-  bundle.economics.length + bundle.english.tasks.length + bundle.math.length;
+  MOCK_EXAM_DEMO_SECTION_COUNTS.economics +
+  MOCK_EXAM_DEMO_SECTION_COUNTS.english +
+  MOCK_EXAM_DEMO_SECTION_COUNTS.math;
 
 export const MOCK_EXAM_DEMO_POINTS_TOTAL =
   bundle.economics.length * SCORING_CONFIG.economics.defaultMaxPerTask +

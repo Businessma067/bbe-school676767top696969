@@ -8,8 +8,15 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
+
+type SignupSearch = { returnTo?: string };
 
 export const Route = createFileRoute("/signup")({
+  validateSearch: (search: Record<string, unknown>): SignupSearch => {
+    const returnTo = safeInternalReturnPath(search.returnTo);
+    return returnTo ? { returnTo } : {};
+  },
   component: SignupPage,
   head: () => ({
     links: [...hreflangLinks("/signup"), { rel: "canonical", href: "https://bbe-school.com/signup" }],
@@ -23,6 +30,8 @@ export const Route = createFileRoute("/signup")({
 
 export function SignupPage() {
   const navigate = useLocalizedNavigate();
+  const { returnTo } = Route.useSearch();
+  const afterAuth = returnTo ?? "/dashboard";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
@@ -37,26 +46,27 @@ export function SignupPage() {
     let cancelled = false;
     (async () => {
       const auth = await getCurrentAuthState();
-      if (!cancelled && auth) navigate({ to: "/dashboard" });
+      if (!cancelled && auth) navigate({ to: afterAuth });
     })();
     return () => {
       cancelled = true;
     };
-  }, [navigate]);
+  }, [navigate, afterAuth]);
 
   const handleGoogle = async () => {
     setError(null);
     if (!agree)
       return setError("Please accept the Terms of Service and Privacy Policy to continue.");
     setLoading(true);
-    const result = await signInWithGoogle();
+    if (returnTo) stashAuthReturnTo(returnTo);
+    const result = await signInWithGoogle({ redirectTo: returnTo ?? afterAuth });
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
     if (result.redirected) return;
-    navigate({ to: "/dashboard" });
+    navigate({ to: afterAuth });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -104,7 +114,7 @@ export function SignupPage() {
           { user_id: data.session.user.id, display_name: displayName },
           { onConflict: "user_id" },
         );
-        navigate({ to: "/dashboard" });
+        navigate({ to: afterAuth });
         return;
       }
 
@@ -194,7 +204,11 @@ export function SignupPage() {
       </form>
       <p className="mt-6 text-center text-sm text-muted-foreground">
         Already have an account?{" "}
-        <LocalizedLink to="/login" className="font-semibold text-primary hover:underline">
+        <LocalizedLink
+          to="/login"
+          search={returnTo ? { returnTo } : undefined}
+          className="font-semibold text-primary hover:underline"
+        >
           Sign in
         </LocalizedLink>
       </p>
