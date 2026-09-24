@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MathTasksPage } from "@/components/MathTasksPage";
+import { loadDemoMathChapterTasks } from "@/data/math-chapters";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/demo-practice/math")({
@@ -25,5 +26,11 @@ export const Route = createFileRoute("/demo-practice/math")({
 });
 
 function DemoMathTasks() {
-  return <MathTasksPage tier="demo" backTo="/demo-practice" />;
+  return (
+    <MathTasksPage
+      tier="demo"
+      backTo="/demo-practice"
+      loadChapterTasks={loadDemoMathChapterTasks}
+    />
+  );
 }

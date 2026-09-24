@@ -39,22 +39,22 @@
   },
   "MATH 8.03": {
     "title": "Verblassendes Funkfeuer und steigende Zählung an den Skalenenden",
-    "context": "Ein Funkfeuer liefert $S(x)=80x^{-3}$ Millivolt bei $x>0$ Metern; ein Leser erfasst $T(x)=2x^{\\frac{1}{2}}$ Tausend Pakete über $x>0$ Minuten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Funkfeuer liefert $S(x)=80x^{-3}$ Millivolt bei $x>0$ Metern; ein Leser erfasst $T(x)=2x^{\\\\frac{1}{2}}$ Tausend Pakete über $x>0$ Minuten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Für $x\\to\\infty$ gilt $S(x)\\to 0$. Die Aussage ist zu prüfen.",
-      "Für $x\\to 0^{+}$ wächst $S(x)$ unbegrenzt.",
-      "Für $x\\to\\infty$ nähert sich $T(x)$ der Obergrenze $2$.",
+      "Für $x\\\\to\\\\infty$ gilt $S(x)\\\\to 0$.",
+      "Für $x\\\\to 0^{+}$ wächst $S(x)$ unbegrenzt.",
+      "Für $x\\\\to\\\\infty$ nähert sich $T(x)$ der Obergrenze $2$.",
       "$S(2)=10$ Millivolt.",
-      "Für $x\\to 0^{+}$ gilt $T(x)\\to 0$. Die Aussage ist zu prüfen."
+      "Für $x\\\\to 0^{+}$ gilt $T(x)\\\\to 0$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nEin negativer Exponent setzt die Entfernung in den Nenner:\n\n$$S(x)=\\frac{80}{x^{3}}$$\n\nFür\n\n$$x\\to\\infty$$\n\nwächst dieser Nenner unbegrenzt, während der Zähler bei $80$ bleibt, also $S(x)\\to 0$.\n\nDie Signalstärke strebt gegen $0$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nNahe am Mast macht ein kleines positives $x$ den Nenner $x^{3}$ beliebig klein, sodass $\\frac{80}{x^{3}}$ beliebig groß wird.\n\nDie Stärke wächst unbegrenzt für\n\n$$x\\to 0^{+}$$\n\n.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDie $2$ in $T(x)=2x^{\\frac{1}{2}}$ multipliziert die Potenz; sie deckelt die Ausgabe nicht. Nach vier Minuten:\n\n$$T(4)=2\\cdot 4^{\\frac{1}{2}}$$\n\n$$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$4^{\\frac{1}{2}}=2$$\n\n$$2^{1}=2$$\n\n$$T(4)=2\\cdot 2$$\n\n$$T(4)=4$$\n\n$$T(4)=8^{\\frac{1}{2}}$$\n\nBereits $4>2$, und ein positiver Exponent steigt weiter. Es gibt keine endliche Obergrenze.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nKubiere die Entfernung im Nenner und teile dann:\n\n$$S(2)=\\frac{80}{2^{3}}$$\n\n$$S(2)=\\frac{80}{8}$$\n\n$$S(2)=10$$\n\nDie Stärke beträgt $10$ Millivolt.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin positiver Exponent hält\n\n$$T(x)=2x^{\\frac{1}{2}}$$\n\nim Zähler. Die Quadratwurzel einer schrumpfenden positiven Eingabe schrumpft ebenfalls, also\n\n$$T(x)\\to 0$$\n\nfür\n\n$$x\\to 0^{+}$$\n\n.\n\nDie Zählung strebt gegen $0$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nEin negativer Exponent setzt die Entfernung in den Nenner:\n\n$$S(x)=\\\\frac{80}{x^{3}}$$\n\nFür\n\n$$x\\\\to\\\\infty$$\n\nwächst dieser Nenner unbegrenzt, während der Zähler bei $80$ bleibt, also $S(x)\\\\to 0$.\n\nDie Signalstärke strebt gegen $0$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nNahe am Mast macht ein kleines positives $x$ den Nenner $x^{3}$ beliebig klein, sodass $\\\\frac{80}{x^{3}}$ beliebig groß wird.\n\nDie Stärke wächst unbegrenzt für\n\n$$x\\\\to 0^{+}$$\n\n.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDie $2$ in $T(x)=2x^{\\\\frac{1}{2}}$ multipliziert die Potenz; sie deckelt die Ausgabe nicht. Nach vier Minuten:\n\n$$T(4)=2\\\\cdot 4^{\\\\frac{1}{2}}$$\n\n$$4^{\\\\frac{1}{2}}=\\\\bigl(4^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$4^{\\\\frac{1}{2}}=2$$\n\n$$2^{1}=2$$\n\n$$T(4)=2\\\\cdot 2$$\n\n$$T(4)=4$$\n\n$$T(4)=8^{\\\\frac{1}{2}}$$\n\nBereits $4>2$, und ein positiver Exponent steigt weiter. Es gibt keine endliche Obergrenze.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nKubiere die Entfernung im Nenner und teile dann:\n\n$$S(2)=\\\\frac{80}{2^{3}}$$\n\n$$S(2)=\\\\frac{80}{8}$$\n\n$$S(2)=10$$\n\nDie Stärke beträgt $10$ Millivolt.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin positiver Exponent hält\n\n$$T(x)=2x^{\\\\frac{1}{2}}$$\n\nim Zähler. Die Quadratwurzel einer schrumpfenden positiven Eingabe schrumpft ebenfalls, also\n\n$$T(x)\\\\to 0$$\n\nfür\n\n$$x\\\\to 0^{+}$$\n\n.\n\nDie Zählung strebt gegen $0$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Das Funkfeuer gehorcht $S(x)=80x^{-3}$ Millivolt und der Leser gehorcht $T(x)=2x^{\\frac{1}{2}}$ Tausend Pakete, beide auf $x>0$.\n\nEin negativer Exponent ist eine Kehrwertpotenz, also\n\n$$S(x)=\\frac{80}{x^{3}}$$\n\nEin positiver Exponent hält die Variable im Zähler:\n\n$$T(x)=2x^{\\frac{1}{2}}$$\n\nDie beiden Extreme werden allein durch diese Exponenten bestimmt."
+    "solution_overview": "Das Funkfeuer gehorcht $S(x)=80x^{-3}$ Millivolt und der Leser gehorcht $T(x)=2x^{\\\\frac{1}{2}}$ Tausend Pakete, beide auf $x>0$.\n\nEin negativer Exponent ist eine Kehrwertpotenz, also\n\n$$S(x)=\\\\frac{80}{x^{3}}$$\n\nEin positiver Exponent hält die Variable im Zähler:\n\n$$T(x)=2x^{\\\\frac{1}{2}}$$\n\nDie beiden Extreme werden allein durch diese Exponenten bestimmt."
   },
   "MATH 8.04": {
     "title": "Gemeinkosten und Nachbearbeitungsstunden auf einem Auftragsbuch",
@@ -115,22 +115,22 @@
   },
   "MATH 8.07": {
     "title": "Drei Wurzeltransformationen auf einem Kalibrierblatt",
-    "context": "Ein Kalibrierblatt wendet $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ and $N(x)=x^{-\\frac{1}{2}}$ auf einen rohen Sensorwert an $x$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Kalibrierblatt wendet $L(x)=x^{\\\\frac{1}{2}}$, $M(x)=x^{\\\\frac{1}{3}}$ und $N(x)=x^{-\\\\frac{1}{2}}$ auf einen rohen Sensorwert $x$ an. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$L(0)=0$.",
-      "$L(-4)$ has a reeller Wert.",
+      "$L(-4)$ hat einen reellen Wert.",
       "$M(-8)=-2$.",
-      "$N(0)$ is defined. Die Aussage ist zu prüfen.",
+      "$N(0)$ ist definiert.",
       "$N(4)=2$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nThe exponent\n\n$$\\frac{1}{2}$$\n\n is a square root, und\n\n$$0^{2}=0$$\n\n$$L(0)=0^{\\frac{1}{2}}$$\n\n$$0^{\\frac{1}{2}}=\\bigl(0^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$0^{\\frac{1}{2}}=0$$\n\n$$0^{1}=0$$\n\n$$L(0)=0$$\n\n$$L(0)=\\sqrt{0}$$\n\nThe transform returns $0$ at a raw reading of zero.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nAn gerade Wurzel refuses a negativ raw reading. No reelle Zahl squares to a negativ:\n\n$$L(-4)=\\sqrt{-4}$$\n\nThere is no reeller Wert at\n\n$$x=-4.$$\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nThe exponent\n\n$$\\frac{1}{3}$$\n\n is an odd root, so a negative reading is allowed. Cubing gives the inverse:\n\n$$(-2)^{3}=-8$$\n\n$$M(-8)=(-8)^{\\frac{1}{3}}$$\n\n$$M(-8)=-2$$\n\nThe cube root of $-8$ ist $-2$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nA negative exponent is a reciprocal:\n\n$$N(x)=\\frac{1}{\\sqrt{x}}$$\n\nAt\n\n$$x=0$$\n\n the denominator is\n\n$$\\sqrt{0}=0,$$\n\n und division by zero is undefined. The transform has no value at\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Rechnung widerspricht der Behauptung.\n\n$$N(4)=4^{-\\frac{1}{2}}$$\n\n$$N(4)=\\frac{1}{\\sqrt{4}}$$\n\n$$N(4)=\\frac{1}{2}$$\n\nDer behauptete Wert $2$ ist $\\sqrt{4}$ $\\frac{1}{2}$ , not $2$ .\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDer Exponent\n\n$$\\\\frac{1}{2}$$\n\nist eine Quadratwurzel, und\n\n$$0^{2}=0$$\n\n$$L(0)=0^{\\\\frac{1}{2}}$$\n\n$$0^{\\\\frac{1}{2}}=\\\\bigl(0^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$0^{\\\\frac{1}{2}}=0$$\n\n$$0^{1}=0$$\n\n$$L(0)=0$$\n\n$$L(0)=\\\\sqrt{0}$$\n\nDie Transformation liefert $0$ bei einem rohen Messwert null.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nEine gerade Wurzel verweigert einen negativen Rohwert. Keine reelle Zahl quadriert sich zu einem Negativen:\n\n$$L(-4)=\\\\sqrt{-4}$$\n\nEs gibt keinen reellen Wert bei\n\n$$x=-4.$$\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDer Exponent\n\n$$\\\\frac{1}{3}$$\n\nist eine ungerade Wurzel, daher ist ein negativer Messwert erlaubt. Kubieren liefert die Umkehrung:\n\n$$(-2)^{3}=-8$$\n\n$$M(-8)=(-8)^{\\\\frac{1}{3}}$$\n\n$$M(-8)=-2$$\n\nDie Kubikwurzel von $-8$ ist $-2$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nEin negativer Exponent ist ein Kehrwert:\n\n$$N(x)=\\\\frac{1}{\\\\sqrt{x}}$$\n\nBei\n\n$$x=0$$\n\nist der Nenner\n\n$$\\\\sqrt{0}=0,$$\n\nund Division durch null ist undefiniert. Die Transformation hat dort keinen Wert.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin negativer Exponent setzt die Wurzel in den Nenner:\n\n$$N(4)=4^{-\\\\frac{1}{2}}$$\n\n$$N(4)=\\\\frac{1}{\\\\sqrt{4}}$$\n\n$$N(4)=\\\\frac{1}{2}$$\n\nDie behauptete $2$ ist $\\\\sqrt{4}$, was das Minus im Exponenten weglässt. Die Transformation liefert $\\\\frac{1}{2}$, nicht $2$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "A calibration sheet applies $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ und $N(x)=x^{-\\frac{1}{2}}$ to a raw sensor reading $x$.\n\nAll three transforms are power functions with coefficient $1$. An even root needs a nonnegative reading, while an odd root accepts every real reading. A negative exponent moves the root into a denominator:\n\n$$N(x)=\\frac{1}{\\sqrt{x}}$$\n\nso $L$ is defined for $x\\ge 0$, $M$ is defined for all real $x$, und $N$ needs $x>0$."
+    "solution_overview": "Ein Kalibrierblatt wendet $L(x)=x^{\\\\frac{1}{2}}$, $M(x)=x^{\\\\frac{1}{3}}$ und $N(x)=x^{-\\\\frac{1}{2}}$ auf einen rohen Sensorwert $x$ an.\n\nAlle drei Transformationen sind Potenzfunktionen mit Koeffizient $1$. Eine gerade Wurzel braucht einen nichtnegativen Messwert, während eine ungerade Wurzel jeden reellen Messwert akzeptiert. Ein negativer Exponent verschiebt die Wurzel in einen Nenner:\n\n$$N(x)=\\\\frac{1}{\\\\sqrt{x}}$$\n\nalso ist $L$ definiert für $x\\\\ge 0$, $M$ für alle reellen $x$, und $N$ braucht $x>0$."
   },
   "MATH 8.08": {
     "title": "Druckabfall einer Filterbank, der nie null erreicht",
@@ -175,19 +175,19 @@
     "context": "Ein Bremsenergie-Index lautet $E(v)=0.5v^{2}$ Punkte für eine Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Bei $v=10$ zeigt der Index $50$.",
-      "Erhöht man $v$ von $10$ to $20$ multipliziert den Index mit $4$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "Erhöht man $v$ von $10$ auf $20$, so multipliziert sich der Index mit $4$.",
       "Bei $v=20$ zeigt der Index $200$.",
-      "$v>0$ .",
-      "Erhöht man $v$ um $10\\%$ so steigt der Index um $10\\%$. Die Aussage ist zu prüfen."
+      "Der Index ist für $v>0$ nie negativ.",
+      "Erhöht man $v$ um $10\\\\%$, so steigt der Index um $10\\\\%$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$E(10)=0.5\\cdot 10^{2}$$\n\n$$10^{2}=100$$\n\n$$E(10)=0.5\\cdot 100$$\n\n$$E(10)=0.500$$\n\n$$E(10)=50$$\n\nDer Index bei\n\n$$v=10$$\n\n ist $50$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Erhöhung der Geschwindigkeit von $10$ auf $20$ ist der Multiplikator $k=2$. Der Koeffizient hebt sich im Verhältnis auf: $$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$ $$20^{2}=400$$ $$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}$$ $$\\frac{E(20)}{E(10)}=\\frac{0.2000}{0.5\\cdot 100}$$ $$\\frac{E(20)}{E(10)}=\\frac{0.2000}{0.500}$$ $$\\frac{E(20)}{E(10)}=2^{2}$$ $$\\frac{E(20)}{E(10)}=4$$ Die Verdopplung der Geschwindigkeit multipliziert den Index mit $4$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nBei der höheren Standardgeschwindigkeit zuerst quadrieren:\n\n$$E(20)=0.5\\cdot 20^{2}$$\n\n$$20^{2}=400$$\n\n$$E(20)=0.5\\cdot 400$$\n\n$$E(20)=0.2000$$\n\n$$E(20)=200$$\n\nDer Index zeigt $200$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\n$0.5$ $v>0$ .\n\nDer Index ist nie negativ.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEine zehnprozentige Überhöhung ist der Geschwindigkeitsfaktor\n\n$$k=1.1,$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$\n\n$$1^{2}=1$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.1$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.21$$\n\nDer Index wird multipliziert mit $1.21$, einem Anstieg um einundzwanzig Prozent statt um zehn.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nQuadriere die Geschwindigkeit und wende dann den Koeffizienten an:\n\n$$E(10)=0.5\\\\cdot 10^{2}$$\n\n$$10^{2}=100$$\n\n$$E(10)=0.5\\\\cdot 100$$\n\n$$E(10)=0.500$$\n\n$$E(10)=50$$\n\nDer Index bei\n\n$$v=10$$\n\nist $50$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Erhöhung der Geschwindigkeit von $10$ auf $20$ ist der Multiplikator $k=2$. Der Koeffizient fällt im Verhältnis weg:\n\n$$\\\\frac{E(20)}{E(10)}=\\\\frac{0.5\\\\cdot 20^{2}}{0.5\\\\cdot 10^{2}}$$\n\n$$20^{2}=400$$\n\n$$\\\\frac{E(20)}{E(10)}=\\\\frac{0.5\\\\cdot 400}{0.5\\\\cdot 100}$$\n\n$$\\\\frac{E(20)}{E(10)}=\\\\frac{0.2000}{0.5\\\\cdot 100}$$\n\n$$\\\\frac{E(20)}{E(10)}=\\\\frac{0.2000}{0.500}$$\n\n$$\\\\frac{E(20)}{E(10)}=2^{2}$$\n\n$$\\\\frac{E(20)}{E(10)}=4$$\n\nVerdopplung der Geschwindigkeit multipliziert den Index mit $4$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nBei der höheren Standardgeschwindigkeit zuerst quadrieren:\n\n$$E(20)=0.5\\\\cdot 20^{2}$$\n\n$$20^{2}=400$$\n\n$$E(20)=0.5\\\\cdot 400$$\n\n$$E(20)=0.2000$$\n\n$$E(20)=200$$\n\nDer Index zeigt $200$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDas Quadrat einer von null verschiedenen reellen Zahl ist positiv, und der Koeffizient $0.5$ ist positiv. Ihr Produkt ist daher für jedes $v>0$ positiv.\n\nDer Index ist nie negativ.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEine zehnprozentige Überhöhung ist der Geschwindigkeitsfaktor\n\n$$k=1.1,$$ und der Exponent wirkt auf den gesamten Faktor:\n\n$$\\\\frac{E(1.1v)}{E(v)}=1.1^{2}$$\n\n$$1^{2}=1$$\n\n$$\\\\frac{E(1.1v)}{E(v)}=1.1$$\n\n$$\\\\frac{E(1.1v)}{E(v)}=1.21$$\n\nDer Index wird mit $1.21$ multipliziert, also ein Anstieg um einundzwanzig Prozent statt um zehn.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Ein Bremsenergie-Index lautet $E(v)=0.5v^{2}$ Punkte für eine Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde.\n\nDie Regel ist eine Potenzfunktion mit Koeffizient $0.5$ und Exponent $2$. Ein Niveau quadriert die Geschwindigkeit und halbiert sie dann. Ein Geschwindigkeitsfaktor $k$ multipliziert den Index mit $k^{2}$, weil der Koeffizient wegfällt:\n\n$$\\frac{E(kv)}{E(v)}=k^{2}$$"
+    "solution_overview": "Ein Bremsenergie-Index lautet $E(v)=0.5v^{2}$ Punkte für eine Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde.\n\nDie Regel ist eine Potenzfunktion mit Koeffizient $0.5$ und Exponent $2$. Ein Niveau quadriert die Geschwindigkeit und halbiert sie anschließend. Ein Geschwindigkeitsfaktor $k$ multipliziert den Index mit $k^{2}$, weil der Koeffizient wegfällt:\n\n$$\\\\frac{E(kv)}{E(v)}=k^{2}$$"
   },
   "MATH 8.11": {
     "title": "Marinas Gemüsebeet",
@@ -267,22 +267,22 @@
   },
   "MATH 8.15": {
     "title": "Eine Raffinerie gegen ein lineares Angebot",
-    "context": "Eine Raffinerie wandelt Erz der Reinheit $u>0$ in Metall $M(u)=A u^{\\frac{3}{2}}$ Tonnen um. Eine Erhöhung der Reinheit von $9$ auf $16$ steigerte die Metallausbeute um $296$ Tonnen. Dieses Metall wird anschließend in die Legierungsfestigkeit $S=\\frac{1}{2}M^{\\frac{2}{3}}$ umgerechnet. Ein rivalisierendes Werk gibt die Festigkeit direkt als $1.8u+5$ an. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Raffinerie wandelt Erz der Reinheit $u>0$ in Metall $M(u)=A u^{\\\\frac{3}{2}}$ Tonnen um. Die Erhöhung der Reinheit von $9$ auf $16$ steigerte die Metallausbeute um $296$ Tonnen. Dieses Metall wird anschließend in die Legierungsfestigkeit $S=\\\\frac{1}{2}M^{\\\\frac{2}{3}}$ umgerechnet. Ein rivalisierendes Werk bietet die Festigkeit direkt als $1.8u+5$ an. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "The two quotes never meet.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "On ore of purity $36$ $70$ . Die Aussage ist zu prüfen.",
-      "On ore of purity $9$ $20$ . Die Aussage ist zu prüfen."
+      "Nach beiden Stufen ist die Festigkeit der Raffinerie proportional zur Reinheit.",
+      "Die beiden Angebote treffen sich nie.",
+      "Das Angebot des Rivalen ist eine Potenzfunktion der Reinheit.",
+      "Bei Erz der Reinheit $36$ liegt die Festigkeit der Raffinerie über $70$.",
+      "Bei Erz der Reinheit $9$ liegt die Festigkeit der Raffinerie bereits über $20$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Übersicht rekonstruiert\n\n$$S(u)=2u$$\n\nThe inner exponent\n\n$$\\frac{3}{2}$$\n\n und the outer exponent\n\n$$\\frac{2}{3}$$\n\n multiply to $1$, so strength is a linear monomial in purity.\n\nThat is proportionality.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nVergleichen Sie den rekonstruierten Wert mit dem im Behauptung genannten Wert.\n\nDie Übersicht rekonstruiert $$S(u)=2u$$ Setze das dem Angebot des Rivalen gleich: $$2u=1.8u+5$$ $$0.2u=5$$ $$u=25$$ The quotes meet at purity $25$.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\n$1.8u+5$ $5$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nVerwende die rekonstruierten Konstanten; baue die Kalibrierung nicht neu auf.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nAt purity $36$:\n\n$$S(36)=2\\cdot 36$$\n\n$$S(36)=72$$\n\nSeventy-two liegt über $70$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nBilde den Vergleich so, dass nur die zusätzliche Rechnung dieser Behauptung übrig bleibt.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nAt purity $9$:\n\n$$S(9)=2\\cdot 9$$\n\n$$S(9)=18$$\n\nEighteen liegt nicht über $20$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nDer innere Exponent\n\n$$\\\\frac{3}{2}$$\n\n und der äußere Exponent\n\n$$\\\\frac{2}{3}$$\n\n multiplizieren sich zu $1$, also ist die Festigkeit ein lineares Monom in der Reinheit.\n\nDas ist Proportionalität.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nVergleiche den rekonstruierten Wert mit dem in der Behauptung genannten.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\n Setze das dem Rivalenangebot gleich:\n\n$$2u=1.8u+5$$\n\n$$0.2u=5$$\n\n$$u=25$$\n\nDie Angebote treffen sich bei Reinheit $25$.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDas Rivalenangebot lautet $1.8u+5$. Bei Reinheit null bleibt der Rivale bei $5$, also bleibt eine Konstante übrig. Eine Potenz der Reinheit kann keinen Achsenabschnitt tragen.\n\nDas Rivalenangebot ist affin, keine Potenzfunktion.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNutze die rekonstruierten Konstanten; kalibriere nicht neu.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nBei Reinheit $36$:\n\n$$S(36)=2\\\\cdot 36$$\n\n$$S(36)=72$$\n\nZweiundsiebzig liegt über $70$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nFormuliere den Vergleich so, dass nur die zusätzliche Rechnung dieser Behauptung übrig bleibt.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nBei Reinheit $9$:\n\n$$S(9)=2\\\\cdot 9$$\n\n$$S(9)=18$$\n\nAchtzehn liegt nicht über $20$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Metal follows $M(u)=A u^{\\frac{3}{2}}$, und raising purity from $9$ to $16$ added $296$ tonnes. Strength ist $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The rival quotes $1.8u+5$.\n\nThe audited gain is a difference of two metal outputs:\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\nComposing the strength stage with $M(u)=8u^{\\frac{3}{2}}$ multiplies the exponents $\\frac{3}{2}$ und $\\frac{2}{3}$ to $1$:\n\n$$S(u)=2u$$"
+    "solution_overview": "Das Metall folgt $M(u)=A u^{\\\\frac{3}{2}}$, und die Erhöhung der Reinheit von $9$ auf $16$ brachte $296$ Tonnen zusätzlich. Die Festigkeit ist $S=\\\\frac{1}{2}M^{\\\\frac{2}{3}}$. Der Rivale bietet $1.8u+5$ an.\n\nDer geprüfte Zuwachs ist die Differenz zweier Metallausbeuten:\n\n$$A\\\\bigl(16^{\\\\frac{3}{2}}-9^{\\\\frac{3}{2}}\\\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\nDie Zusammensetzung der Festigkeitsstufe mit $M(u)=8u^{\\\\frac{3}{2}}$ multipliziert die Exponenten $\\\\frac{3}{2}$ und $\\\\frac{2}{3}$ zu $1$:\n\n$$S(u)=2u$$"
   },
   "MATH 8.16": {
     "title": "Server-Spitzenlast zwischen Verdopplungsregel und Alarm",
@@ -362,41 +362,41 @@
   },
   "MATH 8.20": {
     "title": "Antwortzeit aus einem Server-Upgrade rekonstruiert",
-    "context": "Die mediane Antwortzeit eines Dienstes folgt $W(k)=A k^{-\\frac{3}{2}}$ Millisekunden, wobei $k>0$ die Anzahl der Server ist. Das Upgrade-Bericht nennt $A$ nicht: es hält nur fest, dass der Wechsel von $4$ auf $9$ Server die mediane Antwortzeit um genau $19$ ms verkürzt hat. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die mediane Antwortzeit eines Dienstes folgt $W(k)=A k^{-\\\\frac{3}{2}}$ Millisekunden, wobei $k>0$ die Anzahl der Server ist. Das Upgrade-Protokoll nennt $A$ nicht: Es hält nur fest, dass der Wechsel von $4$ auf $9$ Server die mediane Antwortzeit um genau $19$ ms verkürzt hat. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An extra server cuts the median wait by more at $4$ servers than at $9$.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "With $9$ $10$ milliseconds. Die Aussage ist zu prüfen.",
-      "With $4$ $25$ milliseconds. Die Aussage ist zu prüfen."
+      "Ein zusätzlicher Server verkürzt die mediane Wartezeit bei $4$ Servern stärker als bei $9$.",
+      "Die für eine gegebene Wartezeit nötige Serveranzahl ist selbst eine Potenz dieser Wartezeit.",
+      "Verdoppelt man die Serveranzahl, so halbiert sich die mediane Wartezeit.",
+      "Mit $9$ Servern liegt die mediane Wartezeit über $10$ Millisekunden.",
+      "Mit $4$ Servern liegt die mediane Wartezeit bereits über $25$ Millisekunden."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Übersicht rekonstruiert\n\n$$W(k)=216 k^{-\\frac{3}{2}}$$\n\nDie Steigung ist\n\n$$W'(k)=-324 k^{-\\frac{5}{2}}$$\n\nDie Größe der Verkürzung fällt, wenn $k$ steigt. An den beiden genannten Personalstärken:\n\n$$\n\\begin{aligned}\n|W'(4)|=\\frac{324}{4^{\\frac{5}{2}}} \\\\\n|W'(4)|=\\frac{324}{32} \\\\\n|W'(4)|=10.125 \\\\\n|W'(9)|=\\frac{324}{9^{\\frac{5}{2}}} \\\\\n|W'(9)|=\\frac{324}{243} \\\\\n|W'(9)|=\\frac{4}{3}\n\\end{aligned}\n$$\n\nEin zusätzlicher Server verkürzt die Wartezeit bei $4$ Servern stärker als bei $9$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Rechnung bestätigt die Behauptung.\n\n$$W=216 k^{-\\frac{3}{2}}$$\n\nwe recover\n\n$$k=\\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDie Verdopplung der Serveranzahl ist der Multiplikator $$k=2$$, und der Exponent $$-\\frac{3}{2}$$ wirkt auf diesen ganzen Faktor ein: $$\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}$$ $$\\frac{W(2k)}{W(k)}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$ Wait fällt auf etwa $0.354$ seines früheren Wertes, nicht auf $$\\frac{1}{2}$$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nDie Übersicht liefert\n\n$$W(k)=216 k^{-\\frac{3}{2}}$$\n\n At nine servers:\n\n$$W(9)=\\frac{216}{9^{\\frac{3}{2}}}$$\n\n$$W(9)=\\frac{216}{27}$$\n\n$$W(9)=8$$\n\nEight milliseconds is not more than $10$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDie Übersicht liefert\n\n$$W(k)=216 k^{-\\frac{3}{2}}$$\n\n At four servers:\n\n$$W(4)=\\frac{216}{4^{\\frac{3}{2}}}$$\n\n$$W(4)=\\frac{216}{8}$$\n\n$$W(4)=27$$\n\nTwenty-seven liegt über $25$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDie Übersicht liefert\n\n$$W(k)=216 k^{-\\\\frac{3}{2}}$$\n\n Die Ableitung ist\n\n$$W'(k)=-324 k^{-\\\\frac{5}{2}}$$\n\nDie Größe der Verkürzung fällt mit steigendem $k$. An den beiden genannten Besetzungen:\n\n$$|W'(4)|=\\\\frac{324}{4^{\\\\frac{5}{2}}}$$\n\n$$|W'(4)|=\\\\frac{324}{32}$$\n\n$$|W'(4)|=10.125$$\n\n$$|W'(9)|=\\\\frac{324}{9^{\\\\frac{5}{2}}}$$\n\n$$|W'(9)|=\\\\frac{324}{243}$$\n\n$$|W'(9)|=\\\\frac{4}{3}$$\n\nEin zusätzlicher Server verkürzt die Wartezeit bei $4$ Servern stärker als bei $9$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nEine von null verschiedene Potenz invertiert zu einer anderen Potenz. Aus\n\n$$W=216 k^{-\\\\frac{3}{2}}$$\n\nfolgt\n\n$$k=\\\\left(\\\\frac{216}{W}\\\\right)^{\\\\frac{2}{3}}$$\n\nDie Serveranzahl ist ein Monom in der Wartezeit.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nVerdoppelung der Serveranzahl ist der Multiplikator\n\n$$k=2$$\n\n, und der Exponent\n\n$$-\\\\frac{3}{2}$$\n\n wirkt auf diesen ganzen Faktor:\n\n$$\\\\frac{W(2k)}{W(k)}=2^{-\\\\frac{3}{2}}$$\n\n$$\\\\frac{W(2k)}{W(k)}=\\\\frac{1}{2\\\\sqrt{2}}\\\\approx 0.354$$\n\nDie Wartezeit fällt auf etwa $0.354$ ihres früheren Werts, nicht auf\n\n$$\\\\frac{1}{2}$$\n\n.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Übersicht liefert\n\n$$W(k)=216 k^{-\\\\frac{3}{2}}$$\n\n Bei neun Servern:\n\n$$W(9)=\\\\frac{216}{9^{\\\\frac{3}{2}}}$$\n\n$$W(9)=\\\\frac{216}{27}$$\n\n$$W(9)=8$$\n\nAcht Millisekunden sind nicht mehr als $10$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie Übersicht liefert\n\n$$W(k)=216 k^{-\\\\frac{3}{2}}$$\n\n Bei vier Servern:\n\n$$W(4)=\\\\frac{216}{4^{\\\\frac{3}{2}}}$$\n\n$$W(4)=\\\\frac{216}{8}$$\n\n$$W(4)=27$$\n\nSiebenundzwanzig liegt über $25$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Die mittlere Antwortzeit folgt $W(k)=A k^{-\\frac{3}{2}}$ Millisekunden für $k>0$ -Server. Der Wechsel von $4$ -Servern zu $9$ -Servern verkürzt das Warten um $19$ ms.\n\nDer Exponent wird angegeben, so dass der aufgezeichnete Schnitt, eine Differenz von zwei Ebenen, $A$ wiederherstellt: $$A\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19$$ $$A\\left(\\frac{1}{8}-\\frac{1}{27}\\right)=19$$ $$A\\cdot\\frac{19}{216}=19$$ $$A=216$$ Die rekonstruierte Wartezeit ist $W(k)=216 k^{-\\frac{3}{2}}$."
+    "solution_overview": "Die mediane Antwortzeit folgt $W(k)=A k^{-\\\\frac{3}{2}}$ Millisekunden für $k>0$ Server. Der Wechsel von $4$ auf $9$ Server verkürzte die Wartezeit um $19$ ms.\n\nDer Exponent ist gegeben, daher rekonstruiert die erfasste Verkürzung — eine Differenz zweier Niveaus — den Wert $A$:\n\n$$A\\\\bigl(4^{-\\\\frac{3}{2}}-9^{-\\\\frac{3}{2}}\\\\bigr)=19$$\n\n$$A\\\\left(\\\\frac{1}{8}-\\\\frac{1}{27}\\\\right)=19$$\n\n$$A\\\\cdot\\\\frac{19}{216}=19$$\n\n$$A=216$$\n\nDie rekonstruierte Wartezeit lautet $W(k)=216 k^{-\\\\frac{3}{2}}$."
   },
   "MATH 8.21": {
-    "title": "Isoelastische Abonnement-Nachfrage und ihr Umsatz",
+    "title": "Isoelastische Abonnementnachfrage und ihr Umsatz",
     "context": "Monatliche Abonnements folgen $q(p)=A p^{-2}$, wobei $p>0$ der Preis in Euro ist. Bei $5$ Euro verkauft der Dienst $400$ Abonnements. Der Umsatz ist $R=pq$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "An extra euro of price cuts more subscriptions at five Euro than at twenty. Die Aussage ist zu prüfen.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Doubling the price halves demand.",
-      "Bei a price of $16$ Euro, monthly revenue is already under $700$. Die Aussage ist zu prüfen.",
-      "At twenty euros the curve sells fewer than $30$ subscriptions."
+      "Ein Euro mehr im Preis reduziert die Abonnements bei fünf Euro stärker als bei zwanzig.",
+      "Der für eine gegebene Abonnementzahl nötige Preis ist selbst eine Potenzfunktion dieser Zahl.",
+      "Verdoppelt man den Preis, so halbiert sich die Nachfrage.",
+      "Bei einem Preis von $16$ Euro liegt der Monatsumsatz bereits unter $700$.",
+      "Bei zwanzig Euro verkauft die Kurve weniger als $30$ Abonnements."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nEin zusätzlicher Euro senkt die Nachfrage zum Kurs des Derivats der wiedergewonnenen Kurve: $$q'(p)=-20000 p^{-3}$$ Die Größe dieses Schnitts ist $$|q'(p)|=20000 p^{-3}$$. At the two named prices: $$|q'(5)|=\\frac{20000}{125}$$ $$|q'(5)|=160$$ $$|q'(20)|=\\frac{20000}{8000}$$ $$|q'(20)|=2.5$$ Die Behauptung erfordert a larger cut at five euros than at twenty. Wir haben $160>2.5$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p^{2}=\\frac{10000}{q}$$\n\n$$p=100 q^{-\\frac{1}{2}}$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nVerdopplung des Preises ist die Skala $$k=2$$ auf Exponent $-2$. Der Koeffizient hebt auf: $$\\frac{q(2p)}{q(p)}=2^{-2}$$ $$\\frac{q(2p)}{q(p)}=\\frac{1}{4}$$ At the recorded pair, $$q(10)=\\frac{10000}{100}$$ $$q(10)=100\n$$ $$q(5)=400$$ und $100$ ist ein Viertel von $400$, nicht die Hälfte. Der Behauptung ist, dass sich die Nachfrage halbiert.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$R(p)=10000 p^{-1}$$\n\nAt $16$ euros:\n\n$$R(16)=\\frac{10000}{16}$$\n\n$$R(16)=625$$\n\nDie Behauptung vergleicht dies mit $700$. Vergleiche mit der Behauptung:\n\n$$625<700.$$\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$q(p)=10000 p^{-2}$$\n\nAt twenty euros:\n\n$$q(20)=\\frac{10000}{400}$$\n\n$$q(20)=25$$\n\nDie Behauptung vergleicht dies mit $30$. Vergleiche mit der Behauptung:\n\n$$25<30.$$\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nEin zusätzlicher Euro reduziert die Nachfrage mit der Ableitung der rekonstruierten Kurve:\n\n$$q'(p)=-20000 p^{-3}$$\n\nDie Größe dieser Reduktion ist\n\n$$|q'(p)|=20000 p^{-3}$$\n\n. An den beiden genannten Preisen:\n\n$$|q'(5)|=\\\\frac{20000}{125}$$\n\n$$|q'(5)|=160$$\n\n$$|q'(20)|=\\\\frac{20000}{8000}$$\n\n$$|q'(20)|=2.5$$\n\nDie Behauptung verlangt eine stärkere Reduktion bei fünf Euro als bei zwanzig. Es gilt $160>2.5$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nEine von null verschiedene Potenz invertiert zu einer anderen Potenz. Aus der rekonstruierten Nachfrage folgt\n\n$$p^{2}=\\\\frac{10000}{q}$$\n\n$$p=100 q^{-\\\\frac{1}{2}}$$\n\nDas ist ein Monom in der Abonnementzahl.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nVerdoppelung des Preises ist der Skalenfaktor\n\n$$k=2$$\n\n zum Exponenten $-2$. Der Koeffizient fällt weg:\n\n$$\\\\frac{q(2p)}{q(p)}=2^{-2}$$\n\n$$\\\\frac{q(2p)}{q(p)}=\\\\frac{1}{4}$$\n\nAm erfassten Paar gilt\n\n$$q(10)=\\\\frac{10000}{100}$$\n\n$$q(10)=100\n$$\n\n$$q(5)=400$$\n\nund $100$ ist ein Viertel von $400$, nicht die Hälfte. Die Behauptung lautet, die Nachfrage halbiere sich.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$R(p)=10000 p^{-1}$$\n\nBei $16$ Euro:\n\n$$R(16)=\\\\frac{10000}{16}$$\n\n$$R(16)=625$$\n\nDie Behauptung vergleicht dies mit $700$. Vergleich mit der Behauptung:\n\n$$625<700.$$\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$q(p)=10000 p^{-2}$$\n\nBei zwanzig Euro:\n\n$$q(20)=\\\\frac{10000}{400}$$\n\n$$q(20)=25$$\n\nDie Behauptung vergleicht dies mit $30$. Vergleich mit der Behauptung:\n\n$$25<30.$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Monatsabonnements folgen $q(p)=A p^{-2}$ für $p>0$ Euro und $q(5)=400$. Umsatz ist $R=pq$.\n\n**Teil 1: Übersetzung.**\n\nDer Exponent wird angegeben, so dass die bepreiste Beobachtung $A$ festlegt: $$A\\cdot 5^{-2}=400 \\tag{1}$$ **Teil 2: Lösung.** $$\nA = 400\\cdot 25\n$$ $$\n= 10000\n$$ Die wiedergewonnene Nachfrage und Umsatzerlöse werden $$q(p)=10000 p^{-2}, \\qquad R(p)=10000 p^{-1}$$"
+    "solution_overview": "Monatliche Abonnements folgen $q(p)=A p^{-2}$ für $p>0$ Euro, und $q(5)=400$. Der Umsatz ist $R=pq$.\n\n**Teil 1: Übersetzung.**\n\nDer Exponent ist gegeben, daher legt die beobachtete Preis-Mengen-Paarung $A$ fest:\n\n$$A\\\\cdot 5^{-2}=400 \\\\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$\nA = 400\\\\cdot 25\n$$\n\n$$\n= 10000\n$$\n\nDie rekonstruierte Nachfrage und der Umsatz sind\n\n$$q(p)=10000 p^{-2}, \\\\qquad R(p)=10000 p^{-1}$$"
   },
   "MATH 8.22": {
     "title": "Prüfungshonorare mit Fixum auf einem Potenzterm",
@@ -551,23 +551,23 @@
     "solution_overview": "Das Material ist $m(L)=A L^{\\frac{1}{2}}$ mit $m(100)=40$. Die fertige Ausgabe ist $g(m)=B m^{\\frac{3}{2}}$ mit $g(9)=54$.\n\n**Teil 1: Übersetzung.**\n\nJede Stufe hat einen bekannten Exponenten und eine Ebene: $$A\\cdot 100^{\\frac{1}{2}}=40 \\tag{1}$$ $$B\\cdot 9^{\\frac{3}{2}}=54 \\tag{2}$$ **Teil 2: Lösung.** $$10A=40, \\qquad A=4$$ $$27B=54, \\qquad B=2$$ Das Komponieren von $g(m(L))=2\\bigl(4 L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}$ gibt die rekonstruierte Kette $$m(L)=4 L^{\\frac{1}{2}}, \\qquad g=16 L^{\\frac{3}{4}}$$"
   },
   "MATH 8.30": {
-    "title": "Kalibrierte Nachfrage, abgeleiteter Umsatz und Fixgebühr",
-    "context": "Ein Nischenverlag steht der Nachfrage $q(p)=A p^{-\\frac{3}{2}}$ Exemplare pro Monat zum Preis $p>0$ gegenüber. Ein Preis von $4$ Euro verkauft $250$ Exemplare. Der Umsatz ist $R=pq$, und der Betrieb trägt eine feste monatliche Gebühr von $400$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Kalibrierte Nachfrage, abgeleiteter Umsatz und Fixkosten",
+    "context": "Ein Nischenverlag steht der Nachfrage $q(p)=A p^{-\\\\frac{3}{2}}$ Exemplare pro Monat bei einem Preis $p>0$ gegenüber. Ein Preis von $4$ Euro verkauft $250$ Exemplare. Der Umsatz ist $R=pq$, und der Betrieb trägt monatliche Fixkosten von $400$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Doubling the price halves revenue.",
-      "Revenue falls as the price rises.",
-      "Bei a price of $25$, monthly revenue is already under $450$. Die Aussage ist zu prüfen.",
-      "The fixed charge is covered only at prices below $16$."
+      "Der für einen gegebenen Umsatz nötige Preis ist selbst eine Potenz dieses Umsatzes.",
+      "Verdoppelt man den Preis, so halbiert sich der Umsatz.",
+      "Der Umsatz fällt, wenn der Preis steigt.",
+      "Bei einem Preis von $25$ liegt der Monatsumsatz bereits unter $450$.",
+      "Die Fixkosten werden nur bei Preisen unter $16$ gedeckt."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nSolving for the positive price,\n\n$$p=\\left(\\frac{2000}{R}\\right)^{2}$$\n\nThat is a monomial in revenue.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDoubling the price on $$R(p)=2000 p^{-\\frac{1}{2}}$$ multiplies revenue by $$2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}$$ Now $$\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$$, so doubling price does not halve revenue.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\n$16$ :\n\n$$R(4)=1000\n$$\n\n$$R(16)=500$$\n\nand $500<1000$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nAt a price of $25$:\n\n$$R(25)=\\frac{2000}{5}$$\n\n$$R(25)=400$$\n\nDie Behauptung vergleicht dies mit $450$. Vergleiche mit der Behauptung:\n\n$$400<450.$$\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Gebühr ist gedeckt, wenn $R(p)\\ge 400$: $$2000 p^{-\\frac{1}{2}}\\ge 400$$ $$\\sqrt{p}\\le 5\n$$ $$p\\le 25$$ Der Behauptung besteht darin, dass die Gebühr nur zu Preisen unter $16$ gedeckt ist. Der rekonstruierte Cutoff ist $p=25$, der nicht $16$ ist.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\\\frac{1}{2}}$$\n\nAuflösen nach dem positiven Preis ergibt\n\n$$p=\\\\left(\\\\frac{2000}{R}\\\\right)^{2}$$\n\nDas ist ein Monom im Umsatz.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nVerdoppelung des Preises bei\n\n$$R(p)=2000 p^{-\\\\frac{1}{2}}$$\n\n multipliziert den Umsatz mit\n\n$$2^{-\\\\frac{1}{2}}=\\\\frac{1}{\\\\sqrt{2}}$$\n\nNun gilt\n\n$$\\\\frac{1}{\\\\sqrt{2}}\\\\approx 0.707\\\\neq\\\\frac{1}{2}$$\n\n, also halbiert eine Preisverdoppelung den Umsatz nicht.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\\\frac{1}{2}}$$\n\nDer verbleibende Exponent ist negativ, also fällt der Umsatz mit steigendem Preis. Am erfassten Preis und bei $16$:\n\n$$R(4)=1000\n$$\n\n$$R(16)=500$$\n\nund $500<1000$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\\\frac{1}{2}}$$\n\nBei einem Preis von $25$:\n\n$$R(25)=\\\\frac{2000}{5}$$\n\n$$R(25)=400$$\n\nDie Behauptung vergleicht dies mit $450$. Vergleich mit der Behauptung:\n\n$$400<450.$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Kosten sind gedeckt, wenn $R(p)\\\\ge 400$:\n\n$$2000 p^{-\\\\frac{1}{2}}\\\\ge 400$$\n\n$$\\\\sqrt{p}\\\\le 5\n$$\n\n$$p\\\\le 25$$\n\nDie Behauptung lautet, die Kosten seien nur bei Preisen unter $16$ gedeckt. Die rekonstruierte Schwelle ist $p=25$, nicht $16$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Demand ist $q(p)=A p^{-\\frac{3}{2}}$ mit $q(4)=250$. Der Umsatz beträgt $R=pq$, und eine feste monatliche Gebühr von $400$ muss gedeckt werden.\n\n**Teil 1: Übersetzung.**\n\nThe priced observation fixes $A$: $$A\\cdot 4^{-\\frac{3}{2}}=250 \\tag{1}$$ **Teil 2: Lösung.** $$4^{\\frac{3}{2}}=8, \\qquad A=250\\cdot 8=2000$$ Die wiedergewonnene Nachfrage und Umsatzerlöse werden $$q(p)=2000 p^{-\\frac{3}{2}}, \\qquad R(p)=2000 p^{-\\frac{1}{2}}$$"
+    "solution_overview": "Die Nachfrage ist $q(p)=A p^{-\\\\frac{3}{2}}$ mit $q(4)=250$. Der Umsatz ist $R=pq$, und monatliche Fixkosten von $400$ müssen gedeckt werden.\n\n**Teil 1: Übersetzung.**\n\nDie Preisbeobachtung legt $A$ fest:\n\n$$A\\\\cdot 4^{-\\\\frac{3}{2}}=250 \\\\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$4^{\\\\frac{3}{2}}=8, \\\\qquad A=250\\\\cdot 8=2000$$\n\nDie rekonstruierte Nachfrage und der Umsatz sind\n\n$$q(p)=2000 p^{-\\\\frac{3}{2}}, \\\\qquad R(p)=2000 p^{-\\\\frac{1}{2}}$$"
   },
   "MATH 8.31": {
     "title": "Packleistung aus einer Schichtverlängerung rekonstruiert",
@@ -589,61 +589,61 @@
     "solution_overview": "Die Packausgabe ist $N(h)=A h^{\\frac{2}{3}}$ -Elemente nach $h>0$ Stunden. Eine Verschiebung von $8$ auf $27$ Stunden wurde um $90$ -Elemente erweitert.\n\n**Teil 1: Übersetzung.**\n\nBeide Verschiebungslängen sind perfekte Würfel, so dass die aufgezeichnete Verlängerung ist $$A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90 \\tag{1}$$ **Teil 2: Lösung.** $$27^{\\frac{2}{3}}=9, \\qquad 8^{\\frac{2}{3}}=4$$ $$5A=90, \\qquad A=18$$ Die rekonstruierte Leistung ist $$N(h)=18 h^{\\frac{2}{3}}$$"
   },
   "MATH 8.32": {
-    "title": "Widerstand und aufgenommene Leistung an einem Windkanal",
-    "context": "Der aerodynamische Widerstand an einem Prüfstand folgt $F(v)=A v^{r}$ Newton bei Luftgeschwindigkeit $v>0$ Meter pro Sekunde; der Hersteller liefert keinen der beiden Konstanten. Zwei Windkanalmessungen liegen vor: $16$ N bei $4$ m/s und $128$ N bei $16$ m/s. Der Prüfstand meldet außerdem die aufgenommene Leistung $P=F\\cdot v$ Watt, und die Halterung ist auf $250$ N ausgelegt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Widerstand und aufgenommene Leistung an einem Windkanalprüfstand",
+    "context": "Der aerodynamische Widerstand an einem Prüfstand folgt $F(v)=A v^{r}$ Newton bei Luftgeschwindigkeit $v>0$ Meter pro Sekunde, und der Hersteller liefert keine der beiden Konstanten. Zwei Windkanalläufe sind erfasst: $16$ N bei $4$ m/s und $128$ N bei $16$ m/s. Der Prüfstand meldet außerdem die aufgenommene Leistung $P=F\\\\cdot v$ Watt, und die Halterung ist auf $250$ N ausgelegt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Die Fluggeschwindigkeit zu verdoppeln, verdreifacht den Luftwiderstand mehr als.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "The mounting's $250$ N rating is first reached at a speed above $30$ m/s.",
-      "At $16$ m/s the rig absorbs more than $2$ kW."
+      "Die aufgenommene Leistung ist eine Potenzfunktion der Luftgeschwindigkeit.",
+      "Verdoppelt man die Luftgeschwindigkeit, so steigt der Widerstand auf mehr als das Dreifache.",
+      "Die Luftgeschwindigkeit, die einen gegebenen Widerstand erzeugt, ist selbst eine Potenzfunktion dieses Widerstands.",
+      "Die Auslegung der Halterung auf $250$ N wird erstmals bei einer Geschwindigkeit über $30$ m/s erreicht.",
+      "Bei $16$ m/s nimmt der Prüfstand mehr als $2$ kW auf."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$P(v)=2 v^{\\frac{5}{2}}$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDoubling the airspeed on $$F(v)=2 v^{\\frac{3}{2}}$$ multiplies drag by $$2^{\\frac{3}{2}}=2\\sqrt{2}$$ Jetzt $2\\sqrt{2}\\approx 2.83$, was nicht mehr als $3$ ist.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nDie Übersicht rekonstruiert\n\n$$F(v)=2 v^{\\frac{3}{2}}$$\n\nSolving for the positive airspeed,\n\n$$v=\\left(\\frac{F}{2}\\right)^{\\frac{2}{3}}$$\n\nThat is a monomial in drag.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nThe mounting rating\n\n$$F=250$$\n\n needs\n\n$$2 v^{\\frac{3}{2}}=250$$\n\n$$v^{\\frac{3}{2}}=125\n$$\n\n$$v=125^{\\frac{2}{3}}$$\n\n$$125^{\\frac{2}{3}}=\\bigl(125^{\\frac{1}{3}}\\bigr)^{2}$$\n\n$$125^{\\frac{1}{3}}=5$$\n\n$$5^{2}=25$$\n\n$$v=25$$\n\n$$125^{\\frac{1}{3}}=\\bigl(125^{\\frac{1}{3}}\\bigr)^{1}$$\n\n$$5^{1}=5$$\n\nDie Behauptung is that the rating is first reached above $30$ m/s. Wir haben $v=25$.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$P(v)=2 v^{\\frac{5}{2}}$$\n\nBei $16$ m/s:\n\n$$\n\\begin{aligned}\nP(16)=2\\cdot 16^{\\frac{5}{2}} \\\\\n16^{\\frac{5}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{5} \\\\\n16^{\\frac{1}{2}}=4 \\\\\n4^{5}=1024 \\\\\nP(16)=2\\cdot 1024 \\\\\nP(16)=2048\n\\end{aligned}\n$$\n\nZwei Kilowatt sind $2000$ Watt. Vergleiche mit der Behauptung:\n\n$$2048>2000.$$\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$P(v)=2 v^{\\\\frac{5}{2}}$$\n\nDas ist ein Monom in der Luftgeschwindigkeit, also ist die aufgenommene Leistung eine Potenzfunktion der Luftgeschwindigkeit.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nVerdoppelung der Luftgeschwindigkeit bei\n\n$$F(v)=2 v^{\\\\frac{3}{2}}$$\n\n multipliziert den Widerstand mit\n\n$$2^{\\\\frac{3}{2}}=2\\\\sqrt{2}$$\n\nNun ist $2\\\\sqrt{2}\\\\approx 2.83$, also nicht mehr als $3$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Übersicht liefert\n\n$$F(v)=2 v^{\\\\frac{3}{2}}$$\n\nAuflösen nach der positiven Luftgeschwindigkeit ergibt\n\n$$v=\\\\left(\\\\frac{F}{2}\\\\right)^{\\\\frac{2}{3}}$$\n\nDas ist ein Monom im Widerstand.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDie Auslegung der Halterung\n\n$$F=250$$\n\n erfordert\n\n$$2 v^{\\\\frac{3}{2}}=250$$\n\n$$v^{\\\\frac{3}{2}}=125\n$$\n\n$$v=125^{\\\\frac{2}{3}}$$\n\n$$125^{\\\\frac{2}{3}}=\\\\bigl(125^{\\\\frac{1}{3}}\\\\bigr)^{2}$$\n\n$$125^{\\\\frac{1}{3}}=5$$\n\n$$5^{2}=25$$\n\n$$v=25$$\n\n$$125^{\\\\frac{1}{3}}=\\\\bigl(125^{\\\\frac{1}{3}}\\\\bigr)^{1}$$\n\n$$5^{1}=5$$\n\nDie Behauptung lautet, die Auslegung werde erstmals über $30$ m/s erreicht. Wir haben $v=25$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$P(v)=2 v^{\\\\frac{5}{2}}$$\n\nBei $16$ m/s:\n\n$$P(16)=2\\\\cdot 16^{\\\\frac{5}{2}}$$\n\n$$16^{\\\\frac{5}{2}}=\\\\bigl(16^{\\\\frac{1}{2}}\\\\bigr)^{5}$$\n\n$$16^{\\\\frac{1}{2}}=4$$\n\n$$4^{5}=1024$$\n\n$$P(16)=2\\\\cdot 1024$$\n\n$$P(16)=2048$$\n\n$$P(16)=32^{\\\\frac{5}{2}}$$\n\n$$16^{\\\\frac{1}{2}}=\\\\bigl(16^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$4^{1}=4$$\n\nZwei Kilowatt sind $2000$ Watt. Vergleich mit der Behauptung:\n\n$$2048>2000.$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Drag ist $F(v)=A v^{r}$ Newtons bei Fluggeschwindigkeit $v>0$, mit $F(4)=16$ und $F(16)=128$. Absorbierte Leistung ist $P=F\\cdot v$.\n\n**Teil 1: Übersetzung.**\n\nThe run ratio cancels $A$: $$\n\\frac{F(16)}{F(4)} = 4^{r}\n$$ $$\n= 8 \\tag{1}\n$$ Either run then fixes $A$: $$A\\cdot 4^{r}=16 \\tag{2}$$ **Teil 2: Lösung.** $$r=\\frac{3}{2}, \\qquad A\\cdot 8=16, \\qquad A=2$$ Der rekonstruierte Widerstand und die Leistung sind $$F(v)=2 v^{\\frac{3}{2}}, \\qquad P(v)=2 v^{\\frac{5}{2}}$$"
+    "solution_overview": "Der Widerstand ist $F(v)=A v^{r}$ Newton bei Luftgeschwindigkeit $v>0$, mit $F(4)=16$ und $F(16)=128$. Die aufgenommene Leistung ist $P=F\\\\cdot v$.\n\n**Teil 1: Übersetzung.**\n\nDas Laufverhältnis kürzt $A$:\n\n$$\n\\\\frac{F(16)}{F(4)} = 4^{r}\n$$\n\n$$\n= 8 \\\\tag{1}\n$$\n\nJeder der beiden Läufe legt danach $A$ fest:\n\n$$A\\\\cdot 4^{r}=16 \\\\tag{2}$$\n\n**Teil 2: Lösung.**\n\n$$r=\\\\frac{3}{2}, \\\\qquad A\\\\cdot 8=16, \\\\qquad A=2$$\n\nDer rekonstruierte Widerstand und die Leistung sind\n\n$$F(v)=2 v^{\\\\frac{3}{2}}, \\\\qquad P(v)=2 v^{\\\\frac{5}{2}}$$"
   },
   "MATH 8.33": {
     "title": "Unelastische Nachfrage und wohin der Umsatz geht",
-    "context": "Ein regionaler Versorger steht der Nachfrage $q(p)=A p^{-\\frac{1}{2}}$ Einheiten pro Monat zum Preis $p>0$ gegenüber; ein Preis von $16$ verkauft $300$ Einheiten. Der Vorstand will wissen, wie sich der Umsatz $R=pq$ entlang dieser Kurve verhält. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein regionaler Versorger steht der Nachfrage $q(p)=A p^{-\\\\frac{1}{2}}$ Einheiten pro Monat bei Preis $p>0$ gegenüber, und ein Preis von $16$ verkauft $300$ Einheiten. Der Vorstand will wissen, wie sich der Umsatz $R=pq$ entlang dieser Kurve verhält. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Revenue rises as the price rises.",
-      "Weil quantity falls when price rises, revenue must fall as well. Die Aussage ist zu prüfen.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "At a price of $25$ the utility sells fewer than $250$ units.",
-      "Cutting monthly quantity to $200$ units requires a price above $40$. Die Aussage ist zu prüfen."
+      "Der Umsatz steigt, wenn der Preis steigt.",
+      "Weil die Menge fällt, wenn der Preis steigt, muss auch der Umsatz fallen.",
+      "Der für eine gegebene Monatsmenge nötige Preis ist selbst eine Potenzfunktion dieser Menge.",
+      "Bei einem Preis von $25$ verkauft der Versorger weniger als $250$ Einheiten.",
+      "Eine Senkung der Monatsmenge auf $200$ Einheiten erfordert einen Preis über $40$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Übersicht liefert\n\n$$R(p)=1200 p^{\\frac{1}{2}}$$\n\n$16$ and $25$ :\n\n$$R(16)=4800\n$$\n\n$$R(25)=6000$$\n\nand $6000>4800$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Rechnung widerspricht der Behauptung.\n\n$$R(p)=1200 p^{\\frac{1}{2}}$$\n\nstill rises in $p$ $-\\frac{1}{2}+1$ is positiv. From $p=16$ to $p=25$ , quantity falls $300\\to 240$ while revenue rises $4800\\to 6000$ .\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nDie Übersicht rekonstruiert\n\n$$q(p)=1200 p^{-\\frac{1}{2}}$$\n\nSolving for the positive price,\n\n$$p=\\left(\\frac{1200}{q}\\right)^{2}$$\n\nThat is a monomial in monthly quantity.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$q(p)=1200 p^{-\\frac{1}{2}}$$\n\nAt a price of $25$:\n\n$$q(25)=\\frac{1200}{5}$$\n\n$$q(25)=240$$\n\nDie Behauptung vergleicht dies mit $250$. Vergleiche mit der Behauptung:\n\n$$240<250.$$\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nCutting quantity to $200$ needs\n\n$$1200 p^{-\\frac{1}{2}}=200$$\n\n$$\\sqrt{p}=6\n$$\n\n$$p=36$$\n\nDie Behauptung is a price above $40$. Wir haben $p=36$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Übersicht liefert\n\n$$R(p)=1200 p^{\\\\frac{1}{2}}$$\n\nDer verbleibende Exponent ist positiv, also steigt der Umsatz mit dem Preis. Bei $16$ und $25$:\n\n$$R(16)=4800\n$$\n\n$$R(25)=6000$$\n\nund $6000>4800$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nFallende Menge erzwingt keinen fallenden Umsatz. Entlang der rekonstruierten Kurve\n\n$$R(p)=1200 p^{\\\\frac{1}{2}}$$\n\nsteigt $R$ weiterhin in $p$, weil der Exponent $-\\\\frac{1}{2}+1$ positiv ist. Von $p=16$ nach $p=25$ fällt die Menge $300\\\\to 240$, während der Umsatz $4800\\\\to 6000$ steigt.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Übersicht liefert\n\n$$q(p)=1200 p^{-\\\\frac{1}{2}}$$\n\nAuflösen nach dem positiven Preis ergibt\n\n$$p=\\\\left(\\\\frac{1200}{q}\\\\right)^{2}$$\n\nDas ist ein Monom in der Monatsmenge.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$q(p)=1200 p^{-\\\\frac{1}{2}}$$\n\nBei einem Preis von $25$:\n\n$$q(25)=\\\\frac{1200}{5}$$\n\n$$q(25)=240$$\n\nDie Behauptung vergleicht dies mit $250$. Vergleich mit der Behauptung:\n\n$$240<250.$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEine Senkung der Menge auf $200$ erfordert\n\n$$1200 p^{-\\\\frac{1}{2}}=200$$\n\n$$\\\\sqrt{p}=6\n$$\n\n$$p=36$$\n\nDie Behauptung lautet ein Preis über $40$. Wir haben $p=36$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Demand ist $q(p)=A p^{-\\frac{1}{2}}$ mit $q(16)=300$. Umsatz ist $R=pq$.\n\n**Teil 1: Übersetzung.**\n\nThe observed pair fixes $A$: $$A\\cdot 16^{-\\frac{1}{2}}=300 \\tag{1}$$ **Teil 2: Lösung.** $$A\\cdot\\frac{1}{4}=300, \\qquad A=1200$$ Die wiedergewonnene Nachfrage und Umsatzerlöse werden $$q(p)=1200 p^{-\\frac{1}{2}}, \\qquad R(p)=1200 p^{\\frac{1}{2}}$$"
+    "solution_overview": "Die Nachfrage ist $q(p)=A p^{-\\\\frac{1}{2}}$ mit $q(16)=300$. Der Umsatz ist $R=pq$.\n\n**Teil 1: Übersetzung.**\n\nDas beobachtete Paar legt $A$ fest:\n\n$$A\\\\cdot 16^{-\\\\frac{1}{2}}=300 \\\\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$A\\\\cdot\\\\frac{1}{4}=300, \\\\qquad A=1200$$\n\nDie rekonstruierte Nachfrage und der Umsatz sind\n\n$$q(p)=1200 p^{-\\\\frac{1}{2}}, \\\\qquad R(p)=1200 p^{\\\\frac{1}{2}}$$"
   },
   "MATH 8.34": {
     "title": "Ofenleistung unter einer lizenzierten Obergrenze",
-    "context": "Die Tagesleistung eines Ofens folgt $y(x)=A x^{\\frac{4}{3}}$ Tonnen bei einem Brennstoffeinsatz $x>0$ Kubikmeter. Ein Testbrand mit Einsatz $27$ lieferte $324$ Tonnen. Die Standortlizenz verbietet den Versand von mehr als $1024$ Tonnen pro Tag, sodass jede zusätzliche Produktion verfällt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Tagesleistung eines Ofens folgt $y(x)=A x^{\\\\frac{4}{3}}$ Tonnen bei einem Brennstoffeinsatz $x>0$ Kubikmeter. Ein Testbrand mit Einsatz $27$ lieferte $324$ Tonnen. Die Standortlizenz verbietet den Versand von mehr als $1024$ Tonnen pro Tag, sodass jede zusätzliche Produktion verfällt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "A feed of $8$ produces more than $50$ Tonnen. Die Aussage ist zu prüfen.",
-      "$50$ ."
+      "Um die Testbrand-Leistung zu verdoppeln, muss der Brennstoffeinsatz mehr als verdoppelt werden.",
+      "Die Leistung je Kubikmeter Brennstoff steigt, wenn der Einsatz zunimmt.",
+      "Sobald die Lizenz bindet, ist die täglich versandte Leistung keine Potenzfunktion des Einsatzes mehr.",
+      "Ein Einsatz von $8$ liefert mehr als $50$ Tonnen.",
+      "Die lizenzierte Obergrenze bindet vor einem Einsatz von $50$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nTo double the test-firing output, the feed factor $k$ must satisfy\n\n$$k^{\\frac{4}{3}}=2$$\n\n$$k=2^{\\frac{3}{4}}$$\n\nNun\n\n$$2^{\\frac{3}{4}}<2$$\n\n, so the feed need not more than double.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Leistung je Kubikmeter Brennstoff ist\n\n$$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$\n\nDer verbleibende Exponent ist positiv, daher steigt der Durchschnitt mit dem Einsatz. Bei $8$ und $27$:\n\n$$\n\\begin{aligned}\n4\\cdot 8^{\\frac{1}{3}} \\\\\n8^{\\frac{1}{3}}=2 \\\\\n4\\cdot 2=8 \\\\\n4\\cdot 27^{\\frac{1}{3}} \\\\\n27^{\\frac{1}{3}}=3 \\\\\n4\\cdot 3=12\n\\end{aligned}\n$$\n\nund $12>8$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nThe licence binds once\n\n$$4 x^{\\frac{4}{3}}=1024$$\n\n$$x^{\\frac{4}{3}}=256\n$$\n\n$$x=64$$\n\nPast that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$y(x)=4 x^{\\frac{4}{3}}$$\n\nA feed of $8$ produces\n\n$$y(8)=4\\cdot 8^{\\frac{4}{3}}$$\n\n$$8^{\\frac{4}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{4}$$\n\n$$8^{\\frac{1}{3}}=2$$\n\n$$2^{4}=16$$\n\n$$y(8)=4\\cdot 16$$\n\n$$y(8)=64$$\n\n$$y(8)=32^{\\frac{4}{3}}$$\n\n$$8^{\\frac{1}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{1}$$\n\n$$2^{1}=2$$\n\nDie Behauptung vergleicht dies mit $50$. Vergleiche mit der Behauptung:\n\n$$64>50.$$\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nFrom the shared solve, the feed level where the licence binds:\n\n$$4 x^{\\frac{4}{3}}=1024$$\n\n$$x=64$$\n\nDie Behauptung asserts that the licence binds before a feed of $50$. Compare:\n\n$$64>50$$\n\nThe binding feed liegt über $50$, not before it. Die Behauptung fails.\n\nDie Aussage ist falsch."
+      "**A.** → Falsch\n\nUm die Testbrand-Leistung zu verdoppeln, muss der Einsatzfaktor $k$ erfüllen\n\n$$k^{\\\\frac{4}{3}}=2$$\n\n$$k=2^{\\\\frac{3}{4}}$$\n\nNun gilt\n\n$$2^{\\\\frac{3}{4}}<2$$\n\n, also muss der Einsatz nicht mehr als verdoppelt werden.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Leistung je Kubikmeter Brennstoff ist\n\n$$\\\\frac{y(x)}{x}=4 x^{\\\\frac{1}{3}}$$\n\nDer verbleibende Exponent ist positiv, daher steigt der Durchschnitt mit dem Einsatz. Bei $8$ und $27$:\n\n$$4\\\\cdot 8^{\\\\frac{1}{3}}=4\\\\cdot 2=8$$\n\n$$4\\\\cdot 27^{\\\\frac{1}{3}}=4\\\\cdot 3=12$$\n\nund $12>8$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDie Lizenz bindet, sobald\n\n$$4 x^{\\\\frac{4}{3}}=1024$$\n\n$$x^{\\\\frac{4}{3}}=256$$\n\n$$x=64$$\n\nJenseits dieses Einsatzes ist die täglich versandte Leistung die Konstante $1024$, die kein Monom in $x$ ist.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$y(x)=4 x^{\\\\frac{4}{3}}$$\n\nEin Einsatz von $8$ liefert\n\n$$y(8)=4\\\\cdot 8^{\\\\frac{4}{3}}$$\n\n$$8^{\\\\frac{4}{3}}=\\\\bigl(8^{\\\\frac{1}{3}}\\\\bigr)^{4}$$\n\n$$8^{\\\\frac{1}{3}}=2$$\n\n$$2^{4}=16$$\n\n$$y(8)=4\\\\cdot 16$$\n\n$$y(8)=64$$\n\nDie Behauptung vergleicht dies mit $50$. Vergleich mit der Behauptung:\n\n$$64>50.$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nAus der gemeinsamen Lösung folgt der Einsatz, bei dem die Lizenz bindet:\n\n$$4 x^{\\\\frac{4}{3}}=1024$$\n\n$$x=64$$\n\nDie Behauptung lautet, die Lizenz binde vor einem Einsatz von $50$. Vergleich:\n\n$$64>50$$\n\nDer bindende Einsatz liegt über $50$, nicht davor.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Ofenleistung beträgt $y(x)=A x^{\\frac{4}{3}}$ Tonnen für eine Brennstoffzufuhr $x>0$, mit $y(27)=324$. Die Lizenz verbietet den Versand von mehr als $1024$ Tonnen pro Tag.\n\n**Teil 1: Übersetzung.**\n\nDer Testschuss ist ein perfekter Würfel: $$A\\cdot 27^{\\frac{4}{3}}=324 \\tag{1}$$ **Teil 2: Lösung.** $$27^{\\frac{4}{3}}=81, \\qquad A=4$$ Der rekonstruierte Schuss, bevor die Lizenz ihn abschneidet, wird $$y(x)=4 x^{\\frac{4}{3}}$$ Shipped output is $\\min(y(x),1024)$."
+    "solution_overview": "Die Ofenleistung ist $y(x)=A x^{\\\\frac{4}{3}}$ Tonnen für einen Brennstoffeinsatz $x>0$, mit $y(27)=324$. Die Lizenz verbietet den Versand von mehr als $1024$ Tonnen pro Tag.\n\n**Teil 1: Übersetzung.**\n\nDer Testbrand ist ein vollkommener Kubus:\n\n$$A\\\\cdot 27^{\\\\frac{4}{3}}=324 \\\\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$27^{\\\\frac{4}{3}}=81, \\\\qquad A=4$$\n\nDie rekonstruierte Leistung, bevor die Lizenz sie abschneidet, lautet\n\n$$y(x)=4 x^{\\\\frac{4}{3}}$$\n\nDie versandte Leistung ist $\\\\min(y(x),1024)$."
   },
   "MATH 8.35": {
     "title": "Ein Paar Potenzfunktionen, die sich gegenseitig aufheben",
@@ -761,22 +761,22 @@
   },
   "MATH 8.41": {
     "title": "Eine Nachfragekurve mit negativem Exponenten umkehren",
-    "context": "Ein Zulieferer steht der Nachfrage $q(p)=A p^{-2}$ Einheiten zum Preis $p>0$ Euro gegenüber. Ein Katalogpreis von $4$ Euro räumt $400$ Einheiten ab. Die Beschaffung will die Kurve umgekehrt schreiben, mit dem Preis als Funktion der Menge. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Zulieferer steht der Nachfrage $q(p)=A p^{-2}$ Einheiten zum Preis $p>0$ Euro gegenüber. Ein Katalogpreis von $4$ Euro räumt $400$ Einheiten ab. Die Beschaffung will die Kurve umgekehrt schreiben, also den Preis als Funktion der Menge. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "After $25$ $20$ Euro.",
-      "Die Erhöhung des Katalogpreises erhöht den Umsatz entlang dieser Kurve.",
-      "After $100$ units, revenue is already above $750$ Euro. Die Aussage ist zu prüfen.",
-      "Weil quantity falls when price rises, revenue must fall when quantity rises."
+      "Der Preis, der eine gegebene Menge räumt, ist selbst eine Potenzfunktion dieser Menge.",
+      "Bei $25$ Einheiten liegt der räumende Preis bereits unter $20$ Euro.",
+      "Eine Erhöhung des Katalogpreises erhöht den Umsatz entlang dieser Kurve.",
+      "Bei $100$ Einheiten liegt der Umsatz bereits über $750$ Euro.",
+      "Weil die Menge fällt, wenn der Preis steigt, muss der Umsatz fallen, wenn die Menge steigt."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Übersicht rekonstruiert\n\n$$p=80 q^{-\\frac{1}{2}}$$\n\nThat is a monomial in $q$, coefficient $80$ und exponent $-\\frac{1}{2}$. There is no leftover constant und no logarithm.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist ein Niveau von the inverse at $25$ units. Die Übersicht rekonstruiert\n\n$$p=80 q^{-\\frac{1}{2}}$$\n\n$$p(25)=80\\cdot 25^{-\\frac{1}{2}}$$\n\n$$p(25)=2000^{-\\frac{1}{2}}$$\n\n$$25^{-\\frac{1}{2}}=\\frac{1}{5}$$\n\n$$p(25)=16$$\n\nSechzehn liegt unter $20$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDer Umsatz als Funktion des Preises ist die verbleibende Leistung nach Multiplikation der Nachfrage mit $p$. Die Übersicht rekonstruiert $$R(p)=6400 p^{-1}$$ Der verbleibende Exponent ist negativ, so dass die Erhöhung des Katalogpreises die Einnahmen senkt. Zum Katalogpreis und zum doppelten Preis: $$R(4)=1600$$ $$R(8)=800$$ Revenue falls.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nUmsatz als Funktion der Menge ist die verbleibende Leistung nach Multiplikation des Preises mit $q$. Die Übersicht rekonstruiert $$R(q)=80 q^{\\frac{1}{2}}$$ At $100$ units: $$R(100)=80\\cdot 100^{\\frac{1}{2}}$$ $$100^{\\frac{1}{2}}=\\bigl(100^{\\frac{1}{2}}\\bigr)^{1}$$ $$100^{\\frac{1}{2}}=10$$ $$10^{1}=10$$ $$R(100)=80\\cdot 10$$ $$R(100)=800$$ $$R(100)=8000^{\\frac{1}{2}}$$ $$100^{\\frac{1}{2}}$$ $$R(100)=10$$ Eight hundred liegt über $750$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDer Behauptung behandelt einen fallenden $q(p)$ so, als müsste der Umsatz sinken, wenn die Menge steigt. Die Übersicht rekonstruiert $$R(q)=80 q^{\\frac{1}{2}}$$ Der übrig gebliebene Exponent $$\\frac{1}{2}$$ positiv ist, so dass eine größere Menge mehr Umsatz bringt. Von $$q=25$$ to $$q=100$$ $$R(25)=400$$ $$R(100)=800$$ Revenue rises with quantity.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Übersicht liefert\n\n$$p=80 q^{-\\\\frac{1}{2}}$$\n\nDas ist ein Monom in $q$ mit Koeffizient $80$ und Exponent $-\\\\frac{1}{2}$. Es bleibt keine Restkonstante und kein Logarithmus.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDas ist ein Niveau der Umkehrfunktion bei $25$ Einheiten. Die Übersicht liefert\n\n$$p=80 q^{-\\\\frac{1}{2}}$$\n\n$$p(25)=80\\\\cdot 25^{-\\\\frac{1}{2}}$$\n\n$$p(25)=2000^{-\\\\frac{1}{2}}$$\n\n$$25^{-\\\\frac{1}{2}}=\\\\frac{1}{5}$$\n\n$$p(25)=16$$\n\nSechzehn liegt unter $20$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDer Umsatz als Funktion des Preises ist die verbleibende Potenz nach Multiplikation der Nachfrage mit $p$. Die Übersicht liefert\n\n$$R(p)=6400 p^{-1}$$\n\nDer verbleibende Exponent ist negativ, daher senkt eine Erhöhung des Katalogpreises den Umsatz. Am Katalogpreis und beim doppelten Preis:\n\n$$R(4)=1600$$\n\n$$R(8)=800$$\n\nDer Umsatz fällt.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDer Umsatz als Funktion der Menge ist die verbleibende Potenz nach Multiplikation des Preises mit $q$. Die Übersicht liefert\n\n$$R(q)=80 q^{\\\\frac{1}{2}}$$\n\nBei $100$ Einheiten:\n\n$$R(100)=80\\\\cdot 100^{\\\\frac{1}{2}}$$\n\n$$100^{\\\\frac{1}{2}}=\\\\bigl(100^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$100^{\\\\frac{1}{2}}=10$$\n\n$$10^{1}=10$$\n\n$$R(100)=80\\\\cdot 10$$\n\n$$R(100)=800$$\n\n$$R(100)=8000^{\\\\frac{1}{2}}$$\n\n$$100^{\\\\frac{1}{2}}$$\n\n$$R(100)=10$$\n\nAchthundert liegt über $750$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Behauptung behandelt ein fallendes $q(p)$ so, als müsste der Umsatz fallen, wenn die Menge steigt. Die Übersicht liefert\n\n$$R(q)=80 q^{\\\\frac{1}{2}}$$\n\nDer verbleibende Exponent\n\n$$\\\\frac{1}{2}$$\n\nist positiv, daher bringt eine größere Menge mehr Umsatz. Von\n\n$$q=25$$\n\nnach\n\n$$q=100$$\n\n$$R(25)=400$$\n\n$$R(100)=800$$\n\nDer Umsatz steigt mit der Menge.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Nachfrage ist $q(p)=A p^{-2}$ Einheiten zu einem Preis $p>0$ Euro. Ein Katalogpreis von $4$ Euro löscht $400$ Einheiten. Umsatz ist $R=pq$.\n\n**Teil 1: Übersetzung.**\n\nEs wird der Exponent angegeben, also das Katalogpaar Pins $A$: $$A\\cdot 4^{-2}=400$$ $$A\\cdot \\frac{1}{16}=400$$ **Teil 2: Lösung.** $$A=6400$$ Die wiedergewonnene Nachfrage ist $q(p)=6400 p^{-2}$. Der isolierende Preis nimmt die reziproke Quadratwurzel: $$p=80 q^{-\\frac{1}{2}}$$ Der Umsatz entlang der Kurve beträgt dann $$R(q)=80 q^{\\frac{1}{2}}, \\qquad R(p)=6400 p^{-1}.$$"
+    "solution_overview": "Die Nachfrage beträgt $q(p)=A p^{-2}$ Einheiten zum Preis $p>0$ Euro. Ein Katalogpreis von $4$ Euro räumt $400$ Einheiten ab. Der Umsatz ist $R=pq$.\n\n**Teil 1: Übersetzung.**\n\nDer Exponent ist gegeben, daher legt das Katalogpaar $A$ fest:\n\n$$A\\\\cdot 4^{-2}=400$$\n\n$$A\\\\cdot \\\\frac{1}{16}=400$$\n\n**Teil 2: Lösung.**\n\n$$A=6400$$\n\nDie rekonstruierte Nachfrage lautet $q(p)=6400 p^{-2}$. Isoliert man den Preis, erhält man die reziproke Quadratwurzel:\n\n$$p=80 q^{-\\\\frac{1}{2}}$$\n\nDer Umsatz entlang der Kurve ist dann\n\n$$R(q)=80 q^{\\\\frac{1}{2}}, \\\\qquad R(p)=6400 p^{-1}.$$"
   },
   "MATH 8.42": {
     "title": "Durchschnittsprodukt einer Quadratwurzel-Technologie",
@@ -989,22 +989,22 @@
   },
   "MATH 8.53": {
     "title": "Sturmflut speist einen kubischen Schadensindex",
-    "context": "Ein Rückversicherer modelliert Küstenschäden in zwei Stufen. Die Sturmfluthöhe ist $s(w)=0.5 w^{0.5}$ Meter bei Windgeschwindigkeit $w>0$, und der Schadenindex steigt mit der dritten Potenz der Fluthöhe, $L(s)=32 s^{3}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Rückversicherer modelliert Küstenschäden in zwei Stufen. Die Sturmfluthöhe ist $s(w)=0.5 w^{0.5}$ Meter bei Windgeschwindigkeit $w>0$, und der Schadensindex steigt mit der dritten Potenz der Fluthöhe, $L(s)=32 s^{3}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Eine Verdopplung der Windgeschwindigkeit verdoppelt den Verlustindex.",
-      "At a wind speed of $64$ the loss index is already above $2000$.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "A loss of $1000$ already requires a wind speed above $50$. Die Aussage ist zu prüfen."
+      "Nach beiden Stufen ist der Schadensindex selbst eine Potenz der Windgeschwindigkeit.",
+      "Eine Verdopplung der Windgeschwindigkeit verdoppelt den Schadensindex.",
+      "Bei Windgeschwindigkeit $64$ liegt der Schadensindex bereits über $2000$.",
+      "Der zusammengesetzte Exponent ist größer als eins, daher beschleunigen sich die Schäden mit steigendem Wind.",
+      "Ein Schaden von $1000$ erfordert bereits eine Windgeschwindigkeit über $50$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$L(w)=4 w^{\\frac{3}{2}}$$\n\nA monomial in $w$\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Verdopplung der Windgeschwindigkeit ist der Multiplikator $$k=2$$. Die Übersicht rekonstruiert den Exponenten $$\\frac{3}{2}$$, so $$\\frac{L(2w)}{L(w)}=2^{\\frac{3}{2}}$$ $$2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.828$$ Das ist nicht $2$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDies ist ein Niveau von the composed loss at wind speed $64$. Die Übersicht rekonstruiert\n\n$$L(w)=4 w^{\\frac{3}{2}}$$\n\n$$L(64)=4\\cdot 64^{\\frac{3}{2}}$$\n\n$$64^{\\frac{3}{2}}=\\bigl(64^{\\frac{1}{2}}\\bigr)^{3}$$\n\n$$64^{\\frac{1}{2}}=8$$\n\n$$8^{3}=512$$\n\n$$L(64)=4\\cdot 512$$\n\n$$L(64)=2048$$\n\n$$L(64)=256^{\\frac{3}{2}}$$\n\n$$256^{\\frac{3}{2}}=\\bigl(256^{\\frac{1}{2}}\\bigr)^{3}$$\n\n$$256^{\\frac{1}{2}}=16$$\n\n$$16^{3}=4096$$\n\n$$L(64)=4096$$\n\n$$64^{\\frac{1}{2}}=\\bigl(64^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$8^{1}=8$$\n\n$$256^{\\frac{1}{2}}=\\bigl(256^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$16^{1}=16$$\n\n$$64^{\\frac{3}{2}}$$\n\n$$L(64)=512$$\n\nZweitausendachtundvierzig liegt über $2000$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nDie Übersicht rekonstruiert composed exponent\n\n$$\\frac{3}{2}$$\n\n.\n\n$$\\frac{3}{2}>1$$\n\nLosses accelerate as the wind strengthens.\n\nHalte den rekonstruierten Koeffizienten und Exponenten fest; nur die behauptete Eingabe (oder Schwelle) ändert sich.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin Verlust von $1000$ kehrt die rekonstruierte Zusammensetzung um $$L(w)=4 w^{\\frac{3}{2}}$$. $$4 w^{\\frac{3}{2}}=1000$$ $$w^{\\frac{3}{2}}=250$$ $$w=250^{\\frac{2}{3}}\\approx 39.69$$ Diese Windgeschwindigkeit liegt nicht über $50$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten kalibrierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$L(w)=4 w^{\\\\frac{3}{2}}$$\n\nEin Monom in $w$ ist eine Potenz der Windgeschwindigkeit. Es bleibt keine Restkonstante und kein Logarithmus.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Verdopplung der Windgeschwindigkeit ist der Multiplikator\n\n$$k=2$$\n\n. Die Übersicht liefert den Exponenten\n\n$$\\\\frac{3}{2}$$\n\n, also\n\n$$\\\\frac{L(2w)}{L(w)}=2^{\\\\frac{3}{2}}$$\n\n$$2^{\\\\frac{3}{2}}=2\\\\sqrt{2}\\\\approx 2.828$$\n\nDas ist nicht $2$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDas ist ein Niveau des zusammengesetzten Schadens bei Windgeschwindigkeit $64$. Die Übersicht liefert\n\n$$L(w)=4 w^{\\\\frac{3}{2}}$$\n\n$$L(64)=4\\\\cdot 64^{\\\\frac{3}{2}}$$\n\n$$64^{\\\\frac{3}{2}}=\\\\bigl(64^{\\\\frac{1}{2}}\\\\bigr)^{3}$$\n\n$$64^{\\\\frac{1}{2}}=8$$\n\n$$8^{3}=512$$\n\n$$L(64)=4\\\\cdot 512$$\n\n$$L(64)=2048$$\n\n$$L(64)=256^{\\\\frac{3}{2}}$$\n\n$$256^{\\\\frac{3}{2}}=\\\\bigl(256^{\\\\frac{1}{2}}\\\\bigr)^{3}$$\n\n$$256^{\\\\frac{1}{2}}=16$$\n\n$$16^{3}=4096$$\n\n$$L(64)=4096$$\n\n$$64^{\\\\frac{1}{2}}=\\\\bigl(64^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$8^{1}=8$$\n\n$$256^{\\\\frac{1}{2}}=\\\\bigl(256^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$16^{1}=16$$\n\n$$64^{\\\\frac{3}{2}}$$\n\n$$L(64)=512$$\n\nZweitausendachtundvierzig liegt über $2000$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDie Übersicht liefert den zusammengesetzten Exponenten\n\n$$\\\\frac{3}{2}$$\n\n.\n\n$$\\\\frac{3}{2}>1$$\n\nDie Schäden beschleunigen sich mit steigendem Wind.\n\nHalte den rekonstruierten Koeffizienten und Exponenten fest; nur die behauptete Eingabe (oder Schwelle) ändert sich.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin Schaden von $1000$ invertiert die rekonstruierte Zusammensetzung\n\n$$L(w)=4 w^{\\\\frac{3}{2}}$$\n\n.\n\n$$4 w^{\\\\frac{3}{2}}=1000$$\n\n$$w^{\\\\frac{3}{2}}=250$$\n\n$$w=250^{\\\\frac{2}{3}}\\\\approx 39.69$$\n\nDiese Windgeschwindigkeit liegt nicht über $50$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Sturmflut beträgt $s(w)=0.5 w^{0.5}$ Meter für die Windgeschwindigkeit $w>0$ und der Verlustindex ist $L(s)=32 s^{3}$.\n\n**Teil 1: Übersetzung.**\n\nDas Zusammensetzen der beiden Stufen ersetzt den Anstieg in den Verlustwürfel: $$L(w)=32\\left(0.5 w^{0.5}\\right)^{3}$$ $$L(w)=32\\cdot 0.125\\cdot w^{1.5}$$ **Teil 2: Lösung.** $$L(w)=4 w^{\\frac{3}{2}}$$ Die rekonstruierte Zusammensetzung ist ein Monom der Windgeschwindigkeit, des Koeffizienten $4$ und des Exponenten $\\frac{3}{2}$."
+    "solution_overview": "Die Sturmflut beträgt $s(w)=0.5 w^{0.5}$ Meter bei Windgeschwindigkeit $w>0$, und der Schadensindex ist $L(s)=32 s^{3}$.\n\n**Teil 1: Übersetzung.**\n\nDie Zusammensetzung der beiden Stufen setzt die Fluthöhe in den Schadenskubus ein:\n\n$$L(w)=32\\\\left(0.5 w^{0.5}\\\\right)^{3}$$\n\n$$L(w)=32\\\\cdot 0.125\\\\cdot w^{1.5}$$\n\n**Teil 2: Lösung.**\n\n$$L(w)=4 w^{\\\\frac{3}{2}}$$\n\nDie rekonstruierte Zusammensetzung ist ein Monom in der Windgeschwindigkeit mit Koeffizient $4$ und Exponent $\\\\frac{3}{2}$."
   },
   "MATH 8.54": {
     "title": "Marktwirkung eines Blocktrades",
@@ -1178,23 +1178,23 @@
     "solution_overview": "Die Halteleistung folgt $H(m)=Am^{\\frac{2}{3}}$ Kilonewtons für Masse $m>0$ Kilogramm. Eine Studie Boje mit $8$ kg hielt $24$ kN. Das gleiche Gesetz in Tonnen ist $H(t)=Bt^{\\frac{2}{3}}$, mit $1$ Tonne $=1000$ kg.\n\n**Teil 1: Modellaufbau.** $m$ = Boje-Masse in Kilogramm, $t$ = die gleiche Masse in Tonnen und $H$ = die Haltekraft in Kilonewtons. Der Exponent ist gegeben, so dass die Testversion $A$ behebt. Wechselnde Einheiten sind die Substitution $m=1000t$.\n\n**1. Übersetzen: der Prozess Boje.** $$A\\cdot 8^{\\frac{2}{3}}=24$$ **2. Übersetzen: die Einheit ändern.** $$B=A\\cdot 1000^{\\frac{2}{3}}$$ **Teil 2: Lösung.** $$\n8^{\\frac{2}{3}} = (2^{3})^{\\frac{2}{3}}\n$$ $$\n= 4\n$$ $$4A=24$$ $$A=6$$ $$\n1000^{\\frac{2}{3}} = (10^{3})^{\\frac{2}{3}}\n$$ $$\n= 100\n$$ $$\nB = 6\\cdot 100\n$$ $$\n= 600\n$$ Die zurückgewonnenen Gesetze sind $$H(m)=6m^{\\frac{2}{3}}$$ $$H(t)=600t^{\\frac{2}{3}}$$"
   },
   "MATH 8.63": {
-    "title": "Netzwerkdurchsatz gegen eine inverse Quadrat-Untergrenze",
-    "context": "Der dauerhafte Durchsatz eines Funknetzes folgt $T(d)=A d^{-2}$ Megabit pro Sekunde, wobei $d>0$ die Hop-Distanz in Meter ist. Ein Bench-Test bei $d=4$ m ergab $T=50$ Mbps. Die Verbindung gilt nur als zuverlässig, solange der Durchsatz bei mindestens $8$ Mbps bleibt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Maschennetz-Durchsatz gegen eine inverse Quadrat-Untergrenze",
+    "context": "Der dauerhafte Durchsatz eines Funk-Maschennetzes folgt $T(d)=A d^{-2}$ Megabit pro Sekunde, wobei $d>0$ die Sprungweite in Meter ist. Ein Bench-Test bei $d=4$ m ergab $T=50$ Mbps. Die Verbindung gilt nur als zuverlässig, solange der Durchsatz bei mindestens $8$ Mbps bleibt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "The farthest reliable hop distance is already under $12$ m.",
-      "Verdopplung der Hop-Distanz halbiert den Durchsatz.",
-      "A hop of $11$ m still clears the $8$ Mbps reliability floor.",
-      "Ein zusätzlicher Meter Hop-Distanz verringert den Durchsatz bei $8$ m stärker als bei $4$ m."
+      "Die für einen gegebenen Durchsatz nötige Sprungweite ist selbst eine Potenzfunktion dieses Durchsatzes.",
+      "Die größte zuverlässige Sprungweite liegt bereits unter $12$ m.",
+      "Eine Verdopplung der Sprungweite halbiert den Durchsatz.",
+      "Eine Sprungweite von $11$ m erfüllt noch die Zuverlässigkeitsuntergrenze von $8$ Mbps.",
+      "Ein zusätzlicher Meter Sprungweite senkt den Durchsatz bei $8$ m stärker als bei $4$ m."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nA nonzero power inverts to another power. Die Übersicht liefert\n\n$$T=\\frac{800}{d^{2}}$$\n\nIsolating distance gives\n\n$$d=\\sqrt{800}\\, T^{-\\frac{1}{2}}$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Zuverlässigkeitsschwelle $T\\ge 8$ wird aus dem rekonstruierten Gesetz invertiert. Weil der Exponent negativ ist, ist diese Schwelle eine maximale Hop-Distanz:\n\n$$\\frac{800}{d^{2}}=8$$\n\n$$d^{2}=100$$\n\n$$d=10$$\n\nDie weiteste zuverlässige Hop-Distanz ist $10$ m und liegt damit bereits unter $12$ m.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nVerdopplung der Hop-Distanz multipliziert den Durchsatz mit\n\n$$2^{-2}$$\n\n, nicht mit\n\n$$\\frac{1}{2}$$\n\n$$\\frac{T(2d)}{T(d)}=2^{-2}$$\n\n$$\\frac{T(2d)}{T(d)}=\\frac{1}{4}$$\n\nVerdopplung der Hop-Distanz viertelt den Durchsatz.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nOb $11$ m noch freigibt $8$ Mbps ist eine Ebene des rekonstruierten Gesetzes: $$T(11)=\\frac{800}{11^{2}}$$ $$1^{2}=1$$ $$T(11)=\\frac{800}{11}$$ $$T(11)=\\frac{800}{121}\\approx 6.61$$ Die Behauptung erfordert $T(11)\\ge 8$. Wir haben $6.61<8$.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin zusätzlicher Meter ist die Nachfrageg des wiedergewonnen Gesetzes $$T(d)=800d^{-2}$$ $$T'(d)=-1600\\, d^{-3}$$ At $4$ m: $$|T'(4)|=\\frac{1600}{64}$$ $$|T'(4)|=25$$ At $8$ m: $$|T'(8)|=\\frac{1600}{512}$$ $$|T'(8)|=3.125$$ Die Behauptung erfordert a larger cut at $8$ m than at $4$ m. Wir haben $3.125<25$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nEine von null verschiedene Potenz invertiert zu einer anderen Potenz. Die Übersicht liefert\n\n$$T=\\\\frac{800}{d^{2}}$$\n\nIsoliert man die Distanz, erhält man\n\n$$d=\\\\sqrt{800}\\\\, T^{-\\\\frac{1}{2}}$$\n\nDie für einen gegebenen Durchsatz nötige Sprungweite ist weiterhin eine Potenz dieses Durchsatzes.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Zuverlässigkeitsuntergrenze $T\\\\ge 8$ wird aus dem rekonstruierten Gesetz invertiert. Weil der Exponent negativ ist, ist diese Untergrenze eine maximale Sprungweite:\n\n$$\\\\frac{800}{d^{2}}=8$$\n\n$$d^{2}=100$$\n\n$$d=10$$\n\nDie größte zuverlässige Sprungweite beträgt $10$ m und liegt damit bereits unter $12$ m.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nEine Verdopplung der Sprungweite multipliziert den Durchsatz mit\n\n$$2^{-2}$$\n\n, nicht mit\n\n$$\\\\frac{1}{2}$$\n\n$$\\\\frac{T(2d)}{T(d)}=2^{-2}$$\n\n$$\\\\frac{T(2d)}{T(d)}=\\\\frac{1}{4}$$\n\nEine Verdopplung der Sprungweite viertelt den Durchsatz.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nOb $11$ m noch $8$ Mbps erfüllt, ist ein Niveau des rekonstruierten Gesetzes:\n\n$$T(11)=\\\\frac{800}{11^{2}}$$\n\n$$1^{2}=1$$\n\n$$T(11)=\\\\frac{800}{11}$$\n\n$$T(11)=\\\\frac{800}{121}\\\\approx 6.61$$\n\nDie Behauptung verlangt $T(11)\\\\ge 8$. Wir haben $6.61<8$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nEin zusätzlicher Meter ist die Ableitung des rekonstruierten Gesetzes\n\n$$T(d)=800d^{-2}$$\n\n$$T'(d)=-1600\\\\, d^{-3}$$\n\nBei $4$ m:\n\n$$|T'(4)|=\\\\frac{1600}{64}$$\n\n$$|T'(4)|=25$$\n\nBei $8$ m:\n\n$$|T'(8)|=\\\\frac{1600}{512}$$\n\n$$|T'(8)|=3.125$$\n\nDie Behauptung verlangt einen stärkeren Rückgang bei $8$ m als bei $4$ m. Wir haben $3.125<25$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Mesh throughput follows $T(d)=Ad^{-2}$ megabits per second for hop distance $d>0$ metres. A bench test recorded $T(4)=50$.\n\n**Teil 1: Modellaufbau.**\n\nLet $d$ = hop distance in metres und $T$ = sustained throughput in megabits per second. The exponent $-2$ is given, so the bench reading fixes $A$.\n\n**1. Translate: the bench reading.**\n\n$$\\frac{A}{4^{2}}=50$$\n\n**Teil 2: Lösung.**\n\n$$\\frac{A}{16}=50$$\n\n$$A=800$$\n\nDas rekonstruierte Gesetz lautet\n\n$$T(d)=\\frac{800}{d^{2}}$$"
+    "solution_overview": "Der Maschennetz-Durchsatz folgt $T(d)=Ad^{-2}$ Megabit pro Sekunde bei Sprungweite $d>0$ Meter. Ein Bench-Test ergab $T(4)=50$.\n\n**Teil 1: Modellaufbau.**\n\nSei $d$ = Sprungweite in Meter und $T$ = dauerhafter Durchsatz in Megabit pro Sekunde. Der Exponent $-2$ ist gegeben, daher legt der Bench-Wert $A$ fest.\n\n**1. Übersetzung: der Bench-Wert.**\n\n$$\\\\frac{A}{4^{2}}=50$$\n\n**Teil 2: Lösung.**\n\n$$\\\\frac{A}{16}=50$$\n\n$$A=800$$\n\nDas rekonstruierte Gesetz lautet\n\n$$T(d)=\\\\frac{800}{d^{2}}$$"
   },
   "MATH 8.64": {
     "title": "Allometrische Kiemenfläche über Körpermasse",
@@ -1314,20 +1314,20 @@
     "title": "Staplerdurchsatz im Lager unter Personalobergrenze",
     "context": "Der Gabelstapler-Durchsatz folgt $T(s)=A s^{0.5}$ Paletten pro Stunde, wobei $s>0$ die Anzahl der Fahrer in der Schicht ist. Eine erfasste Schicht mit $16$ Fahrern bewegte $80$ Paletten pro Stunde. Sicherheitsregeln begrenzen die Schicht auf $36$ Fahrer. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "With $36$ drivers the model already sagt voraus more than $110$ pallets per hour.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Reaching $150$ pallets per hour stays inside the safety cap.",
-      "Siehe die Übersicht und die Rechnungsschritte."
+      "Um den erfassten Durchsatz zu verdoppeln, muss der Hof die Besatzung mehr als verdoppeln.",
+      "Mit $36$ Fahrern sagt das Modell bereits mehr als $110$ Paletten pro Stunde voraus.",
+      "Der Durchsatz pro Fahrer steigt, wenn die Besatzung wächst.",
+      "Das Erreichen von $150$ Paletten pro Stunde bleibt innerhalb der Sicherheitsobergrenze.",
+      "Weil der Durchsatz mit der Besatzung steigt, ist die Fahrer-Obergrenze zugleich eine Obergrenze für die pro Stunde bewegten Paletten."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Verdopplung der protokollierten $80$ -Paletten bedeutet $T=160$. Invertieren Sie das rekonstruierte Gesetz: $$20\\sqrt{s}=160$$ $$\\sqrt{s}=8$$ $$s=64$$ Die protokollierte Crew besteht aus $16$ -Fahrern und $64=4\\cdot 16$, was mehr als eine Verdopplung ist.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist ein Niveau bei the safety cap\n\n$$s=36$$\n\nDie Übersicht rekonstruiert\n\n$$T(s)=20\\sqrt{s},$$ so\n\n$$T(36)=20\\cdot 6$$\n\n$$T(36)=120$$\n\nDie Behauptung erfordert mehr als $110$ pallets per hour. Wir haben $120>110$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDurchsatz pro Fahrer ist das rekonstruierte Gesetz geteilt durch $s$: $$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}$$ Der übrig gebliebene Exponent ist negativ, so dass die Intensität sinkt, wenn die Crew wächst. Sie steigt nicht.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDas Erreichen von $150$ -Paletten pro Stunde ist eine Umkehrung des rekonstruierten Gesetzes: $$20\\sqrt{s}=150$$ $$\\sqrt{s}=7.5$$ $$s=56.25$$ Die Sicherheitskappe ist $36$ Treiber und $56.25>36$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDer rekonstruierte Exponent $0.5$ ist positiv, so dass $T(s)$ mit $s$ steigt. Die größte juristische Crew ist somit der größte juristische Durchsatz. Die Fahrerkappe ist auch eine Kappe auf Paletten, die pro Stunde bewegt werden.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDie Verdopplung der erfassten $80$ Paletten bedeutet $T=160$. Invertiere das rekonstruierte Gesetz:\n\n$$20\\\\sqrt{s}=160$$\n\n$$\\\\sqrt{s}=8$$\n\n$$s=64$$\n\nDie erfasste Besatzung beträgt $16$ Fahrer, und $64=4\\\\cdot 16$, also mehr als eine Verdopplung.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDas ist ein Niveau an der Sicherheitsobergrenze\n\n$$s=36$$\n\nDie Übersicht liefert\n\n$$T(s)=20\\\\sqrt{s},$$ also\n\n$$T(36)=20\\\\cdot 6$$\n\n$$T(36)=120$$\n\nDie Behauptung verlangt mehr als $110$ Paletten pro Stunde. Wir haben $120>110$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDer Durchsatz pro Fahrer ist das rekonstruierte Gesetz geteilt durch $s$:\n\n$$\\\\frac{T(s)}{s}=20s^{-\\\\frac{1}{2}}$$\n\nDer verbleibende Exponent ist negativ, daher fällt die Intensität, wenn die Besatzung wächst. Sie steigt nicht.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDas Erreichen von $150$ Paletten pro Stunde ist eine Inversion des rekonstruierten Gesetzes:\n\n$$20\\\\sqrt{s}=150$$\n\n$$\\\\sqrt{s}=7.5$$\n\n$$s=56.25$$\n\nDie Sicherheitsobergrenze beträgt $36$ Fahrer, und $56.25>36$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDer rekonstruierte Exponent $0.5$ ist positiv, daher steigt $T(s)$ mit $s$. Die größte zulässige Besatzung ist daher der größte zulässige Durchsatz. Die Fahrer-Obergrenze ist zugleich eine Obergrenze für die pro Stunde bewegten Paletten.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Forklift throughput follows $T(s)=As^{0.5}$ pallets per hour for $s>0$ drivers. A logged shift recorded $T(16)=80$.\n\n**Teil 1: Modellaufbau.**\n\nLet $s$ = drivers on shift und $T$ = pallets moved per hour. The exponent $0.5$ is given, so the logged shift fixes $A$.\n\n**1. Translate: the logged shift.**\n\n$$A\\cdot 16^{0.5}=80$$\n\n**Teil 2: Lösung.**\n\n$$16^{0.5}=4$$\n\n$$4A=80$$\n\n$$A=20$$\n\nDas rekonstruierte Gesetz lautet\n\n$$T(s)=20\\sqrt{s}$$"
+    "solution_overview": "Der Gabelstapler-Durchsatz folgt $T(s)=As^{0.5}$ Paletten pro Stunde für $s>0$ Fahrer. Eine erfasste Schicht ergab $T(16)=80$.\n\n**Teil 1: Modellaufbau.**\n\nSei $s$ = Fahrer in der Schicht und $T$ = bewegte Paletten pro Stunde. Der Exponent $0.5$ ist gegeben, daher legt die erfasste Schicht $A$ fest.\n\n**1. Übersetzung: die erfasste Schicht.**\n\n$$A\\\\cdot 16^{0.5}=80$$\n\n**Teil 2: Lösung.**\n\n$$16^{0.5}=4$$\n\n$$4A=80$$\n\n$$A=20$$\n\nDas rekonstruierte Gesetz lautet\n\n$$T(s)=20\\\\sqrt{s}$$"
   },
   "MATH 8.71": {
     "title": "Abonnenten-Nachfrage und Umsatz einer Streaming-Stufe",
@@ -1369,22 +1369,22 @@
   },
   "MATH 8.73": {
     "title": "Bestellkosten gegen Lagerkosten in einem Ersatzteillager",
-    "context": "Ein Ersatzteillager bestellt eine Komponente in Losen von $q>0$ Stück. Die jährlichen Bestellkosten sind $O(q)=A q^{-1}$ Euro und die jährlichen Lagerkosten $H(q)=B q$ Euro; beide Koeffizienten sind unbekannt. Bei einem Los von $40$ Stück sind die beiden Kostenanteile gleich, und jeder beträgt $120$ Euro. Die Jahressumme ist $T=O+H$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Ersatzteillager bestellt eine Komponente in Losen von $q>0$ Stück. Die jährlichen Bestellkosten sind $O(q)=A q^{-1}$ Euro und die jährlichen Lagerkosten $H(q)=B q$ Euro; beide Koeffizienten sind unbekannt. Bei einem Los von $40$ Stück sind die beiden Komponenten gleich, und jede beträgt $120$ Euro. Die jährliche Summe ist $T=O+H$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Annual total cost is smallest where the two components meet.",
-      "A batch of $60$ units costs more than $250$ Euro a year in total. Die Aussage ist zu prüfen.",
-      "Verdopplung von any batch size leaves the annual total unchanged.",
-      "Cutting the batch from $40$ units to $20$ raises the annual total by as much as raising it from $40$ to $80$.",
-      "Bei $80$ units, ordering cost is more than $200$ Euro. Die Aussage ist zu prüfen."
+      "Die jährlichen Gesamtkosten sind dort am kleinsten, wo die beiden Komponenten zusammentreffen.",
+      "Ein Los von $60$ Stück kostet insgesamt mehr als $250$ Euro im Jahr.",
+      "Eine Verdopplung jeder Losgröße lässt die jährliche Summe unverändert.",
+      "Eine Verringerung des Loses von $40$ auf $20$ Stück erhöht die jährliche Summe um ebenso viel wie eine Erhöhung von $40$ auf $80$.",
+      "Bei $80$ Stück liegen die Bestellkosten über $200$ Euro."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nThe two components meet where $$O(q)=H(q)$$ Differenzierung der zurückgewonnenen Summe ergibt $$T'(q)=-\\frac{4800}{q^{2}}+3$$ Setzen Sie die Nachfrageg gleich Null: $$-\\frac{4800}{q^{2}}+3=0$$ $$q^{2}=1600$$ $$q=40$$ Das zweite Derivat ist $$T''(q)=\\frac{9600}{q^{3}}$$ was für $q>0$ positiv ist, so dass der kritische Punkt ein Minimum ist. Dieser Punkt ist die aufgezeichnete Kreuzung.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist ein Niveau bei\n\n$$q=60$$\n\nDie Übersicht rekonstruiert\n\n$$T(q)=\\frac{4800}{q}+3q,$$ so\n\n$$T(60)=80+180$$\n\n$$T(60)=260$$\n\nDie Behauptung erfordert mehr als $250$ euros. Wir haben $260>250$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nVerdopplung der aufgezeichneten Charge von $40$ Einheiten ergibt $$q=80$$ $$T(40)=120+120$$ $$T(40)=240$$ $$T(80)=60+240$$ $$T(80)=300$$ Die jährlichen Gesamtänderungen von $240$ zu $300$. Er ist nicht unverändert.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nVon der wiedergewonnenen Summe, $$T(20)=240+60$$ $$T(20)=300$$ $$T(40)=240$$ $$T(80)=300$$ Das Schneiden der Charge von $40$ auf $20$ erhöht $T$ um $60$ Euro und das Anheben von $40$ auf $80$ erhöht $T$ um die gleichen $60$ Euro.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nOrdering cost at $$q=80$$ ist die rekonstruierte $$O(q)=\\frac{4800}{q}$$ $$O(80)=\\frac{4800}{80}$$ $$O(80)=60$$ Die Behauptung erfordert more than $200$ euros. Wir haben $60<200$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie beiden Komponenten treffen sich dort, wo\n\n$$O(q)=H(q)$$\n\n. Die Ableitung der rekonstruierten Summe ergibt\n\n$$T'(q)=-\\\\frac{4800}{q^{2}}+3$$\n\nSetze die Ableitung gleich null:\n\n$$-\\\\frac{4800}{q^{2}}+3=0$$\n\n$$q^{2}=1600$$\n\n$$q=40$$\n\nDie zweite Ableitung ist\n\n$$T''(q)=\\\\frac{9600}{q^{3}}$$\n\nund für $q>0$ positiv, daher ist der kritische Punkt ein Minimum. Dieser Punkt ist der erfasste Schnittpunkt.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDas ist ein Niveau bei\n\n$$q=60$$\n\nDie Übersicht liefert\n\n$$T(q)=\\\\frac{4800}{q}+3q,$$ also\n\n$$T(60)=80+180$$\n\n$$T(60)=260$$\n\nDie Behauptung verlangt mehr als $250$ Euro. Wir haben $260>250$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nEine Verdopplung des erfassten Loses von $40$ Stück ergibt\n\n$$q=80$$\n\n$$T(40)=120+120$$\n\n$$T(40)=240$$\n\n$$T(80)=60+240$$\n\n$$T(80)=300$$\n\nDie jährliche Summe ändert sich von $240$ auf $300$. Sie bleibt nicht unverändert.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nAus der rekonstruierten Summe folgt\n\n$$T(20)=240+60$$\n\n$$T(20)=300$$\n\n$$T(40)=240$$\n\n$$T(80)=300$$\n\nEine Verringerung des Loses von $40$ auf $20$ erhöht $T$ um $60$ Euro, und eine Erhöhung von $40$ auf $80$ erhöht $T$ um dieselben $60$ Euro.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Bestellkosten bei\n\n$$q=80$$\n\n sind die rekonstruierten\n\n$$O(q)=\\\\frac{4800}{q}$$\n\n$$O(80)=\\\\frac{4800}{80}$$\n\n$$O(80)=60$$\n\nDie Behauptung verlangt mehr als $200$ Euro. Wir haben $60<200$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Jährliche Bestellkosten sind $O(q)=Aq^{-1}$ Euro und jährliche Haltekosten sind $H(q)=Bq$ Euro. Bei einer Charge von $40$ -Einheiten entsprechen die beiden Komponenten jeweils $120$ Euro, und die Jahressumme beträgt $T=O+H$.\n\n**Teil 1: Modellaufbau.** $q$ = Einheiten pro Charge. Die gemeinsame Ebene gewinnt beide Koeffizienten zurück.\n\n**1. Translate: the recorded crossing.** $$\\frac{A}{40}=120$$ $$40B=120$$ **Teil 2: Lösung.** $$A=4800$$ $$B=3$$ Die zurückgewonnene Summe ist $$T(q)=\\frac{4800}{q}+3q$$"
+    "solution_overview": "Die jährlichen Bestellkosten sind $O(q)=Aq^{-1}$ Euro und die jährlichen Lagerkosten $H(q)=Bq$ Euro. Bei einem Los von $40$ Stück betragen beide Komponenten je $120$ Euro, und die jährliche Summe ist $T=O+H$.\n\n**Teil 1: Modellaufbau.**\n\nSei $q$ = Stück pro Los. Das gemeinsame Niveau liefert beide Koeffizienten.\n\n**1. Übersetzung: der erfasste Schnittpunkt.**\n\n$$\\\\frac{A}{40}=120$$\n\n$$40B=120$$\n\n**Teil 2: Lösung.**\n\n$$A=4800$$\n\n$$B=3$$\n\nDie rekonstruierte Summe lautet\n\n$$T(q)=\\\\frac{4800}{q}+3q$$"
   },
   "MATH 8.74": {
     "title": "Durchschnittsprodukt auf einer Abfülllinie",
@@ -1426,41 +1426,41 @@
   },
   "MATH 8.76": {
     "title": "Break-even einer Fischfarm mit abnehmenden Ernteerträgen",
-    "context": "Eine Fischfarm wandelt Futter in Ernteeinnahmen $R(x)=A x^{\\frac{2}{3}}$ Tausend Euro pro Saison um, wobei $x>0$ Tonnen Futter sind, während Futter- und Handlingkosten $C(x)=30x$ Tausend Euro betragen. Bei $8$ Tonnen Futter betrugen die Ernteeinnahmen $360$ Tausend Euro. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Fischfarm wandelt Futter in Ernteeinnahmen $R(x)=A x^{\\\\frac{2}{3}}$ Tausend Euro pro Saison um, wobei $x>0$ Tonnen Futter sind, während Futter- und Handhabungskosten $C(x)=30x$ Tausend Euro betragen. Bei $8$ Tonnen Futter betrugen die Ernteeinnahmen $360$ Tausend Euro. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Bei $64$ Tonnen, cost already exceeds harvest revenue.",
-      "An extra tonne of feed adds more revenue after $27$ Tonnen than after $8$. Die Aussage ist zu prüfen.",
-      "Once cost overtakes revenue, feeding still more cannot restore a surplus.",
-      "At $8$ tonnes the season clears more than $100$ thousund euros."
+      "Die Einnahmen sind proportional zu den eingesetzten Tonnen Futter.",
+      "Bei $64$ Tonnen übersteigen die Kosten bereits die Ernteeinnahmen.",
+      "Eine zusätzliche Tonne Futter bringt nach $27$ Tonnen mehr Einnahmen als nach $8$ Tonnen.",
+      "Sobald die Kosten die Einnahmen überholen, kann weiteres Füttern keinen Überschuss mehr wiederherstellen.",
+      "Bei $8$ Tonnen erwirtschaftet die Saison mehr als $100$ Tausend Euro."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nDer Umsatz ist nur proportional zum Feed, wenn der Exponent $1$ ist. Der angegebene Exponent ist $\\frac{2}{3}$, also $$\\frac{R(2x)}{R(x)}=2^{\\frac{2}{3}}\\approx 1.587$$ nicht $2$. Die Einnahmen sind nicht proportional zu den Tonnen Futtermitteln.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Rechnung bestätigt die Behauptung.\n\n$$x=64$$\n\n$$R(64)=90\\cdot 16$$\n\n$$R(64)=1440$$\n\n$$C(64)=30\\cdot 64$$\n\n$$C(64)=1920$$\n\nCost $1920$ already exceeds revenue $1440$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nEine zusätzliche Tonne Futtermittel ist die Nachfrageg der rekonstruierten Einnahmen: $$R'(x)=60x^{-\\frac{1}{3}}$$ After $8$ tonnes: $$R'(8)=60\\cdot\\frac{1}{2}$$ $$R'(8)=30$$ After $27$ tonnes: $$R'(27)=60\\cdot\\frac{1}{3}$$ $$R'(27)=20$$ Die Behauptung erfordert $R'(27)>R'(8)$. Wir haben $20<30$.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nCost overtakes revenue where\n\n$$R(x)=C(x)$$\n\n$$90x^{\\frac{2}{3}}=30x$$\n\n$$x^{\\frac{1}{3}}=3$$\n\n$$x=27$$\n\nFor $x>27$ the ratio\n\n$$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}}$$\n\n stays below $1$ und keeps falling. Extra feed cannot restore a surplus.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nProfit at $8$ tonnes is revenue minus cost:\n\n$$R(8)-C(8)=360-240$$\n\n$$R(8)-C(8)=120$$\n\nThe season clears $120$ thousund euros, which is more than $100$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
+      "**A.** → Falsch\n\nDie Einnahmen sind nur dann proportional zum Futter, wenn der Exponent $1$ ist. Der gegebene Exponent ist $\\\\frac{2}{3}$, also\n\n$$\\\\frac{R(2x)}{R(x)}=2^{\\\\frac{2}{3}}\\\\approx 1.587$$\n\nnicht $2$. Die Einnahmen sind nicht proportional zu den eingesetzten Tonnen Futter.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDas ist ein Vergleich der beiden rekonstruierten Gesetze bei\n\n$$x=64$$\n\n$$R(64)=90\\\\cdot 16$$\n\n$$R(64)=1440$$\n\n$$C(64)=30\\\\cdot 64$$\n\n$$C(64)=1920$$\n\nDie Kosten $1920$ übersteigen bereits die Einnahmen $1440$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nEine zusätzliche Tonne Futter ist die Ableitung der rekonstruierten Einnahmen:\n\n$$R'(x)=60x^{-\\\\frac{1}{3}}$$\n\nNach $8$ Tonnen:\n\n$$R'(8)=60\\\\cdot\\\\frac{1}{2}$$\n\n$$R'(8)=30$$\n\nNach $27$ Tonnen:\n\n$$R'(27)=60\\\\cdot\\\\frac{1}{3}$$\n\n$$R'(27)=20$$\n\nDie Behauptung verlangt $R'(27)>R'(8)$. Wir haben $20<30$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDie Kosten überholen die Einnahmen dort, wo\n\n$$R(x)=C(x)$$\n\n$$90x^{\\\\frac{2}{3}}=30x$$\n\n$$x^{\\\\frac{1}{3}}=3$$\n\n$$x=27$$\n\nFür $x>27$ bleibt das Verhältnis\n\n$$\\\\frac{R(x)}{C(x)}=\\\\frac{3}{x^{\\\\frac{1}{3}}}$$\n\nunter $1$ und fällt weiter. Zusätzliches Futter kann keinen Überschuss wiederherstellen.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDer Gewinn bei $8$ Tonnen ist Einnahmen minus Kosten:\n\n$$R(8)-C(8)=360-240$$\n\n$$R(8)-C(8)=120$$\n\nDie Saison erwirtschaftet $120$ Tausend Euro, also mehr als $100$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Ernteeinnahmen folgen $R(x)=Ax^{\\frac{2}{3}}$ tausend Euro für $x>0$ Tonnen Futter, und Kosten sind $C(x)=30x$ tausend Euro. Bei $8$ Tonnen, Umsatz war $360$ tausend Euro.\n\n**Teil 1: Modellaufbau.** $x$ = Tonnen Futter. Der Exponent wird angegeben, also die acht Tonnen hohen Pins $A$. Die Kosten sind linear.\n\n**1. Translate: the recorded revenue.** $$A\\cdot 8^{\\frac{2}{3}}=360$$ **Teil 2: Lösung.** $$8^{\\frac{2}{3}}=4$$ $$4A=360$$ $$A=90$$ Die rekonstruierten Gesetze sind $$R(x)=90x^{\\frac{2}{3}}$$ $$C(x)=30x$$"
+    "solution_overview": "Die Ernteeinnahmen folgen $R(x)=Ax^{\\\\frac{2}{3}}$ Tausend Euro für $x>0$ Tonnen Futter, und die Kosten betragen $C(x)=30x$ Tausend Euro. Bei $8$ Tonnen betrugen die Einnahmen $360$ Tausend Euro.\n\n**Teil 1: Modellaufbau.**\n\nSei $x$ = Tonnen Futter. Der Exponent ist gegeben, daher legt das Acht-Tonnen-Niveau $A$ fest. Die Kosten sind linear.\n\n**1. Übersetzung: die erfassten Einnahmen.**\n\n$$A\\\\cdot 8^{\\\\frac{2}{3}}=360$$\n\n**Teil 2: Lösung.**\n\n$$8^{\\\\frac{2}{3}}=4$$\n\n$$4A=360$$\n\n$$A=90$$\n\nDie rekonstruierten Gesetze lauten\n\n$$R(x)=90x^{\\\\frac{2}{3}}$$\n\n$$C(x)=30x$$"
   },
   "MATH 8.77": {
     "title": "Kalibrierung eines Handhabungskostengesetzes aus einer Kostendifferenz",
-    "context": "Ein Distributionszentrum modelliert die täglichen Handling-Kosten durch $f(x)=A x^{\\frac{3}{2}}$ Euro, wobei $x>0$ ein Palettenvolumen-Index ist. Die einzelnen Tageswerte gingen verloren; der einzige erhaltene Eintrag besagt, dass die Kosten beim Index $16$ die Kosten beim Index $4$ um $336$ Euro übersteigen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Distributionszentrum modelliert die täglichen Handhabungskosten durch $f(x)=A x^{\\\\frac{3}{2}}$ Euro, wobei $x>0$ ein Palettenvolumen-Index ist. Die einzelnen Tageswerte gingen verloren; der einzige erhaltene Eintrag besagt, dass die Kosten beim Index $16$ die Kosten beim Index $4$ um $336$ Euro übersteigen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Multiplikation des Palettenvolumen-Index mit $4$ multipliziert Handling-Kosten mit $4$.",
-      "Beim Index $9$ liegt der modellierte Handling-Kosten bereits über $150$ Euro.",
-      "Handling-Kosten wächst schneller als der Palettenvolumen-Index.",
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "Die Erhöhung des Index von $9$ auf $25$ fügt unter $500$ Euro von Handling-Kosten hinzu."
+      "Eine Multiplikation des Palettenvolumen-Index mit $4$ multipliziert die Handhabungskosten mit $4$.",
+      "Beim Index $9$ liegen die modellierten Handhabungskosten bereits über $150$ Euro.",
+      "Die Handhabungskosten wachsen schneller als der Palettenvolumen-Index.",
+      "Weil der Exponent größer als eins ist, erzeugen gleiche Abstände im Index gleiche Abstände in den Kosten.",
+      "Eine Erhöhung des Index von $9$ auf $25$ fügt weniger als $500$ Euro Handhabungskosten hinzu."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nMultipliziert man den Index mit $4$ multipliziert die Kosten mit $4$ nur, wenn der Exponent $1$ ist. Der angegebene Exponentes ist $\\frac{3}{2}$, also $$\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}$$ $$4^{\\frac{3}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{3}$$ $$4^{\\frac{1}{2}}=2$$ $$2^{3}=8$$ $$\\frac{f(4x)}{f(x)}=8$$ $$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$ $$2^{1}=2$$ Ein Faktor von $4$ auf dem Index multipliziert Handling-Kosten mit $8$, nicht mit $4$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist ein Niveau bei index $9$. Die Übersicht rekonstruiert\n\n$$f(x)=6x^{\\frac{3}{2}}$$\n\n, so\n\n$$f(9)=6\\cdot 27$$\n\n$$f(9)=162$$\n\nDie Behauptung erfordert mehr als $150$ euros. Wir haben $162>150$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nDie Übersicht rekonstruiert exponent $$\\frac{3}{2}$$ Handling-Kosten wächst schneller als der Index, wenn dieser Exponent größer als 1 ist: $$\\frac{3}{2}>1$$ Das ist der Fall.\n\nHalten Sie den rekonstruierten Koeffizienten und Exponenten fest; nur der beanspruchte Input (oder Schwellenwert) ändert sich.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nGleiche Kostenlücken aus gleichen Indexlücken bräuchten ein lineares Gesetz. Der rekonstruierte Exponent $$\\frac{3}{2}>1$$ makes $f$ strictly convex, so equal index gaps produce larger cost gaps at larger $x$. For example $$f(9)-f(4)=162-48$$ $$f(9)-f(4)=114$$ $$f(16)-f(9)=384-162$$ $$f(16)-f(9)=222$$ Die Lücken sind nicht gleich.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Kosten, die vom Index $9$ zum Index $25$ hinzugefügt werden, sind ein Unterschied von zwei wiedergewonnenen Ebenen: $$f(25)=6\\cdot 125$$ $$f(25)=750$$ $$f(9)=162$$ $$750-162$$ $$f(9)=588$$ Die zusätzlichen Kosten betragen $588$ Euro, was nicht unter $500$ nicht steht.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch."
+      "**A.** → Falsch\n\nEine Multiplikation des Index mit $4$ multipliziert die Kosten mit $4$ nur dann, wenn der Exponent $1$ ist. Der gegebene Exponent ist $\\\\frac{3}{2}$, also\n\n$$\\\\frac{f(4x)}{f(x)}=4^{\\\\frac{3}{2}}$$\n\n$$4^{\\\\frac{3}{2}}=\\\\bigl(4^{\\\\frac{1}{2}}\\\\bigr)^{3}$$\n\n$$4^{\\\\frac{1}{2}}=2$$\n\n$$2^{3}=8$$\n\n$$\\\\frac{f(4x)}{f(x)}=8$$\n\n$$4^{\\\\frac{1}{2}}=\\\\bigl(4^{\\\\frac{1}{2}}\\\\bigr)^{1}$$\n\n$$2^{1}=2$$\n\nEin Faktor $4$ beim Index multipliziert die Handhabungskosten mit $8$, nicht mit $4$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDas ist ein Niveau beim Index $9$. Die Übersicht liefert\n\n$$f(x)=6x^{\\\\frac{3}{2}}$$\n\n, also\n\n$$f(9)=6\\\\cdot 27$$\n\n$$f(9)=162$$\n\nDie Behauptung verlangt mehr als $150$ Euro. Wir haben $162>150$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie Übersicht liefert den Exponenten\n\n$$\\\\frac{3}{2}$$\n\n. Die Handhabungskosten wachsen schneller als der Index, wenn dieser Exponent größer als eins ist:\n\n$$\\\\frac{3}{2}>1$$\n\nDas entspricht der Behauptung.\n\nHalte den rekonstruierten Koeffizienten und Exponenten fest; nur die behauptete Eingabe (oder Schwelle) ändert sich.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nGleiche Kostenabstände aus gleichen Indexabständen würden ein lineares Gesetz erfordern. Der rekonstruierte Exponent\n\n$$\\\\frac{3}{2}>1$$\n\n macht $f$ streng konvex, daher erzeugen gleiche Indexabstände bei größerem $x$ größere Kostenabstände. Zum Beispiel\n\n$$f(9)-f(4)=162-48$$\n\n$$f(9)-f(4)=114$$\n\n$$f(16)-f(9)=384-162$$\n\n$$f(16)-f(9)=222$$\n\nDie Abstände sind nicht gleich.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie von Index $9$ bis Index $25$ hinzukommenden Kosten sind die Differenz zweier rekonstruierter Niveaus:\n\n$$f(25)=6\\\\cdot 125$$\n\n$$f(25)=750$$\n\n$$f(9)=162$$\n\n$$750-162$$\n\n$$f(9)=588$$\n\nDie hinzukommenden Kosten betragen $588$ Euro und liegen damit nicht unter $500$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Handling-Kosten folgen $f(x)=Ax^{\\frac{3}{2}}$ Euro für Palettenvolumen-Index $x>0$. Die erfasste Differenz ist $f(16)-f(4)=336$.\n\n**Teil 1: Modellaufbau.**\n\nEs sei $x$ = Palettenvolumen-Index und $f$ = tägliche Euro. Keine einzelne Ebene ist bekannt, so $A$ kommt aus einem Unterschied.\n\n**1. Translate: the surviving record.** $$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$ **Teil 2: Lösung.** $$16^{\\frac{3}{2}}=64, \\qquad 4^{\\frac{3}{2}}=8$$ $$56A=336$$ $$A=6$$ Das rekonstruierte Gesetz lautet $$f(x)=6x^{\\frac{3}{2}}$$"
+    "solution_overview": "Die Handhabungskosten folgen $f(x)=Ax^{\\\\frac{3}{2}}$ Euro für den Palettenvolumen-Index $x>0$. Der erhaltene Eintrag ist $f(16)-f(4)=336$.\n\n**Teil 1: Modellaufbau.**\n\nSei $x$ = Palettenvolumen-Index und $f$ = Euro pro Tag. Kein einzelnes Niveau ist bekannt, daher kommt $A$ aus einer Differenz.\n\n**1. Übersetzung: der erhaltene Eintrag.**\n\n$$A\\\\left(16^{\\\\frac{3}{2}}-4^{\\\\frac{3}{2}}\\\\right)=336$$\n\n**Teil 2: Lösung.**\n\n$$16^{\\\\frac{3}{2}}=64, \\\\qquad 4^{\\\\frac{3}{2}}=8$$\n\n$$56A=336$$\n\n$$A=6$$\n\nDas rekonstruierte Gesetz lautet\n\n$$f(x)=6x^{\\\\frac{3}{2}}$$"
   },
   "MATH 8.78": {
     "title": "Inversion eines Abwasserlastmodells gegen eine Genehmigungsobergrenze",
@@ -1768,22 +1768,22 @@
   },
   "MATH 8.97": {
     "title": "Kühlofen-Durchsatz unter falsch skaliertem Koeffizienten",
-    "context": "A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting $4$ delivered $64$ trays an hour. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Der Durchsatz eines Glas-Kühlofens folgt $T(e)=A e^{\\\\frac{3}{2}}$ Tabletts pro Stunde bei Bandstellung $e>0$. Ein Lauf bei Bandstellung $4$ lieferte $64$ Tabletts pro Stunde. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Siehe die Übersicht und die Rechnungsschritte.",
-      "An extra unit of belt setting adds more trays after setting nine than after setting four. Die Aussage ist zu prüfen.",
-      "Bei belt setting $9$, throughput is already more than $200$ trays per hour. Die Aussage ist zu prüfen.",
-      "If the coefficient were $25\\%$ larger, the scale factor $\\frac{T(2e)}{T(e)}$ would itself become $25\\%$ larger.",
-      "If the coefficient were $25\\%$ larger, throughput at belt setting $9$ would already exceed $250$ trays per hour."
+      "Der Exponent ist größer als eins, daher wächst der Durchsatz schneller als die Bandstellung.",
+      "Eine zusätzliche Einheit Bandstellung bringt nach Stellung neun mehr Tabletts als nach Stellung vier.",
+      "Bei Bandstellung $9$ liegt der Durchsatz bereits über $200$ Tabletts pro Stunde.",
+      "Wäre der Koeffizient $25\\\\%$ größer, so würde der Skalierungsfaktor $\\\\frac{T(2e)}{T(e)}$ selbst $25\\\\%$ größer.",
+      "Wäre der Koeffizient $25\\\\%$ größer, so läge der Durchsatz bei Bandstellung $9$ bereits über $250$ Tabletts pro Stunde."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Übersicht liefert Exponent\n\n$$\\frac{3}{2}$$\n\n$1$ .\n\n$$\\frac{3}{2}>1$$\n\nA proportional law would have carried Exponent $1$.\n\nDie Rechnung bestätigt die Behauptung.\n\n.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie Übersicht rekonstruiert\n\n$$T(e)=8e^{\\frac{3}{2}}$$\n\n Differentiating gives\n\n$$T'(e)=12e^{\\frac{1}{2}}$$\n\nAfter setting four:\n\n$$T'(4)=12\\cdot 2$$\n\n$$T'(4)=24$$\n\nAfter setting nine:\n\n$$T'(9)=12\\cdot 3$$\n\n$$T'(9)=36$$\n\nDie Behauptung erfordert $T'(9)>T'(4)$. Wir haben $36>24$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht rekonstruiert\n\n$$T(e)=8e^{\\frac{3}{2}}$$\n\nAt belt setting $9$:\n\n$$T(9)=8\\cdot 27$$\n\n$$T(9)=216$$\n\nDie Behauptung is that this already liegt über $200$. Vergleiche mit der Behauptung:\n\n$$216>200.$$\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDer Skalenfaktor eines Potenzgesetzes hebt den Koeffizienten auf: $$\\frac{T(2e)}{T(e)}=2^{\\frac{3}{2}}$$ Dieser Faktor hängt nicht von $A$ ab. Die Erhöhung des Koeffizienten durch $25\\%$ lässt $2^{\\frac{3}{2}}$ unverändert, so dass der Skalenfaktor selbst nicht $25\\%$ größer wird.\n\nDer Verdopplungsfaktor ist unabhängig von $A$.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nWenn der Koeffizient $25\\%$ größer war, wurde die $$A=8$$ would become $10$. At belt setting $9$: $$T(9)=10\\cdot 27$$ $$T(9)=270$$ Die Behauptung ist, dass diese bereits $250$ übersteigt. Wir haben $270>250$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDie Übersicht liefert den Exponenten\n\n$$\\\\frac{3}{2}$$\n\n. Der Durchsatz überholt die Bandstellung, wenn dieser Exponent größer als $1$ ist.\n\n$$\\\\frac{3}{2}>1$$\n\nEin proportionales Gesetz hätte den Exponenten $1$ getragen.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Übersicht liefert\n\n$$T(e)=8e^{\\\\frac{3}{2}}$$\n\nDie Ableitung ergibt\n\n$$T'(e)=12e^{\\\\frac{1}{2}}$$\n\nNach Stellung vier:\n\n$$T'(4)=12\\\\cdot 2$$\n\n$$T'(4)=24$$\n\nNach Stellung neun:\n\n$$T'(9)=12\\\\cdot 3$$\n\n$$T'(9)=36$$\n\nDie Behauptung verlangt $T'(9)>T'(4)$. Wir haben $36>24$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten kalibrierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$T(e)=8e^{\\\\frac{3}{2}}$$\n\nBei Bandstellung $9$:\n\n$$T(9)=8\\\\cdot 27$$\n\n$$T(9)=216$$\n\nDie Behauptung lautet, dass dies bereits über $200$ liegt. Vergleich mit der Behauptung:\n\n$$216>200.$$\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDer Skalierungsfaktor eines Potenzgesetzes kürzt den Koeffizienten weg:\n\n$$\\\\frac{T(2e)}{T(e)}=2^{\\\\frac{3}{2}}$$\n\nDieser Faktor hängt nicht von $A$ ab. Eine Erhöhung des Koeffizienten um $25\\\\%$ lässt $2^{\\\\frac{3}{2}}$ unverändert, daher wird der Skalierungsfaktor selbst nicht $25\\\\%$ größer.\n\nDer Verdopplungsfaktor ist unabhängig von $A$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nWäre der Koeffizient $25\\\\%$ größer, so würde das rekonstruierte\n\n$$A=8$$\n\n zu $10$. Bei Bandstellung $9$:\n\n$$T(9)=10\\\\cdot 27$$\n\n$$T(9)=270$$\n\nDie Behauptung lautet, dass dies bereits $250$ übersteigt. Wir haben $270>250$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Lehr throughput follows $T(e)=Ae^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting $4$ delivered $64$ trays an hour.\n\n**Teil 1: Modellaufbau.**\n\nLet $e$ = belt setting und $T$ = trays per hour. Der Exponent ist gegeben, daher the recorded run pins $A$. Levels depend on $A$; scale factors cancel it.\n\n**1. Translate: the recorded run.**\n\n$$A\\cdot 4^{\\frac{3}{2}}=64 \\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$4^{\\frac{3}{2}}=8$$\n\nso $(1)$ ist $8A=64$ und $A=8$.\n\nDas rekonstruierte Gesetz lautet $T(e)=8e^{\\frac{3}{2}}$.\n\n**Answer.** $A=8$ | $T(e)=8e^{\\frac{3}{2}}$"
+    "solution_overview": "Der Kühlofen-Durchsatz folgt $T(e)=Ae^{\\\\frac{3}{2}}$ Tabletts pro Stunde bei Bandstellung $e>0$. Ein Lauf bei Bandstellung $4$ lieferte $64$ Tabletts pro Stunde.\n\n**Teil 1: Modellaufbau.**\n\nSei $e$ = Bandstellung und $T$ = Tabletts pro Stunde. Der Exponent ist gegeben, daher legt der erfasste Lauf $A$ fest. Niveaus hängen von $A$ ab; Skalierungsfaktoren kürzen $A$ weg.\n\n**1. Übersetzung: der erfasste Lauf.**\n\n$$A\\\\cdot 4^{\\\\frac{3}{2}}=64 \\\\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$4^{\\\\frac{3}{2}}=8$$\n\nalso ist $(1)$ gleich $8A=64$ und $A=8$.\n\nDas rekonstruierte Gesetz lautet $T(e)=8e^{\\\\frac{3}{2}}$.\n\n**Antwort.** $A=8$ | $T(e)=8e^{\\\\frac{3}{2}}$"
   },
   "MATH 8.98": {
     "title": "Prüfungsaufgaben – 1",
@@ -1977,22 +1977,22 @@
   },
   "MATH 8.108": {
     "title": "Prüfungsaufgaben – 11",
-    "context": "$M(s)=3s^3$ Gramm for positiv mold scale $s$ $s=1$ , $s=2$ , and $s=4$ Die Übersicht stützt die Prüfung.",
+    "context": "Ein Ofen nutzt das Potenzmodell $M(s)=3s^3$ Gramm für eine positive Formskala $s$. Dieselbe Kalibrierung wird bei $s=1$, $s=2$ und $s=4$ ohne Rundung verwendet. Techniker müssen das Modell direkt auswerten und die Ausgaben dieser drei Einstellungen vergleichen.",
     "statements": [
       "$M(1)=3$.",
       "$M(2)=24$.",
       "$M(4)=192$.",
       "$M(4)=2M(2)$.",
-      "$M(s)$ is positiv für jedes allowed $s$. Die Aussage ist zu prüfen."
+      "$M(s)$ ist für jedes zulässige $s$ positiv."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$M(s)=3s^{3}$$\n\nfor every positiv mold scale $s$\n\n$$M(1)=3\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=3\\cdot 1$$\n\n$$M(1)=3$$\n\n$3$ .\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=2$$\n\n$$M(s)=3s^{3}$$\n\n$$M(2)=3\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=3\\cdot 8$$\n\n$$M(2)=24$$\n\n$24$ gives\n\n$$24=24.$$\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=4$$\n\n$$M(s)=3s^{3}$$\n\n$$M(4)=3\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=3\\cdot 64$$\n\n$$M(4)=192$$\n\n$192$ gives\n\n$$192=192.$$\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nForm the output ratio so the positive coefficient cancels:\n\n$$\\frac{M(4)}{M(2)}=\\frac{3\\cdot 4^{3}}{3\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{3\\cdot 64}{3\\cdot 8}$$\n\n$$\\frac{4}{2}$$\n\n$$\\frac{M(4)}{M(2)}=2$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nDie Behauptung asserts\n\n$$M(4)=2M(2)$$\n\n, which would mean the ratio equals $2$. The true ratio ist $8$, so\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n$s>0$ :\n\n$$M(s)=3s^{3}$$\n\n$$3>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\nDaher every allowed input yields\n\n$$M(s)=3s^{3}$$\n\n$$3s^{3}>0$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDer Ofen ist auf das kubische Potenzgesetz\n\n$$M(s)=3s^{3}$$\n\nfür jede positive Formskala $s$ kalibriert. Setze die behauptete Einheitsskala ein:\n\n$$M(1)=3\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=3\\cdot 1$$\n\n$$M(1)=3$$\n\nDie berechnete Masse stimmt mit dem behaupteten Wert $3$ überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBehalte dasselbe kalibrierte Modell aus der Übersicht und werte bei\n\n$$s=2$$\n\n$$M(s)=3s^{3}$$\n\n$$M(2)=3\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=3\\cdot 8$$\n\n$$M(2)=24$$\n\naus. Der Vergleich mit dem behaupteten Wert $24$ ergibt\n\n$$24=24.$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nSetze die behauptete Skala ein und werte das kalibrierte Modell aus.\n\n$$s=4$$\n\n$$M(s)=3s^{3}$$\n\n$$M(4)=3\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=3\\cdot 64$$\n\n$$M(4)=192$$\n\nDer Vergleich mit dem behaupteten Wert $192$ ergibt\n\n$$192=192.$$\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nBilde das Ausgabeverhältnis, sodass der positive Koeffizient wegfällt:\n\n$$\\frac{M(4)}{M(2)}=\\frac{3\\cdot 4^{3}}{3\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{3\\cdot 64}{3\\cdot 8}$$\n\n$$\\frac{4}{2}$$\n\n$$\\frac{M(4)}{M(2)}=2$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nDie Behauptung verlangt\n\n$$M(4)=2M(2)$$\n\n, was bedeuten würde, dass das Verhältnis gleich $2$ ist. Das wahre Verhältnis ist $8$, also\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDas gemeinsame Modell ist ein Produkt aus positivem Koeffizienten und positiver Potenz auf $s>0$:\n\n$$M(s)=3s^{3}$$\n\n$$3>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\n$$M(s)=3s^{3}$$\n\n$$3s^{3}>0$$\n\nDaher liefert jede zulässige Eingabe einen positiven Modellwert.\n\nDie Modellausgabe ist für jede zulässige Skala positiv.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "A kiln uses the cubic power model $M(s)=3s^{3}$ grams for mold scale $s>0$. The same calibration is evaluated at $s=1$, $s=2$, und $s=4$ with no rounding.\n\n**Answer.** The shared model ist $M(s)=3s^{3}$. Levels keep the coefficient $3$; scale ratios cancel it und leave only a power of the input ratio. Each letter only checks its extra evaluation or comparison."
+    "solution_overview": "Ein Ofen nutzt das kubische Potenzmodell $M(s)=3s^{3}$ Gramm für Formskala $s>0$. Dieselbe Kalibrierung wird bei $s=1$, $s=2$ und $s=4$ ohne Rundung ausgewertet.\n\n**Antwort.** Das gemeinsame Modell ist $M(s)=3s^{3}$. Niveaus behalten den Koeffizienten $3$; Skalenverhältnisse kürzen ihn und lassen nur eine Potenz des Eingangsverhältnisses übrig. Jeder Buchstabe prüft nur seine zusätzliche Auswertung oder seinen Vergleich."
   },
   "MATH 8.109": {
     "title": "Prüfungsaufgaben – 12",
@@ -2015,41 +2015,41 @@
   },
   "MATH 8.110": {
     "title": "Prüfungsaufgaben – 13",
-    "context": "Eine Druckeinstellung $x>0$ muss $4x^{3/2}=108$ erfüllen. Die Steuerung akzeptiert nur die positive reelle Einstellung, und ihre Prüfroutine isoliert zuerst die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden. Alle angezeigten Werte sind exakt.",
+    "context": "Eine Druckeinstellung $x>0$ muss $4x^{3/2}=108$ erfüllen. Die Steuerung akzeptiert nur die positiv-reelle Einstellung, und ihre Prüfroutine isoliert zuerst die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden. Alle angezeigten Werte sind exakt.",
     "statements": [
       "$x^{3/2}=27$.",
       "$x=9$.",
-      "$x=-9$ is also allowed. Die Aussage ist zu prüfen.",
+      "$x=-9$ ist ebenfalls zulässig.",
       "$x^{1/2}=3$.",
-      "The equation has two positive solutions."
+      "Die Gleichung hat zwei positive Lösungen."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nStart from the controller equation und isolate the power:\n\n$$4x^{3/2}=108$$\n\nDivide both sides by the coefficient $4$:\n\n$$\\frac{4x^{3/2}}{4}=\\frac{108}{4}$$\n\n$$x^{3/2}=27$$\n\nThe isolated power matches die Behauptung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie Übersicht bereits isoliert $$x^{3/2}=27$$ Heben Sie beide Seiten zum gegenseitigen Exponenten $\\dfrac{2}{3}$ an: $$x=\\bigl(x^{3/2}\\bigr)^{2/3}$$ $$x=27^{2/3}$$ $$27^{1/3}$$ $$x=3$$ $$27^{2/3}=(27^{1/3})^{2}$$ $$27^{2/3}$$ $$27^{2/3}=3^{2}$$ $$3^{2}=9$$ $$27^{2/3}=9$$ Die einzigartige positive Lösung ist $$x=9$$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nDer Stamm beschränkt die Einstellung auf die positiven Reals: $$x>0$$ The real map $$x\\mapsto x^{3/2}$$ wird aus der positiven Quadratwurzel aufgebaut, so dass ein negativer Kandidat wie $$x=-9$$ außerhalb der erlaubten Domain liegt und keine akzeptierte Lösung ist.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nDie positive Wurzel ist $$x=9$$.\n\nNehmen Sie die positive Quadratwurzel dieser Wurzel: $$x^{1/2}=\\sqrt{9}$$ $$\\sqrt{9}=3$$ $$x^{1/2}=3$$ Diese Quadratwurzel-Identität stimmt mit der Behauptung überein\n\nDie Übereinstimmung der berechneten Zahl mit dem Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nOn $x>0$ the map\n\n$$x\\mapsto x^{3/2}$$\n\n is strictly increasing. After isolating the power,\n\n$$x^{3/2}=27$$\n\na continuous strictly increasing map meets any positive target value exactly once. The positive root is\n\n$$x=9$$\n\n, so there are not two positive solutions.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nStarte mit der Steuerungsgleichung und isoliere die Potenz:\n\n$$4x^{3/2}=108$$\n\nTeile beide Seiten durch den Koeffizienten $4$:\n\n$$\\frac{4x^{3/2}}{4}=\\frac{108}{4}$$\n\n$$x^{3/2}=27$$\n\nDie isolierte Potenz stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Übersicht hat bereits\n\n$$x^{3/2}=27$$\n\nisoliert. Erhebe beide Seiten zum reziproken Exponenten $\\dfrac{2}{3}$:\n\n$$x=\\bigl(x^{3/2}\\bigr)^{2/3}$$\n\n$$x=27^{2/3}$$\n\n$$27^{1/3}$$\n\n$$x=3$$\n\n$$27^{2/3}=(27^{1/3})^{2}$$\n\n$$27^{2/3}$$\n\n$$27^{2/3}=3^{2}$$\n\n$$3^{2}=9$$\n\n$$27^{2/3}=9$$\n\nDie eindeutige positive Lösung ist\n\n$$x=9$$\n\n.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDer Aufgabentext beschränkt die Einstellung auf die positiven reellen Zahlen:\n\n$$x>0$$\n\nDie reelle Abbildung\n\n$$x\\mapsto x^{3/2}$$\n\nwird aus der positiven Quadratwurzel aufgebaut, daher liegt ein negativer Kandidat wie\n\n$$x=-9$$\n\naußerhalb der zulässigen Definitionsmenge und ist keine akzeptierte Lösung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie positive Wurzel ist\n\n$$x=9$$\n\n. Nimm die positive Quadratwurzel dieser Wurzel:\n\n$$x^{1/2}=\\sqrt{9}$$\n\n$$\\sqrt{9}=3$$\n\n$$x^{1/2}=3$$\n\nDiese Quadratwurzel-Identität stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nAuf $x>0$ ist die Abbildung\n\n$$x\\mapsto x^{3/2}$$\n\nstreng wachsend. Nach Isolieren der Potenz,\n\n$$x^{3/2}=27$$\n\ntrifft eine stetige streng wachsende Abbildung jeden positiven Zielwert genau einmal. Die positive Wurzel ist\n\n$$x=9$$\n\n, daher gibt es nicht zwei positive Lösungen.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "A pressure setting $x>0$ must satisfy $4x^{3/2}=108$. The controller accepts only the positive real root und isolates the power before raising both sides to the reciprocal exponent.\n\n**Answer.** Isolating gives $x^{3/2}=27$, then $x=27^{2/3}=9$. On $x>0$ the map $x\\mapsto x^{3/2}$ is strictly increasing, so the positive root is unique. Each letter only checks its isolation, root, domain, square-root, or uniqueness claim."
+    "solution_overview": "Eine Druckeinstellung $x>0$ muss $4x^{3/2}=108$ erfüllen. Die Steuerung akzeptiert nur die positiv-reelle Wurzel und isoliert die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden.\n\n**Antwort.** Isolieren liefert $x^{3/2}=27$, dann $x=27^{2/3}=9$. Auf $x>0$ ist die Abbildung $x\\mapsto x^{3/2}$ streng wachsend, daher ist die positive Wurzel eindeutig. Jeder Buchstabe prüft nur seine Isolierung, Wurzel, Definitionsmenge, Quadratwurzel oder Eindeutigkeitsbehauptung."
   },
   "MATH 8.111": {
     "title": "Prüfungsaufgaben – 14",
-    "context": "A data pipeline applies $g(x)=8x^3$ und then $f(u)=\\dfrac12u^{1/3}$. Inputs are real, und the real cube root is used, so neither stage needs a sign restriction. Engineers compare $f(g(x))$, $g(f(x))$, und the values produced by a few fixed inputs.",
+    "context": "Eine Datenpipeline wendet $g(x)=8x^3$ und danach $f(u)=\\dfrac12u^{1/3}$ an. Die Eingaben sind reell, und es wird die reelle Kubikwurzel verwendet, daher braucht keine Stufe eine Vorzeichenbeschränkung. Ingenieure vergleichen $f(g(x))$, $g(f(x))$ und die Werte einiger fester Eingaben.",
     "statements": [
-      "$f(g(x))=x$ für jedes real $x$.",
-      "$g(f(x))=x$ für jedes real $x$.",
+      "$f(g(x))=x$ für jedes reelle $x$.",
+      "$g(f(x))=x$ für jedes reelle $x$.",
       "$f(g(4))=4$.",
       "$g(1)=2$.",
-      "$f$ and $g$ are inverse functions. Die Aussage ist zu prüfen."
+      "$f$ und $g$ sind Umkehrfunktionen."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nCompose $f$ after $g$\n\n$$f(g(x))=\\frac12\\bigl(8x^{3}\\bigr)^{1/3}$$\n\n$$(8x^{3})^{1/3}=8^{1/3}\\cdot x$$\n\n$$8^{1/3}$$\n\n$$(8x^{3})^{1/3}=2$$\n\n$$f(g(x))=\\frac12\\cdot 2\\cdot x$$\n\n$$f(g(x))=x$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nCompose in the opposite order:\n\n$$g(f(x))=8$$\n\n$$8\\left(\\frac12 x^{1/3}\\right)^{3}$$\n\n$$\\left(\\frac12 x^{1/3}\\right)^{3}=\\frac18\\cdot x$$\n\n$$g(f(x))=8\\cdot\\frac18\\cdot x$$\n\n$$g(f(x))=x$$\n\nSo $g\\circ f$ is also the identity on the reals.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$\n\\begin{aligned}\ng(4)=8\\cdot 4^{3} \\\\\n4^{3}=64 \\\\\ng(4)=8\\cdot 64 \\\\\ng(4)=512 \\\\\nf(g(4))=\\frac12(512)^{1/3} \\\\\n512^{1/3} \\\\\nf(g(4))=8 \\\\\nf(g(4))=\\frac12\\cdot 8 \\\\\nf(g(4))=4\n\\end{aligned}\n$$\n\nDer Zahlenwert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nBewerten Sie die innere Karte allein bei der beanspruchten Eingabe: $$g(1)=8\\cdot 1^{3}$$ $$1^{3}=1$$ $$g(1)=8\\cdot 1$$ $$g(1)=8$$ Die Behauptung $$g(1)=2$$, but $$8\\neq 2$$ Die Übereinstimmung der berechneten Zahl mit der Behauptung zeigt Uneinigkeit.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nBoth composition orders recover the original input:\n\n$$f(g(x))=x$$\n\n$$g(f(x))=x$$\n\nTherefore\n\n$$f(g(x))=x$$\n\n$$f(g(x))=g(f(x))$$\n\nTwo-sided identity is the definition of inverse functions on the reals, so die Behauptung holds.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nSetze $f$ nach $g$ und vereinfache mit der reellen Kubikwurzel:\n\n$$f(g(x))=\\frac12\\bigl(8x^{3}\\bigr)^{1/3}$$\n\n$$(8x^{3})^{1/3}=8^{1/3}\\cdot x$$\n\n$$8^{1/3}$$\n\n$$(8x^{3})^{1/3}=2$$\n\n$$f(g(x))=\\frac12\\cdot 2\\cdot x$$\n\n$$f(g(x))=x$$\n\nDie äußere-dann-innere Komposition liefert jede reelle Eingabe zurück.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nKomponiere in der umgekehrten Reihenfolge:\n\n$$g(f(x))=8$$\n\n$$8\\left(\\frac12 x^{1/3}\\right)^{3}$$\n\n$$\\left(\\frac12 x^{1/3}\\right)^{3}=\\frac18\\cdot x$$\n\n$$g(f(x))=8\\cdot\\frac18\\cdot x$$\n\n$$g(f(x))=x$$\n\nAlso ist auch $g\\circ f$ die Identität auf den reellen Zahlen.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nBerechne die Komposition an der genannten Eingabe, statt nur die Identität zu zitieren:\n\n$$g(4)=8\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$g(4)=8\\cdot 64$$\n\n$$g(4)=512$$\n\n$$f(g(4))=\\frac12(512)^{1/3}$$\n\n$$512^{1/3}$$\n\n$$f(g(4))=8$$\n\n$$f(g(4))=\\frac12\\cdot 8$$\n\n$$f(g(4))=4$$\n\nDer numerische Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nWerte die innere Abbildung allein an der behaupteten Eingabe aus:\n\n$$g(1)=8\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$g(1)=8\\cdot 1$$\n\n$$g(1)=8$$\n\nDie Behauptung verlangt\n\n$$g(1)=2$$\n\n, aber\n\n$$8\\neq 2$$\n\nDer Abgleich des berechneten Werts mit der Behauptung zeigt Widerspruch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBeide Kompositionsreihenfolgen stellen die ursprüngliche Eingabe wieder her:\n\n$$f(g(x))=x$$\n\n$$g(f(x))=x$$\n\n$$f(g(x))=x$$\n\n$$f(g(x))=g(f(x))$$\n\nZweiseitige Identität ist die Definition von Umkehrfunktionen auf den reellen Zahlen, daher gilt die Behauptung.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "A data pipeline applies $g(x)=8x^{3}$ and then $f(u)=\\dfrac12 u^{1/3}$ $f$ and $g$ are inverses on $\\mathbb{R}$ . Each letter only expands one composition order, a numerical specialization, or a single-map evaluation. Die Aussage wird anhand der Übersicht geprüft."
+    "solution_overview": "Eine Datenpipeline wendet $g(x)=8x^{3}$ und danach $f(u)=\\dfrac12 u^{1/3}$ auf die reellen Zahlen an und nutzt die reelle Kubikwurzel.\n\n**Antwort.** Beide Kompositionsreihenfolgen vereinfachen sich zur Identität, also sind $f$ und $g$ Umkehrfunktionen auf $\\mathbb{R}$. Jeder Buchstabe prüft nur eine Kompositionsreihenfolge, eine numerische Spezialisierung oder die Auswertung einer einzelnen Abbildung."
   },
   "MATH 8.112": {
     "title": "Prüfungsaufgaben – 15",
@@ -2072,22 +2072,22 @@
   },
   "MATH 8.113": {
     "title": "Prüfungsaufgaben – 16",
-    "context": "$M(s)=4s^3$ Gramm for positiv mold scale $s$ $s=1$ , $s=2$ , and $s=4$ Die Übersicht stützt die Prüfung.",
+    "context": "Ein Ofen nutzt das Potenzmodell $M(s)=4s^3$ Gramm für eine positive Formskala $s$. Dieselbe Kalibrierung wird bei $s=1$, $s=2$ und $s=4$ ohne Rundung verwendet. Techniker müssen das Modell direkt auswerten und die Ausgaben dieser drei Einstellungen vergleichen.",
     "statements": [
       "$M(1)=4$.",
       "$M(2)=32$.",
       "$M(4)=256$.",
       "$M(4)=2M(2)$.",
-      "$M(s)$ is positiv für jedes allowed $s$. Die Aussage ist zu prüfen."
+      "$M(s)$ ist für jedes zulässige $s$ positiv."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$M(s)=4s^{3}$$\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=1$$\n\n$$M(1)=4\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=4\\cdot 1$$\n\n$$M(1)=4$$\n\n$4$ gives\n\n$$4=4.$$\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=2$$\n\n$$M(s)=4s^{3}$$\n\n$$M(2)=4\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=4\\cdot 8$$\n\n$$M(2)=32$$\n\n$32$ gives\n\n$$32=32$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=4$$\n\n$$M(s)=4s^{3}$$\n\n$$M(4)=4\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=4\\cdot 64$$\n\n$$M(4)=256$$\n\n$256$ gives\n\n$$256=256$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nForm the output ratio so the coefficient cancels:\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 4^{3}}{4\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 64}{4\\cdot 8}$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nDie Behauptung asserts\n\n$$M(4)=2M(2)$$\n\n, which would mean the ratio equals $2$. The true ratio ist $8$, so\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDas gemeinsame Modell ist ein Produkt aus einem positiven Koeffizienten und einer positiven Leistung auf $s>0$: $$M(s)=4s^{3}$$ $$4>0$$ $$s>0$$ $$s^{3}>0$$ Therefore every allowed input yields $$M(s)=4s^{3}$$ $$4s^{3}>0$$ The model stays positive on its domain.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDer Ofen folgt dem kubischen Modell\n\n$$M(s)=4s^{3}$$\n\nSetze die behauptete Skala\n\n$$s=1$$\n\n$$M(1)=4\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=4\\cdot 1$$\n\n$$M(1)=4$$\n\nDer Vergleich mit dem behaupteten Wert $4$ ergibt\n\n$$4=4.$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBehalte dasselbe kalibrierte Modell und werte bei\n\n$$s=2$$\n\n$$M(s)=4s^{3}$$\n\n$$M(2)=4\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=4\\cdot 8$$\n\n$$M(2)=32$$\n\naus. Der Vergleich mit dem behaupteten Wert $32$ ergibt\n\n$$32=32$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nSetze die behauptete Skala ein und werte das kalibrierte Modell aus.\n\n$$s=4$$\n\n$$M(s)=4s^{3}$$\n\n$$M(4)=4\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=4\\cdot 64$$\n\n$$M(4)=256$$\n\nDer Vergleich mit dem behaupteten Wert $256$ ergibt\n\n$$256=256$$\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nBilde das Ausgabeverhältnis, sodass der Koeffizient wegfällt:\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 4^{3}}{4\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 64}{4\\cdot 8}$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nDie Behauptung verlangt\n\n$$M(4)=2M(2)$$\n\n, was bedeuten würde, dass das Verhältnis gleich $2$ ist. Das wahre Verhältnis ist $8$, also\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDas gemeinsame Modell ist ein Produkt aus positivem Koeffizienten und positiver Potenz auf $s>0$:\n\n$$M(s)=4s^{3}$$\n\n$$4>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\n$$M(s)=4s^{3}$$\n\n$$4s^{3}>0$$\n\nDaher bleibt das Modell auf seiner Definitionsmenge positiv.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "A kiln uses the cubic power model $M(s)=4s^{3}$ grams for mold scale $s>0$. The same calibration is evaluated at $s=1$, $s=2$, und $s=4$ with no rounding.\n\n**Answer.** The shared model ist $M(s)=4s^{3}$. Levels keep the coefficient $4$; scale ratios cancel it und leave only a power of the input ratio. Each letter only checks its extra evaluation or comparison."
+    "solution_overview": "Ein Ofen nutzt das kubische Potenzmodell $M(s)=4s^{3}$ Gramm für Formskala $s>0$. Dieselbe Kalibrierung wird bei $s=1$, $s=2$ und $s=4$ ohne Rundung ausgewertet.\n\n**Antwort.** Das gemeinsame Modell ist $M(s)=4s^{3}$. Niveaus behalten den Koeffizienten $4$; Skalenverhältnisse kürzen ihn und lassen nur eine Potenz des Eingangsverhältnisses übrig. Jeder Buchstabe prüft nur seine zusätzliche Auswertung oder seinen Vergleich."
   },
   "MATH 8.114": {
     "title": "Prüfungsaufgaben – 17",
@@ -2110,41 +2110,41 @@
   },
   "MATH 8.115": {
     "title": "Prüfungsaufgaben – 18",
-    "context": "Eine Druckeinstellung $x>0$ muss $5x^{3/2}=320$ erfüllen. Die Steuerung akzeptiert nur die positive reelle Einstellung, und ihre Prüfroutine isoliert zuerst die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden. Alle angezeigten Werte sind exakt.",
+    "context": "Eine Druckeinstellung $x>0$ muss $5x^{3/2}=320$ erfüllen. Die Steuerung akzeptiert nur die positiv-reelle Einstellung, und ihre Prüfroutine isoliert zuerst die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden. Alle angezeigten Werte sind exakt.",
     "statements": [
       "$x^{3/2}=64$.",
       "$x=16$.",
-      "$x=-16$ is also allowed. Die Aussage ist zu prüfen.",
+      "$x=-16$ ist ebenfalls zulässig.",
       "$x^{1/2}=4$.",
-      "The equation has two positive solutions."
+      "Die Gleichung hat zwei positive Lösungen."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nStart from the controller equation und isolate the power:\n\n$$5x^{3/2}=320$$\n\nDivide both sides by the coefficient $5$:\n\n$$\\frac{5x^{3/2}}{5}=\\frac{320}{5}$$\n\n$$x^{3/2}=64$$\n\nThe isolated power matches die Behauptung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDie Übersicht bereits isoliert $$x^{3/2}=64$$ Heben Sie beide Seiten auf den reziproken Exponenten $\\dfrac{2}{3}$: $$x=\\bigl(x^{3/2}\\bigr)^{2/3}$$ $$x=64^{2/3}$$ $$64^{1/3}$$ $$x=4$$ $$64^{2/3}=(64^{1/3})^{2}$$ $$64^{2/3}$$ $$64^{2/3}=4^{2}$$ $$4^{2}=16$$ $$64^{2/3}=16$$ Die einzigartige positive Lösung ist $$x=16$$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nDer Stamm beschränkt die Einstellung auf die positiven Reale: $$x>0$$ The real map $$x\\mapsto x^{3/2}$$ ist aus der positiven Quadratwurzel aufgebaut. Ein negativer Kandidat wie $$x=-16$$ liegt also außerhalb der erlaubten Domain und ist keine akzeptierte Lösung.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nFrom the shared solve the unique positive root is\n\n$$x=16$$\n\n. Die Behauptung asks for the positive square root of that root, which is the factor needed by the real $3/2$ power:\n\n$$x^{1/2}=\\sqrt{16}$$\n\n$$\\sqrt{16}=4$$\n\n$$x^{1/2}=4$$\n\nThat square-root identity matches die Behauptung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nOn $x>0$ the map\n\n$$x\\mapsto x^{3/2}$$\n\n is strictly increasing. After isolating the power,\n\n$$x^{3/2}=64$$\n\na continuous strictly increasing map meets any positive target value exactly once. The positive root is\n\n$$x=16$$\n\n, so there are not two positive solutions.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nStarte mit der Steuerungsgleichung und isoliere die Potenz:\n\n$$5x^{3/2}=320$$\n\nTeile beide Seiten durch den Koeffizienten $5$:\n\n$$\\frac{5x^{3/2}}{5}=\\frac{320}{5}$$\n\n$$x^{3/2}=64$$\n\nDie isolierte Potenz stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Übersicht hat bereits\n\n$$x^{3/2}=64$$\n\nisoliert. Erhebe beide Seiten zum reziproken Exponenten $\\dfrac{2}{3}$:\n\n$$x=\\bigl(x^{3/2}\\bigr)^{2/3}$$\n\n$$x=64^{2/3}$$\n\n$$64^{1/3}$$\n\n$$x=4$$\n\n$$64^{2/3}=(64^{1/3})^{2}$$\n\n$$64^{2/3}$$\n\n$$64^{2/3}=4^{2}$$\n\n$$4^{2}=16$$\n\n$$64^{2/3}=16$$\n\nDie eindeutige positive Lösung ist\n\n$$x=16$$\n\n.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDer Aufgabentext beschränkt die Einstellung auf die positiven reellen Zahlen:\n\n$$x>0$$\n\nDie reelle Abbildung\n\n$$x\\mapsto x^{3/2}$$\n\nwird aus der positiven Quadratwurzel aufgebaut. Ein negativer Kandidat wie\n\n$$x=-16$$\n\nliegt daher außerhalb der zulässigen Definitionsmenge und ist keine akzeptierte Lösung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAus der gemeinsamen Lösung ist die eindeutige positive Wurzel\n\n$$x=16$$\n\n. Die Behauptung verlangt die positive Quadratwurzel dieser Wurzel, also den Faktor der reellen $3/2$-Potenz:\n\n$$x^{1/2}=\\sqrt{16}$$\n\n$$\\sqrt{16}=4$$\n\n$$x^{1/2}=4$$\n\nDiese Quadratwurzel-Identität stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nAuf $x>0$ ist die Abbildung\n\n$$x\\mapsto x^{3/2}$$\n\nstreng wachsend. Nach Isolieren der Potenz,\n\n$$x^{3/2}=64$$\n\ntrifft eine stetige streng wachsende Abbildung jeden positiven Zielwert genau einmal. Die positive Wurzel ist\n\n$$x=16$$\n\n, daher gibt es nicht zwei positive Lösungen.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "A pressure setting $x>0$ must satisfy $5x^{3/2}=320$. The controller accepts only the positive real root und isolates the power before raising both sides to the reciprocal exponent.\n\n**Answer.** Isolating gives $x^{3/2}=64$, then $x=64^{2/3}=16$. On $x>0$ the map $x\\mapsto x^{3/2}$ is strictly increasing, so the positive root is unique. Each letter only checks its isolation, root, domain, square-root, or uniqueness claim."
+    "solution_overview": "Eine Druckeinstellung $x>0$ muss $5x^{3/2}=320$ erfüllen. Die Steuerung akzeptiert nur die positiv-reelle Wurzel und isoliert die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden.\n\n**Antwort.** Isolieren liefert $x^{3/2}=64$, dann $x=64^{2/3}=16$. Auf $x>0$ ist die Abbildung $x\\mapsto x^{3/2}$ streng wachsend, daher ist die positive Wurzel eindeutig. Jeder Buchstabe prüft nur seine Isolierung, Wurzel, Definitionsmenge, Quadratwurzel oder Eindeutigkeitsbehauptung."
   },
   "MATH 8.116": {
     "title": "Prüfungsaufgaben – 19",
-    "context": "A data pipeline applies $g(x)=27x^3$ und then $f(u)=\\dfrac13u^{1/3}$. Inputs are real, und the real cube root is used, so neither stage needs a sign restriction. Engineers compare $f(g(x))$, $g(f(x))$, und the values produced by a few fixed inputs.",
+    "context": "Eine Datenpipeline wendet zuerst $g(x)=27x^3$ und danach $f(u)=\\dfrac13u^{1/3}$ an. Die Eingaben sind reell, und es wird die reelle Kubikwurzel verwendet, sodass keine der beiden Stufen eine Vorzeicheneinschränkung braucht. Ingenieure vergleichen $f(g(x))$, $g(f(x))$ und die Werte bei einigen festen Eingaben.",
     "statements": [
-      "$f(g(x))=x$ für jedes real $x$.",
-      "$g(f(x))=x$ für jedes real $x$.",
+      "$f(g(x))=x$ für alle reellen $x$.",
+      "$g(f(x))=x$ für alle reellen $x$.",
       "$f(g(4))=4$.",
       "$g(1)=3$.",
-      "$f$ and $g$ are inverse functions. Die Aussage ist zu prüfen."
+      "$f$ und $g$ sind Umkehrfunktionen."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nCompose $f$ after $g$\n\n$$f(g(x))=\\frac13\\bigl(27x^{3}\\bigr)^{1/3}$$\n\n$$(27x^{3})^{1/3}=27^{1/3}\\cdot x$$\n\n$$27^{1/3}$$\n\n$$(27x^{3})^{1/3}=3$$\n\n$$f(g(x))=\\frac13\\cdot 3\\cdot x$$\n\n$$f(g(x))=x$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nCompose in the reverse order:\n\n$$g(f(x))=27$$\n\n$$27\\left(\\frac13 x^{1/3}\\right)^{3}$$\n\n$$\\left(\\frac13 x^{1/3}\\right)^{3}=\\frac{1}{27}\\cdot x$$\n\n$$g(f(x))=27\\cdot\\frac{1}{27}\\cdot x$$\n\n$$g(f(x))=x$$\n\nSo $g\\circ f$ is also the identity on the reals.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$\n\\begin{aligned}\ng(4)=27\\cdot 4^{3} \\\\\n4^{3}=64 \\\\\ng(4)=27\\cdot 64 \\\\\ng(4)=1728 \\\\\nf(g(4))=\\frac13(1728)^{1/3} \\\\\n1728^{1/3} \\\\\nf(g(4))=12 \\\\\nf(g(4))=\\frac13\\cdot 12 \\\\\nf(g(4))=4\n\\end{aligned}\n$$\n\nDer Zahlenwert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nBewerten Sie die innere Karte allein bei der beanspruchten Eingabe: $$g(1)=27\\cdot 1^{3}$$ $$1^{3}=1$$ $$g(1)=27\\cdot 1$$ $$g(1)=27$$ Die Behauptung $$g(1)=3$$, but $$27\\neq 3$$ Die Übereinstimmung der berechneten Zahl mit der Behauptung zeigt Uneinigkeit.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nBoth composition orders recover the original input:\n\n$$f(g(x))=x$$\n\n$$g(f(x))=x$$\n\nTherefore\n\n$$f(g(x))=x$$\n\n$$f(g(x))=g(f(x))$$\n\nTwo-sided identity is the definition of inverse functions on the reals, so die Behauptung holds.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nSetze $f$ nach $g$ zusammen und vereinfache mit der reellen Kubikwurzel:\n\n$$f(g(x))=\\frac13\\bigl(27x^{3}\\bigr)^{1/3}$$\n\n$$(27x^{3})^{1/3}=27^{1/3}\\cdot x$$\n\n$$27^{1/3}$$\n\n$$(27x^{3})^{1/3}=3$$\n\n$$f(g(x))=\\frac13\\cdot 3\\cdot x$$\n\n$$f(g(x))=x$$\n\nDie Zusammensetzung liefert jede reelle Eingabe zurück.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nSetze in umgekehrter Reihenfolge zusammen:\n\n$$g(f(x))=27$$\n\n$$27\\left(\\frac13 x^{1/3}\\right)^{3}$$\n\n$$\\left(\\frac13 x^{1/3}\\right)^{3}=\\frac{1}{27}\\cdot x$$\n\n$$g(f(x))=27\\cdot\\frac{1}{27}\\cdot x$$\n\n$$g(f(x))=x$$\n\nAlso ist $g\\circ f$ ebenfalls die Identität auf den reellen Zahlen.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nBerechne die Zusammensetzung an der genannten Eingabe, statt nur die Identität zu zitieren:\n\n$$g(4)=27\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$g(4)=27\\cdot 64$$\n\n$$g(4)=1728$$\n\n$$f(g(4))=\\frac13(1728)^{1/3}$$\n\n$$1728^{1/3}$$\n\n$$f(g(4))=12$$\n\n$$f(g(4))=\\frac13\\cdot 12$$\n\n$$f(g(4))=4$$\n\nDer numerische Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nWerte die innere Abbildung allein an der behaupteten Eingabe aus:\n\n$$g(1)=27\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$g(1)=27\\cdot 1$$\n\n$$g(1)=27$$\n\nDie Behauptung lautet\n\n$$g(1)=3$$\n\n, aber\n\n$$27\\neq 3$$\n\nDer berechnete Wert und die Behauptung stimmen nicht überein.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBeide Zusammensetzungsreihenfolgen liefern die ursprüngliche Eingabe zurück:\n\n$$f(g(x))=x$$\n\n$$g(f(x))=x$$\n\nDaher\n\n$$f(g(x))=x$$\n\n$$f(g(x))=g(f(x))$$\n\nZweiseitige Identität ist die Definition von Umkehrfunktionen auf den reellen Zahlen, also gilt die Behauptung.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "A data pipeline applies $g(x)=27x^{3}$ and then $f(u)=\\dfrac13 u^{1/3}$ $f$ and $g$ are inverses on $\\mathbb{R}$ . Each letter only expands one composition order, a numerical specialization, or a single-map evaluation. Die Aussage wird anhand der Übersicht geprüft."
+    "solution_overview": "Eine Datenpipeline wendet $g(x)=27x^{3}$ und danach $f(u)=\\dfrac13 u^{1/3}$ auf die reellen Zahlen an und nutzt die reelle Kubikwurzel.\n\n**Antwort.** Beide Zusammensetzungsreihenfolgen vereinfachen sich zur Identität, also sind $f$ und $g$ auf $\\mathbb{R}$ Umkehrfunktionen. Jeder Buchstabe prüft nur eine Zusammensetzungsreihenfolge, eine numerische Spezialisierung oder die Auswertung einer einzelnen Abbildung."
   },
   "MATH 8.117": {
     "title": "Prüfungsaufgaben – 20",

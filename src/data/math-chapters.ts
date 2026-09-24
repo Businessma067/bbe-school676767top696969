@@ -303,11 +303,11 @@ export async function loadMathChapterTasks(num: number): Promise<MathTask[]> {
   const inflight = chapterTaskInflight.get(num);
   if (inflight) return inflight;
   const promise = importChapterBank(num)
-    .then(async (m) => {
-      const tasks = await applyDemoMathHardOverlay(m.tasks);
-      chapterTaskCache.set(num, tasks);
+    .then((m) => {
+      // Full syllabus bank as authored — do not apply free-demo hard overlays here.
+      chapterTaskCache.set(num, m.tasks);
       chapterTaskInflight.delete(num);
-      return tasks;
+      return m.tasks;
     })
     .catch((err) => {
       chapterTaskInflight.delete(num);
@@ -315,6 +315,15 @@ export async function loadMathChapterTasks(num: number): Promise<MathTask[]> {
     });
   chapterTaskInflight.set(num, promise);
   return promise;
+}
+
+/**
+ * Demo free-window bank: same chapter syllabus with harder replacement stems
+ * overlaid on matching case_ids (BBE + WiSo demo practice only).
+ */
+export async function loadDemoMathChapterTasks(num: number): Promise<MathTask[]> {
+  const tasks = await loadMathChapterTasks(num);
+  return applyDemoMathHardOverlay(tasks);
 }
 
 type DemoHardOverlay = Partial<
