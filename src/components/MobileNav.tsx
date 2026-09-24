@@ -41,7 +41,8 @@ export function MobileNav({
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
   const returnTo = useRouterState({
-    select: (s) => safeInternalReturnPath(`${s.location.pathname}${s.location.search}`) ?? undefined,
+    select: (s) =>
+      safeInternalReturnPath(`${s.location.pathname}${s.location.searchStr}`) ?? undefined,
   });
   const authSearch = returnTo ? { returnTo } : undefined;
   const peeked = typeof window !== "undefined" ? peekAuthState() : null;
