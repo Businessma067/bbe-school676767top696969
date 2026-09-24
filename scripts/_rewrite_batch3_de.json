@@ -1,0 +1,154 @@
+{
+  "MATH 6.05": {
+    "title": "Zweifaktor-rationale Ungleichung mit Parameter $b$",
+    "context": "Es sei $b=3$. Betrachte $\\dfrac{(x-b)(x-2b)}{x+b}<0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $b=3$ ist die Lösungsmenge von $\\dfrac{(x-b)(x-2b)}{x+b}<0$ gleich $(-\\infty,-3)\\cup(3,6)$.",
+      "Für $b=3$ erfüllt $x=0$ diese strikte Ungleichung.",
+      "Für $b=3$ liegt das Intervall $(4,5)$ in der Lösungsmenge.",
+      "Würde $b$ zu $2$ wechseln, hätte die Ungleichung $\\dfrac{(x-2)(x-4)}{x+2}<0$ die Lösungsmenge $(-\\infty,-2)\\cup(2,4)$.",
+      "Für $b=3$ erfüllt $x=6$ die Ungleichung $\\dfrac{(x-3)(x-6)}{x+3}<0$."
+    ],
+    "solution_overview": "Mit $b=3$: $\\dfrac{(x-3)(x-6)}{x+3}<0$.\n\nKritische Stellen: $x=-3$ (Pol), $x=3$, $x=6$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $-$ |\n| $(-3,3)$ | $+$ |\n| $(3,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nAblesen für $<0$ liefert $(-\\infty,-3)\\cup(3,6)$.\n\n**Antwort.** $(-\\infty,-3)\\cup(3,6)$. Die Buchstaben nutzen diese kritischen Stellen für Prüfpunkte und den Parameterwechsel erneut.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-3)(x-6)}{x+3}<0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=3,\\ x=6\n$$\n\n$$\nx=-3\\ \\mathrm{(Pol)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $-$ |\n| $(-3,3)$ | $+$ |\n| $(3,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-3)\\cup(3,6)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$$\n\\frac{(0-3)(0-6)}{0+3}=\\frac{(-3)(-6)}{3}=6>0\n$$\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**C.** → Richtig\n\n$(4,5)\\subset(3,6)$, und auf $(3,6)$ ist das Vorzeichen aus der Übersicht negativ, was zu $<0$ passt.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-2)(x-4)}{x+2}<0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=2,\\ x=4\n$$\n\n$$\nx=-2\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-2)\\cup(2,4)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $x=6$ ist der Zähler null, der Wert also $0$, und $0$ erfüllt die strikte Ungleichung $<0$ nicht.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.09": {
+    "title": "Betrag einer Linearform gegenüber einer parametrischen Schranke",
+    "context": "Es sei $t=4$. Löse $|x-t|\\ge 2t-x$ und vergleiche Intervallbehauptungen.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $t=4$ ist die Lösungsmenge von $|x-t|\\ge 2t-x$ gleich $[6,\\infty)$.",
+      "Die Zahl $x=5$ erfüllt $|x-4|\\ge 8-x$.",
+      "Jedes $x$ in $[10,12]$ erfüllt die Ungleichung.",
+      "Würde $t$ zu $3$ wechseln, hätte $|x-3|\\ge 6-x$ weiterhin die Lösungsmenge $[6,\\infty)$.",
+      "Für $t=4$ ist $x=6$ eine Randlösung."
+    ],
+    "solution_overview": "$|x-4|\\ge 8-x$. Zuerst kann $8-x$ negativ sein; Fallunterscheidung.\n\nFallanalyse: $|A|\\ge B$ ist äquivalent zu $A\\ge B$ oder $A\\le -B$, wenn $B$ kein festes Vorzeichen hat; ist jedoch $B<0$, so gilt die Ungleichung automatisch.\n\nHier $B=8-x$.\n\nFür $x>8$ ist $B<0$, also wahr für alle $x>8$.\nFür $x\\le 8$: nötig sind $x-4\\ge 8-x$ oder $x-4\\le -(8-x)$.\n\nErstens: $2x\\ge 12\\Rightarrow x\\ge 6$.\nZweitens: $x-4\\le -8+x\\Rightarrow -4\\le -8$, stets falsch.\n\nAlso für $x\\le 8$: nur $x\\ge 6$, d. h. $[6,8]$.\nVereinigung mit $x>8$: $[6,\\infty)$.\n\n**Antwort.** $[6,\\infty)$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nEs sei $B=8-x$.\n\nFalls $x>8$, dann $B<0$, also gilt $|x-4|\\ge B$ automatisch.\n\nFalls $x\\le 8$, löse $x-4\\ge 8-x$ oder $x-4\\le x-8$.\n\n$$\nx-4\\ge 8-x\\Rightarrow x\\ge 6\n$$\n\n$$\nx-4\\le x-8\\Rightarrow -4\\le -8\n$$\n\nwas unmöglich ist. Somit gilt $x\\in[6,8]$ für $x\\le 8$.\n\nVereinigung mit $(8,\\infty)$ ergibt $[6,\\infty)$.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.",
+      "**B.** → Falsch\n\n$$\n|5-4|=1,\\qquad 8-5=3,\\qquad 1\\nless 3\n$$\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**C.** → Richtig\n\n$[10,12]\\subset[6,\\infty)$, der rekonstruierten Lösungsmenge.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Falsch\n\nDieselbe Methode: automatisch wahr für $x>6$. Für $x\\le 6$:\n\n$$\nx-3\\ge 6-x\\Rightarrow x\\ge 4.5\n$$\n\nDer andere Zweig ist unmöglich. Lösungsmenge $[4.5,\\infty)\\neq[6,\\infty)$.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**E.** → Richtig\n\n$$\n|6-4|=2,\\qquad 8-6=2,\\qquad 2\\ge 2\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.13": {
+    "title": "Quadratische Ungleichung über einen Parametersatz in Scheitelpunktform",
+    "context": "Es seien $u=5$ und $v=4$. Untersuche $(x-u)^{2}\\le v^{2}$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $u=5$ und $v=4$ ist die Lösungsmenge von $(x-u)^{2}\\le v^{2}$ gleich $[1,9]$.",
+      "Dieselbe Ungleichung mit umgedrehter Striktheit $(x-5)^{2}<16$ hat die Lösungsmenge $(1,9)$.",
+      "Für diese Parameter erfüllt $x=0$ die Ungleichung $(x-5)^{2}\\le 16$.",
+      "Würde $v$ zu $3$ wechseln bei $u=5$, wäre die Lösungsmenge von $(x-5)^{2}\\le 9$ gleich $[2,8]$.",
+      "Die Länge des Lösungsintervalls $[1,9]$ ist gleich $2v$."
+    ],
+    "solution_overview": "$$\n|x-5|\\le 4\\qquad\\Leftrightarrow\\qquad 1\\le x\\le 9\n$$\n\n**Antwort.** $[1,9]$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$\n|x-5|\\le 4\n$$\n\n$$\n-4\\le x-5\\le 4\n$$\n\n$$\n1\\le x\\le 9\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**B.** → Richtig\n\n$$\n|x-5|<4\\qquad\\Rightarrow\\qquad 1<x<9\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**C.** → Falsch\n\n$$\n(0-5)^{2}=25>16\n$$\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Richtig\n\n$$\n|x-5|\\le 3\\qquad\\Rightarrow\\qquad 2\\le x\\le 8\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**E.** → Richtig\n\n$$\n9-1=8=2\\cdot 4=2v\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.14": {
+    "title": "Rationale Ungleichung nach Kürzen eines positiven Faktors $w$",
+    "context": "Es sei $w=5>0$. Untersuche $\\dfrac{w(x-1)}{(x-4)(x+2)}\\le 0$. Weil $w>0$, reduziert sich die Ungleichung auf $\\dfrac{x-1}{(x-4)(x+2)}\\le 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $w=5$ ist die Lösungsmenge von $\\dfrac{w(x-1)}{(x-4)(x+2)}\\le 0$ gleich $(-\\infty,-2)\\cup[1,4)$.",
+      "Würde $w$ zu $-5$ wechseln, bliebe die Lösungsmenge unverändert.",
+      "Für $w=5$ erfüllt $x=1$ die Ungleichung.",
+      "Für $w=5$ erfüllt $x=3$ die Ungleichung.",
+      "Für $w=5$ erfüllt $x=-3$ die Ungleichung nicht."
+    ],
+    "solution_overview": "Weil $w=5>0$, reduziert sich $\\dfrac{w(x-1)}{(x-4)(x+2)}\\le 0$ auf $\\dfrac{x-1}{(x-4)(x+2)}\\le 0$.\n\nKritische Stellen: Nullstelle $x=1$; Pole $x=-2$ und $x=4$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,1)$ | $+$ |\n| $(1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen für $\\le 0$ liefert $(-\\infty,-2)\\cup[1,4)$.\n\n**Antwort.** $(-\\infty,-2)\\cup[1,4)$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{x-1}{(x-4)(x+2)}\\le 0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=1\n$$\n\n$$\nx=-2,\\ x=4\\ \\mathrm{(Pole)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,1)$ | $+$ |\n| $(1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-2)\\cup[1,4)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nMultiplikation mit $w=-5<0$ kehrt die Ungleichung um, sodass die Lösung die komplementäre Menge wird (Pole weiterhin ausgeschlossen), nämlich $(-2,1)\\cup(4,\\infty)$ nach Anpassung der eingeschlossenen Nullstellen — nicht dieselbe Menge wie $(-\\infty,-2)\\cup[1,4)$.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.",
+      "**C.** → Richtig\n\n$$\n\\frac{5(1-1)}{(1-4)(1+2)}=0\\le 0\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Richtig\n\n$$\n\\frac{5(3-1)}{(3-4)(3+2)}=\\frac{10}{(-1)(5)}=-2\\le 0\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**E.** → Falsch\n\n$x=-3\\in(-\\infty,-2)$, wo das Vorzeichen aus der Übersicht negativ ist, also erfüllt der Punkt $\\le 0$. Die Behauptung, er erfülle sie nicht, ist falsch.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.16": {
+    "title": "Vorzeichentabelle kubisch-über-linear mit Parameter $h$",
+    "context": "Es sei $h=1$. Untersuche $\\dfrac{(x-h)(x-2h)(x-4h)}{x+h}>0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $h=1$ ist die Lösungsmenge von $\\dfrac{(x-h)(x-2h)(x-4h)}{x+h}>0$ gleich $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$.",
+      "Für $h=1$ erfüllt $x=0$ die strikte Ungleichung.",
+      "Für $h=1$ liegt das Intervall $(1.2,1.8)$ in der Lösungsmenge.",
+      "Würde $h$ zu $2$ wechseln, hätte $\\dfrac{(x-2)(x-4)(x-8)}{x+2}>0$ die Lösungsmenge $(-\\infty,-2)\\cup(2,4)\\cup(8,\\infty)$.",
+      "Für $h=1$ erfüllt $x=2$ die strikte Ungleichung."
+    ],
+    "solution_overview": "Mit $h=1$: $\\dfrac{(x-1)(x-2)(x-4)}{x+1}>0$.\n\nKritische Stellen: Nullstellen $x=1,2,4$ und Pol $x=-1$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen für $>0$ liefert $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$.\n\n**Antwort.** $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$. Die Buchstaben nutzen die Tafel für Prüfpunkte und den Wechsel $h=2$ erneut.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-1)(x-2)(x-4)}{x+1}>0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=1,2,4\n$$\n\n$$\nx=-1\\ \\mathrm{(Pol)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$$\n\\frac{(0-1)(0-2)(0-4)}{0+1}=\\frac{(-1)(-2)(-4)}{1}=-8<0\n$$\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**C.** → Richtig\n\n$(1.2,1.8)\\subset(1,2)$, wo das Vorzeichen aus der Übersicht positiv ist.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-2)(x-4)(x-8)}{x+2}>0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=2,4,8\n$$\n\n$$\nx=-2\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,2)$ | $-$ |\n| $(2,4)$ | $+$ |\n| $(4,8)$ | $-$ |\n| $(8,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-2)\\cup(2,4)\\cup(8,\\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $x=2$ ist der Zähler null, der Wert also $0$, und $0$ erfüllt $>0$ nicht.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.18": {
+    "title": "Rationale Ungleichung, äquivalent zu einer Quadratischen nach Umformen",
+    "context": "Es sei $z=2$. Untersuche $\\dfrac{x^{2}-(z+1)x+z}{x-2z}\\le 0$, d. h. $\\dfrac{x^{2}-3x+2}{x-4}\\le 0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $z=2$ ist die Lösungsmenge von $\\dfrac{x^{2}-(z+1)x+z}{x-2z}\\le 0$ gleich $(-\\infty,1]\\cup[2,4)$.",
+      "Für $z=2$ erfüllt $x=1.5$ die Ungleichung.",
+      "Für $z=2$ erfüllt $x=2$ die Ungleichung.",
+      "Würde $z$ zu $3$ wechseln, hätte $\\dfrac{x^{2}-4x+3}{x-6}\\le 0$ die Lösungsmenge $(-\\infty,1]\\cup[3,6)$.",
+      "Für $z=2$ ist der Pol $x=4$ eine Lösung, weil der umgeformte Zähler dort positiv ist."
+    ],
+    "solution_overview": "Mit $z=2$: $\\dfrac{x^{2}-3x+2}{x-4}=\\dfrac{(x-1)(x-2)}{x-4}\\le 0$.\n\nKritische Stellen: Nullstellen $x=1,2$ und Pol $x=4$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen für $\\le 0$ liefert $(-\\infty,1]\\cup[2,4)$.\n\n**Antwort.** $(-\\infty,1]\\cup[2,4)$. Die Buchstaben nutzen diese kritischen Stellen für Zugehörigkeitstests und den Wechsel $z=3$ erneut.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-1)(x-2)}{x-4}\\le 0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=1,\\ x=2\n$$\n\n$$\nx=4\\ \\mathrm{(Pol)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,1]\\cup[2,4)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$x=1.5\\in(1,2)$, Vorzeichen aus der Übersicht positiv, also erfüllt der Punkt $\\le 0$ nicht.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**C.** → Richtig\n\n$$\n\\frac{(2-1)(2-2)}{2-4}=0\\le 0\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-1)(x-3)}{x-6}\\le 0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=1,\\ x=3\n$$\n\n$$\nx=6\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,3)$ | $+$ |\n| $(3,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,1]\\cup[3,6)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nPole bleiben nach dem Faktorisieren undefiniert. $x=4$ ist ausgeschlossen.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.19": {
+    "title": "Verschachtelte Intervallbehauptung aus zwei parametrischen Schnitten",
+    "context": "Es sei $e=5$. Definiere\n\n$$\nA=\\left\\{x:|x-e|\\le 2\\right\\},\\qquad B=\\left\\{x:\\dfrac{x-(e-1)}{x-(e+2)}\\le 0\\right\\}.\n$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $e=5$ gilt $A\\cap B=[4,7)$.",
+      "Für $e=5$ gilt $B=[4,7]$.",
+      "Für $e=5$ gilt $A\\setminus B=[3,4)$.",
+      "Würde $e$ zu $6$ wechseln, wäre $A=\\{x:|x-6|\\le 2\\}$ gleich $[4,8]$.",
+      "Für $e=5$ liegt der Punkt $x=7$ in $A\\cap B$."
+    ],
+    "solution_overview": "$A=[3,7]$.\n\n$B$: $\\dfrac{x-4}{x-7}\\le 0$ → Pol $7$, Nullstelle $4$ → $[4,7)$.\n\n$A\\cap B=[4,7)$.\n$A\\cup B=[3,7]$.\n$A\\setminus B=[3,4)$.\n\n**Antwort.** $A=[3,7]$, $B=[4,7)$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$\nA=[3,7],\\qquad B=[4,7)\n$$\n\n$$\nA\\cap B=[4,7)\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**B.** → Falsch\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{x-4}{x-7}\\le 0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=4\n$$\n\n$$\nx=7\\ \\mathrm{(Pol)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,4)$ | $+$ |\n| $(4,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n[4,7)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Behauptung schließt den Pol $x=7$ ein.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$$\n[3,7]\\setminus[4,7)=[3,4)\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Richtig\n\n$$\n|x-6|\\le 2\\qquad\\Rightarrow\\qquad 4\\le x\\le 8\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**E.** → Falsch\n\n$x=7\\in A$, aber $x=7$ ist ein Pol von $B$, also $7\\notin B$ und damit $7\\notin A\\cap B$.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  },
+  "MATH 6.20": {
+    "title": "Gemischter Betrags- und Rationalabschluss der Klausur",
+    "context": "Es sei $y_0=4$. Betrachte $|3x-y_0|\\le 2x+1$ zusammen mit dem rationalen Schnitt $\\dfrac{x-y_0}{2x+y_0}>0$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $y_0=4$ ist die Lösung von $|3x-y_0|\\le 2x+1$ gleich $\\dfrac{3}{5}\\le x\\le 5$.",
+      "Für $y_0=4$ ist die Lösung von $\\dfrac{x-y_0}{2x+y_0}>0$ gleich $(-\\infty,-2)\\cup(4,\\infty)$.",
+      "Die gemeinsame Lösung beider Bedingungen ist $(4,5]$.",
+      "Der Punkt $x=4$ löst beide Bedingungen gleichzeitig.",
+      "Würde $y_0$ zu $2$ wechseln, hätte $|3x-2|\\le 2x+1$ weiterhin den oberen Endpunkt $x=5$."
+    ],
+    "solution_overview": "Betrag: nötig ist $2x+1\\ge 0\\Rightarrow x\\ge -\\dfrac{1}{2}$.\n\n$$\n-(2x+1)\\le 3x-4\\le 2x+1\n$$\n\nLinks: $-2x-1\\le 3x-4\\Rightarrow 3\\le 5x\\Rightarrow x\\ge\\dfrac{3}{5}$.\n\nRechts: $3x-4\\le 2x+1\\Rightarrow x\\le 5$.\n\nSchnitt mit $x\\ge -1/2$: $[\\frac{3}{5},5]$.\n\nRational: $\\dfrac{x-4}{2x+4}>0=\\dfrac{x-4}{2(x+2)}>0$ → $(-\\infty,-2)\\cup(4,\\infty)$.\n\nSchnitt beider: $[\\frac{3}{5},5]\\cap\\big((-\\infty,-2)\\cup(4,\\infty)\\big)=(4,5]$.\n\n**Antwort.** Betrag $[\\frac{3}{5},5]$; beide $(4,5]$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDefinitionsbereich $2x+1\\ge 0\\Rightarrow x\\ge -\\dfrac{1}{2}$.\n\n$$\n-(2x+1)\\le 3x-4\\le 2x+1\n$$\n\n$$\nx\\ge\\frac{3}{5},\\qquad x\\le 5\n$$\n\nSchnitt: $[\\frac{3}{5},5]$.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**B.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{x-4}{2(x+2)}>0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=4\n$$\n\n$$\nx=-2\\ \\mathrm{(Pol)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-2)\\cup(4,\\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\n\\left[\\frac{3}{5},5\\right]\\cap\\big((-\\infty,-2)\\cup(4,\\infty)\\big)=(4,5]\n$$\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**D.** → Falsch\n\n$x=4$ erfüllt die Betragsungleichung, aber der rationale Ausdruck ist gleich $0$, was den strikten Schnitt $>0$ nicht erfüllt.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.",
+      "**E.** → Falsch\n\nDefinitionsbereich $x\\ge -\\frac{1}{2}$.\n\nRechte Hälfte: $3x-2\\le 2x+1\\Rightarrow x\\le 3$.\n\nDer obere Endpunkt ist $3$, nicht $5$.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung."
+    ]
+  }
+}
