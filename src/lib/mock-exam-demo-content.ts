@@ -105,7 +105,7 @@ export const MOCK_EXAM_DEMO_POINTS_TOTAL =
   MOCK_EXAM_DEMO_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 export const MOCK_EXAM_DEMO_CONTENT_REV =
-  "2026-09-24e · attendance Q22 · numeric Q23 · harder Q25 · mixed Q27 · Q34 words · visual econ";
+  "2026-09-24f · deep explanations · harder Q23/Q27/Q31";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
