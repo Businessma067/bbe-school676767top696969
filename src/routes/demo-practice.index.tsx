@@ -142,8 +142,9 @@ export function DemoPractice() {
           <DemoStudyToolsSection track="bbe" />
 
           <div className="mt-6">
-            <div
-              className="flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between"
+            <Link
+              to="/demo-mock"
+              className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
               style={{ borderTop: "4px solid #C2703A" }}
             >
               <div>
@@ -157,12 +158,12 @@ export function DemoPractice() {
                 </p>
               </div>
               <span
-                className="inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-70 shadow-sm"
-                style={{ backgroundColor: "#C2703A" }}
+                className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all group-hover:brightness-110"
+                style={{ backgroundColor: "#C2703A", boxShadow: "0 4px 14px -4px #C2703A80" }}
               >
-                Coming soon
+                Demo Exam
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </main>
