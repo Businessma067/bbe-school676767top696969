@@ -19,7 +19,8 @@ type AuthNavProps = {
 export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   const { t } = useLanguage();
   const returnTo = useRouterState({
-    select: (s) => safeInternalReturnPath(`${s.location.pathname}${s.location.search}`) ?? undefined,
+    select: (s) =>
+      safeInternalReturnPath(`${s.location.pathname}${s.location.searchStr}`) ?? undefined,
   });
   const authSearch = returnTo ? { returnTo } : undefined;
   const peeked = typeof window !== "undefined" ? peekAuthState() : null;
