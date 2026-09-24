@@ -138,7 +138,9 @@ function TakeExamPage() {
         setContentReady(true);
         return;
       }
-      if (resolved.summary.tier === "full") {
+      if (resolved.summary.tier === "demo") {
+        // Free diagnostic — no purchase required.
+      } else if (resolved.summary.tier === "full") {
         const { userOwnsFullTier, userOwnsWisoFullCourse } = await import(
           "@/lib/full-course-access"
         );

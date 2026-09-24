@@ -87,6 +87,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Master every detail and tactic of the actual exam.":
       "Beherrsche jedes Detail und jede Taktik der echten Prüfung.",
     "Try demo-practice": "Demo-Übung testen",
+    "Demo course": "Demo-Kurs",
+    "Demo mock": "Demo-Mock",
+    "Free hard diagnostic": "Kostenlose harte Diagnose",
     "50+ tasks for start": "50+ Aufgaben zum Start",
     "Explore Courses": "Kurse entdecken",
     "See all BBE School products": "Alle BBE-School-Produkte ansehen",
@@ -275,6 +278,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Master every detail and tactic of the actual exam.":
       "Опануй кожну деталь і тактику справжнього іспиту.",
     "Try demo-practice": "Спробувати демо-практику",
+    "Demo course": "Демо-курс",
+    "Demo mock": "Демо-мок",
+    "Free hard diagnostic": "Безкоштовна складна діагностика",
     "50+ tasks for start": "50+ завдань для старту",
     "Explore Courses": "Переглянути курси",
     "See all BBE School products": "Усі продукти BBE School",

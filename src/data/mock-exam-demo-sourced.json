@@ -1,0 +1,1048 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 6.5.034",
+      "title": "Turnover and Liquidity Extract 34",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Inventory turnover, cost of sales taken relative to average inventory, is below 6.87 times per year.",
+        "Asset turnover, revenue taken relative to average total assets, is above 1.48.",
+        "With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+        "Revenue exceeds €999 thousand.",
+        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.4 times per year."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Flows for the year and stocks at year-end answer different questions. With that split the claim is fine. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A below reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{823 + 1{,}028}{2} \\approx 925.5\n$$\n\n$$\n\\frac{1{,}019}{925.5} \\approx 1.1010\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 925.5. Asset turnover = 1,019 ÷ 925.5 ≈ 1.1010 Claimed above 1.48.\n\nThat comparison uses the extract figures only, so the claim stands or falls on the arithmetic itself.\n\nSo the statement is False.",
+        "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{169 + 179}{2} \\approx 174\n$$\n\n$$\n\\frac{674}{174} \\approx 3.87\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 674174 = 3.87 That interpretation matches the definition.\n\nUsing only the extract averages keeps the turnover arithmetic aligned with the claim.\n\nSo the statement is True.",
+        "Revenue is read directly from the extract and compared with the stated euro-thousand threshold, a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1{,}019\\text{ thousand}\n$$\n\nRead revenue from the extract. Revenue = €1,019 thousand; threshold exceeds €999 thousand. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine. A exceeds reading of the extract supports this claim. Operators and dealers can report the same the item on different lines.\n\nWalk the claim against those extract lines once more: the nouns, the timing, and the arithmetic either line up with the chapter rule or they do not. That is the whole test for this letter.\n\nSo the statement is True.",
+        "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{135 + 107}{2} \\approx 121\n$$\n\n$$\n\\frac{1{,}019}{121} \\approx 8.4215\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,019121 = 8.4215 Threshold exceeds 10.4. Check the extract’s labels once more against the stem’s threshold.\n\nThe extract's own figures are enough for that check; no extra assumption is required.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.4.010",
+      "title": "Asset Composition Chart 10",
+      "subsection": "6.4",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+        "Working capital of €133 thousand is positive on this balance sheet.",
+        "The debt ratio exceeds 56%.",
+        "Trade receivables make up less than 48.5% of current assets.",
+        "Cash and cash equivalents make up more than 23.1% of current assets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A outside reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 356 and current liabilities total 223:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 356, \\quad \\text{CL} = 223,\\quad \\text{WC} = 356 - 223\n$$\n\n$$\n\\text{WC} = 133\n$$\n\nWC = 356 − 223 = 133. The stem cites €133 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 703,\\quad \\text{Total assets} = 1{,}181\n$$\n\n$$\n\\frac{703}{1{,}181} \\approx 0.5953 \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 56\\%\n$$\n\nThe debt ratio is 59.5%, above the 56% benchmark. Debt ratio ≈ 703 ÷ 1,181 = 59.5%.\n\nSo the statement is True.",
+        "From the extract, Trade receivables = 81 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{81}{356}\n$$\n\n$$\n\\text{Share} = 22.8\\%\n$$\n\nTrade receivables / current assets ≈ 81 ÷ 356 = 22.8%. Less than 48.5% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
+        "From the extract, Cash and cash equivalents = 119 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{119}{356}\n$$\n\n$$\n\\text{Share} = 33.4\\%\n$$\n\nCash and cash equivalents / current assets ≈ 119 ÷ 356 = 33.4%. More than 23.1% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.1.01",
+      "title": "Marketing Definition of a Product",
+      "subsection": "5.1",
+      "chapter": null,
+      "context": "Review the marketing definition of a product as every good and service that can be exchanged to fulfil customer wishes and needs. Evaluate the following economic assertions:",
+      "statements": [
+        "In marketing terminology, a product refers only to physical goods and excludes services from the definition.",
+        "In marketing terminology, a product is every good and/or service that can be exchanged in order to fulfil the wishes and needs of customers.",
+        "Producer products are defined by whether an item is manufactured in a factory rather than by the customer who purchases it.",
+        "Consumer products are defined by retail packaging size rather than by whether the buyer is a household or business.",
+        "A printer is always a consumer product because households are the most visible end users of printers."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Marketing treats a product as anything that can be exchanged to meet customer wishes and needs, including services. Limiting the term to physical goods alone drops maintenance contracts, consulting, and support out of the definition without reason.\n\nSo the statement is False.",
+        "Under the marketing definition, a product is every good and/or service that can be exchanged to fulfil customer wishes and needs. Tangible merchandise and intangible service work sit under the same label once an exchange is on the table.\n\nSo the statement is True.",
+        "Producer versus consumer labels turn on who buys, not on whether the item left a factory. A finished printer sold to another firm is still a producer product even though it is fully assembled merchandise. Factory origin, assembly line history, and industrial design do not decide the category. Marketing asks whether the purchaser is a business or a household in that exchange. Treating manufacture as the test misplaces the buyer criterion and would misclassify countless finished B2B goods.\n\nSo the statement is False.",
+        "Consumer-product status tracks whether the buyer is a private household, not how large the retail pack is. A bulky home appliance bought for domestic use remains a consumer product; a tiny office staple bought by a firm remains a producer product. Packaging size is not the classifying rule.\n\nSo the statement is False.",
+        "Printers sold into offices for commercial work are producer products even though households also buy printers. Visibility of home users does not freeze every printer into the consumer category. Classification follows the actual purchaser in each exchange, so \"always consumer\" is too absolute.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.51",
+      "title": "Alpine Sensors AG as a Separate Legal Person",
+      "subsection": "4.3",
+      "chapter": null,
+      "context": "Three engineers incorporate Alpine Sensors AG in Austria so the firm itself can hold patents, hire staff, and face suppliers in its own name. Evaluate the following economic assertions:",
+      "statements": [
+        "Once incorporated, Alpine Sensors AG is a legal entity of its own with rights and obligations comparable to those of natural persons in business life.",
+        "As a legal person, Alpine Sensors AG can own laboratory equipment and land, hire technicians, and close supply contracts in the company’s name.",
+        "If a supplier sues over unpaid circuit boards, the lawsuit is brought against Alpine Sensors AG rather than automatically against each engineer’s private name.",
+        "The founding engineers must personally manage every production shift because shareholders of a corporation are always also its day-to-day managers.",
+        "A hired plant manager at Alpine Sensors AG may run operations without owning any shares in the company."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Incorporation gives Alpine Sensors AG its own legal personality. The company holds rights and duties in business life much as a natural person would when owning assets, hiring, or contracting, separate from the three engineers as private individuals.\n\nSo the statement is True.",
+        "As a legal person, Alpine Sensors AG can own lab gear and land, employ technicians, and sign supply contracts in the company name. Those acts attach to the firm, not to each founder’s private identity.\n\nSo the statement is True.",
+        "Supplier suits over unpaid boards are filed against Alpine Sensors AG as the contracting party. Creditors pursue the corporate defendant first rather than automatically naming every engineer’s private identity as the debtor on the face of the claim.\n\nSo the statement is True.",
+        "Shareholders fund and own the corporation; they are not forced to run every production shift. Alpine Sensors AG can hire managers and operators while founders remain owners without day-to-day shop-floor duty. Equating ownership with mandatory personal management confuses equity stakes with employment roles. Many corporations deliberately separate investors from operators so specialists run production. The engineers may choose to work in the plant, but corporate form does not compel that identity of owner and manager for every shift.\n\nSo the statement is False.",
+        "A hired plant manager can direct operations with zero shareholding. Management authority comes from appointment and employment, not from an automatic equity ticket, which is why ownership and operational control can diverge inside Alpine Sensors AG.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.4.16",
+      "title": "Impulse Buying Under Promotion",
+      "subsection": "5.4",
+      "chapter": null,
+      "context": "Analyze how high-quality durable goods can be circulated among users instead of being discarded after brief use. Evaluate the following economic assertions:",
+      "statements": [
+        "Businesses bear no responsibility for consumer budgets when advertising encourages additional unplanned purchases.",
+        "Swapping quality garments at community events extends wear without each participant buying new low-cost items.",
+        "Refurbishment always wastes more resources than manufacturing a new unit regardless of product condition.",
+        "For electronics retailers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+        "Event clothing must be purchased because rental services cannot supply outfits of higher quality than cheap retail goods."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "When ads push unplanned extras, firms help shape the spend that follows. Claiming zero responsibility for those budget overruns ignores how promotion works. Marketing that sparks impulse buys is not a neutral bystander.\n\nSo the statement is False.",
+        "Community swap events move quality garments between wearers without a trip to buy new low-cost replacements. Each swap extends fabric life and cuts demand for fresh cheap stock. Circulation replaces disposal-and-repurchase for that wardrobe slot.\n\nSo the statement is True.",
+        "Refurbishing a sound chassis with new batteries or screens often uses far less material than building a unit from raw inputs. Condition matters: a lightly used device is a candidate for refurbishment, not automatic scrap. Blanket claims that refurbishment always wastes more than new manufacture ignore those savings. Manufacturers and repair shops routinely choose remanufacture when the base product is still solid. The absolute wording is therefore false.\n\nSo the statement is False.",
+        "Electronics retailers refresh models and advertise features that shoppers had not requested. Creating new wishes sits alongside meeting stated demand. Continuous development plus promotion can manufacture desire, not only respond to it.\n\nSo the statement is True.",
+        "Premium rental racks often stock higher-quality eventwear than bargain retail racks. Clients need not purchase to access that tier. Saying rental cannot beat cheap retail quality invents a false limit.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 2.4.28",
+      "title": "Barter limits",
+      "subsection": "2.4",
+      "chapter": null,
+      "context": "Two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Evaluate the following economic assertions:",
+      "statements": [
+        "Inflation refers to one shop's single price hike only, never to the general price level.",
+        "Division of labour across countries is impossible because climate never differs.",
+        "Because no euros change hands, this egg-for-vegetable swap involves no economic exchange at all.",
+        "Without money, storing value from perishable eggs into future purchases is harder than holding currency.",
+        "Barter economies never face problems comparing relative values of unlike goods."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Inflation is a general price-level rise, not a single shop's isolated hike. One sticker change is not inflation by itself. That reading follows directly from the scarce means named in the statement, not from a different chapter topic.\n\nSo the statement is False.",
+        "Climate and other differences across countries are exactly why cross-border specialisation occurs. Division of labour across countries is common, not impossible.\n\nSo the statement is False.",
+        "An agreed egg-for-vegetable swap is exchange even with no euros. Barter is exchange without money, not the absence of economic exchange. That reading follows directly from the scarce means named in the statement, not from a different chapter topic.\n\nSo the statement is False.",
+        "Perishable eggs are a poor store of value compared with currency balances that can buy a wide future basket. Without money, turning today's egg surplus into deferred purchasing power is harder.\n\nFarmers in the stem can trade once, but holding value across time is clumsier when the \"savings\" spoil. That conclusion stays inside this statement's own nouns and does not borrow a different definition from another letter.\n\nSo the statement is True.",
+        "Barter economies struggle to compare unlike goods without a common measure. Comparison problems are a standard barter friction, not something those economies never face.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.6.13",
+      "title": "Working Capital and Short-Term Credit",
+      "subsection": "4.6",
+      "chapter": null,
+      "context": "Consider a construction firm covering payroll gaps with short-term bank loans while shareholders debate whether to inject equity instead of adding more debt. Evaluate the following economic assertions:",
+      "statements": [
+        "A business with a high proportion of loan capital might have difficulties obtaining more credit.",
+        "High gearing means capital expenditure should be funded only through additional bank loans at any interest rate offered.",
+        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered.",
+        "Revenue expenditure must never use short-term trade credit when the balance sheet already lists any loan capital.",
+        "Administration costs of bond issues are ignored because only equity carries issuance expenses."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "A business with a high proportion of loan capital might have difficulties obtaining more credit. Lenders already see elevated repayment risk before the next facility is discussed.\n\nSo the statement is True.",
+        "High gearing argues against funding capital expenditure only through additional bank loans at any rate offered. Internal funds or investors can be safer than accepting every expensive debt offer on the table.\n\nSo the statement is False.",
+        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered. Security becomes a gate when unsecured appetite is already exhausted by existing loans. Higher interest alone may not suffice if the lender wants assets pledged against further exposure. The construction firm's equity debate sits beside that collateral reality when debt is already heavy.\n\nSo the statement is True.",
+        "Revenue expenditure may still use short-term trade credit even when some loan capital already appears on the balance sheet. A blanket ban on supplier credit whenever any loan exists overstates gearing caution.\n\nSo the statement is False.",
+        "Bond issues also carry administration and flotation expenses, not only equity issues. Ignoring bond issuance costs because 'only equity has fees' misreads the cost comparison.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 2.1.07",
+      "title": "PhoneFix screen repairs",
+      "subsection": "2.1",
+      "chapter": null,
+      "context": "Consider phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. Evaluate the following economic assertions:",
+      "statements": [
+        "Screen replacement is a service, while a phone case sold at the counter is a good.",
+        "Because PhoneFix is a business rather than a household, its monthly spare parts can never run scarce.",
+        "A customer buying a decorative case purely for its design is satisfying a want rather than a basic need.",
+        "Repairing a phone never fulfils a need because phones are luxury items outside normal economic analysis.",
+        "A limited monthly batch of parts forces the shop to economise by prioritising which jobs to accept."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Replacing a cracked screen is labour performed for the customer, a service. A phone case sold at the counter is a tangible good. PhoneFix can offer both in one visit.\n\nSo the statement is True.",
+        "Spare parts arrive in limited monthly batches. Being a business does not create unlimited stock. When the batch runs down, further repairs wait. Scarcity of parts is exactly why the shop must prioritise jobs.\n\nSo the statement is False.",
+        "A decorative case bought for design rather than protection serves appearance and preference. That is a want, not a basic need for well-being. Functionally necessary repairs differ from optional styling accessories.\n\nSo the statement is True.",
+        "A working phone often supports work, school contact, and safety. Repairing it can restore a practical need, not merely a luxury whim. Excluding phones from economic analysis is artificial.\n\nSo the statement is False.",
+        "A fixed monthly parts batch cannot cover every cracked screen that walks in. PhoneFix must decide which jobs to accept, which to delay, and how to stretch inventory. That prioritisation is economising under scarcity. Unlimited-parts thinking would remove the need to choose; limited batches force ranking. The statement links the shop's constraint to careful allocation correctly.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 3.4.01",
+      "title": "EU micro staff ceiling",
+      "subsection": "3.4",
+      "chapter": null,
+      "context": "Consider a workshop that employs nine people with €1.8m turnover. Evaluate the following economic assertions:",
+      "statements": [
+        "Because staff are below ten, a firm remains a micro enterprise despite turnover above €2m.",
+        "Forty-five staff alone guarantees small classification even if turnover exceeds €10m.",
+        "Meeting the staff ceiling alone is sufficient for micro status regardless of turnover or balance sheet totals.",
+        "Under the EU definition, a micro enterprise may employ fewer than ten people.",
+        "A firm qualifies as micro because its balance sheet is below €2m, regardless of turnover above €2m."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Headcount under ten is only one micro test. Turnover above €2m can still block micro status even with a tiny payroll. Staff alone never completes the EU micro definition.\n\nSo the statement is False.",
+        "Forty-five staff sit inside the small employee band, yet turnover above €10m can push the firm out of small status. Headcount guarantees nothing once the financial caps are breached.\n\nSo the statement is False.",
+        "Micro status needs fewer than ten people plus a financial test: turnover or balance sheet not above €2m. Meeting the staff ceiling while blowing past both financial caps fails the definition.\n\nA nine-person firm with €3m turnover and a €3m balance sheet is not micro under those figures. Staff sufficiency alone is therefore not enough for the label.\n\nSo the statement is False.",
+        "Under the EU definition, a micro enterprise may employ fewer than ten people as its staff ceiling. That headcount limit is the employment half of the micro tests.\n\nSo the statement is True.",
+        "A balance sheet below €2m helps only if the other micro tests also hold. Turnover above €2m can still disqualify micro status even when the balance sheet looks small.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.2.039",
+      "title": "Liquidity From the Balance Sheet 39",
+      "subsection": "6.2",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
+        "The current ratio exceeds 1.28.",
+        "Working capital of €144 thousand is positive on this balance sheet.",
+        "Buildings make up more than 47.1% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 276,\\quad \\text{Inventory} = 119,\\quad \\text{CL} = 132\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 276 - 119 = 157\n$$\n\n$$\n\\frac{157}{132} \\approx 1.1894 \\le 1.35\n$$\n\nSo the statement is False.",
+        "CA ÷ CL is the current-ratio identity used below.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 119 + 60 + 97,\\quad \\text{CA} = 276,\\quad \\text{CL} = 74 + 58\n$$\n\n$$\n\\text{CL} = 132\n$$\n\n$$\n\\frac{276}{132} \\approx 2.0909 > 1.28\n$$\n\nCurrent ratio = 276 ÷ 132 ≈ 2.09. The claim says the ratio exceeds 1.28.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 276 and current liabilities total 132:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 276, \\quad \\text{CL} = 132,\\quad \\text{WC} = 276 - 132\n$$\n\n$$\n\\text{WC} = 144\n$$\n\nWC = 276 − 132 = 144. The stem cites €144 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €144 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "From the extract, Buildings = 307 and total assets = 860.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{307}{860}\n$$\n\n$$\n\\text{Share} = 35.7\\%\n$$\n\nBuildings / total assets ≈ 307 ÷ 860 = 35.7%. More than 47.1% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) When public debt stocks rise faster than nominal GDP for several consecutive years, markets begin to price not only solvency risk but also the political temptation to lean on the monetary authority. Fiscal dominance denotes a regime in which the path of primary balances is treated as given, so that the central bank must ultimately accommodate debt servicing through lower real rates, financial repression, or outright purchases of government paper. The textbook opposite—monetary dominance—keeps the inflation objective first and forces the fiscal authority to adjust taxes or spending. Between those poles sits a grey zone that advanced economies occupied after the global financial crisis and again during the pandemic: large exceptional bond purchases framed as liquidity support, accompanied by repeated assurances that the purchases were temporary, sterilised in spirit if not always on the balance sheet, and unrelated to financing the Treasury.\n\n(2) Independence statutes were written precisely to raise the political cost of that accommodation. Operational independence typically covers instrument choice—policy rates, reserve requirements, the composition of the open-market book—while goal independence concerns the mandate itself. Even where statutes look strong on paper, credibility is an equilibrium outcome. Bond markets that believe a future government will rewrite the mandate, stack the board, or compel direct financing will demand higher term premia today. Conversely, a central bank that has spent years under-delivering on inflation may find that markets discount its promises even when the legal text is unchanged. Independence is therefore not a binary switch; it is a reputational asset that depreciates when policy repeatedly subordinates the inflation target to debt-service comfort.\n\n(3) Debt monetisation is often caricatured as the printing press funding a single extravagant budget. In modern practice it is usually quieter. A central bank can expand its balance sheet by purchasing secondary-market government bonds, credit the sellers' reserve accounts, and leave the Treasury free to place new primary issuance into a market that has just absorbed a large buyer. If the bank later rolls those holdings indefinitely, the consolidated public sector has permanently replaced interest-bearing debt held by the private sector with non-interest-bearing (or low-interest) reserves. Whether that sequence is labelled quantitative easing, monetary financing, or \"liquidity management\" depends less on the accounting labels than on whether the purchases are expected to be reversed and whether fiscal policy adjusts when inflation threatens. Economists disagree on thresholds, but few deny that open-ended secondary-market support can functionally mimic primary monetisation when markets treat the central bank as the residual buyer.\n\n(4) Critics of large-scale asset purchases emphasise distributional and financial-stability side effects: compressed term premia can fuel leverage in shadow banking, inflate asset prices unevenly, and blunt the signal that long rates normally send about scarcity of capital. Defenders reply that in a liquidity trap, with policy rates near the effective lower bound, such purchases were the least-bad way to prevent a collapse in aggregate demand and a self-fulfilling debt spiral. The empirical literature remains contested because identification is hard: crises that trigger QE also move fiscal balances, risk premia, and inflation expectations at the same time. What is less contested is the political economy lesson. Once a central bank has demonstrated that it can absorb large volumes of sovereign paper without an immediate inflation spike, the fiscal authority faces a weaker constraint on primary deficits—until inflation returns and the same institution must tighten into a stock of debt that has grown under its own earlier support.\n\n(5) For applicants sitting a business-economics entrance exam, the practical takeaway is not to memorise slogans but to track the assignment of residual adjustment. Ask who is forced to move when debt dynamics look unsustainable: the finance ministry through primary surplus, or the monetary authority through accommodation. Ask whether secondary-market purchases are time-limited and paired with a credible exit, or whether markets price them as a standing put. And notice that \"independence\" without a hard budget constraint elsewhere in the polity is always provisional. Statutes raise the cost of capture; they do not abolish the incentive to capture when the alternative is politically costly consolidation.",
+    "passageTitle": "Fiscal Dominance, Central-Bank Independence, and the Quiet Mechanics of Debt Monetisation",
+    "tasks": [
+      {
+        "case_id": "ENG DEMO.T.01",
+        "id": "en-demo-t-01",
+        "title": "Task 1 — Regime definitions",
+        "subsection": "demo.t",
+        "context": "Based on paragraphs (1)–(2), decide whether each statement is true or false.",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Fiscal dominance, as defined in the passage, treats the path of primary balances as given and requires the central bank to accommodate debt servicing.",
+          "Monetary dominance, in the passage's framing, keeps the inflation objective first and forces fiscal adjustment through taxes or spending.",
+          "The passage claims that post-crisis and pandemic bond purchases sat in a pure monetary-dominance regime with no grey-zone ambiguity.",
+          "Operational independence in the passage covers instrument choice such as policy rates and the open-market book, while goal independence concerns the mandate itself.",
+          "The passage treats central-bank independence as a binary legal switch that markets ignore once statutes are written."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "Paragraph (1) defines fiscal dominance as a regime in which primary balances are treated as given, so the central bank must ultimately accommodate debt servicing through lower real rates, financial repression, or purchases of government paper.\n\nSo the statement is True.",
+          "The same paragraph sets monetary dominance as the opposite pole: inflation objective first, with the fiscal authority forced to adjust taxes or spending.\n\nSo the statement is True.",
+          "Paragraph (1) places advanced economies after the global financial crisis and during the pandemic in a grey zone between the poles—large exceptional purchases framed as liquidity support—not in pure monetary dominance without ambiguity.\n\nSo the statement is False.",
+          "Paragraph (2) distinguishes operational independence (instrument choice: rates, reserve requirements, open-market book composition) from goal independence (the mandate itself).\n\nSo the statement is True.",
+          "Paragraph (2) explicitly rejects the binary-switch view: independence is a reputational asset that depreciates when policy subordinates the inflation target, not a switch markets ignore once statutes exist.\n\nSo the statement is False."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.T.02",
+        "id": "en-demo-t-02",
+        "title": "Task 2 — Monetisation mechanics",
+        "subsection": "demo.t",
+        "context": "Based on paragraph (3), decide whether each statement is true or false.",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "The passage argues that modern debt monetisation is usually quieter than the caricature of a printing press funding one extravagant budget.",
+          "Secondary-market purchases that credit sellers' reserve accounts can leave the Treasury freer to place new primary issuance into a market that has just absorbed a large buyer.",
+          "If holdings are rolled indefinitely, the consolidated public sector permanently replaces private interest-bearing debt with reserves that are non-interest-bearing or low-interest.",
+          "The passage says accounting labels alone—QE versus monetary financing—are decisive regardless of exit expectations and fiscal adjustment.",
+          "Open-ended secondary-market support can functionally mimic primary monetisation when markets treat the central bank as the residual buyer."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "Paragraph (3) opens by contrasting the printing-press caricature with quieter modern practice.\n\nSo the statement is True.",
+          "The paragraph describes purchases that credit reserve accounts and leave the Treasury free to place new primary issuance into a market that has just absorbed a large buyer.\n\nSo the statement is True.",
+          "Indefinite rolling replaces private interest-bearing debt with non-interest-bearing or low-interest reserves at the consolidated public-sector level.\n\nSo the statement is True.",
+          "The passage states that labels depend less on accounting names than on whether purchases are expected to be reversed and whether fiscal policy adjusts when inflation threatens—so labels alone are not decisive.\n\nSo the statement is False.",
+          "The closing sentence of (3) says open-ended secondary support can functionally mimic primary monetisation when markets treat the central bank as the residual buyer.\n\nSo the statement is True."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.T.03",
+        "id": "en-demo-t-03",
+        "title": "Task 3 — Side effects and politics",
+        "subsection": "demo.t",
+        "context": "Based on paragraphs (4)–(5), decide whether each statement is true or false.",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Critics emphasise compressed term premia, leverage in shadow banking, uneven asset-price inflation, and a blunted scarcity signal in long rates.",
+          "Defenders argue that near the effective lower bound, large-scale purchases were the least-bad way to prevent demand collapse and a self-fulfilling debt spiral.",
+          "The passage treats the empirical QE literature as settled because identification problems are trivial in crises.",
+          "Once a central bank has absorbed large sovereign volumes without an immediate inflation spike, the fiscal authority faces a weaker constraint on primary deficits—until inflation returns.",
+          "The exam-facing takeaway is to track who must adjust when debt dynamics look unsustainable: finance ministry via primary surplus, or monetary authority via accommodation."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "Paragraph (4) lists exactly those critic concerns: compressed term premia, shadow-banking leverage, uneven asset prices, and blunted long-rate scarcity signals.\n\nSo the statement is True.",
+          "Defenders' reply in (4) matches the liquidity-trap / ELB least-bad argument against demand collapse and a debt spiral.\n\nSo the statement is True.",
+          "The passage says the empirical literature remains contested because identification is hard when crises move fiscal balances, risk premia, and expectations together—not that it is settled.\n\nSo the statement is False.",
+          "Paragraph (4) states the political-economy lesson: demonstrated absorption without an immediate inflation spike weakens the fiscal primary-deficit constraint until inflation returns.\n\nSo the statement is True.",
+          "Paragraph (5) frames the practical takeaway as tracking residual adjustment between the finance ministry and the monetary authority.\n\nSo the statement is True."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.T.04",
+        "id": "en-demo-t-04",
+        "title": "Task 4 — Inference traps",
+        "subsection": "demo.t",
+        "context": "Based on the full passage, decide whether each statement is true or false.",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Bond markets that expect future mandate rewriting or board stacking will demand higher term premia today, according to paragraph (2).",
+          "The passage claims sterilisation in spirit was always matched by full sterilisation on every post-crisis balance sheet.",
+          "Statutes raise the cost of capture but do not abolish the incentive to capture when consolidation is politically costly.",
+          "A standing put priced by markets is presented as equivalent to a clearly time-limited purchase programme with a credible exit.",
+          "A central bank that has under-delivered on inflation may see markets discount its promises even if the legal text is unchanged."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "Paragraph (2) states that markets expecting mandate rewriting, board stacking, or compelled direct financing demand higher term premia today.\n\nSo the statement is True.",
+          "Paragraph (1) says purchases were framed as sterilised in spirit if not always on the balance sheet—so full on-balance-sheet sterilisation is not claimed.\n\nSo the statement is False.",
+          "Paragraph (5) ends: statutes raise the cost of capture; they do not abolish the incentive when the alternative is costly consolidation.\n\nSo the statement is True.",
+          "Paragraph (5) contrasts time-limited purchases paired with a credible exit against markets pricing purchases as a standing put—they are not treated as equivalent.\n\nSo the statement is False.",
+          "Paragraph (2) notes that under-delivery on inflation can lead markets to discount promises even when the legal text is unchanged.\n\nSo the statement is True."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.T.05",
+        "id": "en-demo-t-05",
+        "title": "Task 5 — Cross-paragraph synthesis",
+        "subsection": "demo.t",
+        "context": "Based on the full passage, decide whether each statement is true or false.",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Financial repression is listed among the accommodation channels under fiscal dominance in paragraph (1).",
+          "The passage asserts that distributional side effects of asset purchases are imaginary and can be ignored in policy design.",
+          "Credibility is described as an equilibrium outcome rather than a property that follows automatically from strong statutes.",
+          "Residual-buyer expectations can turn secondary-market support into functional primary monetisation.",
+          "The passage recommends memorising slogans about printing presses rather than tracking residual adjustment."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "Paragraph (1) lists lower real rates, financial repression, or outright purchases as accommodation channels under fiscal dominance.\n\nSo the statement is True.",
+          "Paragraph (4) takes critics' distributional and financial-stability side effects seriously; it does not call them imaginary.\n\nSo the statement is False.",
+          "Paragraph (2): credibility is an equilibrium outcome, even where statutes look strong on paper.\n\nSo the statement is True.",
+          "Paragraph (3) ties residual-buyer expectations to functional mimicry of primary monetisation.\n\nSo the statement is True.",
+          "Paragraph (5) says the takeaway is not to memorise slogans but to track residual adjustment.\n\nSo the statement is False."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.V.01",
+        "id": "en-demo-v-01",
+        "title": "Task 6 — In-passage vocabulary",
+        "subsection": "demo.v",
+        "context": "In the passage, the word \"accommodate\" in paragraph (1) is closest in meaning to:",
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Force the fiscal authority to raise taxes immediately.",
+          "Adjust monetary policy so that debt servicing remains feasible under the given fiscal path.",
+          "Abolish the inflation mandate by statute overnight.",
+          "Sell all government paper from the central-bank portfolio.",
+          "Ignore bond-market term premia entirely."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "Accommodation here is the central bank's response, not an immediate tax hike by the fiscal authority.\n\nSo the statement is False.",
+          "In context, accommodate means the central bank must ultimately ease the debt-service burden through rates, repression, or purchases while primary balances stay given.\n\nSo the statement is True.",
+          "Nothing in (1) equates accommodate with overnight abolition of the mandate.\n\nSo the statement is False.",
+          "Accommodation expands support for government paper; it is not a fire-sale of the portfolio.\n\nSo the statement is False.",
+          "The passage elsewhere stresses that markets price risks; accommodate does not mean ignoring premia.\n\nSo the statement is False."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.V.02",
+        "id": "en-demo-v-02",
+        "title": "Task 7 — In-passage vocabulary",
+        "subsection": "demo.v",
+        "context": "In paragraph (4), \"blunt the signal\" is closest in meaning to:",
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Make long rates a clearer indicator of capital scarcity.",
+          "Weaken or dull the information that long rates normally convey about scarcity of capital.",
+          "Increase the volatility of overnight policy rates only.",
+          "Replace all term premia with statutory ceilings.",
+          "Guarantee that asset prices fall uniformly."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "Blunting is the opposite of making the signal clearer.\n\nSo the statement is False.",
+          "In context, compressed term premia dull the scarcity information long rates normally send.\n\nSo the statement is True.",
+          "The phrase targets the long-rate scarcity signal, not overnight-rate volatility alone.\n\nSo the statement is False.",
+          "No statutory ceiling on term premia is described.\n\nSo the statement is False.",
+          "Critics say purchases inflate asset prices unevenly; blunt does not mean uniform falls.\n\nSo the statement is False."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.G.01",
+        "id": "en-demo-g-01",
+        "title": "Task 8 — Grammar (conditionals / aspect)",
+        "subsection": "demo.g",
+        "context": "Choose whether each sentence is grammatically and idiomatically correct English for a formal economics text.",
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Had the central bank not absorbed the paper, term premia would likely have spiked.",
+          "If markets would believe the purchases are temporary, premia stay compressed forever.",
+          "The more open-ended the support becomes, the weaker the fiscal constraint appears.",
+          "Rarely has a balance-sheet expansion of this scale left inflation expectations untouched in every jurisdiction.",
+          "Neither the statute nor the board appointments is irrelevant to credibility."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "Inverted third-conditionals (Had … not …, … would have …) are correct formal English.\n\nSo the statement is True.",
+          "After if, use present/believe for a real conditional—not \"would believe\". Correct: If markets believe the purchases are temporary, …\n\nSo the statement is False.",
+          "The comparative correlative the more … the weaker … is standard and correct.\n\nSo the statement is True.",
+          "Negative inversion with Rarely has + subject + past participle is grammatical.\n\nSo the statement is True.",
+          "Neither … nor with two singular subjects takes a singular verb in careful formal usage here, but \"is\" with a plural-leaning reading of appointments is awkward; standard: Neither the statute nor the board appointments are irrelevant—or better, Neither X nor Y is irrelevant when both are singular. With mixed number, prefer rephrase. As written with plural \"appointments\" + \"is\", the agreement is wrong.\n\nSo the statement is False."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.G.02",
+        "id": "en-demo-g-02",
+        "title": "Task 9 — Grammar (modifiers / parallelism)",
+        "subsection": "demo.g",
+        "context": "Decide whether each sentence is grammatically correct.",
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Purchases framed as temporary, sterilised in spirit, and unrelated to Treasury financing reassured some observers.",
+          "To prevent a spiral, and restoring demand, the bank expanded its book.",
+          "What markets price is less the label than whether an exit is credible.",
+          "The authority that must adjust—and when—shapes the inflation path.",
+          "Being politically costly, consolidation often loses to accommodation."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "Parallel past participles (framed / sterilised / unrelated) modify purchases correctly.\n\nSo the statement is True.",
+          "Faulty parallelism: infinitive \"To prevent\" cannot pair with gerund \"restoring\". Use To prevent … and to restore …\n\nSo the statement is False.",
+          "Cleft-style What … is … is grammatical; less X than Y comparison is fine.\n\nSo the statement is True.",
+          "Parenthetical —and when— is acceptable; subject-verb agreement holds.\n\nSo the statement is True.",
+          "Dangling-risk is low: Being politically costly correctly modifies consolidation.\n\nSo the statement is True."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.V.03",
+        "id": "en-demo-v-03",
+        "title": "Task 10 — Paraphrase vocabulary",
+        "subsection": "demo.v",
+        "context": "Which option best paraphrases \"residual buyer\" as used in paragraph (3)?",
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5",
+        "statements": [
+          "A purchaser who only buys when private demand clears the market first.",
+          "An institution expected to absorb whatever issuance private investors will not take at prevailing prices.",
+          "A dealer that never holds overnight inventory.",
+          "A household saving exclusively in cash.",
+          "A rating agency that certifies every bond as risk-free."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "A residual buyer is the last backstop, not someone who waits until the market already clears.\n\nSo the statement is False.",
+          "In context, residual buyer means markets treat the central bank as absorbing paper private investors will not take—the backstop demand.\n\nSo the statement is True.",
+          "Dealer inventory rules are unrelated.\n\nSo the statement is False.",
+          "Household cash saving is not the passage sense.\n\nSo the statement is False.",
+          "Rating agencies are not buyers in this sense.\n\nSo the statement is False."
+        ]
+      },
+      {
+        "case_id": "ENG DEMO.G.03",
+        "id": "en-demo-g-03",
+        "title": "Task 11 — Grammar (articles / countability)",
+        "subsection": "demo.g",
+        "context": "Decide whether each sentence uses articles and count nouns correctly.",
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5",
+        "statements": [
+          "Credibility is an equilibrium outcome, not a free gift of statute.",
+          "A informations about term premia arrived too late.",
+          "Few deny that open-ended support can mimic monetisation.",
+          "The empirical literature remain contested.",
+          "Independence without a hard budget constraint elsewhere is always provisional."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "Uncountable credibility with an before equilibrium outcome is correct.\n\nSo the statement is True.",
+          "Information is uncountable: not \"A informations\". Use Information about … or Pieces of information …\n\nSo the statement is False.",
+          "Few deny that … is idiomatic and grammatical.\n\nSo the statement is True.",
+          "Literature is singular here: remains, not remain.\n\nSo the statement is False.",
+          "Abstract independence as subject with is is correct.\n\nSo the statement is True."
+        ]
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.30",
+      "id": "math-1-30",
+      "title": "Union, Intersection, and Difference of Three Sets",
+      "chapter": 1,
+      "subsection": "1.2",
+      "context": "Let $A = \\{1, 2, 3, 4\\}$, $B = \\{3, 4, 5, 6\\}$, and $C = \\{7, 8, 9\\}$.",
+      "statements": [
+        "$A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$.",
+        "$A \\cap B = \\{3, 4\\}$.",
+        "$A \\setminus B = \\{1, 2\\}$.",
+        "$B \\setminus A = A \\setminus B$.",
+        "A and C are disjoint sets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nUnite $A$ and $B$:\n\n$$A=\\{1,2,3,4\\}$$\n\n$$B=\\{3,4,5,6\\}$$\n\n$$1\\in A\\cup B$$\n\n$$2\\in A\\cup B$$\n\n$$3\\in A\\cup B$$\n\n$$4\\in A\\cup B$$\n\n$$5\\in A\\cup B$$\n\n$$6\\in A\\cup B$$\n\n$$A\\cup B=\\{1,2,3,4,5,6\\}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nShared members:\n\n$$3\\in A$$\n\n$$3\\in B$$\n\n$$4\\in A$$\n\n$$4\\in B$$\n\n$$1\\in A$$\n\n$$1\\notin B$$\n\n$$2\\in A$$\n\n$$2\\notin B$$\n\n$$A\\cap B=\\{3,4\\}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nDifference keeps members of $A$ that miss $B$:\n\n$$1\\in A$$\n\n$$1\\notin B$$\n\n$$2\\in A$$\n\n$$2\\notin B$$\n\n$$3\\in A$$\n\n$$3\\in B$$\n\n$$4\\in A$$\n\n$$4\\in B$$\n\n$$A\\setminus B=\\{1,2\\}$$\n\nSo the statement is True.",
+        "**D.** → False\n\nCompute the opposite difference:\n\n$$5\\in B$$\n\n$$5\\notin A$$\n\n$$6\\in B$$\n\n$$6\\notin A$$\n\n$$B\\setminus A=\\{5,6\\}$$\n\nFrom letter C,\n\n$$A\\setminus B=\\{1,2\\}$$\n\n$$\\{5,6\\}\\neq\\{1,2\\}$$\n\nso the two differences are unequal.\n\nSo the statement is False.",
+        "**E.** → True\n\nDisjointness needs empty intersection:\n\n$$A=\\{1,2,3,4\\}$$\n\n$$C=\\{7,8,9\\}$$\n\n$$1\\notin C$$\n\n$$2\\notin C$$\n\n$$3\\notin C$$\n\n$$4\\notin C$$\n\n$$A\\cap C=\\emptyset$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "**Part 1: The sets.**\n\nLet $A=\\{1,2,3,4\\}$, $B=\\{3,4,5,6\\}$, and $C=\\{7,8,9\\}$.\n\n**Part 2: The operations.**\n\nIntersection keeps shared members; union keeps anything that sits in at least one list, written once; difference $X\\setminus Y$ keeps members of $X$ that miss $Y$. Two sets are disjoint when they share nothing. Scan $A$ against $B$: $3$ and $4$ sit in both, $1$ and $2$ miss $B$, and $5$ and $6$ miss $A$. Scan $A$ against $C$: no shared member."
+    },
+    {
+      "case_id": "MATH 2.06",
+      "id": "math-2-6",
+      "title": "Binomial identities — set 2",
+      "chapter": 2,
+      "subsection": "2.1",
+      "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
+      "statements": [
+        "With $a=1$, $b=2$, $c=2$, $d=1$, both $(a^2+b^2)(c^2+d^2)$ and $(ac-bd)^2+(ad+bc)^2$ equal $25$.",
+        "Expanding $(c+3)^2$ yields $c^2+6c+9$.",
+        "At $k=1$, expanding $(3k-2)^2$ yields the quadratic $9k^2-12k+3$.",
+        "With $a=5$ and $b=2$, rearranging $a^2-ab\\ge ab-b^2$ produces $(a-b)^2\\ge 0$, which holds.",
+        "$(2h+5)^2=4h^2+10h+25$ as a standard expansion."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nSubstitute the given values into both sides and compare.\n\n$$\na=1\n$$\n\n$$\nb=2\n$$\n\n$$\nc=2\n$$\n\n$$\nd=1\n$$\n\n$$\na^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nb^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\na^2+b^2=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nc^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\nd^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nc^2+d^2=4+1\n$$\n\n$$\n4+1=5\n$$\n\n$$\n(a^2+b^2)(c^2+d^2)=5\\cdot 5\n$$\n\n$$\n5\\cdot 5=25\n$$\n\n$$\nac=1\\cdot 2\n$$\n\n$$\n1\\cdot 2=2\n$$\n\n$$\nbd=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nac-bd=2-2\n$$\n\n$$\n2-2=0\n$$\n\n$$\n(ac-bd)^2=0^2\n$$\n\n$$\n0^2=0\n$$\n\n$$\nad=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\nbc=2\\cdot 2\n$$\n\n$$\n2\\cdot 2=4\n$$\n\n$$\nad+bc=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\n(ad+bc)^2=5^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n0+25=25\n$$\n\nBoth sides equal $25$, as claimed.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nExpand the binomial square by writing the product, then evaluate each term.\n\n$$\n(c+3)^2=(c+3)(c+3)\n$$\n\n$$\n(c+3)(c+3)=c^2+2\\cdot c\\cdot 3+3^2\n$$\n\n$$\n2\\cdot c\\cdot 3=6c\n$$\n\n$$\n3^2=9\n$$\n\n$$\n(c+3)^2=c^2+6c+9\n$$\n\nThe collected right-hand side matches the claim.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nExpand $(3k-2)^2$ and compare with the printed quadratic.\n\n$$\n(3k-2)^2=(3k-2)(3k-2)\n$$\n\n$$\n(3k-2)(3k-2)=(3k)^2-2\\cdot(3k)\\cdot 2+2^2\n$$\n\n$$\n(3k)^2=9k^2\n$$\n\n$$\n2\\cdot(3k)\\cdot 2=12k\n$$\n\n$$\n2^2=4\n$$\n\n$$\n(3k-2)^2=9k^2-12k+4\n$$\n\n$$\n9k^2-12k+3\n$$\n\nThe constant term is $4$, not $3$.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nMove all terms to one side and recognise a square.\n\n$$\na=5\n$$\n\n$$\nb=2\n$$\n\n$$\na^2-ab\\ge ab-b^2\n$$\n\n$$\na^2-ab-(ab-b^2)\\ge 0\n$$\n\n$$\na^2-ab-ab+b^2\\ge 0\n$$\n\n$$\na^2-2ab+b^2\\ge 0\n$$\n\n$$\n(a-b)^2\\ge 0\n$$\n\n$$\n5-2=3\n$$\n\n$$\n3^2=9\n$$\n\n$$\n9\\ge 0\n$$\n\nA square is nonnegative, so the rearranged inequality holds.\n\nSo the statement is True.\n",
+        "**E.** → False\n\nExpand $(2h+5)^2$ and compare with the printed claim.\n\n$$\n(2h+5)^2=(2h+5)(2h+5)\n$$\n\n$$\n(2h+5)(2h+5)=(2h)^2+2\\cdot(2h)\\cdot 5+5^2\n$$\n\n$$\n(2h)^2=4h^2\n$$\n\n$$\n2\\cdot(2h)\\cdot 5=20h\n$$\n\n$$\n5^2=25\n$$\n\n$$\n(2h+5)^2=4h^2+20h+25\n$$\n\n$$\n4h^2+10h+25\n$$\n\nThe cross term is $20h$, not $10h$.\n\nSo the statement is False.\n"
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "MATH 11.19",
+      "id": "math-11-19",
+      "title": "Three CDs That Are Closer Than They Look",
+      "chapter": 11,
+      "subsection": "3.1",
+      "context": "A saver is comparing three one-year certificates of deposit for a \\$20,000 deposit: CD1: nominal 6.30%, compounded monthly. CD2: nominal 6.40%, compounded quarterly. CD3: nominal 6.45%, compounded semi-annually.",
+      "statements": [
+        "CD1's effective annual rate is approximately 6.49%.",
+        "CD2's effective annual rate is approximately 6.55%.",
+        "CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's.",
+        "CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs.",
+        "On the \\$20,000 deposit, choosing CD2 over CD1 would earn approximately \\$13.61 more in interest over the year."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nCD1 splits the monthly quote, then compounds twelve times:\n\n$$\ni_1 = \\frac{0.063}{12} = 0.00525\n$$\n\n$$R_1 = (1.00525)^{12} - 1$$\n\n$$(1.00525)^{12}$$\n\n$$\\approx 1.064851$$\n\n$$R_1$$\n\n$$\\approx 0.064851$$\n\n$$\\approx 6.49\\%$$\n\nThe claim is about $6.49\\%$.\n\nSo the statement is True.",
+        "**B.** → True\n\nCD2 splits the quarterly quote, then compounds four times:\n\n$$\ni_2 = \\frac{0.064}{4} = 0.016\n$$\n\n$$R_2 = (1.016)^{4} - 1$$\n\n$$(1.016)^{4}$$\n\n$$\\approx 1.065553$$\n\n$$R_2$$\n\n$$\\approx 0.065553$$\n\n$$\\approx 6.55\\%$$\n\nThe claim is about $6.55\\%$.\n\nSo the statement is True.",
+        "**C.** → True\n\nOne year of compounding turns the periodic rate into an effective annual rate via:\n\n$$\nR = (1+i)^{n} - 1\n$$\n\nSubstitute the recovered periodic rate and compounding count:\n\nCD3 splits the semi-annual quote, then squares:\n\n$$\ni_3 = \\frac{0.0645}{2} = 0.03225\n$$\n\n$$R_3 = (1.03225)^{2} - 1$$\n\n$$\n(1.03225)^{2} = 1.065540\n$$\n\n$$R_3 = 0.065540$$\n\n$$\\approx 6.55\\%$$\n\nCD2 gave $R_2 \\approx 6.55\\%$ as well. The two effective rates agree to two hundredths of a point.\n\nSo the statement is True.",
+        "**D.** → True\n\nWrite the effective annual rate from the periodic rate and the compounding count:\n\n$$\nR = (1+i)^{n} - 1\n$$\n\nSubstitute the recovered periodic rate and compounding count:\n\nThe three effective annual rates are\n\n$$R_1 = (1.00525)^{12}-1$$\n\n$$\\approx 6.49\\%$$\n\n$$R_2 = (1.016)^{4}-1$$\n\n$$\\approx 6.55\\%$$\n\n$$R_3 = (1.03225)^{2}-1$$\n\n$$\\approx 6.55\\%$$\n\nCD1 also has the lowest nominal rate, $6.30\\%$. Both the nominal ranking and the effective ranking put CD1 last.\n\nSo the statement is True.",
+        "**E.** → True\n\nInterest is principal times the effective annual rate.\n\n$$R_1 = (1.00525)^{12}-1$$\n\n$$\\approx 0.064852$$\n\n$$R_2 = (1.016)^{4}-1$$\n\n$$\\approx 0.065533$$\n\n$$I_1 = 20,000 \\times 0.064852$$\n\n$$\\approx 1,297.04$$\n\n$$I_2 = 20,000 \\times 0.065533$$\n\n$$\\approx 1,310.66$$\n\n$$\n1,310.66 - 1,297.04 = 13.62\n$$\n\nThe claim is approximately \\$13.61.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "A saver is comparing three one-year certificates of deposit for a \\$20,000 deposit: CD1: nominal 6.30%, compounded monthly. CD2: nominal 6.40%, compounded quarterly. CD3: nominal 6.45%, compounded semi-annually.\n\nThe same \\$20,000 principal is invested for one year in each certificate:\n\n$$\nP = 20,000,\n$$\n\n$$\nt = 1\n$$\n\nCD1 quotes 6.30% nominal with monthly compounding:\n\n$$\nr_1 = 6.30\\%\n$$\n\n$$\nr_1 = 0.063,\n$$\n\n$$\nn_1 = 12\n$$\n\nCD2 quotes 6.40% nominal with quarterly compounding:\n\n$$\nr_2 = 6.40\\%\n$$\n\n$$\nr_2 = 0.064,\n$$\n\n$$\nn_2 = 4\n$$\n\nCD3 quotes 6.45% nominal with semi-annual compounding:\n\n$$\nr_3 = 6.45\\%\n$$\n\n$$\nr_3 = 0.0645,\n$$\n\n$$\nn_3 = 2\n$$"
+    },
+    {
+      "case_id": "MATH 4.21",
+      "id": "math-4-21",
+      "title": "Five separate age and consecutive-number stories",
+      "chapter": 4,
+      "subsection": "4.1",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A father is now four times as old as his son. In $20$ years the father will be twice as old as the son will be then. The son is now $10$ years old.",
+        "A mother is three times as old as her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $12$ years old.",
+        "A father who is now $40$ will be $50$ in $20$ years.",
+        "If a father is now $40$ and his son is now $10$, their ages differ by $30$ years, and that gap does not change as both grow older.",
+        "Five years ago a father of $40$ and a son of $10$ were in the ratio five to one."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA present-age ratio together with a future-age ratio is one linear equation in the son's present age.\n\nLet $s$ be the son's age now, in years. The father is now four times as old, so the father is now $4s$. In $20$ years the father will be twice as old as the son will be then:\n\n$$4s + 20 = 2(s + 20)$$\n\n$$4s + 20 = 2s + 40$$\n\n$$2s = 20$$\n\n$$s = 10$$\n\nThe son is now $10$ years old, and the father is now $40$. The claim is that same age $10$.\n\nSo the statement is True.",
+        "**B.** → True\n\nA present-age ratio together with a future-age ratio is one linear equation in the daughter's present age.\n\nLet $d$ be the daughter's age now, in years. The mother is now three times as old, so the mother is now $3d$. In $12$ years the mother will be twice as old as the daughter will be then:\n\n$$3d + 12 = 2(d + 12)$$\n\n$$3d + 12 = 2d + 24$$\n\n$$d = 12$$\n\nThe daughter is now $12$ years old. The claim is that same age $12$.\n\nSo the statement is True.",
+        "**C.** → False\n\nAges grow by adding the elapsed time.\n\nA father who is now $40$ will, after $20$ years, be\n\n$$\n40 + 20 =60\n$$\n\nHe will be $60$, not $50$. The claimed $50$ would mean only $10$ years of growth from $40$\n\nSo the statement is False.",
+        "**D.** → True\n\nThe difference of two ages is unchanged when both grow by the same number of years.\n\n$$\n40 - 10 = 30\n$$\n\nThe gap is $30$ years now. After any common wait of $t$ years the ages are $40 + t$ and $10 + t$, and their difference is still $30$. The claim matches that constant gap.\n\nSo the statement is True.",
+        "**E.** → False\n\nPast ages are present ages minus the elapsed time, and a ratio is their quotient.\n\nFive years ago the father was $35$ and the son was $5$:\n\n$$\n40 - 5 = 35\n$$\n\n$$\n10 - 5 = 5\n$$\n\n$$\n\\frac{35}{5} = 7\n$$\n\nThey were in the ratio seven to one, not five to one. Five to one would have required ages $35$ and $7$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five independent age claims. Translate a present ratio and a future ratio into one linear equation. Ages that grow together keep a constant gap.\n\nIsolate the unknown by inverse operations: undo addition or subtraction first, then divide by a nonzero coefficient.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter."
+    },
+    {
+      "case_id": "MATH 5.52",
+      "id": "math-5-52",
+      "title": "Solventis Labs  -  Multi-Unit Suspension Concentration Reconstruction",
+      "chapter": 5,
+      "subsection": "5",
+      "context": "Solventis blends two drug suspensions, each with a fixed mg/mL concentration. A third batch's Suspension A volume was logged in liters, then converted to mL.",
+      "statements": [
+        "Suspension B's concentration is more than 85% higher than Suspension A's concentration.",
+        "Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.",
+        "If Batch 1's Suspension B volume were doubled, the new total content would exceed 13,500 mg.",
+        "The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.",
+        "Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe overview recovered $A = 8.4$ mg/mL and $B = 15.6$ mg/mL. The relative increase of B over A is\n\n$$\\frac{15.6 - 8.4}{8.4} = \frac{7.2}{8.4}$$\n\n$$approx 0.8571$$\n\nabout $85.7\\%$, which is more than $85\\%$.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.\n\n$$\\frac{|9708 - 9700|}{9700} = \frac{8}{9700}$$\n\n$$approx 0.000825$$\n\nabout $0.0825\\%$, which is not more than $1\\%$.\n\nSo the statement is False.",
+        "**C.** → True\n\nA mixed purchase is the linear combination of the recovered unit prices:\n\n$$\nC = n_x x + n_y y\n$$\n\nUsing the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this claim:\n\nDoubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives\n\n$$500\\cdot 8.4 = 4200$$\n\n$$600\\cdot 15.6 = 9360$$\n\n$$4200 + 9360 = 13560$$\n\nSince $13560 > 13500$, the new total would exceed $13500$ mg.\n\nThe computed figure matches the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nThe shared solve is done; only this claim’s comparison remains.\n\nPooling uses the printed contents. Twice Batch 2 is $2 \\times 12600 = 25200$.\n\n$$\n8880 + 12600 = 21480\n$$\n\nSince $21480 < 25200$, the pooled total is less than twice Batch 2.\n\nSo the statement is True.",
+        "**E.** → True\n\nRead the recovered pair, then run the arithmetic the claim asks for.\n\nBatch 2 has $700$ mL of B out of $200 + 700 = 900$ mL. Batch 3 has $450$ mL of B out of $320 + 450 = 770$ mL.\n\n$$\\frac{700}{900}$$\n\n$$approx 0.7778$$\n\n$$\\frac{450}{770}$$\n\n$$approx 0.5844$$\n\nBatch 2's B-share is higher.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solventis blends two drug suspensions, each with a fixed mg/mL concentration. Batch 1: 500 mL of A and 300 mL of B, 8,880 mg. Batch 2: 200 mL of A and 700 mL of B, 12,600 mg. A third batch's Suspension A volume was logged in liters, then converted to mL: 0.32 L $= 320$ mL of A, 450 mL of B, 9,700 mg recorded.\n\n**Part 1: Building the system.**\n\nLet $x$ = mg/mL concentration of Suspension A, $y$ = mg/mL concentration of Suspension B.\n\n**1. Translate: Batch 1.** That observation becomes:\n\n$$500x + 300y = 8880 \\tag{1}$$\n\n**2. Translate: Batch 2.** That observation becomes:\n\n$$200x + 700y = 12600 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Divide Batch 1 by 100 and Batch 2 by 100:\n\n$$\n5x + 3y = 88.8, \\qquad 2x + 7y = 126\n$$\n\n**2.** Multiply the first by 7 and the second by 3 so the $y$ coefficients both become $21y$:\n\n$$\n35x + 21y = 621.6, \\qquad 6x + 21y = 378\n$$\n\n**3.** Subtract:\n\n$$\n(35x + 21y) - (6x + 21y) = 621.6 - 378\n$$\n\n$$\n29x = 243.6 \\Rightarrow x = \frac{243.6}{29} = 8.4\n$$\n\n**4.** Substitute $x = 8.4$ into $2x + 7y = 126$:\n\n$$\n2(8.4) + 7y = 126 \\Rightarrow 16.8 + 7y = 126 \\Rightarrow 7y = 109.2 \\Rightarrow y = 15.6\n$$\n\n**5.** Audit Batch 3 ($0.32$ L $= 320$ mL of A):\n\n$$\n320(8.4) + 450(15.6) = 2688 + 7020\n$$\n\n$$\n= 9708\n$$\n\nversus 9,700 mg recorded, an 8 mg discrepancy.\n\n**Answer.** Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Batch 3 predicted = 9,708 mg (vs. 9,700 mg recorded).",
+      "tables_markdown": "| Batch | Suspension A | Suspension B | Total Content |\n| --- | --- | --- | --- |\n| Batch 1 | 500 mL | 300 mL | 8,880 mg |\n| Batch 2 | 200 mL | 700 mL | 12,600 mg |\n| Batch 3 (QC) | 0.32 L (=320 mL) | 450 mL | 9,700 mg (recorded) |"
+    },
+    {
+      "case_id": "MATH 6.21",
+      "id": "math-6-21",
+      "title": "Quadratic Sign Inequalities — 1",
+      "chapter": 6,
+      "subsection": "6.2",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The inequality $x^{2} - 5x + 6 \\le 0$ has solution set $(2, 3)$.",
+        "The inequality $x^{2} + 2x - 8 \\le 0$ implies that x must be positive.",
+        "The solution set of the inequality $x^{2} - 2x - 15 \\ge 0$ is $x \\ge 5$.",
+        "The inequality $x^{2} - 9 \\ge 0$ implies that x must be at least 3.",
+        "The inequality $x^{2} + 3x - 10 \\le 0$ has solution set $[-5, 2]$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nStart from the claimed inequality.\n\n$$\n(x^{2} - 5 x) + 6\\le 0\n$$\n\nBring every term to one side.\n\n$$\nx^{2} - 5 x + 6\\le 0\n$$\n\nFactor.\n\n$$\n(x - 3) (x - 2)\\le 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=2\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 5 x + 6$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n[2, 3]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**B.** → False\n\nStart from the claimed inequality.\n\n$$\n(x^{2} + 2 x) - 8\\le 0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 4)\\le 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-4\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x + 2) - 8$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n[-4, 2]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**C.** → False\n\nStart from the claimed inequality.\n\n$$\n(x^{2} - 2 x) - 15\\ge 0\n$$\n\nBring every term to one side.\n\n$$\nx^{2} - 2 x - 15\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 5) (x + 3)\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-3\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x - 15$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, -3] \\cup [5, \\infty)\n$$\n\nwhich does not match the claimed set $x \\ge 5$.\n\nSo the statement is False.",
+        "**D.** → False\n\nStart from the claimed inequality.\n\n$$\nx^{2} - 9\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 3) (x + 3)\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-3\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 9$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, -3] \\cup [3, \\infty)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**E.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{2} + 3 x) - 10\\le 0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 5)\\le 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-5\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x + 3) - 10$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n[-5, 2]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Evaluate each statement. Mark it TRUE or FALSE.\n\nFactor the quadratic (or read the discriminant), mark the roots, and test the sign on each interval. A non-strict inequality keeps the roots; a strict one drops them. A quadratic that opens upward is non-negative outside its roots and non-positive between them.\n\nTypes in this set: Quadratic sign inequality."
+    },
+    {
+      "case_id": "MATH 7.46",
+      "id": "math-7-46",
+      "title": "Double Composition and Leading Match",
+      "chapter": 7,
+      "subsection": "7",
+      "context": "A line and a parabola are given by $f(x)=4x+2$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.",
+        "Because $f-g$ can be mistaken for a cubic, the graphs may meet three times.",
+        "$g(f(0))=f(g(0))$.",
+        "At the axis of $g$, the gap $f-g$ equals $\\frac{17}{4}$.",
+        "Completing the square gives $g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nMatching $g=Af^{2}+Bf+C$ is a three-coefficient linear system. The $x^{2}$ coefficients force $A$ first, because only $Af^{2}$ produces $x^{2}$.\n\n$$1=A\\cdot 16$$\n\n$$A=\\frac{1}{16}$$\n\nEquating the $x$ coefficients then gives $B$, and the constant terms give $C$.\n\n$$B=-\\frac{1}{2}$$\n\n$$C=-\\frac{5}{4}$$\n\nSubstituting the three numbers back reproduces $g$ identically.\n\nSubstituting the three numbers back reproduces $g$ identically: $A\\cdot 16=1$ recovers the leading coefficient.\n\n$$A=\\frac{1}{16}$$\n\nMatching forces the claimed triple.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe difference $f-g$ is quadratic, not cubic: $f$ has no $x^{2}$ term that could combine with $g$ to raise the degree.\n\n$$f(x)-g(x)=-x^{2}+5x+4$$\n\nA quadratic equation has at most two real roots, so three meetings are impossible. The discriminant $25+16=41>0$ gives exactly two meetings. A quadratic cannot hide a third root.\n\n$$f-g=-x^{2}+5x+4$$\n\nThe graphs meet twice, not three times.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe two orders of nesting are different maps. Evaluate both at the origin.\n\n$$f(0)=2$$\n\n$$g(2)=4-2-2$$\n\n$$g(2)=4-2$$\n\n$$g(2)=2$$\n\n$$g(2)=2-2$$\n\n$$g(2)=0$$\n\n$$g(0)=-2$$\n\n$$f(-2)=-8+2$$\n\n$$f(-2)=-6$$\n\n$$f(-2)=0\\neq -6$$\n\nEvaluate both nested orders at the origin and compare.\n\n$$g(f(0))=0$$\n\n$$f(g(0))=-6$$\n\nComposition does not commute for this pair.\n\nThe two orders of nesting are different maps; a single input $x=0$ already separates them.\n\n$$f(g(0))=0\\neq -6$$\n\nSo the statement is False.",
+        "**D.** → False\n\nThe vertical gap at the axis is the difference of the two heights there. First locate the axis, then evaluate both models.\n\n$$\nx=\\frac{1}{2}\n$$\n\n$$\nf\\left(\\frac{1}{2}\\right)=4\\qquad g\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n$$\n\nThe gap is $4-(-9/4)=25/4$, not $17/4$.\n\n$$\n\\frac{25}{4}\\neq\\frac{17}{4}\n$$\n\nThe number $17/4$ would be $f(1/2)-1$, dropping the vertex depth. The gap at the axis is $\\frac{25}{4}$, not $\\frac{17}{4}$.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nCompleting the square isolates the axis shift from half the middle coefficient, then restores the constant so the rewritten formula matches the original polynomial.\n\n$$g(x)=x^{2}-x-2$$\n\nHalve the middle coefficient of the monic quadratic factor.\n\n$$\\frac{b}{2a}=-\\frac{1}{2}$$\n\n$$\\left(\\frac{b}{2a}\\right)^2=\\frac{1}{4}$$\n\nThe axis shift is the opposite of that half-coefficient.\n\n$$h=-\\frac{b}{2a}$$\n\n$$h=\\frac{1}{2}$$\n\nEvaluate the original rule at the axis to read the completed-square height.\n\n$$g\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}$$\n\nAssemble the stretch, the shift, and the height.\n\n$$g(x)=\\left(x-\\frac{1}{2}\\right)^2-\\frac{9}{4}$$\n\nThat matches the claimed completed-square form.\n\n$$g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "The same concrete pair as a rewrite-and-vertex exercise.\n\n$$\nf(x) = 4x+2,\\qquad g(x) = x^{2}-x-2\n$$\n\nMatching $g=Af^{2}+Bf+C$ is a three-coefficient linear system. Completing the square displays the vertex, and the two nested evaluations $g(f(0))$ and $f(g(0))$ are different numbers in general. The difference $f-g$ stays quadratic, so three meetings cannot occur."
+    },
+    {
+      "case_id": "MATH 8.90",
+      "id": "math-8-90",
+      "title": "Two Shuttle Fare Timers Under a Wait Cap",
+      "chapter": 8,
+      "subsection": "8",
+      "context": "Two municipal shuttle apps quote wait time for a trip of distance $d>0$ kilometres. App L follows $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q follows $Q(d)=k d$ minutes, with both coefficients unpublished. A logged $25$ km trip on App L quoted $20$ minutes, and a logged $100$ km trip on App Q quoted $20$ minutes. A service-level agreement caps wait at $20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The two apps quote the same wait at two different positive distances.",
+        "Once App L quotes a shorter wait than App Q, App Q never catches up.",
+        "App L's wait per kilometre falls as the trip gets longer.",
+        "Under the $20$-minute cap, App L can serve trips longer than $30$ kilometres.",
+        "At $400$ kilometres both apps already quote more than $70$ minutes."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe two apps quote the same wait when\n\n$$L(d)=Q(d)$$\n\n. The overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n and\n\n$$Q(d)=\\frac{1}{5}d$$\n\n, so\n\n$$4d^{\\frac{1}{2}}=\\frac{1}{5}d$$\n\n$$d-20d^{\\frac{1}{2}}=0$$\n\n$$d^{\\frac{1}{2}}\\bigl(d^{\\frac{1}{2}}-20\\bigr)=0$$\n\nThe roots are\n\n$$d=0$$\n\n and\n\n$$d=400$$\n\n. On $d>0$ they meet only once.\n\nThey do not quote the same wait at two different positive distances.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n and\n\n$$Q(d)=\\frac{1}{5}d$$\n\nTheir ratio is\n\n$$\\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}$$\n\nwhich is strictly increasing for $d>0$. Once the ratio passes $1$, it cannot return to $1$, so App Q cannot catch App L again.\n\nAfter App L is shorter, App Q stays longer.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nRead the exponent from the overview before comparing growth rates.\n\nApp L's wait per kilometre is the recovered law divided by distance:\n\n$$\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so that ratio falls as the trip gets longer.\n\nWait per kilometre on App L falls.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nUnder the $20$-minute cap, App L can serve distances with $L(d)\\le 20$. The overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n, so\n\n$$4d^{\\frac{1}{2}}=20$$\n\n$$d=25$$\n\nThe longest legal App L trip is $25$ km, which is not longer than $30$ km.\n\nApp L cannot serve trips longer than $30$ kilometres under the cap.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n and\n\n$$Q(d)=\\frac{1}{5}d$$\n\n. At $400$ kilometres:\n\n$$L(400)=4\\cdot 20$$\n\n$$L(400)=80$$\n\n$$Q(400)=\\frac{400}{5}$$\n\n$$Q(400)=80$$\n\nThe claim is that both already sit above $70$. We have $80>70$ on each app.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "App L quotes $L(d)=ad^{\\frac{1}{2}}$ minutes and App Q quotes $Q(d)=kd$ minutes, for trip distance $d>0$ kilometres. A $25$ km trip on App L quoted $20$ minutes, and a $100$ km trip on App Q quoted $20$ minutes. Wait is capped at $20$ minutes.\n\n**Part 1: Building the model.**\n\nLet $d$ = trip distance in kilometres. Each log pins one coefficient, because each exponent is given.\n\n**1. Translate: App L.**\n\n$$a\\cdot 25^{\\frac{1}{2}}=20 \\tag{1}$$\n\n**2. Translate: App Q.**\n\n$$k\\cdot 100=20 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $5a=20$ and $a=4$. From $(2)$, $k=\\frac{1}{5}$.\n\nThe recovered waits are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$.\n\n**Answer.** $a=4$ | $k=\\frac{1}{5}$ | $L(d)=4d^{\\frac{1}{2}}$ | $Q(d)=\\frac{1}{5}d$"
+    },
+    {
+      "case_id": "MATH 9.22",
+      "id": "math-9-22",
+      "title": "Delivery Van: Cubic Speed Against a Short Table",
+      "chapter": 9,
+      "subsection": "9",
+      "context": "A delivery van leaves the depot with modelled speed $$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$ in m/s. A second van is timed from the depot; its distances are in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The first van is decelerating at $t=40$.",
+        "The average speed of the second van over the $40$ s is $11$ m/s.",
+        "That whole-run average exceeds $45$ km/h.",
+        "The highest interval speed of the second van is on $[0,8]$.",
+        "The speed $v$ of the first van is a cubic polynomial in $t$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nSpeed is falling when the derivative of the modelled cubic is negative, so differentiate first.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\n$$v'(t)=0.0012t^{2}-0.072t+0.9$$\n\nAt $t=40$ that quadratic equals\n\n$$0.0012\\cdot 1600-0.072\\cdot 40+0.9$$\n\n$$v'(t)=1.92-2.88+0.9$$\n\n$$0.0012\\cdot 1600-0.072\\cdot 40+0.9$$\n\n$$v'(t)=-0.06$$\n\n.\n\n$$v'(40)=-0.06$$\n\nA negative value means the first van is slowing down.\n\nSo the statement is True.",
+        "**B.** → True\n\nWhole-run average speed is total distance over total time, read from the last column of the table.\n\n$$s(40)=440$$\n\nDivide by the $40$ s recorded from the depot:\n\n$$\\frac{440}{40}$$\n\n$$s(40)=11$$\n\nThat quotient is $11$ m/s, matching the claimed whole-run average of the second van. The table starts at $0$ m, so no offset has to be subtracted.\n\nSo the statement is True.",
+        "**C.** → False\n\nConvert the $11$ m/s whole-run average into kilometres per hour before comparing it with $45$.\n\n$$\n11\\cdot 3.6 =39.6\n$$\n\nThe converted average is $39.6$ km/h. The comparison asked for is the strict inequality\n\n$$39.6>45$$\n\nwhich fails. The second van's whole-run average stays below $45$ km/h, not above it, by about $5$ km/h.\n\nSo the statement is False.",
+        "**D.** → False\n\nInterval speeds are the successive distance jumps divided by the common $8$ s width.\n\n$$6,\\quad 10,\\quad 14,\\quad 14,\\quad 11$$\n\nThose five rates come from the jumps $48,80,112,112,88$. The largest value is $14$, attained on $[16,24]$ and on $[24,32]$, not on the opening block.\n\n$$\n\\frac{48}{8} =6\n$$\n\nThe first interval is the slowest of the five.\n\nSo the statement is False.",
+        "**E.** → True\n\nA cubic in $t$ is a polynomial whose highest surviving power is $t^{3}$ with a nonzero coefficient.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\nThe coefficient $0.0004$ of $t^{3}$ is not zero, and no $t^{4}$ or higher appears. Factoring out $t$ does not lower that top power:\n\n$$v(t)=t(0.0004t^{2}-0.036t+0.9)$$\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nThe speed model is therefore a cubic polynomial in $t$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\nDifferentiate $v$ for acceleration. Interval speeds of the table are $\\Delta s/8$.",
+      "tables_markdown": "| Time $t$ in seconds | $0$ | $8$ | $16$ | $24$ | $32$ | $40$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| Distance in metres | $0$ | $48$ | $128$ | $240$ | $352$ | $440$ |"
+    },
+    {
+      "case_id": "MATH 10.1.31",
+      "id": "ch10-101-031",
+      "title": "Graph comparison — force $k$ versus factor $1+r$",
+      "chapter": 10,
+      "subsection": "10.1",
+      "context": "The figure sketches $P(t)=P_0 e^{kt}$ against $Q(t)=P_0(1+r)^{t}$ for one positive pair with $e^{k}\\neq 1+r$. Interpret claims in letters $P_0>0$, $k$, $r>-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $e^{k}>1+r>1$, then $P(t)>Q(t)$ for every $t>0$.",
+        "Both paths share the same initial value $P_0$.",
+        "The discrete path lies strictly below the continuous path whenever $r=k>0$.",
+        "With fixed unequal multipliers, the two paths cannot touch at three distinct positive times.",
+        "Log-gap $\\ln P(t)-\\ln Q(t)$ equals $\\bigl(k-\\ln(1+r)\\bigr)t$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nUnder $e^{k}>1+r>1$ the continuous one-year factor strictly exceeds the discrete factor.\n\n$$\\frac{P(t)}{Q(t)} = \\left(\\frac{e^{k}}{1+r}\\right)^{t}>1\\qquad(t>0)$$\n\nHence $P(t)>Q(t)$ for every positive time.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nBoth formulas evaluate at time zero to the common initial level.\n\n$$\nP(0) = P_0 e^{0} = P_0\n$$\n\n$$\nQ(0) = P_0(1+r)^{0} = P_0\n$$\n\nThe paths share the same start.\n\nSo the statement is True.\n",
+        "**C.** → True\n\nWhen $r=k>0$, compare one-year multipliers by the standard inequality.\n\n$$e^{k}>1+k = 1+r$$\n\nRaising to the power $t>0$ and multiplying by $P_0$ yields $P(t)>Q(t)$. The discrete path lies strictly below the continuous path.\n\nSo the statement is True.\n",
+        "**D.** → True\n\nAgreement at a positive time $t$ requires\n\n$$e^{kt} = (1+r)^{t}$$\n\n$$e^{k} = 1+r$$\n\nwhenever $t\\neq 0$. If the multipliers are unequal, no positive $t$ works at all, so the paths certainly cannot touch at three distinct positive times.\n\nSo the statement is True.\n",
+        "**E.** → True\n\nTake logs of both paths and subtract.\n\n$$\n\\ln P(t)-\\ln Q(t) = kt-t\\ln(1+r) = \\bigl(k-\\ln(1+r)\\bigr)t\n$$\n\nThat is exactly the claimed log-gap.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Compare continuous and discrete rivals through their ratio of one-year multipliers.\n\n$$\\frac{P(t)}{Q(t)}=\\exp\\bigl((k-\\ln(1+r))t\\bigr)$$\n\nShared start $P_0$, at most one later agreement unless the multipliers match, and for $r=k>0$ continuous leads because $e^{k}>1+k$.",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22720%22%20height%3D%22420%22%20viewBox%3D%220%200%20720%20420%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f7f3ea%22%2F%3E%3Ctext%20x%3D%22360.0%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-size%3D%2217%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3EContinuous%20force%20vs%20discrete%205%25%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%2248%22%20x2%3D%2276%22%20y2%3D%22368%22%20stroke%3D%22%23333%22%20stroke-width%3D%221.5%22%2F%3E%3Cline%20x1%3D%2276%22%20y1%3D%22368%22%20x2%3D%22692%22%20y2%3D%22368%22%20stroke%3D%22%23333%22%20stroke-width%3D%221.5%22%2F%3E%3Cline%20x1%3D%2276.0%22%20y1%3D%22368%22%20x2%3D%2276.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2276.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22281.3%22%20y1%3D%22368%22%20x2%3D%22281.3%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22281.3%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E10%3C%2Ftext%3E%3Cline%20x1%3D%22486.7%22%20y1%3D%22368%22%20x2%3D%22486.7%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22486.7%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E20%3C%2Ftext%3E%3Cline%20x1%3D%22692.0%22%20y1%3D%22368%22%20x2%3D%22692.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22692.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E30%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22347.2%22%20x2%3D%22692%22%20y2%3D%22347.2%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22347.2%22%20x2%3D%2276%22%20y2%3D%22347.2%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22347.2%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E1%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22272.4%22%20x2%3D%22692%22%20y2%3D%22272.4%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22272.4%22%20x2%3D%2276%22%20y2%3D%22272.4%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22272.4%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22197.6%22%20x2%3D%22692%22%20y2%3D%22197.6%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22197.6%22%20x2%3D%2276%22%20y2%3D%22197.6%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22197.6%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E3%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22122.8%22%20x2%3D%22692%22%20y2%3D%22122.8%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22122.8%22%20x2%3D%2276%22%20y2%3D%22122.8%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22122.8%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%2248.0%22%20x2%3D%22692%22%20y2%3D%2248.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%2248.0%22%20x2%3D%2276%22%20y2%3D%2248.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%2248.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.5%22%20points%3D%2276.0%2C347.2%2077.9%2C346.8%2079.8%2C346.5%2081.8%2C346.1%2083.7%2C345.8%2085.6%2C345.4%2087.5%2C345.0%2089.5%2C344.7%2091.4%2C344.3%2093.3%2C343.9%2095.2%2C343.6%2097.2%2C343.2%2099.1%2C342.8%20101.0%2C342.5%20103.0%2C342.1%20104.9%2C341.7%20106.8%2C341.3%20108.7%2C341.0%20110.7%2C340.6%20112.6%2C340.2%20114.5%2C339.8%20116.4%2C339.4%20118.3%2C339.0%20120.3%2C338.7%20122.2%2C338.3%20124.1%2C337.9%20126.1%2C337.5%20128.0%2C337.1%20129.9%2C336.7%20131.8%2C336.3%20133.8%2C335.9%20135.7%2C335.5%20137.6%2C335.1%20139.5%2C334.7%20141.4%2C334.2%20143.4%2C333.8%20145.3%2C333.4%20147.2%2C333.0%20149.1%2C332.6%20151.1%2C332.2%20153.0%2C331.7%20154.9%2C331.3%20156.9%2C330.9%20158.8%2C330.5%20160.7%2C330.0%20162.6%2C329.6%20164.6%2C329.2%20166.5%2C328.7%20168.4%2C328.3%20170.3%2C327.9%20172.2%2C327.4%20174.2%2C327.0%20176.1%2C326.5%20178.0%2C326.1%20179.9%2C325.6%20181.9%2C325.2%20183.8%2C324.7%20185.7%2C324.3%20187.6%2C323.8%20189.6%2C323.3%20191.5%2C322.9%20193.4%2C322.4%20195.4%2C321.9%20197.3%2C321.5%20199.2%2C321.0%20201.1%2C320.5%20203.1%2C320.1%20205.0%2C319.6%20206.9%2C319.1%20208.8%2C318.6%20210.8%2C318.1%20212.7%2C317.6%20214.6%2C317.1%20216.5%2C316.7%20218.5%2C316.2%20220.4%2C315.7%20222.3%2C315.2%20224.2%2C314.7%20226.2%2C314.2%20228.1%2C313.6%20230.0%2C313.1%20231.9%2C312.6%20233.8%2C312.1%20235.8%2C311.6%20237.7%2C311.1%20239.6%2C310.6%20241.5%2C310.0%20243.5%2C309.5%20245.4%2C309.0%20247.3%2C308.4%20249.2%2C307.9%20251.2%2C307.4%20253.1%2C306.8%20255.0%2C306.3%20257.0%2C305.8%20258.9%2C305.2%20260.8%2C304.7%20262.7%2C304.1%20264.6%2C303.6%20266.6%2C303.0%20268.5%2C302.4%20270.4%2C301.9%20272.4%2C301.3%20274.3%2C300.7%20276.2%2C300.2%20278.1%2C299.6%20280.0%2C299.0%20282.0%2C298.5%20283.9%2C297.9%20285.8%2C297.3%20287.8%2C296.7%20289.7%2C296.1%20291.6%2C295.5%20293.5%2C294.9%20295.5%2C294.3%20297.4%2C293.7%20299.3%2C293.1%20301.2%2C292.5%20303.1%2C291.9%20305.1%2C291.3%20307.0%2C290.7%20308.9%2C290.1%20310.9%2C289.5%20312.8%2C288.8%20314.7%2C288.2%20316.6%2C287.6%20318.5%2C287.0%20320.5%2C286.3%20322.4%2C285.7%20324.3%2C285.0%20326.2%2C284.4%20328.2%2C283.7%20330.1%2C283.1%20332.0%2C282.4%20333.9%2C281.8%20335.9%2C281.1%20337.8%2C280.5%20339.7%2C279.8%20341.7%2C279.1%20343.6%2C278.5%20345.5%2C277.8%20347.4%2C277.1%20349.3%2C276.4%20351.3%2C275.8%20353.2%2C275.1%20355.1%2C274.4%20357.1%2C273.7%20359.0%2C273.0%20360.9%2C272.3%20362.8%2C271.6%20364.8%2C270.9%20366.7%2C270.2%20368.6%2C269.5%20370.5%2C268.7%20372.4%2C268.0%20374.4%2C267.3%20376.3%2C266.6%20378.2%2C265.8%20380.2%2C265.1%20382.1%2C264.4%20384.0%2C263.6%20385.9%2C262.9%20387.8%2C262.1%20389.8%2C261.4%20391.7%2C260.6%20393.6%2C259.9%20395.6%2C259.1%20397.5%2C258.3%20399.4%2C257.6%20401.3%2C256.8%20403.2%2C256.0%20405.2%2C255.2%20407.1%2C254.5%20409.0%2C253.7%20410.9%2C252.9%20412.9%2C252.1%20414.8%2C251.3%20416.7%2C250.5%20418.7%2C249.7%20420.6%2C248.9%20422.5%2C248.1%20424.4%2C247.2%20426.3%2C246.4%20428.3%2C245.6%20430.2%2C244.8%20432.1%2C243.9%20434.1%2C243.1%20436.0%2C242.3%20437.9%2C241.4%20439.8%2C240.6%20441.8%2C239.7%20443.7%2C238.9%20445.6%2C238.0%20447.5%2C237.1%20449.4%2C236.3%20451.4%2C235.4%20453.3%2C234.5%20455.2%2C233.6%20457.2%2C232.8%20459.1%2C231.9%20461.0%2C231.0%20462.9%2C230.1%20464.8%2C229.2%20466.8%2C228.3%20468.7%2C227.4%20470.6%2C226.4%20472.6%2C225.5%20474.5%2C224.6%20476.4%2C223.7%20478.3%2C222.7%20480.2%2C221.8%20482.2%2C220.9%20484.1%2C219.9%20486.0%2C219.0%20487.9%2C218.0%20489.9%2C217.1%20491.8%2C216.1%20493.7%2C215.1%20495.7%2C214.2%20497.6%2C213.2%20499.5%2C212.2%20501.4%2C211.2%20503.3%2C210.2%20505.3%2C209.2%20507.2%2C208.2%20509.1%2C207.2%20511.1%2C206.2%20513.0%2C205.2%20514.9%2C204.2%20516.8%2C203.2%20518.8%2C202.1%20520.7%2C201.1%20522.6%2C200.1%20524.5%2C199.0%20526.5%2C198.0%20528.4%2C196.9%20530.3%2C195.9%20532.2%2C194.8%20534.2%2C193.7%20536.1%2C192.7%20538.0%2C191.6%20539.9%2C190.5%20541.8%2C189.4%20543.8%2C188.3%20545.7%2C187.2%20547.6%2C186.1%20549.5%2C185.0%20551.5%2C183.9%20553.4%2C182.8%20555.3%2C181.7%20557.2%2C180.5%20559.2%2C179.4%20561.1%2C178.3%20563.0%2C177.1%20565.0%2C176.0%20566.9%2C174.8%20568.8%2C173.6%20570.7%2C172.5%20572.7%2C171.3%20574.6%2C170.1%20576.5%2C168.9%20578.4%2C167.8%20580.3%2C166.6%20582.3%2C165.4%20584.2%2C164.2%20586.1%2C162.9%20588.1%2C161.7%20590.0%2C160.5%20591.9%2C159.3%20593.8%2C158.0%20595.8%2C156.8%20597.7%2C155.6%20599.6%2C154.3%20601.5%2C153.0%20603.4%2C151.8%20605.4%2C150.5%20607.3%2C149.2%20609.2%2C148.0%20611.1%2C146.7%20613.1%2C145.4%20615.0%2C144.1%20616.9%2C142.8%20618.9%2C141.5%20620.8%2C140.1%20622.7%2C138.8%20624.6%2C137.5%20626.6%2C136.1%20628.5%2C134.8%20630.4%2C133.5%20632.3%2C132.1%20634.2%2C130.7%20636.2%2C129.4%20638.1%2C128.0%20640.0%2C126.6%20641.9%2C125.2%20643.9%2C123.8%20645.8%2C122.4%20647.7%2C121.0%20649.6%2C119.6%20651.6%2C118.2%20653.5%2C116.8%20655.4%2C115.3%20657.4%2C113.9%20659.3%2C112.4%20661.2%2C111.0%20663.1%2C109.5%20665.1%2C108.1%20667.0%2C106.6%20668.9%2C105.1%20670.8%2C103.6%20672.8%2C102.1%20674.7%2C100.6%20676.6%2C99.1%20678.5%2C97.6%20680.4%2C96.1%20682.4%2C94.5%20684.3%2C93.0%20686.2%2C91.4%20688.1%2C89.9%20690.1%2C88.3%20692.0%2C86.8%22%2F%3E%3Ctext%20x%3D%22684%22%20y%3D%2256%22%20text-anchor%3D%22end%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%238B5A2B%22%3Econtinuous%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.5%22%20stroke-dasharray%3D%226%204%22%20points%3D%2276.0%2C347.2%2077.9%2C346.8%2079.8%2C346.5%2081.8%2C346.1%2083.7%2C345.8%2085.6%2C345.4%2087.5%2C345.1%2089.5%2C344.7%2091.4%2C344.4%2093.3%2C344.0%2095.2%2C343.7%2097.2%2C343.3%2099.1%2C342.9%20101.0%2C342.6%20103.0%2C342.2%20104.9%2C341.9%20106.8%2C341.5%20108.7%2C341.1%20110.7%2C340.7%20112.6%2C340.4%20114.5%2C340.0%20116.4%2C339.6%20118.3%2C339.2%20120.3%2C338.9%20122.2%2C338.5%20124.1%2C338.1%20126.1%2C337.7%20128.0%2C337.3%20129.9%2C336.9%20131.8%2C336.6%20133.8%2C336.2%20135.7%2C335.8%20137.6%2C335.4%20139.5%2C335.0%20141.4%2C334.6%20143.4%2C334.2%20145.3%2C333.8%20147.2%2C333.4%20149.1%2C333.0%20151.1%2C332.6%20153.0%2C332.2%20154.9%2C331.7%20156.9%2C331.3%20158.8%2C330.9%20160.7%2C330.5%20162.6%2C330.1%20164.6%2C329.7%20166.5%2C329.2%20168.4%2C328.8%20170.3%2C328.4%20172.2%2C327.9%20174.2%2C327.5%20176.1%2C327.1%20178.0%2C326.6%20179.9%2C326.2%20181.9%2C325.8%20183.8%2C325.3%20185.7%2C324.9%20187.6%2C324.4%20189.6%2C324.0%20191.5%2C323.5%20193.4%2C323.1%20195.4%2C322.6%20197.3%2C322.2%20199.2%2C321.7%20201.1%2C321.3%20203.1%2C320.8%20205.0%2C320.3%20206.9%2C319.9%20208.8%2C319.4%20210.8%2C318.9%20212.7%2C318.5%20214.6%2C318.0%20216.5%2C317.5%20218.5%2C317.0%20220.4%2C316.6%20222.3%2C316.1%20224.2%2C315.6%20226.2%2C315.1%20228.1%2C314.6%20230.0%2C314.1%20231.9%2C313.6%20233.8%2C313.1%20235.8%2C312.6%20237.7%2C312.1%20239.6%2C311.6%20241.5%2C311.1%20243.5%2C310.6%20245.4%2C310.1%20247.3%2C309.6%20249.2%2C309.1%20251.2%2C308.6%20253.1%2C308.0%20255.0%2C307.5%20257.0%2C307.0%20258.9%2C306.5%20260.8%2C305.9%20262.7%2C305.4%20264.6%2C304.9%20266.6%2C304.3%20268.5%2C303.8%20270.4%2C303.2%20272.4%2C302.7%20274.3%2C302.2%20276.2%2C301.6%20278.1%2C301.1%20280.0%2C300.5%20282.0%2C299.9%20283.9%2C299.4%20285.8%2C298.8%20287.8%2C298.3%20289.7%2C297.7%20291.6%2C297.1%20293.5%2C296.6%20295.5%2C296.0%20297.4%2C295.4%20299.3%2C294.8%20301.2%2C294.2%20303.1%2C293.6%20305.1%2C293.1%20307.0%2C292.5%20308.9%2C291.9%20310.9%2C291.3%20312.8%2C290.7%20314.7%2C290.1%20316.6%2C289.5%20318.5%2C288.9%20320.5%2C288.3%20322.4%2C287.6%20324.3%2C287.0%20326.2%2C286.4%20328.2%2C285.8%20330.1%2C285.2%20332.0%2C284.5%20333.9%2C283.9%20335.9%2C283.3%20337.8%2C282.6%20339.7%2C282.0%20341.7%2C281.4%20343.6%2C280.7%20345.5%2C280.1%20347.4%2C279.4%20349.3%2C278.8%20351.3%2C278.1%20353.2%2C277.4%20355.1%2C276.8%20357.1%2C276.1%20359.0%2C275.4%20360.9%2C274.8%20362.8%2C274.1%20364.8%2C273.4%20366.7%2C272.7%20368.6%2C272.1%20370.5%2C271.4%20372.4%2C270.7%20374.4%2C270.0%20376.3%2C269.3%20378.2%2C268.6%20380.2%2C267.9%20382.1%2C267.2%20384.0%2C266.5%20385.9%2C265.8%20387.8%2C265.0%20389.8%2C264.3%20391.7%2C263.6%20393.6%2C262.9%20395.6%2C262.1%20397.5%2C261.4%20399.4%2C260.7%20401.3%2C259.9%20403.2%2C259.2%20405.2%2C258.4%20407.1%2C257.7%20409.0%2C256.9%20410.9%2C256.2%20412.9%2C255.4%20414.8%2C254.7%20416.7%2C253.9%20418.7%2C253.1%20420.6%2C252.4%20422.5%2C251.6%20424.4%2C250.8%20426.3%2C250.0%20428.3%2C249.2%20430.2%2C248.4%20432.1%2C247.6%20434.1%2C246.8%20436.0%2C246.0%20437.9%2C245.2%20439.8%2C244.4%20441.8%2C243.6%20443.7%2C242.8%20445.6%2C242.0%20447.5%2C241.1%20449.4%2C240.3%20451.4%2C239.5%20453.3%2C238.6%20455.2%2C237.8%20457.2%2C237.0%20459.1%2C236.1%20461.0%2C235.3%20462.9%2C234.4%20464.8%2C233.5%20466.8%2C232.7%20468.7%2C231.8%20470.6%2C230.9%20472.6%2C230.1%20474.5%2C229.2%20476.4%2C228.3%20478.3%2C227.4%20480.2%2C226.5%20482.2%2C225.6%20484.1%2C224.7%20486.0%2C223.8%20487.9%2C222.9%20489.9%2C222.0%20491.8%2C221.1%20493.7%2C220.2%20495.7%2C219.2%20497.6%2C218.3%20499.5%2C217.4%20501.4%2C216.4%20503.3%2C215.5%20505.3%2C214.5%20507.2%2C213.6%20509.1%2C212.6%20511.1%2C211.7%20513.0%2C210.7%20514.9%2C209.7%20516.8%2C208.8%20518.8%2C207.8%20520.7%2C206.8%20522.6%2C205.8%20524.5%2C204.8%20526.5%2C203.8%20528.4%2C202.8%20530.3%2C201.8%20532.2%2C200.8%20534.2%2C199.8%20536.1%2C198.8%20538.0%2C197.8%20539.9%2C196.7%20541.8%2C195.7%20543.8%2C194.7%20545.7%2C193.6%20547.6%2C192.6%20549.5%2C191.5%20551.5%2C190.5%20553.4%2C189.4%20555.3%2C188.3%20557.2%2C187.3%20559.2%2C186.2%20561.1%2C185.1%20563.0%2C184.0%20565.0%2C182.9%20566.9%2C181.8%20568.8%2C180.7%20570.7%2C179.6%20572.7%2C178.5%20574.6%2C177.4%20576.5%2C176.3%20578.4%2C175.2%20580.3%2C174.0%20582.3%2C172.9%20584.2%2C171.8%20586.1%2C170.6%20588.1%2C169.5%20590.0%2C168.3%20591.9%2C167.1%20593.8%2C166.0%20595.8%2C164.8%20597.7%2C163.6%20599.6%2C162.4%20601.5%2C161.2%20603.4%2C160.0%20605.4%2C158.8%20607.3%2C157.6%20609.2%2C156.4%20611.1%2C155.2%20613.1%2C154.0%20615.0%2C152.8%20616.9%2C151.5%20618.9%2C150.3%20620.8%2C149.0%20622.7%2C147.8%20624.6%2C146.5%20626.6%2C145.3%20628.5%2C144.0%20630.4%2C142.7%20632.3%2C141.4%20634.2%2C140.2%20636.2%2C138.9%20638.1%2C137.6%20640.0%2C136.3%20641.9%2C135.0%20643.9%2C133.6%20645.8%2C132.3%20647.7%2C131.0%20649.6%2C129.7%20651.6%2C128.3%20653.5%2C127.0%20655.4%2C125.6%20657.4%2C124.3%20659.3%2C122.9%20661.2%2C121.5%20663.1%2C120.1%20665.1%2C118.8%20667.0%2C117.4%20668.9%2C116.0%20670.8%2C114.6%20672.8%2C113.2%20674.7%2C111.8%20676.6%2C110.3%20678.5%2C108.9%20680.4%2C107.5%20682.4%2C106.0%20684.3%2C104.6%20686.2%2C103.1%20688.1%2C101.7%20690.1%2C100.2%20692.0%2C98.7%22%2F%3E%3Ctext%20x%3D%22684%22%20y%3D%2272%22%20text-anchor%3D%22end%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232F5D50%22%3Ediscrete%20%281%2B0.05%29%5Et%3C%2Ftext%3E%3Ctext%20x%3D%22360.0%22%20y%3D%22408%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Et%3C%2Ftext%3E%3Ctext%20x%3D%2218%22%20y%3D%22208%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%20transform%3D%22rotate%28-90%2018%20208%29%22%3Elevel%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "case_id": "MATH 11.10",
+      "id": "math-11-10",
+      "title": "Maintenance time per effective unit",
+      "chapter": 11,
+      "subsection": "11.1",
+      "context": "A plant models total maintenance hours by $H(n)=2n^{2}+8n$ when it runs $n>0$ machines. Maintenance time per effective unit is $T(n)=\\dfrac{H(n)}{n+1}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The derivative is $T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$.",
+        "$T'(1)=\\dfrac{7}{2}$.",
+        "$T'(n)>0$ for every $n>0$.",
+        "$T'(n)=\\dfrac{2n+8}{n+1}$ after cancelling a common factor incorrectly.",
+        "There exists some $n>0$ for which $T'(n)=0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nMaintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:\n\n$$\nT(n) = \\dfrac{2n^{2}+8n}{n+1}\n$$\n\n$$\nu(n) = 2n^{2}+8n\n$$\n\n$$\nv(n) = n+1\n$$\n\n$$\nu'(n) = 4 n + 8\n$$\n\n$$\nv'(n) = 1\n$$\n\n$$\nT'(n) = \\dfrac{(4 n + 8)(n+1) - (2n^{2}+8n)(1)}{(n+1)^{2}}\n$$\n\n$$\nT'(n) = \\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}\n$$\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}\n$$\n\nwhich matches the claimed formula.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute $n=1$ into that derivative:\n\n$$\nT'(1) = \\dfrac{2+4+8}{2^{2}}\n$$\n\n$$\nT'(1) = \\dfrac{14}{4}\n$$\n\n$$\nT'(1) = \\dfrac{7}{2}\n$$\n\nDo not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor $n>0$ the numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ is a sum of positive terms (discriminant $4-16<0$), and the denominator $(n+1)^{2}$ is positive. Hence\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0\n$$\n\nfor every $n>0$. A positive derivative means $T$ is strictly increasing.\n\n$$\n2n^{2}+4n+8 = 2(n^{2}+2n+4)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nCancelling factors incorrectly would produce $\\dfrac{2n+8}{n+1}$, but the true derivative after the quotient rule is\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}\n$$\n\nThose expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nT'(n) = \\dfrac{2n+8}{n+1}\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**E.** → False\n\nFor $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and the denominator stays positive, so\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0\n$$\n\nthroughout. A strictly positive derivative never hits zero, so no such root exists and\n\n$$\nT'(n) = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Maintenance hours are $H(n)=2n^{2}+8n$, and time per effective unit is the quotient\n\n$$T(n)=\\dfrac{2n^{2}+8n}{n+1}$$\n\nThe quotient rule simplifies to the single fraction\n\n$$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$\n\nAt $n=1$ one finds $T'(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ has discriminant $4-16<0$, so it stays positive for every $n$; together with the positive denominator this forces $T'(n)>0$ for all $n>0$, and in particular $T'$ never vanishes. Cancelling factors incorrectly would produce the false expression $\\dfrac{2n+8}{n+1}$."
+    },
+    {
+      "case_id": "MATH 12.17",
+      "id": "math-12-17",
+      "title": "Distributing Candies (Stars and Bars)",
+      "chapter": 12,
+      "subsection": "12.1",
+      "context": "10 identical pieces of candy are distributed at random among 4 distinct children, where each of the distributions counted by the stars-and-bars method is equally likely.",
+      "statements": [
+        "The total number of distinct ways to distribute the 10 candies among the 4 children is 286.",
+        "The probability that a specific child receives no candy at all is greater than 23%.",
+        "The probability that a specific child receives at least 5 candies is less than 20%.",
+        "The probability that every one of the 4 children receives at least one candy is exactly 42/143.",
+        "The probability that a specific child receives no candy is more than double the probability that a specific child receives at least 5 candies."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThis statement asks for the total number of distinct ways to distribute the $10$ candies among the $4$ children. This is a classic stars-and-bars problem, where we are looking for the number of non-negative integer solutions to the equation $x_1 + x_2 + x_3 + x_4 = 10$. The formula for such a calculation, with $n$ identical items and $k$ distinct bins, is $\\binom{n+k-1}{k-1}$.\n\nFor $n=10$ candies and $k=4$ children, we calculate:\n\n$$\nN_{\\text{total}} = \\binom{10+4-1}{4-1}\n$$\n\n$$\nN_{\\text{total}} = \\binom{13}{3}\n$$\n\n$$\n\\binom{13}{3} = \\dfrac{13!}{3!(13-3)!}\n$$\n\n$$\n\\dfrac{13!}{3!(10)!} = \\dfrac{13 \\cdot 12 \\cdot 11}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n13 \\cdot 12 = 156\n$$\n\n$$\n156 \\cdot 11 = 1716\n$$\n\n$$\n\\dfrac{1716}{6} = 286\n$$\n\n$$\n\\binom{13}{3} = 286\n$$\n\n$$\nN_{\\text{total}} = \\frac{13 \\times 12 \\times 11}{3 \\times 2 \\times 1}\n$$\n\n$$\nN_{\\text{total}} = 13 \\times 2 \\times 11\n$$\n\n$$\n13 \\times 2 = 26\n$$\n\n$$\n26 \\times 11 = 286\n$$\n\n$$\nN_{\\text{total}} = 286\n$$\n\nThe total number of distinct ways is $286$. The claim states this number is $286$.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nThis statement asks for the probability that a specific child receives no candy at all. Let's designate one child as 'Child 1'. If Child 1 receives $0$ candies, the remaining $10$ candies must be distributed among the other $4-1=3$ children. This is equivalent to finding the number of non-negative integer solutions to $x_2 + x_3 + x_4 = 10$.\n\nUsing the stars-and-bars formula with $n=10$ items and $k=3$ children:\n\n$$\nN_{\\text{Child 1 receives } 0} = \\binom{10+3-1}{3-1}\n$$\n\n$$\nN_{\\text{Child 1 receives } 0} = \\binom{12}{2}\n$$\n\n$$\n\\binom{12}{2} = \\dfrac{12!}{2!(12-2)!}\n$$\n\n$$\n\\dfrac{12!}{2!(10)!} = \\dfrac{12 \\cdot 11}{1 \\cdot 2}\n$$\n\n$$\n12 \\cdot 11 = 132\n$$\n\n$$\n\\dfrac{132}{2} = 66\n$$\n\n$$\n\\binom{12}{2} = 66\n$$\n\n$$\nN_{\\text{Child 1 receives } 0} = \\frac{12 \\times 11}{2 \\times 1}\n$$\n\n$$\nN_{\\text{Child 1 receives } 0} = 66\n$$\n\nThe probability of this event is the ratio of the number of favorable outcomes to the total number of outcomes, $N_{\\text{total}} = 286$, as calculated in the overview.\n\n$$\nP(\\text{specific child receives } 0) = \\frac{66}{286}\n$$\n\n$$\nP(\\text{specific child receives } 0) \\approx 0.230769\n$$\n\nAs a percentage, this is approximately $23.08\\%$. The claim states this probability is greater than $23\\%$.\n\nSo the statement is True.\n",
+        "**C.** → True\n\nThis statement asks for the probability that a specific child receives at least $5$ candies. Let's consider 'Child 1' receiving at least $5$ candies. To account for this, we first assign $5$ candies to Child 1. This leaves $10 - 5 = 5$ candies to be distributed among all $4$ children, with no further restrictions on Child 1.\n\nWe are now looking for the number of non-negative integer solutions to $x_1' + x_2 + x_3 + x_4 = 5$, where $x_1'$ is the *additional* number of candies Child 1 receives beyond the initial $5$. The number of items is $n'=5$ and the number of bins is $k=4$.\n\nUsing the stars-and-bars formula:\n\n$$\nN_{\\text{specific child receives } \\ge 5} = \\binom{5+4-1}{4-1}\n$$\n\n$$\nN_{\\text{specific child receives } \\ge 5} = \\binom{8}{3}\n$$\n\n$$\n\\binom{8}{3} = \\dfrac{8!}{3!(8-3)!}\n$$\n\n$$\n\\dfrac{8!}{3!(5)!} = \\dfrac{8 \\cdot 7 \\cdot 6}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n56 \\cdot 6 = 336\n$$\n\n$$\n\\dfrac{336}{6} = 56\n$$\n\n$$\n\\binom{8}{3} = 56\n$$\n\n$$\nN_{\\text{specific child receives } \\ge 5} = \\frac{8 \\times 7 \\times 6}{3 \\times 2 \\times 1}\n$$\n\n$$\nN_{\\text{specific child receives } \\ge 5} = 56\n$$\n\nThe probability of this event is the ratio of the number of favorable outcomes to the total number of outcomes, $N_{\\text{total}} = 286$.\n\n$$\nP(\\text{specific child receives } \\ge 5) = \\frac{56}{286}\n$$\n\n$$\nP(\\text{specific child receives } \\ge 5) \\approx 0.195804\n$$\n\nAs a percentage, this is approximately $19.58\\%$. The claim states this probability is less than $20\\%$.\n\nSo the statement is True.\n",
+        "**D.** → True\n\nThis statement asks for the probability that every one of the $4$ children receives at least one candy. To ensure each child receives at least one candy, we first assign $1$ candy to each of the $4$ children. This uses $4 \\times 1 = 4$ candies. The remaining $10 - 4 = 6$ candies then need to be distributed among the $4$ children, with no further restrictions (each can now receive zero additional candies).\n\nThis is equivalent to finding the number of non-negative integer solutions to $x_1' + x_2' + x_3' + x_4' = 6$, where $x_i'$ is the number of additional candies for child $i$. The number of items is $n'=6$ and the number of bins is $k=4$.\n\nUsing the stars-and-bars formula:\n\n$$\nN_{\\text{all children receive } \\ge 1} = \\binom{6+4-1}{4-1}\n$$\n\n$$\nN_{\\text{all children receive } \\ge 1} = \\binom{9}{3}\n$$\n\n$$\n\\binom{9}{3} = \\dfrac{9!}{3!(9-3)!}\n$$\n\n$$\n\\dfrac{9!}{3!(6)!} = \\dfrac{9 \\cdot 8 \\cdot 7}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n9 \\cdot 8 = 72\n$$\n\n$$\n72 \\cdot 7 = 504\n$$\n\n$$\n\\dfrac{504}{6} = 84\n$$\n\n$$\n\\binom{9}{3} = 84\n$$\n\n$$\nN_{\\text{all children receive } \\ge 1} = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1}\n$$\n\n$$\nN_{\\text{all children receive } \\ge 1} = 3 \\times 4 \\times 7\n$$\n\n$$\n3 \\times 4 = 12\n$$\n\n$$\n12 \\times 7 = 84\n$$\n\n$$\nN_{\\text{all children receive } \\ge 1} = 84\n$$\n\nThe probability of this event is the ratio of the number of favorable outcomes to the total number of outcomes, $N_{\\text{total}} = 286$.\n\n$$\nP(\\text{all children receive } \\ge 1) = \\frac{84}{286}\n$$\n\nThis fraction can be simplified by dividing both the numerator and the denominator by their greatest common divisor, which is $2$:\n\n$$\nP(\\text{all children receive } \\ge 1) = \\frac{84 \\div 2}{286 \\div 2}\n$$\n\n$$\nP(\\text{all children receive } \\ge 1) = \\frac{42}{143}\n$$\n\nThe calculated probability is exactly $42/143$. The claim states this probability is exactly $42/143$.\n\nSo the statement is True.\n",
+        "**E.** → False\n\nThis statement compares two probabilities calculated in previous parts: the probability that a specific child receives no candy, and the probability that a specific child receives at least $5$ candies. The claim asserts that the former is more than double the latter.\n\nFrom statement B, the probability that a specific child receives no candy is:\n\n$$\nP(\\text{specific child receives } 0) = \\frac{66}{286}\n$$\n\nFrom statement C, the probability that a specific child receives at least $5$ candies is:\n\n$$\nP(\\text{specific child receives } \\ge 5) = \\frac{56}{286}\n$$\n\nNow, we need to check if $P(\\text{specific child receives } 0) > 2 \\times P(\\text{specific child receives } \\ge 5)$.\nSubstituting the calculated probabilities:\n\n$$\n\\frac{66}{286} > 2 \\times \\frac{56}{286}\n$$\n\n$$\n\\frac{66}{286} > \\frac{112}{286}\n$$\n\nTo compare these fractions, we only need to compare their numerators, since their denominators are equal:\n\n$$\n66 > 112\n$$\n\nThis inequality is false. Since $66$ is not greater than $112$, the claim is incorrect.\n\nSo the statement is False.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "This problem involves distributing $10$ identical pieces of candy among $4$ distinct children. The problem statement specifies that each distinct distribution, as counted by the stars-and-bars method, is equally likely. This means we are counting the number of non-negative integer solutions to an equation of the form $x_1 + x_2 + x_3 + x_4 = 10$, where $x_i$ represents the number of candies received by child $i$.\n\nTo determine the total number of distinct ways to distribute the candies, we use the stars-and-bars formula. For $n$ identical items distributed among $k$ distinct bins, the total number of ways is given by $\\binom{n+k-1}{k-1}$. In this scenario, $n = 10$ candies and $k = 4$ children.\n\nThe total number of possible distributions, denoted $N_{\\text{total}}$, is calculated as:\n$$N_{\\text{total}} = \\binom{10+4-1}{4-1}$$\n$$N_{\\text{total}} = \\binom{13}{3}$$\n$$N_{\\text{total}} = \\frac{13 \\times 12 \\times 11}{3 \\times 2 \\times 1}$$\n$$N_{\\text{total}} = 286$$\n\nThis total number of $286$ possible distributions serves as the denominator for all probability calculations. For any event, its probability will be the number of ways that event can occur divided by $286$."
+    },
+    {
+      "case_id": "MATH 13.28",
+      "id": "math-13-28",
+      "title": "Production Acceptable Rates",
+      "chapter": 13,
+      "subsection": "13",
+      "context": "Two production lines each produce batches of 25 units. Line A has an acceptable-unit probability of 0.40 per unit. Line B has an acceptable-unit probability of 0.72 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 8 and 12, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Line A's probability of landing in the mid-range is more than 70 times Line B's probability of landing in that same range.",
+        "For Line A, the mid-range probability is greater than the probability of exactly 8.",
+        "The mid-range lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the mid-range.",
+        "Line A's mean is more than 3 of Line B's standard deviations below Line B's mean."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe event “between 8 and 12 inclusive” is the sum of point masses $X = 8,\\ldots,12$:\n\n$$\nP(8 \\le X \\le 12) = \\sum_{x = 8}^{12} \\binom{n}{x} p^{x}(1-p)^{n-x}\n$$\n\nSide A: $P \\approx 0.6927 \\approx 69.27\\%$.\n\nSide B: $P \\approx 0.0096 \\approx 0.96\\%$.\n\nRatio (A relative to B) $\\approx 72.481$.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nThe named event covers every admissible count from 8 through 12, not only the single count 8. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=8)$.\n\nSo the statement is True.\n",
+        "**C.** → True\n\n$$\nE[X] = np,\\quad \\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\n$$\nn_A = 25,\\ p_A = 0.4\n$$\n\n= 2.4495.\n\nMean 10; SD 2.4495. The interval [8, 12] extends 2 from the mean.\n\nSo the statement is True.\n",
+        "**D.** → False\n\n$$\nE[X] = np = 25\\cdot0.72\n$$\n\n$$\n25 \\times 0.72 = 18\n$$\n\n= 18.\n\n= 18, which is not inside [8, 12].\n\nThe statement is false. A student who compared 18 with the nearest endpoint instead of asking whether it lies in [8, 12] would mark the statement true.\n\nSo the statement is False.\n",
+        "**E.** → True\n\n$$\n\\dfrac{|E[A]-E[B]|}{\\mathrm{SD}(\\mathrm{ref})} = |10-18|/2.245\n$$\n\n= 3.5635, which is greater than 3.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Two production lines each produce batches of 25 units. Line A has an acceptable-unit probability of 0.40 per unit. Line B has an acceptable-unit probability of 0.72 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 8 and 12, inclusive.\n\nWe model each side as a binomial count with $n = 25$ independent trials: side A has success probability $p_A = 0.4$, side B has $p_B = 0.72$."
+    }
+  ]
+}

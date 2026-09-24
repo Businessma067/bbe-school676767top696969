@@ -81,15 +81,25 @@ export function BbeLandingPage() {
 
               <div
                 id="full-course"
-                className="mt-7 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row"
+                className="mt-7 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:flex-wrap"
               >
                 <LocalizedLink
                   to="/demo-practice"
                   className="inline-flex flex-col items-center justify-center rounded-sm bg-exam-red px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-exam-red/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                 >
-                  <span>Try demo-practice</span>
+                  <span>Demo course</span>
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">
                     50+ tasks for start
+                  </span>
+                </LocalizedLink>
+                <LocalizedLink
+                  to="/mock-exams/demo-mock/take"
+                  search={{ timed: true, answerSheet: true }}
+                  className="inline-flex flex-col items-center justify-center rounded-sm border border-exam-red bg-exam-red/10 px-6 py-3.5 text-sm font-semibold text-exam-red transition-colors hover:bg-exam-red/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                >
+                  <span>Demo mock</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-exam-red/80">
+                    Free hard diagnostic
                   </span>
                 </LocalizedLink>
                 <LocalizedLink

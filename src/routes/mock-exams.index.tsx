@@ -13,6 +13,7 @@ import { MOCK_EXAM_SECTION_COUNTS } from "@/lib/mock-exam-1-content";
 import {
   MOCK_EXAMS,
   getExamsForTier,
+  getFreeDemoMockExam,
   isCustomExamId,
   type MockExamSummary,
   type ProductTier,
@@ -81,14 +82,17 @@ function MockExamsPage() {
     };
   }, []);
 
-  const exams = tier === "full" || tier === "lite" ? getExamsForTier(tier) : [];
+  const paidExams = tier === "full" || tier === "lite" ? getExamsForTier(tier) : [];
+  const exams = [getFreeDemoMockExam(), ...paidExams];
   const completed = (attempts ?? []).filter((a) => !isCustomExamId(a.exam_id));
   const bestByExam = new Map<string, MockAttempt>();
   for (const a of completed) {
     const prev = bestByExam.get(a.exam_id);
     if (!prev || a.points_earned > prev.points_earned) bestByExam.set(a.exam_id, a);
   }
-  const lockedExams = MOCK_EXAMS.filter((e) => !exams.some((x) => x.id === e.id));
+  const lockedExams = MOCK_EXAMS.filter(
+    (e) => e.tier !== "demo" && !exams.some((x) => x.id === e.id),
+  );
 
   const start = (timed: boolean) => {
     if (!selected) return;

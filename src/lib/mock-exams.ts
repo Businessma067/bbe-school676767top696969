@@ -46,13 +46,20 @@ import {
   buildMockExam6Questions,
 } from "@/lib/mock-exam-6-content";
 import {
+  MOCK_EXAM_DEMO_CONTENT_REV,
+  MOCK_EXAM_DEMO_POINTS_TOTAL,
+  MOCK_EXAM_DEMO_QUESTION_COUNT,
+  buildMockExamDemoQuestions,
+} from "@/lib/mock-exam-demo-content";
+import {
   WISO_MOCK_EXAM_1_CONTENT_REV,
   WISO_MOCK_EXAM_1_POINTS_TOTAL,
   WISO_MOCK_EXAM_1_QUESTION_COUNT,
   buildWisoMockExam1Questions,
 } from "@/lib/wiso-mock-exam-1-content";
 
-export type ProductTier = "full" | "lite";
+/** Paid course tiers plus free demo-mock access. */
+export type ProductTier = "full" | "lite" | "demo";
 
 export interface MockExamSummary {
   id: string;
@@ -101,8 +108,20 @@ export interface ExamQuestion {
   solutionOverview?: string;
 }
 
-/** Available exams. Mocks 1–6 use curated banks; Custom Mock Builder exams are separate. */
+/** Free hard diagnostic — always unlocked (hero “Demo mock” CTA). */
+export const DEMO_MOCK_EXAM: MockExamSummary = {
+  id: "demo-mock",
+  title: "Demo Mock Exam",
+  questionCount: MOCK_EXAM_DEMO_QUESTION_COUNT,
+  durationMinutes: 120,
+  tier: "demo",
+  pointsTotal: MOCK_EXAM_DEMO_POINTS_TOTAL,
+  contentRev: MOCK_EXAM_DEMO_CONTENT_REV,
+};
+
+/** Available exams. Demo + mocks 1–6; Custom Mock Builder exams are separate. */
 export const MOCK_EXAMS: MockExamSummary[] = [
+  DEMO_MOCK_EXAM,
   {
     id: "mock-1",
     title: "Mock Exam 1",
@@ -173,8 +192,20 @@ export const WISO_MOCK_EXAMS: MockExamSummary[] = [
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
-  // lite users see the first 2 exams, full users see all curated mocks
-  return tier === "full" ? MOCK_EXAMS : MOCK_EXAMS.filter((e) => e.tier === "lite");
+  const paid = MOCK_EXAMS.filter((e) => e.tier !== "demo");
+  // lite users see mocks 1–2; full users see all paid curated mocks
+  if (tier === "full") return paid;
+  if (tier === "lite") return paid.filter((e) => e.tier === "lite");
+  return [];
+}
+
+/** Free demo mock is unlocked for every visitor. */
+export function getFreeDemoMockExam(): MockExamSummary {
+  return DEMO_MOCK_EXAM;
+}
+
+export function isFreeDemoMockId(id: string): boolean {
+  return id === DEMO_MOCK_EXAM.id;
 }
 
 export function getWisoExamsForTier(tier: ProductTier | "none"): MockExamSummary[] {
@@ -226,6 +257,9 @@ const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
  * placeholders until their banks are authored (same ExamQuestion shape either way).
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
+  if (examId === "demo-mock") {
+    return buildMockExamDemoQuestions(examId);
+  }
   if (examId === "mock-1") {
     return buildMockExam1Questions(examId);
   }
