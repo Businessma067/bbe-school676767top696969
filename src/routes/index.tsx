@@ -573,7 +573,7 @@ function StudyToolsCycle({
 }) {
   const [active, setActive] = useState(0);
   const [reduceMotion, setReduceMotion] = useState(false);
-  const slideMs = 4800;
+  const slideMs = 5200;
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -676,7 +676,7 @@ function StudyToolsCycle({
       <div
         className={cn(
           "study-tools-cycle-stage relative flex flex-1 flex-col",
-          reduceMotion ? "min-h-0" : "min-h-[13.5rem] sm:min-h-[14.5rem]",
+          reduceMotion ? "min-h-0" : "min-h-[14.5rem] sm:min-h-[15.5rem]",
         )}
       >
         {reduceMotion

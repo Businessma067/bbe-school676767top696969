@@ -893,7 +893,7 @@ body.flashcard-swiping {
 
 /* Why Us — Study tools sequential showcase */
 .study-tools-cycle {
-  --stc-slide: 4800ms;
+  --stc-slide: 5200ms;
   color: color-mix(in oklab, var(--color-caramel-deep) 88%, white);
 }
 
@@ -927,7 +927,7 @@ body.flashcard-swiping {
   position: relative;
   display: flex;
   flex: 1;
-  min-height: 9.5rem;
+  min-height: 10.5rem;
   align-items: stretch;
   justify-content: stretch;
   overflow: hidden;
@@ -948,12 +948,12 @@ body.flashcard-swiping {
   display: grid;
   flex: 1;
   place-items: center;
-  padding: 0.85rem 1rem;
+  padding: 0.55rem 0.6rem;
 }
 
 .stc-flash-stack {
   position: absolute;
-  inset: 0.85rem 1rem;
+  inset: 0.55rem 0.6rem;
   pointer-events: none;
 }
 
@@ -1055,9 +1055,9 @@ body.flashcard-swiping {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 0.45rem;
-  padding: 0.7rem 0.75rem;
+  justify-content: stretch;
+  gap: 0.4rem;
+  padding: 0.5rem 0.55rem;
 }
 
 .stc-match-row {
@@ -1157,9 +1157,9 @@ body.flashcard-swiping {
 .stc-tutor {
   display: grid;
   flex: 1;
-  grid-template-columns: 4.4rem minmax(0, 1fr);
-  gap: 0.65rem;
-  padding: 0.75rem 0.8rem;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  gap: 0.55rem;
+  padding: 0.5rem 0.55rem;
 }
 
 .stc-tutor-bot {
@@ -1168,6 +1168,7 @@ body.flashcard-swiping {
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  align-self: stretch;
   border-radius: 0.85rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: color-mix(in oklab, var(--color-caramel-deep) 18%, #1a1612);
@@ -1213,8 +1214,9 @@ body.flashcard-swiping {
 .stc-tutor-chat {
   display: flex;
   min-width: 0;
+  min-height: 0;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-between;
   gap: 0.4rem;
 }
 
@@ -1223,29 +1225,40 @@ body.flashcard-swiping {
   border-radius: 0.75rem 0.75rem 0.75rem 0.3rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: color-mix(in oklab, var(--color-why-us-card) 50%, #2a241e);
-  padding: 0.5rem 0.6rem;
+  padding: 0.55rem 0.65rem;
   font-size: clamp(0.68rem, 1.8vw, 0.78rem);
   font-weight: 600;
   line-height: 1.3;
   color: color-mix(in oklab, var(--color-why-us-fg) 90%, transparent);
 }
 
+.stc-tutor-q {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
 .stc-tutor-choices {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.4rem;
+  flex-shrink: 0;
 }
 
 .stc-tutor-choice {
   display: grid;
   place-items: center;
-  min-height: 2rem;
+  min-height: 2.25rem;
   border-radius: 0.6rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: color-mix(in oklab, var(--color-why-us-card) 58%, #1c1713);
   font-size: 0.72rem;
   font-weight: 700;
   color: color-mix(in oklab, var(--color-why-us-fg) 82%, transparent);
+}
+
+.stc-tutor-ok {
+  flex-shrink: 0;
 }
 
 .study-tools-cycle-slide.is-active .stc-tutor-q {
@@ -1383,11 +1396,11 @@ body.flashcard-swiping {
 
 @keyframes stc-tutor-choices {
   0%,
-  14% {
+  8% {
     opacity: 0;
-    transform: translateY(0.35rem);
+    transform: translateY(0.3rem);
   }
-  26%,
+  18%,
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -1396,12 +1409,12 @@ body.flashcard-swiping {
 
 @keyframes stc-tutor-pick {
   0%,
-  30% {
+  22% {
     border-color: rgba(255, 255, 255, 0.12);
     background: color-mix(in oklab, var(--color-why-us-card) 58%, #1c1713);
     color: color-mix(in oklab, var(--color-why-us-fg) 82%, transparent);
   }
-  42%,
+  34%,
   100% {
     border-color: color-mix(in oklab, var(--color-caramel-deep) 60%, white);
     background: color-mix(in oklab, var(--color-caramel-deep) 28%, #1c1713);
@@ -1411,11 +1424,11 @@ body.flashcard-swiping {
 
 @keyframes stc-tutor-ok {
   0%,
-  48% {
+  38% {
     opacity: 0;
-    transform: translateY(0.35rem);
+    transform: translateY(0.3rem);
   }
-  60%,
+  50%,
   100% {
     opacity: 1;
     transform: translateY(0);
