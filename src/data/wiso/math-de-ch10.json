@@ -723,7 +723,7 @@
   },
   "MATH 10.1.39": {
     "title": "Mittlere Intensität über eine stückweise Exponentialfunktion",
-    "context": "Nimm den StückweiseNAHMEpfad mit den Kräften $ k_1$ auf $[0,T]$ und $ k_2$ auf $(T,t_\\bullet]$ für einen Horizont $ t_\\bullet>T $, beginnend bei $ P_0>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Betrachte den stückweisen Pfad mit den Intensitäten $k_1$ auf $[0,T]$ und $k_2$ auf $(T,t_\\bullet]$ für einen Horizont $t_\\bullet>T$, beginnend bei $P_0>0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die durchschnittliche Intensität auf $[0,t_\\bullet]$ entspricht $ k_1 T+k_2(t_\\bullet-T)$ ohne durch $ t_\\bullet $ zu dividieren.",
       "Dieser Durchschnitt hängt im Allgemeinen von $ T $ und $ t_\\bullet $ ab, nicht nur von $(k_1+k_2)/2$.",
