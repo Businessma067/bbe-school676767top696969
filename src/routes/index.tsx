@@ -573,6 +573,7 @@ function StudyToolsCycle({
 }) {
   const [active, setActive] = useState(0);
   const [reduceMotion, setReduceMotion] = useState(false);
+  const slideMs = 4800;
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -586,50 +587,96 @@ function StudyToolsCycle({
     if (reduceMotion || tools.length < 2) return;
     const id = window.setInterval(() => {
       setActive((i) => (i + 1) % tools.length);
-    }, 3200);
+    }, slideMs);
     return () => window.clearInterval(id);
   }, [reduceMotion, tools.length]);
+
+  const renderVisual = (kind: (typeof tools)[number]["kind"]) => {
+    if (kind === "flashcards") {
+      return (
+        <div className="stc-flash">
+          <div className="stc-flash-stack" aria-hidden>
+            <span className="stc-flash-deck stc-flash-deck-3" />
+            <span className="stc-flash-deck stc-flash-deck-2" />
+          </div>
+          <div className="stc-flash-flip">
+            <div className="stc-flash-inner">
+              <div className="stc-flash-face stc-flash-front">
+                <span className="stc-flash-eyebrow">Economics</span>
+                <span className="stc-flash-term">Net present value</span>
+                <span className="stc-flash-hint">Tap to flip</span>
+              </div>
+              <div className="stc-flash-face stc-flash-back">
+                <span className="stc-flash-eyebrow">Definition</span>
+                <span className="stc-flash-def">
+                  Today’s value of future cash flows, discounted at the required rate.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (kind === "matching") {
+      const pairs = [
+        ["Elasticity", "%ΔQ / %ΔP"],
+        ["Opportunity cost", "Next-best forgone"],
+        ["NPV", "Discounted cash"],
+      ] as const;
+      return (
+        <div className="stc-match">
+          {pairs.map(([left, right], i) => (
+            <div key={left} className={cn("stc-match-row", `stc-match-row-${i}`)}>
+              <span className="stc-match-chip stc-match-left">{left}</span>
+              <span className="stc-match-link">
+                <span className="stc-match-line" />
+                <span className="stc-match-node" />
+              </span>
+              <span className="stc-match-chip stc-match-right">{right}</span>
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    return (
+      <div className="stc-tutor">
+        <div className="stc-tutor-bot">
+          <span className="stc-tutor-face" />
+          <span className="stc-tutor-name">Tutor</span>
+        </div>
+        <div className="stc-tutor-chat">
+          <p className="stc-tutor-msg stc-tutor-q">True or false: NPV uses discounted cash flows.</p>
+          <div className="stc-tutor-choices">
+            <span className="stc-tutor-choice stc-tutor-true">True</span>
+            <span className="stc-tutor-choice stc-tutor-false">False</span>
+          </div>
+          <p className="stc-tutor-msg stc-tutor-ok">Correct — keep going.</p>
+        </div>
+      </div>
+    );
+  };
 
   const renderSlide = (tool: (typeof tools)[number], opts?: { static?: boolean }) => (
     <div
       key={tool.name}
       className={cn("study-tools-cycle-slide", opts?.static ? "is-static" : "is-active")}
+      style={{ ["--stc-slide" as string]: `${slideMs}ms` }}
     >
-      <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>
-        {tool.kind === "flashcards" ? (
-          <>
-            <span className="stc-card stc-card-back" />
-            <span className="stc-card stc-card-front">
-              <span className="stc-card-term">NPV</span>
-            </span>
-          </>
-        ) : null}
-        {tool.kind === "matching" ? (
-          <>
-            <span className="stc-chip">Elasticity</span>
-            <span className="stc-arrow" />
-            <span className="stc-chip stc-chip-dim">%ΔQ / %ΔP</span>
-          </>
-        ) : null}
-        {tool.kind === "tutor" ? (
-          <>
-            <span className="stc-bot" />
-            <span className="stc-bubble">True or false?</span>
-          </>
-        ) : null}
-      </div>
-      <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75">
+      <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>{renderVisual(tool.kind)}</div>
+      <p className="mt-3 text-sm leading-relaxed text-why-us-fg/75 sm:mt-4">
         <span className="font-semibold text-why-us-fg">{tool.name}.</span> {tool.blurb}
       </p>
     </div>
   );
 
   return (
-    <div className="study-tools-cycle mt-6 flex flex-1 flex-col" aria-hidden>
+    <div className="study-tools-cycle mt-5 flex flex-1 flex-col" aria-hidden>
       <div
         className={cn(
-          "study-tools-cycle-stage relative flex-1",
-          reduceMotion ? "min-h-0" : "min-h-[11.5rem] sm:min-h-[12rem]",
+          "study-tools-cycle-stage relative flex flex-1 flex-col",
+          reduceMotion ? "min-h-0" : "min-h-[13.5rem] sm:min-h-[14.5rem]",
         )}
       >
         {reduceMotion
@@ -637,7 +684,7 @@ function StudyToolsCycle({
           : renderSlide(tools[active]!)}
       </div>
       {!reduceMotion ? (
-        <div className="study-tools-cycle-dots mt-4 flex items-center justify-center gap-2">
+        <div className="study-tools-cycle-dots mt-3 flex items-center justify-center gap-2 sm:mt-4">
           {tools.map((tool, index) => (
             <span
               key={tool.name}

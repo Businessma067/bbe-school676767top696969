@@ -893,21 +893,24 @@ body.flashcard-swiping {
 
 /* Why Us — Study tools sequential showcase */
 .study-tools-cycle {
+  --stc-slide: 4800ms;
   color: color-mix(in oklab, var(--color-caramel-deep) 88%, white);
 }
 
 .study-tools-cycle-stage {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .study-tools-cycle-slide {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: flex-end;
+  min-height: 0;
 }
 
 .study-tools-cycle-slide.is-active {
-  animation: study-tools-slide-in 0.55s ease both;
+  animation: study-tools-slide-in 0.7s ease both;
 }
 
 .study-tools-cycle-slide.is-static {
@@ -917,164 +920,348 @@ body.flashcard-swiping {
 }
 
 .study-tools-cycle-stage:has(.is-static) {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
 }
 
 .study-tools-cycle-visual {
   position: relative;
   display: flex;
-  height: 5rem;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
+  min-height: 9.5rem;
+  align-items: stretch;
+  justify-content: stretch;
   overflow: hidden;
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background:
     radial-gradient(
-      120% 90% at 20% 0%,
-      color-mix(in oklab, var(--color-caramel-deep) 22%, transparent),
-      transparent 55%
+      120% 90% at 18% 0%,
+      color-mix(in oklab, var(--color-caramel-deep) 24%, transparent),
+      transparent 58%
     ),
     color-mix(in oklab, var(--color-why-us-card) 70%, #14110e);
 }
 
-.study-tools-cycle-visual.is-flashcards {
-  gap: 0;
-}
-
-.stc-card {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  width: 3.4rem;
-  height: 4.15rem;
-  border-radius: 0.65rem;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
-}
-
-.stc-card-back {
-  left: calc(50% - 1.95rem);
-  background: color-mix(in oklab, var(--color-why-us-card) 55%, #2a241e);
-  transform: rotate(-11deg) translateY(0.15rem);
-}
-
-.study-tools-cycle-slide.is-active .stc-card-back {
-  animation: study-tools-card-drift 3.2s ease-in-out infinite;
-}
-
-.stc-card-front {
-  left: calc(50% - 1.15rem);
-  background: color-mix(in oklab, var(--color-caramel-deep) 28%, #1c1713);
-  transform: rotate(7deg);
-}
-
-.study-tools-cycle-slide.is-active .stc-card-front {
-  animation: study-tools-card-flip 3.2s ease-in-out infinite;
-}
-
-.stc-card-term {
-  font-family: var(--font-display, ui-serif, Georgia, serif);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: #fff4ef;
-}
-
-.study-tools-cycle-visual.is-matching {
-  gap: 0.55rem;
-  padding-inline: 0.85rem;
-}
-
-.stc-chip {
-  max-width: 42%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  border-radius: 0.55rem;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: color-mix(in oklab, var(--color-caramel-deep) 22%, #1c1713);
-  padding: 0.45rem 0.55rem;
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: #fff4ef;
-}
-
-.study-tools-cycle-slide.is-active .stc-chip {
-  animation: study-tools-chip-in 3.2s ease-in-out infinite;
-}
-
-.stc-chip-dim {
-  background: color-mix(in oklab, var(--color-why-us-card) 60%, #2a241e);
-  color: color-mix(in oklab, var(--color-why-us-fg) 78%, transparent);
-  animation-delay: 0.12s;
-}
-
-.stc-arrow {
-  width: 1.1rem;
-  height: 1.1rem;
-  flex-shrink: 0;
-  background:
-    linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat,
-    linear-gradient(currentColor, currentColor) calc(100% - 1px) 50% / 1.5px 40% no-repeat;
-  color: color-mix(in oklab, var(--color-caramel-deep) 70%, white);
-  clip-path: polygon(0 38%, 62% 38%, 62% 12%, 100% 50%, 62% 88%, 62% 62%, 0 62%);
-}
-
-.study-tools-cycle-slide.is-active .stc-arrow {
-  animation: study-tools-arrow-pulse 3.2s ease-in-out infinite;
-}
-
-.study-tools-cycle-visual.is-tutor {
-  gap: 0.7rem;
-  padding-inline: 1rem;
-}
-
-.stc-bot {
+/* ——— Flashcards: full-panel flip ——— */
+.stc-flash {
   position: relative;
-  width: 2.15rem;
-  height: 2.15rem;
-  flex-shrink: 0;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background:
-    radial-gradient(circle at 35% 32%, #fff4ef 0 18%, transparent 19%),
-    radial-gradient(circle at 65% 32%, #fff4ef 0 18%, transparent 19%),
-    color-mix(in oklab, var(--color-caramel-deep) 42%, #1a1612);
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 16%, transparent);
+  display: grid;
+  flex: 1;
+  place-items: center;
+  padding: 0.85rem 1rem;
 }
 
-.study-tools-cycle-slide.is-active .stc-bot {
-  animation: study-tools-bot-glow 3.2s ease-in-out infinite;
-}
-
-.stc-bot::after {
-  content: "";
+.stc-flash-stack {
   position: absolute;
-  left: 28%;
-  right: 28%;
-  bottom: 28%;
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(255, 244, 239, 0.75);
+  inset: 0.85rem 1rem;
+  pointer-events: none;
 }
 
-.stc-bubble {
-  max-width: 58%;
-  border-radius: 0.85rem 0.85rem 0.85rem 0.35rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+.stc-flash-deck {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: color-mix(in oklab, var(--color-why-us-card) 55%, #2a241e);
-  padding: 0.5rem 0.65rem;
-  font-size: 0.7rem;
+}
+
+.stc-flash-deck-2 {
+  transform: rotate(-3.5deg) translate(-2%, 2%);
+}
+
+.stc-flash-deck-3 {
+  transform: rotate(4deg) translate(3%, 1%);
+  opacity: 0.72;
+}
+
+.stc-flash-flip {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  perspective: 900px;
+}
+
+.stc-flash-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.study-tools-cycle-slide.is-active .stc-flash-inner {
+  animation: stc-flash-flip var(--stc-slide) ease-in-out infinite;
+}
+
+.stc-flash-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.45rem;
+  backface-visibility: hidden;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 0.85rem 0.95rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32);
+}
+
+.stc-flash-front {
+  background:
+    linear-gradient(
+      160deg,
+      color-mix(in oklab, var(--color-caramel-deep) 34%, #1c1713),
+      color-mix(in oklab, var(--color-why-us-card) 50%, #1a1612)
+    );
+}
+
+.stc-flash-back {
+  background: color-mix(in oklab, var(--color-why-us-card) 42%, #221c17);
+  transform: rotateY(180deg);
+}
+
+.stc-flash-eyebrow {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--color-caramel-deep) 55%, white);
+}
+
+.stc-flash-term {
+  font-family: var(--font-display, ui-serif, Georgia, serif);
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff4ef;
+}
+
+.stc-flash-hint {
+  font-size: 0.65rem;
   font-weight: 600;
-  line-height: 1.25;
+  color: color-mix(in oklab, var(--color-why-us-fg) 48%, transparent);
+}
+
+.stc-flash-def {
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
   color: color-mix(in oklab, var(--color-why-us-fg) 88%, transparent);
 }
 
-.study-tools-cycle-slide.is-active .stc-bubble {
-  animation: study-tools-bubble-in 3.2s ease-in-out infinite;
+/* ——— Matching: full board of pairs ——— */
+.stc-match {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.45rem;
+  padding: 0.7rem 0.75rem;
+}
+
+.stc-match-row {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(0, 1fr) 1.6rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 0;
+}
+
+.stc-match-chip {
+  display: flex;
+  height: 100%;
+  min-height: 2.15rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.35rem 0.45rem;
+  text-align: center;
+  font-size: clamp(0.62rem, 1.7vw, 0.74rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff4ef;
+}
+
+.stc-match-left {
+  background: color-mix(in oklab, var(--color-caramel-deep) 26%, #1c1713);
+}
+
+.stc-match-right {
+  background: color-mix(in oklab, var(--color-why-us-card) 58%, #2a241e);
+  color: color-mix(in oklab, var(--color-why-us-fg) 86%, transparent);
+}
+
+.stc-match-link {
+  position: relative;
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+.stc-match-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--color-caramel-deep) 55%, white);
+  transform-origin: left center;
+  transform: scaleX(0.2);
+  opacity: 0.35;
+}
+
+.stc-match-node {
+  position: absolute;
+  right: -1px;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--color-caramel-deep) 70%, white);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 18%, transparent);
+  opacity: 0.25;
+  transform: scale(0.7);
+}
+
+.study-tools-cycle-slide.is-active .stc-match-row-0 .stc-match-line,
+.study-tools-cycle-slide.is-active .stc-match-row-0 .stc-match-node,
+.study-tools-cycle-slide.is-active .stc-match-row-0 .stc-match-chip {
+  animation: stc-match-connect var(--stc-slide) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-match-row-1 .stc-match-line,
+.study-tools-cycle-slide.is-active .stc-match-row-1 .stc-match-node,
+.study-tools-cycle-slide.is-active .stc-match-row-1 .stc-match-chip {
+  animation: stc-match-connect var(--stc-slide) ease-in-out infinite;
+  animation-delay: calc(var(--stc-slide) * 0.14);
+}
+
+.study-tools-cycle-slide.is-active .stc-match-row-2 .stc-match-line,
+.study-tools-cycle-slide.is-active .stc-match-row-2 .stc-match-node,
+.study-tools-cycle-slide.is-active .stc-match-row-2 .stc-match-chip {
+  animation: stc-match-connect var(--stc-slide) ease-in-out infinite;
+  animation-delay: calc(var(--stc-slide) * 0.28);
+}
+
+.study-tools-cycle-slide.is-active .stc-match-row .stc-match-node {
+  animation-name: stc-match-node;
+}
+
+.study-tools-cycle-slide.is-active .stc-match-row .stc-match-chip {
+  animation-name: stc-match-chip;
+}
+
+/* ——— Tutor: chat filling the panel ——— */
+.stc-tutor {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 4.4rem minmax(0, 1fr);
+  gap: 0.65rem;
+  padding: 0.75rem 0.8rem;
+}
+
+.stc-tutor-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: color-mix(in oklab, var(--color-caramel-deep) 18%, #1a1612);
+  padding: 0.5rem 0.35rem;
+}
+
+.stc-tutor-face {
+  position: relative;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background:
+    radial-gradient(circle at 35% 34%, #fff4ef 0 17%, transparent 18%),
+    radial-gradient(circle at 65% 34%, #fff4ef 0 17%, transparent 18%),
+    color-mix(in oklab, var(--color-caramel-deep) 48%, #1a1612);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 14%, transparent);
+}
+
+.stc-tutor-face::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 28%;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(255, 244, 239, 0.78);
+}
+
+.study-tools-cycle-slide.is-active .stc-tutor-face {
+  animation: stc-tutor-glow var(--stc-slide) ease-in-out infinite;
+}
+
+.stc-tutor-name {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--color-why-us-fg) 70%, transparent);
+}
+
+.stc-tutor-chat {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.stc-tutor-msg {
+  margin: 0;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: color-mix(in oklab, var(--color-why-us-card) 50%, #2a241e);
+  padding: 0.5rem 0.6rem;
+  font-size: clamp(0.68rem, 1.8vw, 0.78rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: color-mix(in oklab, var(--color-why-us-fg) 90%, transparent);
+}
+
+.stc-tutor-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+}
+
+.stc-tutor-choice {
+  display: grid;
+  place-items: center;
+  min-height: 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: color-mix(in oklab, var(--color-why-us-card) 58%, #1c1713);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: color-mix(in oklab, var(--color-why-us-fg) 82%, transparent);
+}
+
+.study-tools-cycle-slide.is-active .stc-tutor-q {
+  animation: stc-tutor-q var(--stc-slide) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-tutor-choices {
+  animation: stc-tutor-choices var(--stc-slide) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-tutor-true {
+  animation: stc-tutor-pick var(--stc-slide) ease-in-out infinite;
+}
+
+.study-tools-cycle-slide.is-active .stc-tutor-ok {
+  animation: stc-tutor-ok var(--stc-slide) ease-in-out infinite;
 }
 
 .study-tools-cycle-dot {
@@ -1083,8 +1270,8 @@ body.flashcard-swiping {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.22);
   transition:
-    background 0.35s ease,
-    transform 0.35s ease;
+    background 0.4s ease,
+    transform 0.4s ease;
 }
 
 .study-tools-cycle-dot.is-active {
@@ -1103,88 +1290,168 @@ body.flashcard-swiping {
   }
 }
 
-@keyframes study-tools-card-drift {
+@keyframes stc-flash-flip {
   0%,
-  100% {
-    transform: rotate(-11deg) translateY(0.15rem);
+  18% {
+    transform: rotateY(0deg);
   }
-  50% {
-    transform: rotate(-8deg) translateY(0);
+  38%,
+  68% {
+    transform: rotateY(180deg);
+  }
+  88%,
+  100% {
+    transform: rotateY(360deg);
   }
 }
 
-@keyframes study-tools-card-flip {
+@keyframes stc-match-connect {
   0%,
-  35% {
-    transform: rotate(7deg) scale(1);
+  8% {
+    opacity: 0.35;
+    transform: scaleX(0.15);
   }
-  50% {
-    transform: rotate(4deg) scale(1.05);
+  22%,
+  70% {
+    opacity: 1;
+    transform: scaleX(1);
   }
-  65%,
+  86%,
   100% {
-    transform: rotate(7deg) scale(1);
+    opacity: 0.45;
+    transform: scaleX(1);
   }
 }
 
-@keyframes study-tools-chip-in {
+@keyframes stc-match-node {
   0%,
-  12% {
+  8% {
+    opacity: 0.2;
+    transform: scale(0.65);
+  }
+  22%,
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  86%,
+  100% {
     opacity: 0.55;
-    transform: translateY(0.2rem);
+    transform: scale(0.9);
   }
-  28%,
+}
+
+@keyframes stc-match-chip {
+  0%,
+  10% {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+  }
+  24%,
+  68% {
+    border-color: color-mix(in oklab, var(--color-caramel-deep) 55%, white);
+    box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-caramel-deep) 16%, transparent);
+  }
+  84%,
+  100% {
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+  }
+}
+
+@keyframes stc-tutor-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 12%, transparent);
+  }
+  35% {
+    box-shadow: 0 0 0 5px color-mix(in oklab, var(--color-caramel-deep) 28%, transparent);
+  }
+}
+
+@keyframes stc-tutor-q {
+  0% {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+  10%,
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes study-tools-arrow-pulse {
+@keyframes stc-tutor-choices {
   0%,
-  18% {
-    opacity: 0.35;
-    transform: scaleX(0.85);
-  }
-  32%,
-  100% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-}
-
-@keyframes study-tools-bot-glow {
-  0%,
-  100% {
-    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-caramel-deep) 12%, transparent);
-  }
-  40% {
-    box-shadow: 0 0 0 5px color-mix(in oklab, var(--color-caramel-deep) 28%, transparent);
-  }
-}
-
-@keyframes study-tools-bubble-in {
-  0% {
+  14% {
     opacity: 0;
-    transform: translateX(-0.35rem);
+    transform: translateY(0.35rem);
   }
-  18%,
+  26%,
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes stc-tutor-pick {
+  0%,
+  30% {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: color-mix(in oklab, var(--color-why-us-card) 58%, #1c1713);
+    color: color-mix(in oklab, var(--color-why-us-fg) 82%, transparent);
+  }
+  42%,
+  100% {
+    border-color: color-mix(in oklab, var(--color-caramel-deep) 60%, white);
+    background: color-mix(in oklab, var(--color-caramel-deep) 28%, #1c1713);
+    color: #fff4ef;
+  }
+}
+
+@keyframes stc-tutor-ok {
+  0%,
+  48% {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+  60%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .study-tools-cycle-slide,
-  .stc-card-back,
-  .stc-card-front,
-  .stc-chip,
-  .stc-arrow,
-  .stc-bot,
-  .stc-bubble {
+  .stc-flash-inner,
+  .stc-match-line,
+  .stc-match-node,
+  .stc-match-chip,
+  .stc-tutor-face,
+  .stc-tutor-q,
+  .stc-tutor-choices,
+  .stc-tutor-true,
+  .stc-tutor-ok {
     animation: none !important;
     transition: none !important;
+  }
+
+  .stc-match-line {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  .stc-match-node {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .stc-tutor-ok,
+  .stc-tutor-q,
+  .stc-tutor-choices {
+    opacity: 1;
+    transform: none;
   }
 }
 
