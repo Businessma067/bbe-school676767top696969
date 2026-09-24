@@ -303,10 +303,11 @@ export async function loadMathChapterTasks(num: number): Promise<MathTask[]> {
   const inflight = chapterTaskInflight.get(num);
   if (inflight) return inflight;
   const promise = importChapterBank(num)
-    .then((m) => {
-      chapterTaskCache.set(num, m.tasks);
+    .then(async (m) => {
+      const tasks = await applyDemoMathHardOverlay(m.tasks);
+      chapterTaskCache.set(num, tasks);
       chapterTaskInflight.delete(num);
-      return m.tasks;
+      return tasks;
     })
     .catch((err) => {
       chapterTaskInflight.delete(num);
@@ -314,6 +315,58 @@ export async function loadMathChapterTasks(num: number): Promise<MathTask[]> {
     });
   chapterTaskInflight.set(num, promise);
   return promise;
+}
+
+type DemoHardOverlay = Partial<
+  Pick<
+    MathTask,
+    | "title"
+    | "context"
+    | "statements"
+    | "answer_key"
+    | "tactical_explanations"
+    | "solution_overview"
+    | "difficulty_level"
+  >
+>;
+
+let demoHardCache: Record<string, DemoHardOverlay> | null = null;
+let demoHardInflight: Promise<Record<string, DemoHardOverlay>> | null = null;
+
+async function loadDemoMathHardOverlay(): Promise<Record<string, DemoHardOverlay>> {
+  if (demoHardCache) return demoHardCache;
+  if (demoHardInflight) return demoHardInflight;
+  demoHardInflight = import("@/data/demo-math-hard-en.json")
+    .then((m) => {
+      demoHardCache = (m.default ?? {}) as Record<string, DemoHardOverlay>;
+      demoHardInflight = null;
+      return demoHardCache;
+    })
+    .catch(() => {
+      demoHardCache = {};
+      demoHardInflight = null;
+      return demoHardCache;
+    });
+  return demoHardInflight;
+}
+
+async function applyDemoMathHardOverlay(tasks: MathTask[]): Promise<MathTask[]> {
+  const overlay = await loadDemoMathHardOverlay();
+  if (!overlay || Object.keys(overlay).length === 0) return tasks;
+  return tasks.map((t) => {
+    const hard = overlay[t.case_id];
+    if (!hard) return t;
+    return {
+      ...t,
+      title: hard.title ?? t.title,
+      context: hard.context ?? t.context,
+      statements: hard.statements ?? t.statements,
+      answer_key: hard.answer_key ?? t.answer_key,
+      tactical_explanations: hard.tactical_explanations ?? t.tactical_explanations,
+      solution_overview: hard.solution_overview ?? t.solution_overview,
+      difficulty_level: hard.difficulty_level ?? t.difficulty_level,
+    };
+  });
 }
 
 /** Load every populated chapter bank (Custom Mock / migration). */
