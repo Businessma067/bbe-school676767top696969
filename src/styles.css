@@ -1478,3 +1478,19 @@ body.flashcard-swiping {
   }
 }
 
+/* Why Choose Us — WiSo blue tone (indigo track) */
+.why-choose-us--wiso {
+  --why-us-bg: #0a1022;
+  --why-us-card: #121a33;
+  --why-us-fg: #eef2ff;
+  --color-why-us-bg: #0a1022;
+  --color-why-us-card: #121a33;
+  --color-why-us-fg: #eef2ff;
+  --caramel-deep: #6366f1;
+  --color-caramel-deep: #6366f1;
+  --wiso-blue: #818cf8;
+  background-image:
+    radial-gradient(120% 80% at 12% -10%, rgba(99, 102, 241, 0.28), transparent 55%),
+    radial-gradient(90% 70% at 100% 0%, rgba(67, 56, 202, 0.22), transparent 50%);
+}
+

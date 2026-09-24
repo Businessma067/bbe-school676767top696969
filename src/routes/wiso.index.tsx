@@ -5,6 +5,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { ExamCountdown } from "@/components/ExamCountdown";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
+import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -137,6 +138,8 @@ export function WisoLandingPage() {
           <HowItWorksSection track="wiso" />
         </Suspense>
 
+        <WhyChooseUsSection track="wiso" />
+
         <section
           className="relative bg-scroll"
           style={{
@@ -153,44 +156,6 @@ export function WisoLandingPage() {
               WiSo opens far more places than BBE, and yet the written exam still sorts thousands of
               applicants under the same partial-credit pressure, so the hall feels no softer on the day.
             </p>
-          </div>
-        </section>
-
-        <section id="why-choose-us" className="px-6 py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-              Made for the WiSo Aufnahmeprüfung
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              The content areas follow WU&apos;s FAQ: wirtschaftliche Grundkenntnisse, Mathematik, and
-              deutsches Sprachverständnis, with no English section to lean on.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <LocalizedLink
-                to="/wiso/economics-german"
-                className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
-              >
-                Economics & German
-              </LocalizedLink>
-              <LocalizedLink
-                to="/wiso/mathematics"
-                className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
-              >
-                Mathematics
-              </LocalizedLink>
-              <LocalizedLink
-                to="/wiso/exam-scoring"
-                className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
-              >
-                Scoring
-              </LocalizedLink>
-              <LocalizedLink
-                to="/bbe-vs-wiso"
-                className="rounded-md border border-indigo-700/40 bg-indigo-50/60 px-4 py-2 text-sm font-semibold text-indigo-900 hover:bg-indigo-50 dark:bg-indigo-950/30 dark:text-indigo-100"
-              >
-                BBE vs WiSo
-              </LocalizedLink>
-            </div>
           </div>
         </section>
 
