@@ -1,294 +1,294 @@
 {
   "economics": [
     {
-      "case_id": "DEMO ECON 2.H01",
-      "title": "Vienna flat search under a binding rent cap",
-      "chapter": 2,
-      "subsection": "2.6",
-      "context": "A district keeps a legal rent ceiling well below what comparable uncontrolled flats advertise. Waiting lists for capped units are years long, while uncapped listings nearby clear in weeks. Decide whether each claim is true or false.",
-      "statements": [
-        "Long queues for capped flats are evidence of excess demand at the controlled rent.",
-        "Because the ceiling is a legal maximum, every landlord in the district must be earning economic profit on capped units.",
-        "Tenants on the waiting list still pay through search time and side arrangements even when the money rent is capped.",
-        "If the ceiling were repealed and market rents rose, the number of people wanting units at the old low rent would no longer set the new equilibrium quantity.",
-        "A rise in uncapped advertised rents nearby proves that the controlled ceiling already sits above the uncontrolled equilibrium rent."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nQueues mean more households want the capped units at that rent than landlords will supply. That is excess demand at the controlled price.\n\nSo the statement is True.",
-        "**B.** → False\n\nA binding ceiling usually squeezes landlord returns. Chronic shortage and deferred maintenance are the typical signs, not guaranteed economic profit for every landlord.\n\nSo the statement is False.",
-        "**C.** → True\n\nWhen money rent cannot clear the market, rationing spills into time costs, search effort, and informal side deals. Those are real costs even if the listed rent is capped.\n\nSo the statement is True.",
-        "**D.** → True\n\nAfter repeal, trade happens at the new market rent. Notional demand at a vanished capped price does not determine the new equilibrium quantity.\n\nSo the statement is True.",
-        "**E.** → False\n\nHigher uncapped rents nearby suggest the free-market level lies above the ceiling, so the ceiling binds from below — the opposite of sitting above equilibrium.\n\nSo the statement is False."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 2.H02",
-      "title": "Opportunity cost of a Saturday mock weekend",
-      "chapter": 2,
-      "subsection": "2.2",
-      "context": "Mila can spend Saturday either working a paid shift that nets €120 after tax, attending a mock-exam weekend that costs €40 out of pocket, or staying home at zero money cost. Decide whether each claim about opportunity cost is true or false.",
-      "statements": [
-        "If she chooses the mock, a correct accounting of opportunity cost must include the €120 she did not earn on the shift.",
-        "The opportunity cost of the mock is only the €40 fee, because the shift income was never deposited.",
-        "Staying home has opportunity cost equal to the best rejected alternative among the shift and the mock.",
-        "If the shift were unpaid volunteer work with no monetary value to her, the opportunity cost of the mock would still include whatever she judges the next-best use of Saturday to be worth.",
-        "Because she can only pick one Saturday plan, summing the values of the shift and of staying home gives the opportunity cost of the mock."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nChoosing the mock means forgoing the shift. That forgone net pay is part of the opportunity cost, alongside any fee.\n\nSo the statement is True.",
-        "**B.** → False\n\nOpportunity cost tracks the best rejected alternative, not only cash that left the wallet. Unreceived shift pay still counts.\n\nSo the statement is False.",
-        "**C.** → True\n\nStaying home rejects whichever of the shift or the mock she ranks higher. That best rejected option is the opportunity cost of staying home.\n\nSo the statement is True.",
-        "**D.** → True\n\nOpportunity cost is not limited to wages. Whatever value she attaches to the next-best use of the day is still the cost of taking the mock.\n\nSo the statement is True.",
-        "**E.** → False\n\nOpportunity cost uses the single best rejected alternative, not the sum of every rejected plan.\n\nSo the statement is False."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 3.H01",
-      "title": "EU size threshold and a growth shock",
-      "chapter": 3,
-      "subsection": "3.4",
-      "context": "A logistics firm sits just under an EU \"small\" headcount threshold that unlocks a subsidy. A sudden contract would force enough hiring to cross the threshold for the whole calendar year. Decide whether each claim is true or false.",
-      "statements": [
-        "Crossing the threshold can end subsidy eligibility even if revenue and balance-sheet totals stay inside other SME bands.",
-        "If the firm refuses the contract solely to keep the subsidy, that choice reveals that keeping the subsidy is worth more to the firm than the contract's expected net gain.",
-        "Headcount thresholds never create incentives to stay artificially small, because subsidies are always tiny next to commercial contracts.",
-        "A rival already above the threshold does not lose the same subsidy by taking an identical contract, so the threshold can distort which firm expands.",
-        "If the threshold uses annual average staff, a short spike of temporary hires can still push the official average across the line."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nSME tests are multi-criteria. Failing the staff criterion alone can remove status even when money metrics still look \"small\".\n\nSo the statement is True.",
-        "**B.** → True\n\nTurning down the contract to keep the subsidy is revealed preference: subsidy retention ranks above the contract's expected net benefit.\n\nSo the statement is True.",
-        "**C.** → False\n\nNotches around size thresholds are a standard reason firms delay hiring or split entities. Denying that incentive channel is wrong.\n\nSo the statement is False.",
-        "**D.** → True\n\nThe already-large rival does not face the same discrete subsidy loss at the margin, so expansion incentives differ.\n\nSo the statement is True.",
-        "**E.** → True\n\nAnnual-average definitions mean temporary spikes can still move the official average enough to change status.\n\nSo the statement is True."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 4.H01",
-      "title": "Separate legal person versus a personal guarantee",
-      "chapter": 4,
-      "subsection": "4.3",
-      "context": "Alpine Sensors is a limited-liability company. The founder is the sole shareholder and still signs a personal guarantee on a bank loan to the company. Decide whether each claim is true or false.",
-      "statements": [
-        "As a separate legal person, the company can own assets and sue in its own name even though one person owns all the shares.",
-        "Limited liability means the founder's personal guarantee is legally void, because company debts can never reach the owner.",
-        "If the company fails and the guarantee is enforced, the founder can lose personal assets covered by that guarantee.",
-        "Creditors without a guarantee are generally limited to company assets for ordinary claims — that is the usual limited-liability bargain.",
-        "Calling the company a separate person implies that the founder's personal tax residence automatically becomes the company's tax residence."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nSeparate legal personality means the company holds rights and duties distinct from its shareholders.\n\nSo the statement is True.",
-        "**B.** → False\n\nLimited liability is the default shield. A voluntary personal guarantee contractually opens that shield for the covered debt.\n\nSo the statement is False.",
-        "**C.** → True\n\nEnforcing the guarantee is how the bank reaches the founder's personal assets despite the corporate form.\n\nSo the statement is True.",
-        "**D.** → True\n\nOrdinary unsecured creditors of the company look to company assets first. That separation is the point of limited liability for those claims.\n\nSo the statement is True.",
-        "**E.** → False\n\nLegal personality does not copy the owner's personal tax residence onto the company. Corporate residence follows tax rules, not shareholder biography alone.\n\nSo the statement is False."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 4.H02",
-      "title": "Working-capital squeeze before a seasonal peak",
-      "chapter": 4,
-      "subsection": "4.6",
-      "context": "A retailer builds inventory before Christmas while customer receipts still arrive after the holidays. The bank offers a short-term credit line secured on inventory. Decide whether each claim is true or false.",
-      "statements": [
-        "The seasonal inventory build raises the need for working capital even if long-term fixed assets are unchanged.",
-        "If suppliers lengthen payment terms while customers still pay slowly, the working-capital squeeze necessarily eases.",
-        "Drawing the credit line to pay suppliers mid-season can be rational even though interest expense rises.",
-        "A sudden drop in December sales can leave the firm with both excess inventory and drawn credit, raising pressure on the line.",
-        "Because the loan is short-term, it cannot affect solvency risk — only long-term bonds matter for bankruptcy."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nWorking capital is about circulating current assets and liabilities. Seasonal stock is a classic driver even when plant is fixed.\n\nSo the statement is True.",
-        "**B.** → False\n\nLonger supplier terms help on one side, but slow customer collections can keep or widen the cash gap. \"Necessarily eases\" is too strong.\n\nSo the statement is False.",
-        "**C.** → True\n\nBridging a temporary cash trough can protect stock and supplier relationships; interest is the price of that bridge.\n\nSo the statement is True.",
-        "**D.** → True\n\nWeak sales leave stock unsold while debt is still drawn — a standard path into covenant and liquidity pressure.\n\nSo the statement is True.",
-        "**E.** → False\n\nShort-term debt that cannot be rolled or repaid is a common bankruptcy trigger. Short maturity does not erase risk.\n\nSo the statement is False."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 5.H01",
-      "title": "What counts as the product in a service bundle",
-      "chapter": 5,
-      "subsection": "5.1",
-      "context": "A tutoring platform sells \"exam readiness\": live classes, a question bank, and a mock exam. Marketing argues the product is the whole readiness outcome, not any single file. Decide whether each claim is true or false.",
-      "statements": [
-        "In a marketing sense, the product can be the bundle of services and the promised outcome, not only a physical textbook.",
-        "If students only value the mock exam and ignore the classes, the firm's brochure still forces every student to perceive the full bundle as the product.",
-        "Adding a progress dashboard can change the marketed product even if the underlying question files are unchanged.",
-        "Calling readiness the product means price comparisons with a rival's bare question bank are always apples-to-apples.",
-        "A free sample chapter can be part of the product strategy without being the paid product itself."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nProduct definitions include services, experiences, and outcome promises, not only physical goods.\n\nSo the statement is True.",
-        "**B.** → False\n\nFirms propose a product concept; customers may still locate value in one component. Perception is not commanded by the brochure.\n\nSo the statement is False.",
-        "**C.** → True\n\nDelivery experience and augmented features are part of the marketed product. A dashboard can differentiate the offer with the same raw files.\n\nSo the statement is True.",
-        "**D.** → False\n\nA full readiness bundle and a raw question bank are different offers. Matching price tags does not make them the same good.\n\nSo the statement is False.",
-        "**E.** → True\n\nSamples and freemium hooks are classic strategy tools distinct from the paid SKU.\n\nSo the statement is True."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 5.H02",
-      "title": "Impulse buys under a 24-hour flash promo",
-      "chapter": 5,
-      "subsection": "5.4",
-      "context": "An online shop runs a 24-hour countdown timer and a \"only 3 left\" badge on a discretionary gadget. Decide whether each claim is true or false.",
-      "statements": [
-        "Scarcity and time-limit cues can raise impulse purchases by compressing deliberation.",
-        "If the badge is false and stock is actually abundant, the tactic is still always legal everywhere because advertising law ignores scarcity claims.",
-        "A shopper who would have bought next month anyway may buy today; that timing shift is not the same as creating permanent new demand.",
-        "Higher conversion during the flash sale proves that every buyer acted against their own long-run interests.",
-        "Removing the countdown but keeping the same price can change behaviour if the urgency cue mattered."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nUrgency and scarcity prompts are standard behavioural levers that shorten comparison shopping.\n\nSo the statement is True.",
-        "**B.** → False\n\nFake scarcity claims are a consumer-protection issue in many jurisdictions. \"Always legal everywhere\" is false.\n\nSo the statement is False.",
-        "**C.** → True\n\nPulling forward planned purchases changes timing; it need not raise lifetime demand by the same amount.\n\nSo the statement is True.",
-        "**D.** → False\n\nSome buyers may simply prefer acting now under a real discount. Conversion alone does not prove welfare-reducing impulse for every buyer.\n\nSo the statement is False.",
-        "**E.** → True\n\nIf urgency was doing work, the same price without the timer can yield different take-up — that is a cue effect.\n\nSo the statement is True."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 6.H01",
-      "title": "Liquidity story behind a calm current ratio",
-      "chapter": 6,
-      "subsection": "6.2",
-      "context": "Two firms report the same current ratio. Firm L holds mostly cash and receivables from blue-chip clients. Firm S holds mostly slow fashion inventory and disputed receivables. Decide whether each claim is true or false.",
-      "statements": [
-        "Equal current ratios do not imply equal short-term payment capacity once asset composition differs.",
-        "Inventory that cannot be sold quickly is still as liquid as cash for meeting a payroll tomorrow.",
-        "A disputed receivable may sit inside current assets while being far less collectible than its book value suggests.",
-        "Analysts may downgrade Firm S's liquidity quality without any change in the headline current ratio.",
-        "Because both ratios match, creditors must offer both firms the same short-term interest rate."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nLiquidity quality depends on how fast assets turn into cash, not only on the current-ratio headline.\n\nSo the statement is True.",
-        "**B.** → False\n\nIlliquid stock does not pay tomorrow's wages; cash does. Composition matters.\n\nSo the statement is False.",
-        "**C.** → True\n\nBeing classified as current does not guarantee collectibility. Disputes impair true liquidity.\n\nSo the statement is True.",
-        "**D.** → True\n\nQuality adjustments are exactly how two identical ratios get different credit readings.\n\nSo the statement is True.",
-        "**E.** → False\n\nLenders price cash-conversion reality, covenants, and collateral — not a single matching ratio alone.\n\nSo the statement is False."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 6.H02",
-      "title": "Asset mix after selling a warehouse",
-      "chapter": 6,
-      "subsection": "6.4",
-      "context": "A manufacturer sells a warehouse for cash and leases space back. Total assets fall; cash rises; operations continue in the same location. Decide whether each claim is true or false.",
-      "statements": [
-        "The balance sheet becomes more liquid in composition even if total assets shrink.",
-        "Selling the warehouse must reduce equity one-for-one with the cash proceeds, regardless of sale price versus book value.",
-        "A lease-back can keep operations running while removing the building from owned fixed assets.",
-        "If the sale price equals book value, the transaction alone need not create an accounting gain.",
-        "After the sale, any rise in return on assets proves the firm cheated by shrinking the asset base."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "difficulty_level": "5/5",
-      "tactical_explanations": [
-        "**A.** → True\n\nCash replacing a building raises the liquid share of the asset mix even when the balance sheet is smaller.\n\nSo the statement is True.",
-        "**B.** → False\n\nEquity moves with the gain or loss versus book value, not mechanically one-for-one with cash proceeds alone.\n\nSo the statement is False.",
-        "**C.** → True\n\nSale-and-leaseback unlocks owned property while the firm keeps using the space.\n\nSo the statement is True.",
-        "**D.** → True\n\nAt book value there is typically no gain from the price-versus-book comparison.\n\nSo the statement is True.",
-        "**E.** → False\n\nROA needs careful comparison after a real sale, but a smaller asset base is not automatic proof of cheating.\n\nSo the statement is False."
-      ]
-    },
-    {
-      "case_id": "DEMO ECON 6.H03",
-      "title": "Turnover growth with a cash lag",
-      "chapter": 6,
+      "case_id": "CASE 6.5.034",
+      "title": "Turnover and Liquidity Extract 34",
       "subsection": "6.5",
-      "context": "Revenue jumps 40% while year-end receivables and inventory also jump. Reported profit looks strong, but operating cash flow lags. Decide whether each claim is true or false.",
+      "chapter": null,
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
       "statements": [
-        "Strong revenue growth can coexist with a cash squeeze when working capital absorbs cash.",
-        "If profit is positive, operating cash flow must be at least as high as profit in the same year.",
-        "A rising receivables balance means some recorded sales have not yet been collected in cash.",
-        "Inventory built ahead of sales uses cash even though it appears as an asset rather than an expense on the balance sheet.",
-        "Investors who read only the income statement and ignore cash flow can overrate liquidity in this pattern."
+        "Inventory turnover, cost of sales taken relative to average inventory, is below 6.87 times per year.",
+        "Asset turnover, revenue taken relative to average total assets, is above 1.48.",
+        "With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+        "Revenue exceeds €999 thousand.",
+        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.4 times per year."
       ],
       "answer_key": [
         true,
         false,
         true,
         true,
+        false
+      ],
+      "tactical_explanations": [
+        "Flows for the year and stocks at year-end answer different questions. With that split the claim is fine. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A below reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{823 + 1{,}028}{2} \\approx 925.5\n$$\n\n$$\n\\frac{1{,}019}{925.5} \\approx 1.1010\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 925.5. Asset turnover = 1,019 ÷ 925.5 ≈ 1.1010 Claimed above 1.48.\n\nThat comparison uses the extract figures only, so the claim stands or falls on the arithmetic itself.\n\nSo the statement is False.",
+        "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{169 + 179}{2} \\approx 174\n$$\n\n$$\n\\frac{674}{174} \\approx 3.87\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 674174 = 3.87 That interpretation matches the definition.\n\nUsing only the extract averages keeps the turnover arithmetic aligned with the claim.\n\nSo the statement is True.",
+        "Revenue is read directly from the extract and compared with the stated euro-thousand threshold, a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1{,}019\\text{ thousand}\n$$\n\nRead revenue from the extract. Revenue = €1,019 thousand; threshold exceeds €999 thousand. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine. A exceeds reading of the extract supports this claim. Operators and dealers can report the same the item on different lines.\n\nWalk the claim against those extract lines once more: the nouns, the timing, and the arithmetic either line up with the chapter rule or they do not. That is the whole test for this letter.\n\nSo the statement is True.",
+        "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{135 + 107}{2} \\approx 121\n$$\n\n$$\n\\frac{1{,}019}{121} \\approx 8.4215\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,019121 = 8.4215 Threshold exceeds 10.4. Check the extract’s labels once more against the stem’s threshold.\n\nThe extract's own figures are enough for that check; no extra assumption is required.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.4.010",
+      "title": "Asset Composition Chart 10",
+      "subsection": "6.4",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+        "Working capital of €133 thousand is positive on this balance sheet.",
+        "The debt ratio exceeds 56%.",
+        "Trade receivables make up less than 48.5% of current assets.",
+        "Cash and cash equivalents make up more than 23.1% of current assets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
         true
       ],
-      "difficulty_level": "5/5",
       "tactical_explanations": [
-        "**A.** → True\n\nGrowth that piles into receivables and stock is a textbook profit-without-cash episode.\n\nSo the statement is True.",
-        "**B.** → False\n\nWorking-capital drains can push operating cash flow well below accrual profit.\n\nSo the statement is False.",
-        "**C.** → True\n\nReceivables are sales recognised before cash arrives — that is what the line means.\n\nSo the statement is True.",
-        "**D.** → True\n\nBuilding inventory spends cash (or creates payables) now. Calling it an asset does not make it free.\n\nSo the statement is True.",
-        "**E.** → True\n\nThis is exactly the pattern where income-statement optimism hides a liquidity story that shows up in cash flow.\n\nSo the statement is True."
-      ]
+        "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A outside reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 356 and current liabilities total 223:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 356, \\quad \\text{CL} = 223,\\quad \\text{WC} = 356 - 223\n$$\n\n$$\n\\text{WC} = 133\n$$\n\nWC = 356 − 223 = 133. The stem cites €133 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 703,\\quad \\text{Total assets} = 1{,}181\n$$\n\n$$\n\\frac{703}{1{,}181} \\approx 0.5953 \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 56\\%\n$$\n\nThe debt ratio is 59.5%, above the 56% benchmark. Debt ratio ≈ 703 ÷ 1,181 = 59.5%.\n\nSo the statement is True.",
+        "From the extract, Trade receivables = 81 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{81}{356}\n$$\n\n$$\n\\text{Share} = 22.8\\%\n$$\n\nTrade receivables / current assets ≈ 81 ÷ 356 = 22.8%. Less than 48.5% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
+        "From the extract, Cash and cash equivalents = 119 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{119}{356}\n$$\n\n$$\n\\text{Share} = 33.4\\%\n$$\n\nCash and cash equivalents / current assets ≈ 119 ÷ 356 = 33.4%. More than 23.1% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.2.039",
+      "title": "Liquidity From the Balance Sheet 39",
+      "subsection": "6.2",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
+        "The current ratio exceeds 1.28.",
+        "Working capital of €144 thousand is positive on this balance sheet.",
+        "Buildings make up more than 47.1% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 276,\\quad \\text{Inventory} = 119,\\quad \\text{CL} = 132\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 276 - 119 = 157\n$$\n\n$$\n\\frac{157}{132} \\approx 1.1894 \\le 1.35\n$$\n\nSo the statement is False.",
+        "CA ÷ CL is the current-ratio identity used below.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 119 + 60 + 97,\\quad \\text{CA} = 276,\\quad \\text{CL} = 74 + 58\n$$\n\n$$\n\\text{CL} = 132\n$$\n\n$$\n\\frac{276}{132} \\approx 2.0909 > 1.28\n$$\n\nCurrent ratio = 276 ÷ 132 ≈ 2.09. The claim says the ratio exceeds 1.28.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 276 and current liabilities total 132:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 276, \\quad \\text{CL} = 132,\\quad \\text{WC} = 276 - 132\n$$\n\n$$\n\\text{WC} = 144\n$$\n\nWC = 276 − 132 = 144. The stem cites €144 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €144 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "From the extract, Buildings = 307 and total assets = 860.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{307}{860}\n$$\n\n$$\n\\text{Share} = 35.7\\%\n$$\n\nBuildings / total assets ≈ 307 ÷ 860 = 35.7%. More than 47.1% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.3.027",
+      "title": "Comparative Balance Sheet Analysis 27",
+      "subsection": "6.3",
+      "chapter": null,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Total equity grew by more than 21.7% between Year 1 and Year 2.",
+        "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+        "Non-current liabilities amount to less than 91.7% of total equity in Year 2.",
+        "Current liabilities are covered by current assets less than 2.02 times over in Year 2.",
+        "Total assets grew by more than 12.2% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 542, Y_2 = 532\n$$\n\n$$\nY_2 - Y_1 = 532 - 542 = -10\n$$\n\n$$\n\\frac{-10}{542} \\approx -0.0185 \\approx -1.8\\%\n$$\n\n$$\n-1.8\\% \\le 21.7\\%\n$$\n\nTotal equity changed by 1.8%, at or below the 21.7% threshold claimed.\n\nSo the statement is False.",
+        "Shape and size never settle the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. A dealer’s the item stays inventory until sold. Own use of the item for years makes it a tangible fixed asset. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 388 + 53,\\quad \\text{NCL} = 441,\\quad \\text{Equity} = 532\n$$\n\n$$\n\\frac{441}{532} \\approx 0.8289 \\approx 82.9\\%\n$$\n\n$$\n82.9\\% < 91.7\\%\n$$\n\nYear-2 NCL/equity is 82.9%, below the 91.7% claim.\n\nSo the statement is True.",
+        "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{336}{171} \\approx 1.9649\n$$\n\nYear 2 cover ≈ 1.96 times (336 ÷ 171). Less than 2.02 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted.\n\nSo the statement is True.",
+        "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}102, Y_2 = 1{,}144\n$$\n\n$$\nY_2 - Y_1 = 1{,}144 - 1{,}102 = 42\n$$\n\n$$\n\\frac{42}{1{,}102} \\approx 0.0381 \\approx 3.8\\%\n$$\n\n$$\n3.8\\% \\le 12.2\\%\n$$\n\nTotal assets changed by 3.8%, at or below the 12.2% threshold claimed. Total assets runs 1,102 → 1,144 across the two years. Percentage change ≈ 3.8%, while the claim wants growth above 12.2%. 3.8% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.1.020",
+      "title": "Balance Sheet Structure Review 20",
+      "subsection": "6.1",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+        "The current ratio is below 0.93.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.24 times over.",
+        "The equity ratio is below 33.7%.",
+        "The debt ratio exceeds 47.8%."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Non-current assets are held for use beyond one accounting period. Useful life beyond a year plus operating intent define the category. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
+        "Liquidity cover here is current assets over current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 136 + 162 + 34,\\quad \\text{CA} = 332,\\quad \\text{CL} = 150 + 48\n$$\n\n$$\n\\text{CL} = 198\n$$\n\n$$\n\\frac{332}{198} \\approx 1.6768 > 0.93\n$$\n\nCurrent ratio = 332 ÷ 198 ≈ 1.68. The claim says the ratio is below 0.93. 1.68 conflicts with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is False.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 332,\\quad \\text{Inventory} = 136,\\quad \\text{CL} = 198\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 332 - 136 = 196\n$$\n\n$$\n\\frac{196}{198} \\approx 0.9899 \\le 1.24\n$$\n\nSo the statement is False.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 718,\\quad \\text{Total assets} = 1{,}206\n$$\n\n$$\n\\frac{718}{1{,}206} \\approx 0.5954 \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 33.7\\%\n$$\n\nThe equity ratio is 59.5%, above the 33.7% benchmark. Equity ratio ≈ 718 ÷ 1,206 = 59.5%.\n\nSo the statement is False.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 488,\\quad \\text{Total assets} = 1{,}206\n$$\n\n$$\n\\frac{488}{1{,}206} \\approx 0.4046 \\approx 40.5\\%\n$$\n\n$$\n40.5\\% < 47.8\\%\n$$\n\nThe debt ratio is 40.5%, below the 47.8% benchmark. Debt ratio ≈ 488 ÷ 1,206 = 40.5%. Claim: exceeds 47.8%. 40.5% does not fit. The debt ratio places debt against total assets. Financing structure is read from that percentage, not from a single euro line alone. Read the claim against the chapter rule: The debt ratio exceeds 47.8%.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.068",
+      "title": "Balance Sheet Structure Review 68",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 225 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 215 |\n| Trade receivables | 156 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1089** |\n| **EQUITY** | |\n| Share capital | 146 |\n| Retained earnings | 301 |\n| Total equity | **447** |\n| **LIABILITIES** | |\n| Long-term bank loan | 286 |\n| Bonds payable | 89 |\n| Trade payables | 228 |\n| Bank overdraft | 39 |\n| Total liabilities | **642** |\n| Total equity and liabilities | **1089** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio is below 0.78.",
+        "The current ratio exceeds 1.53.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.25 times over.",
+        "Working capital of €184 thousand is positive on this balance sheet.",
+        "Trade receivables make up less than 55% of current assets."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "The current ratio puts current assets against current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 215 + 156 + 80,\\quad \\text{CA} = 451,\\quad \\text{CL} = 228 + 39\n$$\n\n$$\n\\text{CL} = 267\n$$\n\n$$\n\\frac{451}{267} \\approx 1.6891 > 0.78\n$$\n\nCurrent ratio = 451 ÷ 267 ≈ 1.69.\n\nThe extract's own figures are enough for that check; no extra assumption is required.\n\nSo the statement is False.",
+        "Current ratio = 451 ÷ 267 ≈ 1.69.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 215 + 156 + 80,\\quad \\text{CA} = 451,\\quad \\text{CL} = 228 + 39\n$$\n\n$$\n\\text{CL} = 267\n$$\n\n$$\n\\frac{451}{267} \\approx 1.6891 > 1.53\n$$\n\nCurrent ratio = 451 ÷ 267 ≈ 1.69. The claim says the ratio exceeds 1.53. 1.69 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 451,\\quad \\text{Inventory} = 215,\\quad \\text{CL} = 267\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 451 - 215 = 236\n$$\n\n$$\n\\frac{236}{267} \\approx 0.8839 \\le 1.25\n$$\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 451 and current liabilities total 267:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 451, \\quad \\text{CL} = 267,\\quad \\text{WC} = 451 - 267\n$$\n\n$$\n\\text{WC} = 184\n$$\n\nWC = 451 − 267 = 184. The stem cites €184 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "From the extract, Trade receivables = 156 and current assets = 451.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{156}{451}\n$$\n\n$$\n\\text{Share} = 34.6\\%\n$$\n\nTrade receivables / current assets ≈ 156 ÷ 451 = 34.6%. Less than 55% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nWalk the claim against those extract lines once more: the nouns, the timing, and the arithmetic either line up with the chapter rule or they do not. That is the whole test for this letter.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.074",
+      "title": "Balance Sheet Structure Review 74",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 305 |\n| Machinery | 176 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 169 |\n| Trade receivables | 103 |\n| Cash and cash equivalents | 83 |\n| Total assets | **933** |\n| **EQUITY** | |\n| Share capital | 298 |\n| Retained earnings | -8 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 70 |\n| Trade payables | 143 |\n| Bank overdraft | 34 |\n| Total liabilities | **643** |\n| Total equity and liabilities | **933** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio exceeds 1.8.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.14 times over.",
+        "Buildings make up more than 43.4% of total assets.",
+        "The long-term bank loan of €396 thousand should be classified within equity rather than liabilities.",
+        "Working capital of €178 thousand is positive on this balance sheet."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Liquidity cover here is current assets over current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 169 + 103 + 83,\\quad \\text{CA} = 355,\\quad \\text{CL} = 143 + 34\n$$\n\n$$\n\\text{CL} = 177\n$$\n\n$$\n\\frac{355}{177} \\approx 2.0056 > 1.8\n$$\n\nCurrent ratio = 355 ÷ 177 ≈ 2.01. The claim says the ratio exceeds 1.8. 2.01 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 355,\\quad \\text{Inventory} = 169,\\quad \\text{CL} = 177\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 355 - 169 = 186\n$$\n\n$$\n\\frac{186}{177} \\approx 1.0508 \\le 1.14\n$$\n\nSo the statement is False.",
+        "From the extract, Buildings = 305 and total assets = 933.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{305}{933}\n$$\n\n$$\n\\text{Share} = 32.7\\%\n$$\n\nBuildings / total assets ≈ 305 ÷ 933 = 32.7%. More than 43.4% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False.",
+        "A bank loan is a liability owed to a lender. Equity is owners’ residual interest, borrowed funds do not belong there. Counterexample: a term loan sits under liabilities, never under share capital. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 355 and current liabilities total 177:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 355, \\quad \\text{CL} = 177,\\quad \\text{WC} = 355 - 177\n$$\n\n$$\n\\text{WC} = 178\n$$\n\nWC = 355 − 177 = 178. The stem cites €178 thousand; the arithmetic supports that reading.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.060",
+      "title": "Liquidity From the Balance Sheet 60",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 474 |\n| Machinery | 153 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 97 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 104 |\n| Total assets | **963** |\n| **EQUITY** | |\n| Share capital | 119 |\n| Retained earnings | 191 |\n| Total equity | **310** |\n| **LIABILITIES** | |\n| Long-term bank loan | 424 |\n| Bonds payable | 51 |\n| Trade payables | 114 |\n| Bank overdraft | 64 |\n| Total liabilities | **653** |\n| Total equity and liabilities | **963** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.22 times over.",
+        "The equity ratio is below 28.8%.",
+        "Working capital of €102 thousand is positive on this balance sheet.",
+        "Buildings make up more than 55.3% of total assets.",
+        "Inventory make up more than 46% of current assets."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 280,\\quad \\text{Inventory} = 97,\\quad \\text{CL} = 178\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 280 - 97 = 183\n$$\n\n$$\n\\frac{183}{178} \\approx 1.0281 \\le 1.22\n$$\n\nSo the statement is False.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 310,\\quad \\text{Total assets} = 963\n$$\n\n$$\n\\frac{310}{963} \\approx 0.3219 \\approx 32.2\\%\n$$\n\n$$\n32.2\\% > 28.8\\%\n$$\n\nThe equity ratio is 32.2%, above the 28.8% benchmark. Equity ratio ≈ 310 ÷ 963 = 32.2%. Claim: is below 28.8%. 32.2% does not fit. The equity ratio places equity against total assets. Financing structure is read from that percentage, not from a single euro line alone. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 280 and current liabilities total 178:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 280, \\quad \\text{CL} = 178,\\quad \\text{WC} = 280 - 178\n$$\n\n$$\n\\text{WC} = 102\n$$\n\nWC = 280 − 178 = 102. The stem cites €102 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "From the extract, Buildings = 474 and total assets = 963.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{474}{963}\n$$\n\n$$\n\\text{Share} = 49.2\\%\n$$\n\nBuildings / total assets ≈ 474 ÷ 963 = 49.2%. More than 55.3% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False.",
+        "From the extract, Inventory = 97 and current assets = 280.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{97}{280}\n$$\n\n$$\n\\text{Share} = 34.6\\%\n$$\n\nInventory / current assets ≈ 97 ÷ 280 = 34.6%. More than 46% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.077",
+      "title": "Balance Sheet Structure Review 77",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 124 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 231 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1214** |\n| **EQUITY** | |\n| Share capital | 110 |\n| Retained earnings | 474 |\n| Total equity | **584** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 47 |\n| Trade payables | 153 |\n| Bank overdraft | 84 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **1214** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Working capital of €279 thousand is positive on this balance sheet.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 0.9 times over.",
+        "Buildings make up more than 38.9% of total assets.",
+        "Inventory make up more than 42.9% of current assets.",
+        "The combined total of equity and non-current liabilities exceeds non-current assets by more than 26.8%."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 516 and current liabilities total 237:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 516, \\quad \\text{CL} = 237,\\quad \\text{WC} = 516 - 237\n$$\n\n$$\n\\text{WC} = 279\n$$\n\nWC = 516 − 237 = 279. The stem cites €279 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €279 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 516,\\quad \\text{Inventory} = 231,\\quad \\text{CL} = 237\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 516 - 231 = 285\n$$\n\n$$\n\\frac{285}{237} \\approx 1.2025 > 0.9\n$$\n\nSo the statement is True.",
+        "From the extract, Buildings = 502 and total assets = 1,214.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{502}{1{,}214}\n$$\n\n$$\n\\text{Share} = 41.4\\%\n$$\n\nBuildings / total assets ≈ 502 ÷ 1,214 = 41.4%. More than 38.9% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is True.",
+        "From the extract, Inventory = 231 and current assets = 516.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{231}{516}\n$$\n\n$$\n\\text{Share} = 44.8\\%\n$$\n\nInventory / current assets ≈ 231 ÷ 516 = 44.8%. More than 42.9% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "Long-term financing surplus = (equity + non-current liabilities) ÷ non-current assets − 1.\n\n$$\n\\text{Surplus} = \\frac{\\text{equity} + \\text{NCL}}{\\text{NCA}} - 1\n$$\n\n$$\n\\text{Equity} + \\text{NCL} = 584 + 393 = 977\n$$\n\n$$\n\\text{NCA} = 698\n$$\n\n$$\n\\frac{977}{698} \\approx 1.3997\n$$\n\n$$\n\\frac{977}{698} - 1 \\approx 0.3997 \\approx 40.0\\%\n$$\n\n$$\n40.0\\% > 26.8\\%\n$$\n\nYear-2 NCL/equity is 40.0%, above the 26.8% claim.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.029",
+      "title": "Balance Sheet Structure Review 29",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 485 |\n| Machinery | 256 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 273 |\n| Trade receivables | 145 |\n| Cash and cash equivalents | 45 |\n| Total assets | **1347** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 684 |\n| Total equity | **882** |\n| **LIABILITIES** | |\n| Long-term bank loan | 288 |\n| Bonds payable | 49 |\n| Trade payables | 80 |\n| Bank overdraft | 48 |\n| Total liabilities | **465** |\n| Total equity and liabilities | **1347** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio exceeds 1.55.",
+        "The equity ratio is below 28.7%.",
+        "The debt ratio exceeds 76.4%.",
+        "Working capital of €335 thousand is positive on this balance sheet.",
+        "Buildings make up more than 50.7% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "The current ratio puts current assets against current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 273 + 145 + 45,\\quad \\text{CA} = 463,\\quad \\text{CL} = 80 + 48\n$$\n\n$$\n\\text{CL} = 128\n$$\n\n$$\n\\frac{463}{128} \\approx 3.6172 > 1.55\n$$\n\nCurrent ratio = 463 ÷ 128 ≈ 3.62. The claim says the ratio exceeds 1.55. 3.62 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is True.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 882,\\quad \\text{Total assets} = 1{,}347\n$$\n\n$$\n\\frac{882}{1{,}347} \\approx 0.6548 \\approx 65.5\\%\n$$\n\n$$\n65.5\\% > 28.7\\%\n$$\n\nThe equity ratio is 65.5%, above the 28.7% benchmark. Equity ratio ≈ 882 ÷ 1,347 = 65.5%.\n\nSo the statement is False.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 465,\\quad \\text{Total assets} = 1{,}347\n$$\n\n$$\n\\frac{465}{1{,}347} \\approx 0.3452 \\approx 34.5\\%\n$$\n\n$$\n34.5\\% < 76.4\\%\n$$\n\nThe debt ratio is 34.5%, below the 76.4% benchmark. Debt ratio ≈ 465 ÷ 1,347 = 34.5%.\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 463 and current liabilities total 128:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 463, \\quad \\text{CL} = 128,\\quad \\text{WC} = 463 - 128\n$$\n\n$$\n\\text{WC} = 335\n$$\n\nWC = 463 − 128 = 335. The stem cites €335 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €335 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "From the extract, Buildings = 485 and total assets = 1,347.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{485}{1{,}347}\n$$\n\n$$\n\\text{Share} = 36.0\\%\n$$\n\nBuildings / total assets ≈ 485 ÷ 1,347 = 36.0%. More than 50.7% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
     }
   ],
   "english": {
@@ -640,66 +640,66 @@
   },
   "math": [
     {
-      "case_id": "DEMO MATH 1.H01",
-      "id": "demo-math-1-h01",
-      "title": "Eight atomic conditions and a truth-table filter",
+      "case_id": "DEMO MATH 1.H02",
+      "id": "demo-math-1-h02",
+      "title": "Conference attendance rules — hard roster",
       "chapter": 1,
-      "subsection": "1.5",
-      "context": "Eight atomic conditions about a real number $x$ and a finite set $S\\subseteq\\{1,2,3,4,5,6\\}$ are fixed:\n\n$$\n\\begin{align*}\nP&:\\ x>0,\\quad\nQ&:\\ x\\ge 2,\\quad\nR&:\\ x\\in\\mathbb{Z},\\quad\nT&:\\ x^{2}=4,\\\\\nU&:\\ 3\\in S,\\quad\nV&:\\ |S|=3,\\quad\nW&:\\ S\\subseteq\\{1,2,3,4\\},\\quad\nZ&:\\ S\\cap\\{5,6\\}=\\emptyset.\n\\end{align*}\n$$\n\nA profile is a full truth assignment to $(P,Q,R,T,U,V,W,Z)$. Decide whether each meta-claim is true or false. Argue with a truth-table style case check.",
+      "subsection": "1.4",
+      "context": "Four colleagues — Ana, Boris, Ceci, and Dmitri — decide whether to attend a conference.\n\n(1) If Ana attends, then Boris does not attend.\n\n(2) If Boris does not attend, then Ceci attends.\n\n(3) If Ceci attends, then Dmitri does not attend — unless Ana also attends, in which case Dmitri is unrestricted.\n\n(4) Dmitri attends.\n\n(5) At most three of the four attend.\n\n(6) If Ana stays away, then Boris attends.\n\n(7) Ceci and Boris never attend together.\n\n(8) It is not the case that nobody from {Ana, Ceci} attends.\n\nDecide whether each claim is true or false.",
       "statements": [
-        "There exists a profile in which $T$ is true while both $P$ and $Q$ are false.",
-        "Every profile with $Q$ true must also have $P$ true.",
-        "If $W$ and $Z$ are both true, this is consistent with $V$ true and $U$ false.",
-        "The conjunction $T\\land R\\land \\lnot Q$ forces $x=-2$, and for that value $P$ is false.",
-        "If $V$ and $W$ are both true, then $U$ must be true, because every $3$-element subset of $\\{1,2,3,4\\}$ contains $3$."
+        "Dmitri attends in every roster consistent with the rules.",
+        "Ana must attend in every legal roster.",
+        "There exists a legal roster in which exactly three people attend.",
+        "Boris can attend in some legal roster.",
+        "If the “unless Ana attends” exception were removed from rule (3), the rules would still admit a solution with Dmitri attending."
       ],
       "answer_key": [
+        true,
+        true,
+        true,
         false,
-        true,
-        true,
-        true,
         false
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Treat the eight atoms as truth-table columns. Only the meanings of $P,Q,R,T$ on $x$ and of $U,V,W,Z$ on $S$ create dependencies — there is no forced link between the $x$-block and the $S$-block.",
       "tactical_explanations": [
-        "**A.** → False\n\n$T$ means $x^{2}=4$, so $x\\in\\{-2,2\\}$.\n\n- If $x=2$, then $P$ and $Q$ are both true.\n- If $x=-2$, then $P$ is false, but $Q$ is also false because $-2\\not\\ge 2$.\n\nNo real $x$ produces the truth-table row $(T,P,Q)=(1,0,0)$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$Q$ is $x\\ge 2$. Any such $x$ automatically satisfies $x>0$, which is $P$.\n\nIn the truth table, every row with $Q=1$ is forced to carry $P=1$. The row $(P,Q)=(0,1)$ cannot arise from any real $x$.\n\nSo the statement is True.",
-        "**C.** → True\n\nTake $S=\\{1,2,4\\}$. Then $W$ holds, $Z$ holds, $|S|=3$ so $V$ is true, and $3\\notin S$ so $U$ is false.\n\nThat single concrete set is a legal profile with $(U,V,W,Z)=(0,1,1,1)$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$T\\land R$ forces $x\\in\\{-2,2\\}$. Negating $Q$ kills $x=2$ and leaves only $x=-2$.\n\nFor $x=-2$, the atom $P$ ($x>0$) is false.\n\nSo the statement is True.",
-        "**E.** → False\n\nThe $3$-element subsets of $\\{1,2,3,4\\}$ are $\\{1,2,3\\}$, $\\{1,2,4\\}$, $\\{1,3,4\\}$, $\\{2,3,4\\}$.\n\nAmong them, $\\{1,2,4\\}$ does not contain $3$, so $U$ can be false while $V$ and $W$ are true.\n\nThe claim that $U$ must be true is wrong.\n\nSo the statement is False."
-      ]
+        "**A.** → True\n\nRule (4) requires Dmitri. Nothing else can cancel it. Dmitri is in every solution.\n\nSo the statement is True.",
+        "**B.** → True\n\nSuppose Ana stays away. Rule (6) forces Boris. Rule (7) then forbids Ceci. Rule (2) with Boris present is idle. Rule (8) requires someone from {Ana, Ceci}; both are absent — contradiction.\nHence Ana cannot stay away: Ana attends in every legal roster.\n\nSo the statement is True.",
+        "**C.** → True\n\nAna attends ⇒ rule (1) forces Boris out ⇒ rule (2) forces Ceci in. Ana present activates the exception in (3), so Dmitri may attend with Ceci. Roster {Ana, Ceci, Dmitri} has three people, obeys (5), (7) (Boris absent), and (8). It is legal.\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom B, Ana always attends, so rule (1) always forces Boris out. Boris never attends in a legal roster.\n\nSo the statement is False.",
+        "**E.** → False\n\nWithout the exception, rule (3) becomes “Ceci ⇒ ¬Dmitri”. But Ana still forces Ceci (as above) and rule (4) needs Dmitri, so Ceci and Dmitri conflict. No solution remains.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Force Ana by contradiction from (6)+(8), then (1)+(2) build the unique three-person roster {A,C,D}; Boris is impossible; removing the exception in (3) collapses the system."
     },
     {
-      "case_id": "DEMO MATH 2.H01",
-      "id": "demo-math-2-h01",
-      "title": "Four linked algebra exhibits — one logical chain",
+      "case_id": "DEMO MATH 2.H02",
+      "id": "demo-math-2-h02",
+      "title": "Four numerical algebra records — one chain",
       "chapter": 2,
       "subsection": "2.5",
-      "context": "Four algebra exhibits sit in one archive. Keep a single consistent chain across all four; later claims may depend on earlier exhibits.\n\n**Exhibit I.** $(a+b)^{2}=a^{2}+2ab+b^{2}$ and $(a-b)^{2}=a^{2}-2ab+b^{2}$ for all real $a,b$.\n\n**Exhibit II.** $a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2})$ for all real $a,b$.\n\n**Exhibit III.** $E=\\dfrac{a^{2}-b^{2}}{a-b}$ is considered only for $a\\neq b$.\n\n**Exhibit IV.** $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc=(a+b+c)^{2}$ for all real $a,b,c$.\n\nDecide whether each statement about this four-exhibit chain is true or false.",
+      "context": "An algebra archive stores two real numbers $a$ and $b$ through four records:\n\n(1) $a+b=12$\n\n(2) $ab=32$\n\n(3) $a^{2}+b^{2}=80$\n\n(4) $(a-b)^{2}=16$\n\nThe original order was not recorded. Decide whether each statement is true or false.",
       "statements": [
-        "From Exhibit I alone, $a^{2}+b^{2}=\\dfrac{(a+b)^{2}+(a-b)^{2}}{2}$ holds for every real $a,b$.",
-        "If Exhibit II is used with $a=b$, the factorisation still produces a nontrivial factor $a-b\\neq 0$.",
-        "Under Exhibit III, $E$ simplifies to $a+b$ for every $a\\neq b$, and that string $a+b$ is exactly the middle factor appearing in Exhibit II.",
-        "In Exhibit IV, omitting any one of the cross terms $2ab$, $2ac$, $2bc$ destroys the identity.",
-        "Combining III and II for $a\\neq b$ gives $a^{3}-b^{3}=(a-b)\\cdot E=(a-b)(a+b)$ for all $a\\neq b$."
+        "Records (1) and (2) alone already imply record (3).",
+        "Records (1) and (2) alone already imply record (4).",
+        "The unordered pair $\\{a,b\\}$ must be $\\{4,8\\}$.",
+        "If record (3) were changed to $a^{2}+b^{2}=100$ while (1) and (2) stayed, all three could still hold at once.",
+        "From (1) and (2), $a^{3}+b^{3}=576$."
       ],
       "answer_key": [
         true,
-        false,
-        false,
         true,
-        false
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$a^{2}+b^{2}=(a+b)^{2}-2ab=144-64=80$. Record (3) follows from (1) and (2).\n\nSo the statement is True.",
+        "**B.** → True\n\n$(a-b)^{2}=(a+b)^{2}-4ab=144-128=16$. Record (4) follows from (1) and (2).\n\nSo the statement is True.",
+        "**C.** → True\n\n$a,b$ are roots of $t^{2}-12t+32=0$, i.e. $(t-4)(t-8)=0$. The unordered pair is $\\{4,8\\}$.\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom (1) and (2) one must have $a^{2}+b^{2}=80$, not $100$. The altered triple is inconsistent.\n\nSo the statement is False.",
+        "**E.** → True\n\n$a^{3}+b^{3}=(a+b)\\big((a^{2}+b^{2})-ab\\)=12(80-32)=12\\cdot 48=576$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Exhibit I expands squares, II factors a difference of cubes, III cancels a difference of squares to $a+b$, and IV expands a three-letter square. The traps either forbid a substitution or swap $a+b$ for $a^{2}+ab+b^{2}$.",
-      "tactical_explanations": [
-        "**A.** → True\n\nAdd the two identities from Exhibit I:\n\n$$\n(a+b)^{2}+(a-b)^{2}=2a^{2}+2b^{2}.\n$$\n\nDivide by $2$ to get\n\n$$\na^{2}+b^{2}=\\dfrac{(a+b)^{2}+(a-b)^{2}}{2}.\n$$\n\nNo restriction on $a,b$ was used.\n\nSo the statement is True.",
-        "**B.** → False\n\nExhibit II holds at $a=b$, but then $a-b=0$. Both sides are $0$; the linear factor is not nontrivial and is not nonzero.\n\nSo the statement is False.",
-        "**C.** → False\n\nFor $a\\neq b$, Exhibit III does give $E=a+b$. The middle factor in Exhibit II is $a^{2}+ab+b^{2}$, not $a+b$.\n\nAt $a=b=1$ those evaluate to $3$ versus $2$. Equating them is the trap.\n\nSo the statement is False.",
-        "**D.** → True\n\nAt $a=b=c=1$, the full right-hand side of Exhibit IV is $9$. Dropping only $2ab$ leaves $7$. Any missing cross term breaks the identity.\n\nSo the statement is True.",
-        "**E.** → False\n\n$(a-b)E=(a-b)(a+b)=a^{2}-b^{2}$, while\n\n$$\na^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2}).\n$$\n\nFor $a=2$, $b=1$: left side $7$, right side $3$. The claim replaces the correct quadratic factor by $a+b$.\n\nSo the statement is False."
-      ]
+      "solution_overview": "Use $(a+b)^{2}$ and $(a-b)^{2}$ identities, solve $t^{2}-12t+32=0$, and reject any claim that contradicts $a^{2}+b^{2}=80$."
     },
     {
       "case_id": "MATH 11.99",
@@ -733,35 +733,35 @@
       "solution_overview": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.\n\nThe due lease, the continuous investment, and the perpetuity are\n\n$$\na = 4,200,\n$$\n\n$$\nn = 5,\n$$\n\n$$\nr = 8\\%\n$$\n\n$$\nr = 0.08\n$$\n\n$$\nP = 20,000,\n$$\n\n$$\nt = 7,\n$$\n\n$$\nr_{\\mathrm{cont}} = 6\\%\n$$\n\n$$\nr_{\\mathrm{cont}} = 0.06\n$$\n\n$$a_{\\mathrm{perp}} = 3,000$$\n\n$$\nP_{\\mathrm{ordinary}} = \\frac{4,200}{0.08}\\left[1-\\frac{1}{(1.08)^5}\\right]\n$$\n\n$$\nP_{\\mathrm{ordinary}} = 16,769.39\n$$\n\n$$\nP_{\\mathrm{due}} = 16,769.39 \\times 1.08\n$$\n\n$$\nP_{\\mathrm{due}} = 18,110.94\n$$\n\n$$\nS = 20,000 e^{0.06 \\times 7}\n$$\n\n$$\nS = 20,000 e^{0.42}\n$$\n\n$$\nS = 30,439.24\n$$\n\n$$\nP_{\\mathrm{perp}} = \\frac{3,000}{0.08}\n$$\n\n$$\nP_{\\mathrm{perp}} = 37,500\n$$"
     },
     {
-      "case_id": "DEMO MATH 4.H01",
-      "id": "demo-math-4-h01",
-      "title": "Five unlike exam equations — new hard stems",
+      "case_id": "DEMO MATH 4.H02",
+      "id": "demo-math-4-h02",
+      "title": "Five brutal exam equations",
       "chapter": 4,
       "subsection": "4.5",
-      "context": "Decide whether each claim is true or false. The five letters concern five different equations; do not carry numbers from one letter into another.",
+      "context": "Decide whether each claim is true or false. Five different equations; do not reuse roots across letters.",
       "statements": [
-        "The equation $\\sqrt{2x+3}=x-1$ has exactly one real solution, and that solution is $x=3$.",
-        "The equation $\\dfrac{x}{x-2}+\\dfrac{2}{x+1}=3$ has exactly two real solutions in its natural domain.",
-        "Every real solution of $|3x-6|=x+4$ also satisfies $3x-6=x+4$.",
-        "The quadratic $x^{2}-(a+1)x+a=0$ has a double real root if and only if $a=1$.",
-        "If $\\log_{2}(x-1)+\\log_{2}(x+1)=3$, then $x=\\sqrt{8}$ is the unique real solution in the log domain."
+        "The system $\\sqrt{2x+3}=y$, $y=x-1$, $y\\ge 0$ has exactly two real solutions $(x,y)$.",
+        "After clearing denominators, $\\dfrac{x+1}{x-2}+\\dfrac{x-2}{x+1}=\\dfrac{5}{2}$ has exactly two domain-legal real roots, both different from $\\pm 1$ and $2$.",
+        "The equation $|x^{2}-5x+6|=x-2$ has a real solution strictly larger than $4$.",
+        "There exists a real parameter $k$ such that $x^{2}-2kx+(k^{2}-1)=0$ has a double root at $x=0$.",
+        "$\\log_{3}(x-1)+\\log_{3}(x+1)=\\log_{3}(2x+1)$ forces $x=1$ as its only candidate, but $x=1$ is outside the log domain, so the equation has no real solution."
       ],
       "answer_key": [
         false,
         true,
         false,
-        true,
+        false,
         false
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Five independent equation claims: a radical with an extraneous candidate, a rational equation after clearing, an absolute-value case split, a parameterised discriminant, and a log-domain trap.",
       "tactical_explanations": [
-        "**A.** → False\n\nFor the principal square root with a meaningful nonnegative right-hand side, take $x\\ge 1$. Squaring gives $2x+3=(x-1)^{2}$, so $x^{2}-4x-2=0$ and $x=2\\pm\\sqrt{6}$. Only $2+\\sqrt{6}$ survives the domain.\n\nAt $x=3$: $\\sqrt{9}=3$ but $x-1=2$, so $3=2$ fails. The unique root is not $3$.\n\nSo the statement is False.",
-        "**B.** → True\n\nDomain: $x\\neq 2$ and $x\\neq -1$. Clearing the common denominator yields $2x^{2}-6x-2=0$, i.e. $x=\\dfrac{3\\pm\\sqrt{13}}{2}$. Both roots avoid the excluded points, so exactly two domain-legal solutions exist.\n\nSo the statement is True.",
-        "**C.** → False\n\nNeed $x+4\\ge 0$, i.e. $x\\ge -4$. The cases are $3x-6=x+4$ (giving $x=5$) and $3x-6=-(x+4)$ (giving $x=\\tfrac12$).\n\nThe second root comes from the negated branch, so it is false that every solution satisfies $3x-6=x+4$.\n\nSo the statement is False.",
-        "**D.** → True\n\nDiscriminant $\\Delta=(a+1)^{2}-4a=(a-1)^{2}$. This is zero if and only if $a=1$, and then the double root is $x=1$.\n\nSo the statement is True.",
-        "**E.** → False\n\nDomain: $x>1$. The sum of logs becomes $\\log_{2}(x^{2}-1)=3$, so $x^{2}-1=8$ and $x=\\pm 3$. Only $x=3$ lies in the domain.\n\n$\\sqrt{8}\\neq 3$, so the claimed unique solution is wrong.\n\nSo the statement is False."
-      ]
+        "**A.** → False\n\nFrom $y=x-1\\ge 0$ and $\\sqrt{2x+3}=x-1$, square to get $2x+3=(x-1)^{2}$, so $x^{2}-4x-2=0$, $x=2\\pm\\sqrt{6}$. Only $x=2+\\sqrt{6}$ satisfies $x\\ge 1$. Exactly one solution pair, not two.\n\nSo the statement is False.",
+        "**B.** → True\n\nDomain $x\\neq 2$ and $x\\neq -1$. Set $u=x+1$, $v=x-2$ or clear directly:\n$(x+1)^{2}+(x-2)^{2}=\\tfrac52(x-2)(x+1)$.\n$2x^{2}-2x+5=\\tfrac52(x^{2}-x-2)$.\nMultiply by 2: $4x^{2}-4x+10=5x^{2}-5x-10$, so $0=x^{2}-x-20=(x-5)(x+4)$.\nRoots $x=5$ and $x=-4$, both in the domain and different from $\\pm 1,2$. Exactly two legal roots.\n\nSo the statement is True.",
+        "**C.** → False\n\nRequire $x\\ge 2$. For $x>2$, $|(x-2)(x-3)|=x-2$ ⇒ $|x-3|=1$ ⇒ $x=4$ or $x=2$ (exclude $x=2$ from this branch). Also $x=2$ works separately. The only candidates are $2$ and $4$; none is strictly larger than $4$.\n\nSo the statement is False.",
+        "**D.** → False\n\nDouble root at $0$ needs $f(0)=0$ and $f'(0)=0$. Here $f(0)=k^{2}-1$ and $f'(x)=2x-2k$, so $f'(0)=-2k=0$ ⇒ $k=0$, then $f(0)=-1\\neq 0$. Impossible.\n\nSo the statement is False.",
+        "**E.** → False\n\nDomain: $x>1$. Sum: $\\log_{3}\\big((x-1)(x+1)\\big)=\\log_{3}(2x+1)$, so $x^{2}-1=2x+1$, $x^{2}-2x-2=0$, $x=1\\pm\\sqrt{3}$. Only $x=1+\\sqrt{3}>1$ is allowed. A real solution exists; the claim that there is none is false.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Hard radical/rational/absolute/parameter/log equations with domain traps and false uniqueness claims."
     },
     {
       "case_id": "DEMO MATH 5.H01",
@@ -795,35 +795,35 @@
       ]
     },
     {
-      "case_id": "DEMO MATH 6.H01",
-      "id": "demo-math-6-h01",
-      "title": "Three moduli, four roots, and a mixed absolute mess",
+      "case_id": "DEMO MATH 6.H02",
+      "id": "demo-math-6-h02",
+      "title": "Mixed absolute, radical, rational, and quadratic equations",
       "chapter": 6,
       "subsection": "6.5",
-      "context": "Decide whether each claim is true or false. The five letters are five different absolute-value problems. Case-split at every kink; discard roots that leave their region.",
+      "context": "Decide whether each claim is true or false. The five letters mix absolute-value, radical, rational, quadratic, and piecewise equations — different types on purpose.",
       "statements": [
-        "The equation $|x-1|+|x+2|=3$ holds for every $x$ in the closed interval $[-2,1]$, and for no $x$ outside that interval.",
-        "The equation $|2x+1|-|x-3|=4$ has exactly three real solutions.",
-        "Every real solution of $|x^{2}-1|=|2x|$ also satisfies $x^{2}-1=2x$ (the branch $x^{2}-1=-2x$ never adds a root).",
-        "The inequality $|x-4|+|x+1|\\ge 5$ is true for all real $x$.",
-        "The equation $|x|+|x-1|+|x-3|=4$ has solution set equal to the single point $x=1$."
+        "The equation $|x-1|+|x+2|=3$ holds for every $x$ in $[-2,1]$ and for no $x$ outside that interval.",
+        "The radical equation $\\sqrt{x+3}+\\sqrt{x}=3$ has unique real solution $x=0$.",
+        "The rational equation $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}=1$ has exactly one real root, namely $x=0$.",
+        "The quadratic inequality $x^{2}-5x+6\\\\ge 0$ holds precisely on $[2,3]$.",
+        "The mixed equation $|2x-1|=x^{2}-x-1$ has exactly two distinct real solutions."
       ],
       "answer_key": [
         true,
         false,
         false,
-        true,
-        false
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nOn $[-2,1]$ the left side equals the constant $3$. Outside, it is strictly larger than $3$. Solution set exactly $[-2,1]$.\n\nSo the statement is True.",
+        "**B.** → False\n\nDomain $x\\ge 0$. Isolating and squaring yields unique candidate $x=1$, which checks: $\\sqrt{4}+1=3$. The value $x=0$ gives $\\sqrt{3}+0\\neq 3$. So the unique root is $1$, not $0$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$\\dfrac{2}{x^{2}-1}=1$ ⇒ $x^{2}-1=2$ ⇒ $x=\\pm\\sqrt{3}$, both legal. Two roots, not one at $0$. (At $x=0$: $-1-1=-2\\neq 1$.)\n\nSo the statement is False.",
+        "**D.** → False\n\n$x^{2}-5x+6=(x-2)(x-3)\\ge 0$ on $(-\\infty,2]\\cup[3,\\infty)$, not on $[2,3]$ (there the product is $\\le 0$).\n\nSo the statement is False.",
+        "**E.** → True\n\nNeed $x^{2}-x-1\\ge 0$, i.e. $x\\le \\phi_{-}$ or $x\\ge \\phi_{+}$ with $\\phi_{\\pm}=\\dfrac{1\\pm\\sqrt{5}}{2}$.\nCases: $2x-1=x^{2}-x-1$ ⇒ $x^{2}-3x=0$ ⇒ $x=0,3$. Only $x=3$ is in the RHS-nonnegative set.\nOr $2x-1=-(x^{2}-x-1)$ ⇒ $x^{2}+x=0$ ⇒ $x=0,-1$. Only $x=-1$ works in the region.\nExactly two solutions: $x=3$ and $x=-1$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Between kinks each absolute value is linear. Sometimes a whole interval survives when the left-hand side collapses to a constant that matches the right-hand side.",
-      "tactical_explanations": [
-        "**A.** → True\n\nOn $[-2,1]$ one has $|x-1|+|x+2|=(1-x)+(x+2)=3$, so the equation is the identity $3=3$ on the whole interval.\n\nOutside that interval the sum is strictly larger than $3$, and the formal linear candidates only recover the endpoints. The solution set is exactly $[-2,1]$.\n\nSo the statement is True.",
-        "**B.** → False\n\nKinks at $x=-\\tfrac12$ and $x=3$ produce exactly two legal roots: $x=2$ (middle region) and $x=-8$ (left region). There is no third root. Claiming three overcounts.\n\nSo the statement is False.",
-        "**C.** → False\n\n$|x^{2}-1|=|2x|$ means $x^{2}-1=2x$ or $x^{2}-1=-2x$.\n\nThe first branch gives $x=1\\pm\\sqrt{2}$. The negated branch gives $x=-1\\pm\\sqrt{2}$. Two extra roots appear, so the claim is wrong.\n\nSo the statement is False.",
-        "**D.** → True\n\n$|x-4|+|x+1|$ is the sum of distances from $x$ to $4$ and to $-1$. Its minimum on $\\mathbb{R}$ is the gap $5$, attained on the whole segment $[-1,4]$. Everywhere else the sum is larger. Hence the inequality holds for all real $x$.\n\nSo the statement is True.",
-        "**E.** → False\n\nOn $[1,3]$: $x+(x-1)+(3-x)=x+2=4$ gives $x=2$. On $[0,1]$: $4-x=4$ gives $x=0$. At least $\\{0,2\\}$ solve the equation, while $x=1$ yields $3\\neq 4$. The solution set is not the singleton $\\{1\\}$.\n\nSo the statement is False."
-      ]
+      "solution_overview": "Five different equation types: absolute sum, radical, rational, quadratic inequality, absolute-versus-quadratic."
     },
     {
       "case_id": "DEMO MATH 7.H01",
@@ -1012,18 +1012,18 @@
       "solution_overview": "This problem describes a population of deer composed of three subspecies, each with a different prevalence of a certain prion disease. A field test for the disease has a known sensitivity and false-positive rate. We are testing a randomly selected deer and observing a positive result.\n\nLet $S_A$, $S_B$, and $S_C$ be the events that a randomly selected deer belongs to Subspecies A, B, or C, respectively. Their prior probabilities are:\n$$P(S_A) = 0.60$$\n$$P(S_B) = 0.25$$\n$$P(S_C) = 0.15$$\n\nLet $D$ be the event that a deer has the prion disease. The prevalence rates for each subspecies are:\n$$P(D \\mid S_A) = 0.02$$\n$$P(D \\mid S_B) = 0.06$$\n$$P(D \\mid S_C) = 0.15$$\n\nLet $T^+$ be the event of a positive test result and $T^-$ be the event of a negative test result. The test characteristics are:\nSensitivity: $P(T^+ \\mid D) = 0.90$\nFalse-positive rate: $P(T^+ \\mid D^c) = 0.04$\n\nThis means:\n$P(T^- \\mid D) = 1 - P(T^+ \\mid D) = 1 - 0.90 = 0.10$\n$P(T^- \\mid D^c) = 1 - P(T^+ \\mid D^c) = 1 - 0.04 = 0.96$\n\nTo evaluate the probabilities involving test results, we first need to find the probability of a positive test result for a deer from each subspecies, considering its specific disease prevalence. This uses the Law of Total Probability for each subspecies:\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D, S_i) P(D \\mid S_i) + P(T^+ \\mid D^c, S_i) P(D^c \\mid S_i)$$\nSince the test characteristics are independent of subspecies, $P(T^+ \\mid D, S_i) = P(T^+ \\mid D)$ and $P(T^+ \\mid D^c, S_i) = P(T^+ \\mid D^c)$.\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D) P(D \\mid S_i) + P(T^+ \\mid D^c) (1 - P(D \\mid S_i))$$\n\nFor Subspecies A:\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(1 - 0.02)$$\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(0.98)$$\n$$\nP(T^+ \\mid S_A) = 0.018 + 0.0392 = 0.0572\n$$\n\nFor Subspecies B:\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(1 - 0.06)$$\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(0.94)$$\n$$\nP(T^+ \\mid S_B) = 0.054 + 0.0376 = 0.0916\n$$\n\nFor Subspecies C:\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(1 - 0.15)$$\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(0.85)$$\n$$\nP(T^+ \\mid S_C) = 0.135 + 0.034 = 0.169\n$$\n\nNow, to find the overall probability that a randomly tested deer receives a positive result, we use the Law of Total Probability over the subspecies:\n$$P(T^+) = P(T^+ \\mid S_A)P(S_A) + P(T^+ \\mid S_B)P(S_B) + P(T^+ \\mid S_C)P(S_C)$$\n$$P(T^+) = (0.0572)(0.60) + (0.0916)(0.25) + (0.169)(0.15)$$\n$$P(T^+) = 0.03432 + 0.0229 + 0.02535$$\n$$P(T^+) = 0.08257$$\nThis is the base probability for many subsequent calculations."
     },
     {
-      "case_id": "DEMO MATH 13.H01",
-      "id": "demo-math-13-h01",
-      "title": "Binomial courier audit — with an obvious trap",
+      "case_id": "DEMO MATH 13.H02",
+      "id": "demo-math-13-h02",
+      "title": "Binomial courier audit — numbers only in the claims",
       "chapter": 13,
       "subsection": "13.5",
-      "context": "A night courier logs $n=50$ independent deliveries. Each is on time with probability $p=0.8$, independently. Let $X$ be the number of on-time deliveries, so $X\\sim\\mathrm{Bin}(50,0.8)$. Decide whether each claim is true or false.",
+      "context": "A night courier logs 50 independent deliveries. Each delivery is on time with probability 0.8, independently of the others. Let X be the number of on-time deliveries among the 50. Decide whether each claim is true or false.",
       "statements": [
-        "$\\mathbb{E}[X]=40$ and $\\mathrm{Var}(X)=8$.",
-        "$P(X=40)=\\binom{50}{40}(0.8)^{40}(0.2)^{10}$.",
-        "Because $40$ is the mean, it is also the unique mode, so $P(X=40)>P(X=k)$ for every $k\\neq 40$.",
-        "If the success probability rose to $p=1$, then $P(X=50)=1$ and $\\mathrm{Var}(X)=0$.",
-        "The standardised variable $\\dfrac{X-40}{\\sqrt{8}}$ has mean $0$ and variance $1$, and is exactly a standard normal random variable (not merely approximately)."
+        "The expected number of on-time deliveries is 40, and the variance of that count is 8.",
+        "The probability of exactly 40 on-time deliveries equals the binomial probability with n = 50, k = 40, success probability 0.8.",
+        "Because 40 is the mean, it must also be the single most probable value, strictly more likely than 39 and than 41.",
+        "If every delivery were certain to be on time, then the count would be 50 for sure and the variance would be 0.",
+        "After subtracting 40 and dividing by the square root of 8, the resulting number is exactly a draw from the standard normal distribution — not merely approximately."
       ],
       "answer_key": [
         true,
@@ -1032,15 +1032,15 @@
         true,
         false
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Mean, variance, and the pmf are routine. The traps are treating the mean as a unique mode, and claiming exact normality after standardising a discrete binomial.",
       "tactical_explanations": [
-        "**A.** → True\n\n$\\mathbb{E}[X]=np=40$ and $\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.8\\cdot 0.2=8$.\n\nSo the statement is True.",
-        "**B.** → True\n\nThat is exactly the binomial pmf at $k=40$.\n\nSo the statement is True.",
-        "**C.** → False\n\nFor $\\mathrm{Bin}(n,p)$ the mode sits near $(n+1)p$. Here $(51)(0.8)=40.8$, so $40$ and $41$ can share the modal mass. Equating \"mean\" with \"unique mode\" is the trap.\n\nSo the statement is False.",
-        "**D.** → True\n\nWith $p=1$, every delivery is on time: $X=50$ almost surely and the variance is $0$.\n\nSo the statement is True.",
-        "**E.** → False\n\nStandardising gives mean $0$ and variance $1$, but $X$ is still a discrete binomial random variable. It is not exactly $N(0,1)$; normality is only a large-$n$ approximation. That is the obvious trap.\n\nSo the statement is False."
-      ]
+        "**A.** → True\n\nExpected value is 50 × 0.8 = 40. Variance is 50 × 0.8 × 0.2 = 8.\n\nSo the statement is True.",
+        "**B.** → True\n\nThat is exactly the binomial probability mass at 40 successes in 50 trials with success chance 0.8.\n\nSo the statement is True.",
+        "**C.** → False\n\nFor a binomial count the mode sits near (n+1)p = 40.8, so 40 and 41 can share the top probability. The mean need not be a unique mode.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith success probability 1, every delivery is on time: the count is 50 almost surely and the variance is 0.\n\nSo the statement is True.",
+        "**E.** → False\n\nCentering and scaling gives mean 0 and variance 1, but the count is still a discrete binomial random variable. It is not exactly standard normal; normality is only a large-n approximation. That is the trap.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Binomial mean/variance/pmf in words and numbers; traps are unique-mode-from-mean and exact normality."
     }
   ]
 }
