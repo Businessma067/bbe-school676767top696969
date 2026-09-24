@@ -105,7 +105,7 @@ export const MOCK_EXAM_DEMO_POINTS_TOTAL =
   MOCK_EXAM_DEMO_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 export const MOCK_EXAM_DEMO_CONTENT_REV =
-  "2026-09-24a · 34q · free demo · fiscal-dominance English · listed math refs";
+  "2026-09-24b · 34q · free demo · hardest course math per chapter";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
