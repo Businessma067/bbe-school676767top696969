@@ -1164,12 +1164,11 @@ body.flashcard-swiping {
 }
 
 @keyframes study-tools-bubble-in {
-  0%,
-  12% {
+  0% {
     opacity: 0;
     transform: translateX(-0.35rem);
   }
-  28%,
+  18%,
   100% {
     opacity: 1;
     transform: translateX(0);
