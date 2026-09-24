@@ -99,7 +99,7 @@ export function BbeLandingPage() {
                 >
                   <span>Demo mock</span>
                   <span className="mt-0.5 text-[11px] font-medium text-exam-red/80">
-                    Free hard diagnostic
+                    Free after sign-up
                   </span>
                 </LocalizedLink>
                 <LocalizedLink

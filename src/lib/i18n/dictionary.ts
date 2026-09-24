@@ -90,6 +90,13 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Demo course": "Demo-Kurs",
     "Demo mock": "Demo-Mock",
     "Free hard diagnostic": "Kostenlose harte Diagnose",
+    "Free after sign-up": "Kostenlos nach Anmeldung",
+    "Sign in to take the demo mock": "Anmelden, um den Demo-Mock zu starten",
+    "The free demo course stays open without an account. The full timed demo mock needs a free registration first so we can save your attempt.":
+      "Der kostenlose Demo-Kurs bleibt ohne Konto offen. Für den timed Demo-Mock brauchst du zuerst eine kostenlose Registrierung, damit wir deinen Versuch speichern können.",
+    "Create a free account": "Kostenloses Konto erstellen",
+    "Or try the demo course without registering →":
+      "Oder den Demo-Kurs ohne Registrierung ausprobieren →",
     "50+ tasks for start": "50+ Aufgaben zum Start",
     "Explore Courses": "Kurse entdecken",
     "See all BBE School products": "Alle BBE-School-Produkte ansehen",
@@ -281,6 +288,13 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Demo course": "Демо-курс",
     "Demo mock": "Демо-мок",
     "Free hard diagnostic": "Безкоштовна складна діагностика",
+    "Free after sign-up": "Безкоштовно після реєстрації",
+    "Sign in to take the demo mock": "Увійди, щоб скласти демо-мок",
+    "The free demo course stays open without an account. The full timed demo mock needs a free registration first so we can save your attempt.":
+      "Безкоштовний демо-курс доступний без акаунта. Повний timed демо-мок потребує безкоштовної реєстрації, щоб зберегти спробу.",
+    "Create a free account": "Створити безкоштовний акаунт",
+    "Or try the demo course without registering →":
+      "Або спробуй демо-курс без реєстрації →",
     "50+ tasks for start": "50+ завдань для старту",
     "Explore Courses": "Переглянути курси",
     "See all BBE School products": "Усі продукти BBE School",

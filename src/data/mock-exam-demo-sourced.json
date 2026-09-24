@@ -292,148 +292,176 @@
     }
   ],
   "english": {
-    "passage": "(1) When public debt stocks rise faster than nominal GDP for several consecutive years, markets begin to price not only solvency risk but also the political temptation to lean on the monetary authority. Fiscal dominance denotes a regime in which the path of primary balances is treated as given, so that the central bank must ultimately accommodate debt servicing through lower real rates, financial repression, or outright purchases of government paper. The textbook opposite—monetary dominance—keeps the inflation objective first and forces the fiscal authority to adjust taxes or spending. Between those poles sits a grey zone that advanced economies occupied after the global financial crisis and again during the pandemic: large exceptional bond purchases framed as liquidity support, accompanied by repeated assurances that the purchases were temporary, sterilised in spirit if not always on the balance sheet, and unrelated to financing the Treasury.\n\n(2) Independence statutes were written precisely to raise the political cost of that accommodation. Operational independence typically covers instrument choice—policy rates, reserve requirements, the composition of the open-market book—while goal independence concerns the mandate itself. Even where statutes look strong on paper, credibility is an equilibrium outcome. Bond markets that believe a future government will rewrite the mandate, stack the board, or compel direct financing will demand higher term premia today. Conversely, a central bank that has spent years under-delivering on inflation may find that markets discount its promises even when the legal text is unchanged. Independence is therefore not a binary switch; it is a reputational asset that depreciates when policy repeatedly subordinates the inflation target to debt-service comfort.\n\n(3) Debt monetisation is often caricatured as the printing press funding a single extravagant budget. In modern practice it is usually quieter. A central bank can expand its balance sheet by purchasing secondary-market government bonds, credit the sellers' reserve accounts, and leave the Treasury free to place new primary issuance into a market that has just absorbed a large buyer. If the bank later rolls those holdings indefinitely, the consolidated public sector has permanently replaced interest-bearing debt held by the private sector with non-interest-bearing (or low-interest) reserves. Whether that sequence is labelled quantitative easing, monetary financing, or \"liquidity management\" depends less on the accounting labels than on whether the purchases are expected to be reversed and whether fiscal policy adjusts when inflation threatens. Economists disagree on thresholds, but few deny that open-ended secondary-market support can functionally mimic primary monetisation when markets treat the central bank as the residual buyer.\n\n(4) Critics of large-scale asset purchases emphasise distributional and financial-stability side effects: compressed term premia can fuel leverage in shadow banking, inflate asset prices unevenly, and blunt the signal that long rates normally send about scarcity of capital. Defenders reply that in a liquidity trap, with policy rates near the effective lower bound, such purchases were the least-bad way to prevent a collapse in aggregate demand and a self-fulfilling debt spiral. The empirical literature remains contested because identification is hard: crises that trigger QE also move fiscal balances, risk premia, and inflation expectations at the same time. What is less contested is the political economy lesson. Once a central bank has demonstrated that it can absorb large volumes of sovereign paper without an immediate inflation spike, the fiscal authority faces a weaker constraint on primary deficits—until inflation returns and the same institution must tighten into a stock of debt that has grown under its own earlier support.\n\n(5) For applicants sitting a business-economics entrance exam, the practical takeaway is not to memorise slogans but to track the assignment of residual adjustment. Ask who is forced to move when debt dynamics look unsustainable: the finance ministry through primary surplus, or the monetary authority through accommodation. Ask whether secondary-market purchases are time-limited and paired with a credible exit, or whether markets price them as a standing put. And notice that \"independence\" without a hard budget constraint elsewhere in the polity is always provisional. Statutes raise the cost of capture; they do not abolish the incentive to capture when the alternative is politically costly consolidation.",
-    "passageTitle": "Fiscal Dominance, Central-Bank Independence, and the Quiet Mechanics of Debt Monetisation",
+    "passage": "(1) In 1928, Alexander Fleming observed that a mould contaminating one of his bacterial cultures had destroyed the surrounding bacteria, a chance discovery that initially attracted little practical attention. It was not until the early 1940s, when researchers Howard Florey and Ernst Chain successfully purified and stabilised the compound, that penicillin became viable for clinical use. Allied manufacturers subsequently mass-produced it during the Second World War, saving countless soldiers from infections that would previously have been fatal.\n\n(2) The years that followed were widely celebrated as the beginning of an \"antibiotic era,\" during which bacterial infections that had killed for centuries suddenly became routinely treatable. Yet the celebration proved premature: by 1947, only a few years after penicillin entered widespread clinical use, researchers had already identified strains of Staphylococcus bacteria capable of resisting its effects.\n\n(3) The scale of the resulting problem has grown considerably. A large-scale global study published in 2019 estimated that bacterial antimicrobial resistance was directly responsible for approximately 1.27 million deaths that year, with a further 4.95 million deaths associated with resistant infections more broadly, a toll exceeding that of several long-feared infectious diseases.\n\n(4) Human clinical use is not the only driver of this problem. In some countries, an estimated 70% of medically important antibiotics, measured by volume, are used in livestock farming, primarily to promote growth and prevent disease among densely housed animals rather than to treat animals that are already sick. This agricultural use contributes substantially to the environmental spread of resistance genes.\n\n(5) At the biological level, resistance can arise through spontaneous mutation within a single bacterial population, but it can also spread through horizontal gene transfer, in which mobile genetic elements called plasmids carry resistance genes between entirely different bacterial species, not merely within one.\n\n(6) Economic incentives have compounded the biological challenge. Antibiotics are typically taken for days or weeks to cure an acute infection, unlike medications for chronic conditions that patients may take for years, making antibiotics considerably less profitable to develop. Partly as a result, many major pharmaceutical companies withdrew from antibiotic research between the 1990s and the 2010s, and only one genuinely new class of antibiotics has reached clinical practice since 1987, a prolonged gap researchers have termed the \"discovery void.\"\n\n(7) In response, the World Health Organization adopted its Global Action Plan on Antimicrobial Resistance in 2015. In the years that followed, policymakers and researchers proposed a range of \"push\" and \"pull\" incentive models, including subsidies for early-stage research and guaranteed market-entry rewards for successfully developed drugs.\n\n(8) A further structural paradox complicates these efforts. Once a new antibiotic is developed, physicians and health authorities typically insist it be used only sparingly, precisely in order to delay the emergence of resistance and preserve its long-term effectiveness. This appropriate caution, however, directly undermines the sales-based revenue models that would normally reward a pharmaceutical company for its investment, since a drug deliberately kept in reserve generates little revenue.\n\n(9) Whether antimicrobial resistance constitutes a slow-moving but existential global threat demanding a fundamental restructuring of how drug development is funded, or a serious yet ultimately manageable problem solvable through incremental policy adjustments, remains an actively contested question among global health experts and economists alike.",
+    "passageTitle": "The Antibiotic Discovery Void and the Economics of Resistance",
     "tasks": [
       {
-        "case_id": "ENG DEMO.T.01",
-        "id": "en-demo-t-01",
-        "title": "Task 1 — Regime definitions",
-        "subsection": "demo.t",
-        "context": "Based on paragraphs (1)–(2), decide whether each statement is true or false.",
-        "kind": "text",
-        "with_passage": true,
-        "difficulty_level": "5/5",
+        "case_id": "ENG T.7.05",
+        "id": "en-t-7-05",
+        "title": "Task 5",
+        "subsection": "t.7",
+        "context": "Each statement describes a piece of reasoning inspired by the passage and names a specific logical fallacy it supposedly commits, or claims it involves no fallacy at all. Decide if the fallacyidentification (or lack thereof) is accurate.",
         "statements": [
-          "Fiscal dominance, as defined in the passage, treats the path of primary balances as given and requires the central bank to accommodate debt servicing.",
-          "Monetary dominance, in the passage's framing, keeps the inflation objective first and forces fiscal adjustment through taxes or spending.",
-          "The passage claims that post-crisis and pandemic bond purchases sat in a pure monetary-dominance regime with no grey-zone ambiguity.",
-          "Operational independence in the passage covers instrument choice such as policy rates and the open-market book, while goal independence concerns the mandate itself.",
-          "The passage treats central-bank independence as a binary legal switch that markets ignore once statutes are written."
+          "\"Since resistant strains appeared soon after penicillin's introduction, all resistance today must be caused solely by antibiotic use\" commits a single-cause fallacy, since the passage also cites mutation, horizontal gene transfer, and agricultural use as separate contributing factors.",
+          "\"Firms exited antibiotic research once profits declined, therefore declining profit was the only reason any firm ever left the field\" commits a single-cause fallacy, since the passage also cites the stewardship paradox as a separate structural factor.",
+          "\"Because the WHO adopted its action plan and incentive proposals followed shortly afterward, the plan alone must have directly caused every proposal\" commits circular reasoning, since the conclusion simply restates the premise without adding support.",
+          "\"Because agricultural antibiotic use is substantial, resistance must originate exclusively from agriculture, with clinical use playing no role\" commits a false dichotomy, since the passage discusses both pathways as contributing.",
+          "\"Since resistance genes can transfer between bacterial species via plasmids, resistance originating in one population can plausibly spread beyond it\" is a valid inference directly supported by the passage, not a fallacy."
         ],
         "answer_key": [
           true,
           true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Since resistant strains appeared soon after penicillin's introduction, all resistance today must be caused solely by antibiotic use\" commits a single-cause fallacy, since the passage also cites mutation, horizontal gene transfer, and agricultural use as separate contributing factors.**\n\nThe quoted leap treats early clinical resistance as the sole cause of all resistance now. Paragraphs 4–5 also name agricultural livestock use, spontaneous mutation, and cross-species plasmid transfer as distinct contributors, so labeling a \"solely\" claim as single-cause is accurate. Notice that the item asks whether the fallacy label is correct, not whether the quoted argument is persuasive.\n\n**Tip:** One named cause plus \"solely/all\" usually signals single-cause overreach when the passage lists several drivers.\n\nParagraph 4 opens by stating outright that clinical use \"is not the only driver,\" which is as direct a refutation of a single-cause claim as a passage can give. The quoted argument also starts from a true premise, a reminder that a fallacy lives in the inference rather than in the facts it begins with.\n\nThe fallacy label fits the oversimplified \"solely\" claim against the passage’s multiple factors, so the statement holds.",
+          "**B) \"Firms exited antibiotic research once profits declined, therefore declining profit was the only reason any firm ever left the field\" commits a single-cause fallacy, since the passage also cites the stewardship paradox as a separate structural factor.**\n\nParagraph 6 links weak profits to industry exit, but Paragraph 8 adds a separate stewardship paradox: sparingly used new drugs undermine sales-based revenue. Treating declining profit as the \"only\" reason ignores that second structure, so single-cause is the right label. The stewardship problem is presented as a \"further structural paradox,\" language that explicitly marks it as an additional factor rather than a restatement of the first.\n\n**Tip:** Words like \"further\" and \"in addition\" are the passage telling you a second cause is on the table.\n\nParagraph 6 itself hedges with \"partly as a result,\" so even the profit explanation is offered as partial. An argument that upgrades a partial cause to the only cause has overreached by the passage’s own wording.\n\nProfit decline is one driver among others in the passage, so the single-cause identification holds.",
+          "**C) \"Because the WHO adopted its action plan and incentive proposals followed shortly afterward, the plan alone must have directly caused every proposal\" commits circular reasoning, since the conclusion simply restates the premise without adding support.**\n\nThe quoted move is from \"plan, then proposals\" to \"plan caused every proposal\" — temporal succession treated as sole causation (post hoc), not a circle that restates the same claim as its own proof. Circular reasoning would recycle the conclusion as the premise; here the error is mislabeled. The argument does contain a real flaw, which is what makes the wrong label tempting.\n\n**Trap:** Post hoc sequence arguments are often miscoded as \"circular\" when the real defect is cause-from-timing.\n\nThe diagnostic question for circularity is whether the premise already assumes the conclusion; here the premise is a neutral fact about ordering that Paragraph 7 supports. Since sequence and cause are genuinely different claims, the reasoning moves forward illegitimately rather than looping back on itself.\n\nThe argument is post hoc, not circular, so this fallacy identification fails.",
+          "**D) \"Because agricultural antibiotic use is substantial, resistance must originate exclusively from agriculture, with clinical use playing no role\" commits a false dichotomy, since the passage discusses both pathways as contributing.**\n\nParagraph 4 opens by denying that \"human clinical use is… the only driver,\" then adds agricultural volume as a further pathway. Forcing \"exclusively… agriculture\" versus \"clinical use playing no role\" erases that both-and picture, so false dichotomy is correct. The quoted argument turns a statement about scale into a statement about exclusivity, which is a much stronger claim.\n\n**Tip:** \"Exclusively / no role\" language often collapses two passage pathways into a fake either/or.\n\nParagraph 4 says agricultural use \"contributes substantially,\" and contributing substantially is precisely not the same as accounting for everything. The passage frames the two routes as additive, so treating them as mutually exclusive options misreads the relationship.\n\nThe exclusive-agriculture claim wrongly forces one path, so the false-dichotomy label holds.",
+          "**E) \"Since resistance genes can transfer between bacterial species via plasmids, resistance originating in one population can plausibly spread beyond it\" is a valid inference directly supported by the passage, not a fallacy.**\n\nParagraph 5’s plasmid transfer \"between entirely different bacterial species\" licenses the modest inference that resistance need not stay inside one population. Calling that sound reading a fallacy would invent an error the passage does not create. The hedge \"plausibly\" keeps the conclusion no stronger than the mechanism the passage describes.\n\n**Tip:** Not every item in a fallacy set contains a fallacy — some test whether you can recognise a sound inference.\n\nThe inference stays within the scope of its premise: crossing species boundaries is a larger step than spreading beyond one population, so the conclusion is weaker than what the passage already states. Inferences that ask for less than the evidence supplies are the safest kind.\n\nCross-species plasmid transfer supports the modest spread inference, so treating it as valid — not fallacious — holds."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.7.03",
+        "id": "en-t-7-03",
+        "title": "Task 3",
+        "subsection": "t.7",
+        "context": "Statements test close reading comprehension in paragraph order, with one numeric statement woven in at its correct position.",
+        "statements": [
+          "The WHO adopted its Global Action Plan on Antimicrobial Resistance in 2015.",
+          "\"Push\" and \"pull\" incentive models are described as identical mechanisms with no meaningful distinction drawn between them.",
+          "Physicians are described as typically insisting new antibiotics be used sparingly in order to preserve their long-term effectiveness.",
+          "This deliberate caution is described as directly reinforcing, rather than undermining, sales-based revenue models for pharmaceutical companies.",
+          "The passage concludes by presenting AMR's ultimate severity as a fully settled question among experts."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The WHO adopted its Global Action Plan on Antimicrobial Resistance in 2015.**\n\nParagraph 7 states that \"the World Health Organization adopted its Global Action Plan on Antimicrobial Resistance in 2015.\" Institution, plan name, and year line up. The verb \"adopted\" is also retained, which keeps the statement about a formal decision rather than about drafting or implementing the plan.\n\n**Tip:** For institution-plus-date items, verify all three parts separately: who acted, what the thing was called, and when.\n\nAbbreviating \"World Health Organization\" to \"the WHO\" is a purely surface change and does not touch the factual content. Items like this are usually true, and the useful habit is confirming quickly rather than hunting for a trap that is not there.\n\nThe 2015 WHO plan adoption in Paragraph 7 matches the statement, so the claim holds.",
+          "**B) \"Push\" and \"pull\" incentive models are described as identical mechanisms with no meaningful distinction drawn between them.**\n\nParagraph 7 introduces \"a range of 'push' and 'pull' incentive models,\" then exemplifies them differently: subsidies for early-stage research versus \"guaranteed market-entry rewards.\" Identical mechanisms with \"no meaningful distinction\" is invented. The two examples sit on opposite ends of the development pipeline, one funding work before it starts and one paying out after a drug succeeds.\n\n**Trap:** Treating two named categories as synonyms ignores the paired examples that separate them.\n\nThe passage does not define push and pull explicitly, which is what makes this item tempting, but the parallel examples supply the contrast implicitly. Paired terms joined by \"and\" and illustrated by contrasting cases are being distinguished, not equated.\n\nThe passage presents push and pull as distinct incentive types, so the claim fails.",
+          "**C) Physicians are described as typically insisting new antibiotics be used sparingly in order to preserve their long-term effectiveness.**\n\nParagraph 8 says physicians and health authorities \"typically insist it be used only sparingly, precisely in order to delay the emergence of resistance and preserve its long-term effectiveness.\" Motive and practice both match. The statement keeps \"typically,\" so the behaviour remains a general norm rather than an absolute rule.\n\n**Tip:** When a purpose clause (\"in order to…\") is copied along with the action, the statement is reporting both what is done and why.\n\nThe passage names two aims — delaying resistance and preserving effectiveness — and the statement cites the second. Mentioning one of two stated purposes narrows the claim without contradicting it, so the item stays faithful.\n\nThe stewardship sparingly-use claim in Paragraph 8 matches the statement, so the claim holds.",
+          "**D) This deliberate caution is described as directly reinforcing, rather than undermining, sales-based revenue models for pharmaceutical companies.**\n\nParagraph 8 says the caution \"directly undermines the sales-based revenue models\" that would reward firms, because reserve use \"generates little revenue.\" \"Reinforcing\" reverses the commercial effect. The statement borrows the passage’s own adverb \"directly\" and even its \"rather than\" framing, which makes the substituted verb the only moving part.\n\n**Trap:** Flipping undermines → reinforcing keeps the stewardship language while killing the paradox.\n\nParagraph 8 is explicitly labelled a \"structural paradox,\" and a paradox requires the two forces to pull against each other. If caution reinforced revenue there would be no tension left for the paragraph to describe.\n\nThe statement contradicts Paragraph 8’s \"undermines…sales-based revenue models,\" so it fails against the passage.",
+          "**E) The passage concludes by presenting AMR's ultimate severity as a fully settled question among experts.**\n\nParagraph 9 frames severity as \"an actively contested question among global health experts and economists alike,\" not a closed consensus. \"Fully settled\" erases that open dispute. The final paragraph is built as a pair of alternatives — existential threat versus manageable problem — and it declines to choose between them.\n\n**Trap:** Contested / unsettled closings are often rewritten as confident settled verdicts.\n\nThe grammar of that last sentence is the giveaway: a long \"whether… or…\" subject followed by \"remains an actively contested question.\" A sentence whose main verb reports ongoing disagreement cannot support a claim of settled expert opinion.\n\nThe ending treats AMR’s severity as actively contested, so the \"settled\" claim fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.7.04",
+        "id": "en-t-7-04",
+        "title": "Task 4",
+        "subsection": "t.7",
+        "context": "Statements test whether the relative order of events described across the passage has been correctly identified.",
+        "statements": [
+          "Fleming's initial discovery occurred before Florey and Chain's purification work made penicillin clinically viable.",
+          "Resistant Staphylococcus strains were identified before penicillin entered widespread clinical use.",
+          "The pharmaceutical industry's withdrawal from antibiotic research (1990s–2010s) began before the \"discovery void\" following 1987 could have been observed.",
+          "The WHO's Global Action Plan was adopted before push-and-pull incentive models were proposed in response to it.",
+          "The 2019 global mortality study was published before Fleming's original 1928 observation."
+        ],
+        "answer_key": [
+          true,
+          false,
           false,
           true,
           false
         ],
         "tactical_explanations": [
-          "Paragraph (1) defines fiscal dominance as a regime in which primary balances are treated as given, so the central bank must ultimately accommodate debt servicing through lower real rates, financial repression, or purchases of government paper.\n\nSo the statement is True.",
-          "The same paragraph sets monetary dominance as the opposite pole: inflation objective first, with the fiscal authority forced to adjust taxes or spending.\n\nSo the statement is True.",
-          "Paragraph (1) places advanced economies after the global financial crisis and during the pandemic in a grey zone between the poles—large exceptional purchases framed as liquidity support—not in pure monetary dominance without ambiguity.\n\nSo the statement is False.",
-          "Paragraph (2) distinguishes operational independence (instrument choice: rates, reserve requirements, open-market book composition) from goal independence (the mandate itself).\n\nSo the statement is True.",
-          "Paragraph (2) explicitly rejects the binary-switch view: independence is a reputational asset that depreciates when policy subordinates the inflation target, not a switch markets ignore once statutes exist.\n\nSo the statement is False."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.T.02",
-        "id": "en-demo-t-02",
-        "title": "Task 2 — Monetisation mechanics",
-        "subsection": "demo.t",
-        "context": "Based on paragraph (3), decide whether each statement is true or false.",
+          "**A) Fleming's initial discovery occurred before Florey and Chain's purification work made penicillin clinically viable.**\n\nParagraph 1 places Fleming’s observation in 1928 and Florey and Chain’s purification that made penicillin clinically viable in \"the early 1940s.\" 1928 precedes the early 1940s, so the relative order is right. The paragraph reinforces that ordering with \"It was not until the early 1940s,\" a construction that only makes sense if something earlier had already happened.\n\n**Tip:** For ordering items, anchor each event to its stated year first, then compare the numbers rather than the sentence order.\n\nSentence order and chronological order happen to agree here, which is the easy case. When they diverge, the dates and time markers rule, not the order in which the paragraph mentions the events.\n\nFleming’s discovery comes before the purification milestone in Paragraph 1, so the chronology holds.",
+          "**B) Resistant Staphylococcus strains were identified before penicillin entered widespread clinical use.**\n\nParagraph 2 says resistant Staphylococcus strains were identified \"only a few years after penicillin entered widespread clinical use.\" Clinical use therefore came first; resistance identification followed. The word \"after\" in the passage fixes the direction, and the statement simply substitutes \"before\" for it.\n\n**Trap:** Swapping \"before\" and \"after\" on a short lag is a frequent chronology trap.\n\nA short interval makes the reversal feel harmless, but the causal logic depends on it: widespread use created the selective pressure under which resistant strains were then noticed. Reversing the order would make the paragraph’s point about premature celebration incoherent.\n\nThe statement reverses Paragraph 2’s \"few years after\" sequence, so the chronology fails.",
+          "**C) The pharmaceutical industry's withdrawal from antibiotic research (1990s–2010s) began before the \"discovery void\" following 1987 could have been observed.**\n\nParagraph 6 dates the discovery void from 1987 (\"only one genuinely new class… since 1987\") and places industry withdrawal \"between the 1990s and the 2010s.\" The post-1987 gap is already underway before and during that withdrawal window; the withdrawal cannot begin before a void \"following 1987\" could even be noticed. The passage also links the two with \"partly as a result,\" which presupposes that the economic conditions preceded the exit.\n\n**Trap:** Putting 1990s exit before a 1987-start gap reverses which span can be observed first.\n\nThe test here is which span opens first, not which is described first in the paragraph. A gap dated from 1987 is already several years old by the time the 1990s begin, so it is observable before the withdrawal window opens.\n\nThe 1987 void precedes the 1990s–2010s withdrawal in Paragraph 6, so this order fails.",
+          "**D) The WHO's Global Action Plan was adopted before push-and-pull incentive models were proposed in response to it.**\n\nParagraph 7 dates the WHO plan to 2015, then says \"in the years that followed, policymakers and researchers proposed\" push and pull incentives. Adoption therefore precedes those proposals. The phrase \"in response\" in the statement also matches the paragraph’s framing, which presents the proposals as part of the reaction the plan set in motion.\n\n**Tip:** Phrases like \"in the years that followed\" are explicit ordering signals — treat them as dates.\n\nOnly one absolute year appears here, so the sequencing rests entirely on that transitional phrase. Reading it carefully is what lets you settle the item without needing a second date.\n\nThe plan-first, incentives-later order in Paragraph 7 matches the statement, so the chronology holds.",
+          "**E) The 2019 global mortality study was published before Fleming's original 1928 observation.**\n\nParagraph 1 dates Fleming to 1928; Paragraph 3 dates the mortality study to 2019. Nearly a century separates them, with Fleming first. Both dates are stated outright, so no inference is needed — only a comparison of the two numbers.\n\n**Trap:** Cross-paragraph year swaps are easy to miss when both dates feel \"famous.\"\n\nThe two facts sit in different paragraphs, which is what the item exploits: readers who check each paragraph separately may never place the dates side by side. Collecting every year onto one mental timeline before answering removes the difficulty.\n\nCalling 2019 earlier than 1928 reverses the passage timeline, so the chronology fails."
+        ],
         "kind": "text",
         "with_passage": true,
-        "difficulty_level": "5/5",
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.7.01",
+        "id": "en-t-7-01",
+        "title": "Task 1",
+        "subsection": "t.7",
+        "context": "Statements test close reading comprehension in paragraph order, with one numeric statement woven in at its correct position.",
         "statements": [
-          "The passage argues that modern debt monetisation is usually quieter than the caricature of a printing press funding one extravagant budget.",
-          "Secondary-market purchases that credit sellers' reserve accounts can leave the Treasury freer to place new primary issuance into a market that has just absorbed a large buyer.",
-          "If holdings are rolled indefinitely, the consolidated public sector permanently replaces private interest-bearing debt with reserves that are non-interest-bearing or low-interest.",
-          "The passage says accounting labels alone—QE versus monetary financing—are decisive regardless of exit expectations and fiscal adjustment.",
-          "Open-ended secondary-market support can functionally mimic primary monetisation when markets treat the central bank as the residual buyer."
+          "Fleming's initial 1928 observation is described as having immediately attracted widespread practical attention and clinical use.",
+          "Florey and Chain are credited with purifying and stabilising penicillin, enabling its clinical use in the early 1940s.",
+          "Resistant strains of Staphylococcus were identified by 1947, only a few years after penicillin's widespread clinical introduction.",
+          "The 2019 global study estimated that bacterial resistance was directly responsible for approximately 1.27 million deaths that year, with 4.95 million deaths associated with resistant infections more broadly.",
+          "The passage describes the toll of antimicrobial resistance as smaller than that of several long-feared infectious diseases."
         ],
         "answer_key": [
-          true,
-          true,
-          true,
-          false,
-          true
-        ],
-        "tactical_explanations": [
-          "Paragraph (3) opens by contrasting the printing-press caricature with quieter modern practice.\n\nSo the statement is True.",
-          "The paragraph describes purchases that credit reserve accounts and leave the Treasury free to place new primary issuance into a market that has just absorbed a large buyer.\n\nSo the statement is True.",
-          "Indefinite rolling replaces private interest-bearing debt with non-interest-bearing or low-interest reserves at the consolidated public-sector level.\n\nSo the statement is True.",
-          "The passage states that labels depend less on accounting names than on whether purchases are expected to be reversed and whether fiscal policy adjusts when inflation threatens—so labels alone are not decisive.\n\nSo the statement is False.",
-          "The closing sentence of (3) says open-ended secondary support can functionally mimic primary monetisation when markets treat the central bank as the residual buyer.\n\nSo the statement is True."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.T.03",
-        "id": "en-demo-t-03",
-        "title": "Task 3 — Side effects and politics",
-        "subsection": "demo.t",
-        "context": "Based on paragraphs (4)–(5), decide whether each statement is true or false.",
-        "kind": "text",
-        "with_passage": true,
-        "difficulty_level": "5/5",
-        "statements": [
-          "Critics emphasise compressed term premia, leverage in shadow banking, uneven asset-price inflation, and a blunted scarcity signal in long rates.",
-          "Defenders argue that near the effective lower bound, large-scale purchases were the least-bad way to prevent demand collapse and a self-fulfilling debt spiral.",
-          "The passage treats the empirical QE literature as settled because identification problems are trivial in crises.",
-          "Once a central bank has absorbed large sovereign volumes without an immediate inflation spike, the fiscal authority faces a weaker constraint on primary deficits—until inflation returns.",
-          "The exam-facing takeaway is to track who must adjust when debt dynamics look unsustainable: finance ministry via primary surplus, or monetary authority via accommodation."
-        ],
-        "answer_key": [
-          true,
-          true,
           false,
           true,
-          true
+          true,
+          true,
+          false
         ],
         "tactical_explanations": [
-          "Paragraph (4) lists exactly those critic concerns: compressed term premia, shadow-banking leverage, uneven asset prices, and blunted long-rate scarcity signals.\n\nSo the statement is True.",
-          "Defenders' reply in (4) matches the liquidity-trap / ELB least-bad argument against demand collapse and a debt spiral.\n\nSo the statement is True.",
-          "The passage says the empirical literature remains contested because identification is hard when crises move fiscal balances, risk premia, and expectations together—not that it is settled.\n\nSo the statement is False.",
-          "Paragraph (4) states the political-economy lesson: demonstrated absorption without an immediate inflation spike weakens the fiscal primary-deficit constraint until inflation returns.\n\nSo the statement is True.",
-          "Paragraph (5) frames the practical takeaway as tracking residual adjustment between the finance ministry and the monetary authority.\n\nSo the statement is True."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.T.04",
-        "id": "en-demo-t-04",
-        "title": "Task 4 — Inference traps",
-        "subsection": "demo.t",
-        "context": "Based on the full passage, decide whether each statement is true or false.",
+          "**A) Fleming's initial 1928 observation is described as having immediately attracted widespread practical attention and clinical use.**\n\nParagraph 1 says Fleming’s chance discovery \"initially attracted little practical attention,\" and only became clinically viable after Florey and Chain’s early-1940s purification work. Immediate widespread attention and clinical use is the opposite of that timeline. The paragraph deliberately builds a two-stage story: an accidental observation in 1928, then a long pause before anyone could turn it into medicine.\n\n**Trap:** Turning \"little\" early interest into \"immediate\" practical success is a classic flip of the discovery story.\n\nNotice that the passage separates \"discovery\" from \"clinical use\" by roughly fifteen years, and the adverb \"initially\" is the word doing that work. Whenever a statement compresses a staged timeline into a single instant, check the time markers before the verdict.\n\nThe claim reverses Paragraph 1’s \"little practical attention,\" so it fails against the passage.",
+          "**B) Florey and Chain are credited with purifying and stabilising penicillin, enabling its clinical use in the early 1940s.**\n\nParagraph 1 states that \"researchers Howard Florey and Ernst Chain successfully purified and stabilised the compound,\" making penicillin \"viable for clinical use\" in \"the early 1940s.\" The statement restates that credit without changing the agents or the date window. Both verbs — purified and stabilised — survive the paraphrase intact, and no third party is smuggled in as the responsible researcher.\n\n**Tip:** When names, verbs, and decade match the paragraph, a faithful paraphrase stays true.\n\nThe passage’s construction \"It was not until… that penicillin became viable\" is what licenses \"enabling\": the clinical viability is presented as a consequence of their work. A true paraphrase can restructure that sentence freely so long as the causal direction stays the same.\n\nParagraph 1’s purification credit matches the statement, so the claim holds.",
+          "**C) Resistant strains of Staphylococcus were identified by 1947, only a few years after penicillin's widespread clinical introduction.**\n\nParagraph 2 reports that \"by 1947, only a few years after penicillin entered widespread clinical use, researchers had already identified strains of Staphylococcus bacteria capable of resisting its effects.\" Date, organism, and \"few years after\" sequencing all align. The statement even preserves the direction of the lag, keeping widespread use first and identification second.\n\n**Tip:** When a date, an organism name, and a sequencing phrase all survive the rewrite unchanged, there is no room left for a hidden flip.\n\nThe word \"already\" in the passage carries the paragraph’s argument — that the celebration was premature — but it adds emphasis rather than new content, so dropping it does not alter the factual claim.\n\nThe 1947 Staphylococcus resistance timeline in Paragraph 2 matches the statement, so the claim holds.",
+          "**D) The 2019 global study estimated that bacterial resistance was directly responsible for approximately 1.27 million deaths that year, with 4.95 million deaths associated with resistant infections more broadly.**\n\nParagraph 3 gives both figures in order: \"approximately 1.27 million deaths\" directly, \"with a further 4.95 million deaths associated with resistant infections more broadly.\" The statement copies those quantities without swapping roles. The smaller figure stays attached to direct responsibility and the larger one to the broader association, which is exactly how the study is reported.\n\n**Tip:** Keep \"directly responsible\" separate from the larger \"associated\" total — both numbers appear in the same sentence.\n\nA common variant of this item exchanges the two numbers, so read the qualifier attached to each figure rather than checking that the digits appear somewhere. Here \"approximately\" and \"a further\" are also preserved, keeping the estimate appropriately hedged.\n\nThe 2019 mortality pair in Paragraph 3 matches the statement, so the claim holds.",
+          "**E) The passage describes the toll of antimicrobial resistance as smaller than that of several long-feared infectious diseases.**\n\nParagraph 3 says the AMR toll is \"exceeding that of several long-feared infectious diseases,\" not falling short of them. \"Smaller than\" reverses the comparison word that decides the item. Everything else in the statement — the toll, the comparison class of long-feared diseases — is copied faithfully, which is what makes the single reversed word easy to overlook.\n\n**Trap:** Direction words like exceeding / smaller are frequent quantity traps beside the big death figures.\n\nThe comparative is the whole point of the sentence: the paragraph cites 1.27 and 4.95 million precisely to argue that AMR outranks better-known killers. Reading only the numbers and skipping the comparative leaves you with no way to settle the item.\n\nThe statement flips Paragraph 3’s \"exceeding\" comparison, so it fails against the passage."
+        ],
         "kind": "text",
         "with_passage": true,
-        "difficulty_level": "5/5",
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.7.02",
+        "id": "en-t-7-02",
+        "title": "Task 2",
+        "subsection": "t.7",
+        "context": "Statements test close reading comprehension in paragraph order, with one numeric statement woven in at its correct position.",
         "statements": [
-          "Bond markets that expect future mandate rewriting or board stacking will demand higher term premia today, according to paragraph (2).",
-          "The passage claims sterilisation in spirit was always matched by full sterilisation on every post-crisis balance sheet.",
-          "Statutes raise the cost of capture but do not abolish the incentive to capture when consolidation is politically costly.",
-          "A standing put priced by markets is presented as equivalent to a clearly time-limited purchase programme with a credible exit.",
-          "A central bank that has under-delivered on inflation may see markets discount its promises even if the legal text is unchanged."
+          "An estimated 70% of medically important antibiotics, by volume, are used in livestock farming in some countries.",
+          "Agricultural antibiotic use is described as primarily aimed at treating animals that are already sick, rather than at growth promotion or disease prevention.",
+          "Horizontal gene transfer is described as capable of moving resistance genes only within a single bacterial species, never between different species.",
+          "Antibiotics are described as less profitable to develop than chronic disease medications, partly because they are typically taken only briefly.",
+          "Only one genuinely new class of antibiotics is described as having reached clinical practice since 1987."
         ],
         "answer_key": [
           true,
           false,
-          true,
           false,
+          true,
           true
         ],
         "tactical_explanations": [
-          "Paragraph (2) states that markets expecting mandate rewriting, board stacking, or compelled direct financing demand higher term premia today.\n\nSo the statement is True.",
-          "Paragraph (1) says purchases were framed as sterilised in spirit if not always on the balance sheet—so full on-balance-sheet sterilisation is not claimed.\n\nSo the statement is False.",
-          "Paragraph (5) ends: statutes raise the cost of capture; they do not abolish the incentive when the alternative is costly consolidation.\n\nSo the statement is True.",
-          "Paragraph (5) contrasts time-limited purchases paired with a credible exit against markets pricing purchases as a standing put—they are not treated as equivalent.\n\nSo the statement is False.",
-          "Paragraph (2) notes that under-delivery on inflation can lead markets to discount promises even when the legal text is unchanged.\n\nSo the statement is True."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.T.05",
-        "id": "en-demo-t-05",
-        "title": "Task 5 — Cross-paragraph synthesis",
-        "subsection": "demo.t",
-        "context": "Based on the full passage, decide whether each statement is true or false.",
+          "**A) An estimated 70% of medically important antibiotics, by volume, are used in livestock farming in some countries.**\n\nParagraph 4 states that \"in some countries, an estimated 70% of medically important antibiotics, measured by volume, are used in livestock farming.\" Scope (\"some countries\"), share, and volume basis all match. The statement also keeps \"estimated,\" so the figure stays a projection rather than hardening into a global fact.\n\n**Tip:** Check the three hedges together — \"some countries,\" \"estimated,\" and \"by volume\" — because dropping any one of them would overstate the claim.\n\nThe phrase \"measured by volume\" matters because a share of total tonnage is not the same as a share of prescriptions or doses. The statement carries that qualifier over, so the measurement basis is unchanged.\n\nThe livestock-volume estimate in Paragraph 4 matches the statement, so the claim holds.",
+          "**B) Agricultural antibiotic use is described as primarily aimed at treating animals that are already sick, rather than at growth promotion or disease prevention.**\n\nParagraph 4 says agricultural use is \"primarily to promote growth and prevent disease among densely housed animals rather than to treat animals that are already sick.\" The statement swaps primary and secondary purposes. Every noun in the list survives; only the two sides of the \"rather than\" contrast have changed places.\n\n**Trap:** Reversing \"primarily… rather than…\" turns the farming motivation on its head while keeping familiar nouns.\n\nThe structure \"primarily X rather than Y\" always ranks two purposes, so the reading test is which item sits before the connective. Here the passage puts growth promotion and disease prevention first, which is precisely what the statement demotes.\n\nThe claim reverses Paragraph 4’s growth/prevention priority, so it fails against the passage.",
+          "**C) Horizontal gene transfer is described as capable of moving resistance genes only within a single bacterial species, never between different species.**\n\nParagraph 5 explains that plasmids \"carry resistance genes between entirely different bacterial species, not merely within one.\" \"Only within a single species\" is the opposite limit. The passage even anticipates the misreading with its closing clause, which exists specifically to rule out the within-one-species restriction.\n\n**Trap:** Narrowing \"between different species\" to \"only within one\" flips the biological point of horizontal transfer.\n\nParagraph 5 sets up a contrast between two routes: spontaneous mutation inside one population and horizontal transfer across populations. Collapsing the second route into the first erases the distinction the whole sentence was built to draw.\n\nThe statement contradicts Paragraph 5’s cross-species plasmid spread, so it fails against the passage.",
+          "**D) Antibiotics are described as less profitable to develop than chronic disease medications, partly because they are typically taken only briefly.**\n\nParagraph 6 contrasts short antibiotic courses (\"days or weeks\") with chronic drugs patients \"may take for years,\" concluding antibiotics are \"considerably less profitable to develop.\" Brief use is the stated profit rationale. The hedge \"partly\" is also fair, since the paragraph presents duration as one input into the profitability picture rather than the only one.\n\n**Tip:** A causal paraphrase is safe when the text itself supplies the link — here the participial \"making antibiotics considerably less profitable.\"\n\nThe comparison class matters as much as the cause: the passage measures antibiotics against chronic-condition medicines, not against drugs in general, and the statement keeps that same benchmark.\n\nParagraph 6’s short-course profit logic matches the statement, so the claim holds.",
+          "**E) Only one genuinely new class of antibiotics is described as having reached clinical practice since 1987.**\n\nParagraph 6 says \"only one genuinely new class of antibiotics has reached clinical practice since 1987,\" the gap later labeled the \"discovery void.\" The count and start year are exact. The statement also preserves \"class,\" which is a much coarser unit than an individual drug and is what makes the figure so striking.\n\n**Tip:** Watch the unit of counting — one new class is not the same as one new antibiotic, and swapping them would break the claim.\n\nThe qualifier \"genuinely new\" excludes derivatives of existing families, so the sentence is narrower than a blanket statement about approvals. Keeping that adjective is what allows the statement to stay faithful.\n\nThe single-class-since-1987 claim in Paragraph 6 matches the statement, so the claim holds."
+        ],
         "kind": "text",
         "with_passage": true,
-        "difficulty_level": "5/5",
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.7.10",
+        "id": "en-t-7-10",
+        "title": "Task 10",
+        "subsection": "t.7",
+        "context": "Decide whether each word, as it would be used in a sentence echoing the passage's themes, is correctly identified as literal or figurative.",
         "statements": [
-          "Financial repression is listed among the accommodation channels under fiscal dominance in paragraph (1).",
-          "The passage asserts that distributional side effects of asset purchases are imaginary and can be ignored in policy design.",
-          "Credibility is described as an equilibrium outcome rather than a property that follows automatically from strong statutes.",
-          "Residual-buyer expectations can turn secondary-market support into functional primary monetisation.",
-          "The passage recommends memorising slogans about printing presses rather than tracking residual adjustment."
+          "\"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.",
+          "\"Arms race,\" used to describe the ongoing competition between antibiotic development and bacterial evolution, is used in its original, literal military sense.",
+          "\"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.",
+          "\"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.",
+          "\"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface."
         ],
         "answer_key": [
           true,
@@ -443,198 +471,170 @@
           false
         ],
         "tactical_explanations": [
-          "Paragraph (1) lists lower real rates, financial repression, or outright purchases as accommodation channels under fiscal dominance.\n\nSo the statement is True.",
-          "Paragraph (4) takes critics' distributional and financial-stability side effects seriously; it does not call them imaginary.\n\nSo the statement is False.",
-          "Paragraph (2): credibility is an equilibrium outcome, even where statutes look strong on paper.\n\nSo the statement is True.",
-          "Paragraph (3) ties residual-buyer expectations to functional mimicry of primary monetisation.\n\nSo the statement is True.",
-          "Paragraph (5) says the takeaway is not to memorise slogans but to track residual adjustment.\n\nSo the statement is False."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.V.01",
-        "id": "en-demo-v-01",
-        "title": "Task 6 — In-passage vocabulary",
-        "subsection": "demo.v",
-        "context": "In the passage, the word \"accommodate\" in paragraph (1) is closest in meaning to:",
+          "**A) \"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.**\n\nEpidemiology borrows \"reservoir\" from literal water storage to mean a host population that keeps a pathogen stocked over time. That figurative extension fits agricultural reservoirs of resistance implied by Paragraph 4’s livestock use. The metaphor works because both senses share the idea of something being held in quantity and available to be released.\n\n**Tip:** Literal water storage → figurative pathogen-holding population is a standard science metaphor.\n\nThe statement also explains the transfer rather than just labelling it, which is what makes it accurate: a population is not a container of water, but it functions as a store. Densely housed animals receiving routine antibiotics are precisely the kind of maintaining population the term names.\n\nThe figurative reservoir reading is correctly identified, so the claim holds.",
+          "**B) \"Arms race,\" used to describe the ongoing competition between antibiotic development and bacterial evolution, is used in its original, literal military sense.**\n\nDrug-versus-bug \"arms race\" language is a metaphor: competitive escalation borrowed from military rivalry, not tanks and missiles. Calling it the original literal military sense mislabels the figure. Bacteria do not build weapons; what is transferred is the shape of the situation, in which each side’s advance prompts a counter-advance.\n\n**Trap:** Familiar war metaphors in science writing are almost never literal weapon talk.\n\nA metaphor does not become literal through frequent use, however natural the phrase now sounds in medical writing. The passage’s own pattern — new drugs followed by new resistance — is what the borrowed phrase describes, and that pattern is biological rather than military.\n\nThe military-literal claim is wrong for this figurative use, so the statement fails.",
+          "**C) \"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.**\n\nParagraph 3’s huge AMR death toll is the kind of impact health writers call a \"burden\" — figurative weight/cost, not a load on someone’s back. The passage’s own word \"toll\" works the same way, naming a cost rather than a physical object.\n\n**Tip:** Abstract nouns paired with numbers — burden, toll, cost — are usually measuring impact figuratively.\n\nThe metaphor imports the idea of weight to convey scale: 1.27 million direct deaths and 4.95 million associated ones are presented as something societies carry. Reading \"burden\" literally here would make the standard epidemiological phrase meaningless.\n\nFigurative \"burden of disease\" correctly tracks impact rather than a physical object, so the claim holds.",
+          "**D) \"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.**\n\nParagraph 6’s quoted \"discovery void\" names a prolonged absence of genuinely new antibiotic classes since 1987 — a gap in innovation, not an empty room. The passage glosses the term itself, calling it \"a prolonged gap researchers have termed the 'discovery void,'\" which spells out the figurative reading.\n\n**Tip:** When a passage supplies its own gloss for a coined phrase, that gloss settles literal-versus-figurative questions.\n\nWhat is empty here is a period of time rather than a region of space, so the spatial sense of \"void\" has been transferred to a temporal and conceptual absence. The quotation marks around the phrase in the passage further mark it as a specialist coinage rather than plain description.\n\n\"Discovery void\" as figurative absence matches Paragraph 6, so the claim holds.",
+          "**E) \"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface.**\n\nParagraph 5’s gene \"spread\" through horizontal transfer is biological transmission between species, not literal scattering of solid objects on a surface. \"Only… literal\" therefore mislabels the usage. Genes move by being carried inside plasmids from one organism to another, which is transmission rather than distribution across a plane.\n\n**Trap:** \"Spread\" in infection biology is usually extended transmission language, not dustpan physics.\n\nThe restrictive word \"only\" does the damage here, since it rules out the extended sense the passage actually employs. Paragraph 4’s \"environmental spread of resistance genes\" uses the same transmission meaning, confirming the pattern across the text.\n\nRestricting \"spread\" to literal object-scattering fails against the passage’s gene-transfer sense."
+        ],
         "kind": "vocabulary",
         "with_passage": true,
-        "difficulty_level": "5/5",
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.7.09",
+        "id": "en-t-7-09",
+        "title": "Task 9",
+        "subsection": "t.7",
+        "context": "Decide whether each statement about word meaning or usage is correct.",
         "statements": [
-          "Force the fiscal authority to raise taxes immediately.",
-          "Adjust monetary policy so that debt servicing remains feasible under the given fiscal path.",
-          "Abolish the inflation mandate by statute overnight.",
-          "Sell all government paper from the central-bank portfolio.",
-          "Ignore bond-market term premia entirely."
+          "\"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.",
+          "\"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.",
+          "\"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.",
+          "\"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.",
+          "\"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time."
         ],
         "answer_key": [
           false,
           true,
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         "tactical_explanations": [
-          "Accommodation here is the central bank's response, not an immediate tax hike by the fiscal authority.\n\nSo the statement is False.",
-          "In context, accommodate means the central bank must ultimately ease the debt-service burden through rates, repression, or purchases while primary balances stay given.\n\nSo the statement is True.",
-          "Nothing in (1) equates accommodate with overnight abolition of the mandate.\n\nSo the statement is False.",
-          "Accommodation expands support for government paper; it is not a fire-sale of the portfolio.\n\nSo the statement is False.",
-          "The passage elsewhere stresses that markets price risks; accommodate does not mean ignoring premia.\n\nSo the statement is False."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.V.02",
-        "id": "en-demo-v-02",
-        "title": "Task 7 — In-passage vocabulary",
-        "subsection": "demo.v",
-        "context": "In paragraph (4), \"blunt the signal\" is closest in meaning to:",
+          "**A) \"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.**\n\n\"Susceptible\" correctly means easily affected (as resistant bacteria are not). \"Susceptive,\" however, is not a standard, commonly used twin with the same meaning — the second half invents a false friend. Paired vocabulary items like this are only true when both halves survive checking, so one accurate definition cannot rescue the claim.\n\n**Trap:** Near-spellings that \"look Latin\" are often fake twins on vocabulary true/false items.\n\nIn the clinical vocabulary of this passage, susceptible is the working antonym of resistant: a susceptible strain is one an antibiotic still kills. That precise contrast is exactly what a vague invented synonym would blur.\n\nBecause \"susceptive\" is not a real common synonym, the paired claim fails.",
+          "**B) \"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.**\n\nParagraph 1 uses \"viable for clinical use\" for penicillin after purification. \"Viable\" (adjective) and \"viability\" (noun) name the same capacity at different parts of speech — the distinction is exact. Saying penicillin \"became viable\" and saying it \"achieved clinical viability\" would report the same milestone.\n\n**Tip:** Check whether the claimed noun is a true -ity/-ness form of the adjective in the passage.\n\nA derivational pair like this changes the grammar of a sentence without changing what is being claimed. That is the difference between a genuine word-family relationship and a false friend, where the resemblance is only in spelling.\n\nThe viable / viability pairing matches standard usage, so the claim holds.",
+          "**C) \"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.**\n\nParagraph 7’s \"push\" and \"pull\" incentive models are rewards meant to encourage antibiotic development. \"Deterrent\" points the other way — discouragement — so calling them near-opposites is right. The passage’s own examples make the encouraging function concrete: subsidies and guaranteed market-entry rewards both exist to draw firms back into research.\n\n**Tip:** Anchor abstract vocabulary to the passage’s examples; here the incentives are payments designed to attract, not penalties designed to repel.\n\nThe hedge \"near-opposite\" is well chosen, since the two words are not perfect antonyms in every context but do pull in contrary directions on behaviour. Recognising that they answer the same question — encourage or discourage? — with opposite answers is what settles the item.\n\nIncentive versus deterrent as encourage / discourage near-opposites is accurate, so the claim holds.",
+          "**D) \"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.**\n\nParagraph 2’s \"strains of Staphylococcus\" uses the biological-variant sense. \"Stress\" is a different word for pressure or tension; sound similarity does not make them synonyms. Substituting one for the other would make the passage claim that researchers found tensions of Staphylococcus, which is not English.\n\n**Tip:** Exam \"strain / stress\" traps trade on sound, not shared biology meaning.\n\nThe confusion is helped along by the fact that \"strain\" itself has a separate everyday sense of pressure or effort, as in straining a muscle. The item is testing whether you can hold the technical microbiological sense apart from that general one.\n\nThe bacterial-strain versus tension-stress split is correct, so the claim holds.",
+          "**E) \"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time.**\n\nStandard medical English keeps \"dose\" as a single measured amount and \"dosage\" as the planned schedule of doses. Sub-lethal exposure talk in these themes still relies on that dose-unit idea. A patient takes one dose now; the dosage specifies how many such doses to take and how often.\n\n**Tip:** Think of dose as the unit and dosage as the pattern — a single event versus a regimen across time.\n\nThe distinction matters directly for antibiotics, where the passage’s theme of resistance depends on how long and how consistently a course is taken. Confusing the two words would blur the difference between one measured amount and the whole treatment plan.\n\nThe dose / dosage schedule distinction matches careful usage, so the claim holds."
+        ],
         "kind": "vocabulary",
         "with_passage": true,
-        "difficulty_level": "5/5",
-        "statements": [
-          "Make long rates a clearer indicator of capital scarcity.",
-          "Weaken or dull the information that long rates normally convey about scarcity of capital.",
-          "Increase the volatility of overnight policy rates only.",
-          "Replace all term premia with statutory ceilings.",
-          "Guarantee that asset prices fall uniformly."
-        ],
-        "answer_key": [
-          false,
-          true,
-          false,
-          false,
-          false
-        ],
-        "tactical_explanations": [
-          "Blunting is the opposite of making the signal clearer.\n\nSo the statement is False.",
-          "In context, compressed term premia dull the scarcity information long rates normally send.\n\nSo the statement is True.",
-          "The phrase targets the long-rate scarcity signal, not overnight-rate volatility alone.\n\nSo the statement is False.",
-          "No statutory ceiling on term premia is described.\n\nSo the statement is False.",
-          "Critics say purchases inflate asset prices unevenly; blunt does not mean uniform falls.\n\nSo the statement is False."
-        ]
+        "difficulty_level": "5/5"
       },
       {
-        "case_id": "ENG DEMO.G.01",
-        "id": "en-demo-g-01",
-        "title": "Task 8 — Grammar (conditionals / aspect)",
-        "subsection": "demo.g",
-        "context": "Choose whether each sentence is grammatically and idiomatically correct English for a formal economics text.",
-        "kind": "grammar",
-        "with_passage": false,
-        "difficulty_level": "5/5",
+        "case_id": "ENG T.7.07",
+        "id": "en-t-7-07",
+        "title": "Task 7",
+        "subsection": "t.7",
+        "context": "Each sentence uses a conditional structure. Decide if the conditional type used correctly matches the meaning it is meant to express.",
         "statements": [
-          "Had the central bank not absorbed the paper, term premia would likely have spiked.",
-          "If markets would believe the purchases are temporary, premia stay compressed forever.",
-          "The more open-ended the support becomes, the weaker the fiscal constraint appears.",
-          "Rarely has a balance-sheet expansion of this scale left inflation expectations untouched in every jurisdiction.",
-          "Neither the statute nor the board appointments is irrelevant to credibility."
+          "\"If bacteria are exposed repeatedly to sub-lethal doses of an antibiotic, resistant strains eventually emerge.\" (zero conditional, general scientific truth)",
+          "\"If penicillin had never been mass-produced during the war, millions of soldiers would die from infected wounds.\" (mixed past/present tense in a third-conditional context)",
+          "\"If a new antibiotic class were approved tomorrow, it would still take years of clinical trials before reaching patients.\" (second conditional, hypothetical future)",
+          "\"If governments increase funding for antibiotic R&D, resistance rates will immediately disappear worldwide.\" (first conditional, confidently asserting real future certainty)",
+          "\"If resistance had not emerged so quickly after antibiotics' introduction, the era of easy bacterial treatment might have lasted longer.\" (third conditional, hypothetical past)"
         ],
         "answer_key": [
           true,
           false,
           true,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "Inverted third-conditionals (Had … not …, … would have …) are correct formal English.\n\nSo the statement is True.",
-          "After if, use present/believe for a real conditional—not \"would believe\". Correct: If markets believe the purchases are temporary, …\n\nSo the statement is False.",
-          "The comparative correlative the more … the weaker … is standard and correct.\n\nSo the statement is True.",
-          "Negative inversion with Rarely has + subject + past participle is grammatical.\n\nSo the statement is True.",
-          "Neither … nor with two singular subjects takes a singular verb in careful formal usage here, but \"is\" with a plural-leaning reading of appointments is awkward; standard: Neither the statute nor the board appointments are irrelevant—or better, Neither X nor Y is irrelevant when both are singular. With mixed number, prefer rephrase. As written with plural \"appointments\" + \"is\", the agreement is wrong.\n\nSo the statement is False."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.G.02",
-        "id": "en-demo-g-02",
-        "title": "Task 9 — Grammar (modifiers / parallelism)",
-        "subsection": "demo.g",
-        "context": "Decide whether each sentence is grammatically correct.",
-        "kind": "grammar",
-        "with_passage": false,
-        "difficulty_level": "5/5",
-        "statements": [
-          "Purchases framed as temporary, sterilised in spirit, and unrelated to Treasury financing reassured some observers.",
-          "To prevent a spiral, and restoring demand, the bank expanded its book.",
-          "What markets price is less the label than whether an exit is credible.",
-          "The authority that must adjust—and when—shapes the inflation path.",
-          "Being politically costly, consolidation often loses to accommodation."
-        ],
-        "answer_key": [
-          true,
           false,
-          true,
-          true,
           true
         ],
         "tactical_explanations": [
-          "Parallel past participles (framed / sterilised / unrelated) modify purchases correctly.\n\nSo the statement is True.",
-          "Faulty parallelism: infinitive \"To prevent\" cannot pair with gerund \"restoring\". Use To prevent … and to restore …\n\nSo the statement is False.",
-          "Cleft-style What … is … is grammatical; less X than Y comparison is fine.\n\nSo the statement is True.",
-          "Parenthetical —and when— is acceptable; subject-verb agreement holds.\n\nSo the statement is True.",
-          "Dangling-risk is low: Being politically costly correctly modifies consolidation.\n\nSo the statement is True."
-        ]
+          "**A) \"If bacteria are exposed repeatedly to sub-lethal doses of an antibiotic, resistant strains eventually emerge.\" (zero conditional, general scientific truth)**\n\nPresent + present (\"are exposed… emerge\") is the zero-conditional shape for a general scientific pattern. That matches a repeatable biological outcome of the kind Paragraphs 2 and 5 describe around resistance arising under antibiotic pressure. Both clauses stay in the present simple, which is the formal signature the label names.\n\n**Tip:** Zero conditional = open present facts; it is not a one-off past hypothesis.\n\nThe test for a zero conditional is whether \"if\" could be replaced by \"whenever\" without changing the meaning, and here it could. Because the sentence describes a rule that holds each time the condition is met, the label and the grammar agree.\n\nThe labeled zero conditional fits a general resistance pattern, so the line is true.",
+          "**B) \"If penicillin had never been mass-produced during the war, millions of soldiers would die from infected wounds.\" (mixed past/present tense in a third-conditional context)**\n\n\"Had never been\" opens a past counterfactual that needs a matching past result (\"would have died\"). \"Would die\" shifts into present/future consequence and breaks third-conditional pairing — exactly the mixed-tense fault the label flags. The event in question is fixed in the past, since Paragraph 1 states that Allied manufacturers did mass-produce penicillin during the Second World War.\n\n**Trap:** Past perfect in the if-clause almost always wants \"would have + past participle,\" not bare \"would + base.\"\n\nA genuine mixed conditional pairs a past condition with a present result that still holds, but soldiers dying of wartime wounds is not an ongoing present state. Because both halves of the sentence point to the same finished period, the two clauses must share past reference.\n\nThird-conditional form collapses on \"would die,\" so the line is false.",
+          "**C) \"If a new antibiotic class were approved tomorrow, it would still take years of clinical trials before reaching patients.\" (second conditional, hypothetical future)**\n\n\"Were approved… would still take\" is classic second conditional for an unlikely or hypothetical near future. The imaginary tomorrow-approval scenario matches that tentative mood, especially given Paragraph 6’s discovery void. The subjunctive \"were\" rather than \"was\" reinforces that the speaker treats the scenario as remote.\n\n**Tip:** Past-form verb in the if-clause plus \"would\" in the main clause is the second-conditional fingerprint.\n\nA first conditional (\"if a class is approved, it will take…\") would present the approval as a realistic expectation, which sits awkwardly beside a decades-long innovation gap. The second conditional keeps the scenario appropriately speculative.\n\nThe second-conditional label fits the hypothetical future wording, so the line is true.",
+          "**D) \"If governments increase funding for antibiotic R&D, resistance rates will immediately disappear worldwide.\" (first conditional, confidently asserting real future certainty)**\n\nFormally the if-present + will-future shape is first conditional, but the content asserts an impossible certain outcome (\"will immediately disappear worldwide\"). That overconfident forecast clashes with Paragraph 9’s unsettled, contested seriousness and with the biological drivers that funding alone cannot erase overnight. Paragraphs 4 and 5 name livestock use and horizontal gene transfer as drivers no research budget could switch off instantly.\n\n**Trap:** Correct first-conditional grammar can still be false when the predicted result is wildly overstated.\n\nThe adverbs are where the sentence breaks: \"immediately\" and \"worldwide\" together promise a global, instantaneous reversal. Judging these items means checking that the consequence is credible against the passage, not only that the tense pattern is well formed.\n\nThe confident \"will immediately disappear\" claim overshoots the passage, so the line fails.",
+          "**E) \"If resistance had not emerged so quickly after antibiotics' introduction, the era of easy bacterial treatment might have lasted longer.\" (third conditional, hypothetical past)**\n\n\"Had not emerged… might have lasted\" is a past counterfactual (third conditional) about an alternative history after early resistance. Paragraph 2’s rapid 1947 resistance makes that past hypothetical thematically natural. Both clauses point at the same closed stretch of time, so the tense pairing is internally consistent.\n\n**Tip:** \"Might have\" is a legitimate third-conditional result form — it simply softens the certainty of \"would have.\"\n\nThe sentence imagines a change to something the passage records as fact, which is the defining move of a third conditional. Since the counterfactual and its consequence are both anchored in the past, the label describes the grammar accurately.\n\nThe third-conditional past counterfactual is correctly formed and labeled, so the line is true."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
       },
       {
-        "case_id": "ENG DEMO.V.03",
-        "id": "en-demo-v-03",
-        "title": "Task 10 — Paraphrase vocabulary",
-        "subsection": "demo.v",
-        "context": "Which option best paraphrases \"residual buyer\" as used in paragraph (3)?",
+        "case_id": "ENG T.7.08",
+        "id": "en-t-7-08",
+        "title": "Task 8",
+        "subsection": "t.7",
+        "context": "Each statement proposes converting a passive sentence into active voice. Decide if the meaning and emphasis are fully preserved.",
+        "statements": [
+          "Passive: \"Penicillin was mass-produced by Allied manufacturers during the war.\" → Active: \"Allied manufacturers mass-produced penicillin during the war.\"",
+          "Passive: \"Resistance genes are transferred between bacteria through plasmids.\" → Active: \"Plasmids transfer resistance genes between bacteria.\"",
+          "Passive: \"New antibiotic classes have rarely been approved since 1987.\" → Active: \"Regulators have rarely approved new antibiotic classes since 1987.\"",
+          "Passive: \"The WHO's Global Action Plan was adopted in 2015.\" → Active: \"The WHO adopted its Global Action Plan in 2015.\"",
+          "Passive: \"Antibiotics are used briefly for acute infections, unlike drugs for chronic disease.\" → Active: \"Chronic disease requires drugs to be used briefly for acute infections.\""
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Passive: \"Penicillin was mass-produced by Allied manufacturers during the war.\" → Active: \"Allied manufacturers mass-produced penicillin during the war.\"**\n\nThe passive already names its agent (\"by Allied manufacturers\"). Moving that agent to subject position keeps the same actor, patient, and wartime setting — a clean voice flip. Paragraph 1 confirms Allied mass production in WWII. Nothing is added or dropped: the by-phrase becomes the subject and the old subject becomes the object.\n\n**Tip:** A passive with an explicit by-phrase can always be actived safely, because the agent is already stated.\n\nThe time adverbial \"during the war\" is untouched by the transformation, so the historical setting stays fixed. Voice changes affect which participant gets the subject slot, not the underlying event.\n\nWhen the by-phrase already names the agent, the active rewrite preserves meaning, so the conversion is true.",
+          "**B) Passive: \"Resistance genes are transferred between bacteria through plasmids.\" → Active: \"Plasmids transfer resistance genes between bacteria.\"**\n\n\"Through plasmids\" supplies the instrument that becomes the active subject. Paragraph 5’s plasmids carrying resistance genes between species supports that agentive reading without adding an outsider. The passage itself uses plasmids as the subject of an active verb, writing that they \"carry resistance genes,\" so the promotion matches how the text already frames them.\n\n**Tip:** An instrument named in the passive can head the active clause when the text already treats it as the thing doing the work.\n\nThis differs from an agentless passive, where the active version would have to invent a subject from nothing. Here the phrase \"through plasmids\" supplies the missing element, so the rewrite draws only on information the sentence already contains.\n\nInstrument-to-subject is a valid active flip here, so the conversion is true.",
+          "**C) Passive: \"New antibiotic classes have rarely been approved since 1987.\" → Active: \"Regulators have rarely approved new antibiotic classes since 1987.\"**\n\nThe agentless passive does not name who approves. Inserting \"regulators\" adds a specific actor the original never states — meaning drifts even if \"rarely… since 1987\" echoes Paragraph 6’s discovery void. The passage speaks of classes that have \"reached clinical practice,\" an outcome that reflects research pipelines and commercial decisions as much as any approval body.\n\n**Trap:** Agentless passives become false when the active invents a concrete subject.\n\nPlausibility is not the standard here; the question is whether the rewrite says only what the original said. Because the original deliberately leaves the agent unspecified, naming one narrows the claim and changes its content.\n\nAdding unstated \"regulators\" changes the claim, so the conversion fails.",
+          "**D) Passive: \"The WHO's Global Action Plan was adopted in 2015.\" → Active: \"The WHO adopted its Global Action Plan in 2015.\"**\n\nParagraph 7 already attributes adoption to the World Health Organization. Making \"the WHO\" the active subject restates that same agent and 2015 date without extras. The possessive \"the WHO's\" in the passive version already identifies the organisation, so the active form promotes information that was present rather than importing it.\n\n**Tip:** A possessive in the passive subject often signals that the agent is recoverable, unlike a fully agentless passive.\n\nThis is the instructive contrast with the \"regulators\" item: there the actor came from outside the sentence, while here it comes from inside it and is confirmed by the passage. Same date, same institution, same action — only the grammatical arrangement differs.\n\nThe implied adopter becomes the explicit subject cleanly, so the conversion is true.",
+          "**E) Passive: \"Antibiotics are used briefly for acute infections, unlike drugs for chronic disease.\" → Active: \"Chronic disease requires drugs to be used briefly for acute infections.\"**\n\nThe rewrite swaps roles: chronic disease becomes what \"requires\" short acute courses — a scrambled comparison that no longer says antibiotics are brief while chronic drugs last years (Paragraph 6). It also introduces a new verb, \"requires,\" that expresses a demand the original never made.\n\n**Trap:** Voice changes that also swap subjects usually destroy the original contrast.\n\nThe original sets antibiotics against chronic-disease drugs as two sides of a comparison; the rewrite makes one side govern the other. Paragraph 6 needs that contrast intact, since the profitability argument rests on days-or-weeks courses versus medicines taken for years.\n\nThe active version garbles the acute/chronic contrast, so the conversion fails."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG V.5.27",
+        "id": "en-v-5-27",
+        "title": "Task 27",
+        "subsection": "v.5",
+        "context": "Five statements about the vocabulary of research ethics and data protection, where each term carries a duty or a safeguard. Decide whether each account is accurate.",
+        "statements": [
+          "Data described as \"pseudonymised\" has had every identifier destroyed and cannot be re-linked, which is why regulators treat it exactly as they treat anonymised data.",
+          "In research ethics a child gives \"consent\" while the parent provides \"assent\" on the child's behalf.",
+          "A survey promised to be \"confidential\" is one in which answers were never linked to names in the first place, which is precisely what \"anonymous\" also means.",
+          "In data-protection reporting an \"incident\" is any suspected event while a \"breach\" is the narrower category that triggers a duty to notify, so a laptop briefly mislaid may be logged as an incident without ever becoming a reportable breach.",
+          "Files \"deleted\" from a drive are physically overwritten, which is why deletion and secure erasure are treated as equivalent in equipment disposal policies."
+        ],
+        "answer_key": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Data described as \"pseudonymised\" has had every identifier destroyed and cannot be re-linked, which is why regulators treat it exactly as they treat anonymised data.**\n\nPseudonymisation replaces direct identifiers with a code while a key is kept elsewhere, so the link back to individuals still exists and the data remain personal data with all the obligations that follow. Anonymisation removes that possibility altogether, and only then do the protection rules fall away. The whole point of the intermediate category is that re-identification is possible for those holding the key.\n\n**Trap:** Both terms describe removing names from a dataset, which makes it easy to miss that only one of them destroys the route back.\n\nA surviving key is exactly what distinguishes the weaker safeguard, so the equivalence fails — pseudonymised records remain personal data and stay inside the regime.",
+          "**B) In research ethics a child gives \"consent\" while the parent provides \"assent\" on the child's behalf.**\n\nConsent is the legally effective authorisation, and for a child it is given by a parent or guardian with the capacity to grant it. Assent is the child's own agreement to take part, sought as a matter of respect even though it carries no legal force on its own, and a refusal to assent is generally honoured. Ethics committees ask for both because the two answer different questions about the child's participation.\n\nThe legal authorisation and the child's own agreement have been swapped, so the line does not hold — the parent consents while the child assents.",
+          "**C) A survey promised to be \"confidential\" is one in which answers were never linked to names in the first place, which is precisely what \"anonymous\" also means.**\n\nAn anonymous survey collects no identifying information at all, so not even the researchers can say who returned which questionnaire. A confidential survey may know exactly who said what and undertakes not to disclose it outside the study team, which is what allows follow-up, linkage to records and withdrawal of a specific response. Participant information sheets separate the two because the promises differ in what they can guarantee.\n\nNot collecting identities and promising not to reveal them are different undertakings, so the equation fails — confidentiality protects information the study still holds.",
+          "**D) In data-protection reporting an \"incident\" is any suspected event while a \"breach\" is the narrower category that triggers a duty to notify, so a laptop briefly mislaid may be logged as an incident without ever becoming a reportable breach.**\n\nIncident is the operational catch-all: anything that might have compromised information gets logged, assessed and closed, and most entries turn out to be nothing. Breach is the defined category involving unauthorised access, loss, alteration or disclosure of personal data, and once it is established the clock starts on notifying the regulator and possibly the individuals affected. Encryption and prompt recovery are exactly the factors that keep an event on the lower rung.\n\nLogging everything and notifying the regulator are different obligations, so the mislaid laptop the sentence describes can indeed stop at the first, which is how incident registers work.",
+          "**E) Files \"deleted\" from a drive are physically overwritten, which is why deletion and secure erasure are treated as equivalent in equipment disposal policies.**\n\nOrdinary deletion removes the pointer to the file and marks the space as available, leaving the content in place until something else happens to write over it, which is why recovery tools succeed so often. Secure erasure overwrites the storage, issues a sanitise command or destroys the key that makes encrypted data readable, and it is verified before a device leaves the building. Disposal policies specify the second precisely because the first is not a safeguard.\n\nRemoving a reference and destroying the data are different operations, so the sentence collapses a distinction that disposal procedures exist to maintain."
+        ],
         "kind": "vocabulary",
         "with_passage": false,
-        "difficulty_level": "5/5",
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.13.20",
+        "id": "en-g-13-20",
+        "title": "Task 20",
+        "subsection": "g.13",
+        "context": "Decide whether each sentence is grammatically correct as written.",
         "statements": [
-          "A purchaser who only buys when private demand clears the market first.",
-          "An institution expected to absorb whatever issuance private investors will not take at prevailing prices.",
-          "A dealer that never holds overnight inventory.",
-          "A household saving exclusively in cash.",
-          "A rating agency that certifies every bond as risk-free."
+          "The landlord authorised tenants to repaint the hallway, to replace the hallway bulbs, and filing a repair request if leaks returned.",
+          "Just as the café invests in better beans, so too does it invest in staff training.",
+          "Progress will be judged on whether chores are finished, whether keys are returned, and communal lights are off.",
+          "The brief is neither to defend every habit nor to dismiss every suggestion wholesale.",
+          "She moved out because of limited daylight, because of noisy neighbours, and her commute had become unmanageable."
         ],
         "answer_key": [
           false,
           true,
           false,
-          false,
+          true,
           false
         ],
         "tactical_explanations": [
-          "A residual buyer is the last backstop, not someone who waits until the market already clears.\n\nSo the statement is False.",
-          "In context, residual buyer means markets treat the central bank as absorbing paper private investors will not take—the backstop demand.\n\nSo the statement is True.",
-          "Dealer inventory rules are unrelated.\n\nSo the statement is False.",
-          "Household cash saving is not the passage sense.\n\nSo the statement is False.",
-          "Rating agencies are not buyers in this sense.\n\nSo the statement is False."
-        ]
-      },
-      {
-        "case_id": "ENG DEMO.G.03",
-        "id": "en-demo-g-03",
-        "title": "Task 11 — Grammar (articles / countability)",
-        "subsection": "demo.g",
-        "context": "Decide whether each sentence uses articles and count nouns correctly.",
+          "**A) The landlord authorised tenants to repaint the hallway, to replace the hallway bulbs, and filing a repair request if leaks returned.**\n\nAuthorised…to opens an infinitive series with to repaint and to replace, but filing is a gerund. Permissions after authorised to must stay infinitives through the last allowed action. Use to file a repair request so the series never changes form.\n\n**Trap:** Filing a repair request is a real allowed action, so a gerund at the end of a to-series is a top-band near-miss.\n\nAuthorised…to needs infinitives throughout, so filing is **false** — \"…to repaint the hallway, to replace the hallway bulbs, and to file a repair request if leaks returned.\"\n",
+          "**B) Just as the café invests in better beans, so too does it invest in staff training.**\n\nJust as…so too balances two matching invest + in + noun patterns, with inversion on the second clause. Correlative just as…so too needs mirrored clause structure on both sides. Here both halves keep invest in + noun, so the café comparison stays parallel.\n\nJust as…so too mirrors invest + in on both café sides, so the correlative is **true**.\n",
+          "**C) Progress will be judged on whether chores are finished, whether keys are returned, and communal lights are off.**\n\nJudged on whether opens two whether-clauses, then ends on communal lights are off without the repeated whether. Progress checklists under whether need the marker on every criterion. Repeat whether before the lights clause so the third check matches.\n\n**Trap:** A bare lights-are-off clause still names a real progress test, so missing whether is a high-band marker trap.\n\nJudged on whether needs whether on every criterion, so lights are off is **false** — \"…whether chores are finished, whether keys are returned, and whether communal lights are off.\"\n",
+          "**D) The brief is neither to defend every habit nor to dismiss every suggestion wholesale.**\n\nNeither…nor joins to defend… and to dismiss… — two matching infinitives after is. Keep to + bare verb on both sides of neither…nor so the brief stays balanced. Nothing drops to or flips into a finite clause on the second half.\n\nNeither…nor joins two matching to-infinitives after is, so the brief is **true**.\n",
+          "**E) She moved out because of limited daylight, because of noisy neighbours, and her commute had become unmanageable.**\n\nTwo reasons open as because of + noun phrases, but her commute had become unmanageable is an independent clause. Once because of sets the frame, every later reason should stay a noun phrase under that marker. Recast the commute as because of + noun so all three reasons match.\n\n**Trap:** A freestanding commute clause still states a genuine motive, which hides the because of / clause switch.\n\nBecause of sets noun reasons the commute clause leaves, so this is **false** — \"…because of limited daylight, because of noisy neighbours, and because of an unmanageable commute.\"\n"
+        ],
         "kind": "grammar",
         "with_passage": false,
-        "difficulty_level": "5/5",
-        "statements": [
-          "Credibility is an equilibrium outcome, not a free gift of statute.",
-          "A informations about term premia arrived too late.",
-          "Few deny that open-ended support can mimic monetisation.",
-          "The empirical literature remain contested.",
-          "Independence without a hard budget constraint elsewhere is always provisional."
-        ],
-        "answer_key": [
-          true,
-          false,
-          true,
-          false,
-          true
-        ],
-        "tactical_explanations": [
-          "Uncountable credibility with an before equilibrium outcome is correct.\n\nSo the statement is True.",
-          "Information is uncountable: not \"A informations\". Use Information about … or Pieces of information …\n\nSo the statement is False.",
-          "Few deny that … is idiomatic and grammatical.\n\nSo the statement is True.",
-          "Literature is singular here: remains, not remain.\n\nSo the statement is False.",
-          "Abstract independence as subject with is is correct.\n\nSo the statement is True."
-        ]
+        "difficulty_level": "5/5"
       }
     ]
   },
