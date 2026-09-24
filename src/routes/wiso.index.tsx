@@ -160,39 +160,41 @@ export function WisoLandingPage() {
           </div>
         </section>
 
-        <section className="why-choose-us--wiso relative overflow-hidden bg-why-us-bg px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
-          <div className="relative mx-auto max-w-6xl">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
-                Why WiSo still wins on language
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
-                German is not only an exam section. If Austria or the wider DACH region is where you
-                want to study and work, starting it on the Aufnahmeprüfung deadline is usually the
-                cleaner move.
-              </p>
+        <div className="why-choose-us--wiso bg-why-us-bg">
+          <section className="relative overflow-hidden px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
+            <div className="relative mx-auto max-w-6xl">
+              <div className="mx-auto max-w-3xl text-center">
+                <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+                  Why WiSo still wins on language
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+                  German is not only an exam section. If Austria or the wider DACH region is where you
+                  want to study and work, starting it on the Aufnahmeprüfung deadline is usually the
+                  cleaner move.
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <WisoDachAdvantageSlider />
+          <WisoDachAdvantageSlider />
 
-        <section className="why-choose-us--wiso relative bg-why-us-bg px-6 py-10 lg:px-8">
-          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-4">
-            <LocalizedLink
-              to="/bbe-vs-wiso"
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#EEF2FF] px-8 py-4 text-sm font-semibold text-[#121A33] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
-            >
-              Compare BBE and WiSo
-            </LocalizedLink>
-            <LocalizedLink
-              to="/wiso/wu-vienna"
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/20 px-8 py-4 text-sm font-semibold text-why-us-fg/90 transition-colors hover:border-white/40 hover:text-white"
-            >
-              WU context for WiSo applicants
-            </LocalizedLink>
-          </div>
-        </section>
+          <section className="relative px-6 py-10 lg:px-8">
+            <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-4">
+              <LocalizedLink
+                to="/bbe-vs-wiso"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#EEF2FF] px-8 py-4 text-sm font-semibold text-[#121A33] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
+              >
+                Compare BBE and WiSo
+              </LocalizedLink>
+              <LocalizedLink
+                to="/wiso/wu-vienna"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/20 px-8 py-4 text-sm font-semibold text-why-us-fg/90 transition-colors hover:border-white/40 hover:text-white"
+              >
+                WU context for WiSo applicants
+              </LocalizedLink>
+            </div>
+          </section>
+        </div>
 
         <section
           className="relative bg-scroll"

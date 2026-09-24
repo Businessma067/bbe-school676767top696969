@@ -1,0 +1,1046 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 6.5.034",
+      "title": "Turnover and Liquidity Extract 34",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Inventory turnover, cost of sales taken relative to average inventory, is below 6.87 times per year.",
+        "Asset turnover, revenue taken relative to average total assets, is above 1.48.",
+        "With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+        "Revenue exceeds €999 thousand.",
+        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.4 times per year."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Flows for the year and stocks at year-end answer different questions. With that split the claim is fine. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A below reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{823 + 1{,}028}{2} \\approx 925.5\n$$\n\n$$\n\\frac{1{,}019}{925.5} \\approx 1.1010\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 925.5. Asset turnover = 1,019 ÷ 925.5 ≈ 1.1010 Claimed above 1.48.\n\nThat comparison uses the extract figures only, so the claim stands or falls on the arithmetic itself.\n\nSo the statement is False.",
+        "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{169 + 179}{2} \\approx 174\n$$\n\n$$\n\\frac{674}{174} \\approx 3.87\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 674174 = 3.87 That interpretation matches the definition.\n\nUsing only the extract averages keeps the turnover arithmetic aligned with the claim.\n\nSo the statement is True.",
+        "Revenue is read directly from the extract and compared with the stated euro-thousand threshold, a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1{,}019\\text{ thousand}\n$$\n\nRead revenue from the extract. Revenue = €1,019 thousand; threshold exceeds €999 thousand. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine. A exceeds reading of the extract supports this claim. Operators and dealers can report the same the item on different lines.\n\nWalk the claim against those extract lines once more: the nouns, the timing, and the arithmetic either line up with the chapter rule or they do not. That is the whole test for this letter.\n\nSo the statement is True.",
+        "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{135 + 107}{2} \\approx 121\n$$\n\n$$\n\\frac{1{,}019}{121} \\approx 8.4215\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,019121 = 8.4215 Threshold exceeds 10.4. Check the extract’s labels once more against the stem’s threshold.\n\nThe extract's own figures are enough for that check; no extra assumption is required.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.4.010",
+      "title": "Asset Composition Chart 10",
+      "subsection": "6.4",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+        "Working capital of €133 thousand is positive on this balance sheet.",
+        "The debt ratio exceeds 56%.",
+        "Trade receivables make up less than 48.5% of current assets.",
+        "Cash and cash equivalents make up more than 23.1% of current assets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A outside reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 356 and current liabilities total 223:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 356, \\quad \\text{CL} = 223,\\quad \\text{WC} = 356 - 223\n$$\n\n$$\n\\text{WC} = 133\n$$\n\nWC = 356 − 223 = 133. The stem cites €133 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 703,\\quad \\text{Total assets} = 1{,}181\n$$\n\n$$\n\\frac{703}{1{,}181} \\approx 0.5953 \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 56\\%\n$$\n\nThe debt ratio is 59.5%, above the 56% benchmark. Debt ratio ≈ 703 ÷ 1,181 = 59.5%.\n\nSo the statement is True.",
+        "From the extract, Trade receivables = 81 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{81}{356}\n$$\n\n$$\n\\text{Share} = 22.8\\%\n$$\n\nTrade receivables / current assets ≈ 81 ÷ 356 = 22.8%. Less than 48.5% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
+        "From the extract, Cash and cash equivalents = 119 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{119}{356}\n$$\n\n$$\n\\text{Share} = 33.4\\%\n$$\n\nCash and cash equivalents / current assets ≈ 119 ÷ 356 = 33.4%. More than 23.1% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.2.039",
+      "title": "Liquidity From the Balance Sheet 39",
+      "subsection": "6.2",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
+        "The current ratio exceeds 1.28.",
+        "Working capital of €144 thousand is positive on this balance sheet.",
+        "Buildings make up more than 47.1% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 276,\\quad \\text{Inventory} = 119,\\quad \\text{CL} = 132\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 276 - 119 = 157\n$$\n\n$$\n\\frac{157}{132} \\approx 1.1894 \\le 1.35\n$$\n\nSo the statement is False.",
+        "CA ÷ CL is the current-ratio identity used below.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 119 + 60 + 97,\\quad \\text{CA} = 276,\\quad \\text{CL} = 74 + 58\n$$\n\n$$\n\\text{CL} = 132\n$$\n\n$$\n\\frac{276}{132} \\approx 2.0909 > 1.28\n$$\n\nCurrent ratio = 276 ÷ 132 ≈ 2.09. The claim says the ratio exceeds 1.28.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 276 and current liabilities total 132:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 276, \\quad \\text{CL} = 132,\\quad \\text{WC} = 276 - 132\n$$\n\n$$\n\\text{WC} = 144\n$$\n\nWC = 276 − 132 = 144. The stem cites €144 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €144 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "From the extract, Buildings = 307 and total assets = 860.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{307}{860}\n$$\n\n$$\n\\text{Share} = 35.7\\%\n$$\n\nBuildings / total assets ≈ 307 ÷ 860 = 35.7%. More than 47.1% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.3.027",
+      "title": "Comparative Balance Sheet Analysis 27",
+      "subsection": "6.3",
+      "chapter": null,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Total equity grew by more than 21.7% between Year 1 and Year 2.",
+        "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+        "Non-current liabilities amount to less than 91.7% of total equity in Year 2.",
+        "Current liabilities are covered by current assets less than 2.02 times over in Year 2.",
+        "Total assets grew by more than 12.2% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 542, Y_2 = 532\n$$\n\n$$\nY_2 - Y_1 = 532 - 542 = -10\n$$\n\n$$\n\\frac{-10}{542} \\approx -0.0185 \\approx -1.8\\%\n$$\n\n$$\n-1.8\\% \\le 21.7\\%\n$$\n\nTotal equity changed by 1.8%, at or below the 21.7% threshold claimed.\n\nSo the statement is False.",
+        "Shape and size never settle the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. A dealer’s the item stays inventory until sold. Own use of the item for years makes it a tangible fixed asset. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 388 + 53,\\quad \\text{NCL} = 441,\\quad \\text{Equity} = 532\n$$\n\n$$\n\\frac{441}{532} \\approx 0.8289 \\approx 82.9\\%\n$$\n\n$$\n82.9\\% < 91.7\\%\n$$\n\nYear-2 NCL/equity is 82.9%, below the 91.7% claim.\n\nSo the statement is True.",
+        "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{336}{171} \\approx 1.9649\n$$\n\nYear 2 cover ≈ 1.96 times (336 ÷ 171). Less than 2.02 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted.\n\nSo the statement is True.",
+        "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}102, Y_2 = 1{,}144\n$$\n\n$$\nY_2 - Y_1 = 1{,}144 - 1{,}102 = 42\n$$\n\n$$\n\\frac{42}{1{,}102} \\approx 0.0381 \\approx 3.8\\%\n$$\n\n$$\n3.8\\% \\le 12.2\\%\n$$\n\nTotal assets changed by 3.8%, at or below the 12.2% threshold claimed. Total assets runs 1,102 → 1,144 across the two years. Percentage change ≈ 3.8%, while the claim wants growth above 12.2%. 3.8% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.1.020",
+      "title": "Balance Sheet Structure Review 20",
+      "subsection": "6.1",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+        "The current ratio is below 0.93.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.24 times over.",
+        "The equity ratio is below 33.7%.",
+        "The debt ratio exceeds 47.8%."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Non-current assets are held for use beyond one accounting period. Useful life beyond a year plus operating intent define the category. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
+        "Liquidity cover here is current assets over current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 136 + 162 + 34,\\quad \\text{CA} = 332,\\quad \\text{CL} = 150 + 48\n$$\n\n$$\n\\text{CL} = 198\n$$\n\n$$\n\\frac{332}{198} \\approx 1.6768 > 0.93\n$$\n\nCurrent ratio = 332 ÷ 198 ≈ 1.68. The claim says the ratio is below 0.93. 1.68 conflicts with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is False.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 332,\\quad \\text{Inventory} = 136,\\quad \\text{CL} = 198\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 332 - 136 = 196\n$$\n\n$$\n\\frac{196}{198} \\approx 0.9899 \\le 1.24\n$$\n\nSo the statement is False.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 718,\\quad \\text{Total assets} = 1{,}206\n$$\n\n$$\n\\frac{718}{1{,}206} \\approx 0.5954 \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 33.7\\%\n$$\n\nThe equity ratio is 59.5%, above the 33.7% benchmark. Equity ratio ≈ 718 ÷ 1,206 = 59.5%.\n\nSo the statement is False.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 488,\\quad \\text{Total assets} = 1{,}206\n$$\n\n$$\n\\frac{488}{1{,}206} \\approx 0.4046 \\approx 40.5\\%\n$$\n\n$$\n40.5\\% < 47.8\\%\n$$\n\nThe debt ratio is 40.5%, below the 47.8% benchmark. Debt ratio ≈ 488 ÷ 1,206 = 40.5%. Claim: exceeds 47.8%. 40.5% does not fit. The debt ratio places debt against total assets. Financing structure is read from that percentage, not from a single euro line alone. Read the claim against the chapter rule: The debt ratio exceeds 47.8%.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.068",
+      "title": "Balance Sheet Structure Review 68",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 225 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 215 |\n| Trade receivables | 156 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1089** |\n| **EQUITY** | |\n| Share capital | 146 |\n| Retained earnings | 301 |\n| Total equity | **447** |\n| **LIABILITIES** | |\n| Long-term bank loan | 286 |\n| Bonds payable | 89 |\n| Trade payables | 228 |\n| Bank overdraft | 39 |\n| Total liabilities | **642** |\n| Total equity and liabilities | **1089** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio is below 0.78.",
+        "The current ratio exceeds 1.53.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.25 times over.",
+        "Working capital of €184 thousand is positive on this balance sheet.",
+        "Trade receivables make up less than 55% of current assets."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "The current ratio puts current assets against current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 215 + 156 + 80,\\quad \\text{CA} = 451,\\quad \\text{CL} = 228 + 39\n$$\n\n$$\n\\text{CL} = 267\n$$\n\n$$\n\\frac{451}{267} \\approx 1.6891 > 0.78\n$$\n\nCurrent ratio = 451 ÷ 267 ≈ 1.69.\n\nThe extract's own figures are enough for that check; no extra assumption is required.\n\nSo the statement is False.",
+        "Current ratio = 451 ÷ 267 ≈ 1.69.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 215 + 156 + 80,\\quad \\text{CA} = 451,\\quad \\text{CL} = 228 + 39\n$$\n\n$$\n\\text{CL} = 267\n$$\n\n$$\n\\frac{451}{267} \\approx 1.6891 > 1.53\n$$\n\nCurrent ratio = 451 ÷ 267 ≈ 1.69. The claim says the ratio exceeds 1.53. 1.69 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 451,\\quad \\text{Inventory} = 215,\\quad \\text{CL} = 267\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 451 - 215 = 236\n$$\n\n$$\n\\frac{236}{267} \\approx 0.8839 \\le 1.25\n$$\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 451 and current liabilities total 267:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 451, \\quad \\text{CL} = 267,\\quad \\text{WC} = 451 - 267\n$$\n\n$$\n\\text{WC} = 184\n$$\n\nWC = 451 − 267 = 184. The stem cites €184 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "From the extract, Trade receivables = 156 and current assets = 451.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{156}{451}\n$$\n\n$$\n\\text{Share} = 34.6\\%\n$$\n\nTrade receivables / current assets ≈ 156 ÷ 451 = 34.6%. Less than 55% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nWalk the claim against those extract lines once more: the nouns, the timing, and the arithmetic either line up with the chapter rule or they do not. That is the whole test for this letter.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.074",
+      "title": "Balance Sheet Structure Review 74",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 305 |\n| Machinery | 176 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 169 |\n| Trade receivables | 103 |\n| Cash and cash equivalents | 83 |\n| Total assets | **933** |\n| **EQUITY** | |\n| Share capital | 298 |\n| Retained earnings | -8 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 70 |\n| Trade payables | 143 |\n| Bank overdraft | 34 |\n| Total liabilities | **643** |\n| Total equity and liabilities | **933** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio exceeds 1.8.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.14 times over.",
+        "Buildings make up more than 43.4% of total assets.",
+        "The long-term bank loan of €396 thousand should be classified within equity rather than liabilities.",
+        "Working capital of €178 thousand is positive on this balance sheet."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Liquidity cover here is current assets over current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 169 + 103 + 83,\\quad \\text{CA} = 355,\\quad \\text{CL} = 143 + 34\n$$\n\n$$\n\\text{CL} = 177\n$$\n\n$$\n\\frac{355}{177} \\approx 2.0056 > 1.8\n$$\n\nCurrent ratio = 355 ÷ 177 ≈ 2.01. The claim says the ratio exceeds 1.8. 2.01 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 355,\\quad \\text{Inventory} = 169,\\quad \\text{CL} = 177\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 355 - 169 = 186\n$$\n\n$$\n\\frac{186}{177} \\approx 1.0508 \\le 1.14\n$$\n\nSo the statement is False.",
+        "From the extract, Buildings = 305 and total assets = 933.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{305}{933}\n$$\n\n$$\n\\text{Share} = 32.7\\%\n$$\n\nBuildings / total assets ≈ 305 ÷ 933 = 32.7%. More than 43.4% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False.",
+        "A bank loan is a liability owed to a lender. Equity is owners’ residual interest, borrowed funds do not belong there. Counterexample: a term loan sits under liabilities, never under share capital. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 355 and current liabilities total 177:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 355, \\quad \\text{CL} = 177,\\quad \\text{WC} = 355 - 177\n$$\n\n$$\n\\text{WC} = 178\n$$\n\nWC = 355 − 177 = 178. The stem cites €178 thousand; the arithmetic supports that reading.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.060",
+      "title": "Liquidity From the Balance Sheet 60",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 474 |\n| Machinery | 153 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 97 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 104 |\n| Total assets | **963** |\n| **EQUITY** | |\n| Share capital | 119 |\n| Retained earnings | 191 |\n| Total equity | **310** |\n| **LIABILITIES** | |\n| Long-term bank loan | 424 |\n| Bonds payable | 51 |\n| Trade payables | 114 |\n| Bank overdraft | 64 |\n| Total liabilities | **653** |\n| Total equity and liabilities | **963** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.22 times over.",
+        "The equity ratio is below 28.8%.",
+        "Working capital of €102 thousand is positive on this balance sheet.",
+        "Buildings make up more than 55.3% of total assets.",
+        "Inventory make up more than 46% of current assets."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 280,\\quad \\text{Inventory} = 97,\\quad \\text{CL} = 178\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 280 - 97 = 183\n$$\n\n$$\n\\frac{183}{178} \\approx 1.0281 \\le 1.22\n$$\n\nSo the statement is False.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 310,\\quad \\text{Total assets} = 963\n$$\n\n$$\n\\frac{310}{963} \\approx 0.3219 \\approx 32.2\\%\n$$\n\n$$\n32.2\\% > 28.8\\%\n$$\n\nThe equity ratio is 32.2%, above the 28.8% benchmark. Equity ratio ≈ 310 ÷ 963 = 32.2%. Claim: is below 28.8%. 32.2% does not fit. The equity ratio places equity against total assets. Financing structure is read from that percentage, not from a single euro line alone. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 280 and current liabilities total 178:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 280, \\quad \\text{CL} = 178,\\quad \\text{WC} = 280 - 178\n$$\n\n$$\n\\text{WC} = 102\n$$\n\nWC = 280 − 178 = 102. The stem cites €102 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "From the extract, Buildings = 474 and total assets = 963.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{474}{963}\n$$\n\n$$\n\\text{Share} = 49.2\\%\n$$\n\nBuildings / total assets ≈ 474 ÷ 963 = 49.2%. More than 55.3% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False.",
+        "From the extract, Inventory = 97 and current assets = 280.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{97}{280}\n$$\n\n$$\n\\text{Share} = 34.6\\%\n$$\n\nInventory / current assets ≈ 97 ÷ 280 = 34.6%. More than 46% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.077",
+      "title": "Balance Sheet Structure Review 77",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 124 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 231 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1214** |\n| **EQUITY** | |\n| Share capital | 110 |\n| Retained earnings | 474 |\n| Total equity | **584** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 47 |\n| Trade payables | 153 |\n| Bank overdraft | 84 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **1214** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Working capital of €279 thousand is positive on this balance sheet.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 0.9 times over.",
+        "Buildings make up more than 38.9% of total assets.",
+        "Inventory make up more than 42.9% of current assets.",
+        "The combined total of equity and non-current liabilities exceeds non-current assets by more than 26.8%."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 516 and current liabilities total 237:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 516, \\quad \\text{CL} = 237,\\quad \\text{WC} = 516 - 237\n$$\n\n$$\n\\text{WC} = 279\n$$\n\nWC = 516 − 237 = 279. The stem cites €279 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €279 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 516,\\quad \\text{Inventory} = 231,\\quad \\text{CL} = 237\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 516 - 231 = 285\n$$\n\n$$\n\\frac{285}{237} \\approx 1.2025 > 0.9\n$$\n\nSo the statement is True.",
+        "From the extract, Buildings = 502 and total assets = 1,214.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{502}{1{,}214}\n$$\n\n$$\n\\text{Share} = 41.4\\%\n$$\n\nBuildings / total assets ≈ 502 ÷ 1,214 = 41.4%. More than 38.9% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is True.",
+        "From the extract, Inventory = 231 and current assets = 516.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{231}{516}\n$$\n\n$$\n\\text{Share} = 44.8\\%\n$$\n\nInventory / current assets ≈ 231 ÷ 516 = 44.8%. More than 42.9% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "Long-term financing surplus = (equity + non-current liabilities) ÷ non-current assets − 1.\n\n$$\n\\text{Surplus} = \\frac{\\text{equity} + \\text{NCL}}{\\text{NCA}} - 1\n$$\n\n$$\n\\text{Equity} + \\text{NCL} = 584 + 393 = 977\n$$\n\n$$\n\\text{NCA} = 698\n$$\n\n$$\n\\frac{977}{698} \\approx 1.3997\n$$\n\n$$\n\\frac{977}{698} - 1 \\approx 0.3997 \\approx 40.0\\%\n$$\n\n$$\n40.0\\% > 26.8\\%\n$$\n\nYear-2 NCL/equity is 40.0%, above the 26.8% claim.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.029",
+      "title": "Balance Sheet Structure Review 29",
+      "subsection": "6.5",
+      "chapter": null,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 485 |\n| Machinery | 256 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 273 |\n| Trade receivables | 145 |\n| Cash and cash equivalents | 45 |\n| Total assets | **1347** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 684 |\n| Total equity | **882** |\n| **LIABILITIES** | |\n| Long-term bank loan | 288 |\n| Bonds payable | 49 |\n| Trade payables | 80 |\n| Bank overdraft | 48 |\n| Total liabilities | **465** |\n| Total equity and liabilities | **1347** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio exceeds 1.55.",
+        "The equity ratio is below 28.7%.",
+        "The debt ratio exceeds 76.4%.",
+        "Working capital of €335 thousand is positive on this balance sheet.",
+        "Buildings make up more than 50.7% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "The current ratio puts current assets against current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 273 + 145 + 45,\\quad \\text{CA} = 463,\\quad \\text{CL} = 80 + 48\n$$\n\n$$\n\\text{CL} = 128\n$$\n\n$$\n\\frac{463}{128} \\approx 3.6172 > 1.55\n$$\n\nCurrent ratio = 463 ÷ 128 ≈ 3.62. The claim says the ratio exceeds 1.55. 3.62 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is True.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 882,\\quad \\text{Total assets} = 1{,}347\n$$\n\n$$\n\\frac{882}{1{,}347} \\approx 0.6548 \\approx 65.5\\%\n$$\n\n$$\n65.5\\% > 28.7\\%\n$$\n\nThe equity ratio is 65.5%, above the 28.7% benchmark. Equity ratio ≈ 882 ÷ 1,347 = 65.5%.\n\nSo the statement is False.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 465,\\quad \\text{Total assets} = 1{,}347\n$$\n\n$$\n\\frac{465}{1{,}347} \\approx 0.3452 \\approx 34.5\\%\n$$\n\n$$\n34.5\\% < 76.4\\%\n$$\n\nThe debt ratio is 34.5%, below the 76.4% benchmark. Debt ratio ≈ 465 ÷ 1,347 = 34.5%.\n\nSo the statement is False.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 463 and current liabilities total 128:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 463, \\quad \\text{CL} = 128,\\quad \\text{WC} = 463 - 128\n$$\n\n$$\n\\text{WC} = 335\n$$\n\nWC = 463 − 128 = 335. The stem cites €335 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €335 thousand is positive on this balance sheet.\n\nSo the statement is True.",
+        "From the extract, Buildings = 485 and total assets = 1,347.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{485}{1{,}347}\n$$\n\n$$\n\\text{Share} = 36.0\\%\n$$\n\nBuildings / total assets ≈ 485 ÷ 1,347 = 36.0%. More than 50.7% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) In 1928, Alexander Fleming observed that a mould contaminating one of his bacterial cultures had destroyed the surrounding bacteria, a chance discovery that initially attracted little practical attention. It was not until the early 1940s, when researchers Howard Florey and Ernst Chain successfully purified and stabilised the compound, that penicillin became viable for clinical use. Allied manufacturers subsequently mass-produced it during the Second World War, saving countless soldiers from infections that would previously have been fatal.\n\n(2) The years that followed were widely celebrated as the beginning of an \"antibiotic era,\" during which bacterial infections that had killed for centuries suddenly became routinely treatable. Yet the celebration proved premature: by 1947, only a few years after penicillin entered widespread clinical use, researchers had already identified strains of Staphylococcus bacteria capable of resisting its effects.\n\n(3) The scale of the resulting problem has grown considerably. A large-scale global study published in 2019 estimated that bacterial antimicrobial resistance was directly responsible for approximately 1.27 million deaths that year, with a further 4.95 million deaths associated with resistant infections more broadly, a toll exceeding that of several long-feared infectious diseases.\n\n(4) Human clinical use is not the only driver of this problem. In some countries, an estimated 70% of medically important antibiotics, measured by volume, are used in livestock farming, primarily to promote growth and prevent disease among densely housed animals rather than to treat animals that are already sick. This agricultural use contributes substantially to the environmental spread of resistance genes.\n\n(5) At the biological level, resistance can arise through spontaneous mutation within a single bacterial population, but it can also spread through horizontal gene transfer, in which mobile genetic elements called plasmids carry resistance genes between entirely different bacterial species, not merely within one.\n\n(6) Economic incentives have compounded the biological challenge. Antibiotics are typically taken for days or weeks to cure an acute infection, unlike medications for chronic conditions that patients may take for years, making antibiotics considerably less profitable to develop. Partly as a result, many major pharmaceutical companies withdrew from antibiotic research between the 1990s and the 2010s, and only one genuinely new class of antibiotics has reached clinical practice since 1987, a prolonged gap researchers have termed the \"discovery void.\"\n\n(7) In response, the World Health Organization adopted its Global Action Plan on Antimicrobial Resistance in 2015. In the years that followed, policymakers and researchers proposed a range of \"push\" and \"pull\" incentive models, including subsidies for early-stage research and guaranteed market-entry rewards for successfully developed drugs.\n\n(8) A further structural paradox complicates these efforts. Once a new antibiotic is developed, physicians and health authorities typically insist it be used only sparingly, precisely in order to delay the emergence of resistance and preserve its long-term effectiveness. This appropriate caution, however, directly undermines the sales-based revenue models that would normally reward a pharmaceutical company for its investment, since a drug deliberately kept in reserve generates little revenue.\n\n(9) Whether antimicrobial resistance constitutes a slow-moving but existential global threat demanding a fundamental restructuring of how drug development is funded, or a serious yet ultimately manageable problem solvable through incremental policy adjustments, remains an actively contested question among global health experts and economists alike.",
+    "passageTitle": "The Antibiotic Discovery Void and the Economics of Resistance",
+    "tasks": [
+      {
+        "case_id": "ENG T.7.05",
+        "id": "en-t-7-05",
+        "title": "Task 5",
+        "subsection": "t.7",
+        "context": "Each statement describes a piece of reasoning inspired by the passage and names a specific logical fallacy it supposedly commits, or claims it involves no fallacy at all. Decide if the fallacyidentification (or lack thereof) is accurate.",
+        "statements": [
+          "\"Since resistant strains appeared soon after penicillin's introduction, all resistance today must be caused solely by antibiotic use\" commits a single-cause fallacy, since the passage also cites mutation, horizontal gene transfer, and agricultural use as separate contributing factors.",
+          "\"Firms exited antibiotic research once profits declined, therefore declining profit was the only reason any firm ever left the field\" commits a single-cause fallacy, since the passage also cites the stewardship paradox as a separate structural factor.",
+          "\"Because the WHO adopted its action plan and incentive proposals followed shortly afterward, the plan alone must have directly caused every proposal\" commits circular reasoning, since the conclusion simply restates the premise without adding support.",
+          "\"Because agricultural antibiotic use is substantial, resistance must originate exclusively from agriculture, with clinical use playing no role\" commits a false dichotomy, since the passage discusses both pathways as contributing.",
+          "\"Since resistance genes can transfer between bacterial species via plasmids, resistance originating in one population can plausibly spread beyond it\" is a valid inference directly supported by the passage, not a fallacy."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Since resistant strains appeared soon after penicillin's introduction, all resistance today must be caused solely by antibiotic use\" commits a single-cause fallacy, since the passage also cites mutation, horizontal gene transfer, and agricultural use as separate contributing factors.**\n\nThe quoted leap treats early clinical resistance as the sole cause of all resistance now. Paragraphs 4–5 also name agricultural livestock use, spontaneous mutation, and cross-species plasmid transfer as distinct contributors, so labeling a \"solely\" claim as single-cause is accurate. Notice that the item asks whether the fallacy label is correct, not whether the quoted argument is persuasive.\n\n**Tip:** One named cause plus \"solely/all\" usually signals single-cause overreach when the passage lists several drivers.\n\nParagraph 4 opens by stating outright that clinical use \"is not the only driver,\" which is as direct a refutation of a single-cause claim as a passage can give. The quoted argument also starts from a true premise, a reminder that a fallacy lives in the inference rather than in the facts it begins with.\n\nThe fallacy label fits the oversimplified \"solely\" claim against the passage’s multiple factors, so the statement holds.",
+          "**B) \"Firms exited antibiotic research once profits declined, therefore declining profit was the only reason any firm ever left the field\" commits a single-cause fallacy, since the passage also cites the stewardship paradox as a separate structural factor.**\n\nParagraph 6 links weak profits to industry exit, but Paragraph 8 adds a separate stewardship paradox: sparingly used new drugs undermine sales-based revenue. Treating declining profit as the \"only\" reason ignores that second structure, so single-cause is the right label. The stewardship problem is presented as a \"further structural paradox,\" language that explicitly marks it as an additional factor rather than a restatement of the first.\n\n**Tip:** Words like \"further\" and \"in addition\" are the passage telling you a second cause is on the table.\n\nParagraph 6 itself hedges with \"partly as a result,\" so even the profit explanation is offered as partial. An argument that upgrades a partial cause to the only cause has overreached by the passage’s own wording.\n\nProfit decline is one driver among others in the passage, so the single-cause identification holds.",
+          "**C) \"Because the WHO adopted its action plan and incentive proposals followed shortly afterward, the plan alone must have directly caused every proposal\" commits circular reasoning, since the conclusion simply restates the premise without adding support.**\n\nThe quoted move is from \"plan, then proposals\" to \"plan caused every proposal\" — temporal succession treated as sole causation (post hoc), not a circle that restates the same claim as its own proof. Circular reasoning would recycle the conclusion as the premise; here the error is mislabeled. The argument does contain a real flaw, which is what makes the wrong label tempting.\n\n**Trap:** Post hoc sequence arguments are often miscoded as \"circular\" when the real defect is cause-from-timing.\n\nThe diagnostic question for circularity is whether the premise already assumes the conclusion; here the premise is a neutral fact about ordering that Paragraph 7 supports. Since sequence and cause are genuinely different claims, the reasoning moves forward illegitimately rather than looping back on itself.\n\nThe argument is post hoc, not circular, so this fallacy identification fails.",
+          "**D) \"Because agricultural antibiotic use is substantial, resistance must originate exclusively from agriculture, with clinical use playing no role\" commits a false dichotomy, since the passage discusses both pathways as contributing.**\n\nParagraph 4 opens by denying that \"human clinical use is… the only driver,\" then adds agricultural volume as a further pathway. Forcing \"exclusively… agriculture\" versus \"clinical use playing no role\" erases that both-and picture, so false dichotomy is correct. The quoted argument turns a statement about scale into a statement about exclusivity, which is a much stronger claim.\n\n**Tip:** \"Exclusively / no role\" language often collapses two passage pathways into a fake either/or.\n\nParagraph 4 says agricultural use \"contributes substantially,\" and contributing substantially is precisely not the same as accounting for everything. The passage frames the two routes as additive, so treating them as mutually exclusive options misreads the relationship.\n\nThe exclusive-agriculture claim wrongly forces one path, so the false-dichotomy label holds.",
+          "**E) \"Since resistance genes can transfer between bacterial species via plasmids, resistance originating in one population can plausibly spread beyond it\" is a valid inference directly supported by the passage, not a fallacy.**\n\nParagraph 5’s plasmid transfer \"between entirely different bacterial species\" licenses the modest inference that resistance need not stay inside one population. Calling that sound reading a fallacy would invent an error the passage does not create. The hedge \"plausibly\" keeps the conclusion no stronger than the mechanism the passage describes.\n\n**Tip:** Not every item in a fallacy set contains a fallacy — some test whether you can recognise a sound inference.\n\nThe inference stays within the scope of its premise: crossing species boundaries is a larger step than spreading beyond one population, so the conclusion is weaker than what the passage already states. Inferences that ask for less than the evidence supplies are the safest kind.\n\nCross-species plasmid transfer supports the modest spread inference, so treating it as valid — not fallacious — holds."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.7.03",
+        "id": "en-t-7-03",
+        "title": "Task 3",
+        "subsection": "t.7",
+        "context": "Statements test close reading comprehension in paragraph order, with one numeric statement woven in at its correct position.",
+        "statements": [
+          "The WHO adopted its Global Action Plan on Antimicrobial Resistance in 2015.",
+          "\"Push\" and \"pull\" incentive models are described as identical mechanisms with no meaningful distinction drawn between them.",
+          "Physicians are described as typically insisting new antibiotics be used sparingly in order to preserve their long-term effectiveness.",
+          "This deliberate caution is described as directly reinforcing, rather than undermining, sales-based revenue models for pharmaceutical companies.",
+          "The passage concludes by presenting AMR's ultimate severity as a fully settled question among experts."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The WHO adopted its Global Action Plan on Antimicrobial Resistance in 2015.**\n\nParagraph 7 states that \"the World Health Organization adopted its Global Action Plan on Antimicrobial Resistance in 2015.\" Institution, plan name, and year line up. The verb \"adopted\" is also retained, which keeps the statement about a formal decision rather than about drafting or implementing the plan.\n\n**Tip:** For institution-plus-date items, verify all three parts separately: who acted, what the thing was called, and when.\n\nAbbreviating \"World Health Organization\" to \"the WHO\" is a purely surface change and does not touch the factual content. Items like this are usually true, and the useful habit is confirming quickly rather than hunting for a trap that is not there.\n\nThe 2015 WHO plan adoption in Paragraph 7 matches the statement, so the claim holds.",
+          "**B) \"Push\" and \"pull\" incentive models are described as identical mechanisms with no meaningful distinction drawn between them.**\n\nParagraph 7 introduces \"a range of 'push' and 'pull' incentive models,\" then exemplifies them differently: subsidies for early-stage research versus \"guaranteed market-entry rewards.\" Identical mechanisms with \"no meaningful distinction\" is invented. The two examples sit on opposite ends of the development pipeline, one funding work before it starts and one paying out after a drug succeeds.\n\n**Trap:** Treating two named categories as synonyms ignores the paired examples that separate them.\n\nThe passage does not define push and pull explicitly, which is what makes this item tempting, but the parallel examples supply the contrast implicitly. Paired terms joined by \"and\" and illustrated by contrasting cases are being distinguished, not equated.\n\nThe passage presents push and pull as distinct incentive types, so the claim fails.",
+          "**C) Physicians are described as typically insisting new antibiotics be used sparingly in order to preserve their long-term effectiveness.**\n\nParagraph 8 says physicians and health authorities \"typically insist it be used only sparingly, precisely in order to delay the emergence of resistance and preserve its long-term effectiveness.\" Motive and practice both match. The statement keeps \"typically,\" so the behaviour remains a general norm rather than an absolute rule.\n\n**Tip:** When a purpose clause (\"in order to…\") is copied along with the action, the statement is reporting both what is done and why.\n\nThe passage names two aims — delaying resistance and preserving effectiveness — and the statement cites the second. Mentioning one of two stated purposes narrows the claim without contradicting it, so the item stays faithful.\n\nThe stewardship sparingly-use claim in Paragraph 8 matches the statement, so the claim holds.",
+          "**D) This deliberate caution is described as directly reinforcing, rather than undermining, sales-based revenue models for pharmaceutical companies.**\n\nParagraph 8 says the caution \"directly undermines the sales-based revenue models\" that would reward firms, because reserve use \"generates little revenue.\" \"Reinforcing\" reverses the commercial effect. The statement borrows the passage’s own adverb \"directly\" and even its \"rather than\" framing, which makes the substituted verb the only moving part.\n\n**Trap:** Flipping undermines → reinforcing keeps the stewardship language while killing the paradox.\n\nParagraph 8 is explicitly labelled a \"structural paradox,\" and a paradox requires the two forces to pull against each other. If caution reinforced revenue there would be no tension left for the paragraph to describe.\n\nThe statement contradicts Paragraph 8’s \"undermines…sales-based revenue models,\" so it fails against the passage.",
+          "**E) The passage concludes by presenting AMR's ultimate severity as a fully settled question among experts.**\n\nParagraph 9 frames severity as \"an actively contested question among global health experts and economists alike,\" not a closed consensus. \"Fully settled\" erases that open dispute. The final paragraph is built as a pair of alternatives — existential threat versus manageable problem — and it declines to choose between them.\n\n**Trap:** Contested / unsettled closings are often rewritten as confident settled verdicts.\n\nThe grammar of that last sentence is the giveaway: a long \"whether… or…\" subject followed by \"remains an actively contested question.\" A sentence whose main verb reports ongoing disagreement cannot support a claim of settled expert opinion.\n\nThe ending treats AMR’s severity as actively contested, so the \"settled\" claim fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.7.04",
+        "id": "en-t-7-04",
+        "title": "Task 4",
+        "subsection": "t.7",
+        "context": "Statements test whether the relative order of events described across the passage has been correctly identified.",
+        "statements": [
+          "Fleming's initial discovery occurred before Florey and Chain's purification work made penicillin clinically viable.",
+          "Resistant Staphylococcus strains were identified before penicillin entered widespread clinical use.",
+          "The pharmaceutical industry's withdrawal from antibiotic research (1990s–2010s) began before the \"discovery void\" following 1987 could have been observed.",
+          "The WHO's Global Action Plan was adopted before push-and-pull incentive models were proposed in response to it.",
+          "The 2019 global mortality study was published before Fleming's original 1928 observation."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Fleming's initial discovery occurred before Florey and Chain's purification work made penicillin clinically viable.**\n\nParagraph 1 places Fleming’s observation in 1928 and Florey and Chain’s purification that made penicillin clinically viable in \"the early 1940s.\" 1928 precedes the early 1940s, so the relative order is right. The paragraph reinforces that ordering with \"It was not until the early 1940s,\" a construction that only makes sense if something earlier had already happened.\n\n**Tip:** For ordering items, anchor each event to its stated year first, then compare the numbers rather than the sentence order.\n\nSentence order and chronological order happen to agree here, which is the easy case. When they diverge, the dates and time markers rule, not the order in which the paragraph mentions the events.\n\nFleming’s discovery comes before the purification milestone in Paragraph 1, so the chronology holds.",
+          "**B) Resistant Staphylococcus strains were identified before penicillin entered widespread clinical use.**\n\nParagraph 2 says resistant Staphylococcus strains were identified \"only a few years after penicillin entered widespread clinical use.\" Clinical use therefore came first; resistance identification followed. The word \"after\" in the passage fixes the direction, and the statement simply substitutes \"before\" for it.\n\n**Trap:** Swapping \"before\" and \"after\" on a short lag is a frequent chronology trap.\n\nA short interval makes the reversal feel harmless, but the causal logic depends on it: widespread use created the selective pressure under which resistant strains were then noticed. Reversing the order would make the paragraph’s point about premature celebration incoherent.\n\nThe statement reverses Paragraph 2’s \"few years after\" sequence, so the chronology fails.",
+          "**C) The pharmaceutical industry's withdrawal from antibiotic research (1990s–2010s) began before the \"discovery void\" following 1987 could have been observed.**\n\nParagraph 6 dates the discovery void from 1987 (\"only one genuinely new class… since 1987\") and places industry withdrawal \"between the 1990s and the 2010s.\" The post-1987 gap is already underway before and during that withdrawal window; the withdrawal cannot begin before a void \"following 1987\" could even be noticed. The passage also links the two with \"partly as a result,\" which presupposes that the economic conditions preceded the exit.\n\n**Trap:** Putting 1990s exit before a 1987-start gap reverses which span can be observed first.\n\nThe test here is which span opens first, not which is described first in the paragraph. A gap dated from 1987 is already several years old by the time the 1990s begin, so it is observable before the withdrawal window opens.\n\nThe 1987 void precedes the 1990s–2010s withdrawal in Paragraph 6, so this order fails.",
+          "**D) The WHO's Global Action Plan was adopted before push-and-pull incentive models were proposed in response to it.**\n\nParagraph 7 dates the WHO plan to 2015, then says \"in the years that followed, policymakers and researchers proposed\" push and pull incentives. Adoption therefore precedes those proposals. The phrase \"in response\" in the statement also matches the paragraph’s framing, which presents the proposals as part of the reaction the plan set in motion.\n\n**Tip:** Phrases like \"in the years that followed\" are explicit ordering signals — treat them as dates.\n\nOnly one absolute year appears here, so the sequencing rests entirely on that transitional phrase. Reading it carefully is what lets you settle the item without needing a second date.\n\nThe plan-first, incentives-later order in Paragraph 7 matches the statement, so the chronology holds.",
+          "**E) The 2019 global mortality study was published before Fleming's original 1928 observation.**\n\nParagraph 1 dates Fleming to 1928; Paragraph 3 dates the mortality study to 2019. Nearly a century separates them, with Fleming first. Both dates are stated outright, so no inference is needed — only a comparison of the two numbers.\n\n**Trap:** Cross-paragraph year swaps are easy to miss when both dates feel \"famous.\"\n\nThe two facts sit in different paragraphs, which is what the item exploits: readers who check each paragraph separately may never place the dates side by side. Collecting every year onto one mental timeline before answering removes the difficulty.\n\nCalling 2019 earlier than 1928 reverses the passage timeline, so the chronology fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.7.01",
+        "id": "en-t-7-01",
+        "title": "Task 1",
+        "subsection": "t.7",
+        "context": "Statements test close reading comprehension in paragraph order, with one numeric statement woven in at its correct position.",
+        "statements": [
+          "Fleming's initial 1928 observation is described as having immediately attracted widespread practical attention and clinical use.",
+          "Florey and Chain are credited with purifying and stabilising penicillin, enabling its clinical use in the early 1940s.",
+          "Resistant strains of Staphylococcus were identified by 1947, only a few years after penicillin's widespread clinical introduction.",
+          "The 2019 global study estimated that bacterial resistance was directly responsible for approximately 1.27 million deaths that year, with 4.95 million deaths associated with resistant infections more broadly.",
+          "The passage describes the toll of antimicrobial resistance as smaller than that of several long-feared infectious diseases."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Fleming's initial 1928 observation is described as having immediately attracted widespread practical attention and clinical use.**\n\nParagraph 1 says Fleming’s chance discovery \"initially attracted little practical attention,\" and only became clinically viable after Florey and Chain’s early-1940s purification work. Immediate widespread attention and clinical use is the opposite of that timeline. The paragraph deliberately builds a two-stage story: an accidental observation in 1928, then a long pause before anyone could turn it into medicine.\n\n**Trap:** Turning \"little\" early interest into \"immediate\" practical success is a classic flip of the discovery story.\n\nNotice that the passage separates \"discovery\" from \"clinical use\" by roughly fifteen years, and the adverb \"initially\" is the word doing that work. Whenever a statement compresses a staged timeline into a single instant, check the time markers before the verdict.\n\nThe claim reverses Paragraph 1’s \"little practical attention,\" so it fails against the passage.",
+          "**B) Florey and Chain are credited with purifying and stabilising penicillin, enabling its clinical use in the early 1940s.**\n\nParagraph 1 states that \"researchers Howard Florey and Ernst Chain successfully purified and stabilised the compound,\" making penicillin \"viable for clinical use\" in \"the early 1940s.\" The statement restates that credit without changing the agents or the date window. Both verbs — purified and stabilised — survive the paraphrase intact, and no third party is smuggled in as the responsible researcher.\n\n**Tip:** When names, verbs, and decade match the paragraph, a faithful paraphrase stays true.\n\nThe passage’s construction \"It was not until… that penicillin became viable\" is what licenses \"enabling\": the clinical viability is presented as a consequence of their work. A true paraphrase can restructure that sentence freely so long as the causal direction stays the same.\n\nParagraph 1’s purification credit matches the statement, so the claim holds.",
+          "**C) Resistant strains of Staphylococcus were identified by 1947, only a few years after penicillin's widespread clinical introduction.**\n\nParagraph 2 reports that \"by 1947, only a few years after penicillin entered widespread clinical use, researchers had already identified strains of Staphylococcus bacteria capable of resisting its effects.\" Date, organism, and \"few years after\" sequencing all align. The statement even preserves the direction of the lag, keeping widespread use first and identification second.\n\n**Tip:** When a date, an organism name, and a sequencing phrase all survive the rewrite unchanged, there is no room left for a hidden flip.\n\nThe word \"already\" in the passage carries the paragraph’s argument — that the celebration was premature — but it adds emphasis rather than new content, so dropping it does not alter the factual claim.\n\nThe 1947 Staphylococcus resistance timeline in Paragraph 2 matches the statement, so the claim holds.",
+          "**D) The 2019 global study estimated that bacterial resistance was directly responsible for approximately 1.27 million deaths that year, with 4.95 million deaths associated with resistant infections more broadly.**\n\nParagraph 3 gives both figures in order: \"approximately 1.27 million deaths\" directly, \"with a further 4.95 million deaths associated with resistant infections more broadly.\" The statement copies those quantities without swapping roles. The smaller figure stays attached to direct responsibility and the larger one to the broader association, which is exactly how the study is reported.\n\n**Tip:** Keep \"directly responsible\" separate from the larger \"associated\" total — both numbers appear in the same sentence.\n\nA common variant of this item exchanges the two numbers, so read the qualifier attached to each figure rather than checking that the digits appear somewhere. Here \"approximately\" and \"a further\" are also preserved, keeping the estimate appropriately hedged.\n\nThe 2019 mortality pair in Paragraph 3 matches the statement, so the claim holds.",
+          "**E) The passage describes the toll of antimicrobial resistance as smaller than that of several long-feared infectious diseases.**\n\nParagraph 3 says the AMR toll is \"exceeding that of several long-feared infectious diseases,\" not falling short of them. \"Smaller than\" reverses the comparison word that decides the item. Everything else in the statement — the toll, the comparison class of long-feared diseases — is copied faithfully, which is what makes the single reversed word easy to overlook.\n\n**Trap:** Direction words like exceeding / smaller are frequent quantity traps beside the big death figures.\n\nThe comparative is the whole point of the sentence: the paragraph cites 1.27 and 4.95 million precisely to argue that AMR outranks better-known killers. Reading only the numbers and skipping the comparative leaves you with no way to settle the item.\n\nThe statement flips Paragraph 3’s \"exceeding\" comparison, so it fails against the passage."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.7.02",
+        "id": "en-t-7-02",
+        "title": "Task 2",
+        "subsection": "t.7",
+        "context": "Statements test close reading comprehension in paragraph order, with one numeric statement woven in at its correct position.",
+        "statements": [
+          "An estimated 70% of medically important antibiotics, by volume, are used in livestock farming in some countries.",
+          "Agricultural antibiotic use is described as primarily aimed at treating animals that are already sick, rather than at growth promotion or disease prevention.",
+          "Horizontal gene transfer is described as capable of moving resistance genes only within a single bacterial species, never between different species.",
+          "Antibiotics are described as less profitable to develop than chronic disease medications, partly because they are typically taken only briefly.",
+          "Only one genuinely new class of antibiotics is described as having reached clinical practice since 1987."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) An estimated 70% of medically important antibiotics, by volume, are used in livestock farming in some countries.**\n\nParagraph 4 states that \"in some countries, an estimated 70% of medically important antibiotics, measured by volume, are used in livestock farming.\" Scope (\"some countries\"), share, and volume basis all match. The statement also keeps \"estimated,\" so the figure stays a projection rather than hardening into a global fact.\n\n**Tip:** Check the three hedges together — \"some countries,\" \"estimated,\" and \"by volume\" — because dropping any one of them would overstate the claim.\n\nThe phrase \"measured by volume\" matters because a share of total tonnage is not the same as a share of prescriptions or doses. The statement carries that qualifier over, so the measurement basis is unchanged.\n\nThe livestock-volume estimate in Paragraph 4 matches the statement, so the claim holds.",
+          "**B) Agricultural antibiotic use is described as primarily aimed at treating animals that are already sick, rather than at growth promotion or disease prevention.**\n\nParagraph 4 says agricultural use is \"primarily to promote growth and prevent disease among densely housed animals rather than to treat animals that are already sick.\" The statement swaps primary and secondary purposes. Every noun in the list survives; only the two sides of the \"rather than\" contrast have changed places.\n\n**Trap:** Reversing \"primarily… rather than…\" turns the farming motivation on its head while keeping familiar nouns.\n\nThe structure \"primarily X rather than Y\" always ranks two purposes, so the reading test is which item sits before the connective. Here the passage puts growth promotion and disease prevention first, which is precisely what the statement demotes.\n\nThe claim reverses Paragraph 4’s growth/prevention priority, so it fails against the passage.",
+          "**C) Horizontal gene transfer is described as capable of moving resistance genes only within a single bacterial species, never between different species.**\n\nParagraph 5 explains that plasmids \"carry resistance genes between entirely different bacterial species, not merely within one.\" \"Only within a single species\" is the opposite limit. The passage even anticipates the misreading with its closing clause, which exists specifically to rule out the within-one-species restriction.\n\n**Trap:** Narrowing \"between different species\" to \"only within one\" flips the biological point of horizontal transfer.\n\nParagraph 5 sets up a contrast between two routes: spontaneous mutation inside one population and horizontal transfer across populations. Collapsing the second route into the first erases the distinction the whole sentence was built to draw.\n\nThe statement contradicts Paragraph 5’s cross-species plasmid spread, so it fails against the passage.",
+          "**D) Antibiotics are described as less profitable to develop than chronic disease medications, partly because they are typically taken only briefly.**\n\nParagraph 6 contrasts short antibiotic courses (\"days or weeks\") with chronic drugs patients \"may take for years,\" concluding antibiotics are \"considerably less profitable to develop.\" Brief use is the stated profit rationale. The hedge \"partly\" is also fair, since the paragraph presents duration as one input into the profitability picture rather than the only one.\n\n**Tip:** A causal paraphrase is safe when the text itself supplies the link — here the participial \"making antibiotics considerably less profitable.\"\n\nThe comparison class matters as much as the cause: the passage measures antibiotics against chronic-condition medicines, not against drugs in general, and the statement keeps that same benchmark.\n\nParagraph 6’s short-course profit logic matches the statement, so the claim holds.",
+          "**E) Only one genuinely new class of antibiotics is described as having reached clinical practice since 1987.**\n\nParagraph 6 says \"only one genuinely new class of antibiotics has reached clinical practice since 1987,\" the gap later labeled the \"discovery void.\" The count and start year are exact. The statement also preserves \"class,\" which is a much coarser unit than an individual drug and is what makes the figure so striking.\n\n**Tip:** Watch the unit of counting — one new class is not the same as one new antibiotic, and swapping them would break the claim.\n\nThe qualifier \"genuinely new\" excludes derivatives of existing families, so the sentence is narrower than a blanket statement about approvals. Keeping that adjective is what allows the statement to stay faithful.\n\nThe single-class-since-1987 claim in Paragraph 6 matches the statement, so the claim holds."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.7.10",
+        "id": "en-t-7-10",
+        "title": "Task 10",
+        "subsection": "t.7",
+        "context": "Decide whether each word, as it would be used in a sentence echoing the passage's themes, is correctly identified as literal or figurative.",
+        "statements": [
+          "\"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.",
+          "\"Arms race,\" used to describe the ongoing competition between antibiotic development and bacterial evolution, is used in its original, literal military sense.",
+          "\"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.",
+          "\"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.",
+          "\"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) \"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.**\n\nEpidemiology borrows \"reservoir\" from literal water storage to mean a host population that keeps a pathogen stocked over time. That figurative extension fits agricultural reservoirs of resistance implied by Paragraph 4’s livestock use. The metaphor works because both senses share the idea of something being held in quantity and available to be released.\n\n**Tip:** Literal water storage → figurative pathogen-holding population is a standard science metaphor.\n\nThe statement also explains the transfer rather than just labelling it, which is what makes it accurate: a population is not a container of water, but it functions as a store. Densely housed animals receiving routine antibiotics are precisely the kind of maintaining population the term names.\n\nThe figurative reservoir reading is correctly identified, so the claim holds.",
+          "**B) \"Arms race,\" used to describe the ongoing competition between antibiotic development and bacterial evolution, is used in its original, literal military sense.**\n\nDrug-versus-bug \"arms race\" language is a metaphor: competitive escalation borrowed from military rivalry, not tanks and missiles. Calling it the original literal military sense mislabels the figure. Bacteria do not build weapons; what is transferred is the shape of the situation, in which each side’s advance prompts a counter-advance.\n\n**Trap:** Familiar war metaphors in science writing are almost never literal weapon talk.\n\nA metaphor does not become literal through frequent use, however natural the phrase now sounds in medical writing. The passage’s own pattern — new drugs followed by new resistance — is what the borrowed phrase describes, and that pattern is biological rather than military.\n\nThe military-literal claim is wrong for this figurative use, so the statement fails.",
+          "**C) \"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.**\n\nParagraph 3’s huge AMR death toll is the kind of impact health writers call a \"burden\" — figurative weight/cost, not a load on someone’s back. The passage’s own word \"toll\" works the same way, naming a cost rather than a physical object.\n\n**Tip:** Abstract nouns paired with numbers — burden, toll, cost — are usually measuring impact figuratively.\n\nThe metaphor imports the idea of weight to convey scale: 1.27 million direct deaths and 4.95 million associated ones are presented as something societies carry. Reading \"burden\" literally here would make the standard epidemiological phrase meaningless.\n\nFigurative \"burden of disease\" correctly tracks impact rather than a physical object, so the claim holds.",
+          "**D) \"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.**\n\nParagraph 6’s quoted \"discovery void\" names a prolonged absence of genuinely new antibiotic classes since 1987 — a gap in innovation, not an empty room. The passage glosses the term itself, calling it \"a prolonged gap researchers have termed the 'discovery void,'\" which spells out the figurative reading.\n\n**Tip:** When a passage supplies its own gloss for a coined phrase, that gloss settles literal-versus-figurative questions.\n\nWhat is empty here is a period of time rather than a region of space, so the spatial sense of \"void\" has been transferred to a temporal and conceptual absence. The quotation marks around the phrase in the passage further mark it as a specialist coinage rather than plain description.\n\n\"Discovery void\" as figurative absence matches Paragraph 6, so the claim holds.",
+          "**E) \"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface.**\n\nParagraph 5’s gene \"spread\" through horizontal transfer is biological transmission between species, not literal scattering of solid objects on a surface. \"Only… literal\" therefore mislabels the usage. Genes move by being carried inside plasmids from one organism to another, which is transmission rather than distribution across a plane.\n\n**Trap:** \"Spread\" in infection biology is usually extended transmission language, not dustpan physics.\n\nThe restrictive word \"only\" does the damage here, since it rules out the extended sense the passage actually employs. Paragraph 4’s \"environmental spread of resistance genes\" uses the same transmission meaning, confirming the pattern across the text.\n\nRestricting \"spread\" to literal object-scattering fails against the passage’s gene-transfer sense."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.7.09",
+        "id": "en-t-7-09",
+        "title": "Task 9",
+        "subsection": "t.7",
+        "context": "Decide whether each statement about word meaning or usage is correct.",
+        "statements": [
+          "\"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.",
+          "\"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.",
+          "\"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.",
+          "\"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.",
+          "\"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.**\n\n\"Susceptible\" correctly means easily affected (as resistant bacteria are not). \"Susceptive,\" however, is not a standard, commonly used twin with the same meaning — the second half invents a false friend. Paired vocabulary items like this are only true when both halves survive checking, so one accurate definition cannot rescue the claim.\n\n**Trap:** Near-spellings that \"look Latin\" are often fake twins on vocabulary true/false items.\n\nIn the clinical vocabulary of this passage, susceptible is the working antonym of resistant: a susceptible strain is one an antibiotic still kills. That precise contrast is exactly what a vague invented synonym would blur.\n\nBecause \"susceptive\" is not a real common synonym, the paired claim fails.",
+          "**B) \"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.**\n\nParagraph 1 uses \"viable for clinical use\" for penicillin after purification. \"Viable\" (adjective) and \"viability\" (noun) name the same capacity at different parts of speech — the distinction is exact. Saying penicillin \"became viable\" and saying it \"achieved clinical viability\" would report the same milestone.\n\n**Tip:** Check whether the claimed noun is a true -ity/-ness form of the adjective in the passage.\n\nA derivational pair like this changes the grammar of a sentence without changing what is being claimed. That is the difference between a genuine word-family relationship and a false friend, where the resemblance is only in spelling.\n\nThe viable / viability pairing matches standard usage, so the claim holds.",
+          "**C) \"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.**\n\nParagraph 7’s \"push\" and \"pull\" incentive models are rewards meant to encourage antibiotic development. \"Deterrent\" points the other way — discouragement — so calling them near-opposites is right. The passage’s own examples make the encouraging function concrete: subsidies and guaranteed market-entry rewards both exist to draw firms back into research.\n\n**Tip:** Anchor abstract vocabulary to the passage’s examples; here the incentives are payments designed to attract, not penalties designed to repel.\n\nThe hedge \"near-opposite\" is well chosen, since the two words are not perfect antonyms in every context but do pull in contrary directions on behaviour. Recognising that they answer the same question — encourage or discourage? — with opposite answers is what settles the item.\n\nIncentive versus deterrent as encourage / discourage near-opposites is accurate, so the claim holds.",
+          "**D) \"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.**\n\nParagraph 2’s \"strains of Staphylococcus\" uses the biological-variant sense. \"Stress\" is a different word for pressure or tension; sound similarity does not make them synonyms. Substituting one for the other would make the passage claim that researchers found tensions of Staphylococcus, which is not English.\n\n**Tip:** Exam \"strain / stress\" traps trade on sound, not shared biology meaning.\n\nThe confusion is helped along by the fact that \"strain\" itself has a separate everyday sense of pressure or effort, as in straining a muscle. The item is testing whether you can hold the technical microbiological sense apart from that general one.\n\nThe bacterial-strain versus tension-stress split is correct, so the claim holds.",
+          "**E) \"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time.**\n\nStandard medical English keeps \"dose\" as a single measured amount and \"dosage\" as the planned schedule of doses. Sub-lethal exposure talk in these themes still relies on that dose-unit idea. A patient takes one dose now; the dosage specifies how many such doses to take and how often.\n\n**Tip:** Think of dose as the unit and dosage as the pattern — a single event versus a regimen across time.\n\nThe distinction matters directly for antibiotics, where the passage’s theme of resistance depends on how long and how consistently a course is taken. Confusing the two words would blur the difference between one measured amount and the whole treatment plan.\n\nThe dose / dosage schedule distinction matches careful usage, so the claim holds."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.7.07",
+        "id": "en-t-7-07",
+        "title": "Task 7",
+        "subsection": "t.7",
+        "context": "Each sentence uses a conditional structure. Decide if the conditional type used correctly matches the meaning it is meant to express.",
+        "statements": [
+          "\"If bacteria are exposed repeatedly to sub-lethal doses of an antibiotic, resistant strains eventually emerge.\" (zero conditional, general scientific truth)",
+          "\"If penicillin had never been mass-produced during the war, millions of soldiers would die from infected wounds.\" (mixed past/present tense in a third-conditional context)",
+          "\"If a new antibiotic class were approved tomorrow, it would still take years of clinical trials before reaching patients.\" (second conditional, hypothetical future)",
+          "\"If governments increase funding for antibiotic R&D, resistance rates will immediately disappear worldwide.\" (first conditional, confidently asserting real future certainty)",
+          "\"If resistance had not emerged so quickly after antibiotics' introduction, the era of easy bacterial treatment might have lasted longer.\" (third conditional, hypothetical past)"
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"If bacteria are exposed repeatedly to sub-lethal doses of an antibiotic, resistant strains eventually emerge.\" (zero conditional, general scientific truth)**\n\nPresent + present (\"are exposed… emerge\") is the zero-conditional shape for a general scientific pattern. That matches a repeatable biological outcome of the kind Paragraphs 2 and 5 describe around resistance arising under antibiotic pressure. Both clauses stay in the present simple, which is the formal signature the label names.\n\n**Tip:** Zero conditional = open present facts; it is not a one-off past hypothesis.\n\nThe test for a zero conditional is whether \"if\" could be replaced by \"whenever\" without changing the meaning, and here it could. Because the sentence describes a rule that holds each time the condition is met, the label and the grammar agree.\n\nThe labeled zero conditional fits a general resistance pattern, so the line is true.",
+          "**B) \"If penicillin had never been mass-produced during the war, millions of soldiers would die from infected wounds.\" (mixed past/present tense in a third-conditional context)**\n\n\"Had never been\" opens a past counterfactual that needs a matching past result (\"would have died\"). \"Would die\" shifts into present/future consequence and breaks third-conditional pairing — exactly the mixed-tense fault the label flags. The event in question is fixed in the past, since Paragraph 1 states that Allied manufacturers did mass-produce penicillin during the Second World War.\n\n**Trap:** Past perfect in the if-clause almost always wants \"would have + past participle,\" not bare \"would + base.\"\n\nA genuine mixed conditional pairs a past condition with a present result that still holds, but soldiers dying of wartime wounds is not an ongoing present state. Because both halves of the sentence point to the same finished period, the two clauses must share past reference.\n\nThird-conditional form collapses on \"would die,\" so the line is false.",
+          "**C) \"If a new antibiotic class were approved tomorrow, it would still take years of clinical trials before reaching patients.\" (second conditional, hypothetical future)**\n\n\"Were approved… would still take\" is classic second conditional for an unlikely or hypothetical near future. The imaginary tomorrow-approval scenario matches that tentative mood, especially given Paragraph 6’s discovery void. The subjunctive \"were\" rather than \"was\" reinforces that the speaker treats the scenario as remote.\n\n**Tip:** Past-form verb in the if-clause plus \"would\" in the main clause is the second-conditional fingerprint.\n\nA first conditional (\"if a class is approved, it will take…\") would present the approval as a realistic expectation, which sits awkwardly beside a decades-long innovation gap. The second conditional keeps the scenario appropriately speculative.\n\nThe second-conditional label fits the hypothetical future wording, so the line is true.",
+          "**D) \"If governments increase funding for antibiotic R&D, resistance rates will immediately disappear worldwide.\" (first conditional, confidently asserting real future certainty)**\n\nFormally the if-present + will-future shape is first conditional, but the content asserts an impossible certain outcome (\"will immediately disappear worldwide\"). That overconfident forecast clashes with Paragraph 9’s unsettled, contested seriousness and with the biological drivers that funding alone cannot erase overnight. Paragraphs 4 and 5 name livestock use and horizontal gene transfer as drivers no research budget could switch off instantly.\n\n**Trap:** Correct first-conditional grammar can still be false when the predicted result is wildly overstated.\n\nThe adverbs are where the sentence breaks: \"immediately\" and \"worldwide\" together promise a global, instantaneous reversal. Judging these items means checking that the consequence is credible against the passage, not only that the tense pattern is well formed.\n\nThe confident \"will immediately disappear\" claim overshoots the passage, so the line fails.",
+          "**E) \"If resistance had not emerged so quickly after antibiotics' introduction, the era of easy bacterial treatment might have lasted longer.\" (third conditional, hypothetical past)**\n\n\"Had not emerged… might have lasted\" is a past counterfactual (third conditional) about an alternative history after early resistance. Paragraph 2’s rapid 1947 resistance makes that past hypothetical thematically natural. Both clauses point at the same closed stretch of time, so the tense pairing is internally consistent.\n\n**Tip:** \"Might have\" is a legitimate third-conditional result form — it simply softens the certainty of \"would have.\"\n\nThe sentence imagines a change to something the passage records as fact, which is the defining move of a third conditional. Since the counterfactual and its consequence are both anchored in the past, the label describes the grammar accurately.\n\nThe third-conditional past counterfactual is correctly formed and labeled, so the line is true."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.7.08",
+        "id": "en-t-7-08",
+        "title": "Task 8",
+        "subsection": "t.7",
+        "context": "Each statement proposes converting a passive sentence into active voice. Decide if the meaning and emphasis are fully preserved.",
+        "statements": [
+          "Passive: \"Penicillin was mass-produced by Allied manufacturers during the war.\" → Active: \"Allied manufacturers mass-produced penicillin during the war.\"",
+          "Passive: \"Resistance genes are transferred between bacteria through plasmids.\" → Active: \"Plasmids transfer resistance genes between bacteria.\"",
+          "Passive: \"New antibiotic classes have rarely been approved since 1987.\" → Active: \"Regulators have rarely approved new antibiotic classes since 1987.\"",
+          "Passive: \"The WHO's Global Action Plan was adopted in 2015.\" → Active: \"The WHO adopted its Global Action Plan in 2015.\"",
+          "Passive: \"Antibiotics are used briefly for acute infections, unlike drugs for chronic disease.\" → Active: \"Chronic disease requires drugs to be used briefly for acute infections.\""
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Passive: \"Penicillin was mass-produced by Allied manufacturers during the war.\" → Active: \"Allied manufacturers mass-produced penicillin during the war.\"**\n\nThe passive already names its agent (\"by Allied manufacturers\"). Moving that agent to subject position keeps the same actor, patient, and wartime setting — a clean voice flip. Paragraph 1 confirms Allied mass production in WWII. Nothing is added or dropped: the by-phrase becomes the subject and the old subject becomes the object.\n\n**Tip:** A passive with an explicit by-phrase can always be actived safely, because the agent is already stated.\n\nThe time adverbial \"during the war\" is untouched by the transformation, so the historical setting stays fixed. Voice changes affect which participant gets the subject slot, not the underlying event.\n\nWhen the by-phrase already names the agent, the active rewrite preserves meaning, so the conversion is true.",
+          "**B) Passive: \"Resistance genes are transferred between bacteria through plasmids.\" → Active: \"Plasmids transfer resistance genes between bacteria.\"**\n\n\"Through plasmids\" supplies the instrument that becomes the active subject. Paragraph 5’s plasmids carrying resistance genes between species supports that agentive reading without adding an outsider. The passage itself uses plasmids as the subject of an active verb, writing that they \"carry resistance genes,\" so the promotion matches how the text already frames them.\n\n**Tip:** An instrument named in the passive can head the active clause when the text already treats it as the thing doing the work.\n\nThis differs from an agentless passive, where the active version would have to invent a subject from nothing. Here the phrase \"through plasmids\" supplies the missing element, so the rewrite draws only on information the sentence already contains.\n\nInstrument-to-subject is a valid active flip here, so the conversion is true.",
+          "**C) Passive: \"New antibiotic classes have rarely been approved since 1987.\" → Active: \"Regulators have rarely approved new antibiotic classes since 1987.\"**\n\nThe agentless passive does not name who approves. Inserting \"regulators\" adds a specific actor the original never states — meaning drifts even if \"rarely… since 1987\" echoes Paragraph 6’s discovery void. The passage speaks of classes that have \"reached clinical practice,\" an outcome that reflects research pipelines and commercial decisions as much as any approval body.\n\n**Trap:** Agentless passives become false when the active invents a concrete subject.\n\nPlausibility is not the standard here; the question is whether the rewrite says only what the original said. Because the original deliberately leaves the agent unspecified, naming one narrows the claim and changes its content.\n\nAdding unstated \"regulators\" changes the claim, so the conversion fails.",
+          "**D) Passive: \"The WHO's Global Action Plan was adopted in 2015.\" → Active: \"The WHO adopted its Global Action Plan in 2015.\"**\n\nParagraph 7 already attributes adoption to the World Health Organization. Making \"the WHO\" the active subject restates that same agent and 2015 date without extras. The possessive \"the WHO's\" in the passive version already identifies the organisation, so the active form promotes information that was present rather than importing it.\n\n**Tip:** A possessive in the passive subject often signals that the agent is recoverable, unlike a fully agentless passive.\n\nThis is the instructive contrast with the \"regulators\" item: there the actor came from outside the sentence, while here it comes from inside it and is confirmed by the passage. Same date, same institution, same action — only the grammatical arrangement differs.\n\nThe implied adopter becomes the explicit subject cleanly, so the conversion is true.",
+          "**E) Passive: \"Antibiotics are used briefly for acute infections, unlike drugs for chronic disease.\" → Active: \"Chronic disease requires drugs to be used briefly for acute infections.\"**\n\nThe rewrite swaps roles: chronic disease becomes what \"requires\" short acute courses — a scrambled comparison that no longer says antibiotics are brief while chronic drugs last years (Paragraph 6). It also introduces a new verb, \"requires,\" that expresses a demand the original never made.\n\n**Trap:** Voice changes that also swap subjects usually destroy the original contrast.\n\nThe original sets antibiotics against chronic-disease drugs as two sides of a comparison; the rewrite makes one side govern the other. Paragraph 6 needs that contrast intact, since the profitability argument rests on days-or-weeks courses versus medicines taken for years.\n\nThe active version garbles the acute/chronic contrast, so the conversion fails."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG V.5.27",
+        "id": "en-v-5-27",
+        "title": "Task 27",
+        "subsection": "v.5",
+        "context": "Five statements about the vocabulary of research ethics and data protection, where each term carries a duty or a safeguard. Decide whether each account is accurate.",
+        "statements": [
+          "Data described as \"pseudonymised\" has had every identifier destroyed and cannot be re-linked, which is why regulators treat it exactly as they treat anonymised data.",
+          "In research ethics a child gives \"consent\" while the parent provides \"assent\" on the child's behalf.",
+          "A survey promised to be \"confidential\" is one in which answers were never linked to names in the first place, which is precisely what \"anonymous\" also means.",
+          "In data-protection reporting an \"incident\" is any suspected event while a \"breach\" is the narrower category that triggers a duty to notify, so a laptop briefly mislaid may be logged as an incident without ever becoming a reportable breach.",
+          "Files \"deleted\" from a drive are physically overwritten, which is why deletion and secure erasure are treated as equivalent in equipment disposal policies."
+        ],
+        "answer_key": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Data described as \"pseudonymised\" has had every identifier destroyed and cannot be re-linked, which is why regulators treat it exactly as they treat anonymised data.**\n\nPseudonymisation replaces direct identifiers with a code while a key is kept elsewhere, so the link back to individuals still exists and the data remain personal data with all the obligations that follow. Anonymisation removes that possibility altogether, and only then do the protection rules fall away. The whole point of the intermediate category is that re-identification is possible for those holding the key.\n\n**Trap:** Both terms describe removing names from a dataset, which makes it easy to miss that only one of them destroys the route back.\n\nA surviving key is exactly what distinguishes the weaker safeguard, so the equivalence fails — pseudonymised records remain personal data and stay inside the regime.",
+          "**B) In research ethics a child gives \"consent\" while the parent provides \"assent\" on the child's behalf.**\n\nConsent is the legally effective authorisation, and for a child it is given by a parent or guardian with the capacity to grant it. Assent is the child's own agreement to take part, sought as a matter of respect even though it carries no legal force on its own, and a refusal to assent is generally honoured. Ethics committees ask for both because the two answer different questions about the child's participation.\n\nThe legal authorisation and the child's own agreement have been swapped, so the line does not hold — the parent consents while the child assents.",
+          "**C) A survey promised to be \"confidential\" is one in which answers were never linked to names in the first place, which is precisely what \"anonymous\" also means.**\n\nAn anonymous survey collects no identifying information at all, so not even the researchers can say who returned which questionnaire. A confidential survey may know exactly who said what and undertakes not to disclose it outside the study team, which is what allows follow-up, linkage to records and withdrawal of a specific response. Participant information sheets separate the two because the promises differ in what they can guarantee.\n\nNot collecting identities and promising not to reveal them are different undertakings, so the equation fails — confidentiality protects information the study still holds.",
+          "**D) In data-protection reporting an \"incident\" is any suspected event while a \"breach\" is the narrower category that triggers a duty to notify, so a laptop briefly mislaid may be logged as an incident without ever becoming a reportable breach.**\n\nIncident is the operational catch-all: anything that might have compromised information gets logged, assessed and closed, and most entries turn out to be nothing. Breach is the defined category involving unauthorised access, loss, alteration or disclosure of personal data, and once it is established the clock starts on notifying the regulator and possibly the individuals affected. Encryption and prompt recovery are exactly the factors that keep an event on the lower rung.\n\nLogging everything and notifying the regulator are different obligations, so the mislaid laptop the sentence describes can indeed stop at the first, which is how incident registers work.",
+          "**E) Files \"deleted\" from a drive are physically overwritten, which is why deletion and secure erasure are treated as equivalent in equipment disposal policies.**\n\nOrdinary deletion removes the pointer to the file and marks the space as available, leaving the content in place until something else happens to write over it, which is why recovery tools succeed so often. Secure erasure overwrites the storage, issues a sanitise command or destroys the key that makes encrypted data readable, and it is verified before a device leaves the building. Disposal policies specify the second precisely because the first is not a safeguard.\n\nRemoving a reference and destroying the data are different operations, so the sentence collapses a distinction that disposal procedures exist to maintain."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.13.20",
+        "id": "en-g-13-20",
+        "title": "Task 20",
+        "subsection": "g.13",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "The landlord authorised tenants to repaint the hallway, to replace the hallway bulbs, and filing a repair request if leaks returned.",
+          "Just as the café invests in better beans, so too does it invest in staff training.",
+          "Progress will be judged on whether chores are finished, whether keys are returned, and communal lights are off.",
+          "The brief is neither to defend every habit nor to dismiss every suggestion wholesale.",
+          "She moved out because of limited daylight, because of noisy neighbours, and her commute had become unmanageable."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The landlord authorised tenants to repaint the hallway, to replace the hallway bulbs, and filing a repair request if leaks returned.**\n\nAuthorised…to opens an infinitive series with to repaint and to replace, but filing is a gerund. Permissions after authorised to must stay infinitives through the last allowed action. Use to file a repair request so the series never changes form.\n\n**Trap:** Filing a repair request is a real allowed action, so a gerund at the end of a to-series is a top-band near-miss.\n\nAuthorised…to needs infinitives throughout, so filing is **false** — \"…to repaint the hallway, to replace the hallway bulbs, and to file a repair request if leaks returned.\"\n",
+          "**B) Just as the café invests in better beans, so too does it invest in staff training.**\n\nJust as…so too balances two matching invest + in + noun patterns, with inversion on the second clause. Correlative just as…so too needs mirrored clause structure on both sides. Here both halves keep invest in + noun, so the café comparison stays parallel.\n\nJust as…so too mirrors invest + in on both café sides, so the correlative is **true**.\n",
+          "**C) Progress will be judged on whether chores are finished, whether keys are returned, and communal lights are off.**\n\nJudged on whether opens two whether-clauses, then ends on communal lights are off without the repeated whether. Progress checklists under whether need the marker on every criterion. Repeat whether before the lights clause so the third check matches.\n\n**Trap:** A bare lights-are-off clause still names a real progress test, so missing whether is a high-band marker trap.\n\nJudged on whether needs whether on every criterion, so lights are off is **false** — \"…whether chores are finished, whether keys are returned, and whether communal lights are off.\"\n",
+          "**D) The brief is neither to defend every habit nor to dismiss every suggestion wholesale.**\n\nNeither…nor joins to defend… and to dismiss… — two matching infinitives after is. Keep to + bare verb on both sides of neither…nor so the brief stays balanced. Nothing drops to or flips into a finite clause on the second half.\n\nNeither…nor joins two matching to-infinitives after is, so the brief is **true**.\n",
+          "**E) She moved out because of limited daylight, because of noisy neighbours, and her commute had become unmanageable.**\n\nTwo reasons open as because of + noun phrases, but her commute had become unmanageable is an independent clause. Once because of sets the frame, every later reason should stay a noun phrase under that marker. Recast the commute as because of + noun so all three reasons match.\n\n**Trap:** A freestanding commute clause still states a genuine motive, which hides the because of / clause switch.\n\nBecause of sets noun reasons the commute clause leaves, so this is **false** — \"…because of limited daylight, because of noisy neighbours, and because of an unmanageable commute.\"\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "DEMO MATH 1.H02",
+      "id": "demo-math-1-h02",
+      "title": "Conference attendance rules — hard roster",
+      "chapter": 1,
+      "subsection": "1.4",
+      "context": "Four colleagues — Ana, Boris, Ceci, and Dmitri — decide whether to attend a conference.\n\n(1) If Ana attends, then Boris does not attend.\n\n(2) If Boris does not attend, then Ceci attends.\n\n(3) If Ceci attends, then Dmitri does not attend — unless Ana also attends, in which case Dmitri is unrestricted.\n\n(4) Dmitri attends.\n\n(5) At most three of the four attend.\n\n(6) If Ana stays away, then Boris attends.\n\n(7) Ceci and Boris never attend together.\n\n(8) It is not the case that nobody from {Ana, Ceci} attends.\n\nDecide whether each claim is true or false.",
+      "statements": [
+        "Dmitri attends in every roster consistent with the rules.",
+        "Ana must attend in every legal roster.",
+        "There exists a legal roster in which exactly three people attend.",
+        "Boris can attend in some legal roster.",
+        "If the “unless Ana attends” exception were removed from rule (3), the rules would still admit a solution with Dmitri attending."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Translate the eight conference rules into propositional constraints on four attendance bits $A,B,C,D$. Rule (4) forces $D=\\mathsf{true}$ in every model. Ana’s absence $\\neg A$ collapses via (6)$\\Rightarrow B$, (7)$\\Rightarrow\\neg C$, and then (8) $A\\lor C$ fails — so Ana is mandatory. With $A$ fixed, (1) ejects Boris and (2) forces Ceci; the Ana-exception in (3) lets $C$ coexist with $D$. The unique legal three-person roster is $\\{A,C,D\\}$; Boris never appears. Stripping the exception from (3) yields $C\\Rightarrow\\neg D$, which clashes with (4) and makes the whole system unsatisfiable.",
+      "tactical_explanations": [
+        "**A.** → True\n\nRule (4) is an unconditional atomic fact:\n$$\nD = \\mathsf{true}.\n$$\n\nNo later rule ever forces Dmitri out. Rule (3) only constrains Dmitri when Ceci attends **and** Ana is absent:\n$$\n(C \\land \\neg A) \\Rightarrow \\neg D.\n$$\n\nWhen Ana is present the antecedent fails, so (3) is idle. When Ana is absent we will already see (from letter B) that no legal model exists at all. In every surviving model Ana is present, so (3) never fires against Dmitri.\n\nFormally, every satisfying assignment $\\sigma$ obeys\n$$\n\\sigma(\\mathsf{Dmitri})=\\mathsf{true}.\n$$\n\nHence Dmitri belongs to every roster consistent with the rules.\n\nA quick consistency check: rule (5) caps attendance at three, and putting Dmitri in every roster never conflicts with that cap by itself — the other rules decide who else may join.\n\nSo the statement is True.",
+        "**B.** → True\n\nArgue by contradiction. Suppose Ana stays away:\n$$\n\\neg A.\n$$\n\nRule (6) then forces Boris:\n$$\n\\neg A \\Rightarrow B \\qquad\\Rightarrow\\qquad B.\n$$\n\nRule (7) forbids Ceci once Boris is present:\n$$\n\\neg(B \\land C) \\qquad\\Rightarrow\\qquad \\neg C.\n$$\n\nRule (2) is the implication $\\neg B\\Rightarrow C$; its antecedent is false (Boris attends), so (2) does not resurrect Ceci.\n\nRule (8) demands that at least one of Ana or Ceci attends:\n$$\nA \\lor C.\n$$\n\nBut both $A$ and $C$ are false, so (8) fails. The assumption $\\neg A$ is therefore impossible.\n\nAna attends in every legal roster:\n$$\n\\sigma(\\mathsf{Ana})=\\mathsf{true}\\qquad\\text{for every model }\\sigma.\n$$\n\nThe contradiction chain is forced in order: $\\neg A\\Rightarrow B\\Rightarrow\\neg C\\Rightarrow\\neg(A\\lor C)$. No alternative branch escapes the trap.\n\nSo the statement is True.",
+        "**C.** → True\n\nFrom B, Ana always attends: $A=\\mathsf{true}$.\n\nRule (1) is $A\\Rightarrow\\neg B$. With $A$ true this forces\n$$\n\\neg B.\n$$\n\nRule (2) with Boris absent forces Ceci:\n$$\n\\neg B \\Rightarrow C \\qquad\\Rightarrow\\qquad C.\n$$\n\nBecause Ana is present, the “unless Ana attends” exception in (3) fires, so Ceci does **not** force Dmitri out. Rule (4) still requires Dmitri. The resulting roster is\n$$\n\\{A,C,D\\}\n$$\n— exactly three people.\n\nRule (5) allows at most three, so three is admissible. Rule (7) holds because Boris is absent. Rule (8) holds because both Ana and Ceci attend.\n\nThus a legal three-person roster exists.\n\nRule (5) is satisfied with equality: $|\\{A,C,D\\}|=3\\le 3$. No fourth person can be added without bringing Boris back, which rule (1) forbids.\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom B, Ana is present in every legal roster:\n$$\nA = \\mathsf{true}.\n$$\n\nRule (1) is the implication\n$$\nA \\Rightarrow \\neg B.\n$$\n\nWith the antecedent always true, the consequent is always true:\n$$\n\\neg B = \\mathsf{true}.\n$$\n\nEquivalently: any attempt to set $B=\\mathsf{true}$ while $A=\\mathsf{true}$ falsifies (1). Since Ana cannot be dropped (statement B), Boris can never be added.\n\nThere is therefore **no** legal roster in which Boris attends. The claim is false.\n\nOne can also enumerate: the only free bits after forcing $A,\\neg B,C,D$ are none — the roster is unique, and Boris is absent from it.\n\nSo the statement is False.",
+        "**E.** → False\n\nRemove the Ana-exception from (3). The new rule (3′) reads simply\n$$\nC \\Rightarrow \\neg D.\n$$\n\nThe earlier forcing still applies: Ana must attend (same (6)+(7)+(8) contradiction under $\\neg A$), so (1) and (2) still yield\n$$\n\\neg B \\qquad\\text{and}\\qquad C.\n$$\n\nRule (4) still needs $D$. But $C$ together with (3′) forces $\\neg D$, contradicting (4):\n$$\nC \\land (C\\Rightarrow\\neg D) \\land D\n$$\nis propositionally impossible.\n\nThe constraint set becomes unsatisfiable. No solution with Dmitri remains — in fact no solution remains at all. The counterfactual claim is false.\n\nThus the Ana-exception in the original (3) is essential for consistency with Dmitri’s forced attendance.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 2.H02",
+      "id": "demo-math-2-h02",
+      "title": "Four nested algebra records — one identity chain",
+      "chapter": 2,
+      "subsection": "2.5",
+      "context": "An algebra archive stores two nonzero real numbers $a$ and $b$ through four records:\n\n(1) $a^{2}+b^{2}=89$\n\n(2) $ab=40$\n\n(3) $a^{3}+b^{3}=637$\n\n(4) $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{13}{40}$\n\nThe original order was not recorded. Decide whether each statement is true or false.",
+      "statements": [
+        "Records (1) and (2) alone already force $(a+b)^{2}=169$, so $|a+b|=13$.",
+        "Records (1) and (2) together with the side condition $a+b>0$ already imply record (3).",
+        "Records (1), (2) and (4) together force the unordered pair $\\{a,b\\}=\\{5,8\\}$.",
+        "If record (3) were rewritten as $a^{3}+b^{3}=500$ while (1) and (2) stayed unchanged, the three records could still hold simultaneously for some nonzero reals $a,b$.",
+        "From (1) and (2) alone one obtains $(a-b)^{2}=9$, and if in addition (4) holds then automatically $a^{3}+b^{3}=(a+b)\\big((a^{2}+b^{2})-ab\\)=637$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Start from the sum-of-squares identity $(a+b)^{2}=a^{2}+2ab+b^{2}$. Feeding in records (1) and (2) yields $(a+b)^{2}=89+2\\cdot 40=169$, so $|a+b|=13$. The companion identity $(a-b)^{2}=(a+b)^{2}-4ab$ gives $(a-b)^{2}=9$. The cubic sum factors as $a^{3}+b^{3}=(a+b)\\big((a^{2}+b^{2})-ab\\big)$; the positive branch $a+b=13$ recovers (3) as $13\\cdot 49=637$. Record (4) rewrites as $(a+b)/(ab)=13/40$, which selects the positive branch and pins the unordered pair $\\{a,b\\}=\\{5,8\\}$. Any other cubic target such as $500$ lies outside the forced two-point set $\\{\\pm 637\\}$.",
+      "tactical_explanations": [
+        "**A.** → True\n\nExpand the square of the sum:\n$$\n(a+b)^{2}=a^{2}+2ab+b^{2}.\n$$\n\nRewrite by grouping the known records:\n$$\n(a+b)^{2}=(a^{2}+b^{2})+2ab.\n$$\n\nFeed in record (1) $a^{2}+b^{2}=89$ and record (2) $ab=40$:\n$$\n(a+b)^{2}=89+2\\cdot 40.\n$$\n\nCompute the arithmetic explicitly:\n$$\n2\\cdot 40=80,\n$$\n$$\n89+80=169.\n$$\n\nTaking square roots over the reals gives\n$$\n|a+b|=\\sqrt{169}=13.\n$$\n\nNo other information is required — (1) and (2) alone already force this magnitude identity.\n\nEquivalently, $(a+b)^{2}-169=0$ is an identity forced by (1) and (2), with no leftover free parameters.\n\nSo the statement is True.",
+        "**B.** → True\n\nUse the standard cubic factorization\n$$\na^{3}+b^{3}=(a+b)\\bigl(a^{2}-ab+b^{2}\\bigr).\n$$\n\nRewrite the second factor via records (1) and (2):\n$$\na^{2}-ab+b^{2}=(a^{2}+b^{2})-ab=89-40=49.\n$$\n\nFrom A, $(a+b)^{2}=169$. The side condition $a+b>0$ selects the positive root:\n$$\na+b=13.\n$$\n\nTherefore\n$$\na^{3}+b^{3}=13\\cdot 49.\n$$\n\nCompute the product step by step:\n$$\n13\\cdot 50=650,\\qquad 13\\cdot 1=13,\\qquad 650-13=637.\n$$\n\nThat is exactly record (3). So (1), (2) and $a+b>0$ imply (3).\n\nHad one chosen the negative branch $a+b=-13$, the same factorization would give $a^{3}+b^{3}=-637$, not $637$; the side condition $a+b>0$ is what selects the matching cubic.\n\nSo the statement is True.",
+        "**C.** → True\n\nRecord (4) rewrites as a single fraction:\n$$\n\\frac{1}{a}+\\frac{1}{b}=\\frac{a+b}{ab}.\n$$\n\nThe claimed value is $13/40$, and record (2) gives $ab=40$, so\n$$\n\\frac{a+b}{40}=\\frac{13}{40}\\qquad\\Rightarrow\\qquad a+b=13.\n$$\n\n(The negative branch $a+b=-13$ would give $(a+b)/ab=-13/40$, which contradicts (4).)\n\nTogether with $ab=40$, the pair $(a,b)$ consists of the two roots of\n$$\nt^{2}-13t+40=0.\n$$\n\nFactor:\n$$\n(t-5)(t-8)=0,\n$$\nbecause $5+8=13$ and $5\\cdot 8=40$.\n\nHence the unordered pair is $\\{5,8\\}$. Direct check of (1):\n$$\n5^{2}+8^{2}=25+64=89.\n$$\n\nSolving $t^{2}-13t+40=0$ by the quadratic formula confirms the same roots: $t=(13\\pm\\sqrt{169-160})/2=(13\\pm 3)/2$, i.e. $8$ and $5$.\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom (1) and (2) the cubic sum is locked to a two-point set. Indeed\n$$\na^{3}+b^{3}=(a+b)\\bigl(89-40\\bigr)=49(a+b),\n$$\nand from A one has $a+b=\\pm 13$, so\n$$\na^{3}+b^{3}\\in\\{49\\cdot 13,\\,49\\cdot(-13)\\}.\n$$\n\nCompute both values:\n$$\n49\\cdot 13=637,\\qquad 49\\cdot(-13)=-637.\n$$\n\nThe rewritten target $500$ lies in neither slot:\n$$\n500\\neq 637\\qquad\\text{and}\\qquad 500\\neq -637.\n$$\n\nTherefore no nonzero reals $a,b$ can satisfy (1), (2) and $a^{3}+b^{3}=500$ at once. The altered triple is inconsistent; the claim is false.\n\nAny purported pair with $a^{3}+b^{3}=500$ would need $a+b=500/49\\approx 10.20$, but then $(a+b)^{2}\\approx 104\\neq 169$, contradicting (1)+(2).\n\nSo the statement is False.",
+        "**E.** → True\n\nFirst the difference-of-squares companion identity:\n$$\n(a-b)^{2}=(a+b)^{2}-4ab.\n$$\n\nWith $(a+b)^{2}=169$ from A and $ab=40$:\n$$\n4ab=4\\cdot 40=160,\n$$\n$$\n(a-b)^{2}=169-160=9.\n$$\n\nNext impose (4). As in C, (4) forces $a+b=13$. The cubic factorization then yields\n$$\na^{3}+b^{3}=(a+b)\\bigl((a^{2}+b^{2})-ab\\bigr).\n$$\n\nSubstitute the known numbers:\n$$\na^{3}+b^{3}=13\\bigl(89-40\\bigr)=13\\cdot 49=637,\n$$\nwhich is precisely record (3).\n\nBoth halves of the claim hold: $(a-b)^{2}=9$ from (1)+(2) alone, and (4) then recovers the cubic identity automatically.\n\nNumerically $|a-b|=3$ together with $a+b=13$ recovers $a=8$, $b=5$ (or vice versa), matching the unordered pair from C.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "case_id": "MATH 11.99",
+      "id": "math-11-99",
+      "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity",
+      "chapter": 3,
+      "subsection": "3.5",
+      "context": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.",
+      "statements": [
+        "The present value of the annuity-due lease payments is approximately \\$18,110.94.",
+        "The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.",
+        "The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.",
+        "The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.",
+        "Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPresent value discounts the future cash amount by the recovered accumulation factor:\n\n$$\nPV = \\frac{FV}{(1+i)^{nt}}\n$$\n\nSubstitute the recovered stem inputs:\n\n$$P_{\\mathrm{due}} = 16,769.39 \\times 1.08$$\n\n$$P_{\\mathrm{due}} = 18,110.94$$\n\nThe claim asserts\n\nThose two figures agree.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe due future value scales the ordinary future value by one extra period:\n\n$$\nF_{\\mathrm{due}} = \\frac{4,200}{0.08}\\left[(1.08)^5-1\\right](1.08) = 26,610.90\n$$\n\nCompare the computed value with the claim (\\$27,610.90). The computed value is\n\n$$26,610.90$$\n\nThe claim is\n\n$$27,610.90$$\n\nSince $26,610.90 \\ne 27,610.90$, the figures disagree. The two sides do not agree.\n\nSo the statement is False.",
+        "**C.** → False\n\nCompound growth scales the opening principal by the recovered accumulation factor:\n\n$$\nFV = P(1+i)^{nt}\n$$\n\nSubstitute the recovered stem inputs:\n\n$$S = 20,000 e^{0.06 \\times 7}$$\n\n$$S = 20,000 e^{0.42}$$\n\n$$e^{0.42}$$\n\n$$\\approx 1.521962$$\n\n$$20,000 \\times 1.521962$$\n\n$$\\approx 30439.23$$\n\n$$S = 30,439.24$$\n\nThe claim asserts a different figure. Against the recovered\n\nthose values do not agree.\n\nSo the statement is False.",
+        "**D.** → False\n\nPresent value discounts a future payment through the accumulation factor:\n\n$$\n\\mathrm{PDV} = K(1+r)^{-t}\n$$\n\nUsing the recovered solution values $P_{\\mathrm{perp}}=37,500$ and $P_{\\mathrm{due}}=18,110.94$ as inputs for this claim:\n\nDouble the lease present value is\n\n$$\n2 \\times 18,110.94 = 36,221.88\n$$\n\nThe claim needs $37,500 < 36,221.88$. We have $37,500 > 36,221.88$.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe overview’s present-value line is\n\n$$\nS=30,439.24\n$$\n\nCompare it with the amount printed in the claim. They do not match.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.\n\nThe due lease, the continuous investment, and the perpetuity are\n\n$$\na = 4,200,\n$$\n\n$$\nn = 5,\n$$\n\n$$\nr = 8\\%\n$$\n\n$$\nr = 0.08\n$$\n\n$$\nP = 20,000,\n$$\n\n$$\nt = 7,\n$$\n\n$$\nr_{\\mathrm{cont}} = 6\\%\n$$\n\n$$\nr_{\\mathrm{cont}} = 0.06\n$$\n\n$$a_{\\mathrm{perp}} = 3,000$$\n\n$$\nP_{\\mathrm{ordinary}} = \\frac{4,200}{0.08}\\left[1-\\frac{1}{(1.08)^5}\\right]\n$$\n\n$$\nP_{\\mathrm{ordinary}} = 16,769.39\n$$\n\n$$\nP_{\\mathrm{due}} = 16,769.39 \\times 1.08\n$$\n\n$$\nP_{\\mathrm{due}} = 18,110.94\n$$\n\n$$\nS = 20,000 e^{0.06 \\times 7}\n$$\n\n$$\nS = 20,000 e^{0.42}\n$$\n\n$$\nS = 30,439.24\n$$\n\n$$\nP_{\\mathrm{perp}} = \\frac{3,000}{0.08}\n$$\n\n$$\nP_{\\mathrm{perp}} = 37,500\n$$"
+    },
+    {
+      "case_id": "DEMO MATH 4.H02",
+      "id": "demo-math-4-h02",
+      "title": "Five brutal exam equations",
+      "chapter": 4,
+      "subsection": "4.3",
+      "context": "Decide whether each claim is true or false. Five different equations; do not reuse roots across letters.",
+      "statements": [
+        "The system $\\sqrt{2x+3}=y$, $y=x-1$, $y\\ge 0$ has exactly two real solutions $(x,y)$.",
+        "After clearing denominators, $\\dfrac{x+1}{x-2}+\\dfrac{x-2}{x+1}=\\dfrac{5}{2}$ has exactly two domain-legal real roots, both different from $\\pm 1$ and $2$.",
+        "The equation $|x^{2}-5x+6|=x-2$ has a real solution strictly larger than $4$.",
+        "There exists a real parameter $k$ such that $x^{2}-2kx+(k^{2}-1)=0$ has a double root at $x=0$.",
+        "$\\log_{3}(x-1)+\\log_{3}(x+1)=\\log_{3}(2x+1)$ forces $x=1$ as its only candidate, but $x=1$ is outside the log domain, so the equation has no real solution."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five independent equation traps. The radical system $\\sqrt{2x+3}=x-1$ with $x\\ge 1$ squares to $x^{2}-4x-2=0$; only $x=2+\\sqrt{6}$ survives the domain, so there is one solution pair, not two. The rational equation clears to $(x-5)(x+4)=0$ with both roots legal. The absolute equation $|x^{2}-5x+6|=x-2$ forces $x\\ge 2$ and admits only $x=2$ and $x=4$. A double root at $0$ for $x^{2}-2kx+(k^{2}-1)$ would need $k=0$ and $k^{2}-1=0$ at once — impossible. The log equation has domain $x>1$ and the genuine root $x=1+\\sqrt{3}$.",
+      "tactical_explanations": [
+        "**A.** → False\n\nSubstitute $y=x-1$ into the radical equation and enforce $y\\ge 0$, i.e. $x\\ge 1$:\n$$\n\\sqrt{2x+3}=x-1.\n$$\n\nSquare both sides (valid once the right-hand side is nonnegative):\n$$\n2x+3=(x-1)^{2}=x^{2}-2x+1.\n$$\n\nBring all terms to one side:\n$$\n0=x^{2}-2x+1-2x-3=x^{2}-4x-2.\n$$\n\nThe quadratic formula gives\n$$\nx=\\frac{4\\pm\\sqrt{16+8}}{2}=\\frac{4\\pm\\sqrt{24}}{2}=\\frac{4\\pm 2\\sqrt{6}}{2}=2\\pm\\sqrt{6}.\n$$\n\nOnly $x=2+\\sqrt{6}\\approx 4.45$ satisfies $x\\ge 1$; the companion $2-\\sqrt{6}\\approx -0.45$ is extraneous. The corresponding $y=(2+\\sqrt{6})-1=1+\\sqrt{6}$ is unique as well.\n\nHence there is exactly **one** real solution pair, not two. The claim is false.\n\nBack-substitution: $y=(2+\\sqrt{6})-1=1+\\sqrt{6}>0$ and $\\sqrt{2(2+\\sqrt{6})+3}=\\sqrt{7+2\\sqrt{6}}=\\sqrt{(\\sqrt{6}+1)^{2}}=1+\\sqrt{6}$, confirming the unique pair.\n\nSo the statement is False.",
+        "**B.** → True\n\nDomain first: $x\\neq 2$ and $x\\neq -1$. Clear denominators by multiplying through by $2(x-2)(x+1)$:\n$$\n2(x+1)^{2}+2(x-2)^{2}=5(x-2)(x+1).\n$$\n\nExpand the left-hand side:\n$$\n2(x^{2}+2x+1)+2(x^{2}-4x+4)=2x^{2}+4x+2+2x^{2}-8x+8=4x^{2}-4x+10.\n$$\n\nExpand the right-hand side:\n$$\n5(x^{2}-x-2)=5x^{2}-5x-10.\n$$\n\nBring all terms to one side:\n$$\n0=5x^{2}-5x-10-4x^{2}+4x-10=x^{2}-x-20.\n$$\n\nFactor:\n$$\nx^{2}-x-20=(x-5)(x+4).\n$$\n\nThe candidates are $x=5$ and $x=-4$. Both avoid the poles $x=\\pm 1$ and $x=2$, so both are domain-legal. Exactly two legal roots — the claim is true.\n\nSpot-check $x=5$: $(5+1)/(5-2)+(5-2)/(5+1)=6/3+3/6=2+1/2=5/2$. Spot-check $x=-4$: $(-3)/(-6)+(-6)/(-3)=1/2+2=5/2$. Both work.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe right-hand side forces the domain restriction $x-2\\ge 0$, i.e. $x\\ge 2$, because an absolute value cannot equal a negative number.\n\nFactor the inside:\n$$\nx^{2}-5x+6=(x-2)(x-3).\n$$\n\nFor $x>2$ one may divide by the positive factor $x-2$:\n$$\n|x-3|=1\\qquad\\Rightarrow\\qquad x-3=\\pm 1.\n$$\n\nThe two cases give\n$$\nx-3=1\\Rightarrow x=4,\\qquad x-3=-1\\Rightarrow x=2.\n$$\n\n(The formal root $x=2$ is the boundary and should be checked separately; it works: both sides vanish, since $|(2-2)(2-3)|=0=2-2$.)\n\nThe only solutions are therefore $x=2$ and $x=4$. Neither is **strictly larger than** $4$. The claim is false.\n\nFor $x>4$ one would have $|x-3|=1$ only at $x=4$ among the candidates already found; no third root appears from either case of the absolute value.\n\nSo the statement is False.",
+        "**D.** → False\n\nWrite $f(x)=x^{2}-2kx+(k^{2}-1)$. A double root at $x=0$ requires both\n$$\nf(0)=0\\qquad\\text{and}\\qquad f'(0)=0.\n$$\n\nCompute the constant term:\n$$\nf(0)=k^{2}-1.\n$$\n\nDifferentiate:\n$$\nf'(x)=2x-2k,\\qquad f'(0)=-2k.\n$$\n\nThe derivative condition forces $k=0$. Then\n$$\nf(0)=0^{2}-1=-1\\neq 0.\n$$\n\nThe two conditions cannot hold simultaneously for any real $k$. (Equivalently: the roots are $k\\pm 1$, and $k+1=k-1=0$ is impossible.) No such parameter exists; the claim is false.\n\nCompleting the square $f(x)=(x-k)^{2}-1$ shows the graph is a vertical translate of $y=x^{2}-1$; it never touches the origin with a horizontal tangent.\n\nSo the statement is False.",
+        "**E.** → False\n\nDomain of the log equation: $x-1>0$, $x+1>0$, and $2x+1>0$. The strongest cut is\n$$\nx>1.\n$$\n\nCombine the left-hand side via the product rule for logs:\n$$\n\\log_{3}\\bigl((x-1)(x+1)\\bigr)=\\log_{3}(2x+1).\n$$\n\nSince $\\log_{3}$ is one-to-one,\n$$\nx^{2}-1=2x+1\\qquad\\Rightarrow\\qquad x^{2}-2x-2=0.\n$$\n\nThe quadratic formula gives\n$$\nx=\\frac{2\\pm\\sqrt{4+8}}{2}=\\frac{2\\pm\\sqrt{12}}{2}=\\frac{2\\pm 2\\sqrt{3}}{2}=1\\pm\\sqrt{3}.\n$$\n\nOnly $x=1+\\sqrt{3}\\approx 2.73$ lies in the domain $x>1$. Direct substitution confirms it works. So a real solution **does** exist; the claim that the equation has none (and that $x=1$ is the only candidate) is false.\n\nThe discarded root $1-\\sqrt{3}\\approx -0.73$ fails $x>1$, and $x=1$ itself makes $\\log_{3}(x-1)$ undefined — so $x=1$ was never a candidate.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 5.H01",
+      "id": "demo-math-5-h01",
+      "title": "One brutal two-unknown setup — five counterfactual traps",
+      "chapter": 5,
+      "subsection": "5.2",
+      "context": "A workshop sells only type-$A$ kits and type-$B$ kits. In one week it sold a total of $100$ kits and booked revenue $€\\,7100$. Type $A$ sells at $€\\,50$ each and type $B$ at $€\\,80$ each:\n$$\na+b=100,\\qquad 50a+80b=7100.\n$$\nThe unique baseline solution is the factual starting point. Decide whether each counterfactual claim is true or false.",
+      "statements": [
+        "The unique baseline solution is $(a,b)=(30,70)$.",
+        "If the type-$B$ price had been $€\\,90$ instead of $€\\,80$, with the same count $a+b=100$ and the same revenue $€\\,7100$, then $b$ would have fallen below $60$.",
+        "If management had sold $10$ fewer type-$A$ kits and $10$ more type-$B$ kits than the baseline, revenue would have risen by exactly $€\\,300$.",
+        "If total kits stayed $100$ but the revenue target rose to $€\\,8200$ at the same prices, no nonnegative solution $(a,b)$ would exist, because an all-$B$ week only reaches $€\\,8000$.",
+        "If prices stayed $€\\,50$ and $€\\,80$ but the shop sold the swapped mix $(70,30)$ instead of the baseline $(30,70)$, revenue would still be $€\\,7100$ because only the kit labels changed."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solve the baseline linear system once: substitute $a=100-b$ into the revenue equation $50a+80b=7100$ to get $5000+30b=7100$, hence $b=70$ and $a=30$. Each later claim is a one-parameter counterfactual — a price change to $€\\,90$ (forcing $b=52.5<60$), a quantity shift of ten kits (raising revenue by exactly $€\\,300$), an unreachable revenue ceiling of $8200>8000=R_{\\max}$, or a fake invariance under swapping the sales mix (which actually drops revenue to $€\\,5900$). Only the swapped-mix invariance fails.",
+      "tactical_explanations": [
+        "**A.** → True\n\nEliminate $a$ via the count constraint:\n$$\na=100-b.\n$$\n\nSubstitute into the revenue equation:\n$$\n50(100-b)+80b=7100.\n$$\n\nExpand:\n$$\n5000-50b+80b=7100\\qquad\\Rightarrow\\qquad 5000+30b=7100.\n$$\n\nIsolate the $b$-term:\n$$\n30b=7100-5000=2100\\qquad\\Rightarrow\\qquad b=\\frac{2100}{30}=70.\n$$\n\nThen $a=100-70=30$. The coefficient matrix of the $2\\times 2$ system has determinant\n$$\n\\begin{vmatrix}1&1\\\\50&80\\end{vmatrix}=80-50=30\\neq 0,\n$$\nso the solution is unique. The baseline is exactly $(a,b)=(30,70)$.\n\nCross-check via elimination of $b$: from $a+b=100$ and $50a+80b=7100$, multiply the first by $50$ to get $50a+50b=5000$, subtract from the revenue equation to leave $30b=2100$, same result.\n\nSo the statement is True.",
+        "**B.** → True\n\nKeep the count constraint $a+b=100$ but replace the type-$B$ unit price by $€\\,90$. The counterfactual money equation is\n$$\n50a+90b=7100,\\qquad a=100-b.\n$$\n\nSubstitute $a$:\n$$\n50(100-b)+90b=7100.\n$$\n\nExpand:\n$$\n5000-50b+90b=7100\\qquad\\Rightarrow\\qquad 5000+40b=7100.\n$$\n\nIsolate $b$:\n$$\n40b=2100\\qquad\\Rightarrow\\qquad b=\\frac{2100}{40}=52.5.\n$$\n\nCompare with the threshold $60$:\n$$\n52.5<60.\n$$\n\nRelative to the baseline $b=70$, the higher $B$-price forces fewer $B$-kits to hit the same revenue. The claim is true.\n\nCross-check: $a=100-52.5=47.5$ and $50\\cdot 47.5+90\\cdot 52.5=2375+4725=7100$, confirming the counterfactual solution.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe proposed shift replaces ten $A$-kits by ten $B$-kits:\n$$\n(30,70)\\mapsto(20,80).\n$$\n\nEach such one-for-one replacement changes revenue by the unit price gap:\n$$\n80-50=30.\n$$\n\nTen replacements therefore change revenue by\n$$\n10\\cdot 30=300.\n$$\n\nDirect check of the new mix:\n$$\n50\\cdot 20=1000,\\qquad 80\\cdot 80=6400,\n$$\n$$\n1000+6400=7400=7100+300.\n$$\n\nRevenue rises by exactly $€\\,300$. The claim is true.\n\nAlternatively, new revenue $=50\\cdot 20+80\\cdot 80=1000+6400=7400$, and $7400-7100=300$ matches the ten-kit price-gap argument exactly.\n\nSo the statement is True.",
+        "**D.** → True\n\nWith prices $50$ and $80$ and a fixed total of $100$ kits, revenue is the convex combination\n$$\nR=50a+80b=50(100-b)+80b=5000+30b.\n$$\n\nSince $0\\le b\\le 100$, the maximum occurs at $b=100$:\n$$\nR_{\\max}=5000+30\\cdot 100=5000+3000=8000,\n$$\ni.e. an all-$B$ week.\n\nThe target $8200$ exceeds this ceiling:\n$$\n8200>8000.\n$$\n\nNo nonnegative $(a,b)$ can hit it. The claim — including its “all-$B$ reaches only $8000$” reason — is true.\n\nSolving $5000+30b=8200$ formally gives $30b=3200$, $b=3200/30\\approx 106.67>100$, which lies outside the feasible kit range $[0,100]$.\n\nSo the statement is True.",
+        "**E.** → False\n\nEvaluate revenue at the swapped mix $(70,30)$:\n$$\n50\\cdot 70=3500,\\qquad 80\\cdot 30=2400,\n$$\n$$\n3500+2400=5900.\n$$\n\nCompare with the baseline:\n$$\n5900\\neq 7100,\\qquad 7100-5900=1200.\n$$\n\nThat is $1200$ euros short of the baseline $7100$. Swapping quantities changes the weighted sum because the two prices differ; “only the labels changed” is not an invariance of the linear form $50a+80b$.\n\nThe claim is false.\n\nThe linear form $50a+80b$ is symmetric in the kit counts only if the prices were equal; here $50\\neq 80$, so swapping $(30,70)$ for $(70,30)$ must change revenue.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 6.H02",
+      "id": "demo-math-6-h02",
+      "title": "Mixed absolute, radical, rational, quadratic inequality, absolute-vs-quadratic",
+      "chapter": 6,
+      "subsection": "6.4",
+      "context": "Decide whether each claim is true or false. The five letters deliberately mix five different equation/inequality types — absolute-value, radical, rational, quadratic inequality, and absolute-versus-quadratic — in the hard exam style.",
+      "statements": [
+        "The inequality $|x+2|+|x-5|\\le 9$ holds for every real $x$ in the closed interval $[-3,6]$ and for no $x$ outside that interval.",
+        "The radical equation $\\sqrt{2x-1}+\\sqrt{x+4}=5$ has unique real solution $x=80-10\\sqrt{59}$.",
+        "After excluding poles, $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}=\\dfrac{1}{2}$ has exactly one domain-legal real root.",
+        "The rational inequality $\\dfrac{(x-2)(x-3)}{x-4}\\ge 0$ holds precisely on the set $[2,3]\\cup(4,+\\infty)$.",
+        "The mixed equation $|2x-1|=x^{2}-x-1$ has exactly two distinct real solutions."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five hard mixed types. Absolute distances to $-2$ and $5$ sum to at most $9$ precisely on $[-3,6]$ (constant $7$ on the middle segment, linear growth outside). The radical equation $\\sqrt{2x-1}+\\sqrt{x+4}=5$ squares twice and keeps only $80-10\\sqrt{59}$. The rational difference of unit fractions equals $1/2$ at both $\\pm\\sqrt{5}$ — two legal roots, not one. Sign-charting $(x-2)(x-3)/(x-4)$ yields $[2,3]\\cup(4,+\\infty)$. Absolute-versus-quadratic $|2x-1|=x^{2}-x-1$ retains exactly the two survivors $x=3$ and $x=-2$.",
+      "tactical_explanations": [
+        "**A.** → True\n\nThe expression $|x+2|+|x-5|$ is the sum of distances from $x$ to $-2$ and to $5$. The critical points are $x=-2$ and $x=5$.\n\nOn the middle interval $[-2,5]$ the sum collapses to the constant\n$$\n(x+2)+(5-x)=7\\le 9,\n$$\nso the whole middle interval is allowed.\n\nFor $x>5$:\n$$\n(x+2)+(x-5)=2x-3\\le 9\\qquad\\Rightarrow\\qquad 2x\\le 12\\qquad\\Rightarrow\\qquad x\\le 6.\n$$\n\nFor $x<-2$:\n$$\n(-x-2)+(5-x)=3-2x\\le 9\\qquad\\Rightarrow\\qquad -2x\\le 6\\qquad\\Rightarrow\\qquad x\\ge -3.\n$$\n\nCombining the three pieces gives exactly $[-3,6]$. Outside that interval the sum exceeds $9$. The claim is true.\n\nAt the endpoints: $|-3+2|+|-3-5|=1+8=9$ and $|6+2|+|6-5|=8+1=9$, so both $-3$ and $6$ are included, matching the closed interval.\n\nSo the statement is True.",
+        "**B.** → True\n\nDomain: $2x-1\\ge 0$ and $x+4\\ge 0$, i.e. $x\\ge\\tfrac12$. Isolate one radical:\n$$\n\\sqrt{2x-1}=5-\\sqrt{x+4}.\n$$\n\nThe right-hand side must be nonnegative, so $\\sqrt{x+4}\\le 5$, i.e. $x+4\\le 25$, hence $x\\le 21$. Squaring once:\n$$\n2x-1=25-10\\sqrt{x+4}+(x+4)\\qquad\\Rightarrow\\qquad x-30=-10\\sqrt{x+4}.\n$$\n\nHence $30-x=10\\sqrt{x+4}$ (so also $x\\le 30$). Square again:\n$$\n(30-x)^{2}=100(x+4)\\qquad\\Rightarrow\\qquad x^{2}-60x+900=100x+400,\n$$\n$$\nx^{2}-160x+500=0.\n$$\n\nThe discriminant is $25600-2000=23600=400\\cdot 59$, so\n$$\nx=80\\pm 10\\sqrt{59}.\n$$\n\nOnly the smaller root $80-10\\sqrt{59}\\approx 3.19$ lies in $[\\tfrac12,21]$ and survives back-substitution; the larger root is extraneous. Unique real solution — the claim is true.\n\nSo the statement is True.",
+        "**C.** → False\n\nDomain: $x\\neq\\pm 1$. Combine the left-hand side over a common denominator:\n$$\n\\frac{1}{x-1}-\\frac{1}{x+1}=\\frac{(x+1)-(x-1)}{(x-1)(x+1)}=\\frac{2}{x^{2}-1}.\n$$\n\nThe equation becomes\n$$\n\\frac{2}{x^{2}-1}=\\frac{1}{2}.\n$$\n\nCross-multiply (or take reciprocals):\n$$\nx^{2}-1=4\\qquad\\Rightarrow\\qquad x^{2}=5\\qquad\\Rightarrow\\qquad x=\\pm\\sqrt{5}.\n$$\n\nNumerically $\\sqrt{5}\\approx 2.236$ and $-\\sqrt{5}\\approx -2.236$. Both avoid the poles $\\pm 1$, so both are domain-legal.\n\nThere are **two** legal roots, not exactly one. The claim is false.\n\nSpot-check $x=\\sqrt{5}$: $2/(5-1)=2/4=1/2$. Spot-check $x=-\\sqrt{5}$: $2/(5-1)=1/2$ again. Both roots are genuine.\n\nSo the statement is False.",
+        "**D.** → True\n\nCritical points: zeros $x=2$, $x=3$ and pole $x=4$ (excluded). Sign chart on the open intervals:\n\n| Interval | $(x-2)(x-3)$ | $x-4$ | quotient |\n| --- | --- | --- | --- |\n| $(-\\infty,2)$ | $+$ | $-$ | $-$ |\n| $(2,3)$ | $-$ | $-$ | $+$ |\n| $(3,4)$ | $+$ | $-$ | $-$ |\n| $(4,+\\infty)$ | $+$ | $+$ | $+$ |\n\nInclude the zeros $x=2$ and $x=3$ (numerator vanishes, quotient $0\\ge 0$) and exclude the pole $x=4$. The solution set is exactly\n$$\n[2,3]\\cup(4,+\\infty),\n$$\nmatching the claim.\n\nTest points confirm the chart: at $x=0$ the quotient is $({-2})({-3})/({-4})=-6/{-4}<0$; at $x=2.5$ it is $(0.5)({-0.5})/({-1.5})>0$; at $x=5$ it is $(3)(2)/(1)>0$.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe right-hand side must be nonnegative:\n$$\nx^{2}-x-1\\ge 0\\qquad\\Leftrightarrow\\qquad x\\le\\frac{1-\\sqrt{5}}{2}\\ \\text{ or }\\ x\\ge\\frac{1+\\sqrt{5}}{2}.\n$$\n\n**Positive branch.** Solve $2x-1=x^{2}-x-1$:\n$$\n0=x^{2}-3x\\qquad\\Rightarrow\\qquad x(x-3)=0,\n$$\nso $x=0$ or $x=3$. Only $x=3$ lies in the RHS-nonnegative set. Check: LHS $=|6-1|=5$ and RHS $=9-3-1=5$.\n\n**Negative branch.** Solve $2x-1=-(x^{2}-x-1)=-x^{2}+x+1$:\n$$\nx^{2}+x-2=0\\qquad\\Rightarrow\\qquad(x+2)(x-1)=0,\n$$\nso $x=-2$ or $x=1$. At $x=1$ the RHS equals $-1<0$, illegal. At $x=-2$: LHS $=|-4-1|=5$ and RHS $=4+2-1=5$.\n\nSurvivors: $x=3$ and $x=-2$. Exactly two distinct real solutions. The claim is true.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 7.H01",
+      "id": "demo-math-7-h01",
+      "title": "Quadratic family with a parameter — critical cases",
+      "chapter": 7,
+      "subsection": "7.2",
+      "context": "For each real parameter $m$, define\n$$\nf_m(x)=x^{2}-2mx+(m^{2}-1).\n$$\nDecide whether each claim about this family is true or false.",
+      "statements": [
+        "For every real $m$, the equation $f_m(x)=0$ has two distinct real roots.",
+        "The vertex $y$-coordinate of $y=f_m(x)$ equals $-1$ for every $m$.",
+        "If $m=2$, then the roots are $x=1$ and $x=3$.",
+        "There exists a real $m$ for which both roots are equal to $0$.",
+        "The axis of symmetry is $x=m$, so as $m$ increases the axis moves right, and at $m=0$ the axis is the $y$-axis."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Complete the square or expand the discriminant in $m$: $\\Delta=(2m)^{2}-4(m^{2}-1)=4m^{2}-4m^{2}+4=4>0$ for every real $m$, so the roots are always the distinct pair $m\\pm 1$. Completing the square yields $f_m(x)=(x-m)^{2}-1$, whose axis is $x=m$ and whose vertex height is constantly $-1$. Specializing to $m=2$ gives the concrete roots $1$ and $3$. A double root at $0$ would need $m=0$ and $m^{2}-1=0$ together — impossible.",
+      "tactical_explanations": [
+        "**A.** → True\n\nThe discriminant of $f_m$ as a quadratic in $x$ is\n$$\n\\Delta=(2m)^{2}-4\\cdot 1\\cdot(m^{2}-1).\n$$\n\nExpand term by term:\n$$\n4m^{2}-4m^{2}+4=4.\n$$\n\nSince $\\Delta=4>0$ for every real $m$, there are always two distinct real roots. The quadratic formula gives them explicitly:\n$$\nx=\\frac{2m\\pm\\sqrt{4}}{2}=\\frac{2m\\pm 2}{2}=m\\pm 1.\n$$\n\nThese differ by $2$ for every $m$, so they never coalesce. Completing the square\n$$\nf_m(x)=(x-m)^{2}-1\n$$\nshows the same: the horizontal line $y=0$ always cuts the upward parabola at two points. The claim is true.\n\nExplicitly the two roots $m+1$ and $m-1$ are distinct because $(m+1)-(m-1)=2\\neq 0$ for every real $m$.\n\nSo the statement is True.",
+        "**B.** → True\n\nA monic quadratic $x^{2}-Sx+P$ has axis $x=S/2$. Here $S=2m$, so the axis is\n$$\nx=\\frac{2m}{2}=m.\n$$\n\nThe vertex $y$-coordinate is the value on the axis:\n$$\nf_m(m)=m^{2}-2m\\cdot m+(m^{2}-1).\n$$\n\nSimplify step by step:\n$$\nm^{2}-2m^{2}+m^{2}-1=(m^{2}-2m^{2}+m^{2})-1=-1.\n$$\n\nCompleting the square gives the same constant:\n$$\nf_m(x)=(x-m)^{2}-1,\n$$\nwhose minimum is $-1$ for every $m$. The claim is true.\n\nGeometrically every parabola in the family sits with its vertex exactly one unit below the $x$-axis, independent of the horizontal shift $m$.\n\nSo the statement is True.",
+        "**C.** → True\n\nSpecialize the family to the concrete parameter $m=2$:\n$$\nf_2(x)=x^{2}-2\\cdot 2\\cdot x+(2^{2}-1)=x^{2}-4x+3.\n$$\n\nFactor by inspection (or by the general root formula $m\\pm 1$):\n$$\nx^{2}-4x+3=(x-1)(x-3),\n$$\nbecause $1+3=4$ and $1\\cdot 3=3$.\n\nThe roots are therefore $x=1$ and $x=3$, which matches $2\\pm 1$. Direct substitution also checks:\n$$\nf_2(1)=1-4+3=0,\\qquad f_2(3)=9-12+3=0.\n$$\n\nThe claim is true.\n\nUsing $m\\pm 1$ at $m=2$ recovers $2+1=3$ and $2-1=1$ instantly, matching the factored form $(x-1)(x-3)$.\n\nSo the statement is True.",
+        "**D.** → False\n\nIf both roots equal $0$, then $f_m$ would have a double root at $0$, requiring\n$$\nf_m(0)=0\\qquad\\text{and}\\qquad f_m'(0)=0.\n$$\n\nNow $f_m(0)=m^{2}-1$ and $f_m'(x)=2x-2m$, so\n$$\nf_m'(0)=-2m=0\\qquad\\Rightarrow\\qquad m=0.\n$$\n\nBut then\n$$\nf_0(0)=0^{2}-1=-1\\neq 0.\n$$\n\nEquivalently: the roots are $m\\pm 1$, and requiring both to vanish gives the contradictory system\n$$\nm+1=0\\quad\\text{and}\\quad m-1=0.\n$$\n\nNo such $m$ exists; the claim is false.\n\nIf one tried to force a root at $0$ with multiplicity one only, $f_m(0)=m^{2}-1=0$ would need $m=\\pm 1$, but then the other root is $m\\mp 1\\neq 0$ — still not a double root at zero.\n\nSo the statement is False.",
+        "**E.** → True\n\nFor the monic quadratic $x^{2}-2mx+(m^{2}-1)$, the axis of symmetry is half the linear coefficient:\n$$\nx=\\frac{2m}{2}=m.\n$$\n\nEquivalently, completing the square yields $f_m(x)=(x-m)^{2}-1$, whose axis is visibly $x=m$.\n\nAs the parameter $m$ increases, this vertical line translates to the right at unit speed: if $m$ rises by $1$, the axis moves from $x=m$ to $x=m+1$.\n\nSetting $m=0$ places the axis at\n$$\nx=0,\n$$\ni.e. on the $y$-axis.\n\nAll three clauses of the claim hold.\n\nDifferentiating the completed-square form also shows $f_m'(x)=2(x-m)$, which vanishes only on the axis $x=m$, confirming the symmetry line.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 8.H01",
+      "id": "demo-math-8-h01",
+      "title": "Courier tariff — affine day/night word problem",
+      "chapter": 8,
+      "subsection": "8.1",
+      "context": "A courier charges a daytime base fee of $€\\,12$ plus $€\\,0.8$ per kilometre. Night runs use the same kilometre rate but add a flat night surcharge of $€\\,5$. Let $d>0$ be the distance in kilometres. Decide whether each claim is true or false.",
+      "statements": [
+        "The daytime bill for distance $d$ is exactly $12+0.8d$ euros.",
+        "If the same distance were run at night, the night bill would be exactly $€\\,5$ more than the daytime bill for every $d>0$.",
+        "There is a distance $d^{*}$ at which a daytime run and a night run would cost the same; solving $12+0.8d=12+0.8d+5$ finds it.",
+        "If the firm waived the $€\\,12$ base on daytime runs only (charging pure $0.8d$), then for a $20$ km daytime job the client would save exactly $€\\,12$ compared with the original daytime tariff.",
+        "If distance doubled from $10$ km to $20$ km on a daytime run, the bill would also double, because both the base and the kilometre charge scale linearly with $d$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Day cost is the affine function $C_{\\mathrm{day}}(d)=12+0.8d$; night cost is the same plus a constant surcharge of $5$, so $C_{\\mathrm{night}}(d)=C_{\\mathrm{day}}(d)+5$. Their graphs are parallel (same slope $0.8$), so they never meet — the displayed break-even equation $12+0.8d=12+0.8d+5$ simplifies to the absurdity $0=5$. Waiving the $€\\,12$ base on a $20$ km daytime job saves exactly $€\\,12$ ($28\\to 16$). Doubling distance from $10$ km to $20$ km multiplies the bill by $28/20=1.4$, not by $2$, because the intercept is fixed.",
+      "tactical_explanations": [
+        "**A.** → True\n\nBy the stated tariff, every daytime job pays a fixed base of $12$ euros plus a proportional charge of $0.8$ euros per kilometre. For distance $d>0$ that is exactly the affine expression\n$$\nC_{\\mathrm{day}}(d)=12+0.8d.\n$$\n\nCheck a concrete sample: at $d=10$ one gets\n$$\n12+0.8\\cdot 10=12+8=20,\n$$\nand at $d=25$ one gets\n$$\n12+0.8\\cdot 25=12+20=32.\n$$\n\nNo other fees are mentioned for daytime runs. The claim matches the tariff definition.\n\nWriting the formula with euros made explicit: $C_{\\mathrm{day}}(d)=12+0.8d$ is the unique linear interpolant of the two tariff ingredients stated in the stem.\n\nSo the statement is True.",
+        "**B.** → True\n\nBy definition the night tariff is the daytime affine charge plus a flat surcharge of $€\\,5$:\n$$\nC_{\\mathrm{night}}(d)=12+0.8d+5=17+0.8d.\n$$\n\nRewrite as a translate of the day bill:\n$$\nC_{\\mathrm{night}}(d)=C_{\\mathrm{day}}(d)+5.\n$$\n\nSubtract the two bills:\n$$\nC_{\\mathrm{night}}(d)-C_{\\mathrm{day}}(d)=5\n$$\nfor every $d>0$. The difference is a pure constant — it does not depend on distance at all.\n\nGeometrically the night graph is a vertical translate of the day graph by five euros. The claim is true.\n\nA concrete check at $d=10$: day bill $=20$, night bill $=25$, and $25-20=5$. At $d=100$: day $=92$, night $=97$, difference still exactly $5$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe displayed “break-even” equation is\n$$\n12+0.8d=12+0.8d+5.\n$$\n\nCancel the identical affine parts $12+0.8d$ from both sides to obtain the absurdity\n$$\n0=5.\n$$\n\nThere is no real $d^{*}$ satisfying it. Geometrically the two cost lines are parallel (same slope $0.8$) and vertically separated by $5$:\n$$\nC_{\\mathrm{night}}(d)-C_{\\mathrm{day}}(d)=5\\neq 0\n$$\nfor every $d$. They never intersect.\n\nThe algebra shown does **not** find a break-even distance; the claim is false.\n\nIf the night surcharge were distance-dependent the slopes would differ and a break-even could exist; here the surcharge is flat, so the lines stay parallel forever.\n\nSo the statement is False.",
+        "**D.** → True\n\nCompute the original daytime bill at $d=20$ kilometres:\n$$\nC_{\\mathrm{day}}(20)=12+0.8\\cdot 20.\n$$\n\nFirst the kilometre charge:\n$$\n0.8\\cdot 20=16,\n$$\nthen add the base:\n$$\n12+16=28.\n$$\n\nIf the firm waives the $€\\,12$ base and charges the pure kilometre rate, the bill becomes\n$$\n0.8\\cdot 20=16.\n$$\n\nThe saving is\n$$\n28-16=12\n$$\neuros — exactly the waived base fee. The claim is true.\n\nThe saving equals the base fee for every $d>0$, not only at $20$ km: $C_{\\mathrm{day}}(d)-0.8d=12$. The claim’s special case $d=20$ is representative.\n\nSo the statement is True.",
+        "**E.** → False\n\nEvaluate the daytime bill at the two distances:\n$$\nC_{\\mathrm{day}}(10)=12+0.8\\cdot 10=12+8=20,\n$$\n$$\nC_{\\mathrm{day}}(20)=12+0.8\\cdot 20=12+16=28.\n$$\n\nForm the ratio:\n$$\n\\frac{C_{\\mathrm{day}}(20)}{C_{\\mathrm{day}}(10)}=\\frac{28}{20}=1.4\\neq 2.\n$$\n\nDoubling distance multiplies the bill by $1.4$, not by $2$. The kilometre part scales ($8\\to 16$), but the fixed base of $12$ does not; an affine function with nonzero intercept is not homogeneous of degree one.\n\nThe claim is false.\n\nHomogeneity would require $C_{\\mathrm{day}}(\\lambda d)=\\lambda C_{\\mathrm{day}}(d)$ for all $\\lambda>0$; plugging $\\lambda=2$ and $d=10$ gives $28\\neq 40=2\\cdot 20$, a direct counter-example.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 9.H01",
+      "id": "demo-math-9-h01",
+      "title": "Letter-heavy polynomial limits and end behaviour",
+      "chapter": 9,
+      "subsection": "9.1",
+      "context": "Let\n$$\np(x)=ax^{3}+bx^{2}+cx+d,\\qquad a\\neq 0,\n$$\nbe a real cubic, and define\n$$\nq(x)=\\dfrac{p(x)}{x^{2}+1}.\n$$\nDecide whether each claim is true or false.",
+      "statements": [
+        "$\\displaystyle\\lim_{x\\to+\\infty}q(x)=+\\infty$ whenever $a>0$.",
+        "$\\displaystyle\\lim_{x\\to-\\infty}p(x)=-\\infty$ whenever $a>0$.",
+        "If $p(1)=0$ and $p'(1)=0$, then $(x-1)^{2}$ divides $p(x)$, so $x=1$ is at least a double root.",
+        "For every choice of $a,b,c,d$ with $a\\neq 0$, the horizontal line $y=0$ is a horizontal asymptote of $q$.",
+        "If $a=2$, $b=-3$, $c=0$, $d=0$, then $p(x)=x^{2}(2x-3)$, so $x=0$ is a double root and $x=\\tfrac32$ is a simple root."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Divide the cubic by the quadratic denominator: $q(x)=ax+b+O(1/x)$ as $|x|\\to\\infty$, so end behaviour tracks the leading linear term $ax$. Whenever $a>0$ one has $q(x)\\to+\\infty$ as $x\\to+\\infty$, while the cubic itself tends to $-\\infty$ as $x\\to-\\infty$. A common root of $p$ and $p'$ is a multiple root, so $p(1)=p'(1)=0$ forces $(x-1)^{2}\\mid p(x)$. The line $y=0$ is never a horizontal asymptote when $a\\neq 0$. The concrete coefficient choice $a=2,b=-3,c=d=0$ factors as $x^{2}(2x-3)$.",
+      "tactical_explanations": [
+        "**A.** → True\n\nPerform polynomial division (or factor $x$ out of the leading terms):\n$$\nq(x)=\\frac{ax^{3}+bx^{2}+cx+d}{x^{2}+1}=ax+b+\\frac{(c-a)x+(d-b)}{x^{2}+1}.\n$$\n\nAs $x\\to+\\infty$ the rational remainder tends to $0$, because its numerator is linear while the denominator is quadratic:\n$$\n\\left|\\frac{(c-a)x+(d-b)}{x^{2}+1}\\right|\\le\\frac{|c-a|\\,|x|+|d-b|}{x^{2}}\\to 0.\n$$\n\nTherefore\n$$\nq(x)\\sim ax.\n$$\n\nWhenever $a>0$ one has $ax\\to+\\infty$, hence $q(x)\\to+\\infty$. The claim is true.\n\nFor a concrete illustration take $a=1$, $b=c=d=0$: then $q(x)=x^{3}/(x^{2}+1)\\sim x\\to+\\infty$ as $x\\to+\\infty$, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nA cubic is dominated by its leading term. Factor out $ax^{3}$:\n$$\np(x)=ax^{3}\\Bigl(1+\\frac{b}{ax}+\\frac{c}{ax^{2}}+\\frac{d}{ax^{3}}\\Bigr).\n$$\n\nAs $x\\to-\\infty$ the parenthesis tends to $1$. With $a>0$ the leading factor behaves as\n$$\nax^{3}\\to-\\infty,\n$$\nbecause the cubic power of a large negative number is negative and the positive coefficient $a$ preserves the sign.\n\nTherefore\n$$\n\\lim_{x\\to-\\infty}p(x)=-\\infty.\n$$\n\nThe claim is true.\n\nThe same leading-term argument with $a>0$ and $x\\to+\\infty$ would give $p(x)\\to+\\infty$; the odd degree is what flips the left-hand end behaviour to $-\\infty$.\n\nSo the statement is True.",
+        "**C.** → True\n\nA standard root-multiplicity criterion: if a polynomial $p$ and its derivative $p'$ share a root $r$, then $(x-r)^{2}$ divides $p$.\n\nHere $p(1)=0$ and $p'(1)=0$, so $r=1$ is a common root. Write the Taylor expansion about $1$:\n$$\np(x)=p(1)+p'(1)(x-1)+\\tfrac12 p''(\\xi)(x-1)^{2}\n$$\nfor some $\\xi$ between $x$ and $1$. Both constant and linear coefficients vanish, so\n$$\n(x-1)^{2}\\mid p(x),\n$$\ni.e. $x=1$ has multiplicity at least $2$. (For a cubic the multiplicity is then $2$ or $3$.) The claim is true.\n\nEquivalently, write $p(x)=(x-1)^{2}(ax+\\beta)$; the factor $(x-1)^{2}$ is forced by the twin conditions $p(1)=p'(1)=0$.\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom the asymptotic expansion in A,\n$$\nq(x)\\sim ax\\qquad(a\\neq 0),\n$$\nso as $x\\to+\\infty$ one has $q(x)\\to\\pm\\infty$ according to the sign of $a$, and as $x\\to-\\infty$ the opposite infinity.\n\nA horizontal asymptote $y=0$ would require\n$$\n\\lim_{|x|\\to\\infty}q(x)=0,\n$$\nwhich fails whenever $a\\neq 0$.\n\nConcrete counter-example: take $a=1$, $b=c=d=0$. Then $q(x)=x^{3}/(x^{2}+1)\\to+\\infty$ as $x\\to+\\infty$, not to $0$.\n\nThe claim that $y=0$ is always a horizontal asymptote is false.\n\nDegree counting also forbids a horizontal asymptote: numerator degree $3$ exceeds denominator degree $2$, so $q$ diverges at infinity whenever $a\\neq 0$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSubstitute the concrete coefficients $a=2$, $b=-3$, $c=0$, $d=0$:\n$$\np(x)=2x^{3}-3x^{2}.\n$$\n\nFactor out the obvious common power of $x$:\n$$\np(x)=x^{2}(2x-3).\n$$\n\nThe squared factor $x^{2}$ shows that $x=0$ is a root of multiplicity exactly $2$. The remaining linear factor vanishes at\n$$\n2x-3=0\\qquad\\Rightarrow\\qquad x=\\frac{3}{2},\n$$\nand that root is simple because $2x-3$ appears only to the first power.\n\nCheck by differentiating: $p'(x)=6x^{2}-6x=6x(x-1)$, so $p'(0)=0$ (confirming multiplicity $\\ge 2$ at $0$) while $p'(3/2)=6\\cdot(3/2)\\cdot(1/2)=9/2\\neq 0$ (confirming simplicity at $3/2$). Both multiplicity claims hold.\n\nThe three roots of $p$ are therefore $0$ (double) and $3/2$ (simple), matching every clause of the claim.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 10.H01",
+      "id": "demo-math-10-h01",
+      "title": "Two entangled exponential–log functions — hard compare",
+      "chapter": 10,
+      "subsection": "10.2",
+      "context": "Define the entangled pair\n$$\nf(t)=5e^{0.25t},\\qquad g(t)=20e^{-0.5t}\\qquad(t\\in\\mathbb{R}),\n$$\nand the log-gap\n$$\nh(t)=\\ln f(t)-\\ln g(t)=\\ln\\!\\bigl(f(t)/g(t)\\bigr).\n$$\nAlso write $p(t)=f(t)\\,g(t)$. Decide whether each claim is true or false.",
+      "statements": [
+        "$f(t)=g(t)$ has the unique real solution $t=\\dfrac{4}{3}\\ln 2=\\dfrac{\\ln 4}{0.75}$.",
+        "$h(t)=\\ln 4+0.75t$ for every real $t$, so $h$ is affine with positive slope $0.75$.",
+        "If $t$ increases by $4$, then $f$ is multiplied by $e$ and $g$ is multiplied by $e^{-2}$.",
+        "The product $p(t)=f(t)g(t)$ is minimized over $\\mathbb{R}$ at the same $t$ where $f=g$, and that minimum value equals $100$.",
+        "Because $f(0)=5<20=g(0)$ and $f$ grows while $g$ decays, one has $f(t)<g(t)$ for every $t>0$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Equate $5e^{0.25t}=20e^{-0.5t}$ to get $e^{0.75t}=4$, so $t=(\\ln 4)/0.75=(4/3)\\ln 2$. The log-gap expands as $h(t)=\\ln(5/20)+0.75t=-\\ln 4+0.75t$, not $\\ln 4+0.75t$. A time shift of $4$ multiplies $f$ by $e^{0.25\\cdot 4}=e$ and $g$ by $e^{-0.5\\cdot 4}=e^{-2}$. The product $p(t)=100e^{-0.25t}$ is strictly decreasing — it has no minimum at the crossing and is never constantly $100$. After the crossing $t^{*}>0$, the growing $f$ overtakes the decaying $g$.",
+      "tactical_explanations": [
+        "**A.** → True\n\nSet $f(t)=g(t)$:\n$$\n5e^{0.25t}=20e^{-0.5t}.\n$$\n\nDivide both sides by $5$ and multiply by $e^{0.5t}$:\n$$\ne^{0.25t+0.5t}=\\frac{20}{5}=4\\qquad\\Rightarrow\\qquad e^{0.75t}=4.\n$$\n\nTake the natural log:\n$$\n0.75t=\\ln 4=2\\ln 2.\n$$\n\nSolve for $t$:\n$$\nt=\\frac{2\\ln 2}{0.75}=\\frac{2\\ln 2}{3/4}=\\frac{8\\ln 2}{3}=\\frac{4}{3}\\ln 2=\\frac{\\ln 4}{0.75}.\n$$\n\nBecause $t\\mapsto e^{0.75t}$ is one-to-one on $\\mathbb{R}$, the root is unique. The claim is true.\n\nNumerically $t^{*}=(4/3)\\ln 2\\approx 0.924$, and $f(0.924)\\approx g(0.924)\\approx 6.32$, confirming a genuine crossing.\n\nSo the statement is True.",
+        "**B.** → False\n\nExpand the log-gap directly:\n$$\nh(t)=\\ln(5e^{0.25t})-\\ln(20e^{-0.5t}).\n$$\n\nUse $\\ln(uv)=\\ln u+\\ln v$:\n$$\nh(t)=\\ln 5+0.25t-\\ln 20+0.5t.\n$$\n\nCombine constants and slopes:\n$$\nh(t)=\\ln\\!\\Bigl(\\frac{5}{20}\\Bigr)+0.75t=\\ln\\!\\Bigl(\\frac{1}{4}\\Bigr)+0.75t=-\\ln 4+0.75t.\n$$\n\nThe slope $0.75$ is correct, but the intercept is $-\\ln 4=\\ln(1/4)$, **not** $+\\ln 4$. Numerically $-\\ln 4\\approx -1.386$ while $+\\ln 4\\approx +1.386$.\n\nThe displayed formula $h(t)=\\ln 4+0.75t$ is wrong; the claim is false.\n\nEvaluating the wrong formula at $t=0$ would give $h(0)=\\ln 4>0$, but the true $h(0)=\\ln(5/20)=\\ln(1/4)<0$, already a contradiction.\n\nSo the statement is False.",
+        "**C.** → True\n\nShift the time argument by four units and use the exponential addition formula:\n$$\nf(t+4)=5e^{0.25(t+4)}=5e^{0.25t+1}.\n$$\n\nFactor out $e^{1}=e$:\n$$\nf(t+4)=e\\cdot\\bigl(5e^{0.25t}\\bigr)=e\\,f(t).\n$$\n\nLikewise for $g$:\n$$\ng(t+4)=20e^{-0.5(t+4)}=20e^{-0.5t-2}=e^{-2}\\bigl(20e^{-0.5t}\\bigr)=e^{-2}\\,g(t).\n$$\n\nThe exponents come from the products\n$$\n0.25\\cdot 4=1,\\qquad -0.5\\cdot 4=-2.\n$$\n\nThus a time increase of $4$ multiplies $f$ by $e$ and multiplies $g$ by $e^{-2}$. The claim is true.\n\nThe growth factors are pure constants independent of $t$: $f(\\cdot+4)/f(\\cdot)=e$ and $g(\\cdot+4)/g(\\cdot)=e^{-2}$ hold identically.\n\nSo the statement is True.",
+        "**D.** → False\n\nForm the product explicitly:\n$$\np(t)=f(t)g(t)=5\\cdot 20\\cdot e^{0.25t-0.5t}=100\\,e^{-0.25t}.\n$$\n\nThis is a strictly decreasing exponential in $t$. Its derivative is\n$$\np'(t)=100\\cdot(-0.25)e^{-0.25t}=-25e^{-0.25t}<0\n$$\nfor every real $t$. It has **no** global minimizer on $\\mathbb{R}$ (it tends to $0$ as $t\\to+\\infty$ and to $+\\infty$ as $t\\to-\\infty$).\n\nIn particular it is not minimized at the crossing point $t^{*}=\\frac{4}{3}\\ln 2$, and\n$$\np(t^{*})=100\\,e^{-0.25t^{*}}\\neq 100\n$$\nunless $t^{*}=0$, which it is not ($t^{*}\\approx 0.924$).\n\nBoth halves of the claim fail; the statement is false.\n\nAt the crossing, $p(t^{*})=100e^{-0.25\\cdot(4/3)\\ln 2}=100\\cdot 2^{-1/3}\\approx 79.37$, which is strictly less than $100$ and is not a minimum.\n\nSo the statement is False.",
+        "**E.** → False\n\nIt is true that $f(0)=5<20=g(0)$ and that $f$ is increasing while $g$ is decreasing. But they meet at the positive time\n$$\nt^{*}=\\frac{4}{3}\\ln 2\\approx 0.924>0\n$$\nfrom A.\n\nFor every $t>t^{*}$ the log-gap $h(t)=-\\ln 4+0.75t$ is positive (because the slope $0.75>0$ and $h(t^{*})=0$), so\n$$\nf(t)>g(t)\\qquad\\text{for all }t>t^{*}.\n$$\n\nConcrete check at $t=2>t^{*}$:\n$$\nf(2)=5e^{0.5}\\approx 8.24,\\qquad g(2)=20e^{-1}\\approx 7.36,\n$$\nand $8.24>7.36$.\n\nThe blanket claim that $f$ stays below $g$ for **every** $t>0$ is therefore false — it only holds on $(0,t^{*})$.\n\nThe crossing time $t^{*}>0$ is the precise threshold: $f<g$ on $(-\\infty,t^{*})$ and $f>g$ on $(t^{*},+\\infty)$.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO MATH 11.H01",
+      "id": "demo-math-11-h01",
+      "title": "Economic derivative of a tangled revenue path",
+      "chapter": 11,
+      "subsection": "11.1",
+      "context": "A firm faces inverse demand $P(q)=120-4q$ for $0\\le q\\le 30$ (price in euros, quantity in thousands of units). Revenue is $R(q)=q\\cdot P(q)$. Marginal revenue means $R'(q)$. Decide whether each claim is true or false.",
+      "statements": [
+        "$R'(q)=120-8q$, so in particular $R'(5)=80$.",
+        "Revenue is maximised at the same quantity where $P(q)=0$, i.e. at the choke quantity $q=30$.",
+        "If output rises from $q=5$ to $q=6$, the linear approximation using $R'(5)$ overestimates the true revenue increase $R(6)-R(5)$, because $R$ is a concave quadratic.",
+        "At the quantity that maximises $R$, price equals marginal revenue.",
+        "Cutting price enough to raise quantity from $q=20$ to $q=21$ must raise revenue, because more units are sold."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Expand $R(q)=q(120-4q)=120q-4q^{2}$, so $R'(q)=120-8q$ and $R'(5)=120-40=80$. Revenue peaks where $R'=0$, i.e. at $q=15$ with $R(15)=900$, not at the choke $q=30$ where $R=0$. Concavity $R''=-8<0$ makes the tangent overestimate increments: the true rise $R(6)-R(5)=76$ is strictly less than $R'(5)\\cdot 1=80$. At the peak, $MR=0$ while $P(15)=60$. Past the peak, $R(21)=756<800=R(20)$ despite selling one more unit.",
+      "tactical_explanations": [
+        "**A.** → True\n\nForm the revenue function by multiplying quantity by inverse demand:\n$$\nR(q)=q\\cdot P(q)=q(120-4q)=120q-4q^{2}.\n$$\n\nDifferentiate term by term:\n$$\nR'(q)=120-8q.\n$$\n\nEvaluate at the concrete output $q=5$:\n$$\nR'(5)=120-8\\cdot 5.\n$$\n\nCompute the product first:\n$$\n8\\cdot 5=40,\\qquad 120-40=80.\n$$\n\nBoth the general formula for marginal revenue and the numerical evaluation match the claim. The statement is true.\n\nAs a quick consistency check, $R'(10)=120-80=40>0$ (still climbing) and $R'(20)=120-160=-40<0$ (already falling), bracketing the peak at $15$.\n\nSo the statement is True.",
+        "**B.** → False\n\nCritical points of revenue solve $R'(q)=0$:\n$$\n120-8q=0\\qquad\\Rightarrow\\qquad 8q=120\\qquad\\Rightarrow\\qquad q=\\frac{120}{8}=15.\n$$\n\nAt the choke quantity where price vanishes,\n$$\nP(30)=120-4\\cdot 30=120-120=0,\n$$\none has $R(30)=30\\cdot 0=0$ as well — that is a boundary minimum of revenue on $[0,30]$, not the maximum.\n\nThe maximum value is\n$$\nR(15)=120\\cdot 15-4\\cdot 15^{2}=1800-4\\cdot 225=1800-900=900.\n$$\n\nThe claim equating the revenue peak with the choke quantity is false.\n\nOn the endpoints of the demand interval one also has $R(0)=0$ and $R(30)=0$, so the choke quantity is a second zero of revenue, never a maximizer.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe second derivative is\n$$\nR''(q)=-8<0,\n$$\nso $R$ is strictly concave. For a concave function the tangent line lies above the graph, and therefore overestimates finite increments.\n\nExplicitly compute both revenue values:\n$$\nR(5)=120\\cdot 5-4\\cdot 25=600-100=500,\n$$\n$$\nR(6)=120\\cdot 6-4\\cdot 36=720-144=576.\n$$\n\nThe true increase is\n$$\nR(6)-R(5)=576-500=76,\n$$\nwhile the linear approximation is\n$$\nR'(5)\\cdot 1=80.\n$$\n\nSince $76<80$, the tangent overestimates. The claim is true.\n\nThe overestimate gap is exactly $-\\tfrac12 R''(\\xi)\\cdot 1^{2}$ for some $\\xi\\in(5,6)$ by Taylor’s theorem; with $R''=-8$ the gap is about $4$, matching $80-76=4$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt the revenue-maximizing quantity $q=15$ one has\n$$\nR'(15)=120-8\\cdot 15=120-120=0.\n$$\n\nThe corresponding price is\n$$\nP(15)=120-4\\cdot 15=120-60=60.\n$$\n\nCompare:\n$$\nP(15)=60\\neq 0=R'(15).\n$$\n\nSo price does **not** equal marginal revenue at the revenue peak. (The familiar identity $MR=P$ holds only for a price-taking firm; here the firm faces a downward-sloping demand, so $MR=P+qP'=P-4q$.)\n\nThe claim is false.\n\nIn fact $MR(q)=P(q)+qP'(q)= (120-4q)+q(-4)=120-8q$, which equals $P(q)$ only if $q=0$.\n\nSo the statement is False.",
+        "**E.** → False\n\nCompute the two revenue values past the peak:\n$$\nR(20)=120\\cdot 20-4\\cdot 400=2400-1600=800,\n$$\n$$\nR(21)=120\\cdot 21-4\\cdot 441=2520-1764=756.\n$$\n\n(Check the arithmetic: $4\\cdot 441=1764$ and $2520-1764=756$.)\n\nQuantity rises from $20$ to $21$ while revenue **falls** by\n$$\n800-756=44.\n$$\n\nPast $q=15$, the price cut needed to sell the extra unit destroys more revenue on infra-marginal units than it gains on the marginal unit. The claim is false.\n\nMarginal revenue at $q=20$ is $R'(20)=-40<0$, so each extra unit past the peak reduces total revenue — matching the explicit drop from $800$ to $756$.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "MATH 12.187",
+      "id": "math-12-187",
+      "title": "A Positive Test in a Deer Population",
+      "chapter": 12,
+      "subsection": "12.5",
+      "context": "In a wild deer population, 60% are Subspecies A, 25% are Subspecies B, and 15% are Subspecies C. A certain prion disease is present in 2% of Subspecies A, 6% of Subspecies B, and 15% of Subspecies C. A field test for the disease has a 90% sensitivity (probability of a positive result if the deer truly has the disease) and a 4% false-positive rate (probability of a positive result if the deer does not have the disease), regardless of subspecies. A randomly tested deer receives a POSITIVE result.",
+      "statements": [
+        "The probability that a tested deer receives a positive result is greater than 7%.",
+        "The probability that the deer is Subspecies A AND receives a positive result is greater than 3.4%.",
+        "The probability that the deer is Subspecies A, given a positive result is greater than 45%.",
+        "The probability that a tested deer receives a negative result equals 1 minus the probability that a tested deer receives a positive result.",
+        "The probability that the deer is Subspecies C, given a positive result is greater than the probability that the deer is Subspecies B, given a positive result."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe probability that a tested deer receives a positive result, $P(T^+)$, was calculated in the overview using the Law of Total Probability, considering the prevalence of each subspecies and their respective probabilities of a positive test:\n\n$$\nP(T^+) = 0.08257\n$$\n\nThe claim states that this probability is greater than $7\\% = 0.07$. We have:\n\n$$\n0.08257 > 0.07\n$$\n\n.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nThis claim asks for the joint probability that the deer is Subspecies A AND receives a positive result, $P(S_A \\cap T^+)$. This can be found using the conditional probability $P(T^+ \\mid S_A)$ and the prior probability $P(S_A)$:\n\n$$\nP(S_A \\cap T^+) = P(T^+ \\mid S_A) P(S_A)\n$$\n\nFrom the overview, $P(T^+ \\mid S_A) = 0.0572$ and $P(S_A) = 0.60$. Substituting these values:\n\n$$\nP(S_A \\cap T^+) = (0.0572)(0.60)\n$$\n\n$$\nP(S_A \\cap T^+) = 0.03432\n$$\n\nThe claim states that this probability is greater than $3.4\\% = 0.034$. We have:\n\n$$\n0.03432 > 0.034\n$$\n\n.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nThis claim asks for the posterior probability that the deer is Subspecies A, given a positive test result, $P(S_A \\mid T^+)$. This requires Bayes' Theorem:\n\n$$\nP(S_A \\mid T^+) = \\frac{P(S_A \\cap T^+)}{P(T^+)}\n$$\n\nFrom the calculations above, $P(S_A \\cap T^+) = 0.03432$ and $P(T^+) = 0.08257$. Substituting these values:\n\n$$\nP(S_A \\mid T^+) = \\frac{0.03432}{0.08257}\n$$\n\n$$\nP(S_A \\mid T^+) \\approx 0.415647\n$$\n\n$$\nP(S_A \\mid T^+) \\approx 41.56\\%\n$$\n\nThe claim states that this probability is greater than $45\\% = 0.45$. We have:\n\n$$\n0.415647 \\not> 0.45\n$$\n\n.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nThe events of a tested deer receiving a positive result ($T^+$) and a negative result ($T^-$) are complementary events. This means that if a test is not positive, it must be negative, and vice-versa. For any two complementary events, their probabilities sum to 1:\n\n$$\nP(T^-) = 1 - P(T^+)\n$$\n\nThis is a fundamental property of probability for complementary events.\n\nSo the statement is True.\n",
+        "**E.** → True\n\nThis claim compares the posterior probabilities of Subspecies C and Subspecies B, given a positive test result: $P(S_C \\mid T^+)$ versus $P(S_B \\mid T^+)$. We calculate each using Bayes' Theorem.\n\nFor Subspecies C, given a positive test result:\n\n$$\nP(S_C \\mid T^+) = \\frac{P(S_C \\cap T^+)}{P(T^+)}\n$$\n\nWe need $P(S_C \\cap T^+)$. From the overview:\n\n$$\nP(S_C \\cap T^+) = P(T^+ \\mid S_C)P(S_C) = (0.169)(0.15) = 0.02535\n$$\n\nUsing $P(T^+) = 0.08257$:\n\n$$\nP(S_C \\mid T^+) = \\frac{0.02535}{0.08257}\n$$\n\n$$\nP(S_C \\mid T^+) \\approx 0.3069\n$$\n\nFor Subspecies B, given a positive test result:\n\n$$\nP(S_B \\mid T^+) = \\frac{P(S_B \\cap T^+)}{P(T^+)}\n$$\n\nWe need $P(S_B \\cap T^+)$. From the overview:\n\n$$\nP(S_B \\cap T^+) = P(T^+ \\mid S_B)P(S_B) = (0.0916)(0.25) = 0.0229\n$$\n\nUsing $P(T^+) = 0.08257$:\n\n$$\nP(S_B \\mid T^+) = \\frac{0.0229}{0.08257}\n$$\n\n$$\nP(S_B \\mid T^+) \\approx 0.2773\n$$\n\nComparing the two probabilities:\n\n$$\nP(S_C \\mid T^+) \\approx 0.3069 \\quad \\text{and} \\quad P(S_B \\mid T^+) \\approx 0.2773\n$$\n\n.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "This problem describes a population of deer composed of three subspecies, each with a different prevalence of a certain prion disease. A field test for the disease has a known sensitivity and false-positive rate. We are testing a randomly selected deer and observing a positive result.\n\nLet $S_A$, $S_B$, and $S_C$ be the events that a randomly selected deer belongs to Subspecies A, B, or C, respectively. Their prior probabilities are:\n$$P(S_A) = 0.60$$\n$$P(S_B) = 0.25$$\n$$P(S_C) = 0.15$$\n\nLet $D$ be the event that a deer has the prion disease. The prevalence rates for each subspecies are:\n$$P(D \\mid S_A) = 0.02$$\n$$P(D \\mid S_B) = 0.06$$\n$$P(D \\mid S_C) = 0.15$$\n\nLet $T^+$ be the event of a positive test result and $T^-$ be the event of a negative test result. The test characteristics are:\nSensitivity: $P(T^+ \\mid D) = 0.90$\nFalse-positive rate: $P(T^+ \\mid D^c) = 0.04$\n\nThis means:\n$P(T^- \\mid D) = 1 - P(T^+ \\mid D) = 1 - 0.90 = 0.10$\n$P(T^- \\mid D^c) = 1 - P(T^+ \\mid D^c) = 1 - 0.04 = 0.96$\n\nTo evaluate the probabilities involving test results, we first need to find the probability of a positive test result for a deer from each subspecies, considering its specific disease prevalence. This uses the Law of Total Probability for each subspecies:\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D, S_i) P(D \\mid S_i) + P(T^+ \\mid D^c, S_i) P(D^c \\mid S_i)$$\nSince the test characteristics are independent of subspecies, $P(T^+ \\mid D, S_i) = P(T^+ \\mid D)$ and $P(T^+ \\mid D^c, S_i) = P(T^+ \\mid D^c)$.\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D) P(D \\mid S_i) + P(T^+ \\mid D^c) (1 - P(D \\mid S_i))$$\n\nFor Subspecies A:\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(1 - 0.02)$$\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(0.98)$$\n$$\nP(T^+ \\mid S_A) = 0.018 + 0.0392 = 0.0572\n$$\n\nFor Subspecies B:\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(1 - 0.06)$$\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(0.94)$$\n$$\nP(T^+ \\mid S_B) = 0.054 + 0.0376 = 0.0916\n$$\n\nFor Subspecies C:\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(1 - 0.15)$$\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(0.85)$$\n$$\nP(T^+ \\mid S_C) = 0.135 + 0.034 = 0.169\n$$\n\nNow, to find the overall probability that a randomly tested deer receives a positive result, we use the Law of Total Probability over the subspecies:\n$$P(T^+) = P(T^+ \\mid S_A)P(S_A) + P(T^+ \\mid S_B)P(S_B) + P(T^+ \\mid S_C)P(S_C)$$\n$$P(T^+) = (0.0572)(0.60) + (0.0916)(0.25) + (0.169)(0.15)$$\n$$P(T^+) = 0.03432 + 0.0229 + 0.02535$$\n$$P(T^+) = 0.08257$$\nThis is the base probability for many subsequent calculations."
+    },
+    {
+      "case_id": "DEMO MATH 13.H02",
+      "id": "demo-math-13-h02",
+      "title": "Binomial courier audit — numbers only in the claims",
+      "chapter": 13,
+      "subsection": "13.2",
+      "context": "A night courier logs 50 independent deliveries. Each delivery is on time with probability 0.8, independently of the others. Let X be the number of on-time deliveries among the 50. Decide whether each claim is true or false.",
+      "statements": [
+        "The expected number of on-time deliveries is 40, and the variance of that count is 8.",
+        "The probability of exactly 40 on-time deliveries equals the binomial probability with n = 50, k = 40, success probability 0.8.",
+        "The probability of exactly 41 on-time deliveries is strictly larger than the probability of exactly 40, because 40.8 lies closer to 41 than to 40.",
+        "If every delivery were certain to be on time, then the count would be 50 for sure and the variance would be 0.",
+        "After subtracting 40 and dividing by the square root of 8, the resulting number is exactly a draw from the standard normal distribution — not merely approximately."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "The count $X$ is Binomial with $n=50$ and success chance $p=0.8$, so the mean is $np=50\\cdot 0.8=40$ and the variance is $np(1-p)=50\\cdot 0.8\\cdot 0.2=8$. The probability mass at $40$ is exactly the binomial pmf $\\binom{50}{40}(0.8)^{40}(0.2)^{10}$. The consecutive-odds ratio shows $\\mathbb{P}(X=41)/\\mathbb{P}(X=40)=(10/41)\\cdot(0.8/0.2)=40/41<1$, so $40$ is the unique mode and the “$41$ wins because $40.8$ is closer” trap fails. Certainty ($p=1$) collapses variance to $0$. Centering and scaling yields mean $0$ and variance $1$ but keeps a discrete lattice law — it is not exactly standard normal.",
+      "tactical_explanations": [
+        "**A.** → True\n\nThe count $X$ follows a binomial law with parameters $n=50$ and success probability $p=0.8$. The expectation formula is\n$$\n\\mathbb{E}[X]=np=50\\cdot 0.8.\n$$\n\nCompute the product:\n$$\n50\\cdot 0.8=40.\n$$\n\nThe variance formula is\n$$\n\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.8\\cdot 0.2.\n$$\n\nFirst $0.8\\cdot 0.2=0.16$, then\n$$\n50\\cdot 0.16=8.\n$$\n\nBoth numbers match the claim. Independence of the fifty deliveries is what licenses the binomial model and these closed forms.\n\nAs a Bernoulli-sum view: $X=I_1+\\cdots+I_{50}$ with $\\mathbb{E}[I_j]=0.8$ and $\\mathrm{Var}(I_j)=0.8\\cdot 0.2=0.16$, so $\\mathbb{E}[X]=40$ and $\\mathrm{Var}(X)=50\\cdot 0.16=8$.\n\nSo the statement is True.",
+        "**B.** → True\n\nBy definition, a binomial random variable with parameters $n=50$ and success probability $0.8$ assigns to the integer $k=40$ the probability mass\n$$\n\\mathbb{P}(X=40)=\\binom{50}{40}(0.8)^{40}(0.2)^{10}.\n$$\n\nThat is precisely “the binomial probability with $n=50$, $k=40$, success probability $0.8$.”\n\nUnfolding the binomial coefficient for transparency:\n$$\n\\binom{50}{40}=\\binom{50}{10}=\\frac{50!}{10!\\,40!},\n$$\nbut the claim does not ask for a decimal evaluation — it only asks whether the probability equals that symbolic binomial expression, which it does by definition of the model stated in the stem.\n\nThe claim is true.\n\nNothing in the claim requires evaluating the decimal; equality of the probability with the binomial pmf at $(n,k,p)=(50,40,0.8)$ is the definition of the model.\n\nSo the statement is True.",
+        "**C.** → False\n\nA useful mode locator for a binomial count is $(n+1)p$. Here\n$$\n(n+1)p=51\\cdot 0.8=40.8,\n$$\nwhich indeed lies closer to $41$ than to $40$ ($|40.8-41|=0.2<|40.8-40|=0.8$). But closeness of $(n+1)p$ to an integer does **not** decide which neighbouring mass is larger.\n\nThe exact consecutive-odds ratio is\n$$\n\\frac{\\mathbb{P}(X=k+1)}{\\mathbb{P}(X=k)}=\\frac{n-k}{k+1}\\cdot\\frac{p}{1-p}.\n$$\n\nAt $k=40$:\n$$\n\\frac{\\mathbb{P}(X=41)}{\\mathbb{P}(X=40)}=\\frac{50-40}{41}\\cdot\\frac{0.8}{0.2}=\\frac{10}{41}\\cdot 4=\\frac{40}{41}<1.\n$$\n\nHence $\\mathbb{P}(X=41)<\\mathbb{P}(X=40)$. The unique mode is $40=\\lfloor(n+1)p\\rfloor$, not $41$. The claim is false.\n\nThe mode rule says: if $(n+1)p$ is not an integer, the unique mode is $\\lfloor(n+1)p\\rfloor=40$; the “closer integer” heuristic is simply the wrong rule.\n\nSo the statement is False.",
+        "**D.** → True\n\nIf every delivery were certain to be on time, the success probability would jump from $0.8$ to $p=1$. The binomial mean and variance formulas then give\n$$\n\\mathbb{E}[X]=np=50\\cdot 1=50,\n$$\n$$\n\\mathrm{Var}(X)=np(1-p)=50\\cdot 1\\cdot 0=0.\n$$\n\nA random variable with variance zero is almost surely constant, so\n$$\n\\mathbb{P}(X=50)=1.\n$$\n\nEvery delivery is on time for sure, and the count is $50$ with probability one. Both halves of the claim hold; the statement is true.\n\nEquivalently, the pmf becomes a point mass $\\delta_{50}$, whose second moment about $50$ vanishes, confirming variance $0$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe standardized variable\n$$\nZ=\\frac{X-40}{\\sqrt{8}}\n$$\nindeed has mean $0$ and variance $1$:\n$$\n\\mathbb{E}[Z]=\\frac{\\mathbb{E}[X]-40}{\\sqrt{8}}=0,\\qquad\\mathrm{Var}(Z)=\\frac{\\mathrm{Var}(X)}{8}=\\frac{8}{8}=1.\n$$\n\nBut $X$ remains a discrete random variable supported on the integers $\\{0,1,\\ldots,50\\}$, so $Z$ is supported on a discrete lattice\n$$\n\\Bigl\\{\\frac{k-40}{\\sqrt{8}}:k=0,1,\\ldots,50\\Bigr\\}.\n$$\n\nA standard normal random variable is continuous, with a density positive on all of $\\mathbb{R}$. Therefore $Z$ is **not** exactly standard normal; the normal law is only a large-$n$ approximation (De Moivre–Laplace / CLT). The claim’s “exactly … not merely approximately” is false.\n\nSo the statement is False."
+      ]
+    }
+  ]
+}

@@ -34,7 +34,7 @@ export function WisoDachAdvantageSlider() {
   return (
     <div
       ref={rootRef}
-      className="why-choose-us--wiso relative w-full overflow-hidden bg-why-us-bg pb-12 pt-2 sm:pb-14 sm:pt-4"
+      className="relative w-full overflow-hidden pb-12 pt-2 sm:pb-14 sm:pt-4"
     >
       <button
         type="button"
@@ -218,40 +218,11 @@ function RingMetric({
     return () => observer.disconnect();
   }, [percent, targetNumber]);
 
-  const outerR = 82;
-  const innerR = 58;
-  const cx = 90;
-  const cy = 90;
-  const angle = Math.max(0, Math.min(1, animatedPercent)) * 360;
-
-  function polar(r: number, deg: number) {
-    const rad = ((deg - 90) * Math.PI) / 180;
-    return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
-  }
-
-  const startOuter = polar(outerR, 0);
-  const endOuter = polar(outerR, angle);
-  const startInner = polar(innerR, 0);
-  const endInner = polar(innerR, angle);
-  const largeArc = angle > 180 ? 1 : 0;
-
-  const filledPath = [
-    `M ${startOuter.x} ${startOuter.y}`,
-    `A ${outerR} ${outerR} 0 ${largeArc} 1 ${endOuter.x} ${endOuter.y}`,
-    `L ${endInner.x} ${endInner.y}`,
-    `A ${innerR} ${innerR} 0 ${largeArc} 0 ${startInner.x} ${startInner.y}`,
-    "Z",
-  ].join(" ");
-
-  const fullCircle = [
-    `M ${cx} ${cy - outerR}`,
-    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy + outerR}`,
-    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy - outerR}`,
-    `L ${cx} ${cy - innerR}`,
-    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy + innerR}`,
-    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy - innerR}`,
-    "Z",
-  ].join(" ");
+  // Stroke rings stay filled at 100% (path arcs collapse at exactly 360°).
+  const trackR = 70;
+  const circumference = 2 * Math.PI * trackR;
+  const pct = Math.max(0, Math.min(1, animatedPercent));
+  const dashOffset = circumference * (1 - pct);
 
   const displayValue =
     decimals > 0
@@ -267,9 +238,28 @@ function RingMetric({
       )}
     >
       <div className="relative h-44 w-44">
-        <svg className="h-full w-full" viewBox="0 0 180 180">
-          <path d={fullCircle} className="fill-white/15" />
-          <path d={filledPath} className="ring-animate-fill fill-caramel-deep" />
+        <svg className="h-full w-full -rotate-90" viewBox="0 0 180 180" aria-hidden>
+          <circle
+            cx="90"
+            cy="90"
+            r={trackR}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="24"
+            className="text-white/15"
+          />
+          <circle
+            cx="90"
+            cy="90"
+            r={trackR}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="24"
+            strokeLinecap="butt"
+            strokeDasharray={circumference}
+            strokeDashoffset={dashOffset}
+            className={isAccent ? "text-caramel-deep" : "text-why-us-fg/45"}
+          />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center" data-no-i18n>
           <span

@@ -35,6 +35,7 @@ import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/pract
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
 import { CourseLockedView } from "@/components/CourseLockedView";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ExamQuestionBody, ExamStatementText } from "@/components/mock-exam/ExamQuestionContent";
 import {
@@ -91,6 +92,7 @@ function TakeExamPage() {
   const [contentReady, setContentReady] = useState(false);
   const [lockMinTier, setLockMinTier] = useState<AccessTier | null>(null);
   const [lockProductSlug, setLockProductSlug] = useState<string | undefined>(undefined);
+  const [needsAuth, setNeedsAuth] = useState(false);
   const [examTrack, setExamTrack] = useState<"bbe" | "wiso">("bbe");
 
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions]);
@@ -118,6 +120,7 @@ function TakeExamPage() {
     setLoadError(null);
     setLockMinTier(null);
     setLockProductSlug(undefined);
+    setNeedsAuth(false);
     setExamTrack("bbe");
     warningsSeeded.current = false;
     submitted.current = false;
@@ -138,7 +141,17 @@ function TakeExamPage() {
         setContentReady(true);
         return;
       }
-      if (resolved.summary.tier === "full") {
+      if (resolved.summary.tier === "demo") {
+        // Free diagnostic — any signed-in account, no purchase required.
+        const { fetchAccessState } = await import("@/lib/entitlements");
+        const access = await fetchAccessState();
+        if (cancelled) return;
+        if (!access.signedIn) {
+          setNeedsAuth(true);
+          setContentReady(true);
+          return;
+        }
+      } else if (resolved.summary.tier === "full") {
         const { userOwnsFullTier, userOwnsWisoFullCourse } = await import(
           "@/lib/full-course-access"
         );
@@ -449,6 +462,42 @@ function TakeExamPage() {
     }
     return set;
   }, [questions, flaggedSet]);
+
+  if (needsAuth) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-6 font-sans text-foreground">
+        <div className="max-w-sm text-center">
+          <h1 className="text-xl font-semibold tracking-tight">
+            Sign in to take the demo mock
+          </h1>
+          <p className="mt-2 text-sm text-muted-foreground">
+            The free demo course stays open without an account. The full timed demo mock needs a free
+            registration first so we can save your attempt.
+          </p>
+          <div className="mt-6 flex flex-col items-stretch gap-2 sm:flex-row sm:justify-center">
+            <LocalizedLink
+              to="/signup"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground"
+            >
+              Create a free account
+            </LocalizedLink>
+            <LocalizedLink
+              to="/login"
+              className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold hover:bg-secondary"
+            >
+              Sign in
+            </LocalizedLink>
+          </div>
+          <LocalizedLink
+            to="/demo-practice"
+            className="mt-5 inline-block text-sm font-medium text-muted-foreground underline-offset-4 hover:underline"
+          >
+            Or try the demo course without registering →
+          </LocalizedLink>
+        </div>
+      </div>
+    );
+  }
 
   if (lockMinTier) {
     return (
