@@ -14,7 +14,7 @@
       "**B.** → Falsch\n\n$$A\\cup C=\\{a,a+2,a+4,a+6,a+8,a+10,a+12,a+14\\}$$ \n\n $$|A\\cup C|=8\\neq 7$$ \n\nDie behauptete Mächtigkeit ist zu klein.\n\nGleichwertig über die Inklusionszählung:\n\n $$\n|A\\cup C|=|A|+|C|-|A\\cap C|=5+5-2=8\n$$ \n\nGleichwertig über die Inklusionszählung:\n\n $$\n|A\\cup C|=|A|+|C|-|A\\cap C|=5+5-2=8\n$$ \n\nInklusion-Exklusion liefert dieselbe Mächtigkeit:\n\n $$|A\\cup C|=|A|+|C|-|A\\cap C|=5+5-2=8$$ \n\nund $8\\neq 7$ widerlegt die Behauptung.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nvon $A\\cap B=\\{a+4,a+6,a+8\\}$ drop $a+4\\notin C$:\n\n $$(A\\cap B)\\cap C=\\{a+6,a+8\\}$$ \n\nStimmt mit der Behauptung überein.\n\nDie Assoziativität des Schnitts liefert ebenfalls $A\\cap B\\cap C$, und dieselbe zweielementige Aufzählung erscheint.\n\nDie Assoziativität des Schnitts liefert ebenfalls $A\\cap B\\cap C$, und dieselbe zweielementige Aufzählung erscheint.\n\nEquivalently $A\\cap B\\cap C=A\\cap(B\\cap C)$. Seit $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$, schneidend mit $A$ drops $a+10$ und $a+12$, leaving $\\{a+6,a+8\\}$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\n$$A\\setminus C=\\{a,a+2,a+4\\},\\qquad |A\\setminus C|=3$$ \n\nDie Antragslisten $\\{a,a+2\\}$ mit Größe $2$, wobei fälschlich weggelassen wird: $a+4$.\n\nDer Vergleich der behaupteten Mächtigkeit $2$ mit der berechneten Mächtigkeit $3$ widerlegt die Aussage bereits, unabhängig von der Aufzählungsformulierung.\n\nDer Vergleich der behaupteten Mächtigkeit $2$ mit der berechneten Mächtigkeit $3$ widerlegt die Aussage bereits, unabhängig von der Aufzählungsformulierung.\n\nAllein der Größenvergleich verwirft die Behauptung bereits:\n\n $$|A\\setminus C|=3\\neq 2$$ \n\nund das fehlende Element $a+4$ liegt in $A$, aber nicht in $C$.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nmit $a=3$: $B=\\{7,9,11,13,15\\}$, $C=\\{9,11,13,15,17\\}$.\n\n $$B\\cap C=\\{9,11,13,15\\},\\ |B\\cap C|=4$$ \n\nAlso $5\\notin B$ und $5\\notin C$, so $5\\notin B\\cap C$.\n\nGleichwertig aus der parametrischen Formel $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n $$\n\\{9,11,13,15\\}\n$$ \n\nund $5$ steht nicht in dieser Liste.\n\nGleichwertig aus der parametrischen Formel $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n $$\n\\{9,11,13,15\\}\n$$ \n\nund $5$ steht nicht in dieser Liste.\n\nAus der parametrischen Überlappung $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n $$\\{9,11,13,15\\}$$ \n\nWeder $5$ noch eine ungerade ganze Zahl außerhalb dieser Aufzählung gehört zum Schnitt.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nmit $a=3$: $B=\\{7,9,11,13,15\\}$, $C=\\{9,11,13,15,17\\}$.\n\n $$B\\cap C=\\{9,11,13,15\\},\\ |B\\cap C|=4$$ \n\nAußerdem $5\\notin B$ und $5\\notin C$, so $5\\notin B\\cap C$.\n\nGleichwertig aus der parametrischen Formel $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n $$\n\\{9,11,13,15\\}\n$$ \n\nund $5$ steht nicht in dieser Liste.\n\nGleichwertig aus der parametrischen Formel $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n $$\n\\{9,11,13,15\\}\n$$ \n\nund $5$ steht nicht in dieser Liste.\n\nAus der parametrischen Überlappung $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n $$\\{9,11,13,15\\}$$ \n\nWeder $5$ noch eine ungerade ganze Zahl außerhalb dieser Aufzählung gehört zum Schnitt.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Gemeinsame Zwischenresultate:\n\n $$A\\cap B=\\{a+4,a+6,a+8\\},\\ |A\\cap B|=3;$$ \n\n $$A\\cup C=\\{a,a+2,\\ldots,a+14\\},\\ |A\\cup C|=8;$$ \n\n $$(A\\cap B)\\cap C=\\{a+6,a+8\\};\\ A\\setminus C=\\{a,a+2,a+4\\};$$ \n\n $$B\\cap C=\\{a+6,a+8,a+10,a+12\\}.$$ \n\nDie Probe $a=3$ wird in diese Formeln eingesetzt."
   },
@@ -86,11 +86,11 @@
       "Für $m=10$ gilt $12\\in P\\cap Q$ und $16\\notin P$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$P\\setminus Q=\\{m,m+1\\},\\ |P\\setminus Q|=2$$\n\nDie beiden verbleibenden Elemente $m$ und $m+1$ sind aufeinanderfolgende ganze Zahlen und daher verschieden; die Mächtigkeit ist damit $2$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\n$$Q\\setminus P=\\{m+5,m+6\\},\\ |Q\\setminus P|=2\\neq 1$$\n\nDie Behauptung lässt $m+6$ weg.\n\nSowohl $m+5$ als auch $m+6$ liegen oberhalb von $\\max P=m+4$, bleiben also in $Q\\setminus P$; die Mächtigkeit ist $2$ und nicht $1$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\n$$|P\\cup Q|=5+5-3=7$$\n\nDie Aufzählung $\\{m,\\ldots,m+6\\}$ bestätigt die Mächtigkeit $7$.\n\nDie Menge $\\{m,m+1,m+2,m+3,m+4,m+5,m+6\\}$ ist ein Intervall aus sieben aufeinanderfolgenden ganzen Zahlen und stimmt mit der Inklusion-Exklusion-Zählung überein.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$P\\triangle Q=\\{m,m+1,m+5,m+6\\},\\ |P\\triangle Q|=4$$\n\nDie symmetrische Differenz schließt die dreielementige Überlappung aus und lässt $7-3=4$ Elemente übrig, in Übereinstimmung mit $2+2=4$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\n$m=10$: $P\\cap Q=\\{12,13,14\\}$, also $12\\in P\\cap Q$; $16\\notin P$, da $\\max P=14$.\n\nFür $m=10$ beginnt die Überlappung bei $12$ und endet bei $14$, während $16$ zwei Schritte hinter $\\max P=14$ liegt.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$$P\\setminus Q=\\{m,m+1\\},\\ |P\\setminus Q|=2$$\n\nDie beiden verbleibenden Elemente $m$ und $m+1$ sind aufeinanderfolgende ganze Zahlen und daher verschieden; die Mächtigkeit ist damit $2$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$$Q\\setminus P=\\{m+5,m+6\\},\\ |Q\\setminus P|=2\\neq 1$$\n\nDie Behauptung lässt $m+6$ weg.\n\nSowohl $m+5$ als auch $m+6$ liegen oberhalb von $\\max P=m+4$, bleiben also in $Q\\setminus P$; die Mächtigkeit ist $2$ und nicht $1$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$$|P\\cup Q|=5+5-3=7$$\n\nDie Aufzählung $\\{m,\\ldots,m+6\\}$ bestätigt die Mächtigkeit $7$.\n\nDie Menge $\\{m,m+1,m+2,m+3,m+4,m+5,m+6\\}$ ist ein Intervall aus sieben aufeinanderfolgenden ganzen Zahlen und stimmt mit der Inklusion-Exklusion-Zählung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$P\\triangle Q=\\{m,m+1,m+5,m+6\\},\\ |P\\triangle Q|=4$$\n\nDie symmetrische Differenz schließt die dreielementige Überlappung aus und lässt $7-3=4$ Elemente übrig, in Übereinstimmung mit $2+2=4$.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$m=10$: $P\\cap Q=\\{12,13,14\\}$, also $12\\in P\\cap Q$; $16\\notin P$, da $\\max P=14$.\n\nFür $m=10$ beginnt die Überlappung bei $12$ und endet bei $14$, während $16$ zwei Schritte hinter $\\max P=14$ liegt.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "$$P\\cap Q=\\{m+2,m+3,m+4\\},\\ |P\\cap Q|=3;$$\n\n$$P\\setminus Q=\\{m,m+1\\},\\ Q\\setminus P=\\{m+5,m+6\\};$$\n\n$$|P\\cup Q|=5+5-3=7;\\ |P\\triangle Q|=4.$$\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
   },
@@ -105,11 +105,11 @@
       "Für $r=5$ gilt $8\\in A\\cap B\\cap C$ und $11\\notin A$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nNur $r+3$ liegt in allen drei Mengen:\n\n$$A\\cap B\\cap C=\\{r+3\\},\\ |A\\cap B\\cap C|=1$$\n\nKein anderer Kandidat passt: $r+2\\notin C$ und $r+4\\notin A$, also ist der dreifache Schnitt genau die Einermenge $\\{r+3\\}$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nDie Vereinigungsaufzählung $\\{r,\\ldots,r+6\\}$ hat die Mächtigkeit $7$, nicht $6$.\n\nDas siebengliedrige Intervall $\\{r,r+1,\\ldots,r+6\\}$ entsteht durch Aneinanderfügen der drei Blöcke der Länge $4$ unter Berücksichtigung der Überlappungen; die Mächtigkeit $6$ ist daher unmöglich.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\n$|A\\cap B|=2\\neq 3$, also scheitert die Konjunktion, obwohl $|B\\cap C|=3$ gilt.\n\nDie direkte Aufzählung $A\\cap B=\\{r+2,r+3\\}$ hat die Mächtigkeit $2$ und widerspricht bereits dem ersten Teil der Behauptung.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\n$$4+4+4-2-1-3+1=7=|A\\cup B\\cup C|$$\n\nJeder IE-Term wurde aus den Aufzählungen ermittelt; Einsetzen liefert $12-6+1=7$ und stimmt mit der Länge der Vereinigung überein.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\n$r=5$: dreifacher Schnitt $\\{8\\}$; $11=r+6\\in C$, aber $11\\notin A$.\n\nBei $r=5$ ist das einzige gemeinsame Element $8$, und $11$ liegt unter den drei Mengen nur in $C$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nNur $r+3$ liegt in allen drei Mengen:\n\n$$A\\cap B\\cap C=\\{r+3\\},\\ |A\\cap B\\cap C|=1$$\n\nKein anderer Kandidat passt: $r+2\\notin C$ und $r+4\\notin A$, also ist der dreifache Schnitt genau die Einermenge $\\{r+3\\}$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nDie Vereinigungsaufzählung $\\{r,\\ldots,r+6\\}$ hat die Mächtigkeit $7$, nicht $6$.\n\nDas siebengliedrige Intervall $\\{r,r+1,\\ldots,r+6\\}$ entsteht durch Aneinanderfügen der drei Blöcke der Länge $4$ unter Berücksichtigung der Überlappungen; die Mächtigkeit $6$ ist daher unmöglich.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$|A\\cap B|=2\\neq 3$, also scheitert die Konjunktion, obwohl $|B\\cap C|=3$ gilt.\n\nDie direkte Aufzählung $A\\cap B=\\{r+2,r+3\\}$ hat die Mächtigkeit $2$ und widerspricht bereits dem ersten Teil der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$4+4+4-2-1-3+1=7=|A\\cup B\\cup C|$$\n\nJeder IE-Term wurde aus den Aufzählungen ermittelt; Einsetzen liefert $12-6+1=7$ und stimmt mit der Länge der Vereinigung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$r=5$: dreifacher Schnitt $\\{8\\}$; $11=r+6\\in C$, aber $11\\notin A$.\n\nBei $r=5$ ist das einzige gemeinsame Element $8$, und $11$ liegt unter den drei Mengen nur in $C$.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "$$A\\cap B=\\{r+2,r+3\\}\\ (|A\\cap B|=2);\\ A\\cap C=\\{r+3\\};$$\n\n$$B\\cap C=\\{r+3,r+4,r+5\\}\\ (|B\\cap C|=3);\\ A\\cap B\\cap C=\\{r+3\\}.$$\n\nIE: $4+4+4-2-1-3+1=7$. Vereinigung $=\\{r,\\ldots,r+6\\}$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
   },
@@ -125,7 +125,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$|E\\cup S|=(a+40)+(a+55)-(a+15)=a+80$$ \n\nIdentität gilt für jedes zulässige $a$.\n\nDer Parameter $a$ Storniert in der Inklusions-Ausschluss-Kombination $(a+40)+(a+55)-(a+15)$ Verlassen des affinen Gesetzes $a+80$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$a=10$: $|E\\cup S|=90$ und $|E\\cap S|=25\\ge 25$ Beide Teilbehauptungen gelten.\n\nBeide numerischen Ansprüche werden aus der Überblick unter $a=10$: Union $90$ und Schnittmenge $25$, und $25\\ge 25$ hält.\n\nVerfolge jeden Zwischenschritt auf seiner eigenen Anzeigelinie, ersetzen Sie die wiedergewonnenen Parameter genau einmal und vergleiche erst dann den sich ergebenden genauen Wert mit der Schwelle oder dem Dienstplan, die von der Live-Anweisung behauptet werden.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$a=10$: $|E\\cup S|=90$ und $|E\\cap S|=25\\ge 25$. Beide Teilbehauptungen gelten.\n\nBeide Zahlenwerte folgen aus dem Überblick bei $a=10$: Vereinigung $90$ und Schnitt $25$, und $25\\ge 25$ gilt.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$|E\\setminus S|=|E|-|E\\cap S|=(a+40)-(a+15)=25$$ \n\nIndependent of $a$; at $a=10$ Die reine Ökonometrie zählt $25$.\n\nEconometrics-only is $|E|-|E\\cap S|=(a+40)-(a+15)=25$ für jeden $a$, including $a=10$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nNeither count is $40-a$. At $a=10$:\n\n $$40-10=30$$ \n\n $$30\\ge 35$$ \n\nist falsch.\n\nKeine Zählung $40-a$ gleich $30$ at $a=10$, und $30$ Fehlt die Schwelle $35$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$|E\\setminus S|=25,\\qquad |S\\setminus E|=40$$ \n\n $$25\\neq 40$$ \n\nfür jeden $a$ Die Gleichheit hält also nie.\n\nDie beiden einseitigen Unterschiede sind ständig $25$ und $40$, die für jedes zulässige ungleich sind $a$.\n\nDie Aussage ist falsch."
@@ -147,7 +147,7 @@
       "**B.** → Richtig\n\nJeder Block ist ein Intervall von $n$ aufeinanderfolgende ganze Zahlen und $|U|=3n$ Beide Ansprüche gelten.\n\nJeder Block ist ein Intervall von $n$ aufeinanderfolgende ganze Zahlen, und drei von ihnen machen $|U|=3n$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$n=4$: $A_1=\\{1,2,3,4\\}$ und $5\\in A_2$, so $5\\notin A_1$.\n\nAt $n=4$ Die Schnittmengee sind $4$ und $8$, so $5$ opens $A_2$, not $A_1$.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\n$\\max A_1=n<\\min A_3=2n+1$ für $n\\ge 3$, so $A_1\\cap A_3=\\emptyset$.\n\nDie Lücke zwischen $\\max A_1=n$ und $\\min A_3=2n+1$ is $n\\ge 3$ Ganzzahlen breit, so dass der Schnittmenge leer ist.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\n$A_1\\cup A_2=\\{1,\\ldots,2n\\}$ has size $2n$, ist disjunkt von $A_3$ und ihre Vereinigung ist $U$. It is a two-block partition.\n\nSizes $2n$ und $n$ sum to $3n=|U|$, und die beiden zusammengeführten Blöcke bleiben getrennt.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\n$A_1\\cup A_2=\\{1,\\ldots,2n\\}$ hat die Mächtigkeit $2n$, ist disjunkt zu $A_3$, und die Vereinigung mit $A_3$ ist $U$. Das ist eine Partition in zwei Blöcke.\n\nDie Mächtigkeiten $2n$ und $n$ addieren sich zu $3n=|U|$, und die beiden zusammengeführten Blöcke bleiben getrennt.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Die drei Blöcke sind aufeinanderfolgende ganzzahlige Intervalle der Länge $n$ covering $1$ through $3n$ ohne Überlappung, so dass sie sich teilen $U$ Größen: Jeder Block hat $n$ elements, $|U|=3n$. Mit $n=4$: $A_1=\\{1,2,3,4\\}$, $A_2=\\{5,\\ldots,8\\}$, $A_3=\\{9,\\ldots,12\\}$. Merging $A_1\\cup A_2$ mit $A_3$ still partitions $U$."
   },
@@ -183,9 +183,9 @@
     "tactical_explanations": [
       "**A.** → Richtig\n\nDie Überlappung $\\{8,\\ldots,10+p\\}$ hat die Mächtigkeit $3+p$. Vereinigungsmächtigkeit:\n\n$$|A|+|B|-|A\\cap B|=(10+p)+(13+p)-(3+p)=23+p$$\n\n(mit $|B|=20+p-8+1=13+p$).\n\nÜberlappungslänge $(10+p)-8+1=3+p$ und $|B|=13+p$ ergeben zusammen die Vereinigungsmächtigkeit $(10+p)+(13+p)-(3+p)=23+p$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDas De-Morgan-Gesetz $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ gilt in jeder Booleschen Algebra von Mengen; es hängt nicht von $p$ ab.\n\nDas De-Morgan-Gesetz ist eine Identität der Potenzmengen-Booleschen Algebra; das Einsetzen der konkreten Mengen $A,B$ ist für die Mengengleichheit nicht nötig.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$|(A\\cup B)^{c}|=30-(23+p)=7-p=|A^{c}\\cap B^{c}|$$\n\nKomplement der Vereinigung: $30-(23+p)=7-p$, und das ist nach De Morgan gleich $|A^{c}\\cap B^{c}|$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$|A\\setminus B|=(10+p)-(3+p)=7$$\n\nBei $p=5$ hat die Differenz weiterhin die Mächtigkeit $7$.\n\nDie Differenzmächtigkeit $(10+p)-(3+p)=7$ ist unabhängig von $p$ und beträgt daher auch bei $p=5$ genau $7$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nBei $p=5$: $|A\\cap B|=8$, also\n\n$$|(A\\cap B)^{c}|=30-8=22\\neq 20$$\n\nBei $p=5$ hat der Schnitt die Mächtigkeit $8$, das Komplement in einer $30$-elementigen Menge also die Mächtigkeit $22$, nicht $20$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**C.** → Richtig\n\n$$|(A\\cup B)^{c}|=30-(23+p)=7-p=|A^{c}\\cap B^{c}|$$\n\nKomplement der Vereinigung: $30-(23+p)=7-p$, und das ist nach De Morgan gleich $|A^{c}\\cap B^{c}|$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$|A\\setminus B|=(10+p)-(3+p)=7$$\n\nBei $p=5$ hat die Differenz weiterhin die Mächtigkeit $7$.\n\nDie Differenzmächtigkeit $(10+p)-(3+p)=7$ ist unabhängig von $p$ und beträgt daher auch bei $p=5$ genau $7$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $p=5$: $|A\\cap B|=8$, also\n\n$$|(A\\cap B)^{c}|=30-8=22\\neq 20$$\n\nBei $p=5$ hat der Schnitt die Mächtigkeit $8$, das Komplement in einer $30$-elementigen Menge also die Mächtigkeit $22$, nicht $20$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$A=\\{1,\\ldots,10+p\\}$, $B=\\{8,\\ldots,20+p\\}$. Die Überlappung beginnt bei $8$ und endet bei $10+p$:\n\n$$A\\cap B=\\{8,\\ldots,10+p\\},\\ |A\\cap B|=(10+p)-8+1=3+p.$$\n\n$$|A\\cup B|=(10+p)+(20+p-7)-(3+p)=23+p.$$\n\n$$|(A\\cup B)^{c}|=30-(23+p)=7-p.$$\n\n$$|A\\setminus B|=|A|-|A\\cap B|=(10+p)-(3+p)=7.$$\n\nBei $p=5$: $|A\\cap B|=8$, $|(A\\cap B)^{c}|=22$."
   },
@@ -201,10 +201,10 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$n=6$: Die Blöcke $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,5\\}$ sind nichtleer, paarweise disjunkt und vereinigen sich zu $X=\\{0,\\ldots,5\\}$. Damit liegt eine Partition vor.\n\nBei $n=6$ ist der dritte Block $\\{4,5\\}$ nichtleer, und die drei Blöcke überdecken $\\{0,1,2,3,4,5\\}$ ohne Überlappung.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\n$n=4$: Der dritte Block ist leer. Eine Partition darf die leere Menge nicht enthalten. Also ist $\\mathcal{F}$ keine Partition von $X$.\n\nDas Nichtleerheitsaxiom scheitert bei $n=4$: Jeder Block einer Partition muss nichtleer sein.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nFür $n\\ge 5$ überlappen die ganzzahligen Intervalle $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,\\ldots,n-1\\}$ nicht.\n\nDie Schnitte $0,1\\,|\\,2,3\\,|\\,4,\\ldots,n-1$ legen jedes Element von $X$ für $n\\ge 5$ in genau einen Block.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$n=8$: drei Blöcke; der größte ist $\\{4,5,6,7\\}$ mit Mächtigkeit $4$.\n\nBei $n=8$ hat der dritte Block $\\{4,5,6,7\\}$ vier Elemente und ist damit strikt größer als die beiden Zweierblöcke.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\n$n=6$: $5\\in\\{4,5\\}$ und sonst nirgends. Es liegt in genau einem Block.\n\nBei $n=6$ liegt das Element $5$ in $\\{4,5\\}$ und in keinem anderen Block von $\\mathcal{F}$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+      "**B.** → Falsch\n\n$n=4$: Der dritte Block ist leer. Eine Partition darf die leere Menge nicht enthalten. Außerdem ist $\\mathcal{F}$ keine Partition von $X$.\n\nDas Nichtleerheitsaxiom scheitert bei $n=4$: Jeder Block einer Partition muss nichtleer sein.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFür $n\\ge 5$ überlappen die ganzzahligen Intervalle $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,\\ldots,n-1\\}$ nicht.\n\nDie Schnitte $0,1\\,|\\,2,3\\,|\\,4,\\ldots,n-1$ legen jedes Element von $X$ für $n\\ge 5$ in genau einen Block.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$n=8$: drei Blöcke; der größte ist $\\{4,5,6,7\\}$ mit Mächtigkeit $4$.\n\nBei $n=8$ hat der dritte Block $\\{4,5,6,7\\}$ vier Elemente und ist damit strikt größer als die beiden Zweierblöcke.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$n=6$: $5\\in\\{4,5\\}$ und sonst nirgends. Es liegt in genau einem Block.\n\nBei $n=6$ liegt das Element $5$ in $\\{4,5\\}$ und in keinem anderen Block von $\\mathcal{F}$.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Eine Partition verlangt nichtleere, paarweise disjunkte Blöcke, deren Vereinigung $X$ ist. Für $n\\ge 5$ sind die drei Blöcke $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,\\ldots,n-1\\}$ nichtleer, disjunkt und überdecken $X$. Für $n=4$ ist der dritte Block leer, sodass $\\mathcal{F}$ das Nichtleerheitsaxiom verletzt (und $\\{0,1\\}\\cup\\{2,3\\}=X$ eine andere Familie erfordern würde). Bei $n=8$ ist der dritte Block $\\{4,5,6,7\\}$ mit Mächtigkeit $4$."
   },
@@ -219,11 +219,11 @@
       "$\\binom{6}{3}=18$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$2^{6}=64,\\qquad\\binom{6}{0}+\\binom{6}{6}=1+1=2$$\n\nDie Potenzmengenmächtigkeit $2^{6}=64$ und die beiden extremen Binomialkoeffizienten sind je $1$, ihre Summe also $2$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\\binom{6}{2}=\\frac{6\\cdot5}{2}=15=\\binom{6}{4}$$\n\nnach der Symmetrie $\\binom{n}{k}=\\binom{n}{n-k}$.\n\nDie direkte Rechnung $\\frac{6\\cdot5}{2}=15$ und die Symmetrie $\\binom{6}{4}=\\binom{6}{2}$ liefern die beiden gleichen Anzahlen.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$\\binom{6}{5}+\\binom{6}{6}=6+1=7$$\n\nDie Summe $\\binom{6}{5}+\\binom{6}{6}=6+1=7$ zählt die Teilmengen mit mindestens $5$ Elementen.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nDas Entfernen eines Elements hinterlässt eine $5$-Menge; $2^{5}=32$.\n\nNach dem Entfernen eines Elements bleiben fünf Elemente; die Potenzmengenformel $2^{5}=32$ gilt unmittelbar.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$\\binom{6}{3}=\\frac{6\\cdot5\\cdot4}{6}=20\\neq 18$$\n\nDie Dreieranzahl ist $\\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1}=20$, also nicht $18$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$$2^{6}=64,\\qquad\\binom{6}{0}+\\binom{6}{6}=1+1=2$$\n\nDie Potenzmengenmächtigkeit $2^{6}=64$ und die beiden extremen Binomialkoeffizienten sind je $1$, ihre Summe also $2$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\\binom{6}{2}=\\frac{6\\cdot5}{2}=15=\\binom{6}{4}$$\n\nnach der Symmetrie $\\binom{n}{k}=\\binom{n}{n-k}$.\n\nDie direkte Rechnung $\\frac{6\\cdot5}{2}=15$ und die Symmetrie $\\binom{6}{4}=\\binom{6}{2}$ liefern die beiden gleichen Anzahlen.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\\binom{6}{5}+\\binom{6}{6}=6+1=7$$\n\nDie Summe $\\binom{6}{5}+\\binom{6}{6}=6+1=7$ zählt die Teilmengen mit mindestens $5$ Elementen.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDas Entfernen eines Elements hinterlässt eine $5$-Menge; $2^{5}=32$.\n\nNach dem Entfernen eines Elements bleiben fünf Elemente; die Potenzmengenformel $2^{5}=32$ gilt unmittelbar.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$\\binom{6}{3}=\\frac{6\\cdot5\\cdot4}{6}=20\\neq 18$$\n\nDie Dreieranzahl ist $\\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1}=20$, also nicht $18$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$$|\\mathcal{P}(A)|=2^{6}=64.$$\n\n$$\\binom{6}{0}=1,\\ \\binom{6}{1}=6,\\ \\binom{6}{2}=15,\\ \\binom{6}{3}=20,$$\n\n$$\\binom{6}{4}=15,\\ \\binom{6}{5}=6,\\ \\binom{6}{6}=1.$$\n\nTeilmengen mit Mächtigkeit $\\ge 5$: $\\binom{6}{5}+\\binom{6}{6}=7$. Eine $5$-Menge hat Potenzmengenmächtigkeit $2^{5}=32$."
   },
@@ -238,11 +238,11 @@
       "$I\\cap K=\\emptyset$ für jedes $a>2$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$I\\cap J=[0,a)\\cap[a-2,a+3]=[a-2,a)$$\n\nLänge: $a-(a-2)=2$.\n\nDer linke Endpunkt $a-2$ stammt von $J$; der rechte Endpunkt $a$ (ausgeschlossen) stammt von $I$; die Länge ist $a-(a-2)=2$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\n$$I\\cap J=[0,a)\\cap[a-2,a+3]=[a-2,a)$$\n\nLänge: $a-(a-2)=2$.\n\nDer linke Endpunkt $a-2$ stammt von $J$; der rechte Endpunkt $a$ (ausgeschlossen) stammt von $I$; die Länge ist $a-(a-2)=2$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nLinker Endpunkt $0$ von $I$; rechter Endpunkt $a+3$ von $J$; sie überlappen auf $[a-2,a)$, also $I\\cup J=[0,a+3]$.\n\nDa $I$ und $J$ für $a>2$ auf einem nichtleeren Intervall überlappen, sind die Endpunkte der Vereinigung die äußersten: $0$ und $a+3$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$J\\cap K=[a-2,a+3]\\cap(a+1,a+5]=(a+1,a+3]$$\n\nLänge $a+3-(a+1)=2$.\n\nDer Schnitt von $[a-2,a+3]$ mit $(a+1,a+5]$ schneidet links auf $a+1$ (ausgeschlossen) und rechts auf $a+3$ zu; die Länge ist $2$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$a=4$: $I\\cap J=[2,4)$ enthält $3$, aber $K=(5,9]$, also $3\\notin K$. Die Konjunktion scheitert.\n\nBei $a=4$ beginnt $K=(5,9]$ nach $5$, sodass die ganze Zahl $3$ aus $I\\cap J=[2,4)$ nicht in $K$ liegen kann.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nJedes $x\\in I$ erfüllt $x<a$, während jedes $y\\in K$ $y>a+1>a$ erfüllt. Es gibt keinen gemeinsamen Punkt.\n\nEin gemeinsamer Punkt müsste zugleich $x<a$ und $x>a+1$ erfüllen, was unmöglich ist.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+      "**C.** → Richtig\n\n$$J\\cap K=[a-2,a+3]\\cap(a+1,a+5]=(a+1,a+3]$$\n\nLänge $a+3-(a+1)=2$.\n\nDer Schnitt von $[a-2,a+3]$ mit $(a+1,a+5]$ schneidet links auf $a+1$ (ausgeschlossen) und rechts auf $a+3$ zu; die Länge ist $2$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$a=4$: $I\\cap J=[2,4)$ enthält $3$, aber $K=(5,9]$, also $3\\notin K$. Die Konjunktion scheitert.\n\nBei $a=4$ beginnt $K=(5,9]$ nach $5$, sodass die ganze Zahl $3$ aus $I\\cap J=[2,4)$ nicht in $K$ liegen kann.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nJedes $x\\in I$ erfüllt $x<a$, während jedes $y\\in K$ $y>a+1>a$ erfüllt. Es gibt keinen gemeinsamen Punkt.\n\nEin gemeinsamer Punkt müsste zugleich $x<a$ und $x>a+1$ erfüllen, was unmöglich ist.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Schneide und vereinige die Endpunkte sorgfältig.\n\n$$I\\cap J=[a-2,a),$$\n\nmit Länge $2$. Ferner\n\n$$I\\cup J=[0,a+3],\\qquad J\\cap K=(a+1,a+3],$$\n\nund die Länge von $J\\cap K$ ist $2$. Da jeder Punkt von $I$ kleiner als $a$ ist und jeder Punkt von $K$ größer als $a+1$, gilt $I\\cap K=\\emptyset$. Bei $a=4$: $I\\cap J=[2,4)$ enthält $3$, aber $K=(5,9]$ enthält $3$ nicht."
   },
@@ -257,11 +257,11 @@
       "Die Nur-$A$-Anzahl ist für jedes zulässige $k$ gleich $15$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSummiere die sieben IE-Terme:\n\n$$30+28+26-10-8-7+3+k(1+1+1-1-1-1+1)=62+k$$\n\nDie Koeffizienten von $k$ in der IE-Formel: $1+1+1-1-1-1+1=1$, also ist die Vereinigung $62+k$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nBei $k=2$: $|A\\cup B\\cup C|=64$.\n\nEinsetzen von $k=2$ in $62+k$ liefert unmittelbar $64$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nNur-$A$ ist für jedes $k$ gleich $15$, also auch für $k=2$. Die Behauptung nennt $17$:\n\n$$15\\neq 17$$\n\nNur-$A$ vereinfacht sich für jedes $k$ zu $15$; bei $k=2$ bleibt es $15$, nicht $17$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nDie Anzahl derer, die an keinem teilnehmen, ist $38-k$. Bei $k=2$:\n\n$$38-2=36$$\n\n$$36\\ge 40$$\n\nist falsch.\n\nDie Anzahl $38-k$ beträgt bei $k=2$ genau $36$ und verfehlt die Schwelle $40$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nNur-$A$ vereinfacht sich unabhängig von $k$ zu $15$, wie in der Übersicht gezeigt.\n\nDie $k$-Terme in Nur-$A$ heben sich auf: $(30+k)-(10+k)-(8+k)+(3+k)=15$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nSummiere die sieben IE-Terme:\n\n$$30+28+26-10-8-7+3+k(1+1+1-1-1-1+1)=62+k$$\n\nDie Koeffizienten von $k$ in der IE-Formel: $1+1+1-1-1-1+1=1$, also ist die Vereinigung $62+k$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBei $k=2$: $|A\\cup B\\cup C|=64$.\n\nEinsetzen von $k=2$ in $62+k$ liefert unmittelbar $64$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nNur-$A$ ist für jedes $k$ gleich $15$, also auch für $k=2$. Die Behauptung nennt $17$:\n\n$$15\\neq 17$$\n\nNur-$A$ vereinfacht sich für jedes $k$ zu $15$; bei $k=2$ bleibt es $15$, nicht $17$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Anzahl derer, die an keinem teilnehmen, ist $38-k$. Bei $k=2$:\n\n$$38-2=36$$\n\n$$36\\ge 40$$\n\nist falsch.\n\nDie Anzahl $38-k$ beträgt bei $k=2$ genau $36$ und verfehlt die Schwelle $40$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur-$A$ vereinfacht sich unabhängig von $k$ zu $15$, wie in der Übersicht gezeigt.\n\nDie $k$-Terme in Nur-$A$ heben sich auf: $(30+k)-(10+k)-(8+k)+(3+k)=15$.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Inklusion-Exklusion:\n\n$$|A\\cup B\\cup C|=(30+k)+(28+k)+(26+k)-(10+k)-(8+k)-(7+k)+(3+k)=62+k.$$\n\nNur $A$: $|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|=(30+k)-(10+k)-(8+k)+(3+k)=15$.\n\nKeiner: $100-(62+k)=38-k$. Bei $k=2$: Vereinigung $64$, Nur-$A$ $15$, keiner $36$."
   },
@@ -277,50 +277,50 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$|F|=m=|E|$$\n\nDie Abbildung $j\\mapsto 2j$ ist eine Bijektion $F\\to E$. Sie sendet $\\{1,\\ldots,m\\}$ bijektiv auf $\\{2,4,\\ldots,2m\\}$ und beweist damit gleiche endliche Mächtigkeit.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\n$E\\subsetneq N$ ist wahr, aber $E$ ist endlich mit Mächtigkeit $m$, während $N$ unendlich ist, also $|E|\\neq|N|$. Die Konjunktion scheitert.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\n$f(n)=n+1$ sendet $0,1,2,\\ldots$ bijektiv auf $1,2,3,\\ldots$, daher $|Z_{\\ge 0}|=|N|$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nFür $m=5$: $F=\\{1,2,3,4,5\\}$, $E=\\{2,4,6,8,10\\}$, $F\\cap E=\\{2,4\\}$.\n\n$$|F\\cup E|=5+5-2=8$$\n\n$$8\\neq 9$$\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n$F\\cap E=\\{2,4,\\ldots,2\\lfloor m/2\\rfloor\\}$ hat Mächtigkeit $\\lfloor m/2\\rfloor$. Die geraden Zahlen in $\\{1,\\ldots,m\\}$ sind genau $\\lfloor m/2\\rfloor$ Stück.\n\nDie Aussage ist richtig."
+      "**B.** → Falsch\n\n$E\\subsetneq N$ ist wahr, aber $E$ ist endlich mit Mächtigkeit $m$, während $N$ unendlich ist, also $|E|\\neq|N|$. Die Konjunktion scheitert.\n\nEndlich gegen unendlich: $|E|=m<\\infty=|N|$, daher unterscheiden sich die Mächtigkeiten trotz $E\\subsetneq N$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$f(n)=n+1$ sendet $0,1,2,\\ldots$ bijektiv auf $1,2,3,\\ldots$, daher $|Z_{\\ge 0}|=|N|$.\n\nDie Verschiebung $n\\mapsto n+1$ ist injektiv und surjektiv von $Z_{\\ge 0}$ auf $N$ und begründet gleiche Mächtigkeit.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nFür $m=5$: $F=\\{1,2,3,4,5\\}$, $E=\\{2,4,6,8,10\\}$, $F\\cap E=\\{2,4\\}$.\n\n$$|F\\cup E|=5+5-2=8$$\n\n$$8\\neq 9$$\n\nBei $m=5$ liefert die Inklusions-Exklusions-Formel $|F\\cup E|=5+5-2=8$, nicht $9$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$F\\cap E=\\{2,4,\\ldots,2\\lfloor m/2\\rfloor\\}$ hat Mächtigkeit $\\lfloor m/2\\rfloor$.\n\nDie geraden Zahlen in $\\{1,\\ldots,m\\}$ sind $2,4,\\ldots,2\\lfloor m/2\\rfloor$, also genau $\\lfloor m/2\\rfloor$ Stück.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "$F$ und $E$ sind endlich mit Mächtigkeit $m$; $j\\mapsto 2j$ ist eine Bijektion von $F$ auf $E$. $E\\subsetneq N$, aber $E$ ist endlich und $N$ unendlich, daher $|E|\\neq|N|$. Die Verschiebung $n\\mapsto n+1$ ist eine Bijektion von $Z_{\\ge 0}$ auf $N$. Der Schnitt $F\\cap E$ besteht aus den geraden Zahlen in $F$ und hat Mächtigkeit $\\lfloor m/2\\rfloor$. Für $m=5$: $|F\\cup E|=5+5-2=8$."
   },
   "MATH 1.16": {
     "title": "Mengenbeschreibung gerader Zahlen mit Parameter und Zugehörigkeitstests",
-    "context": "Es sei $t\\ge 3$ f eine ganze Zahl zu sein, und den endgültigen Satz zu Definiere\n\n $$E_t=\\{2,4,6,\\ldots,2t\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $t\\ge 3$ eine ganze Zahl und definiere die endliche gerade Menge\n\n$$E_t=\\{2,4,6,\\ldots,2t\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $|E_t|=t$ und $2t\\in E_t$.",
-      " $t\\in E_t$ für jede ungerade ganze Zahl $t\\ge 3$.",
-      " $E_t\\subseteq E_{t+1}$ und $E_t\\subsetneq E_{t+1}$.",
-      "If $t=6$, then $|E_t\\cap\\{1,2,\\ldots,10\\}|=5$.",
-      " $3\\notin E_t$ für jeden $t\\ge 3$."
+      "$|E_t|=t$ und $2t\\in E_t$.",
+      "$t\\in E_t$ für jede ungerade ganze Zahl $t\\ge 3$.",
+      "$E_t\\subseteq E_{t+1}$ und $E_t\\subsetneq E_{t+1}$.",
+      "Für $t=6$ gilt $|E_t\\cap\\{1,2,\\ldots,10\\}|=5$.",
+      "$3\\notin E_t$ für jedes $t\\ge 3$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nRoster $E_t=\\{2,4,\\ldots,2t\\}$ has $t$ Elemente und schließt seine letzte Laufzeit ein $2t$.\n\nDer Dienstplan hat $t$ als er zwar einsfähigkeit die Arbeit der $t$ Schritte von $2$ to $2t$.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nIf $t$ is odd then $t$ is not even, so $t\\notin E_t$ Beantragung von Waren, die $t\\ge 3$ In Teil.\n\nEin Wert ist nicht gleich $2k$ für die Ganzheit $k$, so odd $t$ lies outside $E_t$.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\n$E_{t+1}=E_t\\cup\\{2t+2\\}$ mit $2t+2\\notin E_t$, so $E_t\\subsetneq E_{t+1}$:\n\nDas einzige neue Element $2t+2$ witnesses proper containment $E_t\\subsetneq E_{t+1}$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$t=6$: $E_6\\cap\\{1,\\ldots,10\\}=\\{2,4,6,8,10\\}$ has size $5$.\n\nIntersecting $\\{2,4,6,8,10,12\\}$ mit $\\{1,\\ldots,10\\}$ drops $12$ Es verlässt es schon, dass sich, die \n\nEsinfektionen, die es müssen, wenn sie ihr ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü den ü erreicht; ü ü den ü' ü, den ü ü ü ü üü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü weck ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü ü we ü \n\nFür die erste, die zweite, die zweite, die zweite, die zweite, die zweite, die, einzelner, die zweite, die zweite, die zweite, die zweite, die Fazit.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\n$3$ ist eins an den von an ES- un- un- und un-singisch. $3\\notin E_t$ für jeden $t$.\n\nOddness of $3$ is independent of $t$, so $3$ never enters $E_t$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDie Aufzählung $E_t=\\{2,4,\\ldots,2t\\}$ hat $t$ Elemente und enthält ihr letztes Glied $2t$.\n\nDie Aufzählung hat $t$ Terme, weil sie eine arithmetische Folge von $t$ Schritten von $2$ bis $2t$ ist.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nIst $t$ ungerade, so ist $t$ nicht gerade, daher $t\\notin E_t$. Die Behauptung fordert Zugehörigkeit für jedes ungerade $t\\ge 3$ und scheitert.\n\nEine ungerade ganze Zahl ist niemals gleich $2k$ für eine ganze Zahl $k$, daher liegt ungerades $t$ außerhalb von $E_t$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$E_{t+1}=E_t\\cup\\{2t+2\\}$ mit $2t+2\\notin E_t$, also $E_t\\subsetneq E_{t+1}$.\n\nDas einzige neue Element $2t+2$ bezeugt die echte Enthaltensein-Relation $E_t\\subsetneq E_{t+1}$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$t=6$: $E_6\\cap\\{1,\\ldots,10\\}=\\{2,4,6,8,10\\}$ hat Mächtigkeit $5$.\n\nDer Schnitt von $\\{2,4,6,8,10,12\\}$ mit $\\{1,\\ldots,10\\}$ lässt $12$ weg und hinterlässt fünf gerade Zahlen.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$3$ ist ungerade, daher $3\\notin E_t$ für jedes $t$.\n\nDie Ungeradheit von $3$ hängt nicht von $t$ ab, daher tritt $3$ nie in $E_t$ ein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": " $E_t$ ist der Satzsatz des $t$ positive even integers, so $|E_t|=t$ und $2t\\in E_t$. An odd $t$ cannot equal any even number, so $t\\notin E_t$. Extending to $t+1$ fügt das neue Element hinzu $2(t+1)$, giving a proper superset. At $t=6$: $E_6=\\{2,4,6,8,10,12\\}$; Schnittmenge mit $\\{1,\\ldots,10\\}$ is $\\{2,4,6,8,10\\}$ of size $5$."
+    "solution_overview": "$E_t$ ist die Menge der ersten $t$ positiven geraden Zahlen, also $|E_t|=t$ und $2t\\in E_t$. Eine ungerade Zahl $t$ kann keiner geraden Zahl gleich sein, daher $t\\notin E_t$. Der Übergang zu $t+1$ fügt das neue Element $2(t+1)$ hinzu und liefert eine echte Obermenge. Bei $t=6$: $E_6=\\{2,4,6,8,10,12\\}$; der Schnitt mit $\\{1,\\ldots,10\\}$ ist $\\{2,4,6,8,10\\}$ mit Mächtigkeit $5$."
   },
   "MATH 1.17": {
     "title": "Quadratische Mengenbeschreibung mit Parameter $k$ und ganzzahligen Wurzeln",
-    "context": "Es sei $k\\ge 2$ eine ganze Zahl sein. Definiere\n\n $$Q=\\{x\\in\\mathbb{Z}:x^{2}-(2k+1)x+k(k+1)=0\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $k\\ge 2$ eine ganze Zahl. Definiere\n\n$$Q=\\{x\\in\\mathbb{Z}:x^{2}-(2k+1)x+k(k+1)=0\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $Q=\\{k,k+1\\}$ und $|Q|=2$.",
-      " $k\\in Q$ und $k+1\\in Q$.",
-      "Die Diskriminante der quadratischen entspricht $0$.",
-      "If $k=4$, then $Q=\\{4,5\\}$ und $6\\notin Q$.",
-      " $Q\\subseteq\\mathbb{N}$ für jede ganze Zahl $k\\ge 2$."
+      "$Q=\\{k,k+1\\}$ und $|Q|=2$.",
+      "$k\\in Q$ und $k+1\\in Q$.",
+      "Die Diskriminante der quadratischen Gleichung ist gleich $0$.",
+      "Für $k=4$ gilt $Q=\\{4,5\\}$ und $6\\notin Q$.",
+      "$Q\\subseteq\\mathbb{N}$ für jede ganze Zahl $k\\ge 2$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(x-k)(x-(k+1))=0\\implies Q=\\{k,k+1\\},\\ |Q|=2$$ \n\nFactorisation $(x-k)(x-k-1)=0$ produziert genau die zwei ganzzahligen Wurzeln $k$ und $k+1$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n!!! \n\nBothrootslein $Q$ durch die oben genannten Faktoren.\n\nJede Wurzel erfüllt die ursprüngliche Quadratik durch Konstruktion der Faktorisierung.\n\nJede in Umlauf gebrachte Identität wird auf zwei Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nTracken Sie jedes Zwischenschritt auf seiner eigenen Displayzeile, ersetzen Sie die gewonnenen Parameter einmal genau und vergleiche dann den sich ergebenden genauen Wert mit dem durch die Live-Anweisung bestätigten Schwellenwert oder Roster.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nUnterwegs:\n\n $$\\Delta=(2k+1)^{2}-4\\cdot k(k+1)$$ \n\n $$=4k^{2}+4k+1-4k^{2}-4k=1$$ \n\n $$1\\neq 0$$ \n\nErweiterung der diskriminanten gibt $4k^{2}+4k+1-4k^{2}-4k=1$, not $0$.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\n$k=4$: $Q=\\{4,5\\}$; $6$ is not a root of $(x-4)(x-5)=0$.\n\nAt $k=4$ Die Wurzeln sind $4$ und $5$; $6$ would require $(6-4)(6-5)=0$, die fehlgeschlagen sind.\n\nVerfolge jeden Zwischen Effekte auf einer eigenen Displayzeile, tauschen die gewonnenen Parameter noch einmal genau aus und vergleiche erst dann den sich ergebenden genauen Wert mit dem Schwellenwert oder der Liste, die von der Live-Anweisung behauptet werden.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\nfür $k\\ge 2$ Beide Wurzeln sind ganze Zahlen $\\ge 2$, $\\mathbb{N}$ (Anfähige\n\nBeide Wurzeln sind mindestens ganze Zahlen $2$, $\\mathbb{N}=\\{1,2,\\ldots\\}$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$$(x-k)(x-(k+1))=0\\implies Q=\\{k,k+1\\},\\ |Q|=2$$\n\nDie Faktorisierung $(x-k)(x-k-1)=0$ liefert genau die beiden ganzzahligen Wurzeln $k$ und $k+1$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBeide Wurzeln liegen in $Q$ aufgrund der obigen Faktorisierung.\n\nJede Wurzel erfüllt die ursprüngliche quadratische Gleichung durch Konstruktion der Faktorisierung.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nBerechne die Diskriminante:\n\n$$\\Delta=(2k+1)^{2}-4\\cdot k(k+1)$$\n\n$$=4k^{2}+4k+1-4k^{2}-4k=1$$\n\n$$1\\neq 0$$\n\nDas Ausrechnen der Diskriminante ergibt $4k^{2}+4k+1-4k^{2}-4k=1$, nicht $0$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$k=4$: $Q=\\{4,5\\}$; $6$ ist keine Wurzel von $(x-4)(x-5)=0$.\n\nBei $k=4$ sind die Wurzeln $4$ und $5$; $6$ würde $(6-4)(6-5)=0$ erfordern, was scheitert.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nFür $k\\ge 2$ sind beide Wurzeln ganze Zahlen $\\ge 2$ und liegen daher in $\\mathbb{N}$.\n\nBeide Wurzeln sind ganze Zahlen mindestens $2$, also liegen sie in $\\mathbb{N}=\\{1,2,\\ldots\\}$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Factor: $x^{2}-(2k+1)x+k(k+1)=(x-k)(x-k-1)$. Roots $k$ und $k+1$, beide Integer $\\ge 2$. Discriminant $(2k+1)^{2}-4k(k+1)=4k^{2}+4k+1-4k^{2}-4k=1$.\n\nDie Buchstaben nutzen diese gewonnenen Werte neu und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "Faktorisierung: $x^{2}-(2k+1)x+k(k+1)=(x-k)(x-k-1)$. Wurzeln $k$ und $k+1$, beide ganze Zahlen $\\ge 2$. Diskriminante $(2k+1)^{2}-4k(k+1)=4k^{2}+4k+1-4k^{2}-4k=1$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
   },
   "MATH 1.18": {
     "title": "Potenzmenge einer parametrischen vierelementigen Menge",
@@ -333,32 +333,32 @@
       "$|\\mathcal{P}(W)|=2^{|W|}=12$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$|\\mathcal{P}(W)|=2^{4}=16,\\qquad\\binom{4}{2}=6$$\n\nPotenzmengenmächtigkeit $2^{4}=16$ und $\\binom{4}{2}=6$ sind die Standardzählformeln für eine $4$-Menge.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$\\{b,b+3\\}\\subseteq W$, also $\\{b,b+3\\}\\in\\mathcal{P}(W)$. Beide Teilbehauptungen gelten.\n\nDie Teilmengenschaft $\\{b,b+3\\}\\subseteq W$ ist an der Aufzählung klar, und jede Teilmenge ist Element von $\\mathcal{P}(W)$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$\\binom{4}{3}=4$$\n\n$$\\binom{4}{3}=4$$ zählt die $3$-Teilmengen; gleichwertig lässt jede $3$-Teilmenge genau eines der vier Elemente weg.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$b=10$: $W=\\{10,11,12,13\\}$, und $W\\in\\mathcal{P}(W)$.\n\nDie volle Menge $W$ ist stets Element von $\\mathcal{P}(W)$, also liegt bei $b=10$ die Aufzählung $\\{10,11,12,13\\}$ in der Potenzmenge.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$2^{4}=16\\neq 12$$\n\nDie behauptete Potenzmengenmächtigkeit ist falsch.\n\nDie Identität $|\\mathcal{P}(W)|=2^{|W|}$ liefert $16$ und widerspricht der behaupteten $12$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$$|\\mathcal{P}(W)|=2^{4}=16,\\qquad\\binom{4}{2}=6$$\n\nPotenzmengenmächtigkeit $2^{4}=16$ und $\\binom{4}{2}=6$ sind die Standardzählformeln für eine $4$-Menge.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$\\{b,b+3\\}\\subseteq W$, also $\\{b,b+3\\}\\in\\mathcal{P}(W)$. Beide Teilbehauptungen gelten.\n\nDie Teilmengenschaft $\\{b,b+3\\}\\subseteq W$ ist an der Aufzählung klar, und jede Teilmenge ist Element von $\\mathcal{P}(W)$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\\binom{4}{3}=4$$\n\n$$\\binom{4}{3}=4$$ zählt die $3$-Teilmengen; gleichwertig lässt jede $3$-Teilmenge genau eines der vier Elemente weg.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$b=10$: $W=\\{10,11,12,13\\}$, und $W\\in\\mathcal{P}(W)$.\n\nDie volle Menge $W$ ist stets Element von $\\mathcal{P}(W)$, also liegt bei $b=10$ die Aufzählung $\\{10,11,12,13\\}$ in der Potenzmenge.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$2^{4}=16\\neq 12$$\n\nDie behauptete Potenzmengenmächtigkeit ist falsch.\n\nDie Identität $|\\mathcal{P}(W)|=2^{|W|}$ liefert $16$ und widerspricht der behaupteten $12$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$|W|=4$, also $|\\mathcal{P}(W)|=2^{4}=16$. Binomialzahlen: $\\binom{4}{2}=6$, $\\binom{4}{3}=4$. Jede Teilmenge von $W$, einschließlich $W$ selbst und jeder $2$-Teilmenge, gehört zu $\\mathcal{P}(W)$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
   },
   "MATH 1.19": {
     "title": "Teilmengenkette mit Parameter und echter Enthaltensein-Relation",
-    "context": "Es sei $c\\ge 2$ eine ganze Zahl sein. Definiere\n\n $$X=\\{c\\},\\quad Y=\\{c,c+1\\},\\quad Z=\\{c,c+1,c+2\\}.$$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $c\\ge 2$ eine ganze Zahl. Definiere\n\n$$X=\\{c\\},\\quad Y=\\{c,c+1\\},\\quad Z=\\{c,c+1,c+2\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $X\\subsetneq Y\\subsetneq Z$.",
-      " $|X|=1$, $|Y|=2$, $|Z|=3$.",
-      " $Z\\subseteq Y$.",
-      "If $c=5$, then $6\\in Y$ und $7\\in Z\\setminus Y$.",
-      "Die Anzahl der richtigen Untergruppen von $Z$ gleich $7$."
+      "$X\\subsetneq Y\\subsetneq Z$.",
+      "$|X|=1$, $|Y|=2$, $|Z|=3$.",
+      "$Z\\subseteq Y$.",
+      "Für $c=5$ gilt $6\\in Y$ und $7\\in Z\\setminus Y$.",
+      "Die Anzahl der echten Teilmengen von $Z$ ist gleich $7$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$c\\in Y$ und $c+1\\notin X$ give $X\\subsetneq Y$; $c+2\\notin Y$ gives $Y\\subsetneq Z$.\n\nWitnesses of properness: $c+1\\in Y\\setminus X$ und $c+2\\in Z\\setminus Y$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nKardinalitäten sind unmittelbar aus den Dienstplänen.\n\nMüssen $1$, $2$, und $3$ die behaupteten Kardinalitäten genau übereinstimmen.\n\nWie denlaufs der in Absatz 3 genannten\n\nDie Worte sind richtig.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\n$c+2\\in Z$ but $c+2\\notin Y$, so $Z\\not\\subseteq Y$.\n\nDas Element $c+2$ lies in $Z$ but not in $Y$, so $Z\\subseteq Y$ versagt.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\n$c=5$: $6=c+1\\in Y$ und $7=c+2\\in Z\\setminus Y$.\n\nAt $c=5$: $6=c+1\\in Y$ und $7=c+2\\in Z\\setminus Y$.\n\nDie Aussage ist richtig.",
-      "**E.** → Richtig\n\n$$2^{3}-1=7$$ \n\nrichtige Untergruppen (alle Untergruppen außer) $Z$ itself).\n\nA $3$ -set has $2^{3}=8$ subsets; excluding $Z$ itself leaves $7$ und\n\nAn jedem Ort, an dem es sich zur Anzeige kommt, Anlaufstelle, ersetzen die angefallenen Parameter genau und vergleichen nur den sich daraus ergebenden genauen Wert mit dem von der Live-Anweisung angegebenen Schwellenwert oder dem von der Anmeldestelle gemachten Ansehen.\n\n„Jedes Jahr\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$c\\in Y$ und $c+1\\notin X$ ergeben $X\\subsetneq Y$; $c+2\\notin Y$ ergibt $Y\\subsetneq Z$.\n\nZeugen der Echtheit: $c+1\\in Y\\setminus X$ und $c+2\\in Z\\setminus Y$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Mächtigkeiten folgen unmittelbar aus den Aufzählungen.\n\nAufzählungen der Größen $1$, $2$ und $3$ stimmen genau mit den behaupteten Mächtigkeiten überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$c+2\\in Z$, aber $c+2\\notin Y$, daher $Z\\not\\subseteq Y$.\n\nDas Element $c+2$ liegt in $Z$, aber nicht in $Y$, daher scheitert $Z\\subseteq Y$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$c=5$: $6=c+1\\in Y$ und $7=c+2\\in Z\\setminus Y$.\n\nBei $c=5$: $6=c+1\\in Y$ und $7=c+2\\in Z\\setminus Y$.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$$2^{3}-1=7$$\n\nechte Teilmengen (alle Teilmengen außer $Z$ selbst).\n\nEine $3$-Menge hat $2^{3}=8$ Teilmengen; schließt man $Z$ selbst aus, bleiben $7$ echte Teilmengen.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Clear chain $X\\subsetneq Y\\subsetneq Z$ of sizes $1,2,3$. $Z\\not\\subseteq Y$ weil $c+2\\in Z\\setminus Y$. Proper subsets of a $3$ -set: $2^{3}-1=7$. At $c=5$: $Y=\\{5,6\\}$, $Z=\\{5,6,7\\}$, so $6\\in Y$ und $7\\in Z\\setminus Y$."
+    "solution_overview": "Klare Kette $X\\subsetneq Y\\subsetneq Z$ mit Mächtigkeiten $1,2,3$. $Z\\not\\subseteq Y$, weil $c+2\\in Z\\setminus Y$. Echte Teilmengen einer $3$-Menge: $2^{3}-1=7$. Bei $c=5$: $Y=\\{5,6\\}$, $Z=\\{5,6,7\\}$, also $6\\in Y$ und $7\\in Z\\setminus Y$."
   },
   "MATH 1.20": {
     "title": "Prüfung, ob eine Familie eine parametrische Menge partitioniert",
@@ -391,10 +391,10 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAusmultiplizieren:\n\n$$(px+q)^{2}=(px+q)(px+q)=p^{2}x^{2}+pqx+pqx+q^{2}=p^{2}x^{2}+2pqx+q^{2}$$\n\nDie Identität gilt für alle reellen $p,q,x$.\n\nDie Kreuzterme $pqx+pqx$ vereinigen sich zum einzigen mittleren Summanden $2pqx$; das ist die Quelle der Identität.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nEinsetzen von $p=3$, $q=-4$:\n\n$$9x^{2}+2\\cdot3\\cdot(-4)x+16=9x^{2}-24x+16$$\n\nDas Einsetzen der konkreten Koeffizienten $p=3$, $q=-4$ in $p^{2}$, $2pq$ und $q^{2}$ liefert $9$, $-24$ und $16$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nEinsetzen von $p=3$, $q=-4$:\n\n$$9x^{2}+2\\cdot3\\cdot(-4)x+16=9x^{2}-24x+16$$\n\nDas Einsetzen der konkreten Koeffizienten $p=3$, $q=-4$ in $p^{2}$, $2pq$ und $q^{2}$ liefert $9$, $-24$ und $16$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$px+q=3\\cdot2+(-4)=2,\\qquad 2^{2}=4$$\n\n$$p^{2}x^{2}+2pqx+q^{2}=9\\cdot4+2\\cdot3\\cdot(-4)\\cdot2+16=36-48+16=4$$\n\nBeide Auswertungswege — direktes Einsetzen in $(px+q)$ und anschließendes Quadrieren sowie zuerst Entwickeln — liefern $4$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nGegenbeispiel $p=1$, $q=1$, $x=1$: linke Seite $4$, rechte Seite ohne mittleren Term $2$. Die universelle Behauptung scheitert.\n\nDas Gegenbeispiel $p=q=x=1$ liefert links $4$ und rechts $2$, daher gilt die Identität ohne mittleren Term im Allgemeinen nicht.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDer mittlere Koeffizient ist $2pq=2\\cdot3\\cdot5=30$.\n\nDer mittlere Koeffizient ist genau $2pq=2\\cdot3\\cdot5=30$ und stimmt mit der Behauptung überein.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nDer mittlere Koeffizient ist $2pq=2\\cdot3\\cdot5=30$.\n\nDer mittlere Koeffizient ist genau $2pq=2\\cdot3\\cdot5=30$ und stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Das Binomquadrat entwickelt sich zu $(px+q)^{2}=p^{2}x^{2}+2pqx+q^{2}$. Mit $p=3$, $q=-4$: $(3x-4)^{2}=9x^{2}-24x+16$. Bei $x=2$: $px+q=2$, Quadrieren ergibt $4$. Die Identität ohne mittleren Term scheitert, sobald $pqx\\neq 0$. Mit $p=3$, $q=5$: mittlerer Koeffizient $2pq=30$."
   },
@@ -409,11 +409,11 @@
       "Bei $a=5$, $b=3$, $k=2$ ist der Wert $(a-b)(a+b)k^{2}$ gleich $60$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(ak)^{2}-(bk)^{2}=a^{2}k^{2}-b^{2}k^{2}=(a^{2}-b^{2})k^{2}$$\n\nKlammere $k^{2}$ aus $a^{2}k^{2}-b^{2}k^{2}$ heraus und erhalte $(a^{2}-b^{2})k^{2}$ für jedes reelle Tripel.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$(5\\cdot2)^{2}-(3\\cdot2)^{2}=10^{2}-6^{2}=100-36=64$$\n\nDie direkte Rechnung $100-36=64$ bestätigt den Probenwert.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a-b)(a+b)k^{2}=(a^{2}-b^{2})k^{2}$$\n\nDie Umgruppierung $k(a-b)\\cdot k(a+b)$ multipliziert sich zu demselben $(a^{2}-b^{2})k^{2}$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nFalls $a=b$, dann ist $a^{2}-b^{2}=0$, also ist die Differenz für jedes $k$ gleich $0$.\n\nDas Verschwinden von $a-b$ erzwingt, dass das gesamte Produkt $(a-b)(a+b)k^{2}$ für jedes $k$ verschwindet.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$(5-3)(5+3)(2)^{2}=2\\cdot8\\cdot4=64\\neq 60$$\n\nDas korrekte Produkt ist $2\\cdot8\\cdot4=64$, nicht $60$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$$(ak)^{2}-(bk)^{2}=a^{2}k^{2}-b^{2}k^{2}=(a^{2}-b^{2})k^{2}$$\n\nKlammere $k^{2}$ aus $a^{2}k^{2}-b^{2}k^{2}$ heraus und erhalte $(a^{2}-b^{2})k^{2}$ für jedes reelle Tripel.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(5\\cdot2)^{2}-(3\\cdot2)^{2}=10^{2}-6^{2}=100-36=64$$\n\nDie direkte Rechnung $100-36=64$ bestätigt den Probenwert.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a-b)(a+b)k^{2}=(a^{2}-b^{2})k^{2}$$\n\nDie Umgruppierung $k(a-b)\\cdot k(a+b)$ multipliziert sich zu demselben $(a^{2}-b^{2})k^{2}$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nFalls $a=b$, dann ist $a^{2}-b^{2}=0$, also ist die Differenz für jedes $k$ gleich $0$.\n\nDas Verschwinden von $a-b$ erzwingt, dass das gesamte Produkt $(a-b)(a+b)k^{2}$ für jedes $k$ verschwindet.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$(5-3)(5+3)(2)^{2}=2\\cdot8\\cdot4=64\\neq 60$$\n\nDas korrekte Produkt ist $2\\cdot8\\cdot4=64$, nicht $60$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Differenz der Quadrate: $(ak)^{2}-(bk)^{2}=(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a^{2}-b^{2})k^{2}$. Bei $a=5$, $b=3$, $k=2$: $(10)^{2}-(6)^{2}=100-36=64$, und $(a-b)(a+b)k^{2}=2\\cdot8\\cdot4=64$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
@@ -428,11 +428,11 @@
       "$(u+v)^{2}=u^{2}+v^{2}$ gilt für alle reellen $u,v$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(u+v)^{2}=u^{2}+2uv+v^{2}\\implies u^{2}+v^{2}=s^{2}-2p$$\n\nUmstellen von $(u+v)^{2}=u^{2}+2uv+v^{2}$ isoliert $u^{2}+v^{2}=s^{2}-2p$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$3^{2}+5^{2}=9+25=34$$\n\n$$s=8,\\ p=15,\\ s^{2}-2p=64-30=34$$\n\nBeide Wege — direkte Quadrate $9+25$ und $s^{2}-2p=64-30$ — ergeben $34$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$u'+v'=u+v+2m=s+2m$$\n\n$$u'v'=uv+m(u+v)+m^{2}=p+ms+m^{2}$$\n\nDas Ausmultiplizieren von $(u+m)(v+m)$ liefert die Dreitermformel $p+ms+m^{2}$ für das neue Produkt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$u'v'=p+ms+m^{2}=15+2\\cdot8+4=15+16+4=35$$\n\nAlternativ: $u'=5$, $v'=7$, Produkt $35$.\n\nEinsetzen von $p=15$, $s=8$, $m=2$ liefert $15+16+4=35$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nGegenbeispiel $u=1$, $v=1$: links $(2)^{2}=4$, rechts $1+1=2$. Die Identität scheitert.\n\nDer fehlende Kreuzterm $2uv$ ist für $u=v=1$ von null verschieden, daher gilt $(u+v)^{2}\\neq u^{2}+v^{2}$ im Allgemeinen.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$$(u+v)^{2}=u^{2}+2uv+v^{2}\\implies u^{2}+v^{2}=s^{2}-2p$$\n\nUmstellen von $(u+v)^{2}=u^{2}+2uv+v^{2}$ isoliert $u^{2}+v^{2}=s^{2}-2p$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$3^{2}+5^{2}=9+25=34$$\n\n$$s=8,\\ p=15,\\ s^{2}-2p=64-30=34$$\n\nBeide Wege — direkte Quadrate $9+25$ und $s^{2}-2p=64-30$ — ergeben $34$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$u'+v'=u+v+2m=s+2m$$\n\n$$u'v'=uv+m(u+v)+m^{2}=p+ms+m^{2}$$\n\nDas Ausmultiplizieren von $(u+m)(v+m)$ liefert die Dreitermformel $p+ms+m^{2}$ für das neue Produkt.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$u'v'=p+ms+m^{2}=15+2\\cdot8+4=15+16+4=35$$\n\nAlternativ: $u'=5$, $v'=7$, Produkt $35$.\n\nEinsetzen von $p=15$, $s=8$, $m=2$ liefert $15+16+4=35$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nGegenbeispiel $u=1$, $v=1$: links $(2)^{2}=4$, rechts $1+1=2$. Die Identität scheitert.\n\nDer fehlende Kreuzterm $2uv$ ist für $u=v=1$ von null verschieden, daher gilt $(u+v)^{2}\\neq u^{2}+v^{2}$ im Allgemeinen.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$$u^{2}+v^{2}=(u+v)^{2}-2uv=s^{2}-2p.$$\n\nVerschobenes Paar: $u'+v'=s+2m$ und $u'v'=p+ms+m^{2}$. Probe $u=3$, $v=5$: $s=8$, $p=15$, $u^{2}+v^{2}=34$. Mit $m=2$: $u'v'=15+2\\cdot8+4=35$. Die falsche Identität $(u+v)^{2}=u^{2}+v^{2}$ lässt den Kreuzterm $2uv$ weg."
   },
@@ -448,7 +448,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAus der faktorisierten Identität, $x+y+z=0$ forces $x^{3}+y^{3}+z^{3}-3xyz=0$!\n\nDer Faktor $x+y+z$ in der langen Identität verschwindet unter der Hypothese, verlassen $x^{3}+y^{3}+z^{3}=3xyz$.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nCubes: $64-1-27=36$. Also $3xyz=3\\cdot4\\cdot(-1)\\cdot(-3)=36$.\n\n $$36\\neq -36$$ \n\nDie Behauptung $-36$.\n\nCubes sum to $64-1-27=36$ und $3xyz=36$; die beanspruchte $-36$ hat das falsche Zeichen.\n\nÜberwachen Sie jeden Zwischenschritt auf seiner eigenen Displayzeile, ersetzen Sie die wiedergefundenen Parameter noch einmal und vergleiche erst dann den genauen Wert mit dem Schwellenwert oder dem Dienstplan, der von der gelaufenen Aussage behauptet wird.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nKuben: $64-1-27=36$. Außerdem $3xyz=3\\cdot4\\cdot(-1)\\cdot(-3)=36$.\n\n$$\n36\\neq -36\n$$\n\nDie Behauptung fordert $-36$. Die Kubensumme ist $36$ und $3xyz=36$; das behauptete $-36$ hat das falsche Vorzeichen.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\n$$0=(x+y+z)^{2}=x^{2}+y^{2}+z^{2}+2(xy+yz+zx)$$ \n\n $$x^{2}+y^{2}+z^{2}=-2(xy+yz+zx)$$ \n\nSquaring $x+y+z=0$ christ Exemplare A $x^{2}+y^{2}+z^{2}=-2(xy+yz+zx)$.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\n$$xy+yz+zx=-4+3-12=-13$$ \n\nPair products: $4\\cdot(-1)=-4$, $(-1)\\cdot(-3)=3$, $(-3)\\cdot4=-12$, summing to $-13$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Identität $x^{3}+y^{3}+z^{3}=3xyz$ erfordert die Hypothese $x+y+z=0$ Ohne diese Einschränkung scheitert es. Nehmen $x=1$, $y=1$, $z=0$:\n\n $$x+y+z=2\\neq 0$$ \n\n $$x^{3}+y^{3}+z^{3}=1+1+0=2$$ \n\n $$3xyz=0$$ \n\n $$2\\neq 0$$ \n\nDiehirn-Siren Sich gerechnet\n\nBeim Kontra- und $x=y=1$, $z=0$ has cube sum $2$ but $3xyz=0$ so dass die unerschränkte Identität\n\nDie Aussage ist falsch."
@@ -485,11 +485,11 @@
       "Der Koeffizient von $a^{4}b$ ist gleich $4$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nWende $\\binom{5}{k}$ für $k=0,\\ldots,5$ an und erhalte die angezeigte Entwicklung.\n\nDie sechs Binomialkoeffizienten für $n=5$ sind $1,5,10,10,5,1$ und stimmen mit der angezeigten Entwicklung überein.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\\binom{5}{2}=10$$\n\nDer Index $k=2$ liefert $\\binom{5}{2}=10$ für den Term $a^{3}b^{2}$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$(2+(-1))^{5}=1^{5}=1$$\n\n$$(2-1)^{5}=1$$ bestätigt die Probe.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$\\sum_{k=0}^{5}\\binom{5}{k}=2^{5}=32$$\n\nDer Binomialsatz bei $a=b=1$ liefert $\\sum\\binom{5}{k}=2^{5}=32$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$\\binom{5}{1}=5\\neq 4$$\n\nDer Koeffizient von $a^{4}b$ ist $\\binom{5}{1}=5$, im Widerspruch zur behaupteten $4$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nWende $\\binom{5}{k}$ für $k=0,\\ldots,5$ an und erhalte die angezeigte Entwicklung.\n\nDie sechs Binomialkoeffizienten für $n=5$ sind $1,5,10,10,5,1$ und stimmen mit der angezeigten Entwicklung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\\binom{5}{2}=10$$\n\nDer Index $k=2$ liefert $\\binom{5}{2}=10$ für den Term $a^{3}b^{2}$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$(2+(-1))^{5}=1^{5}=1$$\n\n$$(2-1)^{5}=1$$ bestätigt die Probe.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$\\sum_{k=0}^{5}\\binom{5}{k}=2^{5}=32$$\n\nDer Binomialsatz bei $a=b=1$ liefert $\\sum\\binom{5}{k}=2^{5}=32$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$\\binom{5}{1}=5\\neq 4$$\n\nDer Koeffizient von $a^{4}b$ ist $\\binom{5}{1}=5$, im Widerspruch zur behaupteten $4$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Binomialkoeffizienten für $n=5$: $1,5,10,10,5,1$. Bei $a=2$, $b=-1$: $(1)^{5}=1$. Zeilensumme $2^{5}=32$. Der Koeffizient von $a^{4}b$ ist $5$, nicht $4$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
@@ -504,51 +504,51 @@
       "An derselben Probe liefert das Auswerten der Entwicklung $c^{3}x^{3}-3c^{2}dx^{2}+3cd^{2}x-d^{3}$ den Wert $-1$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nVerwende $(u-v)^{3}=u^{3}-3u^{2}v+3uv^{2}-v^{3}$ mit $u=cx$, $v=d$.\n\nSetze $u=cx$ und $v=d$ in $(u-v)^{3}=u^{3}-3u^{2}v+3uv^{2}-v^{3}$ ein und erhalte die angegebene Entwicklung.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$8x^{3}-3\\cdot4\\cdot3\\,x^{2}+3\\cdot2\\cdot9\\,x-27=8x^{3}-36x^{2}+54x-27$$\n\nKoeffizienten: $c^{3}=8$, $3c^{2}d=36$, $3cd^{2}=54$, $d^{3}=27$, mit den angezeigten Vorzeichen.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$cx-d=4-3=1,\\qquad 1^{3}=1$$\n\n$$cx-d=4-3=1$$ liefert beim Kubieren $1$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nDer Term mit $x^{1}$ ist $3c d^{2}x$, daher ist der Koeffizient $3cd^{2}$.\n\nDer Grad-$1$-Term ist $3cd^{2}x$, also ist sein Koeffizient $3cd^{2}$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDie entwickelte Form ist an der Probe gleich $(cx-d)^{3}=1$, nicht $-1$.\n\nWeil das entwickelte Polynom mit $(cx-d)^{3}$ übereinstimmt, ist sein Probenwert ebenfalls $1$, nicht $-1$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nVerwende $(u-v)^{3}=u^{3}-3u^{2}v+3uv^{2}-v^{3}$ mit $u=cx$, $v=d$.\n\nSetze $u=cx$ und $v=d$ in $(u-v)^{3}=u^{3}-3u^{2}v+3uv^{2}-v^{3}$ ein und erhalte die angegebene Entwicklung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$8x^{3}-3\\cdot4\\cdot3\\,x^{2}+3\\cdot2\\cdot9\\,x-27=8x^{3}-36x^{2}+54x-27$$\n\nKoeffizienten: $c^{3}=8$, $3c^{2}d=36$, $3cd^{2}=54$, $d^{3}=27$, mit den angezeigten Vorzeichen.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$cx-d=4-3=1,\\qquad 1^{3}=1$$\n\n$$cx-d=4-3=1$$ liefert beim Kubieren $1$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDer Term mit $x^{1}$ ist $3c d^{2}x$, daher ist der Koeffizient $3cd^{2}$.\n\nDer Grad-$1$-Term ist $3cd^{2}x$, also ist sein Koeffizient $3cd^{2}$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie entwickelte Form ist an der Probe gleich $(cx-d)^{3}=1$, nicht $-1$.\n\nWeil das entwickelte Polynom mit $(cx-d)^{3}$ übereinstimmt, ist sein Probenwert ebenfalls $1$, nicht $-1$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$(cx-d)^{3}=c^{3}x^{3}-3c^{2}d x^{2}+3c d^{2} x-d^{3}$. Mit $c=2$, $d=3$: $8x^{3}-36x^{2}+54x-27$. Bei $x=2$: $cx-d=1$, Kubus $1$. Das entwickelte Polynom an derselben Stelle ist ebenfalls $1$, nicht $-1$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
   "MATH 2.08": {
     "title": "Quadratische Ergänzung mit einem Parameter, der um eins danebenliegt",
-    "context": "Es sei $h$ werden. mit $x^{2}+2hx+h^{2}=(x+h)^{2}$ mit dem nahen Polynom $x^{2}+2hx+h^{2}-1$ Eine Probe verwendet $h=3$, $x=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es sei $h$ ein reeller Parameter. Vergleiche $x^{2}+2hx+h^{2}=(x+h)^{2}$ mit dem benachbarten Polynom $x^{2}+2hx+h^{2}-1$. Eine Probe verwendet $h=3$, $x=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $x^{2}+2hx+h^{2}=(x+h)^{2}$ für alle reellen $x,h$.",
-      " $x^{2}+2hx+h^{2}-1=(x+h)^{2}-1=(x+h-1)(x+h+1)$.",
-      "If $h=3$, then $x^{2}+6x+9=(x+3)^{2}$.",
-      "At $h=3$, $x=1$ Der Wert von $x^{2}+2hx+h^{2}-1$ gleich $16$.",
-      "Die Gleichung $x^{2}+2hx+h^{2}-1=0$ has solutions $x=-h\\pm 1$."
+      "$x^{2}+2hx+h^{2}=(x+h)^{2}$ gilt für alle reellen $x,h$.",
+      "$x^{2}+2hx+h^{2}-1=(x+h)^{2}-1=(x+h-1)(x+h+1)$.",
+      "Für $h=3$ gilt $x^{2}+6x+9=(x+3)^{2}$.",
+      "Bei $h=3$, $x=1$ ist der Wert von $x^{2}+2hx+h^{2}-1$ gleich $16$.",
+      "Die Gleichung $x^{2}+2hx+h^{2}-1=0$ hat die Lösungen $x=-h\\pm 1$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$x^{2}+2hx+h^{2}=(x+h)^{2}$$ \n\nstellstellt die $x^{2}+2hx+h^{2}=(x+h)^{2}$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$(x+h)^{2}-1=(x+h-1)(x+h+1)$$ \n\nUnterschied der Quadrate $(x+h)^{2}-1^{2}$ factors as $(x+h-1)(x+h+1)$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$x^{2}+6x+9=(x+3)^{2}$$ \n\nmit $h=3$ Das ausgefüllte Quadrat ist $(x+3)^{2}=x^{2}+6x+9$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$(1+3)^{2}-1=16-1=15$$ \n\n $$15\\neq 16$$ \n\nAn der Sonde $(1+3)^{2}-1=15$, so der Anspruch $16$ steht für das Quadrat vor der Subtraktor $1$.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n$$(x+h)^{2}=1\\implies x+h=\\pm 1\\implies x=-h\\pm 1$$ \n\nSolving $(x+h)^{2}=1$ gives $x+h=\\pm 1$ durchschnittlich $x=-h\\pm 1$.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$$x^{2}+2hx+h^{2}=(x+h)^{2}$$\n\nDie quadratische Ergänzung ist die Identität $x^{2}+2hx+h^{2}=(x+h)^{2}$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(x+h)^{2}-1=(x+h-1)(x+h+1)$$\n\nDie Differenz von Quadraten $(x+h)^{2}-1^{2}$ zerfällt in $(x+h-1)(x+h+1)$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$x^{2}+6x+9=(x+3)^{2}$$\n\nMit $h=3$ ist das vervollständigte Quadrat $(x+3)^{2}=x^{2}+6x+9$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$$(1+3)^{2}-1=16-1=15$$\n\n$$15\\neq 16$$\n\nAn der Probe gilt $(1+3)^{2}-1=15$; das behauptete $16$ ist das Quadrat vor dem Abziehen von $1$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$(x+h)^{2}=1\\implies x+h=\\pm 1\\implies x=-h\\pm 1$$\n\nAus $(x+h)^{2}=1$ folgt $x+h=\\pm 1$, also $x=-h\\pm 1$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Vervollständigen des Quadrats: $x^{2}+2hx+h^{2}=(x+h)^{2}$. Subtracting $1$ ergibt einen Unterschied der Quadrate $(x+h)^{2}-1^{2}=(x+h-1)(x+h+1)$ Die Wurzeln der $-1$ equation: $x+h=\\pm 1$, so $x=-h\\pm 1$. At $h=3$, $x=1$: $(1+3)^{2}-1=15$."
+    "solution_overview": "Quadratische Ergänzung: $x^{2}+2hx+h^{2}=(x+h)^{2}$. Subtrahiert man $1$, entsteht eine Differenz von Quadraten $(x+h)^{2}-1^{2}=(x+h-1)(x+h+1)$. Wurzeln der Gleichung mit $-1$: $x+h=\\pm 1$, also $x=-h\\pm 1$. Bei $h=3$, $x=1$: $(1+3)^{2}-1=15$."
   },
   "MATH 2.09": {
     "title": "Quadratentwicklung dreier Terme mit Gruppierungsparameter",
-    "context": "Es sei $a,b,c$ reelle Zahlen sein. Entwickle $(a+b+c)^{2}$ Eine Probe verwendet $a=2$, $b=3$, $c=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es seien $a,b,c$ reelle Zahlen. Entwickle $(a+b+c)^{2}$. Eine Probe verwendet $a=2$, $b=3$, $c=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$.",
+      "$(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$.",
       "Die Gruppierung als $((a+b)+c)^{2}=(a+b)^{2}+2(a+b)c+c^{2}$ liefert dieselbe Entwicklung.",
-      "At $a=2$, $b=3$, $c=-1$, one has $(a+b+c)^{2}=16$.",
-      "Löschen alle Cross-Begriffe, $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}$ hält für die Sondenwerte.",
-      "an der Sonde, $2ab+2ac+2bc=4$."
+      "Bei $a=2$, $b=3$, $c=-1$ gilt $(a+b+c)^{2}=16$.",
+      "Lässt man alle Kreuzterme weg, so gilt $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}$ für die Probenwerte.",
+      "An der Probe gilt $2ab+2ac+2bc=4$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nExpand $(a+b+c)(a+b+c)$ und sammeln Sie die sechs Kreuzprodukte in $2ab+2ac+2bc$.\n\n9 Begriffe entstehen mit dem Produkt $(a+b+c)^{2}$ bei den drei Fahrzeugen an Bord,\n\nJede relevante Identität wird auf zwei Seiten geprüft, vor dem endgültigen Vergleich mit der Behauptung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$(a+b)^{2}+2(a+b)c+c^{2}=a^{2}+2ab+b^{2}+2ac+2bc+c^{2}$$ \n\nDas entspricht der vollen Erweiterung.\n\nF vons-s-s-s-s-s-s-s-s-s-s-s-s-s--ss-s- liberal-s-s- $2ab$, $2ac$, $2bc$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$2+3+(-1)=4,\\qquad 4^{2}=16$$ \n\n $$a+b+c=4$$ squares to $16$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nSquares alone: $4+9+1=14\\neq 16$.\n\nSquares alone sum to $14$, fehlt der wechselseitige Beitrag $2$, so können sie nicht gleich die volle Quadrat $16$.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\n$$ab+ac+bc=6+(-2)+(-3)=1$$ \n\n $$2(ab+ac+bc)=2$$ \n\n $$2\\neq 4$$ \n\nCross sum $2(6-2-3)=2$, not $4$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nEntwickle $(a+b+c)(a+b+c)$ und fasse die sechs Kreuzprodukte zu $2ab+2ac+2bc$ zusammen.\n\nAus dem Produkt $(a+b+c)^{2}$ entstehen neun Terme; die drei Quadrate und die sechs Kreuzprodukte ergeben die angegebene Formel.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(a+b)^{2}+2(a+b)c+c^{2}=a^{2}+2ab+b^{2}+2ac+2bc+c^{2}$$\n\nDas stimmt mit der vollen Entwicklung überein.\n\nDas Ausmultiplizieren der gruppierten Form liefert jeden Kreuzterm $2ab$, $2ac$, $2bc$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$2+3+(-1)=4,\\qquad 4^{2}=16$$\n\n$$a+b+c=4$$ quadriert zu $16$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nNur die Quadrate: $4+9+1=14\\neq 16$.\n\nDie Quadrate allein summieren sich zu $14$ und lassen den Kreuzbeitrag $2$ weg; sie können daher nicht dem vollen Quadrat $16$ gleich sein.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$$ab+ac+bc=6+(-2)+(-3)=1$$\n\n$$2(ab+ac+bc)=2$$\n\n$$2\\neq 4$$\n\nDie Kreuzsumme ist $2(6-2-3)=2$, nicht $4$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Full expansion: $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$. Die Gruppierung als $((a+b)+c)^{2}$ dies ist die gleiche Zahl:: $a=2$, $b=3$, $c=-1$: sum $4$, square $16$. Cross sum $2(ab+ac+bc)=2(6-2-3)=2$. Squares alone equal $14$ Wer immer auch immer das Zugaben wenn"
+    "solution_overview": "Volle Entwicklung: $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$. Die Gruppierung als $((a+b)+c)^{2}$ liefert dasselbe Polynom. Probe $a=2$, $b=3$, $c=-1$: Summe $4$, Quadrat $16$. Kreuzsumme $2(ab+ac+bc)=2(6-2-3)=2$. Die Quadrate allein ergeben $14$, daher scheitert das Weglassen der Kreuzterme."
   },
   "MATH 2.10": {
     "title": "Vorzeichenwechsel, die nur den Kreuzterm ändern",
@@ -561,11 +561,11 @@
       "$(a+b)^{2}+(a-b)^{2}=2a^{2}+2b^{2}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(a^{2}+2ab+b^{2})-(a^{2}-2ab+b^{2})=4ab$$\n\nSubtrahiert man die beiden Entwicklungen, fallen $a^{2}+b^{2}$ weg und der mittlere Term verdoppelt sich zu $4ab$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nDirektes Ausmultiplizieren von $(a-b)(a-b)$.\n\nDas Minuszeichen beim mittleren Term ist der einzige Unterschied zwischen $(a-b)^{2}$ und $(a+b)^{2}$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$9^{2}=81,\\qquad 5^{2}=25$$\n\n$$(7+2)^{2}=81$$ und $(7-2)^{2}=25$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$81-25=56$$\n\n$$56\\neq 48$$\n\nAlternativ $4ab=4\\cdot7\\cdot2=56$.\n\nDifferenz $81-25=56$, gleichwertig $4\\cdot7\\cdot2=56$, nicht $48$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n$$(a^{2}+2ab+b^{2})+(a^{2}-2ab+b^{2})=2a^{2}+2b^{2}$$\n\nAddiert man die beiden Entwicklungen, fallen die mittleren Terme weg und die Quadrate verdoppeln sich.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$$(a^{2}+2ab+b^{2})-(a^{2}-2ab+b^{2})=4ab$$\n\nSubtrahiert man die beiden Entwicklungen, fallen $a^{2}+b^{2}$ weg und der mittlere Term verdoppelt sich zu $4ab$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDirektes Ausmultiplizieren von $(a-b)(a-b)$.\n\nDas Minuszeichen beim mittleren Term ist der einzige Unterschied zwischen $(a-b)^{2}$ und $(a+b)^{2}$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$9^{2}=81,\\qquad 5^{2}=25$$\n\n$$(7+2)^{2}=81$$ und $(7-2)^{2}=25$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$$81-25=56$$\n\n$$56\\neq 48$$\n\nAlternativ $4ab=4\\cdot7\\cdot2=56$.\n\nDifferenz $81-25=56$, gleichwertig $4\\cdot7\\cdot2=56$, nicht $48$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$(a^{2}+2ab+b^{2})+(a^{2}-2ab+b^{2})=2a^{2}+2b^{2}$$\n\nAddiert man die beiden Entwicklungen, fallen die mittleren Terme weg und die Quadrate verdoppeln sich.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "$(a+b)^{2}=a^{2}+2ab+b^{2}$, $(a-b)^{2}=a^{2}-2ab+b^{2}$. Differenz $4ab$; Summe $2a^{2}+2b^{2}$. Probe: $9^{2}=81$, $5^{2}=25$, Differenz $56=4\\cdot7\\cdot2$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
@@ -580,51 +580,51 @@
       "An der Probe gilt $2mn=-24$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(m+n)^{2}=m^{2}+2mn+n^{2}$$\n\nalso $\\square=2mn$.\n\nDas Binomquadrat erzwingt, dass der mittlere Koeffizient genau $2$ ist, nicht $1$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$m+n=1,\\ 1^{2}=1$$\n\n$$16+2\\cdot4\\cdot(-3)+9=16-24+9=1$$\n\nSowohl die faktorisierte Form $(4-3)^{2}=1$ als auch die entwickelte Form $16-24+9=1$ stimmen überein.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$m^{2}+mn+n^{2}=(m+n)^{2}-mn$$\n\ngleich $(m+n)^{2}$ genau dann, wenn $mn=0$.\n\nUmstellen zeigt $m^{2}+mn+n^{2}=(m+n)^{2}-mn$, gleich dem Quadrat genau dann, wenn $mn=0$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$m^{2}+mn+n^{2}=16-12+9=13\\neq 4$$\n\nDie direkte Auswertung $16-12+9=13$ widerspricht dem behaupteten Wert $4$.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n$$2mn=2\\cdot4\\cdot(-3)=-24$$\n\n$$2\\cdot4\\cdot(-3)=-24$$ bestätigt den mittleren Term an der Probe.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\n$$(m+n)^{2}=m^{2}+2mn+n^{2}$$\n\nalso $\\square=2mn$.\n\nDas Binomquadrat erzwingt, dass der mittlere Koeffizient genau $2$ ist, nicht $1$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$m+n=1,\\ 1^{2}=1$$\n\n$$16+2\\cdot4\\cdot(-3)+9=16-24+9=1$$\n\nSowohl die faktorisierte Form $(4-3)^{2}=1$ als auch die entwickelte Form $16-24+9=1$ stimmen überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$m^{2}+mn+n^{2}=(m+n)^{2}-mn$$\n\ngleich $(m+n)^{2}$ genau dann, wenn $mn=0$.\n\nUmstellen zeigt $m^{2}+mn+n^{2}=(m+n)^{2}-mn$, gleich dem Quadrat genau dann, wenn $mn=0$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$$m^{2}+mn+n^{2}=16-12+9=13\\neq 4$$\n\nDie direkte Auswertung $16-12+9=13$ widerspricht dem behaupteten Wert $4$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$2mn=2\\cdot4\\cdot(-3)=-24$$\n\n$$2\\cdot4\\cdot(-3)=-24$$ bestätigt den mittleren Term an der Probe.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Der mittlere Term in $(m+n)^{2}$ ist $2mn$. Ersetzt man ihn durch $mn$, entsteht $m^{2}+mn+n^{2}=(m+n)^{2}-mn$, gleich dem Quadrat nur wenn $mn=0$. Probe $m=4$, $n=-3$: $(m+n)^{2}=1$, $2mn=-24$ und $m^{2}+mn+n^{2}=13$."
   },
   "MATH 2.12": {
     "title": "Quadrate dreier Terme mit weggelassenem Faktor zwei",
-    "context": "Es sei $a,b,c$ reelle Zahlen sein. Eine fehlerhafte Entwicklung behauptet $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+ab+ac+bc$ Eine Probe verwendet $a=1$, $b=1$, $c=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es seien $a,b,c$ reelle Zahlen. Eine fehlerhafte Entwicklung behauptet $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+ab+ac+bc$. Eine Probe verwendet $a=1$, $b=1$, $c=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die richtige Erweiterung ist $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$.",
-      "At $a=b=c=1$, das richtige Quadrat gleicht $9$.",
-      "At $a=b=c=1$ Die fehlerhafte rechte Seite ist gleich $6$.",
-      "Die fehlerhafte Erweiterung entspricht der richtigen für alle $a,b,c$.",
-      "If $ab=ac=bc=0$, an dem die nicht-klagenden, sondern auch die nicht-sich-seligen."
+      "Die richtige Entwicklung ist $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$.",
+      "Bei $a=b=c=1$ ist das richtige Quadrat gleich $9$.",
+      "Bei $a=b=c=1$ ist die fehlerhafte rechte Seite gleich $6$.",
+      "Die fehlerhafte Entwicklung stimmt für alle $a,b,c$ mit der richtigen überein.",
+      "Wenn $ab=ac=bc=0$, dann stimmen fehlerhafte und richtige Entwicklung überein."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nStandard Drei-Term-Quadrat-Erweiterung beinhaltet den Faktor $2$ auf jedem Cross-Produkt.\n\nJedes der drei Kreuzprodukte muss den Faktor $2$ Es handelt sich dabei um die sogenannten \"Herrschaftspaare mit\" (s. S.).\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$(1+1+1)^{2}=9$$ \n\n $$(1+1+1)^{2}=9$$ ist unmittelbar.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nFaulty RHS: $1+1+1+1+1+1=6$.\n\nFehlerhafte RHS summiert drei Quadrate und drei einzelne Produkte: $3+3=6$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nan der Sonde, $9\\neq 6$, so dass die Erweiterungen nicht für alle Trips identisch sind.\n\nDie Sonde trennt bereits die beiden Polynome $9\\neq 6$,Sinn,Sinn,Sinn,Sinn\n\nVor, nach wie vor-handen-------------------- now----------------------- Kollege---\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n** E. genügt.\n\nWenn jedes Kreuzprodukt verschwindet, reduzieren beide Formeln $a^{2}+b^{2}+c^{2}$.\n\noder mehre, sonderne, und\n\nJede enthaltene Identität wird auf zwei Seiten geprüft, vor der endgültigen Vergleich mit der Forderung gilt.\n\nDie Aussage ist richtig."
+      "**A.** → Richtig\n\nDie Standardentwicklung des Dreierquadrats trägt den Faktor $2$ an jedem Kreuzprodukt.\n\nJedes der drei Kreuzprodukte muss den Faktor $2$ tragen, der von den geordneten Paaren verschiedener Summanden kommt.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(1+1+1)^{2}=9$$\n\n$$(1+1+1)^{2}=9$$ ergibt sich unmittelbar.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nFehlerhafte rechte Seite: $1+1+1+1+1+1=6$.\n\nDie fehlerhafte rechte Seite summiert drei Quadrate und drei einfache Produkte: $3+3=6$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nAn der Probe gilt $9\\neq 6$, also sind die Entwicklungen nicht für alle Tripel identisch.\n\nDie Probe trennt die beiden Polynome bereits ($9\\neq 6$), sie sind also nicht als Funktionen identisch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nWenn jedes Kreuzprodukt verschwindet, reduzieren sich beide Formeln auf $a^{2}+b^{2}+c^{2}$.\n\nVerschwindende Kreuzprodukte machen beide Ausdrücke zur Summe der Quadrate.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Correct: $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$ Fehler fällt der Faktor $2$ Bei jedem cross term. Sie vereinbaren genau, wenn $ab+ac+bc=0$ (insbesondere wenn jedes Produkt $0$. Probe $a=b=c=1$: correct $9$, faulty $3+3=6$."
+    "solution_overview": "Richtig: $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc$. Die fehlerhafte Form lässt den Faktor $2$ bei jedem Kreuzterm weg. Sie stimmen genau dann überein, wenn $ab+ac+bc=0$ (insbesondere wenn jedes Produkt $0$ ist). Probe $a=b=c=1$: richtig $9$, fehlerhaft $3+3=6$."
   },
   "MATH 2.13": {
     "title": "Kubusentwicklung, bei der ungeradzahlige Kreuzterme bestehen bleiben",
-    "context": "Entwickle $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ Eine Probe verwendet $a=2$, $b=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Entwickle $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$. Eine Probe verwendet $a=2$, $b=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ für alle reellen $a,b$.",
-      "At $a=2$, $b=-1$, one has $(a+b)^{3}=1$.",
-      "an der Sonde, $3a^{2}b+3ab^{2}=-12$.",
-      "Der ungerade mittlere Block $3a^{2}b+3ab^{2}=3ab(a+b)$.",
-      "Weglassen des mittleren Blocks, $a^{3}+b^{3}=(a+b)^{3}$ Auch."
+      "$(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ gilt für alle reellen $a,b$.",
+      "Bei $a=2$, $b=-1$ gilt $(a+b)^{3}=1$.",
+      "An der Probe gilt $3a^{2}b+3ab^{2}=-12$.",
+      "Der ungeradzahlige mittlere Block erfüllt $3a^{2}b+3ab^{2}=3ab(a+b)$.",
+      "Lässt man den mittleren Block weg, so gilt an der Probe $a^{3}+b^{3}=(a+b)^{3}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nUse $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$.\n\nDie Vier-Term-C auswirkt sich auf die Standard-Binomialformel für $n=3$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$(2-1)^{3}=1^{3}=1$$ \n\n $$(2-1)^{3}=1$$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\n$$3a^{2}b+3ab^{2}=3\\cdot4\\cdot(-1)+3\\cdot2\\cdot1=-12+6=-6$$ \n\n $$-6\\neq -12$$ \n\nMiddle block $-12+6=-6$, not $-12$.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\n$$3a^{2}b+3ab^{2}=3ab(a+b)$$ \n\nFactor $3ab$ out of $3a^{2}b+3ab^{2}$ to obtain $3ab(a+b)$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$a^{3}+b^{3}=8-1=7\\neq 1=(a+b)^{3}$$ \n\nWeglassen der mittleren Vorgängerblätter $8-1=7$, die nicht der ausbreitet $1$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nVerwende $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$.\n\nDie viergliedrige Kubusentwicklung ist die Standard-Binomialformel für $n=3$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(2-1)^{3}=1^{3}=1$$\n\n$$(2-1)^{3}=1$$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$$3a^{2}b+3ab^{2}=3\\cdot4\\cdot(-1)+3\\cdot2\\cdot1=-12+6=-6$$\n\n$$-6\\neq -12$$\n\nDer mittlere Block ist $-12+6=-6$, nicht $-12$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$3a^{2}b+3ab^{2}=3ab(a+b)$$\n\nKlammert man $3ab$ aus $3a^{2}b+3ab^{2}$ aus, erhält man $3ab(a+b)$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$a^{3}+b^{3}=8-1=7\\neq 1=(a+b)^{3}$$\n\nOhne den mittleren Block bleibt $8-1=7$, was nicht dem Kubus $1$ entspricht.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Standard cube: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$, und $3a^{2}b+3ab^{2}=3ab(a+b)$ Probe $a=2$, $b=-1$: $(a+b)^{3}=1$, middle block $-6$ Omit an die Mittelblätter $a^{3}+b^{3}=7\\neq 1$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Standardkubus: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$, und $3a^{2}b+3ab^{2}=3ab(a+b)$. Probe $a=2$, $b=-1$: $(a+b)^{3}=1$, mittlerer Block $-6$. Ohne den mittleren Block bleibt $a^{3}+b^{3}=7\\neq 1$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
   "MATH 2.14": {
     "title": "Rückgewinnung von $x^{3}+y^{3}$ aus Summe und Produkt",
@@ -637,11 +637,11 @@
       "Die Formel $x^{3}+y^{3}=s^{3}-3sp$ liefert an der Probe den Wert $40$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nLeite $x^{3}+y^{3}=s(s^{2}-3p)=s^{3}-3sp$ aus der Faktorisierung ab.\n\nAus $x^{2}+y^{2}=s^{2}-2p$ folgt $x^{2}-xy+y^{2}=s^{2}-3p$; anschließende Multiplikation mit $s$ ergibt die Identität.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$125-3\\cdot5\\cdot6=125-90=35$$\n\n$$125-90=35$$ wertet $s^{3}-3sp$ an der Probe aus.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$s^{2}-2p=25-12=13$$\n\n$$25-12=13$$ liefert $x^{2}+y^{2}$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$x^{2}-xy+y^{2}=(x^{2}+y^{2})-p=13-6=7$$\n\n$$s\\cdot 7=35$$\n\nSomit gilt $x^{2}-xy+y^{2}=13-6=7$ und $s\\cdot7=35$ stimmt mit der Kubensumme überein.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDie Formel liefert $35$, nicht $40$.\n\nDieselbe Formel ergibt $35$ und widerspricht dem behaupteten Wert $40$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nLeite $x^{3}+y^{3}=s(s^{2}-3p)=s^{3}-3sp$ aus der Faktorisierung ab.\n\nAus $x^{2}+y^{2}=s^{2}-2p$ folgt $x^{2}-xy+y^{2}=s^{2}-3p$; anschließende Multiplikation mit $s$ ergibt die Identität.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$125-3\\cdot5\\cdot6=125-90=35$$\n\n$$125-90=35$$ wertet $s^{3}-3sp$ an der Probe aus.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$s^{2}-2p=25-12=13$$\n\n$$25-12=13$$ liefert $x^{2}+y^{2}$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$x^{2}-xy+y^{2}=(x^{2}+y^{2})-p=13-6=7$$\n\n$$s\\cdot 7=35$$\n\nSomit gilt $x^{2}-xy+y^{2}=13-6=7$ und $s\\cdot7=35$ stimmt mit der Kubensumme überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Formel liefert $35$, nicht $40$.\n\nDieselbe Formel ergibt $35$ und widerspricht dem behaupteten Wert $40$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$$x^{3}+y^{3}=(x+y)(x^{2}-xy+y^{2})=s((s^{2}-2p)-p)=s^{3}-3sp.$$\n\nProbe: $s^{3}-3sp=125-90=35$; $x^{2}+y^{2}=25-12=13$; $x^{2}-xy+y^{2}=13-6=7$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
@@ -656,32 +656,32 @@
       "$x^{4}-y^{4}=(x-y)^{4}$ für alle $x,y$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nZweimalige Anwendung der Differenz von Quadraten liefert die dreifaktorielle Form.\n\nWende die Differenz von Quadraten auf $x^{4}-y^{4}$ als Quadrat von $x^{2}$ an und faktoriere danach $x^{2}-y^{2}$ erneut.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$3^{4}-1^{4}=81-1=80$$\n\n$$81-1=80$$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$(3-1)(3+1)(9+1)=2\\cdot4\\cdot10=80$$\n\n$$2\\cdot4\\cdot10=80$$ stimmt mit der faktorisierten Auswertung überein.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$(6)^{4}-(2)^{4}=1296-16=1280=80\\cdot16$$\n\nDas Ausklammern von $k^{4}$ liefert $k^{4}(x^{4}-y^{4})=16\\cdot80=1280$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nAn der Probe gilt $(x-y)^{4}=16\\neq 80$.\n\nAn der Probe ist $(x-y)^{4}=16$, weit entfernt von $80$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nZweimalige Anwendung der Differenz von Quadraten liefert die dreifaktorielle Form.\n\nWende die Differenz von Quadraten auf $x^{4}-y^{4}$ als Quadrat von $x^{2}$ an und faktoriere danach $x^{2}-y^{2}$ erneut.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$3^{4}-1^{4}=81-1=80$$\n\n$$81-1=80$$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$(3-1)(3+1)(9+1)=2\\cdot4\\cdot10=80$$\n\n$$2\\cdot4\\cdot10=80$$ stimmt mit der faktorisierten Auswertung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$(6)^{4}-(2)^{4}=1296-16=1280=80\\cdot16$$\n\nDas Ausklammern von $k^{4}$ liefert $k^{4}(x^{4}-y^{4})=16\\cdot80=1280$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nAn der Probe gilt $(x-y)^{4}=16\\neq 80$.\n\nAn der Probe ist $(x-y)^{4}=16$, weit entfernt von $80$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "$$x^{4}-y^{4}=(x^{2})^{2}-(y^{2})^{2}=(x^{2}-y^{2})(x^{2}+y^{2})=(x-y)(x+y)(x^{2}+y^{2}).$$\n\nProbe: $81-1=80$. Skaliert: $k^{4}(x^{4}-y^{4})=80k^{4}$. Die falsche Identität $(x-y)^{4}$ entwickelt sich mit vielen Kreuztermen."
   },
   "MATH 2.16": {
-    "title": "Reziproke Quadrate aus Summe und Produkt",
-    "context": "Es sei $s=x+y$ und $p=xy$ mit $xy\\neq 0$. Dann\n\n $$\\frac{1}{x^{2}}+\\frac{1}{y^{2}}=\\frac{s^{2}-2p}{p^{2}}.$$ \n\nEine Sonde verwendet $x=2$, $y=4$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Kehrwertquadrate aus Summe und Produkt",
+    "context": "Es sei $s=x+y$ und $p=xy$ mit $xy\\neq 0$. Dann\n\n$$\\frac{1}{x^{2}}+\\frac{1}{y^{2}}=\\frac{s^{2}-2p}{p^{2}}.$$\n\nEine Probe verwendet $x=2$, $y=4$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{x^{2}+y^{2}}{x^{2}y^{2}}=\\dfrac{s^{2}-2p}{p^{2}}$.",
-      "At $x=2$, $y=4$, one has $s=6$, $p=8$, und $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{5}{16}$.",
-      "an der Sonde, $\\dfrac{s^{2}-2p}{p^{2}}=\\dfrac{20}{64}=\\dfrac{5}{16}$.",
-      "Also $\\dfrac{1}{x}+\\dfrac{1}{y}=\\dfrac{s}{p}=\\dfrac{3}{4}$ an der Sonde.",
-      "an der Sonde, $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{1}{4}$."
+      "$\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{x^{2}+y^{2}}{x^{2}y^{2}}=\\dfrac{s^{2}-2p}{p^{2}}$.",
+      "Bei $x=2$, $y=4$ gilt $s=6$, $p=8$ und $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{5}{16}$.",
+      "An der Probe gilt $\\dfrac{s^{2}-2p}{p^{2}}=\\dfrac{20}{64}=\\dfrac{5}{16}$.",
+      "Außerdem gilt an der Probe $\\dfrac{1}{x}+\\dfrac{1}{y}=\\dfrac{s}{p}=\\dfrac{3}{4}$.",
+      "An der Probe gilt $\\dfrac{1}{x^{2}}+\\dfrac{1}{y^{2}}=\\dfrac{1}{4}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nCombine over $p^{2}$ und ersetzen $x^{2}+y^{2}$ by $s^{2}-2p$.\n\nCommon denominator $x^{2}y^{2}=p^{2}$ verbundene Unternehmen $(x^{2}+y^{2})/p^{2}$.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\\frac{1}{4}+\\frac{1}{16}=\\frac{5}{16}$$ \n\nmit $s=6$, $p=8$.\n\nDirectly $\\frac{1}{4}+\\frac{1}{16}=\\frac{5}{16}$ mit $s=6$, $p=8$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$\\frac{36-16}{64}=\\frac{20}{64}=\\frac{5}{16}$$ \n\n $$\\frac{36-16}{64}=\\frac{5}{16}$$ g..\n\nDie aussage ist richtig.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$\\frac{1}{x}+\\frac{1}{y}=\\frac{s}{p}=\\frac{6}{8}=\\frac{3}{4}$$ \n\n $$\\frac{s}{p}=\\frac{6}{8}=\\frac{3}{4}$$ darstellt die Summe der wechselseitigen Ersten Kräfte.\n\nDie aussage ist richtig.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$\\frac{5}{16}\\neq\\frac{1}{4}=\\frac{4}{16}$$ \n\n $\\frac{5}{16}$ is strikt weniger als $\\frac{1}{4}=\\frac{4}{16}$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nBringe auf den gemeinsamen Nenner $p^{2}$ und ersetze $x^{2}+y^{2}$ durch $s^{2}-2p$.\n\nDer gemeinsame Nenner $x^{2}y^{2}=p^{2}$ wandelt die Summe der Kehrwertquadrate in $(x^{2}+y^{2})/p^{2}$ um; mit $x^{2}+y^{2}=s^{2}-2p$ folgt die behauptete Identität.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\\frac{1}{4}+\\frac{1}{16}=\\frac{5}{16}$$\n\nmit $s=6$, $p=8$.\n\nDirekt ergibt $\\frac{1}{4}+\\frac{1}{16}=\\frac{5}{16}$, und die Parameter der Probe sind $s=2+4=6$, $p=2\\cdot 4=8$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\\frac{36-16}{64}=\\frac{20}{64}=\\frac{5}{16}$$\n\nMit $s^{2}-2p=36-16=20$ und $p^{2}=64$ erhält man $\\frac{20}{64}=\\frac{5}{16}$, in Übereinstimmung mit der linken Seite.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$\\frac{1}{x}+\\frac{1}{y}=\\frac{s}{p}=\\frac{6}{8}=\\frac{3}{4}$$\n\n$$\\frac{s}{p}=\\frac{6}{8}=\\frac{3}{4}$$ liefert die Summe der Kehrwerte der ersten Potenzen an der Probe.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$\\frac{5}{16}\\neq\\frac{1}{4}=\\frac{4}{16}$$\n\n$\\frac{5}{16}$ ist strikt kleiner als $\\frac{1}{4}=\\frac{4}{16}$; die behauptete Gleichheit gilt nicht.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": " $$\\frac{1}{x^{2}}+\\frac{1}{y^{2}}=\\frac{x^{2}+y^{2}}{p^{2}}=\\frac{s^{2}-2p}{p^{2}}.$$ \n\nSonde: $s=6$, $p=8$, $s^{2}-2p=36-16=20$, $\\frac{20}{64}=\\frac{5}{16}$. Also $\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}$. Direct: $\\frac{1}{4}+\\frac{1}{16}=\\frac{5}{16}\\neq\\frac{1}{4}$."
+    "solution_overview": "$$\\frac{1}{x^{2}}+\\frac{1}{y^{2}}=\\frac{x^{2}+y^{2}}{p^{2}}=\\frac{s^{2}-2p}{p^{2}}.$$\n\nProbe: $s=6$, $p=8$, $s^{2}-2p=36-16=20$, $\\frac{20}{64}=\\frac{5}{16}$. Außerdem $\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}$. Direkt: $\\frac{1}{4}+\\frac{1}{16}=\\frac{5}{16}\\neq\\frac{1}{4}$."
   },
   "MATH 2.17": {
     "title": "Viergliedriger Ausdruck, gruppiert als Differenz von Quadraten",
@@ -694,11 +694,11 @@
       "An der Probe gilt $a^{2}+2ab+b^{2}-c^{2}=16$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$a^{2}+2ab+b^{2}=(a+b)^{2}$$\n\ndann Differenz von Quadraten mit $c^{2}$.\n\nVervollständige zuerst das Quadrat in $a,b$ und wende danach die Differenz von Quadraten gegen $c^{2}$ an.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$(3+1)^{2}-2^{2}=16-4=12$$\n\n$$16-4=12$$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$(4-2)(4+2)=2\\cdot6=12$$\n\nDie Faktoren $(4-2)(4+2)$ multiplizieren sich zu $12$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\n$$(a+b)^{2}-(a+b)^{2}=0$$\n\nDas Einsetzen von $c=a+b$ macht die beiden Quadrate identisch, sodass ihre Differenz $0$ ist.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nDer Wert ist $12$, nicht $16$ (das wäre das Quadrat vor dem Abziehen von $c^{2}$).\n\nDer Wert $16$ ist $(a+b)^{2}$ vor dem Abziehen von $c^{2}$; nach der Subtraktion erhält man $12$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$$a^{2}+2ab+b^{2}=(a+b)^{2}$$\n\ndann Differenz von Quadraten mit $c^{2}$.\n\nVervollständige zuerst das Quadrat in $a,b$ und wende danach die Differenz von Quadraten gegen $c^{2}$ an.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(3+1)^{2}-2^{2}=16-4=12$$\n\n$$16-4=12$$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$(4-2)(4+2)=2\\cdot6=12$$\n\nDie Faktoren $(4-2)(4+2)$ multiplizieren sich zu $12$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$(a+b)^{2}-(a+b)^{2}=0$$\n\nDas Einsetzen von $c=a+b$ macht die beiden Quadrate identisch, sodass ihre Differenz $0$ ist.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDer Wert ist $12$, nicht $16$ (das wäre das Quadrat vor dem Abziehen von $c^{2}$).\n\nDer Wert $16$ ist $(a+b)^{2}$ vor dem Abziehen von $c^{2}$; nach der Subtraktion erhält man $12$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Gruppiere als Quadrat minus $c^{2}$, dann Differenz von Quadraten. Probe: $(3+1)^{2}-4=16-4=12$; Faktoren $(4-2)(4+2)=12$. Wenn $c=a+b$, verschwindet der Ausdruck.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
@@ -713,11 +713,11 @@
       "An der Probe gilt $G=16$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nEntwickle jedes Quadrat und teile durch $2$, um $x^{2}+y^{2}+z^{2}-xy-yz-zx$ zu erhalten.\n\nDas Ausmultiplizieren jedes quadrierten Abstands und das Teilen durch $2$ hebt den Faktor $2$ bei jedem Kreuzterm auf und lässt $x^{2}+y^{2}+z^{2}-xy-yz-zx$ übrig.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\n$$(5-1)^{2}+(1-3)^{2}+(3-5)^{2}=16+4+4=24$$\n\n$$G=\\frac{24}{2}=12$$\n\n$$12\\neq 13$$\n\nDie Hälfte von $24$ ist $12$, nicht $13$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\n$$(5-1)^{2}=16$$\n\n$$(1-3)^{2}=4$$\n\n$$(3-5)^{2}=4$$\n\n$$16+4+4=24$$\n\nDie drei quadrierten Abstände sind $16$, $4$ und $4$ und summieren sich zu $24$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nJeder Abstand verschwindet, wenn $x=y=z$, also $G=0$.\n\nIdentische Variablen erzwingen jeden Abstand zu $0$, daher $G=0$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$G=12\\neq 16$$\n\nDer gewonnene Wert $G=12$ verwirft das behauptete $16$.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nEntwickle jedes Quadrat und teile durch $2$, um $x^{2}+y^{2}+z^{2}-xy-yz-zx$ zu erhalten.\n\nDas Ausmultiplizieren jedes quadrierten Abstands und das Teilen durch $2$ hebt den Faktor $2$ bei jedem Kreuzterm auf und lässt $x^{2}+y^{2}+z^{2}-xy-yz-zx$ übrig.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$$(5-1)^{2}+(1-3)^{2}+(3-5)^{2}=16+4+4=24$$\n\n$$G=\\frac{24}{2}=12$$\n\n$$12\\neq 13$$\n\nDie Hälfte von $24$ ist $12$, nicht $13$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$$(5-1)^{2}=16$$\n\n$$(1-3)^{2}=4$$\n\n$$(3-5)^{2}=4$$\n\n$$16+4+4=24$$\n\nDie drei quadrierten Abstände sind $16$, $4$ und $4$ und summieren sich zu $24$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nJeder Abstand verschwindet, wenn $x=y=z$, also $G=0$.\n\nIdentische Variablen erzwingen jeden Abstand zu $0$, daher $G=0$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$G=12\\neq 16$$\n\nDer gewonnene Wert $G=12$ verwirft das behauptete $16$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Das Ausmultiplizieren der Definition liefert $G=x^{2}+y^{2}+z^{2}-xy-yz-zx$. Probe $x=5$, $y=1$, $z=3$: quadrierte Abstände $16+4+4=24$, also $G=12$. Wenn $x=y=z$, verschwindet jeder Abstand und $G=0$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
@@ -727,37 +727,37 @@
     "statements": [
       "Bei $x=1$, $y=2$, $z=3$ gilt $P=60$.",
       "Wenn $z=0$, dann gilt $P=(x+y)yx=(x+y)xy$.",
-      "Bei der Probe gilt $s=6$ und $P=s(xy+yz+zx)-xyz$.",
+      "An der Probe gilt $s=6$ und $P=s(xy+yz+zx)-xyz$.",
       "Die Identität $P=s(xy+yz+zx)-xyz$ gilt für alle reellen $x,y,z$.",
-      "Bei der Probe gilt $P=72$."
+      "An der Probe gilt $P=72$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(1+2)(2+3)(3+1)=3\\cdot5\\cdot4=60$$ \n\n $$3\\cdot5\\cdot4=60$$ wertet das zyklische Produkt an der Sonde aus.\n\nJede relevante Identität wird auf zwei Seiten geprüft, bevor der entsprechende Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nIf $z=0$ then $P=(x+y)(y)(x)=xy(x+y)$.\n\nSetting $z=0$ Der dritte Faktor $x$ und die zweite $y$, leaving $xy(x+y)$.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\nAn der Sonde $s=6$, $xy+yz+zx=11$, $xyz=6$:\n\n $$s(xy+yz+zx)-xyz=66-6=60=P$$ \n\nmit $s=6$, pairwise sum $11$, und $xyz=6$, die Identität kehrt zurück $66-6=60=P$.\n\nDie Aussage ist richtig.",
-      "**D.** → Richtig\n\nD. ** Richtig\n\nDie algebraische Identität gilt im Allgemeinen, indem sie beide Seiten erweitert (oder indem man jeden Faktor als $s$ abzüglich der Gegenvariablen.\n\nErweitern und $(s-z)(s-x)(s-y)$ und zur Vereinfachung der Erträge $s(xy+yz+zx)-xyz$ Im.\n\nE.stern.E.E.E.A. E.E.E eigenes E.E.S)\n\nVerfolge jeden der Unstimmigkeiten auf der eigenenswertesten werden, tauschen Sie die wiedergewonnen, die wiedererlang in der Live-Aussage.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$P=60\\neq 72$$ \n\nDas Produkt ist $60$, not $72$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\n$$(1+2)(2+3)(3+1)=3\\cdot 5\\cdot 4=60$$\n\n$$3\\cdot 5\\cdot 4=60$$ wertet das zyklische Produkt an der Probe aus.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nWenn $z=0$, dann gilt $P=(x+y)(y)(x)=xy(x+y)$.\n\nDas Setzen von $z=0$ verkürzt den dritten Faktor auf $x$ und den zweiten auf $y$, sodass $xy(x+y)$ übrig bleibt; das ist dasselbe wie $(x+y)yx=(x+y)xy$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nAn der Probe gilt $s=6$, $xy+yz+zx=11$, $xyz=6$:\n\n$$s(xy+yz+zx)-xyz=66-6=60=P$$\n\nMit $s=6$, Paarsumme $11$ und $xyz=6$ liefert die Identität $66-6=60=P$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDie algebraische Identität gilt allgemein durch Ausmultiplizieren beider Seiten (oder indem man jeden Faktor als $s$ minus die gegenüberliegende Variable schreibt).\n\nDas Ausmultiplizieren von $(s-z)(s-x)(s-y)$ und Vereinfachen ergibt allgemein $s(xy+yz+zx)-xyz$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$P=60\\neq 72$$\n\nDas Produkt ist $60$, nicht $72$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Sonde: $x+y=3$, $y+z=5$, $z+x=4$, so $P=60$. Identity: $(x+y)(y+z)(z+x)=s(xy+yz+zx)-xyz$. Check: $xy+yz+zx=2+6+3=11$, $s\\cdot11-xyz=66-6=60$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Probe: $x+y=3$, $y+z=5$, $z+x=4$, also $P=60$. Identität: $(x+y)(y+z)(z+x)=s(xy+yz+zx)-xyz$. Prüfung: $xy+yz+zx=2+6+3=11$, $s\\cdot 11-xyz=66-6=60$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
   "MATH 2.20": {
     "title": "Gemischte Vorzeichen in einem Dreierbuchstaben-Quadrat",
-    "context": "Entwickle $(a-b+c)^{2}$ Eine Probe verwendet $a=5$, $b=2$, $c=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Entwickle $(a-b+c)^{2}$. Eine Probe verwendet $a=5$, $b=2$, $c=1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      " $(a-b+c)^{2}=a^{2}+b^{2}+c^{2}-2ab+2ac-2bc$.",
-      "At $a=5$, $b=2$, $c=1$, one has $(a-b+c)^{2}=16$.",
-      "an der Sonde, $-2ab+2ac-2bc=-10$.",
+      "$(a-b+c)^{2}=a^{2}+b^{2}+c^{2}-2ab+2ac-2bc$.",
+      "Bei $a=5$, $b=2$, $c=1$ gilt $(a-b+c)^{2}=16$.",
+      "An der Probe gilt $-2ab+2ac-2bc=-10$.",
       "Die Gruppierung als $((a+c)-b)^{2}=(a+c)^{2}-2(a+c)b+b^{2}$ liefert dieselbe Entwicklung.",
-      "an der Sonde, $(a-b+c)^{2}=18$."
+      "An der Probe gilt $(a-b+c)^{2}=18$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nExpand $(a+(-b)+c)^{2}$ Sammeln aller sechs Kreuzprodukte mit Zeichen.\n\nZeichen: die $ab$ und $bc$ Cross Terms nehmenen Minus von der $-b$ summand, while $ac$ Bleibt positiv.\n\n„Abgestimmte Identität wurde nachgeprüft, seit dem Abschluss „Abzuwarten.\n\nSie können jedes Zwischenblatt auf der eigenen Displayzeile verfolgen, die ermittelten Parameter noch einmal genau durchsetzen und erst dann den genauen Wert mit der von der Live-Anweisung angegebenen Zahl vergleichen.\n\ntreue Worte!\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$5-2+1=4,\\qquad 4^{2}=16$$ \n\n $$5-2+1=4$$ squares to $16$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\n$$-2ab=-20$$ \n\n $$2ac=10$$ \n\n $$-2bc=-4$$ \n\n $$-20+10-4=-14$$ \n\n $$-14\\neq -10$$ \n\nCross block $-20+10-4=-14$, not $-10$.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\n$$(a+c)^{2}-2(a+c)b+b^{2}=a^{2}+2ac+c^{2}-2ab-2cb+b^{2}$$ \n\nDas ist die signierte Erweiterung.\n\nErweitert $((a+c)-b)^{2}$ reproduces $a^{2}+c^{2}+b^{2}+2ac-2ab-2bc$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$16\\neq 18$$ \n\nDas Quadrat ist $16$, not $18$.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nEntwickle $(a+(-b)+c)^{2}$ und sammle alle sechs Kreuzprodukte mit Vorzeichen.\n\nVorzeichen: die Kreuzterme $ab$ und $bc$ erhalten Minuszeichen durch den Summanden $-b$, während $ac$ positiv bleibt.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$5-2+1=4,\\qquad 4^{2}=16$$\n\n$$5-2+1=4$$ quadriert zu $16$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$$-2ab=-20$$\n\n$$2ac=10$$\n\n$$-2bc=-4$$\n\n$$-20+10-4=-14$$\n\n$$-14\\neq -10$$\n\nDer Kreuzblock ergibt $-20+10-4=-14$, nicht $-10$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$(a+c)^{2}-2(a+c)b+b^{2}=a^{2}+2ac+c^{2}-2ab-2cb+b^{2}$$\n\nstimmt mit der vorzeichenbehafteten Entwicklung überein.\n\nDas Ausmultiplizieren von $((a+c)-b)^{2}$ reproduziert $a^{2}+c^{2}+b^{2}+2ac-2ab-2bc$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$16\\neq 18$$\n\nDas Quadrat ist $16$, nicht $18$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Treat as $(a+c-b)^{2}=a^{2}+c^{2}+b^{2}+2ac-2ab-2cb$ Sonde: $a-b+c=4$, square $16$. Cross block $-2ab+2ac-2bc=-20+10-4=-14$. Squares $25+4+1=30$; $30-14=16$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Schreibe als $(a+c-b)^{2}=a^{2}+c^{2}+b^{2}+2ac-2ab-2cb$. Probe: $a-b+c=4$, Quadrat $16$. Kreuzblock $-2ab+2ac-2bc=-20+10-4=-14$. Quadrate $25+4+1=30$; $30-14=16$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
   },
   "MATH 11.01": {
     "title": "Nominale versus stetige Verzinsung bei einer parametrisierten Depotanlage",
@@ -1949,7 +1949,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nRequire $x+1\\ge 0$, i.e. $x\\ge -1$.\n\n$$\n-(x+1)\\le 2x-5\\le x+1\n$$\n\n$$\n-x-1\\le 2x-5\\Rightarrow x\\ge\\frac{4}{3}\n$$\n\n$$\n2x-5\\le x+1\\Rightarrow x\\le 6\n$$\n\nSchnittpunkt mit$x\\ge -1$ is $[\\frac{4}{3},6]$.\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\n$$\n|0-5|=5,\\qquad 0+1=1,\\qquad 5\\nless 1\n$$\n\nAlso $0<\\dfrac{4}{3}$außerhalb des wiederhergestellten Intervalls.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\n$$\n|0-5|=5,\\qquad 0+1=1,\\qquad 5\\nless 1\n$$\n\nAußerdem $0<\\dfrac{4}{3}$außerhalb des wiederhergestellten Intervalls.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen. Dieser Buchstabe braucht nur die oben gezeigte zusätzliche Rechnung.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{x-5}{x+2}>0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=5\n$$\n\n$$\nx=-2\\ \\mathrm{(pole)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-\\infty,-2)\\cup(5,\\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nAbs-Lösung:$[\\frac{4}{3},6]$. Rational: $(-\\infty,-2)\\cup(5,\\infty)$.\n\nIntersection: $(5,6]$.\n\nDieses Intervall enthält unendlich viele Punkte (z.B.$5.5$und$6$).\n\nDie Aussage ist richtig.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nNeed $x\\ge -1$.\n\n$$\n-(x+1)\\le 2x-3\\le x+1\n$$\n\nRight half: $2x-3\\le x+1\\Rightarrow x\\le 4$.\n\nLeft half: $-x-1\\le 2x-3\\Rightarrow 2\\le 3x\\Rightarrow x\\ge\\dfrac{2}{3}$.\n\nSolution $[\\frac{2}{3},4]$, whose upper endpoint is $4$, not $6$.\n\nDie Aussage ist falsch.\n\nDie Behauptung wird gegen genau diese rekonstruierte Größe ohne frühes Runden geprüft, und die Überblickswerte werden wiederverwendet, ohne das gemeinsame Modell neu aufzubauen.\n\nDie Aussage ist falsch."
@@ -2541,7 +2541,7 @@
       "**B.** → Richtig\n\nFertigungsverhältnis:\n\n$$\n\\dfrac{27}{12}=\\dfrac{9}{4}=\\left(\\dfrac{27}{8}\\right)^{n_{V}}\n$$\n\nMit $n_{V}=\\dfrac{2}{3}$:\n\n$$\n\\left(\\dfrac{27}{8}\\right)^{2/3}=\\dfrac{9}{4}\n$$\n\nstimmt überein. Dann liefert $12=k_{V}\\cdot 8^{2/3}=k_{V}\\cdot 4$ den Wert $k_{V}=3$, also $V(q)=3q^{2/3}$.\n\nKubikwurzel und dann Quadrat für die erste Fertigungszeile:\n\n$$\n8^{1/3}=2,\\qquad 8^{2/3}=4,\\qquad 3\\cdot 4=12\n$$\n\nund $27^{2/3}=9$, $3\\cdot 9=27$, passend zu beiden Fertigungsprotokollen.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nMit $U(q)=\\dfrac{600}{q}$:\n\n$$\nU(10)=\\dfrac{600}{10}=60\n$$\n\nDie Gemeinkostenverteilung beträgt $60$ Euro je Einheit.\n\nAus $U(q)=600/q$:\n\n$$\nU(10)=60\n$$\n\nAuch $U(5)=120$ und $U(15)=40$ interpolieren um diesen mittelgroßen Auftrag, konsistent mit einem reziproken Gesetz.\n\nGegenprobe durch Skalierung von der ersten Zeile: $U(10)=U(5)\\cdot\\dfrac{5}{10}=120\\cdot\\dfrac{1}{2}=60$, weil $n_{U}=-1$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nMit $V(q)=3q^{2/3}$ aus dem Überblick:\n\n$$\n64^{2/3}=(4^{3})^{2/3}=4^{2}=16\n$$\n\n$$\nV(64)=3\\cdot 16=48\n$$\n\nDie behaupteten $36$ sind nicht $48$. (Mit $64^{1/2}=8$ und Fehlern der Form $3\\cdot 8\\cdot\\dfrac{3}{2}$ landet man nahe bei $36$, aber die korrekte Zweidrittel-Potenz ist $16$.)\n\nPotenzen von $64$:\n\n$$\n64=4^{3}=8^{2}=2^{6}\n$$\n\n$$\n64^{2/3}=(2^{6})^{2/3}=2^{4}=16\n$$\n\n$$\nV(64)=3\\cdot 16=48\\neq 36\n$$\n\nDie Behauptung scheitert um $12$ Stunden.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nFür jedes $q>0$ sind Zähler $600$ und Nenner $q$ positiv, also\n\n$$\nU(q)=\\dfrac{600}{q}>0\n$$\n\nDie Verteilung fällt gegen $0$ für $q\\to\\infty$, wird auf $q>0$ aber niemals negativ oder null.\n\nAngenommen zum Widerspruch $U(q_{0})\\le 0$ für ein $q_{0}>0$. Dann $600/q_{0}\\le 0$, was $600\\le 0$ erzwingt — unmöglich. Also verlässt $U$ auf dem angegebenen Definitionsbereich nie die positiven Reellen.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nFür jedes $q>0$ sind Zähler $600$ und Nenner $q$ positiv, also\n\n$$\nU(q)=\\dfrac{600}{q}>0\n$$\n\nDie Verteilung fällt gegen $0$ für $q\\to\\infty$, wird auf $q>0$ aber niemals negativ oder null.\n\nAngenommen zum Widerspruch $U(q_{0})\\le 0$ für ein $q_{0}>0$. Dann $600/q_{0}\\le 0$, was $600\\le 0$ erzwingt — unmöglich. Außerdem verlässt $U$ auf dem angegebenen Definitionsbereich nie die positiven Reellen.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Gemeinkostenzeilen liefern $\\dfrac{1}{3}=3^{n_{U}}$, also $n_{U}=-1$ und $k_{U}=600$: $U(q)=\\dfrac{600}{q}$. Fertigungszeilen liefern $\\dfrac{9}{4}=\\left(\\dfrac{27}{8}\\right)^{n_{V}}$, also $n_{V}=\\dfrac{2}{3}$ und $k_{V}=3$: $V(q)=3q^{2/3}$. Dann gilt $U(10)=60$ und $V(64)=48$ (nicht $36$), mit $U(q)>0$ für alle $q>0$."
   },
@@ -2575,8 +2575,8 @@
       "Bei $n=3$ lesen die Indizes $F(3)=18$ und $G(3)=24$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nFür $F$:\n\n$$\n\\dfrac{32}{8}=4=\\left(\\dfrac{4}{2}\\right)^{p}=2^{p}\\qquad\\Rightarrow\\qquad p=2\n$$\n\n$$\n8=k_{F}\\cdot 2^{2}=4k_{F}\\qquad\\Rightarrow\\qquad k_{F}=2\n$$\n\nAlso $F(n)=2n^{2}$.\n\nBeide Kalibrierzeilen unter $F(n)=2n^{2}$ prüfen:\n\n$$\nF(2)=2\\cdot 4=8,\\qquad F(4)=2\\cdot 16=32\n$$\n\nBeide protokollierten Indexpunkte werden reproduziert.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nFür $G$:\n\n$$\n\\dfrac{64}{8}=8=2^{q}\\qquad\\Rightarrow\\qquad q=3\n$$\n\n$$\n8=k_{G}\\cdot 2^{3}=8k_{G}\\qquad\\Rightarrow\\qquad k_{G}=1\n$$\n\nAlso $G(n)=n^{3}$.\n\nBeide $G$-Zeilen unter $G(n)=n^{3}$ prüfen:\n\n$$\nG(2)=8,\\qquad G(4)=64\n$$\n\nBeide protokollierten kubischen Ablesungen stimmen.\n\nDer Koeffizient $k_{G}=1$ bedeutet, dass der kubische Index ein unskaliertes Kubus der Maschinenanzahl ist, festgelegt durch die beiden protokollierten Punkte.\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\nFür $F$:\n\n$$\n\\dfrac{32}{8}=4=\\left(\\dfrac{4}{2}\\right)^{p}=2^{p}\\qquad\\Rightarrow\\qquad p=2\n$$\n\n$$\n8=k_{F}\\cdot 2^{2}=4k_{F}\\qquad\\Rightarrow\\qquad k_{F}=2\n$$\n\nAußerdem $F(n)=2n^{2}$.\n\nBeide Kalibrierzeilen unter $F(n)=2n^{2}$ prüfen:\n\n$$\nF(2)=2\\cdot 4=8,\\qquad F(4)=2\\cdot 16=32\n$$\n\nBeide protokollierten Indexpunkte werden reproduziert.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nFür $G$:\n\n$$\n\\dfrac{64}{8}=8=2^{q}\\qquad\\Rightarrow\\qquad q=3\n$$\n\n$$\n8=k_{G}\\cdot 2^{3}=8k_{G}\\qquad\\Rightarrow\\qquad k_{G}=1\n$$\n\nAußerdem $G(n)=n^{3}$.\n\nBeide $G$-Zeilen unter $G(n)=n^{3}$ prüfen:\n\n$$\nG(2)=8,\\qquad G(4)=64\n$$\n\nBeide protokollierten kubischen Ablesungen stimmen.\n\nDer Koeffizient $k_{G}=1$ bedeutet, dass der kubische Index ein unskaliertes Kubus der Maschinenanzahl ist, festgelegt durch die beiden protokollierten Punkte.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nDer Überblick faktorisiert die Differenz:\n\n$$\nG(n)-F(n)=n^{3}-2n^{2}=n^{2}(n-2)\n$$\n\nFür jedes $n>0$ ist der Faktor $n^{2}$ positiv, sodass das Vorzeichen von $G-F$ dem Vorzeichen von $n-2$ entspricht. Sobald $n>2$, gilt $G(n)>F(n)$.\n\nAn einem Stichprobenpunkt $n=3>2$:\n\n$$\nG(3)-F(3)=27-18=9=3^{2}(3-2)>0\n$$\n\nund die faktorisierte Identität dehnt die Ungleichung auf die gesamte Halbgerade $n>2$ aus.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nDas Verhältnis vereinfacht sich zu\n\n$$\n\\dfrac{G(n)}{F(n)}=\\dfrac{n^{3}}{2n^{2}}=\\dfrac{n}{2}\n$$\n\nFür $n\\to\\infty$ gilt $\\dfrac{n}{2}\\to\\infty$, nicht gegen $1$. Schon bei $n=20$ beträgt das Verhältnis $10$.\n\nDamit das Verhältnis gegen $1$ strebt, müssten $G$ und $F$ dieselbe führende Wachstumsrate teilen. Hier überholt der Kubus das Quadrat:\n\n$$\n\\lim_{n\\to\\infty}\\dfrac{n}{2}=\\infty\\neq 1\n$$\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nSetze $n=3$ in die rekonstruierten Modelle ein:\n\n$$\nF(3)=2\\cdot 9=18,\\qquad G(3)=27\n$$\n\nDie quadratische Ablesung stimmt, aber der kubische Index ist $27$, nicht die behaupteten $24$.\n\nDirekte Auswertung:\n\n$$\nF(3)=2\\cdot 3^{2}=18\n$$\n\n$$\nG(3)=3^{3}=27\\neq 24\n$$\n\nDie falsche kubische Ablesung $24$ ist $3^{3}-3$, ein Rechenfehler um drei.\n\nDie Aussage ist falsch."
@@ -2597,7 +2597,7 @@
       "**A.** → Richtig\n\nDer Exponent $\\dfrac{1}{2}$ ist eine Quadratwurzel, und\n\n$$\nL(0)=0^{1/2}=0\n$$\n\nweil $0^{2}=0$. Die Transformation liefert $0$ bei einer rohen Ablesung von null. (Der Definitionsbereich von $L$ enthält $0$, im Gegensatz zur Transformation $N$ mit negativem Exponenten.)\n\nÄquivalent $L(x)=\\sqrt{x}$ und die Identität $\\sqrt{0}=0$ ist die eindeutige nichtnegative Zahl, deren Quadrat $0$ ist. Kein anderer reeller Kandidat erfüllt $y^{2}=0$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDer Exponent $\\dfrac{1}{3}$ ist eine ungerade Wurzel, daher sind negative Eingaben erlaubt. Prüfung durch Kubieren:\n\n$$\n(-3)^{3}=-27\n$$\n\n$$\nM(-27)=(-27)^{1/3}=-3\n$$\n\nDie Kubikwurzel von $-27$ ist $-3$.\n\nUngerade Wurzeln erhalten das Vorzeichen. Allgemein $(-a)^{1/3}=-a^{1/3}$ für $a>0$, also\n\n$$\n(-27)^{1/3}=-27^{1/3}=-3\n$$\n\nweil $3^{3}=27$.\n\nDirekt: die eindeutige reelle Kubikwurzel von $-27$ ist die eindeutige reelle $y$ mit $y^{3}=-27$, und $y=-3$ ist diese Lösung.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nEin negativer Exponent setzt die Wurzel in den Nenner:\n\n$$\nN(9)=9^{-1/2}=\\dfrac{1}{\\sqrt{9}}=\\dfrac{1}{3}\n$$\n\nDer behauptete Wert stimmt. (Weglassen des Minus im Exponenten würde fälschlich $\\sqrt{9}=3$ liefern.)\n\nDie Potenz umschreiben:\n\n$$\n9^{-1/2}=(3^{2})^{-1/2}=3^{-1}=\\dfrac{1}{3}\n$$\n\nDerselbe Wert folgt aus $N(x)=1/\\sqrt{x}$ bei $x=9$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nEine gerade Wurzel verweigert eine negative Rohablesung. Keine reelle Zahl quadriert zu $-9$:\n\n$$\nL(-9)=\\sqrt{-9}\n$$\n\nist nicht reell. Der Definitionsbereich von $L$ ist $x\\ge 0$.\n\nAngenommen zum Widerspruch, eine reelle $y$ erfülle $y^{2}=-9$. Dann $y^{2}<0$, was für reelle $y$ unmöglich ist. Also liegt $L(-9)$ außerhalb des reellen Definitionsbereichs der geraden Wurzeltransformation.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nEine gerade Wurzel verweigert eine negative Rohablesung. Keine reelle Zahl quadriert zu $-9$:\n\n$$\nL(-9)=\\sqrt{-9}\n$$\n\nist nicht reell. Der Definitionsbereich von $L$ ist $x\\ge 0$.\n\nAngenommen zum Widerspruch, eine reelle $y$ erfülle $y^{2}=-9$. Dann $y^{2}<0$, was für reelle $y$ unmöglich ist. Außerdem liegt $L(-9)$ außerhalb des reellen Definitionsbereichs der geraden Wurzeltransformation.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nZuerst $N$, dann $L$:\n\n$$\nN(4)=4^{-1/2}=\\dfrac{1}{2}\n$$\n\n$$\n(L\\circ N)(4)=L\\left(\\dfrac{1}{2}\\right)=\\sqrt{\\dfrac{1}{2}}=\\dfrac{\\sqrt{2}}{2}\n$$\n\nDie behaupteten $\\dfrac{1}{2}$ sind $N(4)$ selbst, vor der äußeren Quadratwurzel. Da $\\dfrac{\\sqrt{2}}{2}\\neq\\dfrac{1}{2}$, scheitert die Kompositionsbehauptung.\n\nNumerisch $\\sqrt{1/2}\\approx 0{,}707$, während $\\dfrac{1}{2}=0{,}5$. Die beiden Werte stimmen nicht überein, also ist die Komposition nicht $\\dfrac{1}{2}$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Die drei Transformationen sind $L(x)=x^{1/2}$ (Definitionsbereich $x\\ge 0$), $M(x)=x^{1/3}$ (alle reellen $x$) und $N(x)=x^{-1/2}=\\dfrac{1}{\\sqrt{x}}$ (Definitionsbereich $x>0$). Direkte Werte umfassen $L(0)=0$, $M(-27)=-3$ und $N(9)=\\dfrac{1}{3}$. Gerade Wurzeln verweigern Negative, daher ist $L(-9)$ nicht reell. Die Komposition $(L\\circ N)(4)=\\sqrt{1/2}=\\dfrac{\\sqrt{2}}{2}$, nicht $\\dfrac{1}{2}$."
