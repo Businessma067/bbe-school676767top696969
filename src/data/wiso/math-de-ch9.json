@@ -1483,7 +1483,7 @@
   },
   "MATH 9.79": {
     "title": "Rekonstruktion aus doppelter und einfacher Nullstelle (Serie 2)",
-    "context": "Stufe 4/5, Menge 2. Eine monische kubische $p$ hat eine doppelte Nullstellen bei $x=2$ und eine einfache Nullstellen bei $x=-1$. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Stufe 4/5, Menge 2. Eine monische kubische $p$ hat eine doppelte Nullstellen bei $x=2$ und eine einfache Nullstellen bei $x=-1$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$p(x)=(x-2)^2(x+1)$.",
       "$p'(2)=0$.",
@@ -2395,9 +2395,9 @@
   },
   "MATH 9.E12": {
     "title": "Kubische Proben mit drei sichtbaren Faktoren",
-    "context": "Laborwerte eines unbekannten Polynoms erscheinen in Abnahmetabelleelevator (EinheitsCollection). Es werden keine geschlossenen Formen und keine Differenzspalten geliefert. Recover Grad STORE, Zuständigkeitsfaktoren und die nächste Probe aus Überschüssen allein zeitlich zuweilen. Be Erlangung jeder Aussage. Markieren Sie Wahr oder FALELB.",
+    "context": "Laborwerte eines unbekannten Polynoms erscheinen in einer Tabelle (Einheitsabstand). Es werden keine geschlossene Form und keine Differenzspalten geliefert. Bestimme Grad, Faktoren und die nächste Probe allein aus den Rohwerten.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die zweiten Differenzen sind konstant $2$, daher passt eine Quadratik mit Leitkoeffizient $1$ zu jeder aufgeführten Spalte.",
+      "Die zweiten Differenzen sind konstant gleich $2$, daher passt eine Quadratik mit Leitkoeffizient $1$ zu jeder aufgeführten Spalte.",
       "Der Faktor $x+1$ teilt das unbekannte Polynom.",
       "Der Faktor $x-2$ teilt das unbekannte Polynom.",
       "Die ersten Differenzen sind nicht konstant, daher können die Stichproben nicht von einem linearen Polynom stammen.",
