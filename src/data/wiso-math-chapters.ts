@@ -151,7 +151,14 @@ async function loadChapterOverlay(num: number): Promise<Record<string, DeOverlay
   }
   try {
     const mod = await load();
-    const rows = (mod.default ?? {}) as Record<string, DeOverlay>;
+    const rows = { ...((mod.default ?? {}) as Record<string, DeOverlay>) };
+    try {
+      const hard = await import("./wiso/math-de-demo-hard.json");
+      const hardRows = (hard.default ?? {}) as Record<string, DeOverlay>;
+      Object.assign(rows, hardRows);
+    } catch {
+      // optional hard-demo DE file
+    }
     overlayCache.set(num, rows);
     return rows;
   } catch {

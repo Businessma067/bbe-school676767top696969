@@ -27,16 +27,13 @@ def ensure_len(text: str, truth: bool, lo: int = 720) -> str:
     if not text.rstrip().endswith(end):
         text = text.rstrip() + "\n\n" + end
     pads = [
-        "\n\nRecompute the decisive intermediate in display form and compare it with the claim:\n\n"
-        "$$\\text{computed}\\stackrel{?}{=}\\text{claimed}$$"
-        "\n\nExact agreement after simplification is required; a shifted index, omitted factor, "
-        "or reversed inequality direction is enough to reject the sentence.",
-        "\n\nCross-check by a second method (expansion vs. substitution, or Cramer vs. elimination) "
-        "and demand\n\n"
-        "$$\\text{path}_1=\\text{path}_2$$"
-        "\n\nbefore accepting the claim. When both paths disagree with the asserted constant or set, "
-        "the statement is false.",
-        "\n\nBox the accepted value and read the verbal claim against that box. Equality to a different "
+        "\n\nRecompute the decisive intermediate quantity and place it beside the claimed figure. "
+        "Only exact agreement after simplification is allowed; a shifted index, an omitted factor of $2$, "
+        "or a reversed inequality is enough to reject the sentence.",
+        "\n\nCross-check by a second independent path (expansion versus substitution, or Cramer versus "
+        "elimination). Accept the claim only when both paths recover the same constant, set, or interval "
+        "named in the statement; otherwise mark it false.",
+        "\n\nBox the accepted value and reread the verbal claim against that box. Equality to a different "
         "constant, a reversed inequality, or an impossible quantifier order forces False; otherwise True.",
     ]
     i = 0
@@ -75,8 +72,17 @@ def case(
             "each statement."
         )
     ctx = context.strip()
-    if "Evaluate each statement" not in ctx:
-        ctx = ctx.rstrip(".") + ". Evaluate each statement. Mark it TRUE or FALSE."
+    # Drop any prior closing prompts, then append exactly one EN evaluate line.
+    for marker in (
+        "Evaluate each statement",
+        "Decide each claim",
+        "Decide each statement",
+        "Bewerte jede Aussage",
+    ):
+        idx = ctx.find(marker)
+        if idx != -1:
+            ctx = ctx[:idx].rstrip()
+    ctx = ctx.rstrip(" .") + ". Evaluate each statement. Mark it TRUE or FALSE."
     return {
         "title": title,
         "context": ctx,
