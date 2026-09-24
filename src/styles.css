@@ -947,13 +947,13 @@ body.flashcard-swiping {
   position: relative;
   display: grid;
   flex: 1;
-  place-items: center;
-  padding: 0.55rem 0.6rem;
+  place-items: stretch;
+  padding: 0.4rem;
 }
 
 .stc-flash-stack {
   position: absolute;
-  inset: 0.55rem 0.6rem;
+  inset: 0.4rem;
   pointer-events: none;
 }
 
@@ -966,12 +966,12 @@ body.flashcard-swiping {
 }
 
 .stc-flash-deck-2 {
-  transform: rotate(-3.5deg) translate(-2%, 2%);
+  transform: rotate(-2deg) scale(0.985);
 }
 
 .stc-flash-deck-3 {
-  transform: rotate(4deg) translate(3%, 1%);
-  opacity: 0.72;
+  transform: rotate(2.2deg) scale(0.97);
+  opacity: 0.7;
 }
 
 .stc-flash-flip {
