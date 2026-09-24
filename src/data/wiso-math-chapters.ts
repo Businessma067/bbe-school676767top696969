@@ -6,6 +6,7 @@
 
 import {
   loadMathChapterTasks,
+  loadDemoMathChapterTasks,
   type MathChapter,
   type MathSubsection,
   type MathTask,
@@ -151,14 +152,7 @@ async function loadChapterOverlay(num: number): Promise<Record<string, DeOverlay
   }
   try {
     const mod = await load();
-    const rows = { ...((mod.default ?? {}) as Record<string, DeOverlay>) };
-    try {
-      const hard = await import("./wiso/math-de-demo-hard.json");
-      const hardRows = (hard.default ?? {}) as Record<string, DeOverlay>;
-      Object.assign(rows, hardRows);
-    } catch {
-      // optional hard-demo DE file
-    }
+    const rows = (mod.default ?? {}) as Record<string, DeOverlay>;
     overlayCache.set(num, rows);
     return rows;
   } catch {
@@ -166,6 +160,19 @@ async function loadChapterOverlay(num: number): Promise<Record<string, DeOverlay
     overlayCache.set(num, empty);
     return empty;
   }
+}
+
+let hardDemoDeCache: Record<string, DeOverlay> | null = null;
+
+async function loadHardDemoDeOverlay(): Promise<Record<string, DeOverlay>> {
+  if (hardDemoDeCache) return hardDemoDeCache;
+  try {
+    const hard = await import("./wiso/math-de-demo-hard.json");
+    hardDemoDeCache = (hard.default ?? {}) as Record<string, DeOverlay>;
+  } catch {
+    hardDemoDeCache = {};
+  }
+  return hardDemoDeCache;
 }
 
 const GENERIC_DE_STEM =
@@ -217,4 +224,24 @@ export async function loadWisoMathChapterTasks(
   if (lang === "en") return tasks;
   const overlay = await loadChapterOverlay(num);
   return tasks.map((t) => applyOverlay(t, overlay[t.case_id] ?? overlay[t.id]));
+}
+
+/**
+ * WiSo demo practice: harder free-window stems + matching DE overlay,
+ * without clobbering the full-course chapter banks.
+ */
+export async function loadWisoDemoMathChapterTasks(
+  num: number,
+  lang: WisoMathContentLang = "de",
+): Promise<MathTask[]> {
+  const tasks = await loadDemoMathChapterTasks(num);
+  if (lang === "en") return tasks;
+  const [chapterOverlay, hardDe] = await Promise.all([
+    loadChapterOverlay(num),
+    loadHardDemoDeOverlay(),
+  ]);
+  return tasks.map((t) => {
+    const overlay = hardDe[t.case_id] ?? chapterOverlay[t.case_id] ?? chapterOverlay[t.id];
+    return applyOverlay(t, overlay);
+  });
 }
