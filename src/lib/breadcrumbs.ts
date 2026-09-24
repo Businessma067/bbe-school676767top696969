@@ -181,16 +181,24 @@ export function buildBreadcrumbs(
     const examId = decodeURIComponent(catalogMock[1]!);
     const action = catalogMock[2];
     const exam = getExamById(examId);
+    const isDemo = examId === "demo-mock";
     const trail: Omit<BreadcrumbCrumb, "isLast">[] = [
-      { label: "Mock Exams", to: "/mock-exams" },
+      {
+        label: isDemo ? "Demo Mock" : "Mock Exams",
+        to: isDemo ? "/demo-mock" : "/mock-exams",
+      },
       {
         label: exam?.title ?? prettifySegment(examId),
-        to: action ? `/mock-exams/${examId}/take` : null,
+        to: action ? (isDemo ? "/demo-mock" : `/mock-exams/${examId}/take`) : null,
       },
     ];
     if (action === "take") trail.push({ label: "Take", to: null });
     if (action === "review") trail.push({ label: "Review", to: null });
     return withLastFlags(trail);
+  }
+
+  if (path === "/demo-mock") {
+    return withLastFlags([{ label: "Demo Mock Exam", to: null }]);
   }
 
   const segments = path.split("/").filter(Boolean);

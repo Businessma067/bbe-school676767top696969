@@ -93,8 +93,7 @@ export function BbeLandingPage() {
                   </span>
                 </LocalizedLink>
                 <LocalizedLink
-                  to="/mock-exams/demo-mock/take"
-                  search={{ timed: true, answerSheet: true }}
+                  to="/demo-mock"
                   className="inline-flex flex-col items-center justify-center rounded-sm border border-exam-red bg-exam-red/10 px-6 py-3.5 text-sm font-semibold text-exam-red transition-colors hover:bg-exam-red/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                 >
                   <span>Demo mock</span>

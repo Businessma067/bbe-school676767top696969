@@ -31,6 +31,7 @@ import { ProductsPage } from "@/routes/products.index";
 import { DemoPracticeProduct } from "@/routes/products.demo-practice";
 import { FullCourseProduct } from "@/routes/products.full-course";
 import { DemoPractice } from "@/routes/demo-practice.index";
+import { DemoMockPage } from "@/routes/demo-mock";
 import { LoginPage } from "@/routes/login";
 import { SignupPage } from "@/routes/signup";
 import { ResetPasswordPage } from "@/routes/reset-password";
@@ -71,6 +72,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/products/demo-practice": DemoPracticeProduct,
   "/products/full-course": FullCourseProduct,
   "/demo-practice": DemoPractice,
+  "/demo-mock": DemoMockPage,
   "/login": LoginPage,
   "/signup": SignupPage,
   "/reset-password": ResetPasswordPage,

@@ -128,7 +128,7 @@ export function BbeExamScoringPage() {
       h1="WU Vienna BBE Exam Scoring Explained: Points & Partial Credit"
       lead="BBE exam points are not simply right or wrong. This page explains partial credit, how selections are scored, and what common ticking mistakes cost you."
       heroActions={
-        <BbePrimaryButton to={BBE_PRACTICE_ROUTES.mockExams}>
+        <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demoMock}>
           See scoring on a mock exam
         </BbePrimaryButton>
       }
@@ -359,7 +359,7 @@ export function BbeExamScoringPage() {
         />
 
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>Try a scored mock exam →</BbeTextLink>
+          <BbeTextLink to={BBE_PRACTICE_ROUTES.demoMock}>Try a scored mock exam →</BbeTextLink>
           <BbeTextLink to="/bbe-entrance-exam">Back to the BBE Entrance Exam Guide →</BbeTextLink>
           <BbeTextLink to={BBE_PRACTICE_ROUTES.products}>Explore full preparation materials →</BbeTextLink>
         </div>

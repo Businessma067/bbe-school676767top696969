@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import {
@@ -6,6 +6,7 @@ import {
   peekAuthState,
   type AuthState,
 } from "@/lib/auth-ui";
+import { safeInternalReturnPath } from "@/lib/auth-return";
 import { ChevronDown } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLanguage } from "@/lib/i18n/context";
@@ -17,6 +18,10 @@ type AuthNavProps = {
 
 export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   const { t } = useLanguage();
+  const returnTo = useRouterState({
+    select: (s) => safeInternalReturnPath(`${s.location.pathname}${s.location.search}`) ?? undefined,
+  });
+  const authSearch = returnTo ? { returnTo } : undefined;
   const peeked = typeof window !== "undefined" ? peekAuthState() : null;
   const [auth, setAuth] = useState<AuthState | null>(() => peeked?.auth ?? null);
   // Prefer cached chrome immediately, even while a background refresh is in flight.
@@ -71,12 +76,14 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
         <div className="hidden shrink-0 items-center gap-2 lg:flex" data-no-i18n>
           <LocalizedLink
             to="/login"
+            search={authSearch}
             className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
           >
             {t("Sign in")}
           </LocalizedLink>
           <LocalizedLink
             to="/signup"
+            search={authSearch}
             className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
           >
             {t("Sign up")}
@@ -88,6 +95,7 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
       <div className="flex shrink-0 items-center gap-1 sm:gap-2" data-no-i18n>
         <LocalizedLink
           to="/login"
+          search={authSearch}
           className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md border border-border bg-card px-2.5 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
         >
           <span className="sm:hidden">In</span>
@@ -95,6 +103,7 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
         </LocalizedLink>
         <LocalizedLink
           to="/signup"
+          search={authSearch}
           className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md bg-primary px-2.5 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 sm:px-4 sm:py-2"
         >
           <span className="sm:hidden">Join</span>

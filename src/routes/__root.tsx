@@ -16,6 +16,7 @@ import { HashScrollOnLoad } from "../components/HashScrollOnLoad";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
+import { AuthReturnRedirect } from "../components/AuthReturnRedirect";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 import { LanguageProvider } from "../lib/i18n/context";
 import { THEME_INIT_SCRIPT } from "../lib/theme";
@@ -192,6 +193,7 @@ function RootComponent() {
           <IntroSplash />
           <HashScrollOnLoad />
           <ActivityTracker />
+          <AuthReturnRedirect />
           <Breadcrumbs />
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />

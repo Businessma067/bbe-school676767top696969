@@ -401,7 +401,7 @@ export function BbeMathematicsPage() {
           </ol>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbeTextLink to="/bbe-exam-preparation">Read our complete BBE preparation guide →</BbeTextLink>
-            <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>Take a diagnostic or mock exam →</BbeTextLink>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.demoMock}>Take a diagnostic or mock exam →</BbeTextLink>
           </div>
         </BbeSection>
 
