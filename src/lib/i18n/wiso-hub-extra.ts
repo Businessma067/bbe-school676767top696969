@@ -533,6 +533,32 @@ export const wisoHubExtraDe: Record<string, string> = {
   "WiSo opens far more places than BBE, but the written exam still sorts thousands of people under the same partial credit pressure. The hall does not feel softer on the day.":
     "WiSo öffnet deutlich mehr Plätze als BBE, aber die schriftliche Prüfung sortiert trotzdem Tausende Menschen unter demselben Teilpunkte-Druck. Der Saal fühlt sich am Tag nicht weicher an.",
   "German is not only an exam section": "Deutsch ist nicht nur ein Prüfungsteil",
+  "Why WiSo still wins on language": "Warum WiSo bei der Sprache trotzdem gewinnt",
+  "German is not only an exam section. If Austria or the wider DACH region is where you want to study and work, starting it on the Aufnahmeprüfung deadline is usually the cleaner move.":
+    "Deutsch ist nicht nur ein Prüfungsteil. Wenn Österreich oder die weitere DACH-Region der Ort ist, an dem du studieren und arbeiten willst, ist der Start mit der Aufnahmeprüfungs-Deadline meist der sauberere Zug.",
+  "Places on the same campus": "Plätze auf demselben Campus",
+  "German-taught bachelor intake": "Aufnahme des deutschsprachigen Bachelors",
+  "English-taught track on the same campus": "Englischsprachiger Track auf demselben Campus",
+  "More seats do not make the paper gentle. They do make WiSo a real scale path onto the same WU campus.":
+    "Mehr Sitze machen die Prüfung nicht sanft. Sie machen WiSo aber zu einem echten Skalenweg auf denselben WU-Campus.",
+  "Where German shows up": "Wo Deutsch auftaucht",
+  "Exam reading & stems": "Prüfungslesen und Stems",
+  "Office & client German": "Büro- und Kundendeutsch",
+  "English-only classroom path": "Rein englischer Klassenzimmer-Pfad",
+  "Exam German is the first hard deadline. Work German is the longer one.":
+    "Prüfungsdeutsch ist die erste harte Deadline. Arbeitsdeutsch ist die längere.",
+  "Start German on a hard deadline": "Deutsch mit harter Deadline starten",
+  "BBE keeps English as the language pillar. WiSo asks you to build German under exam pressure instead. That looks harder on paper, and it is harder in the hall, but it is also closer to how life after WU often looks if you stay in Vienna or move across the DACH job market. Using the Aufnahmeprüfung as the first hard deadline is usually cleaner than waiting until lectures begin.":
+    "BBE hält Englisch als Sprachsäule. WiSo verlangt, Deutsch unter Prüfungsdruck aufzubauen. Das wirkt auf dem Papier schwerer, und im Saal ist es auch schwerer, aber es liegt näher an dem, wie das Leben nach der WU oft aussieht, wenn du in Wien bleibst oder über den DACH-Arbeitsmarkt gehst. Die Aufnahmeprüfung als erste harte Deadline zu nutzen ist meist sauberer, als zu warten, bis die Vorlesungen beginnen.",
+  "DACH is where it pays off": "DACH ist der Ort, an dem es sich auszahlt",
+  "Austria": "Österreich",
+  "Germany": "Deutschland",
+  "Switzerland": "Schweiz",
+  "Vienna campus life + local firms": "Campusleben in Wien und lokale Firmen",
+  "DACH recruiting reach": "DACH-Recruiting-Reichweite",
+  "Cross-border career options": "Grenzüberschreitende Karriereoptionen",
+  "Serious German now beats catching up after lectures start.":
+    "Ernsthaftes Deutsch jetzt schlägt Nachholen, nachdem die Vorlesungen begonnen haben.",
   "If you stay in Austria or anywhere in the DACH region after graduation, strong German is part of ordinary working life. Offices, clients, and public services still run on it. Starting that work now for the Aufnahmeprüfung is early practice for the country you are walking into, not a side quest you can postpone forever.":
     "Wenn du nach dem Abschluss in Österreich oder irgendwo in der DACH-Region bleibst, gehört starkes Deutsch zum normalen Arbeitsleben. Büros, Kund:innen und Behörden laufen weiterhin darauf. Diese Arbeit jetzt für die Aufnahmeprüfung anzufangen ist frühes Training für das Land, in das du gehst, kein Nebenprojekt, das man ewig aufschieben kann.",
   "Larger intake than BBE": "Größere Aufnahme als BBE",
@@ -1148,6 +1174,32 @@ export const wisoHubExtraUk: Record<string, string> = {
   "WiSo opens far more places than BBE, but the written exam still sorts thousands of people under the same partial credit pressure. The hall does not feel softer on the day.":
     "WiSo відкриває значно більше місць, ніж BBE, але письмовий іспит усе одно відсіює тисячі людей під тим самим тиском часткових балів. У залі в день іспиту не легше.",
   "German is not only an exam section": "Німецька, це не лише розділ іспиту",
+  "Why WiSo still wins on language": "Чому WiSo все одно виграє на мові",
+  "German is not only an exam section. If Austria or the wider DACH region is where you want to study and work, starting it on the Aufnahmeprüfung deadline is usually the cleaner move.":
+    "Німецька, це не лише розділ іспиту. Якщо Австрія чи ширший регіон DACH, місце, де ти хочеш вчитися й працювати, почати її на дедлайні Aufnahmeprüfung зазвичай чистіший хід.",
+  "Places on the same campus": "Місця на тому самому кампусі",
+  "German-taught bachelor intake": "Набір німецькомовного бакалаврату",
+  "English-taught track on the same campus": "Англомовний трек на тому самому кампусі",
+  "More seats do not make the paper gentle. They do make WiSo a real scale path onto the same WU campus.":
+    "Більше місць не робить іспит м’яким. Але робить WiSo реальним масштабним шляхом на той самий кампус WU.",
+  "Where German shows up": "Де з’являється німецька",
+  "Exam reading & stems": "Читання на іспиті та stems",
+  "Office & client German": "Офісна й клієнтська німецька",
+  "English-only classroom path": "Шлях лише англійською аудиторією",
+  "Exam German is the first hard deadline. Work German is the longer one.":
+    "Іспитова німецька, перший жорсткий дедлайн. Робоча німецька, довша.",
+  "Start German on a hard deadline": "Почни німецьку з жорстким дедлайном",
+  "BBE keeps English as the language pillar. WiSo asks you to build German under exam pressure instead. That looks harder on paper, and it is harder in the hall, but it is also closer to how life after WU often looks if you stay in Vienna or move across the DACH job market. Using the Aufnahmeprüfung as the first hard deadline is usually cleaner than waiting until lectures begin.":
+    "BBE тримає англійську як мовну опору. WiSo просить будувати німецьку під тиском іспиту. На папері це виглядає важче, і в залі теж важче, але ближче до того, як часто виглядає життя після WU, якщо лишаєшся у Відні чи йдеш по ринку праці DACH. Взяти Aufnahmeprüfung як перший жорсткий дедлайн зазвичай чистіше, ніж чекати початку лекцій.",
+  "DACH is where it pays off": "DACH, там де це окупається",
+  "Austria": "Австрія",
+  "Germany": "Німеччина",
+  "Switzerland": "Швейцарія",
+  "Vienna campus life + local firms": "Життя на кампусі у Відні й місцеві фірми",
+  "DACH recruiting reach": "Охоплення рекрутингу DACH",
+  "Cross-border career options": "Транскордонні кар’єрні опції",
+  "Serious German now beats catching up after lectures start.":
+    "Серйозна німецька зараз краща за надолуження після старту лекцій.",
   "If you stay in Austria or anywhere in the DACH region after graduation, strong German is part of ordinary working life. Offices, clients, and public services still run on it. Starting that work now for the Aufnahmeprüfung is early practice for the country you are walking into, not a side quest you can postpone forever.":
     "Якщо після випуску ти лишаєшся в Австрії чи десь у регіоні DACH, сильна німецька, частина звичайного робочого життя. Офіси, клієнти й держслужби досі на ній тримаються. Почати цю роботу зараз під Aufnahmeprüfung, це рання практика для країни, в яку ти йдеш, а не побічний квест, який можна вічно відкладати.",
   "Larger intake than BBE": "Більший набір, ніж у BBE",

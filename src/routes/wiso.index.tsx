@@ -11,9 +11,10 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { WisoDachAdvantageSlider } from "@/components/WisoDachAdvantageSlider";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
-import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
+import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -159,92 +160,37 @@ export function WisoLandingPage() {
           </div>
         </section>
 
-        <section className="bg-background px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-5xl">
+        <section className="why-choose-us--wiso relative overflow-hidden bg-why-us-bg px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
+          <div className="relative mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-foreground sm:text-4xl">
-                German is not only an exam section
+              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+                Why WiSo still wins on language
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                If you stay in Austria or anywhere in the DACH region after graduation, strong German
-                is part of ordinary working life. Offices, clients, and public services still run on
-                it. Starting that work now for the Aufnahmeprüfung is early practice for the country
-                you are walking into, not a side quest you can postpone forever.
+              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+                German is not only an exam section. If Austria or the wider DACH region is where you
+                want to study and work, starting it on the Aufnahmeprüfung deadline is usually the
+                cleaner move.
               </p>
             </div>
+          </div>
+        </section>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                {
-                  value: `~${WISO_EXAM_FORMAT.places.toLocaleString("en-US")}`,
-                  label: "WiSo places",
-                  hint: "Larger intake than BBE",
-                },
-                {
-                  value: "~240",
-                  label: "BBE places",
-                  hint: "Same campus, English track",
-                },
-                {
-                  value: "German",
-                  label: "Exam language",
-                  hint: "Reading, economics wording, math stems",
-                },
-                {
-                  value: "DACH",
-                  label: "Where German pays off",
-                  hint: "Austria, Germany, Switzerland",
-                },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-sm border border-border bg-card px-5 py-6 text-center"
-                >
-                  <p className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                    {stat.value}
-                  </p>
-                  <p className="mt-2 text-sm font-semibold text-foreground">{stat.label}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{stat.hint}</p>
-                </div>
-              ))}
-            </div>
+        <WisoDachAdvantageSlider />
 
-            <div className="mx-auto mt-10 max-w-3xl space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
-              <p>
-                BBE keeps English as the language pillar, which is useful if your plan is a fully
-                international classroom and English first careers. WiSo asks you to build German under
-                exam pressure instead. That looks harder on paper, and it is harder in the hall, but
-                it is also closer to how life after WU often looks if you stay in Vienna or move
-                across the DACH job market.
-              </p>
-              <p>
-                Places matter too. WiSo publishes an intake in the low thousands while BBE sits near
-                two hundred forty. More seats do not make the paper gentle. They do mean the German
-                track is a real scale pathway onto the same campus, with winter or summer start options
-                after a successful procedure.
-              </p>
-              <p>
-                So the practical argument is simple. You will need serious German anyway if Austria or
-                the wider DACH region is where you want to study and work. Using the Aufnahmeprüfung as
-                the first hard deadline is usually cleaner than waiting until lectures begin and then
-                discovering how much language still sits between you and the material.
-              </p>
-            </div>
-
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm font-semibold">
-              <LocalizedLink
-                to="/bbe-vs-wiso"
-                className="text-[var(--wiso-blue)] underline-offset-4 hover:underline"
-              >
-                Compare BBE and WiSo
-              </LocalizedLink>
-              <LocalizedLink
-                to="/wiso/wu-vienna"
-                className="text-muted-foreground underline-offset-4 hover:underline"
-              >
-                WU context for WiSo applicants
-              </LocalizedLink>
-            </div>
+        <section className="why-choose-us--wiso relative bg-why-us-bg px-6 py-10 lg:px-8">
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-4">
+            <LocalizedLink
+              to="/bbe-vs-wiso"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#EEF2FF] px-8 py-4 text-sm font-semibold text-[#121A33] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
+            >
+              Compare BBE and WiSo
+            </LocalizedLink>
+            <LocalizedLink
+              to="/wiso/wu-vienna"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/20 px-8 py-4 text-sm font-semibold text-why-us-fg/90 transition-colors hover:border-white/40 hover:text-white"
+            >
+              WU context for WiSo applicants
+            </LocalizedLink>
           </div>
         </section>
 
