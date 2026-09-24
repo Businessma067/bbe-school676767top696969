@@ -476,7 +476,7 @@
   },
   "MATH 10.1.26": {
     "title": "Verschachtelte Form $e^{k\\ln(P/Q)}$ als relative Potenz",
-    "context": "Es seien $ P,Q>0$ positive und $ k\\in\\mathbb{R}$ sein. Studie die verschatzt skalar $ e^{k\\ln(P/Q)}$. BEWERTEN_MAR Subventionen requests",
+    "context": "Es seien $P,Q>0$ positive Buchstabenwerte und $k\\in\\mathbb{R}$. Untersuche den verschachtelten Skalar $e^{k\\ln(P/Q)}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$ e^{k\\ln(P/Q)}=\\left(\\dfrac{Q}{P}\\right)^{k}$.",
       "$ e^{k\\ln(P/Q)}=e^{k\\ln P-k\\ln Q}$.",
@@ -1388,7 +1388,7 @@
   },
   "MATH 10.2.30": {
     "title": "pH-artige Buchstabenverhältnisse ohne Zahlenrechnen",
-    "context": "Definieren Sie Q Verschmelzung $\\mathrm{pH}=-\\log_{10}[H^{+}]$ mit den Buchstaben QQ1Q Empfindlichkeit $ C_{2}=[H^{+}]_{2}$ und $ C_{2}=[H^{+}]_{2}$. BEWERTEN_ restliches",
+    "context": "Definiere $\\mathrm{pH}=-\\log_{10}[H^{+}]$ mit den Buchstaben-Konzentrationen $C_{1}=[H^{+}]_{1}$ und $C_{2}=[H^{+}]_{2}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Wenn $ C_{1}=10\\,C_{2}$, dann $\\mathrm{pH}_{1}=\\mathrm{pH}_{2}-1$.",
       "Wenn MA Sozialschutz0, dann stimmen die beiden pH-Werte zu.",
@@ -1559,7 +1559,7 @@
   },
   "MATH 10.2.39": {
     "title": "Definitionsgewirr für $\\log$ einer linear-gebrochenen Abbildung",
-    "context": "Es seien $$ g(x)=\\log\\!\\left(\\frac{x-p}{x-q}\\right)$$ mit $ p\\neq q $ und Basis $>1$. BEWERTEN_MAR Alternativen",
+    "context": "Es sei $$g(x)=\\log\\!\\left(\\frac{x-p}{x-q}\\right)$$ mit $p\\neq q$ und Basis $>1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Das Argument ist positiv, wenn $ x $ streng außerhalb des Intervalls mit den Endpunkten $ p $ und $ q $, oder streng innerhalb, je nach Reihenfolge – sauberer: $(x-p)/(x-q)>0$ iff $ x $ istdle nicht zwischen $ p $ und $ q $.",
       "$ x=q $ ist ausgeschlossen.",
@@ -2015,7 +2015,7 @@
   },
   "MATH 10.3.14": {
     "title": "Symbolisch — Basiswechsel-Logarithmus in einer Potenzgleichung",
-    "context": "Die Befugnisse von BEWERTEN_BEREICHE",
+    "context": "Setze Potenzen von $8$ und $2$ über $\\log_{2}(8)$ in Beziehung. Löse $8^{5/3}=2^{5}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "$\\log_{2}(8)$ Rechtsakte sind ganzzahlig.",
       "Die Lösung ist $ x=\\dfrac{5}{\\log_{2}(8)}$.",

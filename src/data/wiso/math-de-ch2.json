@@ -2775,7 +2775,7 @@
   },
   "MATH 2.147": {
     "title": "Klausuraufgaben – 11",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Algebra-Archiv speichert zwei reelle Zahlen $a$ und $b$ nur über die Einträge $a+b=10$ und $ab=21$. Die ursprüngliche Reihenfolge wurde nicht erfasst, daher muss jede Folgerung aus symmetrischen Identitäten oder aus der quadratischen Gleichung mit den Wurzeln $a$ und $b$ folgen. In der Prüfung wird keine Dezimalnäherung verwendet.",
     "statements": [
       "$a^2+b^2=58$.",
       "$(a-b)^2=16$.",
@@ -2790,11 +2790,11 @@
       "**D.** → Richtig\n\nDie Wurzelmenge der monischen Quadratgleichung ist $\\{3,7\\}$.\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-10t+21=0\n$$\n\n$$\nt^2-10t+21=(t-3)(t-7)\n$$\n\n$$\n\\{a,b\\}=\\{3,7\\}\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Kehrwertsumme ist $\\dfrac{a+b}{ab}$, nicht der behauptete Bruch.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Nur die elementarsymmetrischen Daten $a+b=10$ und $ab=21$ sind erfasst. Jede Behauptung muss aus diesen beiden Zahlen folgen (oder aus der monischen Quadratgleichung $t^{2}-10t+21=0$ mit den Wurzeln $a$ und $b$).\n\nDie stehenden Identitäten lauten\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nEinsetzen der Archivwerte liefert $a^{2}+b^{2}=58$, $(a-b)^{2}=16$, $a^{3}+b^{3}=370$ und $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}$. Die Faktorisierung $t^{2}-10t+21=(t-3)(t-7)$ zeigt $\\{a,b\\}=\\{3,7\\}$."
   },
   "MATH 2.148": {
     "title": "Klausuraufgaben – 12",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein symbolischer Rechner untersucht $R(x)=\\dfrac{x^2-4}{x-2}$ und $S(x)=\\dfrac1{x-2}+\\dfrac1{x+2}$. Der erste Ausdruck ist für $x\\ne 2$ definiert, während der zweite zusätzlich $x=-2$ ausschließt. Vereinfachungen müssen diese ursprünglichen Definitionsbeschränkungen auch nach dem Kürzen von Faktoren beibehalten.",
     "statements": [
       "$R(x)=x+2$ auf ihrer Definitionsmenge.",
       "$R(2)=4$.",
@@ -2809,11 +2809,11 @@
       "**D.** → Richtig\n\nEinsetzen von $x=0$ in $S$ liefert $0$.\n\n$$\nS(x)=\\dfrac{1}{x-2}+\\dfrac{1}{x+2}\n$$\n\n$$\n\\dfrac{2x}{x^2-4}\n$$\n\n$$\n(x\\neq\\pm2)\n$$\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-4}\n$$\n\n$$\n\\dfrac{0}{-4}\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$S(x)=0$ erzwingt Zähler $0$ bei definiertem Nenner; genau eine Lösung.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\n$$\n\\dfrac{2x}{x^{2}-4}=0\n$$\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": ""
+    "solution_overview": "Arbeite auf den angegebenen Definitionsmengen: $R$ schließt $x=2$ aus, und $S$ schließt $x=\\pm2$ aus. Vor dem Auswerten faktorisieren und kürzen, und die beiden Kehrwerte in $S$ auf einen gemeinsamen Nenner bringen.\n\n$$\nR(x) = \\dfrac{x^{2}-4}{x-2} = \\dfrac{(x-2)(x+2)}{x-2} = x+2\\quad(x\\ne2)\n$$\n\n$$\nS(x) = \\dfrac{1}{x-2}+\\dfrac{1}{x+2} = \\dfrac{2x}{x^{2}-4}\\quad(x\\ne\\pm2)\n$$\n\nInsbesondere gilt $S(0)=0$, und $S(x)=0$ erzwingt $x=0$ auf der Definitionsmenge."
   },
   "MATH 2.149": {
     "title": "Klausuraufgaben – 13",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Materialmodell fixiert eine positive Skalenvariable bei $x=16$. Der Bericht verwendet die reellen Hauptwurzeln und die Potenzgesetze $x^r x^s=x^{r+s}$ sowie $(x^r)^s=x^{rs}$. Negative Exponenten werden als Kehrwerte gelesen, und alle Behauptungen beziehen sich auf denselben positiven Wert von $x$.",
     "statements": [
       "$x^{1/2}=4$.",
       "$x^{1/4}=2$.",
@@ -2828,11 +2828,11 @@
       "**D.** → Richtig\n\n$16^{3/4}=(16^{1/4})^3=2^3=8$.\n\n$$\nx^{1/4}=2\n$$\n\n$$\nx^{3/4}=(x^{1/4})^3\n$$\n\n$$\n2^3\n$$\n\n$$\n8\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nJede von null verschiedene Zahl zur Potenz $0$ ist $1$, nicht $0$.\n\n$$\nx^{0}=1\n$$\n\n$$\n(x\n$$\n\n$$\n16\\neq0)\n$$\n\n$$\n1\\neq0\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Die Skala ist auf den positiven Wert $x=16$ fixiert. Reelle Hauptwurzeln und die Potenzgesetze $x^{r}x^{s}=x^{r+s}$ sowie $(x^{r})^{s}=x^{rs}$ gelten; negative Exponenten bedeuten Kehrwerte.\n\n$$\nx^{1/2} = 4,\\qquad x^{1/4} = 2,\\qquad x^{-1/2} = \\dfrac{1}{4},\\qquad x^{3/4} = 8\n$$\n\nAußerdem gilt $x^{0}=1$ für dieses von null verschiedene $x$."
   },
   "MATH 2.150": {
     "title": "Klausuraufgaben – 14",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Kalibrierwert $x$ wird angenommen, wenn sein Abstand vom Zielwert $4$ höchstens $3$ Einheiten beträgt, geschrieben $|x-4|\\le 3$. Eine Warnzone verwendet die strikte Version $|x-4|<3$. Die Randwerte sind physikalisch möglich und alle Messwerte sind reell.",
     "statements": [
       "Das Annahmeintervall ist $[1,7]$.",
       "$x=1$ wird angenommen.",
@@ -2847,11 +2847,11 @@
       "**D.** → Richtig\n\nDie ganzen Zahlen in $[1,7]$ sind genau sieben Stück.\n\n$$\n7\n$$\n\n$$\n1,2,3,4,5,6,7\n$$\n\n$$\n7-1+1=7\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$|x-4|>3$ beschreibt das Äußere, nicht das offene Innere $(1,7)$.\n\n$$\n|x-4|>3\n$$\n\n$$\n1<x<7\n$$\n\n$$\n|x-4|>3\\Longleftrightarrow\\bigl(x<1\\bigr)\\lor\\bigl(x>7\\bigr)\n$$\n\n$$\n|x-4|>3\n$$\n\n$$\n1<x<7\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Der Abstand vom Zielwert $4$ wird durch $|x-4|$ gemessen. Die Annahmeregel $|x-4|\\le3$ ist das abgeschlossene Intervall $[1,7]$, während die Warnzone $|x-4|<3$ das offene Intervall $(1,7)$ ist.\n\nDie Endpunkte $x=1$ und $x=7$ werden angenommen, liegen aber nicht in der Warnzone. In $[1,7]$ liegen $7$ ganze Zahlen. Die komplementäre Ungleichung $|x-4|>3$ bedeutet $x<1$ oder $x>7$, nicht das offene mittlere Intervall."
   },
   "MATH 2.151": {
     "title": "Klausuraufgaben – 15",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Algebra-Archiv speichert zwei reelle Zahlen $a$ und $b$ nur über die Einträge $a+b=9$ und $ab=20$. Die ursprüngliche Reihenfolge wurde nicht erfasst, daher muss jede Folgerung aus symmetrischen Identitäten oder aus der quadratischen Gleichung mit den Wurzeln $a$ und $b$ folgen. In der Prüfung wird keine Dezimalnäherung verwendet.",
     "statements": [
       "$a^2+b^2=41$.",
       "$(a-b)^2=1$.",
@@ -2866,11 +2866,11 @@
       "**D.** → Richtig\n\nDie Wurzelmenge ist $\\{4,5\\}$.\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-9t+20=0\n$$\n\n$$\nt^2-9t+20=(t-4)(t-5)\n$$\n\n$$\n\\{a,b\\}=\\{4,5\\}\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Kehrwertsumme ist $\\dfrac{a+b}{ab}$, nicht der behauptete Bruch.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{20}{9}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{9}{20}\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Nur die elementarsymmetrischen Daten $a+b=9$ und $ab=20$ sind erfasst. Jede Behauptung muss aus diesen beiden Zahlen folgen (oder aus der monischen Quadratgleichung $t^{2}-9t+20=0$ mit den Wurzeln $a$ und $b$).\n\nDie stehenden Identitäten lauten\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nEinsetzen der Archivwerte liefert $a^{2}+b^{2}=41$, $(a-b)^{2}=1$, $a^{3}+b^{3}=189$ und $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{9}{20}$. Die Faktorisierung $t^{2}-9t+20=(t-4)(t-5)$ zeigt $\\{a,b\\}=\\{4,5\\}$."
   },
   "MATH 2.152": {
     "title": "Klausuraufgaben – 16",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein symbolischer Rechner untersucht $R(x)=\\dfrac{x^2-9}{x-3}$ und $S(x)=\\dfrac1{x-3}+\\dfrac1{x+3}$. Der erste Ausdruck ist für $x\\ne 3$ definiert, während der zweite zusätzlich $x=-3$ ausschließt. Vereinfachungen müssen diese ursprünglichen Definitionsbeschränkungen auch nach dem Kürzen von Faktoren beibehalten.",
     "statements": [
       "$R(x)=x+3$ auf ihrer Definitionsmenge.",
       "$R(3)=6$.",
@@ -2885,11 +2885,11 @@
       "**D.** → Richtig\n\nEinsetzen von $x=0$ in $S$ liefert $0$.\n\n$$\nS(x)=\\dfrac{1}{x-3}+\\dfrac{1}{x+3}\n$$\n\n$$\n\\dfrac{2x}{x^2-9}\n$$\n\n$$\n(x\\neq\\pm3)\n$$\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-9}\n$$\n\n$$\n\\dfrac{0}{-9}\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$S(x)=0$ hat auf der Definitionsmenge genau eine reelle Lösung.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\n$$\n\\dfrac{2x}{x^{2}-9}=0\n$$\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": ""
+    "solution_overview": "Arbeite auf den angegebenen Definitionsmengen: $R$ schließt $x=3$ aus, und $S$ schließt $x=\\pm3$ aus. Vor dem Auswerten faktorisieren und kürzen, und die beiden Kehrwerte in $S$ auf einen gemeinsamen Nenner bringen.\n\n$$\nR(x) = \\dfrac{x^{2}-9}{x-3} = \\dfrac{(x-3)(x+3)}{x-3} = x+3\\quad(x\\ne3)\n$$\n\n$$\nS(x) = \\dfrac{1}{x-3}+\\dfrac{1}{x+3} = \\dfrac{2x}{x^{2}-9}\\quad(x\\ne\\pm3)\n$$\n\nInsbesondere gilt $S(0)=0$, und $S(x)=0$ erzwingt $x=0$ auf der Definitionsmenge."
   },
   "MATH 2.153": {
     "title": "Klausuraufgaben – 17",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Materialmodell fixiert eine positive Skalenvariable bei $x=81$. Der Bericht verwendet die reellen Hauptwurzeln und die Potenzgesetze $x^r x^s=x^{r+s}$ sowie $(x^r)^s=x^{rs}$. Negative Exponenten werden als Kehrwerte gelesen, und alle Behauptungen beziehen sich auf denselben positiven Wert von $x$.",
     "statements": [
       "$x^{1/2}=9$.",
       "$x^{1/4}=3$.",
@@ -2904,11 +2904,11 @@
       "**D.** → Richtig\n\n$81^{3/4}=3^3=27$.\n\n$$\nx^{1/4}=3\n$$\n\n$$\nx^{3/4}=(x^{1/4})^3\n$$\n\n$$\n3^3\n$$\n\n$$\n27\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$x^0=1$ für $x=81\\neq0$, nicht $0$.\n\n$$\nx^{0}=1\n$$\n\n$$\n(x\n$$\n\n$$\n81\\neq0)\n$$\n\n$$\n1\\neq0\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Die Skala ist auf den positiven Wert $x=81$ fixiert. Reelle Hauptwurzeln und die Potenzgesetze $x^{r}x^{s}=x^{r+s}$ sowie $(x^{r})^{s}=x^{rs}$ gelten; negative Exponenten bedeuten Kehrwerte.\n\n$$\nx^{1/2} = 9,\\qquad x^{1/4} = 3,\\qquad x^{-1/2} = \\dfrac{1}{9},\\qquad x^{3/4} = 27\n$$\n\nAußerdem gilt $x^{0}=1$ für dieses von null verschiedene $x$."
   },
   "MATH 2.154": {
     "title": "Klausuraufgaben – 18",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Kalibrierwert $x$ wird angenommen, wenn sein Abstand vom Zielwert $5$ höchstens $3$ Einheiten beträgt, geschrieben $|x-5|\\le 3$. Eine Warnzone verwendet die strikte Version $|x-5|<3$. Die Randwerte sind physikalisch möglich und alle Messwerte sind reell.",
     "statements": [
       "Das Annahmeintervall ist $[2,8]$.",
       "$x=2$ wird angenommen.",
@@ -2923,11 +2923,11 @@
       "**D.** → Richtig\n\nDie ganzen Zahlen in $[2,8]$ sind genau sieben Stück.\n\n$$\n7\n$$\n\n$$\n2,3,4,5,6,7,8\n$$\n\n$$\n8-2+1=7\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$|x-5|>3$ beschreibt das Äußere, nicht $(2,8)$.\n\n$$\n|x-5|>3\n$$\n\n$$\n2<x<8\n$$\n\n$$\n|x-5|>3\\Longleftrightarrow\\bigl(x<2\\bigr)\\lor\\bigl(x>8\\bigr)\n$$\n\n$$\n|x-5|>3\n$$\n\n$$\n2<x<8\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Der Abstand vom Zielwert $5$ wird durch $|x-5|$ gemessen. Die Annahmeregel $|x-5|\\le3$ ist das abgeschlossene Intervall $[2,8]$, während die Warnzone $|x-5|<3$ das offene Intervall $(2,8)$ ist.\n\nDie Endpunkte $x=2$ und $x=8$ werden angenommen, liegen aber nicht in der Warnzone. In $[2,8]$ liegen $7$ ganze Zahlen. Die komplementäre Ungleichung $|x-5|>3$ bedeutet $x<2$ oder $x>8$, nicht das offene mittlere Intervall."
   },
   "MATH 2.155": {
     "title": "Klausuraufgaben – 19",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Algebra-Archiv speichert zwei reelle Zahlen $a$ und $b$ nur über die Einträge $a+b=11$ und $ab=18$. Die ursprüngliche Reihenfolge wurde nicht erfasst, daher muss jede Folgerung aus symmetrischen Identitäten oder aus der quadratischen Gleichung mit den Wurzeln $a$ und $b$ folgen. In der Prüfung wird keine Dezimalnäherung verwendet.",
     "statements": [
       "$a^2+b^2=85$.",
       "$(a-b)^2=49$.",
@@ -2942,11 +2942,11 @@
       "**D.** → Richtig\n\nDie Wurzelmenge ist $\\{2,9\\}$.\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-11t+18=0\n$$\n\n$$\nt^2-11t+18=(t-2)(t-9)\n$$\n\n$$\n\\{a,b\\}=\\{2,9\\}\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Kehrwertsumme ist $\\dfrac{a+b}{ab}$, nicht der behauptete Bruch.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{18}{11}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{11}{18}\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": ""
+    "solution_overview": "Nur die elementarsymmetrischen Daten $a+b=11$ und $ab=18$ sind erfasst. Jede Behauptung muss aus diesen beiden Zahlen folgen (oder aus der monischen Quadratgleichung $t^{2}-11t+18=0$ mit den Wurzeln $a$ und $b$).\n\nDie stehenden Identitäten lauten\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nEinsetzen der Archivwerte liefert $a^{2}+b^{2}=85$, $(a-b)^{2}=49$, $a^{3}+b^{3}=737$ und $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{11}{18}$. Die Faktorisierung $t^{2}-11t+18=(t-2)(t-9)$ zeigt $\\{a,b\\}=\\{2,9\\}$."
   },
   "MATH 2.156": {
     "title": "Klausuraufgaben – 20",
-    "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein symbolischer Rechner untersucht $R(x)=\\dfrac{x^2-16}{x-4}$ und $S(x)=\\dfrac1{x-4}+\\dfrac1{x+4}$. Der erste Ausdruck ist für $x\\ne 4$ definiert, während der zweite zusätzlich $x=-4$ ausschließt. Vereinfachungen müssen diese ursprünglichen Definitionsbeschränkungen auch nach dem Kürzen von Faktoren beibehalten.",
     "statements": [
       "$R(x)=x+4$ auf ihrer Definitionsmenge.",
       "$R(4)=8$.",
@@ -2961,6 +2961,6 @@
       "**D.** → Richtig\n\nEinsetzen von $x=0$ in $S$ liefert $0$.\n\n$$\nS(x)=\\dfrac{1}{x-4}+\\dfrac{1}{x+4}\n$$\n\n$$\n\\dfrac{2x}{x^2-16}\n$$\n\n$$\n(x\\neq\\pm4)\n$$\n\n$$\nS(0)=\\dfrac{2\\cdot0}{0^2-16}\n$$\n\n$$\n\\dfrac{0}{-16}\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$S(x)=0$ hat auf der Definitionsmenge genau eine reelle Lösung.\n\n$$\nS(x)\n$$\n\n$$\nS(x)=0\n$$\n\n$$\n\\dfrac{2x}{x^{2}-16}=0\n$$\n\n$$\n2x=0\\Longrightarrow x\n$$\n\n$$\n0\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": ""
+    "solution_overview": "Arbeite auf den angegebenen Definitionsmengen: $R$ schließt $x=4$ aus, und $S$ schließt $x=\\pm4$ aus. Vor dem Auswerten faktorisieren und kürzen, und die beiden Kehrwerte in $S$ auf einen gemeinsamen Nenner bringen.\n\n$$\nR(x) = \\dfrac{x^{2}-16}{x-4} = \\dfrac{(x-4)(x+4)}{x-4} = x+4\\quad(x\\ne4)\n$$\n\n$$\nS(x) = \\dfrac{1}{x-4}+\\dfrac{1}{x+4} = \\dfrac{2x}{x^{2}-16}\\quad(x\\ne\\pm4)\n$$\n\nInsbesondere gilt $S(0)=0$, und $S(x)=0$ erzwingt $x=0$ auf der Definitionsmenge."
   }
 }

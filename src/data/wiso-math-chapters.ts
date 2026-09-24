@@ -161,15 +161,43 @@ async function loadChapterOverlay(num: number): Promise<Record<string, DeOverlay
   }
 }
 
+const GENERIC_DE_STEM =
+  /^Bewerte jede Aussage\.?\s*Markiere sie mit Richtig oder Falsch\.?\s*$/i;
+const GENERIC_EN_STEM =
+  /^Evaluate each statement\.?\s*(Mark (it|them) (TRUE|True|true|Correct) or FALSE\.?)?\s*$/i;
+
+/** Prefer EN when DE overlay left stem/overview empty or wiped to a generic prompt. */
+function pickOverlayText(
+  overlayValue: string | undefined,
+  fallback: string | undefined,
+  opts: { treatGenericAsMissing?: boolean } = {},
+): string | undefined {
+  if (overlayValue == null) return fallback;
+  const trimmed = overlayValue.trim();
+  if (trimmed === "") return fallback ?? overlayValue;
+  if (
+    opts.treatGenericAsMissing &&
+    fallback &&
+    GENERIC_DE_STEM.test(trimmed) &&
+    !GENERIC_EN_STEM.test(fallback.trim()) &&
+    fallback.trim().length > trimmed.length + 40
+  ) {
+    return fallback;
+  }
+  return overlayValue;
+}
+
 function applyOverlay(task: MathTask, overlay: DeOverlay | undefined): MathTask {
   if (!overlay) return task;
   return {
     ...task,
     title: overlay.title ?? task.title,
-    context: overlay.context ?? task.context,
+    context: pickOverlayText(overlay.context, task.context, {
+      treatGenericAsMissing: true,
+    }) ?? task.context,
     statements: overlay.statements ?? task.statements,
     tactical_explanations: overlay.tactical_explanations ?? task.tactical_explanations,
-    solution_overview: overlay.solution_overview ?? task.solution_overview,
+    solution_overview: pickOverlayText(overlay.solution_overview, task.solution_overview),
   };
 }
 

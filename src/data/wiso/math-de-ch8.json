@@ -818,13 +818,13 @@
   },
   "MATH 8.44": {
     "title": "Nutzen und Kosten mit unterschiedlichen Exponenten",
-    "context": "Eine Stadt Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Stadt bewertet ein Hochwasserschutzprogramm der Größe $x>0$ anhand des Nutzens $B(x)=A x^{\\frac{1}{2}}$ und der Kosten $C(x)=K x^{\\frac{3}{2}}$, jeweils in Millionen. Ein Versuch bei Größe $16$ lieferte $72$ Millionen Nutzen. Ein Versuch bei Größe $4$ kostete $4$ Millionen. Der Nettonutzen ist $B-C$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Benefit and cost meet at exactly one positiv scale. Die Aussage ist zu prüfen.",
-      "Bei scale $16$, cost is already above $30$ million. Die Aussage ist zu prüfen.",
-      "The cost exponent is smaller than the benefit exponent, so cost can never overtake benefit.",
-      "Bei scale $9$, net benefit exceeds $42$ million.",
-      "Siehe die Übersicht und die Rechnungsschritte."
+      "Nutzen und Kosten treffen sich bei genau einer positiven Größe.",
+      "Bei Größe $16$ liegen die Kosten bereits über $30$ Millionen.",
+      "Der Kostenexponent ist kleiner als der Nutzenexponent, daher können die Kosten den Nutzen nie überholen.",
+      "Bei Größe $9$ übersteigt der Nettonutzen $42$ Millionen.",
+      "Der Nutzen je Million Kosten ist bei jeder Größe derselbe."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nBenefit und cost meet where\n\n$$B(x)=C(x)$$\n\n. Die Übersicht rekonstruiert\n\n$$B(x)=18 x^{\\frac{1}{2}}$$\n\n und\n\n$$C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n.\n\n$$18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n$$36=x$$\n\nThe only positive solution is\n\n$$x=36$$\n\n.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -2015,7 +2015,7 @@
   },
   "MATH 8.110": {
     "title": "Prüfungsaufgaben – 13",
-    "context": "A pressure setting $x>0$ must satisfy $4x^{3/2}=108$ Die Übersicht stützt die Prüfung.",
+    "context": "Eine Druckeinstellung $x>0$ muss $4x^{3/2}=108$ erfüllen. Die Steuerung akzeptiert nur die positive reelle Einstellung, und ihre Prüfroutine isoliert zuerst die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden. Alle angezeigten Werte sind exakt.",
     "statements": [
       "$x^{3/2}=27$.",
       "$x=9$.",
@@ -2110,7 +2110,7 @@
   },
   "MATH 8.115": {
     "title": "Prüfungsaufgaben – 18",
-    "context": "A pressure setting $x>0$ must satisfy $5x^{3/2}=320$ Die Übersicht stützt die Prüfung.",
+    "context": "Eine Druckeinstellung $x>0$ muss $5x^{3/2}=320$ erfüllen. Die Steuerung akzeptiert nur die positive reelle Einstellung, und ihre Prüfroutine isoliert zuerst die Potenz, bevor beide Seiten mit dem reziproken Exponenten erhoben werden. Alle angezeigten Werte sind exakt.",
     "statements": [
       "$x^{3/2}=64$.",
       "$x=16$.",
