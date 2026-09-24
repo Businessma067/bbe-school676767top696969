@@ -1,0 +1,154 @@
+{
+  "MATH 1.20": {
+    "title": "Prüfung, ob eine Familie eine parametrische Menge partitioniert",
+    "context": "Es sei $n\\ge 6$ und $S=\\{1,2,\\ldots,n\\}$. Betrachte\n\n$$\\mathcal{G}=\\bigl\\{\\{1,2,3\\},\\{3,4,5\\},\\{6,7,\\ldots,n\\}\\bigr\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$\\mathcal{G}$ ist keine Partition von $S$, weil sich zwei Blöcke schneiden.",
+      "$\\{1,2,3\\}\\cap\\{3,4,5\\}=\\{3\\}\\neq\\emptyset$.",
+      "Ersetzt man den ersten Block durch $\\{1,2\\}$, so partitioniert die neue Familie $S$ für $n=6$.",
+      "Für $n=6$ ist der dritte Block von $\\mathcal{G}$ gleich $\\{6\\}$.",
+      "Die Vereinigung der drei Blöcke von $\\mathcal{G}$ ist eine echte Teilmenge von $S$, wenn $n=8$."
+    ],
+    "solution_overview": "Die Blöcke $\\{1,2,3\\}$ und $\\{3,4,5\\}$ haben das Element $3$ gemeinsam, daher ist $\\mathcal{G}$ nicht paarweise disjunkt und kann $S$ nicht partitionieren. Ersetzt man den ersten Block durch $\\{1,2\\}$, entfällt die Überlappung; für $n=6$ ist der dritte Block $\\{6\\}$, und $\\{\\{1,2\\},\\{3,4,5\\},\\{6\\}\\}$ partitioniert $S$. Die Vereinigung der ursprünglichen drei Blöcke ist weiterhin ganz $S$, weil $3$ doppelt überdeckt wird und $\\{6,\\ldots,n\\}$ den Rest abdeckt.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer nichtleere Schnitt $\\{1,2,3\\}\\cap\\{3,4,5\\}=\\{3\\}$ verletzt die paarweise Disjunktheit, daher ist $\\mathcal{G}$ keine Partition.\n\nPaarweise Disjunktheit ist für jede Partition erforderlich; ein nichtleerer Schnitt zweier Blöcke disqualifiziert die Familie sofort.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDirekte Rechnung: Das einzige gemeinsame Element ist $3$.\n\nDas gemeinsame Element $3$ ist der eindeutige Zeuge für $A\\cap B\\neq\\emptyset$ bei den ersten beiden Blöcken.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie neuen Blöcke $\\{1,2\\}$, $\\{3,4,5\\}$, $\\{6\\}$ sind nichtleer, paarweise disjunkt und ihre Vereinigung ist $\\{1,\\ldots,6\\}=S$.\n\nNach der Korrektur sind die Blöcke $\\{1,2\\}$, $\\{3,4,5\\}$, $\\{6\\}$ nichtleer, disjunkt und überdecken $\\{1,\\ldots,6\\}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nFür $n=6$ gilt $\\{6,7,\\ldots,n\\}=\\{6\\}$.\n\nDie Schreibweise $\\{6,7,\\ldots,n\\}$ kollabiert genau dann zur Einermenge $\\{6\\}$, wenn $n=6$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nFür $n=8$ sind die Blöcke $\\{1,2,3\\}$, $\\{3,4,5\\}$ und $\\{6,7,8\\}$.\n\n$$\\{1,2,3\\}\\cup\\{3,4,5\\}\\cup\\{6,7,8\\}=\\{1,2,3,4,5,6,7,8\\}=S$$\n\nDie Vereinigung ist gleich $S$, also keine echte Teilmenge.\n\nBei $n=8$ ist die Vereinigung weiterhin $\\{1,\\ldots,8\\}=S$, also keine echte Teilmenge.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 2.01": {
+    "title": "Ausmultiplizieren von $(px+q)^{2}$ mit Parametern und numerischer Probe",
+    "context": "Es seien $p$ und $q$ von null verschiedene reelle Zahlen und $x$ reell. Betrachte die Identität\n\n$$(px+q)^{2}=p^{2}x^{2}+2pqx+q^{2}.$$\n\nEine konkrete Probe verwendet $p=3$, $q=-4$, $x=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Das Ausmultiplizieren von $(px+q)^{2}$ liefert $p^{2}x^{2}+2pqx+q^{2}$ für alle reellen $p,q,x$.",
+      "Für $p=3$ und $q=-4$ gilt $(3x-4)^{2}=9x^{2}-24x+16$.",
+      "Bei $p=3$, $q=-4$, $x=2$ sind sowohl $(px+q)^{2}$ als auch $p^{2}x^{2}+2pqx+q^{2}$ gleich $4$.",
+      "Ohne den mittleren Term gilt $(px+q)^{2}=p^{2}x^{2}+q^{2}$ für alle $p,q,x$.",
+      "Für $p=3$, $q=5$ ist der Koeffizient von $x$ in der Entwicklung von $(px+q)^{2}$ gleich $30$."
+    ],
+    "solution_overview": "Das Binomquadrat entwickelt sich zu $(px+q)^{2}=p^{2}x^{2}+2pqx+q^{2}$. Mit $p=3$, $q=-4$: $(3x-4)^{2}=9x^{2}-24x+16$. Bei $x=2$: $px+q=2$, Quadrieren ergibt $4$. Die Identität ohne mittleren Term scheitert, sobald $pqx\\neq 0$. Mit $p=3$, $q=5$: mittlerer Koeffizient $2pq=30$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nAusmultiplizieren:\n\n$$(px+q)^{2}=(px+q)(px+q)=p^{2}x^{2}+pqx+pqx+q^{2}=p^{2}x^{2}+2pqx+q^{2}$$\n\nDie Identität gilt für alle reellen $p,q,x$.\n\nDie Kreuzterme $pqx+pqx$ vereinigen sich zum einzigen mittleren Summanden $2pqx$; das ist die Quelle der Identität.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nEinsetzen von $p=3$, $q=-4$:\n\n$$9x^{2}+2\\cdot3\\cdot(-4)x+16=9x^{2}-24x+16$$\n\nDas Einsetzen der konkreten Koeffizienten $p=3$, $q=-4$ in $p^{2}$, $2pq$ und $q^{2}$ liefert $9$, $-24$ und $16$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$px+q=3\\cdot2+(-4)=2,\\qquad 2^{2}=4$$\n\n$$p^{2}x^{2}+2pqx+q^{2}=9\\cdot4+2\\cdot3\\cdot(-4)\\cdot2+16=36-48+16=4$$\n\nBeide Auswertungswege — direktes Einsetzen in $(px+q)$ und anschließendes Quadrieren sowie zuerst Entwickeln — liefern $4$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGegenbeispiel $p=1$, $q=1$, $x=1$: linke Seite $4$, rechte Seite ohne mittleren Term $2$. Die universelle Behauptung scheitert.\n\nDas Gegenbeispiel $p=q=x=1$ liefert links $4$ und rechts $2$, daher gilt die Identität ohne mittleren Term im Allgemeinen nicht.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDer mittlere Koeffizient ist $2pq=2\\cdot3\\cdot5=30$.\n\nDer mittlere Koeffizient ist genau $2pq=2\\cdot3\\cdot5=30$ und stimmt mit der Behauptung überein.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 2.02": {
+    "title": "Differenz von Quadraten mit skalierten Parametern",
+    "context": "Es seien $a,b$ von null verschiedene reelle Zahlen und $k$ ein reeller Parameter. Untersuche\n\n$$(ak)^{2}-(bk)^{2}=(a-b)(a+b)k^{2}.$$\n\nEine Probe verwendet $a=5$, $b=3$, $k=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$(ak)^{2}-(bk)^{2}=(a^{2}-b^{2})k^{2}$ gilt für alle reellen $a,b,k$.",
+      "Für $a=5$, $b=3$, $k=2$ gilt $(ak)^{2}-(bk)^{2}=64$.",
+      "Das Zerlegen liefert $(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a^{2}-b^{2})k^{2}$.",
+      "Falls $a=b$, dann gilt $(ak)^{2}-(bk)^{2}=0$ für jedes $k$.",
+      "Bei $a=5$, $b=3$, $k=2$ ist der Wert $(a-b)(a+b)k^{2}$ gleich $60$."
+    ],
+    "solution_overview": "Differenz der Quadrate: $(ak)^{2}-(bk)^{2}=(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a^{2}-b^{2})k^{2}$. Bei $a=5$, $b=3$, $k=2$: $(10)^{2}-(6)^{2}=100-36=64$, und $(a-b)(a+b)k^{2}=2\\cdot8\\cdot4=64$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$(ak)^{2}-(bk)^{2}=a^{2}k^{2}-b^{2}k^{2}=(a^{2}-b^{2})k^{2}$$\n\nKlammere $k^{2}$ aus $a^{2}k^{2}-b^{2}k^{2}$ heraus und erhalte $(a^{2}-b^{2})k^{2}$ für jedes reelle Tripel.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$(5\\cdot2)^{2}-(3\\cdot2)^{2}=10^{2}-6^{2}=100-36=64$$\n\nDie direkte Rechnung $100-36=64$ bestätigt den Probenwert.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a-b)(a+b)k^{2}=(a^{2}-b^{2})k^{2}$$\n\nDie Umgruppierung $k(a-b)\\cdot k(a+b)$ multipliziert sich zu demselben $(a^{2}-b^{2})k^{2}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nFalls $a=b$, dann ist $a^{2}-b^{2}=0$, also ist die Differenz für jedes $k$ gleich $0$.\n\nDas Verschwinden von $a-b$ erzwingt, dass das gesamte Produkt $(a-b)(a+b)k^{2}$ für jedes $k$ verschwindet.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$(5-3)(5+3)(2)^{2}=2\\cdot8\\cdot4=64\\neq 60$$\n\nDas korrekte Produkt ist $2\\cdot8\\cdot4=64$, nicht $60$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 2.03": {
+    "title": "Elementare Summe und Produkt mit linearem Parameter",
+    "context": "Es seien $s=u+v$ und $p=uv$ für reelle $u,v$. Ein Parameter $m$ tritt über das verschobene Paar $u'=u+m$, $v'=v+m$ ein. Eine Probe verwendet $u=3$, $v=5$, $m=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$u^{2}+v^{2}=s^{2}-2p$ gilt für alle reellen $u,v$.",
+      "Für $u=3$, $v=5$ gilt $u^{2}+v^{2}=34$ und $s^{2}-2p=34$.",
+      "Für das verschobene Paar gilt $u'+v'=s+2m$ und $u'v'=p+m(u+v)+m^{2}=p+ms+m^{2}$.",
+      "Für $u=3$, $v=5$, $m=2$ gilt $u'v'=35$.",
+      "$(u+v)^{2}=u^{2}+v^{2}$ gilt für alle reellen $u,v$."
+    ],
+    "solution_overview": "$$u^{2}+v^{2}=(u+v)^{2}-2uv=s^{2}-2p.$$\n\nVerschobenes Paar: $u'+v'=s+2m$ und $u'v'=p+ms+m^{2}$. Probe $u=3$, $v=5$: $s=8$, $p=15$, $u^{2}+v^{2}=34$. Mit $m=2$: $u'v'=15+2\\cdot8+4=35$. Die falsche Identität $(u+v)^{2}=u^{2}+v^{2}$ lässt den Kreuzterm $2uv$ weg.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$(u+v)^{2}=u^{2}+2uv+v^{2}\\implies u^{2}+v^{2}=s^{2}-2p$$\n\nUmstellen von $(u+v)^{2}=u^{2}+2uv+v^{2}$ isoliert $u^{2}+v^{2}=s^{2}-2p$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$3^{2}+5^{2}=9+25=34$$\n\n$$s=8,\\ p=15,\\ s^{2}-2p=64-30=34$$\n\nBeide Wege — direkte Quadrate $9+25$ und $s^{2}-2p=64-30$ — ergeben $34$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$u'+v'=u+v+2m=s+2m$$\n\n$$u'v'=uv+m(u+v)+m^{2}=p+ms+m^{2}$$\n\nDas Ausmultiplizieren von $(u+m)(v+m)$ liefert die Dreitermformel $p+ms+m^{2}$ für das neue Produkt.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$u'v'=p+ms+m^{2}=15+2\\cdot8+4=15+16+4=35$$\n\nAlternativ: $u'=5$, $v'=7$, Produkt $35$.\n\nEinsetzen von $p=15$, $s=8$, $m=2$ liefert $15+16+4=35$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nGegenbeispiel $u=1$, $v=1$: links $(2)^{2}=4$, rechts $1+1=2$. Die Identität scheitert.\n\nDer fehlende Kreuzterm $2uv$ ist für $u=v=1$ von null verschieden, daher gilt $(u+v)^{2}\\neq u^{2}+v^{2}$ im Allgemeinen.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 2.06": {
+    "title": "Binomische Entwicklung von $(a+b)^{5}$ mit numerischer Kontrolle",
+    "context": "Entwickle $(a+b)^{5}$. Eine Probe setzt $a=2$, $b=-1$ ein.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$(a+b)^{5}=a^{5}+5a^{4}b+10a^{3}b^{2}+10a^{2}b^{3}+5ab^{4}+b^{5}$.",
+      "Der Koeffizient von $a^{3}b^{2}$ ist gleich $\\binom{5}{2}=10$.",
+      "Bei $a=2$, $b=-1$ gilt $(a+b)^{5}=1$.",
+      "Die Summe aller Binomialkoeffizienten $\\sum_{k=0}^{5}\\binom{5}{k}$ ist gleich $32$.",
+      "Der Koeffizient von $a^{4}b$ ist gleich $4$."
+    ],
+    "solution_overview": "Binomialkoeffizienten für $n=5$: $1,5,10,10,5,1$. Bei $a=2$, $b=-1$: $(1)^{5}=1$. Zeilensumme $2^{5}=32$. Der Koeffizient von $a^{4}b$ ist $5$, nicht $4$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nWende $\\binom{5}{k}$ für $k=0,\\ldots,5$ an und erhalte die angezeigte Entwicklung.\n\nDie sechs Binomialkoeffizienten für $n=5$ sind $1,5,10,10,5,1$ und stimmen mit der angezeigten Entwicklung überein.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\\binom{5}{2}=10$$\n\nDer Index $k=2$ liefert $\\binom{5}{2}=10$ für den Term $a^{3}b^{2}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$(2+(-1))^{5}=1^{5}=1$$\n\n$$(2-1)^{5}=1$$ bestätigt die Probe.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$\\sum_{k=0}^{5}\\binom{5}{k}=2^{5}=32$$\n\nDer Binomialsatz bei $a=b=1$ liefert $\\sum\\binom{5}{k}=2^{5}=32$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$\\binom{5}{1}=5\\neq 4$$\n\nDer Koeffizient von $a^{4}b$ ist $\\binom{5}{1}=5$, im Widerspruch zur behaupteten $4$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 2.07": {
+    "title": "Kubus eines linearen Binoms mit Parametern",
+    "context": "Es seien $c,d$ von null verschiedene reelle Zahlen. Entwickle $(cx-d)^{3}$. Eine Probe verwendet $c=2$, $d=3$, $x=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$(cx-d)^{3}=c^{3}x^{3}-3c^{2}dx^{2}+3cd^{2}x-d^{3}$.",
+      "Für $c=2$, $d=3$ gilt $(2x-3)^{3}=8x^{3}-36x^{2}+54x-27$.",
+      "Bei $c=2$, $d=3$, $x=2$ ist der Wert $(cx-d)^{3}$ gleich $1$.",
+      "Der lineare Koeffizient in $(cx-d)^{3}$ ist $3cd^{2}$.",
+      "An derselben Probe liefert das Auswerten der Entwicklung $c^{3}x^{3}-3c^{2}dx^{2}+3cd^{2}x-d^{3}$ den Wert $-1$."
+    ],
+    "solution_overview": "$(cx-d)^{3}=c^{3}x^{3}-3c^{2}d x^{2}+3c d^{2} x-d^{3}$. Mit $c=2$, $d=3$: $8x^{3}-36x^{2}+54x-27$. Bei $x=2$: $cx-d=1$, Kubus $1$. Das entwickelte Polynom an derselben Stelle ist ebenfalls $1$, nicht $-1$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nVerwende $(u-v)^{3}=u^{3}-3u^{2}v+3uv^{2}-v^{3}$ mit $u=cx$, $v=d$.\n\nSetze $u=cx$ und $v=d$ in $(u-v)^{3}=u^{3}-3u^{2}v+3uv^{2}-v^{3}$ ein und erhalte die angegebene Entwicklung.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$8x^{3}-3\\cdot4\\cdot3\\,x^{2}+3\\cdot2\\cdot9\\,x-27=8x^{3}-36x^{2}+54x-27$$\n\nKoeffizienten: $c^{3}=8$, $3c^{2}d=36$, $3cd^{2}=54$, $d^{3}=27$, mit den angezeigten Vorzeichen.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$cx-d=4-3=1,\\qquad 1^{3}=1$$\n\n$$cx-d=4-3=1$$ liefert beim Kubieren $1$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDer Term mit $x^{1}$ ist $3c d^{2}x$, daher ist der Koeffizient $3cd^{2}$.\n\nDer Grad-$1$-Term ist $3cd^{2}x$, also ist sein Koeffizient $3cd^{2}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie entwickelte Form ist an der Probe gleich $(cx-d)^{3}=1$, nicht $-1$.\n\nWeil das entwickelte Polynom mit $(cx-d)^{3}$ übereinstimmt, ist sein Probenwert ebenfalls $1$, nicht $-1$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 2.10": {
+    "title": "Vorzeichenwechsel, die nur den Kreuzterm ändern",
+    "context": "Vergleiche $(a+b)^{2}$ und $(a-b)^{2}$ für reelle $a,b$. Eine Probe verwendet $a=7$, $b=2$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$(a+b)^{2}-(a-b)^{2}=4ab$ gilt für alle reellen $a,b$.",
+      "$(a-b)^{2}=a^{2}-2ab+b^{2}$.",
+      "Bei $a=7$, $b=2$ gilt $(a+b)^{2}=81$ und $(a-b)^{2}=25$.",
+      "An der Probe gilt $(a+b)^{2}-(a-b)^{2}=48$.",
+      "$(a+b)^{2}+(a-b)^{2}=2a^{2}+2b^{2}$."
+    ],
+    "solution_overview": "$(a+b)^{2}=a^{2}+2ab+b^{2}$, $(a-b)^{2}=a^{2}-2ab+b^{2}$. Differenz $4ab$; Summe $2a^{2}+2b^{2}$. Probe: $9^{2}=81$, $5^{2}=25$, Differenz $56=4\\cdot7\\cdot2$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$(a^{2}+2ab+b^{2})-(a^{2}-2ab+b^{2})=4ab$$\n\nSubtrahiert man die beiden Entwicklungen, fallen $a^{2}+b^{2}$ weg und der mittlere Term verdoppelt sich zu $4ab$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDirektes Ausmultiplizieren von $(a-b)(a-b)$.\n\nDas Minuszeichen beim mittleren Term ist der einzige Unterschied zwischen $(a-b)^{2}$ und $(a+b)^{2}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$9^{2}=81,\\qquad 5^{2}=25$$\n\n$$(7+2)^{2}=81$$ und $(7-2)^{2}=25$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$$81-25=56$$\n\n$$56\\neq 48$$\n\nAlternativ $4ab=4\\cdot7\\cdot2=56$.\n\nDifferenz $81-25=56$, gleichwertig $4\\cdot7\\cdot2=56$, nicht $48$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$(a^{2}+2ab+b^{2})+(a^{2}-2ab+b^{2})=2a^{2}+2b^{2}$$\n\nAddiert man die beiden Entwicklungen, fallen die mittleren Terme weg und die Quadrate verdoppeln sich.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 2.11": {
+    "title": "Identifikation des verdoppelten mittleren Terms mit Parameter",
+    "context": "Es seien $m,n$ von null verschiedene reelle Zahlen. Schreibe $(m+n)^{2}=m^{2}+\\square+n^{2}$ und bestimme $\\square$. Eine Probe verwendet $m=4$, $n=-3$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Der fehlende mittlere Term ist $2mn$.",
+      "Für $m=4$, $n=-3$ gilt $(m+n)^{2}=1$ und $m^{2}+2mn+n^{2}=1$.",
+      "Halbierung des mittleren Terms liefert fälschlich $m^{2}+mn+n^{2}$, was nur für $mn=0$ mit $(m+n)^{2}$ übereinstimmt.",
+      "An der Probe gilt $m^{2}+mn+n^{2}=4$.",
+      "An der Probe gilt $2mn=-24$."
+    ],
+    "solution_overview": "Der mittlere Term in $(m+n)^{2}$ ist $2mn$. Ersetzt man ihn durch $mn$, entsteht $m^{2}+mn+n^{2}=(m+n)^{2}-mn$, gleich dem Quadrat nur wenn $mn=0$. Probe $m=4$, $n=-3$: $(m+n)^{2}=1$, $2mn=-24$ und $m^{2}+mn+n^{2}=13$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$(m+n)^{2}=m^{2}+2mn+n^{2}$$\n\nalso $\\square=2mn$.\n\nDas Binomquadrat erzwingt, dass der mittlere Koeffizient genau $2$ ist, nicht $1$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$m+n=1,\\ 1^{2}=1$$\n\n$$16+2\\cdot4\\cdot(-3)+9=16-24+9=1$$\n\nSowohl die faktorisierte Form $(4-3)^{2}=1$ als auch die entwickelte Form $16-24+9=1$ stimmen überein.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$m^{2}+mn+n^{2}=(m+n)^{2}-mn$$\n\ngleich $(m+n)^{2}$ genau dann, wenn $mn=0$.\n\nUmstellen zeigt $m^{2}+mn+n^{2}=(m+n)^{2}-mn$, gleich dem Quadrat genau dann, wenn $mn=0$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$$m^{2}+mn+n^{2}=16-12+9=13\\neq 4$$\n\nDie direkte Auswertung $16-12+9=13$ widerspricht dem behaupteten Wert $4$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$2mn=2\\cdot4\\cdot(-3)=-24$$\n\n$$2\\cdot4\\cdot(-3)=-24$$ bestätigt den mittleren Term an der Probe.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor der endgültige Vergleich mit der Behauptung erfolgt.\n\nVerfolge jeden Zwischenschritt auf einer eigenen Zeile, setze die gewonnenen Parameter noch einmal genau ein und vergleiche erst dann den resultierenden exakten Wert mit dem in der Aussage behaupteten Schwellenwert oder der Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  }
+}
