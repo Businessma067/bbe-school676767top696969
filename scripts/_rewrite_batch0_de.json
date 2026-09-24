@@ -1,0 +1,154 @@
+{
+  "MATH 1.05": {
+    "title": "Parametrische Differenz, Vereinigungsmächtigkeit und symmetrische Differenz",
+    "context": "Es sei $m\\ge 1$ eine ganze Zahl.\n\n$$P=\\{m,m+1,m+2,m+3,m+4\\},\\quad Q=\\{m+2,m+3,m+4,m+5,m+6\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$P\\setminus Q=\\{m,m+1\\}$ und $|P\\setminus Q|=2$.",
+      "$Q\\setminus P=\\{m+5\\}$ und $|Q\\setminus P|=1$.",
+      "$|P\\cup Q|=|P|+|Q|-|P\\cap Q|=7$.",
+      "$(P\\setminus Q)\\cup(Q\\setminus P)$ hat die Mächtigkeit $4$.",
+      "Für $m=10$ gilt $12\\in P\\cap Q$ und $16\\notin P$."
+    ],
+    "solution_overview": "$$P\\cap Q=\\{m+2,m+3,m+4\\},\\ |P\\cap Q|=3;$$\n\n$$P\\setminus Q=\\{m,m+1\\},\\ Q\\setminus P=\\{m+5,m+6\\};$$\n\n$$|P\\cup Q|=5+5-3=7;\\ |P\\triangle Q|=4.$$\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$P\\setminus Q=\\{m,m+1\\},\\ |P\\setminus Q|=2$$\n\nDie beiden verbleibenden Elemente $m$ und $m+1$ sind aufeinanderfolgende ganze Zahlen und daher verschieden; die Mächtigkeit ist damit $2$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$$Q\\setminus P=\\{m+5,m+6\\},\\ |Q\\setminus P|=2\\neq 1$$\n\nDie Behauptung lässt $m+6$ weg.\n\nSowohl $m+5$ als auch $m+6$ liegen oberhalb von $\\max P=m+4$, bleiben also in $Q\\setminus P$; die Mächtigkeit ist $2$ und nicht $1$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$$|P\\cup Q|=5+5-3=7$$\n\nDie Aufzählung $\\{m,\\ldots,m+6\\}$ bestätigt die Mächtigkeit $7$.\n\nDie Menge $\\{m,m+1,m+2,m+3,m+4,m+5,m+6\\}$ ist ein Intervall aus sieben aufeinanderfolgenden ganzen Zahlen und stimmt mit der Inklusion-Exklusion-Zählung überein.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$P\\triangle Q=\\{m,m+1,m+5,m+6\\},\\ |P\\triangle Q|=4$$\n\nDie symmetrische Differenz schließt die dreielementige Überlappung aus und lässt $7-3=4$ Elemente übrig, in Übereinstimmung mit $2+2=4$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$m=10$: $P\\cap Q=\\{12,13,14\\}$, also $12\\in P\\cap Q$; $16\\notin P$, da $\\max P=14$.\n\nFür $m=10$ beginnt die Überlappung bei $12$ und endet bei $14$, während $16$ zwei Schritte hinter $\\max P=14$ liegt.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 1.06": {
+    "title": "Drei parametrische Mengen und vollständige Inklusion-Exklusion",
+    "context": "Es sei $r\\ge 2$ eine ganze Zahl.\n\n$$A=\\{r,r+1,r+2,r+3\\},\\ B=\\{r+2,r+3,r+4,r+5\\},\\ C=\\{r+3,r+4,r+5,r+6\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$|A\\cap B\\cap C|=1$ und $A\\cap B\\cap C=\\{r+3\\}$.",
+      "$|A\\cup B\\cup C|=6$.",
+      "$|A\\cap B|=3$ und $|B\\cap C|=3$.",
+      "Inklusion-Exklusion liefert $|A\\cup B\\cup C|=7$.",
+      "Für $r=5$ gilt $8\\in A\\cap B\\cap C$ und $11\\notin A$."
+    ],
+    "solution_overview": "$$A\\cap B=\\{r+2,r+3\\}\\ (|A\\cap B|=2);\\ A\\cap C=\\{r+3\\};$$\n\n$$B\\cap C=\\{r+3,r+4,r+5\\}\\ (|B\\cap C|=3);\\ A\\cap B\\cap C=\\{r+3\\}.$$\n\nIE: $4+4+4-2-1-3+1=7$. Vereinigung $=\\{r,\\ldots,r+6\\}$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nNur $r+3$ liegt in allen drei Mengen:\n\n$$A\\cap B\\cap C=\\{r+3\\},\\ |A\\cap B\\cap C|=1$$\n\nKein anderer Kandidat passt: $r+2\\notin C$ und $r+4\\notin A$, also ist der dreifache Schnitt genau die Einermenge $\\{r+3\\}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nDie Vereinigungsaufzählung $\\{r,\\ldots,r+6\\}$ hat die Mächtigkeit $7$, nicht $6$.\n\nDas siebengliedrige Intervall $\\{r,r+1,\\ldots,r+6\\}$ entsteht durch Aneinanderfügen der drei Blöcke der Länge $4$ unter Berücksichtigung der Überlappungen; die Mächtigkeit $6$ ist daher unmöglich.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$|A\\cap B|=2\\neq 3$, also scheitert die Konjunktion, obwohl $|B\\cap C|=3$ gilt.\n\nDie direkte Aufzählung $A\\cap B=\\{r+2,r+3\\}$ hat die Mächtigkeit $2$ und widerspricht bereits dem ersten Teil der Behauptung.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$4+4+4-2-1-3+1=7=|A\\cup B\\cup C|$$\n\nJeder IE-Term wurde aus den Aufzählungen ermittelt; Einsetzen liefert $12-6+1=7$ und stimmt mit der Länge der Vereinigung überein.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$r=5$: dreifacher Schnitt $\\{8\\}$; $11=r+6\\in C$, aber $11\\notin A$.\n\nBei $r=5$ ist das einzige gemeinsame Element $8$, und $11$ liegt unter den drei Mengen nur in $C$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 1.10": {
+    "title": "Komplemente von Vereinigung und Schnitt bei überlappenden parametrischen Mengen",
+    "context": "Universum $U=\\{1,2,\\ldots,30\\}$. Es sei $p$ eine ganze Zahl mit $2\\le p\\le 8$, und setze\n\n$$A=\\{1,2,\\ldots,10+p\\},\\qquad B=\\{8,9,\\ldots,20+p\\}.$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$|A\\cap B|=3+p$ und $|A\\cup B|=23+p$.",
+      "$(A\\cup B)^{c}=A^{c}\\cap B^{c}$ als Mengen (De-Morgan-Identität).",
+      "$|A^{c}\\cap B^{c}|=7-p$.",
+      "Für $p=5$ gilt $|A\\setminus B|=7$.",
+      "Für $p=5$ gilt $|(A\\cap B)^{c}|=20$."
+    ],
+    "solution_overview": "$A=\\{1,\\ldots,10+p\\}$, $B=\\{8,\\ldots,20+p\\}$. Die Überlappung beginnt bei $8$ und endet bei $10+p$:\n\n$$A\\cap B=\\{8,\\ldots,10+p\\},\\ |A\\cap B|=(10+p)-8+1=3+p.$$\n\n$$|A\\cup B|=(10+p)+(20+p-7)-(3+p)=23+p.$$\n\n$$|(A\\cup B)^{c}|=30-(23+p)=7-p.$$\n\n$$|A\\setminus B|=|A|-|A\\cap B|=(10+p)-(3+p)=7.$$\n\nBei $p=5$: $|A\\cap B|=8$, $|(A\\cap B)^{c}|=22$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDie Überlappung $\\{8,\\ldots,10+p\\}$ hat die Mächtigkeit $3+p$. Vereinigungsmächtigkeit:\n\n$$|A|+|B|-|A\\cap B|=(10+p)+(13+p)-(3+p)=23+p$$\n\n(mit $|B|=20+p-8+1=13+p$).\n\nÜberlappungslänge $(10+p)-8+1=3+p$ und $|B|=13+p$ ergeben zusammen die Vereinigungsmächtigkeit $(10+p)+(13+p)-(3+p)=23+p$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDas De-Morgan-Gesetz $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ gilt in jeder Booleschen Algebra von Mengen; es hängt nicht von $p$ ab.\n\nDas De-Morgan-Gesetz ist eine Identität der Potenzmengen-Booleschen Algebra; das Einsetzen der konkreten Mengen $A,B$ ist für die Mengengleichheit nicht nötig.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$|(A\\cup B)^{c}|=30-(23+p)=7-p=|A^{c}\\cap B^{c}|$$\n\nKomplement der Vereinigung: $30-(23+p)=7-p$, und das ist nach De Morgan gleich $|A^{c}\\cap B^{c}|$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$|A\\setminus B|=(10+p)-(3+p)=7$$\n\nBei $p=5$ hat die Differenz weiterhin die Mächtigkeit $7$.\n\nDie Differenzmächtigkeit $(10+p)-(3+p)=7$ ist unabhängig von $p$ und beträgt daher auch bei $p=5$ genau $7$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $p=5$: $|A\\cap B|=8$, also\n\n$$|(A\\cap B)^{c}|=30-8=22\\neq 20$$\n\nBei $p=5$ hat der Schnitt die Mächtigkeit $8$, das Komplement in einer $30$-elementigen Menge also die Mächtigkeit $22$, nicht $20$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 1.11": {
+    "title": "Prüfung einer parametrischen Zerlegung auf die Partitionsaxiome",
+    "context": "Es sei $n\\ge 4$ und $X=\\{0,1,\\ldots,n-1\\}$. Betrachte die Familie\n\n$$\\mathcal{F}=\\bigl\\{\\{0,1\\},\\{2,3\\},\\{4,\\ldots,n-1\\}\\bigr\\}$$ für $n\\ge 5$, und interpretiere den dritten Block als leer, falls $n=4$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "Für $n=6$ zerlegt $\\mathcal{F}$ die Menge $X$.",
+      "Für $n=4$ zerlegt $\\mathcal{F}$ die Menge $X$.",
+      "Die Blöcke von $\\mathcal{F}$ sind für jedes $n\\ge 5$ paarweise disjunkt.",
+      "Für $n=8$ gilt $|\\mathcal{F}|=3$ und der größte Block hat die Mächtigkeit $4$.",
+      "Für $n=6$ liegt das Element $5$ in genau einem Block von $\\mathcal{F}$."
+    ],
+    "solution_overview": "Eine Partition verlangt nichtleere, paarweise disjunkte Blöcke, deren Vereinigung $X$ ist. Für $n\\ge 5$ sind die drei Blöcke $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,\\ldots,n-1\\}$ nichtleer, disjunkt und überdecken $X$. Für $n=4$ ist der dritte Block leer, sodass $\\mathcal{F}$ das Nichtleerheitsaxiom verletzt (und $\\{0,1\\}\\cup\\{2,3\\}=X$ eine andere Familie erfordern würde). Bei $n=8$ ist der dritte Block $\\{4,5,6,7\\}$ mit Mächtigkeit $4$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$n=6$: Die Blöcke $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,5\\}$ sind nichtleer, paarweise disjunkt und vereinigen sich zu $X=\\{0,\\ldots,5\\}$. Damit liegt eine Partition vor.\n\nBei $n=6$ ist der dritte Block $\\{4,5\\}$ nichtleer, und die drei Blöcke überdecken $\\{0,1,2,3,4,5\\}$ ohne Überlappung.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$n=4$: Der dritte Block ist leer. Eine Partition darf die leere Menge nicht enthalten. Also ist $\\mathcal{F}$ keine Partition von $X$.\n\nDas Nichtleerheitsaxiom scheitert bei $n=4$: Jeder Block einer Partition muss nichtleer sein.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFür $n\\ge 5$ überlappen die ganzzahligen Intervalle $\\{0,1\\}$, $\\{2,3\\}$, $\\{4,\\ldots,n-1\\}$ nicht.\n\nDie Schnitte $0,1\\,|\\,2,3\\,|\\,4,\\ldots,n-1$ legen jedes Element von $X$ für $n\\ge 5$ in genau einen Block.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$n=8$: drei Blöcke; der größte ist $\\{4,5,6,7\\}$ mit Mächtigkeit $4$.\n\nBei $n=8$ hat der dritte Block $\\{4,5,6,7\\}$ vier Elemente und ist damit strikt größer als die beiden Zweierblöcke.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$n=6$: $5\\in\\{4,5\\}$ und sonst nirgends. Es liegt in genau einem Block.\n\nBei $n=6$ liegt das Element $5$ in $\\{4,5\\}$ und in keinem anderen Block von $\\mathcal{F}$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 1.12": {
+    "title": "Zählen von Teilmengen einer parametrischen $n$-Menge",
+    "context": "Es sei $n=6$ und $A=\\{1,2,3,4,5,6\\}$. Es sei $k$ ein ganzzahliger Parameter mit $0\\le k\\le n$. Bezeichne mit $\\binom{n}{k}$ die Anzahl der $k$-elementigen Teilmengen.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$|\\mathcal{P}(A)|=64$ und $\\binom{6}{0}+\\binom{6}{6}=2$.",
+      "$\\binom{6}{2}=15$ und $\\binom{6}{4}=15$.",
+      "Die Anzahl der Teilmengen von $A$ mit mindestens $5$ Elementen ist gleich $7$.",
+      "Wird ein Element aus $A$ entfernt, so hat die Potenzmenge der entstandenen $5$-Menge die Mächtigkeit $32$.",
+      "$\\binom{6}{3}=18$."
+    ],
+    "solution_overview": "$$|\\mathcal{P}(A)|=2^{6}=64.$$\n\n$$\\binom{6}{0}=1,\\ \\binom{6}{1}=6,\\ \\binom{6}{2}=15,\\ \\binom{6}{3}=20,$$\n\n$$\\binom{6}{4}=15,\\ \\binom{6}{5}=6,\\ \\binom{6}{6}=1.$$\n\nTeilmengen mit Mächtigkeit $\\ge 5$: $\\binom{6}{5}+\\binom{6}{6}=7$. Eine $5$-Menge hat Potenzmengenmächtigkeit $2^{5}=32$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$2^{6}=64,\\qquad\\binom{6}{0}+\\binom{6}{6}=1+1=2$$\n\nDie Potenzmengenmächtigkeit $2^{6}=64$ und die beiden extremen Binomialkoeffizienten sind je $1$, ihre Summe also $2$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\\binom{6}{2}=\\frac{6\\cdot5}{2}=15=\\binom{6}{4}$$\n\nnach der Symmetrie $\\binom{n}{k}=\\binom{n}{n-k}$.\n\nDie direkte Rechnung $\\frac{6\\cdot5}{2}=15$ und die Symmetrie $\\binom{6}{4}=\\binom{6}{2}$ liefern die beiden gleichen Anzahlen.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\\binom{6}{5}+\\binom{6}{6}=6+1=7$$\n\nDie Summe $\\binom{6}{5}+\\binom{6}{6}=6+1=7$ zählt die Teilmengen mit mindestens $5$ Elementen.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDas Entfernen eines Elements hinterlässt eine $5$-Menge; $2^{5}=32$.\n\nNach dem Entfernen eines Elements bleiben fünf Elemente; die Potenzmengenformel $2^{5}=32$ gilt unmittelbar.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$\\binom{6}{3}=\\frac{6\\cdot5\\cdot4}{6}=20\\neq 18$$\n\nDie Dreieranzahl ist $\\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1}=20$, also nicht $18$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "MATH 1.13": {
+    "title": "Halboffene Intervalle mit Parameter und universellem Komplement",
+    "context": "Es sei $a$ reell mit $a>2$. Im Universum $U=[0,a+5]$ definiere\n\n$$I=[0,a),\\qquad J=[a-2,a+3],\\qquad K=(a+1,a+5].$$\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$I\\cap J=[a-2,a)$ und die Länge von $I\\cap J$ ist gleich $2$.",
+      "$I\\cup J=[0,a+3]$ für jedes $a>2$.",
+      "$J\\cap K=(a+1,a+3]$ und seine Länge ist gleich $2$.",
+      "Für $a=4$ gilt $3\\in I\\cap J$ und $3\\in K$.",
+      "$I\\cap K=\\emptyset$ für jedes $a>2$."
+    ],
+    "solution_overview": "Schneide und vereinige die Endpunkte sorgfältig.\n\n$$I\\cap J=[a-2,a),$$\n\nmit Länge $2$. Ferner\n\n$$I\\cup J=[0,a+3],\\qquad J\\cap K=(a+1,a+3],$$\n\nund die Länge von $J\\cap K$ ist $2$. Da jeder Punkt von $I$ kleiner als $a$ ist und jeder Punkt von $K$ größer als $a+1$, gilt $I\\cap K=\\emptyset$. Bei $a=4$: $I\\cap J=[2,4)$ enthält $3$, aber $K=(5,9]$ enthält $3$ nicht.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$I\\cap J=[0,a)\\cap[a-2,a+3]=[a-2,a)$$\n\nLänge: $a-(a-2)=2$.\n\nDer linke Endpunkt $a-2$ stammt von $J$; der rechte Endpunkt $a$ (ausgeschlossen) stammt von $I$; die Länge ist $a-(a-2)=2$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nLinker Endpunkt $0$ von $I$; rechter Endpunkt $a+3$ von $J$; sie überlappen auf $[a-2,a)$, also $I\\cup J=[0,a+3]$.\n\nDa $I$ und $J$ für $a>2$ auf einem nichtleeren Intervall überlappen, sind die Endpunkte der Vereinigung die äußersten: $0$ und $a+3$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$J\\cap K=[a-2,a+3]\\cap(a+1,a+5]=(a+1,a+3]$$\n\nLänge $a+3-(a+1)=2$.\n\nDer Schnitt von $[a-2,a+3]$ mit $(a+1,a+5]$ schneidet links auf $a+1$ (ausgeschlossen) und rechts auf $a+3$ zu; die Länge ist $2$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$a=4$: $I\\cap J=[2,4)$ enthält $3$, aber $K=(5,9]$, also $3\\notin K$. Die Konjunktion scheitert.\n\nBei $a=4$ beginnt $K=(5,9]$ nach $5$, sodass die ganze Zahl $3$ aus $I\\cap J=[2,4)$ nicht in $K$ liegen kann.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nJedes $x\\in I$ erfüllt $x<a$, während jedes $y\\in K$ $y>a+1>a$ erfüllt. Es gibt keinen gemeinsamen Punkt.\n\nEin gemeinsamer Punkt müsste zugleich $x<a$ und $x>a+1$ erfüllen, was unmöglich ist.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 1.14": {
+    "title": "Dreifache Venn-Zählung mit Parameter $k$",
+    "context": "In einem Club mit $N=100$ Mitgliedern seien $A$, $B$, $C$ die Mengen der Teilnehmenden an drei Workshops. Anzahlen: $|A|=30+k$, $|B|=28+k$, $|C|=26+k$, $|A\\cap B|=10+k$, $|A\\cap C|=8+k$, $|B\\cap C|=7+k$, $|A\\cap B\\cap C|=3+k$, wobei $k$ eine ganze Zahl mit $0\\le k\\le 5$ ist.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$|A\\cup B\\cup C|=62+k$ für jedes zulässige $k$.",
+      "Für $k=2$ gilt $|A\\cup B\\cup C|=64$.",
+      "Für $k=2$ ist die Zahl derer, die nur an $A$ teilnehmen, gleich $17$.",
+      "Für $k=2$ nehmen mindestens $40$ Mitglieder an keinem der drei Workshops teil.",
+      "Die Nur-$A$-Anzahl ist für jedes zulässige $k$ gleich $15$."
+    ],
+    "solution_overview": "Inklusion-Exklusion:\n\n$$|A\\cup B\\cup C|=(30+k)+(28+k)+(26+k)-(10+k)-(8+k)-(7+k)+(3+k)=62+k.$$\n\nNur $A$: $|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|=(30+k)-(10+k)-(8+k)+(3+k)=15$.\n\nKeiner: $100-(62+k)=38-k$. Bei $k=2$: Vereinigung $64$, Nur-$A$ $15$, keiner $36$.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nSummiere die sieben IE-Terme:\n\n$$30+28+26-10-8-7+3+k(1+1+1-1-1-1+1)=62+k$$\n\nDie Koeffizienten von $k$ in der IE-Formel: $1+1+1-1-1-1+1=1$, also ist die Vereinigung $62+k$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBei $k=2$: $|A\\cup B\\cup C|=64$.\n\nEinsetzen von $k=2$ in $62+k$ liefert unmittelbar $64$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nNur-$A$ ist für jedes $k$ gleich $15$, also auch für $k=2$. Die Behauptung nennt $17$:\n\n$$15\\neq 17$$\n\nNur-$A$ vereinfacht sich für jedes $k$ zu $15$; bei $k=2$ bleibt es $15$, nicht $17$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Anzahl derer, die an keinem teilnehmen, ist $38-k$. Bei $k=2$:\n\n$$38-2=36$$\n\n$$36\\ge 40$$\n\nist falsch.\n\nDie Anzahl $38-k$ beträgt bei $k=2$ genau $36$ und verfehlt die Schwelle $40$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur-$A$ vereinfacht sich unabhängig von $k$ zu $15$, wie in der Übersicht gezeigt.\n\nDie $k$-Terme in Nur-$A$ heben sich auf: $(30+k)-(10+k)-(8+k)+(3+k)=15$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig."
+    ]
+  },
+  "MATH 1.18": {
+    "title": "Potenzmenge einer parametrischen vierelementigen Menge",
+    "context": "Es sei $b\\ge 1$ eine ganze Zahl und $W=\\{b,b+1,b+2,b+3\\}$. Bezeichne mit $\\mathcal{P}(W)$ die Potenzmenge.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements": [
+      "$|\\mathcal{P}(W)|=16$ und $\\binom{4}{2}=6$.",
+      "$\\{b,b+3\\}\\in\\mathcal{P}(W)$ und $\\{b,b+3\\}\\subseteq W$.",
+      "Die Anzahl der $3$-elementigen Teilmengen von $W$ ist gleich $4$.",
+      "Für $b=10$ gilt $\\{10,11,12,13\\}\\in\\mathcal{P}(W)$.",
+      "$|\\mathcal{P}(W)|=2^{|W|}=12$."
+    ],
+    "solution_overview": "$|W|=4$, also $|\\mathcal{P}(W)|=2^{4}=16$. Binomialzahlen: $\\binom{4}{2}=6$, $\\binom{4}{3}=4$. Jede Teilmenge von $W$, einschließlich $W$ selbst und jeder $2$-Teilmenge, gehört zu $\\mathcal{P}(W)$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test.",
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$$|\\mathcal{P}(W)|=2^{4}=16,\\qquad\\binom{4}{2}=6$$\n\nPotenzmengenmächtigkeit $2^{4}=16$ und $\\binom{4}{2}=6$ sind die Standardzählformeln für eine $4$-Menge.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$\\{b,b+3\\}\\subseteq W$, also $\\{b,b+3\\}\\in\\mathcal{P}(W)$. Beide Teilbehauptungen gelten.\n\nDie Teilmengenschaft $\\{b,b+3\\}\\subseteq W$ ist an der Aufzählung klar, und jede Teilmenge ist Element von $\\mathcal{P}(W)$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\\binom{4}{3}=4$$\n\n$$\\binom{4}{3}=4$$ zählt die $3$-Teilmengen; gleichwertig lässt jede $3$-Teilmenge genau eines der vier Elemente weg.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$b=10$: $W=\\{10,11,12,13\\}$, und $W\\in\\mathcal{P}(W)$.\n\nDie volle Menge $W$ ist stets Element von $\\mathcal{P}(W)$, also liegt bei $b=10$ die Aufzählung $\\{10,11,12,13\\}$ in der Potenzmenge.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$$2^{4}=16\\neq 12$$\n\nDie behauptete Potenzmengenmächtigkeit ist falsch.\n\nDie Identität $|\\mathcal{P}(W)|=2^{|W|}$ liefert $16$ und widerspricht der behaupteten $12$.\n\nJede angezeigte Identität wird auf beiden Seiten geprüft, bevor mit der Behauptung verglichen wird.\n\nSchreibe jeden Zwischenschritt auf eine eigene Zeile, setze die ermittelten Parameter noch einmal ein und vergleiche erst dann den genauen Wert mit der in der Aussage behaupteten Schwelle oder Aufzählung.\n\nDie Aussage ist falsch."
+    ]
+  }
+}
