@@ -1,17 +1,17 @@
 {
   "economics": [
     {
-      "case_id": "CASE 6.5.034",
-      "title": "Turnover and Liquidity Extract 34",
-      "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
+      "case_id": "DEMO ECON 2.H01",
+      "title": "Vienna flat search under a binding rent cap",
+      "chapter": 2,
+      "subsection": "2.6",
+      "context": "A district keeps a legal rent ceiling well below what comparable uncontrolled flats advertise. Waiting lists for capped units are years long, while uncapped listings nearby clear in weeks. Decide whether each claim is true or false.",
       "statements": [
-        "Inventory turnover, cost of sales taken relative to average inventory, is below 6.87 times per year.",
-        "Asset turnover, revenue taken relative to average total assets, is above 1.48.",
-        "With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
-        "Revenue exceeds €999 thousand.",
-        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.4 times per year."
+        "Long queues for capped flats are evidence of excess demand at the controlled rent.",
+        "Because the ceiling is a legal maximum, every landlord in the district must be earning economic profit on capped units.",
+        "Tenants on the waiting list still pay through search time and side arrangements even when the money rent is capped.",
+        "If the ceiling were repealed and market rents rose, the number of people wanting units at the old low rent would no longer set the new equilibrium quantity.",
+        "A rise in uncapped advertised rents nearby proves that the controlled ceiling already sits above the uncontrolled equilibrium rent."
       ],
       "answer_key": [
         true,
@@ -20,259 +20,85 @@
         true,
         false
       ],
+      "difficulty_level": "5/5",
       "tactical_explanations": [
-        "Flows for the year and stocks at year-end answer different questions. With that split the claim is fine. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A below reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
-        "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{823 + 1{,}028}{2} \\approx 925.5\n$$\n\n$$\n\\frac{1{,}019}{925.5} \\approx 1.1010\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 925.5. Asset turnover = 1,019 ÷ 925.5 ≈ 1.1010 Claimed above 1.48.\n\nThat comparison uses the extract figures only, so the claim stands or falls on the arithmetic itself.\n\nSo the statement is False.",
-        "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{169 + 179}{2} \\approx 174\n$$\n\n$$\n\\frac{674}{174} \\approx 3.87\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 674174 = 3.87 That interpretation matches the definition.\n\nUsing only the extract averages keeps the turnover arithmetic aligned with the claim.\n\nSo the statement is True.",
-        "Revenue is read directly from the extract and compared with the stated euro-thousand threshold, a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1{,}019\\text{ thousand}\n$$\n\nRead revenue from the extract. Revenue = €1,019 thousand; threshold exceeds €999 thousand. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine. A exceeds reading of the extract supports this claim. Operators and dealers can report the same the item on different lines.\n\nWalk the claim against those extract lines once more: the nouns, the timing, and the arithmetic either line up with the chapter rule or they do not. That is the whole test for this letter.\n\nSo the statement is True.",
-        "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{135 + 107}{2} \\approx 121\n$$\n\n$$\n\\frac{1{,}019}{121} \\approx 8.4215\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,019121 = 8.4215 Threshold exceeds 10.4. Check the extract’s labels once more against the stem’s threshold.\n\nThe extract's own figures are enough for that check; no extra assumption is required.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nQueues mean more households want the capped units at that rent than landlords will supply. That is excess demand at the controlled price.\n\nSo the statement is True.",
+        "**B.** → False\n\nA binding ceiling usually squeezes landlord returns. Chronic shortage and deferred maintenance are the typical signs, not guaranteed economic profit for every landlord.\n\nSo the statement is False.",
+        "**C.** → True\n\nWhen money rent cannot clear the market, rationing spills into time costs, search effort, and informal side deals. Those are real costs even if the listed rent is capped.\n\nSo the statement is True.",
+        "**D.** → True\n\nAfter repeal, trade happens at the new market rent. Notional demand at a vanished capped price does not determine the new equilibrium quantity.\n\nSo the statement is True.",
+        "**E.** → False\n\nHigher uncapped rents nearby suggest the free-market level lies above the ceiling, so the ceiling binds from below — the opposite of sitting above equilibrium.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "CASE 6.4.010",
-      "title": "Asset Composition Chart 10",
-      "subsection": "6.4",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
+      "case_id": "DEMO ECON 2.H02",
+      "title": "Opportunity cost of a Saturday mock weekend",
+      "chapter": 2,
+      "subsection": "2.2",
+      "context": "Mila can spend Saturday either working a paid shift that nets €120 after tax, attending a mock-exam weekend that costs €40 out of pocket, or staying home at zero money cost. Decide whether each claim about opportunity cost is true or false.",
       "statements": [
-        "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
-        "Working capital of €133 thousand is positive on this balance sheet.",
-        "The debt ratio exceeds 56%.",
-        "Trade receivables make up less than 48.5% of current assets.",
-        "Cash and cash equivalents make up more than 23.1% of current assets."
+        "If she chooses the mock, a correct accounting of opportunity cost must include the €120 she did not earn on the shift.",
+        "The opportunity cost of the mock is only the €40 fee, because the shift income was never deposited.",
+        "Staying home has opportunity cost equal to the best rejected alternative among the shift and the mock.",
+        "If the shift were unpaid volunteer work with no monetary value to her, the opportunity cost of the mock would still include whatever she judges the next-best use of Saturday to be worth.",
+        "Because she can only pick one Saturday plan, summing the values of the shift and of staying home gives the opportunity cost of the mock."
       ],
       "answer_key": [
         true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A outside reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
-        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 356 and current liabilities total 223:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 356, \\quad \\text{CL} = 223,\\quad \\text{WC} = 356 - 223\n$$\n\n$$\n\\text{WC} = 133\n$$\n\nWC = 356 − 223 = 133. The stem cites €133 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
-        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 703,\\quad \\text{Total assets} = 1{,}181\n$$\n\n$$\n\\frac{703}{1{,}181} \\approx 0.5953 \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 56\\%\n$$\n\nThe debt ratio is 59.5%, above the 56% benchmark. Debt ratio ≈ 703 ÷ 1,181 = 59.5%.\n\nSo the statement is True.",
-        "From the extract, Trade receivables = 81 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{81}{356}\n$$\n\n$$\n\\text{Share} = 22.8\\%\n$$\n\nTrade receivables / current assets ≈ 81 ÷ 356 = 22.8%. Less than 48.5% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
-        "From the extract, Cash and cash equivalents = 119 and current assets = 356.\n\n$$\n\\text{Share} = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{119}{356}\n$$\n\n$$\n\\text{Share} = 33.4\\%\n$$\n\nCash and cash equivalents / current assets ≈ 119 ÷ 356 = 33.4%. More than 23.1% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 5.1.01",
-      "title": "Marketing Definition of a Product",
-      "subsection": "5.1",
-      "chapter": null,
-      "context": "Review the marketing definition of a product as every good and service that can be exchanged to fulfil customer wishes and needs. Evaluate the following economic assertions:",
-      "statements": [
-        "In marketing terminology, a product refers only to physical goods and excludes services from the definition.",
-        "In marketing terminology, a product is every good and/or service that can be exchanged in order to fulfil the wishes and needs of customers.",
-        "Producer products are defined by whether an item is manufactured in a factory rather than by the customer who purchases it.",
-        "Consumer products are defined by retail packaging size rather than by whether the buyer is a household or business.",
-        "A printer is always a consumer product because households are the most visible end users of printers."
-      ],
-      "answer_key": [
         false,
         true,
-        false,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "Marketing treats a product as anything that can be exchanged to meet customer wishes and needs, including services. Limiting the term to physical goods alone drops maintenance contracts, consulting, and support out of the definition without reason.\n\nSo the statement is False.",
-        "Under the marketing definition, a product is every good and/or service that can be exchanged to fulfil customer wishes and needs. Tangible merchandise and intangible service work sit under the same label once an exchange is on the table.\n\nSo the statement is True.",
-        "Producer versus consumer labels turn on who buys, not on whether the item left a factory. A finished printer sold to another firm is still a producer product even though it is fully assembled merchandise. Factory origin, assembly line history, and industrial design do not decide the category. Marketing asks whether the purchaser is a business or a household in that exchange. Treating manufacture as the test misplaces the buyer criterion and would misclassify countless finished B2B goods.\n\nSo the statement is False.",
-        "Consumer-product status tracks whether the buyer is a private household, not how large the retail pack is. A bulky home appliance bought for domestic use remains a consumer product; a tiny office staple bought by a firm remains a producer product. Packaging size is not the classifying rule.\n\nSo the statement is False.",
-        "Printers sold into offices for commercial work are producer products even though households also buy printers. Visibility of home users does not freeze every printer into the consumer category. Classification follows the actual purchaser in each exchange, so \"always consumer\" is too absolute.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 4.3.51",
-      "title": "Alpine Sensors AG as a Separate Legal Person",
-      "subsection": "4.3",
-      "chapter": null,
-      "context": "Three engineers incorporate Alpine Sensors AG in Austria so the firm itself can hold patents, hire staff, and face suppliers in its own name. Evaluate the following economic assertions:",
-      "statements": [
-        "Once incorporated, Alpine Sensors AG is a legal entity of its own with rights and obligations comparable to those of natural persons in business life.",
-        "As a legal person, Alpine Sensors AG can own laboratory equipment and land, hire technicians, and close supply contracts in the company’s name.",
-        "If a supplier sues over unpaid circuit boards, the lawsuit is brought against Alpine Sensors AG rather than automatically against each engineer’s private name.",
-        "The founding engineers must personally manage every production shift because shareholders of a corporation are always also its day-to-day managers.",
-        "A hired plant manager at Alpine Sensors AG may run operations without owning any shares in the company."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Incorporation gives Alpine Sensors AG its own legal personality. The company holds rights and duties in business life much as a natural person would when owning assets, hiring, or contracting, separate from the three engineers as private individuals.\n\nSo the statement is True.",
-        "As a legal person, Alpine Sensors AG can own lab gear and land, employ technicians, and sign supply contracts in the company name. Those acts attach to the firm, not to each founder’s private identity.\n\nSo the statement is True.",
-        "Supplier suits over unpaid boards are filed against Alpine Sensors AG as the contracting party. Creditors pursue the corporate defendant first rather than automatically naming every engineer’s private identity as the debtor on the face of the claim.\n\nSo the statement is True.",
-        "Shareholders fund and own the corporation; they are not forced to run every production shift. Alpine Sensors AG can hire managers and operators while founders remain owners without day-to-day shop-floor duty. Equating ownership with mandatory personal management confuses equity stakes with employment roles. Many corporations deliberately separate investors from operators so specialists run production. The engineers may choose to work in the plant, but corporate form does not compel that identity of owner and manager for every shift.\n\nSo the statement is False.",
-        "A hired plant manager can direct operations with zero shareholding. Management authority comes from appointment and employment, not from an automatic equity ticket, which is why ownership and operational control can diverge inside Alpine Sensors AG.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 5.4.16",
-      "title": "Impulse Buying Under Promotion",
-      "subsection": "5.4",
-      "chapter": null,
-      "context": "Analyze how high-quality durable goods can be circulated among users instead of being discarded after brief use. Evaluate the following economic assertions:",
-      "statements": [
-        "Businesses bear no responsibility for consumer budgets when advertising encourages additional unplanned purchases.",
-        "Swapping quality garments at community events extends wear without each participant buying new low-cost items.",
-        "Refurbishment always wastes more resources than manufacturing a new unit regardless of product condition.",
-        "For electronics retailers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-        "Event clothing must be purchased because rental services cannot supply outfits of higher quality than cheap retail goods."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
         true,
         false
       ],
+      "difficulty_level": "5/5",
       "tactical_explanations": [
-        "When ads push unplanned extras, firms help shape the spend that follows. Claiming zero responsibility for those budget overruns ignores how promotion works. Marketing that sparks impulse buys is not a neutral bystander.\n\nSo the statement is False.",
-        "Community swap events move quality garments between wearers without a trip to buy new low-cost replacements. Each swap extends fabric life and cuts demand for fresh cheap stock. Circulation replaces disposal-and-repurchase for that wardrobe slot.\n\nSo the statement is True.",
-        "Refurbishing a sound chassis with new batteries or screens often uses far less material than building a unit from raw inputs. Condition matters: a lightly used device is a candidate for refurbishment, not automatic scrap. Blanket claims that refurbishment always wastes more than new manufacture ignore those savings. Manufacturers and repair shops routinely choose remanufacture when the base product is still solid. The absolute wording is therefore false.\n\nSo the statement is False.",
-        "Electronics retailers refresh models and advertise features that shoppers had not requested. Creating new wishes sits alongside meeting stated demand. Continuous development plus promotion can manufacture desire, not only respond to it.\n\nSo the statement is True.",
-        "Premium rental racks often stock higher-quality eventwear than bargain retail racks. Clients need not purchase to access that tier. Saying rental cannot beat cheap retail quality invents a false limit.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nChoosing the mock means forgoing the shift. That forgone net pay is part of the opportunity cost, alongside any fee.\n\nSo the statement is True.",
+        "**B.** → False\n\nOpportunity cost tracks the best rejected alternative, not only cash that left the wallet. Unreceived shift pay still counts.\n\nSo the statement is False.",
+        "**C.** → True\n\nStaying home rejects whichever of the shift or the mock she ranks higher. That best rejected option is the opportunity cost of staying home.\n\nSo the statement is True.",
+        "**D.** → True\n\nOpportunity cost is not limited to wages. Whatever value she attaches to the next-best use of the day is still the cost of taking the mock.\n\nSo the statement is True.",
+        "**E.** → False\n\nOpportunity cost uses the single best rejected alternative, not the sum of every rejected plan.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "CASE 2.4.28",
-      "title": "Barter limits",
-      "subsection": "2.4",
-      "chapter": null,
-      "context": "Two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Evaluate the following economic assertions:",
-      "statements": [
-        "Inflation refers to one shop's single price hike only, never to the general price level.",
-        "Division of labour across countries is impossible because climate never differs.",
-        "Because no euros change hands, this egg-for-vegetable swap involves no economic exchange at all.",
-        "Without money, storing value from perishable eggs into future purchases is harder than holding currency.",
-        "Barter economies never face problems comparing relative values of unlike goods."
-      ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "Inflation is a general price-level rise, not a single shop's isolated hike. One sticker change is not inflation by itself. That reading follows directly from the scarce means named in the statement, not from a different chapter topic.\n\nSo the statement is False.",
-        "Climate and other differences across countries are exactly why cross-border specialisation occurs. Division of labour across countries is common, not impossible.\n\nSo the statement is False.",
-        "An agreed egg-for-vegetable swap is exchange even with no euros. Barter is exchange without money, not the absence of economic exchange. That reading follows directly from the scarce means named in the statement, not from a different chapter topic.\n\nSo the statement is False.",
-        "Perishable eggs are a poor store of value compared with currency balances that can buy a wide future basket. Without money, turning today's egg surplus into deferred purchasing power is harder.\n\nFarmers in the stem can trade once, but holding value across time is clumsier when the \"savings\" spoil. That conclusion stays inside this statement's own nouns and does not borrow a different definition from another letter.\n\nSo the statement is True.",
-        "Barter economies struggle to compare unlike goods without a common measure. Comparison problems are a standard barter friction, not something those economies never face.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 4.6.13",
-      "title": "Working Capital and Short-Term Credit",
-      "subsection": "4.6",
-      "chapter": null,
-      "context": "Consider a construction firm covering payroll gaps with short-term bank loans while shareholders debate whether to inject equity instead of adding more debt. Evaluate the following economic assertions:",
-      "statements": [
-        "A business with a high proportion of loan capital might have difficulties obtaining more credit.",
-        "High gearing means capital expenditure should be funded only through additional bank loans at any interest rate offered.",
-        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered.",
-        "Revenue expenditure must never use short-term trade credit when the balance sheet already lists any loan capital.",
-        "Administration costs of bond issues are ignored because only equity carries issuance expenses."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "A business with a high proportion of loan capital might have difficulties obtaining more credit. Lenders already see elevated repayment risk before the next facility is discussed.\n\nSo the statement is True.",
-        "High gearing argues against funding capital expenditure only through additional bank loans at any rate offered. Internal funds or investors can be safer than accepting every expensive debt offer on the table.\n\nSo the statement is False.",
-        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered. Security becomes a gate when unsecured appetite is already exhausted by existing loans. Higher interest alone may not suffice if the lender wants assets pledged against further exposure. The construction firm's equity debate sits beside that collateral reality when debt is already heavy.\n\nSo the statement is True.",
-        "Revenue expenditure may still use short-term trade credit even when some loan capital already appears on the balance sheet. A blanket ban on supplier credit whenever any loan exists overstates gearing caution.\n\nSo the statement is False.",
-        "Bond issues also carry administration and flotation expenses, not only equity issues. Ignoring bond issuance costs because 'only equity has fees' misreads the cost comparison.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 2.1.07",
-      "title": "PhoneFix screen repairs",
-      "subsection": "2.1",
-      "chapter": null,
-      "context": "Consider phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. Evaluate the following economic assertions:",
-      "statements": [
-        "Screen replacement is a service, while a phone case sold at the counter is a good.",
-        "Because PhoneFix is a business rather than a household, its monthly spare parts can never run scarce.",
-        "A customer buying a decorative case purely for its design is satisfying a want rather than a basic need.",
-        "Repairing a phone never fulfils a need because phones are luxury items outside normal economic analysis.",
-        "A limited monthly batch of parts forces the shop to economise by prioritising which jobs to accept."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Replacing a cracked screen is labour performed for the customer, a service. A phone case sold at the counter is a tangible good. PhoneFix can offer both in one visit.\n\nSo the statement is True.",
-        "Spare parts arrive in limited monthly batches. Being a business does not create unlimited stock. When the batch runs down, further repairs wait. Scarcity of parts is exactly why the shop must prioritise jobs.\n\nSo the statement is False.",
-        "A decorative case bought for design rather than protection serves appearance and preference. That is a want, not a basic need for well-being. Functionally necessary repairs differ from optional styling accessories.\n\nSo the statement is True.",
-        "A working phone often supports work, school contact, and safety. Repairing it can restore a practical need, not merely a luxury whim. Excluding phones from economic analysis is artificial.\n\nSo the statement is False.",
-        "A fixed monthly parts batch cannot cover every cracked screen that walks in. PhoneFix must decide which jobs to accept, which to delay, and how to stretch inventory. That prioritisation is economising under scarcity. Unlimited-parts thinking would remove the need to choose; limited batches force ranking. The statement links the shop's constraint to careful allocation correctly.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 3.4.01",
-      "title": "EU micro staff ceiling",
+      "case_id": "DEMO ECON 3.H01",
+      "title": "EU size threshold and a growth shock",
+      "chapter": 3,
       "subsection": "3.4",
-      "chapter": null,
-      "context": "Consider a workshop that employs nine people with €1.8m turnover. Evaluate the following economic assertions:",
+      "context": "A logistics firm sits just under an EU \"small\" headcount threshold that unlocks a subsidy. A sudden contract would force enough hiring to cross the threshold for the whole calendar year. Decide whether each claim is true or false.",
       "statements": [
-        "Because staff are below ten, a firm remains a micro enterprise despite turnover above €2m.",
-        "Forty-five staff alone guarantees small classification even if turnover exceeds €10m.",
-        "Meeting the staff ceiling alone is sufficient for micro status regardless of turnover or balance sheet totals.",
-        "Under the EU definition, a micro enterprise may employ fewer than ten people.",
-        "A firm qualifies as micro because its balance sheet is below €2m, regardless of turnover above €2m."
+        "Crossing the threshold can end subsidy eligibility even if revenue and balance-sheet totals stay inside other SME bands.",
+        "If the firm refuses the contract solely to keep the subsidy, that choice reveals that keeping the subsidy is worth more to the firm than the contract's expected net gain.",
+        "Headcount thresholds never create incentives to stay artificially small, because subsidies are always tiny next to commercial contracts.",
+        "A rival already above the threshold does not lose the same subsidy by taking an identical contract, so the threshold can distort which firm expands.",
+        "If the threshold uses annual average staff, a short spike of temporary hires can still push the official average across the line."
       ],
       "answer_key": [
-        false,
-        false,
+        true,
+        true,
         false,
         true,
-        false
+        true
       ],
+      "difficulty_level": "5/5",
       "tactical_explanations": [
-        "Headcount under ten is only one micro test. Turnover above €2m can still block micro status even with a tiny payroll. Staff alone never completes the EU micro definition.\n\nSo the statement is False.",
-        "Forty-five staff sit inside the small employee band, yet turnover above €10m can push the firm out of small status. Headcount guarantees nothing once the financial caps are breached.\n\nSo the statement is False.",
-        "Micro status needs fewer than ten people plus a financial test: turnover or balance sheet not above €2m. Meeting the staff ceiling while blowing past both financial caps fails the definition.\n\nA nine-person firm with €3m turnover and a €3m balance sheet is not micro under those figures. Staff sufficiency alone is therefore not enough for the label.\n\nSo the statement is False.",
-        "Under the EU definition, a micro enterprise may employ fewer than ten people as its staff ceiling. That headcount limit is the employment half of the micro tests.\n\nSo the statement is True.",
-        "A balance sheet below €2m helps only if the other micro tests also hold. Turnover above €2m can still disqualify micro status even when the balance sheet looks small.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nSME tests are multi-criteria. Failing the staff criterion alone can remove status even when money metrics still look \"small\".\n\nSo the statement is True.",
+        "**B.** → True\n\nTurning down the contract to keep the subsidy is revealed preference: subsidy retention ranks above the contract's expected net benefit.\n\nSo the statement is True.",
+        "**C.** → False\n\nNotches around size thresholds are a standard reason firms delay hiring or split entities. Denying that incentive channel is wrong.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe already-large rival does not face the same discrete subsidy loss at the margin, so expansion incentives differ.\n\nSo the statement is True.",
+        "**E.** → True\n\nAnnual-average definitions mean temporary spikes can still move the official average enough to change status.\n\nSo the statement is True."
+      ]
     },
     {
-      "case_id": "CASE 6.2.039",
-      "title": "Liquidity From the Balance Sheet 39",
-      "subsection": "6.2",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
+      "case_id": "DEMO ECON 4.H01",
+      "title": "Separate legal person versus a personal guarantee",
+      "chapter": 4,
+      "subsection": "4.3",
+      "context": "Alpine Sensors is a limited-liability company. The founder is the sole shareholder and still signs a personal guarantee on a bank loan to the company. Decide whether each claim is true or false.",
       "statements": [
-        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
-        "The current ratio exceeds 1.28.",
-        "Working capital of €144 thousand is positive on this balance sheet.",
-        "Buildings make up more than 47.1% of total assets."
+        "As a separate legal person, the company can own assets and sue in its own name even though one person owns all the shares.",
+        "Limited liability means the founder's personal guarantee is legally void, because company debts can never reach the owner.",
+        "If the company fails and the guarantee is enforced, the founder can lose personal assets covered by that guarantee.",
+        "Creditors without a guarantee are generally limited to company assets for ordinary claims — that is the usual limited-liability bargain.",
+        "Calling the company a separate person implies that the founder's personal tax residence automatically becomes the company's tax residence."
       ],
       "answer_key": [
         true,
@@ -281,14 +107,188 @@
         true,
         false
       ],
+      "difficulty_level": "5/5",
       "tactical_explanations": [
-        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
-        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 276,\\quad \\text{Inventory} = 119,\\quad \\text{CL} = 132\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 276 - 119 = 157\n$$\n\n$$\n\\frac{157}{132} \\approx 1.1894 \\le 1.35\n$$\n\nSo the statement is False.",
-        "CA ÷ CL is the current-ratio identity used below.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 119 + 60 + 97,\\quad \\text{CA} = 276,\\quad \\text{CL} = 74 + 58\n$$\n\n$$\n\\text{CL} = 132\n$$\n\n$$\n\\frac{276}{132} \\approx 2.0909 > 1.28\n$$\n\nCurrent ratio = 276 ÷ 132 ≈ 2.09. The claim says the ratio exceeds 1.28.\n\nSo the statement is True.",
-        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 276 and current liabilities total 132:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 276, \\quad \\text{CL} = 132,\\quad \\text{WC} = 276 - 132\n$$\n\n$$\n\\text{WC} = 144\n$$\n\nWC = 276 − 132 = 144. The stem cites €144 thousand; the arithmetic supports that reading. A positive gap means liquid short-term resources cover short-term debts. Do not confuse working capital with the current ratio (a cover multiple). Read the claim against the chapter rule: Working capital of €144 thousand is positive on this balance sheet.\n\nSo the statement is True.",
-        "From the extract, Buildings = 307 and total assets = 860.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{307}{860}\n$$\n\n$$\n\\text{Share} = 35.7\\%\n$$\n\nBuildings / total assets ≈ 307 ÷ 860 = 35.7%. More than 47.1% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
+        "**A.** → True\n\nSeparate legal personality means the company holds rights and duties distinct from its shareholders.\n\nSo the statement is True.",
+        "**B.** → False\n\nLimited liability is the default shield. A voluntary personal guarantee contractually opens that shield for the covered debt.\n\nSo the statement is False.",
+        "**C.** → True\n\nEnforcing the guarantee is how the bank reaches the founder's personal assets despite the corporate form.\n\nSo the statement is True.",
+        "**D.** → True\n\nOrdinary unsecured creditors of the company look to company assets first. That separation is the point of limited liability for those claims.\n\nSo the statement is True.",
+        "**E.** → False\n\nLegal personality does not copy the owner's personal tax residence onto the company. Corporate residence follows tax rules, not shareholder biography alone.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO ECON 4.H02",
+      "title": "Working-capital squeeze before a seasonal peak",
+      "chapter": 4,
+      "subsection": "4.6",
+      "context": "A retailer builds inventory before Christmas while customer receipts still arrive after the holidays. The bank offers a short-term credit line secured on inventory. Decide whether each claim is true or false.",
+      "statements": [
+        "The seasonal inventory build raises the need for working capital even if long-term fixed assets are unchanged.",
+        "If suppliers lengthen payment terms while customers still pay slowly, the working-capital squeeze necessarily eases.",
+        "Drawing the credit line to pay suppliers mid-season can be rational even though interest expense rises.",
+        "A sudden drop in December sales can leave the firm with both excess inventory and drawn credit, raising pressure on the line.",
+        "Because the loan is short-term, it cannot affect solvency risk — only long-term bonds matter for bankruptcy."
       ],
-      "difficulty_level": "5/5"
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "tactical_explanations": [
+        "**A.** → True\n\nWorking capital is about circulating current assets and liabilities. Seasonal stock is a classic driver even when plant is fixed.\n\nSo the statement is True.",
+        "**B.** → False\n\nLonger supplier terms help on one side, but slow customer collections can keep or widen the cash gap. \"Necessarily eases\" is too strong.\n\nSo the statement is False.",
+        "**C.** → True\n\nBridging a temporary cash trough can protect stock and supplier relationships; interest is the price of that bridge.\n\nSo the statement is True.",
+        "**D.** → True\n\nWeak sales leave stock unsold while debt is still drawn — a standard path into covenant and liquidity pressure.\n\nSo the statement is True.",
+        "**E.** → False\n\nShort-term debt that cannot be rolled or repaid is a common bankruptcy trigger. Short maturity does not erase risk.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO ECON 5.H01",
+      "title": "What counts as the product in a service bundle",
+      "chapter": 5,
+      "subsection": "5.1",
+      "context": "A tutoring platform sells \"exam readiness\": live classes, a question bank, and a mock exam. Marketing argues the product is the whole readiness outcome, not any single file. Decide whether each claim is true or false.",
+      "statements": [
+        "In a marketing sense, the product can be the bundle of services and the promised outcome, not only a physical textbook.",
+        "If students only value the mock exam and ignore the classes, the firm's brochure still forces every student to perceive the full bundle as the product.",
+        "Adding a progress dashboard can change the marketed product even if the underlying question files are unchanged.",
+        "Calling readiness the product means price comparisons with a rival's bare question bank are always apples-to-apples.",
+        "A free sample chapter can be part of the product strategy without being the paid product itself."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "tactical_explanations": [
+        "**A.** → True\n\nProduct definitions include services, experiences, and outcome promises, not only physical goods.\n\nSo the statement is True.",
+        "**B.** → False\n\nFirms propose a product concept; customers may still locate value in one component. Perception is not commanded by the brochure.\n\nSo the statement is False.",
+        "**C.** → True\n\nDelivery experience and augmented features are part of the marketed product. A dashboard can differentiate the offer with the same raw files.\n\nSo the statement is True.",
+        "**D.** → False\n\nA full readiness bundle and a raw question bank are different offers. Matching price tags does not make them the same good.\n\nSo the statement is False.",
+        "**E.** → True\n\nSamples and freemium hooks are classic strategy tools distinct from the paid SKU.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "case_id": "DEMO ECON 5.H02",
+      "title": "Impulse buys under a 24-hour flash promo",
+      "chapter": 5,
+      "subsection": "5.4",
+      "context": "An online shop runs a 24-hour countdown timer and a \"only 3 left\" badge on a discretionary gadget. Decide whether each claim is true or false.",
+      "statements": [
+        "Scarcity and time-limit cues can raise impulse purchases by compressing deliberation.",
+        "If the badge is false and stock is actually abundant, the tactic is still always legal everywhere because advertising law ignores scarcity claims.",
+        "A shopper who would have bought next month anyway may buy today; that timing shift is not the same as creating permanent new demand.",
+        "Higher conversion during the flash sale proves that every buyer acted against their own long-run interests.",
+        "Removing the countdown but keeping the same price can change behaviour if the urgency cue mattered."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "tactical_explanations": [
+        "**A.** → True\n\nUrgency and scarcity prompts are standard behavioural levers that shorten comparison shopping.\n\nSo the statement is True.",
+        "**B.** → False\n\nFake scarcity claims are a consumer-protection issue in many jurisdictions. \"Always legal everywhere\" is false.\n\nSo the statement is False.",
+        "**C.** → True\n\nPulling forward planned purchases changes timing; it need not raise lifetime demand by the same amount.\n\nSo the statement is True.",
+        "**D.** → False\n\nSome buyers may simply prefer acting now under a real discount. Conversion alone does not prove welfare-reducing impulse for every buyer.\n\nSo the statement is False.",
+        "**E.** → True\n\nIf urgency was doing work, the same price without the timer can yield different take-up — that is a cue effect.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "case_id": "DEMO ECON 6.H01",
+      "title": "Liquidity story behind a calm current ratio",
+      "chapter": 6,
+      "subsection": "6.2",
+      "context": "Two firms report the same current ratio. Firm L holds mostly cash and receivables from blue-chip clients. Firm S holds mostly slow fashion inventory and disputed receivables. Decide whether each claim is true or false.",
+      "statements": [
+        "Equal current ratios do not imply equal short-term payment capacity once asset composition differs.",
+        "Inventory that cannot be sold quickly is still as liquid as cash for meeting a payroll tomorrow.",
+        "A disputed receivable may sit inside current assets while being far less collectible than its book value suggests.",
+        "Analysts may downgrade Firm S's liquidity quality without any change in the headline current ratio.",
+        "Because both ratios match, creditors must offer both firms the same short-term interest rate."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "tactical_explanations": [
+        "**A.** → True\n\nLiquidity quality depends on how fast assets turn into cash, not only on the current-ratio headline.\n\nSo the statement is True.",
+        "**B.** → False\n\nIlliquid stock does not pay tomorrow's wages; cash does. Composition matters.\n\nSo the statement is False.",
+        "**C.** → True\n\nBeing classified as current does not guarantee collectibility. Disputes impair true liquidity.\n\nSo the statement is True.",
+        "**D.** → True\n\nQuality adjustments are exactly how two identical ratios get different credit readings.\n\nSo the statement is True.",
+        "**E.** → False\n\nLenders price cash-conversion reality, covenants, and collateral — not a single matching ratio alone.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO ECON 6.H02",
+      "title": "Asset mix after selling a warehouse",
+      "chapter": 6,
+      "subsection": "6.4",
+      "context": "A manufacturer sells a warehouse for cash and leases space back. Total assets fall; cash rises; operations continue in the same location. Decide whether each claim is true or false.",
+      "statements": [
+        "The balance sheet becomes more liquid in composition even if total assets shrink.",
+        "Selling the warehouse must reduce equity one-for-one with the cash proceeds, regardless of sale price versus book value.",
+        "A lease-back can keep operations running while removing the building from owned fixed assets.",
+        "If the sale price equals book value, the transaction alone need not create an accounting gain.",
+        "After the sale, any rise in return on assets proves the firm cheated by shrinking the asset base."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "difficulty_level": "5/5",
+      "tactical_explanations": [
+        "**A.** → True\n\nCash replacing a building raises the liquid share of the asset mix even when the balance sheet is smaller.\n\nSo the statement is True.",
+        "**B.** → False\n\nEquity moves with the gain or loss versus book value, not mechanically one-for-one with cash proceeds alone.\n\nSo the statement is False.",
+        "**C.** → True\n\nSale-and-leaseback unlocks owned property while the firm keeps using the space.\n\nSo the statement is True.",
+        "**D.** → True\n\nAt book value there is typically no gain from the price-versus-book comparison.\n\nSo the statement is True.",
+        "**E.** → False\n\nROA needs careful comparison after a real sale, but a smaller asset base is not automatic proof of cheating.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "DEMO ECON 6.H03",
+      "title": "Turnover growth with a cash lag",
+      "chapter": 6,
+      "subsection": "6.5",
+      "context": "Revenue jumps 40% while year-end receivables and inventory also jump. Reported profit looks strong, but operating cash flow lags. Decide whether each claim is true or false.",
+      "statements": [
+        "Strong revenue growth can coexist with a cash squeeze when working capital absorbs cash.",
+        "If profit is positive, operating cash flow must be at least as high as profit in the same year.",
+        "A rising receivables balance means some recorded sales have not yet been collected in cash.",
+        "Inventory built ahead of sales uses cash even though it appears as an asset rather than an expense on the balance sheet.",
+        "Investors who read only the income statement and ignore cash flow can overrate liquidity in this pattern."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "difficulty_level": "5/5",
+      "tactical_explanations": [
+        "**A.** → True\n\nGrowth that piles into receivables and stock is a textbook profit-without-cash episode.\n\nSo the statement is True.",
+        "**B.** → False\n\nWorking-capital drains can push operating cash flow well below accrual profit.\n\nSo the statement is False.",
+        "**C.** → True\n\nReceivables are sales recognised before cash arrives — that is what the line means.\n\nSo the statement is True.",
+        "**D.** → True\n\nBuilding inventory spends cash (or creates payables) now. Calling it an asset does not make it free.\n\nSo the statement is True.",
+        "**E.** → True\n\nThis is exactly the pattern where income-statement optimism hides a liquidity story that shows up in cash flow.\n\nSo the statement is True."
+      ]
     }
   ],
   "english": {
@@ -640,66 +640,66 @@
   },
   "math": [
     {
-      "case_id": "MATH 1.117",
-      "id": "math-1-117",
-      "title": "Exam-style tasks - 9",
+      "case_id": "DEMO MATH 1.H01",
+      "id": "demo-math-1-h01",
+      "title": "Eight atomic conditions and a truth-table filter",
       "chapter": 1,
       "subsection": "1.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Eight atomic conditions about a real number $x$ and a finite set $S\\subseteq\\{1,2,3,4,5,6\\}$ are fixed:\n\n$$\n\\begin{align*}\nP&:\\ x>0,\\quad\nQ&:\\ x\\ge 2,\\quad\nR&:\\ x\\in\\mathbb{Z},\\quad\nT&:\\ x^{2}=4,\\\\\nU&:\\ 3\\in S,\\quad\nV&:\\ |S|=3,\\quad\nW&:\\ S\\subseteq\\{1,2,3,4\\},\\quad\nZ&:\\ S\\cap\\{5,6\\}=\\emptyset.\n\\end{align*}\n$$\n\nA profile is a full truth assignment to $(P,Q,R,T,U,V,W,Z)$. Decide whether each meta-claim is true or false. Argue with a truth-table style case check.",
       "statements": [
-        "After excluding both $\\emptyset$ and the full set, a four-element set has $14$ subsets left.",
-        "For any $A,B\\subseteq U$, the complement of $A\\setminus B$ is $A^c\\cup B$.",
-        "The logical negation of $p\\rightarrow q$ is $\\neg p\\wedge q$.",
-        "The formula $\\exists x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$.",
-        "For a four-element ground set $G$, there are $81$ ordered pairs $(A,B)$ with $A\\subseteq B\\subseteq G$."
+        "There exists a profile in which $T$ is true while both $P$ and $Q$ are false.",
+        "Every profile with $Q$ true must also have $P$ true.",
+        "If $W$ and $Z$ are both true, this is consistent with $V$ true and $U$ false.",
+        "The conjunction $T\\land R\\land \\lnot Q$ forces $x=-2$, and for that value $P$ is false.",
+        "If $V$ and $W$ are both true, then $U$ must be true, because every $3$-element subset of $\\{1,2,3,4\\}$ contains $3$."
       ],
       "answer_key": [
-        true,
-        true,
         false,
         true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$\n|\\mathcal P(S)| = 2^4 = 16\n$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$.\n\nSo the statement is True.",
-        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$\n(A\\cap B^c)^c = A^c\\cup(B^c)^c = A^c\\cup B\n$$\n\nThe proposed identity follows.\n\nSo the statement is True.",
-        "**C.** → False\n\nRewrite the implication as a disjunction before applying negation:\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\nNegate both sides:\n\n$$\\neg(p\\rightarrow q)\\equiv\\neg(\\neg p\\vee q)$$\n\nDe Morgan then yields\n\n$$\\equiv p\\wedge\\neg q$$\n\nThe claimed formula reverses both required truth values.\n\nSo the statement is False.",
-        "**D.** → True\n\nA witness for the disjunction witnesses at least one side, and either side supplies a witness for the disjunction.\n\n$$\\exists x\\,(P(x)\\vee Q(x))\\Longrightarrow(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$$\n\n$$\\exists x\\,P(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\n$$\\exists x\\,Q(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\nBoth directions of the equivalence hold.\n\nSo the statement is True.",
-        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B$$\n\n$$g\\in B\\setminus A$$\n\n$$g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$.\n\nSo the statement is True."
+        true,
+        true,
+        false
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: nonempty proper subsets.\nB: complement of a difference.\nC: negating an implication.\nD: existential quantifier over disjunction.\nE: nested subset pairs."
+      "solution_overview": "Treat the eight atoms as truth-table columns. Only the meanings of $P,Q,R,T$ on $x$ and of $U,V,W,Z$ on $S$ create dependencies — there is no forced link between the $x$-block and the $S$-block.",
+      "tactical_explanations": [
+        "**A.** → False\n\n$T$ means $x^{2}=4$, so $x\\in\\{-2,2\\}$.\n\n- If $x=2$, then $P$ and $Q$ are both true.\n- If $x=-2$, then $P$ is false, but $Q$ is also false because $-2\\not\\ge 2$.\n\nNo real $x$ produces the truth-table row $(T,P,Q)=(1,0,0)$.\n\nSo the statement is False.",
+        "**B.** → True\n\n$Q$ is $x\\ge 2$. Any such $x$ automatically satisfies $x>0$, which is $P$.\n\nIn the truth table, every row with $Q=1$ is forced to carry $P=1$. The row $(P,Q)=(0,1)$ cannot arise from any real $x$.\n\nSo the statement is True.",
+        "**C.** → True\n\nTake $S=\\{1,2,4\\}$. Then $W$ holds, $Z$ holds, $|S|=3$ so $V$ is true, and $3\\notin S$ so $U$ is false.\n\nThat single concrete set is a legal profile with $(U,V,W,Z)=(0,1,1,1)$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$T\\land R$ forces $x\\in\\{-2,2\\}$. Negating $Q$ kills $x=2$ and leaves only $x=-2$.\n\nFor $x=-2$, the atom $P$ ($x>0$) is false.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe $3$-element subsets of $\\{1,2,3,4\\}$ are $\\{1,2,3\\}$, $\\{1,2,4\\}$, $\\{1,3,4\\}$, $\\{2,3,4\\}$.\n\nAmong them, $\\{1,2,4\\}$ does not contain $3$, so $U$ can be false while $V$ and $W$ are true.\n\nThe claim that $U$ must be true is wrong.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "MATH 2.147",
-      "id": "math-2-147",
-      "title": "Exam-style tasks - 11",
+      "case_id": "DEMO MATH 2.H01",
+      "id": "demo-math-2-h01",
+      "title": "Four linked algebra exhibits — one logical chain",
       "chapter": 2,
       "subsection": "2.5",
-      "context": "An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=10$ and $ab=21$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$. No decimal approximation is used in the audit.",
+      "context": "Four algebra exhibits sit in one archive. Keep a single consistent chain across all four; later claims may depend on earlier exhibits.\n\n**Exhibit I.** $(a+b)^{2}=a^{2}+2ab+b^{2}$ and $(a-b)^{2}=a^{2}-2ab+b^{2}$ for all real $a,b$.\n\n**Exhibit II.** $a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2})$ for all real $a,b$.\n\n**Exhibit III.** $E=\\dfrac{a^{2}-b^{2}}{a-b}$ is considered only for $a\\neq b$.\n\n**Exhibit IV.** $a^{2}+b^{2}+c^{2}+2ab+2ac+2bc=(a+b+c)^{2}$ for all real $a,b,c$.\n\nDecide whether each statement about this four-exhibit chain is true or false.",
       "statements": [
-        "$a^2+b^2=58$.",
-        "$(a-b)^2=16$.",
-        "$a^3+b^3=371$.",
-        "$\\{a,b\\}=\\{3,7\\}$.",
-        "$\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}$."
+        "From Exhibit I alone, $a^{2}+b^{2}=\\dfrac{(a+b)^{2}+(a-b)^{2}}{2}$ holds for every real $a,b$.",
+        "If Exhibit II is used with $a=b$, the factorisation still produces a nontrivial factor $a-b\\neq 0$.",
+        "Under Exhibit III, $E$ simplifies to $a+b$ for every $a\\neq b$, and that string $a+b$ is exactly the middle factor appearing in Exhibit II.",
+        "In Exhibit IV, omitting any one of the cross terms $2ab$, $2ac$, $2bc$ destroys the identity.",
+        "Combining III and II for $a\\neq b$ gives $a^{3}-b^{3}=(a-b)\\cdot E=(a-b)(a+b)$ for all $a\\neq b$."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         false,
         true,
         false
       ],
-      "tactical_explanations": [
-        "**A.** → True\n\nSum of squares follows from the square of the sum after the mixed product is peeled off.\n\nStart from the square of the recorded sum:\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\nRearrange to isolate the sum of squares:\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\nSubstitute $a+b=10$ and $ab=21$:\n\n$$\na^2+b^2=10^2-2\\cdot21\n$$\n\n$$\na^2+b^2=100-42\n$$\n\n$$\na^2+b^2=58\n$$\n\nThe claim asserts the same value $58$.\n\nSo the statement is True.\n",
-        "**B.** → True\n\nThe squared gap $(a-b)^{2}$ is another elementary identity in $a+b$ and $ab$.\n\nExpand $(a-b)^{2}$ and rewrite in elementary symmetric form:\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\nSubstitute the archive values:\n\n$$\n(a-b)^2=10^2-4\\cdot21\n$$\n\n$$\n(a-b)^2=100-84\n$$\n\n$$\n(a-b)^2=16\n$$\n\nThe claim is $(a-b)^2=16$.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nCubes expand through the same sum and product; the middle term is $3ab(a+b)$.\n\nThe cube-sum identity reads\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\nSubstitute $a+b=10$ and $ab=21$:\n\n$$\na^3+b^3=10^3-3\\cdot21\\cdot10\n$$\n\n$$\na^3+b^3=1000-630\n$$\n\n$$\na^3+b^3=370\n$$\n\nThe claim asserts $371$, but the identity produces $370$.\n\nSince $370\\ne371$, the claim does not hold.\n\nSo the statement is False.\n",
-        "**D.** → True\n\nThe unordered pair $\\{a,b\\}$ is exactly the root set of the monic quadratic with those coefficients.\n\nForm the monic quadratic with sum $a+b$ and product $ab$:\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-10t+21=0\n$$\n\nFactor the left-hand side:\n\n$$\nt^2-10t+21=(t-3)(t-7)\n$$\n\nThe roots are therefore $t=3$ and $t=7$, so\n\n$$\n\\{a,b\\}=\\{3,7\\}\n$$\n\nThat matches the claimed unordered pair.\n\nSo the statement is True.\n",
-        "**E.** → False\n\nSum of reciprocals is the elementary quotient of sum by product.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\nSubstitute $a+b=10$ and $ab=21$:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}\n$$\n\nThe claim asserts $\\dfrac{21}{10}$. Since $\\dfrac{10}{21}\\neq\\dfrac{21}{10}$, the claim does not hold.\n\nSo the statement is False.\n"
-      ],
       "difficulty_level": "5/5",
-      "solution_overview": "Only the elementary symmetric data $a+b=10$ and $ab=21$ are recorded. Every claim must follow from those two numbers (or from the monic quadratic $t^{2}-10t+21=0$ whose roots are $a$ and $b$).\n\nThe standing identities are\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nSubstituting the archive values recovers $a^{2}+b^{2}=58$, $(a-b)^{2}=16$, $a^{3}+b^{3}=370$, and $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}$. Factoring $t^{2}-10t+21=(t-3)(t-7)$ shows $\\{a,b\\}=\\{3,7\\}$."
+      "solution_overview": "Exhibit I expands squares, II factors a difference of cubes, III cancels a difference of squares to $a+b$, and IV expands a three-letter square. The traps either forbid a substitution or swap $a+b$ for $a^{2}+ab+b^{2}$.",
+      "tactical_explanations": [
+        "**A.** → True\n\nAdd the two identities from Exhibit I:\n\n$$\n(a+b)^{2}+(a-b)^{2}=2a^{2}+2b^{2}.\n$$\n\nDivide by $2$ to get\n\n$$\na^{2}+b^{2}=\\dfrac{(a+b)^{2}+(a-b)^{2}}{2}.\n$$\n\nNo restriction on $a,b$ was used.\n\nSo the statement is True.",
+        "**B.** → False\n\nExhibit II holds at $a=b$, but then $a-b=0$. Both sides are $0$; the linear factor is not nontrivial and is not nonzero.\n\nSo the statement is False.",
+        "**C.** → False\n\nFor $a\\neq b$, Exhibit III does give $E=a+b$. The middle factor in Exhibit II is $a^{2}+ab+b^{2}$, not $a+b$.\n\nAt $a=b=1$ those evaluate to $3$ versus $2$. Equating them is the trap.\n\nSo the statement is False.",
+        "**D.** → True\n\nAt $a=b=c=1$, the full right-hand side of Exhibit IV is $9$. Dropping only $2ab$ leaves $7$. Any missing cross term breaks the identity.\n\nSo the statement is True.",
+        "**E.** → False\n\n$(a-b)E=(a-b)(a+b)=a^{2}-b^{2}$, while\n\n$$\na^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2}).\n$$\n\nFor $a=2$, $b=1$: left side $7$, right side $3$. The claim replaces the correct quadratic factor by $a+b$.\n\nSo the statement is False."
+      ]
     },
     {
       "case_id": "MATH 11.99",
@@ -733,142 +733,142 @@
       "solution_overview": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.\n\nThe due lease, the continuous investment, and the perpetuity are\n\n$$\na = 4,200,\n$$\n\n$$\nn = 5,\n$$\n\n$$\nr = 8\\%\n$$\n\n$$\nr = 0.08\n$$\n\n$$\nP = 20,000,\n$$\n\n$$\nt = 7,\n$$\n\n$$\nr_{\\mathrm{cont}} = 6\\%\n$$\n\n$$\nr_{\\mathrm{cont}} = 0.06\n$$\n\n$$a_{\\mathrm{perp}} = 3,000$$\n\n$$\nP_{\\mathrm{ordinary}} = \\frac{4,200}{0.08}\\left[1-\\frac{1}{(1.08)^5}\\right]\n$$\n\n$$\nP_{\\mathrm{ordinary}} = 16,769.39\n$$\n\n$$\nP_{\\mathrm{due}} = 16,769.39 \\times 1.08\n$$\n\n$$\nP_{\\mathrm{due}} = 18,110.94\n$$\n\n$$\nS = 20,000 e^{0.06 \\times 7}\n$$\n\n$$\nS = 20,000 e^{0.42}\n$$\n\n$$\nS = 30,439.24\n$$\n\n$$\nP_{\\mathrm{perp}} = \\frac{3,000}{0.08}\n$$\n\n$$\nP_{\\mathrm{perp}} = 37,500\n$$"
     },
     {
-      "case_id": "MATH 4.214",
-      "id": "math-4-214",
-      "title": "Exam-style tasks - 21",
+      "case_id": "DEMO MATH 4.H01",
+      "id": "demo-math-4-h01",
+      "title": "Five unlike exam equations — new hard stems",
       "chapter": 4,
       "subsection": "4.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Decide whether each claim is true or false. The five letters concern five different equations; do not carry numbers from one letter into another.",
       "statements": [
-        "If one side of a rectangle is by $5$ cm longer than the other one and the rectangle's area is $84$ cm$^{2}$, then the length of the longer side is $7$ cm.",
-        "A car travels at an average speed of $80$ km/h. At $5$ pm, it has traveled a total distance of $100$ km. Then it started traveling at $3{:}45$ pm.",
-        "A recipe calls for $4\\%$ salt solution. If the cook only has $1.5$ litres of $10\\%$ salt solution, he needs to mix it with $2.25$ litres of water to get the right concentration.",
-        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
-        "A prize money of $10950$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $70\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $70\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $3500$ EUR."
+        "The equation $\\sqrt{2x+3}=x-1$ has exactly one real solution, and that solution is $x=3$.",
+        "The equation $\\dfrac{x}{x-2}+\\dfrac{2}{x+1}=3$ has exactly two real solutions in its natural domain.",
+        "Every real solution of $|3x-6|=x+4$ also satisfies $3x-6=x+4$.",
+        "The quadratic $x^{2}-(a+1)x+a=0$ has a double real root if and only if $a=1$.",
+        "If $\\log_{2}(x-1)+\\log_{2}(x+1)=3$, then $x=\\sqrt{8}$ is the unique real solution in the log domain."
       ],
       "answer_key": [
         false,
         true,
-        true,
         false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 5$, and the area is $84$ cm$^{2}$:\n\n$$x(x + 5) = 84$$\n\n$$x^{2} + 5x - 84 = 0$$\n\nFactor the quadratic:\n\n$$(x + 12)(x - 7) = 0$$\n\nso $x = -12$ or $x = 7$. A side length must be positive, so $x = 7$. The longer side is then\n\n$$\n7 + 5 = 12\n$$\n\nCheck: $7 \\cdot 12 = 84$. The longer side is $12$ cm, not the claimed $7$ cm. Substituting a longer side of $7$ cm would force a shorter side of $2$ cm:\n\n$$\n2 \\cdot 7 = 14\n$$\n\nwhich is not $84$.\n\nSo the statement is False.",
-        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{100}{80}$$\n\n$$t = \\frac{5}{4}$$\n\n$$t = 1.25$$\n\nhours. That is $1$ hour and $15$ minutes. Counting $1$ hour back from $5$ pm lands at $4$ pm; counting a further $15$ minutes back lands at $3{:}45$ pm. The recovered start time matches the claim.\n\nSo the statement is True.",
-        "**C.** → True\n\nOne and a half litres of $10\\%$ salt solution hold $0.15$ litres of pure salt. After adding $w$ litres of water the total volume is $1.5 + w$ litres, and the concentration should be $4\\%$:\n\n$$\\frac{0.15}{1.5 + w} = 0.04$$\n\n$$0.15 = 0.04(1.5 + w)$$\n\n$$0.15 = 0.06 + 0.04w$$\n\n$$0.09 = 0.04w$$\n\n$$w = \\frac{0.09}{0.04}$$\n\n$$w = 2.25$$\n\nThat $2.25$ is the litres of water to add. Substituting it recovers the $4\\%$ concentration:\n\n$$\n1.5 + 2.25 = 3.75\n$$\n\n$$\n\\frac{0.15}{3.75} = 0.04\n$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
-        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\frac{1}{3}L$$\n\n$$\n\\log\\frac{1}{x^{3}} = \\log\\bigl(x^{-3}\\bigr) = -3L\n$$\n\n$$\\log\\sqrt{x} = \\frac{1}{2}L$$\n\n$$\n\\log 10 = 1\n$$\n\nThe equation becomes\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\n\\frac{1}{3} - 3 - \\frac{1}{2} = \\frac{2}{6} - \\frac{18}{6} - \\frac{3}{6} = -\\frac{19}{6}\n$$\n\nso\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\nAdd $\\dfrac{19}{6}L$ to both sides:\n\n$$\n\\frac{11}{3} = \\frac{L}{2} + \\frac{19}{6}L\n$$\n\n$$\n\\frac{11}{3} = \\frac{3L}{6} + \\frac{19L}{6}\n$$\n\n$$\n\\frac{11}{3} = \\frac{22L}{6}\n$$\n\n$$\n\\frac{11}{3} = \\frac{11L}{3}\n$$\n\n$$L = 1$$\n\n$$\nx = 10^{1} = 10\n$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
-        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $70\\%$ of first place, and third place is $70\\%$ of second place:\n\n$$0.7a$$\n\n$$0.7 \\cdot 0.7a = 0.49a$$\n\nThe three prizes sum to $10950$ EUR:\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$2.19a = 10950$$\n\n$$a = \\frac{10950}{2.19}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$\n0.7 \\cdot 5000 = 3500\n$$\n\nThat $3500$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
+        true,
+        false
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter."
+      "solution_overview": "Five independent equation claims: a radical with an extraneous candidate, a rational equation after clearing, an absolute-value case split, a parameterised discriminant, and a log-domain trap.",
+      "tactical_explanations": [
+        "**A.** → False\n\nFor the principal square root with a meaningful nonnegative right-hand side, take $x\\ge 1$. Squaring gives $2x+3=(x-1)^{2}$, so $x^{2}-4x-2=0$ and $x=2\\pm\\sqrt{6}$. Only $2+\\sqrt{6}$ survives the domain.\n\nAt $x=3$: $\\sqrt{9}=3$ but $x-1=2$, so $3=2$ fails. The unique root is not $3$.\n\nSo the statement is False.",
+        "**B.** → True\n\nDomain: $x\\neq 2$ and $x\\neq -1$. Clearing the common denominator yields $2x^{2}-6x-2=0$, i.e. $x=\\dfrac{3\\pm\\sqrt{13}}{2}$. Both roots avoid the excluded points, so exactly two domain-legal solutions exist.\n\nSo the statement is True.",
+        "**C.** → False\n\nNeed $x+4\\ge 0$, i.e. $x\\ge -4$. The cases are $3x-6=x+4$ (giving $x=5$) and $3x-6=-(x+4)$ (giving $x=\\tfrac12$).\n\nThe second root comes from the negated branch, so it is false that every solution satisfies $3x-6=x+4$.\n\nSo the statement is False.",
+        "**D.** → True\n\nDiscriminant $\\Delta=(a+1)^{2}-4a=(a-1)^{2}$. This is zero if and only if $a=1$, and then the double root is $x=1$.\n\nSo the statement is True.",
+        "**E.** → False\n\nDomain: $x>1$. The sum of logs becomes $\\log_{2}(x^{2}-1)=3$, so $x^{2}-1=8$ and $x=\\pm 3$. Only $x=3$ lies in the domain.\n\n$\\sqrt{8}\\neq 3$, so the claimed unique solution is wrong.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "MATH 5.68",
-      "id": "math-5-68",
-      "title": "Exam-style tasks - 8",
+      "case_id": "DEMO MATH 5.H01",
+      "id": "demo-math-5-h01",
+      "title": "One brutal two-unknown setup — five counterfactual traps",
       "chapter": 5,
       "subsection": "5.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A workshop sells only type-$A$ kits and type-$B$ kits. In one week it sold a total of $100$ kits and booked revenue $€\\,7100$. Type $A$ sells at $€\\,50$ each and type $B$ at $€\\,80$ each:\n$$\na+b=100,\\qquad 50a+80b=7100.\n$$\nThe unique baseline solution is the factual starting point. Decide whether each counterfactual claim is true or false.",
       "statements": [
-        "A parent is $27$ years older than a child. After nine years, the parent's age will be $\\frac52$ times the child's age then. The child's current age is $9$ years.",
-        "Two couriers start $24$ km apart and ride toward each other, meeting after $0.2$ hour. The faster courier travels $20$ km/h faster, so the slower courier rides at $45$ km/h.",
-        "A hospital staffs registered nurses and aides on one shift. Headcount gives $x+y=52$ and credential units give $3x+y=100$. The shift uses $24$ registered nurses.",
-        "A sleeper train booked 64 berths at \\$120 and coach seats at \\$68, collecting \\$5{,}704 from those 64 travelers. Solving the two booking counts gives $22$ sleeper berths.",
-        "A feed mill uses $16\\%$ and $28\\%$ protein meals to make $90$ tons at $22\\%$ protein. The high-protein meal must supply $45$ tons."
+        "The unique baseline solution is $(a,b)=(30,70)$.",
+        "If the type-$B$ price had been $€\\,90$ instead of $€\\,80$, with the same count $a+b=100$ and the same revenue $€\\,7100$, then $b$ would have fallen below $60$.",
+        "If management had sold $10$ fewer type-$A$ kits and $10$ more type-$B$ kits than the baseline, revenue would have risen by exactly $€\\,300$.",
+        "If total kits stayed $100$ but the revenue target rose to $€\\,8200$ at the same prices, no nonnegative solution $(a,b)$ would exist, because an all-$B$ week only reaches $€\\,8000$.",
+        "If prices stayed $€\\,50$ and $€\\,80$ but the shop sold the swapped mix $(70,30)$ instead of the baseline $(30,70)$, revenue would still be $€\\,7100$ because only the kit labels changed."
       ],
       "answer_key": [
         true,
-        false,
         true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nWrite both stem conditions as linear equations in the two unknowns, then solve the system for the quantity named in the claim.\n\n$$1x-1y=27$$\n\n$$2x-5y=27$$\n\n$$1\\cdot (-5) = -5$$\n\n$$(-1)\\cdot 2 = -2$$\n\n$$\\Delta = -5 - (-2)$$\n\n$$\\Delta = -3$$\n\n$$27\\cdot (-5) = -135$$\n\n$$(-1)\\cdot 27 = -27$$\n\n$$-135 - (-27) = -108$$\n\n$$x = \\frac{-108}{-3}$$\n\n$$x = 36$$\n\n$$1\\cdot 27 = 27$$\n\n$$27\\cdot 2 = 54$$\n\n$$27 - 54 = -27$$\n\n$$y = \\frac{-27}{-3}$$\n\n$$y = 9$$\n\nThe system gives $9$ years for child's present age, exactly as claimed.\n\nSo the statement is True.",
-        "**B.** → False\n\nLabel the unknowns from the stem, form the coefficient matrix, and read off the claimed component of the solution.\n\n$$0.2x+0.2y=24$$\n\n$$1x-1y=20$$\n\n$$0.2\\cdot (-1) = -0.2$$\n\n$$0.2\\cdot 1 = 0.2$$\n\n$$\\Delta = -0.2 - 0.2$$\n\n$$\\Delta = -0.4$$\n\n$$24\\cdot (-1) = -24$$\n\n$$0.2\\cdot 20 = 4$$\n\n$$-24 - 4 = -28$$\n\n$$x = \\frac{-28}{-0.4}$$\n\n$$x = 70$$\n\n$$0.2\\cdot 20 = 4$$\n\n$$24\\cdot 1 = 24$$\n\n$$4 - 24 = -20$$\n\n$$y = \\frac{-20}{-0.4}$$\n\n$$y = 50$$\n\nThe system gives $50$ km/h for slower courier speed, not $45$ km/h.\n\nSo the statement is False.",
-        "**C.** → True\n\nClear the story into a $2\\times 2$ model first; only then test the numerical claim against the recovered values.\n\n$$1x+1y=52$$\n\n$$3x+1y=100$$\n\n$$1\\cdot 1 = 1$$\n\n$$1\\cdot 3 = 3$$\n\n$$\\Delta = 1 - 3$$\n\n$$\\Delta = -2$$\n\n$$52\\cdot 1 = 52$$\n\n$$1\\cdot 100 = 100$$\n\n$$52 - 100 = -48$$\n\n$$x = \\frac{-48}{-2}$$\n\n$$x = 24$$\n\n$$1\\cdot 100 = 100$$\n\n$$52\\cdot 3 = 156$$\n\n$$100 - 156 = -56$$\n\n$$y = \\frac{-56}{-2}$$\n\n$$y = 28$$\n\nThe system gives $24$ for registered nurses, exactly as claimed.\n\nSo the statement is True.",
-        "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=64$$\n\n$$120x+68y=5704$$\n\n$$1\\cdot 68 = 68$$\n\n$$1\\cdot 120 = 120$$\n\n$$\\Delta = 68 - 120$$\n\n$$\\Delta = -52$$\n\n$$64\\cdot 68 = 4352$$\n\n$$1\\cdot 5704 = 5704$$\n\n$$4352 - 5704 = -1352$$\n\n$$x = \\frac{-1352}{-52}$$\n\n$$x = 26$$\n\n$$1\\cdot 5704 = 5704$$\n\n$$64\\cdot 120 = 7680$$\n\n$$5704 - 7680 = -1976$$\n\n$$y = \\frac{-1976}{-52}$$\n\n$$y = 38$$\n\nThe system gives $26$ for sleeper berths, not $22$.\n\nSo the statement is False.",
-        "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=90$$\n\n$$28x+16y=1980$$\n\n$$1\\cdot 16 = 16$$\n\n$$1\\cdot 28 = 28$$\n\n$$\\Delta = 16 - 28$$\n\n$$\\Delta = -12$$\n\n$$90\\cdot 16 = 1440$$\n\n$$1\\cdot 1980 = 1980$$\n\n$$1440 - 1980 = -540$$\n\n$$x = \\frac{-540}{-12}$$\n\n$$x = 45$$\n\n$$1\\cdot 1980 = 1980$$\n\n$$90\\cdot 28 = 2520$$\n\n$$1980 - 2520 = -540$$\n\n$$y = \\frac{-540}{-12}$$\n\n$$y = 45$$\n\nThe system gives $45$ tons for tons of high-protein meal, exactly as claimed.\n\nSo the statement is True."
+        true,
+        true,
+        false
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: ages_digits, rates_work, systems, tickets, mixture\n\nA. solve a parent-child age system with a future ratio.\nB. solve courier speeds from meeting time.\nC. recover hospital staffing counts.\nD. separate sleeper and coach bookings.\nE. formulate animal feed at a target protein rate."
+      "solution_overview": "Solve the baseline once: $(30,70)$. Each later claim changes one datum — a price, a quantity shift, an impossible revenue target, or a fake invariance under swapping the mix.",
+      "tactical_explanations": [
+        "**A.** → True\n\nFrom $a=100-b$ into money: $50(100-b)+80b=7100$ gives $5000+30b=7100$, so $b=70$ and $a=30$.\n\nSo the statement is True.",
+        "**B.** → True\n\nNew money equation $50a+90b=7100$ with $a+b=100$ yields $5000+40b=7100$, hence $b=52.5<60$.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe shift is $(30,70)\\to(20,80)$. Each replacement of an $A$ kit by a $B$ kit gains $€\\,30$; ten replacements gain $€\\,300$.\n\nCheck: $50\\cdot 20+80\\cdot 80=7400=7100+300$.\n\nSo the statement is True.",
+        "**D.** → True\n\nAt these prices the maximum revenue with $100$ kits is $100\\cdot 80=8000$. A target of $8200$ is unreachable for nonnegative $a,b$.\n\nSo the statement is True.",
+        "**E.** → False\n\nAt quantities $(70,30)$ the revenue is $50\\cdot 70+80\\cdot 30=5900\\neq 7100$. Swapping the sales mix changes the money total; kit labels are irrelevant to the equation.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "MATH 6.99",
-      "id": "math-6-99",
-      "title": "Exam-style tasks - 11",
+      "case_id": "DEMO MATH 6.H01",
+      "id": "demo-math-6-h01",
+      "title": "Three moduli, four roots, and a mixed absolute mess",
       "chapter": 6,
       "subsection": "6.5",
-      "context": "A control ratio is $R(x)=\\dfrac{x-3}{x+1}$. The input $x=-1$ is excluded because it makes the denominator zero, while $x=3$ is a zero of the ratio. Engineers use a sign chart across these two critical points to classify positive and nonpositive readings.",
+      "context": "Decide whether each claim is true or false. The five letters are five different absolute-value problems. Case-split at every kink; discard roots that leave their region.",
       "statements": [
-        "$R(x)>0$ for $x<-1$ or $x>3$.",
-        "$x=-1$ belongs to the solution of $R(x)\\le0$.",
-        "$R(3)=0$.",
-        "$R(x)\\le0$ on $(-1,3]$.",
-        "$R(x)>1$ exactly when $x<-1$."
+        "The equation $|x-1|+|x+2|=3$ holds for every $x$ in the closed interval $[-2,1]$, and for no $x$ outside that interval.",
+        "The equation $|2x+1|-|x-3|=4$ has exactly three real solutions.",
+        "Every real solution of $|x^{2}-1|=|2x|$ also satisfies $x^{2}-1=2x$ (the branch $x^{2}-1=-2x$ never adds a root).",
+        "The inequality $|x-4|+|x+1|\\ge 5$ is true for all real $x$.",
+        "The equation $|x|+|x-1|+|x-3|=4$ has solution set equal to the single point $x=1$."
       ],
       "answer_key": [
         true,
         false,
+        false,
         true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nStart from the claimed strict positivity of the control ratio.\n\n$$\nR(x)=\\dfrac{x-3}{x+1}\n$$\n\n$$\nR(x)>0\n$$\n\nThe critical points are the numerator zero and the excluded pole.\n\n$$x-3=0$$\n\n$$x=3$$\n\n$$x+1=0$$\n\n$$x=-1$$\n\n(the pole $x=-1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $R(x)$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nThe strict inequality keeps only the positive intervals, so\n\n$$\nx<-1\\quad\\text{or}\\quad x>3\n$$\n\nwhich is exactly the claimed set.\n\nSo the statement is True.",
-        "**B.** → False\n\nStart from the claimed inequality.\n\n$$\n\\frac{x - 3}{x + 1}\\le 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$x - 3=0$$\n\n$$x=3$$\n\n$$x + 1=0$$\n\n$$x=-1$$\n\n(the pole $x=-1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 3}{x + 1}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-1, 3]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
-        "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nFrom the control ratio\n\n$$\nR(x)=\\dfrac{x-3}{x+1}\n$$\n\nsubstitute $x=3$.\n\n$$R(3) = \\dfrac{3-3}{3+1}$$\n\n$$\\dfrac{3-3}{3+1} = \\dfrac{0}{4}$$\n\n$$\\dfrac{0}{4} = 0$$\n\nSo the statement is True.",
-        "**D.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{x - 3}{x + 1}\\le 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$x - 3=0$$\n\n$$x=3$$\n\n$$x + 1=0$$\n\n$$x=-1$$\n\n(the pole $x=-1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 3}{x + 1}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-1, 3]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
-        "**E.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{x - 3}{x + 1}>1\n$$\n\n$$\n\\frac{x - 3}{x + 1}-1>0\n$$\n\nWrite the constant over the same denominator.\n\n$$\n1=\\frac{x + 1}{x + 1}\n$$\n\n$$\n\\frac{x - 3}{x + 1}-\\frac{x + 1}{x + 1}>0\n$$\n\nCombine the numerators.\n\n$$\n\\frac{x - 3-x + 1}{x + 1}>0\n$$\n\n$$\n\\frac{-4}{x + 1}>0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\nThe numerator has no real zero.\n\n$$x + 1=0$$\n\n$$x=-1$$\n\n(the pole $x=-1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- \\frac{4}{x + 1}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,\\infty)$ | $-$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, -1)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+        false
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Shared context topic 6.1.\n\nShared solution:\n1. Use the single shared stem for topic 6.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One rational sign chart controls all five claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Numerator and denominator have the same sign on the two outer intervals.\n5. A: The computed result makes this claim True.\n6. B: The pole is excluded from every solution set.\n7. B: The computed result makes this claim False.\n8. C: The numerator is zero and the denominator is nonzero.\n9. C: The computed result makes this claim True.\n10. D: The ratio is negative between pole and zero, then equals zero at the zero.\n11. D: The computed result makes this claim True.\n12. E: $R-1=(-1-3)/(x+1)$, which is positive exactly below the pole.\n13. E: The computed result makes this claim True."
+      "solution_overview": "Between kinks each absolute value is linear. Sometimes a whole interval survives when the left-hand side collapses to a constant that matches the right-hand side.",
+      "tactical_explanations": [
+        "**A.** → True\n\nOn $[-2,1]$ one has $|x-1|+|x+2|=(1-x)+(x+2)=3$, so the equation is the identity $3=3$ on the whole interval.\n\nOutside that interval the sum is strictly larger than $3$, and the formal linear candidates only recover the endpoints. The solution set is exactly $[-2,1]$.\n\nSo the statement is True.",
+        "**B.** → False\n\nKinks at $x=-\\tfrac12$ and $x=3$ produce exactly two legal roots: $x=2$ (middle region) and $x=-8$ (left region). There is no third root. Claiming three overcounts.\n\nSo the statement is False.",
+        "**C.** → False\n\n$|x^{2}-1|=|2x|$ means $x^{2}-1=2x$ or $x^{2}-1=-2x$.\n\nThe first branch gives $x=1\\pm\\sqrt{2}$. The negated branch gives $x=-1\\pm\\sqrt{2}$. Two extra roots appear, so the claim is wrong.\n\nSo the statement is False.",
+        "**D.** → True\n\n$|x-4|+|x+1|$ is the sum of distances from $x$ to $4$ and to $-1$. Its minimum on $\\mathbb{R}$ is the gap $5$, attained on the whole segment $[-1,4]$. Everywhere else the sum is larger. Hence the inequality holds for all real $x$.\n\nSo the statement is True.",
+        "**E.** → False\n\nOn $[1,3]$: $x+(x-1)+(3-x)=x+2=4$ gives $x=2$. On $[0,1]$: $4-x=4$ gives $x=0$. At least $\\{0,2\\}$ solve the equation, while $x=1$ yields $3\\neq 4$. The solution set is not the singleton $\\{1\\}$.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "MATH 7.E30",
-      "id": "math-7-e30",
-      "title": "Arch crown versus a falling trolley chord",
+      "case_id": "DEMO MATH 7.H01",
+      "id": "demo-math-7-h01",
+      "title": "Quadratic family with a parameter — critical cases",
       "chapter": 7,
       "subsection": "7.5",
-      "context": "A bridge arch is the part of $g(x)=4-(x-2)^{2}$ above the road $y=0$. A maintenance trolley follows the chord $f(x)=2-\\frac{1}{2}x$ on the same interval. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "For each real parameter $m$, define\n$$\nf_m(x)=x^{2}-2mx+(m^{2}-1).\n$$\nDecide whether each claim about this family is true or false.",
       "statements": [
-        "The arch meets the road at $x=0$ and $x=4$, and the crown is the midpoint $(2,4)$.",
-        "The trolley path has slope $-\\frac{1}{2}$, and at the crown abscissa the trolley sits at height $1$, three units below the crown.",
-        "The difference $g-f$ has discriminant $\\frac{49}{4}>0$, so the arch and the trolley meet twice.",
-        "At $x=2$ the trolley height $1$ lies strictly below the arch height $4$.",
-        "The trolley path lies above the arch at $x=2$, so the chord overshoots the crown."
+        "For every real $m$, the equation $f_m(x)=0$ has two distinct real roots.",
+        "The vertex $y$-coordinate of $y=f_m(x)$ equals $-1$ for every $m$.",
+        "If $m=2$, then the roots are $x=1$ and $x=3$.",
+        "There exists a real $m$ for which both roots are equal to $0$.",
+        "The axis of symmetry is $x=m$, so as $m$ increases the axis moves right, and at $m=0$ the axis is the $y$-axis."
       ],
       "answer_key": [
         true,
         true,
         true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nThe arch meets the road where the completed square equals $4$. Solving names the two abutments, whose midpoint is the crown.\n\n$$4-(x-2)^{2}=0$$\n\n$$x-2=\\pm 2$$\n\n$$x=0$$\n\n$$x=4\\qquad\\text{crown }(2,4)$$\n\nRoad meetings $0$ and $4$, and crown $(2,4)$, both match. The axis of the downward parabola is that same midpoint $x=2$.\n\nThe axis of $4-(x-2)^{2}$ is the unmoved line $x=2$, which is also the midpoint of the two road meetings $0$ and $4$.\n\n$$x=\\frac{0+4}{2}$$\n\n$$x=\\frac{4}{2}$$\n\n$$x=2$$\n\nThe arch meets the road at $x=0$ and $x=4$, and the crown is the midpoint $(2,4)$.\n\nSo the statement is True.",
-        "**B.** → True\n\nThe coefficient of $x$ in the trolley rule is the slope. Evaluate at the crown abscissa $x=2$ and compare with the crown height $4$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$m=-\\frac{1}{2}$$\n\n$$f(2)=2^{2}-1$$\n\n$$2^{2}=4$$\n\n$$f(2)=2-1$$\n\n$$\nf(2)=1,\\qquad 4-1 = 3\n$$\n\nSlope $-\\frac{1}{2}$, and the trolley sits three units below the crown. The chord is falling, as a negative slope requires.\n\nThe trolley path has slope $-\\frac{1}{2}$, and at the crown abscissa the trolley sits three units below the crown.\n\nSo the statement is True.",
-        "**C.** → True\n\nExpand $g$ and subtract the trolley. Meetings are the real zeros of that quadratic difference.\n\n$$g(x)=4-(x-2)^{2}$$\n\n$$g(x)=-x^{2}+4x$$\n\n$$g-f=-x^{2}+\\frac{9}{2}x-2$$\n\n$$\\Delta=\\frac{81}{4}-8$$\n\n$$\\Delta=\\frac{49}{4}$$\n\n$$\\frac{49}{4}>0$$\n\nA positive discriminant means two distinct real meetings. The arch and the trolley therefore meet twice.\n\nA quadratic difference with positive discriminant cannot fail to have two real zeros, so two meetings are forced.\n\nThe difference $g-f$ has discriminant $\\frac{49}{4}>0$, so the arch and the trolley meet twice.\n\nSo the statement is True.",
-        "**D.** → True\n\nCompare the two heights at the crown abscissa $x=2$. The arch is at its highest point there; the trolley is the chord value.\n\n$$g(2)=4$$\n\n$$f(2)=1$$\n\n$$1<4$$\n\nThe trolley lies strictly below the arch at $x=2$. A meeting at the crown would have required $f(2)=4$, which the chord does not achieve.\n\nThe crown is the unique highest point of a downward arch, so any chord through two road-level points sits strictly below that crown.\n\n$$g(2)-f(2)=3$$\n\n$$3>0$$\n\nAt $x=2$ the trolley height $1$ lies strictly below the arch height $4$.\n\nSo the statement is True.",
-        "**E.** → False\n\nCompare the two heights at the crown abscissa $x=2$. The chord value is $1$, while the arch peaks at $4$.\n\n$$f(2)=1$$\n\n$$1<4$$\n\n$$f(2)=g(2)$$\n\nThe trolley lies below the arch at $x=2$, not above it. A chord joining points of the arch cannot overshoot the crown of a downward parabola.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$g(x)=4-(x-2)^{2}$$\n\nOvershooting the crown would require the chord to sit above every point of the arch near $x=2$. The comparison $1<4$ already forbids that.\n\nThe trolley path lies below the arch at $x=2$, not above it.\n\nSo the statement is False."
+        false,
+        true
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "The arch is already written in completed-square form, and the trolley path is a line. Write both rules and the quantities every letter will need: the road meetings, the crown, and the trolley height at the same abscissa.\n\n$$\ng(x) = 4-(x-2)^{2},\\qquad f(x) = 2-\\frac{1}{2}x\n$$\n\nThe arch meets the road $y=0$ where the completed square equals $4$, i.e. where $|x-2|=2$. Those two roots are $x=0$ and $x=4$, so the span of the bridge is $4$ units and the axis is the midline $x=2$.\n\n$$\ng(x) = 0,\\qquad x = 0,\\qquad x = 4\n$$\n\nThe crown is the vertex of the downward parabola: height $4$ at $x=2$. The leading coefficient of the expanded form $-x^{2}+4x$ is negative, matching an arch.\n\n$$\ng(x) = -x^{2}+4x,\\qquad \\mathrm{ver} = \\left(2,4\\right),\\qquad a = -1<0\n$$\n\nThe trolley path is already in slope-intercept form: slope $-\\frac{1}{2}$ and intercept $2$. At the crown abscissa the trolley sits at height $1$, three units below the arch, so the chord lies below the arch there, not above it.\n\n$$\nm = -\\frac{1}{2},\\qquad f(2) = 1<4 = g(2)\n$$\n\nThe height gap at $x=2$ already settles the last claim without a further intersection count.\n\n$$g(2)-f(2)=3$$"
+      "solution_overview": "Complete the square or read the discriminant in $m$. The roots are always $m\\pm 1$; the vertex height is constantly $-1$.",
+      "tactical_explanations": [
+        "**A.** → True\n\n$\\Delta=4m^{2}-4(m^{2}-1)=4>0$ for every real $m$. The roots are $m\\pm 1$, always distinct.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe axis is $x=m$, and $f_m(m)=m^{2}-2m^{2}+m^{2}-1=-1$. The vertex height is constantly $-1$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$f_2(x)=x^{2}-4x+3=(x-1)(x-3)$. The roots are $1$ and $3$.\n\nSo the statement is True.",
+        "**D.** → False\n\nBoth roots equal to $0$ would require $f_m(0)=0$ and a double root at $0$, hence also $f_m'(0)=0$. But $f_m(0)=m^{2}-1$ and $f_m'(x)=2x-2m$, so $f_m'(0)=-2m=0$ forces $m=0$, whence $f_0(0)=-1\\neq 0$. Impossible.\n\nSo the statement is False.",
+        "**E.** → True\n\nAxis $x=\\dfrac{2m}{2}=m$. It moves right as $m$ increases, and at $m=0$ it is $x=0$.\n\nSo the statement is True."
+      ]
     },
     {
-      "case_id": "MATH 8.102",
-      "id": "math-8-102",
-      "title": "Exam-style tasks - 5",
+      "case_id": "DEMO MATH 8.H01",
+      "id": "demo-math-8-h01",
+      "title": "Twisted courier contract — one story, five what-ifs",
       "chapter": 8,
       "subsection": "8.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A courier firm charges a base fee of $€\\,12$ plus $€\\,0.80$ per kilometre for daytime runs. Night runs use the same kilometre rate but add a flat night surcharge of $€\\,5$ on top of the daytime formula. A client is comparing options for a single delivery of length $d$ kilometres ($d>0$). Decide whether each claim is true or false.",
       "statements": [
-        "A balloon maker has volume proportional to $r^3$. Shrinking radius by $10\\%$ is said to reduce volume by $\\dfrac{271}{10}\\%$.",
-        "In a pharmacy trial, concentration follows $C(m)=18m^{-1/2}$. The sample labelled $m=9$ is claimed to have concentration $6$ mg/L.",
-        "A cooperative farm follows $H(L)=KL^{2/3}$ for harvest. The forecast says eight times the cultivated area produces $5$ times the crop.",
-        "A grain cooperative reaches its promised yield when $40L^{\\frac{2}{3}}=360$. The land allocation is stated as $L=27$.",
-        "A materials sensor passes data through $g(x)=4x^2$ and then $f(u)=3u^{1/2}$. The composed output for $x=6$ is listed as $24$."
+        "A daytime run of $d$ km costs $C_{\\mathrm{day}}(d)=12+0.8d$ euros.",
+        "If the same distance were run at night, the night bill would be exactly $€\\,5$ more than the daytime bill for every $d>0$.",
+        "There is a distance $d^{*}$ at which a daytime run and a night run would cost the same; solving $12+0.8d=12+0.8d+5$ finds it.",
+        "If the firm waived the $€\\,12$ base on daytime runs only (charging pure $0.8d$), then for a $20$ km daytime job the client would save exactly $€\\,12$ compared with the original daytime tariff.",
+        "If distance doubled from $10$ km to $20$ km on a daytime run, the bill would also double, because both the base and the kilometre charge scale linearly with $d$."
       ],
       "answer_key": [
         true,
@@ -877,111 +877,108 @@
         true,
         false
       ],
-      "tactical_explanations": [
-        "**A.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{9}{10}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}=(\\dfrac{9}{10})^{3}$$\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}=\\dfrac{729}{1000}$$\n\nTranslate the output multiplier back to a percentage decrease:\n\n$$\\left|\\dfrac{729}{1000}-1\\right|\\cdot100\\%=\\dfrac{271}{10}\\%$$\n\nThe direction follows from the multiplier being below $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}<1$$\n\nThe stem gives $\\dfrac{271}{10}\\%$, so the decisive comparison is\n\n$$\\dfrac{271}{10}\\%=\\dfrac{271}{10}\\%.$$\n\nSo the statement is True.",
-        "**B.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$C(9)=\\frac{18}{\\sqrt{9}}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$C(9)=\\frac{18}{3}$$\n\nHence the model output is\n\n$$C(9)=6$$\n\nThe stem's value is $6$, so the numerical comparison is\n\n$$6=6.$$\n\nSo the statement is True.",
-        "**C.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{H(8L)}{H(L)}=\\frac{K(8L)^{\\frac{2}{3}}}{KL^{\\frac{2}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{H(8L)}{H(L)}=(8)^{\\frac{2}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{2}{3}}$$\n\n$$\\frac{H(8L)}{H(L)}=4$$\n\nThe proposed multiplier is $5$, and therefore\n\n$$4\\ne5$$\n\nThe mathematical result does not agree with the claim.\n\nSo the statement is False.",
-        "**D.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$40L^{\\frac{2}{3}}=360$$\n\nDivide by the coefficient:\n\n$$L^{\\frac{2}{3}}=9$$\n\nRaise both sides to the reciprocal exponent:\n\n$$L=(9)^{\\frac{3}{2}}$$\n\n$$L=27$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$27=27.$$\n\nSo the statement is True.",
-        "**E.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(6)=4(6)^2$$\n\n$$g(6)=144$$\n\nInsert that inner output into $f$:\n\n$$f(g(6))=3\\sqrt{144}$$\n\nComplete the power evaluation:\n\n$$3\\cdot12$$\n\n$$f(g(6))=36$$\n\nThe displayed claim is $24$, so\n\n$$36\\ne24$$\n\nThe mathematical result does not agree with the claim.\n\nSo the statement is False."
-      ],
       "difficulty_level": "5/5",
-      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the C model at m=9.\nC: derive the scale multiplier for H.\nD: solve the positive power equation for L.\nE: evaluate the two maps in their stated order.\n\nLevels keep the scale factor $A$. Scale comparisons cancel $A$ and leave only the power of the input ratio. Recover $A$ and any unknown exponent once here; each letter only checks its extra claim."
+      "solution_overview": "One affine tariff story. The traps are a fake break-even equation that says $0=5$, and the false claim that an affine cost is homogeneous of degree one.",
+      "tactical_explanations": [
+        "**A.** → True\n\nBase $12$ plus $0.8$ per kilometre is exactly $12+0.8d$.\n\nSo the statement is True.",
+        "**B.** → True\n\nNight cost is $12+0.8d+5$. Day cost is $12+0.8d$. The difference is $5$ for every $d>0$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe displayed equation is $12+0.8d=12+0.8d+5$, which simplifies to $0=5$. It has no solution. Day and night never meet under this tariff; the algebra shown does not find a break-even distance.\n\nSo the statement is False.",
+        "**D.** → True\n\nOriginal daytime at $20$ km: $12+16=28$. Pure kilometre charge: $16$. The saving is exactly the waived base $€\\,12$.\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $10$ km the bill is $20$; at $20$ km it is $28$. Doubling distance does not double the bill, because the base fee is fixed.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "MATH 9.E01",
-      "id": "math-9-e1",
-      "title": "Touch, ends, and a dashed mark from ticks",
+      "case_id": "DEMO MATH 9.H01",
+      "id": "demo-math-9-h01",
+      "title": "Letter-heavy polynomial limits and end behaviour",
       "chapter": 9,
       "subsection": "9.5",
-      "context": "The figure shows a polynomial (solid) and a constant dashed companion. No algebraic formula is printed. Read the axis ticks for ends, axis meetings, intercept sign, symmetry, and meetings with the dashed mark. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let\n$$\np(x)=ax^{3}+bx^{2}+cx+d,\\qquad a\\neq 0,\n$$\nbe a real cubic, and define\n$$\nq(x)=\\dfrac{p(x)}{x^{2}+1}.\n$$\nDecide whether each claim is true or false.",
       "statements": [
-        "As $x\\to+\\infty$ the solid graph tends to $-\\infty$, and as $x\\to-\\infty$ it tends to $+\\infty$.",
-        "The solid graph meets the horizontal axis at exactly two distinct points in the window.",
-        "Reading the vertical axis, the $y$-intercept of the solid graph is positive.",
-        "The solid graph is that of an odd function.",
-        "The solid curve meets the dashed mark at exactly two distinct points in the plotted window."
+        "$\\displaystyle\\lim_{x\\to+\\infty}q(x)=+\\infty$ whenever $a>0$.",
+        "$\\displaystyle\\lim_{x\\to-\\infty}p(x)=-\\infty$ whenever $a>0$.",
+        "If $p(1)=0$ and $p'(1)=0$, then $(x-1)^{2}$ divides $p(x)$, so $x=1$ is at least a double root.",
+        "For every choice of $a,b,c,d$ with $a\\neq 0$, the horizontal line $y=0$ is a horizontal asymptote of $q$.",
+        "If $a=2$, $b=-3$, $c=0$, $d=0$, then $p(x)=x^{2}(2x-3)$, so $x=0$ is a double root and $x=\\tfrac32$ is a simple root."
       ],
       "answer_key": [
-        false,
+        true,
+        true,
         true,
         false,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nEnd behaviour of a polynomial is the behaviour of its highest-power term, so rebuild the solid curve from the ticks and read that term.\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\n$$(x+1)^{2}(x-2)=x^{3}-3x-2$$\n\nThe cubic is monic of odd degree, so it keeps the sign of $x$ itself at infinity.\n\n$$\\lim_{x\\to+\\infty}p(x)=+\\infty$$\n\n$$\\lim_{x\\to-\\infty}p(x)=-\\infty$$\n\nAs a numerical check, $p(5)=98>0$ while $p(-5)=-92<0$, matching those limits.\n\nThe right end rises and the left end falls. The claim reverses both arrows.\n\nSo the statement is False.",
-        "**B.** → True\n\nAn axis meeting is a distinct abscissa where the height is zero; a touch still counts as one meeting, not two.\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\nThe square marks a double root at $x=-1$, and the remaining factor is a simple root at $x=2$.\n\n$$\nx=-1,\\qquad x = 2\n$$\n\n$$\np(-1)=0\\qquad p(2) = 0\n$$\n\nThose are two distinct abscissas, matching the ticks, and nothing else in the window returns to height $0$. Two distinct axis meetings are visible.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe $y$-intercept is the height at $x=0$, read on the vertical axis and confirmed by substituting into the rebuilt cubic.\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\n$$p(0)=(1)^{2}(-2)$$\n\n$$(1)^{2}(-2)$$\n\n$$p(0)=-2$$\n\nExpanding to $x^{3}-3x-2$ displays the same constant term $-2$.\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\n$$p(x)=x^{3}-3x-2$$\n\nThat height is negative. A positive intercept would have required the constant term to change sign. The intercept is $-2$, not a positive height.\n\nSo the statement is False.",
-        "**D.** → False\n\nOddness is the identity $p(-x)=-p(x)$, which in particular forces a zero intercept and a zero set symmetric about the origin.\n\n$$p(x)=x^{3}-3x-2$$\n\n$$p(0)=-2\\neq 0$$\n\n$$\np(-1)=0\\qquad -p(1) = 4\n$$\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\n$$p(x)=x^{3}-3x-2$$\n\nA nonzero intercept already kills oddness. The touch at $-1$ also has no matching touch at $+1$, so the figure is not a half-turn about the origin. The solid graph is not odd.\n\nSo the statement is False.",
-        "**E.** → False\n\nMeetings with the dashed mark $y=-2$ are the roots of $p(x)+2=0$, so expand and factor that difference.\n\n$$p(x)=x^{3}-3x-2$$\n\n$$p(x)+2=x^{3}-3x$$\n\n$$x^{3}-3x=x(x^{2}-3)$$\n\n$$\nx=0,\\qquad x = \\pm\\sqrt{3}\n$$\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\n$$p(x)=x^{3}-3x-2$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nThree real solutions appear: $x=0$ and $x=\\pm\\sqrt{3}$, all inside the plotted window. The claim asks for exactly two. Three meetings occur, not two.\n\nSo the statement is False."
+        true
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "The figure prints no formula. A touch at $x=-1$ (double root) and a simple crossing at $x=2$, with intercept $-2$, force the monic cubic\n\n$$\np(x) = (x+1)^{2}(x-2) = x^{3}-3x-2\n$$\n\nAn odd-degree monic polynomial keeps the sign of $x$ at infinity. Meetings with the dashed mark $y=-2$ solve $p(x)+2=0$.",
-      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20720%20420%22%20width%3D%22720%22%20height%3D%22420%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22720%22%20height%3D%22420%22%20rx%3D%2212%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22360%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-size%3D%2217%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3ESolid%20polynomial%3B%20dashed%20design%20mark%3C%2Ftext%3E%0A%3Cline%20x1%3D%2272%22%20y1%3D%2244%22%20x2%3D%2272%22%20y2%3D%22364%22%20stroke%3D%22%235a534a%22%20stroke-width%3D%222%22%2F%3E%0A%3Cline%20x1%3D%2272%22%20y1%3D%22364%22%20x2%3D%22692%22%20y2%3D%22364%22%20stroke%3D%22%235a534a%22%20stroke-width%3D%222%22%2F%3E%0A%3Cline%20x1%3D%2272%22%20y1%3D%22291.3%22%20x2%3D%22692%22%20y2%3D%22291.3%22%20stroke%3D%22%238a8074%22%20stroke-width%3D%221.6%22%2F%3E%3Cline%20x1%3D%22320.0%22%20y1%3D%2244%22%20x2%3D%22320.0%22%20y2%3D%22364%22%20stroke%3D%22%238a8074%22%20stroke-width%3D%221.6%22%2F%3E%0A%0A%0A%3Cline%20x1%3D%2272.0%22%20y1%3D%22364.0%22%20x2%3D%2272.0%22%20y2%3D%22370.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2272.0%22%20y%3D%22384.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%22320.0%22%20y1%3D%22364.0%22%20x2%3D%22320.0%22%20y2%3D%22370.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22320.0%22%20y%3D%22384.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22568.0%22%20y1%3D%22364.0%22%20x2%3D%22568.0%22%20y2%3D%22370.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22568.0%22%20y%3D%22384.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2272.0%22%20y1%3D%22297.3%22%20x2%3D%22692.0%22%20y2%3D%22297.3%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2266.0%22%20y1%3D%22297.3%22%20x2%3D%2272.0%22%20y2%3D%22297.3%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2262.0%22%20y%3D%22297.3%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2272.0%22%20y1%3D%22151.8%22%20x2%3D%22692.0%22%20y2%3D%22151.8%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2266.0%22%20y1%3D%22151.8%22%20x2%3D%2272.0%22%20y2%3D%22151.8%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2262.0%22%20y%3D%22151.8%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E10%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.8%22%20points%3D%2272.0%2C349.5%2073.7%2C347.7%2075.4%2C345.9%2077.2%2C344.2%2078.9%2C342.4%2080.6%2C340.8%2082.3%2C339.1%2084.1%2C337.5%2085.8%2C336.0%2087.5%2C334.4%2089.2%2C332.9%2090.9%2C331.4%2092.7%2C330.0%2094.4%2C328.6%2096.1%2C327.2%2097.8%2C325.8%2099.6%2C324.5%20101.3%2C323.2%20103.0%2C322.0%20104.7%2C320.7%20106.4%2C319.5%20108.2%2C318.3%20109.9%2C317.2%20111.6%2C316.1%20113.3%2C315.0%20115.1%2C313.9%20116.8%2C312.9%20118.5%2C311.9%20120.2%2C310.9%20121.9%2C309.9%20123.7%2C309.0%20125.4%2C308.1%20127.1%2C307.2%20128.8%2C306.4%20130.6%2C305.6%20132.3%2C304.8%20134.0%2C304.0%20135.7%2C303.3%20137.4%2C302.5%20139.2%2C301.8%20140.9%2C301.2%20142.6%2C300.5%20144.3%2C299.9%20146.1%2C299.3%20147.8%2C298.7%20149.5%2C298.2%20151.2%2C297.6%20152.9%2C297.1%20154.7%2C296.7%20156.4%2C296.2%20158.1%2C295.8%20159.8%2C295.3%20161.6%2C295.0%20163.3%2C294.6%20165.0%2C294.2%20166.7%2C293.9%20168.4%2C293.6%20170.2%2C293.3%20171.9%2C293.0%20173.6%2C292.8%20175.3%2C292.6%20177.1%2C292.3%20178.8%2C292.2%20180.5%2C292.0%20182.2%2C291.8%20183.9%2C291.7%20185.7%2C291.6%20187.4%2C291.5%20189.1%2C291.4%20190.8%2C291.3%20192.6%2C291.3%20194.3%2C291.3%20196.0%2C291.3%20197.7%2C291.3%20199.4%2C291.3%20201.2%2C291.3%20202.9%2C291.4%20204.6%2C291.5%20206.3%2C291.6%20208.1%2C291.7%20209.8%2C291.8%20211.5%2C291.9%20213.2%2C292.1%20214.9%2C292.2%20216.7%2C292.4%20218.4%2C292.6%20220.1%2C292.8%20221.8%2C293.0%20223.6%2C293.3%20225.3%2C293.5%20227.0%2C293.8%20228.7%2C294.0%20230.4%2C294.3%20232.2%2C294.6%20233.9%2C294.9%20235.6%2C295.3%20237.3%2C295.6%20239.1%2C295.9%20240.8%2C296.3%20242.5%2C296.6%20244.2%2C297.0%20245.9%2C297.4%20247.7%2C297.8%20249.4%2C298.2%20251.1%2C298.6%20252.8%2C299.0%20254.6%2C299.5%20256.3%2C299.9%20258.0%2C300.4%20259.7%2C300.8%20261.4%2C301.3%20263.2%2C301.8%20264.9%2C302.2%20266.6%2C302.7%20268.3%2C303.2%20270.1%2C303.7%20271.8%2C304.2%20273.5%2C304.8%20275.2%2C305.3%20276.9%2C305.8%20278.7%2C306.4%20280.4%2C306.9%20282.1%2C307.4%20283.8%2C308.0%20285.6%2C308.6%20287.3%2C309.1%20289.0%2C309.7%20290.7%2C310.3%20292.4%2C310.8%20294.2%2C311.4%20295.9%2C312.0%20297.6%2C312.6%20299.3%2C313.2%20301.1%2C313.7%20302.8%2C314.3%20304.5%2C314.9%20306.2%2C315.5%20307.9%2C316.1%20309.7%2C316.7%20311.4%2C317.3%20313.1%2C317.9%20314.8%2C318.5%20316.6%2C319.2%20318.3%2C319.8%20320.0%2C320.4%20321.7%2C321.0%20323.4%2C321.6%20325.2%2C322.2%20326.9%2C322.8%20328.6%2C323.4%20330.3%2C324.0%20332.1%2C324.6%20333.8%2C325.2%20335.5%2C325.8%20337.2%2C326.4%20338.9%2C327.0%20340.7%2C327.6%20342.4%2C328.2%20344.1%2C328.7%20345.8%2C329.3%20347.6%2C329.9%20349.3%2C330.5%20351.0%2C331.0%20352.7%2C331.6%20354.4%2C332.2%20356.2%2C332.7%20357.9%2C333.3%20359.6%2C333.8%20361.3%2C334.4%20363.1%2C334.9%20364.8%2C335.4%20366.5%2C336.0%20368.2%2C336.5%20369.9%2C337.0%20371.7%2C337.5%20373.4%2C338.0%20375.1%2C338.5%20376.8%2C339.0%20378.6%2C339.4%20380.3%2C339.9%20382.0%2C340.4%20383.7%2C340.8%20385.4%2C341.3%20387.2%2C341.7%20388.9%2C342.1%20390.6%2C342.5%20392.3%2C342.9%20394.1%2C343.3%20395.8%2C343.7%20397.5%2C344.1%20399.2%2C344.4%20400.9%2C344.8%20402.7%2C345.1%20404.4%2C345.5%20406.1%2C345.8%20407.8%2C346.1%20409.6%2C346.4%20411.3%2C346.7%20413.0%2C347.0%20414.7%2C347.2%20416.4%2C347.5%20418.2%2C347.7%20419.9%2C347.9%20421.6%2C348.1%20423.3%2C348.3%20425.1%2C348.5%20426.8%2C348.7%20428.5%2C348.8%20430.2%2C348.9%20431.9%2C349.1%20433.7%2C349.2%20435.4%2C349.2%20437.1%2C349.3%20438.8%2C349.4%20440.6%2C349.4%20442.3%2C349.4%20444.0%2C349.5%20445.7%2C349.4%20447.4%2C349.4%20449.2%2C349.4%20450.9%2C349.3%20452.6%2C349.2%20454.3%2C349.1%20456.1%2C349.0%20457.8%2C348.9%20459.5%2C348.7%20461.2%2C348.6%20462.9%2C348.4%20464.7%2C348.2%20466.4%2C347.9%20468.1%2C347.7%20469.8%2C347.4%20471.6%2C347.1%20473.3%2C346.8%20475.0%2C346.5%20476.7%2C346.1%20478.4%2C345.8%20480.2%2C345.4%20481.9%2C345.0%20483.6%2C344.5%20485.3%2C344.1%20487.1%2C343.6%20488.8%2C343.1%20490.5%2C342.6%20492.2%2C342.0%20493.9%2C341.4%20495.7%2C340.8%20497.4%2C340.2%20499.1%2C339.6%20500.8%2C338.9%20502.6%2C338.2%20504.3%2C337.5%20506.0%2C336.7%20507.7%2C336.0%20509.4%2C335.2%20511.2%2C334.3%20512.9%2C333.5%20514.6%2C332.6%20516.3%2C331.7%20518.1%2C330.8%20519.8%2C329.8%20521.5%2C328.9%20523.2%2C327.8%20524.9%2C326.8%20526.7%2C325.8%20528.4%2C324.7%20530.1%2C323.5%20531.8%2C322.4%20533.6%2C321.2%20535.3%2C320.0%20537.0%2C318.8%20538.7%2C317.5%20540.4%2C316.2%20542.2%2C314.9%20543.9%2C313.5%20545.6%2C312.1%20547.3%2C310.7%20549.1%2C309.3%20550.8%2C307.8%20552.5%2C306.3%20554.2%2C304.8%20555.9%2C303.2%20557.7%2C301.6%20559.4%2C299.9%20561.1%2C298.3%20562.8%2C296.6%20564.6%2C294.8%20566.3%2C293.1%20568.0%2C291.3%20569.7%2C289.4%20571.4%2C287.6%20573.2%2C285.7%20574.9%2C283.7%20576.6%2C281.8%20578.3%2C279.7%20580.1%2C277.7%20581.8%2C275.6%20583.5%2C273.5%20585.2%2C271.4%20586.9%2C269.2%20588.7%2C267.0%20590.4%2C264.7%20592.1%2C262.4%20593.8%2C260.1%20595.6%2C257.7%20597.3%2C255.3%20599.0%2C252.9%20600.7%2C250.4%20602.4%2C247.9%20604.2%2C245.3%20605.9%2C242.7%20607.6%2C240.1%20609.3%2C237.4%20611.1%2C234.7%20612.8%2C231.9%20614.5%2C229.1%20616.2%2C226.3%20617.9%2C223.4%20619.7%2C220.5%20621.4%2C217.6%20623.1%2C214.6%20624.8%2C211.5%20626.6%2C208.5%20628.3%2C205.3%20630.0%2C202.2%20631.7%2C199.0%20633.4%2C195.7%20635.2%2C192.4%20636.9%2C189.1%20638.6%2C185.7%20640.3%2C182.3%20642.1%2C178.9%20643.8%2C175.4%20645.5%2C171.8%20647.2%2C168.2%20648.9%2C164.6%20650.7%2C160.9%20652.4%2C157.2%20654.1%2C153.4%20655.8%2C149.6%20657.6%2C145.7%20659.3%2C141.8%20661.0%2C137.9%20662.7%2C133.9%20664.4%2C129.8%20666.2%2C125.7%20667.9%2C121.6%20669.6%2C117.4%20671.3%2C113.2%20673.1%2C108.9%20674.8%2C104.5%20676.5%2C100.2%20678.2%2C95.7%20679.9%2C91.3%20681.7%2C86.7%20683.4%2C82.2%20685.1%2C77.5%20686.8%2C72.9%20688.6%2C68.1%20690.3%2C63.4%20692.0%2C58.5%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%20stroke-dasharray%3D%227%205%22%20points%3D%2272.0%2C320.4%2073.7%2C320.4%2075.4%2C320.4%2077.2%2C320.4%2078.9%2C320.4%2080.6%2C320.4%2082.3%2C320.4%2084.1%2C320.4%2085.8%2C320.4%2087.5%2C320.4%2089.2%2C320.4%2090.9%2C320.4%2092.7%2C320.4%2094.4%2C320.4%2096.1%2C320.4%2097.8%2C320.4%2099.6%2C320.4%20101.3%2C320.4%20103.0%2C320.4%20104.7%2C320.4%20106.4%2C320.4%20108.2%2C320.4%20109.9%2C320.4%20111.6%2C320.4%20113.3%2C320.4%20115.1%2C320.4%20116.8%2C320.4%20118.5%2C320.4%20120.2%2C320.4%20121.9%2C320.4%20123.7%2C320.4%20125.4%2C320.4%20127.1%2C320.4%20128.8%2C320.4%20130.6%2C320.4%20132.3%2C320.4%20134.0%2C320.4%20135.7%2C320.4%20137.4%2C320.4%20139.2%2C320.4%20140.9%2C320.4%20142.6%2C320.4%20144.3%2C320.4%20146.1%2C320.4%20147.8%2C320.4%20149.5%2C320.4%20151.2%2C320.4%20152.9%2C320.4%20154.7%2C320.4%20156.4%2C320.4%20158.1%2C320.4%20159.8%2C320.4%20161.6%2C320.4%20163.3%2C320.4%20165.0%2C320.4%20166.7%2C320.4%20168.4%2C320.4%20170.2%2C320.4%20171.9%2C320.4%20173.6%2C320.4%20175.3%2C320.4%20177.1%2C320.4%20178.8%2C320.4%20180.5%2C320.4%20182.2%2C320.4%20183.9%2C320.4%20185.7%2C320.4%20187.4%2C320.4%20189.1%2C320.4%20190.8%2C320.4%20192.6%2C320.4%20194.3%2C320.4%20196.0%2C320.4%20197.7%2C320.4%20199.4%2C320.4%20201.2%2C320.4%20202.9%2C320.4%20204.6%2C320.4%20206.3%2C320.4%20208.1%2C320.4%20209.8%2C320.4%20211.5%2C320.4%20213.2%2C320.4%20214.9%2C320.4%20216.7%2C320.4%20218.4%2C320.4%20220.1%2C320.4%20221.8%2C320.4%20223.6%2C320.4%20225.3%2C320.4%20227.0%2C320.4%20228.7%2C320.4%20230.4%2C320.4%20232.2%2C320.4%20233.9%2C320.4%20235.6%2C320.4%20237.3%2C320.4%20239.1%2C320.4%20240.8%2C320.4%20242.5%2C320.4%20244.2%2C320.4%20245.9%2C320.4%20247.7%2C320.4%20249.4%2C320.4%20251.1%2C320.4%20252.8%2C320.4%20254.6%2C320.4%20256.3%2C320.4%20258.0%2C320.4%20259.7%2C320.4%20261.4%2C320.4%20263.2%2C320.4%20264.9%2C320.4%20266.6%2C320.4%20268.3%2C320.4%20270.1%2C320.4%20271.8%2C320.4%20273.5%2C320.4%20275.2%2C320.4%20276.9%2C320.4%20278.7%2C320.4%20280.4%2C320.4%20282.1%2C320.4%20283.8%2C320.4%20285.6%2C320.4%20287.3%2C320.4%20289.0%2C320.4%20290.7%2C320.4%20292.4%2C320.4%20294.2%2C320.4%20295.9%2C320.4%20297.6%2C320.4%20299.3%2C320.4%20301.1%2C320.4%20302.8%2C320.4%20304.5%2C320.4%20306.2%2C320.4%20307.9%2C320.4%20309.7%2C320.4%20311.4%2C320.4%20313.1%2C320.4%20314.8%2C320.4%20316.6%2C320.4%20318.3%2C320.4%20320.0%2C320.4%20321.7%2C320.4%20323.4%2C320.4%20325.2%2C320.4%20326.9%2C320.4%20328.6%2C320.4%20330.3%2C320.4%20332.1%2C320.4%20333.8%2C320.4%20335.5%2C320.4%20337.2%2C320.4%20338.9%2C320.4%20340.7%2C320.4%20342.4%2C320.4%20344.1%2C320.4%20345.8%2C320.4%20347.6%2C320.4%20349.3%2C320.4%20351.0%2C320.4%20352.7%2C320.4%20354.4%2C320.4%20356.2%2C320.4%20357.9%2C320.4%20359.6%2C320.4%20361.3%2C320.4%20363.1%2C320.4%20364.8%2C320.4%20366.5%2C320.4%20368.2%2C320.4%20369.9%2C320.4%20371.7%2C320.4%20373.4%2C320.4%20375.1%2C320.4%20376.8%2C320.4%20378.6%2C320.4%20380.3%2C320.4%20382.0%2C320.4%20383.7%2C320.4%20385.4%2C320.4%20387.2%2C320.4%20388.9%2C320.4%20390.6%2C320.4%20392.3%2C320.4%20394.1%2C320.4%20395.8%2C320.4%20397.5%2C320.4%20399.2%2C320.4%20400.9%2C320.4%20402.7%2C320.4%20404.4%2C320.4%20406.1%2C320.4%20407.8%2C320.4%20409.6%2C320.4%20411.3%2C320.4%20413.0%2C320.4%20414.7%2C320.4%20416.4%2C320.4%20418.2%2C320.4%20419.9%2C320.4%20421.6%2C320.4%20423.3%2C320.4%20425.1%2C320.4%20426.8%2C320.4%20428.5%2C320.4%20430.2%2C320.4%20431.9%2C320.4%20433.7%2C320.4%20435.4%2C320.4%20437.1%2C320.4%20438.8%2C320.4%20440.6%2C320.4%20442.3%2C320.4%20444.0%2C320.4%20445.7%2C320.4%20447.4%2C320.4%20449.2%2C320.4%20450.9%2C320.4%20452.6%2C320.4%20454.3%2C320.4%20456.1%2C320.4%20457.8%2C320.4%20459.5%2C320.4%20461.2%2C320.4%20462.9%2C320.4%20464.7%2C320.4%20466.4%2C320.4%20468.1%2C320.4%20469.8%2C320.4%20471.6%2C320.4%20473.3%2C320.4%20475.0%2C320.4%20476.7%2C320.4%20478.4%2C320.4%20480.2%2C320.4%20481.9%2C320.4%20483.6%2C320.4%20485.3%2C320.4%20487.1%2C320.4%20488.8%2C320.4%20490.5%2C320.4%20492.2%2C320.4%20493.9%2C320.4%20495.7%2C320.4%20497.4%2C320.4%20499.1%2C320.4%20500.8%2C320.4%20502.6%2C320.4%20504.3%2C320.4%20506.0%2C320.4%20507.7%2C320.4%20509.4%2C320.4%20511.2%2C320.4%20512.9%2C320.4%20514.6%2C320.4%20516.3%2C320.4%20518.1%2C320.4%20519.8%2C320.4%20521.5%2C320.4%20523.2%2C320.4%20524.9%2C320.4%20526.7%2C320.4%20528.4%2C320.4%20530.1%2C320.4%20531.8%2C320.4%20533.6%2C320.4%20535.3%2C320.4%20537.0%2C320.4%20538.7%2C320.4%20540.4%2C320.4%20542.2%2C320.4%20543.9%2C320.4%20545.6%2C320.4%20547.3%2C320.4%20549.1%2C320.4%20550.8%2C320.4%20552.5%2C320.4%20554.2%2C320.4%20555.9%2C320.4%20557.7%2C320.4%20559.4%2C320.4%20561.1%2C320.4%20562.8%2C320.4%20564.6%2C320.4%20566.3%2C320.4%20568.0%2C320.4%20569.7%2C320.4%20571.4%2C320.4%20573.2%2C320.4%20574.9%2C320.4%20576.6%2C320.4%20578.3%2C320.4%20580.1%2C320.4%20581.8%2C320.4%20583.5%2C320.4%20585.2%2C320.4%20586.9%2C320.4%20588.7%2C320.4%20590.4%2C320.4%20592.1%2C320.4%20593.8%2C320.4%20595.6%2C320.4%20597.3%2C320.4%20599.0%2C320.4%20600.7%2C320.4%20602.4%2C320.4%20604.2%2C320.4%20605.9%2C320.4%20607.6%2C320.4%20609.3%2C320.4%20611.1%2C320.4%20612.8%2C320.4%20614.5%2C320.4%20616.2%2C320.4%20617.9%2C320.4%20619.7%2C320.4%20621.4%2C320.4%20623.1%2C320.4%20624.8%2C320.4%20626.6%2C320.4%20628.3%2C320.4%20630.0%2C320.4%20631.7%2C320.4%20633.4%2C320.4%20635.2%2C320.4%20636.9%2C320.4%20638.6%2C320.4%20640.3%2C320.4%20642.1%2C320.4%20643.8%2C320.4%20645.5%2C320.4%20647.2%2C320.4%20648.9%2C320.4%20650.7%2C320.4%20652.4%2C320.4%20654.1%2C320.4%20655.8%2C320.4%20657.6%2C320.4%20659.3%2C320.4%20661.0%2C320.4%20662.7%2C320.4%20664.4%2C320.4%20666.2%2C320.4%20667.9%2C320.4%20669.6%2C320.4%20671.3%2C320.4%20673.1%2C320.4%20674.8%2C320.4%20676.5%2C320.4%20678.2%2C320.4%20679.9%2C320.4%20681.7%2C320.4%20683.4%2C320.4%20685.1%2C320.4%20686.8%2C320.4%20688.6%2C320.4%20690.3%2C320.4%20692.0%2C320.4%22%2F%3E%0A%3Ccircle%20cx%3D%22196.0%22%20cy%3D%22291.3%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22568.0%22%20cy%3D%22291.3%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22196.0%22%20cy%3D%22291.3%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22444.0%22%20cy%3D%22349.5%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Ctext%20x%3D%22360%22%20y%3D%22408%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2218%22%20y%3D%22204%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%20transform%3D%22rotate%28-90%2018%20204%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+      "solution_overview": "End behaviour of letter-coefficient cubics and of a cubic-over-quadratic. A common root of $p$ and $p'$ is a multiple root.",
+      "tactical_explanations": [
+        "**A.** → True\n\n$q(x)\\sim ax$ as $x\\to+\\infty$. If $a>0$, then $ax\\to+\\infty$, so $q(x)\\to+\\infty$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe leading term $ax^{3}$ with $a>0$ tends to $-\\infty$ as $x\\to-\\infty$, so $p(x)\\to-\\infty$.\n\nSo the statement is True.",
+        "**C.** → True\n\nA common root of a polynomial and its derivative is a multiple root. From $p(1)=p'(1)=0$ it follows that $(x-1)^{2}$ divides $p$.\n\nSo the statement is True.",
+        "**D.** → False\n\nSince $q(x)\\sim ax$, the values fly to $\\pm\\infty$ rather than to $0$. There is no horizontal asymptote $y=0$ when $a\\neq 0$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$p(x)=2x^{3}-3x^{2}=x^{2}(2x-3)$. The root $0$ has multiplicity $2$ and $\\tfrac32$ has multiplicity $1$.\n\nSo the statement is True."
+      ]
     },
     {
-      "case_id": "MATH 10.3.31",
-      "id": "ch10-103-031",
-      "title": "Applied letters — discrete population, GDP per capita, and a continuous neighbour",
+      "case_id": "DEMO MATH 10.H01",
+      "id": "demo-math-10-h01",
+      "title": "Two tangled exponential–log functions",
       "chapter": 10,
       "subsection": "10.3",
-      "context": "Denote by $f(t)$ the population of a country (in millions of inhabitants) after $t$ years, where $f(0)$ is the current population. The current population is $12$ millions and it is assumed that it grows by $1.8\\%$ per year. After $6$ years the annual growth rate slows to $1\\%$ per year. A neighbouring country follows the continuous model $N(t)=9\\cdot 10^{6} e^{0.015 t}$. The figure shows the piecewise home-country path. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Define\n$$\nf(t)=2e^{0.1t},\\qquad g(t)=8e^{-0.2t}\\qquad(t\\in\\mathbb{R}).\n$$\nAlso write $h(t)=\\ln f(t)-\\ln g(t)$. Decide whether each claim is true or false.",
       "statements": [
-        "It holds that $f(t)=12\\cdot 1.018^{t}$ for $0\\le t\\le 6$.",
-        "After $20$ years of uninterrupted $1.8\\%$ growth, the population will have grown by more than $45\\%$.",
-        "The head economist predicts that GDP grows by $4\\%$ per year. Then GDP per capita grows by more than $3\\%$ per year.",
-        "Under the slowdown to $1\\%$ after year $6$, the population of $15$ millions is attained at $t>16$.",
-        "The neighbouring country's continuous model has a growth rate strictly smaller than $1.5\\%$ per year."
+        "$f(t)=g(t)$ has the unique real solution $t=\\dfrac{\\ln 4}{0.3}$.",
+        "$h(t)=\\ln 4+0.3t$ for every real $t$, so $h$ is an affine function with positive slope.",
+        "If $t$ increases by $10$, then $f$ is multiplied by $e$ and $g$ is multiplied by $e^{-2}$.",
+        "The product $f(t)g(t)$ is constant in $t$.",
+        "Because $f(0)=2<8=g(0)$ and $f$ grows while $g$ decays, one has $f(t)<g(t)$ for every $t>0$."
       ],
       "answer_key": [
         true,
         false,
-        false,
         true,
+        false,
         false
       ],
-      "tactical_explanations": [
-        "**A.** → True\n\nAnnual growth of $1.8\\%$ multiplies the population by the fixed factor $1.018$ each year. Starting from the present level of $12$ million, the closed form is therefore\n\n$$f(t) = 12\\cdot 1.018^{t}$$\n\nAt $t=0$ this recovers the stated initial population:\n\n$$f(0)=12\\cdot 1.018^{0}$$\n\n$$f(0)=12\\cdot 1.1$$\n\n$$12\\cdot \\frac{11}{10}=\\frac{66}{5}$$\n\n$$\nf(0)=\\frac{66}{5} = 12\n$$\n\nand each additional year multiplies by one more factor of $1.018$. The displayed formula is exactly the discrete exponential growth model for this country.\n\nSo the statement is True.\n",
-        "**B.** → False\n\nUnder uninterrupted $1.8\\%$ annual growth the population after twenty years is\n\n$$f(20)=12\\cdot 1.018^{20}$$\n\n$$f(20)=12\\cdot 1.12748236216396078174437376$$\n\n$$12\\cdot \\frac{107525097099681928801}{95367431640625000000}=\\frac{322575291299045786403}{23841857910156250000}$$\n\n$$f(20)=\\frac{322575291299045786403}{23841857910156250000}$$\n\nThe multiplicative factor and the relative growth are\n\n$$1.018^{20}\\approx1.428748\\qquad \\frac{f(20)-f(0)}{f(0)}=1.018^{20}-1$$\n\n$$1.018^{20}\\approx1.428748\\qquad \\frac{f(20)-f(0)}{f(0)}=1.12748236216396078174437376-1$$\n\n$$\\approx 0.428748$$\n\nConverting to a percentage,\n\n$$0.428748\\times 100\\%\\approx42.87\\%$$\n\nCompare with the claimed threshold of $45\\%$:\n\n$$42.87\\% < 45\\%$$\n\nTwenty years of $1.8\\%$ compounding produce roughly $42.87\\%$ net growth, which fails to clear $45\\%$.\n\nSo the statement is False.\n",
-        "**C.** → False\n\nGDP per capita is the ratio of aggregate GDP to population. If GDP multiplies by $1.04$ each year while population multiplies by $1.018$, the per-capita annual growth factor is the quotient of those bases:\n\n$$\\frac{1.04}{1.018}\\approx 1.021611$$\n\nHence the exact annual growth rate of GDP per capita is\n\n$$\\frac{1.04}{1.018}-1\\approx0.021611\\approx2.16\\%$$\n\nA linear approximation $0.04-0.018=0.022$ already suggests about $2.2\\%$, well below $3\\%$. The exact comparison against the claimed bound is\n\n$$0.021611<0.03$$\n\nGDP per capita therefore grows by roughly $2.16\\%$ per year, not by more than $3\\%$.\n\nSo the statement is False.\n",
-        "**D.** → True\n\nFor the first six years the population follows $f(t)=12\\cdot 1.018^{t}$. At the switch,\n\n$$f(6)=12\\cdot 1.018^{6}$$\n\n$$f(6)=12\\cdot 1.34012224$$\n\n$$12\\cdot \\frac{2093941}{1562500}=\\frac{6281823}{390625}$$\n\n$$f(6)=\\frac{6281823}{390625}$$\n\n$$\\approx 13.355739$$\n\nThereafter the annual base is $1.01$, so for $t>6$\n\n$$f(t) = f(6)\\cdot 1.01^{t-6}$$\n\n$$\\approx 13.355739\\cdot 1.01^{t-6}$$\n\nReach $15$ million by solving $f(t)=15$:\n\n$$13.355739\\cdot 1.01^{t-6} = 15$$\n\n$$1.01^{t-6} = \\frac{15}{13.355739}$$\n\n$$\\approx 1.123113$$\n\nTake natural logs and isolate $t$:\n\n$$t-6 = \\frac{\\ln(1.123113)}{\\ln 1.01}$$\n\n$$\\approx 11.668360$$\n\n$$t_{\\mathrm{hit}}\\approx17.668360$$\n\nCompare with sixteen years:\n\n$$17.668360>16$$\n\nThe $15$-million level is therefore attained strictly after $t=16$, which is the same as $t>16$.\n\nSo the statement is True.\n",
-        "**E.** → False\n\nThe neighbouring population is written in continuous form\n\n$$N(t)=9\\cdot 10^{6}\\,e^{0.015 t}$$\n\n$$N(t)=9\\cdot 1000000\\,e^{0.015 t}$$\n\nThe coefficient of $t$ in the exponent is the continuous force of growth:\n\n$$\nk = 0.015 = 1.5\\%\n$$\n\nThat force is equal to $1.5\\%$ per year, not strictly smaller. The corresponding effective annual rate is even larger:\n\n$$e^{0.015}-1\\approx0.015113\\approx1.511\\%$$\n\n$$0.015113>0.015$$\n\nWhether one reads the continuous force or the effective annual rate, the growth is not smaller than $1.5\\%$ per year.\n\nSo the statement is False.\n"
-      ],
       "difficulty_level": "5/5",
-      "solution_overview": "Annual compounding at $1.8\\%$ starts from $12$ million inhabitants:\n\n$$f(t)=12\\cdot 1.018^{t}\\qquad(0\\le t\\le 6)$$\n\nAfter the kink the base drops to $1.01$. At the switch one has $f(6)\\approx13.3557$, and the $15$-million hit finishes at $t_{\\mathrm{hit}}\\approx17.6684$. Over twenty years of uninterrupted $1.8\\%$ growth the multiplicative factor is $1.018^{20}\\approx1.4287$ (about $42.87\\%$ net growth). Exact GDP-per-capita growth is $1.04/1.018-1\\approx0.0216$, while a continuous neighbour with force $0.015$ has effective annual rate $e^{0.015}-1\\approx0.01511$.",
-      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22720%22%20height%3D%22420%22%20viewBox%3D%220%200%20720%20420%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f7f3ea%22%2F%3E%3Ctext%20x%3D%22360.0%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-size%3D%2217%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3EPiecewise%20population%20%28millions%29%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%2248%22%20x2%3D%2276%22%20y2%3D%22368%22%20stroke%3D%22%23333%22%20stroke-width%3D%221.5%22%2F%3E%3Cline%20x1%3D%2276%22%20y1%3D%22368%22%20x2%3D%22692%22%20y2%3D%22368%22%20stroke%3D%22%23333%22%20stroke-width%3D%221.5%22%2F%3E%3Cline%20x1%3D%2276.0%22%20y1%3D%22368%22%20x2%3D%2276.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2276.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22230.0%22%20y1%3D%22368%22%20x2%3D%22230.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22230.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cline%20x1%3D%22384.0%22%20y1%3D%22368%22%20x2%3D%22384.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22384.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E10%3C%2Ftext%3E%3Cline%20x1%3D%22538.0%22%20y1%3D%22368%22%20x2%3D%22538.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22538.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E15%3C%2Ftext%3E%3Cline%20x1%3D%22692.0%22%20y1%3D%22368%22%20x2%3D%22692.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22692.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E20%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22345.9%22%20x2%3D%22692%22%20y2%3D%22345.9%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22345.9%22%20x2%3D%2276%22%20y2%3D%22345.9%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22345.9%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E12%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22263.6%22%20x2%3D%22692%22%20y2%3D%22263.6%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22263.6%22%20x2%3D%2276%22%20y2%3D%22263.6%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22263.6%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E13%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22181.3%22%20x2%3D%22692%22%20y2%3D%22181.3%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22181.3%22%20x2%3D%2276%22%20y2%3D%22181.3%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22181.3%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E14%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%2299.0%22%20x2%3D%22692%22%20y2%3D%2299.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%2299.0%22%20x2%3D%2276%22%20y2%3D%2299.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%2299.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E15%3C%2Ftext%3E%3Cline%20x1%3D%22260.8%22%20y1%3D%2248%22%20x2%3D%22260.8%22%20y2%3D%22368%22%20stroke%3D%22%23888%22%20stroke-dasharray%3D%224%204%22%2F%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.5%22%20points%3D%2276.0%2C345.9%2077.9%2C344.8%2079.8%2C343.7%2081.8%2C342.6%2083.7%2C341.5%2085.6%2C340.4%2087.5%2C339.3%2089.5%2C338.2%2091.4%2C337.1%2093.3%2C336.0%2095.2%2C334.9%2097.2%2C333.7%2099.1%2C332.6%20101.0%2C331.5%20103.0%2C330.4%20104.9%2C329.3%20106.8%2C328.2%20108.7%2C327.0%20110.7%2C325.9%20112.6%2C324.8%20114.5%2C323.7%20116.4%2C322.5%20118.3%2C321.4%20120.3%2C320.3%20122.2%2C319.1%20124.1%2C318.0%20126.1%2C316.9%20128.0%2C315.7%20129.9%2C314.6%20131.8%2C313.5%20133.8%2C312.3%20135.7%2C311.2%20137.6%2C310.1%20139.5%2C308.9%20141.4%2C307.8%20143.4%2C306.6%20145.3%2C305.5%20147.2%2C304.3%20149.1%2C303.2%20151.1%2C302.0%20153.0%2C300.9%20154.9%2C299.7%20156.9%2C298.6%20158.8%2C297.4%20160.7%2C296.3%20162.6%2C295.1%20164.6%2C294.0%20166.5%2C292.8%20168.4%2C291.6%20170.3%2C290.5%20172.2%2C289.3%20174.2%2C288.1%20176.1%2C287.0%20178.0%2C285.8%20179.9%2C284.6%20181.9%2C283.5%20183.8%2C282.3%20185.7%2C281.1%20187.6%2C280.0%20189.6%2C278.8%20191.5%2C277.6%20193.4%2C276.4%20195.4%2C275.2%20197.3%2C274.1%20199.2%2C272.9%20201.1%2C271.7%20203.1%2C270.5%20205.0%2C269.3%20206.9%2C268.1%20208.8%2C267.0%20210.8%2C265.8%20212.7%2C264.6%20214.6%2C263.4%20216.5%2C262.2%20218.5%2C261.0%20220.4%2C259.8%20222.3%2C258.6%20224.2%2C257.4%20226.2%2C256.2%20228.1%2C255.0%20230.0%2C253.8%20231.9%2C252.6%20233.8%2C251.4%20235.8%2C250.2%20237.7%2C249.0%20239.6%2C247.8%20241.5%2C246.5%20243.5%2C245.3%20245.4%2C244.1%20247.3%2C242.9%20249.2%2C241.7%20251.2%2C240.5%20253.1%2C239.3%20255.0%2C238.0%20257.0%2C236.8%20258.9%2C235.6%20260.8%2C234.4%20262.7%2C233.7%20264.6%2C233.0%20266.6%2C232.3%20268.5%2C231.6%20270.4%2C230.9%20272.4%2C230.3%20274.3%2C229.6%20276.2%2C228.9%20278.1%2C228.2%20280.0%2C227.5%20282.0%2C226.8%20283.9%2C226.1%20285.8%2C225.4%20287.8%2C224.7%20289.7%2C224.1%20291.6%2C223.4%20293.5%2C222.7%20295.5%2C222.0%20297.4%2C221.3%20299.3%2C220.6%20301.2%2C219.9%20303.1%2C219.2%20305.1%2C218.5%20307.0%2C217.8%20308.9%2C217.1%20310.9%2C216.4%20312.8%2C215.7%20314.7%2C215.1%20316.6%2C214.4%20318.5%2C213.7%20320.5%2C213.0%20322.4%2C212.3%20324.3%2C211.6%20326.2%2C210.9%20328.2%2C210.2%20330.1%2C209.5%20332.0%2C208.8%20333.9%2C208.1%20335.9%2C207.4%20337.8%2C206.7%20339.7%2C206.0%20341.7%2C205.3%20343.6%2C204.6%20345.5%2C203.9%20347.4%2C203.2%20349.3%2C202.5%20351.3%2C201.8%20353.2%2C201.1%20355.1%2C200.4%20357.1%2C199.6%20359.0%2C198.9%20360.9%2C198.2%20362.8%2C197.5%20364.8%2C196.8%20366.7%2C196.1%20368.6%2C195.4%20370.5%2C194.7%20372.4%2C194.0%20374.4%2C193.3%20376.3%2C192.6%20378.2%2C191.9%20380.2%2C191.2%20382.1%2C190.4%20384.0%2C189.7%20385.9%2C189.0%20387.8%2C188.3%20389.8%2C187.6%20391.7%2C186.9%20393.6%2C186.2%20395.6%2C185.5%20397.5%2C184.7%20399.4%2C184.0%20401.3%2C183.3%20403.2%2C182.6%20405.2%2C181.9%20407.1%2C181.2%20409.0%2C180.4%20410.9%2C179.7%20412.9%2C179.0%20414.8%2C178.3%20416.7%2C177.6%20418.7%2C176.9%20420.6%2C176.1%20422.5%2C175.4%20424.4%2C174.7%20426.3%2C174.0%20428.3%2C173.3%20430.2%2C172.5%20432.1%2C171.8%20434.1%2C171.1%20436.0%2C170.4%20437.9%2C169.6%20439.8%2C168.9%20441.8%2C168.2%20443.7%2C167.5%20445.6%2C166.7%20447.5%2C166.0%20449.4%2C165.3%20451.4%2C164.6%20453.3%2C163.8%20455.2%2C163.1%20457.2%2C162.4%20459.1%2C161.7%20461.0%2C160.9%20462.9%2C160.2%20464.8%2C159.5%20466.8%2C158.7%20468.7%2C158.0%20470.6%2C157.3%20472.6%2C156.5%20474.5%2C155.8%20476.4%2C155.1%20478.3%2C154.3%20480.2%2C153.6%20482.2%2C152.9%20484.1%2C152.1%20486.0%2C151.4%20487.9%2C150.7%20489.9%2C149.9%20491.8%2C149.2%20493.7%2C148.5%20495.7%2C147.7%20497.6%2C147.0%20499.5%2C146.2%20501.4%2C145.5%20503.3%2C144.8%20505.3%2C144.0%20507.2%2C143.3%20509.1%2C142.5%20511.1%2C141.8%20513.0%2C141.1%20514.9%2C140.3%20516.8%2C139.6%20518.8%2C138.8%20520.7%2C138.1%20522.6%2C137.4%20524.5%2C136.6%20526.5%2C135.9%20528.4%2C135.1%20530.3%2C134.4%20532.2%2C133.6%20534.2%2C132.9%20536.1%2C132.1%20538.0%2C131.4%20539.9%2C130.6%20541.8%2C129.9%20543.8%2C129.1%20545.7%2C128.4%20547.6%2C127.6%20549.5%2C126.9%20551.5%2C126.1%20553.4%2C125.4%20555.3%2C124.6%20557.2%2C123.9%20559.2%2C123.1%20561.1%2C122.4%20563.0%2C121.6%20565.0%2C120.9%20566.9%2C120.1%20568.8%2C119.4%20570.7%2C118.6%20572.7%2C117.9%20574.6%2C117.1%20576.5%2C116.3%20578.4%2C115.6%20580.3%2C114.8%20582.3%2C114.1%20584.2%2C113.3%20586.1%2C112.6%20588.1%2C111.8%20590.0%2C111.0%20591.9%2C110.3%20593.8%2C109.5%20595.8%2C108.7%20597.7%2C108.0%20599.6%2C107.2%20601.5%2C106.5%20603.4%2C105.7%20605.4%2C104.9%20607.3%2C104.2%20609.2%2C103.4%20611.1%2C102.6%20613.1%2C101.9%20615.0%2C101.1%20616.9%2C100.3%20618.9%2C99.6%20620.8%2C98.8%20622.7%2C98.0%20624.6%2C97.3%20626.6%2C96.5%20628.5%2C95.7%20630.4%2C95.0%20632.3%2C94.2%20634.2%2C93.4%20636.2%2C92.7%20638.1%2C91.9%20640.0%2C91.1%20641.9%2C90.3%20643.9%2C89.6%20645.8%2C88.8%20647.7%2C88.0%20649.6%2C87.2%20651.6%2C86.5%20653.5%2C85.7%20655.4%2C84.9%20657.4%2C84.1%20659.3%2C83.4%20661.2%2C82.6%20663.1%2C81.8%20665.1%2C81.0%20667.0%2C80.2%20668.9%2C79.5%20670.8%2C78.7%20672.8%2C77.9%20674.7%2C77.1%20676.6%2C76.3%20678.5%2C75.6%20680.4%2C74.8%20682.4%2C74.0%20684.3%2C73.2%20686.2%2C72.4%20688.1%2C71.6%20690.1%2C70.9%20692.0%2C70.1%22%2F%3E%3Ccircle%20cx%3D%22260.8%22%20cy%3D%22234.4%22%20r%3D%224.5%22%20fill%3D%22%231a1a1a%22%2F%3E%3Ctext%20x%3D%22268.8%22%20y%3D%22226.4%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Eswitch%3C%2Ftext%3E%3Ccircle%20cx%3D%22692.0%22%20cy%3D%2270.1%22%20r%3D%224.5%22%20fill%3D%22%231a1a1a%22%2F%3E%3Ctext%20x%3D%22360.0%22%20y%3D%22408%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Et%3C%2Ftext%3E%3Ctext%20x%3D%2218%22%20y%3D%22208%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%20transform%3D%22rotate%28-90%2018%20208%29%22%3Elevel%3C%2Ftext%3E%3C%2Fsvg%3E"
+      "solution_overview": "Compare the two exponentials by taking logs. The intercept of $h$ is $\\ln(1/4)$, not $\\ln 4$; after the crossing point $f$ overtakes $g$.",
+      "tactical_explanations": [
+        "**A.** → True\n\n$2e^{0.1t}=8e^{-0.2t}$ becomes $e^{0.3t}=4$, so $t=\\dfrac{\\ln 4}{0.3}$. The exponential is one-to-one, so the root is unique.\n\nSo the statement is True.",
+        "**B.** → False\n\n$h(t)=\\ln 2+0.1t-\\ln 8+0.2t=\\ln(\\tfrac14)+0.3t$. The slope $0.3$ is right, but the constant is $\\ln(\\tfrac14)$, not $\\ln 4$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$f(t+10)=2e^{0.1t+1}=e\\,f(t)$ and $g(t+10)=8e^{-0.2t-2}=e^{-2}g(t)$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$f(t)g(t)=16e^{-0.1t}$, which still depends on $t$.\n\nSo the statement is False.",
+        "**E.** → False\n\nThey meet at the positive time $t=\\dfrac{\\ln 4}{0.3}$. For larger $t$, $f>g$. The claim that $f$ stays below $g$ for every positive $t$ is false.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "MATH 11.184",
-      "id": "math-11-184",
-      "title": "Clinic throughput: f, f′ and f″ on one plane",
+      "case_id": "DEMO MATH 11.H01",
+      "id": "demo-math-11-h01",
+      "title": "Economic derivative of a tangled revenue path",
       "chapter": 11,
       "subsection": "11.5",
-      "context": "A clinic tracks a throughput index $f$ (brown), its derivative $f^{\\prime}$ (green), and its second derivative $f^{\\prime\\prime}$ (purple) on one shared figure. Throughput is measured against a staffing intensity $x$. Which of the following statements is/are correct?",
+      "context": "A firm faces inverse demand $P(q)=120-4q$ for $0\\le q\\le 30$ (price in euros, quantity in thousands of units). Revenue is $R(q)=q\\cdot P(q)$. Marginal revenue means $R'(q)$. Decide whether each claim is true or false.",
       "statements": [
-        "Brown has a local minimum near $x=1$ and a local maximum near $x=5$.",
-        "Purple crosses zero near $x=3$, and that is an inflection of brown: concavity of $f$ changes there.",
-        "Where purple is negative (right of $x=3$), green is decreasing — matching $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$.",
-        "The highest point of green is a local maximum of brown.",
-        "At $x=3$, brown is climbing, green is positive, and purple is near zero — so staffing intensity $3$ maximises throughput itself."
+        "$R'(q)=120-8q$, so in particular $R'(5)=80$.",
+        "Revenue is maximised at the same quantity where $P(q)=0$, i.e. at the choke quantity $q=30$.",
+        "If output rises from $q=5$ to $q=6$, the linear approximation using $R'(5)$ overestimates the true revenue increase $R(6)-R(5)$, because $R$ is a concave quadratic.",
+        "At the quantity that maximises $R$, price equals marginal revenue.",
+        "Cutting price enough to raise quantity from $q=20$ to $q=21$ must raise revenue, because more units are sold."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         true,
         false,
         false
       ],
-      "tactical_explanations": [
-        "**A.** → True\n\nBrown is the throughput level $f$, and green is its slope $f^{\\prime}$. Local extrema of brown therefore sit where green crosses the axis and changes sign — not where green merely peaks.\n\nNear $x=1$, green passes from negative to positive, so the slope of throughput flips from downhill to uphill: brown bottoms out there — a local minimum.\n\nNear $x=5$, green passes from positive to negative, so the climb of brown turns into a descent: brown peaks there — a local maximum.\n\nThose two turning points are exactly the ones named in the claim.\n\n$$\nx = 1\n$$\n\n$$\nx = 5\n$$\n\nSo the statement is True.\n",
-        "**B.** → True\n\nPurple is $f^{\\prime\\prime}$, the concavity meter for brown. An inflection of $f$ is a zero of $f^{\\prime\\prime}$ where that second derivative changes sign — a flip of concavity, not a peak of the level itself.\n\nThe figure shows purple crossing through zero near $x=3$, switching from positive to negative. Left of that crossing brown is concave up; right of it brown is concave down.\n\nSo staffing intensity near $3$ is precisely an inflection of throughput $f$, which is what the claim asserts.\n\n$$\nx = 3\n$$\n\nSo the statement is True.\n",
-        "**C.** → True\n\nBy definition $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$, so the sign of purple is exactly the slope of green: purple positive means green is rising, purple negative means green is falling.\n\nWherever purple lies below the axis — which the figure shows for $x$ right of $3$ — green must be decreasing. That is not an extra geometric accident; it is the chain of derivatives written in colours.\n\nThe claim records exactly that consistency between the two derivative curves.\n\n$$\nf^{\\prime\\prime} = (f^{\\prime})^{\\prime}\n$$\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
-        "**D.** → False\n\nThe highest point of green is where $f^{\\prime}$ itself is largest — the steepest climb of brown — not a turning point of brown. At that staffing intensity, throughput is still rising as fast as it ever does.\n\nA local maximum of brown requires green to cross through zero with a $+$ to $-$ sign change, which happens near $x=5$, well after green's peak.\n\nThe claim confuses a peak of the slope with a peak of the level.\n\nSo the statement is False.\n",
-        "**E.** → False\n\nAt $x=3$, purple is near zero (an inflection of brown), while green is still positive, so the slope of throughput is still uphill: brown is climbing, not peaking.\n\nThe staffing intensity that maximises throughput itself is where green crosses down through zero, near $x=5$. An inflection with a still-positive first derivative is a change of concavity, not a maximum of $f$.\n\nThe claim treats the inflection as a throughput maximum.\n\n$$\nx = 3\n$$\n\n$$\nx = 5\n$$\n\nSo the statement is False.\n"
-      ],
       "difficulty_level": "5/5",
-      "solution_overview": "The figure stacks three related curves against staffing intensity $x$: brown is the throughput level $f$, green is its slope $f^{\\prime}$, and purple is $f^{\\prime\\prime}$.\n\nLocal extrema of brown sit where green crosses the axis and changes sign: near $x=1$ green flips $-$ to $+$, so brown has a local minimum; near $x=5$ green flips $+$ to $-$, so brown has a local maximum.\n\nAn inflection of brown is a zero of purple with a sign change. Purple crosses through zero near $x=3$ (from $+$ to $-$), so $f$ changes from concave up to concave down there.\n\nBy definition $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$, so wherever purple is negative (right of $x=3$), green must be decreasing. The peak of green is only the steepest climb of brown — not a turning point of brown — and at the inflection $x=3$ green is still positive, so throughput is still rising toward its maximum near $x=5$.",
-      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThroughput%20f%2C%20f%E2%80%B2%20and%20f%E2%80%B3%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-779784%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22182.5%22%20x2%3D%22506%22%20y2%3D%22182.5%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22301.8%22%20x2%3D%22506.0%22%20y2%3D%22301.8%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22301.8%22%20x2%3D%2252.0%22%20y2%3D%22301.8%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22301.8%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-10%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22186.5%22%20x2%3D%22506.0%22%20y2%3D%22186.5%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22186.5%22%20x2%3D%2252.0%22%20y2%3D%22186.5%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22186.5%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2271.1%22%20x2%3D%22506.0%22%20y2%3D%2271.1%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2271.1%22%20x2%3D%2252.0%22%20y2%3D%2271.1%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2271.1%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E10%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C182.5%2053.4%2C183.5%2054.8%2C184.6%2056.3%2C185.6%2057.7%2C186.6%2059.1%2C187.6%2060.5%2C188.5%2061.9%2C189.4%2063.4%2C190.3%2064.8%2C191.2%2066.2%2C192.1%2067.6%2C192.9%2069.0%2C193.7%2070.4%2C194.5%2071.9%2C195.3%2073.3%2C196.0%2074.7%2C196.8%2076.1%2C197.5%2077.5%2C198.1%2079.0%2C198.8%2080.4%2C199.4%2081.8%2C200.0%2083.2%2C200.6%2084.6%2C201.2%2086.0%2C201.8%2087.5%2C202.3%2088.9%2C202.8%2090.3%2C203.3%2091.7%2C203.8%2093.1%2C204.2%2094.6%2C204.6%2096.0%2C205.1%2097.4%2C205.4%2098.8%2C205.8%20100.2%2C206.2%20101.7%2C206.5%20103.1%2C206.8%20104.5%2C207.1%20105.9%2C207.4%20107.3%2C207.6%20108.8%2C207.9%20110.2%2C208.1%20111.6%2C208.3%20113.0%2C208.5%20114.4%2C208.7%20115.8%2C208.8%20117.3%2C208.9%20118.7%2C209.1%20120.1%2C209.2%20121.5%2C209.2%20122.9%2C209.3%20124.4%2C209.3%20125.8%2C209.4%20127.2%2C209.4%20128.6%2C209.4%20130.0%2C209.4%20131.4%2C209.3%20132.9%2C209.3%20134.3%2C209.2%20135.7%2C209.1%20137.1%2C209.0%20138.5%2C208.9%20140.0%2C208.8%20141.4%2C208.6%20142.8%2C208.5%20144.2%2C208.3%20145.6%2C208.1%20147.1%2C207.9%20148.5%2C207.7%20149.9%2C207.5%20151.3%2C207.2%20152.7%2C207.0%20154.2%2C206.7%20155.6%2C206.4%20157.0%2C206.1%20158.4%2C205.8%20159.8%2C205.5%20161.2%2C205.2%20162.7%2C204.8%20164.1%2C204.5%20165.5%2C204.1%20166.9%2C203.7%20168.3%2C203.3%20169.8%2C202.9%20171.2%2C202.5%20172.6%2C202.1%20174.0%2C201.6%20175.4%2C201.2%20176.8%2C200.7%20178.3%2C200.2%20179.7%2C199.7%20181.1%2C199.2%20182.5%2C198.7%20183.9%2C198.2%20185.4%2C197.7%20186.8%2C197.1%20188.2%2C196.6%20189.6%2C196.0%20191.0%2C195.5%20192.5%2C194.9%20193.9%2C194.3%20195.3%2C193.7%20196.7%2C193.1%20198.1%2C192.5%20199.6%2C191.9%20201.0%2C191.2%20202.4%2C190.6%20203.8%2C189.9%20205.2%2C189.3%20206.6%2C188.6%20208.1%2C187.9%20209.5%2C187.3%20210.9%2C186.6%20212.3%2C185.9%20213.7%2C185.2%20215.2%2C184.5%20216.6%2C183.8%20218.0%2C183.0%20219.4%2C182.3%20220.8%2C181.6%20222.2%2C180.8%20223.7%2C180.1%20225.1%2C179.3%20226.5%2C178.6%20227.9%2C177.8%20229.3%2C177.0%20230.8%2C176.3%20232.2%2C175.5%20233.6%2C174.7%20235.0%2C173.9%20236.4%2C173.1%20237.9%2C172.3%20239.3%2C171.5%20240.7%2C170.7%20242.1%2C169.9%20243.5%2C169.1%20244.9%2C168.3%20246.4%2C167.4%20247.8%2C166.6%20249.2%2C165.8%20250.6%2C165.0%20252.0%2C164.1%20253.5%2C163.3%20254.9%2C162.4%20256.3%2C161.6%20257.7%2C160.7%20259.1%2C159.9%20260.6%2C159.0%20262.0%2C158.2%20263.4%2C157.3%20264.8%2C156.5%20266.2%2C155.6%20267.6%2C154.8%20269.1%2C153.9%20270.5%2C153.0%20271.9%2C152.2%20273.3%2C151.3%20274.7%2C150.4%20276.2%2C149.6%20277.6%2C148.7%20279.0%2C147.8%20280.4%2C147.0%20281.8%2C146.1%20283.3%2C145.3%20284.7%2C144.4%20286.1%2C143.5%20287.5%2C142.7%20288.9%2C141.8%20290.4%2C140.9%20291.8%2C140.1%20293.2%2C139.2%20294.6%2C138.4%20296.0%2C137.5%20297.4%2C136.7%20298.9%2C135.8%20300.3%2C135.0%20301.7%2C134.1%20303.1%2C133.3%20304.5%2C132.4%20306.0%2C131.6%20307.4%2C130.7%20308.8%2C129.9%20310.2%2C129.1%20311.6%2C128.3%20313.1%2C127.4%20314.5%2C126.6%20315.9%2C125.8%20317.3%2C125.0%20318.7%2C124.2%20320.1%2C123.4%20321.6%2C122.6%20323.0%2C121.8%20324.4%2C121.0%20325.8%2C120.2%20327.2%2C119.4%20328.7%2C118.6%20330.1%2C117.9%20331.5%2C117.1%20332.9%2C116.4%20334.3%2C115.6%20335.8%2C114.9%20337.2%2C114.1%20338.6%2C113.4%20340.0%2C112.7%20341.4%2C111.9%20342.8%2C111.2%20344.3%2C110.5%20345.7%2C109.8%20347.1%2C109.1%20348.5%2C108.4%20349.9%2C107.7%20351.4%2C107.1%20352.8%2C106.4%20354.2%2C105.8%20355.6%2C105.1%20357.0%2C104.5%20358.4%2C103.8%20359.9%2C103.2%20361.3%2C102.6%20362.7%2C102.0%20364.1%2C101.4%20365.5%2C100.8%20367.0%2C100.2%20368.4%2C99.7%20369.8%2C99.1%20371.2%2C98.6%20372.6%2C98.0%20374.1%2C97.5%20375.5%2C97.0%20376.9%2C96.5%20378.3%2C96.0%20379.7%2C95.5%20381.1%2C95.0%20382.6%2C94.5%20384.0%2C94.1%20385.4%2C93.6%20386.8%2C93.2%20388.2%2C92.8%20389.7%2C92.4%20391.1%2C92.0%20392.5%2C91.6%20393.9%2C91.2%20395.3%2C90.9%20396.8%2C90.5%20398.2%2C90.2%20399.6%2C89.9%20401.0%2C89.5%20402.4%2C89.3%20403.9%2C89.0%20405.3%2C88.7%20406.7%2C88.4%20408.1%2C88.2%20409.5%2C88.0%20410.9%2C87.8%20412.4%2C87.6%20413.8%2C87.4%20415.2%2C87.2%20416.6%2C87.0%20418.0%2C86.9%20419.5%2C86.8%20420.9%2C86.7%20422.3%2C86.6%20423.7%2C86.5%20425.1%2C86.4%20426.6%2C86.4%20428.0%2C86.3%20429.4%2C86.3%20430.8%2C86.3%20432.2%2C86.3%20433.6%2C86.4%20435.1%2C86.4%20436.5%2C86.5%20437.9%2C86.5%20439.3%2C86.6%20440.7%2C86.8%20442.2%2C86.9%20443.6%2C87.0%20445.0%2C87.2%20446.4%2C87.4%20447.8%2C87.6%20449.2%2C87.8%20450.7%2C88.0%20452.1%2C88.3%20453.5%2C88.6%20454.9%2C88.9%20456.3%2C89.2%20457.8%2C89.5%20459.2%2C89.9%20460.6%2C90.2%20462.0%2C90.6%20463.4%2C91.0%20464.9%2C91.5%20466.3%2C91.9%20467.7%2C92.4%20469.1%2C92.9%20470.5%2C93.4%20471.9%2C93.9%20473.4%2C94.5%20474.8%2C95.1%20476.2%2C95.6%20477.6%2C96.3%20479.0%2C96.9%20480.5%2C97.6%20481.9%2C98.2%20483.3%2C98.9%20484.7%2C99.7%20486.1%2C100.4%20487.6%2C101.2%20489.0%2C102.0%20490.4%2C102.8%20491.8%2C103.6%20493.2%2C104.5%20494.6%2C105.3%20496.1%2C106.2%20497.5%2C107.2%20498.9%2C108.1%20500.3%2C109.1%20501.7%2C110.1%20503.2%2C111.1%20504.6%2C112.2%20506.0%2C113.2%22%20clip-path%3D%22url%28%23clip-779784%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C240.2%2053.4%2C238.9%2054.8%2C237.6%2056.3%2C236.3%2057.7%2C235.0%2059.1%2C233.8%2060.5%2C232.5%2061.9%2C231.3%2063.4%2C230.0%2064.8%2C228.8%2066.2%2C227.6%2067.6%2C226.4%2069.0%2C225.2%2070.4%2C224.0%2071.9%2C222.8%2073.3%2C221.6%2074.7%2C220.4%2076.1%2C219.3%2077.5%2C218.1%2079.0%2C217.0%2080.4%2C215.8%2081.8%2C214.7%2083.2%2C213.6%2084.6%2C212.4%2086.0%2C211.3%2087.5%2C210.2%2088.9%2C209.1%2090.3%2C208.1%2091.7%2C207.0%2093.1%2C205.9%2094.6%2C204.9%2096.0%2C203.8%2097.4%2C202.8%2098.8%2C201.7%20100.2%2C200.7%20101.7%2C199.7%20103.1%2C198.7%20104.5%2C197.7%20105.9%2C196.7%20107.3%2C195.7%20108.8%2C194.7%20110.2%2C193.8%20111.6%2C192.8%20113.0%2C191.8%20114.4%2C190.9%20115.8%2C190.0%20117.3%2C189.0%20118.7%2C188.1%20120.1%2C187.2%20121.5%2C186.3%20122.9%2C185.4%20124.4%2C184.5%20125.8%2C183.6%20127.2%2C182.8%20128.6%2C181.9%20130.0%2C181.0%20131.4%2C180.2%20132.9%2C179.3%20134.3%2C178.5%20135.7%2C177.7%20137.1%2C176.9%20138.5%2C176.1%20140.0%2C175.3%20141.4%2C174.5%20142.8%2C173.7%20144.2%2C172.9%20145.6%2C172.2%20147.1%2C171.4%20148.5%2C170.6%20149.9%2C169.9%20151.3%2C169.2%20152.7%2C168.4%20154.2%2C167.7%20155.6%2C167.0%20157.0%2C166.3%20158.4%2C165.6%20159.8%2C164.9%20161.2%2C164.3%20162.7%2C163.6%20164.1%2C162.9%20165.5%2C162.3%20166.9%2C161.6%20168.3%2C161.0%20169.8%2C160.4%20171.2%2C159.7%20172.6%2C159.1%20174.0%2C158.5%20175.4%2C157.9%20176.8%2C157.3%20178.3%2C156.8%20179.7%2C156.2%20181.1%2C155.6%20182.5%2C155.1%20183.9%2C154.5%20185.4%2C154.0%20186.8%2C153.4%20188.2%2C152.9%20189.6%2C152.4%20191.0%2C151.9%20192.5%2C151.4%20193.9%2C150.9%20195.3%2C150.4%20196.7%2C150.0%20198.1%2C149.5%20199.6%2C149.0%20201.0%2C148.6%20202.4%2C148.1%20203.8%2C147.7%20205.2%2C147.3%20206.6%2C146.9%20208.1%2C146.4%20209.5%2C146.0%20210.9%2C145.7%20212.3%2C145.3%20213.7%2C144.9%20215.2%2C144.5%20216.6%2C144.2%20218.0%2C143.8%20219.4%2C143.5%20220.8%2C143.1%20222.2%2C142.8%20223.7%2C142.5%20225.1%2C142.2%20226.5%2C141.9%20227.9%2C141.6%20229.3%2C141.3%20230.8%2C141.0%20232.2%2C140.7%20233.6%2C140.5%20235.0%2C140.2%20236.4%2C140.0%20237.9%2C139.7%20239.3%2C139.5%20240.7%2C139.3%20242.1%2C139.0%20243.5%2C138.8%20244.9%2C138.6%20246.4%2C138.5%20247.8%2C138.3%20249.2%2C138.1%20250.6%2C137.9%20252.0%2C137.8%20253.5%2C137.6%20254.9%2C137.5%20256.3%2C137.3%20257.7%2C137.2%20259.1%2C137.1%20260.6%2C137.0%20262.0%2C136.9%20263.4%2C136.8%20264.8%2C136.7%20266.2%2C136.6%20267.6%2C136.6%20269.1%2C136.5%20270.5%2C136.5%20271.9%2C136.4%20273.3%2C136.4%20274.7%2C136.3%20276.2%2C136.3%20277.6%2C136.3%20279.0%2C136.3%20280.4%2C136.3%20281.8%2C136.3%20283.3%2C136.3%20284.7%2C136.4%20286.1%2C136.4%20287.5%2C136.5%20288.9%2C136.5%20290.4%2C136.6%20291.8%2C136.6%20293.2%2C136.7%20294.6%2C136.8%20296.0%2C136.9%20297.4%2C137.0%20298.9%2C137.1%20300.3%2C137.2%20301.7%2C137.3%20303.1%2C137.5%20304.5%2C137.6%20306.0%2C137.8%20307.4%2C137.9%20308.8%2C138.1%20310.2%2C138.3%20311.6%2C138.5%20313.1%2C138.6%20314.5%2C138.8%20315.9%2C139.0%20317.3%2C139.3%20318.7%2C139.5%20320.1%2C139.7%20321.6%2C140.0%20323.0%2C140.2%20324.4%2C140.5%20325.8%2C140.7%20327.2%2C141.0%20328.7%2C141.3%20330.1%2C141.6%20331.5%2C141.9%20332.9%2C142.2%20334.3%2C142.5%20335.8%2C142.8%20337.2%2C143.1%20338.6%2C143.5%20340.0%2C143.8%20341.4%2C144.2%20342.8%2C144.5%20344.3%2C144.9%20345.7%2C145.3%20347.1%2C145.7%20348.5%2C146.0%20349.9%2C146.4%20351.4%2C146.9%20352.8%2C147.3%20354.2%2C147.7%20355.6%2C148.1%20357.0%2C148.6%20358.4%2C149.0%20359.9%2C149.5%20361.3%2C150.0%20362.7%2C150.4%20364.1%2C150.9%20365.5%2C151.4%20367.0%2C151.9%20368.4%2C152.4%20369.8%2C152.9%20371.2%2C153.4%20372.6%2C154.0%20374.1%2C154.5%20375.5%2C155.1%20376.9%2C155.6%20378.3%2C156.2%20379.7%2C156.8%20381.1%2C157.3%20382.6%2C157.9%20384.0%2C158.5%20385.4%2C159.1%20386.8%2C159.7%20388.2%2C160.4%20389.7%2C161.0%20391.1%2C161.6%20392.5%2C162.3%20393.9%2C162.9%20395.3%2C163.6%20396.8%2C164.3%20398.2%2C164.9%20399.6%2C165.6%20401.0%2C166.3%20402.4%2C167.0%20403.9%2C167.7%20405.3%2C168.4%20406.7%2C169.2%20408.1%2C169.9%20409.5%2C170.6%20410.9%2C171.4%20412.4%2C172.2%20413.8%2C172.9%20415.2%2C173.7%20416.6%2C174.5%20418.0%2C175.3%20419.5%2C176.1%20420.9%2C176.9%20422.3%2C177.7%20423.7%2C178.5%20425.1%2C179.3%20426.6%2C180.2%20428.0%2C181.0%20429.4%2C181.9%20430.8%2C182.8%20432.2%2C183.6%20433.6%2C184.5%20435.1%2C185.4%20436.5%2C186.3%20437.9%2C187.2%20439.3%2C188.1%20440.7%2C189.0%20442.2%2C190.0%20443.6%2C190.9%20445.0%2C191.8%20446.4%2C192.8%20447.8%2C193.8%20449.2%2C194.7%20450.7%2C195.7%20452.1%2C196.7%20453.5%2C197.7%20454.9%2C198.7%20456.3%2C199.7%20457.8%2C200.7%20459.2%2C201.7%20460.6%2C202.8%20462.0%2C203.8%20463.4%2C204.9%20464.9%2C205.9%20466.3%2C207.0%20467.7%2C208.1%20469.1%2C209.1%20470.5%2C210.2%20471.9%2C211.3%20473.4%2C212.4%20474.8%2C213.6%20476.2%2C214.7%20477.6%2C215.8%20479.0%2C217.0%20480.5%2C218.1%20481.9%2C219.3%20483.3%2C220.4%20484.7%2C221.6%20486.1%2C222.8%20487.6%2C224.0%20489.0%2C225.2%20490.4%2C226.4%20491.8%2C227.6%20493.2%2C228.8%20494.6%2C230.0%20496.1%2C231.3%20497.5%2C232.5%20498.9%2C233.8%20500.3%2C235.0%20501.7%2C236.3%20503.2%2C237.6%20504.6%2C238.9%20506.0%2C240.2%22%20clip-path%3D%22url%28%23clip-779784%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C113.2%2053.4%2C113.7%2054.8%2C114.1%2056.3%2C114.5%2057.7%2C115.0%2059.1%2C115.4%2060.5%2C115.8%2061.9%2C116.3%2063.4%2C116.7%2064.8%2C117.1%2066.2%2C117.6%2067.6%2C118.0%2069.0%2C118.4%2070.4%2C118.9%2071.9%2C119.3%2073.3%2C119.7%2074.7%2C120.2%2076.1%2C120.6%2077.5%2C121.0%2079.0%2C121.5%2080.4%2C121.9%2081.8%2C122.3%2083.2%2C122.8%2084.6%2C123.2%2086.0%2C123.6%2087.5%2C124.0%2088.9%2C124.5%2090.3%2C124.9%2091.7%2C125.3%2093.1%2C125.8%2094.6%2C126.2%2096.0%2C126.6%2097.4%2C127.1%2098.8%2C127.5%20100.2%2C127.9%20101.7%2C128.4%20103.1%2C128.8%20104.5%2C129.2%20105.9%2C129.7%20107.3%2C130.1%20108.8%2C130.5%20110.2%2C131.0%20111.6%2C131.4%20113.0%2C131.8%20114.4%2C132.3%20115.8%2C132.7%20117.3%2C133.1%20118.7%2C133.6%20120.1%2C134.0%20121.5%2C134.4%20122.9%2C134.9%20124.4%2C135.3%20125.8%2C135.7%20127.2%2C136.2%20128.6%2C136.6%20130.0%2C137.0%20131.4%2C137.5%20132.9%2C137.9%20134.3%2C138.3%20135.7%2C138.8%20137.1%2C139.2%20138.5%2C139.6%20140.0%2C140.1%20141.4%2C140.5%20142.8%2C140.9%20144.2%2C141.4%20145.6%2C141.8%20147.1%2C142.2%20148.5%2C142.7%20149.9%2C143.1%20151.3%2C143.5%20152.7%2C144.0%20154.2%2C144.4%20155.6%2C144.8%20157.0%2C145.2%20158.4%2C145.7%20159.8%2C146.1%20161.2%2C146.5%20162.7%2C147.0%20164.1%2C147.4%20165.5%2C147.8%20166.9%2C148.3%20168.3%2C148.7%20169.8%2C149.1%20171.2%2C149.6%20172.6%2C150.0%20174.0%2C150.4%20175.4%2C150.9%20176.8%2C151.3%20178.3%2C151.7%20179.7%2C152.2%20181.1%2C152.6%20182.5%2C153.0%20183.9%2C153.5%20185.4%2C153.9%20186.8%2C154.3%20188.2%2C154.8%20189.6%2C155.2%20191.0%2C155.6%20192.5%2C156.1%20193.9%2C156.5%20195.3%2C156.9%20196.7%2C157.4%20198.1%2C157.8%20199.6%2C158.2%20201.0%2C158.7%20202.4%2C159.1%20203.8%2C159.5%20205.2%2C160.0%20206.6%2C160.4%20208.1%2C160.8%20209.5%2C161.3%20210.9%2C161.7%20212.3%2C162.1%20213.7%2C162.6%20215.2%2C163.0%20216.6%2C163.4%20218.0%2C163.9%20219.4%2C164.3%20220.8%2C164.7%20222.2%2C165.2%20223.7%2C165.6%20225.1%2C166.0%20226.5%2C166.5%20227.9%2C166.9%20229.3%2C167.3%20230.8%2C167.8%20232.2%2C168.2%20233.6%2C168.6%20235.0%2C169.0%20236.4%2C169.5%20237.9%2C169.9%20239.3%2C170.3%20240.7%2C170.8%20242.1%2C171.2%20243.5%2C171.6%20244.9%2C172.1%20246.4%2C172.5%20247.8%2C172.9%20249.2%2C173.4%20250.6%2C173.8%20252.0%2C174.2%20253.5%2C174.7%20254.9%2C175.1%20256.3%2C175.5%20257.7%2C176.0%20259.1%2C176.4%20260.6%2C176.8%20262.0%2C177.3%20263.4%2C177.7%20264.8%2C178.1%20266.2%2C178.6%20267.6%2C179.0%20269.1%2C179.4%20270.5%2C179.9%20271.9%2C180.3%20273.3%2C180.7%20274.7%2C181.2%20276.2%2C181.6%20277.6%2C182.0%20279.0%2C182.5%20280.4%2C182.9%20281.8%2C183.3%20283.3%2C183.8%20284.7%2C184.2%20286.1%2C184.6%20287.5%2C185.1%20288.9%2C185.5%20290.4%2C185.9%20291.8%2C186.4%20293.2%2C186.8%20294.6%2C187.2%20296.0%2C187.7%20297.4%2C188.1%20298.9%2C188.5%20300.3%2C189.0%20301.7%2C189.4%20303.1%2C189.8%20304.5%2C190.2%20306.0%2C190.7%20307.4%2C191.1%20308.8%2C191.5%20310.2%2C192.0%20311.6%2C192.4%20313.1%2C192.8%20314.5%2C193.3%20315.9%2C193.7%20317.3%2C194.1%20318.7%2C194.6%20320.1%2C195.0%20321.6%2C195.4%20323.0%2C195.9%20324.4%2C196.3%20325.8%2C196.7%20327.2%2C197.2%20328.7%2C197.6%20330.1%2C198.0%20331.5%2C198.5%20332.9%2C198.9%20334.3%2C199.3%20335.8%2C199.8%20337.2%2C200.2%20338.6%2C200.6%20340.0%2C201.1%20341.4%2C201.5%20342.8%2C201.9%20344.3%2C202.4%20345.7%2C202.8%20347.1%2C203.2%20348.5%2C203.7%20349.9%2C204.1%20351.4%2C204.5%20352.8%2C205.0%20354.2%2C205.4%20355.6%2C205.8%20357.0%2C206.3%20358.4%2C206.7%20359.9%2C207.1%20361.3%2C207.6%20362.7%2C208.0%20364.1%2C208.4%20365.5%2C208.9%20367.0%2C209.3%20368.4%2C209.7%20369.8%2C210.2%20371.2%2C210.6%20372.6%2C211.0%20374.1%2C211.5%20375.5%2C211.9%20376.9%2C212.3%20378.3%2C212.8%20379.7%2C213.2%20381.1%2C213.6%20382.6%2C214.0%20384.0%2C214.5%20385.4%2C214.9%20386.8%2C215.3%20388.2%2C215.8%20389.7%2C216.2%20391.1%2C216.6%20392.5%2C217.1%20393.9%2C217.5%20395.3%2C217.9%20396.8%2C218.4%20398.2%2C218.8%20399.6%2C219.2%20401.0%2C219.7%20402.4%2C220.1%20403.9%2C220.5%20405.3%2C221.0%20406.7%2C221.4%20408.1%2C221.8%20409.5%2C222.3%20410.9%2C222.7%20412.4%2C223.1%20413.8%2C223.6%20415.2%2C224.0%20416.6%2C224.4%20418.0%2C224.9%20419.5%2C225.3%20420.9%2C225.7%20422.3%2C226.2%20423.7%2C226.6%20425.1%2C227.0%20426.6%2C227.5%20428.0%2C227.9%20429.4%2C228.3%20430.8%2C228.8%20432.2%2C229.2%20433.6%2C229.6%20435.1%2C230.1%20436.5%2C230.5%20437.9%2C230.9%20439.3%2C231.4%20440.7%2C231.8%20442.2%2C232.2%20443.6%2C232.7%20445.0%2C233.1%20446.4%2C233.5%20447.8%2C234.0%20449.2%2C234.4%20450.7%2C234.8%20452.1%2C235.2%20453.5%2C235.7%20454.9%2C236.1%20456.3%2C236.5%20457.8%2C237.0%20459.2%2C237.4%20460.6%2C237.8%20462.0%2C238.3%20463.4%2C238.7%20464.9%2C239.1%20466.3%2C239.6%20467.7%2C240.0%20469.1%2C240.4%20470.5%2C240.9%20471.9%2C241.3%20473.4%2C241.7%20474.8%2C242.2%20476.2%2C242.6%20477.6%2C243.0%20479.0%2C243.5%20480.5%2C243.9%20481.9%2C244.3%20483.3%2C244.8%20484.7%2C245.2%20486.1%2C245.6%20487.6%2C246.1%20489.0%2C246.5%20490.4%2C246.9%20491.8%2C247.4%20493.2%2C247.8%20494.6%2C248.2%20496.1%2C248.7%20497.5%2C249.1%20498.9%2C249.5%20500.3%2C250.0%20501.7%2C250.4%20503.2%2C250.8%20504.6%2C251.3%20506.0%2C251.7%22%20clip-path%3D%22url%28%23clip-779784%29%22%2F%3E%0A%3Ccircle%20cx%3D%22127.7%22%20cy%3D%22182.5%22%20r%3D%223.4%22%20fill%3D%22%232F5D50%22%2F%3E%0A%3Ccircle%20cx%3D%22430.3%22%20cy%3D%22182.5%22%20r%3D%223.4%22%20fill%3D%22%232F5D50%22%2F%3E%0A%3Ccircle%20cx%3D%22279.0%22%20cy%3D%22182.5%22%20r%3D%223.4%22%20fill%3D%22%236B3FA0%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+      "solution_overview": "Only the first claim is a direct derivative evaluation. The rest are economic traps: choke quantity versus revenue peak, concavity of $R$, MR versus price, and \"more units always mean more revenue\".",
+      "tactical_explanations": [
+        "**A.** → True\n\n$R(q)=120q-4q^{2}$, so $R'(q)=120-8q$ and $R'(5)=80$. This is the one straightforward derivative check.\n\nSo the statement is True.",
+        "**B.** → False\n\n$R'(q)=0$ at $q=15$. At the choke $q=30$, price and revenue are both zero — that is not the revenue maximum.\n\nSo the statement is False.",
+        "**C.** → True\n\n$R''=-8<0$, so $R$ is concave and the tangent overestimates increments. Explicitly $R(5)=500$, $R(6)=576$, so the true increase is $76<80=R'(5)$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $q=15$, marginal revenue is $0$ while price is $P(15)=60$. Price does not equal marginal revenue at the revenue peak.\n\nSo the statement is False.",
+        "**E.** → False\n\n$R(20)=800$ and $R(21)=756$. Quantity rises while revenue falls: past the peak, the price cut destroys more revenue on infra-marginal units than it gains on the extra unit.\n\nSo the statement is False."
+      ]
     },
     {
       "case_id": "MATH 12.187",
@@ -1015,35 +1012,35 @@
       "solution_overview": "This problem describes a population of deer composed of three subspecies, each with a different prevalence of a certain prion disease. A field test for the disease has a known sensitivity and false-positive rate. We are testing a randomly selected deer and observing a positive result.\n\nLet $S_A$, $S_B$, and $S_C$ be the events that a randomly selected deer belongs to Subspecies A, B, or C, respectively. Their prior probabilities are:\n$$P(S_A) = 0.60$$\n$$P(S_B) = 0.25$$\n$$P(S_C) = 0.15$$\n\nLet $D$ be the event that a deer has the prion disease. The prevalence rates for each subspecies are:\n$$P(D \\mid S_A) = 0.02$$\n$$P(D \\mid S_B) = 0.06$$\n$$P(D \\mid S_C) = 0.15$$\n\nLet $T^+$ be the event of a positive test result and $T^-$ be the event of a negative test result. The test characteristics are:\nSensitivity: $P(T^+ \\mid D) = 0.90$\nFalse-positive rate: $P(T^+ \\mid D^c) = 0.04$\n\nThis means:\n$P(T^- \\mid D) = 1 - P(T^+ \\mid D) = 1 - 0.90 = 0.10$\n$P(T^- \\mid D^c) = 1 - P(T^+ \\mid D^c) = 1 - 0.04 = 0.96$\n\nTo evaluate the probabilities involving test results, we first need to find the probability of a positive test result for a deer from each subspecies, considering its specific disease prevalence. This uses the Law of Total Probability for each subspecies:\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D, S_i) P(D \\mid S_i) + P(T^+ \\mid D^c, S_i) P(D^c \\mid S_i)$$\nSince the test characteristics are independent of subspecies, $P(T^+ \\mid D, S_i) = P(T^+ \\mid D)$ and $P(T^+ \\mid D^c, S_i) = P(T^+ \\mid D^c)$.\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D) P(D \\mid S_i) + P(T^+ \\mid D^c) (1 - P(D \\mid S_i))$$\n\nFor Subspecies A:\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(1 - 0.02)$$\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(0.98)$$\n$$\nP(T^+ \\mid S_A) = 0.018 + 0.0392 = 0.0572\n$$\n\nFor Subspecies B:\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(1 - 0.06)$$\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(0.94)$$\n$$\nP(T^+ \\mid S_B) = 0.054 + 0.0376 = 0.0916\n$$\n\nFor Subspecies C:\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(1 - 0.15)$$\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(0.85)$$\n$$\nP(T^+ \\mid S_C) = 0.135 + 0.034 = 0.169\n$$\n\nNow, to find the overall probability that a randomly tested deer receives a positive result, we use the Law of Total Probability over the subspecies:\n$$P(T^+) = P(T^+ \\mid S_A)P(S_A) + P(T^+ \\mid S_B)P(S_B) + P(T^+ \\mid S_C)P(S_C)$$\n$$P(T^+) = (0.0572)(0.60) + (0.0916)(0.25) + (0.169)(0.15)$$\n$$P(T^+) = 0.03432 + 0.0229 + 0.02535$$\n$$P(T^+) = 0.08257$$\nThis is the base probability for many subsequent calculations."
     },
     {
-      "case_id": "MATH 13.79",
-      "id": "math-13-79",
-      "title": "Night Courier Audit",
+      "case_id": "DEMO MATH 13.H01",
+      "id": "demo-math-13-h01",
+      "title": "Binomial courier audit — with an obvious trap",
       "chapter": 13,
       "subsection": "13.5",
-      "context": "A courier completed an audit of 50 independent evening deliveries. The expected number of on-time deliveries was 42, and the variance of that count was 6.72. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A night courier logs $n=50$ independent deliveries. Each is on time with probability $p=0.8$, independently. Let $X$ be the number of on-time deliveries, so $X\\sim\\mathrm{Bin}(50,0.8)$. Decide whether each claim is true or false.",
       "statements": [
-        "The next delivery arrives late with probability 0.16.",
-        "In a run of 15 deliveries, the expected number of on-time deliveries exceeds 13.",
-        "For 25 deliveries, the variance of the number of on-time deliveries is 3.36.",
-        "The chance that each of the next 3 deliveries yields an on-time delivery is less than 0.55.",
-        "The chance of at most 5 on-time deliveries in the next 8 deliveries is more than 0.20."
+        "$\\mathbb{E}[X]=40$ and $\\mathrm{Var}(X)=8$.",
+        "$P(X=40)=\\binom{50}{40}(0.8)^{40}(0.2)^{10}$.",
+        "Because $40$ is the mean, it is also the unique mode, so $P(X=40)>P(X=k)$ for every $k\\neq 40$.",
+        "If the success probability rose to $p=1$, then $P(X=50)=1$ and $\\mathrm{Var}(X)=0$.",
+        "The standardised variable $\\dfrac{X-40}{\\sqrt{8}}$ has mean $0$ and variance $1$, and is exactly a standard normal random variable (not merely approximately)."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
+        true,
         false
       ],
-      "tactical_explanations": [
-        "**A.** → True\n\nFrom the stem quantities, recover the common success probability step by step.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{42}{50} = 0.84\n$$\n\nEach independent trial either succeeds or fails, so the failure probability is the complement\n\n$$\n1-p\n$$\n\nSubstituting the recovered value,\n\n$$\n1-p = 1-0.84\n$$\n\n$$\n1 - 0.84 = 0.16\n$$\n\nThis agrees with the probability stated in the claim.\n\nSo the statement is True.\n",
-        "**B.** → False\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$,\n\n$$\nE[X] = np\n$$\n\nWith $n=15$ and $p=0.84$,\n\n$$\nE[X] = 15\\cdot 0.84\n$$\n\n$$\n15 \\times 0.84 = 12.6\n$$\n\nCompared with the threshold $13$, we have $12.6 \\le 13$, so the mean does not exceed the claimed cutoff.\n\nSo the statement is False.\n",
-        "**C.** → True\n\nFor $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nInsert $n=25$, $p=0.84$, and $1-p=0.16$:\n\n$$\n\\mathrm{Var}(X) = 25\\cdot 0.84\\cdot 0.16\n$$\n\n$$\n25 \\times 0.84 = 21\n$$\n\n$$\n21 \\times 0.16 = 3.36\n$$\n\nThis matches the variance stated in the claim.\n\nSo the statement is True.\n",
-        "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$\nP(\\text{3 successes in a row}) = p^{3}\n$$\n\nWith the recovered $p=0.84$,\n\n$$\np^{3} = (0.84)^{3}\n$$\n\n$$\n\\approx 0.5927\n$$\n\nCompare with the claimed cutoff $0.55$:\n\n$$\n0.5927\n$$\n\n$$\n0.5927 \\ge 0.55\n$$\n\nThe inequality in the claim therefore fails.\n\nSo the statement is False.\n",
-        "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.84)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$\nP(X\\le 5) = \\sum_{x = 0}^{5} \\binom{8}{x}p^{x}(1-p)^{8-x}\n$$\n\nEvaluating each mass separately:\n\n$$\nP(X = 0) = \\binom{8}{0}(0.84)^{0}(0.16)^{8}\\approx 4.2950e-7\n$$\n\n$$\n\\binom{8}{0} = 1\n$$\n\n$$\nP(X = 1) = \\binom{8}{1}(0.84)^{1}(0.16)^{7}\\approx 1.8039e-5\n$$\n\n$$\n\\binom{8}{1} = \\dfrac{8!}{1!(8-1)!}\n$$\n\n$$\n\\binom{8}{1} = 8\n$$\n\n$$\nP(X = 2) = \\binom{8}{2}(0.84)^{2}(0.16)^{6}\\approx 0.0003\n$$\n\n$$\n\\binom{8}{2} = \\dfrac{8!}{2!(8-2)!}\n$$\n\n$$\n\\dfrac{8!}{2!(6)!} = \\dfrac{8 \\cdot 7}{1 \\cdot 2}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n\\dfrac{56}{2} = 28\n$$\n\n$$\n\\binom{8}{2} = 28\n$$\n\n$$\nP(X = 3) = \\binom{8}{3}(0.84)^{3}(0.16)^{5}\\approx 0.0035\n$$\n\n$$\n\\binom{8}{3} = \\dfrac{8!}{3!(8-3)!}\n$$\n\n$$\n\\dfrac{8!}{3!(5)!} = \\dfrac{8 \\cdot 7 \\cdot 6}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n56 \\cdot 6 = 336\n$$\n\n$$\n\\dfrac{336}{6} = 56\n$$\n\n$$\n\\binom{8}{3} = 56\n$$\n\n$$\nP(X = 4) = \\binom{8}{4}(0.84)^{4}(0.16)^{4}\\approx 0.0228\n$$\n\n$$\n\\binom{8}{4} = \\dfrac{8!}{4!(8-4)!}\n$$\n\n$$\n\\dfrac{8!}{4!(4)!} = \\dfrac{8 \\cdot 7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n336 \\cdot 5 = 1680\n$$\n\n$$\n\\dfrac{1680}{24} = 70\n$$\n\n$$\n\\binom{8}{4} = 70\n$$\n\n$$\nP(X = 5) = \\binom{8}{5}(0.84)^{5}(0.16)^{3}\\approx 0.0959\n$$\n\nAdding these contributions,\n\n$$\nP(X\\le 5)\n$$\n\n$$\n0.1226\n$$\n\nCompared with $0.2$, we obtain $0.1226 \\le 0.2$. The claim's inequality does not hold.\n\nSo the statement is False.\n"
-      ],
       "difficulty_level": "5/5",
-      "solution_overview": "A courier completed an audit of 50 independent evening deliveries. The expected number of on-time deliveries was 42, and the variance of that count was 6.72.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{42}{50} = 0.84\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.84)$, so $1-p=0.16$ and $\\mathrm{Var}(X)=np(1-p)$."
+      "solution_overview": "Mean, variance, and the pmf are routine. The traps are treating the mean as a unique mode, and claiming exact normality after standardising a discrete binomial.",
+      "tactical_explanations": [
+        "**A.** → True\n\n$\\mathbb{E}[X]=np=40$ and $\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.8\\cdot 0.2=8$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThat is exactly the binomial pmf at $k=40$.\n\nSo the statement is True.",
+        "**C.** → False\n\nFor $\\mathrm{Bin}(n,p)$ the mode sits near $(n+1)p$. Here $(51)(0.8)=40.8$, so $40$ and $41$ can share the modal mass. Equating \"mean\" with \"unique mode\" is the trap.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith $p=1$, every delivery is on time: $X=50$ almost surely and the variance is $0$.\n\nSo the statement is True.",
+        "**E.** → False\n\nStandardising gives mean $0$ and variance $1$, but $X$ is still a discrete binomial random variable. It is not exactly $N(0,1)$; normality is only a large-$n$ approximation. That is the obvious trap.\n\nSo the statement is False."
+      ]
     }
   ]
 }
