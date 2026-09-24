@@ -34,7 +34,7 @@ export function WisoDachAdvantageSlider() {
   return (
     <div
       ref={rootRef}
-      className="why-choose-us--wiso relative w-full overflow-hidden bg-why-us-bg pb-12 pt-2 sm:pb-14 sm:pt-4"
+      className="relative w-full overflow-hidden pb-12 pt-2 sm:pb-14 sm:pt-4"
     >
       <button
         type="button"
