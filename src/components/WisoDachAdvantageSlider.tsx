@@ -222,7 +222,9 @@ function RingMetric({
   const innerR = 58;
   const cx = 90;
   const cy = 90;
-  const angle = Math.max(0, Math.min(1, animatedPercent)) * 360;
+  // SVG arcs collapse when start === end (exactly 360°), so never request a full turn.
+  const pct = Math.max(0, Math.min(1, animatedPercent));
+  const angle = pct >= 0.999 ? 359.999 : pct * 360;
 
   function polar(r: number, deg: number) {
     const rad = ((deg - 90) * Math.PI) / 180;
@@ -235,7 +237,7 @@ function RingMetric({
   const endInner = polar(innerR, angle);
   const largeArc = angle > 180 ? 1 : 0;
 
-  const filledPath = [
+  const filledArcPath = [
     `M ${startOuter.x} ${startOuter.y}`,
     `A ${outerR} ${outerR} 0 ${largeArc} 1 ${endOuter.x} ${endOuter.y}`,
     `L ${endInner.x} ${endInner.y}`,
@@ -253,6 +255,8 @@ function RingMetric({
     "Z",
   ].join(" ");
 
+  // Prefer the continuous ring path when the animation has essentially completed.
+  const activeFill = pct >= 0.999 ? fullCircle : filledArcPath;
   const displayValue =
     decimals > 0
       ? `${animatedNumber.toFixed(decimals)}${suffix}`
@@ -269,7 +273,7 @@ function RingMetric({
       <div className="relative h-44 w-44">
         <svg className="h-full w-full" viewBox="0 0 180 180">
           <path d={fullCircle} className="fill-white/15" />
-          <path d={filledPath} className="ring-animate-fill fill-caramel-deep" />
+          <path d={activeFill} className="ring-animate-fill fill-caramel-deep" />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center" data-no-i18n>
           <span
