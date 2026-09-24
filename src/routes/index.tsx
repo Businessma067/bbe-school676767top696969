@@ -590,6 +590,40 @@ function StudyToolsCycle({
     return () => window.clearInterval(id);
   }, [reduceMotion, tools.length]);
 
+  const renderSlide = (tool: (typeof tools)[number], opts?: { static?: boolean }) => (
+    <div
+      key={tool.name}
+      className={cn("study-tools-cycle-slide", opts?.static ? "is-static" : "is-active")}
+    >
+      <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>
+        {tool.kind === "flashcards" ? (
+          <>
+            <span className="stc-card stc-card-back" />
+            <span className="stc-card stc-card-front">
+              <span className="stc-card-term">NPV</span>
+            </span>
+          </>
+        ) : null}
+        {tool.kind === "matching" ? (
+          <>
+            <span className="stc-chip">Elasticity</span>
+            <span className="stc-arrow" />
+            <span className="stc-chip stc-chip-dim">%ΔQ / %ΔP</span>
+          </>
+        ) : null}
+        {tool.kind === "tutor" ? (
+          <>
+            <span className="stc-bot" />
+            <span className="stc-bubble">True or false?</span>
+          </>
+        ) : null}
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75">
+        <span className="font-semibold text-why-us-fg">{tool.name}.</span> {tool.blurb}
+      </p>
+    </div>
+  );
+
   return (
     <div className="study-tools-cycle mt-6 flex flex-1 flex-col" aria-hidden>
       <div
@@ -598,46 +632,9 @@ function StudyToolsCycle({
           reduceMotion ? "min-h-0" : "min-h-[11.5rem] sm:min-h-[12rem]",
         )}
       >
-        {tools.map((tool, index) => {
-          const isActive = reduceMotion || index === active;
-          return (
-            <div
-              key={tool.name}
-              className={cn(
-                "study-tools-cycle-slide",
-                isActive ? "is-active" : "is-idle",
-                reduceMotion && "is-static",
-              )}
-            >
-              <div className={cn("study-tools-cycle-visual", `is-${tool.kind}`)}>
-                {tool.kind === "flashcards" ? (
-                  <>
-                    <span className="stc-card stc-card-back" />
-                    <span className="stc-card stc-card-front">
-                      <span className="stc-card-term">NPV</span>
-                    </span>
-                  </>
-                ) : null}
-                {tool.kind === "matching" ? (
-                  <>
-                    <span className="stc-chip">Elasticity</span>
-                    <span className="stc-arrow" />
-                    <span className="stc-chip stc-chip-dim">%ΔQ / %ΔP</span>
-                  </>
-                ) : null}
-                {tool.kind === "tutor" ? (
-                  <>
-                    <span className="stc-bot" />
-                    <span className="stc-bubble">True or false?</span>
-                  </>
-                ) : null}
-              </div>
-              <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75">
-                <span className="font-semibold text-why-us-fg">{tool.name}.</span> {tool.blurb}
-              </p>
-            </div>
-          );
-        })}
+        {reduceMotion
+          ? tools.map((tool) => renderSlide(tool, { static: true }))
+          : renderSlide(tools[active]!)}
       </div>
       {!reduceMotion ? (
         <div className="study-tools-cycle-dots mt-4 flex items-center justify-center gap-2">

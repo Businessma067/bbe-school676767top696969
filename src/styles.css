@@ -897,42 +897,23 @@ body.flashcard-swiping {
 }
 
 .study-tools-cycle-stage {
-  display: grid;
+  display: block;
 }
 
 .study-tools-cycle-slide {
-  grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  opacity: 0;
-  transform: translateY(0.55rem);
-  pointer-events: none;
-  transition:
-    opacity 0.55s ease,
-    transform 0.55s ease;
 }
 
 .study-tools-cycle-slide.is-active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  z-index: 1;
-}
-
-.study-tools-cycle-slide.is-idle {
-  opacity: 0;
-  transform: translateY(0.45rem);
-  z-index: 0;
+  animation: study-tools-slide-in 0.55s ease both;
 }
 
 .study-tools-cycle-slide.is-static {
-  position: relative;
-  grid-area: auto;
   opacity: 1;
   transform: none;
-  pointer-events: auto;
-  transition: none;
+  animation: none;
 }
 
 .study-tools-cycle-stage:has(.is-static) {
@@ -1109,6 +1090,17 @@ body.flashcard-swiping {
 .study-tools-cycle-dot.is-active {
   background: color-mix(in oklab, var(--color-caramel-deep) 70%, white);
   transform: scale(1.25);
+}
+
+@keyframes study-tools-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.55rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes study-tools-card-drift {
