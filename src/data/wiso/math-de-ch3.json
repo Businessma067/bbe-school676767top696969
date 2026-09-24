@@ -609,13 +609,13 @@
   },
   "MATH 11.33": {
     "title": "Netto-Wachstumsrate eines Hedgefonds nach stetiger Verwaltungsgebühr",
-    "context": "Der Bruttoinventarwert eines Hedgefonds von \\$ 2.000.000 wächst kontinuierlich mit einer nominalen Jahresrate von 9%, aber der Fonds zieht auch eine kontinuierliche jährliche Verwaltungsgebühr von 2% ab, was als konstante Belastung der Wachstumsrate wirkt.",
+    "context": "Der Bruttoinventarwert eines Hedgefonds von \\$2{,}000{,}000 wächst stetig mit einer nominalen Jahresrate von $9\\%$, doch der Fonds zieht zugleich eine stetige jährliche Verwaltungsgebühr von $2\\%$ ab, die als konstanter Abzug von der Wachstumsrate wirkt.",
     "statements": [
-      "? ???? ??? ???? ?? ??n ?? ?.? kehrte ?ICH Kommentar , strukturierte",
-      "Nach 6 Jahren Verordnungen beträgt der Nettovermögenswert etwa \\$3.100.000.00.",
-      "Bei dieser Gesamtquote würde der Wert des Fonds in etwa 7,00 Jahren verdoppeln.",
-      "Wenn die Managementgebühr stattdessen auf 3,5 % angestiegen wäre, würde der 6-Jahres-Nettowert etwa \\$2.781.936,26 betragen und die Verdoppelungszeit auf etwa 12,60 Jahre verkürzt.",
-      "Eine höhere Verwaltungsgebühr reduziert, punkt, die Netto-Rate und der kumulativeristige, zu gegeben uns, der kumuliert ist, immer reduziert."
+      "Die stetige Nettowachstumsrate, die die Bruttoverzinsung von $9\\%$ und den Gebührenabzug von $2\\%$ kombiniert, beträgt $11\\%$ pro Jahr.",
+      "Nach $6$ Jahren beträgt der Nettovermögenswert etwa \\$3{,}100{,}000.00.",
+      "Bei dieser Nettorate würde sich der Fondswert in etwa $7{,}00$ Jahren verdoppeln.",
+      "Steigt die Verwaltungsgebühr stattdessen auf $3{,}5\\%$, so beträgt der 6-Jahres-Nettowert etwa \\$2{,}781{,}936.26 und die Verdoppelungszeit verkürzt sich auf etwa $12{,}60$ Jahre.",
+      "Eine höhere Verwaltungsgebühr verringert bei sonst gleichen Bedingungen stets sowohl die Nettowachstumsrate als auch den kumulierten Fondswert zu jedem zukünftigen Zeitpunkt im Vergleich zu einer niedrigeren Gebühr."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDie kontinuierliche Netto-Wachstumsrate subtrahiert den Fee Drag von der Bruttokraft:\n\n$$\nr_{\\mathrm{net}} = r - f\n$$\n\n$$\nr_{\\mathrm{net}} = 0.09 - 0.02\n$$\n\n$$\n0.09 - 0.02 = 0.07 = 7\\%\n$$\n\nDer Anspruch behauptet $11\\%$ durch Hinzufügen der Gebühr stattdessen. Der berechnete Wert ist\n\n$$7\\%$$\n\nDie Behauptung ist\n\n$$11\\%$$\n\nDa $7\\% \\ne 11\\%$, stimmen die Werte nicht überein.\n\nDie Aussage ist falsch.",

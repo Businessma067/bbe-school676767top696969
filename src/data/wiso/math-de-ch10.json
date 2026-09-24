@@ -1445,7 +1445,7 @@
   },
   "MATH 10.2.33": {
     "title": "Inverse Identitäten vollständig in Buchstaben",
-    "context": "Lassen $ b>0$, $ b\\neq 1$, und lassen $ x>0$. Halten Sie $ t $ real.",
+    "context": "Es sei $ b>0$, $ b\\neq 1$, und es sei $ x>0$. Halten Sie $ t $ real.",
     "statements": [
       "$ b^{\\log_{b}x}=x $.",
       "$\\log_{b}(b^{t})=t $.",
@@ -2281,7 +2281,7 @@
   },
   "MATH 10.3.28": {
     "title": "Textdicht — inverse Uhrfallen neben exponentiellem Wachstum",
-    "context": "Es seien $ f(t)=P e^{kt}$ mit $ P=50$ und $ k=0.1$, und lassen Sie $ g $ sein umgekehrt.",
+    "context": "Es seien $ f(t)=P e^{kt}$ mit $ P=50$ und $ k=0.1$, und es sei $ g $ sein umgekehrt.",
     "statements": [
       "$ g(2P)=\\dfrac{\\ln 2}{0.1}$.",
       "$ g(P)=0$.",

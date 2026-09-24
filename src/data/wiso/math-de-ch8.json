@@ -1236,13 +1236,13 @@
   },
   "MATH 8.66": {
     "title": "Kragarm-Durchbiegung geprüft gegen eine dritte Spannweite",
-    "context": "Ein Materiallabormodell kippt die Auslenkung eines Auslegers als $y(L)=A L^{k}$ MilliMeter, wo $L>0$ die freie Spannweite im Meter ist. Zwei Spannweiten werden vertrauenswürdig: $y(3)=18$ und $y(6)=72$. Ein dritter Lauf aufgezeichnet $y(9)=150$, und die Frage ist, ob dieser dritte Punkt noch auf dem gleichen Potenzgesetz sitzt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Materiallabor modelliert die Spitzendurchbiegung eines Kragarms als $y(L)=A L^{k}$ Millimeter, wobei $L>0$ die freie Spannweite in Metern ist. Zwei Spannweiten gelten als vertrauenswürdig: $y(3)=18$ und $y(6)=72$. Ein dritter Lauf liefert $y(9)=150$; gefragt ist, ob dieser dritte Punkt noch demselben Potenzgesetz folgt.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der Exponent des vertrauenswürdigen Paares ist größer als eins, also Spannweite der Auslenkungsausläufe.",
-      "Der vertrauenswürdige Quadratic stellt bereits neun Meter über $155$ mm.",
-      "Die freie Spannung der Spanne der freien Spanne verdoppelt die Feder der Spannung der Spanne der Spannung gleiche die freie Spanne der Spannweite der Spannweite der Spannweite der Spannweite der Spannweite der Spannung der Spannweite ist, ist die sss sss sss sss ssss ss eventuelle sss sss sss vorgeschlagene sss sss sss ssss sss ssss.. sss Anbindung Identifikation.. ssss sssss sssssss Abwesenheit:.. s",
-      "Die aufgezeichnete dritte rennen liegt mehr als $10$ mm unter der vertrauenswürdigen quadrat.",
-      "Der dritte Lauf ist nach Absichtsgesetzen Hereers."
+      "Der Exponent aus dem vertrauenswürdigen Paar ist größer als eins, daher wächst die Durchbiegung schneller als die Spannweite.",
+      "Das vertrauenswürdige Potenzgesetz sagt für neun Meter bereits mehr als $155$ mm voraus.",
+      "Eine Verdopplung der freien Spannweite verdoppelt die Spitzendurchbiegung.",
+      "Der aufgezeichnete dritte Lauf liegt mehr als $10$ mm unter dem Wert des vertrauenswürdigen Potenzgesetzes.",
+      "Der dritte Lauf liegt auf demselben Potenzgesetz wie das vertrauenswürdige Paar."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDie Übersicht rekonstruiert\n\n $$k=2$$\n\nGERÄTE\n\n $$2>1$$\n\nEin Spannfaktor $c>1$ multipliziert dann zugehörige Durchbiegung durch\n\n $$c^{2}$$\n\n, die $c$ übersteigt.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -1635,13 +1635,13 @@
   },
   "MATH 8.89": {
     "title": "Ofenrauch-Massenstrom in einen Partikelindex",
-    "context": "Der Rauchgasmassenstrom eines Ofens folgt $m(t)=A t^{\\frac{1}{2}}$ Tonnen pro Stunde für die Drosseleinstellung $t>0$, und der Partikellastindex ist dann $P(m)=\\frac{m^{4}}{16}$. Eine Kalibrierung bei $t=9$ erfasste $m=6$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Der Rauchgasmassenstrom eines Ofens folgt $m(t)=A t^{\\frac{1}{2}}$ Tonnen pro Stunde für die Drosseleinstellung $t>0$; der Partikellastindex ist dann $P(m)=\\frac{m^{4}}{16}$. Eine Kalibrierung bei $t=9$ ergab $m=6$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der zusammengesetzte Feinstaubindex ist eine Potenz der Drosselstellung.",
-      "Der zusammengesetzte Partikelindex wächst proportional zur Gaseinstellung.",
-      "s.",
-      "Bei Gasgas $25$ liegt der Massenstrom bereits über $8$ Tonnen pro Stunde.",
-      "Ein Index von $81$ erfordert noch eine Drosseleinstellung oberhalb von $20$. accommodation"
+      "Der zusammengesetzte Partikelindex ist eine Potenz der Drosseleinstellung.",
+      "Der zusammengesetzte Partikelindex wächst proportional zur Drosseleinstellung.",
+      "Der Massenstrom pro Einheit Drosselstellung nimmt ab, wenn die Drosselstellung steigt.",
+      "Bei der Drosseleinstellung $25$ liegt der Massenstrom bereits über $8$ Tonnen pro Stunde.",
+      "Ein Index von $81$ erfordert weiterhin eine Drosseleinstellung oberhalb von $20$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDie Übersicht wiederhergestellt die Zusammensetzung\n\n $$P\\circ m=t^{2}$$\n\nDas ist ein Monomial in der Drosselstellung, Koeffizient $1$ und Exponent $2$.\n\nDer zusammengesetzte Index ist eine Kraft des Gases.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
