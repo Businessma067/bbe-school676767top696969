@@ -30,6 +30,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Eine dreifach akkreditierte Wirtschaftsuniversität mit Studiengebühren, die nah an kostenlos bleiben",
   "One two-hour exam sits between your family and a strong degree at almost zero cost.":
     "Eine zweistündige Prüfung steht zwischen deiner Familie und einem starken Abschluss zu fast null Kosten.",
+  "One timed entrance exam sits between your family and a strong degree at almost zero cost. The paper is hard because the seats are limited, not because the university wants drama. About 240 BBE places face a much larger applicant pool under the same partial credit pressure you will feel in the hall.":
+    "Eine getimte Aufnahmeprüfung steht zwischen deiner Familie und einem starken Abschluss zu fast null Kosten. Die Prüfung ist hart, weil die Plätze begrenzt sind, nicht weil die Uni Drama will. Etwa 240 BBE-Plätze treffen auf einen viel größeren Bewerberpool unter demselben Teilpunkte-Druck, den du im Saal spüren wirst.",
   "Private tutors in Vienna charge €50 to €100 per hour just to walk through textbook slides. Tuition at WU Vienna is often about ten times lower than comparable schools in the UK or US, so a focused prep investment protects a €100,000 financial advantage.":
     "Privatlehrer in Wien verlangen 50 bis 100 € pro Stunde, nur um Lehrbuchfolien durchzugehen. Die Studiengebühren an der WU Wien liegen oft etwa zehnmal niedriger als an vergleichbaren Schulen in UK oder US, deshalb schützt eine gezielte Prep-Investition einen finanziellen Vorteil von 100.000 €.",
   "WU Vienna is a target school for many strong firms, though recruiters usually look at the top of the class. Training for exam pressure now builds the analytical stamina you will need later in recruitment cycles.":
@@ -212,6 +214,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Бізнес-школа з потрійною акредитацією й вартістю навчання, близькою до безкоштовної",
   "One two-hour exam sits between your family and a strong degree at almost zero cost.":
     "Один двогодинний іспит стоїть між твоєю родиною й сильним дипломом майже за нульовою ціною.",
+  "One timed entrance exam sits between your family and a strong degree at almost zero cost. The paper is hard because the seats are limited, not because the university wants drama. About 240 BBE places face a much larger applicant pool under the same partial credit pressure you will feel in the hall.":
+    "Один timed вступний іспит стоїть між твоєю родиною й сильним дипломом майже за нульовою ціною. Папір важкий, бо місць мало, а не тому що університет хоче драми. Близько 240 місць BBE стоять проти набагато більшого пулу абітурієнтів під тим самим partial-credit тиском, який ти відчуєш у залі.",
   "Private tutors in Vienna charge €50 to €100 per hour just to walk through textbook slides. Tuition at WU Vienna is often about ten times lower than comparable schools in the UK or US, so a focused prep investment protects a €100,000 financial advantage.":
     "Приватні репетитори у Відні беруть 50–100 € за годину лише щоб пройти слайди підручника. Навчання у WU Vienna часто приблизно вдесятеро дешевше, ніж у порівнянних школах UK чи US, тож цілеспрямована інвестиція в підготовку захищає фінансову перевагу близько 100 000 €.",
   "WU Vienna is a target school for many strong firms, though recruiters usually look at the top of the class. Training for exam pressure now builds the analytical stamina you will need later in recruitment cycles.":

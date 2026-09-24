@@ -1125,6 +1125,26 @@ export const wisoHubExtraUk: Record<string, string> = {
   "WiSo Mock Exams | BBE School": "WiSo Mock Exams | BBE School",
   "WiSo mocks →": "Моки WiSo →",
   "WiSo opens far more places than BBE, and yet the written exam still sorts thousands of applicants under the same partial-credit pressure, so the hall feels no softer on the day.": "WiSo відкриває значно більше місць, ніж BBE, і все одно письмовий іспит відсіює тисячі абітурієнтів під тим самим тиском часткових балів, тож у залі в день іспиту не легше.",
+  "WiSo opens far more places than BBE, but the written exam still sorts thousands of people under the same partial credit pressure. The hall does not feel softer on the day.":
+    "WiSo відкриває значно більше місць, ніж BBE, але письмовий іспит усе одно відсіює тисячі людей під тим самим тиском часткових балів. У залі в день іспиту не легше.",
+  "German is not only an exam section": "Німецька, це не лише розділ іспиту",
+  "If you stay in Austria or anywhere in the DACH region after graduation, strong German is part of ordinary working life. Offices, clients, and public services still run on it. Starting that work now for the Aufnahmeprüfung is early practice for the country you are walking into, not a side quest you can postpone forever.":
+    "Якщо після випуску ти лишаєшся в Австрії чи десь у регіоні DACH, сильна німецька, частина звичайного робочого життя. Офіси, клієнти й держслужби досі на ній тримаються. Почати цю роботу зараз під Aufnahmeprüfung, це рання практика для країни, в яку ти йдеш, а не побічний квест, який можна вічно відкладати.",
+  "Larger intake than BBE": "Більший набір, ніж у BBE",
+  "BBE places": "Місця BBE",
+  "Same campus, English track": "Той самий кампус, англійський трек",
+  "Exam language": "Мова іспиту",
+  "Reading, economics wording, math stems": "Читання, економічні формулювання, математичні stems",
+  "Where German pays off": "Де німецька окупається",
+  "Austria, Germany, Switzerland": "Австрія, Німеччина, Швейцарія",
+  "BBE keeps English as the language pillar, which is useful if your plan is a fully international classroom and English first careers. WiSo asks you to build German under exam pressure instead. That looks harder on paper, and it is harder in the hall, but it is also closer to how life after WU often looks if you stay in Vienna or move across the DACH job market.":
+    "BBE тримає англійську як мовну опору, і це корисно, якщо план, повністю міжнародна аудиторія й кар’єри спочатку англійською. WiSo просить будувати німецьку під тиском іспиту. На папері це виглядає важче, і в залі теж важче, але ближче до того, як часто виглядає життя після WU, якщо лишаєшся у Відні чи йдеш по ринку праці DACH.",
+  "Places matter too. WiSo publishes an intake in the low thousands while BBE sits near two hundred forty. More seats do not make the paper gentle. They do mean the German track is a real scale pathway onto the same campus, with winter or summer start options after a successful procedure.":
+    "Місця теж важливі. WiSo публікує набір у низьких тисячах, а BBE сидить близько двохсот сорока. Більше місць не робить іспит м’яким. Вони означають, що німецький трек, реальний масштабний шлях на той самий кампус, із зимовим або літнім стартом після успішної процедури.",
+  "So the practical argument is simple. You will need serious German anyway if Austria or the wider DACH region is where you want to study and work. Using the Aufnahmeprüfung as the first hard deadline is usually cleaner than waiting until lectures begin and then discovering how much language still sits between you and the material.":
+    "Практичний аргумент простий. Серйозна німецька тобі все одно знадобиться, якщо Австрія чи ширший регіон DACH, місце, де ти хочеш вчитися й працювати. Взяти Aufnahmeprüfung як перший жорсткий дедлайн зазвичай чистіше, ніж чекати початку лекцій і тоді виявити, скільки мови ще стоїть між тобою й матеріалом.",
+  "Compare BBE and WiSo": "Порівняти BBE і WiSo",
+  "WU context for WiSo applicants": "Контекст WU для абітурієнтів WiSo",
   "WiSo places": "Місця WiSo",
   "WiSo places is by written-exam performance. The OSA is ungraded and does not enter that ranking.": "місць WiSo формується за результатами письмового іспиту. OSA не оцінюється і не входить у цей рейтинг.",
   "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page is a practical sequence you can adapt to your calendar before": "WiSo-prep провалюється передбачувано: ставитись як до BBE з німецькими ярликами, пропускати розділи 2 і 4 Wirtschaft verstehen, ігнорувати стратегію Teilpunktesystem або ніколи не таймити німецьке читання. Ця сторінка, практична послідовність, яку ти можеш підлаштувати під свій календар перед",

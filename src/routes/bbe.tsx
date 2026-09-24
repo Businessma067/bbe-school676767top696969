@@ -137,7 +137,10 @@ export function BbeLandingPage() {
               A triple-accredited business school with tuition that stays close to free
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              One two-hour exam sits between your family and a strong degree at almost zero cost.
+              One timed entrance exam sits between your family and a strong degree at almost zero
+              cost. The paper is hard because the seats are limited, not because the university wants
+              drama. About 240 BBE places face a much larger applicant pool under the same partial
+              credit pressure you will feel in the hall.
             </p>
           </div>
         </section>
