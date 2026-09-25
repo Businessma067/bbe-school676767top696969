@@ -63,7 +63,7 @@ export function WisoDachAdvantageSlider() {
                 className={cn(
                   "relative flex-1 rounded-full px-3 py-2.5 text-center text-xs font-semibold tracking-wide transition-all duration-300 sm:px-4 sm:py-3 sm:text-sm",
                   selected
-                    ? "bg-indigo-500 text-white shadow-[0_0_24px_-6px_rgba(99,102,241,0.75)]"
+                    ? "bg-indigo-500/90 text-white shadow-[0_0_12px_-6px_rgba(99,102,241,0.35)]"
                     : "text-why-us-fg/55 hover:bg-white/5 hover:text-why-us-fg/85",
                 )}
               >
@@ -231,14 +231,14 @@ function WhySlide({
       aria-hidden={!active}
       className="relative flex w-full min-w-full flex-none items-center justify-center px-4 py-8 sm:px-10 sm:py-10 lg:px-16"
     >
-      <div className="relative w-full max-w-6xl overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-5 shadow-[0_24px_80px_-40px_rgba(99,102,241,0.45)] sm:p-10 lg:p-12">
+      <div className="relative w-full max-w-6xl overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-5 shadow-[0_16px_48px_-36px_rgba(99,102,241,0.18)] sm:p-10 lg:p-12">
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-indigo-500/15 blur-3xl"
+          className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-indigo-500/[0.06] blur-3xl"
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute -bottom-24 -left-10 h-48 w-48 rounded-full bg-indigo-400/10 blur-3xl"
+          className="pointer-events-none absolute -bottom-24 -left-10 h-48 w-48 rounded-full bg-indigo-400/[0.04] blur-3xl"
         />
         <div className="relative mb-6 border-b border-white/12 pb-4 sm:mb-8 sm:pb-5">
           <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.32em] text-indigo-300/70">
@@ -460,15 +460,12 @@ function DachTicker() {
     <div className="mt-8 rounded-xl border border-white/12 bg-black/40 px-4 py-6 sm:px-8 sm:py-8">
       <p className="mb-6 text-center text-sm font-medium text-why-us-fg/55">DACH is where it pays off</p>
       <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
-        {regions.map((r, i) => (
+        {regions.map((r) => (
           <div
             key={r.code}
-            className="group flex flex-col items-center rounded-xl border border-white/15 bg-gradient-to-b from-white/[0.07] to-transparent px-4 py-6 text-center transition hover:border-indigo-400/45 hover:from-indigo-500/15"
-            style={{
-              animation: `why-us-pulse 2.4s ease-in-out ${i * 0.18}s infinite`,
-            }}
+            className="group flex flex-col items-center rounded-xl border border-white/12 bg-gradient-to-b from-white/[0.04] to-transparent px-4 py-6 text-center transition hover:border-white/20 hover:from-white/[0.07]"
           >
-            <span className="relative mb-3 block h-11 w-[4.25rem] overflow-hidden rounded-md shadow-[0_8px_20px_-10px_rgba(0,0,0,0.7)] ring-1 ring-white/20 transition duration-300 group-hover:scale-105 sm:h-12 sm:w-[4.75rem]">
+            <span className="relative mb-3 block h-11 w-[4.25rem] overflow-hidden rounded-sm shadow-[0_6px_16px_-8px_rgba(0,0,0,0.55)] transition duration-300 group-hover:scale-[1.02] sm:h-12 sm:w-[4.75rem]">
               <DachFlag code={r.code} />
             </span>
             <span className="text-sm font-semibold text-why-us-fg">{r.name}</span>
