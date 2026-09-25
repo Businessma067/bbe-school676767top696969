@@ -75,11 +75,12 @@ export function WisoDachAdvantageSlider() {
         </div>
       </div>
 
+      {/* Side arrows from sm up — phones use tabs, dots, and swipe */}
       <button
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-indigo-400/50 hover:bg-black/70 hover:text-white sm:left-6 sm:h-12 sm:w-12"
+        className="absolute left-2 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-indigo-400/50 hover:bg-black/70 hover:text-white sm:left-6 sm:flex sm:h-12 sm:w-12"
       >
         <ChevronLeft size={24} />
       </button>
@@ -87,7 +88,7 @@ export function WisoDachAdvantageSlider() {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-indigo-400/50 hover:bg-black/70 hover:text-white sm:right-6 sm:h-12 sm:w-12"
+        className="absolute right-2 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-indigo-400/50 hover:bg-black/70 hover:text-white sm:right-6 sm:flex sm:h-12 sm:w-12"
       >
         <ChevronRight size={24} />
       </button>
@@ -229,9 +230,9 @@ function WhySlide({
       role="tabpanel"
       aria-labelledby={labelledBy}
       aria-hidden={!active}
-      className="relative flex w-full min-w-full flex-none items-center justify-center px-4 py-8 sm:px-10 sm:py-10 lg:px-16"
+      className="relative flex w-full min-w-full flex-none items-center justify-center px-3 py-6 sm:px-10 sm:py-10 lg:px-16"
     >
-      <div className="relative w-full max-w-6xl overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-5 shadow-[0_16px_48px_-36px_rgba(99,102,241,0.18)] sm:p-10 lg:p-12">
+      <div className="relative w-full max-w-6xl overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-4 shadow-[0_16px_48px_-36px_rgba(99,102,241,0.18)] sm:p-10 lg:p-12">
         <div
           aria-hidden
           className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-indigo-500/[0.06] blur-3xl"

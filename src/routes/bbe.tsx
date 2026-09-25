@@ -413,12 +413,12 @@ function WhyUsSlider() {
   return (
     <div ref={rootRef} className="relative w-full overflow-hidden bg-why-us-bg pb-12 pt-2 sm:pb-14 sm:pt-4">
 
-      {/* Arrows */}
+      {/* Side arrows from sm up — phones use dots and swipe */}
       <button
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:left-6 sm:h-12 sm:w-12"
+        className="absolute left-2 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:left-6 sm:flex sm:h-12 sm:w-12"
       >
         <ChevronLeft size={24} />
       </button>
@@ -426,7 +426,7 @@ function WhyUsSlider() {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:right-6 sm:h-12 sm:w-12"
+        className="absolute right-2 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:right-6 sm:flex sm:h-12 sm:w-12"
       >
         <ChevronRight size={24} />
       </button>
@@ -537,10 +537,10 @@ function WhyUsSlider() {
 
 function WhySlide({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="relative flex w-full min-w-full flex-none items-center justify-center px-4 py-8 sm:px-10 sm:py-10 lg:px-16">
-      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-5 sm:p-10 lg:p-12">
-        <div className="mb-6 border-b border-white/12 pb-4 sm:mb-8 sm:pb-5">
-          <h3 className="font-display text-xl font-semibold text-why-us-fg sm:text-3xl">
+    <section className="relative flex w-full min-w-full flex-none items-center justify-center px-3 py-6 sm:px-10 sm:py-10 lg:px-16">
+      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-4 sm:p-10 lg:p-12">
+        <div className="mb-5 border-b border-white/12 pb-3 sm:mb-8 sm:pb-5">
+          <h3 className="font-display text-lg font-semibold text-why-us-fg sm:text-3xl">
             {title}
           </h3>
         </div>

@@ -80,21 +80,21 @@ export function WhyChooseUsSection({
     <section
       id="why-choose-us"
       className={cn(
-        "relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8 lg:py-20",
+        "relative overflow-hidden px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20",
         isWiso ? "why-choose-us--wiso bg-why-us-bg" : "bg-why-us-bg",
       )}
     >
       <div className="relative mx-auto max-w-5xl">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+          <h2 className="font-display text-[1.65rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
             Why Choose US
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+          <p className="mt-3 text-[0.95rem] leading-relaxed text-why-us-fg/80 sm:mt-4 sm:text-lg">
             {resolvedSubtitle}
           </p>
         </div>
 
-        <div className="mt-10 grid items-stretch gap-5 sm:grid-cols-2 sm:gap-6">
+        <div className="mt-8 grid items-stretch gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-6">
           {FEATURE_CARDS.map((feature) => {
             const Icon = feature.icon;
             return (

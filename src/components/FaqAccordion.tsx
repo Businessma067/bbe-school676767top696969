@@ -89,9 +89,9 @@ export const wisoFaqs = [
 
 function FaqSection({ items }: { items: typeof homepageFaqs }) {
   return (
-    <section className="bg-ivory px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section className="bg-ivory px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-center font-display text-3xl font-semibold text-espresso sm:text-4xl">
+        <h2 className="text-center font-display text-[1.65rem] font-semibold leading-tight text-espresso sm:text-4xl">
           Frequently asked questions
         </h2>
 

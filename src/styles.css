@@ -210,6 +210,7 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   ::selection {
@@ -222,11 +223,35 @@
     /* Do not set overflow-x: hidden on body — on iOS Safari it turns body into a
        scroll container and freezes vertical page scrolling site-wide. Clip
        horizontal overflow on page shells instead (e.g. .flashcards-page). */
+    overflow-wrap: break-word;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
   }
 
   /* Soft horizontal clip without creating a body scroll trap on mobile. */
   #root {
     overflow-x: clip;
+    min-width: 0;
+  }
+
+  /* Comfortable tap targets + fewer grey flashes on iOS. */
+  @media (max-width: 639px) {
+    button,
+    a,
+    [role="button"],
+    summary {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    input,
+    textarea,
+    select {
+      font-size: 16px; /* prevents iOS zoom-on-focus */
+    }
   }
 }
 

@@ -102,25 +102,25 @@ function CountdownView({
       <p className="text-[11px] font-medium tracking-wide text-taupe sm:text-xs">
         {remaining.done && !placeholder ? "Exam day" : untilLabel}
       </p>
-      <div className="flex items-stretch gap-2 sm:gap-3">
+          <div className="flex items-stretch gap-1.5 sm:gap-3">
         {units.map((u, i) => (
-          <div key={u.key} className="flex items-stretch gap-2 sm:gap-3">
+          <div key={u.key} className="flex items-stretch gap-1.5 sm:gap-3">
             {i > 0 && (
               <span
-                className="self-start pt-1 font-display text-xl font-semibold text-foreground/25 sm:pt-1.5 sm:text-2xl"
+                className="self-start pt-1 font-display text-lg font-semibold text-foreground/25 sm:pt-1.5 sm:text-2xl"
                 aria-hidden
               >
                 :
               </span>
             )}
-            <div className="min-w-[3.25rem] rounded-sm border border-border bg-card px-2.5 py-2 text-center sm:min-w-[4rem] sm:px-3 sm:py-2.5">
+            <div className="min-w-[2.85rem] rounded-sm border border-border bg-card px-1.5 py-2 text-center sm:min-w-[4rem] sm:px-3 sm:py-2.5">
               <div
                 data-exam-unit={u.key}
-                className="font-display text-xl font-semibold tabular-nums leading-none text-foreground sm:text-2xl"
+                className="font-display text-lg font-semibold tabular-nums leading-none text-foreground sm:text-2xl"
               >
                 {u.value}
               </div>
-              <div className="mt-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+              <div className="mt-1 text-[9px] font-medium uppercase tracking-wide text-muted-foreground sm:text-[10px]">
                 {u.label}
               </div>
             </div>

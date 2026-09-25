@@ -84,36 +84,36 @@ export function WisoLandingPage() {
       <SiteHeader showNav showMobileNav />
 
       <main>
-        <section className="relative overflow-hidden px-4 pt-8 pb-12 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
+        <section className="relative overflow-hidden px-3 pt-7 pb-10 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
               <ExamCountdown className="mb-5 sm:mb-6" />
 
-              <p className="mb-3 rounded-full border border-indigo-200/80 bg-indigo-50/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-900 dark:border-indigo-800/50 dark:bg-indigo-950/40 dark:text-indigo-200">
+              <p className="mb-3 rounded-full border border-indigo-200/80 bg-indigo-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-indigo-900 dark:border-indigo-800/50 dark:bg-indigo-950/40 dark:text-indigo-200 sm:text-xs">
                 WiSo · German-taught bachelor
               </p>
 
-              <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
+              <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Your 2027 WU WiSo exam, prepared one stage at a time
               </h1>
 
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
                 Wirtschaftliche Grundkenntnisse, Mathematik, and deutsches Sprachverständnis sit at the
                 centre of the WiSo Aufnahmeprüfung, and this track is built around those three pillars
                 rather than around BBE English.
               </p>
 
-              <div className="mt-7 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row">
+              <div className="mt-6 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-7 sm:w-auto sm:flex-row">
                 <LocalizedLink
                   to={WISO_PRACTICE_ROUTES.demo}
-                  className="inline-flex flex-col items-center justify-center rounded-sm bg-indigo-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm bg-indigo-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2"
                 >
                   <span>Try the WiSo demo</span>
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">On WiSo URLs only</span>
                 </LocalizedLink>
                 <LocalizedLink
                   to={WISO_PRACTICE_ROUTES.products}
-                  className="inline-flex flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
                 >
                   <span>See WiSo courses</span>
                   <span className="mt-0.5 text-[11px] font-medium opacity-70">Full WiSo Course</span>

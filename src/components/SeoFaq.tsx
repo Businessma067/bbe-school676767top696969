@@ -48,7 +48,7 @@ export function SeoFaq({
                 aria-controls={panelId}
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 className={cn(
-                  "flex w-full items-center justify-between gap-4 py-5 text-left font-display text-base font-semibold text-foreground transition-colors hover:opacity-70",
+                  "flex min-h-12 w-full items-center justify-between gap-3 py-4 text-left font-display text-[0.95rem] font-semibold leading-snug text-foreground transition-colors hover:opacity-70 sm:min-h-0 sm:gap-4 sm:py-5 sm:text-base",
                   questionClassName,
                 )}
               >

@@ -324,14 +324,14 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   }, [tab, subject, tool, zoomed]);
 
   return (
-    <section id="how-it-works" className="relative bg-background px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section id="how-it-works" className="relative bg-background px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-[90rem] text-center">
-        <h2 className="font-display text-[1.75rem] font-semibold text-foreground sm:text-4xl lg:text-5xl">
+        <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
           How it works
         </h2>
       </div>
 
-      <div className="mx-auto mt-8 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2">
+      <div className="mx-auto mt-6 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2 sm:mt-8">
         {mainTabs.map((item) => {
           const active = tab === item.key;
           return (
@@ -340,7 +340,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
               type="button"
               onClick={() => setTab(item.key)}
               className={cn(
-                "min-h-10 rounded-sm border px-3.5 py-2 text-xs font-semibold tracking-wide transition-colors sm:px-5 sm:text-sm",
+                "min-h-11 rounded-sm border px-3 py-2.5 text-xs font-semibold tracking-wide transition-colors sm:min-h-10 sm:px-5 sm:py-2 sm:text-sm",
                 active
                   ? "border-primary bg-primary text-primary-foreground"
                   : "border-border bg-card text-muted-foreground hover:border-foreground/30 hover:text-foreground",
@@ -352,16 +352,16 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
         })}
       </div>
 
-      <div className="relative mx-auto mt-10 max-w-[90rem]">
+      <div className="relative mx-auto mt-8 max-w-[90rem] sm:mt-10">
         <div
           ref={stageRef}
-          className="relative rounded-2xl border border-border bg-card px-4 py-4 shadow-sm sm:px-10 sm:py-5 lg:px-12 lg:py-5"
+          className="relative rounded-2xl border border-border bg-card px-3 py-4 shadow-sm sm:px-10 sm:py-5 lg:px-12 lg:py-5"
         >
           <button
             type="button"
             aria-label="Previous"
             onClick={() => goSlide(slideIndex - 1)}
-            className="absolute left-1 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
+            className="absolute left-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -369,12 +369,12 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             type="button"
             aria-label="Next"
             onClick={() => goSlide(slideIndex + 1)}
-            className="absolute right-1 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
+            className="absolute right-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
           >
             <ChevronRight className="h-5 w-5" />
           </button>
 
-          <div className="grid items-stretch gap-5 px-8 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
+          <div className="grid items-stretch gap-5 px-9 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>

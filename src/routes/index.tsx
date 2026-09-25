@@ -120,31 +120,31 @@ export function Index() {
       />
 
       <main>
-        <section className="relative overflow-hidden px-4 pt-12 pb-16 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
+        <section className="relative overflow-hidden px-3 pt-10 pb-12 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <ExamCountdown className="mb-6" />
+              <ExamCountdown className="mb-5 sm:mb-6" />
 
-              <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
+              <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Step by step preparation for your 2027 WU exam
               </h1>
-              <p className="mt-4 font-display text-lg font-semibold tracking-wide text-muted-foreground sm:text-xl">
+              <p className="mt-3 font-display text-base font-semibold tracking-wide text-muted-foreground sm:mt-4 sm:text-xl">
                 WiSo and BBE
               </p>
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
                 One platform for both entrance paths: pick the track that matches how you want to study
                 at WU Vienna.
               </p>
             </div>
 
-            <div className="mx-auto mt-10 grid max-w-5xl items-stretch gap-5 md:grid-cols-2 md:gap-6">
+            <div className="mx-auto mt-8 grid max-w-5xl items-stretch gap-4 md:mt-10 md:grid-cols-2 md:gap-6">
               {EXAM_OPTIONS.map((exam) => {
                 const isWiso = exam.id === "wiso";
                 return (
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex h-full flex-col rounded-2xl border p-6 sm:p-8",
+                      "flex h-full flex-col rounded-2xl border p-5 sm:p-8",
                       isWiso
                         ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
                         : "border-border bg-card",
