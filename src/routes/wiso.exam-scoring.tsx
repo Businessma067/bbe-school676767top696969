@@ -17,13 +17,23 @@ import { SCORING_CONFIG } from "@/config/scoring-config";
 import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso/exam-scoring" as const;
 const MAX_EXAMPLE = SCORING_CONFIG.math.defaultMaxPerTask;
 
 export const Route = createFileRoute("/wiso/exam-scoring")({
   head: () => ({
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "Scoring",
+        headline: "WU Vienna WiSo Exam Scoring: Teilpunktesystem Explained",
+        description:
+          "How WU Vienna WiSo entrance exam scoring works: gemischtes Teilpunktesystem, max/r and max/f partial credit, single-correct rules, floor at zero, and worked examples.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       {
@@ -42,6 +52,11 @@ export const Route = createFileRoute("/wiso/exam-scoring")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna WiSo Exam Scoring Explained",
+        "Official WiSo Teilpunktesystem in plain language: the same partial-credit rules as BBE, with German content.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),

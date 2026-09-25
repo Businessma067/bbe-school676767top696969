@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
   type ErrorComponentProps,
@@ -24,6 +25,7 @@ import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
+import { getLocaleFromPath } from "@/lib/i18n/locale-path";
 
 const FloatingAssistant = lazyNamed(
   () => import("../components/FloatingAssistant"),
@@ -165,8 +167,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  // LanguageProvider only sets documentElement.lang after mount; crawlers read the SSR value.
+  const htmlLang = useRouterState({
+    select: (s) => getLocaleFromPath(s.location.pathname) ?? "en",
+  });
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={htmlLang} suppressHydrationWarning>
       <head>
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />

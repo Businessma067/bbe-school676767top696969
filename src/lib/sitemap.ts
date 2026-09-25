@@ -5,6 +5,7 @@ import {
   hreflangLinks,
   localizePath,
 } from "./i18n/locale-path";
+import { WISO_EXAM_FORMAT } from "../config/wiso-exam-hub";
 
 const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
 
@@ -62,6 +63,7 @@ export const ENGLISH_ONLY_INDEXABLE_PATHS = [
 
 type SitemapEntry = {
   loc: string;
+  lastmod?: string;
   priority: string;
   alternates: { hrefLang: string; href: string }[];
 };
@@ -102,6 +104,14 @@ function priorityFor(englishPath: string): string {
   return "0.8";
 }
 
+/** Only pages with a tracked content date get lastmod; a build-time date would be noise. */
+function lastmodFor(englishPath: string): string | undefined {
+  if (englishPath === "/wiso" || englishPath.startsWith("/wiso/")) {
+    return WISO_EXAM_FORMAT.cycle.lastUpdatedIso;
+  }
+  return undefined;
+}
+
 function escapeXml(value: string): string {
   return value
     .replaceAll("&", "&amp;")
@@ -123,6 +133,7 @@ export function getSitemapEntries(): SitemapEntry[] {
       const localized = localizePath(path, code);
       entries.push({
         loc: absoluteUrl(localized),
+        lastmod: lastmodFor(path),
         priority: priorityFor(path),
         alternates: hreflangLinks(path).map(({ hrefLang, href }) => ({ hrefLang, href })),
       });
@@ -153,7 +164,8 @@ export function renderSitemapXml(): string {
         )
         .join("\n");
       const linkBlock = links ? `\n${links}` : "";
-      return `  <url>\n    <loc>${escapeXml(entry.loc)}</loc>\n    <priority>${entry.priority}</priority>${linkBlock}\n  </url>`;
+      const lastmod = entry.lastmod ? `\n    <lastmod>${entry.lastmod}</lastmod>` : "";
+      return `  <url>\n    <loc>${escapeXml(entry.loc)}</loc>${lastmod}\n    <priority>${entry.priority}</priority>${linkBlock}\n  </url>`;
     })
     .join("\n");
 

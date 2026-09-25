@@ -17,6 +17,7 @@ import { storeExamTrack } from "@/lib/exam-track";
 import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { WISO_KEYWORDS, wisoBreadcrumbScript, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const HowItWorksSection = lazy(() =>
   import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
@@ -28,11 +29,11 @@ export const Route = createFileRoute("/wiso/")({
   head: () => ({
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "WU Vienna WiSo Exam Prep | German Bachelor Entrance | BBE School" },
+      { title: "WiSo Exam Prep for WU Vienna (Aufnahmeprüfung) | BBE School" },
       {
         name: "description",
         content:
-          "Prepare for the WU Vienna WiSo (Wirtschafts- und Sozialwissenschaften) entrance exam: Wirtschaft verstehen economics, mathematics, and German reading comprehension.",
+          "Prepare for the WU Vienna WiSo exam (Aufnahmeprüfung): Wirtschaft verstehen, mathematics, and German reading, with scoring guides and timed practice.",
       },
       { property: "og:title", content: "WU Vienna WiSo Exam Prep | BBE School" },
       {
@@ -41,15 +42,18 @@ export const Route = createFileRoute("/wiso/")({
           "WiSo Aufnahmeprüfung prep for Wirtschaft verstehen, math, German reading, scoring, and mocks.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: `https://bbe-school.com${PATH}` },
-      { property: "og:locale", content: "en_US" },
-      { property: "og:locale:alternate", content: "de_AT" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "keywords", content: "WiSo Aufnahmeprüfung, WU Wien, Wirtschaft verstehen, WiSo Vorbereitung, WU entrance exam German" },
+      { name: "keywords", content: WISO_KEYWORDS.join(", ") },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna WiSo Exam Prep | BBE School",
+        "WiSo Aufnahmeprüfung prep for Wirtschaft verstehen, math, German reading, scoring, and mocks.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(wisoFaqs)) },
+      wisoBreadcrumbScript(PATH, "WiSo"),
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -57,8 +61,10 @@ export const Route = createFileRoute("/wiso/")({
           "@type": "WebPage",
           name: "WU Vienna WiSo Exam Prep",
           url: "https://bbe-school.com/wiso",
+          inLanguage: "en",
           description:
             "Preparation for the WU Vienna WiSo Aufnahmeprüfung: economics, mathematics, and German reading.",
+          keywords: WISO_KEYWORDS.join(", "),
           isPartOf: { "@type": "WebSite", name: "BBE School", url: "https://bbe-school.com" },
           about: {
             "@type": "EducationalOccupationalProgram",

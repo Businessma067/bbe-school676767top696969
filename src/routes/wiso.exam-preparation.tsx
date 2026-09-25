@@ -10,12 +10,22 @@ import { WisoExamShell, WisoSection } from "@/components/wiso-exam/WisoExamShell
 import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso/exam-preparation" as const;
 
 export const Route = createFileRoute("/wiso/exam-preparation")({
   head: () => ({
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "Preparation",
+        headline: "How to Prepare for the WU WiSo Entrance Exam",
+        description:
+          "How to prepare for the WU Vienna WiSo entrance exam: format, Wirtschaft verstehen, German reading, math fluency, Teilpunktesystem, timed mocks, and example timelines.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       { title: "How to Prepare for the WU WiSo Entrance Exam | BBE School" },
@@ -32,6 +42,11 @@ export const Route = createFileRoute("/wiso/exam-preparation")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "How to Prepare for the WU WiSo Entrance Exam",
+        "A practical WiSo study plan from diagnostics through mocks, without mixing in BBE English content.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),
