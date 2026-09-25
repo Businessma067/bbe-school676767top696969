@@ -132,14 +132,14 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mx-auto mt-8 grid max-w-5xl items-stretch gap-4 md:mt-10 md:grid-cols-2 md:gap-6">
+            <div className="mx-auto mt-8 grid max-w-5xl items-start gap-4 md:mt-10 md:grid-cols-2 md:gap-6">
               {EXAM_OPTIONS.map((exam) => {
                 const isWiso = exam.id === "wiso";
                 return (
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex h-full flex-col rounded-2xl border p-5 sm:p-8",
+                      "flex flex-col rounded-2xl border p-5 sm:p-8",
                       isWiso
                         ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
                         : "border-border bg-card",
@@ -175,7 +175,7 @@ export function Index() {
                     >
                       {exam.title}
                     </h2>
-                    <ul className="mt-5 flex-1 space-y-2">
+                    <ul className="mt-5 space-y-2">
                       {exam.differences.map((item) => (
                         <li
                           key={item}
@@ -195,7 +195,7 @@ export function Index() {
                       to={exam.to}
                       onClick={() => storeExamTrack(exam.id)}
                       className={cn(
-                        "mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+                        "mt-6 inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
                         isWiso
                           ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
                           : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
