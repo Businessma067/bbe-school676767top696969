@@ -54,7 +54,6 @@ type ExamOption = {
   id: "bbe" | "wiso";
   label: string;
   title: string;
-  description: string;
   differences: string[];
   cta: string;
   to: string;
@@ -65,8 +64,6 @@ const EXAM_OPTIONS: ExamOption[] = [
     id: "bbe",
     label: "BBE",
     title: "Business and Economics (BBE)",
-    description:
-      "WU’s English-taught bachelor with a smaller intake of about 240 places, an international cohort, and a winter start only. The exam covers Economics and Business, English, and Mathematics.",
     differences: [
       "Exam and study language: English",
       "About 240 places, highly selective",
@@ -80,8 +77,6 @@ const EXAM_OPTIONS: ExamOption[] = [
     id: "wiso",
     label: "WiSo",
     title: "Business, Economics and Social Sciences (WiSo)",
-    description:
-      "WU’s German-taught bachelor with a much larger intake of about 2,703 places. The exam covers economics fundamentals, Mathematics, and German reading comprehension, with no English section.",
     differences: [
       "Exam and study language: German",
       "About 2,703 places, broader intake",
@@ -180,9 +175,6 @@ export function Index() {
                     >
                       {exam.title}
                     </h2>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                      {exam.description}
-                    </p>
                     <ul className="mt-5 flex-1 space-y-2">
                       {exam.differences.map((item) => (
                         <li
