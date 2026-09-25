@@ -119,7 +119,9 @@ export function WhyChooseUsSection({
                   {feature.description}
                 </p>
                 {feature.id === "builder" ? <MockBuilderOrbit /> : null}
-                {feature.tools ? <StudyToolsCycle tools={feature.tools} /> : null}
+                {feature.tools ? (
+                  <StudyToolsCycle tools={feature.tools} locale={isWiso ? "de" : "en"} />
+                ) : null}
               </article>
             );
           })}
@@ -131,12 +133,15 @@ export function WhyChooseUsSection({
 
 function StudyToolsCycle({
   tools,
+  locale = "en",
 }: {
   tools: { name: string; blurb: string; kind: StudyToolKind }[];
+  locale?: "en" | "de";
 }) {
   const [active, setActive] = useState(0);
   const [reduceMotion, setReduceMotion] = useState(false);
   const slideMs = 5200;
+  const de = locale === "de";
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -165,14 +170,16 @@ function StudyToolsCycle({
           <div className="stc-flash-flip">
             <div className="stc-flash-inner">
               <div className="stc-flash-face stc-flash-front">
-                <span className="stc-flash-eyebrow">Economics</span>
-                <span className="stc-flash-term">Net present value</span>
-                <span className="stc-flash-hint">Tap to flip</span>
+                <span className="stc-flash-eyebrow">{de ? "Wirtschaft" : "Economics"}</span>
+                <span className="stc-flash-term">{de ? "Kapitalwert" : "Net present value"}</span>
+                <span className="stc-flash-hint">{de ? "Tippen zum Umdrehen" : "Tap to flip"}</span>
               </div>
               <div className="stc-flash-face stc-flash-back">
                 <span className="stc-flash-eyebrow">Definition</span>
                 <span className="stc-flash-def">
-                  Today’s value of future cash flows, discounted at the required rate.
+                  {de
+                    ? "Heutiger Wert künftiger Zahlungsströme, abgezinst mit dem geforderten Zinssatz."
+                    : "Today’s value of future cash flows, discounted at the required rate."}
                 </span>
               </div>
             </div>
@@ -182,11 +189,17 @@ function StudyToolsCycle({
     }
 
     if (kind === "matching") {
-      const pairs = [
-        ["Elasticity", "%ΔQ / %ΔP"],
-        ["Opportunity cost", "Next-best forgone"],
-        ["NPV", "Discounted cash"],
-      ] as const;
+      const pairs: readonly [string, string][] = de
+        ? [
+            ["Elastizität", "%ΔQ / %ΔP"],
+            ["Opportunitätskosten", "Nächstbeste Alternative"],
+            ["Kapitalwert", "Abgezinste Cashflows"],
+          ]
+        : [
+            ["Elasticity", "%ΔQ / %ΔP"],
+            ["Opportunity cost", "Next-best forgone"],
+            ["NPV", "Discounted cash"],
+          ];
       return (
         <div className="stc-match">
           {pairs.map(([left, right], i) => (
@@ -210,12 +223,18 @@ function StudyToolsCycle({
           <span className="stc-tutor-name">Tutor</span>
         </div>
         <div className="stc-tutor-chat">
-          <p className="stc-tutor-msg stc-tutor-q">True or false: NPV uses discounted cash flows.</p>
+          <p className="stc-tutor-msg stc-tutor-q">
+            {de
+              ? "Richtig oder falsch: Der Kapitalwert nutzt abgezinste Cashflows."
+              : "True or false: NPV uses discounted cash flows."}
+          </p>
           <div className="stc-tutor-choices">
-            <span className="stc-tutor-choice stc-tutor-true">True</span>
-            <span className="stc-tutor-choice stc-tutor-false">False</span>
+            <span className="stc-tutor-choice stc-tutor-true">{de ? "Richtig" : "True"}</span>
+            <span className="stc-tutor-choice stc-tutor-false">{de ? "Falsch" : "False"}</span>
           </div>
-          <p className="stc-tutor-msg stc-tutor-ok">Correct — keep going.</p>
+          <p className="stc-tutor-msg stc-tutor-ok">
+            {de ? "Stimmt — weiter so." : "Correct — keep going."}
+          </p>
         </div>
       </div>
     );

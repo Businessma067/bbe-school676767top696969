@@ -53,6 +53,26 @@ export const homeExtraDe: Record<string, string> = {
   "Tutor exam.": "Tutor-Prüfung.",
   "A short random theory quiz with instant feedback from the tutor robot.":
     "Ein kurzes zufälliges Theorie-Quiz mit Sofortfeedback vom Tutor-Roboter.",
+  "Pair each term with its meaning on a timed board using the same decks in a different drill.":
+    "Ordne jeden Begriff seiner Bedeutung auf einem Timed-Board zu — dieselben Decks, anderer Drill.",
+  "A growing bank of exam-style cases across every content area, with a short explanation under each statement so you learn the logic instead of only the answer key.":
+    "Eine wachsende Bank prüfungsnaher Fälle über alle Inhaltsbereiche — mit einer kurzen Erklärung unter jeder Aussage, damit du die Logik lernst und nicht nur den Antwortschlüssel.",
+  "Sit complete simulations with real pacing pressure and partial-credit scoring, then review where points were won or lost.":
+    "Absolviere komplette Simulationen mit echtem Tempo-Druck und Teilpunkte-Bewertung und sieh danach, wo Punkte gewonnen oder verloren wurden.",
+  "Build your own timed sets by topic and difficulty so you can close weak spots without spending hours on material you already know.":
+    "Baue eigene Timed-Sets nach Thema und Schwierigkeit, um Schwachstellen zu schließen — ohne Stunden an Stoff zu verschwenden, den du schon kannst.",
+  "Net present value": "Kapitalwert",
+  "Tap to flip": "Tippen zum Umdrehen",
+  "Today’s value of future cash flows, discounted at the required rate.":
+    "Heutiger Wert künftiger Zahlungsströme, abgezinst mit dem geforderten Zinssatz.",
+  "Opportunity cost": "Opportunitätskosten",
+  "Next-best forgone": "Nächstbeste Alternative",
+  "Discounted cash": "Abgezinste Cashflows",
+  "True or false: NPV uses discounted cash flows.":
+    "Richtig oder falsch: Der Kapitalwert nutzt abgezinste Cashflows.",
+  "Correct — keep going.": "Stimmt — weiter so.",
+  True: "Richtig",
+  False: "Falsch",
 
   // ---------- Capital / outcomes fragments ----------
   "just to read textbook slides with you. Top-tier education at WU Vienna costs literally":
@@ -187,6 +207,26 @@ export const homeExtraUk: Record<string, string> = {
   "Tutor exam.": "Tutor exam.",
   "A short random theory quiz with instant feedback from the tutor robot.":
     "Короткий випадковий теорквиз із миттєвим фідбеком від робота-тьютора.",
+  "Pair each term with its meaning on a timed board using the same decks in a different drill.":
+    "Зістав кожен термін із значенням на timed-дошці — ті самі колоди, інший формат.",
+  "A growing bank of exam-style cases across every content area, with a short explanation under each statement so you learn the logic instead of only the answer key.":
+    "Зростаючий банк іспитових кейсів з усіх розділів — із коротким поясненням під кожним твердженням, щоб ти вчив логіку, а не лише ключ відповідей.",
+  "Sit complete simulations with real pacing pressure and partial-credit scoring, then review where points were won or lost.":
+    "Пройди повні симуляції з реальним темпом і частковими балами, тоді переглянь, де бали виграні чи втрачені.",
+  "Build your own timed sets by topic and difficulty so you can close weak spots without spending hours on material you already know.":
+    "Збери власні timed-набори за темою й складністю, щоб закрити слабкі місця без годин на вже відомий матеріал.",
+  "Net present value": "Чиста теперішня вартість",
+  "Tap to flip": "Натисни, щоб перевернути",
+  "Today’s value of future cash flows, discounted at the required rate.":
+    "Сьогоднішня вартість майбутніх грошових потоків, дисконтована за потрібною ставкою.",
+  "Opportunity cost": "Альтернативна вартість",
+  "Next-best forgone": "Наступна найкраща відмова",
+  "Discounted cash": "Дисконтовані грошові потоки",
+  "True or false: NPV uses discounted cash flows.":
+    "Правда чи ні: NPV використовує дисконтовані грошові потоки.",
+  "Correct — keep going.": "Правильно — далі.",
+  True: "Правда",
+  False: "Неправда",
 
   // ---------- Capital / outcomes fragments ----------
   "just to read textbook slides with you. Top-tier education at WU Vienna costs literally":
