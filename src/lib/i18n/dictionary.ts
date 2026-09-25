@@ -112,38 +112,56 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Kurs",
     "Mock exams": "Probeprüfungen",
-    "Statement explanations beside the solution": "Aussagen-Erklärungen neben der Lösung",
-    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap Explanation to read the write-up next to the solution, without leaving the panel.":
-      "Öffne einen Leitfaden, wähle eine Aufgabe, reiche ein und öffne die volle Lösung. Bei jeder Aussage tippst du auf Erklärung und liest den Text neben der Lösung, ohne das Panel zu verlassen.",
+    "See why each statement is true or false":
+      "Sieh, warum jede Aussage wahr oder falsch ist",
+    "You work economics cases in the real exam format — 680+ questions in the Full Course. After you submit, tap Explanation beside any statement and read why it holds or fails, without leaving the solution.":
+      "Du bearbeitest Wirtschafts-Fälle im echten Prüfungsformat — 680+ Fragen im Vollkurs. Nach dem Einreichen tippst du bei jeder Aussage auf Erklärung und liest, warum sie hält oder fällt — ohne die Lösung zu verlassen.",
     "Explore Economics": "Wirtschaft entdecken",
-    "Timed drills with the exam calculator": "Timed Mode mit dem Prüfungsrechner",
-    "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
-      "Starte beim Leitfaden, öffne eine Frage, schalte den Timed Mode ein und nutze den Rechner. Reiche ein und scrolle dann die volle Lösung, bis die Methode sitzt.",
+    "Practice under the same time pressure": "Übe unter demselben Zeitdruck",
+    "Open a math task from the 2,800-question bank, turn on timed mode, and use the exam calculator. When you finish, walk through the full solution step by step until the method sticks.":
+      "Öffne eine Mathe-Aufgabe aus dem 2.800-Fragen-Bank, schalte den Timed Mode ein und nutze den Prüfungsrechner. Danach gehst du die volle Lösung Schritt für Schritt durch, bis die Methode sitzt.",
     "Explore Math": "Mathematik entdecken",
-    "Passages with show-in-text": "Texte mit „Show in text“",
-    "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.":
-      "Öffne den Leitfaden, bearbeite einen Text mit Aussagen und reiche ein. Mit Show in text springst du von jeder Erklärung zurück zu den genauen Zeilen im Text.",
+    "Jump from the explanation back into the passage":
+      "Springe von der Erklärung zurück in den Text",
+    "Answer statements on a reading passage from the 700+ English bank. Then use Show in text to jump from each explanation to the exact lines that support it.":
+      "Beantworte Aussagen zu einem Lesetext aus der 700+-Englisch-Bank. Mit Show in text springst du von jeder Erklärung zu den genauen Zeilen, die sie stützen.",
     "Explore English": "Englisch entdecken",
+    "See why each statement holds or fails":
+      "Sieh, warum jede Aussage hält oder fällt",
+    "You work Wirtschaft verstehen cases in the exam format. After you submit, open the full solution and tap Explanation beside any statement to see the reasoning.":
+      "Du bearbeitest Wirtschaft-verstehen-Fälle im Prüfungsformat. Nach dem Einreichen öffnest du die volle Lösung und tippst bei jeder Aussage auf Erklärung, um die Begründung zu sehen.",
+    "Open a WiSo math task, switch on timed mode, and use the calculator. After you submit, read the full solution so the method sticks under German wording.":
+      "Öffne eine WiSo-Mathe-Aufgabe, schalte den Timed Mode ein und nutze den Rechner. Nach dem Einreichen liest du die volle Lösung, bis die Methode unter deutschem Wording sitzt.",
+    "Jump from the explanation back into the text":
+      "Springe von der Erklärung zurück in den Text",
+    "Work a German reading passage with statements, submit your answers, then use Show in text to jump from each explanation back to the exact lines in the text.":
+      "Bearbeite einen deutschen Lesetext mit Aussagen, reiche ein und springe mit Show in text von jeder Erklärung zurück zu den genauen Zeilen im Text.",
+    "Explore German": "Deutsch entdecken",
     "Full-length exam simulations": "Vollständige Prüfungssimulationen",
     "Build a mock around your weak spots": "Baue eine Probeprüfung um deine Schwachstellen",
-    "This walkthrough is next. Use Course or Study tools to see how practice actually feels.":
-      "Diese Tour folgt als Nächstes. Unter Kurs oder Lernwerkzeuge siehst du, wie sich die Praxis anfühlt.",
-    "Walkthrough coming next. Switch to Course or Study tools to watch the demos.":
-      "Die Tour folgt als Nächstes. Wechsle zu Kurs oder Lernwerkzeuge, um die Demos zu sehen.",
+    "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
+      "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs — kein Zufallspapier.",
+    "Open Mock Builder": "Prüfungs-Builder öffnen",
     Flashcards: "Karteikarten",
     Matching: "Matching",
     "Tutor Exam": "Tutor-Prüfung",
-    "Flip cards for terms and formulas": "Wendekarten für Begriffe und Formeln",
-    "Drill Economics definitions, Math formulas, and English vocabulary. Flip each card, rate how well you know it, and build recall before the exam.":
-      "Übe Wirtschaftsdefinitionen, Mathematikformeln und Englisch-Vokabeln. Drehe jede Karte, bewerte dein Wissen und baue Abruf vor der Prüfung auf.",
+    "Flip cards until the terms stick": "Drehe Karten, bis die Begriffe sitzen",
+    "Go through economics definitions, math formulas, and English vocabulary. Flip each card, mark how well you know it, and keep going until recall feels automatic.":
+      "Geh Wirtschaftsdefinitionen, Matheformeln und Englisch-Vokabeln durch. Drehe jede Karte, markiere, wie gut du sie kannst, und mach weiter, bis der Abruf automatisch sitzt.",
+    "Go through Wirtschaft verstehen terms, math formulas, and German reading vocabulary. Flip each card, mark how well you know it, and keep going until recall feels automatic.":
+      "Geh Wirtschaft-verstehen-Begriffe, Matheformeln und Deutsch-Lesewortschatz durch. Drehe jede Karte, markiere, wie gut du sie kannst, und mach weiter, bis der Abruf automatisch sitzt.",
     "Open Flashcards": "Karteikarten öffnen",
-    "Connect concepts to the right meaning": "Begriffe mit der richtigen Bedeutung verbinden",
-    "Pair each term with its definition in a timed matching board. Same decks as the flashcards, a different drill.":
-      "Ordne jeden Begriff seiner Definition auf einem timed Matching-Board zu. Dieselben Decks wie die Karteikarten, ein anderes Drill.",
+    "Match each term to its meaning": "Ordne jedem Begriff seine Bedeutung zu",
+    "Pair terms with definitions on a timed board. Same decks as the flashcards — just a different way to practice.":
+      "Paare Begriffe mit Definitionen auf einem Timed-Board. Dieselben Decks wie die Karteikarten — nur eine andere Übungsform.",
+    "Pair terms with definitions on a timed board. Same WiSo decks as the flashcards — just a different way to practice.":
+      "Paare Begriffe mit Definitionen auf einem Timed-Board. Dieselben WiSo-Decks wie die Karteikarten — nur eine andere Übungsform.",
     "Open Matching": "Matching öffnen",
-    "A random theoretical quiz with a tutor": "Ein zufälliges Theorie-Quiz mit Tutor",
-    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory.":
-      "Der Tutor-Roboter wählt bei jedem Durchlauf neue Fragen. Antworte, erhalte sofort Feedback und übe Theorie.",
+    "Quiz yourself on theory": "Quizze dich zur Theorie",
+    "Each run gives you a fresh set of theory questions. Answer, get instant feedback, and keep going until the wording feels familiar.":
+      "Jeder Durchlauf bringt dir ein frisches Set Theoriefragen. Antworte, hol dir Sofortfeedback und mach weiter, bis das Wording vertraut wirkt.",
+    "Each run gives you a fresh set of WiSo theory questions. Answer, get instant feedback, and keep going until the wording feels familiar.":
+      "Jeder Durchlauf bringt dir ein frisches Set WiSo-Theoriefragen. Antworte, hol dir Sofortfeedback und mach weiter, bis das Wording vertraut wirkt.",
     "Open Tutor Exam": "Tutor-Prüfung öffnen",
     "Zoom in": "Vergrößern",
     "Zoom out": "Verkleinern",
@@ -310,38 +328,56 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Курс",
     "Mock exams": "Пробні іспити",
-    "Statement explanations beside the solution": "Пояснення тверджень поруч із розв’язком",
-    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap Explanation to read the write-up next to the solution, without leaving the panel.":
-      "Відкрий гайд, обери завдання, надішли відповідь і відкрий повний розбір. Для будь-якого твердження натисни Пояснення і читай текст поруч із розв’язком, не виходячи з панелі.",
+    "See why each statement is true or false":
+      "Побач, чому кожне твердження правильне чи хибне",
+    "You work economics cases in the real exam format — 680+ questions in the Full Course. After you submit, tap Explanation beside any statement and read why it holds or fails, without leaving the solution.":
+      "Ти розбираєш кейси з економіки в реальному форматі іспиту — 680+ питань у повному курсі. Після здачі натисни Пояснення біля будь-якого твердження й прочитай, чому воно тримається чи падає — не виходячи з розв’язку.",
     "Explore Economics": "До економіки",
-    "Timed drills with the exam calculator": "Режим таймера з калькулятором іспиту",
-    "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
-      "Почни з гайду, відкрий питання, увімкни таймер і скористайся калькулятором. Надішли відповідь, тоді прогорни повний розв’язок, щоб метод закріпився.",
+    "Practice under the same time pressure": "Тренуйся під тим самим часовим тиском",
+    "Open a math task from the 2,800-question bank, turn on timed mode, and use the exam calculator. When you finish, walk through the full solution step by step until the method sticks.":
+      "Відкрий задачу з математики з банку на 2800 питань, увімкни таймер і скористайся калькулятором іспиту. Потім пройди повний розв’язок крок за кроком, доки метод не закріпиться.",
     "Explore Math": "До математики",
-    "Passages with show-in-text": "Тексти з Show in text",
-    "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.":
-      "Відкрий гайд, розбери текст із твердженнями й надішли відповідь. Show in text повертає з кожного пояснення до точних рядків у тексті.",
+    "Jump from the explanation back into the passage":
+      "Перейди з пояснення назад у текст",
+    "Answer statements on a reading passage from the 700+ English bank. Then use Show in text to jump from each explanation to the exact lines that support it.":
+      "Відповідай на твердження до тексту з банку 700+ англійських питань. Show in text перекидає з кожного пояснення до точних рядків, які його підтверджують.",
     "Explore English": "До англійської",
+    "See why each statement holds or fails":
+      "Побач, чому кожне твердження тримається чи падає",
+    "You work Wirtschaft verstehen cases in the exam format. After you submit, open the full solution and tap Explanation beside any statement to see the reasoning.":
+      "Ти розбираєш кейси Wirtschaft verstehen у форматі іспиту. Після здачі відкрий повний розв’язок і натисни Пояснення біля будь-якого твердження, щоб побачити логіку.",
+    "Open a WiSo math task, switch on timed mode, and use the calculator. After you submit, read the full solution so the method sticks under German wording.":
+      "Відкрий задачу з математики WiSo, увімкни таймер і скористайся калькулятором. Після здачі прочитай повний розв’язок, щоб метод закріпився під німецьким формулюванням.",
+    "Jump from the explanation back into the text":
+      "Перейди з пояснення назад у текст",
+    "Work a German reading passage with statements, submit your answers, then use Show in text to jump from each explanation back to the exact lines in the text.":
+      "Розбери німецький текст із твердженнями, надішли відповіді, тоді Show in text поверне з кожного пояснення до точних рядків у тексті.",
+    "Explore German": "До німецької",
     "Full-length exam simulations": "Повноформатні симуляції іспиту",
     "Build a mock around your weak spots": "Збери пробний іспит під свої слабкі місця",
-    "This walkthrough is next. Use Course or Study tools to see how practice actually feels.":
-      "Цей огляд буде наступним. У вкладках Курс або Навчальні інструменти видно, як виглядає практика.",
-    "Walkthrough coming next. Switch to Course or Study tools to watch the demos.":
-      "Огляд буде наступним. Перейди до Курсу або Навчальних інструментів, щоб подивитись демо.",
+    "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
+      "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу — не випадковий варіант.",
+    "Open Mock Builder": "Відкрити конструктор іспитів",
     Flashcards: "Картки",
     Matching: "Matching",
     "Tutor Exam": "Tutor Exam",
-    "Flip cards for terms and formulas": "Картки для термінів і формул",
-    "Drill Economics definitions, Math formulas, and English vocabulary. Flip each card, rate how well you know it, and build recall before the exam.":
-      "Тренуй визначення з економіки, формули з математики та англійську лексику. Перевертай картку, оцінюй знання й зміцнюй пригадування до іспиту.",
+    "Flip cards until the terms stick": "Перевертай картки, доки терміни не закріпляться",
+    "Go through economics definitions, math formulas, and English vocabulary. Flip each card, mark how well you know it, and keep going until recall feels automatic.":
+      "Пройди визначення з економіки, формули з математики та англійську лексику. Перевертай кожну картку, познач, наскільки добре її знаєш, і йди далі, доки пригадування не стане автоматичним.",
+    "Go through Wirtschaft verstehen terms, math formulas, and German reading vocabulary. Flip each card, mark how well you know it, and keep going until recall feels automatic.":
+      "Пройди терміни Wirtschaft verstehen, формули з математики та лексику німецького читання. Перевертай кожну картку, познач, наскільки добре її знаєш, і йди далі, доки пригадування не стане автоматичним.",
     "Open Flashcards": "Відкрити картки",
-    "Connect concepts to the right meaning": "З’єднай поняття з правильним значенням",
-    "Pair each term with its definition in a timed matching board. Same decks as the flashcards, a different drill.":
-      "Зістав кожен термін із визначенням на timed matching-дошці. Ті самі колоди, що й у картках, інший формат.",
+    "Match each term to its meaning": "Зістав кожен термін із значенням",
+    "Pair terms with definitions on a timed board. Same decks as the flashcards — just a different way to practice.":
+      "Зістав терміни з визначеннями на timed-дошці. Ті самі колоди, що й у картках — просто інший формат практики.",
+    "Pair terms with definitions on a timed board. Same WiSo decks as the flashcards — just a different way to practice.":
+      "Зістав терміни з визначеннями на timed-дошці. Ті самі колоди WiSo, що й у картках — просто інший формат практики.",
     "Open Matching": "Відкрити Matching",
-    "A random theoretical quiz with a tutor": "Випадковий теоретичний квіз із тьютором",
-    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory.":
-      "Робот-тьютор щоразу обирає нові питання. Відповідай, отримуй миттєвий фідбек і тренуй теорію.",
+    "Quiz yourself on theory": "Перевір себе з теорії",
+    "Each run gives you a fresh set of theory questions. Answer, get instant feedback, and keep going until the wording feels familiar.":
+      "Кожен запуск дає свіжий набір теорії. Відповідай, отримуй миттєвий фідбек і йди далі, доки формулювання не стане звичним.",
+    "Each run gives you a fresh set of WiSo theory questions. Answer, get instant feedback, and keep going until the wording feels familiar.":
+      "Кожен запуск дає свіжий набір теорії WiSo. Відповідай, отримуй миттєвий фідбек і йди далі, доки формулювання не стане звичним.",
     "Open Tutor Exam": "Відкрити Tutor Exam",
     "Zoom in": "Збільшити",
     "Zoom out": "Зменшити",
