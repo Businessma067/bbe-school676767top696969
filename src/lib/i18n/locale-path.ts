@@ -150,7 +150,8 @@ export function absoluteUrl(pathname: string): string {
 /** `<link rel="alternate" hreflang=...>` entries for a localizable English path. */
 export function hreflangLinks(pathname: string): { rel: string; hrefLang: string; href: string }[] {
   const base = stripLocalePrefix(pathname);
-  if (!isLocalizablePath(base)) return [];
+  // Study routes redirect /de|/uk back to the English URL, so they have no alternates.
+  if (!isLocalizablePath(base) || isStudyContentPath(base)) return [];
 
   return [
     { rel: "alternate", hrefLang: "en", href: absoluteUrl(localizePath(base, "en")) },

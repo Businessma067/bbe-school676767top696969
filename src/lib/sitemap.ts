@@ -14,8 +14,9 @@ const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
  * New public pages in LOCALIZABLE_PATHS are included automatically unless they
  * match one of these prefixes (or an exact private path below).
  *
- * WiSo exam-info pages stay public. Paywalled course study, the WiSo full-course
- * sales/study surfaces, mock builder, and unfinished WiSo tool placeholders stay out.
+ * Public: exam-info guides, product/sales pages, demo course hubs, and the demo
+ * mock landing page (EN/DE/UK). Excluded: paywalled full-course study, mock
+ * exam catalogs, mock builders, and study tools (flashcards, matching, tutor).
  */
 const PRIVATE_PATH_PREFIXES = [
   "/admin",
@@ -37,13 +38,25 @@ const PRIVATE_PATH_PREFIXES = [
   "/products/full-course-english",
   "/products/full-course-economics",
   "/products/full-course-wiso-economics",
-  "/wiso/products/full-course",
-  "/wiso/demo-practice",
+  "/wiso/products/full-course-subjects",
+  "/wiso/products/full-course-math",
+  "/wiso/products/full-course-economics",
+  "/wiso/products/full-course-german",
+  "/mock-exams",
   "/wiso/mock-exams",
   "/wiso/mock-builder",
+  "/flashcards",
+  "/matching",
+  "/tutor-exam",
   "/wiso/flashcards",
   "/wiso/matching",
   "/wiso/tutor-exam",
+  "/demo-practice/flashcards",
+  "/demo-practice/matching",
+  "/demo-practice/tutor-exam",
+  "/wiso/demo-practice/flashcards",
+  "/wiso/demo-practice/matching",
+  "/wiso/demo-practice/tutor-exam",
   "/products/custom-mock-builder",
 ] as const;
 
@@ -52,13 +65,16 @@ const PRIVATE_PATHS_EXACT = new Set<string>([
   "/wiso/products", // redirects to shared /products
 ]);
 
-/** Free, no-login English-only pages. Anything behind a course purchase or a
- *  sign-in wall (flashcards, matching, tutor exam, mock exams, course subjects)
- *  is intentionally excluded. */
+/** Free demo course subject pages that have a single (unprefixed) URL. Anything
+ *  behind a course purchase (flashcards, matching, tutor exam, mock exams,
+ *  course subjects) is intentionally excluded. */
 export const ENGLISH_ONLY_INDEXABLE_PATHS = [
   "/demo-practice/economics",
   "/demo-practice/math",
   "/demo-practice/english",
+  "/wiso/demo-practice/math",
+  "/wiso/demo-practice/economics",
+  "/wiso/demo-practice/german",
 ] as const;
 
 type SitemapEntry = {
@@ -85,7 +101,9 @@ function priorityFor(englishPath: string): string {
     return "0.6";
   }
   if (englishPath === "/parents") return "0.7";
-  if (englishPath.startsWith("/demo-practice/")) return "0.7";
+  if (englishPath.startsWith("/demo-practice/") || englishPath.startsWith("/wiso/demo-practice/")) {
+    return "0.7";
+  }
   if (
     englishPath === "/mock-exams" ||
     englishPath === "/flashcards" ||
@@ -106,6 +124,9 @@ function priorityFor(englishPath: string): string {
 
 /** Only pages with a tracked content date get lastmod; a build-time date would be noise. */
 function lastmodFor(englishPath: string): string | undefined {
+  if (englishPath.startsWith("/wiso/products") || englishPath.startsWith("/wiso/demo-practice")) {
+    return undefined;
+  }
   if (englishPath === "/wiso" || englishPath.startsWith("/wiso/")) {
     return WISO_EXAM_FORMAT.cycle.lastUpdatedIso;
   }
@@ -131,6 +152,7 @@ export function getSitemapEntries(): SitemapEntry[] {
   for (const code of SITEMAP_LANGS) {
     for (const path of publicLocalizable) {
       const localized = localizePath(path, code);
+      if (code !== "en" && localized === path) continue;
       entries.push({
         loc: absoluteUrl(localized),
         lastmod: lastmodFor(path),
@@ -170,7 +192,7 @@ export function renderSitemapXml(): string {
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated from src/lib/sitemap.ts on 2026-09-16. -->
+<!-- Generated from src/lib/sitemap.ts on 2026-09-25. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls}
 </urlset>

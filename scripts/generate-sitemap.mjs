@@ -1,15 +1,20 @@
 /**
  * Zero-dependency sitemap writer. Keep path lists in sync with src/lib/sitemap.ts
- * (PRIVATE_PATH_PREFIXES / PRIVATE_PATHS_EXACT) and public LOCALIZABLE_PATHS.
+ * (PRIVATE_PATH_PREFIXES / ENGLISH_ONLY_INDEXABLE_PATHS) and public LOCALIZABLE_PATHS.
  *
- * Excludes gated study surfaces and unfinished WiSo tool placeholders
- * (full-course subjects, mock builder, mock exams, flashcards, demo-practice).
+ * Includes exam-info guides, product pages, demo course hubs, and the demo mock.
+ * Excludes paywalled full-course study, mock exam catalogs, mock builders, and
+ * study tools (flashcards, matching, tutor exam).
  */
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const SITE = "https://bbe-school.com";
 const LOCALES = ["de", "uk"];
+
+const WISO_LASTMOD = /lastUpdatedIso:\s*"([^"]+)"/.exec(
+  readFileSync(resolve("src/config/wiso-exam-hub.ts"), "utf8"),
+)?.[1];
 
 const PUBLIC_LOCALIZABLE = [
   "/",
@@ -30,6 +35,8 @@ const PUBLIC_LOCALIZABLE = [
   "/wiso/exam-preparation",
   "/wiso/admission",
   "/wiso/wu-vienna",
+  "/wiso/products/full-course",
+  "/wiso/demo-practice",
   "/parents",
   "/important-features",
   "/features/answer-sheet",
@@ -39,12 +46,19 @@ const PUBLIC_LOCALIZABLE = [
   "/products/demo-practice",
   "/products/full-course",
   "/demo-practice",
+  "/demo-mock",
 ];
+
+/** Localizable in the nav, but /de and /uk redirect to the English URL. */
+const SINGLE_URL = new Set(["/demo-practice"]);
 
 const ENGLISH_ONLY = [
   "/demo-practice/economics",
   "/demo-practice/math",
   "/demo-practice/english",
+  "/wiso/demo-practice/math",
+  "/wiso/demo-practice/economics",
+  "/wiso/demo-practice/german",
 ];
 
 function abs(path) {
@@ -52,7 +66,7 @@ function abs(path) {
 }
 
 function localize(path, lang) {
-  if (lang === "en") return path;
+  if (lang === "en" || SINGLE_URL.has(path)) return path;
   return path === "/" ? `/${lang}` : `/${lang}${path}`;
 }
 
@@ -62,12 +76,22 @@ function priorityFor(path) {
   if (path === "/terms" || path === "/privacy") return "0.3";
   if (path === "/important-features" || path === "/features/answer-sheet") return "0.6";
   if (path === "/parents") return "0.7";
-  if (path.startsWith("/demo-practice/")) return "0.7";
+  if (path.startsWith("/demo-practice/") || path.startsWith("/wiso/demo-practice/")) return "0.7";
   return "0.8";
 }
 
+function lastmodFor(path) {
+  if (path.startsWith("/wiso/products") || path.startsWith("/wiso/demo-practice")) return undefined;
+  if (path === "/wiso" || path.startsWith("/wiso/")) return WISO_LASTMOD;
+  return undefined;
+}
+
 function escapeXml(value) {
-  return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
 }
 
 function hreflang(path) {
@@ -90,14 +114,17 @@ function urlBlock(locPath, englishPath, withAlternates) {
         .join("\n")
     : "";
   const linkBlock = links ? `\n${links}` : "";
-  return `  <url>\n    <loc>${escapeXml(loc)}</loc>\n    <priority>${priorityFor(englishPath)}</priority>${linkBlock}\n  </url>`;
+  const lastmod = lastmodFor(englishPath);
+  const lastmodBlock = withAlternates && lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
+  return `  <url>\n    <loc>${escapeXml(loc)}</loc>${lastmodBlock}\n    <priority>${priorityFor(englishPath)}</priority>${linkBlock}\n  </url>`;
 }
 
 function render() {
   const blocks = [];
   for (const lang of ["en", ...LOCALES]) {
     for (const path of PUBLIC_LOCALIZABLE) {
-      blocks.push(urlBlock(localize(path, lang), path, true));
+      if (lang !== "en" && SINGLE_URL.has(path)) continue;
+      blocks.push(urlBlock(localize(path, lang), path, !SINGLE_URL.has(path)));
     }
     if (lang === "en") {
       for (const path of ENGLISH_ONLY) {
@@ -106,7 +133,7 @@ function render() {
     }
   }
   return `<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated from src/lib/sitemap.ts on 2026-09-16. -->
+<!-- Generated from src/lib/sitemap.ts on 2026-09-25. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${blocks.join("\n")}
 </urlset>
