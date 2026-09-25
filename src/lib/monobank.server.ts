@@ -18,6 +18,14 @@ const MONO_API = "https://api.monobank.ua/api/merchant";
 export type MonoInvoiceStatus =
   "created" | "processing" | "hold" | "success" | "failure" | "reversed" | "expired";
 
+export type MonoPaymentInfo = {
+  maskedPan?: string;
+  paymentSystem?: string;
+  paymentMethod?: string;
+  country?: string;
+  bank?: string;
+};
+
 export type MonoStatusResponse = {
   invoiceId: string;
   status: MonoInvoiceStatus;
@@ -26,6 +34,7 @@ export type MonoStatusResponse = {
   ccy?: number;
   reference?: string;
   modifiedDate?: string;
+  paymentInfo?: MonoPaymentInfo;
 };
 
 function monoTokenSyncFallback(): string | undefined {
@@ -130,7 +139,7 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
 
   const { data: payment, error } = await supabaseAdmin
     .from("payments")
-    .select("id, user_id, user_email, product_slug, status, promo_code")
+    .select("id, user_id, user_email, product_slug, status, promo_code, paid_at")
     .eq("invoice_id", invoiceId)
     .maybeSingle();
 
@@ -142,13 +151,22 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
   const mono = await fetchMonoInvoiceStatus(invoiceId);
   const status = mono.status;
   const paid = status === "success";
+  const { extractMonoPaymentInfo } = await import("@/lib/payment-display");
+  const paymentInfo = extractMonoPaymentInfo(mono);
 
   await supabaseAdmin
     .from("payments")
     .update({
       status,
       failure_reason: mono.failureReason ?? null,
-      paid_at: paid ? new Date().toISOString() : null,
+      // Keep the first successful paid_at so admin "when" stays accurate.
+      paid_at: paid ? (payment.paid_at ?? new Date().toISOString()) : payment.paid_at,
+      ...(paymentInfo?.country ? { payer_country: paymentInfo.country } : {}),
+      ...(paymentInfo?.paymentMethod ? { payer_method: paymentInfo.paymentMethod } : {}),
+      ...(paymentInfo?.paymentSystem
+        ? { payer_payment_system: paymentInfo.paymentSystem }
+        : {}),
+      ...(paymentInfo?.maskedPan ? { masked_pan: paymentInfo.maskedPan } : {}),
     })
     .eq("id", payment.id);
 

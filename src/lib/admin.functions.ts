@@ -2,7 +2,9 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/require-admin.server";
 import {
+  attachPaymentsToRows,
   buildAdminUserRow,
+  fetchPaymentsByUserIds,
   fetchUserBundle,
   isAtRisk,
 } from "@/lib/admin-stats.server";
@@ -241,7 +243,12 @@ export const adminListUsers = createServerFn({ method: "POST" })
 
     const total = rows.length;
     const start = (data.page - 1) * data.pageSize;
-    const users = rows.slice(start, start + data.pageSize);
+    const pageRows = rows.slice(start, start + data.pageSize);
+    const paymentsByUser = await fetchPaymentsByUserIds(
+      db,
+      pageRows.map((u) => u.userId),
+    );
+    const users = attachPaymentsToRows(pageRows, paymentsByUser);
 
     return {
       users,

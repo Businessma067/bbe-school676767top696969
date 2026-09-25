@@ -436,6 +436,13 @@ function userRowFromRecord(record: UserRecord): AdminUserRow {
     practiceSessions: record.practiceSessions.length,
     currentStreak: computeStreak(dates),
     averageAccuracy: pct(correct, total),
+    plans: user.enrollments.map((e) => ({
+      productSlug: e.productSlug,
+      productName: e.productName,
+      tier: e.tier,
+      createdAt: e.createdAt,
+    })),
+    payments: [],
   };
 }
 
@@ -501,6 +508,7 @@ function detailFromRecord(record: UserRecord): AdminUserDetail {
       roles: user.roles,
     },
     enrollments: user.enrollments,
+    payments: [],
     subjectStats: summarizeTaskAttempts(toTasks()),
     studyProgress,
     taskAttempts,

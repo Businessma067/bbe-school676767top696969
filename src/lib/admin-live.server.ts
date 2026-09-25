@@ -1,7 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Database } from "@/integrations/supabase/types";
-import type { AdminUserRow } from "@/lib/admin-types";
-import { pct } from "@/lib/admin-stats.server";
+import type { AdminPlanRow, AdminUserRow } from "@/lib/admin-types";
+import { fetchPaymentsByUserIds, pct } from "@/lib/admin-stats.server";
 
 type Db = SupabaseClient<Database>;
 
@@ -18,15 +18,20 @@ export async function fetchLiveUserRows(db: Db): Promise<{
 
   const ids = users.map((u) => u.user_id);
 
-  const [rolesRes, enrollRes, tasksRes, mocksRes, practiceRes] = await Promise.all([
+  const [rolesRes, enrollRes, tasksRes, mocksRes, practiceRes, paymentsByUser] = await Promise.all([
     db.from("user_roles").select("user_id, role").in("user_id", ids),
-    db.from("enrollments").select("user_id, tier").in("user_id", ids),
+    db
+      .from("enrollments")
+      .select("user_id, product_slug, product_name, tier, created_at")
+      .in("user_id", ids)
+      .order("created_at", { ascending: true }),
     db.from("task_attempts").select("user_id, is_passed").in("user_id", ids),
     db
       .from("mock_attempts")
       .select("user_id, points_earned, points_total, status")
       .in("user_id", ids),
     db.from("practice_sessions").select("user_id").in("user_id", ids),
+    fetchPaymentsByUserIds(db, ids),
   ]);
 
   const rolesByUser = new Map<string, string[]>();
@@ -36,8 +41,17 @@ export async function fetchLiveUserRows(db: Db): Promise<{
     rolesByUser.set(r.user_id, list);
   }
 
+  const plansByUser = new Map<string, AdminPlanRow[]>();
   const tierByUser = new Map<string, string>();
   for (const e of enrollRes.data ?? []) {
+    const list = plansByUser.get(e.user_id) ?? [];
+    list.push({
+      productSlug: e.product_slug,
+      productName: e.product_name,
+      tier: e.tier,
+      createdAt: e.created_at,
+    });
+    plansByUser.set(e.user_id, list);
     if (!tierByUser.has(e.user_id)) tierByUser.set(e.user_id, e.tier);
   }
 
@@ -86,6 +100,8 @@ export async function fetchLiveUserRows(db: Db): Promise<{
       currentStreak: 0,
       averageAccuracy:
         tasks.attempted > 0 ? Math.round((tasks.passed / tasks.attempted) * 1000) / 10 : null,
+      plans: plansByUser.get(u.user_id) ?? [],
+      payments: paymentsByUser.get(u.user_id) ?? [],
     };
   });
 

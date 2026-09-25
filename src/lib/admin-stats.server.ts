@@ -5,12 +5,18 @@ import type {
   AdminFlashcardDeckSummary,
   AdminJsonValue,
   AdminMockRow,
+  AdminPaymentRow,
+  AdminPlanRow,
   AdminPracticeSessionRow,
   AdminTaskAttemptRow,
   AdminTheoryRow,
   AdminUserDetail,
   AdminUserRow,
 } from "@/lib/admin-types";
+import {
+  countryLabelFromNumeric,
+  paymentMethodLabel,
+} from "@/lib/payment-display";
 import { buildStudyProgress, type SessionAnswerStat } from "@/lib/study-progress";
 import {
   computeStreak,
@@ -124,6 +130,102 @@ function highestTier(tiers: string[]): string {
   return "none";
 }
 
+const PAYMENT_SELECT =
+  "id, user_id, product_slug, product_name, tier, status, amount_minor, currency_code, paid_at, created_at, payer_country, payer_method, payer_payment_system, masked_pan, promo_code";
+
+export function mapPaymentRow(row: {
+  id: string;
+  product_slug: string;
+  product_name: string;
+  tier: string;
+  status: string;
+  amount_minor: number;
+  currency_code: number;
+  paid_at: string | null;
+  created_at: string;
+  payer_country?: string | null;
+  payer_method?: string | null;
+  payer_payment_system?: string | null;
+  masked_pan?: string | null;
+  promo_code?: string | null;
+}): AdminPaymentRow {
+  const countryCode = row.payer_country ?? null;
+  const method = row.payer_method ?? null;
+  const system = row.payer_payment_system ?? null;
+  return {
+    id: row.id,
+    productSlug: row.product_slug,
+    productName: row.product_name,
+    tier: row.tier,
+    status: row.status,
+    amountMinor: row.amount_minor,
+    currencyCode: row.currency_code,
+    paidAt: row.paid_at,
+    createdAt: row.created_at,
+    payerCountryCode: countryCode,
+    payerCountryName: countryLabelFromNumeric(countryCode),
+    paymentMethod: method,
+    paymentMethodLabel: paymentMethodLabel(method, system),
+    paymentSystem: system,
+    maskedPan: row.masked_pan ?? null,
+    promoCode: row.promo_code ?? null,
+  };
+}
+
+export async function fetchPaymentsByUserIds(
+  db: AdminClient,
+  userIds: string[],
+): Promise<Map<string, AdminPaymentRow[]>> {
+  const byUser = new Map<string, AdminPaymentRow[]>();
+  if (userIds.length === 0) return byUser;
+
+  const { data, error } = await db
+    .from("payments")
+    .select(PAYMENT_SELECT)
+    .in("user_id", userIds)
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    // Older DBs may lack payer_* columns — retry without them.
+    const fallback = await db
+      .from("payments")
+      .select(
+        "id, user_id, product_slug, product_name, tier, status, amount_minor, currency_code, paid_at, created_at, promo_code",
+      )
+      .in("user_id", userIds)
+      .order("created_at", { ascending: false });
+    if (fallback.error) {
+      console.error("fetchPaymentsByUserIds", error.message, fallback.error.message);
+      return byUser;
+    }
+    for (const row of fallback.data ?? []) {
+      const mapped = mapPaymentRow(row);
+      const list = byUser.get(row.user_id) ?? [];
+      list.push(mapped);
+      byUser.set(row.user_id, list);
+    }
+    return byUser;
+  }
+
+  for (const row of data ?? []) {
+    const mapped = mapPaymentRow(row);
+    const list = byUser.get(row.user_id) ?? [];
+    list.push(mapped);
+    byUser.set(row.user_id, list);
+  }
+  return byUser;
+}
+
+export function attachPaymentsToRows(
+  rows: AdminUserRow[],
+  paymentsByUser: Map<string, AdminPaymentRow[]>,
+): AdminUserRow[] {
+  return rows.map((row) => ({
+    ...row,
+    payments: paymentsByUser.get(row.userId) ?? row.payments ?? [],
+  }));
+}
+
 function computeUserStreak(taskAttempts: AdminTaskAttemptRow[], mocks: AdminMockRow[]): number {
   const dates = [
     ...taskAttempts.map((t) => t.createdAt),
@@ -188,6 +290,7 @@ export async function fetchUserBundle(
     flashRes,
     theoryRes,
     activityRes,
+    paymentsRes,
   ] = await Promise.all([
     db.from("profiles").select("display_name, created_at").eq("user_id", userId).maybeSingle(),
     db.from("user_roles").select("role").eq("user_id", userId),
@@ -226,6 +329,11 @@ export async function fetchUserBundle(
       .eq("user_id", userId)
       .order("created_at", { ascending: false })
       .limit(200),
+    db
+      .from("payments")
+      .select(PAYMENT_SELECT)
+      .eq("user_id", userId)
+      .order("created_at", { ascending: false }),
   ]);
 
   const taskAttempts = (tasksRes.data ?? []).map((r) => mapTaskRow(r as Record<string, unknown>));
@@ -296,6 +404,20 @@ export async function fetchUserBundle(
     email.split("@")[0] ||
     "User";
 
+  let payments: AdminPaymentRow[] = [];
+  if (paymentsRes.error) {
+    const fallback = await db
+      .from("payments")
+      .select(
+        "id, product_slug, product_name, tier, status, amount_minor, currency_code, paid_at, created_at, promo_code",
+      )
+      .eq("user_id", userId)
+      .order("created_at", { ascending: false });
+    payments = (fallback.data ?? []).map((row) => mapPaymentRow(row));
+  } else {
+    payments = (paymentsRes.data ?? []).map((row) => mapPaymentRow(row));
+  }
+
   return {
     profile: {
       userId,
@@ -314,6 +436,7 @@ export async function fetchUserBundle(
       tier: e.tier,
       createdAt: e.created_at,
     })),
+    payments,
     subjectStats: summarizeTaskAttempts(toTaskAttempts(taskAttempts)),
     studyProgress,
     taskAttempts,
@@ -349,7 +472,11 @@ export async function buildAdminUserRow(
 ): Promise<AdminUserRow> {
   const [rolesRes, enrollmentsRes, presenceRes, tasksRes, mocksRes] = await Promise.all([
     db.from("user_roles").select("role").eq("user_id", userId),
-    db.from("enrollments").select("tier").eq("user_id", userId),
+    db
+      .from("enrollments")
+      .select("product_slug, product_name, tier, created_at")
+      .eq("user_id", userId)
+      .order("created_at", { ascending: true }),
     db.from("user_presence").select("last_seen_at, last_path").eq("user_id", userId).maybeSingle(),
     db.from("task_attempts").select("is_passed, created_at, correct_count, statement_count").eq("user_id", userId),
     db.from("mock_attempts").select("points_earned, points_total, status, completed_at, started_at").eq("user_id", userId),
@@ -362,6 +489,13 @@ export async function buildAdminUserRow(
   const roles = rolesRes.error ? [] : (rolesRes.data ?? []);
   const enrollments = enrollmentsRes.error ? [] : (enrollmentsRes.data ?? []);
 
+  const plans: AdminPlanRow[] = enrollments.map((e) => ({
+    productSlug: e.product_slug,
+    productName: e.product_name,
+    tier: e.tier,
+    createdAt: e.created_at,
+  }));
+
   const passed = taskRows.filter((t) => t.is_passed).length;
   const mockRows = mockData.filter((m) => !m.status || m.status === "submitted");
   let mockBestPct: number | null = null;
@@ -369,20 +503,6 @@ export async function buildAdminUserRow(
     const score = pct(Number(m.points_earned), Number(m.points_total));
     if (score != null && (mockBestPct == null || score > mockBestPct)) mockBestPct = score;
   }
-
-  const taskAttemptsMapped = taskRows.map((r) =>
-    mapTaskRow({
-      id: "",
-      subject: "",
-      chapter: "",
-      task_key: "",
-      task_title: null,
-      correct_count: r.correct_count,
-      statement_count: r.statement_count,
-      is_passed: r.is_passed,
-      created_at: r.created_at,
-    }),
-  );
 
   return {
     userId,
@@ -411,6 +531,8 @@ export async function buildAdminUserRow(
       }
       return pct(c, t);
     })(),
+    plans,
+    payments: [],
   };
 }
 

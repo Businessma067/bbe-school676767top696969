@@ -4,9 +4,11 @@ import { DataTable, fmtDate, fmtDuration, StatCard } from "@/components/admin/Ad
 import { UserProgressCharts } from "@/components/admin/UserProgressCharts";
 import { HEATMAP_LEVEL_COLORS, accuracyToLevel } from "@/lib/study-progress";
 import type { AdminUserDetail } from "@/lib/admin-types";
+import { formatAmountMinor } from "@/lib/payment-display";
 
 const TABS = [
   "Overview",
+  "Payments",
   "Courses",
   "Tasks",
   "Mocks",
@@ -82,6 +84,7 @@ export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
       </div>
 
       {tab === "Overview" && <OverviewTab detail={detail} />}
+      {tab === "Payments" && <PaymentsTab detail={detail} />}
       {tab === "Courses" && <CoursesTab detail={detail} />}
       {tab === "Tasks" && <TasksTab detail={detail} />}
       {tab === "Mocks" && <MocksTab detail={detail} />}
@@ -130,6 +133,108 @@ function OverviewTab({ detail }: { detail: AdminUserDetail }) {
           empty="No enrollments."
         />
       </section>
+
+      <section className="rounded-xl border border-border bg-card p-4">
+        <h3 className="font-semibold">Latest payment</h3>
+        {detail.payments[0] ? (
+          <PaymentFacts payment={detail.payments[0]} />
+        ) : (
+          <p className="mt-2 text-sm text-muted-foreground">No payments recorded.</p>
+        )}
+      </section>
+    </div>
+  );
+}
+
+function PaymentsTab({ detail }: { detail: AdminUserDetail }) {
+  return (
+    <div className="space-y-4">
+      <section className="rounded-xl border border-border bg-card p-4">
+        <h3 className="font-semibold">Plan</h3>
+        <DataTable
+          columns={[
+            { key: "product", label: "Product" },
+            { key: "tier", label: "Tier" },
+            { key: "date", label: "Enrolled" },
+          ]}
+          rows={detail.enrollments.map((e) => ({
+            product: e.productName,
+            tier: e.tier,
+            date: fmtDate(e.createdAt),
+          }))}
+          empty="No enrollments."
+        />
+      </section>
+
+      <section className="rounded-xl border border-border bg-card p-4">
+        <h3 className="mb-3 font-semibold">Payments</h3>
+        {detail.payments.length === 0 ? (
+          <p className="text-sm text-muted-foreground">
+            No card payments recorded
+            {detail.enrollments.length > 0 ? " (plan may be promo / grant)." : "."}
+          </p>
+        ) : (
+          <div className="space-y-3">
+            {detail.payments.map((p) => (
+              <div key={p.id} className="rounded-lg border border-border p-3">
+                <PaymentFacts payment={p} />
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}
+
+function PaymentFacts({
+  payment,
+}: {
+  payment: AdminUserDetail["payments"][number];
+}) {
+  return (
+    <dl className="grid gap-2 text-sm sm:grid-cols-2">
+      <Fact label="Plan" value={`${payment.productName} · ${payment.tier}`} />
+      <Fact
+        label="Country"
+        value={
+          payment.payerCountryName
+            ? `${payment.payerCountryName}${payment.payerCountryCode ? ` (${payment.payerCountryCode})` : ""}`
+            : (payment.payerCountryCode ?? "—")
+        }
+      />
+      <Fact
+        label="Method"
+        value={
+          [
+            payment.paymentMethodLabel ?? "—",
+            payment.maskedPan,
+            payment.promoCode ? `promo ${payment.promoCode}` : null,
+          ]
+            .filter(Boolean)
+            .join(" · ")
+        }
+      />
+      <Fact
+        label="When"
+        value={fmtDate(payment.paidAt ?? (payment.status === "success" ? payment.createdAt : null))}
+      />
+      <Fact
+        label="Amount"
+        value={formatAmountMinor(payment.amountMinor, payment.currencyCode)}
+      />
+      <Fact label="Status" value={payment.status} />
+    </dl>
+  );
+}
+
+function Fact({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <dt className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+        {label}
+      </dt>
+      <dd className="mt-0.5">{value || "—"}</dd>
     </div>
   );
 }

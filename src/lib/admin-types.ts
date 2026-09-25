@@ -3,6 +3,33 @@ export type AdminJsonValue = string | number | boolean | null | AdminJsonValue[]
 import type { DayProgress, StudyProgressSummary } from "@/lib/study-progress";
 import type { SubjectStats } from "@/lib/user-progress";
 
+/** One Monobank (or promo-tagged) payment shown in admin user views. */
+export type AdminPaymentRow = {
+  id: string;
+  productSlug: string;
+  productName: string;
+  tier: string;
+  status: string;
+  amountMinor: number;
+  currencyCode: number;
+  paidAt: string | null;
+  createdAt: string;
+  payerCountryCode: string | null;
+  payerCountryName: string | null;
+  paymentMethod: string | null;
+  paymentMethodLabel: string | null;
+  paymentSystem: string | null;
+  maskedPan: string | null;
+  promoCode: string | null;
+};
+
+export type AdminPlanRow = {
+  productSlug: string;
+  productName: string;
+  tier: string;
+  createdAt: string;
+};
+
 export type AdminUserRow = {
   userId: string;
   email: string;
@@ -19,6 +46,10 @@ export type AdminUserRow = {
   practiceSessions: number;
   currentStreak: number;
   averageAccuracy: number | null;
+  /** Active enrollments (plan). */
+  plans: AdminPlanRow[];
+  /** Payments newest-first. */
+  payments: AdminPaymentRow[];
 };
 
 export type AdminCohortStats = {
@@ -126,6 +157,7 @@ export type AdminUserDetail = {
     tier: string;
     createdAt: string;
   }[];
+  payments: AdminPaymentRow[];
   subjectStats: SubjectStats[];
   studyProgress: StudyProgressSummary;
   taskAttempts: AdminTaskAttemptRow[];
