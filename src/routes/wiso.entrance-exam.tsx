@@ -27,22 +27,32 @@ import {
 import { BBE_EXAM_FORMAT } from "@/config/bbe-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 import { cn } from "@/lib/utils";
 
 const PATH = "/wiso/entrance-exam" as const;
 
 export const Route = createFileRoute("/wiso/entrance-exam")({
   head: () => ({
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "Overview",
+        headline: "WU Vienna WiSo Entrance Exam: Format, Topics & Preparation Guide",
+        description:
+          "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       {
-        title: "WU Vienna WiSo Entrance Exam: Format, Topics & Guide | BBE School",
+        title: "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School",
       },
       {
         name: "description",
         content:
-          "What is the WU Vienna WiSo entrance exam? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, two-stage process, and how to prepare.",
+          "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.",
       },
       {
         property: "og:title",
@@ -55,6 +65,11 @@ export const Route = createFileRoute("/wiso/entrance-exam")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna WiSo Entrance Exam: Format, Topics & Guide",
+        "What the WiSo Aufnahmeprüfung covers: structure, subjects, scoring, and how to prepare.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),

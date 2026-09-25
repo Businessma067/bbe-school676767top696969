@@ -17,12 +17,22 @@ import {
 } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso/mathematics" as const;
 
 export const Route = createFileRoute("/wiso/mathematics")({
   head: () => ({
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "Mathematics",
+        headline: "WU Vienna WiSo Mathematics: Topics, Syllabus & Practice",
+        description:
+          "What to study for WU Vienna WiSo mathematics: algebra, statistics, calculus, logical reasoning, formula fluency, and timed practice in German.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       { title: "WU Vienna WiSo Mathematics: Topics, Syllabus & Practice | BBE School" },
@@ -39,6 +49,11 @@ export const Route = createFileRoute("/wiso/mathematics")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna WiSo Mathematics: Topics & Practice",
+        "How WiSo mathematics works when WU publishes no official math skriptum, and how to prepare for accuracy and speed.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),

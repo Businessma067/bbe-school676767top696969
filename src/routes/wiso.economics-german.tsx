@@ -17,12 +17,22 @@ import {
 } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso/economics-german" as const;
 
 export const Route = createFileRoute("/wiso/economics-german")({
   head: () => ({
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "Economics & German",
+        headline: "WU Vienna WiSo Economics & German: What to Study",
+        description:
+          "What to study for WiSo economics (Wirtschaft verstehen chapters) and German reading comprehension: TOC, topics, myths, and how they differ from BBE.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       {
@@ -41,6 +51,11 @@ export const Route = createFileRoute("/wiso/economics-german")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna WiSo Economics & German: What to Study",
+        "Wirtschaft verstehen chapter guide plus academic German comprehension for the WiSo Aufnahmeprüfung.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),

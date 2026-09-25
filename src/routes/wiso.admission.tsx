@@ -12,12 +12,22 @@ import { WISO_EXAM_FORMAT, WISO_FORMAT_NOTE, WISO_PRACTICE_ROUTES } from "@/conf
 import { cn } from "@/lib/utils";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso/admission" as const;
 
 export const Route = createFileRoute("/wiso/admission")({
   head: () => ({
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "Admission",
+        headline: "WU Vienna WiSo Admission: Registration, OSA & Entrance Exam",
+        description:
+          "How WU Vienna WiSo admission works: registration window, €50 fee, ungraded OSA, Aufnahmeprüfung at VIECON, places, ranking, and enrollment.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       {
@@ -36,6 +46,11 @@ export const Route = createFileRoute("/wiso/admission")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna WiSo Admission & Application",
+        "Registration, OSA, exam, and enrollment for WiSo, with 2026 cycle dates you should still confirm on WU.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),

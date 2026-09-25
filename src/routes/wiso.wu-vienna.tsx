@@ -9,11 +9,21 @@ import { WisoExamShell, WisoSection, WisoStatGrid } from "@/components/wiso-exam
 import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { wisoGuideJsonLdScripts, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso/wu-vienna" as const;
 
 export const Route = createFileRoute("/wiso/wu-vienna")({
   head: () => ({
+    scripts: [
+      ...wisoGuideJsonLdScripts({
+        path: PATH,
+        crumb: "WU Vienna",
+        headline: "WU Vienna for WiSo Applicants",
+        description:
+          "Why WU Vienna matters for WiSo applicants: triple accreditation, German-taught bachelor scale, places, and how the entrance exam fits the university.",
+      }),
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       { title: "WU Vienna for WiSo Applicants | BBE School" },
@@ -29,6 +39,11 @@ export const Route = createFileRoute("/wiso/wu-vienna")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...wisoShareMeta(
+        PATH,
+        "WU Vienna for WiSo Applicants",
+        "Campus context for WiSo applicants preparing for the Aufnahmeprüfung.",
+      ),
       ...socialImageMetaForPath(PATH),
     ],
   }),
