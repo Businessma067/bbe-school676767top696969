@@ -132,14 +132,14 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mx-auto mt-8 grid max-w-5xl items-start gap-4 md:mt-10 md:grid-cols-2 md:gap-6">
+            <div className="mx-auto mt-8 flex max-w-5xl flex-col gap-4 md:mt-10 md:flex-row md:items-stretch md:gap-6">
               {EXAM_OPTIONS.map((exam) => {
                 const isWiso = exam.id === "wiso";
                 return (
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex flex-col rounded-2xl border p-5 sm:p-8",
+                      "flex min-h-0 w-full flex-1 flex-col rounded-2xl border p-5 sm:p-8",
                       isWiso
                         ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
                         : "border-border bg-card",
@@ -170,7 +170,7 @@ export function Index() {
                       </p>
                     </div>
                     <h2
-                      className="mt-4 font-display text-xl font-semibold text-foreground sm:text-2xl"
+                      className="mt-4 min-h-[3.25rem] font-display text-xl font-semibold leading-snug text-foreground sm:min-h-[4.75rem] sm:text-2xl sm:leading-snug"
                       data-no-i18n
                     >
                       {exam.title}
@@ -191,19 +191,21 @@ export function Index() {
                         </li>
                       ))}
                     </ul>
-                    <LocalizedLink
-                      to={exam.to}
-                      onClick={() => storeExamTrack(exam.id)}
-                      className={cn(
-                        "mt-6 inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
-                        isWiso
-                          ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
-                          : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
-                      )}
-                    >
-                      {exam.cta}
-                      <ArrowRight className="h-4 w-4" />
-                    </LocalizedLink>
+                    <div className="mt-auto pt-6">
+                      <LocalizedLink
+                        to={exam.to}
+                        onClick={() => storeExamTrack(exam.id)}
+                        className={cn(
+                          "inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+                          isWiso
+                            ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
+                            : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                        )}
+                      >
+                        {exam.cta}
+                        <ArrowRight className="h-4 w-4" />
+                      </LocalizedLink>
+                    </div>
                   </article>
                 );
               })}
