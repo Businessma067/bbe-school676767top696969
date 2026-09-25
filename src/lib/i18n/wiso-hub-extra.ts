@@ -534,6 +534,8 @@ export const wisoHubExtraDe: Record<string, string> = {
     "WiSo öffnet deutlich mehr Plätze als BBE, aber die schriftliche Prüfung sortiert trotzdem Tausende Menschen unter demselben Teilpunkte-Druck. Der Saal fühlt sich am Tag nicht weicher an.",
   "German is not only an exam section": "Deutsch ist nicht nur ein Prüfungsteil",
   "Why WiSo still wins on language": "Warum WiSo bei der Sprache trotzdem gewinnt",
+  "Why WiSo": "Warum WiSo",
+  "German": "Deutsch",
   "German is not only an exam section. If Austria or the wider DACH region is where you want to study and work, starting it on the Aufnahmeprüfung deadline is usually the cleaner move.":
     "Deutsch ist nicht nur ein Prüfungsteil. Wenn Österreich oder die weitere DACH-Region der Ort ist, an dem du studieren und arbeiten willst, ist der Start mit der Aufnahmeprüfungs-Deadline meist der sauberere Zug.",
   "Places on the same campus": "Plätze auf demselben Campus",
@@ -1209,6 +1211,8 @@ export const wisoHubExtraUk: Record<string, string> = {
     "WiSo відкриває значно більше місць, ніж BBE, але письмовий іспит усе одно відсіює тисячі людей під тим самим тиском часткових балів. У залі в день іспиту не легше.",
   "German is not only an exam section": "Німецька, це не лише розділ іспиту",
   "Why WiSo still wins on language": "Чому WiSo все одно виграє на мові",
+  "Why WiSo": "Чому WiSo",
+  "German": "Німецька",
   "German is not only an exam section. If Austria or the wider DACH region is where you want to study and work, starting it on the Aufnahmeprüfung deadline is usually the cleaner move.":
     "Німецька, це не лише розділ іспиту. Якщо Австрія чи ширший регіон DACH, місце, де ти хочеш вчитися й працювати, почати її на дедлайні Aufnahmeprüfung зазвичай чистіший хід.",
   "Places on the same campus": "Місця на тому самому кампусі",
