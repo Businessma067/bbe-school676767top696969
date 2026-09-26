@@ -2,6 +2,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { NewsPostFigure } from "@/components/news/NewsPostFigures";
 import { formatNewsDate, getNewsPost } from "@/data/news/posts";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -64,10 +65,23 @@ export function NewsPostPage() {
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{post.summary}</p>
           </header>
 
-          <div className="space-y-5 text-base leading-relaxed text-foreground">
-            {post.body.map((paragraph) => (
-              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-            ))}
+          <div className="text-base leading-relaxed text-foreground">
+            {post.body.map((block, index) => {
+              if (block.type === "figure") {
+                return (
+                  <NewsPostFigure
+                    key={`${block.id}-${index}`}
+                    id={block.id}
+                    caption={block.caption}
+                  />
+                );
+              }
+              return (
+                <p key={`p-${index}`} className="mb-5 last:mb-0">
+                  {block.text}
+                </p>
+              );
+            })}
           </div>
         </article>
       </main>
