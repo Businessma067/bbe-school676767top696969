@@ -1524,6 +1524,60 @@ body.flashcard-swiping {
   --news-demo-cycle: 5.5s;
 }
 
+/* Animated pointer + click pulse so the current action stays visible */
+.news-demo-cursor {
+  position: absolute;
+  z-index: 30;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  transform: translate(-18%, -12%);
+  transition:
+    left 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.18s ease;
+  filter: drop-shadow(0 1px 2px color-mix(in oklab, var(--foreground) 22%, transparent));
+}
+
+.news-demo-cursor.is-clicking {
+  transform: translate(-18%, -12%) scale(0.88);
+}
+
+.news-demo-click-ring {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid color-mix(in oklab, var(--foreground) 55%, transparent);
+  background: color-mix(in oklab, var(--foreground) 12%, transparent);
+  animation: news-demo-click-ring 0.55s ease-out;
+  pointer-events: none;
+}
+
+@keyframes news-demo-click-ring {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.35);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+/* Interactive flashcard demos drive flip via state, not the looping keyframe */
+.news-demo-card.news-demo-card-manual {
+  animation: none;
+  transition: transform 0.55s cubic-bezier(0.45, 0.05, 0.2, 1);
+  transform: rotateY(0deg);
+}
+
+.news-demo-card.news-demo-card-manual.is-flipped {
+  transform: rotateY(180deg);
+}
+
 .news-demo-fade-in {
   animation: news-demo-fade-in var(--news-demo-cycle) ease-in-out infinite;
 }
@@ -1875,8 +1929,22 @@ body.flashcard-swiping {
   .news-demo-tutor-choice-pick,
   .news-demo-tutor-ok,
   .news-demo-econ-row,
-  .news-demo-econ-mark {
+  .news-demo-econ-mark,
+  .news-demo-click-ring {
     animation: none !important;
+  }
+
+  .news-demo-cursor {
+    transition: none;
+  }
+
+  .news-demo-click-ring {
+    opacity: 0.55;
+    transform: scale(1.2);
+  }
+
+  .news-demo-card.news-demo-card-manual {
+    transition: none;
   }
 
   .news-demo-fade-in,
