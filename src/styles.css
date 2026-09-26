@@ -1522,64 +1522,80 @@ body.flashcard-swiping {
 /* News posts — smooth product UI demos (replace how-it-works videos) */
 .news-ui-demo {
   --news-demo-cycle: 5.5s;
-}
-
-/* Animated pointer + click pulse so the current action stays visible */
-.news-demo-cursor {
-  position: absolute;
-  z-index: 30;
-  width: 22px;
-  height: 22px;
-  pointer-events: none;
-  transform: translate(-18%, -12%);
-  transition:
-    left 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-    top 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.18s ease;
-  filter: drop-shadow(0 1px 2px color-mix(in oklab, var(--foreground) 22%, transparent));
-}
-
-.news-demo-cursor.is-clicking {
-  transform: translate(-18%, -12%) scale(0.88);
-}
-
-.news-demo-click-ring {
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  border: 2px solid color-mix(in oklab, var(--foreground) 55%, transparent);
-  background: color-mix(in oklab, var(--foreground) 12%, transparent);
-  animation: news-demo-click-ring 0.55s ease-out;
-  pointer-events: none;
-}
-
-@keyframes news-demo-click-ring {
-  0% {
-    opacity: 0.9;
-    transform: scale(0.35);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2.4);
-  }
-}
-
-/* Interactive flashcard demos drive flip via state, not the looping keyframe */
-.news-demo-card.news-demo-card-manual {
-  animation: none;
-  transition: transform 0.55s cubic-bezier(0.45, 0.05, 0.2, 1);
-  transform: rotateY(0deg);
-}
-
-.news-demo-card.news-demo-card-manual.is-flipped {
-  transform: rotateY(180deg);
+  --news-demo-accent: var(--foreground);
 }
 
 .news-demo-fade-in {
   animation: news-demo-fade-in var(--news-demo-cycle) ease-in-out infinite;
+}
+
+.news-demo-check-accent {
+  border-color: color-mix(in oklab, var(--foreground) 28%, transparent);
+  background: transparent;
+  animation: news-demo-check-accent var(--news-demo-cycle) ease-in-out infinite;
+}
+
+.news-demo-check-accent::after {
+  content: "";
+  display: block;
+  width: 0.35rem;
+  height: 0.55rem;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg) translate(-0.5px, -1px);
+  opacity: 0;
+  animation: news-demo-check-mark var(--news-demo-cycle) ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+.news-demo-weight-dot {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: news-demo-weight-dot 6.5s ease-in-out infinite;
+}
+
+.news-demo-match-site {
+  animation: news-demo-match-site 6s ease-in-out infinite;
+}
+
+.news-demo-match-tick {
+  opacity: 0;
+  animation: news-demo-match-tick 6s ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+.news-demo-tutor-progress {
+  width: 18%;
+  animation: news-demo-tutor-progress 6.5s ease-in-out infinite;
+}
+
+.news-demo-tutor-choice-site-pick {
+  animation-name: news-demo-tutor-choice-site-pick;
+}
+
+.news-demo-tutor-letter-pick {
+  animation: news-demo-tutor-letter-pick 6.5s ease-in-out infinite;
+}
+
+.news-demo-true-box {
+  border-color: var(--border);
+  background: var(--background);
+  color: transparent;
+  animation: news-demo-true-box var(--news-demo-cycle) ease-in-out infinite;
+}
+
+.news-demo-true-box-on {
+  animation-name: news-demo-true-box-on;
+}
+
+.news-demo-true-box svg {
+  opacity: 0;
+}
+
+.news-demo-true-box-on svg {
+  animation: news-demo-check-mark var(--news-demo-cycle) ease-in-out infinite;
+  animation-delay: inherit;
 }
 
 .news-demo-row {
@@ -1914,43 +1930,201 @@ body.flashcard-swiping {
   }
 }
 
+@keyframes news-demo-check-accent {
+  0%,
+  14% {
+    background: transparent;
+    border-color: color-mix(in oklab, var(--foreground) 28%, transparent);
+  }
+  28%,
+  100% {
+    background: var(--news-demo-accent);
+    border-color: var(--news-demo-accent);
+  }
+}
+
+@keyframes news-demo-check-mark {
+  0%,
+  22% {
+    opacity: 0;
+  }
+  32%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes news-demo-weight-dot {
+  0%,
+  12% {
+    left: 50%;
+    top: 50%;
+  }
+  35% {
+    left: 28%;
+    top: 38%;
+  }
+  58% {
+    left: 68%;
+    top: 42%;
+  }
+  80%,
+  100% {
+    left: 46%;
+    top: 62%;
+  }
+}
+
+@keyframes news-demo-match-site {
+  0%,
+  10% {
+    opacity: 0.45;
+    border-color: var(--border);
+    background: var(--card);
+    box-shadow: none;
+  }
+  22%,
+  38% {
+    opacity: 1;
+    border-color: transparent;
+    background: color-mix(in oklab, var(--news-demo-accent) 12%, white);
+    box-shadow: 0 0 0 2px var(--news-demo-accent);
+  }
+  52%,
+  100% {
+    opacity: 1;
+    border-color: #6ee7b7;
+    background: color-mix(in oklab, #10b981 10%, white);
+    box-shadow: none;
+    color: var(--foreground);
+  }
+}
+
+@keyframes news-demo-match-tick {
+  0%,
+  48% {
+    opacity: 0;
+    border-color: var(--border);
+    background: transparent;
+    color: transparent;
+  }
+  58%,
+  100% {
+    opacity: 1;
+    border-color: #10b981;
+    background: #10b981;
+    color: white;
+  }
+}
+
+@keyframes news-demo-tutor-progress {
+  0%,
+  12% {
+    width: 18%;
+  }
+  40%,
+  100% {
+    width: 48%;
+  }
+}
+
+@keyframes news-demo-tutor-choice-site-pick {
+  0%,
+  18% {
+    opacity: 0;
+    transform: translateY(0.3rem);
+    border-color: var(--border);
+    background: var(--card);
+  }
+  28%,
+  42% {
+    opacity: 1;
+    transform: translateY(0);
+    border-color: var(--border);
+    background: var(--card);
+  }
+  52%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    border-color: #6ee7b7;
+    background: color-mix(in oklab, #10b981 10%, white);
+  }
+}
+
+@keyframes news-demo-tutor-letter-pick {
+  0%,
+  42% {
+    border-color: var(--border);
+    background: var(--background);
+    color: var(--muted-foreground);
+  }
+  52%,
+  100% {
+    border-color: #10b981;
+    background: #10b981;
+    color: white;
+  }
+}
+
+@keyframes news-demo-true-box {
+  0%,
+  100% {
+    border-color: var(--border);
+    background: var(--background);
+  }
+}
+
+@keyframes news-demo-true-box-on {
+  0%,
+  18% {
+    border-color: var(--border);
+    background: var(--background);
+    color: transparent;
+  }
+  32%,
+  100% {
+    border-color: var(--foreground);
+    background: var(--foreground);
+    color: var(--background);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .news-demo-fade-in,
   .news-demo-row,
   .news-demo-check,
+  .news-demo-check-accent,
+  .news-demo-check-accent::after,
   .news-demo-count,
   .news-demo-cta,
   .news-demo-card,
   .news-demo-match-chip,
   .news-demo-match-line,
+  .news-demo-match-site,
+  .news-demo-match-tick,
   .news-demo-timer,
   .news-demo-tutor-q,
   .news-demo-tutor-choice,
   .news-demo-tutor-choice-pick,
+  .news-demo-tutor-choice-site-pick,
+  .news-demo-tutor-letter-pick,
+  .news-demo-tutor-progress,
   .news-demo-tutor-ok,
   .news-demo-econ-row,
   .news-demo-econ-mark,
-  .news-demo-click-ring {
+  .news-demo-true-box,
+  .news-demo-true-box-on,
+  .news-demo-true-box-on svg,
+  .news-demo-weight-dot {
     animation: none !important;
-  }
-
-  .news-demo-cursor {
-    transition: none;
-  }
-
-  .news-demo-click-ring {
-    opacity: 0.55;
-    transform: scale(1.2);
-  }
-
-  .news-demo-card.news-demo-card-manual {
-    transition: none;
   }
 
   .news-demo-fade-in,
   .news-demo-row,
   .news-demo-cta,
   .news-demo-match-chip,
+  .news-demo-match-site,
   .news-demo-tutor-q,
   .news-demo-tutor-choice,
   .news-demo-tutor-ok,
@@ -1965,9 +2139,37 @@ body.flashcard-swiping {
     transform: scaleX(1);
   }
 
-  .news-demo-check {
-    background: var(--foreground);
+  .news-demo-check,
+  .news-demo-check-accent {
+    background: var(--news-demo-accent, var(--foreground));
+    border-color: var(--news-demo-accent, var(--foreground));
+  }
+
+  .news-demo-check-accent::after,
+  .news-demo-match-tick,
+  .news-demo-true-box-on svg {
+    opacity: 1;
+  }
+
+  .news-demo-true-box-on {
     border-color: var(--foreground);
+    background: var(--foreground);
+    color: var(--background);
+  }
+
+  .news-demo-tutor-choice-site-pick {
+    border-color: #6ee7b7;
+    background: color-mix(in oklab, #10b981 10%, white);
+  }
+
+  .news-demo-tutor-letter-pick {
+    border-color: #10b981;
+    background: #10b981;
+    color: white;
+  }
+
+  .news-demo-tutor-progress {
+    width: 48%;
   }
 
   .news-demo-card {

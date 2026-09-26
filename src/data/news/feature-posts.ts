@@ -22,12 +22,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "A free account means email or Google signup. There is no credit card and no purchase required to take Demo Exam. After you finish, you can decide whether a paid course makes sense. The questions stay hard either way.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/demo-practice-product-v2.png",
-        alt: "BBE School practice product visual used around the Demo Exam launch",
+        type: "demo",
+        id: "economics",
         caption:
-          "The Demo Exam page uses the same practice style as the rest of the platform.",
+          "Demo Exam uses the same True/False practice chrome as the live economics tasks.",
       },
       {
         type: "p",
@@ -156,11 +154,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "We were asked for a simple list of when major features went live. Below is that list from May to September. It does not include every small fix. It covers the releases that changed how students practice. Open a row for a short note, and use the rest of the news feed for longer explanations.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/wu-vienna/campus-plaza.jpg",
-        alt: "WU Vienna campus plaza",
-        caption: "These releases were built for students preparing for WU Vienna.",
+        type: "demo",
+        id: "mock-builder",
+        caption:
+          "Ship diary in product terms: Custom Mock Builder is one of the tools that landed in this window.",
       },
       {
         type: "timeline",
@@ -254,12 +251,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "For a long time the site mainly told a BBE story, even though many visitors needed WiSo. On 27 August we opened a real WiSo track: its own hub, demo practice, course pages, and mock builder. Use the track switch in the header to move between BBE and WiSo. The practice pages then follow the path you chose. Note that the free BBE Demo Exam page does not have a WiSo twin yet.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/wu-vienna/library-learning-center.jpg",
-        alt: "WU Vienna library learning center",
+        type: "demo",
+        id: "flashcards",
         caption:
-          "Both tracks prepare students for WU Vienna, but the exams and languages are different.",
+          "WiSo study tools use the same flashcard stage as BBE — flip, rate, continue.",
       },
       {
         type: "tool",
@@ -272,11 +267,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "If you are preparing for WiSo, do not rely on BBE English practice as a substitute. If you are preparing for BBE, WiSo German economics rooms are not a shortcut. The study mindset can overlap, but the exams themselves are not the same.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/full-wiso-course-product-v3.png",
-        alt: "WiSo full course product artwork",
-        caption: "WiSo course artwork from the track launch.",
+        type: "demo",
+        id: "matching",
+        caption:
+          "Matching on the WiSo track uses the same board pattern as BBE Study tools.",
       },
       {
         type: "cta",
@@ -345,12 +339,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "We kept seeing the same problem: a student understands the topic, then loses points because the answer sheet format is unclear. Hiding that information in a long FAQ did not help enough. On 2 August we published a dedicated answer-sheet page so the official format is easier to find and easier to practise with.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/wu-vienna/teaching-center.jpg",
-        alt: "WU Vienna teaching center",
+        type: "demo",
+        id: "economics",
         caption:
-          "Content knowledge and sheet handling are different skills. Both matter on exam day.",
+          "Answer-sheet practice follows the same statement table students see in live tasks.",
       },
       {
         type: "steps",
@@ -408,12 +400,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Read the full scoring page once while you are calm. Then take a practice exam and compare your marking habits with the rules. The page will not take the exam for you, but it should remove unnecessary confusion about how points are calculated.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/how-it-works/economics-poster.jpg",
-        alt: "Economics practice poster",
+        type: "demo",
+        id: "economics",
         caption:
-          "Economics clusters are a common place for over-marking. The tool above shows the idea in a calm form.",
+          "Scoring rules apply to every True/False cluster — the live statement table in motion.",
       },
       {
         type: "cta",
@@ -492,11 +482,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "In the early full course, subjects were harder to separate. On 19 June we introduced clearer subject rooms for Full Course subscribers. It became easier to see where mathematics ends, where English begins, and where economics practice lives. That made navigation simpler and made daily practice more intentional.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/full-course-product-v2.png",
-        alt: "Full course product artwork",
-        caption: "Full course artwork from the subject-room launch.",
+        type: "demo",
+        id: "mock-builder",
+        caption:
+          "Subject rooms feed the same task banks Mock Builder uses for custom papers.",
       },
       {
         type: "steps",
@@ -524,11 +513,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         ],
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/how-it-works/math-poster.jpg",
-        alt: "Mathematics practice poster",
-        caption: "The mathematics room focuses on exam-style problem solving, including domains and careful case work.",
+        type: "demo",
+        id: "tutor-exam",
+        caption:
+          "Mathematics tutor mode: domain questions with lettered choices and short feedback.",
       },
       {
         type: "cta",
@@ -551,12 +539,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Earlier, students often received several links after buying a course and then had to find their way again later. On 4 June the dashboard became the main entrance: what you have access to, what you can open, and where study tools live.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/wu-vienna/library-interior.jpg",
-        alt: "WU Vienna library interior",
+        type: "demo",
+        id: "dashboard",
         caption:
-          "The dashboard is meant to be a clear map, so you can spend your attention on practice rather than navigation.",
+          "The dashboard remembers where you stopped and offers a direct continue path.",
       },
       {
         type: "steps",
@@ -604,11 +590,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "16 May was the first evening when students outside our team sat mock exams we could not change while they were taking them. Some scores were low. Some explanations needed corrections. We rewrote quickly and learned that publishing a hard paper is more demanding than planning one.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/how-it-works/economics-poster.jpg",
-        alt: "Economics mock atmosphere poster",
-        caption: "Launch-week practice artwork. The tasks behind it were intentionally demanding.",
+        type: "demo",
+        id: "economics",
+        caption:
+          "Launch-week mocks used the same hard True/False clusters students still practice today.",
       },
       {
         type: "figure",
@@ -647,11 +632,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "On 2 May we added a clearer choice on the homepage: BBE or WiSo. It looks simple, but it solved a real problem. Visitors who needed WiSo were no longer pushed into BBE pages by default, and parents could see the difference without writing a long message first.",
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/wu-vienna/audimax.jpg",
-        alt: "WU Vienna Audimax",
-        caption: "Same university, different entrance exams. The homepage now states that clearly.",
+        type: "demo",
+        id: "dashboard",
+        caption:
+          "After you choose BBE or WiSo, the product shell keeps that track in the dashboard and tools.",
       },
       {
         type: "tool",

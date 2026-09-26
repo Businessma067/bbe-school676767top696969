@@ -76,11 +76,10 @@ const CORE_POSTS: NewsPost[] = [
         ],
       },
       {
-        type: "media",
-        kind: "image",
-        src: "/wu-vienna/campus-plaza.jpg",
-        alt: "WU Vienna campus plaza",
-        caption: "These posts are written for students preparing for WU Vienna entrance exams.",
+        type: "demo",
+        id: "economics",
+        caption:
+          "News posts stay close to the live practice UI students use on the site.",
       },
       {
         type: "p",
