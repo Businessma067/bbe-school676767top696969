@@ -57,13 +57,13 @@ export function PartialCreditToy({ caption }: { caption: string }) {
 
   return (
     <ToolFrame
-      eyebrow="Try it"
-      title="Partial credit, floor at zero"
+      eyebrow="Interactive example"
+      title="Partial credit with a floor at zero"
       caption={caption}
     >
       <p className="mb-4 text-sm leading-relaxed" style={{ color: MUTED }}>
-        Five statements under one stem. Green means the statement is actually true. Tap to mark as if you
-        were in the room. Wrong marks cost you; blanks do not.
+        Five statements under one question. Each label shows whether the statement is true or false in
+        the key. Tap to mark an answer. Wrong marks reduce the score; blanks do not.
       </p>
       <ul className="space-y-2">
         {truths.map((isTrue, i) => (
@@ -111,7 +111,7 @@ export function PartialCreditToy({ caption }: { caption: string }) {
           </p>
         </div>
         <p className="max-w-[14rem] text-right text-xs leading-relaxed" style={{ color: MUTED }}>
-          Over-mark the false ones and watch the floor catch you at zero instead of going negative.
+          If you mark false statements, points are subtracted. The task score cannot go below zero.
         </p>
       </div>
     </ToolFrame>
@@ -140,7 +140,7 @@ export function FlashcardPeek({ caption }: { caption: string }) {
   const card = SAMPLE_CARDS[index]!;
 
   return (
-    <ToolFrame eyebrow="Study tool" title="Flip a sample card" caption={caption}>
+    <ToolFrame eyebrow="Study tool" title="Sample flashcard" caption={caption}>
       <button
         type="button"
         onClick={() => setFlipped((v) => !v)}
@@ -154,7 +154,7 @@ export function FlashcardPeek({ caption }: { caption: string }) {
           {flipped ? card.back : card.front}
         </p>
         <p className="mt-4 text-xs" style={{ color: MUTED }}>
-          Tap card to flip
+          Tap the card to flip it
         </p>
       </button>
       <div className="mt-3 flex items-center justify-between gap-2">
@@ -192,24 +192,24 @@ export function TrackCompareTool({ caption }: { caption: string }) {
   const copy =
     track === "bbe"
       ? {
-          title: "BBE path",
+          title: "BBE",
           points: [
-            "English-taught Bachelor’s Business and Economics track at WU.",
-            "Practice banks lean on English exam register plus math and economics claim clusters.",
-            "Demo Exam and BBE Mock Builder sit on this side of the header switch.",
+            "English-taught Business and Economics entrance path at WU.",
+            "Practice covers English, mathematics, and economics statement tasks.",
+            "Demo Exam and BBE Mock Builder are on this track.",
           ],
         }
       : {
-          title: "WiSo path",
+          title: "WiSo",
           points: [
             "German-language Wirtschafts- und Sozialwissenschaften entrance path.",
-            "Economics and German surfaces mirror the BBE idea without pretending the papers are twins.",
-            "WiSo demos, course rooms, and mock builder follow once you flip the track switch.",
+            "Practice focuses on German and economics surfaces for that exam.",
+            "WiSo demos, course pages, and mock builder follow this track.",
           ],
         };
 
   return (
-    <ToolFrame eyebrow="Chooser" title="Which door are you actually walking through?" caption={caption}>
+    <ToolFrame eyebrow="Compare" title="BBE or WiSo" caption={caption}>
       <div className="flex gap-2">
         {(
           [
@@ -257,10 +257,10 @@ export function BuilderMixTool({ caption }: { caption: string }) {
   const total = econ + math + eng;
 
   return (
-    <ToolFrame eyebrow="Builder sketch" title="Rough out a custom sitting" caption={caption}>
+    <ToolFrame eyebrow="Builder example" title="Example subject mix" caption={caption}>
       <p className="mb-4 text-sm leading-relaxed" style={{ color: MUTED }}>
-        This is not the live builder. It is the conversation we had before shipping: how heavy each
-        section feels when you assemble your own paper from the hard banks.
+        This is not the live Mock Builder. It simply shows how changing the number of tasks in each
+        subject changes the shape of a practice paper.
       </p>
       {(
         [
@@ -288,11 +288,11 @@ export function BuilderMixTool({ caption }: { caption: string }) {
         className="mt-2 rounded-md border px-3.5 py-3 text-sm"
         style={{ borderColor: RULE, background: "rgba(255,255,255,0.55)", color: MUTED }}
       >
-        Custom paper length:{" "}
+        Total length:{" "}
         <span className="font-display font-semibold" style={{ color: INK }}>
           {total} tasks
         </span>
-        . Comfortable mix or panic mix is your call. The banks stay hard either way.
+        . The live banks stay demanding regardless of the mix you choose.
       </div>
     </ToolFrame>
   );

@@ -25,52 +25,52 @@ const CORE_POSTS: NewsPost[] = [
     date: "2026-09-26",
     author: "BBE School creators",
     summary:
-      "We finally gave updates a home. Same people who break keys at midnight, writing in public when something actually matters.",
+      "A simple place for product updates, exam notes, and short explanations from the team behind BBE School.",
     body: [
       {
         type: "p",
-        text: "Alright. This page exists because I got tired of hunting our own updates in chat threads. A scoring tweak would land in Slack, a bank rewrite would hide in a release note shaped like a shopping list, and exam tips would rot in drafts while we fixed one more True/False mismatch. So here we are: a feed for the people building BBE School, written like we talk when nobody is filming a launch video.",
+        text: "We created this page so important updates have a clear home. Before this, small changes were easy to miss: a scoring note in chat, a task-bank rewrite in a release list, or a study tip left unfinished while we fixed something else.",
       },
       {
         type: "p",
-        text: "I am not going to pretend this is a magazine. If a sentence only exists to sound clever, delete energy. If a commit only renamed a button, it stays out. What belongs here is the stuff that changes how you practice this week: a mock that got harder for a reason, a feature that left the lab, a habit we keep seeing in reviews.",
+        text: "This is not a marketing blog, and it is not a full changelog. We will write here when something changes how you practice, how a mock feels, or how we prepare students for the WU entrance exams for BBE and WiSo.",
       },
       {
         type: "aside",
-        text: "If a post disagrees with the live product, trust the product and ping us. We would rather look wrong in a paragraph than leave you studying a ghost UI.",
+        text: "If a post does not match what you see in the live product, trust the product and tell us. These notes should follow the software.",
       },
       {
         type: "p",
-        text: "Tap the lanes below if you want the boring sorting rule we use. Most notes sit in one lane on purpose so you know what you are opening before you spend the coffee.",
+        text: "Most posts fall into one of three groups. You can open them below to see what each group means.",
       },
       {
         type: "lanes",
         caption:
-          "Product for shipped changes, exam craft for bank work, study notes for habits. Mixed posts happen, but we try not to make a salad out of every update.",
+          "Product posts cover shipped changes. Exam craft covers task banks and explanations. Study notes cover practical prep habits.",
         lanes: [
           {
             id: "product",
             label: "Product",
             tone: "#c45f1a",
-            blurb: "Shipped changes that affect practice, mocks, or the dashboard.",
+            blurb: "Updates that change practice, mocks, or the dashboard.",
             example:
-              "Demo Exam went public without an account wall, so a hard diagnostic no longer hides behind signup.",
+              "Demo Exam became available without an account, so you can try a hard practice exam before signing up.",
           },
           {
             id: "craft",
             label: "Exam craft",
             tone: "#3a5a78",
-            blurb: "How banks, keys, and explanations get rewritten.",
+            blurb: "How we rewrite tasks, answer keys, and step-by-step solutions.",
             example:
-              "We cut a stack of economics claims that only looked hard because the sentences were muddy.",
+              "We removed economics tasks that looked hard only because the wording was unclear.",
           },
           {
             id: "study",
             label: "Study notes",
             tone: "#3d6b5a",
-            blurb: "Short prep habits that still help the week before a sitting.",
+            blurb: "Short advice that still helps in the final week before the exam.",
             example:
-              "Strategic blanks often protect more BBE points than confident wrong marks.",
+              "On BBE scoring, leaving a statement blank is often safer than marking it when you are unsure.",
           },
         ],
       },
@@ -79,12 +79,11 @@ const CORE_POSTS: NewsPost[] = [
         kind: "image",
         src: "/wu-vienna/campus-plaza.jpg",
         alt: "WU Vienna campus plaza",
-        caption:
-          "We write these notes for people aiming at that campus, not for a generic edtech moodboard.",
+        caption: "These posts are written for students preparing for WU Vienna entrance exams.",
       },
       {
         type: "p",
-        text: "Scroll the older posts if you want the ship dates. We backfilled release notes we should have written in May through September, each with its own tools, clips, and charts. Not every Tuesday. Just the days that actually moved the product. If you are mid-course, treat this feed like a companion, not homework. If you are only looking around, it is a decent way to see how we think before you buy anything.",
+        text: "If you scroll further down the feed, you will also find older updates from May to September, with dates for when major features were released. If you already study with us, use this page when something new appears. If you are still deciding, it is a clear way to see how we work.",
       },
     ],
   },
@@ -94,97 +93,97 @@ const CORE_POSTS: NewsPost[] = [
     date: "2026-09-20",
     author: "BBE School creators",
     summary:
-      "Why the papers stay hard, what we weigh before a task ships, and why we throw away clusters that looked fine on Monday.",
+      "Why our practice exams stay difficult, what we check before a task is published, and why we remove many drafts.",
     body: [
       {
         type: "p",
-        text: "Someone asked again why our mocks feel meaner than half the practice packs floating around. Short version: we are not trying to tuck you into bed with a confidence score. A soft mock flatters you and then ghosts you on exam day. I would rather you leave practice annoyed and precise about where the points leaked.",
+        text: "People often ask why our mock exams feel harder than many other practice sets. The reason is simple: an easy mock can make you feel ready and then leave you unprepared on exam day. We prefer practice that feels close to the real exam, even if the score is lower at first.",
       },
       {
         type: "p",
-        text: "Inventing stems is the cute part of a bank rewrite. The week still disappears into domain checks, false candidates that almost work, keys that match the steps, and explanations you can read when you are tired. Skip those and the mock is not hard anymore. It is just noisy.",
+        text: "Writing new question stems is only one part of the work. Most of the time goes into checking topics, making sure false statements are clearly false for a good reason, matching True/False keys to the solutions, and writing explanations that are still readable under time pressure. If we skip those steps, the mock becomes confusing instead of useful.",
       },
       {
         type: "p",
-        text: "Open the checks if you want the same arguments we have in review. Any one of them can kill a task that looked clever in the draft folder.",
+        text: "Below are the main checks we use before a task goes live. Any one of them can stop a draft from being published.",
       },
       {
         type: "criteria",
         caption:
-          "Click around. False-candidate quality and readable steps blocked more tasks last pass than missing topics did.",
+          "Open each check to see why it matters. In our last major rewrite, weak false statements and unclear explanations blocked more tasks than missing topics.",
         intro:
-          "If two of these fail, the cluster usually goes back to draft instead of into a live demo.",
+          "If two of these checks fail, the task usually goes back to draft instead of into a live practice set.",
         criteria: [
           {
             id: "claim-shape",
-            title: "Do the claims almost work?",
+            title: "Are the statements realistic?",
             weight: "High",
             detail:
-              "A false statement should survive a quick skim. If you can reject it instantly because it is cartoonishly wrong, it is not exam-shaped yet.",
+              "A false statement should not be obviously wrong at first glance. A true statement should also not be too easy to spot from textbook wording alone.",
           },
           {
             id: "domain",
-            title: "Does the domain still match the map?",
+            title: "Does the math domain still matter?",
             weight: "High",
             detail:
-              "Pretty algebra means nothing if the discarded root was the point. We cut pretty stems that teach false shortcuts.",
+              "In mathematics, a clean calculation is not enough if the domain or a discarded root was the real point of the task. We remove tasks that teach the wrong shortcut.",
           },
           {
             id: "key-sync",
-            title: "Do keys and steps agree?",
+            title: "Do the key and the solution match?",
             weight: "Blocking",
             detail:
-              "If the True/False key and the stepped solution disagree, the task is out. No choosing between mark scheme and explanation.",
+              "If the True/False key and the step-by-step solution disagree, the task is removed. Students should never have to choose between them.",
           },
           {
             id: "partial-credit",
-            title: "Does scoring teach the right caution?",
+            title: "Does the scoring reward careful answers?",
             weight: "Medium",
             detail:
-              "Over-marking is part of the skill on statement clusters. We watch whether a task rewards careful blanks or confident wrong marks.",
+              "On statement clusters, marking too many options can lower your score. We check whether a task teaches careful selection rather than guessing.",
           },
           {
             id: "time-read",
-            title: "Can the explanation be read tired?",
+            title: "Is the explanation clear when you are tired?",
             weight: "Medium",
             detail:
-              "If the solution only makes sense when you already know the answer, rewrite it. The next step has to show up under time pressure.",
+              "If the solution only makes sense when you already know the answer, we rewrite it. The next step should be visible under exam conditions.",
           },
         ],
       },
       {
         type: "p",
-        text: "Volume is the other fight. Bigger banks are not automatically better. Last economics pass we drafted around forty clusters, kept about eighteen close to the first form, reworked eleven, and cut more than twenty that only looked hard because the wording was muddy. That cut rate is the product, not a tragedy.",
+        text: "We also do not keep every draft. A larger task bank is not always a better one. In the last economics rewrite we drafted about forty task clusters, kept about eighteen in a form close to the first version, reworked eleven, and removed more than twenty that only looked difficult because the wording was unclear.",
       },
       {
         type: "figure",
         id: "mock-keep-cut",
         caption:
-          "Illustrative counts from the last economics bank pass. Drafting is cheap. Deciding what stays in front of a student is not.",
+          "Example counts from the last economics bank rewrite. Writing drafts is easier than deciding which tasks should reach students.",
       },
       {
         type: "aside",
-        text: "If you need three readings just to parse the sentence, that is not exam difficulty. That is us being unclear.",
+        text: "If a task is hard only because the sentence is hard to read, that is not useful exam difficulty. We remove those tasks.",
       },
       {
         type: "p",
-        text: "We add a claim when it forces a decision you will actually meet in the room. Economics likes definition traps next to market logic. Math likes domains and discarded roots. English likes register that still bites when you are tired. We leave things out when we already teach the same slip three times, or when a false option only works if you misread a comma.",
+        text: "We add a statement when it reflects a real decision students face in the exam. In economics, that may be a definition next to a market-logic claim. In mathematics, it may be domains or discarded roots. In English, it may be vocabulary and grammar that still matter when you are tired. We leave things out when we already have several tasks teaching the same mistake.",
       },
       {
         type: "figure",
         id: "mock-rewrite-effort",
         caption:
-          "Where editor hours went last major pass. False-candidate hunting and step polish ate the week.",
+          "Where editing time went in the last major rewrite. Checking false statements and improving explanations took the most time.",
       },
       {
         type: "p",
-        text: "After a hard demo we stare at recoverable leaks more than the headline score. Math usually leads. Economics follows through over-marking. English stays quieter and stubborn. If the frustration has no lesson attached, we rewrite again. Slow on purpose.",
+        text: "After a hard practice exam, we look less at the total score and more at where points were lost for avoidable reasons. Mathematics usually shows the largest share. Economics often loses points through over-marking. English losses are usually smaller but still important. If a task only creates frustration without a clear lesson, we rewrite it.",
       },
       {
         type: "figure",
         id: "mock-score-leak",
         caption:
-          "Approximate avoidable point loss by section in recent high-difficulty demo reviews. One signal for what we add next.",
+          "Approximate share of avoidable point loss by section in recent hard demo reviews. This helps us decide what to improve next.",
       },
       {
         type: "media",
@@ -193,7 +192,7 @@ const CORE_POSTS: NewsPost[] = [
         poster: "/how-it-works/economics-poster.jpg",
         alt: "Economics practice how-it-works video",
         caption:
-          "A slice of how economics practice feels in product. The bank work behind that reel is what this post is really about.",
+          "A short look at how economics practice appears in the product. The careful bank work behind it is what this post describes.",
       },
     ],
   },

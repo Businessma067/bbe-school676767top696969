@@ -29,10 +29,10 @@ export function NewsShippingTimeline({ caption, entries }: Props) {
           className="text-[10px] font-semibold uppercase tracking-[0.22em]"
           style={{ color: MUTED }}
         >
-          Shipping diary
+          Release timeline
         </p>
         <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-          Dates we actually put things in front of students
+          Main release dates
         </p>
         <ol className="mt-5 space-y-0">
           {entries.map((entry, index) => {

@@ -30,10 +30,10 @@ export function NewsCriteriaExplorer({ caption, intro, criteria }: CriteriaExplo
           className="text-[10px] font-semibold uppercase tracking-[0.22em]"
           style={{ color: MUTED }}
         >
-          Open a check
+          Quality checks
         </p>
         <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-          What we weigh before something ships
+          What we check before a task is published
         </p>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: MUTED }}>
           {intro}
@@ -106,10 +106,10 @@ export function NewsFeedLanesExplorer({ caption, lanes }: FeedLanesProps) {
           className="text-[10px] font-semibold uppercase tracking-[0.22em]"
           style={{ color: MUTED }}
         >
-          Tap a lane
+          Post types
         </p>
         <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-          How we decide what belongs here
+          What kinds of posts appear here
         </p>
         <div className="mt-5 grid gap-2 sm:grid-cols-3">
           {lanes.map((lane) => {
@@ -152,7 +152,7 @@ export function NewsFeedLanesExplorer({ caption, lanes }: FeedLanesProps) {
               className="text-[10px] font-semibold uppercase tracking-[0.18em]"
               style={{ color: MUTED }}
             >
-              Example post shape
+              Example
             </p>
             <p className="mt-1.5 text-sm leading-relaxed" style={{ color: INK }}>
               {lanes.find((l) => l.id === openId)?.example}

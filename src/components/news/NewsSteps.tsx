@@ -25,7 +25,7 @@ export function NewsSteps({ title, caption, steps }: Props) {
     <figure className="my-8 overflow-hidden rounded-lg border border-border bg-card">
       <div className="bg-[var(--paper)] px-4 py-5 sm:px-6 sm:py-6">
         <p className="text-[10px] font-semibold uppercase tracking-[0.22em]" style={{ color: MUTED }}>
-          Walk through
+          Steps
         </p>
         <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
           {title}

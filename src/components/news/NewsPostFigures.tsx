@@ -61,10 +61,10 @@ export function NewsFeedMapFigure({ caption }: FigureProps) {
             className="text-[10px] font-semibold uppercase tracking-[0.22em]"
             style={{ color: MUTED }}
           >
-            Feed map
+            Overview
           </p>
           <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-            Three lanes, one place
+            Three post types
           </p>
         </div>
         <svg width="72" height="40" viewBox="0 0 72 40" aria-hidden="true" className="shrink-0 opacity-80">
@@ -151,14 +151,14 @@ export function MockRewriteEffortFigure({ caption }: FigureProps) {
             className="text-[10px] font-semibold uppercase tracking-[0.22em]"
             style={{ color: MUTED }}
           >
-            Bank rewrite pass
+            Task bank rewrite
           </p>
           <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-            Where the hours actually go
+            Where editing time went
           </p>
         </div>
         <p className="text-[11px]" style={{ color: MUTED }}>
-          Relative effort · last major pass
+          Relative effort, last major pass
         </p>
       </div>
       <div className="h-[220px] w-full sm:h-[260px]">
@@ -243,14 +243,14 @@ export function MockKeepCutFigure({ caption }: FigureProps) {
             className="text-[10px] font-semibold uppercase tracking-[0.22em]"
             style={{ color: MUTED }}
           >
-            Volume, not vibes
+            Draft outcomes
           </p>
           <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-            How much we add, how much we cut
+            How many tasks we kept or removed
           </p>
         </div>
         <p className="text-[11px]" style={{ color: MUTED }}>
-          Last economics bank pass · relative counts
+          Last economics bank pass, relative counts
         </p>
       </div>
       <div className="h-[220px] w-full sm:h-[250px]">
@@ -400,11 +400,11 @@ export function DemoSignupWallFigure({ caption }: FigureProps) {
     <FigureFrame caption={caption}>
       <div className="mb-3">
         <p className="text-[10px] font-semibold uppercase tracking-[0.22em]" style={{ color: MUTED }}>
-          Before the public door
-        </p>
-        <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-          Where curious visitors disappeared
-        </p>
+            Before the change
+          </p>
+          <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
+            Where visitors stopped
+          </p>
       </div>
       <div className="h-[220px] w-full sm:h-[250px]">
         <ResponsiveContainer width="100%" height="100%">
@@ -452,11 +452,11 @@ export function StudySessionFigure({ caption }: FigureProps) {
     <FigureFrame caption={caption}>
       <div className="mb-3">
         <p className="text-[10px] font-semibold uppercase tracking-[0.22em]" style={{ color: MUTED }}>
-          Session length
-        </p>
-        <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
-          Not every night is a mock night
-        </p>
+            Session length
+          </p>
+          <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
+            Typical practice session lengths
+          </p>
       </div>
       <div className="h-[200px] w-full sm:h-[230px]">
         <ResponsiveContainer width="100%" height="100%">
