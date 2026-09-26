@@ -275,83 +275,85 @@ export function DemoMockPage() {
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/85 via-background/92 to-background" aria-hidden />
 
-          <div className="relative mx-auto grid max-w-6xl gap-10 px-6 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-12 lg:px-8 lg:py-20">
-            <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-caramel-deep">
-                Free WU BBE diagnostic
-              </p>
-              <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
-                Free BBE mock exam online
-              </h1>
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure,
-                same 2-hour window, same partial-credit scoring. Free with an account; no credit
-                card.
-              </p>
+          <div className="relative mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-12">
+              <div>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-caramel-deep">
+                  Free WU BBE diagnostic
+                </p>
+                <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
+                  Free BBE mock exam online
+                </h1>
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                  A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure,
+                  same 2-hour window, same partial-credit scoring. Free with an account; no credit
+                  card.
+                </p>
 
-              <ul className="mt-6 space-y-2 text-sm text-foreground">
-                {[
-                  "34 questions · 159 points · 2 hours",
-                  "Economics, English, and Mathematics in one sitting",
-                  "Timed or untimed · digital answer sheet optional",
-                  "Score + full review after you submit",
-                ].map((line) => (
-                  <li key={line} className="flex items-start gap-2.5">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-caramel-deep" aria-hidden />
-                    <span>{line}</span>
-                  </li>
-                ))}
-              </ul>
+                <ul className="mt-6 space-y-2 text-sm text-foreground">
+                  {[
+                    "34 questions · 159 points · 2 hours",
+                    "Economics, English, and Mathematics in one sitting",
+                    "Timed or untimed · digital answer sheet optional",
+                    "Score + full review after you submit",
+                  ].map((line) => (
+                    <li key={line} className="flex items-start gap-2.5">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-caramel-deep" aria-hidden />
+                      <span>{line}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                {inProgress ? (
-                  <>
-                    <button
-                      type="button"
-                      onClick={resume}
-                      className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-semibold text-background transition-all hover:opacity-90"
-                    >
-                      <PlayCircle className="h-4 w-4" />
-                      Resume your demo exam
-                    </button>
-                    <button
-                      type="button"
-                      onClick={openStart}
-                      className="inline-flex items-center justify-center rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold transition-all hover:bg-secondary"
-                    >
-                      Start over…
-                    </button>
-                  </>
-                ) : (
+              <ExamCard
+                exam={DEMO}
+                best={bestAttempt}
+                inProgress={inProgress}
+                onStart={openStart}
+                onResume={resume}
+                featured
+              />
+            </div>
+
+            <div className="mt-12 flex flex-col items-center gap-3 text-center">
+              {inProgress ? (
+                <div className="flex w-full max-w-lg flex-col gap-3 sm:flex-row sm:justify-center">
+                  <button
+                    type="button"
+                    onClick={resume}
+                    className="inline-flex flex-1 items-center justify-center gap-3 rounded-xl bg-foreground px-10 py-5 text-lg font-semibold text-background shadow-lg transition-all hover:opacity-90 sm:text-xl"
+                  >
+                    <PlayCircle className="h-6 w-6 sm:h-7 sm:w-7" />
+                    Resume your demo exam
+                  </button>
                   <button
                     type="button"
                     onClick={openStart}
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-semibold text-background transition-all hover:opacity-90"
+                    className="inline-flex items-center justify-center rounded-xl border border-border bg-card px-6 py-5 text-base font-semibold transition-all hover:bg-secondary"
                   >
-                    <PlayCircle className="h-4 w-4" />
-                    {bestAttempt ? "Retake free demo exam" : "Start free demo exam"}
+                    Start over…
                   </button>
-                )}
-                <LocalizedLink
-                  to={BBE_PRACTICE_ROUTES.demo}
-                  className="inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold text-caramel-deep underline-offset-4 hover:underline"
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={openStart}
+                  className="inline-flex w-full max-w-lg items-center justify-center gap-3 rounded-xl bg-foreground px-10 py-5 text-lg font-semibold text-background shadow-lg transition-all hover:opacity-90 sm:text-xl"
                 >
-                  Or try subject practice first
-                </LocalizedLink>
-              </div>
-              <p className="mt-3 text-xs text-muted-foreground">
+                  <PlayCircle className="h-6 w-6 sm:h-7 sm:w-7" />
+                  {bestAttempt ? "Retake free demo exam" : "Start free demo exam"}
+                </button>
+              )}
+              <LocalizedLink
+                to={BBE_PRACTICE_ROUTES.demo}
+                className="inline-flex items-center justify-center rounded-md px-5 py-2 text-sm font-semibold text-caramel-deep underline-offset-4 hover:underline"
+              >
+                Or try subject practice first
+              </LocalizedLink>
+              <p className="text-xs text-muted-foreground">
                 Free account required to save progress — no credit card, no purchase.
               </p>
             </div>
-
-            <ExamCard
-              exam={DEMO}
-              best={bestAttempt}
-              inProgress={inProgress}
-              onStart={openStart}
-              onResume={resume}
-              featured
-            />
           </div>
         </section>
 
