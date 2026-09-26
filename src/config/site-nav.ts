@@ -184,6 +184,13 @@ function gamesItem(track: ExamTrack): NavItem {
   };
 }
 
+const newsItem: NavItem = {
+  label: "News",
+  href: "/news",
+  isRoute: true,
+  activePrefixes: ["/news"],
+};
+
 /** Chooser homepage (`/`) — short header set pointing at shared pages. */
 export function homepageNavItems(): NavItem[] {
   return [
@@ -194,12 +201,7 @@ export function homepageNavItems(): NavItem[] {
       activePrefixes: ["/bbe-vs-wiso"],
     },
     productsItem("bbe"),
-    {
-      label: "News",
-      href: "/news",
-      isRoute: true,
-      activePrefixes: ["/news"],
-    },
+    newsItem,
   ];
 }
 
@@ -219,12 +221,7 @@ export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
       isRoute: true,
       activePrefixes: track === "wiso" ? undefined : ["/important-features", "/features"],
     },
-    {
-      label: "News",
-      href: "/news",
-      isRoute: true,
-      activePrefixes: ["/news"],
-    },
+    newsItem,
     {
       label: "Reviews",
       href: track === "wiso" ? "/wiso#reviews" : "/bbe#reviews",
@@ -253,6 +250,7 @@ export function navItemsForAccess(
       mockExamsItem(track),
       mockBuilderItem(track),
       gamesItem(track),
+      newsItem,
     ];
   }
 
@@ -260,7 +258,7 @@ export function navItemsForAccess(
 
   const items: NavItem[] = [examInfoItem(track), productsItem(track), demoCourseItem(track)];
   if (access.hasFull) items.push(fullCourseItem);
-  items.push(mockExamsItem(track), mockBuilderItem(track), gamesItem(track));
+  items.push(mockExamsItem(track), mockBuilderItem(track), gamesItem(track), newsItem);
   return items;
 }
 
