@@ -199,6 +199,105 @@ export function MockRewriteEffortFigure({ caption }: FigureProps) {
   );
 }
 
+const KEEP_CUT = [
+  { bucket: "Drafted", count: 40 },
+  { bucket: "Kept", count: 18 },
+  { bucket: "Reworked", count: 11 },
+  { bucket: "Cut", count: 22 },
+];
+
+function KeepCutTooltip({
+  active,
+  payload,
+  label,
+}: {
+  active?: boolean;
+  payload?: Array<{ value: number }>;
+  label?: string;
+}) {
+  if (!active || !payload?.length) return null;
+  return (
+    <div
+      className="rounded-md px-3 py-2 text-xs shadow-md"
+      style={{
+        background: PAPER,
+        border: `1px solid ${RULE}`,
+        color: INK,
+      }}
+    >
+      <p className="font-semibold">{label}</p>
+      <p className="mt-0.5" style={{ color: MUTED }}>
+        ~{payload[0].value} tasks in the last economics bank pass
+      </p>
+    </div>
+  );
+}
+
+/** How many drafted tasks survive into a live bank. Illustrative. */
+export function MockKeepCutFigure({ caption }: FigureProps) {
+  return (
+    <FigureFrame caption={caption}>
+      <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
+        <div>
+          <p
+            className="text-[10px] font-semibold uppercase tracking-[0.22em]"
+            style={{ color: MUTED }}
+          >
+            Volume, not vibes
+          </p>
+          <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
+            How much we add, how much we cut
+          </p>
+        </div>
+        <p className="text-[11px]" style={{ color: MUTED }}>
+          Last economics bank pass · relative counts
+        </p>
+      </div>
+      <div className="h-[220px] w-full sm:h-[250px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+            data={KEEP_CUT}
+            margin={{ top: 8, right: 4, left: -18, bottom: 0 }}
+            barCategoryGap="28%"
+          >
+            <CartesianGrid stroke={`${INK}12`} vertical={false} />
+            <XAxis
+              dataKey="bucket"
+              tick={{ fill: MUTED, fontSize: 11 }}
+              axisLine={{ stroke: RULE }}
+              tickLine={false}
+            />
+            <YAxis
+              tick={{ fill: MUTED, fontSize: 11 }}
+              axisLine={false}
+              tickLine={false}
+              width={36}
+            />
+            <Tooltip content={<KeepCutTooltip />} cursor={{ fill: `${INK}06` }} />
+            <Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={44}>
+              {KEEP_CUT.map((row) => (
+                <Cell
+                  key={row.bucket}
+                  fill={
+                    row.bucket === "Kept"
+                      ? MINT
+                      : row.bucket === "Cut"
+                        ? EMBER
+                        : row.bucket === "Reworked"
+                          ? STEEL
+                          : INK
+                  }
+                  fillOpacity={row.bucket === "Drafted" ? 0.55 : 0.9}
+                />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </FigureFrame>
+  );
+}
+
 const SCORE_LEAK = [
   { section: "Econ", leak: 22 },
   { section: "English", leak: 14 },
@@ -291,6 +390,7 @@ export function MockScoreLeakFigure({ caption }: FigureProps) {
 const FIGURES = {
   "news-feed-map": NewsFeedMapFigure,
   "mock-rewrite-effort": MockRewriteEffortFigure,
+  "mock-keep-cut": MockKeepCutFigure,
   "mock-score-leak": MockScoreLeakFigure,
 } as const;
 

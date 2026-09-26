@@ -3,6 +3,10 @@ import { ArrowLeft } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { NewsPostFigure } from "@/components/news/NewsPostFigures";
+import {
+  NewsCriteriaExplorer,
+  NewsFeedLanesExplorer,
+} from "@/components/news/NewsPostInteractive";
 import { formatNewsDate, getNewsPost } from "@/data/news/posts";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -74,6 +78,45 @@ export function NewsPostPage() {
                     id={block.id}
                     caption={block.caption}
                   />
+                );
+              }
+              if (block.type === "criteria") {
+                return (
+                  <NewsCriteriaExplorer
+                    key={`criteria-${index}`}
+                    caption={block.caption}
+                    intro={block.intro}
+                    criteria={block.criteria}
+                  />
+                );
+              }
+              if (block.type === "lanes") {
+                return (
+                  <NewsFeedLanesExplorer
+                    key={`lanes-${index}`}
+                    caption={block.caption}
+                    lanes={block.lanes}
+                  />
+                );
+              }
+              if (block.type === "h2") {
+                return (
+                  <h2
+                    key={`h2-${index}`}
+                    className="mb-3 mt-10 font-display text-xl font-bold tracking-tight text-foreground first:mt-0 sm:text-2xl"
+                  >
+                    {block.text}
+                  </h2>
+                );
+              }
+              if (block.type === "aside") {
+                return (
+                  <aside
+                    key={`aside-${index}`}
+                    className="my-7 border-l-2 border-foreground/25 pl-4 text-[0.95rem] leading-relaxed text-muted-foreground"
+                  >
+                    {block.text}
+                  </aside>
                 );
               }
               return (
