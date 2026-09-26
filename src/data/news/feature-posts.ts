@@ -25,7 +25,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "demo",
         id: "economics",
         caption:
-          "Demo Exam uses the same True/False practice chrome as the live economics tasks.",
+          "Demo Exam uses the same True/False practice chrome as live economics tasks on the site.",
       },
       {
         type: "p",
