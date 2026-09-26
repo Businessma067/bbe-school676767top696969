@@ -206,7 +206,7 @@ export const WISO_MATH_FLASHCARD_SECTIONS: FlashcardSection[] = [
       { term: "Extremwertsatz", explanation: "Eine stetige Funktion auf einem abgeschlossenen, beschränkten Intervall $[a,b]$ nimmt ein globales Maximum und ein globales Minimum an." },
       { term: "Extrema auf $[a,b]$", explanation: "$f$ an kritischen Punkten in $(a,b)$ und an den Randpunkten $a$ und $b$ vergleichen." },
       { term: "Wendepunkt", explanation: "Ein Punkt, an dem sich die Krümmung ändert ($f''$ wechselt das Vorzeichen). Nicht notwendigerweise ein Extremum." },
-      { term: "Gewinnmaximierung (innerer Punkt)", explanation: "Für $\\pi(x)=R(x)-C(x)$ löst ein innerer Kandidat $\\pi'(x)=0$, d. h. $R'(x)=C'(x)$ (Grenzerlös $=$ Grenzkosten); danach zweiten Ableitungstest / Randpunkte prüfen." },
+      { term: "Gewinnmaximierung (innerer Punkt)", explanation: "Für $P(x)=R(x)-C(x)$ löst ein innerer Kandidat $P'(x)=0$, d. h. $R'(x)=C'(x)$ (Grenzerlös $=$ Grenzkosten); danach zweiten Ableitungstest / Randpunkte prüfen." },
     ],
   },
   {

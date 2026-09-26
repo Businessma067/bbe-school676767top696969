@@ -4877,7 +4877,7 @@ $$C(m)=5 m^{\\frac{4}{5}}$$`,
 
 The overview recovered
 
-$$\\Pi(L)=120 L^{\\frac{1}{2}}-6L$$
+$$P(L)=120 L^{\\frac{1}{2}}-6L$$
 
 That is a difference of two powers with different exponents, not a single monomial, so net gain is not a power function of hours hired.
 
@@ -4890,7 +4890,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Net gain is maximised where
 
-$$\\Pi'(L)=0$$
+$$P'(L)=0$$
 
 $$60 L^{-\\frac{1}{2}}=6
 $$
@@ -4899,7 +4899,7 @@ $$L=100$$
 
 Net gain is zero where
 
-$$\\Pi(L)=0$$
+$$P(L)=0$$
 
  on $L>0$:
 
@@ -4930,17 +4930,17 @@ So the statement is True.`,
 
 The overview recovered
 
-$$\\Pi(L)=120\\sqrt{L}-6L$$
+$$P(L)=120\\sqrt{L}-6L$$
 
 At $900$ hours:
 
-$$\\Pi(900)=120\\cdot 30-6\\cdot 900$$
+$$P(900)=120\\cdot 30-6\\cdot 900$$
 
-$$\\Pi(900)=3600-6\\cdot 900$$
+$$P(900)=3600-6\\cdot 900$$
 
-$$\\Pi(900)=3600-5400$$
+$$P(900)=3600-5400$$
 
-$$\\Pi(900)=-1800$$
+$$P(900)=-1800$$
 
 The claim compares this with $-1000$. We have $-1800<-1000$.
 
@@ -4976,7 +4976,7 @@ $$20A-10A=1200, \\qquad A=120$$
 
 The recovered revenue and net gain are
 
-$$R(L)=120 L^{\\frac{1}{2}}, \\qquad \\Pi(L)=120 L^{\\frac{1}{2}}-6L$$`,
+$$R(L)=120 L^{\\frac{1}{2}}, \\qquad P(L)=120 L^{\\frac{1}{2}}-6L$$`,
   },
   {
     id: `math-8-39`,
@@ -5600,7 +5600,7 @@ $$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}.$$`,
 
 Break-even is
 
-$$\\Pi(q)=0$$
+$$P(q)=0$$
 
 The overview recovered the two positive roots
 
@@ -5621,13 +5621,13 @@ Form the ratio so the unknown positive coefficient cancels.
 
 This is a level of profit at $25$ units. The overview recovered
 
-$$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$$
+$$P(q)=60 q^{\\frac{1}{2}}-2q-400$$
 
-$$\\Pi(25)=60\\cdot 5-50-400$$
+$$P(25)=60\\cdot 5-50-400$$
 
-$$\\Pi(25)=300-50-400$$
+$$P(25)=300-50-400$$
 
-$$\\Pi(25)=-150$$
+$$P(25)=-150$$
 
 Minus one hundred and fifty sits more than $100$ euros below zero.
 
@@ -5648,11 +5648,11 @@ $$q=400$$
 
 $$q=625$$
 
-$$\\Pi(625)=60\\cdot 25-1250-400$$
+$$P(625)=60\\cdot 25-1250-400$$
 
-$$\\Pi(625)=1500-1250-400$$
+$$P(625)=1500-1250-400$$
 
-$$\\Pi(625)=-150$$
+$$P(625)=-150$$
 
 Profit turns negative again.
 
@@ -5667,7 +5667,7 @@ $$R(q)=60 q^{\\frac{1}{2}}$$
 
  and
 
-$$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$$
+$$P(q)=60 q^{\\frac{1}{2}}-2q-400$$
 
 Revenue is a monomial in $q$. Profit subtracts both a linear term and a constant, so it is not a monomial.
 
@@ -5682,13 +5682,13 @@ Keep the stated domain in force while you evaluate the model.
 
 This is a level of profit at $225$ units. The overview recovered
 
-$$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$$
+$$P(q)=60 q^{\\frac{1}{2}}-2q-400$$
 
-$$\\Pi(225)=60\\cdot 15-450-400$$
+$$P(225)=60\\cdot 15-450-400$$
 
-$$\\Pi(225)=900-450-400$$
+$$P(225)=900-450-400$$
 
-$$\\Pi(225)=50$$
+$$P(225)=50$$
 
 Fifty does not sit above $80$.
 
@@ -5698,7 +5698,7 @@ So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 43,
-    solution_overview: `Revenue is $R(q)=A q^{\\frac{1}{2}}$ euros for $q>0$ units, with variable cost $2q$ and a fixed charge of $400$ euros. A run of $100$ units brought in $600$ euros of revenue. Profit is $\\Pi=R-2q-400$.
+    solution_overview: `Revenue is $R(q)=A q^{\\frac{1}{2}}$ euros for $q>0$ units, with variable cost $2q$ and a fixed charge of $400$ euros. A run of $100$ units brought in $600$ euros of revenue. Profit is $P=R-2q-400$.
 
 **Part 1: Translate.**
 
@@ -5714,9 +5714,9 @@ $$A=60$$
 
 The recovered revenue is $R(q)=60 q^{\\frac{1}{2}}$, and profit is
 
-$$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400.$$
+$$P(q)=60 q^{\\frac{1}{2}}-2q-400.$$
 
-Break-even is $\\Pi=0$. Set $t=q^{\\frac{1}{2}}$:
+Break-even is $P=0$. Set $t=q^{\\frac{1}{2}}$:
 
 $$60t-2t^{2}-400=0$$
 

@@ -11880,7 +11880,7 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-\\Pi_{12} = 1,902,375.45-1,703,043.55 = 199,331.90
+P_{12} = 1,902,375.45-1,703,043.55 = 199,331.90
 $$
 
 The computed value is approximately \\$199,331.90, which matches the claim.
@@ -11918,10 +11918,10 @@ $$s_{C,20} = 120,000\\frac{1.03^{20}-1}{0.03}$$
 $$\\approx 3,224,444.94$$
 
 $$
-\\Pi_{20} = 3,302,850.60-3,224,444.94 = 78,405.66
+P_{20} = 3,302,850.60-3,224,444.94 = 78,405.66
 $$
 
-The overview recovered $\\Pi_{12}=199,331.90$. Since $78,405.66<199,331.90$, the $20$-year profit sits below the $12$-year profit.
+The overview recovered $P_{12}=199,331.90$. Since $78,405.66<199,331.90$, the $20$-year profit sits below the $12$-year profit.
 
 So the statement is True.`,
     ],
@@ -11947,7 +11947,7 @@ $$
 k_C = 1.03
 $$
 
-Each finite total is $s_n=a\\frac{k^n-1}{k-1}$. Cumulative profit is $\\Pi_n=s_{R,n}-s_{C,n}$. The year-$t$ amount is $a_t=ak^{t-1}$.
+Each finite total is $s_n=a\\frac{k^n-1}{k-1}$. Cumulative profit is $P_n=s_{R,n}-s_{C,n}$. The year-$t$ amount is $a_t=ak^{t-1}$.
 
 **Part 2: Solve.**
 
@@ -11968,11 +11968,11 @@ s_{C,12} \\approx 1,703,043.55
 $$
 
 $$
-\\Pi_{12} = 1,902,375.45-1,703,043.55
+P_{12} = 1,902,375.45-1,703,043.55
 $$
 
 $$
-\\Pi_{12} = 199,331.90
+P_{12} = 199,331.90
 $$`,
   },
   {
