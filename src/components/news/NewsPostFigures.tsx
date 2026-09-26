@@ -443,7 +443,6 @@ const FIGURES = {
   "mock-rewrite-effort": MockRewriteEffortFigure,
   "mock-keep-cut": MockKeepCutFigure,
   "mock-score-leak": MockScoreLeakFigure,
-  "demo-signup-wall": DemoSignupWallFigure,
   "study-session-length": StudySessionFigure,
 } as const;
 
