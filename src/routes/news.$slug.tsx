@@ -7,6 +7,7 @@ import {
   NewsCriteriaExplorer,
   NewsFeedLanesExplorer,
 } from "@/components/news/NewsPostInteractive";
+import { NewsShippingTimeline } from "@/components/news/NewsShippingTimeline";
 import { formatNewsDate, getNewsPost } from "@/data/news/posts";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -96,6 +97,15 @@ export function NewsPostPage() {
                     key={`lanes-${index}`}
                     caption={block.caption}
                     lanes={block.lanes}
+                  />
+                );
+              }
+              if (block.type === "timeline") {
+                return (
+                  <NewsShippingTimeline
+                    key={`timeline-${index}`}
+                    caption={block.caption}
+                    entries={block.entries}
                   />
                 );
               }
