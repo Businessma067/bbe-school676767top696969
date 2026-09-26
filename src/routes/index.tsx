@@ -139,7 +139,7 @@ export function Index() {
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex min-h-0 w-full flex-1 flex-col rounded-2xl border p-5 sm:p-8",
+                      "flex w-full flex-1 flex-col rounded-2xl border p-5 sm:p-8",
                       isWiso
                         ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
                         : "border-border bg-card",
@@ -170,16 +170,19 @@ export function Index() {
                       </p>
                     </div>
                     <h2
-                      className="mt-4 min-h-[3.25rem] font-display text-xl font-semibold leading-snug text-foreground sm:min-h-[4.75rem] sm:text-2xl sm:leading-snug"
+                      className="mt-4 font-display text-xl font-semibold leading-snug text-foreground sm:text-2xl"
                       data-no-i18n
                     >
                       {exam.title}
                     </h2>
-                    <ul className="mt-5 space-y-2">
+                    <ul className={cn("mt-5", isWiso ? "space-y-2" : "space-y-3.5")}>
                       {exam.differences.map((item) => (
                         <li
                           key={item}
-                          className="flex items-start gap-2 text-sm text-foreground sm:text-[0.95rem]"
+                          className={cn(
+                            "flex items-start gap-2 text-foreground",
+                            isWiso ? "text-sm sm:text-[0.95rem]" : "text-[0.95rem] sm:text-base",
+                          )}
                         >
                           <span
                             className={cn(
