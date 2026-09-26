@@ -1,13 +1,16 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { NewsMedia } from "@/components/news/NewsMedia";
 import { NewsPostFigure } from "@/components/news/NewsPostFigures";
 import {
   NewsCriteriaExplorer,
   NewsFeedLanesExplorer,
 } from "@/components/news/NewsPostInteractive";
+import { NewsPostTool } from "@/components/news/NewsPostTools";
 import { NewsShippingTimeline } from "@/components/news/NewsShippingTimeline";
+import { NewsSteps } from "@/components/news/NewsSteps";
 import { formatNewsDate, getNewsPost } from "@/data/news/posts";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -107,6 +110,55 @@ export function NewsPostPage() {
                     caption={block.caption}
                     entries={block.entries}
                   />
+                );
+              }
+              if (block.type === "media") {
+                return (
+                  <NewsMedia
+                    key={`media-${index}`}
+                    kind={block.kind}
+                    src={block.src}
+                    poster={block.poster}
+                    alt={block.alt}
+                    caption={block.caption}
+                  />
+                );
+              }
+              if (block.type === "steps") {
+                return (
+                  <NewsSteps
+                    key={`steps-${index}`}
+                    title={block.title}
+                    caption={block.caption}
+                    steps={block.steps}
+                  />
+                );
+              }
+              if (block.type === "tool") {
+                return (
+                  <NewsPostTool key={`tool-${index}`} id={block.id} caption={block.caption} />
+                );
+              }
+              if (block.type === "cta") {
+                const [path, query] = block.href.split("?");
+                const search = query
+                  ? Object.fromEntries(new URLSearchParams(query))
+                  : undefined;
+                return (
+                  <div
+                    key={`cta-${index}`}
+                    className="my-8 rounded-lg border border-border bg-card px-4 py-4 sm:px-5"
+                  >
+                    <p className="text-sm leading-relaxed text-muted-foreground">{block.note}</p>
+                    <LocalizedLink
+                      to={path || "/"}
+                      search={search}
+                      className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-foreground hover:underline"
+                    >
+                      {block.label}
+                      <ArrowRight className="h-4 w-4" />
+                    </LocalizedLink>
+                  </div>
                 );
               }
               if (block.type === "h2") {

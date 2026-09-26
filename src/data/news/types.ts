@@ -54,6 +54,39 @@ export type NewsTimelineBlock = {
   }>;
 };
 
+export type NewsMediaBlock = {
+  type: "media";
+  kind: "image" | "video";
+  src: string;
+  poster?: string;
+  alt: string;
+  caption: string;
+};
+
+export type NewsStepsBlock = {
+  type: "steps";
+  title: string;
+  caption: string;
+  steps: Array<{
+    id: string;
+    title: string;
+    detail: string;
+  }>;
+};
+
+export type NewsToolBlock = {
+  type: "tool";
+  id: string;
+  caption: string;
+};
+
+export type NewsCtaBlock = {
+  type: "cta";
+  label: string;
+  href: string;
+  note: string;
+};
+
 export type NewsBodyBlock =
   | NewsParagraphBlock
   | NewsHeadingBlock
@@ -61,7 +94,11 @@ export type NewsBodyBlock =
   | NewsFigureBlock
   | NewsCriteriaBlock
   | NewsLanesBlock
-  | NewsTimelineBlock;
+  | NewsTimelineBlock
+  | NewsMediaBlock
+  | NewsStepsBlock
+  | NewsToolBlock
+  | NewsCtaBlock;
 
 export type NewsPost = {
   slug: string;

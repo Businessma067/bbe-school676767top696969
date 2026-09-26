@@ -5,12 +5,16 @@ export type {
   NewsAsideBlock,
   NewsBodyBlock,
   NewsCriteriaBlock,
+  NewsCtaBlock,
   NewsFigureBlock,
   NewsHeadingBlock,
   NewsLanesBlock,
+  NewsMediaBlock,
   NewsParagraphBlock,
   NewsPost,
+  NewsStepsBlock,
   NewsTimelineBlock,
+  NewsToolBlock,
 } from "./types";
 
 /** Static creator posts — edit this file / feature-posts.ts to publish. */
@@ -71,8 +75,16 @@ const CORE_POSTS: NewsPost[] = [
         ],
       },
       {
+        type: "media",
+        kind: "image",
+        src: "/wu-vienna/campus-plaza.jpg",
+        alt: "WU Vienna campus plaza",
+        caption:
+          "We write these notes for people aiming at that campus, not for a generic edtech moodboard.",
+      },
+      {
         type: "p",
-        text: "Scroll the older posts if you want the ship dates. We backfilled a bunch of release notes we should have written in May, June, July, August. Not every Tuesday. Just the days that actually moved the product. If you are mid-course, treat this feed like a companion, not homework. If you are only looking around, it is a decent way to see how we think before you buy anything.",
+        text: "Scroll the older posts if you want the ship dates. We backfilled release notes we should have written in May through September, each with its own tools, clips, and charts. Not every Tuesday. Just the days that actually moved the product. If you are mid-course, treat this feed like a companion, not homework. If you are only looking around, it is a decent way to see how we think before you buy anything.",
       },
     ],
   },
@@ -173,6 +185,15 @@ const CORE_POSTS: NewsPost[] = [
         id: "mock-score-leak",
         caption:
           "Approximate avoidable point loss by section in recent high-difficulty demo reviews. One signal for what we add next.",
+      },
+      {
+        type: "media",
+        kind: "video",
+        src: "/how-it-works/economics.mp4",
+        poster: "/how-it-works/economics-poster.jpg",
+        alt: "Economics practice how-it-works video",
+        caption:
+          "A slice of how economics practice feels in product. The bank work behind that reel is what this post is really about.",
       },
     ],
   },

@@ -24,56 +24,56 @@ export const newsExtraDe: Record<string, string> = {
     "Warum die Papers hart bleiben, worauf wir vor dem Ship achten und warum wir Cluster streichen, die am Montag noch gut wirkten.",
 
   "Demo Exam is open without an account": "Demo Exam ist ohne Konto offen",
-  "We pushed the hard diagnostic mock onto a public page so you can feel the sitting before you buy anything.":
-    "Der harte Diagnose-Mock liegt jetzt öffentlich, damit du die Prüfung spürst, bevor du etwas kaufst.",
+  "We tore down the signup wall on the hard diagnostic mock. Here is why, what you will feel in the sitting, and how to read the score without spiraling.":
+    "Wir haben die Signup-Wand am harten Diagnose-Mock eingerissen. Warum, was du in der Prüfung spürst, und wie du den Score ohne Drama liest.",
 
   "Mock Builder left the lab": "Mock Builder hat das Labor verlassen",
-  "Custom mocks stopped being an internal toy. You can assemble a sitting from the live banks instead of waiting on our next fixed paper.":
-    "Custom Mocks sind kein internes Spielzeug mehr. Du baust eine Prüfung aus den Live-Banks, statt auf unser nächstes Fixed Paper zu warten.",
+  "Custom mocks stopped being an internal stress toy. Watch how it moves, sketch a mix, and steal the workflow we use before a bank ships.":
+    "Custom Mocks sind kein internes Stress-Spielzeug mehr. Sieh, wie es läuft, skizziere einen Mix und nimm unseren Workflow vor dem Bank-Ship.",
 
   "What shipped since May, in one messy timeline":
     "Was seit Mai gelauncht wurde, in einer unordentlichen Timeline",
-  "A click-through diary of the bigger releases: first mocks, dashboard, tutor mode, WiSo, study tools, answer sheet, builder, demo exam.":
-    "Ein Klick-Tagebuch der größeren Releases: erste Mocks, Dashboard, Tutor-Modus, WiSo, Study Tools, Answer Sheet, Builder, Demo Exam.",
+  "A click-through shipping diary with the campus backdrop, the release spine from May to September, and the posts where each feature gets a longer telling.":
+    "Ein Klick-Shipping-Tagebuch mit Campus, Release-Spine von Mai bis September und den Posts, in denen jede Feature länger erzählt wird.",
 
   "WiSo track is live next to BBE": "Der WiSo-Track ist neben BBE live",
-  "Same school, second exam. German economics path, its own demos and mocks, and a header switch that actually means something now.":
-    "Dieselbe School, zweite Prüfung. Deutscher Economics-Pfad, eigene Demos und Mocks, und ein Header-Switch, der jetzt wirklich etwas bedeutet.",
+  "We stopped pretending one product politely covers two entrance exams. Here is what the track switch actually changes, with a chooser you can poke.":
+    "Wir tun nicht mehr so, als decke ein Produkt höflich zwei Aufnahmeprüfungen ab. Was der Track-Switch wirklich ändert — mit Chooser zum Antippen.",
 
   "Flashcards and Matching landed in Study tools":
     "Flashcards und Matching sind in den Study Tools",
-  "For the evenings when a full mock is too much but rereading notes is too little.":
-    "Für Abende, an denen ein voller Mock zu viel ist, aber Notizen nochmal lesen zu wenig.",
+  "Short-session tools for evenings that cannot carry a full mock. Flip a sample card, watch the reel, and keep them in their lane.":
+    "Kurz-Session-Tools für Abende ohne vollen Mock. Karte drehen, Reel ansehen, und sie in ihrer Spur lassen.",
 
   "We shipped a page just for the answer sheet":
     "Wir haben eine Seite nur für den Answer Sheet gebaut",
-  "Too many people were losing points to format confusion, so the official answer-sheet explainer got its own home.":
-    "Zu viele Punkte gingen durch Format-Verwirrung verloren, also bekam der Answer-Sheet-Explainer ein eigenes Zuhause.",
+  "Format confusion was eating known content. So the official answer-sheet explainer got daylight, steps, and no more FAQ burial.":
+    "Format-Verwirrung hat bekanntes Wissen gefressen. Der Answer-Sheet-Explainer bekam Licht, Schritte und kein FAQ-Grab mehr.",
 
   "Scoring without the fog": "Scoring ohne Nebel",
-  "Partial credit, floors at zero, worked examples. The scoring page stopped being a rumor and became a walkthrough.":
-    "Partial Credit, Floor bei null, durchgerechnete Beispiele. Die Scoring-Seite ist kein Gerücht mehr, sondern ein Walkthrough.",
+  "Partial credit, floors at zero, worked examples. Poke a mini scoring toy, then go read the full page while you are still calm.":
+    "Partial Credit, Floor bei null, Beispiele. Spiel mit dem Mini-Scoring-Toy, dann lies die volle Seite, solange du ruhig bist.",
 
   "Tutor exam mode for tighter loops": "Tutor-Exam-Modus für engere Loops",
-  "A subject sitting when you want feedback faster than a full mock review and slower than a single drill.":
-    "Ein Subject-Sitting, wenn Feedback schneller als ein volles Mock-Review und langsamer als ein einzelner Drill sein soll.",
+  "A middle gear between single drills and full papers. Watch the reel, steal the loop, and do not live here forever.":
+    "Ein Mittelgang zwischen Drills und vollen Papers. Reel ansehen, Loop klauen, und nicht für immer hier wohnen.",
 
   "Full course got real subject rooms": "Full Course hat echte Subject-Rooms",
-  "Math, English, and Economics stopped sharing one vague doorway. Each subject got a room with its own practice path.":
-    "Mathe, English und Economics teilen sich nicht mehr eine vage Tür. Jedes Fach hat einen eigenen Practice-Pfad.",
+  "Math, English, and Economics stopped sharing one vague doorway. Here is the artwork, the room logic, and why the blob had to die.":
+    "Mathe, English und Economics teilen sich nicht mehr eine vage Tür. Artwork, Room-Logik, und warum der Blob sterben musste.",
 
   "A dashboard that remembers where you left the mess":
     "Ein Dashboard, das merkt, wo du das Chaos gelassen hast",
-  "Course access, study tools, and the trail of what you already attempted, in one place instead of a pile of bookmarks.":
-    "Kurszugang, Study Tools und die Spur dessen, was du schon versucht hast — an einem Ort statt in einem Haufen Bookmarks.",
+  "We used to send six links after purchase and act surprised when people got lost. June 4 made the dashboard the front door.":
+    "Früher schickten wir nach dem Kauf sechs Links und wunderten uns, wenn Leute sich verirrten. Am 4. Juni wurde das Dashboard zur Haustür.",
 
   "First hard mocks went live": "Die ersten harten Mocks gingen live",
-  "The day we stopped calling the papers a prototype and let them bruise people on purpose.":
-    "Der Tag, an dem wir Papers nicht mehr Prototyp nannten und sie absichtlich wehtun ließen.",
+  "The night strangers sat papers we could not patch mid-sitting. Bruises, angry-correct replies, and the keep-or-cut habit that stuck.":
+    "Die Nacht, in der Fremde Papers saßen, die wir mittendrin nicht patchen konnten. Prellungen, wütend-richtige Replies, und der Keep-or-Cut-Habit.",
 
   "The homepage finally asks BBE or WiSo": "Die Homepage fragt endlich BBE oder WiSo",
-  "Before the WiSo track was fully built, we at least stopped funneling every visitor into the same exam story.":
-    "Bevor der WiSo-Track fertig war, haben wir wenigstens aufgehört, jeden Besucher in dieselbe Exam-Story zu schicken.",
+  "Two doors, one school. Poke the compare tool, look at campus, and choose the exam you are actually sitting before you buy a course.":
+    "Zwei Türen, eine School. Compare-Tool antippen, Campus ansehen, und die Prüfung wählen, die du wirklich schreibst, bevor du einen Kurs kaufst.",
 };
 
 export const newsExtraUk: Record<string, string> = {
@@ -98,54 +98,54 @@ export const newsExtraUk: Record<string, string> = {
     "Чому пейпери лишаються жорсткими, що зважаємо перед шипом і чому ріжемо кластери, які в понеділок здавалися нормальними.",
 
   "Demo Exam is open without an account": "Demo Exam відкритий без акаунта",
-  "We pushed the hard diagnostic mock onto a public page so you can feel the sitting before you buy anything.":
-    "Жорсткий діагностичний мок вийшов на публічну сторінку, щоб ти відчув іспит до покупки.",
+  "We tore down the signup wall on the hard diagnostic mock. Here is why, what you will feel in the sitting, and how to read the score without spiraling.":
+    "Ми зірвали signup-стіну з жорсткого діагностичного мока. Чому, що відчуєш на сітінгу, і як читати скор без спіралі.",
 
   "Mock Builder left the lab": "Mock Builder вийшов з лабораторії",
-  "Custom mocks stopped being an internal toy. You can assemble a sitting from the live banks instead of waiting on our next fixed paper.":
-    "Кастомні моки більше не внутрішня іграшка. Збираєш сітінг з живих банків, а не чекаєш наш наступний фіксований пейпер.",
+  "Custom mocks stopped being an internal stress toy. Watch how it moves, sketch a mix, and steal the workflow we use before a bank ships.":
+    "Кастомні моки більше не внутрішня стресова іграшка. Дивись, як рухається, накидай мікс і забери наш workflow перед шипом банку.",
 
   "What shipped since May, in one messy timeline":
     "Що зашили з травня — в одній неохайній таймлайні",
-  "A click-through diary of the bigger releases: first mocks, dashboard, tutor mode, WiSo, study tools, answer sheet, builder, demo exam.":
-    "Клікабельний щоденник більших релізів: перші моки, дашборд, tutor mode, WiSo, study tools, answer sheet, builder, demo exam.",
+  "A click-through shipping diary with the campus backdrop, the release spine from May to September, and the posts where each feature gets a longer telling.":
+    "Клікабельний shipping-щоденник з кампусом, хребтом релізів з травня по вересень і постами, де кожна фіча розказана довше.",
 
   "WiSo track is live next to BBE": "Трек WiSo живий поруч із BBE",
-  "Same school, second exam. German economics path, its own demos and mocks, and a header switch that actually means something now.":
-    "Та сама школа, другий іспит. Німецький economics-шлях, свої демо й моки, і свічер у хедері, який тепер справді щось означає.",
+  "We stopped pretending one product politely covers two entrance exams. Here is what the track switch actually changes, with a chooser you can poke.":
+    "Ми більше не робимо вигляд, що один продукт ввічливо покриває два вступні іспити. Що реально міняє свічер треку — з chooser’ом.",
 
   "Flashcards and Matching landed in Study tools":
     "Flashcards і Matching з’явились у Study tools",
-  "For the evenings when a full mock is too much but rereading notes is too little.":
-    "Для вечорів, коли повний мок — забагато, а перечитувати нотатки — замало.",
+  "Short-session tools for evenings that cannot carry a full mock. Flip a sample card, watch the reel, and keep them in their lane.":
+    "Короткі інструменти для вечорів без повного мока. Переверни картку, подивись reel і лишай їх у своїй смузі.",
 
   "We shipped a page just for the answer sheet":
     "Ми зробили сторінку саме під answer sheet",
-  "Too many people were losing points to format confusion, so the official answer-sheet explainer got its own home.":
-    "Занадто багато балів зникало через плутанину з форматом, тож explainer отримав окремий дім.",
+  "Format confusion was eating known content. So the official answer-sheet explainer got daylight, steps, and no more FAQ burial.":
+    "Плутанина з форматом з’їдала відомий контент. Explainer отримав світло, кроки і більше ніякого FAQ-поховання.",
 
   "Scoring without the fog": "Скоринг без туману",
-  "Partial credit, floors at zero, worked examples. The scoring page stopped being a rumor and became a walkthrough.":
-    "Partial credit, підлога на нулі, розібрані приклади. Сторінка скорингу перестала бути чуткою і стала walkthrough.",
+  "Partial credit, floors at zero, worked examples. Poke a mini scoring toy, then go read the full page while you are still calm.":
+    "Partial credit, підлога на нулі, приклади. Потикай міні-іграшку скорингу, тоді читай повну сторінку, поки спокійний.",
 
   "Tutor exam mode for tighter loops": "Tutor exam mode для щільніших циклів",
-  "A subject sitting when you want feedback faster than a full mock review and slower than a single drill.":
-    "Предметний сітінг, коли фідбек потрібен швидше за повний мок-рев’ю і повільніше за один дрил.",
+  "A middle gear between single drills and full papers. Watch the reel, steal the loop, and do not live here forever.":
+    "Середня передача між дрилами й повними пейперами. Дивись reel, забери loop і не живи тут вічно.",
 
   "Full course got real subject rooms": "Full course отримав нормальні кімнати предметів",
-  "Math, English, and Economics stopped sharing one vague doorway. Each subject got a room with its own practice path.":
-    "Math, English і Economics більше не ділять одні розмиті двері. Кожен предмет має свій practice path.",
+  "Math, English, and Economics stopped sharing one vague doorway. Here is the artwork, the room logic, and why the blob had to die.":
+    "Math, English і Economics більше не ділять одні розмиті двері. Арт, логіка кімнат і чому blob мав померти.",
 
   "A dashboard that remembers where you left the mess":
     "Дашборд, який пам’ятає, де ти покинув хаос",
-  "Course access, study tools, and the trail of what you already attempted, in one place instead of a pile of bookmarks.":
-    "Доступ до курсу, study tools і слід того, що вже пробував — в одному місці, а не в купі букмарків.",
+  "We used to send six links after purchase and act surprised when people got lost. June 4 made the dashboard the front door.":
+    "Раніше після покупки ми слали шість лінків і дивувались, що люди губляться. 4 червня дашборд став парадним входом.",
 
   "First hard mocks went live": "Перші жорсткі моки вийшли в лайв",
-  "The day we stopped calling the papers a prototype and let them bruise people on purpose.":
-    "День, коли ми перестали називати пейпери прототипом і дозволили їм навмисно бити.",
+  "The night strangers sat papers we could not patch mid-sitting. Bruises, angry-correct replies, and the keep-or-cut habit that stuck.":
+    "Ніч, коли чужі сіли пейпери, які ми не могли патчити посеред сітінгу. Синяки, злі-але-правильні реплаї і звичка keep-or-cut.",
 
   "The homepage finally asks BBE or WiSo": "Головна нарешті питає BBE чи WiSo",
-  "Before the WiSo track was fully built, we at least stopped funneling every visitor into the same exam story.":
-    "Ще до повного WiSo-треку ми хоча б перестали гнати кожного відвідувача в ту саму історію іспиту.",
+  "Two doors, one school. Poke the compare tool, look at campus, and choose the exam you are actually sitting before you buy a course.":
+    "Двоє дверей, одна школа. Потикай compare, глянь на кампус і обери іспит, який реально здаєш, перш ніж купувати курс.",
 };

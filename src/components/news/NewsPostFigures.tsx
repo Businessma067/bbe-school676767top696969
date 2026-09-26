@@ -387,11 +387,117 @@ export function MockScoreLeakFigure({ caption }: FigureProps) {
   );
 }
 
+const SIGNUP_WALL = [
+  { step: "Landed", people: 100 },
+  { step: "Saw wall", people: 100 },
+  { step: "Made email", people: 41 },
+  { step: "Finished mock", people: 18 },
+];
+
+/** Why we ripped the account wall off Demo Exam. Illustrative funnel. */
+export function DemoSignupWallFigure({ caption }: FigureProps) {
+  return (
+    <FigureFrame caption={caption}>
+      <div className="mb-3">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.22em]" style={{ color: MUTED }}>
+          Before the public door
+        </p>
+        <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
+          Where curious visitors disappeared
+        </p>
+      </div>
+      <div className="h-[220px] w-full sm:h-[250px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={SIGNUP_WALL} margin={{ top: 8, right: 4, left: -18, bottom: 0 }} barCategoryGap="28%">
+            <CartesianGrid stroke={`${INK}12`} vertical={false} />
+            <XAxis dataKey="step" tick={{ fill: MUTED, fontSize: 11 }} axisLine={{ stroke: RULE }} tickLine={false} />
+            <YAxis tick={{ fill: MUTED, fontSize: 11 }} axisLine={false} tickLine={false} width={36} />
+            <Tooltip
+              content={({ active, payload, label }) => {
+                if (!active || !payload?.length) return null;
+                return (
+                  <div className="rounded-md border px-3 py-2 text-xs" style={{ background: PAPER, borderColor: RULE }}>
+                    <p className="font-semibold">{label}</p>
+                    <p style={{ color: MUTED }}>~{String(payload[0]?.value)} of 100 curious visitors</p>
+                  </div>
+                );
+              }}
+              cursor={{ fill: `${INK}06` }}
+            />
+            <Bar dataKey="people" radius={[4, 4, 0, 0]} maxBarSize={44}>
+              {SIGNUP_WALL.map((row) => (
+                <Cell
+                  key={row.step}
+                  fill={row.step === "Finished mock" ? MINT : row.step === "Made email" ? EMBER : INK}
+                  fillOpacity={row.step === "Landed" || row.step === "Saw wall" ? 0.45 : 0.9}
+                />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </FigureFrame>
+  );
+}
+
+const STUDY_MINUTES = [
+  { mode: "Full mock", mins: 95 },
+  { mode: "Tutor", mins: 38 },
+  { mode: "Cards", mins: 12 },
+  { mode: "Matching", mins: 9 },
+];
+
+export function StudySessionFigure({ caption }: FigureProps) {
+  return (
+    <FigureFrame caption={caption}>
+      <div className="mb-3">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.22em]" style={{ color: MUTED }}>
+          Session length
+        </p>
+        <p className="mt-1 font-display text-lg font-semibold" style={{ color: INK }}>
+          Not every night is a mock night
+        </p>
+      </div>
+      <div className="h-[200px] w-full sm:h-[230px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={STUDY_MINUTES} layout="vertical" margin={{ top: 4, right: 12, left: 8, bottom: 0 }} barCategoryGap="28%">
+            <CartesianGrid stroke={`${INK}12`} horizontal={false} />
+            <XAxis type="number" tick={{ fill: MUTED, fontSize: 11 }} axisLine={{ stroke: RULE }} tickLine={false} tickFormatter={(v) => `${v}m`} />
+            <YAxis type="category" dataKey="mode" tick={{ fill: INK, fontSize: 12, fontWeight: 600 }} axisLine={false} tickLine={false} width={72} />
+            <Tooltip
+              content={({ active, payload, label }) => {
+                if (!active || !payload?.length) return null;
+                return (
+                  <div className="rounded-md border px-3 py-2 text-xs" style={{ background: PAPER, borderColor: RULE }}>
+                    <p className="font-semibold">{label}</p>
+                    <p style={{ color: MUTED }}>~{String(payload[0]?.value)} minutes median session</p>
+                  </div>
+                );
+              }}
+              cursor={{ fill: `${INK}06` }}
+            />
+            <Bar dataKey="mins" radius={[0, 4, 4, 0]} maxBarSize={22}>
+              {STUDY_MINUTES.map((row) => (
+                <Cell
+                  key={row.mode}
+                  fill={row.mode === "Full mock" ? EMBER : row.mode === "Tutor" ? STEEL : MINT}
+                />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </FigureFrame>
+  );
+}
+
 const FIGURES = {
   "news-feed-map": NewsFeedMapFigure,
   "mock-rewrite-effort": MockRewriteEffortFigure,
   "mock-keep-cut": MockKeepCutFigure,
   "mock-score-leak": MockScoreLeakFigure,
+  "demo-signup-wall": DemoSignupWallFigure,
+  "study-session-length": StudySessionFigure,
 } as const;
 
 export type NewsFigureId = keyof typeof FIGURES;
