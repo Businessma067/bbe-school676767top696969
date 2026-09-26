@@ -37,7 +37,6 @@ import { LoginPage } from "@/routes/login";
 import { SignupPage } from "@/routes/signup";
 import { ResetPasswordPage } from "@/routes/reset-password";
 import { AccountPage } from "@/routes/account";
-import { DashboardRoutePage } from "@/routes/dashboard";
 import { PaymentSuccessPage } from "@/routes/payment.success";
 import { PaymentFailedPage } from "@/routes/payment.failed";
 
@@ -79,7 +78,6 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/signup": SignupPage,
   "/reset-password": ResetPasswordPage,
   "/account": AccountPage,
-  "/dashboard": DashboardRoutePage,
   "/payment/success": PaymentSuccessPage,
   "/payment/failed": PaymentFailedPage,
 };

@@ -7,6 +7,13 @@ import {
 import type { ExamQuestion } from "@/lib/mock-exams";
 import type { CustomMockRow, CustomMockSummary } from "./types";
 
+/** List/dashboard columns only — never pull `questions` (can be MBs per user). */
+const CUSTOM_MOCK_SUMMARY_COLS =
+  "id, subject, title, chapters, question_count, duration_minutes, points_total, created_at";
+
+const CUSTOM_MOCK_FULL_COLS =
+  "id, user_id, subject, title, chapters, question_count, duration_minutes, points_total, questions, created_at";
+
 function mapRow(row: {
   id: string;
   user_id: string;
@@ -33,30 +40,37 @@ function mapRow(row: {
   };
 }
 
-export function toCustomMockSummary(row: CustomMockRow): CustomMockSummary {
+export function toCustomMockSummary(row: {
+  id: string;
+  subject: string;
+  title: string;
+  chapters: string[];
+  question_count: number;
+  duration_minutes: number;
+  points_total: number;
+  created_at: string;
+}): CustomMockSummary {
   return {
     id: row.id,
     examId: customMockExamId(row.id),
     title: row.title,
     subject: row.subject,
-    chapters: row.chapters,
+    chapters: row.chapters ?? [],
     questionCount: row.question_count,
     durationMinutes: row.duration_minutes,
-    pointsTotal: row.points_total,
+    pointsTotal: Number(row.points_total),
     createdAt: row.created_at,
   };
 }
 
-async function fetchCustomMockRows(): Promise<CustomMockRow[]> {
+async function fetchCustomMockSummariesFromDb(): Promise<CustomMockSummary[]> {
   const { data: session } = await supabase.auth.getSession();
   const userId = session.session?.user?.id;
   if (!userId) return [];
 
   const { data, error } = await supabase
     .from("custom_mocks")
-    .select(
-      "id, user_id, subject, title, chapters, question_count, duration_minutes, points_total, questions, created_at",
-    )
+    .select(CUSTOM_MOCK_SUMMARY_COLS)
     .eq("user_id", userId)
     .order("created_at", { ascending: false });
 
@@ -65,23 +79,24 @@ async function fetchCustomMockRows(): Promise<CustomMockRow[]> {
     return [];
   }
 
-  return (data ?? []).map((row) => mapRow(row as never));
+  return (data ?? []).map((row) => toCustomMockSummary(row as never));
 }
 
 /** BBE Custom Mock Builder history (excludes WiSo-prefixed subjects). */
 export async function fetchCustomMocks(): Promise<CustomMockSummary[]> {
-  const rows = await fetchCustomMockRows();
-  return rows
-    .filter((row) => !isWisoCustomMockDbSubject(row.subject))
-    .map(toCustomMockSummary);
+  const rows = await fetchCustomMockSummariesFromDb();
+  return rows.filter((row) => !isWisoCustomMockDbSubject(row.subject));
 }
 
 /** WiSo Custom Mock Builder history. */
 export async function fetchWisoCustomMocks(): Promise<CustomMockSummary[]> {
-  const rows = await fetchCustomMockRows();
-  return rows
-    .filter((row) => isWisoCustomMockDbSubject(row.subject))
-    .map(toCustomMockSummary);
+  const rows = await fetchCustomMockSummariesFromDb();
+  return rows.filter((row) => isWisoCustomMockDbSubject(row.subject));
+}
+
+/** One query for dashboard Custom Mocks tab (BBE + WiSo), newest first. */
+export async function fetchAllCustomMockSummaries(): Promise<CustomMockSummary[]> {
+  return fetchCustomMockSummariesFromDb();
 }
 
 export async function fetchCustomMockById(id: string): Promise<CustomMockRow | null> {
@@ -91,9 +106,7 @@ export async function fetchCustomMockById(id: string): Promise<CustomMockRow | n
 
   const { data, error } = await supabase
     .from("custom_mocks")
-    .select(
-      "id, user_id, subject, title, chapters, question_count, duration_minutes, points_total, questions, created_at",
-    )
+    .select(CUSTOM_MOCK_FULL_COLS)
     .eq("id", id)
     .eq("user_id", userId)
     .maybeSingle();
