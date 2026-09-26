@@ -16,7 +16,7 @@
       "**D.** → Falsch\n\n$$A\\setminus C=\\{a,a+2,a+4\\},\\qquad |A\\setminus C|=3$$\n\nDie Antragslisten $\\{a,a+2\\}$ mit Größe $2$, wobei fälschlich weggelassen wird: $a+4$.\n\nDer Vergleich der behaupteten Mächtigkeit $2$ mit der berechneten Mächtigkeit $3$ widerlegt die Aussage bereits, unabhängig von der Aufzählungsformulierung.\n\nAllein der Größenvergleich verwirft die Behauptung bereits:\n\n$$|A\\setminus C|=3\\neq 2$$\n\nund das fehlende Element $a+4$ liegt in $A$, aber nicht in $C$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nmit $a=3$: $B=\\{7,9,11,13,15\\}$, $C=\\{9,11,13,15,17\\}$.\n\n$$B\\cap C=\\{9,11,13,15\\},\\ |B\\cap C|=4$$\n\nAußerdem $5\\notin B$ und $5\\notin C$, so $5\\notin B\\cap C$.\n\nGleichwertig aus der parametrischen Formel $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n$$\n\\{9,11,13,15\\}\n$$\n\nund $5$ steht nicht in dieser Liste.\n\nGleichwertig aus der parametrischen Formel $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n$$\n\\{9,11,13,15\\}\n$$\n\nund $5$ steht nicht in dieser Liste.\n\nAus der parametrischen Überlappung $B\\cap C=\\{a+6,a+8,a+10,a+12\\}$ at $a=3$:\n\n$$\\{9,11,13,15\\}$$\n\nWeder $5$ noch eine ungerade ganze Zahl außerhalb dieser Aufzählung gehört zum Schnitt.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Gemeinsame Zwischenresultate:\n\n $$A\\cap B=\\{a+4,a+6,a+8\\},\\ |A\\cap B|=3;$$ \n\n $$A\\cup C=\\{a,a+2,\\ldots,a+14\\},\\ |A\\cup C|=8;$$ \n\n $$(A\\cap B)\\cap C=\\{a+6,a+8\\};\\ A\\setminus C=\\{a,a+2,a+4\\};$$ \n\n $$B\\cap C=\\{a+6,a+8,a+10,a+12\\}.$$ \n\nDie Probe $a=3$ wird in diese Formeln eingesetzt."
+    "solution_overview": "Gemeinsame Zwischenresultate:\n\n $$A\\cap B=\\{a+4,a+6,a+8\\},\\ |A\\cap B|=3;$$\n\n $$A\\cup C=\\{a,a+2,\\ldots,a+14\\},\\ |A\\cup C|=8;$$\n\n $$(A\\cap B)\\cap C=\\{a+6,a+8\\};\\ A\\setminus C=\\{a,a+2,a+4\\};$$\n\n $$B\\cap C=\\{a+6,a+8,a+10,a+12\\}.$$\n\nDie Probe $a=3$ wird in diese Formeln eingesetzt."
   },
   "MATH 1.02": {
     "title": "Parametrische Mengenbeschreibungen und ein quadratischer Filter",
@@ -35,7 +35,7 @@
       "**D.** → Richtig\n\n$k=5$: $A=\\{-5,5\\}$, $D=\\{10,15\\}$.\n\n$$A\\cup D=\\{-5,5,10,15\\},\\ |A\\cup D|=4,\\ 0\\notin A\\cup D$$\n\nDie vier Ganzzahlen $-5,5,10,15$ sind paarweise unterschiedlich, so dass die Vereinigungsgröße genau ist $4$ und keiner von ihnen ist $0$.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$A\\cap C=\\{k\\}$$\n\nund $-k\\notin\\mathbb{N}$ für $k\\ge 2$, so $-k\\notin C$.\n\nSeit $C\\subseteq A$ mit $C=\\{k\\}$ Der Schnittmenge bricht ein $\\{k\\}$, und die negative Wurzel wird durch die $\\mathbb{N}$ Filter.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": " $$x^{2}=k^{2}\\implies A=\\{-k,k\\}=B,\\ |A|=2;\\ C=\\{k\\}.$$ \n\n $$x^{2}-5kx+6k^{2}=(x-2k)(x-3k)\\implies D=\\{2k,3k\\}.$$ \n\nShared: $A=B=\\{-k,k\\}$, $C=\\{k\\}$, $D=\\{2k,3k\\}$.\n\nDie Buchstaben nutzen diese gewonnenen Werte neu und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "$$x^{2}=k^{2}\\implies A=\\{-k,k\\}=B,\\ |A|=2;\\ C=\\{k\\}.$$\n\n $$x^{2}-5kx+6k^{2}=(x-2k)(x-3k)\\implies D=\\{2k,3k\\}.$$\n\nShared: $A=B=\\{-k,k\\}$, $C=\\{k\\}$, $D=\\{2k,3k\\}$."
   },
   "MATH 1.03": {
     "title": "Potenzmenge einer parametrischen dreielementigen Menge",
@@ -54,7 +54,7 @@
       "**D.** → Falsch\n\n$S\\subseteq S$ auf $S\\neq S$ versagt, so $S\\not\\subsetneq S$.\n\nBy definition $X\\subsetneq Y$ means $X\\subseteq Y$ und es existiert $y\\in Y\\setminus X$. Taking $X=Y=S$ makes $Y\\setminus X=\\emptyset$ So scheitert die Richtigkeit.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$n=7$: $S=\\{7,8,9\\}$, $\\{7,9\\}\\subseteq S$ so $\\{7,9\\}\\in\\mathcal{P}(S)$, und $|\\mathcal{P}(S)|=8=2^{3}$.\n\nmit $n=7$, die Teilmenge $\\{7,9\\}$ omits $8$ Beide Elemente liegen in $S=\\{7,8,9\\}$ Somit gehört es zu $\\mathcal{P}(S)$ of size $8$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": " $|S|=3$ so $|\\mathcal{P}(S)|=2^{3}=8$ Jede Teilmenge von $S$ lies in $\\mathcal{P}(S)$; $\\emptyset$ is always included. Membership $\\in$ unterscheidet sich von $\\subseteq$. $\\binom{3}{2}=3$ zählt die $2$ -Untergruppen. Kein Set ist eine richtige Teilmenge von sich selbst. Mit $n=7$, $S=\\{7,8,9\\}$."
+    "solution_overview": "$|S|=3$ so $|\\mathcal{P}(S)|=2^{3}=8$ Jede Teilmenge von $S$ lies in $\\mathcal{P}(S)$; $\\emptyset$ is always included. Membership $\\in$ unterscheidet sich von $\\subseteq$. $\\binom{3}{2}=3$ zählt die $2$ -Untergruppen. Kein Set ist eine richtige Teilmenge von sich selbst. Mit $n=7$, $S=\\{7,8,9\\}$."
   },
   "MATH 1.04": {
     "title": "Zugehörigkeit versus Teilmenge bei einer gemischt-typisierten parametrischen Menge",
@@ -73,7 +73,7 @@
       "**D.** → Falsch\n\n$\\{t,t+1\\}\\in M$ but $t+1\\notin M$, so $\\{t,t+1\\}\\not\\subseteq M$.\n\nDie Obstruktion ist spezifisch $t+1\\notin M$ Die Zugehörigkeit des Paares als ein einziges Objekt stellt seine inneren Elemente nicht in $M$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$t=2$: $M=\\{2,\\{2\\},\\{2,3\\}\\}$. Then $2\\in M$ und $\\{\\{2\\}\\}\\subseteq M$ weil $\\{2\\}\\in M$.\n\nExplicitly $\\{\\{2\\}\\}=\\{x:x=\\{2\\}\\}$ und $\\{2\\}\\in M$, was genau die Definition von $\\{\\{2\\}\\}\\subseteq M$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": " $M$ has three distinct objects: number $t$, singleton $\\{t\\}$, pair $\\{t,t+1\\}$ Ein Real ist nie gleich einer Menge, also $|M|=3$. Shared: $t\\in M$, $\\{t\\}\\in M$, $\\{t,t+1\\}\\in M$ Unterteilung erfordert, dass jedes Element der linken Seite in $M$."
+    "solution_overview": "$M$ has three distinct objects: number $t$, singleton $\\{t\\}$, pair $\\{t,t+1\\}$ Ein Real ist nie gleich einer Menge, also $|M|=3$. Shared: $t\\in M$, $\\{t\\}\\in M$, $\\{t,t+1\\}\\in M$ Unterteilung erfordert, dass jedes Element der linken Seite in $M$."
   },
   "MATH 1.05": {
     "title": "Parametrische Differenz, Vereinigungsmächtigkeit und symmetrische Differenz",
@@ -92,7 +92,7 @@
       "**D.** → Richtig\n\n$$P\\triangle Q=\\{m,m+1,m+5,m+6\\},\\ |P\\triangle Q|=4$$\n\nDie symmetrische Differenz schließt die dreielementige Überlappung aus und lässt $7-3=4$ Elemente übrig, in Übereinstimmung mit $2+2=4$.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$m=10$: $P\\cap Q=\\{12,13,14\\}$, also $12\\in P\\cap Q$; $16\\notin P$, da $\\max P=14$.\n\nFür $m=10$ beginnt die Überlappung bei $12$ und endet bei $14$, während $16$ zwei Schritte hinter $\\max P=14$ liegt.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "$$P\\cap Q=\\{m+2,m+3,m+4\\},\\ |P\\cap Q|=3;$$\n\n$$P\\setminus Q=\\{m,m+1\\},\\ Q\\setminus P=\\{m+5,m+6\\};$$\n\n$$|P\\cup Q|=5+5-3=7;\\ |P\\triangle Q|=4.$$\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "$$P\\cap Q=\\{m+2,m+3,m+4\\},\\ |P\\cap Q|=3;$$\n\n$$P\\setminus Q=\\{m,m+1\\},\\ Q\\setminus P=\\{m+5,m+6\\};$$\n\n$$|P\\cup Q|=5+5-3=7;\\ |P\\triangle Q|=4.$$"
   },
   "MATH 1.06": {
     "title": "Drei parametrische Mengen und vollständige Inklusion-Exklusion",
@@ -111,7 +111,7 @@
       "**D.** → Richtig\n\n$$4+4+4-2-1-3+1=7=|A\\cup B\\cup C|$$\n\nJeder IE-Term wurde aus den Aufzählungen ermittelt; Einsetzen liefert $12-6+1=7$ und stimmt mit der Länge der Vereinigung überein.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$r=5$: dreifacher Schnitt $\\{8\\}$; $11=r+6\\in C$, aber $11\\notin A$.\n\nBei $r=5$ ist das einzige gemeinsame Element $8$, und $11$ liegt unter den drei Mengen nur in $C$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "$$A\\cap B=\\{r+2,r+3\\}\\ (|A\\cap B|=2);\\ A\\cap C=\\{r+3\\};$$\n\n$$B\\cap C=\\{r+3,r+4,r+5\\}\\ (|B\\cap C|=3);\\ A\\cap B\\cap C=\\{r+3\\}.$$\n\nIE: $4+4+4-2-1-3+1=7$. Vereinigung $=\\{r,\\ldots,r+6\\}$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "$$A\\cap B=\\{r+2,r+3\\}\\ (|A\\cap B|=2);\\ A\\cap C=\\{r+3\\};$$\n\n$$B\\cap C=\\{r+3,r+4,r+5\\}\\ (|B\\cap C|=3);\\ A\\cap B\\cap C=\\{r+3\\}.$$\n\nIE: $4+4+4-2-1-3+1=7$. Vereinigung $=\\{r,\\ldots,r+6\\}$."
   },
   "MATH 1.07": {
     "title": "Zwei-Kurs-Belegung mit parametrisierten Teilnehmerzahlen",
@@ -130,7 +130,7 @@
       "**D.** → Falsch\n\nNeither count is $40-a$. At $a=10$:\n\n$$40-10=30$$\n\n$$30\\ge 35$$\n\nist falsch.\n\nKeine Zählung $40-a$ gleich $30$ at $a=10$, und $30$ Fehlt die Schwelle $35$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$|E\\setminus S|=25,\\qquad |S\\setminus E|=40$$\n\n$$25\\neq 40$$\n\nfür jeden $a$ Die Gleichheit hält also nie.\n\nDie beiden einseitigen Unterschiede sind ständig $25$ und $40$, die für jedes zulässige ungleich sind $a$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": " $$|E\\cup S|=(a+40)+(a+55)-(a+15)=a+80.$$ \n\n $$|E\\setminus S|=25,\\quad |S\\setminus E|=40,\\quad |U\\setminus(E\\cup S)|=40-a.$$ \n\nmit $a=10$: Union $90$, beide $25$, neither $30$.\n\nDie Buchstaben nutzen diese gewonnenen Werte neu und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "$$|E\\cup S|=(a+40)+(a+55)-(a+15)=a+80.$$\n\n $$|E\\setminus S|=25,\\quad |S\\setminus E|=40,\\quad |U\\setminus(E\\cup S)|=40-a.$$\n\nmit $a=10$: Union $90$, beide $25$, neither $30$."
   },
   "MATH 1.08": {
     "title": "Paarweise disjunkte Blöcke und eine Partition eines parametrischen Universums",
@@ -168,7 +168,7 @@
       "**D.** → Falsch\n\nAt $k=4$: $|A^{c}\\cup B^{c}|=42-4=38$.\n\n$$38>40$$\n\nist falsch.\n\nim $k=4$, $|A^{c}\\cup B^{c}|=42-4=38$, und $38>40$ versagt.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$|A\\setminus B|=|A|-|A\\cap B|=(18+k)-(8+k)=10$$\n\nIndependent of $k$; at $k=4$ Der Unterschied hat immer noch Größe $10$.\n\nDifferenzgröße $(18+k)-(8+k)=10$ is independent of $k$, so it remains $10$ at $k=4$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": " $$|A\\cup B|=(18+k)+(22+k)-(8+k)=32+k.$$ \n\n $$|A^{c}|=50-(18+k)=32-k,\\ |B^{c}|=28-k.$$ \n\n $$|(A\\cup B)^{c}|=50-(32+k)=18-k=|A^{c}\\cap B^{c}|.$$ \n\n $$|A^{c}\\cup B^{c}|=|(A\\cap B)^{c}|=50-(8+k)=42-k.$$ \n\n $$|A\\setminus B|=(18+k)-(8+k)=10.$$ \n\nAt $k=4$: Unionszulage $14$, $|A^{c}\\cup B^{c}|=38$."
+    "solution_overview": "$$|A\\cup B|=(18+k)+(22+k)-(8+k)=32+k.$$\n\n $$|A^{c}|=50-(18+k)=32-k,\\ |B^{c}|=28-k.$$\n\n $$|(A\\cup B)^{c}|=50-(32+k)=18-k=|A^{c}\\cap B^{c}|.$$\n\n $$|A^{c}\\cup B^{c}|=|(A\\cap B)^{c}|=50-(8+k)=42-k.$$\n\n $$|A\\setminus B|=(18+k)-(8+k)=10.$$\n\nAt $k=4$: Unionszulage $14$, $|A^{c}\\cup B^{c}|=38$."
   },
   "MATH 1.10": {
     "title": "Komplemente von Vereinigung und Schnitt bei überlappenden parametrischen Mengen",
@@ -320,7 +320,7 @@
       "**D.** → Richtig\n\n$k=4$: $Q=\\{4,5\\}$; $6$ ist keine Wurzel von $(x-4)(x-5)=0$.\n\nBei $k=4$ sind die Wurzeln $4$ und $5$; $6$ würde $(6-4)(6-5)=0$ erfordern, was scheitert.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nFür $k\\ge 2$ sind beide Wurzeln ganze Zahlen $\\ge 2$ und liegen daher in $\\mathbb{N}$.\n\nBeide Wurzeln sind ganze Zahlen mindestens $2$, also liegen sie in $\\mathbb{N}=\\{1,2,\\ldots\\}$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Faktorisierung: $x^{2}-(2k+1)x+k(k+1)=(x-k)(x-k-1)$. Wurzeln $k$ und $k+1$, beide ganze Zahlen $\\ge 2$. Diskriminante $(2k+1)^{2}-4k(k+1)=4k^{2}+4k+1-4k^{2}-4k=1$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "Faktorisierung: $x^{2}-(2k+1)x+k(k+1)=(x-k)(x-k-1)$. Wurzeln $k$ und $k+1$, beide ganze Zahlen $\\ge 2$. Diskriminante $(2k+1)^{2}-4k(k+1)=4k^{2}+4k+1-4k^{2}-4k=1$."
   },
   "MATH 1.18": {
     "title": "Potenzmenge einer parametrischen vierelementigen Menge",
@@ -339,7 +339,7 @@
       "**D.** → Richtig\n\n$b=10$: $W=\\{10,11,12,13\\}$, und $W\\in\\mathcal{P}(W)$.\n\nDie volle Menge $W$ ist stets Element von $\\mathcal{P}(W)$, also liegt bei $b=10$ die Aufzählung $\\{10,11,12,13\\}$ in der Potenzmenge.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$2^{4}=16\\neq 12$$\n\nDie behauptete Potenzmengenmächtigkeit ist falsch.\n\nDie Identität $|\\mathcal{P}(W)|=2^{|W|}$ liefert $16$ und widerspricht der behaupteten $12$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$|W|=4$, also $|\\mathcal{P}(W)|=2^{4}=16$. Binomialzahlen: $\\binom{4}{2}=6$, $\\binom{4}{3}=4$. Jede Teilmenge von $W$, einschließlich $W$ selbst und jeder $2$-Teilmenge, gehört zu $\\mathcal{P}(W)$.\n\nDie Buchstaben nutzen diese ermittelten Werte erneut und ergänzen nur den behauptungsspezifischen Test."
+    "solution_overview": "$|W|=4$, also $|\\mathcal{P}(W)|=2^{4}=16$. Binomialzahlen: $\\binom{4}{2}=6$, $\\binom{4}{3}=4$. Jede Teilmenge von $W$, einschließlich $W$ selbst und jeder $2$-Teilmenge, gehört zu $\\mathcal{P}(W)$."
   },
   "MATH 1.19": {
     "title": "Teilmengenkette mit Parameter und echter Enthaltensein-Relation",
@@ -415,7 +415,7 @@
       "**D.** → Richtig\n\nFalls $a=b$, dann ist $a^{2}-b^{2}=0$, also ist die Differenz für jedes $k$ gleich $0$.\n\nDas Verschwinden von $a-b$ erzwingt, dass das gesamte Produkt $(a-b)(a+b)k^{2}$ für jedes $k$ verschwindet.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$(5-3)(5+3)(2)^{2}=2\\cdot8\\cdot4=64\\neq 60$$\n\nDas korrekte Produkt ist $2\\cdot8\\cdot4=64$, nicht $60$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Differenz der Quadrate: $(ak)^{2}-(bk)^{2}=(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a^{2}-b^{2})k^{2}$. Bei $a=5$, $b=3$, $k=2$: $(10)^{2}-(6)^{2}=100-36=64$, und $(a-b)(a+b)k^{2}=2\\cdot8\\cdot4=64$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Differenz der Quadrate: $(ak)^{2}-(bk)^{2}=(ak-bk)(ak+bk)=k(a-b)\\cdot k(a+b)=(a^{2}-b^{2})k^{2}$. Bei $a=5$, $b=3$, $k=2$: $(10)^{2}-(6)^{2}=100-36=64$, und $(a-b)(a+b)k^{2}=2\\cdot8\\cdot4=64$."
   },
   "MATH 2.03": {
     "title": "Elementare Summe und Produkt mit linearem Parameter",
@@ -472,7 +472,7 @@
       "**D.** → Falsch\n\n$$\\binom{4}{1}=4\\neq 3$$\n\nDer Koeffizient von $x^{3}y$ is $\\binom{4}{1}=4$, not $3$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$1+4+6+4+1=16=2^{4}$$\n\nSumming $1+4+6+4+1$ recovers $16=2^{4}$, matching $(1+1)^{4}$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Binomial theorem: $(x+y)^{4}=\\sum_{k=0}^{4}\\binom{4}{k}x^{4-k}y^{k}$. Coefficients $1,4,6,4,1$. At $t=2$: $(3)^{4}=81$. Coefficient of $x^{3}y$ is $\\binom{4}{1}=4$, not $3$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Binomial theorem: $(x+y)^{4}=\\sum_{k=0}^{4}\\binom{4}{k}x^{4-k}y^{k}$. Coefficients $1,4,6,4,1$. At $t=2$: $(3)^{4}=81$. Coefficient of $x^{3}y$ is $\\binom{4}{1}=4$, not $3$."
   },
   "MATH 2.06": {
     "title": "Binomische Entwicklung von $(a+b)^{5}$ mit numerischer Kontrolle",
@@ -491,7 +491,7 @@
       "**D.** → Richtig\n\n$$\\sum_{k=0}^{5}\\binom{5}{k}=2^{5}=32$$\n\nDer Binomialsatz bei $a=b=1$ liefert $\\sum\\binom{5}{k}=2^{5}=32$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\\binom{5}{1}=5\\neq 4$$\n\nDer Koeffizient von $a^{4}b$ ist $\\binom{5}{1}=5$, im Widerspruch zur behaupteten $4$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Binomialkoeffizienten für $n=5$: $1,5,10,10,5,1$. Bei $a=2$, $b=-1$: $(1)^{5}=1$. Zeilensumme $2^{5}=32$. Der Koeffizient von $a^{4}b$ ist $5$, nicht $4$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Binomialkoeffizienten für $n=5$: $1,5,10,10,5,1$. Bei $a=2$, $b=-1$: $(1)^{5}=1$. Zeilensumme $2^{5}=32$. Der Koeffizient von $a^{4}b$ ist $5$, nicht $4$."
   },
   "MATH 2.07": {
     "title": "Kubus eines linearen Binoms mit Parametern",
@@ -510,7 +510,7 @@
       "**D.** → Richtig\n\nDer Term mit $x^{1}$ ist $3c d^{2}x$, daher ist der Koeffizient $3cd^{2}$.\n\nDer Grad-$1$-Term ist $3cd^{2}x$, also ist sein Koeffizient $3cd^{2}$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie entwickelte Form ist an der Probe gleich $(cx-d)^{3}=1$, nicht $-1$.\n\nWeil das entwickelte Polynom mit $(cx-d)^{3}$ übereinstimmt, ist sein Probenwert ebenfalls $1$, nicht $-1$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$(cx-d)^{3}=c^{3}x^{3}-3c^{2}d x^{2}+3c d^{2} x-d^{3}$. Mit $c=2$, $d=3$: $8x^{3}-36x^{2}+54x-27$. Bei $x=2$: $cx-d=1$, Kubus $1$. Das entwickelte Polynom an derselben Stelle ist ebenfalls $1$, nicht $-1$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "$(cx-d)^{3}=c^{3}x^{3}-3c^{2}d x^{2}+3c d^{2} x-d^{3}$. Mit $c=2$, $d=3$: $8x^{3}-36x^{2}+54x-27$. Bei $x=2$: $cx-d=1$, Kubus $1$. Das entwickelte Polynom an derselben Stelle ist ebenfalls $1$, nicht $-1$."
   },
   "MATH 2.08": {
     "title": "Quadratische Ergänzung mit einem Parameter, der um eins danebenliegt",
@@ -567,7 +567,7 @@
       "**D.** → Falsch\n\n$$81-25=56$$\n\n$$56\\neq 48$$\n\nAlternativ $4ab=4\\cdot7\\cdot2=56$.\n\nDifferenz $81-25=56$, gleichwertig $4\\cdot7\\cdot2=56$, nicht $48$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$(a^{2}+2ab+b^{2})+(a^{2}-2ab+b^{2})=2a^{2}+2b^{2}$$\n\nAddiert man die beiden Entwicklungen, fallen die mittleren Terme weg und die Quadrate verdoppeln sich.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "$(a+b)^{2}=a^{2}+2ab+b^{2}$, $(a-b)^{2}=a^{2}-2ab+b^{2}$. Differenz $4ab$; Summe $2a^{2}+2b^{2}$. Probe: $9^{2}=81$, $5^{2}=25$, Differenz $56=4\\cdot7\\cdot2$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "$(a+b)^{2}=a^{2}+2ab+b^{2}$, $(a-b)^{2}=a^{2}-2ab+b^{2}$. Differenz $4ab$; Summe $2a^{2}+2b^{2}$. Probe: $9^{2}=81$, $5^{2}=25$, Differenz $56=4\\cdot7\\cdot2$."
   },
   "MATH 2.11": {
     "title": "Identifikation des verdoppelten mittleren Terms mit Parameter",
@@ -624,7 +624,7 @@
       "**D.** → Richtig\n\n$$3a^{2}b+3ab^{2}=3ab(a+b)$$\n\nKlammert man $3ab$ aus $3a^{2}b+3ab^{2}$ aus, erhält man $3ab(a+b)$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$a^{3}+b^{3}=8-1=7\\neq 1=(a+b)^{3}$$\n\nOhne den mittleren Block bleibt $8-1=7$, was nicht dem Kubus $1$ entspricht.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Standardkubus: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$, und $3a^{2}b+3ab^{2}=3ab(a+b)$. Probe $a=2$, $b=-1$: $(a+b)^{3}=1$, mittlerer Block $-6$. Ohne den mittleren Block bleibt $a^{3}+b^{3}=7\\neq 1$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Standardkubus: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$, und $3a^{2}b+3ab^{2}=3ab(a+b)$. Probe $a=2$, $b=-1$: $(a+b)^{3}=1$, mittlerer Block $-6$. Ohne den mittleren Block bleibt $a^{3}+b^{3}=7\\neq 1$."
   },
   "MATH 2.14": {
     "title": "Rückgewinnung von $x^{3}+y^{3}$ aus Summe und Produkt",
@@ -643,7 +643,7 @@
       "**D.** → Richtig\n\n$$x^{2}-xy+y^{2}=(x^{2}+y^{2})-p=13-6=7$$\n\n$$s\\cdot 7=35$$\n\nSomit gilt $x^{2}-xy+y^{2}=13-6=7$ und $s\\cdot7=35$ stimmt mit der Kubensumme überein.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDie Formel liefert $35$, nicht $40$.\n\nDieselbe Formel ergibt $35$ und widerspricht dem behaupteten Wert $40$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$$x^{3}+y^{3}=(x+y)(x^{2}-xy+y^{2})=s((s^{2}-2p)-p)=s^{3}-3sp.$$\n\nProbe: $s^{3}-3sp=125-90=35$; $x^{2}+y^{2}=25-12=13$; $x^{2}-xy+y^{2}=13-6=7$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "$$x^{3}+y^{3}=(x+y)(x^{2}-xy+y^{2})=s((s^{2}-2p)-p)=s^{3}-3sp.$$\n\nProbe: $s^{3}-3sp=125-90=35$; $x^{2}+y^{2}=25-12=13$; $x^{2}-xy+y^{2}=13-6=7$."
   },
   "MATH 2.15": {
     "title": "Biquadratische Differenz $x^{4}-y^{4}$ mit einem Parameter",
@@ -700,7 +700,7 @@
       "**D.** → Richtig\n\n$$(a+b)^{2}-(a+b)^{2}=0$$\n\nDas Einsetzen von $c=a+b$ macht die beiden Quadrate identisch, sodass ihre Differenz $0$ ist.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDer Wert ist $12$, nicht $16$ (das wäre das Quadrat vor dem Abziehen von $c^{2}$).\n\nDer Wert $16$ ist $(a+b)^{2}$ vor dem Abziehen von $c^{2}$; nach der Subtraktion erhält man $12$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Gruppiere als Quadrat minus $c^{2}$, dann Differenz von Quadraten. Probe: $(3+1)^{2}-4=16-4=12$; Faktoren $(4-2)(4+2)=12$. Wenn $c=a+b$, verschwindet der Ausdruck.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Gruppiere als Quadrat minus $c^{2}$, dann Differenz von Quadraten. Probe: $(3+1)^{2}-4=16-4=12$; Faktoren $(4-2)(4+2)=12$. Wenn $c=a+b$, verschwindet der Ausdruck."
   },
   "MATH 2.18": {
     "title": "Die Hälfte der Summe dreier quadrierter Abstände mit einem Parameter",
@@ -719,7 +719,7 @@
       "**D.** → Richtig\n\nJeder Abstand verschwindet, wenn $x=y=z$, also $G=0$.\n\nIdentische Variablen erzwingen jeden Abstand zu $0$, daher $G=0$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$G=12\\neq 16$$\n\nDer gewonnene Wert $G=12$ verwirft das behauptete $16$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Das Ausmultiplizieren der Definition liefert $G=x^{2}+y^{2}+z^{2}-xy-yz-zx$. Probe $x=5$, $y=1$, $z=3$: quadrierte Abstände $16+4+4=24$, also $G=12$. Wenn $x=y=z$, verschwindet jeder Abstand und $G=0$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Das Ausmultiplizieren der Definition liefert $G=x^{2}+y^{2}+z^{2}-xy-yz-zx$. Probe $x=5$, $y=1$, $z=3$: quadrierte Abstände $16+4+4=24$, also $G=12$. Wenn $x=y=z$, verschwindet jeder Abstand und $G=0$."
   },
   "MATH 2.19": {
     "title": "Zyklisches Produkt $(x+y)(y+z)(z+x)$ mit numerischer Probe",
@@ -738,7 +738,7 @@
       "**D.** → Richtig\n\nDie algebraische Identität gilt allgemein durch Ausmultiplizieren beider Seiten (oder indem man jeden Faktor als $s$ minus die gegenüberliegende Variable schreibt).\n\nDas Ausmultiplizieren von $(s-z)(s-x)(s-y)$ und Vereinfachen ergibt allgemein $s(xy+yz+zx)-xyz$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$P=60\\neq 72$$\n\nDas Produkt ist $60$, nicht $72$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Probe: $x+y=3$, $y+z=5$, $z+x=4$, also $P=60$. Identität: $(x+y)(y+z)(z+x)=s(xy+yz+zx)-xyz$. Prüfung: $xy+yz+zx=2+6+3=11$, $s\\cdot 11-xyz=66-6=60$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Probe: $x+y=3$, $y+z=5$, $z+x=4$, also $P=60$. Identität: $(x+y)(y+z)(z+x)=s(xy+yz+zx)-xyz$. Prüfung: $xy+yz+zx=2+6+3=11$, $s\\cdot 11-xyz=66-6=60$."
   },
   "MATH 2.20": {
     "title": "Gemischte Vorzeichen in einem Dreierbuchstaben-Quadrat",
@@ -757,7 +757,7 @@
       "**D.** → Richtig\n\n$$(a+c)^{2}-2(a+c)b+b^{2}=a^{2}+2ac+c^{2}-2ab-2cb+b^{2}$$\n\nstimmt mit der vorzeichenbehafteten Entwicklung überein.\n\nDas Ausmultiplizieren von $((a+c)-b)^{2}$ reproduziert $a^{2}+c^{2}+b^{2}+2ac-2ab-2bc$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$16\\neq 18$$\n\nDas Quadrat ist $16$, nicht $18$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Schreibe als $(a+c-b)^{2}=a^{2}+c^{2}+b^{2}+2ac-2ab-2cb$. Probe: $a-b+c=4$, Quadrat $16$. Kreuzblock $-2ab+2ac-2bc=-20+10-4=-14$. Quadrate $25+4+1=30$; $30-14=16$.\n\nDie Buchstaben nutzen diese gewonnenen Entwicklungen erneut und ergänzen nur die behauptungsspezifische Substitution oder den Vergleich."
+    "solution_overview": "Schreibe als $(a+c-b)^{2}=a^{2}+c^{2}+b^{2}+2ac-2ab-2cb$. Probe: $a-b+c=4$, Quadrat $16$. Kreuzblock $-2ab+2ac-2bc=-20+10-4=-14$. Quadrate $25+4+1=30$; $30-14=16$."
   },
   "MATH 11.01": {
     "title": "Nominale versus stetige Verzinsung bei einer parametrisierten Depotanlage",
@@ -776,7 +776,7 @@
       "**D.** → Falsch\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{c}}(3)\\approx\\$11,087.72$ und $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$.\n\nKontinuierliche Prämie über die monatliche Verzinsung:\n\n$$\nFV_{\\mathrm{c}}(3)-FV_{\\mathrm{m}}(3)\\approx11{,}087.72-11{,}079.00\n$$\n\n$$\n=8.72\n$$\n\n$$\n8.72\\nless 18\n$$\n\nDie Prämie versagt $\\$18$ threshold.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_3\\approx\\$2,344.00$ und $I_2\\approx\\$1,500.00$.\n\nZinsschnitt, wenn der Horizont von $a=3$ to $b=2$:\n\n$$\nI_3-I_2\\approx844.00\n$$\n\nShare of three-year interest:\n\n$$\n\\frac{I_3-I_2}{I_3}\\approx0.3601=36.01\\%\n$$\n\n$$\n36.01\\%>35\\%\n$$\n\nDie Kürzung übersteigt fünfunddreiß drei Jahre Zinsen.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Gewinne die gemeinsamen Zinssätze und Salden einmal:\n\n $$\nr=0.0795\\qquad i=\\frac{r}{12}=0.006625=0.6625\\%\n$$ \n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.082462=8.246\\%\n$$ \n\n $$\nR_{\\mathrm{c}}=e^{r}-1\\approx0.082746=8.275\\%\n$$ \n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\\approx11{,}079.00\n$$ \n\n $$\nFV_{\\mathrm{c}}(3)=8{,}735.00e^{0.0795\\cdot 3}\\approx11{,}087.72\n$$ \n\n $$\nFV_{\\mathrm{m}}(2)\\approx10{,}235.00\\qquad I_3\\approx2{,}344.00\\qquad I_2\\approx1{,}500.00\n$$ "
+    "solution_overview": "Gewinne die gemeinsamen Zinssätze und Salden einmal:\n\n $$\nr=0.0795\\qquad i=\\frac{r}{12}=0.006625=0.6625\\%\n$$\n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.082462=8.246\\%\n$$\n\n $$\nR_{\\mathrm{c}}=e^{r}-1\\approx0.082746=8.275\\%\n$$\n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\\approx11{,}079.00\n$$\n\n $$\nFV_{\\mathrm{c}}(3)=8{,}735.00e^{0.0795\\cdot 3}\\approx11{,}087.72\n$$\n\n $$\nFV_{\\mathrm{m}}(2)\\approx10{,}235.00\\qquad I_3\\approx2{,}344.00\\qquad I_2\\approx1{,}500.00\n$$"
   },
   "MATH 11.02": {
     "title": "Siebenjähriges Wachstum mit vierteljährlicher Verzinsung und Zwischenkontrolle",
@@ -795,7 +795,7 @@
       "**D.** → Falsch\n\nIm Überblick wurde gewonnen: growth share $\\approx0.6076$.\n\n$$\n\\frac{FV(7)-P}{P}\\approx0.6076=60.76\\%\n$$\n\n$$\n60.76\\%\\nless 62\\%\n$$\n\nTotales Wachstum versagt $62\\%$ threshold.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nKurze: $r$:\n\n$$\nFV_{\\mathrm{ann}}=12{,}480.00(1+0.0684)^{7}\n$$\n\n$$\n\\approx19{,}831.33\n$$\n\n$$\n19{,}831.33>19{,}800\n$$\n\nEs ist daher nicht klar, ob es sich dabei um eine staatliche Beihilfe handelt.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Stellen Sie das Quartalsmodell einmal wieder her.\n\n $$\ni=\\frac{0.0684}{4}=0.017100=1.71\\%\\qquad N=4\\cdot7=28\n$$ \n\n $$\nFV(7)=12{,}480.00(1+0.017100)^{28}\\approx20{,}063.05\n$$ \n\n $$\nFV(5)=12{,}480.00(1+0.017100)^{20}\\approx17{,}518.13\n$$ \n\n $$\nFV_{\\mathrm{ann}}=12{,}480.00(1+0.0684)^{7}\\approx19{,}831.33\\qquad\\frac{FV(7)-P}{P}\\approx0.6076\n$$ "
+    "solution_overview": "Stellen Sie das Quartalsmodell einmal wieder her.\n\n $$\ni=\\frac{0.0684}{4}=0.017100=1.71\\%\\qquad N=4\\cdot7=28\n$$\n\n $$\nFV(7)=12{,}480.00(1+0.017100)^{28}\\approx20{,}063.05\n$$\n\n $$\nFV(5)=12{,}480.00(1+0.017100)^{20}\\approx17{,}518.13\n$$\n\n $$\nFV_{\\mathrm{ann}}=12{,}480.00(1+0.0684)^{7}\\approx19{,}831.33\\qquad\\frac{FV(7)-P}{P}\\approx0.6076\n$$"
   },
   "MATH 11.03": {
     "title": "Zwei Termineinlagen mit widersprüchlichen Nominalquotierungen und Frequenzen",
@@ -814,7 +814,7 @@
       "**D.** → Falsch\n\nHöhere Verzinsungshäufigkeit dominiert hier kein höheres Nominalangebot.\n\n$$\nR_A\\approx10.034\\%\n$$\n\n$$\nR_B\\approx10.112\\%\n$$\n\n$$\nR_A<R_B\n$$\n\nOffer $A$ compounds $4$ times per year but still loses on an effective basis.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_A\\approx\\$1,148.60$.\n\n$$\nI_A=15{,}640.00\\cdot0.073440\n$$\n\n$$\n\\approx1{,}148.60\n$$\n\n$$\n1{,}148.60>1{,}120\n$$\n\nOffer $A$ Würfe den Dollar-Fußboden.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Konvertieren Sie jedes Angebot einmal in eine effektive Jahresrate.\n\n $$\nR_A=\\left(1+\\frac{0.0715}{4}\\right)^4-1\\approx0.073440=7.344\\%\n$$ \n\n $$\nR_B=\\left(1+\\frac{0.0725}{2}\\right)^2-1\\approx0.073814=7.381\\%\n$$ \n\n $$\nI_A=P R_A\\approx1{,}148.60\\qquad I_B=P R_B\\approx1{,}154.45\n$$ "
+    "solution_overview": "Konvertieren Sie jedes Angebot einmal in eine effektive Jahresrate.\n\n $$\nR_A=\\left(1+\\frac{0.0715}{4}\\right)^4-1\\approx0.073440=7.344\\%\n$$\n\n $$\nR_B=\\left(1+\\frac{0.0725}{2}\\right)^2-1\\approx0.073814=7.381\\%\n$$\n\n $$\nI_A=P R_A\\approx1{,}148.60\\qquad I_B=P R_B\\approx1{,}154.45\n$$"
   },
   "MATH 11.04": {
     "title": "Umwandlung des APR einer Handelskarte mit täglicher Verzinsung als Kontrafaktum",
@@ -833,7 +833,7 @@
       "**D.** → Falsch\n\nLaufendes Laufen mit\n\n$$\nB(1+i)^{12}=2{,}847.65(1+0.018250)^{12}\n$$\n\n$$\n\\approx3{,}537.85\n$$\n\n$$\n3{,}537.85\\nless 3{,}500\n$$\n\nDie Waage ist nicht streng unter $\\$3,500$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n(Ist DAS DEN KOT richtig)\n\nLücke zwischen effektiv und nominal:\n\n$$\n(R_{\\mathrm{m}}-r)\\cdot 100\\approx2.338\n$$\n\n$$\n2.338>2.3\n$$\n\nDie APR-to-effective Lücke löscht die Schwelle.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Einmalige periodische und effektive Raten wiederherstellen.\n\n $$\ni=\\frac{0.219}{12}=0.018250=1.825\\%\n$$ \n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.242376=24.238\\%\n$$ \n\n $$\nR_{\\mathrm{d}}=\\left(1+\\frac{0.219}{365}\\right)^{365}-1\\approx0.244750=24.475\\%\n$$ \n\n $$\nB\\cdot i\\approx51.97\\qquad B(1+i)^{12}\\approx3{,}537.85\n$$ "
+    "solution_overview": "Einmalige periodische und effektive Raten wiederherstellen.\n\n $$\ni=\\frac{0.219}{12}=0.018250=1.825\\%\n$$\n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.242376=24.238\\%\n$$\n\n $$\nR_{\\mathrm{d}}=\\left(1+\\frac{0.219}{365}\\right)^{365}-1\\approx0.244750=24.475\\%\n$$\n\n $$\nB\\cdot i\\approx51.97\\qquad B(1+i)^{12}\\approx3{,}537.85\n$$"
   },
   "MATH 11.05": {
     "title": "Vierteljährliche Firmeneinlage versus ein halbjährliches Zwillingskonto",
@@ -871,7 +871,7 @@
       "**D.** → Richtig\n\nShortening amount:\n\n$$\nt-t'\\approx10.1626-9.6559=0.5067\n$$\n\n$$\n0.5067>0.40\n$$\n\nDie öften Ür hänge en tot deren ften ü $0.40$ years.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nOne hundred twenty months of growth:\n\n$$\n(1+i)^{120}=(1+0.005700)^{120}\\approx1.977944\n$$\n\n$$\n1.977944\\nless 2.00\n$$\n\nOne hundred twenty months is short of a full doubling.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Verdoppeln Sie die Gleichung einmal.\n\n $$\ni=\\frac{0.0684}{12}=0.005700\n$$ \n\n $$\n(1+i)^{N}=2\\implies N=\\frac{\\ln 2}{\\ln(1+i)}\\approx121.9510\n$$ \n\n $$\nt=\\frac{N}{12}\\approx10.1626\n$$ \n\n $$\ni'=0.006000\\qquad t'\\approx9.6559\\qquad(1+i)^{120}\\approx1.977944\n$$ "
+    "solution_overview": "Verdoppeln Sie die Gleichung einmal.\n\n $$\ni=\\frac{0.0684}{12}=0.005700\n$$\n\n $$\n(1+i)^{N}=2\\implies N=\\frac{\\ln 2}{\\ln(1+i)}\\approx121.9510\n$$\n\n $$\nt=\\frac{N}{12}\\approx10.1626\n$$\n\n $$\ni'=0.006000\\qquad t'\\approx9.6559\\qquad(1+i)^{120}\\approx1.977944\n$$"
   },
   "MATH 11.07": {
     "title": "Ein Nominalzins bei jährlicher, vierteljährlicher, monatlicher und stetiger Verzinsung",
@@ -890,7 +890,7 @@
       "**D.** → Richtig\n\nVergleichen Sie die vier wiederhergestellten Raten:\n\n$$\n0.081000<0.083494<0.084076<0.084371\n$$\n\nDie Standard-Frequenzordnung gilt für dieses nominal-Angabe.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDifferenz stetig minus jährlich:\n\n$$\n(R_{\\mathrm{c}}-R_{\\mathrm{ann}})\\cdot 100\\approx0.3371\n$$\n\n$$\n0.3371\\nless 0.40\n$$\n\nDie Lücke verfehlt $0.40$ Prozentpunkte.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Konvertieren Sie mit der jeweiligen Fabrikation.\n\n $$\nR_{\\mathrm{ann}}=0.081\\qquad R_{\\mathrm{q}}\\approx0.083494\n$$ \n\n $$\nR_{\\mathrm{m}}\\approx0.084076\\qquad R_{\\mathrm{c}}\\approx0.084371\n$$ \n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$ "
+    "solution_overview": "Konvertieren Sie mit der jeweiligen Fabrikation.\n\n $$\nR_{\\mathrm{ann}}=0.081\\qquad R_{\\mathrm{q}}\\approx0.083494\n$$\n\n $$\nR_{\\mathrm{m}}\\approx0.084076\\qquad R_{\\mathrm{c}}\\approx0.084371\n$$\n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$"
   },
   "MATH 11.08": {
     "title": "Zehnjährige monatliche Einlage mit einer jährlichen Ratenillusion",
@@ -909,7 +909,7 @@
       "**D.** → Richtig\n\nGrowth share:\n\n$$\n\\frac{FV-P}{P}\\approx0.7397=73.97\\%\n$$\n\n$$\n73.97\\%>70\\%\n$$\n\nDas Wachstum löscht siebzig Prozent.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nQuarterly ten-year balance:\n\n$$\nFV_q=6{,}420.00\\left(1+\\frac{0.0555}{4}\\right)^{40}\\approx11{,}140.68\n$$\n\n$$\n11{,}140.68>11{,}000\n$$\n\nSogar eine vierteljährliche Verzinsung räumt den Boden.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Stellen Sie das monatliche Zehnjahresmodell einmal wieder her.\n\n $$\ni=\\frac{0.0555}{12}=0.004625\n$$ \n\n $$\nFV=6{,}420.00(1+0.004625)^{120}\\approx11{,}168.96\n$$ \n\n $$\nP(1+rt)\\approx9{,}983.10\\qquad FV_q\\approx11{,}140.68\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
+    "solution_overview": "Stellen Sie das monatliche Zehnjahresmodell einmal wieder her.\n\n $$\ni=\\frac{0.0555}{12}=0.004625\n$$\n\n $$\nFV=6{,}420.00(1+0.004625)^{120}\\approx11{,}168.96\n$$\n\n $$\nP(1+rt)\\approx9{,}983.10\\qquad FV_q\\approx11{,}140.68\n$$"
   },
   "MATH 11.09": {
     "title": "Erforderliche Wachstumsrate von \\$50,000 auf \\$80,000 in acht Jahren",
@@ -928,7 +928,7 @@
       "**D.** → Falsch\n\n$$\n50000(1.05)^8\\approx73{,}872.77\n$$\n\n$$\n73{,}872.77\\nless 80{,}000\n$$\n\nFive percent is too low to hit $\\$80,000$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$\n\n$$\n11.798>11\n$$\n\nDoubling takes more than eleven years.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Invertieren Sie die Compound-Growth-Gleichung einmal.\n\n $$\n(1+R)^8=\\frac{80000}{50000}=1.6\n$$ \n\n $$\nR=1.6^{1/8}-1\\approx0.060511=6.051\\%\n$$ \n\n $$\nr_m=12\\bigl(1.6^{1/96}-1\\bigr)\\approx0.058895=5.889\\%\n$$ \n\n $$\n50000(1.05)^8\\approx73{,}872.77\\qquad\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$ "
+    "solution_overview": "Invertieren Sie die Compound-Growth-Gleichung einmal.\n\n $$\n(1+R)^8=\\frac{80000}{50000}=1.6\n$$\n\n $$\nR=1.6^{1/8}-1\\approx0.060511=6.051\\%\n$$\n\n $$\nr_m=12\\bigl(1.6^{1/96}-1\\bigr)\\approx0.058895=5.889\\%\n$$\n\n $$\n50000(1.05)^8\\approx73{,}872.77\\qquad\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$"
   },
   "MATH 11.10": {
     "title": "Kreditnehmerwahl zwischen monatlicher und vierteljährlicher Kreditquote",
@@ -947,7 +947,7 @@
       "**D.** → Falsch\n\nEin höherer Nominalzins beweist nicht unter jeder Verzinsungskonvention höhere Effektivkosten.\n\n$$\nr_B=9.75\\%>r_A=9.6\\%\n$$\n\n$$\nR_A\\approx10.034\\%\\qquad R_B\\approx10.112\\%\n$$\n\nFrequenz und Nominalzins zählen beide; die absolute „muss“-Behauptung scheitert.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n|R_A-R_B|\\cdot 100\\approx0.0784\n$$\n\n$$\n0.0784<0.15\n$$\n\nDie effektive Lücke ist unter $0.15$ percentage points.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Konvertieren Sie beide Darlehens-Quotes einmal.\n\n $$\nR_A=\\left(1+\\frac{0.096}{12}\\right)^{12}-1\\approx0.100339=10.034\\%\n$$ \n\n $$\nR_B=\\left(1+\\frac{0.0975}{4}\\right)^4-1\\approx0.101123=10.112\\%\n$$ \n\n $$\nL R_A\\approx2{,}488.40\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
+    "solution_overview": "Konvertieren Sie beide Darlehens-Quotes einmal.\n\n $$\nR_A=\\left(1+\\frac{0.096}{12}\\right)^{12}-1\\approx0.100339=10.034\\%\n$$\n\n $$\nR_B=\\left(1+\\frac{0.0975}{4}\\right)^4-1\\approx0.101123=10.112\\%\n$$\n\n $$\nL R_A\\approx2{,}488.40\n$$"
   },
   "MATH 11.11": {
     "title": "Rekonstruktion einer sechsjährigen monatlichen Einlage aus bekanntem Endwert",
@@ -966,7 +966,7 @@
       "**D.** → Richtig\n\nIm Üben war gewonnen: der Discount-Faktor $(1+i)^{-N}\\approx0.678579$.\n\n$$\n(1+i)^{-N}\\approx0.678579\n$$\n\n$$\n0.678579<0.68\n$$\n\nDer Diskontierungsfaktor ist strikt weniger als $0.68$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nFour-year present value:\n\n$$\nPV_4=\\frac{18{,}750.00}{(1+0.005400)^{48}}\\approx14{,}478.88\n$$\n\n$$\n14{,}478.88\\nless 14{,}500\n$$\n\nDie kürzerfristige Eröffnungseinlage scheitert $\\$14,500$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Den Barwert einmalig wiederherstellen.\n\n $$\ni=\\frac{0.0648}{12}=0.005400\\qquad N=72\n$$ \n\n $$\nPV=\\frac{18{,}750.00}{(1+0.005400)^{72}}\\approx12{,}723.36\n$$ \n\n $$\nPV_{\\mathrm{ann}}=\\frac{18{,}750.00}{(1+0.0648)^{6}}\\approx12{,}864.50\n$$ \n\n $$\n(1+i)^{-N}\\approx0.678579\\qquad PV_4=\\frac{18{,}750.00}{(1+i)^{48}}\\approx14{,}478.88\n$$ "
+    "solution_overview": "Den Barwert einmalig wiederherstellen.\n\n $$\ni=\\frac{0.0648}{12}=0.005400\\qquad N=72\n$$\n\n $$\nPV=\\frac{18{,}750.00}{(1+0.005400)^{72}}\\approx12{,}723.36\n$$\n\n $$\nPV_{\\mathrm{ann}}=\\frac{18{,}750.00}{(1+0.0648)^{6}}\\approx12{,}864.50\n$$\n\n $$\n(1+i)^{-N}\\approx0.678579\\qquad PV_4=\\frac{18{,}750.00}{(1+i)^{48}}\\approx14{,}478.88\n$$"
   },
   "MATH 11.12": {
     "title": "Monate bis zum Wachstum von \\$4,000 auf \\$6,000 bei monatlicher Verzinsung",
@@ -985,7 +985,7 @@
       "**D.** → Falsch\n\n$$\nt-t'\\approx0.2816\n$$\n\n$$\n0.2816\\nless 0.30\n$$\n\nDie Verkürzung liegt unter $0.30$ Jahren.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$\n\n$$\n5{,}331.35\\nless 5{,}400\n$$\n\n60 Monate scheitern $\\$5,400$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Solve $(1+i)^{N}=FV/PV$ once.\n\n $$\ni=\\frac{0.0576}{12}=0.004800\\qquad\\frac{FV}{PV}=1.5\n$$ \n\n $$\nN=\\frac{\\ln 1.5}{\\ln(1+i)}\\approx84.6745\\qquad t\\approx7.0562\n$$ \n\nAt $r'=0.06$: $i'=0.005$, $N'=\\frac{\\ln 1.5}{\\ln 1.005}\\approx81.2956$, $t'\\approx6.7746$.\n\n $$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ "
+    "solution_overview": "Solve $(1+i)^{N}=FV/PV$ once.\n\n $$\ni=\\frac{0.0576}{12}=0.004800\\qquad\\frac{FV}{PV}=1.5\n$$\n\n $$\nN=\\frac{\\ln 1.5}{\\ln(1+i)}\\approx84.6745\\qquad t\\approx7.0562\n$$\n\nAt $r'=0.06$: $i'=0.005$, $N'=\\frac{\\ln 1.5}{\\ln 1.005}\\approx81.2956$, $t'\\approx6.7746$.\n\n $$\n4000(1+i)^{60}\\approx5{,}331.35\n$$"
   },
   "MATH 11.13": {
     "title": "Tägliche Geldmarktverzinsung versus monatliches und stetiges Zwillingskonto",
@@ -1004,7 +1004,7 @@
       "**D.** → Richtig\n\n$$\nFV_m\\approx10{,}669.59\\qquad FV_d\\approx10{,}672.75\n$$\n\n$$\nFV_d-FV_m\\approx3.15\n$$\n\n$$\n3.15>2\n$$\n\nDie tägliche Verzinsung wird mehr als $\\$2$ monatlichen auf.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\nR_d\\approx5.0742\\%\n$$\n\n$$\n5.0742\\%>5.06\\%\n$$\n\nÜbertrifft die genannte Untergrenze.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Stellen Sie die drei Compounding-Pfade einmalig wieder her.\n\n $$\ni_d=\\frac{0.0495}{365}=0.00013562\n$$ \n\n $$\nFV_d=9{,}200.00(1+i_d)^{1095}\\approx10{,}672.75\n$$ \n\n $$\nFV_m\\approx10{,}669.59\\qquad FV_c\\approx10{,}672.85\n$$ \n\n $$\nR_d=(1+i_d)^{365}-1\\approx0.050742\n$$ "
+    "solution_overview": "Stellen Sie die drei Compounding-Pfade einmalig wieder her.\n\n $$\ni_d=\\frac{0.0495}{365}=0.00013562\n$$\n\n $$\nFV_d=9{,}200.00(1+i_d)^{1095}\\approx10{,}672.75\n$$\n\n $$\nFV_m\\approx10{,}669.59\\qquad FV_c\\approx10{,}672.85\n$$\n\n $$\nR_d=(1+i_d)^{365}-1\\approx0.050742\n$$"
   },
   "MATH 11.14": {
     "title": "Wahre Jahreskosten einer Ladenkarte aus einer nominalen Jahreszinsrate von $24.9\\%$",
@@ -1023,7 +1023,7 @@
       "**D.** → Richtig\n\n$$\n(R-r)\\cdot 100\\approx3.048\n$$\n\n$$\n3.048>3.0\n$$\n\nDie Lücke löscht drei Prozentpunkte.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\nR'=(1+0.219/12)^{12}-1\\approx24.238\\%\n$$\n\n$$\n24.238\\%>24.0\\%\n$$\n\nSelbst der geschnittene April klärt sich immer noch $24\\%$ effective.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Konvertieren Sie den APR einmal.\n\n $$\ni=\\frac{0.249}{12}=0.020750\\qquad R=(1+i)^{12}-1\\approx0.279478\n$$ \n\n $$\nB(1+i)^{12}\\approx2{,}092.46\n$$ \n\nAt $r'=0.219$: $R'\\approx0.242376$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
+    "solution_overview": "Konvertieren Sie den APR einmal.\n\n $$\ni=\\frac{0.249}{12}=0.020750\\qquad R=(1+i)^{12}-1\\approx0.279478\n$$\n\n $$\nB(1+i)^{12}\\approx2{,}092.46\n$$\n\nAt $r'=0.219$: $R'\\approx0.242376$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 11.15": {
     "title": "Effektivraten für einen Nominalzins von $10\\%$ bei fünf Frequenzen",
@@ -1042,7 +1042,7 @@
       "**D.** → Falsch\n\n$$\n1000 R_{12}\\approx104.71\n$$\n\n$$\n104.71\\nless 105\n$$\n\nMonatliche Zinsen am $\\$1,000$ nicht funktionstüchtig $\\$105$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\n(R_c-R_1)\\cdot 100\\approx0.5171\n$$\n\n$$\n0.5171\\nless 0.60\n$$\n\nFaulheit $0.60$ pp.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Konvertieren Sie jede Frequenz einmal.\n\n $$\nR_1=0.10\\qquad R_2\\approx0.102500\\qquad R_4\\approx0.103813\n$$ \n\n $$\nR_{12}\\approx0.104713\\qquad R_c\\approx0.105171\n$$ \n\n $$\n1000 R_{12}\\approx104.71\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
+    "solution_overview": "Konvertieren Sie jede Frequenz einmal.\n\n $$\nR_1=0.10\\qquad R_2\\approx0.102500\\qquad R_4\\approx0.103813\n$$\n\n $$\nR_{12}\\approx0.104713\\qquad R_c\\approx0.105171\n$$\n\n $$\n1000 R_{12}\\approx104.71\n$$"
   },
   "MATH 11.16": {
     "title": "Konstante Wachstumsrate, die das BIP in $80$ Jahren um den Faktor $50$ vermehrt",
@@ -1080,7 +1080,7 @@
       "**D.** → Falsch\n\n$$\nPV\\approx17{,}145.29\n$$\n\n$$\n17{,}145.29\\nless 17{,}500\n$$\n\nDer Barwert versagt diese Etage.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\nC-C'\\approx5.35\n$$\n\n$$\n5.35\\nless 8\n$$\n\nDie Deposit Cut ist unter $\\$8$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Hole die normale Annuität sinkende Ablage einmal.\n\n $$\ni=\\frac{0.054}{12}=0.004500\\qquad N=84\n$$ \n\n $$\ns_{\\overline{N}|}=\\frac{(1+i)^{N}-1}{i}\\approx101.805776\n$$ \n\n $$\nC=\\frac{G}{s_{\\overline{N}|}}\\approx245.57\n$$ \n\n $$\na_{\\overline{N}|}=\\frac{1-(1+i)^{-N}}{i}\\approx69.819602\\qquad PV=C a_{\\overline{N}|}\\approx17{,}145.29\n$$ \n\nAt $r'=0.06$: $i'=0.005$, $s'\\approx104.0739$, $C'\\approx240.21$."
+    "solution_overview": "Hole die normale Annuität sinkende Ablage einmal.\n\n $$\ni=\\frac{0.054}{12}=0.004500\\qquad N=84\n$$\n\n $$\ns_{\\overline{N}|}=\\frac{(1+i)^{N}-1}{i}\\approx101.805776\n$$\n\n $$\nC=\\frac{G}{s_{\\overline{N}|}}\\approx245.57\n$$\n\n $$\na_{\\overline{N}|}=\\frac{1-(1+i)^{-N}}{i}\\approx69.819602\\qquad PV=C a_{\\overline{N}|}\\approx17{,}145.29\n$$\n\nAt $r'=0.06$: $i'=0.005$, $s'\\approx104.0739$, $C'\\approx240.21$."
   },
   "MATH 11.18": {
     "title": "Neunjährige vierteljährliche Rekonstruktion des Barwerts",
@@ -1099,7 +1099,7 @@
       "**D.** → Richtig\n\n$$\n\\frac{FV-PV}{PV}\\approx88.73\\%\n$$\n\n$$\n88.73\\%>85\\%\n$$\n\nWachstum löscht $85\\%$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\nPV_6\\approx14{,}497.03\n$$\n\n$$\n14{,}497.03\\nless 14{,}500\n$$\n\nDie Veröffentlichungen der Veröffentlichungen $\\$14,500$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Einmalig den vorliegenden Quartalswert zurückbekommen.\n\n $$\ni=\\frac{0.0712}{4}=0.017800\\qquad N=36\n$$ \n\n $$\nPV=\\frac{22{,}140.00}{(1+i)^{N}}\\approx11{,}730.85\n$$ \n\nZwillingsmonat $PV_m=\\frac{22{,}140.00}{(1+0.0712/12)^{108}}\\approx11{,}687.03$.\n\n $$\n\\frac{FV-PV}{PV}\\approx0.8873\\qquad PV_6\\approx14{,}497.03\n$$ "
+    "solution_overview": "Einmalig den vorliegenden Quartalswert zurückbekommen.\n\n $$\ni=\\frac{0.0712}{4}=0.017800\\qquad N=36\n$$\n\n $$\nPV=\\frac{22{,}140.00}{(1+i)^{N}}\\approx11{,}730.85\n$$\n\nZwillingsmonat $PV_m=\\frac{22{,}140.00}{(1+0.0712/12)^{108}}\\approx11{,}687.03$.\n\n $$\n\\frac{FV-PV}{PV}\\approx0.8873\\qquad PV_6\\approx14{,}497.03\n$$"
   },
   "MATH 11.19": {
     "title": "Drei einjährige Festgelder, die näher beieinander liegen als ihre Nominalquoten suggerieren",
@@ -1118,7 +1118,7 @@
       "**D.** → Falsch\n\n$$\n(\\max-\\min)\\cdot 100\\approx0.0796\n$$\n\n$$\n0.0796\\nless 0.10\n$$\n\nDer Spread scheitert $0.10$ pp.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\nP\\max(R_i)\\approx597.96\n$$\n\n$$\n597.96>596\n$$\n\nBest-CD-Reise $\\$596$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Konvertieren Sie alle drei Zitate einmal.\n\n $$\nR_1=(1+0.058/12)^{12}-1\\approx0.059567\n$$ \n\n $$\nR_2=(1+0.0585/4)^4-1\\approx0.059796\n$$ \n\n $$\nR_3=0.059\n$$ \n\nBest rate $\\max(R_1,R_2,R_3)\\approx0.059796$; interest $P\\max\\approx597.96$."
+    "solution_overview": "Konvertieren Sie alle drei Zitate einmal.\n\n $$\nR_1=(1+0.058/12)^{12}-1\\approx0.059567\n$$\n\n $$\nR_2=(1+0.0585/4)^4-1\\approx0.059796\n$$\n\n $$\nR_3=0.059\n$$\n\nBest rate $\\max(R_1,R_2,R_3)\\approx0.059796$; interest $P\\max\\approx597.96$."
   },
   "MATH 11.20": {
     "title": "Wettlauf auf $\\$22,000$ bei zwei unterschiedlich verzinsten Konten",
@@ -1137,7 +1137,7 @@
       "**D.** → Falsch\n\n$$\nA(5)\\approx20{,}232.75\n$$\n\n$$\n20{,}232.75\\nless 20{,}500\n$$\n\nFive-year Account $A$ nicht funktionstüchtig $\\$20,500$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\nB(5)\\approx19{,}973.81\n$$\n\n$$\n19{,}973.81<20{,}000\n$$\n\nAccount $B$ Für die NACHHIN-HIN-HIN-HIN-HIN-HIN-; $\\$20,000$ at five years.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Lösen Sie jede Schlagzeit einmal.\n\n $$\ni_A=0.005\\qquad t_A=\\frac{\\ln(22000/15000)}{12\\ln(1.005)}\\approx6.3991\n$$ \n\n $$\ni_B=0.01375\\qquad t_B=\\frac{\\ln(22000/15200)}{4\\ln(1.01375)}\\approx6.7688\n$$ \n\n $$\nA(5)=15000(1.005)^{60}\\approx20{,}232.75\n$$ \n\n $$\nB(5)=15200(1.01375)^{20}\\approx19{,}973.81\n$$ "
+    "solution_overview": "Lösen Sie jede Schlagzeit einmal.\n\n $$\ni_A=0.005\\qquad t_A=\\frac{\\ln(22000/15000)}{12\\ln(1.005)}\\approx6.3991\n$$\n\n $$\ni_B=0.01375\\qquad t_B=\\frac{\\ln(22000/15200)}{4\\ln(1.01375)}\\approx6.7688\n$$\n\n $$\nA(5)=15000(1.005)^{60}\\approx20{,}232.75\n$$\n\n $$\nB(5)=15200(1.01375)^{20}\\approx19{,}973.81\n$$"
   },
   "MATH 4.01": {
     "title": "Zweipreisige Ticketkasse mit Erwachsenenzuschlag als Kontrafaktum",
@@ -1156,7 +1156,7 @@
       "**D.** → Falsch\n\n$$\n\\dfrac{R}{a+b}=13.87\n$$\n\n$$\n13.87\\nless 14\n$$\n\nFahrliest scheitert $\\$14$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\na(p+s)-bq=65.00\n$$\n\n$$\n65.00>200\n$$\n\nFreilegungen im Erwachsenenüberschuss $\\$200$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Gewinne die beiden Umsatzsummen einmal:\n\n $$\nR=ap+bq=47\\cdot18.5+83\\cdot11.25=1{,}803.25\n$$ \n\n $$\nR'=a(p+s)+bq=1{,}932.50\n$$ \n\nErwachsener Anteil an $R$: $\\dfrac{ap}{R}\\approx0.4822$.\n\nOben: $\\dfrac{R}{a+b}=13.87$.\n\nNach-Zuschlag für Erwachsene-Minus-Kind-Spalte: $65.00$."
+    "solution_overview": "Gewinne die beiden Umsatzsummen einmal:\n\n $$\nR=ap+bq=47\\cdot18.5+83\\cdot11.25=1{,}803.25\n$$\n\n $$\nR'=a(p+s)+bq=1{,}932.50\n$$\n\nErwachsener Anteil an $R$: $\\dfrac{ap}{R}\\approx0.4822$.\n\nOben: $\\dfrac{R}{a+b}=13.87$.\n\nNach-Zuschlag für Erwachsene-Minus-Kind-Spalte: $65.00$."
   },
   "MATH 4.02": {
     "title": "Lineare Gleichung mit Parametern auf beiden Seiten",
@@ -1175,7 +1175,7 @@
       "**D.** → Falsch\n\nAt $k=18$:\n\n$$\n3.6\\cdot 18-14.8=50\n$$\n\n$$\n2.4\\cdot 18+9.2=52.4\n$$\n\n$$\n50\\nless 52.4\n$$\n\nLeft side does not exceed right side.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n|20-10|=10\n$$\n\n$$\n10>7\n$$\n\nGap löscht sieben.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Löse die ursprüngliche Gleichung einmal.\n\n $$\n3.6x-14.8=2.4x+9.2\n$$ \n\n $$\n(3.6-2.4)x=9.2+14.8\n$$ \n\n $$\n1.2x=24\\qquad x=20\n$$ \n\nTwin $4.8x-14.8=2.4x+9.2$:\n\n $$\n(4.8-2.4)x=24\\qquad x'=10\n$$ \n\nAt $x=20$ auf der linken Seite gleich $57.2$. At $k=18$ auf der linken Seite gleich $50$ und rechte Seite gleich $52.4$."
+    "solution_overview": "Löse die ursprüngliche Gleichung einmal.\n\n $$\n3.6x-14.8=2.4x+9.2\n$$\n\n $$\n(3.6-2.4)x=9.2+14.8\n$$\n\n $$\n1.2x=24\\qquad x=20\n$$\n\nTwin $4.8x-14.8=2.4x+9.2$:\n\n $$\n(4.8-2.4)x=24\\qquad x'=10\n$$\n\nAt $x=20$ auf der linken Seite gleich $57.2$. At $k=18$ auf der linken Seite gleich $50$ und rechte Seite gleich $52.4$."
   },
   "MATH 4.03": {
     "title": "Geschwisteralter mit fester Differenz und Summenbedingung",
@@ -1194,7 +1194,7 @@
       "**D.** → Richtig\n\n$$\n3y-2(y+d)=9\n$$\n\n$$\n9>5\n$$\n\nClears fünf.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\ny(y+d)=690\n$$\n\n$$\n690\\nless 700\n$$\n\nProduktausfälle $700$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Gelangen beide nur einmal.\n\n $$\ny+(y+7)=53\\qquad 2y=46\\qquad y=23\\qquad y+d=30\n$$ \n\nmit $d'=9$: $y'=22$, older $31$.\n\nOlder share $\\dfrac{30}{53}\\approx0.5660$.\n\n $3y-2(y+d)=9$. Product $690$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
+    "solution_overview": "Gelangen beide nur einmal.\n\n $$\ny+(y+7)=53\\qquad 2y=46\\qquad y=23\\qquad y+d=30\n$$\n\nmit $d'=9$: $y'=22$, older $31$.\n\nOlder share $\\dfrac{30}{53}\\approx0.5660$.\n\n $3y-2(y+d)=9$. Product $690$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 4.04": {
     "title": "Verschachtelte Klammern vor dem Isolieren einer vorzeichenbehafteten Unbekannten",
@@ -1213,7 +1213,7 @@
       "**D.** → Falsch\n\nAt $x=0$:\n\n$$\nL=-13\\qquad R=-7\n$$\n\n$$\n-13\\nless -7\n$$\n\nLeft does not exceed right.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n|-3|=3>2.5\n$$\n\nClears $2.5$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Klare Klammern und einmal lösen.\n\n $$\n2(3x-4)-5(x+1)=3(x-8)+17\n$$ \n\n $$\n6x-8-5x-5=3x-24+17\n$$ \n\n $$\nx-13=3x-7\\qquad -6=2x\\qquad x=-3\n$$ \n\nZwilling mit äußerem Faktor $3$: $x'=10$. At $x=0$ auf der linken Seite gleich $-13$ und rechte Seite gleich $-7$."
+    "solution_overview": "Klare Klammern und einmal lösen.\n\n $$\n2(3x-4)-5(x+1)=3(x-8)+17\n$$\n\n $$\n6x-8-5x-5=3x-24+17\n$$\n\n $$\nx-13=3x-7\\qquad -6=2x\\qquad x=-3\n$$\n\nZwilling mit äußerem Faktor $3$: $x'=10$. At $x=0$ auf der linken Seite gleich $-13$ und rechte Seite gleich $-7$."
   },
   "MATH 4.05": {
     "title": "Lineare Gleichung mit vier Nennern in einem Zug freimachen",
@@ -1232,7 +1232,7 @@
       "**D.** → Richtig\n\nRight-hand constant after $\\times 20$ is $-10$.\n\n$$\n|-10|=10>8\n$$\n\nClears acht.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\n|-22.5|=22.5>22\n$$\n\nClears $22$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Klarer Nenner einmal mit Multiplikiert $20$.\n\n $$\\frac{2x}{5}+\\frac{7}{4}=\\frac{3x}{10}-\\frac{1}{2}$$ \n\n $$\n8x+35=6x-10\n$$ \n\n $$\n2x=-45\\qquad x=-22.5\n$$ \n\nTwin: $16x+35=12x-10$, so $4x=-45$ und $x'=-11.25$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
+    "solution_overview": "Klarer Nenner einmal mit Multiplikiert $20$.\n\n $$\\frac{2x}{5}+\\frac{7}{4}=\\frac{3x}{10}-\\frac{1}{2}$$\n\n $$\n8x+35=6x-10\n$$\n\n $$\n2x=-45\\qquad x=-22.5\n$$\n\nTwin: $16x+35=12x-10$, so $4x=-45$ und $x'=-11.25$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 4.06": {
     "title": "Zwei-Sorten-Kaffeemischung mit Ziel-Durchschnittspreis",
@@ -1251,7 +1251,7 @@
       "**D.** → Richtig\n\n$$\na'-a\\approx3.947\n$$\n\n$$\n3.947>3\n$$\n\nGrade A rises by more than $3$ kg.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n\\dfrac{12.4\\cdot 25}{525.00}=59.05\\%\n$$\n\n$$\n59.05\\%\\nless 60\\%\n$$\n\nMisses $60\\%$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Vorkommen $2\\times 2$ blend once.\n\n $$\na+b=50\\qquad 12.4a+8.6b=525\n$$ \n\n $$\n12.4a+8.6(50-a)=525\\qquad 3.8a=95\\qquad a=25\\qquad b=25\n$$ \n\nCost $525.00$. A-cost share $\\approx0.5905$.\n\nRetarget $540$: $a'=\\dfrac{110}{3.8}\\approx28.947$."
+    "solution_overview": "Vorkommen $2\\times 2$ blend once.\n\n $$\na+b=50\\qquad 12.4a+8.6b=525\n$$\n\n $$\n12.4a+8.6(50-a)=525\\qquad 3.8a=95\\qquad a=25\\qquad b=25\n$$\n\nCost $525.00$. A-cost share $\\approx0.5905$.\n\nRetarget $540$: $a'=\\dfrac{110}{3.8}\\approx28.947$."
   },
   "MATH 4.07": {
     "title": "Normalarbeitszeit und Überstunden mit unbekanntem Stundenlohn",
@@ -1270,7 +1270,7 @@
       "**D.** → Falsch\n\n$$\nw'=16.19\\qquad w=17.16\n$$\n\n$$\n16.19\\nless 17.16\n$$\n\nHöhere Überstundenbelastungen senken den implizierten Grundslohn.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n|w-w'|=0.97\n$$\n\n$$\n0.97>0.80\n$$\n\nLückenräumen $\\$0.80$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Beide Löhne einmal zurückholen.\n\n $$\n8w+4.5w=214.5\\qquad 12.5w=214.5\\qquad w=17.16\n$$ \n\nOvertime dollars $4.5w=77.22$; regular $8w=137.28$.\n\nTwin $8w'+3\\cdot 1.75w'=214.5$: $8w'+5.25w'=214.5$, $13.25w'=214.5$, $w'=16.19$."
+    "solution_overview": "Beide Löhne einmal zurückholen.\n\n $$\n8w+4.5w=214.5\\qquad 12.5w=214.5\\qquad w=17.16\n$$\n\nOvertime dollars $4.5w=77.22$; regular $8w=137.28$.\n\nTwin $8w'+3\\cdot 1.75w'=214.5$: $8w'+5.25w'=214.5$, $13.25w'=214.5$, $w'=16.19$."
   },
   "MATH 4.08": {
     "title": "Lineare Zweibruchgleichung mit Dezimalnennern",
@@ -1289,7 +1289,7 @@
       "**D.** → Richtig\n\n$$\\frac{1}{3.5}-\\frac{1}{2.8}=-\\frac{1}{14}$$\n\nDie Koeffizientenidentität gilt.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nAt $x=300$:\n\n$$\nL\\approx103.714\\qquad R\\approx101.143\n$$\n\n$$\n103.714\\nless 101.143\n$$\n\nLeft side is not strikt weniger als right side.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Kombination $x$ terms once.\n\n $$\\frac{x}{3.5}-\\frac{x}{2.8}=-24$$ \n\n $$\\left(\\frac{1}{3.5}-\\frac{1}{2.8}\\right)x=-24$$ \n\n $$\\frac{1}{3.5}-\\frac{1}{2.8}=-\\frac{1}{14}$$ \n\n $$\n-\\dfrac{1}{14}x=-24\\qquad x=336\n$$ \n\nTwin: $-\\frac{1}{14}x=-18$, so $x'=252$.\n\nAt $x=300$: left $\\approx103.714$, right $\\approx101.143$."
+    "solution_overview": "Kombination $x$ terms once.\n\n $$\\frac{x}{3.5}-\\frac{x}{2.8}=-24$$\n\n $$\\left(\\frac{1}{3.5}-\\frac{1}{2.8}\\right)x=-24$$\n\n $$\\frac{1}{3.5}-\\frac{1}{2.8}=-\\frac{1}{14}$$\n\n $$\n-\\dfrac{1}{14}x=-24\\qquad x=336\n$$\n\nTwin: $-\\frac{1}{14}x=-18$, so $x'=252$.\n\nAt $x=300$: left $\\approx103.714$, right $\\approx101.143$."
   },
   "MATH 4.09": {
     "title": "Säureverdünnung auf eine vorgeschriebene Zwischenkonzentration",
@@ -1308,7 +1308,7 @@
       "**D.** → Falsch\n\n$$\na'-a=20-17.5=2.5\n$$\n\n$$\n2.5\\nless 3\n$$\n\nInduziert $3$ litres.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\\frac{a}{b}=\\frac{17.5}{22.5}=\\frac{7}{9}\\approx 0.777$$\n\n$$\n0.777\\nless 0.80\n$$\n\nQuote misslingt $0.80$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Volumen und Säurebilanz einmal lösen.\n\n $$\na+b=40\\qquad 0.12a+0.04b=3\n$$ \n\n $$\n0.12a+0.04(40-a)=3\\qquad 0.08a=1.4\\qquad a=17.5\\qquad b=22.5\n$$ \n\nRetarget $0.12a+0.04(40-a)=3.2$: $0.08a=1.6$, $a'=20$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
+    "solution_overview": "Volumen und Säurebilanz einmal lösen.\n\n $$\na+b=40\\qquad 0.12a+0.04b=3\n$$\n\n $$\n0.12a+0.04(40-a)=3\\qquad 0.08a=1.4\\qquad a=17.5\\qquad b=22.5\n$$\n\nRetarget $0.12a+0.04(40-a)=3.2$: $0.08a=1.6$, $a'=20$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 4.10": {
     "title": "Parameter $k$, der eindeutige, leere oder ganz $\\mathbb{R}$ als Lösungsmenge festlegt",
@@ -1346,7 +1346,7 @@
       "**D.** → Richtig\n\n$$\nt_{ABC}-t_{AB}\\approx1.3714\n$$\n\n$$\n1.3714>1.2\n$$\n\nLängende Freiräume $1.2$ hours.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\\frac{1}{6}+\\frac{1}{8}-\\frac{1}{12}=\\frac{5}{24}$$\n\nStimmt überein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Add rates once.\n\n $$r_A=\\frac{1}{6}\\qquad r_B=\\frac{1}{8}\\qquad r_C=\\frac{1}{12}$$ \n\n $$r_A+r_B=\\frac{7}{24}\\qquad t_{AB}=\\frac{24}{7}\\approx 3.4286$$ \n\n $$r_A+r_B-r_C=\\frac{5}{24}\\qquad t_{ABC}=\\frac{24}{5}=4.8$$ \n\nLengthening $t_{ABC}-t_{AB}\\approx1.3714$."
+    "solution_overview": "Add rates once.\n\n $$r_A=\\frac{1}{6}\\qquad r_B=\\frac{1}{8}\\qquad r_C=\\frac{1}{12}$$\n\n $$r_A+r_B=\\frac{7}{24}\\qquad t_{AB}=\\frac{24}{7}\\approx 3.4286$$\n\n $$r_A+r_B-r_C=\\frac{5}{24}\\qquad t_{ABC}=\\frac{24}{5}=4.8$$\n\nLengthening $t_{ABC}-t_{AB}\\approx1.3714$."
   },
   "MATH 4.12": {
     "title": "Frontales Treffen und Verfolgung in gleicher Richtung auf einer Strecke von $31.5$ km",
@@ -1365,7 +1365,7 @@
       "**D.** → Richtig\n\n$$\n\\dfrac{t_{\\mathrm{chase}}}{t_{\\mathrm{meet}}}=\\dfrac{10.5}{1.5}=7\n$$\n\n$$\n7>6.5\n$$\n\nDas Chase-to-Meeting-Verhältnis löscht $6.5$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n31.5-21=10.5\n$$\n\n$$\n10.5\\nless 10\n$$\n\nRemaining gap is not strikt weniger als $10$ km.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Erholen Sie beide Male einmal.\n\n $$\nt_{\\mathrm{meet}}=\\dfrac{31.5}{21}=1.5\n$$ \n\nHead-on distances: $12t=18.0$, $9t=13.5$.\n\n $$\nt_{\\mathrm{chase}}=\\dfrac{31.5}{3}=10.5\n$$ \n\nAfter $1$ hour head-on, gap $31.5-21=10.5$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
+    "solution_overview": "Erholen Sie beide Male einmal.\n\n $$\nt_{\\mathrm{meet}}=\\dfrac{31.5}{21}=1.5\n$$\n\nHead-on distances: $12t=18.0$, $9t=13.5$.\n\n $$\nt_{\\mathrm{chase}}=\\dfrac{31.5}{3}=10.5\n$$\n\nAfter $1$ hour head-on, gap $31.5-21=10.5$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 4.13": {
     "title": "Rechteckiger Garten aus Umfang und Längen-Breiten-Differenz",
@@ -1384,7 +1384,7 @@
       "**D.** → Falsch\n\nOriginal area $450.0$; new area $442$.\n\n$$\n442\\nless 450.0\n$$\n\nArea decreases, so it does not increase.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\n\\dfrac{W}{86}=20.93\\%\n$$\n\n$$\n20.93\\%\\nless 40\\%\n$$\n\nWidth share of perimeter misses $40\\%$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Perimeter und gap einmal übersetzen.\n\n $$\n2(L+W)=86\\qquad L=W+7\n$$ \n\n $$\n2(W+7+W)=86\\qquad 4W+14=86\\qquad W=18\\qquad L=25\n$$ \n\nArea $450.0$, diagonal $\\sqrt{L^2+W^2}\\approx30.806$.\n\nmit $a'=9$: $4W'+18=86$, $W'=17$, $L'=26$, area $442$."
+    "solution_overview": "Perimeter und gap einmal übersetzen.\n\n $$\n2(L+W)=86\\qquad L=W+7\n$$\n\n $$\n2(W+7+W)=86\\qquad 4W+14=86\\qquad W=18\\qquad L=25\n$$\n\nArea $450.0$, diagonal $\\sqrt{L^2+W^2}\\approx30.806$.\n\nmit $a'=9$: $4W'+18=86$, $W'=17$, $L'=26$, area $442$."
   },
   "MATH 4.14": {
     "title": "Zwei Einkaufsrechnungen, aus denen Stückpreise rekonstruiert werden",
@@ -1403,7 +1403,7 @@
       "**D.** → Falsch\n\n$$\ny'=\\dfrac{30}{7}\\approx4.2857\\qquad y\\approx5.4286\n$$\n\n$$\n4.2857\\nless 5.4286\n$$\n\nCounterfactual $y$ is smaller, not larger.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\nx-y=\\dfrac{21}{7}=3\n$$\n\n$$\n3>2.80\n$$\n\nLückenräumen $\\$2.80$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Eliminate once.\n\n $$\n4x+3y=50\\qquad 2x+5y=44\n$$ \n\nDie zweite Gleichung verdoppeln:\n\n $$\n4x+10y=88\n$$ \n\nSubtrahieren Sie die erste: grund\n\n $$\n7y=38\\qquad y=\\dfrac{38}{7}\\approx5.4286\n$$ \n\n $$\n4x+3\\cdot\\dfrac{38}{7}=50\\qquad x=\\dfrac{59}{7}\\approx8.4286\n$$ \n\nCounterfactual $4x+3y=50$, $2x+5y=40$: double second $4x+10y=80$; subtract $7y=30$, $y'=\\dfrac{30}{7}$; $x'=\\dfrac{65}{7}\\approx9.2857$."
+    "solution_overview": "Eliminate once.\n\n $$\n4x+3y=50\\qquad 2x+5y=44\n$$\n\nDie zweite Gleichung verdoppeln:\n\n $$\n4x+10y=88\n$$\n\nSubtrahieren Sie die erste: grund\n\n $$\n7y=38\\qquad y=\\dfrac{38}{7}\\approx5.4286\n$$\n\n $$\n4x+3\\cdot\\dfrac{38}{7}=50\\qquad x=\\dfrac{59}{7}\\approx8.4286\n$$\n\nCounterfactual $4x+3y=50$, $2x+5y=40$: double second $4x+10y=80$; subtract $7y=30$, $y'=\\dfrac{30}{7}$; $x'=\\dfrac{65}{7}\\approx9.2857$."
   },
   "MATH 4.15": {
     "title": "Aufschlag und danach Rabatt mit einer absoluten Regalgebühr",
@@ -1422,7 +1422,7 @@
       "**D.** → Richtig\n\n$$\nS\\approx73.132\\qquad S_t\\approx57.900\n$$\n\n$$\nS-S_t\\approx15.232\n$$\n\n$$\n15.232>10\n$$\n\n: Unterwegs- $\\$10$ lower.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n1.28\\times 0.85=1.088\n$$\n\n$$\n1.088\\nless 1.10\n$$\n\nFehlverhalten $1.10$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Verfassen Sie den Preispfad einmal.\n\n $$\nM=c\\cdot 1.28=81.92\n$$ \n\n $$\nD=M\\cdot 0.85=69.63\n$$ \n\n $$\nS=D+3.50=73.13\n$$ \n\nTwin: $D_t=c\\cdot 0.85=54.40$, $S_t=57.90$.\n\nFactor $1.28\\times 0.85=1.088$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
+    "solution_overview": "Verfassen Sie den Preispfad einmal.\n\n $$\nM=c\\cdot 1.28=81.92\n$$\n\n $$\nD=M\\cdot 0.85=69.63\n$$\n\n $$\nS=D+3.50=73.13\n$$\n\nTwin: $D_t=c\\cdot 0.85=54.40$, $S_t=57.90$.\n\nFactor $1.28\\times 0.85=1.088$.\n\nIn allen fünf Erklärungen werden diese wieder Mengen wieder verwendet. Buchstaben fügen nur den zusätzlichen Vergleich, Mix oder kontrafktuellen Arithmetik hinzu, die ihre eigenen Ansprüche erfordern; Sie bauen nicht die gemeinsame Rate, Principal oder Systemlösung neuen."
   },
   "MATH 4.16": {
     "title": "Boot in einer Strömung: Stillwassergeschwindigkeit aus Auf- und Abstromraten",
@@ -1441,7 +1441,7 @@
       "**D.** → Falsch\n\n$$\n\\dfrac{t_{\\downarrow}}{t_{\\uparrow}}=66.67\\%\n$$\n\n$$\n66.67\\%\\nless 60\\%\n$$\n\nNot less than $60\\%$ Der Anspruch scheitert.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nNew upstream speed $11.0$.\n\n$$\n11.0\\nless 10\n$$\n\nEs ist gleich $11$, so it does not fall below $10$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Auch durchschnittlich und durchschnittlich durchschnittlich.\n\n $$\nb=\\dfrac{18+12}{2}=15.0\\qquad c=\\dfrac{18-12}{2}=3.0\n$$ \n\n $$\nt_{\\downarrow}=\\dfrac{45}{18}=2.5\\qquad t_{\\uparrow}=\\dfrac{45}{12}=3.75\n$$ \n\nRound trip $6.25$. Ratio $\\dfrac{t_{\\downarrow}}{t_{\\uparrow}}=0.6667$.\n\nNew upstream $b-(c+1)=11.0$."
+    "solution_overview": "Auch durchschnittlich und durchschnittlich durchschnittlich.\n\n $$\nb=\\dfrac{18+12}{2}=15.0\\qquad c=\\dfrac{18-12}{2}=3.0\n$$\n\n $$\nt_{\\downarrow}=\\dfrac{45}{18}=2.5\\qquad t_{\\uparrow}=\\dfrac{45}{12}=3.75\n$$\n\nRound trip $6.25$. Ratio $\\dfrac{t_{\\downarrow}}{t_{\\uparrow}}=0.6667$.\n\nNew upstream $b-(c+1)=11.0$."
   },
   "MATH 4.17": {
     "title": "Stab, unterteilt im Verhältnis $2:5:8$, und eine separate Bruchgleichung",
@@ -1460,7 +1460,7 @@
       "**D.** → Richtig\n\n$$\nn=\\dfrac{125}{3}\\approx41.6667>40\n$$\n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\n\\dfrac{2}{5}n=16.666666666666668>16\n$$\n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "„Splited the rod und lösen Sie die fraktionierte Gleichung einmal.\n\n $$\nL=3.75\\qquad p_1=\\dfrac{2}{15}L=0.5\\qquad p_2=\\dfrac{5}{15}L=1.25\\qquad p_3=\\dfrac{8}{15}L=2.0\n$$ \n\n $$\\frac{2}{5}n+18=n-7$$ \n\n $$\\frac{2}{5}n-n=-25\\qquad -\\frac{3}{5}n=-25\\qquad n=\\frac{125}{3}$$ \n\n $\\dfrac{2}{5}n=16.666666666666668$."
+    "solution_overview": "„Splited the rod und lösen Sie die fraktionierte Gleichung einmal.\n\n $$\nL=3.75\\qquad p_1=\\dfrac{2}{15}L=0.5\\qquad p_2=\\dfrac{5}{15}L=1.25\\qquad p_3=\\dfrac{8}{15}L=2.0\n$$\n\n $$\\frac{2}{5}n+18=n-7$$\n\n $$\\frac{2}{5}n-n=-25\\qquad -\\frac{3}{5}n=-25\\qquad n=\\frac{125}{3}$$\n\n $\\dfrac{2}{5}n=16.666666666666668$."
   },
   "MATH 4.18": {
     "title": "Gebrochen-lineare Gleichung, die durch ein Zwölffaches freigemacht wird",
@@ -1479,7 +1479,7 @@
       "**D.** → Richtig\n\n$$12\\cdot\\frac{5}{3}=20$$\n\nStimmt überein.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\\frac{-3}{4}+\\frac{13}{6}=\\frac{17}{12}<\\frac{5}{3}$$\n\nLeft side at $x=-6$ is strikt weniger als $\\dfrac{5}{3}$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Klar mit Multiplikator $12$ once.\n\n $$\\frac{x+3}{4}-\\frac{2x-1}{6}=\\frac{5}{3}$$ \n\n $$\n3(x+3)-2(2x-1)=20\n$$ \n\n $$\n3x+9-4x+2=20\\qquad -x+11=20\\qquad x=-9\n$$ \n\nTwin right side $\\frac{7}{3}$: right becomes $28$; $-x+11=28$; $x'=-17$.\n\nAt $x=-6$: $\\frac{-3}{4}-\\frac{-13}{6}=-\\frac{3}{4}+\\frac{13}{6}=\\frac{17}{12}\\approx 1.417$, while $\\frac{5}{3}\\approx 1.667$."
+    "solution_overview": "Klar mit Multiplikator $12$ once.\n\n $$\\frac{x+3}{4}-\\frac{2x-1}{6}=\\frac{5}{3}$$\n\n $$\n3(x+3)-2(2x-1)=20\n$$\n\n $$\n3x+9-4x+2=20\\qquad -x+11=20\\qquad x=-9\n$$\n\nTwin right side $\\frac{7}{3}$: right becomes $28$; $-x+11=28$; $x'=-17$.\n\nAt $x=-6$: $\\frac{-3}{4}-\\frac{-13}{6}=-\\frac{3}{4}+\\frac{13}{6}=\\frac{17}{12}\\approx 1.417$, while $\\frac{5}{3}\\approx 1.667$."
   },
   "MATH 4.19": {
     "title": "Wochenlohn mit Überstundenzuschlag und prozentualem Abzug",
@@ -1498,7 +1498,7 @@
       "**D.** → Richtig\n\n$$\nN_{18}-N_{22}=26.64\n$$\n\n$$\n26.64>25\n$$\n\nGemahlen $\\$25$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n\\dfrac{O}{G}=20.00\\%\n$$\n\n$$\n20.00\\%\\nless 22\\%\n$$\n\nOvertime share misses $22\\%$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Bauen Sie Brutto und Netto einmal.\n\n $$\nR=36\\cdot14.8=532.80\\qquad O=6\\cdot 1.5\\cdot14.8=133.20\n$$ \n\n $$\nG=R+O=666.00\\qquad N_{18}=0.82G=546.12\n$$ \n\n $$\nN_{22}=0.78G=519.48\n$$ \n\nOvertime share of gross: $\\dfrac{O}{G}\\approx0.2000$."
+    "solution_overview": "Bauen Sie Brutto und Netto einmal.\n\n $$\nR=36\\cdot14.8=532.80\\qquad O=6\\cdot 1.5\\cdot14.8=133.20\n$$\n\n $$\nG=R+O=666.00\\qquad N_{18}=0.82G=546.12\n$$\n\n $$\nN_{22}=0.78G=519.48\n$$\n\nOvertime share of gross: $\\dfrac{O}{G}\\approx0.2000$."
   },
   "MATH 4.20": {
     "title": "Voreilende Uhr: angezeigte verstrichene Zeit in wahre verstrichene Zeit umrechnen",
@@ -1517,7 +1517,7 @@
       "**D.** → Falsch\n\nClock advance $T_{12}\\cdot\\dfrac{62.5}{60}=5.0$.\n\n$$\n5.0\\nless 5\n$$\n\nDoes not exceed $5$ hours.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n2.5T\\approx10.400\n$$\n\n$$\n10.400>10\n$$\n\nGain räumt zehn Minuten.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Konvertieren Sie Verstärkung einmal in einen Skalierungsfaktor.\n\nPro wahrer Stunde rückt die Uhr vor $62.5$ minutes, so\n\n $$\nC=T\\cdot\\dfrac{62.5}{60}\n$$ \n\nmit Anzeige $C=\\dfrac{13}{3}$ hours:\n\n $$\nT=\\dfrac{13}{3}\\cdot\\dfrac{60}{62.5}\\approx4.1600\n$$ \n\ngroßer Publikums $12$ -minute lead: $2.5T=12$, $T_{12}=4.8$.\n\nClock advance over $T_{12}$: $T_{12}\\cdot\\dfrac{62.5}{60}=5.0$.\n\nGain over recovered $T$: $2.5T\\approx10.400$ minutes."
+    "solution_overview": "Konvertieren Sie Verstärkung einmal in einen Skalierungsfaktor.\n\nPro wahrer Stunde rückt die Uhr vor $62.5$ minutes, so\n\n $$\nC=T\\cdot\\dfrac{62.5}{60}\n$$\n\nmit Anzeige $C=\\dfrac{13}{3}$ hours:\n\n $$\nT=\\dfrac{13}{3}\\cdot\\dfrac{60}{62.5}\\approx4.1600\n$$\n\ngroßer Publikums $12$ -minute lead: $2.5T=12$, $T_{12}=4.8$.\n\nClock advance over $T_{12}$: $T_{12}\\cdot\\dfrac{62.5}{60}=5.0$.\n\nGain over recovered $T$: $2.5T\\approx10.400$ minutes."
   },
   "MATH 5.01": {
     "title": "Dreistrom-Premiummischung mit verdoppelter Mittelqualitäts-Vorgabe",
@@ -1593,7 +1593,7 @@
       "**D.** → Richtig\n\n$$\n3\\cdot 24+2\\cdot 15=72+30=102\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\n5\\cdot 24+4\\cdot 15=120+60=180>175\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "$$\n3x+2y+s=118,\\qquad 5x+4y+s=196,\\qquad s=16\n$$\n\n$$\n3x+2y=102,\\qquad 5x+4y=180\n$$\n\n$$\n6x+4y=204\\qquad\\Rightarrow\\qquad x=24,\\quad y=15\n$$\n\n**Antwort.** $x=24$, $y=15$, $s=16$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
+    "solution_overview": "$$\n3x+2y+s=118,\\qquad 5x+4y+s=196,\\qquad s=16\n$$\n\n$$\n3x+2y=102,\\qquad 5x+4y=180\n$$\n\n$$\n6x+4y=204\\qquad\\Rightarrow\\qquad x=24,\\quad y=15\n$$\n\n**Antwort.** $x=24$, $y=15$, $s=16$."
   },
   "MATH 5.05": {
     "title": "Zweikonto-Sparaufteilung mit verknüpfter Zinsdifferenz",
@@ -1650,7 +1650,7 @@
       "**D.** → Richtig\n\n$$\n9+180\\cdot 0.16=9+28.80=37.80\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n58.00-46.80=11.20\\neq 12.00\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$$\nf+180r=46.80 \\tag{1}\n$$\n\n$$\nf+250r=58.00 \\tag{2}\n$$\n\nSubtract:\n\n$$\n70r=11.20\\qquad\\Rightarrow\\qquad r=0.16\n$$\n\n$$\nf=46.80-180\\cdot 0.16=46.80-28.80=18\n$$\n\n**Antwort.** $f=18$, $r=0.16$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
+    "solution_overview": "$$\nf+180r=46.80 \\tag{1}\n$$\n\n$$\nf+250r=58.00 \\tag{2}\n$$\n\nSubtract:\n\n$$\n70r=11.20\\qquad\\Rightarrow\\qquad r=0.16\n$$\n\n$$\nf=46.80-180\\cdot 0.16=46.80-28.80=18\n$$\n\n**Antwort.** $f=18$, $r=0.16$."
   },
   "MATH 5.08": {
     "title": "Zweispurige Wochenproduktion mit ausschussbereinigter Bilanz",
@@ -1669,7 +1669,7 @@
       "**D.** → Richtig\n\n$$\n0.90x+0.95(1000-x)=935\n$$\n\n$$\n950-0.05x=935\\qquad\\Rightarrow\\qquad 0.05x=15\\qquad\\Rightarrow\\qquad x=300<500\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\n0.92\\cdot 500+0.95\\cdot 500=460+475=935\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Übersetze die Rohstück-Bilanz und die Gutstück-Auslieferung einmal:\n\n$$\nx+y=1000 \\tag{1}\n$$\n\n$$\n0.92x+0.95y=935 \\tag{2}\n$$\n\nSetze $y=1000-x$ in (2) ein:\n\n$$\n0.92x+0.95(1000-x)=935\n$$\n\n$$\n950-0.03x=935\n$$\n\n$$\n0.03x=15\\qquad\\Rightarrow\\qquad x=500,\\ y=500\n$$\n\n**Antwort.** $x=500$, $y=500$. Die Buchstaben nutzen diese Wochenmengen für Ausschuss-Kontrafaktuale und Gutstück-Prüfungen."
+    "solution_overview": "Übersetze die Rohstück-Bilanz und die Gutstück-Auslieferung einmal:\n\n$$\nx+y=1000 \\tag{1}\n$$\n\n$$\n0.92x+0.95y=935 \\tag{2}\n$$\n\nSetze $y=1000-x$ in (2) ein:\n\n$$\n0.92x+0.95(1000-x)=935\n$$\n\n$$\n950-0.03x=935\n$$\n\n$$\n0.03x=15\\qquad\\Rightarrow\\qquad x=500,\\ y=500\n$$\n\n**Antwort.** $x=500$, $y=500$."
   },
   "MATH 5.09": {
     "title": "Zwei-Filialen-Nettoerlöse zur Rekonstruktion von Sofa- und Tischpreisen",
@@ -1897,7 +1897,7 @@
       "**D.** → Richtig\n\n$$\n10(o+8)+15o=420\\Rightarrow 25o=340\\Rightarrow o=\\frac{68}{5}=13.6<\\frac{72}{5}\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\n\\frac{p}{o}=\\frac{102/5}{72/5}=\\frac{102}{72}=\\frac{17}{12}\\approx 1.4167<1.5\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "$$\np=o+6\n$$\n\n$$\n10(o+6)+15o=420\n$$\n\n$$\n10o+60+15o=420\\qquad\\Rightarrow\\qquad 25o=360\\qquad\\Rightarrow\\qquad o=\\frac{72}{5},\\ p=\\frac{102}{5}\n$$\n\n**Antwort.** $o=\\dfrac{72}{5}$, $p=\\dfrac{102}{5}$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
+    "solution_overview": "$$\np=o+6\n$$\n\n$$\n10(o+6)+15o=420\n$$\n\n$$\n10o+60+15o=420\\qquad\\Rightarrow\\qquad 25o=360\\qquad\\Rightarrow\\qquad o=\\frac{72}{5},\\ p=\\frac{102}{5}\n$$\n\n**Antwort.** $o=\\dfrac{72}{5}$, $p=\\dfrac{102}{5}$."
   },
   "MATH 6.01": {
     "title": "Parametrische rationale Ungleichung mit Polverschiebung $x=a$",
@@ -1916,7 +1916,7 @@
       "**D.** → Falsch\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{x-7}{x-4}\\le 0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=7\n$$\n\n$$\nx=4\\ \\mathrm{(pole)}\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,4)$ | $+$ |\n| $(4,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(4,7]\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\n$$(4,7]\\neq(3,5]$$\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nAt $x=3$Der Nenner ist Null, also ist der rationale Ausdruck undefiniert.\n\nUngleichung macht nur auf seiner Domäne Sinn$x\\neq 3$Deshalb ist der Pol$x=a$aus dem Lösungsset ausgeschlossen ist.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "für$a=3$Die Modell-Ungleichungsfamilie ist$\\dfrac{x-(2a-1)}{x-a}\\le 0$, i.e. $\\dfrac{x-5}{x-3}\\le 0$.\n\nKritische Punkte: Zähler Null$x=5$ (included for $\\le$), pole $x=3$ (excluded).\n\nZeichen: negativ am$(3,5]$, positive elsewhere (where defined).\n\nLösung des Modells:$(3,5]$.\n\nDie Buchstaben prüfen behauptete Lösungsmengen, Parameterwechsel und verwandte Betrags-/Quadratformen aus denselben Buchstaben."
+    "solution_overview": "für$a=3$Die Modell-Ungleichungsfamilie ist$\\dfrac{x-(2a-1)}{x-a}\\le 0$, i.e. $\\dfrac{x-5}{x-3}\\le 0$.\n\nKritische Punkte: Zähler Null$x=5$ (included for $\\le$), pole $x=3$ (excluded).\n\nZeichen: negativ am$(3,5]$, positive elsewhere (where defined).\n\nLösung des Modells:$(3,5]$."
   },
   "MATH 6.02": {
     "title": "Quadrat-über-linear-Ungleichung mit Buchstabenkoeffizienten",
@@ -1992,7 +1992,7 @@
       "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-2)(x-4)}{x+2}<0\n$$\n\nKritische Punkte (Nullstellen des Zählers und ausgeschlossene Polstellen):\n\n$$\nx=2,\\ x=4\n$$\n\n$$\nx=-2\n$$\n\nVorzeichentabelle auf den offenen Intervallen, die durch diese Punkte bestimmt werden:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen der Tabelle gegen das Ungleichheitszeichen liefert\n\n$$\n(-\\infty,-2)\\cup(2,4)\n$$\n\nund stimmt mit der behaupteten Menge überein.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nBei $x=6$ ist der Zähler null, also der Wert $0$, was die strikte Ungleichung $<0$ nicht erfüllt.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Mit $b=3$: $\\dfrac{(x-3)(x-6)}{x+3}<0$.\n\nKritische Punkte: $x=-3$ (Polstelle), $x=3$, $x=6$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $-$ |\n| $(-3,3)$ | $+$ |\n| $(3,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nAblesen von $<0$ liefert $(-\\infty,-3)\\cup(3,6)$.\n\n**Antwort.** $(-\\infty,-3)\\cup(3,6)$. Die Buchstaben nutzen diese kritischen Punkte erneut für Testpunkt- und Parameterwechsel-Prüfungen."
+    "solution_overview": "Mit $b=3$: $\\dfrac{(x-3)(x-6)}{x+3}<0$.\n\nKritische Punkte: $x=-3$ (Polstelle), $x=3$, $x=6$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $-$ |\n| $(-3,3)$ | $+$ |\n| $(3,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nAblesen von $<0$ liefert $(-\\infty,-3)\\cup(3,6)$.\n\n**Antwort.** $(-\\infty,-3)\\cup(3,6)$."
   },
   "MATH 6.06": {
     "title": "Rationale Ungleichung über einem quadratischen Nenner",
@@ -2011,7 +2011,7 @@
       "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{x}{x^{2}-9}>0\n$$\n\nKritische Stellen (Zählernullstellen und ausgeschlossene Pole):\n\n$$\nx=0\n$$\n\n$$\nx=\\pm 3\n$$\n\nVorzeichentabelle auf den durch diese Punkte bestimmten offenen Intervallen:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $-$ |\n| $(-3,0)$ | $+$ |\n| $(0,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen der Tafel gegen das Ungleichungszeichen liefert\n\n$$\n(-3,0)\\cup(3,\\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n\\frac{4+2}{16-9}=\\frac{6}{7}>0\n$$\n\nso $x=4$befriedigt die Ungleichung; die Behauptung, dass sie scheitert, ist falsch.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$\\dfrac{x+2}{(x-3)(x+3)}>0$.\n\nKritische Punkte$x=-3,-2,3$.\n\nSolution: $(-3,-2)\\cup(3,\\infty)$.\n\n**Antwort.** $(-3,-2)\\cup(3,\\infty)$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
+    "solution_overview": "$\\dfrac{x+2}{(x-3)(x+3)}>0$.\n\nKritische Punkte$x=-3,-2,3$.\n\nSolution: $(-3,-2)\\cup(3,\\infty)$.\n\n**Antwort.** $(-3,-2)\\cup(3,\\infty)$."
   },
   "MATH 6.07": {
     "title": "Quadratische Ungleichung mit führendem Buchstabenkoeffizienten",
@@ -2030,7 +2030,7 @@
       "**D.** → Richtig\n\n$(-1,1)\\subset[-3,3]$, und every point of $[-3,3]$löst die Ungleichung.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$$\n2(16-9)=14>0\n$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$$\n2(x-3)(x+3)\\le 0\\qquad\\Leftrightarrow\\qquad (x-3)(x+3)\\le 0\n$$\n\nsince $a=2>0$. Solution $[-3,3]$.\n\n**Antwort.** $[-3,3]$.\n\nDie Buchstaben nutzen die rekonstruierten Werte erneut und führen nur die behauptungsspezifische Rechnung aus, einschließlich jeder auf der Karte genannten kontrafaktischen Regeländerung."
+    "solution_overview": "$$\n2(x-3)(x+3)\\le 0\\qquad\\Leftrightarrow\\qquad (x-3)(x+3)\\le 0\n$$\n\nsince $a=2>0$. Solution $[-3,3]$.\n\n**Antwort.** $[-3,3]$."
   },
   "MATH 6.08": {
     "title": "Zusammengesetzte rationale Ungleichung über kritische-Punkte-Algebra",
@@ -2144,7 +2144,7 @@
       "**D.** → Richtig\n\n$$\n|x-5|\\le 3\\qquad\\Rightarrow\\qquad 2\\le x\\le 8\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\n9-1=8=2\\cdot 4=2v\n$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "$$\n|x-5|\\le 4\\qquad\\Leftrightarrow\\qquad 1\\le x\\le 9\n$$\n\n**Antwort.** $[1,9]$.\n\nDie Buchstaben nutzen die gewonnenen Werte erneut und führen nur behauptungsspezifische Rechnungen aus, einschließlich jeder auf der Karte genannten kontrafaktischen Parameteränderung."
+    "solution_overview": "$$\n|x-5|\\le 4\\qquad\\Leftrightarrow\\qquad 1\\le x\\le 9\n$$\n\n**Antwort.** $[1,9]$."
   },
   "MATH 6.14": {
     "title": "Rationale Ungleichung nach Freimachen eines positiven Faktors $w$",
@@ -2201,7 +2201,7 @@
       "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-2)(x-4)(x-8)}{x+2}>0\n$$\n\nKritische Punkte (Nullstellen des Zählers und ausgeschlossene Polstellen):\n\n$$\nx=2,4,8\n$$\n\n$$\nx=-2\n$$\n\nVorzeichentabelle auf den offenen Intervallen, die durch diese Punkte bestimmt werden:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,2)$ | $-$ |\n| $(2,4)$ | $+$ |\n| $(4,8)$ | $-$ |\n| $(8,\\infty)$ | $+$ |\n\nAblesen der Tabelle gegen das Ungleichheitszeichen liefert\n\n$$\n(-\\infty,-2)\\cup(2,4)\\cup(8,\\infty)\n$$\n\nund stimmt mit der behaupteten Menge überein.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nBei $x=2$ ist der Zähler null, also der Wert $0$, was $>0$ nicht erfüllt.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Mit $h=1$: $\\dfrac{(x-1)(x-2)(x-4)}{x+1}>0$.\n\nKritische Punkte: Nullstellen $x=1,2,4$ und Polstelle $x=-1$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen von $>0$ liefert $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$.\n\n**Antwort.** $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$. Die Buchstaben nutzen die Tabelle erneut für Testpunkte und den Wechsel $h=2$."
+    "solution_overview": "Mit $h=1$: $\\dfrac{(x-1)(x-2)(x-4)}{x+1}>0$.\n\nKritische Punkte: Nullstellen $x=1,2,4$ und Polstelle $x=-1$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen von $>0$ liefert $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$.\n\n**Antwort.** $(-\\infty,-1)\\cup(1,2)\\cup(4,\\infty)$."
   },
   "MATH 6.17": {
     "title": "Betrags-Konjunktion mit rationaler Nebenbedingung",
@@ -2239,7 +2239,7 @@
       "**D.** → Richtig\n\nGehe von der behaupteten Ungleichung aus.\n\n$$\n\\frac{(x-1)(x-3)}{x-6}\\le 0\n$$\n\nKritische Punkte (Nullstellen des Zählers und ausgeschlossene Polstellen):\n\n$$\nx=1,\\ x=3\n$$\n\n$$\nx=6\n$$\n\nVorzeichentabelle auf den offenen Intervallen, die durch diese Punkte bestimmt werden:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,3)$ | $+$ |\n| $(3,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nAblesen der Tabelle gegen das Ungleichheitszeichen liefert\n\n$$\n(-\\infty,1]\\cup[3,6)\n$$\n\nund stimmt mit der behaupteten Menge überein.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nPolstellen bleiben nach dem Faktorisieren undefiniert. $x=4$ ist ausgeschlossen.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Mit $z=2$: $\\dfrac{x^{2}-3x+2}{x-4}=\\dfrac{(x-1)(x-2)}{x-4}\\le 0$.\n\nKritische Punkte: Nullstellen $x=1,2$ und Polstelle $x=4$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen von $\\le 0$ liefert $(-\\infty,1]\\cup[2,4)$.\n\n**Antwort.** $(-\\infty,1]\\cup[2,4)$. Die Buchstaben nutzen diese kritischen Punkte erneut für Zugehörigkeitstests und den Wechsel $z=3$."
+    "solution_overview": "Mit $z=2$: $\\dfrac{x^{2}-3x+2}{x-4}=\\dfrac{(x-1)(x-2)}{x-4}\\le 0$.\n\nKritische Punkte: Nullstellen $x=1,2$ und Polstelle $x=4$.\n\nVorzeichentabelle:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAblesen von $\\le 0$ liefert $(-\\infty,1]\\cup[2,4)$.\n\n**Antwort.** $(-\\infty,1]\\cup[2,4)$."
   },
   "MATH 6.19": {
     "title": "Verschachtelte Intervallbehauptung aus zwei parametrischen Schnitten",
@@ -2258,7 +2258,7 @@
       "**D.** → Richtig\n\n$$\n|x-6|\\le 2\\qquad\\Rightarrow\\qquad 4\\le x\\le 8\n$$\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\n$x=7\\in A$, aber $x=7$ ist Polstelle für $B$, also $7\\notin B$ und damit $7\\notin A\\cap B$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "$A=[3,7]$.\n\n$B$: $\\dfrac{x-4}{x-7}\\le 0$ → Polstelle $7$, Nullstelle $4$ → $[4,7)$.\n\n$A\\cap B=[4,7)$.\n$A\\cup B=[3,7]$.\n$A\\setminus B=[3,4)$.\n\n**Antwort.** $A=[3,7]$, $B=[4,7)$.\n\nDie Buchstaben nutzen die gewonnenen Werte erneut und führen nur behauptungsspezifische Rechnungen aus, einschließlich jeder auf der Karte genannten kontrafaktischen Parameteränderung."
+    "solution_overview": "$A=[3,7]$.\n\n$B$: $\\dfrac{x-4}{x-7}\\le 0$ → Polstelle $7$, Nullstelle $4$ → $[4,7)$.\n\n$A\\cap B=[4,7)$.\n$A\\cup B=[3,7]$.\n$A\\setminus B=[3,4)$.\n\n**Antwort.** $A=[3,7]$, $B=[4,7)$."
   },
   "MATH 6.20": {
     "title": "Gemischter Abschluss aus Betrags- und rationaler Ungleichung",
