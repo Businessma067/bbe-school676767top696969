@@ -6133,75 +6133,78 @@ It constrains the slope of profit, not the height: the stock $P(Q^{\\ast})$ may 
     title: "Marginal utility in plain language",
     subsection: "11.2",
     context:
-      "A consumer's satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Decide TRUE or FALSE for each claim.",
+      "A consumer's satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Analysts report $U'(3)=2$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Marginal utility at $x$ is the derivative $U'(x)$.",
-      "If $U'(x)>0$, a little extra leisure raises satisfaction near that $x$.",
-      "If $U'(x)<0$, a little extra leisure raises satisfaction near that $x$.",
-      "The value $U(x)$ itself is already the marginal utility.",
-      "The sign of $U'(x)$ answers whether satisfaction is locally increasing or decreasing in leisure.",
+      "Near $x=3$, one extra hour of leisure raises satisfaction by about $2$ utility units.",
+      "$U'(3)=2$ means that total utility at $x=3$ equals $2$.",
+      "The linear approximation is $U(3+\\Delta x)-U(3)\\approx 2\\cdot\\Delta x$ for small $\\Delta x$.",
+      "Marginal utility is the derivative $U'(x)$, not the stock $U(x)$ itself.",
+      "Because $U'(3)=2>0$, utility is locally increasing near $x=3$.",
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Marginal utility is the instantaneous rate of change of satisfaction with respect to leisure hours, which is exactly the derivative $U^{\\prime}(x)$
+The derivative $U^{\\prime}(3)$ is the instantaneous rate of change of satisfaction with respect to leisure hours.
 
-In the same vocabulary used for cost, $U^{\\prime}(x)$ is the marginal utility of leisure at $x$ hours.
+Its value $2$ therefore means about $2$ utility units per extra leisure hour near $x=3$.
+
+That is the same one-unit reading used for marginal cost: the derivative turns a small step in the independent variable into an approximate change in the stock.
+
+So the statement is True.`,
+      `**B.** → False
+
+Total utility at $x=3$ is the function value $U(3)$, a stock of satisfaction.
+
+The report $U^{\\prime}(3)=2$ is a rate (utility units per hour), not that stock.
+
+Nothing in the report identifies $U(3)$; someone can already feel quite satisfied while the next leisure hour still adds about $2$ units.
+
+$$
+U^{\\prime}(3) = 2
+$$
+
+So the statement is False.`,
+      `**C.** → True
+
+The precise local meaning of the derivative is the linear approximation for small steps:
+
+$$
+U(3+\\Delta x)-U(3)\\approx U^{\\prime}(3)\\,\\Delta x = 2\\cdot\\Delta x
+$$
+
+That is exactly the reading named in the claim.
+
+For example, $\\Delta x=0.5$ predicts about $1$ extra utility unit for half an hour: the same derivative, scaled by the step size.
+
+So the statement is True.`,
+      `**D.** → True
+
+Marginal utility is the instantaneous rate of change of satisfaction, which is exactly the derivative $U^{\\prime}(x)$.
+
+The value $U(x)$ itself is the stock of satisfaction at $x$ hours, not already the marginal utility.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
 So the statement is True.`,
-      `**B.** → True
+      `**E.** → True
 
 A positive derivative means the utility function is locally increasing.
 
-Hence if $U^{\\prime}(x)>0$, a little extra leisure raises satisfaction near that $x$
+Hence if $U^{\\prime}(3)=2>0$, a little extra leisure raises satisfaction near $x=3$.
 
 Equivalently, the consumer is still on an upward stretch of the utility curve at that $x$.
-
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
-
-So the statement is True.`,
-      `**C.** → False
-
-If $U^{\\prime}(x)<0$, utility is locally decreasing, and a little extra leisure lowers satisfaction near that $x$ rather than raising it
-
-On a downward stretch of $U$, extra leisure reduces satisfaction — the sign of $U^{\\prime}$ is the whole local story.
-
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
-
-So the statement is False.`,
-      `**D.** → False
-
-The value $U(x)$ is the stock of satisfaction at $x$ hours, not its rate of change.
-
-Marginal utility is the derivative $U^{\\prime}(x)$, and $U(x)$ itself is not already the marginal utility
-
-A student can already feel quite satisfied ($U$ large) while the next hour of leisure adds little or even subtracts ($U^{\\prime}\\le 0$).
-
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
-
-So the statement is False.`,
-      `**E.** → True
-
-The sign of $U^{\\prime}(x)$ tells whether $U$ is locally rising or falling.
-
-That is exactly whether satisfaction is locally increasing or decreasing in leisure
-
-That is the same increase/decrease test used for cost, revenue, and profit — only the economic label on $U$ has changed.
-
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
 So the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 46,
-    solution_overview: `Satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Marginal utility is the derivative
-$$U^{\\prime}(x),$$
-not the stock $U(x)$ itself. The linear approximation
-$$U(x+\\Delta x)-U(x)\\approx U^{\\prime}(x)\\,\\Delta x$$
-shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}(x)>0$ a little extra leisure raises satisfaction, while if $U^{\\prime}(x)<0$ a little extra leisure lowers it. Throughout, treat $U(x)$ as a stock of satisfaction and $U^{\\prime}(x)$ as its local rate — the same level-versus-slope discipline used for cost and profit.`,
+    solution_overview: `Satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Analysts report the derivative
+$$U^{\\prime}(3)=2.
+$$
+This number is a rate (utility units per hour), not the stock $U(3)$. The linear approximation near $x=3$ is
+$$U(3+\\Delta x)-U(3)\\approx 2\\cdot\\Delta x$$
+for small $\\Delta x$. The convenient unit step $\\Delta x=1$ says that one more leisure hour raises satisfaction by about $2$ units. Because $U^{\\prime}(3)>0$, utility is locally increasing there. Marginal utility is the derivative $U^{\\prime}(x)$, not the stock $U(x)$ — the same level-versus-slope discipline used for cost and profit.`,
   },
   {
     id: "math-11-47",
