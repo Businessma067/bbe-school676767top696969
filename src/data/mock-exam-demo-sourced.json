@@ -735,16 +735,16 @@
     {
       "case_id": "DEMO MATH 4.H02",
       "id": "demo-math-4-h02",
-      "title": "Five independent hard equations",
+      "title": "Five mixed hard equations — no shortcuts",
       "chapter": 4,
-      "subsection": "4.3",
-      "context": "Decide whether each claim is true or false. Five different equations; do not reuse roots across letters.",
+      "subsection": "4.H",
+      "context": "Decide whether each claim is true or false. Five independent equations of deliberately mixed types (double radical, rational identity-trap, absolute-versus-quadratic, logarithmic, and radical-plus-absolute). Work each letter separately; do not reuse roots across letters.",
       "statements": [
-        "The system $\\sqrt{3x+1}=x-1$, $x\\ge 1$ has exactly two real solutions.",
-        "After clearing denominators, $\\dfrac{x+2}{x-3}+\\dfrac{x-3}{x+2}=\\dfrac{5}{2}$ has exactly two domain-legal real roots.",
-        "The equation $|x^{2}-7x+10|=2x-4$ has a real solution strictly larger than $8$.",
-        "There exists a real parameter $k$ such that $x^{2}-2kx+(k^{2}-4)=0$ has a double root at $x=0$.",
-        "$\\log_{2}(x-2)+\\log_{2}(x+2)=\\log_{2}(3x)$ forces $x=4$ as its only domain-legal real solution."
+        "The double-radical equation $\\sqrt{3x+7}+\\sqrt{x+1}=4$ has exactly two distinct real solutions.",
+        "After excluding poles, $\\dfrac{x+2}{x-1}+\\dfrac{2x-3}{x+4}=\\dfrac{3x^{2}+5x-2}{(x-1)(x+4)}$ has exactly one domain-legal real root, namely $x=\\dfrac{13}{4}$.",
+        "The absolute-value equation $|x^{2}-6x+5|=3x-4$ has exactly one real solution.",
+        "$\\log_{2}(x-1)+\\log_{2}(x+3)=\\log_{2}(3x+5)$ forces $x=4$ as its only domain-legal real solution.",
+        "The mixed equation $\\sqrt{x+3}+|x-1|=4$ has exactly three distinct real solutions."
       ],
       "answer_key": [
         false,
@@ -753,15 +753,15 @@
         false,
         true
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Each letter is a separate equation. Check domain restrictions before counting roots, and discard extraneous solutions produced by squaring or clearing denominators.",
       "tactical_explanations": [
-        "**A.** → False\n\nDomain requires $x\\ge 1$ and $x-1\\ge 0$, so $x\\ge 1$. Square both sides:\n\n$$\n3x+1=(x-1)^{2}=x^{2}-2x+1\n$$\n\n$$\n0=x^{2}-5x=x(x-5)\n$$\n\nCandidates $x=0$ (outside the domain) and $x=5$. Check $x=5$:\n\n$$\n\\sqrt{16}=4=5-1\n$$\n\nExactly one real solution, not two.\n\nSo the statement is False.",
-        "**B.** → True\n\nDomain: $x\\neq 3$ and $x\\neq -2$. Let $u=x+2$ and $v=x-3$, so the equation is $\\dfrac{u}{v}+\\dfrac{v}{u}=\\dfrac{5}{2}$. Multiply by $2uv$:\n\n$$\n2u^{2}+2v^{2}=5uv\n$$\n\n$$\n2(u^{2}+v^{2})-5uv=0\n$$\n\nSubstitute back:\n\n$$\n2\\bigl((x+2)^{2}+(x-3)^{2}\\bigr)-5(x+2)(x-3)=0\n$$\n\n$$\n2(2x^{2}-2x+13)-5(x^{2}-x-6)=0\n$$\n\n$$\n4x^{2}-4x+26-5x^{2}+5x+30=0\n$$\n\n$$\n-x^{2}+x+56=0\n$$\n\n$$\nx^{2}-x-56=0\n$$\n\n$$\nx=\\frac{1\\pm\\sqrt{1+224}}{2}=\\frac{1\\pm 15}{2}\n$$\n\nso $x=8$ or $x=-7$. Both avoid the poles $\\{-2,3\\}$, so exactly two domain-legal roots.\n\nSo the statement is True.",
-        "**C.** → False\n\nRequire $2x-4\\ge 0$, so $x\\ge 2$. For $x\\ge 5$:\n\n$$\nx^{2}-7x+10=2x-4\n$$\n\n$$\nx^{2}-9x+14=0\n$$\n\n$$\n(x-2)(x-7)=0\n$$\n\nThe only candidate in $[5,+\\infty)$ is $x=7$. Check:\n\n$$\n|49-49+10|=10=2\\cdot 7-4\n$$\n\nBut $7\\not> 8$. On $[2,5]$ the same quadratic appears after flipping the absolute value and again yields no root larger than $8$.\n\nSo the statement is False.",
-        "**D.** → False\n\nA double root at $x=0$ requires both the value and the derivative to vanish there:\n\n$$\nk^{2}-4=0\n$$\n\n$$\n-2k=0\n$$\n\nThe second forces $k=0$, but then $k^{2}-4=-4\\neq 0$. No such real $k$ exists.\n\nSo the statement is False.",
-        "**E.** → True\n\nDomain: $x>2$ (so that $x-2>0$, $x+2>0$, and $3x>0$). Combine logs:\n\n$$\n\\log_{2}\\bigl((x-2)(x+2)\\bigr)=\\log_{2}(3x)\n$$\n\n$$\nx^{2}-4=3x\n$$\n\n$$\nx^{2}-3x-4=0\n$$\n\n$$\n(x-4)(x+1)=0\n$$\n\nCandidates $x=4$ and $x=-1$. Only $x=4$ lies in the domain. Check:\n\n$$\n\\log_{2} 2+\\log_{2} 6=\\log_{2} 12=\\log_{2}(3\\cdot 4)\n$$\n\nSo $x=4$ is the unique domain-legal solution.\n\nSo the statement is True."
-      ]
+        "**A.** → False\n\nDomain requires both radicands nonnegative:\n\n$$\n3x+7\\ge 0\n$$\n\n$$\nx\\ge -\\dfrac{7}{3}\n$$\n\n$$\nx+1\\ge 0\n$$\n\n$$\nx\\ge -1\n$$\n\nso overall $x\\ge -1$. Isolate one root and keep the right-hand side nonnegative:\n\n$$\n\\sqrt{3x+7}=4-\\sqrt{x+1}\n$$\n\n$$\n\\sqrt{x+1}\\le 4\n$$\n\n$$\nx+1\\le 16\n$$\n\n$$\nx\\le 15\n$$\n\nSquare once:\n\n$$\n3x+7=16-8\\sqrt{x+1}+(x+1)\n$$\n\n$$\n3x+7=17+x-8\\sqrt{x+1}\n$$\n\n$$\n2x-10=-8\\sqrt{x+1}\n$$\n\n$$\n5-x=4\\sqrt{x+1}\n$$\n\nwhich also forces $x\\le 5$. Square again:\n\n$$\n(5-x)^{2}=16(x+1)\n$$\n\n$$\n25-10x+x^{2}=16x+16\n$$\n\n$$\nx^{2}-26x+9=0\n$$\n\n$$\nx=13\\pm 4\\sqrt{10}\n$$\n\nOnly $x=13-4\\sqrt{10}$ lies in the admissible window $[-1,5]$; the larger root $13+4\\sqrt{10}$ exceeds $5$ and is discarded. Exactly one real solution remains.\n\nSo the statement is False.\n",
+        "**B.** → True\n\nPoles are $x=1$ and $x=-4$. Clear the common denominator $(x-1)(x+4)$:\n\n$$\n(x+2)(x+4)+(2x-3)(x-1)=3x^{2}+5x-2\n$$\n\nExpand the left-hand side carefully:\n\n$$\n(x+2)(x+4)=x^{2}+6x+8\n$$\n\n$$\n(2x-3)(x-1)=2x^{2}-2x-3x+3=2x^{2}-5x+3\n$$\n\n$$\nx^{2}+6x+8+2x^{2}-5x+3=3x^{2}+x+11\n$$\n\nThe cleared equation is therefore\n\n$$\n3x^{2}+x+11=3x^{2}+5x-2\n$$\n\n$$\nx+11=5x-2\n$$\n\n$$\n13=4x\n$$\n\n$$\nx=\\dfrac{13}{4}\n$$\n\nThis value is neither pole, so it is the unique domain-legal root, matching the claim.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nThe right-hand side of an absolute-value equation must be nonnegative:\n\n$$\n3x-4\\ge 0\n$$\n\n$$\nx\\ge \\dfrac{4}{3}\n$$\n\nSplit into the two sign cases for the quadratic.\n\nCase $x^{2}-6x+5=3x-4$:\n\n$$\nx^{2}-9x+9=0\n$$\n\n$$\nx=\\dfrac{9\\pm 3\\sqrt{5}}{2}\n$$\n\nOnly $\\dfrac{9+3\\sqrt{5}}{2}\\approx 7.85$ satisfies $x\\ge\\tfrac{4}{3}$; the smaller root fails the RHS test.\n\nCase $-(x^{2}-6x+5)=3x-4$:\n\n$$\n-x^{2}+6x-5=3x-4\n$$\n\n$$\n-x^{2}+3x-1=0\n$$\n\n$$\nx^{2}-3x+1=0\n$$\n\n$$\nx=\\dfrac{3\\pm\\sqrt{5}}{2}\n$$\n\nOnly $\\dfrac{3+\\sqrt{5}}{2}\\approx 2.62$ satisfies $x\\ge\\tfrac{4}{3}$.\n\nTwo distinct real solutions survive, not one.\n\nSo the statement is False.\n",
+        "**D.** → False\n\nDomain demands positive arguments:\n\n$$\nx-1>0\n$$\n\n$$\nx>1\n$$\n\n$$\nx+3>0\n$$\n\n$$\nx>-3\n$$\n\n$$\n3x+5>0\n$$\n\n$$\nx>-\\dfrac{5}{3}\n$$\n\nso overall $x>1$. Combine the logarithms:\n\n$$\n\\log_{2}\\bigl((x-1)(x+3)\\bigr)=\\log_{2}(3x+5)\n$$\n\n$$\n(x-1)(x+3)=3x+5\n$$\n\n$$\nx^{2}+2x-3=3x+5\n$$\n\n$$\nx^{2}-x-8=0\n$$\n\n$$\nx=\\dfrac{1\\pm\\sqrt{33}}{2}\n$$\n\nOnly $\\dfrac{1+\\sqrt{33}}{2}\\approx 3.37$ exceeds $1$; the negative branch is outside the domain. In particular $x=4$ is not a root:\n\n$$\n(4-1)(4+3)=21\n$$\n\n$$\n3\\cdot 4+5=17\n$$\n\n$$\n21\\neq 17\n$$\n\nSo the unique domain-legal solution is not $4$.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nDomain requires $x\\ge -3$. Split at the absolute-value kink $x=1$.\n\nFor $x\\ge 1$:\n\n$$\n\\sqrt{x+3}+(x-1)=4\n$$\n\n$$\n\\sqrt{x+3}=5-x\n$$\n\nwhich forces $x\\le 5$. Square:\n\n$$\nx+3=(5-x)^{2}\n$$\n\n$$\nx+3=25-10x+x^{2}\n$$\n\n$$\n0=x^{2}-11x+22\n$$\n\n$$\nx=\\dfrac{11\\pm\\sqrt{33}}{2}\n$$\n\nOnly $\\dfrac{11-\\sqrt{33}}{2}\\approx 2.63$ lies in $[1,5]$.\n\nFor $-3\\le x<1$:\n\n$$\n\\sqrt{x+3}+(1-x)=4\n$$\n\n$$\n\\sqrt{x+3}=3+x\n$$\n\nwhich forces $x\\ge -3$. Square:\n\n$$\nx+3=(3+x)^{2}\n$$\n\n$$\nx+3=9+6x+x^{2}\n$$\n\n$$\n0=x^{2}+5x+6\n$$\n\n$$\n(x+2)(x+3)=0\n$$\n\n$$\nx=-2\\quad\\text{or}\\quad x=-3\n$$\n\nBoth lie in $[-3,1)$ and both check in the original equation. Altogether the three distinct real solutions are $-3$, $-2$, and $\\dfrac{11-\\sqrt{33}}{2}$.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five independent mixed equations. Work each letter from its own domain restrictions; none of the five collapses by a one-line sum/product identity."
     },
     {
       "case_id": "DEMO MATH 5.H01",
@@ -797,33 +797,33 @@
     {
       "case_id": "DEMO MATH 6.H02",
       "id": "demo-math-6-h02",
-      "title": "Mixed absolute, radical, rational — hard set",
+      "title": "Mixed abs / radical / rational — harder, no shortcuts",
       "chapter": 6,
-      "subsection": "6.4",
-      "context": "Decide whether each claim is true or false. The five letters deliberately mix five different equation/inequality types — absolute-value, radical, rational, quadratic inequality, and absolute-versus-quadratic — in the hard exam style.",
+      "subsection": "6.H",
+      "context": "Decide whether each claim is true or false. The five letters deliberately mix five different equation/inequality types — absolute difference, double radical, rational, rational inequality, and absolute-versus-quadratic — none of which reduces by a one-line identity shortcut.",
       "statements": [
-        "The inequality $|x+1|+|x-4|\\le 7$ holds for every real $x$ in the closed interval $[-2,5]$ and for no $x$ outside that interval.",
-        "The radical equation $\\sqrt{3x+1}+\\sqrt{x+2}=5$ has unique real solution $x=\\dfrac{49-10\\sqrt{10}}{9}$.",
-        "After excluding poles, $\\dfrac{2}{x-2}-\\dfrac{2}{x+2}=\\dfrac{1}{3}$ has exactly two domain-legal real roots.",
-        "The rational inequality $\\dfrac{(x-1)(x-4)}{x-3}\\ge 0$ holds precisely on the set $[1,3)\\cup[4,+\\infty)$.",
-        "The mixed equation $|3x-2|=x^{2}-x-2$ has exactly two distinct real solutions."
+        "The equation $|2x-3|-|x+2|=x-1$ has exactly one real solution, namely $x=\\dfrac{1}{2}$.",
+        "The radical equation $\\sqrt{5x+4}+\\sqrt{2x-1}=5$ has unique real solution $x=\\dfrac{160-10\\sqrt{211}}{9}$.",
+        "After excluding poles, $\\dfrac{3x+1}{x-2}-\\dfrac{2}{x+1}=\\dfrac{x+7}{(x-2)(x+1)}$ has exactly two domain-legal real roots.",
+        "The rational inequality $\\dfrac{x^{2}-x-6}{x-2}\\le x+1$ holds precisely on the set $(-\\infty,2)\\cup[3,+\\infty)$.",
+        "The mixed equation $|2x^{2}-5x-3|=4x+1$ has exactly two distinct real solutions."
       ],
       "answer_key": [
         true,
-        false,
         true,
+        false,
         false,
         true
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Treat each letter as its own model. For absolute values, split on the critical points; for radicals, check the domain and discard extraneous roots after squaring; for rationals, exclude poles before counting zeros.",
       "tactical_explanations": [
-        "**A.** → True\n\nThe sum $|x+1|+|x-4|$ equals the distance between $-1$ and $4$ for $x$ between the kinks, namely $5$, and grows linearly outside. Solving $|x+1|+|x-4|\\le 7$ by cases yields exactly $[-2,5]$.\n\nOn $[-1,4]$ the sum is constantly $5\\le 7$. Left of $-1$:\n\n$$\n-(x+1)-(x-4)\\le 7\n$$\n\n$$\n-2x+3\\le 7\n$$\n\n$$\nx\\ge -2\n$$\n\nRight of $4$:\n\n$$\n(x+1)+(x-4)\\le 7\n$$\n\n$$\n2x-3\\le 7\n$$\n\n$$\nx\\le 5\n$$\n\nSo the solution set is exactly $[-2,5]$.\n\nSo the statement is True.",
-        "**B.** → False\n\nDomain requires $3x+1\\ge 0$ and $x+2\\ge 0$, so $x\\ge -\\tfrac13$. Isolating and squaring twice produces the quadratic\n\n$$\nx^{2}-51x+119=0\n$$\n\n$$\nx=\\frac{51\\pm\\sqrt{2125}}{2}\n$$\n\nneither of which equals $\\dfrac{49-10\\sqrt{10}}{9}$. The claimed closed form is therefore wrong.\n\nSo the statement is False.",
-        "**C.** → True\n\nDomain: $x\\neq\\pm 2$. Combine the left-hand side:\n\n$$\n\\frac{2(x+2)-2(x-2)}{x^{2}-4}=\\frac{1}{3}\n$$\n\n$$\n\\frac{8}{x^{2}-4}=\\frac{1}{3}\n$$\n\n$$\nx^{2}-4=24\n$$\n\n$$\nx=\\pm\\sqrt{28}=\\pm 2\\sqrt{7}\n$$\n\nBoth roots are domain-legal, so there are exactly two.\n\nSo the statement is True.",
-        "**D.** → False\n\nCritical points are $x=1$, $x=3$ (pole), and $x=4$. A sign chart gives\n\n$$\n(-\\infty,1]\\cup[4,+\\infty)\n$$\n\n(with $x=3$ excluded automatically). The claimed set $[1,3)\\cup[4,+\\infty)$ includes the negative interval $(1,3)$ and drops $(-\\infty,1]$, so it is wrong.\n\nSo the statement is False.",
-        "**E.** → True\n\nNeed $x^{2}-x-2\\ge 0$, i.e. $x\\le -1$ or $x\\ge 2$.\n\nFor $x\\ge\\tfrac{2}{3}$:\n\n$$\n3x-2=x^{2}-x-2\n$$\n\n$$\n0=x^{2}-4x=x(x-4)\n$$\n\nOnly $x=4$ survives the right-hand-side domain. For $x<\\tfrac{2}{3}$:\n\n$$\n-(3x-2)=x^{2}-x-2\n$$\n\n$$\nx^{2}+2x-4=0\n$$\n\n$$\nx=-1\\pm\\sqrt{5}\n$$\n\nOnly $x=-1-\\sqrt{5}$ lies in $(-\\infty,-1]$. That is two distinct real solutions.\n\nSo the statement is True."
-      ]
+        "**A.** → True\n\nCritical points split the real line into $x<-2$, $-2\\le x<\\tfrac{3}{2}$, and $x\\ge\\tfrac{3}{2}$.\n\nRegion $x<-2$:\n\n$$\n(3-2x)-(-x-2)=x-1\n$$\n\n$$\n3-2x+x+2=x-1\n$$\n\n$$\n5-x=x-1\n$$\n\n$$\n6=2x\n$$\n\n$$\nx=3\n$$\n\nwhich is outside $x<-2$, so no solution there.\n\nRegion $-2\\le x<\\tfrac{3}{2}$:\n\n$$\n(3-2x)-(x+2)=x-1\n$$\n\n$$\n3-2x-x-2=x-1\n$$\n\n$$\n1-3x=x-1\n$$\n\n$$\n2=4x\n$$\n\n$$\nx=\\dfrac{1}{2}\n$$\n\nand $\\tfrac{1}{2}$ lies in the open interval. Check:\n\n$$\n|1-3|-\\left|\\tfrac{1}{2}+2\\right|=2-\\tfrac{5}{2}=-\\tfrac{1}{2}\n$$\n\n$$\n\\dfrac{1}{2}-1=-\\dfrac{1}{2}\n$$\n\nRegion $x\\ge\\tfrac{3}{2}$:\n\n$$\n(2x-3)-(x+2)=x-1\n$$\n\n$$\nx-5=x-1\n$$\n\n$$\n-5=-1\n$$\n\nwhich is never true. Exactly one real solution remains: $x=\\tfrac{1}{2}$.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nDomain requires\n\n$$\n5x+4\\ge 0\n$$\n\n$$\nx\\ge -\\dfrac{4}{5}\n$$\n\n$$\n2x-1\\ge 0\n$$\n\n$$\nx\\ge \\dfrac{1}{2}\n$$\n\nso $x\\ge\\tfrac{1}{2}$. Isolate and keep the right-hand side nonnegative:\n\n$$\n\\sqrt{5x+4}=5-\\sqrt{2x-1}\n$$\n\n$$\n\\sqrt{2x-1}\\le 5\n$$\n\n$$\nx\\le 13\n$$\n\nSquare once, writing $s=\\sqrt{2x-1}$:\n\n$$\n5x+4=25-10s+(2x-1)\n$$\n\n$$\n5x+4=24+2x-10s\n$$\n\n$$\n3x-20=-10s\n$$\n\n$$\n20-3x=10s\n$$\n\nwhich forces $x\\le\\tfrac{20}{3}$. Square again:\n\n$$\n(20-3x)^{2}=100(2x-1)\n$$\n\n$$\n400-120x+9x^{2}=200x-100\n$$\n\n$$\n9x^{2}-320x+500=0\n$$\n\n$$\nx=\\dfrac{160\\pm 10\\sqrt{211}}{9}\n$$\n\nOnly the minus branch $\\dfrac{160-10\\sqrt{211}}{9}\\approx 1.64$ lies in $\\bigl[\\tfrac{1}{2},\\tfrac{20}{3}\\bigr]$; the plus branch is far outside and fails the intermediate nonnegativity checks. Exactly one real solution, matching the claimed closed form.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nPoles are $x=2$ and $x=-1$. Clear the common denominator $(x-2)(x+1)$:\n\n$$\n(3x+1)(x+1)-2(x-2)=x+7\n$$\n\nExpand:\n\n$$\n(3x+1)(x+1)=3x^{2}+3x+x+1=3x^{2}+4x+1\n$$\n\n$$\n2(x-2)=2x-4\n$$\n\n$$\n3x^{2}+4x+1-(2x-4)=3x^{2}+2x+5\n$$\n\n$$\n3x^{2}+2x+5=x+7\n$$\n\n$$\n3x^{2}+x-2=0\n$$\n\n$$\n(3x-2)(x+1)=0\n$$\n\n$$\nx=\\dfrac{2}{3}\\quad\\text{or}\\quad x=-1\n$$\n\nBut $x=-1$ is a pole, so it is discarded. Only one domain-legal root remains: $x=\\tfrac{2}{3}$. The claim of exactly two roots is therefore false.\n\nSo the statement is False.\n",
+        "**D.** → False\n\nBring everything to one side (for $x\\neq 2$):\n\n$$\n\\dfrac{x^{2}-x-6}{x-2}-(x+1)\\le 0\n$$\n\n$$\n\\dfrac{(x-3)(x+2)-(x+1)(x-2)}{x-2}\\le 0\n$$\n\nNumerator:\n\n$$\n(x-3)(x+2)=x^{2}-x-6\n$$\n\n$$\n(x+1)(x-2)=x^{2}-x-2\n$$\n\n$$\nx^{2}-x-6-(x^{2}-x-2)=-4\n$$\n\nso the inequality collapses to\n\n$$\n\\dfrac{-4}{x-2}\\le 0\n$$\n\n$$\n\\dfrac{4}{x-2}\\ge 0\n$$\n\n$$\nx>2\n$$\n\nThere is no contribution from $(-\\infty,2)$ and no special role for the point $x=3$. The claimed set $(-\\infty,2)\\cup[3,+\\infty)$ is therefore wrong; the exact solution set is $(2,+\\infty)$.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nRequire a nonnegative right-hand side:\n\n$$\n4x+1\\ge 0\n$$\n\n$$\nx\\ge -\\dfrac{1}{4}\n$$\n\nCase $2x^{2}-5x-3=4x+1$:\n\n$$\n2x^{2}-9x-4=0\n$$\n\n$$\nx=\\dfrac{9\\pm\\sqrt{81+32}}{4}=\\dfrac{9\\pm\\sqrt{113}}{4}\n$$\n\nOnly $\\dfrac{9+\\sqrt{113}}{4}\\approx 4.91$ satisfies $x\\ge -\\tfrac{1}{4}$; the minus branch is negative and fails the RHS test.\n\nCase $-(2x^{2}-5x-3)=4x+1$:\n\n$$\n-2x^{2}+5x+3=4x+1\n$$\n\n$$\n-2x^{2}+x+2=0\n$$\n\n$$\n2x^{2}-x-2=0\n$$\n\n$$\nx=\\dfrac{1\\pm\\sqrt{17}}{4}\n$$\n\nOnly $\\dfrac{1+\\sqrt{17}}{4}\\approx 1.28$ satisfies $x\\ge -\\tfrac{1}{4}$. Exactly two distinct real solutions remain.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five mixed absolute / radical / rational claims. Each letter needs its own domain split or clearing step; none is a one-line identity cancellation."
     },
     {
       "case_id": "DEMO MATH 7.H01",
@@ -1012,35 +1012,35 @@
       "solution_overview": "This problem describes a population of deer composed of three subspecies, each with a different prevalence of a certain prion disease. A field test for the disease has a known sensitivity and false-positive rate. We are testing a randomly selected deer and observing a positive result.\n\nLet $S_A$, $S_B$, and $S_C$ be the events that a randomly selected deer belongs to Subspecies A, B, or C, respectively. Their prior probabilities are:\n$$P(S_A) = 0.60$$\n$$P(S_B) = 0.25$$\n$$P(S_C) = 0.15$$\n\nLet $D$ be the event that a deer has the prion disease. The prevalence rates for each subspecies are:\n$$P(D \\mid S_A) = 0.02$$\n$$P(D \\mid S_B) = 0.06$$\n$$P(D \\mid S_C) = 0.15$$\n\nLet $T^+$ be the event of a positive test result and $T^-$ be the event of a negative test result. The test characteristics are:\nSensitivity: $P(T^+ \\mid D) = 0.90$\nFalse-positive rate: $P(T^+ \\mid D^c) = 0.04$\n\nThis means:\n$P(T^- \\mid D) = 1 - P(T^+ \\mid D) = 1 - 0.90 = 0.10$\n$P(T^- \\mid D^c) = 1 - P(T^+ \\mid D^c) = 1 - 0.04 = 0.96$\n\nTo evaluate the probabilities involving test results, we first need to find the probability of a positive test result for a deer from each subspecies, considering its specific disease prevalence. This uses the Law of Total Probability for each subspecies:\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D, S_i) P(D \\mid S_i) + P(T^+ \\mid D^c, S_i) P(D^c \\mid S_i)$$\nSince the test characteristics are independent of subspecies, $P(T^+ \\mid D, S_i) = P(T^+ \\mid D)$ and $P(T^+ \\mid D^c, S_i) = P(T^+ \\mid D^c)$.\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D) P(D \\mid S_i) + P(T^+ \\mid D^c) (1 - P(D \\mid S_i))$$\n\nFor Subspecies A:\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(1 - 0.02)$$\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(0.98)$$\n$$\nP(T^+ \\mid S_A) = 0.018 + 0.0392 = 0.0572\n$$\n\nFor Subspecies B:\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(1 - 0.06)$$\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(0.94)$$\n$$\nP(T^+ \\mid S_B) = 0.054 + 0.0376 = 0.0916\n$$\n\nFor Subspecies C:\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(1 - 0.15)$$\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(0.85)$$\n$$\nP(T^+ \\mid S_C) = 0.135 + 0.034 = 0.169\n$$\n\nNow, to find the overall probability that a randomly tested deer receives a positive result, we use the Law of Total Probability over the subspecies:\n$$P(T^+) = P(T^+ \\mid S_A)P(S_A) + P(T^+ \\mid S_B)P(S_B) + P(T^+ \\mid S_C)P(S_C)$$\n$$P(T^+) = (0.0572)(0.60) + (0.0916)(0.25) + (0.169)(0.15)$$\n$$P(T^+) = 0.03432 + 0.0229 + 0.02535$$\n$$P(T^+) = 0.08257$$\nThis is the base probability for many subsequent calculations."
     },
     {
-      "case_id": "DEMO MATH 13.H02",
-      "id": "demo-math-13-h02",
-      "title": "Binomial night-shift audit — hard claims",
+      "case_id": "MATH 13.108",
+      "id": "math-13-108",
+      "title": "Harbor Foghorn Tests",
       "chapter": 13,
-      "subsection": "13.2",
-      "context": "A night courier logs $60$ independent deliveries. Each delivery is on time with probability $0.75$, independently of the others. Let $X$ be the number of on-time deliveries among the $60$. Decide whether each claim is true or false.",
+      "subsection": "13.5",
+      "context": "Harbor staff run 14 independent foghorn tests. The expected number of clear audible tests is 11.2. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The expected number of on-time deliveries is $45$, and the variance of that count is $11.25$.",
-        "The probability of exactly $45$ on-time deliveries equals the binomial probability with $n=60$, $k=45$, success probability $0.75$.",
-        "The probability of exactly $46$ on-time deliveries is strictly larger than the probability of exactly $45$, because $45.75$ lies closer to $46$ than to $45$.",
-        "If every delivery were certain to be on time, then the count would be $60$ for sure and the variance would be $0$.",
-        "After subtracting $45$ and dividing by $\\sqrt{11.25}$, the resulting number is exactly a draw from the standard normal distribution — not merely approximately."
+        "The next test fails with probability 0.2.",
+        "The expected number of audible tests in the next 12 tests is 4.8.",
+        "The variance of the number of audible tests out of 50 tests is 8.",
+        "The probability of 3 consecutive audible tests is less than 0.3.",
+        "The probability of at most 4 audible tests in the next 6 tests is more than 0.5."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
+        false,
         false
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "$X\\sim\\mathrm{Bin}(n=60,p=0.75)$, so $\\mathbb{E}[X]=np=45$ and $\\mathrm{Var}(X)=np(1-p)=11.25$. Mode claims need the usual $\\lfloor(n+1)p\\rfloor$ comparison, and a standardised binomial is only approximately — not exactly — standard normal.",
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\mathbb{E}[X]=60\\cdot 0.75=45\n$$\n\n$$\n\\mathrm{Var}(X)=60\\cdot 0.75\\cdot 0.25=11.25\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\nBy definition,\n\n$$\nP(X=45)=\\binom{60}{45}(0.75)^{45}(0.25)^{15}\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe ratio of consecutive masses is\n\n$$\n\\frac{P(X=k+1)}{P(X=k)}=\\frac{n-k}{k+1}\\cdot\\frac{p}{1-p}\n$$\n\nAt $k=45$:\n\n$$\n\\frac{P(X=46)}{P(X=45)}=\\frac{15}{46}\\cdot\\frac{0.75}{0.25}=\\frac{15}{46}\\cdot 3=\\frac{45}{46}<1\n$$\n\nso $P(X=46)<P(X=45)$. Closeness of $np=45$ to $46$ does not decide the inequality.\n\nSo the statement is False.",
-        "**D.** → True\n\nIf $p=1$, then $X=60$ almost surely and\n\n$$\n\\mathrm{Var}(X)=60\\cdot 1\\cdot 0=0\n$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe standardised binomial\n\n$$\nZ=\\frac{X-45}{\\sqrt{11.25}}\n$$\n\nis only approximately $N(0,1)$ for large $n$ (CLT). It is discrete and not exactly standard normal.\n\nSo the statement is False."
-      ]
+        "**A.** → True\n\nFrom the stem quantities, recover the common success probability step by step.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{11.2}{14} = 0.8\n$$\n\nEach independent trial either succeeds or fails, so the failure probability is the complement\n\n$$\n1-p\n$$\n\nSubstituting the recovered value,\n\n$$\n1-p = 1-0.8\n$$\n\n$$\n1 - 0.8 = 0.2\n$$\n\nThis agrees with the probability stated in the claim.\n\nSo the statement is True.\n",
+        "**B.** → False\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$, the mean is the product of the number of trials and the success probability:\n\n$$\nE[X] = np\n$$\n\nUsing $n=12$ and the recovered $p=0.8$,\n\n$$\nE[X] = 12\\cdot 0.8\n$$\n\n$$\n12 \\times 0.8 = 9.6\n$$\n\nThe claim reports $4.8$, which is not equal to the computed mean $9.6$.\n\nSo the statement is False.\n",
+        "**C.** → True\n\nFor $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nInsert $n=50$, $p=0.8$, and $1-p=0.2$:\n\n$$\n\\mathrm{Var}(X) = 50\\cdot 0.8\\cdot 0.2\n$$\n\n$$\n50 \\times 0.8 = 40\n$$\n\n$$\n40 \\times 0.2 = 8\n$$\n\nThis matches the variance stated in the claim.\n\nSo the statement is True.\n",
+        "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$\nP(\\text{3 successes in a row}) = p^{3}\n$$\n\nWith the recovered $p=0.8$,\n\n$$\np^{3} = (0.8)^{3}\n$$\n\n$$\n\\approx 0.512\n$$\n\nCompare with the claimed cutoff $0.3$:\n\n$$\n0.512\n$$\n\n$$\n0.512 \\ge 0.3\n$$\n\nThe inequality in the claim therefore fails.\n\nSo the statement is False.\n",
+        "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(6,0.8)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$\nP(X\\le 4) = \\sum_{x = 0}^{4} \\binom{6}{x}p^{x}(1-p)^{6-x}\n$$\n\nEvaluating each mass separately:\n\n$$\nP(X = 0) = \\binom{6}{0}(0.8)^{0}(0.2)^{6}\\approx 6.4000e-5\n$$\n\n$$\n\\binom{6}{0} = 1\n$$\n\n$$\nP(X = 1) = \\binom{6}{1}(0.8)^{1}(0.2)^{5}\\approx 0.0015\n$$\n\n$$\n\\binom{6}{1} = \\dfrac{6!}{1!(6-1)!}\n$$\n\n$$\n\\binom{6}{1} = 6\n$$\n\n$$\nP(X = 2) = \\binom{6}{2}(0.8)^{2}(0.2)^{4}\\approx 0.0154\n$$\n\n$$\n\\binom{6}{2} = \\dfrac{6!}{2!(6-2)!}\n$$\n\n$$\n\\dfrac{6!}{2!(4)!} = \\dfrac{6 \\cdot 5}{1 \\cdot 2}\n$$\n\n$$\n6 \\cdot 5 = 30\n$$\n\n$$\n\\dfrac{30}{2} = 15\n$$\n\n$$\n\\binom{6}{2} = 15\n$$\n\n$$\nP(X = 3) = \\binom{6}{3}(0.8)^{3}(0.2)^{3}\\approx 0.0819\n$$\n\n$$\n\\binom{6}{3} = \\dfrac{6!}{3!(6-3)!}\n$$\n\n$$\n\\dfrac{6!}{3!(3)!} = \\dfrac{6 \\cdot 5 \\cdot 4}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n6 \\cdot 5 = 30\n$$\n\n$$\n30 \\cdot 4 = 120\n$$\n\n$$\n\\dfrac{120}{6} = 20\n$$\n\n$$\n\\binom{6}{3} = 20\n$$\n\n$$\nP(X = 4) = \\binom{6}{4}(0.8)^{4}(0.2)^{2}\\approx 0.2458\n$$\n\nAdding these contributions,\n\n$$\nP(X\\le 4)\n$$\n\n$$\n0.3446\n$$\n\nCompared with $0.5$, we obtain $0.3446 \\le 0.5$. The claim's inequality does not hold.\n\nSo the statement is False.\n"
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Harbor staff run 14 independent foghorn tests. The expected number of clear audible tests is 11.2.\n\nFrom the given mean over $n=14$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{11.2}{14} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(14,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$."
     }
   ]
 }
