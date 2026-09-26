@@ -55,7 +55,7 @@ const CORE_POSTS: NewsPost[] = [
             tone: "#c45f1a",
             blurb: "Updates that change practice, mocks, or the dashboard.",
             example:
-              "Demo Exam became available without an account, so you can try a hard practice exam before signing up.",
+              "Demo Exam is a free hard practice exam. You need a free account to start so we can save your attempt.",
           },
           {
             id: "craft",

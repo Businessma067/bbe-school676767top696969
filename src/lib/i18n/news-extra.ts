@@ -23,13 +23,14 @@ export const newsExtraDe: Record<string, string> = {
   "Why our practice exams stay difficult, what we check before a task is published, and why we remove many drafts.":
     "Warum unsere Probeprüfungen anspruchsvoll bleiben, was wir vor der Veröffentlichung prüfen und warum wir viele Entwürfe entfernen.",
 
-  "Demo Exam is available without an account": "Demo Exam ist ohne Konto verfügbar",
-  "You can now take the hard practice exam without signing up. Here is why we changed that, and how to use the result.":
-    "Du kannst die anspruchsvolle Probeprüfung jetzt ohne Anmeldung machen. Warum wir das geändert haben und wie du das Ergebnis nutzt.",
+  "Demo Exam: a free hard mock with a free account":
+    "Demo Exam: ein kostenloser harter Mock mit kostenlosem Konto",
+  "The Demo Exam page is public, but starting the exam needs a free BBE School account so we can save your attempt. No credit card and no course purchase.":
+    "Die Demo-Exam-Seite ist öffentlich, aber zum Start brauchst du ein kostenloses BBE-School-Konto, damit wir den Versuch speichern können. Keine Kreditkarte und kein Kurskauf.",
 
-  "Mock Builder is available to students": "Mock Builder ist für Studierende verfügbar",
-  "You can now build your own practice exam from the live task banks, instead of waiting only for our fixed papers.":
-    "Du kannst jetzt deine eigene Probeprüfung aus den Live-Aufgabenbanken bauen, statt nur auf unsere festen Papers zu warten.",
+  "Mock Builder for course subscribers": "Mock Builder für Kursteilnehmer",
+  "With a BBE Lite or Full course, you can build your own practice exam from the live task banks instead of using only our fixed papers.":
+    "Mit einem BBE-Lite- oder Full-Kurs kannst du deine eigene Probeprüfung aus den Live-Aufgabenbanken bauen, statt nur unsere festen Papers zu nutzen.",
 
   "What we released from May to September": "Was wir von Mai bis September veröffentlicht haben",
   "A clear timeline of the main releases, with short notes for each date and links to longer posts in this feed.":
@@ -96,13 +97,14 @@ export const newsExtraUk: Record<string, string> = {
   "Why our practice exams stay difficult, what we check before a task is published, and why we remove many drafts.":
     "Чому наші практичні іспити лишаються складними, що перевіряємо перед публікацією і чому прибираємо багато драфтів.",
 
-  "Demo Exam is available without an account": "Demo Exam доступний без акаунта",
-  "You can now take the hard practice exam without signing up. Here is why we changed that, and how to use the result.":
-    "Тепер можна пройти складний практичний іспит без реєстрації. Чому ми це змінили і як користуватися результатом.",
+  "Demo Exam: a free hard mock with a free account":
+    "Demo Exam: безкоштовний жорсткий мок з безкоштовним акаунтом",
+  "The Demo Exam page is public, but starting the exam needs a free BBE School account so we can save your attempt. No credit card and no course purchase.":
+    "Сторінка Demo Exam публічна, але щоб почати іспит, потрібен безкоштовний акаунт BBE School, щоб ми зберегли спробу. Без картки і без покупки курсу.",
 
-  "Mock Builder is available to students": "Mock Builder доступний студентам",
-  "You can now build your own practice exam from the live task banks, instead of waiting only for our fixed papers.":
-    "Тепер можна зібрати власний практичний іспит із живих банків завдань, а не лише чекати наші фіксовані пейпери.",
+  "Mock Builder for course subscribers": "Mock Builder для підписників курсу",
+  "With a BBE Lite or Full course, you can build your own practice exam from the live task banks instead of using only our fixed papers.":
+    "З курсом BBE Lite або Full можна зібрати власний практичний іспит із живих банків завдань, а не лише з наших фіксованих пейперів.",
 
   "What we released from May to September": "Що ми випустили з травня по вересень",
   "A clear timeline of the main releases, with short notes for each date and links to longer posts in this feed.":

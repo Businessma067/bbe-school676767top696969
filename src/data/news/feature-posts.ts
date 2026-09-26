@@ -7,19 +7,19 @@ import type { NewsPost } from "./types";
 export const FEATURE_POSTS: NewsPost[] = [
   {
     slug: "demo-exam-is-public",
-    title: "Demo Exam is available without an account",
+    title: "Demo Exam: a free hard mock with a free account",
     date: "2026-09-22",
     author: "BBE School creators",
     summary:
-      "You can now take the hard practice exam without signing up. Here is why we changed that, and how to use the result.",
+      "The Demo Exam page is public, but starting the exam needs a free BBE School account so we can save your attempt. No credit card and no course purchase.",
     body: [
       {
         type: "p",
-        text: "For a while, Demo Exam required an account before you could start. That made sense for us internally, but it was not helpful for students or parents who only wanted one clear link to try the product. Some people even created temporary emails just to look inside.",
+        text: "Demo Exam is our free full-length BBE-style practice exam: the same kind of True/False clusters, the same two-hour window idea, and the same partial-credit scoring logic we teach on the scoring page. The landing page is open for everyone to read. To press Start, you need a free account. That is intentional: without an account we cannot save your attempt, score, or review.",
       },
       {
         type: "p",
-        text: "On 22 September we removed that barrier. You can start the hard BBE-style practice exam without an account, see where points are lost, and decide later whether the full course is right for you. The questions did not become easier. Only access became simpler.",
+        text: "A free account means email or Google signup. There is no credit card and no purchase required to take Demo Exam. After you finish, you can decide whether a paid course makes sense. The questions stay hard either way.",
       },
       {
         type: "media",
@@ -27,23 +27,23 @@ export const FEATURE_POSTS: NewsPost[] = [
         src: "/demo-practice-product-v2.png",
         alt: "BBE School practice product visual used around the Demo Exam launch",
         caption:
-          "The public Demo Exam page uses the same practice style as the rest of the platform.",
-      },
-      {
-        type: "figure",
-        id: "demo-signup-wall",
-        caption:
-          "Example funnel from before the change. Many people opened the page, but far fewer finished once a signup form appeared.",
+          "The Demo Exam page uses the same practice style as the rest of the platform.",
       },
       {
         type: "p",
-        text: "If you already study inside a course, the answer keys did not suddenly change. What changed is who can try the exam cold. Take it when you have a quiet hour. It is meant to feel demanding. Use the review to find mistakes you can still fix, not only to look at the final score.",
+        text: "If you already study inside a course, the answer keys did not suddenly change. Take Demo Exam when you have a quiet hour. It is meant to feel demanding. Use the review to find mistakes you can still fix, not only to look at the final score.",
       },
       {
         type: "steps",
-        title: "A simple way to take the public demo",
-        caption: "A short sequence that makes the result more useful.",
+        title: "How to take Demo Exam",
+        caption: "A short sequence that matches how the product actually works.",
         steps: [
+          {
+            id: "account",
+            title: "Create a free account",
+            detail:
+              "Sign up with email or Google when you press Start. No payment details are required for Demo Exam.",
+          },
           {
             id: "quiet",
             title: "Set aside a full hour",
@@ -78,21 +78,21 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "Open Demo Exam",
         href: "/demo-mock",
-        note: "Hard practice exam. No account needed to start.",
+        note: "Free hard practice exam. Free account required to start and save progress. No credit card.",
       },
     ],
   },
   {
     slug: "mock-builder-left-the-lab",
-    title: "Mock Builder is available to students",
+    title: "Mock Builder for course subscribers",
     date: "2026-09-11",
     author: "BBE School creators",
     summary:
-      "You can now build your own practice exam from the live task banks, instead of waiting only for our fixed papers.",
+      "With a BBE Lite or Full course, you can build your own practice exam from the live task banks instead of using only our fixed papers.",
     body: [
       {
         type: "p",
-        text: "For several months we used Mock Builder only inside the team. It helped us test task banks, compare section sizes, and notice when a rewrite made a paper too easy. Then students asked why they could not use the same tool. On 11 September we made it available.",
+        text: "For several months we used Mock Builder only inside the team. It helped us test task banks, compare section sizes, and notice when a rewrite made a paper too easy. On 11 September we opened it to students with course access. It is not a guest tool: you need a BBE Lite or Full entitlement (or the WiSo Full path for the WiSo builder).",
       },
       {
         type: "demo",
@@ -102,7 +102,7 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "p",
-        text: "On the BBE side it appears under Products. On WiSo, use the track switch and open the WiSo version. The builder uses the same demanding banks we use elsewhere. You can choose a lighter mix if you want, but that will not make the exam itself easier on the day.",
+        text: "On the BBE side it appears under Products for eligible accounts. On WiSo, use the track switch and open the WiSo builder if your WiSo course includes it. The builder uses the same demanding banks we use elsewhere. You can choose a lighter mix if you want, but that will not make the real exam easier on the day.",
       },
       {
         type: "tool",
@@ -139,7 +139,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "Open Mock Builder",
         href: "/products/custom-mock-builder",
-        note: "Build a practice exam from the live task banks.",
+        note: "Available with BBE Lite or Full course access.",
       },
     ],
   },
@@ -170,14 +170,14 @@ export const FEATURE_POSTS: NewsPost[] = [
           {
             id: "demo-exam",
             dateLabel: "22 Sep 2026",
-            title: "Demo Exam becomes public",
-            note: "Hard practice exam without an account requirement.",
+            title: "Demo Exam landing page ships",
+            note: "Free hard practice exam. Free account required to start and save the attempt.",
           },
           {
             id: "builder",
             dateLabel: "11 Sep 2026",
-            title: "Mock Builder opens to students",
-            note: "Custom practice exams from the live task banks.",
+            title: "Mock Builder for course subscribers",
+            note: "Custom practice exams from the live task banks, with Lite/Full access.",
           },
           {
             id: "wiso",
@@ -251,7 +251,7 @@ export const FEATURE_POSTS: NewsPost[] = [
     body: [
       {
         type: "p",
-        text: "For a long time the site mainly told a BBE story, even though many visitors needed WiSo. On 27 August we opened a real WiSo track: its own hub, demos, course pages, and later its own mock builder. Use the track switch in the header to move between BBE and WiSo. The practice pages then follow the path you chose.",
+        text: "For a long time the site mainly told a BBE story, even though many visitors needed WiSo. On 27 August we opened a real WiSo track: its own hub, demo practice, course pages, and mock builder. Use the track switch in the header to move between BBE and WiSo. The practice pages then follow the path you chose. Note that the free BBE Demo Exam page does not have a WiSo twin yet.",
       },
       {
         type: "media",
@@ -296,7 +296,7 @@ export const FEATURE_POSTS: NewsPost[] = [
     body: [
       {
         type: "p",
-        text: "Not every study day has room for a full mock exam. On 14 August we added Flashcards and Matching under Study tools for shorter sessions. The content stays close to exam language on purpose. These tools are meant to support practice, not replace longer sittings.",
+        text: "Not every study day has room for a full mock exam. On 14 August we added Flashcards and Matching under Study tools in the dashboard for shorter sessions. They are available when you are signed in with the matching course access. The content stays close to exam language on purpose. These tools are meant to support practice, not replace longer sittings.",
       },
       {
         type: "demo",
@@ -328,7 +328,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "Open Study tools",
         href: "/dashboard?tab=games",
-        note: "Flashcards and Matching are available in the dashboard under Study tools.",
+        note: "In the dashboard under Study tools, when your account has access.",
       },
     ],
   },
@@ -433,7 +433,7 @@ export const FEATURE_POSTS: NewsPost[] = [
     body: [
       {
         type: "p",
-        text: "Full mock exams are useful, but they also take a long time. On 3 July we opened Tutor exam mode for subject-focused practice with faster feedback. It does not replace a full paper. It helps you repair one weak area without waiting days for the next long sitting.",
+        text: "Full mock exams are useful, but they also take a long time. On 3 July we opened Tutor exam mode for subject-focused practice with faster feedback. It is part of course access, not a guest tool. It does not replace a full paper. It helps you repair one weak area without waiting days for the next long sitting.",
       },
       {
         type: "demo",
@@ -475,7 +475,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "Open tutor exam",
         href: "/tutor-exam",
-        note: "Subject-focused practice with a clearer review loop.",
+        note: "Available with course access.",
       },
     ],
   },
@@ -489,7 +489,7 @@ export const FEATURE_POSTS: NewsPost[] = [
     body: [
       {
         type: "p",
-        text: "In the early full course, subjects were harder to separate. On 19 June we introduced clearer subject rooms. It became easier to see where mathematics ends, where English begins, and where economics practice lives. That made navigation simpler and made daily practice more intentional.",
+        text: "In the early full course, subjects were harder to separate. On 19 June we introduced clearer subject rooms for Full Course subscribers. It became easier to see where mathematics ends, where English begins, and where economics practice lives. That made navigation simpler and made daily practice more intentional.",
       },
       {
         type: "media",
@@ -534,7 +534,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "See full course subjects",
         href: "/products/full-course-subjects",
-        note: "Separate practice areas for each subject.",
+        note: "Available with Full Course access.",
       },
     ],
   },
@@ -587,7 +587,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "Open dashboard",
         href: "/dashboard",
-        note: "The main entrance after purchase.",
+        note: "Main entrance when you are signed in after purchase.",
       },
     ],
   },
@@ -630,7 +630,7 @@ export const FEATURE_POSTS: NewsPost[] = [
         type: "cta",
         label: "Browse mock exams",
         href: "/mock-exams",
-        note: "Practice papers that continue the same approach from May.",
+        note: "Course mock exams for eligible BBE accounts. Demo Exam remains the free diagnostic path.",
       },
     ],
   },
