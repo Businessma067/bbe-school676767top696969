@@ -11,6 +11,7 @@ import {
 import { NewsPostTool } from "@/components/news/NewsPostTools";
 import { NewsShippingTimeline } from "@/components/news/NewsShippingTimeline";
 import { NewsSteps } from "@/components/news/NewsSteps";
+import { NewsUiDemo } from "@/components/news/NewsUiDemos";
 import { formatNewsDate, getNewsPost } from "@/data/news/posts";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -118,10 +119,14 @@ export function NewsPostPage() {
                     key={`media-${index}`}
                     kind={block.kind}
                     src={block.src}
-                    poster={block.poster}
                     alt={block.alt}
                     caption={block.caption}
                   />
+                );
+              }
+              if (block.type === "demo") {
+                return (
+                  <NewsUiDemo key={`demo-${index}`} id={block.id} caption={block.caption} />
                 );
               }
               if (block.type === "steps") {

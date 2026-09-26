@@ -56,10 +56,16 @@ export type NewsTimelineBlock = {
 
 export type NewsMediaBlock = {
   type: "media";
-  kind: "image" | "video";
+  kind: "image";
   src: string;
-  poster?: string;
   alt: string;
+  caption: string;
+};
+
+/** Smooth looping UI preview that replaces how-it-works videos in news posts. */
+export type NewsDemoBlock = {
+  type: "demo";
+  id: string;
   caption: string;
 };
 
@@ -96,6 +102,7 @@ export type NewsBodyBlock =
   | NewsLanesBlock
   | NewsTimelineBlock
   | NewsMediaBlock
+  | NewsDemoBlock
   | NewsStepsBlock
   | NewsToolBlock
   | NewsCtaBlock;

@@ -95,13 +95,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "For several months we used Mock Builder only inside the team. It helped us test task banks, compare section sizes, and notice when a rewrite made a paper too easy. Then students asked why they could not use the same tool. On 11 September we made it available.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/mock-builder.mp4",
-        poster: "/how-it-works/mock-builder-poster.jpg",
-        alt: "Screen recording of Mock Builder assembling a custom exam",
+        type: "demo",
+        id: "mock-builder",
         caption:
-          "A short walkthrough from launch week: choose subjects, pull tasks from the banks, and run your own sitting.",
+          "Animated preview of Mock Builder: choose subjects, set task counts, and start a custom sitting.",
       },
       {
         type: "p",
@@ -302,12 +299,9 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Not every study day has room for a full mock exam. On 14 August we added Flashcards and Matching under Study tools for shorter sessions. The content stays close to exam language on purpose. These tools are meant to support practice, not replace longer sittings.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/flashcards.mp4",
-        poster: "/how-it-works/flashcards-poster.jpg",
-        alt: "Flashcards how-it-works video",
-        caption: "A short look at flashcards from launch week.",
+        type: "demo",
+        id: "flashcards",
+        caption: "Animated preview of a flashcard flip in Study tools.",
       },
       {
         type: "tool",
@@ -316,12 +310,9 @@ export const FEATURE_POSTS: NewsPost[] = [
           "Three sample cards from the economics vocabulary set. The live decks are larger; this only shows how flipping works.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/matching.mp4",
-        poster: "/how-it-works/matching-poster.jpg",
-        alt: "Matching how-it-works video",
-        caption: "Matching practice for terms and definitions under light time pressure.",
+        type: "demo",
+        id: "matching",
+        caption: "Animated preview of matching terms with definitions.",
       },
       {
         type: "figure",
@@ -445,12 +436,9 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Full mock exams are useful, but they also take a long time. On 3 July we opened Tutor exam mode for subject-focused practice with faster feedback. It does not replace a full paper. It helps you repair one weak area without waiting days for the next long sitting.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/tutor-exam.mp4",
-        poster: "/how-it-works/tutor-exam-poster.jpg",
-        alt: "Tutor exam how-it-works video",
-        caption: "A short look at tutor exam mode from July.",
+        type: "demo",
+        id: "tutor-exam",
+        caption: "Animated preview of tutor exam mode: question, choices, and short feedback.",
       },
       {
         type: "steps",
