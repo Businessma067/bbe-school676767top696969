@@ -418,7 +418,7 @@ export const MATH_FLASHCARD_SECTIONS: FlashcardSection[] = [
       { term: "Extreme Value Theorem", explanation: "A continuous function on a closed bounded interval $[a,b]$ attains a global maximum and a global minimum." },
       { term: "Extrema on $[a,b]$", explanation: "Compare $f$ at critical points in $(a,b)$ and at the endpoints $a$ and $b$." },
       { term: "Inflection point", explanation: "A point where concavity changes ($f''$ changes sign). Not necessarily a max/min." },
-      { term: "Profit maximisation (interior)", explanation: "For $\\pi(x)=R(x)-C(x)$, an interior candidate solves $\\pi'(x)=0$, i.e. $R'(x)=C'(x)$ (marginal revenue $=$ marginal cost), then check second-order / endpoints." },
+      { term: "Profit maximisation (interior)", explanation: "For $P(x)=R(x)-C(x)$, an interior candidate solves $P'(x)=0$, i.e. $R'(x)=C'(x)$ (marginal revenue $=$ marginal cost), then check second-order / endpoints." },
     ],
   },
   {

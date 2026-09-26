@@ -2797,28 +2797,28 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
     title: "A short cubic profit check",
     subsection: "11.1",
     context:
-      "Daily profit (in euros) follows $\\pi(q)=-q^{3}+12q^{2}-21q$. Decide TRUE or FALSE for each claim.",
+      "Daily profit (in euros) follows $P(q)=-q^{3}+12q^{2}-21q$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$\\pi'(q)=-3q^{2}+24q-21$.",
-      "$\\pi'(1)=0$.",
-      "$\\pi''(q)=-6q+24$.",
-      "$\\pi''(3)=0$.",
+      "$P'(q)=-3q^{2}+24q-21$.",
+      "$P'(1)=0$.",
+      "$P''(q)=-6q+24$.",
+      "$P''(3)=0$.",
       "At $q=1$ the tangent slope is strictly positive.",
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the cubic profit schedule $\\pi(q)=-q^{3}+12q^{2}-21q$ term by term:
+Differentiate the cubic profit schedule $P(q)=-q^{3}+12q^{2}-21q$ term by term:
 
 $$
-\\pi'(q) = -3q^{2}+24q-21
+P'(q) = -3q^{2}+24q-21
 $$
 
 which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$.
 
 $$
-\\pi(q) = -q^{3}+12q^{2}-21q
+P(q) = -q^{3}+12q^{2}-21q
 $$
 
 So the statement is True.`,
@@ -2827,7 +2827,7 @@ So the statement is True.`,
 Substitute $q=1$ into the first derivative:
 
 $$
-\\pi'(1) = -3+24-21
+P'(1) = -3+24-21
 $$
 
 $$
@@ -2839,7 +2839,7 @@ $$
 $$
 
 $$
-\\pi'(1) = 0
+P'(1) = 0
 $$
 
 so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$.
@@ -2850,7 +2850,7 @@ So the statement is True.`,
 Differentiate the first-derivative polynomial once more:
 
 $$
-\\pi''(q) = -6q+24
+P''(q) = -6q+24
 $$
 
 matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim,
@@ -2861,11 +2861,11 @@ So the statement is True.`,
 Substitute $q=3$ into the second derivative:
 
 $$
-\\pi''(3) = -6\\cdot 3+24
+P''(3) = -6\\cdot 3+24
 $$
 
 $$
-\\pi''(3) = -18+24
+P''(3) = -18+24
 $$
 
 $$
@@ -2873,11 +2873,11 @@ $$
 $$
 
 $$
-\\pi''(3) = 6
+P''(3) = 6
 $$
 
 $$
-\\pi''(3) = 6\\neq 0
+P''(3) = 6\\neq 0
 $$
 
 The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong.
@@ -2890,7 +2890,7 @@ So the statement is False.`,
 The tangent slope at $q=1$ is precisely the first-derivative value
 
 $$
-\\pi'(1) = 0
+P'(1) = 0
 $$
 
 which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one.
@@ -2909,15 +2909,15 @@ So the statement is False.`
     sort_order: 21,
     solution_overview: `Daily profit follows the cubic schedule
 
-$$\\pi(q)=-q^{3}+12q^{2}-21q$$
+$$P(q)=-q^{3}+12q^{2}-21q$$
 
 Differentiating once and twice produces the first two derivatives
 
-$$\\pi'(q)=-3q^{2}+24q-21\\qquad \\pi''(q)=-6q+24$$
+$$P'(q)=-3q^{2}+24q-21\\qquad P''(q)=-6q+24$$
 
 Evaluating at the named points yields the concrete values
 
-$$\\pi'(1)=0\\qquad \\pi''(3)=6\\neq 0$$
+$$P'(1)=0\\qquad P''(3)=6\\neq 0$$
 
 In particular the tangent slope at $q=1$ is exactly zero, so that slope is not strictly positive. The second-derivative zero would solve $-6q+24=0$, hence $q=4$, not $q=3$.
 
