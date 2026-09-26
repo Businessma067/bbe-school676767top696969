@@ -761,37 +761,37 @@
   },
   "MATH 11.01": {
     "title": "Nominale versus stetige Verzinsung bei einer parametrisierten Depotanlage",
-    "context": "Ein Unternehmen hinterlegt $P=\\$8{,}735.00$ auf einem Depotkonto mit nominalem Jahreszinssatz $r=7.95\\%$ und monatlicher Gutschrift. Ein Finanzmodell verwendet denselben Nominalzins $r$ unter stetiger Verzinsung. Wachstumsaussagen beziehen sich auf $a=3$ Jahre; eine Kurzfristprüfung verwendet $b=2$ Jahre.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Unternehmen hinterlegt $P=\\$8,735.00$ auf einem Depotkonto mit nominalem Jahreszinssatz $r=7.95\\%$ und monatlicher Gutschrift. Ein Finanzmodell verwendet denselben Nominalzins $r$ unter stetiger Verzinsung. Wachstumsaussagen beziehen sich auf $a=3$ Jahre; eine Kurzfristprüfung verwendet $b=2$ Jahre.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der monatliche Periodenzinssatz beträgt $0.6625\\%$, und die effektive Jahresrate bei monatlicher Verzinsung übersteigt $8.24\\%$.",
       "Bei stetiger Verzinsung mit demselben Nominalzins $r$ übersteigt die effektive Jahresrate die monatliche Effektivrate um mehr als $0.04$ Prozentpunkte.",
-      "Nach $a=3$ Jahren monatlicher Verzinsung übersteigt der Endwert von $P$ den Betrag $\\$11{,}050$.",
+      "Nach $a=3$ Jahren monatlicher Verzinsung übersteigt der Endwert von $P$ den Betrag $\\$11,050$.",
       "Der Endwert bei stetiger Verzinsung von $P$ nach $a=3$ Jahren übersteigt den Endwert bei monatlicher Verzinsung um mehr als $\\$18$.",
       "Eine Verkürzung des Horizonts von $a=3$ auf $b=2$ Jahre bei monatlicher Verzinsung verringert den verdienten Dollarzins um mehr als $35\\%$ des Dreijahreszinses."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=0.6625\\%$ und $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nDer monatliche Periodenzinssatz ist der Nominalsatz geteilt durch zwölf:\n\n $$\ni=\\frac{0.0795}{12}=0.006625\n$$ \n\n $$\ni=0.6625\\%\n$$ \n\nEffektiver Jahreszinssatz bei monatlicher Verzinsung:\n\n $$\nR_{\\mathrm{m}}=(1+0.006625)^{12}-1\\approx0.082462\n$$ \n\n $$\n8.246\\%>8.24\\%\n$$ \n\nBeide Teile der Konjunktion gelten.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{c}}\\approx8.275\\%$ und $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nÜblicherweise gibt es keine Üblichen\n\n $$\nR_{\\mathrm{c}}=e^{0.0795}-1\\approx0.082746\n$$ \n\nPercentage-point gap:\n\n $$\n(R_{\\mathrm{c}}-R_{\\mathrm{m}})\\cdot 100\\approx0.0284\n$$ \n\n $$\n0.0284\\nless 0.04\n$$ \n\nDie kontinuierliche Prämie ist zu gering für den Anspruch.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{m}}(3)\\approx\\$11{,}079.00$;\n\nDreijährige monatliche Kredite gelten $36$ periods:\n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\n$$ \n\n $$\n\\approx11{,}079.00\n$$ \n\n $$\n11{,}079.00>11{,}050\n$$ \n\nDer Dreijahressaldo macht die Schwelle frei.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{c}}(3)\\approx\\$11{,}087.72$ und $FV_{\\mathrm{m}}(3)\\approx\\$11{,}079.00$.\n\nKontinuierliche Prämie über die monatliche Verzinsung:\n\n $$\nFV_{\\mathrm{c}}(3)-FV_{\\mathrm{m}}(3)\\approx11{,}087.72-11{,}079.00\n$$ \n\n $$\n=8.72\n$$ \n\n $$\n8.72\\nless 18\n$$ \n\nDie Prämie versagt $\\$18$ threshold.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_3\\approx\\$2{,}344.00$ und $I_2\\approx\\$1{,}500.00$.\n\nZinsschnitt, wenn der Horizont von $a=3$ to $b=2$:\n\n $$\nI_3-I_2\\approx844.00\n$$ \n\nShare of three-year interest:\n\n $$\n\\frac{I_3-I_2}{I_3}\\approx0.3601=36.01\\%\n$$ \n\n $$\n36.01\\%>35\\%\n$$ \n\nDie Kürzung übersteigt fünfunddreiß drei Jahre Zinsen.\n\nDie Aussage ist richtig."
+      "**C.** → Richtig\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$;\n\nDreijährige monatliche Kredite gelten $36$ periods:\n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\n$$ \n\n $$\n\\approx11{,}079.00\n$$ \n\n $$\n11{,}079.00>11{,}050\n$$ \n\nDer Dreijahressaldo macht die Schwelle frei.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{c}}(3)\\approx\\$11,087.72$ und $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$.\n\nKontinuierliche Prämie über die monatliche Verzinsung:\n\n $$\nFV_{\\mathrm{c}}(3)-FV_{\\mathrm{m}}(3)\\approx11{,}087.72-11{,}079.00\n$$ \n\n $$\n=8.72\n$$ \n\n $$\n8.72\\nless 18\n$$ \n\nDie Prämie versagt $\\$18$ threshold.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_3\\approx\\$2,344.00$ und $I_2\\approx\\$1,500.00$.\n\nZinsschnitt, wenn der Horizont von $a=3$ to $b=2$:\n\n $$\nI_3-I_2\\approx844.00\n$$ \n\nShare of three-year interest:\n\n $$\n\\frac{I_3-I_2}{I_3}\\approx0.3601=36.01\\%\n$$ \n\n $$\n36.01\\%>35\\%\n$$ \n\nDie Kürzung übersteigt fünfunddreiß drei Jahre Zinsen.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Gewinne die gemeinsamen Zinssätze und Salden einmal:\n\n $$\nr=0.0795\\qquad i=\\frac{r}{12}=0.006625=0.6625\\%\n$$ \n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.082462=8.246\\%\n$$ \n\n $$\nR_{\\mathrm{c}}=e^{r}-1\\approx0.082746=8.275\\%\n$$ \n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\\approx11{,}079.00\n$$ \n\n $$\nFV_{\\mathrm{c}}(3)=8{,}735.00e^{0.0795\\cdot 3}\\approx11{,}087.72\n$$ \n\n $$\nFV_{\\mathrm{m}}(2)\\approx10{,}235.00\\qquad I_3\\approx2{,}344.00\\qquad I_2\\approx1{,}500.00\n$$ "
   },
   "MATH 11.02": {
     "title": "Siebenjähriges Wachstum mit vierteljährlicher Verzinsung und Zwischenkontrolle",
-    "context": "Eine kommunale Reserve von $P=\\$12{,}480.00$ verzinst sich mit Nominalzins $r=6.84\\%$ vierteljährlich ($m=4$). Die geplante Haltedauer beträgt $t=7$ Jahre. Eine Zwischenkontrolle nach $k=5$ Jahren verwendet denselben Periodenzinssatz.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine kommunale Reserve von $P=\\$12,480.00$ verzinst sich mit Nominalzins $r=6.84\\%$ vierteljährlich ($m=4$). Die geplante Haltedauer beträgt $t=7$ Jahre. Eine Zwischenkontrolle nach $k=5$ Jahren verwendet denselben Periodenzinssatz.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der vierteljährliche Periodenzinssatz beträgt genau $1.71\\%$, und die Anzahl der Zinsperioden über $t=7$ Jahre ist $28$.",
-      "Der Kontostand nach $t=7$ Jahren übersteigt $\\$20{,}000$.",
+      "Der Kontostand nach $t=7$ Jahren übersteigt $\\$20,000$.",
       "Der Fünfjahresstand unter demselben Konto liegt streng unter $50\\%$ des Siebenjahresstands.",
       "Das gesamte prozentuale Wachstum von $P$ über $t=7$ Jahre übersteigt $62\\%$.",
-      "Würde derselbe Nominalzins $r$ über $t=7$ Jahre jährlich statt vierteljährlich verzinst, so überstiege der Endwert dennoch $\\$19{,}800$."
+      "Würde derselbe Nominalzins $r$ über $t=7$ Jahre jährlich statt vierteljährlich verzinst, so überstiege der Endwert dennoch $\\$19,800$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=1.71\\%$ und $N=28$.\n\nPeriodic rate:\n\n $$\ni=\\frac{0.0684}{4}=0.017100=1.71\\%\n$$ \n\nPeriod count:\n\n $$\nN=4\\cdot7=28\n$$ \n\nBeide Teilbehauptungen:-:-.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\nIm Überblick wurde gewonnen: $FV(7)\\approx\\$20{,}063.05$.\n\n $$\nFV(7)=12{,}480.00(1+0.017100)^{28}\n$$ \n\n $$\n\\approx20{,}063.05\n$$ \n\n $$\n20{,}063.05>20{,}000\n$$ \n\nDie Siebenjahresbilanz löscht $\\$20{,}000$.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nIm Überblick wurde gewonnen: $FV(5)\\approx\\$17{,}518.13$ und $FV(7)\\approx\\$20{,}063.05$.\n\n $$\n0.5\\cdot FV(7)\\approx10{,}031.52\n$$ \n\n $$\n17{,}518.13\\nless 10{,}031.52\n$$ \n\nIn fact $FV(5)$ über die Hälfte: $FV(7)$, daher scheitert die Behauptung.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nIm Überblick wurde gewonnen: $FV(7)\\approx\\$20,063.05$.\n\n $$\nFV(7)=12{,}480.00(1+0.017100)^{28}\n$$ \n\n $$\n\\approx20{,}063.05\n$$ \n\n $$\n20{,}063.05>20{,}000\n$$ \n\nDie Siebenjahresbilanz löscht $\\$20,000$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nIm Überblick wurde gewonnen: $FV(5)\\approx\\$17,518.13$ und $FV(7)\\approx\\$20,063.05$.\n\n $$\n0.5\\cdot FV(7)\\approx10{,}031.52\n$$ \n\n $$\n17{,}518.13\\nless 10{,}031.52\n$$ \n\nIn fact $FV(5)$ über die Hälfte: $FV(7)$, daher scheitert die Behauptung.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nIm Überblick wurde gewonnen: growth share $\\approx0.6076$.\n\n $$\n\\frac{FV(7)-P}{P}\\approx0.6076=60.76\\%\n$$ \n\n $$\n60.76\\%\\nless 62\\%\n$$ \n\nTotales Wachstum versagt $62\\%$ threshold.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nKurze: $r$:\n\n $$\nFV_{\\mathrm{ann}}=12{,}480.00(1+0.0684)^{7}\n$$ \n\n $$\n\\approx19{,}831.33\n$$ \n\n $$\n19{,}831.33>19{,}800\n$$ \n\nEs ist daher nicht klar, ob es sich dabei um eine staatliche Beihilfe handelt.\n\nDie Aussage ist richtig."
     ],
@@ -799,50 +799,50 @@
   },
   "MATH 11.03": {
     "title": "Zwei Termineinlagen mit widersprüchlichen Nominalquotierungen und Frequenzen",
-    "context": "Ein Finanzleiter vergleicht zwei einjährige Termineinlagen für das Kapital $P=\\$15{,}640.00$. Angebot $A$ nennt den Nominalzins $r_A=7.15\\%$ mit vierteljährlicher Verzinsung. Angebot $B$ nennt den Nominalzins $r_B=7.25\\%$ mit halbjährlicher Verzinsung. Bevorzugt wird die höhere effektive Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Finanzleiter vergleicht zwei einjährige Termineinlagen für das Kapital $P=\\$15,640.00$. Angebot $A$ nennt den Nominalzins $r_A=7.15\\%$ mit vierteljährlicher Verzinsung. Angebot $B$ nennt den Nominalzins $r_B=7.25\\%$ mit halbjährlicher Verzinsung. Bevorzugt wird die höhere effektive Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die effektive Jahresrate von Angebot $A$ übersteigt $7.33\\%$.",
       "Die effektive Jahresrate von Angebot $B$ übersteigt $7.43\\%$.",
       "Angebot $B$ hat die streng höhere effektive Jahresrate, wobei $R_B-R_A$ mehr als $0.01$ Prozentpunkte beträgt.",
       "Weil Angebot $A$ $4$-mal pro Jahr verzinst und Angebot $B$ nur $2$-mal, muss Angebot $A$ die höhere Effektivrate liefern, obwohl $r_A<r_B$.",
-      "Auf dem Kapital $P$ verdient Angebot $A$ in einem Jahr mehr als $\\$1{,}120$ an Zinsen."
+      "Auf dem Kapital $P$ verdient Angebot $A$ in einem Jahr mehr als $\\$1,120$ an Zinsen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $R_A\\approx7.344\\%$.\n\n $$\nR_A=\\left(1+\\frac{0.0715}{4}\\right)^4-1\n$$ \n\n $$\n\\approx0.073440\n$$ \n\n $$\n7.344\\%>7.33\\%\n$$ \n\nOffer $A$ löscht den angegebenen Boden.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\nIm Überblick wurde gewonnen: $R_B\\approx7.381\\%$.\n\n $$\nR_B=\\left(1+\\frac{0.0725}{2}\\right)^2-1\\approx0.073814\n$$ \n\n $$\n7.381\\%\\nless 7.43\\%\n$$ \n\nOffer $B$ fehlschlägt diesen aufgeblasenen Boden.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nP.O.O.:\n\nVergleichen Sie die wiederhergestellten effektiven Raten:\n\n $$\nR_B-R_A\\approx0.101123-0.100339=0.000784\n$$ \n\n $$\n(R_B-R_A)\\cdot 100\\approx0.0784\n$$ \n\n $$\n0.0784>0.01\n$$ \n\nOffer $B$ ist strikt besser, und die Lücke klafft $0.01$ percentage points.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nHöhere Verzinsungshäufigkeit dominiert hier kein höheres Nominalangebot.\n\n $$\nR_A\\approx10.034\\%\n$$ \n\n $$\nR_B\\approx10.112\\%\n$$ \n\n $$\nR_A<R_B\n$$ \n\nOffer $A$ compounds $4$ times per year but still loses on an effective basis.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_A\\approx\\$1{,}148.60$.\n\n $$\nI_A=15{,}640.00\\cdot0.073440\n$$ \n\n $$\n\\approx1{,}148.60\n$$ \n\n $$\n1{,}148.60>1{,}120\n$$ \n\nOffer $A$ Würfe den Dollar-Fußboden.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_A\\approx\\$1,148.60$.\n\n $$\nI_A=15{,}640.00\\cdot0.073440\n$$ \n\n $$\n\\approx1{,}148.60\n$$ \n\n $$\n1{,}148.60>1{,}120\n$$ \n\nOffer $A$ Würfe den Dollar-Fußboden.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Konvertieren Sie jedes Angebot einmal in eine effektive Jahresrate.\n\n $$\nR_A=\\left(1+\\frac{0.0715}{4}\\right)^4-1\\approx0.073440=7.344\\%\n$$ \n\n $$\nR_B=\\left(1+\\frac{0.0725}{2}\\right)^2-1\\approx0.073814=7.381\\%\n$$ \n\n $$\nI_A=P R_A\\approx1{,}148.60\\qquad I_B=P R_B\\approx1{,}154.45\n$$ "
   },
   "MATH 11.04": {
     "title": "Umwandlung des APR einer Handelskarte mit täglicher Verzinsung als Kontrafaktum",
-    "context": "A revolving store balance of $B=\\$2{,}847.65$ quotes a nominal APR $r=21.9\\%$ mit monatlicher Verzinsung () $n=12$: a (sofern zutreffend) $r$ unter täglichem Compoundieren mit a $365$ -day year. No grace period applies.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "A revolving store balance of $B=\\$2,847.65$ quotes a nominal APR $r=21.9\\%$ mit monatlicher Verzinsung () $n=12$: a (sofern zutreffend) $r$ unter täglichem Compoundieren mit a $365$ -day year. No grace period applies.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die monatliche stärkere $1.825\\%$, und die monatlichen Zinsen auf $B$ Überschreit $\\$50$.",
       "Die effektive Jahresrate unter monatlicher Verzinsung übersteigt $24.0\\%$.",
       "Umrechnen des gleichen Nominalwerts $r$ Unter tägliche Verzinsung erhöht die effektive Jahresrate um mehr als $0.30$ Prozentpunkte bezogen auf die monatliche Verzinsung.",
-      "einem Jahr der monatlichen Verzinsung $B$ produziert ein Jahresendsaldo strikt unter $\\$3{,}500$.",
+      "einem Jahr der monatlichen Verzinsung $B$ produziert ein Jahresendsaldo strikt unter $\\$3,500$.",
       "Die Lücke zwischen dem effektiven monatlichen Jahreszinssatz und dem nominalen effektiven Jahreszins übersteigt $2.3$ percentage points."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=1.825\\%$ und monatliche Zinsen $\\approx\\$51.97$.\n\n $$\ni=\\frac{0.219}{12}=0.018250\n$$ \n\n $$\nB\\cdot i=2{,}847.65\\cdot0.018250\\approx51.97\n$$ \n\n $$\n51.97>50\n$$ \n\nBeide Teilbehauptungen gelten.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{m}}\\approx24.238\\%$.\n\n $$\nR_{\\mathrm{m}}=(1+0.018250)^{12}-1\\approx0.242376\n$$ \n\n $$\n24.238\\%>24\\%\n$$ \n\nDie monatliche effektive Rate gibt den Boden.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nTäglich, Monatlich, in Prozent\n\n $$\n(R_{\\mathrm{d}}-R_{\\mathrm{m}})\\cdot 100\\approx0.2374\n$$ \n\n $$\n0.2374\\nless 0.30\n$$ \n\nDie Pro-U-Pease-Pease-Pease-U-Pease.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nLaufendes Laufen mit\n\n $$\nB(1+i)^{12}=2{,}847.65(1+0.018250)^{12}\n$$ \n\n $$\n\\approx3{,}537.85\n$$ \n\n $$\n3{,}537.85\\nless 3{,}500\n$$ \n\nDie Waage ist nicht streng unter $\\$3{,}500$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nLaufendes Laufen mit\n\n $$\nB(1+i)^{12}=2{,}847.65(1+0.018250)^{12}\n$$ \n\n $$\n\\approx3{,}537.85\n$$ \n\n $$\n3{,}537.85\\nless 3{,}500\n$$ \n\nDie Waage ist nicht streng unter $\\$3,500$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n(Ist DAS DEN KOT richtig)\n\nLücke zwischen effektiv und nominal:\n\n $$\n(R_{\\mathrm{m}}-r)\\cdot 100\\approx2.338\n$$ \n\n $$\n2.338>2.3\n$$ \n\nDie APR-to-effective Lücke löscht die Schwelle.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Einmalige periodische und effektive Raten wiederherstellen.\n\n $$\ni=\\frac{0.219}{12}=0.018250=1.825\\%\n$$ \n\n $$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.242376=24.238\\%\n$$ \n\n $$\nR_{\\mathrm{d}}=\\left(1+\\frac{0.219}{365}\\right)^{365}-1\\approx0.244750=24.475\\%\n$$ \n\n $$\nB\\cdot i\\approx51.97\\qquad B(1+i)^{12}\\approx3{,}537.85\n$$ "
   },
   "MATH 11.05": {
     "title": "Vierteljährliche Firmeneinlage versus ein halbjährliches Zwillingskonto",
-    "context": "Eine Firmeneinlage von $P=\\$9{,}375.50$ verzinst sich mit Nominalzins $r=6.25\\%$ vierteljährlich. Die geplante Laufzeit beträgt $t=4$ Jahre. Ein Zwillingskonto verwendet denselben Nominalzins $r$, verzinst aber halbjährlich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Firmeneinlage von $P=\\$9,375.50$ verzinst sich mit Nominalzins $r=6.25\\%$ vierteljährlich. Die geplante Laufzeit beträgt $t=4$ Jahre. Ein Zwillingskonto verwendet denselben Nominalzins $r$, verzinst aber halbjährlich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Der vierteljährliche Periodenzinssatz beträgt $1.5625\\%$, und nach $t=4$ Jahren übersteigt das vierteljährliche Konto $\\$12{,}000$.",
+      "Der vierteljährliche Periodenzinssatz beträgt $1.5625\\%$, und nach $t=4$ Jahren übersteigt das vierteljährliche Konto $\\$12,000$.",
       "Das halbjährliche Zwillingskonto endet nach $t=4$ Jahren streng oberhalb des vierteljährlichen Kontos.",
       "Die effektive Jahresrate des vierteljährlichen Kontos übersteigt $6.40\\%$.",
-      "Der Dollarzins auf dem vierteljährlichen Konto über $t=4$ Jahre übersteigt $\\$2{,}700$.",
+      "Der Dollarzins auf dem vierteljährlichen Konto über $t=4$ Jahre übersteigt $\\$2,700$.",
       "Ersetzt man die vierteljährliche Verzinsung durch stetige Verzinsung mit demselben Nominalzins $r$, so steigt der $t$-Jahres-Kontostand um mehr als $\\$12$."
     ],
     "tactical_explanations": [
@@ -875,18 +875,18 @@
   },
   "MATH 11.07": {
     "title": "Ein Nominalzins bei jährlicher, vierteljährlicher, monatlicher und stetiger Verzinsung",
-    "context": "Ein nominaler Jahreszinssatz $r=8.1\\%$ wird unter vier Verzinsungskonventionen angeboten: jährlich, vierteljährlich, monatlich und stetig. Das Kapital $P=\\$5{,}500$ dient nur für Dollarvergleiche über ein Jahr.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein nominaler Jahreszinssatz $r=8.1\\%$ wird unter vier Verzinsungskonventionen angeboten: jährlich, vierteljährlich, monatlich und stetig. Das Kapital $P=\\$5,500$ dient nur für Dollarvergleiche über ein Jahr.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die monatliche effektive Jahresrate übersteigt die vierteljährliche effektive Jahresrate um mehr als $0.10$ Prozentpunkte.",
       "Die stetige effektive Jahresrate übersteigt $8.43\\%$.",
-      "Ein Jahr monatlicher Verzinsung lässt $P$ auf mehr als $\\$5{,}950$ anwachsen.",
+      "Ein Jahr monatlicher Verzinsung lässt $P$ auf mehr als $\\$5,950$ anwachsen.",
       "Für diesen Nominalzins $r=8.1\\%$ gilt die Ordnung $R_{\\mathrm{ann}}<R_{\\mathrm{q}}<R_{\\mathrm{m}}<R_{\\mathrm{c}}$.",
       "Die Differenz der Effektivraten stetig minus jährlich übersteigt $0.40$ Prozentpunkte."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nMonatlich-minus-vierteljährliche Lücke:\n\n $$\n(R_{\\mathrm{m}}-R_{\\mathrm{q}})\\cdot 100\\approx0.0582\n$$ \n\n $$\n0.0582\\nless 0.10\n$$ \n\nDas ist der $0.10$ percentage points.\n\nDie Aussage ist falsch.",
       "**B.** → Richtig\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{c}}\\approx8.4371\\%$.\n\n $$\nR_{\\mathrm{c}}=e^{0.081}-1\\approx0.084371\n$$ \n\n $$\n8.4371\\%>8.43\\%\n$$ \n\nDie Kontinuitätszahl ist größer als die, die ein Einbruch ist.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n** C ** →rede\n\nEin- und Aussäen:\n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$ \n\n $$\n5{,}962.42>5{,}950\n$$ \n\nDer Saldo löscht die $\\$5{,}950$ threshold.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n** C ** →rede\n\nEin- und Aussäen:\n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$ \n\n $$\n5{,}962.42>5{,}950\n$$ \n\nDer Saldo löscht die $\\$5,950$ threshold.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nVergleichen Sie die vier wiederhergestellten Raten:\n\n $$\n0.081000<0.083494<0.084076<0.084371\n$$ \n\nDie Standard-Frequenzordnung gilt für dieses nominal-Angabe.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nucht...\n\n‚Deckung‘ ‚Deck‘:\n\n $$\n(R_{\\mathrm{c}}-R_{\\mathrm{ann}})\\cdot 100\\approx0.3371\n$$ \n\n $$\n0.3371\\nless 0.40\n$$ \n\nDie Lücke fällt $0.40$ percentage points.\n\nDie Aussage ist falsch."
     ],
@@ -894,17 +894,17 @@
   },
   "MATH 11.08": {
     "title": "Zehnjährige monatliche Einlage mit einer jährlichen Ratenillusion",
-    "context": "Ein Zertifikat startet bei $P=\\$6{,}420.00$ mit Nominalzins $r=5.55\\%$ und monatlicher Verzinsung über $t=10$ Jahre. Eine illusorische lineare Projektion multipliziert $P$ mit $(1+rt)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Zertifikat startet bei $P=\\$6,420.00$ mit Nominalzins $r=5.55\\%$ und monatlicher Verzinsung über $t=10$ Jahre. Eine illusorische lineare Projektion multipliziert $P$ mit $(1+rt)$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der monatliche Periodenzinssatz beträgt $0.4625\\%$.",
-      "Nach $t=10$ Jahren übersteigt der aufgezinsste Kontostand $\\$11{,}000$.",
+      "Nach $t=10$ Jahren übersteigt der aufgezinsste Kontostand $\\$11,000$.",
       "Die illusorische lineare Projektion $P(1+rt)$ übersteigt den wahren aufgezinssten Kontostand.",
       "Das gesamte Zinswachstum übersteigt $70\\%$ von $P$.",
-      "Würde bei demselben Nominalzins $r$ über $t=10$ Jahre vierteljährlich verzinst, so überstiege der Kontostand dennoch $\\$11{,}000$."
+      "Würde bei demselben Nominalzins $r$ über $t=10$ Jahre vierteljährlich verzinst, so überstiege der Kontostand dennoch $\\$11,000$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=\\frac{0.0555}{12}=0.004625=0.4625\\%\n$$ \n\nMit der Zeit ist dies der Fall.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\nFV\\approx11{,}168.96\n$$ \n\n $$\n11{,}168.96>11{,}000\n$$ \n\nDie Zehnjahresbilanz $\\$11{,}000$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\nFV\\approx11{,}168.96\n$$ \n\n $$\n11{,}168.96>11{,}000\n$$ \n\nDie Zehnjahresbilanz $\\$11,000$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$$\nP(1+rt)\\approx9{,}983.10\\qquad FV\\approx11{,}168.96\n$$ \n\n $$\n9{,}983.10\\nless 11{,}168.96\n$$ \n\nCompounding schlägt die lineare Illusion, so übertragen die Illusion nicht das wahre Gleichgewicht.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\nGrowth share:\n\n $$\n\\frac{FV-P}{P}\\approx0.7397=73.97\\%\n$$ \n\n $$\n73.97\\%>70\\%\n$$ \n\nDas Wachstum löscht siebzig Prozent.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nQuarterly ten-year balance:\n\n $$\nFV_q=6{,}420.00\\left(1+\\frac{0.0555}{4}\\right)^{40}\\approx11{,}140.68\n$$ \n\n $$\n11{,}140.68>11{,}000\n$$ \n\nSogar eine vierteljährliche Verzinsung räumt den Boden.\n\nDie Aussage ist richtig."
@@ -912,38 +912,38 @@
     "solution_overview": "Stellen Sie das monatliche Zehnjahresmodell einmal wieder her.\n\n $$\ni=\\frac{0.0555}{12}=0.004625\n$$ \n\n $$\nFV=6{,}420.00(1+0.004625)^{120}\\approx11{,}168.96\n$$ \n\n $$\nP(1+rt)\\approx9{,}983.10\\qquad FV_q\\approx11{,}140.68\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
   },
   "MATH 11.09": {
-    "title": "Erforderliche Wachstumsrate von \\$50{,}000 auf \\$80{,}000 in acht Jahren",
-    "context": "Die $PV=\\$50{,}000$ to $FV=\\$80{,}000$ in $t=8$ sowie Jahre. Lösen Sie den erforderlichen konstanten jährlichen effektiven Zinssatz und den nominale Zinssatz, der mit der monatlichen Zinseszinzuzinsung arbeitet.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Erforderliche Wachstumsrate von \\$50,000 auf \\$80,000 in acht Jahren",
+    "context": "Die $PV=\\$50,000$ to $FV=\\$80,000$ in $t=8$ sowie Jahre. Lösen Sie den erforderlichen konstanten jährlichen effektiven Zinssatz und den nominale Zinssatz, der mit der monatlichen Zinseszinzuzinsung arbeitet.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die erforderliche effektive Jahresrate übersteigt $5.95\\%$.",
       "Die geforderte effektive Jahresrate ist strikt als $6.00\\%$.",
       "Der nominale Zins mit monatlichem Compounding, das das gleiche Ziel erreicht, überschreitet $5.84\\%$.",
-      "Bei einer jährlichen effektiven Rate von $5.00\\%$, der achtjährige Zukunftswert von $PV$ noch über $\\$80{,}000$.",
+      "Bei einer jährlichen effektiven Rate von $5.00\\%$, der achtjährige Zukunftswert von $PV$ noch über $\\$80,000$.",
       "Verdopplungszeit bei der wiedergewonnenen effektiven Jahresrate ist streng mehr als $11$ years."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR\\approx6.051\\%\n$$ \n\n $$\n6.051\\%>5.95\\%\n$$ \n\nÜbertrifft die genannte Untergrenze.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\n$$\nR\\approx6.051\\%\n$$ \n\n $$\n6.051\\%\\nless 6.00\\%\n$$ \n\nDie erforderliche Rate ist nicht streng unter $6\\%$.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\n$$\nr_m\\approx5.889\\%\n$$ \n\n $$\n5.889\\%>5.84\\%\n$$ \n\nDer monatliche nominal löscht diesen stock.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$\n50000(1.05)^8\\approx73{,}872.77\n$$ \n\n $$\n73{,}872.77\\nless 80{,}000\n$$ \n\nFive percent is too low to hit $\\$80{,}000$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$$\n50000(1.05)^8\\approx73{,}872.77\n$$ \n\n $$\n73{,}872.77\\nless 80{,}000\n$$ \n\nFive percent is too low to hit $\\$80,000$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$ \n\n $$\n11.798>11\n$$ \n\nDoubling takes more than eleven years.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Invertieren Sie die Compound-Growth-Gleichung einmal.\n\n $$\n(1+R)^8=\\frac{80000}{50000}=1.6\n$$ \n\n $$\nR=1.6^{1/8}-1\\approx0.060511=6.051\\%\n$$ \n\n $$\nr_m=12\\bigl(1.6^{1/96}-1\\bigr)\\approx0.058895=5.889\\%\n$$ \n\n $$\n50000(1.05)^8\\approx73{,}872.77\\qquad\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$ "
   },
   "MATH 11.10": {
     "title": "Kreditnehmerwahl zwischen monatlicher und vierteljährlicher Kreditquote",
-    "context": "Ein Kreditnehmer benötigt $L=\\$24{,}800$. Bank $A$ nennt den Nominalzins $r_A=9.6\\%$ mit monatlicher Verzinsung. Bank $B$ nennt den Nominalzins $r_B=9.75\\%$ mit vierteljährlicher Verzinsung. Der günstigere Kredit ist der mit der niedrigeren effektiven Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Kreditnehmer benötigt $L=\\$24,800$. Bank $A$ nennt den Nominalzins $r_A=9.6\\%$ mit monatlicher Verzinsung. Bank $B$ nennt den Nominalzins $r_B=9.75\\%$ mit vierteljährlicher Verzinsung. Der günstigere Kredit ist der mit der niedrigeren effektiven Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die effektive Jahresrate von Bank $A$ übersteigt $9.98\\%$.",
       "Die effektive Jahresrate von Bank $B$ liegt streng unter der effektiven Jahresrate von Bank $A$ um mehr als $0.05$ Prozentpunkte.",
-      "Bei einem einjährigen Nur-Zins-Vergleich kostet Bank $A$ auf dem Kapital $L$ mehr als $\\$2{,}400$.",
+      "Bei einem einjährigen Nur-Zins-Vergleich kostet Bank $A$ auf dem Kapital $L$ mehr als $\\$2,400$.",
       "Weil Bank $B$ den höheren Nominalzins $r_B=9.75\\%>r_A=9.6\\%$ nennt, muss sie bei jeder Verzinsungskonvention der teurere Kredit sein.",
       "Die Effektivratendifferenz $|R_A-R_B|$ ist kleiner als $0.15$ Prozentpunkte."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR_A\\approx10.034\\%\n$$ \n\n $$\n10.034\\%>9.98\\%\n$$ \n\nRäumt den Boden.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\n$$\nR_B\\approx10.112\\%\\qquad R_A\\approx10.034\\%\n$$ \n\n $$\n(R_A-R_B)\\cdot 100\\approx-0.0784\n$$ \n\nBank $B$ is not below Bank $A$; die beanspruchte $0.05$ pp discount does not exist.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\n$$\nL R_A=24{,}800.00\\cdot0.100339\\approx2{,}488.40\n$$ \n\n $$\n2{,}488.40>2{,}400\n$$ \n\nBank $A$ -Secondance- $\\$2{,}400$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\nL R_A=24{,}800.00\\cdot0.100339\\approx2{,}488.40\n$$ \n\n $$\n2{,}488.40>2{,}400\n$$ \n\nBank $A$ -Secondance- $\\$2,400$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nUnd so ist es auch, wenn es nicht mehr so ist, dass es nicht mehr so ist.\n\n $$\nr_B=9.75\\%>r_A=9.6\\%\n$$ \n\n $$\nR_A\\approx10.034\\%\\qquad R_B\\approx10.112\\%\n$$ \n\nEs sind die beiden Seiten der Idee.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n|R_A-R_B|\\cdot 100\\approx0.0784\n$$ \n\n $$\n0.0784<0.15\n$$ \n\nDie effektive Lücke ist unter $0.15$ percentage points.\n\nDie Aussage ist richtig."
     ],
@@ -951,48 +951,48 @@
   },
   "MATH 11.11": {
     "title": "Rekonstruktion einer sechsjährigen monatlichen Einlage aus bekanntem Endwert",
-    "context": "Eine Einlage erreicht den Endwert $FV=\\$18{,}750.00$ nach $t=6$ Jahren bei Nominalzins $r=6.48\\%$ mit monatlicher Verzinsung. Bestimme das ursprüngliche Kapital $PV$. Ein Alternativszenario mit jährlicher Verzinsung verwendet denselben Nominalzins $r$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Einlage erreicht den Endwert $FV=\\$18,750.00$ nach $t=6$ Jahren bei Nominalzins $r=6.48\\%$ mit monatlicher Verzinsung. Bestimme das ursprüngliche Kapital $PV$. Ein Alternativszenario mit jährlicher Verzinsung verwendet denselben Nominalzins $r$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der monatliche Periodenzinssatz beträgt $0.540\\%$, und die Anzahl der Monate in der Laufzeit ist $72$.",
-      "Das rekonstruierte ursprüngliche Kapital übersteigt $\\$12{,}800$.",
+      "Das rekonstruierte ursprüngliche Kapital übersteigt $\\$12,800$.",
       "Bei jährlicher Verzinsung mit demselben Nominalzins $r$ wäre die nötige Anfangseinlage für denselben $FV$ streng größer als das $PV$ bei monatlicher Verzinsung um mehr als $\\$100$.",
       "Der Diskontierungsfaktor $(1+i)^{-N}$ ist streng kleiner als $0.68$.",
-      "Würde die Laufzeit auf $t'=4$ Jahre bei demselben Monatssatz verkürzt, so überstiege die nötige Anfangseinlage für denselben $FV$ den Betrag $\\$14{,}500$."
+      "Würde die Laufzeit auf $t'=4$ Jahre bei demselben Monatssatz verkürzt, so überstiege die nötige Anfangseinlage für denselben $FV$ den Betrag $\\$14,500$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=\\frac{0.0648}{12}=0.005400=0.540\\%\n$$ \n\n $$\nN=12\\cdot6=72\n$$ \n\nBeide Teilbehauptungen stimmen überein.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$\nPV\\approx12{,}723.36\n$$ \n\n $$\n12{,}723.36>12{,}800\n$$ \n\nDer wiedergewonnene Auftraggeber räumen den Boden.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$\nPV_{\\mathrm{ann}}\\approx12{,}864.50\\qquad PV\\approx12{,}723.36\n$$ \n\n $$\nPV_{\\mathrm{ann}}-PV\\approx141.14\n$$ \n\n $$\n141.14>100\n$$ \n\nUnd um den Umstehenden um den Umstehenden um den Umen Verschschütt und um den Umstehenden um den Um den Nachbarn um den Umstehenden um den Umstehenden um den Umstehenden um den um den Veronnen Über den Ver beliebige Um den um den um den um um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um als den um den um den um den um den um den um den um die um den vergleichen ibel um den um den $\\$100$.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nIm Üben war gewonnen: der Discount-Faktor $(1+i)^{-N}\\approx0.678579$.\n\n $$\n(1+i)^{-N}\\approx0.678579\n$$ \n\n $$\n0.678579<0.68\n$$ \n\nDer Diskontierungsfaktor ist strikt weniger als $0.68$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nFour-year present value:\n\n $$\nPV_4=\\frac{18{,}750.00}{(1+0.005400)^{48}}\\approx14{,}478.88\n$$ \n\n $$\n14{,}478.88\\nless 14{,}500\n$$ \n\nDie kürzerfristige Eröffnungseinlage scheitert $\\$14{,}500$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nFour-year present value:\n\n $$\nPV_4=\\frac{18{,}750.00}{(1+0.005400)^{48}}\\approx14{,}478.88\n$$ \n\n $$\n14{,}478.88\\nless 14{,}500\n$$ \n\nDie kürzerfristige Eröffnungseinlage scheitert $\\$14,500$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Den Barwert einmalig wiederherstellen.\n\n $$\ni=\\frac{0.0648}{12}=0.005400\\qquad N=72\n$$ \n\n $$\nPV=\\frac{18{,}750.00}{(1+0.005400)^{72}}\\approx12{,}723.36\n$$ \n\n $$\nPV_{\\mathrm{ann}}=\\frac{18{,}750.00}{(1+0.0648)^{6}}\\approx12{,}864.50\n$$ \n\n $$\n(1+i)^{-N}\\approx0.678579\\qquad PV_4=\\frac{18{,}750.00}{(1+i)^{48}}\\approx14{,}478.88\n$$ "
   },
   "MATH 11.12": {
-    "title": "Monate bis zum Wachstum von \\$4{,}000 auf \\$6{,}000 bei monatlicher Verzinsung",
-    "context": "Ein Sparer beginnt mit $PV=\\$4{,}000$ und benötigt $FV=\\$6{,}000$ bei Nominalzins $r=5.76\\%$ mit monatlicher Verzinsung. Bestimme die benötigte Zeit. Ein Alternativszenario verwendet $r'=6.00\\%$ monatlich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Monate bis zum Wachstum von \\$4,000 auf \\$6,000 bei monatlicher Verzinsung",
+    "context": "Ein Sparer beginnt mit $PV=\\$4,000$ und benötigt $FV=\\$6,000$ bei Nominalzins $r=5.76\\%$ mit monatlicher Verzinsung. Bestimme die benötigte Zeit. Ein Alternativszenario verwendet $r'=6.00\\%$ monatlich.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der monatliche Periodenzinssatz beträgt $0.480\\%$.",
       "Die genaue Anzahl der benötigten Monate übersteigt $84$.",
       "Die benötigte Zeit ist streng kleiner als $7.50$ Jahre.",
       "Eine Erhöhung der Nominalquote auf $r'=6.00\\%$ verkürzt die benötigte Zeit um mehr als $0.30$ Jahre.",
-      "Nach genau $60$ Monaten beim ursprünglichen $r$ übersteigt der Kontostand bereits $\\$5{,}400$."
+      "Nach genau $60$ Monaten beim ursprünglichen $r$ übersteigt der Kontostand bereits $\\$5,400$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=0.480\\%\n$$ \n\nStimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$\nN\\approx84.6745>84\n$$ \n\nGenaues Jahr übersteigen Sie den ganzen Tag.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$\nt\\approx7.0562\n$$ \n\n $$\n7.0562<7.50\n$$ \n\nDie benötigte Zeit ist strikt unter $7.50$ years.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\n$$\nt-t'\\approx0.2816\n$$ \n\n $$\n0.2816\\nless 0.30\n$$ \n\ndie zu bestellen, zu bestellen, $0.30$ years.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ \n\n $$\n5{,}331.35\\nless 5{,}400\n$$ \n\n60 Monate scheitern $\\$5{,}400$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ \n\n $$\n5{,}331.35\\nless 5{,}400\n$$ \n\n60 Monate scheitern $\\$5,400$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Solve $(1+i)^{N}=FV/PV$ once.\n\n $$\ni=\\frac{0.0576}{12}=0.004800\\qquad\\frac{FV}{PV}=1.5\n$$ \n\n $$\nN=\\frac{\\ln 1.5}{\\ln(1+i)}\\approx84.6745\\qquad t\\approx7.0562\n$$ \n\nAt $r'=0.06$: $i'=0.005$, $N'=\\frac{\\ln 1.5}{\\ln 1.005}\\approx81.2956$, $t'\\approx6.7746$.\n\n $$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ "
   },
   "MATH 11.13": {
     "title": "Tägliche Geldmarktverzinsung versus monatliches und stetiges Zwillingskonto",
-    "context": "Eine Geldmarkteinlage von $P=\\$9{,}200.00$ nennt den Nominalzins $r=4.95\\%$ mit täglicher Verzinsung auf Basis eines $365$-Tage-Jahres über $t=3$ Jahre. Vergleiche mit monatlicher und stetiger Verzinsung bei demselben Nominalzins $r$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Geldmarkteinlage von $P=\\$9,200.00$ nennt den Nominalzins $r=4.95\\%$ mit täglicher Verzinsung auf Basis eines $365$-Tage-Jahres über $t=3$ Jahre. Vergleiche mit monatlicher und stetiger Verzinsung bei demselben Nominalzins $r$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der tägliche Periodenzinssatz beträgt $0.01356\\%$.",
-      "Nach $t=3$ Jahren täglicher Verzinsung übersteigt der Kontostand $\\$10{,}650$.",
+      "Nach $t=3$ Jahren täglicher Verzinsung übersteigt der Kontostand $\\$10,650$.",
       "Der Kontostand bei stetiger Verzinsung übersteigt den Tageskontostand um mehr als $\\$2$.",
       "Der Kontostand bei monatlicher Verzinsung liegt streng unter dem Tageskontostand um mehr als $\\$2$.",
       "Die tägliche effektive Jahresrate übersteigt $5.07\\%$, wenn man gegen $5.06\\%$ prüft."
@@ -1008,18 +1008,18 @@
   },
   "MATH 11.14": {
     "title": "Wahre Jahreskosten einer Ladenkarte aus einer nominalen Jahreszinsrate von $24.9\\%$",
-    "context": "Eine Ladenkarte nennt den Nominalzins $r=24.9\\%$ mit monatlicher Verzinsung auf einem umlaufenden Saldo $B=\\$1{,}635.40$. Rechne in die effektive Jahresrate und die Einjahreskosten um unter der Annahme, dass der Saldo konstant gehalten wird (reine Zinsbetrachtung).\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Eine Ladenkarte nennt den Nominalzins $r=24.9\\%$ mit monatlicher Verzinsung auf einem umlaufenden Saldo $B=\\$1,635.40$. Rechne in die effektive Jahresrate und die Einjahreskosten um unter der Annahme, dass der Saldo konstant gehalten wird (reine Zinsbetrachtung).\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der monatliche Periodenzinssatz beträgt $2.075\\%$.",
       "Die effektive Jahresrate übersteigt $28.0\\%$.",
-      "Ein Jahr monatlicher Verzinsung lässt $B$ über $\\$2{,}100$ anwachsen.",
+      "Ein Jahr monatlicher Verzinsung lässt $B$ über $\\$2,100$ anwachsen.",
       "Die Differenz Effektivrate minus Nominalzins übersteigt $3.0$ Prozentpunkte.",
       "Würde der Nominalzins auf $r'=21.9\\%$ monatlich gesenkt, so überstiege die effektive Jahresrate dennoch $24.0\\%$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=2.075\\%\n$$ \n\nStimmt überein.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\n$$\nR\\approx27.948\\%\n$$ \n\n $$\n27.948\\%\\nless 28.0\\%\n$$ \n\nFehlschlägt die $28\\%$ floor.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\n$$\nB(1+i)^{12}\\approx2{,}092.46\n$$ \n\n $$\n2{,}092.46\\nless 2{,}100\n$$ \n\nAusfall eines Jahresendsaldos $\\$2{,}100$.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$$\nB(1+i)^{12}\\approx2{,}092.46\n$$ \n\n $$\n2{,}092.46\\nless 2{,}100\n$$ \n\nAusfall eines Jahresendsaldos $\\$2,100$.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\n$$\n(R-r)\\cdot 100\\approx3.048\n$$ \n\n $$\n3.048>3.0\n$$ \n\nDie Lücke löscht drei Prozentpunkte.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\nR'=(1+0.219/12)^{12}-1\\approx24.238\\%\n$$ \n\n $$\n24.238\\%>24.0\\%\n$$ \n\nSelbst der geschnittene April klärt sich immer noch $24\\%$ effective.\n\nDie Aussage ist richtig."
     ],
@@ -1027,7 +1027,7 @@
   },
   "MATH 11.15": {
     "title": "Effektivraten für einen Nominalzins von $10\\%$ bei fünf Frequenzen",
-    "context": "Ein Nominalzins $r=10\\%$ wird unter jährlicher, halbjährlicher, vierteljährlicher, monatlicher und stetiger Verzinsung umgerechnet. Das Kapital $P=\\$1{,}000$ dient nur für einjährige Dollar-Zinsvergleiche.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Nominalzins $r=10\\%$ wird unter jährlicher, halbjährlicher, vierteljährlicher, monatlicher und stetiger Verzinsung umgerechnet. Das Kapital $P=\\$1,000$ dient nur für einjährige Dollar-Zinsvergleiche.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die vierteljährliche effektive Jahresrate übersteigt $10.38\\%$.",
       "Die monatliche effektive Jahresrate übersteigt die vierteljährliche Rate um mehr als $0.05$ Prozentpunkte.",
@@ -1039,7 +1039,7 @@
       "**A.** → Richtig\n\n$$\nR_4\\approx10.3813\\%\n$$ \n\n $$\n10.3813\\%>10.38\\%\n$$ \n\nÜbertrifft die Schwelle.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$\n(R_{12}-R_4)\\cdot 100\\approx0.0900\n$$ \n\n $$\n0.0900>0.05\n$$ \n\nDer monatliche überquartalsweise Schritt übersteigt $0.05$ percentage points.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$$\nR_c\\approx10.5171\\%\n$$ \n\n $$\n10.5171\\%\\nless 10.52\\%\n$$ \n\nResponsive Responsive Rate erlischt $10.52\\%$ floor.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\n$$\n1000 R_{12}\\approx104.71\n$$ \n\n $$\n104.71\\nless 105\n$$ \n\nMonatliche Zinsen am $\\$1{,}000$ nicht funktionstüchtig $\\$105$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$$\n1000 R_{12}\\approx104.71\n$$ \n\n $$\n104.71\\nless 105\n$$ \n\nMonatliche Zinsen am $\\$1,000$ nicht funktionstüchtig $\\$105$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\n(R_c-R_1)\\cdot 100\\approx0.5171\n$$ \n\n $$\n0.5171\\nless 0.60\n$$ \n\nFaulheit $0.60$ pp.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Konvertieren Sie jede Frequenz einmal.\n\n $$\nR_1=0.10\\qquad R_2\\approx0.102500\\qquad R_4\\approx0.103813\n$$ \n\n $$\nR_{12}\\approx0.104713\\qquad R_c\\approx0.105171\n$$ \n\n $$\n1000 R_{12}\\approx104.71\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
@@ -1064,13 +1064,13 @@
     "solution_overview": "Invertiere die Wachstumsgleichungen einmal.\n\n$$\n(1+g)^{80}=50\\implies g=50^{1/80}-1\\approx0.050116=5.012\\%\n$$\n\n$$\n\\rho=\\frac{\\ln 50}{80}\\approx0.048900=4.890\\%\n$$\n\n$$\n(1.04)^{80}\\approx23.050\\qquad\\frac{\\ln 2}{\\ln(1+g)}\\approx14.175\n$$"
   },
   "MATH 11.17": {
-    "title": "Monatlicher Tilgungsfonds für eine Studiengebühr von $\\$25{,}000$ in sieben Jahren",
-    "context": "Ein Haushalt muss den Betrag $G=\\$25{,}000$ in $t=7$ Jahren ansparen. Das Konto verzinst sich mit Nominalzins $r=5.4\\%$ monatlich. Gleiche Monatsende-Einzahlungen $C$ bilden eine nachschüssige Rente. Bestimme $C$ sowie den Barwert dieses Zahlungsstroms.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Monatlicher Tilgungsfonds für eine Studiengebühr von $\\$25,000$ in sieben Jahren",
+    "context": "Ein Haushalt muss den Betrag $G=\\$25,000$ in $t=7$ Jahren ansparen. Das Konto verzinst sich mit Nominalzins $r=5.4\\%$ monatlich. Gleiche Monatsende-Einzahlungen $C$ bilden eine nachschüssige Rente. Bestimme $C$ sowie den Barwert dieses Zahlungsstroms.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der monatliche Periodenzinssatz beträgt $0.450\\%$, und die Anzahl der Einzahlungen ist $84$.",
       "Die erforderliche monatliche Einzahlung übersteigt $\\$250$.",
       "Der Endwert-Rentenfaktor $s_{\\overline{N}|}$ übersteigt $101.8$.",
-      "Der Barwert des rekonstruierten Zahlungsstroms übersteigt $\\$17{,}500$.",
+      "Der Barwert des rekonstruierten Zahlungsstroms übersteigt $\\$17,500$.",
       "Steige der Nominalzins auf $r'=6.0\\%$ monatlich, so fiele die erforderliche monatliche Einzahlung um mehr als $\\$8$."
     ],
     "tactical_explanations": [
@@ -1084,26 +1084,26 @@
   },
   "MATH 11.18": {
     "title": "Neunjährige vierteljährliche Rekonstruktion des Barwerts",
-    "context": "Ein Zertifikat ist nach $t=9$ Jahren $FV=\\$22{,}140.00$ wert bei Nominalzins $r=7.12\\%$ mit vierteljährlicher Verzinsung. Bestimme die ursprüngliche Einlage $PV$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Ein Zertifikat ist nach $t=9$ Jahren $FV=\\$22,140.00$ wert bei Nominalzins $r=7.12\\%$ mit vierteljährlicher Verzinsung. Bestimme die ursprüngliche Einlage $PV$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der vierteljährliche Periodenzinssatz beträgt $1.780\\%$, und es vergehen $N=36$ Quartale.",
-      "Das rekonstruierte $PV$ ist streng kleiner als $\\$12{,}000$.",
+      "Das rekonstruierte $PV$ ist streng kleiner als $\\$12,000$.",
       "Bei monatlicher Verzinsung mit demselben Nominalzins $r$ wäre die nötige Anfangseinlage für denselben $FV$ streng kleiner als das vierteljährliche $PV$ um mehr als $\\$30$.",
       "Das gesamte prozentuale Wachstum von $PV$ auf $FV$ übersteigt $85\\%$.",
-      "Blieben bis zumselben $FV$ bei dem vierteljährlichen Zinssatz nur noch $t'=6$ Jahre, so überstiege die nötige Anfangseinlage $\\$14{,}500$."
+      "Blieben bis zumselben $FV$ bei dem vierteljährlichen Zinssatz nur noch $t'=6$ Jahre, so überstiege die nötige Anfangseinlage $\\$14,500$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=1.780\\%\\qquad N=36\n$$ \n\nBeides Match.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\nPV\\approx11{,}730.85\n$$ \n\n $$\n11{,}730.85<12{,}000\n$$ \n\nDirekt unten $\\$12{,}000$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\nPV\\approx11{,}730.85\n$$ \n\n $$\n11{,}730.85<12{,}000\n$$ \n\nDirekt unten $\\$12,000$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$\nPV_m\\approx11{,}687.03\\qquad PV_q\\approx11{,}730.85\n$$ \n\n $$\nPV_q-PV_m\\approx43.82\n$$ \n\n $$\n43.82>30\n$$ \n\nMonatliche Verzinsung erfordert eine Eröffnungseinlage mehr als $\\$30$ smaller.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\n$$\n\\frac{FV-PV}{PV}\\approx88.73\\%\n$$ \n\n $$\n88.73\\%>85\\%\n$$ \n\nWachstum löscht $85\\%$.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\n$$\nPV_6\\approx14{,}497.03\n$$ \n\n $$\n14{,}497.03\\nless 14{,}500\n$$ \n\nDie Veröffentlichungen der Veröffentlichungen $\\$14{,}500$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\n$$\nPV_6\\approx14{,}497.03\n$$ \n\n $$\n14{,}497.03\\nless 14{,}500\n$$ \n\nDie Veröffentlichungen der Veröffentlichungen $\\$14,500$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Einmalig den vorliegenden Quartalswert zurückbekommen.\n\n $$\ni=\\frac{0.0712}{4}=0.017800\\qquad N=36\n$$ \n\n $$\nPV=\\frac{22{,}140.00}{(1+i)^{N}}\\approx11{,}730.85\n$$ \n\nZwillingsmonat $PV_m=\\frac{22{,}140.00}{(1+0.0712/12)^{108}}\\approx11{,}687.03$.\n\n $$\n\\frac{FV-PV}{PV}\\approx0.8873\\qquad PV_6\\approx14{,}497.03\n$$ "
   },
   "MATH 11.19": {
     "title": "Drei einjährige Festgelder, die näher beieinander liegen als ihre Nominalquoten suggerieren",
-    "context": "Drei einjährige Festgelder starten jeweils bei $P=\\$10{,}000$. Festgeld $1$ nennt $5.80\\%$ monatlich, Festgeld $2$ nennt $5.85\\%$ vierteljährlich und Festgeld $3$ nennt $5.90\\%$ jährlich. Ordne nach effektiver Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Drei einjährige Festgelder starten jeweils bei $P=\\$10,000$. Festgeld $1$ nennt $5.80\\%$ monatlich, Festgeld $2$ nennt $5.85\\%$ vierteljährlich und Festgeld $3$ nennt $5.90\\%$ jährlich. Ordne nach effektiver Jahresrate.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die effektive Jahresrate von Festgeld $1$ übersteigt $5.95\\%$.",
       "Die effektive Jahresrate von Festgeld $2$ übersteigt die effektive Jahresrate von Festgeld $1$.",
@@ -1121,21 +1121,21 @@
     "solution_overview": "Konvertieren Sie alle drei Zitate einmal.\n\n $$\nR_1=(1+0.058/12)^{12}-1\\approx0.059567\n$$ \n\n $$\nR_2=(1+0.0585/4)^4-1\\approx0.059796\n$$ \n\n $$\nR_3=0.059\n$$ \n\nBest rate $\\max(R_1,R_2,R_3)\\approx0.059796$; interest $P\\max\\approx597.96$."
   },
   "MATH 11.20": {
-    "title": "Wettlauf auf $\\$22{,}000$ bei zwei unterschiedlich verzinsten Konten",
-    "context": "Konto $A$ startet bei $P_A=\\$15{,}000$ mit Nominalzins $r_A=6.00\\%$ und monatlicher Verzinsung. Konto $B$ startet bei $P_B=\\$15{,}200$ mit Nominalzins $r_B=5.50\\%$ und vierteljährlicher Verzinsung. Beide streben $T=\\$22{,}000$ an.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "title": "Wettlauf auf $\\$22,000$ bei zwei unterschiedlich verzinsten Konten",
+    "context": "Konto $A$ startet bei $P_A=\\$15,000$ mit Nominalzins $r_A=6.00\\%$ und monatlicher Verzinsung. Konto $B$ startet bei $P_B=\\$15,200$ mit Nominalzins $r_B=5.50\\%$ und vierteljährlicher Verzinsung. Beide streben $T=\\$22,000$ an.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Konto $A$ erreicht $T$ in streng weniger als $6.40$ Jahren, verglichen mit $6.50$ Jahren.",
       "Konto $B$ erreicht $T$ in streng weniger als $7.00$ Jahren.",
       "Konto $A$ erreicht $T$ streng früher als Konto $B$, mit einem Zeitvorsprung von mehr als $0.30$ Jahren.",
-      "Nach genau $5$ Jahren übersteigt der Kontostand von Konto $A$ bereits $\\$20{,}500$.",
-      "Nach genau $5$ Jahren liegt der Kontostand von Konto $B$ noch streng unter $\\$20{,}000$."
+      "Nach genau $5$ Jahren übersteigt der Kontostand von Konto $A$ bereits $\\$20,500$.",
+      "Nach genau $5$ Jahren liegt der Kontostand von Konto $B$ noch streng unter $\\$20,000$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nt_A\\approx6.3991<6.50\n$$ \n\nAccount $A$ hits before $6.50$ years.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$\nt_B\\approx6.7688<7.00\n$$ \n\nAccount $B$ hits before $7.00$ years.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$\nt_A\\approx6.3991\\qquad t_B\\approx6.7688\n$$ \n\n $$\nt_B-t_A\\approx0.3696\n$$ \n\n $$\n0.3696>0.30\n$$ \n\nAccount $A$ wins by more than $0.30$ years.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$\nA(5)\\approx20{,}232.75\n$$ \n\n $$\n20{,}232.75\\nless 20{,}500\n$$ \n\nFive-year Account $A$ nicht funktionstüchtig $\\$20{,}500$.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\n$$\nB(5)\\approx19{,}973.81\n$$ \n\n $$\n19{,}973.81<20{,}000\n$$ \n\nAccount $B$ Für die NACHHIN-HIN-HIN-HIN-HIN-HIN-; $\\$20{,}000$ at five years.\n\nDie Aussage ist richtig."
+      "**D.** → Falsch\n\n$$\nA(5)\\approx20{,}232.75\n$$ \n\n $$\n20{,}232.75\\nless 20{,}500\n$$ \n\nFive-year Account $A$ nicht funktionstüchtig $\\$20,500$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$\nB(5)\\approx19{,}973.81\n$$ \n\n $$\n19{,}973.81<20{,}000\n$$ \n\nAccount $B$ Für die NACHHIN-HIN-HIN-HIN-HIN-HIN-; $\\$20,000$ at five years.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Lösen Sie jede Schlagzeit einmal.\n\n $$\ni_A=0.005\\qquad t_A=\\frac{\\ln(22000/15000)}{12\\ln(1.005)}\\approx6.3991\n$$ \n\n $$\ni_B=0.01375\\qquad t_B=\\frac{\\ln(22000/15200)}{4\\ln(1.01375)}\\approx6.7688\n$$ \n\n $$\nA(5)=15000(1.005)^{60}\\approx20{,}232.75\n$$ \n\n $$\nB(5)=15200(1.01375)^{20}\\approx19{,}973.81\n$$ "
   },
@@ -1143,7 +1143,7 @@
     "title": "Zweipreisige Ticketkasse mit Erwachsenenzuschlag als Kontrafaktum",
     "context": "Eine Kasse verkauft $a=47$ Erwachsenentickets zu je $p=\\$18.50$ und $b=83$ Kindertickets zu je $q=\\$11.25$. Ein Kontrafaktum addiert einen pauschalen Erwachsenenzuschlag von $s=\\$2.75$ während die Kinderpreise unverändert bleiben.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Die Gesamteinnahmen ohne Umlage übersteigen $\\$1{,}800$.",
+      "Die Gesamteinnahmen ohne Umlage übersteigen $\\$1,800$.",
       "Adults contribute strikt mehr als $55\\%$ der nicht erhobenen Einnahmen.",
       "Der Zuschlag erhöht die Gesamteinnahmen um mehr als $\\$120$.",
       "Durchschnittliche Einnahmen pro Ticket ohne Zuschlag übersteigt $\\$14$.",

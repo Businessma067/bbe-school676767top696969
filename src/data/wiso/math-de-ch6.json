@@ -1178,7 +1178,7 @@
   },
   "MATH 6.64": {
     "title": "Treuepunkte-Rabatt",
-    "context": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0{,}50. Es sei $x$ die Anzahl der eingelösten Punkte. Ein Kunde möchte, dass die Rechnung höchstens \\$250 beträgt.",
+    "context": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0,50. Es sei $x$ die Anzahl der eingelösten Punkte. Ein Kunde möchte, dass die Rechnung höchstens \\$250 beträgt.",
     "statements": [
       "Das Einlösen von $300$ Punkten bringt die Rechnung genau auf \\$250.",
       "Das Einlösen von $250$ Punkten bringt die Rechnung auf höchstens \\$250.",
@@ -1186,7 +1186,7 @@
       "Die minimale Anzahl einzulösender Punkte beträgt $300$.",
       "Löst man die Ungleichung ${400 - 0{,}5x \\le 250}$ durch Division beider Seiten durch $-0{,}5$, so erhält man $x \\le 300$."
     ],
-    "solution_overview": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0{,}50. Es sei $x$ die Anzahl der eingelösten Punkte. Ein Kunde möchte, dass die Rechnung höchstens \\$250 beträgt.\n\nDie maßgebende Ungleichung lautet $400 - 0{,}5x \\le 250$, also $x \\ge 300$. Beim Dividieren durch eine negative Zahl dreht sich das Ungleichungszeichen um.",
+    "solution_overview": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0,50. Es sei $x$ die Anzahl der eingelösten Punkte. Ein Kunde möchte, dass die Rechnung höchstens \\$250 beträgt.\n\nDie maßgebende Ungleichung lautet $400 - 0{,}5x \\le 250$, also $x \\ge 300$. Beim Dividieren durch eine negative Zahl dreht sich das Ungleichungszeichen um.",
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetze die Behauptung in eine Rechnung und löse jeden Schritt rückwärts auf.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n400 - 0.5x \\le 250\n$$\n\n$$\n-0.5x \\le -150\n$$\n\n$$\nx \\ge 300\n$$\n\n$$\nx=300\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in eine Rechnung und löse jeden Schritt rückwärts auf.\n\n$$\n0.5\\cdot250=125\n$$\n\n$$\n400-125=275\n$$\n\n$$\nx=250\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
@@ -1235,7 +1235,7 @@
   },
   "MATH 6.67": {
     "title": "Tilgung eines Darlehens",
-    "context": "Jordan hat \\$2{,}400 zinsfrei geliehen. Er hat bereits eine Anfangszahlung von \\$300 geleistet und plant nun, \\$150 pro Monat zu zahlen. Es sei $m$ die Anzahl zusätzlicher Monatszahlungen. Er möchte wissen, wann der Restsaldo \\$0 oder weniger erreicht (vollständig getilgt).",
+    "context": "Jordan hat \\$2,400 zinsfrei geliehen. Er hat bereits eine Anfangszahlung von \\$300 geleistet und plant nun, \\$150 pro Monat zu zahlen. Es sei $m$ die Anzahl zusätzlicher Monatszahlungen. Er möchte wissen, wann der Restsaldo \\$0 oder weniger erreicht (vollständig getilgt).",
     "statements": [
       "Nach $14$ zusätzlichen Monatszahlungen ist das Darlehen vollständig getilgt.",
       "Nach $13$ zusätzlichen Monatszahlungen ist das Darlehen vollständig getilgt.",
@@ -1311,13 +1311,13 @@
   },
   "MATH 6.71": {
     "title": "Fahrdienst mit Surge-Preis",
-    "context": "Eine Fahrdienst-App berechnet normalerweise \\$2{,}50 Grundgebühr plus \\$1{,}75 pro Meile. Während der Surge-Preisbildung wird der gesamte Fahrpreis (Grundgebühr plus Kilometerpreis) mit $1{,}5$ multipliziert. Es sei $m$ die Anzahl der Meilen. Ein Fahrgast möchte, dass eine Surge-Fahrt höchstens \\$30 kostet.",
+    "context": "Eine Fahrdienst-App berechnet normalerweise \\$2,50 Grundgebühr plus \\$1,75 pro Meile. Während der Surge-Preisbildung wird der gesamte Fahrpreis (Grundgebühr plus Kilometerpreis) mit $1{,}5$ multipliziert. Es sei $m$ die Anzahl der Meilen. Ein Fahrgast möchte, dass eine Surge-Fahrt höchstens \\$30 kostet.",
     "statements": [
       "Eine $10$-Meilen-Fahrt während der Surge-Preisbildung kostet genau \\$30.",
       "Eine $12$-Meilen-Fahrt während der Surge-Preisbildung bleibt innerhalb der Grenze von \\$30.",
       "Die maximale Meilenzahl, die eine Surge-Fahrt bei höchstens \\$30 hält, beträgt $10$ Meilen.",
       "Das Ausmultiplizieren des Faktors $1{,}5$ über die Klammern liefert zuerst $3{,}75 + 2{,}625m \\le 30$.",
-      "Nur die Grundgebühr von \\$2{,}50 mit $1{,}5$ zu multiplizieren (und den Meilenpreis \\$1{,}75 unmultipliziert zu lassen) liefert ebenfalls die korrekte maximale Meilenzahl."
+      "Nur die Grundgebühr von \\$2,50 mit $1{,}5$ zu multiplizieren (und den Meilenpreis \\$1,75 unmultipliziert zu lassen) liefert ebenfalls die korrekte maximale Meilenzahl."
     ],
     "solution_overview": "Surge-Preis: $1{,}5(2{,}50 + 1{,}75m)\\le 30$. Ausmultiplizieren: $3{,}75 + 2{,}625m \\le 30$, also $m\\le 10$. Beide Tarifteile müssen multipliziert werden.",
     "tactical_explanations": [
@@ -1368,7 +1368,7 @@
   },
   "MATH 6.74": {
     "title": "Catering-Budget für eine Hochzeit",
-    "context": "Ein Paar möchte, dass die Catering-Kosten mindestens \\$3{,}000, aber höchstens \\$4{,}500 betragen. Das Catering kostet \\$500 Aufbaugebühr plus \\$75 pro Gast. Es sei $g$ die Anzahl der Gäste (eine ganze Zahl).",
+    "context": "Ein Paar möchte, dass die Catering-Kosten mindestens \\$3,000, aber höchstens \\$4,500 betragen. Das Catering kostet \\$500 Aufbaugebühr plus \\$75 pro Gast. Es sei $g$ die Anzahl der Gäste (eine ganze Zahl).",
     "statements": [
       "$34$ Gäste erfüllen beide Budgetanforderungen.",
       "$33$ Gäste erfüllen beide Budgetanforderungen.",
@@ -1425,12 +1425,12 @@
   },
   "MATH 6.77": {
     "title": "Einfache Zinsen auf dem Sparkonto",
-    "context": "Emma legt \\$2{,}000 auf ein Konto mit $4\\%$ einfachem Jahreszins an, sodass der Saldo nach $t$ Jahren ${2000 + 80t}$ beträgt. Sie möchte, dass der Saldo \\$2{,}600 übersteigt.",
+    "context": "Emma legt \\$2,000 auf ein Konto mit $4\\%$ einfachem Jahreszins an, sodass der Saldo nach $t$ Jahren ${2000 + 80t}$ beträgt. Sie möchte, dass der Saldo \\$2,600 übersteigt.",
     "statements": [
-      "Nach $7{,}5$ Jahren beträgt der Saldo genau \\$2{,}600.",
-      "Nach $7$ vollen Jahren übersteigt der Saldo \\$2{,}600.",
-      "Nach $8$ vollen Jahren übersteigt der Saldo \\$2{,}600.",
-      "Weil Zinsen einmal pro vollem Jahr gutgeschrieben werden, beträgt die minimale Anzahl voller Jahre, damit der Saldo \\$2{,}600 übersteigt, $8$ Jahre.",
+      "Nach $7{,}5$ Jahren beträgt der Saldo genau \\$2,600.",
+      "Nach $7$ vollen Jahren übersteigt der Saldo \\$2,600.",
+      "Nach $8$ vollen Jahren übersteigt der Saldo \\$2,600.",
+      "Weil Zinsen einmal pro vollem Jahr gutgeschrieben werden, beträgt die minimale Anzahl voller Jahre, damit der Saldo \\$2,600 übersteigt, $8$ Jahre.",
       "Die Ungleichung, die diese Situation modelliert, lautet korrekt ${2000 + 80t > 2600}$."
     ],
     "solution_overview": "Aus $2000 + 80t > 2600$ folgt $t > 7{,}5$. Bei jährlicher Gutschrift sind $8$ volle Jahre nötig.",
@@ -1501,7 +1501,7 @@
   },
   "MATH 6.81": {
     "title": "Währungsumtausch und Budget",
-    "context": "Eine Reisende tauscht Euro in US-Dollar zum Kurs \\$1{,}08 je €$1$ um, mit einer pauschalen Umtauschgebühr von \\$15, die nach dem Wechsel abgezogen wird. Es sei $E$ die Anzahl umgetauschter Euro (eine ganze Zahl). Sie möchte mindestens \\$500 USD erhalten.",
+    "context": "Eine Reisende tauscht Euro in US-Dollar zum Kurs \\$1,08 je €$1$ um, mit einer pauschalen Umtauschgebühr von \\$15, die nach dem Wechsel abgezogen wird. Es sei $E$ die Anzahl umgetauschter Euro (eine ganze Zahl). Sie möchte mindestens \\$500 USD erhalten.",
     "statements": [
       "Der Umtausch von $477$ Euro ergibt mindestens \\$500 USD.",
       "Der Umtausch von $476$ Euro ergibt mindestens \\$500 USD.",
@@ -1558,7 +1558,7 @@
   },
   "MATH 6.84": {
     "title": "Gestaffelte Versandtarife",
-    "context": "Ein Versandunternehmen berechnet pauschal \\$8 für Pakete bis einschließlich $10$ kg. Für Pakete über $10$ kg (bis $20$ kg) berechnet es \\$8 plus \\$0{,}50 je kg über $10$. Es sei $w$ das Paketgewicht in kg. Ein Kunde möchte, dass die Versandkosten höchstens \\$12 betragen.",
+    "context": "Ein Versandunternehmen berechnet pauschal \\$8 für Pakete bis einschließlich $10$ kg. Für Pakete über $10$ kg (bis $20$ kg) berechnet es \\$8 plus \\$0,50 je kg über $10$. Es sei $w$ das Paketgewicht in kg. Ein Kunde möchte, dass die Versandkosten höchstens \\$12 betragen.",
     "statements": [
       "Ein Paket mit $5$ kg kostet \\$8 und liegt damit im Budget von \\$12.",
       "Ein Paket mit $15$ kg bleibt im Budget von \\$12.",

@@ -22,6 +22,8 @@ function ensurePipeRow(line: string): string {
  */
 export function scrubStatementHints(text: string): string {
   return String(text ?? "")
+    // LaTeX thousands `{,}` must never show in plain statement prose.
+    .replace(/\{,\}/g, ",")
     .replace(
       /\s*\([^)]*(?:divided by|multiplied by|equals|equal to|means|defined as|calculated as|computed as|i\.e\.|e\.g\.|cost of sales|revenue divided|sum of|difference between|ratio of|minus|plus)[^)]*\)/gi,
       "",

@@ -7,7 +7,7 @@
       "subsection": "5.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "An observatory sold 140 admissions, charging \\$18 for adults and \\$10 for children, and collected \\$2{,}048. If the two admission counts are unknown, the receipt implies $85$ adult admissions.",
+        "An observatory sold 140 admissions, charging \\$18 for adults and \\$10 for children, and collected \\$2,048. If the two admission counts are unknown, the receipt implies $85$ adult admissions.",
         "A greenhouse combines an unknown mass of $8\\%$ nitrogen soil with an unknown mass of $20\\%$ soil. The $60$ kg blend tests at $13\\%$, and the manager claims $25$ kg came from the $20\\%$ stock.",
         "A violin teacher and a student have a combined age of $66$ years, and the teacher is $24$ years older. Solving the two present ages makes the teacher $48$ years old.",
         "A survey drone flies with a tailwind at $78$ km/h and into the same wind at $54$ km/h. Treating still-air speed and wind speed as unknowns, its still-air speed is $66$ km/h.",
@@ -43,7 +43,7 @@
         "Eight years ago, an architect was three times an intern's age then; today their ages total $72$. These conditions put the architect's current age at $46$ years.",
         "Two label printers together produce $92$ labels per minute; the newer one produces $18$ more than the older one each minute. The newer printer's rate is $55$ labels/min.",
         "A foundry schedules bronze and steel batches. Furnace time gives $3x+2y=94$, while labor gives $x+4y=88$. The schedule contains $15$ bronze batches.",
-        "At a lantern festival, 96 weekend passes were either VIP at \\$45 or regular at \\$27. Revenue reached \\$3{,}312, so the organizer says $40$ were VIP passes."
+        "At a lantern festival, 96 weekend passes were either VIP at \\$45 or regular at \\$27. Revenue reached \\$3,312, so the organizer says $40$ were VIP passes."
       ],
       "answer_key": [
         true,
@@ -74,7 +74,7 @@
         "A grandmother is now four times her granddaughter's age. In $12$ years she will be twice as old as the granddaughter then. The grandmother is currently $30$ years.",
         "Two cyclists ride in opposite directions for three hours and separate by $330$ km. One rides $14$ km/h faster than the other. The slower speed is $48$ km/h.",
         "A textile supervisor writes $2x+6y=48$ and $x+3y=24$ for shirt and jacket runs. The two records describe a system with no solution.",
-        "A ferry carried 85 paid vehicles: cars cost \\$24 and motorcycles cost \\$14. The \\$1{,}770 manifest would require $58$ car fares when the two vehicle counts are solved together.",
+        "A ferry carried 85 paid vehicles: cars cost \\$24 and motorcycles cost \\$14. The \\$1,770 manifest would require $58$ car fares when the two vehicle counts are solved together.",
         "A roaster builds a $40$ kg blend from beans costing \\$12 and \\$21 per kilogram. The desired average cost is \\$15.60, so $21$ kg must be the premium beans."
       ],
       "answer_key": [
@@ -136,7 +136,7 @@
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "A shipping manifest says $3x+9y=75$ container units, but a scaled inspection record says $x+3y=28$. The resulting container-count system has infinitely many solutions.",
-        "A ski lodge rented 72 equipment sets. Full-day sets brought \\$58 each and half-day sets \\$34 each, for total receipts of \\$3{,}312. This forces $36$ full-day rentals.",
+        "A ski lodge rented 72 equipment sets. Full-day sets brought \\$58 each and half-day sets \\$34 each, for total receipts of \\$3,312. This forces $36$ full-day rentals.",
         "A clinic dilutes $12\\%$ saline with $3\\%$ saline, using only those two stocks. For $30$ liters at $6\\%$, the $12\\%$ portion is $13$ liters.",
         "Five years from now, a pilot will be $11$ years older than twice a cadet's future age. Their ages today sum to $55$. The pilot's present age is $42$ years.",
         "Two installation crews complete $46$ panels per day together, and crew A completes $8$ more than crew B. Crew A's daily rate is $31$ panels/day."
@@ -167,7 +167,7 @@
       "subsection": "5.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A night market prepared 150 produce baskets, large ones priced at \\$22 and small ones at \\$13. Selling all baskets yielded \\$2{,}535. The sales mix contains $65$ large baskets.",
+        "A night market prepared 150 produce baskets, large ones priced at \\$22 and small ones at \\$13. Selling all baskets yielded \\$2,535. The sales mix contains $65$ large baskets.",
         "A muralist mixes $25\\%$ pigment paint and $55\\%$ pigment paint into $24$ liters whose pigment share is $37.5\\%$. The stronger paint contributes $8$ liters.",
         "A producer is six years younger than three times a performer's age, while together they are $62$ years old. The performer's age is $17$ years.",
         "A cargo plane's ground speed is $610$ km/h with a tailwind and $530$ km/h against it. The plane's speed in still air is $560$ km/h.",
@@ -203,7 +203,7 @@
         "Ten years ago, a scientist's age was twice a technician's age; ten years from now their ages will sum to $94$. The scientist is now $46$ years.",
         "Two pumps fill $150$ liters per minute in parallel. The main pump moves twice the backup rate plus $6$ liters per minute. The backup pump's rate is $51$ liters/min.",
         "An orchard plants apple and pear rows. Land constraints read $5x+3y=144$ and irrigation constraints $2x+4y=108$. The apple-row solution is $18$.",
-        "A science museum issued 110 wristbands, some including VR for \\$31 and the rest exhibit-only for \\$19. The desk took \\$2{,}606, which means $50$ VR wristbands were issued."
+        "A science museum issued 110 wristbands, some including VR for \\$31 and the rest exhibit-only for \\$19. The desk took \\$2,606, which means $50$ VR wristbands were issued."
       ],
       "answer_key": [
         false,
@@ -234,7 +234,7 @@
         "A parent is $27$ years older than a child. After nine years, the parent's age will be $\\frac52$ times the child's age then. The child's current age is $9$ years.",
         "Two couriers start $24$ km apart and ride toward each other, meeting after $0.2$ hour. The faster courier travels $20$ km/h faster, so the slower courier rides at $45$ km/h.",
         "A hospital staffs registered nurses and aides on one shift. Headcount gives $x+y=52$ and credential units give $3x+y=100$. The shift uses $24$ registered nurses.",
-        "A sleeper train booked 64 berths at \\$120 and coach seats at \\$68, collecting \\$5{,}704 from those 64 travelers. Solving the two booking counts gives $22$ sleeper berths.",
+        "A sleeper train booked 64 berths at \\$120 and coach seats at \\$68, collecting \\$5,704 from those 64 travelers. Solving the two booking counts gives $22$ sleeper berths.",
         "A feed mill uses $16\\%$ and $28\\%$ protein meals to make $90$ tons at $22\\%$ protein. The high-protein meal must supply $45$ tons."
       ],
       "answer_key": [
@@ -265,7 +265,7 @@
       "statements": [
         "A pair of harvesters processes $84$ rows per hour. The larger harvester's rate is exactly twice the smaller's. The larger machine handles $63$ rows/hour.",
         "For stage platforms and lighting towers, an event plan records $4x+2y=60$ and $6x+3y=90$. Those two constraints yield infinitely many solutions.",
-        "A charity printed 200 raffle tickets, gold at \\$25 and silver at \\$8. The sold-out draw raised \\$2{,}450. Exactly $55$ of the tickets must have been gold.",
+        "A charity printed 200 raffle tickets, gold at \\$25 and silver at \\$8. The sold-out draw raised \\$2,450. Exactly $55$ of the tickets must have been gold.",
         "A jeweler melts $40$ grams of $30\\%$ gold alloy with a richer $75\\%$ alloy, using no pure gold. A $48\\%$ final alloy requires $16$ grams of the richer material.",
         "Two siblings' ages differ by $7$ years. Four years ago, the older sibling was $\\frac32$ times the younger sibling's age then. The older sibling is now $28$ years."
       ],
@@ -296,7 +296,7 @@
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "A telecom order combines fiber and wireless nodes. Budget units satisfy $6x+5y=137$, and technician hours satisfy $2x+3y=63$. The fiber-node count is $12$.",
-        "A marina logged 90 slip rentals, overnight at \\$75 and daytime at \\$35. The register showed \\$4{,}350, so the unknown overnight count is $27$.",
+        "A marina logged 90 slip rentals, overnight at \\$75 and daytime at \\$35. The register showed \\$4,350, so the unknown overnight count is $27$.",
         "A sanitation crew has $20\\%$ and $80\\%$ alcohol solutions. Its $45$-liter disinfectant batch must be $60\\%$ alcohol, which assigns $30$ liters to the $80\\%$ solution.",
         "A director's age plus twice an actor's age is $96$, while twice the director's age minus the actor's age is $57$. The director is $36$ years old.",
         "Two trains approach one another at a combined $170$ km/h; the eastbound train is $30$ km/h faster. The westbound train moves at $70$ km/h."
@@ -325,13 +325,13 @@
       "case_id": "MATH 5.71",
       "title": "Exam-style tasks - 11",
       "subsection": "5.5",
-      "context": "At a cinema gala, 180 patrons each bought exactly one ticket. A 3D ticket cost \\$16 and a standard ticket cost \\$11. The box office recorded \\$2{,}430, with no discounts, refunds, or free entries. Let $x$ be the number of 3D tickets and $y$ the number of standard tickets. The manager wants one solved ticket ledger used for all checks.",
+      "context": "At a cinema gala, 180 patrons each bought exactly one ticket. A 3D ticket cost \\$16 and a standard ticket cost \\$11. The box office recorded \\$2,430, with no discounts, refunds, or free entries. Let $x$ be the number of 3D tickets and $y$ the number of standard tickets. The manager wants one solved ticket ledger used for all checks.",
       "statements": [
         "The count equation is $x+y=180$.",
         "The revenue equation is $16x+11y=2430$.",
         "The gala sold 99 3D tickets.",
         "The two ticket counts differ by 10.",
-        "3D tickets supplied \\$1{,}600 of revenue."
+        "3D tickets supplied \\$1,600 of revenue."
       ],
       "answer_key": [
         true,
@@ -349,7 +349,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 71,
-      "solution_overview": "At a cinema gala, 180 patrons each bought one ticket. A 3D ticket costs \\$16 and a standard ticket costs \\$11. The box office recorded \\$2{,}430.\n\nLet $x$ = number of 3D tickets and $y$ = number of standard tickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultiply (1) by $11$ and subtract from (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y = 90\n$$\n\n3D revenue is $16 \\times 90 = 1{,}440$, and standard revenue is $11 \\times 90 = 990$.",
+      "solution_overview": "At a cinema gala, 180 patrons each bought one ticket. A 3D ticket costs \\$16 and a standard ticket costs \\$11. The box office recorded \\$2,430.\n\nLet $x$ = number of 3D tickets and $y$ = number of standard tickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultiply (1) by $11$ and subtract from (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y = 90\n$$\n\n3D revenue is $16 \\times 90 = 1{,}440$, and standard revenue is $11 \\times 90 = 990$.",
       "placeholder": false
     },
     {
@@ -485,12 +485,12 @@
       "case_id": "MATH 5.76",
       "title": "Exam-style tasks - 16",
       "subsection": "5.5",
-      "context": "An airport kiosk issued 160 transit passes during one shift. Express passes cost \\$21 and local passes cost \\$12, and the register total was \\$2{,}460. No passes were complimentary or refunded. Let $x$ count express passes and $y$ count local passes. The supervisor solves the two-equation sales ledger once before testing the five claims.",
+      "context": "An airport kiosk issued 160 transit passes during one shift. Express passes cost \\$21 and local passes cost \\$12, and the register total was \\$2,460. No passes were complimentary or refunded. Let $x$ count express passes and $y$ count local passes. The supervisor solves the two-equation sales ledger once before testing the five claims.",
       "statements": [
         "The sales equations are $x+y=160$ and $21x+12y=2460$.",
         "The kiosk sold 60 express passes.",
         "The kiosk sold 100 local passes.",
-        "Express-pass revenue was \\$1{,}200.",
+        "Express-pass revenue was \\$1,200.",
         "Local-pass revenue exceeded express revenue."
       ],
       "answer_key": [
@@ -505,11 +505,11 @@
         "**B.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nThe recovered value is\n\n$$x = 60$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nExpress-pass revenue uses the recovered count:\n\n$$\n21 \\times 60 = 1{,}260\n$$\n\nThe claim asserts\n\n$$1200.$$\n\n Comparing,\n\n$$1{,}260 \\ne 1{,}200.$$\n\nSo the statement is False.",
-        "**E.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nExpress revenue is \\$1{,}260 and local revenue is \\$1{,}200:\n\n$$\n1{,}260 - 1{,}200 = 60\n$$\n\nLocal revenue is \\$60 lower, not higher. The claim says local exceeded express.\n\nSo the statement is False."
+        "**E.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nExpress revenue is \\$1,260 and local revenue is \\$1,200:\n\n$$\n1{,}260 - 1{,}200 = 60\n$$\n\nLocal revenue is \\$60 lower, not higher. The claim says local exceeded express.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 76,
-      "solution_overview": "An airport kiosk issued $160$ transit passes. Express passes cost \\$21 and local passes cost \\$12, for a register total of \\$2{,}460.\n\nLet $x$ = express passes and $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultiply (1) by $12$ and subtract from (2):\n\n$$9x = 540$$\n\n$$\nx = 60,\\qquad y = 100\n$$\n\nExpress revenue is $21 \\times 60 = 1{,}260$, and local revenue is $12 \\times 100 = 1{,}200$.",
+      "solution_overview": "An airport kiosk issued $160$ transit passes. Express passes cost \\$21 and local passes cost \\$12, for a register total of \\$2,460.\n\nLet $x$ = express passes and $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultiply (1) by $12$ and subtract from (2):\n\n$$9x = 540$$\n\n$$\nx = 60,\\qquad y = 100\n$$\n\nExpress revenue is $21 \\times 60 = 1{,}260$, and local revenue is $12 \\times 100 = 1{,}200$.",
       "placeholder": false
     },
     {
@@ -534,14 +534,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nTotal mass is the sum of the two grades:\n\n$$x + y = 50$$\n\nThe overview already recorded that mass equation. Matching the claim.\n\nSo the statement is True.",
-        "**B.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe stem's total cost is \\$1{,}140, so the cost equation is\n\n$$30x + 18y = 1140$$\n\nThe claim writes right-hand side $1150$. Comparing,\n\n$$1140 \\ne 1150.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe stem's total cost is \\$1,140, so the cost equation is\n\n$$30x + 18y = 1140$$\n\nThe claim writes right-hand side $1150$. Comparing,\n\n$$1140 \\ne 1150.$$\n\nSo the statement is False.",
         "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 50$$\n\n$$30x + 18y = 1140$$\n\n$$12x = 240$$\n\n$$x = 20$$\n\n$$\ny = 30\n$$\n\nThe recovered value is\n\n$$x = 20$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nPremium tea's cost contribution is\n\n$$\n30 \\times 20 = 600\n$$\n\nThe claim asserts\n\n$$780.$$\n\n Comparing,\n\n$$600 \\ne 780.$$\n\nSo the statement is False.",
         "**E.** → False\n\nThe overview recovered $y = 30$ kg of standard tea. The claim asserts\n\n$$32$$\n\nComparing,\n\n$$30 \\ne 32.$$\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 77,
-      "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg with standard tea at \\$18/kg so the total cost is \\$1{,}140.\n\nLet $x$ = kg of premium and $y$ = kg of standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultiply (1) by $18$ and subtract from (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y = 30\n$$\n\nPremium cost is $30 \\times 20 = 600$.",
+      "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg with standard tea at \\$18/kg so the total cost is \\$1,140.\n\nLet $x$ = kg of premium and $y$ = kg of standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultiply (1) by $18$ and subtract from (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y = 30\n$$\n\nPremium cost is $30 \\times 20 = 600$.",
       "placeholder": false
     },
     {

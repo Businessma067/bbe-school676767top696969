@@ -1081,11 +1081,11 @@
   },
   "MATH 11.01": {
     "title": "Nominal versus continuous compounding on a parameterised custody deposit",
-    "context": "A firm parks $P=\\$8{,}735.00$ in a custody account quoting nominal annual rate $r=7.95\\%$ with monthly credits. A treasury model uses the same nominal $r$ under continuous compounding. Growth claims use $a=3$ years; a short-horizon check uses $b=2$ years.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A firm parks $P=\\$8,735.00$ in a custody account quoting nominal annual rate $r=7.95\\%$ with monthly credits. A treasury model uses the same nominal $r$ under continuous compounding. Growth claims use $a=3$ years; a short-horizon check uses $b=2$ years.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $0.6625\\%$, and the effective annual rate under monthly compounding exceeds $8.24\\%$.",
       "Under continuous compounding at the same nominal $r$, the effective annual rate exceeds the monthly effective rate by more than $0.04$ percentage points.",
-      "After $a=3$ years of monthly compounding, the future value of $P$ exceeds $\\$11{,}050$.",
+      "After $a=3$ years of monthly compounding, the future value of $P$ exceeds $\\$11,050$.",
       "The continuous-compounding future value of $P$ after $a=3$ years exceeds the monthly-compounding future value by more than $\\$18$.",
       "Shortening the horizon from $a=3$ to $b=2$ years under monthly compounding cuts the dollar interest earned by more than $35\\%$ of the three-year interest."
     ],
@@ -1099,22 +1099,22 @@
     "tactical_explanations": [
       "**A.** → True\n\nThe overview recovered $i=0.6625\\%$ and $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nThe monthly periodic rate is the nominal quote divided by twelve:\n\n$$\ni=\\frac{0.0795}{12}=0.006625\n$$\n\n$$\ni=0.6625\\%\n$$\n\nEffective annual rate under monthly compounding:\n\n$$\nR_{\\mathrm{m}}=(1+0.006625)^{12}-1\\approx0.082462\n$$\n\n$$\n8.246\\%>8.24\\%\n$$\n\nBoth halves of the conjunction hold.\n\nSo the statement is True.",
       "**B.** → False\n\nThe overview recovered $R_{\\mathrm{c}}\\approx8.275\\%$ and $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nContinuous effective rate:\n\n$$\nR_{\\mathrm{c}}=e^{0.0795}-1\\approx0.082746\n$$\n\nPercentage-point gap:\n\n$$\n(R_{\\mathrm{c}}-R_{\\mathrm{m}})\\cdot 100\\approx0.0284\n$$\n\n$$\n0.0284\\nless 0.04\n$$\n\nThe continuous premium is too small for the claim.\n\nSo the statement is False.",
-      "**C.** → True\n\nThe overview recovered $FV_{\\mathrm{m}}(3)\\approx\\$11{,}079.00$.\n\nThree years of monthly credits apply $36$ periods:\n\n$$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\n$$\n\n$$\n\\approx11{,}079.00\n$$\n\n$$\n11{,}079.00>11{,}050\n$$\n\nThe three-year monthly balance clears the threshold.\n\nSo the statement is True.",
-      "**D.** → False\n\nThe overview recovered $FV_{\\mathrm{c}}(3)\\approx\\$11{,}087.72$ and $FV_{\\mathrm{m}}(3)\\approx\\$11{,}079.00$.\n\nContinuous premium over monthly compounding:\n\n$$\nFV_{\\mathrm{c}}(3)-FV_{\\mathrm{m}}(3)\\approx11{,}087.72-11{,}079.00\n$$\n\n$$\n=8.72\n$$\n\n$$\n8.72\\nless 18\n$$\n\nThe premium fails the $\\$18$ threshold.\n\nSo the statement is False.",
-      "**E.** → True\n\nThe overview recovered $I_3\\approx\\$2{,}344.00$ and $I_2\\approx\\$1{,}500.00$.\n\nInterest cut when the horizon shortens from $a=3$ to $b=2$:\n\n$$\nI_3-I_2\\approx844.00\n$$\n\nShare of three-year interest:\n\n$$\n\\frac{I_3-I_2}{I_3}\\approx0.3601=36.01\\%\n$$\n\n$$\n36.01\\%>35\\%\n$$\n\nThe cut exceeds thirty-five percent of three-year interest.\n\nSo the statement is True."
+      "**C.** → True\n\nThe overview recovered $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$.\n\nThree years of monthly credits apply $36$ periods:\n\n$$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\n$$\n\n$$\n\\approx11{,}079.00\n$$\n\n$$\n11{,}079.00>11{,}050\n$$\n\nThe three-year monthly balance clears the threshold.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe overview recovered $FV_{\\mathrm{c}}(3)\\approx\\$11,087.72$ and $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$.\n\nContinuous premium over monthly compounding:\n\n$$\nFV_{\\mathrm{c}}(3)-FV_{\\mathrm{m}}(3)\\approx11{,}087.72-11{,}079.00\n$$\n\n$$\n=8.72\n$$\n\n$$\n8.72\\nless 18\n$$\n\nThe premium fails the $\\$18$ threshold.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe overview recovered $I_3\\approx\\$2,344.00$ and $I_2\\approx\\$1,500.00$.\n\nInterest cut when the horizon shortens from $a=3$ to $b=2$:\n\n$$\nI_3-I_2\\approx844.00\n$$\n\nShare of three-year interest:\n\n$$\n\\frac{I_3-I_2}{I_3}\\approx0.3601=36.01\\%\n$$\n\n$$\n36.01\\%>35\\%\n$$\n\nThe cut exceeds thirty-five percent of three-year interest.\n\nSo the statement is True."
     ],
     "solution_overview": "Recover the shared rates and balances once.\n\n$$\nr=0.0795\\qquad i=\\frac{r}{12}=0.006625=0.6625\\%\n$$\n\n$$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.082462=8.246\\%\n$$\n\n$$\nR_{\\mathrm{c}}=e^{r}-1\\approx0.082746=8.275\\%\n$$\n\n$$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\\approx11{,}079.00\n$$\n\n$$\nFV_{\\mathrm{c}}(3)=8{,}735.00e^{0.0795\\cdot 3}\\approx11{,}087.72\n$$\n\n$$\nFV_{\\mathrm{m}}(2)\\approx10{,}235.00\\qquad I_3\\approx2{,}344.00\\qquad I_2\\approx1{,}500.00\n$$",
     "difficulty_level": "5/5"
   },
   "MATH 11.02": {
     "title": "Seven-year quarterly growth with a mid-horizon trap",
-    "context": "A municipal reserve of $P=\\$12{,}480.00$ earns nominal $r=6.84\\%$ compounded quarterly ($m=4$). The planned holding time is $t=7$ years. A mid-horizon checkpoint uses $k=5$ years under the same periodic rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A municipal reserve of $P=\\$12,480.00$ earns nominal $r=6.84\\%$ compounded quarterly ($m=4$). The planned holding time is $t=7$ years. A mid-horizon checkpoint uses $k=5$ years under the same periodic rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The quarterly periodic rate is exactly $1.71\\%$, and the number of compounding periods over $t=7$ years is $28$.",
-      "The balance after $t=7$ years exceeds $\\$20{,}000$.",
+      "The balance after $t=7$ years exceeds $\\$20,000$.",
       "The five-year balance under the same account is strictly less than $50\\%$ of the seven-year balance.",
       "Total percentage growth of $P$ over $t=7$ years exceeds $62\\%$.",
-      "If the same nominal $r$ were compounded annually instead of quarterly for $t=7$ years, the future value would still exceed $\\$19{,}800$."
+      "If the same nominal $r$ were compounded annually instead of quarterly for $t=7$ years, the future value would still exceed $\\$19,800$."
     ],
     "answer_key": [
       true,
@@ -1125,8 +1125,8 @@
     ],
     "tactical_explanations": [
       "**A.** → True\n\nThe overview recovered $i=1.71\\%$ and $N=28$.\n\nPeriodic rate:\n\n$$\ni=\\frac{0.0684}{4}=0.017100=1.71\\%\n$$\n\nPeriod count:\n\n$$\nN=4\\cdot7=28\n$$\n\nBoth halves match the claim.\n\nSo the statement is True.",
-      "**B.** → True\n\nThe overview recovered $FV(7)\\approx\\$20{,}063.05$.\n\n$$\nFV(7)=12{,}480.00(1+0.017100)^{28}\n$$\n\n$$\n\\approx20{,}063.05\n$$\n\n$$\n20{,}063.05>20{,}000\n$$\n\nThe seven-year balance clears $\\$20{,}000$.\n\nSo the statement is True.",
-      "**C.** → False\n\nThe overview recovered $FV(5)\\approx\\$17{,}518.13$ and $FV(7)\\approx\\$20{,}063.05$.\n\n$$\n0.5\\cdot FV(7)\\approx10{,}031.52\n$$\n\n$$\n17{,}518.13\\nless 10{,}031.52\n$$\n\nIn fact $FV(5)$ exceeds half of $FV(7)$, so the claim fails.\n\nSo the statement is False.",
+      "**B.** → True\n\nThe overview recovered $FV(7)\\approx\\$20,063.05$.\n\n$$\nFV(7)=12{,}480.00(1+0.017100)^{28}\n$$\n\n$$\n\\approx20{,}063.05\n$$\n\n$$\n20{,}063.05>20{,}000\n$$\n\nThe seven-year balance clears $\\$20,000$.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe overview recovered $FV(5)\\approx\\$17,518.13$ and $FV(7)\\approx\\$20,063.05$.\n\n$$\n0.5\\cdot FV(7)\\approx10{,}031.52\n$$\n\n$$\n17{,}518.13\\nless 10{,}031.52\n$$\n\nIn fact $FV(5)$ exceeds half of $FV(7)$, so the claim fails.\n\nSo the statement is False.",
       "**D.** → False\n\nThe overview recovered growth share $\\approx0.6076$.\n\n$$\n\\frac{FV(7)-P}{P}\\approx0.6076=60.76\\%\n$$\n\n$$\n60.76\\%\\nless 62\\%\n$$\n\nTotal growth fails the $62\\%$ threshold.\n\nSo the statement is False.",
       "**E.** → True\n\nAnnual compounding at the same nominal $r$:\n\n$$\nFV_{\\mathrm{ann}}=12{,}480.00(1+0.0684)^{7}\n$$\n\n$$\n\\approx19{,}831.33\n$$\n\n$$\n19{,}831.33>19{,}800\n$$\n\nEven annual compounding clears the floor.\n\nSo the statement is True."
     ],
@@ -1135,13 +1135,13 @@
   },
   "MATH 11.03": {
     "title": "Two term deposits with conflicting nominal quotes and frequencies",
-    "context": "A treasurer compares two one-year term deposits for principal $P=\\$15{,}640.00$. Offer $A$ quotes nominal $r_A=7.15\\%$ compounded quarterly. Offer $B$ quotes nominal $r_B=7.25\\%$ compounded semiannually. Preference follows the higher effective annual rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A treasurer compares two one-year term deposits for principal $P=\\$15,640.00$. Offer $A$ quotes nominal $r_A=7.15\\%$ compounded quarterly. Offer $B$ quotes nominal $r_B=7.25\\%$ compounded semiannually. Preference follows the higher effective annual rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The effective annual rate of Offer $A$ exceeds $7.33\\%$.",
       "The effective annual rate of Offer $B$ exceeds $7.43\\%$.",
       "Offer $B$ has the strictly higher effective annual rate, with $R_B-R_A$ exceeding $0.01$ percentage points.",
       "Because Offer $A$ compounds $4$ times per year while Offer $B$ compounds only $2$ times, Offer $A$ must produce the higher effective rate even though $r_A<r_B$.",
-      "On principal $P$, Offer $A$ earns more than $\\$1{,}120$ of interest in one year."
+      "On principal $P$, Offer $A$ earns more than $\\$1,120$ of interest in one year."
     ],
     "answer_key": [
       true,
@@ -1155,19 +1155,19 @@
       "**B.** → False\n\nThe overview recovered $R_B\\approx7.381\\%$.\n\n$$\nR_B=\\left(1+\\frac{0.0725}{2}\\right)^2-1\\approx0.073814\n$$\n\n$$\n7.381\\%\\nless 7.43\\%\n$$\n\nOffer $B$ fails that inflated floor.\n\nSo the statement is False.",
       "**C.** → True\n\nCompare the recovered effective rates:\n\n$$\nR_B-R_A\\approx0.101123-0.100339=0.000784\n$$\n\n$$\n(R_B-R_A)\\cdot 100\\approx0.0784\n$$\n\n$$\n0.0784>0.01\n$$\n\nOffer $B$ is strictly better, and the gap clears $0.01$ percentage points.\n\nSo the statement is True.",
       "**D.** → False\n\nHigher compounding frequency does not dominate a higher nominal quote here.\n\n$$\nR_A\\approx10.034\\%\n$$\n\n$$\nR_B\\approx10.112\\%\n$$\n\n$$\nR_A<R_B\n$$\n\nOffer $A$ compounds $4$ times per year but still loses on an effective basis.\n\nSo the statement is False.",
-      "**E.** → True\n\nThe overview recovered $I_A\\approx\\$1{,}148.60$.\n\n$$\nI_A=15{,}640.00\\cdot0.073440\n$$\n\n$$\n\\approx1{,}148.60\n$$\n\n$$\n1{,}148.60>1{,}120\n$$\n\nOffer $A$ interest clears the dollar floor.\n\nSo the statement is True."
+      "**E.** → True\n\nThe overview recovered $I_A\\approx\\$1,148.60$.\n\n$$\nI_A=15{,}640.00\\cdot0.073440\n$$\n\n$$\n\\approx1{,}148.60\n$$\n\n$$\n1{,}148.60>1{,}120\n$$\n\nOffer $A$ interest clears the dollar floor.\n\nSo the statement is True."
     ],
     "solution_overview": "Convert each offer to an effective annual rate once.\n\n$$\nR_A=\\left(1+\\frac{0.0715}{4}\\right)^4-1\\approx0.073440=7.344\\%\n$$\n\n$$\nR_B=\\left(1+\\frac{0.0725}{2}\\right)^2-1\\approx0.073814=7.381\\%\n$$\n\n$$\nI_A=P R_A\\approx1{,}148.60\\qquad I_B=P R_B\\approx1{,}154.45\n$$",
     "difficulty_level": "5/5"
   },
   "MATH 11.04": {
     "title": "Store-card APR conversion with a daily-compounding counterfactual",
-    "context": "A revolving store balance of $B=\\$2{,}847.65$ quotes a nominal APR $r=21.9\\%$ with monthly compounding ($n=12$). A risk model also converts the same nominal $r$ under daily compounding with a $365$-day year. No grace period applies.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A revolving store balance of $B=\\$2,847.65$ quotes a nominal APR $r=21.9\\%$ with monthly compounding ($n=12$). A risk model also converts the same nominal $r$ under daily compounding with a $365$-day year. No grace period applies.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $1.825\\%$, and the monthly interest on $B$ exceeds $\\$50$.",
       "The effective annual rate under monthly compounding exceeds $24.0\\%$.",
       "Converting the same nominal $r$ under daily compounding raises the effective annual rate by more than $0.30$ percentage points relative to monthly compounding.",
-      "One year of monthly compounding on $B$ produces a year-end balance strictly below $\\$3{,}500$.",
+      "One year of monthly compounding on $B$ produces a year-end balance strictly below $\\$3,500$.",
       "The gap between the monthly effective annual rate and the nominal APR exceeds $2.3$ percentage points."
     ],
     "answer_key": [
@@ -1181,7 +1181,7 @@
       "**A.** → True\n\nThe overview recovered $i=1.825\\%$ and monthly interest $\\approx\\$51.97$.\n\n$$\ni=\\frac{0.219}{12}=0.018250\n$$\n\n$$\nB\\cdot i=2{,}847.65\\cdot0.018250\\approx51.97\n$$\n\n$$\n51.97>50\n$$\n\nBoth halves hold.\n\nSo the statement is True.",
       "**B.** → True\n\nThe overview recovered $R_{\\mathrm{m}}\\approx24.238\\%$.\n\n$$\nR_{\\mathrm{m}}=(1+0.018250)^{12}-1\\approx0.242376\n$$\n\n$$\n24.238\\%>24\\%\n$$\n\nThe monthly effective rate clears the floor.\n\nSo the statement is True.",
       "**C.** → False\n\nDaily-minus-monthly gap in percentage points:\n\n$$\n(R_{\\mathrm{d}}-R_{\\mathrm{m}})\\cdot 100\\approx0.2374\n$$\n\n$$\n0.2374\\nless 0.30\n$$\n\nThe daily uplift is smaller than the claim.\n\nSo the statement is False.",
-      "**D.** → False\n\nYear-end balance under monthly compounding:\n\n$$\nB(1+i)^{12}=2{,}847.65(1+0.018250)^{12}\n$$\n\n$$\n\\approx3{,}537.85\n$$\n\n$$\n3{,}537.85\\nless 3{,}500\n$$\n\nThe balance is not strictly below $\\$3{,}500$.\n\nSo the statement is False.",
+      "**D.** → False\n\nYear-end balance under monthly compounding:\n\n$$\nB(1+i)^{12}=2{,}847.65(1+0.018250)^{12}\n$$\n\n$$\n\\approx3{,}537.85\n$$\n\n$$\n3{,}537.85\\nless 3{,}500\n$$\n\nThe balance is not strictly below $\\$3,500$.\n\nSo the statement is False.",
       "**E.** → True\n\nGap between effective and nominal:\n\n$$\n(R_{\\mathrm{m}}-r)\\cdot 100\\approx2.338\n$$\n\n$$\n2.338>2.3\n$$\n\nThe APR-to-effective gap clears the threshold.\n\nSo the statement is True."
     ],
     "solution_overview": "Recover periodic and effective rates once.\n\n$$\ni=\\frac{0.219}{12}=0.018250=1.825\\%\n$$\n\n$$\nR_{\\mathrm{m}}=(1+i)^{12}-1\\approx0.242376=24.238\\%\n$$\n\n$$\nR_{\\mathrm{d}}=\\left(1+\\frac{0.219}{365}\\right)^{365}-1\\approx0.244750=24.475\\%\n$$\n\n$$\nB\\cdot i\\approx51.97\\qquad B(1+i)^{12}\\approx3{,}537.85\n$$",
@@ -1189,12 +1189,12 @@
   },
   "MATH 11.05": {
     "title": "Quarterly business deposit versus a semiannual twin",
-    "context": "A business deposit of $P=\\$9{,}375.50$ earns nominal $r=6.25\\%$ compounded quarterly. The planned term is $t=4$ years. A twin account uses the same nominal $r$ but compounds semiannually.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A business deposit of $P=\\$9,375.50$ earns nominal $r=6.25\\%$ compounded quarterly. The planned term is $t=4$ years. A twin account uses the same nominal $r$ but compounds semiannually.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The quarterly periodic rate is $1.5625\\%$, and after $t=4$ years the quarterly account exceeds $\\$12{,}000$.",
+      "The quarterly periodic rate is $1.5625\\%$, and after $t=4$ years the quarterly account exceeds $\\$12,000$.",
       "The semiannual twin ends strictly above the quarterly account after $t=4$ years.",
       "The quarterly account's effective annual rate exceeds $6.40\\%$.",
-      "Dollar interest on the quarterly account over $t=4$ years exceeds $\\$2{,}700$.",
+      "Dollar interest on the quarterly account over $t=4$ years exceeds $\\$2,700$.",
       "Replacing quarterly compounding by continuous compounding at the same nominal $r$ raises the $t$-year balance by more than $\\$12$."
     ],
     "answer_key": [
@@ -1243,11 +1243,11 @@
   },
   "MATH 11.07": {
     "title": "One nominal rate across annual, quarterly, monthly, and continuous compounding",
-    "context": "A nominal annual rate $r=8.1\\%$ is offered under four compounding conventions: annual, quarterly, monthly, and continuous. Principal $P=\\$5{,}500$ is used only for dollar comparisons over one year.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A nominal annual rate $r=8.1\\%$ is offered under four compounding conventions: annual, quarterly, monthly, and continuous. Principal $P=\\$5,500$ is used only for dollar comparisons over one year.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly effective annual rate exceeds the quarterly effective annual rate by more than $0.10$ percentage points.",
       "The continuous effective annual rate exceeds $8.43\\%$.",
-      "One year of monthly compounding grows $P$ to more than $\\$5{,}950$.",
+      "One year of monthly compounding grows $P$ to more than $\\$5,950$.",
       "For this nominal $r=8.1\\%$, the ordering $R_{\\mathrm{ann}}<R_{\\mathrm{q}}<R_{\\mathrm{m}}<R_{\\mathrm{c}}$ holds.",
       "The continuous-minus-annual effective gap exceeds $0.40$ percentage points."
     ],
@@ -1261,7 +1261,7 @@
     "tactical_explanations": [
       "**A.** → False\n\nMonthly-minus-quarterly gap:\n\n$$\n(R_{\\mathrm{m}}-R_{\\mathrm{q}})\\cdot 100\\approx0.0582\n$$\n\n$$\n0.0582\\nless 0.10\n$$\n\nThe frequency step is smaller than $0.10$ percentage points.\n\nSo the statement is False.",
       "**B.** → True\n\nThe overview recovered $R_{\\mathrm{c}}\\approx8.4371\\%$.\n\n$$\nR_{\\mathrm{c}}=e^{0.081}-1\\approx0.084371\n$$\n\n$$\n8.4371\\%>8.43\\%\n$$\n\nThe continuous rate exceeds that truncated floor.\n\nSo the statement is True.",
-      "**C.** → True\n\nMonthly year-end balance:\n\n$$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$\n\n$$\n5{,}962.42>5{,}950\n$$\n\nThe balance clears the $\\$5{,}950$ threshold.\n\nSo the statement is True.",
+      "**C.** → True\n\nMonthly year-end balance:\n\n$$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$\n\n$$\n5{,}962.42>5{,}950\n$$\n\nThe balance clears the $\\$5,950$ threshold.\n\nSo the statement is True.",
       "**D.** → True\n\nCompare the four recovered rates:\n\n$$\n0.081000<0.083494<0.084076<0.084371\n$$\n\nThe standard frequency ordering holds for this nominal quote.\n\nSo the statement is True.",
       "**E.** → False\n\nContinuous-minus-annual gap:\n\n$$\n(R_{\\mathrm{c}}-R_{\\mathrm{ann}})\\cdot 100\\approx0.3371\n$$\n\n$$\n0.3371\\nless 0.40\n$$\n\nThe gap fails $0.40$ percentage points.\n\nSo the statement is False."
     ],
@@ -1270,13 +1270,13 @@
   },
   "MATH 11.08": {
     "title": "Ten-year monthly deposit with an annual-rate illusion",
-    "context": "A certificate starts at $P=\\$6{,}420.00$ with nominal $r=5.55\\%$ compounded monthly for $t=10$ years. An illusory linear projection multiplies $P$ by $(1+rt)$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A certificate starts at $P=\\$6,420.00$ with nominal $r=5.55\\%$ compounded monthly for $t=10$ years. An illusory linear projection multiplies $P$ by $(1+rt)$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $0.4625\\%$.",
-      "After $t=10$ years the compounded balance exceeds $\\$11{,}000$.",
+      "After $t=10$ years the compounded balance exceeds $\\$11,000$.",
       "The illusory linear projection $P(1+rt)$ exceeds the true compounded balance.",
       "Total compounded growth exceeds $70\\%$ of $P$.",
-      "If compounding were quarterly at the same nominal $r$ for $t=10$ years, the balance would still exceed $\\$11{,}000$."
+      "If compounding were quarterly at the same nominal $r$ for $t=10$ years, the balance would still exceed $\\$11,000$."
     ],
     "answer_key": [
       true,
@@ -1287,7 +1287,7 @@
     ],
     "tactical_explanations": [
       "**A.** → True\n\n$$\ni=\\frac{0.0555}{12}=0.004625=0.4625\\%\n$$\n\nThe periodic rate matches the claim.\n\nSo the statement is True.",
-      "**B.** → True\n\n$$\nFV\\approx11{,}168.96\n$$\n\n$$\n11{,}168.96>11{,}000\n$$\n\nThe ten-year balance clears $\\$11{,}000$.\n\nSo the statement is True.",
+      "**B.** → True\n\n$$\nFV\\approx11{,}168.96\n$$\n\n$$\n11{,}168.96>11{,}000\n$$\n\nThe ten-year balance clears $\\$11,000$.\n\nSo the statement is True.",
       "**C.** → False\n\n$$\nP(1+rt)\\approx9{,}983.10\\qquad FV\\approx11{,}168.96\n$$\n\n$$\n9{,}983.10\\nless 11{,}168.96\n$$\n\nCompounding beats the linear illusion, so the illusion does not exceed the true balance.\n\nSo the statement is False.",
       "**D.** → True\n\nGrowth share:\n\n$$\n\\frac{FV-P}{P}\\approx0.7397=73.97\\%\n$$\n\n$$\n73.97\\%>70\\%\n$$\n\nGrowth clears seventy percent.\n\nSo the statement is True.",
       "**E.** → True\n\nQuarterly ten-year balance:\n\n$$\nFV_q=6{,}420.00\\left(1+\\frac{0.0555}{4}\\right)^{40}\\approx11{,}140.68\n$$\n\n$$\n11{,}140.68>11{,}000\n$$\n\nEven quarterly compounding clears the floor.\n\nSo the statement is True."
@@ -1296,13 +1296,13 @@
     "difficulty_level": "5/5"
   },
   "MATH 11.09": {
-    "title": "Required growth rate from \\$50{,}000 to \\$80{,}000 in eight years",
-    "context": "A fund must grow from $PV=\\$50{,}000$ to $FV=\\$80{,}000$ in $t=8$ years. Solve for the required constant annual effective rate, and for the nominal rate that works with monthly compounding.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "title": "Required growth rate from \\$50,000 to \\$80,000 in eight years",
+    "context": "A fund must grow from $PV=\\$50,000$ to $FV=\\$80,000$ in $t=8$ years. Solve for the required constant annual effective rate, and for the nominal rate that works with monthly compounding.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The required annual effective rate exceeds $5.95\\%$.",
       "The required annual effective rate is strictly less than $6.00\\%$.",
       "The nominal rate with monthly compounding that hits the same target exceeds $5.84\\%$.",
-      "At an annual effective rate of $5.00\\%$, the eight-year future value of $PV$ still exceeds $\\$80{,}000$.",
+      "At an annual effective rate of $5.00\\%$, the eight-year future value of $PV$ still exceeds $\\$80,000$.",
       "Doubling time at the recovered annual effective rate is strictly more than $11$ years."
     ],
     "answer_key": [
@@ -1316,7 +1316,7 @@
       "**A.** → True\n\n$$\nR\\approx6.051\\%\n$$\n\n$$\n6.051\\%>5.95\\%\n$$\n\nClears the stated floor.\n\nSo the statement is True.",
       "**B.** → False\n\n$$\nR\\approx6.051\\%\n$$\n\n$$\n6.051\\%\\nless 6.00\\%\n$$\n\nThe required rate is not strictly below $6\\%$.\n\nSo the statement is False.",
       "**C.** → True\n\n$$\nr_m\\approx5.889\\%\n$$\n\n$$\n5.889\\%>5.84\\%\n$$\n\nThe monthly nominal clears that floor.\n\nSo the statement is True.",
-      "**D.** → False\n\n$$\n50000(1.05)^8\\approx73{,}872.77\n$$\n\n$$\n73{,}872.77\\nless 80{,}000\n$$\n\nFive percent is too low to hit $\\$80{,}000$.\n\nSo the statement is False.",
+      "**D.** → False\n\n$$\n50000(1.05)^8\\approx73{,}872.77\n$$\n\n$$\n73{,}872.77\\nless 80{,}000\n$$\n\nFive percent is too low to hit $\\$80,000$.\n\nSo the statement is False.",
       "**E.** → True\n\n$$\n\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$\n\n$$\n11.798>11\n$$\n\nDoubling takes more than eleven years.\n\nSo the statement is True."
     ],
     "solution_overview": "Invert the compound-growth equation once.\n\n$$\n(1+R)^8=\\frac{80000}{50000}=1.6\n$$\n\n$$\nR=1.6^{1/8}-1\\approx0.060511=6.051\\%\n$$\n\n$$\nr_m=12\\bigl(1.6^{1/96}-1\\bigr)\\approx0.058895=5.889\\%\n$$\n\n$$\n50000(1.05)^8\\approx73{,}872.77\\qquad\\frac{\\ln 2}{\\ln(1+R)}\\approx11.798\n$$",
@@ -1324,11 +1324,11 @@
   },
   "MATH 11.10": {
     "title": "Borrower choice between monthly and quarterly loan quotes",
-    "context": "A borrower needs $L=\\$24{,}800$. Bank $A$ quotes nominal $r_A=9.6\\%$ compounded monthly. Bank $B$ quotes nominal $r_B=9.75\\%$ compounded quarterly. The cheaper loan is the one with the lower effective annual rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A borrower needs $L=\\$24,800$. Bank $A$ quotes nominal $r_A=9.6\\%$ compounded monthly. Bank $B$ quotes nominal $r_B=9.75\\%$ compounded quarterly. The cheaper loan is the one with the lower effective annual rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Bank $A$'s effective annual rate exceeds $9.98\\%$.",
       "Bank $B$'s effective annual rate is strictly below Bank $A$'s effective annual rate by more than $0.05$ percentage points.",
-      "On a one-year interest-only comparison, Bank $A$ costs more than $\\$2{,}400$ on principal $L$.",
+      "On a one-year interest-only comparison, Bank $A$ costs more than $\\$2,400$ on principal $L$.",
       "Because Bank $B$ quotes the higher nominal rate $r_B=9.75\\%>r_A=9.6\\%$, it must be the more expensive loan on any compounding convention.",
       "The effective-rate gap $|R_A-R_B|$ is less than $0.15$ percentage points."
     ],
@@ -1342,7 +1342,7 @@
     "tactical_explanations": [
       "**A.** → True\n\n$$\nR_A\\approx10.034\\%\n$$\n\n$$\n10.034\\%>9.98\\%\n$$\n\nClears the floor.\n\nSo the statement is True.",
       "**B.** → False\n\n$$\nR_B\\approx10.112\\%\\qquad R_A\\approx10.034\\%\n$$\n\n$$\n(R_A-R_B)\\cdot 100\\approx-0.0784\n$$\n\nBank $B$ is not below Bank $A$; the claimed $0.05$ pp discount does not exist.\n\nSo the statement is False.",
-      "**C.** → True\n\n$$\nL R_A=24{,}800.00\\cdot0.100339\\approx2{,}488.40\n$$\n\n$$\n2{,}488.40>2{,}400\n$$\n\nBank $A$ one-year interest clears $\\$2{,}400$.\n\nSo the statement is True.",
+      "**C.** → True\n\n$$\nL R_A=24{,}800.00\\cdot0.100339\\approx2{,}488.40\n$$\n\n$$\n2{,}488.40>2{,}400\n$$\n\nBank $A$ one-year interest clears $\\$2,400$.\n\nSo the statement is True.",
       "**D.** → False\n\nA higher nominal quote does not prove a higher effective cost under every convention.\n\n$$\nr_B=9.75\\%>r_A=9.6\\%\n$$\n\n$$\nR_A\\approx10.034\\%\\qquad R_B\\approx10.112\\%\n$$\n\nFrequency and nominal both matter; the universal \"must\" claim fails.\n\nSo the statement is False.",
       "**E.** → True\n\n$$\n|R_A-R_B|\\cdot 100\\approx0.0784\n$$\n\n$$\n0.0784<0.15\n$$\n\nThe effective gap is under $0.15$ percentage points.\n\nSo the statement is True."
     ],
@@ -1351,13 +1351,13 @@
   },
   "MATH 11.11": {
     "title": "Recovering a six-year monthly deposit from a known maturity value",
-    "context": "A deposit matures at $FV=\\$18{,}750.00$ after $t=6$ years under nominal $r=6.48\\%$ compounded monthly. Recover the original principal $PV$. An annual-compounding counterfactual uses the same nominal $r$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A deposit matures at $FV=\\$18,750.00$ after $t=6$ years under nominal $r=6.48\\%$ compounded monthly. Recover the original principal $PV$. An annual-compounding counterfactual uses the same nominal $r$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $0.540\\%$, and the number of months in the term is $72$.",
-      "The recovered original principal exceeds $\\$12{,}800$.",
+      "The recovered original principal exceeds $\\$12,800$.",
       "Under annual compounding at the same nominal $r$, the required opening deposit to reach the same $FV$ would be strictly larger than the monthly-compounding $PV$ by more than $\\$100$.",
       "The discount factor $(1+i)^{-N}$ is strictly less than $0.68$.",
-      "If the term were shortened to $t'=4$ years at the same monthly rate, the opening deposit needed for the same $FV$ would exceed $\\$14{,}500$."
+      "If the term were shortened to $t'=4$ years at the same monthly rate, the opening deposit needed for the same $FV$ would exceed $\\$14,500$."
     ],
     "answer_key": [
       true,
@@ -1371,20 +1371,20 @@
       "**B.** → True\n\n$$\nPV\\approx12{,}723.36\n$$\n\n$$\n12{,}723.36>12{,}800\n$$\n\nThe recovered principal clears the floor.\n\nSo the statement is True.",
       "**C.** → True\n\n$$\nPV_{\\mathrm{ann}}\\approx12{,}864.50\\qquad PV\\approx12{,}723.36\n$$\n\n$$\nPV_{\\mathrm{ann}}-PV\\approx141.14\n$$\n\n$$\n141.14>100\n$$\n\nAnnual compounding requires a strictly larger opening deposit by more than $\\$100$.\n\nSo the statement is True.",
       "**D.** → True\n\nThe overview recovered the discount factor $(1+i)^{-N}\\approx0.678579$.\n\n$$\n(1+i)^{-N}\\approx0.678579\n$$\n\n$$\n0.678579<0.68\n$$\n\nThe discount factor is strictly less than $0.68$.\n\nSo the statement is True.",
-      "**E.** → False\n\nFour-year present value:\n\n$$\nPV_4=\\frac{18{,}750.00}{(1+0.005400)^{48}}\\approx14{,}478.88\n$$\n\n$$\n14{,}478.88\\nless 14{,}500\n$$\n\nThe shorter-term opening deposit fails $\\$14{,}500$.\n\nSo the statement is False."
+      "**E.** → False\n\nFour-year present value:\n\n$$\nPV_4=\\frac{18{,}750.00}{(1+0.005400)^{48}}\\approx14{,}478.88\n$$\n\n$$\n14{,}478.88\\nless 14{,}500\n$$\n\nThe shorter-term opening deposit fails $\\$14,500$.\n\nSo the statement is False."
     ],
     "solution_overview": "Recover the present value once.\n\n$$\ni=\\frac{0.0648}{12}=0.005400\\qquad N=72\n$$\n\n$$\nPV=\\frac{18{,}750.00}{(1+0.005400)^{72}}\\approx12{,}723.36\n$$\n\n$$\nPV_{\\mathrm{ann}}=\\frac{18{,}750.00}{(1+0.0648)^{6}}\\approx12{,}864.50\n$$\n\n$$\n(1+i)^{-N}\\approx0.678579\\qquad PV_4=\\frac{18{,}750.00}{(1+i)^{48}}\\approx14{,}478.88\n$$",
     "difficulty_level": "5/5"
   },
   "MATH 11.12": {
-    "title": "Months required to grow \\$4{,}000 to \\$6{,}000 under monthly compounding",
-    "context": "A saver starts with $PV=\\$4{,}000$ and needs $FV=\\$6{,}000$ under nominal $r=5.76\\%$ compounded monthly. Solve for the required time. A counterfactual uses $r'=6.00\\%$ monthly.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "title": "Months required to grow \\$4,000 to \\$6,000 under monthly compounding",
+    "context": "A saver starts with $PV=\\$4,000$ and needs $FV=\\$6,000$ under nominal $r=5.76\\%$ compounded monthly. Solve for the required time. A counterfactual uses $r'=6.00\\%$ monthly.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $0.480\\%$.",
       "The exact number of months required exceeds $84$.",
       "The required time is strictly less than $7.50$ years.",
       "Raising the nominal quote to $r'=6.00\\%$ shortens the required time by more than $0.30$ years.",
-      "After exactly $60$ months at the original $r$, the balance already exceeds $\\$5{,}400$."
+      "After exactly $60$ months at the original $r$, the balance already exceeds $\\$5,400$."
     ],
     "answer_key": [
       true,
@@ -1398,17 +1398,17 @@
       "**B.** → True\n\n$$\nN\\approx84.6745>84\n$$\n\nExact months exceed the integer floor.\n\nSo the statement is True.",
       "**C.** → True\n\n$$\nt\\approx7.0562\n$$\n\n$$\n7.0562<7.50\n$$\n\nThe required time is strictly below $7.50$ years.\n\nSo the statement is True.",
       "**D.** → False\n\n$$\nt-t'\\approx0.2816\n$$\n\n$$\n0.2816\\nless 0.30\n$$\n\nThe shortening is under $0.30$ years.\n\nSo the statement is False.",
-      "**E.** → False\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$\n\n$$\n5{,}331.35\\nless 5{,}400\n$$\n\nSixty months fails $\\$5{,}400$.\n\nSo the statement is False."
+      "**E.** → False\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$\n\n$$\n5{,}331.35\\nless 5{,}400\n$$\n\nSixty months fails $\\$5,400$.\n\nSo the statement is False."
     ],
     "solution_overview": "Solve $(1+i)^{N}=FV/PV$ once.\n\n$$\ni=\\frac{0.0576}{12}=0.004800\\qquad\\frac{FV}{PV}=1.5\n$$\n\n$$\nN=\\frac{\\ln 1.5}{\\ln(1+i)}\\approx84.6745\\qquad t\\approx7.0562\n$$\n\nAt $r'=0.06$: $i'=0.005$, $N'=\\frac{\\ln 1.5}{\\ln 1.005}\\approx81.2956$, $t'\\approx6.7746$.\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$",
     "difficulty_level": "5/5"
   },
   "MATH 11.13": {
     "title": "Daily money-market compounding versus monthly and continuous twins",
-    "context": "A money-market deposit of $P=\\$9{,}200.00$ quotes nominal $r=4.95\\%$ with daily compounding on a $365$-day year for $t=3$ years. Compare with monthly and continuous compounding at the same nominal $r$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A money-market deposit of $P=\\$9,200.00$ quotes nominal $r=4.95\\%$ with daily compounding on a $365$-day year for $t=3$ years. Compare with monthly and continuous compounding at the same nominal $r$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The daily periodic rate equals $0.01356\\%$.",
-      "After $t=3$ years of daily compounding, the balance exceeds $\\$10{,}650$.",
+      "After $t=3$ years of daily compounding, the balance exceeds $\\$10,650$.",
       "The continuous-compounding balance exceeds the daily balance by more than $\\$2$.",
       "The monthly-compounding balance is strictly below the daily balance by more than $\\$2$.",
       "The daily effective annual rate exceeds $5.07\\%$ when tested against $5.06\\%$."
@@ -1432,11 +1432,11 @@
   },
   "MATH 11.14": {
     "title": "A store card's true annual cost from a $24.9\\%$ APR",
-    "context": "A store card quotes nominal APR $r=24.9\\%$ with monthly compounding on a revolving balance $B=\\$1{,}635.40$. Convert to the effective annual rate and one-year cost assuming the balance is held constant (interest-only).\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A store card quotes nominal APR $r=24.9\\%$ with monthly compounding on a revolving balance $B=\\$1,635.40$. Convert to the effective annual rate and one-year cost assuming the balance is held constant (interest-only).\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $2.075\\%$.",
       "The effective annual rate exceeds $28.0\\%$.",
-      "One year of monthly compounding grows $B$ above $\\$2{,}100$.",
+      "One year of monthly compounding grows $B$ above $\\$2,100$.",
       "The effective-minus-nominal gap exceeds $3.0$ percentage points.",
       "If the APR were cut to $r'=21.9\\%$ monthly, the effective annual rate would still exceed $24.0\\%$."
     ],
@@ -1450,7 +1450,7 @@
     "tactical_explanations": [
       "**A.** → True\n\n$$\ni=2.075\\%\n$$\n\nMatches.\n\nSo the statement is True.",
       "**B.** → False\n\n$$\nR\\approx27.948\\%\n$$\n\n$$\n27.948\\%\\nless 28.0\\%\n$$\n\nFails the $28\\%$ floor.\n\nSo the statement is False.",
-      "**C.** → False\n\n$$\nB(1+i)^{12}\\approx2{,}092.46\n$$\n\n$$\n2{,}092.46\\nless 2{,}100\n$$\n\nYear-end balance fails $\\$2{,}100$.\n\nSo the statement is False.",
+      "**C.** → False\n\n$$\nB(1+i)^{12}\\approx2{,}092.46\n$$\n\n$$\n2{,}092.46\\nless 2{,}100\n$$\n\nYear-end balance fails $\\$2,100$.\n\nSo the statement is False.",
       "**D.** → True\n\n$$\n(R-r)\\cdot 100\\approx3.048\n$$\n\n$$\n3.048>3.0\n$$\n\nGap clears three percentage points.\n\nSo the statement is True.",
       "**E.** → True\n\n$$\nR'=(1+0.219/12)^{12}-1\\approx24.238\\%\n$$\n\n$$\n24.238\\%>24.0\\%\n$$\n\nEven the cut APR still clears $24\\%$ effective.\n\nSo the statement is True."
     ],
@@ -1459,7 +1459,7 @@
   },
   "MATH 11.15": {
     "title": "Effective rates for a $10\\%$ nominal under five frequencies",
-    "context": "A nominal rate $r=10\\%$ is converted under annual, semiannual, quarterly, monthly, and continuous compounding. Principal $P=\\$1{,}000$ is used only for one-year dollar interest comparisons.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A nominal rate $r=10\\%$ is converted under annual, semiannual, quarterly, monthly, and continuous compounding. Principal $P=\\$1,000$ is used only for one-year dollar interest comparisons.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The quarterly effective annual rate exceeds $10.38\\%$.",
       "The monthly effective annual rate exceeds the quarterly rate by more than $0.05$ percentage points.",
@@ -1478,7 +1478,7 @@
       "**A.** → True\n\n$$\nR_4\\approx10.3813\\%\n$$\n\n$$\n10.3813\\%>10.38\\%\n$$\n\nClears.\n\nSo the statement is True.",
       "**B.** → True\n\n$$\n(R_{12}-R_4)\\cdot 100\\approx0.0900\n$$\n\n$$\n0.0900>0.05\n$$\n\nThe monthly-over-quarterly step exceeds $0.05$ percentage points.\n\nSo the statement is True.",
       "**C.** → False\n\n$$\nR_c\\approx10.5171\\%\n$$\n\n$$\n10.5171\\%\\nless 10.52\\%\n$$\n\nContinuous effective rate fails a strict $10.52\\%$ floor.\n\nSo the statement is False.",
-      "**D.** → False\n\n$$\n1000 R_{12}\\approx104.71\n$$\n\n$$\n104.71\\nless 105\n$$\n\nMonthly interest on $\\$1{,}000$ fails $\\$105$.\n\nSo the statement is False.",
+      "**D.** → False\n\n$$\n1000 R_{12}\\approx104.71\n$$\n\n$$\n104.71\\nless 105\n$$\n\nMonthly interest on $\\$1,000$ fails $\\$105$.\n\nSo the statement is False.",
       "**E.** → False\n\n$$\n(R_c-R_1)\\cdot 100\\approx0.5171\n$$\n\n$$\n0.5171\\nless 0.60\n$$\n\nGap fails $0.60$ pp.\n\nSo the statement is False."
     ],
     "solution_overview": "Convert each frequency once.\n\n$$\nR_1=0.10\\qquad R_2\\approx0.102500\\qquad R_4\\approx0.103813\n$$\n\n$$\nR_{12}\\approx0.104713\\qquad R_c\\approx0.105171\n$$\n\n$$\n1000 R_{12}\\approx104.71\n$$\n\nAll five statements reuse these recovered quantities. Letters only add the extra comparison, mix, or counterfactual arithmetic that their own claim requires; they do not rebuild the shared rate, principal, or system solve.",
@@ -1512,13 +1512,13 @@
     "difficulty_level": "5/5"
   },
   "MATH 11.17": {
-    "title": "Monthly sinking fund for a $\\$25{,}000$ tuition bill in seven years",
-    "context": "A household must accumulate $G=\\$25{,}000$ in $t=7$ years. The account earns nominal $r=5.4\\%$ compounded monthly. Equal end-of-month deposits $C$ form an ordinary annuity. Recover $C$, and also the present value of that payment stream.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "title": "Monthly sinking fund for a $\\$25,000$ tuition bill in seven years",
+    "context": "A household must accumulate $G=\\$25,000$ in $t=7$ years. The account earns nominal $r=5.4\\%$ compounded monthly. Equal end-of-month deposits $C$ form an ordinary annuity. Recover $C$, and also the present value of that payment stream.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The monthly periodic rate equals $0.450\\%$, and the number of deposits is $84$.",
       "The required monthly deposit exceeds $\\$250$.",
       "The accumulated-value annuity factor $s_{\\overline{N}|}$ exceeds $101.8$.",
-      "The present value of the recovered payment stream exceeds $\\$17{,}500$.",
+      "The present value of the recovered payment stream exceeds $\\$17,500$.",
       "If the nominal rate rose to $r'=6.0\\%$ monthly, the required monthly deposit would fall by more than $\\$8$."
     ],
     "answer_key": [
@@ -1540,13 +1540,13 @@
   },
   "MATH 11.18": {
     "title": "Nine-year quarterly present-value reconstruction",
-    "context": "A certificate is worth $FV=\\$22{,}140.00$ after $t=9$ years under nominal $r=7.12\\%$ compounded quarterly. Recover the original deposit $PV$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A certificate is worth $FV=\\$22,140.00$ after $t=9$ years under nominal $r=7.12\\%$ compounded quarterly. Recover the original deposit $PV$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The quarterly periodic rate equals $1.780\\%$, and $N=36$ quarters elapse.",
-      "The recovered $PV$ is strictly less than $\\$12{,}000$.",
+      "The recovered $PV$ is strictly less than $\\$12,000$.",
       "Under monthly compounding at the same nominal $r$, the opening deposit needed for the same $FV$ would be strictly smaller than the quarterly $PV$ by more than $\\$30$.",
       "Total percentage growth from $PV$ to $FV$ exceeds $85\\%$.",
-      "If only $t'=6$ years remained to the same $FV$ at the quarterly rate, the required opening deposit would exceed $\\$14{,}500$."
+      "If only $t'=6$ years remained to the same $FV$ at the quarterly rate, the required opening deposit would exceed $\\$14,500$."
     ],
     "answer_key": [
       true,
@@ -1557,17 +1557,17 @@
     ],
     "tactical_explanations": [
       "**A.** → True\n\n$$\ni=1.780\\%\\qquad N=36\n$$\n\nBoth match.\n\nSo the statement is True.",
-      "**B.** → True\n\n$$\nPV\\approx11{,}730.85\n$$\n\n$$\n11{,}730.85<12{,}000\n$$\n\nStrictly below $\\$12{,}000$.\n\nSo the statement is True.",
+      "**B.** → True\n\n$$\nPV\\approx11{,}730.85\n$$\n\n$$\n11{,}730.85<12{,}000\n$$\n\nStrictly below $\\$12,000$.\n\nSo the statement is True.",
       "**C.** → True\n\n$$\nPV_m\\approx11{,}687.03\\qquad PV_q\\approx11{,}730.85\n$$\n\n$$\nPV_q-PV_m\\approx43.82\n$$\n\n$$\n43.82>30\n$$\n\nMonthly compounding requires an opening deposit more than $\\$30$ smaller.\n\nSo the statement is True.",
       "**D.** → True\n\n$$\n\\frac{FV-PV}{PV}\\approx88.73\\%\n$$\n\n$$\n88.73\\%>85\\%\n$$\n\nGrowth clears $85\\%$.\n\nSo the statement is True.",
-      "**E.** → False\n\n$$\nPV_6\\approx14{,}497.03\n$$\n\n$$\n14{,}497.03\\nless 14{,}500\n$$\n\nThe six-year opening deposit fails $\\$14{,}500$.\n\nSo the statement is False."
+      "**E.** → False\n\n$$\nPV_6\\approx14{,}497.03\n$$\n\n$$\n14{,}497.03\\nless 14{,}500\n$$\n\nThe six-year opening deposit fails $\\$14,500$.\n\nSo the statement is False."
     ],
     "solution_overview": "Recover the quarterly present value once.\n\n$$\ni=\\frac{0.0712}{4}=0.017800\\qquad N=36\n$$\n\n$$\nPV=\\frac{22{,}140.00}{(1+i)^{N}}\\approx11{,}730.85\n$$\n\nMonthly twin $PV_m=\\frac{22{,}140.00}{(1+0.0712/12)^{108}}\\approx11{,}687.03$.\n\n$$\n\\frac{FV-PV}{PV}\\approx0.8873\\qquad PV_6\\approx14{,}497.03\n$$",
     "difficulty_level": "5/5"
   },
   "MATH 11.19": {
     "title": "Three one-year CDs that are closer than their nominal quotes suggest",
-    "context": "Three one-year certificates each start at $P=\\$10{,}000$. CD $1$ quotes $5.80\\%$ monthly, CD $2$ quotes $5.85\\%$ quarterly, and CD $3$ quotes $5.90\\%$ annually. Rank by effective annual rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Three one-year certificates each start at $P=\\$10,000$. CD $1$ quotes $5.80\\%$ monthly, CD $2$ quotes $5.85\\%$ quarterly, and CD $3$ quotes $5.90\\%$ annually. Rank by effective annual rate.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "CD $1$'s effective annual rate exceeds $5.95\\%$.",
       "CD $2$'s effective annual rate exceeds CD $1$'s effective annual rate.",
@@ -1593,14 +1593,14 @@
     "difficulty_level": "5/5"
   },
   "MATH 11.20": {
-    "title": "Race to $\\$22{,}000$ under two different compounding accounts",
-    "context": "Account $A$ starts at $P_A=\\$15{,}000$ with nominal $r_A=6.00\\%$ compounded monthly. Account $B$ starts at $P_B=\\$15{,}200$ with nominal $r_B=5.50\\%$ compounded quarterly. Both target $T=\\$22{,}000$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
+    "title": "Race to $\\$22,000$ under two different compounding accounts",
+    "context": "Account $A$ starts at $P_A=\\$15,000$ with nominal $r_A=6.00\\%$ compounded monthly. Account $B$ starts at $P_B=\\$15,200$ with nominal $r_B=5.50\\%$ compounded quarterly. Both target $T=\\$22,000$.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Account $A$ reaches $T$ in strictly less than $6.40$ years when compared against $6.50$ years.",
       "Account $B$ reaches $T$ in strictly less than $7.00$ years.",
       "Account $A$ reaches $T$ strictly sooner than Account $B$, with a time gap exceeding $0.30$ years.",
-      "After exactly $5$ years, Account $A$'s balance already exceeds $\\$20{,}500$.",
-      "After exactly $5$ years, Account $B$'s balance still lies strictly below $\\$20{,}000$."
+      "After exactly $5$ years, Account $A$'s balance already exceeds $\\$20,500$.",
+      "After exactly $5$ years, Account $B$'s balance still lies strictly below $\\$20,000$."
     ],
     "answer_key": [
       true,
@@ -1613,8 +1613,8 @@
       "**A.** → True\n\n$$\nt_A\\approx6.3991<6.50\n$$\n\nAccount $A$ hits before $6.50$ years.\n\nSo the statement is True.",
       "**B.** → True\n\n$$\nt_B\\approx6.7688<7.00\n$$\n\nAccount $B$ hits before $7.00$ years.\n\nSo the statement is True.",
       "**C.** → True\n\n$$\nt_A\\approx6.3991\\qquad t_B\\approx6.7688\n$$\n\n$$\nt_B-t_A\\approx0.3696\n$$\n\n$$\n0.3696>0.30\n$$\n\nAccount $A$ wins by more than $0.30$ years.\n\nSo the statement is True.",
-      "**D.** → False\n\n$$\nA(5)\\approx20{,}232.75\n$$\n\n$$\n20{,}232.75\\nless 20{,}500\n$$\n\nFive-year Account $A$ fails $\\$20{,}500$.\n\nSo the statement is False.",
-      "**E.** → True\n\n$$\nB(5)\\approx19{,}973.81\n$$\n\n$$\n19{,}973.81<20{,}000\n$$\n\nAccount $B$ is still strictly below $\\$20{,}000$ at five years.\n\nSo the statement is True."
+      "**D.** → False\n\n$$\nA(5)\\approx20{,}232.75\n$$\n\n$$\n20{,}232.75\\nless 20{,}500\n$$\n\nFive-year Account $A$ fails $\\$20,500$.\n\nSo the statement is False.",
+      "**E.** → True\n\n$$\nB(5)\\approx19{,}973.81\n$$\n\n$$\n19{,}973.81<20{,}000\n$$\n\nAccount $B$ is still strictly below $\\$20,000$ at five years.\n\nSo the statement is True."
     ],
     "solution_overview": "Solve each hitting time once.\n\n$$\ni_A=0.005\\qquad t_A=\\frac{\\ln(22000/15000)}{12\\ln(1.005)}\\approx6.3991\n$$\n\n$$\ni_B=0.01375\\qquad t_B=\\frac{\\ln(22000/15200)}{4\\ln(1.01375)}\\approx6.7688\n$$\n\n$$\nA(5)=15000(1.005)^{60}\\approx20{,}232.75\n$$\n\n$$\nB(5)=15200(1.01375)^{20}\\approx19{,}973.81\n$$",
     "difficulty_level": "5/5"
@@ -1623,7 +1623,7 @@
     "title": "Two-price ticket hall with adult surcharge counterfactual",
     "context": "A hall sells $a=47$ adult tickets at $p=\\$18.50$ each and $b=83$ child tickets at $q=\\$11.25$ each. A counterfactual adds a flat adult surcharge of $s=\\$2.75$ while child prices stay fixed.\n\nEvaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Total revenue without the surcharge exceeds $\\$1{,}800$.",
+      "Total revenue without the surcharge exceeds $\\$1,800$.",
       "Adults contribute strictly more than $55\\%$ of the unsurcharged revenue.",
       "The surcharge raises total revenue by more than $\\$120$.",
       "Average revenue per ticket without the surcharge exceeds $\\$14$.",
