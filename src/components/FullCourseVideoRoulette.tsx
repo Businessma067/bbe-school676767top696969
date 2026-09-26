@@ -10,6 +10,8 @@ export type RouletteSlide =
       kind: "image";
       src: string;
       alt: string;
+      /** CSS aspect-ratio — matches the product poster frame. */
+      aspect: string;
     }
   | {
       key: string;
@@ -17,7 +19,14 @@ export type RouletteSlide =
       kind: "video";
       video: string;
       poster: string;
+      /** Native recording aspect so the stage never crops the walkthrough. */
+      aspect: string;
     };
+
+/** Most How-it-works recordings are ~3420×1966 (slightly wider than 16:9). */
+const HIW_WIDE = "3420 / 1966";
+const HIW_16_9 = "16 / 9";
+const POSTER_ASPECT = "16 / 10";
 
 const BBE_VIDEOS: Omit<Extract<RouletteSlide, { kind: "video" }>, "kind">[] = [
   {
@@ -25,42 +34,49 @@ const BBE_VIDEOS: Omit<Extract<RouletteSlide, { kind: "video" }>, "kind">[] = [
     label: "Economics",
     video: "/how-it-works/economics.mp4",
     poster: "/how-it-works/economics-poster.jpg",
+    aspect: HIW_16_9,
   },
   {
     key: "math",
     label: "Math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "english",
     label: "English",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "mock-builder",
     label: "Mock Builder",
     video: "/how-it-works/mock-builder.mp4",
     poster: "/how-it-works/mock-builder-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "flashcards",
     label: "Flashcards",
     video: "/how-it-works/flashcards.mp4",
     poster: "/how-it-works/flashcards-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "matching",
     label: "Matching",
     video: "/how-it-works/matching.mp4",
     poster: "/how-it-works/matching-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "tutor-exam",
     label: "Tutor Exam",
     video: "/how-it-works/tutor-exam.mp4",
     poster: "/how-it-works/tutor-exam-poster.jpg",
+    aspect: HIW_WIDE,
   },
 ];
 
@@ -70,36 +86,42 @@ const WISO_VIDEOS: Omit<Extract<RouletteSlide, { kind: "video" }>, "kind">[] = [
     label: "Economics",
     video: "/how-it-works/economics.mp4",
     poster: "/how-it-works/economics-poster.jpg",
+    aspect: HIW_16_9,
   },
   {
     key: "math",
     label: "Math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "german",
     label: "German",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "flashcards",
     label: "Flashcards",
     video: "/how-it-works/wiso-flashcards.mp4",
     poster: "/how-it-works/wiso-flashcards-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "matching",
     label: "Matching",
     video: "/how-it-works/wiso-matching.mp4",
     poster: "/how-it-works/wiso-matching-poster.jpg",
+    aspect: HIW_WIDE,
   },
   {
     key: "tutor-exam",
     label: "Tutor Exam",
     video: "/how-it-works/wiso-tutor-exam.mp4",
     poster: "/how-it-works/wiso-tutor-exam-poster.jpg",
+    aspect: HIW_WIDE,
   },
 ];
 
@@ -116,6 +138,7 @@ export function buildFullCourseRouletteSlides(options: {
       kind: "image",
       src: options.posterSrc,
       alt: options.posterAlt,
+      aspect: POSTER_ASPECT,
     },
     ...videos.map((v) => ({ ...v, kind: "video" as const })),
   ];
@@ -178,7 +201,8 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
     <div className="space-y-3">
       <div
         ref={stageRef}
-        className="relative aspect-[16/10] touch-pan-y overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm select-none"
+        className="relative w-full touch-pan-y overflow-hidden rounded-2xl border border-border bg-muted shadow-sm select-none"
+        style={{ aspectRatio: slide.aspect }}
         onTouchStart={(e) => {
           const t = e.touches[0];
           touch.current = { x: t.clientX, y: t.clientY };
@@ -207,7 +231,7 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
           <video
             key={slide.key}
             ref={videoRef}
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute inset-0 h-full w-full object-contain object-center"
             poster={slide.poster}
             src={slide.video}
             muted
@@ -277,7 +301,10 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
               <img
                 src={thumbSrc}
                 alt=""
-                className="absolute inset-0 h-full w-full object-cover"
+                className={cn(
+                  "absolute inset-0 h-full w-full object-center",
+                  s.kind === "video" ? "object-contain bg-muted" : "object-cover",
+                )}
                 draggable={false}
                 loading="lazy"
               />
