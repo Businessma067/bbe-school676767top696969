@@ -22,9 +22,19 @@ import { FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import {
+  FullCourseVideoRoulette,
+  buildFullCourseRouletteSlides,
+} from "@/components/FullCourseVideoRoulette";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
+
+const ROULETTE_SLIDES = buildFullCourseRouletteSlides({
+  track: "bbe",
+  posterSrc: FULL_COURSE_IMAGE,
+  posterAlt: "Full BBE Course",
+});
 
 const FULL_COURSE_PRICE = 449;
 
@@ -261,14 +271,7 @@ export function FullCourseProduct() {
             Full BBE Course
           </h1>
 
-          <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
-            <img
-              src={FULL_COURSE_IMAGE}
-              alt="Full BBE Course"
-              className="absolute inset-0 h-full w-full object-cover object-center"
-              draggable={false}
-            />
-          </div>
+          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
 
           {/* Rating */}
           <div className="mt-5 flex items-center gap-3">
