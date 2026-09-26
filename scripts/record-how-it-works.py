@@ -506,11 +506,17 @@ def encode(subject, frames):
 
     OUT.mkdir(parents=True, exist_ok=True)
     mp4 = OUT / f"{subject}.mp4"
+    # Match hiw_capture.encode_hiw: keep full retina buffer (CSS size × DPR).
+    dpr = 2
+    out_w = W * dpr
+    out_h = H * dpr
+    out_w -= out_w % 2
+    out_h -= out_h % 2
     subprocess.run(
         [
             "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),
-            "-vf", f"fps={FPS},scale={W}:-2:flags=lanczos,format=yuv420p",
-            "-c:v", "libx264", "-preset", "slow", "-crf", "20",
+            "-vf", f"fps={FPS},scale={out_w}:{out_h}:flags=lanczos,format=yuv420p",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "12",
             "-movflags", "+faststart", "-an", str(mp4),
         ],
         check=True,
