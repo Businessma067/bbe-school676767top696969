@@ -1163,9 +1163,9 @@
     "context": "Solve $3.6x-14.8=2.4x+9.2$ für $x$ Ein skalierter Zwilling ersetzt den $3.6$ coefficient by $a=4.8$ Während alle anderen konstant bleiben. Eine zweite Überprüfung wertet beide Seiten bei $x=k$ mit $k=18$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Die einzigartige Lösung der ursprünglichen Gleichung ist $x=20$.",
-      "Substituting $x=20$ Die Kohäsions- Sicherheiten sabens verlierten sich verlustsabsabsabsabsabsabrechnung $58$.",
+      "Setzt man $x=20$ in die ursprüngliche linke Seite ein, ergibt sich ein Wert, der streng kleiner als $58$ ist.",
       "mit dem Leitkoeffizienten $a=4.8$ Die neue Lösung übersteigt $12$.",
-      "At $k=18$ jene kurjjjj die kurchtjjj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/jjjliesjnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kehrtjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnichtjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj sjjjjjjj",
+      "Bei $k=18$ übersteigt die ursprüngliche linke Seite die ursprüngliche rechte Seite.",
       "Der Unterschied zwischen der ursprünglichen Lösung und der Doppellösung übersteigt $7$."
     ],
     "tactical_explanations": [
@@ -1203,7 +1203,7 @@
       "Die eindeutige Lösung ist $x=-3$.",
       "Substituieren der Lösung in die ursprüngliche linke Seite ergibt einen Wert von mehr als $-20$.",
       "Mit dem Leitfaktor $a=3$ instead of $2$, die neue, die neue, ist, die, die neue möglichkeit, die hak, als, als, als, als, als, als der, als der, als der, als der, als der, als der, als der, als der, als der, als der, als der, als der, als, als, als, als ör, alsie Dabei. $8$.",
-      "At $x=0$ jene kurjjjj die kurchtjjj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/jjjliesjnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kehrtjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnichtjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj sjjjjjjj",
+      "Bei $x=0$ übersteigt die ursprüngliche linke Seite die ursprüngliche rechte Seite.",
       "Der absolute Wert der ursprünglichen Lösung übersteigt $2.5$."
     ],
     "tactical_explanations": [
