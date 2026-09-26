@@ -1368,8 +1368,8 @@ function isPartStartPara(trimmed: string): boolean {
 
 /**
  * Tutorial prose matching the reference screenshots:
- * Inter body, bold Part / step titles, airy centered KaTeX, Note callouts.
- * Spacing mirrors the samples: ~24–32px between steps, generous air around equations.
+ * Inter body, bold Part / step titles, compact centered KaTeX, Note callouts.
+ * Relation continuations (`\approx …`, `= …`) fold onto the prior display line.
  */
 const MathProse = memo(function MathProse({ text, className }: { text: string; className?: string }) {
   // Keep blank-line paragraphs, but also split consecutive bullet lines apart.
@@ -1596,9 +1596,9 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
             <div
               key={idx}
               className={cn(
-                prevMath || nextMath ? "my-1.5" : "my-3.5",
-                prevMath && "mt-1",
-                nextMath && "mb-1",
+                prevMath || nextMath ? "my-0.5" : "my-2",
+                prevMath && "mt-0.5",
+                nextMath && "mb-0.5",
               )}
             >
               <FlashcardMath text={chunk.text} displayPrefer />
@@ -1628,9 +1628,9 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
                     <div
                       key={j}
                       className={cn(
-                        prevMath || nextMath ? "my-1.5" : "my-3.5",
-                        prevMath && "mt-1",
-                        nextMath && "mb-1",
+                        prevMath || nextMath ? "my-0.5" : "my-2",
+                        prevMath && "mt-0.5",
+                        nextMath && "mb-0.5",
                       )}
                     >
                       <FlashcardMath text={para} displayPrefer />

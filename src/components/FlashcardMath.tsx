@@ -91,7 +91,7 @@ const MathChunk = memo(function MathChunk({
               key={j}
               className={
                 displayMode
-                  ? "flashcard-math-display my-2.5 block h-auto w-full max-w-full overflow-x-auto overflow-y-visible py-2 text-center [&_.katex]:max-w-full [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:max-w-full [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-visible [&_.katex-display]:py-1.5 [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border"
+                  ? "flashcard-math-display my-0.5 block h-auto w-full max-w-full overflow-x-auto overflow-y-visible py-0.5 text-center [&_.katex]:max-w-full [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:max-w-full [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-visible [&_.katex-display]:py-0.5 [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border"
                   : "mx-0.5 inline-block max-w-full align-baseline [overflow-wrap:anywhere] [&_.katex]:max-w-full"
               }
               dangerouslySetInnerHTML={{ __html: html }}
@@ -332,12 +332,12 @@ function isStackedMathBody(body: string): boolean {
 
 /**
  * Short single-step displays (memberships, tiny intermediates). Long formulas
- * keep the airy single-equation layout.
+ * keep their own display block.
  */
 function isCompactDisplayBody(body: string): boolean {
   const t = body.trim();
   if (!t || isStackedMathBody(t) || /\\begin\{/.test(t)) return false;
-  // Keep fraction / large-operator steps as separate airy displays (econ
+  // Keep fraction / large-operator steps as their own displays (econ
   // ratio stacks, long divisions). Membership checklists stay compact.
   if (/\\(?:d|t)?frac|\\sum|\\int|\\prod/.test(t)) return false;
   return t.replace(/\s+/g, " ").length <= 88;
@@ -346,12 +346,39 @@ function isCompactDisplayBody(body: string): boolean {
 /** Minimum consecutive short displays before stacking into gather*. */
 const DENSE_SHORT_DISPLAY_MIN = 3;
 
+/** Fold `$$\ln 3$$` + `$$\approx 1.098$$` onto one centered display line. */
+function joinContinuationOntoPrevious(prev: string, cur: string): string {
+  return `${prev.trimEnd()} ${cur.trim()}`;
+}
+
+function isShortRelationContinuation(body: string): boolean {
+  const t = body.replace(/\s+/g, " ").trim();
+  return t.length > 0 && t.length <= 72 && isRelationContinuationBody(t);
+}
+
 /**
- * Turn a chain like
- *   $$\varepsilon=\dfrac{…}{20}$$
- *   $$=-2$$
- * into one left-aligned `aligned` block so KaTeX does not center a lone `= -2`.
+ * Simple `Name = value` rows that can share a line with `,\quad`
+ * (econ CA=/CL= lookups). Reject working lines with operators on the LHS.
  */
+function isPackableShortAssignment(body: string): boolean {
+  const t = body.replace(/\s+/g, " ").trim();
+  if (!t || isStackedMathBody(t) || /\\begin\{/.test(t)) return false;
+  if (/\\(?:d|t)?frac|\\sum|\\int|\\prod/.test(t)) return false;
+  if (t.length > 56) return false;
+  let eqCount = 0;
+  let eqIndex = -1;
+  for (let i = 0; i < t.length; i++) {
+    if (t[i] === "=" && t[i - 1] !== "\\") {
+      eqCount += 1;
+      if (eqIndex < 0) eqIndex = i;
+    }
+  }
+  if (eqCount === 0 || eqCount > 2) return false;
+  const lhs = t.slice(0, eqIndex);
+  if (/[+\-−/×]|\\frac|\\cdot|\\times/.test(lhs)) return false;
+  return true;
+}
+
 /**
  * When a single display block runs `… = 45{,}000` straight into `\frac{…}{6}`,
  * KaTeX prints them on one line. Split onto aligned rows before render.
@@ -382,50 +409,10 @@ function normalizeCrampedFractionSteps(body: string): string {
   return changed ? out.join("\n") : body;
 }
 
-function formatAlignedContinuationChain(bodies: string[]): string {
-  const lines: string[] = [];
-  for (let k = 0; k < bodies.length; k++) {
-    const raw = bodies[k].trim();
-    if (!raw) continue;
-    if (k === 0) {
-      lines.push(toAlignedFirstLine(raw));
-    } else if (/^\s*=/.test(raw)) {
-      lines.push(`&${raw}`);
-    } else {
-      lines.push(`& ${raw}`);
-    }
-  }
-  // Plain `\\` row breaks (avoid `\\[…em]`, which corrupts into `$0.85em]`).
-  return `\\begin{aligned}\n${lines.join(" \\\\\n")}\n\\end{aligned}`;
-}
-
 function formatGatherBlock(bodies: string[]): string {
   // Plain `\\` — `\\[0.85em]` was rewritten to `$0.85em]` and turned whole
   // gather* blocks into red katex-error source across explanations.
   return `\\begin{gather*}\n${bodies.map((b) => b.trim()).filter(Boolean).join(" \\\\\n")}\n\\end{gather*}`;
-}
-
-/** Put `&=` on the first top-level equals so the chain lines up. */
-function toAlignedFirstLine(s: string): string {
-  let depth = 0;
-  for (let i = 0; i < s.length; i++) {
-    const c = s[i]!;
-    if (c === "{" || c === "(") depth += 1;
-    else if (c === "}" || c === ")") depth = Math.max(0, depth - 1);
-    else if (c === "=" && depth === 0) {
-      if (i > 0 && s[i - 1] === "\\") continue;
-      const before = s.slice(0, i).replace(/\s+$/, "");
-      if (
-        /\\(?:neq|leq|geq|eq|approx|equiv|sim|cong|leqslant|geqslant|doteq|coloneqq)$/.test(
-          before,
-        )
-      ) {
-        continue;
-      }
-      return `${s.slice(0, i).trimEnd()} &=${s.slice(i + 1)}`;
-    }
-  }
-  return `& ${s}`;
 }
 
 function coalesceContinuationDisplays(parts: Part[]): Part[] {
@@ -434,11 +421,69 @@ function coalesceContinuationDisplays(parts: Part[]): Part[] {
 }
 
 /**
- * Keep each display as its own centered KaTeX block (old formula style).
- * Do not merge `= 164` into gather-star / aligned — that shifts short rows off-center.
+ * Join relation continuations onto the prior display on the same centered
+ * line (`\ln 3` + `\approx 1.098` → `\ln 3 \approx 1.098`). Prefer this over
+ * `aligned`, which shoved short `= …` rows off-center.
  */
 function coalesceRelationContinuationDisplays(parts: Part[]): Part[] {
-  return parts;
+  const out: Part[] = [];
+  let i = 0;
+  while (i < parts.length) {
+    const p = parts[i]!;
+    if (p.type !== "display") {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+
+    let body = p.value;
+    let j = i + 1;
+    let consumedThrough = i;
+    while (j < parts.length) {
+      const mid = parts[j]!;
+      if (mid.type === "text" && mid.value.trim() === "") {
+        j += 1;
+        continue;
+      }
+      if (mid.type === "display" && isShortRelationContinuation(mid.value)) {
+        body = joinContinuationOntoPrevious(body, mid.value);
+        consumedThrough = j;
+        j += 1;
+        continue;
+      }
+      break;
+    }
+
+    out.push({ type: "display", value: body });
+    i = consumedThrough + 1;
+  }
+  return out;
+}
+
+/** Pack short Name=value rows; gather* membership / tiny non-assignment runs. */
+function densifyShortDisplayBodies(bodies: string[]): string[] {
+  const merged: string[] = [];
+  let k = 0;
+  while (k < bodies.length) {
+    if (isPackableShortAssignment(bodies[k]!)) {
+      const pack = [bodies[k]!];
+      while (
+        k + pack.length < bodies.length &&
+        pack.length < 3 &&
+        isPackableShortAssignment(bodies[k + pack.length]!)
+      ) {
+        pack.push(bodies[k + pack.length]!);
+      }
+      if (pack.length >= 2) {
+        merged.push(pack.map((b) => b.trim()).join(",\\quad "));
+        k += pack.length;
+        continue;
+      }
+    }
+    merged.push(bodies[k]!);
+    k += 1;
+  }
+  return merged;
 }
 
 /** Stack runs of many tiny display fragments into one gather* block. */
@@ -472,15 +517,21 @@ function coalesceDenseShortDisplays(parts: Part[]): Part[] {
     }
 
     if (bodies.length >= DENSE_SHORT_DISPLAY_MIN) {
-      // Keep econ CA=/CL= stacks as separate centered displays (old style).
-      // Only gather* pure membership / tiny non-assignment checklists.
-      const assignmentLike = bodies.filter((b) =>
-        /(?:^|[^\\])(?:=|\\approx\b|\\leq\b|\\geq\b|\\le\b|\\ge\b|>|<)/.test(b),
-      ).length;
-      if (assignmentLike >= Math.ceil(bodies.length * 0.6)) {
-        for (const b of bodies) out.push({ type: "display", value: b });
+      const packed = densifyShortDisplayBodies(bodies);
+      if (packed.length === 1) {
+        out.push({ type: "display", value: packed[0]! });
+      } else if (packed.length < bodies.length) {
+        for (const b of packed) out.push({ type: "display", value: b });
       } else {
-        out.push({ type: "display", value: formatGatherBlock(bodies) });
+        // Membership / tiny non-assignment checklists → one gather* block.
+        const assignmentLike = bodies.filter((b) =>
+          /(?:^|[^\\])(?:=|\\approx\b|\\leq\b|\\geq\b|\\le\b|\\ge\b|>|<)/.test(b),
+        ).length;
+        if (assignmentLike >= Math.ceil(bodies.length * 0.6)) {
+          for (const b of packed) out.push({ type: "display", value: b });
+        } else {
+          out.push({ type: "display", value: formatGatherBlock(packed) });
+        }
       }
       i = end;
     } else {
@@ -504,16 +555,38 @@ function extractSoleDisplayBody(para: string): string {
 }
 
 /**
- * Old formula style: each `$$…$$` stays its own centered paragraph.
- * Merging relation continuations into aligned/gather made stacks look crooked.
+ * Fold consecutive sole-display paragraphs when later ones are relation
+ * continuations (`= …`, `\approx …`) onto one centered `$$…$$` line.
  */
 function mergeRelationContinuationParagraphs(paragraphs: string[]): string[] {
-  return paragraphs;
+  const out: string[] = [];
+  let i = 0;
+  while (i < paragraphs.length) {
+    const p = paragraphs[i]!;
+    if (!isSoleDisplayMathParagraph(p)) {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+    let body = extractSoleDisplayBody(p);
+    let j = i + 1;
+    while (
+      j < paragraphs.length &&
+      isSoleDisplayMathParagraph(paragraphs[j]!) &&
+      isShortRelationContinuation(extractSoleDisplayBody(paragraphs[j]!))
+    ) {
+      body = joinContinuationOntoPrevious(body, extractSoleDisplayBody(paragraphs[j]!));
+      j += 1;
+    }
+    out.push(j > i + 1 ? `$$\n${body}\n$$` : p);
+    i = j;
+  }
+  return out;
 }
 
 /**
- * Stack ≥3 consecutive short sole-display paragraphs into one gather* so
- * membership checklists and tiny intermediates are not each given a large gap.
+ * Stack ≥3 consecutive short sole-display paragraphs: pack Name=value lookups
+ * onto one line, gather* membership lists, keep other short runs readable.
  */
 function mergeDenseShortDisplayParagraphs(paragraphs: string[]): string[] {
   const out: string[] = [];
@@ -535,14 +608,20 @@ function mergeDenseShortDisplayParagraphs(paragraphs: string[]): string[] {
     }
     if (j - i >= DENSE_SHORT_DISPLAY_MIN) {
       const bodies = paragraphs.slice(i, j).map(extractSoleDisplayBody);
-      const assignmentLike = bodies.filter((b) =>
-        /(?:^|[^\\])(?:=|\\approx\b|\\leq\b|\\geq\b|\\le\b|\\ge\b|>|<)/.test(b),
-      ).length;
-      // Assignment / ratio chains stay as separate centered $$…$$ (old style).
-      if (assignmentLike >= Math.ceil(bodies.length * 0.6)) {
-        for (let k = i; k < j; k++) out.push(paragraphs[k]!);
+      const packed = densifyShortDisplayBodies(bodies);
+      if (packed.length === 1) {
+        out.push(`$$\n${packed[0]!}\n$$`);
+      } else if (packed.length < bodies.length) {
+        for (const b of packed) out.push(`$$\n${b}\n$$`);
       } else {
-        out.push(`$$\n${formatGatherBlock(bodies)}\n$$`);
+        const assignmentLike = bodies.filter((b) =>
+          /(?:^|[^\\])(?:=|\\approx\b|\\leq\b|\\geq\b|\\le\b|\\ge\b|>|<)/.test(b),
+        ).length;
+        if (assignmentLike >= Math.ceil(bodies.length * 0.6)) {
+          for (let k = i; k < j; k++) out.push(paragraphs[k]!);
+        } else {
+          out.push(`$$\n${formatGatherBlock(packed)}\n$$`);
+        }
       }
       i = j;
     } else {
