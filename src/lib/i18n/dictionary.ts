@@ -507,7 +507,8 @@ export function translate(text: string, lang: Lang): string | null {
   if (!trimmed) return null;
   const hit =
     table[trimmed] ?? collapsedDictionary[lang][trimmed.replace(/\s+/g, " ")];
-  if (!hit) return null;
+  // Plain-object tables: ignore inherited keys such as "constructor".
+  if (typeof hit !== "string" || !hit) return null;
   const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(text) ?? [];
   return `${lead}${hit}${trail}`;
 }
