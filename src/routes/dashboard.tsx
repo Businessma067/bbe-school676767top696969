@@ -1,5 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, peekAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
@@ -21,7 +21,7 @@ import {
 } from "@/lib/user-progress";
 import { storeExamTrack, type ExamTrack } from "@/lib/exam-track";
 import { syncMyPaidEnrollments } from "@/lib/payments.functions";
-import { fetchCustomMocks, fetchWisoCustomMocks } from "@/lib/custom-mock-builder/client";
+import { fetchAllCustomMockSummaries } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
 import { WISO_CUSTOM_MOCK_SUBJECTS, wisoSubjectFromDb } from "@/config/wiso-custom-mock-builder";
@@ -29,7 +29,6 @@ import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
-import { FlashcardsModeArt, MatchingModeArt, TutorModeArt } from "@/components/study-modes/ModeArt";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { LockedFeaturePanel, LockedToolCard } from "@/components/CourseLockedView";
 import {
@@ -55,6 +54,17 @@ import {
   type AccessState,
 } from "@/lib/entitlements";
 import { WISO_DASHBOARD_STUDY } from "@/lib/wiso-study-ui";
+
+/** Mode art is decorative — keep it out of the initial dashboard JS parse. */
+const FlashcardsModeArt = lazy(() =>
+  import("@/components/study-modes/ModeArt").then((m) => ({ default: m.FlashcardsModeArt })),
+);
+const MatchingModeArt = lazy(() =>
+  import("@/components/study-modes/ModeArt").then((m) => ({ default: m.MatchingModeArt })),
+);
+const TutorModeArt = lazy(() =>
+  import("@/components/study-modes/ModeArt").then((m) => ({ default: m.TutorModeArt })),
+);
 
 /** Study-tool unlock flags from the shared entitlements cache (warm after header load). */
 function studyToolAccessFromState(
@@ -118,7 +128,16 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigateHome = useLocalizedNavigate();
-  const { tab: searchTab } = Route.useSearch();
+  // NEVER use Route.useSearch() here. /de|/uk/dashboard is rendered via the
+  // /$lang/$ splat (DashboardRoutePage), so file-route useSearch throws and
+  // the page never opens. Read ?tab= from the location instead (#398/#406).
+  const searchTab = useRouterState({
+    select: (s): DashboardTab | undefined => {
+      const raw = (s.location.search as { tab?: unknown }).tab;
+      if (raw == null || raw === "") return undefined;
+      return parseDashboardTab(raw);
+    },
+  });
   // Keep the last explicit tab while TanStack briefly clears search during
   // outbound navigations (Open flashcards / matching / tutor), so the main
   // Courses dashboard does not flash before the tool page mounts.
@@ -151,47 +170,37 @@ function DashboardPage() {
         return;
       }
       setAuth(next);
-      // Repair paid purchases that never got an enrollments row (e.g. WiSo)
-      // so Dashboard → My courses always lists what the user bought.
-      // Run in parallel with progress fetches — Study tools must not wait on sync.
-      const syncPromise = syncMyPaidEnrollments()
+
+      // Repair paid purchases in the background — never block the first paint.
+      void syncMyPaidEnrollments()
         .then(async (synced) => {
-          if (synced.granted.length > 0) {
-            const { clearAccessStateCache } = await import("@/lib/entitlements");
-            clearAccessStateCache();
-          }
-          return synced;
+          if (cancelled || synced.granted.length === 0) return;
+          const { clearAccessStateCache } = await import("@/lib/entitlements");
+          clearAccessStateCache();
+          const e = await fetchEnrollments();
+          if (!cancelled) setEnrollments(e);
         })
         .catch((err) => {
           console.error("dashboard: syncMyPaidEnrollments", err);
-          return null;
         });
 
-      const progressPromise = Promise.all([
-        fetchEnrollments(),
-        fetchTaskAttempts(),
-        fetchMockAttempts(),
-        fetchSessionAnswerStats(),
-        fetchCustomMocks(),
-        fetchWisoCustomMocks(),
-      ]);
+      // Each dataset paints as soon as it arrives; tabs only wait on what they need.
+      // Custom mocks use a summary-only select (no embedded question banks).
+      const settle = <T,>(p: Promise<T>, apply: (v: T) => void, fallback: T) =>
+        p
+          .then((v) => {
+            if (!cancelled) apply(v);
+          })
+          .catch((err) => {
+            console.error("dashboard: progress fetch", err);
+            if (!cancelled) apply(fallback);
+          });
 
-      const [synced, progress] = await Promise.all([syncPromise, progressPromise]);
-      if (cancelled) return;
-
-      const [e0, t, m, s, cBbe, cWiso] = progress;
-      // Sync may have just written enrollments — refetch so My courses is accurate.
-      const e = synced && synced.granted.length > 0 ? await fetchEnrollments() : e0;
-      if (cancelled) return;
-      setEnrollments(e);
-      setTasks(t);
-      setMocks(m);
-      setSessionAnswers(s);
-      setCustomMocks(
-        [...cBbe, ...cWiso].sort(
-          (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
-        ),
-      );
+      void settle(fetchEnrollments(), setEnrollments, []);
+      void settle(fetchTaskAttempts(), setTasks, []);
+      void settle(fetchMockAttempts(), setMocks, []);
+      void settle(fetchSessionAnswerStats(), setSessionAnswers, []);
+      void settle(fetchAllCustomMockSummaries(), setCustomMocks, []);
     })();
     return () => {
       cancelled = true;
@@ -207,15 +216,12 @@ function DashboardPage() {
   }
 
   const initial = auth.name.charAt(0).toUpperCase();
-  // Progress bundle is only required for Courses / Mock Exams / Custom Mocks.
-  // Study tools render immediately from the entitlements cache (already warm
-  // when arriving from the header "Study tools" link).
-  const progressLoading =
-    enrollments === null ||
-    tasks === null ||
-    mocks === null ||
-    sessionAnswers === null ||
-    customMocks === null;
+  // Per-tab gates: Courses must not wait on custom mocks; Study tools paints
+  // from the entitlements cache without any progress fetch.
+  const coursesLoading =
+    enrollments === null || tasks === null || mocks === null || sessionAnswers === null;
+  const mocksLoading = mocks === null;
+  const customLoading = customMocks === null || mocks === null;
 
   const isAdmin = auth.role === "admin";
   const cachedTools = studyToolAccessFromState(peekAccessState(), isAdmin);
@@ -334,25 +340,31 @@ function DashboardPage() {
           <div className="mt-8">
             {tab === "games" ? (
               <GamesTab hasWisoFull={hasWisoFull} hasBbePaid={hasBbePaid} />
-            ) : progressLoading ? (
-              <p className="text-sm text-muted-foreground">Loading your progress…</p>
             ) : tab === "courses" ? (
-              <CoursesTab
-                enrollments={enrollments!}
-                tasks={tasks!}
-                mocks={mocks!}
-                sessionAnswers={sessionAnswers!}
-                hasWisoFull={hasWisoFull}
-                hasBbePaid={hasBbePaid}
-              />
+              coursesLoading ? (
+                <p className="text-sm text-muted-foreground">Loading your progress…</p>
+              ) : (
+                <CoursesTab
+                  enrollments={enrollments!}
+                  tasks={tasks!}
+                  mocks={mocks!}
+                  sessionAnswers={sessionAnswers!}
+                  hasWisoFull={hasWisoFull}
+                  hasBbePaid={hasBbePaid}
+                />
+              )
             ) : tab === "mocks" ? (
               paidToolsLocked ? (
                 <LockedFeaturePanel feature="mock-exams" />
+              ) : mocksLoading ? (
+                <p className="text-sm text-muted-foreground">Loading your progress…</p>
               ) : (
                 <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
               )
             ) : paidToolsLocked ? (
               <LockedFeaturePanel feature="mock-builder" />
+            ) : customLoading ? (
+              <p className="text-sm text-muted-foreground">Loading your progress…</p>
             ) : (
               <CustomMocksTab
                 customMocks={customMocks!}
@@ -779,7 +791,11 @@ function StudyToolSection({
         {cards.map((card) => {
           const body = (
             <>
-              <div className="h-32 w-full overflow-hidden bg-secondary">{card.art}</div>
+              <div className="h-32 w-full overflow-hidden bg-secondary">
+                <Suspense fallback={<div className="h-full w-full bg-secondary" aria-hidden />}>
+                  {card.art}
+                </Suspense>
+              </div>
               <div className="p-5">
                 <h3 className="font-display text-lg font-bold">{card.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{card.blurb}</p>

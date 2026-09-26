@@ -11,7 +11,7 @@ import { getLocalizedPage } from "@/lib/i18n/localized-pages";
 import { isFullSiteProtectedPath } from "@/lib/site-access";
 
 export const Route = createFileRoute("/$lang/$")({
-  beforeLoad: ({ params }) => {
+  beforeLoad: ({ params, location }) => {
     if (!isLocalePrefix(params.lang)) throw notFound();
     const path = normalizeAppPath(`/${params._splat ?? ""}`);
 
@@ -21,6 +21,15 @@ export const Route = createFileRoute("/$lang/$")({
     // even if the path was mistakenly listed as localizable.
     if (isFullSiteProtectedPath(path) || isStudyContentPath(path)) {
       throw redirect({ to: path as never });
+    }
+
+    // Dashboard must use the file route (/dashboard), not the locale splat.
+    // Splat mounts break Route.useSearch and historically made the page hang.
+    if (path === "/dashboard") {
+      throw redirect({
+        to: "/dashboard",
+        search: location.search as never,
+      });
     }
 
     if (!isLocalizablePath(path) || path === "/") throw notFound();

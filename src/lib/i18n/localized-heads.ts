@@ -34,7 +34,6 @@ import { Route as LoginRoute } from "@/routes/login";
 import { Route as SignupRoute } from "@/routes/signup";
 import { Route as ResetPasswordRoute } from "@/routes/reset-password";
 import { Route as AccountRoute } from "@/routes/account";
-import { Route as DashboardRoute } from "@/routes/dashboard";
 import { Route as PaymentSuccessRoute } from "@/routes/payment.success";
 import { Route as PaymentFailedRoute } from "@/routes/payment.failed";
 
@@ -90,7 +89,6 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/signup": () => headFrom(SignupRoute),
   "/reset-password": () => headFrom(ResetPasswordRoute),
   "/account": () => headFrom(AccountRoute),
-  "/dashboard": () => headFrom(DashboardRoute),
   "/payment/success": () => headFrom(PaymentSuccessRoute),
   "/payment/failed": () => headFrom(PaymentFailedRoute),
 };

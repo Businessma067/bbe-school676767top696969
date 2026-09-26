@@ -45,7 +45,9 @@ export const LOCALIZABLE_PATHS = [
   "/signup",
   "/reset-password",
   "/account",
-  "/dashboard",
+  // /dashboard stays unprefixed — mounting via /$lang/$ makes Route.useSearch
+  // throw and the page never opens (see #398/#406). Language still applies
+  // via PageTranslator + session lang.
   "/payment/success",
   "/payment/failed",
 ] as const;
