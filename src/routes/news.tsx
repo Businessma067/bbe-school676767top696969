@@ -1,9 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Outlet, useRouterState } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { formatNewsDate, getAllNewsPosts } from "@/data/news/posts";
-import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { hreflangLinks, stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/news")({
@@ -29,7 +29,17 @@ export const Route = createFileRoute("/news")({
   component: NewsPage,
 });
 
+function isNewsPostPath(pathname: string): boolean {
+  const path = stripLocalePrefix(pathname);
+  return path.startsWith("/news/") && path !== "/news/";
+}
+
 export function NewsPage() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  if (isNewsPostPath(pathname)) {
+    return <Outlet />;
+  }
+
   const posts = getAllNewsPosts();
 
   return (
