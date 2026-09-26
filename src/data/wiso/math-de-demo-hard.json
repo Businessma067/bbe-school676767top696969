@@ -571,7 +571,7 @@
   },
   "MATH 2.11": {
     "title": "Identifikation des verdoppelten mittleren Terms mit Parameter",
-    "context": "Es seien $m,n$ von null verschiedene reelle Zahlen. Schreibe $(m+n)^{2}=m^{2}+\\square+n^{2}$ und bestimme $\\square$. Eine Probe verwendet $m=4$, $n=-3$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Es seien $m,n$ von null verschiedene reelle Zahlen. Schreibe $(m+n)^{2}=m^{2}+\\ldots+n^{2}$ und bestimme den fehlenden mittleren Term. Eine Probe verwendet $m=4$, $n=-3$.\n\nBewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Der fehlende mittlere Term ist $2mn$.",
       "Für $m=4$, $n=-3$ gilt $(m+n)^{2}=1$ und $m^{2}+2mn+n^{2}=1$.",
@@ -580,7 +580,7 @@
       "An der Probe gilt $2mn=-24$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$$(m+n)^{2}=m^{2}+2mn+n^{2}$$\n\nalso $\\square=2mn$.\n\nDas Binomquadrat erzwingt, dass der mittlere Koeffizient genau $2$ ist, nicht $1$.\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\n$$(m+n)^{2}=m^{2}+2mn+n^{2}$$\n\nalso ist der fehlende mittlere Term $2mn$.\n\nDas Binomquadrat erzwingt, dass der mittlere Koeffizient genau $2$ ist, nicht $1$.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$m+n=1,\\ 1^{2}=1$$\n\n$$16+2\\cdot4\\cdot(-3)+9=16-24+9=1$$\n\nSowohl die faktorisierte Form $(4-3)^{2}=1$ als auch die entwickelte Form $16-24+9=1$ stimmen überein.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$m^{2}+mn+n^{2}=(m+n)^{2}-mn$$\n\ngleich $(m+n)^{2}$ genau dann, wenn $mn=0$.\n\nUmstellen zeigt $m^{2}+mn+n^{2}=(m+n)^{2}-mn$, gleich dem Quadrat genau dann, wenn $mn=0$.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\n$$m^{2}+mn+n^{2}=16-12+9=13\\neq 4$$\n\nDie direkte Auswertung $16-12+9=13$ widerspricht dem behaupteten Wert $4$.\n\nDie Aussage ist falsch.",
