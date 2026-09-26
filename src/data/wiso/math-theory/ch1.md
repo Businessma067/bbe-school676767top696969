@@ -317,6 +317,21 @@ Falsch: „Alle Menschen, die atmen, sind gesund.
 
 Eine Behauptung mit einer freien Variablen, wie z. B. $x^2 - 1 = 0$ , ist eine **offene Aussage**. Stecken Sie verschiedene Werte von $x$ ein und Sie erhalten verschiedene geschlossene Mengen, einige wahr und einige falsch. Bis ein Wert gewählt ist, ist die offene Behauptung selbst nicht einfach wahr oder falsch. Die gleiche Idee erscheint in der Ökonomie als "Gewinn gleich Null, wenn der Preis den Durchschnittskosten entspricht": Es wird erst dann zu einer Ja / Nein-Sage, wenn die Zahlen festgelegt sind.
 
+### Logiksymbole
+
+Halten Sie diese Tabelle bereit, während Sie die Aufgaben des Kapitels bearbeiten. Jede der folgenden Verknüpfungen und Quantoren kommt in den Übungen vor.
+
+| Symbol | Bedeutung |
+| --- | --- |
+| $\neg$ | nicht (Negation): vertauscht wahr $\leftrightarrow$ falsch |
+| $\land$ | und (Konjunktion): nur wahr, wenn beide Teile wahr sind |
+| $\lor$ | oder (inklusive Disjunktion): wahr, wenn mindestens ein Teil wahr ist |
+| $\Rightarrow$ | impliziert / wenn … dann …: nur falsch, wenn der „wenn“-Teil wahr und der „dann“-Teil falsch ist |
+| $\Leftrightarrow$ | genau dann, wenn (Äquivalenz): wahr, wenn beide Seiten denselben Wahrheitswert haben |
+| $\equiv$ | logisch äquivalent zu (in jedem Fall derselbe Wahrheitswert) |
+| $\forall$ | für alle / für jedes |
+| $\exists$ | es gibt / es existiert mindestens ein |
+
 ### Die Wahrheitstabelle einer Implikation
 
 Wenn immer $P$ wahr ist, muss $Q$ auch wahr sein, schreiben
