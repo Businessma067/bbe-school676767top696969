@@ -43,9 +43,9 @@
     "statements": [
       "Ein Erwachsenenticket kostet \\$12.00.",
       "Ein Kinderticket kostet \\$7.00.",
-      "Die Samstagsmatinee erzielte \\$2{,}050.00 Einnahmen.",
-      "Die Samstagabend-Vorstellung erzielte \\$2{,}300.00 Einnahmen.",
-      "50 Erwachsenen- und 50 Kindertickets zusammen würden \\$1{,}000.00 Einnahmen ergeben."
+      "Die Samstagsmatinee erzielte \\$2,050.00 Einnahmen.",
+      "Die Samstagabend-Vorstellung erzielte \\$2,300.00 Einnahmen.",
+      "50 Erwachsenen- und 50 Kindertickets zusammen würden \\$1,000.00 Einnahmen ergeben."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nDie gemeinsame Lösung isoliert den Erwachsenenticketpreis:\n\n$$\na=12\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -77,13 +77,13 @@
   },
   "MATH 5.05": {
     "title": "Ersparnisse auf zwei verzinsliche Konten aufteilen",
-    "context": "Ein Investor teilt zu Jahresbeginn insgesamt \\$10{,}000 auf zwei Konten auf: Konto A zahlt 4% einfache Jahreszinsen und Konto B zahlt 7% einfache Jahreszinsen. Es gab das ganze Jahr keine Ein- oder Auszahlungen, und zusammen verdienten die beiden Konten \\$520.00 Zinsen.",
+    "context": "Ein Investor teilt zu Jahresbeginn insgesamt \\$10,000 auf zwei Konten auf: Konto A zahlt 4% einfache Jahreszinsen und Konto B zahlt 7% einfache Jahreszinsen. Es gab das ganze Jahr keine Ein- oder Auszahlungen, und zusammen verdienten die beiden Konten \\$520.00 Zinsen.",
     "statements": [
-      "Auf Konto A wurden \\$6{,}500 angelegt.",
-      "Auf Konto B wurden \\$4{,}500 angelegt.",
+      "Auf Konto A wurden \\$6,500 angelegt.",
+      "Auf Konto B wurden \\$4,500 angelegt.",
       "Konto A verdiente über das Jahr \\$260.00 Zinsen.",
       "Konto B verdiente über das Jahr \\$210.00 Zinsen.",
-      "Wäre das gesamte Kapital von \\$10{,}000 allein auf Konto B angelegt worden, hätten die Jahreszinsen \\$700.00 betragen."
+      "Wäre das gesamte Kapital von \\$10,000 allein auf Konto B angelegt worden, hätten die Jahreszinsen \\$700.00 betragen."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nDie gemeinsame Lösung isoliert den Betrag in Konto A:\n\n$$\nx=6000\n$$\n\nDie Behauptung lautet\n\n$$\nx=6500\n$$\n\nDiese beiden Werte stimmen nicht überein.\n\nDie Aussage ist falsch.",
@@ -92,17 +92,17 @@
       "**D.** → Falsch\n\nDer Überblick liefert $y=4000$ Konto B. Zinsen auf diesen Kapitalbetrag bei $7\\%$ ist\n\n$$\n0.07 \\times 4000 = 280\n$$\n\nDie Behauptung lautet\n\n$$210.00$$\n\n.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDas Ganze \\$10.000 würden in Konto B bei $7\\%$:\n\n$$\n0.07 \\times 10000 = 700\n$$\n\nDie Behauptung lautet\n\n$$700.00$$\n\n.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Ein Investor teilt \\$10{,}000 auf Konto A (4% einfache Jahreszinsen) und Konto B (7% einfache Jahreszinsen) auf. Zusammen verdienen die Konten \\$520.00 Zinsen.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Betrag auf Konto A und $y$ = Betrag auf Konto B.\n\n**1. Übersetzen: total split.**\n\n$$x + y = 10000 \\tag{1}$$\n\n**2. Übersetzen: Gesamtzins.**\n\n$$0.04x + 0.07y = 520 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\naus (1), $x = 10000 - y$. Setze in (2) ein:\n\n$$0.04(10000 - y) + 0.07y = 520$$\n\n$$400 - 0.04y + 0.07y = 520$$\n\n$$0.03y = 120$$\n\n$$\ny = \\frac{120}{0.03}\n$$\n\n$$\n= 4000\n$$\n\nDann\n\n$$\nx = 10000 - 4000\n$$\n\n$$\n= 6000\n$$\n\n**Antwort.** Konto A = \\$6,000 | Konto B = \\$4,000"
+    "solution_overview": "Ein Investor teilt \\$10,000 auf Konto A (4% einfache Jahreszinsen) und Konto B (7% einfache Jahreszinsen) auf. Zusammen verdienen die Konten \\$520.00 Zinsen.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Betrag auf Konto A und $y$ = Betrag auf Konto B.\n\n**1. Übersetzen: total split.**\n\n$$x + y = 10000 \\tag{1}$$\n\n**2. Übersetzen: Gesamtzins.**\n\n$$0.04x + 0.07y = 520 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\naus (1), $x = 10000 - y$. Setze in (2) ein:\n\n$$0.04(10000 - y) + 0.07y = 520$$\n\n$$400 - 0.04y + 0.07y = 520$$\n\n$$0.03y = 120$$\n\n$$\ny = \\frac{120}{0.03}\n$$\n\n$$\n= 4000\n$$\n\nDann\n\n$$\nx = 10000 - 4000\n$$\n\n$$\n= 6000\n$$\n\n**Antwort.** Konto A = \\$6,000 | Konto B = \\$4,000"
   },
   "MATH 5.06": {
     "title": "Zwei Stuhlqualitäten aus Preisdifferenz und Lieferwert bepreisen",
-    "context": "Premium-Bürostühle sind im aktuellen Katalog durchgängig genau \\$45 teurer pro Einheit als Standard-Stühle. Eine kürzliche Lieferung von 18 Standard- und 12 Premium-Stühlen wurde insgesamt mit \\$9{,}660.00 bewertet.",
+    "context": "Premium-Bürostühle sind im aktuellen Katalog durchgängig genau \\$45 teurer pro Einheit als Standard-Stühle. Eine kürzliche Lieferung von 18 Standard- und 12 Premium-Stühlen wurde insgesamt mit \\$9,660.00 bewertet.",
     "statements": [
       "Ein Standard-Stuhl kostet \\$304.00.",
       "Ein Premium-Stuhl kostet \\$354.00.",
-      "Die 12 Premium-Stühle in der Sendung sind insgesamt \\$4{,}188.00 wert.",
+      "Die 12 Premium-Stühle in der Sendung sind insgesamt \\$4,188.00 wert.",
       "Der Preisunterschied zwischen einem Premium- und einem Standard-Stuhl beträgt \\$45.00.",
-      "Eine kleinere Bestellung von 5 Standard- und 5 Premium-Stühlen würde mehr als \\$3{,}000.00 kosten."
+      "Eine kleinere Bestellung von 5 Standard- und 5 Premium-Stühlen würde mehr als \\$3,000.00 kosten."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nDie gemeinsame Lösung isoliert den Standardpreis:\n\n$$\nx=304\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -140,7 +140,7 @@
       "Die Division baute diese Woche 45 Deluxe-Öfen.",
       "Standard-Öfen entfielen diese Woche auf 300 Montagestunden.",
       "Deluxe-Öfen entfielen diese Woche auf 500 Montagestunden.",
-      "Die Gesamtmaterialkosten aller diese Woche gebauten Standard-Öfen betragen \\$9{,}000.00."
+      "Die Gesamtmaterialkosten aller diese Woche gebauten Standard-Öfen betragen \\$9,000.00."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nElimination bei zwei unabhängigen linearen Gleichungen liefert für jede Unbekannte einen eindeutigen Wert. Die Behauptung nennt die zweite berechnete Koordinate:\n\n$$\ny=\\frac{\\Delta_y}{\\Delta}\n$$\n\nSetze die Zahlen aus dem Aufgabentext ein:\n\n$$\ns = 130 - 55 = 75\n$$\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie gemeinsame Elimination hat das eindeutige Paar bereits festgelegt; dieser Buchstabe prüft nur die zusätzliche Rechnung der Behauptung.\n\nDie Aussage ist richtig.",
@@ -157,9 +157,9 @@
     "statements": [
       "Ein Sofa kostet \\$350.00.",
       "Ein Sessel kostet \\$200.00.",
-      "Der Nettoumsatz von Riverside betrug \\$9{,}300.00.",
-      "Der Bruttoumsatz von Hillcrest betrug \\$9{,}300.00.",
-      "Hätte Riverside in diesem Monat null Retouren erfasst, wären Brutto- und Nettoumsatz beide \\$9{,}760.00 gewesen."
+      "Der Nettoumsatz von Riverside betrug \\$9,300.00.",
+      "Der Bruttoumsatz von Hillcrest betrug \\$9,300.00.",
+      "Hätte Riverside in diesem Monat null Retouren erfasst, wären Brutto- und Nettoumsatz beide \\$9,760.00 gewesen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nDie gemeinsame Lösung isoliert den Sofapreis:\n\n$$\nx=350\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -214,9 +214,9 @@
     "statements": [
       "Ein Taschenbuchpreis von \\$12 ist mit der \\$5-Differenzregel der Preisstelle vereinbar.",
       "Hardcover-Ausgaben kosten mehr als \\$18.",
-      "Wären statt 400 Taschenbüchern 500 verkauft worden, wären die Einnahmen um \\$1{,}200 höher gewesen.",
+      "Wären statt 400 Taschenbüchern 500 verkauft worden, wären die Einnahmen um \\$1,200 höher gewesen.",
       "Ein Kunde, der 3 Hardcovers und 2 Taschenbücher kauft, zahlt weniger als \\$75.",
-      "Der ausgewiesene Gesamtbetrag von \\$8{,}540 hätte auch allein durch den Verkauf von 310 Hardcovers zustande kommen können."
+      "Der ausgewiesene Gesamtbetrag von \\$8,540 hätte auch allein durch den Verkauf von 310 Hardcovers zustande kommen können."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nDie gemeinsame Lösung isoliert den Taschenbuchpreis und Gleichung (1) ist die \\$5 gap rule:\n\n$$\nx=12\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -250,7 +250,7 @@
     "title": "Lakeview Inn – Buchungsbestätigungen",
     "context": "LAKEVIEW INN – Preisliste. Standardzimmer & Suiten, Frühstück & WLAN inklusive, alle Preise zuzüglich 8% Belegungssteuer.",
     "statements": [
-      "Nach Abzug der Belegungssteuer betrug der Buchungsumsatz von Wochenende 1 \\$2{,}240.00.",
+      "Nach Abzug der Belegungssteuer betrug der Buchungsumsatz von Wochenende 1 \\$2,240.00.",
       "Eine Suite kostet pro Nacht \\$200 mehr als ein Standardzimmer.",
       "6 Standardzimmer für eine Nacht zu buchen kostet weniger als 4 Suiten.",
       "Einschließlich der 8% Steuer kostet eine Suite-Nacht \\$226.80.",
@@ -272,8 +272,8 @@
       "Die Stückkosten von Komponente A betragen \\$12.",
       "Die Stückkosten von Komponente B betragen \\$18.",
       "Die März-Prognose unterstellt höhere Stückpreise als die tatsächlich in Januar und Februar geltenden.",
-      "Würden die Prognosemengen für März mit den tatsächlichen Stückkosten von Januar/Februar bewertet, ergäbe sich \\$4{,}700.",
-      "Der kombinierte tatsächlich erfasste Bestandswert für Januar und Februar beträgt \\$6{,}810."
+      "Würden die Prognosemengen für März mit den tatsächlichen Stückkosten von Januar/Februar bewertet, ergäbe sich \\$4,700.",
+      "Der kombinierte tatsächlich erfasste Bestandswert für Januar und Februar beträgt \\$6,810."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nEinheitskosten der Einheit A:\n\n$$\nx=12\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -362,7 +362,7 @@
   },
   "MATH 5.20": {
     "title": "Alpha & Beta Holdings – Quartalsübersicht",
-    "context": "Alpha und Beta sind Schwesterunternehmen, die Produkt P und Service Q zu identischen Marktpreisen verkaufen. Zusammen erzielten sie \\$27{,}200 Umsatz in Q1, und Beta verdiente genau \\$1{,}000 mehr als Alpha. Alpha verkaufte 150 Einheiten P und 80 Abonnements Q; Beta verkaufte 100 Einheiten P und 130 Abonnements Q. (Alphas Personalbestand wuchs um 8% im Jahresvergleich gegenüber Betas 6% – eine Personalangabe ohne Einfluss auf die Preise.)",
+    "context": "Alpha und Beta sind Schwesterunternehmen, die Produkt P und Service Q zu identischen Marktpreisen verkaufen. Zusammen erzielten sie \\$27,200 Umsatz in Q1, und Beta verdiente genau \\$1,000 mehr als Alpha. Alpha verkaufte 150 Einheiten P und 80 Abonnements Q; Beta verkaufte 100 Einheiten P und 130 Abonnements Q. (Alphas Personalbestand wuchs um 8% im Jahresvergleich gegenüber Betas 6% – eine Personalangabe ohne Einfluss auf die Preise.)",
     "statements": [
       "Produkt P kostet \\$50 und Service Q \\$70, identisch für beide Unternehmen.",
       "Beta erzielte in Q1 mehr Umsatz als Alpha.",
@@ -481,7 +481,7 @@
       "Artikel M kostet \\$21 pro Einheit.",
       "Artikel N kostet \\$30 pro Einheit.",
       "Die durchschnittlichen Stückkosten von Sendung 1 entsprechen denen von Sendung 2.",
-      "150 Einheiten von Artikel N allein würden \\$4{,}050 kosten.",
+      "150 Einheiten von Artikel N allein würden \\$4,050 kosten.",
       "Die niedrigeren Gesamtkosten von Sendung 1 gegenüber Sendung 2 erklären sich durch ihr geringeres Gesamtgewicht der Ware."
     ],
     "tactical_explanations": [
@@ -495,13 +495,13 @@
   },
   "MATH 5.27": {
     "title": "Green Horizons Landscaping – Auftragskalkulation",
-    "context": "Green Horizons kalkuliert Standard- und Premium-Pflanzung. Die Rechnung von Auftrag 1 erfasst die Menge in Pflanzbündeln (jedes Bündel = 2 Standard- + 5 Premium-Einheiten), während die Rechnung von Auftrag 2 Einzelstücke direkt auflistet. Auftrag 1: 7 Bündel – Gesamt \\$1{,}946. Auftrag 2: 13 Standard + 21 Premium – Gesamt \\$1{,}301. Neues Angebot: 8 Standard + 19 Premium – Angebotsbetrag: \\$1{,}068.",
+    "context": "Green Horizons kalkuliert Standard- und Premium-Pflanzung. Die Rechnung von Auftrag 1 erfasst die Menge in Pflanzbündeln (jedes Bündel = 2 Standard- + 5 Premium-Einheiten), während die Rechnung von Auftrag 2 Einzelstücke direkt auflistet. Auftrag 1: 7 Bündel – Gesamt \\$1,946. Auftrag 2: 13 Standard + 21 Premium – Gesamt \\$1,301. Neues Angebot: 8 Standard + 19 Premium – Angebotsbetrag: \\$1,068.",
     "statements": [
       "Standard-Pflanzung kostet \\$29 pro Einheit.",
       "Premium-Pflanzung kostet \\$50 pro Einheit.",
       "Auftrag 1 bestand nach Auflösung der Bündel tatsächlich aus 14 Standard- und 35 Premium-Einheiten.",
       "Allein der Premium-Anteil von Auftrag 1 kostete mehr als Auftrag 2 insgesamt.",
-      "Das neue Angebot von \\$1{,}068 ist mathematisch konsistent mit den bestätigten Tarifen."
+      "Das neue Angebot von \\$1,068 ist mathematisch konsistent mit den bestätigten Tarifen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die berechnete Unbekannte aus der gemeinsamen Lösung ab und vergleiche sie mit dem in der Behauptung genannten Wert.\n\nDie gemeinsame Lösung isoliert den Standardpreis je Einheit:\n\n$$\nx = 29\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -557,7 +557,7 @@
       "Produkt X kostet \\$29.",
       "Produkt Y kostet \\$28.",
       "Der ausgewiesene Umsatz der Ost-Filiale ist vollständig konsistent mit den abgeleiteten Preisen.",
-      "Würde der ausgewiesene Umsatz der Ost-Filiale an die abgeleiteten Preise angepasst, müsste er \\$3{,}085 lauten.",
+      "Würde der ausgewiesene Umsatz der Ost-Filiale an die abgeleiteten Preise angepasst, müsste er \\$3,085 lauten.",
       "Der ausgewiesene Umsatz von Nord übersteigt die ausgewiesenen Umsätze von Süd und Ost zusammen."
     ],
     "tactical_explanations": [
@@ -609,7 +609,7 @@
   },
   "MATH 5.33": {
     "title": "Café Lumière – zwei Kassenbons",
-    "context": "Café Lumière verkauft Spezialgetränke und Gebäck zu Festpreisen. Zwei Kassenbons listen außerdem eine Gesamtkalorienzahl nur zur Kundeninformation. Bon 1: 7 Spezialgetränke + 9 Gebäck – Summe: \\$78.65 – (ausgewiesen) Gesamtkalorien: 6{,}100. Bon 2: 11 Spezialgetränke + 4 Gebäck – Summe: \\$85.05 – (ausgewiesen) Gesamtkalorien: 5{,}400.",
+    "context": "Café Lumière verkauft Spezialgetränke und Gebäck zu Festpreisen. Zwei Kassenbons listen außerdem eine Gesamtkalorienzahl nur zur Kundeninformation. Bon 1: 7 Spezialgetränke + 9 Gebäck – Summe: \\$78.65 – (ausgewiesen) Gesamtkalorien: 6,100. Bon 2: 11 Spezialgetränke + 4 Gebäck – Summe: \\$85.05 – (ausgewiesen) Gesamtkalorien: 5,400.",
     "statements": [
       "Der dreifache Preis eines Spezialgetränks würde die Zwanzig-Dollar-Marke überschreiten.",
       "Vier Gebäckstücke kosten mehr als ein Spezialgetränk und ein Gebäckstück zusammen – und zwar deutlich mehr.",
@@ -651,9 +651,9 @@
     "statements": [
       "Die Margen der Stoffrollen überschreiten die \\$27-Linie, aber nicht genug, um auch \\$27.50 zu überschreiten.",
       "Die verdoppelte Stückmarge der Garnspule würde gerade die Vierzig-Dollar-Marke überschreiten.",
-      "Verschiebt man den Produktmix auf 200 Stoffrollen und 150 Garnspulen, überschreitet der resultierende Gewinn \\$8{,}400 – aber nur knapp.",
+      "Verschiebt man den Produktmix auf 200 Stoffrollen und 150 Garnspulen, überschreitet der resultierende Gewinn \\$8,400 – aber nur knapp.",
       "Die Differenz zwischen dem Gesamtgewinn von Q2 und Q1 in Dollar wäre selbst dann noch eine dreistellige Zahl, wenn man die kleinste Hunderterstelle wegließe.",
-      "Fünfhundert Stoffrollen und keine einzige Garnspule würden den Gesamtgewinn auf verdächtig runde \\$13{,}675 ohne Cent bringen."
+      "Fünfhundert Stoffrollen und keine einzige Garnspule würden den Gesamtgewinn auf verdächtig runde \\$13,675 ohne Cent bringen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDie gemeinsame Eliminierung hat bereits die Fabric Roll-Marge zurückgewonnen. Gib diesen Wert in einer eigenen Darstellung an, bevor du die Behauptung prüfst:\n\n$$\nx = 27.35\n$$\n\n$$27 < 27.35 < 27.50$$\n\nIt clears \\$27, jedoch nicht \\$27.50.\n\nDie Aussage ist richtig.",
@@ -704,13 +704,13 @@
   },
   "MATH 5.38": {
     "title": "Vantage Apparel – ein wasserbeschädigter Produktionsbericht",
-    "context": "Vantage Apparel erzielt einen festen Gewinn pro Einheit auf T-Shirts und Hoodies. Saison 1: 430 T-Shirts und 260 Hoodies, Nettogewinn \\$9{,}793.50. Saison 2: 275 T-Shirts und 410 Hoodies, Nettogewinn \\$10{,}747.75. Die Unterlagen von Saison 3 sind nur teilweise erhalten: 310 Hoodies und ein Gesamtgewinn von \\$8{,}558.25 sind lesbar, aber Wasserschaden hat die T-Shirt-Stückzahl vollständig gelöscht.",
+    "context": "Vantage Apparel erzielt einen festen Gewinn pro Einheit auf T-Shirts und Hoodies. Saison 1: 430 T-Shirts und 260 Hoodies, Nettogewinn \\$9,793.50. Saison 2: 275 T-Shirts und 410 Hoodies, Nettogewinn \\$10,747.75. Die Unterlagen von Saison 3 sind nur teilweise erhalten: 310 Hoodies und ein Gesamtgewinn von \\$8,558.25 sind lesbar, aber Wasserschaden hat die T-Shirt-Stückzahl vollständig gelöscht.",
     "statements": [
       "Die T-Shirt-Margen liegen näher bei elf Dollar als bei zwölf.",
       "Die Hoodie-Margen liegen dagegen näher bei achtzehn Dollar als bei neunzehn.",
       "Was der Wasserschaden auch gelöscht hat: Die fehlende T-Shirt-Stückzahl von Saison 3 rekonstruiert sich zu einer durch zehn teilbaren Zahl.",
       "Saison 2 verdiente mehr als Saison 1 um einen Betrag, der gerade nicht ausreichen würde, um genau 52 Hoodie-Margen zu decken.",
-      "Schreibt man die Historie von Saison 3 so um, dass 260 T-Shirts statt der rekonstruierten Stückzahl produziert wurden, überschreitet der Gewinn \\$8{,}700."
+      "Schreibt man die Historie von Saison 3 so um, dass 260 T-Shirts statt der rekonstruierten Stückzahl produziert wurden, überschreitet der Gewinn \\$8,700."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDie gemeinsame Eliminierung hat bereits die T-Shirt-Marge zurückgewonnen. Gib diesen Wert in einer eigenen Darstellung an, bevor du die Behauptung prüfst:\n\n$$\nx = 11.65\n$$\n\n$$\n11.65 - 11 = 0.65\n$$\n\n$$\n12 - 11.65 = 0.35\n$$\n\n$$0.35 < 0.65$$\n\nDie Marge liegt näher bei zwölf Dollar als bei elf.\n\nDie Aussage ist falsch.",
@@ -719,7 +719,7 @@
       "**D.** → Richtig\n\nDie gemeinsame Lösung ist fertig; es bleibt nur der Vergleich dieser Behauptung.\n\nStaffel 2 minus Staffel 1, gegen 52 Hoodies bei der erholten $y = 18.40$:\n\n$$\n10747.75 - 9793.50 = 954.25\n$$\n\n$$\n52 \\times 18.40 = 956.80\n$$\n\n$$954.25 < 956.80$$\n\nDie Gewinnlücke deckt nur 52 Hoodies nicht ab.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nLies das berechnete Paar ab und führe dann die von der Behauptung verlangte Rechnung aus.\n\nErsetzen Sie die rekonstruierten $T = 245$ mit 260 T-Shirts, mit 310 Hoodies:\n\n$$\n260 \\times 11.65 = 3029\n$$\n\n$$\n310 \\times 18.40 = 5704\n$$\n\n$$\n3029 + 5704 = 8733\n$$\n\n$$8733 > 8700.$$\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Vantage Apparel erzielt einen festen Gewinn pro Einheit auf T-Shirts und Hoodies. Saison 1: 430 T-Shirts und 260 Hoodies, \\$9{,}793.50. Saison 2: 275 T-Shirts und 410 Hoodies, \\$10{,}747.75. In Saison 3 sind 310 Hoodies und \\$8{,}558.25 lesbar; die T-Shirt-Stückzahl ist durch Wasserschaden gelöscht.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Gewinn pro T-Shirt, $y$ = Gewinn pro Hoodie.\n\n**1. Übersetzen: Season 1.**\n\n$$430x + 260y = 9793.50 \\tag{1}$$\n\n**2. Übersetzen: Season 2.**\n\n$$275x + 410y = 10747.75 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nMultipliziere (1) by 410 und (2) by 260:\n\n$$\n176300x + 106600y = 4015335, \\qquad 71500x + 106600y = 2794415\n$$\n\nSubtrahiere:\n\n$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$\n\n$$\n104800x = 1220920 \\Rightarrow x = \frac{1220920}{104800} = 11.65\n$$\n\nSetze in (1) ein:\n\n$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$\n\n$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$\n\nSeason 3's missing T-Shirt count $T$ dann zufrieden stellend\n\n$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$\n\n$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$\n\n**Antwort.** T-Shirt = \\$11.65 | Hoodie = \\$18.40 | Season 3 T-Shirts = 245"
+    "solution_overview": "Vantage Apparel erzielt einen festen Gewinn pro Einheit auf T-Shirts und Hoodies. Saison 1: 430 T-Shirts und 260 Hoodies, \\$9,793.50. Saison 2: 275 T-Shirts und 410 Hoodies, \\$10,747.75. In Saison 3 sind 310 Hoodies und \\$8,558.25 lesbar; die T-Shirt-Stückzahl ist durch Wasserschaden gelöscht.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Gewinn pro T-Shirt, $y$ = Gewinn pro Hoodie.\n\n**1. Übersetzen: Season 1.**\n\n$$430x + 260y = 9793.50 \\tag{1}$$\n\n**2. Übersetzen: Season 2.**\n\n$$275x + 410y = 10747.75 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nMultipliziere (1) by 410 und (2) by 260:\n\n$$\n176300x + 106600y = 4015335, \\qquad 71500x + 106600y = 2794415\n$$\n\nSubtrahiere:\n\n$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$\n\n$$\n104800x = 1220920 \\Rightarrow x = \frac{1220920}{104800} = 11.65\n$$\n\nSetze in (1) ein:\n\n$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$\n\n$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$\n\nSeason 3's missing T-Shirt count $T$ dann zufrieden stellend\n\n$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$\n\n$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$\n\n**Antwort.** T-Shirt = \\$11.65 | Hoodie = \\$18.40 | Season 3 T-Shirts = 245"
   },
   "MATH 5.39": {
     "title": "Continental Freight Co. – Abrechnungsaudit über Mengeneinheiten",
@@ -761,7 +761,7 @@
   },
   "MATH 5.41": {
     "title": "Sterling Family Trust – Rekonstruktion der Zwei-Fonds-Rendite",
-    "context": "Das Sterling Family Trust ist auf zwei Fonds aufgeteilt. Fonds A zahlt feste 5,25% einfache Jahresrendite; Fonds B zahlt 3,75%. Laut Notizen des Verwalters liegt der Bestand von Fonds B um \\$4{,}000 über dem Doppelten des Bestands von Fonds A, und die kombinierte Jahresrendite beider Fonds beträgt \\$762.00.",
+    "context": "Das Sterling Family Trust ist auf zwei Fonds aufgeteilt. Fonds A zahlt feste 5,25% einfache Jahresrendite; Fonds B zahlt 3,75%. Laut Notizen des Verwalters liegt der Bestand von Fonds B um \\$4,000 über dem Doppelten des Bestands von Fonds A, und die kombinierte Jahresrendite beider Fonds beträgt \\$762.00.",
     "statements": [
       "Die Dollarzinsen von Fonds B betragen mehr als das Dreifache der Dollarzinsen von Fonds A.",
       "Würde der Zinssatz von Fonds A um 1,5 Prozentpunkte erhöht, während der von Fonds B gleich bliebe, stiege die kombinierte Jahresrendite über \\$800.00.",
@@ -776,7 +776,7 @@
       "**D.** → Falsch\n\nDie gemeinsame Lösung ist fertig; es bleibt nur der Vergleich dieser Behauptung.\n\nEine gleichmäßige Aufspaltung der rekonstruierten Summe $18400$ puts \\$9.200 in jedem Fonds zu den ursprünglichen Preisen.\n\n$$\n9200 \\times 0.0525 = 483\n$$\n\n$$\n9200 \\times 0.0375 = 345\n$$\n\n$$\n483 + 345 = 828\n$$\n\n$$\n|828 - 762| = 66\n$$\n\nDie gleichmäßige Rendite ist \\$66 aus dem tatsächlichen \\$762, nicht innerhalb \\$5.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDer Überblick lieferte die beiden Salden $4800$ (kleiner) und $13600$. Die relative Lücke gegenüber der kleineren Balance ist\n\n$$\n\\frac{13600 - 4800}{4800} = \frac{8800}{4800} = 1.8\\overline{3}\n$$\n\nüber $183.3\\%$, die über $180\\%$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Das Sterling Family Trust ist auf zwei Fonds aufgeteilt. Fonds A zahlt 5,25% einfache Jahresrendite; Fonds B zahlt 3,75%. Der Bestand von Fonds B liegt um \\$4{,}000 über dem Doppelten von Fonds A, und die kombinierte Jahresrendite beträgt \\$762.00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Bestand in Fonds A, $y$ = Bestand in Fonds B.\n\n**1. Übersetzen: Saldo des Fonds B, aus der angegebenen Beziehung.** In Symbolen:\n\n$$y = 2x + 4000 \\tag{1}$$\n\n**2. Übersetzen: kombinierte Jahresrendite.** In Symbolen:\n\n$$0.0525x + 0.0375y = 762 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Setze $y = 2x + 4000$ in die Rücklaufgleichung:\n\n$$\n0.0525x + 0.0375(2x + 4000) = 762\n$$\n\n$$\n0.0525x + 0.075x + 150 = 762 \\Rightarrow 0.1275x + 150 = 762\n$$\n\n$$\n0.1275x = 612 \\Rightarrow x = \frac{612}{0.1275} = 4800\n$$\n\n**2.** Rückeinsetzen:\n\n$$\ny = 2(4800) + 4000\n$$\n\n$$\n= 9600 + 4000\n$$\n\n$$\n= 13600\n$$\n\n**Antwort.** Fonds A hält \\$4,800 und Fonds B hält \\$13,600."
+    "solution_overview": "Das Sterling Family Trust ist auf zwei Fonds aufgeteilt. Fonds A zahlt 5,25% einfache Jahresrendite; Fonds B zahlt 3,75%. Der Bestand von Fonds B liegt um \\$4,000 über dem Doppelten von Fonds A, und die kombinierte Jahresrendite beträgt \\$762.00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Bestand in Fonds A, $y$ = Bestand in Fonds B.\n\n**1. Übersetzen: Saldo des Fonds B, aus der angegebenen Beziehung.** In Symbolen:\n\n$$y = 2x + 4000 \\tag{1}$$\n\n**2. Übersetzen: kombinierte Jahresrendite.** In Symbolen:\n\n$$0.0525x + 0.0375y = 762 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Setze $y = 2x + 4000$ in die Rücklaufgleichung:\n\n$$\n0.0525x + 0.0375(2x + 4000) = 762\n$$\n\n$$\n0.0525x + 0.075x + 150 = 762 \\Rightarrow 0.1275x + 150 = 762\n$$\n\n$$\n0.1275x = 612 \\Rightarrow x = \frac{612}{0.1275} = 4800\n$$\n\n**2.** Rückeinsetzen:\n\n$$\ny = 2(4800) + 4000\n$$\n\n$$\n= 9600 + 4000\n$$\n\n$$\n= 13600\n$$\n\n**Antwort.** Fonds A hält \\$4,800 und Fonds B hält \\$13,600."
   },
   "MATH 5.42": {
     "title": "Solventis Labs – Rekonstruktion mischungsverhältnisbasierter Chargen",
@@ -808,13 +808,13 @@
       "Das Verhältnis der Überstunden von B zu denen von A ist größer als das Verhältnis ihrer Bruttolöhne."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAus der Übersicht folgt ein Überstundenlohn von $\\$26$ pro Stunde. Das tatsächliche Überstundenentgelt von Mitarbeiterin A für $2{,}5$ Stunden und dann $10\\%$ davon:\n\n$$\n2{,}5 \\times 26 = 65\n$$\n\n$$\n0{,}10 \\times 65 = 6{,}50\n$$\n\nWegen $6{,}50 > 6$ übersteigt der Bonus $\\$6$.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nAus der Übersicht folgt ein Überstundenlohn von $\\$26$ pro Stunde. Mitarbeiter B leistete $7$ Überstunden bei $\\$882$ Brutto.\n\n$$\n7 \\times 26 = 182\n$$\n\n$$\\frac{182}{882}$$\n\n$$\\approx 0{,}2063$$\n\nEtwa $20{,}6\\%$ sind nicht mehr als $40\\%$.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nDas gemeinsame Ist-Brutto ist die Summe der beiden angegebenen Beträge. Der Vergleichsfall sind beide Mitarbeiter mit $45$ Stunden zum rekonstruierten Basissatz $\\$17{,}50$ ohne Prämie.\n\n$$\n765 + 882 = 1647\n$$\n\n$$\n2 \\times 45 \\times 17{,}50 = 1575\n$$\n\nWegen $1647 > 1575$ ist das tatsächliche gemeinsame Brutto größer.\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\nAus der Übersicht folgt ein Überstundenlohn von $\\$26$ pro Stunde. Das tatsächliche Überstundenentgelt von Mitarbeiterin A für $2,5$ Stunden und dann $10\\%$ davon:\n\n$$\n2{,}5 \\times 26 = 65\n$$\n\n$$\n0{,}10 \\times 65 = 6{,}50\n$$\n\nWegen $6,50 > 6$ übersteigt der Bonus $\\$6$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nAus der Übersicht folgt ein Überstundenlohn von $\\$26$ pro Stunde. Mitarbeiter B leistete $7$ Überstunden bei $\\$882$ Brutto.\n\n$$\n7 \\times 26 = 182\n$$\n\n$$\\frac{182}{882}$$\n\n$$\\approx 0{,}2063$$\n\nEtwa $20,6\\%$ sind nicht mehr als $40\\%$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDas gemeinsame Ist-Brutto ist die Summe der beiden angegebenen Beträge. Der Vergleichsfall sind beide Mitarbeiter mit $45$ Stunden zum rekonstruierten Basissatz $\\$17,50$ ohne Prämie.\n\n$$\n765 + 882 = 1647\n$$\n\n$$\n2 \\times 45 \\times 17{,}50 = 1575\n$$\n\nWegen $1647 > 1575$ ist das tatsächliche gemeinsame Brutto größer.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nAus der Übersicht folgt der Basissatz $x = 17{,}50$. Eine Erhöhung um $15\\%$ ohne Prämie ergibt den neuen Satz $17{,}50 \\times 1{,}15 = 20{,}125$ auf allen $42{,}5$ Stunden.\n\n$$\n42{,}5 \\times 20{,}125 = 855{,}3125\n$$\n\nVerglichen mit dem tatsächlichen $\\$765$ von A steigt das neue Brutto, es sinkt nicht.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nLies das rekonstruierte Paar und rechne, was die Behauptung verlangt.\n\nMitarbeiter B hatte $7$ Überstunden und $\\$882$ Brutto; Mitarbeiterin A hatte $2{,}5$ Überstunden und $\\$765$ Brutto.\n\n$$\n\\frac{7}{2{,}5} = 2{,}8\n$$\n\n$$\\frac{882}{765}$$\n\n$$\\approx 1{,}153$$\n\nWegen $2{,}8 > 1{,}153$ ist das Überstundenverhältnis größer als das Bruttoverhältnis.\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nLies das rekonstruierte Paar und rechne, was die Behauptung verlangt.\n\nMitarbeiter B hatte $7$ Überstunden und $\\$882$ Brutto; Mitarbeiterin A hatte $2,5$ Überstunden und $\\$765$ Brutto.\n\n$$\n\\frac{7}{2{,}5} = 2{,}8\n$$\n\n$$\\frac{882}{765}$$\n\n$$\\approx 1{,}153$$\n\nWegen $2,8 > 1,153$ ist das Überstundenverhältnis größer als das Bruttoverhältnis.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Union Mills zahlt einen festen Basisstundenlohn plus eine feste Überstundenprämie zusätzlich zum Basislohn für Stunden über $40$ pro Woche. Mitarbeiterin A: $40$ reguläre + $2{,}5$ Überstunden, Brutto $\\$765{,}00$. Mitarbeiter B: $40$ reguläre + $7$ Überstunden, Brutto $\\$882{,}00$.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs seien $x$ der Basisstundenlohn und $y$ die Überstundenprämie pro Stunde (zusätzlich zum Basislohn, je Überstunde). Jede Überstunde wird mit $x+y$ bezahlt.\n\n**1. Übersetzung: Mitarbeiterin A.**\n\n$$42{,}5x + 2{,}5y = 765 \\tag{1}$$\n\n**2. Übersetzung: Mitarbeiter B.**\n\n$$47x + 7y = 882 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Multipliziere die Gleichung von A mit $2{,}8$, damit der $y$-Koeffizient zu Bs $7y$ passt:\n\n$$\n2{,}8(42{,}5x + 2{,}5y) = 2{,}8(765) \\Rightarrow 119x + 7y = 2142\n$$\n\n**2.** Subtrahiere die Gleichung von B:\n\n$$\n(119x + 7y) - (47x + 7y) = 2142 - 882\n$$\n\n$$\n72x = 1260 \\Rightarrow x = \\frac{1260}{72} = 17{,}50\n$$\n\n**3.** Setze $x = 17{,}50$ in die Gleichung von A ein:\n\n$$\n42{,}5(17{,}50) + 2{,}5y = 765 \\Rightarrow 743{,}75 + 2{,}5y = 765\n$$\n\n$$\n2{,}5y = 21{,}25 \\Rightarrow y = 8{,}50\n$$\n\n**Ergebnis.** Der Basislohn beträgt $\\$17{,}50$/Stunde und die Überstundenprämie $\\$8{,}50$/Stunde, also werden Überstunden mit $\\$26{,}00$/Stunde bezahlt."
+    "solution_overview": "Union Mills zahlt einen festen Basisstundenlohn plus eine feste Überstundenprämie zusätzlich zum Basislohn für Stunden über $40$ pro Woche. Mitarbeiterin A: $40$ reguläre + $2{,}5$ Überstunden, Brutto $\\$765,00$. Mitarbeiter B: $40$ reguläre + $7$ Überstunden, Brutto $\\$882,00$.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs seien $x$ der Basisstundenlohn und $y$ die Überstundenprämie pro Stunde (zusätzlich zum Basislohn, je Überstunde). Jede Überstunde wird mit $x+y$ bezahlt.\n\n**1. Übersetzung: Mitarbeiterin A.**\n\n$$42{,}5x + 2{,}5y = 765 \\tag{1}$$\n\n**2. Übersetzung: Mitarbeiter B.**\n\n$$47x + 7y = 882 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Multipliziere die Gleichung von A mit $2,8$, damit der $y$-Koeffizient zu Bs $7y$ passt:\n\n$$\n2{,}8(42{,}5x + 2{,}5y) = 2{,}8(765) \\Rightarrow 119x + 7y = 2142\n$$\n\n**2.** Subtrahiere die Gleichung von B:\n\n$$\n(119x + 7y) - (47x + 7y) = 2142 - 882\n$$\n\n$$\n72x = 1260 \\Rightarrow x = \\frac{1260}{72} = 17{,}50\n$$\n\n**3.** Setze $x = 17,50$ in die Gleichung von A ein:\n\n$$\n42{,}5(17{,}50) + 2{,}5y = 765 \\Rightarrow 743{,}75 + 2{,}5y = 765\n$$\n\n$$\n2{,}5y = 21{,}25 \\Rightarrow y = 8{,}50\n$$\n\n**Ergebnis.** Der Basislohn beträgt $\\$17,50$/Stunde und die Überstundenprämie $\\$8,50$/Stunde, also werden Überstunden mit $\\$26,00$/Stunde bezahlt."
   },
   "MATH 5.44": {
     "title": "Greenfield Landschaftsbau – Redundantes Projekt",
@@ -833,7 +833,7 @@
       "**D.** → Falsch\n\nProjekt 1 hat $24$ m Draht. Ein Anstieg um \\$2 pro Meter, bezogen auf die angegebenen \\$750:\n\n$$\n24 \\times 2 = 48\n$$\n\n$$\n\\frac{48}{750} = 0{,}064\n$$\n\n$6{,}4\\%$ sind nicht mehr als $15\\%$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nProjekt 3: $10 + 40 = 50$ m für \\$710. Projekt 1: $18 + 24 = 42$ m für \\$750.\n\n$$\n\\frac{710}{50} = 14{,}20\n$$\n\n$$\\frac{750}{42}\\approx 17{,}86$$\n\nWegen $14{,}20 < 17{,}86$ sind die Kosten pro Meter bei Projekt 3 niedriger, nicht höher.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Greenfield installiert Zedernholzzaun und verzinkten Drahtzaun zu festen Preisen pro Meter. Eines von drei Projekten ist eine skalierte Wiederholung und liefert nichts Neues. Projekt 1: $18$ m Holz, $24$ m Draht, \\$750{,}00. Projekt 2: $27$ m Holz, $36$ m Draht, \\$1{,}125{,}00. Projekt 3: $10$ m Holz, $40$ m Draht, \\$710{,}00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs seien $x$ der Preis pro Meter Zedernholz und $y$ der Preis pro Meter verzinkter Draht.\n\n**1. Übersetzung: Projekt 1.**\n\n$$18x + 24y = 750 \\tag{1}$$\n\n**2. Übersetzung: Projekt 3, unabhängig von Projekt 1.**\n\n$$10x + 40y = 710 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Prüfe Projekt 2 gegen Projekt 1:\n\n$$\n(27, 36) = 1{,}5(18, 24), \\qquad 1{,}5(750) = 1125\n$$\n\nDas passt genau, also ist Projekt 2 redundant.\n\n**2.** Teile Projekt 1 durch $6$ und Projekt 3 durch $10$:\n\n$$\n3x + 4y = 125, \\qquad x + 4y = 71\n$$\n\n**3.** Subtrahiere:\n\n$$\n(3x + 4y) - (x + 4y) = 125 - 71 \\Rightarrow 2x = 54 \\Rightarrow x = 27\n$$\n\n**4.** Setze $x = 27$ in $x + 4y = 71$ ein:\n\n$$\n27 + 4y = 71 \\Rightarrow 4y = 44 \\Rightarrow y = 11\n$$\n\n**Ergebnis.** Zedernholz kostet \\$27/m und verzinkter Draht \\$11/m."
+    "solution_overview": "Greenfield installiert Zedernholzzaun und verzinkten Drahtzaun zu festen Preisen pro Meter. Eines von drei Projekten ist eine skalierte Wiederholung und liefert nichts Neues. Projekt 1: $18$ m Holz, $24$ m Draht, \\$750,00. Projekt 2: $27$ m Holz, $36$ m Draht, \\$1,125,00. Projekt 3: $10$ m Holz, $40$ m Draht, \\$710,00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs seien $x$ der Preis pro Meter Zedernholz und $y$ der Preis pro Meter verzinkter Draht.\n\n**1. Übersetzung: Projekt 1.**\n\n$$18x + 24y = 750 \\tag{1}$$\n\n**2. Übersetzung: Projekt 3, unabhängig von Projekt 1.**\n\n$$10x + 40y = 710 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Prüfe Projekt 2 gegen Projekt 1:\n\n$$\n(27, 36) = 1{,}5(18, 24), \\qquad 1{,}5(750) = 1125\n$$\n\nDas passt genau, also ist Projekt 2 redundant.\n\n**2.** Teile Projekt 1 durch $6$ und Projekt 3 durch $10$:\n\n$$\n3x + 4y = 125, \\qquad x + 4y = 71\n$$\n\n**3.** Subtrahiere:\n\n$$\n(3x + 4y) - (x + 4y) = 125 - 71 \\Rightarrow 2x = 54 \\Rightarrow x = 27\n$$\n\n**4.** Setze $x = 27$ in $x + 4y = 71$ ein:\n\n$$\n27 + 4y = 71 \\Rightarrow 4y = 44 \\Rightarrow y = 11\n$$\n\n**Ergebnis.** Zedernholz kostet \\$27/m und verzinkter Draht \\$11/m."
   },
   "MATH 5.45": {
     "title": "Meridian Rail – Rekonstruktion zweier Streckengeschwindigkeiten",
@@ -858,10 +858,10 @@
     "title": "Meridian Textiles – Rekonstruktion des Dreisaison-Gewinns",
     "context": "Meridian Textiles erfasst einen festen Gewinn pro Tonne für Weizen und Gerste. Die Unterlagen von Saison 3 waren wasserbeschädigt: Gerste-Tonnage und Gesamtgewinn sind erhalten, die Weizen-Tonnage ist unleserlich.",
     "statements": [
-      "Wäre der Weizen-Output von Saison 1 stattdessen 260 Tonnen gewesen, hätte der Gesamtgewinn \\$44{,}000 überstiegen.",
+      "Wäre der Weizen-Output von Saison 1 stattdessen 260 Tonnen gewesen, hätte der Gesamtgewinn \\$44,000 überstiegen.",
       "Der Gewinn-pro-Tonne-Vorsprung von Gerste gegenüber Weizen beträgt mehr als 25% des Weizen-Gewinns pro Tonne.",
       "Die Gesamttonnage von Saison 3 ist kleiner als die von Saison 2.",
-      "Hätte Saison 3 tatsächlich 220 Tonnen Weizen statt der rekonstruierten 180 Tonnen produziert, wäre der erfasste Gesamtgewinn von \\$53{,}100 um mehr als \\$3{,}500 zu niedrig ausgewiesen gewesen.",
+      "Hätte Saison 3 tatsächlich 220 Tonnen Weizen statt der rekonstruierten 180 Tonnen produziert, wäre der erfasste Gesamtgewinn von \\$53,100 um mehr als \\$3,500 zu niedrig ausgewiesen gewesen.",
       "Der Gewinn pro Tonne Gesamtoutput von Saison 2 übersteigt den von Saison 1."
     ],
     "tactical_explanations": [
@@ -896,7 +896,7 @@
     "title": "Crestline Retail Group – Rekonstruktion eines Dezimalaufschlags",
     "context": "Crestline schlägt auf Produkt A 32% und auf Produkt B 18% auf den Großhandelseinkaufspreis auf. Eine von drei Bestellungen ist eine exakt skalierte Wiederholung einer anderen.",
     "statements": [
-      "Würden die beiden Aufschlagprozentsätze vertauscht, sänke die Einzelhandelsgesamtsumme von Bestellung 3 gegenüber den tatsächlichen \\$1{,}350.60.",
+      "Würden die beiden Aufschlagprozentsätze vertauscht, sänke die Einzelhandelsgesamtsumme von Bestellung 3 gegenüber den tatsächlichen \\$1,350.60.",
       "Der Dollar-Aufschlag auf Produkt B beträgt mehr als 80% des Dollar-Aufschlags auf Produkt A.",
       "Der gesamte Einzelhandelsaufschlag von Bestellung 1 übersteigt \\$150.00.",
       "Steigt die Menge von Produkt B in Bestellung 3 von 12 auf 15 Einheiten, steigt die Einzelhandelssumme um mehr als \\$280.00.",
@@ -951,9 +951,9 @@
   },
   "MATH 5.51": {
     "title": "Halcyon Ventures – Gebührenstruktur aus Kundendifferenzen",
-    "context": "Halcyon berechnet eine Jahresgebühr gleich einem Prozentsatz auf das verwaltete Vermögen (AUM) zuzüglich einer pauschalen Retainer-Gebühr. Kunde 2: AUM \\$600{,}000, Gebühr \\$10{,}800. Das AUM von Kunde 1 übersteigt das von Kunde 2 um \\$150{,}000 und zahlt \\$2{,}400 mehr an Gesamtgebühren. Der pauschale Retainer ist für jeden Kunden gleich und fällt daher aus jedem Gebühren-Differenzvergleich heraus.",
+    "context": "Halcyon berechnet eine Jahresgebühr gleich einem Prozentsatz auf das verwaltete Vermögen (AUM) zuzüglich einer pauschalen Retainer-Gebühr. Kunde 2: AUM \\$600,000, Gebühr \\$10,800. Das AUM von Kunde 1 übersteigt das von Kunde 2 um \\$150,000 und zahlt \\$2,400 mehr an Gesamtgebühren. Der pauschale Retainer ist für jeden Kunden gleich und fällt daher aus jedem Gebühren-Differenzvergleich heraus.",
     "statements": [
-      "Ein Kunde mit AUM von \\$850{,}000 würde eine Gebühr von weniger als 1,75% seines AUM zahlen.",
+      "Ein Kunde mit AUM von \\$850,000 würde eine Gebühr von weniger als 1,75% seines AUM zahlen.",
       "Der pauschale Retainer macht mehr als 10% der Gesamtgebühr von Kunde 2 aus.",
       "Würde der Gebührensatz um 0,2 Prozentpunkte gesenkt und der Retainer verdoppelt, sänke die Gesamtgebühr von Kunde 1 gegenüber dem tatsächlichen Betrag.",
       "Die Differenz der effektiven Gebührensätze zwischen Kunde 1 und Kunde 2 in Prozentpunkten beträgt mehr als 0,05 Prozentpunkte.",
@@ -966,7 +966,7 @@
       "**D.** → Falsch\n\nVerwenden Sie für diese Aussage die rekonstruierten Werte aus der Übersicht für diese anspruchsspezifische Prüfung.\n\nDer effektive Zinssatz des Kunden 1 und der effektive Zinssatz des Kunden 2 sind\n\n$$\n\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000} = 0.018\n$$\n\n$$\n0.018 - 0.0176 = 0.0004\n$$\n\nDas ist $0.04$ Prozentpunkte, die nicht mehr als $0.05$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nAls nächstes verwenden Sie die rekonstruierten Werte aus der Übersicht für diese anspruchsspezifische Überprüfung.\n\nDreifacher AUM von Client 2 ist \\$1.800.000. Die Gebühr dieses Kunden gegenüber dem Dreifachen des Kunden 2 \\$10.800, ist\n\n$$\n1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000\n$$\n\n$$\n3 \\times 10800 = 32400\n$$\n\nDa $30000 < 32400$Die Gebühr ist nicht mehr als dreifach.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Halcyon berechnet eine Jahresgebühr als Prozentsatz auf das AUM zuzüglich einer pauschalen Retainer-Gebühr. Kunde 2: AUM \\$600{,}000, Gebühr \\$10{,}800. Kunde 1 hat \\$150{,}000 mehr AUM und zahlt \\$2{,}400 mehr. Der Retainer ist für alle Kunden gleich und fällt aus Differenzvergleichen heraus.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = prozentualer Gebührensatz (als Dezimalzahl), $y$ = der flache Retainer (in Dollar).\n\n**1. Übersetzen: Gesamtgebühr des Kunden 2.** In Symbolen:\n\n$$600000x + y = 10800 \\tag{1}$$\n\n**2. Übersetzen: Gebührendifferenz gegenüber AUM Differenz; der Retainer storniert.** In Symbolen:\n\n$$150000x = 2400 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Die Gebührendifferenzgleichung isoliert bereits die Rate:\n\n$$\n150000x = 2400 \\Rightarrow x = \frac{2400}{150000} = 0.016\n$$\n\n(das ist) $1.6\\%$).\n\n**2.** Ersetzen Sie den gesamten Kunden 2:\n\n$$\n600000(0.016) + y = 10800 \\Rightarrow 9600 + y = 10800 \\Rightarrow y = 1200\n$$\n\n**Antwort.** Gebührensatz = 1,6% AUM | Retainer = \\$1,200.00."
+    "solution_overview": "Halcyon berechnet eine Jahresgebühr als Prozentsatz auf das AUM zuzüglich einer pauschalen Retainer-Gebühr. Kunde 2: AUM \\$600,000, Gebühr \\$10,800. Kunde 1 hat \\$150,000 mehr AUM und zahlt \\$2,400 mehr. Der Retainer ist für alle Kunden gleich und fällt aus Differenzvergleichen heraus.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = prozentualer Gebührensatz (als Dezimalzahl), $y$ = der flache Retainer (in Dollar).\n\n**1. Übersetzen: Gesamtgebühr des Kunden 2.** In Symbolen:\n\n$$600000x + y = 10800 \\tag{1}$$\n\n**2. Übersetzen: Gebührendifferenz gegenüber AUM Differenz; der Retainer storniert.** In Symbolen:\n\n$$150000x = 2400 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Die Gebührendifferenzgleichung isoliert bereits die Rate:\n\n$$\n150000x = 2400 \\Rightarrow x = \frac{2400}{150000} = 0.016\n$$\n\n(das ist) $1.6\\%$).\n\n**2.** Ersetzen Sie den gesamten Kunden 2:\n\n$$\n600000(0.016) + y = 10800 \\Rightarrow 9600 + y = 10800 \\Rightarrow y = 1200\n$$\n\n**Antwort.** Gebührensatz = 1,6% AUM | Retainer = \\$1,200.00."
   },
   "MATH 5.52": {
     "title": "Solventis Labs – Mehr-Einheiten-Rekonstruktion der Suspensionskonzentration",
@@ -974,7 +974,7 @@
     "statements": [
       "Die Konzentration von Suspension B liegt mehr als 85% über der von Suspension A.",
       "Der vorhergesagte Gesamtgehalt von Charge 3 weicht nach korrekter Umrechnung des Volumens in Milliliter um mehr als 1% vom erfassten Wert ab.",
-      "Würde das Suspension-B-Volumen von Charge 1 verdoppelt, überstiege der neue Gesamtgehalt 13{,}500 mg.",
+      "Würde das Suspension-B-Volumen von Charge 1 verdoppelt, überstiege der neue Gesamtgehalt 13,500 mg.",
       "Der kombinierte Gesamtgehalt von Charge 1 und 2, zusammengegossen, wäre kleiner als das Doppelte des Gesamtgehalts von Charge 2 allein.",
       "Charge 2 verwendete volumetrisch einen höheren Anteil Suspension B als Charge 3."
     ],
@@ -985,11 +985,11 @@
       "**D.** → Richtig\n\nDie gemeinsame Lösung ist fertig; es bleibt nur der Vergleich dieser Behauptung.\n\nPooling verwendet die gedruckten Inhalte. Zweimal Charge 2$2 \\times 12600 = 25200$.\n\n$$\n8880 + 12600 = 21480\n$$\n\nDa $21480 < 25200$, ist die gepoolte Summe weniger als zweimal Charge 2.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nLies das berechnete Paar ab und führe dann die von der Behauptung verlangte Rechnung aus.\n\nCharge 2 hat $700$ mL von B von $200 + 700 = 900$ mL. Charge 3 hat $450$ mL von B von $320 + 450 = 770$ mL.\n\n$$\\frac{700}{900}$$\n\n$$\\approx 0.7778$$\n\n$$\\frac{450}{770}$$\n\n$$\\approx 0.5844$$\n\nDer B-Share von Charge 2 ist höher.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Solventis mischt zwei Arzneimittelsuspensionen mit fester Konzentration in mg/mL. Charge 1: 500 ml A und 300 ml B, 8{,}880 mg. Charge 2: 200 ml A und 700 ml B, 12{,}600 mg. Das Suspension-A-Volumen von Charge 3 wurde aus Litern in mL umgerechnet: 0,32 L = 320 ml A, 450 ml B, 9{,}700 mg erfasst.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = mg/ml Suspension A, $y$ = mg/ml Konzentration der Suspension B.\n\n**1. Übersetzen: Charge 1.** In Symbolen:\n\n$$500x + 300y = 8880 \\tag{1}$$\n\n**2. Übersetzen: Charge 2.** In Symbolen:\n\n$$200x + 700y = 12600 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Teile Charge 1 durch 100 und Charge 2 durch 100:\n\n$$\n5x + 3y = 88.8, \\qquad 2x + 7y = 126\n$$\n\n**2.** Multiplizieren Sie die erste mit 7 und die zweite mit 3, so dass die $y$ Koeffizienten werden beide $21y$:\n\n$$\n35x + 21y = 621.6, \\qquad 6x + 21y = 378\n$$\n\n**3.** Subtrahiere:\n\n$$\n(35x + 21y) - (6x + 21y) = 621.6 - 378\n$$\n\n$$\n29x = 243.6 \\Rightarrow x = \frac{243.6}{29} = 8.4\n$$\n\n**4.** Setze $x = 8.4$ in $2x + 7y = 126$:\n\n$$\n2(8.4) + 7y = 126 \\Rightarrow 16.8 + 7y = 126 \\Rightarrow 7y = 109.2 \\Rightarrow y = 15.6\n$$\n\n**5.** Audit Charge 3 ($0.32$ L $= 320$ ml A:\n\n$$\n320(8.4) + 450(15.6) = 2688 + 7020\n$$\n\n$$\n= 9708\n$$\n\ngegenüber 9.700 mg aufgezeichnet, eine 8 mg Diskrepanz.\n\n**Antwort.** Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Charge 3 vorhergesagt = 9,708 mg (gegenüber 9.700 mg aufgezeichnet."
+    "solution_overview": "Solventis mischt zwei Arzneimittelsuspensionen mit fester Konzentration in mg/mL. Charge 1: 500 ml A und 300 ml B, 8,880 mg. Charge 2: 200 ml A und 700 ml B, 12,600 mg. Das Suspension-A-Volumen von Charge 3 wurde aus Litern in mL umgerechnet: 0,32 L = 320 ml A, 450 ml B, 9,700 mg erfasst.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = mg/ml Suspension A, $y$ = mg/ml Konzentration der Suspension B.\n\n**1. Übersetzen: Charge 1.** In Symbolen:\n\n$$500x + 300y = 8880 \\tag{1}$$\n\n**2. Übersetzen: Charge 2.** In Symbolen:\n\n$$200x + 700y = 12600 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Teile Charge 1 durch 100 und Charge 2 durch 100:\n\n$$\n5x + 3y = 88.8, \\qquad 2x + 7y = 126\n$$\n\n**2.** Multiplizieren Sie die erste mit 7 und die zweite mit 3, so dass die $y$ Koeffizienten werden beide $21y$:\n\n$$\n35x + 21y = 621.6, \\qquad 6x + 21y = 378\n$$\n\n**3.** Subtrahiere:\n\n$$\n(35x + 21y) - (6x + 21y) = 621.6 - 378\n$$\n\n$$\n29x = 243.6 \\Rightarrow x = \frac{243.6}{29} = 8.4\n$$\n\n**4.** Setze $x = 8.4$ in $2x + 7y = 126$:\n\n$$\n2(8.4) + 7y = 126 \\Rightarrow 16.8 + 7y = 126 \\Rightarrow 7y = 109.2 \\Rightarrow y = 15.6\n$$\n\n**5.** Audit Charge 3 ($0.32$ L $= 320$ ml A:\n\n$$\n320(8.4) + 450(15.6) = 2688 + 7020\n$$\n\n$$\n= 9708\n$$\n\ngegenüber 9.700 mg aufgezeichnet, eine 8 mg Diskrepanz.\n\n**Antwort.** Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Charge 3 vorhergesagt = 9,708 mg (gegenüber 9.700 mg aufgezeichnet."
   },
   "MATH 5.53": {
     "title": "Ridgeline Construction – Materialkostenrekonstruktion mit Verschnitt",
-    "context": "Ridgeline kalkuliert Holzlatten und Trockenbauplatten zu festen Stückpreisen. Jeder Auftrag enthält einen Verschnittzuschlag über die nutzbare Menge hinaus: 12% Extra-Latten, 8% Extra-Trockenbau. Auftrag 1 brauchte 200 nutzbare Latten + 150 nutzbare Platten, Rechnung \\$7{,}164.00. Auftrag 2 brauchte 350 nutzbare Latten + 175 nutzbare Platten, Rechnung \\$8{,}946.00.",
+    "context": "Ridgeline kalkuliert Holzlatten und Trockenbauplatten zu festen Stückpreisen. Jeder Auftrag enthält einen Verschnittzuschlag über die nutzbare Menge hinaus: 12% Extra-Latten, 8% Extra-Trockenbau. Auftrag 1 brauchte 200 nutzbare Latten + 150 nutzbare Platten, Rechnung \\$7,164.00. Auftrag 2 brauchte 350 nutzbare Latten + 175 nutzbare Platten, Rechnung \\$8,946.00.",
     "statements": [
       "Die gesamten verschnittbezogenen Kosten auf Rechnung 1 übersteigen \\$700.00.",
       "Würde der Trockenbau-Verschnittzuschlag von 8% auf 5% gesenkt, sänke die Summe von Rechnung 2 um mehr als \\$150.00.",
@@ -1004,7 +1004,7 @@
       "**D.** → Richtig\n\nDer Überblick liefert Trockenbau $y = 38$ und Bolzen $x = 4.50$.\n\n$$\\frac{38}{4.50}$$\n\n$$\\approx 8.444$$\n\nDa $8.444 > 8$Der Trockenbaupreis ist mehr als $8$ Mal der Stud-Preis.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nJob 1 nutzbare Kosten und Job 2 nutzbare Kosten zu den eingezogenen Preisen $x = 4.50$ und $y = 38$ sind\n\n$$\n200 \\times 4.50 + 150 \\times 38 = 900 + 5700 = 6600\n$$\n\n$$\n350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225\n$$\n\nAbfall als Anteil der nutzbaren Kosten:\n\n$$\\frac{7164 - 6600}{6600} = \frac{564}{6600}$$\n\n$$\\approx 0.08545$$\n\n$$\\frac{8946 - 8225}{8225} = \frac{721}{8225}$$\n\n$$\\approx 0.08766$$\n\nJob 1's $8.545\\%$ ist kleiner als Job 2 $8.766\\%$.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Ridgeline kalkuliert Holzlatten und Trockenbauplatten zu festen Stückpreisen. Jeder Auftrag enthält Verschnitt: 12% Extra-Latten, 8% Extra-Trockenbau. Auftrag 1: 200 nutzbare Latten + 150 nutzbare Platten, \\$7{,}164.00. Auftrag 2: 350 nutzbare Latten + 175 nutzbare Platten, \\$8{,}946.00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Preis pro Stud, $y$ = Preis pro Trockenbauplatte. Bei den bestellten Mengen handelt es sich um die durch die Abfallzertifikate aufgeblasenen nutzbaren Mengen.\n\n**1. Übersetzen: Job 1,$200 \\times 1.12 = 224$ Bolzen und $150 \\times 1.08 = 162$ Blätter.** In Symbolen:\n\n$$224x + 162y = 7164 \\tag{1}$$\n\n**2. Übersetzen: Job 2,$350 \\times 1.12 = 392$ Bolzen und $175 \\times 1.08 = 189$ Blätter.** In Symbolen:\n\n$$392x + 189y = 8946 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Multipliziere Auftrag 1 mit $1.75$ sodass der Latten-Koeffizient mit Job 2 überein $392x$ ($224 \\times 1.75 = 392$):\n\n$$\n1.75(224x + 162y) = 1.75(7164) \\Rightarrow 392x + 283.5y = 12537\n$$\n\n**2.** Subtrahiere Job 2:\n\n$$\n(392x + 283.5y) - (392x + 189y) = 12537 - 8946\n$$\n\n$$\n94.5y = 3591 \\Rightarrow y = \frac{3591}{94.5} = 38.00\n$$\n\n**3.** Setze $y = 38$ In Job 1:\n\n$$\n224x + 162(38) = 7164 \\Rightarrow 224x + 6156 = 7164\n$$\n\n$$\n224x = 1008 \\Rightarrow x = 4.50\n$$\n\n**Antwort.** Studpreis = \\$4,50 | Preis für Trockenbauplatten = \\$38.00."
+    "solution_overview": "Ridgeline kalkuliert Holzlatten und Trockenbauplatten zu festen Stückpreisen. Jeder Auftrag enthält Verschnitt: 12% Extra-Latten, 8% Extra-Trockenbau. Auftrag 1: 200 nutzbare Latten + 150 nutzbare Platten, \\$7,164.00. Auftrag 2: 350 nutzbare Latten + 175 nutzbare Platten, \\$8,946.00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Preis pro Stud, $y$ = Preis pro Trockenbauplatte. Bei den bestellten Mengen handelt es sich um die durch die Abfallzertifikate aufgeblasenen nutzbaren Mengen.\n\n**1. Übersetzen: Job 1,$200 \\times 1.12 = 224$ Bolzen und $150 \\times 1.08 = 162$ Blätter.** In Symbolen:\n\n$$224x + 162y = 7164 \\tag{1}$$\n\n**2. Übersetzen: Job 2,$350 \\times 1.12 = 392$ Bolzen und $175 \\times 1.08 = 189$ Blätter.** In Symbolen:\n\n$$392x + 189y = 8946 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Multipliziere Auftrag 1 mit $1.75$ sodass der Latten-Koeffizient mit Job 2 überein $392x$ ($224 \\times 1.75 = 392$):\n\n$$\n1.75(224x + 162y) = 1.75(7164) \\Rightarrow 392x + 283.5y = 12537\n$$\n\n**2.** Subtrahiere Job 2:\n\n$$\n(392x + 283.5y) - (392x + 189y) = 12537 - 8946\n$$\n\n$$\n94.5y = 3591 \\Rightarrow y = \frac{3591}{94.5} = 38.00\n$$\n\n**3.** Setze $y = 38$ In Job 1:\n\n$$\n224x + 162(38) = 7164 \\Rightarrow 224x + 6156 = 7164\n$$\n\n$$\n224x = 1008 \\Rightarrow x = 4.50\n$$\n\n**Antwort.** Studpreis = \\$4,50 | Preis für Trockenbauplatten = \\$38.00."
   },
   "MATH 5.54": {
     "title": "Precision Dynamics – Rekonstruktion der Sensorkalibrierkurve",
@@ -1027,11 +1027,11 @@
   },
   "MATH 5.55": {
     "title": "Meridian Commodities – Rekonstruktion des Mischsendungspreises",
-    "context": "Meridian Commodities kauft Kaffee und Kakao zu festen Preisen pro kg. Sendung 1: 520 kg insgesamt, gemischt 3:2 Kaffee:Kakao, Kosten \\$2{,}943.20. Sendung 2: 800 kg insgesamt, gemischt 5:3 Kaffee:Kakao, Kosten \\$4{,}555.00.",
+    "context": "Meridian Commodities kauft Kaffee und Kakao zu festen Preisen pro kg. Sendung 1: 520 kg insgesamt, gemischt 3:2 Kaffee:Kakao, Kosten \\$2,943.20. Sendung 2: 800 kg insgesamt, gemischt 5:3 Kaffee:Kakao, Kosten \\$4,555.00.",
     "statements": [
       "Kaffee kostet pro Kilogramm mehr als 25% mehr als Kakao.",
       "Die dem Kaffee zurechenbaren Kosten von Sendung 1 betragen mehr als 65% der Gesamtkosten von Sendung 1.",
-      "Wäre das Verhältnis von Sendung 2 statt 5:3 gleich 1:1 gewesen, wären die Gesamtkosten niedriger als die tatsächlichen \\$4{,}555.00 gewesen.",
+      "Wäre das Verhältnis von Sendung 2 statt 5:3 gleich 1:1 gewesen, wären die Gesamtkosten niedriger als die tatsächlichen \\$4,555.00 gewesen.",
       "Die gesamten Kakaokosten beider Sendungen zusammen übersteigen die gesamten Kaffeekosten beider Sendungen zusammen.",
       "Die Preisdifferenz zwischen Kaffee und Kakao beträgt weniger als 30% des Kaffeepreises."
     ],
@@ -1042,7 +1042,7 @@
       "**D.** → Falsch\n\nAls nächstes verwenden Sie die rekonstruierten Werte aus der Übersicht für diese anspruchsspezifische Überprüfung.\n\nKakao über beide Sendungen hinweg ist $208 + 300 = 508$ kg. Kaffee ist $312 + 500 = 812$ kg.\n\n$$\n508 \\times 4.85 = 2463.80\n$$\n\n$$\n812 \\times 6.20 = 5034.40\n$$\n\nKakaos Dollar insgesamt ist kleiner, nicht größer.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nDie Lücke zwischen den beiden rekonstruierten Unbekannten ist ihr Unterschied:\n\n$$\nd = x - y\n$$\n\nMit den berechneten Lösungswerten $x = 6.20$ und $y = 4.85$ als Eingaben für diese Behauptung:\n\nDie Lücke als Anteil am Kaffeepreis ist\n\n$$\\frac{6.20 - 4.85}{6.20} = \frac{1.35}{6.20}$$\n\n$$\\approx 0.2177$$\n\nüber $21.8\\%$, die weniger als $30\\%$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Meridian Commodities kauft Kaffee und Kakao zu festen Preisen pro kg. Sendung 1: 520 kg insgesamt, gemischt 3:2 Kaffee:Kakao, Kosten \\$2{,}943.20. Sendung 2: 800 kg insgesamt, gemischt 5:3 Kaffee:Kakao, Kosten \\$4{,}555.00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Preis pro kg Kaffee, $y$ = Preis pro kg Kakao.\n\n**1. Übersetzen: Sendung 1, 520 kg Split 3:2 sind 312 kg Kaffee und 208 kg Kakao.** In Symbolen:\n\n$$312x + 208y = 2943.2 \\tag{1}$$\n\n**2. Übersetzen: Sendung 2, 800 kg Split 5:3 sind 500 kg Kaffee und 300 kg Kakao.** In Symbolen:\n\n$$500x + 300y = 4555 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Teile Shipment 1 durch 8 und Shipment 2 durch 100:\n\n$$\n39x + 26y = 367.9, \\qquad 5x + 3y = 45.55 \\Rightarrow x = 9.11 - 0.6y\n$$\n\n**2.** Ersetzen Sie die erste vereinfachte Gleichung:\n\n$$\n39(9.11 - 0.6y) + 26y = 367.9\n$$\n\n$$\n355.29 - 23.4y + 26y = 367.9 \\Rightarrow 355.29 + 2.6y = 367.9\n$$\n\n$$\n2.6y = 12.61 \\Rightarrow y = \frac{12.61}{2.6} = 4.85\n$$\n\n**3.** Setze $y = 4.85$ back:\n\n$$\nx = 9.11 - 0.6(4.85)\n$$\n\n$$\n= 9.11 - 2.91\n$$\n\n$$\n= 6.20\n$$\n\n**Antwort.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg."
+    "solution_overview": "Meridian Commodities kauft Kaffee und Kakao zu festen Preisen pro kg. Sendung 1: 520 kg insgesamt, gemischt 3:2 Kaffee:Kakao, Kosten \\$2,943.20. Sendung 2: 800 kg insgesamt, gemischt 5:3 Kaffee:Kakao, Kosten \\$4,555.00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Preis pro kg Kaffee, $y$ = Preis pro kg Kakao.\n\n**1. Übersetzen: Sendung 1, 520 kg Split 3:2 sind 312 kg Kaffee und 208 kg Kakao.** In Symbolen:\n\n$$312x + 208y = 2943.2 \\tag{1}$$\n\n**2. Übersetzen: Sendung 2, 800 kg Split 5:3 sind 500 kg Kaffee und 300 kg Kakao.** In Symbolen:\n\n$$500x + 300y = 4555 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Teile Shipment 1 durch 8 und Shipment 2 durch 100:\n\n$$\n39x + 26y = 367.9, \\qquad 5x + 3y = 45.55 \\Rightarrow x = 9.11 - 0.6y\n$$\n\n**2.** Ersetzen Sie die erste vereinfachte Gleichung:\n\n$$\n39(9.11 - 0.6y) + 26y = 367.9\n$$\n\n$$\n355.29 - 23.4y + 26y = 367.9 \\Rightarrow 355.29 + 2.6y = 367.9\n$$\n\n$$\n2.6y = 12.61 \\Rightarrow y = \frac{12.61}{2.6} = 4.85\n$$\n\n**3.** Setze $y = 4.85$ back:\n\n$$\nx = 9.11 - 0.6(4.85)\n$$\n\n$$\n= 9.11 - 2.91\n$$\n\n$$\n= 6.20\n$$\n\n**Antwort.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg."
   },
   "MATH 5.56": {
     "title": "Continental Freight – Rekonstruktion der Flottenkraftstoffrate",
@@ -1065,11 +1065,11 @@
   },
   "MATH 5.57": {
     "title": "Whitmore Scholarship Fund – Rekonstruktion der Mischrendite",
-    "context": "Der Whitmore-Fonds von \\$45{,}000 ist auf ein Anleiheportfolio und ein Aktienportfolio aufgeteilt, jeweils mit festem eigenen Satz. Die aktuelle Allokation (\\$27{,}000 Anleihen, \\$18{,}000 Aktien) liefert \\$2{,}646.00. Eine vorgeschlagene Umschichtung mit vertauschten Beträgen (\\$18{,}000 Anleihen, \\$27{,}000 Aktien) würde \\$2{,}754.00 liefern.",
+    "context": "Der Whitmore-Fonds von \\$45,000 ist auf ein Anleiheportfolio und ein Aktienportfolio aufgeteilt, jeweils mit festem eigenen Satz. Die aktuelle Allokation (\\$27,000 Anleihen, \\$18,000 Aktien) liefert \\$2,646.00. Eine vorgeschlagene Umschichtung mit vertauschten Beträgen (\\$18,000 Anleihen, \\$27,000 Aktien) würde \\$2,754.00 liefern.",
     "statements": [
       "Der Aktiensatz übersteigt den Anleihesatz relativ um mehr als 20% des Anleihesatzes.",
       "Unter der aktuellen Allokation liegt der Mischsatz unter 6%.",
-      "Würden die gesamten \\$45{,}000 allein in Aktien angelegt, überstiege die Rendite die kombinierte Summe der Renditen beider beschriebenen Allokationen.",
+      "Würden die gesamten \\$45,000 allein in Aktien angelegt, überstiege die Rendite die kombinierte Summe der Renditen beider beschriebenen Allokationen.",
       "Eine $\\frac{50}{50}$-Aufteilung würde eine Mischrendite genau gleich dem Mittel der Renditen der beiden beschriebenen Allokationen ergeben.",
       "Der Anleihesatz beträgt mehr als 80% des Aktiensatzes."
     ],
@@ -1080,16 +1080,16 @@
       "**D.** → Richtig\n\nDie gemeinsame Lösung ist fertig; es bleibt nur der Vergleich dieser Behauptung.\n\nA $\\frac{50}{50}$ Splitputs \\$22.500 in jedem Portfolio.\n\n$$\n22500 \\times 0.054 + 22500 \\times 0.066 = 2700\n$$\n\nDer Durchschnitt der beiden beschriebenen Renditen ist\n\n$$\n\\frac{2646 + 2754}{2} = 2700\n$$\n\nDie beiden Zahlen stimmen überein.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nBeginnen Sie mit dem rekonstruierten Lösungspaar und wenden Sie die zusätzliche Arithmetik des Anspruchs an:\n\nMit den berechneten Lösungswerten $5.4\\%$ und $6.6\\%$ als Eingaben für diese Behauptung:\n\n$$\\frac{5.4}{6.6}$$\n\n$$\\approx 0.8182$$\n\nüber $81.8\\%$, die mehr als $80\\%$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie gemeinsame Elimination hat das eindeutige Paar bereits festgelegt; dieser Buchstabe prüft nur die zusätzliche Rechnung der Behauptung.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Der Whitmore-Fonds von \\$45{,}000 ist auf ein Anleihe- und ein Aktienportfolio aufgeteilt. Die aktuelle Allokation (\\$27{,}000 Anleihen, \\$18{,}000 Aktien) liefert \\$2{,}646.00. Eine Umschichtung mit vertauschten Beträgen würde \\$2{,}754.00 liefern.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Jahreszinssatz des Anleiheportfolios in Prozent, $y$ = Jahresrate des Aktienportfolios in Prozent.\n\n**1. Übersetzen: aktuelle Allokation.** In Symbolen:\n\n$$270x + 180y = 2646 \\tag{1}$$\n\n**2. Übersetzen: vorgeschlagene Umverteilung.** In Symbolen:\n\n$$180x + 270y = 2754 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Addiere die beiden Allokationsgleichungen:\n\n$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$\n\n$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$\n\n**2.** Subtrahiere der erste vom zweiten:\n\n$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$\n\n$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$\n\n**3.** Ersetzen Sie in $x + y = 12$:\n\n$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$\n\nDann $y = 5.4 + 1.2 = 6.6$.\n\n**Antwort.** Anleihequote = 5,4% | Eigenkapitalquote = 6,6%."
+    "solution_overview": "Der Whitmore-Fonds von \\$45,000 ist auf ein Anleihe- und ein Aktienportfolio aufgeteilt. Die aktuelle Allokation (\\$27,000 Anleihen, \\$18,000 Aktien) liefert \\$2,646.00. Eine Umschichtung mit vertauschten Beträgen würde \\$2,754.00 liefern.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Jahreszinssatz des Anleiheportfolios in Prozent, $y$ = Jahresrate des Aktienportfolios in Prozent.\n\n**1. Übersetzen: aktuelle Allokation.** In Symbolen:\n\n$$270x + 180y = 2646 \\tag{1}$$\n\n**2. Übersetzen: vorgeschlagene Umverteilung.** In Symbolen:\n\n$$180x + 270y = 2754 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Addiere die beiden Allokationsgleichungen:\n\n$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$\n\n$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$\n\n**2.** Subtrahiere der erste vom zweiten:\n\n$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$\n\n$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$\n\n**3.** Ersetzen Sie in $x + y = 12$:\n\n$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$\n\nDann $y = 5.4 + 1.2 = 6.6$.\n\n**Antwort.** Anleihequote = 5,4% | Eigenkapitalquote = 6,6%."
   },
   "MATH 5.58": {
     "title": "Ashford Mutual Insurance – Rekonstruktion der Prämienstruktur",
-    "context": "Ashford kalkuliert jede Police als feste Verwaltungsgebühr zuzüglich eines Satzes pro \\$1{,}000 Deckungssumme. Bei einer dritten Police ist die Deckungssumme unleserlich, die Prämie ist jedoch erhalten.",
+    "context": "Ashford kalkuliert jede Police als feste Verwaltungsgebühr zuzüglich eines Satzes pro \\$1,000 Deckungssumme. Bei einer dritten Police ist die Deckungssumme unleserlich, die Prämie ist jedoch erhalten.",
     "statements": [
-      "Die rekonstruierte Mieterschutz-Deckungssumme liegt unter \\$30{,}000.",
+      "Die rekonstruierte Mieterschutz-Deckungssumme liegt unter \\$30,000.",
       "Die feste Verwaltungsgebühr macht mehr als 60% der Gesamtprämie der Kfz-Police aus.",
-      "Steigt der Satz pro \\$1{,}000 Deckung um 10%, steigt die Prämie der Hausrat-Police um mehr als \\$75.00.",
-      "Die Prämie der Hausrat-Police pro \\$1{,}000 Deckung beträgt mehr als das Doppelte der Prämie der Kfz-Police pro \\$1{,}000 Deckung.",
+      "Steigt der Satz pro \\$1,000 Deckung um 10%, steigt die Prämie der Hausrat-Police um mehr als \\$75.00.",
+      "Die Prämie der Hausrat-Police pro \\$1,000 Deckung beträgt mehr als das Doppelte der Prämie der Kfz-Police pro \\$1,000 Deckung.",
       "Kfz- und Hausrat-Deckung in einer hypothetischen kombinierten Police würden weniger kosten als die Summe ihrer getrennten Prämien."
     ],
     "tactical_explanations": [
@@ -1099,14 +1099,14 @@
       "**D.** → Falsch\n\nPrämie pro Stück \\$1.000 ist die gedruckte Prämie geteilt durch Abdeckung in Tausenden.\n\n$$\\frac{1197.50}{210}$$\n\n$$\\approx 5.702$$\n\n$$\\frac{612.50}{85}$$\n\n$$\\approx 7.206$$\n\nHome's $5.702$ ist nicht mehr als zweimal Auto's $7.206$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nLies das berechnete Paar ab und führe dann die von der Behauptung verlangte Rechnung aus.\n\nEine einzige kombinierte Police hat eine Verwaltungsgebühr und $85 + 210 = 295$ Tausende von Abdeckungen.\n\n$$\n214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30\n$$\n\n$$\n612.50 + 1197.50 = 1810.00\n$$\n\nDie kombinierte Police kostet weniger als die Summe der separaten Prämien.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Ashford kalkuliert jede Police als feste Verwaltungsgebühr zuzüglich eines Satzes pro \\$1{,}000 Deckung. Bei einer dritten Police ist die Deckungssumme unleserlich, die Prämie ist erhalten.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = die feste Verwaltungsgebühr pro Police (in Dollar), $y$ = Satz pro \\$1{,}000 Deckung (in Dollar).\n\n**1. Übersetzen: Auto, Abdeckung in Einheiten von\\$1.000.** In Symbolen:\n\n$$x + 85y = 612.50 \\tag{1}$$\n\n**2. Übersetzen: Home.** In Symbolen:\n\n$$x + 210y = 1197.50 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Subtrahiere Auto von zu Hause, um die feste Gebühr zu stornieren $x$:\n\n$$\n(x + 210y) - (x + 85y) = 1197.50 - 612.50\n$$\n\n$$\n125y = 585 \\Rightarrow y = \frac{585}{125} = 4.68\n$$\n\n**2.** Setze $y = 4.68$ in Auto:\n\n$$\nx + 85(4.68) = 612.50 \\Rightarrow x + 397.80 = 612.50 \\Rightarrow x = 214.70\n$$\n\n**3.** Rekonstruiere die Mieterschutz-Deckung $C$, gemessen in Tausenden von Dollar:\n\n$$\n214.70 + 4.68C = 331.70 \\Rightarrow 4.68C = 117.00 \\Rightarrow C = 25\n$$\n\nDas ist \\$25.000 Berichterstattung.\n\n**Antwort.** Fixgebühr = \\$214,70 | Rate = \\$4,68 je \\$1,000 | Renters coverage reconstructed = \\$25,000."
+    "solution_overview": "Ashford kalkuliert jede Police als feste Verwaltungsgebühr zuzüglich eines Satzes pro \\$1,000 Deckung. Bei einer dritten Police ist die Deckungssumme unleserlich, die Prämie ist erhalten.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = die feste Verwaltungsgebühr pro Police (in Dollar), $y$ = Satz pro \\$1,000 Deckung (in Dollar).\n\n**1. Übersetzen: Auto, Abdeckung in Einheiten von\\$1.000.** In Symbolen:\n\n$$x + 85y = 612.50 \\tag{1}$$\n\n**2. Übersetzen: Home.** In Symbolen:\n\n$$x + 210y = 1197.50 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Subtrahiere Auto von zu Hause, um die feste Gebühr zu stornieren $x$:\n\n$$\n(x + 210y) - (x + 85y) = 1197.50 - 612.50\n$$\n\n$$\n125y = 585 \\Rightarrow y = \frac{585}{125} = 4.68\n$$\n\n**2.** Setze $y = 4.68$ in Auto:\n\n$$\nx + 85(4.68) = 612.50 \\Rightarrow x + 397.80 = 612.50 \\Rightarrow x = 214.70\n$$\n\n**3.** Rekonstruiere die Mieterschutz-Deckung $C$, gemessen in Tausenden von Dollar:\n\n$$\n214.70 + 4.68C = 331.70 \\Rightarrow 4.68C = 117.00 \\Rightarrow C = 25\n$$\n\nDas ist \\$25.000 Berichterstattung.\n\n**Antwort.** Fixgebühr = \\$214,70 | Rate = \\$4,68 je \\$1,000 | Renters coverage reconstructed = \\$25,000."
   },
   "MATH 5.59": {
     "title": "Cedar Hollow Reserve – Rekonstruktion linearen Bevölkerungswachstums",
-    "context": "Zwei Arten ändern sich jedes Jahr um eine feste Nettanzahl Individuen. In Jahr 2: Art A = 610, Art B = 730 (zusammen 1{,}340). In Jahr 6: Gesamtpopulation = 1{,}772. Art A wächst mit genau dem doppelten Jahressatz von Art B.",
+    "context": "Zwei Arten ändern sich jedes Jahr um eine feste Nettanzahl Individuen. In Jahr 2: Art A = 610, Art B = 730 (zusammen 1,340). In Jahr 6: Gesamtpopulation = 1,772. Art A wächst mit genau dem doppelten Jahressatz von Art B.",
     "statements": [
       "Bis Jahr 6 übersteigt die Population von Art A die von Art B um mehr als 20 Individuen.",
-      "Wäre der Wachstumssatz von Art B gleich dem tatsächlichen Satz von Art A, überstiege die Gesamtpopulation in Jahr 6 die tatsächlichen kombinierten 1{,}772 um mehr als 140 Individuen.",
+      "Wäre der Wachstumssatz von Art B gleich dem tatsächlichen Satz von Art A, überstiege die Gesamtpopulation in Jahr 6 die tatsächlichen kombinierten 1,772 um mehr als 140 Individuen.",
       "Das Verhältnis des gesamten Populationswachstums beider Arten von Jahr 2 bis Jahr 6 ist größer als 2,5:1.",
       "Irgendwann zwischen Jahr 2 und Jahr 6 hatten beide Arten gleiche Populationen.",
       "Art A überholt Art B in der Gesamtpopulationsgröße vor Jahr 5."
@@ -1118,17 +1118,17 @@
       "**D.** → Richtig\n\nDie Populationen sind gleich $t$ Jahre nach Jahr 2, wenn\n\n$$610 + 72t = 730 + 36t$$\n\n$$\n36t = 120\n$$\n\n$$\nt = \frac{10}{3}\n$$\n\n$$\\approx 3.333$$\n\nDas ist Jahr $5.333$, die zwischen Jahr 2 und Jahr 6 liegt.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nSet $610 + 72t = 730 + 36t$ um festzustellen, wann A B fängt:\n\n$$\n36t = 120\n$$\n\n$$\nt = \frac{10}{3}\n$$\n\n$$\\approx 3.333$$\n\nGleichberechtigung im Jahr $5.333$. Im Jahr 5, drei Jahre nach dem Jahr 2,\n\n$$\n610 + 3(72) = 826\n$$\n\n$$\n730 + 3(36) = 838\n$$\n\nA liegt im Jahr 5 immer noch zurück und die Gleichheit kommt nach dem Jahr 5.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Zwei Arten ändern sich jedes Jahr um eine feste Nettanzahl Individuen. Jahr 2: Art A = 610, Art B = 730 (zusammen 1{,}340). Jahr 6: Gesamtpopulation = 1{,}772. Art A wächst mit genau dem doppelten Jahressatz von Art B.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = jährliche Nettoänderung der Art A (Einzelpersonen/Jahr), $y$ = jährliche Nettoänderung der Art B.\n\n**1. Übersetzen: gemeinsames Wachstum von$1772 - 1340 = 432$ über 4 Jahre.** In Symbolen:\n\n$$4x + 4y = 432 \\Rightarrow x + y = 108 \\tag{1}$$\n\n**2. Übersetzen: Art A wächst doppelt so schnell wie Art B.** In Symbolen:\n\n$$x = 2y \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Setze $x = 2y$ in $x + y = 108$:\n\n$$\n2y + y = 108 \\Rightarrow 3y = 108 \\Rightarrow y = 36\n$$\n\n**2.** Dann\n\n$$\nx = 2(36)\n$$\n\n$$\n= 72\n$$\n\n**3.** Jahr 6 Populationen:\n\n$$\nA = 610 + 4(72) = 898, \\qquad B = 730 + 4(36) = 874\n$$\n\n**Antwort.** Art A = +72 Individuen/Jahr | Art B = +36 Individuen/Jahr | Jahr 6: A = 898, B = 874."
+    "solution_overview": "Zwei Arten ändern sich jedes Jahr um eine feste Nettanzahl Individuen. Jahr 2: Art A = 610, Art B = 730 (zusammen 1,340). Jahr 6: Gesamtpopulation = 1,772. Art A wächst mit genau dem doppelten Jahressatz von Art B.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = jährliche Nettoänderung der Art A (Einzelpersonen/Jahr), $y$ = jährliche Nettoänderung der Art B.\n\n**1. Übersetzen: gemeinsames Wachstum von$1772 - 1340 = 432$ über 4 Jahre.** In Symbolen:\n\n$$4x + 4y = 432 \\Rightarrow x + y = 108 \\tag{1}$$\n\n**2. Übersetzen: Art A wächst doppelt so schnell wie Art B.** In Symbolen:\n\n$$x = 2y \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Setze $x = 2y$ in $x + y = 108$:\n\n$$\n2y + y = 108 \\Rightarrow 3y = 108 \\Rightarrow y = 36\n$$\n\n**2.** Dann\n\n$$\nx = 2(36)\n$$\n\n$$\n= 72\n$$\n\n**3.** Jahr 6 Populationen:\n\n$$\nA = 610 + 4(72) = 898, \\qquad B = 730 + 4(36) = 874\n$$\n\n**Antwort.** Art A = +72 Individuen/Jahr | Art B = +36 Individuen/Jahr | Jahr 6: A = 898, B = 874."
   },
   "MATH 5.60": {
     "title": "Continental Power Grid – Rekonstruktion der Anlagen-Ausgangsleistung",
-    "context": "Zwei Kraftwerke erzeugen Strom jeweils mit fester Rate in MWh pro Stunde. Die Betriebszeit von Anlage A an Tag 3 wurde in Minuten erfasst und in Stunden umgerechnet (1{,}020 min = 17 h).",
+    "context": "Zwei Kraftwerke erzeugen Strom jeweils mit fester Rate in MWh pro Stunde. Die Betriebszeit von Anlage A an Tag 3 wurde in Minuten erfasst und in Stunden umgerechnet (1,020 min = 17 h).",
     "statements": [
       "Die Ausgangsrate von Anlage A übersteigt die von Anlage B um mehr als 45%.",
       "Die vorhergesagte Gesamtenergie von Tag 3 weicht nach korrekter Umrechnung der Betriebszeit in Stunden um weniger als 0,3% vom erfassten Wert ab.",
       "Hätte Anlage A so lange gelaufen wie Anlage B an den Tagen 1–2 zusammen, und Anlage B so lange wie Anlage A tatsächlich, überstiege die Gesamtsumme die tatsächliche kombinierte Summe von Tag 1 + Tag 2.",
       "Die kombinierte Ausgangsrate beider Anlagen zusammen beträgt mehr als das 2,4-fache der Rate von Anlage B allein.",
-      "Über alle drei Tage zusammen übersteigt die gesamte Energieproduktion 11{,}600 MWh."
+      "Über alle drei Tage zusammen übersteigt die gesamte Energieproduktion 11,600 MWh."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDer Überblick liefert $A = 145$ MWh/h und $B = 98$ MWh/hr.\n\n$$\\frac{145 - 98}{98} = \frac{47}{98}$$\n\n$$\\approx 0.4796$$\n\nüber $48.0\\%$, die mehr als $45\\%$.\n\nDie Aussage ist richtig.",
@@ -1137,13 +1137,13 @@
       "**D.** → Richtig\n\nDie kombinierte Outputrate ist $145 + 98 = 243$ MWh/hr.\n\n$$\\frac{243}{98}$$\n\n$$\\approx 2.4796$$\n\nWas mehr ist als $2.4$ Die Rate von Plant B.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\nDie drei erfassten Tagessummen sind $3990$, $4072$, und $3553$ MWh.\n\n$$\n3990 + 4072 + 3553 = 11615\n$$\n\nDa $11615 > 11600$, kombinierte Produktion übersteigt $11600$ MWh.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Zwei Kraftwerke erzeugen Strom mit fester Rate in MWh pro Stunde. Tag 1: 14 h A und 20 h B, 3990 MWh. Tag 2: 22 h A und 9 h B, 4072 MWh. Die Betriebszeit von Anlage A an Tag 3 wurde aus Minuten umgerechnet (1{,}020 min = 17 h), mit 11 h B und 3553 MWh erfasst.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Produktionsrate von Anlage A (MWh/Betriebsstunden), $y$ = Produktionsrate von Anlage B (MWh/Betriebsstunden).\n\n**1. Übersetzen: Tag 1.** In Symbolen:\n\n$$14x + 20y = 3990 \\tag{1}$$\n\n**2. Übersetzen: Tag 2.** In Symbolen:\n\n$$22x + 9y = 4072 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Teile Tag 1 durch 2:\n\n$$\n7x + 10y = 1995\n$$\n\n**2.** Multiplizieren Sie diese vereinfachte Gleichung mit 9:\n\n$$\n63x + 90y = 17955\n$$\n\n**3.** Multiplizieren Sie Tag 2 mit 10:\n\n$$\n10(22x + 9y) = 10(4072) \\Rightarrow 220x + 90y = 40720\n$$\n\n**4.** Subtrahiere den skalierten Tag 1 vom skalierten Tag 2:\n\n$$\n(220x + 90y) - (63x + 90y) = 40720 - 17955\n$$\n\n$$\n157x = 22765 \\Rightarrow x = \frac{22765}{157} = 145.0\n$$\n\n**5.** Setze $x = 145$ in $7x + 10y = 1995$:\n\n$$\n7(145) + 10y = 1995 \\Rightarrow 1015 + 10y = 1995 \\Rightarrow 10y = 980 \\Rightarrow y = 98.0\n$$\n\n**6.** Audit Tag 3$1020$ min $= 17$ hrs):\n\n$$\n17(145) + 11(98) = 2465 + 1078\n$$\n\n$$\n= 3543\n$$\n\ngegenüber 3,553 MWh gemessen, eine Diskrepanz von 10 MWh.\n\n**Antwort.** Anlage A = 145,0 MWh/h | Anlage B = 98,0 MWh/h | Tag 3 vorhergesagt = 3,543 MWh (vs.) 3,553 MWh aufgezeichnet."
+    "solution_overview": "Zwei Kraftwerke erzeugen Strom mit fester Rate in MWh pro Stunde. Tag 1: 14 h A und 20 h B, 3990 MWh. Tag 2: 22 h A und 9 h B, 4072 MWh. Die Betriebszeit von Anlage A an Tag 3 wurde aus Minuten umgerechnet (1,020 min = 17 h), mit 11 h B und 3553 MWh erfasst.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs sei $x$ = Produktionsrate von Anlage A (MWh/Betriebsstunden), $y$ = Produktionsrate von Anlage B (MWh/Betriebsstunden).\n\n**1. Übersetzen: Tag 1.** In Symbolen:\n\n$$14x + 20y = 3990 \\tag{1}$$\n\n**2. Übersetzen: Tag 2.** In Symbolen:\n\n$$22x + 9y = 4072 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Teile Tag 1 durch 2:\n\n$$\n7x + 10y = 1995\n$$\n\n**2.** Multiplizieren Sie diese vereinfachte Gleichung mit 9:\n\n$$\n63x + 90y = 17955\n$$\n\n**3.** Multiplizieren Sie Tag 2 mit 10:\n\n$$\n10(22x + 9y) = 10(4072) \\Rightarrow 220x + 90y = 40720\n$$\n\n**4.** Subtrahiere den skalierten Tag 1 vom skalierten Tag 2:\n\n$$\n(220x + 90y) - (63x + 90y) = 40720 - 17955\n$$\n\n$$\n157x = 22765 \\Rightarrow x = \frac{22765}{157} = 145.0\n$$\n\n**5.** Setze $x = 145$ in $7x + 10y = 1995$:\n\n$$\n7(145) + 10y = 1995 \\Rightarrow 1015 + 10y = 1995 \\Rightarrow 10y = 980 \\Rightarrow y = 98.0\n$$\n\n**6.** Audit Tag 3$1020$ min $= 17$ hrs):\n\n$$\n17(145) + 11(98) = 2465 + 1078\n$$\n\n$$\n= 3543\n$$\n\ngegenüber 3,553 MWh gemessen, eine Diskrepanz von 10 MWh.\n\n**Antwort.** Anlage A = 145,0 MWh/h | Anlage B = 98,0 MWh/h | Tag 3 vorhergesagt = 3,543 MWh (vs.) 3,553 MWh aufgezeichnet."
   },
   "MATH 5.61": {
     "title": "Klausuraufgaben – 1",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein Observatorium verkaufte 140 Eintritte zu \\$18 für Erwachsene und \\$10 für Kinder und nahm \\$2{,}048 ein. Sind die beiden Eintrittszahlen unbekannt, impliziert die Einnahme $85$ Erwachseneneintritte.",
+      "Ein Observatorium verkaufte 140 Eintritte zu \\$18 für Erwachsene und \\$10 für Kinder und nahm \\$2,048 ein. Sind die beiden Eintrittszahlen unbekannt, impliziert die Einnahme $85$ Erwachseneneintritte.",
       "Ein Gewächshaus mischt eine unbekannte Masse $8\\%$-Stickstoffboden mit einer unbekannten Masse $20\\%$-Boden. Die $60$-kg-Mischung testet auf $13\\%$, und die Leitung behauptet, $25$ kg kämen aus dem $20\\%$-Vorrat.",
       "Eine Geigenlehrerin und eine Schülerin haben zusammen $66$ Jahre, und die Lehrerin ist $24$ Jahre älter. Löst man die beiden gegenwärtigen Alter, ist die Lehrerin $48$ Jahre alt.",
       "Eine Vermessungsdrohne fliegt mit Rückenwind mit $78$ km/h und gegen denselben Wind mit $54$ km/h. Behandelt man Stillluft- und Windgeschwindigkeit als Unbekannte, beträgt die Stillluftgeschwindigkeit $66$ km/h.",
@@ -1166,7 +1166,7 @@
       "Vor acht Jahren war eine Architektin dreimal so alt wie ein Praktikant damals; heute addieren sich ihre Alter zu $72$. Diese Bedingungen setzen das aktuelle Alter der Architektin auf $46$ Jahre.",
       "Zwei Etikettendrucker produzieren zusammen $92$ Etiketten pro Minute; der neuere produziert jede Minute $18$ mehr als der ältere. Die Rate des neueren Druckers beträgt $55$ Etiketten/min.",
       "Eine Gießerei plant Bronze- und Stahlchargen. Ofenzeit ergibt $3x+2y=94$, Arbeitszeit $x+4y=88$. Der Plan enthält $15$ Bronzechargen.",
-      "Bei einem Laternenfestival waren 96 Wochenendpässe entweder VIP zu \\$45 oder regulär zu \\$27. Die Einnahmen erreichten \\$3{,}312, daher sagt die Organisation, $40$ seien VIP-Pässe gewesen."
+      "Bei einem Laternenfestival waren 96 Wochenendpässe entweder VIP zu \\$45 oder regulär zu \\$27. Die Einnahmen erreichten \\$3,312, daher sagt die Organisation, $40$ seien VIP-Pässe gewesen."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=50,\\quad 70x+30y=2300\n$$\n\n$$\n1\\cdot 30 = 30,\\quad 1\\cdot 70 = 70\n$$\n\n$$\n\\Delta = 30 - 70 = -40\n$$\n\n$$\n50\\cdot 30 = 1500,\\quad 1\\cdot 2300 = 2300,\\quad 1500 - 2300 = -800\n$$\n\n$$\nx = \\frac{-800}{-40} = 20\n$$\n\n$$\n1\\cdot 2300 = 2300,\\quad 50\\cdot 70 = 3500,\\quad 2300 - 3500 = -1200\n$$\n\n$$\ny = \\frac{-1200}{-40} = 30\n$$\n\nDas System gibt $20$ Liter für Liter 70 Prozent Frostschutzmittel, genau wie behauptet.\n\nDie Aussage ist richtig.",
@@ -1184,7 +1184,7 @@
       "Eine Großmutter ist jetzt viermal so alt wie ihre Enkelin. In $12$ Jahren wird sie dann doppelt so alt sein wie die Enkelin. Die Großmutter ist derzeit $30$ Jahre alt.",
       "Zwei Radfahrer fahren drei Stunden in entgegengesetzte Richtungen und entfernen sich um $330$ km. Eine/r fährt $14$ km/h schneller als die/der andere. Die langsamere Geschwindigkeit beträgt $48$ km/h.",
       "Eine Textilaufsicht schreibt $2x+6y=48$ und $x+3y=24$ für Hemden- und Jackenläufe. Die beiden Aufzeichnungen beschreiben ein System ohne Lösung.",
-      "Eine Fähre beförderte 85 bezahlte Fahrzeuge: Autos kosten \\$24 und Motorräder \\$14. Das Manifest über \\$1{,}770 würde bei gemeinsamer Lösung der beiden Fahrzeugzahlen $58$ Autotarife erfordern.",
+      "Eine Fähre beförderte 85 bezahlte Fahrzeuge: Autos kosten \\$24 und Motorräder \\$14. Das Manifest über \\$1,770 würde bei gemeinsamer Lösung der beiden Fahrzeugzahlen $58$ Autotarife erfordern.",
       "Eine Rösterei stellt eine $40$-kg-Mischung aus Bohnen zu \\$12 und \\$21 pro Kilogramm her. Die gewünschten Durchschnittskosten sind \\$15.60, also müssen $21$ kg die Premium-Bohnen sein."
     ],
     "tactical_explanations": [
@@ -1220,7 +1220,7 @@
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Ein Versandmanifest sagt $3x+9y=75$ Containereinheiten, aber ein skalierter Inspektionsbericht sagt $x+3y=28$. Das resultierende Containerzahl-System hat unendlich viele Lösungen.",
-      "Eine Skihütte vermietete 72 Ausrüstungssets. Ganztag-Sets brachten je \\$58 und Halbtag-Sets je \\$34, bei Gesamteinnahmen von \\$3{,}312. Das erzwingt $36$ Ganztag-Vermietungen.",
+      "Eine Skihütte vermietete 72 Ausrüstungssets. Ganztag-Sets brachten je \\$58 und Halbtag-Sets je \\$34, bei Gesamteinnahmen von \\$3,312. Das erzwingt $36$ Ganztag-Vermietungen.",
       "Eine Klinik verdünnt $12\\%$-Kochsalzlösung mit $3\\%$-Kochsalzlösung und verwendet nur diese beiden Vorräte. Für $30$ Liter bei $6\\%$ beträgt der $12\\%$-Anteil $13$ Liter.",
       "In fünf Jahren wird eine Pilotin $11$ Jahre älter sein als das Doppelte des dannigen Alters eines Kadetten. Ihre heutigen Alter addieren sich zu $55$. Das gegenwärtige Alter der Pilotin beträgt $42$ Jahre.",
       "Zwei Montage-Crews fertigen zusammen $46$ Paneele pro Tag, und Crew A fertigt $8$ mehr als Crew B. Die Tagesrate von Crew A beträgt $31$ Paneele/Tag."
@@ -1238,7 +1238,7 @@
     "title": "Klausuraufgaben – 6",
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
-      "Ein Nachtmarkt bereitete 150 Obst-/Gemüsekörbe vor, große zu \\$22 und kleine zu \\$13. Der Verkauf aller Körbe ergab \\$2{,}535. Der Verkaufsmix enthält $65$ große Körbe.",
+      "Ein Nachtmarkt bereitete 150 Obst-/Gemüsekörbe vor, große zu \\$22 und kleine zu \\$13. Der Verkauf aller Körbe ergab \\$2,535. Der Verkaufsmix enthält $65$ große Körbe.",
       "Eine Wandmalerin mischt $25\\%$-Pigmentfarbe und $55\\%$-Pigmentfarbe zu $24$ Litern mit Pigmentanteil $37{,}5\\%$. Die stärkere Farbe trägt $8$ Liter bei.",
       "Eine Produzentin ist sechs Jahre jünger als das Dreifache des Alters einer Darstellerin, und zusammen sind sie $62$ Jahre alt. Das Alter der Darstellerin beträgt $17$ Jahre.",
       "Die Bodengeschwindigkeit eines Frachtflugzeugs beträgt $610$ km/h mit Rückenwind und $530$ km/h dagegen. Die Geschwindigkeit in Stillluft beträgt $560$ km/h.",
@@ -1261,7 +1261,7 @@
       "Vor zehn Jahren war das Alter einer Wissenschaftlerin das Doppelte des Alters einer Technikerin; in zehn Jahren werden ihre Alter sich zu $94$ addieren. Die Wissenschaftlerin ist jetzt $46$ Jahre alt.",
       "Zwei Pumpen füllen parallel $150$ Liter pro Minute. Die Hauptpumpe fördert das Doppelte der Backup-Rate plus $6$ Liter pro Minute. Die Rate der Backup-Pumpe beträgt $51$ Liter/min.",
       "Eine Obstplantage pflanzt Apfel- und Birnenreihen. Flächenbedingungen lauten $5x+3y=144$ und Bewässerungsbedingungen $2x+4y=108$. Die Apfelreihen-Lösung ist $18$.",
-      "Ein Wissenschaftsmuseum gab 110 Armbänder aus, teils mit VR zu \\$31 und der Rest nur Ausstellung zu \\$19. Die Kasse nahm \\$2{,}606 ein, was bedeutet, dass $50$ VR-Armbänder ausgegeben wurden."
+      "Ein Wissenschaftsmuseum gab 110 Armbänder aus, teils mit VR zu \\$31 und der Rest nur Ausstellung zu \\$19. Die Kasse nahm \\$2,606 ein, was bedeutet, dass $50$ VR-Armbänder ausgegeben wurden."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nSchreiben Sie beide Stammbedingungen als lineare Gleichungen in die beiden Unbekannten und lösen Sie dann das System für die im Aussage genannte Größe.\n\n$$\n1x+1y=80,\\quad 50x+10y=2000\n$$\n\n$$\n1\\cdot 10 = 10,\\quad 1\\cdot 50 = 50\n$$\n\n$$\n\\Delta = 10 - 50 = -40\n$$\n\n$$\n80\\cdot 10 = 800,\\quad 1\\cdot 2000 = 2000,\\quad 800 - 2000 = -1200\n$$\n\n$$\nx = \\frac{-1200}{-40} = 30\n$$\n\n$$\n1\\cdot 2000 = 2000,\\quad 80\\cdot 50 = 4000,\\quad 2000 - 4000 = -2000\n$$\n\n$$\ny = \\frac{-2000}{-40} = 50\n$$\n\nDas System gibt $30$ Liter für tausend Liter B50, nicht $35$ liters.\n\nDie Aussage ist falsch.",
@@ -1279,7 +1279,7 @@
       "Ein Elternteil ist $27$ Jahre älter als ein Kind. Nach neun Jahren wird das Alter des Elternteils das $\\frac{5}{2}$-fache des kindlichen Alters dann sein. Das aktuelle Alter des Kindes beträgt $9$ Jahre.",
       "Zwei Kuriere starten $24$ km auseinander und fahren aufeinander zu; sie treffen sich nach $0{,}2$ Stunde. Die/der schnellere fährt $20$ km/h schneller, also fährt die/der langsamere mit $45$ km/h.",
       "Ein Krankenhaus besetzt examinierte Pflegekräfte und Hilfskräfte in einer Schicht. Kopfzahl ergibt $x+y=52$ und Qualifikationseinheiten $3x+y=100$. Die Schicht nutzt $24$ examinierte Pflegekräfte.",
-      "Ein Nachtzug buchte 64 Liegeplätze zu \\$120 und Sitzplätze zu \\$68 und nahm von diesen 64 Reisenden \\$5{,}704 ein. Die Lösung der beiden Buchungszahlen ergibt $22$ Liegeplätze.",
+      "Ein Nachtzug buchte 64 Liegeplätze zu \\$120 und Sitzplätze zu \\$68 und nahm von diesen 64 Reisenden \\$5,704 ein. Die Lösung der beiden Buchungszahlen ergibt $22$ Liegeplätze.",
       "Eine Futtermühle verwendet $16\\%$- und $28\\%$-Proteinmehle für $90$ Tonnen bei $22\\%$ Protein. Das proteinreiche Mehl muss $45$ Tonnen liefern."
     ],
     "tactical_explanations": [
@@ -1297,7 +1297,7 @@
     "statements": [
       "Ein Paar Erntemaschinen verarbeitet $84$ Reihen pro Stunde. Die Rate der größeren ist genau das Doppelte der kleineren. Die größere Maschine schafft $63$ Reihen/Stunde.",
       "Für Bühnenplattformen und Lichttürme erfasst ein Eventplan $4x+2y=60$ und $6x+3y=90$. Diese beiden Nebenbedingungen ergeben unendlich viele Lösungen.",
-      "Eine Wohltätigkeitsorganisation druckte 200 Los-Tickets, Gold zu \\$25 und Silber zu \\$8. Die ausverkaufte Ziehung brachte \\$2{,}450. Genau $55$ der Tickets müssen Gold gewesen sein.",
+      "Eine Wohltätigkeitsorganisation druckte 200 Los-Tickets, Gold zu \\$25 und Silber zu \\$8. Die ausverkaufte Ziehung brachte \\$2,450. Genau $55$ der Tickets müssen Gold gewesen sein.",
       "Eine Juwelierin schmilzt $40$ Gramm einer $30\\%$-Goldlegierung mit einer reicheren $75\\%$-Legierung ohne Reingold. Eine finale $48\\%$-Legierung erfordert $16$ Gramm des reicheren Materials.",
       "Die Alter zweier Geschwister unterscheiden sich um $7$ Jahre. Vor vier Jahren war das ältere Geschwister $\\frac{3}{2}$-mal so alt wie das jüngere damals. Das ältere Geschwister ist jetzt $28$ Jahre alt."
     ],
@@ -1315,7 +1315,7 @@
     "context": "Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
     "statements": [
       "Eine Telekom-Bestellung kombiniert Glasfaser- und Funkknoten. Budgeteinheiten erfüllen $6x+5y=137$, Technikerstunden $2x+3y=63$. Die Glasfaserknoten-Anzahl beträgt $12$.",
-      "Ein Jachthafen erfasste 90 Liegeplatz-Vermietungen, Übernachtung zu \\$75 und Tagesmiete zu \\$35. Die Kasse zeigte \\$4{,}350, also beträgt die unbekannte Übernachtungszahl $27$.",
+      "Ein Jachthafen erfasste 90 Liegeplatz-Vermietungen, Übernachtung zu \\$75 und Tagesmiete zu \\$35. Die Kasse zeigte \\$4,350, also beträgt die unbekannte Übernachtungszahl $27$.",
       "Eine Hygiene-Crew hat $20\\%$- und $80\\%$-Alkohollösungen. Ihre $45$-Liter-Desinfektionscharge muss $60\\%$ Alkohol sein, was $30$ Liter der $80\\%$-Lösung zuweist.",
       "Das Alter einer Regisseurin plus das Doppelte des Alters einer Schauspielerin ist $96$, während das Doppelte des Regisseurinnenalters minus das Schauspielerinnenalter $57$ ist. Die Regisseurin ist $36$ Jahre alt.",
       "Zwei Züge nähern sich einander mit kombiniert $170$ km/h; der ostwärts fahrende ist $30$ km/h schneller. Der westwärts fahrende Zug bewegt sich mit $70$ km/h."
@@ -1331,13 +1331,13 @@
   },
   "MATH 5.71": {
     "title": "Klausuraufgaben – 11",
-    "context": "Bei einer Kino-Gala kauften 180 Gäste jeweils genau ein Ticket. Ein 3D-Ticket kostete \\$16 und ein Standardticket \\$11. Die Kasse nahm \\$2{,}430 ein, ohne Rabatte, Rückerstattungen oder Gratis-Eintritte. Es sei $x$ die Anzahl der 3D-Tickets und $y$ die der Standardtickets. Die Geschäftsführung löst das zweigliedrige Kassensystem einmal, bevor sie die fünf Behauptungen prüft.",
+    "context": "Bei einer Kino-Gala kauften 180 Gäste jeweils genau ein Ticket. Ein 3D-Ticket kostete \\$16 und ein Standardticket \\$11. Die Kasse nahm \\$2,430 ein, ohne Rabatte, Rückerstattungen oder Gratis-Eintritte. Es sei $x$ die Anzahl der 3D-Tickets und $y$ die der Standardtickets. Die Geschäftsführung löst das zweigliedrige Kassensystem einmal, bevor sie die fünf Behauptungen prüft.",
     "statements": [
       "Die Zählgleichung lautet $x+y=180$.",
       "Die Einnahmengleichung lautet $16x+11y=2430$.",
       "Die Gala verkaufte 99 3D-Tickets.",
       "Die beiden Ticketzahlen unterscheiden sich um 10.",
-      "3D-Tickets trugen \\$1{,}600 zu den Einnahmen bei."
+      "3D-Tickets trugen \\$1,600 zu den Einnahmen bei."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDie Patron Total übersetzt direkt in eine Zählgleichung. mit$x$ für 3D Tickets und $y$ für Standardtickets,\n\n$$x + y = 180$$\n\nDie Übersicht hat dies bereits als Gleichung (1) aufgezeichnet. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -1346,7 +1346,7 @@
       "**D.** → Falsch\n\nDie Lücke zwischen den beiden rekonstruierten Unbekannten ist ihr Unterschied:\n\n$$\nd = x - y\n$$\n\nMit den berechneten Lösungswerten $x = 90$ und $y = 90$ als Eingaben für diese Behauptung:\n\nIhr Unterschied ist\n\n$$\nx - y = 90 - 90 = 0\n$$\n\nDie Behauptung besagt, dass sich die Zählungen durch $10$Wir haben $0 \\ne 10$.\n\nDie gemeinsame Elimination hat das eindeutige Paar bereits festgelegt; dieser Buchstabe prüft nur die zusätzliche Rechnung der Behauptung.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nVerwende die berechneten Werte aus dem Überblick für diese aussagespezifische Prüfung.\n\n3D-Einnahmen verwenden die rekonstruierte Anzahl:\n\n$$\n16 \\times 90 = 1{,}440\n$$\n\nDie Behauptung lautet\n\n$$1600.$$\n\nDie Lücke ist \\$160.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Bei einer Kinogala kauften 180 Gäste jeweils ein Ticket. Ein 3D-Ticket kostet \\$16 und ein Standardticket kostet \\$11. Die Kassenbuchkasse \\$2{,}430.\n\nEs sei $x$ = Anzahl der 3D-Tickets und $y$ = Anzahl der Standardtickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultipliziere (1) by $11$ und subtrahieren von (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y = 90\n$$\n\n3D-Einnahmen sind $16 \\times 90 = 1{,}440$und Standardeinnahmen sind $11 \\times 90 = 990$."
+    "solution_overview": "Bei einer Kinogala kauften 180 Gäste jeweils ein Ticket. Ein 3D-Ticket kostet \\$16 und ein Standardticket kostet \\$11. Die Kassenbuchkasse \\$2,430.\n\nEs sei $x$ = Anzahl der 3D-Tickets und $y$ = Anzahl der Standardtickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultipliziere (1) by $11$ und subtrahieren von (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y = 90\n$$\n\n3D-Einnahmen sind $16 \\times 90 = 1{,}440$und Standardeinnahmen sind $11 \\times 90 = 990$."
   },
   "MATH 5.72": {
     "title": "Klausuraufgaben – 12",
@@ -1426,12 +1426,12 @@
   },
   "MATH 5.76": {
     "title": "Klausuraufgaben – 16",
-    "context": "Ein Flughafen-Kiosk gab in einer Schicht 160 Transitpässe aus. Expresspässe kosteten \\$21 und Lokalpässe \\$12, und die Kassensumme betrug \\$2{,}460. Keine Pässe waren gratis oder erstattet. Es sei $x$ die Anzahl Express- und $y$ die Anzahl Lokalpässe. Die Aufsicht löst das zweigliedrige Verkaufsjournal einmal, bevor sie die fünf Behauptungen prüft.",
+    "context": "Ein Flughafen-Kiosk gab in einer Schicht 160 Transitpässe aus. Expresspässe kosteten \\$21 und Lokalpässe \\$12, und die Kassensumme betrug \\$2,460. Keine Pässe waren gratis oder erstattet. Es sei $x$ die Anzahl Express- und $y$ die Anzahl Lokalpässe. Die Aufsicht löst das zweigliedrige Verkaufsjournal einmal, bevor sie die fünf Behauptungen prüft.",
     "statements": [
       "Die Verkaufsgleichungen lauten $x+y=160$ und $21x+12y=2460$.",
       "Der Kiosk verkaufte 60 Expresspässe.",
       "Der Kiosk verkaufte 100 Lokalpässe.",
-      "Die Einnahmen aus Expresspässen betrugen \\$1{,}200.",
+      "Die Einnahmen aus Expresspässen betrugen \\$1,200.",
       "Die Einnahmen aus Lokalpässen überstiegen die aus Expresspässen."
     ],
     "tactical_explanations": [
@@ -1439,9 +1439,9 @@
       "**B.** → Richtig\n\nLösen Sie das Übersichtssystem und halten Sie jede algebraische Bewegung in ihrem eigenen Display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nDer wiedererlangte Wert ist\n\n$$x = 60$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nLösen Sie das Übersichtssystem und halten Sie jede algebraische Bewegung in ihrem eigenen Display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nExpress-Pass-Einnahmen verwenden die rekonstruierte Anzahl:\n\n$$\n21 \\times 60 = 1{,}260\n$$\n\nDie Behauptung lautet\n\n$$1200.$$\n\nVergleichen,\n\n$$1{,}260 \\ne 1{,}200.$$\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nExpresseinnahmen sind \\$1{,}260 und lokale Einnahmen sind \\$1{,}200:\n\n$$\n1{,}260 - 1{,}200 = 60\n$$\n\nLokale Einnahmen sind \\$60 niedriger, nicht höher. Die Behauptung besagt, dass Local Express überschritten hat.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nExpresseinnahmen sind \\$1,260 und lokale Einnahmen sind \\$1,200:\n\n$$\n1{,}260 - 1{,}200 = 60\n$$\n\nLokale Einnahmen sind \\$60 niedriger, nicht höher. Die Behauptung besagt, dass Local Express überschritten hat.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "An airport kiosk issued $160$ Transitpässe. Expresspasskosten \\$Kosten für 21 und lokale Pässe \\$12, für ein Register insgesamt von \\$2{,}460.\n\nEs sei $x$ = Expresspässe und $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultipliziere (1) by $12$ und subtrahieren von (2):\n\n$$9x = 540$$\n\n$$\nx = 60,\\qquad y = 100\n$$\n\nExpresseinnahmen sind $21 \\times 60 = 1{,}260$Die lokalen Einnahmen sind $12 \\times 100 = 1{,}200$."
+    "solution_overview": "An airport kiosk issued $160$ Transitpässe. Expresspasskosten \\$Kosten für 21 und lokale Pässe \\$12, für ein Register insgesamt von \\$2,460.\n\nEs sei $x$ = Expresspässe und $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultipliziere (1) by $12$ und subtrahieren von (2):\n\n$$9x = 540$$\n\n$$\nx = 60,\\qquad y = 100\n$$\n\nExpresseinnahmen sind $21 \\times 60 = 1{,}260$Die lokalen Einnahmen sind $12 \\times 100 = 1{,}200$."
   },
   "MATH 5.77": {
     "title": "Klausuraufgaben – 17",
@@ -1455,12 +1455,12 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um dieselbe Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDie Gesamtmasse ist die Summe der beiden Klassen:\n\n$$x + y = 50$$\n\nDie Übersicht hat bereits diese Massengleichung aufgezeichnet. Das stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDie Gesamtkosten des Stammes sind \\$1{,}140, also ist die Kostengleichung\n\n$$30x + 18y = 1140$$\n\nDie Behauptung schreibt rechts $1150$. Vergleichen,\n\n$$1140 \\ne 1150.$$\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDie Gesamtkosten des Stammes sind \\$1,140, also ist die Kostengleichung\n\n$$30x + 18y = 1140$$\n\nDie Behauptung schreibt rechts $1150$. Vergleichen,\n\n$$1140 \\ne 1150.$$\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nLösen Sie das Übersichtssystem und halten Sie jede algebraische Bewegung in ihrem eigenen Display.\n\n$$x + y = 50$$\n\n$$30x + 18y = 1140$$\n\n$$12x = 240$$\n\n$$x = 20$$\n\n$$\ny = 30\n$$\n\nDer wiedererlangte Wert ist\n\n$$x = 20$$\n\nDieser Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nStarte von den berechneten Unbekannten des Überblicks, wende nur die Zusatzprüfung dieser Behauptung an und vergleiche mit dem angegebenen Wert.\n\nDer Kostenbeitrag von Premium Tea ist\n\n$$\n30 \\times 20 = 600\n$$\n\nDie Behauptung lautet\n\n$$780.$$\n\nVergleichen,\n\n$$600 \\ne 780.$$\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDer Überblick liefert $y = 30$ kg Standardtee. Die Behauptung lautet\n\n$$32$$\n\nVergleichen,\n\n$$30 \\ne 32.$$\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg mit Standardtee bei \\$18/kg, so dass die Gesamtkosten \\$1{,}140.\n\nEs sei $x$ = kg Prämie und $y$ = kg Standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultipliziere (1) by $18$ und subtrahieren von (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y = 30\n$$\n\nPremiumkosten sind $30 \\times 20 = 600$."
+    "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg mit Standardtee bei \\$18/kg, so dass die Gesamtkosten \\$1,140.\n\nEs sei $x$ = kg Prämie und $y$ = kg Standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultipliziere (1) by $18$ und subtrahieren von (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y = 30\n$$\n\nPremiumkosten sind $30 \\times 20 = 600$."
   },
   "MATH 5.78": {
     "title": "Klausuraufgaben – 18",

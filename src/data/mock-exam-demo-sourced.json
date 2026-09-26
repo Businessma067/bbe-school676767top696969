@@ -724,10 +724,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nSix beginning-of-year payments form an annuity due. Its present value is the ordinary-annuity factor for 6 periods, shifted forward one period:\n\n$$\nPV=5500\\cdot\\frac{1-(1.07)^{-6}}{0.07}\\cdot 1.07\n$$\n\n$$\n\\frac{1-(1.07)^{-6}}{0.07}\\approx 4.7665\n$$\n\n$$\nPV\\approx 5500\\cdot 4.7665\\cdot 1.07\\approx 28{,}050\n$$\n\nSo the statement is True.",
-        "**B.** → False\n\nThe future value at the end of year 6 is\n\n$$\nFV=5500\\cdot\\frac{(1.07)^{6}-1}{0.07}\\cdot 1.07\n$$\n\n$$\n(1.07)^{6}\\approx 1.5007\n$$\n\n$$\n\\frac{1.5007-1}{0.07}\\approx 7.153\n$$\n\n$$\nFV\\approx 5500\\cdot 7.153\\cdot 1.07\\approx 42{,}090\n$$\n\nwhich is far from $\\$50{,}000$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\nFV=25000\\,e^{0.055\\cdot 8}=25000\\,e^{0.44}\n$$\n\n$$\ne^{0.44}\\approx 1.5527\n$$\n\n$$\nFV\\approx 38{,}818\n$$\n\nwhich matches the claimed $\\$38{,}820$ to ordinary exam rounding.\n\nSo the statement is True.",
-        "**D.** → False\n\nGrowing perpetuity:\n\n$$\nPV=\\frac{2400}{0.07-0.02}=\\frac{2400}{0.05}=48{,}000\n$$\n\nThe annuity-due PV is about $\\$28{,}050$. Because $48{,}000>28{,}050$, the perpetuity is not less than the lease PV.\n\nSo the statement is False.",
-        "**E.** → False\n\nContinuous FV $\\approx\\$38{,}818$ while the perpetuity PV is $\\$48{,}000$. The continuous result is smaller, not larger.\n\nSo the statement is False."
+        "**B.** → False\n\nThe future value at the end of year 6 is\n\n$$\nFV=5500\\cdot\\frac{(1.07)^{6}-1}{0.07}\\cdot 1.07\n$$\n\n$$\n(1.07)^{6}\\approx 1.5007\n$$\n\n$$\n\\frac{1.5007-1}{0.07}\\approx 7.153\n$$\n\n$$\nFV\\approx 5500\\cdot 7.153\\cdot 1.07\\approx 42{,}090\n$$\n\nwhich is far from $\\$50,000$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\nFV=25000\\,e^{0.055\\cdot 8}=25000\\,e^{0.44}\n$$\n\n$$\ne^{0.44}\\approx 1.5527\n$$\n\n$$\nFV\\approx 38{,}818\n$$\n\nwhich matches the claimed $\\$38,820$ to ordinary exam rounding.\n\nSo the statement is True.",
+        "**D.** → False\n\nGrowing perpetuity:\n\n$$\nPV=\\frac{2400}{0.07-0.02}=\\frac{2400}{0.05}=48{,}000\n$$\n\nThe annuity-due PV is about $\\$28,050$. Because $48,000>28,050$, the perpetuity is not less than the lease PV.\n\nSo the statement is False.",
+        "**E.** → False\n\nContinuous FV $\\approx\\$38,818$ while the perpetuity PV is $\\$48,000$. The continuous result is smaller, not larger.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "solution_overview": "Annuity-due PV: $PV_{\\mathrm{ad}}=5500+5500\\cdot\\frac{1-(1.07)^{-5}}{0.07}$. Continuous FV: $25000\\,e^{0.055\\cdot 8}$. Growing perpetuity: $PV=\\frac{2400}{0.07-0.02}$."

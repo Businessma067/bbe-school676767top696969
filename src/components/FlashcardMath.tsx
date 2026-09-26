@@ -13,9 +13,17 @@ export function indexOfUnescapedDollar(text: string, from = 0): number {
   return -1;
 }
 
-/** Prose `\$1,000` → `$1,000` for display (KaTeX still receives raw `\$` inside math). */
+/**
+ * Prose `\$1,000` → `$1,000` for display (KaTeX still receives raw `\$` inside math).
+ * Also flatten LaTeX thousands `{,}` left in currency/prose (`\$9{,}300` → `$9,300`).
+ */
 function unescapeProseDollars(s: string): string {
-  return s.replace(/\\\$/g, "$");
+  return s.replace(/\\\$/g, "$").replace(/\{,\}/g, ",");
+}
+
+/** Normalize thin-space / braced thousands to a plain comma for prose currency. */
+function plainCurrencyCommas(s: string): string {
+  return s.replace(/\\,/g, ",").replace(/\{,\}/g, ",");
 }
 
 const katexHtmlCache = new Map<string, string>();
@@ -157,9 +165,9 @@ type Part =
   | { type: "inline"; value: string }
   | { type: "display"; value: string };
 
-/** `$12,000` or `$12\,000` currency / plain amounts (thin space = thousands). */
+/** `$12,000` / `$12\,000` / `$12{,}000` currency amounts (thousands separators). */
 const CURRENCY_RE =
-  /\$\d+(?:(?:\\,|,)\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?!\\,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/y;
+  /\$\d+(?:(?:\\,|,|\{,\})\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?!\\,\d)(?!\{,\}\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/y;
 
 /**
  * Strip LaTeX so prose heuristics do not fire on command names (`\mid` → "mid")
@@ -305,11 +313,14 @@ function normalizeBrokenMathMarkup(input: string): string {
     return _m;
   });
 
-  // `$12\,000 subject` → `$12,000 subject` (not `$$40\,000 e`)
+  // `$12\,000 subject` / `$12{,}000 subject` → `$12,000 subject` (not `$$40\,000 e`)
   s = s.replace(
-    /(?<!\$)\$(\d{1,3}(?:\\,\d{3})+)(?=\s+[A-Za-z])/g,
-    (_, nums: string) => `$${nums.replace(/\\,/g, ",")}`,
+    /(?<!\$)\$(\d{1,3}(?:(?:\\,|\{,\})\d{3})+)(?=\s+[A-Za-z])/g,
+    (_, nums: string) => `$${plainCurrencyCommas(nums)}`,
   );
+
+  // Escaped currency leftovers: `\$9{,}300.00` → `\$9,300.00` (prose, not KaTeX).
+  s = s.replace(/\\\$(\d[\d.,\\{}]*)/g, (_m, nums: string) => `\\$${plainCurrencyCommas(nums)}`);
 
   return s;
 }
@@ -699,8 +710,8 @@ function splitMath(input: string): Part[] {
         const afterMath = indexOfUnescapedDollar(text, i + cur[0].length);
         const between = afterMath === -1 ? "" : text.slice(i + 1, afterMath);
         if (!(afterMath !== -1 && looksLikeMathInner(between))) {
-          // Show thin-space currency as a normal comma amount in prose.
-          buf += cur[0].replace(/\\,/g, ",");
+          // Show thin-space / braced thousands as a normal comma amount in prose.
+          buf += plainCurrencyCommas(cur[0]);
           i += cur[0].length;
           continue;
         }

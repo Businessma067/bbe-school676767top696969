@@ -2171,14 +2171,14 @@
     "statements": [
       "Der Erwartungswert von $X$ ist größer als $\\$10$.",
       "Die Standardabweichung $\\sigma$ von $X$ ist größer als $\\$22$.",
-      "Der Erwartungswert von $Y$ ist größer als $\\$8{,}50$.",
+      "Der Erwartungswert von $Y$ ist größer als $\\$8,50$.",
       "Die Varianz von $Y$ ist größer als 470.",
       "Die Standardabweichung $\\sigma$ von $Y$ ist kleiner als $\\$21$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAussage A: Der Erwartungswert von $X$ ist größer als $\\$10$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X] = \\sum_{i} x_i P(X = x_i)\n$$\n\n$$\nE[X] = (0)(0.40) + (5)(0.35) + (20)(0.20) + (100)(0.05)\n$$\n\n$$\nE[X] = 0 + 1.75 + 4 + 5\n$$\n\n$$\n0 + 1.75 = 1.75\n$$\n\n$$\n1.75 + 4 = 5.75\n$$\n\n$$\n5.75 + 5 = 10.75\n$$\n\n$$\nE[X] = 10.75\n$$\n\nDie Aussage ist richtig.\n",
       "**B.** → Falsch\n\nAussage B: Die Standardabweichung $\\sigma_X$ von $X$ ist größer als $22$. Mit $\\mathrm{Var}(X)=E[X^2]-(E[X])^2$ und $E[X]=10{,}75$ aus der Übersicht:\n\n$$\nE[X^2] = 0^2\\cdot 0{,}40 + 5^2\\cdot 0{,}35 + 20^2\\cdot 0{,}20 + 100^2\\cdot 0{,}05 = 588{,}75\n$$\n\n$$\n\\mathrm{Var}(X) = 588{,}75 - (10{,}75)^2 = 473{,}1875\n$$\n\n$$\n\\sigma_X = \\sqrt{473{,}1875} \\approx 21{,}75 < 22\n$$\n\nDie Aussage ist falsch.\n",
-      "**C.** → Richtig\n\nAussage C: Der Erwartungswert von $Y$ ist größer als $\\$8{,}50$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[Y] = (1)E[X] + (-2)\n$$\n\n$$\nE[Y] = 10.75 - 2\n$$\n\n$$\n10.75 - 2 = 8.75\n$$\n\n$$\nE[Y] = 8.75\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Der Erwartungswert von $Y$ ist größer als $\\$8,50$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[Y] = (1)E[X] + (-2)\n$$\n\n$$\nE[Y] = 10.75 - 2\n$$\n\n$$\n10.75 - 2 = 8.75\n$$\n\n$$\nE[Y] = 8.75\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Richtig\n\nAussage D: Die Varianz von $Y$ ist größer als 470. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(Y) = (1)^2 \\mathrm{Var}(X)\n$$\n\n$$\n\\mathrm{Var}(Y) = 1 \\cdot 473.1875\n$$\n\n$$\n1 \\times 473.1875 = 473.1875\n$$\n\n$$\n\\mathrm{Var}(Y) = 473.1875\n$$\n\nDie Aussage ist richtig.\n",
       "**E.** → Falsch\n\nAussage E: Die Standardabweichung $\\sigma$ von $Y$ ist kleiner als $\\$21$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\sigma_Y = |1| \\sigma_X\n$$\n\n$$\n\\sigma_Y = 21.75287\n$$\n\nDie Aussage ist falsch.\n"
     ],
@@ -2361,14 +2361,14 @@
     "statements": [
       "Der Mittelwert $\\mu$ beträgt $\\$5$.",
       "Die Varianz $\\sigma^2$ beträgt 125.",
-      "Die Standardabweichung $\\sigma$ beträgt etwa $\\$11{,}18$.",
+      "Die Standardabweichung $\\sigma$ beträgt etwa $\\$11,18$.",
       "Die Wahrscheinlichkeit $P(X=0)$ ist größer als $P(X=10)+P(X=50)$.",
       "Die Standardabweichung $\\sigma$ ist größer als das Doppelte von $\\mu$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAussage A: Der Mittelwert $\\mu$ beträgt $\\$5$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X] = (0)(0.70) + (10)(0.25) + (50)(0.05)\n$$\n\n$$\nE[X] = 5\n$$\n\nDie Aussage ist richtig.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz $\\sigma^2$ beträgt 125. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X^2] = (0^2)(0.70) + (10^2)(0.25) + (50^2)(0.05)\n$$\n\n$$\nE[X^2] = 150\n$$\n\n$$\n\\sigma^2 = 150 - (5)^2\n$$\n\n$$\n\\sigma^2 = 150 - 25\n$$\n\n$$\n150 - 25 = 125\n$$\n\n$$\n\\sigma^2 = 125\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Richtig\n\nAussage C: Die Standardabweichung $\\sigma$ beträgt etwa $\\$11{,}18$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\sigma = \\sqrt{125}\n$$\n\n$$\n\\sigma \\approx 11.18034\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Standardabweichung $\\sigma$ beträgt etwa $\\$11,18$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\sigma = \\sqrt{125}\n$$\n\n$$\n\\sigma \\approx 11.18034\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit $P(X=0)$ ist größer als $P(X=10)+P(X=50)$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(X = 0) = 0.70\n$$\n\n$$\nP(X = 10) = 0.25\n$$\n\n$$\nP(X = 50) = 0.05\n$$\n\n$$\nP(X = 10) + P(X = 50) = 0.25 + 0.05 = 0.30\n$$\n\n$$\n0.70 > 0.30\n$$\n\nDie Aussage ist richtig.\n",
       "**E.** → Richtig\n\nAussage E: Die Standardabweichung $\\sigma$ ist größer als das Doppelte von $\\mu$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n2\\mu = 2 \\times 5\n$$\n\n$$\n2 \\times 5 = 10\n$$\n\n$$\n2\\mu = 10\n$$\n\n$$\n11.18034 > 10\n$$\n\nDie Aussage ist richtig.\n"
     ],
@@ -2473,16 +2473,16 @@
     "title": "Ein Verkaufsautomat",
     "context": "Ein Verkaufsautomat verkauft Snacks zu drei Preisen. Der vom nächsten Kunden gezahlte Preis $X$ ist $\\$1$ mit Wahrscheinlichkeit 0,20, $\\$2$ mit 0,50 und $\\$3$ mit 0,30.",
     "statements": [
-      "Der Erwartungswert von $X$ beträgt $\\$2{,}10$.",
+      "Der Erwartungswert von $X$ beträgt $\\$2,10$.",
       "Die Varianz von $X$ beträgt 0,49.",
-      "Die Standardabweichung von $X$ beträgt $\\$0{,}70$.",
+      "Die Standardabweichung von $X$ beträgt $\\$0,70$.",
       "Die Wahrscheinlichkeit $P(X=2)$ ist größer als $P(X=1)$.",
       "Würde jeder Preis um $\\$1$ steigen (auf $\\$2$, $\\$3$, $\\$4$), bliebe die Varianz von $X$ weiterhin 0,49."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nAussage A: Der Erwartungswert von $X$ beträgt $\\$2{,}10$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X] = (1)(0.20) + (2)(0.50) + (3)(0.30)\n$$\n\n$$\nE[X] = 0.20 + 1.00 + 0.90\n$$\n\n$$\n0.2 + 1 = 1.2\n$$\n\n$$\n1.2 + 0.9 = 2.1\n$$\n\n$$\nE[X] = 2.10\n$$\n\nDie Aussage ist richtig.\n",
+      "**A.** → Richtig\n\nAussage A: Der Erwartungswert von $X$ beträgt $\\$2,10$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X] = (1)(0.20) + (2)(0.50) + (3)(0.30)\n$$\n\n$$\nE[X] = 0.20 + 1.00 + 0.90\n$$\n\n$$\n0.2 + 1 = 1.2\n$$\n\n$$\n1.2 + 0.9 = 2.1\n$$\n\n$$\nE[X] = 2.10\n$$\n\nDie Aussage ist richtig.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz von $X$ beträgt 0,49. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X^2] = 4.90\n$$\n\n$$\nE[X] = 2.10\n$$\n\n$$\n\\mathrm{Var}(X) = 4.90 - (2.10)^2\n$$\n\n$$\n\\mathrm{Var}(X) = 4.90 - 4.41\n$$\n\n$$\n4.9 - 4.41 = 0.49\n$$\n\n$$\n\\mathrm{Var}(X) = 0.49\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Richtig\n\nAussage C: Die Standardabweichung von $X$ beträgt $\\$0{,}70$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(X) = 0.49\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{0.49}\n$$\n\n$$\n\\mathrm{SD}(X) = 0.70\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Standardabweichung von $X$ beträgt $\\$0,70$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(X) = 0.49\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{0.49}\n$$\n\n$$\n\\mathrm{SD}(X) = 0.70\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit $P(X=2)$ ist größer als $P(X=1)$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(X = 1) = 0.20\n$$\n\n$$\nP(X = 2) = 0.50\n$$\n\n$$\n0.50 > 0.20\n$$\n\nDie Aussage ist richtig.\n",
       "**E.** → Richtig\n\nAussage E: Würde jeder Preis um $\\$1$ steigen (auf $\\$2$, $\\$3$, $\\$4$), bliebe die Varianz von $X$ weiterhin 0,49. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(X+1) = \\mathrm{Var}(X)\n$$\n\n$$\n\\mathrm{Var}(X) = 0.49\n$$\n\nDie Aussage ist richtig.\n"
     ],
@@ -2528,22 +2528,22 @@
   },
   "MATH 12.134": {
     "title": "Eine Versicherungspolice",
-    "context": "Eine Versicherungspolice zahlt einen Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,90, $\\$200$ mit 0,08 und $\\$5{,}000$ mit 0,02.",
+    "context": "Eine Versicherungspolice zahlt einen Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,90, $\\$200$ mit 0,08 und $\\$5,000$ mit 0,02.",
     "statements": [
       "Der Erwartungswert von $X$ beträgt $\\$100$.",
       "Die Varianz von $X$ beträgt etwa 489744.",
-      "Die Standardabweichung von $X$ beträgt etwa $\\$69{,}98$.",
+      "Die Standardabweichung von $X$ beträgt etwa $\\$69,98$.",
       "Die Wahrscheinlichkeit $P(X=5000)$ ist größer als $P(X=200)$.",
       "Die Standardabweichung von $X$ ist kleiner als der Erwartungswert von $X$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nAussage A: Der Erwartungswert von $X$ beträgt $\\$100$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE[X] = \\sum x \\cdot P(X = x)\n$$\n\n$$\nE[X] = (0)(0.90) + (200)(0.08) + (5000)(0.02)\n$$\n\n$$\nE[X] = 0 + 16 + 100\n$$\n\n$$\n0 + 16 = 16\n$$\n\n$$\n16 + 100 = 116\n$$\n\n$$\nE[X] = 116\n$$\n\nDie Aussage ist falsch.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz von $X$ beträgt etwa 489744. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X^2] = \\sum x^2 \\cdot P(X = x)\n$$\n\n$$\nE[X^2] = (0^2)(0.90) + (200^2)(0.08) + (5000^2)(0.02)\n$$\n\n$$\nE[X^2] = 0 + (40000)(0.08) + (25000000)(0.02)\n$$\n\n$$\nE[X^2] = 0 + 3200 + 500000\n$$\n\n$$\nE[X^2] = 503200\n$$\n\n$$\n\\mathrm{Var}(X) = E[X^2] - (E[X])^2\n$$\n\n$$\n\\mathrm{Var}(X) = 503200 - (116)^2\n$$\n\n$$\n\\mathrm{Var}(X) = 503200 - 13456\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Falsch\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$69{,}98$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{489744}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 699.8171\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$69,98$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{489744}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 699.8171\n$$\n\nDie Aussage ist falsch.\n",
       "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit $P(X=5000)$ ist größer als $P(X=200)$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(X = 5000) = 0.02\n$$\n\n$$\nP(X = 200) = 0.08\n$$\n\nDie Aussage ist falsch.\n",
       "**E.** → Falsch\n\nAussage E: Die Standardabweichung von $X$ ist kleiner als der Erwartungswert von $X$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE[X] = 116\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 699.8171\n$$\n\nDie Aussage ist falsch.\n"
     ],
-    "solution_overview": "Eine Versicherungspolice zahlt einen Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,90, $\\$200$ mit 0,08 und $\\$5{,}000$ mit 0,02. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.90\n$$\n\n$$\nP(X = 200) = 0.08\n$$\n\n$$\nP(X = 5000) = 0.02\n$$\n\n$$E[X] = (0)(0.90) + (200)(0.08) + (5000)(0.02)$$\n\n$$E[X] = 0 + 16 + 100$$\n\n$$E[X] = 116$$\n\n$$E[X^2] = (0^2)(0.90) + (200^2)(0.08) + (5000^2)(0.02)$$\n\n$$E[X^2] = (0)(0.90) + (40000)(0.08) + (25000000)(0.02)$$\n\n$$E[X^2] = 0 + 3200 + 500000$$\n\n$$E[X^2] = 503200$$\n\n$$\\mathrm{Var}(X) = 503200 - (116)^2$$\n\n$$\\mathrm{Var}(X) = 503200 - 13456$$\n\n$$\\mathrm{Var}(X) = 489744$$\n\n$$\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$$\n\n$$\\mathrm{SD}(X) = \\sqrt{489744}$$\n\n$$\\mathrm{SD}(X) \\approx 699.8171$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+    "solution_overview": "Eine Versicherungspolice zahlt einen Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,90, $\\$200$ mit 0,08 und $\\$5,000$ mit 0,02. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.90\n$$\n\n$$\nP(X = 200) = 0.08\n$$\n\n$$\nP(X = 5000) = 0.02\n$$\n\n$$E[X] = (0)(0.90) + (200)(0.08) + (5000)(0.02)$$\n\n$$E[X] = 0 + 16 + 100$$\n\n$$E[X] = 116$$\n\n$$E[X^2] = (0^2)(0.90) + (200^2)(0.08) + (5000^2)(0.02)$$\n\n$$E[X^2] = (0)(0.90) + (40000)(0.08) + (25000000)(0.02)$$\n\n$$E[X^2] = 0 + 3200 + 500000$$\n\n$$E[X^2] = 503200$$\n\n$$\\mathrm{Var}(X) = 503200 - (116)^2$$\n\n$$\\mathrm{Var}(X) = 503200 - 13456$$\n\n$$\\mathrm{Var}(X) = 489744$$\n\n$$\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$$\n\n$$\\mathrm{SD}(X) = \\sqrt{489744}$$\n\n$$\\mathrm{SD}(X) \\approx 699.8171$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
   },
   "MATH 12.135": {
     "title": "Eine Wohltätigkeitsverlosung",
@@ -2551,16 +2551,16 @@
     "statements": [
       "Der Erwartungswert von $X$ beträgt $\\$40$.",
       "Die Varianz von $X$ beträgt 5400.",
-      "Die Standardabweichung von $X$ beträgt etwa $\\$73{,}48$.",
+      "Die Standardabweichung von $X$ beträgt etwa $\\$73,48$.",
       "Die Wahrscheinlichkeit $P(X=0)$ ist kleiner als $P(X=50)+P(X=250)$.",
-      "Würde jeder Gewinn verdoppelt, betrüge die neue Standardabweichung von $X$ $\\$146{,}97$."
+      "Würde jeder Gewinn verdoppelt, betrüge die neue Standardabweichung von $X$ $\\$146,97$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAussage A: Der Erwartungswert von $X$ beträgt $\\$40$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X] = (0)(0.60) + (50)(0.30) + (250)(0.10)\n$$\n\n$$\nE[X] = 0 + 15 + 25\n$$\n\n$$\n0 + 15 = 15\n$$\n\n$$\n15 + 25 = 40\n$$\n\n$$\nE[X] = 40\n$$\n\nDie Aussage ist richtig.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz von $X$ beträgt 5400. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(X) = E[X^2] - (E[X])^2\n$$\n\n$$\n\\mathrm{Var}(X) = 7000 - (40)^2\n$$\n\n$$\n\\mathrm{Var}(X) = 7000 - 1600\n$$\n\n$$\n7000 - 1600 = 5400\n$$\n\n$$\n\\mathrm{Var}(X) = 5400\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Richtig\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$73{,}48$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{5400}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 73.48469\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$73,48$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{5400}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 73.48469\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit $P(X=0)$ ist kleiner als $P(X=50)+P(X=250)$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(X = 50) + P(X = 250) = 0.30 + 0.10\n$$\n\n$$\nP(X = 50) + P(X = 250) = 0.40\n$$\n\nDie Aussage ist falsch.\n",
-      "**E.** → Richtig\n\nAussage E: Würde jeder Gewinn verdoppelt, betrüge die neue Standardabweichung von $X$ $\\$146{,}97$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(Y) = \\mathrm{SD}(2X)\n$$\n\n$$\n\\mathrm{SD}(Y) = |2| \\cdot \\mathrm{SD}(X)\n$$\n\n$$\n\\mathrm{SD}(Y) = 2 \\cdot \\sqrt{5400}\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 2 \\cdot 73.48469\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 146.96938\n$$\n\nDie Aussage ist richtig.\n"
+      "**E.** → Richtig\n\nAussage E: Würde jeder Gewinn verdoppelt, betrüge die neue Standardabweichung von $X$ $\\$146,97$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(Y) = \\mathrm{SD}(2X)\n$$\n\n$$\n\\mathrm{SD}(Y) = |2| \\cdot \\mathrm{SD}(X)\n$$\n\n$$\n\\mathrm{SD}(Y) = 2 \\cdot \\sqrt{5400}\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 2 \\cdot 73.48469\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 146.96938\n$$\n\nDie Aussage ist richtig.\n"
     ],
     "solution_overview": "Eine Wohltätigkeitsverlosung verkauft Lose. Der Gewinn $X$ für das nächste gezogene Los ist $\\$0$ mit Wahrscheinlichkeit 0,60, $\\$50$ mit 0,30 und $\\$250$ mit 0,10. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.60\n$$\n\n$$\nP(X = 50) = 0.30\n$$\n\n$$\nP(X = 250) = 0.10\n$$\n\n$$\nE[X] = \\sum_{x} x P(X = x)\n$$\n\n$$E[X] = (0)(0.60) + (50)(0.30) + (250)(0.10)$$\n\n$$E[X] = 0 + 15 + 25$$\n\n$$E[X] = 40$$\n\n$$\nE[X^2] = \\sum_{x} x^2 P(X = x)\n$$\n\n$$E[X^2] = (0^2)(0.60) + (50^2)(0.30) + (250^2)(0.10)$$\n\n$$E[X^2] = (0)(0.60) + (2500)(0.30) + (62500)(0.10)$$\n\n$$E[X^2] = 0 + 750 + 6250$$\n\n$$E[X^2] = 7000$$\n\n$$\\mathrm{Var}(X) = 7000 - (40)^2$$\n\n$$\\mathrm{Var}(X) = 7000 - 1600$$\n\n$$\\mathrm{Var}(X) = 5400$$\n\n$$\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$$\n\n$$\\mathrm{SD}(X) = \\sqrt{5400}$$\n\n$$\\mathrm{SD}(X) \\approx 73.48469$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
   },
@@ -2642,22 +2642,22 @@
   },
   "MATH 12.140": {
     "title": "Eine erweiterte Garantie",
-    "context": "Eine erweiterte Garantie zahlt beim nächsten gemeldeten Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4{,}000$ mit 0,03.",
+    "context": "Eine erweiterte Garantie zahlt beim nächsten gemeldeten Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4,000$ mit 0,03.",
     "statements": [
       "Der Erwartungswert von $X$ beträgt $\\$150$.",
       "Die Varianz von $X$ beträgt etwa 463656.",
-      "Die Standardabweichung von $X$ beträgt etwa $\\$68{,}09$.",
+      "Die Standardabweichung von $X$ beträgt etwa $\\$68,09$.",
       "Die Wahrscheinlichkeit $P(X=4000)$ ist größer als $P(X=150)$.",
       "Die Standardabweichung von $X$ ist kleiner als der Erwartungswert von $X$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nAussage A: Der Erwartungswert von $X$ beträgt $\\$150$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE[X] = \\sum x P(X = x)\n$$\n\n$$\nE[X] = (0)(0.85) + (150)(0.12) + (4000)(0.03)\n$$\n\n$$\nE[X] = 0 + 18 + 120\n$$\n\n$$\n0 + 18 = 18\n$$\n\n$$\n18 + 120 = 138\n$$\n\n$$\nE[X] = 138\n$$\n\nDie Aussage ist falsch.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz von $X$ beträgt etwa 463656. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X^2] = (0^2)(0.85) + (150^2)(0.12) + (4000^2)(0.03)\n$$\n\n$$\nE[X^2] = 0 + 2700 + 480000\n$$\n\n$$\n0 + 2700 = 2700\n$$\n\n$$\n2700 + 480000 = 482700\n$$\n\n$$\nE[X^2] = 482700\n$$\n\n$$\n\\mathrm{Var}(X) = 482700 - (138)^2\n$$\n\n$$\n\\mathrm{Var}(X) = 482700 - 19044\n$$\n\n$$\n\\mathrm{Var}(X) = 463656\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Falsch\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$68{,}09$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{463656}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 680.9236\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$68,09$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{463656}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 680.9236\n$$\n\nDie Aussage ist falsch.\n",
       "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit $P(X=4000)$ ist größer als $P(X=150)$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(X = 4000) = 0.03\n$$\n\n$$\nP(X = 150) = 0.12\n$$\n\n$$\n0.03 > 0.12\n$$\n\nDie Aussage ist falsch.\n",
       "**E.** → Falsch\n\nAussage E: Die Standardabweichung von $X$ ist kleiner als der Erwartungswert von $X$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE[X] = 138\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 680.9236\n$$\n\n$$\n680.9236 < 138\n$$\n\nDie Aussage ist falsch.\n"
     ],
-    "solution_overview": "Eine erweiterte Garantie zahlt beim nächsten gemeldeten Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4{,}000$ mit 0,03. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.85\n$$\n\n$$\nP(X = 150) = 0.12\n$$\n\n$$\nP(X = 4000) = 0.03\n$$\n\n$$E[X] = (0)(0.85) + (150)(0.12) + (4000)(0.03)$$\n\n$$E[X] = 0 + 18 + 120$$\n\n$$E[X] = 138$$\n\n$$E[X^2] = (0^2)(0.85) + (150^2)(0.12) + (4000^2)(0.03)$$\n\n$$E[X^2] = (0)(0.85) + (22500)(0.12) + (16000000)(0.03)$$\n\n$$E[X^2] = 0 + 2700 + 480000$$\n\n$$E[X^2] = 482700$$\n\n$$\\mathrm{Var}(X) = 482700 - (138)^2$$\n\n$$\\mathrm{Var}(X) = 482700 - 19044$$\n\n$$\\mathrm{Var}(X) = 463656$$\n\n$$\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$$\n\n$$\\mathrm{SD}(X) = \\sqrt{463656}$$\n\n$$\\mathrm{SD}(X) \\approx 680.923$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+    "solution_overview": "Eine erweiterte Garantie zahlt beim nächsten gemeldeten Schaden $X$ aus: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4,000$ mit 0,03. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.85\n$$\n\n$$\nP(X = 150) = 0.12\n$$\n\n$$\nP(X = 4000) = 0.03\n$$\n\n$$E[X] = (0)(0.85) + (150)(0.12) + (4000)(0.03)$$\n\n$$E[X] = 0 + 18 + 120$$\n\n$$E[X] = 138$$\n\n$$E[X^2] = (0^2)(0.85) + (150^2)(0.12) + (4000^2)(0.03)$$\n\n$$E[X^2] = (0)(0.85) + (22500)(0.12) + (16000000)(0.03)$$\n\n$$E[X^2] = 0 + 2700 + 480000$$\n\n$$E[X^2] = 482700$$\n\n$$\\mathrm{Var}(X) = 482700 - (138)^2$$\n\n$$\\mathrm{Var}(X) = 482700 - 19044$$\n\n$$\\mathrm{Var}(X) = 463656$$\n\n$$\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$$\n\n$$\\mathrm{SD}(X) = \\sqrt{463656}$$\n\n$$\\mathrm{SD}(X) \\approx 680.923$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
   },
   "MATH 12.141": {
     "title": "Fertigungslinie mit zwei Maschinen",
@@ -2718,22 +2718,22 @@
   },
   "MATH 12.144": {
     "title": "Das Verkaufsautomaten-Rätsel",
-    "context": "Ein Verkaufsautomat gibt einen Preis $X$ im Wert von $\\$0$, $\\$5$ oder $\\$10$ aus: $X=0$ mit Wahrscheinlichkeit $p$, $X=5$ mit 0,4 und $X=10$ mit $0{,}6-p$ für unbekanntes $p$. Gegeben ist $\\mathrm{Var}(X)=10$ und dass $\\$0$ weniger wahrscheinlich ist als $\\$10$.",
+    "context": "Ein Verkaufsautomat gibt einen Preis $X$ im Wert von $\\$0$, $\\$5$ oder $\\$10$ aus: $X=0$ mit Wahrscheinlichkeit $p$, $X=5$ mit 0,4 und $X=10$ mit $0,6-p$ für unbekanntes $p$. Gegeben ist $\\mathrm{Var}(X)=10$ und dass $\\$0$ weniger wahrscheinlich ist als $\\$10$.",
     "statements": [
       "Der unbekannte Wert $p$ beträgt 0,4.",
       "Die quadratische Bedingung $\\mathrm{Var}(X)=10$ hat eine zweite mathematisch gültige Wurzel $p\\approx 0{,}5236$, die hier nur verworfen wird, weil sonst $P(X=0)>P(X=10)$ wäre.",
       "Der Erwartungswert von $X$ beträgt genau 8.",
       "Die Standardabweichung von $X$ ist kleiner als 3.",
-      "Würde die Bedingung umgekehrt ( $\\$0$ wahrscheinlicher als $\\$10$), wäre die richtige Wurzel $p\\approx 0{,}5236$, und die Varianz wäre dann nicht mehr 10."
+      "Würde die Bedingung umgekehrt ( $\\$0$ wahrscheinlicher als $\\$10$), wäre die richtige Wurzel $p\\approx 0,5236$, und die Varianz wäre dann nicht mehr 10."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nAussage A: Der unbekannte Wert $p$ beträgt 0,4. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\np_1 \\approx 0.07639\n$$\n\n$$\np_2 \\approx 0.52361\n$$\n\nDie Aussage ist falsch.\n",
       "**B.** → Richtig\n\nAussage B: Die quadratische Bedingung $\\mathrm{Var}(X)=10$ hat eine zweite mathematisch gültige Wurzel $p\\approx 0{,}5236$, die hier nur verworfen wird, weil sonst $P(X=0)>P(X=10)$ wäre. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\np_1 = \\frac{3 - \\sqrt{5}}{10}\n$$\n\n$$\n\\approx 0.07639\n$$\n\n$$\np_2 = \\frac{3 + \\sqrt{5}}{10}\n$$\n\n$$\n\\approx 0.52361\n$$\n\nDie Aussage ist richtig.\n",
       "**C.** → Falsch\n\nAussage C: Der Erwartungswert von $X$ beträgt genau 8. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE[X] = 8 - 10 \\left( \\frac{3 - \\sqrt{5}}{10} \\right)\n$$\n\n$$\nE[X] = 8 - (3 - \\sqrt{5})\n$$\n\n$$\nE[X] = 8 - 3 + \\sqrt{5}\n$$\n\n$$\nE[X] = 5 + \\sqrt{5}\n$$\n\nDie Aussage ist falsch.\n",
       "**D.** → Falsch\n\nAussage D: Die Standardabweichung von $X$ ist kleiner als 3. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}\n$$\n\n$$\n\\mathrm{SD}(X) = \\sqrt{10}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 3.162\n$$\n\nDie Aussage ist falsch.\n",
-      "**E.** → Falsch\n\nAussage E: Würde die Bedingung umgekehrt ( $\\$0$ wahrscheinlicher als $\\$10$), wäre die richtige Wurzel $p\\approx 0{,}5236$, und die Varianz wäre dann nicht mehr 10. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n25p^2 - 15p + 1 = 0\n$$\n\n$$\n\\mathrm{Var}(X) = 10 \\quad \\text{when} p = p_2\n$$\n\nDie Aussage ist falsch.\n"
+      "**E.** → Falsch\n\nAussage E: Würde die Bedingung umgekehrt ( $\\$0$ wahrscheinlicher als $\\$10$), wäre die richtige Wurzel $p\\approx 0,5236$, und die Varianz wäre dann nicht mehr 10. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n25p^2 - 15p + 1 = 0\n$$\n\n$$\n\\mathrm{Var}(X) = 10 \\quad \\text{when} p = p_2\n$$\n\nDie Aussage ist falsch.\n"
     ],
-    "solution_overview": "Ein Verkaufsautomat gibt einen Preis $X$ im Wert von $\\$0$, $\\$5$ oder $\\$10$ aus: $X=0$ mit Wahrscheinlichkeit $p$, $X=5$ mit 0,4 und $X=10$ mit $0{,}6-p$ für unbekanntes $p$. Gegeben ist $\\mathrm{Var}(X)=10$ und dass $\\$0$ weniger wahrscheinlich ist als $\\$10$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = p\n$$\n\n$$\nP(X = 5) = 0.4\n$$\n\n$$\nP(X = 10) = 0.6-p\n$$\n\n$$\nP(X = 0) < P(X = 10)\n$$\n\n$$p < 0.6 - p$$\n\n$$2p < 0.6$$\n\n$$p < 0.3$$\n\n$$E[X] = (0 \\cdot p) + (5 \\cdot 0.4) + (10 \\cdot (0.6-p))$$\n\n$$E[X] = 0 + 2 + 6 - 10p$$\n\n$$E[X] = 8 - 10p$$\n\n$$E[X^2] = (0^2 \\cdot p) + (5^2 \\cdot 0.4) + (10^2 \\cdot (0.6-p))$$\n\n$$E[X^2] = 0 + (25 \\cdot 0.4) + (100 \\cdot (0.6-p))$$\n\n$$E[X^2] = 10 + 60 - 100p$$\n\n$$E[X^2] = 70 - 100p$$\n\n$$10 = (70 - 100p) - (8 - 10p)^2$$\n\n$$10 = 70 - 100p - (64 - 160p + 100p^2)$$\n\n$$10 = 70 - 100p - 64 + 160p - 100p^2$$\n\n$$10 = 6 + 60p - 100p^2$$\n\n$$100p^2 - 60p + 4 = 0$$\n\n$$25p^2 - 15p + 1 = 0$$\n\n$$p = \\frac{15 \\pm \\sqrt{(-15)^2 - 4(25)(1)}}{2(25)}$$\n\n$$p = \\frac{15 \\pm \\sqrt{225 - 100}}{50}$$\n\n$$p = \\frac{15 \\pm \\sqrt{125}}{50}$$\n\n$$p = \\frac{15 \\pm 5\\sqrt{5}}{50}$$\n\n$$p = \\frac{3 \\pm \\sqrt{5}}{10}$$\n\n$$p_1 = \\frac{3 - \\sqrt{5}}{10} \\approx \\frac{3 - 2.2360679}{10} \\approx 0.07639$$\n\n$$p_2 = \\frac{3 + \\sqrt{5}}{10} \\approx \\frac{3 + 2.2360679}{10} \\approx 0.52361$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+    "solution_overview": "Ein Verkaufsautomat gibt einen Preis $X$ im Wert von $\\$0$, $\\$5$ oder $\\$10$ aus: $X=0$ mit Wahrscheinlichkeit $p$, $X=5$ mit 0,4 und $X=10$ mit $0,6-p$ für unbekanntes $p$. Gegeben ist $\\mathrm{Var}(X)=10$ und dass $\\$0$ weniger wahrscheinlich ist als $\\$10$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = p\n$$\n\n$$\nP(X = 5) = 0.4\n$$\n\n$$\nP(X = 10) = 0.6-p\n$$\n\n$$\nP(X = 0) < P(X = 10)\n$$\n\n$$p < 0.6 - p$$\n\n$$2p < 0.6$$\n\n$$p < 0.3$$\n\n$$E[X] = (0 \\cdot p) + (5 \\cdot 0.4) + (10 \\cdot (0.6-p))$$\n\n$$E[X] = 0 + 2 + 6 - 10p$$\n\n$$E[X] = 8 - 10p$$\n\n$$E[X^2] = (0^2 \\cdot p) + (5^2 \\cdot 0.4) + (10^2 \\cdot (0.6-p))$$\n\n$$E[X^2] = 0 + (25 \\cdot 0.4) + (100 \\cdot (0.6-p))$$\n\n$$E[X^2] = 10 + 60 - 100p$$\n\n$$E[X^2] = 70 - 100p$$\n\n$$10 = (70 - 100p) - (8 - 10p)^2$$\n\n$$10 = 70 - 100p - (64 - 160p + 100p^2)$$\n\n$$10 = 70 - 100p - 64 + 160p - 100p^2$$\n\n$$10 = 6 + 60p - 100p^2$$\n\n$$100p^2 - 60p + 4 = 0$$\n\n$$25p^2 - 15p + 1 = 0$$\n\n$$p = \\frac{15 \\pm \\sqrt{(-15)^2 - 4(25)(1)}}{2(25)}$$\n\n$$p = \\frac{15 \\pm \\sqrt{225 - 100}}{50}$$\n\n$$p = \\frac{15 \\pm \\sqrt{125}}{50}$$\n\n$$p = \\frac{15 \\pm 5\\sqrt{5}}{50}$$\n\n$$p = \\frac{3 \\pm \\sqrt{5}}{10}$$\n\n$$p_1 = \\frac{3 - \\sqrt{5}}{10} \\approx \\frac{3 - 2.2360679}{10} \\approx 0.07639$$\n\n$$p_2 = \\frac{3 + \\sqrt{5}}{10} \\approx \\frac{3 + 2.2360679}{10} \\approx 0.52361$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
   },
   "MATH 12.145": {
     "title": "Rundgänge einer Regionalleitung",
@@ -2779,14 +2779,14 @@
     "statements": [
       "Der unbekannte Wert $p$ beträgt 0,55.",
       "Die Varianz von $X$ beträgt 5400.",
-      "Die Standardabweichung von $X$ beträgt etwa $\\$73{,}48$.",
+      "Die Standardabweichung von $X$ beträgt etwa $\\$73,48$.",
       "Das Ergebnis $\\$0$ ist weniger wahrscheinlich als $\\$50$.",
       "Würde jeder Gewinn um $\\$10$ verringert (auf $-\\$10$, $\\$40$ und $\\$240$), bliebe die Varianz von $X$ weiterhin 5400."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nAussage A: Der unbekannte Wert $p$ beträgt 0,55. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\np = 0.60\n$$\n\nDie Aussage ist falsch.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz von $X$ beträgt 5400. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[X^2] = (0^2 \\cdot 0.60) + (50^2 \\cdot 0.30) + (250^2 \\cdot 0.10)\n$$\n\n$$\nE[X^2] = 0 + (2500 \\cdot 0.30) + (62500 \\cdot 0.10)\n$$\n\n$$\nE[X^2] = 0 + 750 + 6250\n$$\n\n$$\n0 + 750 = 750\n$$\n\n$$\nE[X^2] = 7000\n$$\n\n$$\n\\mathrm{Var}(X) = 7000 - (40)^2\n$$\n\n$$\n\\mathrm{Var}(X) = 7000 - 1600\n$$\n\n$$\n\\mathrm{Var}(X) = 5400\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Richtig\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$73{,}48$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{5400}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 73.48469\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Standardabweichung von $X$ beträgt etwa $\\$73,48$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{5400}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 73.48469\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Falsch\n\nAussage D: Das Ergebnis $\\$0$ ist weniger wahrscheinlich als $\\$50$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(X = 0) = 0.60\n$$\n\n$$\nP(X = 50) = 0.30\n$$\n\nDie Aussage ist falsch.\n",
       "**E.** → Richtig\n\nAussage E: Würde jeder Gewinn um $\\$10$ verringert (auf $-\\$10$, $\\$40$ und $\\$240$), bliebe die Varianz von $X$ weiterhin 5400. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)\n$$\n\n$$\n\\mathrm{Var}(Y) = \\mathrm{Var}(X)\n$$\n\n$$\n\\mathrm{Var}(Y) = 5400\n$$\n\nDie Aussage ist richtig.\n"
     ],
@@ -2851,22 +2851,22 @@
   },
   "MATH 12.152": {
     "title": "Erweiterte Garantie (zwei Policen)",
-    "context": "Eine erweiterte Garantie zahlt auf einer Police $X$ Dollar: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4{,}000$ mit 0,03. Ein Versicherer hält zwei solche Policen für unabhängige Kunden. Sei $Y=X_1+X_2$ die Gesamtauszahlung.",
+    "context": "Eine erweiterte Garantie zahlt auf einer Police $X$ Dollar: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4,000$ mit 0,03. Ein Versicherer hält zwei solche Policen für unabhängige Kunden. Sei $Y=X_1+X_2$ die Gesamtauszahlung.",
     "statements": [
       "Der Erwartungswert von $Y$ beträgt $\\$276$.",
       "Die Varianz von $Y$ beträgt 927312.",
-      "Die Wahrscheinlichkeit, dass beide Policen $\\$4{,}000$ fordern, beträgt 0,0009.",
+      "Die Wahrscheinlichkeit, dass beide Policen $\\$4,000$ fordern, beträgt 0,0009.",
       "Die Standardabweichung von $Y$ beträgt das Doppelte der Standardabweichung von $X$.",
-      "Die Standardabweichung von $Y$ beträgt etwa $\\$962{,}97$."
+      "Die Standardabweichung von $Y$ beträgt etwa $\\$962,97$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nAussage A: Der Erwartungswert von $Y$ beträgt $\\$276$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE[Y] = E[X_1 + X_2] = E[X_1] + E[X_2]\n$$\n\n$$\nE[Y] = E[X] + E[X] = 2E[X]\n$$\n\n$$\nE[Y] = 2 \\cdot 138\n$$\n\n$$\n2 \\times 138 = 276\n$$\n\n$$\nE[Y] = 276\n$$\n\nDie Aussage ist richtig.\n",
       "**B.** → Richtig\n\nAussage B: Die Varianz von $Y$ beträgt 927312. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{Var}(Y) = \\mathrm{Var}(X_1 + X_2) = \\mathrm{Var}(X_1) + \\mathrm{Var}(X_2)\n$$\n\n$$\n\\mathrm{Var}(Y) = \\mathrm{Var}(X) + \\mathrm{Var}(X) = 2\\mathrm{Var}(X)\n$$\n\n$$\n\\mathrm{Var}(Y) = 2 \\cdot 463656\n$$\n\n$$\n2 \\times 463656 = 927312\n$$\n\n$$\n\\mathrm{Var}(Y) = 927312\n$$\n\nDie Aussage ist richtig.\n",
-      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass beide Policen $\\$4{,}000$ fordern, beträgt 0,0009. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(X_1 = 4000 \\text{und} X_2 = 4000) = P(X_1 = 4000) \\cdot P(X_2 = 4000)\n$$\n\n$$\nP(X_1 = 4000 \\text{und} X_2 = 0.03 \\cdot 0.03\n$$\n\n$$\n0.03 \\times 0.03 = 0.0009\n$$\n\n$$\nP(X_1 = 4000 \\text{und} X_2 = 4000) = 0.0009\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass beide Policen $\\$4,000$ fordern, beträgt 0,0009. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(X_1 = 4000 \\text{und} X_2 = 4000) = P(X_1 = 4000) \\cdot P(X_2 = 4000)\n$$\n\n$$\nP(X_1 = 4000 \\text{und} X_2 = 0.03 \\cdot 0.03\n$$\n\n$$\n0.03 \\times 0.03 = 0.0009\n$$\n\n$$\nP(X_1 = 4000 \\text{und} X_2 = 4000) = 0.0009\n$$\n\nDie Aussage ist richtig.\n",
       "**D.** → Falsch\n\nAussage D: Die Standardabweichung von $Y$ beträgt das Doppelte der Standardabweichung von $X$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)} = \\sqrt{463656}\n$$\n\n$$\n\\mathrm{SD}(X) \\approx 680.9229\n$$\n\n$$\n\\mathrm{SD}(Y) = \\sqrt{\\mathrm{Var}(Y)} = \\sqrt{927312}\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 962.9693\n$$\n\n$$\n2 \\times \\mathrm{SD}(X) = 2 \\times 680.9229\n$$\n\n$$\n2 \\times 680.9229 = 1361.8458\n$$\n\n$$\n2 \\times \\mathrm{SD}(X) \\approx 1361.8458\n$$\n\nDie Aussage ist falsch.\n",
-      "**E.** → Richtig\n\nAussage E: Die Standardabweichung von $Y$ beträgt etwa $\\$962{,}97$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(Y) = \\sqrt{\\mathrm{Var}(Y)}\n$$\n\n$$\n\\mathrm{SD}(Y) = \\sqrt{927312}\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 962.9693\n$$\n\nDie Aussage ist richtig.\n"
+      "**E.** → Richtig\n\nAussage E: Die Standardabweichung von $Y$ beträgt etwa $\\$962,97$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\mathrm{SD}(Y) = \\sqrt{\\mathrm{Var}(Y)}\n$$\n\n$$\n\\mathrm{SD}(Y) = \\sqrt{927312}\n$$\n\n$$\n\\mathrm{SD}(Y) \\approx 962.9693\n$$\n\nDie Aussage ist richtig.\n"
     ],
-    "solution_overview": "Eine erweiterte Garantie zahlt auf einer Police $X$ Dollar: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4{,}000$ mit 0,03. Ein Versicherer hält zwei solche Policen für unabhängige Kunden. Sei $Y=X_1+X_2$ die Gesamtauszahlung. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.85\n$$\n\n$$\nP(X = 150) = 0.12\n$$\n\n$$\nP(X = 4000) = 0.03\n$$\n\n$$E[X] = (0 \\cdot 0.85) + (150 \\cdot 0.12) + (4000 \\cdot 0.03)$$\n\n$$E[X] = 0 + 18 + 120$$\n\n$$E[X] = 138$$\n\n$$E[X^2] = (0^2 \\cdot 0.85) + (150^2 \\cdot 0.12) + (4000^2 \\cdot 0.03)$$\n\n$$E[X^2] = 0 + (22500 \\cdot 0.12) + (16000000 \\cdot 0.03)$$\n\n$$E[X^2] = 0 + 2700 + 480000$$\n\n$$E[X^2] = 482700$$\n\n$$\\mathrm{Var}(X) = 482700 - (138)^2$$\n\n$$\\mathrm{Var}(X) = 482700 - 19044$$\n\n$$\\mathrm{Var}(X) = 463656$$\n\n$$\\mathrm{SD}(X) = \\sqrt{463656}$$\n\n$$\\mathrm{SD}(X) \\approx 680.9229$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+    "solution_overview": "Eine erweiterte Garantie zahlt auf einer Police $X$ Dollar: $\\$0$ mit Wahrscheinlichkeit 0,85, $\\$150$ mit 0,12 und $\\$4,000$ mit 0,03. Ein Versicherer hält zwei solche Policen für unabhängige Kunden. Sei $Y=X_1+X_2$ die Gesamtauszahlung. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n\n$$\nP(X = 0) = 0.85\n$$\n\n$$\nP(X = 150) = 0.12\n$$\n\n$$\nP(X = 4000) = 0.03\n$$\n\n$$E[X] = (0 \\cdot 0.85) + (150 \\cdot 0.12) + (4000 \\cdot 0.03)$$\n\n$$E[X] = 0 + 18 + 120$$\n\n$$E[X] = 138$$\n\n$$E[X^2] = (0^2 \\cdot 0.85) + (150^2 \\cdot 0.12) + (4000^2 \\cdot 0.03)$$\n\n$$E[X^2] = 0 + (22500 \\cdot 0.12) + (16000000 \\cdot 0.03)$$\n\n$$E[X^2] = 0 + 2700 + 480000$$\n\n$$E[X^2] = 482700$$\n\n$$\\mathrm{Var}(X) = 482700 - (138)^2$$\n\n$$\\mathrm{Var}(X) = 482700 - 19044$$\n\n$$\\mathrm{Var}(X) = 463656$$\n\n$$\\mathrm{SD}(X) = \\sqrt{463656}$$\n\n$$\\mathrm{SD}(X) \\approx 680.9229$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
   },
   "MATH 12.153": {
     "title": "Verspätete Computerlieferungen",

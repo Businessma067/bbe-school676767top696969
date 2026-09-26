@@ -6978,12 +6978,12 @@ so the full conjunction still holds. Q does qualify; the claim is false.
 So the statement is False.`,
       `**C.** → False
 
-A senior with disability and income above $\\$20{,}000$ still satisfies the inner disjunction via disability. High income alone does not disqualify.
+A senior with disability and income above $\\$20,000$ still satisfies the inner disjunction via disability. High income alone does not disqualify.
 
 So the statement is False.`,
       `**D.** → True
 
-Take age $70$, no disability, income $\\$25{,}000$:
+Take age $70$, no disability, income $\\$25,000$:
 
 $$70\\ge 65$$
 
