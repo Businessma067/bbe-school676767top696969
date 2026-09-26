@@ -5,7 +5,7 @@ import {
   hreflangLinks,
   localizePath,
 } from "./i18n/locale-path";
-import { getNewsPostPaths } from "@/data/news/posts";
+import { getNewsPostPaths } from "../data/news/posts";
 import { WISO_EXAM_FORMAT } from "../config/wiso-exam-hub";
 
 const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
