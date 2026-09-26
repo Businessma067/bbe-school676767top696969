@@ -21,10 +21,20 @@ import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { WISO_FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import {
+  FullCourseVideoRoulette,
+  buildFullCourseRouletteSlides,
+} from "@/components/FullCourseVideoRoulette";
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
 const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const FULL_COURSE_PRICE = 449;
+
+const ROULETTE_SLIDES = buildFullCourseRouletteSlides({
+  track: "wiso",
+  posterSrc: FULL_COURSE_IMAGE,
+  posterAlt: "Full WiSo Course",
+});
 
 const PATH = "/wiso/products/full-course" as const;
 const INDIGO = "#3730A3";
@@ -203,14 +213,7 @@ export function WisoFullCourseProduct() {
             Full WiSo Course
           </h1>
 
-          <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
-            <img
-              src={FULL_COURSE_IMAGE}
-              alt="Full WiSo Course"
-              className="absolute inset-0 h-full w-full object-cover object-center"
-              draggable={false}
-            />
-          </div>
+          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
 
           <div className="mt-5 flex items-center gap-3">
             <div className="flex items-center gap-0.5">
