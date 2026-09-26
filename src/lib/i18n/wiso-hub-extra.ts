@@ -679,6 +679,8 @@ export const wisoHubExtraDe: Record<string, string> = {
   "Prepare for the WU Vienna WiSo exam (Aufnahmeprüfung): Wirtschaft verstehen, mathematics, and German reading, with scoring guides and timed practice.": "Vorbereitung auf die WiSo-Aufnahmeprüfung der WU Wien: Wirtschaft verstehen, Mathematik und Deutsch-Leseverstehen, mit Bewertungsguide und Übungen auf Zeit.",
   "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School": "WiSo-Aufnahmeprüfung WU Wien: Ablauf, Format & Themen | BBE School",
   "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.": "Wie läuft die WiSo-Aufnahmeprüfung der WU Wien ab? Format, Fächer (Wirtschaft, Mathe, Deutsch), Teilpunktesystem, Studienplätze, das zweistufige Verfahren und die richtige Vorbereitung.",
+  "Everything you need for the WiSo Aufnahmeprüfung — Wirtschaft verstehen, Mathematik, and German reading — built around the real format and Teilpunktesystem.": "Alles, was du für die WiSo-Aufnahmeprüfung brauchst – Wirtschaft verstehen, Mathematik und Deutsch-Leseverstehen – aufgebaut nach dem echten Format und Teilpunktesystem.",
+  "before you grind volume.": "bevor du auf Menge trainierst.",
 };
 
 export const wisoHubExtraUk: Record<string, string> = {
@@ -1382,4 +1384,6 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Prepare for the WU Vienna WiSo exam (Aufnahmeprüfung): Wirtschaft verstehen, mathematics, and German reading, with scoring guides and timed practice.": "Підготовка до іспиту WiSo у WU Vienna (Aufnahmeprüfung): Wirtschaft verstehen, математика та читання німецькою, з поясненням оцінювання та практикою на час.",
   "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School": "Іспит WU WiSo (Aufnahmeprüfung): формат і теми | BBE School",
   "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.": "Що таке іспит WiSo у WU Vienna (Aufnahmeprüfung)? Формат, предмети (економіка, математика, німецька), оцінювання за Teilpunktesystem, кількість місць, двоетапний відбір і як підготуватися.",
+  "Everything you need for the WiSo Aufnahmeprüfung — Wirtschaft verstehen, Mathematik, and German reading — built around the real format and Teilpunktesystem.": "Усе, що потрібно для WiSo Aufnahmeprüfung — Wirtschaft verstehen, математика та читання німецькою — побудовано за реальним форматом і Teilpunktesystem.",
+  "before you grind volume.": "перш ніж братися за великі обсяги задач.",
 };
