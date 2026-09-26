@@ -1803,11 +1803,11 @@
       "title": "Of 2,000 factory units, 700 had Defect A, 440 Defect B, and 360 Defect C",
       "context": "Of 2,000 factory units, 700 had Defect A, 440 Defect B, and 360 Defect C. Pairwise counts were 160, 120, and 88; 40 had all three.",
       "statements": [
-        "The probability that the randomly selected unit has at least one of the listed categories defect is greater than 55%.",
-        "The probability that the randomly selected unit has exactly one of the listed categories defect is greater than 45%.",
-        "The probability that the randomly selected unit has exactly one of the listed categories is more than three times exactly two.",
-        "No defects is less than 40%.",
-        "The probability that the randomly selected unit has exactly one of the listed categories minus at least two is greater than 25 percentage points."
+        "The probability that the randomly selected unit has at least one of the listed defects is greater than 55%.",
+        "The probability that the randomly selected unit has exactly one of the listed defects is greater than 45%.",
+        "The probability that the randomly selected unit has exactly one of the listed defects is more than three times the probability that it has exactly two.",
+        "The probability that the randomly selected unit has no defects is less than 40%.",
+        "The difference between the probability that the randomly selected unit has exactly one of the listed defects and the probability that it has at least two is greater than 25 percentage points."
       ],
       "answer_key": [
         true,
@@ -1838,7 +1838,7 @@
         "The probability that the randomly selected car has exactly one of the listed categories is greater than 75%.",
         "The probability that the randomly selected car has exactly two of the listed categories is at least 15%.",
         "The probability that the randomly selected car has none of the listed categories is less than 5%.",
-        "At least two is less than 20%."
+        "The probability that the randomly selected car has at least two of the listed categories is less than 20%."
       ],
       "answer_key": [
         true,
@@ -1865,11 +1865,11 @@
       "title": "Product rates are P(A)=55%, P(B)=45%, and P(C)=35%",
       "context": "Product rates are the probability that A=55%, the probability that B=45%, and the probability that C=35%. Also the probability that A and C=18%, the probability that B and C=15%, T=8%, and the probability that A or B or C=70%.",
       "statements": [
-        "The probability that A and B=40%.",
-        "The probability that the randomly selected case has exactly one of the listed categories product is greater than 20%.",
-        "The probability that the randomly selected case has exactly two of the listed categories products is at least 45%.",
+        "The probability that a randomly selected case has both A and B is 40%.",
+        "The probability that the randomly selected case has exactly one of the listed products is greater than 20%.",
+        "The probability that the randomly selected case has exactly two of the listed products is at least 45%.",
         "The probability that the randomly selected case has none of the listed categories is less than 25%.",
-        "At least two products is greater than 50%."
+        "The probability that the randomly selected case has at least two of the listed products is greater than 50%."
       ],
       "answer_key": [
         true,
@@ -1900,7 +1900,7 @@
         "The probability that the randomly selected server has exactly one of the listed categories is greater than 58%.",
         "The probability that the randomly selected server has exactly two of the listed categories is at least 10%.",
         "The probability that the randomly selected server has none of the listed categories is less than 30%.",
-        "At least two is less than 12%."
+        "The probability that the randomly selected server has at least two of the listed categories is less than 12%."
       ],
       "answer_key": [
         false,
@@ -1930,8 +1930,8 @@
         "The probability that the randomly selected member has at least one of the listed categories is at least 95%.",
         "The probability that the randomly selected member has exactly one of the listed categories is greater than 55%.",
         "The probability that the randomly selected member has exactly two of the listed categories is at least 25%.",
-        "The probability that the randomly selected member has none of the listed categories =0%.",
-        "At least two is more than double all three."
+        "The probability that the randomly selected member has none of the listed categories is 0%.",
+        "The probability that the randomly selected member has at least two of the listed categories is more than double the probability that the member has all three."
       ],
       "answer_key": [
         true,
@@ -1959,7 +1959,7 @@
       "context": "Inclusion-Exclusion Principle Among 100 students: 40 take Math, 35 Physics, and 30 Chemistry. Pairwise counts are 15, 12, and 10; 5 take all three.",
       "statements": [
         "The probability that the randomly selected student has at least one of the listed categories is greater than 72%.",
-        "The probability that the randomly selected student has none of the listed categories equals one minus at least one.",
+        "The probability that the randomly selected student has none of the listed categories equals one minus the probability of at least one.",
         "The probability that the randomly selected student has exactly one of the listed categories is less than 45%.",
         "The probability that the randomly selected student has exactly two of the listed categories is greater than 20%.",
         "The probability that the randomly selected student has all three categories is less than one-quarter of exactly two."
@@ -1990,7 +1990,7 @@
       "context": "Among 200 employees, 90 use App A, 70 App B, and 60 App C. Pairwise counts are 30, 25, and 20; 10 use all three.",
       "statements": [
         "The probability that the randomly selected employee has at least one of the listed categories is greater than 75%.",
-        "The probability that the randomly selected employee has none of the listed categories equals one minus at least one.",
+        "The probability that the randomly selected employee has none of the listed categories equals one minus the probability of at least one.",
         "The probability that the randomly selected employee has exactly one of the listed categories is less than 50%.",
         "The probability that the randomly selected employee has exactly two of the listed categories is greater than 15%.",
         "The probability that the randomly selected employee has all three categories is less than one-fifth of exactly two."
@@ -2021,7 +2021,7 @@
       "context": "Among 250 students, 120 take Math, 100 Physics, and 90 Chemistry. Pairwise counts are 50, 40, and 30; 15 take all three.",
       "statements": [
         "The probability that the randomly selected student has at least one of the listed categories is greater than 80%.",
-        "The probability that the randomly selected student has none of the listed categories equals one minus at least one.",
+        "The probability that the randomly selected student has none of the listed categories equals one minus the probability of at least one.",
         "The probability that the randomly selected student has exactly one of the listed categories is less than 45%.",
         "The probability that the randomly selected student has exactly two of the listed categories is greater than 25%.",
         "The probability that the randomly selected student has all three categories is less than one-third of exactly two."
