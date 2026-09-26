@@ -103,6 +103,16 @@ function demoCourseItem(track: ExamTrack): NavItem {
       };
 }
 
+/** Public free diagnostic mock — BBE only (no WiSo counterpart yet). */
+function demoExamItem(): NavItem {
+  return {
+    label: "Demo Exam",
+    href: "/demo-mock",
+    isRoute: true,
+    activeExact: ["/demo-mock"],
+  };
+}
+
 const fullCourseItem: NavItem = {
   label: "Full Course",
   href: "/products/full-course-subjects",
@@ -194,9 +204,9 @@ export function homepageNavItems(): NavItem[] {
 }
 
 export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
-  return [
-    examInfoItem(track),
-    demoPracticeItem(track),
+  const items: NavItem[] = [examInfoItem(track), demoPracticeItem(track)];
+  if (track === "bbe") items.push(demoExamItem());
+  items.push(
     {
       label: "How it works",
       href: track === "wiso" ? "/wiso#how-it-works" : "/bbe#how-it-works",
@@ -225,7 +235,8 @@ export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
       href: track === "wiso" ? "/wiso#faq" : "/bbe#faq",
       isRoute: true,
     },
-  ];
+  );
+  return items;
 }
 
 export function navItemsForAccess(
