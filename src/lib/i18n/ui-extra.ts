@@ -237,6 +237,27 @@ export const uiExtraDe: Record<string, string> = {
   "At least 6 characters": "Mindestens 6 Zeichen",
   "Repeat password": "Passwort wiederholen",
   "Updating…": "Aktualisieren…",
+
+  // demo-mock
+  "Demo Mock Exam — BBE School": "Demo-Probeprüfung — BBE School",
+  "Free hard diagnostic mock of the WU BBE entrance exam. Same format and scoring — sign in free to start.":
+    "Kostenlose, anspruchsvolle Diagnose-Probeprüfung für die WU-BBE-Aufnahmeprüfung. Gleiches Format und gleiche Bewertung — kostenlos anmelden und starten.",
+  "Demo Mock Exam": "Demo-Probeprüfung",
+  "A full-length hard diagnostic of the WU BBE entrance exam. Same structure, same time limit, same scoring method — free with a BBE School account.":
+    "Eine vollständige, anspruchsvolle Diagnose der WU-BBE-Aufnahmeprüfung. Gleicher Aufbau, gleiches Zeitlimit, gleiche Bewertung — kostenlos mit einem BBE-School-Konto.",
+  "Available Exam": "Verfügbare Prüfung",
+  "Looking for the full mock catalog?": "Suchst du alle Probeprüfungen?",
+  "Open all mock exams →": "Alle Probeprüfungen öffnen →",
+  "Your results": "Deine Ergebnisse",
+  "Loading your results…": "Ergebnisse werden geladen…",
+  "Sign in to start the demo mock and see your results here.":
+    "Melde dich an, um die Demo-Probeprüfung zu starten und hier deine Ergebnisse zu sehen.",
+  "No demo attempts yet. Finish the mock and your score will show up here.":
+    "Noch keine Demo-Versuche. Schließe die Probeprüfung ab, dann erscheint dein Ergebnis hier.",
+  "If you choose the timed option, the exam is limited to 2 hours and submits automatically when the timer reaches zero.":
+    "Mit Timer ist die Prüfung auf 2 Stunden begrenzt und wird automatisch abgegeben, wenn der Timer null erreicht.",
+  "Start with Timer (2:00:00)": "Mit Timer starten (2:00:00)",
+  "Start without Timer": "Ohne Timer starten",
 };
 
 export const uiExtraUk: Record<string, string> = {
@@ -466,4 +487,25 @@ export const uiExtraUk: Record<string, string> = {
   "At least 6 characters": "Щонайменше 6 символів",
   "Repeat password": "Повторіть пароль",
   "Updating…": "Оновлення…",
+
+  // demo-mock
+  "Demo Mock Exam — BBE School": "Демо пробний іспит — BBE School",
+  "Free hard diagnostic mock of the WU BBE entrance exam. Same format and scoring — sign in free to start.":
+    "Безкоштовний складний діагностичний пробний іспит WU BBE. Той самий формат і оцінювання — увійдіть безкоштовно, щоб почати.",
+  "Demo Mock Exam": "Демо пробний іспит",
+  "A full-length hard diagnostic of the WU BBE entrance exam. Same structure, same time limit, same scoring method — free with a BBE School account.":
+    "Повноформатна складна діагностика вступного іспиту WU BBE. Та сама структура, той самий ліміт часу, той самий метод оцінювання — безкоштовно з акаунтом BBE School.",
+  "Available Exam": "Доступний іспит",
+  "Looking for the full mock catalog?": "Шукаєте всі пробні іспити?",
+  "Open all mock exams →": "Відкрити всі пробні іспити →",
+  "Your results": "Ваші результати",
+  "Loading your results…": "Завантаження результатів…",
+  "Sign in to start the demo mock and see your results here.":
+    "Увійдіть, щоб почати демо пробний іспит і бачити тут свої результати.",
+  "No demo attempts yet. Finish the mock and your score will show up here.":
+    "Демо-спроб ще немає. Завершіть пробний іспит, і ваш результат з’явиться тут.",
+  "If you choose the timed option, the exam is limited to 2 hours and submits automatically when the timer reaches zero.":
+    "З таймером іспит обмежено 2 годинами, і він автоматично завершується, коли таймер дійде до нуля.",
+  "Start with Timer (2:00:00)": "Почати з таймером (2:00:00)",
+  "Start without Timer": "Почати без таймера",
 };

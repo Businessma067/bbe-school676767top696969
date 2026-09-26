@@ -55,6 +55,7 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/demo-practice/economics": absoluteMediaUrl(economicsAsset.url),
   "/demo-practice/math": absoluteMediaUrl("/how-it-works/math-poster.jpg"),
   "/demo-practice/english": absoluteMediaUrl("/how-it-works/english-poster.jpg"),
+  "/demo-mock": absoluteMediaUrl(examHallAsset.url),
   // WiSo marketing / hub share images
   "/wiso": WU_CAMPUS_SOCIAL_IMAGE,
   "/wiso/entrance-exam": WU_CAMPUS_SOCIAL_IMAGE,
