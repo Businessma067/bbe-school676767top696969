@@ -771,7 +771,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=0.6625\\%$ und $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nDer monatliche Periodenzinssatz ist der Nominalsatz geteilt durch zwölf:\n\n $$\ni=\\frac{0.0795}{12}=0.006625\n$$ \n\n $$\ni=0.6625\\%\n$$ \n\nEffektiver Jahreszinssatz bei monatlicher Verzinsung:\n\n $$\nR_{\\mathrm{m}}=(1+0.006625)^{12}-1\\approx0.082462\n$$ \n\n $$\n8.246\\%>8.24\\%\n$$ \n\nBeide Teile der Konjunktion gelten.\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{c}}\\approx8.275\\%$ und $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nÜblicherweise gibt es keine Üblichen\n\n $$\nR_{\\mathrm{c}}=e^{0.0795}-1\\approx0.082746\n$$ \n\nPercentage-point gap:\n\n $$\n(R_{\\mathrm{c}}-R_{\\mathrm{m}})\\cdot 100\\approx0.0284\n$$ \n\n $$\n0.0284\\nless 0.04\n$$ \n\nDie kontinuierliche Prämie ist zu gering für den Anspruch.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{c}}\\approx8.275\\%$ und $R_{\\mathrm{m}}\\approx8.246\\%$.\n\nKontinuierliche Effektivrate:\n\n$$\nR_{\\mathrm{c}}=e^{0.0795}-1\\approx0.082746\n$$\n\nDifferenz in Prozentpunkten:\n\n$$\n(R_{\\mathrm{c}}-R_{\\mathrm{m}})\\cdot 100\\approx0.0284\n$$\n\n$$\n0.0284\\nless 0.04\n$$\n\nDie kontinuierliche Prämie ist zu gering für den Anspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$;\n\nDreijährige monatliche Kredite gelten $36$ periods:\n\n $$\nFV_{\\mathrm{m}}(3)=8{,}735.00(1+0.006625)^{36}\n$$ \n\n $$\n\\approx11{,}079.00\n$$ \n\n $$\n11{,}079.00>11{,}050\n$$ \n\nDer Dreijahressaldo macht die Schwelle frei.\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nIm Überblick wurde gewonnen: $FV_{\\mathrm{c}}(3)\\approx\\$11,087.72$ und $FV_{\\mathrm{m}}(3)\\approx\\$11,079.00$.\n\nKontinuierliche Prämie über die monatliche Verzinsung:\n\n $$\nFV_{\\mathrm{c}}(3)-FV_{\\mathrm{m}}(3)\\approx11{,}087.72-11{,}079.00\n$$ \n\n $$\n=8.72\n$$ \n\n $$\n8.72\\nless 18\n$$ \n\nDie Prämie versagt $\\$18$ threshold.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nIm Überblick wurde gewonnen: $I_3\\approx\\$2,344.00$ und $I_2\\approx\\$1,500.00$.\n\nZinsschnitt, wenn der Horizont von $a=3$ to $b=2$:\n\n $$\nI_3-I_2\\approx844.00\n$$ \n\nShare of three-year interest:\n\n $$\n\\frac{I_3-I_2}{I_3}\\approx0.3601=36.01\\%\n$$ \n\n $$\n36.01\\%>35\\%\n$$ \n\nDie Kürzung übersteigt fünfunddreiß drei Jahre Zinsen.\n\nDie Aussage ist richtig."
@@ -829,7 +829,7 @@
     "tactical_explanations": [
       "**A.** → Richtig\n\nIm Überblick wurde gewonnen: $i=1.825\\%$ und monatliche Zinsen $\\approx\\$51.97$.\n\n $$\ni=\\frac{0.219}{12}=0.018250\n$$ \n\n $$\nB\\cdot i=2{,}847.65\\cdot0.018250\\approx51.97\n$$ \n\n $$\n51.97>50\n$$ \n\nBeide Teilbehauptungen gelten.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{m}}\\approx24.238\\%$.\n\n $$\nR_{\\mathrm{m}}=(1+0.018250)^{12}-1\\approx0.242376\n$$ \n\n $$\n24.238\\%>24\\%\n$$ \n\nDie monatliche effektive Rate gibt den Boden.\n\nDie Aussage ist richtig.",
-      "**C.** → Falsch\n\nTäglich, Monatlich, in Prozent\n\n $$\n(R_{\\mathrm{d}}-R_{\\mathrm{m}})\\cdot 100\\approx0.2374\n$$ \n\n $$\n0.2374\\nless 0.30\n$$ \n\nDie Pro-U-Pease-Pease-Pease-U-Pease.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDifferenz täglich minus monatlich in Prozentpunkten:\n\n$$\n(R_{\\mathrm{d}}-R_{\\mathrm{m}})\\cdot 100\\approx0.2374\n$$\n\n$$\n0.2374\\nless 0.30\n$$\n\nDie tägliche Aufstockung ist kleiner als behauptet.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nLaufendes Laufen mit\n\n $$\nB(1+i)^{12}=2{,}847.65(1+0.018250)^{12}\n$$ \n\n $$\n\\approx3{,}537.85\n$$ \n\n $$\n3{,}537.85\\nless 3{,}500\n$$ \n\nDie Waage ist nicht streng unter $\\$3,500$.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n(Ist DAS DEN KOT richtig)\n\nLücke zwischen effektiv und nominal:\n\n $$\n(R_{\\mathrm{m}}-r)\\cdot 100\\approx2.338\n$$ \n\n $$\n2.338>2.3\n$$ \n\nDie APR-to-effective Lücke löscht die Schwelle.\n\nDie Aussage ist richtig."
     ],
@@ -888,7 +888,7 @@
       "**B.** → Richtig\n\nIm Überblick wurde gewonnen: $R_{\\mathrm{c}}\\approx8.4371\\%$.\n\n $$\nR_{\\mathrm{c}}=e^{0.081}-1\\approx0.084371\n$$ \n\n $$\n8.4371\\%>8.43\\%\n$$ \n\nDie Kontinuitätszahl ist größer als die, die ein Einbruch ist.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n** C ** →rede\n\nEin- und Aussäen:\n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$ \n\n $$\n5{,}962.42>5{,}950\n$$ \n\nDer Saldo löscht die $\\$5,950$ threshold.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nVergleichen Sie die vier wiederhergestellten Raten:\n\n $$\n0.081000<0.083494<0.084076<0.084371\n$$ \n\nDie Standard-Frequenzordnung gilt für dieses nominal-Angabe.\n\nDie Aussage ist richtig.",
-      "**E.** → Falsch\n\nucht...\n\n‚Deckung‘ ‚Deck‘:\n\n $$\n(R_{\\mathrm{c}}-R_{\\mathrm{ann}})\\cdot 100\\approx0.3371\n$$ \n\n $$\n0.3371\\nless 0.40\n$$ \n\nDie Lücke fällt $0.40$ percentage points.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nDifferenz stetig minus jährlich:\n\n$$\n(R_{\\mathrm{c}}-R_{\\mathrm{ann}})\\cdot 100\\approx0.3371\n$$\n\n$$\n0.3371\\nless 0.40\n$$\n\nDie Lücke verfehlt $0.40$ Prozentpunkte.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Konvertieren Sie mit der jeweiligen Fabrikation.\n\n $$\nR_{\\mathrm{ann}}=0.081\\qquad R_{\\mathrm{q}}\\approx0.083494\n$$ \n\n $$\nR_{\\mathrm{m}}\\approx0.084076\\qquad R_{\\mathrm{c}}\\approx0.084371\n$$ \n\n $$\n5500(1+R_{\\mathrm{m}})\\approx5{,}962.42\n$$ "
   },
@@ -943,8 +943,8 @@
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\nR_A\\approx10.034\\%\n$$ \n\n $$\n10.034\\%>9.98\\%\n$$ \n\nRäumt den Boden.\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\n$$\nR_B\\approx10.112\\%\\qquad R_A\\approx10.034\\%\n$$ \n\n $$\n(R_A-R_B)\\cdot 100\\approx-0.0784\n$$ \n\nBank $B$ is not below Bank $A$; die beanspruchte $0.05$ pp discount does not exist.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\n$$\nL R_A=24{,}800.00\\cdot0.100339\\approx2{,}488.40\n$$ \n\n $$\n2{,}488.40>2{,}400\n$$ \n\nBank $A$ -Secondance- $\\$2,400$.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nUnd so ist es auch, wenn es nicht mehr so ist, dass es nicht mehr so ist.\n\n $$\nr_B=9.75\\%>r_A=9.6\\%\n$$ \n\n $$\nR_A\\approx10.034\\%\\qquad R_B\\approx10.112\\%\n$$ \n\nEs sind die beiden Seiten der Idee.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$$\nL R_A=24{,}800.00\\cdot0.100339\\approx2{,}488.40\n$$\n\n$$\n2{,}488.40>2{,}400\n$$\n\nDer einjährige Zins von Bank $A$ übersteigt $\\$2,400$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nEin höherer Nominalzins beweist nicht unter jeder Verzinsungskonvention höhere Effektivkosten.\n\n$$\nr_B=9.75\\%>r_A=9.6\\%\n$$\n\n$$\nR_A\\approx10.034\\%\\qquad R_B\\approx10.112\\%\n$$\n\nFrequenz und Nominalzins zählen beide; die absolute „muss“-Behauptung scheitert.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\n$$\n|R_A-R_B|\\cdot 100\\approx0.0784\n$$ \n\n $$\n0.0784<0.15\n$$ \n\nDie effektive Lücke ist unter $0.15$ percentage points.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Konvertieren Sie beide Darlehens-Quotes einmal.\n\n $$\nR_A=\\left(1+\\frac{0.096}{12}\\right)^{12}-1\\approx0.100339=10.034\\%\n$$ \n\n $$\nR_B=\\left(1+\\frac{0.0975}{4}\\right)^4-1\\approx0.101123=10.112\\%\n$$ \n\n $$\nL R_A\\approx2{,}488.40\n$$ \n\nEs ist gesamtschuldnerisch Briefe fügen nur den zusätzlichen Vergleich, Mix oder die kontrafaktische Arithmetik hinzu, die ihr eigener Anspruch erfordert; Sie bauen die gemeinsame Rate, das Prinzip oder die Systemlösung nicht wieder auf."
@@ -962,7 +962,7 @@
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni=\\frac{0.0648}{12}=0.005400=0.540\\%\n$$ \n\n $$\nN=12\\cdot6=72\n$$ \n\nBeide Teilbehauptungen stimmen überein.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$\nPV\\approx12{,}723.36\n$$ \n\n $$\n12{,}723.36>12{,}800\n$$ \n\nDer wiedergewonnene Auftraggeber räumen den Boden.\n\nDie Aussage ist richtig.",
-      "**C.** → Richtig\n\n$$\nPV_{\\mathrm{ann}}\\approx12{,}864.50\\qquad PV\\approx12{,}723.36\n$$ \n\n $$\nPV_{\\mathrm{ann}}-PV\\approx141.14\n$$ \n\n $$\n141.14>100\n$$ \n\nUnd um den Umstehenden um den Umstehenden um den Umen Verschschütt und um den Umstehenden um den Um den Nachbarn um den Umstehenden um den Umstehenden um den Umstehenden um den um den Veronnen Über den Ver beliebige Um den um den um den um um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um den um als den um den um den um den um den um den um den um die um den vergleichen ibel um den um den $\\$100$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$$\nPV_{\\mathrm{ann}}\\approx12{,}864.50\\qquad PV\\approx12{,}723.36\n$$\n\n$$\nPV_{\\mathrm{ann}}-PV\\approx141.14\n$$\n\n$$\n141.14>100\n$$\n\nBei jährlicher Verzinsung ist die nötige Anfangseinlage um mehr als $\\$100$ strikt größer.\n\nDie Aussage ist richtig.",
       "**D.** → Richtig\n\nIm Üben war gewonnen: der Discount-Faktor $(1+i)^{-N}\\approx0.678579$.\n\n $$\n(1+i)^{-N}\\approx0.678579\n$$ \n\n $$\n0.678579<0.68\n$$ \n\nDer Diskontierungsfaktor ist strikt weniger als $0.68$.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nFour-year present value:\n\n $$\nPV_4=\\frac{18{,}750.00}{(1+0.005400)^{48}}\\approx14{,}478.88\n$$ \n\n $$\n14{,}478.88\\nless 14{,}500\n$$ \n\nDie kürzerfristige Eröffnungseinlage scheitert $\\$14,500$.\n\nDie Aussage ist falsch."
     ],
@@ -982,7 +982,7 @@
       "**A.** → Richtig\n\n$$\ni=0.480\\%\n$$ \n\nStimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\n$$\nN\\approx84.6745>84\n$$ \n\nGenaues Jahr übersteigen Sie den ganzen Tag.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\n$$\nt\\approx7.0562\n$$ \n\n $$\n7.0562<7.50\n$$ \n\nDie benötigte Zeit ist strikt unter $7.50$ years.\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\n$$\nt-t'\\approx0.2816\n$$ \n\n $$\n0.2816\\nless 0.30\n$$ \n\ndie zu bestellen, zu bestellen, $0.30$ years.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$$\nt-t'\\approx0.2816\n$$\n\n$$\n0.2816\\nless 0.30\n$$\n\nDie Verkürzung liegt unter $0.30$ Jahren.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n$$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ \n\n $$\n5{,}331.35\\nless 5{,}400\n$$ \n\n60 Monate scheitern $\\$5,400$.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Solve $(1+i)^{N}=FV/PV$ once.\n\n $$\ni=\\frac{0.0576}{12}=0.004800\\qquad\\frac{FV}{PV}=1.5\n$$ \n\n $$\nN=\\frac{\\ln 1.5}{\\ln(1+i)}\\approx84.6745\\qquad t\\approx7.0562\n$$ \n\nAt $r'=0.06$: $i'=0.005$, $N'=\\frac{\\ln 1.5}{\\ln 1.005}\\approx81.2956$, $t'\\approx6.7746$.\n\n $$\n4000(1+i)^{60}\\approx5{,}331.35\n$$ "
@@ -999,7 +999,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$\ni_d=0.00013562=0.01356\\%\n$$ \n\nStimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\nFV_d\\approx10{,}672.75\n$$ \n\n $$\n10{,}672.75>10{,}650\n$$ \n\nNach demmenschen, auf den das für:\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\nFV_d\\approx10{,}672.75\n$$\n\n$$\n10{,}672.75>10{,}650\n$$\n\nDie tägliche Verzinsung übersteigt die Untergrenze.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\n$$\nFV_c-FV_d\\approx0.11\n$$ \n\n $$\n0.11\\nless 2\n$$ \n\nDie kontinuierliche Prämie über täglich ist unter $\\$2$.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\n$$\nFV_m\\approx10{,}669.59\\qquad FV_d\\approx10{,}672.75\n$$ \n\n $$\nFV_d-FV_m\\approx3.15\n$$ \n\n $$\n3.15>2\n$$ \n\nDie tägliche Verzinsung wird mehr als $\\$2$ monatlichen auf.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\nR_d\\approx5.0742\\%\n$$ \n\n $$\n5.0742\\%>5.06\\%\n$$ \n\nÜbertrifft die genannte Untergrenze.\n\nDie Aussage ist richtig."
