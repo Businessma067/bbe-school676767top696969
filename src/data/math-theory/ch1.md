@@ -317,6 +317,21 @@ A **proposition** is an assertion that is either true or false.
 
 An assertion with a free variable, such as $x^2 - 1 = 0$, is an **open proposition**. Plug in different values of $x$ and you get different closed propositions, some true and some false. Until a value is chosen, the open claim itself is not simply true or false. The same idea appears in economics as “profit equals zero when price equals average cost”: it becomes a yes/no statement only after numbers are fixed.
 
+### Logic symbols
+
+Keep this table nearby while you work the chapter questions. Every connective and quantifier below appears in the exercises.
+
+| Symbol | Meaning |
+| --- | --- |
+| $\neg$ | not (negation): flips true $\leftrightarrow$ false |
+| $\land$ | and (conjunction): true only when both parts are true |
+| $\lor$ | or (inclusive disjunction): true when at least one part is true |
+| $\Rightarrow$ | implies / if … then …: false only when the “if” part is true and the “then” part is false |
+| $\Leftrightarrow$ | if and only if (equivalence): true when both sides have the same truth value |
+| $\equiv$ | logically equivalent to (same truth value in every case) |
+| $\forall$ | for all / for every |
+| $\exists$ | there exists / there is at least one |
+
 ### The truth table of an implication
 
 If whenever $P$ is true, $Q$ must also be true, write
