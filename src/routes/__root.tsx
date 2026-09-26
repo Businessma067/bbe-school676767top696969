@@ -19,13 +19,14 @@ import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
 import { AuthReturnRedirect } from "../components/AuthReturnRedirect";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
-import { LanguageProvider } from "../lib/i18n/context";
+import { LanguageProvider, useLanguage } from "../lib/i18n/context";
+import { PageLangContext } from "../lib/i18n/jsx/render-text";
 import { THEME_INIT_SCRIPT } from "../lib/theme";
 import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
-import { getLocaleFromPath } from "@/lib/i18n/locale-path";
+import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
 
 const FloatingAssistant = lazyNamed(
   () => import("../components/FloatingAssistant"),
@@ -181,28 +182,41 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+/** Same effective language PageTranslator uses: study surfaces stay English. */
+function PageLangProvider({ children }: { children: ReactNode }) {
+  const { lang } = useLanguage();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const pageLang = isStudyContentPath(pathname) ? "en" : lang;
+  return <PageLangContext.Provider value={pageLang}>{children}</PageLangContext.Provider>;
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const urlLang = useRouterState({
+    select: (s) => getLocaleFromPath(s.location.pathname) ?? "en",
+  });
 
   return (
     <QueryClientProvider client={queryClient}>
-      <LanguageProvider>
-        <PracticeCaseProvider>
-          <LocaleSync />
-          <DeferredChrome delayMs={400}>
-            <PageTranslator />
-          </DeferredChrome>
-          <IntroSplash />
-          <HashScrollOnLoad />
-          <ActivityTracker />
-          <AuthReturnRedirect />
-          <Breadcrumbs />
-          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-          <Outlet />
-          <DeferredChrome>
-            <FloatingAssistant />
-          </DeferredChrome>
-        </PracticeCaseProvider>
+      <LanguageProvider initialLang={urlLang}>
+        <PageLangProvider>
+          <PracticeCaseProvider>
+            <LocaleSync />
+            <DeferredChrome delayMs={400}>
+              <PageTranslator />
+            </DeferredChrome>
+            <IntroSplash />
+            <HashScrollOnLoad />
+            <ActivityTracker />
+            <AuthReturnRedirect />
+            <Breadcrumbs />
+            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+            <Outlet />
+            <DeferredChrome>
+              <FloatingAssistant />
+            </DeferredChrome>
+          </PracticeCaseProvider>
+        </PageLangProvider>
       </LanguageProvider>
     </QueryClientProvider>
   );

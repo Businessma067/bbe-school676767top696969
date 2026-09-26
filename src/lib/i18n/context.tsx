@@ -29,9 +29,16 @@ export function useLanguage() {
   return useContext(LanguageContext);
 }
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  // Default stays English for SSR; LocaleSync applies URL / storage after mount.
-  const [lang, setLangState] = useState<Lang>("en");
+export function LanguageProvider({
+  children,
+  initialLang = "en",
+}: {
+  children: ReactNode;
+  /** Must be derived from the URL so SSR and the first client render agree. */
+  initialLang?: Lang;
+}) {
+  // LocaleSync applies stored preferences after mount.
+  const [lang, setLangState] = useState<Lang>(initialLang);
 
   useEffect(() => {
     if (typeof document !== "undefined") document.documentElement.lang = lang;
