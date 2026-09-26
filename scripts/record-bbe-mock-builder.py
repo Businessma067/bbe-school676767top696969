@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Film BBE Mock Builder HIW — course-style smooth scroll + clear mixer demo.
+"""Film BBE Mock Builder HIW — wheel-like stepped scroll + clear mixer demo.
 
 Choreography:
   open Ch.2 → open Ch.3 → tick 3.3 / 3.4 / 3.5 →
@@ -131,33 +131,51 @@ def _ease(t: float) -> float:
 
 
 async def smooth_scroll(page, dy: float, ms: int = 1400):
-    """Same cubic ease as the Course How-it-works demos — no teleport."""
+    """Scroll in small stepped increments — looks like a wheel, never teleports.
+
+    A single in-page rAF tween finishes between CDP screencast frames and reads
+    as a jump. Driving scrollTop from Python with a short pause each tick yields
+    to the event loop so every step is captured — same look as mouse.wheel.
+    """
     if abs(dy) < 2:
         return
-    await page.evaluate(
-        """([dy, ms]) => new Promise((res) => {
-          const target = document.scrollingElement || document.documentElement;
-          const start = target.scrollTop;
-          const max = Math.max(0, target.scrollHeight - target.clientHeight);
-          const end = Math.max(0, Math.min(max, start + dy));
-          const dist = end - start;
-          if (Math.abs(dist) < 1) { res(); return; }
-          const t0 = performance.now();
-          const ease = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
-          function step(now) {
-            const p = Math.min(1, (now - t0) / ms);
-            target.scrollTop = start + dist * ease(p);
-            if (p < 1) requestAnimationFrame(step);
-            else {
-              target.scrollTop = end;
-              res();
-            }
-          }
-          requestAnimationFrame(step);
-        })""",
-        [float(dy), int(ms)],
+
+    start, max_scroll = await page.evaluate(
+        """() => {
+          const t = document.scrollingElement || document.documentElement;
+          return [t.scrollTop, Math.max(0, t.scrollHeight - t.clientHeight)];
+        }"""
     )
-    await page.wait_for_timeout(160)
+    goal = max(0.0, min(float(max_scroll), float(start) + float(dy)))
+    dist = goal - float(start)
+    if abs(dist) < 2:
+        return
+
+    # ~30ms ticks ≈ a gentle trackpad/wheel roll; enough frames for 60fps capture.
+    delay = 30
+    steps = max(12, int(round(ms / delay)))
+    for i in range(1, steps + 1):
+        t = i / steps
+        # Smoothstep — soft start/stop like a real wheel flick.
+        e = t * t * (3.0 - 2.0 * t)
+        pos = float(start) + dist * e
+        await page.evaluate(
+            """(y) => {
+              const t = document.scrollingElement || document.documentElement;
+              t.scrollTop = y;
+            }""",
+            pos,
+        )
+        await page.wait_for_timeout(delay)
+
+    await page.evaluate(
+        """(y) => {
+          const t = document.scrollingElement || document.documentElement;
+          t.scrollTop = y;
+        }""",
+        goal,
+    )
+    await page.wait_for_timeout(140)
 
 
 async def reveal_smooth(page, locator, pad: float = 0.48):
@@ -369,7 +387,14 @@ async def demo(page):
     await mouse_click(page, create, pause=700, allow_scroll=False)
 
     dialog = page.get_by_role("dialog")
-    await dialog.wait_for(state="visible", timeout=10000)
+    try:
+        await dialog.wait_for(state="visible", timeout=8000)
+    except Exception:
+        # Coordinate click can miss under heavy screencast load — one retry.
+        box = await create.bounding_box()
+        if box:
+            await page.mouse.click(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+        await dialog.wait_for(state="visible", timeout=12000)
     await page.wait_for_timeout(260)
     timed = dialog.get_by_role("button", name=re.compile(r"^Timed", re.I))
     await mouse_click(page, timed, pause=780)
