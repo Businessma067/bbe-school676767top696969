@@ -73,7 +73,7 @@ export function answerFromCaseDatabase(
 ): string {
   const q = query.trim();
   if (!q) {
-    return "Select text in the case, or ask a question about the current task.";
+    return "Ask a question about the current task.";
   }
 
   const chunks = buildChunks(c);

@@ -5,7 +5,6 @@ import {
   useCallback,
   useContext,
   useMemo,
-  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -27,20 +26,8 @@ export type PracticeCasePayload = {
   answerKey?: boolean[];
 };
 
-export type OpenAssistantPrompt = {
-  selection: string;
-  intent: "explain";
-};
-
-type AssistantBridge = {
-  openWithExplain: (selection: string) => void;
-  openAndFocus?: () => void;
-};
-
 type PracticeCaseActions = {
   setCasePayload: (payload: PracticeCasePayload | null) => void;
-  registerAssistant: (bridge: AssistantBridge | null) => void;
-  openAssistantWithPrompt: (opts: OpenAssistantPrompt) => void;
 };
 
 /** Payload-only context — consumers re-render when the active case changes. */
@@ -80,29 +67,16 @@ export function compactPracticeCase(payload: PracticeCasePayload): PracticeCaseP
 
 export function PracticeCaseProvider({ children }: { children: ReactNode }) {
   const [casePayload, setCasePayloadState] = useState<PracticeCasePayload | null>(null);
-  const bridgeRef = useRef<AssistantBridge | null>(null);
 
   const setCasePayload = useCallback((payload: PracticeCasePayload | null) => {
     setCasePayloadState(payload ? compactPracticeCase(payload) : null);
   }, []);
 
-  const registerAssistant = useCallback((bridge: AssistantBridge | null) => {
-    bridgeRef.current = bridge;
-  }, []);
-
-  const openAssistantWithPrompt = useCallback((opts: OpenAssistantPrompt) => {
-    const selection = opts.selection.trim();
-    if (!selection) return;
-    bridgeRef.current?.openWithExplain(selection);
-  }, []);
-
   const actions = useMemo(
     () => ({
       setCasePayload,
-      registerAssistant,
-      openAssistantWithPrompt,
     }),
-    [setCasePayload, registerAssistant, openAssistantWithPrompt],
+    [setCasePayload],
   );
 
   return (
@@ -123,10 +97,3 @@ export function useSetPracticeCase(): (payload: PracticeCasePayload | null) => v
   return ctx?.setCasePayload ?? (() => {});
 }
 
-export function usePracticeCaseActions() {
-  const ctx = useContext(PracticeCaseActionsContext);
-  return {
-    registerAssistant: ctx?.registerAssistant ?? (() => {}),
-    openAssistantWithPrompt: ctx?.openAssistantWithPrompt ?? (() => {}),
-  };
-}
