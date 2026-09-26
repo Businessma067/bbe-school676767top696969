@@ -1,0 +1,21 @@
+key=True
+stmt=$\displaystyle\lim_{x\to+\infty}s(x)=+\infty$ whenever $a>0$.
+
+CURRENT:
+**A.** ? True
+
+Rewrite the rational function by factoring $ax$ out of the numerator:
+
+$$
+s(x)=ax\cdot\frac{1+\frac{b}{ax}+\frac{c}{ax^{2}}+\frac{d}{ax^{3}}}{1+\frac{4}{x^{2}}}
+$$
+
+As $x\to+\infty$ the fraction tends to $1$, so
+
+$$
+s(x)\sim ax
+$$
+
+When $a>0$ this tends to $+\infty$.
+
+So the statement is True.

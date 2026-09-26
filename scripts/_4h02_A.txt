@@ -1,0 +1,83 @@
+**A.** → False
+
+Begin with the domain of both radicals: $x\ge -1$. Isolate one square root:
+
+$$
+\sqrt{3x+7}=4-\sqrt{x+1}
+$$
+
+The right side must stay nonnegative, which requires $x\le 15$. Square once:
+
+$$
+3x+7=16-8\sqrt{x+1}+(x+1)
+$$
+
+Collect like terms:
+
+$$
+2x-10=-8\sqrt{x+1}
+$$
+
+Divide by $-2$:
+
+$$
+5-x=4\sqrt{x+1}
+$$
+
+which forces the additional restriction $x\le 5$. Square again:
+
+$$
+(5-x)^{2}=16(x+1)
+$$
+
+Expand both sides:
+
+$$
+25-10x+x^{2}=16x+16
+$$
+
+Move everything to one side:
+
+$$
+x^{2}-26x+9=0
+$$
+
+Compute the discriminant:
+
+$$
+26^{2}=676
+$$
+
+$$
+4\cdot 9=36
+$$
+
+$$
+676-36=640
+$$
+
+Apply the quadratic formula:
+
+$$
+x=\frac{26\pm\sqrt{640}}{2}
+$$
+
+$$
+\sqrt{640}=8\sqrt{10}
+$$
+
+$$
+\frac{26}{2}=13
+$$
+
+$$
+\frac{8\sqrt{10}}{2}=4\sqrt{10}
+$$
+
+$$
+x=13\pm 4\sqrt{10}
+$$
+
+Two real candidates appear, but only the smaller one lies in $[-1,5]$ and survives back-substitution. The larger candidate is discarded. So it is not true that both candidates survive.
+
+So the statement is False.

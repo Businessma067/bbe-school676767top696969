@@ -1,0 +1,69 @@
+**C.** → False
+
+An absolute value equals a real expression only when that expression is nonnegative, so require $3x-4\ge 0$, i.e. $x\ge\tfrac{4}{3}$. Split on the sign of $x^{2}-6x+5$.
+
+Case 1 ($x^{2}-6x+5\ge 0$): the equation reads $x^{2}-6x+5=3x-4$, i.e.
+
+$$
+x^{2}-9x+9=0
+$$
+
+$$
+9^{2}=81
+$$
+
+$$
+4\cdot 9=36
+$$
+
+$$
+81-36=45
+$$
+
+$$
+x=\frac{9\pm\sqrt{45}}{2}
+$$
+
+$$
+\sqrt{45}=3\sqrt{5}
+$$
+
+$$
+x=\frac{9\pm 3\sqrt{5}}{2}
+$$
+
+Only $x=\dfrac{9+3\sqrt5}{2}\approx 7.85$ satisfies both $x\ge 5$ (needed for $x^{2}-6x+5\ge0$) and the domain; the other root fails that sign requirement.
+
+Case 2 ($x^{2}-6x+5<0$): the equation reads $-(x^{2}-6x+5)=3x-4$, i.e.
+
+$$
+x^{2}-3x+1=0
+$$
+
+$$
+3^{2}=9
+$$
+
+$$
+4\cdot 1=4
+$$
+
+$$
+9-4=5
+$$
+
+$$
+x=\frac{3\pm\sqrt{5}}{2}
+$$
+
+Only $x=\dfrac{3+\sqrt5}{2}\approx 2.62$ lies in the required range $1<x<5$ and the domain $x\ge\tfrac{4}{3}$; the other root is below $1$.
+
+The second surviving root is real and domain-legal, yet
+
+$$
+2.62<3
+$$
+
+so it is not true that every real solution is strictly larger than $3$.
+
+So the statement is False.

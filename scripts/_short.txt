@@ -1,0 +1,75 @@
+=== economics CASE 6.1.020 A len=224 blocks=112
+**A.** → True
+
+Non-current assets are held for use in the business beyond one year and normally have a useful life longer than one year. That is the standard classification rule the claim restates.
+
+So the statement is True.
+
+=== economics CASE 6.4.010 B len=242 blocks=121
+**B.** → True
+
+The overview already recovers current assets $CA = 356$ and current liabilities $CL = 223$.
+
+$$
+356 - 223 = 133
+$$
+
+$$
+133 > 0
+$$
+
+Working capital is EUR 133 thousand and positive, matching the claim.
+
+So the statement is True.
+
+=== economics CASE 6.2.039 A len=250 blocks=125
+**A.** → True
+
+Under the straight-line method, depreciable cost is spread evenly over the expected useful life, so each year carries the same depreciation charge. That is precisely the allocation rule restated in the claim.
+
+So the statement is True.
+
+=== math DEMO MATH 8.H01 B len=270 blocks=135
+**B.** → True
+
+Night runs keep the same kilometre rate and add a flat surcharge of $5$:
+
+$$
+C_{\mathrm{night}}(d)=C_{\mathrm{day}}(d)+5
+$$
+
+for every $d>0$. The night bill is therefore exactly EUR 5 more than the day bill at the same distance.
+
+So the statement is True.
+
+=== economics CASE 6.3.027 B len=273 blocks=137
+**B.** → True
+
+Current assets such as inventory, trade receivables and cash are the short-term, more liquid stock of resources. They are not expected to be held for use beyond one year. That is exactly the classification rule stated in the claim.
+
+So the statement is True.
+
+=== economics CASE 6.3.027 A len=298 blocks=149
+**A.** → False
+
+Total equity is read from the two-year extract:
+
+$$
+532 - 542 = -10
+$$
+
+$$
+\frac{-10}{542} \approx -0.0185
+$$
+
+$$
+-0.0185 \times 100\% \approx -1.8\%
+$$
+
+$$
+-1.8\% \ngtr 21.7\%
+$$
+
+Total equity actually fell by about 1.8%, so growth above 21.7% is false.
+
+So the statement is False.

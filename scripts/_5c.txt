@@ -1,0 +1,83 @@
+**C.** → True
+
+From the baseline $(90,90)$, shift by $15$ pages toward colour:
+
+$$
+m=90-15
+$$
+
+$$
+90-15=75
+$$
+
+$$
+c=90+15
+$$
+
+$$
+90+15=105
+$$
+
+$$
+(m,c)=(75,105)
+$$
+
+Revenue at the new mix, product by product. First the mono contribution:
+
+$$
+35\cdot 75
+$$
+
+$$
+35\cdot 70=2450
+$$
+
+$$
+35\cdot 5=175
+$$
+
+$$
+2450+175=2625
+$$
+
+$$
+35\cdot 75=2625
+$$
+
+Next the colour contribution:
+
+$$
+55\cdot 105
+$$
+
+$$
+55\cdot 100=5500
+$$
+
+$$
+55\cdot 5=275
+$$
+
+$$
+5500+275=5775
+$$
+
+$$
+55\cdot 105=5775
+$$
+
+Add the two pieces:
+
+$$
+2625+5775=8400
+$$
+
+Revenue rise against the baseline EUR 8100:
+
+$$
+8400-8100=300
+$$
+
+Revenue rises by exactly EUR 300.
+
+So the statement is True.

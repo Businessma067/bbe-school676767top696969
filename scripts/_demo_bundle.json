@@ -1,0 +1,788 @@
+{
+  "math": [
+    {
+      "i": 0,
+      "case_id": "DEMO MATH 1.H02",
+      "title": "Conference attendance rules — hard roster",
+      "context": "Four colleagues — Ana, Boris, Ceci, and Dmitri — decide whether to attend a conference.\n\n(1) If Ana attends, then Boris does not attend.\n\n(2) If Boris does not attend, then Ceci attends.\n\n(3) If Ceci attends, then Dmitri does not attend — unless Ana also attends, in which case Dmitri is unrestricted.\n\n(4) Dmitri attends.\n\n(5) At most three of the four attend.\n\n(6) If Ana stays away, then Boris attends.\n\n(7) Ceci and Boris never attend together.\n\n(8) It is not the case that nobody from {Ana, Ceci} attends.\n\nDecide whether each claim is true or false.",
+      "statements": [
+        "Dmitri attends in every roster consistent with the rules.",
+        "Ana must attend in every legal roster.",
+        "There exists a legal roster in which exactly three people attend.",
+        "Boris can attend in some legal roster.",
+        "If the “unless Ana attends” exception were removed from rule (3), the rules would still admit a solution with Dmitri attending."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "current_lens": [
+        526,
+        609,
+        637,
+        660,
+        514
+      ],
+      "current": [
+        "**A.** → True\n\nRule (4) is an unconditional atomic fact, not an implication:\n\n$$\nD=\\mathsf{true}\n$$\n\nWrite the attendance bit explicitly:\n\n$$\nD\n$$\n\nNo later rule ever forces Dmitri out. Rule (3) can constrain Dmitri only when Ceci attends and Ana does not; that branch never opens once Ana is forced in (see letter B). Rules (1), (2), (5), (6), (7), and (8) do not mention Dmitri at all. Therefore every roster consistent with the eight rules contains Dmitri:\n\n$$\nD=\\mathsf{true}\n$$\n\nin every model.\n\nSo the statement is True.",
+        "**B.** → True\n\nArgue by contradiction. Suppose Ana stays away:\n\n$$\n\\neg A\n$$\n\nRule (6) then forces Boris:\n\n$$\n\\neg A\\Rightarrow B\n$$\n\n$$\nB\n$$\n\nRule (7) forbids Ceci once Boris is present:\n\n$$\n\\neg(B\\land C)\n$$\n\n$$\n\\neg C\n$$\n\nRule (2) is the implication $\\neg B\\Rightarrow C$. Its antecedent is false (Boris attends), so (2) does not resurrect Ceci.\n\nRule (8) demands that at least one of Ana or Ceci attends:\n\n$$\nA\\lor C\n$$\n\nWith both $A$ and $C$ false, the disjunction fails:\n\n$$\n\\neg(A\\lor C)\n$$\n\nThe assumption $\\neg A$ is therefore impossible. Ana attends in every legal roster.\n\nSo the statement is True.",
+        "**C.** → True\n\nFrom B, Ana always attends:\n\n$$\nA=\\mathsf{true}\n$$\n\nRule (1) is $A\\Rightarrow\\neg B$. With $A$ true this forces\n\n$$\n\\neg B\n$$\n\nRule (2) with Boris absent forces Ceci:\n\n$$\n\\neg B\\Rightarrow C\n$$\n\n$$\nC\n$$\n\nBecause Ana is present, the \"unless Ana attends\" exception in (3) fires, so Ceci does not force Dmitri out. Rule (4) still requires Dmitri. The resulting roster is\n\n$$\n\\{A,C,D\\}\n$$\n\n— exactly three people. Rule (5) allows at most three, so three is admissible. Rule (7) holds because Boris is absent. Rule (8) holds because both Ana and Ceci attend.\n\nThus a legal three-person roster exists.\n\nSo the statement is True.",
+        "**D.** → False\n\nAsk whether Boris can appear in any roster that obeys all eight rules. From letter B, Ana is present in every legal roster:\n\n$$\nA=\\mathsf{true}\n$$\n\nRule (1) is the implication\n\n$$\nA\\Rightarrow\\neg B\n$$\n\nThe antecedent is always true, so modus ponens forces\n\n$$\n\\neg B\n$$\n\nin every model. Write the forced bit explicitly:\n\n$$\nB=\\mathsf{false}\n$$\n\nSuppose for a moment that some model had $B=\\mathsf{true}$. Then rule (1) would require $\\neg A$, but letter B already showed $\\neg A$ collapses via (6), (7), and (8). The contradiction confirms Boris is permanently ejected: there is no legal roster in which he attends.\n\nSo the statement is False.",
+        "**E.** → False\n\nRemove the Ana-exception from rule (3). The new rule (3′) reads simply\n\n$$\nC\\Rightarrow\\neg D\n$$\n\nThe earlier forcing still applies. From letter B:\n\n$$\nA=\\mathsf{true}\n$$\n\nFrom rule (1):\n\n$$\n\\neg B\n$$\n\nFrom rule (2):\n\n$$\nC\n$$\n\nRule (4) still needs\n\n$$\nD\n$$\n\nBut $C$ together with (3′) forces\n\n$$\n\\neg D\n$$\n\nCompare the two requirements on Dmitri:\n\n$$\nD\n$$\n\n$$\n\\neg D\n$$\n\nContradiction. The constraint set becomes unsatisfiable. No solution with Dmitri attending remains.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 1,
+      "case_id": "DEMO MATH 2.H02",
+      "title": "Two-number identity archive — harder chain",
+      "context": "An algebra archive stores two nonzero real numbers $p$ and $q$ through four records:\n\n(1) $p^{2}+q^{2}=250$\n\n(2) $pq=75$\n\n(3) $p^{3}+q^{3}=3500$\n\n(4) $\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{4}{15}$\n\nThe original order was not recorded. Decide whether each statement is true or false.",
+      "statements": [
+        "Records (1) and (2) alone already force $(p+q)^{2}=400$, so $|p+q|=20$.",
+        "Records (1) and (2) together with the side condition $p+q>0$ already imply record (3).",
+        "Records (1), (2) and (4) together force the unordered pair $\\{p,q\\}=\\{5,15\\}$.",
+        "If record (3) were rewritten as $p^{3}+q^{3}=2800$ while (1) and (2) stayed unchanged, the three records could still hold simultaneously for some nonzero reals $p,q$.",
+        "From (1) and (2) alone one obtains $(p-q)^{2}=100$, and if in addition (4) holds then automatically $p^{3}+q^{3}=(p+q)\\big((p^{2}+q^{2})-pq\\)=3500$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "current_lens": [
+        416,
+        602,
+        494,
+        640,
+        433
+      ],
+      "current": [
+        "**A.** → True\n\nRecords (1) and (2) alone already determine the squared sum. Expand the binomial:\n\n$$\n(p+q)^{2}=p^{2}+2pq+q^{2}=(p^{2}+q^{2})+2pq\n$$\n\nSubstitute records (1) and (2):\n\n$$\n(p+q)^{2}=250+2\\cdot 75=250+150=400\n$$\n\nTake the nonnegative square root:\n\n$$\n|p+q|=\\sqrt{400}=20\n$$\n\nexactly as claimed. (The signed sum itself may still be $+20$ or $-20$; the absolute value is forced.)\n\nSo the statement is True.",
+        "**B.** → True\n\nStart from records (1) and (2) together with the side condition $p+q>0$. Letter A already gives\n\n$$\n|p+q|=20\n$$\n\nThe side condition selects the positive branch:\n\n$$\np+q=20\n$$\n\nApply the standard cube-sum identity:\n\n$$\np^{3}+q^{3}=(p+q)\\bigl((p^{2}+q^{2})-pq\\bigr)\n$$\n\nFirst the inner difference:\n\n$$\n250-75=175\n$$\n\nThen multiply by the sum, splitting the product:\n\n$$\np^{3}+q^{3}=20\\cdot 175\n$$\n\n$$\n20\\cdot 100=2000\n$$\n\n$$\n20\\cdot 75=1500\n$$\n\n$$\n2000+1500=3500\n$$\n\n$$\np^{3}+q^{3}=3500\n$$\n\nwhich is exactly record (3). So (1), (2) and $p+q>0$ already imply (3).\n\nSo the statement is True.",
+        "**C.** → True\n\nRecord (4) forces the sign of the sum. Multiply both sides of $\\frac{1}{p}+\\frac{1}{q}=\\frac{4}{15}$ by $pq=75$:\n\n$$\np+q=\\frac{4}{15}\\cdot 75=20\n$$\n\nmatching letter A's $|p+q|=20$. The two numbers are the roots of\n\n$$\nt^{2}-20t+75=0\n$$\n\nDiscriminant:\n\n$$\n20^{2}-4\\cdot 75=400-300=100\n$$\n\n$$\nt=\\frac{20\\pm\\sqrt{100}}{2}=\\frac{20\\pm 10}{2}\n$$\n\nso $t=15$ or $t=5$. The unordered pair is $\\{5,15\\}$, and the reciprocal sum matches record (4) automatically.\n\nSo the statement is True.",
+        "**D.** → False\n\nKeep records (1) and (2) fixed and ask whether the cube sum can be rewritten as $2800$. From those two records alone,\n\n$$\n|p+q|=20\n$$\n\nInner piece:\n\n$$\n(p^{2}+q^{2})-pq=250-75\n$$\n\n$$\n250-75=175\n$$\n\nThe cube-sum identity forces\n\n$$\np^{3}+q^{3}=(p+q)\\bigl((p^{2}+q^{2})-pq\\bigr)\n$$\n\nPositive branch:\n\n$$\n20\\cdot 175=3500\n$$\n\nNegative branch:\n\n$$\n(-20)\\cdot 175=-3500\n$$\n\nSo the only possible values are\n\n$$\n\\pm 3500\n$$\n\nCompare with the rewritten claim:\n\n$$\n3500\\neq 2800\n$$\n\n$$\n-3500\\neq 2800\n$$\n\nNeither value equals $2800$. The rewritten triple therefore cannot hold for any nonzero reals $p,q$.\n\nSo the statement is False.",
+        "**E.** → True\n\nFrom records (1) and (2) expand the squared difference:\n\n$$\n(p-q)^{2}=p^{2}-2pq+q^{2}=250-2\\cdot 75=250-150=100\n$$\n\n$$\n|p-q|=\\sqrt{100}=10\n$$\n\nas claimed. If in addition record (4) holds, then\n\n$$\np+q=\\frac{4}{15}\\cdot 75=\\frac{300}{15}=20\n$$\n\nCube identity with $p^{2}+q^{2}-pq=250-75=175$:\n\n$$\np^{3}+q^{3}=(p+q)(p^{2}-pq+q^{2})=20\\cdot 175=3500\n$$\n\nwhich is exactly the displayed identity.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 2,
+      "case_id": "MATH 11.99",
+      "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Growing Perpetuity",
+      "context": "A logistics firm is juggling three separate arrangements. First, a depot lease requires payments of USD 5500 at the BEGINNING of each year as an annuity due for 6 years at 7% interest. Second, the firm separately invests USD 25000 today for 8 years under continuous compounding at a nominal rate of 5.5%. Third, a maintenance reserve is funded as a growing perpetuity that pays USD 2400 at the end of year 1 and then grows at 2% per year forever, discounted at 7%. Decide whether each statement is true or false.",
+      "statements": [
+        "The present value of the annuity-due lease payments is approximately USD 28050.",
+        "The future value of these 6 annuity-due payments, evaluated at the end of year 6, is approximately USD 50000.",
+        "The USD 25000 investment under continuous compounding at a nominal 5.5% rate accumulates, after 8 years, to approximately USD 38820.",
+        "The growing-perpetuity reserve requires a present value that is LESS than the present value of the 6-year annuity-due lease payments.",
+        "Comparing the accumulated continuous-compounding investment after 8 years to the growing-perpetuity present value, the continuous-compounding result is LARGER."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "current_lens": [
+        814,
+        654,
+        521,
+        563,
+        679
+      ],
+      "current": [
+        "**A.** → True\n\nSix beginning-of-year payments form an annuity due. The ordinary 6-period annuity factor is shifted forward one period:\n\n$$\nPV_{\\mathrm{ad}}=5500\\cdot\\frac{1-(1.07)^{-6}}{0.07}\\cdot 1.07\n$$\n\nBuild $(1.07)^{6}$ step by step:\n\n$$\n1.07^{1}=1.07\\qquad 1.07\\cdot 1.07=1.1449\n$$\n\n$$\n1.07^{2}=1.1449\\qquad 1.1449\\cdot 1.07=1.225043\n$$\n\n$$\n1.07^{3}=1.225043\n$$\n\n$$\n1.07^{4}=1.31079601\n$$\n\n$$\n1.07^{5}=1.4025517307\n$$\n\n$$\n1.07^{6}=1.500730351849\n$$\n\nInvert:\n\n$$\n(1.07)^{-6}=\\frac{1}{1.500730351849}\n$$\n\n$$\n(1.07)^{-6}\\approx 0.66634222\n$$\n\n$$\n1-0.66634222=0.33365778\n$$\n\n$$\n\\frac{0.33365778}{0.07}=4.76653971\n$$\n\n$$\n\\frac{1-(1.07)^{-6}}{0.07}\\approx 4.76654\n$$\n\nMultiply by the payment and the due shift:\n\n$$\nPV_{\\mathrm{ad}}\\approx 28051\n$$\n\nwhich rounds to the claimed USD 28050.\n\nSo the statement is True.",
+        "**B.** → False\n\nAccumulate the same six annuity-due payments to the end of year 6:\n\n$$\nFV_{\\mathrm{ad}}=5500\\cdot\\frac{(1.07)^{6}-1}{0.07}\\cdot 1.07\n$$\n\nFrom letter A:\n\n$$\n(1.07)^{6}=1.500730351849\n$$\n\n$$\n(1.07)^{6}-1=0.500730351849\n$$\n\n$$\n\\frac{0.500730351849}{0.07}=7.1532907407\n$$\n\n$$\n\\frac{(1.07)^{6}-1}{0.07}\\approx 7.15329\n$$\n\nMultiply by the payment:\n\n$$\n5500\\cdot 7.15329=39343.095\n$$\n\nApply the due shift:\n\n$$\n39343.095\\cdot 1.07=42097.11165\n$$\n\n$$\nFV_{\\mathrm{ad}}\\approx 42097\n$$\n\nCompare with the claimed USD 50000:\n\n$$\n42097\\neq 50000\n$$\n\n$$\n42097\\ngtr 50000\n$$\n\nAbout USD 42100 is far from the claimed USD 50000.\n\nSo the statement is False.",
+        "**C.** → True\n\nContinuous compounding at nominal force $0.055$ for $8$ years multiplies the principal by $e^{0.055\\cdot 8}$:\n\n$$\n0.055\\cdot 8=0.44\n$$\n\n$$\nFV_{\\mathrm{cont}}=25000\\,e^{0.44}\n$$\n\nExpand the exponential series for a check, or use the known value:\n\n$$\ne^{0.44}\\approx 1.55270722\n$$\n\n$$\n25000\\cdot 1.55=38750\n$$\n\n$$\n25000\\cdot 0.00270722=67.6805\n$$\n\n$$\n38750+67.6805=38817.6805\n$$\n\n$$\nFV_{\\mathrm{cont}}\\approx 38818\n$$\n\nwhich matches the claimed USD 38820 to ordinary exam rounding.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe growing-perpetuity present value uses the Gordon formula with first payment at the end of year 1:\n\n$$\nPV_{\\mathrm{perp}}=\\frac{2400}{0.07-0.02}\n$$\n\nDenominator:\n\n$$\n0.07-0.02=0.05\n$$\n\n$$\n\\frac{2400}{0.05}=48000\n$$\n\n$$\nPV_{\\mathrm{perp}}=48000\n$$\n\nFrom letter A, the annuity-due lease PV is about\n\n$$\nPV_{\\mathrm{ad}}\\approx 28051\n$$\n\nCompare:\n\n$$\n48000-28051=19949\n$$\n\n$$\n48000>28051\n$$\n\nThe perpetuity reserve is larger than the lease PV, not less. The claim that the perpetuity PV is less than the lease PV fails.\n\nSo the statement is False.",
+        "**E.** → False\n\nCompare the two solved figures from letters C and D side by side.\n\nFrom the continuous-compounding investment:\n\n$$\ne^{0.44}\\approx 1.55270722\n$$\n\n$$\n25000\\cdot 1.55270722\n$$\n\n$$\n38750+67.6805=38817.6805\n$$\n\n$$\nFV_{\\mathrm{cont}}\\approx 38818\n$$\n\nFrom the growing perpetuity:\n\n$$\n0.07-0.02=0.05\\qquad \\frac{2400}{0.05}=48000\n$$\n\n$$\nPV_{\\mathrm{perp}}=48000\n$$\n\nDifference:\n\n$$\n48000-38818=9182\n$$\n\nCheck the claimed direction “continuous-compounding result is LARGER”:\n\n$$\n38818\\ngtr 48000\n$$\n\nis false, because\n\n$$\n38818<48000\n$$\n\nThe continuous-compounding accumulation is smaller than the perpetuity PV by about USD 9182, not larger.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 3,
+      "case_id": "DEMO MATH 4.H02",
+      "title": "Five mixed hard equations — no shortcuts",
+      "context": "Decide whether each claim is true or false. Five independent mixed equations. The five claims deliberately use different judgment styles — candidate survival, root count, size comparison, threshold, and sign/location — so do not expect the same wording twice.",
+      "statements": [
+        "Squaring twice for $\\sqrt{3x+7}+\\sqrt{x+1}=4$ produces two real candidates, and both of them survive domain checks and back-substitution.",
+        "After discarding the poles $x=1$ and $x=-4$, the equation $\\dfrac{x+2}{x-1}+\\dfrac{2x-3}{x+4}=\\dfrac{3x^{2}+5x-2}{(x-1)(x+4)}$ reduces to a linear condition with exactly one surviving real root.",
+        "Every real solution of $|x^{2}-6x+5|=3x-4$ is strictly larger than $3$.",
+        "Every domain-legal real solution of $\\log_{2}(x-1)+\\log_{2}(x+3)=\\log_{2}(3x+5)$ is strictly larger than $4$.",
+        "The equation $\\sqrt{x+3}+|x-1|=4$ has at least one negative real solution and at least one real solution greater than $2$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "current_lens": [
+        834,
+        764,
+        985,
+        510,
+        823
+      ],
+      "current": [
+        "**A.** → False\n\nBegin with the domain of both radicals: $x\\ge -1$. Isolate one square root:\n\n$$\n\\sqrt{3x+7}=4-\\sqrt{x+1}\n$$\n\nThe right side must stay nonnegative, which requires $x\\le 15$. Square once:\n\n$$\n3x+7=16-8\\sqrt{x+1}+(x+1)\n$$\n\nCollect like terms:\n\n$$\n2x-10=-8\\sqrt{x+1}\n$$\n\nDivide by $-2$:\n\n$$\n5-x=4\\sqrt{x+1}\n$$\n\nwhich forces the additional restriction $x\\le 5$. Square again:\n\n$$\n(5-x)^{2}=16(x+1)\n$$\n\nExpand both sides:\n\n$$\n25-10x+x^{2}=16x+16\n$$\n\nMove everything to one side:\n\n$$\nx^{2}-26x+9=0\n$$\n\nDiscriminant and roots:\n\n$$\n26^{2}-4\\cdot 9=676-36=640\n$$\n\n$$\nx=\\frac{26\\pm\\sqrt{640}}{2}=13\\pm 4\\sqrt{10}\n$$\n\nTwo real candidates appear, but only the smaller one lies in $[-1,5]$ and survives back-substitution. The larger candidate is discarded. So it is not true that both candidates survive.\n\nSo the statement is False.",
+        "**B.** → True\n\nWork on the common domain that excludes the poles\n\n$$\nx\\neq 1\n$$\n\n$$\nx\\neq -4\n$$\n\nClear the common denominator $(x-1)(x+4)$:\n\n$$\n(x+2)(x+4)+(2x-3)(x-1)=3x^{2}+5x-2\n$$\n\nExpand the first product:\n\n$$\n(x+2)(x+4)=x^{2}+4x+2x+8\n$$\n\n$$\nx^{2}+6x+8\n$$\n\nExpand the second product:\n\n$$\n(2x-3)(x-1)=2x\\cdot x+2x\\cdot(-1)+(-3)\\cdot x+(-3)\\cdot(-1)\n$$\n\n$$\n2x^{2}-2x-3x+3\n$$\n\n$$\n2x^{2}-5x+3\n$$\n\n$$\nx^{2}+6x+8+2x^{2}-5x+3\n$$\n\n$$\n3x^{2}+(6-5)x+(8+3)\n$$\n\n$$\n3x^{2}+x+11\n$$\n\nEquate to the right-hand side:\n\n$$\n3x^{2}+x+11=3x^{2}+5x-2\n$$\n\n$$\nx+11=5x-2\n$$\n\nCollect $x$-terms:\n\n$$\n11+2=5x-x\n$$\n\n$$\n13=4x\\qquad 4x=13\n$$\n\n$$\nx=\\frac{13}{4}\\qquad \\frac{13}{4}=3.25\n$$\n\nCheck poles:\n\n$$\n3.25\\neq 1\n$$\n\n$$\n3.25\\neq -4\n$$\n\nExactly one root survives.\n\nSo the statement is True.",
+        "**C.** → False\n\nAn absolute value equals a real expression only when that expression is nonnegative, so require $3x-4\\ge 0$, i.e. $x\\ge\\tfrac{4}{3}$. Split on the sign of $x^{2}-6x+5$.\n\nCase 1 ($x^{2}-6x+5\\ge 0$): the equation reads $x^{2}-6x+5=3x-4$, i.e.\n\n$$\nx^{2}-9x+9=0\n$$\n\n$$\n9^{2}-4\\cdot 9=81-36=45\\qquad x=\\frac{9\\pm\\sqrt{45}}{2}=\\frac{9\\pm 3\\sqrt{5}}{2}\n$$\n\nOnly $x=\\dfrac{9+3\\sqrt5}{2}\\approx 7.85$ satisfies both $x\\ge 5$ (needed for $x^{2}-6x+5\\ge0$) and the domain; the other root fails that sign requirement.\n\nCase 2 ($x^{2}-6x+5<0$): the equation reads $-(x^{2}-6x+5)=3x-4$, i.e.\n\n$$\nx^{2}-3x+1=0\n$$\n\n$$\n3^{2}-4\\cdot 1=9-4=5\\qquad x=\\frac{3\\pm\\sqrt{5}}{2}\n$$\n\nOnly $x=\\dfrac{3+\\sqrt5}{2}\\approx 2.62$ lies in the required range $1<x<5$ and the domain $x\\ge\\tfrac{4}{3}$; the other root is below $1$.\n\nThe second surviving root is real and domain-legal, yet\n\n$$\n2.62<3\n$$\n\nso it is not true that every real solution is strictly larger than $3$.\n\nSo the statement is False.",
+        "**D.** → False\n\nLogarithms force a strict domain $x>1$ (and $3x+5>0$, which is automatic once $x>1$). Combine the logs into a single product identity:\n\n$$\n(x-1)(x+3)=3x+5\n$$\n\nExpand and move terms to one side:\n\n$$\nx^{2}-x-8=0\n$$\n\nDiscriminant and roots:\n\n$$\n(-1)^{2}-4\\cdot(-8)=1+32=33\\qquad x=\\frac{1\\pm\\sqrt{33}}{2}\n$$\n\nOnly the plus branch is domain-legal:\n\n$$\n\\frac{1+\\sqrt{33}}{2}\\approx 3.37\n$$\n\n$$\n3.37<4\n$$\n\nThe unique domain-legal solution is therefore not larger than $4$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSplit the absolute value at the kink $x=1$.\n\nFor $x\\ge 1$: $|x-1|=x-1$, so the equation becomes $\\sqrt{x+3}=5-x$, with the extra restriction $x\\le 5$. Square:\n\n$$\nx+3=(5-x)^{2}\n$$\n\n$$\nx+3=25-10x+x^{2}\n$$\n\n$$\nx^{2}-11x+22=0\n$$\n\n$$\n(-11)^{2}-4\\cdot 22=121-88=33\\qquad x=\\frac{11\\pm\\sqrt{33}}{2}\n$$\n\nOnly the minus branch lies in $[1,5]$:\n\n$$\nx=\\frac{11-\\sqrt{33}}{2}\n$$\n\n$$\n\\frac{11-\\sqrt{33}}{2}\\approx 2.63\n$$\n\n$$\n2.63>2\n$$\n\nFor $-3\\le x<1$: $|x-1|=1-x$, so the equation becomes $\\sqrt{x+3}=3+x$. Square:\n\n$$\nx+3=(3+x)^{2}\n$$\n\n$$\nx+3=9+6x+x^{2}\n$$\n\n$$\nx^{2}+5x+6=0\n$$\n\n$$\n(x+2)(x+3)=0\n$$\n\n$$\nx=-2\n$$\n\n$$\nx=-3\n$$\n\nBoth are negative and both satisfy $3+x\\ge 0$, so both survive back-substitution. So there is at least one negative solution and at least one solution greater than $2$.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 4,
+      "case_id": "DEMO MATH 5.H01",
+      "title": "Print-shop mix — two unknowns, five traps",
+      "context": "A print shop sells only mono pages and colour pages. In one batch it printed a total of $180$ pages and booked revenue EUR 8100. Mono sells at EUR 35 each and colour at EUR 55 each:\n$$\nm+c=180,\\qquad 35m+55c=8100.\n$$\nThe unique baseline solution is the factual starting point. Decide whether each statement is true or false.",
+      "statements": [
+        "The unique baseline solution is $(m,c)=(90,90)$.",
+        "If the colour price had been EUR 60 instead of EUR 55, with the same count $m+c=180$ and the same revenue EUR 8100, then $c$ would have fallen below $75$.",
+        "If management had printed $15$ fewer mono pages and $15$ more colour pages than the baseline, revenue would have risen by exactly EUR 300.",
+        "If total pages stayed $180$ but the revenue target rose to EUR 10000 at the same prices, no nonnegative solution $(m,c)$ would exist, because an all-colour batch only reaches EUR 9900.",
+        "If prices stayed EUR 35 and EUR 55 but the shop printed the swapped mix $(120,60)$ instead of the baseline $(90,90)$, revenue would still be EUR 8100."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "current_lens": [
+        310,
+        286,
+        279,
+        641,
+        560
+      ],
+      "current": [
+        "**A.** → True\n\nEliminate $m$ by substituting $m=180-c$ into the revenue equation:\n\n$$\n35(180-c)+55c=8100\n$$\n\n$$\n35\\cdot 180-35c+55c=8100\n$$\n\n$$\n6300+20c=8100\n$$\n\n$$\n20c=1800\n$$\n\n$$\nc=\\frac{1800}{20}=90\n$$\n\n$$\nm=180-90=90\n$$\n\nThe unique baseline solution is therefore $(m,c)=(90,90)$.\n\nSo the statement is True.",
+        "**B.** → True\n\nKeep $m+c=180$ and revenue $8100$, but replace the colour price by $60$:\n\n$$\n35(180-c)+60c=8100\n$$\n\n$$\n6300-35c+60c=8100\n$$\n\n$$\n6300+25c=8100\n$$\n\n$$\n25c=1800\n$$\n\n$$\nc=\\frac{1800}{25}=72\n$$\n\n$$\n72<75\n$$\n\nso the new colour count falls below $75$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFrom the baseline $(90,90)$, shift by $15$ pages toward colour:\n\n$$\n(m,c)=(75,105)\n$$\n\nRevenue at the new mix:\n\n$$\n35\\cdot 75=2625\n$$\n\n$$\n55\\cdot 105=5775\n$$\n\n$$\n2625+5775=8400\n$$\n\n$$\n8400-8100=300\n$$\n\nRevenue rises by exactly EUR $300$.\n\nSo the statement is True.",
+        "**D.** → True\n\nAn all-colour batch of $180$ pages yields the maximum feasible revenue at the given prices. Compute that ceiling:\n\n$$\n55\\cdot 180\n$$\n\n$$\n55\\cdot 80=4400\\qquad 5500+4400=9900\n$$\n\nAny mix that includes mono pages earns strictly less, because mono is cheaper than colour:\n\n$$\n35<55\n$$\n\nReplacing one colour page by one mono page cuts revenue by\n\n$$\n55-35=20\n$$\n\neuros per swapped page. Therefore every nonnegative mix $(m,c)$ with $m+c=180$ satisfies\n\n$$\n35m+55c\\le 9900\n$$\n\nA target of EUR 10000 exceeds that ceiling:\n\n$$\n10000>9900\n$$\n\n$$\n10000-9900=100\n$$\n\nso no nonnegative solution $(m,c)$ exists.\n\nSo the statement is True.",
+        "**E.** → False\n\nRevenue at the swapped mix $(120,60)$, product by product. First mono:\n\n$$\n35\\cdot 120\n$$\n\n$$\n35\\cdot 20=700\\qquad 3500+700=4200\n$$\n\nThen colour:\n\n$$\n55\\cdot 60\n$$\n\n$$\n5\\cdot 60=300\\qquad 3000+300=3300\n$$\n\nSum:\n\n$$\n4200+3300=7500\n$$\n\n$$\n7500\\neq 8100\n$$\n\nDifference:\n\n$$\n8100-7500=600\n$$\n\nAlternatively, relative to baseline $(90,90)$, the swap moves $30$ pages from colour to mono, each costing\n\n$$\n55-35=20\n$$\n\neuros:\n\nThe swapped mix earns EUR 600 less than EUR 8100, so it does not preserve the baseline revenue.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 5,
+      "case_id": "DEMO MATH 6.H02",
+      "title": "Hard mixed inequalities — varied interval claims",
+      "context": "Decide whether each claim is true or false. All five letters are inequalities, but the claims are worded differently on purpose: absence of counterexamples, existence inside an open interval, existence on a closed interval, containment of a segment, and nonempty intersection.",
+      "statements": [
+        "No point of the interval $[1,4]$ violates $|x^{2}-5x+4|+|2x-3|\\le x+6$.",
+        "The inequality $\\sqrt{2x+5}+|x-2|\\le 4$ admits at least one solution in the open interval $(1,2)$.",
+        "There exists some $x\\in[0,1]$ for which $\\dfrac{x^{2}-5x+6}{x^{2}-x-2}\\ge 1$.",
+        "The solution set of $\\dfrac{|x|}{x+3}+\\sqrt{x+1}\\le 2$ contains every point of $[0,1]$.",
+        "The inequality $\\dfrac{|2x-5|}{|x+1|}+|x-2|\\le 4$ has nonempty intersection with the interval $[-4,-2]$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "current_lens": [
+        894,
+        512,
+        557,
+        624,
+        490
+      ],
+      "current": [
+        "**A.** → True\n\nThe claim is a universal \"no counterexample\" statement on the closed interval $[1,4]$. Critical points of the absolute expressions are $x=1$, $x=4$ and $x=\\tfrac{3}{2}$.\n\nOn $[1,\\tfrac{3}{2}]$: $x^{2}-5x+4\\le 0$ and $2x-3\\le 0$, so the inequality reads\n\n$$\n-(x^{2}-5x+4)+(3-2x)\\le x+6\n$$\n\nExpand and rearrange:\n\n$$\n-x^{2}+3x-1\\le x+6\\qquad\\Rightarrow\\qquad 0\\le x^{2}-2x+7\n$$\n\nDiscriminant of $x^{2}-2x+7$:\n\n$$\n(-2)^{2}-4\\cdot 7=4-28=-24<0\n$$\n\nso the right side is always positive; the inequality holds identically on this piece.\n\nOn $[\\tfrac{3}{2},4]$: $x^{2}-5x+4\\le 0$ and $2x-3\\ge 0$, so\n\n$$\n-(x^{2}-5x+4)+(2x-3)\\le x+6\n$$\n\n$$\n-x^{2}+7x-7\\le x+6\\qquad\\Rightarrow\\qquad 0\\le x^{2}-6x+13\n$$\n\nDiscriminant of $x^{2}-6x+13$:\n\n$$\n(-6)^{2}-4\\cdot 13=36-52=-16<0\n$$\n\nso this piece likewise holds identically. Hence no point of $[1,4]$ is a counterexample.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe claim only asks for existence inside the open interval $(1,2)$. Domain of the radical requires $2x+5\\ge 0$, i.e. $x\\ge -\\tfrac{5}{2}$, which already contains $(1,2)$. Pick the convenient interior test point $x=\\tfrac{3}{2}$:\n\n$$\n\\sqrt{2\\cdot\\frac{3}{2}+5}+\\left|\\frac{3}{2}-2\\right|=\\sqrt{8}+\\frac{1}{2}=2\\sqrt{2}+\\frac{1}{2}\n$$\n\nWith $\\sqrt{2}\\approx 1.414$, one has $2\\sqrt{2}+\\tfrac12\\approx 3.328\\le 4$. So at least one point of $(1,2)$ satisfies the inequality.\n\nSo the statement is True.",
+        "**C.** → False\n\nAsk whether any point of the closed interval $[0,1]$ can satisfy the rational inequality. Poles are $x=-1$ and $x=2$. Away from the poles,\n\n$$\n\\frac{x^{2}-5x+6}{x^{2}-x-2}-1=\\frac{(x-2)(x-3)-(x-2)(x+1)}{(x-2)(x+1)}\n$$\n\nFactor the numerator:\n\n$$\n\\frac{-4(x-2)}{(x-2)(x+1)}\n$$\n\nCancel the shared factor:\n\n$$\n\\frac{-4}{x+1}\n$$\n\nso the inequality reduces to $x<-1$. The interval $[0,1]$ lies entirely outside that half-line. Check directly at $x=0$:\n\n$$\n\\frac{6}{-2}=-3\n$$\n\n$$\n-3\\ngeq 1\n$$\n\nNo point of $[0,1]$ works.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe claim asks for containment of the whole segment $[0,1]$ in the solution set. On $[0,1]$ one has $x\\ge 0$, so $|x|=x$, and both $x+3>0$ and $x+1\\ge 0$. The inequality reads\n\n$$\n\\frac{x}{x+3}+\\sqrt{x+1}\\le 2\n$$\n\nEach summand is increasing on $[0,1]$, so the left-hand side is maximized at the right endpoint $x=1$:\n\n$$\n\\frac{1}{4}=0.25\n$$\n\n$$\n\\sqrt{2}\\approx 1.414\n$$\n\n$$\n0.25+1.414=1.664\n$$\n\n$$\n1.664\\le 2\n$$\n\nAt the left endpoint $x=0$:\n\n$$\n0+\\sqrt{1}=1\n$$\n\n$$\n1\\le 2\n$$\n\nBecause the maximum on the segment is already $\\le 2$, every point of $[0,1]$ belongs to the solution set.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe claim asks whether the solution set meets $[-4,-2]$. The pole $x=-1$ does not meet that interval, so every point of $[-4,-2]$ is domain-legal. Test the interior point $x=-3$:\n\n$$\n\\frac{|2(-3)-5|}{|-3+1|}+|-3-2|=\\frac{|-11|}{2}+5=\\frac{11}{2}+5=10.5\n$$\n\n$$\n10.5\\le 4\n$$\n\nis false. The same failure pattern persists throughout $[-4,-2]$ (the expression stays larger than $4$ on that segment). The intersection with $[-4,-2]$ is therefore empty.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 6,
+      "case_id": "DEMO MATH 7.H01",
+      "title": "Parametric quadratic family — critical cases",
+      "context": "For each real parameter $k$, define\n$$\ng_k(x)=x^{2}-(2k+1)x+(k^{2}-4).\n$$\nDecide whether each claim about this family is true or false.",
+      "statements": [
+        "For every real $k$, the equation $g_k(x)=0$ has two distinct real roots.",
+        "The axis of symmetry of $y=g_k(x)$ is $x=k+\\tfrac12$ for every $k$.",
+        "If $k=2$, then the roots are $x=1$ and $x=5$.",
+        "There exists a real $k$ for which both roots are equal to $0$.",
+        "The vertex $y$-coordinate equals $-\\dfrac{17}{4}$ when $k=0$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "current_lens": [
+        472,
+        348,
+        340,
+        566,
+        412
+      ],
+      "current": [
+        "**A.** → False\n\nTwo distinct real roots require a strictly positive discriminant. Expand\n\n$$\n\\Delta=(2k+1)^{2}-4(k^{2}-4)\n$$\n\nFirst square:\n\n$$\n(2k+1)^{2}=4k^{2}+4k+1\n$$\n\nThen the second term:\n\n$$\n4(k^{2}-4)=4k^{2}-16\n$$\n\nSubtract:\n\n$$\n\\Delta=4k^{2}+4k+1-(4k^{2}-16)=4k^{2}+4k+1-4k^{2}+16=4k+17\n$$\n\nAt $k=-5$:\n\n$$\n\\Delta=4(-5)+17=-20+17=-3<0\n$$\n\nso $g_{-5}$ has no real roots. The claim that every real $k$ yields two distinct real roots fails.\n\nSo the statement is False.",
+        "**B.** → True\n\nFor a monic quadratic $x^{2}-Bx+C$, the axis of symmetry is $x=B/2$. Here $B=2k+1$, so\n\n$$\nx=\\frac{2k+1}{2}=k+\\frac{1}{2}\n$$\n\nThis identity holds for every real parameter $k$; no discriminant restriction appears. Quick checks: at $k=0$ the axis is $x=\\tfrac12$; at $k=2$ it is $x=\\tfrac52$, matching $B=5$.\n\nSo the statement is True.",
+        "**C.** → False\n\nSubstitute $k=2$ into each coefficient. Linear term:\n\n$$\n2k+1=2\\cdot 2+1=5\n$$\n\nConstant term:\n\n$$\nk^{2}-4=2^{2}-4=0\n$$\n\nThe specialised quadratic is therefore\n\n$$\ng_2(x)=x^{2}-5x=x(x-5)\n$$\n\nRoots $x=0$ or $x=5$. The claim asserts $1$ and $5$; only one of those matches, so the statement is false.\n\nSo the statement is False.",
+        "**D.** → False\n\nA double root at $0$ would require both $g_k(0)=0$ and $g_k'(0)=0$. Constant term:\n\n$$\ng_k(0)=k^{2}-4=0\\qquad\\Rightarrow\\qquad k=\\pm 2\n$$\n\nDifferentiate:\n\n$$\ng_k'(x)=2x-(2k+1)\\qquad\\Rightarrow\\qquad g_k'(0)=-(2k+1)=0\\qquad\\Rightarrow\\qquad k=-\\frac{1}{2}\n$$\n\nCheck $k=-\\tfrac12$ against $k^{2}-4=0$:\n\n$$\n\\Bigl(-\\frac{1}{2}\\Bigr)^{2}-4=\\frac{1}{4}-4=-\\frac{15}{4}\\neq 0\n$$\n\nConversely, at $k=2$: $g_2'(0)=-(4+1)=-5\\neq 0$. At $k=-2$: $g_{-2}'(0)=-(-4+1)=3\\neq 0$. The two conditions are incompatible, so no such $k$ exists.\n\nSo the statement is False.",
+        "**E.** → True\n\nFor $k=0$ the quadratic is\n\n$$\ng_0(x)=x^{2}-x-4\n$$\n\nAxis from letter B: $x=\\tfrac12$. Evaluate:\n\n$$\ng_0\\Bigl(\\frac{1}{2}\\Bigr)=\\Bigl(\\frac{1}{2}\\Bigr)^{2}-\\frac{1}{2}-4=\\frac{1}{4}-\\frac{1}{2}-4=-\\frac{17}{4}\n$$\n\nAlternatively via the discriminant shortcut $\\Delta=4\\cdot 0+17=17$:\n\n$$\n-\\frac{\\Delta}{4}=-\\frac{17}{4}\n$$\n\nwhich matches the claimed vertex $y$-coordinate.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 7,
+      "case_id": "DEMO MATH 8.H01",
+      "title": "Courier tariff — affine day/night word problem",
+      "context": "A courier charges a daytime base fee of EUR 12 plus EUR 0.8 per kilometre. Night runs use the same kilometre rate but add a flat night surcharge of EUR 5. Let $d>0$ be the distance in kilometres. Decide whether each claim is true or false.",
+      "statements": [
+        "The daytime bill for distance $d$ is exactly $12+0.8d$ euros.",
+        "If the same distance were run at night, the night bill would be exactly EUR 5 more than the daytime bill for every $d>0$.",
+        "There is a distance $d^{*}$ at which a daytime run and a night run would cost the same; solving $12+0.8d=12+0.8d+5$ finds it.",
+        "If the firm waived the EUR 12 base on daytime runs only (charging pure $0.8d$), then for a $20$ km daytime job the client would save exactly EUR 12 compared with the original daytime tariff.",
+        "If distance doubled from $10$ km to $20$ km on a daytime run, the bill would also double, because both the base and the kilometre charge scale linearly with $d$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "current_lens": [
+        341,
+        323,
+        329,
+        274,
+        483
+      ],
+      "current": [
+        "**A.** → True\n\nDaytime tariff has a fixed base of EUR $12$ and a per-kilometre rate of EUR $0.8$. For distance $d$ the kilometre charge is $0.8d$, so\n\n$$\nC_{\\mathrm{day}}(d)=12+0.8d\n$$\n\nSpot-check at $d=10$:\n\n$$\nC_{\\mathrm{day}}(10)=12+8=20\n$$\n\nwhich matches $12+0.8\\cdot 10$. The claimed daytime formula is exact.\n\nSo the statement is True.",
+        "**B.** → True\n\nNight runs keep the same kilometre rate and add a flat surcharge of EUR $5$:\n\n$$\nC_{\\mathrm{night}}(d)=C_{\\mathrm{day}}(d)+5\n$$\n\n$$\nC_{\\mathrm{night}}(d)=12+0.8d+5=17+0.8d\n$$\n\nfor every $d>0$. The night bill is therefore exactly EUR $5$ more than the day bill at the same distance.\n\nSo the statement is True.",
+        "**C.** → False\n\nSet the daytime and night bills equal:\n\n$$\n12+0.8d=12+0.8d+5\n$$\n\nSubtract $12+0.8d$ from both sides:\n\n$$\n0=5\n$$\n\nThe identity $0=5$ is absurd, so no real break-even distance $d^{*}$ exists. Parallel affine tariffs with a fixed positive gap never meet, so no break-even distance exists.\n\nSo the statement is False.",
+        "**D.** → True\n\nOriginal daytime bill at $d=20$:\n\n$$\n12+0.8\\cdot 20=12+16=28\n$$\n\nAfter waiving the EUR $12$ base, only the kilometre charge $16$ remains. The saving versus the original daytime tariff is\n\n$$\n28-16=12\n$$\n\nexactly the waived base fee.\n\nSo the statement is True.",
+        "**E.** → False\n\nEvaluate the daytime bill at the two distances:\n\n$$\nC_{\\mathrm{day}}(10)=12+0.8\\cdot 10=12+8=20\n$$\n\n$$\nC_{\\mathrm{day}}(20)=12+0.8\\cdot 20=12+16=28\n$$\n\n$$\n\\frac{28}{20}=1.4\\neq 2\n$$\n\nDoubling distance multiplies the bill by $1.4$, not by $2$. The kilometre part scales ($8\\to 16$), but the fixed base of $12$ does not. Homogeneity would require $C_{\\mathrm{day}}(2d)=2\\,C_{\\mathrm{day}}(d)$; at $d=10$ that would need $28=40$, which fails.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 8,
+      "case_id": "DEMO MATH 9.H01",
+      "title": "Cubic over quadratic — limits and roots",
+      "context": "Let\n$$\nr(x)=ax^{3}+bx^{2}+cx+d,\\qquad a\\neq 0,\n$$\nbe a real cubic, and define\n$$\ns(x)=\\dfrac{r(x)}{x^{2}+4}.\n$$\nDecide whether each claim is true or false.",
+      "statements": [
+        "$\\displaystyle\\lim_{x\\to+\\infty}s(x)=+\\infty$ whenever $a>0$.",
+        "$\\displaystyle\\lim_{x\\to-\\infty}r(x)=-\\infty$ whenever $a>0$.",
+        "If $r(2)=0$ and $r'(2)=0$, then $(x-2)^{2}$ divides $r(x)$, so $x=2$ is at least a double root.",
+        "For every choice of $a,b,c,d$ with $a\\neq 0$, the horizontal line $y=0$ is a horizontal asymptote of $s$.",
+        "If $a=3$, $b=-6$, $c=0$, $d=0$, then $r(x)=3x^{2}(x-2)$, so $x=0$ is a double root and $x=2$ is a simple root."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "current_lens": [
+        329,
+        870,
+        891,
+        853,
+        434
+      ],
+      "current": [
+        "**A.** → True\n\nRewrite the rational function by factoring $ax$ out of the numerator:\n\n$$\ns(x)=ax\\cdot\\frac{1+\\frac{b}{ax}+\\frac{c}{ax^{2}}+\\frac{d}{ax^{3}}}{1+\\frac{4}{x^{2}}}\n$$\n\nAs $x\\to+\\infty$ the fraction tends to $1$, so\n\n$$\ns(x)\\sim ax\n$$\n\nWhen $a>0$ this tends to $+\\infty$, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nr(x)=ax^{3}+bx^{2}+cx+d\n$$\n\n$$\nr(x)=ax^{3}\\Bigl(1+\\frac{b}{ax}+\\frac{c}{ax^{2}}+\\frac{d}{ax^{3}}\\Bigr)\n$$\n\nAs $x\\to-\\infty$:\n\n$$\nx\\to-\\infty\n$$\n\n$$\nx^{2}=(-|x|)^{2}=|x|^{2}\\to+\\infty\n$$\n\n$$\nx^{3}=(-|x|)^{3}=-|x|^{3}\\to-\\infty\n$$\n\nWith $a>0$:\n\n$$\na>0\n$$\n\n$$\nax^{3}\\to-\\infty\n$$\n\nEach correction term vanishes:\n\n$$\n\\frac{b}{ax}\\to 0\n$$\n\n$$\n\\frac{c}{ax^{2}}\\to 0\n$$\n\n$$\n\\frac{d}{ax^{3}}\\to 0\n$$\n\nso the parenthesis tends to $1$ and\n\n$$\n\\lim_{x\\to-\\infty}r(x)=-\\infty\n$$\n\nNumerical check with $a=3$, $b=c=d=0$ at $x=-10$:\n\n$$\n(-10)^{3}=-1000\\qquad 3\\cdot(-1000)=-3000\n$$\n\n$$\nr(-10)=-3000\n$$\n\nAt $x=-100$:\n\n$$\n(-100)^{2}=10000\\qquad (-100)^{3}=-1000000\n$$\n\n$$\n3\\cdot(-1000000)=-3000000\\qquad r(-100)=-3000000\n$$\n\n$$\n-3000000<-3000\n$$\n\nwhich grows more negative as $x\\to-\\infty$, consistent with the limit $-\\infty$ whenever $a>0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nDifferentiate the cubic coefficient by coefficient:\n\n$$\nr(x)=ax^{3}+bx^{2}+cx+d\n$$\n\n$$\n\\frac{d}{dx}(ax^{3})=3ax^{2}\n$$\n\n$$\n\\frac{d}{dx}(bx^{2})=2bx\n$$\n\n$$\n\\frac{d}{dx}(cx)=c\\qquad \\frac{d}{dx}(d)=0\n$$\n\n$$\nr'(x)=3ax^{2}+2bx+c\n$$\n\nThe hypothesis gives two vanishing conditions at $x=2$:\n\n$$\nr(2)=0\\qquad r'(2)=0\n$$\n\nA standard factorisation fact: if a polynomial and its first derivative both vanish at $\\alpha$, then $(x-\\alpha)^{2}$ divides the polynomial. Taking $\\alpha=2$:\n\n$$\n(x-2)^{2}\\mid r(x)\n$$\n\nHence $x=2$ is at least a double root.\n\nConcrete illustration with $a=1$, $b=-4$, $c=4$, $d=0$ so $r(x)=x(x-2)^{2}$:\n\n$$\nr(x)=x(x^{2}-4x+4)\n$$\n\n$$\nr(x)=x^{3}-4x^{2}+4x\n$$\n\n$$\nr'(x)=3x^{2}-8x+4\n$$\n\nEvaluate at $x=2$:\n\n$$\nr(2)=8-16+8=0\n$$\n\n$$\nr'(2)=12-16+4=0\n$$\n\nand the factor $(x-2)^{2}$ is visible by construction. The claimed implication holds.\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom the asymptotic rewrite:\n\n$$\ns(x)=ax\\cdot\\frac{1+\\frac{b}{ax}+\\frac{c}{ax^{2}}+\\frac{d}{ax^{3}}}{1+\\frac{4}{x^{2}}}\n$$\n\n$$\ns(x)\\sim ax\n$$\n\nDegree comparison:\n\n$$\n\\deg r=3\n$$\n\n$$\n\\deg(x^{2}+4)=2\\qquad 3-2=1\n$$\n\n$$\n3>2\n$$\n\nBecause $a\\neq 0$:\n\n$$\n|a|>0\n$$\n\n$$\n|ax|\\to\\infty\\qquad\\text{as }|x|\\to\\infty\n$$\n\n$$\n|s(x)|\\to\\infty\\qquad\\text{as }|x|\\to\\infty\n$$\n\nA horizontal asymptote $y=0$ would require\n\n$$\ns(x)\\to 0\n$$\n\nbut that contradicts $|s(x)|\\to\\infty$.\n\nNumerical counter-example with $a=3$, $b=c=d=0$:\n\n$$\ns(100)=\\frac{3\\cdot 100^{3}}{100^{2}+4}\n$$\n\n$$\n100^{2}=10000\\qquad 100^{3}=1000000\n$$\n\n$$\n10000+4=10004\n$$\n\n$$\n\\frac{3000000}{10004}\\approx 299.88\n$$\n\n$$\n299.88\\neq 0\n$$\n\nand the values grow without bound as $|x|$ grows. So $y=0$ is not a horizontal asymptote for any coefficients with $a\\neq 0$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSubstitute $a=3$, $b=-6$, $c=0$, $d=0$:\n\n$$\nr(x)=3x^{3}-6x^{2}=3x^{2}(x-2)\n$$\n\nRoots from the factorisation: $x=0$ (multiplicity $2$) and $x=2$ (multiplicity $1$). Confirm with the derivative $r'(x)=9x^{2}-12x$:\n\n$$\nr'(0)=0\\qquad r(0)=0\n$$\n\nso multiplicity at least $2$ at $0$. At $x=2$:\n\n$$\nr(2)=0\\qquad r'(2)=9\\cdot 4-12\\cdot 2=36-24=12\\neq 0\n$$\n\nso $x=2$ is a simple root. The claim holds.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 9,
+      "case_id": "DEMO MATH 10.H01",
+      "title": "Entangled exponential–log pair — hard compare",
+      "context": "Define the entangled pair\n$$\nf(t)=4e^{0.3t},\\qquad g(t)=16e^{-0.6t}\\qquad(t\\in\\mathbb{R}),\n$$\nand the log-gap\n$$\nh(t)=\\ln f(t)-\\ln g(t)=\\ln\\!\\bigl(f(t)/g(t)\\bigr).\n$$\nAlso write $p(t)=f(t)\\,g(t)$. Decide whether each claim is true or false.",
+      "statements": [
+        "$f(t)=g(t)$ has the unique real solution $t=\\dfrac{1}{0.9}\\ln 4=\\dfrac{\\ln 4}{0.9}$.",
+        "$h(t)=\\ln 4+0.9t$ for every real $t$, so $h$ is affine with positive slope $0.9$.",
+        "If $t$ increases by $\\dfrac{10}{3}$, then $f$ is multiplied by $e$ and $g$ is multiplied by $e^{-2}$.",
+        "The product $p(t)=f(t)g(t)$ is minimized over $\\mathbb{R}$ at the same $t$ where $f=g$, and that minimum value equals $64$.",
+        "Because $f(0)=4<16=g(0)$ and $f$ grows while $g$ decays, one has $f(t)<g(t)$ for every $t>0$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "current_lens": [
+        515,
+        423,
+        524,
+        398,
+        414
+      ],
+      "current": [
+        "**A.** → True\n\nSet the two trajectories equal:\n\n$$\n4e^{0.3t}=16e^{-0.6t}\n$$\n\nDivide by $4$, then multiply by $e^{0.6t}$:\n\n$$\ne^{0.3t}=4e^{-0.6t}\\qquad\\Rightarrow\\qquad e^{0.9t}=4\n$$\n\n$$\nt=\\frac{\\ln 4}{0.9}=\\frac{1}{0.9}\\ln 4\n$$\n\nNumerically, $\\ln 4=2\\ln 2\\approx 1.386294$, so $t^{*}\\approx 1.540327$. Uniqueness: $t\\mapsto e^{0.9t}$ is strictly increasing. Verify via the ratio:\n\n$$\n\\frac{f(t^{*})}{g(t^{*})}=\\frac{1}{4}e^{0.9t^{*}}=\\frac{1}{4}\\cdot 4=1\n$$\n\nso $f(t^{*})=g(t^{*})$ holds.\n\nSo the statement is True.",
+        "**B.** → False\n\nForm the ratio $f(t)/g(t)$:\n\n$$\n\\frac{f(t)}{g(t)}=\\frac{4e^{0.3t}}{16e^{-0.6t}}\n$$\n\n$$\n\\frac{4}{16}=\\frac14\n$$\n\n$$\n\\frac{f(t)}{g(t)}=\\frac14 e^{0.9t}\n$$\n\nTake the log:\n\n$$\nh(t)=\\ln\\frac14+0.9t\n$$\n\n$$\n\\ln\\frac14=-\\ln 4\n$$\n\n$$\nh(t)=-\\ln 4+0.9t\n$$\n\nThe constant term is $-\\ln 4$, not $+\\ln 4$. The claimed formula $\\ln 4+0.9t$ is therefore wrong (though the slope $0.9$ is correct).\n\nSo the statement is False.",
+        "**C.** → True\n\nCompute the two exponent shifts separately:\n\n$$\n0.3\\cdot\\frac{10}{3}=1\n$$\n\n$$\n-0.6\\cdot\\frac{10}{3}=-2\n$$\n\nApply the exponent law to $f$:\n\n$$\nf\\Bigl(t+\\frac{10}{3}\\Bigr)=4e^{0.3t+1}\n$$\n\n$$\n4e^{0.3t+1}=4e^{0.3t}\\cdot e^{1}\n$$\n\n$$\n4e^{0.3t}\\cdot e^{1}=e\\cdot f(t)\n$$\n\nApply the exponent law to $g$:\n\n$$\ng\\Bigl(t+\\frac{10}{3}\\Bigr)=16e^{-0.6t-2}\n$$\n\n$$\n16e^{-0.6t-2}=16e^{-0.6t}\\cdot e^{-2}\n$$\n\n$$\n16e^{-0.6t}\\cdot e^{-2}=e^{-2}g(t)\n$$\n\nSo $f$ is multiplied by $e$ and $g$ by $e^{-2}$.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe product simplifies to a pure exponential:\n\n$$\np(t)=4e^{0.3t}\\cdot 16e^{-0.6t}\n$$\n\n$$\n4\\cdot 16=64\n$$\n\n$$\np(t)=64e^{-0.3t}\n$$\n\nBecause the exponent $-0.3t$ is strictly decreasing in $t$, $p$ has no global minimum on $\\mathbb{R}$; it decays toward $0$ as $t\\to\\infty$ instead of attaining a minimum at the crossing point. Both halves of the claim fail.\n\nSo the statement is False.",
+        "**E.** → False\n\nAt $t=0$ one does have $f(0)=4<16=g(0)$, and $f$ grows while $g$ decays. But letter A shows they meet at the positive crossing\n\n$$\nt^{*}=\\frac{\\ln 4}{0.9}\n$$\n\n$$\nt^{*}>0\n$$\n\nwhere $f(t^{*})=g(t^{*})$, and for all $t>t^{*}$ one has $f(t)>g(t)$ because $f$ is increasing and $g$ is decreasing past that point. The claim that $f(t)<g(t)$ for every $t>0$ is therefore false.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 10,
+      "case_id": "DEMO MATH 11.H01",
+      "title": "Tangled revenue path — marginal analysis",
+      "context": "A firm faces inverse demand $P(q)=90-3q$ for $0\\le q\\le 30$ (price in euros, quantity in thousands of units). Revenue is $R(q)=q\\cdot P(q)$. Marginal revenue means $R'(q)$. Decide whether each claim is true or false.",
+      "statements": [
+        "$R'(q)=90-6q$, so in particular $R'(4)=66$.",
+        "Revenue is maximised at the same quantity where $P(q)=0$, i.e. at the choke quantity $q=30$.",
+        "If output rises from $q=4$ to $q=5$, the linear approximation using $R'(4)$ overestimates the true revenue increase $R(5)-R(4)$, because $R$ is a concave quadratic.",
+        "At the quantity that maximises $R$, price equals marginal revenue.",
+        "Cutting price enough to raise quantity from $q=16$ to $q=17$ must raise revenue, because more units are sold."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "current_lens": [
+        289,
+        309,
+        346,
+        300,
+        324
+      ],
+      "current": [
+        "**A.** → True\n\nStart from the linear demand and form revenue:\n\n$$\nP(q)=90-3q\n$$\n\n$$\nR(q)=q\\cdot P(q)=q(90-3q)=90q-3q^{2}\n$$\n\nDifferentiate term by term:\n\n$$\nR'(q)=90-6q\n$$\n\nEvaluate at $q=4$:\n\n$$\n6\\cdot 4=24,\\qquad 90-24=66\n$$\n\nso $R'(4)=66$, matching the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nMaximise $R$ by setting marginal revenue to zero:\n\n$$\n90-6q=0\\qquad\\Rightarrow\\qquad q=15\n$$\n\nChoke quantity where price vanishes:\n\n$$\n90-3q=0\\qquad\\Rightarrow\\qquad q=30\n$$\n\nCompare:\n\n$$\n15\\neq 30\n$$\n\nThe revenue maximiser is $q=15$, not the choke quantity $q=30$.\n\nSo the statement is False.",
+        "**C.** → True\n\nCompute the true increment $R(5)-R(4)$:\n\n$$\nR(5)=90\\cdot 5-3\\cdot 25=450-75=375\n$$\n\n$$\nR(4)=90\\cdot 4-3\\cdot 16=360-48=312\n$$\n\n$$\n375-312=63\n$$\n\nThe linear approximation using $R'(4)=66$ predicts\n\n$$\n66\\cdot 1=66\n$$\n\nBecause $R''(q)=-6<0$, the graph is concave and the tangent overestimates:\n\n$$\n66>63\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nFrom letter B the revenue maximiser is $q=15$. Marginal revenue there is zero:\n\n$$\nR'(15)=90-6\\cdot 15=90-90=0\n$$\n\nwhile price is still positive:\n\n$$\nP(15)=90-3\\cdot 15=90-45=45\n$$\n\n$$\n45\\neq 0\n$$\n\nPrice does not equal marginal revenue at the revenue peak.\n\nSo the statement is False.",
+        "**E.** → False\n\nPast the revenue peak $q=15$, marginal revenue is already negative. At $q=16$:\n\n$$\nR'(16)=90-6\\cdot 16=90-96=-6\n$$\n\n$$\n-6<0\n$$\n\nMoving from $q=16$ to $q=17$ therefore lowers revenue even though more units are sold. Selling more does not raise revenue on the declining side of $R$.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 11,
+      "case_id": "MATH 12.187",
+      "title": "A Positive Test in a Deer Population",
+      "context": "In a wild deer population, 60% are Subspecies A, 25% are Subspecies B, and 15% are Subspecies C. A certain prion disease is present in 2% of Subspecies A, 6% of Subspecies B, and 15% of Subspecies C. A field test for the disease has a 90% sensitivity (probability of a positive result if the deer truly has the disease) and a 4% false-positive rate (probability of a positive result if the deer does not have the disease), regardless of subspecies. A randomly tested deer receives a POSITIVE result.",
+      "statements": [
+        "The probability that a tested deer receives a positive result is greater than 7%.",
+        "The probability that the deer is Subspecies A AND receives a positive result is greater than 3.4%.",
+        "The probability that the deer is Subspecies A, given a positive result is greater than 45%.",
+        "The probability that a tested deer receives a negative result equals 1 minus the probability that a tested deer receives a positive result.",
+        "The probability that the deer is Subspecies C, given a positive result is greater than the probability that the deer is Subspecies B, given a positive result."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "current_lens": [
+        299,
+        284,
+        290,
+        405,
+        402
+      ],
+      "current": [
+        "**A.** → True\n\nThe overview already recovers the three subspecies contributions to a positive test. Adding them gives the unconditional positive-test probability:\n\n$$\nP(T^{+})=0.03432+0.0229+0.02535=0.08257\n$$\n\nCompare with the claimed $7\\%$ threshold:\n\n$$\n0.08257>0.07\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe overview already recovers the Subspecies A joint as one of the three summands of $P(T^+)$:\n\n$$\nP(S_A\\cap T^{+})=0.03432\n$$\n\nThe claim’s threshold is $3.4\\%=0.034$. Compare:\n\n$$\n0.03432>0.034\n$$\n\nso the joint probability clears the hurdle.\n\nSo the statement is True.",
+        "**C.** → False\n\nApply Bayes using the overview’s joint and marginal:\n\n$$\nP(S_A\\mid T^{+})=\\frac{0.03432}{0.08257}\n$$\n\n$$\n\\frac{0.03432}{0.08257}\\approx 0.4156\n$$\n\n$$\n0.4156\\times 100\\%\\approx 41.56\\%\n$$\n\nThe claim needs more than $45\\%$:\n\n$$\n41.56\\%\\ngtr 45\\%\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nA field test returns either a positive or a negative result; those two outcomes partition the sample space, so $T^{-}$ is the complement of $T^{+}$:\n\n$$\nP(T^{-})=1-P(T^{+})\n$$\n\nWith the recovered $P(T^{+})=0.08257$,\n\n$$\n1-0.08257=0.91743\n$$\n\nbut the complementarity identity itself is what the claim asserts — no independence or prevalence assumption is required.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe overview recovers both joints as summands of $P(T^+)$:\n\n$$\nP(S_C\\cap T^{+})=0.02535\n$$\n\n$$\nP(S_B\\cap T^{+})=0.0229\n$$\n\nBoth posteriors divide by the same marginal $P(T^{+})=0.08257$, so\n\n$$\nP(S_C\\mid T^{+})=\\frac{0.02535}{0.08257},\\qquad P(S_B\\mid T^{+})=\\frac{0.0229}{0.08257}\n$$\n\nand the inequality of posteriors reduces to $0.02535>0.0229$, which holds.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 12,
+      "case_id": "MATH 13.108",
+      "title": "Harbor Foghorn Tests",
+      "context": "Harbor staff run 14 independent foghorn tests. The expected number of clear audible tests is 11.2. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The next test fails with probability 0.2.",
+        "The expected number of audible tests in the next 12 tests is 4.8.",
+        "The variance of the number of audible tests out of 50 tests is 8.",
+        "The probability of 3 consecutive audible tests is less than 0.3.",
+        "The probability of at most 4 audible tests in the next 6 tests is more than 0.5."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "current_lens": [
+        319,
+        284,
+        254,
+        287,
+        872
+      ],
+      "current": [
+        "**A.** → True\n\nFrom the stem mean $E[X]=11.2$ on $n=14$ independent trials, the common success probability is\n\n$$\np=\\dfrac{E[X]}{n}=\\dfrac{11.2}{14}=0.8\n$$\n\nEach trial fails with the complementary probability\n\n$$\n1-p=1-0.8=0.2\n$$\n\nwhich is exactly the failure probability stated in the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nFor a binomial count the mean is the product of the trial count and the success probability. With $n=12$ and the recovered $p=0.8$,\n\n$$\nE[X]=np=12\\cdot 0.8=9.6\n$$\n\nThe claim reports $4.8$. Because\n\n$$\n9.6\\neq 4.8\n$$\n\nthe statement is false.\n\nSo the statement is False.",
+        "**C.** → True\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is $np(1-p)$. Insert $n=50$, $p=0.8$, and $1-p=0.2$:\n\n$$\n\\mathrm{Var}(X)=50\\cdot 0.8\\cdot 0.2=8\n$$\n\nThe variance equals $8$, matching the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nIndependence means a run of three successes multiplies the same probability on every trial:\n\n$$\np^{3}=(0.8)^{3}\n$$\n\n$$\n(0.8)^{3}=0.512\n$$\n\nCompare with the claimed cutoff $0.3$:\n\n$$\n0.512\\ge 0.3\n$$\n\nThe inequality in the claim therefore fails.\n\nSo the statement is False.",
+        "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(6,0.8)$. The event “at most $4$ successes” is\n\n$$\nP(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}(0.8)^{x}(0.2)^{6-x}\n$$\n\nTerm $x=0$:\n\n$$\nP(X=0)=\\binom{6}{0}(0.8)^{0}(0.2)^{6}=0.000064\n$$\n\nTerm $x=1$:\n\n$$\n\\binom{6}{1}=6,\\qquad (0.2)^{5}=0.00032\n$$\n\n$$\nP(X=1)=6\\cdot 0.8\\cdot 0.00032=0.001536\n$$\n\nTerm $x=2$:\n\n$$\n\\binom{6}{2}=15,\\qquad (0.8)^{2}=0.64,\\qquad (0.2)^{4}=0.0016\n$$\n\n$$\nP(X=2)=15\\cdot 0.64\\cdot 0.0016=0.01536\n$$\n\nTerm $x=3$:\n\n$$\n\\binom{6}{3}=20,\\qquad (0.8)^{3}=0.512,\\qquad (0.2)^{3}=0.008\n$$\n\n$$\nP(X=3)=20\\cdot 0.512\\cdot 0.008=0.08192\n$$\n\nTerm $x=4$:\n\n$$\n\\binom{6}{4}=15,\\qquad (0.8)^{4}=0.4096,\\qquad (0.2)^{2}=0.04\n$$\n\n$$\nP(X=4)=15\\cdot 0.4096\\cdot 0.04=0.24576\n$$\n\nSum:\n\n$$\n0.000064+0.001536+0.01536+0.08192+0.24576=0.34464\n$$\n\n$$\n0.34464<0.5\n$$\n\nThe probability is below $0.5$, so the claim fails.\n\nSo the statement is False."
+      ]
+    }
+  ],
+  "economics": [
+    {
+      "i": 0,
+      "case_id": "CASE 6.5.034",
+      "title": "Turnover and Liquidity Extract 34",
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Inventory turnover is below 6.87 times per year.",
+        "Asset turnover is above 1.48.",
+        "With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+        "Revenue exceeds €999 thousand.",
+        "Trade receivables turnover exceeds 10.4 times per year."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "current_lens": [
+        325,
+        334,
+        339,
+        473,
+        342
+      ],
+      "current": [
+        "**A.** → True\n\nAverage inventory is the mean of the opening and closing balances:\n\n$$\n169 + 179 = 348\n$$\n\n$$\n\\frac{348}{2} = 174\n$$\n\nDivide cost of sales by that average:\n\n$$\n\\frac{674}{174} \\approx 3.87\n$$\n\n$$\n3.87 < 6.87\n$$\n\nInventory turns about 3.87 times a year, which is below the 6.87 claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nAverage total assets is the mean of the opening and closing balances:\n\n$$\n823 + 1028 = 1851\n$$\n\n$$\n\\frac{1851}{2} = 925.5\n$$\n\nDivide revenue by that average:\n\n$$\n\\frac{1019}{925.5} \\approx 1.101\n$$\n\n$$\n1.101 \\ngtr 1.48\n$$\n\nAsset turnover is about 1.10, so it does not clear the 1.48 hurdle.\n\nSo the statement is False.",
+        "**C.** → True\n\nInventory turnover on this extract is cost of sales over average inventory, which is about 3.9 times a year (674 ÷ 174 ≈ 3.87). A higher turnover figure means stock is sold and replaced more often within the year, so less cash sits tied up in inventory — exactly the economic reading claimed here.\n\nSo the statement is True.",
+        "**D.** → True\n\nRevenue is read straight from the extract line. All figures on this extract are stated in EUR thousands, so the comparison stays inside that unit.\n\nFrom the extract, the revenue line:\n\nThe claim threshold is EUR 999 thousand:\n\n$$\n1019 - 999 = 20\n$$\n\nInequality test required by the claim (“exceeds”):\n\n$$\n1019 > 999\n$$\n\nRevenue of EUR 1019 thousand exceeds the EUR 999 thousand threshold by EUR 20 thousand, so the statement holds.\n\nSo the statement is True.",
+        "**E.** → False\n\nAverage trade receivables is the mean of the opening and closing balances:\n\n$$\n135 + 107 = 242\n$$\n\n$$\n\\frac{242}{2} = 121\n$$\n\nDivide revenue by that average:\n\n$$\n\\frac{1019}{121} \\approx 8.42\n$$\n\n$$\n8.42 \\ngtr 10.4\n$$\n\nReceivables turn about 8.42 times a year, so the claim of more than 10.4 fails.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 1,
+      "case_id": "CASE 6.4.010",
+      "title": "Asset Composition Chart 10",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+        "Working capital of €133 thousand is positive on this balance sheet.",
+        "The debt ratio exceeds 56%.",
+        "Trade receivables make up less than 48.5% of current assets.",
+        "Cash and cash equivalents make up more than 23.1% of current assets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "current_lens": [
+        337,
+        242,
+        398,
+        322,
+        380
+      ],
+      "current": [
+        "**A.** → True\n\nFinancial accounting reports such as the balance sheet and the income statement are prepared for users beyond day-to-day managers. Tax authorities assess taxable profit from those statements; banks use them when deciding whether to lend. The claim correctly names those external decision makers.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe overview already recovers current assets $CA = 356$ and current liabilities $CL = 223$.\n\n$$\n356 - 223 = 133\n$$\n\n$$\n133 > 0\n$$\n\nWorking capital is EUR 133 thousand and positive, matching the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe debt ratio is total liabilities divided by total assets.\n\nTotal liabilities from the extract:\n\nTotal assets from the extract:\n\nName and apply the debt-ratio formula:\n\n$$\n\\frac{703}{1181}\n$$\n\n$$\n703 \\div 1181 \\approx 0.5953\n$$\n\nConvert to a percentage:\n\n$$\n59.53\\% \\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 56\\%\n$$\n\nThe debt ratio is about 59.5%, which clears 56%.\n\nSo the statement is True.",
+        "**D.** → True\n\nTrade receivables are read from the extract, and current assets is the overview's recovered $CA = 356$.\n\n$$\n\\frac{81}{356} \\approx 0.228\n$$\n\n$$\n0.228 \\times 100\\% \\approx 22.8\\%\n$$\n\n$$\n22.8\\% < 48.5\\%\n$$\n\nTrade receivables are about 22.8% of current assets, below the 48.5% claim.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe cash share of current assets is cash and cash equivalents divided by current assets. CA was built above as 356.\n\nCash and cash equivalents:\n\nCurrent assets:\n\n$$\n\\frac{119}{356}\n$$\n\n$$\n119 \\div 356 \\approx 0.3343\n$$\n\n$$\n33.43\\% \\approx 33.4\\%\n$$\n\n$$\n33.4\\% > 23.1\\%\n$$\n\nCash is about 33.4% of current assets, above the 23.1% threshold.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 2,
+      "case_id": "CASE 6.2.039",
+      "title": "Liquidity From the Balance Sheet 39",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
+        "The current ratio exceeds 1.28.",
+        "Working capital of €144 thousand is positive on this balance sheet.",
+        "Buildings make up more than 47.1% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "current_lens": [
+        250,
+        306,
+        451,
+        404,
+        400
+      ],
+      "current": [
+        "**A.** → True\n\nUnder the straight-line method, depreciable cost is spread evenly over the expected useful life, so each year carries the same depreciation charge. That is precisely the allocation rule restated in the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe overview already recovers current assets $CA = 276$, inventory $= 119$, and current liabilities $CL = 132$.\n\n$$\n276 - 119 = 157\n$$\n\n$$\n\\frac{157}{132} \\approx 1.189\n$$\n\n$$\n1.189 \\ngtr 1.35\n$$\n\nQuick cover is only about 1.19 times, so it does not exceed 1.35.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe current ratio is current assets divided by current liabilities. Rebuild CA and CL from the extract lines.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n119 + 60 = 179\\qquad 179 + 97 = 276\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n74 + 58 = 132\n$$\n\n$$\n\\frac{276}{132}\n$$\n\n$$\n276 \\div 132 \\approx 2.0909\n$$\n\n$$\n2.091 > 1.28\n$$\n\nThe current ratio is about 2.09, which clears the 1.28 hurdle.\n\nSo the statement is True.",
+        "**D.** → True\n\nWorking capital is current assets minus current liabilities. Rebuild CA and CL from the extract.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n119 + 60 = 179\\qquad 179 + 97 = 276\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n74 + 58 = 132\\qquad 276 - 132 = 144\n$$\n\n$$\n144 > 0\n$$\n\nWorking capital is EUR 144 thousand and positive, matching the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nBuildings as a share of total assets is the buildings line divided by total assets.\n\nBuildings:\n\nTotal assets:\n\n$$\n\\frac{307}{860}\n$$\n\n$$\n307 \\div 860 \\approx 0.3570\n$$\n\n$$\n35.70\\% \\approx 35.7\\%\n$$\n\nThe claim says buildings make up more than 47.1% of total assets:\n\n$$\n35.7\\% \\ngtr 47.1\\%\n$$\n\nBuildings are about 35.7% of total assets, so the claim fails.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 3,
+      "case_id": "CASE 6.3.027",
+      "title": "Comparative Balance Sheet Analysis 27",
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Total equity grew by more than 21.7% between Year 1 and Year 2.",
+        "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+        "Non-current liabilities amount to less than 91.7% of total equity in Year 2.",
+        "Current liabilities are covered by current assets less than 2.02 times over in Year 2.",
+        "Total assets grew by more than 12.2% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "current_lens": [
+        298,
+        273,
+        442,
+        488,
+        452
+      ],
+      "current": [
+        "**A.** → False\n\nTotal equity is read from the two-year extract:\n\n$$\n532 - 542 = -10\n$$\n\n$$\n\\frac{-10}{542} \\approx -0.0185\n$$\n\n$$\n-0.0185 \\times 100\\% \\approx -1.8\\%\n$$\n\n$$\n-1.8\\% \\ngtr 21.7\\%\n$$\n\nTotal equity actually fell by about 1.8%, so growth above 21.7% is false.\n\nSo the statement is False.",
+        "**B.** → True\n\nCurrent assets such as inventory, trade receivables and cash are the short-term, more liquid stock of resources. They are not expected to be held for use beyond one year. That is exactly the classification rule stated in the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nNon-current liabilities as a share of total equity in Year 2 is NCL ÷ equity. Year-2 NCL is the long-term bank loan plus bonds payable.\n\nLong-term bank loan Year 2:\n\nBonds payable Year 2:\n\n$$\n388 + 53 = 441\n$$\n\nTotal equity Year 2:\n\n$$\n\\frac{441}{532}\n$$\n\n$$\n441 \\div 532 \\approx 0.8290\n$$\n\n$$\n82.90\\% \\approx 82.9\\%\n$$\n\n$$\n82.9\\% < 91.7\\%\n$$\n\nYear-2 NCL/equity is about 82.9%, below the 91.7% claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nCurrent-liability cover in Year 2 is the current ratio CA ÷ CL.\n\nInventory Year 2:\n\nTrade receivables Year 2:\n\nCash Year 2:\n\n$$\n85 + 193 = 278\\qquad 278 + 58 = 336\n$$\n\nTrade payables Year 2:\n\nBank overdraft Year 2:\n\n$$\n104 + 67 = 171\n$$\n\n$$\n\\frac{336}{171}\n$$\n\n$$\n336 \\div 171 \\approx 1.9649\n$$\n\nThe claim says cover is less than 2.02 times:\n\n$$\n1.965 < 2.02\n$$\n\nCurrent assets cover current liabilities about 1.97 times, which is less than 2.02.\n\nSo the statement is True.",
+        "**E.** → False\n\nPercentage growth for total assets is (Year 2 − Year 1) ÷ Year 1.\n\nTotal assets Year 1:\n\nTotal assets Year 2:\n\nChange:\n\n$$\n1144 - 1102 = 42\n$$\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\n\\frac{42}{1102}\n$$\n\n$$\n42 \\div 1102 \\approx 0.03811\n$$\n\n$$\n3.811\\% \\approx 3.8\\%\n$$\n\nThe claim says assets grew by more than 12.2%:\n\n$$\n3.8\\% \\ngtr 12.2\\%\n$$\n\nTotal assets grew by only about 3.8%, so the claim fails.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 4,
+      "case_id": "CASE 6.1.020",
+      "title": "Balance Sheet Structure Review 20",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+        "The current ratio is below 0.93.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.24 times over.",
+        "The equity ratio is below 33.7%.",
+        "The debt ratio exceeds 47.8%."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "current_lens": [
+        224,
+        462,
+        306,
+        471,
+        438
+      ],
+      "current": [
+        "**A.** → True\n\nNon-current assets are held for use in the business beyond one year and normally have a useful life longer than one year. That is the standard classification rule the claim restates.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe current ratio is current assets divided by current liabilities.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n136 + 162 = 298\\qquad 298 + 34 = 332\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n150 + 48 = 198\n$$\n\n$$\n\\frac{332}{198}\n$$\n\n$$\n332 \\div 198 \\approx 1.6768\n$$\n\nThe claim says the current ratio is below 0.93:\n\n$$\n1.677 \\nless 0.93\n$$\n\nThe current ratio is about 1.68, so it is not below 0.93.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe overview already recovers current assets $CA = 332$, inventory $= 136$, and current liabilities $CL = 198$.\n\n$$\n332 - 136 = 196\n$$\n\n$$\n\\frac{196}{198} \\approx 0.990\n$$\n\n$$\n0.990 \\ngtr 1.24\n$$\n\nQuick cover is only about 0.99 times, so it does not exceed 1.24.\n\nSo the statement is False.",
+        "**D.** → False\n\nThe equity ratio is total equity divided by total assets. Pull both totals from the extract.\n\nTotal equity (share capital + retained earnings):\n\nTotal assets:\n\nName and apply the equity-ratio formula:\n\n$$\n\\frac{718}{1206}\n$$\n\n$$\n718 \\div 1206 \\approx 0.5954\n$$\n\n$$\n59.54\\% \\approx 59.5\\%\n$$\n\nThe claim says the equity ratio is below 33.7%:\n\n$$\n59.5\\% \\nless 33.7\\%\n$$\n\nThe equity ratio is about 59.5%, so it is not below 33.7%.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe debt ratio is total liabilities divided by total assets. Pull both totals from the extract.\n\nTotal liabilities:\n\nTotal assets:\n\nName and apply the debt-ratio formula:\n\n$$\n\\frac{488}{1206}\n$$\n\n$$\n488 \\div 1206 \\approx 0.4046\n$$\n\n$$\n40.46\\% \\approx 40.5\\%\n$$\n\nThe claim says the debt ratio exceeds 47.8%:\n\n$$\n40.5\\% \\ngtr 47.8\\%\n$$\n\nThe debt ratio is about 40.5%, so it does not exceed 47.8%.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 5,
+      "case_id": "CASE 6.5.068",
+      "title": "Balance Sheet Structure Review 68",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 225 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 215 |\n| Trade receivables | 156 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1089** |\n| **EQUITY** | |\n| Share capital | 146 |\n| Retained earnings | 301 |\n| Total equity | **447** |\n| **LIABILITIES** | |\n| Long-term bank loan | 286 |\n| Bonds payable | 89 |\n| Trade payables | 228 |\n| Bank overdraft | 39 |\n| Total liabilities | **642** |\n| Total equity and liabilities | **1089** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio is below 0.78.",
+        "The current ratio exceeds 1.53.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.25 times over.",
+        "Working capital of €184 thousand is positive on this balance sheet.",
+        "Trade receivables make up less than 55% of current assets."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "current_lens": [
+        516,
+        442,
+        306,
+        467,
+        350
+      ],
+      "current": [
+        "**A.** → False\n\nThe current ratio is current assets divided by current liabilities. Build CA and CL from the extract lines one at a time.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n215 + 156 = 371\\qquad 371 + 80 = 451\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n228 + 39 = 267\n$$\n\n$$\n\\frac{451}{267}\n$$\n\n$$\n451 \\div 267 \\approx 1.6891\n$$\n\nThe claim says the current ratio is below 0.78:\n\n$$\n1.689 \\nless 0.78\n$$\n\nThe current ratio is about 1.69, so it is not below 0.78.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe current ratio is current assets divided by current liabilities. Rebuild CA and CL from the extract lines.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n215 + 156 = 371\\qquad 371 + 80 = 451\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n228 + 39 = 267\n$$\n\n$$\n\\frac{451}{267}\n$$\n\n$$\n451 \\div 267 \\approx 1.6891\n$$\n\n$$\n1.689 > 1.53\n$$\n\nThe current ratio is about 1.69, which clears 1.53.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe overview already recovers current assets $CA = 451$, inventory $= 215$, and current liabilities $CL = 267$.\n\n$$\n451 - 215 = 236\n$$\n\n$$\n\\frac{236}{267} \\approx 0.884\n$$\n\n$$\n0.884 \\ngtr 1.25\n$$\n\nQuick cover is only about 0.88 times, so it does not exceed 1.25.\n\nSo the statement is False.",
+        "**D.** → True\n\nWorking capital is current assets minus current liabilities. Rebuild CA and CL from the extract so the EUR 184 thousand figure is transparent.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n215 + 156 = 371\\qquad 371 + 80 = 451\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n228 + 39 = 267\\qquad 451 - 267 = 184\n$$\n\n$$\n184 > 0\n$$\n\nWorking capital is EUR 184 thousand and positive, matching the claim amount exactly.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe receivables share of current assets is trade receivables divided by current assets.\n\nTrade receivables:\n\nCurrent assets:\n\n$$\n\\frac{156}{451}\n$$\n\n$$\n156 \\div 451 \\approx 0.3460\n$$\n\n$$\n34.60\\% \\approx 34.6\\%\n$$\n\n$$\n34.6\\% < 55\\%\n$$\n\nTrade receivables are about 34.6% of current assets, below the 55% claim.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 6,
+      "case_id": "CASE 6.5.074",
+      "title": "Balance Sheet Structure Review 74",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 305 |\n| Machinery | 176 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 169 |\n| Trade receivables | 103 |\n| Cash and cash equivalents | 83 |\n| Total assets | **933** |\n| **EQUITY** | |\n| Share capital | 298 |\n| Retained earnings | -8 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 70 |\n| Trade payables | 143 |\n| Bank overdraft | 34 |\n| Total liabilities | **643** |\n| Total equity and liabilities | **933** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio exceeds 1.8.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.14 times over.",
+        "Buildings make up more than 43.4% of total assets.",
+        "The long-term bank loan of €396 thousand should be classified within equity rather than liabilities.",
+        "Working capital of €178 thousand is positive on this balance sheet."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "current_lens": [
+        443,
+        306,
+        400,
+        325,
+        412
+      ],
+      "current": [
+        "**A.** → True\n\nThe current ratio is current assets divided by current liabilities. Build CA and CL from the extract.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n169 + 103 = 272\\qquad 272 + 83 = 355\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n143 + 34 = 177\n$$\n\n$$\n\\frac{355}{177}\n$$\n\n$$\n355 \\div 177 \\approx 2.0056\n$$\n\n$$\n2.006 > 1.8\n$$\n\nThe current ratio is about 2.01, which clears the 1.8 hurdle.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe overview already recovers current assets $CA = 355$, inventory $= 169$, and current liabilities $CL = 177$.\n\n$$\n355 - 169 = 186\n$$\n\n$$\n\\frac{186}{177} \\approx 1.051\n$$\n\n$$\n1.051 \\ngtr 1.14\n$$\n\nQuick cover is only about 1.05 times, so it does not exceed 1.14.\n\nSo the statement is False.",
+        "**C.** → False\n\nBuildings as a share of total assets is the buildings line divided by total assets.\n\nBuildings:\n\nTotal assets:\n\n$$\n\\frac{305}{933}\n$$\n\n$$\n305 \\div 933 \\approx 0.3269\n$$\n\n$$\n32.69\\% \\approx 32.7\\%\n$$\n\nThe claim says buildings make up more than 43.4% of total assets:\n\n$$\n32.7\\% \\ngtr 43.4\\%\n$$\n\nBuildings are about 32.7% of total assets, so the claim fails.\n\nSo the statement is False.",
+        "**D.** → False\n\nA long-term bank loan is borrowed funds owed to lenders. It belongs with non-current liabilities, alongside bonds payable, not with equity (share capital and retained earnings). Classifying the EUR 396 thousand loan inside equity would reverse the financing structure of the sheet.\n\nSo the statement is False.",
+        "**E.** → True\n\nWorking capital is current assets minus current liabilities. Rebuild CA and CL from the extract lines.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n169 + 103 = 272\\qquad 272 + 83 = 355\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n143 + 34 = 177\\qquad 355 - 177 = 178\n$$\n\n$$\n178 > 0\n$$\n\nWorking capital is EUR 178 thousand and positive, matching the claim.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 7,
+      "case_id": "CASE 6.5.060",
+      "title": "Liquidity From the Balance Sheet 60",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 474 |\n| Machinery | 153 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 97 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 104 |\n| Total assets | **963** |\n| **EQUITY** | |\n| Share capital | 119 |\n| Retained earnings | 191 |\n| Total equity | **310** |\n| **LIABILITIES** | |\n| Long-term bank loan | 424 |\n| Bonds payable | 51 |\n| Trade payables | 114 |\n| Bank overdraft | 64 |\n| Total liabilities | **653** |\n| Total equity and liabilities | **963** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.22 times over.",
+        "The equity ratio is below 28.8%.",
+        "Working capital of €102 thousand is positive on this balance sheet.",
+        "Buildings make up more than 55.3% of total assets.",
+        "Inventory make up more than 46% of current assets."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "current_lens": [
+        304,
+        477,
+        405,
+        400,
+        416
+      ],
+      "current": [
+        "**A.** → False\n\nThe overview already recovers current assets $CA = 280$, inventory $= 97$, and current liabilities $CL = 178$.\n\n$$\n280 - 97 = 183\n$$\n\n$$\n\\frac{183}{178} \\approx 1.028\n$$\n\n$$\n1.028 \\ngtr 1.22\n$$\n\nQuick cover is only about 1.03 times, so it does not exceed 1.22.\n\nSo the statement is False.",
+        "**B.** → False\n\nThe equity ratio is total equity divided by total assets. Pull both closing totals from the extract.\n\nTotal equity (share capital + retained earnings):\n\nTotal assets:\n\nName and apply the equity-ratio formula:\n\n$$\n\\frac{310}{963}\n$$\n\n$$\n310 \\div 963 \\approx 0.3219\n$$\n\n$$\n32.19\\% \\approx 32.2\\%\n$$\n\nThe claim says the equity ratio is below 28.8%:\n\n$$\n32.2\\% \\nless 28.8\\%\n$$\n\nThe equity ratio is about 32.2%, so it is not below 28.8%.\n\nSo the statement is False.",
+        "**C.** → True\n\nWorking capital is current assets minus current liabilities. Rebuild CA and CL from the extract.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n97 + 79 = 176\\qquad 176 + 104 = 280\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n114 + 64 = 178\\qquad 280 - 178 = 102\n$$\n\n$$\n102 > 0\n$$\n\nWorking capital is EUR 102 thousand and positive, matching the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nBuildings as a share of total assets is the buildings line divided by total assets.\n\nBuildings:\n\nTotal assets:\n\n$$\n\\frac{474}{963}\n$$\n\n$$\n474 \\div 963 \\approx 0.4922\n$$\n\n$$\n49.22\\% \\approx 49.2\\%\n$$\n\nThe claim says buildings make up more than 55.3% of total assets:\n\n$$\n49.2\\% \\ngtr 55.3\\%\n$$\n\nBuildings are about 49.2% of total assets, so the claim fails.\n\nSo the statement is False.",
+        "**E.** → False\n\nInventory as a share of current assets is inventory divided by current assets. CA = 280 from above.\n\nInventory:\n\nCurrent assets:\n\n$$\n\\frac{97}{280}\n$$\n\n$$\n97 \\div 280 \\approx 0.3464\n$$\n\n$$\n34.64\\% \\approx 34.6\\%\n$$\n\nThe claim says inventory makes up more than 46% of current assets:\n\n$$\n34.6\\% \\ngtr 46\\%\n$$\n\nInventory is about 34.6% of current assets, so the claim fails.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "i": 8,
+      "case_id": "CASE 6.5.077",
+      "title": "Balance Sheet Structure Review 77",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 124 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 231 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1214** |\n| **EQUITY** | |\n| Share capital | 110 |\n| Retained earnings | 474 |\n| Total equity | **584** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 47 |\n| Trade payables | 153 |\n| Bank overdraft | 84 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **1214** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Working capital of €279 thousand is positive on this balance sheet.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 0.9 times over.",
+        "Buildings make up more than 38.9% of total assets.",
+        "Inventory make up more than 42.9% of current assets.",
+        "The combined total of equity and non-current liabilities exceeds non-current assets by more than 26.8%."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "current_lens": [
+        411,
+        516,
+        401,
+        449,
+        414
+      ],
+      "current": [
+        "**A.** → True\n\nWorking capital is current assets minus current liabilities. Build CA and CL from the extract lines.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n231 + 180 = 411\\qquad 411 + 105 = 516\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n153 + 84 = 237\\qquad 516 - 237 = 279\n$$\n\n$$\n279 > 0\n$$\n\nWorking capital is EUR 279 thousand and positive, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nAfter excluding inventory, remaining current assets over current liabilities is the quick ratio. Rebuild CA and CL from the extract.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n231 + 180 = 411\\qquad 411 + 105 = 516\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n153 + 84 = 237\n$$\n\nStrip inventory:\n\n$$\n516 - 231 = 285\n$$\n\n$$\n\\frac{285}{237}\n$$\n\n$$\n285 \\div 237 \\approx 1.2025\n$$\n\n$$\n1.203 > 0.9\n$$\n\nQuick cover is about 1.20 times, which clears the 0.9 hurdle.\n\nSo the statement is True.",
+        "**C.** → True\n\nBuildings as a share of total assets is the buildings line divided by total assets. Pull both figures from the extract.\n\nBuildings:\n\nTotal assets:\n\nName the composition share:\n\n$$\n\\frac{502}{1214}\n$$\n\n$$\n502 \\div 1214 \\approx 0.4135\n$$\n\n$$\n41.35\\% \\approx 41.4\\%\n$$\n\n$$\n41.4\\% > 38.9\\%\n$$\n\nBuildings are about 41.4% of total assets, above the 38.9% threshold.\n\nSo the statement is True.",
+        "**D.** → True\n\nInventory as a share of current assets is inventory divided by current assets. First rebuild CA from the extract lines.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n231 + 180 = 411\\qquad 411 + 105 = 516\n$$\n\n$$\n\\frac{231}{516}\n$$\n\n$$\n231 \\div 516 \\approx 0.4477\n$$\n\n$$\n44.77\\% \\approx 44.8\\%\n$$\n\n$$\n44.8\\% > 42.9\\%\n$$\n\nInventory is about 44.8% of current assets, above the 42.9% threshold.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe overview already recovers equity $= 584$, non-current liabilities $NCL = 393$, and non-current assets $NCA = 698$.\n\n$$\n584 + 393 = 977\n$$\n\n$$\n977 - 698 = 279\n$$\n\n$$\n\\frac{279}{698} \\approx 0.400\n$$\n\n$$\n0.400 \\times 100\\% \\approx 40.0\\%\n$$\n\n$$\n40.0\\% > 26.8\\%\n$$\n\nEquity plus non-current liabilities exceeds non-current assets by about 40.0%, clearing the 26.8% hurdle.\n\nSo the statement is True."
+      ]
+    },
+    {
+      "i": 9,
+      "case_id": "CASE 6.5.029",
+      "title": "Balance Sheet Structure Review 29",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 485 |\n| Machinery | 256 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 273 |\n| Trade receivables | 145 |\n| Cash and cash equivalents | 45 |\n| Total assets | **1347** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 684 |\n| Total equity | **882** |\n| **LIABILITIES** | |\n| Long-term bank loan | 288 |\n| Bonds payable | 49 |\n| Trade payables | 80 |\n| Bank overdraft | 48 |\n| Total liabilities | **465** |\n| Total equity and liabilities | **1347** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio exceeds 1.55.",
+        "The equity ratio is below 28.7%.",
+        "The debt ratio exceeds 76.4%.",
+        "Working capital of €335 thousand is positive on this balance sheet.",
+        "Buildings make up more than 50.7% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "current_lens": [
+        444,
+        479,
+        446,
+        411,
+        402
+      ],
+      "current": [
+        "**A.** → True\n\nThe current ratio is current assets divided by current liabilities. Build CA and CL from the extract.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n273 + 145 = 418\\qquad 418 + 45 = 463\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n80 + 48 = 128\n$$\n\n$$\n\\frac{463}{128}\n$$\n\n$$\n463 \\div 128 \\approx 3.6172\n$$\n\n$$\n3.617 > 1.55\n$$\n\nThe current ratio is about 3.62, which clears the 1.55 hurdle.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe equity ratio is total equity divided by total assets. Pull both closing totals from the extract.\n\nTotal equity (share capital + retained earnings):\n\nTotal assets:\n\nName and apply the equity-ratio formula:\n\n$$\n\\frac{882}{1347}\n$$\n\n$$\n882 \\div 1347 \\approx 0.6548\n$$\n\n$$\n65.48\\% \\approx 65.5\\%\n$$\n\nThe claim says the equity ratio is below 28.7%:\n\n$$\n65.5\\% \\nless 28.7\\%\n$$\n\nThe equity ratio is about 65.5%, so it is not below 28.7%.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe debt ratio is total liabilities divided by total assets. Pull both closing totals from the extract.\n\nTotal liabilities:\n\nTotal assets:\n\nName and apply the debt-ratio formula:\n\n$$\n\\frac{465}{1347}\n$$\n\n$$\n465 \\div 1347 \\approx 0.3452\n$$\n\n$$\n34.52\\% \\approx 34.5\\%\n$$\n\nThe claim says the debt ratio exceeds 76.4%:\n\n$$\n34.5\\% \\ngtr 76.4\\%\n$$\n\nThe debt ratio is about 34.5%, so it does not exceed 76.4%.\n\nSo the statement is False.",
+        "**D.** → True\n\nWorking capital is current assets minus current liabilities. Rebuild CA and CL from the extract lines.\n\nInventory:\n\nTrade receivables:\n\nCash and cash equivalents:\n\n$$\n273 + 145 = 418\\qquad 418 + 45 = 463\n$$\n\nTrade payables:\n\nBank overdraft:\n\n$$\n80 + 48 = 128\\qquad 463 - 128 = 335\n$$\n\n$$\n335 > 0\n$$\n\nWorking capital is EUR 335 thousand and positive, matching the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nBuildings as a share of total assets is the buildings line divided by total assets.\n\nBuildings:\n\nTotal assets:\n\n$$\n\\frac{485}{1347}\n$$\n\n$$\n485 \\div 1347 \\approx 0.3601\n$$\n\n$$\n36.01\\% \\approx 36.0\\%\n$$\n\nThe claim says buildings make up more than 50.7% of total assets:\n\n$$\n36.0\\% \\ngtr 50.7\\%\n$$\n\nBuildings are about 36.0% of total assets, so the claim fails.\n\nSo the statement is False."
+      ]
+    }
+  ]
+}

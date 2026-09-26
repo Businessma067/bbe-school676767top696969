@@ -1,0 +1,35 @@
+## DEMO MATH 5.H01
+keys=[True, True, True, True, False]
+  A (T): The unique baseline solution is $(m,c)=(90,90)$.
+  B (T): If the colour price had been EUR 60 instead of EUR 55, with the same count $m+c=180$ and the same revenue EUR 8100, then $c$ would have fallen below $75$.
+  C (T): If management had printed $15$ fewer mono pages and $15$ more colour pages than the baseline, revenue would have risen by exactly EUR 300.
+  D (T): If total pages stayed $180$ but the revenue target rose to EUR 10000 at the same prices, no nonnegative solution $(m,c)$ would exist, because an all-colour batch only reaches EUR 9900.
+  E (F): If prices stayed EUR 35 and EUR 55 but the shop printed the swapped mix $(120,60)$ instead of the baseline $(90,90)$, revenue would still be EUR 8100.
+## DEMO MATH 8.H01
+keys=[True, True, False, True, False]
+  A (T): The daytime bill for distance $d$ is exactly $12+0.8d$ euros.
+  B (T): If the same distance were run at night, the night bill would be exactly EUR 5 more than the daytime bill for every $d>0$.
+  C (F): There is a distance $d^{*}$ at which a daytime run and a night run would cost the same; solving $12+0.8d=12+0.8d+5$ finds it.
+  D (T): If the firm waived the EUR 12 base on daytime runs only (charging pure $0.8d$), then for a $20$ km daytime job the client would save exactly EUR 12 compared with the original daytime tariff.
+  E (F): If distance doubled from $10$ km to $20$ km on a daytime run, the bill would also double, because both the base and the kilometre charge scale linearly with $d$.
+## DEMO MATH 11.H01
+keys=[True, False, True, False, False]
+  A (T): $R'(q)=90-6q$, so in particular $R'(4)=66$.
+  B (F): Revenue is maximised at the same quantity where $P(q)=0$, i.e. at the choke quantity $q=30$.
+  C (T): If output rises from $q=4$ to $q=5$, the linear approximation using $R'(4)$ overestimates the true revenue increase $R(5)-R(4)$, because $R$ is a concave quadratic.
+  D (F): At the quantity that maximises $R$, price equals marginal revenue.
+  E (F): Cutting price enough to raise quantity from $q=16$ to $q=17$ must raise revenue, because more units are sold.
+## MATH 12.187
+keys=[True, True, False, True, True]
+  A (T): The probability that a tested deer receives a positive result is greater than 7%.
+  B (T): The probability that the deer is Subspecies A AND receives a positive result is greater than 3.4%.
+  C (F): The probability that the deer is Subspecies A, given a positive result is greater than 45%.
+  D (T): The probability that a tested deer receives a negative result equals 1 minus the probability that a tested deer receives a positive result.
+  E (T): The probability that the deer is Subspecies C, given a positive result is greater than the probability that the deer is Subspecies B, given a positive result.
+## MATH 13.108
+keys=[True, False, True, False, False]
+  A (T): The next test fails with probability 0.2.
+  B (F): The expected number of audible tests in the next 12 tests is 4.8.
+  C (T): The variance of the number of audible tests out of 50 tests is 8.
+  D (F): The probability of 3 consecutive audible tests is less than 0.3.
+  E (F): The probability of at most 4 audible tests in the next 6 tests is more than 0.5.

@@ -1,0 +1,863 @@
+===== DEMO MATH 2.H02 A (12 , 618c) =====
+**A.** → True
+
+Records (1) and (2) alone already determine the squared sum. Expand the binomial:
+
+$$
+(p+q)^{2}=p^{2}+2pq+q^{2}
+$$
+
+Rewrite as
+
+$$
+(p+q)^{2}=(p^{2}+q^{2})+2pq
+$$
+
+Substitute record (1):
+
+$$
+p^{2}+q^{2}=250
+$$
+
+$$
+(p+q)^{2}=250+2pq
+$$
+
+Substitute record (2):
+
+$$
+pq=75
+$$
+
+$$
+2\cdot 75=150
+$$
+
+$$
+(p+q)^{2}=250+150
+$$
+
+Add:
+
+$$
+250+150=400
+$$
+
+$$
+(p+q)^{2}=400
+$$
+
+Take the nonnegative square root:
+
+$$
+|p+q|=\sqrt{400}
+$$
+
+$$
+\sqrt{400}=\sqrt{20^{2}}=20
+$$
+
+$$
+|p+q|=20
+$$
+
+exactly as claimed. (The signed sum itself may still be $+20$ or $-20$; the absolute value is forced.)
+
+So the statement is True.
+
+===== DEMO MATH 2.H02 C (11 , 620c) =====
+**C.** → True
+
+Record (4) forces the sign of the sum. Multiply both sides of $\frac{1}{p}+\frac{1}{q}=\frac{4}{15}$ by $pq=75$:
+
+$$
+p+q=\frac{4}{15}\cdot 75
+$$
+
+$$
+\frac{4}{15}\cdot 75=20
+$$
+
+matching letter A's $|p+q|=20$. The two numbers are the roots of
+
+$$
+t^{2}-20t+75=0
+$$
+
+Compute the discriminant:
+
+$$
+20^{2}=400
+$$
+
+$$
+4\cdot 75=300
+$$
+
+$$
+400-300=100
+$$
+
+$$
+t=\frac{20\pm\sqrt{100}}{2}
+$$
+
+$$
+\sqrt{100}=10
+$$
+
+$$
+t=\frac{20\pm 10}{2}
+$$
+
+$$
+\frac{20+10}{2}=15
+$$
+
+$$
+\frac{20-10}{2}=5
+$$
+
+so the unordered pair is $\{5,15\}$, and the reciprocal sum matches record (4) automatically.
+
+So the statement is True.
+
+===== DEMO MATH 2.H02 E (13 , 659c) =====
+**E.** → True
+
+From records (1) and (2) expand the squared difference:
+
+$$
+(p-q)^{2}=p^{2}-2pq+q^{2}
+$$
+
+$$
+2\cdot 75=150\qquad (p-q)^{2}=250-150
+$$
+
+$$
+250-150=100\qquad (p-q)^{2}=100
+$$
+
+$$
+|p-q|=\sqrt{100}
+$$
+
+$$
+\sqrt{100}=10
+$$
+
+$$
+|p-q|=10
+$$
+
+as claimed. If in addition record (4) holds, then
+
+$$
+p+q=\frac{4}{15}\cdot pq
+$$
+
+$$
+\frac{4}{15}\cdot 75=\frac{4\cdot 75}{15}
+$$
+
+$$
+4\cdot 75=300\qquad \frac{300}{15}=20
+$$
+
+$$
+p+q=20
+$$
+
+Inner piece of the cube identity:
+
+$$
+250-75=175\qquad p^{3}+q^{3}=20\cdot 175
+$$
+
+$$
+20\cdot 75=1500\qquad 2000+1500=3500
+$$
+
+$$
+p^{3}+q^{3}=3500
+$$
+
+which is exactly the displayed identity.
+
+So the statement is True.
+
+===== DEMO MATH 6.H02 A (12 , 1056c) =====
+**A.** → True
+
+The claim is a universal "no counterexample" statement on the closed interval $[1,4]$. Critical points of the absolute expressions are $x=1$, $x=4$ and $x=\tfrac{3}{2}$.
+
+On $[1,\tfrac{3}{2}]$: $x^{2}-5x+4\le 0$ and $2x-3\le 0$, so the inequality reads
+
+$$
+-(x^{2}-5x+4)+(3-2x)\le x+6
+$$
+
+Expand the left side:
+
+$$
+-x^{2}+3x-1\le x+6
+$$
+
+Move everything to one side:
+
+$$
+0\le x^{2}-2x+7
+$$
+
+The discriminant of $x^{2}-2x+7$ is
+
+$$
+(-2)^{2}=4
+$$
+
+$$
+4\cdot 7=28
+$$
+
+$$
+4-28=-24
+$$
+
+which is negative, so the right side is always positive; the inequality holds identically on this piece.
+
+On $[\tfrac{3}{2},4]$: $x^{2}-5x+4\le 0$ and $2x-3\ge 0$, so the inequality reads
+
+$$
+-(x^{2}-5x+4)+(2x-3)\le x+6
+$$
+
+Expand the left side:
+
+$$
+-x^{2}+7x-7\le x+6
+$$
+
+Move everything to one side:
+
+$$
+0\le x^{2}-6x+13
+$$
+
+The discriminant of $x^{2}-6x+13$ is
+
+$$
+(-6)^{2}=36
+$$
+
+$$
+4\cdot 13=52
+$$
+
+$$
+36-52=-16
+$$
+
+which is also negative, so this piece likewise holds identically. Hence no point of $[1,4]$ is a counterexample.
+
+So the statement is True.
+
+===== DEMO MATH 6.H02 B (11 , 692c) =====
+**B.** → True
+
+The claim only asks for existence inside the open interval $(1,2)$. Domain of the radical requires
+
+$$
+2x+5\ge 0
+$$
+
+$$
+x\ge -\frac{5}{2}
+$$
+
+which already contains $(1,2)$. Pick the convenient interior test point
+
+$$
+x=\frac{3}{2}
+$$
+
+Left-hand side:
+
+$$
+\sqrt{2\cdot\frac{3}{2}+5}+\left|\frac{3}{2}-2\right|
+$$
+
+$$
+2\cdot\frac{3}{2}=3\qquad 3+5=8
+$$
+
+$$
+\sqrt{8}=\sqrt{4\cdot 2}=2\sqrt{2}
+$$
+
+$$
+\sqrt{2}\approx 1.41421356
+$$
+
+$$
+2\sqrt{2}\approx 2.82842712
+$$
+
+$$
+\left|\frac{3}{2}-2\right|=\left|-\frac{1}{2}\right|=\frac{1}{2}
+$$
+
+$$
+2.82842712+0.5=3.32842712
+$$
+
+$$
+3.32842712\le 4
+$$
+
+So at least one point of $(1,2)$ satisfies the inequality.
+
+So the statement is True.
+
+===== DEMO MATH 6.H02 E (7 , 526c) =====
+**E.** → False
+
+The claim asks whether the solution set meets $[-4,-2]$. The pole $x=-1$ does not meet that interval, so every point of $[-4,-2]$ is domain-legal. Test the interior point $x=-3$:
+
+$$
+|2(-3)-5|=|-11|
+$$
+
+$$
+|-11|=11
+$$
+
+$$
+|-3+1|=2
+$$
+
+$$
+\frac{11}{2}=5.5
+$$
+
+$$
+|-3-2|=5
+$$
+
+$$
+5.5+5=10.5
+$$
+
+$$
+10.5\le 4
+$$
+
+is false. The same failure pattern persists throughout $[-4,-2]$ (the expression stays larger than $4$ on that segment). The intersection with $[-4,-2]$ is therefore empty.
+
+So the statement is False.
+
+===== DEMO MATH 7.H01 A (10 , 546c) =====
+**A.** → False
+
+Two distinct real roots require a strictly positive discriminant. Expand
+
+$$
+\Delta=(2k+1)^{2}-4(k^{2}-4)
+$$
+
+First square:
+
+$$
+(2k+1)^{2}=4k^{2}+4k+1
+$$
+
+Then the second term:
+
+$$
+4(k^{2}-4)=4k^{2}-16
+$$
+
+Subtract:
+
+$$
+\Delta=4k^{2}+4k+1-(4k^{2}-16)
+$$
+
+$$
+\Delta=4k^{2}+4k+1-4k^{2}+16
+$$
+
+$$
+\Delta=4k+17
+$$
+
+At $k=-5$:
+
+$$
+\Delta=4(-5)+17
+$$
+
+$$
+4\cdot(-5)=-20
+$$
+
+$$
+-20+17=-3
+$$
+
+$$
+\Delta=-3<0
+$$
+
+so $g_{-5}$ has no real roots. The claim that every real $k$ yields two distinct real roots fails.
+
+So the statement is False.
+
+===== DEMO MATH 7.H01 B (9 , 610c) =====
+**B.** → True
+
+For a monic quadratic written as
+
+$$
+x^{2}-Bx+C
+$$
+
+the axis of symmetry is the vertical line
+
+$$
+x=\frac{B}{2}
+$$
+
+Here the linear coefficient is
+
+$$
+B=2k+1
+$$
+
+so
+
+$$
+x=\frac{2k+1}{2}
+$$
+
+Split the fraction into two pieces:
+
+$$
+\frac{2k+1}{2}=\frac{2k}{2}+\frac{1}{2}
+$$
+
+$$
+\frac{2k}{2}=k
+$$
+
+$$
+x=k+\frac{1}{2}
+$$
+
+This identity holds for every real parameter $k$; no discriminant restriction appears. As a quick check at $k=0$:
+
+$$
+x=0+\frac{1}{2}=\frac{1}{2}
+$$
+
+and at $k=2$:
+
+$$
+x=2+\frac{1}{2}=\frac{5}{2}
+$$
+
+which matches $B=5$ giving axis $x=\tfrac{5}{2}$.
+
+So the statement is True.
+
+===== DEMO MATH 7.H01 C (14 , 620c) =====
+**C.** → False
+
+Substitute $k=2$ into each coefficient carefully.
+
+Linear coefficient:
+
+$$
+2k+1=2\cdot 2+1
+$$
+
+$$
+2\cdot 2=4
+$$
+
+$$
+4+1=5
+$$
+
+Constant term:
+
+$$
+k^{2}-4
+$$
+
+$$
+2^{2}=4
+$$
+
+$$
+4-4=0
+$$
+
+The specialised quadratic is therefore
+
+$$
+g_2(x)=x^{2}-5x+0
+$$
+
+$$
+g_2(x)=x^{2}-5x
+$$
+
+Factor out the common $x$:
+
+$$
+g_2(x)=x(x-5)
+$$
+
+Set equal to zero:
+
+$$
+x=0
+$$
+
+or
+
+$$
+x-5=0
+$$
+
+$$
+x=5
+$$
+
+The two roots are $0$ and $5$. The claim asserts the roots are $1$ and $5$. Compare:
+
+$$
+0\neq 1
+$$
+
+$$
+5=5
+$$
+
+Only one of the two claimed roots is correct, so the statement as a whole is false.
+
+So the statement is False.
+
+===== DEMO MATH 7.H01 D (13 , 738c) =====
+**D.** → False
+
+A double root at $0$ would require both $g_k(0)=0$ and $g_k'(0)=0$. First the constant term:
+
+$$
+g_k(0)=k^{2}-4\qquad k^{2}-4=0
+$$
+
+$$
+k^{2}=4
+$$
+
+$$
+k=2\quad\text{or}\quad k=-2
+$$
+
+Differentiate:
+
+$$
+g_k'(x)=2x-(2k+1)
+$$
+
+$$
+g_k'(0)=-(2k+1)
+$$
+
+Set the derivative condition:
+
+$$
+-(2k+1)=0\qquad 2k+1=0
+$$
+
+$$
+2k=-1
+$$
+
+$$
+k=-\frac{1}{2}
+$$
+
+Check whether $k=-\tfrac12$ satisfies $k^{2}-4=0$:
+
+$$
+\Bigl(-\frac{1}{2}\Bigr)^{2}=\frac{1}{4}
+$$
+
+$$
+\frac{1}{4}-4=\frac{1}{4}-\frac{16}{4}=-\frac{15}{4}
+$$
+
+$$
+-\frac{15}{4}\neq 0
+$$
+
+Conversely, at $k=2$:
+
+$$
+g_2'(0)=-(4+1)=-5\neq 0
+$$
+
+At $k=-2$:
+
+$$
+g_{-2}'(0)=-(-4+1)=-(-3)=3\neq 0
+$$
+
+The two conditions are incompatible, so no such $k$ exists.
+
+So the statement is False.
+
+===== DEMO MATH 7.H01 E (10 , 663c) =====
+**E.** → True
+
+For $k=0$ the quadratic is
+
+$$
+g_0(x)=x^{2}-(0+1)x+(0-4)
+$$
+
+$$
+g_0(x)=x^{2}-x-4
+$$
+
+The axis from letter B is
+
+$$
+x=0+\frac{1}{2}=\frac{1}{2}
+$$
+
+Evaluate:
+
+$$
+g_0\Bigl(\frac{1}{2}\Bigr)=\Bigl(\frac{1}{2}\Bigr)^{2}-\frac{1}{2}-4
+$$
+
+$$
+\Bigl(\frac{1}{2}\Bigr)^{2}=\frac{1}{4}
+$$
+
+$$
+\frac{1}{4}-\frac{1}{2}=\frac{1}{4}-\frac{2}{4}=-\frac{1}{4}
+$$
+
+$$
+-\frac{1}{4}-4=-\frac{1}{4}-\frac{16}{4}=-\frac{17}{4}
+$$
+
+$$
+g_0\Bigl(\frac{1}{2}\Bigr)=-\frac{17}{4}
+$$
+
+Alternatively via the discriminant shortcut:
+
+$$
+\Delta=4\cdot 0+17=17
+$$
+
+$$
+-\frac{\Delta}{4}=-\frac{17}{4}
+$$
+
+which matches the claimed vertex $y$-coordinate.
+
+So the statement is True.
+
+===== DEMO MATH 8.H01 D (4 , 287c) =====
+**D.** → True
+
+Original daytime bill at $d=20$:
+
+$$
+0.8\cdot 20=16
+$$
+
+$$
+12+16=28
+$$
+
+After waiving the EUR $12$ base, only the kilometre charge remains:
+
+$$
+16
+$$
+
+The saving versus the original daytime tariff is
+
+$$
+28-16=12
+$$
+
+exactly the waived base fee.
+
+So the statement is True.
+
+===== DEMO MATH 8.H01 E (6 , 482c) =====
+**E.** → False
+
+Evaluate the daytime bill at the two distances:
+
+$$
+0.8\cdot 10=8
+$$
+
+$$
+12+8=20
+$$
+
+$$
+0.8\cdot 20=16
+$$
+
+$$
+12+16=28
+$$
+
+Form the ratio:
+
+$$
+\frac{28}{20}=1.4
+$$
+
+$$
+1.4\neq 2
+$$
+
+Doubling distance multiplies the bill by $1.4$, not by $2$. The kilometre part scales ($8\to 16$), but the fixed base of $12$ does not. Homogeneity would require $C_{\mathrm{day}}(2d)=2\,C_{\mathrm{day}}(d)$; at $d=10$ that would need $28=40$, which fails.
+
+So the statement is False.
+
+===== DEMO MATH 10.H01 A (14 , 854c) =====
+**A.** → True
+
+Set the two trajectories equal:
+
+$$
+4e^{0.3t}=16e^{-0.6t}
+$$
+
+Divide both sides by $4$:
+
+$$
+e^{0.3t}=4e^{-0.6t}
+$$
+
+Multiply both sides by $e^{0.6t}$:
+
+$$
+e^{0.3t}e^{0.6t}=4
+$$
+
+$$
+0.3+0.6=0.9\qquad e^{0.9t}=4
+$$
+
+Take the natural log:
+
+$$
+0.9t=\ln 4
+$$
+
+$$
+t=\frac{\ln 4}{0.9}
+$$
+
+Equivalently:
+
+$$
+t=\frac{1}{0.9}\ln 4
+$$
+
+Build $\ln 4$ numerically for a cross-check:
+
+$$
+\ln 2\approx 0.693147
+$$
+
+$$
+\ln 4=2\ln 2
+$$
+
+$$
+\frac{1.386294}{0.9} = 1.5403266\ldots
+$$
+
+$$
+t^{*}\approx 1.540327
+$$
+
+Uniqueness: the map $t\mapsto e^{0.9t}$ is strictly increasing (derivative $0.9e^{0.9t}>0$), hence one-to-one on $\mathbb{R}$. Verify $f(t^{*})=g(t^{*})$ via the ratio:
+
+$$
+\frac{f(t^{*})}{g(t^{*})}=\frac{1}{4}e^{0.9t^{*}}
+$$
+
+$$
+e^{0.9t^{*}}=e^{\ln 4}=4
+$$
+
+$$
+\frac{1}{4}\times 4=1
+$$
+
+so $f(t^{*})=g(t^{*})$ holds.
+
+So the statement is True.
+
+===== MATH 12.187 A (4 , 352c) =====
+**A.** → True
+
+The overview already recovers the three subspecies contributions to a positive test. Adding them gives the unconditional positive-test probability:
+
+$$
+P(T^{+})=0.03432+0.0229+0.02535
+$$
+
+$$
+0.03432+0.0229=0.05722
+$$
+
+$$
+0.05722+0.02535=0.08257
+$$
+
+Compare with the claimed $7\%$ threshold:
+
+$$
+0.08257>0.07
+$$
+
+So the statement is True.
+
+===== MATH 13.108 C (3 , 295c) =====
+**C.** → True
+
+For a binomial count $X\sim\mathrm{Bin}(n,p)$, the variance formula is $np(1-p)$. Insert $n=50$, $p=0.8$, and $1-p=0.2$:
+
+$$
+\mathrm{Var}(X)=50\cdot 0.8\cdot 0.2
+$$
+
+$$
+50\cdot 0.8=40
+$$
+
+$$
+40\cdot 0.2=8
+$$
+
+The variance equals $8$, matching the claim.
+
+So the statement is True.

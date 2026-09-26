@@ -1,0 +1,57 @@
+len=730 dd=731
+**A.** → True
+Inventory turnover is cost of sales divided by average inventory. Average inventory is the arithmetic mean of the opening and closing inventory lines.
+
+From the extract, inventory at the beginning of the year:
+
+$$
+169
+$$
+
+Inventory at the end of the year:
+
+$$
+179
+$$
+
+Sum the two stock balances:
+
+$$
+169 + 179 = 348
+$$
+
+Divide by 2 for the average:
+
+$$
+\frac{348}{2} = 174
+$$
+
+Cost of sales from the extract:
+
+$$
+674
+$$
+
+$$
+\frac{674}{174}
+$$
+
+$$
+674 \div 174 \approx 3.8736
+$$
+
+$$
+3.8736 \approx 3.87
+$$
+
+Compare with the claimed ceiling of 6.87 times per year:
+
+$$
+3.87 < 6.87
+$$
+
+Inventory turns about 3.87 times a year, which is below 6.87. The inequality in the claim therefore holds.
+
+So the statement is True.
+economics avg=522.0 bavg=261.26
+math avg=884.7 bavg=442.6

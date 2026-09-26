@@ -1,0 +1,47 @@
+**D.** → False
+
+Logarithms force a strict domain $x>1$ (and $3x+5>0$, which is automatic once $x>1$). Combine the logs into a single product identity:
+
+$$
+(x-1)(x+3)=3x+5
+$$
+
+Expand and move terms to one side:
+
+$$
+x^{2}-x-8=0
+$$
+
+Compute the discriminant:
+
+$$
+(-1)^{2}=1
+$$
+
+$$
+4\cdot(-8)=-32
+$$
+
+$$
+1-(-32)=33
+$$
+
+Apply the quadratic formula:
+
+$$
+x=\frac{1\pm\sqrt{33}}{2}
+$$
+
+Only the plus branch is domain-legal:
+
+$$
+\frac{1+\sqrt{33}}{2}\approx 3.37
+$$
+
+$$
+3.37<4
+$$
+
+The unique domain-legal solution is therefore not larger than $4$.
+
+So the statement is False.

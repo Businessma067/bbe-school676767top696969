@@ -1,0 +1,647 @@
+=== math MATH 13.108 E len=1889 blocks=45
+**E.** → False
+
+Let $X\sim\mathrm{Bin}(6,0.8)$. Recover $p$ once more:
+
+The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,2,3,4$:
+
+$$
+P(X\le 4)=\sum_{x=0}^{4}\binom{6}{x}(0.8)^{x}(0.2)^{6-x}
+$$
+
+---
+
+Term $x=0$:
+
+$$
+P(X=0)=\binom{6}{0}(0.8)^{0}(0.2)^{6}
+$$
+
+$$
+(0.8)^{0}=1
+$$
+
+$$
+(0.2)^{2}=0.04
+$$
+
+$$
+(0.2)^{3}=0.008
+$$
+
+$$
+(0.2)^{4}=0.0016
+$$
+
+$$
+(0.2)^{5}=0.00032
+$$
+
+$$
+(0.2)^{6}=0.000064
+$$
+
+$$
+P(X=0)=0.000064
+$$
+
+---
+
+Term $x=1$:
+
+$$
+P(X=1)=\binom{6}{1}(0.8)^{1}(0.2)^{5}
+$$
+
+$$
+(0.8)^{1}=0.8
+$$
+
+Expand $(0.2)^{5}$:
+
+$$
+(0.2)^{5}=0.00032
+$$
+
+$$
+0.00144+0.000096=0.001536
+$$
+
+$$
+P(X=1)=0.001536
+$$
+
+---
+
+Term $x=2$:
+
+$$
+P(X=2)=\binom{6}{2}(0.8)^{2}(0.2)^{4}
+$$
+
+$$
+\binom{6}{2}=15
+$$
+
+Expand $(0.8)^{2}$:
+
+$$
+(0.8)^{2}=0.64
+$$
+
+Expand $(0.2)^{4}$:
+
+$$
+(0.2)^{4}=0.0016
+$$
+
+$$
+9+0.6=9.6
+$$
+
+$$
+0.0096+0.00576=0.01536
+$$
+
+$$
+P(X=2)=0.01536
+$$
+
+---
+
+Term $x=3$:
+
+$$
+P(X=3)=\binom{6}{3}(0.8)^{3}(0.2)^{3}
+$$
+
+$$
+\binom{6}{3}=20
+$$
+
+Expand $(0.8)^{3}$:
+
+$$
+0.64\times 0.8=0.512
+$$
+
+$$
+(0.8)^{3}=0.512
+$$
+
+Expand $(0.2)^{3}$:
+
+$$
+(0.2)^{3}=0.008
+$$
+
+$$
+20\times 0.512
+$$
+
+$$
+20\times 0.5=10
+$$
+
+$$
+10+0.24=10.24
+$$
+
+$$
+P(X=3)=0.08192
+$$
+
+---
+
+Term $x=4$:
+
+$$
+P(X=4)=\binom{6}{4}(0.8)^{4}(0.2)^{2}
+$$
+
+$$
+\binom{6}{4}=15
+$$
+
+(Note $\binom{6}{4}=\binom{6}{2}=15$.)
+
+Expand $(0.8)^{4}$:
+
+$$
+0.64\times 0.8=0.512
+$$
+
+$$
+0.512\times 0.8=0.4096
+$$
+
+$$
+(0.8)^{4}=0.4096
+$$
+
+Expand $(0.2)^{2}$:
+
+$$
+(0.2)^{2}=0.04
+$$
+
+$$
+6+0.144=6.144
+$$
+
+$$
+P(X=4)=0.24576
+$$
+
+---
+
+Adding the mutually exclusive pieces one at a time:
+
+$$
+0.000064+0.001536=0.0016
+$$
+
+$$
+0.0016+0.01536=0.01696
+$$
+
+$$
+0.01696+0.08192=0.09888
+$$
+
+$$
+0.09888+0.24576=0.34464
+$$
+
+$$
+P(X\le 4)=0.34464
+$$
+
+Compare with the claimed cutoff $0.5$:
+
+$$
+0.5-0.34464=0.15536
+$$
+
+$$
+0.34464<0.5
+$$
+
+The probability is less than $0.5$, not more. The claim's inequality fails.
+
+So the statement is False.
+
+=== math DEMO MATH 4.H02 C len=1061 blocks=13
+**C.** → False
+
+An absolute value equals a real expression only when that expression is nonnegative, so require $3x-4\ge 0$, i.e. $x\ge\tfrac{4}{3}$. Split on the sign of $x^{2}-6x+5$.
+
+Case 1 ($x^{2}-6x+5\ge 0$): the equation reads $x^{2}-6x+5=3x-4$, i.e.
+
+$$
+x^{2}-9x+9=0
+$$
+
+$$
+9^{2}=81
+$$
+
+$$
+4\cdot 9=36
+$$
+
+$$
+81-36=45
+$$
+
+$$
+x=\frac{9\pm\sqrt{45}}{2}
+$$
+
+$$
+\sqrt{45}=3\sqrt{5}
+$$
+
+$$
+x=\frac{9\pm 3\sqrt{5}}{2}
+$$
+
+Only $x=\dfrac{9+3\sqrt5}{2}\approx 7.85$ satisfies both $x\ge 5$ (needed for $x^{2}-6x+5\ge0$) and the domain; the other root fails that sign requirement.
+
+Case 2 ($x^{2}-6x+5<0$): the equation reads $-(x^{2}-6x+5)=3x-4$, i.e.
+
+$$
+x^{2}-3x+1=0
+$$
+
+$$
+3^{2}=9
+$$
+
+$$
+4\cdot 1=4
+$$
+
+$$
+9-4=5
+$$
+
+$$
+x=\frac{3\pm\sqrt{5}}{2}
+$$
+
+Only $x=\dfrac{3+\sqrt5}{2}\approx 2.62$ lies in the required range $1<x<5$ and the domain $x\ge\tfrac{4}{3}$; the other root is below $1$.
+
+The second surviving root is real and domain-legal, yet
+
+$$
+2.62<3
+$$
+
+so it is not true that every real solution is strictly larger than $3$.
+
+So the statement is False.
+
+=== math DEMO MATH 6.H02 A len=1056 blocks=12
+**A.** → True
+
+The claim is a universal "no counterexample" statement on the closed interval $[1,4]$. Critical points of the absolute expressions are $x=1$, $x=4$ and $x=\tfrac{3}{2}$.
+
+On $[1,\tfrac{3}{2}]$: $x^{2}-5x+4\le 0$ and $2x-3\le 0$, so the inequality reads
+
+$$
+-(x^{2}-5x+4)+(3-2x)\le x+6
+$$
+
+Expand the left side:
+
+$$
+-x^{2}+3x-1\le x+6
+$$
+
+Move everything to one side:
+
+$$
+0\le x^{2}-2x+7
+$$
+
+The discriminant of $x^{2}-2x+7$ is
+
+$$
+(-2)^{2}=4
+$$
+
+$$
+4\cdot 7=28
+$$
+
+$$
+4-28=-24
+$$
+
+which is negative, so the right side is always positive; the inequality holds identically on this piece.
+
+On $[\tfrac{3}{2},4]$: $x^{2}-5x+4\le 0$ and $2x-3\ge 0$, so the inequality reads
+
+$$
+-(x^{2}-5x+4)+(2x-3)\le x+6
+$$
+
+Expand the left side:
+
+$$
+-x^{2}+7x-7\le x+6
+$$
+
+Move everything to one side:
+
+$$
+0\le x^{2}-6x+13
+$$
+
+The discriminant of $x^{2}-6x+13$ is
+
+$$
+(-6)^{2}=36
+$$
+
+$$
+4\cdot 13=52
+$$
+
+$$
+36-52=-16
+$$
+
+which is also negative, so this piece likewise holds identically. Hence no point of $[1,4]$ is a counterexample.
+
+So the statement is True.
+
+=== math MATH 12.187 A len=1000 blocks=18
+**A.** → True
+
+Recover each subspecies-conditional positive rate from sensitivity $0.90$ and false-positive rate $0.04$.
+
+Subspecies A (prevalence $0.02$):
+
+$$
+1-0.02=0.98
+$$
+
+$$
+0.04\times 0.98
+$$
+
+$$
+4\times 98=392\qquad 0.04\times 0.98=0.0392
+$$
+
+$$
+0.018+0.0392=0.0572\qquad P(T^{+}\mid S_A)=0.0572
+$$
+
+Subspecies B (prevalence $0.06$):
+
+$$
+1-0.06=0.94
+$$
+
+$$
+0.04\times 0.94
+$$
+
+$$
+4\times 94=376\qquad 0.04\times 0.94=0.0376
+$$
+
+$$
+0.054+0.0376=0.0916\qquad P(T^{+}\mid S_B)=0.0916
+$$
+
+Subspecies C (prevalence $0.15$):
+
+$$
+1-0.15=0.85
+$$
+
+$$
+0.04\times 0.85
+$$
+
+$$
+0.04\times 0.85=0.034\qquad 0.135+0.034=0.169
+$$
+
+$$
+P(T^{+}\mid S_C)=0.169
+$$
+
+Average over the priors $0.60$, $0.25$, $0.15$:
+
+$$
+0.169\times 0.15
+$$
+
+$$
+0.169\times 0.05=0.00845\qquad 0.0169+0.00845=0.02535
+$$
+
+Sum the joints:
+
+$$
+0.03432+0.0229=0.05722\qquad 0.05722+0.02535=0.08257
+$$
+
+$$
+P(T^{+})=0.08257
+$$
+
+Threshold in the claim:
+
+$$
+7\%=0.07\qquad 0.08257-0.07=0.01257
+$$
+
+$$
+0.08257>0.07
+$$
+
+So the statement is True.
+
+=== math DEMO MATH 4.H02 A len=987 blocks=15
+**A.** → False
+
+Begin with the domain of both radicals: $x\ge -1$. Isolate one square root:
+
+$$
+\sqrt{3x+7}=4-\sqrt{x+1}
+$$
+
+The right side must stay nonnegative, which requires $x\le 15$. Square once:
+
+$$
+3x+7=16-8\sqrt{x+1}+(x+1)
+$$
+
+Collect like terms:
+
+$$
+2x-10=-8\sqrt{x+1}
+$$
+
+Divide by $-2$:
+
+$$
+5-x=4\sqrt{x+1}
+$$
+
+which forces the additional restriction $x\le 5$. Square again:
+
+$$
+(5-x)^{2}=16(x+1)
+$$
+
+Expand both sides:
+
+$$
+25-10x+x^{2}=16x+16
+$$
+
+Move everything to one side:
+
+$$
+x^{2}-26x+9=0
+$$
+
+Compute the discriminant:
+
+$$
+26^{2}=676
+$$
+
+$$
+4\cdot 9=36
+$$
+
+$$
+676-36=640
+$$
+
+Apply the quadratic formula:
+
+$$
+x=\frac{26\pm\sqrt{640}}{2}
+$$
+
+$$
+\sqrt{640}=8\sqrt{10}
+$$
+
+$$
+\frac{26}{2}=13
+$$
+
+$$
+\frac{8\sqrt{10}}{2}=4\sqrt{10}
+$$
+
+$$
+x=13\pm 4\sqrt{10}
+$$
+
+Two real candidates appear, but only the smaller one lies in $[-1,5]$ and survives back-substitution. The larger candidate is discarded. So it is not true that both candidates survive.
+
+So the statement is False.
+
+=== math DEMO MATH 8.H01 C len=917 blocks=18
+**C.** → False
+
+The claim asks for a break-even distance $d^{*}$ by solving
+
+$$
+12+0.8d=12+0.8d+5
+$$
+
+$$
+0.8d=0.8d+5
+$$
+
+$$
+0=5
+$$
+
+Check whether that identity can hold:
+
+$$
+0\neq 5
+$$
+
+Equivalently, rewrite the night formula first:
+
+$$
+C_{\mathrm{night}}(d)=12+0.8d+5
+$$
+
+$$
+12+5=17
+$$
+
+$$
+C_{\mathrm{night}}(d)=17+0.8d
+$$
+
+Set equal to day:
+
+$$
+12+0.8d=17+0.8d
+$$
+
+$$
+12=17
+$$
+
+$$
+12\neq 17
+$$
+
+Or look at the constant gap already computed:
+
+$$
+C_{\mathrm{night}}(d)-C_{\mathrm{day}}(d)=5
+$$
+
+$$
+5\neq 0
+$$
+
+Try a concrete candidate such as $d=10$:
+
+$$
+C_{\mathrm{day}}(10)=12+8=20
+$$
+
+$$
+C_{\mathrm{night}}(10)=17+8=25
+$$
+
+$$
+20\neq 25
+$$
+
+Try $d=20$:
+
+$$
+C_{\mathrm{day}}(20)=12+16=28
+$$
+
+$$
+C_{\mathrm{night}}(20)=17+16=33
+$$
+
+$$
+28\neq 33
+$$
+
+Parallel affine tariffs with a positive gap never meet. No real $d^{*}$ exists, and the displayed equation collapses to the absurdity $0=5$.
+
+So the statement is False.

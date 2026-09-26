@@ -1,0 +1,65 @@
+**C.** → True
+
+Differentiate the cubic coefficient by coefficient:
+
+$$
+r(x)=ax^{3}+bx^{2}+cx+d
+$$
+
+$$
+\frac{d}{dx}(ax^{3})=3ax^{2}
+$$
+
+$$
+\frac{d}{dx}(bx^{2})=2bx
+$$
+
+$$
+\frac{d}{dx}(cx)=c\qquad \frac{d}{dx}(d)=0
+$$
+
+$$
+r'(x)=3ax^{2}+2bx+c
+$$
+
+The hypothesis gives two vanishing conditions at $x=2$:
+
+$$
+r(2)=0\qquad r'(2)=0
+$$
+
+A standard factorisation fact: if a polynomial and its first derivative both vanish at $\alpha$, then $(x-\alpha)^{2}$ divides the polynomial. Taking $\alpha=2$:
+
+$$
+(x-2)^{2}\mid r(x)
+$$
+
+Hence $x=2$ is at least a double root.
+
+Concrete illustration with $a=1$, $b=-4$, $c=4$, $d=0$ so $r(x)=x(x-2)^{2}$:
+
+$$
+r(x)=x(x^{2}-4x+4)
+$$
+
+$$
+r(x)=x^{3}-4x^{2}+4x
+$$
+
+$$
+r'(x)=3x^{2}-8x+4
+$$
+
+Evaluate at $x=2$:
+
+$$
+r(2)=8-16+8=0
+$$
+
+$$
+r'(2)=12-16+4=0
+$$
+
+and the factor $(x-2)^{2}$ is visible by construction. The claimed implication holds.
+
+So the statement is True.

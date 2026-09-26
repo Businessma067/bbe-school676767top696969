@@ -1,0 +1,255 @@
+=== DEMO MATH 5.H01 B len=677
+**B.** → True
+
+Keep the page total $m+c=180$ and the revenue $8100$, but replace the colour price by $60$:
+
+$$
+m=180-c
+$$
+
+$$
+35(180-c)+60c=8100
+$$
+
+Compute the constant piece:
+
+$$
+35\cdot 180
+$$
+
+$$
+35\cdot 100=3500
+$$
+
+$$
+35\cdot 80=2800
+$$
+
+$$
+3500+2800=6300
+$$
+
+Distribute:
+
+$$
+6300-35c+60c=8100
+$$
+
+Combine the colour coefficients:
+
+$$
+-35+60=25
+$$
+
+$$
+6300+25c=8100
+$$
+
+Isolate:
+
+$$
+25c=8100-6300
+$$
+
+$$
+8100-6300=1800
+$$
+
+$$
+25c=1800
+$$
+
+$$
+c=\frac{1800}{25}
+$$
+
+$$
+25\cdot 72=1800
+$$
+
+$$
+c=72
+$$
+
+Also recover mono:
+
+$$
+m=180-72=108
+$$
+
+Compare the colour count with the claimed threshold:
+
+$$
+72<75
+$$
+
+the new colour count falls below $75$.
+
+So the statement is True.
+
+=== DEMO MATH 8.H01 A len=789
+**A.** → True
+
+Read the daytime tariff from the stem: a fixed base of EUR $12$ plus EUR $0.8$ per kilometre. Write the base alone:
+
+$$
+0.8\cdot d
+$$
+
+$$
+12+0.8d
+$$
+
+So the daytime bill is
+
+$$
+C_{\mathrm{day}}(d)=12+0.8d
+$$
+
+Spot-check at $d=10$:
+
+$$
+0.8\times 10=8\qquad 12+8=20
+$$
+
+$$
+C_{\mathrm{day}}(10)=20
+$$
+
+Spot-check at $d=20$:
+
+$$
+0.8\times 20
+$$
+
+$$
+0.8\times 10=8\qquad 8+8=16
+$$
+
+$$
+0.8\times 20=16\qquad 12+16=28
+$$
+
+$$
+C_{\mathrm{day}}(20)=28
+$$
+
+Spot-check at $d=5$:
+
+$$
+0.8\times 5=4\qquad 12+4=16
+$$
+
+$$
+C_{\mathrm{day}}(5)=16
+$$
+
+Spot-check at $d=25$:
+
+$$
+0.8\times 25
+$$
+
+$$
+0.8\times 5=4\qquad 16+4=20
+$$
+
+$$
+12+20=32\qquad C_{\mathrm{day}}(25)=32
+$$
+
+Each check equals $12+0.8d$ euros. The claimed daytime formula matches the tariff exactly.
+
+So the statement is True.
+
+=== DEMO MATH 8.H01 D len=837
+**D.** → True
+
+Original daytime bill at $d=20$. First form the kilometre piece by splitting the product:
+
+$$
+0.8\times 20
+$$
+
+$$
+0.8\times 10=8\qquad 0.8\times 10=8
+$$
+
+$$
+8+8=16\qquad 0.8\times 20=16
+$$
+
+$$
+12+16 = 28
+$$
+
+$$
+C_{\mathrm{day}}(20)=28
+$$
+
+Waiving the EUR $12$ base leaves only the kilometre charge:
+
+Saving versus the original daytime tariff:
+
+$$
+28-16
+$$
+
+$$
+28-10=18\qquad 18-6=12
+$$
+
+$$
+28-16=12
+$$
+
+Alternatively, the saving is exactly the waived base fee itself:
+
+$$
+12=12
+$$
+
+Cross-check the arithmetic with a second distance $d=10$ under the same waiver logic (saving still equals the base):
+
+$$
+C_{\mathrm{day}}(10)=12+0.8\times 10
+$$
+
+$$
+0.8\times 10=8\qquad 12+8=20
+$$
+
+$$
+20-8=12
+$$
+
+At every daytime distance the waiver saves exactly EUR $12$, matching the claim for the $20$ km job.
+
+So the statement is True.
+
+=== CASE 6.5.034 A len=325
+**A.** → True
+
+Average inventory is the mean of the opening and closing balances:
+
+$$
+169 + 179 = 348
+$$
+
+$$
+\frac{348}{2} = 174
+$$
+
+Divide cost of sales by that average:
+
+$$
+\frac{674}{174} \approx 3.87
+$$
+
+$$
+3.87 < 6.87
+$$
+
+Inventory turns about 3.87 times a year, which is below the 6.87 claim.
+
+So the statement is True.

@@ -38,39 +38,37 @@ const demoMockFaqs = [
   {
     question: "Is the BBE demo mock exam really free?",
     answer:
-      "Yes. You need a free BBE School account (no credit card) so we can save your attempt, score, and review. Starting the exam itself costs nothing.",
+      "Yes. Make a free BBE School account (no card) so we can keep your attempt and review. Sitting the exam costs nothing.",
   },
   {
     question: "How close is this to the real WU Vienna BBE entrance exam?",
     answer:
-      "It mirrors the real format: Economics & Business, English, and Mathematics under a 2-hour time limit, with partial-credit (wi2) scoring like the official Teilpunktesystem. The most recent WU exam had 34 questions; this demo uses the same subject mix and pacing pressure.",
+      "Same three blocks — Economics & Business, English, Math — and a two-hour clock. Scoring uses the same partial-credit idea as WU’s Teilpunktesystem (wi2). Recent WU papers ran 34 questions; this demo matches that mix and the rush of exam day.",
   },
   {
     question: "How many questions are in the free demo mock?",
-    answer:
-      "34 questions for about 159 points: 10 Economics, 11 English, and 13 Math.",
+    answer: "34 questions, about 159 points: 10 Economics, 11 English, 13 Math.",
   },
   {
     question: "Do I have to use the timer?",
     answer:
-      "No. You can start with a 2-hour timer (auto-submit at zero) or without a timer if you want to focus on accuracy first. Timed mode is the better diagnostic of exam-day pacing.",
+      "No. Start with a two-hour timer (it submits at zero) or leave the clock off if you want to work carefully first. Timed is closer to how the real sitting feels.",
   },
   {
     question: "Will I see explanations after I finish?",
     answer:
-      "Yes. When you submit, you get your score and can open a full review of each task, including worked solutions where available.",
+      "Yes. After you submit you get a score, then you can open every task again with the worked solutions.",
   },
   {
     question: "What should I do after the demo mock?",
     answer:
-      "Use your weak sections to guide practice. Start with the free Demo Practice course for Economics, Math, and English, then unlock full mock exams and the Full Course when you are ready for volume.",
+      "Practise the sections that hurt. Free Demo Practice covers Economics, Math, and English. When you want more timed papers and the full bank, the Full Course and mock catalog are there.",
   },
 ];
 
 const pageTitle = "Free BBE Mock Exam Online | WU Vienna Entrance Exam Practice | BBE School";
 const pageDescription =
-  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account — no credit card. Start your diagnostic now.";
-
+  "Free full-length WU BBE mock online: 34 questions, 2 hours, partial-credit scoring. Free account, no credit card — see where you stand.";
 export const Route = createFileRoute("/demo-mock")({
   head: () => ({
     scripts: [
@@ -126,41 +124,40 @@ export const Route = createFileRoute("/demo-mock")({
 
 const benefits = [
   {
-    title: "Real exam structure",
-    body: "Economics, English, and Math in one sitting — the same subject order and time pressure as exam day.",
+    title: "One sitting, three subjects",
+    body: "Economics, English, and Math back-to-back — the same grind you get on exam day.",
   },
   {
-    title: "Official-style scoring",
-    body: "Partial-credit wi2 scoring mirrors the Teilpunktesystem, so your percentage means something.",
+    title: "Scoring that matches WU",
+    body: "Partial credit (wi2), like the official Teilpunktesystem. Your % is not a vanity number.",
   },
   {
-    title: "Hard diagnostic, not a toy",
-    body: "Built from high-difficulty practice banks so you see where your score actually leaks.",
+    title: "Actually hard",
+    body: "Tasks come from the tough end of our banks. Soft mocks hide weak spots; this one does not.",
   },
   {
-    title: "Review with explanations",
-    body: "After you submit, reopen every task, check your judgments, and study the solutions.",
+    title: "Full review afterwards",
+    body: "Open every question again, see what you marked, and work through the solutions.",
   },
 ];
 
 const steps = [
   {
     n: "1",
-    title: "Create a free account",
-    body: "Email signup or Google — no payment details. We only need an account to save your attempt.",
+    title: "Make a free account",
+    body: "Email or Google. No card. We need a login so your attempt does not vanish.",
   },
   {
     n: "2",
-    title: "Choose timer and answer mode",
-    body: "Run it timed (2 hours) for a true diagnostic, or untimed. Use the digital answer sheet or click-through mode.",
+    title: "Pick timer and how you answer",
+    body: "Two hours on the clock, or no clock. Digital answer sheet if you want transfer practice — or click answers as you go.",
   },
   {
     n: "3",
-    title: "Finish, score, and review",
-    body: "See points earned vs total, then open the full review to target weak topics before you buy anything.",
+    title: "Submit, see the score, dig in",
+    body: "Points earned vs total, then a full review. Figure out what to practise before you spend on a course.",
   },
 ];
-
 export function DemoMockPage() {
   const navigate = useNavigate();
   const authGate = useAuthGate();
@@ -278,23 +275,22 @@ export function DemoMockPage() {
           <div className="relative mx-auto grid max-w-6xl gap-10 px-6 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-12 lg:px-8 lg:py-20">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-caramel-deep">
-                Free WU BBE diagnostic
+                Free WU BBE practice exam
               </p>
               <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
                 Free BBE mock exam online
               </h1>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure,
-                same 2-hour window, same partial-credit scoring. Free with an account; no credit
-                card.
+                Sit a full WU Vienna BBE-style paper for free: three subjects, two hours, partial
+                credit. Account only — no card, no paywall to start.
               </p>
 
               <ul className="mt-6 space-y-2 text-sm text-foreground">
                 {[
                   "34 questions · 159 points · 2 hours",
-                  "Economics, English, and Mathematics in one sitting",
-                  "Timed or untimed · digital answer sheet optional",
-                  "Score + full review after you submit",
+                  "Economics, English, and Math in one go",
+                  "With or without a timer · answer sheet optional",
+                  "Score and full review when you submit",
                 ].map((line) => (
                   <li key={line} className="flex items-start gap-2.5">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-caramel-deep" aria-hidden />
@@ -336,11 +332,11 @@ export function DemoMockPage() {
                   to={BBE_PRACTICE_ROUTES.demo}
                   className="inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold text-caramel-deep underline-offset-4 hover:underline"
                 >
-                  Or try subject practice first
+                  Or warm up with subject practice
                 </LocalizedLink>
               </div>
               <p className="mt-3 text-xs text-muted-foreground">
-                Free account required to save progress — no credit card, no purchase.
+                Free account to save your attempt — still no card, still no purchase.
               </p>
             </div>
 
@@ -380,11 +376,11 @@ export function DemoMockPage() {
         <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
           <div className="max-w-2xl">
             <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-              What&apos;s inside the free demo mock
+              What&apos;s in this free mock
             </h2>
             <p className="mt-3 text-muted-foreground">
-              One sitting that mirrors how the WU BBE entrance exam is built — three sections,
-              partial credit, and exam-day pacing.
+              Three sections, partial credit, and the same kind of clock stress as the real WU BBE
+              sitting.
             </p>
           </div>
 
@@ -394,19 +390,19 @@ export function DemoMockPage() {
                 subject: "Economics & Business",
                 count: MOCK_EXAM_DEMO_SECTION_COUNTS.economics,
                 detail:
-                  "True/False statement clusters under shared stems — definitions, markets, and accounting traps.",
+                  "True/false packs under one stem — markets, definitions, and balance-sheet traps that trip people up.",
               },
               {
                 subject: "English",
                 count: MOCK_EXAM_DEMO_SECTION_COUNTS.english,
                 detail:
-                  "Reading, vocabulary, and grammar tasks in the same mix style as the written exam.",
+                  "Reading, vocab, and grammar in the same mix you get on the written paper.",
               },
               {
                 subject: "Mathematics",
                 count: MOCK_EXAM_DEMO_SECTION_COUNTS.math,
                 detail:
-                  "School-leaving depth: algebra, functions, probability, and calculation under time pressure.",
+                  "Algebra, functions, probability — Matura depth, with the clock running.",
               },
             ].map((block) => (
               <div key={block.subject} className="border-t-2 border-caramel-deep pt-5">
@@ -425,11 +421,11 @@ export function DemoMockPage() {
           <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
             <div className="max-w-2xl">
               <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                Why take this diagnostic before you buy a course
+                Why sit this before you buy a course
               </h2>
               <p className="mt-3 text-muted-foreground">
-                Ads and course pages can promise anything. Sitting a hard mock tells you — in points —
-                where you actually stand.
+                Landing pages talk. A hard mock answers — in points — what you can actually do under
+                time.
               </p>
             </div>
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
@@ -449,7 +445,7 @@ export function DemoMockPage() {
         {/* How it works */}
         <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
           <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-            How the free demo exam works
+            How it works
           </h2>
           <ol className="mt-10 grid gap-8 sm:grid-cols-3">
             {steps.map((s) => (
@@ -491,14 +487,14 @@ export function DemoMockPage() {
                   onClick={() => authGate.setAuthOpen(true)}
                   className="mt-4 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
                 >
-                  Sign in to continue
+                  Sign in
                 </button>
               </div>
             ) : completed.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
                 <Trophy className="mx-auto mb-3 h-6 w-6 text-taupe" />
                 <p className="text-sm text-muted-foreground">
-                  No demo attempts yet. Finish the mock and your score will show up here.
+                  Nothing here yet. Finish the mock and your score lands on this page.
                 </p>
               </div>
             ) : (
@@ -552,7 +548,7 @@ export function DemoMockPage() {
                 After the mock
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Use the diagnostic as a baseline, then practise the sections that cost you points.
+                Treat the score as a starting line. Drill the bits that cost you points.
               </p>
               <ul className="mt-6 space-y-4">
                 <li>
@@ -566,7 +562,7 @@ export function DemoMockPage() {
                         Free Demo Practice
                       </span>
                       <span className="mt-1 block text-sm text-muted-foreground">
-                        50+ baseline cases in Economics, Math, and English with explanations.
+                        50+ cases in Economics, Math, and English — with explanations.
                       </span>
                     </span>
                   </LocalizedLink>
@@ -582,7 +578,7 @@ export function DemoMockPage() {
                         BBE entrance exam guide
                       </span>
                       <span className="mt-1 block text-sm text-muted-foreground">
-                        Format, topics, scoring, and how the WU selection procedure works.
+                        Format, topics, scoring, and how WU picks seats.
                       </span>
                     </span>
                   </LocalizedLink>
@@ -595,10 +591,10 @@ export function DemoMockPage() {
                     <Trophy className="mt-0.5 h-5 w-5 shrink-0 text-caramel-deep" aria-hidden />
                     <span>
                       <span className="font-display font-semibold group-hover:text-caramel-deep">
-                        Full course &amp; mock catalog
+                        Full course &amp; more mocks
                       </span>
                       <span className="mt-1 block text-sm text-muted-foreground">
-                        Unlock volume practice and additional timed mocks when you are ready.
+                        Bigger banks and extra timed papers when you want more reps.
                       </span>
                     </span>
                   </LocalizedLink>
@@ -620,10 +616,10 @@ export function DemoMockPage() {
           <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-12 sm:flex-row sm:items-center lg:px-8">
             <div>
               <h2 className="font-display text-2xl font-bold tracking-tight">
-                Ready for your baseline score?
+                Want a real score under the clock?
               </h2>
               <p className="mt-2 max-w-lg text-sm text-background/75">
-                Start the free BBE mock exam — 34 questions, 2 hours, full review after submit.
+                Free BBE mock — 34 questions, two hours, review after you submit.
               </p>
             </div>
             <button
@@ -643,7 +639,7 @@ export function DemoMockPage() {
           <DialogHeader>
             <DialogTitle className="font-display text-xl">{DEMO.title}</DialogTitle>
             <DialogDescription>
-              Full-length simulation, {DEMO.pointsTotal} points total.
+              Full paper, {DEMO.pointsTotal} points in total.
             </DialogDescription>
           </DialogHeader>
 
@@ -671,8 +667,7 @@ export function DemoMockPage() {
           </div>
 
           <p className="text-xs text-taupe">
-            If you choose the timed option, the exam is limited to 2 hours and submits automatically
-            when the timer reaches zero.
+            Timed mode: two hours on the clock, then automatic submit at zero.
           </p>
 
           <ExamStartAnswerMode withAnswerSheet={withAnswerSheet} onChange={setWithAnswerSheet} />
@@ -752,7 +747,7 @@ function ExamCard({
       )}
       {inProgress && (
         <p className="mt-2 text-xs font-semibold text-blue-600 dark:text-blue-400">
-          In progress — you can resume where you left off
+          In progress — pick up where you stopped
         </p>
       )}
       {inProgress ? (

@@ -1,0 +1,77 @@
+**E.** → True
+
+Split the absolute value at the kink $x=1$.
+
+For $x\ge 1$: $|x-1|=x-1$, so the equation becomes $\sqrt{x+3}=5-x$, with the extra restriction $x\le 5$. Square:
+
+$$
+x+3=(5-x)^{2}
+$$
+
+$$
+x+3=25-10x+x^{2}
+$$
+
+$$
+x^{2}-11x+22=0
+$$
+
+$$
+(-11)^{2}=121
+$$
+
+$$
+4\cdot 22=88
+$$
+
+$$
+121-88=33
+$$
+
+$$
+x=\frac{11\pm\sqrt{33}}{2}
+$$
+
+Only the minus branch lies in $[1,5]$:
+
+$$
+x=\frac{11-\sqrt{33}}{2}
+$$
+
+$$
+\frac{11-\sqrt{33}}{2}\approx 2.63
+$$
+
+$$
+2.63>2
+$$
+
+For $-3\le x<1$: $|x-1|=1-x$, so the equation becomes $\sqrt{x+3}=3+x$. Square:
+
+$$
+x+3=(3+x)^{2}
+$$
+
+$$
+x+3=9+6x+x^{2}
+$$
+
+$$
+x^{2}+5x+6=0
+$$
+
+$$
+(x+2)(x+3)=0
+$$
+
+$$
+x=-2
+$$
+
+$$
+x=-3
+$$
+
+Both are negative and both satisfy $3+x\ge 0$, so both survive back-substitution. So there is at least one negative solution and at least one solution greater than $2$.
+
+So the statement is True.

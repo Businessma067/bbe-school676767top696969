@@ -241,124 +241,122 @@ export const uiExtraDe: Record<string, string> = {
   // demo-mock
   "Free BBE Mock Exam Online | WU Vienna Entrance Exam Practice | BBE School":
     "Kostenlose BBE-Probeprüfung online | WU Wien Aufnahmeprüfung üben | BBE School",
-  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account — no credit card. Start your diagnostic now.":
-    "Kostenlose vollständige WU-BBE-Probeprüfung online: 34 Fragen, 2 Stunden, wi2-Bewertung. Kostenloses Konto — keine Kreditkarte. Starte jetzt deine Diagnose.",
+  "Free full-length WU BBE mock online: 34 questions, 2 hours, partial-credit scoring. Free account, no credit card — see where you stand.":
+    "Kostenlose vollständige WU-BBE-Probeprüfung online: 34 Fragen, 2 Stunden, Teilpunkte-Bewertung. Kostenloses Konto, keine Kreditkarte — sieh, wo du stehst.",
   "Demo Mock Exam": "Demo-Probeprüfung",
   "Free practice →": "Kostenlose Übung →",
-  "Free WU BBE diagnostic": "Kostenlose WU-BBE-Diagnose",
+  "Free WU BBE practice exam": "Kostenlose WU-BBE-Übungsprüfung",
   "Free BBE mock exam online": "Kostenlose BBE-Probeprüfung online",
-  "A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure, same 2-hour window, same partial-credit scoring. Free with an account; no credit card.":
-    "Eine vollständige, anspruchsvolle Diagnose der WU-Wien-BBE-Aufnahmeprüfung — gleicher Aufbau, gleiches 2-Stunden-Fenster, gleiche Teilpunktebewertung. Kostenlos mit Konto; keine Kreditkarte.",
+  "Sit a full WU Vienna BBE-style paper for free: three subjects, two hours, partial credit. Account only — no card, no paywall to start.":
+    "Schreib eine volle WU-Wien-BBE-Probeprüfung kostenlos: drei Fächer, zwei Stunden, Teilpunkte. Nur Konto — keine Karte, kein Paywall zum Start.",
   "34 questions · 159 points · 2 hours": "34 Fragen · 159 Punkte · 2 Stunden",
-  "Economics, English, and Mathematics in one sitting":
-    "Wirtschaft, Englisch und Mathematik in einer Sitzung",
-  "Timed or untimed · digital answer sheet optional":
-    "Mit oder ohne Timer · digitaler Antwortbogen optional",
-  "Score + full review after you submit": "Punktzahl + vollständige Auswertung nach Abgabe",
+  "Economics, English, and Math in one go": "Wirtschaft, Englisch und Mathe in einem Rutsch",
+  "With or without a timer · answer sheet optional":
+    "Mit oder ohne Timer · Antwortbogen optional",
+  "Score and full review when you submit": "Punktzahl und volle Auswertung nach Abgabe",
   "Resume your demo exam": "Demo-Prüfung fortsetzen",
   "Start over…": "Neu starten…",
   "Retake free demo exam": "Kostenlose Demo-Prüfung wiederholen",
   "Start free demo exam": "Kostenlose Demo-Prüfung starten",
-  "Or try subject practice first": "Oder zuerst Fach-Übungen ausprobieren",
-  "Free account required to save progress — no credit card, no purchase.":
-    "Kostenloses Konto nötig, um den Fortschritt zu speichern — keine Kreditkarte, kein Kauf.",
+  "Or warm up with subject practice": "Oder zuerst mit Fach-Übungen aufwärmen",
+  "Free account to save your attempt — still no card, still no purchase.":
+    "Kostenloses Konto, um den Versuch zu speichern — weiterhin keine Karte, kein Kauf.",
   "Questions": "Fragen",
   "Time limit": "Zeitlimit",
   "Total points": "Gesamtpunkte",
   "Price": "Preis",
   "Free": "Kostenlos",
-  "What's inside the free demo mock": "Was in der kostenlosen Demo-Probeprüfung steckt",
-  "One sitting that mirrors how the WU BBE entrance exam is built — three sections, partial credit, and exam-day pacing.":
-    "Eine Sitzung, die den Aufbau der WU-BBE-Aufnahmeprüfung spiegelt — drei Teile, Teilpunkte und Prüfungstag-Tempo.",
+  "What's in this free mock": "Was in dieser kostenlosen Probe steckt",
+  "Three sections, partial credit, and the same kind of clock stress as the real WU BBE sitting.":
+    "Drei Teile, Teilpunkte und derselbe Zeitdruck wie bei der echten WU-BBE-Prüfung.",
   "Economics & Business": "Wirtschaft & Business",
-  "True/False statement clusters under shared stems — definitions, markets, and accounting traps.":
-    "Richtig/Falsch-Aussagen unter gemeinsamen Stämmen — Definitionen, Märkte und Buchhaltungsfallen.",
-  "Reading, vocabulary, and grammar tasks in the same mix style as the written exam.":
-    "Lese-, Wortschatz- und Grammatikaufgaben im gleichen Mix wie in der schriftlichen Prüfung.",
-  "School-leaving depth: algebra, functions, probability, and calculation under time pressure.":
-    "Matura-Niveau: Algebra, Funktionen, Wahrscheinlichkeit und Rechnen unter Zeitdruck.",
-  "Why take this diagnostic before you buy a course":
-    "Warum diese Diagnose machen, bevor du einen Kurs kaufst",
-  "Ads and course pages can promise anything. Sitting a hard mock tells you — in points — where you actually stand.":
-    "Werbung und Kursseiten können alles versprechen. Eine anspruchsvolle Probeprüfung zeigt dir — in Punkten — wo du wirklich stehst.",
-  "Real exam structure": "Echter Prüfungsaufbau",
-  "Economics, English, and Math in one sitting — the same subject order and time pressure as exam day.":
-    "Wirtschaft, Englisch und Mathe in einer Sitzung — gleiche Fachreihenfolge und Zeitdruck wie am Prüfungstag.",
-  "Official-style scoring": "Bewertung im Prüfungsstil",
-  "Partial-credit wi2 scoring mirrors the Teilpunktesystem, so your percentage means something.":
-    "Teilpunkte-Bewertung nach wi2 spiegelt das Teilpunktesystem — dein Prozentsatz hat Aussagekraft.",
-  "Hard diagnostic, not a toy": "Harte Diagnose, kein Spielzeug",
-  "Built from high-difficulty practice banks so you see where your score actually leaks.":
-    "Aus schwierigen Übungsbanken gebaut, damit du siehst, wo wirklich Punkte verloren gehen.",
-  "Review with explanations": "Auswertung mit Erklärungen",
-  "After you submit, reopen every task, check your judgments, and study the solutions.":
-    "Nach der Abgabe jede Aufgabe erneut öffnen, Urteile prüfen und Lösungen nacharbeiten.",
-  "How the free demo exam works": "So funktioniert die kostenlose Demo-Prüfung",
-  "Create a free account": "Kostenloses Konto anlegen",
-  "Email signup or Google — no payment details. We only need an account to save your attempt.":
-    "Per E-Mail oder Google — keine Zahlungsdaten. Wir brauchen nur ein Konto, um deinen Versuch zu speichern.",
-  "Choose timer and answer mode": "Timer und Antwortmodus wählen",
-  "Run it timed (2 hours) for a true diagnostic, or untimed. Use the digital answer sheet or click-through mode.":
-    "Mit Timer (2 Stunden) für eine echte Diagnose, oder ohne Timer. Digitaler Antwortbogen oder Klick-Modus.",
-  "Finish, score, and review": "Abschließen, auswerten und nacharbeiten",
-  "See points earned vs total, then open the full review to target weak topics before you buy anything.":
-    "Erreichte vs. mögliche Punkte sehen, dann die volle Auswertung öffnen und Schwächen gezielt üben — bevor du etwas kaufst.",
+  "True/false packs under one stem — markets, definitions, and balance-sheet traps that trip people up.":
+    "Richtig/Falsch-Pakete unter einem Stamm — Märkte, Definitionen und Bilanzfallen, an denen viele scheitern.",
+  "Reading, vocab, and grammar in the same mix you get on the written paper.":
+    "Lesen, Wortschatz und Grammatik im gleichen Mix wie auf dem schriftlichen Blatt.",
+  "Algebra, functions, probability — Matura depth, with the clock running.":
+    "Algebra, Funktionen, Wahrscheinlichkeit — Matura-Niveau, mit laufender Uhr.",
+  "Why sit this before you buy a course": "Warum das schreiben, bevor du einen Kurs kaufst",
+  "Landing pages talk. A hard mock answers — in points — what you can actually do under time.":
+    "Landingpages reden. Eine harte Probe antwortet — in Punkten — was du unter Zeit wirklich kannst.",
+  "One sitting, three subjects": "Eine Sitzung, drei Fächer",
+  "Economics, English, and Math back-to-back — the same grind you get on exam day.":
+    "Wirtschaft, Englisch und Mathe hintereinander — derselbe Grind wie am Prüfungstag.",
+  "Scoring that matches WU": "Bewertung wie an der WU",
+  "Partial credit (wi2), like the official Teilpunktesystem. Your % is not a vanity number.":
+    "Teilpunkte (wi2), wie beim offiziellen Teilpunktesystem. Dein % ist keine Show-Zahl.",
+  "Actually hard": "Wirklich schwer",
+  "Tasks come from the tough end of our banks. Soft mocks hide weak spots; this one does not.":
+    "Aufgaben aus dem harten Ende unserer Banken. Weiche Mocks verstecken Schwächen — diese nicht.",
+  "Full review afterwards": "Volle Auswertung danach",
+  "Open every question again, see what you marked, and work through the solutions.":
+    "Jede Frage wieder öffnen, Markierungen sehen und Lösungen durchgehen.",
+  "How it works": "So läuft's",
+  "Make a free account": "Kostenloses Konto anlegen",
+  "Email or Google. No card. We need a login so your attempt does not vanish.":
+    "E-Mail oder Google. Keine Karte. Wir brauchen Login, damit dein Versuch nicht verschwindet.",
+  "Pick timer and how you answer": "Timer und Antwortmodus wählen",
+  "Two hours on the clock, or no clock. Digital answer sheet if you want transfer practice — or click answers as you go.":
+    "Zwei Stunden auf der Uhr, oder keine Uhr. Digitaler Antwortbogen für Übertragungsübung — oder Antworten direkt anklicken.",
+  "Submit, see the score, dig in": "Abgeben, Punktzahl sehen, nacharbeiten",
+  "Points earned vs total, then a full review. Figure out what to practise before you spend on a course.":
+    "Erreichte vs. mögliche Punkte, dann volle Auswertung. Kläre, was du üben sollst — bevor du für einen Kurs zahlst.",
   "Resume exam": "Prüfung fortsetzen",
   "Retake demo exam": "Demo-Prüfung wiederholen",
   "Your demo results": "Deine Demo-Ergebnisse",
   "Loading your results…": "Ergebnisse werden geladen…",
   "Sign in to start the demo mock and see your results here.":
-    "Melde dich an, um die Demo-Probeprüfung zu starten und hier deine Ergebnisse zu sehen.",
-  "No demo attempts yet. Finish the mock and your score will show up here.":
-    "Noch keine Demo-Versuche. Schließe die Probeprüfung ab, dann erscheint dein Ergebnis hier.",
-  "After the mock": "Nach der Probeprüfung",
-  "Use the diagnostic as a baseline, then practise the sections that cost you points.":
-    "Nutze die Diagnose als Ausgangswert und übe danach die Teile, die Punkte gekostet haben.",
+    "Melde dich an, um die Demo-Probe zu starten und hier Ergebnisse zu sehen.",
+  "Sign in": "Anmelden",
+  "Nothing here yet. Finish the mock and your score lands on this page.":
+    "Hier ist noch nichts. Schließ die Probe ab — dann landet dein Ergebnis auf dieser Seite.",
+  "After the mock": "Nach der Probe",
+  "Treat the score as a starting line. Drill the bits that cost you points.":
+    "Nimm die Punktzahl als Startlinie. Drill die Teile, die Punkte gekostet haben.",
   "Free Demo Practice": "Kostenlose Demo-Praxis",
-  "50+ baseline cases in Economics, Math, and English with explanations.":
-    "50+ Basis-Fälle in Wirtschaft, Mathe und Englisch mit Erklärungen.",
+  "50+ cases in Economics, Math, and English — with explanations.":
+    "50+ Fälle in Wirtschaft, Mathe und Englisch — mit Erklärungen.",
   "BBE entrance exam guide": "Leitfaden zur BBE-Aufnahmeprüfung",
-  "Format, topics, scoring, and how the WU selection procedure works.":
-    "Format, Themen, Bewertung und wie das WU-Auswahlverfahren funktioniert.",
-  "Full course & mock catalog": "Vollkurs & Probeprüfungs-Katalog",
-  "Unlock volume practice and additional timed mocks when you are ready.":
-    "Schalte Volumen-Übung und weitere timed Mocks frei, wenn du soweit bist.",
+  "Format, topics, scoring, and how WU picks seats.":
+    "Format, Themen, Bewertung und wie die WU Plätze vergibt.",
+  "Full course & more mocks": "Vollkurs & mehr Proben",
+  "Bigger banks and extra timed papers when you want more reps.":
+    "Größere Banken und weitere timed Papers, wenn du mehr Wiederholungen willst.",
   "Frequently asked questions": "Häufig gestellte Fragen",
-  "Is the BBE demo mock exam really free?": "Ist die BBE-Demo-Probeprüfung wirklich kostenlos?",
-  "Yes. You need a free BBE School account (no credit card) so we can save your attempt, score, and review. Starting the exam itself costs nothing.":
-    "Ja. Du brauchst ein kostenloses BBE-School-Konto (keine Kreditkarte), damit wir Versuch, Punktzahl und Auswertung speichern können. Der Start der Prüfung selbst kostet nichts.",
+  "Is the BBE demo mock exam really free?": "Ist die BBE-Demo-Probe wirklich kostenlos?",
+  "Yes. Make a free BBE School account (no card) so we can keep your attempt and review. Sitting the exam costs nothing.":
+    "Ja. Leg ein kostenloses BBE-School-Konto an (keine Karte), damit wir Versuch und Auswertung speichern. Die Prüfung selbst kostet nichts.",
   "How close is this to the real WU Vienna BBE entrance exam?":
     "Wie nah ist das an der echten WU-Wien-BBE-Aufnahmeprüfung?",
-  "It mirrors the real format: Economics & Business, English, and Mathematics under a 2-hour time limit, with partial-credit (wi2) scoring like the official Teilpunktesystem. The most recent WU exam had 34 questions; this demo uses the same subject mix and pacing pressure.":
-    "Es spiegelt das echte Format: Wirtschaft & Business, Englisch und Mathematik unter einem 2-Stunden-Limit, mit Teilpunkte-Bewertung (wi2) wie beim offiziellen Teilpunktesystem. Die letzte WU-Prüfung hatte 34 Fragen; diese Demo nutzt denselben Fachmix und dasselbe Tempo.",
+  "Same three blocks — Economics & Business, English, Math — and a two-hour clock. Scoring uses the same partial-credit idea as WU’s Teilpunktesystem (wi2). Recent WU papers ran 34 questions; this demo matches that mix and the rush of exam day.":
+    "Dieselben drei Blöcke — Wirtschaft & Business, Englisch, Mathe — und eine Zwei-Stunden-Uhr. Bewertung mit denselben Teilpunkte-Ideen wie beim WU-Teilpunktesystem (wi2). Aktuelle WU-Papiere hatten 34 Fragen; diese Demo trifft denselben Mix und den Prüfungstag-Druck.",
   "How many questions are in the free demo mock?":
-    "Wie viele Fragen hat die kostenlose Demo-Probeprüfung?",
-  "34 questions for about 159 points: 10 Economics, 11 English, and 13 Math.":
-    "34 Fragen für etwa 159 Punkte: 10 Wirtschaft, 11 Englisch und 13 Mathe.",
+    "Wie viele Fragen hat die kostenlose Demo-Probe?",
+  "34 questions, about 159 points: 10 Economics, 11 English, 13 Math.":
+    "34 Fragen, etwa 159 Punkte: 10 Wirtschaft, 11 Englisch, 13 Mathe.",
   "Do I have to use the timer?": "Muss ich den Timer verwenden?",
-  "No. You can start with a 2-hour timer (auto-submit at zero) or without a timer if you want to focus on accuracy first. Timed mode is the better diagnostic of exam-day pacing.":
-    "Nein. Du kannst mit 2-Stunden-Timer starten (automatische Abgabe bei null) oder ohne Timer, wenn du zuerst auf Genauigkeit achten willst. Der Timed-Modus ist die bessere Diagnose für Prüfungstag-Tempo.",
+  "No. Start with a two-hour timer (it submits at zero) or leave the clock off if you want to work carefully first. Timed is closer to how the real sitting feels.":
+    "Nein. Starte mit Zwei-Stunden-Timer (Abgabe bei null) oder lass die Uhr aus, wenn du zuerst genau arbeiten willst. Mit Timer fühlt es sich näher an der echten Sitzung an.",
   "Will I see explanations after I finish?": "Sehe ich nach dem Abschluss Erklärungen?",
-  "Yes. When you submit, you get your score and can open a full review of each task, including worked solutions where available.":
-    "Ja. Nach der Abgabe siehst du deine Punktzahl und kannst jede Aufgabe mit Lösungen (wo verfügbar) vollständig nacharbeiten.",
-  "What should I do after the demo mock?": "Was sollte ich nach der Demo-Probeprüfung tun?",
-  "Use your weak sections to guide practice. Start with the free Demo Practice course for Economics, Math, and English, then unlock full mock exams and the Full Course when you are ready for volume.":
-    "Lass deine schwachen Teile die Übung leiten. Starte mit dem kostenlosen Demo-Practice-Kurs für Wirtschaft, Mathe und Englisch, und schalte später volle Probeprüfungen und den Full Course frei.",
-  "Ready for your baseline score?": "Bereit für deinen Ausgangswert?",
-  "Start the free BBE mock exam — 34 questions, 2 hours, full review after submit.":
-    "Starte die kostenlose BBE-Probeprüfung — 34 Fragen, 2 Stunden, volle Auswertung nach Abgabe.",
-  "If you choose the timed option, the exam is limited to 2 hours and submits automatically when the timer reaches zero.":
-    "Mit Timer ist die Prüfung auf 2 Stunden begrenzt und wird automatisch abgegeben, wenn der Timer null erreicht.",
+  "Yes. After you submit you get a score, then you can open every task again with the worked solutions.":
+    "Ja. Nach der Abgabe kommt die Punktzahl, dann kannst du jede Aufgabe mit den ausgearbeiteten Lösungen wieder öffnen.",
+  "What should I do after the demo mock?": "Was sollte ich nach der Demo-Probe tun?",
+  "Practise the sections that hurt. Free Demo Practice covers Economics, Math, and English. When you want more timed papers and the full bank, the Full Course and mock catalog are there.":
+    "Übe die Teile, die wehtun. Kostenlose Demo-Praxis deckt Wirtschaft, Mathe und Englisch ab. Willst du mehr timed Papers und die volle Bank, gibt es Full Course und den Mock-Katalog.",
+  "Want a real score under the clock?": "Willst du eine echte Punktzahl unter der Uhr?",
+  "Free BBE mock — 34 questions, two hours, review after you submit.":
+    "Kostenlose BBE-Probe — 34 Fragen, zwei Stunden, Auswertung nach Abgabe.",
+  "Timed mode: two hours on the clock, then automatic submit at zero.":
+    "Timed-Modus: zwei Stunden auf der Uhr, dann automatische Abgabe bei null.",
   "Start with Timer (2:00:00)": "Mit Timer starten (2:00:00)",
   "Start without Timer": "Ohne Timer starten",
-  "In progress — you can resume where you left off":
-    "In Bearbeitung — du kannst dort weitermachen, wo du aufgehört hast",
+  "In progress — pick up where you stopped": "In Bearbeitung — dort weitermachen, wo du gestoppt hast",
   "Resume Exam": "Prüfung fortsetzen",
   "Retake Exam": "Prüfung wiederholen",
   "Start Exam": "Prüfung starten",
   "Free Demo Mock Exam": "Kostenlose Demo-Probeprüfung",
+  "Full paper,": "Volles Paper,",
 };
-
 export const uiExtraUk: Record<string, string> = {
   "Choose a subject to begin your free demo practice.":
     "Обери предмет, щоб розпочати безкоштовну демо-практику.",
@@ -590,120 +588,122 @@ export const uiExtraUk: Record<string, string> = {
   // demo-mock
   "Free BBE Mock Exam Online | WU Vienna Entrance Exam Practice | BBE School":
     "Безкоштовний пробний іспит BBE онлайн | Підготовка до вступного іспиту WU Відень | BBE School",
-  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account — no credit card. Start your diagnostic now.":
-    "Пройдіть безкоштовний повноформатний пробний іспит WU BBE онлайн: 34 питання, 2 години, оцінювання wi2. Безкоштовний акаунт — без кредитної картки. Почніть діагностику зараз.",
+  "Free full-length WU BBE mock online: 34 questions, 2 hours, partial-credit scoring. Free account, no credit card — see where you stand.":
+    "Безкоштовний повноформатний пробний іспит WU BBE онлайн: 34 питання, 2 години, оцінювання з частковими балами. Безкоштовний акаунт, без кредитної картки — подивіться, де ви стоїте.",
   "Demo Mock Exam": "Демо пробний іспит",
   "Free practice →": "Безкоштовна практика →",
-  "Free WU BBE diagnostic": "Безкоштовна діагностика WU BBE",
+  "Free WU BBE practice exam": "Безкоштовна практична перевірка WU BBE",
   "Free BBE mock exam online": "Безкоштовний пробний іспит BBE онлайн",
-  "A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure, same 2-hour window, same partial-credit scoring. Free with an account; no credit card.":
-    "Повноформатна складна діагностика вступного іспиту WU Відень BBE — та сама структура, те саме 2-годинне вікно, те саме оцінювання з частковими балами. Безкоштовно з акаунтом; без кредитної картки.",
+  "Sit a full WU Vienna BBE-style paper for free: three subjects, two hours, partial credit. Account only — no card, no paywall to start.":
+    "Пройдіть повний папір у стилі WU Відень BBE безкоштовно: три предмети, дві години, часткові бали. Лише акаунт — без картки, без paywall на старті.",
   "34 questions · 159 points · 2 hours": "34 питання · 159 балів · 2 години",
-  "Economics, English, and Mathematics in one sitting":
+  "Economics, English, and Math in one go":
     "Економіка, англійська та математика за один підхід",
-  "Timed or untimed · digital answer sheet optional":
-    "З таймером або без · цифровий бланк відповідей за бажанням",
-  "Score + full review after you submit": "Бали + повний розбір після здачі",
+  "With or without a timer · answer sheet optional":
+    "З таймером або без · бланк відповідей за бажанням",
+  "Score and full review when you submit": "Бали та повний розбір після здачі",
   "Resume your demo exam": "Продовжити демо-іспит",
   "Start over…": "Почати знову…",
   "Retake free demo exam": "Пройти безкоштовний демо-іспит знову",
   "Start free demo exam": "Почати безкоштовний демо-іспит",
-  "Or try subject practice first": "Або спочатку спробуйте практику за предметами",
-  "Free account required to save progress — no credit card, no purchase.":
-    "Потрібен безкоштовний акаунт, щоб зберегти прогрес — без кредитної картки, без покупки.",
+  "Or warm up with subject practice": "Або спочатку розігрійтесь практикою за предметами",
+  "Free account to save your attempt — still no card, still no purchase.":
+    "Безкоштовний акаунт, щоб зберегти спробу — як і раніше без картки, без покупки.",
   "Questions": "Питання",
   "Time limit": "Ліміт часу",
   "Total points": "Усього балів",
   "Price": "Ціна",
   "Free": "Безкоштовно",
-  "What's inside the free demo mock": "Що всередині безкоштовного демо-іспиту",
-  "One sitting that mirrors how the WU BBE entrance exam is built — three sections, partial credit, and exam-day pacing.":
-    "Один підхід, що відтворює структуру вступного іспиту WU BBE — три розділи, часткові бали та темп іспитового дня.",
+  "What's in this free mock": "Що в цьому безкоштовному пробному іспиті",
+  "Three sections, partial credit, and the same kind of clock stress as the real WU BBE sitting.":
+    "Три розділи, часткові бали й той самий тиск часу, що на справжньому іспиті WU BBE.",
   "Economics & Business": "Економіка та бізнес",
-  "True/False statement clusters under shared stems — definitions, markets, and accounting traps.":
-    "Кластери тверджень правда/неправда під спільними стемами — визначення, ринки та пастки бухгалтерського обліку.",
-  "Reading, vocabulary, and grammar tasks in the same mix style as the written exam.":
-    "Завдання на читання, словник і граматику в тому ж міксі, що й на письмовому іспиті.",
-  "School-leaving depth: algebra, functions, probability, and calculation under time pressure.":
-    "Рівень випускного іспиту: алгебра, функції, ймовірність і розрахунки під тиском часу.",
-  "Why take this diagnostic before you buy a course":
-    "Навіщо проходити цю діагностику перед покупкою курсу",
-  "Ads and course pages can promise anything. Sitting a hard mock tells you — in points — where you actually stand.":
-    "Реклама й сторінки курсів можуть обіцяти що завгодно. Складний пробний іспит показує — у балах — де ви насправді.",
-  "Real exam structure": "Реальна структура іспиту",
-  "Economics, English, and Math in one sitting — the same subject order and time pressure as exam day.":
-    "Економіка, англійська та математика за один підхід — той самий порядок предметів і тиск часу, що в день іспиту.",
-  "Official-style scoring": "Оцінювання в офіційному стилі",
-  "Partial-credit wi2 scoring mirrors the Teilpunktesystem, so your percentage means something.":
-    "Оцінювання wi2 з частковими балами відтворює Teilpunktesystem — ваш відсоток має сенс.",
-  "Hard diagnostic, not a toy": "Складна діагностика, не іграшка",
-  "Built from high-difficulty practice banks so you see where your score actually leaks.":
-    "Зібрано зі складних банків завдань, щоб ви бачили, де саме втрачаєте бали.",
-  "Review with explanations": "Розбір з поясненнями",
-  "After you submit, reopen every task, check your judgments, and study the solutions.":
-    "Після здачі знову відкрийте кожне завдання, перевірте судження й вивчіть рішення.",
-  "How the free demo exam works": "Як працює безкоштовний демо-іспит",
-  "Create a free account": "Створіть безкоштовний акаунт",
-  "Email signup or Google — no payment details. We only need an account to save your attempt.":
-    "Реєстрація через email або Google — без платіжних даних. Акаунт потрібен лише щоб зберегти спробу.",
-  "Choose timer and answer mode": "Оберіть таймер і режим відповідей",
-  "Run it timed (2 hours) for a true diagnostic, or untimed. Use the digital answer sheet or click-through mode.":
-    "Запустіть з таймером (2 години) для справжньої діагностики або без таймера. Цифровий бланк або режим кліків.",
-  "Finish, score, and review": "Завершіть, отримайте бали й розберіть",
-  "See points earned vs total, then open the full review to target weak topics before you buy anything.":
-    "Побачте набрані бали проти максимуму, потім відкрийте повний розбір і ціліться в слабкі теми — перш ніж щось купувати.",
+  "True/false packs under one stem — markets, definitions, and balance-sheet traps that trip people up.":
+    "Пакети правда/неправда під одним стемом — ринки, визначення та балансові пастки, на яких багато хто спотикається.",
+  "Reading, vocab, and grammar in the same mix you get on the written paper.":
+    "Читання, словник і граматика в тому ж міксі, що й на письмовому аркуші.",
+  "Algebra, functions, probability — Matura depth, with the clock running.":
+    "Алгебра, функції, ймовірність — глибина Matura, з запущеним годинником.",
+  "Why sit this before you buy a course":
+    "Навіщо писати це перед покупкою курсу",
+  "Landing pages talk. A hard mock answers — in points — what you can actually do under time.":
+    "Лендінги говорять. Складний пробний іспит відповідає — у балах — що ви справді вмієте під часом.",
+  "One sitting, three subjects": "Одна сесія, три предмети",
+  "Economics, English, and Math back-to-back — the same grind you get on exam day.":
+    "Економіка, англійська та математика підряд — той самий grind, що в день іспиту.",
+  "Scoring that matches WU": "Оцінювання як у WU",
+  "Partial credit (wi2), like the official Teilpunktesystem. Your % is not a vanity number.":
+    "Часткові бали (wi2), як у офіційному Teilpunktesystem. Ваш % — не показова цифра.",
+  "Actually hard": "Справді складно",
+  "Tasks come from the tough end of our banks. Soft mocks hide weak spots; this one does not.":
+    "Завдання з жорсткого кінця наших банків. М’які моки ховають слабкі місця — цей ні.",
+  "Full review afterwards": "Повний розбір після",
+  "Open every question again, see what you marked, and work through the solutions.":
+    "Знову відкрийте кожне питання, подивіться позначки й пройдіть рішення.",
+  "How it works": "Як це працює",
+  "Make a free account": "Створіть безкоштовний акаунт",
+  "Email or Google. No card. We need a login so your attempt does not vanish.":
+    "Email або Google. Без картки. Потрібен логін, щоб ваша спроба не зникла.",
+  "Pick timer and how you answer": "Оберіть таймер і спосіб відповіді",
+  "Two hours on the clock, or no clock. Digital answer sheet if you want transfer practice — or click answers as you go.":
+    "Дві години на годиннику або без годинника. Цифровий бланк для практики переносу — або клікайте відповіді по ходу.",
+  "Submit, see the score, dig in": "Здайте, подивіться бали, розберіться",
+  "Points earned vs total, then a full review. Figure out what to practise before you spend on a course.":
+    "Набрані бали проти максимуму, потім повний розбір. Зрозумійте, що практикувати — перш ніж платити за курс.",
   "Resume exam": "Продовжити іспит",
   "Retake demo exam": "Пройти демо-іспит знову",
   "Your demo results": "Ваші демо-результати",
   "Loading your results…": "Завантаження результатів…",
   "Sign in to start the demo mock and see your results here.":
     "Увійдіть, щоб почати демо пробний іспит і бачити тут свої результати.",
-  "No demo attempts yet. Finish the mock and your score will show up here.":
-    "Демо-спроб ще немає. Завершіть пробний іспит, і ваш результат з’явиться тут.",
+  "Sign in": "Увійти",
+  "Nothing here yet. Finish the mock and your score lands on this page.":
+    "Тут ще нічого. Завершіть пробний іспит — тоді ваш результат з’явиться на цій сторінці.",
   "After the mock": "Після пробного іспиту",
-  "Use the diagnostic as a baseline, then practise the sections that cost you points.":
-    "Використайте діагностику як базову лінію, потім практикуйте розділи, які коштували вам балів.",
+  "Treat the score as a starting line. Drill the bits that cost you points.":
+    "Візьміть бал як стартову лінію. Дрильте частини, які коштували вам балів.",
   "Free Demo Practice": "Безкоштовна демо-практика",
-  "50+ baseline cases in Economics, Math, and English with explanations.":
-    "50+ базових кейсів з економіки, математики та англійської з поясненнями.",
+  "50+ cases in Economics, Math, and English — with explanations.":
+    "50+ кейсів з економіки, математики та англійської — з поясненнями.",
   "BBE entrance exam guide": "Гід з вступного іспиту BBE",
-  "Format, topics, scoring, and how the WU selection procedure works.":
-    "Формат, теми, оцінювання та як працює процедура відбору WU.",
-  "Full course & mock catalog": "Повний курс і каталог пробних іспитів",
-  "Unlock volume practice and additional timed mocks when you are ready.":
-    "Розблокуйте об’ємну практику та додаткові timed-іспити, коли будете готові.",
+  "Format, topics, scoring, and how WU picks seats.":
+    "Формат, теми, оцінювання та як WU розподіляє місця.",
+  "Full course & more mocks": "Повний курс і більше пробних іспитів",
+  "Bigger banks and extra timed papers when you want more reps.":
+    "Більші банки та додаткові timed-папери, коли хочете більше повторень.",
   "Frequently asked questions": "Часті запитання",
   "Is the BBE demo mock exam really free?": "Чи справді безкоштовний демо-іспит BBE?",
-  "Yes. You need a free BBE School account (no credit card) so we can save your attempt, score, and review. Starting the exam itself costs nothing.":
-    "Так. Потрібен безкоштовний акаунт BBE School (без кредитної картки), щоб ми зберегли спробу, бали й розбір. Сам старт іспиту нічого не коштує.",
+  "Yes. Make a free BBE School account (no card) so we can keep your attempt and review. Sitting the exam costs nothing.":
+    "Так. Створіть безкоштовний акаунт BBE School (без картки), щоб ми зберегли спробу й розбір. Сам іспит нічого не коштує.",
   "How close is this to the real WU Vienna BBE entrance exam?":
     "Наскільки це близько до реального вступного іспиту WU Відень BBE?",
-  "It mirrors the real format: Economics & Business, English, and Mathematics under a 2-hour time limit, with partial-credit (wi2) scoring like the official Teilpunktesystem. The most recent WU exam had 34 questions; this demo uses the same subject mix and pacing pressure.":
-    "Він відтворює реальний формат: економіка та бізнес, англійська й математика за 2 години, з оцінюванням wi2 як у офіційному Teilpunktesystem. Останній іспит WU мав 34 питання; це демо використовує той самий мікс предметів і темп.",
+  "Same three blocks — Economics & Business, English, Math — and a two-hour clock. Scoring uses the same partial-credit idea as WU’s Teilpunktesystem (wi2). Recent WU papers ran 34 questions; this demo matches that mix and the rush of exam day.":
+    "Ті самі три блоки — економіка та бізнес, англійська, математика — і двогодинний годинник. Оцінювання з тими ж ідеями часткових балів, що й Teilpunktesystem WU (wi2). Недавні папери WU мали 34 питання; це демо відповідає тому міксу й тиску іспитового дня.",
   "How many questions are in the free demo mock?":
     "Скільки питань у безкоштовному демо-іспиті?",
-  "34 questions for about 159 points: 10 Economics, 11 English, and 13 Math.":
-    "34 питання приблизно на 159 балів: 10 з економіки, 11 з англійської та 13 з математики.",
+  "34 questions, about 159 points: 10 Economics, 11 English, 13 Math.":
+    "34 питання, близько 159 балів: 10 з економіки, 11 з англійської, 13 з математики.",
   "Do I have to use the timer?": "Чи обов’язково використовувати таймер?",
-  "No. You can start with a 2-hour timer (auto-submit at zero) or without a timer if you want to focus on accuracy first. Timed mode is the better diagnostic of exam-day pacing.":
-    "Ні. Можна з 2-годинним таймером (автоздача на нулі) або без таймера, якщо спочатку хочете точність. Режим з таймером краще діагностує темп іспитового дня.",
+  "No. Start with a two-hour timer (it submits at zero) or leave the clock off if you want to work carefully first. Timed is closer to how the real sitting feels.":
+    "Ні. Почніть із двогодинним таймером (здача на нулі) або без годинника, якщо спочатку хочете працювати точно. З таймером ближче до відчуття справжньої сесії.",
   "Will I see explanations after I finish?": "Чи побачу я пояснення після завершення?",
-  "Yes. When you submit, you get your score and can open a full review of each task, including worked solutions where available.":
-    "Так. Після здачі ви отримуєте бали й можете відкрити повний розбір кожного завдання з рішеннями, де вони є.",
+  "Yes. After you submit you get a score, then you can open every task again with the worked solutions.":
+    "Так. Після здачі ви отримуєте бал, потім можете знову відкрити кожне завдання з розв’язками.",
   "What should I do after the demo mock?": "Що робити після демо-іспиту?",
-  "Use your weak sections to guide practice. Start with the free Demo Practice course for Economics, Math, and English, then unlock full mock exams and the Full Course when you are ready for volume.":
-    "Орієнтуйте практику на слабкі розділи. Почніть з безкоштовного Demo Practice з економіки, математики та англійської, потім розблокуйте повні пробні іспити й Full Course.",
-  "Ready for your baseline score?": "Готові до базового результату?",
-  "Start the free BBE mock exam — 34 questions, 2 hours, full review after submit.":
-    "Почніть безкоштовний пробний іспит BBE — 34 питання, 2 години, повний розбір після здачі.",
-  "If you choose the timed option, the exam is limited to 2 hours and submits automatically when the timer reaches zero.":
-    "З таймером іспит обмежено 2 годинами, і він автоматично завершується, коли таймер дійде до нуля.",
+  "Practise the sections that hurt. Free Demo Practice covers Economics, Math, and English. When you want more timed papers and the full bank, the Full Course and mock catalog are there.":
+    "Практикуйте розділи, які болять. Безкоштовна Demo Practice покриває економіку, математику й англійську. Коли захочете більше timed-паперів і повний банк — є Full Course і каталог моків.",
+  "Want a real score under the clock?": "Хочете справжній бал під годинником?",
+  "Free BBE mock — 34 questions, two hours, review after you submit.":
+    "Безкоштовний пробний BBE — 34 питання, дві години, розбір після здачі.",
+  "Timed mode: two hours on the clock, then automatic submit at zero.":
+    "Режим з таймером: дві години на годиннику, потім автоматична здача на нулі.",
   "Start with Timer (2:00:00)": "Почати з таймером (2:00:00)",
   "Start without Timer": "Почати без таймера",
-  "In progress — you can resume where you left off":
-    "У процесі — можете продовжити з місця зупинки",
+  "In progress — pick up where you stopped":
+    "У процесі — продовжіть з місця зупинки",
   "Resume Exam": "Продовжити іспит",
   "Retake Exam": "Пройти іспит знову",
   "Start Exam": "Почати іспит",
   "Free Demo Mock Exam": "Безкоштовний демо пробний іспит",
+  "Full paper,": "Повний папір,",
 };
