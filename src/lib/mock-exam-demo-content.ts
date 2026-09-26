@@ -113,7 +113,7 @@ export const MOCK_EXAM_DEMO_POINTS_TOTAL =
   MOCK_EXAM_DEMO_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 export const MOCK_EXAM_DEMO_CONTENT_REV =
-  "2026-09-26f · #27 harder mixed ineq + interval Qs";
+  "2026-09-26g · diversify #25+#27 claim styles";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

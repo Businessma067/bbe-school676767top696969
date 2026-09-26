@@ -738,13 +738,13 @@
       "title": "Five mixed hard equations — no shortcuts",
       "chapter": 4,
       "subsection": "4.H",
-      "context": "Decide whether each claim is true or false. Five independent equations of deliberately mixed types (double radical, rational identity-trap, absolute-versus-quadratic, logarithmic, and radical-plus-absolute). Work each letter separately; do not reuse roots across letters.",
+      "context": "Decide whether each claim is true or false. Five independent mixed equations. The five claims deliberately use different judgment styles — candidate survival, root count, size comparison, threshold, and sign/location — so do not expect the same wording twice.",
       "statements": [
-        "The double-radical equation $\\sqrt{3x+7}+\\sqrt{x+1}=4$ has exactly two distinct real solutions.",
-        "After excluding poles, $\\dfrac{x+2}{x-1}+\\dfrac{2x-3}{x+4}=\\dfrac{3x^{2}+5x-2}{(x-1)(x+4)}$ has exactly one domain-legal real root.",
-        "The absolute-value equation $|x^{2}-6x+5|=3x-4$ has exactly one real solution.",
-        "The logarithmic equation $\\log_{2}(x-1)+\\log_{2}(x+3)=\\log_{2}(3x+5)$ has exactly one domain-legal real solution, and that solution is strictly larger than $4$.",
-        "The mixed equation $\\sqrt{x+3}+|x-1|=4$ has exactly three distinct real solutions."
+        "Squaring twice for $\\sqrt{3x+7}+\\sqrt{x+1}=4$ produces two real candidates, and both of them survive domain checks and back-substitution.",
+        "After discarding the poles $x=1$ and $x=-4$, the equation $\\dfrac{x+2}{x-1}+\\dfrac{2x-3}{x+4}=\\dfrac{3x^{2}+5x-2}{(x-1)(x+4)}$ reduces to a linear condition with exactly one surviving real root.",
+        "Every real solution of $|x^{2}-6x+5|=3x-4$ is strictly larger than $3$.",
+        "Every domain-legal real solution of $\\log_{2}(x-1)+\\log_{2}(x+3)=\\log_{2}(3x+5)$ is strictly larger than $4$.",
+        "The equation $\\sqrt{x+3}+|x-1|=4$ has at least one negative real solution and at least one real solution greater than $2$."
       ],
       "answer_key": [
         false,
@@ -754,11 +754,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nDomain requires both radicands nonnegative:\n\n$$\n3x+7\\ge 0\n$$\n\n$$\nx\\ge -\\dfrac{7}{3}\n$$\n\n$$\nx+1\\ge 0\n$$\n\n$$\nx\\ge -1\n$$\n\nso overall $x\\ge -1$. Isolate one root and keep the right-hand side nonnegative:\n\n$$\n\\sqrt{3x+7}=4-\\sqrt{x+1}\n$$\n\n$$\n\\sqrt{x+1}\\le 4\n$$\n\n$$\nx\\le 15\n$$\n\nSquare once:\n\n$$\n3x+7=16-8\\sqrt{x+1}+(x+1)\n$$\n\n$$\n3x+7=17+x-8\\sqrt{x+1}\n$$\n\n$$\n2x-10=-8\\sqrt{x+1}\n$$\n\n$$\n5-x=4\\sqrt{x+1}\n$$\n\nwhich also forces $x\\le 5$. Square again:\n\n$$\n(5-x)^{2}=16(x+1)\n$$\n\n$$\n25-10x+x^{2}=16x+16\n$$\n\n$$\nx^{2}-26x+9=0\n$$\n\n$$\nx=13\\pm 4\\sqrt{10}\n$$\n\nOnly the smaller root lies in the admissible window $[-1,5]$; the larger root exceeds $5$ and is discarded. Exactly one real solution remains, not two.\n\nSo the statement is False.\n",
-        "**B.** → True\n\nPoles are $x=1$ and $x=-4$. Clear the common denominator $(x-1)(x+4)$:\n\n$$\n(x+2)(x+4)+(2x-3)(x-1)=3x^{2}+5x-2\n$$\n\nExpand the left-hand side carefully:\n\n$$\n(x+2)(x+4)=x^{2}+6x+8\n$$\n\n$$\n(2x-3)(x-1)=2x^{2}-2x-3x+3=2x^{2}-5x+3\n$$\n\n$$\nx^{2}+6x+8+2x^{2}-5x+3=3x^{2}+x+11\n$$\n\nThe cleared equation is therefore\n\n$$\n3x^{2}+x+11=3x^{2}+5x-2\n$$\n\n$$\nx+11=5x-2\n$$\n\n$$\n13=4x\n$$\n\n$$\nx=\\dfrac{13}{4}\n$$\n\nThis value is neither pole, so it is the unique domain-legal root.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nThe right-hand side of an absolute-value equation must be nonnegative:\n\n$$\n3x-4\\ge 0\n$$\n\n$$\nx\\ge \\dfrac{4}{3}\n$$\n\nSplit into the two sign cases for the quadratic.\n\nCase $x^{2}-6x+5=3x-4$:\n\n$$\nx^{2}-9x+9=0\n$$\n\n$$\nx=\\dfrac{9\\pm 3\\sqrt{5}}{2}\n$$\n\nOnly the larger root satisfies $x\\ge\\tfrac{4}{3}$; the smaller root fails the RHS test.\n\nCase $-(x^{2}-6x+5)=3x-4$:\n\n$$\n-x^{2}+6x-5=3x-4\n$$\n\n$$\n-x^{2}+3x-1=0\n$$\n\n$$\nx^{2}-3x+1=0\n$$\n\n$$\nx=\\dfrac{3\\pm\\sqrt{5}}{2}\n$$\n\nOnly the larger root satisfies $x\\ge\\tfrac{4}{3}$. Two distinct real solutions survive, not one.\n\nSo the statement is False.\n",
-        "**D.** → False\n\nDomain demands positive arguments:\n\n$$\nx-1>0\n$$\n\n$$\nx>1\n$$\n\n$$\nx+3>0\n$$\n\n$$\nx>-3\n$$\n\n$$\n3x+5>0\n$$\n\n$$\nx>-\\dfrac{5}{3}\n$$\n\nso overall $x>1$. Combine the logarithms:\n\n$$\n\\log_{2}\\bigl((x-1)(x+3)\\bigr)=\\log_{2}(3x+5)\n$$\n\n$$\n(x-1)(x+3)=3x+5\n$$\n\n$$\nx^{2}+2x-3=3x+5\n$$\n\n$$\nx^{2}-x-8=0\n$$\n\n$$\nx=\\dfrac{1\\pm\\sqrt{33}}{2}\n$$\n\nOnly the plus branch exceeds $1$. Compare it with the claimed threshold $4$:\n\n$$\n\\dfrac{1+\\sqrt{33}}{2}\\approx 3.37\n$$\n\n$$\n3.37<4\n$$\n\nThere is exactly one domain-legal solution, but it is not strictly larger than $4$.\n\nSo the statement is False.\n",
-        "**E.** → True\n\nDomain requires $x\\ge -3$. Split at the absolute-value kink $x=1$.\n\nFor $x\\ge 1$:\n\n$$\n\\sqrt{x+3}+(x-1)=4\n$$\n\n$$\n\\sqrt{x+3}=5-x\n$$\n\nwhich forces $x\\le 5$. Square:\n\n$$\nx+3=(5-x)^{2}\n$$\n\n$$\nx+3=25-10x+x^{2}\n$$\n\n$$\n0=x^{2}-11x+22\n$$\n\n$$\nx=\\dfrac{11\\pm\\sqrt{33}}{2}\n$$\n\nOnly the smaller root lies in $[1,5]$.\n\nFor $-3\\le x<1$:\n\n$$\n\\sqrt{x+3}+(1-x)=4\n$$\n\n$$\n\\sqrt{x+3}=3+x\n$$\n\nSquare:\n\n$$\nx+3=(3+x)^{2}\n$$\n\n$$\nx+3=9+6x+x^{2}\n$$\n\n$$\n0=x^{2}+5x+6\n$$\n\n$$\n(x+2)(x+3)=0\n$$\n\n$$\nx=-2\\quad\\text{or}\\quad x=-3\n$$\n\nBoth lie in $[-3,1)$ and both check in the original equation. Altogether there are three distinct real solutions.\n\nSo the statement is True.\n"
+        "**A.** → False\n\nDomain requires $x\\ge -1$. Isolate and keep the right-hand side nonnegative:\n\n$$\n\\sqrt{3x+7}=4-\\sqrt{x+1}\n$$\n\n$$\nx\\le 15\n$$\n\nSquare once:\n\n$$\n3x+7=16-8\\sqrt{x+1}+(x+1)\n$$\n\n$$\n2x-10=-8\\sqrt{x+1}\n$$\n\n$$\n5-x=4\\sqrt{x+1}\n$$\n\nwhich forces $x\\le 5$. Square again:\n\n$$\n(5-x)^{2}=16(x+1)\n$$\n\n$$\nx^{2}-26x+9=0\n$$\n\n$$\nx=13\\pm 4\\sqrt{10}\n$$\n\nTwo real candidates appear, but only the smaller one lies in $[-1,5]$ and survives back-substitution. The larger candidate is discarded. So it is not true that both candidates survive.\n\nSo the statement is False.\n",
+        "**B.** → True\n\nClear the common denominator $(x-1)(x+4)$:\n\n$$\n(x+2)(x+4)+(2x-3)(x-1)=3x^{2}+5x-2\n$$\n\n$$\nx^{2}+6x+8+2x^{2}-5x+3=3x^{2}+5x-2\n$$\n\n$$\n3x^{2}+x+11=3x^{2}+5x-2\n$$\n\n$$\nx+11=5x-2\n$$\n\n$$\n4x=13\n$$\n\n$$\nx=\\dfrac{13}{4}\n$$\n\nThe value $\\tfrac{13}{4}$ is neither pole, so exactly one root survives.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nRequire $3x-4\\ge 0$, i.e. $x\\ge\\tfrac{4}{3}$. The two sign cases for the quadratic yield the surviving roots\n\n$$\nx=\\dfrac{9+3\\sqrt{5}}{2}\\approx 7.85\n$$\n\nand\n\n$$\nx=\\dfrac{3+\\sqrt{5}}{2}\\approx 2.62\n$$\n\nThe second root is real and domain-legal, yet\n\n$$\n2.62<3\n$$\n\nso it is not true that every real solution is strictly larger than $3$.\n\nSo the statement is False.\n",
+        "**D.** → False\n\nDomain forces $x>1$. Combining logs gives\n\n$$\n(x-1)(x+3)=3x+5\n$$\n\n$$\nx^{2}-x-8=0\n$$\n\n$$\nx=\\dfrac{1\\pm\\sqrt{33}}{2}\n$$\n\nOnly the plus branch is domain-legal:\n\n$$\n\\dfrac{1+\\sqrt{33}}{2}\\approx 3.37\n$$\n\n$$\n3.37<4\n$$\n\nThe unique domain-legal solution is therefore not larger than $4$.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nSplit at $x=1$. For $x\\ge 1$ the equation becomes $\\sqrt{x+3}=5-x$ with $x\\le 5$, and squaring yields the admissible root\n\n$$\nx=\\dfrac{11-\\sqrt{33}}{2}\\approx 2.63>2\n$$\n\nFor $-3\\le x<1$ one obtains $\\sqrt{x+3}=3+x$, and squaring yields the two roots $x=-3$ and $x=-2$, both negative and both valid. So there is at least one negative solution and at least one solution greater than $2$.\n\nSo the statement is True.\n"
       ],
       "difficulty_level": "5/5",
       "solution_overview": "Five independent mixed equations. Work each letter from its own domain restrictions; none of the five collapses by a one-line sum/product identity."
@@ -797,16 +797,16 @@
     {
       "case_id": "DEMO MATH 6.H02",
       "id": "demo-math-6-h02",
-      "title": "Hard mixed inequalities — interval checks",
+      "title": "Hard mixed inequalities — varied interval claims",
       "chapter": 6,
       "subsection": "6.H",
-      "context": "Decide whether each claim is true or false. Every letter is an inequality. Each claim only asks whether that inequality holds on a stated interval — solve first, then check the interval.",
+      "context": "Decide whether each claim is true or false. All five letters are inequalities, but the claims are worded differently on purpose: absence of counterexamples, existence inside an open interval, existence on a closed interval, containment of a segment, and nonempty intersection.",
       "statements": [
-        "The inequality $|x^{2}-5x+4|+|2x-3|\\le x+6$ holds for every $x\\in[1,4]$.",
-        "The inequality $\\sqrt{x+3}+|x-1|\\ge 2x-1$ holds for every $x\\in[-3,0]$.",
-        "The inequality $\\dfrac{x^{2}-5x+6}{x^{2}-x-2}\\ge 1$ holds for every $x\\in[0,1]$.",
-        "The inequality $\\sqrt{|2x-3|}+|x+1|\\le 4$ holds for every $x\\in[-1,1]$.",
-        "The inequality $\\dfrac{|2x-5|}{|x+1|}+|x-2|\\le 4$ holds for every $x\\in[-4,-2]$."
+        "No point of the interval $[1,4]$ violates $|x^{2}-5x+4|+|2x-3|\\le x+6$.",
+        "The inequality $\\sqrt{2x+5}+|x-2|\\le 4$ admits at least one solution in the open interval $(1,2)$.",
+        "There exists some $x\\in[0,1]$ for which $\\dfrac{x^{2}-5x+6}{x^{2}-x-2}\\ge 1$.",
+        "The solution set of $\\dfrac{|x|}{x+3}+\\sqrt{x+1}\\le 2$ contains every point of $[0,1]$.",
+        "The inequality $\\dfrac{|2x-5|}{|x+1|}+|x-2|\\le 4$ has nonempty intersection with the interval $[-4,-2]$."
       ],
       "answer_key": [
         true,
@@ -816,14 +816,14 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCritical points are the quadratic roots $x=1$, $x=4$ and the absolute kink $x=\\tfrac{3}{2}$. Check the claimed segment $[1,4]$ by cases.\n\nOn $[1,\\tfrac{3}{2}]$:\n\n$$\n-(x^{2}-5x+4)+(3-2x)\\le x+6\n$$\n\n$$\n-x^{2}+3x-1\\le x+6\n$$\n\n$$\n0\\le x^{2}-2x+7\n$$\n\nThe quadratic $x^{2}-2x+7$ has discriminant $4-28<0$ and positive leading coefficient, so it is always positive. The inequality holds on the whole subsegment.\n\nOn $\\bigl[\\tfrac{3}{2},4\\bigr]$:\n\n$$\n-(x^{2}-5x+4)+(2x-3)\\le x+6\n$$\n\n$$\n-x^{2}+7x-7\\le x+6\n$$\n\n$$\n0\\le x^{2}-6x+13\n$$\n\nAgain the discriminant $36-52<0$, so the inequality holds throughout. Therefore it holds for every $x\\in[1,4]$.\n\nSo the statement is True.\n",
-        "**B.** → True\n\nDomain requires $x\\ge -3$. On the claimed interval $[-3,0]$ one has $x\\le 1$, so $|x-1|=1-x$. The inequality becomes\n\n$$\n\\sqrt{x+3}+(1-x)\\ge 2x-1\n$$\n\n$$\n\\sqrt{x+3}\\ge 3x-2\n$$\n\nIf $3x-2\\le 0$, i.e. $x\\le\\tfrac{2}{3}$, the right-hand side is nonpositive while the square root is nonnegative, so the inequality holds automatically. The whole of $[-3,0]$ satisfies $x\\le\\tfrac{2}{3}$, so no further squaring is needed. The inequality holds for every $x\\in[-3,0]$.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nPoles are the roots of $x^{2}-x-2=0$, i.e. $x=-1$ and $x=2$. For all other $x$,\n\n$$\n\\dfrac{x^{2}-5x+6}{x^{2}-x-2}-1\\ge 0\n$$\n\n$$\n\\dfrac{(x^{2}-5x+6)-(x^{2}-x-2)}{x^{2}-x-2}\\ge 0\n$$\n\n$$\n\\dfrac{-4x+8}{x^{2}-x-2}\\ge 0\n$$\n\n$$\n\\dfrac{-4(x-2)}{(x-2)(x+1)}\\ge 0\n$$\n\nFor $x\\neq 2$ this reduces to\n\n$$\n\\dfrac{-4}{x+1}\\ge 0\n$$\n\n$$\nx+1<0\n$$\n\n$$\nx<-1\n$$\n\nSo the solution set is $(-\\infty,-1)$. The interval $[0,1]$ lies entirely outside that set (and avoids the poles). In particular at $x=0$:\n\n$$\n\\dfrac{6}{-2}=-3\\not\\ge 1\n$$\n\nThe inequality does not hold on $[0,1]$.\n\nSo the statement is False.\n",
-        "**D.** → True\n\nThe left-hand side $\\sqrt{|2x-3|}+|x+1|$ is continuous. On $[-1,1]$ one has $|x+1|=x+1$ and $|2x-3|=3-2x$, so\n\n$$\n\\sqrt{3-2x}+(x+1)\\le 4\n$$\n\n$$\n\\sqrt{3-2x}\\le 3-x\n$$\n\nOn $[-1,1]$ the right-hand side $3-x$ is at least $2>0$. Square (both sides nonnegative):\n\n$$\n3-2x\\le (3-x)^{2}=9-6x+x^{2}\n$$\n\n$$\n0\\le x^{2}-4x+6\n$$\n\nThe discriminant $16-24<0$, so $x^{2}-4x+6>0$ for every real $x$. The squared inequality holds throughout $[-1,1]$, and the original inequality therefore holds on that whole interval.\n\nSo the statement is True.\n",
-        "**E.** → False\n\nThe expression is undefined at the pole $x=-1$, which does not meet $[-4,-2]$. Test a convenient interior point of the claimed interval, e.g. $x=-3$:\n\n$$\n\\dfrac{|-6-5|}{|-3+1|}+|-3-2|=\\dfrac{11}{2}+5=5.5+5=10.5\n$$\n\n$$\n10.5\\le 4\n$$\n\nis false. So the inequality already fails at $x=-3\\in[-4,-2]$, and therefore does not hold for every point of that interval.\n\nSo the statement is False.\n"
+        "**A.** → True\n\nCritical points are $x=1$, $x=4$ and $x=\\tfrac{3}{2}$. On $[1,\\tfrac{3}{2}]$ the inequality becomes\n\n$$\n-(x^{2}-5x+4)+(3-2x)\\le x+6\n$$\n\n$$\n0\\le x^{2}-2x+7\n$$\n\nwhich holds identically (discriminant $4-28<0$). On $\\bigl[\\tfrac{3}{2},4\\bigr]$ it becomes\n\n$$\n-(x^{2}-5x+4)+(2x-3)\\le x+6\n$$\n\n$$\n0\\le x^{2}-6x+13\n$$\n\nwhich likewise holds identically (discriminant $36-52<0$). Hence no point of $[1,4]$ is a counterexample.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nDomain requires $x\\ge -\\tfrac{5}{2}$. Isolating cases at the kink $x=2$ and squaring where needed shows that equality can hold inside $(1,2)$. A direct check at the convenient interior test point $x=\\tfrac{3}{2}$ is enough for existence:\n\n$$\n\\sqrt{3+5}+\\left|\\tfrac{3}{2}-2\\right|=\\sqrt{8}+\\tfrac{1}{2}=2\\sqrt{2}+\\tfrac{1}{2}\n$$\n\n$$\n2\\sqrt{2}+\\tfrac{1}{2}\\approx 2.828+0.5=3.328\\le 4\n$$\n\nSo at least one point of $(1,2)$ satisfies the inequality.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nPoles are $x=-1$ and $x=2$. For every other $x$,\n\n$$\n\\dfrac{x^{2}-5x+6}{x^{2}-x-2}-1=\\dfrac{-4(x-2)}{(x-2)(x+1)}=\\dfrac{-4}{x+1}\n$$\n\nso the inequality reduces to $x<-1$. The interval $[0,1]$ lies entirely outside that half-line. In particular at $x=0$:\n\n$$\n\\dfrac{6}{-2}=-3\\not\\ge 1\n$$\n\nNo point of $[0,1]$ works.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nOn $[0,1]$ one has $x\\ge 0$, so $|x|=x$, and both $x+3>0$ and $x+1\\ge 0$. The inequality reads\n\n$$\n\\dfrac{x}{x+3}+\\sqrt{x+1}\\le 2\n$$\n\nEach summand is increasing on $[0,1]$, so the left-hand side is maximized at the right endpoint $x=1$:\n\n$$\n\\dfrac{1}{4}+\\sqrt{2}=0.25+\\sqrt{2}\\approx 1.664\\le 2\n$$\n\nAt the left endpoint $x=0$:\n\n$$\n0+\\sqrt{1}=1\\le 2\n$$\n\nBecause the maximum on the segment is already $\\le 2$, every point of $[0,1]$ belongs to the solution set.\n\nSo the statement is True.\n",
+        "**E.** → False\n\nThe pole $x=-1$ does not meet $[-4,-2]$. Test the convenient interior point $x=-3$:\n\n$$\n\\dfrac{|-6-5|}{|-3+1|}+|-3-2|=\\dfrac{11}{2}+5=10.5\n$$\n\n$$\n10.5\\le 4\n$$\n\nis false. The same failure pattern persists throughout $[-4,-2]$ (the expression stays larger than $4$ on that segment). The intersection with $[-4,-2]$ is therefore empty.\n\nSo the statement is False.\n"
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Five mixed inequalities (quadratic-absolute, radical-absolute, rational, nested-absolute radical, and absolute-rational). Each claim only asks whether the inequality holds on a given interval."
+      "solution_overview": "Five mixed inequalities with deliberately varied claim styles: no-counterexample, existence in an open interval, existence on a closed interval, segment containment, and nonempty intersection."
     },
     {
       "case_id": "DEMO MATH 7.H01",
