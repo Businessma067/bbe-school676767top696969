@@ -797,33 +797,33 @@
     {
       "case_id": "DEMO MATH 6.H02",
       "id": "demo-math-6-h02",
-      "title": "Five hard mixed inequalities — no plug-in shortcuts",
+      "title": "Hard mixed inequalities — interval checks",
       "chapter": 6,
       "subsection": "6.H",
-      "context": "Decide whether each claim is true or false. All five letters are inequalities — absolute, double-radical, rational difference, rational, and absolute-sum. None of the claims hands you a candidate root to plug back in; decide by solving or by testing the stated region.",
+      "context": "Decide whether each claim is true or false. Every letter is an inequality. Each claim only asks whether that inequality holds on a stated interval — solve first, then check the interval.",
       "statements": [
-        "The inequality $|2x-3|-|x+2|\\le x-1$ holds for every real number $x\\ge 2$.",
-        "On the domain $x\\ge\\tfrac{1}{2}$, the inequality $\\sqrt{5x+4}+\\sqrt{2x-1}\\le 5$ holds for every $x\\ge 3$.",
-        "After excluding poles, the inequality $\\dfrac{3x+1}{x-2}-\\dfrac{2}{x+1}\\ge\\dfrac{x+7}{(x-2)(x+1)}$ holds for every real $x$ in the open interval $(0,1)$.",
-        "The rational inequality $\\dfrac{x^{2}-x-6}{x-2}\\le x+1$ holds at $x=0$.",
-        "The inequality $|x-2|+|x+1|\\le 5$ holds for every $x\\in[-1,2]$ and fails for every $x$ with $|x|>10$."
+        "The inequality $|x^{2}-5x+4|+|2x-3|\\le x+6$ holds for every $x\\in[1,4]$.",
+        "The inequality $\\sqrt{x+3}+|x-1|\\ge 2x-1$ holds for every $x\\in[-3,0]$.",
+        "The inequality $\\dfrac{x^{2}-5x+6}{x^{2}-x-2}\\ge 1$ holds for every $x\\in[0,1]$.",
+        "The inequality $\\sqrt{|2x-3|}+|x+1|\\le 4$ holds for every $x\\in[-1,1]$.",
+        "The inequality $\\dfrac{|2x-5|}{|x+1|}+|x-2|\\le 4$ holds for every $x\\in[-4,-2]$."
       ],
       "answer_key": [
         true,
+        true,
         false,
-        false,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCritical points split the line into $x<-2$, $-2\\le x<\\tfrac{3}{2}$, and $x\\ge\\tfrac{3}{2}$. Rewrite the inequality in each region.\n\nRegion $x<-2$:\n\n$$\n(3-2x)-(-x-2)\\le x-1\n$$\n\n$$\n5-x\\le x-1\n$$\n\n$$\n6\\le 2x\n$$\n\n$$\nx\\ge 3\n$$\n\nwhich cannot hold inside $x<-2$. Empty there.\n\nRegion $-2\\le x<\\tfrac{3}{2}$:\n\n$$\n(3-2x)-(x+2)\\le x-1\n$$\n\n$$\n1-3x\\le x-1\n$$\n\n$$\n2\\le 4x\n$$\n\n$$\nx\\ge \\dfrac{1}{2}\n$$\n\nso this region contributes $\\bigl[\\tfrac{1}{2},\\tfrac{3}{2}\\bigr)$.\n\nRegion $x\\ge\\tfrac{3}{2}$:\n\n$$\n(2x-3)-(x+2)\\le x-1\n$$\n\n$$\nx-5\\le x-1\n$$\n\n$$\n-5\\le -1\n$$\n\nwhich is always true, so the whole half-line $\\bigl[\\tfrac{3}{2},+\\infty\\bigr)$ is included.\n\nThe full solution set is therefore $\\bigl[\\tfrac{1}{2},+\\infty\\bigr)$. In particular every $x\\ge 2$ belongs to it.\n\nSo the statement is True.\n",
-        "**B.** → False\n\nDomain requires $x\\ge\\tfrac{1}{2}$. The sum $f(x)=\\sqrt{5x+4}+\\sqrt{2x-1}$ is strictly increasing on that half-line. Isolating and squaring twice yields a unique equality point\n\n$$\nf(x)=5\n$$\n\nat a value strictly between $1$ and $2$. Because $f$ increases,\n\n$$\nf(x)\\le 5\n$$\n\nholds precisely on a bounded initial segment of the domain, and fails once $x$ passes that unique equality point.\n\nIn particular at $x=3$:\n\n$$\n\\sqrt{15+4}+\\sqrt{6-1}=\\sqrt{19}+\\sqrt{5}\n$$\n\n$$\n\\sqrt{19}+\\sqrt{5}>4+2=6>5\n$$\n\nso the inequality does not hold for every domain-legal $x\\ge 3$.\n\nSo the statement is False.\n",
-        "**C.** → False\n\nPoles are $x=2$ and $x=-1$. Bring everything to one side:\n\n$$\n\\dfrac{3x+1}{x-2}-\\dfrac{2}{x+1}-\\dfrac{x+7}{(x-2)(x+1)}\\ge 0\n$$\n\nOver the common denominator $(x-2)(x+1)$ the numerator is\n\n$$\n(3x+1)(x+1)-2(x-2)-(x+7)\n$$\n\n$$\n=3x^{2}+4x+1-2x+4-x-7\n$$\n\n$$\n=3x^{2}+x-2\n$$\n\n$$\n=(3x-2)(x+1)\n$$\n\nso for $x\\neq -1$ and $x\\neq 2$ the inequality reduces to\n\n$$\n\\dfrac{3x-2}{x-2}\\ge 0\n$$\n\nCritical points $x=\\tfrac{2}{3}$ and $x=2$ split the line. The quotient is nonnegative on\n\n$$\n\\bigl(-\\infty,\\tfrac{2}{3}\\bigr]\\cup(2,+\\infty)\n$$\n\nexcept that $x=-1$ remains excluded as a pole. In particular on $(0,1)$ the subinterval $\\bigl(\\tfrac{2}{3},1\\bigr)$ makes the quotient negative, so the inequality fails there. It therefore does not hold for every $x\\in(0,1)$.\n\nSo the statement is False.\n",
-        "**D.** → False\n\nSubstitute the tested point $x=0$ directly into the inequality (the pole $x=2$ is not involved):\n\n$$\n\\dfrac{0-0-6}{0-2}\\le 0+1\n$$\n\n$$\n\\dfrac{-6}{-2}\\le 1\n$$\n\n$$\n3\\le 1\n$$\n\nwhich is false. So the inequality does not hold at $x=0$.\n\n(For completeness: bringing terms to one side for $x\\neq 2$ yields $\\dfrac{-4}{x-2}\\le 0$, i.e. $x>2$, which also excludes $0$.)\n\nSo the statement is False.\n",
-        "**E.** → True\n\nThe sum of distances $|x-2|+|x+1|$ equals $3$ on the whole segment between the kinks $x=-1$ and $x=2$, and grows linearly outside that segment.\n\nOn $[-1,2]$:\n\n$$\n|x-2|+|x+1|=3\\le 5\n$$\n\nso every point of $[-1,2]$ satisfies the inequality.\n\nOutside, the solution set is the larger closed interval $[-2,3]$. In particular, if $|x|>10$ then $x\\notin[-2,3]$, so\n\n$$\n|x-2|+|x+1|>5\n$$\n\nand the inequality fails. Both halves of the claim hold.\n\nSo the statement is True.\n"
+        "**A.** → True\n\nCritical points are the quadratic roots $x=1$, $x=4$ and the absolute kink $x=\\tfrac{3}{2}$. Check the claimed segment $[1,4]$ by cases.\n\nOn $[1,\\tfrac{3}{2}]$:\n\n$$\n-(x^{2}-5x+4)+(3-2x)\\le x+6\n$$\n\n$$\n-x^{2}+3x-1\\le x+6\n$$\n\n$$\n0\\le x^{2}-2x+7\n$$\n\nThe quadratic $x^{2}-2x+7$ has discriminant $4-28<0$ and positive leading coefficient, so it is always positive. The inequality holds on the whole subsegment.\n\nOn $\\bigl[\\tfrac{3}{2},4\\bigr]$:\n\n$$\n-(x^{2}-5x+4)+(2x-3)\\le x+6\n$$\n\n$$\n-x^{2}+7x-7\\le x+6\n$$\n\n$$\n0\\le x^{2}-6x+13\n$$\n\nAgain the discriminant $36-52<0$, so the inequality holds throughout. Therefore it holds for every $x\\in[1,4]$.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nDomain requires $x\\ge -3$. On the claimed interval $[-3,0]$ one has $x\\le 1$, so $|x-1|=1-x$. The inequality becomes\n\n$$\n\\sqrt{x+3}+(1-x)\\ge 2x-1\n$$\n\n$$\n\\sqrt{x+3}\\ge 3x-2\n$$\n\nIf $3x-2\\le 0$, i.e. $x\\le\\tfrac{2}{3}$, the right-hand side is nonpositive while the square root is nonnegative, so the inequality holds automatically. The whole of $[-3,0]$ satisfies $x\\le\\tfrac{2}{3}$, so no further squaring is needed. The inequality holds for every $x\\in[-3,0]$.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nPoles are the roots of $x^{2}-x-2=0$, i.e. $x=-1$ and $x=2$. For all other $x$,\n\n$$\n\\dfrac{x^{2}-5x+6}{x^{2}-x-2}-1\\ge 0\n$$\n\n$$\n\\dfrac{(x^{2}-5x+6)-(x^{2}-x-2)}{x^{2}-x-2}\\ge 0\n$$\n\n$$\n\\dfrac{-4x+8}{x^{2}-x-2}\\ge 0\n$$\n\n$$\n\\dfrac{-4(x-2)}{(x-2)(x+1)}\\ge 0\n$$\n\nFor $x\\neq 2$ this reduces to\n\n$$\n\\dfrac{-4}{x+1}\\ge 0\n$$\n\n$$\nx+1<0\n$$\n\n$$\nx<-1\n$$\n\nSo the solution set is $(-\\infty,-1)$. The interval $[0,1]$ lies entirely outside that set (and avoids the poles). In particular at $x=0$:\n\n$$\n\\dfrac{6}{-2}=-3\\not\\ge 1\n$$\n\nThe inequality does not hold on $[0,1]$.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nThe left-hand side $\\sqrt{|2x-3|}+|x+1|$ is continuous. On $[-1,1]$ one has $|x+1|=x+1$ and $|2x-3|=3-2x$, so\n\n$$\n\\sqrt{3-2x}+(x+1)\\le 4\n$$\n\n$$\n\\sqrt{3-2x}\\le 3-x\n$$\n\nOn $[-1,1]$ the right-hand side $3-x$ is at least $2>0$. Square (both sides nonnegative):\n\n$$\n3-2x\\le (3-x)^{2}=9-6x+x^{2}\n$$\n\n$$\n0\\le x^{2}-4x+6\n$$\n\nThe discriminant $16-24<0$, so $x^{2}-4x+6>0$ for every real $x$. The squared inequality holds throughout $[-1,1]$, and the original inequality therefore holds on that whole interval.\n\nSo the statement is True.\n",
+        "**E.** → False\n\nThe expression is undefined at the pole $x=-1$, which does not meet $[-4,-2]$. Test a convenient interior point of the claimed interval, e.g. $x=-3$:\n\n$$\n\\dfrac{|-6-5|}{|-3+1|}+|-3-2|=\\dfrac{11}{2}+5=5.5+5=10.5\n$$\n\n$$\n10.5\\le 4\n$$\n\nis false. So the inequality already fails at $x=-3\\in[-4,-2]$, and therefore does not hold for every point of that interval.\n\nSo the statement is False.\n"
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Five inequalities of mixed types. Decide each claim by solving the stated relation or by testing the claimed region — the statements never hand you a candidate number to plug back in."
+      "solution_overview": "Five mixed inequalities (quadratic-absolute, radical-absolute, rational, nested-absolute radical, and absolute-rational). Each claim only asks whether the inequality holds on a given interval."
     },
     {
       "case_id": "DEMO MATH 7.H01",
