@@ -14,7 +14,7 @@ export type Lang = "en" | "de" | "uk";
 export const LANGUAGES: { code: Lang; label: string; short: string }[] = [
   { code: "en", label: "English", short: "EN" },
   { code: "de", label: "Deutsch", short: "DE" },
-  { code: "uk", label: "Українська", short: "UK" },
+  { code: "uk", label: "Українська", short: "UA" },
 ];
 
 /**
