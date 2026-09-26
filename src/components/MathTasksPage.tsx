@@ -1917,12 +1917,12 @@ function AllExplanationsPanel({
       if (expl) {
         // Always bind panel block i to statement i / answer_key[i].
         // Strip EN or DE verdict headers so we never show True+Falsch twice.
-        expl = expl
-          .replace(
-            /^\*\*[A-F]\.\*\*\s*→\s*(?:True|False|Wahr|Falsch|Richtig)\s*/i,
-            "",
-          )
-          .trim();
+        // Allow spaced markdown like `** A. ** → Richtig` (corrupt exports).
+        const verdictHeader =
+          /^(?:\*\*\s*)?[A-F]\.\s*(?:\*\*)?\s*→\s*(?:True|False|Wahr|Falsch|Richtig)\s*/i;
+        for (let guard = 0; guard < 4 && verdictHeader.test(expl); guard++) {
+          expl = expl.replace(verdictHeader, "").trim();
+        }
         // Legacy Ch6 PDF headers: **A) full statement.**  (true)
         expl = expl
           .replace(

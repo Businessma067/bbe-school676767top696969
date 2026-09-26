@@ -1473,8 +1473,8 @@
       "Setzt man $x=-6$ in die ursprüngliche linke Seite ein, so erhält man einen Wert, der streng kleiner ist als $\\dfrac{5}{3}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n** A. ** → Richtig\n\nwie ein intensives $x=-9$ Matches.\n\nDie Aussage ist richtig.",
-      "**B.** → Richtig\n\n$$\n-9>-10\n$$ \n\nEs ist ein kleinerer $-10$.\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\n$$\nx=-9\n$$\n\nDie rekonstruierte Lösung stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\n-9>-10\n$$\n\nDie Lösung ist streng größer als $-10$.\n\nDie Aussage ist richtig.",
       "**C.** → Falsch\n\nTwin $x'=-17$.\n\n $$\n-17\\nless -12\n$$ \n\nDoes not exceed $-12$.\n\nDie Aussage ist falsch.",
       "**D.** → Richtig\n\n$$12\\cdot\\frac{5}{3}=20$$ \n\nStimmt überein.\n\nDie Aussage ist richtig.",
       "**E.** → Richtig\n\n$$\\frac{-3}{4}+\\frac{13}{6}=\\frac{17}{12}<\\frac{5}{3}$$ \n\nLeft side at $x=-6$ is strikt weniger als $\\dfrac{5}{3}$.\n\nDie Aussage ist richtig."
