@@ -103,6 +103,7 @@ function priorityFor(englishPath: string): string {
     return "0.6";
   }
   if (englishPath === "/parents") return "0.7";
+  if (englishPath === "/demo-mock") return "0.9";
   if (englishPath === "/news" || englishPath.startsWith("/news/")) return "0.6";
   if (englishPath.startsWith("/demo-practice/") || englishPath.startsWith("/wiso/demo-practice/")) {
     return "0.7";
