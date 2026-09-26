@@ -461,6 +461,11 @@ function SiteFooter() {
                 For parents
               </LocalizedLink>
             </li>
+            <li>
+              <LocalizedLink to="/news" className="text-foreground hover:underline">
+                News
+              </LocalizedLink>
+            </li>
           </ul>
         </div>
       </div>

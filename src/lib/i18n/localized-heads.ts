@@ -25,6 +25,7 @@ import { Route as DemoMockRoute } from "@/routes/demo-mock";
 import { Route as AnswerSheetRoute } from "@/routes/features.answer-sheet";
 import { Route as ImportantFeaturesRoute } from "@/routes/important-features";
 import { Route as ParentsRoute } from "@/routes/parents";
+import { Route as NewsRoute } from "@/routes/news";
 import { Route as DemoPracticeProductRoute } from "@/routes/products.demo-practice";
 import { Route as FullCourseRoute } from "@/routes/products.full-course";
 import { Route as ProductsRoute } from "@/routes/products.index";
@@ -77,6 +78,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/wiso/demo-practice": () => headFrom(WisoDemoPracticeRoute),
   "/wiso/mock-exams": () => headFrom(WisoMockExamsRoute),
   "/parents": () => headFrom(ParentsRoute),
+  "/news": () => headFrom(NewsRoute),
   "/important-features": () => headFrom(ImportantFeaturesRoute),
   "/features/answer-sheet": () => headFrom(AnswerSheetRoute),
   "/terms": () => headFrom(TermsRoute),

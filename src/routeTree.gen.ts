@@ -33,6 +33,7 @@ import { Route as ImportantFeaturesRouteImport } from './routes/important-featur
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as MatchingRouteImport } from './routes/matching'
 import { Route as MockExamsRouteImport } from './routes/mock-exams'
+import { Route as NewsRouteImport } from './routes/news'
 import { Route as ParentsRouteImport } from './routes/parents'
 import { Route as PaymentResultRouteImport } from './routes/payment-result'
 import { Route as PracticeRouteImport } from './routes/practice'
@@ -70,6 +71,7 @@ import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subj
 import { Route as MatchingIndexRouteImport } from './routes/matching.index'
 import { Route as MatchingSubjectRouteImport } from './routes/matching.$subject'
 import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
+import { Route as NewsSlugRouteImport } from './routes/news.$slug'
 import { Route as PaymentFailedRouteImport } from './routes/payment.failed'
 import { Route as PaymentSuccessRouteImport } from './routes/payment.success'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
@@ -258,6 +260,11 @@ const MockExamsRoute = MockExamsRouteImport.update({
   path: '/mock-exams',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NewsRoute = NewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ParentsRoute = ParentsRouteImport.update({
   id: '/parents',
   path: '/parents',
@@ -442,6 +449,11 @@ const MockExamsIndexRoute = MockExamsIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => MockExamsRoute,
+} as any)
+const NewsSlugRoute = NewsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => NewsRoute,
 } as any)
 const PaymentFailedRoute = PaymentFailedRouteImport.update({
   id: '/payment/failed',
@@ -830,6 +842,7 @@ export interface FileRoutesByFullPath {
   '/login': typeof LoginRoute
   '/matching': typeof MatchingRouteWithChildren
   '/mock-exams': typeof MockExamsRouteWithChildren
+  '/news': typeof NewsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
@@ -861,6 +874,7 @@ export interface FileRoutesByFullPath {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
+  '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
   '/payment/success': typeof PaymentSuccessRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
@@ -954,6 +968,7 @@ export interface FileRoutesByTo {
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
+  '/news': typeof NewsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
@@ -978,6 +993,7 @@ export interface FileRoutesByTo {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
+  '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
   '/payment/success': typeof PaymentSuccessRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
@@ -1070,6 +1086,7 @@ export interface FileRoutesById {
   '/login': typeof LoginRoute
   '/matching': typeof MatchingRouteWithChildren
   '/mock-exams': typeof MockExamsRouteWithChildren
+  '/news': typeof NewsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
@@ -1101,6 +1118,7 @@ export interface FileRoutesById {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
+  '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
   '/payment/success': typeof PaymentSuccessRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
@@ -1202,6 +1220,7 @@ export interface FileRouteTypes {
     | '/login'
     | '/matching'
     | '/mock-exams'
+    | '/news'
     | '/parents'
     | '/payment-result'
     | '/practice'
@@ -1233,6 +1252,7 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
+    | '/news/$slug'
     | '/payment/failed'
     | '/payment/success'
     | '/products/custom-mock-builder'
@@ -1326,6 +1346,7 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/important-features'
     | '/login'
+    | '/news'
     | '/parents'
     | '/payment-result'
     | '/practice'
@@ -1350,6 +1371,7 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
+    | '/news/$slug'
     | '/payment/failed'
     | '/payment/success'
     | '/products/custom-mock-builder'
@@ -1441,6 +1463,7 @@ export interface FileRouteTypes {
     | '/login'
     | '/matching'
     | '/mock-exams'
+    | '/news'
     | '/parents'
     | '/payment-result'
     | '/practice'
@@ -1472,6 +1495,7 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
+    | '/news/$slug'
     | '/payment/failed'
     | '/payment/success'
     | '/products/custom-mock-builder'
@@ -1572,6 +1596,7 @@ export interface RootRouteChildren {
   LoginRoute: typeof LoginRoute
   MatchingRoute: typeof MatchingRouteWithChildren
   MockExamsRoute: typeof MockExamsRouteWithChildren
+  NewsRoute: typeof NewsRouteWithChildren
   ParentsRoute: typeof ParentsRoute
   PaymentResultRoute: typeof PaymentResultRoute
   PracticeRoute: typeof PracticeRoute
@@ -1767,6 +1792,13 @@ declare module '@tanstack/react-router' {
       path: '/mock-exams'
       fullPath: '/mock-exams'
       preLoaderRoute: typeof MockExamsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news': {
+      id: '/news'
+      path: '/news'
+      fullPath: '/news'
+      preLoaderRoute: typeof NewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/parents': {
@@ -2027,6 +2059,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/mock-exams/'
       preLoaderRoute: typeof MockExamsIndexRouteImport
       parentRoute: typeof MockExamsRoute
+    }
+    '/news/$slug': {
+      id: '/news/$slug'
+      path: '/$slug'
+      fullPath: '/news/$slug'
+      preLoaderRoute: typeof NewsSlugRouteImport
+      parentRoute: typeof NewsRoute
     }
     '/payment/failed': {
       id: '/payment/failed'
@@ -2654,6 +2693,16 @@ const MockExamsRouteWithChildren = MockExamsRoute._addFileChildren(
   MockExamsRouteChildren,
 )
 
+interface NewsRouteChildren {
+  NewsSlugRoute: typeof NewsSlugRoute
+}
+
+const NewsRouteChildren: NewsRouteChildren = {
+  NewsSlugRoute: NewsSlugRoute,
+}
+
+const NewsRouteWithChildren = NewsRoute._addFileChildren(NewsRouteChildren)
+
 interface ProductsRouteChildren {
   ProductsCustomMockBuilderRoute: typeof ProductsCustomMockBuilderRoute
   ProductsDemoPracticeRoute: typeof ProductsDemoPracticeRoute
@@ -2896,6 +2945,7 @@ const rootRouteChildren: RootRouteChildren = {
   LoginRoute: LoginRoute,
   MatchingRoute: MatchingRouteWithChildren,
   MockExamsRoute: MockExamsRouteWithChildren,
+  NewsRoute: NewsRouteWithChildren,
   ParentsRoute: ParentsRoute,
   PaymentResultRoute: PaymentResultRoute,
   PracticeRoute: PracticeRoute,
@@ -2925,13 +2975,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

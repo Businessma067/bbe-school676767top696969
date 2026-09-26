@@ -5,6 +5,7 @@ import {
   hreflangLinks,
   localizePath,
 } from "./i18n/locale-path";
+import { getNewsPostPaths } from "@/data/news/posts";
 import { WISO_EXAM_FORMAT } from "../config/wiso-exam-hub";
 
 const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
@@ -75,6 +76,7 @@ export const ENGLISH_ONLY_INDEXABLE_PATHS = [
   "/wiso/demo-practice/math",
   "/wiso/demo-practice/economics",
   "/wiso/demo-practice/german",
+  ...getNewsPostPaths(),
 ] as const;
 
 type SitemapEntry = {
@@ -101,6 +103,7 @@ function priorityFor(englishPath: string): string {
     return "0.6";
   }
   if (englishPath === "/parents") return "0.7";
+  if (englishPath === "/news" || englishPath.startsWith("/news/")) return "0.6";
   if (englishPath.startsWith("/demo-practice/") || englishPath.startsWith("/wiso/demo-practice/")) {
     return "0.7";
   }

@@ -184,6 +184,12 @@ export function homepageNavItems(): NavItem[] {
       activePrefixes: ["/bbe-vs-wiso"],
     },
     productsItem("bbe"),
+    {
+      label: "News",
+      href: "/news",
+      isRoute: true,
+      activePrefixes: ["/news"],
+    },
   ];
 }
 
@@ -202,6 +208,12 @@ export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
       href: track === "wiso" ? "/wiso#why-choose-us" : "/important-features",
       isRoute: true,
       activePrefixes: track === "wiso" ? undefined : ["/important-features", "/features"],
+    },
+    {
+      label: "News",
+      href: "/news",
+      isRoute: true,
+      activePrefixes: ["/news"],
     },
     {
       label: "Reviews",

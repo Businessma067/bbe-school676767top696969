@@ -8,6 +8,7 @@ import { hubGapExtraDe, hubGapExtraUk } from "./hub-gap-extra";
 import { homeExtraDe, homeExtraUk } from "./home-extra";
 import { wisoHubExtraDe, wisoHubExtraUk } from "./wiso-hub-extra";
 import { copyVoiceExtraDe, copyVoiceExtraUk } from "./copy-voice-extra";
+import { newsExtraDe, newsExtraUk } from "./news-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -32,6 +33,7 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "WiSo oder BBE": "WiSo oder BBE",
     Products: "Produkte",
     Features: "Funktionen",
+    News: "Neuigkeiten",
     FAQ: "FAQ",
     Practice: "Übung",
     "Mock Exams": "Probeprüfungen",
@@ -248,6 +250,7 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "WiSo oder BBE": "WiSo чи BBE",
     Products: "Продукти",
     Features: "Можливості",
+    News: "Новини",
     FAQ: "Часті запитання",
     Practice: "Практика",
     "Mock Exams": "Пробні іспити",
@@ -469,6 +472,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...homeExtraDe,
     ...wisoHubExtraDe,
     ...copyVoiceExtraDe,
+    ...newsExtraDe,
     ...baseDictionary.de,
   },
   uk: {
@@ -482,6 +486,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...homeExtraUk,
     ...wisoHubExtraUk,
     ...copyVoiceExtraUk,
+    ...newsExtraUk,
     ...baseDictionary.uk,
   },
 };
