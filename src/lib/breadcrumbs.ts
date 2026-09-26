@@ -198,7 +198,10 @@ export function buildBreadcrumbs(
   }
 
   if (path === "/demo-mock") {
-    return withLastFlags([{ label: "Demo Mock Exam", to: null }]);
+    return withLastFlags([
+      { label: "BBE Exam", to: withLocale(BBE_EXAM_HUB_PATH, locale) },
+      { label: "Free Demo Mock Exam", to: null },
+    ]);
   }
 
   const segments = path.split("/").filter(Boolean);
