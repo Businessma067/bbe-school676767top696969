@@ -9,7 +9,6 @@ import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 import {
   usePracticeCase,
-  usePracticeCaseActions,
   type PracticeCasePayload,
 } from "@/lib/practice-case-context";
 import { answerFromCaseDatabase } from "@/lib/practice-case-kb";
@@ -70,7 +69,7 @@ function answerSiteFaq(query: string): string {
   const hit = SITE_FAQ.find((x) => q.includes(x.q) || x.q.split(" ").every((w) => q.includes(w)));
   if (hit) return hit.a;
   return [
-    "Open a practice case (Math / English / Economics), then select text and tap **Explain**, or ask about that case.",
+    "Open a practice case (Math / English / Economics), then ask about that case.",
     "",
     "Outside a case I only answer from the site guide: Demo-Practice, Full course, Message to Parents, FAQ.",
   ].join("\n");
@@ -78,14 +77,12 @@ function answerSiteFaq(query: string): string {
 
 export function FloatingAssistant() {
   const casePayload = usePracticeCase();
-  const { registerAssistant } = usePracticeCaseActions();
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
   const messagesRef = useRef<ChatMsg[]>([]);
   const caseRef = useRef(casePayload);
-  const pendingExplainRef = useRef<string | null>(null);
 
   useEffect(() => {
     messagesRef.current = messages;
@@ -104,13 +101,13 @@ export function FloatingAssistant() {
     setInput("");
   }, [casePayload?.taskId]);
 
-  const replyInstant = useCallback((text: string, mode: "explain" | "ask") => {
+  const replyInstant = useCallback((text: string) => {
     const trimmed = text.trim();
     if (!trimmed) return;
     const userMsg: ChatMsg = { id: crypto.randomUUID(), role: "user", text: trimmed };
     const caseNow = caseRef.current;
     const answer = caseNow
-      ? answerFromCaseDatabase(caseNow, trimmed, mode)
+      ? answerFromCaseDatabase(caseNow, trimmed, "ask")
       : answerSiteFaq(trimmed);
     const assistantMsg: ChatMsg = {
       id: crypto.randomUUID(),
@@ -121,32 +118,9 @@ export function FloatingAssistant() {
     setInput("");
   }, []);
 
-  const openWithExplain = useCallback(
-    (selection: string) => {
-      setOpen(true);
-      pendingExplainRef.current = selection.trim();
-    },
-    [],
-  );
-
-  useEffect(() => {
-    registerAssistant({
-      openWithExplain,
-      openAndFocus: () => setOpen(true),
-    });
-    return () => registerAssistant(null);
-  }, [registerAssistant, openWithExplain]);
-
-  useEffect(() => {
-    if (!open || !pendingExplainRef.current) return;
-    const selection = pendingExplainRef.current;
-    pendingExplainRef.current = null;
-    replyInstant(selection, "explain");
-  }, [open, replyInstant]);
-
   function sendMessage(e: React.FormEvent) {
     e.preventDefault();
-    replyInstant(input, "ask");
+    replyInstant(input);
   }
 
   const suggestions = casePayload
@@ -204,7 +178,7 @@ export function FloatingAssistant() {
               <div className="space-y-3">
                 <p className="px-1 text-xs leading-relaxed text-muted-foreground">
                   {casePayload
-                    ? "Answers come instantly from this case’s authored stem and solution notes (not a free-form AI model). Select text → Explain, or ask about the case."
+                    ? "Answers come instantly from this case’s authored stem and solution notes (not a free-form AI model). Ask about the case."
                     : "Open a practice case to query its explanation bank. Outside a case I only answer site-guide questions."}
                 </p>
                 <div className="flex flex-wrap gap-1.5">

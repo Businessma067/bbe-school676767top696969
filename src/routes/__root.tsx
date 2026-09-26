@@ -31,10 +31,6 @@ const FloatingAssistant = lazyNamed(
   () => import("../components/FloatingAssistant"),
   "FloatingAssistant",
 );
-const ExplainSelectionChip = lazyNamed(
-  () => import("../components/ExplainSelectionChip"),
-  "ExplainSelectionChip",
-);
 
 function NotFoundComponent() {
   return (
@@ -204,7 +200,6 @@ function RootComponent() {
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
           <DeferredChrome>
-            <ExplainSelectionChip />
             <FloatingAssistant />
           </DeferredChrome>
         </PracticeCaseProvider>
