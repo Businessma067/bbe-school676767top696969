@@ -27,7 +27,7 @@
         "**D.** → True\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=78$$\n\n$$1x-1y=54$$\n\n$$1\\cdot (-1) = -1$$\n\n$$1\\cdot 1 = 1$$\n\n$$\\Delta = -1 - 1$$\n\n$$\\Delta = -2$$\n\n$$78\\cdot (-1) = -78$$\n\n$$1\\cdot 54 = 54$$\n\n$$-78 - 54 = -132$$\n\n$$x = \\frac{-132}{-2}$$\n\n$$x = 66$$\n\n$$1\\cdot 54 = 54$$\n\n$$78\\cdot 1 = 78$$\n\n$$54 - 78 = -24$$\n\n$$y = \\frac{-24}{-2}$$\n\n$$y = 12$$\n\nThe system gives $66$ km/h for still-air drone speed, exactly as claimed.\n\nSo the statement is True.",
         "**E.** → False\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=46$$\n\n$$2x+5y=158$$\n\n$$1\\cdot 5 = 5$$\n\n$$1\\cdot 2 = 2$$\n\n$$\\Delta = 5 - 2$$\n\n$$\\Delta = 3$$\n\n$$46\\cdot 5 = 230$$\n\n$$1\\cdot 158 = 158$$\n\n$$230 - 158 = 72$$\n\n$$x = \\frac{72}{3}$$\n\n$$x = 24$$\n\n$$1\\cdot 158 = 158$$\n\n$$46\\cdot 2 = 92$$\n\n$$158 - 92 = 66$$\n\n$$y = \\frac{66}{3}$$\n\n$$y = 22$$\n\nThe system gives $24$ for muffin trays, not $28$.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 61,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: tickets, mixture, ages_digits, rates_work, systems\n\nA. solve an observatory's two-price admission record.\nB. blend greenhouse soils to a target nitrogen level.\nC. solve ages from a sum and a difference.\nD. recover drone and wind speeds.\nE. solve a bakery production system.",
       "placeholder": false
@@ -59,7 +59,7 @@
         "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$3x+2y=94$$\n\n$$1x+4y=88$$\n\n$$3\\cdot 4 = 12$$\n\n$$2\\cdot 1 = 2$$\n\n$$\\Delta = 12 - 2$$\n\n$$\\Delta = 10$$\n\n$$94\\cdot 4 = 376$$\n\n$$2\\cdot 88 = 176$$\n\n$$376 - 176 = 200$$\n\n$$x = \\frac{200}{10}$$\n\n$$x = 20$$\n\n$$3\\cdot 88 = 264$$\n\n$$94\\cdot 1 = 94$$\n\n$$264 - 94 = 170$$\n\n$$y = \\frac{170}{10}$$\n\n$$y = 17$$\n\nThe system gives $20$ for bronze batches, not $15$.\n\nSo the statement is False.",
         "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=96$$\n\n$$45x+27y=3312$$\n\n$$1\\cdot 27 = 27$$\n\n$$1\\cdot 45 = 45$$\n\n$$\\Delta = 27 - 45$$\n\n$$\\Delta = -18$$\n\n$$96\\cdot 27 = 2592$$\n\n$$1\\cdot 3312 = 3312$$\n\n$$2592 - 3312 = -720$$\n\n$$x = \\frac{-720}{-18}$$\n\n$$x = 40$$\n\n$$1\\cdot 3312 = 3312$$\n\n$$96\\cdot 45 = 4320$$\n\n$$3312 - 4320 = -1008$$\n\n$$y = \\frac{-1008}{-18}$$\n\n$$y = 56$$\n\nThe system gives $40$ for VIP passes, exactly as claimed.\n\nSo the statement is True."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 62,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: mixture, ages_digits, rates_work, systems, tickets\n\nA. mix two antifreeze strengths.\nB. translate a past age ratio and current sum.\nC. split a combined printing rate.\nD. balance foundry batches across two resources.\nE. recover a festival's VIP pass count.",
       "placeholder": false
@@ -91,7 +91,7 @@
         "**D.** → True\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=85$$\n\n$$24x+14y=1770$$\n\n$$1\\cdot 14 = 14$$\n\n$$1\\cdot 24 = 24$$\n\n$$\\Delta = 14 - 24$$\n\n$$\\Delta = -10$$\n\n$$85\\cdot 14 = 1190$$\n\n$$1\\cdot 1770 = 1770$$\n\n$$1190 - 1770 = -580$$\n\n$$x = \\frac{-580}{-10}$$\n\n$$x = 58$$\n\n$$1\\cdot 1770 = 1770$$\n\n$$85\\cdot 24 = 2040$$\n\n$$1770 - 2040 = -270$$\n\n$$y = \\frac{-270}{-10}$$\n\n$$y = 27$$\n\nThe system gives $58$ for car fares, exactly as claimed.\n\nSo the statement is True.",
         "**E.** → False\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=40$$\n\n$$21x+12y=624$$\n\n$$1\\cdot 12 = 12$$\n\n$$1\\cdot 21 = 21$$\n\n$$\\Delta = 12 - 21$$\n\n$$\\Delta = -9$$\n\n$$40\\cdot 12 = 480$$\n\n$$1\\cdot 624 = 624$$\n\n$$480 - 624 = -144$$\n\n$$x = \\frac{-144}{-9}$$\n\n$$x = 16$$\n\n$$1\\cdot 624 = 624$$\n\n$$40\\cdot 21 = 840$$\n\n$$624 - 840 = -216$$\n\n$$y = \\frac{-216}{-9}$$\n\n$$y = 24$$\n\nThe system gives $16$ kg for kilograms of premium beans, not $21$ kg.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 63,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: ages_digits, rates_work, systems, tickets, mixture\n\nA. combine present and future age ratios.\nB. solve opposite-direction cycling speeds.\nC. classify duplicate textile constraints.\nD. audit a ferry's mixed vehicle fares.\nE. balance coffee weights against an average cost.",
       "placeholder": false
@@ -123,7 +123,7 @@
         "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=75$$\n\n$$42x+18y=1950$$\n\n$$1\\cdot 18 = 18$$\n\n$$1\\cdot 42 = 42$$\n\n$$\\Delta = 18 - 42$$\n\n$$\\Delta = -24$$\n\n$$75\\cdot 18 = 1350$$\n\n$$1\\cdot 1950 = 1950$$\n\n$$1350 - 1950 = -600$$\n\n$$x = \\frac{-600}{-24}$$\n\n$$x = 25$$\n\n$$1\\cdot 1950 = 1950$$\n\n$$75\\cdot 42 = 3150$$\n\n$$1950 - 3150 = -1200$$\n\n$$y = \\frac{-1200}{-24}$$\n\n$$y = 50$$\n\nThe system gives $25$ tons for tons of rich ore, not $19$ tons.\n\nSo the statement is False.",
         "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=74$$\n\n$$1x-1y=18$$\n\n$$1\\cdot (-1) = -1$$\n\n$$1\\cdot 1 = 1$$\n\n$$\\Delta = -1 - 1$$\n\n$$\\Delta = -2$$\n\n$$74\\cdot (-1) = -74$$\n\n$$1\\cdot 18 = 18$$\n\n$$-74 - 18 = -92$$\n\n$$x = \\frac{-92}{-2}$$\n\n$$x = 46$$\n\n$$1\\cdot 18 = 18$$\n\n$$74\\cdot 1 = 74$$\n\n$$18 - 74 = -56$$\n\n$$y = \\frac{-56}{-2}$$\n\n$$y = 28$$\n\nThe system gives $46$ years for curator's current age, exactly as claimed.\n\nSo the statement is True."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 64,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: rates_work, systems, tickets, mixture, ages_digits\n\nA. separate ferry and current speeds.\nB. solve two ecology kit constraints.\nC. separate color and monochrome pages on an invoice.\nD. construct a copper-ore shipment.\nE. use an invariant age gap with a current total.",
       "placeholder": false
@@ -155,7 +155,7 @@
         "**D.** → True\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=55$$\n\n$$1x-2y=16$$\n\n$$1\\cdot (-2) = -2$$\n\n$$1\\cdot 1 = 1$$\n\n$$\\Delta = -2 - 1$$\n\n$$\\Delta = -3$$\n\n$$55\\cdot (-2) = -110$$\n\n$$1\\cdot 16 = 16$$\n\n$$-110 - 16 = -126$$\n\n$$x = \\frac{-126}{-3}$$\n\n$$x = 42$$\n\n$$1\\cdot 16 = 16$$\n\n$$55\\cdot 1 = 55$$\n\n$$16 - 55 = -39$$\n\n$$y = \\frac{-39}{-3}$$\n\n$$y = 13$$\n\nThe system gives $42$ years for pilot's present age, exactly as claimed.\n\nSo the statement is True.",
         "**E.** → False\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=46$$\n\n$$1x-1y=8$$\n\n$$1\\cdot (-1) = -1$$\n\n$$1\\cdot 1 = 1$$\n\n$$\\Delta = -1 - 1$$\n\n$$\\Delta = -2$$\n\n$$46\\cdot (-1) = -46$$\n\n$$1\\cdot 8 = 8$$\n\n$$-46 - 8 = -54$$\n\n$$x = \\frac{-54}{-2}$$\n\n$$x = 27$$\n\n$$1\\cdot 8 = 8$$\n\n$$46\\cdot 1 = 46$$\n\n$$8 - 46 = -38$$\n\n$$y = \\frac{-38}{-2}$$\n\n$$y = 19$$\n\nThe system gives $27$ panels/day for crew A rate, not $31$ panels/day.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "2/5",
       "sort_order": 65,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: systems, tickets, mixture, ages_digits, rates_work\n\nA. detect inconsistent shipping records.\nB. solve a ski lodge's rental mix.\nC. dilute saline to a clinical concentration.\nD. translate a future affine age relation.\nE. determine two installation crew rates.",
       "placeholder": false
@@ -187,7 +187,7 @@
         "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=610$$\n\n$$1x-1y=530$$\n\n$$1\\cdot (-1) = -1$$\n\n$$1\\cdot 1 = 1$$\n\n$$\\Delta = -1 - 1$$\n\n$$\\Delta = -2$$\n\n$$610\\cdot (-1) = -610$$\n\n$$1\\cdot 530 = 530$$\n\n$$-610 - 530 = -1140$$\n\n$$x = \\frac{-1140}{-2}$$\n\n$$x = 570$$\n\n$$1\\cdot 530 = 530$$\n\n$$610\\cdot 1 = 610$$\n\n$$530 - 610 = -80$$\n\n$$y = \\frac{-80}{-2}$$\n\n$$y = 40$$\n\nThe system gives $570$ km/h for still-air plane speed, not $560$ km/h.\n\nSo the statement is False.",
         "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=70$$\n\n$$7x+4y=370$$\n\n$$1\\cdot 4 = 4$$\n\n$$1\\cdot 7 = 7$$\n\n$$\\Delta = 4 - 7$$\n\n$$\\Delta = -3$$\n\n$$70\\cdot 4 = 280$$\n\n$$1\\cdot 370 = 370$$\n\n$$280 - 370 = -90$$\n\n$$x = \\frac{-90}{-3}$$\n\n$$x = 30$$\n\n$$1\\cdot 370 = 370$$\n\n$$70\\cdot 7 = 490$$\n\n$$370 - 490 = -120$$\n\n$$y = \\frac{-120}{-3}$$\n\n$$y = 40$$\n\nThe system gives $30$ for chemistry kits, exactly as claimed.\n\nSo the statement is True."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "2/5",
       "sort_order": 66,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: tickets, mixture, ages_digits, rates_work, systems\n\nA. infer basket sizes from a market's revenue.\nB. mix mural paints by pigment percentage.\nC. solve an age relation with an offset.\nD. infer still-air aircraft speed.\nE. determine a school lab-kit mix.",
       "placeholder": false
@@ -219,7 +219,7 @@
         "**D.** → True\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$5x+3y=144$$\n\n$$2x+4y=108$$\n\n$$5\\cdot 4 = 20$$\n\n$$3\\cdot 2 = 6$$\n\n$$\\Delta = 20 - 6$$\n\n$$\\Delta = 14$$\n\n$$144\\cdot 4 = 576$$\n\n$$3\\cdot 108 = 324$$\n\n$$576 - 324 = 252$$\n\n$$x = \\frac{252}{14}$$\n\n$$x = 18$$\n\n$$5\\cdot 108 = 540$$\n\n$$144\\cdot 2 = 288$$\n\n$$540 - 288 = 252$$\n\n$$y = \\frac{252}{14}$$\n\n$$y = 18$$\n\nThe system gives $18$ for apple rows, exactly as claimed.\n\nSo the statement is True.",
         "**E.** → False\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=110$$\n\n$$31x+19y=2606$$\n\n$$1\\cdot 19 = 19$$\n\n$$1\\cdot 31 = 31$$\n\n$$\\Delta = 19 - 31$$\n\n$$\\Delta = -12$$\n\n$$110\\cdot 19 = 2090$$\n\n$$1\\cdot 2606 = 2606$$\n\n$$2090 - 2606 = -516$$\n\n$$x = \\frac{-516}{-12}$$\n\n$$x = 43$$\n\n$$1\\cdot 2606 = 2606$$\n\n$$110\\cdot 31 = 3410$$\n\n$$2606 - 3410 = -804$$\n\n$$y = \\frac{-804}{-12}$$\n\n$$y = 67$$\n\nThe system gives $43$ for VR wristbands, not $50$.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "2/5",
       "sort_order": 67,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: mixture, ages_digits, rates_work, systems, tickets\n\nA. blend two biodiesel grades.\nB. combine a past ratio with a future total.\nC. split flow between unequal pumps.\nD. solve orchard land and irrigation constraints.\nE. reconstruct a museum wristband ledger.",
       "placeholder": false
@@ -251,7 +251,7 @@
         "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=64$$\n\n$$120x+68y=5704$$\n\n$$1\\cdot 68 = 68$$\n\n$$1\\cdot 120 = 120$$\n\n$$\\Delta = 68 - 120$$\n\n$$\\Delta = -52$$\n\n$$64\\cdot 68 = 4352$$\n\n$$1\\cdot 5704 = 5704$$\n\n$$4352 - 5704 = -1352$$\n\n$$x = \\frac{-1352}{-52}$$\n\n$$x = 26$$\n\n$$1\\cdot 5704 = 5704$$\n\n$$64\\cdot 120 = 7680$$\n\n$$5704 - 7680 = -1976$$\n\n$$y = \\frac{-1976}{-52}$$\n\n$$y = 38$$\n\nThe system gives $26$ for sleeper berths, not $22$.\n\nSo the statement is False.",
         "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=90$$\n\n$$28x+16y=1980$$\n\n$$1\\cdot 16 = 16$$\n\n$$1\\cdot 28 = 28$$\n\n$$\\Delta = 16 - 28$$\n\n$$\\Delta = -12$$\n\n$$90\\cdot 16 = 1440$$\n\n$$1\\cdot 1980 = 1980$$\n\n$$1440 - 1980 = -540$$\n\n$$x = \\frac{-540}{-12}$$\n\n$$x = 45$$\n\n$$1\\cdot 1980 = 1980$$\n\n$$90\\cdot 28 = 2520$$\n\n$$1980 - 2520 = -540$$\n\n$$y = \\frac{-540}{-12}$$\n\n$$y = 45$$\n\nThe system gives $45$ tons for tons of high-protein meal, exactly as claimed.\n\nSo the statement is True."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "2/5",
       "sort_order": 68,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: ages_digits, rates_work, systems, tickets, mixture\n\nA. solve a parent-child age system with a future ratio.\nB. solve courier speeds from meeting time.\nC. recover hospital staffing counts.\nD. separate sleeper and coach bookings.\nE. formulate animal feed at a target protein rate.",
       "placeholder": false
@@ -283,7 +283,7 @@
         "**D.** → True\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=40$$\n\n$$75x+30y=1920$$\n\n$$1\\cdot 30 = 30$$\n\n$$1\\cdot 75 = 75$$\n\n$$\\Delta = 30 - 75$$\n\n$$\\Delta = -45$$\n\n$$40\\cdot 30 = 1200$$\n\n$$1\\cdot 1920 = 1920$$\n\n$$1200 - 1920 = -720$$\n\n$$x = \\frac{-720}{-45}$$\n\n$$x = 16$$\n\n$$1\\cdot 1920 = 1920$$\n\n$$40\\cdot 75 = 3000$$\n\n$$1920 - 3000 = -1080$$\n\n$$y = \\frac{-1080}{-45}$$\n\n$$y = 24$$\n\nThe system gives $16$ grams for grams of rich gold alloy, exactly as claimed.\n\nSo the statement is True.",
         "**E.** → False\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x-1y=7$$\n\n$$2x-3y=-4$$\n\n$$1\\cdot (-3) = -3$$\n\n$$(-1)\\cdot 2 = -2$$\n\n$$\\Delta = -3 - (-2)$$\n\n$$\\Delta = -1$$\n\n$$7\\cdot (-3) = -21$$\n\n$$(-1)\\cdot (-4) = 4$$\n\n$$-21 - 4 = -25$$\n\n$$x = \\frac{-25}{-1}$$\n\n$$x = 25$$\n\n$$1\\cdot (-4) = -4$$\n\n$$7\\cdot 2 = 14$$\n\n$$-4 - 14 = -18$$\n\n$$y = \\frac{-18}{-1}$$\n\n$$y = 18$$\n\nThe system gives $25$ years for older sibling's age, not $28$ years.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "3/5",
       "sort_order": 69,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: rates_work, systems, tickets, mixture, ages_digits\n\nA. divide work rates in a fixed ratio.\nB. classify proportional event-staging constraints.\nC. solve a charity raffle's ticket composition.\nD. combine jewelry alloys to a specified fineness.\nE. use an age gap and a past fractional ratio.",
       "placeholder": false
@@ -315,7 +315,7 @@
         "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+2y=96$$\n\n$$2x-1y=57$$\n\n$$1\\cdot (-1) = -1$$\n\n$$2\\cdot 2 = 4$$\n\n$$\\Delta = -1 - 4$$\n\n$$\\Delta = -5$$\n\n$$96\\cdot (-1) = -96$$\n\n$$2\\cdot 57 = 114$$\n\n$$-96 - 114 = -210$$\n\n$$x = \\frac{-210}{-5}$$\n\n$$x = 42$$\n\n$$1\\cdot 57 = 57$$\n\n$$96\\cdot 2 = 192$$\n\n$$57 - 192 = -135$$\n\n$$y = \\frac{-135}{-5}$$\n\n$$y = 27$$\n\nThe system gives $42$ years for director's age, not $36$ years.\n\nSo the statement is False.",
         "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=170$$\n\n$$1x-1y=30$$\n\n$$1\\cdot (-1) = -1$$\n\n$$1\\cdot 1 = 1$$\n\n$$\\Delta = -1 - 1$$\n\n$$\\Delta = -2$$\n\n$$170\\cdot (-1) = -170$$\n\n$$1\\cdot 30 = 30$$\n\n$$-170 - 30 = -200$$\n\n$$x = \\frac{-200}{-2}$$\n\n$$x = 100$$\n\n$$1\\cdot 30 = 30$$\n\n$$170\\cdot 1 = 170$$\n\n$$30 - 170 = -140$$\n\n$$y = \\frac{-140}{-2}$$\n\n$$y = 70$$\n\nThe system gives $70$ km/h for westbound train speed, exactly as claimed.\n\nSo the statement is True."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "3/5",
       "sort_order": 70,
       "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: systems, tickets, mixture, ages_digits, rates_work\n\nA. solve telecom node allocations.\nB. derive overnight marina rentals from receipts.\nC. prepare disinfectant from two alcohol strengths.\nD. solve a general two-age linear system.\nE. find train speeds from closing speed.",
       "placeholder": false
@@ -347,7 +347,7 @@
         "**D.** → False\n\nThe gap between the two recovered unknowns is their difference:\n\n$$\nd = x - y\n$$\n\nUsing the recovered solution values $x = 90$ and $y = 90$ as inputs for this claim:\n\nTheir difference is\n\n$$\nx - y = 90 - 90 = 0\n$$\n\nThe claim says the counts differ by $10$. We have $0 \\ne 10$.\n\nThe shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\n3D revenue uses the recovered count:\n\n$$\n16 \\times 90 = 1{,}440\n$$\n\nThe claim asserts\n\n$$1600.$$\n\n The gap is \\$160.\n\nSo the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "3/5",
       "sort_order": 71,
       "solution_overview": "At a cinema gala, 180 patrons each bought one ticket. A 3D ticket costs \\$16 and a standard ticket costs \\$11. The box office recorded \\$2{,}430.\n\nLet $x$ = number of 3D tickets and $y$ = number of standard tickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultiply (1) by $11$ and subtract from (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y = 90\n$$\n\n3D revenue is $16 \\times 90 = 1{,}440$, and standard revenue is $11 \\times 90 = 990$.",
       "placeholder": false
@@ -379,7 +379,7 @@
         "**D.** → False\n\nThe overview recovered $y = 28$ liters of the weaker drink. The claim asserts\n\n$$30$$\n\nComparing,\n\n$$28 \\ne 30.$$\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered pair from the overview; this letter only tests the named comparison.\n\nThe recovered source volumes are $x = 42$ and $y = 28$. Equality would require $x = y$. Here\n\n$$42 \\ne 28.$$\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "3/5",
       "sort_order": 72,
       "solution_overview": "A juice bar prepares 70 liters from a $35\\%$ mango drink and a $10\\%$ mango drink so the blend is $25\\%$ mango.\n\nLet $x$ = liters of the stronger drink and $y$ = liters of the weaker drink.\n\n$$x + y = 70 \\tag{1}$$\n\n$$\n35x + 10y = 25 \\times 70 = 1750 \\tag{2}\n$$\n\nMultiply (1) by $10$ and subtract from (2):\n\n$$25x = 1050$$\n\n$$\nx = 42,\\qquad y = 28\n$$",
       "placeholder": false
@@ -475,7 +475,7 @@
         "**D.** → False\n\nUsing the same setup, use the recovered values from the overview for this claim-specific check.\n\nTest $(10,5)$ in the first equation:\n\n$$2\\cdot 10 = 20$$\n\n$$5\\cdot 5 = 25$$\n\n$$20 + 25 = 45$$\n\nThe right-hand side is $40$, and $45 \\ne 40$, so the point fails both equations.\n\nSo the statement is False.",
         "**E.** → False\n\nFrom equation (1), solve for $x$ in terms of $y$:\n\n$$\n2x + 5y = 40\n$$\n\n$$\n2x = 40 - 5y\n$$\n\n$$\nx = 20 - \\tfrac{5}{2}y\n$$\n\nDifferent admissible $y$ values produce different $x$ values. For example $y = 0$ gives $x = 20$, while $y = 4$ gives\n\n$$\nx = 20 - \\tfrac{5}{2}(4) = 20 - 10 = 10\n$$\n\nso not every solution has $x = 20$.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "4/5",
       "sort_order": 75,
       "solution_overview": "Two production records are\n\n$$2x + 5y = 40 \\tag{1}$$\n\n$$6x + 15y = 120 \\tag{2}$$\n\nMultiplying (1) by $3$ yields exactly (2), so the rows are scalar multiples. The determinant is\n\n$$2 \\cdot 15 - 5 \\cdot 6 = 0$$\n\nand the constants scale by the same factor, so the system is consistent and dependent: one line, infinitely many real solutions.\n\nSolving (1) for $x$ gives the parameter form\n\n$$x = 20 - \\tfrac{5}{2}y$$\n\nIn particular, $(10,5)$ fails (1) because $2(10)+5(5)=45 \\ne 40$, while $(10,4)$ works.",
       "placeholder": false
@@ -539,7 +539,7 @@
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nPremium tea's cost contribution is\n\n$$\n30 \\times 20 = 600\n$$\n\nThe claim asserts\n\n$$780.$$\n\n Comparing,\n\n$$600 \\ne 780.$$\n\nSo the statement is False.",
         "**E.** → False\n\nThe overview recovered $y = 30$ kg of standard tea. The claim asserts\n\n$$32$$\n\nComparing,\n\n$$30 \\ne 32.$$\n\nSo the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 77,
       "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg with standard tea at \\$18/kg so the total cost is \\$1{,}140.\n\nLet $x$ = kg of premium and $y$ = kg of standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultiply (1) by $18$ and subtract from (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y = 30\n$$\n\nPremium cost is $30 \\times 20 = 600$.",
       "placeholder": false
@@ -603,7 +603,7 @@
         "**D.** → False\n\nRead the recovered unknown from the shared solve, then compare it with the claim:\n\n$$\ny = 4\n$$\n\nCompare the computed value with the claim (the tide speed is $6$). Comparing those figures:\n\n$$\n4 \\ne 6\n$$\n\nThe two sides do not agree.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\nUpstream speed is $x - y = 17$, so three hours cover\n\n$$\n3 \\times 17 = 51\n$$\n\nThe claim asserts\n\n$$54$$\n\nComparing,\n\n$$51 \\ne 54.$$\n\nSo the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 79,
       "solution_overview": "A boat travels downstream at $25$ knots and upstream at $17$ knots against the same tide.\n\nLet $x$ = still-water speed and $y$ = tide speed.\n\n$$x + y = 25 \\tag{1}$$\n\n$$x - y = 17 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 42$$\n\n$$\nx = 21,\\qquad y = 4\n$$\n\nThree upstream hours cover $3(x-y) = 3 \\times 17 = 51$ nautical miles.",
       "placeholder": false
@@ -635,7 +635,7 @@
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nTotal baskets are\n\n$$\nx + y = 18 + 17 = 35\n$$\n\nThe claim asserts\n\n$$36$$\n\nComparing,\n\n$$35 \\ne 36.$$\n\nThe displayed comparison settles the claim against the stated figure.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\nCod baskets use $4$ units each of the first resource:\n\n$$\n4 \\times 18 = 72\n$$\n\nThe claim asserts\n\n$$70$$\n\nComparing,\n\n$$72 \\ne 70.$$\n\nSo the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 80,
       "solution_overview": "A packing shift uses resources\n\n$$4x + 3y = 123 \\tag{1}$$\n\n$$2x + 5y = 121 \\tag{2}$$\n\nwhere $x$ counts cod baskets and $y$ counts salmon baskets.\n\nEliminate $x$: multiply (2) by $2$ and subtract from (1),\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$\ny = 17,\\qquad x = 18\n$$\n\nTotal baskets: $18 + 17 = 35$. Cod's first-resource use: $4 \\times 18 = 72$.",
       "placeholder": false
