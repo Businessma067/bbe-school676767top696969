@@ -343,8 +343,12 @@ export type Database = {
           id: string
           invoice_id: string
           last_status_modified_at: string | null
+          masked_pan: string | null
           page_url: string | null
           paid_at: string | null
+          payer_country: string | null
+          payer_method: string | null
+          payer_payment_system: string | null
           payment_type: string
           product_name: string
           product_slug: string
@@ -368,8 +372,12 @@ export type Database = {
           id?: string
           invoice_id: string
           last_status_modified_at?: string | null
+          masked_pan?: string | null
           page_url?: string | null
           paid_at?: string | null
+          payer_country?: string | null
+          payer_method?: string | null
+          payer_payment_system?: string | null
           payment_type?: string
           product_name: string
           product_slug: string
@@ -393,8 +401,12 @@ export type Database = {
           id?: string
           invoice_id?: string
           last_status_modified_at?: string | null
+          masked_pan?: string | null
           page_url?: string | null
           paid_at?: string | null
+          payer_country?: string | null
+          payer_method?: string | null
+          payer_payment_system?: string | null
           payment_type?: string
           product_name?: string
           product_slug?: string
