@@ -2130,7 +2130,7 @@
   {
     "case_id": "WISO 3.4.13",
     "title": "FunBike: assets and current-asset intensity",
-    "context": "The simplified balance sheet of FunBike GmbH as per 31.12.20xx (amounts in euros) shows on the asset page plots and buildings 750,000, technical assets and business equipment 2,330.000, financial assets 240,000, inventories 5,400,000, receivables from deliveries and services 598,000 as well as bank balances and cash stock 320,250. The liability side includes cash deposits of the shareholders 525,000, profit 3,614,250, provisions 2,000,000, bank loans 3,199,000 and liabilities from deliveries and services 300,000. Total assets and capital are 9,638,250 each. Evaluate the following statements on this balance sheet:",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nEvaluate the following statements on this balance sheet:",
     "statements": [
       "Total assets and capital are called balance sheet totals and amount to EUR 9,638,250 each.",
       "The assets of FunBike GmbH exceed four million euros.",
@@ -2149,7 +2149,7 @@
   {
     "case_id": "WISO 3.4.14",
     "title": "FunBike: capital structure and golden balance sheet rule",
-    "context": "The simplified balance sheet of FunBike GmbH as per 31.12.20xx (amounts in euros) shows cash deposits of the shareholders 525,000, profit 3.614,250, provisions 2,000,000, bank loans 3,199,000 and liabilities from deliveries and services 300,000. The balance sheet total amounts to 9.638,250 euros, the fixed assets 3.320,000 euros.",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro) — equity and liabilities:\n\n| Item | Amount |\n| --- | ---: |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nFixed assets amount to 3 320 000 euros. Evaluate the following statements on financing:",
     "statements": [
       "The equity amount is 4.139,250 euros.",
       "Some 57 percent of the capital is debt capital, most of which is bank loans.",
@@ -2168,7 +2168,7 @@
   {
     "case_id": "WISO 3.4.15",
     "title": "Income statement of FunBike GmbH",
-    "context": "In the G&V, the expenses are deducted from revenues and other revenues. The profit and loss account of FunBike GmbH as at 31.12.20xx shows sales revenues of 70,656,000 euros, material expenses 53,175,000 euros, personnel expenses 7,900,000 euros, depreciation and amortization 1,800,000 euros, other operating expenses 2,875,000 euros, interest income 12,000 euros, interest expense 99,000 euros, taxes 1,204,750 euros and annual result 3,614,250 euros. Evaluate the following statements:",
+    "context": "In the income statement, expenses are deducted from revenue and other income.\n\nIncome statement of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| Revenue | 70 656 000 |\n| Cost of materials | 53 175 000 |\n| Personnel expenses | 7 900 000 |\n| Depreciation | 1 800 000 |\n| Other operating expenses | 2 875 000 |\n| Operating result (EBIT) | **4 906 000** |\n| Interest income | 12 000 |\n| Interest expense | 99 000 |\n| Financial result | −87 000 |\n| Earnings before taxes | **4 819 000** |\n| Taxes | 1 204 750 |\n| Profit for the year | **3 614 250** |\n\nEvaluate the following statements:",
     "statements": [
       "If the sum of proceeds and revenues exceeds the expenses, a profit is achieved.",
       "The G&V's expenses include wages and salaries, material costs, rent, insurance costs, energy costs, depreciation of tangible assets and the creation of provisions.",
@@ -2415,7 +2415,7 @@
   {
     "case_id": "WISO 3.4.28",
     "title": "Income statement of FunBike GmbH",
-    "context": "Profit and loss account of FunBike GmbH as at 31.12.20xx (Euro): Revenue 70 656 000, Material expenses 53 175 000, Personnel expenses 7 900 000, Depreciation 1 800 000, Other operating expenses 2 875 000, EBIT 4 906 000, Interest income 12 000, Interest expense 99 000, Financial result -87 000, Earnings before taxes 4 819 000, Taxes 1 204 750, Annual result 3 614 250. Evaluate the following statements:",
+    "context": "Income statement of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| Revenue | 70 656 000 |\n| Cost of materials | 53 175 000 |\n| Personnel expenses | 7 900 000 |\n| Depreciation | 1 800 000 |\n| Other operating expenses | 2 875 000 |\n| Operating result (EBIT) | **4 906 000** |\n| Interest income | 12 000 |\n| Interest expense | 99 000 |\n| Financial result | −87 000 |\n| Earnings before taxes | **4 819 000** |\n| Taxes | 1 204 750 |\n| Profit for the year | **3 614 250** |\n\nEvaluate the following statements:",
     "statements": [
       "Earnings before interest and taxes (EBIT) are EUR 4 906 000.",
       "The material expenditure clearly exceeds the personnel costs.",
@@ -2472,7 +2472,7 @@
   {
     "case_id": "WISO 3.4.31",
     "title": "Current-asset intensity and golden balance sheet rule",
-    "context": "Balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Land and buildings 750 000, technical installations 2 330 000, financial assets 240 000, inventories 5 400 000, receivables 598 000, bank balance 320 250, balance sheet total 9 638 250.",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro) — assets:\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n\nEvaluate the following statements:",
     "statements": [
       "Assets that are to remain in the company for more than a year are assets, such as buildings and machinery.",
       "Current assets usually remain in the company for less than a year, for example stocks.",
@@ -2491,7 +2491,7 @@
   {
     "case_id": "WISO 3.4.32",
     "title": "Capital structure of FunBike GmbH",
-    "context": "Liabilities of FunBike GmbH (Euro): cash deposits 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from deliveries and services 300 000, total capital 9 638 250. Rate the following statements:",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro) — equity and liabilities:\n\n| Item | Amount |\n| --- | ---: |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nEvaluate the following statements:",
     "statements": [
       "The equity amount is 4 139 250 euros and is thus over four million euros.",
       "Around 57 percent of the capital is debt capital.",
@@ -2510,7 +2510,7 @@
   {
     "case_id": "WISO 3.4.33",
     "title": "FunBike: balance sheet equality without looking up",
-    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Assets - Land and buildings 750 000, technical assets and business equipment 2 330 000, financial assets 240 000, inventories 5 400 000, receivables from supplies and services 598 000, bank balances and cash stock 320 250; balance sheet total 9 638 250. Liabilities - cash contributions of the shareholders 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from supplies and services 300 000. Evaluate the following statements:",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nEvaluate the following statements:",
     "statements": [
       "Total assets and capital are 9 638 250 euros each.",
       "Equity is 525 000 + 3 614 250 = 4 139 250 euros.",
@@ -2529,7 +2529,7 @@
   {
     "case_id": "WISO 3.4.34",
     "title": "FunBike: fixed and current assets",
-    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Assets - Land and buildings 750 000, technical assets and business equipment 2 330 000, financial assets 240 000, inventories 5 400 000, receivables from supplies and services 598 000, bank balances and cash stock 320 250; balance sheet total 9 638 250. Liabilities - cash contributions of the shareholders 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from supplies and services 300 000. Assets that are to be bound for more than one year are considered fixed assets; shorter assets are considered current assets.",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nAssets that are to remain bound for more than one year are fixed assets; shorter-bound assets are current assets. Evaluate the following statements:",
     "statements": [
       "The fixed assets amount to 750 000 + 2 330 000 + 240 000 = 3 320 000 euros.",
       "Current assets are 5 400 000 + 598 000 + 320 250 = 6 318 250 euros.",
@@ -2548,7 +2548,7 @@
   {
     "case_id": "WISO 3.4.35",
     "title": "FunBike: equity, debt, ratio",
-    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Assets - Land and buildings 750 000, technical assets and business equipment 2 330 000, financial assets 240 000, inventories 5 400 000, receivables from supplies and services 598 000, bank balances and cash stock 320 250; balance sheet total 9 638 250. Liabilities - cash contributions of the shareholders 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from supplies and services 300 000. Evaluate the following statements of financing:",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nEvaluate the following statements of financing:",
     "statements": [
       "Around 57 percent of the capital is debt capital.",
       "The equity ratio is over 60 percent of the balance sheet total.",
@@ -2567,7 +2567,7 @@
   {
     "case_id": "WISO 3.4.36",
     "title": "FunBike: golden balance sheet rule",
-    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Assets - Land and buildings 750 000, technical assets and business equipment 2 330 000, financial assets 240 000, inventories 5 400 000, receivables from supplies and services 598 000, bank balances and cash stock 320 250; balance sheet total 9 638 250. Liabilities - cash contributions of the shareholders 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from supplies and services 300 000. Long-term assets are to be financed in a congruent manner.",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nLong-term bound assets should be financed in a maturity-congruent way. Evaluate the following statements:",
     "statements": [
       "The long-term assets of 3 320 000 euros are covered by equity of 4 139 250 euros more than, the golden balance sheet rule is fulfilled.",
       "Because 3,320,000 is larger than 4, 139, 250, FunBike breaks the golden balance rule.",
@@ -2586,7 +2586,7 @@
   {
     "case_id": "WISO 3.4.37",
     "title": "FunBike: income statement from sales to EBIT",
-    "context": "Profit and loss account of FunBike GmbH as at 31.12.20xx (Euro): sales revenue 70 656 000, material expenses 53 175 000, personnel expenses 7 900 000, depreciation 1 800 000, other operating expenses 2 875 000, earnings before interest and taxes (EBIT) 4 906 000, interest income 12 000, interest expense 99 000, financial result -87 000, earnings before taxes 4 819 000, taxes 1 204 750, Annual result 3 614 250. Rate the following statements:",
+    "context": "Income statement of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| Revenue | 70 656 000 |\n| Cost of materials | 53 175 000 |\n| Personnel expenses | 7 900 000 |\n| Depreciation | 1 800 000 |\n| Other operating expenses | 2 875 000 |\n| Operating result (EBIT) | **4 906 000** |\n| Interest income | 12 000 |\n| Interest expense | 99 000 |\n| Financial result | −87 000 |\n| Earnings before taxes | **4 819 000** |\n| Taxes | 1 204 750 |\n| Profit for the year | **3 614 250** |\n\nEvaluate the following statements:",
     "statements": [
       "Revenues minus the four operating expenses blocks result in EBIT of EUR 4 906 000.",
       "The financial result is 12 000 - 99 000 = - 87 000 euros.",
@@ -2605,7 +2605,7 @@
   {
     "case_id": "WISO 3.4.38",
     "title": "FunBike: profit in income statement and balance sheet",
-    "context": "Profit and loss account of FunBike GmbH as at 31.12.20xx (Euro): sales revenue 70 656 000, material expenses 53 175 000, personnel expenses 7 900 000, depreciation 1 800 000, other operating expenses 2 875 000, earnings before interest and taxes (EBIT) 4 906 000, interest income 12 000, interest expense 99 000, financial result -87 000, earnings before taxes 4 819 000, taxes 1 204 750, Earnings for the year 3 614 250. Cash deposits and profits for the year 3 614 250 are included in the balance sheet. Rate the following statements for double profit determination:",
+    "context": "Income statement of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| Revenue | 70 656 000 |\n| Cost of materials | 53 175 000 |\n| Personnel expenses | 7 900 000 |\n| Depreciation | 1 800 000 |\n| Other operating expenses | 2 875 000 |\n| Operating result (EBIT) | **4 906 000** |\n| Interest income | 12 000 |\n| Interest expense | 99 000 |\n| Financial result | −87 000 |\n| Earnings before taxes | **4 819 000** |\n| Taxes | 1 204 750 |\n| Profit for the year | **3 614 250** |\n\nThe balance sheet shows cash contributions of 525 000 and profit of 3 614 250. Evaluate the following statements on double profit determination:",
     "statements": [
       "The annual profit of G&V of 3 614 250 euros is the same as the profit on the balance sheet.",
       "Equity = cash contributions 525 000 + G&V profit 3 614 250 = 4 139 250 Euro.",
@@ -2624,7 +2624,7 @@
   {
     "case_id": "WISO 3.4.39",
     "title": "FunBike: current-asset intensity and asset shares",
-    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Assets - Land and buildings 750 000, technical assets and business equipment 2 330 000, financial assets 240 000, inventories 5 400 000, receivables from supplies and services 598 000, bank balances and cash stock 320 250; balance sheet total 9 638 250. Liabilities - cash contributions of the shareholders 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from supplies and services 300 000. Evaluate the following statements:",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nEvaluate the following statements:",
     "statements": [
       "The reserves of 5 400 000 euros in themselves exceed the total fixed assets of 3 320 000 euros.",
       "More than half of the balance sheet total is fixed assets.",
@@ -2643,7 +2643,7 @@
   {
     "case_id": "WISO 3.4.40",
     "title": "FunBike: ratios from balance sheet and income statement",
-    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro): Assets - Land and buildings 750 000, technical assets and business equipment 2 330 000, financial assets 240 000, inventories 5 400 000, receivables from supplies and services 598 000, bank balances and cash stock 320 250; balance sheet total 9 638 250. Liabilities - cash contributions of the shareholders 525 000, profit 3 614 250, provisions 2 000 000, bank loans 3 199 000, liabilities from supplies and services 300 000. Profit and loss account of FunBike GmbH as at 31.12.20xx (Euro): sales revenue 70 656 000, material expenses 53 175 000, personnel expenses 7 900 000, depreciation 1 800 000, other operating expenses 2 875 000, earnings before interest and taxes (EBIT) 4 906 000, interest income 12 000, interest expense 99 000, financial result -87 000, earnings before taxes 4 819 000, taxes 1 204 750, Annual result 3 614 250. Rate the following statements:",
+    "context": "The simplified balance sheet of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Land and buildings | 750 000 |\n| Technical assets and business equipment | 2 330 000 |\n| Financial assets | 240 000 |\n| Inventories | 5 400 000 |\n| Receivables from supplies and services | 598 000 |\n| Bank balances and cash stock | 320 250 |\n| Total assets / balance sheet total | **9 638 250** |\n| **EQUITY AND LIABILITIES** | |\n| Cash contributions of the shareholders | 525 000 |\n| Profit | 3 614 250 |\n| Provisions | 2 000 000 |\n| Bank loans | 3 199 000 |\n| Liabilities from supplies and services | 300 000 |\n| Total equity and liabilities | **9 638 250** |\n\nIncome statement of FunBike GmbH as at 31.12.20xx (Euro):\n\n| Item | Amount |\n| --- | ---: |\n| Revenue | 70 656 000 |\n| Cost of materials | 53 175 000 |\n| Personnel expenses | 7 900 000 |\n| Depreciation | 1 800 000 |\n| Other operating expenses | 2 875 000 |\n| Operating result (EBIT) | **4 906 000** |\n| Interest income | 12 000 |\n| Interest expense | 99 000 |\n| Financial result | −87 000 |\n| Earnings before taxes | **4 819 000** |\n| Taxes | 1 204 750 |\n| Profit for the year | **3 614 250** |\n\nEvaluate the following statements:",
     "statements": [
       "Debt ratio = 5 499 000 / 9 638 250 ᐅ 57 percent, as typical for FunBike.",
       "The material cost corresponds to more than 70 percent of the sales revenue.",
