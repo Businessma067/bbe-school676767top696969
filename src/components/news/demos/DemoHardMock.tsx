@@ -77,8 +77,10 @@ export function DemoHardMock({ caption }: DemoProps) {
     setQi(1);
     setVisited((v) => (v.includes(1) ? v : [...v, 1]));
     setSeconds((s) => s - 45);
-    if (api.scroll()) api.scroll()!.scrollTop = 0;
-    await api.wait(700);
+    await api.wait(500);
+    // Scroll into the new 5-statement cluster (don't leave the palette covering it)
+    await api.moveTo('[data-d="a0"]');
+    await api.wait(300);
 
     for (const i of [0, 2, 3]) {
       if (api.cancelled()) return;
@@ -99,7 +101,7 @@ export function DemoHardMock({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "news-uniq-scroll h-[420px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[480px] sm:p-5",
+            "news-uniq-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[600px] sm:p-5",
             fade ? "opacity-0" : "opacity-100",
           )}
         >

@@ -121,7 +121,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
       <div ref={stageRef} className="relative">
         <div
           className={cn(
-            "relative h-[420px] overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-opacity duration-500 sm:h-[480px]",
+            "relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-opacity duration-500 sm:h-[560px]",
             fade ? "opacity-0" : "opacity-100",
           )}
         >

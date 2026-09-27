@@ -84,7 +84,7 @@ export function DemoMathRoom({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "news-uniq-scroll h-[420px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[480px] sm:p-5",
+            "news-uniq-scroll h-[480px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[560px] sm:p-5",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
