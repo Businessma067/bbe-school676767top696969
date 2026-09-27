@@ -10,6 +10,12 @@ export const TRACK_STORAGE_KEY = "bbe-school-exam-track";
 /** Paths that belong to neither track (chooser / shared compare / account chrome). */
 const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso", "/dashboard", "/account"]);
 
+/** Shared news feed + posts (`/news`, `/news/<slug>`). */
+export function isNewsAppPath(pathname: string): boolean {
+  const path = stripLocalePrefix(pathname);
+  return path === "/news" || path.startsWith("/news/");
+}
+
 /**
  * Canonical path pairs for optional parallel-page mapping.
  * Keys are locale-stripped pathnames. Do not map multiple BBE paths onto the
@@ -49,7 +55,8 @@ export function isWisoPath(pathname: string): boolean {
 }
 
 export function isNeutralPath(pathname: string): boolean {
-  return NEUTRAL_PATHS.has(stripLocalePrefix(pathname));
+  const path = stripLocalePrefix(pathname);
+  return NEUTRAL_PATHS.has(path) || isNewsAppPath(path);
 }
 
 /** Track implied by the URL alone; null on shared/chooser pages. */
@@ -103,11 +110,23 @@ export function trackUiLang(track: ExamTrack): "en" | "de" {
  * When navigating into a track from outside it, return that track's default
  * language (BBE → en, WiSo → de). Null when staying on the same track or
  * targeting a neutral path.
+ *
+ * Shared news: leaving WiSo always opens the German feed (`/de/news`). BBE
+ * keeps the current locale. Clicks within news keep the locale via
+ * LocalizedLink / effectiveLangFromLocation.
  */
 export function entryLangForDestination(to: string, fromPathname: string): "en" | "de" | null {
+  const fromTrack = getExamTrackFromPath(fromPathname);
+
+  if (isNewsAppPath(to)) {
+    // Index → post (or back) stays on the same locale.
+    if (isNewsAppPath(fromPathname)) return null;
+    if (fromTrack === "wiso") return "de";
+    return null;
+  }
+
   const toTrack = getExamTrackFromPath(to);
   if (!toTrack) return null;
-  const fromTrack = getExamTrackFromPath(fromPathname);
   if (fromTrack === toTrack) return null;
   return trackUiLang(toTrack);
 }
