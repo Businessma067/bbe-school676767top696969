@@ -1,18 +1,30 @@
 import { useState } from "react";
-import { Check, Clock, Lock, UserRound } from "lucide-react";
+import { Clock, Lock, UserRound } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
 import { DemoShell, type DemoProps } from "./DemoShell";
+import { DemoStatementTable } from "./DemoStatementTable";
 import { useDemoPlayer } from "./useDemoPlayer";
 
 const ACCENT = "#E85D3A";
-const STMTS = [
-  "Capital includes rented ovens used every baking day.",
-  "Buying flour alone makes the bakery a primary-sector firm.",
-  "Retail shops are a tertiary-sector activity.",
-];
 
-/** Free Demo Exam: account gate → timed start → mark statements. */
+/** MockBuilder FIRST_QUESTION verbatim. */
+const QUESTION = {
+  caseId: "ECON-3.07",
+  chapter: "Chapter 3 · Focus on different types of businesses",
+  title: "Factors of production and business sectors",
+  context:
+    "A family-run bakery buys flour from local farms, bakes bread in its own rented workshop and sells it in two small shops in the city. The owner works in the bakery every day and employs four staff members.",
+  statements: [
+    "The rented workshop and the ovens are capital used in the production process.",
+    "Buying flour from local farms means the bakery itself operates in the primary sector.",
+    "Baking the bread is a secondary-sector activity, while running the two shops is tertiary.",
+    "The work of the owner is entrepreneurship, since the owner also organises the other factors of production and bears the risk.",
+    "Because the bakery is small and family-run, it cannot be described as profit-oriented.",
+  ],
+};
+
+/** Free Demo Exam: account gate → timed start → mark A,C,D on full 5-statement cluster. */
 export function DemoExamGate({ caption }: DemoProps) {
   const [gate, setGate] = useState(false);
   const [exam, setExam] = useState(false);
@@ -26,6 +38,7 @@ export function DemoExamGate({ caption }: DemoProps) {
     setExam(false);
     setMarks({});
     setSeconds(7200);
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
     await api.wait(500);
 
@@ -40,7 +53,7 @@ export function DemoExamGate({ caption }: DemoProps) {
     setExam(true);
     await api.wait(900);
 
-    for (const i of [0, 2]) {
+    for (const i of [0, 2, 3]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
@@ -56,7 +69,7 @@ export function DemoExamGate({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "news-uniq-scroll h-[340px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[400px] sm:p-5",
+            "news-uniq-scroll h-[420px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[480px] sm:p-5",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
@@ -99,7 +112,7 @@ export function DemoExamGate({ caption }: DemoProps) {
                   Question 1 / 24
                 </span>
                 <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-                  ECON-D.01
+                  {QUESTION.caseId}
                 </span>
                 <span className="ml-auto inline-flex items-center gap-1.5 rounded-lg border border-caramel-deep bg-caramel-deep px-2.5 py-1.5 text-[11px] font-bold tabular-nums text-primary-foreground">
                   <Clock className="h-3.5 w-3.5" />
@@ -107,31 +120,12 @@ export function DemoExamGate({ caption }: DemoProps) {
                   {String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}:00
                 </span>
               </div>
-              <h3 className="font-display text-base font-bold">Factors of production</h3>
-              <p className="mt-2 text-sm leading-relaxed text-foreground/90">
-                A family bakery rents ovens, buys flour from farms, and sells bread in two shops.
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+                {QUESTION.chapter}
               </p>
-              <ol className="mt-4 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-                {STMTS.map((s, i) => (
-                  <li key={i} className="flex items-center gap-3 px-3 py-2.5">
-                    <span className="w-5 text-center text-xs font-bold text-muted-foreground">
-                      {"ABC"[i]}.
-                    </span>
-                    <p className="flex-1 text-sm leading-snug">{s}</p>
-                    <span
-                      data-d={`m${i}`}
-                      className={cn(
-                        "grid h-6 w-6 place-items-center rounded border-2 transition-all",
-                        marks[i]
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-border bg-background",
-                      )}
-                    >
-                      {marks[i] ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
-                    </span>
-                  </li>
-                ))}
-              </ol>
+              <h3 className="mt-1 font-display text-base font-bold">{QUESTION.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-foreground/90">{QUESTION.context}</p>
+              <DemoStatementTable statements={QUESTION.statements} marks={marks} />
             </>
           )}
         </div>

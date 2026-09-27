@@ -1,23 +1,45 @@
 import { useState } from "react";
-import { Check, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
 import { DemoShell, type DemoProps } from "./DemoShell";
+import { DemoStatementTable } from "./DemoStatementTable";
 import { useDemoPlayer } from "./useDemoPlayer";
 
 const ACCENT = "#E85D3A";
 
-const Q1 = [
-  "Employees are internal stakeholders.",
-  "Only shareholders count as stakeholders.",
-  "Banks can be external stakeholders via lending.",
-];
-const Q2 = [
-  "Primary sector extracts raw materials.",
-  "A bakery's retail shops are primary-sector.",
-];
+const QUESTIONS = [
+  {
+    caseId: "ECON-3.12",
+    chapter: "Chapter 3 · Focus on different types of businesses",
+    title: "Stakeholders of a growing company",
+    context:
+      "A regional logistics company plans to open a new depot. Local residents complain about noise, employees ask for more shifts, and the bank that financed the fleet asks for updated figures.",
+    statements: [
+      "Employees are internal stakeholders, while local residents are external stakeholders.",
+      "The bank is a stakeholder because the repayment of its loan depends on the company's performance.",
+      "Only shareholders can be described as stakeholders of the company.",
+      "Conflicting stakeholder interests can force management to compromise between growth and local acceptance.",
+      "Banks can be external stakeholders through lending even when they hold no equity in the firm.",
+    ],
+  },
+  {
+    caseId: "ECON-3.07",
+    chapter: "Chapter 3 · Focus on different types of businesses",
+    title: "Business sectors across a bakery",
+    context:
+      "A family-run bakery buys flour from local farms, bakes bread in its own rented workshop and sells it in two small shops in the city.",
+    statements: [
+      "Primary-sector activity extracts raw materials such as crops, timber and minerals.",
+      "Buying flour from farms means the bakery itself operates in the primary sector.",
+      "Baking the bread from flour is a secondary-sector manufacturing activity.",
+      "Running the two shops that sell the finished bread is a tertiary-sector service.",
+      "A single firm can span more than one sector when it both manufactures and retails.",
+    ],
+  },
+] as const;
 
-/** Hard mock sitting: palette jumps, timer, statement marks. */
+/** Hard mock sitting: palette jumps, timer, full 5-statement tables. */
 export function DemoHardMock({ caption }: DemoProps) {
   const [qi, setQi] = useState(0);
   const [visited, setVisited] = useState<number[]>([0]);
@@ -35,7 +57,7 @@ export function DemoHardMock({ caption }: DemoProps) {
     setFade(false);
     await api.wait(450);
 
-    for (const i of [0, 2]) {
+    for (const i of [0, 1, 3]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="a${i}"]`);
       await api.click();
@@ -48,9 +70,11 @@ export function DemoHardMock({ caption }: DemoProps) {
     setQi(1);
     setVisited((v) => (v.includes(1) ? v : [...v, 1]));
     setSeconds((s) => s - 45);
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
     await api.wait(700);
 
-    for (const i of [0]) {
+    for (const i of [0, 2, 3]) {
+      if (api.cancelled()) return;
       await api.moveTo(`[data-d="a${i}"]`);
       await api.click();
       setAnswers((prev) => ({ ...prev, 1: { ...(prev[1] ?? {}), [i]: true } }));
@@ -59,7 +83,7 @@ export function DemoHardMock({ caption }: DemoProps) {
     await api.wait(1400);
   }, []);
 
-  const stmts = qi === 0 ? Q1 : Q2;
+  const q = QUESTIONS[qi]!;
   const marks = answers[qi] ?? {};
 
   return (
@@ -68,7 +92,7 @@ export function DemoHardMock({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "news-uniq-scroll h-[380px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[420px] sm:p-5",
+            "news-uniq-scroll h-[420px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[480px] sm:p-5",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
@@ -78,6 +102,12 @@ export function DemoHardMock({ caption }: DemoProps) {
               style={{ backgroundColor: ACCENT }}
             >
               Hard mock · Economics
+            </span>
+            <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+              Question {qi + 1} / 12
+            </span>
+            <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+              {q.caseId}
             </span>
             <span className="ml-auto inline-flex items-center gap-1.5 rounded-lg border border-caramel-deep bg-caramel-deep px-2.5 py-1.5 text-[11px] font-bold tabular-nums text-primary-foreground">
               <Clock className="h-3.5 w-3.5" />
@@ -100,7 +130,7 @@ export function DemoHardMock({ caption }: DemoProps) {
                     className={cn(
                       "grid h-8 w-8 place-items-center rounded-md border text-xs font-semibold",
                       current
-                        ? "border-foreground bg-foreground text-background"
+                        ? "border-foreground bg-foreground text-background ring-2 ring-foreground/25 ring-offset-2 ring-offset-card"
                         : answered
                           ? "border-orange-500/50 bg-orange-500 text-white"
                           : visited.includes(i)
@@ -116,33 +146,12 @@ export function DemoHardMock({ caption }: DemoProps) {
           </div>
 
           <div key={qi} className="news-uniq-slide-in">
-            <h3 className="font-display text-base font-bold">
-              {qi === 0 ? "Stakeholders of a growing firm" : "Business sectors"}
-            </h3>
-            <p className="mt-1 text-xs text-muted-foreground">
-              {qi === 0
-                ? "Q1 stays on the clock. The palette is how you jump."
-                : "Q2 slid in from the palette. The timer kept running."}
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+              {q.chapter}
             </p>
-            <ol className="mt-3 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-              {stmts.map((s, i) => (
-                <li key={i} className="flex items-center gap-3 px-3 py-2.5">
-                  <span className="w-5 text-xs font-bold text-muted-foreground">{"ABCDE"[i]}.</span>
-                  <p className="flex-1 text-sm leading-snug">{s}</p>
-                  <span
-                    data-d={`a${i}`}
-                    className={cn(
-                      "grid h-6 w-6 place-items-center rounded border-2",
-                      marks[i]
-                        ? "border-primary bg-primary text-primary-foreground"
-                        : "border-border",
-                    )}
-                  >
-                    {marks[i] ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
-                  </span>
-                </li>
-              ))}
-            </ol>
+            <h3 className="mt-1 font-display text-base font-bold">{q.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-foreground/90">{q.context}</p>
+            <DemoStatementTable statements={[...q.statements]} marks={marks} dataPrefix="a" />
           </div>
         </div>
         <DemoCursor cursorRef={cursorRef} clicking={clicking} />

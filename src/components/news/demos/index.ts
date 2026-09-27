@@ -2,6 +2,7 @@ export type { DemoProps } from "./DemoShell";
 export { DemoShell } from "./DemoShell";
 export { DemoCursor } from "./DemoCursor";
 export { useDemoPlayer } from "./useDemoPlayer";
+export { DemoStatementTable, DEMO_STATEMENT_LETTERS, demoCorrectCount } from "./DemoStatementTable";
 
 export { DemoExamGate } from "./DemoExamGate";
 export { DemoBuilderMix } from "./DemoBuilderMix";

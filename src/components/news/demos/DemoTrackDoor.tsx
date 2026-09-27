@@ -24,14 +24,13 @@ export function DemoTrackDoor({ caption }: DemoProps) {
     await api.wait(500);
 
     await api.moveTo('[data-d="wiso"]');
+    await api.click();
     setHover("wiso");
     await api.wait(550);
     await api.moveTo('[data-d="bbe"]');
-    setHover("bbe");
-    await api.wait(400);
     await api.click();
-    setPicked("bbe");
     setHover("bbe");
+    setPicked("bbe");
     await api.wait(900);
 
     await api.moveTo('[data-d="enter"]');

@@ -21,9 +21,8 @@ export function DemoDashContinue({ caption }: DemoProps) {
     await api.wait(500);
 
     await api.moveTo('[data-d="continue"]');
-    setPulse(true);
-    await api.wait(600);
     await api.click();
+    setPulse(true);
     await api.wait(700);
 
     await api.moveTo('[data-d="tool0"]');

@@ -68,6 +68,9 @@ export function DemoWisoMatch({ caption }: DemoProps) {
       await api.wait(240);
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
+      // Highlight the pair immediately on the meaning click — don't wait for the line tween.
+      setMatched((m) => [...m, i]);
+      setSel(-1);
 
       const board = api.stage()?.querySelector<HTMLElement>('[data-d="board"]');
       const a = board ? edge(board, `[data-d="t${i}"]`, "left") : null;
@@ -82,8 +85,6 @@ export function DemoWisoMatch({ caption }: DemoProps) {
           );
         });
       }
-      setMatched((m) => [...m, i]);
-      setSel(-1);
       await api.wait(280);
     }
     await api.wait(1100);

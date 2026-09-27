@@ -1,18 +1,36 @@
 import { useRef, useState } from "react";
-import { Check, X } from "lucide-react";
+import {
+  practiceExplanationToggleClass,
+  practiceSubmitButtonClass,
+} from "@/lib/practice-button-styles";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
 import { DemoShell, type DemoProps } from "./DemoShell";
+import { DEMO_STATEMENT_LETTERS, DemoStatementTable, demoCorrectCount } from "./DemoStatementTable";
 import { useDemoPlayer } from "./useDemoPlayer";
 
-const ACCENT = "#3d6b5a";
-
-const STMTS = [
-  "“Nevertheless” signals contrast with the previous clause.",
-  "“Affect” is always a noun in academic English.",
-  "“In spite of” takes a noun phrase, not a full clause.",
-];
-const KEY = [true, false, true];
+/** ENG G.18.07 from how-it-works-tasks.ts */
+const TASK = {
+  caseId: "ENG G.18.07",
+  chapter: "Prepositions & Fixed Patterns",
+  title: "Task 7",
+  context: "Decide whether each sentence is grammatically correct as written.",
+  statements: [
+    "She goes to work by foot every morning.",
+    "They travelled to the coast by train.",
+    "The match starts in Monday evening.",
+    "I usually read in night when the house is quiet.",
+    "We met on a cold Friday afternoon.",
+  ],
+  answerKey: [false, true, false, false, true],
+  explanations: [
+    "A → False. Walking uses on foot, not by foot. By is for vehicles (by bus, by train).",
+    "B → True. By train correctly names the means of transport — the default by + vehicle lock.",
+    "C → False. Days and dated evenings take on: on Monday evening, not in Monday evening.",
+    "D → False. At night is the fixed time phrase. Bare in night is not standard.",
+    "E → True. On plus a day or date phrase is standard: on a cold Friday afternoon.",
+  ],
+};
 
 /** Welcome / news feed peek: English practice cluster with explanation open. */
 export function DemoWelcomePeek({ caption }: DemoProps) {
@@ -33,17 +51,17 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
     setFade(false);
     await api.wait(450);
 
-    for (const i of [0, 2]) {
+    // Mark B + E (true), then wrongly mark A
+    for (const i of [1, 4]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
       setMarks((m) => ({ ...m, [i]: true }));
       await api.wait(380);
     }
-    // trap
-    await api.moveTo('[data-d="m1"]');
+    await api.moveTo('[data-d="m0"]');
     await api.click();
-    setMarks((m) => ({ ...m, 1: true }));
+    setMarks((m) => ({ ...m, 0: true }));
     await api.wait(350);
 
     await api.moveTo('[data-d="submit"]');
@@ -55,7 +73,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
     await api.click();
     setExpl(true);
     await api.wait(520);
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
       if (api.cancelled()) return;
       setActive(i);
       await api.wait(40);
@@ -85,85 +103,54 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
     await api.wait(800);
   }, []);
 
+  const score = demoCorrectCount(marks, TASK.answerKey);
+
   return (
     <DemoShell url="/demo-practice/english" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
       <div ref={stageRef} className="relative">
         <div
           className={cn(
-            "relative h-[400px] overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-opacity duration-500 sm:h-[440px]",
+            "relative h-[420px] overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-opacity duration-500 sm:h-[480px]",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
           <div ref={scrollRef} className="news-uniq-scroll h-full overflow-y-auto p-4 sm:p-5">
             <div className="mb-3 flex flex-wrap items-center gap-2">
-              <span
-                className="rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white"
-                style={{ backgroundColor: ACCENT }}
-              >
-                English · Task 4
+              <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                Task 7
               </span>
               <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-                ENG-2.08 · Connectors
+                {TASK.caseId}
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+                {TASK.chapter}
               </span>
             </div>
-            <h3 className="font-display text-base font-bold">Linking words under pressure</h3>
-            <p className="mt-3 rounded-xl border border-border bg-background px-3 py-3 text-sm leading-relaxed">
-              The firm opened a second depot.{" "}
-              <span className="rounded bg-primary/15 px-1 font-semibold">Nevertheless</span>,
-              margins fell.{" "}
-              <span className="rounded bg-primary/15 px-1 font-semibold">In spite of</span> the new
-              site, local demand stayed flat.
-            </p>
-            <ol className="mt-4 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-              {STMTS.map((s, i) => {
-                const on = marks[i] === true;
-                const ok = checked && on === KEY[i];
-                return (
-                  <li key={i} className="flex items-center gap-3 px-3 py-2.5">
-                    <span className="w-5 text-xs font-bold text-muted-foreground">{"ABC"[i]}.</span>
-                    <p className="flex-1 text-sm leading-snug">{s}</p>
-                    <span
-                      data-d={`m${i}`}
-                      className={cn(
-                        "grid h-6 w-6 place-items-center rounded border-2",
-                        on ? "border-primary bg-primary text-primary-foreground" : "border-border",
-                      )}
-                    >
-                      {on ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
-                    </span>
-                    {checked ? (
-                      <span
-                        className={cn(
-                          "grid h-6 w-6 place-items-center rounded-full",
-                          ok ? "bg-emerald-500 text-white" : "bg-destructive text-white",
-                        )}
-                      >
-                        {ok ? <Check className="h-3.5 w-3.5" /> : <X className="h-3.5 w-3.5" />}
-                      </span>
-                    ) : null}
-                  </li>
-                );
-              })}
-            </ol>
-            <div className="mt-4 flex gap-2">
-              <span
-                data-d="submit"
-                className={cn(
-                  "rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background",
-                  checked && "hidden",
+            <h3 className="font-display text-base font-bold">{TASK.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-foreground/90">{TASK.context}</p>
+            <DemoStatementTable
+              statements={TASK.statements}
+              marks={marks}
+              checked={checked}
+              answerKey={TASK.answerKey}
+            />
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap items-center gap-2">
+                {!checked ? (
+                  <span data-d="submit" className={practiceSubmitButtonClass}>
+                    Check Answers / Submit
+                  </span>
+                ) : (
+                  <span data-d="expl" className={practiceExplanationToggleClass(expl)}>
+                    {expl ? "Hide Explanation" : "Explanation"}
+                  </span>
                 )}
-              >
-                Check Answers
-              </span>
-              <span
-                data-d="expl"
-                className={cn(
-                  "rounded-md border border-border bg-secondary/50 px-4 py-2.5 text-sm font-semibold",
-                  !checked && "invisible",
-                )}
-              >
-                Explanation
-              </span>
+              </div>
+              {checked ? (
+                <span className="text-sm font-semibold text-muted-foreground">
+                  {score}/{TASK.answerKey.length} correct
+                </span>
+              ) : null}
             </div>
           </div>
 
@@ -178,11 +165,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
               Explanation
             </p>
             <div className="space-y-3">
-              {[
-                "A → True. “Nevertheless” contrasts with the clause before it. In the depot sentence it admits the expansion and then turns against the result: margins still fell.",
-                "B → False. “Affect” is usually a verb. The noun is “effect”. Marking this statement true is the trap in the cluster.",
-                "C → True. “In spite of” takes a noun phrase or an -ing form. It does not take a full finite clause the way “although” does.",
-              ].map((t, i) => (
+              {TASK.explanations.map((t, i) => (
                 <div
                   key={i}
                   data-d={`e${i}`}
@@ -193,6 +176,9 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
                       : "border-transparent opacity-45",
                   )}
                 >
+                  <p className="mb-1 font-display text-sm font-bold text-foreground">
+                    {DEMO_STATEMENT_LETTERS[i]}. → {TASK.answerKey[i] ? "True" : "False"}
+                  </p>
                   {t}
                 </div>
               ))}
