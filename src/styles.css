@@ -2431,3 +2431,87 @@ body.flashcard-swiping {
   }
 }
 
+/* News unique product demos — original per-post staged UI (not Practice/Mock wraps) */
+.news-uniq-demo {
+  --news-uniq-accent: #e85d3a;
+  --news-uniq-caramel: #c8763a;
+  --news-uniq-math: #10b981;
+}
+
+.news-uniq-scroll {
+  scrollbar-width: thin;
+}
+
+.news-uniq-flip-stage {
+  perspective: 1200px;
+}
+
+.news-uniq-flip-inner {
+  position: relative;
+  min-height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.45, 0.05, 0.2, 1);
+}
+
+@media (min-width: 640px) {
+  .news-uniq-flip-inner {
+    min-height: 220px;
+  }
+}
+
+.news-uniq-flip-stage.is-flipped .news-uniq-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.news-uniq-flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.news-uniq-flip-back {
+  transform: rotateY(180deg);
+}
+
+.news-uniq-pulse-ring {
+  animation: news-uniq-pulse-ring 1.4s ease-in-out infinite;
+}
+
+@keyframes news-uniq-pulse-ring {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, #e85d3a 35%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in oklab, #e85d3a 0%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-uniq-flip-inner,
+  .news-uniq-pulse-ring {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .news-uniq-flip-stage.is-flipped .news-uniq-flip-inner {
+    transform: none;
+  }
+
+  .news-uniq-flip-stage.is-flipped .news-uniq-flip-front {
+    opacity: 0;
+  }
+
+  .news-uniq-flip-stage.is-flipped .news-uniq-flip-back,
+  .news-uniq-flip-back {
+    position: relative;
+    transform: none;
+  }
+
+  .news-uniq-demo [class*="transition"],
+  .news-uniq-demo .will-change-transform {
+    transition: none !important;
+  }
+}
+

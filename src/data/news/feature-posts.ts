@@ -23,9 +23,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "economics",
+        id: "demo-exam-gate",
         caption:
-          "Demo Exam uses the same True/False practice chrome as live economics tasks on the site.",
+          "Demo Exam flow in motion: Start → free-account gate → timed sitting with statement marks.",
       },
       {
         type: "p",
@@ -94,9 +94,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "mock-builder",
+        id: "builder-topic-mix",
         caption:
-          "Animated preview of Mock Builder: choose subjects, set task counts, and start a custom sitting.",
+          "Mock Builder story: expand a chapter, tick subtopics, set the count, shape weights, then Build.",
       },
       {
         type: "p",
@@ -155,9 +155,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "english-practice",
+        id: "ship-diary-pulse",
         caption:
-          "Ship diary in product terms: English practice is one of the subject rooms that landed in this window.",
+          "Ship diary: each May–September release lights up as the cursor walks the log.",
       },
       {
         type: "timeline",
@@ -252,9 +252,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "flashcards-wiso",
+        id: "wiso-karte-flip",
         caption:
-          "WiSo study tools use the same flashcard stage as BBE — flip, rate, continue.",
+          "WiSo Karteikarten: flip Opportunitätskosten, rate Weiß ich / Weiß nicht, then the next card.",
       },
       {
         type: "tool",
@@ -268,9 +268,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "matching-wiso",
+        id: "wiso-match-board",
         caption:
-          "Matching on the WiSo track uses the same board pattern as BBE Study tools.",
+          "WiSo Zuordnung: Angebot → Supply, Nachfrage → Demand, Knappheit → Scarcity, locked in emerald.",
       },
       {
         type: "cta",
@@ -294,8 +294,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "flashcards",
-        caption: "Animated preview of a flashcard flip in Study tools.",
+        id: "flash-econ-sort",
+        caption:
+          "Economics flashcards: flip Opportunity cost, sort Don’t know, then Know on the next card.",
       },
       {
         type: "tool",
@@ -305,8 +306,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "matching",
-        caption: "Animated preview of matching terms with definitions.",
+        id: "match-lock-in",
+        caption:
+          "Matching board: pick Liquidity first, lock the pair, then clear Sunk cost and Marginal cost.",
       },
       {
         type: "figure",
@@ -340,9 +342,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "economics-2",
+        id: "sheet-bubble-fill",
         caption:
-          "Answer-sheet practice follows the same statement table students see in live tasks.",
+          "Official answer-sheet bubbles: fill A, C, D on Q1, leave B blank on purpose, then mark Q2.",
       },
       {
         type: "steps",
@@ -401,9 +403,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "economics-3",
+        id: "score-floor-zero",
         caption:
-          "Scoring rules apply to every True/False cluster — the live statement table in motion.",
+          "Partial credit in motion: correct marks raise the score, over-marking on false statements pulls it down, floor at zero.",
       },
       {
         type: "cta",
@@ -427,8 +429,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "tutor-exam",
-        caption: "Animated preview of tutor exam mode: question, choices, and short feedback.",
+        id: "tutor-domain-ask",
+        caption:
+          "Tutor bot asks for the domain of √(x−2)/(x−5); cursor hesitates on B, picks A, face turns happy.",
       },
       {
         type: "steps",
@@ -483,9 +486,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "math-practice",
+        id: "math-room-calc",
         caption:
-          "Subject rooms open the same live practice chrome students use for mathematics tasks.",
+          "Mathematics room: open the calculator, close it, mark domain statements, then Check Answers.",
       },
       {
         type: "steps",
@@ -514,9 +517,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "flashcards-math",
+        id: "math-delta-cards",
         caption:
-          "Mathematics flashcards in the subject room — same flip stage as Study tools.",
+          "Algebra flashcards: flip Discriminant Δ, mark Know, then reveal Vertex form.",
       },
       {
         type: "cta",
@@ -540,9 +543,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "dashboard",
+        id: "dash-continue",
         caption:
-          "The dashboard remembers where you stopped and offers a direct continue path.",
+          "Dashboard resume card: Continue from Economics Q7, then peek Flashcards and Matching.",
       },
       {
         type: "steps",
@@ -591,9 +594,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "economics-4",
+        id: "hard-mock-palette",
         caption:
-          "Launch-week mocks used the same hard True/False clusters students still practice today.",
+          "Hard mock under the clock: mark statements on Q1, jump via the palette to Q2, keep answering.",
       },
       {
         type: "figure",
@@ -633,9 +636,9 @@ export const FEATURE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "math-practice-2",
+        id: "track-door-pick",
         caption:
-          "After you choose BBE or WiSo, practice stays in the same product shell — here a mathematics task.",
+          "Homepage chooser: hover WiSo, then pick the BBE door and Enter the English-track path.",
       },
       {
         type: "tool",

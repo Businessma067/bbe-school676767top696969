@@ -77,9 +77,9 @@ const CORE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "math-practice-3",
+        id: "welcome-eng-peek",
         caption:
-          "News posts stay close to the live mathematics practice UI students use on the site.",
+          "News stays close to product UI: an English connectors cluster, Check Answers, then the explanation panel.",
       },
       {
         type: "p",
@@ -187,9 +187,9 @@ const CORE_POSTS: NewsPost[] = [
       },
       {
         type: "demo",
-        id: "math-practice-4",
+        id: "bank-keep-cut",
         caption:
-          "Animated preview of a mathematics practice cluster. The careful bank work behind screens like this is what this post describes.",
+          "How drafts leave the lab: Cut an obvious false, Keep a clean stakeholder case, Rework a muddy explanation.",
       },
     ],
   },
