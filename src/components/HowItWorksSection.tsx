@@ -7,6 +7,7 @@ import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";
 import { CourseEnglishDemo } from "@/components/how-it-works/CourseEnglishDemo";
 import { CourseMathDemo } from "@/components/how-it-works/CourseMathDemo";
 import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
+import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
 import { cn } from "@/lib/utils";
 
 type MainTab = "course" | "mock-builder" | "games";
@@ -202,6 +203,12 @@ function BbeCourseStage({ subject }: { subject: string }) {
   return <CourseEconDemo />;
 }
 
+function BbeStudyStage({ tool }: { tool: string }) {
+  if (tool === "matching") return <CourseMatchDemo />;
+  if (tool === "tutor-exam") return <CourseTutorDemo />;
+  return <CourseFlashDemo />;
+}
+
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
@@ -233,7 +240,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     tab === "course" &&
     (slide.key === "economics" || slide.key === "math" || slide.key === "english");
   const liveMockDemo = track === "bbe" && tab === "mock-builder";
-  const liveStage = liveCourseDemo || liveMockDemo;
+  const liveStudyDemo = track === "bbe" && tab === "games";
+  const liveStage = liveCourseDemo || liveMockDemo || liveStudyDemo;
 
   const goSlide = (next: number) => {
     const i = (next + slides.length) % slides.length;
@@ -397,6 +405,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   {liveStage ? (
                     liveMockDemo ? (
                       <CourseMockDemo key="mock-builder" />
+                    ) : liveStudyDemo ? (
+                      <BbeStudyStage key={slide.key} tool={slide.key} />
                     ) : (
                       <BbeCourseStage key={slide.key} subject={slide.key} />
                     )
@@ -515,6 +525,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     >
                       {liveMockDemo ? (
                         <CourseMockDemo key="zoom-mock-builder" />
+                      ) : liveStudyDemo ? (
+                        <BbeStudyStage key={`zoom-${slide.key}`} tool={slide.key} />
                       ) : (
                         <BbeCourseStage key={`zoom-${slide.key}`} subject={slide.key} />
                       )}

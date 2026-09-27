@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
+import { cleanExplanation } from "@/lib/clean-explanation";
 import { evenExplanation, fullExplanation } from "./course-motion";
 import { cn } from "@/lib/utils";
 
@@ -99,7 +100,12 @@ export function CourseSolution({
             {shown.map((i) => {
               const letter = LETTERS[i];
               const verdict = answerKey[i] ? "True" : "False";
-              const body = full ? fullExplanation(explanations[i] ?? "") : evenExplanation(explanations[i] ?? "");
+              const raw = explanations[i] ?? "";
+              const body = full
+                ? math
+                  ? fullExplanation(raw)
+                  : cleanExplanation(raw)
+                : evenExplanation(raw);
               const prose = `**${letter}.** → ${verdict}\n\n${body}`;
               return (
                 <div

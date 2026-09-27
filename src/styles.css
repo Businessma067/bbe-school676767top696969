@@ -1540,6 +1540,17 @@ body.flashcard-swiping {
   }
 }
 
+/* How it works study stage is short, so the flip face stays inside the frame. */
+.hiw-study-flash .flashcard-inner {
+  min-height: 132px;
+}
+
+@media (min-width: 640px) {
+  .hiw-study-flash .flashcard-inner {
+    min-height: 156px;
+  }
+}
+
 .news-demo-flash-inner {
   animation: news-demo-card-flip 6.5s cubic-bezier(0.45, 0.05, 0.2, 1) infinite;
   transition: none;
