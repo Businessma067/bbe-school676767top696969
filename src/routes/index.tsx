@@ -26,13 +26,13 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [...hreflangLinks("/"), { rel: "canonical", href: "https://bbe-school.com/" }],
     meta: [
-      { title: "WU Vienna Exam Prep for BBE and WiSo | BBE School" },
+      { title: "WU Vienna Entrance Exam Prep 2027 — BBE & WiSo | BBE School" },
       {
         name: "description",
         content:
           "Prep for the 2027 WU entrance exam on BBE or WiSo with practice questions, timed mocks, and study tools built around the real format.",
       },
-      { property: "og:title", content: "WU Vienna Exam Prep for BBE and WiSo | BBE School" },
+      { property: "og:title", content: "WU Vienna Entrance Exam Prep 2027 — BBE & WiSo | BBE School" },
       {
         property: "og:description",
         content:
