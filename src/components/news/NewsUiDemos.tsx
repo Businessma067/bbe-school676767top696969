@@ -144,25 +144,49 @@ function DemoMockBuilder({ caption }: DemoProps) {
   );
 }
 
-/** Live economics practice simulator — same CaseCard / True column as demo-practice. */
-function DemoEconomics({ caption }: DemoProps) {
+/** Live practice simulator — same CaseCard / True column as demo-practice. */
+function DemoPractice({
+  caption,
+  subject,
+  taskIndex,
+  url,
+}: DemoProps & {
+  subject: "economics" | "math" | "english";
+  taskIndex: number;
+  url: string;
+}) {
   return (
-    <DemoShell
-      url="/demo-practice/economics"
-      caption={caption}
-      stageClassName="bg-background p-3 sm:p-4"
-    >
+    <DemoShell url={url} caption={caption} stageClassName="bg-background p-3 sm:p-4">
       <Suspense fallback={<DemoFallback />}>
-        <PracticeSimulator subject="economics" />
+        <PracticeSimulator subject={subject} taskIndex={taskIndex} />
       </Suspense>
     </DemoShell>
   );
 }
 
 /** FlashcardSubjectView chrome + real flashcard-* CSS flip loop. */
-function DemoFlashcards({ caption }: DemoProps) {
+function DemoFlashcards({
+  caption,
+  url = "/flashcards/economics",
+  subjectLabel = "Flashcards · Economics",
+  topic = "Markets",
+  accent = FLASH_ACCENT,
+  term = "Opportunity cost",
+  meaning = "The (financial) benefit of the next best alternative that is given up in order to choose or achieve something else.",
+  frontLabel = "Term",
+  backLabel = "Meaning",
+}: DemoProps & {
+  url?: string;
+  subjectLabel?: string;
+  topic?: string;
+  accent?: string;
+  term?: string;
+  meaning?: string;
+  frontLabel?: string;
+  backLabel?: string;
+}) {
   return (
-    <DemoShell url="/flashcards/economics" caption={caption}>
+    <DemoShell url={url} caption={caption}>
       <div className="mx-auto flex h-full max-w-md flex-col justify-center">
         <div className="news-demo-fade-in mb-3 flex items-end justify-between gap-2">
           <div>
@@ -170,14 +194,14 @@ function DemoFlashcards({ caption }: DemoProps) {
               Study tools
             </p>
             <h3 className="font-display text-lg font-bold tracking-tight sm:text-xl">
-              Flashcards · Economics
+              {subjectLabel}
             </h3>
           </div>
           <span
             className="rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white"
-            style={{ backgroundColor: FLASH_ACCENT }}
+            style={{ backgroundColor: accent }}
           >
-            Markets
+            {topic}
           </span>
         </div>
 
@@ -187,11 +211,11 @@ function DemoFlashcards({ caption }: DemoProps) {
               <div className="flashcard-face flashcard-front rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-7">
                 <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                   <Layers className="h-3 w-3" />
-                  Term
+                  {frontLabel}
                 </div>
                 <div className="flex h-full min-h-[160px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[190px]">
                   <span className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                    Opportunity cost
+                    {term}
                   </span>
                 </div>
                 <p className="mt-2 text-center text-xs text-muted-foreground">
@@ -201,12 +225,11 @@ function DemoFlashcards({ caption }: DemoProps) {
               <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-7">
                 <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                   <Layers className="h-3 w-3" />
-                  Meaning
+                  {backLabel}
                 </div>
                 <div className="flex h-full min-h-[160px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[190px]">
                   <span className="text-base leading-relaxed text-foreground sm:text-lg">
-                    The (financial) benefit of the next best alternative that is given up in order
-                    to choose or achieve something else.
+                    {meaning}
                   </span>
                 </div>
                 <p className="mt-2 text-center text-xs text-muted-foreground">
@@ -227,7 +250,7 @@ function DemoFlashcards({ caption }: DemoProps) {
           </span>
           <span
             className="rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm"
-            style={{ backgroundColor: FLASH_ACCENT }}
+            style={{ backgroundColor: accent }}
           >
             Flip
           </span>
@@ -254,15 +277,33 @@ function DemoFlashcards({ caption }: DemoProps) {
 }
 
 /** MatchingSubjectView column cards — selected accent ring → emerald lock-in. */
-function DemoMatching({ caption }: DemoProps) {
-  const pairs = [
-    { term: "Sunk cost", meaning: "Already incurred cost", delay: "0.1s" },
-    { term: "Ceteris paribus", meaning: "Hold other factors constant", delay: "0.85s" },
-    { term: "Liquidity", meaning: "Ease of converting to cash", delay: "1.6s" },
-  ];
+function DemoMatching({
+  caption,
+  url = "/matching/economics",
+  subjectLabel = "Matching · Economics",
+  accent = FLASH_ACCENT,
+  termsLabel = "Terms",
+  meaningsLabel = "Meanings",
+  pairs = [
+    { term: "Sunk cost", meaning: "Already incurred cost" },
+    { term: "Ceteris paribus", meaning: "Hold other factors constant" },
+    { term: "Liquidity", meaning: "Ease of converting to cash" },
+  ],
+}: DemoProps & {
+  url?: string;
+  subjectLabel?: string;
+  accent?: string;
+  termsLabel?: string;
+  meaningsLabel?: string;
+  pairs?: Array<{ term: string; meaning: string }>;
+}) {
+  const rows = pairs.map((pair, i) => ({
+    ...pair,
+    delay: `${0.1 + i * 0.75}s`,
+  }));
 
   return (
-    <DemoShell url="/matching/economics" caption={caption}>
+    <DemoShell url={url} caption={caption}>
       <div className="mx-auto flex h-full max-w-lg flex-col justify-center">
         <div className="news-demo-fade-in mb-3 flex items-center justify-between gap-2">
           <div>
@@ -270,29 +311,29 @@ function DemoMatching({ caption }: DemoProps) {
               Study tools
             </p>
             <h3 className="font-display text-lg font-bold tracking-tight sm:text-xl">
-              Matching · Economics
+              {subjectLabel}
             </h3>
           </div>
           <span className="rounded-full border border-border bg-card px-2.5 py-1 text-[10px] font-semibold text-muted-foreground">
-            Round 1 · Matched 0/3
+            Round 1 · Matched 0/{rows.length}
           </span>
         </div>
 
         <div className="grid grid-cols-2 gap-x-4 gap-y-0 sm:gap-x-10">
           <p className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Terms
+            {termsLabel}
           </p>
           <p className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Meanings
+            {meaningsLabel}
           </p>
-          {pairs.map((pair, i) => (
+          {rows.map((pair, i) => (
             <div key={pair.term} className="contents">
               <div
                 className="news-demo-match-live mb-2.5 rounded-xl border border-border bg-card px-3.5 py-3 text-left text-sm"
                 style={
                   {
                     animationDelay: pair.delay,
-                    ["--news-demo-accent" as string]: FLASH_ACCENT,
+                    ["--news-demo-accent" as string]: accent,
                   } as CSSProperties
                 }
               >
@@ -308,7 +349,7 @@ function DemoMatching({ caption }: DemoProps) {
                 style={
                   {
                     animationDelay: `${0.25 + i * 0.75}s`,
-                    ["--news-demo-accent" as string]: FLASH_ACCENT,
+                    ["--news-demo-accent" as string]: accent,
                   } as CSSProperties
                 }
               >
@@ -500,10 +541,94 @@ function DemoDashboard({ caption }: DemoProps) {
 
 const DEMOS = {
   "mock-builder": DemoMockBuilder,
-  flashcards: DemoFlashcards,
-  matching: DemoMatching,
+  flashcards: (p: DemoProps) => <DemoFlashcards {...p} />,
+  "flashcards-math": (p: DemoProps) => (
+    <DemoFlashcards
+      {...p}
+      url="/flashcards/mathematics"
+      subjectLabel="Flashcards · Mathematics"
+      topic="Algebra"
+      accent={MATH_ACCENT}
+      term="Discriminant"
+      meaning="Δ = b² − 4ac. If Δ < 0 there are no real roots; if Δ = 0 there is one; if Δ > 0 there are two."
+    />
+  ),
+  "flashcards-wiso": (p: DemoProps) => (
+    <DemoFlashcards
+      {...p}
+      url="/wiso/flashcards/economics"
+      subjectLabel="Karteikarten · Wirtschaft"
+      topic="Märkte"
+      accent={FLASH_ACCENT}
+      term="Opportunitätskosten"
+      meaning="Der entgangene Nutzen der besten nicht gewählten Alternative."
+      frontLabel="Begriff"
+      backLabel="Bedeutung"
+    />
+  ),
+  matching: (p: DemoProps) => <DemoMatching {...p} />,
+  "matching-wiso": (p: DemoProps) => (
+    <DemoMatching
+      {...p}
+      url="/wiso/matching/economics"
+      subjectLabel="Zuordnung · Wirtschaft"
+      termsLabel="Begriffe"
+      meaningsLabel="Bedeutungen"
+      pairs={[
+        { term: "Angebot", meaning: "Supply" },
+        { term: "Nachfrage", meaning: "Demand" },
+        { term: "Knappheit", meaning: "Scarcity" },
+      ]}
+    />
+  ),
   "tutor-exam": DemoTutorExam,
-  economics: DemoEconomics,
+  economics: (p: DemoProps) => (
+    <DemoPractice
+      {...p}
+      subject="economics"
+      taskIndex={0}
+      url="/demo-practice/economics"
+    />
+  ),
+  "economics-2": (p: DemoProps) => (
+    <DemoPractice
+      {...p}
+      subject="economics"
+      taskIndex={1}
+      url="/demo-practice/economics"
+    />
+  ),
+  "economics-3": (p: DemoProps) => (
+    <DemoPractice
+      {...p}
+      subject="economics"
+      taskIndex={2}
+      url="/demo-practice/economics"
+    />
+  ),
+  "economics-4": (p: DemoProps) => (
+    <DemoPractice
+      {...p}
+      subject="economics"
+      taskIndex={3}
+      url="/demo-practice/economics"
+    />
+  ),
+  "math-practice": (p: DemoProps) => (
+    <DemoPractice {...p} subject="math" taskIndex={0} url="/demo-practice/math" />
+  ),
+  "math-practice-2": (p: DemoProps) => (
+    <DemoPractice {...p} subject="math" taskIndex={1} url="/demo-practice/math" />
+  ),
+  "math-practice-3": (p: DemoProps) => (
+    <DemoPractice {...p} subject="math" taskIndex={2} url="/demo-practice/math" />
+  ),
+  "math-practice-4": (p: DemoProps) => (
+    <DemoPractice {...p} subject="math" taskIndex={3} url="/demo-practice/math" />
+  ),
+  "english-practice": (p: DemoProps) => (
+    <DemoPractice {...p} subject="english" taskIndex={0} url="/demo-practice/english" />
+  ),
   dashboard: DemoDashboard,
 } as const;
 

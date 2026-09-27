@@ -54,24 +54,15 @@ export type NewsTimelineBlock = {
   }>;
 };
 
-export type NewsMediaBlock =
-  | {
-      type: "media";
-      kind: "image";
-      src: string;
-      alt: string;
-      caption: string;
-    }
-  | {
-      type: "media";
-      kind: "video";
-      src: string;
-      poster: string;
-      alt: string;
-      caption: string;
-    };
+export type NewsMediaBlock = {
+  type: "media";
+  kind: "image";
+  src: string;
+  alt: string;
+  caption: string;
+};
 
-/** Compact CSS / product-UI preview used when a dedicated video is not needed. */
+/** Smooth looping UI preview that replaces how-it-works videos in news posts. */
 export type NewsDemoBlock = {
   type: "demo";
   id: string;

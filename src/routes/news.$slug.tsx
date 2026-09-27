@@ -114,22 +114,10 @@ export function NewsPostPage() {
                 );
               }
               if (block.type === "media") {
-                if (block.kind === "video") {
-                  return (
-                    <NewsMedia
-                      key={`media-${index}`}
-                      kind="video"
-                      src={block.src}
-                      poster={block.poster}
-                      alt={block.alt}
-                      caption={block.caption}
-                    />
-                  );
-                }
                 return (
                   <NewsMedia
                     key={`media-${index}`}
-                    kind="image"
+                    kind={block.kind}
                     src={block.src}
                     alt={block.alt}
                     caption={block.caption}

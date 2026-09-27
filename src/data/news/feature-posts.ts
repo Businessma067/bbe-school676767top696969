@@ -22,13 +22,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "A free account means email or Google signup. There is no credit card and no purchase required to take Demo Exam. After you finish, you can decide whether a paid course makes sense. The questions stay hard either way.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/demo-exam.mp4",
-        poster: "/how-it-works/news/demo-exam-poster.jpg",
-        alt: "Demo Exam practice walkthrough",
+        type: "demo",
+        id: "economics",
         caption:
-          "Unique Demo Exam walkthrough — live practice UI, same style as How it works.",
+          "Demo Exam uses the same True/False practice chrome as live economics tasks on the site.",
       },
       {
         type: "p",
@@ -96,13 +93,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "For several months we used Mock Builder only inside the team. It helped us test task banks, compare section sizes, and notice when a rewrite made a paper too easy. On 11 September we opened it to students with course access. It is not a guest tool: you need a BBE Lite or Full entitlement (or the WiSo Full path for the WiSo builder).",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/mock-builder.mp4",
-        poster: "/how-it-works/news/mock-builder-poster.jpg",
-        alt: "Custom Mock Builder walkthrough",
+        type: "demo",
+        id: "mock-builder",
         caption:
-          "Unique Mock Builder walkthrough: pick topics, shape weights, then build the mock.",
+          "Animated preview of Mock Builder: choose subjects, set task counts, and start a custom sitting.",
       },
       {
         type: "p",
@@ -160,13 +154,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "We were asked for a simple list of when major features went live. Below is that list from May to September. It does not include every small fix. It covers the releases that changed how students practice. Open a row for a short note, and use the rest of the news feed for longer explanations.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/shipped.mp4",
-        poster: "/how-it-works/news/shipped-poster.jpg",
-        alt: "Ship-window Mock Builder walkthrough",
+        type: "demo",
+        id: "english-practice",
         caption:
-          "A different Mock Builder segment for the ship diary — not reused elsewhere in News.",
+          "Ship diary in product terms: English practice is one of the subject rooms that landed in this window.",
       },
       {
         type: "timeline",
@@ -260,13 +251,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "For a long time the site mainly told a BBE story, even though many visitors needed WiSo. On 27 August we opened a real WiSo track: its own hub, demo practice, course pages, and mock builder. Use the track switch in the header to move between BBE and WiSo. The practice pages then follow the path you chose. Note that the free BBE Demo Exam page does not have a WiSo twin yet.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/wiso-flashcards.mp4",
-        poster: "/how-it-works/wiso-flashcards-poster.jpg",
-        alt: "WiSo flashcards walkthrough",
+        type: "demo",
+        id: "flashcards-wiso",
         caption:
-          "WiSo flashcards walkthrough — German-track recording, unique to this post.",
+          "WiSo study tools use the same flashcard stage as BBE — flip, rate, continue.",
       },
       {
         type: "tool",
@@ -279,13 +267,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "If you are preparing for WiSo, do not rely on BBE English practice as a substitute. If you are preparing for BBE, WiSo German economics rooms are not a shortcut. The study mindset can overlap, but the exams themselves are not the same.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/wiso-matching.mp4",
-        poster: "/how-it-works/wiso-matching-poster.jpg",
-        alt: "WiSo matching walkthrough",
+        type: "demo",
+        id: "matching-wiso",
         caption:
-          "WiSo matching board walkthrough — separate from the BBE matching clip.",
+          "Matching on the WiSo track uses the same board pattern as BBE Study tools.",
       },
       {
         type: "cta",
@@ -308,13 +293,9 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Not every study day has room for a full mock exam. On 14 August we added Flashcards and Matching under Study tools in the dashboard for shorter sessions. They are available when you are signed in with the matching course access. The content stays close to exam language on purpose. These tools are meant to support practice, not replace longer sittings.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/flashcards.mp4",
-        poster: "/how-it-works/flashcards-poster.jpg",
-        alt: "BBE flashcards walkthrough",
-        caption:
-          "BBE flashcards flip walkthrough from How it works.",
+        type: "demo",
+        id: "flashcards",
+        caption: "Animated preview of a flashcard flip in Study tools.",
       },
       {
         type: "tool",
@@ -323,13 +304,9 @@ export const FEATURE_POSTS: NewsPost[] = [
           "Three sample cards from the economics vocabulary set. The live decks are larger; this only shows how flipping works.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/matching.mp4",
-        poster: "/how-it-works/matching-poster.jpg",
-        alt: "BBE matching walkthrough",
-        caption:
-          "BBE matching walkthrough — unique to this Study tools post.",
+        type: "demo",
+        id: "matching",
+        caption: "Animated preview of matching terms with definitions.",
       },
       {
         type: "figure",
@@ -362,13 +339,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "We kept seeing the same problem: a student understands the topic, then loses points because the answer sheet format is unclear. Hiding that information in a long FAQ did not help enough. On 2 August we published a dedicated answer-sheet page so the official format is easier to find and easier to practise with.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/answer-sheet.mp4",
-        poster: "/how-it-works/news/answer-sheet-poster.jpg",
-        alt: "Answer-sheet practice walkthrough",
+        type: "demo",
+        id: "economics-2",
         caption:
-          "Unique practice clip for answer-sheet habits — different segment from other News videos.",
+          "Answer-sheet practice follows the same statement table students see in live tasks.",
       },
       {
         type: "steps",
@@ -426,13 +400,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Read the full scoring page once while you are calm. Then take a practice exam and compare your marking habits with the rules. The page will not take the exam for you, but it should remove unnecessary confusion about how points are calculated.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/scoring.mp4",
-        poster: "/how-it-works/news/scoring-poster.jpg",
-        alt: "Scoring practice walkthrough",
+        type: "demo",
+        id: "economics-3",
         caption:
-          "Unique economics practice segment used only on the scoring post.",
+          "Scoring rules apply to every True/False cluster — the live statement table in motion.",
       },
       {
         type: "cta",
@@ -455,13 +426,9 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Full mock exams are useful, but they also take a long time. On 3 July we opened Tutor exam mode for subject-focused practice with faster feedback. It is part of course access, not a guest tool. It does not replace a full paper. It helps you repair one weak area without waiting days for the next long sitting.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/tutor-exam.mp4",
-        poster: "/how-it-works/tutor-exam-poster.jpg",
-        alt: "Tutor exam walkthrough",
-        caption:
-          "Tutor exam mode walkthrough from How it works.",
+        type: "demo",
+        id: "tutor-exam",
+        caption: "Animated preview of tutor exam mode: question, choices, and short feedback.",
       },
       {
         type: "steps",
@@ -515,13 +482,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "In the early full course, subjects were harder to separate. On 19 June we introduced clearer subject rooms for Full Course subscribers. It became easier to see where mathematics ends, where English begins, and where economics practice lives. That made navigation simpler and made daily practice more intentional.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/full-course.mp4",
-        poster: "/how-it-works/news/full-course-poster.jpg",
-        alt: "Full-course Mock Builder walkthrough",
+        type: "demo",
+        id: "math-practice",
         caption:
-          "Unique Mock Builder segment for subject rooms — not the same clip as the Mock Builder post.",
+          "Subject rooms open the same live practice chrome students use for mathematics tasks.",
       },
       {
         type: "steps",
@@ -549,13 +513,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         ],
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/wiso-tutor-exam.mp4",
-        poster: "/how-it-works/wiso-tutor-exam-poster.jpg",
-        alt: "Tutor exam walkthrough for subject rooms",
+        type: "demo",
+        id: "flashcards-math",
         caption:
-          "Tutor exam clip used only with the mathematics subject-room note.",
+          "Mathematics flashcards in the subject room — same flip stage as Study tools.",
       },
       {
         type: "cta",
@@ -578,13 +539,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "Earlier, students often received several links after buying a course and then had to find their way again later. On 4 June the dashboard became the main entrance: what you have access to, what you can open, and where study tools live.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/english.mp4",
-        poster: "/how-it-works/english-poster.jpg",
-        alt: "English practice walkthrough",
+        type: "demo",
+        id: "dashboard",
         caption:
-          "English practice walkthrough — unique file for the dashboard news post.",
+          "The dashboard remembers where you stopped and offers a direct continue path.",
       },
       {
         type: "steps",
@@ -632,13 +590,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "16 May was the first evening when students outside our team sat mock exams we could not change while they were taking them. Some scores were low. Some explanations needed corrections. We rewrote quickly and learned that publishing a hard paper is more demanding than planning one.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/hard-mocks.mp4",
-        poster: "/how-it-works/news/hard-mocks-poster.jpg",
-        alt: "Hard mocks practice walkthrough",
+        type: "demo",
+        id: "economics-4",
         caption:
-          "Unique hard-mock practice segment — only used in this launch post.",
+          "Launch-week mocks used the same hard True/False clusters students still practice today.",
       },
       {
         type: "figure",
@@ -677,13 +632,10 @@ export const FEATURE_POSTS: NewsPost[] = [
         text: "On 2 May we added a clearer choice on the homepage: BBE or WiSo. It looks simple, but it solved a real problem. Visitors who needed WiSo were no longer pushed into BBE pages by default, and parents could see the difference without writing a long message first.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/math.mp4",
-        poster: "/how-it-works/math-poster.jpg",
-        alt: "Mathematics practice walkthrough",
+        type: "demo",
+        id: "math-practice-2",
         caption:
-          "Mathematics practice walkthrough — unique to the BBE vs WiSo chooser post.",
+          "After you choose BBE or WiSo, practice stays in the same product shell — here a mathematics task.",
       },
       {
         type: "tool",

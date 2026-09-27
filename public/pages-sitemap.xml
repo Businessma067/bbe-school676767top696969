@@ -247,7 +247,7 @@
   </url>
   <url>
     <loc>https://bbe-school.com/demo-mock</loc>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>
@@ -283,6 +283,54 @@
   </url>
   <url>
     <loc>https://bbe-school.com/news/how-we-build-mock-exams</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/demo-exam-is-public</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/mock-builder-left-the-lab</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/what-shipped-since-may</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/wiso-track-is-live</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/flashcards-and-matching</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/answer-sheet-page</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/scoring-without-the-fog</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/tutor-exam-mode</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/full-course-subject-rooms</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/dashboard-that-remembers</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/first-hard-mocks-went-live</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/bbe-vs-wiso-chooser</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -527,7 +575,7 @@
   </url>
   <url>
     <loc>https://bbe-school.com/de/demo-mock</loc>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>
@@ -775,7 +823,7 @@
   </url>
   <url>
     <loc>https://bbe-school.com/uk/demo-mock</loc>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>

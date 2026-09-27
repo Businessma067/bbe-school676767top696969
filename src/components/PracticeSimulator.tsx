@@ -57,7 +57,14 @@ function clock(total: number) {
  * Phase 1 focuses on the statements (they gently scale up while the cursor
  * answers them); phase 2 opens the right panel and walks the explanations.
  */
-export default function PracticeSimulator({ subject }: { subject: SimSubject }) {
+export default function PracticeSimulator({
+  subject,
+  taskIndex,
+}: {
+  subject: SimSubject;
+  /** Pin a specific task so news posts can show distinct practice clips. */
+  taskIndex?: number;
+}) {
   // Economics: skip cases whose context embeds tables/charts (they render badly here).
   const pool = useMemo(() => {
     const all = SIM_TASKS[subject];
@@ -87,10 +94,14 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   const task: SimTask = pool[Math.min(taskIdx, pool.length - 1)];
 
-  // Pick ONE random task per subject on mount and keep it for the whole loop.
+  // Pin a task for news demos, otherwise pick one random task per mount.
   useEffect(() => {
+    if (typeof taskIndex === "number" && pool.length > 0) {
+      setTaskIdx(((taskIndex % pool.length) + pool.length) % pool.length);
+      return;
+    }
     setTaskIdx(Math.floor(Math.random() * pool.length));
-  }, [pool]);
+  }, [pool, taskIndex]);
 
   // Timed Mode countdown (economics demo only).
   useEffect(() => {

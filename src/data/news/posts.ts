@@ -76,13 +76,10 @@ const CORE_POSTS: NewsPost[] = [
         ],
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/news/welcome.mp4",
-        poster: "/how-it-works/news/welcome-poster.jpg",
-        alt: "Welcome practice walkthrough",
+        type: "demo",
+        id: "math-practice-3",
         caption:
-          "Unique economics practice intro clip for the News welcome post.",
+          "News posts stay close to the live mathematics practice UI students use on the site.",
       },
       {
         type: "p",
@@ -189,13 +186,10 @@ const CORE_POSTS: NewsPost[] = [
           "Approximate share of avoidable point loss by section in recent hard demo reviews. This helps us decide what to improve next.",
       },
       {
-        type: "media",
-        kind: "video",
-        src: "/how-it-works/economics.mp4",
-        poster: "/how-it-works/economics-poster.jpg",
-        alt: "How we build mocks — full practice walkthrough",
+        type: "demo",
+        id: "math-practice-4",
         caption:
-          "Full economics How-it-works recording — only used in the mock-building craft post.",
+          "Animated preview of a mathematics practice cluster. The careful bank work behind screens like this is what this post describes.",
       },
     ],
   },
