@@ -6,6 +6,7 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";
 import { CourseEnglishDemo } from "@/components/how-it-works/CourseEnglishDemo";
 import { CourseMathDemo } from "@/components/how-it-works/CourseMathDemo";
+import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
 import { cn } from "@/lib/utils";
 
 type MainTab = "course" | "mock-builder" | "games";
@@ -231,6 +232,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     track === "bbe" &&
     tab === "course" &&
     (slide.key === "economics" || slide.key === "math" || slide.key === "english");
+  const liveMockDemo = track === "bbe" && tab === "mock-builder";
+  const liveStage = liveCourseDemo || liveMockDemo;
 
   const goSlide = (next: number) => {
     const i = (next + slides.length) % slides.length;
@@ -391,8 +394,12 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
-                  {liveCourseDemo ? (
-                    <BbeCourseStage key={slide.key} subject={slide.key} />
+                  {liveStage ? (
+                    liveMockDemo ? (
+                      <CourseMockDemo key="mock-builder" />
+                    ) : (
+                      <BbeCourseStage key={slide.key} subject={slide.key} />
+                    )
                   ) : (
                     <video
                       key={slide.key}
@@ -498,7 +505,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                 onClick={(event) => event.stopPropagation()}
               >
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: slide.aspect }}>
-                  {liveCourseDemo ? (
+                  {liveStage ? (
                     <div
                       className="absolute inset-0"
                       style={{
@@ -506,7 +513,11 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                         transformOrigin: "center center",
                       }}
                     >
-                      <BbeCourseStage key={`zoom-${slide.key}`} subject={slide.key} />
+                      {liveMockDemo ? (
+                        <CourseMockDemo key="zoom-mock-builder" />
+                      ) : (
+                        <BbeCourseStage key={`zoom-${slide.key}`} subject={slide.key} />
+                      )}
                     </div>
                   ) : (
                     <video

@@ -9,11 +9,10 @@ import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { CourseSolution } from "./CourseSolution";
 import { CourseTimedBar } from "./CourseTimedBar";
-import { parkCalcKeys, pressCalcKey, scrollPanelTo } from "./course-motion";
+import { parkCalcKeys, pressCalcKey, readPanel } from "./course-motion";
 import { COURSE_MATH } from "./course-tasks";
 
 const TASK = COURSE_MATH;
-const SHOWN = [0, 3];
 const KEYS = ["1", "2", "×", "1", "1", "="];
 
 /** Course · Math: MATH 12.01, timed 1:30, the exam calculator, then the bank solution. */
@@ -68,18 +67,14 @@ export function CourseMathDemo() {
     await api.wait(280);
 
     await api.moveTo('[data-d="expl"]');
-    await api.click(() => setExpl(true));
-    await api.wait(960);
-
-    for (const i of SHOWN) {
-      if (api.cancelled()) return;
-      setActive(i);
-      await api.flush();
-      await scrollPanelTo(api, '[data-d="expl-scroll"]', `[data-d="card${i}"]`);
-      await api.moveTo(`[data-d="e${i}"]`);
-      await api.wait(820);
-    }
-    await api.wait(500);
+    await api.click(() => {
+      setExpl(true);
+      setActive(0);
+    });
+    await api.wait(900);
+    await api.moveTo('[data-d="read-spot"]', 80);
+    await readPanel(api, '[data-d="expl-scroll"]');
+    await api.wait(420);
   }, []);
 
   const score = demoCorrectCount(marks, TASK.answerKey);
@@ -104,9 +99,11 @@ export function CourseMathDemo() {
             open={expl}
             answerKey={TASK.answerKey}
             explanations={TASK.explanations}
-            shown={[active >= 0 ? active : SHOWN[0]]}
+            shown={TASK.explanations.map((_, index) => index)}
             active={active}
             math
+            full
+            overview={TASK.overview}
           />
         </>
       }

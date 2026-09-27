@@ -39,6 +39,42 @@ export function evenExplanation(raw: string): string {
   return body || verdict || "";
 }
 
+/**
+ * The explanation text the math practice page shows: header stripped, formulas kept.
+ * Same cleanup as AllExplanationsPanel, without shortening.
+ */
+export function fullExplanation(raw: string): string {
+  let expl = raw.trim();
+  const verdictHeader =
+    /^(?:\*\*\s*)?[A-F]\.\s*(?:\*\*)?\s*→\s*(?:True|False|Wahr|Falsch|Richtig)\s*/i;
+  for (let guard = 0; guard < 4 && verdictHeader.test(expl); guard++) {
+    expl = expl.replace(verdictHeader, "").trim();
+  }
+  expl = expl
+    .replace(/^\*\*[A-F]\)[\s\S]*?\*\*\s*\((?:true|false|wahr|falsch|richtig)\)\s*/i, "")
+    .replace(/^(?:[A-F]\.\s*)?→\s*(?:True|False|Wahr|Falsch|Richtig)\s*\n+/i, "")
+    .trim();
+  return expl;
+}
+
+/** Steady read of a sheet: one ease from the top to the bottom, pointer stays put. */
+export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
+  await api.flush();
+  const panel = api.stage()?.querySelector<HTMLElement>(panelSelector);
+  if (!panel) return;
+  panel.scrollTop = 0;
+  await api.flush();
+  const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
+  if (max < 8) {
+    await api.wait(700);
+    return;
+  }
+  const duration = Math.max(3200, Math.min(7000, max * 0.62));
+  await api.tween(duration, (eased) => {
+    panel.scrollTop = max * eased;
+  });
+}
+
 /** Least scroll that puts `item` fully inside the panel. No-op when it already fits. */
 export async function scrollPanelTo(
   api: DemoPlayerApi,

@@ -10,6 +10,8 @@ export type CourseTask = {
   answerKey: boolean[];
   explanations: string[];
   chapter: string;
+  /** Full solution overview from the math practice sheet, when the bank has one. */
+  overview?: string;
 };
 
 type RawTask = {
@@ -19,6 +21,7 @@ type RawTask = {
   statements: string[];
   answer_key: boolean[];
   tactical_explanations: string[];
+  solution_overview?: string;
 };
 
 function asTask(raw: RawTask, chapter: string): CourseTask {
@@ -30,6 +33,7 @@ function asTask(raw: RawTask, chapter: string): CourseTask {
     answerKey: raw.answer_key,
     explanations: raw.tactical_explanations,
     chapter,
+    overview: raw.solution_overview?.trim() || undefined,
   };
 }
 

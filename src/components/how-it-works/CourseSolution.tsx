@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
-import { evenExplanation } from "./course-motion";
+import { evenExplanation, fullExplanation } from "./course-motion";
 import { cn } from "@/lib/utils";
 
 const LETTERS = "ABCDE";
@@ -16,6 +16,8 @@ export function CourseSolution({
   shown = explanations.map((_, index) => index),
   active,
   math = false,
+  full = false,
+  overview,
   locateAt,
   located = false,
 }: {
@@ -27,6 +29,9 @@ export function CourseSolution({
   shown?: number[];
   active: number;
   math?: boolean;
+  /** Render the bank text in full, including formula blocks. */
+  full?: boolean;
+  overview?: string;
   locateAt?: number;
   located?: boolean;
 }) {
@@ -44,6 +49,9 @@ export function CourseSolution({
           open ? "translate-x-0" : "pointer-events-none translate-x-[105%]",
         )}
       >
+        {open && full ? (
+          <div data-d="read-spot" className="pointer-events-none absolute bottom-[34%] left-[22%] z-20 h-3 w-3" />
+        ) : null}
         <div
           data-d="expl-scroll"
           className="practice-scroll h-full overflow-y-auto border-l border-border bg-card p-4 shadow-2xl sm:p-5"
@@ -82,11 +90,17 @@ export function CourseSolution({
               </tbody>
             </table>
           </section>
+          {overview ? (
+            <div className="mb-4 text-[13px] leading-relaxed text-foreground/90">
+              <FlashcardMath text={overview} />
+            </div>
+          ) : null}
           <div className="space-y-3">
             {shown.map((i) => {
               const letter = LETTERS[i];
               const verdict = answerKey[i] ? "True" : "False";
-              const prose = `**${letter}.** → ${verdict}\n\n${evenExplanation(explanations[i] ?? "")}`;
+              const body = full ? fullExplanation(explanations[i] ?? "") : evenExplanation(explanations[i] ?? "");
+              const prose = `**${letter}.** → ${verdict}\n\n${body}`;
               return (
                 <div
                   key={letter}

@@ -3,7 +3,8 @@ import { useEffect, useRef, useState, type RefObject } from "react";
 export type DemoPlayerApi = {
   wait: (ms: number) => Promise<void>;
   tween: (duration: number, onFrame: (eased: number) => void | Promise<void>) => Promise<void>;
-  moveTo: (selector: string) => Promise<void>;
+  /** `dwell` is how long the pointer rests after it arrives. Default keeps the course pace. */
+  moveTo: (selector: string, dwell?: number) => Promise<void>;
   /** Press the pointer. `onPress` runs on the down frame, before the click ends. */
   click: (onPress?: () => void) => Promise<void>;
   /** Re-read a live element and park the cursor on it (weight-handle chase). */
@@ -199,7 +200,7 @@ export function useDemoPlayer(
       });
     };
 
-    const moveTo = async (selector: string) => {
+    const moveTo = async (selector: string, dwell = 360) => {
       await flush();
       if (cancelled) return;
       const stage = stageRef.current;
@@ -213,7 +214,7 @@ export function useDemoPlayer(
       const target = pointOf(selector);
       if (!target) return;
       await glideCursor(target);
-      await wait(360);
+      await wait(dwell);
     };
 
     const reveal = async (selector: string) => {
