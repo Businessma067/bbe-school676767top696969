@@ -8,6 +8,13 @@ import { useDemoPlayer } from "./useDemoPlayer";
 
 const ACCENT = "#E85D3A";
 
+function formatClock(total: number) {
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
 /** MockBuilder FIRST_QUESTION verbatim. */
 const QUESTION = {
   caseId: "ECON-3.07",
@@ -111,19 +118,20 @@ export function DemoExamGate({ caption }: DemoProps) {
                 <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                   Question 1 / 24
                 </span>
-                <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+                <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
                   {QUESTION.caseId}
                 </span>
-                <span className="ml-auto inline-flex items-center gap-1.5 rounded-lg border border-caramel-deep bg-caramel-deep px-2.5 py-1.5 text-[11px] font-bold tabular-nums text-primary-foreground">
-                  <Clock className="h-3.5 w-3.5" />
-                  {Math.floor(seconds / 3600)}:
-                  {String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}:00
+                <span className="ml-auto inline-flex items-center gap-2 rounded-lg border border-caramel-deep bg-caramel-deep px-3 py-2 text-xs font-bold tabular-nums text-primary-foreground">
+                  <Clock className="h-4 w-4" />
+                  {formatClock(seconds)}
                 </span>
               </div>
               <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
                 {QUESTION.chapter}
               </p>
-              <h3 className="mt-1 font-display text-base font-bold">{QUESTION.title}</h3>
+              <h3 className="mt-1 font-display text-lg font-bold tracking-tight">
+                {QUESTION.title}
+              </h3>
               <p className="mt-3 text-sm leading-relaxed text-foreground/90">{QUESTION.context}</p>
               <DemoStatementTable statements={QUESTION.statements} marks={marks} />
             </>

@@ -93,11 +93,12 @@ export function DemoTutorAsk({ caption }: DemoProps) {
     await api.wait(500);
 
     await api.moveTo('[data-d="c1"]');
+    await api.click();
     setHesitate(1);
     await api.wait(520);
-    setHesitate(-1);
     await api.moveTo('[data-d="c0"]');
     await api.click();
+    setHesitate(-1);
     setPicked(0);
     setMood("happy");
     setFeedback(true);
@@ -119,7 +120,7 @@ export function DemoTutorAsk({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "mx-auto flex h-[380px] max-w-md flex-col justify-center transition-opacity duration-500 sm:h-[420px]",
+            "news-uniq-scroll mx-auto h-[380px] max-w-md overflow-y-auto transition-opacity duration-500 sm:h-[420px]",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
@@ -182,17 +183,23 @@ export function DemoTutorAsk({ caption }: DemoProps) {
                 })}
               </ul>
               {feedback ? (
-                <span
-                  data-d="next"
-                  className="inline-flex rounded-xl border border-emerald-200 bg-emerald-50/80 px-3.5 py-2.5 text-sm font-semibold text-emerald-900"
-                >
-                  Next question →
-                </span>
-              ) : (
-                <span data-d="next" className="invisible text-sm">
-                  Next
-                </span>
-              )}
+                <div className="rounded-xl border border-emerald-200 bg-emerald-50/80 px-4 py-3 text-sm">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                    Reveal
+                  </p>
+                  <p className="mt-1 font-semibold">x ≥ 2 and x ≠ 5</p>
+                  <p className="mt-1 text-[13px] text-muted-foreground">
+                    The radicand must be non-negative, and the denominator cannot be zero.
+                  </p>
+                  <span
+                    data-d="next"
+                    className="mt-3 inline-flex items-center rounded-md px-4 py-2 text-xs font-semibold text-white"
+                    style={{ backgroundColor: MATH }}
+                  >
+                    Next question →
+                  </span>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

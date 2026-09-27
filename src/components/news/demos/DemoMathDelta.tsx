@@ -35,13 +35,15 @@ export function DemoMathDelta({ caption }: DemoProps) {
     await api.moveTo('[data-d="card"]');
     await api.click();
     setFlipped(true);
-    await api.wait(360);
+    await api.wait(760);
     for (let i = 0; i < CASES.length; i++) {
       if (api.cancelled()) return;
+      await api.moveTo(`[data-d="case${i}"]`);
+      await api.click();
       setLit(i);
-      await api.wait(280);
+      await api.wait(220);
     }
-    await api.wait(200);
+    await api.wait(160);
 
     await api.moveTo('[data-d="know"]');
     await api.click();
@@ -111,6 +113,7 @@ export function DemoMathDelta({ caption }: DemoProps) {
                       {CASES.map((c, i) => (
                         <li
                           key={c.id}
+                          data-d={`case${i}`}
                           className={cn(
                             "flex items-center justify-between rounded-lg border px-3 py-2 text-sm transition-colors duration-300",
                             lit >= i

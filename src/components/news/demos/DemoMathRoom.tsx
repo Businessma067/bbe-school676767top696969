@@ -119,19 +119,22 @@ export function DemoMathRoom({ caption }: DemoProps) {
             >
               Mathematics room
             </span>
+            <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+              MATH-D.12
+            </span>
             <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-              MATH-D.12 · Domains
+              Domains
             </span>
             <span
               data-d="calc"
               className={cn(
-                "ml-auto inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-semibold",
+                "ml-auto inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold transition-colors",
                 calc
-                  ? "border-foreground bg-foreground text-background"
-                  : "border-border bg-background",
+                  ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
+                  : "border-border bg-background text-foreground",
               )}
             >
-              <Calculator className="h-3.5 w-3.5" /> Calculator
+              <Calculator className="h-4 w-4" /> Calculator
             </span>
           </div>
 
@@ -170,17 +173,14 @@ export function DemoMathRoom({ caption }: DemoProps) {
             </div>
           ) : null}
 
-          <h3 className="font-display text-base font-bold">Domain of √(x − 2) / (x − 5)</h3>
+          <h3 className="font-display text-lg font-bold tracking-tight">
+            Domain of √(x − 2) / (x − 5)
+          </h3>
           <p className="mt-2 text-sm text-foreground/90">
             Decide which statements about the domain are true.
           </p>
 
-          <DemoStatementTable
-            statements={STMTS}
-            marks={marks}
-            checked={checked}
-            answerKey={KEY}
-          />
+          <DemoStatementTable statements={STMTS} marks={marks} checked={checked} answerKey={KEY} />
 
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap items-center gap-2">

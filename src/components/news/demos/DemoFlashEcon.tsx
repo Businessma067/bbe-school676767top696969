@@ -87,7 +87,7 @@ export function DemoFlashEcon({ caption }: DemoProps) {
           <div className="mb-3 flex items-end justify-between gap-2">
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-                Study tools · English
+                Study tools · Economics
               </p>
               <h3 className="font-display text-lg font-bold">Flashcards · Economics</h3>
             </div>

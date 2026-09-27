@@ -119,7 +119,7 @@ export function DemoBankCraft({ caption }: DemoProps) {
                       {cards.length}
                     </span>
                   </div>
-                  <ul className="space-y-1.5">
+                  <ul className="min-h-16 space-y-1.5">
                     {cards.map((d) => {
                       const index = drafts.findIndex((x) => x.id === d.id);
                       const lifted = focus === index;

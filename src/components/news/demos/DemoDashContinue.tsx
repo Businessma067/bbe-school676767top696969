@@ -120,7 +120,7 @@ export function DemoDashContinue({ caption }: DemoProps) {
                   >
                     <Icon className="h-4 w-4 text-caramel-deep" />
                     <p className="mt-2 font-display text-sm font-bold">{t.title}</p>
-                    <p className="mt-0.5 hidden text-[11px] text-muted-foreground sm:block">
+                    <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
                       {t.blurb}
                     </p>
                   </div>

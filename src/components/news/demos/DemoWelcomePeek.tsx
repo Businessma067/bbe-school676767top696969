@@ -24,11 +24,11 @@ const TASK = {
   ],
   answerKey: [false, true, false, false, true],
   explanations: [
-    "A → False. Walking uses on foot, not by foot. By is for vehicles (by bus, by train).",
-    "B → True. By train correctly names the means of transport — the default by + vehicle lock.",
-    "C → False. Days and dated evenings take on: on Monday evening, not in Monday evening.",
-    "D → False. At night is the fixed time phrase. Bare in night is not standard.",
-    "E → True. On plus a day or date phrase is standard: on a cold Friday afternoon.",
+    "Walking uses on foot, not by foot. By is for vehicles (by bus, by train).",
+    "By train correctly names the means of transport — the default by + vehicle lock.",
+    "Days and dated evenings take on: on Monday evening, not in Monday evening.",
+    "At night is the fixed time phrase. Bare in night is not standard.",
+    "On plus a day or date phrase is standard: on a cold Friday afternoon.",
   ],
 };
 
@@ -48,6 +48,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
     setExpl(false);
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
+    if (explRef.current) explRef.current.scrollTop = 0;
     setFade(false);
     await api.wait(450);
 
@@ -72,11 +73,10 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
     await api.moveTo('[data-d="expl"]');
     await api.click();
     setExpl(true);
-    await api.wait(520);
-    for (let i = 0; i < 5; i++) {
+    // Panel slides for 900ms — wait until it has settled before chasing rows.
+    await api.wait(960);
+    for (let i = 0; i < TASK.explanations.length; i++) {
       if (api.cancelled()) return;
-      setActive(i);
-      await api.wait(40);
       const panel = explRef.current;
       const item = panel?.querySelector<HTMLElement>(`[data-d="e${i}"]`);
       if (panel && item) {
@@ -85,22 +85,33 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
         const target = Math.max(
           0,
           Math.min(
-            panel.scrollTop + (ib.top - pb.top) - 12,
+            panel.scrollTop + (ib.top - pb.top) - 24,
             panel.scrollHeight - panel.clientHeight,
           ),
         );
         const start = panel.scrollTop;
         const change = target - start;
         if (Math.abs(change) > 1) {
-          await api.tween(700, (eased) => {
+          await api.tween(900, (eased) => {
             panel.scrollTop = start + change * eased;
           });
         }
       }
       await api.moveTo(`[data-d="e${i}"]`);
-      await api.wait(480);
+      setActive(i);
+      await api.wait(520);
     }
-    await api.wait(800);
+    setActive(-1);
+    if (explRef.current) {
+      const panel = explRef.current;
+      const start = panel.scrollTop;
+      if (start > 1) {
+        await api.tween(900, (eased) => {
+          panel.scrollTop = start * (1 - eased);
+        });
+      }
+    }
+    await api.wait(700);
   }, []);
 
   const score = demoCorrectCount(marks, TASK.answerKey);
@@ -119,14 +130,14 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
               <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                 Task 7
               </span>
-              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
                 {TASK.caseId}
               </span>
               <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
                 {TASK.chapter}
               </span>
             </div>
-            <h3 className="font-display text-base font-bold">{TASK.title}</h3>
+            <h3 className="font-display text-lg font-bold tracking-tight">{TASK.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-foreground/90">{TASK.context}</p>
             <DemoStatementTable
               statements={TASK.statements}
@@ -155,33 +166,77 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
           </div>
 
           <div
-            ref={explRef}
             className={cn(
-              "practice-scroll absolute inset-y-0 right-0 z-10 w-[92%] max-w-sm overflow-y-auto border-l border-border bg-card p-4 shadow-2xl transition-transform duration-700 ease-in-out sm:w-[70%]",
-              expl ? "translate-x-0" : "translate-x-[105%]",
+              "pointer-events-none absolute inset-0 z-[5] rounded-2xl bg-black/75 transition-opacity duration-700 ease-in-out",
+              expl ? "opacity-100" : "opacity-0",
+            )}
+          />
+
+          <div
+            className={cn(
+              "absolute inset-y-0 right-0 z-10 w-full transition-transform duration-[900ms] ease-in-out lg:w-[56%]",
+              expl ? "translate-x-0" : "pointer-events-none translate-x-[105%]",
             )}
           >
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-primary">
-              Explanation
-            </p>
-            <div className="space-y-3">
-              {TASK.explanations.map((t, i) => (
-                <div
-                  key={i}
-                  data-d={`e${i}`}
-                  className={cn(
-                    "rounded-xl border p-3 text-sm transition-all duration-500",
-                    active === i
-                      ? "border-primary/40 bg-primary/5 opacity-100"
-                      : "border-transparent opacity-45",
-                  )}
-                >
-                  <p className="mb-1 font-display text-sm font-bold text-foreground">
-                    {DEMO_STATEMENT_LETTERS[i]}. → {TASK.answerKey[i] ? "True" : "False"}
-                  </p>
-                  {t}
-                </div>
-              ))}
+            <div
+              ref={explRef}
+              className="practice-scroll h-full max-h-full overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-2xl sm:p-6"
+            >
+              <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
+                Explanation
+              </p>
+
+              <section className="mb-8 border-b border-border/60 pb-7">
+                <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
+                  Answer key
+                </p>
+                <table className="w-full table-fixed border-collapse border border-foreground/20 text-center text-[12px] shadow-sm">
+                  <thead>
+                    <tr className="bg-foreground text-background">
+                      {TASK.answerKey.map((_, i) => (
+                        <th
+                          key={i}
+                          className="border-b border-foreground/20 px-1 py-2 text-[11px] font-bold uppercase tracking-wide sm:text-[12px]"
+                        >
+                          {DEMO_STATEMENT_LETTERS[i]}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-card">
+                      {TASK.answerKey.map((isTrue, i) => (
+                        <td
+                          key={i}
+                          className="border-border px-0.5 py-2.5 text-[10px] font-bold uppercase tracking-widest text-foreground sm:text-[12px]"
+                        >
+                          {isTrue ? "TRUE" : "FALSE"}
+                        </td>
+                      ))}
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <div className="space-y-6">
+                {TASK.explanations.map((t, i) => (
+                  <div
+                    key={i}
+                    data-d={`e${i}`}
+                    className={cn(
+                      "rounded-xl border p-4 transition-all duration-700 ease-out",
+                      active === i
+                        ? "border-primary/40 bg-primary/5 opacity-100 shadow-sm"
+                        : "border-transparent bg-transparent opacity-45",
+                    )}
+                  >
+                    <p className="mb-2 font-display text-sm font-bold text-foreground">
+                      {DEMO_STATEMENT_LETTERS[i]}. → {TASK.answerKey[i] ? "True" : "False"}
+                    </p>
+                    <p className="text-[13px] leading-relaxed text-foreground/90">{t}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

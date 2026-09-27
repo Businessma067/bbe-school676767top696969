@@ -22,9 +22,10 @@ const CHAPTERS = [
 
 /** Original Mock Builder chrome — topic picks, count, weight drag, build. Not MockBuilderSimulator. */
 export function DemoBuilderMix({ caption }: DemoProps) {
-  const [open, setOpen] = useState(3);
+  const [open, setOpen] = useState<number | null>(null);
   const [picked, setPicked] = useState<string[]>([]);
   const [count, setCount] = useState(10);
+  const [countDraft, setCountDraft] = useState("10");
   const [weight, setWeight] = useState({ x: 50, y: 48 });
   const [building, setBuilding] = useState(false);
   const [ready, setReady] = useState(false);
@@ -33,9 +34,10 @@ export function DemoBuilderMix({ caption }: DemoProps) {
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
     await api.wait(220);
-    setOpen(3);
+    setOpen(null);
     setPicked([]);
     setCount(10);
+    setCountDraft("10");
     setWeight({ x: 50, y: 48 });
     setBuilding(false);
     setReady(false);
@@ -46,7 +48,7 @@ export function DemoBuilderMix({ caption }: DemoProps) {
     await api.moveTo('[data-d="ch3"]');
     await api.click();
     setOpen(3);
-    await api.wait(400);
+    await api.wait(480);
 
     for (const id of ["3.1", "3.2"]) {
       if (api.cancelled()) return;
@@ -58,10 +60,11 @@ export function DemoBuilderMix({ caption }: DemoProps) {
 
     await api.moveTo('[data-d="count"]');
     await api.click();
-    for (const n of [1, 12]) {
-      setCount(n);
-      await api.wait(220);
+    for (const chunk of ["1", "12"]) {
+      setCountDraft(chunk);
+      await api.wait(240);
     }
+    setCount(12);
     await api.wait(400);
 
     await api.moveTo('[data-d="handle"]');
@@ -110,7 +113,7 @@ export function DemoBuilderMix({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "news-uniq-scroll h-[320px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[360px] sm:p-5",
+            "news-uniq-scroll h-[400px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[440px] sm:p-5",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
@@ -143,7 +146,7 @@ export function DemoBuilderMix({ caption }: DemoProps) {
                         )}
                       />
                       <span className="font-display font-semibold">Ch {ch.id}</span>
-                      <span className="truncate text-xs text-muted-foreground">{ch.title}</span>
+                      <span className="text-xs text-muted-foreground">{ch.title}</span>
                     </div>
                     {open === ch.id ? (
                       <ul className="divide-y divide-border/60 px-2 py-1">
@@ -179,9 +182,9 @@ export function DemoBuilderMix({ caption }: DemoProps) {
                 <span
                   data-d="count"
                   className="w-16 rounded-md border border-border bg-background px-2 py-1.5 text-center font-semibold tabular-nums"
-                  style={{ borderColor: count !== 10 ? ACCENT : undefined }}
+                  style={{ borderColor: countDraft !== "10" ? ACCENT : undefined }}
                 >
-                  {count}
+                  {countDraft || "|"}
                 </span>
                 <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" />
