@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Check, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
@@ -20,63 +20,81 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
   const [checked, setChecked] = useState(false);
   const [expl, setExpl] = useState(false);
   const [active, setActive] = useState(-1);
+  const explRef = useRef<HTMLDivElement | null>(null);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(220);
-      setMarks({});
-      setChecked(false);
-      setExpl(false);
-      setActive(-1);
-      if (api.scroll()) api.scroll()!.scrollTop = 0;
-      setFade(false);
-      await api.wait(450);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(220);
+    setMarks({});
+    setChecked(false);
+    setExpl(false);
+    setActive(-1);
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
+    setFade(false);
+    await api.wait(450);
 
-      for (const i of [0, 2]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="m${i}"]`);
-        await api.click();
-        setMarks((m) => ({ ...m, [i]: true }));
-        await api.wait(380);
+    for (const i of [0, 2]) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="m${i}"]`);
+      await api.click();
+      setMarks((m) => ({ ...m, [i]: true }));
+      await api.wait(380);
+    }
+    // trap
+    await api.moveTo('[data-d="m1"]');
+    await api.click();
+    setMarks((m) => ({ ...m, 1: true }));
+    await api.wait(350);
+
+    await api.moveTo('[data-d="submit"]');
+    await api.click();
+    setChecked(true);
+    await api.wait(600);
+
+    await api.moveTo('[data-d="expl"]');
+    await api.click();
+    setExpl(true);
+    await api.wait(520);
+    for (let i = 0; i < 3; i++) {
+      if (api.cancelled()) return;
+      setActive(i);
+      await api.wait(40);
+      const panel = explRef.current;
+      const item = panel?.querySelector<HTMLElement>(`[data-d="e${i}"]`);
+      if (panel && item) {
+        const pb = panel.getBoundingClientRect();
+        const ib = item.getBoundingClientRect();
+        const target = Math.max(
+          0,
+          Math.min(
+            panel.scrollTop + (ib.top - pb.top) - 12,
+            panel.scrollHeight - panel.clientHeight,
+          ),
+        );
+        const start = panel.scrollTop;
+        const change = target - start;
+        if (Math.abs(change) > 1) {
+          await api.tween(700, (eased) => {
+            panel.scrollTop = start + change * eased;
+          });
+        }
       }
-      // trap
-      await api.moveTo('[data-d="m1"]');
-      await api.click();
-      setMarks((m) => ({ ...m, 1: true }));
-      await api.wait(350);
-
-      await api.moveTo('[data-d="submit"]');
-      await api.click();
-      setChecked(true);
-      await api.wait(600);
-
-      await api.moveTo('[data-d="expl"]');
-      await api.click();
-      setExpl(true);
-      await api.wait(500);
-      for (let i = 0; i < 3; i++) {
-        if (api.cancelled()) return;
-        setActive(i);
-        await api.moveTo(`[data-d="e${i}"]`);
-        await api.wait(650);
-      }
-      await api.wait(900);
-    },
-    [],
-  );
+      await api.moveTo(`[data-d="e${i}"]`);
+      await api.wait(480);
+    }
+    await api.wait(800);
+  }, []);
 
   return (
     <DemoShell url="/demo-practice/english" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
       <div ref={stageRef} className="relative">
         <div
-          ref={scrollRef}
           className={cn(
-            "news-uniq-scroll relative h-[400px] overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-opacity duration-500 sm:h-[440px]",
+            "relative h-[400px] overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-opacity duration-500 sm:h-[440px]",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
-          <div className="h-full overflow-y-auto p-4 sm:p-5">
+          <div ref={scrollRef} className="news-uniq-scroll h-full overflow-y-auto p-4 sm:p-5">
             <div className="mb-3 flex flex-wrap items-center gap-2">
               <span
                 className="rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white"
@@ -89,8 +107,12 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
               </span>
             </div>
             <h3 className="font-display text-base font-bold">Linking words under pressure</h3>
-            <p className="mt-2 text-sm text-foreground/90">
-              Choose which statements about academic connectors are true.
+            <p className="mt-3 rounded-xl border border-border bg-background px-3 py-3 text-sm leading-relaxed">
+              The firm opened a second depot.{" "}
+              <span className="rounded bg-primary/15 px-1 font-semibold">Nevertheless</span>,
+              margins fell.{" "}
+              <span className="rounded bg-primary/15 px-1 font-semibold">In spite of</span> the new
+              site, local demand stayed flat.
             </p>
             <ol className="mt-4 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
               {STMTS.map((s, i) => {
@@ -146,8 +168,9 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
           </div>
 
           <div
+            ref={explRef}
             className={cn(
-              "absolute inset-y-0 right-0 z-10 w-[92%] max-w-sm border-l border-border bg-card p-4 shadow-2xl transition-transform duration-700 ease-in-out sm:w-[70%]",
+              "practice-scroll absolute inset-y-0 right-0 z-10 w-[92%] max-w-sm overflow-y-auto border-l border-border bg-card p-4 shadow-2xl transition-transform duration-700 ease-in-out sm:w-[70%]",
               expl ? "translate-x-0" : "translate-x-[105%]",
             )}
           >
@@ -156,9 +179,9 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
             </p>
             <div className="space-y-3">
               {[
-                "A → True. “Nevertheless” contrasts with what came before.",
-                "B → False. “Affect” is usually a verb; “effect” is the noun.",
-                "C → True. “In spite of” + noun / -ing, not a full finite clause.",
+                "A → True. “Nevertheless” contrasts with the clause before it. In the depot sentence it admits the expansion and then turns against the result: margins still fell.",
+                "B → False. “Affect” is usually a verb. The noun is “effect”. Marking this statement true is the trap in the cluster.",
+                "C → True. “In spite of” takes a noun phrase or an -ing form. It does not take a full finite clause the way “although” does.",
               ].map((t, i) => (
                 <div
                   key={i}

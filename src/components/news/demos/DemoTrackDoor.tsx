@@ -12,33 +12,33 @@ const WISO = "#3a5a78";
 export function DemoTrackDoor({ caption }: DemoProps) {
   const [picked, setPicked] = useState<"none" | "bbe" | "wiso">("none");
   const [hover, setHover] = useState<"none" | "bbe" | "wiso">("none");
+  const [entered, setEntered] = useState(false);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(200);
-      setPicked("none");
-      setHover("none");
-      setFade(false);
-      await api.wait(500);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(200);
+    setPicked("none");
+    setHover("none");
+    setEntered(false);
+    setFade(false);
+    await api.wait(500);
 
-      await api.moveTo('[data-d="wiso"]');
-      setHover("wiso");
-      await api.wait(550);
-      await api.moveTo('[data-d="bbe"]');
-      setHover("bbe");
-      await api.wait(400);
-      await api.click();
-      setPicked("bbe");
-      setHover("bbe");
-      await api.wait(900);
+    await api.moveTo('[data-d="wiso"]');
+    setHover("wiso");
+    await api.wait(550);
+    await api.moveTo('[data-d="bbe"]');
+    setHover("bbe");
+    await api.wait(400);
+    await api.click();
+    setPicked("bbe");
+    setHover("bbe");
+    await api.wait(900);
 
-      await api.moveTo('[data-d="enter"]');
-      await api.click();
-      await api.wait(1300);
-    },
-    [],
-  );
+    await api.moveTo('[data-d="enter"]');
+    await api.click();
+    setEntered(true);
+    await api.wait(1300);
+  }, []);
 
   return (
     <DemoShell url="/" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
@@ -60,7 +60,7 @@ export function DemoTrackDoor({ caption }: DemoProps) {
             Two clear doors — practice stays on the path you choose.
           </p>
 
-          <div className="mt-5 grid grid-cols-2 gap-3">
+          <div className={cn("mt-5 grid gap-3", entered ? "grid-cols-1" : "grid-cols-2")}>
             <div
               data-d="bbe"
               className={cn(
@@ -83,9 +83,14 @@ export function DemoTrackDoor({ caption }: DemoProps) {
                 BBE
               </span>
               <p className="mt-3 font-display text-base font-bold">Business · English</p>
-              <p className="mt-1 text-xs text-muted-foreground">
-                Mathematics, English, Economics
-              </p>
+              <p className="mt-1 text-xs text-muted-foreground">Mathematics, English, Economics</p>
+              {entered ? (
+                <ul className="news-uniq-rise mt-3 space-y-1 text-xs font-semibold">
+                  <li>1 · Mathematics room</li>
+                  <li>2 · English connectors</li>
+                  <li>3 · Economics cases</li>
+                </ul>
+              ) : null}
             </div>
             <div
               data-d="wiso"
@@ -95,6 +100,7 @@ export function DemoTrackDoor({ caption }: DemoProps) {
                   ? "scale-[1.02] shadow-md"
                   : "border-border opacity-85",
                 picked === "bbe" && "opacity-45",
+                entered && "hidden",
               )}
               style={
                 picked === "wiso" || hover === "wiso"
@@ -109,9 +115,7 @@ export function DemoTrackDoor({ caption }: DemoProps) {
                 WiSo
               </span>
               <p className="mt-3 font-display text-base font-bold">Wirtschaft · Deutsch</p>
-              <p className="mt-1 text-xs text-muted-foreground">
-                Mathematik, Deutsch, Wirtschaft
-              </p>
+              <p className="mt-1 text-xs text-muted-foreground">Mathematik, Deutsch, Wirtschaft</p>
             </div>
           </div>
 

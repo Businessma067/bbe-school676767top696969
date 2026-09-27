@@ -24,45 +24,40 @@ export function DemoAnswerSheet({ caption }: DemoProps) {
   ]);
   const [hint, setHint] = useState("Leave unmarked when unsure");
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(200);
-      setCells((c) => c.map((x) => ({ ...x, filled: false })));
-      setHint("Leave unmarked when unsure");
-      setFade(false);
-      await api.wait(450);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(200);
+    setCells((c) => c.map((x) => ({ ...x, filled: false })));
+    setHint("Leave unmarked when unsure");
+    setFade(false);
+    await api.wait(450);
 
-      // Fill Q1 A, C, D — leave B blank on purpose
-      for (const key of ["1A", "1C", "1D"]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="${key}"]`);
-        await api.click();
-        setCells((prev) =>
-          prev.map((c) =>
-            `${c.q}${c.letter}` === key ? { ...c, filled: true } : c,
-          ),
-        );
-        await api.wait(380);
-      }
-      setHint("Blank ≠ wrong — blanks neither add nor subtract");
-      await api.wait(700);
-
-      await api.moveTo('[data-d="2A"]');
+    // Fill Q1 A, C, D — leave B blank on purpose
+    for (const key of ["1A", "1C", "1D"]) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="${key}"]`);
       await api.click();
       setCells((prev) =>
-        prev.map((c) => (c.q === 2 && c.letter === "A" ? { ...c, filled: true } : c)),
+        prev.map((c) => (`${c.q}${c.letter}` === key ? { ...c, filled: true } : c)),
       );
-      await api.wait(400);
-      await api.moveTo('[data-d="2B"]');
-      await api.click();
-      setCells((prev) =>
-        prev.map((c) => (c.q === 2 && c.letter === "B" ? { ...c, filled: true } : c)),
-      );
-      await api.wait(1400);
-    },
-    [],
-  );
+      await api.wait(380);
+    }
+    setHint("Blank ≠ wrong — blanks neither add nor subtract");
+    await api.wait(700);
+
+    await api.moveTo('[data-d="2A"]');
+    await api.click();
+    setCells((prev) =>
+      prev.map((c) => (c.q === 2 && c.letter === "A" ? { ...c, filled: true } : c)),
+    );
+    await api.wait(400);
+    await api.moveTo('[data-d="2B"]');
+    await api.click();
+    setCells((prev) =>
+      prev.map((c) => (c.q === 2 && c.letter === "B" ? { ...c, filled: true } : c)),
+    );
+    await api.wait(1400);
+  }, []);
 
   return (
     <DemoShell url="/features/answer-sheet" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
@@ -104,7 +99,9 @@ export function DemoAnswerSheet({ caption }: DemoProps) {
                           style={
                             cell.filled
                               ? { backgroundColor: ACCENT, boxShadow: `0 0 0 3px ${ACCENT}33` }
-                              : undefined
+                              : q === 1 && letter === "B" && hint.startsWith("Blank")
+                                ? { boxShadow: "0 0 0 3px #E85D3A55", borderStyle: "dashed" }
+                                : undefined
                           }
                         >
                           {letter}

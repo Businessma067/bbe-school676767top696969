@@ -19,7 +19,9 @@ export function DemoShell({
   stageClassName?: string;
 }) {
   return (
-    <figure className={cn("my-8 overflow-hidden rounded-lg border border-border bg-card", className)}>
+    <figure
+      className={cn("my-8 overflow-hidden rounded-lg border border-border bg-card", className)}
+    >
       <div className="border-b border-border bg-secondary/50 px-3 py-2.5 sm:px-4">
         <div className="flex items-center gap-2">
           <span className="flex gap-1.5" aria-hidden="true">

@@ -24,43 +24,40 @@ export function DemoHardMock({ caption }: DemoProps) {
   const [answers, setAnswers] = useState<Record<number, Record<number, boolean>>>({});
   const [seconds, setSeconds] = useState(48 * 60);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(220);
-      setQi(0);
-      setVisited([0]);
-      setAnswers({});
-      setSeconds(48 * 60);
-      if (api.scroll()) api.scroll()!.scrollTop = 0;
-      setFade(false);
-      await api.wait(450);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(220);
+    setQi(0);
+    setVisited([0]);
+    setAnswers({});
+    setSeconds(48 * 60);
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
+    setFade(false);
+    await api.wait(450);
 
-      for (const i of [0, 2]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="a${i}"]`);
-        await api.click();
-        setAnswers((prev) => ({ ...prev, 0: { ...(prev[0] ?? {}), [i]: true } }));
-        await api.wait(380);
-      }
-
-      await api.moveTo('[data-d="tile2"]');
+    for (const i of [0, 2]) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="a${i}"]`);
       await api.click();
-      setQi(1);
-      setVisited((v) => (v.includes(1) ? v : [...v, 1]));
-      setSeconds((s) => s - 45);
-      await api.wait(700);
+      setAnswers((prev) => ({ ...prev, 0: { ...(prev[0] ?? {}), [i]: true } }));
+      await api.wait(380);
+    }
 
-      for (const i of [0]) {
-        await api.moveTo(`[data-d="a${i}"]`);
-        await api.click();
-        setAnswers((prev) => ({ ...prev, 1: { ...(prev[1] ?? {}), [i]: true } }));
-        await api.wait(400);
-      }
-      await api.wait(1400);
-    },
-    [],
-  );
+    await api.moveTo('[data-d="tile2"]');
+    await api.click();
+    setQi(1);
+    setVisited((v) => (v.includes(1) ? v : [...v, 1]));
+    setSeconds((s) => s - 45);
+    await api.wait(700);
+
+    for (const i of [0]) {
+      await api.moveTo(`[data-d="a${i}"]`);
+      await api.click();
+      setAnswers((prev) => ({ ...prev, 1: { ...(prev[1] ?? {}), [i]: true } }));
+      await api.wait(400);
+    }
+    await api.wait(1400);
+  }, []);
 
   const stmts = qi === 0 ? Q1 : Q2;
   const marks = answers[qi] ?? {};
@@ -118,28 +115,35 @@ export function DemoHardMock({ caption }: DemoProps) {
             </div>
           </div>
 
-          <h3 className="font-display text-base font-bold">
-            {qi === 0 ? "Stakeholders of a growing firm" : "Business sectors"}
-          </h3>
-          <ol className="mt-3 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-            {stmts.map((s, i) => (
-              <li key={i} className="flex items-center gap-3 px-3 py-2.5">
-                <span className="w-5 text-xs font-bold text-muted-foreground">{"ABCDE"[i]}.</span>
-                <p className="flex-1 text-sm leading-snug">{s}</p>
-                <span
-                  data-d={`a${i}`}
-                  className={cn(
-                    "grid h-6 w-6 place-items-center rounded border-2",
-                    marks[i]
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border",
-                  )}
-                >
-                  {marks[i] ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
-                </span>
-              </li>
-            ))}
-          </ol>
+          <div key={qi} className="news-uniq-slide-in">
+            <h3 className="font-display text-base font-bold">
+              {qi === 0 ? "Stakeholders of a growing firm" : "Business sectors"}
+            </h3>
+            <p className="mt-1 text-xs text-muted-foreground">
+              {qi === 0
+                ? "Q1 stays on the clock. The palette is how you jump."
+                : "Q2 slid in from the palette. The timer kept running."}
+            </p>
+            <ol className="mt-3 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+              {stmts.map((s, i) => (
+                <li key={i} className="flex items-center gap-3 px-3 py-2.5">
+                  <span className="w-5 text-xs font-bold text-muted-foreground">{"ABCDE"[i]}.</span>
+                  <p className="flex-1 text-sm leading-snug">{s}</p>
+                  <span
+                    data-d={`a${i}`}
+                    className={cn(
+                      "grid h-6 w-6 place-items-center rounded border-2",
+                      marks[i]
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : "border-border",
+                    )}
+                  >
+                    {marks[i] ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
         <DemoCursor cursorRef={cursorRef} clicking={clicking} />
       </div>

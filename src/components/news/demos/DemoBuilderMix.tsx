@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { BookOpen, Check, ChevronDown, Clock, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
@@ -8,7 +8,11 @@ import { useDemoPlayer } from "./useDemoPlayer";
 const ACCENT = "#E85D3A";
 
 const CHAPTERS = [
-  { id: 1, title: "Scarcity & choice", subs: ["1.1 Opportunity cost", "1.2 Production possibility"] },
+  {
+    id: 1,
+    title: "Scarcity & choice",
+    subs: ["1.1 Opportunity cost", "1.2 Production possibility"],
+  },
   {
     id: 3,
     title: "Types of businesses",
@@ -24,73 +28,77 @@ export function DemoBuilderMix({ caption }: DemoProps) {
   const [weight, setWeight] = useState({ x: 50, y: 48 });
   const [building, setBuilding] = useState(false);
   const [ready, setReady] = useState(false);
+  const handleRef = useRef<HTMLSpanElement | null>(null);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(220);
+    setOpen(3);
+    setPicked([]);
+    setCount(10);
+    setWeight({ x: 50, y: 48 });
+    setBuilding(false);
+    setReady(false);
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
+    setFade(false);
+    await api.wait(450);
+
+    await api.moveTo('[data-d="ch3"]');
+    await api.click();
+    setOpen(3);
+    await api.wait(400);
+
+    for (const id of ["3.1", "3.2"]) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="sub-${id}"]`);
+      await api.click();
+      setPicked((p) => [...p, id]);
+      await api.wait(380);
+    }
+
+    await api.moveTo('[data-d="count"]');
+    await api.click();
+    for (const n of [1, 12]) {
+      setCount(n);
       await api.wait(220);
-      setOpen(3);
-      setPicked([]);
-      setCount(10);
-      setWeight({ x: 50, y: 48 });
-      setBuilding(false);
-      setReady(false);
-      if (api.scroll()) api.scroll()!.scrollTop = 0;
-      setFade(false);
-      await api.wait(450);
+    }
+    await api.wait(400);
 
-      await api.moveTo('[data-d="ch3"]');
-      await api.click();
-      setOpen(3);
-      await api.wait(400);
+    await api.moveTo('[data-d="handle"]');
+    await api.click();
+    const path = [
+      { x: 68, y: 32 },
+      { x: 38, y: 62 },
+      { x: 55, y: 44 },
+    ];
+    let from = { x: 50, y: 48 };
+    for (const p of path) {
+      if (api.cancelled()) return;
+      const start = from;
+      const dist = Math.hypot(p.x - start.x, p.y - start.y);
+      await api.tween(700 + dist * 4, (eased) => {
+        const x = start.x + (p.x - start.x) * eased;
+        const y = start.y + (p.y - start.y) * eased;
+        const el = handleRef.current;
+        if (el) {
+          el.style.left = `${x}%`;
+          el.style.top = `${y}%`;
+        }
+        setWeight({ x, y });
+        api.snapTo('[data-d="handle"]');
+      });
+      from = p;
+      await api.wait(280);
+    }
 
-      for (const id of ["3.1", "3.2"]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="sub-${id}"]`);
-        await api.click();
-        setPicked((p) => [...p, id]);
-        await api.wait(380);
-      }
-
-      await api.moveTo('[data-d="count"]');
-      await api.click();
-      for (const n of [1, 12]) {
-        setCount(n);
-        await api.wait(220);
-      }
-      await api.wait(400);
-
-      await api.moveTo('[data-d="handle"]');
-      await api.click();
-      const path = [
-        { x: 68, y: 32 },
-        { x: 38, y: 62 },
-        { x: 55, y: 44 },
-      ];
-      let from = { x: 50, y: 48 };
-      for (const p of path) {
-        if (api.cancelled()) return;
-        const start = from;
-        await api.tween(640, (e) => {
-          setWeight({
-            x: start.x + (p.x - start.x) * e,
-            y: start.y + (p.y - start.y) * e,
-          });
-        });
-        from = p;
-        await api.wait(200);
-      }
-
-      await api.moveTo('[data-d="build"]');
-      await api.click();
-      setBuilding(true);
-      await api.wait(1200);
-      setBuilding(false);
-      setReady(true);
-      await api.wait(1600);
-    },
-    [],
-  );
+    await api.moveTo('[data-d="build"]');
+    await api.click();
+    setBuilding(true);
+    await api.wait(1200);
+    setBuilding(false);
+    setReady(true);
+    await api.wait(1600);
+  }, []);
 
   return (
     <DemoShell
@@ -102,7 +110,7 @@ export function DemoBuilderMix({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "news-uniq-scroll h-[360px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[420px] sm:p-5",
+            "news-uniq-scroll h-[320px] overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm transition-opacity duration-500 sm:h-[360px] sm:p-5",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
@@ -150,7 +158,9 @@ export function DemoBuilderMix({ caption }: DemoProps) {
                                   "grid h-4 w-4 place-items-center rounded border-2",
                                   on ? "text-white" : "border-border",
                                 )}
-                                style={on ? { backgroundColor: ACCENT, borderColor: ACCENT } : undefined}
+                                style={
+                                  on ? { backgroundColor: ACCENT, borderColor: ACCENT } : undefined
+                                }
                               >
                                 {on ? <Check className="h-3 w-3" strokeWidth={3} /> : null}
                               </span>
@@ -198,6 +208,7 @@ export function DemoBuilderMix({ caption }: DemoProps) {
                   Mix
                 </span>
                 <span
+                  ref={handleRef}
                   data-d="handle"
                   className="absolute h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white shadow"
                   style={{
@@ -207,6 +218,9 @@ export function DemoBuilderMix({ caption }: DemoProps) {
                   }}
                 />
               </div>
+              <p className="mt-2 text-[11px] font-semibold tabular-nums text-muted-foreground">
+                3.1 {Math.round(100 - weight.y)}% · 3.2 {Math.round(weight.x)}%
+              </p>
             </div>
           </div>
 

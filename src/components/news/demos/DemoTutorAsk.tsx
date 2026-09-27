@@ -22,15 +22,42 @@ function TutorFace({ mood }: { mood: "idle" | "happy" | "sad" }) {
     >
       <svg viewBox="0 0 32 32" className="h-9 w-9 text-foreground/80">
         <rect x="5" y="9" width="22" height="16" rx="5" fill="currentColor" opacity="0.12" />
-        <rect x="5" y="9" width="22" height="16" rx="5" fill="none" stroke="currentColor" strokeWidth="1.4" />
+        <rect
+          x="5"
+          y="9"
+          width="22"
+          height="16"
+          rx="5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.4"
+        />
         <circle cx="12" cy="16" r="1.6" fill="currentColor" />
         <circle cx="20" cy="16" r="1.6" fill="currentColor" />
         {mood === "happy" ? (
-          <path d="M12.5 21.5c1.2 1.4 5.8 1.4 7 0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <path
+            d="M12.5 21.5c1.2 1.4 5.8 1.4 7 0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
         ) : mood === "sad" ? (
-          <path d="M12.5 22.5c1.2-1.2 5.8-1.2 7 0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <path
+            d="M12.5 22.5c1.2-1.2 5.8-1.2 7 0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
         ) : (
-          <path d="M13 21.5h6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <path
+            d="M13 21.5h6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
         )}
         <circle cx="16" cy="5.5" r="1.4" fill="currentColor" opacity="0.75" />
         <line x1="16" y1="7" x2="16" y2="9" stroke="currentColor" strokeWidth="1.3" />
@@ -52,39 +79,39 @@ export function DemoTutorAsk({ caption }: DemoProps) {
   const [mood, setMood] = useState<"idle" | "happy" | "sad">("idle");
   const [progress, setProgress] = useState(28);
   const [feedback, setFeedback] = useState(false);
+  const [hesitate, setHesitate] = useState(-1);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(200);
-      setPicked(-1);
-      setMood("idle");
-      setProgress(28);
-      setFeedback(false);
-      setFade(false);
-      await api.wait(500);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(200);
+    setPicked(-1);
+    setMood("idle");
+    setProgress(28);
+    setFeedback(false);
+    setHesitate(-1);
+    setFade(false);
+    await api.wait(500);
 
-      // Hesitate on B, then pick A
-      await api.moveTo('[data-d="c1"]');
-      await api.wait(400);
-      await api.moveTo('[data-d="c0"]');
-      await api.click();
-      setPicked(0);
-      setMood("happy");
-      setFeedback(true);
-      setProgress(52);
-      await api.wait(1400);
+    await api.moveTo('[data-d="c1"]');
+    setHesitate(1);
+    await api.wait(520);
+    setHesitate(-1);
+    await api.moveTo('[data-d="c0"]');
+    await api.click();
+    setPicked(0);
+    setMood("happy");
+    setFeedback(true);
+    setProgress(52);
+    await api.wait(1400);
 
-      await api.moveTo('[data-d="next"]');
-      await api.click();
-      setPicked(-1);
-      setMood("idle");
-      setFeedback(false);
-      setProgress(52);
-      await api.wait(900);
-    },
-    [],
-  );
+    await api.moveTo('[data-d="next"]');
+    await api.click();
+    setPicked(-1);
+    setMood("idle");
+    setFeedback(false);
+    setProgress(52);
+    await api.wait(900);
+  }, []);
 
   return (
     <DemoShell url="/tutor-exam/mathematics" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
@@ -134,7 +161,9 @@ export function DemoTutorAsk({ caption }: DemoProps) {
                         "flex items-start gap-3 rounded-xl border px-3.5 py-3 text-sm transition-all",
                         on
                           ? "border-emerald-400 bg-emerald-50"
-                          : "border-border bg-card",
+                          : hesitate === i
+                            ? "border-amber-400 bg-amber-50"
+                            : "border-border bg-card",
                       )}
                     >
                       <span

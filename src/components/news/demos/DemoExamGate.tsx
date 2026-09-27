@@ -14,44 +14,41 @@ const STMTS = [
 
 /** Free Demo Exam: account gate → timed start → mark statements. */
 export function DemoExamGate({ caption }: DemoProps) {
-  const [gate, setGate] = useState(true);
+  const [gate, setGate] = useState(false);
   const [exam, setExam] = useState(false);
   const [marks, setMarks] = useState<Record<number, boolean>>({});
   const [seconds, setSeconds] = useState(7200);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(240);
-      setGate(true);
-      setExam(false);
-      setMarks({});
-      setSeconds(7200);
-      setFade(false);
-      await api.wait(500);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(240);
+    setGate(false);
+    setExam(false);
+    setMarks({});
+    setSeconds(7200);
+    setFade(false);
+    await api.wait(500);
 
-      await api.moveTo('[data-d="start"]');
+    await api.moveTo('[data-d="start"]');
+    await api.click();
+    setGate(true);
+    await api.wait(700);
+
+    await api.moveTo('[data-d="account"]');
+    await api.click();
+    setGate(false);
+    setExam(true);
+    await api.wait(900);
+
+    for (const i of [0, 2]) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
-      setGate(true);
-      await api.wait(700);
-
-      await api.moveTo('[data-d="account"]');
-      await api.click();
-      setGate(false);
-      setExam(true);
-      await api.wait(900);
-
-      for (const i of [0, 2]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="m${i}"]`);
-        await api.click();
-        setMarks((m) => ({ ...m, [i]: true }));
-        await api.wait(420);
-      }
-      await api.wait(1400);
-    },
-    [],
-  );
+      setMarks((m) => ({ ...m, [i]: true }));
+      await api.wait(420);
+    }
+    await api.wait(1400);
+  }, []);
 
   return (
     <DemoShell url="/demo-mock" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
@@ -73,9 +70,19 @@ export function DemoExamGate({ caption }: DemoProps) {
               </span>
               <h3 className="font-display text-xl font-bold tracking-tight">Free hard mock</h3>
               <p className="mt-2 max-w-md text-sm text-muted-foreground">
-                Same True/False clusters and partial-credit scoring. Free account required to save
-                your attempt — no credit card.
+                Same True/False clusters and partial-credit scoring. The page is public. Starting
+                saves the attempt.
               </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {["2 hours", "24 questions", "No credit card"].map((chip) => (
+                  <span
+                    key={chip}
+                    className="rounded-full border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-muted-foreground"
+                  >
+                    {chip}
+                  </span>
+                ))}
+              </div>
               <span
                 data-d="start"
                 className="mt-5 inline-flex w-fit items-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm"
@@ -96,7 +103,8 @@ export function DemoExamGate({ caption }: DemoProps) {
                 </span>
                 <span className="ml-auto inline-flex items-center gap-1.5 rounded-lg border border-caramel-deep bg-caramel-deep px-2.5 py-1.5 text-[11px] font-bold tabular-nums text-primary-foreground">
                   <Clock className="h-3.5 w-3.5" />
-                  {Math.floor(seconds / 3600)}:{String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}:00
+                  {Math.floor(seconds / 3600)}:
+                  {String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}:00
                 </span>
               </div>
               <h3 className="font-display text-base font-bold">Factors of production</h3>
@@ -129,8 +137,8 @@ export function DemoExamGate({ caption }: DemoProps) {
         </div>
 
         {gate && !exam ? (
-          <div className="pointer-events-none absolute inset-0 z-10 grid place-items-center rounded-2xl bg-black/55 p-4">
-            <div className="w-full max-w-xs rounded-2xl border border-border bg-card p-4 shadow-2xl">
+          <div className="pointer-events-none absolute inset-0 z-10 grid place-items-center rounded-2xl bg-black/60 p-4">
+            <div className="news-uniq-rise w-full max-w-xs rounded-2xl border border-border bg-card p-4 shadow-2xl">
               <div className="mb-2 flex items-center gap-2 text-sm font-semibold">
                 <Lock className="h-4 w-4 text-muted-foreground" />
                 Free account to save

@@ -18,47 +18,53 @@ export function DemoMathRoom({ caption }: DemoProps) {
   const [calc, setCalc] = useState(false);
   const [marks, setMarks] = useState<Record<number, boolean>>({});
   const [checked, setChecked] = useState(false);
+  const [peek, setPeek] = useState<"math" | "english" | "economics">("math");
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(220);
-      setCalc(false);
-      setMarks({});
-      setChecked(false);
-      if (api.scroll()) api.scroll()!.scrollTop = 0;
-      setFade(false);
-      await api.wait(450);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(220);
+    setCalc(false);
+    setMarks({});
+    setChecked(false);
+    setPeek("math");
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
+    setFade(false);
+    await api.wait(420);
 
-      await api.moveTo('[data-d="calc"]');
-      await api.click();
-      setCalc(true);
-      await api.wait(900);
-      await api.moveTo('[data-d="calc"]');
-      await api.click();
-      setCalc(false);
-      await api.wait(350);
+    await api.moveTo('[data-d="english"]');
+    setPeek("english");
+    await api.wait(420);
+    await api.moveTo('[data-d="math"]');
+    setPeek("math");
+    await api.wait(200);
 
-      for (const i of [1, 2]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="m${i}"]`);
-        await api.click();
-        setMarks((m) => ({ ...m, [i]: true }));
-        await api.wait(400);
-      }
-      // trap mark on A
-      await api.moveTo('[data-d="m0"]');
+    await api.moveTo('[data-d="calc"]');
+    await api.click();
+    setCalc(true);
+    await api.wait(900);
+    await api.moveTo('[data-d="calc"]');
+    await api.click();
+    setCalc(false);
+    await api.wait(350);
+
+    for (const i of [1, 2]) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
-      setMarks((m) => ({ ...m, 0: true }));
+      setMarks((m) => ({ ...m, [i]: true }));
       await api.wait(400);
+    }
+    // trap mark on A
+    await api.moveTo('[data-d="m0"]');
+    await api.click();
+    setMarks((m) => ({ ...m, 0: true }));
+    await api.wait(400);
 
-      await api.moveTo('[data-d="submit"]');
-      await api.click();
-      setChecked(true);
-      await api.wait(1500);
-    },
-    [],
-  );
+    await api.moveTo('[data-d="submit"]');
+    await api.click();
+    setChecked(true);
+    await api.wait(1500);
+  }, []);
 
   return (
     <DemoShell url="/practice/mathematics" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
@@ -70,6 +76,30 @@ export function DemoMathRoom({ caption }: DemoProps) {
             fade ? "opacity-0" : "opacity-100",
           )}
         >
+          <div className="mb-3 grid grid-cols-3 gap-1.5">
+            {(
+              [
+                ["math", "Mathematics"],
+                ["english", "English"],
+                ["economics", "Economics"],
+              ] as const
+            ).map(([id, label]) => (
+              <span
+                key={id}
+                data-d={id === "economics" ? undefined : id}
+                className={cn(
+                  "rounded-lg border px-2 py-1.5 text-center text-[11px] font-semibold transition-colors",
+                  peek === id
+                    ? "border-transparent text-white"
+                    : "border-border bg-background text-muted-foreground",
+                )}
+                style={peek === id ? { backgroundColor: MATH } : undefined}
+              >
+                {label}
+              </span>
+            ))}
+          </div>
+
           <div className="mb-3 flex flex-wrap items-center gap-2">
             <span
               className="rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white"
@@ -99,16 +129,31 @@ export function DemoMathRoom({ caption }: DemoProps) {
                 √(x−2)
               </div>
               <div className="grid grid-cols-4 gap-1">
-                {["7", "8", "9", "÷", "4", "5", "6", "×", "1", "2", "3", "−", "0", ".", "=", "+"].map(
-                  (k) => (
-                    <span
-                      key={k}
-                      className="grid h-7 place-items-center rounded border border-border bg-secondary/40 text-xs font-semibold"
-                    >
-                      {k}
-                    </span>
-                  ),
-                )}
+                {[
+                  "7",
+                  "8",
+                  "9",
+                  "÷",
+                  "4",
+                  "5",
+                  "6",
+                  "×",
+                  "1",
+                  "2",
+                  "3",
+                  "−",
+                  "0",
+                  ".",
+                  "=",
+                  "+",
+                ].map((k) => (
+                  <span
+                    key={k}
+                    className="grid h-7 place-items-center rounded border border-border bg-secondary/40 text-xs font-semibold"
+                  >
+                    {k}
+                  </span>
+                ))}
               </div>
             </div>
           ) : null}

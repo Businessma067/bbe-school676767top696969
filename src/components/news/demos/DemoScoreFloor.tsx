@@ -1,61 +1,62 @@
 import { useState } from "react";
-import { Check, Minus, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
 import { DemoShell, type DemoProps } from "./DemoShell";
 import { useDemoPlayer } from "./useDemoPlayer";
 
 const ACCENT = "#E85D3A";
+const KEY = [true, false, true, true, false];
+const LABELS = ["A", "B", "C", "D", "E"];
 
-type Mark = "blank" | "true" | "false";
+type Mark = "blank" | "true";
 
-/** Partial-credit scoring: marks move, score animates, floor at zero. */
+function rawOf(marks: Mark[]) {
+  return marks.reduce((sum, m, i) => {
+    if (m !== "true") return sum;
+    return sum + (KEY[i] ? 1 : -1);
+  }, 0);
+}
+
+/** Score well with a hard floor: the marker can try to go negative, then stops at zero. */
 export function DemoScoreFloor({ caption }: DemoProps) {
   const [marks, setMarks] = useState<Mark[]>(["blank", "blank", "blank", "blank", "blank"]);
-  const key = [true, false, true, true, false];
+  const [rawPin, setRawPin] = useState(0);
 
-  const score = marks.reduce((sum, m, i) => {
-    if (m === "blank") return sum;
-    if (m === "true" && key[i]) return sum + 1;
-    if (m === "true" && !key[i]) return sum - 1;
-    return sum;
-  }, 0);
-  const floored = Math.max(0, score);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    setFade(true);
+    await api.wait(220);
+    setMarks(["blank", "blank", "blank", "blank", "blank"]);
+    setRawPin(0);
+    setFade(false);
+    await api.wait(460);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      setFade(true);
-      await api.wait(200);
-      setMarks(["blank", "blank", "blank", "blank", "blank"]);
-      setFade(false);
-      await api.wait(450);
-
-      // Correct marks on A, C, D → score 3
-      for (const i of [0, 2, 3]) {
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="s${i}"]`);
-        await api.click();
-        setMarks((m) => m.map((x, j) => (j === i ? "true" : x)));
-        await api.wait(400);
-      }
-      await api.wait(700);
-
-      // Over-mark false B → score drops
-      await api.moveTo('[data-d="s1"]');
+    let current = 0;
+    const local: Mark[] = ["blank", "blank", "blank", "blank", "blank"];
+    const apply = async (i: number) => {
+      await api.moveTo(`[data-d="s${i}"]`);
       await api.click();
-      setMarks((m) => m.map((x, j) => (j === 1 ? "true" : x)));
-      await api.wait(900);
+      local[i] = "true";
+      setMarks([...local]);
+      const next = rawOf(local);
+      const from = current;
+      await api.tween(480, (eased) => setRawPin(from + (next - from) * eased));
+      current = next;
+      await api.wait(220);
+    };
 
-      // Also mark E (false) → would go negative, floor shown
-      await api.moveTo('[data-d="s4"]');
-      await api.click();
-      setMarks((m) => m.map((x, j) => (j === 4 ? "true" : x)));
-      await api.wait(1400);
-    },
-    [],
-  );
+    for (const i of [0, 2, 3]) {
+      if (api.cancelled()) return;
+      await apply(i);
+    }
+    await api.wait(360);
+    await apply(1);
+    await api.wait(280);
+    await apply(4);
+    await api.wait(1100);
+  }, []);
 
-  const labels = ["A", "B", "C", "D", "E"];
+  const floored = Math.max(0, rawPin);
+  const pos = (value: number) => `${((value + 2) / 5) * 100}%`;
 
   return (
     <DemoShell url="/bbe-exam-scoring" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
@@ -63,64 +64,88 @@ export function DemoScoreFloor({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "mx-auto flex h-[360px] max-w-lg flex-col justify-center transition-opacity duration-500 sm:h-[400px]",
+            "mx-auto flex h-[380px] max-w-lg flex-col justify-center transition-opacity duration-500 sm:h-[420px]",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
           <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
             Scoring rules
           </p>
-          <h3 className="font-display text-lg font-bold">Partial credit · floor at zero</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
-            True marks add · false marks subtract · blanks do neither.
-          </p>
+          <h3 className="font-display text-lg font-bold">The score cannot pass zero</h3>
 
-          <div className="mt-4 grid gap-3 sm:grid-cols-[1.2fr_0.8fr]">
-            <ol className="divide-y divide-border overflow-hidden rounded-xl border border-border bg-card">
-              {labels.map((L, i) => (
-                <li key={L} className="flex items-center gap-3 px-3 py-2.5">
-                  <span className="w-5 text-xs font-bold text-muted-foreground">{L}.</span>
-                  <span className="flex-1 text-sm">
-                    {key[i] ? "True statement" : "False statement"}
-                  </span>
-                  <span
-                    data-d={`s${i}`}
-                    className={cn(
-                      "grid h-6 w-6 place-items-center rounded border-2 transition-all",
-                      marks[i] === "true"
-                        ? "border-primary bg-primary text-primary-foreground"
-                        : "border-border bg-background",
-                    )}
-                  >
-                    {marks[i] === "true" ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
-                  </span>
-                </li>
-              ))}
-            </ol>
-
-            <div className="rounded-xl border border-border bg-card p-4 shadow-sm">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-                Cluster score
-              </p>
+          <div className="mt-4 rounded-2xl border border-border bg-card p-4 shadow-sm">
+            <div className="flex items-end justify-between">
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+                  Awarded
+                </p>
+                <p className="font-display text-5xl font-bold tabular-nums leading-none">
+                  {floored.toFixed(0)}
+                </p>
+              </div>
               <p
-                className="mt-2 font-display text-4xl font-bold tabular-nums transition-colors"
-                style={{ color: floored === 0 && score < 0 ? ACCENT : undefined }}
+                className="text-sm font-semibold tabular-nums"
+                style={{ color: rawPin < 0 ? ACCENT : undefined }}
               >
-                {floored}
+                Raw {rawPin.toFixed(1)}
               </p>
-              <p className="mt-1 text-xs text-muted-foreground">
-                Raw {score} → floored {floored}
-              </p>
-              <ul className="mt-3 space-y-1.5 text-xs">
-                <li className="flex items-center gap-1.5 text-emerald-700">
-                  <Plus className="h-3.5 w-3.5" /> Correct true mark
-                </li>
-                <li className="flex items-center gap-1.5 text-red-700">
-                  <Minus className="h-3.5 w-3.5" /> Mark on false
-                </li>
-                <li className="text-muted-foreground">Blank → 0 change</li>
-              </ul>
             </div>
+
+            <div className="relative mt-6 h-16">
+              <span className="absolute left-[40%] top-0 -translate-x-1/2 text-[10px] font-bold uppercase tracking-wider">
+                Floor
+              </span>
+              <div className="absolute inset-x-0 top-7 h-2 -translate-y-1/2 rounded-full bg-border" />
+              <div
+                className="absolute top-7 h-2 -translate-y-1/2 rounded-l-full bg-red-200"
+                style={{ width: "40%" }}
+              />
+              <div
+                className="absolute top-7 h-2 -translate-y-1/2 rounded-r-full bg-emerald-300"
+                style={{ left: "40%", width: "60%" }}
+              />
+              <div
+                className="absolute bottom-5 top-4 w-0.5 bg-foreground"
+                style={{ left: "40%" }}
+              />
+              {rawPin < -0.05 ? (
+                <span
+                  className="absolute top-7 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-dashed"
+                  style={{ left: pos(rawPin), borderColor: ACCENT }}
+                />
+              ) : null}
+              <span
+                className="absolute top-7 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white shadow"
+                style={{ left: pos(floored), backgroundColor: rawPin < 0 ? ACCENT : "#10b981" }}
+              />
+            </div>
+            <div className="relative mt-1 h-4 text-[10px] font-semibold text-muted-foreground">
+              <span className="absolute left-0">−2</span>
+              <span className="absolute left-[40%] -translate-x-1/2">0</span>
+              <span className="absolute right-0">+3</span>
+            </div>
+          </div>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            {LABELS.map((letter, i) => {
+              const on = marks[i] === "true";
+              const good = KEY[i];
+              return (
+                <span
+                  key={letter}
+                  data-d={`s${i}`}
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-xs font-semibold transition-colors",
+                    !on && "border-border bg-card text-muted-foreground",
+                    on && good && "border-emerald-500 bg-emerald-500 text-white",
+                    on && !good && "border-red-500 bg-red-500 text-white",
+                  )}
+                >
+                  {letter}
+                  <span className="text-[10px] font-bold">{good ? "+1 true" : "−1 false"}</span>
+                </span>
+              );
+            })}
           </div>
         </div>
         <DemoCursor cursorRef={cursorRef} clicking={clicking} />

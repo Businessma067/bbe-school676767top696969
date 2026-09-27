@@ -16,7 +16,12 @@ export function DemoCursor({
       style={{ transform: "translate3d(36px, 36px, 0)" }}
       aria-hidden
     >
-      <div className={cn("transition-transform duration-150 ease-out", clicking ? "scale-90" : "scale-100")}>
+      <div
+        className={cn(
+          "transition-transform duration-150 ease-out",
+          clicking ? "scale-90" : "scale-100",
+        )}
+      >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <path
             d="M5 3l14 8.5-6.2 1.3L9.6 20 5 3z"

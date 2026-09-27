@@ -5,6 +5,8 @@ export type DemoPlayerApi = {
   tween: (duration: number, onFrame: (eased: number) => void) => Promise<void>;
   moveTo: (selector: string) => Promise<void>;
   click: () => Promise<void>;
+  /** Re-read a live element and park the cursor on it (weight-handle chase). */
+  snapTo: (selector: string) => void;
   setCursorAt: (p: { x: number; y: number }) => void;
   cancelled: () => boolean;
   stage: () => HTMLDivElement | null;
@@ -97,7 +99,9 @@ export function useDemoPlayer(
       const goal = clampToStage(target);
       const dist = Math.hypot(goal.x - start.x, goal.y - start.y);
       if (dist < 1) return Promise.resolve();
-      const d = Math.max(280, Math.min(duration, 220 + dist * 1.55));
+      // Same distance scaling as MockBuilderSimulator: short hops stay quick,
+      // long glides ease in/out, never shorter than ~320ms.
+      const d = Math.max(320, Math.min(duration, 240 + dist * 1.6));
       return tween(d, (eased) => {
         setCursorAt({
           x: start.x + (goal.x - start.x) * eased,
@@ -136,7 +140,7 @@ export function useDemoPlayer(
           const startCursor = { ...cursorPos.current };
           const startScroll = box.scrollTop;
           const change = clamped - startScroll;
-          await tween(560, (eased) => {
+          await tween(700, (eased) => {
             box.scrollTop = startScroll + change * eased;
             const live = pointOf(selector);
             if (!live) return;
@@ -152,14 +156,20 @@ export function useDemoPlayer(
       const target = pointOf(selector);
       if (!target) return;
       await glideCursor(target);
-      await wait(180);
+      await wait(360);
     };
 
     const click = async () => {
       setClicking(true);
-      await wait(110);
-      setClicking(false);
       await wait(120);
+      setClicking(false);
+      await wait(140);
+    };
+
+    const snapTo = (selector: string) => {
+      const p = pointOf(selector);
+      if (!p) return;
+      setCursorAt(p);
     };
 
     const api: DemoPlayerApi = {
@@ -167,6 +177,7 @@ export function useDemoPlayer(
       tween,
       moveTo,
       click,
+      snapTo,
       setCursorAt,
       cancelled: () => cancelled,
       stage: () => stageRef.current,
