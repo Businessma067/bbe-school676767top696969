@@ -38,6 +38,7 @@ const BBE_TO_WISO: Record<string, string> = {
   "/products/full-course-economics": "/wiso/products/full-course-economics",
   "/products/demo-practice": "/wiso/demo-practice",
   "/demo-practice": "/wiso/demo-practice",
+  "/demo-mock": "/wiso/demo-mock",
   "/mock-exams": "/wiso/mock-exams",
   "/products/custom-mock-builder": "/wiso/mock-builder",
   "/flashcards": "/wiso/flashcards",

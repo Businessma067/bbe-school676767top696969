@@ -30,6 +30,7 @@ export const LOCALIZABLE_PATHS = [
   "/wiso/products",
   "/wiso/products/full-course",
   "/wiso/demo-practice",
+  "/wiso/demo-mock",
   "/wiso/mock-exams",
   "/parents",
   "/news",

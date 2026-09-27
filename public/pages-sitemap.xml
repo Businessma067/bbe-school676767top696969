@@ -170,6 +170,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-practice"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/wiso/demo-mock</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-mock"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -558,6 +567,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-practice"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/wiso/demo-mock</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-mock"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -916,6 +934,15 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-practice"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-practice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-practice"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/demo-mock</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-mock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-mock"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/parents</loc>

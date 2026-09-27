@@ -181,15 +181,27 @@ export function buildBreadcrumbs(
     const examId = decodeURIComponent(catalogMock[1]!);
     const action = catalogMock[2];
     const exam = getExamById(examId);
-    const isDemo = examId === "demo-mock";
+    const isDemo = examId === "demo-mock" || examId === "wiso-demo-mock";
     const trail: Omit<BreadcrumbCrumb, "isLast">[] = [
       {
         label: isDemo ? "Demo Mock" : "Mock Exams",
-        to: isDemo ? "/demo-mock" : "/mock-exams",
+        to: isDemo
+          ? examId === "wiso-demo-mock"
+            ? "/wiso/demo-mock"
+            : "/demo-mock"
+          : examId.startsWith("wiso-")
+            ? "/wiso/mock-exams"
+            : "/mock-exams",
       },
       {
         label: exam?.title ?? prettifySegment(examId),
-        to: action ? (isDemo ? "/demo-mock" : `/mock-exams/${examId}/take`) : null,
+        to: action
+          ? isDemo
+            ? examId === "wiso-demo-mock"
+              ? "/wiso/demo-mock"
+              : "/demo-mock"
+            : `/mock-exams/${examId}/take`
+          : null,
       },
     ];
     if (action === "take") trail.push({ label: "Take", to: null });
@@ -201,6 +213,13 @@ export function buildBreadcrumbs(
     return withLastFlags([
       { label: "BBE Exam", to: withLocale(BBE_EXAM_HUB_PATH, locale) },
       { label: "Free Demo Mock Exam", to: null },
+    ]);
+  }
+
+  if (path === "/wiso/demo-mock") {
+    return withLastFlags([
+      { label: "WiSo", to: withLocale("/wiso", locale) },
+      { label: "Kostenlose Demo-Probeprüfung", to: null },
     ]);
   }
 
