@@ -178,7 +178,7 @@
       "Erhöht man $v$ von $10$ auf $20$, so multipliziert sich der Index mit $4$.",
       "Bei $v=20$ zeigt der Index $200$.",
       "Der Index ist für $v>0$ nie negativ.",
-      "Erhöht man $v$ um $10\\\\%$, so steigt der Index um $10\\\\%$."
+      "Erhöht man $v$ um $10\\%$, so steigt der Index um $10\\%$."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nQuadriere die Geschwindigkeit und wende dann den Koeffizienten an:\n\n$$E(10)=0.5\\cdot 10^{2}$$\n\n$$10^{2}=100$$\n\n$$E(10)=0.5\\cdot 100$$\n\n$$E(10)=0.500$$\n\n$$E(10)=50$$\n\nDer Index bei\n\n$$v=10$$\n\nist $50$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
@@ -1563,7 +1563,7 @@
     "statements": [
       "Verdopplung des Abstands von der Quelle Moreland halbiert die Dosisrate. Soziale Sicherheit fehlender",
       "Ein zusätzlicher Höchstbetrag reduziert die Dosis Erläuterung bei $3$ Meter als bei $6$ Meter.",
-      "Die für eine gegebenischeischee ist eine große und ist eine große und ist eine große und ist eine für die eine große viel viel vieler frei für dieeeisisisischischischisch für die",
+      "Die für eine gegebene Dosisrate benötigte Entfernung ist selbst eine Potenz dieser Dosisrate.",
       "Bei $6$ Meter liegt die Dosisrate bereits unter $25$ Mikrosievert pro Stunde.",
       "Die Barriere sitzt weiter als $15$ Meter von der Quelle."
     ],
@@ -1773,15 +1773,15 @@
       "Der Exponent ist größer als eins, daher wächst der Durchsatz schneller als die Bandstellung.",
       "Eine zusätzliche Einheit Bandstellung bringt nach Stellung neun mehr Tabletts als nach Stellung vier.",
       "Bei Bandstellung $9$ liegt der Durchsatz bereits über $200$ Tabletts pro Stunde.",
-      "Wäre der Koeffizient $25\\\\%$ größer, so würde der Skalierungsfaktor $\\frac{T(2e)}{T(e)}$ selbst $25\\\\%$ größer.",
-      "Wäre der Koeffizient $25\\\\%$ größer, so läge der Durchsatz bei Bandstellung $9$ bereits über $250$ Tabletts pro Stunde."
+      "Wäre der Koeffizient $25\\%$ größer, so würde der Skalierungsfaktor $\\frac{T(2e)}{T(e)}$ selbst $25\\%$ größer.",
+      "Wäre der Koeffizient $25\\%$ größer, so läge der Durchsatz bei Bandstellung $9$ bereits über $250$ Tabletts pro Stunde."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nDie Übersicht liefert den Exponenten\n\n$$\\frac{3}{2}$$\n\n. Der Durchsatz überholt die Bandstellung, wenn dieser Exponent größer als $1$ ist.\n\n$$\\frac{3}{2}>1$$\n\nEin proportionales Gesetz hätte den Exponenten $1$ getragen.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
       "**B.** → Richtig\n\nDie Übersicht liefert\n\n$$T(e)=8e^{\\frac{3}{2}}$$\n\nDie Ableitung ergibt\n\n$$T'(e)=12e^{\\frac{1}{2}}$$\n\nNach Stellung vier:\n\n$$T'(4)=12\\cdot 2$$\n\n$$T'(4)=24$$\n\nNach Stellung neun:\n\n$$T'(9)=12\\cdot 3$$\n\n$$T'(9)=36$$\n\nDie Behauptung verlangt $T'(9)>T'(4)$. Wir haben $36>24$.\n\nDie Aussage ist richtig.",
       "**C.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten kalibrierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$T(e)=8e^{\\frac{3}{2}}$$\n\nBei Bandstellung $9$:\n\n$$T(9)=8\\cdot 27$$\n\n$$T(9)=216$$\n\nDie Behauptung lautet, dass dies bereits über $200$ liegt. Vergleich mit der Behauptung:\n\n$$216>200.$$\n\nDie Aussage ist richtig.",
-      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDer Skalierungsfaktor eines Potenzgesetzes kürzt den Koeffizienten weg:\n\n$$\\frac{T(2e)}{T(e)}=2^{\\frac{3}{2}}$$\n\nDieser Faktor hängt nicht von $A$ ab. Eine Erhöhung des Koeffizienten um $25\\\\%$ lässt $2^{\\frac{3}{2}}$ unverändert, daher wird der Skalierungsfaktor selbst nicht $25\\\\%$ größer.\n\nDer Verdopplungsfaktor ist unabhängig von $A$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nWäre der Koeffizient $25\\\\%$ größer, so würde das rekonstruierte\n\n$$A=8$$\n\n zu $10$. Bei Bandstellung $9$:\n\n$$T(9)=10\\cdot 27$$\n\n$$T(9)=270$$\n\nDie Behauptung lautet, dass dies bereits $250$ übersteigt. Wir haben $270>250$.\n\nDie Aussage ist richtig."
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDer Skalierungsfaktor eines Potenzgesetzes kürzt den Koeffizienten weg:\n\n$$\\frac{T(2e)}{T(e)}=2^{\\frac{3}{2}}$$\n\nDieser Faktor hängt nicht von $A$ ab. Eine Erhöhung des Koeffizienten um $25\\%$ lässt $2^{\\frac{3}{2}}$ unverändert, daher wird der Skalierungsfaktor selbst nicht $25\\%$ größer.\n\nDer Verdopplungsfaktor ist unabhängig von $A$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nWäre der Koeffizient $25\\%$ größer, so würde das rekonstruierte\n\n$$A=8$$\n\n zu $10$. Bei Bandstellung $9$:\n\n$$T(9)=10\\cdot 27$$\n\n$$T(9)=270$$\n\nDie Behauptung lautet, dass dies bereits $250$ übersteigt. Wir haben $270>250$.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Der Kühlofen-Durchsatz folgt $T(e)=Ae^{\\frac{3}{2}}$ Tabletts pro Stunde bei Bandstellung $e>0$. Ein Lauf bei Bandstellung $4$ lieferte $64$ Tabletts pro Stunde.\n\n**Teil 1: Modellaufbau.**\n\nSei $e$ = Bandstellung und $T$ = Tabletts pro Stunde. Der Exponent ist gegeben, daher legt der erfasste Lauf $A$ fest. Niveaus hängen von $A$ ab; Skalierungsfaktoren kürzen $A$ weg.\n\n**1. Übersetzung: der erfasste Lauf.**\n\n$$A\\cdot 4^{\\frac{3}{2}}=64 \\\\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$4^{\\frac{3}{2}}=8$$\n\nalso ist $(1)$ gleich $8A=64$ und $A=8$.\n\nDas rekonstruierte Gesetz lautet $T(e)=8e^{\\frac{3}{2}}$.\n\n**Antwort.** $A=8$ | $T(e)=8e^{\\frac{3}{2}}$"
   },

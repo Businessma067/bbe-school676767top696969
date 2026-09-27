@@ -238,13 +238,13 @@
       "Die Aussage „$x \\in A \\Rightarrow x \\in B$“ ist für alle x wahr."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSchreibe die Intervallbedingungen:\n\n$$A=(0,10]\\genau dann wenn 0<x\\le 10$$\n\n$$B=[5,15)\\genau dann wenn 5\\le x<15$$\n\nZugehörigkeit zu beiden verlangt beide Ungleichungen:\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nDie strengere untere Schranke ist $5$, die strengere obere ist $10$:\n\n$$5\\le x\\le 10$$\n\n$$A\\cap B=[5,10]$$\n\nDie Aussage ist richtig.",
+      "**A.** → Richtig\n\nSchreibe die Intervallbedingungen:\n\n$$A=(0,10]\\iff 0<x\\le 10$$\n\n$$B=[5,15)\\iff 5\\le x<15$$\n\nZugehörigkeit zu beiden verlangt beide Ungleichungen:\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nDie strengere untere Schranke ist $5$, die strengere obere ist $10$:\n\n$$5\\le x\\le 10$$\n\n$$A\\cap B=[5,10]$$\n\nDie Aussage ist richtig.",
       "**B.** → Falsch\n\nZugehörigkeit zur Vereinigung verlangt mindestens eine der Bedingungen\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nDie linkesten Punkte kommen aus $A$, also $x>0$. Die rechtesten kommen aus $B$, also $x<15$. Am rechten Endpunkt von $A$:\n\n$$10\\in A$$\n\n$$10<15$$\n\nalso ist $10$ enthalten. Aber $15$ selbst erfüllt $x<15$ nicht. Auch enthält $A$ niemals $0$. Folglich\n\n$$A\\cup B=(0,15)$$\n\nDie Behauptung schreibt $(0,15]$ und schließt $15$ fälschlich ein.\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nPrüfe $x=10$ gegen beide Intervalle:\n\n$$0<10\\le 10$$\n\nalso $10\\in A$. Und\n\n$$5\\le 10<15$$\n\nalso $10\\in B$. Daher\n\n$$10\\in A\\cap B$$\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nDie Differenz $A\\setminus B$ braucht $x\\in A$ und $x\\notin B$. Prüfe $x=5$:\n\n$$5\\le 5<15$$\n\nalso $5\\in B$. Daher\n\n$$5\\notin A\\setminus B$$\n\nobwohl $5\\in A$, weil $0<5\\le 10$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie Implikation $x\\in A\\Rightarrow x\\in B$ scheitert, wenn ein Punkt von $A$ nicht in $B$ liegt. Nimm\n\n$$x=1$$\n\n$$0<1\\le 10$$\n\nalso $1\\in A$. Aber\n\n$$5\\le 1<15$$\n\nist falsch, also $1\\notin B$. Die Implikation gilt nicht für alle $x$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Übersetze Klammern zuerst in Ungleichungen.\n\n$$A=(0,10] \\genau dann wenn 0 < x \\le 10, \\qquad B=[5,15) \\genau dann wenn 5 \\le x < 15.$$\n\nDie Schnittmenge nimmt die strengeren Schranken. Die Vereinigung läuft vom linkesten offenen Ende zum rechtesten offenen Ende. Die Differenz $A\\setminus B$ enthält Punkte von $A$, die nicht in $B$ liegen. Die Implikation $x\\in A \\Rightarrow x\\in B$ für alle $x$ ist die Inklusion $A\\subseteq B$."
+    "solution_overview": "Übersetze Klammern zuerst in Ungleichungen.\n\n$$A=(0,10] \\iff 0 < x \\le 10, \\qquad B=[5,15) \\iff 5 \\le x < 15.$$\n\nDie Schnittmenge nimmt die strengeren Schranken. Die Vereinigung läuft vom linkesten offenen Ende zum rechtesten offenen Ende. Die Differenz $A\\setminus B$ enthält Punkte von $A$, die nicht in $B$ liegen. Die Implikation $x\\in A \\Rightarrow x\\in B$ für alle $x$ ist die Inklusion $A\\subseteq B$."
   },
   "MATH 1.14": {
     "title": "Drei-Museen-Besuche und Inklusion-Exklusion",

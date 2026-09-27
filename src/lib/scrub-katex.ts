@@ -13,6 +13,14 @@ const LATEX_CMD_AFTER_DOLLAR =
 export function scrubKatexContent(input: string): string {
   if (!input) return input;
   let s = input
+    // JSON `\f`/`\b`/`\a` ate the first letter of LaTeX cmds → form-feed+rac, etc.
+    .replace(/\u000crac/g, "\\frac")
+    .replace(/\u000corall/g, "\\forall")
+    .replace(/\u0008eta/g, "\\beta")
+    .replace(/\u0008egin/g, "\\begin")
+    .replace(/\u0008inom/g, "\\binom")
+    .replace(/\u0007lpha/g, "\\alpha")
+    .replace(/\u0007pprox/g, "\\approx")
     .replace(/\\not</g, "\\nless ")
     .replace(/\\not>/g, "\\ngtr ")
     .replace(/\\not\\le/g, "\\nleq ")
