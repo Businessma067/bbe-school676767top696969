@@ -76,10 +76,13 @@ const CORE_POSTS: NewsPost[] = [
         ],
       },
       {
-        type: "demo",
-        id: "economics",
+        type: "media",
+        kind: "video",
+        src: "/how-it-works/news/welcome.mp4",
+        poster: "/how-it-works/news/welcome-poster.jpg",
+        alt: "Welcome practice walkthrough",
         caption:
-          "News posts stay close to the live practice UI students use on the site.",
+          "Unique economics practice intro clip for the News welcome post.",
       },
       {
         type: "p",
@@ -186,10 +189,13 @@ const CORE_POSTS: NewsPost[] = [
           "Approximate share of avoidable point loss by section in recent hard demo reviews. This helps us decide what to improve next.",
       },
       {
-        type: "demo",
-        id: "economics",
+        type: "media",
+        kind: "video",
+        src: "/how-it-works/economics.mp4",
+        poster: "/how-it-works/economics-poster.jpg",
+        alt: "How we build mocks — full practice walkthrough",
         caption:
-          "Animated preview of an economics statement cluster. The careful bank work behind screens like this is what this post describes.",
+          "Full economics How-it-works recording — only used in the mock-building craft post.",
       },
     ],
   },
