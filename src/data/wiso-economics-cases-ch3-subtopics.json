@@ -3251,7 +3251,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.13",
     "title": "FunBike: Vermögen und Umlaufintensität",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Beträge in Euro) zeigt auf der Aktivseite Grundstücke und Bauten 750.000, technische Anlagen und Geschäftsausstattung 2.330.000, Finanzanlagen 240.000, Vorräte 5.400.000, Forderungen aus Lieferungen und Leistungen 598.000 sowie Bankguthaben und Barbestand 320.250. Die Passivseite umfasst Bareinlagen der Gesellschafter 525.000, Gewinn 3.614.250, Rückstellungen 2.000.000, Bankkredite 3.199.000 und Verbindlichkeiten aus Lieferungen und Leistungen 300.000. Gesamtvermögen und Gesamtkapital betragen jeweils 9.638.250. Bewerten Sie die folgenden Aussagen zu dieser Bilanz:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen zu dieser Bilanz:",
     "statements": [
       "Gesamtvermögen und Gesamtkapital werden als Bilanzsumme bezeichnet und betragen hier jeweils 9.638.250 Euro.",
       "Das Anlagevermögen der FunBike GmbH übersteigt vier Millionen Euro.",
@@ -3280,7 +3280,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.14",
     "title": "FunBike: Kapitalstruktur und goldene Bilanzregel",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Beträge in Euro) zeigt Bareinlagen der Gesellschafter 525.000, Gewinn 3.614.250, Rückstellungen 2.000.000, Bankkredite 3.199.000 und Verbindlichkeiten aus Lieferungen und Leistungen 300.000. Die Bilanzsumme beträgt 9.638.250 Euro, das Anlagevermögen 3.320.000 Euro. Bewerten Sie die folgenden Aussagen zur Finanzierung:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro) — Passivseite:\n\n| Position | Betrag |\n| --- | ---: |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nDas Anlagevermögen beträgt 3 320 000 Euro. Bewerten Sie die folgenden Aussagen zur Finanzierung:",
     "statements": [
       "Das Eigenkapital beträgt 4.139.250 Euro.",
       "Rund 57 Prozent des Kapitals sind Fremdkapital, der Großteil davon Bankkredite.",
@@ -3309,7 +3309,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.15",
     "title": "Gewinn- und Verlustrechnung der FunBike GmbH",
-    "context": "In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen. Die Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx zeigt Umsatzerlöse 70.656.000 Euro, Materialaufwand 53.175.000 Euro, Personalaufwand 7.900.000 Euro, Abschreibungen 1.800.000 Euro, sonstige betriebliche Aufwände 2.875.000 Euro, Zinserträge 12.000 Euro, Zinsaufwand 99.000 Euro, Steuern 1.204.750 Euro und Jahresergebnis 3.614.250 Euro. Bewerten Sie die folgenden Aussagen:",
+    "context": "In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen.\n\nGewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | 53 175 000 |\n| Personalaufwand | 7 900 000 |\n| Abschreibungen | 1 800 000 |\n| Sonstige betriebliche Aufwände | 2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | **4 906 000** |\n| Zinserträge | 12 000 |\n| Zinsaufwand | 99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | **4 819 000** |\n| Steuern | 1 204 750 |\n| Jahresergebnis / Gewinn | **3 614 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt.",
       "Zu den Aufwänden in der G&V zählen unter anderem Löhne und Gehälter, Materialaufwand, Miete, Versicherungsaufwand, Energieaufwand, Abschreibungen auf Sachanlagen und die Bildung von Rückstellungen.",
@@ -3686,7 +3686,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.28",
     "title": "G&V der FunBike GmbH",
-    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro): Umsatzerlöse 70 656 000, Materialaufwand 53 175 000, Personalaufwand 7 900 000, Abschreibungen 1 800 000, sonstige betriebliche Aufwände 2 875 000, EBIT 4 906 000, Zinserträge 12 000, Zinsaufwand 99 000, Finanzergebnis -87 000, Ergebnis vor Steuern 4 819 000, Steuern 1 204 750, Jahresergebnis 3 614 250. Bewerten Sie die folgenden Aussagen:",
+    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | 53 175 000 |\n| Personalaufwand | 7 900 000 |\n| Abschreibungen | 1 800 000 |\n| Sonstige betriebliche Aufwände | 2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | **4 906 000** |\n| Zinserträge | 12 000 |\n| Zinsaufwand | 99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | **4 819 000** |\n| Steuern | 1 204 750 |\n| Jahresergebnis / Gewinn | **3 614 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Das Ergebnis vor Zinsen und Steuern (EBIT) beträgt 4 906 000 Euro.",
       "Der Materialaufwand übersteigt den Personalaufwand deutlich.",
@@ -3773,7 +3773,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.31",
     "title": "Umlaufintensität und goldene Bilanzregel",
-    "context": "Bilanz der FunBike GmbH per 31.12.20xx (Euro): Grundstücke und Bauten 750 000, technische Anlagen 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen 598 000, Bankguthaben 320 250, Bilanzsumme 9 638 250. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro) — Aktivseite:\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, heißt Anlagevermögen, zum Beispiel Gebäude und Maschinen.",
       "Umlaufvermögen bleibt für gewöhnlich kürzer als ein Jahr im Unternehmen, zum Beispiel Vorräte.",
@@ -3802,7 +3802,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.32",
     "title": "Kapitalstruktur der FunBike GmbH",
-    "context": "Passiva der FunBike GmbH (Euro): Bareinlagen 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000, Gesamtkapital 9 638 250. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro) — Passivseite:\n\n| Position | Betrag |\n| --- | ---: |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Das Eigenkapital beträgt 4 139 250 Euro und liegt damit über vier Millionen Euro.",
       "Rund 57 Prozent des Kapitals sind Fremdkapital.",
@@ -3831,7 +3831,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.33",
     "title": "FunBike: Bilanzgleichheit ohne Nachschlagen",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro): Aktiva — Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen aus Lieferungen und Leistungen 598 000, Bankguthaben und Barbestand 320 250; Bilanzsumme 9 638 250. Passiva — Bareinlagen der Gesellschafter 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Gesamtvermögen und Gesamtkapital betragen jeweils 9 638 250 Euro.",
       "Das Eigenkapital ergibt sich als 525 000 + 3 614 250 = 4 139 250 Euro.",
@@ -3860,7 +3860,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.34",
     "title": "FunBike: Anlage- und Umlaufvermögen",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro): Aktiva — Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen aus Lieferungen und Leistungen 598 000, Bankguthaben und Barbestand 320 250; Bilanzsumme 9 638 250. Passiva — Bareinlagen der Gesellschafter 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000. Vermögen, das länger als ein Jahr gebunden bleiben soll, gilt als Anlagevermögen; kürzer gebundenes Vermögen als Umlaufvermögen. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nVermögen, das länger als ein Jahr gebunden bleiben soll, gilt als Anlagevermögen; kürzer gebundenes Vermögen als Umlaufvermögen. Bewerten Sie die folgenden Aussagen:",
     "statements": [
       "Das Anlagevermögen beträgt 750 000 + 2 330 000 + 240 000 = 3 320 000 Euro.",
       "Das Umlaufvermögen beträgt 5 400 000 + 598 000 + 320 250 = 6 318 250 Euro.",
@@ -3889,7 +3889,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.35",
     "title": "FunBike: Eigenkapital, Fremdkapital, Quote",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro): Aktiva — Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen aus Lieferungen und Leistungen 598 000, Bankguthaben und Barbestand 320 250; Bilanzsumme 9 638 250. Passiva — Bareinlagen der Gesellschafter 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000. Bewerten Sie die folgenden Aussagen zur Finanzierung:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen zur Finanzierung:",
     "statements": [
       "Rund 57 Prozent des Kapitals sind Fremdkapital.",
       "Die Eigenkapitalquote liegt über 60 Prozent der Bilanzsumme.",
@@ -3918,7 +3918,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.36",
     "title": "FunBike: Goldene Bilanzregel",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro): Aktiva — Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen aus Lieferungen und Leistungen 598 000, Bankguthaben und Barbestand 320 250; Bilanzsumme 9 638 250. Passiva — Bareinlagen der Gesellschafter 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000. Langfristig gebundenes Vermögen soll fristenkongruent finanziert sein. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nLangfristig gebundenes Vermögen soll fristenkongruent finanziert sein. Bewerten Sie die folgenden Aussagen:",
     "statements": [
       "Das langfristige Vermögen von 3 320 000 Euro ist durch Eigenkapital von 4 139 250 Euro mehr als gedeckt, die goldene Bilanzregel ist erfüllt.",
       "Weil 3 320 000 größer ist als 4 139 250, bricht FunBike die goldene Bilanzregel.",
@@ -3947,7 +3947,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.37",
     "title": "FunBike: G&V von Umsatz bis EBIT",
-    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro): Umsatzerlöse 70 656 000, Materialaufwand 53 175 000, Personalaufwand 7 900 000, Abschreibungen 1 800 000, sonstige betriebliche Aufwände 2 875 000, Ergebnis vor Zinsen und Steuern (EBIT) 4 906 000, Zinserträge 12 000, Zinsaufwand 99 000, Finanzergebnis −87 000, Ergebnis vor Steuern 4 819 000, Steuern 1 204 750, Jahresergebnis 3 614 250. Bewerten Sie die folgenden Aussagen:",
+    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | 53 175 000 |\n| Personalaufwand | 7 900 000 |\n| Abschreibungen | 1 800 000 |\n| Sonstige betriebliche Aufwände | 2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | **4 906 000** |\n| Zinserträge | 12 000 |\n| Zinsaufwand | 99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | **4 819 000** |\n| Steuern | 1 204 750 |\n| Jahresergebnis / Gewinn | **3 614 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Umsatzerlöse minus die vier betrieblichen Aufwandsblöcke ergeben das EBIT von 4 906 000 Euro.",
       "Das Finanzergebnis beträgt 12 000 − 99 000 = −87 000 Euro.",
@@ -3976,7 +3976,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.38",
     "title": "FunBike: Gewinn in G&V und Bilanz",
-    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro): Umsatzerlöse 70 656 000, Materialaufwand 53 175 000, Personalaufwand 7 900 000, Abschreibungen 1 800 000, sonstige betriebliche Aufwände 2 875 000, Ergebnis vor Zinsen und Steuern (EBIT) 4 906 000, Zinserträge 12 000, Zinsaufwand 99 000, Finanzergebnis −87 000, Ergebnis vor Steuern 4 819 000, Steuern 1 204 750, Jahresergebnis 3 614 250. In der Bilanz stehen Bareinlagen 525 000 und Gewinn 3 614 250. Bewerten Sie die folgenden Aussagen zur doppelten Gewinnermittlung:",
+    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | 53 175 000 |\n| Personalaufwand | 7 900 000 |\n| Abschreibungen | 1 800 000 |\n| Sonstige betriebliche Aufwände | 2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | **4 906 000** |\n| Zinserträge | 12 000 |\n| Zinsaufwand | 99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | **4 819 000** |\n| Steuern | 1 204 750 |\n| Jahresergebnis / Gewinn | **3 614 250** |\n\nIn der Bilanz stehen Bareinlagen 525 000 und Gewinn 3 614 250. Bewerten Sie die folgenden Aussagen zur doppelten Gewinnermittlung:",
     "statements": [
       "Das Jahresergebnis der G&V von 3 614 250 Euro ist derselbe Betrag wie der Gewinn in der Bilanz.",
       "Eigenkapital = Bareinlagen 525 000 + G&V-Gewinn 3 614 250 = 4 139 250 Euro.",
@@ -4005,7 +4005,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.39",
     "title": "FunBike: Umlaufintensität und Vermögensanteile",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro): Aktiva — Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen aus Lieferungen und Leistungen 598 000, Bankguthaben und Barbestand 320 250; Bilanzsumme 9 638 250. Passiva — Bareinlagen der Gesellschafter 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Die Vorräte von 5 400 000 Euro übersteigen für sich genommen das gesamte Anlagevermögen von 3 320 000 Euro.",
       "Mehr als die Hälfte der Bilanzsumme ist Anlagevermögen.",
@@ -4034,7 +4034,7 @@
     "subsection": "3.4",
     "case_id": "WISO 3.4.40",
     "title": "FunBike: Kennzahlen aus Bilanz und G&V",
-    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro): Aktiva — Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen aus Lieferungen und Leistungen 598 000, Bankguthaben und Barbestand 320 250; Bilanzsumme 9 638 250. Passiva — Bareinlagen der Gesellschafter 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000. Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro): Umsatzerlöse 70 656 000, Materialaufwand 53 175 000, Personalaufwand 7 900 000, Abschreibungen 1 800 000, sonstige betriebliche Aufwände 2 875 000, Ergebnis vor Zinsen und Steuern (EBIT) 4 906 000, Zinserträge 12 000, Zinsaufwand 99 000, Finanzergebnis −87 000, Ergebnis vor Steuern 4 819 000, Steuern 1 204 750, Jahresergebnis 3 614 250. Bewerten Sie die folgenden Aussagen:",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| **AKTIVA** | |\n| Grundstücke und Bauten | 750 000 |\n| Technische Anlagen und Geschäftsausstattung | 2 330 000 |\n| Finanzanlagen | 240 000 |\n| Vorräte | 5 400 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 |\n| Bankguthaben und Barbestand | 320 250 |\n| Gesamtvermögen / Bilanzsumme | **9 638 250** |\n| **PASSIVA** | |\n| Bareinlagen der Gesellschafter | 525 000 |\n| Gewinn | 3 614 250 |\n| Rückstellungen | 2 000 000 |\n| Bankkredite | 3 199 000 |\n| Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Gesamtkapital / Bilanzsumme | **9 638 250** |\n\nGewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Betrag |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | 53 175 000 |\n| Personalaufwand | 7 900 000 |\n| Abschreibungen | 1 800 000 |\n| Sonstige betriebliche Aufwände | 2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | **4 906 000** |\n| Zinserträge | 12 000 |\n| Zinsaufwand | 99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | **4 819 000** |\n| Steuern | 1 204 750 |\n| Jahresergebnis / Gewinn | **3 614 250** |\n\nBewerten Sie die folgenden Aussagen:",
     "statements": [
       "Fremdkapitalquote = 5 499 000 / 9 638 250 ≈ 57 Prozent, wie für FunBike typisch.",
       "Der Materialaufwand entspricht mehr als 70 Prozent der Umsatzerlöse.",
