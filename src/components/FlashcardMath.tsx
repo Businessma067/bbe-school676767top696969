@@ -14,11 +14,14 @@ export function indexOfUnescapedDollar(text: string, from = 0): number {
 }
 
 /**
- * Prose `\$1,000` → `$1,000` for display (KaTeX still receives raw `\$` inside math).
- * Also flatten LaTeX thousands `{,}` left in currency/prose (`\$9{,}300` → `$9,300`).
+ * Prose LaTeX escapes that must not show as literal backslashes.
+ * KaTeX still receives raw `\$` / `\%` inside math spans.
+ * - `\$1,000` → `$1,000`
+ * - `9,27\%` → `9,27%` (common in DE overlays outside `$…$`)
+ * - `{,}` thousands left in currency/prose → `,`
  */
-function unescapeProseDollars(s: string): string {
-  return s.replace(/\\\$/g, "$").replace(/\{,\}/g, ",");
+export function unescapeProseLatex(s: string): string {
+  return s.replace(/\\\$/g, "$").replace(/\\%/g, "%").replace(/\{,\}/g, ",");
 }
 
 /** Normalize thin-space / braced thousands to a plain comma for prose currency. */
@@ -64,7 +67,7 @@ export const FlashcardMath = memo(function FlashcardMath({
     <span className={className} data-no-i18n>
       {parts.map((part, i) => {
         if (part.type === "text") {
-          return <span key={i}>{unescapeProseDollars(part.value)}</span>;
+          return <span key={i}>{unescapeProseLatex(part.value)}</span>;
         }
         return <MathChunk key={i} part={part} displayPrefer={displayPrefer} />;
       })}
@@ -88,7 +91,7 @@ const MathChunk = memo(function MathChunk({
         if (chunk.kind === "text") {
           return (
             <span key={j} className="mx-0.5">
-              {unescapeProseDollars(chunk.value)}
+              {unescapeProseLatex(chunk.value)}
             </span>
           );
         }
