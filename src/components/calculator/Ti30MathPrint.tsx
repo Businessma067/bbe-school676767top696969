@@ -272,6 +272,7 @@ function Key({
   return (
     <button
       type="button"
+      data-calc-key={label}
       onClick={onClick}
       className={cn(
         "relative flex min-h-11 flex-col items-center justify-center rounded-lg border px-0.5 py-1.5 text-center transition active:scale-[0.97] sm:min-h-9 sm:py-1",
@@ -326,9 +327,12 @@ function TabBtn({
 export function Ti30MathPrint({
   className,
   compact,
+  hideChrome = false,
 }: {
   className?: string;
   compact?: boolean;
+  /** Drop the tab row and feature guide so the LCD and keys stay on a short stage. */
+  hideChrome?: boolean;
 }) {
   // Mutable engine in a ref; LCD chrome is mirrored into React state so renders
   // always see the latest entry (mutable engine fields alone are not reactive).
@@ -535,7 +539,7 @@ export function Ti30MathPrint({
         className,
       )}
     >
-      <div className="flex shrink-0 items-center justify-between gap-2 border-b border-border px-3 py-2">
+      <div className={cn("flex shrink-0 items-center justify-between gap-2 border-b border-border px-3", hideChrome ? "py-1" : "py-2")}>
         <div className="flex min-w-0 items-center gap-2">
           <Calculator className="h-4 w-4 shrink-0 text-caramel-deep" />
           <div className="min-w-0">
@@ -543,6 +547,7 @@ export function Ti30MathPrint({
             <div className="truncate text-[9px] text-taupe">{modeLabel}</div>
           </div>
         </div>
+        {hideChrome ? null : (
         <div className="flex flex-wrap justify-end gap-0.5">
           {(
             [
@@ -569,11 +574,15 @@ export function Ti30MathPrint({
             Help
           </TabBtn>
         </div>
+        )}
       </div>
 
       {/* LCD — pinned above the scrollable keypad so presses stay visible */}
       <div
-        className="mx-3 mt-3 shrink-0 rounded-xl border border-border bg-ivory px-3 py-2 font-mono text-foreground shadow-inner"
+        className={cn(
+          "shrink-0 rounded-xl border border-border bg-ivory font-mono text-foreground shadow-inner",
+          hideChrome ? "mx-2 mt-1 px-2 py-1" : "mx-3 mt-3 px-3 py-2",
+        )}
         data-calc-entry={lcd.entry}
         data-calc-display={display}
         aria-live="polite"
@@ -582,6 +591,10 @@ export function Ti30MathPrint({
         {/* key forces a fresh LCD subtree whenever entry/result changes (avoids
             stale memoized text nodes against the mutable engine snapshot). */}
         <div key={`lcd-${lcd.entry}-${display}-${ansLabel}-${screenLines.length}`}>
+          {hideChrome ? (
+            <div className="text-right font-display text-lg font-bold tracking-tight">{display}</div>
+          ) : (
+          <>
           <div className="mb-1 min-h-[3.2rem] space-y-0.5 text-[10px] leading-tight text-taupe">
             {screenLines.map((h, i) => (
               <div key={`${h.expr}-${i}`} className="flex justify-between gap-2 truncate">
@@ -597,11 +610,14 @@ export function Ti30MathPrint({
             <span className={second ? "font-bold text-caramel-deep" : ""}>{second ? "2nd" : "\u00a0"}</span>
             <span>Ans={ansLabel}</span>
           </div>
+          </>
+          )}
         </div>
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto">
       {/* Feature guide menu */}
+      {hideChrome ? null : (
       <div className="mx-3 mt-2">
         <button
           type="button"
@@ -646,6 +662,7 @@ export function Ti30MathPrint({
           </div>
         )}
       </div>
+      )}
 
       <div className="p-3">
         {tab === "home" && (
@@ -1256,10 +1273,12 @@ export function Ti30MathPrint({
       </div>
       </div>
 
+      {hideChrome ? null : (
       <p className="shrink-0 border-t border-border px-3 py-1.5 text-[8px] leading-snug text-muted-foreground">
         Independent math engine inspired by TI-30XS MultiView / TI-30X Pro Dist public docs. Not affiliated
         with Texas Instruments. For exam practice only.
       </p>
+      )}
     </div>
   );
 }

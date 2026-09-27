@@ -12,6 +12,7 @@ import { scrollPanelTo } from "./course-motion";
 import { COURSE_ECON } from "./course-tasks";
 
 const TASK = COURSE_ECON;
+const SHOWN = [0, 2, 4];
 
 /** Course · Economics: chapter 3, task 1, with the bank explanations. */
 export function CourseEconDemo() {
@@ -52,12 +53,13 @@ export function CourseEconDemo() {
     await api.click(() => setExpl(true));
     await api.wait(960);
 
-    for (let i = 0; i < TASK.explanations.length; i++) {
+    for (const i of SHOWN) {
       if (api.cancelled()) return;
-      await scrollPanelTo(api, '[data-d="expl-scroll"]', `[data-d="e${i}"]`);
-      await api.moveTo(`[data-d="e${i}"]`);
       setActive(i);
-      await api.wait(520);
+      await api.flush();
+      await scrollPanelTo(api, '[data-d="expl-scroll"]', `[data-d="card${i}"]`);
+      await api.moveTo(`[data-d="e${i}"]`);
+      await api.wait(820);
     }
     await api.wait(600);
   }, []);
@@ -76,6 +78,7 @@ export function CourseEconDemo() {
           open={expl}
           answerKey={TASK.answerKey}
           explanations={TASK.explanations}
+          shown={[active >= 0 ? active : SHOWN[0]]}
           active={active}
         />
       }

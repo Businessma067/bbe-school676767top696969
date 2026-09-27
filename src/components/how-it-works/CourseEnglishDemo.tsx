@@ -13,6 +13,9 @@ import { COURSE_ENGLISH, COURSE_ENGLISH_HIGHLIGHTS, COURSE_ENGLISH_PASSAGE } fro
 const TASK = COURSE_ENGLISH;
 const SHOW_AT = 2;
 const HIGHLIGHT = COURSE_ENGLISH_HIGHLIGHTS[SHOW_AT] ?? "";
+const PASSAGE =
+  COURSE_ENGLISH_PASSAGE.split(/\n\n/).find((paragraph) => paragraph.includes(HIGHLIGHT)) ??
+  COURSE_ENGLISH_PASSAGE;
 
 /** Course · English: ENG T.1.01, then Show solution in the text on the real line. */
 export function CourseEnglishDemo() {
@@ -34,7 +37,7 @@ export function CourseEnglishDemo() {
     setFade(false);
     await api.wait(360);
 
-    for (const i of [2, 4, 0]) {
+    for (const i of [2, 4]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
@@ -67,12 +70,14 @@ export function CourseEnglishDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lane={expl}
       overlay={
         <CourseSolution
           open={expl}
           dimmed={expl && !shown}
           answerKey={TASK.answerKey}
           explanations={TASK.explanations}
+          shown={[SHOW_AT]}
           active={active}
           locateAt={SHOW_AT}
           located={shown}
@@ -92,7 +97,7 @@ export function CourseEnglishDemo() {
       </div>
       <h3 className="font-display text-lg font-bold tracking-tight">{TASK.title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-foreground/90">{TASK.context}</p>
-      <CoursePassage text={COURSE_ENGLISH_PASSAGE} highlight={HIGHLIGHT} active={shown} />
+      <CoursePassage text={PASSAGE} highlight={HIGHLIGHT} active={shown} />
       <DemoStatementTable
         statements={TASK.statements}
         marks={marks}

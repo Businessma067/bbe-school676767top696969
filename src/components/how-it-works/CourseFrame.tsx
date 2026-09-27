@@ -9,6 +9,7 @@ export function CourseFrame({
   cursorRef,
   clicking,
   fade,
+  lane = false,
   children,
   overlay,
 }: {
@@ -17,6 +18,8 @@ export function CourseFrame({
   cursorRef: RefObject<HTMLDivElement | null>;
   clicking: boolean;
   fade: boolean;
+  /** Keep the task in the lane left of the explanation sheet. */
+  lane?: boolean;
   children: ReactNode;
   overlay?: ReactNode;
 }) {
@@ -27,6 +30,7 @@ export function CourseFrame({
         className={cn(
           "news-uniq-scroll h-full overflow-y-auto overscroll-contain p-3 transition-opacity duration-500 sm:p-5",
           fade ? "opacity-0" : "opacity-100",
+          lane && "sm:pr-[58%]",
         )}
       >
         {children}

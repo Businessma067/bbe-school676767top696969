@@ -151,7 +151,8 @@ export function useDemoPlayer(
       const el = stage.querySelector<HTMLElement>(selector);
       if (!el) return null;
       const s = stage.getBoundingClientRect();
-      const eb = el.getBoundingClientRect();
+      // First line box, so a wrapped highlight is aimed at the words, not the empty middle of the union rect.
+      const eb = el.getClientRects()[0] ?? el.getBoundingClientRect();
       if (eb.width === 0 && eb.height === 0) return null;
       return {
         x: eb.left - s.left + eb.width / 2 - 5,

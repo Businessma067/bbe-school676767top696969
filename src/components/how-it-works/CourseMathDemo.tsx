@@ -9,10 +9,12 @@ import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { CourseSolution } from "./CourseSolution";
 import { CourseTimedBar } from "./CourseTimedBar";
-import { scrollPanelTo } from "./course-motion";
+import { parkCalcKeys, pressCalcKey, scrollPanelTo } from "./course-motion";
 import { COURSE_MATH } from "./course-tasks";
 
 const TASK = COURSE_MATH;
+const SHOWN = [0, 3];
+const KEYS = ["1", "2", "×", "1", "1", "="];
 
 /** Course · Math: MATH 12.01, timed 1:30, the exam calculator, then the bank solution. */
 export function CourseMathDemo() {
@@ -42,13 +44,19 @@ export function CourseMathDemo() {
 
     await api.moveTo('[data-d="calc"]');
     await api.click(() => setCalc(true));
-    await api.moveTo("[data-calc-display]");
-    await api.wait(800);
+    await api.wait(280);
+    await parkCalcKeys(api, KEYS);
+    for (const key of KEYS) {
+      if (api.cancelled()) return;
+      await pressCalcKey(api, key);
+      await api.wait(80);
+    }
+    await api.wait(420);
     await api.moveTo('[data-d="calc"]');
     await api.click(() => setCalc(false));
     await api.wait(200);
 
-    for (const i of [3, 4, 1]) {
+    for (const i of [3, 4]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
@@ -63,12 +71,13 @@ export function CourseMathDemo() {
     await api.click(() => setExpl(true));
     await api.wait(960);
 
-    for (let i = 0; i < TASK.explanations.length; i++) {
+    for (const i of SHOWN) {
       if (api.cancelled()) return;
-      await scrollPanelTo(api, '[data-d="expl-scroll"]', `[data-d="e${i}"]`);
-      await api.moveTo(`[data-d="e${i}"]`);
       setActive(i);
-      await api.wait(640);
+      await api.flush();
+      await scrollPanelTo(api, '[data-d="expl-scroll"]', `[data-d="card${i}"]`);
+      await api.moveTo(`[data-d="e${i}"]`);
+      await api.wait(820);
     }
     await api.wait(500);
   }, []);
@@ -83,21 +92,26 @@ export function CourseMathDemo() {
       clicking={clicking}
       fade={fade}
       overlay={
-        <CourseSolution
-          open={expl}
-          answerKey={TASK.answerKey}
-          explanations={TASK.explanations}
-          active={active}
-          math
-        />
+        <>
+          {calc ? (
+            <div className="pointer-events-none absolute bottom-2 left-2 right-2 top-2 z-[8] sm:left-auto sm:top-[4.5rem] sm:w-[19rem]">
+              <div data-d="calc-panel" className="pointer-events-auto h-full min-h-0">
+                <Ti30MathPrint compact hideChrome className="h-full shadow-xl" />
+              </div>
+            </div>
+          ) : null}
+          <CourseSolution
+            open={expl}
+            answerKey={TASK.answerKey}
+            explanations={TASK.explanations}
+            shown={[active >= 0 ? active : SHOWN[0]]}
+            active={active}
+            math
+          />
+        </>
       }
     >
       <CourseTimedBar on={timed} calculator calcOpen={calc} />
-      {calc ? (
-        <div className="mb-4">
-          <Ti30MathPrint />
-        </div>
-      ) : null}
       <div className="mb-3 flex flex-wrap items-center gap-2" data-case={TASK.caseId}>
         <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-800">
           Task 1

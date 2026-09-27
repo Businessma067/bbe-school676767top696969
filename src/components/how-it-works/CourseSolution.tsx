@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { FlashcardMath } from "@/components/FlashcardMath";
-import { cleanExplanation } from "@/lib/clean-explanation";
 import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
+import { evenExplanation } from "./course-motion";
 import { cn } from "@/lib/utils";
 
 const LETTERS = "ABCDE";
@@ -13,6 +13,7 @@ export function CourseSolution({
   dimmed = open,
   answerKey,
   explanations,
+  shown = explanations.map((_, index) => index),
   active,
   math = false,
   locateAt,
@@ -22,6 +23,8 @@ export function CourseSolution({
   dimmed?: boolean;
   answerKey: boolean[];
   explanations: string[];
+  /** Statement indexes to show. A short even set, not the whole sheet. */
+  shown?: number[];
   active: number;
   math?: boolean;
   locateAt?: number;
@@ -48,7 +51,7 @@ export function CourseSolution({
           <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
             Explanation
           </p>
-          <section className="mb-6 overflow-x-auto border-b border-border/60 pb-5">
+          <section className="mb-3 overflow-x-auto border-b border-border/60 pb-3">
             <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
               Answer key
             </p>
@@ -79,23 +82,23 @@ export function CourseSolution({
               </tbody>
             </table>
           </section>
-          <div className="space-y-4">
-            {explanations.map((raw, i) => {
+          <div className="space-y-3">
+            {shown.map((i) => {
               const letter = LETTERS[i];
               const verdict = answerKey[i] ? "True" : "False";
-              const body = cleanExplanation(raw);
-              const prose = `**${letter}.** → ${verdict}\n\n${body}`;
+              const prose = `**${letter}.** → ${verdict}\n\n${evenExplanation(explanations[i] ?? "")}`;
               return (
                 <div
                   key={letter}
-                  data-d={`e${i}`}
+                  data-d={`card${i}`}
                   className={cn(
-                    "rounded-xl border p-3 transition-all duration-700 ease-out",
+                    "relative rounded-xl border p-3 transition-colors duration-300",
                     active === i
-                      ? "border-primary/40 bg-primary/5 opacity-100 shadow-sm"
-                      : "border-transparent bg-transparent opacity-45",
+                      ? "border-primary/40 bg-primary/5 shadow-sm"
+                      : "border-border bg-background",
                   )}
                 >
+                  <div data-d={`e${i}`} className="pointer-events-none absolute left-8 top-7 h-2 w-2" />
                   {math ? (
                     <div className="text-[13px] leading-relaxed text-foreground/90">
                       <FlashcardMath text={prose} />
