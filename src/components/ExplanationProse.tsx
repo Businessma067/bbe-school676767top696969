@@ -1,6 +1,7 @@
 import {
   FlashcardMath,
   mergeContinuationDisplayParagraphs,
+  unescapeProseLatex,
 } from "@/components/FlashcardMath";
 import { MathMarkdownTable, parsePipeTable } from "@/components/mock-exam/MathMarkdownTable";
 import { cn } from "@/lib/utils";
@@ -189,19 +190,26 @@ function InlineMarks({ text }: { text: string }) {
 
   return (
     <span>
-      {parts.map((p, i) =>
-        p.kind === "bold" ? (
-          <strong key={i} className="font-bold text-foreground">
-            {p.value.includes("$") ? <FlashcardMath text={p.value} /> : p.value}
-          </strong>
-        ) : p.kind === "italic" ? (
-          <em key={i}>{p.value.includes("$") ? <FlashcardMath text={p.value} /> : p.value}</em>
-        ) : p.value.includes("$") ? (
-          <FlashcardMath key={i} text={p.value} />
+      {parts.map((p, i) => {
+        // Always run through FlashcardMath when `$` is present; otherwise still
+        // strip prose `\%` / `\$` that DE overlays leave outside math mode.
+        const body = p.value.includes("$") ? (
+          <FlashcardMath text={p.value} />
         ) : (
-          <span key={i}>{p.value}</span>
-        ),
-      )}
+          unescapeProseLatex(p.value)
+        );
+        if (p.kind === "bold") {
+          return (
+            <strong key={i} className="font-bold text-foreground">
+              {body}
+            </strong>
+          );
+        }
+        if (p.kind === "italic") {
+          return <em key={i}>{body}</em>;
+        }
+        return <span key={i}>{body}</span>;
+      })}
     </span>
   );
 }
