@@ -254,6 +254,118 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-mock"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/news/welcome-to-bbe-school-news</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/welcome-to-bbe-school-news"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/how-we-build-mock-exams</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/how-we-build-mock-exams"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/demo-exam-is-public</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/demo-exam-is-public"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/mock-builder-left-the-lab</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/mock-builder-left-the-lab"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/what-shipped-since-may</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/what-shipped-since-may"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/wiso-track-is-live</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/wiso-track-is-live"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/flashcards-and-matching</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/flashcards-and-matching"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/answer-sheet-page</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/answer-sheet-page"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/scoring-without-the-fog</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/scoring-without-the-fog"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/tutor-exam-mode</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/tutor-exam-mode"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/full-course-subject-rooms</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/full-course-subject-rooms"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/dashboard-that-remembers</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/dashboard-that-remembers"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/first-hard-mocks-went-live</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/first-hard-mocks-went-live"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/news/bbe-vs-wiso-chooser</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/demo-practice/economics</loc>
     <priority>0.7</priority>
   </url>
@@ -276,62 +388,6 @@
   <url>
     <loc>https://bbe-school.com/wiso/demo-practice/german</loc>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/welcome-to-bbe-school-news</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/how-we-build-mock-exams</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/demo-exam-is-public</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/mock-builder-left-the-lab</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/what-shipped-since-may</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/wiso-track-is-live</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/flashcards-and-matching</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/answer-sheet-page</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/scoring-without-the-fog</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/tutor-exam-mode</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/full-course-subject-rooms</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/dashboard-that-remembers</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/first-hard-mocks-went-live</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/news/bbe-vs-wiso-chooser</loc>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bbe-school.com/de</loc>
@@ -582,6 +638,118 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-mock"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/news/welcome-to-bbe-school-news</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/welcome-to-bbe-school-news"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/how-we-build-mock-exams</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/how-we-build-mock-exams"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/demo-exam-is-public</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/demo-exam-is-public"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/mock-builder-left-the-lab</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/mock-builder-left-the-lab"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/what-shipped-since-may</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/what-shipped-since-may"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/wiso-track-is-live</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/wiso-track-is-live"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/flashcards-and-matching</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/flashcards-and-matching"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/answer-sheet-page</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/answer-sheet-page"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/scoring-without-the-fog</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/scoring-without-the-fog"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/tutor-exam-mode</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/tutor-exam-mode"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/full-course-subject-rooms</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/full-course-subject-rooms"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/dashboard-that-remembers</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/dashboard-that-remembers"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/first-hard-mocks-went-live</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/first-hard-mocks-went-live"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/news/bbe-vs-wiso-chooser</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/uk</loc>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/"/>
@@ -828,5 +996,117 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/demo-mock"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/demo-mock"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/welcome-to-bbe-school-news</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/welcome-to-bbe-school-news"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/welcome-to-bbe-school-news"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/how-we-build-mock-exams</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/how-we-build-mock-exams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/how-we-build-mock-exams"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/demo-exam-is-public</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/demo-exam-is-public"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/demo-exam-is-public"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/mock-builder-left-the-lab</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/mock-builder-left-the-lab"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/mock-builder-left-the-lab"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/what-shipped-since-may</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/what-shipped-since-may"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/what-shipped-since-may"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/wiso-track-is-live</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/wiso-track-is-live"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/wiso-track-is-live"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/flashcards-and-matching</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/flashcards-and-matching"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/flashcards-and-matching"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/answer-sheet-page</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/answer-sheet-page"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/answer-sheet-page"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/scoring-without-the-fog</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/scoring-without-the-fog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/scoring-without-the-fog"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/tutor-exam-mode</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/tutor-exam-mode"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/tutor-exam-mode"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/full-course-subject-rooms</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/full-course-subject-rooms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/full-course-subject-rooms"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/dashboard-that-remembers</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/dashboard-that-remembers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/dashboard-that-remembers"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/first-hard-mocks-went-live</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/first-hard-mocks-went-live"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/first-hard-mocks-went-live"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/news/bbe-vs-wiso-chooser</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/news/bbe-vs-wiso-chooser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
   </url>
 </urlset>

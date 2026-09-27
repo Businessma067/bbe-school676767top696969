@@ -86,8 +86,14 @@ export function stripLocalePrefix(pathname: string): string {
   return rest ? normalizeAppPath(rest) : "/";
 }
 
-export function isLocalizablePath(pathname: string): pathname is LocalizablePath {
-  return LOCALIZABLE_SET.has(normalizeAppPath(pathname));
+/** True for `/news/<slug>` (single segment). Validity of the slug is checked elsewhere. */
+export function isNewsPostPath(pathname: string): boolean {
+  return /^\/news\/[^/]+$/.test(normalizeAppPath(pathname));
+}
+
+export function isLocalizablePath(pathname: string): boolean {
+  const path = normalizeAppPath(pathname);
+  return LOCALIZABLE_SET.has(path) || isNewsPostPath(path);
 }
 
 /**

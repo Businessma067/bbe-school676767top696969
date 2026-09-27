@@ -3,7 +3,8 @@ import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { formatNewsDate, getAllNewsPosts } from "@/data/news/posts";
-import { hreflangLinks, stripLocalePrefix } from "@/lib/i18n/locale-path";
+import { useLanguage } from "@/lib/i18n/context";
+import { hreflangLinks, isNewsPostPath, stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/news")({
@@ -29,14 +30,10 @@ export const Route = createFileRoute("/news")({
   component: NewsPage,
 });
 
-function isNewsPostPath(pathname: string): boolean {
-  const path = stripLocalePrefix(pathname);
-  return path.startsWith("/news/") && path !== "/news/";
-}
-
 export function NewsPage() {
+  const { lang } = useLanguage();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  if (isNewsPostPath(pathname)) {
+  if (isNewsPostPath(stripLocalePrefix(pathname))) {
     return <Outlet />;
   }
 
@@ -75,7 +72,7 @@ export function NewsPage() {
                 className="group block py-6 transition-colors hover:bg-secondary/40 sm:px-2"
               >
                 <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-xs text-muted-foreground">
-                  <time dateTime={post.date}>{formatNewsDate(post.date)}</time>
+                  <time dateTime={post.date}>{formatNewsDate(post.date, lang)}</time>
                   <span aria-hidden="true">·</span>
                   <span>{post.author}</span>
                 </div>
