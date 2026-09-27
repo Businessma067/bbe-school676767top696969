@@ -3,6 +3,9 @@ import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";
+import { CourseEnglishDemo } from "@/components/how-it-works/CourseEnglishDemo";
+import { CourseMathDemo } from "@/components/how-it-works/CourseMathDemo";
 import { cn } from "@/lib/utils";
 
 type MainTab = "course" | "mock-builder" | "games";
@@ -192,6 +195,12 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
   },
 ];
 
+function BbeCourseStage({ subject }: { subject: string }) {
+  if (subject === "math") return <CourseMathDemo />;
+  if (subject === "english") return <CourseEnglishDemo />;
+  return <CourseEconDemo />;
+}
+
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
@@ -218,6 +227,10 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const activeKey = tab === "games" ? tool : tab === "mock-builder" ? "mock-builder" : subject;
   const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
+  const liveCourseDemo =
+    track === "bbe" &&
+    tab === "course" &&
+    (slide.key === "economics" || slide.key === "math" || slide.key === "english");
 
   const goSlide = (next: number) => {
     const i = (next + slides.length) % slides.length;
@@ -378,18 +391,22 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
-                  <video
-                    key={slide.key}
-                    ref={videoRef}
-                    className="absolute inset-0 h-full w-full object-cover"
-                    poster={slide.poster}
-                    src={slide.video}
-                    muted
-                    loop
-                    playsInline
-                    preload="none"
-                    aria-label={`${slide.label} walkthrough`}
-                  />
+                  {liveCourseDemo ? (
+                    <BbeCourseStage key={slide.key} subject={slide.key} />
+                  ) : (
+                    <video
+                      key={slide.key}
+                      ref={videoRef}
+                      className="absolute inset-0 h-full w-full object-cover"
+                      poster={slide.poster}
+                      src={slide.video}
+                      muted
+                      loop
+                      playsInline
+                      preload="none"
+                      aria-label={`${slide.label} walkthrough`}
+                    />
+                  )}
                   <button
                     type="button"
                     onClick={openZoom}
@@ -481,28 +498,35 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                 onClick={(event) => event.stopPropagation()}
               >
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: slide.aspect }}>
-                  {/*
-                    Zoom by sizing the video element (not CSS transform scale), so 100%
-                    stays sharp on large screens and magnification reuses decoded pixels
-                    without an extra soft compositor upscale pass when possible.
-                  */}
-                  <video
-                    key={`zoom-${slide.key}`}
-                    ref={zoomVideoRef}
-                    className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
-                    style={{
-                      width: `${lightboxScale * 100}%`,
-                      height: `${lightboxScale * 100}%`,
-                    }}
-                    poster={slide.poster}
-                    src={slide.video}
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    preload="metadata"
-                    aria-label={`${slide.label} walkthrough enlarged`}
-                  />
+                  {liveCourseDemo ? (
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        transform: `scale(${lightboxScale})`,
+                        transformOrigin: "center center",
+                      }}
+                    >
+                      <BbeCourseStage key={`zoom-${slide.key}`} subject={slide.key} />
+                    </div>
+                  ) : (
+                    <video
+                      key={`zoom-${slide.key}`}
+                      ref={zoomVideoRef}
+                      className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
+                      style={{
+                        width: `${lightboxScale * 100}%`,
+                        height: `${lightboxScale * 100}%`,
+                      }}
+                      poster={slide.poster}
+                      src={slide.video}
+                      muted
+                      loop
+                      playsInline
+                      autoPlay
+                      preload="metadata"
+                      aria-label={`${slide.label} walkthrough enlarged`}
+                    />
+                  )}
                 </div>
 
                 <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-black/92 p-1.5 shadow-lg backdrop-blur-sm">
