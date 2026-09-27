@@ -4,7 +4,8 @@ export type DemoPlayerApi = {
   wait: (ms: number) => Promise<void>;
   tween: (duration: number, onFrame: (eased: number) => void | Promise<void>) => Promise<void>;
   moveTo: (selector: string) => Promise<void>;
-  click: () => Promise<void>;
+  /** Press the pointer. `onPress` runs on the down frame, before the click ends. */
+  click: (onPress?: () => void) => Promise<void>;
   /** Re-read a live element and park the cursor on it (weight-handle chase). */
   snapTo: (selector: string) => void;
   /**
@@ -121,7 +122,11 @@ export function useDemoPlayer(
       const c = clampToStage(p);
       cursorPos.current = c;
       const el = cursorRef.current;
-      if (el) el.style.transform = `translate3d(${c.x}px, ${c.y}px, 0)`;
+      if (el) {
+        el.dataset.cx = String(c.x);
+        el.dataset.cy = String(c.y);
+        el.style.transform = `translate3d(${c.x}px, ${c.y}px, 0)`;
+      }
     };
 
     const glideCursor = (target: { x: number; y: number }, duration = 620) => {
@@ -216,11 +221,13 @@ export function useDemoPlayer(
       await scrollToReveal(selector, false);
     };
 
-    const click = async () => {
+    const click = async (onPress?: () => void) => {
       setClicking(true);
+      onPress?.();
+      await flush();
       await wait(120);
       setClicking(false);
-      await wait(140);
+      await wait(40);
     };
 
     const snapTo = (selector: string) => {

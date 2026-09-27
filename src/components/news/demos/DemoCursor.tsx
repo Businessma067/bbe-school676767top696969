@@ -1,4 +1,4 @@
-import type { RefObject } from "react";
+import { useLayoutEffect, type RefObject } from "react";
 import { cn } from "@/lib/utils";
 
 /** Pointer rendered via DOM transform (written by useDemoPlayer — no React re-renders). */
@@ -9,11 +9,22 @@ export function DemoCursor({
   cursorRef: RefObject<HTMLDivElement | null>;
   clicking: boolean;
 }) {
+  // Restore the imperative transform after every render. A style prop here
+  // would snap the pointer back to the origin on each click re-render.
+  useLayoutEffect(() => {
+    const el = cursorRef.current;
+    if (!el) return;
+    if (!el.dataset.cx) {
+      el.dataset.cx = "36";
+      el.dataset.cy = "36";
+    }
+    el.style.transform = `translate3d(${el.dataset.cx}px, ${el.dataset.cy}px, 0)`;
+  });
+
   return (
     <div
       ref={cursorRef}
       className="pointer-events-none absolute left-0 top-0 z-30 will-change-transform"
-      style={{ transform: "translate3d(36px, 36px, 0)" }}
       aria-hidden
     >
       <div
