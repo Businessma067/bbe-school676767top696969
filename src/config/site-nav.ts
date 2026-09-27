@@ -103,14 +103,21 @@ function demoCourseItem(track: ExamTrack): NavItem {
       };
 }
 
-/** Public free diagnostic mock — BBE only (no WiSo counterpart yet). */
-function demoExamItem(): NavItem {
-  return {
-    label: "Demo Exam",
-    href: "/demo-mock",
-    isRoute: true,
-    activeExact: ["/demo-mock"],
-  };
+/** Public free diagnostic mock — BBE or WiSo track. */
+function demoExamItem(track: ExamTrack = "bbe"): NavItem {
+  return track === "wiso"
+    ? {
+        label: "Demo Exam",
+        href: "/wiso/demo-mock",
+        isRoute: true,
+        activeExact: ["/wiso/demo-mock"],
+      }
+    : {
+        label: "Demo Exam",
+        href: "/demo-mock",
+        isRoute: true,
+        activeExact: ["/demo-mock"],
+      };
 }
 
 const fullCourseItem: NavItem = {
@@ -206,8 +213,7 @@ export function homepageNavItems(): NavItem[] {
 }
 
 export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
-  const items: NavItem[] = [examInfoItem(track), demoPracticeItem(track)];
-  if (track === "bbe") items.push(demoExamItem());
+  const items: NavItem[] = [examInfoItem(track), demoPracticeItem(track), demoExamItem(track)];
   items.push(
     {
       label: "How it works",

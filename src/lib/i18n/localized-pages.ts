@@ -22,6 +22,7 @@ import { WisoAdmissionPage } from "@/routes/wiso.admission";
 import { WisoWuViennaPage } from "@/routes/wiso.wu-vienna";
 import { WisoFullCourseProduct } from "@/routes/wiso.products.full-course";
 import { WisoDemoPractice } from "@/routes/wiso.demo-practice.index";
+import { WisoDemoMockPage } from "@/routes/wiso.demo-mock";
 import { WisoMockExamsPage } from "@/routes/wiso.mock-exams";
 import { ParentsPage } from "@/routes/parents";
 import { NewsPage } from "@/routes/news";
@@ -64,6 +65,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/wiso/products": ProductsPage,
   "/wiso/products/full-course": WisoFullCourseProduct,
   "/wiso/demo-practice": WisoDemoPractice,
+  "/wiso/demo-mock": WisoDemoMockPage,
   "/wiso/mock-exams": WisoMockExamsPage,
   "/parents": ParentsPage,
   "/news": NewsPage,

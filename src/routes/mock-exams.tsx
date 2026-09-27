@@ -9,7 +9,12 @@ export const Route = createFileRoute("/mock-exams")({
 /** Free demo mock take/review — auth is enforced inside the take page. */
 function isDemoMockPath(pathname: string): boolean {
   const path = stripLocalePrefix(pathname);
-  return path === "/mock-exams/demo-mock" || path.startsWith("/mock-exams/demo-mock/");
+  return (
+    path === "/mock-exams/demo-mock" ||
+    path.startsWith("/mock-exams/demo-mock/") ||
+    path === "/mock-exams/wiso-demo-mock" ||
+    path.startsWith("/mock-exams/wiso-demo-mock/")
+  );
 }
 
 function MockExamsLayout() {

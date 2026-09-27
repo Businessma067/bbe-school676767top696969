@@ -57,6 +57,12 @@ import {
   WISO_MOCK_EXAM_1_QUESTION_COUNT,
   buildWisoMockExam1Questions,
 } from "@/lib/wiso-mock-exam-1-content";
+import {
+  WISO_MOCK_EXAM_DEMO_CONTENT_REV,
+  WISO_MOCK_EXAM_DEMO_POINTS_TOTAL,
+  WISO_MOCK_EXAM_DEMO_QUESTION_COUNT,
+  buildWisoMockExamDemoQuestions,
+} from "@/lib/wiso-mock-exam-demo-content";
 
 /** Paid course tiers plus free demo-mock access. */
 export type ProductTier = "full" | "lite" | "demo";
@@ -178,8 +184,20 @@ export const MOCK_EXAMS: MockExamSummary[] = [
   },
 ];
 
-/** Curated WiSo Aufnahmeprüfung mocks (German track). */
+/** Free WiSo diagnostic — always unlocked (WiSo “Demo Exam” CTA). */
+export const WISO_DEMO_MOCK_EXAM: MockExamSummary = {
+  id: "wiso-demo-mock",
+  title: "WiSo Demo-Probeprüfung",
+  questionCount: WISO_MOCK_EXAM_DEMO_QUESTION_COUNT,
+  durationMinutes: 120,
+  tier: "demo",
+  pointsTotal: WISO_MOCK_EXAM_DEMO_POINTS_TOTAL,
+  contentRev: WISO_MOCK_EXAM_DEMO_CONTENT_REV,
+};
+
+/** Curated WiSo Aufnahmeprüfung mocks (German track). Demo + paid mocks. */
 export const WISO_MOCK_EXAMS: MockExamSummary[] = [
+  WISO_DEMO_MOCK_EXAM,
   {
     id: "wiso-mock-1",
     title: "WiSo Mock Exam 1",
@@ -204,13 +222,18 @@ export function getFreeDemoMockExam(): MockExamSummary {
   return DEMO_MOCK_EXAM;
 }
 
+/** Free WiSo demo mock — unlocked for every visitor on the WiSo track. */
+export function getFreeWisoDemoMockExam(): MockExamSummary {
+  return WISO_DEMO_MOCK_EXAM;
+}
+
 export function isFreeDemoMockId(id: string): boolean {
-  return id === DEMO_MOCK_EXAM.id;
+  return id === DEMO_MOCK_EXAM.id || id === WISO_DEMO_MOCK_EXAM.id;
 }
 
 export function getWisoExamsForTier(tier: ProductTier | "none"): MockExamSummary[] {
   if (tier !== "full") return [];
-  return WISO_MOCK_EXAMS;
+  return WISO_MOCK_EXAMS.filter((e) => e.tier !== "demo");
 }
 
 export function getExamById(id: string): MockExamSummary | undefined {
@@ -218,7 +241,7 @@ export function getExamById(id: string): MockExamSummary | undefined {
 }
 
 export function isWisoCuratedMockId(id: string): boolean {
-  return id.startsWith("wiso-mock-");
+  return id.startsWith("wiso-mock-") || id === WISO_DEMO_MOCK_EXAM.id;
 }
 
 export function summaryFromCustomMock(row: CustomMockRow): MockExamSummary {
@@ -259,6 +282,9 @@ const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 export function buildExamQuestions(examId: string): ExamQuestion[] {
   if (examId === "demo-mock") {
     return buildMockExamDemoQuestions(examId);
+  }
+  if (examId === "wiso-demo-mock") {
+    return buildWisoMockExamDemoQuestions(examId);
   }
   if (examId === "mock-1") {
     return buildMockExam1Questions(examId);

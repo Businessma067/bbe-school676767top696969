@@ -68,6 +68,7 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/wiso/products": absoluteMediaUrl(WISO_COURSE_PRODUCT_IMAGE),
   "/wiso/products/full-course": absoluteMediaUrl(WISO_COURSE_PRODUCT_IMAGE),
   "/wiso/demo-practice": absoluteMediaUrl(WISO_COURSE_PRODUCT_IMAGE),
+  "/wiso/demo-mock": absoluteMediaUrl(examHallAsset.url),
 };
 
 export function socialImageMetaForPath(pathname: string) {

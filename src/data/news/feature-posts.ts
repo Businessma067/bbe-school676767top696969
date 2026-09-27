@@ -248,7 +248,7 @@ export const FEATURE_POSTS: NewsPost[] = [
     body: [
       {
         type: "p",
-        text: "For a long time the site mainly told a BBE story, even though many visitors needed WiSo. On 27 August we opened a real WiSo track: its own hub, demo practice, course pages, and mock builder. Use the track switch in the header to move between BBE and WiSo. The practice pages then follow the path you chose. Note that the free BBE Demo Exam page does not have a WiSo twin yet.",
+        text: "For a long time the site mainly told a BBE story, even though many visitors needed WiSo. On 27 August we opened a real WiSo track: its own hub, demo practice, course pages, and mock builder. Use the track switch in the header to move between BBE and WiSo. The practice pages then follow the path you chose. The free WiSo Demo Exam is at /wiso/demo-mock.",
       },
       {
         type: "demo",

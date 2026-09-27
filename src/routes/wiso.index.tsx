@@ -109,20 +109,31 @@ export function WisoLandingPage() {
                 rather than around BBE English.
               </p>
 
-              <div className="mt-6 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-7 sm:w-auto sm:flex-row">
+              <div className="mt-6 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-7 sm:w-auto sm:flex-row sm:flex-wrap">
                 <LocalizedLink
                   to={WISO_PRACTICE_ROUTES.demo}
                   className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm bg-indigo-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2"
                 >
-                  <span>Try the WiSo demo</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-white/80">On WiSo URLs only</span>
+                  <span>WiSo Demo Practice</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/80">
+                    Aufgaben zum Einstieg
+                  </span>
+                </LocalizedLink>
+                <LocalizedLink
+                  to={WISO_PRACTICE_ROUTES.demoMock}
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
+                >
+                  <span>Demo-Probeprüfung</span>
+                  <span className="mt-0.5 text-[11px] font-medium opacity-70">
+                    Kostenlos nach Anmeldung
+                  </span>
                 </LocalizedLink>
                 <LocalizedLink
                   to={WISO_PRACTICE_ROUTES.products}
-                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-900 bg-indigo-950 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:border-indigo-400 dark:bg-indigo-900"
                 >
-                  <span>See WiSo courses</span>
-                  <span className="mt-0.5 text-[11px] font-medium opacity-70">Full WiSo Course</span>
+                  <span>WiSo-Kurse ansehen</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/70">Full WiSo Course</span>
                 </LocalizedLink>
               </div>
 

@@ -42,7 +42,7 @@ const BBE_MILESTONES: Milestone[] = [
 const WISO_MILESTONES: Milestone[] = [
   {
     title: "Kostenlose Demo",
-    label: "WiSo-Aufgaben in Wirtschaft, Mathe und Deutsch",
+    label: "WiSo-Aufgaben + Demo-Probeprüfung (Wirtschaft, Mathe, Deutsch)",
     icon: "demo",
     youAreHere: true,
   },

@@ -42,6 +42,7 @@ export const WISO_EXAM_SUBNAV: WisoExamNavItem[] = [
 
 export const WISO_PRACTICE_ROUTES = {
   demo: "/wiso/demo-practice",
+  demoMock: "/wiso/demo-mock",
   mockExams: "/wiso/mock-exams",
   mockBuilder: "/wiso/mock-builder",
   flashcards: "/wiso/flashcards",

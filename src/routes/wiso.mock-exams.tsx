@@ -145,13 +145,36 @@ export function WisoMockExamsPage() {
           {tier === null ? (
             <p className="text-sm text-muted-foreground">Lade Zugang…</p>
           ) : locked ? (
-            <div className="rounded-2xl border border-dashed border-indigo-300/70 bg-indigo-50/40 p-6 text-sm text-muted-foreground dark:border-indigo-800/50 dark:bg-indigo-950/30">
-              WiSo Mock Exams gehören zum Full WiSo Course.{" "}
+            <div className="space-y-4">
+              <div className="rounded-2xl border border-dashed border-indigo-300/70 bg-indigo-50/40 p-6 text-sm text-muted-foreground dark:border-indigo-800/50 dark:bg-indigo-950/30">
+                WiSo Mock Exams gehören zum Full WiSo Course.{" "}
+                <LocalizedLink
+                  to="/wiso/products/full-course"
+                  className="font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
+                >
+                  Full WiSo Course ansehen →
+                </LocalizedLink>
+              </div>
               <LocalizedLink
-                to="/wiso/products/full-course"
-                className="font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
+                to="/wiso/demo-mock"
+                className="flex flex-col gap-2 rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
+                style={{ borderTop: `4px solid ${INDIGO}` }}
               >
-                Full WiSo Course ansehen →
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: INDIGO }}>
+                    Kostenlos
+                  </p>
+                  <h3 className="mt-1 font-display text-lg font-semibold">WiSo Demo-Probeprüfung</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    33 Fragen · 2 Stunden · volle Review — ohne Kurskauf.
+                  </p>
+                </div>
+                <span
+                  className="inline-flex shrink-0 items-center justify-center rounded-md px-4 py-2 text-sm font-semibold text-white"
+                  style={{ backgroundColor: INDIGO }}
+                >
+                  Demo starten →
+                </span>
               </LocalizedLink>
             </div>
           ) : (
