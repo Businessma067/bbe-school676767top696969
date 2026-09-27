@@ -266,7 +266,6 @@ export const uiExtraDe: Record<string, string> = {
   "Time limit": "Zeitlimit",
   "Total points": "Gesamtpunkte",
   "Price": "Preis",
-  "Free": "Kostenlos",
   "What's inside the free demo mock": "Was in der kostenlosen Demo-Probeprüfung steckt",
   "One sitting that mirrors how the WU BBE entrance exam is built — three sections, partial credit, and exam-day pacing.":
     "Eine Sitzung, die den Aufbau der WU-BBE-Aufnahmeprüfung spiegelt — drei Teile, Teilpunkte und Prüfungstag-Tempo.",
@@ -615,7 +614,6 @@ export const uiExtraUk: Record<string, string> = {
   "Time limit": "Ліміт часу",
   "Total points": "Усього балів",
   "Price": "Ціна",
-  "Free": "Безкоштовно",
   "What's inside the free demo mock": "Що всередині безкоштовного демо-іспиту",
   "One sitting that mirrors how the WU BBE entrance exam is built — three sections, partial credit, and exam-day pacing.":
     "Один підхід, що відтворює структуру вступного іспиту WU BBE — три розділи, часткові бали та темп іспитового дня.",
