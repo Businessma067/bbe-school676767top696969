@@ -76,7 +76,6 @@ export const ENGLISH_ONLY_INDEXABLE_PATHS = [
   "/wiso/demo-practice/math",
   "/wiso/demo-practice/economics",
   "/wiso/demo-practice/german",
-  ...getNewsPostPaths(),
 ] as const;
 
 type SitemapEntry = {
@@ -148,10 +147,13 @@ function escapeXml(value: string): string {
 
 /** Canonical sitemap URLs in language groups: English, then German, then Ukrainian. */
 export function getSitemapEntries(): SitemapEntry[] {
-  const publicLocalizable = LOCALIZABLE_PATHS.filter((path) => isSitemapIndexablePath(path));
+  const publicLocalizable = [
+    ...LOCALIZABLE_PATHS.filter((path) => isSitemapIndexablePath(path)),
+    ...getNewsPostPaths(),
+  ];
   const entries: SitemapEntry[] = [];
 
-  const localizableSet = new Set<string>(LOCALIZABLE_PATHS);
+  const localizableSet = new Set<string>(publicLocalizable);
 
   for (const code of SITEMAP_LANGS) {
     for (const path of publicLocalizable) {

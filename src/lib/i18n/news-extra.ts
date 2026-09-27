@@ -1,6 +1,6 @@
 /**
  * DE/UK copy for the News feed chrome and post titles/summaries.
- * Long post bodies stay English for v1.
+ * Long post bodies, demos, and meta titles live in news-body-extra.ts.
  */
 export const newsExtraDe: Record<string, string> = {
   News: "Neuigkeiten",

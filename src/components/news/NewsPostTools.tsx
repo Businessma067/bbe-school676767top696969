@@ -272,7 +272,9 @@ export function BuilderMixTool({ caption }: { caption: string }) {
         <label key={label} className="mb-3 block">
           <div className="mb-1 flex items-center justify-between text-xs font-semibold">
             <span style={{ color: INK }}>{label}</span>
-            <span style={{ color: tone }}>{value} tasks</span>
+            <span style={{ color: tone }}>
+              {value} <span>tasks</span>
+            </span>
           </div>
           <input
             type="range"
@@ -288,11 +290,13 @@ export function BuilderMixTool({ caption }: { caption: string }) {
         className="mt-2 rounded-md border px-3.5 py-3 text-sm"
         style={{ borderColor: RULE, background: "rgba(255,255,255,0.55)", color: MUTED }}
       >
-        Total length:{" "}
+        <span>Total length:</span>{" "}
         <span className="font-display font-semibold" style={{ color: INK }}>
-          {total} tasks
+          {total} <span>tasks</span>
         </span>
-        . The live banks stay demanding regardless of the mix you choose.
+        <span>
+          . The live banks stay demanding regardless of the mix you choose.
+        </span>
       </div>
     </ToolFrame>
   );

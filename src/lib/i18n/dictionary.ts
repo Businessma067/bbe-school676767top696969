@@ -9,6 +9,7 @@ import { homeExtraDe, homeExtraUk } from "./home-extra";
 import { wisoHubExtraDe, wisoHubExtraUk } from "./wiso-hub-extra";
 import { copyVoiceExtraDe, copyVoiceExtraUk } from "./copy-voice-extra";
 import { newsExtraDe, newsExtraUk } from "./news-extra";
+import { newsBodyExtraDe, newsBodyExtraUk } from "./news-body-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -475,6 +476,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...wisoHubExtraDe,
     ...copyVoiceExtraDe,
     ...newsExtraDe,
+    ...newsBodyExtraDe,
     ...baseDictionary.de,
   },
   uk: {
@@ -489,6 +491,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...wisoHubExtraUk,
     ...copyVoiceExtraUk,
     ...newsExtraUk,
+    ...newsBodyExtraUk,
     ...baseDictionary.uk,
   },
 };

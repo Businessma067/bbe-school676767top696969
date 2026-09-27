@@ -1,4 +1,6 @@
-import type { LocalizablePath } from "./locale-path";
+import { getNewsPost } from "@/data/news/posts";
+import { isNewsPostPath, type LocalizablePath } from "./locale-path";
+import { newsPostHead } from "@/routes/news.$slug";
 
 import { Route as BbeAdmissionRoute } from "@/routes/bbe-admission";
 import { Route as BbeEconomicsEnglishRoute } from "@/routes/bbe-economics-english";
@@ -96,6 +98,11 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
 };
 
 export function getEnglishHeadForPath(pathname: string): HeadFnResult | undefined {
+  if (isNewsPostPath(pathname)) {
+    const slug = pathname.slice("/news/".length);
+    if (!getNewsPost(slug)) return undefined;
+    return newsPostHead(slug);
+  }
   const getter = ENGLISH_HEAD_BY_PATH[pathname as LocalizablePath];
   return getter?.();
 }

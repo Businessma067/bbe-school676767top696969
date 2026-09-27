@@ -2,7 +2,7 @@ import type { NewsPost } from "./types";
 
 /**
  * Feature release posts for the public news feed.
- * Bodies stay English for v1 (same rule as other news posts).
+ * Body strings are translated via news-body-extra.ts (titles/summaries in news-extra.ts).
  */
 export const FEATURE_POSTS: NewsPost[] = [
   {

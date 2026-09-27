@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, useRouterState } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -13,36 +13,48 @@ import { NewsShippingTimeline } from "@/components/news/NewsShippingTimeline";
 import { NewsSteps } from "@/components/news/NewsSteps";
 import { NewsUiDemo } from "@/components/news/NewsUiDemos";
 import { formatNewsDate, getNewsPost } from "@/data/news/posts";
+import { useLanguage } from "@/lib/i18n/context";
+import { hreflangLinks, isNewsPostPath, stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+export function newsPostHead(slug: string) {
+  const post = getNewsPost(slug);
+  const title = post ? `${post.title} — BBE School News` : "News — BBE School";
+  const description = post?.summary ?? "A post from the BBE School creators.";
+  const path = `/news/${slug}`;
+  return {
+    links: [...hreflangLinks(path), { rel: "canonical", href: `https://bbe-school.com${path}` }],
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/news"),
+    ],
+  };
+}
 
 export const Route = createFileRoute("/news/$slug")({
   beforeLoad: ({ params }) => {
     if (!getNewsPost(params.slug)) throw notFound();
   },
-  head: ({ params }) => {
-    const post = getNewsPost(params.slug);
-    const title = post ? `${post.title} — BBE School News` : "News — BBE School";
-    const description = post?.summary ?? "A post from the BBE School creators.";
-    const path = `/news/${params.slug}`;
-    return {
-      links: [{ rel: "canonical", href: `https://bbe-school.com${path}` }],
-      meta: [
-        { title },
-        { name: "description", content: description },
-        { property: "og:title", content: title },
-        { property: "og:description", content: description },
-        { property: "og:type", content: "article" },
-        { name: "twitter:card", content: "summary_large_image" },
-        ...socialImageMetaForPath("/news"),
-      ],
-    };
-  },
+  head: ({ params }) => newsPostHead(params.slug),
   component: NewsPostPage,
 });
 
+function newsSlugFromPathname(pathname: string): string | null {
+  const path = stripLocalePrefix(pathname);
+  if (!isNewsPostPath(path)) return null;
+  return path.slice("/news/".length);
+}
+
 export function NewsPostPage() {
-  const { slug } = Route.useParams();
-  const post = getNewsPost(slug);
+  const { lang } = useLanguage();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const slug = newsSlugFromPathname(pathname);
+  const post = slug ? getNewsPost(slug) : undefined;
   if (!post) return null;
 
   return (
@@ -64,7 +76,7 @@ export function NewsPostPage() {
         <article>
           <header className="mb-8 border-b border-border pb-8">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-xs text-muted-foreground">
-              <time dateTime={post.date}>{formatNewsDate(post.date)}</time>
+              <time dateTime={post.date}>{formatNewsDate(post.date, lang)}</time>
               <span aria-hidden="true">·</span>
               <span>{post.author}</span>
             </div>

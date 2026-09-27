@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
-import type { LocalizablePath } from "./locale-path";
+import { getNewsPost } from "@/data/news/posts";
+import { isNewsPostPath, normalizeAppPath, type LocalizablePath } from "./locale-path";
 
 import { Index } from "@/routes/index";
 import { BbeLandingPage } from "@/routes/bbe";
@@ -24,6 +25,7 @@ import { WisoDemoPractice } from "@/routes/wiso.demo-practice.index";
 import { WisoMockExamsPage } from "@/routes/wiso.mock-exams";
 import { ParentsPage } from "@/routes/parents";
 import { NewsPage } from "@/routes/news";
+import { NewsPostPage } from "@/routes/news.$slug";
 import { ImportantFeaturesPage } from "@/routes/important-features";
 import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
 import { TermsPage } from "@/routes/terms";
@@ -83,5 +85,10 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
 };
 
 export function getLocalizedPage(pathname: string): ComponentType | null {
-  return LOCALIZED_PAGE_COMPONENTS[pathname as LocalizablePath] ?? null;
+  const path = normalizeAppPath(pathname);
+  if (isNewsPostPath(path)) {
+    const slug = path.slice("/news/".length);
+    return getNewsPost(slug) ? NewsPostPage : null;
+  }
+  return LOCALIZED_PAGE_COMPONENTS[path as LocalizablePath] ?? null;
 }

@@ -38,6 +38,7 @@ const PUBLIC_LOCALIZABLE = [
   "/wiso/products/full-course",
   "/wiso/demo-practice",
   "/parents",
+  "/news",
   "/important-features",
   "/features/answer-sheet",
   "/terms",
@@ -48,6 +49,19 @@ const PUBLIC_LOCALIZABLE = [
   "/demo-practice",
   "/demo-mock",
 ];
+
+/** News post paths from src/data/news (slug fields). */
+function getNewsPostPaths() {
+  const files = ["src/data/news/posts.ts", "src/data/news/feature-posts.ts"];
+  const slugs = [];
+  for (const file of files) {
+    const src = readFileSync(resolve(file), "utf8");
+    for (const match of src.matchAll(/^\s*slug:\s*"([^"]+)"/gm)) {
+      slugs.push(`/news/${match[1]}`);
+    }
+  }
+  return [...new Set(slugs)];
+}
 
 /** Localizable in the nav, but /de and /uk redirect to the English URL. */
 const SINGLE_URL = new Set(["/demo-practice"]);
@@ -76,6 +90,8 @@ function priorityFor(path) {
   if (path === "/terms" || path === "/privacy") return "0.3";
   if (path === "/important-features" || path === "/features/answer-sheet") return "0.6";
   if (path === "/parents") return "0.7";
+  if (path === "/demo-mock") return "0.9";
+  if (path === "/news" || path.startsWith("/news/")) return "0.6";
   if (path.startsWith("/demo-practice/") || path.startsWith("/wiso/demo-practice/")) return "0.7";
   return "0.8";
 }
@@ -120,9 +136,10 @@ function urlBlock(locPath, englishPath, withAlternates) {
 }
 
 function render() {
+  const publicPaths = [...PUBLIC_LOCALIZABLE, ...getNewsPostPaths()];
   const blocks = [];
   for (const lang of ["en", ...LOCALES]) {
-    for (const path of PUBLIC_LOCALIZABLE) {
+    for (const path of publicPaths) {
       if (lang !== "en" && SINGLE_URL.has(path)) continue;
       blocks.push(urlBlock(localize(path, lang), path, !SINGLE_URL.has(path)));
     }
