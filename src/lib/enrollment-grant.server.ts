@@ -13,7 +13,7 @@ export async function grantPaidEnrollment(input: {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
   // Prefer SECURITY DEFINER RPC (bypasses client-paid trigger via session flag).
-  const { error: rpcError } = await supabaseAdmin.rpc("grant_paid_enrollment", {
+  const { error: rpcError } = await (supabaseAdmin.rpc as any)("grant_paid_enrollment", {
     p_user_id: input.userId,
     p_product_slug: input.product.slug,
     p_product_name: input.product.name,
