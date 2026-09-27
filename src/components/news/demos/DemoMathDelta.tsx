@@ -2,7 +2,8 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { DemoCursor } from "./DemoCursor";
 import { DemoShell, type DemoProps } from "./DemoShell";
-import { useDemoPlayer } from "./useDemoPlayer";
+import { useDemoPlayer, type DemoPlayerApi } from "./useDemoPlayer";
+import type { CardSide } from "./DemoFlashDeck";
 
 const MATH = "#10b981";
 
@@ -16,11 +17,31 @@ const CASES = [
  * Algebra formula card on a ruled grid — not the economics chip deck.
  * Flip Δ, light the three cases, mark Know, then reveal vertex form.
  */
+async function swipeCard(
+  api: DemoPlayerApi,
+  dir: "left" | "right",
+  setExit: (v: CardSide) => void,
+  setEnter: (v: CardSide) => void,
+  swap: () => void,
+) {
+  setExit(dir);
+  setEnter(null);
+  await api.wait(300);
+  swap();
+  setExit(null);
+  setEnter(dir === "right" ? "left" : "right");
+  await api.flush();
+  await api.wait(360);
+  setEnter(null);
+}
+
 export function DemoMathDelta({ caption }: DemoProps) {
   const [flipped, setFlipped] = useState(false);
   const [idx, setIdx] = useState(0);
   const [know, setKnow] = useState(false);
   const [lit, setLit] = useState(-1);
+  const [exitDir, setExitDir] = useState<CardSide>(null);
+  const [enterFrom, setEnterFrom] = useState<CardSide>(null);
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
@@ -29,13 +50,15 @@ export function DemoMathDelta({ caption }: DemoProps) {
     setIdx(0);
     setKnow(false);
     setLit(-1);
+    setExitDir(null);
+    setEnterFrom(null);
     setFade(false);
     await api.wait(460);
 
     await api.moveTo('[data-d="card"]');
     await api.click();
     setFlipped(true);
-    await api.wait(760);
+    await api.wait(820);
     for (let i = 0; i < CASES.length; i++) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="case${i}"]`);
@@ -48,12 +71,12 @@ export function DemoMathDelta({ caption }: DemoProps) {
     await api.moveTo('[data-d="know"]');
     await api.click();
     setKnow(true);
-    await api.wait(520);
-    setIdx(1);
-    setFlipped(false);
-    setKnow(false);
-    setLit(-1);
-    await api.wait(480);
+    await swipeCard(api, "right", setExitDir, setEnterFrom, () => {
+      setIdx(1);
+      setFlipped(false);
+      setKnow(false);
+      setLit(-1);
+    });
 
     await api.moveTo('[data-d="card"]');
     await api.click();
@@ -67,7 +90,7 @@ export function DemoMathDelta({ caption }: DemoProps) {
         <div
           ref={scrollRef}
           className={cn(
-            "mx-auto flex h-[380px] max-w-md flex-col justify-center transition-opacity duration-500 sm:h-[420px]",
+            "mx-auto flex max-w-md flex-col transition-opacity duration-500",
             fade ? "opacity-0" : "opacity-100",
           )}
         >
@@ -84,10 +107,31 @@ export function DemoMathDelta({ caption }: DemoProps) {
             <span className="font-mono text-xs text-muted-foreground">{idx + 1} / 32</span>
           </div>
 
-          <div data-d="card" className={cn("news-uniq-flip-stage", flipped && "is-flipped")}>
-            <div className="news-uniq-flip-inner" style={{ minHeight: 210 }}>
+          <div className="flashcard-viewport relative overflow-x-clip overflow-y-visible py-1">
+            <div
+              data-d="card"
+              className={cn(
+                "flashcard-stage relative w-full",
+                exitDir
+                  ? "flashcard-exiting"
+                  : enterFrom === "left"
+                    ? "flashcard-entering-left"
+                    : enterFrom === "right"
+                      ? "flashcard-entering-right"
+                      : "",
+              )}
+              style={
+                exitDir
+                  ? {
+                      transform: `translateX(${exitDir === "right" ? "118%" : "-118%"}) rotate(${exitDir === "right" ? 16 : -16}deg)`,
+                    }
+                  : undefined
+              }
+            >
+            <div className="flashcard-flip w-full">
+            <div className={cn("flashcard-inner", flipped && "is-flipped")}>
               <div
-                className="news-uniq-flip-face news-uniq-flip-front overflow-hidden rounded-2xl border border-emerald-200 shadow-sm"
+                className="flashcard-face flashcard-front flex flex-col justify-center overflow-hidden rounded-2xl border border-emerald-200 shadow-sm"
                 style={{
                   backgroundImage:
                     "linear-gradient(#10b98114 1px, transparent 1px), linear-gradient(90deg, #10b98114 1px, transparent 1px)",
@@ -95,7 +139,7 @@ export function DemoMathDelta({ caption }: DemoProps) {
                   backgroundColor: "#f3fbf7",
                 }}
               >
-                <div className="flex h-full flex-col items-center justify-center p-6">
+                <div className="flex min-h-[180px] flex-col items-center justify-center p-6 sm:min-h-[200px]">
                   <p className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-800">
                     {idx === 0 ? "Quadratic" : "Parabola"}
                   </p>
@@ -105,7 +149,7 @@ export function DemoMathDelta({ caption }: DemoProps) {
                   <p className="mt-4 text-xs text-muted-foreground">Tap the grid to flip</p>
                 </div>
               </div>
-              <div className="news-uniq-flip-face news-uniq-flip-back rounded-2xl border border-emerald-300 bg-card p-5 shadow-sm">
+              <div className="flashcard-face flashcard-back flex flex-col justify-center rounded-2xl border border-emerald-300 bg-card p-5 shadow-sm">
                 {idx === 0 ? (
                   <div>
                     <p className="font-display text-sm font-bold">Discriminant cases</p>
@@ -128,7 +172,7 @@ export function DemoMathDelta({ caption }: DemoProps) {
                     </ul>
                   </div>
                 ) : (
-                  <div className="flex h-full flex-col items-center justify-center text-center">
+                  <div className="flex flex-col items-center justify-center text-center">
                     <Parabola />
                     <p className="mt-3 text-sm leading-relaxed">
                       Vertex at <span className="font-mono font-semibold">(h, k)</span>. Sign of a
@@ -137,6 +181,8 @@ export function DemoMathDelta({ caption }: DemoProps) {
                   </div>
                 )}
               </div>
+            </div>
+            </div>
             </div>
           </div>
 

@@ -2,11 +2,18 @@ import { useEffect, useRef, useState, type RefObject } from "react";
 
 export type DemoPlayerApi = {
   wait: (ms: number) => Promise<void>;
-  tween: (duration: number, onFrame: (eased: number) => void) => Promise<void>;
+  tween: (duration: number, onFrame: (eased: number) => void | Promise<void>) => Promise<void>;
   moveTo: (selector: string) => Promise<void>;
   click: () => Promise<void>;
   /** Re-read a live element and park the cursor on it (weight-handle chase). */
   snapTo: (selector: string) => void;
+  /**
+   * Wait until React has committed and the browser has laid out.
+   * Call after setState and before snapTo / measurement.
+   */
+  flush: () => Promise<void>;
+  /** Scroll the stage only as far as needed to show `selector` (no cursor glide). */
+  reveal: (selector: string) => Promise<void>;
   setCursorAt: (p: { x: number; y: number }) => void;
   cancelled: () => boolean;
   stage: () => HTMLDivElement | null;
@@ -60,19 +67,42 @@ export function useDemoPlayer(
       while (!cancelled && !visibleRef.current) await sleep(200);
     };
 
-    const tween = (duration: number, onFrame: (eased: number) => void) =>
+    const flush = () =>
       new Promise<void>((resolve) => {
+        requestAnimationFrame(() => {
+          if (cancelled) return resolve();
+          requestAnimationFrame(() => resolve());
+        });
+      });
+
+    const tween = (duration: number, onFrame: (eased: number) => void | Promise<void>) =>
+      new Promise<void>((resolve) => {
+        const finish = () => resolve();
+        const afterFrame = (result: void | Promise<void>, done: () => void) => {
+          if (result && typeof (result as Promise<void>).then === "function") {
+            void (result as Promise<void>).then(done);
+            return;
+          }
+          done();
+        };
         if (duration <= 0) {
-          onFrame(1);
-          return resolve();
+          afterFrame(onFrame(1), finish);
+          return;
         }
         const t0 = performance.now();
         const step = (now: number) => {
-          if (cancelled) return resolve();
+          if (cancelled) return finish();
           const t = Math.min(1, (now - t0) / duration);
-          onFrame(easeInOut(t));
-          if (t < 1) requestAnimationFrame(step);
-          else resolve();
+          let result: void | Promise<void>;
+          try {
+            result = onFrame(easeInOut(t));
+          } catch {
+            return finish();
+          }
+          afterFrame(result, () => {
+            if (cancelled || t >= 1) finish();
+            else requestAnimationFrame(step);
+          });
         };
         requestAnimationFrame(step);
       });
@@ -124,39 +154,66 @@ export function useDemoPlayer(
       };
     };
 
-    const moveTo = async (selector: string) => {
+    const scrollDeltaFor = (box: HTMLElement, el: HTMLElement) => {
+      const pad = 18;
+      const lb = box.getBoundingClientRect();
+      const eb = el.getBoundingClientRect();
+      if (eb.width === 0 && eb.height === 0) return 0;
+      if (eb.height + pad * 2 >= lb.height) return eb.top - lb.top - pad;
+      if (eb.top < lb.top + pad) return eb.top - (lb.top + pad);
+      if (eb.bottom > lb.bottom - pad) return eb.bottom - (lb.bottom - pad);
+      return 0;
+    };
+
+    const scrollToReveal = async (selector: string, followCursor: boolean) => {
       const stage = stageRef.current;
       const box = scrollRef.current;
+      if (!stage || !box) return;
+      const el = stage.querySelector<HTMLElement>(selector);
+      if (!el || !box.contains(el)) return;
+      const desired = box.scrollTop + scrollDeltaFor(box, el);
+      const maxScroll = Math.max(0, box.scrollHeight - box.clientHeight);
+      const clamped = Math.max(0, Math.min(desired, maxScroll));
+      if (Math.abs(clamped - box.scrollTop) <= 1) return;
+      const startCursor = { ...cursorPos.current };
+      const startScroll = box.scrollTop;
+      const change = clamped - startScroll;
+      await tween(640, (eased) => {
+        box.scrollTop = startScroll + change * eased;
+        if (!followCursor) {
+          setCursorAt(startCursor);
+          return;
+        }
+        const live = pointOf(selector);
+        if (!live) return;
+        setCursorAt({
+          x: startCursor.x + (live.x - startCursor.x) * eased,
+          y: startCursor.y + (live.y - startCursor.y) * eased,
+        });
+      });
+    };
+
+    const moveTo = async (selector: string) => {
+      await flush();
+      if (cancelled) return;
+      const stage = stageRef.current;
       if (!stage) return;
       const el = stage.querySelector<HTMLElement>(selector);
       if (!el) return;
 
-      if (box && box.contains(el)) {
-        const lb = box.getBoundingClientRect();
-        const eb0 = el.getBoundingClientRect();
-        const desired = box.scrollTop + (eb0.top - lb.top) - lb.height / 2 + eb0.height / 2;
-        const clamped = Math.max(0, Math.min(desired, box.scrollHeight - box.clientHeight));
-        if (Math.abs(clamped - box.scrollTop) > 1) {
-          const startCursor = { ...cursorPos.current };
-          const startScroll = box.scrollTop;
-          const change = clamped - startScroll;
-          await tween(700, (eased) => {
-            box.scrollTop = startScroll + change * eased;
-            const live = pointOf(selector);
-            if (!live) return;
-            setCursorAt({
-              x: startCursor.x + (live.x - startCursor.x) * eased,
-              y: startCursor.y + (live.y - startCursor.y) * eased,
-            });
-          });
-        }
-      }
+      await scrollToReveal(selector, true);
       if (cancelled) return;
-      await new Promise<void>((r) => requestAnimationFrame(() => r()));
+      await flush();
       const target = pointOf(selector);
       if (!target) return;
       await glideCursor(target);
       await wait(360);
+    };
+
+    const reveal = async (selector: string) => {
+      await flush();
+      if (cancelled) return;
+      await scrollToReveal(selector, false);
     };
 
     const click = async () => {
@@ -178,6 +235,8 @@ export function useDemoPlayer(
       moveTo,
       click,
       snapTo,
+      flush,
+      reveal,
       setCursorAt,
       cancelled: () => cancelled,
       stage: () => stageRef.current,

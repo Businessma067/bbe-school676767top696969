@@ -1,6 +1,7 @@
 export type { DemoProps } from "./DemoShell";
 export { DemoShell } from "./DemoShell";
 export { DemoCursor } from "./DemoCursor";
+export { DemoFlashCard, DemoSortButtons } from "./DemoFlashDeck";
 export { useDemoPlayer } from "./useDemoPlayer";
 export { DemoStatementTable, DEMO_STATEMENT_LETTERS, demoCorrectCount } from "./DemoStatementTable";
 
