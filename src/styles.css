@@ -1529,6 +1529,84 @@ body.flashcard-swiping {
   animation: news-demo-fade-in var(--news-demo-cycle) ease-in-out infinite;
 }
 
+/* Real flashcard-* faces driven by a looping flip (compact height in news) */
+.news-demo-flash-stage .flashcard-inner {
+  min-height: 200px;
+}
+
+@media (min-width: 640px) {
+  .news-demo-flash-stage .flashcard-inner {
+    min-height: 230px;
+  }
+}
+
+.news-demo-flash-inner {
+  animation: news-demo-card-flip 6.5s cubic-bezier(0.45, 0.05, 0.2, 1) infinite;
+  transition: none;
+}
+
+.news-demo-match-live {
+  animation: news-demo-match-live 6s ease-in-out infinite;
+}
+
+.news-demo-match-check {
+  display: none;
+}
+
+.news-demo-match-live .news-demo-match-dot {
+  animation: news-demo-match-dot 6s ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+.news-demo-match-live .news-demo-match-check {
+  animation: news-demo-match-check-show 6s ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+.news-demo-match-live .news-demo-match-idle {
+  animation: news-demo-match-idle-hide 6s ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+.news-demo-tutor-face-swap {
+  position: relative;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.news-demo-tutor-face-idle,
+.news-demo-tutor-face-happy {
+  position: absolute;
+  inset: 0;
+}
+
+.news-demo-tutor-face-idle {
+  animation: news-demo-tutor-face-idle 6.5s ease-in-out infinite;
+}
+
+.news-demo-tutor-face-happy {
+  animation: news-demo-tutor-face-happy 6.5s ease-in-out infinite;
+}
+
+.news-demo-tutor-bubble-ask {
+  animation: news-demo-tutor-bubble-ask 6.5s ease-in-out infinite;
+}
+
+.news-demo-tutor-bubble-ok {
+  position: absolute;
+  inset: 0;
+  animation: news-demo-tutor-bubble-ok 6.5s ease-in-out infinite;
+}
+
+.news-demo-tutor-letter-text {
+  animation: news-demo-tutor-letter-text 6.5s ease-in-out infinite;
+}
+
+.news-demo-tutor-letter-check {
+  position: absolute;
+  animation: news-demo-tutor-letter-check 6.5s ease-in-out infinite;
+}
+
 .news-demo-check-accent {
   border-color: color-mix(in oklab, var(--foreground) 28%, transparent);
   background: transparent;
@@ -1575,6 +1653,7 @@ body.flashcard-swiping {
 }
 
 .news-demo-tutor-letter-pick {
+  position: relative;
   animation: news-demo-tutor-letter-pick 6.5s ease-in-out infinite;
 }
 
@@ -2090,6 +2169,137 @@ body.flashcard-swiping {
   }
 }
 
+@keyframes news-demo-match-live {
+  0%,
+  12% {
+    border-color: var(--border);
+    background: var(--card);
+    box-shadow: none;
+    color: inherit;
+  }
+  24%,
+  40% {
+    border-color: transparent;
+    background: color-mix(in oklab, var(--news-demo-accent) 8%, white);
+    box-shadow: 0 0 0 2px var(--news-demo-accent);
+  }
+  54%,
+  100% {
+    border-color: #6ee7b7;
+    background: color-mix(in oklab, #10b981 10%, white);
+    box-shadow: none;
+    color: var(--foreground);
+  }
+}
+
+@keyframes news-demo-match-dot {
+  0%,
+  48% {
+    border-color: var(--border);
+    background: var(--background);
+    color: var(--muted-foreground);
+  }
+  58%,
+  100% {
+    border-color: #10b981;
+    background: #10b981;
+    color: white;
+  }
+}
+
+@keyframes news-demo-match-check-show {
+  0%,
+  52% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  58%,
+  100% {
+    opacity: 1;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+@keyframes news-demo-match-idle-hide {
+  0%,
+  52% {
+    opacity: 1;
+  }
+  58%,
+  100% {
+    opacity: 0;
+    font-size: 0;
+  }
+}
+
+@keyframes news-demo-tutor-face-idle {
+  0%,
+  52% {
+    opacity: 1;
+  }
+  58%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes news-demo-tutor-face-happy {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  58%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes news-demo-tutor-bubble-ask {
+  0%,
+  52% {
+    opacity: 1;
+  }
+  58%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes news-demo-tutor-bubble-ok {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  58%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes news-demo-tutor-letter-text {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  52%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes news-demo-tutor-letter-check {
+  0%,
+  48% {
+    opacity: 0;
+  }
+  52%,
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .news-demo-fade-in,
   .news-demo-row,
@@ -2099,18 +2309,29 @@ body.flashcard-swiping {
   .news-demo-count,
   .news-demo-cta,
   .news-demo-card,
+  .news-demo-flash-inner,
   .news-demo-match-chip,
   .news-demo-match-line,
   .news-demo-match-site,
+  .news-demo-match-live,
   .news-demo-match-tick,
+  .news-demo-match-live .news-demo-match-dot,
+  .news-demo-match-live .news-demo-match-check,
+  .news-demo-match-live .news-demo-match-idle,
   .news-demo-timer,
   .news-demo-tutor-q,
   .news-demo-tutor-choice,
   .news-demo-tutor-choice-pick,
   .news-demo-tutor-choice-site-pick,
   .news-demo-tutor-letter-pick,
+  .news-demo-tutor-letter-text,
+  .news-demo-tutor-letter-check,
   .news-demo-tutor-progress,
   .news-demo-tutor-ok,
+  .news-demo-tutor-face-idle,
+  .news-demo-tutor-face-happy,
+  .news-demo-tutor-bubble-ask,
+  .news-demo-tutor-bubble-ok,
   .news-demo-econ-row,
   .news-demo-econ-mark,
   .news-demo-true-box,
@@ -2118,6 +2339,29 @@ body.flashcard-swiping {
   .news-demo-true-box-on svg,
   .news-demo-weight-dot {
     animation: none !important;
+  }
+
+  .news-demo-flash-inner.is-flipped,
+  .news-demo-flash-inner {
+    transform: none;
+  }
+
+  .news-demo-tutor-face-happy,
+  .news-demo-tutor-bubble-ok,
+  .news-demo-tutor-letter-check {
+    opacity: 0 !important;
+  }
+
+  .news-demo-tutor-face-idle,
+  .news-demo-tutor-bubble-ask,
+  .news-demo-tutor-letter-text,
+  .news-demo-match-live .news-demo-match-idle {
+    opacity: 1 !important;
+  }
+
+  .news-demo-match-live {
+    border-color: #6ee7b7 !important;
+    background: color-mix(in oklab, #10b981 10%, white) !important;
   }
 
   .news-demo-fade-in,
