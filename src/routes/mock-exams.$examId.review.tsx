@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG, subjectLabel } from "@/config/scoring-config";
-import { isCustomExamId } from "@/lib/mock-exams";
+import { isCustomExamId, isFreeDemoMockId } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { getWi2Rates, statementPointDelta } from "@/lib/scoring";
@@ -24,6 +24,8 @@ import {
   ExamStatementText,
 } from "@/components/mock-exam/ExamQuestionContent";
 import { storeExamTrack } from "@/lib/exam-track";
+import { navItemsForAccess } from "@/config/site-nav";
+import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { Check, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -106,6 +108,7 @@ function ReviewViewToggle({
 
 function ReviewExamPage() {
   const { examId } = Route.useParams();
+  const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
   const [exam, setExam] = useState<MockExamSummary | null>(null);
   const [questions, setQuestions] = useState<ExamQuestion[]>([]);
   const [pointsTotal, setPointsTotal] = useState<number>(SCORING_CONFIG.examTotalPoints);
@@ -220,11 +223,16 @@ function ReviewExamPage() {
 
   const current = analytics.tasks[currentIndex] ?? null;
   const de = examTrack === "wiso";
+  const headerNavItems = navItemsForAccess(
+    { hasLite, hasFull, hasWisoFull },
+    examTrack,
+  );
 
   return (
     <div className={PRACTICE_PAGE}>
       <SiteHeader
         maxWidthClassName="max-w-none"
+        navItems={headerNavItems}
         left={de ? <TrackBrandMark forceTrack="wiso" /> : undefined}
         hideTrackSwitcher={de}
         actions={
@@ -235,8 +243,12 @@ function ReviewExamPage() {
                   ? "/wiso/mock-builder"
                   : "/products/custom-mock-builder"
                 : de
-                  ? "/wiso/mock-exams"
-                  : "/mock-exams"
+                  ? isFreeDemoMockId(examId)
+                    ? "/wiso/demo-mock"
+                    : "/wiso/mock-exams"
+                  : isFreeDemoMockId(examId)
+                    ? "/demo-mock"
+                    : "/mock-exams"
             }
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
@@ -244,9 +256,13 @@ function ReviewExamPage() {
               ? de
                 ? "← WiSo Mock-Builder"
                 : "← Custom Mock Builder"
-              : de
-                ? "← Alle Probeprüfungen"
-                : "← All mock exams"}
+              : isFreeDemoMockId(examId)
+                ? de
+                  ? "← Demo-Probeprüfung"
+                  : "← Demo Exam"
+                : de
+                  ? "← Alle Probeprüfungen"
+                  : "← All mock exams"}
           </Link>
         }
       />
@@ -254,7 +270,7 @@ function ReviewExamPage() {
         <div className="sticky top-16 z-20 -mx-1 mb-6 flex flex-col gap-3 rounded-2xl border border-border bg-background/95 px-3 py-3 shadow-sm backdrop-blur-sm sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              {de ? "Ansicht" : "View"}
+              {exam?.title ?? (de ? "Probeprüfung" : "Mock Exam")}
             </p>
             <p className="mt-0.5 text-sm text-muted-foreground">
               {de
@@ -405,68 +421,70 @@ function TaskReviewWorkspace({
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-7">
           <ExamQuestionBody q={q} emphasized />
 
-          <div className="mt-6 overflow-visible rounded-xl border border-border">
-            <div className="flex items-center gap-3 border-b border-border bg-secondary/50 px-4 py-2 text-xs text-muted-foreground">
-              <span className="w-6">#</span>
-              <span className="flex-1">{de ? "Aussage" : "Statement"}</span>
-              <span className="w-16 text-center sm:w-20">{de ? "Deine" : "Yours"}</span>
-              <span className="w-16 text-center sm:w-20">{de ? "Schlüssel" : "Key"}</span>
-              <span className="w-16 text-right sm:w-20">{de ? "Punkte" : "Points"}</span>
-            </div>
-            {q.statements.map((s, si) => {
-              const result = current.statements[si]!;
-              const judgedOk = result.userMarked === result.isTrue;
-              const delta = deltas[si] ?? 0;
-              return (
-                <div
-                  key={s.id}
-                  className={cn(
-                    "flex items-start gap-2 border-b border-border px-3 py-3.5 last:border-b-0 sm:gap-3 sm:px-4",
-                    judgedOk
-                      ? "bg-secondary/25 shadow-[inset_3px_0_0_0_var(--caramel-deep)]"
-                      : "bg-card",
-                  )}
-                >
-                  <span className="mt-0.5 flex w-6 shrink-0 items-center justify-center">
-                    {judgedOk ? (
-                      <Check className="h-4 w-4 text-caramel-deep" aria-label="Correct judgment" />
-                    ) : (
-                      <X className="h-4 w-4 text-taupe" aria-label="Incorrect judgment" />
+          <div className="mt-6 overflow-x-auto rounded-xl border border-border">
+            <div className="min-w-[36rem]">
+              <div className="flex items-center gap-3 border-b border-border bg-secondary/50 px-4 py-2 text-xs text-muted-foreground">
+                <span className="w-6 shrink-0">#</span>
+                <span className="min-w-0 flex-1">{de ? "Aussage" : "Statement"}</span>
+                <span className="w-16 shrink-0 text-center sm:w-20">{de ? "Deine" : "Yours"}</span>
+                <span className="w-16 shrink-0 text-center sm:w-20">{de ? "Schlüssel" : "Key"}</span>
+                <span className="w-16 shrink-0 text-right sm:w-20">{de ? "Punkte" : "Points"}</span>
+              </div>
+              {q.statements.map((s, si) => {
+                const result = current.statements[si]!;
+                const judgedOk = result.userMarked === result.isTrue;
+                const delta = deltas[si] ?? 0;
+                return (
+                  <div
+                    key={s.id}
+                    className={cn(
+                      "flex items-start gap-2 border-b border-border px-3 py-3.5 last:border-b-0 sm:gap-3 sm:px-4",
+                      judgedOk
+                        ? "bg-secondary/25 shadow-[inset_3px_0_0_0_var(--caramel-deep)]"
+                        : "bg-card",
                     )}
-                  </span>
-                  <p className="min-w-0 flex-1 text-sm leading-relaxed [overflow-wrap:anywhere]">
-                    <span className="mr-2 font-semibold text-taupe">
-                      {String.fromCharCode(65 + si)}.
+                  >
+                    <span className="mt-0.5 flex w-6 shrink-0 items-center justify-center">
+                      {judgedOk ? (
+                        <Check className="h-4 w-4 text-caramel-deep" aria-label="Correct judgment" />
+                      ) : (
+                        <X className="h-4 w-4 text-taupe" aria-label="Incorrect judgment" />
+                      )}
                     </span>
-                    <ExamStatementText q={q} text={s.text} />
-                  </p>
-                  <span
-                    className={cn(
-                      "w-16 shrink-0 text-center text-xs font-semibold sm:w-20",
-                      result.userMarked ? "text-foreground" : "text-muted-foreground",
-                    )}
-                  >
-                    {result.userMarked ? (de ? "Richtig" : "True") : "—"}
-                  </span>
-                  <span className="w-16 shrink-0 text-center text-xs font-semibold sm:w-20">
-                    {result.isTrue ? (de ? "Richtig" : "True") : de ? "Falsch" : "False"}
-                  </span>
-                  <span
-                    className={cn(
-                      "w-16 shrink-0 text-right font-mono text-sm font-bold tabular-nums sm:w-20",
-                      delta !== 0 ? "text-caramel-deep" : "text-muted-foreground",
-                    )}
-                  >
-                    {formatDelta(delta)}
-                  </span>
-                </div>
-              );
-            })}
+                    <p className="min-w-0 flex-1 text-sm leading-relaxed break-words">
+                      <span className="mr-2 font-semibold text-taupe">
+                        {String.fromCharCode(65 + si)}.
+                      </span>
+                      <ExamStatementText q={q} text={s.text} />
+                    </p>
+                    <span
+                      className={cn(
+                        "w-16 shrink-0 text-center text-xs font-semibold sm:w-20",
+                        result.userMarked ? "text-foreground" : "text-muted-foreground",
+                      )}
+                    >
+                      {result.userMarked ? (de ? "Richtig" : "True") : "—"}
+                    </span>
+                    <span className="w-16 shrink-0 text-center text-xs font-semibold sm:w-20">
+                      {result.isTrue ? (de ? "Richtig" : "True") : de ? "Falsch" : "False"}
+                    </span>
+                    <span
+                      className={cn(
+                        "w-16 shrink-0 text-right font-mono text-sm font-bold tabular-nums sm:w-20",
+                        delta !== 0 ? "text-caramel-deep" : "text-muted-foreground",
+                      )}
+                    >
+                      {formatDelta(delta)}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
 
-      <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,28rem)] xl:w-[34rem] 2xl:w-[38rem]">
+      <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,22rem)] xl:w-[26rem] 2xl:w-[28rem]">
         <div className="flex flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:max-h-[calc(100vh-5rem)] lg:overflow-hidden">
           <div className="border-b border-border px-5 py-3.5">
             <p className="font-display text-sm font-semibold">

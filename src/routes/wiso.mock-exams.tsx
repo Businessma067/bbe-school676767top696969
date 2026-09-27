@@ -353,7 +353,11 @@ export function WisoMockExamsPage() {
             Zeit abläuft.
           </p>
 
-          <ExamStartAnswerMode withAnswerSheet={withAnswerSheet} onChange={setWithAnswerSheet} />
+          <ExamStartAnswerMode
+            withAnswerSheet={withAnswerSheet}
+            onChange={setWithAnswerSheet}
+            locale="de"
+          />
 
           <div className="mt-1 flex flex-col gap-2">
             <button
