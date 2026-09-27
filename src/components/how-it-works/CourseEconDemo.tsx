@@ -114,7 +114,7 @@ export function CourseEconDemo() {
             {score}/{TASK.answerKey.length} correct
           </span>
         ) : (
-          <span data-d="expl" className="invisible">
+          <span className="invisible" aria-hidden>
             Explanation
           </span>
         )}

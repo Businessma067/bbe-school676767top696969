@@ -360,7 +360,7 @@ export function CourseMatchDemo() {
             <path key={line.id} d={line.d} fill="none" stroke={ACCENT} strokeWidth={2.5} strokeLinecap="round" opacity={0.85} />
           ))}
         </svg>
-        <div className="relative z-0 grid grid-cols-2 gap-x-10 gap-y-2 sm:gap-x-14">
+        <div className="relative z-0 grid grid-cols-2 items-start gap-x-8 gap-y-2 sm:gap-x-14">
           <div>
             <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-taupe">Concepts</p>
             <ul className="space-y-2">
@@ -449,7 +449,7 @@ function MatchCard({
         >
           {matched ? <Check className="h-3 w-3" /> : "·"}
         </span>
-        <FlashcardMath text={text} className="min-w-0 flex-1" />
+        <FlashcardMath text={text} className="line-clamp-2 min-w-0 flex-1" />
       </div>
     </li>
   );
@@ -575,7 +575,7 @@ export function CourseTutorDemo() {
                     <div
                       data-d={`c${choiceIndex}`}
                       className={cn(
-                        "flex items-start gap-2 rounded-xl border px-2.5 py-2 text-left text-[13px] leading-snug",
+                        "flex min-h-11 items-center gap-2 rounded-xl border px-2.5 py-2 text-left text-[13px] leading-snug",
                         showCorrect
                           ? "border-emerald-300 bg-emerald-50/90"
                           : picked != null
@@ -585,7 +585,7 @@ export function CourseTutorDemo() {
                     >
                       <span
                         className={cn(
-                          "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold",
+                          "flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold",
                           showCorrect
                             ? "border-emerald-500 bg-emerald-500 text-white"
                             : "border-border bg-background text-muted-foreground",
@@ -593,26 +593,27 @@ export function CourseTutorDemo() {
                       >
                         {showCorrect ? <Check className="h-3 w-3" /> : letter}
                       </span>
-                      <FlashcardMath text={choice} className="min-w-0 flex-1" />
+                      <FlashcardMath text={choice} className="line-clamp-2 min-w-0 flex-1" />
                     </div>
                   </li>
                 );
               })}
             </ul>
-            {picked != null ? (
-              <div className="rounded-xl border border-emerald-200 bg-emerald-50/70 px-3 py-2 text-sm">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Reveal</p>
-                <p className="mt-1 font-semibold">{question.revealTerm}</p>
-                <p className="mt-1 text-[12px] text-muted-foreground">{question.revealExplanation}</p>
-                <span
-                  data-d="next"
-                  className="mt-2 inline-flex rounded-md px-3 py-1.5 text-xs font-semibold text-white"
-                  style={{ backgroundColor: ACCENT }}
-                >
-                  {index + 1 >= TUTOR_QUESTIONS.length ? "See results →" : "Next question →"}
-                </span>
-              </div>
-            ) : null}
+            <div className="flex items-center justify-between gap-2 pt-1">
+              <p className="min-h-4 text-[12px] font-semibold text-foreground">
+                {picked != null ? question.revealTerm : "\u00a0"}
+              </p>
+              <span
+                data-d="next"
+                className={cn(
+                  "inline-flex shrink-0 rounded-md px-3 py-1.5 text-xs font-semibold text-white",
+                  picked == null && "opacity-40",
+                )}
+                style={{ backgroundColor: ACCENT }}
+              >
+                {index + 1 >= TUTOR_QUESTIONS.length ? "See results →" : "Next question →"}
+              </span>
+            </div>
           </div>
         </div>
       )}
