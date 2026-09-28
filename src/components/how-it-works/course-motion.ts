@@ -85,9 +85,10 @@ function readingPoint(stage: HTMLElement, panel: HTMLElement) {
 }
 
 /**
- * A fast pass over part of a reader. Stops before the bottom of the panel.
+ * A pass over part of a reader. Stops before the bottom of the panel.
+ * A longer excerpt gets a little more time, so the scroll stays even.
  */
-export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fraction = 0.72) {
+export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fraction = 0.8) {
   await api.flush();
   const stage = api.stage();
   const panel = stage?.querySelector<HTMLElement>(panelSelector);
@@ -98,7 +99,7 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const dest = max * fraction;
   if (dest < 8) {
-    await api.wait(380);
+    await api.wait(480);
     return;
   }
   const cursor = stage.querySelector<HTMLElement>("[data-cx]");
@@ -106,7 +107,8 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
     x: Number(cursor?.dataset.cx ?? 36),
     y: Number(cursor?.dataset.cy ?? 36),
   };
-  await api.tween(1380, (eased) => {
+  const duration = Math.round(Math.min(3000, Math.max(1750, dest * 0.92)));
+  await api.tween(duration, (eased) => {
     panel.scrollTop = dest * eased;
     const spot = readingPoint(stage, panel);
     if (!spot) return;

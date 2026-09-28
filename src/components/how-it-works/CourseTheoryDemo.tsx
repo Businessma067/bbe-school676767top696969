@@ -10,28 +10,45 @@ const READ = [1, 10, 11] as const;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
-/** Opening of the chapter through part of the first numbered section, unedited. */
+/** Opening of the chapter: the first section, plus a short step into the next one. */
 function theoryPart(markdown: string): string {
   const lines = markdown.split("\n");
-  let sectionStart = -1;
-  let sectionEnd = lines.length;
+  const heads: number[] = [];
   for (let i = 0; i < lines.length; i++) {
-    if (!/^##\s+\d+\.\d+\b/.test(lines[i] ?? "")) continue;
-    if (sectionStart < 0) sectionStart = i;
-    else {
-      sectionEnd = i;
-      break;
-    }
+    if (/^##\s+\d+\.\d+\b/.test(lines[i] ?? "")) heads.push(i);
   }
-  const cap = sectionStart < 0 ? 80 : sectionStart + 72;
-  let cut = Math.min(sectionEnd, cap);
-  if (cut < sectionEnd) {
-    const dollars = lines.slice(0, cut).join("\n").match(/\$\$/g)?.length ?? 0;
-    if (dollars % 2 === 1) {
-      while (cut < sectionEnd && !(lines[cut] ?? "").includes("$$")) cut += 1;
-      if (cut < sectionEnd) cut += 1;
+  const sectionStart = heads[0] ?? -1;
+  const stopBefore = heads[2] ?? lines.length;
+  const cap = sectionStart < 0 ? 116 : sectionStart + 108;
+  let cut = Math.min(stopBefore, cap, lines.length);
+  const floor = sectionStart < 0 ? 1 : sectionStart + 8;
+  const oddMath = () => (lines.slice(0, cut).join("\n").match(/\$\$/g)?.length ?? 0) % 2 === 1;
+  if (cut < stopBefore && oddMath()) {
+    while (cut < stopBefore && !(lines[cut] ?? "").includes("$$")) cut += 1;
+    if (cut < stopBefore) cut += 1;
+  }
+  const snap = () => {
+    while (cut > floor && (lines[cut - 1] ?? "").trim() !== "") cut -= 1;
+  };
+  const lastText = () => {
+    let last = cut - 1;
+    while (last >= 0 && (lines[last] ?? "").trim() === "") last -= 1;
+    return last;
+  };
+  const dangling = (index: number) => {
+    const text = (lines[index] ?? "").trim();
+    return /^#{1,6}\s/.test(text) || /^\*\*[^*]+\*\*\s*$/.test(text) || /[,:]$/.test(text);
+  };
+  if (cut < lines.length) {
+    snap();
+    while (cut > floor && dangling(lastText())) {
+      cut = lastText();
+      snap();
     }
-    while (cut > (sectionStart < 0 ? 1 : sectionStart + 8) && (lines[cut - 1] ?? "").trim() !== "") cut -= 1;
+    while (cut > floor && oddMath()) {
+      cut -= 1;
+      snap();
+    }
   }
   return lines.slice(0, cut).join("\n").trim();
 }
@@ -113,7 +130,7 @@ export function CourseTheoryDemo() {
       await api.flush();
       await api.wait(280);
       await skimPanel(api, '[data-d="theory-scroll"]');
-      await api.wait(120);
+      await api.wait(200);
       await api.moveTo('[data-d="chapters"]', 80);
       await api.click(() => setOpen(null));
       await api.flush();
