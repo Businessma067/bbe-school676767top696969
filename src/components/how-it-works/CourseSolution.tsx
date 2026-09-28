@@ -40,19 +40,18 @@ export function CourseSolution({
     <>
       <div
         className={cn(
-          "pointer-events-none absolute inset-0 z-[5] bg-black/75 transition-opacity duration-700 ease-in-out",
-          dimmed ? "opacity-100" : "opacity-0",
+          "pointer-events-none absolute inset-0 z-[5] bg-black/75 ease-in-out",
+          dimmed ? "opacity-100 transition-opacity duration-700" : "opacity-0 transition-none",
         )}
       />
       <div
         className={cn(
-          "absolute inset-y-0 right-0 z-10 w-full transition-transform duration-[900ms] ease-in-out sm:w-[54%]",
-          open ? "translate-x-0" : "pointer-events-none translate-x-[105%]",
+          "absolute inset-y-0 right-0 z-10 w-full ease-in-out sm:w-[54%]",
+          open
+            ? "translate-x-0 transition-transform duration-[900ms]"
+            : "pointer-events-none translate-x-[105%] transition-none",
         )}
       >
-        {open && full ? (
-          <div data-d="read-spot" className="pointer-events-none absolute bottom-[34%] left-[22%] z-20 h-3 w-3" />
-        ) : null}
         <div
           data-d="expl-scroll"
           className="practice-scroll h-full overflow-y-auto border-l border-border bg-card p-4 shadow-2xl sm:p-5"
@@ -120,11 +119,13 @@ export function CourseSolution({
                 >
                   <div data-d={`e${i}`} className="pointer-events-none absolute left-8 top-7 h-2 w-2" />
                   {math ? (
-                    <div className="text-[13px] leading-relaxed text-foreground/90">
+                    <div data-d={`prose${i}`} className="text-[13px] leading-relaxed text-foreground/90">
                       <FlashcardMath text={prose} />
                     </div>
                   ) : (
-                    <ExplanationProse text={prose} className="text-[13px]" />
+                    <div data-d={`prose${i}`}>
+                      <ExplanationProse text={prose} className="text-[13px]" />
+                    </div>
                   )}
                   {locateAt === i ? (
                     <span data-d="show" className={cn("mt-3", practiceInlineLocateButtonClass(located))}>

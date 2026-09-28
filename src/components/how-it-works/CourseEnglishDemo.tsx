@@ -106,11 +106,11 @@ export function CourseEnglishDemo() {
       />
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3 pb-2">
         {!checked ? (
-          <span data-d="submit" className={practiceSubmitButtonClass}>
+          <span data-d="submit" className={`${practiceSubmitButtonClass} min-w-56`}>
             Check Answers / Submit
           </span>
         ) : (
-          <span data-d="expl" className={practiceExplanationToggleClass(expl)}>
+          <span data-d="expl" className={`${practiceExplanationToggleClass(expl)} min-w-56`}>
             {expl ? "Hide Explanation" : "Explanation"}
           </span>
         )}

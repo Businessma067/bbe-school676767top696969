@@ -178,7 +178,7 @@ export function CourseFlashDemo() {
     setFade(false);
     await api.wait(280);
 
-    await api.moveTo('[data-d="card"]', 200);
+    await api.moveTo('[data-d="term"]', 200);
     await api.click(() => setFlipped(true));
     await api.wait(540);
 
@@ -240,7 +240,7 @@ export function CourseFlashDemo() {
                   <Layers className="h-3 w-3" />
                   Term
                 </div>
-                <div className="flex h-full items-center justify-center px-2 pt-6 text-center">
+                <div data-d="term" className="flex h-full items-center justify-center px-3 text-center">
                   <FlashcardMath text={card.term} className="font-display text-xl font-bold tracking-tight sm:text-2xl" />
                 </div>
               </div>
@@ -249,7 +249,7 @@ export function CourseFlashDemo() {
                   <Layers className="h-3 w-3" />
                   Explanation
                 </div>
-                <div className="flex h-full items-center justify-center px-2 pt-6 text-center">
+                <div className="flex h-full items-center justify-center px-3 text-center">
                   <FlashcardMath text={card.explanation} className="text-[13px] leading-snug" />
                 </div>
               </div>
@@ -427,7 +427,7 @@ function MatchCard({
         data-match-side={side}
         data-match-id={pairId}
         className={cn(
-          "flex items-start gap-2 rounded-xl border px-2.5 py-2 text-left text-[12px] leading-snug sm:text-[13px]",
+          "flex h-12 items-center gap-2 rounded-xl border px-2.5 text-left text-[12px] leading-snug sm:text-[13px]",
           matched
             ? "border-emerald-300 bg-emerald-50/90"
             : selected
@@ -493,8 +493,11 @@ export function CourseTutorDemo() {
     });
     await api.wait(420);
     await api.moveTo('[data-d="next"]', 150);
-    await api.click(() => setFinished(true));
-    await api.wait(800);
+    await api.click();
+    setFinished(true);
+    await api.flush();
+    await api.moveTo('[data-d="result"]', 80);
+    await api.wait(700);
   }, []);
 
   const question = TUTOR_QUESTIONS[index] ?? TUTOR_QUESTIONS[0];
@@ -534,7 +537,7 @@ export function CourseTutorDemo() {
               </div>
             </div>
           </div>
-          <p className="mt-4 text-center font-display text-3xl font-bold">
+          <p data-d="result" className="mt-4 text-center font-display text-3xl font-bold">
             {score}/{TUTOR_QUESTIONS.length}
           </p>
           <p className="text-center text-sm text-muted-foreground">{pct}% correct</p>

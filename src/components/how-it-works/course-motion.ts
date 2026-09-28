@@ -57,21 +57,65 @@ export function fullExplanation(raw: string): string {
   return expl;
 }
 
-/** Steady read of a sheet: one ease from the top to the bottom, pointer stays put. */
+function readingPoint(stage: HTMLElement, panel: HTMLElement) {
+  const sr = stage.getBoundingClientRect();
+  const pr = panel.getBoundingClientRect();
+  const viewTop = Math.max(pr.top, sr.top);
+  const viewBottom = Math.min(pr.bottom, sr.bottom);
+  const lines = [...panel.querySelectorAll<HTMLElement>("[data-d^='prose']")];
+  const mid = (viewTop + viewBottom) / 2;
+  let best: { x: number; y: number; dist: number } | null = null;
+  for (const node of lines) {
+    const box = node.getBoundingClientRect();
+    const top = Math.max(box.top, viewTop + 6);
+    const bottom = Math.min(box.bottom, viewBottom - 6);
+    const left = Math.max(box.left, sr.left + 8);
+    const right = Math.min(box.right, Math.min(pr.right, sr.right) - 8);
+    if (bottom - top < 8 || right - left < 8) continue;
+    const y = (top + bottom) / 2;
+    const dist = Math.abs(y - mid);
+    if (best && dist >= best.dist) continue;
+    best = {
+      x: left - sr.left + Math.min((right - left) * 0.32, 88) - 5,
+      y: y - sr.top - 3,
+      dist,
+    };
+  }
+  return best;
+}
+
+/**
+ * Steady read of a sheet. The pointer starts on the first line and stays
+ * over the words while the sheet eases from top to bottom.
+ */
 export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
   await api.flush();
-  const panel = api.stage()?.querySelector<HTMLElement>(panelSelector);
-  if (!panel) return;
+  const stage = api.stage();
+  const panel = stage?.querySelector<HTMLElement>(panelSelector);
+  if (!panel || !stage) return;
   panel.scrollTop = 0;
   await api.flush();
+  await api.moveTo('[data-d="prose0"]', 40);
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   if (max < 8) {
     await api.wait(700);
     return;
   }
+  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
+  const from = {
+    x: Number(cursor?.dataset.cx ?? 36),
+    y: Number(cursor?.dataset.cy ?? 36),
+  };
   const duration = Math.max(3200, Math.min(7000, max * 0.62));
   await api.tween(duration, (eased) => {
     panel.scrollTop = max * eased;
+    const spot = readingPoint(stage, panel);
+    if (!spot) return;
+    const blend = Math.min(1, eased / 0.16);
+    api.setCursorAt({
+      x: from.x + (spot.x - from.x) * blend,
+      y: from.y + (spot.y - from.y) * blend,
+    });
   });
 }
 

@@ -5,9 +5,11 @@ import { cn } from "@/lib/utils";
 export function DemoCursor({
   cursorRef,
   clicking,
+  hidden = false,
 }: {
   cursorRef: RefObject<HTMLDivElement | null>;
   clicking: boolean;
+  hidden?: boolean;
 }) {
   // Restore the imperative transform after every render. A style prop here
   // would snap the pointer back to the origin on each click re-render.
@@ -24,7 +26,10 @@ export function DemoCursor({
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none absolute left-0 top-0 z-30 will-change-transform"
+      className={cn(
+        "pointer-events-none absolute left-0 top-0 z-30 will-change-transform transition-opacity duration-200",
+        hidden ? "opacity-0" : "opacity-100",
+      )}
       aria-hidden
     >
       <div

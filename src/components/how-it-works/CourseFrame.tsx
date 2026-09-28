@@ -28,7 +28,7 @@ export function CourseFrame({
       <div
         ref={scrollRef}
         className={cn(
-          "news-uniq-scroll h-full overflow-y-auto overscroll-contain p-3 transition-opacity duration-500 sm:p-5",
+          "news-uniq-scroll h-full overflow-y-auto overscroll-contain px-3 pb-24 pt-3 transition-opacity duration-500 sm:px-5 sm:pb-24 sm:pt-5",
           fade ? "opacity-0" : "opacity-100",
           lane && "sm:pr-[58%]",
         )}
@@ -36,7 +36,7 @@ export function CourseFrame({
         {children}
       </div>
       {overlay}
-      <DemoCursor cursorRef={cursorRef} clicking={clicking} />
+      <DemoCursor cursorRef={cursorRef} clicking={clicking} hidden={fade} />
     </div>
   );
 }

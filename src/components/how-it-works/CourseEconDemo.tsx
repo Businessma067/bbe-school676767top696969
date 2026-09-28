@@ -54,7 +54,6 @@ export function CourseEconDemo() {
       setActive(0);
     });
     await api.wait(900);
-    await api.moveTo('[data-d="read-spot"]', 80);
     await readPanel(api, '[data-d="expl-scroll"]');
     await api.wait(420);
   }, []);
@@ -101,11 +100,11 @@ export function CourseEconDemo() {
       />
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3 pb-2">
         {!checked ? (
-          <span data-d="submit" className={practiceSubmitButtonClass}>
+          <span data-d="submit" className={`${practiceSubmitButtonClass} min-w-56`}>
             Check Answers / Submit
           </span>
         ) : (
-          <span data-d="expl" className={practiceExplanationToggleClass(expl)}>
+          <span data-d="expl" className={`${practiceExplanationToggleClass(expl)} min-w-56`}>
             {expl ? "Hide Explanation" : "Explanation"}
           </span>
         )}

@@ -109,14 +109,66 @@ export function useDemoPlayer(
         requestAnimationFrame(step);
       });
 
+    let lastSelector = "";
+    /** Visual tip of the pointer glyph, in the cursor element's own box. */
+    const TIP = { x: 5, y: 3 };
+
     const clampToStage = (p: { x: number; y: number }) => {
       const stage = stageRef.current;
       if (!stage) return p;
       const r = stage.getBoundingClientRect();
       return {
-        x: Math.max(4, Math.min(p.x, r.width - 14)),
-        y: Math.max(4, Math.min(p.y, r.height - 14)),
+        x: Math.max(2, Math.min(p.x, r.width - 2)),
+        y: Math.max(2, Math.min(p.y, r.height - 2)),
       };
+    };
+
+    const pointInsideStage = (p: { x: number; y: number }) => {
+      const stage = stageRef.current;
+      if (!stage) return false;
+      const r = stage.getBoundingClientRect();
+      return p.x >= 1 && p.y >= 1 && p.x <= r.width - 1 && p.y <= r.height - 1;
+    };
+
+    /** The Zoom control sits on top of the stage and steals the lower-right clicks. */
+    const zoomBox = () => {
+      const stage = stageRef.current;
+      const zoom = stage?.parentElement?.querySelector("button[aria-label='Zoom in']");
+      if (!zoom) return null;
+      const r = zoom.getBoundingClientRect();
+      return r.width > 4 && r.height > 4 ? r : null;
+    };
+
+    const tipCovered = () => {
+      const stage = stageRef.current;
+      const z = zoomBox();
+      if (!stage || !z) return false;
+      const s = stage.getBoundingClientRect();
+      const x = s.left + cursorPos.current.x + TIP.x;
+      const y = s.top + cursorPos.current.y + TIP.y;
+      return x >= z.left - 4 && x <= z.right + 4 && y >= z.top - 4 && y <= z.bottom + 4;
+    };
+
+    const cursorInside = (selector: string) => {
+      const stage = stageRef.current;
+      if (!stage || tipCovered()) return false;
+      const el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return false;
+      const s = stage.getBoundingClientRect();
+      const tip = {
+        x: cursorPos.current.x + TIP.x,
+        y: cursorPos.current.y + TIP.y,
+      };
+      const pad = 3;
+      const boxes = el.getClientRects();
+      const list = boxes.length ? [...boxes] : [el.getBoundingClientRect()];
+      return list.some(
+        (box) =>
+          tip.x >= box.left - s.left - pad &&
+          tip.x <= box.right - s.left + pad &&
+          tip.y >= box.top - s.top - pad &&
+          tip.y <= box.bottom - s.top + pad,
+      );
     };
 
     const setCursorAt = (p: { x: number; y: number }) => {
@@ -130,20 +182,74 @@ export function useDemoPlayer(
       }
     };
 
-    const glideCursor = (target: { x: number; y: number }, duration = 620) => {
+    const glideCursor = async (target: { x: number; y: number }, duration = 900) => {
+      // Never slide the pointer into the empty stage edge when the target is clipped.
+      if (!pointInsideStage(target)) return false;
       const start = { ...cursorPos.current };
-      const goal = clampToStage(target);
-      const dist = Math.hypot(goal.x - start.x, goal.y - start.y);
-      if (dist < 1) return Promise.resolve();
-      // Same distance scaling as MockBuilderSimulator: short hops stay quick,
-      // long glides ease in/out, never shorter than ~320ms.
-      const d = Math.max(320, Math.min(duration, 240 + dist * 1.6));
-      return tween(d, (eased) => {
+      const dist = Math.hypot(target.x - start.x, target.y - start.y);
+      if (dist < 1.5) {
+        setCursorAt(target);
+        return true;
+      }
+      // One speed for a short hop and a long cross-stage move.
+      const d = Math.max(90, Math.min(duration, dist / 0.78));
+      await tween(d, (eased) => {
         setCursorAt({
-          x: start.x + (goal.x - start.x) * eased,
-          y: start.y + (goal.y - start.y) * eased,
+          x: start.x + (target.x - start.x) * eased,
+          y: start.y + (target.y - start.y) * eased,
         });
       });
+      setCursorAt(target);
+      return Math.hypot(cursorPos.current.x - target.x, cursorPos.current.y - target.y) < 6;
+    };
+
+    /** Scroll every overflow ancestor until the target's center sits inside the stage. */
+    const scrollIntoStage = async (selector: string) => {
+      const stage = stageRef.current;
+      if (!stage) return;
+      const el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return;
+      const scrollers: HTMLElement[] = [];
+      let node: HTMLElement | null = el.parentElement;
+      while (node && node !== stage) {
+        const oy = getComputedStyle(node).overflowY;
+        if ((oy === "auto" || oy === "scroll") && node.scrollHeight > node.clientHeight + 2) {
+          scrollers.push(node);
+        }
+        node = node.parentElement;
+      }
+      const box = scrollRef.current;
+      if (box && box.contains(el) && !scrollers.includes(box) && box.scrollHeight > box.clientHeight + 2) {
+        scrollers.push(box);
+      }
+      for (const scroller of scrollers) {
+        const sb = stage.getBoundingClientRect();
+        const lb = scroller.getBoundingClientRect();
+        const eb = el.getClientRects()[0] ?? el.getBoundingClientRect();
+        if (eb.width === 0 && eb.height === 0) continue;
+        const cy = eb.top + Math.min(eb.height / 2, 18);
+        const top = Math.max(lb.top, sb.top) + 16;
+        const bottom = Math.min(lb.bottom, sb.bottom) - 16;
+        let delta = 0;
+        if (cy < top) delta = cy - top;
+        else if (cy > bottom) delta = cy - bottom;
+        const z = zoomBox();
+        const aimX = eb.left + eb.width / 2;
+        if (z && aimX > z.left - 8 && aimX < z.right + 8 && cy > z.top - 12) {
+          const lift = cy - (z.top - 14);
+          if (lift > delta) delta = lift;
+        }
+        if (Math.abs(delta) < 2) continue;
+        const start = scroller.scrollTop;
+        const max = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
+        const next = Math.max(0, Math.min(start + delta, max));
+        if (Math.abs(next - start) < 2) continue;
+        const change = next - start;
+        await tween(Math.max(140, Math.min(520, Math.abs(change) / 0.9)), (eased) => {
+          scroller.scrollTop = start + change * eased;
+        });
+        await flush();
+      }
     };
 
     const pointOf = (selector: string) => {
@@ -152,52 +258,42 @@ export function useDemoPlayer(
       const el = stage.querySelector<HTMLElement>(selector);
       if (!el) return null;
       const s = stage.getBoundingClientRect();
-      // First line box, so a wrapped highlight is aimed at the words, not the empty middle of the union rect.
-      const eb = el.getClientRects()[0] ?? el.getBoundingClientRect();
-      if (eb.width === 0 && eb.height === 0) return null;
-      return {
-        x: eb.left - s.left + eb.width / 2 - 5,
-        y: eb.top - s.top + eb.height / 2 - 3,
-      };
+      const z = zoomBox();
+      const rects = el.getClientRects();
+      const boxes = rects.length ? [...rects] : [el.getBoundingClientRect()];
+      let best: { x: number; y: number; area: number } | null = null;
+      for (const eb of boxes) {
+        const left = Math.max(eb.left, s.left);
+        const right = Math.min(eb.right, s.right);
+        const top = Math.max(eb.top, s.top);
+        let bottom = Math.min(eb.bottom, s.bottom);
+        if (z && right > z.left + 2 && left < z.right - 2) bottom = Math.min(bottom, z.top - 2);
+        const w = right - left;
+        const h = bottom - top;
+        if (w < 6 || h < 6) continue;
+        const area = w * h;
+        if (best && area <= best.area) continue;
+        best = {
+          x: left - s.left + w / 2 - TIP.x,
+          y: top - s.top + h / 2 - TIP.y,
+          area,
+        };
+      }
+      return best;
     };
 
-    const scrollDeltaFor = (box: HTMLElement, el: HTMLElement) => {
-      const pad = 18;
-      const lb = box.getBoundingClientRect();
-      const eb = el.getBoundingClientRect();
-      if (eb.width === 0 && eb.height === 0) return 0;
-      if (eb.height + pad * 2 >= lb.height) return eb.top - lb.top - pad;
-      if (eb.top < lb.top + pad) return eb.top - (lb.top + pad);
-      if (eb.bottom > lb.bottom - pad) return eb.bottom - (lb.bottom - pad);
-      return 0;
-    };
-
-    const scrollToReveal = async (selector: string, followCursor: boolean) => {
-      const stage = stageRef.current;
-      const box = scrollRef.current;
-      if (!stage || !box) return;
-      const el = stage.querySelector<HTMLElement>(selector);
-      if (!el || !box.contains(el)) return;
-      const desired = box.scrollTop + scrollDeltaFor(box, el);
-      const maxScroll = Math.max(0, box.scrollHeight - box.clientHeight);
-      const clamped = Math.max(0, Math.min(desired, maxScroll));
-      if (Math.abs(clamped - box.scrollTop) <= 1) return;
-      const startCursor = { ...cursorPos.current };
-      const startScroll = box.scrollTop;
-      const change = clamped - startScroll;
-      await tween(640, (eased) => {
-        box.scrollTop = startScroll + change * eased;
-        if (!followCursor) {
-          setCursorAt(startCursor);
-          return;
-        }
-        const live = pointOf(selector);
-        if (!live) return;
-        setCursorAt({
-          x: startCursor.x + (live.x - startCursor.x) * eased,
-          y: startCursor.y + (live.y - startCursor.y) * eased,
-        });
-      });
+    const settleOn = async (selector: string) => {
+      for (let attempt = 0; attempt < 3; attempt++) {
+        if (cancelled) return false;
+        await scrollIntoStage(selector);
+        if (cancelled) return false;
+        await flush();
+        const target = pointOf(selector);
+        if (!target) continue;
+        const arrived = await glideCursor(target);
+        if (arrived && cursorInside(selector)) return true;
+      }
+      return cursorInside(selector);
     };
 
     const moveTo = async (selector: string, dwell = 360) => {
@@ -205,31 +301,42 @@ export function useDemoPlayer(
       if (cancelled) return;
       const stage = stageRef.current;
       if (!stage) return;
-      const el = stage.querySelector<HTMLElement>(selector);
-      if (!el) return;
-
-      await scrollToReveal(selector, true);
+      if (!stage.querySelector(selector)) return;
+      lastSelector = selector;
+      await settleOn(selector);
       if (cancelled) return;
-      await flush();
-      const target = pointOf(selector);
-      if (!target) return;
-      await glideCursor(target);
       await wait(dwell);
     };
 
     const reveal = async (selector: string) => {
       await flush();
       if (cancelled) return;
-      await scrollToReveal(selector, false);
+      await scrollIntoStage(selector);
     };
 
     const click = async (onPress?: () => void) => {
+      if (cancelled) return;
+      if (lastSelector && !cursorInside(lastSelector)) await settleOn(lastSelector);
+      const onTarget = !!lastSelector && cursorInside(lastSelector);
+      if (!onTarget) {
+        onPress?.();
+        await flush();
+        return;
+      }
+      // Hold the press on the control, then change state, so the click
+      // does not finish on a sheet or card that just replaced the target.
       setClicking(true);
+      await flush();
+      await wait(110);
+      if (cancelled) {
+        setClicking(false);
+        return;
+      }
       onPress?.();
       await flush();
-      await wait(120);
-      setClicking(false);
       await wait(40);
+      setClicking(false);
+      await wait(30);
     };
 
     const snapTo = (selector: string) => {
