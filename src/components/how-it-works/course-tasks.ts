@@ -1,3 +1,4 @@
+import econCh2 from "@/data/economics-cases-ch2-subtopics.json";
 import econCh3 from "@/data/economics-cases-ch3-subtopics.json";
 import mathCh12 from "@/data/math-cases-ch12-probability.json";
 import englishTexts from "@/data/english/texts.json";
@@ -37,13 +38,17 @@ function asTask(raw: RawTask, chapter: string): CourseTask {
   };
 }
 
+const builderRaw = (econCh2 as RawTask[])[0];
 const econRaw = (econCh3 as RawTask[]).find((task) => task.case_id === "CASE 3.1.01");
 const mathRaw = (mathCh12 as { tasks: RawTask[] }).tasks.find((task) => task.case_id === "MATH 12.01");
 const engRaw = (englishTexts as { tasks: RawTask[] }).tasks.find((task) => task.case_id === "ENG T.1.01");
 
-if (!econRaw || !mathRaw || !engRaw) {
+if (!builderRaw || !econRaw || !mathRaw || !engRaw) {
   throw new Error("Course demo task missing from the bank");
 }
+
+/** First bank task of economics 2.1, the first subtopic the Mock Builder demo selects. */
+export const MOCK_BUILDER_FIRST = asTask(builderRaw, "Chapter 2 · Basic economic concepts");
 
 /** First task of chapter 3 on the economics practice page. */
 export const COURSE_ECON = asTask(econRaw, "Chapter 3 · Focus on different types of businesses");

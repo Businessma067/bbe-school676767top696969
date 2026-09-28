@@ -9,11 +9,17 @@ import {
 import { getCustomMockChapters } from "@/data/custom-mock-catalog";
 import { balancedPoint, type TopicWeightTopic, type Vec2 } from "@/lib/topic-weight-engine";
 import { cn } from "@/lib/utils";
+import { DemoStatementTable } from "@/components/news/demos/DemoStatementTable";
+import { formatExamTime } from "@/lib/mock-exam-session";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
+import { MOCK_BUILDER_FIRST } from "./course-tasks";
 
 const ACCENT = "#E85D3A";
 const DWELL = 170;
+const FIRST = MOCK_BUILDER_FIRST;
+const TRUE_AT = FIRST.answerKey.flatMap((on, index) => (on ? [index] : []));
+const EXAM_SECONDS = 12 * CUSTOM_MOCK_MINUTES_PER_QUESTION * 60;
 
 /** How it works · Mock Builder: four real subtopics, then the mix, a step quicker than Course. */
 export function CourseMockDemo() {
@@ -28,6 +34,8 @@ export function CourseMockDemo() {
   const [weightPoint, setWeightPoint] = useState<Vec2>(balancedPoint());
   const [building, setBuilding] = useState(false);
   const [dialog, setDialog] = useState(false);
+  const [exam, setExam] = useState(false);
+  const [marks, setMarks] = useState<Record<number, boolean>>({});
 
   const weightTopics: TopicWeightTopic[] = useMemo(
     () => selected.map((id) => ({ id, label: id, shortLabel: id })),
@@ -45,6 +53,8 @@ export function CourseMockDemo() {
     setWeightPoint(balancedPoint());
     setBuilding(false);
     setDialog(false);
+    setExam(false);
+    setMarks({});
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
     await api.wait(240);
@@ -106,8 +116,25 @@ export function CourseMockDemo() {
     await api.flush();
     await api.wait(280);
     await api.moveTo('[data-d="start"]', DWELL);
-    await api.click(() => setDialog(false));
-    await api.wait(700);
+    await api.click(() => {
+      setDialog(false);
+      setFade(true);
+    });
+    await api.flush();
+    await api.wait(220);
+    setExam(true);
+    setMarks({});
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
+    setFade(false);
+    await api.wait(280);
+
+    for (const index of TRUE_AT) {
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="q${index}"]`, DWELL);
+      await api.click(() => setMarks((prev) => ({ ...prev, [index]: true })));
+      await api.wait(80);
+    }
+    await api.wait(520);
   }, [chapter, picks]);
 
   return (
@@ -118,7 +145,7 @@ export function CourseMockDemo() {
       clicking={clicking}
       fade={fade}
       overlay={
-        dialog ? (
+        dialog && !exam ? (
           <div className="absolute inset-0 z-20 grid place-items-center bg-black/70 p-4">
             <div className="w-full max-w-sm rounded-2xl border border-border bg-card p-5 shadow-2xl">
               <p className="font-display text-base font-semibold">
@@ -144,6 +171,49 @@ export function CourseMockDemo() {
         ) : null
       }
     >
+      {exam ? (
+        <div>
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+              Question 1 / 12
+            </span>
+            <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+              {FIRST.caseId}
+            </span>
+            <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+              {FIRST.chapter}
+            </span>
+            <span className="ml-auto inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1 font-mono text-xs font-semibold tabular-nums">
+              <Clock className="h-3.5 w-3.5" />
+              {formatExamTime(EXAM_SECONDS)}
+            </span>
+          </div>
+          <div className="mb-4 flex flex-wrap gap-1.5">
+            {Array.from({ length: 12 }, (_, index) => (
+              <span
+                key={index}
+                className={cn(
+                  "grid h-7 w-7 place-items-center rounded-md border text-[11px] font-semibold",
+                  index === 0
+                    ? "border-foreground bg-foreground text-background"
+                    : "border-border bg-card text-muted-foreground",
+                )}
+              >
+                {index + 1}
+              </span>
+            ))}
+          </div>
+          <h3 className="font-display text-lg font-bold tracking-tight">{FIRST.title}</h3>
+          <p className="mt-3 text-sm leading-relaxed text-foreground/90">{FIRST.context}</p>
+          <DemoStatementTable
+            statements={FIRST.statements}
+            marks={marks}
+            dataPrefix="q"
+            className="mt-4"
+          />
+        </div>
+      ) : (
+      <>
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <span
           className="rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white"
@@ -282,6 +352,8 @@ export function CourseMockDemo() {
           </>
         )}
       </div>
+      </>
+      )}
     </CourseFrame>
   );
 }

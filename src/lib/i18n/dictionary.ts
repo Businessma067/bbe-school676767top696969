@@ -146,6 +146,10 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
       "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs — kein Zufallspapier.",
     "Open Mock Builder": "Prüfungs-Builder öffnen",
+    "Finish the paper and read the result": "Beende die Prüfung und lies das Ergebnis",
+    "Answer one English question, one math question, and one economics question on a timed mock. After you submit, the results chart shows how long each question took. Open Tasks and read the explanations.":
+      "Beantworte eine Englisch-, eine Mathe- und eine Wirtschaftsaufgabe in einer zeitbegrenzten Probeprüfung. Nach dem Abgeben zeigt das Ergebnisdiagramm, wie lange jede Aufgabe gedauert hat. Öffne Aufgaben und lies die Erklärungen.",
+    "Open Mock Exams": "Probeprüfungen öffnen",
     Theory: "Theorie",
     "Read the theory the tasks assume": "Lies die Theorie, die die Aufgaben voraussetzen",
     "Every Full Course chapter has its own theory reader: the definitions, the formulas, and the reasoning the true and false statements rely on. Open any chapter and read the part you need before you practice.":
@@ -369,6 +373,10 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
       "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу — не випадковий варіант.",
     "Open Mock Builder": "Відкрити конструктор іспитів",
+    "Finish the paper and read the result": "Закінчи пробний іспит і прочитай результат",
+    "Answer one English question, one math question, and one economics question on a timed mock. After you submit, the results chart shows how long each question took. Open Tasks and read the explanations.":
+      "Дай відповідь на одне питання з англійської, одне з математики й одне з економіки в timed пробному іспиті. Після здачі графік результату показує, скільки часу пішло на кожне завдання. Відкрий Завдання і прочитай пояснення.",
+    "Open Mock Exams": "Відкрити пробні іспити",
     Theory: "Теорія",
     "Read the theory the tasks assume": "Прочитай теорію, на яку спираються завдання",
     "Every Full Course chapter has its own theory reader: the definitions, the formulas, and the reasoning the true and false statements rely on. Open any chapter and read the part you need before you practice.":
