@@ -452,7 +452,10 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
           <div className="grid items-stretch gap-5 px-9 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
-                <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
+                <div
+                  className={cn("relative w-full", liveStage && "max-sm:min-h-[32rem]")}
+                  style={{ aspectRatio: slide.aspect }}
+                >
                   {liveStage ? (
                     liveTheoryDemo ? (
                       <CourseTheoryDemo key="theory" />
