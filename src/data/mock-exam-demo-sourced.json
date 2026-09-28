@@ -1,178 +1,178 @@
 {
   "economics": [
     {
-      "case_id": "CASE 2.1.07",
-      "title": "PhoneFix screen repairs",
-      "subsection": "2.1",
-      "chapter": 2,
-      "context": "PhoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. Evaluate the following economic assertions:",
-      "statements": [
-        "Screen replacement is a service, while a phone case sold at the counter is a good.",
-        "Because PhoneFix is a business rather than a household, its monthly spare parts can never run scarce.",
-        "A customer buying a decorative case purely for its design is satisfying a want rather than a basic need.",
-        "Repairing a phone never fulfils a need because phones are luxury items outside normal economic analysis.",
-        "A limited monthly batch of parts forces the shop to economise by prioritising which jobs to accept."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Replacing a cracked screen is labour performed for the customer, a service. A phone case sold at the counter is a tangible good. PhoneFix can offer both in one visit.\n\nSo the statement is True.",
-        "Spare parts arrive in limited monthly batches. Being a business does not create unlimited stock. When the batch runs down, further repairs wait. Scarcity of parts is exactly why the shop must prioritise jobs.\n\nSo the statement is False.",
-        "A decorative case bought for design rather than protection serves appearance and preference. That is a want, not a basic need for well-being. Functionally necessary repairs differ from optional styling accessories.\n\nSo the statement is True.",
-        "A working phone often supports work, school contact, and safety. Repairing it can restore a practical need, not merely a luxury whim. Excluding phones from economic analysis is artificial.\n\nSo the statement is False.",
-        "A fixed monthly parts batch cannot cover every cracked screen that walks in. PhoneFix must decide which jobs to accept, which to delay, and how to stretch inventory. That prioritisation is economising under scarcity. Unlimited-parts thinking would remove the need to choose; limited batches force ranking. The statement links the shop's constraint to careful allocation correctly.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "CASE 2.2.15",
-      "title": "Bergdorf council budget",
+      "case_id": "CASE DEMO.2.OC",
+      "title": "Saturday shift and a free course",
       "subsection": "2.2",
       "chapter": 2,
-      "context": "Bergdorf has €90,000 for either a skate park or a library renovation this year, not both. Evaluate the following economic assertions:",
+      "difficulty_level": "5/5",
+      "context": "Lea has one free Saturday afternoon. She can work a paid shift that earns €80, or she can attend a revision course that charges no fee. She takes the shift. Evaluate the following economic assertions:",
       "statements": [
-        "Scarcity applies only to money, never to time, land, or labour hours.",
-        "Households never face opportunity cost because wants are unlimited and budgets do not constrain them.",
-        "Because councils can raise taxes in principle, this year's 90,000-euro budget is not scarce.",
-        "Opportunity cost exists only for registered companies, not for individuals or students.",
-        "Choosing the library means opportunity cost is the skate park's benefit, not both projects combined."
+        "The opportunity cost of taking the shift is the revision she gives up, not the €80 she receives.",
+        "Because the revision course charges no fee, choosing the course would have an opportunity cost of zero.",
+        "Scarcity is absent, because Lea has only two options and scarcity requires a long list of alternatives.",
+        "The €80 wage is the opportunity cost of taking the shift.",
+        "If Lea had attended the course instead, part of the opportunity cost would be the €80 she did not earn."
       ],
       "answer_key": [
-        false,
+        true,
         false,
         false,
         false,
         true
       ],
       "tactical_explanations": [
-        "Scarcity covers time, land, labour, and materials as well as money. Restricting it to cash alone is too narrow for Bergdorf's choices and for economics generally.\n\nSo the statement is False.",
-        "Unlimited wants meet limited household budgets, which is why opportunity cost appears at home. Claiming households never face it reverses the usual scarcity story. Budgets constrain families constantly.\n\nSo the statement is False.",
-        "Councils can raise taxes in principle, yet this year's 90,000 euros is already fixed for the skate park versus library choice. Future revenue tools do not make the current envelope non-scarce. Bergdorf still picks one project now. Treating potential tax rises as proof of non-scarcity would excuse every public trade-off from analysis.\n\nSo the statement is False.",
-        "Individuals and students forgo alternatives whenever they allocate scarce time or money. Opportunity cost is not a company-only concept. A student's study hours illustrate it as clearly as a firm's investment.\n\nSo the statement is False.",
-        "Choosing the library forgoes the skate park's benefit, not a fantasy sum of both projects. Opportunity cost is the next-best forgone project, one alternative.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nOpportunity cost is the next-best alternative given up. Lea used the afternoon on the shift, so what she sacrificed is the revision course. The €80 is what the chosen option pays her; it is not the thing she lost by choosing it.\n\nSo the statement is True.",
+        "**B.** → False\n\nA zero ticket price does not make the opportunity cost zero. If Lea takes the free course, she gives up the shift and the €80 that shift would have paid. The forgone earning is a real cost even though the classroom itself charges nothing.\n\nSo the statement is False.",
+        "**C.** → False\n\nScarcity is already present when one afternoon cannot be spent twice. Two options are enough: the same hours cannot be both a shift and a revision class. A long menu is not required before a choice becomes an economic choice.\n\nSo the statement is False.",
+        "**D.** → False\n\nThe €80 is the benefit of the option she actually took. Opportunity cost names the alternative left behind, which here is the revision course. Calling the wage itself the opportunity cost swaps the payoff of the choice with the sacrifice of the choice.\n\nSo the statement is False.",
+        "**E.** → True\n\nHad she sat the course, she would not have earned the €80. That lost pay is the leading alternative given up, so it belongs in the opportunity cost of the course. The fact that the course fee is zero does not erase the wage she turned down.\n\nSo the statement is True."
+      ]
     },
     {
-      "case_id": "CASE 3.4.01",
-      "title": "EU micro staff ceiling",
+      "case_id": "CASE DEMO.2.DD",
+      "title": "Bus fares, petrol, and incomes",
+      "subsection": "2.6",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "A city bus company studies its own fare, the price of petrol, household incomes, and a new advertising campaign for bus travel. Evaluate the following economic assertions:",
+      "statements": [
+        "A higher price of petrol, treated as a substitute for many bus trips, tends to shift the demand curve for bus rides to the right.",
+        "A cut in the bus fare, with the demand curve unchanged, is a movement along that demand curve.",
+        "If bus travel is an inferior good for a group of households, a rise in their incomes shifts their demand for bus rides to the left.",
+        "An advertising campaign that makes bus travel more attractive shifts the supply curve of bus rides, not the demand curve.",
+        "Once demand shifts, the old equilibrium price and quantity remain the correct market outcome because the supply curve did not move."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPetrol and the bus compete for the same journeys. When driving becomes more expensive, some travellers switch toward the bus at every given fare. That is a rightward shift of bus demand, caused by the price of a substitute, not by the bus company’s own fare.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe fare is the own price of a bus ride. Changing that price, while tastes, incomes, and related prices stay put, slides quantity along the existing demand curve. It does not draw a new demand curve.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor an inferior good, higher income means buyers want less of it at each price. If the bus plays that role for these households, their demand curve shifts left when incomes rise. Normal-good logic would shift demand the other way, and that logic does not apply once the good is inferior.\n\nSo the statement is True.",
+        "**D.** → False\n\nAdvertising that makes bus travel more desirable changes how many rides people want at each fare. That is a demand shift. Supply would move if the company’s costs or capacity changed, which this campaign does not do.\n\nSo the statement is False.",
+        "**E.** → False\n\nA demand shift meets the same supply curve at a different point. Both the equilibrium fare and the equilibrium number of rides generally change. Leaving the old intersection in place would ignore the new willingness to ride.\n\nSo the statement is False."
+      ]
+    },
+    {
+      "case_id": "CASE DEMO.3.SEC",
+      "title": "Vineyard, bottling, and EU size",
       "subsection": "3.4",
       "chapter": 3,
-      "context": "Consider a workshop that employs nine people with €1.8m turnover. Evaluate the following economic assertions:",
+      "difficulty_level": "5/5",
+      "context": "A vineyard harvests grapes. A winery ferments and bottles wine. A shop sells the finished bottles to households. Separately, a firm employs 8 people, has annual turnover of €1.5 million, and reports a balance-sheet total of €2.4 million. Evaluate the following economic assertions:",
       "statements": [
-        "Because staff are below ten, a firm remains a micro enterprise despite turnover above €2m.",
-        "Forty-five staff alone guarantees small classification even if turnover exceeds €10m.",
-        "Meeting the staff ceiling alone is sufficient for micro status regardless of turnover or balance sheet totals.",
-        "Under the EU definition, a micro enterprise may employ fewer than ten people.",
-        "A firm qualifies as micro because its balance sheet is below €2m, regardless of turnover above €2m."
+        "Harvesting grapes is primary production, bottling the wine is secondary production, and selling the bottles in the shop is a tertiary activity.",
+        "The shop belongs to the secondary sector because it handles a physical good rather than a service.",
+        "The firm with 8 employees and turnover of €1.5 million can still be a micro-enterprise even though the balance-sheet total is €2.4 million.",
+        "Fewer than 10 employees is enough, by itself, for micro status even when both turnover and the balance-sheet total are above €2 million.",
+        "Bottling wine remains a purely primary activity because the grapes were grown on a farm."
       ],
       "answer_key": [
-        false,
-        false,
+        true,
         false,
         true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "Headcount under ten is only one micro test. Turnover above €2m can still block micro status even with a tiny payroll. Staff alone never completes the EU micro definition.\n\nSo the statement is False.",
-        "Forty-five staff sit inside the small employee band, yet turnover above €10m can push the firm out of small status. Headcount guarantees nothing once the financial caps are breached.\n\nSo the statement is False.",
-        "Micro status needs fewer than ten people plus a financial test: turnover or balance sheet not above €2m. Meeting the staff ceiling while blowing past both financial caps fails the definition.\n\nA nine-person firm with €3m turnover and a €3m balance sheet is not micro under those figures. Staff sufficiency alone is therefore not enough for the label.\n\nSo the statement is False.",
-        "Under the EU definition, a micro enterprise may employ fewer than ten people as its staff ceiling. That headcount limit is the employment half of the micro tests.\n\nSo the statement is True.",
-        "A balance sheet below €2m helps only if the other micro tests also hold. Turnover above €2m can still disqualify micro status even when the balance sheet looks small.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nPrimary production takes something from nature, which is what the harvest does. Secondary production transforms that material; fermenting and bottling are manufacturing. Selling the finished bottles to households is trade, a tertiary activity. Each stage is classified by what is done at that stage, not by the product’s origin.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe shop does not manufacture the wine. It distributes a finished good to customers, which is tertiary trade. Handling a physical object does not turn retail into secondary production. The bottling plant is the secondary stage; the counter is not.\n\nSo the statement is False.",
+        "**C.** → True\n\nMicro status needs fewer than 10 employees and at least one of the two financial ceilings. Eight employees meet the staff test. Turnover of €1.5 million is not above €2 million, so the turnover ceiling is met even though the balance-sheet total of €2.4 million is over its own ceiling. One financial ceiling is enough.\n\nSo the statement is True.",
+        "**D.** → False\n\nStaff below ten is only half of the test. If turnover is above €2 million and the balance-sheet total is also above €2 million, neither financial ceiling is met. The firm then fails micro status despite the small payroll. Headcount does not override both financial misses at once.\n\nSo the statement is False.",
+        "**E.** → False\n\nGrowing the grapes is primary. Turning those grapes into bottled wine is a manufacturing step, so it is secondary. The farm origin of the input does not keep the processing stage in the primary sector.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "CASE 4.3.51",
-      "title": "Alpine Sensors AG as a Separate Legal Person",
+      "case_id": "CASE DEMO.4.FORM",
+      "title": "Sole trader, partnership, and corporation",
       "subsection": "4.3",
       "chapter": 4,
-      "context": "Three engineers incorporate Alpine Sensors AG in Austria so the firm itself can hold patents, hire staff, and face suppliers in its own name. Evaluate the following economic assertions:",
+      "difficulty_level": "5/5",
+      "context": "Compare a sole trader, a general partnership, and a corporation whose shares can be resold on a stock exchange. Evaluate the following economic assertions:",
       "statements": [
-        "Once incorporated, Alpine Sensors AG is a legal entity of its own with rights and obligations comparable to those of natural persons in business life.",
-        "As a legal person, Alpine Sensors AG can own laboratory equipment and land, hire technicians, and close supply contracts in the company’s name.",
-        "If a supplier sues over unpaid circuit boards, the lawsuit is brought against Alpine Sensors AG rather than automatically against each engineer’s private name.",
-        "The founding engineers must personally manage every production shift because shareholders of a corporation are always also its day-to-day managers.",
-        "A hired plant manager at Alpine Sensors AG may run operations without owning any shares in the company."
+        "A sole trader is not a separate legal person from the owner, so business creditors can pursue the owner’s private assets.",
+        "Shareholders of a corporation are normally liable for company debts only up to the capital they agreed to contribute.",
+        "Shareholders of a corporation must also be its day-to-day managers.",
+        "A general partner’s liability for partnership debts is limited to that partner’s percentage share of the profits.",
+        "After the shares have already been issued, a rise in their stock-exchange price pays new cash into the corporation equal to that gain."
       ],
       "answer_key": [
         true,
         true,
-        true,
         false,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "Incorporation gives Alpine Sensors AG its own legal personality. The company holds rights and duties in business life much as a natural person would when owning assets, hiring, or contracting, separate from the three engineers as private individuals.\n\nSo the statement is True.",
-        "As a legal person, Alpine Sensors AG can own lab gear and land, employ technicians, and sign supply contracts in the company name. Those acts attach to the firm, not to each founder’s private identity.\n\nSo the statement is True.",
-        "Supplier suits over unpaid boards are filed against Alpine Sensors AG as the contracting party. Creditors pursue the corporate defendant first rather than automatically naming every engineer’s private identity as the debtor on the face of the claim.\n\nSo the statement is True.",
-        "Shareholders fund and own the corporation; they are not forced to run every production shift. Alpine Sensors AG can hire managers and operators while founders remain owners without day-to-day shop-floor duty. Equating ownership with mandatory personal management confuses equity stakes with employment roles. Many corporations deliberately separate investors from operators so specialists run production. The engineers may choose to work in the plant, but corporate form does not compel that identity of owner and manager for every shift.\n\nSo the statement is False.",
-        "A hired plant manager can direct operations with zero shareholding. Management authority comes from appointment and employment, not from an automatic equity ticket, which is why ownership and operational control can diverge inside Alpine Sensors AG.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nA sole trader and the business are the same legal person. There is no corporate shell between the shop’s debts and the owner. If the business cannot pay, creditors can reach private assets, which is what unlimited liability means here.\n\nSo the statement is True.",
+        "**B.** → True\n\nA corporation is a legal person of its own. Shareholders generally risk only the capital they subscribed. Company debts are claims on the company, not an open claim on each shareholder’s house or savings beyond that contribution.\n\nSo the statement is True.",
+        "**C.** → False\n\nOwnership and management are separate jobs in a corporation. Shareholders can appoint directors and hire managers, then stay out of daily operations. Nothing in the corporate form forces every owner to run the working day.\n\nSo the statement is False.",
+        "**D.** → False\n\nA profit percentage divides gains. It does not cap a general partner’s liability at that same percentage of the debts. General partners remain unlimitedly liable, so a creditor can pursue one of them for more than that partner’s profit share.\n\nSo the statement is False.",
+        "**E.** → False\n\nOnce the shares are in circulation, a higher market price is a gain for the shareholders who sell to each other. The corporation already received its money at issue. Later trading does not send a matching cash amount into the company.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "CASE 4.6.13",
-      "title": "Working Capital and Short-Term Credit",
+      "case_id": "CASE DEMO.4.FIN",
+      "title": "Machine finance and a short inventory gap",
       "subsection": "4.6",
       "chapter": 4,
-      "context": "Consider a construction firm covering payroll gaps with short-term bank loans while shareholders debate whether to inject equity instead of adding more debt. Evaluate the following economic assertions:",
+      "difficulty_level": "5/5",
+      "context": "A manufacturer needs funds for a machine that will be used for eight years, and separate funds for a three-month build-up of inventory. Evaluate the following economic assertions:",
       "statements": [
-        "A business with a high proportion of loan capital might have difficulties obtaining more credit.",
-        "High gearing means capital expenditure should be funded only through additional bank loans at any interest rate offered.",
-        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered.",
-        "Revenue expenditure must never use short-term trade credit when the balance sheet already lists any loan capital.",
-        "Administration costs of bond issues are ignored because only equity carries issuance expenses."
+        "Retained earnings are an internal source of equity finance.",
+        "A bank overdraft used for the inventory build-up is external short-term debt.",
+        "A long-term loan is a closer match for the eight-year machine than an overdraft that the bank can withdraw at short notice.",
+        "Trade credit from suppliers is equity finance, because suppliers do not always charge a stated interest rate.",
+        "Cash raised by issuing new shares to outside investors is internal finance, because the money ends up in the firm’s bank account."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "A business with a high proportion of loan capital might have difficulties obtaining more credit. Lenders already see elevated repayment risk before the next facility is discussed.\n\nSo the statement is True.",
-        "High gearing argues against funding capital expenditure only through additional bank loans at any rate offered. Internal funds or investors can be safer than accepting every expensive debt offer on the table.\n\nSo the statement is False.",
-        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered. Security becomes a gate when unsecured appetite is already exhausted by existing loans. Higher interest alone may not suffice if the lender wants assets pledged against further exposure. The construction firm's equity debate sits beside that collateral reality when debt is already heavy.\n\nSo the statement is True.",
-        "Revenue expenditure may still use short-term trade credit even when some loan capital already appears on the balance sheet. A blanket ban on supplier credit whenever any loan exists overstates gearing caution.\n\nSo the statement is False.",
-        "Bond issues also carry administration and flotation expenses, not only equity issues. Ignoring bond issuance costs because 'only equity has fees' misreads the cost comparison.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nRetained earnings are profits the owners leave in the business instead of taking them out. No new lender and no new shareholder is involved, so the finance is internal, and it increases equity rather than debt.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe bank is an outsider, so an overdraft is external finance. It has to be repaid and it is designed for a short horizon, which fits a three-month inventory bulge better than a permanent capital injection. That makes it short-term debt, not equity.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe machine earns its keep over eight years. Funding it with a facility the bank can call quickly leaves the firm exposed when the asset is still in use. A long-term loan lines the repayment period up with the asset’s life more closely than an overdraft does.\n\nSo the statement is True.",
+        "**D.** → False\n\nTrade credit is a debt to suppliers: the firm has received goods and still owes the invoice. Missing a stated interest rate does not turn that payable into ownership capital. Equity comes from owners, not from a postponed supplier bill.\n\nSo the statement is False.",
+        "**E.** → False\n\nNew shares sold to outside investors bring in cash from people who were not already financing the firm this way. The cash sitting in the bank account does not make the source internal. Issuing shares to outsiders is external equity.\n\nSo the statement is False."
+      ]
     },
     {
-      "case_id": "CASE 5.7.115",
-      "title": "BlueCompass Elastic Laptop Demand",
+      "case_id": "CASE DEMO.5.EL",
+      "title": "Sandwich price cut and the marketing mix",
       "subsection": "5.7",
       "chapter": 5,
-      "context": "BlueCompass Apps also resells used laptops; a 20% price cut lifts quantity about 43%. Evaluate the following economic assertions:",
+      "difficulty_level": "5/5",
+      "context": "A café cuts the price of a sandwich from €8 to €6. Weekly sales rise from 200 to 280 sandwiches. Measure elasticity from the initial price and the initial quantity. In the same week the café pays for Instagram posts about the sandwich and moves the pickup counter closer to the entrance. Evaluate the following economic assertions:",
       "statements": [
-        "Demand is elastic if the percentage change in demand exceeds the percentage price adjustment.",
-        "In the book’s laptop example, elasticity measured from the initial point is about −2.15 in magnitude greater than 1, so demand is elastic.",
-        "Elastic demand means price adjustments may make sense because quantity responses are relatively large.",
-        "For some software licences in the book, a price cut raises quantity by less than the price change, so demand is inelastic and revenues can fall.",
-        "Elasticity is always identical in the short run and the long run for every product."
+        "Demand is elastic over this change, because the percentage increase in quantity is larger than the percentage fall in price.",
+        "The magnitude of elasticity, measured from the initial point, is about 0.6, so demand is inelastic.",
+        "Weekly revenue from the sandwich is higher after the price cut than before it.",
+        "The Instagram posts are a place decision, and moving the pickup counter is a promotion decision.",
+        "The elasticity calculated from this one week must equal the long-run elasticity of the same sandwich."
       ],
       "answer_key": [
         true,
+        false,
         true,
-        true,
-        true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "Demand is elastic when the percentage quantity change exceeds the percentage price change. Quantity moves more than price in relative terms. That comparison is the elasticity test named here.\n\nSo the statement is True.",
-        "In the book's laptop example, elasticity from the initial point is about -2.15 in magnitude, greater than 1, so demand counts as elastic. Relative quantity response outruns the price move. The statement reports that elastic reading correctly.\n\nSo the statement is True.",
-        "When demand is elastic, quantity responds strongly to price moves, so price adjustments can matter for revenue and volume planning. Weak responses would make fine price tweaks less powerful. Elasticity therefore informs whether price tools are likely to shift sales a lot. The statement links elastic demand to the usefulness of price adjustments for that reason.\n\nSo the statement is True.",
-        "For some software licences in the book, a price cut raises quantity by less than the price change, so demand is inelastic and revenues can fall. Weak quantity response fails to offset the lower fee. The statement records that inelastic outcome correctly.\n\nSo the statement is True.",
-        "Elasticity can differ between short run and long run for many products. Claiming identical values for every product forever is too absolute. Time horizon matters for the measure.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5"
+        "**A.** → True\n\nQuantity rises from 200 to 280, which is 80/200 = 40%. Price falls from €8 to €6, which is 2/8 = 25%. The quantity response is larger than the price response, so demand is elastic over this change.\n\nSo the statement is True.",
+        "**B.** → False\n\nFrom the initial point the magnitude is 40% divided by 25%, which is 1.6, not 0.6. A figure above 1 means elastic demand. The claim both miscalculates the ratio and then attaches the wrong label.\n\nSo the statement is False.",
+        "**C.** → True\n\nRevenue before the cut is 8 × 200 = €1,600. Revenue after the cut is 6 × 280 = €1,680. The extra sandwiches more than replace the lower price, which is what elastic demand leads you to expect for a price cut.\n\nSo the statement is True.",
+        "**D.** → False\n\nInstagram posts tell customers about the sandwich, so they are promotion. Moving the counter changes where the customer collects the product, so it is place. The statement swaps the two mix elements.\n\nSo the statement is False.",
+        "**E.** → False\n\nOne week shows a short-run response. Over a longer period customers can change habits, find other cafés, or treat the new price as normal, so long-run elasticity can differ. Nothing in this week’s count forces the two horizons to match.\n\nSo the statement is False."
+      ]
     },
     {
       "case_id": "CASE 6.1.009",
