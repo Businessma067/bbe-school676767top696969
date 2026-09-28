@@ -7,11 +7,12 @@ import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";
 import { CourseEnglishDemo } from "@/components/how-it-works/CourseEnglishDemo";
 import { CourseMathDemo } from "@/components/how-it-works/CourseMathDemo";
 import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
+import { CourseMockExamDemo } from "@/components/how-it-works/CourseMockExamDemo";
 import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
 import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
 import { cn } from "@/lib/utils";
 
-type MainTab = "course" | "theory" | "mock-builder" | "games";
+type MainTab = "course" | "theory" | "mock-exams" | "mock-builder" | "games";
 type CourseSubject = "economics" | "math" | "english" | "german";
 type StudyTool = "flashcards" | "matching" | "tutor-exam";
 export type HowItWorksTrack = "bbe" | "wiso";
@@ -32,6 +33,7 @@ type ShowcaseSlide = {
 const BBE_MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
   { key: "theory", label: "Theory" },
+  { key: "mock-exams", label: "Mock Exams" },
   { key: "mock-builder", label: "Mock Builder" },
   { key: "games", label: "Study tools" },
 ];
@@ -51,6 +53,20 @@ const BBE_THEORY: ShowcaseSlide[] = [
     href: "/products/full-course-math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
+const BBE_MOCK_EXAMS: ShowcaseSlide[] = [
+  {
+    key: "mock-exams",
+    label: "Mock Exams",
+    title: "Finish the paper and read the result",
+    body: "Answer one English question, one math question, and one economics question on a timed mock. After you submit, the results chart shows how long each question took. Open Tasks and read the explanations.",
+    cta: "Open Mock Exams",
+    href: "/mock-exams",
+    video: "/how-it-works/mock-builder.mp4",
+    poster: "/how-it-works/mock-builder-poster.jpg",
     aspect: "3420 / 1966",
   },
 ];
@@ -249,13 +265,23 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const slides =
     tab === "games"
       ? studyTools
-      : tab === "mock-builder"
-        ? BBE_MOCK_BUILDER
-        : tab === "theory"
-          ? BBE_THEORY
-          : courseSubjects;
+      : tab === "mock-exams"
+        ? BBE_MOCK_EXAMS
+        : tab === "mock-builder"
+          ? BBE_MOCK_BUILDER
+          : tab === "theory"
+            ? BBE_THEORY
+            : courseSubjects;
   const activeKey =
-    tab === "games" ? tool : tab === "mock-builder" ? "mock-builder" : tab === "theory" ? "theory" : subject;
+    tab === "games"
+      ? tool
+      : tab === "mock-exams"
+        ? "mock-exams"
+        : tab === "mock-builder"
+          ? "mock-builder"
+          : tab === "theory"
+            ? "theory"
+            : subject;
   const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
   const liveCourseDemo =
@@ -263,9 +289,10 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     tab === "course" &&
     (slide.key === "economics" || slide.key === "math" || slide.key === "english");
   const liveMockDemo = track === "bbe" && tab === "mock-builder";
+  const liveMockExamDemo = track === "bbe" && tab === "mock-exams";
   const liveStudyDemo = track === "bbe" && tab === "games";
   const liveTheoryDemo = track === "bbe" && tab === "theory";
-  const liveStage = liveCourseDemo || liveMockDemo || liveStudyDemo || liveTheoryDemo;
+  const liveStage = liveCourseDemo || liveMockDemo || liveMockExamDemo || liveStudyDemo || liveTheoryDemo;
 
   const goSlide = (next: number) => {
     const i = (next + slides.length) % slides.length;
@@ -429,6 +456,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   {liveStage ? (
                     liveTheoryDemo ? (
                       <CourseTheoryDemo key="theory" />
+                    ) : liveMockExamDemo ? (
+                      <CourseMockExamDemo key="mock-exams" />
                     ) : liveMockDemo ? (
                       <CourseMockDemo key="mock-builder" />
                     ) : liveStudyDemo ? (
@@ -551,6 +580,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     >
                       {liveTheoryDemo ? (
                         <CourseTheoryDemo key="zoom-theory" />
+                      ) : liveMockExamDemo ? (
+                        <CourseMockExamDemo key="zoom-mock-exams" />
                       ) : liveMockDemo ? (
                         <CourseMockDemo key="zoom-mock-builder" />
                       ) : liveStudyDemo ? (
