@@ -269,6 +269,45 @@ const MdBlock = memo(function MdBlock({
 });
 MdBlock.displayName = "MdBlock";
 
+/** Same article body the theory page renders: markdown, formulas, figures, notes. */
+export function TheoryArticle({
+  markdown,
+  enableMath = true,
+  dense = true,
+}: {
+  markdown: string;
+  enableMath?: boolean;
+  dense?: boolean;
+}) {
+  const segments = useMemo(() => segmentTheory(markdown), [markdown]);
+  return (
+    <>
+      {segments.map((seg, i) => {
+        if (seg.kind === "figure") {
+          return <TheoryFigure key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />;
+        }
+        if (seg.kind === "note") {
+          return (
+            <aside
+              key={`n-${i}`}
+              className={cn(
+                "my-5 rounded-xl border border-zinc-300/80 bg-zinc-100 px-4 text-zinc-800",
+                "shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]",
+                dense ? "py-3 text-[14px] leading-6" : "py-3.5 text-[15px] leading-7 sm:px-5",
+              )}
+            >
+              <p className="m-0">
+                <span className="font-semibold text-zinc-900">{seg.title}.</span> {seg.body}
+              </p>
+            </aside>
+          );
+        }
+        return <MdBlock key={`m-${i}`} text={seg.text} dense={dense} enableMath={enableMath} />;
+      })}
+    </>
+  );
+}
+
 export function TheoryReader({
   chapter,
   title,

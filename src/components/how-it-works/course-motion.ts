@@ -85,6 +85,40 @@ function readingPoint(stage: HTMLElement, panel: HTMLElement) {
 }
 
 /**
+ * A fast pass over part of a reader. Stops before the bottom of the panel.
+ */
+export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fraction = 0.72) {
+  await api.flush();
+  const stage = api.stage();
+  const panel = stage?.querySelector<HTMLElement>(panelSelector);
+  if (!panel || !stage) return;
+  panel.scrollTop = 0;
+  await api.flush();
+  await api.moveTo('[data-d="prose0"]', 20);
+  const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
+  const dest = max * fraction;
+  if (dest < 8) {
+    await api.wait(380);
+    return;
+  }
+  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
+  const from = {
+    x: Number(cursor?.dataset.cx ?? 36),
+    y: Number(cursor?.dataset.cy ?? 36),
+  };
+  await api.tween(1380, (eased) => {
+    panel.scrollTop = dest * eased;
+    const spot = readingPoint(stage, panel);
+    if (!spot) return;
+    const blend = Math.min(1, eased / 0.1);
+    api.setCursorAt({
+      x: from.x + (spot.x - from.x) * blend,
+      y: from.y + (spot.y - from.y) * blend,
+    });
+  });
+}
+
+/**
  * Steady read of a sheet. The pointer starts on the first line and stays
  * over the words while the sheet eases from top to bottom.
  */

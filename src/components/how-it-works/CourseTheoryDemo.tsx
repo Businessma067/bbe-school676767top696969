@@ -1,95 +1,39 @@
 import { useMemo, useRef, useState } from "react";
-import { ChevronDown, PanelLeftOpen } from "lucide-react";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { BookOpen, ChevronDown, PanelLeftOpen } from "lucide-react";
 import { MATH_COURSE_THEORY, type MathCourseTheoryChapter } from "@/data/math-course-theory";
-import { cn } from "@/lib/utils";
+import { TheoryArticle } from "@/components/TheoryReader";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
-import { readPanel } from "./course-motion";
+import { skimPanel } from "./course-motion";
 
 const READ = [1, 10, 11] as const;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
-type Block = { kind: "h" | "p" | "math"; level: 0 | 2 | 3; text: string };
-
-function stripInline(text: string): string {
-  return text
-    .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-    .replace(/\[\[(?:FIGURE|NOTE):[^\]]+\]\]/g, "")
-    .trim();
-}
-
-/** Intro plus the first teaching section, the same words the theory reader shows. */
-function theoryBlocks(markdown: string): Block[] {
-  const all: Block[] = [];
+/** Opening of the chapter through part of the first numbered section, unedited. */
+function theoryPart(markdown: string): string {
   const lines = markdown.split("\n");
-  let para = "";
-  const flush = () => {
-    const text = stripInline(para);
-    para = "";
-    if (text) all.push({ kind: "p", level: 0, text });
-  };
+  let sectionStart = -1;
+  let sectionEnd = lines.length;
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i] ?? "";
-    if (line.startsWith("# ")) continue;
-    if (line.startsWith("## ") || line.startsWith("### ")) {
-      flush();
-      const level = line.startsWith("### ") ? 3 : 2;
-      const text = stripInline(line.replace(/^#+\s+/, ""));
-      if (text) all.push({ kind: "h", level, text });
-      continue;
+    if (!/^##\s+\d+\.\d+\b/.test(lines[i] ?? "")) continue;
+    if (sectionStart < 0) sectionStart = i;
+    else {
+      sectionEnd = i;
+      break;
     }
-    if (line.trim().startsWith("$$")) {
-      flush();
-      const chunk = [line];
-      if (line.trim() === "$$" || !line.trim().endsWith("$$") || line.trim() === "$$") {
-        i += 1;
-        while (i < lines.length && !lines[i]?.includes("$$")) {
-          chunk.push(lines[i] ?? "");
-          i += 1;
-        }
-        if (i < lines.length) chunk.push(lines[i] ?? "");
-      }
-      const text = chunk.join("\n").trim();
-      if (text.length > 4 && text.length < 280) all.push({ kind: "math", level: 0, text });
-      continue;
+  }
+  const cap = sectionStart < 0 ? 80 : sectionStart + 72;
+  let cut = Math.min(sectionEnd, cap);
+  if (cut < sectionEnd) {
+    const dollars = lines.slice(0, cut).join("\n").match(/\$\$/g)?.length ?? 0;
+    if (dollars % 2 === 1) {
+      while (cut < sectionEnd && !(lines[cut] ?? "").includes("$$")) cut += 1;
+      if (cut < sectionEnd) cut += 1;
     }
-    if (
-      !line.trim() ||
-      line.startsWith("|") ||
-      line.startsWith("---") ||
-      line.startsWith("[[") ||
-      line.startsWith("- ")
-    ) {
-      flush();
-      continue;
-    }
-    para += (para ? " " : "") + line.trim();
+    while (cut > (sectionStart < 0 ? 1 : sectionStart + 8) && (lines[cut - 1] ?? "").trim() !== "") cut -= 1;
   }
-  flush();
-
-  const out: Block[] = [];
-  let i = 0;
-  while (i < all.length && all[i]?.level !== 2) {
-    out.push(all[i]!);
-    i += 1;
-  }
-  if (i < all.length && /learning objectives/i.test(all[i]?.text ?? "")) {
-    i += 1;
-    while (i < all.length && all[i]?.level !== 2) i += 1;
-  }
-  let paras = 0;
-  while (i < all.length && out.length < 8) {
-    const block = all[i]!;
-    if (block.level === 2 && out.some((item) => item.level === 2)) break;
-    out.push(block);
-    if (block.kind === "p") paras += 1;
-    i += 1;
-    if (paras >= 3) break;
-  }
-  return out;
+  return lines.slice(0, cut).join("\n").trim();
 }
 
 function Reader({
@@ -99,11 +43,22 @@ function Reader({
   chapter: MathCourseTheoryChapter;
   onScroll: (pct: number) => void;
 }) {
-  const blocks = useMemo(() => theoryBlocks(chapter.markdown), [chapter]);
+  const markdown = useMemo(() => theoryPart(chapter.markdown), [chapter]);
+  const chip = useMemo(() => {
+    const line = markdown.split("\n").find((item) => /^##\s+\d+\.\d+\b/.test(item));
+    return line?.replace(/^##\s+/, "").replace(/^(\d+\.\d+)\s+/, "$1 · ") ?? "";
+  }, [markdown]);
   return (
     <div className="absolute inset-0 z-10 flex flex-col bg-card">
       <div className="shrink-0 border-b border-border px-3 py-1.5">
         <div className="flex items-center gap-2">
+          <BookOpen className="h-4 w-4 shrink-0 text-primary" />
+          <div className="min-w-0 flex-1">
+            <div className="truncate text-[10px] font-bold uppercase tracking-widest text-taupe">
+              Chapter {chapter.num} · Theory
+            </div>
+            <div className="truncate font-display text-sm font-bold leading-tight">{chapter.title}</div>
+          </div>
           <span
             data-d="chapters"
             className="inline-flex h-8 shrink-0 items-center gap-1 whitespace-nowrap rounded-md border border-border bg-card px-2 text-[11px] font-semibold text-foreground"
@@ -111,12 +66,6 @@ function Reader({
             <PanelLeftOpen className="h-3.5 w-3.5" />
             Show chapters
           </span>
-          <div className="min-w-0 flex-1">
-            <div className="truncate text-[10px] font-bold uppercase tracking-widest text-taupe">
-              Chapter {chapter.num} · Theory
-            </div>
-            <div className="truncate font-display text-sm font-bold leading-tight">{chapter.title}</div>
-          </div>
         </div>
         <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
           <div
@@ -125,35 +74,29 @@ function Reader({
             style={{ transform: "scaleX(0)" }}
           />
         </div>
+        {chip ? (
+          <div className="mt-1.5 flex">
+            <span className="max-w-full truncate rounded-full bg-primary px-2.5 py-0.5 text-[11px] font-semibold text-primary-foreground">
+              {chip}
+            </span>
+          </div>
+        ) : null}
       </div>
       <div
         data-d="theory-scroll"
-        className="min-h-0 flex-1 overflow-y-auto px-3 py-2 sm:px-4"
+        className="min-h-0 flex-1 overflow-y-auto"
         onScroll={(event) => {
           const el = event.currentTarget;
           const max = el.scrollHeight - el.clientHeight;
           onScroll(max > 0 ? el.scrollTop / max : 0);
         }}
       >
-        {blocks.map((block, index) => (
-          <div key={`${chapter.num}-${index}`} data-d={`prose${index}`} className="mb-3">
-            {block.kind === "h" ? (
-              <h2
-                className={cn(
-                  "font-display font-bold tracking-tight",
-                  block.level === 2 ? "text-base" : "text-sm text-foreground/90",
-                )}
-              >
-                {block.text}
-              </h2>
-            ) : (
-              <FlashcardMath
-                text={block.text}
-                className="text-[13px] leading-relaxed text-foreground/90"
-              />
-            )}
-          </div>
-        ))}
+        <article
+          data-d="prose0"
+          className="mx-auto w-full max-w-[78rem] px-4 py-3 sm:px-5 [&_.katex]:text-[1.03em] [&_.katex-display]:my-3 [&_.katex-display]:overflow-x-auto"
+        >
+          <TheoryArticle markdown={markdown} enableMath dense />
+        </article>
       </div>
     </div>
   );
@@ -165,13 +108,13 @@ export function CourseTheoryDemo() {
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const readChapter = async (num: number) => {
-      await api.moveTo(`[data-d="ch-${num}"]`, 160);
+      await api.moveTo(`[data-d="ch-${num}"]`, 100);
       await api.click(() => setOpen(num));
       await api.flush();
-      await api.wait(240);
-      await readPanel(api, '[data-d="theory-scroll"]');
-      await api.wait(240);
-      await api.moveTo('[data-d="chapters"]', 120);
+      await api.wait(280);
+      await skimPanel(api, '[data-d="theory-scroll"]');
+      await api.wait(120);
+      await api.moveTo('[data-d="chapters"]', 80);
       await api.click(() => setOpen(null));
       await api.flush();
       await api.wait(180);
