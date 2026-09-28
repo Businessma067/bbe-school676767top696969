@@ -1,304 +1,298 @@
 {
   "economics": [
     {
-      "case_id": "CASE 6.5.034",
-      "title": "Turnover and Liquidity Extract 34",
-      "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
+      "case_id": "CASE 2.1.07",
+      "title": "PhoneFix screen repairs",
+      "subsection": "2.1",
+      "chapter": 2,
+      "context": "PhoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. Evaluate the following economic assertions:",
       "statements": [
-        "Inventory turnover is below 6.87 times per year.",
-        "Asset turnover is above 1.48.",
-        "With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
-        "Revenue exceeds €999 thousand.",
-        "Trade receivables turnover exceeds 10.4 times per year."
+        "Screen replacement is a service, while a phone case sold at the counter is a good.",
+        "Because PhoneFix is a business rather than a household, its monthly spare parts can never run scarce.",
+        "A customer buying a decorative case purely for its design is satisfying a want rather than a basic need.",
+        "Repairing a phone never fulfils a need because phones are luxury items outside normal economic analysis.",
+        "A limited monthly batch of parts forces the shop to economise by prioritising which jobs to accept."
       ],
       "answer_key": [
         true,
         false,
         true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nAverage inventory is the mean of the opening and closing stock lines on the extract:\n\n$$\n\\dfrac{169+179}{2}=174\n$$\n\nCost of sales is $674$. Inventory turnover is that cost divided by the average stock:\n\n$$\n\\dfrac{674}{174}\\approx 3.87\n$$\n\nCompare with the claimed ceiling:\n\n$$\n3.87<6.87\n$$\n\nStock turns about $3.87$ times a year, so it sits below $6.87$.\n\nSo the statement is True.",
-        "**B.** → False\n\nAverage total assets from the beginning and end totals:\n\n$$\n\\dfrac{823+1028}{2}=925.5\n$$\n\nRevenue $1{,}019$ over that average gives asset turnover:\n\n$$\n\\dfrac{1019}{925.5}\\approx 1.10\n$$\n\nThe claim wants a figure above $1.48$:\n\n$$\n1.10\\ngtr 1.48\n$$\n\nAbout $1.10$ misses that hurdle, so the statement fails.\n\nSo the statement is False.",
-        "**C.** → True\n\nInventory already turns about $3.9$ times a year on this extract ($674\\div 174\\approx 3.87$). A higher turnover figure would mean stock is sold and replaced more often within the year, so less cash sits tied up on the shelves — exactly the economic reading claimed here.\n\nSo the statement is True.",
-        "**D.** → True\n\nRevenue on the extract is EUR $1{,}019$ thousand:\n\n$$\n1019>999\n$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAverage trade receivables from the opening and closing balances:\n\n$$\n\\dfrac{135+107}{2}=121\n$$\n\nRevenue $1{,}019$ over that average:\n\n$$\n\\dfrac{1019}{121}\\approx 8.42\n$$\n\nThe claim wants turnover above $10.4$ times a year:\n\n$$\n8.42\\ngtr 10.4\n$$\n\nReceivables turn about $8.42$ times a year, so the claim fails.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "The extract reports revenue, cost of sales, and opening/closing balances for total assets, inventory and trade receivables (EUR thousands). First build each average stock as (opening + closing) ÷ 2, pulling every extract number onto its own line before you divide. Inventory turnover uses cost of sales over average inventory; asset turnover uses revenue over average total assets; receivables turnover uses revenue over average trade receivables. Then compare each computed ratio with the claim threshold using <, >, \\nless or \\ngtr as needed.\n\n$$\n\\text{Inventory turnover} = \\frac{\\text{cost of sales}}{\\text{average inventory}}\n$$\n\n$$\n\\text{Asset turnover} = \\frac{\\text{revenue}}{\\text{average total assets}}\n$$\n\n$$\n\\text{Receivables turnover} = \\frac{\\text{revenue}}{\\text{average trade receivables}}\n$$"
-    },
-    {
-      "case_id": "CASE 6.4.010",
-      "title": "Asset Composition Chart 10",
-      "subsection": "6.4",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
-      "statements": [
-        "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
-        "Working capital of €133 thousand is positive on this balance sheet.",
-        "The debt ratio exceeds 56%.",
-        "Trade receivables make up less than 48.5% of current assets.",
-        "Cash and cash equivalents make up more than 23.1% of current assets."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nBalance sheets and income statements are not only for managers. Tax authorities and banks also read them when assessing tax or credit — exactly the outside decision makers the claim names.\n\nSo the statement is True.",
-        "**B.** → True\n\nCurrent assets on this sheet are inventory, trade receivables and cash; current liabilities are trade payables and the bank overdraft:\n\n$$\n156+81+119=356\n$$\n\n$$\n197+26=223\n$$\n\nWorking capital is the difference:\n\n$$\n356-223=133>0\n$$\n\nEUR $133$ thousand of positive working capital matches the claim.\n\nSo the statement is True.",
-        "**C.** → True\n\nDebt ratio compares total liabilities with total assets on the sheet:\n\n$$\n\\dfrac{703}{1181}\\approx 0.595=59.5\\%\n$$\n\n$$\n59.5\\%>56\\%\n$$\n\nLiabilities are about $59.5\\%$ of the balance-sheet total, clearing the $56\\%$ floor.\n\nSo the statement is True.",
-        "**D.** → True\n\nCurrent assets total $156+81+119=356$. Trade receivables as a share:\n\n$$\n\\dfrac{81}{356}\\approx 0.227=22.7\\%\n$$\n\n$$\n22.7\\%<48.5\\%\n$$\n\nReceivables are well below the $48.5\\%$ ceiling.\n\nSo the statement is True.",
-        "**E.** → True\n\nCash as a share of the same current-asset total $356$:\n\n$$\n\\dfrac{119}{356}\\approx 0.334=33.4\\%\n$$\n\n$$\n33.4\\%>23.1\\%\n$$\n\nCash clears the $23.1\\%$ floor.\n\nSo the statement is True."
+        "Replacing a cracked screen is labour performed for the customer, a service. A phone case sold at the counter is a tangible good. PhoneFix can offer both in one visit.\n\nSo the statement is True.",
+        "Spare parts arrive in limited monthly batches. Being a business does not create unlimited stock. When the batch runs down, further repairs wait. Scarcity of parts is exactly why the shop must prioritise jobs.\n\nSo the statement is False.",
+        "A decorative case bought for design rather than protection serves appearance and preference. That is a want, not a basic need for well-being. Functionally necessary repairs differ from optional styling accessories.\n\nSo the statement is True.",
+        "A working phone often supports work, school contact, and safety. Repairing it can restore a practical need, not merely a luxury whim. Excluding phones from economic analysis is artificial.\n\nSo the statement is False.",
+        "A fixed monthly parts batch cannot cover every cracked screen that walks in. PhoneFix must decide which jobs to accept, which to delay, and how to stretch inventory. That prioritisation is economising under scarcity. Unlimited-parts thinking would remove the need to choose; limited batches force ranking. The statement links the shop's constraint to careful allocation correctly.\n\nSo the statement is True."
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Read current assets as inventory + trade receivables + cash and current liabilities as trade payables + bank overdraft, adding each extract line on its own step. Non-current assets are buildings, machinery, office equipment and patents; non-current liabilities are the long-term bank loan and bonds payable. Totals close at assets 1181, equity 478 and liabilities 703. Working capital is CA − CL; the debt ratio is total liabilities ÷ total assets; composition shares are the named current-asset line ÷ CA.\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$\n\n$$\n\\text{Debt ratio} = \\frac{\\text{total liabilities}}{\\text{total assets}}\n$$\n\n$$\n\\text{Composition share} = \\frac{\\text{named line}}{\\text{current assets}}\n$$"
+      "difficulty_level": "5/5"
     },
     {
-      "case_id": "CASE 6.2.039",
-      "title": "Liquidity From the Balance Sheet 39",
-      "subsection": "6.2",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
+      "case_id": "CASE 2.2.15",
+      "title": "Bergdorf council budget",
+      "subsection": "2.2",
+      "chapter": 2,
+      "context": "Bergdorf has €90,000 for either a skate park or a library renovation this year, not both. Evaluate the following economic assertions:",
       "statements": [
-        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
-        "The current ratio exceeds 1.28.",
-        "Working capital of €144 thousand is positive on this balance sheet.",
-        "Buildings make up more than 47.1% of total assets."
+        "Scarcity applies only to money, never to time, land, or labour hours.",
+        "Households never face opportunity cost because wants are unlimited and budgets do not constrain them.",
+        "Because councils can raise taxes in principle, this year's 90,000-euro budget is not scarce.",
+        "Opportunity cost exists only for registered companies, not for individuals or students.",
+        "Choosing the library means opportunity cost is the skate park's benefit, not both projects combined."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Scarcity covers time, land, labour, and materials as well as money. Restricting it to cash alone is too narrow for Bergdorf's choices and for economics generally.\n\nSo the statement is False.",
+        "Unlimited wants meet limited household budgets, which is why opportunity cost appears at home. Claiming households never face it reverses the usual scarcity story. Budgets constrain families constantly.\n\nSo the statement is False.",
+        "Councils can raise taxes in principle, yet this year's 90,000 euros is already fixed for the skate park versus library choice. Future revenue tools do not make the current envelope non-scarce. Bergdorf still picks one project now. Treating potential tax rises as proof of non-scarcity would excuse every public trade-off from analysis.\n\nSo the statement is False.",
+        "Individuals and students forgo alternatives whenever they allocate scarce time or money. Opportunity cost is not a company-only concept. A student's study hours illustrate it as clearly as a firm's investment.\n\nSo the statement is False.",
+        "Choosing the library forgoes the skate park's benefit, not a fantasy sum of both projects. Opportunity cost is the next-best forgone project, one alternative.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 3.4.01",
+      "title": "EU micro staff ceiling",
+      "subsection": "3.4",
+      "chapter": 3,
+      "context": "Consider a workshop that employs nine people with €1.8m turnover. Evaluate the following economic assertions:",
+      "statements": [
+        "Because staff are below ten, a firm remains a micro enterprise despite turnover above €2m.",
+        "Forty-five staff alone guarantees small classification even if turnover exceeds €10m.",
+        "Meeting the staff ceiling alone is sufficient for micro status regardless of turnover or balance sheet totals.",
+        "Under the EU definition, a micro enterprise may employ fewer than ten people.",
+        "A firm qualifies as micro because its balance sheet is below €2m, regardless of turnover above €2m."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Headcount under ten is only one micro test. Turnover above €2m can still block micro status even with a tiny payroll. Staff alone never completes the EU micro definition.\n\nSo the statement is False.",
+        "Forty-five staff sit inside the small employee band, yet turnover above €10m can push the firm out of small status. Headcount guarantees nothing once the financial caps are breached.\n\nSo the statement is False.",
+        "Micro status needs fewer than ten people plus a financial test: turnover or balance sheet not above €2m. Meeting the staff ceiling while blowing past both financial caps fails the definition.\n\nA nine-person firm with €3m turnover and a €3m balance sheet is not micro under those figures. Staff sufficiency alone is therefore not enough for the label.\n\nSo the statement is False.",
+        "Under the EU definition, a micro enterprise may employ fewer than ten people as its staff ceiling. That headcount limit is the employment half of the micro tests.\n\nSo the statement is True.",
+        "A balance sheet below €2m helps only if the other micro tests also hold. Turnover above €2m can still disqualify micro status even when the balance sheet looks small.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.51",
+      "title": "Alpine Sensors AG as a Separate Legal Person",
+      "subsection": "4.3",
+      "chapter": 4,
+      "context": "Three engineers incorporate Alpine Sensors AG in Austria so the firm itself can hold patents, hire staff, and face suppliers in its own name. Evaluate the following economic assertions:",
+      "statements": [
+        "Once incorporated, Alpine Sensors AG is a legal entity of its own with rights and obligations comparable to those of natural persons in business life.",
+        "As a legal person, Alpine Sensors AG can own laboratory equipment and land, hire technicians, and close supply contracts in the company’s name.",
+        "If a supplier sues over unpaid circuit boards, the lawsuit is brought against Alpine Sensors AG rather than automatically against each engineer’s private name.",
+        "The founding engineers must personally manage every production shift because shareholders of a corporation are always also its day-to-day managers.",
+        "A hired plant manager at Alpine Sensors AG may run operations without owning any shares in the company."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Incorporation gives Alpine Sensors AG its own legal personality. The company holds rights and duties in business life much as a natural person would when owning assets, hiring, or contracting, separate from the three engineers as private individuals.\n\nSo the statement is True.",
+        "As a legal person, Alpine Sensors AG can own lab gear and land, employ technicians, and sign supply contracts in the company name. Those acts attach to the firm, not to each founder’s private identity.\n\nSo the statement is True.",
+        "Supplier suits over unpaid boards are filed against Alpine Sensors AG as the contracting party. Creditors pursue the corporate defendant first rather than automatically naming every engineer’s private identity as the debtor on the face of the claim.\n\nSo the statement is True.",
+        "Shareholders fund and own the corporation; they are not forced to run every production shift. Alpine Sensors AG can hire managers and operators while founders remain owners without day-to-day shop-floor duty. Equating ownership with mandatory personal management confuses equity stakes with employment roles. Many corporations deliberately separate investors from operators so specialists run production. The engineers may choose to work in the plant, but corporate form does not compel that identity of owner and manager for every shift.\n\nSo the statement is False.",
+        "A hired plant manager can direct operations with zero shareholding. Management authority comes from appointment and employment, not from an automatic equity ticket, which is why ownership and operational control can diverge inside Alpine Sensors AG.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.6.13",
+      "title": "Working Capital and Short-Term Credit",
+      "subsection": "4.6",
+      "chapter": 4,
+      "context": "Consider a construction firm covering payroll gaps with short-term bank loans while shareholders debate whether to inject equity instead of adding more debt. Evaluate the following economic assertions:",
+      "statements": [
+        "A business with a high proportion of loan capital might have difficulties obtaining more credit.",
+        "High gearing means capital expenditure should be funded only through additional bank loans at any interest rate offered.",
+        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered.",
+        "Revenue expenditure must never use short-term trade credit when the balance sheet already lists any loan capital.",
+        "Administration costs of bond issues are ignored because only equity carries issuance expenses."
       ],
       "answer_key": [
         true,
         false,
         true,
-        true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nStraight-line depreciation spreads the depreciable cost evenly over useful life, so each year carries the same charge. That is the rule the claim describes.\n\nSo the statement is True.",
-        "**B.** → False\n\nSum the current lines first:\n\n$$\n119+60+97=276,\\qquad 74+58=132\n$$\n\nAfter excluding inventory from the asset side:\n\n$$\n\\dfrac{276-119}{132}=\\dfrac{157}{132}\\approx 1.19\n$$\n\nThe claim wants coverage above $1.35$:\n\n$$\n1.19\\ngtr 1.35\n$$\n\nQuick coverage is only about $1.19$, so the statement is false.\n\nSo the statement is False.",
-        "**C.** → True\n\nFrom letter B the current totals are assets $276$ and liabilities $132$:\n\n$$\n\\dfrac{276}{132}\\approx 2.09\n$$\n\n$$\n2.09>1.28\n$$\n\nThe current ratio exceeds $1.28$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\n276-132=144>0\n$$\n\nWorking capital of EUR $144$ thousand is positive.\n\nSo the statement is True.",
-        "**E.** → False\n\nBuildings as a share of total assets:\n\n$$\n\\dfrac{307}{860}\\approx 0.357=35.7\\%\n$$\n\nThe claim wants more than $47.1\\%$:\n\n$$\n35.7\\%\\ngtr 47.1\\%\n$$\n\nBuildings are only about a third of the sheet, well short of the claimed share.\n\nSo the statement is False."
+        "A business with a high proportion of loan capital might have difficulties obtaining more credit. Lenders already see elevated repayment risk before the next facility is discussed.\n\nSo the statement is True.",
+        "High gearing argues against funding capital expenditure only through additional bank loans at any rate offered. Internal funds or investors can be safer than accepting every expensive debt offer on the table.\n\nSo the statement is False.",
+        "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered. Security becomes a gate when unsecured appetite is already exhausted by existing loans. Higher interest alone may not suffice if the lender wants assets pledged against further exposure. The construction firm's equity debate sits beside that collateral reality when debt is already heavy.\n\nSo the statement is True.",
+        "Revenue expenditure may still use short-term trade credit even when some loan capital already appears on the balance sheet. A blanket ban on supplier credit whenever any loan exists overstates gearing caution.\n\nSo the statement is False.",
+        "Bond issues also carry administration and flotation expenses, not only equity issues. Ignoring bond issuance costs because 'only equity has fees' misreads the cost comparison.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each line separately before forming ratios. Non-current assets total buildings + machinery + office equipment + patents. After inventory is stripped out, the quick (acid-test) cover is (CA − inventory) ÷ CL. Working capital is CA − CL; composition of buildings uses buildings ÷ total assets.\n\n$$\n\\text{Current ratio} = \\frac{\\text{CA}}{\\text{CL}}\n$$\n\n$$\n\\text{Quick ratio} = \\frac{\\text{CA} - \\text{inventory}}{\\text{CL}}\n$$\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$"
+      "difficulty_level": "5/5"
     },
     {
-      "case_id": "CASE 6.3.027",
-      "title": "Comparative Balance Sheet Analysis 27",
-      "subsection": "6.3",
-      "chapter": null,
-      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:\n",
+      "case_id": "CASE 5.7.115",
+      "title": "BlueCompass Elastic Laptop Demand",
+      "subsection": "5.7",
+      "chapter": 5,
+      "context": "BlueCompass Apps also resells used laptops; a 20% price cut lifts quantity about 43%. Evaluate the following economic assertions:",
       "statements": [
-        "Total equity grew by more than 21.7% between Year 1 and Year 2.",
-        "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
-        "Non-current liabilities amount to less than 91.7% of total equity in Year 2.",
-        "Current liabilities are covered by current assets less than 2.02 times over in Year 2.",
-        "Total assets grew by more than 12.2% between Year 1 and Year 2."
+        "Demand is elastic if the percentage change in demand exceeds the percentage price adjustment.",
+        "In the book’s laptop example, elasticity measured from the initial point is about −2.15 in magnitude greater than 1, so demand is elastic.",
+        "Elastic demand means price adjustments may make sense because quantity responses are relatively large.",
+        "For some software licences in the book, a price cut raises quantity by less than the price change, so demand is inelastic and revenues can fall.",
+        "Elasticity is always identical in the short run and the long run for every product."
       ],
       "answer_key": [
-        false,
+        true,
         true,
         true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nTotal equity runs from $542$ in Year 1 to $532$ in Year 2. Percentage change:\n\n$$\n\\dfrac{532-542}{542}=\\dfrac{-10}{542}\\approx -0.018=-1.8\\%\n$$\n\nEquity fell by about $1.8\\%$. The claim wants growth above $21.7\\%$, which is the wrong direction and the wrong magnitude.\n\nSo the statement is False.",
-        "**B.** → True\n\nInventory, trade receivables and cash are meant to turn into cash or be used within a year. That higher liquidity is why they sit among current assets rather than with long-lived plant.\n\nSo the statement is True.",
-        "**C.** → True\n\nYear-2 non-current liabilities are the long-term bank loan plus bonds payable:\n\n$$\n388+53=441\n$$\n\nYear-2 total equity is $532$. Their ratio:\n\n$$\n\\dfrac{441}{532}\\approx 0.829=82.9\\%\n$$\n\n$$\n82.9\\%<91.7\\%\n$$\n\nNon-current liabilities are less than $91.7\\%$ of equity in Year 2.\n\nSo the statement is True.",
-        "**D.** → True\n\nYear-2 current assets and current liabilities from the sheet:\n\n$$\n85+193+58=336\n$$\n\n$$\n104+67=171\n$$\n\nCoverage:\n\n$$\n\\dfrac{336}{171}\\approx 1.96\n$$\n\n$$\n1.96<2.02\n$$\n\nCurrent assets cover current liabilities less than $2.02$ times over, as claimed.\n\nSo the statement is True.",
-        "**E.** → False\n\nTotal assets run from $1{,}102$ to $1{,}144$:\n\n$$\n\\dfrac{1144-1102}{1102}=\\dfrac{42}{1102}\\approx 0.038=3.8\\%\n$$\n\n$$\n3.8\\%\\ngtr 12.2\\%\n$$\n\nAssets grew by only about $3.8\\%$, far short of the claimed $12.2\\%$ hurdle.\n\nSo the statement is False."
+        "Demand is elastic when the percentage quantity change exceeds the percentage price change. Quantity moves more than price in relative terms. That comparison is the elasticity test named here.\n\nSo the statement is True.",
+        "In the book's laptop example, elasticity from the initial point is about -2.15 in magnitude, greater than 1, so demand counts as elastic. Relative quantity response outruns the price move. The statement reports that elastic reading correctly.\n\nSo the statement is True.",
+        "When demand is elastic, quantity responds strongly to price moves, so price adjustments can matter for revenue and volume planning. Weak responses would make fine price tweaks less powerful. Elasticity therefore informs whether price tools are likely to shift sales a lot. The statement links elastic demand to the usefulness of price adjustments for that reason.\n\nSo the statement is True.",
+        "For some software licences in the book, a price cut raises quantity by less than the price change, so demand is inelastic and revenues can fall. Weak quantity response fails to offset the lower fee. The statement records that inelastic outcome correctly.\n\nSo the statement is True.",
+        "Elasticity can differ between short run and long run for many products. Claiming identical values for every product forever is too absolute. Time horizon matters for the measure.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Year-1 and Year-2 totals close at 1102 and 1144. Pull every Year-2 (or Year-1) line onto its own step before summing. Total equity moves from 542 to 532; Year-2 non-current liabilities are the long-term bank loan plus bonds payable; Year-2 current assets are inventory + receivables + cash and current liabilities are payables + overdraft. Percentage growth always uses (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{Current ratio} = \\frac{\\text{CA}}{\\text{CL}}\n$$"
+      "difficulty_level": "5/5"
     },
     {
-      "case_id": "CASE 6.1.020",
-      "title": "Balance Sheet Structure Review 20",
+      "case_id": "CASE 6.1.009",
+      "title": "Liquidity From the Balance Sheet 9",
       "subsection": "6.1",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:\n",
+      "chapter": 6,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 409 |\n| Machinery | 265 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 72 |\n| Inventory | 201 |\n| Trade receivables | 163 |\n| Cash and cash equivalents | 42 |\n| Total assets | **1192** |\n| **EQUITY** | |\n| Share capital | 183 |\n| Retained earnings | 444 |\n| Total equity | **627** |\n| **LIABILITIES** | |\n| Long-term bank loan | 328 |\n| Bonds payable | 78 |\n| Trade payables | 101 |\n| Bank overdraft | 58 |\n| Total liabilities | **565** |\n| Total equity and liabilities | **1192** |\n\nEvaluate the following economic assertions:\n",
       "statements": [
-        "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
-        "The current ratio is below 0.93.",
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.24 times over.",
-        "The equity ratio is below 33.7%.",
-        "The debt ratio exceeds 47.8%."
+        "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+        "The current ratio exceeds 1.47.",
+        "Working capital of €247 thousand is positive on this balance sheet.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 0.64 times over.",
+        "The current ratio is below 0.72."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nOwner's equity is the residual claim after liabilities, not the slice financed by banks or trade creditors. Loans and trade payables sit in the liabilities block.\n\nSo the statement is False.",
+        "**B.** → True\n\nCurrent assets are inventory, trade receivables and cash. Current liabilities are trade payables and the bank overdraft.\n\n$$\n201 + 163 + 42 = 406\n$$\n\n$$\n101 + 58 = 159\n$$\n\n$$\n\\dfrac{406}{159} \\approx 2.55\n$$\n\n$$\n2.55 > 1.47\n$$\n\nThe current ratio is about $2.55$, above $1.47$.\n\nSo the statement is True.",
+        "**C.** → True\n\nWorking capital is current assets minus current liabilities:\n\n$$\n406 - 159 = 247\n$$\n\nEUR $247$ thousand is positive, matching the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nDrop inventory from current assets, then compare with the same current liabilities:\n\n$$\n406 - 201 = 205\n$$\n\n$$\n\\dfrac{205}{159} \\approx 1.29\n$$\n\n$$\n1.29 > 0.64\n$$\n\nThe quick cover is about $1.29$ times, above $0.64$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe current ratio from letter B is about $2.55$:\n\n$$\n2.55 > 0.72\n$$\n\nA ratio of about $2.55$ is not below $0.72$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Current assets are inventory, trade receivables and cash. Current liabilities are trade payables and the bank overdraft. Working capital is CA − CL. The current ratio is CA ÷ CL. The quick cover drops inventory before dividing by CL."
+    },
+    {
+      "case_id": "CASE 6.2.002",
+      "title": "Profit and Loss Over Two Years 2",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1055 | 1281 |\n| Cost of sales | (644) | (787) |\n| Gross profit | 411 | 494 |\n| Distribution costs | (35) | (49) |\n| General and administrative costs | (38) | (48) |\n| Other operating result | 4 | 3 |\n| Operating result | 342 | 400 |\n| Finance costs | (22) | (26) |\n| Finance costs – net | (19) | (22) |\n| Profit before tax | 323 | 378 |\n| Income taxes | (69) | (79) |\n| Profit for the year | 254 | 299 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
+        "The gross profit margin, gross profit taken as a share of revenue, is more than 4.8 percentage points higher in Year 2 than in Year 1.",
+        "Revenue grew by more than 19.8% between Year 1 and Year 2.",
+        "The operating result grew by more than 37.5% between Year 1 and Year 2.",
+        "The operating result covers finance costs more than 9.14 times over in Year 1."
       ],
       "answer_key": [
         true,
         false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nCash spent on plant, machinery or another long-term asset is an investing outflow. It is not an operating cash flow.\n\nSo the statement is True.",
+        "**B.** → False\n\nGross margin is gross profit divided by revenue.\n\n$$\n\\dfrac{411}{1055} \\approx 0.390 = 39.0\\%\n$$\n\n$$\n\\dfrac{494}{1281} \\approx 0.386 = 38.6\\%\n$$\n\n$$\n38.6 - 39.0 = -0.4\n$$\n\nYear 2 is about $0.4$ percentage points lower, not more than $4.8$ points higher.\n\nSo the statement is False.",
+        "**C.** → True\n\nRevenue growth is the change divided by Year 1:\n\n$$\n\\dfrac{1281 - 1055}{1055} = \\dfrac{226}{1055} \\approx 0.214 = 21.4\\%\n$$\n\n$$\n21.4\\% > 19.8\\%\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nOperating-result growth:\n\n$$\n\\dfrac{400 - 342}{342} = \\dfrac{58}{342} \\approx 0.170 = 17.0\\%\n$$\n\n$$\n17.0\\% \\ngtr 37.5\\%\n$$\n\nGrowth is about $17\\%$, not above $37.5\\%$.\n\nSo the statement is False.",
+        "**E.** → True\n\nInterest cover in Year 1 is operating result divided by finance costs:\n\n$$\n\\dfrac{342}{22} \\approx 15.55\n$$\n\n$$\n15.55 > 9.14\n$$\n\nThe operating result covers finance costs about $15.5$ times, above $9.14$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Gross margin is gross profit ÷ revenue. Growth is (Year 2 − Year 1) ÷ Year 1. Interest cover in Year 1 is operating result ÷ finance costs. A cash purchase of plant is an investing cash flow."
+    },
+    {
+      "case_id": "CASE 6.2.006",
+      "title": "Cash Flow Statement Over Two Years 6",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 314 | 359 |\n| Cash flow from investing activities | (347) | (299) |\n| Dividends paid | (39) | (56) |\n| Proceeds from new borrowing | 60 | 50 |\n| Cash flow from financing activities | 21 | (6) |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "A negative cash flow from investing activities always proves the business is in financial trouble.",
+        "Cash flow from operating activities grew by more than 13.7% from Year 1 to Year 2.",
+        "Cash flow from financing activities was higher in Year 2 than in Year 1.",
+        "The increase in dividends paid from Year 1 to Year 2 was proportionally smaller than the increase in cash flow from operating activities.",
+        "Paying dividends is classified as an investing cash outflow because it uses cash belonging to shareholders."
+      ],
+      "answer_key": [
+        false,
+        true,
         false,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNon-current assets such as buildings and machinery are held to serve the business for longer than one year. That timing test is what the claim states.\n\nSo the statement is True.",
-        "**B.** → False\n\nCurrent assets and current liabilities:\n\n$$\n136+162+34=332\n$$\n\n$$\n150+48=198\n$$\n\nCurrent ratio:\n\n$$\n\\dfrac{332}{198}\\approx 1.68\n$$\n\nThe claim says the ratio is below $0.93$:\n\n$$\n1.68\\nless 0.93\n$$\n\nAbout $1.68$ sits well above $0.93$, so the statement is false.\n\nSo the statement is False.",
-        "**C.** → False\n\nFrom letter B the current totals are assets $332$ and liabilities $198$. Strip inventory from the asset side:\n\n$$\n\\dfrac{332-136}{198}=\\dfrac{196}{198}\\approx 0.99\n$$\n\nThe claim wants quick coverage above $1.24$:\n\n$$\n0.99\\ngtr 1.24\n$$\n\nAbout $0.99$ misses that bar, so the statement is false.\n\nSo the statement is False.",
-        "**D.** → False\n\nEquity ratio is total equity over total assets:\n\n$$\n\\dfrac{718}{1206}\\approx 0.595=59.5\\%\n$$\n\nThe claim says the ratio is below $33.7\\%$:\n\n$$\n59.5\\%\\nless 33.7\\%\n$$\n\nAbout $59.5\\%$ is nearly double the claimed ceiling, so the statement fails.\n\nSo the statement is False.",
-        "**E.** → False\n\nTotal liabilities over total assets:\n\n$$\n\\dfrac{488}{1206}\\approx 0.405=40.5\\%\n$$\n\n$$\n40.5\\%\\ngtr 47.8\\%\n$$\n\nThe debt ratio is about $40.5\\%$, which does not exceed $47.8\\%$.\n\nSo the statement is False."
+        "**A.** → False\n\nA negative investing cash flow often means the firm bought long-term assets. That can be expansion, not distress. The sign alone does not prove financial trouble.\n\nSo the statement is False.",
+        "**B.** → True\n\nOperating cash flow growth:\n\n$$\n\\dfrac{359 - 314}{314} = \\dfrac{45}{314} \\approx 0.143 = 14.3\\%\n$$\n\n$$\n14.3\\% > 13.7\\%\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nFinancing cash flow is $21$ in Year 1 and $-6$ in Year 2.\n\n$$\n-6 < 21\n$$\n\nYear 2 is lower, not higher.\n\nSo the statement is False.",
+        "**D.** → False\n\nDividend growth versus operating-cash growth:\n\n$$\n\\dfrac{56 - 39}{39} = \\dfrac{17}{39} \\approx 43.6\\%\n$$\n\n$$\n\\dfrac{45}{314} \\approx 14.3\\%\n$$\n\n$$\n43.6\\% > 14.3\\%\n$$\n\nThe dividend increase is proportionally larger, not smaller.\n\nSo the statement is False.",
+        "**E.** → False\n\nDividends paid to owners are a financing outflow. They are not classified as investing just because the cash belongs to shareholders.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each extract line on its own step. Total assets 1206, total equity 718 and total liabilities 488 close the sheet. The current ratio is CA ÷ CL; the quick ratio strips inventory from CA before dividing by CL; equity and debt ratios use the sheet totals.\n\n$$\n\\text{Current ratio} = \\frac{\\text{CA}}{\\text{CL}}\n$$\n\n$$\n\\text{Quick ratio} = \\frac{\\text{CA} - \\text{inventory}}{\\text{CL}}\n$$\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}, \\quad \\text{Debt ratio} = \\frac{\\text{total liabilities}}{\\text{total assets}}\n$$"
+      "solution_overview": "Compare each cash-flow heading year on year. Growth is (Year 2 − Year 1) ÷ Year 1. Dividends paid belong to financing, not investing. A negative investing total can be asset purchases rather than distress."
     },
     {
-      "case_id": "CASE 6.5.068",
-      "title": "Balance Sheet Structure Review 68",
+      "case_id": "CASE 6.MOCK.DEMO.CHART",
+      "title": "Share Price Chart — Market Cap, P/E and Dividend Yield",
       "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 225 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 215 |\n| Trade receivables | 156 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1089** |\n| **EQUITY** | |\n| Share capital | 146 |\n| Retained earnings | 301 |\n| Total equity | **447** |\n| **LIABILITIES** | |\n| Long-term bank loan | 286 |\n| Bonds payable | 89 |\n| Trade payables | 228 |\n| Bank overdraft | 39 |\n| Total liabilities | **642** |\n| Total equity and liabilities | **1089** |\n\nEvaluate the following economic assertions:\n",
+      "chapter": 6,
+      "context": "Steinbach Mobility AG is listed on the Vienna Stock Exchange. At the latest closing price the company has 8 million shares outstanding. Earnings for the last financial year were €9.6 million, and the board paid a cash dividend of €0.72 per share.\n\n[[CHART type=\"line\" title=\"Steinbach Mobility AG closing share price (€)\"]]\nJan | Price=14.00\nFeb | Price=14.60\nMar | Price=15.20\nApr | Price=14.90\nMay | Price=15.80\nJun | Price=16.40\nJul | Price=17.10\nAug | Price=16.70\nSep | Price=17.30\nOct | Price=17.80\nNov | Price=18.10\nDec | Price=18.40\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Closing share price (Dec) | €18.40 |\n| Shares outstanding | 8,000,000 |\n| Annual earnings | €9,600,000 |\n| Dividend per share | €0.72 |\n\nEvaluate the following economic assertions:\n",
       "statements": [
-        "The current ratio is below 0.78.",
-        "The current ratio exceeds 1.53.",
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.25 times over.",
-        "Working capital of €184 thousand is positive on this balance sheet.",
-        "Trade receivables make up less than 55% of current assets."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nCurrent assets and current liabilities:\n\n$$\n215+156+80=451\n$$\n\n$$\n228+39=267\n$$\n\nCurrent ratio:\n\n$$\n\\dfrac{451}{267}\\approx 1.69\n$$\n\nThe claim says the ratio is below $0.78$:\n\n$$\n1.69\\nless 0.78\n$$\n\nAbout $1.69$ is far above $0.78$, so the statement fails.\n\nSo the statement is False.",
-        "**B.** → True\n\nFrom letter A the current ratio is about $1.69$:\n\n$$\n1.69>1.53\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nCurrent assets $451$ and current liabilities $267$ from letter A. After excluding inventory:\n\n$$\n\\dfrac{451-215}{267}=\\dfrac{236}{267}\\approx 0.88\n$$\n\nThe claim wants that quick ratio above $1.25$:\n\n$$\n0.88\\ngtr 1.25\n$$\n\nAbout $0.88$ is well short, so the statement is false.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\n451-267=184>0\n$$\n\nWorking capital of EUR $184$ thousand is positive.\n\nSo the statement is True.",
-        "**E.** → True\n\nTrade receivables over current assets $451$:\n\n$$\n\\dfrac{156}{451}\\approx 0.346=34.6\\%\n$$\n\n$$\n34.6\\%<55\\%\n$$\n\nReceivables sit comfortably below the $55\\%$ ceiling.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each extract line separately before forming any ratio. Total assets close at 1089. Working capital is CA − CL; the current ratio is CA ÷ CL; the quick ratio strips inventory before dividing by CL; composition shares use the named line ÷ CA.\n\n$$\n\\text{Current ratio} = \\frac{\\text{CA}}{\\text{CL}}\n$$\n\n$$\n\\text{Quick ratio} = \\frac{\\text{CA} - \\text{inventory}}{\\text{CL}}\n$$\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$"
-    },
-    {
-      "case_id": "CASE 6.5.074",
-      "title": "Balance Sheet Structure Review 74",
-      "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 305 |\n| Machinery | 176 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 169 |\n| Trade receivables | 103 |\n| Cash and cash equivalents | 83 |\n| Total assets | **933** |\n| **EQUITY** | |\n| Share capital | 298 |\n| Retained earnings | -8 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 70 |\n| Trade payables | 143 |\n| Bank overdraft | 34 |\n| Total liabilities | **643** |\n| Total equity and liabilities | **933** |\n\nEvaluate the following economic assertions:\n",
-      "statements": [
-        "The current ratio exceeds 1.8.",
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.14 times over.",
-        "Buildings make up more than 43.4% of total assets.",
-        "The long-term bank loan of €396 thousand should be classified within equity rather than liabilities.",
-        "Working capital of €178 thousand is positive on this balance sheet."
+        "Market capitalisation at the December close exceeds €140 million.",
+        "Earnings per share for the year equal €1.50.",
+        "The price/earnings ratio at the December close is greater than 15.",
+        "The dividend yield on the December close is below 3%.",
+        "The December close is more than 25% above the January close."
       ],
       "answer_key": [
         true,
         false,
-        false,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCurrent assets and current liabilities:\n\n$$\n169+103+83=355,\\qquad 143+34=177\n$$\n\n$$\n\\dfrac{355}{177}\\approx 2.01\n$$\n\n$$\n2.01>1.8\n$$\n\nThe current ratio clears $1.8$.\n\nSo the statement is True.",
-        "**B.** → False\n\nFrom letter A the current totals are assets $355$ and liabilities $177$. Strip inventory:\n\n$$\n\\dfrac{355-169}{177}=\\dfrac{186}{177}\\approx 1.05\n$$\n\nThe claim wants coverage above $1.14$:\n\n$$\n1.05\\ngtr 1.14\n$$\n\nAbout $1.05$ misses $1.14$, so the statement fails.\n\nSo the statement is False.",
-        "**C.** → False\n\nBuildings over total assets:\n\n$$\n\\dfrac{305}{933}\\approx 0.327=32.7\\%\n$$\n\n$$\n32.7\\%\\ngtr 43.4\\%\n$$\n\nBuildings are about a third of the sheet, short of the claimed $43.4\\%$.\n\nSo the statement is False.",
-        "**D.** → False\n\nA long-term bank loan is money owed to the lender. It belongs among liabilities, not equity. The EUR $396$ thousand loan is not an ownership claim.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\n355-177=178>0\n$$\n\nWorking capital of EUR $178$ thousand is positive.\n\nSo the statement is True."
+        "**A.** → True\n\nMarket capitalisation is the December close times shares outstanding:\n\n$$\n18.40 \\times 8{,}000{,}000 = 147{,}200{,}000\n$$\n\n$$\n147.2 \\text{ million} > 140 \\text{ million}\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nEarnings per share are annual earnings divided by shares outstanding:\n\n$$\n\\dfrac{9{,}600{,}000}{8{,}000{,}000} = 1.20\n$$\n\nThe claim says €$1.50$. The computed EPS is €$1.20$.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe price/earnings ratio uses the December close and EPS from letter B:\n\n$$\n\\dfrac{18.40}{1.20} \\approx 15.33\n$$\n\n$$\n15.33 > 15\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nDividend yield is the cash dividend divided by the December close:\n\n$$\n\\dfrac{0.72}{18.40} \\approx 0.0391 = 3.91\\%\n$$\n\n$$\n3.91\\% \\nless 3\\%\n$$\n\nThe yield is about $3.91\\%$, not below $3\\%$.\n\nSo the statement is False.",
+        "**E.** → True\n\nRead January from the chart ($14.00$) and December from the close ($18.40$):\n\n$$\n\\dfrac{18.40 - 14.00}{14.00} = \\dfrac{4.40}{14.00} \\approx 0.314 = 31.4\\%\n$$\n\n$$\n31.4\\% > 25\\%\n$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each line on its own step. Total assets are 933; the long-term bank loan of EUR 396 thousand sits with non-current liabilities, not equity. Working capital is CA − CL; the current ratio is CA ÷ CL; the quick ratio strips inventory before dividing by CL; buildings share uses buildings ÷ total assets.\n\n$$\n\\text{Current ratio} = \\frac{\\text{CA}}{\\text{CL}}\n$$\n\n$$\n\\text{Quick ratio} = \\frac{\\text{CA} - \\text{inventory}}{\\text{CL}}\n$$\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$"
-    },
-    {
-      "case_id": "CASE 6.5.060",
-      "title": "Liquidity From the Balance Sheet 60",
-      "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 474 |\n| Machinery | 153 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 97 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 104 |\n| Total assets | **963** |\n| **EQUITY** | |\n| Share capital | 119 |\n| Retained earnings | 191 |\n| Total equity | **310** |\n| **LIABILITIES** | |\n| Long-term bank loan | 424 |\n| Bonds payable | 51 |\n| Trade payables | 114 |\n| Bank overdraft | 64 |\n| Total liabilities | **653** |\n| Total equity and liabilities | **963** |\n\nEvaluate the following economic assertions:\n",
-      "statements": [
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.22 times over.",
-        "The equity ratio is below 28.8%.",
-        "Working capital of €102 thousand is positive on this balance sheet.",
-        "Buildings make up more than 55.3% of total assets.",
-        "Inventory make up more than 46% of current assets."
-      ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nCurrent assets and current liabilities:\n\n$$\n97+79+104=280\n$$\n\n$$\n114+64=178\n$$\n\nAfter excluding inventory:\n\n$$\n\\dfrac{280-97}{178}=\\dfrac{183}{178}\\approx 1.03\n$$\n\n$$\n1.03\\ngtr 1.22\n$$\n\nQuick coverage is only about $1.03$, short of $1.22$.\n\nSo the statement is False.",
-        "**B.** → False\n\nEquity over total assets:\n\n$$\n\\dfrac{310}{963}\\approx 0.322=32.2\\%\n$$\n\n$$\n32.2\\%\\nless 28.8\\%\n$$\n\nThe equity ratio is about $32.2\\%$, above — not below — $28.8\\%$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\n280-178=102>0\n$$\n\nWorking capital of EUR $102$ thousand is positive.\n\nSo the statement is True.",
-        "**D.** → False\n\nBuildings over total assets:\n\n$$\n\\dfrac{474}{963}\\approx 0.492=49.2\\%\n$$\n\n$$\n49.2\\%\\ngtr 55.3\\%\n$$\n\nBuildings are about $49.2\\%$ of the sheet, short of $55.3\\%$.\n\nSo the statement is False.",
-        "**E.** → False\n\nInventory over current assets $280$:\n\n$$\n\\dfrac{97}{280}\\approx 0.346=34.6\\%\n$$\n\n$$\n34.6\\%\\ngtr 46\\%\n$$\n\nInventory is about $34.6\\%$ of current assets, short of the claimed $46\\%$.\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each extract line separately. Total assets 963 and total equity 310 close the financing side. The quick ratio is (CA − inventory) ÷ CL; the equity ratio is equity ÷ total assets; working capital is CA − CL; composition shares use buildings ÷ TA and inventory ÷ CA.\n\n$$\n\\text{Quick ratio} = \\frac{\\text{CA} - \\text{inventory}}{\\text{CL}}\n$$\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$"
-    },
-    {
-      "case_id": "CASE 6.5.077",
-      "title": "Balance Sheet Structure Review 77",
-      "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 124 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 231 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1214** |\n| **EQUITY** | |\n| Share capital | 110 |\n| Retained earnings | 474 |\n| Total equity | **584** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 47 |\n| Trade payables | 153 |\n| Bank overdraft | 84 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **1214** |\n\nEvaluate the following economic assertions:\n",
-      "statements": [
-        "Working capital of €279 thousand is positive on this balance sheet.",
-        "After excluding inventory, the remaining current assets still cover current liabilities more than 0.9 times over.",
-        "Buildings make up more than 38.9% of total assets.",
-        "Inventory make up more than 42.9% of current assets.",
-        "The combined total of equity and non-current liabilities exceeds non-current assets by more than 26.8%."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$$\n231+180+105=516,\\qquad 153+84=237\n$$\n\n$$\n516-237=279>0\n$$\n\nWorking capital of EUR $279$ thousand is positive.\n\nSo the statement is True.",
-        "**B.** → True\n\nCurrent assets $516$ and current liabilities $237$ from letter A. After excluding inventory:\n\n$$\n\\dfrac{516-231}{237}=\\dfrac{285}{237}\\approx 1.20\n$$\n\n$$\n1.20>0.9\n$$\n\nQuick coverage is about $1.20$, which clears the $0.9$ floor.\n\nSo the statement is True.",
-        "**C.** → True\n\nBuildings over total assets:\n\n$$\n\\dfrac{502}{1214}\\approx 0.413=41.3\\%\n$$\n\n$$\n41.3\\%>38.9\\%\n$$\n\nBuildings clear the $38.9\\%$ floor.\n\nSo the statement is True.",
-        "**D.** → True\n\nInventory over current assets $516$:\n\n$$\n\\dfrac{231}{516}\\approx 0.448=44.8\\%\n$$\n\n$$\n44.8\\%>42.9\\%\n$$\n\nInventory clears the $42.9\\%$ floor.\n\nSo the statement is True.",
-        "**E.** → True\n\nEquity plus non-current liabilities:\n\n$$\n584+346+47=977\n$$\n\nNon-current assets from the sheet:\n\n$$\n502+124+43+29=698\n$$\n\nHow far the financing total exceeds the non-current asset base:\n\n$$\n\\dfrac{977-698}{698}=\\dfrac{279}{698}\\approx 0.400=40.0\\%\n$$\n\n$$\n40.0\\%>26.8\\%\n$$\n\nThe combined total exceeds non-current assets by about $40\\%$, clearing the $26.8\\%$ floor.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each line separately. Non-current assets total buildings + machinery + office equipment + patents; equity is 584; non-current liabilities are the long-term bank loan plus bonds payable. Working capital is CA − CL; the quick ratio strips inventory before dividing by CL; composition shares use buildings ÷ TA and inventory ÷ CA; the excess of (equity + NCL) over NCA is measured relative to NCA.\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$\n\n$$\n\\text{Quick ratio} = \\frac{\\text{CA} - \\text{inventory}}{\\text{CL}}\n$$\n\n$$\n\\text{Excess over NCA} = \\frac{(\\text{equity} + \\text{NCL}) - \\text{NCA}}{\\text{NCA}}\n$$"
-    },
-    {
-      "case_id": "CASE 6.5.029",
-      "title": "Balance Sheet Structure Review 29",
-      "subsection": "6.5",
-      "chapter": null,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 485 |\n| Machinery | 256 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 273 |\n| Trade receivables | 145 |\n| Cash and cash equivalents | 45 |\n| Total assets | **1347** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 684 |\n| Total equity | **882** |\n| **LIABILITIES** | |\n| Long-term bank loan | 288 |\n| Bonds payable | 49 |\n| Trade payables | 80 |\n| Bank overdraft | 48 |\n| Total liabilities | **465** |\n| Total equity and liabilities | **1347** |\n\nEvaluate the following economic assertions:\n",
-      "statements": [
-        "The current ratio exceeds 1.55.",
-        "The equity ratio is below 28.7%.",
-        "The debt ratio exceeds 76.4%.",
-        "Working capital of €335 thousand is positive on this balance sheet.",
-        "Buildings make up more than 50.7% of total assets."
-      ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nCurrent assets and current liabilities:\n\n$$\n273+145+45=463\n$$\n\n$$\n80+48=128\n$$\n\nCurrent ratio:\n\n$$\n\\dfrac{463}{128}\\approx 3.62\n$$\n\n$$\n3.62>1.55\n$$\n\nAbout $3.62$ clears the $1.55$ floor comfortably.\n\nSo the statement is True.",
-        "**B.** → False\n\nEquity over total assets:\n\n$$\n\\dfrac{882}{1347}\\approx 0.655=65.5\\%\n$$\n\nThe claim says the ratio is below $28.7\\%$:\n\n$$\n65.5\\%\\nless 28.7\\%\n$$\n\nAbout $65.5\\%$ is more than double $28.7\\%$, so the statement fails.\n\nSo the statement is False.",
-        "**C.** → False\n\nDebt ratio — total liabilities over total assets:\n\n$$\n\\dfrac{465}{1347}\\approx 0.345=34.5\\%\n$$\n\n$$\n34.5\\%\\ngtr 76.4\\%\n$$\n\nAbout $34.5\\%$ is nowhere near above $76.4\\%$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\n463-128=335>0\n$$\n\nWorking capital of EUR $335$ thousand is positive.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\n\\dfrac{485}{1347}\\approx 0.360=36.0\\%\n$$\n\n$$\n36.0\\%\\ngtr 50.7\\%\n$$\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Current assets are inventory + trade receivables + cash; current liabilities are trade payables + bank overdraft. Add each extract line on its own step. Total assets 1347, total equity 882 and total liabilities 465 close the sheet. The current ratio is CA ÷ CL; equity and debt ratios use those totals; working capital is CA − CL; buildings share uses buildings ÷ total assets.\n\n$$\n\\text{Current ratio} = \\frac{\\text{CA}}{\\text{CL}}\n$$\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}, \\quad \\text{Debt ratio} = \\frac{\\text{total liabilities}}{\\text{total assets}}\n$$\n\n$$\n\\text{Working capital} = \\text{CA} - \\text{CL}\n$$"
+      "solution_overview": "Market cap is the December price times shares outstanding. EPS is earnings ÷ shares. P/E is the December price ÷ EPS. Dividend yield is the dividend ÷ the December price. The January-to-December rise uses the January point on the chart."
     }
   ],
   "english": {
@@ -681,34 +675,33 @@
       ]
     },
     {
-      "case_id": "DEMO MATH 2.H02",
-      "id": "demo-math-2-h02",
-      "title": "Two-number identity archive — harder chain",
+      "case_id": "MATH 2.140",
+      "id": "math-2-140",
+      "title": "Exam-style tasks - 4",
       "chapter": 2,
       "subsection": "2.5",
-      "context": "An algebra archive stores two nonzero real numbers $p$ and $q$ through four records:\n\n(1) $p^{2}+q^{2}=250$\n\n(2) $pq=75$\n\n(3) $p^{3}+q^{3}=3500$\n\n(4) $\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{4}{15}$\n\nThe original order was not recorded. Decide whether each statement is true or false.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Records (1) and (2) alone already force $(p+q)^{2}=400$, so $|p+q|=20$.",
-        "Records (1) and (2) together with the side condition $p+q>0$ already imply record (3).",
-        "Records (1), (2) and (4) together force the unordered pair $\\{p,q\\}=\\{5,15\\}$.",
-        "If record (3) were rewritten as $p^{3}+q^{3}=2800$ while (1) and (2) stayed unchanged, the three records could still hold simultaneously for some nonzero reals $p,q$.",
-        "From (1) and (2) alone one obtains $(p-q)^{2}=100$, and if in addition (4) holds then automatically $p^{3}+q^{3}=(p+q)\\big((p^{2}+q^{2})-pq\\)=3500$."
+        "For $u>0$ and $v>0$, it holds that $|u-v|=u-v$.",
+        "If $a+b=s$ and $ab=p$ for real numbers $s$ and $p$, then $a^3+b^3=s^3-3ps$.",
+        "If $x\\neq0$ and $x+\\dfrac1x=k$ for some real $k$, then $x^2+\\dfrac1{x^2}=k^2-2$.",
+        "At $z=2$, both $z^{-1}+z^{-2}$ and $\\dfrac{1}{z+z^2}$ equal $\\dfrac{3}{4}$.",
+        "On the stated domain $x\\ge5$, the principal-root expression $\\sqrt{(x-5)^2}$ simplifies to $x-5$."
       ],
       "answer_key": [
-        true,
+        false,
         true,
         true,
         false,
         true
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "An unordered pair of nonzero reals is recovered from the four recorded identities. Every letter starts from the same sum/product expansions.\n\n**Part 1: Setup.**\n\nRecords (1) and (2) supply\n\n$$\np^{2}+q^{2}=250\n$$\n\n$$\npq=75\n$$\n\nThe elementary expansions are\n\n$$\n(p+q)^{2}=p^{2}+2pq+q^{2}\n$$\n\n$$\n(p-q)^{2}=p^{2}-2pq+q^{2}\n$$\n\nThe cube-sum and reciprocal-sum formulas are\n\n$$\np^{3}+q^{3}=(p+q)\\bigl((p^{2}+q^{2})-pq\\bigr)\n$$\n\n$$\n\\frac{1}{p}+\\frac{1}{q}=\\frac{p+q}{pq}\n$$\n\n**Part 2: Solve the squared sum and difference.**\n\nFirst the cross term:\n\n$$\n2\\cdot 75=150\n$$\n\nSquared sum:\n\n$$\n(p+q)^{2}=250+150\n$$\n\n$$\n250+150=400\n$$\n\n$$\n(p+q)^{2}=400\n$$\n\n$$\n|p+q|=\\sqrt{400}\n$$\n\n$$\n\\sqrt{400}=20\n$$\n\n$$\n|p+q|=20\n$$\n\nSquared difference:\n\n$$\n(p-q)^{2}=250-150\n$$\n\n$$\n250-150=100\n$$\n\n$$\n(p-q)^{2}=100\n$$\n\n$$\n|p-q|=\\sqrt{100}\n$$\n\n$$\n\\sqrt{100}=10\n$$\n\n$$\n|p-q|=10\n$$\n\n**Part 3: Cubes, reciprocals, and the unordered pair.**\n\nInner piece of the cube identity:\n\n$$\n250-75=175\n$$\n\nWith $p+q=20$ (positive branch):\n\n$$\np^{3}+q^{3}=20\\cdot 175\n$$\n\n$$\n20\\cdot 100=2000\n$$\n\n$$\n20\\cdot 75=1500\n$$\n\n$$\n2000+1500=3500\n$$\n\n$$\np^{3}+q^{3}=3500\n$$\n\nReciprocal sum:\n\n$$\n\\frac{20}{75}=\\frac{4}{15}\n$$\n\nQuadratic $t^{2}-20t+75=0$:\n\n$$\n\\Delta=400-300=100\n$$\n\n$$\nt=\\frac{20\\pm 10}{2}\n$$\n\n$$\nt=15\\quad\\text{or}\\quad t=5\n$$\n\nso the unordered pair is $\\{5,15\\}$. The negative-sum branch $p+q=-20$ would flip the signs of both the cube sum and the reciprocal sum.",
       "tactical_explanations": [
-        "**A.** → True\n\nFrom (1) and (2):\n\n$$\n(p+q)^{2}=p^{2}+2pq+q^{2}=250+2\\cdot 75=250+150=400\n$$\n\n$$\n|p+q|=\\sqrt{400}=20\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\nFrom letter A, $(p+q)^{2}=400$. With the side condition $p+q>0$ one has $p+q=20$. The cube identity gives\n\n$$\np^{3}+q^{3}=(p+q)\\bigl((p^{2}+q^{2})-pq\\bigr)=20\\,(250-75)=20\\cdot 175=3500\n$$\n\nwhich is exactly record (3).\n\nSo the statement is True.",
-        "**C.** → True\n\nFrom (1) and (2), $(p+q)^{2}=400$. Record (4) reads\n\n$$\n\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{p+q}{pq}=\\dfrac{p+q}{75}=\\dfrac{4}{15}\n$$\n\nso\n\n$$\np+q=75\\cdot\\dfrac{4}{15}=20\n$$\n\n(the negative branch $p+q=-20$ would make the reciprocal sum negative). The monic quadratic with sum $20$ and product $75$ is\n\n$$\nt^{2}-20t+75=0\\qquad\\Rightarrow\\qquad\\Delta=400-300=100\n$$\n\n$$\nt=\\dfrac{20\\pm 10}{2}\n$$\n\nso $t=15$ or $t=5$. The unordered pair is $\\{5,15\\}$.\n\nSo the statement is True.",
-        "**D.** → False\n\nRecords (1) and (2) force $(p+q)^{2}=400$, so $p+q=\\pm 20$. The cube identity then gives\n\n$$\np^{3}+q^{3}=(p+q)\\bigl((p^{2}+q^{2})-pq\\bigr)=(p+q)\\cdot 175\n$$\n\nwhich equals either $20\\cdot 175=3500$ or $-20\\cdot 175=-3500$. Neither value is $2800$. Rewriting record (3) as $2800$ while keeping (1) and (2) is therefore impossible.\n\nSo the statement is False.",
-        "**E.** → True\n\nFrom (1) and (2):\n\n$$\n(p-q)^{2}=p^{2}-2pq+q^{2}=250-150=100\n$$\n\nIf in addition (4) holds, letter C gives $p+q=20$, and then\n\n$$\np^{3}+q^{3}=(p+q)\\bigl((p^{2}+q^{2})-pq\\bigr)=20\\cdot 175=3500\n$$\n\nexactly as claimed.\n\nSo the statement is True."
+        "**A.** → False\n\nAbsolute value equals the signed difference only when that difference is nonnegative.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\n|u-v|\n$$\n\n$$\n|u-v|=u-v\n$$\n\n$$\n|u-v|=u-v\\Longleftrightarrow u-v\\ge0\\Longleftrightarrow u\\ge v\n$$\n\nPositivity $u>0$ and $v>0$ alone does not force $u\\ge v$. Counterexample $u=1$, $v=2$:\n\n$$\n|1-2|=1\\neq-1\n$$\n\n$$\n1-2\n$$\n\nSo the statement is False.\n",
+        "**B.** → True\n\nExpand $(a+b)^{3}$ and rearrange to isolate the sum of cubes in terms of $s=a+b$ and $p=ab$.\n\n$$\na+b\n$$\n\n$$\na+b=s\n$$\n\n$$\nab\n$$\n\n$$\nab=p\n$$\n\n$$\ns\n$$\n\n$$\np\n$$\n\n$$\na^3+b^3\n$$\n\n$$\na^3+b^3=s^3-3ps\n$$\n\nExpand:\n\n$$\n(a+b)^{3}=a^{3}+b^{3}+3ab(a+b)\n$$\n\nTherefore\n\n$$\na^{3}+b^{3}=(a+b)^{3}-3ab(a+b)\n$$\n\nSubstitute $s$ and $p$:\n\n$$\na^{3}+b^{3}=s^{3}-3ps\n$$\n\nThat is the claimed formula.\n\nSo the statement is True.\n",
+        "**C.** → True\n\nSquare the given reciprocal-sum identity and peel off the cross term $2$.\n\n$$\nx\\neq0\n$$\n\n$$\nx+\\dfrac1x\n$$\n\n$$\nx+\\dfrac1x=k\n$$\n\n$$\nk\n$$\n\n$$\nx^2+\\dfrac1{x^2}\n$$\n\n$$\nx^2+\\dfrac1{x^2}=k^2-2\n$$\n\nGiven $x+\\dfrac{1}{x}=k$ with $x\\neq0$:\n\n$$\n\\left(x+\\dfrac{1}{x}\\right)^2=x^2+2+\\dfrac{1}{x^2}\n$$\n\n$$\nk^2=x^2+\\dfrac{1}{x^2}+2\n$$\n\nRearrange:\n\n$$\nx^2+\\dfrac{1}{x^2}=k^2-2\n$$\n\nThat is exactly the claimed formula.\n\nSo the statement is True.\n",
+        "**D.** → False\n\nCombine the left-hand side over a common denominator and compare with the right.\n\n$$\nz^{-1}+z^{-2}=\\dfrac{1}{z}+\\dfrac{1}{z^2}\n$$\n\n$$\n\\dfrac{z+1}{z^2}\n$$\n\nThe claim writes $\\dfrac{1}{z+z^2}=\\dfrac{1}{z(1+z)}$. For $z=1$:\n\n$$\n\\dfrac{1+1}{1}=2\\neq\\dfrac{1}{1+1}\n$$\n\n$$\n\\dfrac12\n$$\n\nThe sides disagree.\n\nConcrete check for the rewritten claim. Left $1/2+1/4=3/4$, right $1/(2+4)=1/6$; they disagree.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nOn the claimed half-line the principal square root undoes the square without an absolute-value kink.\n\n$$\nx\\ge5\n$$\n\n$$\n\\sqrt{(x-5)^2}\n$$\n\n$$\nx-5\n$$\n\nOn $x\\ge5$ the quantity $x-5$ is nonnegative, so the principal square root drops the absolute value.\n\n$$\n\\sqrt{(x-5)^2}=|x-5|\n$$\n\n$$\n|x-5|=x-5\n$$\n\n$$\n(x\\ge5)\n$$\n\nHence $\\sqrt{(x-5)^{2}}=x-5$ on the stated domain.\n\nSo the statement is True.\n"
       ]
     },
     {

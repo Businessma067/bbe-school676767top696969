@@ -1,8 +1,10 @@
 /**
  * Free BBE Demo Mock (hard diagnostic):
  * - Economics → English (fiscal dominance) → Math
- * - Math: the 13 listed chapter task refs (1.30 … 13.28)
- * - Economics / English: max-difficulty banks + original hard reading set
+ * - Math: one hard task per chapter; task 23 is exam-style chapter 2
+ * - Economics: theory across chapters 2–5, then one balance sheet,
+ *   one income statement, one cash-flow statement, and one share chart
+ * - English: original hard reading set
  */
 
 import sourced from "@/data/mock-exam-demo-sourced.json";
@@ -113,7 +115,7 @@ export const MOCK_EXAM_DEMO_POINTS_TOTAL =
   MOCK_EXAM_DEMO_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 export const MOCK_EXAM_DEMO_CONTENT_REV =
-  "2026-09-26m · per-letter mock3 style";
+  "2026-09-28a · ch2 exam task + mixed econ tables";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
