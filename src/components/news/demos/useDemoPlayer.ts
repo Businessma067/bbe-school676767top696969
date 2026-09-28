@@ -263,11 +263,16 @@ export function useDemoPlayer(
       const boxes = rects.length ? [...rects] : [el.getBoundingClientRect()];
       let best: { x: number; y: number; area: number } | null = null;
       for (const eb of boxes) {
-        const left = Math.max(eb.left, s.left);
-        const right = Math.min(eb.right, s.right);
+        let left = Math.max(eb.left, s.left);
+        let right = Math.min(eb.right, s.right);
         const top = Math.max(eb.top, s.top);
         let bottom = Math.min(eb.bottom, s.bottom);
-        if (z && right > z.left + 2 && left < z.right - 2) bottom = Math.min(bottom, z.top - 2);
+        if (z && right > z.left && left < z.right && bottom > z.top && top < z.bottom) {
+          // A wide row can stick out from under the zoom button. Aim at that clear part.
+          if (z.left - left >= 16) right = Math.min(right, z.left - 2);
+          else if (right - z.right >= 16) left = Math.max(left, z.right + 2);
+          else bottom = Math.min(bottom, z.top - 2);
+        }
         const w = right - left;
         const h = bottom - top;
         if (w < 6 || h < 6) continue;
