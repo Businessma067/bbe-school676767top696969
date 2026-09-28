@@ -252,6 +252,7 @@ export function navItemsForAccess(
       examInfoItem(track),
       productsItem(track),
       demoCourseItem(track),
+      demoExamItem(track),
       wisoFullCourseItem,
       mockExamsItem(track),
       mockBuilderItem(track),
@@ -262,7 +263,12 @@ export function navItemsForAccess(
 
   if (!access.hasLite && !access.hasFull) return guestNavItems(track);
 
-  const items: NavItem[] = [examInfoItem(track), productsItem(track), demoCourseItem(track)];
+  const items: NavItem[] = [
+    examInfoItem(track),
+    productsItem(track),
+    demoCourseItem(track),
+    demoExamItem(track),
+  ];
   if (access.hasFull) items.push(fullCourseItem);
   items.push(mockExamsItem(track), mockBuilderItem(track), gamesItem(track), newsItem);
   return items;
