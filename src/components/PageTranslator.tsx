@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useRouterState } from "@tanstack/react-router";
-import { peekAutoTranslation, requestAutoTranslations } from "@/lib/i18n/auto-translate";
+import {
+  englishSourceFor,
+  peekAutoTranslation,
+  queueAutoTranslations,
+} from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
 import { translate } from "@/lib/i18n/dictionary";
 import { isAutoLang } from "@/lib/i18n/languages";
@@ -104,24 +108,44 @@ export function PageTranslator() {
           continue;
         }
 
-        if (translated.get(node) !== value && (fromCharacterData || !originals.has(node))) {
-          // First sight, or React changed the English source text.
-          originals.set(node, value);
-        }
-
-        const source = originals.get(node) ?? value;
         if (isAutoLang(effectiveLang)) {
-          const trimmed = source.trim();
+          if (fromCharacterData && lastWritten.get(node) === value) {
+            lastWritten.delete(node);
+            continue;
+          }
+          const trimmedCurrent = value.trim();
+          const knownEnglish = englishSourceFor(effectiveLang, trimmedCurrent);
+          let source = originals.get(node);
+          if (knownEnglish) {
+            source = knownEnglish;
+            originals.set(node, source);
+          } else if (
+            !source ||
+            (fromCharacterData &&
+              translated.get(node) !== value &&
+              peekAutoTranslation(effectiveLang, source.trim()) !== trimmedCurrent)
+          ) {
+            source = value;
+            originals.set(node, source);
+          }
+          const trimmed = (source ?? value).trim();
           if (!trimmed || !/[A-Za-zÀ-ÿ]/.test(trimmed)) continue;
           const hit = peekAutoTranslation(effectiveLang, trimmed);
           if (!hit) {
             if (trimmed.length <= 1800) pendingAuto.add(trimmed);
             continue;
           }
-          const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(source) ?? [];
+          const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(source ?? value) ?? [];
           writeNode(node, `${lead}${hit}${trail}`);
           continue;
         }
+
+        if (translated.get(node) !== value && (fromCharacterData || !originals.has(node))) {
+          // First sight, or React changed the English source text.
+          originals.set(node, value);
+        }
+
+        const source = originals.get(node) ?? value;
         const next = translate(source, effectiveLang) ?? source;
         writeNode(node, next);
       }
@@ -133,8 +157,10 @@ export function PageTranslator() {
       pendingAuto.clear();
       applyTo(root, fromCharacterData);
       if (!isAutoLang(effectiveLang) || pendingAuto.size === 0) return;
-      requestAutoTranslations(effectiveLang, [...pendingAuto], () => {
-        applyAndRequest(document.body);
+      const batch = [...pendingAuto];
+      queueAutoTranslations(effectiveLang, batch, () => {
+        pendingAuto.clear();
+        applyTo(document.body);
       });
     };
 

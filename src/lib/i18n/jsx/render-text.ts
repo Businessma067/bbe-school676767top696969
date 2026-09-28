@@ -1,5 +1,7 @@
 import { createContext, createElement, useContext, type ReactNode } from "react";
+import { localizeAuto, useAutoDictionaryVersion } from "../auto-translate";
 import { translate, type Lang } from "../dictionary";
+import { isAutoLang } from "../languages";
 
 /**
  * Language used for JSX text on the current page. Study surfaces pin this to
@@ -22,7 +24,9 @@ function hasTranslation(text: string): boolean {
 function I18nText({ text }: { text: string }) {
   const lang = useContext(PageLangContext);
   const verbatim = useContext(NoTranslateContext);
+  useAutoDictionaryVersion();
   if (verbatim || lang === "en") return text;
+  if (isAutoLang(lang)) return localizeAuto(lang, text);
   return translate(text, lang) ?? text;
 }
 

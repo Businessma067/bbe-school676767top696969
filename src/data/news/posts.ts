@@ -209,10 +209,10 @@ export function getNewsPostPaths(): string[] {
   return POSTS.map((post) => `/news/${post.slug}`);
 }
 
-export function formatNewsDate(isoDate: string, lang: "en" | "de" | "uk" = "en"): string {
+export function formatNewsDate(isoDate: string, lang: string = "en"): string {
   const d = new Date(`${isoDate}T12:00:00Z`);
   if (Number.isNaN(d.getTime())) return isoDate;
-  const locale = lang === "de" ? "de-AT" : lang === "uk" ? "uk-UA" : "en-GB";
+  const locale = lang === "de" ? "de-AT" : lang === "uk" ? "uk-UA" : lang === "en" ? "en-GB" : lang;
   return d.toLocaleDateString(locale, {
     day: "numeric",
     month: "long",

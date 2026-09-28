@@ -7,8 +7,9 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { localizeAuto, useAutoDictionaryVersion } from "./auto-translate";
 import { translate, type Lang } from "./dictionary";
-import { isKnownLang, RTL_LANGS } from "./languages";
+import { isAutoLang, isKnownLang, RTL_LANGS } from "./languages";
 
 const STORAGE_KEY = "bbe.lang";
 
@@ -59,9 +60,15 @@ export function LanguageProvider({
     }
   }, []);
 
+  const autoVersion = useAutoDictionaryVersion();
   const value = useMemo<LanguageContextValue>(
-    () => ({ lang, setLang, t: (text: string) => translate(text, lang) ?? text }),
-    [lang, setLang],
+    () => ({
+      lang,
+      setLang,
+      t: (text: string) =>
+        isAutoLang(lang) ? localizeAuto(lang, text) : (translate(text, lang) ?? text),
+    }),
+    [lang, setLang, autoVersion],
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
