@@ -27,7 +27,13 @@ export function CourseFrame({
   overlay?: ReactNode;
 }) {
   return (
-    <div ref={stageRef} className={cn("absolute inset-0", bleed ? "bg-background" : "bg-paper")}>
+    <div
+      ref={stageRef}
+      className={cn(
+        "absolute inset-0",
+        bleed ? "bg-background [container-name:exam-stage] [container-type:size] [transform:translateZ(0)]" : "bg-paper",
+      )}
+    >
       <div
         ref={scrollRef}
         className={cn(

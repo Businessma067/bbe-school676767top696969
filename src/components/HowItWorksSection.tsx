@@ -374,20 +374,6 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   }, [tab, subject, tool]);
 
   useEffect(() => {
-    if (!liveMockExamDemo) return;
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setTab("course");
-    };
-    window.addEventListener("keydown", onKey);
-    return () => {
-      document.body.style.overflow = prevOverflow;
-      window.removeEventListener("keydown", onKey);
-    };
-  }, [liveMockExamDemo]);
-
-  useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
     if (!video || !stage || zoomed) return;
@@ -471,7 +457,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     liveTheoryDemo ? (
                       <CourseTheoryDemo key="theory" />
                     ) : liveMockExamDemo ? (
-                      <div className="absolute inset-0 bg-background" aria-hidden />
+                      <CourseMockExamDemo key="mock-exams" />
                     ) : liveMockDemo ? (
                       <CourseMockDemo key="mock-builder" />
                     ) : liveStudyDemo ? (
@@ -493,17 +479,15 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                       aria-label={`${slide.label} walkthrough`}
                     />
                   )}
-                  {liveMockExamDemo ? null : (
-                    <button
-                      type="button"
-                      onClick={openZoom}
-                      aria-label="Zoom in"
-                      className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-black/95 px-3 py-2 text-xs font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
-                    >
-                      <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
-                      Zoom in
-                    </button>
-                  )}
+                  <button
+                    type="button"
+                    onClick={openZoom}
+                    aria-label="Zoom in"
+                    className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-black/95 px-3 py-2 text-xs font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
+                  >
+                    <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
+                    Zoom in
+                  </button>
                 </div>
               </div>
             </div>
@@ -569,15 +553,6 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
         </div>
       </div>
 
-      {liveMockExamDemo
-        ? createPortal(
-            <div className="fixed inset-0 z-[90] overflow-hidden bg-background">
-              <CourseMockExamDemo key="mock-exams-full" />
-            </div>,
-            document.body,
-          )
-        : null}
-
       {zoomed
         ? createPortal(
             <div
@@ -605,6 +580,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     >
                       {liveTheoryDemo ? (
                         <CourseTheoryDemo key="zoom-theory" />
+                      ) : liveMockExamDemo ? (
+                        <CourseMockExamDemo key="zoom-mock-exams" />
                       ) : liveMockDemo ? (
                         <CourseMockDemo key="zoom-mock-builder" />
                       ) : liveStudyDemo ? (

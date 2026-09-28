@@ -2453,6 +2453,47 @@ body.flashcard-swiping {
   scrollbar-width: thin;
 }
 
+/* A short How it works frame cannot hold the exam's bottom rail or the auth cluster. */
+@container exam-stage (max-height: 280px) {
+  [data-exam-fit="rail"],
+  [data-exam-fit="viewbar-copy"] {
+    display: none !important;
+  }
+
+  [data-exam-fit="viewbar"] {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 0.75rem !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
+  [data-exam-fit="viewbar"] > div:first-child {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  [data-exam-fit="viewbar"] [role="tab"] {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+  }
+}
+
+@container exam-stage (max-width: 520px) {
+  [data-exam-fit="auth"],
+  [data-exam-fit="count"] {
+    display: none !important;
+  }
+
+  [data-exam-fit="header"] {
+    flex-wrap: nowrap !important;
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+  }
+}
+
 .news-uniq-flip-stage {
   perspective: 1200px;
 }

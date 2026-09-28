@@ -185,7 +185,7 @@ export function CourseMockExamDemo() {
             data-d="exam-chrome"
             className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur"
           >
-            <div className={PRACTICE_HEADER_INNER}>
+            <div className={PRACTICE_HEADER_INNER} data-exam-fit="header">
               <div className="flex min-w-0 items-center gap-3">
                 <h1 className="truncate font-display text-base font-bold">Mock Exam 1</h1>
                 <span
@@ -195,7 +195,7 @@ export function CourseMockExamDemo() {
                 </span>
               </div>
               <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                <span className="text-sm tabular-nums text-muted-foreground">
+                <span data-exam-fit="count" className="text-sm tabular-nums text-muted-foreground">
                   Question {index + 1} / {QUESTIONS.length}
                 </span>
                 <span
@@ -221,14 +221,16 @@ export function CourseMockExamDemo() {
                 >
                   Review
                 </button>
-                <ThemeToggle />
-                <AuthNav />
+                <span data-exam-fit="auth" className="inline-flex items-center gap-2">
+                  <ThemeToggle />
+                  <AuthNav />
+                </span>
               </div>
             </div>
           </header>
 
           <div className={cn(PRACTICE_BODY, "pb-24 lg:pb-4")}>
-            <aside className="hidden w-72 shrink-0 space-y-4 lg:sticky lg:top-[4.5rem] lg:block 2xl:w-80">
+            <aside className="hidden w-72 shrink-0 space-y-4 lg:sticky lg:top-[4.5rem] lg:block lg:max-h-[calc(100cqh-5.5rem)] lg:overflow-y-auto 2xl:w-80">
               <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
                 <p className="font-display text-2xl font-semibold tabular-nums tracking-tight">
                   {question.index}
@@ -365,6 +367,7 @@ export function CourseMockExamDemo() {
 
             <aside
               data-d="exam-chrome"
+              data-exam-fit="rail"
               className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:inset-auto lg:bottom-auto lg:top-[4.5rem] lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none"
             >
               <ToolRailButton label="Answer Sheet" short="Sheet">
@@ -416,12 +419,15 @@ export function CourseMockExamDemo() {
             />
           </div>
           <main className={`${PRACTICE_BODY} flex-col py-8 sm:py-10`}>
-            <div className="sticky top-16 z-20 -mx-1 mb-6 flex flex-col gap-3 rounded-2xl border border-border bg-background/95 px-3 py-3 shadow-sm backdrop-blur-sm sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-4">
+            <div
+              data-exam-fit="viewbar"
+              className="sticky top-16 z-20 -mx-1 mb-6 flex flex-col gap-3 rounded-2xl border border-border bg-background/95 px-3 py-3 shadow-sm backdrop-blur-sm sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-4"
+            >
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                   Mock Exam 1
                 </p>
-                <p className="mt-0.5 text-sm text-muted-foreground">
+                <p data-exam-fit="viewbar-copy" className="mt-0.5 text-sm text-muted-foreground">
                   Score overview, or tasks with answers and explanations.
                 </p>
               </div>
