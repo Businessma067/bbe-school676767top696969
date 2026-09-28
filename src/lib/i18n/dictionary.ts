@@ -146,6 +146,11 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
       "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs — kein Zufallspapier.",
     "Open Mock Builder": "Prüfungs-Builder öffnen",
+    Theory: "Theorie",
+    "Read the chapter before you practice": "Lies das Kapitel, bevor du übst",
+    "Open a math chapter and read the theory straight through: sets in chapter 1, exponentials in chapter 10, and derivatives in chapter 11.":
+      "Öffne ein Mathekapitel und lies die Theorie am Stück: Mengen in Kapitel 1, Exponentialfunktionen in Kapitel 10 und Ableitungen in Kapitel 11.",
+    "Open Math theory": "Mathe-Theorie öffnen",
     Flashcards: "Karteikarten",
     Matching: "Matching",
     "Tutor Exam": "Tutor-Prüfung",
@@ -364,6 +369,11 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
       "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу — не випадковий варіант.",
     "Open Mock Builder": "Відкрити конструктор іспитів",
+    Theory: "Теорія",
+    "Read the chapter before you practice": "Прочитай розділ перед практикою",
+    "Open a math chapter and read the theory straight through: sets in chapter 1, exponentials in chapter 10, and derivatives in chapter 11.":
+      "Відкрий розділ математики і прочитай теорію підряд: множини в розділі 1, експоненти в розділі 10 і похідні в розділі 11.",
+    "Open Math theory": "Відкрити теорію математики",
     Flashcards: "Картки",
     Matching: "Matching",
     "Tutor Exam": "Tutor Exam",

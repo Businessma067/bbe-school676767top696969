@@ -8,9 +8,10 @@ import { CourseEnglishDemo } from "@/components/how-it-works/CourseEnglishDemo";
 import { CourseMathDemo } from "@/components/how-it-works/CourseMathDemo";
 import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
 import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
+import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
 import { cn } from "@/lib/utils";
 
-type MainTab = "course" | "mock-builder" | "games";
+type MainTab = "course" | "theory" | "mock-builder" | "games";
 type CourseSubject = "economics" | "math" | "english" | "german";
 type StudyTool = "flashcards" | "matching" | "tutor-exam";
 export type HowItWorksTrack = "bbe" | "wiso";
@@ -30,6 +31,7 @@ type ShowcaseSlide = {
 
 const BBE_MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
+  { key: "theory", label: "Theory" },
   { key: "mock-builder", label: "Mock Builder" },
   { key: "games", label: "Study tools" },
 ];
@@ -37,6 +39,20 @@ const BBE_MAIN_TABS: { key: MainTab; label: string }[] = [
 const WISO_MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
   { key: "games", label: "Study tools" },
+];
+
+const BBE_THEORY: ShowcaseSlide[] = [
+  {
+    key: "theory",
+    label: "Theory",
+    title: "Read the chapter before you practice",
+    body: "Open a math chapter and read the theory straight through: sets in chapter 1, exponentials in chapter 10, and derivatives in chapter 11.",
+    cta: "Open Math theory",
+    href: "/products/full-course-math",
+    video: "/how-it-works/math.mp4",
+    poster: "/how-it-works/math-poster.jpg",
+    aspect: "3420 / 1966",
+  },
 ];
 
 const BBE_MOCK_BUILDER: ShowcaseSlide[] = [
@@ -231,8 +247,15 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const stageRef = useRef<HTMLDivElement | null>(null);
 
   const slides =
-    tab === "games" ? studyTools : tab === "mock-builder" ? BBE_MOCK_BUILDER : courseSubjects;
-  const activeKey = tab === "games" ? tool : tab === "mock-builder" ? "mock-builder" : subject;
+    tab === "games"
+      ? studyTools
+      : tab === "mock-builder"
+        ? BBE_MOCK_BUILDER
+        : tab === "theory"
+          ? BBE_THEORY
+          : courseSubjects;
+  const activeKey =
+    tab === "games" ? tool : tab === "mock-builder" ? "mock-builder" : tab === "theory" ? "theory" : subject;
   const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
   const liveCourseDemo =
@@ -241,18 +264,19 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     (slide.key === "economics" || slide.key === "math" || slide.key === "english");
   const liveMockDemo = track === "bbe" && tab === "mock-builder";
   const liveStudyDemo = track === "bbe" && tab === "games";
-  const liveStage = liveCourseDemo || liveMockDemo || liveStudyDemo;
+  const liveTheoryDemo = track === "bbe" && tab === "theory";
+  const liveStage = liveCourseDemo || liveMockDemo || liveStudyDemo || liveTheoryDemo;
 
   const goSlide = (next: number) => {
     const i = (next + slides.length) % slides.length;
     const key = slides[i].key;
     if (tab === "games") setTool(key as StudyTool);
-    else if (tab !== "mock-builder") setSubject(key as CourseSubject);
+    else if (tab === "course") setSubject(key as CourseSubject);
   };
 
   const setSlideKey = (key: string) => {
     if (tab === "games") setTool(key as StudyTool);
-    else if (tab !== "mock-builder") setSubject(key as CourseSubject);
+    else if (tab === "course") setSubject(key as CourseSubject);
   };
 
   const openZoom = () => {
@@ -403,7 +427,9 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
                   {liveStage ? (
-                    liveMockDemo ? (
+                    liveTheoryDemo ? (
+                      <CourseTheoryDemo key="theory" />
+                    ) : liveMockDemo ? (
                       <CourseMockDemo key="mock-builder" />
                     ) : liveStudyDemo ? (
                       <BbeStudyStage key={slide.key} tool={slide.key} />
@@ -523,7 +549,9 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                         transformOrigin: "center center",
                       }}
                     >
-                      {liveMockDemo ? (
+                      {liveTheoryDemo ? (
+                        <CourseTheoryDemo key="zoom-theory" />
+                      ) : liveMockDemo ? (
                         <CourseMockDemo key="zoom-mock-builder" />
                       ) : liveStudyDemo ? (
                         <BbeStudyStage key={`zoom-${slide.key}`} tool={slide.key} />
