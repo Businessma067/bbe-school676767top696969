@@ -183,7 +183,7 @@ export async function lookupDiscountPromo(input: {
       }
     } else if (data) {
       if (data.kind !== "discount") {
-        return { ok: false, error: "This promocode unlocks access — redeem it in the Promo tab." };
+        return { ok: false, error: "This promocode unlocks access: redeem it in the Promo tab." };
       }
       // Discount codes are multi-use: `used_at` is not a block, only
       // `max_uses` (counted from actual paid usages) limits them.
@@ -382,7 +382,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
     if (discount.ok) {
       return {
         ok: false,
-        error: `This code gives ${discount.discountPct}% off — apply it in the Card tab before paying.`,
+        error: `This code gives ${discount.discountPct}% off: apply it in the Card tab before paying.`,
       };
     }
 

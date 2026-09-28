@@ -73,7 +73,7 @@ const demoMockFaqs = [
 const pageTitle =
   "Kostenlose WiSo-Probeprüfung online | WU Aufnahmeprüfung | BBE School";
 const pageDescription =
-  "Kostenlose vollständige WiSo-Probeprüfung: 33 Fragen, 2 Stunden, Teilpunktesystem. Kostenloses Konto — keine Kreditkarte. Starte deine Diagnose jetzt.";
+  "Kostenlose vollständige WiSo-Probeprüfung: 33 Fragen, 2 Stunden, Teilpunktesystem. Kostenloses Konto, keine Kreditkarte. Starte deine Diagnose jetzt.";
 
 export const Route = createFileRoute("/wiso/demo-mock")({
   head: () => ({
@@ -122,11 +122,11 @@ export const Route = createFileRoute("/wiso/demo-mock")({
 const benefits = [
   {
     title: "Echtes Prüfungsformat",
-    body: "Wirtschaft, Deutsch und Mathematik in einem Durchgang — dieselbe Fachreihenfolge und derselbe Zeitdruck wie am Prüfungstag.",
+    body: "Wirtschaft, Deutsch und Mathematik in einem Durchgang, dieselbe Fachreihenfolge und derselbe Zeitdruck wie am Prüfungstag.",
   },
   {
     title: "Offizielles Scoring",
-    body: "Teilpunkte nach wi2 spiegeln das Teilpunktesystem wider — dein Prozentsatz sagt etwas aus.",
+    body: "Teilpunkte nach wi2 spiegeln das Teilpunktesystem wider, dein Prozentsatz sagt etwas aus.",
   },
   {
     title: "Harte Diagnose, kein Spielzeug",
@@ -142,7 +142,7 @@ const steps = [
   {
     n: "1",
     title: "Kostenloses Konto anlegen",
-    body: "E-Mail oder Google — keine Zahlungsdaten. Wir brauchen nur ein Konto, um deinen Versuch zu speichern.",
+    body: "E-Mail oder Google: keine Zahlungsdaten. Wir brauchen nur ein Konto, um deinen Versuch zu speichern.",
   },
   {
     n: "2",
@@ -152,7 +152,7 @@ const steps = [
   {
     n: "3",
     title: "Abschließen, Score und Review",
-    body: "Punkte sehen und den vollen Review öffnen, um schwache Themen zu treffen — bevor du etwas kaufst.",
+    body: "Punkte sehen und den vollen Review öffnen, um schwache Themen zu treffen, bevor du etwas kaufst.",
   },
 ];
 
@@ -295,7 +295,7 @@ export function WisoDemoMockPage() {
                   Kostenlose WiSo-Probeprüfung online
                 </h1>
                 <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  Eine vollständige, anspruchsvolle Diagnose der WU-WiSo-Aufnahmeprüfung — gleiches
+                  Eine vollständige, anspruchsvolle Diagnose der WU-WiSo-Aufnahmeprüfung, gleiches
                   Format, gleiches 2-Stunden-Fenster, gleiches Teilpunktesystem. Kostenlos mit Konto;
                   keine Kreditkarte.
                 </p>
@@ -368,7 +368,7 @@ export function WisoDemoMockPage() {
                 Oder zuerst Fachübungen ausprobieren
               </LocalizedLink>
               <p className="text-xs text-muted-foreground">
-                Kostenloses Konto nötig, um Fortschritt zu speichern — keine Kreditkarte, kein Kauf.
+                Kostenloses Konto nötig, um Fortschritt zu speichern, keine Kreditkarte, kein Kauf.
               </p>
             </div>
           </div>
@@ -400,7 +400,7 @@ export function WisoDemoMockPage() {
               Was in der kostenlosen Demo-Probeprüfung steckt
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Ein Durchgang, der den Aufbau der WU-WiSo-Aufnahmeprüfung spiegelt — drei Teile,
+              Ein Durchgang, der den Aufbau der WU-WiSo-Aufnahmeprüfung spiegelt, drei Teile,
               Teilpunkte und Prüfungstag-Tempo.
             </p>
           </div>
@@ -411,13 +411,13 @@ export function WisoDemoMockPage() {
                 subject: "Wirtschaft verstehen",
                 count: WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.economics,
                 detail:
-                  "True/False-Aussagencluster unter gemeinsamen Stämmen — Definitionen, Märkte und Bilanzkennzahlen.",
+                  "True/False-Aussagencluster unter gemeinsamen Stämmen, Definitionen, Märkte und Bilanzkennzahlen.",
               },
               {
                 subject: "Deutsch",
                 count: WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.german,
                 detail:
-                  "Leseverständnis zu „Nudging und die Grenzen verhaltensökonomischer Politik“ — wie in der Prüfung.",
+                  "Leseverständnis zu „Nudging und die Grenzen verhaltensökonomischer Politik“, wie in der Prüfung.",
               },
               {
                 subject: "Mathematik",
@@ -447,8 +447,8 @@ export function WisoDemoMockPage() {
                 Warum diese Diagnose vor dem Kurskauf
               </h2>
               <p className="mt-3 text-muted-foreground">
-                Werbung und Kursseiten können alles versprechen. Eine harte Probeprüfung zeigt dir —
-                in Punkten — wo du wirklich stehst.
+                Werbung und Kursseiten können alles versprechen. Eine harte Probeprüfung zeigt dir,
+                in Punkten, wo du wirklich stehst.
               </p>
             </div>
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
@@ -526,7 +526,7 @@ export function WisoDemoMockPage() {
               <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
                 <Trophy className="mx-auto mb-3 h-6 w-6 text-taupe" />
                 <p className="text-sm text-muted-foreground">
-                  Noch keine Demo-Versuche. Schließe die Prüfung ab — dann erscheint dein Score hier.
+                  Noch keine Demo-Versuche. Schließe die Prüfung ab, dann erscheint dein Score hier.
                 </p>
               </div>
             ) : (
@@ -616,7 +616,7 @@ export function WisoDemoMockPage() {
                     />
                     <span>
                       <span className="font-display font-semibold">
-                        WiSo-Aufnahmeprüfung — Überblick
+                        WiSo-Aufnahmeprüfung: Überblick
                       </span>
                       <span className="mt-1 block text-sm text-muted-foreground">
                         Format, Themen, Scoring und wie das Auswahlverfahren funktioniert.
@@ -661,7 +661,7 @@ export function WisoDemoMockPage() {
                 Bereit für deinen Baseline-Score?
               </h2>
               <p className="mt-2 max-w-lg text-sm text-background/75">
-                Starte die kostenlose WiSo-Probeprüfung — 33 Fragen, 2 Stunden, voller Review nach dem
+                Starte die kostenlose WiSo-Probeprüfung, 33 Fragen, 2 Stunden, voller Review nach dem
                 Abgeben.
               </p>
             </div>
@@ -797,7 +797,7 @@ function ExamCard({
       )}
       {inProgress && (
         <p className="mt-2 text-xs font-semibold text-blue-600 dark:text-blue-400">
-          In Bearbeitung — du kannst fortsetzen, wo du aufgehört hast
+          In Bearbeitung: du kannst fortsetzen, wo du aufgehört hast
         </p>
       )}
       {inProgress ? (

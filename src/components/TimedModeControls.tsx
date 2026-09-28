@@ -86,7 +86,7 @@ export function TimedModeBar({
       {session.enabled && settingsOpen && (
         <div className="mt-3 rounded-xl border border-dashed border-border bg-background/60 p-3">
           <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-            Difficulty — per-question time
+            Difficulty: per-question time
           </p>
           <div className="flex flex-wrap gap-2">
             {LEVELS.map((lvl) => (
@@ -106,7 +106,7 @@ export function TimedModeBar({
             ))}
           </div>
           <p className="mt-2 text-[10px] text-muted-foreground">
-            Changing difficulty only affects questions you haven&apos;t opened yet — clocks already
+            Changing difficulty only affects questions you haven&apos;t opened yet, clocks already
             running or recorded stay exactly as they are.
           </p>
         </div>
@@ -170,7 +170,7 @@ export function TimeoutModal({
         </div>
         <h2 className="font-display text-lg font-bold">Time&apos;s up for this question.</h2>
         <p className="mt-2 text-xs text-muted-foreground">
-          This task is already marked as failed on time — that&apos;s a timing outcome, separate
+          This task is already marked as failed on time, that&apos;s a timing outcome, separate
           from whether your answer is correct.
         </p>
         <div className="mt-5 flex flex-col gap-2">

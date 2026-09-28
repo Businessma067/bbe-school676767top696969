@@ -93,7 +93,7 @@ export function AnswerSheetFeaturePage() {
             >
               "I knew every answer. I just ran out of time writing them down."
               <span className="mt-1 block text-xs not-italic text-muted-foreground">
-                — a repeat applicant, after his first attempt
+               : a repeat applicant, after his first attempt
               </span>
             </blockquote>
 

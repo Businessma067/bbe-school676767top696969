@@ -37,7 +37,7 @@ export async function signInWithGoogle(options?: {
     ) {
       return {
         error: new Error(
-          "Google на localhost через Lovable не работает. Открой Preview в Lovable (как раньше) — там Sign in with Google снова тот же.",
+          "Google на localhost через Lovable не работает. Открой Preview в Lovable (как раньше), там Sign in with Google снова тот же.",
         ),
         redirected: false,
       };

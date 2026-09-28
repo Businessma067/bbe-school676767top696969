@@ -309,20 +309,20 @@ function makeQuestionForced(
 export const TUTOR_GREETINGS = [
   "Booting theory mode… Ready when you are.",
   "Random question set loaded. Let's test what you know.",
-  "New exam seed locked in. No repeats this round — promise.",
+  "New exam seed locked in. No repeats this round, promise.",
   "Circuits warmed up. I'll ask; you pick the best answer.",
 ];
 
 export const TUTOR_CORRECT = [
   "Correct. Nice recall.",
-  "That's right — logging a +1.",
+  "That's right: logging a +1.",
   "Spot on. Next question incoming.",
   "Yes! Theory check passed.",
 ];
 
 export const TUTOR_WRONG = [
   "Not quite. Here's the right pair.",
-  "Missed that one — study the reveal below.",
+  "Missed that one: study the reveal below.",
   "Incorrect. Keep going; randomness is merciless.",
   "Wrong answer. File this term for later.",
 ];

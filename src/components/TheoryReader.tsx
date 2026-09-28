@@ -651,7 +651,7 @@ export function TheoryReader({
               <button
                 type="button"
                 onClick={() => setReaderMode(true)}
-                title="Reader mode — theory fullscreen"
+                title="Reader mode: theory fullscreen"
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
               >
                 <Maximize2 className="h-4 w-4" />

@@ -120,7 +120,7 @@ export const WISO_ECONOMICS_CHAPTERS = [
     id: "ch2",
     title: "Wirtschaft, Gesellschaft und Umwelt",
     topics:
-      "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie — WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text",
+      "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie, WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text",
     bullets: [
       "Einbettung der Wirtschaft in Gesellschaft und Umwelt",
       "Nachhaltigkeit und planetare Grenzen",
@@ -142,7 +142,7 @@ export const WISO_ECONOMICS_CHAPTERS = [
     id: "ch4",
     title: "Digitalisierung",
     topics:
-      "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik — WiSo-spezifisch",
+      "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik, WiSo-spezifisch",
     bullets: [
       "Digitale Transformation und Geschäftsmodelle",
       "Internetplattformen",

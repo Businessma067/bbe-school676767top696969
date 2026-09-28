@@ -66,8 +66,8 @@ export const WISO_FLASHCARD_UI = {
   markedKnown: " · als gekannt markiert (selten)",
   markedDontKnow: " · als unbekannt markiert (häufig)",
   reviewed: (n: number) => ` · ${n} wiederholt`,
-  ariaFlipBack: "Karteikarten-Erklärung — tippen zum Umdrehen",
-  ariaFlipFront: "Karteikarten-Begriff — tippen zum Umdrehen",
+  ariaFlipBack: "Karteikarten-Erklärung: tippen zum Umdrehen",
+  ariaFlipFront: "Karteikarten-Begriff: tippen zum Umdrehen",
   emptyTopic: "Keine Karten in diesem Thema.",
 } as const;
 
@@ -75,7 +75,7 @@ export const WISO_MATCHING_UI = {
   subjectsBack: "← Fächer",
   title: "Begriff → Bedeutung verbinden",
   titleHint:
-    "Tippe oder ziehe von einem Begriff zur Bedeutung — Linien verbinden sie wie auf Papier. Richtige Paare bleiben fixiert.",
+    "Tippe oder ziehe von einem Begriff zur Bedeutung, Linien verbinden sie wie auf Papier. Richtige Paare bleiben fixiert.",
   cardsInDeck: (total: number) => `${total} Karten in diesem Fachstapel.`,
   shuffle: "Mischen",
   newRound: "Neue Runde",
@@ -124,19 +124,19 @@ export const WISO_TUTOR_GREETINGS = [
   "Theorie-Modus startet … Bereit, wenn du bist.",
   "Zufälliger Fragensatz geladen. Testen wir, was du weißt.",
   "Neue Prüfung geladen. Diesmal ohne Wiederholungen.",
-  "Bereit. Ich frage — du wählst die beste Antwort.",
+  "Bereit. Ich frage, du wählst die beste Antwort.",
 ] as const;
 
 export const WISO_TUTOR_CORRECT = [
   "Richtig. Gute Erinnerung.",
-  "Stimmt — +1 Punkt.",
+  "Stimmt: +1 Punkt.",
   "Genau. Nächste Frage kommt.",
   "Ja! Theorie-Check bestanden.",
 ] as const;
 
 export const WISO_TUTOR_WRONG = [
   "Nicht ganz. Hier ist das richtige Paar.",
-  "Daneben — schau dir die Lösung unten an.",
+  "Daneben: schau dir die Lösung unten an.",
   "Falsch. Weiter so; der Zufall ist streng.",
   "Falsche Antwort. Merke dir diesen Begriff.",
 ] as const;
@@ -154,9 +154,9 @@ export const WISO_DASHBOARD_STUDY = {
   sectionBlurb:
     "Öffne WiSo-Karteikarten, Zuordnung und Tutor-Prüfung für Wirtschaft verstehen, Mathematik und Deutsch.",
   introBoth:
-    "Du hast beide Kurse — wähle unten WiSo- oder BBE-Werkzeuge. Jeder Satz öffnet eigene Karteikarten, Zuordnung und Tutor-Prüfung.",
+    "Du hast beide Kurse: wähle unten WiSo- oder BBE-Werkzeuge. Jeder Satz öffnet eigene Karteikarten, Zuordnung und Tutor-Prüfung.",
   introWisoOnly:
-    "Lernwerkzeuge für deinen Full WiSo Course — Wirtschaft, Mathematik und Deutsch.",
+    "Lernwerkzeuge für deinen Full WiSo Course, Wirtschaft, Mathematik und Deutsch.",
   studyToolsHeading: "Lernwerkzeuge",
   flashcardsTitle: "Karteikarten",
   flashcardsBlurb:
@@ -180,7 +180,7 @@ export const WISO_COURSE_SUBJECTS_UI = {
   studyEyebrow: "Lernwerkzeuge",
   studyTitle: "WiSo-Karteikarten, Zuordnung & Tutor-Prüfung",
   studyBlurb:
-    "Getrennt von den BBE-Lernwerkzeugen — öffne diese für deine WiSo-Kursdecks.",
+    "Getrennt von den BBE-Lernwerkzeugen: öffne diese für deine WiSo-Kursdecks.",
   back: "← Zurück",
   flashcardsTitle: "WiSo-Karteikarten",
   flashcardsBlurb:
@@ -196,11 +196,11 @@ export const WISO_COURSE_SUBJECTS_UI = {
   mathTag: "Quantitativ",
   germanTag: "Sprache",
   econDescription:
-    "Fälle neu zugeordnet auf Wirtschaft verstehen — Grundlagen der Wirtschaft und Unternehmensgrundlagen (Kapitel 2 und 4 folgen).",
+    "Fälle neu zugeordnet auf Wirtschaft verstehen, Grundlagen der Wirtschaft und Unternehmensgrundlagen (Kapitel 2 und 4 folgen).",
   mathDescription:
-    "Full-Course-Mathematik mit deutschen Syllabus-Bezeichnungen — Algebra, Funktionen, Finanzmathematik, Wahrscheinlichkeit und mehr.",
+    "Full-Course-Mathematik mit deutschen Syllabus-Bezeichnungen, Algebra, Funktionen, Finanzmathematik, Wahrscheinlichkeit und mehr.",
   germanDescription:
-    "Zehn Lesetexte mit je zehn Aufgaben — akademisches Sprachverständnis für die WiSo-Aufnahmeprüfung.",
+    "Zehn Lesetexte mit je zehn Aufgaben: akademisches Sprachverständnis für die WiSo-Aufnahmeprüfung.",
 } as const;
 
 /** German ModeArt preview snippets for WiSo subject pickers. */

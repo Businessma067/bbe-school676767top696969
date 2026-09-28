@@ -140,7 +140,7 @@ export function DemoTutorAsk({ caption }: DemoProps) {
                 </p>
                 <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3.5 py-2.5 text-sm leading-snug">
                   {feedback
-                    ? "Correct — domain needs x − 2 ≥ 0 and a non-zero denominator."
+                    ? "Correct: domain needs x − 2 ≥ 0 and a non-zero denominator."
                     : "Read carefully. Pick the best domain for the expression."}
                 </div>
               </div>

@@ -91,7 +91,7 @@ export function PaymentSuccessPage() {
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
           {productLabel} is unlocked on your account
-          {promo ? " — no payment needed." : "."}
+          {promo ? ": no payment needed." : "."}
         </p>
         <button
           type="button"

@@ -44,7 +44,7 @@ const SUBJECT_PREVIEW: Record<
       ["Monopoly", "One supplier"],
     ],
     tutor: {
-      question: "You pick one option — what's lost?",
+      question: "You pick one option: what's lost?",
       options: ["Next best choice", "Money spent"],
       correct: 0,
     },

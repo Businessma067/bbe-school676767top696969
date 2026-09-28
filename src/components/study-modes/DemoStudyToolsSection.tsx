@@ -88,8 +88,8 @@ export function DemoStudyToolsSection({ track }: { track: DemoStudyTrack }) {
         </h2>
         <p className="mt-3 text-base text-muted-foreground">
           {isWiso
-            ? "Karteikarten, Zuordnung und Tutor-Prüfung ausprobieren — Antworten sind im Full Course freigeschaltet."
-            : "Try flashcards, matching, and tutor exam — answers unlock with the full course."}
+            ? "Karteikarten, Zuordnung und Tutor-Prüfung ausprobieren, Antworten sind im Full Course freigeschaltet."
+            : "Try flashcards, matching, and tutor exam, answers unlock with the full course."}
         </p>
       </div>
 

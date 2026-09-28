@@ -168,7 +168,7 @@ export function UserProgressCharts({ detail }: { detail: AdminUserDetail }) {
   if (series.length === 0) {
     return (
       <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
-        Пока мало данных для графиков — пусть пользователь решит задания.
+        Пока мало данных для графиков: пусть пользователь решит задания.
       </div>
     );
   }

@@ -69,7 +69,7 @@ export const newsExtraDe: Record<string, string> = {
 
   "The first hard mock exams went live": "Die ersten anspruchsvollen Mocks gingen live",
   "The day practice papers became available to students outside the team, and we began the careful keep-or-cut process that we still use.":
-    "Der Tag, an dem Probeprüfungen für Studierende außerhalb des Teams verfügbar wurden — und unser sorgfältiger Keep-or-Cut-Prozess begann.",
+    "Der Tag, an dem Probeprüfungen für Studierende außerhalb des Teams verfügbar wurden, und unser sorgfältiger Keep-or-Cut-Prozess begann.",
 
   "The homepage now asks BBE or WiSo": "Die Homepage fragt jetzt BBE oder WiSo",
   "Two clear doors on the homepage, so visitors choose the entrance exam they are actually preparing for.":
@@ -117,7 +117,7 @@ export const newsExtraUk: Record<string, string> = {
   "Flashcards and Matching are in Study tools":
     "Flashcards і Matching є в Study tools",
   "Short practice tools for evenings when a full mock is too much, but rereading notes is not enough.":
-    "Короткі інструменти практики для вечорів, коли повний мок — забагато, а перечитувати нотатки — замало.",
+    "Короткі інструменти практики для вечорів, коли повний мок, забагато, а перечитувати нотатки, замало.",
 
   "A dedicated page for the answer sheet": "Окрема сторінка для answer sheet",
   "Format mistakes were costing points even when students knew the content. The answer-sheet guide now has its own page.":
@@ -139,7 +139,7 @@ export const newsExtraUk: Record<string, string> = {
   "A dashboard that keeps your courses in one place":
     "Дашборд, який тримає твої курси в одному місці",
   "After purchase, you no longer need a list of separate links. The dashboard is the main entrance to your courses and study tools.":
-    "Після покупки більше не потрібен список окремих лінків. Дашборд — головний вхід до курсів і study tools.",
+    "Після покупки більше не потрібен список окремих лінків. Дашборд, головний вхід до курсів і study tools.",
 
   "The first hard mock exams went live": "Перші складні мок-іспити вийшли в лайв",
   "The day practice papers became available to students outside the team, and we began the careful keep-or-cut process that we still use.":

@@ -265,7 +265,7 @@ function TakeExamPage() {
       })
         .then(() => setSaveError(null))
         .catch(() => {
-          setSaveError("Could not sync progress — your work is still saved on this device.");
+          setSaveError("Could not sync progress: your work is still saved on this device.");
         });
     }, 1200);
     return () => {
@@ -638,7 +638,7 @@ function TakeExamPage() {
         )}
         {annotationMode && (
           <div className="flex items-center justify-center gap-3 border-t border-caramel-deep/30 bg-caramel-deep/10 px-4 py-1.5 text-xs font-medium text-caramel-deep">
-            Draw mode on — drag to annotate. Esc or Draw again to exit.
+            Draw mode on: drag to annotate. Esc or Draw again to exit.
             <button
               type="button"
               onClick={() => setAnnotationMode(false)}

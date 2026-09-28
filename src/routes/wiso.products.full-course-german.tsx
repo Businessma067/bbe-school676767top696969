@@ -17,11 +17,11 @@ export const Route = createFileRoute("/wiso/products/full-course-german")({
         content:
           "WiSo German reading comprehension: academic passages with true/false statements for the WU Vienna Aufnahmeprüfung Sprachverständnis.",
       },
-      { property: "og:title", content: "Deutsches Sprachverständnis — Full WiSo Course" },
+      { property: "og:title", content: "Deutsches Sprachverständnis: Full WiSo Course" },
       {
         property: "og:description",
         content:
-          "Ten German reading texts with ten comprehension tasks each — aligned to WiSo Sprachverständnis (no English, no grammar mini-section).",
+          "Ten German reading texts with ten comprehension tasks each, aligned to WiSo Sprachverständnis (no English, no grammar mini-section).",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },

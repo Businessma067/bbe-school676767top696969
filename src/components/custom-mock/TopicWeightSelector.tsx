@@ -31,10 +31,10 @@ function weightCopy(locale: UiLocale) {
     return {
       emptyTitle: "Mock formen",
       emptyBody: (n: number) =>
-        `Links Unterkapitel wählen. Ab zwei Themen erscheint ein Polygon — damit verteilst du die ${n} Fragen auf die Themen.`,
-      oneTopicSubtitle: "Ein Thema gewählt — volle Gewichtung",
+        `Links Unterkapitel wählen. Ab zwei Themen erscheint ein Polygon, damit verteilst du die ${n} Fragen auf die Themen.`,
+      oneTopicSubtitle: "Ein Thema gewählt: volle Gewichtung",
       questions: (n: number) => (n === 1 ? "1 Frage" : `${n} Fragen`),
-      manualSubtitle: "Fragen pro Thema eingeben — Summe bleibt exakt",
+      manualSubtitle: "Fragen pro Thema eingeben: Summe bleibt exakt",
       mixerSubtitle: "Punkt ziehen, um die Fragenverteilung zu formen",
       useMixer: "Mixer nutzen",
       enterManually: "Manuell eingeben",
@@ -46,7 +46,7 @@ function weightCopy(locale: UiLocale) {
       random: "Zufällig",
       questionsPerTopic: "Fragen pro Thema",
       redistribute: (n: number) =>
-        `Ändern eines Felds verteilt den Rest neu — Summe bleibt ${n}.`,
+        `Ändern eines Felds verteilt den Rest neu, Summe bleibt ${n}.`,
       totalQuestions: "Fragen gesamt",
       estMin: "ca.",
       minUnit: "Min.",
@@ -58,9 +58,9 @@ function weightCopy(locale: UiLocale) {
     emptyTitle: "Shape your mock",
     emptyBody: (n: number) =>
       `Select subtopics on the left. With two or more, a polygon appears so you can balance how many of the ${n} questions each topic gets.`,
-    oneTopicSubtitle: "One topic selected — full weight",
+    oneTopicSubtitle: "One topic selected: full weight",
     questions: (n: number) => (n === 1 ? "1 question" : `${n} questions`),
-    manualSubtitle: "Type questions per topic — total always stays exact",
+    manualSubtitle: "Type questions per topic: total always stays exact",
     mixerSubtitle: "Drag the point to shape how questions are split",
     useMixer: "Use mixer",
     enterManually: "Enter manually",

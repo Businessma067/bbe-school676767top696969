@@ -25,7 +25,7 @@ const TASK = {
   answerKey: [false, true, false, false, true],
   explanations: [
     "Walking uses on foot, not by foot. By is for vehicles (by bus, by train).",
-    "By train correctly names the means of transport — the default by + vehicle lock.",
+    "By train correctly names the means of transport, the default by + vehicle lock.",
     "Days and dated evenings take on: on Monday evening, not in Monday evening.",
     "At night is the fixed time phrase. Bare in night is not standard.",
     "On plus a day or date phrase is standard: on a cold Friday afternoon.",

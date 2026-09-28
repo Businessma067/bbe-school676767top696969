@@ -45,7 +45,7 @@ export function ExamStartAnswerMode({ withAnswerSheet, onChange, locale = "en" }
       <p className="mt-2 text-xs text-taupe">
         {withAnswerSheet
           ? de
-            ? "Markiere „richtig“ auf dem optischen Antwortbogen — wie in der echten WiSo-Prüfung."
+            ? "Markiere „richtig“ auf dem optischen Antwortbogen, wie in der echten WiSo-Prüfung."
             : "Mark True on the optical answer sheet, like the real exam."
           : de
             ? "Markiere „richtig“ direkt neben jeder Aussage. Antworten bleiben bis zum Ende verborgen."

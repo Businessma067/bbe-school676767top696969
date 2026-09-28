@@ -175,7 +175,7 @@ export const extraUk: Record<string, string> = {
   "Only calculators on WU’s published permitted list. Confirm the current list on the official WU site before exam day.":
     "Лише калькулятори з офіційного переліку WU. Перевір актуальний список на сайті WU перед днем іспиту.",
   "No. Each question has multiple statements. Points depend on which true statements you correctly select and which false statements you incorrectly select, with a floor at zero for that question.":
-    "Ні. Кожне запитання містить кілька тверджень. Бали залежать від того, які істинні твердження ти правильно позначив і які хибні позначив помилково, а мінімум за запитання — нуль.",
+    "Ні. Кожне запитання містить кілька тверджень. Бали залежать від того, які істинні твердження ти правильно позначив і які хибні позначив помилково, а мінімум за запитання, нуль.",
   "Leaving a statement unmarked does not award the points you would get for correctly marking a true statement, and it does not apply the penalty that comes from marking a false statement. Strategic non-selection matters.":
     "Непозначене твердження не дає балів за правильне позначення істинного, але й не приносить штрафу за позначення хибного. Стратегічне пропускання має значення.",
   "No. After combining credit for correct selections and penalties for incorrect selections, the score for that question is floored at zero.":
@@ -195,11 +195,11 @@ export const extraUk: Record<string, string> = {
   "Economics & Business, English language skills, and mathematics.":
     "Економіка та бізнес, англійська мова і математика.",
   "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.":
-    "За останнім іспитом: 34 запитання загалом — 10 з економіки та бізнесу, 11 з англійської та 13 з математики.",
+    "За останнім іспитом: 34 запитання загалом, 10 з економіки та бізнесу, 11 з англійської та 13 з математики.",
   "2 hours, based on the most recent exam structure.":
     "2 години, за структурою останнього іспиту.",
   "Difficulty varies by section. Math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.":
-    "Складність різна за частинами. Математика зазвичай потребує найбільше часу, економіка винагороджує точне читання визначень, а англійська — рівень, напрацьований роками.",
+    "Складність різна за частинами. Математика зазвичай потребує найбільше часу, економіка винагороджує точне читання визначень, а англійська, рівень, напрацьований роками.",
   "Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics 37.5%, English 19%, Mathematics 43%.":
     "Через систему часткових балів, де правильні й помилкові позначення в одному завданні врівноважують одне одного. Приблизна вага за останнім іспитом: економіка 37.5%, англійська 19%, математика 43%.",
   "By written exam performance against the 240 available places; the OSA is ungraded and does not factor into ranking.":
@@ -215,7 +215,7 @@ export const extraUk: Record<string, string> = {
   "None. No exceptions, per the exam overview in the guide.":
     "Жодних. Без винятків, згідно з оглядом іспиту в посібнику.",
   "Physical government-issued photo ID (original), printed exam invitation, blue/black ballpoint pen, a calculator from WU’s permitted list; snack/drink optional.":
-    "Оригінал документа з фото, роздрукований запрошувальний лист, синя/чорна кулькова ручка, калькулятор із переліку WU; перекус і напій — за бажанням.",
+    "Оригінал документа з фото, роздрукований запрошувальний лист, синя/чорна кулькова ручка, калькулятор із переліку WU; перекус і напій, за бажанням.",
 
   // ---------- Full course FAQs ----------
   "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.":
@@ -231,7 +231,7 @@ export const extraUk: Record<string, string> = {
   "Yes. The course provides 100% comprehensive training for all three blocks. It contains dedicated, heavy question databases and specialized toolkits for Business/Economics contexts, Mathematics functions/graphs, and English Proficiency logic.":
     "Так. Курс дає повну підготовку за всіма трьома блоками. Він містить окремі великі бази запитань і спеціальні інструменти для бізнес-економічних контекстів, функцій і графіків у математиці та логіки англійської мови.",
   "Over 15% of applicants fail simply because they misalign text rows or panic during the final minutes of transferring answers onto the physical paper. This simulator which you can find in every Mock Exam is a precise digital copy of the official optical sheet, training your muscle memory to avoid costly technical mistakes under stress.":
-    "Понад 15% вступників провалюються лише тому, що зміщують рядки або панікують в останні хвилини перенесення відповідей на паперовий бланк. Цей симулятор, доступний у кожному пробному іспиті, — точна цифрова копія офіційного бланка, яка тренує м'язову пам'ять і уберігає від дорогих технічних помилок під стресом.",
+    "Понад 15% вступників провалюються лише тому, що зміщують рядки або панікують в останні хвилини перенесення відповідей на паперовий бланк. Цей симулятор, доступний у кожному пробному іспиті,, точна цифрова копія офіційного бланка, яка тренує м'язову пам'ять і уберігає від дорогих технічних помилок під стресом.",
   "The platform replicates the exact negative point system used by the university, where incorrect answers deduct your score. The system automatically tracks this, teaching you the precise risk management of when to answer and when it is safer to skip a task.":
     "Платформа відтворює точну систему від'ємних балів університету, де хибні відповіді знімають бали. Система автоматично це відстежує і вчить керувати ризиком: коли відповідати, а коли безпечніше пропустити.",
   "Yes. The entire software is fully cloud-optimized and ultra-responsive. You can train your speed drills, review flashcards, solve tasks, and read AI explanations seamlessly on any smartphone, tablet, laptop, or desktop computer.":
@@ -239,7 +239,7 @@ export const extraUk: Record<string, string> = {
   "No. Every account is strictly personal and tied to your individual analytics dashboard, progress tracking, and achievements. Simultaneous logins from different devices will automatically trigger our security system and lock the account.":
     "Ні. Кожен акаунт суто персональний і прив'язаний до твоєї аналітики, прогресу та досягнень. Одночасні входи з різних пристроїв автоматично активують систему безпеки й блокують акаунт.",
   "No course or software can ever guarantee your admission, success depends entirely on your personal discipline. However, data shows that students who train on our platform for 45 to 60 minutes daily achieve a success rate of 41.3%, compared to the general average of 8%.":
-    "Жоден курс чи програма не гарантує вступ — усе залежить від твоєї дисципліни. Але дані показують: студенти, які тренуються на платформі 45–60 хвилин щодня, мають успішність 41,3% проти загальних 8%.",
+    "Жоден курс чи програма не гарантує вступ, усе залежить від твоєї дисципліни. Але дані показують: студенти, які тренуються на платформі 45–60 хвилин щодня, мають успішність 41,3% проти загальних 8%.",
   "Yes. The course unlocks complete, realistic 120-minute mock simulation tests that mix tasks from all three subjects under severe time limits, mimicking the exact time-pressure atmosphere of the real exam hall.":
     "Так. Курс відкриває повноцінні реалістичні 120-хвилинні симуляції, що змішують завдання з усіх трьох предметів у жорстких часових рамках і відтворюють атмосферу справжньої зали іспиту.",
   "You are never left without help. Your AI Study Companion is available 24/7 inside every question view to instantly break down complex equations, logic chains, or vocabulary rules into simple, human-friendly steps with 0-ms delay.":
@@ -272,7 +272,7 @@ export const extraUk: Record<string, string> = {
   "The mandatory in-person BBE entrance test at WU Vienna is closer to a filtering conveyor than to a classroom exam. Imagine a huge convention hall, more than 3000 applicants from across the world, echoing announcements, and exactly 240 seats on the other side of the door. That is over 12 candidates competing for a single desk.":
     "Обов'язковий очний вступний тест BBE у WU Відень ближчий до конвеєра відсіву, ніж до шкільного іспиту. Уявіть величезну залу, понад 3000 вступників з усього світу, гучні оголошення і рівно 240 місць по той бік дверей. Це понад 12 кандидатів на одну парту.",
   "The volume of competitors is not the hardest part. The real difficulty is buried in the structural rules the university uses to separate the top of the funnel:":
-    "Кількість конкурентів — не найважче. Справжня складність захована в структурних правилах, якими університет відсіює вершину воронки:",
+    "Кількість конкурентів: не найважче. Справжня складність захована в структурних правилах, якими університет відсіює вершину воронки:",
   "Your child gets less than a minute per statement to scan a dense English passage or work through a data-sufficiency style problem entirely in their head.":
     "У вашої дитини менше хвилини на одне твердження, щоб опрацювати щільний англійський текст або розв'язати задачу повністю в голові.",
   "At WU Vienna a wrong answer does not just score zero. The computer actively subtracts points from what the student got right elsewhere.":
@@ -280,7 +280,7 @@ export const extraUk: Record<string, string> = {
   "If a candidate panics under the clock and starts guessing blindly, a strong paper can collapse to zero in minutes. That is why straight-A students with expensive private tutors still fail here every single year. They were never taught how to manage the clock and the penalty system at the same time.":
     "Якщо кандидат панікує через час і починає вгадувати навмання, сильна робота обвалюється до нуля за кілька хвилин. Саме тому щороку тут провалюються відмінники з дорогими репетиторами. Їх ніколи не вчили одночасно керувати часом і системою штрафів.",
   "The exam is a stopwatch pretending to be a paper. Speed decides the score.":
-    "Цей іспит — секундомір, що вдає з себе тест. Швидкість вирішує результат.",
+    "Цей іспит: секундомір, що вдає з себе тест. Швидкість вирішує результат.",
   "The price of a mistake: minus €60,000 from the family budget":
     "Ціна помилки: мінус 60 000 € із сімейного бюджету",
   "Let us calculate on our fingers what a single failed exam in Vienna actually costs a family. If the applicant misses the Top-240 list, there are two realistic and very expensive backup routes.":
@@ -316,7 +316,7 @@ export const extraUk: Record<string, string> = {
   "See the Full BBE Course →": "Переглянути повний курс BBE →",
   "Try the free demo first": "Спершу спробувати безкоштовне демо",
   "The prize on the other side of the exam: WU Vienna.":
-    "Нагорода по той бік іспиту — WU Відень.",
+    "Нагорода по той бік іспиту: WU Відень.",
   "2–3 answers": "2–3 відповіді",
   "Clock on top of an exam answer sheet": "Годинник на бланку відповідей",
   "Euro banknotes next to a graduation cap and calculator":

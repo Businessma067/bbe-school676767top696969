@@ -212,23 +212,23 @@ export function PrivacyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <strong className="font-semibold">Supabase</strong> — authentication, database, and
+                <strong className="font-semibold">Supabase</strong>, authentication, database, and
                 related backend infrastructure
               </li>
               <li>
-                <strong className="font-semibold">Monobank Acquiring</strong> — payment processing
+                <strong className="font-semibold">Monobank Acquiring</strong>, payment processing
               </li>
               <li>
-                <strong className="font-semibold">Google</strong> — Google sign-in (when you choose
+                <strong className="font-semibold">Google</strong>, Google sign-in (when you choose
                 that option), and Search Console / Analytics for website indexing and usage
                 analytics where enabled
               </li>
               <li>
-                <strong className="font-semibold">AI providers (e.g., Anthropic, OpenAI)</strong> —
+                <strong className="font-semibold">AI providers (e.g., Anthropic, OpenAI)</strong>,
                 generating AI-based explanations and related features
               </li>
               <li>
-                <strong className="font-semibold">Hosting and email delivery providers</strong> —
+                <strong className="font-semibold">Hosting and email delivery providers</strong>,
                 operating the Site and sending transactional messages
               </li>
             </ul>
@@ -292,16 +292,16 @@ export function PrivacyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <strong className="font-semibold">Account and usage data</strong> — for as long as
+                <strong className="font-semibold">Account and usage data</strong>, for as long as
                 your Account remains active, and for a reasonable period afterward in case you wish
                 to reactivate it, unless you request earlier deletion.
               </li>
               <li>
-                <strong className="font-semibold">Payment and transaction records</strong> — for the
+                <strong className="font-semibold">Payment and transaction records</strong>, for the
                 period required by Ukrainian tax and accounting law (typically several years).
               </li>
               <li>
-                <strong className="font-semibold">Support communications</strong> — for as long as
+                <strong className="font-semibold">Support communications</strong>, for as long as
                 needed to resolve your request and for a reasonable period afterward for
                 record-keeping.
               </li>
@@ -320,31 +320,31 @@ export function PrivacyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <strong className="font-semibold">Access</strong> — request a copy of the personal
+                <strong className="font-semibold">Access</strong>, request a copy of the personal
                 data we hold about you
               </li>
               <li>
-                <strong className="font-semibold">Rectification</strong> — request correction of
+                <strong className="font-semibold">Rectification</strong>, request correction of
                 inaccurate or incomplete data
               </li>
               <li>
-                <strong className="font-semibold">Erasure</strong> — request deletion of your data,
+                <strong className="font-semibold">Erasure</strong>, request deletion of your data,
                 subject to certain exceptions (e.g., legal retention obligations)
               </li>
               <li>
-                <strong className="font-semibold">Restriction</strong> — request that we limit how we
+                <strong className="font-semibold">Restriction</strong>, request that we limit how we
                 use your data in certain circumstances
               </li>
               <li>
-                <strong className="font-semibold">Portability</strong> — request your data in a
+                <strong className="font-semibold">Portability</strong>, request your data in a
                 structured, commonly used, machine-readable format
               </li>
               <li>
-                <strong className="font-semibold">Objection</strong> — object to processing based on
+                <strong className="font-semibold">Objection</strong>, object to processing based on
                 legitimate interest, including for analytics
               </li>
               <li>
-                <strong className="font-semibold">Withdraw consent</strong> — where processing is
+                <strong className="font-semibold">Withdraw consent</strong>, where processing is
                 based on consent, withdraw it at any time without affecting prior processing
               </li>
             </ul>
@@ -406,7 +406,7 @@ export function PrivacyPage() {
               input) may be sent to our AI provider to generate a response. This data is processed
               under contractual terms that restrict our AI providers from using it to train their
               models on your personal data, except where a provider offers this by default and we
-              have not opted out — we will update this section if that changes. Accuracy limitations
+              have not opted out: we will update this section if that changes. Accuracy limitations
               of AI-generated explanations are described in Section 9 of our{" "}
               <LocalizedLink to="/terms" className="text-primary hover:underline">
                 Terms of Service

@@ -149,7 +149,7 @@ export function PaymentModal({
     try {
       const handled = await applyDiscountCode(code);
       if (!handled) {
-        setError("This promocode is invalid, or it is an unlock code — use the Promo tab.");
+        setError("This promocode is invalid, or it is an unlock code, use the Promo tab.");
       }
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not apply promocode.";
@@ -337,8 +337,8 @@ export function PaymentModal({
                       }}
                     >
                       {MONOBANK_TEST_CHARGE.enabled
-                        ? `Discount noted (${appliedPromoCode}) — test charge remains ${MONOBANK_TEST_CHARGE.label}`
-                        : `${discountPct}% off applied (${appliedPromoCode}) — pay €${eurPrice} instead of €${catalogEur}`}
+                        ? `Discount noted (${appliedPromoCode}): test charge remains ${MONOBANK_TEST_CHARGE.label}`
+                        : `${discountPct}% off applied (${appliedPromoCode}): pay €${eurPrice} instead of €${catalogEur}`}
                     </p>
                   )}
 

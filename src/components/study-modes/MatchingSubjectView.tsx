@@ -552,7 +552,7 @@ export function MatchingSubjectView({
               <p className="mt-2 max-w-xl text-sm text-muted-foreground">
                 {ui
                   ? `${ui.titleHint} ${ui.cardsInDeck(total)}`
-                  : `Tap or drag from a concept to its meaning — lines connect them like on paper. Correct pairs lock in place. ${total} cards in this subject deck.`}
+                  : `Tap or drag from a concept to its meaning, lines connect them like on paper. Correct pairs lock in place. ${total} cards in this subject deck.`}
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">

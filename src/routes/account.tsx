@@ -271,7 +271,7 @@ export function AccountPage() {
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
                 <p className="text-sm text-muted-foreground">
-                  View detailed analytics for every registered user — tasks, mocks, time on site,
+                  View detailed analytics for every registered user, tasks, mocks, time on site,
                   flashcards, theory and more.
                 </p>
               </div>

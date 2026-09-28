@@ -128,7 +128,7 @@ const DESCRIPTION =
   "Independent WU Vienna guide for applicants: FT and QS rankings, bachelor and master courses, Campus WU life at Welthandelsplatz, and how admission links to the BBE entrance exam.";
 const HEADLINE = "WU Vienna (Wirtschaftsuniversität Wien): Rankings, Courses & Campus Life";
 const LEAD =
-  "WU Vienna is Austria’s leading university for business and economics. This independent guide covers recent rankings, the bachelor and master programmes on offer, and daily life on Campus WU — with a clear path into the English-taught BBE entrance exam.";
+  "WU Vienna is Austria’s leading university for business and economics. This independent guide covers recent rankings, the bachelor and master programmes on offer, and daily life on Campus WU, with a clear path into the English-taught BBE entrance exam.";
 
 const faqs = [
   {
@@ -304,11 +304,11 @@ export function WuViennaOverviewPage() {
             WU Vienna (Wirtschaftsuniversität Wien / Vienna University of Economics and Business)
             concentrates teaching and research in business, economics, and neighbouring social sciences.
             About 21,000 students from more than 100 countries study on a single modern campus in
-            Vienna’s second district — next to Prater Park and a short ride from the city centre.
+            Vienna’s second district: next to Prater Park and a short ride from the city centre.
           </p>
           <p>
             Applicants often arrive here because of the English-taught Bachelor in Business and Economics
-            (BBE). This page orients you on the university first — rankings, courses, and campus life —
+            (BBE). This page orients you on the university first, rankings, courses, and campus life,
             then links into the{" "}
             <BbeTextLink to="/bbe-entrance-exam">BBE entrance exam guide</BbeTextLink>,{" "}
             <BbeTextLink to="/bbe-vs-wiso">BBE vs WISO comparison</BbeTextLink>, and{" "}
@@ -458,7 +458,7 @@ export function WuViennaOverviewPage() {
           </div>
           <p className="text-sm text-muted-foreground">
             Sources: WU’s published ranking pages and the Financial Times / QS tables for the cycles
-            named above. Always read methodology notes — a master’s rank is not the same claim as a
+            named above. Always read methodology notes, a master’s rank is not the same claim as a
             bachelor admission rate.
           </p>
         </BbeSection>
@@ -467,7 +467,7 @@ export function WuViennaOverviewPage() {
           <p>
             WU’s portfolio is deliberately focused: three bachelor programmes, sixteen master’s
             programmes, five doctoral/PhD tracks, and MBA offerings through the Executive Academy. For
-            most readers of this hub, the decision starts with the bachelor language track — English
+            most readers of this hub, the decision starts with the bachelor language track, English
             BBE versus German WISO or Business Law.
           </p>
 
@@ -581,7 +581,7 @@ export function WuViennaOverviewPage() {
           <p>
             Campus life is one of WU’s strongest selling points. Instead of hopping between downtown
             buildings, students spend most of the week on one award-winning campus with plazas, lawns,
-            reflecting pools, cafés, and the Library & Learning Center as a daily hub — with Prater
+            reflecting pools, cafés, and the Library & Learning Center as a daily hub, with Prater
             Park for a reset between lectures.
           </p>
 
@@ -605,7 +605,7 @@ export function WuViennaOverviewPage() {
               alt="Library and Learning Center by Zaha Hadid on Campus WU Vienna"
               width={1280}
               height={854}
-              caption="Library & Learning Center on Campus WU — the academic heart of the campus. Photo: Wikimedia Commons (CC BY-SA)."
+              caption="Library & Learning Center on Campus WU, the academic heart of the campus. Photo: Wikimedia Commons (CC BY-SA)."
             />
             <PhotoFigure
               src={IMAGES.libraryInterior}
@@ -624,11 +624,11 @@ export function WuViennaOverviewPage() {
               },
               {
                 title: "Student community",
-                body: "Clubs, career events, and an international cohort make networking feel part of the week — especially on English-taught tracks like BBE.",
+                body: "Clubs, career events, and an international cohort make networking feel part of the week, especially on English-taught tracks like BBE.",
               },
               {
                 title: "Vienna around you",
-                body: "Safe, transit-connected, and repeatedly ranked among the world’s most liveable cities — campus is the hub, Vienna is the extended campus.",
+                body: "Safe, transit-connected, and repeatedly ranked among the world’s most liveable cities, campus is the hub, Vienna is the extended campus.",
               },
             ].map((card) => (
               <div key={card.title} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
@@ -642,7 +642,7 @@ export function WuViennaOverviewPage() {
         <BbeSection id="bbe-entrance-exam" title="How this connects to the BBE entrance exam">
           <p>
             If your goal is the English-taught Bachelor in Business and Economics, campus reputation and
-            rankings explain why demand is high — but admission still runs through WU’s selection
+            rankings explain why demand is high: but admission still runs through WU’s selection
             procedure, including a written multiple-choice entrance exam when applications exceed places.
           </p>
           <PhotoFigure
@@ -650,7 +650,7 @@ export function WuViennaOverviewPage() {
             alt="WU Vienna BBE entrance exam hall with rows of desks at VIECON"
             width={1600}
             height={900}
-            caption="The written BBE entrance exam is typically held in person when registrations exceed places — preparation quality matters more than collecting random PDFs."
+            caption="The written BBE entrance exam is typically held in person when registrations exceed places, preparation quality matters more than collecting random PDFs."
           />
           <ul className="list-disc space-y-2 pl-5">
             <li>

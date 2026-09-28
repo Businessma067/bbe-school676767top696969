@@ -69,7 +69,7 @@ const demoMockFaqs = [
 
 const pageTitle = "Free BBE Mock Exam Online | WU Vienna Entrance Exam Practice | BBE School";
 const pageDescription =
-  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account — no credit card. Start your diagnostic now.";
+  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account, no credit card. Start your diagnostic now.";
 
 export const Route = createFileRoute("/demo-mock")({
   head: () => ({
@@ -127,7 +127,7 @@ export const Route = createFileRoute("/demo-mock")({
 const benefits = [
   {
     title: "Real exam structure",
-    body: "Economics, English, and Math in one sitting — the same subject order and time pressure as exam day.",
+    body: "Economics, English, and Math in one sitting, the same subject order and time pressure as exam day.",
   },
   {
     title: "Official-style scoring",
@@ -147,7 +147,7 @@ const steps = [
   {
     n: "1",
     title: "Create a free account",
-    body: "Email signup or Google — no payment details. We only need an account to save your attempt.",
+    body: "Email signup or Google: no payment details. We only need an account to save your attempt.",
   },
   {
     n: "2",
@@ -285,7 +285,7 @@ export function DemoMockPage() {
                   Free BBE mock exam online
                 </h1>
                 <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure,
+                  A full-length hard diagnostic of the WU Vienna BBE entrance exam, same structure,
                   same 2-hour window, same partial-credit scoring. Free with an account; no credit
                   card.
                 </p>
@@ -351,7 +351,7 @@ export function DemoMockPage() {
                 Or try subject practice first
               </LocalizedLink>
               <p className="text-xs text-muted-foreground">
-                Free account required to save progress — no credit card, no purchase.
+                Free account required to save progress, no credit card, no purchase.
               </p>
             </div>
           </div>
@@ -385,7 +385,7 @@ export function DemoMockPage() {
               What&apos;s inside the free demo mock
             </h2>
             <p className="mt-3 text-muted-foreground">
-              One sitting that mirrors how the WU BBE entrance exam is built — three sections,
+              One sitting that mirrors how the WU BBE entrance exam is built, three sections,
               partial credit, and exam-day pacing.
             </p>
           </div>
@@ -396,7 +396,7 @@ export function DemoMockPage() {
                 subject: "Economics & Business",
                 count: MOCK_EXAM_DEMO_SECTION_COUNTS.economics,
                 detail:
-                  "True/False statement clusters under shared stems — definitions, markets, and accounting traps.",
+                  "True/False statement clusters under shared stems, definitions, markets, and accounting traps.",
               },
               {
                 subject: "English",
@@ -430,7 +430,7 @@ export function DemoMockPage() {
                 Why take this diagnostic before you buy a course
               </h2>
               <p className="mt-3 text-muted-foreground">
-                Ads and course pages can promise anything. Sitting a hard mock tells you — in points —
+                Ads and course pages can promise anything. Sitting a hard mock tells you, in points,
                 where you actually stand.
               </p>
             </div>
@@ -625,7 +625,7 @@ export function DemoMockPage() {
                 Ready for your baseline score?
               </h2>
               <p className="mt-2 max-w-lg text-sm text-background/75">
-                Start the free BBE mock exam — 34 questions, 2 hours, full review after submit.
+                Start the free BBE mock exam: 34 questions, 2 hours, full review after submit.
               </p>
             </div>
             <button
@@ -754,7 +754,7 @@ function ExamCard({
       )}
       {inProgress && (
         <p className="mt-2 text-xs font-semibold text-blue-600 dark:text-blue-400">
-          In progress — you can resume where you left off
+          In progress: you can resume where you left off
         </p>
       )}
       {inProgress ? (

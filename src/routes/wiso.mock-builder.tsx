@@ -62,7 +62,7 @@ export const Route = createFileRoute("/wiso/mock-builder")({
       {
         name: "description",
         content:
-          "Erstelle Wirtschaft- und Mathematik-Mocks aus dem WiSo Full Course — nach Thema und Unterkapitel.",
+          "Erstelle Wirtschaft- und Mathematik-Mocks aus dem WiSo Full Course, nach Thema und Unterkapitel.",
       },
       { name: "robots", content: "noindex" },
       ...socialImageMetaForPath(PATH),

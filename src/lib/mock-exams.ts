@@ -326,10 +326,10 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
         index,
         subject,
         maxPoints: points[i]!,
-        stem: `Task ${index} · ${subject === "economics" ? "Economics" : subject === "english" ? "English" : "Math"} — question text will be added here. Decide which of the following statements are true.`,
+        stem: `Task ${index} · ${subject === "economics" ? "Economics" : subject === "english" ? "English" : "Math"}: question text will be added here. Decide which of the following statements are true.`,
         statements: Array.from({ length: 5 }, (_, s) => ({
           id: `${examId}-q${index}-s${s + 1}`,
-          text: `Statement ${String.fromCharCode(65 + s)} — placeholder statement text for task ${index}.`,
+          text: `Statement ${String.fromCharCode(65 + s)}: placeholder statement text for task ${index}.`,
           isTrue: flags[s],
           explanation: flags[s]
             ? "This statement is correct. The detailed explanation will be added with the real exam content."
