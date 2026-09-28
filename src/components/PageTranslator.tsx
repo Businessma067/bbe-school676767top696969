@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import { useRouterState } from "@tanstack/react-router";
+import { peekAutoTranslation, requestAutoTranslations } from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
 import { translate } from "@/lib/i18n/dictionary";
+import { isAutoLang } from "@/lib/i18n/languages";
 import { isStudyContentPath } from "@/lib/i18n/locale-path";
 
 const SKIP_TAGS = new Set([
@@ -108,12 +110,35 @@ export function PageTranslator() {
         }
 
         const source = originals.get(node) ?? value;
+        if (isAutoLang(effectiveLang)) {
+          const trimmed = source.trim();
+          if (!trimmed || !/[A-Za-zÀ-ÿ]/.test(trimmed)) continue;
+          const hit = peekAutoTranslation(effectiveLang, trimmed);
+          if (!hit) {
+            if (trimmed.length <= 1800) pendingAuto.add(trimmed);
+            continue;
+          }
+          const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(source) ?? [];
+          writeNode(node, `${lead}${hit}${trail}`);
+          continue;
+        }
         const next = translate(source, effectiveLang) ?? source;
         writeNode(node, next);
       }
     };
 
-    applyTo(document.body);
+    const pendingAuto = new Set<string>();
+
+    const applyAndRequest = (root: Node, fromCharacterData = false) => {
+      pendingAuto.clear();
+      applyTo(root, fromCharacterData);
+      if (!isAutoLang(effectiveLang) || pendingAuto.size === 0) return;
+      requestAutoTranslations(effectiveLang, [...pendingAuto], () => {
+        applyAndRequest(document.body);
+      });
+    };
+
+    applyAndRequest(document.body);
 
     let raf = 0;
     const pendingRoots = new Set<Node>();
@@ -121,9 +146,9 @@ export function PageTranslator() {
 
     const flush = () => {
       raf = 0;
-      for (const node of pendingCharData) applyTo(node, true);
+      for (const node of pendingCharData) applyAndRequest(node, true);
       pendingCharData.clear();
-      for (const root of pendingRoots) applyTo(root);
+      for (const root of pendingRoots) applyAndRequest(root);
       pendingRoots.clear();
     };
 

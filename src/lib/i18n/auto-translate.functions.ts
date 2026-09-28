@@ -1,0 +1,81 @@
+import { createServerFn } from "@tanstack/react-start";
+import { z } from "zod";
+import { getAutoLanguage } from "@/lib/i18n/languages";
+
+const Input = z.object({
+  lang: z.string().min(2).max(12),
+  texts: z.array(z.string().min(1).max(1800)).min(1).max(40),
+});
+
+const SEPARATOR = "\n⟦⟧\n";
+
+function joinSegments(payload: unknown): string {
+  if (!Array.isArray(payload) || !Array.isArray(payload[0])) return "";
+  return (payload[0] as unknown[])
+    .map((part) => (Array.isArray(part) && typeof part[0] === "string" ? part[0] : ""))
+    .join("");
+}
+
+async function googleTranslate(target: string, texts: string[]): Promise<(string | null)[]> {
+  const body = new URLSearchParams({
+    client: "gtx",
+    sl: "en",
+    tl: target,
+    dt: "t",
+    q: texts.join(SEPARATOR),
+  });
+  const response = await fetch("https://translate.googleapis.com/translate_a/single", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body,
+    signal: AbortSignal.timeout(12_000),
+  });
+  if (!response.ok) throw new Error(`Translate failed (${response.status})`);
+  const joined = joinSegments(await response.json());
+  const parts = joined.split("⟦⟧").map((part) => part.trim());
+  if (parts.length !== texts.length) return texts.map(() => null);
+  return parts.map((part, index) => (part && part !== texts[index] ? part : null));
+}
+
+async function myMemoryTranslate(target: string, texts: string[]): Promise<(string | null)[]> {
+  const out: (string | null)[] = [];
+  for (const text of texts.slice(0, 12)) {
+    if (text.length > 450) {
+      out.push(null);
+      continue;
+    }
+    try {
+      const url = new URL("https://api.mymemory.translated.net/get");
+      url.searchParams.set("q", text);
+      url.searchParams.set("langpair", `en|${target}`);
+      const response = await fetch(url, { signal: AbortSignal.timeout(8_000) });
+      const data = (await response.json()) as { responseData?: { translatedText?: string } };
+      const value = data.responseData?.translatedText?.trim() ?? "";
+      out.push(value && !/MYMEMORY WARNING/i.test(value) && value !== text ? value : null);
+    } catch {
+      out.push(null);
+    }
+  }
+  while (out.length < texts.length) out.push(null);
+  return out;
+}
+
+/** Keyless batch translate for languages that have no edited dictionary. */
+export const translateUiBatch = createServerFn({ method: "POST" })
+  .inputValidator((data: unknown) => {
+    const parsed = Input.parse(data);
+    const spec = getAutoLanguage(parsed.lang);
+    if (!spec) throw new Error("Unsupported language");
+    const total = parsed.texts.reduce((sum, text) => sum + text.length, 0);
+    if (total > 12_000) throw new Error("Batch too large");
+    return { lang: spec.code, google: spec.google, texts: parsed.texts };
+  })
+  .handler(async ({ data }) => {
+    try {
+      const translations = await googleTranslate(data.google, data.texts);
+      if (translations.some((item) => item)) return { translations };
+    } catch {
+      /* keyless endpoint failed; try the public fallback */
+    }
+    return { translations: await myMemoryTranslate(data.google, data.texts) };
+  });

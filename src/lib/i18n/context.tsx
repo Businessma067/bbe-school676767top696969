@@ -8,6 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { translate, type Lang } from "./dictionary";
+import { isKnownLang, RTL_LANGS } from "./languages";
 
 const STORAGE_KEY = "bbe.lang";
 
@@ -41,7 +42,9 @@ export function LanguageProvider({
   const [lang, setLangState] = useState<Lang>(initialLang);
 
   useEffect(() => {
-    if (typeof document !== "undefined") document.documentElement.lang = lang;
+    if (typeof document === "undefined") return;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
   }, [lang]);
 
   // `persist: false` applies a language for the current view only (e.g. an
@@ -67,7 +70,7 @@ export function LanguageProvider({
 export function readStoredLang(): Lang | null {
   try {
     const stored = window.localStorage.getItem(STORAGE_KEY) as Lang | null;
-    if (stored === "de" || stored === "uk" || stored === "en") return stored;
+    if (isKnownLang(stored)) return stored;
   } catch {
     /* storage unavailable */
   }

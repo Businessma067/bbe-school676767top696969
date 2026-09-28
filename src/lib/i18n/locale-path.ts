@@ -144,7 +144,9 @@ export function localizePath(pathname: string, lang: Lang): string {
   const base = stripLocalePrefix(pathOnly);
 
   // Study tools / course drills stay on unprefixed gated routes (never /de|/uk).
-  if (isStudyContentPath(base) || !isLocalizablePath(base) || lang === "en") {
+  // Only Deutsch and українська have their own URL. Other languages stay on the
+  // English path and are applied by the on-page translator.
+  if (isStudyContentPath(base) || !isLocalizablePath(base) || !isLocalePrefix(lang)) {
     return `${base === "/" ? "/" : base}${hash}`;
   }
 

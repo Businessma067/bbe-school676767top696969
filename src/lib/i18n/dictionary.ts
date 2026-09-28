@@ -10,20 +10,18 @@ import { wisoHubExtraDe, wisoHubExtraUk } from "./wiso-hub-extra";
 import { copyVoiceExtraDe, copyVoiceExtraUk } from "./copy-voice-extra";
 import { newsExtraDe, newsExtraUk } from "./news-extra";
 import { newsBodyExtraDe, newsBodyExtraUk } from "./news-body-extra";
+import { isDictionaryLang, type Lang } from "./languages";
 
-export type Lang = "en" | "de" | "uk";
-
-export const LANGUAGES: { code: Lang; label: string; short: string }[] = [
-  { code: "en", label: "English", short: "EN" },
-  { code: "de", label: "Deutsch", short: "DE" },
-  { code: "uk", label: "Українська", short: "UA" },
-];
+export type { Lang } from "./languages";
+export { LANGUAGES } from "./languages";
 
 /**
  * Translation dictionary keyed by the exact English source text as rendered.
  * Anything missing simply stays in English.
  */
-const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+type EditedLang = "de" | "uk";
+
+const baseDictionary: Record<EditedLang, Record<string, string>> = {
   de: {
     // Navigation / chrome
     "Exam info": "Prüfungsinfos",
@@ -481,7 +479,7 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 };
 
 /** Hand-written entries win over auto-generated page copy. */
-export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+export const dictionary: Record<EditedLang, Record<string, string>> = {
   de: {
     ...generatedDe,
     ...extraDe,
@@ -515,7 +513,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 };
 
 /** Same tables keyed by whitespace-collapsed text, for multi-line JSX nodes. */
-const collapsedDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+const collapsedDictionary: Record<"de" | "uk", Record<string, string>> = {
   de: {},
   uk: {},
 };
@@ -529,7 +527,7 @@ for (const lang of ["de", "uk"] as const) {
 }
 
 export function translate(text: string, lang: Lang): string | null {
-  if (lang === "en") return null;
+  if (!isDictionaryLang(lang)) return null;
   const table = dictionary[lang];
   const trimmed = text.trim();
   if (!trimmed) return null;

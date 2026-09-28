@@ -2,6 +2,7 @@ import { useRouterState } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { isWisoPath } from "@/lib/exam-track";
 import { readStoredLang, useLanguage } from "@/lib/i18n/context";
+import { isAutoLang } from "@/lib/i18n/languages";
 import {
   getLocaleFromPath,
   isLocalizablePath,
@@ -38,8 +39,13 @@ export function LocaleSync() {
     }
 
     if (isLocalizablePath(base)) {
-      // English URL: render English, but keep the stored preference intact so
-      // app routes still use the language the visitor chose.
+      // Automatic languages have no /fr URL. Keep the stored choice on the
+      // English path. Edited DE/UK always follow the URL instead.
+      const stored = readStoredLang();
+      if (stored && isAutoLang(stored)) {
+        setLang(stored, { persist: false });
+        return;
+      }
       setLang("en", { persist: false });
       return;
     }
