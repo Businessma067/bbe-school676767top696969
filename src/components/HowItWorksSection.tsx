@@ -45,8 +45,8 @@ const BBE_THEORY: ShowcaseSlide[] = [
   {
     key: "theory",
     label: "Theory",
-    title: "Read the chapter before you practice",
-    body: "Open a math chapter and read the theory straight through: sets in chapter 1, exponentials in chapter 10, and derivatives in chapter 11.",
+    title: "Read the theory the tasks assume",
+    body: "Every Full Course chapter has its own theory reader: the definitions, the formulas, and the reasoning the true and false statements rely on. Open any chapter and read the part you need before you practice.",
     cta: "Open Math theory",
     href: "/products/full-course-math",
     video: "/how-it-works/math.mp4",

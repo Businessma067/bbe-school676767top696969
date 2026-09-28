@@ -147,9 +147,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs — kein Zufallspapier.",
     "Open Mock Builder": "Prüfungs-Builder öffnen",
     Theory: "Theorie",
-    "Read the chapter before you practice": "Lies das Kapitel, bevor du übst",
-    "Open a math chapter and read the theory straight through: sets in chapter 1, exponentials in chapter 10, and derivatives in chapter 11.":
-      "Öffne ein Mathekapitel und lies die Theorie am Stück: Mengen in Kapitel 1, Exponentialfunktionen in Kapitel 10 und Ableitungen in Kapitel 11.",
+    "Read the theory the tasks assume": "Lies die Theorie, die die Aufgaben voraussetzen",
+    "Every Full Course chapter has its own theory reader: the definitions, the formulas, and the reasoning the true and false statements rely on. Open any chapter and read the part you need before you practice.":
+      "Jedes Kapitel im Vollkurs hat einen eigenen Theorie-Reader: Definitionen, Formeln und die Begründung, auf der die Richtig-falsch-Aussagen aufbauen. Öffne ein beliebiges Kapitel und lies den Teil, den du brauchst, bevor du übst.",
     "Open Math theory": "Mathe-Theorie öffnen",
     Flashcards: "Karteikarten",
     Matching: "Matching",
@@ -370,9 +370,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу — не випадковий варіант.",
     "Open Mock Builder": "Відкрити конструктор іспитів",
     Theory: "Теорія",
-    "Read the chapter before you practice": "Прочитай розділ перед практикою",
-    "Open a math chapter and read the theory straight through: sets in chapter 1, exponentials in chapter 10, and derivatives in chapter 11.":
-      "Відкрий розділ математики і прочитай теорію підряд: множини в розділі 1, експоненти в розділі 10 і похідні в розділі 11.",
+    "Read the theory the tasks assume": "Прочитай теорію, на яку спираються завдання",
+    "Every Full Course chapter has its own theory reader: the definitions, the formulas, and the reasoning the true and false statements rely on. Open any chapter and read the part you need before you practice.":
+      "У кожного розділу повного курсу є своя теорія: означення, формули і хід думки, на якому тримаються твердження «правильно» і «неправильно». Відкрий будь-який розділ і прочитай потрібну частину перед практикою.",
     "Open Math theory": "Відкрити теорію математики",
     Flashcards: "Картки",
     Matching: "Matching",
