@@ -1,6 +1,7 @@
 import { useRouterState } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { isWisoPath } from "@/lib/exam-track";
+import { warmLanguage } from "@/lib/i18n/auto-translate";
 import { readStoredLang, useLanguage } from "@/lib/i18n/context";
 import { isAutoLang } from "@/lib/i18n/languages";
 import {
@@ -23,7 +24,8 @@ export function LocaleSync() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { setLang } = useLanguage();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    let cancelled = false;
     const urlLocale = getLocaleFromPath(pathname);
     if (urlLocale) {
       setLang(urlLocale);
@@ -39,18 +41,32 @@ export function LocaleSync() {
     }
 
     if (isLocalizablePath(base)) {
-      // Automatic languages have no /fr URL. Keep the stored choice on the
-      // English path. Edited DE/UK always follow the URL instead.
+      // Automatic languages have no /fr URL. Translate the whole page first,
+      // then swap once. Edited DE/UK always follow the URL instead.
       const stored = readStoredLang();
       if (stored && isAutoLang(stored)) {
-        setLang(stored, { persist: false });
-        return;
+        void warmLanguage(stored).then(() => {
+          if (cancelled || readStoredLang() !== stored) return;
+          setLang(stored, { persist: false });
+        });
+        return () => {
+          cancelled = true;
+        };
       }
       setLang("en", { persist: false });
       return;
     }
 
     const stored = readStoredLang();
+    if (stored && isAutoLang(stored)) {
+      void warmLanguage(stored).then(() => {
+        if (cancelled || readStoredLang() !== stored) return;
+        setLang(stored, { persist: false });
+      });
+      return () => {
+        cancelled = true;
+      };
+    }
     if (stored) setLang(stored, { persist: false });
   }, [pathname, setLang]);
 

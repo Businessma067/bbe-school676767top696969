@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import {
   englishSourceFor,
+  noteEnglishSource,
   peekAutoTranslation,
   queueAutoTranslations,
+  useAutoDictionaryVersion,
 } from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
 import { translate } from "@/lib/i18n/dictionary";
@@ -40,13 +42,14 @@ export function PageTranslator() {
   const { lang } = useLanguage();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const effectiveLang = isStudyContentPath(pathname) ? "en" : lang;
+  const revision = useAutoDictionaryVersion();
   // Persist across lang changes so DE↔UK can re-translate from English,
   // not from already-translated DOM text.
   const originalsRef = useRef(new WeakMap<Text, string>());
   const lastWrittenRef = useRef(new WeakMap<Text, string>());
   const translatedRef = useRef(new WeakMap<Text, string>());
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof document === "undefined") return;
     const originals = originalsRef.current;
     const lastWritten = lastWrittenRef.current;
@@ -105,6 +108,7 @@ export function PageTranslator() {
           // Live English from React is authoritative (timers, toggles, counters).
           translated.delete(node);
           originals.set(node, value);
+          noteEnglishSource(value);
           continue;
         }
 
@@ -129,6 +133,7 @@ export function PageTranslator() {
             originals.set(node, source);
           }
           const trimmed = (source ?? value).trim();
+          noteEnglishSource(trimmed);
           if (!trimmed || !/[A-Za-zÀ-ÿ]/.test(trimmed)) continue;
           const hit = peekAutoTranslation(effectiveLang, trimmed);
           if (!hit) {
@@ -157,30 +162,34 @@ export function PageTranslator() {
       pendingAuto.clear();
       applyTo(root, fromCharacterData);
       if (!isAutoLang(effectiveLang) || pendingAuto.size === 0) return;
-      const batch = [...pendingAuto];
-      queueAutoTranslations(effectiveLang, batch, () => {
-        pendingAuto.clear();
-        applyTo(document.body);
-      });
+      queueAutoTranslations(effectiveLang, [...pendingAuto]);
     };
 
     applyAndRequest(document.body);
 
-    let raf = 0;
+    let alive = true;
+    let queued = false;
     const pendingRoots = new Set<Node>();
     const pendingCharData = new Set<Text>();
 
     const flush = () => {
-      raf = 0;
-      for (const node of pendingCharData) applyAndRequest(node, true);
+      if (!alive) return;
+      queued = false;
+      const chars = [...pendingCharData];
+      const roots = [...pendingRoots];
       pendingCharData.clear();
-      for (const root of pendingRoots) applyAndRequest(root);
       pendingRoots.clear();
+      for (const node of chars) applyTo(node, true);
+      for (const root of roots) applyTo(root);
+      if (isAutoLang(effectiveLang) && pendingAuto.size > 0) {
+        queueAutoTranslations(effectiveLang, [...pendingAuto]);
+      }
     };
 
     const schedule = () => {
-      if (raf) return;
-      raf = requestAnimationFrame(flush);
+      if (queued) return;
+      queued = true;
+      queueMicrotask(flush);
     };
 
     const observer = new MutationObserver((records) => {
@@ -201,10 +210,10 @@ export function PageTranslator() {
     });
 
     return () => {
+      alive = false;
       observer.disconnect();
-      if (raf) cancelAnimationFrame(raf);
     };
-  }, [effectiveLang]);
+  }, [effectiveLang, revision]);
 
   return null;
 }

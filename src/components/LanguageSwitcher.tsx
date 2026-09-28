@@ -1,8 +1,10 @@
 import { Globe } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useRouterState } from "@tanstack/react-router";
+import { warmLanguage } from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
 import { LANGUAGES, type Lang } from "@/lib/i18n/dictionary";
+import { isAutoLang } from "@/lib/i18n/languages";
 import { getLocaleLinkProps } from "@/lib/i18n/locale-nav";
 import {
   isLocalizablePath,
@@ -20,6 +22,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const ref = useRef<HTMLDivElement>(null);
+  const requestRef = useRef(0);
 
   const closeMenu = useCallback(() => {
     setOpen(false);
@@ -47,27 +50,35 @@ export function LanguageSwitcher({ className }: { className?: string }) {
 
   const switchLanguage = (next: Lang) => {
     closeMenu();
+    if (next === lang) return;
+    const request = ++requestRef.current;
+    try {
+      window.localStorage.setItem("bbe.lang", next);
+    } catch {
+      /* storage unavailable */
+    }
     const withHash = hash
       ? `${pathname}${hash.startsWith("#") ? hash : `#${hash}`}`
       : pathname;
     const target = localizePath(withHash, next);
     const onLocalizable = isLocalizablePath(stripLocalePrefix(pathname));
 
-    if (onLocalizable && target !== withHash) {
-      // Set language immediately so PageTranslator re-runs as soon as the
-      // remounted English source is in the DOM (LocaleSync will confirm from URL).
+    void (async () => {
+      if (isAutoLang(next)) await warmLanguage(next);
+      if (requestRef.current !== request) return;
+      if (onLocalizable && target !== withHash) {
+        const link = getLocaleLinkProps(withHash, next);
+        if (isAutoLang(next)) setLang(next);
+        void navigate({
+          to: link.to as never,
+          params: link.params as never,
+          hash: link.hash,
+          search: search as never,
+        });
+        return;
+      }
       setLang(next);
-      const link = getLocaleLinkProps(withHash, next);
-      void navigate({
-        to: link.to as never,
-        params: link.params as never,
-        hash: link.hash,
-        search: search as never,
-      });
-      return;
-    }
-
-    setLang(next);
+    })();
   };
 
   return (

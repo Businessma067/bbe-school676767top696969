@@ -2,12 +2,12 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
+  useLayoutEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
-import { localizeAuto, useAutoDictionaryVersion } from "./auto-translate";
+import { localizeAuto, noteEnglishSource, useAutoDictionaryVersion } from "./auto-translate";
 import { translate, type Lang } from "./dictionary";
 import { isAutoLang, isKnownLang, RTL_LANGS } from "./languages";
 
@@ -42,7 +42,7 @@ export function LanguageProvider({
   // LocaleSync applies stored preferences after mount.
   const [lang, setLangState] = useState<Lang>(initialLang);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof document === "undefined") return;
     document.documentElement.lang = lang;
     document.documentElement.dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
@@ -65,8 +65,10 @@ export function LanguageProvider({
     () => ({
       lang,
       setLang,
-      t: (text: string) =>
-        isAutoLang(lang) ? localizeAuto(lang, text) : (translate(text, lang) ?? text),
+      t: (text: string) => {
+        noteEnglishSource(text);
+        return isAutoLang(lang) ? localizeAuto(lang, text) : (translate(text, lang) ?? text);
+      },
     }),
     [lang, setLang, autoVersion],
   );

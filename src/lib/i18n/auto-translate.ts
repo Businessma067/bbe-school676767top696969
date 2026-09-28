@@ -112,12 +112,20 @@ function remember(lang: string, text: string, value: string) {
     reverse.set(lang, back);
   }
   back.set(value, text);
-  persist(lang);
 }
 
 function withWhitespace(source: string, translated: string): string {
   const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(source) ?? [];
   return `${lead}${translated}${trail}`;
+}
+
+const seenEnglish = new Set<string>();
+
+/** Remember an English UI string so a language switch can translate it before paint. */
+export function noteEnglishSource(text: string) {
+  const trimmed = text.trim();
+  if (!trimmed || trimmed.length > 1800 || !LETTER.test(trimmed)) return;
+  seenEnglish.add(trimmed);
 }
 
 export function lookupAuto(lang: string, text: string): string | null {
@@ -127,8 +135,9 @@ export function lookupAuto(lang: string, text: string): string | null {
   return hit ? withWhitespace(text, hit) : null;
 }
 
-/** Dictionary miss: show English until the browser translation arrives, then re-render. */
+/** Dictionary miss: show English until the whole language batch is ready, then swap once. */
 export function localizeAuto(lang: string, text: string): string {
+  noteEnglishSource(text);
   if (!isAutoLang(lang)) return text;
   const hit = lookupAuto(lang, text);
   if (hit) return hit;
@@ -214,9 +223,16 @@ async function googleRaw(target: string, text: string): Promise<string | null> {
   url.searchParams.set("tl", target);
   url.searchParams.set("dt", "t");
   url.searchParams.set("q", text);
-  const response = await fetch(url);
-  if (!response.ok) return null;
-  return joinSegments(await response.json());
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const response = await fetch(url);
+    if (response.status === 429) {
+      await new Promise((resolve) => setTimeout(resolve, 700 * (attempt + 1)));
+      continue;
+    }
+    if (!response.ok) return null;
+    return joinSegments(await response.json());
+  }
+  return null;
 }
 
 async function googleChunk(target: string, texts: string[]): Promise<(string | null)[] | null> {
@@ -246,7 +262,7 @@ async function translateWithGoogle(
   texts: string[],
 ): Promise<(string | null)[] | null> {
   const out: (string | null)[] = [];
-  for (const chunk of chunkTexts(texts, 20, 1600)) {
+  for (const chunk of chunkTexts(texts, 30, 2200)) {
     const part = await googleChunk(target, chunk);
     if (!part) return null;
     out.push(...part);
@@ -281,21 +297,6 @@ async function translateWithMyMemory(
   return out;
 }
 
-async function translateOnServer(
-  lang: AutoLang,
-  texts: string[],
-): Promise<(string | null)[] | null> {
-  try {
-    const mod = await import("@/lib/i18n/auto-translate.functions");
-    const result = await mod.translateUiBatch({
-      data: { lang, texts: texts.slice(0, 40) },
-    });
-    return Array.isArray(result?.translations) ? result.translations : null;
-  } catch {
-    return null;
-  }
-}
-
 async function translateMissing(
   lang: AutoLang,
   texts: string[],
@@ -326,16 +327,6 @@ async function translateMissing(
     }
     return values;
   }
-  const server = await translateOnServer(lang, missing);
-  if (server && server.some(Boolean)) {
-    let cursor = 0;
-    for (let index = 0; index < values.length; index += 1) {
-      if (values[index]) continue;
-      values[index] = server[cursor] ?? null;
-      cursor += 1;
-    }
-    return values;
-  }
   const memory = await translateWithMyMemory(spec.google, missing);
   if (!memory) return "retry";
   let cursor = 0;
@@ -347,26 +338,70 @@ async function translateMissing(
   return values;
 }
 
-type Bucket = { texts: Set<string>; dones: Array<() => void> };
+type Bucket = { texts: Set<string> };
 const buckets = new Map<string, Bucket>();
+const idleWaiters = new Map<string, Array<() => void>>();
 
 function needsTranslation(lang: string, text: string): boolean {
   const key = pairKey(lang, text);
   return !peekAutoTranslation(lang, text) && !inflight.has(key) && !failed.has(key);
 }
 
-async function runTranslations(lang: AutoLang, texts: string[], onDone: () => void) {
+function langBusy(lang: string): boolean {
+  for (const key of inflight) {
+    if (key.startsWith(`${lang}\u0000`)) return true;
+  }
+  return false;
+}
+
+function finishLang(lang: AutoLang) {
+  if (langBusy(lang) || buckets.has(lang)) return;
+  persist(lang);
+  const waiters = idleWaiters.get(lang);
+  idleWaiters.delete(lang);
+  if (waiters) for (const waiter of waiters) waiter();
+  emit();
+}
+
+async function runTranslations(lang: AutoLang, texts: string[]) {
   const pending = texts.filter((text) => needsTranslation(lang, text));
-  if (pending.length === 0) return;
+  if (pending.length === 0) {
+    finishLang(lang);
+    return;
+  }
   for (const text of pending) inflight.add(pairKey(lang, text));
-  while (pending.length) {
-    const batch = pending.splice(0, 24);
-    const release = (text: string) => inflight.delete(pairKey(lang, text));
-    let changed = false;
-    try {
-      const result = await translateMissing(lang, batch);
-      if (result === "retry") {
-        const retry: string[] = [];
+  const release = (text: string) => inflight.delete(pairKey(lang, text));
+  try {
+    let guard = 0;
+    while (pending.length && guard < 6) {
+      guard += 1;
+      const batch = pending.splice(0, 80);
+      try {
+        const result = await translateMissing(lang, batch);
+        if (result === "retry") {
+          const retry: string[] = [];
+          for (const text of batch) {
+            const key = pairKey(lang, text);
+            const count = (attempts.get(key) ?? 0) + 1;
+            attempts.set(key, count);
+            if (count >= 2) {
+              failed.add(key);
+              release(text);
+            } else retry.push(text);
+          }
+          if (retry.length) {
+            await new Promise((resolve) => setTimeout(resolve, 400));
+            pending.unshift(...retry);
+          }
+          continue;
+        }
+        result.forEach((value, index) => {
+          const text = batch[index];
+          if (value && !value.includes("⟦") && !/MYMEMORY WARNING/i.test(value)) remember(lang, text, value);
+          else failed.add(pairKey(lang, text));
+          release(text);
+        });
+      } catch {
         for (const text of batch) {
           const key = pairKey(lang, text);
           const count = (attempts.get(key) ?? 0) + 1;
@@ -374,56 +409,46 @@ async function runTranslations(lang: AutoLang, texts: string[], onDone: () => vo
           if (count >= 2) {
             failed.add(key);
             release(text);
-          } else retry.push(text);
+          } else pending.unshift(text);
         }
-        if (retry.length) {
-          await new Promise((resolve) => setTimeout(resolve, 500));
-          pending.unshift(...retry);
-        }
-      } else {
-        result.forEach((value, index) => {
-          const text = batch[index];
-          if (value) {
-            remember(lang, text, value);
-            changed = true;
-          } else failed.add(pairKey(lang, text));
-          release(text);
-        });
-      }
-    } catch {
-      for (const text of batch) {
-        const key = pairKey(lang, text);
-        const count = (attempts.get(key) ?? 0) + 1;
-        attempts.set(key, count);
-        if (count >= 2) failed.add(key);
-        else pending.unshift(text);
-        if ((attempts.get(key) ?? 0) >= 2) release(text);
       }
     }
-    if (changed) emit();
-    onDone();
+    for (const text of pending) release(text);
+  } finally {
+    finishLang(lang);
   }
 }
 
-/** Translate English UI strings in the browser and cache them. */
-export function queueAutoTranslations(lang: AutoLang, texts: string[], onDone?: () => void) {
+/** Translate English UI strings in the browser and cache them. One paint when the batch ends. */
+export function queueAutoTranslations(lang: AutoLang, texts: string[]) {
   if (typeof window === "undefined") return;
   const fresh = texts.filter((text) => needsTranslation(lang, text));
   if (fresh.length === 0) return;
   let bucket = buckets.get(lang);
   if (!bucket) {
-    bucket = { texts: new Set(), dones: [] };
+    bucket = { texts: new Set() };
     buckets.set(lang, bucket);
     const scheduled = bucket;
     queueMicrotask(() => {
       if (buckets.get(lang) === scheduled) buckets.delete(lang);
-      const batch = [...scheduled.texts];
-      const dones = scheduled.dones;
-      void runTranslations(lang, batch, () => {
-        for (const done of dones) done();
-      });
+      void runTranslations(lang, [...scheduled.texts]);
     });
   }
   for (const text of fresh) bucket.texts.add(text);
-  if (onDone) bucket.dones.push(onDone);
+}
+
+/** Resolve when every noted English string has a cached translation or a final miss. */
+export function warmLanguage(lang: AutoLang): Promise<void> {
+  if (typeof window === "undefined") return Promise.resolve();
+  const missing = [...seenEnglish].filter(
+    (text) => !peekAutoTranslation(lang, text) && !failed.has(pairKey(lang, text)),
+  );
+  if (missing.length === 0 && !langBusy(lang)) return Promise.resolve();
+  return new Promise((resolve) => {
+    const waiters = idleWaiters.get(lang) ?? [];
+    waiters.push(resolve);
+    idleWaiters.set(lang, waiters);
+    if (missing.length) queueAutoTranslations(lang, missing);
+    else if (!langBusy(lang)) finishLang(lang);
+  });
 }
