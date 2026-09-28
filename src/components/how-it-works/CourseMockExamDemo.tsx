@@ -1,93 +1,100 @@
-import { useMemo, useState } from "react";
-import { Check, Timer } from "lucide-react";
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import {
-  ExamExplanationText,
-  ExamQuestionBody,
-  ExamStatementText,
-} from "@/components/mock-exam/ExamQuestionContent";
-import { SUBJECT_META, subjectLabel, type SubjectKey } from "@/config/scoring-config";
+import { useMemo, useState, type ReactNode } from "react";
+import { Link } from "@tanstack/react-router";
+import { Calculator, Check, FileSpreadsheet, Flag, PenLine, StickyNote, Timer } from "lucide-react";
+import { AuthNav } from "@/components/AuthNav";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { SiteHeader } from "@/components/SiteHeader";
+import { ExamReviewScreen } from "@/components/mock-exam/ExamReviewScreen";
+import { ExamResultOverview } from "@/components/mock-exam/ExamResultOverview";
+import { ReviewViewToggle, TaskReviewWorkspace } from "@/components/mock-exam/ExamTaskReview";
+import { ExamQuestionBody, ExamStatementText } from "@/components/mock-exam/ExamQuestionContent";
+import { QuestionPalette } from "@/components/mock-exam/QuestionPalette";
+import { SUBJECT_META, subjectLabel } from "@/config/scoring-config";
+import { guestNavItems } from "@/config/site-nav";
 import { buildExamAnalytics } from "@/lib/mock-exam-analytics";
-import { formatCompactDuration, formatExamTime, formatQuestionTime } from "@/lib/mock-exam-session";
+import { buildMockExam1Questions } from "@/lib/mock-exam-1-content";
+import { formatExamTime, formatQuestionTime } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
+import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
-import { skimPanel } from "./course-motion";
-import {
-  COURSE_ECON,
-  COURSE_ENGLISH,
-  COURSE_ENGLISH_PASSAGE,
-  COURSE_MATH,
-  type CourseTask,
-} from "./course-tasks";
+import { glideFrame, glideRead } from "./course-motion";
 
 const DWELL = 150;
-/** Seconds a real sitting would spend: reading, then a calculation, then a shorter case. */
-const TIMES = [252, 395, 168] as const;
-const REMAINING = 2 * 60 * 60 - TIMES.reduce((sum, seconds) => sum + seconds, 0);
+const EXAM_SECONDS = 2 * 60 * 60;
+const QUESTIONS = buildMockExam1Questions();
+const ENGLISH_AT = QUESTIONS.findIndex((question) => question.subject === "english");
+const MATH_AT = QUESTIONS.findIndex((question) => question.subject === "math");
+const SHOW = [0, ENGLISH_AT, MATH_AT] as const;
 
-function asExam(
-  task: CourseTask,
-  subject: SubjectKey,
-  index: number,
-  maxPoints: number,
-  passage?: string,
-): ExamQuestion {
-  return {
-    id: `hiw-${task.caseId}`,
-    index,
-    subject,
-    stem: task.context,
-    maxPoints,
-    passage,
-    solutionOverview: task.overview,
-    subtopicTag: task.caseId,
-    statements: task.statements.map((text, statement) => ({
-      id: `${task.caseId}-s${statement}`,
-      text,
-      isTrue: task.answerKey[statement] === true,
-      explanation: task.explanations[statement] ?? "",
-    })),
-  };
+/**
+ * A finished 34-question sitting. Reading runs longer than a short case,
+ * grammar is quicker, and a few math items take the most time.
+ */
+const TIMES = [
+  128, 152, 114, 176, 139, 163, 102, 192, 133, 147,
+  246, 268, 214, 287, 233, 122, 101, 134, 111, 144, 118,
+  214, 248, 192, 286, 231, 180, 322, 218, 254, 201, 268, 175, 234,
+] as const;
+
+if (TIMES.length !== QUESTIONS.length) {
+  throw new Error("Mock exam demo needs one time for every question");
 }
 
-const QUESTIONS: ExamQuestion[] = [
-  asExam(COURSE_ENGLISH, "english", 1, 4, COURSE_ENGLISH_PASSAGE),
-  asExam(COURSE_MATH, "math", 2, 5),
-  asExam(COURSE_ECON, "economics", 3, 6),
-];
-
-const EMPTY = [false, false, false, false, false];
+const TIME_TAKEN = TIMES.reduce((sum, seconds) => sum + seconds, 0);
+const REMAINING = EXAM_SECONDS - TIME_TAKEN;
+const EMPTY_MARKS = [false, false, false, false, false];
+const NO_FLAGS = new Set<string>();
+const GUEST_NAV = guestNavItems("bbe");
 
 function trueIndexes(question: ExamQuestion): number[] {
   return question.statements.flatMap((statement, index) => (statement.isTrue ? [index] : []));
 }
 
-function formatAxisSeconds(value: number) {
-  const sec = Math.max(0, Math.round(value));
-  const minutes = Math.floor(sec / 60);
-  const seconds = sec % 60;
-  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+function completedAnswers(): Record<string, boolean[]> {
+  return Object.fromEntries(
+    QUESTIONS.map((question) => [question.id, question.statements.map((statement) => statement.isTrue)]),
+  );
 }
+
+const COMPLETED = completedAnswers();
 
 type Phase = "exam" | "check" | "stats" | "tasks";
 
-/** How it works · Mock Exams: one question per subject, then results and three explanations. */
+/** How it works · Mock Exams: the live 34-question paper, full screen. */
 export function CourseMockExamDemo() {
   const [phase, setPhase] = useState<Phase>("exam");
   const [index, setIndex] = useState(0);
   const [marks, setMarks] = useState<Record<string, boolean[]>>({});
+  const [visited, setVisited] = useState<Set<string>>(() => new Set([QUESTIONS[0]!.id]));
+  const [taskIndex, setTaskIndex] = useState(0);
+
+  const openQuestion = (next: number) => {
+    setIndex(next);
+    setVisited((prev) => {
+      const id = QUESTIONS[next]?.id;
+      if (!id || prev.has(id)) return prev;
+      const copy = new Set(prev);
+      copy.add(id);
+      return copy;
+    });
+  };
+
+  const openReview = () => {
+    setMarks(COMPLETED);
+    setPhase("check");
+  };
 
   const analytics = useMemo(
     () =>
       buildExamAnalytics(QUESTIONS, {
-        answers: Object.fromEntries(QUESTIONS.map((question) => [question.id, marks[question.id] ?? EMPTY])),
+        answers: phase === "exam" ? marks : COMPLETED,
         timed: true,
-        secondsTaken: TIMES.reduce((sum, seconds) => sum + seconds, 0),
-        timeByQuestion: Object.fromEntries(QUESTIONS.map((question, i) => [question.id, TIMES[i]])),
+        secondsTaken: TIME_TAKEN,
+        timeByQuestion: Object.fromEntries(QUESTIONS.map((question, i) => [question.id, TIMES[i] ?? 0])),
       }),
-    [marks],
+    [marks, phase],
   );
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
@@ -100,304 +107,382 @@ export function CourseMockExamDemo() {
     setPhase("exam");
     setIndex(0);
     setMarks({});
+    setVisited(new Set([QUESTIONS[0]!.id]));
+    setTaskIndex(0);
     resetScroll();
     setFade(false);
-    await api.wait(240);
+    await api.wait(260);
 
-    for (let q = 0; q < QUESTIONS.length; q++) {
+    for (let step = 0; step < SHOW.length; step++) {
       if (api.cancelled()) return;
-      const question = QUESTIONS[q]!;
+      const at = SHOW[step]!;
+      if (step > 0) {
+        await api.moveTo(`[data-q="${at + 1}"]`, DWELL);
+        await api.click(() => openQuestion(at));
+        await api.flush();
+        resetScroll();
+        await api.wait(200);
+      }
+      const question = QUESTIONS[at]!;
       for (const statement of trueIndexes(question)) {
         if (api.cancelled()) return;
         await api.moveTo(`[data-d="m${statement}"]`, DWELL);
         await api.click(() =>
           setMarks((prev) => {
-            const next = [...(prev[question.id] ?? EMPTY)];
+            const next = [...(prev[question.id] ?? EMPTY_MARKS)];
             next[statement] = true;
             return { ...prev, [question.id]: next };
           }),
         );
-        await api.wait(70);
+        await api.wait(80);
       }
-      const last = q === QUESTIONS.length - 1;
-      await api.moveTo('[data-d="advance"]', DWELL);
-      await api.click(() => {
-        if (last) setPhase("check");
-        else setIndex(q + 1);
-      });
-      await api.flush();
-      resetScroll();
-      await api.wait(last ? 240 : 180);
     }
+
+    await api.moveTo('[data-d="review"]', DWELL);
+    await api.click(openReview);
+    await api.flush();
+    resetScroll();
+    await api.wait(280);
 
     await api.moveTo('[data-d="submit-exam"]', DWELL);
     await api.click(() => setPhase("stats"));
     await api.flush();
-    await api.wait(320);
-    await api.moveTo('[data-d="time-chart"]', 80);
-    await api.wait(900);
+    resetScroll();
+    await api.wait(480);
+    await glideFrame(api, '[data-d^="stat"], [data-d="time-chart"]');
+    await api.wait(420);
     await api.moveTo('[data-d="tasks"]', DWELL);
     await api.click(() => setPhase("tasks"));
     await api.flush();
-    await api.wait(200);
-    await skimPanel(api, '[data-d="expl-scroll"]', 0.78);
-    await api.wait(280);
+    resetScroll();
+    await api.wait(240);
+    await api.moveTo('[data-d="prose0"]', 80);
+    await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
+    await api.wait(360);
   }, []);
 
   const question = QUESTIONS[index] ?? QUESTIONS[0]!;
-  const currentMarks = marks[question.id] ?? EMPTY;
+  const currentMarks = marks[question.id] ?? EMPTY_MARKS;
   const meta = SUBJECT_META[question.subject];
-  const slowest = [...analytics.tasks].sort((a, b) => b.seconds - a.seconds)[0];
-  const series = analytics.tasks.map((task) => ({
-    q: task.question.index,
-    seconds: task.seconds,
-    subject: subjectLabel(task.question.subject),
-    accuracy: task.accuracyPct,
-  }));
-  const read = QUESTIONS[0]!;
+  const subjectName = subjectLabel(question.subject);
+  const isLast = index === QUESTIONS.length - 1;
+  const secondsLeft = REMAINING;
+  const timerWarn = secondsLeft < 5 * 60 ? "critical" : secondsLeft < 15 * 60 ? "warn" : null;
+  const questionSeconds = TIMES[index] ?? 0;
+  const currentTask = analytics.tasks[taskIndex] ?? null;
 
   return (
-    <CourseFrame stageRef={stageRef} scrollRef={scrollRef} cursorRef={cursorRef} clicking={clicking} fade={fade}>
+    <CourseFrame
+      stageRef={stageRef}
+      scrollRef={scrollRef}
+      cursorRef={cursorRef}
+      clicking={clicking}
+      fade={fade}
+      bleed
+    >
       {phase === "exam" ? (
-        <div>
-          <div className="mb-3 flex flex-wrap items-center gap-2">
-            <h3 className="truncate font-display text-sm font-bold">Mock Exam</h3>
-            <span className={cn("rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest", meta.badgeClass)}>
-              {subjectLabel(question.subject)}
-            </span>
-            <span className="text-xs tabular-nums text-muted-foreground">
-              Question {question.index} / {QUESTIONS.length}
-            </span>
-            <span className="ml-auto inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1 font-mono text-xs font-semibold tabular-nums">
-              <Timer className="h-3.5 w-3.5" />
-              {formatExamTime(REMAINING)}
-            </span>
-          </div>
-          <div className="mb-3 flex gap-1.5">
-            {QUESTIONS.map((item, i) => (
-              <span
-                key={item.id}
-                className={cn(
-                  "grid h-7 w-7 place-items-center rounded-md border text-[11px] font-semibold",
-                  i === index
-                    ? "border-foreground bg-foreground text-background"
-                    : marks[item.id]?.some(Boolean)
-                      ? "border-primary/40 bg-primary/15 text-foreground"
-                      : "border-border bg-card text-muted-foreground",
-                )}
-              >
-                {item.index}
-              </span>
-            ))}
-          </div>
-          {question.passage ? (
-            <div className="mb-3 max-h-28 overflow-y-auto rounded-xl border border-border bg-secondary/20 p-3 text-xs leading-relaxed text-foreground/90">
-              {question.passage}
+        <div className={`flex flex-col ${PRACTICE_PAGE}`}>
+          <header
+            data-d="exam-chrome"
+            className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur"
+          >
+            <div className={PRACTICE_HEADER_INNER} data-exam-fit="header">
+              <div className="flex min-w-0 items-center gap-3">
+                <h1 className="truncate font-display text-base font-bold">Mock Exam 1</h1>
+                <span
+                  className={`hidden rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest sm:inline ${meta.badgeClass}`}
+                >
+                  {subjectName}
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                <span data-exam-fit="count" className="text-sm tabular-nums text-muted-foreground">
+                  Question {index + 1} / {QUESTIONS.length}
+                </span>
+                <span
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 font-mono text-sm font-semibold tabular-nums",
+                    timerWarn === "critical" &&
+                      "border-red-500/50 bg-red-500/10 text-red-700 dark:text-red-400",
+                    timerWarn === "warn" &&
+                      "border-amber-500/50 bg-amber-500/10 text-amber-800 dark:text-amber-300",
+                    !timerWarn && "border-border bg-card",
+                  )}
+                  role="timer"
+                  aria-label={`Time remaining ${formatExamTime(secondsLeft)}`}
+                >
+                  <Timer className="h-3.5 w-3.5 shrink-0" />
+                  {formatExamTime(secondsLeft)}
+                </span>
+                <button
+                  type="button"
+                  data-d="review"
+                  onClick={openReview}
+                  className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+                >
+                  Review
+                </button>
+                <span data-exam-fit="auth" className="inline-flex items-center gap-2">
+                  <ThemeToggle />
+                  <AuthNav />
+                </span>
+              </div>
             </div>
-          ) : null}
-          <ExamQuestionBody q={question} showPassage={false} />
-          <ol className="mt-4 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-            {question.statements.map((statement, i) => {
-              const marked = currentMarks[i] === true;
-              return (
-                <li key={statement.id} className="flex items-start gap-2 px-3 py-2.5">
-                  <span className="mt-0.5 w-5 shrink-0 text-center text-xs font-bold text-muted-foreground">
-                    {String.fromCharCode(65 + i)}.
+          </header>
+
+          <div className={cn(PRACTICE_BODY, "pb-24 lg:pb-4")}>
+            <aside className="hidden w-72 shrink-0 space-y-4 lg:sticky lg:top-[4.5rem] lg:block lg:max-h-[calc(100cqh-5.5rem)] lg:overflow-y-auto 2xl:w-80">
+              <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+                <p className="font-display text-2xl font-semibold tabular-nums tracking-tight">
+                  {question.index}
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">{subjectName}</p>
+                <p className="mt-3 text-xs tabular-nums text-muted-foreground">
+                  This question · {formatQuestionTime(questionSeconds)}
+                </p>
+                <button
+                  type="button"
+                  aria-pressed={false}
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold transition-colors hover:bg-secondary"
+                >
+                  <Flag className="h-3.5 w-3.5 text-taupe" />
+                  Flag for review
+                </button>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+                <h2 className="mb-3 font-display text-sm font-semibold">Questions</h2>
+                <QuestionPalette
+                  questions={QUESTIONS}
+                  currentIndex={index}
+                  answers={marks}
+                  flagged={NO_FLAGS}
+                  visited={visited}
+                  onNavigate={openQuestion}
+                  compact
+                />
+              </div>
+            </aside>
+
+            <main className="relative min-w-0 flex-1">
+              <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm lg:hidden">
+                <div className="mb-2 flex items-center justify-between gap-2">
+                  <span className="text-sm font-medium text-muted-foreground">
+                    Q{question.index} · {subjectName} · {formatQuestionTime(questionSeconds)}
                   </span>
-                  <p className="min-w-0 flex-1 text-sm leading-relaxed">
-                    <ExamStatementText q={question} text={statement.text} />
-                  </p>
-                  <span
-                    data-d={`m${i}`}
-                    className={cn(
-                      "grid h-6 w-6 shrink-0 place-items-center rounded border-2",
-                      marked ? "border-primary bg-primary text-primary-foreground" : "border-border bg-background",
-                    )}
+                  <button
+                    type="button"
+                    aria-pressed={false}
+                    className="inline-flex items-center gap-1.5 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold hover:bg-secondary"
                   >
-                    {marked ? <Check className="h-4 w-4" strokeWidth={3} /> : null}
-                  </span>
-                </li>
-              );
-            })}
-          </ol>
-          <div className="mt-4 flex pb-2">
-            <span
-              data-d="advance"
-              className="inline-flex min-w-36 items-center justify-center rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background"
+                    <Flag className="h-3 w-3 text-taupe" />
+                    Flag
+                  </button>
+                </div>
+                <QuestionPalette
+                  questions={QUESTIONS}
+                  currentIndex={index}
+                  answers={marks}
+                  flagged={NO_FLAGS}
+                  visited={visited}
+                  onNavigate={openQuestion}
+                  compact
+                />
+              </div>
+
+              <div className="relative overflow-x-auto overflow-y-visible rounded-2xl border border-border bg-card shadow-sm">
+                <div className="relative isolate z-0 min-w-0 p-5 sm:p-8 lg:p-10">
+                  <ExamQuestionBody q={question} emphasized />
+                  <ol className="mt-6 divide-y divide-border overflow-visible rounded-xl border border-border bg-background">
+                    {question.statements.map((statement, i) => {
+                      const marked = currentMarks[i] === true;
+                      return (
+                        <li key={statement.id} className="px-3 py-3.5 sm:px-4 sm:py-4">
+                          <div className="flex items-start gap-2 sm:gap-3">
+                            <span className="mt-1 w-6 shrink-0 text-center text-xs font-bold text-muted-foreground">
+                              {String.fromCharCode(65 + i)}.
+                            </span>
+                            <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground [overflow-wrap:anywhere] sm:text-[15px]">
+                              <ExamStatementText q={question} text={statement.text} />
+                            </p>
+                            <div className="flex w-11 shrink-0 justify-center pt-0.5 lg:w-14">
+                              <button
+                                type="button"
+                                role="checkbox"
+                                data-d={`m${i}`}
+                                aria-checked={marked}
+                                aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
+                                onClick={() =>
+                                  setMarks((prev) => {
+                                    const next = [...(prev[question.id] ?? EMPTY_MARKS)];
+                                    next[i] = !next[i];
+                                    return { ...prev, [question.id]: next };
+                                  })
+                                }
+                                className={cn(
+                                  "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all lg:h-6 lg:w-6 lg:rounded",
+                                  marked
+                                    ? "border-primary bg-primary text-primary-foreground"
+                                    : "border-border bg-background hover:border-primary/60",
+                                )}
+                              >
+                                {marked ? <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} /> : null}
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+              </div>
+
+              <nav className="mt-4 flex items-center justify-between gap-3">
+                <button
+                  type="button"
+                  disabled={index === 0}
+                  onClick={() => openQuestion(index - 1)}
+                  className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-all hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  Previous
+                </button>
+                {isLast ? (
+                  <button
+                    type="button"
+                    onClick={openReview}
+                    className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
+                  >
+                    Finish exam
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => openQuestion(index + 1)}
+                    className="rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
+                  >
+                    Next
+                  </button>
+                )}
+              </nav>
+            </main>
+
+            <aside
+              data-d="exam-chrome"
+              data-exam-fit="rail"
+              className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:inset-auto lg:bottom-auto lg:top-[4.5rem] lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none"
             >
-              {index === QUESTIONS.length - 1 ? "Finish exam" : "Next"}
-            </span>
+              <ToolRailButton label="Answer Sheet" short="Sheet">
+                <FileSpreadsheet className="h-5 w-5" />
+              </ToolRailButton>
+              <ToolRailButton label="Calculator" short="Calc">
+                <Calculator className="h-5 w-5" />
+              </ToolRailButton>
+              <ToolRailButton label="Notes" short="Notes">
+                <StickyNote className="h-5 w-5" />
+              </ToolRailButton>
+              <ToolRailButton label="Draw" short="Draw">
+                <PenLine className="h-5 w-5" />
+              </ToolRailButton>
+            </aside>
           </div>
         </div>
       ) : null}
 
       {phase === "check" ? (
-        <div className="py-2">
-          <h3 className="font-display text-xl font-bold tracking-tight">Review before submission</h3>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Check unanswered and flagged items. Submission uses the marks you selected next to each statement.
-          </p>
-          <div className="mt-5 grid grid-cols-2 gap-3">
-            <ReviewStat label="Total questions" value={String(QUESTIONS.length)} />
-            <ReviewStat label="Total statements" value={String(QUESTIONS.length * 5)} />
-            <ReviewStat label="Answered questions" value={String(analytics.answeredTasks)} accent />
-            <ReviewStat label="Unanswered questions" value="0" />
-          </div>
-          <span
-            data-d="submit-exam"
-            className="mt-6 inline-flex min-w-40 items-center justify-center rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white"
-          >
-            Submit exam
-          </span>
+        <div className="min-h-dvh bg-background font-sans text-foreground antialiased">
+          <ExamReviewScreen
+            questions={QUESTIONS}
+            answers={marks}
+            flagged={NO_FLAGS}
+            usesAnswerSheet
+            onJump={openQuestion}
+            onSubmit={() => setPhase("stats")}
+            onBack={() => setPhase("exam")}
+          />
         </div>
       ) : null}
 
       {phase === "stats" || phase === "tasks" ? (
-        <div>
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Mock Exam</p>
-              <p className="text-xs text-muted-foreground">Score overview, or tasks with answers and explanations.</p>
-            </div>
-            <div className="inline-flex rounded-full border border-border bg-card p-1">
-              <span
-                className={cn(
-                  "rounded-full px-4 py-1.5 text-xs font-semibold",
-                  phase === "stats" ? "bg-foreground text-background" : "text-muted-foreground",
-                )}
-              >
-                Results
-              </span>
-              <span
-                data-d="tasks"
-                className={cn(
-                  "rounded-full px-4 py-1.5 text-xs font-semibold",
-                  phase === "tasks" ? "bg-foreground text-background" : "text-muted-foreground",
-                )}
-              >
-                Tasks
-              </span>
-            </div>
+        <div className={PRACTICE_PAGE}>
+          <div data-d="exam-chrome" className="sticky top-0 z-30">
+            <SiteHeader
+              sticky={false}
+              maxWidthClassName="max-w-none"
+              navItems={GUEST_NAV}
+              actions={
+                <Link
+                  to="/mock-exams"
+                  className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+                >
+                  ← All mock exams
+                </Link>
+              }
+            />
           </div>
-
-          {phase === "stats" ? (
-            <div className="space-y-4">
-              <section className="overflow-hidden rounded-2xl border border-border bg-card">
-                <div className="grid divide-y divide-border sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
-                  <Stat
-                    value={`${analytics.pct}%`}
-                    label="Exam score"
-                    hint={`${analytics.total.toFixed(1)} / ${analytics.pointsTotal.toFixed(1)} pts`}
-                  />
-                  <Stat
-                    value={`${analytics.statementPct}%`}
-                    label="Statement accuracy"
-                    hint={`${analytics.statementCorrect} of ${analytics.statementCount} judged correctly`}
-                  />
-                  <Stat
-                    value={formatCompactDuration(analytics.secondsTaken ?? 0)}
-                    label="Time"
-                    hint="Timed sitting"
-                  />
-                  <Stat
-                    value={formatQuestionTime(analytics.medianSeconds)}
-                    label="Median per question"
-                    hint={`Average ${formatQuestionTime(analytics.meanSeconds)}`}
-                  />
-                </div>
-              </section>
-              <section className="overflow-hidden rounded-2xl border border-border bg-card">
-                <div className="border-b border-border px-4 py-3">
-                  <h3 className="font-display text-base font-semibold">Time per question</h3>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    Q1 to Q{QUESTIONS.length}. Longest: Q{slowest?.question.index} ({formatQuestionTime(slowest?.seconds ?? 0)}).
-                  </p>
-                </div>
-                <div data-d="time-chart" className="h-52 w-full px-1 pb-2 pt-2">
-                  <ResponsiveContainer width="100%" height="100%" debounce={50}>
-                    <AreaChart data={series} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
-                      <defs>
-                        <linearGradient id="hiwMockTimeFill" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="var(--color-caramel-deep)" stopOpacity={0.22} />
-                          <stop offset="100%" stopColor="var(--color-caramel-deep)" stopOpacity={0} />
-                        </linearGradient>
-                      </defs>
-                      <CartesianGrid stroke="var(--border)" vertical={false} />
-                      <XAxis dataKey="q" tick={{ fill: "var(--muted-foreground)", fontSize: 11 }} axisLine={false} tickLine={false} />
-                      <YAxis
-                        width={36}
-                        tick={{ fill: "var(--muted-foreground)", fontSize: 11 }}
-                        axisLine={false}
-                        tickLine={false}
-                        tickFormatter={formatAxisSeconds}
-                      />
-                      <Tooltip
-                        content={({ active, payload }) => {
-                          const row = payload?.[0]?.payload as { q: number; seconds: number; subject: string } | undefined;
-                          if (!active || !row) return null;
-                          return (
-                            <div className="rounded-xl border border-border bg-popover px-3 py-2 text-xs shadow-md">
-                              <p className="font-medium">Question {row.q}</p>
-                              <p className="mt-0.5 text-muted-foreground">
-                                {row.subject} · {formatQuestionTime(row.seconds)}
-                              </p>
-                            </div>
-                          );
-                        }}
-                      />
-                      <Area
-                        type="monotone"
-                        dataKey="seconds"
-                        stroke="var(--color-caramel-deep)"
-                        strokeWidth={2}
-                        fill="url(#hiwMockTimeFill)"
-                        dot={{ r: 3, strokeWidth: 0, fill: "var(--color-caramel-deep)" }}
-                        isAnimationActive={false}
-                      />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </div>
-              </section>
-            </div>
-          ) : (
-            <div>
-              <p className="font-display text-sm font-semibold">Explanations · Task {read.index}</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">
-                {subjectLabel(read.subject)} · {read.subtopicTag}
-              </p>
-              <div data-d="expl-scroll" className="mt-3 h-64 space-y-3 overflow-y-auto pr-1">
-                {read.statements.slice(0, 3).map((statement, i) => (
-                  <div key={statement.id} data-d={`prose${i}`} className="rounded-xl border border-border bg-secondary/20 p-3">
-                    <p className="text-[10px] font-semibold uppercase tracking-wide text-taupe">
-                      {String.fromCharCode(65 + i)} · {statement.isTrue ? "True" : "False"}
-                    </p>
-                    <ExamExplanationText q={read} text={statement.explanation} className="mt-2 text-sm text-foreground" />
-                  </div>
-                ))}
+          <main className={`${PRACTICE_BODY} flex-col py-8 sm:py-10`}>
+            <div
+              data-exam-fit="viewbar"
+              className="sticky top-16 z-20 -mx-1 mb-6 flex flex-col gap-3 rounded-2xl border border-border bg-background/95 px-3 py-3 shadow-sm backdrop-blur-sm sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-4"
+            >
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                  Mock Exam 1
+                </p>
+                <p data-exam-fit="viewbar-copy" className="mt-0.5 text-sm text-muted-foreground">
+                  Score overview, or tasks with answers and explanations.
+                </p>
               </div>
+              <ReviewViewToggle
+                showTaskReview={phase === "tasks"}
+                onShowResults={() => setPhase("stats")}
+                onShowTasks={() => setPhase("tasks")}
+                de={false}
+                tasksAnchor="tasks"
+              />
             </div>
-          )}
+            {phase === "stats" ? (
+              <ExamResultOverview
+                examTitle="Mock Exam 1"
+                analytics={analytics}
+                onOpenTask={(next) => {
+                  setTaskIndex(next);
+                  setPhase("tasks");
+                }}
+              />
+            ) : currentTask ? (
+              <TaskReviewWorkspace
+                tasks={analytics.tasks}
+                currentIndex={taskIndex}
+                onNavigate={setTaskIndex}
+                onBackToResults={() => setPhase("stats")}
+                explanationAnchors
+              />
+            ) : null}
+          </main>
         </div>
       ) : null}
     </CourseFrame>
   );
 }
 
-function ReviewStat({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
+function ToolRailButton({
+  children,
+  label,
+  short,
+}: {
+  children: ReactNode;
+  label: string;
+  short: string;
+}) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-3">
-      <div className="text-[10px] font-semibold uppercase tracking-widest text-taupe">{label}</div>
-      <div className={cn("mt-1 font-display text-2xl font-bold tabular-nums", accent && "text-caramel-deep")}>{value}</div>
-    </div>
-  );
-}
-
-function Stat({ value, label, hint }: { value: string; label: string; hint: string }) {
-  return (
-    <div className="min-w-0 px-4 py-4">
-      <p className="font-display text-2xl font-semibold tabular-nums leading-none">{value}</p>
-      <p className="mt-2 text-xs text-muted-foreground">{label}</p>
-      <p className="mt-0.5 text-[11px] text-muted-foreground/80">{hint}</p>
-    </div>
+    <button
+      type="button"
+      title={label}
+      aria-label={label}
+      className="relative flex min-h-11 flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-border bg-card px-2 py-2 text-[10px] font-semibold text-foreground transition-colors hover:bg-secondary lg:min-h-0 lg:flex-none lg:px-1.5 lg:py-2.5"
+    >
+      {children}
+      <span className="leading-none">{short}</span>
+    </button>
   );
 }

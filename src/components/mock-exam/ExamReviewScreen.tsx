@@ -99,6 +99,7 @@ export function ExamReviewScreen({
         <button
           type="button"
           onClick={onSubmit}
+          data-d="submit-exam"
           className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
         >
           {de ? "Prüfung abgeben" : "Submit exam"}

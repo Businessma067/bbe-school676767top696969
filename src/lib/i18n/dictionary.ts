@@ -145,8 +145,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs — kein Zufallspapier.",
     "Open Mock Builder": "Prüfungs-Builder öffnen",
     "Finish the paper and read the result": "Beende die Prüfung und lies das Ergebnis",
-    "Answer one English question, one math question, and one economics question on a timed mock. After you submit, the results chart shows how long each question took. Open Tasks and read the explanations.":
-      "Beantworte eine Englisch-, eine Mathe- und eine Wirtschaftsaufgabe in einer zeitbegrenzten Probeprüfung. Nach dem Abgeben zeigt das Ergebnisdiagramm, wie lange jede Aufgabe gedauert hat. Öffne Aufgaben und lies die Erklärungen.",
+    "Answer one English question, one math question, and one economics question on the 34-question mock. After you submit, the results chart shows how long each of the 34 questions took. Open Tasks and read the explanations.":
+      "Beantworte eine Englisch-, eine Mathe- und eine Wirtschaftsaufgabe in der Probeprüfung mit 34 Aufgaben. Nach dem Abgeben zeigt das Ergebnisdiagramm, wie lange jede der 34 Aufgaben gedauert hat. Öffne Aufgaben und lies die Erklärungen.",
     "Open Mock Exams": "Probeprüfungen öffnen",
     Theory: "Theorie",
     "Read the theory the tasks assume": "Lies die Theorie, die die Aufgaben voraussetzen",
@@ -372,8 +372,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу — не випадковий варіант.",
     "Open Mock Builder": "Відкрити конструктор іспитів",
     "Finish the paper and read the result": "Закінчи пробний іспит і прочитай результат",
-    "Answer one English question, one math question, and one economics question on a timed mock. After you submit, the results chart shows how long each question took. Open Tasks and read the explanations.":
-      "Дай відповідь на одне питання з англійської, одне з математики й одне з економіки в timed пробному іспиті. Після здачі графік результату показує, скільки часу пішло на кожне завдання. Відкрий Завдання і прочитай пояснення.",
+    "Answer one English question, one math question, and one economics question on the 34-question mock. After you submit, the results chart shows how long each of the 34 questions took. Open Tasks and read the explanations.":
+      "Дай відповідь на одне питання з англійської, одне з математики й одне з економіки в пробному іспиті на 34 завдання. Після здачі графік результату показує, скільки часу пішло на кожне з 34 завдань. Відкрий Завдання і прочитай пояснення.",
     "Open Mock Exams": "Відкрити пробні іспити",
     Theory: "Теорія",
     "Read the theory the tasks assume": "Прочитай теорію, на яку спираються завдання",
