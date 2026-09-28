@@ -16,11 +16,11 @@ export const Route = createFileRoute("/wiso/products/full-course-math")({
         content:
           "WiSo mathematics practice: German questions and explanations for the WU Vienna WiSo Aufnahmeprüfung.",
       },
-      { property: "og:title", content: "Mathematik — Full WiSo Course" },
+      { property: "og:title", content: "Mathematik: Full WiSo Course" },
       {
         property: "og:description",
         content:
-          "Algebra, functions, finance math, probability and more — WiSo Full Course mathematics in German.",
+          "Algebra, functions, finance math, probability and more, WiSo Full Course mathematics in German.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },

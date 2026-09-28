@@ -189,7 +189,7 @@ export function LiabilityChart() {
             className="text-xs font-medium tracking-wide"
             style={{ color: `${ESPRESSO}CC` }}
           >
-            Private Business School — cumulative outlay
+            Private Business School: cumulative outlay
           </span>
         </div>
         <div className="flex items-center gap-3">

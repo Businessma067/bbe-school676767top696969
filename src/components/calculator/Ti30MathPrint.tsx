@@ -132,7 +132,7 @@ const GUIDE: GuideItem[] = [
     tab: "home",
     steps: [
       "Faint taupe labels above keys are always the 2nd functions.",
-      "Tap 2nd (highlights caramel) then the key — e.g. 2nd → sin for sin⁻¹.",
+      "Tap 2nd (highlights caramel) then the key, e.g. 2nd → sin for sin⁻¹.",
       "2nd stays on for one keystroke.",
     ],
   },
@@ -152,25 +152,25 @@ const GUIDE: GuideItem[] = [
     tab: "prb",
     steps: [
       "Open PRB → pick nPr, nCr, !, rand, or randint.",
-      "Fill the labeled fields (n, r, …) — no syntax to memorize.",
+      "Fill the labeled fields (n, r, …): no syntax to memorize.",
       "Tap CALC. Result appears on the LCD and in Ans.",
     ],
     prbPick: "ncr",
   },
   {
     id: "dist-normal",
-    title: "Distributions — Normal",
+    title: "Distributions: Normal",
     tab: "dist",
     steps: [
       "Open Dist → choose Normalcdf (or Normalpdf / invNorm).",
       "Fill lowerbnd, upperbnd, μ, σ (defaults are already loaded).",
-      "Tap CALC — result goes to the LCD. Tap Solve again to change inputs.",
+      "Tap CALC: result goes to the LCD. Tap Solve again to change inputs.",
     ],
     distPick: "normalcdf",
   },
   {
     id: "dist-binom",
-    title: "Distributions — Binomial",
+    title: "Distributions: Binomial",
     tab: "dist",
     steps: [
       "Dist → Binompdf or Binomcdf.",
@@ -181,7 +181,7 @@ const GUIDE: GuideItem[] = [
   },
   {
     id: "dist-poisson",
-    title: "Distributions — Poisson",
+    title: "Distributions: Poisson",
     tab: "dist",
     steps: [
       "Dist → Poissonpdf or Poissoncdf.",
@@ -861,7 +861,7 @@ export function Ti30MathPrint({
             {prbFn == null ? (
               <>
                 <p className="text-[10px] leading-relaxed text-muted-foreground">
-                  Probability menu — pick a function, then fill the fields (like the TI wizard).
+                  Probability menu: pick a function, then fill the fields (like the TI wizard).
                 </p>
                 {(
                   [
@@ -917,7 +917,7 @@ export function Ti30MathPrint({
                   />
                 )}
                 {prbFn === "rand" && (
-                  <p className="text-[10px] text-muted-foreground">No inputs — taps CALC for a random in [0,1).</p>
+                  <p className="text-[10px] text-muted-foreground">No inputs, taps CALC for a random in [0,1).</p>
                 )}
                 {prbFn === "randint" && (
                   <div className="grid grid-cols-2 gap-2">
@@ -950,7 +950,7 @@ export function Ti30MathPrint({
             {distFn == null ? (
               <>
                 <p className="text-[10px] leading-relaxed text-muted-foreground">
-                  DISTR menu (TI-30X Pro). Pick a distribution — you get labeled input fields, then CALC.
+                  DISTR menu (TI-30X Pro). Pick a distribution, you get labeled input fields, then CALC.
                 </p>
                 {(Object.keys(DIST_DEFS) as DistFn[]).map((id) => (
                   <button
@@ -1061,7 +1061,7 @@ export function Ti30MathPrint({
                 )}
 
                 <p className="text-[9px] text-muted-foreground">
-                  Result prints on the LCD above (and stores to Ans). Change a field and CALC again — same as
+                  Result prints on the LCD above (and stores to Ans). Change a field and CALC again, same as
                   &quot;Solve again&quot; on TI.
                 </p>
               </>
@@ -1072,7 +1072,7 @@ export function Ti30MathPrint({
         {tab === "stat" && (
           <div className="space-y-2 text-xs">
             <p className="text-[10px] text-muted-foreground">
-              Data editor — L1 (x) for 1-Var; add L2 (y) for 2-Var / LinReg.
+              Data editor: L1 (x) for 1-Var; add L2 (y) for 2-Var / LinReg.
             </p>
             <label className="block">
               <span className="text-[10px] text-taupe">L1</span>
@@ -1162,7 +1162,7 @@ export function Ti30MathPrint({
 
         {tab === "table" && (
           <div className="space-y-2 text-xs">
-            <p className="text-[10px] text-muted-foreground">Function table (Auto) — f(x), start, step.</p>
+            <p className="text-[10px] text-muted-foreground">Function table (Auto), f(x), start, step.</p>
             <label className="block">
               <span className="text-[10px] text-taupe">f(x)</span>
               <input value={tableFn} onChange={(e) => setTableFn(e.target.value)} className={fieldCls} />
@@ -1216,7 +1216,7 @@ export function Ti30MathPrint({
         {tab === "mem" && (
           <div className="space-y-2 text-xs">
             <p className="text-[10px] text-muted-foreground">
-              Seven memories (x,y,z,t,a,b,c) — STO stores Ans; RCL inserts value.
+              Seven memories (x,y,z,t,a,b,c): STO stores Ans; RCL inserts value.
             </p>
             <div className="grid grid-cols-2 gap-2">
               {MEM.map((k) => (
@@ -1267,7 +1267,7 @@ export function Ti30MathPrint({
             <p className="inline-flex items-center gap-1.5 font-display text-sm font-bold text-foreground">
               <BookOpen className="h-4 w-4 text-caramel-deep" /> Feature guide
             </p>
-            <p>Use the menu above — tap a feature to jump to the right tab and see exact key steps.</p>
+            <p>Use the menu above: tap a feature to jump to the right tab and see exact key steps.</p>
           </div>
         )}
       </div>

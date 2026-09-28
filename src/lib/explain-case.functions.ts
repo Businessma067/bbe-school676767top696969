@@ -80,7 +80,7 @@ The correct answer is: ${truthLabel}
 Below are relevant retrieved passages from the BBE textbook. Use them as your source of truth.
 
 ===== BOOK CONTEXT =====
-${passages || "(no strong retrieval hits — rely on well-established economics knowledge aligned with the BBE Full Course syllabus and note this in the classic explanation)"}
+${passages || "(no strong retrieval hits: rely on well-established economics knowledge aligned with the BBE Full Course syllabus and note this in the classic explanation)"}
 ========================
 
 Produce a JSON object with EXACTLY these three fields:
@@ -89,7 +89,7 @@ Produce a JSON object with EXACTLY these three fields:
 
 2. "textbook_context": ONE clean paragraph (60-180 words) copied/paraphrased tightly from the most relevant retrieved passage above. It must be self-contained prose that a student could read like an excerpt from the BBE book. Preserve the book's tone. No headings, no "[Passage 1]" markers. No em dashes.
 
-3. "highlight_text": A single verbatim substring taken from your "textbook_context" field — the exact sentence (or phrase) that most directly proves or disproves the statement. It MUST appear character-for-character inside "textbook_context". Keep it short: 4-25 words.`;
+3. "highlight_text": A single verbatim substring taken from your "textbook_context" field, the exact sentence (or phrase) that most directly proves or disproves the statement. It MUST appear character-for-character inside "textbook_context". Keep it short: 4-25 words.`;
 
     try {
       const { output } = await generateText({

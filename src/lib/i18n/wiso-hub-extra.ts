@@ -103,7 +103,7 @@ export const wisoHubExtraDe: Record<string, string> = {
   "Descriptive statistics, elementary probability, and interpreting data statements under exam time pressure.": "Deskriptive Statistik, elementare Wahrscheinlichkeit und das Interpretieren von Datenaussagen unter Prüfungszeitdruck.",
   "Descriptive stats, elementary probability, and conditional reasoning under partial-credit scoring, where one wrong tick can erase hard-won calculation credit.": "Deskriptive Stats, elementare Wahrscheinlichkeit und konditionales Reasoning unter Teilpunkte-Bewertung, wo ein falsches Kreuz hart erarbeitete Rechenpunkte auslöschen kann.",
   "Digital transformation of products and business models": "Digitale Transformation von Produkten und Geschäftsmodellen",
-  "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik — WiSo-spezifisch": "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik, WiSo-spezifisch",
+  "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik, WiSo-spezifisch": "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik, WiSo-spezifisch",
   "Digitalisation and Wirtschaftsinformatik": "Digitalisierung und Wirtschaftsinformatik",
   "Do unanswered options cost points?": "Kosten unbeantwortete Optionen Punkte?",
   "Does Fuhrmann mean WiSo equals BBE economics?": "Bedeutet Fuhrmann, dass WiSo gleich BBE-Wirtschaft ist?",
@@ -281,7 +281,7 @@ export const wisoHubExtraDe: Record<string, string> = {
   "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard, just not surprising.": "Meine Schwachstelle war, zu schnell zwischen Fächern zu springen. Kürzere gemischte Sets haben das gefixt. Die Prüfung fühlte sich trotzdem schwer an, nur nicht mehr überraschend.",
   "Myth to ignore": "Mythos, den du ignorieren solltest",
   "Nachhaltigkeit und planetare Grenzen": "Nachhaltigkeit und planetare Grenzen",
-  "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie — WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text": "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie, WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text",
+  "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie, WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text": "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie, WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text",
   "Necessary vs sufficient conditions": "Notwendige vs. hinreichende Bedingungen",
   "Never timing mixed sets, because untimed accuracy does not transfer to a 2-hour paper.": "Gemischte Sets nie timen, Genauigkeit ohne Zeitlimit überträgt sich nicht auf eine 2-Stunden-Klausur.",
   "Next steps": "Nächste Schritte",
@@ -678,7 +678,7 @@ export const wisoHubExtraDe: Record<string, string> = {
   "Prepare for the WU Vienna WiSo exam (Aufnahmeprüfung): Wirtschaft verstehen, mathematics, and German reading, with scoring guides and timed practice.": "Vorbereitung auf die WiSo-Aufnahmeprüfung der WU Wien: Wirtschaft verstehen, Mathematik und Deutsch-Leseverstehen, mit Bewertungsguide und Übungen auf Zeit.",
   "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School": "WiSo-Aufnahmeprüfung WU Wien: Ablauf, Format & Themen | BBE School",
   "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.": "Wie läuft die WiSo-Aufnahmeprüfung der WU Wien ab? Format, Fächer (Wirtschaft, Mathe, Deutsch), Teilpunktesystem, Studienplätze, das zweistufige Verfahren und die richtige Vorbereitung.",
-  "Everything you need for the WiSo Aufnahmeprüfung — Wirtschaft verstehen, Mathematik, and German reading — built around the real format and Teilpunktesystem.": "Alles, was du für die WiSo-Aufnahmeprüfung brauchst – Wirtschaft verstehen, Mathematik und Deutsch-Leseverstehen – aufgebaut nach dem echten Format und Teilpunktesystem.",
+  "Everything you need for the WiSo Aufnahmeprüfung, Wirtschaft verstehen, Mathematik, and German reading, built around the real format and Teilpunktesystem.": "Alles, was du für die WiSo-Aufnahmeprüfung brauchst – Wirtschaft verstehen, Mathematik und Deutsch-Leseverstehen – aufgebaut nach dem echten Format und Teilpunktesystem.",
   "before you grind volume.": "bevor du auf Menge trainierst.",
 };
 
@@ -782,8 +782,8 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Descriptive statistics, elementary probability, and interpreting data statements under exam time pressure.": "Описова статистика, елементарна ймовірність і інтерпретація тверджень про дані під тиском часу іспиту.",
   "Descriptive stats, elementary probability, and conditional reasoning under partial-credit scoring, where one wrong tick can erase hard-won calculation credit.": "Описова статистика, елементарна ймовірність і умовне міркування за частковим оцінюванням, де одна хибна галочка може стерти важко здобуті розрахункові бали.",
   "Digital transformation of products and business models": "Цифрова трансформація продуктів і бізнес-моделей",
-  "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik — WiSo-spezifisch":
-    "Цифрова трансформація та бізнес-моделі, інтернет-платформи, економічна інформатика — специфіка WiSo",
+  "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik, WiSo-spezifisch":
+    "Цифрова трансформація та бізнес-моделі, інтернет-платформи, економічна інформатика, специфіка WiSo",
   "Digitalisation and Wirtschaftsinformatik": "Цифровізація та Wirtschaftsinformatik",
   "Do unanswered options cost points?": "Чи коштують балів непозначені варіанти?",
   "Does Fuhrmann mean WiSo equals BBE economics?": "Чи означає Fuhrmann, що WiSo дорівнює економіці BBE?",
@@ -961,8 +961,8 @@ export const wisoHubExtraUk: Record<string, string> = {
   "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard, just not surprising.": "Моя слабкість, занадто швидко стрибати між предметами. Коротші змішані сети це виправили. Іспит усе одно відчувався складним, просто вже не несподіваним.",
   "Myth to ignore": "Міф, який варто ігнорувати",
   "Nachhaltigkeit und planetare Grenzen": "Сталість і планетарні межі",
-  "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie — WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text":
-    "Сталість, планетарні межі, декаплінг, економіка добробуту — специфіка WiSo порівняно з текстом Fuhrmann для BBE",
+  "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie, WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text":
+    "Сталість, планетарні межі, декаплінг, економіка добробуту, специфіка WiSo порівняно з текстом Fuhrmann для BBE",
   "Necessary vs sufficient conditions": "Необхідні vs достатні умови",
   "Never timing mixed sets, because untimed accuracy does not transfer to a 2-hour paper.": "Ніколи не таймувати змішані сети, точність без таймера не переноситься на 2-годинну роботу.",
   "Next steps": "Наступні кроки",
@@ -1265,7 +1265,7 @@ export const wisoHubExtraUk: Record<string, string> = {
   "WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing German reading. This page lays out a practical sequence you can adapt to your calendar before": "Підготовка до WiSo провалюється передбачувано: ставитись як до BBE з німецькими ярликами, пропускати розділи 2 і 4 Wirtschaft verstehen, ігнорувати стратегію Teilpunktesystem або ніколи не таймити німецьке читання. Ця сторінка викладає практичну послідовність, яку ти можеш підлаштувати під свій календар перед",
   "WiSo prep only works when the language of practice matches the exam. This course stays on German economics wording, German reading, and math on /wiso URLs, so you never waste weeks on BBE English passages you will not see.": "Підготовка до WiSo працює лише коли мова практики збігається з іспитом. Цей курс лишається на німецькому економічному формулюванні, німецькому читанні й математиці на /wiso URL, тож ти не витратиш тижні на англійські пасажі BBE, яких не буде.",
   "WiSo scoring explained →": "Оцінювання WiSo пояснено →",
-  "WiSo shares an admissions calendar with BBE but is a separate exam and a separate applicant pool. If you only remember one difference, remember this: the language pillar is German reading comprehension, not English.": "WiSo має спільний календар вступу з BBE, але це окремий іспит і окремий пул абітурієнтів. Якщо запам’ятаєш лише одну різницю, запам’ятай це: мовна складова — німецьке читання з розумінням, а не англійська.",
+  "WiSo shares an admissions calendar with BBE but is a separate exam and a separate applicant pool. If you only remember one difference, remember this: the language pillar is German reading comprehension, not English.": "WiSo має спільний календар вступу з BBE, але це окремий іспит і окремий пул абітурієнтів. Якщо запам’ятаєш лише одну різницю, запам’ятай це: мовна складова, німецьке читання з розумінням, а не англійська.",
   "WiSo tasks in economics, math, and German": "Завдання WiSo з економіки, математики та німецької",
   "WiSo track": "Трек WiSo",
   "WiSo vs BBE at a glance": "WiSo vs BBE одним поглядом",
@@ -1280,7 +1280,7 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Worked scoring examples →": "Розібрані приклади оцінювання →",
   "Written breakdowns so you learn the logic, not only the answer mark.": "Письмові розбори, щоб ти вчив логіку, а не лише позначку відповіді.",
   "The most recent WiSo Aufnahmeprüfung had 32 questions over 2 hours: 10 Economics, 9 German reading comprehension, and 13 Mathematics. WU confirms a 2-hour, in-person, entirely multiple-choice exam at VIECON; the university may adjust the selection procedure in future years.": "Останній WiSo Aufnahmeprüfung мав 32 питання за 2 години: 10 економіка, 9 німецьке читання та 13 математика. WU підтверджує 2-годинний очний іспит повністю у форматі multiple choice у VIECON; університет може змінити процедуру відбору в наступні роки.",
-  "Based on the most recent exam: 32 questions total, split into 10 Economics, 9 German reading comprehension, and 13 Mathematics. Confirm your cycle on official WU pages.": "За останнім іспитом: загалом 32 питання — 10 економіка, 9 німецьке читання та 13 математика. Підтвердь свій цикл на офіційних сторінках WU.",
+  "Based on the most recent exam: 32 questions total, split into 10 Economics, 9 German reading comprehension, and 13 Mathematics. Confirm your cycle on official WU pages.": "За останнім іспитом: загалом 32 питання, 10 економіка, 9 німецьке читання та 13 математика. Підтвердь свій цикл на офіційних сторінках WU.",
   "Source: WU BBE selection procedure": "Джерело: процедура відбору WU BBE",
   "Source: WU WiSo selection procedure": "Джерело: процедура відбору WU WiSo",
   "WU confirms the exam is entirely multiple choice; the mix of single- vs multi-correct stems can vary by cycle. Train both behaviours so you do not over-generalise from BBE’s five true/false statement pattern.": "WU підтверджує, що іспит повністю multiple choice; мікс single- і multi-correct stems може змінюватися за циклом. Тренуй обидві поведінки, щоб не переузагальнювати з патерну BBE з п’ятьма true/false statements.",
@@ -1382,6 +1382,6 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Prepare for the WU Vienna WiSo exam (Aufnahmeprüfung): Wirtschaft verstehen, mathematics, and German reading, with scoring guides and timed practice.": "Підготовка до іспиту WiSo у WU Vienna (Aufnahmeprüfung): Wirtschaft verstehen, математика та читання німецькою, з поясненням оцінювання та практикою на час.",
   "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School": "Іспит WU WiSo (Aufnahmeprüfung): формат і теми | BBE School",
   "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.": "Що таке іспит WiSo у WU Vienna (Aufnahmeprüfung)? Формат, предмети (економіка, математика, німецька), оцінювання за Teilpunktesystem, кількість місць, двоетапний відбір і як підготуватися.",
-  "Everything you need for the WiSo Aufnahmeprüfung — Wirtschaft verstehen, Mathematik, and German reading — built around the real format and Teilpunktesystem.": "Усе, що потрібно для WiSo Aufnahmeprüfung — Wirtschaft verstehen, математика та читання німецькою — побудовано за реальним форматом і Teilpunktesystem.",
+  "Everything you need for the WiSo Aufnahmeprüfung, Wirtschaft verstehen, Mathematik, and German reading, built around the real format and Teilpunktesystem.": "Усе, що потрібно для WiSo Aufnahmeprüfung, Wirtschaft verstehen, математика та читання німецькою, побудовано за реальним форматом і Teilpunktesystem.",
   "before you grind volume.": "перш ніж братися за великі обсяги задач.",
 };

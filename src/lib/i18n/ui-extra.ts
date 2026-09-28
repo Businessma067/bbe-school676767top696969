@@ -103,7 +103,7 @@ export const uiExtraDe: Record<string, string> = {
   "Payment received": "Zahlung erhalten",
   "Your course": "Dein Kurs",
   " is unlocked on your account": " ist auf deinem Konto freigeschaltet",
-  " — no payment needed.": " — keine Zahlung nötig.",
+  ": no payment needed.": ": keine Zahlung nötig.",
   "Start the course →": "Kurs starten →",
   "Go to dashboard": "Zum Dashboard",
   "Payment not completed": "Zahlung nicht abgeschlossen",
@@ -127,9 +127,9 @@ export const uiExtraDe: Record<string, string> = {
   "Pay securely through Monobank. The payment form opens here with card, Apple Pay, and Google Pay; you return automatically after the payment.":
     "Zahle sicher über Monobank. Das Zahlungsformular öffnet sich hier mit Karte, Apple Pay und Google Pay; nach der Zahlung kommst du automatisch zurück.",
   "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
-    "Weiter zur sicheren Monobank-Zahlungsseite — dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Danach kommst du hierher zurück.",
+    "Weiter zur sicheren Monobank-Zahlungsseite, dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Danach kommst du hierher zurück.",
   "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. That page scrolls on phones so every option stays reachable.":
-    "Weiter zur sicheren Monobank-Zahlungsseite — dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Die Seite lässt sich auf dem Handy scrollen, damit alle Optionen erreichbar bleiben.",
+    "Weiter zur sicheren Monobank-Zahlungsseite, dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Die Seite lässt sich auf dem Handy scrollen, damit alle Optionen erreichbar bleiben.",
   "Pay by card. You will return here after the payment.":
     "Zahle per Karte. Nach der Zahlung kommst du hierher zurück.",
   "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
@@ -142,9 +142,9 @@ export const uiExtraDe: Record<string, string> = {
     "Karte · Apple Pay · Google Pay · Gesichert durch Monobank",
   "Test charge ": "Testbetrag ",
   "Discount noted (": "Rabatt vermerkt (",
-  ") — test charge remains ": ") — Testbetrag bleibt ",
-  "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly — no payment needed.":
-    "Hast du einen Einmal-Promocode? Löse ihn angemeldet ein, um sofort vollen Kurszugang freizuschalten — ohne Zahlung.",
+  "): test charge remains ": "): Testbetrag bleibt ",
+  "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly, no payment needed.":
+    "Hast du einen Einmal-Promocode? Löse ihn angemeldet ein, um sofort vollen Kurszugang freizuschalten, ohne Zahlung.",
   Promocode: "Promocode",
   "Redeem & unlock": "Einlösen & freischalten",
   "Enter a promocode.": "Promocode eingeben.",
@@ -176,8 +176,8 @@ export const uiExtraDe: Record<string, string> = {
     "Dein Fortschritt und deine Statistiken findest du im Demo-Übungsbereich.",
   "Go to demo practice →": "Zur Demo-Übung →",
   Administration: "Administration",
-  "View detailed analytics for every registered user — tasks, mocks, time on site, flashcards, theory and more.":
-    "Detaillierte Analysen für jeden registrierten Nutzer — Aufgaben, Probeprüfungen, Verweildauer, Karteikarten, Theorie und mehr.",
+  "View detailed analytics for every registered user, tasks, mocks, time on site, flashcards, theory and more.":
+    "Detaillierte Analysen für jeden registrierten Nutzer, Aufgaben, Probeprüfungen, Verweildauer, Karteikarten, Theorie und mehr.",
   "Open admin panel →": "Admin-Bereich öffnen →",
   "Practice →": "Übung →",
 
@@ -197,8 +197,8 @@ export const uiExtraDe: Record<string, string> = {
   "across all subjects": "über alle Fächer",
   "Current streak": "Aktuelle Serie",
   "days with activity": "Tage mit Aktivität",
-  "No practice recorded yet. Your progress is 0% — start a chapter and your statistics will appear here automatically.":
-    "Noch keine Übung aufgezeichnet. Dein Fortschritt liegt bei 0 % — starte ein Kapitel, dann erscheinen deine Statistiken hier automatisch.",
+  "No practice recorded yet. Your progress is 0%, start a chapter and your statistics will appear here automatically.":
+    "Noch keine Übung aufgezeichnet. Dein Fortschritt liegt bei 0 %, starte ein Kapitel, dann erscheinen deine Statistiken hier automatisch.",
   Attempted: "Bearbeitet",
   Passed: "Bestanden",
   "Needs review": "Wiederholen",
@@ -241,14 +241,14 @@ export const uiExtraDe: Record<string, string> = {
   // demo-mock
   "Free BBE Mock Exam Online | WU Vienna Entrance Exam Practice | BBE School":
     "Kostenlose BBE-Probeprüfung online | WU Wien Aufnahmeprüfung üben | BBE School",
-  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account — no credit card. Start your diagnostic now.":
-    "Kostenlose vollständige WU-BBE-Probeprüfung online: 34 Fragen, 2 Stunden, wi2-Bewertung. Kostenloses Konto — keine Kreditkarte. Starte jetzt deine Diagnose.",
+  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account, no credit card. Start your diagnostic now.":
+    "Kostenlose vollständige WU-BBE-Probeprüfung online: 34 Fragen, 2 Stunden, wi2-Bewertung. Kostenloses Konto, keine Kreditkarte. Starte jetzt deine Diagnose.",
   "Demo Mock Exam": "Demo-Probeprüfung",
   "Free practice →": "Kostenlose Übung →",
   "Free WU BBE diagnostic": "Kostenlose WU-BBE-Diagnose",
   "Free BBE mock exam online": "Kostenlose BBE-Probeprüfung online",
-  "A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure, same 2-hour window, same partial-credit scoring. Free with an account; no credit card.":
-    "Eine vollständige, anspruchsvolle Diagnose der WU-Wien-BBE-Aufnahmeprüfung — gleicher Aufbau, gleiches 2-Stunden-Fenster, gleiche Teilpunktebewertung. Kostenlos mit Konto; keine Kreditkarte.",
+  "A full-length hard diagnostic of the WU Vienna BBE entrance exam, same structure, same 2-hour window, same partial-credit scoring. Free with an account; no credit card.":
+    "Eine vollständige, anspruchsvolle Diagnose der WU-Wien-BBE-Aufnahmeprüfung, gleicher Aufbau, gleiches 2-Stunden-Fenster, gleiche Teilpunktebewertung. Kostenlos mit Konto; keine Kreditkarte.",
   "34 questions · 159 points · 2 hours": "34 Fragen · 159 Punkte · 2 Stunden",
   "Economics, English, and Mathematics in one sitting":
     "Wirtschaft, Englisch und Mathematik in einer Sitzung",
@@ -260,32 +260,32 @@ export const uiExtraDe: Record<string, string> = {
   "Retake free demo exam": "Kostenlose Demo-Prüfung wiederholen",
   "Start free demo exam": "Kostenlose Demo-Prüfung starten",
   "Or try subject practice first": "Oder zuerst Fach-Übungen ausprobieren",
-  "Free account required to save progress — no credit card, no purchase.":
-    "Kostenloses Konto nötig, um den Fortschritt zu speichern — keine Kreditkarte, kein Kauf.",
+  "Free account required to save progress, no credit card, no purchase.":
+    "Kostenloses Konto nötig, um den Fortschritt zu speichern, keine Kreditkarte, kein Kauf.",
   "Questions": "Fragen",
   "Time limit": "Zeitlimit",
   "Total points": "Gesamtpunkte",
   "Price": "Preis",
   "What's inside the free demo mock": "Was in der kostenlosen Demo-Probeprüfung steckt",
-  "One sitting that mirrors how the WU BBE entrance exam is built — three sections, partial credit, and exam-day pacing.":
-    "Eine Sitzung, die den Aufbau der WU-BBE-Aufnahmeprüfung spiegelt — drei Teile, Teilpunkte und Prüfungstag-Tempo.",
+  "One sitting that mirrors how the WU BBE entrance exam is built, three sections, partial credit, and exam-day pacing.":
+    "Eine Sitzung, die den Aufbau der WU-BBE-Aufnahmeprüfung spiegelt, drei Teile, Teilpunkte und Prüfungstag-Tempo.",
   "Economics & Business": "Wirtschaft & Business",
-  "True/False statement clusters under shared stems — definitions, markets, and accounting traps.":
-    "Richtig/Falsch-Aussagen unter gemeinsamen Stämmen — Definitionen, Märkte und Buchhaltungsfallen.",
+  "True/False statement clusters under shared stems, definitions, markets, and accounting traps.":
+    "Richtig/Falsch-Aussagen unter gemeinsamen Stämmen, Definitionen, Märkte und Buchhaltungsfallen.",
   "Reading, vocabulary, and grammar tasks in the same mix style as the written exam.":
     "Lese-, Wortschatz- und Grammatikaufgaben im gleichen Mix wie in der schriftlichen Prüfung.",
   "School-leaving depth: algebra, functions, probability, and calculation under time pressure.":
     "Matura-Niveau: Algebra, Funktionen, Wahrscheinlichkeit und Rechnen unter Zeitdruck.",
   "Why take this diagnostic before you buy a course":
     "Warum diese Diagnose machen, bevor du einen Kurs kaufst",
-  "Ads and course pages can promise anything. Sitting a hard mock tells you — in points — where you actually stand.":
-    "Werbung und Kursseiten können alles versprechen. Eine anspruchsvolle Probeprüfung zeigt dir — in Punkten — wo du wirklich stehst.",
+  "Ads and course pages can promise anything. Sitting a hard mock tells you, in points, where you actually stand.":
+    "Werbung und Kursseiten können alles versprechen. Eine anspruchsvolle Probeprüfung zeigt dir, in Punkten, wo du wirklich stehst.",
   "Real exam structure": "Echter Prüfungsaufbau",
-  "Economics, English, and Math in one sitting — the same subject order and time pressure as exam day.":
-    "Wirtschaft, Englisch und Mathe in einer Sitzung — gleiche Fachreihenfolge und Zeitdruck wie am Prüfungstag.",
+  "Economics, English, and Math in one sitting, the same subject order and time pressure as exam day.":
+    "Wirtschaft, Englisch und Mathe in einer Sitzung, gleiche Fachreihenfolge und Zeitdruck wie am Prüfungstag.",
   "Official-style scoring": "Bewertung im Prüfungsstil",
   "Partial-credit wi2 scoring mirrors the Teilpunktesystem, so your percentage means something.":
-    "Teilpunkte-Bewertung nach wi2 spiegelt das Teilpunktesystem — dein Prozentsatz hat Aussagekraft.",
+    "Teilpunkte-Bewertung nach wi2 spiegelt das Teilpunktesystem, dein Prozentsatz hat Aussagekraft.",
   "Hard diagnostic, not a toy": "Harte Diagnose, kein Spielzeug",
   "Built from high-difficulty practice banks so you see where your score actually leaks.":
     "Aus schwierigen Übungsbanken gebaut, damit du siehst, wo wirklich Punkte verloren gehen.",
@@ -294,14 +294,14 @@ export const uiExtraDe: Record<string, string> = {
     "Nach der Abgabe jede Aufgabe erneut öffnen, Urteile prüfen und Lösungen nacharbeiten.",
   "How the free demo exam works": "So funktioniert die kostenlose Demo-Prüfung",
   "Create a free account": "Kostenloses Konto anlegen",
-  "Email signup or Google — no payment details. We only need an account to save your attempt.":
-    "Per E-Mail oder Google — keine Zahlungsdaten. Wir brauchen nur ein Konto, um deinen Versuch zu speichern.",
+  "Email signup or Google: no payment details. We only need an account to save your attempt.":
+    "Per E-Mail oder Google: keine Zahlungsdaten. Wir brauchen nur ein Konto, um deinen Versuch zu speichern.",
   "Choose timer and answer mode": "Timer und Antwortmodus wählen",
   "Run it timed (2 hours) for a true diagnostic, or untimed. Use the digital answer sheet or click-through mode.":
     "Mit Timer (2 Stunden) für eine echte Diagnose, oder ohne Timer. Digitaler Antwortbogen oder Klick-Modus.",
   "Finish, score, and review": "Abschließen, auswerten und nacharbeiten",
   "See points earned vs total, then open the full review to target weak topics before you buy anything.":
-    "Erreichte vs. mögliche Punkte sehen, dann die volle Auswertung öffnen und Schwächen gezielt üben — bevor du etwas kaufst.",
+    "Erreichte vs. mögliche Punkte sehen, dann die volle Auswertung öffnen und Schwächen gezielt üben, bevor du etwas kaufst.",
   "Resume exam": "Prüfung fortsetzen",
   "Retake demo exam": "Demo-Prüfung wiederholen",
   "Your demo results": "Deine Demo-Ergebnisse",
@@ -344,14 +344,14 @@ export const uiExtraDe: Record<string, string> = {
   "Use your weak sections to guide practice. Start with the free Demo Practice course for Economics, Math, and English, then unlock full mock exams and the Full Course when you are ready for volume.":
     "Lass deine schwachen Teile die Übung leiten. Starte mit dem kostenlosen Demo-Practice-Kurs für Wirtschaft, Mathe und Englisch, und schalte später volle Probeprüfungen und den Full Course frei.",
   "Ready for your baseline score?": "Bereit für deinen Ausgangswert?",
-  "Start the free BBE mock exam — 34 questions, 2 hours, full review after submit.":
-    "Starte die kostenlose BBE-Probeprüfung — 34 Fragen, 2 Stunden, volle Auswertung nach Abgabe.",
+  "Start the free BBE mock exam: 34 questions, 2 hours, full review after submit.":
+    "Starte die kostenlose BBE-Probeprüfung, 34 Fragen, 2 Stunden, volle Auswertung nach Abgabe.",
   "If you choose the timed option, the exam is limited to 2 hours and submits automatically when the timer reaches zero.":
     "Mit Timer ist die Prüfung auf 2 Stunden begrenzt und wird automatisch abgegeben, wenn der Timer null erreicht.",
   "Start with Timer (2:00:00)": "Mit Timer starten (2:00:00)",
   "Start without Timer": "Ohne Timer starten",
-  "In progress — you can resume where you left off":
-    "In Bearbeitung — du kannst dort weitermachen, wo du aufgehört hast",
+  "In progress: you can resume where you left off":
+    "In Bearbeitung: du kannst dort weitermachen, wo du aufgehört hast",
   "Resume Exam": "Prüfung fortsetzen",
   "Retake Exam": "Prüfung wiederholen",
   "Start Exam": "Prüfung starten",
@@ -454,7 +454,7 @@ export const uiExtraUk: Record<string, string> = {
   "Payment received": "Оплату отримано",
   "Your course": "Ваш курс",
   " is unlocked on your account": " відкрито на вашому обліковому записі",
-  " — no payment needed.": " — оплата не потрібна.",
+  ": no payment needed.": ": оплата не потрібна.",
   "Start the course →": "Почати курс →",
   "Go to dashboard": "До кабінету",
   "Payment not completed": "Оплату не завершено",
@@ -493,9 +493,9 @@ export const uiExtraUk: Record<string, string> = {
     "Картка · Apple Pay · Google Pay · Захищено Monobank",
   "Test charge ": "Тестова сума ",
   "Discount noted (": "Знижку зазначено (",
-  ") — test charge remains ": ") — тестова сума лишається ",
-  "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly — no payment needed.":
-    "Маєте одноразовий промокод? Активуйте його під час входу, щоб миттєво відкрити повний доступ — без оплати.",
+  "): test charge remains ": "): тестова сума лишається ",
+  "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly, no payment needed.":
+    "Маєте одноразовий промокод? Активуйте його під час входу, щоб миттєво відкрити повний доступ, без оплати.",
   Promocode: "Промокод",
   "Redeem & unlock": "Активувати та відкрити",
   "Enter a promocode.": "Введіть промокод.",
@@ -523,11 +523,11 @@ export const uiExtraUk: Record<string, string> = {
   Access: "Доступ",
   Demo: "Демо",
   "Your progress and statistics live in the demo practice section.":
-    "Ваш прогрес і статистика — у розділі демо-практики.",
+    "Ваш прогрес і статистика: у розділі демо-практики.",
   "Go to demo practice →": "До демо-практики →",
   Administration: "Адміністрування",
-  "View detailed analytics for every registered user — tasks, mocks, time on site, flashcards, theory and more.":
-    "Детальна аналітика для кожного зареєстрованого користувача — завдання, пробні іспити, час на сайті, картки, теорія та інше.",
+  "View detailed analytics for every registered user, tasks, mocks, time on site, flashcards, theory and more.":
+    "Детальна аналітика для кожного зареєстрованого користувача, завдання, пробні іспити, час на сайті, картки, теорія та інше.",
   "Open admin panel →": "Відкрити панель адміна →",
   "Practice →": "Практика →",
 
@@ -546,8 +546,8 @@ export const uiExtraUk: Record<string, string> = {
   "across all subjects": "за всіма предметами",
   "Current streak": "Поточна серія",
   "days with activity": "днів з активністю",
-  "No practice recorded yet. Your progress is 0% — start a chapter and your statistics will appear here automatically.":
-    "Практики ще немає. Ваш прогрес — 0% — почніть розділ, і статистика з’явиться тут автоматично.",
+  "No practice recorded yet. Your progress is 0%, start a chapter and your statistics will appear here automatically.":
+    "Практики ще немає. Ваш прогрес, 0%, почніть розділ, і статистика з’явиться тут автоматично.",
   Attempted: "Спроби",
   Passed: "Виконано",
   "Needs review": "Потрібне повторення",
@@ -589,14 +589,14 @@ export const uiExtraUk: Record<string, string> = {
   // demo-mock
   "Free BBE Mock Exam Online | WU Vienna Entrance Exam Practice | BBE School":
     "Безкоштовний пробний іспит BBE онлайн | Підготовка до вступного іспиту WU Відень | BBE School",
-  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account — no credit card. Start your diagnostic now.":
-    "Пройдіть безкоштовний повноформатний пробний іспит WU BBE онлайн: 34 питання, 2 години, оцінювання wi2. Безкоштовний акаунт — без кредитної картки. Почніть діагностику зараз.",
+  "Take a free full-length WU BBE mock exam online: 34 questions, 2 hours, wi2 scoring. Free account, no credit card. Start your diagnostic now.":
+    "Пройдіть безкоштовний повноформатний пробний іспит WU BBE онлайн: 34 питання, 2 години, оцінювання wi2. Безкоштовний акаунт, без кредитної картки. Почніть діагностику зараз.",
   "Demo Mock Exam": "Демо пробний іспит",
   "Free practice →": "Безкоштовна практика →",
   "Free WU BBE diagnostic": "Безкоштовна діагностика WU BBE",
   "Free BBE mock exam online": "Безкоштовний пробний іспит BBE онлайн",
-  "A full-length hard diagnostic of the WU Vienna BBE entrance exam — same structure, same 2-hour window, same partial-credit scoring. Free with an account; no credit card.":
-    "Повноформатна складна діагностика вступного іспиту WU Відень BBE — та сама структура, те саме 2-годинне вікно, те саме оцінювання з частковими балами. Безкоштовно з акаунтом; без кредитної картки.",
+  "A full-length hard diagnostic of the WU Vienna BBE entrance exam, same structure, same 2-hour window, same partial-credit scoring. Free with an account; no credit card.":
+    "Повноформатна складна діагностика вступного іспиту WU Відень BBE, та сама структура, те саме 2-годинне вікно, те саме оцінювання з частковими балами. Безкоштовно з акаунтом; без кредитної картки.",
   "34 questions · 159 points · 2 hours": "34 питання · 159 балів · 2 години",
   "Economics, English, and Mathematics in one sitting":
     "Економіка, англійська та математика за один підхід",
@@ -608,32 +608,32 @@ export const uiExtraUk: Record<string, string> = {
   "Retake free demo exam": "Пройти безкоштовний демо-іспит знову",
   "Start free demo exam": "Почати безкоштовний демо-іспит",
   "Or try subject practice first": "Або спочатку спробуйте практику за предметами",
-  "Free account required to save progress — no credit card, no purchase.":
-    "Потрібен безкоштовний акаунт, щоб зберегти прогрес — без кредитної картки, без покупки.",
+  "Free account required to save progress, no credit card, no purchase.":
+    "Потрібен безкоштовний акаунт, щоб зберегти прогрес, без кредитної картки, без покупки.",
   "Questions": "Питання",
   "Time limit": "Ліміт часу",
   "Total points": "Усього балів",
   "Price": "Ціна",
   "What's inside the free demo mock": "Що всередині безкоштовного демо-іспиту",
-  "One sitting that mirrors how the WU BBE entrance exam is built — three sections, partial credit, and exam-day pacing.":
-    "Один підхід, що відтворює структуру вступного іспиту WU BBE — три розділи, часткові бали та темп іспитового дня.",
+  "One sitting that mirrors how the WU BBE entrance exam is built, three sections, partial credit, and exam-day pacing.":
+    "Один підхід, що відтворює структуру вступного іспиту WU BBE, три розділи, часткові бали та темп іспитового дня.",
   "Economics & Business": "Економіка та бізнес",
-  "True/False statement clusters under shared stems — definitions, markets, and accounting traps.":
-    "Кластери тверджень правда/неправда під спільними стемами — визначення, ринки та пастки бухгалтерського обліку.",
+  "True/False statement clusters under shared stems, definitions, markets, and accounting traps.":
+    "Кластери тверджень правда/неправда під спільними стемами, визначення, ринки та пастки бухгалтерського обліку.",
   "Reading, vocabulary, and grammar tasks in the same mix style as the written exam.":
     "Завдання на читання, словник і граматику в тому ж міксі, що й на письмовому іспиті.",
   "School-leaving depth: algebra, functions, probability, and calculation under time pressure.":
     "Рівень випускного іспиту: алгебра, функції, ймовірність і розрахунки під тиском часу.",
   "Why take this diagnostic before you buy a course":
     "Навіщо проходити цю діагностику перед покупкою курсу",
-  "Ads and course pages can promise anything. Sitting a hard mock tells you — in points — where you actually stand.":
-    "Реклама й сторінки курсів можуть обіцяти що завгодно. Складний пробний іспит показує — у балах — де ви насправді.",
+  "Ads and course pages can promise anything. Sitting a hard mock tells you, in points, where you actually stand.":
+    "Реклама й сторінки курсів можуть обіцяти що завгодно. Складний пробний іспит показує, у балах, де ви насправді.",
   "Real exam structure": "Реальна структура іспиту",
-  "Economics, English, and Math in one sitting — the same subject order and time pressure as exam day.":
-    "Економіка, англійська та математика за один підхід — той самий порядок предметів і тиск часу, що в день іспиту.",
+  "Economics, English, and Math in one sitting, the same subject order and time pressure as exam day.":
+    "Економіка, англійська та математика за один підхід, той самий порядок предметів і тиск часу, що в день іспиту.",
   "Official-style scoring": "Оцінювання в офіційному стилі",
   "Partial-credit wi2 scoring mirrors the Teilpunktesystem, so your percentage means something.":
-    "Оцінювання wi2 з частковими балами відтворює Teilpunktesystem — ваш відсоток має сенс.",
+    "Оцінювання wi2 з частковими балами відтворює Teilpunktesystem, ваш відсоток має сенс.",
   "Hard diagnostic, not a toy": "Складна діагностика, не іграшка",
   "Built from high-difficulty practice banks so you see where your score actually leaks.":
     "Зібрано зі складних банків завдань, щоб ви бачили, де саме втрачаєте бали.",
@@ -642,14 +642,14 @@ export const uiExtraUk: Record<string, string> = {
     "Після здачі знову відкрийте кожне завдання, перевірте судження й вивчіть рішення.",
   "How the free demo exam works": "Як працює безкоштовний демо-іспит",
   "Create a free account": "Створіть безкоштовний акаунт",
-  "Email signup or Google — no payment details. We only need an account to save your attempt.":
-    "Реєстрація через email або Google — без платіжних даних. Акаунт потрібен лише щоб зберегти спробу.",
+  "Email signup or Google: no payment details. We only need an account to save your attempt.":
+    "Реєстрація через email або Google: без платіжних даних. Акаунт потрібен лише щоб зберегти спробу.",
   "Choose timer and answer mode": "Оберіть таймер і режим відповідей",
   "Run it timed (2 hours) for a true diagnostic, or untimed. Use the digital answer sheet or click-through mode.":
     "Запустіть з таймером (2 години) для справжньої діагностики або без таймера. Цифровий бланк або режим кліків.",
   "Finish, score, and review": "Завершіть, отримайте бали й розберіть",
   "See points earned vs total, then open the full review to target weak topics before you buy anything.":
-    "Побачте набрані бали проти максимуму, потім відкрийте повний розбір і ціліться в слабкі теми — перш ніж щось купувати.",
+    "Побачте набрані бали проти максимуму, потім відкрийте повний розбір і ціліться в слабкі теми, перш ніж щось купувати.",
   "Resume exam": "Продовжити іспит",
   "Retake demo exam": "Пройти демо-іспит знову",
   "Your demo results": "Ваші демо-результати",
@@ -692,14 +692,14 @@ export const uiExtraUk: Record<string, string> = {
   "Use your weak sections to guide practice. Start with the free Demo Practice course for Economics, Math, and English, then unlock full mock exams and the Full Course when you are ready for volume.":
     "Орієнтуйте практику на слабкі розділи. Почніть з безкоштовного Demo Practice з економіки, математики та англійської, потім розблокуйте повні пробні іспити й Full Course.",
   "Ready for your baseline score?": "Готові до базового результату?",
-  "Start the free BBE mock exam — 34 questions, 2 hours, full review after submit.":
-    "Почніть безкоштовний пробний іспит BBE — 34 питання, 2 години, повний розбір після здачі.",
+  "Start the free BBE mock exam: 34 questions, 2 hours, full review after submit.":
+    "Почніть безкоштовний пробний іспит BBE, 34 питання, 2 години, повний розбір після здачі.",
   "If you choose the timed option, the exam is limited to 2 hours and submits automatically when the timer reaches zero.":
     "З таймером іспит обмежено 2 годинами, і він автоматично завершується, коли таймер дійде до нуля.",
   "Start with Timer (2:00:00)": "Почати з таймером (2:00:00)",
   "Start without Timer": "Почати без таймера",
-  "In progress — you can resume where you left off":
-    "У процесі — можете продовжити з місця зупинки",
+  "In progress: you can resume where you left off":
+    "У процесі: можете продовжити з місця зупинки",
   "Resume Exam": "Продовжити іспит",
   "Retake Exam": "Пройти іспит знову",
   "Start Exam": "Почати іспит",

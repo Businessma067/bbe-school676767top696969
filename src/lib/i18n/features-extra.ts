@@ -100,7 +100,7 @@ export const featuresExtraUk: Record<string, string> = {
     "Добірка преміум-інструментів, щоб підсилити кожну перевагу для вступного іспиту WU Vienna BBE.",
   "Official Answer Sheet": "Офіційний бланк відповідей",
   "Practice transferring your answers into a perfect digital replica of the official WU Vienna answer sheet to eliminate technical mistakes under exam pressure.":
-    "Практикуй перенесення відповідей у точну цифрову копію офіційного бланка WU Vienna — без технічних помилок під тиском іспиту.",
+    "Практикуй перенесення відповідей у точну цифрову копію офіційного бланка WU Vienna, без технічних помилок під тиском іспиту.",
   "View More": "Детальніше",
   "#Stress & Focus": "#Стрес і фокус",
   "#Time Management": "#Тайм-менеджмент",
@@ -119,7 +119,7 @@ export const featuresExtraUk: Record<string, string> = {
   "That is a big part of why straight A students with expensive tutors still walk out without a seat. The material was never the problem. Nobody prepared them for the last ten minutes.":
     "Саме тому відмінники з дорогими репетиторами все одно йдуть без місця. Матеріал ніколи не був проблемою. Ніхто не підготував їх до останніх десяти хвилин.",
   "The panel on the left is the tool itself, running exactly as it does inside a mock exam. Name fields, signature, exam ID, and a forty row grid that behaves like the printed original. Nothing here is a picture of the sheet; it is the sheet you will actually work with.":
-    "Панель зліва — сам інструмент, так само як у пробному іспиті. Поля імені, підпис, ID іспиту та сітка з сорока рядками, як у друкованому оригіналі. Це не картинка бланка — це бланк, з яким ти реально працюватимеш.",
+    "Панель зліва, сам інструмент, так само як у пробному іспиті. Поля імені, підпис, ID іспиту та сітка з сорока рядками, як у друкованому оригіналі. Це не картинка бланка, це бланк, з яким ти реально працюватимеш.",
   "Built into every mock exam, on the same running clock.":
     "Вбудовано в кожен пробний іспит на тому самому таймері.",
   "Every mark stays editable until you press submit.":
@@ -127,21 +127,21 @@ export const featuresExtraUk: Record<string, string> = {
   "Fill it row by row, block by block, or all at the end.":
     "Заповнюй рядок за рядком, блоками або все наприкінці.",
   "Do it a dozen times in practice and the transfer stops being an event. It becomes the quiet, automatic ending of an exam you have already finished in your head.":
-    "Зроби це десяток разів на практиці — і перенесення перестане бути подією. Воно стане тихим, автоматичним фінішем іспиту, який ти вже завершив у голові.",
+    "Зроби це десяток разів на практиці: і перенесення перестане бути подією. Воно стане тихим, автоматичним фінішем іспиту, який ти вже завершив у голові.",
 
   "How it lives inside our mock exams": "Як це працює в наших пробних іспитах",
   "The simulator is not a separate exercise you open once and forget. It sits inside every mock exam on the platform. You start the exam, the timer starts with it, and the answer sheet is right there next to your questions the whole time. Everything you do on it counts toward the same clock, exactly like in the hall at Messe Wien.":
-    "Симулятор — не окрема вправа, яку відкривають раз і забувають. Він у кожному пробному іспиті на платформі. Ти стартуєш іспит, таймер іде разом із ним, а бланк увесь час поруч із питаннями. Усе йде в той самий годинник — як у залі Messe Wien.",
+    "Симулятор, не окрема вправа, яку відкривають раз і забувають. Він у кожному пробному іспиті на платформі. Ти стартуєш іспит, таймер іде разом із ним, а бланк увесь час поруч із питаннями. Усе йде в той самий годинник, як у залі Messe Wien.",
   "You fill in your last name, first name, signature and exam ID first, just like the real document, and then you work the grid. Marks can be placed the moment you finish a question, or in blocks of ten, or all at once at the end. You can change any mark at any time, jump back to question 7 after you already filled question 31, and clean up a row you rushed. Nothing is locked until you submit.":
-    "Спочатку вписуєш прізвище, ім’я, підпис і ID іспиту — як у реальному документі — і тоді працюєш із сіткою. Позначки можна ставити одразу після питання, десятками або всі наприкінці. Можна змінити будь-яку позначку, повернутися до питання 7 після 31-го і виправити поспішний рядок. Нічого не блокується, доки ти не надішлеш.",
+    "Спочатку вписуєш прізвище, ім’я, підпис і ID іспиту, як у реальному документі, і тоді працюєш із сіткою. Позначки можна ставити одразу після питання, десятками або всі наприкінці. Можна змінити будь-яку позначку, повернутися до питання 7 після 31-го і виправити поспішний рядок. Нічого не блокується, доки ти не надішлеш.",
   "The same header fields: last name, first name, signature, exam ID.":
     "Ті самі поля заголовка: прізвище, ім’я, підпис, ID іспиту.",
   "The same grid and the same row logic as the printed optical sheet.":
     "Та сама сітка й логіка рядків, як у друкованому оптичному бланку.",
   "Every mark editable until you submit, so a rushed row can be cleaned up.":
-    "Кожна позначка редагується до надсилання — щоб виправити поспішний рядок.",
+    "Кожна позначка редагується до надсилання, щоб виправити поспішний рядок.",
   "One shared timer for solving and transferring, never two separate clocks.":
-    "Один спільний таймер для розв’язання і перенесення — ніколи два окремі годинники.",
+    "Один спільний таймер для розв’язання і перенесення, ніколи два окремі годинники.",
   "That freedom is deliberate. There is no single correct way to transfer answers, and we are not going to teach you one. What actually matters is that you find the method that fits how you think, and then repeat it until it costs you no attention at all. Some students transfer after every block because it calms them down. Others hold everything on the question paper and give themselves a firm eight minute window at the end. Both work. Both fail if you try them for the first time on exam day.":
     "Ця свобода навмисна. Немає єдиного правильного способу переносити відповіді, і ми не нав’язуємо один. Важливо знайти метод під своє мислення і повторювати, доки він не вимагатиме уваги. Хтось переносить після кожного блоку, бо так спокійніше. Інші тримають усе на аркуші питань і дають собі тверді вісім хвилин наприкінці. Обидва працюють. Обидва провалюються, якщо спробувати вперше в день іспиту.",
 
@@ -151,20 +151,20 @@ export const featuresExtraUk: Record<string, string> = {
   "This is the fastest and most reliable rhythm we have seen in practice. When you close a subject and immediately move its answers over, your head stays inside one subject at a time instead of jumping back and forth between economics rows and math rows. The block is fresh, the numbering is still in your short term memory, and you are checking one clean range of rows instead of hunting through the whole grid.":
     "Це найшвидший і найнадійніший ритм, який ми бачили на практиці. Коли закриваєш предмет і одразу переносиш відповіді, голова лишається в одному предметі, а не стрибає між рядками економіки й математики. Блок свіжий, нумерація ще в короткочасній пам’яті, і ти перевіряєш один чистий діапазон рядків, а не всю сітку.",
   "It also leaves you room to change your mind. You still have the rest of the exam ahead of you, so if something clicks later, you can come back and fix a mark calmly instead of doing it in the final minute with a queue already forming at the front of the hall.":
-    "Це також лишає простір змінити думку. Попереду ще решта іспиту — якщо потім щось клацне, можна спокійно повернутися й виправити позначку, а не в останню хвилину, коли вже черга біля залу.",
+    "Це також лишає простір змінити думку. Попереду ще решта іспиту, якщо потім щось клацне, можна спокійно повернутися й виправити позначку, а не в останню хвилину, коли вже черга біля залу.",
 
   "The room where the sheet is filled in: single desks, one shared clock, no questions allowed. Everyone here knows the material. The last few minutes decide the rest.":
     "Кімната, де заповнюють бланк: окремі парти, один спільний годинник, питань не дозволяють. Тут усі знають матеріал. Останні хвилини вирішують решту.",
 
   "The real goal: budgeting the time": "Справжня мета: бюджет часу",
   "The main job of this feature is to train you to set aside time for the transfer and to protect it. Students lose seats because they treat those minutes as free. They are not free. They cost you somewhere between five and ten minutes depending on your method, and if that cost is not already in your plan, it gets taken out of your last questions.":
-    "Головне завдання цієї функції — навчити відкладати час на перенесення і захищати його. Студенти втрачають місця, бо вважають ці хвилини «безкоштовними». Вони такими не є. Залежно від методу це п’ять–десять хвилин — і якщо цього немає в плані, їх забирають з останніх питань.",
+    "Головне завдання цієї функції, навчити відкладати час на перенесення і захищати його. Студенти втрачають місця, бо вважають ці хвилини «безкоштовними». Вони такими не є. Залежно від методу це п’ять–десять хвилин, і якщо цього немає в плані, їх забирають з останніх питань.",
   "After a few timed runs you will know your own number. You will feel when it is time to stop solving and start transferring, without looking at the clock and without the small spike of panic that ruins the rows. That instinct is the whole point, and it is impossible to build by reading about it.":
-    "Після кількох забігів на час ти знатимеш своє число. Відчуватимеш, коли час припинити розв’язувати і почати переносити — без погляду на годинник і без паніки, що псує рядки. Цей інстинкт і є сенсом, і його не збудуєш читанням.",
+    "Після кількох забігів на час ти знатимеш своє число. Відчуватимеш, коли час припинити розв’язувати і почати переносити, без погляду на годинник і без паніки, що псує рядки. Цей інстинкт і є сенсом, і його не збудуєш читанням.",
   '"The sheet should be the boring part of your exam. If it is the stressful part, you simply have not done it enough times yet."':
-    "«Бланк має бути нудною частиною іспиту. Якщо він стресова — ти просто ще недостатньо разів це робив.»",
+    "«Бланк має бути нудною частиною іспиту. Якщо він стресова, ти просто ще недостатньо разів це робив.»",
   "Do it enough times here and exam day stops being your first attempt.":
-    "Зроби це тут достатньо разів — і день іспиту перестане бути першою спробою.",
+    "Зроби це тут достатньо разів: і день іспиту перестане бути першою спробою.",
   "Practice the transfer before it costs you a seat.":
     "Практикуй перенесення, перш ніж воно коштуватиме тобі місце.",
   "Included with the Full BBE Course · Available inside every mock exam":
@@ -176,7 +176,7 @@ export const featuresExtraUk: Record<string, string> = {
     "Ті самі поля, та сама сітка, той самий процес перенесення, що й на реальному оптичному бланку.",
   "Timed inside mock exams": "На час у пробних іспитах",
   "The clock keeps running while you transfer, so the minutes you spend here are minutes you have budgeted for real.":
-    "Годинник іде, поки ти переносиш — хвилини тут це хвилини, які ти закладаєш і в реальності.",
+    "Годинник іде, поки ти переносиш: хвилини тут це хвилини, які ти закладаєш і в реальності.",
   "Your own rhythm": "Твій власний ритм",
   "Fill it in block by block, question by question, or all at the end. The simulator lets you move answers around whenever you want.":
     "Заповнюй блоками, питання за питанням або все наприкінці. Симулятор дозволяє пересувати відповіді будь-коли.",

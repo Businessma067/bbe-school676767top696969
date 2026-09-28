@@ -49,7 +49,7 @@ export function ExamAnswerSheet({
             : "Vienna University of Economics and Business"}
         </div>
         <div className="text-[10px] font-semibold text-gray-700">
-          {wiso ? "WiSo Aufnahmeprüfung — Antwortbogen" : "BBE Entrance Exam — Answer Sheet"}
+          {wiso ? "WiSo Aufnahmeprüfung: Antwortbogen" : "BBE Entrance Exam: Answer Sheet"}
         </div>
         <p className="mt-0.5 text-[9px] text-gray-500">
           {wiso

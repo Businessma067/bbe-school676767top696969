@@ -159,7 +159,7 @@ function MockExamsPage() {
                 )}
                 {inProgress[exam.id] && (
                   <p className="mt-2 text-xs font-semibold text-blue-600 dark:text-blue-400">
-                    In progress — you can resume where you left off
+                    In progress: you can resume where you left off
                   </p>
                 )}
                 {inProgress[exam.id] ? (

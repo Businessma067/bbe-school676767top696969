@@ -178,7 +178,7 @@ export function BbeVsWisoPage() {
   return (
     <BbeExamShell
       h1="BBE vs WISO at WU Vienna: Entrance Exam Comparison Guide"
-      lead="Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation — so you can decide which path fits you."
+      lead="Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation, so you can decide which path fits you."
       heroActions={
         <>
           <BbePrimaryButton to="/bbe">Enter BBE preparation</BbePrimaryButton>
@@ -344,7 +344,7 @@ export function BbeVsWisoPage() {
               </div>
               <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-foreground">
                 <li>
-                  Same broad pillars — economics/business basics, language, mathematics — but the
+                  Same broad pillars, economics/business basics, language, mathematics, but the
                   language tasks are in German, not English.
                 </li>
                 <li>
@@ -356,7 +356,7 @@ export function BbeVsWisoPage() {
                   cost points even if your math is strong.
                 </li>
                 <li>
-                  Because there are far more places, the ranking pool is larger and less scarce —
+                  Because there are far more places, the ranking pool is larger and less scarce,
                   but it is still a competitive WU intake.
                 </li>
               </ul>
@@ -426,7 +426,7 @@ export function BbeVsWisoPage() {
         <BbeSection id="preparation-overlap" title="Preparation differences that actually matter">
           <p>
             Mathematics and basic economics preparation can transfer between the two exams. What does
-            not transfer is the language section — and for BBE, the multi-statement scoring behaviour
+            not transfer is the language section: and for BBE, the multi-statement scoring behaviour
             is another skill you must train deliberately.
           </p>
           <div className="overflow-x-auto rounded-2xl border border-border">
@@ -529,7 +529,7 @@ export function BbeVsWisoPage() {
               </dt>
               <dd className="mt-1 text-foreground">
                 BBE is English-taught and attracts an international cohort, but eligibility depends on
-                WU’s official requirements — not on nationality alone.
+                WU’s official requirements: not on nationality alone.
               </dd>
             </div>
           </dl>
@@ -545,7 +545,7 @@ export function BbeVsWisoPage() {
             Next steps if you choose BBE
           </h2>
           <p className="mt-4 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
-            If BBE is your target — or your parallel application — start with format literacy, then
+            If BBE is your target, or your parallel application, start with format literacy, then
             measure your baseline under exam-style statements. The free demo course shows how BBE
             School lessons and explanations feel; diagnostic mocks show where your score leaks first.
           </p>
@@ -588,7 +588,7 @@ function ExamStructureCharts() {
           BBE approximate score weighting
         </p>
         <p className="mt-2 text-sm leading-relaxed text-foreground/80">
-          From the most recent cycle’s section point totals — not the share of question counts.
+          From the most recent cycle’s section point totals, not the share of question counts.
         </p>
         <div className="mt-5 flex h-12 overflow-hidden rounded-xl">
           {segments.map((seg) => (
@@ -706,7 +706,7 @@ function PlacesAndSelectivityVisual() {
       <div className="rounded-2xl border border-amber-200/80 bg-amber-50/70 px-5 py-4 dark:border-amber-800/40 dark:bg-amber-950/25">
         <p className="text-[1.02rem] leading-relaxed text-foreground">
           Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them
-          across far more places — so each WISO seat is less contested than each BBE seat.
+          across far more places: so each WISO seat is less contested than each BBE seat.
         </p>
       </div>
     </div>

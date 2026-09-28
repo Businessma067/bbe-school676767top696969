@@ -20,7 +20,7 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
         content:
           "WiSo-Wirtschaftsaufgaben zur Lernunterlage Wirtschaft verstehen (Aufnahmeprüfung 2026): Wahr/Falsch nach Kapiteln, mit Lehrererklärungen.",
       },
-      { property: "og:title", content: "Wirtschaft verstehen — Full WiSo Course" },
+      { property: "og:title", content: "Wirtschaft verstehen: Full WiSo Course" },
       {
         property: "og:description",
         content:

@@ -248,7 +248,7 @@ export async function trySyncAllUsers(db?: Db, force = false): Promise<SyncResul
         error = rpc.error;
         source = synced > 0 ? "admin_rpc" : "skipped";
       } else {
-        error = "No Supabase client — not logged in as admin?";
+        error = "No Supabase client: not logged in as admin?";
       }
 
       if (synced > 0) await markSupabaseSynced();

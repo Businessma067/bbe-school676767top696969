@@ -1047,7 +1047,7 @@ export function MathTasksPage({
           {activeChapter !== null && activeList.length === 0 && (
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
-                ? "Nothing to revise — all attempted tasks are clean. Keep going."
+                ? "Nothing to revise: all attempted tasks are clean. Keep going."
                 : typeof activeChapter === "number" &&
                     (loadingChapters[activeChapter] || !banksReady)
                   ? "Loading chapter tasks…"
@@ -2323,7 +2323,7 @@ const MathTaskCard = memo(function MathTaskCard({
         <div className="flex flex-wrap items-center gap-2">
           {reviewOnly ? (
             <span className="text-xs font-semibold text-muted-foreground">
-              Review only — the countdown ran out on this task.
+              Review only: the countdown ran out on this task.
             </span>
           ) : !checked ? (
             <button
@@ -2389,7 +2389,7 @@ function PlaceholderTaskCard({
         <p className="text-sm font-semibold text-foreground">Task content coming soon</p>
         <p className="mx-auto mt-2 max-w-md text-xs leading-relaxed text-muted-foreground">
           Practice statements for this mathematics topic will be added here. The chapter
-          structure is ready — check back for new tasks.
+          structure is ready: check back for new tasks.
         </p>
       </div>
     </article>

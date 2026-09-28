@@ -608,7 +608,7 @@ function EconomicsTasks() {
           {cases !== null && activeChapter !== null && activeList.length === 0 && (
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
-                ? "Nothing to revise — all attempted cases are clean. Keep going."
+                ? "Nothing to revise: all attempted cases are clean. Keep going."
                 : "No cases here yet. Add some in the admin panel."}
             </div>
           )}
@@ -800,7 +800,7 @@ function CustomResetModal({
                     className="flex flex-1 items-center gap-2 text-left"
                   >
                     <ChevronDown className={cn("h-4 w-4 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
-                    <span className="text-sm font-bold">Ch. {ch.num} — {ch.title}</span>
+                    <span className="text-sm font-bold">Ch. {ch.num}, {ch.title}</span>
                     <span className="text-[10px] font-semibold text-muted-foreground">({attemptedList.length} attempted)</span>
                   </button>
                   <button
@@ -1030,7 +1030,7 @@ function CaseCard({
         <div className="flex flex-wrap items-center gap-2">
           {reviewOnly ? (
             <span className="text-xs font-semibold text-muted-foreground">
-              Review only — the countdown ran out on this task.
+              Review only: the countdown ran out on this task.
             </span>
           ) : !checked ? (
             <button

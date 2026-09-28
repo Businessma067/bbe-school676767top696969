@@ -63,7 +63,7 @@ const DEFAULT_SUBTITLE =
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.";
 
 const WISO_SUBTITLE =
-  "Everything you need for the WiSo Aufnahmeprüfung — Wirtschaft verstehen, Mathematik, and German reading — built around the real format and Teilpunktesystem.";
+  "Everything you need for the WiSo Aufnahmeprüfung, Wirtschaft verstehen, Mathematik, and German reading, built around the real format and Teilpunktesystem.";
 
 export function WhyChooseUsSection({
   track = "shared",
@@ -233,7 +233,7 @@ function StudyToolsCycle({
             <span className="stc-tutor-choice stc-tutor-false">{de ? "Falsch" : "False"}</span>
           </div>
           <p className="stc-tutor-msg stc-tutor-ok">
-            {de ? "Stimmt — weiter so." : "Correct — keep going."}
+            {de ? "Stimmt: weiter so." : "Correct: keep going."}
           </p>
         </div>
       </div>

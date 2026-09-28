@@ -42,7 +42,7 @@ export function DemoAnswerSheet({ caption }: DemoProps) {
       );
       await api.wait(380);
     }
-    setHint("Blank ≠ wrong — blanks neither add nor subtract");
+    setHint("Blank ≠ wrong: blanks neither add nor subtract");
     await api.wait(700);
 
     await api.moveTo('[data-d="2A"]');

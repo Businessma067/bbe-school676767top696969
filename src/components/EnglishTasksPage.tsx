@@ -905,7 +905,7 @@ export function EnglishTasksPage({
             {activeChapter !== null && activeList.length === 0 && (
               <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
                 {activeChapter === "revision"
-                  ? "Nothing to revise — all attempted tasks are clean. Keep going."
+                  ? "Nothing to revise: all attempted tasks are clean. Keep going."
                   : "No tasks here yet. Content will be added soon."}
               </div>
             )}
@@ -1496,7 +1496,7 @@ function CaseCard({
         <div className="flex flex-wrap items-center gap-2">
           {reviewOnly ? (
             <span className="text-xs font-semibold text-muted-foreground">
-              Review only — the countdown ran out on this task.
+              Review only: the countdown ran out on this task.
             </span>
           ) : !checked ? (
             <button

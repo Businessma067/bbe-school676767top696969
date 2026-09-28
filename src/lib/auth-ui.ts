@@ -32,7 +32,7 @@ export function friendlyAuthError(error: unknown, fallback = "Something went wro
     lower.includes("invalid login credentials") ||
     lower.includes("invalid credentials")
   ) {
-    return "Неверный email или пароль. Если аккаунт новый — сначала подтвердите email по ссылке из письма.";
+    return "Неверный email или пароль. Если аккаунт новый, сначала подтвердите email по ссылке из письма.";
   }
   if (lower.includes("already registered") || lower.includes("user already")) {
     return "Этот email уже зарегистрирован. Войдите или восстановите пароль.";

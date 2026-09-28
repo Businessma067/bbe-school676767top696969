@@ -116,8 +116,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Mock exams": "Probeprüfungen",
     "See why each statement is true or false":
       "Sieh, warum jede Aussage wahr oder falsch ist",
-    "You work economics cases in the real exam format — 680+ questions in the Full Course. After you submit, tap Explanation beside any statement and read why it holds or fails, without leaving the solution.":
-      "Du bearbeitest Wirtschafts-Fälle im echten Prüfungsformat — 680+ Fragen im Vollkurs. Nach dem Einreichen tippst du bei jeder Aussage auf Erklärung und liest, warum sie hält oder fällt — ohne die Lösung zu verlassen.",
+    "You work economics cases in the real exam format, 680+ questions in the Full Course. After you submit, tap Explanation beside any statement and read why it holds or fails, without leaving the solution.":
+      "Du bearbeitest Wirtschafts-Fälle im echten Prüfungsformat, 680+ Fragen im Vollkurs. Nach dem Einreichen tippst du bei jeder Aussage auf Erklärung und liest, warum sie hält oder fällt, ohne die Lösung zu verlassen.",
     "Explore Economics": "Wirtschaft entdecken",
     "Practice under the same time pressure": "Übe unter demselben Zeitdruck",
     "Open a math task from the 2,800-question bank, turn on timed mode, and use the exam calculator. When you finish, walk through the full solution step by step until the method sticks.":
@@ -141,8 +141,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Explore German": "Deutsch entdecken",
     "Full-length exam simulations": "Vollständige Prüfungssimulationen",
     "Build a mock around your weak spots": "Baue eine Probeprüfung um deine Schwachstellen",
-    "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
-      "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs — kein Zufallspapier.",
+    "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course, not a random paper.":
+      "Wähle die Kapitel und Unterthemen, bei denen du schwächelst, stelle Mix und Fragenanzahl ein und starte. Du bekommst eine timed Probeprüfung aus dem Vollkurs, kein Zufallspapier.",
     "Open Mock Builder": "Prüfungs-Builder öffnen",
     "Finish the paper and read the result": "Beende die Prüfung und lies das Ergebnis",
     "Answer one English question, one math question, and one economics question on the 34-question mock. After you submit, the results chart shows how long each of the 34 questions took. Open Tasks and read the explanations.":
@@ -163,10 +163,10 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Geh Wirtschaft-verstehen-Begriffe, Matheformeln und Deutsch-Lesewortschatz durch. Drehe jede Karte, markiere, wie gut du sie kannst, und mach weiter, bis der Abruf automatisch sitzt.",
     "Open Flashcards": "Karteikarten öffnen",
     "Match each term to its meaning": "Ordne jedem Begriff seine Bedeutung zu",
-    "Pair terms with definitions on a timed board. Same decks as the flashcards — just a different way to practice.":
-      "Paare Begriffe mit Definitionen auf einem Timed-Board. Dieselben Decks wie die Karteikarten — nur eine andere Übungsform.",
-    "Pair terms with definitions on a timed board. Same WiSo decks as the flashcards — just a different way to practice.":
-      "Paare Begriffe mit Definitionen auf einem Timed-Board. Dieselben WiSo-Decks wie die Karteikarten — nur eine andere Übungsform.",
+    "Pair terms with definitions on a timed board. Same decks as the flashcards, just a different way to practice.":
+      "Paare Begriffe mit Definitionen auf einem Timed-Board. Dieselben Decks wie die Karteikarten, nur eine andere Übungsform.",
+    "Pair terms with definitions on a timed board. Same WiSo decks as the flashcards, just a different way to practice.":
+      "Paare Begriffe mit Definitionen auf einem Timed-Board. Dieselben WiSo-Decks wie die Karteikarten, nur eine andere Übungsform.",
     "Open Matching": "Matching öffnen",
     "Quiz yourself on theory": "Quizze dich zur Theorie",
     "Each run gives you a fresh set of theory questions. Answer, get instant feedback, and keep going until the wording feels familiar.":
@@ -343,8 +343,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Mock exams": "Пробні іспити",
     "See why each statement is true or false":
       "Побач, чому кожне твердження правильне чи хибне",
-    "You work economics cases in the real exam format — 680+ questions in the Full Course. After you submit, tap Explanation beside any statement and read why it holds or fails, without leaving the solution.":
-      "Ти розбираєш кейси з економіки в реальному форматі іспиту — 680+ питань у повному курсі. Після здачі натисни Пояснення біля будь-якого твердження й прочитай, чому воно тримається чи падає — не виходячи з розв’язку.",
+    "You work economics cases in the real exam format, 680+ questions in the Full Course. After you submit, tap Explanation beside any statement and read why it holds or fails, without leaving the solution.":
+      "Ти розбираєш кейси з економіки в реальному форматі іспиту, 680+ питань у повному курсі. Після здачі натисни Пояснення біля будь-якого твердження й прочитай, чому воно тримається чи падає, не виходячи з розв’язку.",
     "Explore Economics": "До економіки",
     "Practice under the same time pressure": "Тренуйся під тим самим часовим тиском",
     "Open a math task from the 2,800-question bank, turn on timed mode, and use the exam calculator. When you finish, walk through the full solution step by step until the method sticks.":
@@ -368,8 +368,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Explore German": "До німецької",
     "Full-length exam simulations": "Повноформатні симуляції іспиту",
     "Build a mock around your weak spots": "Збери пробний іспит під свої слабкі місця",
-    "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course — not a random paper.":
-      "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу — не випадковий варіант.",
+    "Choose the chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course, not a random paper.":
+      "Обери розділи й підтеми, де ти слабший, задай мікс і кількість питань і стартуй. Отримаєш timed пробний іспит із повного курсу, не випадковий варіант.",
     "Open Mock Builder": "Відкрити конструктор іспитів",
     "Finish the paper and read the result": "Закінчи пробний іспит і прочитай результат",
     "Answer one English question, one math question, and one economics question on the 34-question mock. After you submit, the results chart shows how long each of the 34 questions took. Open Tasks and read the explanations.":
@@ -390,10 +390,10 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Пройди терміни Wirtschaft verstehen, формули з математики та лексику німецького читання. Перевертай кожну картку, познач, наскільки добре її знаєш, і йди далі, доки пригадування не стане автоматичним.",
     "Open Flashcards": "Відкрити картки",
     "Match each term to its meaning": "Зістав кожен термін із значенням",
-    "Pair terms with definitions on a timed board. Same decks as the flashcards — just a different way to practice.":
-      "Зістав терміни з визначеннями на timed-дошці. Ті самі колоди, що й у картках — просто інший формат практики.",
-    "Pair terms with definitions on a timed board. Same WiSo decks as the flashcards — just a different way to practice.":
-      "Зістав терміни з визначеннями на timed-дошці. Ті самі колоди WiSo, що й у картках — просто інший формат практики.",
+    "Pair terms with definitions on a timed board. Same decks as the flashcards, just a different way to practice.":
+      "Зістав терміни з визначеннями на timed-дошці. Ті самі колоди, що й у картках, просто інший формат практики.",
+    "Pair terms with definitions on a timed board. Same WiSo decks as the flashcards, just a different way to practice.":
+      "Зістав терміни з визначеннями на timed-дошці. Ті самі колоди WiSo, що й у картках, просто інший формат практики.",
     "Open Matching": "Відкрити Matching",
     "Quiz yourself on theory": "Перевір себе з теорії",
     "Each run gives you a fresh set of theory questions. Answer, get instant feedback, and keep going until the wording feels familiar.":

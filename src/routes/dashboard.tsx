@@ -882,7 +882,7 @@ function GamesTab({ hasWisoFull, hasBbePaid }: { hasWisoFull: boolean; hasBbePai
             ? WISO_DASHBOARD_STUDY.introBoth
             : showWiso
               ? WISO_DASHBOARD_STUDY.introWisoOnly
-              : "Practice tools for your BBE course — Economics, Math, and English."}
+              : "Practice tools for your BBE course: Economics, Math, and English."}
         </p>
       </div>
 

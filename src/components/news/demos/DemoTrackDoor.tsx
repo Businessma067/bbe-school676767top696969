@@ -56,7 +56,7 @@ export function DemoTrackDoor({ caption }: DemoProps) {
             Which track are you preparing for?
           </h3>
           <p className="mx-auto mt-1 max-w-sm text-center text-sm text-muted-foreground">
-            Two clear doors — practice stays on the path you choose.
+            Two clear doors: practice stays on the path you choose.
           </p>
 
           <div className={cn("mt-5 grid gap-3", entered ? "grid-cols-1" : "grid-cols-2")}>

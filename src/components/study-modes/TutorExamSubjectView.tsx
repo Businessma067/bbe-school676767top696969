@@ -554,7 +554,7 @@ function ResultsPanel({
         ? "Strong theory pass. Want another random set?"
         : pct >= 50
           ? "Solid mid-range. Shuffle again and keep drilling."
-          : "Rough round — another random exam will hit different cards.";
+          : "Rough round: another random exam will hit different cards.";
 
   return (
     <div className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">

@@ -205,7 +205,7 @@ export const copyVoiceExtraUk: Record<string, string> = {
   "Build your own timed sets by topic and difficulty so you can close weak spots without spending hours on material you already know.":
     "Збирай власні timed-набори за темою й складністю, щоб закривати слабкі місця без годин на матеріал, який ти вже знаєш.",
   "Quick drills between full practice sessions until recall feels automatic.":
-    "Між повними сесіями практики — короткі drills, доки пригадування не стане автоматичним.",
+    "Між повними сесіями практики: короткі drills, доки пригадування не стане автоматичним.",
   "Pair each term with its meaning on a timed board using the same decks in a different drill.":
     "Зістав кожен термін із його значенням на timed-дошці з тими самими колодами в іншому форматі тренування.",
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":

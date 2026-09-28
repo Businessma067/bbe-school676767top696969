@@ -24,7 +24,7 @@ export const Route = createFileRoute("/wiso/products/full-course-subjects")({
         content:
           "Öffne WiSo Full Course Fächer: Wirtschaft verstehen, Mathematik und Deutsches Sprachverständnis für die WU Wien Aufnahmeprüfung.",
       },
-      { property: "og:title", content: "Full WiSo Course — Fächer wählen" },
+      { property: "og:title", content: "Full WiSo Course: Fächer wählen" },
       {
         property: "og:description",
         content:

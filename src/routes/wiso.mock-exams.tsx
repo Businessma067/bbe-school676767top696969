@@ -166,7 +166,7 @@ export function WisoMockExamsPage() {
                   </p>
                   <h3 className="mt-1 font-display text-lg font-semibold">WiSo Demo-Probeprüfung</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    33 Fragen · 2 Stunden · volle Review — ohne Kurskauf.
+                    33 Fragen · 2 Stunden · volle Review: ohne Kurskauf.
                   </p>
                 </div>
                 <span
@@ -205,7 +205,7 @@ export function WisoMockExamsPage() {
                   )}
                   {inProgress[exam.id] && (
                     <p className="mt-2 text-xs font-semibold text-blue-600 dark:text-blue-400">
-                      In Bearbeitung — du kannst fortsetzen
+                      In Bearbeitung: du kannst fortsetzen
                     </p>
                   )}
                   {inProgress[exam.id] ? (

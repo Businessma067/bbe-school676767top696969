@@ -725,8 +725,8 @@ export function FlashcardSubjectView({
                 tabIndex={0}
                 aria-label={
                   flipped
-                    ? ui?.ariaFlipBack ?? "Flashcard explanation — tap to flip"
-                    : ui?.ariaFlipFront ?? "Flashcard term — tap to flip"
+                    ? ui?.ariaFlipBack ?? "Flashcard explanation: tap to flip"
+                    : ui?.ariaFlipFront ?? "Flashcard term: tap to flip"
                 }
               >
                 <div

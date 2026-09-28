@@ -13,8 +13,8 @@ export const wuViennaExtraDe: Record<string, string> = {
     "WU Wien (Wirtschaftsuniversität Wien): Rankings, Studiengänge & Campusleben",
   "Independent WU Vienna guide for applicants: FT and QS rankings, bachelor and master courses, Campus WU life at Welthandelsplatz, and how admission links to the BBE entrance exam.":
     "Unabhängiger WU-Wien-Leitfaden für Bewerber:innen: FT- und QS-Rankings, Bachelor- und Masterstudiengänge, Campusleben am Welthandelsplatz und wie die Zulassung mit der BBE-Aufnahmeprüfung zusammenhängt.",
-  "WU Vienna is Austria’s leading university for business and economics. This independent guide covers recent rankings, the bachelor and master programmes on offer, and daily life on Campus WU — with a clear path into the English-taught BBE entrance exam.":
-    "Die WU Wien ist Österreichs führende Universität für Wirtschaft und Ökonomie. Dieser unabhängige Leitfaden beleuchtet aktuelle Rankings, Bachelor- und Masterprogramme sowie den Alltag am Campus WU — mit klarem Weg zur englischsprachigen BBE-Aufnahmeprüfung.",
+  "WU Vienna is Austria’s leading university for business and economics. This independent guide covers recent rankings, the bachelor and master programmes on offer, and daily life on Campus WU, with a clear path into the English-taught BBE entrance exam.":
+    "Die WU Wien ist Österreichs führende Universität für Wirtschaft und Ökonomie. Dieser unabhängige Leitfaden beleuchtet aktuelle Rankings, Bachelor- und Masterprogramme sowie den Alltag am Campus WU, mit klarem Weg zur englischsprachigen BBE-Aufnahmeprüfung.",
 
   "BBE entrance exam guide": "BBE-Aufnahmeprüfungsleitfaden",
   "Start free demo prep": "Kostenlose Demo-Vorbereitung starten",
@@ -27,10 +27,10 @@ export const wuViennaExtraDe: Record<string, string> = {
   FAQ: "FAQ",
   "What is WU Vienna?": "Was ist die WU Wien?",
 
-  "WU Vienna (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) concentrates teaching and research in business, economics, and neighbouring social sciences. About 21,000 students from more than 100 countries study on a single modern campus in Vienna’s second district — next to Prater Park and a short ride from the city centre.":
-    "Die WU Wien (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) bündelt Lehre und Forschung in Wirtschaft, Ökonomie und benachbarten Sozialwissenschaften. Rund 21.000 Studierende aus mehr als 100 Ländern lernen auf einem modernen Campus im 2. Bezirk — neben dem Prater und nah am Zentrum.",
-  "Applicants often arrive here because of the English-taught Bachelor in Business and Economics (BBE). This page orients you on the university first — rankings, courses, and campus life — then links into the":
-    "Viele Bewerber:innen kommen wegen des englischsprachigen Bachelors Business and Economics (BBE). Diese Seite orientiert dich zuerst zur Universität — Rankings, Studiengänge und Campusleben — und führt dann zum",
+  "WU Vienna (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) concentrates teaching and research in business, economics, and neighbouring social sciences. About 21,000 students from more than 100 countries study on a single modern campus in Vienna’s second district, next to Prater Park and a short ride from the city centre.":
+    "Die WU Wien (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) bündelt Lehre und Forschung in Wirtschaft, Ökonomie und benachbarten Sozialwissenschaften. Rund 21.000 Studierende aus mehr als 100 Ländern lernen auf einem modernen Campus im 2. Bezirk, neben dem Prater und nah am Zentrum.",
+  "Applicants often arrive here because of the English-taught Bachelor in Business and Economics (BBE). This page orients you on the university first, rankings, courses, and campus life, then links into the":
+    "Viele Bewerber:innen kommen wegen des englischsprachigen Bachelors Business and Economics (BBE). Diese Seite orientiert dich zuerst zur Universität, Rankings, Studiengänge und Campusleben, und führt dann zum",
   "BBE vs WISO comparison": "BBE-vs-WISO-Vergleich",
   "admission overview": "Zulassungsüberblick",
 
@@ -74,12 +74,12 @@ export const wuViennaExtraDe: Record<string, string> = {
   "Handelsblatt/WiWo Business Administration 2024": "Handelsblatt/WiWo Betriebswirtschaft 2024",
   "#5 in the DACH region": "#5 in der DACH-Region",
 
-  "Sources: WU’s published ranking pages and the Financial Times / QS tables for the cycles named above. Always read methodology notes — a master’s rank is not the same claim as a bachelor admission rate.":
-    "Quellen: die veröffentlichten Ranking-Seiten der WU sowie die FT-/QS-Tabellen der genannten Zyklen. Methodik immer mitlesen — ein Master-Rang ist nicht dasselbe wie eine Bachelor-Zulassungsquote.",
+  "Sources: WU’s published ranking pages and the Financial Times / QS tables for the cycles named above. Always read methodology notes, a master’s rank is not the same claim as a bachelor admission rate.":
+    "Quellen: die veröffentlichten Ranking-Seiten der WU sowie die FT-/QS-Tabellen der genannten Zyklen. Methodik immer mitlesen, ein Master-Rang ist nicht dasselbe wie eine Bachelor-Zulassungsquote.",
 
   "WU Vienna courses and degree programmes": "WU-Wien-Studiengänge und Programme",
-  "WU’s portfolio is deliberately focused: three bachelor programmes, sixteen master’s programmes, five doctoral/PhD tracks, and MBA offerings through the Executive Academy. For most readers of this hub, the decision starts with the bachelor language track — English BBE versus German WISO or Business Law.":
-    "Das Angebot der WU ist bewusst fokussiert: drei Bachelorprogramme, sechzehn Masterprogramme, fünf Doktorats-/PhD-Tracks und MBAs über die Executive Academy. Für die meisten Leser:innen dieses Hubs beginnt die Entscheidung beim Bachelor-Sprachtrack — englisches BBE versus deutsches WISO oder Wirtschaftsrecht.",
+  "WU’s portfolio is deliberately focused: three bachelor programmes, sixteen master’s programmes, five doctoral/PhD tracks, and MBA offerings through the Executive Academy. For most readers of this hub, the decision starts with the bachelor language track, English BBE versus German WISO or Business Law.":
+    "Das Angebot der WU ist bewusst fokussiert: drei Bachelorprogramme, sechzehn Masterprogramme, fünf Doktorats-/PhD-Tracks und MBAs über die Executive Academy. Für die meisten Leser:innen dieses Hubs beginnt die Entscheidung beim Bachelor-Sprachtrack, englisches BBE versus deutsches WISO oder Wirtschaftsrecht.",
 
   "Bachelor’s programmes": "Bachelorprogramme",
   "Business and Economics (BBE)": "Business and Economics (BBE)",
@@ -119,8 +119,8 @@ export const wuViennaExtraDe: Record<string, string> = {
     "Deutschsprachige Masteroptionen umfassen Finance and Accounting, Management, Wirtschaftsrecht, Wirtschaftspädagogik und verwandte Tracks. Die aktuelle Liste auf den Programmseiten der WU prüfen.",
 
   "Campus life at Campus WU": "Campusleben am Campus WU",
-  "Campus life is one of WU’s strongest selling points. Instead of hopping between downtown buildings, students spend most of the week on one award-winning campus with plazas, lawns, reflecting pools, cafés, and the Library & Learning Center as a daily hub — with Prater Park for a reset between lectures.":
-    "Das Campusleben ist eines der stärksten Argumente der WU. Statt zwischen Innenstadtgebäuden zu pendeln, verbringen Studierende die Woche auf einem preisgekrönten Campus mit Plätzen, Rasenflächen, Wasserflächen, Cafés und dem Library & Learning Center als täglichem Hub — plus Prater zum Durchatmen zwischen Vorlesungen.",
+  "Campus life is one of WU’s strongest selling points. Instead of hopping between downtown buildings, students spend most of the week on one award-winning campus with plazas, lawns, reflecting pools, cafés, and the Library & Learning Center as a daily hub, with Prater Park for a reset between lectures.":
+    "Das Campusleben ist eines der stärksten Argumente der WU. Statt zwischen Innenstadtgebäuden zu pendeln, verbringen Studierende die Woche auf einem preisgekrönten Campus mit Plätzen, Rasenflächen, Wasserflächen, Cafés und dem Library & Learning Center als täglichem Hub, plus Prater zum Durchatmen zwischen Vorlesungen.",
 
   "Campus address": "Campusadresse",
   "Welthandelsplatz 1, 1020 Vienna": "Welthandelsplatz 1, 1020 Wien",
@@ -134,8 +134,8 @@ export const wuViennaExtraDe: Record<string, string> = {
 
   "Library and Learning Center by Zaha Hadid on Campus WU Vienna":
     "Library and Learning Center von Zaha Hadid am Campus WU Wien",
-  "Library & Learning Center on Campus WU — the academic heart of the campus. Photo: Wikimedia Commons (CC BY-SA).":
-    "Library & Learning Center am Campus WU — das akademische Herz des Campus. Foto: Wikimedia Commons (CC BY-SA).",
+  "Library & Learning Center on Campus WU, the academic heart of the campus. Photo: Wikimedia Commons (CC BY-SA).":
+    "Library & Learning Center am Campus WU, das akademische Herz des Campus. Foto: Wikimedia Commons (CC BY-SA).",
   "Interior atrium and study spaces inside the WU Vienna Library and Learning Center":
     "Innenatrium und Lernräume im Library and Learning Center der WU Wien",
   "Inside the Library & Learning Center: quiet floors, group spaces, and roughly 1,500 workplaces in the Central Library. Photo: Wikimedia Commons (CC BY-SA).":
@@ -145,20 +145,20 @@ export const wuViennaExtraDe: Record<string, string> = {
   "From silent library floors to group rooms and outdoor seating, Campus WU is built for long study days without leaving the site.":
     "Von stillen Bibliotheksgeschossen über Gruppenräume bis zu Sitzplätzen im Freien: Der Campus WU ist für lange Lerntage ohne Ortswechsel gebaut.",
   "Student community": "Studierendengemeinschaft",
-  "Clubs, career events, and an international cohort make networking feel part of the week — especially on English-taught tracks like BBE.":
-    "Clubs, Karriereevents und eine internationale Kohorte machen Networking zum Teil der Woche — besonders in englischsprachigen Tracks wie BBE.",
+  "Clubs, career events, and an international cohort make networking feel part of the week, especially on English-taught tracks like BBE.":
+    "Clubs, Karriereevents und eine internationale Kohorte machen Networking zum Teil der Woche, besonders in englischsprachigen Tracks wie BBE.",
   "Vienna around you": "Wien um dich herum",
-  "Safe, transit-connected, and repeatedly ranked among the world’s most liveable cities — campus is the hub, Vienna is the extended campus.":
-    "Sicher, gut angebunden und immer wieder unter den lebenswertesten Städten der Welt — der Campus ist der Hub, Wien der erweiterte Campus.",
+  "Safe, transit-connected, and repeatedly ranked among the world’s most liveable cities, campus is the hub, Vienna is the extended campus.":
+    "Sicher, gut angebunden und immer wieder unter den lebenswertesten Städten der Welt, der Campus ist der Hub, Wien der erweiterte Campus.",
 
   "How this connects to the BBE entrance exam":
     "Wie das mit der BBE-Aufnahmeprüfung zusammenhängt",
-  "If your goal is the English-taught Bachelor in Business and Economics, campus reputation and rankings explain why demand is high — but admission still runs through WU’s selection procedure, including a written multiple-choice entrance exam when applications exceed places.":
-    "Wenn dein Ziel der englischsprachige Bachelor Business and Economics ist, erklären Campusreputation und Rankings die hohe Nachfrage — die Zulassung läuft aber weiter über das Auswahlverfahren der WU, inklusive schriftlicher Multiple-Choice-Aufnahmeprüfung, wenn die Bewerbungen die Plätze übersteigen.",
+  "If your goal is the English-taught Bachelor in Business and Economics, campus reputation and rankings explain why demand is high, but admission still runs through WU’s selection procedure, including a written multiple-choice entrance exam when applications exceed places.":
+    "Wenn dein Ziel der englischsprachige Bachelor Business and Economics ist, erklären Campusreputation und Rankings die hohe Nachfrage, die Zulassung läuft aber weiter über das Auswahlverfahren der WU, inklusive schriftlicher Multiple-Choice-Aufnahmeprüfung, wenn die Bewerbungen die Plätze übersteigen.",
   "WU Vienna BBE entrance exam hall with rows of desks at VIECON":
     "BBE-Aufnahmeprüfungssaal der WU Wien mit Tischreihen im VIECON",
-  "The written BBE entrance exam is typically held in person when registrations exceed places — preparation quality matters more than collecting random PDFs.":
-    "Die schriftliche BBE-Aufnahmeprüfung findet in der Regel vor Ort statt, wenn die Anmeldungen die Plätze übersteigen — Vorbereitung zählt mehr als das Sammeln zufälliger PDFs.",
+  "The written BBE entrance exam is typically held in person when registrations exceed places, preparation quality matters more than collecting random PDFs.":
+    "Die schriftliche BBE-Aufnahmeprüfung findet in der Regel vor Ort statt, wenn die Anmeldungen die Plätze übersteigen, Vorbereitung zählt mehr als das Sammeln zufälliger PDFs.",
 
   "Read the": "Lies den",
   "BBE Entrance Exam Overview": "BBE-Aufnahmeprüfungsüberblick",
@@ -210,8 +210,8 @@ export const wuViennaExtraUk: Record<string, string> = {
     "WU Відень (Wirtschaftsuniversität Wien): рейтинги, програми та життя кампусу",
   "Independent WU Vienna guide for applicants: FT and QS rankings, bachelor and master courses, Campus WU life at Welthandelsplatz, and how admission links to the BBE entrance exam.":
     "Незалежний гід WU Відень для абітурієнтів: рейтинги FT і QS, бакалаврські та магістерські програми, життя Campus WU на Welthandelsplatz і зв’язок вступу з іспитом BBE.",
-  "WU Vienna is Austria’s leading university for business and economics. This independent guide covers recent rankings, the bachelor and master programmes on offer, and daily life on Campus WU — with a clear path into the English-taught BBE entrance exam.":
-    "WU Відень — провідний університет Австрії з бізнесу та економіки. Цей незалежний гід охоплює свіжі рейтинги, бакалаврські й магістерські програми та повсякденне життя на Campus WU — з чітким шляхом до англомовного вступного іспиту BBE.",
+  "WU Vienna is Austria’s leading university for business and economics. This independent guide covers recent rankings, the bachelor and master programmes on offer, and daily life on Campus WU, with a clear path into the English-taught BBE entrance exam.":
+    "WU Відень, провідний університет Австрії з бізнесу та економіки. Цей незалежний гід охоплює свіжі рейтинги, бакалаврські й магістерські програми та повсякденне життя на Campus WU, з чітким шляхом до англомовного вступного іспиту BBE.",
 
   "BBE entrance exam guide": "Гід з вступного іспиту BBE",
   "Start free demo prep": "Почати безкоштовну демо-підготовку",
@@ -224,10 +224,10 @@ export const wuViennaExtraUk: Record<string, string> = {
   FAQ: "FAQ",
   "What is WU Vienna?": "Що таке WU Відень?",
 
-  "WU Vienna (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) concentrates teaching and research in business, economics, and neighbouring social sciences. About 21,000 students from more than 100 countries study on a single modern campus in Vienna’s second district — next to Prater Park and a short ride from the city centre.":
-    "WU Відень (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) зосереджує навчання та дослідження в бізнесі, економіці та суміжних соціальних науках. Близько 21 000 студентів із понад 100 країн навчаються на одному сучасному кампусі в другому районі Відня — поруч із парком Пратер і недалеко від центру.",
-  "Applicants often arrive here because of the English-taught Bachelor in Business and Economics (BBE). This page orients you on the university first — rankings, courses, and campus life — then links into the":
-    "Абітурієнти часто потрапляють сюди через англомовний бакалавр Business and Economics (BBE). Ця сторінка спочатку орієнтує щодо університету — рейтинги, програми та життя кампусу — а тоді веде до",
+  "WU Vienna (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) concentrates teaching and research in business, economics, and neighbouring social sciences. About 21,000 students from more than 100 countries study on a single modern campus in Vienna’s second district, next to Prater Park and a short ride from the city centre.":
+    "WU Відень (Wirtschaftsuniversität Wien / Vienna University of Economics and Business) зосереджує навчання та дослідження в бізнесі, економіці та суміжних соціальних науках. Близько 21 000 студентів із понад 100 країн навчаються на одному сучасному кампусі в другому районі Відня, поруч із парком Пратер і недалеко від центру.",
+  "Applicants often arrive here because of the English-taught Bachelor in Business and Economics (BBE). This page orients you on the university first, rankings, courses, and campus life, then links into the":
+    "Абітурієнти часто потрапляють сюди через англомовний бакалавр Business and Economics (BBE). Ця сторінка спочатку орієнтує щодо університету, рейтинги, програми та життя кампусу, а тоді веде до",
   "BBE vs WISO comparison": "порівняння BBE vs WISO",
   "admission overview": "огляду вступу",
 
@@ -251,7 +251,7 @@ export const wuViennaExtraUk: Record<string, string> = {
 
   "FT European Business School rank": "Рейтинг FT European Business School",
   "Lower number is better. WU returned to #41 in 2025 after #46 in 2024.":
-    "Менше число — краще. WU повернулася на #41 у 2025 після #46 у 2024.",
+    "Менше число: краще. WU повернулася на #41 у 2025 після #46 у 2024.",
   "Selected QS 2026 ranks": "Вибрані рейтинги QS 2026",
   "Master’s programme ranks and the Business & Management subject table.":
     "Рейтинги магістерських програм і предметна таблиця Business & Management.",
@@ -271,12 +271,12 @@ export const wuViennaExtraUk: Record<string, string> = {
   "Handelsblatt/WiWo Business Administration 2024": "Handelsblatt/WiWo Business Administration 2024",
   "#5 in the DACH region": "#5 у регіоні DACH",
 
-  "Sources: WU’s published ranking pages and the Financial Times / QS tables for the cycles named above. Always read methodology notes — a master’s rank is not the same claim as a bachelor admission rate.":
-    "Джерела: опубліковані сторінки рейтингів WU та таблиці Financial Times / QS за названими циклами. Завжди читайте методологію — рейтинг магістратури не означає те саме, що конкурс на бакалавр.",
+  "Sources: WU’s published ranking pages and the Financial Times / QS tables for the cycles named above. Always read methodology notes, a master’s rank is not the same claim as a bachelor admission rate.":
+    "Джерела: опубліковані сторінки рейтингів WU та таблиці Financial Times / QS за названими циклами. Завжди читайте методологію, рейтинг магістратури не означає те саме, що конкурс на бакалавр.",
 
   "WU Vienna courses and degree programmes": "Курси та освітні програми WU Відень",
-  "WU’s portfolio is deliberately focused: three bachelor programmes, sixteen master’s programmes, five doctoral/PhD tracks, and MBA offerings through the Executive Academy. For most readers of this hub, the decision starts with the bachelor language track — English BBE versus German WISO or Business Law.":
-    "Портфель WU навмисно сфокусований: три бакалаврські програми, шістнадцять магістерських, п’ять докторських/PhD треків і MBA через Executive Academy. Для більшості читачів цього хабу рішення починається з мовного бакалаврського треку — англійський BBE проти німецького WISO або Business Law.",
+  "WU’s portfolio is deliberately focused: three bachelor programmes, sixteen master’s programmes, five doctoral/PhD tracks, and MBA offerings through the Executive Academy. For most readers of this hub, the decision starts with the bachelor language track, English BBE versus German WISO or Business Law.":
+    "Портфель WU навмисно сфокусований: три бакалаврські програми, шістнадцять магістерських, п’ять докторських/PhD треків і MBA через Executive Academy. Для більшості читачів цього хабу рішення починається з мовного бакалаврського треку, англійський BBE проти німецького WISO або Business Law.",
 
   "Bachelor’s programmes": "Бакалаврські програми",
   "Business and Economics (BBE)": "Business and Economics (BBE)",
@@ -316,8 +316,8 @@ export const wuViennaExtraUk: Record<string, string> = {
     "Німецькомовні магістерські опції включають Finance and Accounting, Management, Business Law, Business Education і суміжні треки. Перевіряйте актуальний список на сторінках програм WU.",
 
   "Campus life at Campus WU": "Життя на Campus WU",
-  "Campus life is one of WU’s strongest selling points. Instead of hopping between downtown buildings, students spend most of the week on one award-winning campus with plazas, lawns, reflecting pools, cafés, and the Library & Learning Center as a daily hub — with Prater Park for a reset between lectures.":
-    "Життя кампусу — одна з найсильніших переваг WU. Замість стрибків між будівлями в центрі студенти проводять більшість тижня на одному відзначеному кампусі з площами, газонами, водоймами, кафе та Library & Learning Center як щоденним хабом — а парк Пратер дає паузу між лекціями.",
+  "Campus life is one of WU’s strongest selling points. Instead of hopping between downtown buildings, students spend most of the week on one award-winning campus with plazas, lawns, reflecting pools, cafés, and the Library & Learning Center as a daily hub, with Prater Park for a reset between lectures.":
+    "Життя кампусу, одна з найсильніших переваг WU. Замість стрибків між будівлями в центрі студенти проводять більшість тижня на одному відзначеному кампусі з площами, газонами, водоймами, кафе та Library & Learning Center як щоденним хабом, а парк Пратер дає паузу між лекціями.",
 
   "Campus address": "Адреса кампусу",
   "Welthandelsplatz 1, 1020 Vienna": "Welthandelsplatz 1, 1020 Відень",
@@ -331,8 +331,8 @@ export const wuViennaExtraUk: Record<string, string> = {
 
   "Library and Learning Center by Zaha Hadid on Campus WU Vienna":
     "Library and Learning Center Захи Хадід на Campus WU Відень",
-  "Library & Learning Center on Campus WU — the academic heart of the campus. Photo: Wikimedia Commons (CC BY-SA).":
-    "Library & Learning Center на Campus WU — академічне серце кампусу. Фото: Wikimedia Commons (CC BY-SA).",
+  "Library & Learning Center on Campus WU, the academic heart of the campus. Photo: Wikimedia Commons (CC BY-SA).":
+    "Library & Learning Center на Campus WU, академічне серце кампусу. Фото: Wikimedia Commons (CC BY-SA).",
   "Interior atrium and study spaces inside the WU Vienna Library and Learning Center":
     "Внутрішній атріум і навчальні простори бібліотеки WU Відень",
   "Inside the Library & Learning Center: quiet floors, group spaces, and roughly 1,500 workplaces in the Central Library. Photo: Wikimedia Commons (CC BY-SA).":
@@ -340,22 +340,22 @@ export const wuViennaExtraUk: Record<string, string> = {
 
   "Study spaces": "Простори для навчання",
   "From silent library floors to group rooms and outdoor seating, Campus WU is built for long study days without leaving the site.":
-    "Від тихих поверхів бібліотеки до групових кімнат і місць на вулиці — Campus WU створений для довгих навчальних днів без виїзду з території.",
+    "Від тихих поверхів бібліотеки до групових кімнат і місць на вулиці, Campus WU створений для довгих навчальних днів без виїзду з території.",
   "Student community": "Студентська спільнота",
-  "Clubs, career events, and an international cohort make networking feel part of the week — especially on English-taught tracks like BBE.":
-    "Клуби, кар’єрні події та міжнародна когорта роблять нетворкінг частиною тижня — особливо на англомовних треках на кшталт BBE.",
+  "Clubs, career events, and an international cohort make networking feel part of the week, especially on English-taught tracks like BBE.":
+    "Клуби, кар’єрні події та міжнародна когорта роблять нетворкінг частиною тижня, особливо на англомовних треках на кшталт BBE.",
   "Vienna around you": "Відень навколо",
-  "Safe, transit-connected, and repeatedly ranked among the world’s most liveable cities — campus is the hub, Vienna is the extended campus.":
-    "Безпечний, з хорошим транспортом і неодноразово серед найбільш комфортних для життя міст світу — кампус є хабом, а Відень — розширеним кампусом.",
+  "Safe, transit-connected, and repeatedly ranked among the world’s most liveable cities, campus is the hub, Vienna is the extended campus.":
+    "Безпечний, з хорошим транспортом і неодноразово серед найбільш комфортних для життя міст світу, кампус є хабом, а Відень, розширеним кампусом.",
 
   "How this connects to the BBE entrance exam":
     "Як це пов’язано з вступним іспитом BBE",
-  "If your goal is the English-taught Bachelor in Business and Economics, campus reputation and rankings explain why demand is high — but admission still runs through WU’s selection procedure, including a written multiple-choice entrance exam when applications exceed places.":
-    "Якщо ваша мета — англомовний бакалавр Business and Economics, репутація кампусу та рейтинги пояснюють високий попит — але вступ усе одно проходить через процедуру відбору WU, включно з письмовим тестом із множинним вибором, коли заявок більше, ніж місць.",
+  "If your goal is the English-taught Bachelor in Business and Economics, campus reputation and rankings explain why demand is high, but admission still runs through WU’s selection procedure, including a written multiple-choice entrance exam when applications exceed places.":
+    "Якщо ваша мета, англомовний бакалавр Business and Economics, репутація кампусу та рейтинги пояснюють високий попит, але вступ усе одно проходить через процедуру відбору WU, включно з письмовим тестом із множинним вибором, коли заявок більше, ніж місць.",
   "WU Vienna BBE entrance exam hall with rows of desks at VIECON":
     "Зал вступного іспиту BBE WU Відень із рядами столів у VIECON",
-  "The written BBE entrance exam is typically held in person when registrations exceed places — preparation quality matters more than collecting random PDFs.":
-    "Письмовий вступний іспит BBE зазвичай проводять очно, коли реєстрацій більше, ніж місць — якість підготовки важливіша за збір випадкових PDF.",
+  "The written BBE entrance exam is typically held in person when registrations exceed places, preparation quality matters more than collecting random PDFs.":
+    "Письмовий вступний іспит BBE зазвичай проводять очно, коли реєстрацій більше, ніж місць, якість підготовки важливіша за збір випадкових PDF.",
 
   "Read the": "Прочитайте",
   "BBE Entrance Exam Overview": "Огляд вступного іспиту BBE",
@@ -378,16 +378,16 @@ export const wuViennaExtraUk: Record<string, string> = {
     "Три бакалаврські шляхи: англомовний Business and Economics (BBE), німецькомовний Business, Economics and Social Sciences (WISO) і німецькомовний Business Law. WU також має близько 16 магістерських програм, докторські треки та MBA. Точні навчальні плани та правила відбору визначає WU для кожного циклу.",
   "What is campus life like at Campus WU?": "Яке життя на Campus WU?",
   "Campus WU at Welthandelsplatz 1 is a purpose-built modern campus next to Prater Park. The Library & Learning Center is the academic heart, with thousands of study workplaces, open plazas, cafés, and barrier-free design. Student life mixes lectures, clubs, and Vienna city life.":
-    "Campus WU на Welthandelsplatz 1 — сучасний кампус поруч із парком Пратер. Library & Learning Center — академічне серце з тисячами навчальних місць, відкритими площами, кафе та безбар’єрним дизайном. Студентське життя поєднує лекції, клуби та міське життя Відня.",
+    "Campus WU на Welthandelsplatz 1, сучасний кампус поруч із парком Пратер. Library & Learning Center, академічне серце з тисячами навчальних місць, відкритими площами, кафе та безбар’єрним дизайном. Студентське життя поєднує лекції, клуби та міське життя Відня.",
   "How do I apply to the English-taught BBE programme at WU?":
     "Як податися на англомовну програму BBE у WU?",
   "BBE admission usually includes registration, an ungraded OSA, and a written multiple-choice entrance exam when applications exceed places. Start with BBE School’s entrance-exam overview, then confirm dates and rules on the official WU website.":
     "Вступ на BBE зазвичай включає реєстрацію, неоцінювану OSA та письмовий тест із множинним вибором, коли заявок більше за місця. Почніть з огляду вступного іспиту BBE School, а дати й правила підтвердіть на офіційному сайті WU.",
   "Is BBE School affiliated with WU Vienna?": "Чи пов’язана BBE School з WU Відень?",
   "No. BBE School is an independent preparation provider for the BBE entrance exam. Always confirm official admissions, rankings claims, and programme details on wu.ac.at.":
-    "Ні. BBE School — незалежний провайдер підготовки до вступного іспиту BBE. Завжди підтверджуйте офіційний вступ, заяви про рейтинги та деталі програм на wu.ac.at.",
+    "Ні. BBE School, незалежний провайдер підготовки до вступного іспиту BBE. Завжди підтверджуйте офіційний вступ, заяви про рейтинги та деталі програм на wu.ac.at.",
   "WU (Vienna University of Economics and Business / Wirtschaftsuniversität Wien) is Austria’s leading public university for business, economics, and related social sciences. It offers bachelor’s, master’s, doctoral, and MBA programmes on Campus WU in Vienna’s second district.":
-    "WU (Vienna University of Economics and Business / Wirtschaftsuniversität Wien) — провідний державний університет Австрії з бізнесу, економіки та суміжних соціальних наук. Він пропонує бакалаврські, магістерські, докторські та MBA-програми на Campus WU у другому районі Відня.",
+    "WU (Vienna University of Economics and Business / Wirtschaftsuniversität Wien), провідний державний університет Австрії з бізнесу, економіки та суміжних соціальних наук. Він пропонує бакалаврські, магістерські, докторські та MBA-програми на Campus WU у другому районі Відня.",
 
   "Supply Chain MSc": "Supply Chain MSc",
   "Marketing MSc": "Marketing MSc",

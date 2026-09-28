@@ -194,16 +194,16 @@ export function TermsPage() {
             <p>We will consider a refund or correction in the following limited cases:</p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <strong className="font-semibold">Duplicate payment</strong> — you were accidentally
+                <strong className="font-semibold">Duplicate payment</strong>, you were accidentally
                 charged twice for the same purchase.
               </li>
               <li>
-                <strong className="font-semibold">Technical failure on our end</strong> — you paid but
+                <strong className="font-semibold">Technical failure on our end</strong>, you paid but
                 never received access to the Full Course due to an error on our side, and the issue
                 could not be resolved within a reasonable time.
               </li>
               <li>
-                <strong className="font-semibold">Unauthorized transaction</strong> — payment was
+                <strong className="font-semibold">Unauthorized transaction</strong>, payment was
                 made fraudulently without your authorization (subject to verification).
               </li>
             </ul>
@@ -229,8 +229,8 @@ export function TermsPage() {
               7. Intellectual Property
             </h2>
             <p>
-              All Content — including practice questions, explanations, graphics, branding, and
-              software — is owned by BBE School or its licensors and is protected by copyright and
+              All Content: including practice questions, explanations, graphics, branding, and
+              software, is owned by BBE School or its licensors and is protected by copyright and
               other intellectual property laws.
             </p>
             <p>

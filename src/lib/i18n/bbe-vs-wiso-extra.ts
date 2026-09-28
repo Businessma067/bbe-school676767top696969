@@ -18,8 +18,8 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "Side-by-side comparison of WU’s BBE and WISO entrance exams: language, subjects, competition, and how to choose.":
     "Direkter Vergleich der Aufnahmeprüfungen BBE und WISO an der WU: Sprache, Fächer, Wettbewerb und Entscheidungshilfe.",
 
-  "Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation — so you can decide which path fits you.":
-    "Die Wahl zwischen BBE und WISO an der WU Wien beginnt bei den Aufnahmeprüfungen dahinter. Dieser unabhängige Leitfaden vergleicht Sprache, Fächer, Plätze, Selektivität und Vorbereitung — damit du den passenden Weg findest.",
+  "Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation, so you can decide which path fits you.":
+    "Die Wahl zwischen BBE und WISO an der WU Wien beginnt bei den Aufnahmeprüfungen dahinter. Dieser unabhängige Leitfaden vergleicht Sprache, Fächer, Plätze, Selektivität und Vorbereitung, damit du den passenden Weg findest.",
 
   "Try the free BBE demo course": "Kostenlosen BBE-Demokurs testen",
   "Take a diagnostic test": "Diagnosetest machen",
@@ -50,7 +50,7 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Für BBE-Bewerber:innen ist die wirksamste Reihenfolge meist: Format und Bewertung verstehen, einen Diagnosetest machen, Themenlücken schließen, dann timed Mocks. Ein praktischer Start ist der kostenlose Demokurs, gefolgt von einer diagnostischen Probeprüfung.",
 
   "Recent cycles referenced about 240 BBE places and about 2,703 WISO places. Exact figures can change by year, so verify on official WU pages.":
-    "Aktuelle Zyklen nannten etwa 240 BBE-Plätze und etwa 2.703 WISO-Plätze. Exakte Zahlen können sich jährlich ändern — prüfe daher die offiziellen WU-Seiten.",
+    "Aktuelle Zyklen nannten etwa 240 BBE-Plätze und etwa 2.703 WISO-Plätze. Exakte Zahlen können sich jährlich ändern, prüfe daher die offiziellen WU-Seiten.",
 
   "WU Vienna campus buildings on a clear day":
     "Gebäude des WU-Wien-Campus an einem klaren Tag",
@@ -58,8 +58,8 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Derselbe WU-Wien-Campus, zwei Bachelorwege: BBE und WISO teilen die Universität, unterscheiden sich aber in Sprache, Kohortengröße und Wettbewerb um die Aufnahmeprüfung.",
   "Empty classroom with desks facing a chalkboard, ready for a written exam":
     "Leeres Klassenzimmer mit Tischen vor einer Tafel, bereit für eine schriftliche Prüfung",
-  "Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed multiple-choice paper. The programmes diverge before that — in language, places, and how you prepare.":
-    "Sowohl BBE als auch WISO enden meist im selben Raumtyp: Tische, Stille und eine zeitlich begrenzte Multiple-Choice-Arbeit. Die Programme trennen sich davor — bei Sprache, Plätzen und der Vorbereitung.",
+  "Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed multiple-choice paper. The programmes diverge before that, in language, places, and how you prepare.":
+    "Sowohl BBE als auch WISO enden meist im selben Raumtyp: Tische, Stille und eine zeitlich begrenzte Multiple-Choice-Arbeit. Die Programme trennen sich davor, bei Sprache, Plätzen und der Vorbereitung.",
   "How many seats exist?": "Wie viele Plätze gibt es?",
   "Each block below is drawn to scale. WISO has about":
     "Jeder Block unten ist maßstabsgetreu. WISO hat etwa",
@@ -71,11 +71,11 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Lies es so: „auf jeden 1 Platz kommen etwa so viele zugelassene Bewerber:innen.“",
   "eligible applicants per place": "zulässige Bewerber:innen pro Platz",
   "1 seat · each dot ≈ one competitor": "1 Platz · jeder Punkt ≈ eine konkurrierende Person",
-  "Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them across far more places — so each WISO seat is less contested than each BBE seat.":
-    "Einfach gesagt: BBE ist der knappere Platz. WISO zieht insgesamt mehr Bewerber:innen an, verteilt sie aber auf weit mehr Plätze — daher ist jeder WISO-Platz weniger umkämpft als jeder BBE-Platz.",
+  "Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them across far more places, so each WISO seat is less contested than each BBE seat.":
+    "Einfach gesagt: BBE ist der knappere Platz. WISO zieht insgesamt mehr Bewerber:innen an, verteilt sie aber auf weit mehr Plätze, daher ist jeder WISO-Platz weniger umkämpft als jeder BBE-Platz.",
   "BBE approximate score weighting": "Ungefähre BBE-Punktegewichtung",
-  "From the most recent cycle’s section point totals — not the share of question counts.":
-    "Aus den Abschnittspunktesummen des letzten Zyklus — nicht dem Anteil der Fragenanzahl.",
+  "From the most recent cycle’s section point totals, not the share of question counts.":
+    "Aus den Abschnittspunktesummen des letzten Zyklus, nicht dem Anteil der Fragenanzahl.",
   "Where the exams diverge": "Wo sich die Prüfungen trennen",
   "Shared pillars sit in the middle. Language is the fork that decides most of your prep plan.":
     "Gemeinsame Säulen sitzen in der Mitte. Die Sprache ist die Gabelung, die den Großteil deines Vorbereitungsplans entscheidet.",
@@ -93,20 +93,20 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Der WU-Aufnahmeprüfungssaal: beide Wege können hierher führen. Qualität der Vorbereitung zählt mehr als das Sammeln zufälliger PDFs.",
   "English study materials used in BBE-style language practice":
     "Englisch-Lernmaterialien für BBE-typische Sprachpraxis",
-  "BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight.":
-    "Der Sprachteil von BBE belohnt Grammatik, Wortschatz und flüssiges Lesen auf Englisch — Fähigkeiten, die du über Monate aufbaust, nicht über Nacht lernst.",
+  "BBE’s language section rewards grammar, vocabulary, and reading fluency in English, skills you build over months, not cram overnight.":
+    "Der Sprachteil von BBE belohnt Grammatik, Wortschatz und flüssiges Lesen auf Englisch, Fähigkeiten, die du über Monate aufbaust, nicht über Nacht lernst.",
   "Folded newspaper open to a World Business section in English":
     "Gefaltete Zeitung, aufgeschlagen bei einem World-Business-Teil auf Englisch",
-  "BBE’s language section rewards fluent reading of English business and economics texts — grammar and vocabulary under time pressure, not casual conversation.":
-    "Der Sprachteil von BBE belohnt flüssiges Lesen englischer Wirtschafts- und Ökonomietexte — Grammatik und Wortschatz unter Zeitdruck, nicht Smalltalk.",
+  "BBE’s language section rewards fluent reading of English business and economics texts, grammar and vocabulary under time pressure, not casual conversation.":
+    "Der Sprachteil von BBE belohnt flüssiges Lesen englischer Wirtschafts- und Ökonomietexte, Grammatik und Wortschatz unter Zeitdruck, nicht Smalltalk.",
   "Economics study materials for WU entrance exam preparation":
     "Wirtschafts-Lernmaterialien zur Vorbereitung auf die WU-Aufnahmeprüfung",
   "Both exams expect economics and business basics. On BBE, that usually means precise reading of definitions from the required literature.":
     "Beide Prüfungen erwarten Wirtschafts- und Businessgrundlagen. Bei BBE heißt das meist präzises Lesen von Definitionen aus der Pflichtliteratur.",
   "Stack of business and economics study books on a desk":
     "Stapel von Wirtschafts- und Business-Lernbüchern auf einem Schreibtisch",
-  "Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters — not open-ended business trivia.":
-    "Wirtschaftsvorbereitung ist literaturlastig. Bei BBE heißt das meist präzises Lesen der Pflichtkapitel — nicht offenes Business-Trivia.",
+  "Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters, not open-ended business trivia.":
+    "Wirtschaftsvorbereitung ist literaturlastig. Bei BBE heißt das meist präzises Lesen der Pflichtkapitel, nicht offenes Business-Trivia.",
   "Hand writing calculus integrals on a whiteboard during math preparation":
     "Hand schreibt Integralrechnung an ein Whiteboard während der Mathevorbereitung",
   "Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems so one question does not eat the clock.":
@@ -123,23 +123,23 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "Approximate score weighting from the most recent cycle: Economics 40%, English 20%, Mathematics 40%.":
     "Ungefähre Punktegewichtung aus dem letzten Zyklus: Wirtschaft 40 %, Englisch 20 %, Mathematik 40 %.",
   "Math stems often mean multiple calculations under one question, so time management matters as much as knowing the method.":
-    "Mathe-Stämme bedeuten oft mehrere Rechnungen unter einer Frage — Zeitmanagement zählt daher genauso wie die Methode.",
+    "Mathe-Stämme bedeuten oft mehrere Rechnungen unter einer Frage, Zeitmanagement zählt daher genauso wie die Methode.",
   "How WISO questions usually differ": "So unterscheiden sich WISO-Fragen meist",
-  "Same broad pillars — economics/business basics, language, mathematics — but the language tasks are in German, not English.":
-    "Dieselben großen Säulen — Wirtschafts-/Businessgrundlagen, Sprache, Mathematik — aber der Sprachteil ist auf Deutsch, nicht Englisch.",
+  "Same broad pillars, economics/business basics, language, mathematics, but the language tasks are in German, not English.":
+    "Dieselben großen Säulen, Wirtschafts-/Businessgrundlagen, Sprache, Mathematik, aber der Sprachteil ist auf Deutsch, nicht Englisch.",
   "Multiple-choice only, held in person when the selection procedure runs; confirm current item counts and timing on official WU materials.":
     "Nur Multiple Choice, vor Ort wenn das Verfahren läuft; aktuelle Aufgabenzahlen und Zeiten in offiziellen WU-Unterlagen prüfen.",
   "German comprehension is not a small add-on: weak reading speed or vocabulary can cost points even if your math is strong.":
     "Deutsches Sprachverständnis ist kein kleines Extra: Schwache Lesegeschwindigkeit oder Wortschatz kosten Punkte, selbst wenn Mathe stark ist.",
-  "Because there are far more places, the ranking pool is larger and less scarce — but it is still a competitive WU intake.":
-    "Weil es deutlich mehr Plätze gibt, ist der Ranking-Pool größer und weniger knapp — aber es bleibt ein kompetitiver WU-Zugang.",
+  "Because there are far more places, the ranking pool is larger and less scarce, but it is still a competitive WU intake.":
+    "Weil es deutlich mehr Plätze gibt, ist der Ranking-Pool größer und weniger knapp, aber es bleibt ein kompetitiver WU-Zugang.",
   "Practical takeaway": "Praktischer Takeaway",
   "If you train only on single-answer quizzes, you will undershoot BBE preparation. Train the multi-statement stem style, including when to leave a doubtful statement blank.":
-    "Wenn du nur Single-Answer-Quizzes trainierst, verfehlst du die BBE-Vorbereitung. Trainiere den Multi-Aussagen-Stil — inklusive wann du eine unsichere Aussage leer lässt.",
+    "Wenn du nur Single-Answer-Quizzes trainierst, verfehlst du die BBE-Vorbereitung. Trainiere den Multi-Aussagen-Stil, inklusive wann du eine unsichere Aussage leer lässt.",
   "Preparation differences that actually matter":
     "Vorbereitungsunterschiede, die wirklich zählen",
-  "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section — and for BBE, the multi-statement scoring behaviour is another skill you must train deliberately.":
-    "Mathematik und grundlegende Wirtschaftsvorbereitung können zwischen beiden Prüfungen übertragen werden. Nicht übertragbar ist der Sprachteil — und bei BBE ist das Multi-Aussagen-Bewertungsverhalten eine weitere Fähigkeit, die du bewusst trainieren musst.",
+  "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section, and for BBE, the multi-statement scoring behaviour is another skill you must train deliberately.":
+    "Mathematik und grundlegende Wirtschaftsvorbereitung können zwischen beiden Prüfungen übertragen werden. Nicht übertragbar ist der Sprachteil, und bei BBE ist das Multi-Aussagen-Bewertungsverhalten eine weitere Fähigkeit, die du bewusst trainieren musst.",
   "Prep area": "Vorbereitungsbereich",
   "Transfers to both?": "Übertragbar auf beide?",
   "What to do differently": "Was anders machen",
@@ -284,10 +284,10 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "Your language skills support either path and you want a second chance at a WU bachelor seat. Register for each programme separately and prepare for the language section that each exam actually tests.":
     "deine Sprachkenntnisse beide Wege tragen und du eine zweite Chance auf einen WU-Bachelorplatz willst. Registriere dich für jedes Studium separat und bereite den Sprachteil vor, den die jeweilige Prüfung tatsächlich testet.",
 
-  "Preparation overlap — and what does not transfer":
-    "Überschneidungen in der Vorbereitung — und was nicht übertragbar ist",
+  "Preparation overlap: and what does not transfer":
+    "Überschneidungen in der Vorbereitung: und was nicht übertragbar ist",
   "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section: English practice will not replace German comprehension prep for WISO, and the reverse is also true.":
-    "Mathematik und grundlegende Wirtschaftsvorbereitung können zwischen beiden Prüfungen übertragen werden. Nicht übertragbar ist der Sprachteil: Englischübung ersetzt keine deutsche Leseverständnis-Vorbereitung für WISO — und umgekehrt.",
+    "Mathematik und grundlegende Wirtschaftsvorbereitung können zwischen beiden Prüfungen übertragen werden. Nicht übertragbar ist der Sprachteil: Englischübung ersetzt keine deutsche Leseverständnis-Vorbereitung für WISO, und umgekehrt.",
   "free demo course →": "kostenlose Demokurs →",
   "diagnostic-style mock exam →": "diagnostische Probeprüfung →",
   "Large exam hall seating at a WU Vienna entrance exam":
@@ -308,12 +308,12 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Gemeinsame Math- und Wirtschafts-Skills helfen, aber Sprachteil und Ranking-Pools sind getrennt. Behandle jede Registrierung als eigenen Wettkampf.",
   "“BBE is only for international students.”":
     "„BBE ist nur für internationale Studierende.“",
-  "BBE is English-taught and attracts an international cohort, but eligibility depends on WU’s official requirements — not on nationality alone.":
-    "BBE ist englischsprachig und zieht eine internationale Kohorte an, aber die Zulassungsfähigkeit hängt von den offiziellen WU-Anforderungen ab — nicht allein von der Nationalität.",
+  "BBE is English-taught and attracts an international cohort, but eligibility depends on WU’s official requirements, not on nationality alone.":
+    "BBE ist englischsprachig und zieht eine internationale Kohorte an, aber die Zulassungsfähigkeit hängt von den offiziellen WU-Anforderungen ab, nicht allein von der Nationalität.",
 
   "Next steps if you choose BBE": "Nächste Schritte, wenn du BBE wählst",
-  "If BBE is your target — or your parallel application — start with format literacy, then measure your baseline under exam-style statements. The free demo course shows how BBE School lessons and explanations feel; diagnostic mocks show where your score leaks first.":
-    "Wenn BBE dein Ziel ist — oder deine Parallelbewerbung — starte mit Formatverständnis und miss dann deinen Ausgangspunkt unter prüfungstypischen Aussagen. Der kostenlose Demokurs zeigt, wie sich BBE-School-Lektionen und Erklärungen anfühlen; Diagnostik-Mocks zeigen, wo zuerst Punkte verloren gehen.",
+  "If BBE is your target, or your parallel application, start with format literacy, then measure your baseline under exam-style statements. The free demo course shows how BBE School lessons and explanations feel; diagnostic mocks show where your score leaks first.":
+    "Wenn BBE dein Ziel ist, oder deine Parallelbewerbung, starte mit Formatverständnis und miss dann deinen Ausgangspunkt unter prüfungstypischen Aussagen. Der kostenlose Demokurs zeigt, wie sich BBE-School-Lektionen und Erklärungen anfühlen; Diagnostik-Mocks zeigen, wo zuerst Punkte verloren gehen.",
   "Start the free demo course": "Kostenlosen Demokurs starten",
   "Open diagnostic mocks": "Diagnostik-Mocks öffnen",
 
@@ -340,7 +340,7 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "Recent cycles referenced about": "Aktuelle Zyklen nannten etwa",
   "BBE places and about": "BBE-Plätze und etwa",
   "WISO places. Exact figures can change by year, so verify on official WU pages.":
-    "WISO-Plätze. Exakte Zahlen können sich jährlich ändern — prüfe daher die offiziellen WU-Seiten.",
+    "WISO-Plätze. Exakte Zahlen können sich jährlich ändern, prüfe daher die offiziellen WU-Seiten.",
   "Which exam should I prepare for if I am undecided?":
     "Auf welche Prüfung soll ich mich vorbereiten, wenn ich unentschlossen bin?",
   "Decide by language of study first: strong English and an international cohort point toward BBE; strong German and broader curricular flexibility often point toward WISO. Many applicants sit a diagnostic-style practice set to see how they handle BBE-format mathematics, economics, and English under time pressure.":
@@ -362,21 +362,21 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Side-by-side comparison of WU’s BBE and WISO entrance exams: language, subjects, competition, and how to choose.":
     "Порівняння вступних іспитів BBE і WISO у WU: мова, предмети, конкуренція та як обрати.",
 
-  "Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation — so you can decide which path fits you.":
-    "Вибір між програмами BBE і WISO у WU Vienna починається з вступних іспитів. Цей незалежний гайд порівнює мову, предмети, місця, конкуренцію та підготовку — щоб ви обрали свій шлях.",
+  "Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation, so you can decide which path fits you.":
+    "Вибір між програмами BBE і WISO у WU Vienna починається з вступних іспитів. Цей незалежний гайд порівнює мову, предмети, місця, конкуренцію та підготовку, щоб ви обрали свій шлях.",
 
   "Try the free BBE demo course": "Спробувати безкоштовний демо-курс BBE",
   "Take a diagnostic test": "Пройти діагностичний тест",
 
   "Quick answer: BBE vs WISO": "Коротка відповідь: BBE vs WISO",
   "BBE is WU Vienna’s English-taught Bachelor’s Program in Business and Economics. WISO is the German-taught Bachelor’s Program in Business, Economics and Social Sciences. Both selection procedures usually include a written, in-person multiple-choice entrance exam when registrations exceed places. The practical differences that matter most for applicants are language of study, the language section on the exam, how many seats exist, and when you can start.":
-    "BBE — англомовна бакалаврська програма Business and Economics у WU Vienna. WISO — німецькомовна бакалаврська програма з економіки, бізнесу та соціальних наук. Обидва відбори зазвичай включають письмовий очний тест із варіантами відповідей, якщо заявок більше, ніж місць. Найважливіші для абітурієнтів відмінності — мова навчання, мовний блок іспиту, кількість місць і можливий початок навчання.",
+    "BBE, англомовна бакалаврська програма Business and Economics у WU Vienna. WISO, німецькомовна бакалаврська програма з економіки, бізнесу та соціальних наук. Обидва відбори зазвичай включають письмовий очний тест із варіантами відповідей, якщо заявок більше, ніж місць. Найважливіші для абітурієнтів відмінності, мова навчання, мовний блок іспиту, кількість місць і можливий початок навчання.",
 
   "Use this table as a decision snapshot. For BBE exam format details, see the BBE Entrance Exam Overview linked below.":
-    "Використовуйте цю таблицю як швидкий огляд для рішення. Деталі формату іспиту BBE — в огляді вступного іспиту BBE за посиланням нижче.",
+    "Використовуйте цю таблицю як швидкий огляд для рішення. Деталі формату іспиту BBE, в огляді вступного іспиту BBE за посиланням нижче.",
 
   "Place counts are the clearest structural difference. WISO offers many more seats; BBE remains one of WU’s most competitive bachelor intakes. In a recent WU announcement, roughly 3,900 people were eligible for the BBE exam against 240 places, while about 6,370 were eligible for WISO against 2,703 places.":
-    "Кількість місць — найчіткіша структурна різниця. У WISO значно більше місць; BBE лишається одним із найбільш конкурентних бакалаврських наборів WU. У нещодавньому повідомленні WU приблизно 3 900 осіб були допущені до іспиту BBE проти 240 місць, тоді як близько 6 370 були допущені до WISO проти 2 703 місць.",
+    "Кількість місць: найчіткіша структурна різниця. У WISO значно більше місць; BBE лишається одним із найбільш конкурентних бакалаврських наборів WU. У нещодавньому повідомленні WU приблизно 3 900 осіб були допущені до іспиту BBE проти 240 місць, тоді як близько 6 370 були допущені до WISO проти 2 703 місць.",
 
   "Most recent BBE structure: 34 questions in 2 hours (10 Economics, 11 English, 13 Math)":
     "Найновіша структура BBE: 34 питання за 2 години (10 економіка, 11 англійська, 13 математика)",
@@ -391,10 +391,10 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Нещодавні іспити BBE і WISO проводилися в VIECON, Vienna Congress and Convention Center (Messe Wien).",
 
   "For BBE applicants, the highest-leverage sequence is usually: understand format and scoring, run a diagnostic, close topic gaps, then add timed mocks. A practical starting point is the free demo course, followed by a diagnostic-style mock exam.":
-    "Для абітурієнтів BBE найефективніша послідовність зазвичай така: зрозуміти формат і оцінювання, пройти діагностику, закрити прогалини, потім додати timed mocks. Практичний старт — безкоштовний демо-курс, а потім діагностичний пробний іспит.",
+    "Для абітурієнтів BBE найефективніша послідовність зазвичай така: зрозуміти формат і оцінювання, пройти діагностику, закрити прогалини, потім додати timed mocks. Практичний старт, безкоштовний демо-курс, а потім діагностичний пробний іспит.",
 
   "Recent cycles referenced about 240 BBE places and about 2,703 WISO places. Exact figures can change by year, so verify on official WU pages.":
-    "У нещодавніх циклах згадувалося близько 240 місць BBE і близько 2 703 місць WISO. Точні цифри можуть змінюватися щороку — перевіряйте офіційні сторінки WU.",
+    "У нещодавніх циклах згадувалося близько 240 місць BBE і близько 2 703 місць WISO. Точні цифри можуть змінюватися щороку, перевіряйте офіційні сторінки WU.",
 
   "WU Vienna campus buildings on a clear day":
     "Будівлі кампусу WU Vienna у ясний день",
@@ -402,8 +402,8 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Той самий кампус WU Vienna, два бакалаврські шляхи: BBE і WISO ділять університет, але відрізняються мовою, розміром когорти та конкуренцією на вступному іспиті.",
   "Empty classroom with desks facing a chalkboard, ready for a written exam":
     "Порожня аудиторія зі партами навпроти дошки, готова до письмового іспиту",
-  "Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed multiple-choice paper. The programmes diverge before that — in language, places, and how you prepare.":
-    "І BBE, і WISO зазвичай закінчуються в одному типі зали: парти, тиша й тест із варіантами на час. Програми розходяться раніше — у мові, місцях і підготовці.",
+  "Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed multiple-choice paper. The programmes diverge before that, in language, places, and how you prepare.":
+    "І BBE, і WISO зазвичай закінчуються в одному типі зали: парти, тиша й тест із варіантами на час. Програми розходяться раніше, у мові, місцях і підготовці.",
   "How many seats exist?": "Скільки місць є?",
   "Each block below is drawn to scale. WISO has about":
     "Кожен блок нижче намальований у масштабі. У WISO приблизно",
@@ -415,14 +415,14 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Читайте так: «на кожне 1 місце припадає приблизно стільки допущених абітурієнтів».",
   "eligible applicants per place": "допущені абітурієнти на місце",
   "1 seat · each dot ≈ one competitor": "1 місце · кожна точка ≈ один конкурент",
-  "Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them across far more places — so each WISO seat is less contested than each BBE seat.":
-    "Простими словами: місце BBE рідкісніше. WISO приваблює більше абітурієнтів загалом, але розподіляє їх на набагато більше місць — тож кожне місце WISO менш оспорюване, ніж кожне місце BBE.",
+  "Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them across far more places, so each WISO seat is less contested than each BBE seat.":
+    "Простими словами: місце BBE рідкісніше. WISO приваблює більше абітурієнтів загалом, але розподіляє їх на набагато більше місць, тож кожне місце WISO менш оспорюване, ніж кожне місце BBE.",
   "BBE approximate score weighting": "Орієнтовна вага балів BBE",
-  "From the most recent cycle’s section point totals — not the share of question counts.":
-    "З сум балів розділів останнього циклу — не частка кількості питань.",
+  "From the most recent cycle’s section point totals, not the share of question counts.":
+    "З сум балів розділів останнього циклу, не частка кількості питань.",
   "Where the exams diverge": "Де іспити розходяться",
   "Shared pillars sit in the middle. Language is the fork that decides most of your prep plan.":
-    "Спільні блоки посередині. Мова — розвилка, яка визначає більшість плану підготовки.",
+    "Спільні блоки посередині. Мова, розвилка, яка визначає більшість плану підготовки.",
   "BBE · English": "BBE · Англійська",
   "WISO · German": "WISO · Німецька",
   "Shared: mathematics + economics / business basics":
@@ -437,20 +437,20 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Зала вступного іспиту WU: обидва шляхи можуть привести сюди. Якість підготовки важливіша за збір випадкових PDF.",
   "English study materials used in BBE-style language practice":
     "Матеріали з англійської для практики в стилі BBE",
-  "BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight.":
-    "Мовний блок BBE винагороджує граматику, словник і вільне читання англійською — навички, які будують місяцями, а не за ніч.",
+  "BBE’s language section rewards grammar, vocabulary, and reading fluency in English, skills you build over months, not cram overnight.":
+    "Мовний блок BBE винагороджує граматику, словник і вільне читання англійською, навички, які будують місяцями, а не за ніч.",
   "Folded newspaper open to a World Business section in English":
     "Складена газета, розгорнута на розділі World Business англійською",
-  "BBE’s language section rewards fluent reading of English business and economics texts — grammar and vocabulary under time pressure, not casual conversation.":
-    "Мовний блок BBE винагороджує вільне читання англійських бізнес- та економічних текстів — граматику й словник під тиском часу, а не світську розмову.",
+  "BBE’s language section rewards fluent reading of English business and economics texts, grammar and vocabulary under time pressure, not casual conversation.":
+    "Мовний блок BBE винагороджує вільне читання англійських бізнес- та економічних текстів, граматику й словник під тиском часу, а не світську розмову.",
   "Economics study materials for WU entrance exam preparation":
     "Матеріали з економіки для підготовки до вступного іспиту WU",
   "Both exams expect economics and business basics. On BBE, that usually means precise reading of definitions from the required literature.":
     "Обидва іспити очікують основи економіки та бізнесу. На BBE це зазвичай точне читання означень з обов’язкової літератури.",
   "Stack of business and economics study books on a desk":
     "Стопка підручників з бізнесу та економіки на столі",
-  "Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters — not open-ended business trivia.":
-    "Підготовка з економіки літературоцентрична. На BBE це зазвичай точне читання обов’язкових розділів — не відкрите бізнес-trivia.",
+  "Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters, not open-ended business trivia.":
+    "Підготовка з економіки літературоцентрична. На BBE це зазвичай точне читання обов’язкових розділів, не відкрите бізнес-trivia.",
   "Hand writing calculus integrals on a whiteboard during math preparation":
     "Рука пише інтеграли на білій дошці під час підготовки з математики",
   "Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems so one question does not eat the clock.":
@@ -458,7 +458,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Question style: what actually feels different":
     "Стиль питань: що справді відчувається інакше",
   "Applicants often ask whether the “questions themselves” are the same. The short answer: the subject pillars overlap, but the way BBE tasks are written and scored is a study problem of its own.":
-    "Абітурієнти часто питають, чи «самі питання» однакові. Коротко: предметні блоки перетинаються, але те, як написані й оцінюються завдання BBE, — окрема навчальна задача.",
+    "Абітурієнти часто питають, чи «самі питання» однакові. Коротко: предметні блоки перетинаються, але те, як написані й оцінюються завдання BBE,, окрема навчальна задача.",
   "How BBE questions usually work": "Як зазвичай працюють питання BBE",
   "One stem (scenario, claim, passage, or calculation) with several statements you judge independently.":
     "Один стовбур (сценарій, твердження, текст або розрахунок) із кількома твердженнями, які ви оцінюєте незалежно.",
@@ -469,21 +469,21 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Math stems often mean multiple calculations under one question, so time management matters as much as knowing the method.":
     "Математичні стовбури часто означають кілька розрахунків під одним питанням, тож тайм-менеджмент важливий так само, як знання методу.",
   "How WISO questions usually differ": "Чим зазвичай відрізняються питання WISO",
-  "Same broad pillars — economics/business basics, language, mathematics — but the language tasks are in German, not English.":
-    "Ті самі широкі блоки — основи економіки/бізнесу, мова, математика — але мовні завдання німецькою, не англійською.",
+  "Same broad pillars, economics/business basics, language, mathematics, but the language tasks are in German, not English.":
+    "Ті самі широкі блоки, основи економіки/бізнесу, мова, математика, але мовні завдання німецькою, не англійською.",
   "Multiple-choice only, held in person when the selection procedure runs; confirm current item counts and timing on official WU materials.":
     "Лише тест із варіантами, очно коли відбір проводиться; перевіряйте поточну кількість завдань і час в офіційних матеріалах WU.",
   "German comprehension is not a small add-on: weak reading speed or vocabulary can cost points even if your math is strong.":
-    "Розуміння німецької — не дрібниця: слабка швидкість читання чи словник можуть коштувати балів, навіть якщо математика сильна.",
-  "Because there are far more places, the ranking pool is larger and less scarce — but it is still a competitive WU intake.":
-    "Бо місць значно більше, пул рейтингу більший і менш дефіцитний — але це все одно конкурентний набір WU.",
+    "Розуміння німецької: не дрібниця: слабка швидкість читання чи словник можуть коштувати балів, навіть якщо математика сильна.",
+  "Because there are far more places, the ranking pool is larger and less scarce, but it is still a competitive WU intake.":
+    "Бо місць значно більше, пул рейтингу більший і менш дефіцитний, але це все одно конкурентний набір WU.",
   "Practical takeaway": "Практичний висновок",
   "If you train only on single-answer quizzes, you will undershoot BBE preparation. Train the multi-statement stem style, including when to leave a doubtful statement blank.":
-    "Якщо тренуєте лише квізи з однією відповіддю, ви недовиконуєте підготовку до BBE. Тренуйте стиль із кількома твердженнями — включно з тим, коли лишати сумнівне твердження порожнім.",
+    "Якщо тренуєте лише квізи з однією відповіддю, ви недовиконуєте підготовку до BBE. Тренуйте стиль із кількома твердженнями, включно з тим, коли лишати сумнівне твердження порожнім.",
   "Preparation differences that actually matter":
     "Відмінності підготовки, які справді важливі",
-  "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section — and for BBE, the multi-statement scoring behaviour is another skill you must train deliberately.":
-    "Підготовка з математики та базової економіки може переноситися між іспитами. Не переноситься мовний блок — а для BBE поведінка оцінювання з кількома твердженнями — ще одна навичка, яку треба свідомо тренувати.",
+  "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section, and for BBE, the multi-statement scoring behaviour is another skill you must train deliberately.":
+    "Підготовка з математики та базової економіки може переноситися між іспитами. Не переноситься мовний блок, а для BBE поведінка оцінювання з кількома твердженнями, ще одна навичка, яку треба свідомо тренувати.",
   "Prep area": "Сфера підготовки",
   "Transfers to both?": "Переноситься на обидва?",
   "What to do differently": "Що робити інакше",
@@ -497,7 +497,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Підготовка до BBE зазвичай зосереджена на обов’язкових розділах Fuhrmann з точним читанням означень; відкрите «бізнес-trivia» не достатньо.",
   "Language section": "Мовний блок",
   "BBE needs steady English reading + grammar/vocab practice. WISO needs German comprehension. Swap languages and you lose the section.":
-    "BBE потребує стабільного читання англійською + граматику/словник. WISO потребує розуміння німецької. Поміняйте мови — і втратите блок.",
+    "BBE потребує стабільного читання англійською + граматику/словник. WISO потребує розуміння німецької. Поміняйте мови, і втратите блок.",
   "Scoring tactics": "Тактика оцінювання",
   "BBE-specific": "Специфічно для BBE",
   "Learn when to leave a statement unmarked. Over-ticking false statements can wipe out correct work on the same stem.":
@@ -531,7 +531,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
 
   "Side-by-side comparison": "Порівняння поруч",
   "Use this table as a decision snapshot. For BBE exam format details, see the":
-    "Використовуйте цю таблицю як швидкий огляд для рішення. Деталі формату іспиту BBE — у",
+    "Використовуйте цю таблицю як швидкий огляд для рішення. Деталі формату іспиту BBE, у",
   "BBE Entrance Exam Guide →": "Гайд із вступного іспиту BBE →",
   Aspect: "Аспект",
   BBE: "BBE",
@@ -565,7 +565,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
 
   "Places and selectivity": "Місця та селективність",
   "Place counts are the clearest structural difference. WISO offers many more seats; BBE remains one of WU’s most competitive bachelor intakes. In a recent WU announcement, roughly":
-    "Кількість місць — найчіткіша структурна різниця. У WISO значно більше місць; BBE лишається одним із найбільш конкурентних бакалаврських наборів WU. У нещодавньому повідомленні WU приблизно",
+    "Кількість місць: найчіткіша структурна різниця. У WISO значно більше місць; BBE лишається одним із найбільш конкурентних бакалаврських наборів WU. У нещодавньому повідомленні WU приблизно",
   "people were eligible for the BBE exam against":
     "осіб були допущені до іспиту BBE проти",
   "places, while about": "місць, тоді як близько",
@@ -581,7 +581,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
 
   "What each entrance exam tests": "Що перевіряє кожен вступний іспит",
   "Both exams are multiple-choice and typically cover mathematics plus basic economics and business knowledge. The language pillar is where they diverge: BBE tests English; WISO tests German comprehension.":
-    "Обидва іспити — з варіантами відповідей і зазвичай охоплюють математику та базові знання з економіки й бізнесу. Мовний блок — точка розходження: BBE перевіряє англійську; WISO — розуміння німецької.",
+    "Обидва іспити, з варіантами відповідей і зазвичай охоплюють математику та базові знання з економіки й бізнесу. Мовний блок, точка розходження: BBE перевіряє англійську; WISO, розуміння німецької.",
   "BBE written exam": "Письмовий іспит BBE",
   "WISO written exam": "Письмовий іспит WISO",
   "Economics & business fundamentals": "Основи економіки та бізнесу",
@@ -597,7 +597,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Split academic atmosphere suggesting English-taught and German-taught study environments":
     "Розділена академічна атмосфера, що натякає на англо- та німецькомовне навчання",
   "Language is the hinge decision: BBE campus life and exam tasks run in English; WISO study and the language section of the exam assume solid German.":
-    "Мова — ключове рішення: життя кампусу та завдання іспиту BBE англійською; навчання WISO і мовний блок іспиту передбачають міцну німецьку.",
+    "Мова: ключове рішення: життя кампусу та завдання іспиту BBE англійською; навчання WISO і мовний блок іспиту передбачають міцну німецьку.",
   "Mathematics topics →": "Теми з математики →",
   "Economics & English →": "Економіка та англійська →",
 
@@ -628,10 +628,10 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Your language skills support either path and you want a second chance at a WU bachelor seat. Register for each programme separately and prepare for the language section that each exam actually tests.":
     "ваші мовні навички підтримують обидва шляхи і ви хочете другий шанс на місце бакалавра у WU. Реєструйтеся на кожну програму окремо й готуйте мовний блок, який реально перевіряє кожен іспит.",
 
-  "Preparation overlap — and what does not transfer":
-    "Перетин підготовки — і що не переноситься",
+  "Preparation overlap: and what does not transfer":
+    "Перетин підготовки: і що не переноситься",
   "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section: English practice will not replace German comprehension prep for WISO, and the reverse is also true.":
-    "Підготовка з математики та базової економіки може переноситися між іспитами. Не переноситься мовний блок: практика англійської не замінить підготовку з німецького розуміння для WISO — і навпаки.",
+    "Підготовка з математики та базової економіки може переноситися між іспитами. Не переноситься мовний блок: практика англійської не замінить підготовку з німецького розуміння для WISO, і навпаки.",
   "free demo course →": "безкоштовний демо-курс →",
   "diagnostic-style mock exam →": "діагностичний пробний іспит →",
   "Large exam hall seating at a WU Vienna entrance exam":
@@ -643,21 +643,21 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
 
   "Common myths about BBE vs WISO": "Поширені міфи про BBE vs WISO",
   "“WISO is just the easy German version of BBE.”":
-    "«WISO — це просто легка німецька версія BBE.»",
+    "«WISO: це просто легка німецька версія BBE.»",
   "Not accurate. WISO is a different programme with its own scale, language, and curriculum options. It is less scarce on seats, but it is still a competitive WU bachelor intake.":
-    "Неточно. WISO — інша програма зі своїм масштабом, мовою та опціями навчального плану. Місць більше, але це все одно конкурентний набір бакалаврату WU.",
+    "Неточно. WISO, інша програма зі своїм масштабом, мовою та опціями навчального плану. Місць більше, але це все одно конкурентний набір бакалаврату WU.",
   "“If I prepare for one exam, I am ready for both.”":
     "«Якщо я готую один іспит, я готовий до обох.»",
   "Shared math and economics skills help, but the language section and ranking pools are separate. Treat each registration as its own race.":
     "Спільні навички з математики та економіки допомагають, але мовний блок і пули рейтингу окремі. Ставтеся до кожної реєстрації як до окремої гонки.",
   "“BBE is only for international students.”":
     "«BBE лише для іноземних студентів.»",
-  "BBE is English-taught and attracts an international cohort, but eligibility depends on WU’s official requirements — not on nationality alone.":
-    "BBE англомовна і приваблює міжнародну когорту, але право на вступ залежить від офіційних вимог WU — не лише від громадянства.",
+  "BBE is English-taught and attracts an international cohort, but eligibility depends on WU’s official requirements, not on nationality alone.":
+    "BBE англомовна і приваблює міжнародну когорту, але право на вступ залежить від офіційних вимог WU, не лише від громадянства.",
 
   "Next steps if you choose BBE": "Наступні кроки, якщо ви обираєте BBE",
-  "If BBE is your target — or your parallel application — start with format literacy, then measure your baseline under exam-style statements. The free demo course shows how BBE School lessons and explanations feel; diagnostic mocks show where your score leaks first.":
-    "Якщо BBE — ваша ціль або паралельна заявка, почніть із розуміння формату, потім виміряйте базовий рівень на твердженнях у стилі іспиту. Безкоштовний демо-курс показує, як відчуваються уроки та пояснення BBE School; діагностичні mocks показують, де спочатку «тікають» бали.",
+  "If BBE is your target, or your parallel application, start with format literacy, then measure your baseline under exam-style statements. The free demo course shows how BBE School lessons and explanations feel; diagnostic mocks show where your score leaks first.":
+    "Якщо BBE: ваша ціль або паралельна заявка, почніть із розуміння формату, потім виміряйте базовий рівень на твердженнях у стилі іспиту. Безкоштовний демо-курс показує, як відчуваються уроки та пояснення BBE School; діагностичні mocks показують, де спочатку «тікають» бали.",
   "Start the free demo course": "Почати безкоштовний демо-курс",
   "Open diagnostic mocks": "Відкрити діагностичні mocks",
 
@@ -670,11 +670,11 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "What is the difference between BBE and WISO at WU Vienna?":
     "Яка різниця між BBE і WISO у WU Vienna?",
   "BBE is WU’s English-taught Bachelor’s Program in Business and Economics. WISO is the German-taught Bachelor’s Program in Business, Economics and Social Sciences. Both use a written multiple-choice entrance exam when demand exceeds places, but language of instruction, language section of the exam, place numbers, and semester start options differ.":
-    "BBE — англомовна бакалаврська програма Business and Economics у WU. WISO — німецькомовна бакалаврська програма з економіки, бізнесу та соціальних наук. Обидві використовують письмовий тест із варіантами, коли попит перевищує місця, але відрізняються мовою навчання, мовним блоком іспиту, кількістю місць і варіантами початку семестру.",
+    "BBE, англомовна бакалаврська програма Business and Economics у WU. WISO, німецькомовна бакалаврська програма з економіки, бізнесу та соціальних наук. Обидві використовують письмовий тест із варіантами, коли попит перевищує місця, але відрізняються мовою навчання, мовним блоком іспиту, кількістю місць і варіантами початку семестру.",
   "Is the BBE entrance exam harder than the WISO exam?":
     "Чи складніший вступний іспит BBE за іспит WISO?",
   "BBE is generally more selective because far fewer places are available. Content overlap exists in mathematics and basic economics, but BBE tests English skills while WISO tests German language comprehension. Which feels harder depends on your language strengths and how competitive your cohort is.":
-    "BBE загалом селективніший, бо місць набагато менше. Перетин змісту є в математиці та базовій економіці, але BBE перевіряє англійську, а WISO — розуміння німецької. Що здається складнішим, залежить від ваших мовних сильних сторін і конкуренції в когорті.",
+    "BBE загалом селективніший, бо місць набагато менше. Перетин змісту є в математиці та базовій економіці, але BBE перевіряє англійську, а WISO, розуміння німецької. Що здається складнішим, залежить від ваших мовних сильних сторін і конкуренції в когорті.",
   "Can I take both the BBE and WISO entrance exams?":
     "Чи можна складати і BBE, і WISO вступні іспити?",
   "Yes. Applicants interested in more than one WU bachelor programme typically register and pay the fee for each programme separately, then complete each selection procedure’s required steps. Confirm the current rules on the official WU website.":
@@ -684,9 +684,9 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Recent cycles referenced about": "У нещодавніх циклах згадувалося близько",
   "BBE places and about": "місць BBE і близько",
   "WISO places. Exact figures can change by year, so verify on official WU pages.":
-    "місць WISO. Точні цифри можуть змінюватися щороку — перевіряйте офіційні сторінки WU.",
+    "місць WISO. Точні цифри можуть змінюватися щороку, перевіряйте офіційні сторінки WU.",
   "Which exam should I prepare for if I am undecided?":
     "Який іспит готувати, якщо ще не визначилися?",
   "Decide by language of study first: strong English and an international cohort point toward BBE; strong German and broader curricular flexibility often point toward WISO. Many applicants sit a diagnostic-style practice set to see how they handle BBE-format mathematics, economics, and English under time pressure.":
-    "Спочатку вирішуйте за мовою навчання: сильна англійська та міжнародна когорта — на користь BBE; сильна німецька та ширша гнучкість навчального плану часто — на користь WISO. Багато абітурієнтів проходять діагностичний набір, щоб побачити, як справляються з математикою, економікою та англійською у форматі BBE під час тиску часу.",
+    "Спочатку вирішуйте за мовою навчання: сильна англійська та міжнародна когорта, на користь BBE; сильна німецька та ширша гнучкість навчального плану часто, на користь WISO. Багато абітурієнтів проходять діагностичний набір, щоб побачити, як справляються з математикою, економікою та англійською у форматі BBE під час тиску часу.",
 };
