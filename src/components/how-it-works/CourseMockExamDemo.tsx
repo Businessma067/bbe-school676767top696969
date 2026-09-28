@@ -19,7 +19,7 @@ import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/pract
 import { cn } from "@/lib/utils";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
-import { skimPanel } from "./course-motion";
+import { glideFrame, glideRead } from "./course-motion";
 
 const DWELL = 150;
 const EXAM_SECONDS = 2 * 60 * 60;
@@ -148,16 +148,17 @@ export function CourseMockExamDemo() {
     await api.click(() => setPhase("stats"));
     await api.flush();
     resetScroll();
-    await api.wait(360);
-    await api.moveTo('[data-d="time-chart"]', 100);
-    await api.wait(1100);
+    await api.wait(480);
+    await glideFrame(api, '[data-d^="stat"], [data-d="time-chart"]');
+    await api.wait(420);
     await api.moveTo('[data-d="tasks"]', DWELL);
     await api.click(() => setPhase("tasks"));
     await api.flush();
     resetScroll();
-    await api.wait(220);
-    await skimPanel(api, '[data-d="expl-scroll"]', 0.62);
-    await api.wait(280);
+    await api.wait(240);
+    await api.moveTo('[data-d="prose0"]', 80);
+    await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
+    await api.wait(360);
   }, []);
 
   const question = QUESTIONS[index] ?? QUESTIONS[0]!;

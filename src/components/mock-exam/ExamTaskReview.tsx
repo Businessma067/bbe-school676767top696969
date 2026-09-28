@@ -258,10 +258,8 @@ export function TaskReviewWorkspace({
           </div>
           <div
             data-d={explanationAnchors ? "expl-scroll" : undefined}
-            className={cn(
-              "min-h-0 flex-1 space-y-5 px-5 py-5 sm:px-7 sm:py-6 lg:overflow-y-auto lg:[scrollbar-width:thin] lg:[&::-webkit-scrollbar]:w-1.5 lg:[&::-webkit-scrollbar-thumb]:rounded-full lg:[&::-webkit-scrollbar-thumb]:bg-border",
-              explanationAnchors && "max-lg:max-h-[70dvh] max-lg:overflow-y-auto",
-            )}
+            data-exam-fit={explanationAnchors ? "expl" : undefined}
+            className="min-h-0 flex-1 space-y-5 px-5 py-5 sm:px-7 sm:py-6 lg:overflow-y-auto lg:[scrollbar-width:thin] lg:[&::-webkit-scrollbar]:w-1.5 lg:[&::-webkit-scrollbar-thumb]:rounded-full lg:[&::-webkit-scrollbar-thumb]:bg-border"
           >
             {q.solutionOverview ? (
               <ExamSolutionOverview text={q.solutionOverview} subject={q.subject} />

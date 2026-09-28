@@ -239,7 +239,7 @@ function GroupTable({
   if (rows.length === 0) return null;
 
   return (
-    <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+    <section data-d="stat3" className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
       <div className="border-b border-border px-5 py-4 sm:px-6">
         <h2 className="font-display text-xl font-semibold tracking-tight">{title}</h2>
       </div>
@@ -459,7 +459,7 @@ export function ExamResultOverview({
         </p>
       </header>
 
-      <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+      <section data-d="stat0" className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="grid divide-y divide-border sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x">
           <Stat
             value={`${pct}%`}
@@ -546,7 +546,7 @@ export function ExamResultOverview({
         )}
       </ChartFrame>
 
-      <ChartFrame title={copy.accuracyBySubject} hint={copy.accuracyBySubjectHint}>
+      <ChartFrame anchor="stat1" title={copy.accuracyBySubject} hint={copy.accuracyBySubjectHint}>
           {subjectPie.length === 0 ? (
             <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
               {copy.noSectionData}
@@ -607,7 +607,7 @@ export function ExamResultOverview({
           )}
         </ChartFrame>
 
-      <section>
+      <section data-d="stat2">
         <div className="mb-4">
           <h2 className="font-display text-xl font-semibold tracking-tight">{copy.whatNext}</h2>
           <p className="mt-1 text-sm text-muted-foreground">{copy.whatNextSections}</p>
@@ -636,7 +636,7 @@ export function ExamResultOverview({
 
       <GroupTable title={copy.sections} rows={sections} copy={copy} />
 
-      <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+      <section data-d="stat4" className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border px-5 py-4 sm:px-6">
           <h2 className="font-display text-xl font-semibold tracking-tight">{copy.questions}</h2>
           <p className="text-xs text-muted-foreground">{copy.questionsHint}</p>

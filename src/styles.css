@@ -2454,6 +2454,13 @@ body.flashcard-swiping {
 }
 
 /* A short How it works frame cannot hold the exam's bottom rail or the auth cluster. */
+@container exam-stage (min-height: 360px) {
+  [data-exam-fit="expl"] {
+    max-height: min(28rem, calc(100cqh - 4.5rem));
+    overflow-y: auto;
+  }
+}
+
 @container exam-stage (max-height: 280px) {
   [data-exam-fit="rail"],
   [data-exam-fit="viewbar-copy"] {

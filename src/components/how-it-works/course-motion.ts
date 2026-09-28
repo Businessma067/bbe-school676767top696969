@@ -57,12 +57,17 @@ export function fullExplanation(raw: string): string {
   return expl;
 }
 
-function readingPoint(stage: HTMLElement, panel: HTMLElement) {
+function readingPoint(stage: HTMLElement, panel: HTMLElement, selector = "[data-d^='prose']") {
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
-  const viewTop = Math.max(pr.top, sr.top);
+  let viewTop = Math.max(pr.top, sr.top);
   const viewBottom = Math.min(pr.bottom, sr.bottom);
-  const lines = [...panel.querySelectorAll<HTMLElement>("[data-d^='prose']")];
+  const chrome = stage.querySelector<HTMLElement>("[data-d='exam-chrome']");
+  if (chrome) {
+    const cover = chrome.getBoundingClientRect().bottom;
+    if (cover > viewTop) viewTop = cover + 4;
+  }
+  const lines = [...panel.querySelectorAll<HTMLElement>(selector)];
   const mid = (viewTop + viewBottom) / 2;
   let best: { x: number; y: number; dist: number } | null = null;
   for (const node of lines) {
@@ -82,6 +87,91 @@ function readingPoint(stage: HTMLElement, panel: HTMLElement) {
     };
   }
   return best;
+}
+
+function overflowParent(el: HTMLElement, stage: HTMLElement): HTMLElement | null {
+  let node = el.parentElement;
+  while (node && node !== stage) {
+    const oy = getComputedStyle(node).overflowY;
+    if ((oy === "auto" || oy === "scroll") && node.scrollHeight > node.clientHeight + 12) return node;
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function cursorFrom(stage: HTMLElement) {
+  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
+  return {
+    x: Number(cursor?.dataset.cx ?? 36),
+    y: Number(cursor?.dataset.cy ?? 36),
+  };
+}
+
+/**
+ * Ease a scroller while the pointer stays on the text that is passing the middle.
+ */
+async function glideScroller(
+  api: DemoPlayerApi,
+  stage: HTMLElement,
+  scroller: HTMLElement,
+  dest: number,
+  trackSelector: string,
+  pace: number,
+) {
+  const start = scroller.scrollTop;
+  const distance = dest - start;
+  if (distance < 8) {
+    await api.wait(420);
+    return;
+  }
+  const from = cursorFrom(stage);
+  const duration = Math.round(Math.min(14000, Math.max(4200, distance * pace)));
+  await api.tween(duration, (eased) => {
+    scroller.scrollTop = start + distance * eased;
+    const spot = readingPoint(stage, scroller, trackSelector);
+    if (!spot) return;
+    const blend = Math.min(1, eased / 0.08);
+    api.setCursorAt({
+      x: from.x + (spot.x - from.x) * blend,
+      y: from.y + (spot.y - from.y) * blend,
+    });
+  });
+}
+
+/** Read the whole results sheet, from the score down through the question table. */
+export async function glideFrame(api: DemoPlayerApi, trackSelector: string) {
+  await api.flush();
+  const stage = api.stage();
+  const frame = api.scroll();
+  if (!stage || !frame) return;
+  const max = Math.max(0, frame.scrollHeight - frame.clientHeight);
+  await glideScroller(api, stage, frame, max, trackSelector, 2.4);
+}
+
+/**
+ * Scroll until `endSelector` has passed through the reader.
+ * Uses the inner explanation scroller when that is what actually moves the cards.
+ */
+export async function glideRead(api: DemoPlayerApi, endSelector: string, trackSelector: string) {
+  await api.flush();
+  const stage = api.stage();
+  const frame = api.scroll();
+  const end = stage?.querySelector<HTMLElement>(endSelector);
+  if (!stage || !frame || !end) return;
+  let scroller = overflowParent(end, stage) ?? frame;
+  const scrollerBox = scroller.getBoundingClientRect();
+  const stageBox = stage.getBoundingClientRect();
+  const scrollerSeen =
+    scrollerBox.bottom > stageBox.top + 8 &&
+    scrollerBox.top < stageBox.bottom - 8 &&
+    scrollerBox.height > 24;
+  if (!scrollerSeen) scroller = frame;
+  const top =
+    end.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop;
+  const bottom = top + end.offsetHeight;
+  const max = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
+  const dest = Math.max(0, Math.min(bottom - scroller.clientHeight + 20, max));
+  await glideScroller(api, stage, scroller, dest, trackSelector, 2.6);
 }
 
 /**
