@@ -10,6 +10,7 @@ export function CourseFrame({
   clicking,
   fade,
   lane = false,
+  bleed = false,
   children,
   overlay,
 }: {
@@ -20,17 +21,20 @@ export function CourseFrame({
   fade: boolean;
   /** Keep the task in the lane left of the explanation sheet. */
   lane?: boolean;
+  /** Edge-to-edge page, the same shell as the live exam. */
+  bleed?: boolean;
   children: ReactNode;
   overlay?: ReactNode;
 }) {
   return (
-    <div ref={stageRef} className="absolute inset-0 bg-paper">
+    <div ref={stageRef} className={cn("absolute inset-0", bleed ? "bg-background" : "bg-paper")}>
       <div
         ref={scrollRef}
         className={cn(
-          "news-uniq-scroll h-full overflow-y-auto overscroll-contain px-3 pb-24 pt-3 transition-opacity duration-500 sm:px-5 sm:pb-24 sm:pt-5",
+          "news-uniq-scroll h-full overflow-y-auto overscroll-contain transition-opacity duration-500",
+          bleed ? "" : "px-3 pb-24 pt-3 sm:px-5 sm:pb-24 sm:pt-5",
           fade ? "opacity-0" : "opacity-100",
-          lane && "sm:pr-[58%]",
+          lane && !bleed && "sm:pr-[58%]",
         )}
       >
         {children}

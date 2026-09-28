@@ -139,6 +139,35 @@ export function useDemoPlayer(
       return r.width > 4 && r.height > 4 ? r : null;
     };
 
+    /** First match that is actually on screen. Hidden responsive copies stay in the DOM. */
+    const match = (selector: string) => {
+      const stage = stageRef.current;
+      if (!stage) return null;
+      const all = stage.querySelectorAll<HTMLElement>(selector);
+      for (const el of all) {
+        const box = el.getBoundingClientRect();
+        if (box.width >= 1 && box.height >= 1) return el;
+      }
+      return null;
+    };
+
+    /** Full-width bars that sit on top of the page: sticky header, bottom tool rail. */
+    const chromeBands = (target?: HTMLElement | null) => {
+      const stage = stageRef.current;
+      if (!stage) return [] as DOMRect[];
+      const stageBox = stage.getBoundingClientRect();
+      const bands: DOMRect[] = [];
+      for (const el of stage.querySelectorAll<HTMLElement>("[data-d='exam-chrome']")) {
+        if (target && el.contains(target)) continue;
+        const box = el.getBoundingClientRect();
+        if (box.width < stageBox.width * 0.5 || box.height < 8) continue;
+        const alongTop = box.top <= stageBox.top + 8 && box.bottom > stageBox.top + 12;
+        const alongBottom = box.bottom >= stageBox.bottom - 8 && box.top < stageBox.bottom - 12;
+        if (alongTop || alongBottom) bands.push(box);
+      }
+      return bands;
+    };
+
     const tipCovered = () => {
       const stage = stageRef.current;
       const z = zoomBox();
@@ -152,7 +181,7 @@ export function useDemoPlayer(
     const cursorInside = (selector: string) => {
       const stage = stageRef.current;
       if (!stage || tipCovered()) return false;
-      const el = stage.querySelector<HTMLElement>(selector);
+      const el = match(selector);
       if (!el) return false;
       const s = stage.getBoundingClientRect();
       const tip = {
@@ -207,7 +236,7 @@ export function useDemoPlayer(
     const scrollIntoStage = async (selector: string) => {
       const stage = stageRef.current;
       if (!stage) return;
-      const el = stage.querySelector<HTMLElement>(selector);
+      const el = match(selector);
       if (!el) return;
       const scrollers: HTMLElement[] = [];
       let node: HTMLElement | null = el.parentElement;
@@ -228,8 +257,12 @@ export function useDemoPlayer(
         const eb = el.getClientRects()[0] ?? el.getBoundingClientRect();
         if (eb.width === 0 && eb.height === 0) continue;
         const cy = eb.top + Math.min(eb.height / 2, 18);
-        const top = Math.max(lb.top, sb.top) + 16;
-        const bottom = Math.min(lb.bottom, sb.bottom) - 16;
+        let top = Math.max(lb.top, sb.top) + 16;
+        let bottom = Math.min(lb.bottom, sb.bottom) - 16;
+        for (const band of chromeBands(el)) {
+          if (band.top <= sb.top + 8) top = Math.max(top, band.bottom + 8);
+          if (band.bottom >= sb.bottom - 8) bottom = Math.min(bottom, band.top - 8);
+        }
         let delta = 0;
         if (cy < top) delta = cy - top;
         else if (cy > bottom) delta = cy - bottom;
@@ -255,7 +288,7 @@ export function useDemoPlayer(
     const pointOf = (selector: string) => {
       const stage = stageRef.current;
       if (!stage) return null;
-      const el = stage.querySelector<HTMLElement>(selector);
+      const el = match(selector);
       if (!el) return null;
       const s = stage.getBoundingClientRect();
       const z = zoomBox();
@@ -265,8 +298,12 @@ export function useDemoPlayer(
       for (const eb of boxes) {
         let left = Math.max(eb.left, s.left);
         let right = Math.min(eb.right, s.right);
-        const top = Math.max(eb.top, s.top);
+        let top = Math.max(eb.top, s.top);
         let bottom = Math.min(eb.bottom, s.bottom);
+        for (const band of chromeBands(el)) {
+          if (band.top <= s.top + 8) top = Math.max(top, band.bottom);
+          if (band.bottom >= s.bottom - 8) bottom = Math.min(bottom, band.top);
+        }
         if (z && right > z.left && left < z.right && bottom > z.top && top < z.bottom) {
           // A wide row can stick out from under the zoom button. Aim at that clear part.
           if (z.left - left >= 16) right = Math.min(right, z.left - 2);
@@ -306,7 +343,7 @@ export function useDemoPlayer(
       if (cancelled) return;
       const stage = stageRef.current;
       if (!stage) return;
-      if (!stage.querySelector(selector)) return;
+      if (!match(selector)) return;
       lastSelector = selector;
       await settleOn(selector);
       if (cancelled) return;
