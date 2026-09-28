@@ -182,7 +182,7 @@ export function useDemoPlayer(
       }
     };
 
-    const glideCursor = async (target: { x: number; y: number }, duration = 900) => {
+    const glideCursor = async (target: { x: number; y: number }, duration = 1100) => {
       // Never slide the pointer into the empty stage edge when the target is clipped.
       if (!pointInsideStage(target)) return false;
       const start = { ...cursorPos.current };
@@ -191,8 +191,8 @@ export function useDemoPlayer(
         setCursorAt(target);
         return true;
       }
-      // One speed for a short hop and a long cross-stage move.
-      const d = Math.max(90, Math.min(duration, dist / 0.78));
+      // A little slower than a snap, so short hops and long crosses both ease.
+      const d = Math.max(150, Math.min(duration, dist / 0.56));
       await tween(d, (eased) => {
         setCursorAt({
           x: start.x + (target.x - start.x) * eased,
@@ -245,7 +245,7 @@ export function useDemoPlayer(
         const next = Math.max(0, Math.min(start + delta, max));
         if (Math.abs(next - start) < 2) continue;
         const change = next - start;
-        await tween(Math.max(140, Math.min(520, Math.abs(change) / 0.9)), (eased) => {
+        await tween(Math.max(200, Math.min(680, Math.abs(change) / 0.62)), (eased) => {
           scroller.scrollTop = start + change * eased;
         });
         await flush();

@@ -92,6 +92,7 @@ export function QuestionPalette({
                     aria-label={`Question ${item.index}, ${state.replace("-", " ")}${answered ? ", answered" : ""}`}
                     aria-current={state === "current" ? "true" : undefined}
                     onClick={() => onNavigate(item.index - 1)}
+                    data-q={item.index}
                     className={cn(
                       "relative flex h-8 w-8 items-center justify-center rounded-md border text-xs font-semibold transition-colors hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caramel-deep",
                       TILE[state],

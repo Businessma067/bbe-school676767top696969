@@ -208,11 +208,13 @@ function ChartFrame({
   hint,
   children,
   tall,
+  anchor,
 }: {
   title: string;
   hint?: string;
   children: ReactNode;
   tall?: boolean;
+  anchor?: string;
 }) {
   return (
     <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
@@ -220,7 +222,7 @@ function ChartFrame({
         <h2 className="font-display text-xl font-semibold tracking-tight">{title}</h2>
         {hint ? <p className="mt-1 text-sm text-muted-foreground">{hint}</p> : null}
       </div>
-      <div className={cn("w-full px-2 pb-4 pt-3 sm:px-4", tall ? "h-72" : "h-64")}>{children}</div>
+      <div data-d={anchor} className={cn("w-full px-2 pb-4 pt-3 sm:px-4", tall ? "h-72" : "h-64")}>{children}</div>
     </section>
   );
 }
@@ -483,6 +485,7 @@ export function ExamResultOverview({
       </section>
 
       <ChartFrame
+        anchor="time-chart"
         title={copy.timePerQ}
         hint={
           slowest

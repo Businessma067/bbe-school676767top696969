@@ -62,7 +62,7 @@ const BBE_MOCK_EXAMS: ShowcaseSlide[] = [
     key: "mock-exams",
     label: "Mock Exams",
     title: "Finish the paper and read the result",
-    body: "Answer one English question, one math question, and one economics question on a timed mock. After you submit, the results chart shows how long each question took. Open Tasks and read the explanations.",
+    body: "Answer one English question, one math question, and one economics question on the 34-question mock. After you submit, the results chart shows how long each of the 34 questions took. Open Tasks and read the explanations.",
     cta: "Open Mock Exams",
     href: "/mock-exams",
     video: "/how-it-works/mock-builder.mp4",
