@@ -174,38 +174,40 @@ export async function glideRead(api: DemoPlayerApi, endSelector: string, trackSe
   await glideScroller(api, stage, scroller, dest, trackSelector, 2.6);
 }
 
-/** Three reading stops spread through a full chapter, the last one at the bottom. */
-function chapterStops(panel: HTMLElement, max: number): number[] {
-  const origin = panel.getBoundingClientRect().top;
-  const heads = [...panel.querySelectorAll<HTMLElement>("h2")].map((heading) =>
-    Math.max(0, Math.min(heading.getBoundingClientRect().top - origin + panel.scrollTop, max)),
+/**
+ * The two showpiece spots in each chapter. Headings are element ids.
+ * A phrase with a space is matched against a figure caption.
+ */
+const CHAPTER_SPOTS: Record<number, readonly [string, string]> = {
+  1: ["the-power-set", "the-truth-table-of-an-implication"],
+  10: ["Growth uses a base", "Read the intercept"],
+  11: ["the-newton-quotient", "Expand while MR"],
+};
+
+function findSpot(panel: HTMLElement, key: string): HTMLElement | null {
+  if (!key.includes(" ")) {
+    const byId = panel.querySelector<HTMLElement>(`#${CSS.escape(key)}`);
+    if (byId) return byId;
+  }
+  const caption = [...panel.querySelectorAll("figcaption")].find((node) =>
+    (node.textContent ?? "").includes(key),
   );
-  const picks = [0.34, 0.67].map((fraction) => {
-    const target = max * fraction;
-    let best = target;
-    let bestDist = max * 0.18;
-    for (const top of heads) {
-      const dist = Math.abs(top - target);
-      if (dist < bestDist) {
-        bestDist = dist;
-        best = top;
-      }
-    }
-    return best;
-  });
-  const gap = Math.max(96, max * 0.14);
-  let prev = 0;
-  return [...picks, max].map((stop, index) => {
-    const next = index === 2 ? max : Math.min(Math.max(stop, prev + gap), max - gap);
-    prev = next;
-    return next;
-  });
+  return (caption?.closest("figure") as HTMLElement | null) ?? null;
+}
+
+/** Park a heading at the top, or a figure in the middle, so the highlight stays on screen. */
+function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
+  const top = el.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop;
+  const figure = el.tagName === "FIGURE";
+  const room = panel.clientHeight - el.offsetHeight;
+  const dest = figure ? top - Math.max(16, room / 2) : top - 8;
+  return Math.max(0, Math.min(dest, max));
 }
 
 /**
- * Read the whole chapter the site shows. Three eased stops, then the bottom.
+ * Read the whole chapter the site shows. Two pauses, each on a highlight.
  */
-export async function skimChapter(api: DemoPlayerApi, panelSelector: string) {
+export async function skimChapter(api: DemoPlayerApi, panelSelector: string, chapter = 1) {
   await api.flush();
   const stage = api.stage();
   const panel = stage?.querySelector<HTMLElement>(panelSelector);
@@ -231,9 +233,25 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string) {
     await api.wait(720);
     return;
   }
+  const spots = CHAPTER_SPOTS[chapter] ?? CHAPTER_SPOTS[1];
+  const stops = spots
+    .map((key) => {
+      const el = findSpot(panel, key);
+      return el ? destFor(panel, el, max) : null;
+    })
+    .filter((dest): dest is number => dest != null)
+    .sort((a, b) => a - b);
+  const plan = (stops.length ? stops : [max * 0.35, max * 0.7]).map((dest) => ({
+    dest,
+    pause: true,
+  }));
+  const last = plan[plan.length - 1]?.dest ?? 0;
+  if (max - last > 180) plan.push({ dest: max, pause: false });
+
   let fromTop = 0;
-  for (const dest of chapterStops(panel, max)) {
+  for (const step of plan) {
     if (api.cancelled()) return;
+    const dest = step.dest;
     const distance = dest - fromTop;
     const cursor = stage.querySelector<HTMLElement>("[data-cx]");
     const from = {
@@ -254,7 +272,7 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string) {
       });
     }
     fromTop = panel.scrollTop;
-    await api.wait(700);
+    if (step.pause) await api.wait(700);
   }
 }
 

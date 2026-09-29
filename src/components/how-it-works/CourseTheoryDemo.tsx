@@ -76,7 +76,7 @@ function Reader({
   );
 }
 
-/** How it works · Theory: open math chapters 1, 10 and 11 and read each full chapter. */
+/** How it works · Theory: open math chapters 1, 10 and 11 and pause on two highlights in each. */
 export function CourseTheoryDemo() {
   const [open, setOpen] = useState<number | null>(null);
   const barPct = useRef(0);
@@ -86,7 +86,7 @@ export function CourseTheoryDemo() {
       await api.click(() => setOpen(num));
       await api.flush();
       await api.wait(280);
-      await skimChapter(api, '[data-d="theory-scroll"]');
+      await skimChapter(api, '[data-d="theory-scroll"]', num);
       await api.wait(200);
       await api.moveTo('[data-d="chapters"]', 80);
       await api.click(() => setOpen(null));
