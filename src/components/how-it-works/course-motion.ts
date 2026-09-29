@@ -175,13 +175,13 @@ export async function glideRead(api: DemoPlayerApi, endSelector: string, trackSe
 }
 
 /**
- * The two showpiece spots in each chapter. Headings are element ids.
+ * Three showpiece spots in each chapter. Headings are element ids.
  * A phrase with a space is matched against a figure caption.
  */
-const CHAPTER_SPOTS: Record<number, readonly [string, string]> = {
-  1: ["the-power-set", "the-truth-table-of-an-implication"],
-  10: ["Growth uses a base", "Read the intercept"],
-  11: ["the-newton-quotient", "Expand while MR"],
+const CHAPTER_SPOTS: Record<number, readonly [string, string, string]> = {
+  1: ["the-power-set", "the-truth-table-of-an-implication", "mathematical-induction"],
+  10: ["Growth uses a base", "doubling-time-and-half-life", "Read the intercept"],
+  11: ["the-newton-quotient", "Expand while MR", "Zeros at"],
 };
 
 function findSpot(panel: HTMLElement, key: string): HTMLElement | null {
@@ -219,7 +219,7 @@ function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
 }
 
 /**
- * Read the whole chapter the site shows. Two pauses, each on a highlight of that chapter.
+ * Read the whole chapter the site shows. Three pauses, each on a highlight of that chapter.
  */
 export async function skimChapter(api: DemoPlayerApi, panelSelector: string, chapter = 1) {
   await api.flush();
@@ -227,24 +227,10 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
   const panel = stage?.querySelector<HTMLElement>(panelSelector);
   if (!panel || !stage) return;
   panel.scrollTop = 0;
-  let height = 0;
-  let steady = 0;
-  for (let i = 0; i < 24; i++) {
-    await api.flush();
-    const next = panel.scrollHeight;
-    if (next > panel.clientHeight + 80 && next === height) {
-      steady += 1;
-      if (steady >= 2 && panel.textContent?.includes("Self-check")) break;
-    } else {
-      steady = 0;
-    }
-    height = next;
-    await api.wait(40);
-  }
-  await api.moveTo('[data-d="prose0"]', 20);
+  await api.flush();
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   if (max < 24) {
-    await api.wait(720);
+    await api.wait(240);
     return;
   }
   const spots = CHAPTER_SPOTS[chapter] ?? CHAPTER_SPOTS[1];
@@ -256,7 +242,13 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
     .filter((stop): stop is { dest: number; el: HTMLElement } => stop != null)
     .sort((a, b) => a.dest - b.dest);
   const plan = (
-    found.length ? found : [{ dest: max * 0.35, el: panel }, { dest: max * 0.7, el: panel }]
+    found.length
+      ? found
+      : [
+          { dest: max * 0.28, el: panel },
+          { dest: max * 0.55, el: panel },
+          { dest: max * 0.82, el: panel },
+        ]
   ).map((stop) => ({ ...stop, pause: true }));
 
   let fromTop = 0;

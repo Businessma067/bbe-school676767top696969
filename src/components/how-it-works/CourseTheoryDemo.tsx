@@ -76,22 +76,21 @@ function Reader({
   );
 }
 
-/** How it works · Theory: open math chapters 1, 10 and 11 and pause on two highlights in each. */
+/** How it works · Theory: open math chapters 1, 10 and 11 and pause on three highlights in each. */
 export function CourseTheoryDemo() {
   const [open, setOpen] = useState<number | null>(null);
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const readChapter = async (num: number) => {
-      await api.moveTo(`[data-d="ch-${num}"]`, 100);
-      await api.click(() => setOpen(num));
+      await api.moveTo(`[data-d="ch-${num}"]`, 90);
+      await api.click();
+      setOpen(num);
       await api.flush();
-      await api.wait(280);
       await skimChapter(api, '[data-d="theory-scroll"]', num);
-      await api.wait(200);
-      await api.moveTo('[data-d="chapters"]', 80);
-      await api.click(() => setOpen(null));
+      await api.moveTo('[data-d="chapters"]', 70);
+      await api.click();
+      setOpen(null);
       await api.flush();
-      await api.wait(180);
     };
 
     setFade(true);
