@@ -1,9 +1,11 @@
 /**
  * WiSo demo math: same free-window sizes as BBE demo, but on the *next* block
- * of each chapter’s first subsection (so demo questions don’t overlap BBE).
+ * of each chapter’s demo subsection (so demo questions don’t overlap BBE).
  *
- * Chapters 1–6: swap first 10 ↔ next 10 of the first subtopic, unlock those 10.
- * Chapters 7–8: swap first 5 ↔ next 5 of the first subtopic, unlock those 5.
+ * Chapters 1–6: swap first 10 ↔ next 10 of the free subsection, unlock those 10.
+ * Chapters 7–8: swap first 5 ↔ next 5 of the free subsection, unlock those 5.
+ * Chapter 1 free subsection is Implications (1.3), with hardest tasks promoted
+ * to the front on the shared demo load path.
  * Chapters 9–13: unchanged / fully locked (same as BBE demo).
  */
 
