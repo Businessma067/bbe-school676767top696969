@@ -241,7 +241,7 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string) {
       y: Number(cursor?.dataset.cy ?? 36),
     };
     if (distance >= 8) {
-      const duration = Math.round(Math.min(4800, Math.max(1100, distance * 0.7)));
+      const duration = Math.round(Math.min(3800, Math.max(880, distance * 0.55)));
       await api.tween(duration, (eased) => {
         panel.scrollTop = fromTop + distance * eased;
         const spot = readingPoint(stage, panel);
