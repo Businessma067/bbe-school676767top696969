@@ -4,8 +4,8 @@
  *
  * Chapters 1–6: swap first 10 ↔ next 10 of the free subsection, unlock those 10.
  * Chapters 7–8: swap first 5 ↔ next 5 of the free subsection, unlock those 5.
- * Chapter 1 free subsection is Implications (1.3), with hardest tasks promoted
- * to the front on the shared demo load path.
+ * Chapter 1 free subsection is Implications (1.3), promoted to the front of
+ * the demo chapter (hardest tasks first) on the shared demo load path.
  * Chapters 9–13: unchanged / fully locked (same as BBE demo).
  */
 
