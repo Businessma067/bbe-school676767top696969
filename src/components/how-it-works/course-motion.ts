@@ -174,6 +174,90 @@ export async function glideRead(api: DemoPlayerApi, endSelector: string, trackSe
   await glideScroller(api, stage, scroller, dest, trackSelector, 2.6);
 }
 
+/** Three reading stops spread through a full chapter, the last one at the bottom. */
+function chapterStops(panel: HTMLElement, max: number): number[] {
+  const origin = panel.getBoundingClientRect().top;
+  const heads = [...panel.querySelectorAll<HTMLElement>("h2")].map((heading) =>
+    Math.max(0, Math.min(heading.getBoundingClientRect().top - origin + panel.scrollTop, max)),
+  );
+  const picks = [0.34, 0.67].map((fraction) => {
+    const target = max * fraction;
+    let best = target;
+    let bestDist = max * 0.18;
+    for (const top of heads) {
+      const dist = Math.abs(top - target);
+      if (dist < bestDist) {
+        bestDist = dist;
+        best = top;
+      }
+    }
+    return best;
+  });
+  const gap = Math.max(96, max * 0.14);
+  let prev = 0;
+  return [...picks, max].map((stop, index) => {
+    const next = index === 2 ? max : Math.min(Math.max(stop, prev + gap), max - gap);
+    prev = next;
+    return next;
+  });
+}
+
+/**
+ * Read the whole chapter the site shows. Three eased stops, then the bottom.
+ */
+export async function skimChapter(api: DemoPlayerApi, panelSelector: string) {
+  await api.flush();
+  const stage = api.stage();
+  const panel = stage?.querySelector<HTMLElement>(panelSelector);
+  if (!panel || !stage) return;
+  panel.scrollTop = 0;
+  let height = 0;
+  let steady = 0;
+  for (let i = 0; i < 24; i++) {
+    await api.flush();
+    const next = panel.scrollHeight;
+    if (next > panel.clientHeight + 80 && next === height) {
+      steady += 1;
+      if (steady >= 2 && panel.textContent?.includes("Self-check")) break;
+    } else {
+      steady = 0;
+    }
+    height = next;
+    await api.wait(40);
+  }
+  await api.moveTo('[data-d="prose0"]', 20);
+  const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
+  if (max < 24) {
+    await api.wait(720);
+    return;
+  }
+  let fromTop = 0;
+  for (const dest of chapterStops(panel, max)) {
+    if (api.cancelled()) return;
+    const distance = dest - fromTop;
+    const cursor = stage.querySelector<HTMLElement>("[data-cx]");
+    const from = {
+      x: Number(cursor?.dataset.cx ?? 36),
+      y: Number(cursor?.dataset.cy ?? 36),
+    };
+    if (distance >= 8) {
+      const duration = Math.round(Math.min(4800, Math.max(1100, distance * 0.7)));
+      await api.tween(duration, (eased) => {
+        panel.scrollTop = fromTop + distance * eased;
+        const spot = readingPoint(stage, panel);
+        if (!spot) return;
+        const blend = Math.min(1, eased / 0.12);
+        api.setCursorAt({
+          x: from.x + (spot.x - from.x) * blend,
+          y: from.y + (spot.y - from.y) * blend,
+        });
+      });
+    }
+    fromTop = panel.scrollTop;
+    await api.wait(700);
+  }
+}
+
 /**
  * A pass over part of a reader. Stops before the bottom of the panel.
  * A longer excerpt gets a little more time, so the scroll stays even.
