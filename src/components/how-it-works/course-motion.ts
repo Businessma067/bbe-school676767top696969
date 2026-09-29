@@ -195,6 +195,20 @@ function findSpot(panel: HTMLElement, key: string): HTMLElement | null {
   return (caption?.closest("figure") as HTMLElement | null) ?? null;
 }
 
+function pointOn(stage: HTMLElement, el: HTMLElement) {
+  const sr = stage.getBoundingClientRect();
+  const box = el.getBoundingClientRect();
+  const top = Math.max(box.top, sr.top + 8);
+  const bottom = Math.min(box.bottom, sr.bottom - 8);
+  const left = Math.max(box.left, sr.left + 8);
+  const right = Math.min(box.right, sr.right - 8);
+  if (bottom - top < 8 || right - left < 8) return null;
+  return {
+    x: left - sr.left + (right - left) * 0.42,
+    y: (top + bottom) / 2 - sr.top,
+  };
+}
+
 /** Park a heading at the top, or a figure in the middle, so the highlight stays on screen. */
 function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
   const top = el.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop;
@@ -205,7 +219,7 @@ function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
 }
 
 /**
- * Read the whole chapter the site shows. Two pauses, each on a highlight.
+ * Read the whole chapter the site shows. Two pauses, each on a highlight of that chapter.
  */
 export async function skimChapter(api: DemoPlayerApi, panelSelector: string, chapter = 1) {
   await api.flush();
@@ -234,19 +248,16 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
     return;
   }
   const spots = CHAPTER_SPOTS[chapter] ?? CHAPTER_SPOTS[1];
-  const stops = spots
+  const found = spots
     .map((key) => {
       const el = findSpot(panel, key);
-      return el ? destFor(panel, el, max) : null;
+      return el ? { dest: destFor(panel, el, max), el } : null;
     })
-    .filter((dest): dest is number => dest != null)
-    .sort((a, b) => a - b);
-  const plan = (stops.length ? stops : [max * 0.35, max * 0.7]).map((dest) => ({
-    dest,
-    pause: true,
-  }));
-  const last = plan[plan.length - 1]?.dest ?? 0;
-  if (max - last > 180) plan.push({ dest: max, pause: false });
+    .filter((stop): stop is { dest: number; el: HTMLElement } => stop != null)
+    .sort((a, b) => a.dest - b.dest);
+  const plan = (
+    found.length ? found : [{ dest: max * 0.35, el: panel }, { dest: max * 0.7, el: panel }]
+  ).map((stop) => ({ ...stop, pause: true }));
 
   let fromTop = 0;
   for (const step of plan) {
@@ -258,11 +269,12 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
       x: Number(cursor?.dataset.cx ?? 36),
       y: Number(cursor?.dataset.cy ?? 36),
     };
+    const onFigure = step.el.tagName === "FIGURE";
     if (distance >= 8) {
       const duration = Math.round(Math.min(3800, Math.max(880, distance * 0.55)));
       await api.tween(duration, (eased) => {
         panel.scrollTop = fromTop + distance * eased;
-        const spot = readingPoint(stage, panel);
+        const spot = (onFigure ? pointOn(stage, step.el) : null) ?? readingPoint(stage, panel);
         if (!spot) return;
         const blend = Math.min(1, eased / 0.12);
         api.setCursorAt({
