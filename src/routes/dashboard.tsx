@@ -118,12 +118,14 @@ const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
   math: "#10b981",
   english: "#0ea5e9",
+  german: "#6366f1",
 };
 
 const SUBJECT_LABEL: Record<string, string> = {
   economics: "Economics",
   math: "Math",
   english: "English",
+  german: "Deutsch",
 };
 
 function DashboardPage() {
@@ -359,7 +361,10 @@ function DashboardPage() {
               ) : mocksLoading ? (
                 <p className="text-sm text-muted-foreground">Loading your progress…</p>
               ) : (
-                <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
+                <MocksTab
+                  mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))}
+                  preferWiso={hasWisoFull && !hasBbePaid}
+                />
               )
             ) : paidToolsLocked ? (
               <LockedFeaturePanel feature="mock-builder" />
@@ -369,6 +374,7 @@ function DashboardPage() {
               <CustomMocksTab
                 customMocks={customMocks!}
                 attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
+                preferWiso={hasWisoFull && !hasBbePaid}
               />
             )}
           </div>
@@ -916,10 +922,13 @@ function GamesTab({ hasWisoFull, hasBbePaid }: { hasWisoFull: boolean; hasBbePai
 function CustomMocksTab({
   customMocks,
   attempts,
+  preferWiso = false,
 }: {
   customMocks: CustomMockSummary[];
   attempts: MockAttempt[];
+  preferWiso?: boolean;
 }) {
+  const builderHref = preferWiso ? "/wiso/mock-builder" : "/products/custom-mock-builder";
   const attemptsByExam = useMemo(() => {
     const map = new Map<string, MockAttempt[]>();
     for (const a of attempts) {
@@ -947,7 +956,7 @@ function CustomMocksTab({
           by topic. They appear here with scores after you finish.
         </p>
         <Link
-          to="/products/custom-mock-builder"
+          to={builderHref}
           className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
         >
           Open Custom Mock Builder
@@ -966,7 +975,7 @@ function CustomMocksTab({
           </p>
         </div>
         <Link
-          to="/products/custom-mock-builder"
+          to={builderHref}
           className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold hover:bg-secondary"
         >
           <Wand2 className="h-3.5 w-3.5" />
@@ -1152,7 +1161,13 @@ function CustomMocksTab({
   );
 }
 
-function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
+function MocksTab({
+  mocks,
+  preferWiso = false,
+}: {
+  mocks: MockAttempt[];
+  preferWiso?: boolean;
+}) {
   const sorted = useMemo(
     () => [...mocks].sort((a, b) => b.completed_at.localeCompare(a.completed_at)),
     [mocks],
@@ -1161,6 +1176,7 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
     () => [...mocks].sort((a, b) => a.completed_at.localeCompare(b.completed_at)),
     [mocks],
   );
+  const mocksHref = preferWiso ? "/wiso/mock-exams" : "/mock-exams";
 
   if (mocks.length === 0) {
     return (
@@ -1170,7 +1186,7 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
           No mock exams completed yet. Your scores appear here as soon as you finish one.
         </p>
         <Link
-          to="/mock-exams"
+          to={mocksHref}
           className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
         >
           Browse mock exams
@@ -1225,12 +1241,22 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
             max={SCORING_CONFIG.math.totalPoints}
             color={SUBJECT_COLORS.math}
           />
-          <SubjectAvg
-            name="English"
-            points={avg("english")}
-            max={SCORING_CONFIG.english.totalPoints}
-            color={SUBJECT_COLORS.english}
-          />
+          {mocks.some((m) => m.per_subject?.german != null) &&
+          !mocks.some((m) => m.per_subject?.english != null) ? (
+            <SubjectAvg
+              name="Deutsch"
+              points={avg("german")}
+              max={SCORING_CONFIG.german.totalPoints}
+              color={SUBJECT_COLORS.german}
+            />
+          ) : (
+            <SubjectAvg
+              name="English"
+              points={avg("english")}
+              max={SCORING_CONFIG.english.totalPoints}
+              color={SUBJECT_COLORS.english}
+            />
+          )}
         </div>
       </section>
 

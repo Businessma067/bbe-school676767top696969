@@ -908,7 +908,7 @@
         "The probability that at least one of the other 11 employees shares a birthday with the CEO specifically is greater than 5%.",
         "The probability that all 12 employees have different birthdays is less than 80%.",
         "If the retreat instead had 20 employees attending, the probability that at least two of them share a birthday would be greater than 50%.",
-        "The probability that at least two of the 12 employees share a birthday is more than 6 times the probability."
+        "The probability that at least two of the 12 employees share a birthday is more than 6 times the probability that at least one of the other 11 employees shares a birthday with the CEO."
       ],
       "answer_key": [
         false,

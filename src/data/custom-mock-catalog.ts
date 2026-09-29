@@ -214,7 +214,7 @@ export function getEnglishBuilderChapters(): CustomMockChapterToc[] {
         { id: "t.1", title: "The Rise of the Four-Day Workweek" },
         { id: "t.2", title: "Dynamic Pricing and the Rise of Algorithmic Price Discrimination" },
         { id: "t.3", title: "The Rise and Fall of the Classical Gold Standard" },
-        { id: "t.4", title: "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains" },
+        // t.4 tasks live only in Mock 6 after dedupe — omit empty pool from builder.
         { id: "t.5", title: "The Marshall Plan and the Politics of Economic Recovery" },
         { id: "t.6", title: "Nudge Theory and the Limits of Behavioural Public Policy" },
         { id: "t.7", title: "The Antibiotic Discovery Void and the Economics of Resistance" },

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG } from "@/config/scoring-config";
-import { isCustomExamId, isFreeDemoMockId } from "@/lib/mock-exams";
+import { isCustomExamId, isFreeDemoMockId, isWisoCuratedMockId } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import {
@@ -147,7 +147,7 @@ function ReviewExamPage() {
           </Link>
         ) : (
           <Link
-            to="/mock-exams"
+            to={isWisoCuratedMockId(examId) || examTrack === "wiso" ? "/wiso/mock-exams" : "/mock-exams"}
             className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
           >
             ← Back

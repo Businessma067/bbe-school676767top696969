@@ -8,6 +8,7 @@ import { isAdminEmail, resolveAppRole, type AppRole } from "@/lib/admin-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { accessOwnsWisoFull, fetchAccessState, type AccessState } from "@/lib/entitlements";
 
 export const Route = createFileRoute("/account")({
   component: AccountPage,
@@ -39,6 +40,7 @@ export function AccountPage() {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [savingPassword, setSavingPassword] = useState(false);
+  const [access, setAccess] = useState<AccessState | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -52,13 +54,14 @@ export function AccountPage() {
       if (cancelled) return;
       setUser(u);
 
-      const [pRes, rRes] = await Promise.all([
+      const [pRes, rRes, accessState] = await Promise.all([
         supabase
           .from("profiles")
           .select("display_name, created_at")
           .eq("user_id", u.id)
           .maybeSingle(),
         supabase.from("user_roles").select("role").eq("user_id", u.id),
+        fetchAccessState(),
       ]);
       if (cancelled) return;
 
@@ -72,6 +75,7 @@ export function AccountPage() {
             "student") as AppRole,
         ),
       );
+      setAccess(accessState);
       setLoading(false);
     })();
     return () => {
@@ -249,21 +253,46 @@ export function AccountPage() {
 
         {/* MY COURSE */}
         <Card title="My course">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">Access</p>
-              <p className="mt-1 text-lg font-semibold">Demo</p>
-              <p className="text-xs text-muted-foreground">
-                Your progress and statistics live in the demo practice section.
-              </p>
-            </div>
-            <LocalizedLink
-              to="/demo-practice"
-              className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
-            >
-              Go to demo practice →
-            </LocalizedLink>
-          </div>
+          {(() => {
+            const hasBbeFull = !!access && (access.tier === "full" || access.productSlugs.includes("full-course"));
+            const hasWiso = !!access && accessOwnsWisoFull(access);
+            const hasBbeLite = !!access && access.tier === "lite";
+            const label = hasBbeFull
+              ? hasWiso
+                ? "BBE Full Course + WiSo"
+                : "BBE Full Course"
+              : hasWiso
+                ? "WiSo Full Course"
+                : hasBbeLite
+                  ? "BBE Lite"
+                  : "Demo";
+            const href =
+              hasBbeFull || hasBbeLite
+                ? "/products/full-course-subjects"
+                : hasWiso
+                  ? "/wiso/products/full-course-subjects"
+                  : "/demo-practice";
+            const cta = hasBbeFull || hasWiso || hasBbeLite ? "Open course →" : "Go to demo practice →";
+            const blurb =
+              hasBbeFull || hasWiso || hasBbeLite
+                ? "Your progress and statistics live on the dashboard and in each subject."
+                : "Your progress and statistics live in the demo practice section.";
+            return (
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground">Access</p>
+                  <p className="mt-1 text-lg font-semibold">{label}</p>
+                  <p className="text-xs text-muted-foreground">{blurb}</p>
+                </div>
+                <LocalizedLink
+                  to={href}
+                  className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+                >
+                  {cta}
+                </LocalizedLink>
+              </div>
+            );
+          })()}
         </Card>
 
         {isAdminEmail(user?.email) && (

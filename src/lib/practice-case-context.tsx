@@ -9,7 +9,7 @@ import {
   type ReactNode,
 } from "react";
 
-export type PracticeCaseSubject = "math" | "english" | "economics";
+export type PracticeCaseSubject = "math" | "english" | "economics" | "german";
 
 export type PracticeCasePayload = {
   subject: PracticeCaseSubject;

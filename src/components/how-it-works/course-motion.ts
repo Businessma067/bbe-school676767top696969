@@ -224,20 +224,34 @@ function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
 export async function skimChapter(api: DemoPlayerApi, panelSelector: string, chapter = 1) {
   await api.flush();
   const stage = api.stage();
-  const panel = stage?.querySelector<HTMLElement>(panelSelector);
-  if (!panel || !stage) return;
-  panel.scrollTop = 0;
-  await api.flush();
-  const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
+  if (!stage) return;
+  const spots = CHAPTER_SPOTS[chapter] ?? CHAPTER_SPOTS[1];
+  let panel: HTMLElement | null = null;
+  let max = 0;
+  // Wait for KaTeX / figures so stop targets exist before the skim starts.
+  for (let i = 0; i < 48; i++) {
+    if (api.cancelled()) return;
+    panel = stage.querySelector<HTMLElement>(panelSelector);
+    if (panel) {
+      panel.scrollTop = 0;
+      max = Math.max(0, panel.scrollHeight - panel.clientHeight);
+      const ready = max > 80 && spots.every((key) => findSpot(panel!, key));
+      if (ready) break;
+    }
+    await api.flush();
+    await api.wait(40);
+  }
+  if (!panel) return;
+  max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   if (max < 24) {
     await api.wait(240);
     return;
   }
-  const spots = CHAPTER_SPOTS[chapter] ?? CHAPTER_SPOTS[1];
+  await api.moveTo('[data-d="prose0"]', 20);
   const found = spots
     .map((key) => {
-      const el = findSpot(panel, key);
-      return el ? { dest: destFor(panel, el, max), el } : null;
+      const el = findSpot(panel!, key);
+      return el ? { dest: destFor(panel!, el, max), el } : null;
     })
     .filter((stop): stop is { dest: number; el: HTMLElement } => stop != null)
     .sort((a, b) => a.dest - b.dest);

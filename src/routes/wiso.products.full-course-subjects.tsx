@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
+import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { Layers, Shuffle, Sparkles } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -70,7 +71,7 @@ const subjects = [
   {
     id: "german",
     title: "Deutsches Sprachverständnis",
-    image: economicsAsset.url,
+    image: englishAsset.url,
     accent: "#6366F1",
     tag: ui.germanTag,
     description: ui.germanDescription,

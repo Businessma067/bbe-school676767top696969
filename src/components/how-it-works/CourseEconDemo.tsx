@@ -37,7 +37,7 @@ export function CourseEconDemo() {
     await api.click(() => setTimed(true));
     await api.wait(280);
 
-    for (const i of [0, 1, 2]) {
+    for (const i of [0, 1]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));

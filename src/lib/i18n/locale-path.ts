@@ -123,6 +123,8 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/wiso/tutor-exam",
   "/practice",
   "/demo-practice",
+  "/wiso/demo-practice",
+  "/wiso/demo-mock",
 ] as const;
 
 /** True for full course study, games, mock builder, and mock exams. */

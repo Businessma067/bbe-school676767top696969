@@ -457,17 +457,20 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   style={{ aspectRatio: slide.aspect }}
                 >
                   {liveStage ? (
-                    liveTheoryDemo ? (
-                      <CourseTheoryDemo key="theory" />
-                    ) : liveMockExamDemo ? (
-                      <CourseMockExamDemo key="mock-exams" />
-                    ) : liveMockDemo ? (
-                      <CourseMockDemo key="mock-builder" />
-                    ) : liveStudyDemo ? (
-                      <BbeStudyStage key={slide.key} tool={slide.key} />
-                    ) : (
-                      <BbeCourseStage key={slide.key} subject={slide.key} />
-                    )
+                    // One live player at a time: hide the inline demo while the lightbox owns it.
+                    !zoomed ? (
+                      liveTheoryDemo ? (
+                        <CourseTheoryDemo key="theory" />
+                      ) : liveMockExamDemo ? (
+                        <CourseMockExamDemo key="mock-exams" />
+                      ) : liveMockDemo ? (
+                        <CourseMockDemo key="mock-builder" />
+                      ) : liveStudyDemo ? (
+                        <BbeStudyStage key={slide.key} tool={slide.key} />
+                      ) : (
+                        <BbeCourseStage key={slide.key} subject={slide.key} />
+                      )
+                    ) : null
                   ) : (
                     <video
                       key={slide.key}
@@ -574,23 +577,17 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
               >
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: slide.aspect }}>
                   {liveStage ? (
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        transform: `scale(${lightboxScale})`,
-                        transformOrigin: "center center",
-                      }}
-                    >
+                    <div className="absolute inset-0">
                       {liveTheoryDemo ? (
-                        <CourseTheoryDemo key="zoom-theory" />
+                        <CourseTheoryDemo key="theory" />
                       ) : liveMockExamDemo ? (
-                        <CourseMockExamDemo key="zoom-mock-exams" />
+                        <CourseMockExamDemo key="mock-exams" />
                       ) : liveMockDemo ? (
-                        <CourseMockDemo key="zoom-mock-builder" />
+                        <CourseMockDemo key="mock-builder" />
                       ) : liveStudyDemo ? (
-                        <BbeStudyStage key={`zoom-${slide.key}`} tool={slide.key} />
+                        <BbeStudyStage key={slide.key} tool={slide.key} />
                       ) : (
-                        <BbeCourseStage key={`zoom-${slide.key}`} subject={slide.key} />
+                        <BbeCourseStage key={slide.key} subject={slide.key} />
                       )}
                     </div>
                   ) : (
@@ -614,29 +611,31 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   )}
                 </div>
 
-                <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-black/92 p-1.5 shadow-lg backdrop-blur-sm">
-                  <button
-                    type="button"
-                    onClick={() => nudgeLightboxZoom(-1)}
-                    disabled={lightboxScale <= MIN_ZOOM}
-                    aria-label="Zoom out"
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
-                  >
-                    <ZoomOut className="h-5 w-5" />
-                  </button>
-                  <span className="min-w-[3.25rem] text-center text-sm font-semibold tabular-nums text-white">
-                    {Math.round(lightboxScale * 100)}%
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => nudgeLightboxZoom(1)}
-                    disabled={lightboxScale >= MAX_ZOOM}
-                    aria-label="Zoom in"
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
-                  >
-                    <ZoomIn className="h-5 w-5" />
-                  </button>
-                </div>
+                {!liveStage ? (
+                  <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-black/92 p-1.5 shadow-lg backdrop-blur-sm">
+                    <button
+                      type="button"
+                      onClick={() => nudgeLightboxZoom(-1)}
+                      disabled={lightboxScale <= MIN_ZOOM}
+                      aria-label="Zoom out"
+                      className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
+                    >
+                      <ZoomOut className="h-5 w-5" />
+                    </button>
+                    <span className="min-w-[3.25rem] text-center text-sm font-semibold tabular-nums text-white">
+                      {Math.round(lightboxScale * 100)}%
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => nudgeLightboxZoom(1)}
+                      disabled={lightboxScale >= MAX_ZOOM}
+                      aria-label="Zoom in"
+                      className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
+                    >
+                      <ZoomIn className="h-5 w-5" />
+                    </button>
+                  </div>
+                ) : null}
 
                 <button
                   type="button"

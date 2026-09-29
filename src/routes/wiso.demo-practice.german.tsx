@@ -38,6 +38,7 @@ function WisoDemoGermanTasks() {
       chapters={WISO_GERMAN_CHAPTERS}
       storageKey="wiso.german.demo.progress.v1"
       subjectLabel="Deutsch"
+      progressSubject="german"
       demoSubsectionFree={DEMO_WISO_GERMAN_SUBSECTION_FREE}
       emptyHint={
         <>

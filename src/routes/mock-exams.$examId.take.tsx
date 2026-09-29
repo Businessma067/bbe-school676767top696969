@@ -5,6 +5,7 @@ import { SUBJECT_META, subjectLabel } from "@/config/scoring-config";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import { storeExamTrack } from "@/lib/exam-track";
+import { isCustomExamId, isWisoCuratedMockId } from "@/lib/mock-exams";
 import {
   answersStorageKey,
   clearSession,
@@ -147,6 +148,8 @@ function TakeExamPage() {
         const access = await fetchAccessState();
         if (cancelled) return;
         if (!access.signedIn) {
+          setExamTrack(resolved.track);
+          storeExamTrack(resolved.track);
           setNeedsAuth(true);
           setContentReady(true);
           return;
@@ -464,7 +467,8 @@ function TakeExamPage() {
   }, [questions, flaggedSet]);
 
   if (needsAuth) {
-    const returnTo = `/demo-mock`;
+    const wisoAuth = examTrack === "wiso" || isWisoCuratedMockId(examId);
+    const returnTo = wisoAuth ? "/wiso/demo-mock" : "/demo-mock";
     return (
       <div className="flex min-h-screen items-center justify-center bg-background px-6 font-sans text-foreground">
         <div className="max-w-sm text-center">
@@ -492,7 +496,7 @@ function TakeExamPage() {
             </LocalizedLink>
           </div>
           <LocalizedLink
-            to="/demo-practice"
+            to={wisoAuth ? "/wiso/demo-practice" : "/demo-practice"}
             className="mt-5 inline-block text-sm font-medium text-muted-foreground underline-offset-4 hover:underline"
           >
             Or try the demo course without registering →
@@ -513,14 +517,31 @@ function TakeExamPage() {
   }
 
   if (loadError) {
+    const wisoLoad = examTrack === "wiso" || isWisoCuratedMockId(examId);
+    const custom = isCustomExamId(examId);
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-background px-6 font-sans text-foreground">
         <p className="text-sm text-muted-foreground">{loadError}</p>
         <Link
-          to={examTrack === "wiso" ? "/wiso/mock-builder" : "/products/custom-mock-builder"}
+          to={
+            custom
+              ? wisoLoad
+                ? "/wiso/mock-builder"
+                : "/products/custom-mock-builder"
+              : wisoLoad
+                ? "/wiso/mock-exams"
+                : "/mock-exams"
+          }
           className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
         >
-          ← {examTrack === "wiso" ? "WiSo Mock Builder" : "Custom Mock Builder"}
+          ←{" "}
+          {custom
+            ? wisoLoad
+              ? "WiSo Mock Builder"
+              : "Custom Mock Builder"
+            : wisoLoad
+              ? "WiSo Mock Exams"
+              : "Mock Exams"}
         </Link>
       </div>
     );

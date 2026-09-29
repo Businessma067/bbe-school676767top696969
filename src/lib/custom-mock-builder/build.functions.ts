@@ -31,21 +31,19 @@ const Input = z.object({
 
 type CaseRow = CustomMockBankTask & { case_id?: string };
 
-function padFive<T>(arr: T[], fill: T): T[] {
-  const next = arr.slice(0, 5);
-  while (next.length < 5) next.push(fill);
-  return next;
-}
-
 function taskToExamQuestion(
   subject: CustomMockSubjectId,
   c: CaseRow,
   index: number,
   mockId: string,
 ): ExamQuestion {
-  const statements = padFive(c.statements ?? [], "—");
-  const keys = padFive(c.answer_key ?? [], false);
-  const expl = padFive(c.tactical_explanations ?? [], "");
+  // Keep the bank length (some inequality tasks have 4 claims). Do not pad with
+  // ghost false statements — that changes wi2 falseCount and scoring rates.
+  const statements = (c.statements ?? []).slice(0, 5);
+  const keys = (c.answer_key ?? []).slice(0, statements.length);
+  const expl = (c.tactical_explanations ?? []).slice(0, statements.length);
+  while (keys.length < statements.length) keys.push(false);
+  while (expl.length < statements.length) expl.push("");
 
   const meta = findCustomMockSubtopic(subject, c.subsection);
   const subtopicTag = meta

@@ -140,6 +140,8 @@ type Props = {
   storageKey?: string;
   /** Shown in practice-case labels, e.g. "English" or "Deutsch". */
   subjectLabel?: string;
+  /** Progress / analytics subject key. Deutsch must be `"german"`, not `"english"`. */
+  progressSubject?: "english" | "german";
   emptyHint?: ReactNode;
   /**
    * WiSo demo: unlock first N tasks per text/subsection.
@@ -169,6 +171,7 @@ export function EnglishTasksPage({
   chapters: chaptersProp,
   storageKey = DEFAULT_STORAGE_KEY,
   subjectLabel = "English",
+  progressSubject = "english",
   emptyHint = (
     <>
       Tap <span className="font-semibold text-foreground">Chapters</span> above to browse English
@@ -349,7 +352,7 @@ export function EnglishTasksPage({
           : (chapters.find((c) => c.key === activeChapter)?.title ?? "English");
       const stem = [activePassage, activeCase.context].filter(Boolean).join("\n\n");
       setPracticeCase({
-        subject: "english",
+        subject: progressSubject,
         chapterLabel:
           activeChapter === "revision" ? "Revision" : `${subjectLabel} · ${chapterTitle}`,
         taskId: activeCase.id,
@@ -369,6 +372,7 @@ export function EnglishTasksPage({
     activeIdx,
     activePassage,
     chapters,
+    progressSubject,
     subjectLabel,
     tier,
     setPracticeCase,
@@ -997,7 +1001,7 @@ export function EnglishTasksPage({
                               activeChapter
                             : "Revision";
                         void recordTaskAttempt({
-                          subject: "english",
+                          subject: progressSubject,
                           chapter: chLabel,
                           taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
                           taskTitle: activeCase.title,
@@ -1077,7 +1081,7 @@ export function EnglishTasksPage({
                       ? chapters.find((c) => c.key === activeChapter)?.title ?? activeChapter
                       : "Revision";
                   void recordTaskAttempt({
-                    subject: "english",
+                    subject: progressSubject,
                     chapter: chLabel,
                     taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
                     taskTitle: activeCase.title,

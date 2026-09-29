@@ -3658,8 +3658,8 @@
       "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
       "statements": [
         "Whenever $w<4$, the quotient $|w-4|/(4-w)$ equals $1$.",
-        "At $x=-3$, both $|x|$ and $3$ agree, and $|x|\\ge 0$.",
-        "At $x=-3$, both $|x|$ and $3$ agree, and $|x|\\ge 0$.",
+        "For every $x\\neq 0$, $\\left|\\dfrac{-x^3}{x}\\right|$ equals $x^2$.",
+        "For every $x\\neq 0$, $\\left|\\dfrac{-x^3}{x}\\right|$ equals $-x^2$.",
         "Because $7-h=-(h-7)$, the fraction $|h-7|/(7-h)$ equals $-\\dfrac{|h-7|}{h-7}$.",
         "At $x=2$, both $|x^2-10x+16|$ and $(x-2)(x-8)$ equal a common value."
       ],
@@ -3672,8 +3672,8 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nOn $w<4$ the inside $w-4$ is negative, so absolute value flips it to the positive quantity $4-w$.\n\n$$\n|w-4|=-(w-4)\n$$\n\n$$\n4-w.\n$$\n\nDivide by the positive denominator $4-w$ (which is nonzero for $w\\neq 4$, and here $w<4$):\n\n$$\n\\frac{|w-4|}{4-w}=\\frac{4-w}{4-w}\n$$\n\n$$\n1.\n$$\n\nAt $w=2$ one gets $|-2|/2=1$.\n\nSo the statement is True.\n",
-        "**B.** → True\n\nSimplify the fraction first, then take absolute value; a square is already nonnegative.\n\n$$\nx\n$$\n\n$$\nx=-3\n$$\n\n$$\n|x|\n$$\n\n$$\n3\n$$\n\n$$\n|x|\\ge 0\n$$\n\nFor $x\\neq 0$,\n\n$$\n\\frac{-x^3}{x}=-x^2.\n$$\n\nAbsolute value removes the remaining minus:\n\n$$\n\\left|-x^2\\right|=x^2,\n$$\n\nsince $x^2\\ge 0$. Hence\n\n$$\n\\left|\\frac{-x^3}{x}\\right|=x^2.\n$$\n\nAt $x=-2$ both sides equal $4$.\n\nConcrete check for the rewritten claim. Substitute $x=-3$: $|-3|=3\\ge 0$.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nThe same simplification yields a nonnegative square, not the negative quantity $-x^2$.\n\nFor $x\\neq 0$,\n\n$$\n\\left|\\frac{-x^3}{x}\\right|=\\left|-x^2\\right|\n$$\n\n$$\nx^2.\n$$\n\nThe claimed right-hand side $-x^2$ is strictly negative for $x\\neq 0$. At $x=1$:\n\n$$\n\\left|\\frac{-1}{1}\\right|=1,\n$$\n\n$$\n-1^2\n$$\n\n$$\n-1,\n$$\n\nand $1\\neq -1$.\n\nConcrete check for the rewritten claim. Substitute $x=-3$: $|-3|=3\\ge 0$.\n\nSo the statement is False.\n",
+        "**B.** → True\n\nSimplify the fraction first, then take absolute value; a square is already nonnegative.\n\nFor $x\\neq 0$,\n\n$$\n\\frac{-x^3}{x}=-x^2.\n$$\n\nAbsolute value removes the remaining minus:\n\n$$\n\\left|-x^2\\right|=x^2,\n$$\n\nsince $x^2\\ge 0$. Hence\n\n$$\n\\left|\\frac{-x^3}{x}\\right|=x^2.\n$$\n\nAt $x=-2$ both sides equal $4$. At $x=-3$ both sides equal $9$.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nThe same simplification yields a nonnegative square, not the negative quantity $-x^2$.\n\nFor $x\\neq 0$,\n\n$$\n\\left|\\frac{-x^3}{x}\\right|=\\left|-x^2\\right|\n$$\n\n$$\nx^2.\n$$\n\nThe claimed right-hand side $-x^2$ is strictly negative for $x\\neq 0$. At $x=1$:\n\n$$\n\\left|\\frac{-1}{1}\\right|=1,\n$$\n\n$$\n-1^2=-1,\n$$\n\nand $1\\neq -1$.\n\nSo the statement is False.\n",
         "**D.** → True\n\nBecause $7-h=-(h-7)$, dividing by $7-h$ introduces a global minus relative to dividing by $h-7$.\n\nFor $h\\neq 7$,\n\n$$\n\\frac{|h-7|}{7-h}=\\frac{|h-7|}{-(h-7)}\n$$\n\n$$\n-\\frac{|h-7|}{h-7}.\n$$\n\nThat is exactly the claimed identity. On $h<7$ both sides equal $1$; on $h>7$ both sides equal $-1$. At $h=0$:\n\n$$\n\\frac{|0-7|}{7-0}=\\frac{7}{7}\n$$\n\n$$\n1\n$$\n\n$$\n-\\frac{7}{0-7}.\n$$\n\nSo the statement is True.\n",
         "**E.** → False\n\nThe factorisation $x^2-10x+16=(x-2)(x-8)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nPick a test point between the roots (or $x=0$ when the inside is negative):\n\nthe left side $|x^2-10x+16|$ is positive while $(x-2)(x-8)$ is negative.\n\nThe correct identity keeps bars on each factor:\n\n$$\n|x^2-10x+16|=|(x-2)|\\,|(x-8)|\n$$\n\nConcrete check for the rewritten claim. Substitute $x=2$; the two sides disagree.\n\n$$\nx=2\n$$\n\n$$\n|x^2-10x+16|\n$$\n\n$$\n(x-2)(x-8)\n$$\n\nSo the statement is False.\n"
       ],
