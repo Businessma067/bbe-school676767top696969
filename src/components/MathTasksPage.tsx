@@ -264,21 +264,6 @@ export function MathTasksPage({
     setActiveIdx(0);
   }, [activeChapter]);
 
-  // Demo free windows are not always at index 0 (e.g. Logic unlocks 1.3).
-  // After the bank loads, hop from the locked default to the first free task.
-  useEffect(() => {
-    if (tier !== "demo") return;
-    if (typeof activeChapter !== "number") return;
-    if (activeList.length === 0 || activeIdx !== 0) return;
-    if (!isLocked(tier, activeChapter, 0, activeList)) return;
-    for (let i = 1; i < activeList.length; i++) {
-      if (!isLocked(tier, activeChapter, i, activeList)) {
-        setActiveIdx(i);
-        return;
-      }
-    }
-  }, [tier, activeChapter, activeList, activeIdx]);
-
   useEffect(() => {
     setShowExplanations(false);
   }, [activeChapter, activeIdx]);
@@ -303,6 +288,22 @@ export function MathTasksPage({
       : activeChapter === null
         ? []
         : byChapter.get(activeChapter) ?? [];
+
+  // Demo free windows are not always at index 0 (e.g. Logic unlocks 1.3).
+  // After the bank loads, hop from the locked default to the first free task.
+  useEffect(() => {
+    if (tier !== "demo") return;
+    if (typeof activeChapter !== "number") return;
+    if (activeList.length === 0 || activeIdx !== 0) return;
+    if (!isLocked(tier, activeChapter, 0, activeList)) return;
+    for (let i = 1; i < activeList.length; i++) {
+      if (!isLocked(tier, activeChapter, i, activeList)) {
+        setActiveIdx(i);
+        return;
+      }
+    }
+  }, [tier, activeChapter, activeList, activeIdx]);
+
   const activeCase = activeList[activeIdx];
   // Defer heavy KaTeX task body so chapter/task list clicks paint immediately.
   const deferredCase = useDeferredValue(activeCase);
