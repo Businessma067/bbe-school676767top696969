@@ -366,7 +366,7 @@ export function promoteHardDemoFreeBlock(
 }
 
 /**
- * Demo Logik sidebar: swap Implications (1.3) ↔ Quantifiers (1.4).
+ * Demo Logic sidebar: put Implications (1.3) first.
  * Full Course / custom-mock catalogs keep the syllabus order.
  */
 export function withDemoMathChapterLayout(chapters: MathChapter[]): MathChapter[] {
@@ -374,11 +374,10 @@ export function withDemoMathChapterLayout(chapters: MathChapter[]): MathChapter[
     if (ch.num !== 1 || !ch.subsections?.length) return ch;
     const subs = ch.subsections.map((s) => ({ ...s }));
     const i3 = subs.findIndex((s) => s.id === "1.3");
-    const i4 = subs.findIndex((s) => s.id === "1.4");
-    if (i3 < 0 || i4 < 0) return ch;
-    const tmp = subs[i3]!;
-    subs[i3] = subs[i4]!;
-    subs[i4] = tmp;
+    if (i3 <= 0) return ch;
+    const [implications] = subs.splice(i3, 1);
+    if (!implications) return ch;
+    subs.unshift(implications);
     return { ...ch, subsections: subs };
   });
 }
@@ -386,7 +385,8 @@ export function withDemoMathChapterLayout(chapters: MathChapter[]): MathChapter[
 /**
  * Demo free-window bank: same chapter syllabus with harder replacement stems
  * overlaid on matching case_ids (BBE + WiSo demo practice only).
- * Chapter 1 also promotes the hardest Implications tasks into the free window.
+ * Chapter 1 also promotes the hardest Implications tasks into the free window
+ * and moves that subsection block to the front of the chapter.
  */
 export async function loadDemoMathChapterTasks(num: number): Promise<MathTask[]> {
   let tasks = await loadMathChapterTasks(num);
@@ -394,10 +394,22 @@ export async function loadDemoMathChapterTasks(num: number): Promise<MathTask[]>
   return applyDemoMathHardOverlay(tasks);
 }
 
+function moveSubsectionToFront(tasks: MathTask[], subsection: string): MathTask[] {
+  const block: MathTask[] = [];
+  const rest: MathTask[] = [];
+  for (const t of tasks) {
+    if (t.subsection === subsection) block.push(t);
+    else rest.push(t);
+  }
+  if (block.length === 0) return tasks;
+  return [...block, ...rest];
+}
+
 function applyDemoLogicFreeOrdering(num: number, tasks: MathTask[]): MathTask[] {
   if (num !== 1) return tasks;
   const freeCount = DEMO_MATH_SUBSECTION_FREE[1]?.["1.3"] ?? 0;
-  return promoteHardDemoFreeBlock(tasks, "1.3", freeCount);
+  const promoted = promoteHardDemoFreeBlock(tasks, "1.3", freeCount);
+  return moveSubsectionToFront(promoted, "1.3");
 }
 
 function difficultyRank(level: string | undefined): number {
@@ -493,7 +505,7 @@ export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
   };
 });
 
-/** Demo practice sidebar shells (Logic 1.3/1.4 order swapped). */
+/** Demo practice sidebar shells (Logic Implications listed first). */
 export const DEMO_MATH_CHAPTERS: MathChapter[] = withDemoMathChapterLayout(MATH_CHAPTERS);
 
 /** @deprecated Prefer loadAllMathChapterTasks — sync flatMap is empty before lazy load. */
