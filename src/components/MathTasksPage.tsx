@@ -37,6 +37,10 @@ import { trackEvent } from "@/lib/activity-tracker";
 import { Collapse } from "@/components/Collapse";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import {
+  UnansweredIndicator,
+  countUnansweredTasks,
+} from "@/components/UnansweredIndicator";
+import {
   MATH_CHAPTERS,
   demoMathLockDistance,
   isDemoMathTaskLocked,
@@ -567,6 +571,17 @@ export function MathTasksPage({
                   const isOpen = !!expanded[ch.num];
                   const isActiveCh = activeChapter === ch.num;
                   const hasTheory = showTheory && mathChapterHasTheory(ch.num);
+                  const unanswered =
+                    tier === "demo"
+                      ? countUnansweredTasks(
+                          list.map((c, i) => ({
+                            id: c.id,
+                            placeholder: c.placeholder,
+                            locked: isLocked(tier, ch.num, i, list),
+                          })),
+                          progress,
+                        )
+                      : 0;
                   if (ch.comingSoon) {
                     return (
                       <li key={ch.num} className="overflow-hidden rounded-xl border border-transparent">
@@ -630,6 +645,7 @@ export function MathTasksPage({
                                 <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
                                   {ch.num}. {ch.title}
                                 </span>
+                                <UnansweredIndicator count={unanswered} />
                                 <ChapterProgressRing pct={pct} done={done} total={total} />
                               </div>
                             </button>
@@ -650,6 +666,7 @@ export function MathTasksPage({
                               <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
                                 {ch.num}. {ch.title}
                               </span>
+                              <UnansweredIndicator count={unanswered} />
                               <ChapterProgressRing pct={pct} done={done} total={total} />
                             </div>
                           </button>
@@ -698,6 +715,17 @@ export function MathTasksPage({
                                   subTasks.length === 0
                                     ? 0
                                     : Math.round((subDone / subTasks.length) * 100);
+                                const subUnanswered =
+                                  tier === "demo"
+                                    ? countUnansweredTasks(
+                                        subTasks.map(({ c, i }) => ({
+                                          id: c.id,
+                                          placeholder: c.placeholder,
+                                          locked: isLocked(tier, ch.num, i, list),
+                                        })),
+                                        progress,
+                                      )
+                                    : 0;
                                 return (
                                   <li key={sub.id} className="mt-1">
                                     <button
@@ -719,6 +747,7 @@ export function MathTasksPage({
                                       <span className="min-w-0 flex-1 truncate text-[11px] font-bold text-foreground">
                                         {sub.title}
                                       </span>
+                                      <UnansweredIndicator count={subUnanswered} />
                                       <ChapterProgressRing
                                         pct={subPct}
                                         done={subDone}
