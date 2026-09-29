@@ -49,13 +49,14 @@ export const DEMO_MATH_FREE_LIMIT = 0;
 
 /**
  * Demo unlocks by subsection. Unlisted subsections in these chapters stay locked.
- * Counts are the first N tasks in that subsection.
- * Topics 1–6: first 10 of the first subtopic; topics 7–8: first 5 of the first subtopic.
+ * Counts are the first N tasks in that subsection (after demo-only reordering).
+ * Topic 1 (Logic): 10 hardest Implications (1.3) tasks — see promoteHardDemoFreeBlock.
+ * Topics 2–6: first 10 of the first subtopic; topics 7–8: first 5 of the first subtopic.
  */
 export const DEMO_MATH_SUBSECTION_FREE: Partial<
   Record<number, Readonly<Record<string, number>>>
 > = {
-  1: { "1.1": 10 },
+  1: { "1.3": 10 },
   2: { "2.1": 10 },
   3: { "3.1": 10 },
   4: { "4.1": 10 },
@@ -318,12 +319,94 @@ export async function loadMathChapterTasks(num: number): Promise<MathTask[]> {
 }
 
 /**
+ * Move the hardest tasks of a subsection to the front of that subsection block
+ * so DEMO_MATH_SUBSECTION_FREE’s “first N” (and WiSo’s next-N swap) land on hard items.
+ * Full-course banks are untouched — this runs only on the demo load path.
+ */
+export function promoteHardDemoFreeBlock(
+  tasks: MathTask[],
+  subsection: string,
+  freeCount: number,
+): MathTask[] {
+  if (freeCount <= 0) return tasks;
+  const indices: number[] = [];
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i]?.subsection === subsection) indices.push(i);
+  }
+  if (indices.length === 0) return tasks;
+
+  // Promote 2× freeCount so BBE unlocks the hardest N and WiSo’s block-swap
+  // can unlock the next-hardest N without overlapping.
+  const promoteN = Math.min(indices.length, freeCount * 2);
+  const ranked = [...indices].sort((a, b) => {
+    const da = difficultyRank(tasks[a]?.difficulty_level);
+    const db = difficultyRank(tasks[b]?.difficulty_level);
+    if (db !== da) return db - da;
+    return (tasks[b]?.case_id ?? "").localeCompare(tasks[a]?.case_id ?? "", undefined, {
+      numeric: true,
+    });
+  });
+  const promotedSet = new Set(ranked.slice(0, promoteN));
+  const promoted = ranked.slice(0, promoteN).map((i) => tasks[i]!);
+  const restInSub = indices.filter((i) => !promotedSet.has(i)).map((i) => tasks[i]!);
+
+  const result: MathTask[] = [];
+  let emitted = false;
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i]?.subsection === subsection) {
+      if (!emitted) {
+        result.push(...promoted, ...restInSub);
+        emitted = true;
+      }
+      continue;
+    }
+    result.push(tasks[i]!);
+  }
+  return result;
+}
+
+/**
+ * Demo Logik sidebar: swap Implications (1.3) ↔ Quantifiers (1.4).
+ * Full Course / custom-mock catalogs keep the syllabus order.
+ */
+export function withDemoMathChapterLayout(chapters: MathChapter[]): MathChapter[] {
+  return chapters.map((ch) => {
+    if (ch.num !== 1 || !ch.subsections?.length) return ch;
+    const subs = ch.subsections.map((s) => ({ ...s }));
+    const i3 = subs.findIndex((s) => s.id === "1.3");
+    const i4 = subs.findIndex((s) => s.id === "1.4");
+    if (i3 < 0 || i4 < 0) return ch;
+    const tmp = subs[i3]!;
+    subs[i3] = subs[i4]!;
+    subs[i4] = tmp;
+    return { ...ch, subsections: subs };
+  });
+}
+
+/**
  * Demo free-window bank: same chapter syllabus with harder replacement stems
  * overlaid on matching case_ids (BBE + WiSo demo practice only).
+ * Chapter 1 also promotes the hardest Implications tasks into the free window.
  */
 export async function loadDemoMathChapterTasks(num: number): Promise<MathTask[]> {
-  const tasks = await loadMathChapterTasks(num);
+  let tasks = await loadMathChapterTasks(num);
+  tasks = applyDemoLogicFreeOrdering(num, tasks);
   return applyDemoMathHardOverlay(tasks);
+}
+
+function applyDemoLogicFreeOrdering(num: number, tasks: MathTask[]): MathTask[] {
+  if (num !== 1) return tasks;
+  const freeCount = DEMO_MATH_SUBSECTION_FREE[1]?.["1.3"] ?? 0;
+  return promoteHardDemoFreeBlock(tasks, "1.3", freeCount);
+}
+
+function difficultyRank(level: string | undefined): number {
+  const m = /^(\d+)\s*\/\s*(\d+)/.exec(level ?? "");
+  if (!m) return 0;
+  const num = Number(m[1]);
+  const den = Number(m[2]);
+  if (!Number.isFinite(num) || !Number.isFinite(den) || den <= 0) return 0;
+  return num / den;
 }
 
 type DemoHardOverlay = Partial<
@@ -409,6 +492,9 @@ export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
     comingSoon,
   };
 });
+
+/** Demo practice sidebar shells (Logic 1.3/1.4 order swapped). */
+export const DEMO_MATH_CHAPTERS: MathChapter[] = withDemoMathChapterLayout(MATH_CHAPTERS);
 
 /** @deprecated Prefer loadAllMathChapterTasks — sync flatMap is empty before lazy load. */
 export function allMathTasks(): MathTask[] {

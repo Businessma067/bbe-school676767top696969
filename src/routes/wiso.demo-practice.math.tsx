@@ -4,11 +4,13 @@ import {
   WISO_MATH_CHAPTERS,
   loadWisoDemoMathChapterTasks,
 } from "@/data/wiso-math-chapters";
+import { withDemoMathChapterLayout } from "@/data/math-chapters";
 import { swapWisoDemoMathBlocks } from "@/data/wiso-demo-math";
 import { getWisoMathCourseTheory } from "@/data/wiso-math-course-theory";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PATH = "/wiso/demo-practice/math" as const;
+const DEMO_WISO_MATH_CHAPTERS = withDemoMathChapterLayout(WISO_MATH_CHAPTERS);
 
 export const Route = createFileRoute("/wiso/demo-practice/math")({
   head: () => ({
@@ -42,7 +44,7 @@ function WisoDemoMathTasks() {
     <MathTasksPage
       tier="demo"
       backTo="/wiso/demo-practice"
-      chapters={WISO_MATH_CHAPTERS}
+      chapters={DEMO_WISO_MATH_CHAPTERS}
       loadChapterTasks={loadWisoDemoMathChapterTasksSwapped}
       getTheory={getWisoMathCourseTheory}
       storageKey="wiso.math.demo.progress.v1"
