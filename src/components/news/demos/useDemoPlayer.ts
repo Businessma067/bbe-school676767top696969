@@ -24,6 +24,8 @@ export type DemoPlayerApi = {
 
 /** Sine in-out: no sharp kick at the start or the stop. */
 const easeInOut = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
+/** Zero speed and zero acceleration at both ends, so a faster glide still feels taut. */
+const smootherStep = (t: number) => t * t * t * (t * (t * 6 - 15) + 10);
 /** A blocked frame must not skip ahead. Motion keeps its pace after a hitch. */
 const MAX_FRAME_MS = 34;
 
@@ -34,6 +36,7 @@ const MAX_FRAME_MS = 34;
 export function useDemoPlayer(
   run: (api: DemoPlayerApi) => Promise<void>,
   deps: unknown[] = [],
+  options?: { pace?: number },
 ): {
   stageRef: RefObject<HTMLDivElement | null>;
   scrollRef: RefObject<HTMLDivElement | null>;
@@ -49,6 +52,10 @@ export function useDemoPlayer(
   const visibleRef = useRef(true);
   const [clicking, setClicking] = useState(false);
   const [fade, setFade] = useState(false);
+  const pace = Math.min(2.4, Math.max(1, options?.pace ?? 1));
+  const ease = pace > 1 ? smootherStep : easeInOut;
+  const glidePxPerMs = 0.32 * pace;
+  const glideMinMs = Math.max(200, 320 / pace);
 
   useEffect(() => {
     const el = stageRef.current;
@@ -104,7 +111,7 @@ export function useDemoPlayer(
           const t = Math.min(1, elapsed / duration);
           let result: void | Promise<void>;
           try {
-            result = onFrame(easeInOut(t));
+            result = onFrame(ease(t));
           } catch {
             return finish();
           }
@@ -227,8 +234,8 @@ export function useDemoPlayer(
         setCursorAt(target);
         return true;
       }
-      // Same gentle pace for a short hop and a long cross. 0.32px/ms, never a flick.
-      const d = Math.max(320, Math.min(duration, dist / 0.32));
+      // Same pace for a short hop and a long cross. Never a flick.
+      const d = Math.max(glideMinMs, Math.min(duration, dist / glidePxPerMs));
       await tween(d, (eased) => {
         setCursorAt({
           x: start.x + (target.x - start.x) * eased,
@@ -289,9 +296,12 @@ export function useDemoPlayer(
         const next = Math.max(0, Math.min(start + delta, max));
         if (Math.abs(next - start) < 2) continue;
         const change = next - start;
-        await tween(Math.max(420, Math.min(1400, Math.abs(change) / 0.36)), (eased) => {
-          scroller.scrollTop = start + change * eased;
-        });
+        await tween(
+          Math.max(glideMinMs, Math.min(1400, Math.abs(change) / (0.36 * pace))),
+          (eased) => {
+            scroller.scrollTop = start + change * eased;
+          },
+        );
         await flush();
       }
     };

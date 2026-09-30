@@ -381,37 +381,41 @@ export function CourseMatchDemo() {
     };
   }, [matchedKey, matched]);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
-    setFade(true);
-    await api.wait(160);
-    setSelected(null);
-    setMatched([]);
-    setLines([]);
-    if (api.scroll()) api.scroll()!.scrollTop = 0;
-    setFade(false);
-    await api.wait(200);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
+    async (api) => {
+      setFade(true);
+      await api.wait(160);
+      setSelected(null);
+      setMatched([]);
+      setLines([]);
+      if (api.scroll()) api.scroll()!.scrollTop = 0;
+      setFade(false);
+      await api.wait(200);
 
-    for (const id of MATCH_PAIRS.map((pair) => pair.id)) {
-      if (api.cancelled()) return;
-      await api.moveTo(`[data-d="L${id}"]`, 320);
-      if (api.cancelled()) return;
-      await api.click(() => {
-        if (!api.cancelled()) setSelected(id);
-      });
-      await api.wait(280);
-      if (api.cancelled()) return;
-      await api.moveTo(`[data-d="R${id}"]`, 300);
-      if (api.cancelled()) return;
-      await api.click(() => {
+      for (const id of MATCH_PAIRS.map((pair) => pair.id)) {
         if (api.cancelled()) return;
-        setMatched((current) => (current.includes(id) ? current : [...current, id]));
-        setSelected(null);
-      });
-      await api.wait(480);
-    }
-    if (api.cancelled()) return;
-    await api.wait(600);
-  }, []);
+        await api.moveTo(`[data-d="L${id}"]`, 320);
+        if (api.cancelled()) return;
+        await api.click(() => {
+          if (!api.cancelled()) setSelected(id);
+        });
+        await api.wait(280);
+        if (api.cancelled()) return;
+        await api.moveTo(`[data-d="R${id}"]`, 300);
+        if (api.cancelled()) return;
+        await api.click(() => {
+          if (api.cancelled()) return;
+          setMatched((current) => (current.includes(id) ? current : [...current, id]));
+          setSelected(null);
+        });
+        await api.wait(480);
+      }
+      if (api.cancelled()) return;
+      await api.wait(600);
+    },
+    [],
+    { pace: 1.85 },
+  );
 
   return (
     <CourseFrame
@@ -571,50 +575,54 @@ export function CourseTutorDemo() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
-    setFade(true);
-    await api.wait(160);
-    if (api.cancelled()) return;
-    setFinished(false);
-    setIndex(0);
-    setPicked(null);
-    setScore(0);
-    if (api.scroll()) api.scroll()!.scrollTop = 0;
-    setFade(false);
-    await api.wait(200);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
+    async (api) => {
+      setFade(true);
+      await api.wait(160);
+      if (api.cancelled()) return;
+      setFinished(false);
+      setIndex(0);
+      setPicked(null);
+      setScore(0);
+      if (api.scroll()) api.scroll()!.scrollTop = 0;
+      setFade(false);
+      await api.wait(200);
 
-    for (let q = 0; q < TUTOR_QUESTIONS.length; q++) {
-      if (api.cancelled()) return;
-      const question = TUTOR_QUESTIONS[q];
-      const last = q === TUTOR_QUESTIONS.length - 1;
-      await api.moveTo(`[data-d="c${question.correct}"]`, 340);
-      if (api.cancelled()) return;
-      await api.click(() => {
+      for (let q = 0; q < TUTOR_QUESTIONS.length; q++) {
         if (api.cancelled()) return;
-        setPicked(question.correct);
-        setScore(q + 1);
-      });
-      await api.flush();
-      api.snapTo(`[data-d="c${question.correct}"]`);
-      await api.wait(560);
-      if (api.cancelled()) return;
-      await api.moveTo('[data-d="next"]', 280);
-      if (api.cancelled()) return;
-      await api.click(() => {
+        const question = TUTOR_QUESTIONS[q];
+        const last = q === TUTOR_QUESTIONS.length - 1;
+        await api.moveTo(`[data-d="c${question.correct}"]`, 340);
         if (api.cancelled()) return;
-        if (last) setFinished(true);
-        else {
-          setIndex(q + 1);
-          setPicked(null);
-        }
-      });
-      await api.flush();
-      if (!last) await api.wait(80);
-    }
-    if (api.cancelled()) return;
-    await api.moveTo('[data-d="result"]', 340);
-    await api.wait(720);
-  }, []);
+        await api.click(() => {
+          if (api.cancelled()) return;
+          setPicked(question.correct);
+          setScore(q + 1);
+        });
+        await api.flush();
+        api.snapTo(`[data-d="c${question.correct}"]`);
+        await api.wait(560);
+        if (api.cancelled()) return;
+        await api.moveTo('[data-d="next"]', 280);
+        if (api.cancelled()) return;
+        await api.click(() => {
+          if (api.cancelled()) return;
+          if (last) setFinished(true);
+          else {
+            setIndex(q + 1);
+            setPicked(null);
+          }
+        });
+        await api.flush();
+        if (!last) await api.wait(80);
+      }
+      if (api.cancelled()) return;
+      await api.moveTo('[data-d="result"]', 340);
+      await api.wait(720);
+    },
+    [],
+    { pace: 1.85 },
+  );
 
   const question = TUTOR_QUESTIONS[index] ?? TUTOR_QUESTIONS[0];
   const mood = picked == null ? "idle" : "happy";
