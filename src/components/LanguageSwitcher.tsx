@@ -1,4 +1,4 @@
-import { Globe } from "lucide-react";
+import { Globe, Loader2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { warmLanguage } from "@/lib/i18n/auto-translate";
@@ -21,6 +21,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   const search = useRouterState({ select: (s) => s.location.search });
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
+  const [switching, setSwitching] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const requestRef = useRef(0);
 
@@ -64,8 +65,17 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     const onLocalizable = isLocalizablePath(stripLocalePrefix(pathname));
 
     void (async () => {
-      if (isAutoLang(next)) await warmLanguage(next);
+      if (isAutoLang(next)) {
+        setSwitching(true);
+        // Wait briefly for a clean swap, then show the language and let the
+        // page translate progressively instead of looking frozen.
+        await Promise.race([
+          warmLanguage(next).catch(() => undefined),
+          new Promise((resolve) => setTimeout(resolve, 1200)),
+        ]);
+      }
       if (requestRef.current !== request) return;
+      setSwitching(false);
       if (onLocalizable && target !== withHash) {
         const link = getLocaleLinkProps(withHash, next);
         if (isAutoLang(next)) setLang(next);
@@ -91,10 +101,15 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         }}
         aria-haspopup="listbox"
         aria-expanded={open}
+        aria-busy={switching}
         aria-label={t("Change language")}
         className="touch-target inline-flex h-9 min-w-9 shrink-0 items-center justify-center gap-1 rounded-md border border-border bg-card px-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring sm:h-auto sm:min-w-0 sm:gap-1.5 sm:px-2.5 sm:py-1.5"
       >
-        <Globe className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
+        {switching ? (
+          <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" aria-hidden="true" />
+        ) : (
+          <Globe className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
+        )}
         {active.short}
       </button>
       {open ? (
