@@ -14,7 +14,7 @@ import {
 import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher({ className }: { className?: string }) {
-  const { lang, setLang } = useLanguage();
+  const { lang, setLang, t } = useLanguage();
   const navigate = useNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const hash = useRouterState({ select: (s) => s.location.hash });
@@ -91,7 +91,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         }}
         aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label="Change language"
+        aria-label={t("Change language")}
         className="touch-target inline-flex h-9 min-w-9 shrink-0 items-center justify-center gap-1 rounded-md border border-border bg-card px-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring sm:h-auto sm:min-w-0 sm:gap-1.5 sm:px-2.5 sm:py-1.5"
       >
         <Globe className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
@@ -104,8 +104,8 @@ export function LanguageSwitcher({ className }: { className?: string }) {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               autoFocus
-              placeholder="Search language"
-              aria-label="Search language"
+              placeholder={t("Search language")}
+              aria-label={t("Search language")}
               className="h-8 w-full rounded-md border border-border bg-background px-2 text-sm outline-none focus:ring-2 focus:ring-ring"
             />
           </div>

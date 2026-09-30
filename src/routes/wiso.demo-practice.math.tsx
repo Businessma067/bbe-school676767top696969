@@ -50,6 +50,7 @@ function WisoDemoMathTasks() {
       storageKey="wiso.math.demo.progress.v1"
       contentLang="de"
       fullCourseHref="/wiso/products/full-course"
+      examLabel="WU WiSo exam"
     />
   );
 }

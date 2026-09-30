@@ -541,7 +541,7 @@ const reports = [
     id: 0,
     name: "Anna, Vienna",
     quote:
-      "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click, and I stopped guessing and started managing risk.",
+      "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click, I stopped guessing and started managing risk.",
     badge: "Rank: 19th",
   },
   {

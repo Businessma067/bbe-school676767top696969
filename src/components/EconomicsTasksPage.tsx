@@ -69,6 +69,8 @@ export type EconomicsTasksPageProps = {
   enableContentTranslation?: boolean;
   contentLangStorageKey?: string;
   contentTranslationCacheKey?: string;
+  /** Empty-state exam name, e.g. "WU BBE exam" or "WU WiSo exam". */
+  examLabel?: string;
 };
 
 type Case = {
@@ -132,6 +134,7 @@ export function EconomicsTasksPage({
   enableContentTranslation = false,
   contentLangStorageKey = "wiso.economics.contentLang.v1",
   contentTranslationCacheKey = "wiso.economics.enCache.v2",
+  examLabel = "WU BBE exam",
 }: EconomicsTasksPageProps) {
   const phantomCountFor = (_ch: number): number => phantomLockedCount;
   const freeLimitOf = (ch: number | "revision" | null): number => {
@@ -744,8 +747,8 @@ export function EconomicsTasksPage({
               </div>
               <h2 className="font-display text-xl font-bold">Pick a chapter</h2>
               <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                Tap <span className="font-semibold text-foreground">Chapters</span> above to browse
-                economics tasks for the WU BBE exam.
+                Tap <span className="font-semibold text-foreground">Chapters</span> in the sidebar to
+                browse economics tasks for the {examLabel}.
               </p>
             </div>
           )}

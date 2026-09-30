@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react";
+import { useLanguage } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 
 export type PinnedReview = {
@@ -21,6 +22,7 @@ function PinnedReviewCard({
   badgeExtra?: ReactNode;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <article className="review-pin group relative flex h-full flex-col hover:z-10">
@@ -70,7 +72,7 @@ function PinnedReviewCard({
               ? "text-indigo-700 focus-visible:ring-indigo-600 dark:text-indigo-300"
               : "text-primary focus-visible:ring-primary",
           )}
-          aria-label={expanded ? "Show less" : "Show more"}
+          aria-label={expanded ? t("Show less") : t("Show more")}
         >
           {expanded ? "Show less" : "Show more"}
         </button>

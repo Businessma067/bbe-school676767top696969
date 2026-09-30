@@ -44,6 +44,7 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
           enableTheory
           enableContentTranslation
           theorySubject="wiso-economics"
+          examLabel="WU WiSo exam"
         />
       </RequireFullCourse>
     );

@@ -70,6 +70,7 @@ export function WisoMathTasksPage() {
       getTheory={getTheory}
       storageKey="wiso.math.progress.v1"
       contentLang={lang}
+      examLabel="WU WiSo exam"
       headerActions={
         <TaskContentLangToggle lang={lang} onChange={setContentLang} label="Task" />
       }

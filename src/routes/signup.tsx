@@ -6,6 +6,7 @@ import { signInWithGoogle } from "@/lib/google-auth";
 import { Eye, EyeOff } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { useAuthReturnTo } from "@/hooks/use-auth-return-to";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
@@ -30,7 +31,8 @@ export const Route = createFileRoute("/signup")({
 
 export function SignupPage() {
   const navigate = useLocalizedNavigate();
-  const { returnTo } = Route.useSearch();
+  // Must not use Route.useSearch() — this page also mounts under /$lang/$ splat.
+  const returnTo = useAuthReturnTo();
   const afterAuth = returnTo ?? "/dashboard";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
