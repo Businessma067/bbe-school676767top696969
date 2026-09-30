@@ -389,28 +389,28 @@ export function CourseMatchDemo() {
     setLines([]);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(280);
+    await api.wait(200);
 
     for (const id of MATCH_PAIRS.map((pair) => pair.id)) {
       if (api.cancelled()) return;
-      await api.moveTo(`[data-d="L${id}"]`, 480);
+      await api.moveTo(`[data-d="L${id}"]`, 320);
       if (api.cancelled()) return;
       await api.click(() => {
         if (!api.cancelled()) setSelected(id);
       });
-      await api.wait(420);
+      await api.wait(280);
       if (api.cancelled()) return;
-      await api.moveTo(`[data-d="R${id}"]`, 460);
+      await api.moveTo(`[data-d="R${id}"]`, 300);
       if (api.cancelled()) return;
       await api.click(() => {
         if (api.cancelled()) return;
         setMatched((current) => (current.includes(id) ? current : [...current, id]));
         setSelected(null);
       });
-      await api.wait(720);
+      await api.wait(480);
     }
     if (api.cancelled()) return;
-    await api.wait(900);
+    await api.wait(600);
   }, []);
 
   return (
@@ -581,13 +581,13 @@ export function CourseTutorDemo() {
     setScore(0);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(280);
+    await api.wait(200);
 
     for (let q = 0; q < TUTOR_QUESTIONS.length; q++) {
       if (api.cancelled()) return;
       const question = TUTOR_QUESTIONS[q];
       const last = q === TUTOR_QUESTIONS.length - 1;
-      await api.moveTo(`[data-d="c${question.correct}"]`, 520);
+      await api.moveTo(`[data-d="c${question.correct}"]`, 340);
       if (api.cancelled()) return;
       await api.click(() => {
         if (api.cancelled()) return;
@@ -596,9 +596,9 @@ export function CourseTutorDemo() {
       });
       await api.flush();
       api.snapTo(`[data-d="c${question.correct}"]`);
-      await api.wait(880);
+      await api.wait(560);
       if (api.cancelled()) return;
-      await api.moveTo('[data-d="next"]', 420);
+      await api.moveTo('[data-d="next"]', 280);
       if (api.cancelled()) return;
       await api.click(() => {
         if (api.cancelled()) return;
@@ -609,11 +609,11 @@ export function CourseTutorDemo() {
         }
       });
       await api.flush();
-      if (!last) await api.wait(120);
+      if (!last) await api.wait(80);
     }
     if (api.cancelled()) return;
-    await api.moveTo('[data-d="result"]', 520);
-    await api.wait(1100);
+    await api.moveTo('[data-d="result"]', 340);
+    await api.wait(720);
   }, []);
 
   const question = TUTOR_QUESTIONS[index] ?? TUTOR_QUESTIONS[0];
