@@ -32,6 +32,8 @@ function pairByTerm(term: string) {
 }
 
 const MATCH_PAIRS = MATCH_TERMS.map((term, id) => ({ id, ...pairByTerm(term) }));
+/** Neighbor swaps, so the lines cross instead of running straight across every row. */
+const MATCH_RIGHT = [1, 0, 3, 2];
 
 type TutorQ = {
   mode: "define" | "identify";
@@ -462,14 +464,13 @@ export function CourseMatchDemo() {
           ))}
         </svg>
         <div className="relative z-0 grid grid-cols-2 items-stretch gap-x-8 gap-y-2 sm:gap-x-14">
-          {MATCH_PAIRS.map((pair) => (
+          {MATCH_PAIRS.map((pair, index) => (
             <MatchRow
               key={pair.id}
-              pairId={pair.id}
-              term={pair.term}
-              meaning={pair.explanation}
+              left={pair}
+              right={MATCH_PAIRS[MATCH_RIGHT[index]]}
               selected={selected === pair.id}
-              matched={matched.includes(pair.id)}
+              matched={matched}
             />
           ))}
         </div>
@@ -534,35 +535,33 @@ function MatchCard({
 }
 
 function MatchRow({
-  pairId,
-  term,
-  meaning,
+  left,
+  right,
   selected,
   matched,
 }: {
-  pairId: number;
-  term: string;
-  meaning: string;
+  left: (typeof MATCH_PAIRS)[number];
+  right: (typeof MATCH_PAIRS)[number];
   selected: boolean;
-  matched: boolean;
+  matched: number[];
 }) {
   return (
     <>
       <MatchCard
         side="left"
-        pairId={pairId}
-        text={term}
+        pairId={left.id}
+        text={left.term}
         selected={selected}
-        matched={matched}
-        marker={`L${pairId}`}
+        matched={matched.includes(left.id)}
+        marker={`L${left.id}`}
       />
       <MatchCard
         side="right"
-        pairId={pairId}
-        text={meaning}
+        pairId={right.id}
+        text={right.explanation}
         selected={false}
-        matched={matched}
-        marker={`R${pairId}`}
+        matched={matched.includes(right.id)}
+        marker={`R${right.id}`}
       />
     </>
   );
