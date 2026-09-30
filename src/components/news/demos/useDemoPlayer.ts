@@ -26,6 +26,21 @@ export type DemoPlayerApi = {
 const easeInOut = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
 /** Zero speed and zero acceleration at both ends, so a faster glide still feels taut. */
 const smootherStep = (t: number) => t * t * t * (t * (t * 6 - 15) + 10);
+/**
+ * Steady through the travel. Speed eases only in the first and last 12%,
+ * and meets the cruise with no jerk, so the hand does not crawl to a halt.
+ */
+const flowEase = (t: number) => {
+  const s = 0.12;
+  const v = 1 / (1 - 2 * s + (4 * s) / Math.PI);
+  const shoulder = (v * 2 * s) / Math.PI;
+  if (t < s) return shoulder * (1 - Math.cos((Math.PI * t) / (2 * s)));
+  if (t > 1 - s) {
+    const q = t - (1 - s);
+    return shoulder + v * (1 - 2 * s) + shoulder * Math.sin((Math.PI * q) / (2 * s));
+  }
+  return shoulder + v * (t - s);
+};
 /** A blocked frame must not skip ahead. Motion keeps its pace after a hitch. */
 const MAX_FRAME_MS = 34;
 
@@ -36,7 +51,7 @@ const MAX_FRAME_MS = 34;
 export function useDemoPlayer(
   run: (api: DemoPlayerApi) => Promise<void>,
   deps: unknown[] = [],
-  options?: { pace?: number },
+  options?: { pace?: number; flow?: boolean },
 ): {
   stageRef: RefObject<HTMLDivElement | null>;
   scrollRef: RefObject<HTMLDivElement | null>;
@@ -52,8 +67,9 @@ export function useDemoPlayer(
   const visibleRef = useRef(true);
   const [clicking, setClicking] = useState(false);
   const [fade, setFade] = useState(false);
-  const pace = Math.min(2.4, Math.max(1, options?.pace ?? 1));
-  const ease = pace > 1 ? smootherStep : easeInOut;
+  const flow = options?.flow ?? false;
+  const pace = Math.min(2.4, Math.max(1, options?.pace ?? (flow ? 1.45 : 1)));
+  const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
   const glidePxPerMs = 0.32 * pace;
   const glideMinMs = Math.max(200, 320 / pace);
 

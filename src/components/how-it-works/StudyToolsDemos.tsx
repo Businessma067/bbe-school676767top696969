@@ -97,7 +97,7 @@ async function swipeCard(
   setExit(null);
   setEnter(dir === "right" ? "left" : "right");
   await api.flush();
-  await api.wait(340);
+  await api.wait(140);
   setEnter(null);
 }
 
@@ -194,42 +194,46 @@ export function CourseFlashDemo() {
   const [known, setKnown] = useState(0);
   const [unknown, setUnknown] = useState(0);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
-    setFade(true);
-    await api.wait(160);
-    setIdx(0);
-    setFlipped(false);
-    setExitDir(null);
-    setEnterFrom(null);
-    setKnown(0);
-    setUnknown(0);
-    if (api.scroll()) api.scroll()!.scrollTop = 0;
-    setFade(false);
-    await api.wait(280);
-
-    await api.moveTo('[data-d="term"]', 200);
-    await api.click(() => setFlipped(true));
-    await api.wait(540);
-
-    await api.moveTo('[data-d="dont"]', 160);
-    await api.click(() => setUnknown(1));
-    await swipeCard(api, "left", setExitDir, setEnterFrom, () => {
-      setIdx(1);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
+    async (api) => {
+      setFade(true);
+      await api.wait(160);
+      setIdx(0);
       setFlipped(false);
-    });
+      setExitDir(null);
+      setEnterFrom(null);
+      setKnown(0);
+      setUnknown(0);
+      if (api.scroll()) api.scroll()!.scrollTop = 0;
+      setFade(false);
+      await api.wait(160);
 
-    await api.moveTo('[data-d="flip"]', 160);
-    await api.click(() => setFlipped(true));
-    await api.wait(540);
+      await api.moveTo('[data-d="term"]', 40);
+      await api.click(() => setFlipped(true));
+      await api.wait(70);
 
-    await api.moveTo('[data-d="know"]', 160);
-    await api.click(() => setKnown(1));
-    await swipeCard(api, "right", setExitDir, setEnterFrom, () => {
-      setIdx(2);
-      setFlipped(false);
-    });
-    await api.wait(640);
-  }, []);
+      await api.moveTo('[data-d="dont"]', 40);
+      await api.click(() => setUnknown(1));
+      await swipeCard(api, "left", setExitDir, setEnterFrom, () => {
+        setIdx(1);
+        setFlipped(false);
+      });
+
+      await api.moveTo('[data-d="flip"]', 40);
+      await api.click(() => setFlipped(true));
+      await api.wait(70);
+
+      await api.moveTo('[data-d="know"]', 40);
+      await api.click(() => setKnown(1));
+      await swipeCard(api, "right", setExitDir, setEnterFrom, () => {
+        setIdx(2);
+        setFlipped(false);
+      });
+      await api.wait(280);
+    },
+    [],
+    { flow: true },
+  );
 
   const card = FLASH_CARDS[idx] ?? FLASH_CARDS[0];
   const fresh = DECK_TOTAL - known - unknown;
@@ -396,27 +400,27 @@ export function CourseMatchDemo() {
 
       for (const id of MATCH_PAIRS.map((pair) => pair.id)) {
         if (api.cancelled()) return;
-        await api.moveTo(`[data-d="L${id}"]`, 320);
+        await api.moveTo(`[data-d="L${id}"]`, 40);
         if (api.cancelled()) return;
         await api.click(() => {
           if (!api.cancelled()) setSelected(id);
         });
-        await api.wait(280);
+        await api.wait(50);
         if (api.cancelled()) return;
-        await api.moveTo(`[data-d="R${id}"]`, 300);
+        await api.moveTo(`[data-d="R${id}"]`, 40);
         if (api.cancelled()) return;
         await api.click(() => {
           if (api.cancelled()) return;
           setMatched((current) => (current.includes(id) ? current : [...current, id]));
           setSelected(null);
         });
-        await api.wait(480);
+        await api.wait(70);
       }
       if (api.cancelled()) return;
-      await api.wait(600);
+      await api.wait(360);
     },
     [],
-    { pace: 1.85 },
+    { flow: true },
   );
 
   return (
@@ -591,7 +595,7 @@ export function CourseTutorDemo() {
         if (api.cancelled()) return;
         const question = TUTOR_QUESTIONS[q];
         const last = q === TUTOR_QUESTIONS.length - 1;
-        await api.moveTo(`[data-d="c${question.correct}"]`, 340);
+        await api.moveTo(`[data-d="c${question.correct}"]`, 40);
         if (api.cancelled()) return;
         await api.click(() => {
           if (api.cancelled()) return;
@@ -600,9 +604,9 @@ export function CourseTutorDemo() {
         });
         await api.flush();
         api.snapTo(`[data-d="c${question.correct}"]`);
-        await api.wait(560);
+        await api.wait(70);
         if (api.cancelled()) return;
-        await api.moveTo('[data-d="next"]', 280);
+        await api.moveTo('[data-d="next"]', 40);
         if (api.cancelled()) return;
         await api.click(() => {
           if (api.cancelled()) return;
@@ -613,14 +617,14 @@ export function CourseTutorDemo() {
           }
         });
         await api.flush();
-        if (!last) await api.wait(80);
+        if (!last) await api.wait(40);
       }
       if (api.cancelled()) return;
-      await api.moveTo('[data-d="result"]', 340);
-      await api.wait(720);
+      await api.moveTo('[data-d="result"]', 60);
+      await api.wait(400);
     },
     [],
-    { pace: 1.85 },
+    { flow: true },
   );
 
   const question = TUTOR_QUESTIONS[index] ?? TUTOR_QUESTIONS[0];
