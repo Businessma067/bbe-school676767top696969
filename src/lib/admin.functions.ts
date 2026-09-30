@@ -71,7 +71,10 @@ async function listAllAuthUsers(db: AdminDb, useServiceRole: boolean): Promise<A
   const { data, error } = await db.rpc("admin_list_users");
   if (error) {
     const message = error.message ?? "admin_list_users failed";
-    if (/admin_list_users|could not find|schema cache|does not exist/i.test(message)) {
+    if (
+      !/permission denied/i.test(message) &&
+      /could not find|schema cache|does not exist/i.test(message)
+    ) {
       throw new Error(RPC_MISSING_HINT);
     }
     throw new Error(message);
