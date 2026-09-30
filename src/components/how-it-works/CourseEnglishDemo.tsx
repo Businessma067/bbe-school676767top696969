@@ -35,30 +35,30 @@ export function CourseEnglishDemo() {
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(360);
+    await api.wait(200);
 
     for (const i of [2, 4]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
-      await api.wait(180);
+      await api.wait(50);
     }
 
     await api.moveTo('[data-d="submit"]');
     await api.click(() => setChecked(true));
-    await api.wait(280);
+    await api.wait(70);
 
     await api.moveTo('[data-d="expl"]');
     await api.click(() => setExpl(true));
-    await api.wait(960);
+    await api.wait(80);
 
     await scrollPanelTo(api, '[data-d="expl-scroll"]', '[data-d="show"]');
     await api.moveTo('[data-d="show"]');
     setActive(SHOW_AT);
     await api.click(() => setShown(true));
-    await api.wait(280);
+    await api.wait(70);
     await api.moveTo('[data-d="line"]');
-    await api.wait(1100);
+    await api.wait(400);
   }, []);
 
   const score = demoCorrectCount(marks, TASK.answerKey);

@@ -50,7 +50,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     if (explRef.current) explRef.current.scrollTop = 0;
     setFade(false);
-    await api.wait(450);
+    await api.wait(180);
 
     // Mark B + E (true), then wrongly mark A
     for (const i of [1, 4]) {
@@ -58,23 +58,23 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
       setMarks((m) => ({ ...m, [i]: true }));
-      await api.wait(380);
+      await api.wait(70);
     }
     await api.moveTo('[data-d="m0"]');
     await api.click();
     setMarks((m) => ({ ...m, 0: true }));
-    await api.wait(350);
+    await api.wait(70);
 
     await api.moveTo('[data-d="submit"]');
     await api.click();
     setChecked(true);
-    await api.wait(600);
+    await api.wait(80);
 
     await api.moveTo('[data-d="expl"]');
     await api.click();
     setExpl(true);
     // Panel slides for 900ms — wait until it has settled before chasing rows.
-    await api.wait(960);
+    await api.wait(160);
     for (let i = 0; i < TASK.explanations.length; i++) {
       if (api.cancelled()) return;
       const panel = explRef.current;
@@ -99,7 +99,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
       }
       await api.moveTo(`[data-d="e${i}"]`);
       setActive(i);
-      await api.wait(520);
+      await api.wait(80);
     }
     setActive(-1);
     if (explRef.current) {
@@ -111,7 +111,7 @@ export function DemoWelcomePeek({ caption }: DemoProps) {
         });
       }
     }
-    await api.wait(700);
+    await api.wait(200);
   }, []);
 
   const score = demoCorrectCount(marks, TASK.answerKey);

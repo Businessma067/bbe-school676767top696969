@@ -57,7 +57,7 @@ export function DemoWisoMatch({ caption }: DemoProps) {
     setMatched([]);
     setLines([]);
     setFade(false);
-    await api.wait(480);
+    await api.wait(180);
 
     const order = [0, 1, 2];
     for (const i of order) {
@@ -65,7 +65,7 @@ export function DemoWisoMatch({ caption }: DemoProps) {
       await api.moveTo(`[data-d="t${i}"]`);
       await api.click();
       setSel(i);
-      await api.wait(240);
+      await api.wait(70);
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
       // Highlight the pair immediately on the meaning click — don't wait for the line tween.
@@ -85,9 +85,9 @@ export function DemoWisoMatch({ caption }: DemoProps) {
           );
         });
       }
-      await api.wait(280);
+      await api.wait(70);
     }
-    await api.wait(1100);
+    await api.wait(360);
   }, []);
 
   return (

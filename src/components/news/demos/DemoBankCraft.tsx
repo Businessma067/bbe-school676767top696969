@@ -51,7 +51,7 @@ export function DemoBankCraft({ caption }: DemoProps) {
     setFocus(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(460);
+    await api.wait(180);
 
     const actions: Array<{ i: number; fate: Fate; btn: string }> = [
       { i: 0, fate: "cut", btn: "cut" },
@@ -65,14 +65,14 @@ export function DemoBankCraft({ caption }: DemoProps) {
       await api.moveTo(`[data-d="row${a.i}"]`);
       await api.click();
       setFocus(a.i);
-      await api.wait(280);
+      await api.wait(70);
       await api.moveTo(`[data-d="${a.btn}"]`);
       await api.click();
       setDrafts((d) => d.map((x, j) => (j === a.i ? { ...x, fate: a.fate } : x)));
       setFocus(-1);
-      await api.wait(420);
+      await api.wait(70);
     }
-    await api.wait(1200);
+    await api.wait(360);
   }, []);
 
   return (

@@ -90,12 +90,12 @@ export function DemoTutorAsk({ caption }: DemoProps) {
     setFeedback(false);
     setHesitate(-1);
     setFade(false);
-    await api.wait(500);
+    await api.wait(180);
 
     await api.moveTo('[data-d="c1"]');
     await api.click();
     setHesitate(1);
-    await api.wait(520);
+    await api.wait(80);
     await api.moveTo('[data-d="c0"]');
     await api.click();
     setHesitate(-1);
@@ -103,7 +103,7 @@ export function DemoTutorAsk({ caption }: DemoProps) {
     setMood("happy");
     setFeedback(true);
     setProgress(52);
-    await api.wait(1400);
+    await api.wait(80);
 
     await api.moveTo('[data-d="next"]');
     await api.click();
@@ -111,7 +111,7 @@ export function DemoTutorAsk({ caption }: DemoProps) {
     setMood("idle");
     setFeedback(false);
     setProgress(52);
-    await api.wait(900);
+    await api.wait(200);
   }, []);
 
   return (

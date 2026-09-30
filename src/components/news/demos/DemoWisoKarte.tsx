@@ -59,12 +59,12 @@ export function DemoWisoKarte({ caption }: DemoProps) {
     setExitDir(null);
     setEnterFrom(null);
     setFade(false);
-    await api.wait(480);
+    await api.wait(180);
 
     await api.moveTo('[data-d="card"]');
     await api.click();
     setFlipped(true);
-    await api.wait(560);
+    await api.wait(70);
 
     await api.moveTo('[data-d="know"]');
     await api.click();
@@ -79,7 +79,7 @@ export function DemoWisoKarte({ caption }: DemoProps) {
     await api.moveTo('[data-d="flip"]');
     await api.click();
     setFlipped(true);
-    await api.wait(560);
+    await api.wait(70);
 
     await api.moveTo('[data-d="dont"]');
     await api.click();
@@ -90,13 +90,17 @@ export function DemoWisoKarte({ caption }: DemoProps) {
       setFlipped(false);
       setRated("none");
     });
-    await api.wait(900);
+    await api.wait(360);
   }, []);
 
   const card = CARDS[deck] ?? CARDS[0]!;
 
   return (
-    <DemoShell url="/wiso/flashcards/economics" caption={caption} stageClassName="bg-paper p-3 sm:p-4">
+    <DemoShell
+      url="/wiso/flashcards/economics"
+      caption={caption}
+      stageClassName="bg-paper p-3 sm:p-4"
+    >
       <div ref={stageRef} className="relative">
         <div
           ref={scrollRef}

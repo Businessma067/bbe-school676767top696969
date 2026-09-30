@@ -31,7 +31,9 @@ function Reader({
             <div className="truncate text-[10px] font-bold uppercase tracking-widest text-taupe">
               Chapter {chapter.num} · Theory
             </div>
-            <div className="truncate font-display text-sm font-bold leading-tight">{chapter.title}</div>
+            <div className="truncate font-display text-sm font-bold leading-tight">
+              {chapter.title}
+            </div>
           </div>
           <span
             data-d="chapters"
@@ -82,12 +84,12 @@ export function CourseTheoryDemo() {
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const readChapter = async (num: number) => {
-      await api.moveTo(`[data-d="ch-${num}"]`, 90);
+      await api.moveTo(`[data-d="ch-${num}"]`, 40);
       await api.click();
       setOpen(num);
       await api.flush();
       await skimChapter(api, '[data-d="theory-scroll"]', num);
-      await api.moveTo('[data-d="chapters"]', 70);
+      await api.moveTo('[data-d="chapters"]', 40);
       await api.click();
       setOpen(null);
       await api.flush();

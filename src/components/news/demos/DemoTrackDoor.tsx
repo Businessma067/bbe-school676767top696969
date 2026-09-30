@@ -21,22 +21,22 @@ export function DemoTrackDoor({ caption }: DemoProps) {
     setHover("none");
     setEntered(false);
     setFade(false);
-    await api.wait(500);
+    await api.wait(180);
 
     await api.moveTo('[data-d="wiso"]');
     await api.click();
     setHover("wiso");
-    await api.wait(550);
+    await api.wait(80);
     await api.moveTo('[data-d="bbe"]');
     await api.click();
     setHover("bbe");
     setPicked("bbe");
-    await api.wait(900);
+    await api.wait(160);
 
     await api.moveTo('[data-d="enter"]');
     await api.click();
     setEntered(true);
-    await api.wait(1300);
+    await api.wait(360);
   }, []);
 
   return (

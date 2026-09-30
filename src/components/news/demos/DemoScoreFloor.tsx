@@ -28,7 +28,7 @@ export function DemoScoreFloor({ caption }: DemoProps) {
     setMarks(["blank", "blank", "blank", "blank", "blank"]);
     setRawPin(0);
     setFade(false);
-    await api.wait(460);
+    await api.wait(180);
 
     let current = 0;
     const local: Mark[] = ["blank", "blank", "blank", "blank", "blank"];
@@ -41,18 +41,18 @@ export function DemoScoreFloor({ caption }: DemoProps) {
       const from = current;
       await api.tween(480, (eased) => setRawPin(from + (next - from) * eased));
       current = next;
-      await api.wait(220);
+      await api.wait(50);
     };
 
     for (const i of [0, 2, 3]) {
       if (api.cancelled()) return;
       await apply(i);
     }
-    await api.wait(360);
+    await api.wait(80);
     await apply(1);
-    await api.wait(280);
+    await api.wait(70);
     await apply(4);
-    await api.wait(1100);
+    await api.wait(360);
   }, []);
 
   const floored = Math.max(0, rawPin);

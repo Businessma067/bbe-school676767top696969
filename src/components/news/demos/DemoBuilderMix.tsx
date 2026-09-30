@@ -43,87 +43,90 @@ export function DemoBuilderMix({ caption }: DemoProps) {
 
   const durationMinutes = durationMinutesForQuestionCount(questionCount);
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
-    setFade(true);
-    await api.wait(260);
-    setExpanded({});
-    setSelected([]);
-    setQuestionCount(10);
-    setCountDraft("10");
-    setWeightPoint(balancedPoint());
-    setBuilding(false);
-    setDialog(false);
-    if (api.scroll()) api.scroll()!.scrollTop = 0;
-    setFade(false);
-    await api.wait(420);
-
-    const chapter = chapters[1] ?? chapters[0];
-    if (!chapter) return;
-
-    await api.moveTo(`[data-d="ch-${chapter.num}"]`);
-    await api.click();
-    setExpanded({ [chapter.num]: true });
-    await api.wait(520);
-
-    const picks = chapter.subtopics.slice(0, 3);
-    for (const s of picks) {
-      if (api.cancelled()) return;
-      await api.moveTo(`[data-d="sub-${s.id}"]`);
-      await api.click();
-      setSelected((prev) => [...prev, s.id]);
-      await api.wait(420);
-    }
-    await api.wait(500);
-
-    await api.moveTo('[data-d="count"]');
-    await api.click();
-    for (const chunk of ["", "1", "12"]) {
-      if (api.cancelled()) return;
-      setCountDraft(chunk);
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
+    async (api) => {
+      setFade(true);
       await api.wait(260);
-    }
-    setQuestionCount(12);
-    await api.wait(600);
+      setExpanded({});
+      setSelected([]);
+      setQuestionCount(10);
+      setCountDraft("10");
+      setWeightPoint(balancedPoint());
+      setBuilding(false);
+      setDialog(false);
+      if (api.scroll()) api.scroll()!.scrollTop = 0;
+      setFade(false);
+      await api.wait(180);
 
-    const path: Vec2[] = [
-      { x: 0.12, y: -0.32 },
-      { x: 0.42, y: -0.1 },
-      { x: 0.3, y: 0.28 },
-      { x: -0.18, y: 0.2 },
-      { x: -0.05, y: -0.08 },
-    ];
-    await api.moveTo('[data-d="weight"] [data-weight-handle]');
-    await api.click();
-    let from: Vec2 = balancedPoint();
-    for (const p of path) {
-      if (api.cancelled()) return;
-      const dist = Math.hypot(p.x - from.x, p.y - from.y);
-      const start = from;
-      await api.tween(700 + dist * 900, (eased) => {
-        setWeightPoint({
-          x: start.x + (p.x - start.x) * eased,
-          y: start.y + (p.y - start.y) * eased,
+      const chapter = chapters[1] ?? chapters[0];
+      if (!chapter) return;
+
+      await api.moveTo(`[data-d="ch-${chapter.num}"]`);
+      await api.click();
+      setExpanded({ [chapter.num]: true });
+      await api.wait(80);
+
+      const picks = chapter.subtopics.slice(0, 3);
+      for (const s of picks) {
+        if (api.cancelled()) return;
+        await api.moveTo(`[data-d="sub-${s.id}"]`);
+        await api.click();
+        setSelected((prev) => [...prev, s.id]);
+        await api.wait(70);
+      }
+      await api.wait(80);
+
+      await api.moveTo('[data-d="count"]');
+      await api.click();
+      for (const chunk of ["", "1", "12"]) {
+        if (api.cancelled()) return;
+        setCountDraft(chunk);
+        await api.wait(70);
+      }
+      setQuestionCount(12);
+      await api.wait(100);
+
+      const path: Vec2[] = [
+        { x: 0.12, y: -0.32 },
+        { x: 0.42, y: -0.1 },
+        { x: 0.3, y: 0.28 },
+        { x: -0.18, y: 0.2 },
+        { x: -0.05, y: -0.08 },
+      ];
+      await api.moveTo('[data-d="weight"] [data-weight-handle]');
+      await api.click();
+      let from: Vec2 = balancedPoint();
+      for (const p of path) {
+        if (api.cancelled()) return;
+        const dist = Math.hypot(p.x - from.x, p.y - from.y);
+        const start = from;
+        await api.tween(260 + dist * 240, (eased) => {
+          setWeightPoint({
+            x: start.x + (p.x - start.x) * eased,
+            y: start.y + (p.y - start.y) * eased,
+          });
+          api.snapTo('[data-d="weight"] [data-weight-handle]');
         });
-        api.snapTo('[data-d="weight"] [data-weight-handle]');
-      });
-      from = p;
-      await api.wait(320);
-    }
-    await api.wait(600);
+        from = p;
+        await api.wait(70);
+      }
+      await api.wait(100);
 
-    await api.moveTo('[data-d="build"]');
-    await api.click();
-    setBuilding(true);
-    await api.wait(1700);
-    setBuilding(false);
-    setDialog(true);
-    await api.wait(900);
+      await api.moveTo('[data-d="build"]');
+      await api.click();
+      setBuilding(true);
+      await api.wait(420);
+      setBuilding(false);
+      setDialog(true);
+      await api.wait(160);
 
-    await api.moveTo('[data-d="start"]');
-    await api.click();
-    setDialog(false);
-    await api.wait(1400);
-  }, [chapters]);
+      await api.moveTo('[data-d="start"]');
+      await api.click();
+      setDialog(false);
+      await api.wait(360);
+    },
+    [chapters],
+  );
 
   return (
     <DemoShell
@@ -212,7 +215,9 @@ export function DemoBuilderMix({ caption }: DemoProps) {
                                     {checked ? <Check className="h-3 w-3" strokeWidth={3} /> : null}
                                   </span>
                                   <span>
-                                    <span className="text-sm font-semibold tabular-nums">{s.id}</span>
+                                    <span className="text-sm font-semibold tabular-nums">
+                                      {s.id}
+                                    </span>
                                     <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
                                       {s.title}
                                     </span>
@@ -230,8 +235,8 @@ export function DemoBuilderMix({ caption }: DemoProps) {
 
               <h3 className="mt-6 font-display text-sm font-semibold">Number of Questions</h3>
               <p className="mt-1 text-xs text-muted-foreground">
-                1–{CUSTOM_MOCK_MAX_QUESTIONS} for the whole mock · {CUSTOM_MOCK_MINUTES_PER_QUESTION}{" "}
-                min each timed
+                1–{CUSTOM_MOCK_MAX_QUESTIONS} for the whole mock ·{" "}
+                {CUSTOM_MOCK_MINUTES_PER_QUESTION} min each timed
               </p>
               <div className="mt-3 flex flex-wrap items-center gap-2">
                 <span className="text-sm font-medium">Questions</span>

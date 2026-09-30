@@ -53,18 +53,18 @@ export function DemoMathDelta({ caption }: DemoProps) {
     setExitDir(null);
     setEnterFrom(null);
     setFade(false);
-    await api.wait(460);
+    await api.wait(180);
 
     await api.moveTo('[data-d="card"]');
     await api.click();
     setFlipped(true);
-    await api.wait(820);
+    await api.wait(70);
     for (let i = 0; i < CASES.length; i++) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="case${i}"]`);
       await api.click();
       setLit(i);
-      await api.wait(220);
+      await api.wait(50);
     }
     await api.wait(160);
 
@@ -81,7 +81,7 @@ export function DemoMathDelta({ caption }: DemoProps) {
     await api.moveTo('[data-d="card"]');
     await api.click();
     setFlipped(true);
-    await api.wait(1200);
+    await api.wait(360);
   }, []);
 
   return (
@@ -128,61 +128,61 @@ export function DemoMathDelta({ caption }: DemoProps) {
                   : undefined
               }
             >
-            <div className="flashcard-flip w-full">
-            <div className={cn("flashcard-inner", flipped && "is-flipped")}>
-              <div
-                className="flashcard-face flashcard-front flex flex-col justify-center overflow-hidden rounded-2xl border border-emerald-200 shadow-sm"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(#10b98114 1px, transparent 1px), linear-gradient(90deg, #10b98114 1px, transparent 1px)",
-                  backgroundSize: "18px 18px",
-                  backgroundColor: "#f3fbf7",
-                }}
-              >
-                <div className="flex min-h-[180px] flex-col items-center justify-center p-6 sm:min-h-[200px]">
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-800">
-                    {idx === 0 ? "Quadratic" : "Parabola"}
-                  </p>
-                  <p className="mt-3 font-display text-3xl font-bold tracking-tight">
-                    {idx === 0 ? "Δ = b² − 4ac" : "y = a(x − h)² + k"}
-                  </p>
-                  <p className="mt-4 text-xs text-muted-foreground">Tap the grid to flip</p>
+              <div className="flashcard-flip w-full">
+                <div className={cn("flashcard-inner", flipped && "is-flipped")}>
+                  <div
+                    className="flashcard-face flashcard-front flex flex-col justify-center overflow-hidden rounded-2xl border border-emerald-200 shadow-sm"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(#10b98114 1px, transparent 1px), linear-gradient(90deg, #10b98114 1px, transparent 1px)",
+                      backgroundSize: "18px 18px",
+                      backgroundColor: "#f3fbf7",
+                    }}
+                  >
+                    <div className="flex min-h-[180px] flex-col items-center justify-center p-6 sm:min-h-[200px]">
+                      <p className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-800">
+                        {idx === 0 ? "Quadratic" : "Parabola"}
+                      </p>
+                      <p className="mt-3 font-display text-3xl font-bold tracking-tight">
+                        {idx === 0 ? "Δ = b² − 4ac" : "y = a(x − h)² + k"}
+                      </p>
+                      <p className="mt-4 text-xs text-muted-foreground">Tap the grid to flip</p>
+                    </div>
+                  </div>
+                  <div className="flashcard-face flashcard-back flex flex-col justify-center rounded-2xl border border-emerald-300 bg-card p-5 shadow-sm">
+                    {idx === 0 ? (
+                      <div>
+                        <p className="font-display text-sm font-bold">Discriminant cases</p>
+                        <ul className="mt-3 space-y-2">
+                          {CASES.map((c, i) => (
+                            <li
+                              key={c.id}
+                              data-d={`case${i}`}
+                              className={cn(
+                                "flex items-center justify-between rounded-lg border px-3 py-2 text-sm transition-colors duration-300",
+                                lit >= i
+                                  ? "border-emerald-400 bg-emerald-50"
+                                  : "border-border bg-background text-muted-foreground",
+                              )}
+                            >
+                              <span className="font-mono font-semibold">{c.label}</span>
+                              <span>{c.detail}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center justify-center text-center">
+                        <Parabola />
+                        <p className="mt-3 text-sm leading-relaxed">
+                          Vertex at <span className="font-mono font-semibold">(h, k)</span>. Sign of
+                          a opens the parabola up or down.
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
-              <div className="flashcard-face flashcard-back flex flex-col justify-center rounded-2xl border border-emerald-300 bg-card p-5 shadow-sm">
-                {idx === 0 ? (
-                  <div>
-                    <p className="font-display text-sm font-bold">Discriminant cases</p>
-                    <ul className="mt-3 space-y-2">
-                      {CASES.map((c, i) => (
-                        <li
-                          key={c.id}
-                          data-d={`case${i}`}
-                          className={cn(
-                            "flex items-center justify-between rounded-lg border px-3 py-2 text-sm transition-colors duration-300",
-                            lit >= i
-                              ? "border-emerald-400 bg-emerald-50"
-                              : "border-border bg-background text-muted-foreground",
-                          )}
-                        >
-                          <span className="font-mono font-semibold">{c.label}</span>
-                          <span>{c.detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <div className="flex flex-col items-center justify-center text-center">
-                    <Parabola />
-                    <p className="mt-3 text-sm leading-relaxed">
-                      Vertex at <span className="font-mono font-semibold">(h, k)</span>. Sign of a
-                      opens the parabola up or down.
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-            </div>
             </div>
           </div>
 

@@ -18,21 +18,21 @@ export function DemoDashContinue({ caption }: DemoProps) {
     setPulse(false);
     setTool(-1);
     setFade(false);
-    await api.wait(500);
+    await api.wait(180);
 
     await api.moveTo('[data-d="continue"]');
     await api.click();
     setPulse(true);
-    await api.wait(700);
+    await api.wait(80);
 
     await api.moveTo('[data-d="tool0"]');
     await api.click();
     setTool(0);
-    await api.wait(550);
+    await api.wait(80);
     await api.moveTo('[data-d="tool1"]');
     await api.click();
     setTool(1);
-    await api.wait(1300);
+    await api.wait(360);
   }, []);
 
   const tools = [

@@ -21,7 +21,7 @@ import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { glideFrame, glideRead } from "./course-motion";
 
-const DWELL = 150;
+const DWELL = 40;
 const EXAM_SECONDS = 2 * 60 * 60;
 const QUESTIONS = buildMockExam1Questions();
 const ENGLISH_AT = QUESTIONS.findIndex((question) => question.subject === "english");
@@ -33,9 +33,8 @@ const SHOW = [0, ENGLISH_AT, MATH_AT] as const;
  * grammar is quicker, and a few math items take the most time.
  */
 const TIMES = [
-  128, 152, 114, 176, 139, 163, 102, 192, 133, 147,
-  246, 268, 214, 287, 233, 122, 101, 134, 111, 144, 118,
-  214, 248, 192, 286, 231, 180, 322, 218, 254, 201, 268, 175, 234,
+  128, 152, 114, 176, 139, 163, 102, 192, 133, 147, 246, 268, 214, 287, 233, 122, 101, 134, 111,
+  144, 118, 214, 248, 192, 286, 231, 180, 322, 218, 254, 201, 268, 175, 234,
 ] as const;
 
 if (TIMES.length !== QUESTIONS.length) {
@@ -54,7 +53,10 @@ function trueIndexes(question: ExamQuestion): number[] {
 
 function completedAnswers(): Record<string, boolean[]> {
   return Object.fromEntries(
-    QUESTIONS.map((question) => [question.id, question.statements.map((statement) => statement.isTrue)]),
+    QUESTIONS.map((question) => [
+      question.id,
+      question.statements.map((statement) => statement.isTrue),
+    ]),
   );
 }
 
@@ -92,7 +94,9 @@ export function CourseMockExamDemo() {
         answers: phase === "exam" ? marks : COMPLETED,
         timed: true,
         secondsTaken: TIME_TAKEN,
-        timeByQuestion: Object.fromEntries(QUESTIONS.map((question, i) => [question.id, TIMES[i] ?? 0])),
+        timeByQuestion: Object.fromEntries(
+          QUESTIONS.map((question, i) => [question.id, TIMES[i] ?? 0]),
+        ),
       }),
     [marks, phase],
   );
@@ -121,7 +125,7 @@ export function CourseMockExamDemo() {
         await api.click(() => openQuestion(at));
         await api.flush();
         resetScroll();
-        await api.wait(200);
+        await api.wait(70);
       }
       const question = QUESTIONS[at]!;
       for (const statement of trueIndexes(question)) {
@@ -142,23 +146,23 @@ export function CourseMockExamDemo() {
     await api.click(openReview);
     await api.flush();
     resetScroll();
-    await api.wait(280);
+    await api.wait(80);
 
     await api.moveTo('[data-d="submit-exam"]', DWELL);
     await api.click(() => setPhase("stats"));
     await api.flush();
     resetScroll();
-    await api.wait(480);
+    await api.wait(120);
     await glideFrame(api, '[data-d^="stat"], [data-d="time-chart"]');
-    await api.wait(420);
+    await api.wait(80);
     await api.moveTo('[data-d="tasks"]', DWELL);
     await api.click(() => setPhase("tasks"));
     await api.flush();
     resetScroll();
-    await api.wait(240);
-    await api.moveTo('[data-d="prose0"]', 80);
+    await api.wait(70);
+    await api.moveTo('[data-d="prose0"]', 40);
     await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
-    await api.wait(360);
+    await api.wait(280);
   }, []);
 
   const question = QUESTIONS[index] ?? QUESTIONS[0]!;
@@ -326,7 +330,9 @@ export function CourseMockExamDemo() {
                                     : "border-border bg-background hover:border-primary/60",
                                 )}
                               >
-                                {marked ? <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} /> : null}
+                                {marked ? (
+                                  <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} />
+                                ) : null}
                               </button>
                             </div>
                           </div>

@@ -27,7 +27,7 @@ export function DemoMatchLock({ caption }: DemoProps) {
     setSel(-1);
     setLocked([]);
     setFade(false);
-    await api.wait(460);
+    await api.wait(180);
 
     const order = [1, 0, 2];
     for (const i of order) {
@@ -35,14 +35,14 @@ export function DemoMatchLock({ caption }: DemoProps) {
       await api.moveTo(`[data-d="t${i}"]`);
       await api.click();
       setSel(i);
-      await api.wait(280);
+      await api.wait(70);
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
       setLocked((m) => [...m, i]);
       setSel(-1);
-      await api.wait(420);
+      await api.wait(70);
     }
-    await api.wait(1100);
+    await api.wait(360);
   }, []);
 
   const active = sel >= 0 ? PAIRS[sel] : null;

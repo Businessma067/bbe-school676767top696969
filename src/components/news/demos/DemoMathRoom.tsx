@@ -37,12 +37,12 @@ export function DemoMathRoom({ caption }: DemoProps) {
     setPeek("math");
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(420);
+    await api.wait(160);
 
     await api.moveTo('[data-d="english"]');
     await api.click();
     setPeek("english");
-    await api.wait(420);
+    await api.wait(160);
     await api.moveTo('[data-d="math"]');
     await api.click();
     setPeek("math");
@@ -51,29 +51,29 @@ export function DemoMathRoom({ caption }: DemoProps) {
     await api.moveTo('[data-d="calc"]');
     await api.click();
     setCalc(true);
-    await api.wait(900);
+    await api.wait(160);
     await api.moveTo('[data-d="calc"]');
     await api.click();
     setCalc(false);
-    await api.wait(350);
+    await api.wait(70);
 
     for (const i of [1, 2, 3]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
       setMarks((m) => ({ ...m, [i]: true }));
-      await api.wait(400);
+      await api.wait(70);
     }
     // wrongly mark A
     await api.moveTo('[data-d="m0"]');
     await api.click();
     setMarks((m) => ({ ...m, 0: true }));
-    await api.wait(400);
+    await api.wait(70);
 
     await api.moveTo('[data-d="submit"]');
     await api.click();
     setChecked(true);
-    await api.wait(1500);
+    await api.wait(360);
   }, []);
 
   const score = demoCorrectCount(marks, KEY);

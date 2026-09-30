@@ -30,7 +30,7 @@ export function DemoAnswerSheet({ caption }: DemoProps) {
     setCells((c) => c.map((x) => ({ ...x, filled: false })));
     setHint("Leave unmarked when unsure");
     setFade(false);
-    await api.wait(450);
+    await api.wait(180);
 
     // Fill Q1 A, C, D — leave B blank on purpose
     for (const key of ["1A", "1C", "1D"]) {
@@ -40,23 +40,23 @@ export function DemoAnswerSheet({ caption }: DemoProps) {
       setCells((prev) =>
         prev.map((c) => (`${c.q}${c.letter}` === key ? { ...c, filled: true } : c)),
       );
-      await api.wait(380);
+      await api.wait(70);
     }
     setHint("Blank ≠ wrong: blanks neither add nor subtract");
-    await api.wait(700);
+    await api.wait(100);
 
     await api.moveTo('[data-d="2A"]');
     await api.click();
     setCells((prev) =>
       prev.map((c) => (c.q === 2 && c.letter === "A" ? { ...c, filled: true } : c)),
     );
-    await api.wait(400);
+    await api.wait(70);
     await api.moveTo('[data-d="2B"]');
     await api.click();
     setCells((prev) =>
       prev.map((c) => (c.q === 2 && c.letter === "B" ? { ...c, filled: true } : c)),
     );
-    await api.wait(1400);
+    await api.wait(360);
   }, []);
 
   return (

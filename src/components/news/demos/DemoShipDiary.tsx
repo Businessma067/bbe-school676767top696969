@@ -26,7 +26,7 @@ export function DemoShipDiary({ caption }: DemoProps) {
     setDone([]);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(420);
+    await api.wait(180);
 
     for (let i = 0; i < ENTRIES.length; i++) {
       if (api.cancelled()) return;
@@ -34,9 +34,9 @@ export function DemoShipDiary({ caption }: DemoProps) {
       await api.click();
       setActive(i);
       setDone((d) => (d.includes(i) ? d : [...d, i]));
-      await api.wait(380);
+      await api.wait(70);
     }
-    await api.wait(1100);
+    await api.wait(360);
   }, []);
 
   const spine = done.length === 0 ? 0 : (done.length / ENTRIES.length) * 100;

@@ -51,6 +51,7 @@ const MAX_FRAME_MS = 34;
 export function useDemoPlayer(
   run: (api: DemoPlayerApi) => Promise<void>,
   deps: unknown[] = [],
+  /** `flow` is the study-tool pace: steady travel, a short click, then the next move. */
   options?: { pace?: number; flow?: boolean },
 ): {
   stageRef: RefObject<HTMLDivElement | null>;
@@ -67,7 +68,7 @@ export function useDemoPlayer(
   const visibleRef = useRef(true);
   const [clicking, setClicking] = useState(false);
   const [fade, setFade] = useState(false);
-  const flow = options?.flow ?? false;
+  const flow = options?.flow !== false;
   const pace = Math.min(2.4, Math.max(1, options?.pace ?? (flow ? 1.45 : 1)));
   const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
   const glidePxPerMs = 0.32 * pace;
@@ -375,7 +376,7 @@ export function useDemoPlayer(
       return cursorInside(selector);
     };
 
-    const moveTo = async (selector: string, dwell = 360) => {
+    const moveTo = async (selector: string, dwell = 40) => {
       await flush();
       if (cancelled) return;
       const stage = stageRef.current;

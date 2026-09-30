@@ -62,14 +62,14 @@ export function DemoHardMock({ caption }: DemoProps) {
     setSeconds(48 * 60);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(450);
+    await api.wait(180);
 
     for (const i of [0, 1, 3]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="a${i}"]`);
       await api.click();
       setAnswers((prev) => ({ ...prev, 0: { ...(prev[0] ?? {}), [i]: true } }));
-      await api.wait(380);
+      await api.wait(70);
     }
 
     await api.moveTo('[data-d="tile2"]');
@@ -77,19 +77,19 @@ export function DemoHardMock({ caption }: DemoProps) {
     setQi(1);
     setVisited((v) => (v.includes(1) ? v : [...v, 1]));
     setSeconds((s) => s - 45);
-    await api.wait(500);
+    await api.wait(80);
     // Scroll into the new 5-statement cluster (don't leave the palette covering it)
     await api.moveTo('[data-d="a0"]');
-    await api.wait(300);
+    await api.wait(70);
 
     for (const i of [0, 2, 3]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="a${i}"]`);
       await api.click();
       setAnswers((prev) => ({ ...prev, 1: { ...(prev[1] ?? {}), [i]: true } }));
-      await api.wait(400);
+      await api.wait(70);
     }
-    await api.wait(1400);
+    await api.wait(360);
   }, []);
 
   const q = QUESTIONS[qi]!;

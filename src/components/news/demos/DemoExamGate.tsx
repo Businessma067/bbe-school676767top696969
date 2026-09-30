@@ -47,27 +47,27 @@ export function DemoExamGate({ caption }: DemoProps) {
     setSeconds(7200);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(500);
+    await api.wait(180);
 
     await api.moveTo('[data-d="start"]');
     await api.click();
     setGate(true);
-    await api.wait(700);
+    await api.wait(480);
 
     await api.moveTo('[data-d="account"]');
     await api.click();
     setGate(false);
     setExam(true);
-    await api.wait(900);
+    await api.wait(160);
 
     for (const i of [0, 2, 3]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click();
       setMarks((m) => ({ ...m, [i]: true }));
-      await api.wait(420);
+      await api.wait(70);
     }
-    await api.wait(1400);
+    await api.wait(360);
   }, []);
 
   return (

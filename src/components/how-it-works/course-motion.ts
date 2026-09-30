@@ -188,10 +188,10 @@ async function glideScroller(
   const start = scroller.scrollTop;
   const distance = dest - start;
   if (distance < 8) {
-    await api.wait(420);
+    await api.wait(120);
     return;
   }
-  const duration = Math.round(Math.min(16000, Math.max(4800, distance * pace)));
+  const duration = Math.round(Math.min(5200, Math.max(1400, distance * pace * 0.55)));
   const anchors = captureReading(stage, scroller, trackSelector);
   await glideWithPointer(api, stage, scroller, start, dest, duration, () =>
     placeOnReading(stage, scroller, anchors),
@@ -332,7 +332,7 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
     const distance = dest - fromTop;
     const onFigure = step.el.tagName === "FIGURE";
     if (distance >= 8) {
-      const duration = Math.round(Math.min(8000, Math.max(1800, distance * 1.55)));
+      const duration = Math.round(Math.min(5200, Math.max(1100, distance * 1.15)));
       const anchors = onFigure ? null : captureReading(stage, panel);
       await glideWithPointer(
         api,
@@ -347,7 +347,7 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
       );
     }
     fromTop = panel.scrollTop;
-    if (step.pause) await api.wait(700);
+    if (step.pause) await api.wait(160);
   }
 }
 
@@ -366,10 +366,10 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const dest = max * fraction;
   if (dest < 8) {
-    await api.wait(480);
+    await api.wait(160);
     return;
   }
-  const duration = Math.round(Math.min(4200, Math.max(2000, dest * 1.05)));
+  const duration = Math.round(Math.min(3200, Math.max(1200, dest * 0.72)));
   const anchors = captureReading(stage, panel);
   await glideWithPointer(api, stage, panel, 0, dest, duration, () =>
     placeOnReading(stage, panel, anchors),
@@ -390,10 +390,10 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
   await api.moveTo('[data-d="prose0"]', 40);
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   if (max < 8) {
-    await api.wait(700);
+    await api.wait(200);
     return;
   }
-  const duration = Math.max(3800, Math.min(8400, max * 0.78));
+  const duration = Math.max(1600, Math.min(4200, max * 0.45));
   const anchors = captureReading(stage, panel);
   await glideWithPointer(api, stage, panel, 0, max, duration, () =>
     placeOnReading(stage, panel, anchors),
@@ -425,7 +425,7 @@ export async function scrollPanelTo(
   const next = Math.max(0, Math.min(start + delta, max));
   if (Math.abs(next - start) < 2) return;
   const travel = Math.abs(next - start);
-  await api.tween(Math.round(Math.min(1400, Math.max(560, travel * 1.15))), (eased) => {
+  await api.tween(Math.round(Math.min(800, Math.max(240, travel * 0.7))), (eased) => {
     panel.scrollTop = start + (next - start) * eased;
   });
 }
@@ -459,7 +459,7 @@ async function revealKey(api: DemoPlayerApi, btn: HTMLElement) {
     if (Math.abs(delta) < 2) return;
     const start = scroller.scrollTop;
     const next = start + delta;
-    await api.tween(640, (eased) => {
+    await api.tween(320, (eased) => {
       scroller.scrollTop = start + (next - start) * eased;
     });
     await api.flush();
@@ -495,7 +495,7 @@ export async function parkCalcKeys(api: DemoPlayerApi, labels: string[]) {
   if (Math.abs(delta) < 2) return;
   const start = scroller.scrollTop;
   const next = start + delta;
-  await api.tween(780, (eased) => {
+  await api.tween(360, (eased) => {
     scroller.scrollTop = start + (next - start) * eased;
   });
   await api.flush();

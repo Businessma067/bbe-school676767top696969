@@ -31,31 +31,31 @@ export function CourseEconDemo() {
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(360);
+    await api.wait(200);
 
     await api.moveTo('[data-d="timed"]');
     await api.click(() => setTimed(true));
-    await api.wait(280);
+    await api.wait(70);
 
     for (const i of [0, 1]) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
-      await api.wait(180);
+      await api.wait(50);
     }
 
     await api.moveTo('[data-d="submit"]');
     await api.click(() => setChecked(true));
-    await api.wait(280);
+    await api.wait(70);
 
     await api.moveTo('[data-d="expl"]');
     await api.click(() => {
       setExpl(true);
       setActive(0);
     });
-    await api.wait(900);
+    await api.wait(80);
     await readPanel(api, '[data-d="expl-scroll"]');
-    await api.wait(420);
+    await api.wait(200);
   }, []);
 
   const score = demoCorrectCount(marks, TASK.answerKey);
