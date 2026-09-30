@@ -279,9 +279,8 @@ export function useDemoPlayer(
         if (cy < top) delta = cy - top;
         else if (cy > bottom) delta = cy - bottom;
         const z = zoomBox();
-        const aimX = eb.left + eb.width / 2;
-        if (z && aimX > z.left - 8 && aimX < z.right + 8 && cy > z.top - 12) {
-          const lift = cy - (z.top - 14);
+        if (z && eb.right > z.left && eb.left < z.right && eb.bottom > z.top - 4) {
+          const lift = eb.bottom - (z.top - 12);
           if (lift > delta) delta = lift;
         }
         if (Math.abs(delta) < 2) continue;

@@ -32,8 +32,6 @@ function pairByTerm(term: string) {
 }
 
 const MATCH_PAIRS = MATCH_TERMS.map((term, id) => ({ id, ...pairByTerm(term) }));
-/** Right column is a fixed shuffle of the same four bank cards. */
-const MATCH_RIGHT = [1, 3, 2, 0];
 
 type TutorQ = {
   mode: "define" | "identify";
@@ -76,7 +74,7 @@ function tutorIdentify(term: string, choiceTerms: string[]): TutorQ {
 }
 
 const TUTOR_QUESTIONS: TutorQ[] = [
-  tutorDefine("Labour", ["Land", "Capital (factor of production)", "Labour", "Entrepreneurship"]),
+  tutorDefine("Labour", ["Labour", "Land", "Capital (factor of production)", "Entrepreneurship"]),
   tutorIdentify("Land", ["Labour", "Capital (factor of production)", "Land", "Entrepreneurship"]),
 ];
 
@@ -118,7 +116,9 @@ function StatChip({
         : "border-border bg-card";
   return (
     <div className={cn("rounded-xl border px-2 py-1.5 text-center shadow-sm", cls)}>
-      <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+      <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+        {label}
+      </p>
       <p className="font-display text-base font-bold leading-tight">{value}</p>
     </div>
   );
@@ -139,15 +139,42 @@ function TutorFace({ mood }: { mood: "idle" | "happy" | "sad" }) {
     >
       <svg viewBox="0 0 32 32" className="h-7 w-7 text-foreground/80">
         <rect x="5" y="9" width="22" height="16" rx="5" fill="currentColor" opacity="0.12" />
-        <rect x="5" y="9" width="22" height="16" rx="5" fill="none" stroke="currentColor" strokeWidth="1.4" />
+        <rect
+          x="5"
+          y="9"
+          width="22"
+          height="16"
+          rx="5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.4"
+        />
         <circle cx="12" cy="16" r="1.6" fill="currentColor" />
         <circle cx="20" cy="16" r="1.6" fill="currentColor" />
         {mood === "happy" ? (
-          <path d="M12.5 21.5c1.2 1.4 5.8 1.4 7 0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <path
+            d="M12.5 21.5c1.2 1.4 5.8 1.4 7 0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
         ) : mood === "sad" ? (
-          <path d="M12.5 22.5c1.2-1.2 5.8-1.2 7 0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <path
+            d="M12.5 22.5c1.2-1.2 5.8-1.2 7 0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
         ) : (
-          <path d="M13 21.5h6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <path
+            d="M13 21.5h6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
         )}
         <circle cx="16" cy="5.5" r="1.4" fill="currentColor" opacity="0.75" />
         <line x1="16" y1="7" x2="16" y2="9" stroke="currentColor" strokeWidth="1.3" />
@@ -209,15 +236,25 @@ export function CourseFlashDemo() {
     : undefined;
 
   return (
-    <CourseFrame stageRef={stageRef} scrollRef={scrollRef} cursorRef={cursorRef} clicking={clicking} fade={fade}>
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Study tools · Economics</p>
+    <CourseFrame
+      stageRef={stageRef}
+      scrollRef={scrollRef}
+      cursorRef={cursorRef}
+      clicking={clicking}
+      fade={fade}
+    >
+      <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+        Study tools · Economics
+      </p>
       <h3 className="font-display text-lg font-bold tracking-tight">Flashcards</h3>
       <div className="mt-2 grid grid-cols-3 gap-2">
         <StatChip label="Known" value={known} tone="known" />
         <StatChip label="Don't know" value={unknown} tone="unknown" />
         <StatChip label="New" value={fresh} tone="new" />
       </div>
-      <p className="mb-2 mt-3 text-center text-[11px] font-semibold text-muted-foreground">{CORE.title}</p>
+      <p className="mb-2 mt-3 text-center text-[11px] font-semibold text-muted-foreground">
+        {CORE.title}
+      </p>
       <div className="hiw-study-flash flashcard-viewport relative overflow-x-clip py-1">
         <div
           data-d="card"
@@ -240,8 +277,14 @@ export function CourseFlashDemo() {
                   <Layers className="h-3 w-3" />
                   Term
                 </div>
-                <div data-d="term" className="flex h-full items-center justify-center px-3 text-center">
-                  <FlashcardMath text={card.term} className="font-display text-xl font-bold tracking-tight sm:text-2xl" />
+                <div
+                  data-d="term"
+                  className="flex h-full items-center justify-center px-3 text-center"
+                >
+                  <FlashcardMath
+                    text={card.term}
+                    className="font-display text-xl font-bold tracking-tight sm:text-2xl"
+                  />
                 </div>
               </div>
               <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-4 shadow-sm">
@@ -289,6 +332,17 @@ function curve(x1: number, y1: number, x2: number, y2: number) {
   return `M ${x1} ${y1} C ${mid} ${y1}, ${mid} ${y2}, ${x2} ${y2}`;
 }
 
+/** Card edge in the board's own pixels. The frame is CSS-scaled, so viewport boxes are not SVG units. */
+function boardEdge(board: HTMLElement, el: HTMLElement, edge: "left" | "right") {
+  const boardRect = board.getBoundingClientRect();
+  const rect = el.getBoundingClientRect();
+  const scaleX = boardRect.width / Math.max(board.offsetWidth, 1);
+  const scaleY = boardRect.height / Math.max(board.offsetHeight, 1);
+  const x = (edge === "left" ? rect.right : rect.left) - boardRect.left;
+  const y = rect.top + rect.height / 2 - boardRect.top;
+  return { x: x / scaleX, y: y / scaleY };
+}
+
 /** Study tools · Matching: four real economics pairs, locked in with a line. */
 export function CourseMatchDemo() {
   const boardRef = useRef<HTMLDivElement | null>(null);
@@ -298,22 +352,33 @@ export function CourseMatchDemo() {
   const matchedKey = matched.join("|");
 
   useLayoutEffect(() => {
-    const board = boardRef.current;
-    if (!board) return;
-    const box = board.getBoundingClientRect();
-    const next: { id: number; d: string }[] = [];
-    for (const id of matched) {
-      const left = board.querySelector<HTMLElement>(`[data-match-side="left"][data-match-id="${id}"]`);
-      const right = board.querySelector<HTMLElement>(`[data-match-side="right"][data-match-id="${id}"]`);
-      if (!left || !right) continue;
-      const a = left.getBoundingClientRect();
-      const b = right.getBoundingClientRect();
-      next.push({
-        id,
-        d: curve(a.right - box.left, a.top + a.height / 2 - box.top, b.left - box.left, b.top + b.height / 2 - box.top),
-      });
-    }
-    setLines(next);
+    let cancelled = false;
+    const measure = () => {
+      if (cancelled) return;
+      const board = boardRef.current;
+      if (!board) return;
+      const next: { id: number; d: string }[] = [];
+      for (const id of matched) {
+        const left = board.querySelector<HTMLElement>(
+          `[data-match-side="left"][data-match-id="${id}"]`,
+        );
+        const right = board.querySelector<HTMLElement>(
+          `[data-match-side="right"][data-match-id="${id}"]`,
+        );
+        if (!left || !right) continue;
+        const a = boardEdge(board, left, "left");
+        const b = boardEdge(board, right, "right");
+        next.push({ id, d: curve(a.x, a.y, b.x, b.y) });
+      }
+      setLines(next);
+    };
+    measure();
+    // The frame scale settles a frame later. Measure again so the line stays on the cards.
+    const frame = requestAnimationFrame(() => requestAnimationFrame(measure));
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frame);
+    };
   }, [matchedKey, matched]);
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
@@ -328,78 +393,87 @@ export function CourseMatchDemo() {
 
     for (const id of MATCH_PAIRS.map((pair) => pair.id)) {
       if (api.cancelled()) return;
-      await api.moveTo(`[data-d="L${id}"]`, 170);
-      await api.click(() => setSelected(id));
-      await api.wait(120);
-      const right = MATCH_RIGHT.indexOf(id);
-      await api.moveTo(`[data-d="R${right}"]`, 150);
+      await api.moveTo(`[data-d="L${id}"]`, 480);
+      if (api.cancelled()) return;
       await api.click(() => {
+        if (!api.cancelled()) setSelected(id);
+      });
+      await api.wait(420);
+      if (api.cancelled()) return;
+      await api.moveTo(`[data-d="R${id}"]`, 460);
+      if (api.cancelled()) return;
+      await api.click(() => {
+        if (api.cancelled()) return;
         setMatched((current) => (current.includes(id) ? current : [...current, id]));
         setSelected(null);
       });
-      await api.wait(200);
+      await api.wait(720);
     }
-    await api.wait(700);
+    if (api.cancelled()) return;
+    await api.wait(900);
   }, []);
 
   return (
-    <CourseFrame stageRef={stageRef} scrollRef={scrollRef} cursorRef={cursorRef} clicking={clicking} fade={fade}>
+    <CourseFrame
+      stageRef={stageRef}
+      scrollRef={scrollRef}
+      cursorRef={cursorRef}
+      clicking={clicking}
+      fade={fade}
+      fill={false}
+    >
       <div className="mb-2 flex items-end justify-between gap-2">
         <div>
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Study tools · Economics</p>
-          <h3 className="font-display text-lg font-bold tracking-tight">Connect concept → meaning</h3>
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+            Study tools · Economics
+          </p>
+          <h3 className="font-display text-lg font-bold tracking-tight">
+            Connect concept → meaning
+          </h3>
         </div>
         <span className="rounded-full border border-border bg-card px-2.5 py-1 text-[10px] font-semibold">
           Round 1 · {matched.length}/{MATCH_PAIRS.length}
         </span>
       </div>
       <p className="mb-2 text-[11px] font-semibold text-muted-foreground">{TYPES.title}</p>
+      <div className="mb-1.5 grid grid-cols-2 gap-x-8 sm:gap-x-14">
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Concepts</p>
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Meanings</p>
+      </div>
       <div ref={boardRef} className="relative">
-        <svg className="pointer-events-none absolute inset-0 z-10 h-full w-full overflow-visible" aria-hidden>
+        <svg
+          className="pointer-events-none absolute inset-0 z-10 h-full w-full overflow-visible"
+          aria-hidden
+        >
           {lines.map((line) => (
-            <path key={line.id} d={line.d} fill="none" stroke={ACCENT} strokeWidth={2.5} strokeLinecap="round" opacity={0.85} />
+            <path
+              key={line.id}
+              d={line.d}
+              fill="none"
+              stroke={ACCENT}
+              strokeWidth={2.5}
+              strokeLinecap="round"
+              opacity={0.85}
+            />
           ))}
         </svg>
-        <div className="relative z-0 grid grid-cols-2 items-start gap-x-8 gap-y-2 sm:gap-x-14">
-          <div>
-            <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-taupe">Concepts</p>
-            <ul className="space-y-2">
-              {MATCH_PAIRS.map((pair) => (
-                <MatchCard
-                  key={`L${pair.id}`}
-                  side="left"
-                  pairId={pair.id}
-                  text={pair.term}
-                  selected={selected === pair.id}
-                  matched={matched.includes(pair.id)}
-                  marker={`L${pair.id}`}
-                />
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-taupe">Meanings</p>
-            <ul className="space-y-2">
-              {MATCH_RIGHT.map((id, index) => {
-                const pair = MATCH_PAIRS[id];
-                return (
-                  <MatchCard
-                    key={`R${index}`}
-                    side="right"
-                    pairId={id}
-                    text={pair.explanation}
-                    selected={false}
-                    matched={matched.includes(id)}
-                    marker={`R${index}`}
-                  />
-                );
-              })}
-            </ul>
-          </div>
+        <div className="relative z-0 grid grid-cols-2 items-stretch gap-x-8 gap-y-2 sm:gap-x-14">
+          {MATCH_PAIRS.map((pair) => (
+            <MatchRow
+              key={pair.id}
+              pairId={pair.id}
+              term={pair.term}
+              meaning={pair.explanation}
+              selected={selected === pair.id}
+              matched={matched.includes(pair.id)}
+            />
+          ))}
         </div>
       </div>
       {matched.length === MATCH_PAIRS.length ? (
-        <p className="mt-3 text-center text-sm font-semibold text-emerald-800">Round complete · 4/4</p>
+        <p className="mt-3 text-center text-sm font-semibold text-emerald-800">
+          Round complete · 4/4
+        </p>
       ) : null}
     </CourseFrame>
   );
@@ -421,37 +495,72 @@ function MatchCard({
   marker: string;
 }) {
   return (
-    <li>
-      <div
-        data-d={marker}
-        data-match-side={side}
-        data-match-id={pairId}
+    <div
+      data-d={marker}
+      data-match-side={side}
+      data-match-id={pairId}
+      className={cn(
+        "flex h-full min-h-12 items-center gap-2 rounded-xl border px-2.5 py-2 text-left text-[12px] leading-snug sm:text-[13px]",
+        matched
+          ? "border-emerald-300 bg-emerald-50/90"
+          : selected
+            ? "border-transparent shadow-md"
+            : "border-border bg-card",
+        side === "left" && "font-semibold",
+      )}
+      style={
+        selected && !matched
+          ? { backgroundColor: `${ACCENT}14`, boxShadow: `0 0 0 2px ${ACCENT}` }
+          : undefined
+      }
+    >
+      <span
         className={cn(
-          "flex h-12 items-center gap-2 rounded-xl border px-2.5 text-left text-[12px] leading-snug sm:text-[13px]",
+          "flex h-4 w-4 shrink-0 items-center justify-center rounded-full border text-[10px]",
           matched
-            ? "border-emerald-300 bg-emerald-50/90"
-            : selected
-              ? "border-transparent shadow-md"
-              : "border-border bg-card",
-          side === "left" && "font-semibold",
+            ? "border-emerald-500 bg-emerald-500 text-white"
+            : "border-border bg-background text-muted-foreground",
         )}
-        style={
-          selected && !matched
-            ? { backgroundColor: `${ACCENT}14`, boxShadow: `0 0 0 2px ${ACCENT}` }
-            : undefined
-        }
       >
-        <span
-          className={cn(
-            "mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border text-[10px]",
-            matched ? "border-emerald-500 bg-emerald-500 text-white" : "border-border bg-background text-muted-foreground",
-          )}
-        >
-          {matched ? <Check className="h-3 w-3" /> : "·"}
-        </span>
-        <FlashcardMath text={text} className="line-clamp-2 min-w-0 flex-1" />
-      </div>
-    </li>
+        {matched ? <Check className="h-3 w-3" /> : "·"}
+      </span>
+      <FlashcardMath text={text} className="min-w-0 flex-1" />
+    </div>
+  );
+}
+
+function MatchRow({
+  pairId,
+  term,
+  meaning,
+  selected,
+  matched,
+}: {
+  pairId: number;
+  term: string;
+  meaning: string;
+  selected: boolean;
+  matched: boolean;
+}) {
+  return (
+    <>
+      <MatchCard
+        side="left"
+        pairId={pairId}
+        text={term}
+        selected={selected}
+        matched={matched}
+        marker={`L${pairId}`}
+      />
+      <MatchCard
+        side="right"
+        pairId={pairId}
+        text={meaning}
+        selected={false}
+        matched={matched}
+        marker={`R${pairId}`}
+      />
+    </>
   );
 }
 
@@ -465,39 +574,46 @@ export function CourseTutorDemo() {
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
     await api.wait(160);
+    if (api.cancelled()) return;
+    setFinished(false);
     setIndex(0);
     setPicked(null);
     setScore(0);
-    setFinished(false);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
     await api.wait(280);
 
-    await api.moveTo(`[data-d="c${TUTOR_QUESTIONS[0].correct}"]`, 180);
-    await api.click(() => {
-      setPicked(TUTOR_QUESTIONS[0].correct);
-      setScore(1);
-    });
-    await api.wait(420);
-    await api.moveTo('[data-d="next"]', 150);
-    await api.click(() => {
-      setIndex(1);
-      setPicked(null);
-    });
-    await api.wait(180);
-
-    await api.moveTo(`[data-d="c${TUTOR_QUESTIONS[1].correct}"]`, 180);
-    await api.click(() => {
-      setPicked(TUTOR_QUESTIONS[1].correct);
-      setScore(2);
-    });
-    await api.wait(420);
-    await api.moveTo('[data-d="next"]', 150);
-    await api.click();
-    setFinished(true);
-    await api.flush();
-    await api.moveTo('[data-d="result"]', 80);
-    await api.wait(700);
+    for (let q = 0; q < TUTOR_QUESTIONS.length; q++) {
+      if (api.cancelled()) return;
+      const question = TUTOR_QUESTIONS[q];
+      const last = q === TUTOR_QUESTIONS.length - 1;
+      await api.moveTo(`[data-d="c${question.correct}"]`, 520);
+      if (api.cancelled()) return;
+      await api.click(() => {
+        if (api.cancelled()) return;
+        setPicked(question.correct);
+        setScore(q + 1);
+      });
+      await api.flush();
+      api.snapTo(`[data-d="c${question.correct}"]`);
+      await api.wait(880);
+      if (api.cancelled()) return;
+      await api.moveTo('[data-d="next"]', 420);
+      if (api.cancelled()) return;
+      await api.click(() => {
+        if (api.cancelled()) return;
+        if (last) setFinished(true);
+        else {
+          setIndex(q + 1);
+          setPicked(null);
+        }
+      });
+      await api.flush();
+      if (!last) await api.wait(120);
+    }
+    if (api.cancelled()) return;
+    await api.moveTo('[data-d="result"]', 520);
+    await api.wait(1100);
   }, []);
 
   const question = TUTOR_QUESTIONS[index] ?? TUTOR_QUESTIONS[0];
@@ -513,11 +629,22 @@ export function CourseTutorDemo() {
   const pct = TUTOR_QUESTIONS.length === 0 ? 0 : Math.round((score / TUTOR_QUESTIONS.length) * 100);
 
   return (
-    <CourseFrame stageRef={stageRef} scrollRef={scrollRef} cursorRef={cursorRef} clicking={clicking} fade={fade}>
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Study tools · Economics</p>
+    <CourseFrame
+      stageRef={stageRef}
+      scrollRef={scrollRef}
+      cursorRef={cursorRef}
+      clicking={clicking}
+      fade={fade}
+      fill={false}
+    >
+      <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+        Study tools · Economics
+      </p>
       <h3 className="font-display text-lg font-bold tracking-tight">Theory exam with Tutor Bot</h3>
       <div className="mb-2 mt-2 flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
-        <span className="rounded-full border border-border bg-card px-2 py-0.5 font-semibold text-foreground">Exam 1</span>
+        <span className="rounded-full border border-border bg-card px-2 py-0.5 font-semibold text-foreground">
+          Exam 1
+        </span>
         <span>
           Question {finished ? TUTOR_QUESTIONS.length : index + 1} / {TUTOR_QUESTIONS.length}
         </span>
@@ -531,40 +658,54 @@ export function CourseTutorDemo() {
           <div className="flex gap-3">
             <TutorFace mood="happy" />
             <div>
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Tutor Bot · Exam complete</p>
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                Tutor Bot · Exam complete
+              </p>
               <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3 py-2 text-sm">
                 Strong theory pass. Want another random set?
               </div>
             </div>
           </div>
-          <p data-d="result" className="mt-4 text-center font-display text-3xl font-bold">
-            {score}/{TUTOR_QUESTIONS.length}
-          </p>
-          <p className="text-center text-sm text-muted-foreground">{pct}% correct</p>
+          <div data-d="result" className="mx-auto mt-4 w-fit px-6 py-1 text-center">
+            <p className="font-display text-3xl font-bold leading-none">
+              {score}/{TUTOR_QUESTIONS.length}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">{pct}% correct</p>
+          </div>
         </div>
       ) : (
         <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
           <div className="relative h-1.5 w-full bg-border/60">
             <div
               className="absolute inset-y-0 left-0 transition-all duration-300"
-              style={{ width: `${((index + 1) / TUTOR_QUESTIONS.length) * 100}%`, backgroundColor: ACCENT }}
+              style={{
+                width: `${((index + 1) / TUTOR_QUESTIONS.length) * 100}%`,
+                backgroundColor: ACCENT,
+              }}
             />
           </div>
           <div className="flex gap-3 border-b border-border p-3">
             <TutorFace mood={mood} />
             <div className="min-w-0 flex-1">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Tutor Bot · Q{index + 1}</p>
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                Tutor Bot · Q{index + 1}
+              </p>
               <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3 py-2 text-sm leading-snug">
                 {bubble}
               </div>
             </div>
           </div>
           <div className="space-y-2 p-3">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">{question.prompt}</p>
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+              {question.prompt}
+            </p>
             <div className="rounded-xl border border-dashed border-border bg-background/80 px-3 py-2">
               <FlashcardMath
                 text={question.stem}
-                className={cn("text-sm leading-snug", question.mode === "define" && "font-semibold")}
+                className={cn(
+                  "text-sm leading-snug",
+                  question.mode === "define" && "font-semibold",
+                )}
               />
             </div>
             <p className="text-[11px] text-muted-foreground">{question.sectionTitle}</p>
@@ -596,30 +737,29 @@ export function CourseTutorDemo() {
                       >
                         {showCorrect ? <Check className="h-3 w-3" /> : letter}
                       </span>
-                      <FlashcardMath text={choice} className="line-clamp-2 min-w-0 flex-1" />
+                      <FlashcardMath text={choice} className="min-w-0 flex-1" />
                     </div>
                   </li>
                 );
               })}
             </ul>
-            <div className="flex items-center justify-between gap-2 pt-1">
-              <p className="min-h-4 text-[12px] font-semibold text-foreground">
-                {picked != null ? question.revealTerm : "\u00a0"}
-              </p>
-              <span
-                data-d="next"
-                className={cn(
-                  "inline-flex shrink-0 rounded-md px-3 py-1.5 text-xs font-semibold text-white",
-                  picked == null && "opacity-40",
-                )}
-                style={{ backgroundColor: ACCENT }}
-              >
-                {index + 1 >= TUTOR_QUESTIONS.length ? "See results →" : "Next question →"}
-              </span>
-            </div>
+            {picked != null ? (
+              <div className="flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50/70 px-3 py-2">
+                <span
+                  data-d="next"
+                  className="inline-flex shrink-0 rounded-md px-4 py-2 text-xs font-semibold text-white"
+                  style={{ backgroundColor: ACCENT }}
+                >
+                  {index + 1 >= TUTOR_QUESTIONS.length ? "See results →" : "Next question →"}
+                </span>
+                <p className="min-w-0 text-sm font-semibold">{question.revealTerm}</p>
+              </div>
+            ) : null}
           </div>
         </div>
       )}
+      {/* Room to lift the next button above the zoom control on a short frame. */}
+      <div className="h-8" aria-hidden />
     </CourseFrame>
   );
 }

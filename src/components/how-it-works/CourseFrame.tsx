@@ -83,6 +83,7 @@ export function CourseFrame({
   fade,
   lane = false,
   bleed = false,
+  fill = true,
   children,
   overlay,
 }: {
@@ -95,18 +96,22 @@ export function CourseFrame({
   lane?: boolean;
   /** Edge-to-edge page, the same shell as the live exam. */
   bleed?: boolean;
+  /** Scale a short stage up to the frame. Off when the demo's own clicks must stay put. */
+  fill?: boolean;
   children: ReactNode;
   overlay?: ReactNode;
 }) {
   const innerRef = useRef<HTMLDivElement | null>(null);
-  useFillFrame(!bleed, scrollRef, innerRef);
+  useFillFrame(fill && !bleed, scrollRef, innerRef);
 
   return (
     <div
       ref={stageRef}
       className={cn(
         "absolute inset-0",
-        bleed ? "bg-background [container-name:exam-stage] [container-type:size] [transform:translateZ(0)]" : "bg-paper",
+        bleed
+          ? "bg-background [container-name:exam-stage] [container-type:size] [transform:translateZ(0)]"
+          : "bg-paper",
       )}
     >
       <div
