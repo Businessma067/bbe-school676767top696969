@@ -75,6 +75,7 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Enter WiSo preparation": "Zur WiSo-Vorbereitung",
     "Learn more about the difference between the exams":
       "Mehr über die Unterschiede zwischen den Prüfungen erfahren",
+    "Why Choose Us": "Warum wir",
     "Why Choose US": "Warum wir",
     "3,000+ practice questions": "3.000+ Übungsfragen",
     "3000+ questions": "3000+ Fragen",
@@ -302,6 +303,7 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Enter WiSo preparation": "Перейти до підготовки WiSo",
     "Learn more about the difference between the exams":
       "Дізнатися більше про різницю між іспитами",
+    "Why Choose Us": "Чому ми",
     "Why Choose US": "Чому ми",
     "3,000+ practice questions": "3 000+ практичних питань",
     "3000+ questions": "3000+ питань",

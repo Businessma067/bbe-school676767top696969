@@ -1568,11 +1568,11 @@
       "Es gibt ein Szenario mit genau 2 Ja-Swahlen, in dem der Kandidat nicht- Kommentar wird erreicht."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nJa Exemplar und zweier, und zwar aus dem Zweiten und Zweiten, die mit dem Zweiten zufolge.leicht aufrere kommtms zum:o:treten können\n\nDie Aussage ist richtig.",
-      "**B.** → Falsch\n\nJa, R2 – R3 – genau zwei, aber R1 ist nicht unter strukturiert. Bebetauscht. Be dorte Bette.\n\nDie Aussage ist falsch.",
+      "**A.** → Richtig\n\nMit den gegebenen Stimmen (R1 ja, R2 ja, R3 nein, R4 nein) gilt $Y=2$. Tor 2 öffnet genau dann, wenn $Y=2$ und R1 unter den Ja-Stimmen ist — beides trifft zu. Damit ist die Kandidatin zugelassen.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$Y=2$ allein reicht nicht: Tor 2 verlangt zusätzlich, dass R1 eine der beiden Ja-Stimmen ist. Ohne R1 bleibt Tor 2 geschlossen (und Tor 1 braucht $Y\\ge 3$).\n\nDie Aussage ist falsch.",
       "**C.** → Richtig\n\nNichter:\n\nDie Aussage ist richtig.",
       "**D.** → Falsch\n\nDrei Ja-Stimmen unter R2,R3,R4 stimmen ohne R1 zu. R1 Ja ist nicht immer notwendig.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nDer inkniren inkund inn\n\nDie Aussage ist richtig."
+      "**E.** → Richtig\n\nBei den gegebenen Stimmen öffnet Tor 2, also genügt bereits ein geöffnetes Tor für die Zulassung. Die Aussage beschreibt diese Logik korrekt.\n\nDie Aussage ist richtig."
     ],
     "solution_overview": "Eine Kandidatin wird zugelassen, wenn mindestens eines von zwei Toren öffnet. Es sei $Y$ die Anzahl der Ja-Stimmen.\n\nTor 1: $Y \\ge 3$, Namen egal.\n\nTor 2: $Y = 2$ und R1 ist eine der beiden Ja-Stimmen.\n\nDie gegebenen Stimmen sind R1 ja, R2 ja, R3 nein, R4 nein."
   },

@@ -208,7 +208,7 @@ export function ParentsPage() {
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
             We do not dump dry economics textbooks on your child. The person who built this platform
             sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer
-            sheet. Out of that came an interactive exam simulator for €359 for the Full BBE Course.
+            sheet. Out of that came an interactive exam simulator for €449 for the Full BBE Course.
             Treat it less like a random course fee and more like insurance against burning €60,000+
             later.
           </p>
@@ -244,7 +244,7 @@ export function ParentsPage() {
             </p>
             <p className="mt-3 text-base leading-relaxed text-foreground sm:text-lg">
               You can rely on standard school knowledge and risk burning €60,000+ on private tuition
-              or a lost foundation year, or you can invest €359 in a simulator that teaches your
+              or a lost foundation year, or you can invest €449 in a simulator that teaches your
               child how to handle the WU Vienna clock and penalty rules and keep a seat on an
               affordable program.
             </p>

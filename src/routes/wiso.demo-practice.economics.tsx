@@ -46,6 +46,7 @@ function WisoDemoEconomicsTasks() {
       enableTheory={false}
       freeLimitPerChapter={WISO_DEMO_ECON_FREE_LIMIT}
       phantomLockedCount={3}
+      examLabel="WU WiSo exam"
     />
   );
 }

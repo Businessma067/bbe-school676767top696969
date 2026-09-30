@@ -46,7 +46,7 @@ function WisoFullCourseGermanTasks() {
         enableContentTranslation
         emptyHint={
           <>
-            Tippe oben auf <span className="font-semibold text-foreground">Chapters</span>, um die
+            Tippe in der Seitenleiste auf <span className="font-semibold text-foreground">Chapters</span>, um die
             deutschen Lesetexte für die WiSo-Aufnahmeprüfung zu öffnen.
           </>
         }

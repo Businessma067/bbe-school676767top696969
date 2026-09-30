@@ -42,7 +42,7 @@ function WisoDemoGermanTasks() {
       demoSubsectionFree={DEMO_WISO_GERMAN_SUBSECTION_FREE}
       emptyHint={
         <>
-          Tippe oben auf <span className="font-semibold text-foreground">Chapters</span>, um die
+          Tippe in der Seitenleiste auf <span className="font-semibold text-foreground">Chapters</span>, um die
           kostenlosen Demo-Texte für die WiSo-Aufnahmeprüfung zu öffnen.
         </>
       }

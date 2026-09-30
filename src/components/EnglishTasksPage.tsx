@@ -178,8 +178,8 @@ export function EnglishTasksPage({
   progressSubject = "english",
   emptyHint = (
     <>
-      Tap <span className="font-semibold text-foreground">Chapters</span> above to browse English
-      tasks for the WU BBE exam.
+      Tap <span className="font-semibold text-foreground">Chapters</span> in the sidebar to browse
+      English tasks for the WU BBE exam.
     </>
   ),
   demoSubsectionFree,

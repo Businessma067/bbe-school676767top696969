@@ -91,6 +91,11 @@ export const hubGapExtraDe: Record<string, string> = {
   "Open case assistant": "Fall-Assistent öffnen",
   "Close case assistant": "Fall-Assistent schließen",
   "Change language": "Sprache ändern",
+  "Search language": "Sprache suchen",
+  "Show Economics": "Wirtschaft anzeigen",
+  "Show Math": "Mathematik anzeigen",
+  "Show English": "Englisch anzeigen",
+  "Show German": "Deutsch anzeigen",
 };
 
 export const hubGapExtraUk: Record<string, string> = {
@@ -179,4 +184,9 @@ export const hubGapExtraUk: Record<string, string> = {
   "Open case assistant": "Відкрити асистента кейсу",
   "Close case assistant": "Закрити асистента кейсу",
   "Change language": "Змінити мову",
+  "Search language": "Шукати мову",
+  "Show Economics": "Показати економіку",
+  "Show Math": "Показати математику",
+  "Show English": "Показати англійську",
+  "Show German": "Показати німецьку",
 };

@@ -32,6 +32,14 @@ export const Route = createFileRoute("/$lang/$")({
       });
     }
 
+    // Alias matches EN `/forgot-password` → `/reset-password`.
+    if (path === "/forgot-password") {
+      throw redirect({
+        to: "/$lang/$",
+        params: { lang: params.lang, _splat: "reset-password" },
+      });
+    }
+
     if (!isLocalizablePath(path) || path === "/") throw notFound();
     if (!getLocalizedPage(path)) throw notFound();
   },

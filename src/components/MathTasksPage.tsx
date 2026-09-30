@@ -162,6 +162,8 @@ type Props = {
   fullCourseHref?: string;
   /** Extra controls in the site header (right), e.g. WiSo DE|EN task toggle. */
   headerActions?: ReactNode;
+  /** Empty-state exam name, e.g. "WU BBE exam" or "WU WiSo exam". */
+  examLabel?: string;
 };
 
 export function MathTasksPage({
@@ -173,6 +175,7 @@ export function MathTasksPage({
   contentLang = "en",
   fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
   headerActions,
+  examLabel = "WU BBE exam",
 }: Props) {
   const mathChapterHasTheory = (num: number) => getTheory(num) != null;
   const chapters = chaptersProp ?? MATH_CHAPTERS;
@@ -1048,8 +1051,8 @@ export function MathTasksPage({
               </div>
               <h2 className="font-display text-xl font-bold">Pick a chapter</h2>
               <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                Tap <span className="font-semibold text-foreground">Chapters</span> above to browse
-                mathematics tasks for the WU BBE exam.
+                Tap <span className="font-semibold text-foreground">Chapters</span> in the sidebar to
+                browse mathematics tasks for the {examLabel}.
               </p>
             </div>
           )}

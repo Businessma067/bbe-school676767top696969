@@ -10,6 +10,7 @@ import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
 import { CourseMockExamDemo } from "@/components/how-it-works/CourseMockExamDemo";
 import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
 import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
+import { useLanguage } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 
 type MainTab = "course" | "theory" | "mock-exams" | "mock-builder" | "games";
@@ -248,6 +249,7 @@ const ZOOM_STEP = 0.35;
 const INITIAL_LIGHTBOX_ZOOM = 1;
 
 export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }) {
+  const { t } = useLanguage();
   const courseSubjects = track === "wiso" ? WISO_COURSE_SUBJECTS : BBE_COURSE_SUBJECTS;
   const studyTools = track === "wiso" ? WISO_STUDY_TOOLS : BBE_STUDY_TOOLS;
   const mainTabs = track === "wiso" ? WISO_MAIN_TABS : BBE_MAIN_TABS;
@@ -434,7 +436,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
         >
           <button
             type="button"
-            aria-label="Previous"
+            aria-label={t("Previous")}
             onClick={() => goSlide(slideIndex - 1)}
             className="absolute left-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
           >
@@ -442,7 +444,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
           </button>
           <button
             type="button"
-            aria-label="Next"
+            aria-label={t("Next")}
             onClick={() => goSlide(slideIndex + 1)}
             className="absolute right-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
           >
@@ -488,7 +490,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   <button
                     type="button"
                     onClick={openZoom}
-                    aria-label="Zoom in"
+                    aria-label={t("Zoom in")}
                     className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-black/95 px-3 py-2 text-xs font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
                   >
                     <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
@@ -544,7 +546,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             <button
               key={item.key}
               type="button"
-              aria-label={`Show ${item.label}`}
+              aria-label={t(`Show ${item.label}`)}
               onClick={() => setSlideKey(item.key)}
               className="flex h-10 w-10 items-center justify-center"
             >
@@ -617,7 +619,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                       type="button"
                       onClick={() => nudgeLightboxZoom(-1)}
                       disabled={lightboxScale <= MIN_ZOOM}
-                      aria-label="Zoom out"
+                      aria-label={t("Zoom out")}
                       className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
                     >
                       <ZoomOut className="h-5 w-5" />
@@ -629,7 +631,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                       type="button"
                       onClick={() => nudgeLightboxZoom(1)}
                       disabled={lightboxScale >= MAX_ZOOM}
-                      aria-label="Zoom in"
+                      aria-label={t("Zoom in")}
                       className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
                     >
                       <ZoomIn className="h-5 w-5" />
@@ -640,7 +642,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                 <button
                   type="button"
                   onClick={closeZoom}
-                  aria-label="Close zoom"
+                  aria-label={t("Close zoom")}
                   className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-black/92 text-white shadow-md backdrop-blur-sm transition hover:bg-black"
                 >
                   <X className="h-5 w-5" />

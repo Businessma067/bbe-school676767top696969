@@ -87,7 +87,7 @@ export function WhyChooseUsSection({
       <div className="relative mx-auto max-w-5xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-[1.65rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
-            Why Choose US
+            Why Choose Us
           </h2>
           <p className="mt-3 text-[0.95rem] leading-relaxed text-why-us-fg/80 sm:mt-4 sm:text-lg">
             {resolvedSubtitle}

@@ -5,6 +5,7 @@ import { AuthShell, Field, PasswordField, GoogleButton, Divider } from "./signup
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
 import { signInWithGoogle } from "@/lib/google-auth";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { useAuthReturnTo } from "@/hooks/use-auth-return-to";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
@@ -29,7 +30,8 @@ export const Route = createFileRoute("/login")({
 
 export function LoginPage() {
   const navigate = useLocalizedNavigate();
-  const { returnTo } = Route.useSearch();
+  // Must not use Route.useSearch() — this page also mounts under /$lang/$ splat.
+  const returnTo = useAuthReturnTo();
   const afterAuth = returnTo ?? "/dashboard";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

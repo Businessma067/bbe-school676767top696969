@@ -159,7 +159,7 @@ export function BbeLandingPage() {
           <div className="relative mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
-                Why Choose US
+                Why Choose Us
               </h2>
               <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
                 Standards at WU Vienna are high, and entry is competitive. No software can guarantee
