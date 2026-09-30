@@ -77,7 +77,8 @@ export function CourseEnglishDemo() {
           dimmed={expl && !shown}
           answerKey={TASK.answerKey}
           explanations={TASK.explanations}
-          shown={[SHOW_AT]}
+          shown={TASK.explanations.map((_, index) => index)}
+          bank
           active={active}
           locateAt={SHOW_AT}
           located={shown}

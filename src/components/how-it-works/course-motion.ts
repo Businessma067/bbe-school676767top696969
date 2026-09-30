@@ -40,6 +40,18 @@ export function evenExplanation(raw: string): string {
 }
 
 /**
+ * The explanation body English practice shows for one statement.
+ * Same two strips as EnglishTasksPage: verdict header, then the bold claim line.
+ */
+export function englishBankExplanation(raw: string): string {
+  let expl = raw.trim();
+  if (!expl) return "";
+  expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+  expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
+  return expl;
+}
+
+/**
  * The explanation text the math practice page shows: header stripped, formulas kept.
  * Same cleanup as AllExplanationsPanel, without shortening.
  */

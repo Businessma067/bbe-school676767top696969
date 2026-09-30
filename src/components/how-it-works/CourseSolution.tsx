@@ -3,7 +3,7 @@ import { ExplanationProse } from "@/components/ExplanationProse";
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
 import { cleanExplanation } from "@/lib/clean-explanation";
-import { evenExplanation, fullExplanation } from "./course-motion";
+import { englishBankExplanation, evenExplanation, fullExplanation } from "./course-motion";
 import { cn } from "@/lib/utils";
 
 const LETTERS = "ABCDE";
@@ -18,6 +18,7 @@ export function CourseSolution({
   active,
   math = false,
   full = false,
+  bank = false,
   overview,
   locateAt,
   located = false,
@@ -32,6 +33,8 @@ export function CourseSolution({
   math?: boolean;
   /** Render the bank text in full, including formula blocks. */
   full?: boolean;
+  /** English practice body, unshortened, same strips as the task page. */
+  bank?: boolean;
   overview?: string;
   locateAt?: number;
   located?: boolean;
@@ -100,11 +103,13 @@ export function CourseSolution({
               const letter = LETTERS[i];
               const verdict = answerKey[i] ? "True" : "False";
               const raw = explanations[i] ?? "";
-              const body = full
-                ? math
-                  ? fullExplanation(raw)
-                  : cleanExplanation(raw)
-                : evenExplanation(raw);
+              const body = bank
+                ? englishBankExplanation(raw)
+                : full
+                  ? math
+                    ? fullExplanation(raw)
+                    : cleanExplanation(raw)
+                  : evenExplanation(raw);
               const prose = `**${letter}.** → ${verdict}\n\n${body}`;
               return (
                 <div
@@ -118,7 +123,26 @@ export function CourseSolution({
                   )}
                 >
                   <div data-d={`e${i}`} className="pointer-events-none absolute left-8 top-7 h-2 w-2" />
-                  {math ? (
+                  {bank ? (
+                    <>
+                      <div className="mb-3 flex flex-wrap items-center gap-2">
+                        <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                          {letter}
+                        </span>
+                        <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
+                          {answerKey[i] ? "TRUE" : "FALSE"}
+                        </span>
+                        {locateAt === i ? (
+                          <span data-d="show" className={practiceInlineLocateButtonClass(located)}>
+                            {located ? "Located in text" : "Show solution in the text"}
+                          </span>
+                        ) : null}
+                      </div>
+                      <div data-d={`prose${i}`}>
+                        <ExplanationProse text={body} />
+                      </div>
+                    </>
+                  ) : math ? (
                     <div data-d={`prose${i}`} className="text-[13px] leading-relaxed text-foreground/90">
                       <FlashcardMath text={prose} />
                     </div>
@@ -127,7 +151,7 @@ export function CourseSolution({
                       <ExplanationProse text={prose} className="text-[13px]" />
                     </div>
                   )}
-                  {locateAt === i ? (
+                  {!bank && locateAt === i ? (
                     <span data-d="show" className={cn("mt-3", practiceInlineLocateButtonClass(located))}>
                       {located ? "Located in text" : "Show solution in the text"}
                     </span>
