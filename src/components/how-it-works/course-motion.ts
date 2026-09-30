@@ -69,46 +69,101 @@ export function fullExplanation(raw: string): string {
   return expl;
 }
 
-function readingPoint(stage: HTMLElement, panel: HTMLElement, selector = "[data-d^='prose']") {
-  const sr = stage.getBoundingClientRect();
-  const pr = panel.getBoundingClientRect();
-  let viewTop = Math.max(pr.top, sr.top);
-  const viewBottom = Math.min(pr.bottom, sr.bottom);
-  const chrome = stage.querySelector<HTMLElement>("[data-d='exam-chrome']");
-  if (chrome) {
-    const cover = chrome.getBoundingClientRect().bottom;
-    if (cover > viewTop) viewTop = cover + 4;
-  }
-  const lines = [...panel.querySelectorAll<HTMLElement>(selector)];
-  const mid = (viewTop + viewBottom) / 2;
-  let best: { x: number; y: number; dist: number } | null = null;
-  for (const node of lines) {
-    const box = node.getBoundingClientRect();
-    const top = Math.max(box.top, viewTop + 6);
-    const bottom = Math.min(box.bottom, viewBottom - 6);
-    const left = Math.max(box.left, sr.left + 8);
-    const right = Math.min(box.right, Math.min(pr.right, sr.right) - 8);
-    if (bottom - top < 8 || right - left < 8) continue;
-    const y = (top + bottom) / 2;
-    const dist = Math.abs(y - mid);
-    if (best && dist >= best.dist) continue;
-    best = {
-      x: left - sr.left + Math.min((right - left) * 0.32, 88) - 5,
-      y: y - sr.top - 3,
-      dist,
-    };
-  }
-  return best;
-}
-
 function overflowParent(el: HTMLElement, stage: HTMLElement): HTMLElement | null {
   let node = el.parentElement;
   while (node && node !== stage) {
     const oy = getComputedStyle(node).overflowY;
-    if ((oy === "auto" || oy === "scroll") && node.scrollHeight > node.clientHeight + 12) return node;
+    if ((oy === "auto" || oy === "scroll") && node.scrollHeight > node.clientHeight + 12)
+      return node;
     node = node.parentElement;
   }
   return null;
+}
+
+type ReadingAnchor = { mid: number; x: number };
+
+/** Line positions in the scroller's content, measured once so later frames do not reflow. */
+function captureReading(
+  stage: HTMLElement,
+  panel: HTMLElement,
+  selector = "[data-d^='prose']",
+): ReadingAnchor[] {
+  const sr = stage.getBoundingClientRect();
+  const pr = panel.getBoundingClientRect();
+  const scroll = panel.scrollTop;
+  const anchors: ReadingAnchor[] = [];
+  for (const node of panel.querySelectorAll<HTMLElement>(selector)) {
+    const box = node.getBoundingClientRect();
+    if (box.width < 8 || box.height < 8) continue;
+    const left = Math.max(box.left, sr.left + 8);
+    const right = Math.min(box.right, Math.min(pr.right, sr.right) - 8);
+    if (right - left < 8) continue;
+    anchors.push({
+      mid: box.top - pr.top + scroll + box.height / 2,
+      x: left - sr.left + Math.min((right - left) * 0.32, 88) - 5,
+    });
+  }
+  return anchors;
+}
+
+function placeOnReading(
+  stage: HTMLElement,
+  panel: HTMLElement,
+  anchors: ReadingAnchor[],
+): { x: number; y: number } | null {
+  if (!anchors.length) return null;
+  const sr = stage.getBoundingClientRect();
+  const pr = panel.getBoundingClientRect();
+  const viewTop = Math.max(pr.top, sr.top);
+  const viewBottom = Math.min(pr.bottom, sr.bottom);
+  if (viewBottom - viewTop < 16) return null;
+  const contentMid = panel.scrollTop + (viewTop + viewBottom) / 2 - pr.top;
+  let best = anchors[0];
+  let bestDist = Math.abs(best.mid - contentMid);
+  for (let i = 1; i < anchors.length; i++) {
+    const dist = Math.abs(anchors[i].mid - contentMid);
+    if (dist < bestDist) {
+      best = anchors[i];
+      bestDist = dist;
+    }
+  }
+  return {
+    x: best.x,
+    y: pr.top - sr.top + (best.mid - panel.scrollTop) - 3,
+  };
+}
+
+/**
+ * Scroll while the pointer eases onto the passing line.
+ * The line list is captured once, so each frame only moves scrollTop.
+ */
+async function glideWithPointer(
+  api: DemoPlayerApi,
+  stage: HTMLElement,
+  panel: HTMLElement,
+  fromTop: number,
+  dest: number,
+  duration: number,
+  spotAt: (eased: number) => { x: number; y: number } | null,
+) {
+  const from = cursorFrom(stage);
+  let x = from.x;
+  let y = from.y;
+  await api.tween(duration, (eased) => {
+    panel.scrollTop = fromTop + (dest - fromTop) * eased;
+    const spot = spotAt(eased);
+    if (!spot) return;
+    let dx = (spot.x - x) * 0.2;
+    let dy = (spot.y - y) * 0.2;
+    const step = Math.hypot(dx, dy);
+    if (step > 24) {
+      dx *= 24 / step;
+      dy *= 24 / step;
+    }
+    x += dx;
+    y += dy;
+    api.setCursorAt({ x, y });
+  });
 }
 
 function cursorFrom(stage: HTMLElement) {
@@ -136,18 +191,11 @@ async function glideScroller(
     await api.wait(420);
     return;
   }
-  const from = cursorFrom(stage);
-  const duration = Math.round(Math.min(14000, Math.max(4200, distance * pace)));
-  await api.tween(duration, (eased) => {
-    scroller.scrollTop = start + distance * eased;
-    const spot = readingPoint(stage, scroller, trackSelector);
-    if (!spot) return;
-    const blend = Math.min(1, eased / 0.08);
-    api.setCursorAt({
-      x: from.x + (spot.x - from.x) * blend,
-      y: from.y + (spot.y - from.y) * blend,
-    });
-  });
+  const duration = Math.round(Math.min(16000, Math.max(4800, distance * pace)));
+  const anchors = captureReading(stage, scroller, trackSelector);
+  await glideWithPointer(api, stage, scroller, start, dest, duration, () =>
+    placeOnReading(stage, scroller, anchors),
+  );
 }
 
 /** Read the whole results sheet, from the score down through the question table. */
@@ -282,24 +330,21 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
     if (api.cancelled()) return;
     const dest = step.dest;
     const distance = dest - fromTop;
-    const cursor = stage.querySelector<HTMLElement>("[data-cx]");
-    const from = {
-      x: Number(cursor?.dataset.cx ?? 36),
-      y: Number(cursor?.dataset.cy ?? 36),
-    };
     const onFigure = step.el.tagName === "FIGURE";
     if (distance >= 8) {
-      const duration = Math.round(Math.min(3800, Math.max(880, distance * 0.55)));
-      await api.tween(duration, (eased) => {
-        panel.scrollTop = fromTop + distance * eased;
-        const spot = (onFigure ? pointOn(stage, step.el) : null) ?? readingPoint(stage, panel);
-        if (!spot) return;
-        const blend = Math.min(1, eased / 0.12);
-        api.setCursorAt({
-          x: from.x + (spot.x - from.x) * blend,
-          y: from.y + (spot.y - from.y) * blend,
-        });
-      });
+      const duration = Math.round(Math.min(8000, Math.max(1800, distance * 1.55)));
+      const anchors = onFigure ? null : captureReading(stage, panel);
+      await glideWithPointer(
+        api,
+        stage,
+        panel,
+        fromTop,
+        dest,
+        duration,
+        () =>
+          (onFigure ? pointOn(stage, step.el) : null) ??
+          (anchors ? placeOnReading(stage, panel, anchors) : null),
+      );
     }
     fromTop = panel.scrollTop;
     if (step.pause) await api.wait(700);
@@ -324,22 +369,11 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
     await api.wait(480);
     return;
   }
-  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
-  const from = {
-    x: Number(cursor?.dataset.cx ?? 36),
-    y: Number(cursor?.dataset.cy ?? 36),
-  };
-  const duration = Math.round(Math.min(3000, Math.max(1750, dest * 0.92)));
-  await api.tween(duration, (eased) => {
-    panel.scrollTop = dest * eased;
-    const spot = readingPoint(stage, panel);
-    if (!spot) return;
-    const blend = Math.min(1, eased / 0.1);
-    api.setCursorAt({
-      x: from.x + (spot.x - from.x) * blend,
-      y: from.y + (spot.y - from.y) * blend,
-    });
-  });
+  const duration = Math.round(Math.min(4200, Math.max(2000, dest * 1.05)));
+  const anchors = captureReading(stage, panel);
+  await glideWithPointer(api, stage, panel, 0, dest, duration, () =>
+    placeOnReading(stage, panel, anchors),
+  );
 }
 
 /**
@@ -359,22 +393,11 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
     await api.wait(700);
     return;
   }
-  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
-  const from = {
-    x: Number(cursor?.dataset.cx ?? 36),
-    y: Number(cursor?.dataset.cy ?? 36),
-  };
-  const duration = Math.max(3200, Math.min(7000, max * 0.62));
-  await api.tween(duration, (eased) => {
-    panel.scrollTop = max * eased;
-    const spot = readingPoint(stage, panel);
-    if (!spot) return;
-    const blend = Math.min(1, eased / 0.16);
-    api.setCursorAt({
-      x: from.x + (spot.x - from.x) * blend,
-      y: from.y + (spot.y - from.y) * blend,
-    });
-  });
+  const duration = Math.max(3800, Math.min(8400, max * 0.78));
+  const anchors = captureReading(stage, panel);
+  await glideWithPointer(api, stage, panel, 0, max, duration, () =>
+    placeOnReading(stage, panel, anchors),
+  );
 }
 
 /** Least scroll that puts `item` fully inside the panel. No-op when it already fits. */
@@ -401,7 +424,8 @@ export async function scrollPanelTo(
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const next = Math.max(0, Math.min(start + delta, max));
   if (Math.abs(next - start) < 2) return;
-  await api.tween(480, (eased) => {
+  const travel = Math.abs(next - start);
+  await api.tween(Math.round(Math.min(1400, Math.max(560, travel * 1.15))), (eased) => {
     panel.scrollTop = start + (next - start) * eased;
   });
 }
@@ -435,7 +459,7 @@ async function revealKey(api: DemoPlayerApi, btn: HTMLElement) {
     if (Math.abs(delta) < 2) return;
     const start = scroller.scrollTop;
     const next = start + delta;
-    await api.tween(380, (eased) => {
+    await api.tween(640, (eased) => {
       scroller.scrollTop = start + (next - start) * eased;
     });
     await api.flush();
@@ -451,9 +475,7 @@ export async function parkCalcKeys(api: DemoPlayerApi, labels: string[]) {
   const root = api.stage()?.querySelector("[data-d='calc-panel']");
   if (!root) return;
   const buttons = labels
-    .map((label) =>
-      root.querySelector<HTMLButtonElement>(`[data-calc-key="${CSS.escape(label)}"]`),
-    )
+    .map((label) => root.querySelector<HTMLButtonElement>(`[data-calc-key="${CSS.escape(label)}"]`))
     .filter((btn): btn is HTMLButtonElement => !!btn);
   if (!buttons.length) return;
   const scroller = scrollerOf(buttons[0]);
@@ -473,7 +495,7 @@ export async function parkCalcKeys(api: DemoPlayerApi, labels: string[]) {
   if (Math.abs(delta) < 2) return;
   const start = scroller.scrollTop;
   const next = start + delta;
-  await api.tween(520, (eased) => {
+  await api.tween(780, (eased) => {
     scroller.scrollTop = start + (next - start) * eased;
   });
   await api.flush();

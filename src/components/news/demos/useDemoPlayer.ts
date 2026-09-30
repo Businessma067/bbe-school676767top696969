@@ -22,7 +22,10 @@ export type DemoPlayerApi = {
   scroll: () => HTMLDivElement | null;
 };
 
-const easeInOut = (t: number) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+/** Sine in-out: no sharp kick at the start or the stop. */
+const easeInOut = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
+/** A blocked frame must not skip ahead. Motion keeps its pace after a hitch. */
+const MAX_FRAME_MS = 34;
 
 /**
  * Shared rAF cursor loop used by news unique demos.
@@ -91,10 +94,14 @@ export function useDemoPlayer(
           afterFrame(onFrame(1), finish);
           return;
         }
-        const t0 = performance.now();
+        let elapsed = 0;
+        let last = performance.now();
         const step = (now: number) => {
           if (cancelled) return finish();
-          const t = Math.min(1, (now - t0) / duration);
+          const dt = Math.min(MAX_FRAME_MS, Math.max(0, now - last));
+          last = now;
+          elapsed += dt;
+          const t = Math.min(1, elapsed / duration);
           let result: void | Promise<void>;
           try {
             result = onFrame(easeInOut(t));
@@ -211,7 +218,7 @@ export function useDemoPlayer(
       }
     };
 
-    const glideCursor = async (target: { x: number; y: number }, duration = 1100) => {
+    const glideCursor = async (target: { x: number; y: number }, duration = 1500) => {
       // Never slide the pointer into the empty stage edge when the target is clipped.
       if (!pointInsideStage(target)) return false;
       const start = { ...cursorPos.current };
@@ -220,8 +227,8 @@ export function useDemoPlayer(
         setCursorAt(target);
         return true;
       }
-      // A little slower than a snap, so short hops and long crosses both ease.
-      const d = Math.max(150, Math.min(duration, dist / 0.56));
+      // Same gentle pace for a short hop and a long cross. 0.32px/ms, never a flick.
+      const d = Math.max(320, Math.min(duration, dist / 0.32));
       await tween(d, (eased) => {
         setCursorAt({
           x: start.x + (target.x - start.x) * eased,
@@ -248,7 +255,12 @@ export function useDemoPlayer(
         node = node.parentElement;
       }
       const box = scrollRef.current;
-      if (box && box.contains(el) && !scrollers.includes(box) && box.scrollHeight > box.clientHeight + 2) {
+      if (
+        box &&
+        box.contains(el) &&
+        !scrollers.includes(box) &&
+        box.scrollHeight > box.clientHeight + 2
+      ) {
         scrollers.push(box);
       }
       for (const scroller of scrollers) {
@@ -278,7 +290,7 @@ export function useDemoPlayer(
         const next = Math.max(0, Math.min(start + delta, max));
         if (Math.abs(next - start) < 2) continue;
         const change = next - start;
-        await tween(Math.max(200, Math.min(680, Math.abs(change) / 0.62)), (eased) => {
+        await tween(Math.max(420, Math.min(1400, Math.abs(change) / 0.36)), (eased) => {
           scroller.scrollTop = start + change * eased;
         });
         await flush();
