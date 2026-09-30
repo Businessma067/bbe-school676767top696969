@@ -3,7 +3,6 @@ import { getAutoLanguage, isAutoLang, type AutoLang } from "@/lib/i18n/languages
 
 const CACHE_KEY = "bbe.autotr.v1";
 const CACHE_LIMIT = 180_000;
-const SEPARATOR = "\n⟦⟧\n";
 const LETTER = /[A-Za-zÀ-ÿ]/;
 
 type ChromeTranslator = {
@@ -190,11 +189,10 @@ function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T | null> {
   });
 }
 
-function joinSegments(payload: unknown): string {
-  if (!Array.isArray(payload) || !Array.isArray(payload[0])) return "";
-  return (payload[0] as unknown[])
-    .map((part) => (Array.isArray(part) && typeof part[0] === "string" ? part[0] : ""))
-    .join("");
+function readTranslation(part: unknown): string {
+  if (typeof part === "string") return part.trim();
+  if (Array.isArray(part) && typeof part[0] === "string") return part[0].trim();
+  return "";
 }
 
 function chunkTexts(texts: string[], maxCount: number, maxChars: number): string[][] {
@@ -202,59 +200,54 @@ function chunkTexts(texts: string[], maxCount: number, maxChars: number): string
   let current: string[] = [];
   let size = 0;
   for (const text of texts) {
-    const next = size + text.length + SEPARATOR.length;
+    const next = size + text.length + 1;
     if (current.length && (current.length >= maxCount || next > maxChars)) {
       chunks.push(current);
       current = [];
       size = 0;
     }
     current.push(text);
-    size += text.length + SEPARATOR.length;
+    size += text.length + 1;
   }
   if (current.length) chunks.push(current);
   return chunks;
 }
 
-/** null means the request failed and the caller should retry. */
-async function googleRaw(target: string, text: string): Promise<string | null> {
-  const url = new URL("https://translate.googleapis.com/translate_a/single");
-  url.searchParams.set("client", "gtx");
-  url.searchParams.set("sl", "en");
-  url.searchParams.set("tl", target);
-  url.searchParams.set("dt", "t");
-  url.searchParams.set("q", text);
+/**
+ * Batch translate. The gtx single-string endpoint rate-limits and then the
+ * MyMemory fallback only covers a few languages, so some picks stayed English.
+ * This client returns one string per `q` and allows the browser call.
+ */
+async function googleChunk(target: string, texts: string[]): Promise<(string | null)[] | null> {
+  const body = new URLSearchParams();
+  for (const text of texts) body.append("q", text);
+  const url = `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=${encodeURIComponent(target)}`;
   for (let attempt = 0; attempt < 3; attempt += 1) {
-    const response = await fetch(url);
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body,
+      });
+    } catch {
+      return null;
+    }
     if (response.status === 429) {
       await new Promise((resolve) => setTimeout(resolve, 700 * (attempt + 1)));
       continue;
     }
     if (!response.ok) return null;
-    return joinSegments(await response.json());
+    let payload: unknown;
+    try {
+      payload = await response.json();
+    } catch {
+      return null;
+    }
+    if (!Array.isArray(payload) || payload.length !== texts.length) return null;
+    return payload.map((part) => readTranslation(part) || null);
   }
   return null;
-}
-
-async function googleChunk(target: string, texts: string[]): Promise<(string | null)[] | null> {
-  if (texts.length === 1) {
-    const raw = await googleRaw(target, texts[0]);
-    if (raw == null) return null;
-    const value = raw.trim();
-    return [value && value !== texts[0] ? value : null];
-  }
-  const raw = await googleRaw(target, texts.join(SEPARATOR));
-  if (raw == null) return null;
-  const parts = raw.split("⟦⟧").map((part) => part.trim());
-  if (parts.length !== texts.length) {
-    const singles: (string | null)[] = [];
-    for (const text of texts) {
-      const one = await googleChunk(target, [text]);
-      if (!one) return null;
-      singles.push(one[0]);
-    }
-    return singles;
-  }
-  return parts.map((part, index) => (part && part !== texts[index] ? part : null));
 }
 
 async function translateWithGoogle(
@@ -262,12 +255,17 @@ async function translateWithGoogle(
   texts: string[],
 ): Promise<(string | null)[] | null> {
   const out: (string | null)[] = [];
+  let any = false;
   for (const chunk of chunkTexts(texts, 30, 2200)) {
     const part = await googleChunk(target, chunk);
-    if (!part) return null;
+    if (!part) {
+      out.push(...chunk.map(() => null));
+      continue;
+    }
+    if (part.some(Boolean)) any = true;
     out.push(...part);
   }
-  return out;
+  return any ? out : null;
 }
 
 async function translateWithMyMemory(
@@ -397,7 +395,8 @@ async function runTranslations(lang: AutoLang, texts: string[]) {
         }
         result.forEach((value, index) => {
           const text = batch[index];
-          if (value && !value.includes("⟦") && !/MYMEMORY WARNING/i.test(value)) remember(lang, text, value);
+          if (value && !value.includes("⟦") && !/MYMEMORY WARNING/i.test(value))
+            remember(lang, text, value);
           else failed.add(pairKey(lang, text));
           release(text);
         });

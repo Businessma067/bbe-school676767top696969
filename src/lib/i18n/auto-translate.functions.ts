@@ -7,34 +7,28 @@ const Input = z.object({
   texts: z.array(z.string().min(1).max(1800)).min(1).max(40),
 });
 
-const SEPARATOR = "\n⟦⟧\n";
-
-function joinSegments(payload: unknown): string {
-  if (!Array.isArray(payload) || !Array.isArray(payload[0])) return "";
-  return (payload[0] as unknown[])
-    .map((part) => (Array.isArray(part) && typeof part[0] === "string" ? part[0] : ""))
-    .join("");
+function readTranslation(part: unknown): string {
+  if (typeof part === "string") return part.trim();
+  if (Array.isArray(part) && typeof part[0] === "string") return part[0].trim();
+  return "";
 }
 
 async function googleTranslate(target: string, texts: string[]): Promise<(string | null)[]> {
-  const body = new URLSearchParams({
-    client: "gtx",
-    sl: "en",
-    tl: target,
-    dt: "t",
-    q: texts.join(SEPARATOR),
-  });
-  const response = await fetch("https://translate.googleapis.com/translate_a/single", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body,
-    signal: AbortSignal.timeout(12_000),
-  });
+  const body = new URLSearchParams();
+  for (const text of texts) body.append("q", text);
+  const response = await fetch(
+    `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=${encodeURIComponent(target)}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body,
+      signal: AbortSignal.timeout(12_000),
+    },
+  );
   if (!response.ok) throw new Error(`Translate failed (${response.status})`);
-  const joined = joinSegments(await response.json());
-  const parts = joined.split("⟦⟧").map((part) => part.trim());
-  if (parts.length !== texts.length) return texts.map(() => null);
-  return parts.map((part, index) => (part && part !== texts[index] ? part : null));
+  const payload = (await response.json()) as unknown;
+  if (!Array.isArray(payload) || payload.length !== texts.length) return texts.map(() => null);
+  return payload.map((part) => readTranslation(part) || null);
 }
 
 async function myMemoryTranslate(target: string, texts: string[]): Promise<(string | null)[]> {
