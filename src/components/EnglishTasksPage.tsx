@@ -26,6 +26,10 @@ import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
 import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
 import {
+  UnansweredIndicator,
+  countUnansweredTasks,
+} from "@/components/UnansweredIndicator";
+import {
   DEMO_ENGLISH_FREE_LIMIT,
   englishChaptersForTier,
   passageForTask,
@@ -530,6 +534,16 @@ export function EnglishTasksPage({
                     const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                     const isOpen = !!expanded[ch.key];
                     const isActiveCh = activeChapter === ch.key;
+                    const unanswered =
+                      tier === "demo"
+                        ? countUnansweredTasks(
+                            list.map((c, i) => ({
+                              id: c.id,
+                              locked: isLocked(tier, i, list, demoSubsectionFree),
+                            })),
+                            progress,
+                          )
+                        : 0;
                     return (
                       <li key={ch.key} className="overflow-hidden rounded-xl border border-transparent">
                         <div
@@ -553,6 +567,7 @@ export function EnglishTasksPage({
                               <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
                                 {ch.num}. {ch.title}
                               </span>
+                              <UnansweredIndicator count={unanswered} />
                               <ChapterProgressRing pct={pct} done={done} total={total} />
                             </div>
                           </button>
@@ -598,6 +613,16 @@ export function EnglishTasksPage({
                                     subTasks.length === 0
                                       ? 0
                                       : Math.round((subDone / subTasks.length) * 100);
+                                  const subUnanswered =
+                                    tier === "demo"
+                                      ? countUnansweredTasks(
+                                          subTasks.map(({ c, i }) => ({
+                                            id: c.id,
+                                            locked: isLocked(tier, i, list, demoSubsectionFree),
+                                          })),
+                                          progress,
+                                        )
+                                      : 0;
                                   return (
                                     <li key={sub.id} className="mt-1">
                                       <button
@@ -619,6 +644,7 @@ export function EnglishTasksPage({
                                         <span className="min-w-0 flex-1 truncate text-[11px] font-bold text-foreground">
                                           {sub.title}
                                         </span>
+                                        <UnansweredIndicator count={subUnanswered} />
                                         <ChapterProgressRing
                                           pct={subPct}
                                           done={subDone}

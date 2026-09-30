@@ -28,6 +28,10 @@ import {
 } from "@/components/PracticeMobileChapters";
 import { DifficultyBars } from "@/components/DifficultyBars";
 import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
+import {
+  UnansweredIndicator,
+  countUnansweredTasks,
+} from "@/components/UnansweredIndicator";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
 import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
@@ -496,6 +500,16 @@ export function EconomicsTasksPage({
                 const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                 const isOpen = !!expanded[ch.num];
                 const isActiveCh = activeChapter === ch.num;
+                const isDemo = Number.isFinite(freeLimitPerChapter);
+                const unanswered = isDemo
+                  ? countUnansweredTasks(
+                      list.map((c, i) => ({
+                        id: c.id,
+                        locked: isLocked(ch.num, i),
+                      })),
+                      progress,
+                    )
+                  : 0;
                 return (
                   <li key={ch.num} className={cn(
                     "rounded-xl border transition-colors",
@@ -528,8 +542,11 @@ export function EconomicsTasksPage({
                       <div className="min-w-0 flex-1">
                         <div className="flex items-baseline justify-between gap-2">
                           <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
-                          <span className="shrink-0 text-[10px] font-bold text-muted-foreground">
-                            {total === 0 ? "Soon" : `${done}/${total}`}
+                          <span className="flex shrink-0 items-center gap-1.5">
+                            <UnansweredIndicator count={unanswered} />
+                            <span className="text-[10px] font-bold text-muted-foreground">
+                              {total === 0 ? "Soon" : `${done}/${total}`}
+                            </span>
                           </span>
                         </div>
                         <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">

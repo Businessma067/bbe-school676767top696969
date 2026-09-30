@@ -30,6 +30,10 @@ import {
 import { DifficultyBars } from "@/components/DifficultyBars";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { useAuthGate } from "@/hooks/use-auth-gate";
+import {
+  UnansweredIndicator,
+  countUnansweredTasks,
+} from "@/components/UnansweredIndicator";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -367,6 +371,13 @@ function EconomicsTasks() {
                 const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                 const isOpen = !!expanded[ch.num];
                 const isActiveCh = activeChapter === ch.num;
+                const unanswered = countUnansweredTasks(
+                  list.map((c, i) => ({
+                    id: c.id,
+                    locked: isLocked(ch.num, i),
+                  })),
+                  progress,
+                );
                 return (
                   <li key={ch.num} className={cn(
                     "rounded-xl border transition-colors",
@@ -381,7 +392,10 @@ function EconomicsTasks() {
                       <div className="min-w-0 flex-1">
                         <div className="flex items-baseline justify-between gap-2">
                           <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
-                          <span className="shrink-0 text-[10px] font-bold text-muted-foreground">{done}/{total}</span>
+                          <span className="flex shrink-0 items-center gap-1.5">
+                            <UnansweredIndicator count={unanswered} />
+                            <span className="text-[10px] font-bold text-muted-foreground">{done}/{total}</span>
+                          </span>
                         </div>
                         <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
                           <div
