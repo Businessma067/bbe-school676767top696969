@@ -515,7 +515,7 @@ export function EconomicsTasksPage({
                   : 0;
                 return (
                   <li key={ch.num} className={cn(
-                    "rounded-xl border transition-colors",
+                    "overflow-hidden rounded-xl border transition-colors",
                     isActiveCh ? "border-primary/40 bg-primary/5" : "border-transparent",
                   )}>
                   <div className="flex items-stretch">
@@ -535,29 +535,23 @@ export function EconomicsTasksPage({
                           startTransition(() => setTheoryChapter(null));
                         }
                       }}
-                      className="flex flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
+                      className="flex min-w-0 flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
                       title={
                         enableTheory
                           ? "Open Theory Reader for this chapter"
                           : "Open chapter practice"
                       }
                     >
-                      <div className="min-w-0 flex-1">
-                        <div className="flex items-baseline justify-between gap-2">
-                          <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
-                          <span className="flex shrink-0 items-center gap-1.5">
-                            <UnansweredIndicator count={unanswered} />
-                            <span className="text-[10px] font-bold text-muted-foreground">
-                              {total === 0 ? "Soon" : `${done}/${total}`}
-                            </span>
-                          </span>
-                        </div>
-                        <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
-                          <div
-                            className={cn("h-full rounded-full transition-all", pct === 100 ? "bg-emerald-500" : "bg-primary")}
-                            style={{ width: `${pct}%` }}
-                          />
-                        </div>
+                      <div className="flex min-w-0 flex-1 items-center gap-2">
+                        <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
+                          {ch.num}. {ch.title}
+                        </span>
+                        <UnansweredIndicator count={unanswered} />
+                        {total === 0 ? (
+                          <span className="shrink-0 text-[10px] font-bold text-muted-foreground">Soon</span>
+                        ) : (
+                          <ChapterProgressRing pct={pct} done={done} total={total} />
+                        )}
                       </div>
                     </button>
                     <button
@@ -915,6 +909,71 @@ export function EconomicsTasksPage({
       )}
     </div>
     </PracticeCalcProvider>
+  );
+}
+
+/** Cell-signal-style progress circle for the chapter sidebar (matches Math). */
+function ChapterProgressRing({
+  pct,
+  done,
+  total,
+}: {
+  pct: number;
+  done: number;
+  total: number;
+}) {
+  const size = 28;
+  const stroke = 2.5;
+  const r = (size - stroke) / 2;
+  const c = 2 * Math.PI * r;
+  const complete = total > 0 && pct === 100;
+  const dash = (Math.min(Math.max(pct, 0), 100) / 100) * c;
+  return (
+    <span
+      className="relative inline-grid h-7 w-7 shrink-0 place-items-center"
+      title={`${done} of ${total} tasks passed (${pct}%)`}
+      aria-label={`Chapter progress ${pct} percent`}
+    >
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className={cn(
+          "absolute inset-0 -rotate-90",
+          complete ? "text-emerald-500" : "text-primary",
+        )}
+        aria-hidden
+      >
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={stroke}
+          className="opacity-15"
+        />
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={`${dash} ${Math.max(c - dash, 0)}`}
+        />
+      </svg>
+      <span
+        className={cn(
+          "relative text-[8px] font-bold tabular-nums leading-none",
+          complete ? "text-emerald-600 dark:text-emerald-400" : "text-foreground",
+        )}
+      >
+        {pct}
+        <span className="text-[7px] font-semibold opacity-70">%</span>
+      </span>
+    </span>
   );
 }
 
