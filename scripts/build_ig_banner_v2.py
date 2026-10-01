@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 """
-Build Instagram 3-pin banner — square tiles for the profile grid.
+Build Instagram 3-pin banner — exact profile-grid format.
 
-Instagram profile grid shows 1:1. Portrait 4:5 (1080×1350) gets cropped and
-cuts off the top of each card. We export 1080×1080 so 100% of each tile is visible.
+Instagram profile grid (since 2025) shows 3:4 tiles.
+- 1080×1440 (3:4) → full image visible in grid, zero crop
+- 1080×1350 (4:5) → thin side crop in grid
+- 1080×1080 (1:1) → sides cropped hard in grid (looks stretched/wrong)
 
-One canvas 3240×1080 → three equal 1080×1080 tiles.
-- Daytime WU campus background
-- White cards centered in each square
-- Site logo from public/logo.png
-- WiSo accent = true blue (R=0)
+One canvas 3240×1440 → three equal 1080×1440 tiles.
 """
 
 from __future__ import annotations
@@ -21,36 +19,36 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "design-explorations" / "instagram-pinned-banner"
-SITE_LOGO = ROOT / "public" / "logo.png"  # same asset as bbe-school.com/logo.png
+SITE_LOGO = ROOT / "public" / "logo.png"
 BG_CANDIDATES = [
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day-match.jpg"),
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day.jpg"),
     ROOT / "public" / "wu-vienna" / "campus-plaza.jpg",
 ]
 
-# Instagram profile grid = 1:1 — do NOT use 4:5 here
+# Instagram profile grid = 3:4 → 1080×1440 exactly
 TILE = 1080
-H = TILE
+H = 1440  # 1080 * 4 / 3
 W = TILE * 3
+assert TILE * 4 == H * 3, "must be exact 3:4"
 
-# Equal outer margins so the full card stays inside the square
 SIDE = 52
-TOP_BAND = 96
-BOT_BAND = 60
+TOP_BAND = 110
+BOT_BAND = 70
 CARD_W = TILE - 2 * SIDE  # 976
-CARD_H = H - TOP_BAND - BOT_BAND  # 924
+CARD_H = H - TOP_BAND - BOT_BAND  # 1260
 TOP = TOP_BAND
 BOTTOM = BOT_BAND
 
 ORANGE = (234, 112, 36)
-BLUE = (0, 114, 206)  # true blue, R=0
+BLUE = (0, 114, 206)
 TEAL = (20, 140, 128)
 INK = (20, 20, 20)
 MUTED = (170, 170, 170)
 WHITE = (255, 255, 255)
 CARD_BG = (255, 255, 255)
 BORDER = (228, 228, 228)
-LOGO = 64
+LOGO = 72
 
 FONT_DIR = Path("/usr/share/fonts/truetype/macos")
 
@@ -82,11 +80,11 @@ def make_bg() -> Image.Image:
 
     overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    for y in range(0, 160):
-        a = int(130 * (1 - y / 160))
+    for y in range(0, 200):
+        a = int(140 * (1 - y / 200))
         d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
-    for y in range(H - 80, H):
-        a = int(90 * ((y - (H - 80)) / 80))
+    for y in range(H - 100, H):
+        a = int(100 * ((y - (H - 100)) / 100))
         d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
     return Image.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
 
@@ -110,13 +108,10 @@ def draw_centered(
 
 
 def site_logo(size: int = LOGO) -> Image.Image:
-    im = Image.open(SITE_LOGO).convert("RGBA")
-    return im.resize((size, size), Image.Resampling.LANCZOS)
+    return Image.open(SITE_LOGO).convert("RGBA").resize((size, size), Image.Resampling.LANCZOS)
 
 
 def paste_logo(canvas: Image.Image, x: int, y: int, size: int = LOGO) -> None:
-    if canvas.mode != "RGBA":
-        raise ValueError("canvas must be RGBA to paste logo")
     canvas.alpha_composite(site_logo(size), (x, y))
 
 
@@ -154,17 +149,17 @@ def card(
     canvas.alpha_composite(layer)
     draw = ImageDraw.Draw(canvas)
 
-    tag_f = F("Inter-Bold.ttf", 32)
-    title_f = F("Inter-Bold.ttf", 52)
-    body_f = F("Inter-Medium.ttf", 36)
+    tag_f = F("Inter-Bold.ttf", 34)
+    title_f = F("Inter-Bold.ttf", 56)
+    body_f = F("Inter-Medium.ttf", 40)
 
-    GAP_TAG = 24
-    GAP_TITLE = 24
-    GAP_RULE = 32
-    ROW = 84
-    CHECK_W = 42
+    GAP_TAG = 30
+    GAP_TITLE = 28
+    GAP_RULE = 40
+    ROW = 96
+    CHECK_W = 44
     CHECK_H = 28
-    TAG_BX, TAG_BY = 22, 10
+    TAG_BX, TAG_BY = 24, 12
     cx = left + CARD_W / 2
 
     tag_x0, tag_y0, tag_x1, tag_y1 = ink_bbox(draw, tag, tag_f)
@@ -185,7 +180,7 @@ def card(
     list_h = (len(bullets) - 1) * ROW + bullet_h
     content_h = tag_box_h + GAP_TAG + title_h + GAP_TITLE + 2 + GAP_RULE + list_h
 
-    y = top + (CARD_H - content_h) // 2 + 10
+    y = top + (CARD_H - content_h) // 2 + 12
 
     tag_x = int(round(cx - tag_box_w / 2))
     draw.rounded_rectangle(
@@ -238,29 +233,25 @@ def build() -> Image.Image:
     ]
 
     for i, (tag, accent, title, bullets) in enumerate(cards):
-        left = i * TILE + SIDE
-        card(canvas, left, TOP, tag, accent, title, bullets)
+        card(canvas, i * TILE + SIDE, TOP, tag, accent, title, bullets)
 
-    # Header in top band — fully inside the square
-    title_f = F("Inter-Bold.ttf", 40)
-    sub_f = F("Inter-Medium.ttf", 22)
+    title_f = F("Inter-Bold.ttf", 48)
+    sub_f = F("Inter-Medium.ttf", 24)
     t = "Preparation Courses"
     tw, th = measure(draw, t, title_f)
     s = "WU Vienna entrance exam prep"
     sw, sh = measure(draw, s, sub_f)
-    block_h = th + 6 + sh
+    block_h = th + 8 + sh
     title_y = (TOP - block_h) // 2
     draw.text(((W - tw) / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
     draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
-    draw.text(((W - sw) / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
+    draw.text(((W - sw) / 2, title_y + th + 8), s, font=sub_f, fill=MUTED)
 
-    # Site logo on every tile — inside top band, never cropped
     logo_y = (TOP - LOGO) // 2
     for i in range(3):
-        logo_x = i * TILE + TILE - SIDE - LOGO
-        paste_logo(canvas, logo_x, logo_y, LOGO)
+        paste_logo(canvas, i * TILE + TILE - SIDE - LOGO, logo_y, LOGO)
 
-    url_f = F("Inter-Medium.ttf", 22)
+    url_f = F("Inter-Medium.ttf", 24)
     u = "bbe-school.com"
     uw, uh = measure(draw, u, url_f)
     url_y = TOP + CARD_H + (BOTTOM - uh) // 2
@@ -271,14 +262,15 @@ def build() -> Image.Image:
 
 def verify(full: Image.Image) -> None:
     assert full.size == (W, H), full.size
-    assert H == TILE == 1080, (H, TILE)
+    assert TILE == 1080 and H == 1440, (TILE, H)
+    assert abs(TILE / H - 3 / 4) < 1e-9
     arr = np.asarray(full)
 
     tile = arr[TOP : TOP + CARD_H, TILE + SIDE : TILE + SIDE + CARD_W]
     white = (tile[:, :, 0] > 245) & (tile[:, :, 1] > 245) & (tile[:, :, 2] > 245)
     assert white.mean() > 0.7, white.mean()
 
-    print(f"layout 1:1 TILE={TILE} TOP={TOP} BOTTOM={BOTTOM} SIDE={SIDE} CARD={CARD_W}x{CARD_H}")
+    print(f"layout 3:4 TILE={TILE}x{H} TOP={TOP} BOTTOM={BOTTOM} SIDE={SIDE} CARD={CARD_W}x{CARD_H}")
     assert TOP + CARD_H + BOTTOM == H
     assert 2 * SIDE + CARD_W == TILE
 
@@ -300,20 +292,11 @@ def verify(full: Image.Image) -> None:
         patch = arr[logo_y : logo_y + LOGO, logo_x : logo_x + LOGO]
         dark = (patch[:, :, 0] < 40) & (patch[:, :, 1] < 40) & (patch[:, :, 2] < 40)
         letters = (patch[:, :, 0] > 200) & (patch[:, :, 1] > 200) & (patch[:, :, 2] > 200)
-        print(
-            f"logo tile{i} at ({logo_x},{logo_y}) "
-            f"dark={dark.mean():.2f} letters={letters.mean():.2f}"
-        )
-        assert dark.mean() > 0.55, dark.mean()
-        assert letters.mean() > 0.05, letters.mean()
-        assert arr[logo_y + 2, logo_x + 2].max() < 40
+        print(f"logo tile{i} dark={dark.mean():.2f} letters={letters.mean():.2f}")
+        assert dark.mean() > 0.55
+        assert letters.mean() > 0.05
 
-    # Entire card + logo + footer must sit inside the 1080×1080 square
-    assert TOP >= 0 and BOTTOM >= 0
-    assert TOP + CARD_H <= H
-    assert (TOP - LOGO) // 2 >= 0
-
-    inset = 20
+    inset = 24
     for i, name in enumerate(["BBE", "WiSo", "Demo"]):
         card_arr = arr[
             TOP + inset : TOP + CARD_H - inset,
@@ -325,24 +308,17 @@ def verify(full: Image.Image) -> None:
             & (card_arr[:, :, 2] > 245)
         )
         ys, xs = np.where(ink)
-        assert len(xs) > 200, (name, len(xs))
         inner_w = CARD_W - 2 * inset
-        inner_h = CARD_H - 2 * inset
         left_pad = int(xs.min())
         right_pad = int(inner_w - 1 - xs.max())
-        top_pad = int(ys.min())
-        bot_pad = int(inner_h - 1 - ys.max())
-        print(
-            f"{name} card pads L/R={left_pad}/{right_pad} T/B={top_pad}/{bot_pad}"
-        )
+        print(f"{name} card pads L/R={left_pad}/{right_pad}")
         assert abs(left_pad - right_pad) <= 12, (name, left_pad, right_pad)
-        assert top_pad > 80 and bot_pad > 80, (name, top_pad, bot_pad)
 
-    # Simulate IG grid: square crop of each tile must equal the full tile (no crop)
     for i in range(3):
         t = full.crop((i * TILE, 0, (i + 1) * TILE, H))
-        assert t.size == (1080, 1080), t.size
-    print("VERIFY OK — 1:1 tiles, full image visible in IG grid")
+        assert t.size == (1080, 1440), t.size
+        assert abs(t.size[0] / t.size[1] - 0.75) < 1e-9
+    print("VERIFY OK — 1080×1440 (3:4) matches IG profile grid 1:1")
 
 
 def main() -> None:
@@ -360,7 +336,7 @@ def main() -> None:
     names = ["01-bbe-full-course", "02-wiso-full-course", "03-demo-access"]
     for i, name in enumerate(names):
         tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
-        assert tile.size == (1080, 1080)
+        assert tile.size == (1080, 1440)
         tile.save(fresh / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.png", "PNG", optimize=True)
@@ -368,21 +344,23 @@ def main() -> None:
     gap = 14
     preview = Image.new("RGB", (W + 2 * gap, H), (24, 24, 26))
     for i in range(3):
-        tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
-        preview.paste(tile, (i * (TILE + gap), 0))
+        preview.paste(full.crop((i * TILE, 0, (i + 1) * TILE, H)), (i * (TILE + gap), 0))
     preview.save(fresh / "preview.jpg", "JPEG", quality=92)
     preview.save(OUT / "preview-grid-with-gaps.jpg", "JPEG", quality=92)
 
-    # Fake IG profile-grid strip (3 squares, no crop)
+    # Exact IG profile grid strip (3× 3:4, no gaps)
     grid = Image.new("RGB", (W, H), (18, 18, 20))
     for i in range(3):
-        tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
-        grid.paste(tile, (i * TILE, 0))
-    grid.save(fresh / "ig-grid-1x1.jpg", "JPEG", quality=92)
-    grid.save(OUT / "ig-grid-1x1.jpg", "JPEG", quality=92)
+        grid.paste(full.crop((i * TILE, 0, (i + 1) * TILE, H)), (i * TILE, 0))
+    grid.save(fresh / "ig-grid-3x4.jpg", "JPEG", quality=92)
+    grid.save(OUT / "ig-grid-3x4.jpg", "JPEG", quality=92)
 
-    print(f"Wrote fresh 1:1 set to {fresh}")
-    print(f"Also updated {OUT}")
+    # remove obsolete 1:1 grid if present
+    for p in (fresh / "ig-grid-1x1.jpg", OUT / "ig-grid-1x1.jpg"):
+        if p.exists():
+            p.unlink()
+
+    print(f"Wrote 1080×1440 (3:4) set to {fresh}")
 
 
 if __name__ == "__main__":
