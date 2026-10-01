@@ -39,7 +39,9 @@ FOOTER_BAND = 48
 CARD_H = 1020
 _free = TILE_H - HEADER_BAND - FOOTER_BAND - CARD_H  # space to split
 GAP_AROUND = _free // 2
-MARGIN_TOP = HEADER_BAND + GAP_AROUND
+# Nudge cards slightly down — header text makes equal gaps look top-heavy
+NUDGE_DOWN = 36
+MARGIN_TOP = HEADER_BAND + GAP_AROUND + NUDGE_DOWN
 MARGIN_BOTTOM = TILE_H - MARGIN_TOP - CARD_H
 CARD_PAD = 56  # inner padding
 GAP_TAG_TITLE = 32
