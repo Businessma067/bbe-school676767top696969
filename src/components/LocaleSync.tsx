@@ -45,7 +45,7 @@ export function LocaleSync() {
       // then swap once. Edited DE/UK always follow the URL instead.
       const stored = readStoredLang();
       if (stored && isAutoLang(stored)) {
-        void warmLanguage(stored).then(() => {
+        void Promise.race([warmLanguage(stored).catch(() => undefined), new Promise((r) => setTimeout(r, 1200))]).then(() => {
           if (cancelled || readStoredLang() !== stored) return;
           setLang(stored, { persist: false });
         });
@@ -59,7 +59,7 @@ export function LocaleSync() {
 
     const stored = readStoredLang();
     if (stored && isAutoLang(stored)) {
-      void warmLanguage(stored).then(() => {
+      void Promise.race([warmLanguage(stored).catch(() => undefined), new Promise((r) => setTimeout(r, 1200))]).then(() => {
         if (cancelled || readStoredLang() !== stored) return;
         setLang(stored, { persist: false });
       });
