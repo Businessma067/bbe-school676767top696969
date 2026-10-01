@@ -1,34 +1,29 @@
-import { useLayoutEffect, useRef, useState, type ReactNode, type RefObject } from "react";
-import {
-  BookOpen,
-  Check,
-  ClipboardCheck,
-  Flag,
-  Flame,
-  Layers,
-  PanelLeftOpen,
-  Target,
-  Timer,
-  TrendingUp,
-  Wand2,
-} from "lucide-react";
-import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
-import { FlashcardMath } from "@/components/FlashcardMath";
-import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
-import { QuestionPalette } from "@/components/mock-exam/QuestionPalette";
+import { useLayoutEffect, useRef, useState, type RefObject } from "react";
 import { DemoCursor } from "@/components/news/demos/DemoCursor";
-import { DemoStatementTable } from "@/components/news/demos/DemoStatementTable";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
-import { TheoryArticle } from "@/components/TheoryReader";
-import { ECONOMICS_FLASHCARD_SECTIONS } from "@/data/flashcards";
-import { ECONOMICS_COURSE_THEORY } from "@/data/economics-course-theory";
-import type { ExamQuestion, SubjectKey } from "@/lib/mock-exams";
-import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
 import { cn } from "@/lib/utils";
+import { useFillFrame } from "./useFillFrame";
 import { pressCalcKey } from "./course-motion";
-import { CoursePassage, CourseSolution } from "./CourseSolution";
-import { COURSE_ECON, COURSE_ENGLISH_HIGHLIGHTS, COURSE_ENGLISH_PASSAGE } from "./course-tasks";
-import { CourseTimedBar } from "./CourseTimedBar";
+import { CourseSolution } from "./CourseSolution";
+import { COURSE_ECON } from "./course-tasks";
+import {
+  TOUR_BUILDER_CHAPTER,
+  TourBuilder,
+  TourCalc,
+  TourDash,
+  TourEconTask,
+  TourEnglishSolution,
+  TourEnglishTask,
+  TourExam,
+  TourMathTask,
+  TourResults,
+  TourSheet,
+  TourTheoryList,
+  TourTheoryReader,
+  TourTools,
+  type TourDashTab,
+  type TourToolMode,
+} from "./FullCourseTourScenes";
 
 const RUST = "#b3392a";
 
@@ -44,6 +39,8 @@ type Scene =
   | "builder"
   | "tools";
 
+const BLEED: Scene[] = ["mock", "results"];
+
 type ArrowApi = {
   show: (selector: string, text: string) => void;
   draw: (t: number) => void;
@@ -51,42 +48,7 @@ type ArrowApi = {
 };
 
 const TASK = COURSE_ECON;
-const CHAPTERS = Object.values(ECONOMICS_COURSE_THEORY);
-const HIGHLIGHT = COURSE_ENGLISH_HIGHLIGHTS[2] ?? "";
-const PASSAGE =
-  COURSE_ENGLISH_PASSAGE.split(/\n\n/).find((paragraph) => paragraph.includes(HIGHLIGHT)) ??
-  COURSE_ENGLISH_PASSAGE;
 const KEYS = ["1", "2", "×", "1", "1", "="];
-const ACCENT = "#c8763a";
-const FLASH = ECONOMICS_FLASHCARD_SECTIONS.find((section) => section.id === "econ-1")?.cards[0];
-const LABOUR = ECONOMICS_FLASHCARD_SECTIONS.find((section) => section.id === "econ-3")?.cards.find(
-  (card) => card.term === "Labour",
-);
-
-if (!FLASH || !LABOUR) throw new Error("Course tour flashcards missing");
-
-function tourQuestion(index: number, subject: SubjectKey): ExamQuestion {
-  return {
-    id: `tour-q${index}`,
-    index,
-    subject,
-    stem: "The ovens are capital used in production.",
-    maxPoints: 5,
-    statements: [{ id: "a", text: "The ovens are capital.", isTrue: true, explanation: "" }],
-  };
-}
-
-const TOUR_QUESTIONS = [
-  tourQuestion(1, "economics"),
-  tourQuestion(2, "economics"),
-  tourQuestion(3, "english"),
-  tourQuestion(4, "english"),
-  tourQuestion(5, "math"),
-  tourQuestion(6, "math"),
-];
-
-type DashTab = "courses" | "mocks" | "custom" | "games";
-type ToolMode = "flash" | "match" | "tutor";
 
 /**
  * Two-minute pass through the real Full BBE Course screens.
@@ -95,7 +57,7 @@ type ToolMode = "flash" | "match" | "tutor";
 export function FullCourseTour() {
   const arrowRef = useRef<ArrowApi | null>(null);
   const [scene, setScene] = useState<Scene>("dash");
-  const [dashTab, setDashTab] = useState<DashTab>("courses");
+  const [dashTab, setDashTab] = useState<TourDashTab>("courses");
   const [read, setRead] = useState(false);
   const [timed, setTimed] = useState(false);
   const [marks, setMarks] = useState<Record<number, boolean>>({});
@@ -108,7 +70,7 @@ export function FullCourseTour() {
   const [flipped, setFlipped] = useState(false);
   const [matched, setMatched] = useState(false);
   const [picked, setPicked] = useState(false);
-  const [tool, setTool] = useState<ToolMode>("flash");
+  const [tool, setTool] = useState<TourToolMode>("flash");
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const arrow = () => arrowRef.current;
@@ -129,6 +91,7 @@ export function FullCourseTour() {
       await api.wait(180);
       setScene(next);
       await api.flush();
+      if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
       await api.wait(240);
     };
@@ -227,15 +190,17 @@ export function FullCourseTour() {
       await api.moveTo('[data-d="flag"]', 24);
       await api.click(() => setFlagged(true));
       await api.wait(240);
-      await tip('[data-d="sheet"]', "The bubble sheet from the real exam.", 4200);
+      await api.moveTo('[data-d="sheet-tool"]', 24);
       await api.click(() => setBubble(true));
-      await api.wait(400);
+      await api.flush();
+      await api.wait(240);
+      await tip('[data-d="sheet"]', "The bubble sheet from the real exam.", 4200);
 
       await enter("results");
-      await tip('[data-d="chart"]', "How long each question took, then the review.", 4800);
+      await tip('[data-d="time-chart"]', "How long each question took, then the review.", 4800);
 
       await enter("builder");
-      await api.moveTo('[data-d="topic"]', 30);
+      await api.moveTo(`[data-d="ch-${TOUR_BUILDER_CHAPTER}"]`, 30);
       await api.click(() => setChosen(true));
       await api.wait(200);
       await tip('[data-d="build"]', "A mock built only from the topics you pick.", 4400);
@@ -250,46 +215,67 @@ export function FullCourseTour() {
       setTool("match");
       await api.flush();
       await api.wait(160);
-      await api.moveTo('[data-d="pair"]', 30);
+      await api.moveTo('[data-d="L0"]', 30);
+      await api.click();
+      await api.wait(80);
+      await api.moveTo('[data-d="R0"]', 30);
       await api.click(() => setMatched(true));
       await api.wait(200);
-      await tip('[data-d="pair"]', "Match the term to its meaning.", 3400);
+      await tip('[data-d="R0"]', "Match the term to its meaning.", 3400);
       setTool("tutor");
       await api.flush();
       await api.wait(160);
-      await api.moveTo('[data-d="c3"]', 30);
+      await api.moveTo('[data-d="c0"]', 30);
       await api.click(() => setPicked(true));
       await api.wait(160);
-      await tip('[data-d="c3"]', "A short quiz on the theory.", 4000);
+      await tip('[data-d="c0"]', "A short quiz on the theory.", 4000);
       await api.wait(400);
     }
   }, []);
+
+  const innerRef = useRef<HTMLDivElement | null>(null);
+  const fill =
+    !BLEED.includes(scene) &&
+    scene !== "dash" &&
+    !(scene === "tools" && (tool === "match" || tool === "tutor"));
+  useFillFrame(fill, scrollRef, innerRef);
 
   return (
     <div
       ref={stageRef}
       data-scene={scene}
       aria-label="Full BBE Course walkthrough"
-      className="absolute inset-0 bg-paper font-sans text-foreground"
+      className={cn(
+        "absolute inset-0 font-sans text-foreground",
+        BLEED.includes(scene) ? "bg-background" : "bg-paper",
+      )}
     >
       <div className={cn("absolute inset-0 transition-opacity duration-200", fade && "opacity-0")}>
         <div
           ref={scrollRef}
-          className="news-uniq-scroll h-full overflow-x-hidden overflow-y-auto px-3 py-3 sm:px-4"
+          className={cn(
+            "news-uniq-scroll h-full overflow-x-hidden overflow-y-auto",
+            BLEED.includes(scene) ? "" : "px-3 py-3 sm:px-4",
+            scene === "english" && "sm:pr-[58%]",
+          )}
         >
-          {scene === "dash" ? <Dash tab={dashTab} /> : null}
-          {scene === "theory" && !read ? <TheoryList /> : null}
-          {scene === "task" || scene === "expl" ? <Task marks={marks} timed={timed} /> : null}
-          {scene === "english" ? <English shown={shown} /> : null}
-          {scene === "math" ? <MathTask /> : null}
-          {scene === "mock" ? <MockPaper flagged={flagged} bubble={bubble} /> : null}
-          {scene === "results" ? <Results /> : null}
-          {scene === "builder" ? <Builder chosen={chosen} built={built} /> : null}
-          {scene === "tools" ? (
-            <Tools mode={tool} flipped={flipped} matched={matched} picked={picked} />
-          ) : null}
+          <div ref={innerRef} className="origin-top-left">
+            {scene === "dash" ? <TourDash tab={dashTab} /> : null}
+            {scene === "theory" && !read ? <TourTheoryList /> : null}
+            {scene === "task" || scene === "expl" ? (
+              <TourEconTask marks={marks} timed={timed} checked={scene === "expl"} />
+            ) : null}
+            {scene === "english" ? <TourEnglishTask shown={shown} /> : null}
+            {scene === "math" ? <TourMathTask calcOpen={calcOn} /> : null}
+            {scene === "mock" ? <TourExam flagged={flagged} /> : null}
+            {scene === "results" ? <TourResults /> : null}
+            {scene === "builder" ? <TourBuilder open={chosen} built={built} /> : null}
+            {scene === "tools" ? (
+              <TourTools mode={tool} flipped={flipped} matched={matched} picked={picked} />
+            ) : null}
+          </div>
         </div>
-        {scene === "theory" && read ? <TheoryReader /> : null}
+        {scene === "theory" && read ? <TourTheoryReader /> : null}
         {scene === "expl" ? (
           <CourseSolution
             open
@@ -300,13 +286,9 @@ export function FullCourseTour() {
             full
           />
         ) : null}
-        {scene === "math" && calcOn ? (
-          <div className="pointer-events-none absolute bottom-2 left-2 right-2 top-14 z-[8] sm:left-auto sm:w-[19rem]">
-            <div data-d="calc-panel" className="pointer-events-auto h-full min-h-0">
-              <Ti30MathPrint compact hideChrome className="h-full shadow-xl" />
-            </div>
-          </div>
-        ) : null}
+        {scene === "english" ? <TourEnglishSolution shown={shown} /> : null}
+        {scene === "math" && calcOn ? <TourCalc /> : null}
+        {scene === "mock" && bubble ? <TourSheet flagged={flagged} /> : null}
       </div>
       <TourArrow stageRef={stageRef} handleRef={arrowRef} />
       <DemoCursor cursorRef={cursorRef} clicking={clicking} hidden={fade} />
@@ -354,7 +336,7 @@ function TourArrow({
       const gap = 18;
       const tx = box.left - stageBox.left;
       const ty = box.top - stageBox.top;
-      const obstacles = [...stage.querySelectorAll<HTMLElement>("[data-d], h2, p, li")]
+      const obstacles = [...stage.querySelectorAll<HTMLElement>("[data-d], h1, h2, h3, p, li")]
         .filter((el) => el !== label && !el.contains(label))
         .map((el) => {
           const b = el.getBoundingClientRect();
@@ -513,488 +495,5 @@ function TourArrow({
         style={{ borderLeft: `2px solid ${RUST}` }}
       />
     </>
-  );
-}
-
-function SideButton({
-  icon,
-  label,
-  active,
-  tip,
-}: {
-  icon: ReactNode;
-  label: string;
-  active: boolean;
-  tip: string;
-}) {
-  return (
-    <span
-      data-d={tip}
-      className={cn(
-        "flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold",
-        active ? "bg-primary text-primary-foreground shadow-sm" : "text-foreground",
-      )}
-    >
-      {icon}
-      <span className="flex-1 text-left">{label}</span>
-    </span>
-  );
-}
-
-function Dash({ tab }: { tab: DashTab }) {
-  return (
-    <div className="flex h-full min-h-[28rem] overflow-hidden rounded-xl border border-border bg-background">
-      <aside className="w-44 shrink-0 border-r border-border/60 bg-card/40 py-4">
-        <nav className="flex flex-col gap-1 px-2">
-          <SideButton
-            icon={<BookOpen className="h-4 w-4" />}
-            label="Courses"
-            active={tab === "courses"}
-            tip="tab-courses"
-          />
-          <SideButton
-            icon={<ClipboardCheck className="h-4 w-4" />}
-            label="Mock Exams"
-            active={tab === "mocks"}
-            tip="tab-mocks"
-          />
-          <SideButton
-            icon={<Wand2 className="h-4 w-4" />}
-            label="Custom Mocks"
-            active={tab === "custom"}
-            tip="tab-custom"
-          />
-          <SideButton
-            icon={<Layers className="h-4 w-4" />}
-            label="Study tools"
-            active={tab === "games"}
-            tip="tab-games"
-          />
-        </nav>
-      </aside>
-      <div className="min-w-0 flex-1 p-4">
-        <h2 className="mb-3 font-display text-xl font-bold tracking-tight">My courses</h2>
-        <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-          <p className="text-xs text-muted-foreground">full access</p>
-          <h3 className="mt-1 font-display text-lg font-bold">Full BBE Course</h3>
-          <p className="mt-1 text-xs text-muted-foreground">Enrolled 12 Mar 2026</p>
-          <div className="mt-3 flex items-center gap-3">
-            <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-secondary">
-              <div className="h-full w-[62%] bg-caramel-deep" />
-            </div>
-            <span className="shrink-0 text-xs font-semibold text-muted-foreground">
-              86 tasks passed
-            </span>
-          </div>
-          <div className="mt-4">
-            <span
-              data-d="continue"
-              className="inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground"
-            >
-              Continue
-            </span>
-          </div>
-        </div>
-        <div data-d="stats" className="mt-3 grid gap-3 sm:grid-cols-3">
-          <Stat
-            icon={<Target className="h-4 w-4 text-caramel-deep" />}
-            label="Tasks attempted"
-            value="128"
-            sub="86 passed"
-          />
-          <Stat
-            icon={<TrendingUp className="h-4 w-4 text-caramel-deep" />}
-            label="Accuracy"
-            value="74%"
-            sub="across all subjects"
-          />
-          <Stat
-            icon={<Flame className="h-4 w-4 text-caramel-deep" />}
-            label="Current streak"
-            value="6 days"
-            sub="days with activity"
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Stat({
-  icon,
-  label,
-  value,
-  sub,
-}: {
-  icon: ReactNode;
-  label: string;
-  value: string;
-  sub: string;
-}) {
-  return (
-    <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-sm">
-      <div className="grid h-9 w-9 place-items-center rounded-lg bg-secondary">{icon}</div>
-      <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          {label}
-        </p>
-        <p className="font-display text-xl font-bold leading-tight">{value}</p>
-        <p className="text-xs text-muted-foreground">{sub}</p>
-      </div>
-    </div>
-  );
-}
-
-function TheoryList() {
-  return (
-    <div className="rounded-2xl border border-border bg-card p-3 shadow-sm">
-      <div className="mb-2 px-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-        Chapters
-      </div>
-      <ul className="space-y-1">
-        {CHAPTERS.map((item) => (
-          <li key={item.num}>
-            <div className="flex h-10 items-center gap-2 rounded-xl px-2">
-              <span className="h-4 w-4 shrink-0 -rotate-90 text-muted-foreground">›</span>
-              <span
-                data-d={`ch-${item.num}`}
-                className="block w-fit max-w-[85%] truncate text-sm font-bold text-foreground"
-              >
-                {item.num}. {item.title}
-              </span>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function TheoryReader() {
-  const chapter = ECONOMICS_COURSE_THEORY[3];
-  return (
-    <div className="absolute inset-0 z-10 flex flex-col bg-card">
-      <div className="shrink-0 border-b border-border px-3 py-1.5">
-        <div className="flex items-center gap-2">
-          <BookOpen className="h-4 w-4 shrink-0 text-primary" />
-          <div className="min-w-0 flex-1">
-            <div className="truncate text-[10px] font-bold uppercase tracking-widest text-taupe">
-              Chapter {chapter.num} · Theory
-            </div>
-            <div
-              data-d="theory-title"
-              className="truncate font-display text-sm font-bold leading-tight"
-            >
-              {chapter.title}
-            </div>
-          </div>
-          <span className="inline-flex h-8 shrink-0 items-center gap-1 whitespace-nowrap rounded-md border border-border bg-card px-2 text-[11px] font-semibold">
-            <PanelLeftOpen className="h-3.5 w-3.5" />
-            Show chapters
-          </span>
-        </div>
-        <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
-          <div className="h-full w-1/5 rounded-full bg-primary" />
-        </div>
-      </div>
-      <div data-d="theory-scroll" className="min-h-0 flex-1 overflow-y-auto">
-        <article className="mx-auto w-full max-w-[78rem] px-4 py-3 sm:px-5 [&_.katex]:text-[1.03em]">
-          <TheoryArticle markdown={chapter.markdown} enableMath dense />
-        </article>
-      </div>
-    </div>
-  );
-}
-
-function Task({ marks, timed }: { marks: Record<number, boolean>; timed: boolean }) {
-  return (
-    <div>
-      <CourseTimedBar on={timed} />
-      <div className="mb-3 flex flex-wrap items-center gap-2">
-        <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-          Task 1
-        </span>
-        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          {TASK.caseId}
-        </span>
-        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-          {TASK.chapter}
-        </span>
-      </div>
-      <h3 className="font-display text-lg font-bold tracking-tight">{TASK.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{TASK.context}</p>
-      <DemoStatementTable statements={TASK.statements} marks={marks} answerKey={TASK.answerKey} />
-    </div>
-  );
-}
-
-function English({ shown }: { shown: boolean }) {
-  return (
-    <div>
-      <div className="mb-3 flex flex-wrap items-center gap-2">
-        <span className="rounded-md bg-sky-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-sky-800">
-          Task 1
-        </span>
-        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          ENG T.1.01
-        </span>
-      </div>
-      <h3 className="font-display text-lg font-bold tracking-tight">
-        The Rise of the Four-Day Workweek
-      </h3>
-      <CoursePassage text={PASSAGE} highlight={HIGHLIGHT} active={shown} />
-      <button
-        type="button"
-        data-d="show"
-        className={cn("mt-3", practiceInlineLocateButtonClass(shown))}
-      >
-        {shown ? "Located in text" : "Show solution in the text"}
-      </button>
-    </div>
-  );
-}
-
-function MathTask() {
-  return (
-    <div>
-      <CourseTimedBar on calculator />
-      <div className="mb-3 flex flex-wrap items-center gap-2">
-        <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-800">
-          Task 1
-        </span>
-        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          MATH 12.01
-        </span>
-      </div>
-      <h3 className="font-display text-lg font-bold tracking-tight">A product inside the task</h3>
-      <p className="mt-3 text-sm leading-relaxed text-foreground/90">12 × 11</p>
-    </div>
-  );
-}
-
-function MockPaper({ flagged, bubble }: { flagged: boolean; bubble: boolean }) {
-  return (
-    <div className="space-y-3">
-      <div className="flex items-center justify-between gap-2 border-b border-border/60 pb-2">
-        <h3 className="truncate font-display text-base font-bold">Mock Exam 1</h3>
-        <span className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 font-mono text-sm font-semibold tabular-nums">
-          <Timer className="h-3.5 w-3.5" />
-          1:42:10
-        </span>
-      </div>
-      <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-        <p className="font-display text-2xl font-semibold tabular-nums">2</p>
-        <p className="mt-1 text-sm text-muted-foreground">Economics</p>
-        <button
-          type="button"
-          data-d="flag"
-          className="mt-3 inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold"
-        >
-          <Flag
-            className={cn("h-3.5 w-3.5", flagged ? "fill-primary text-primary" : "text-taupe")}
-          />
-          {flagged ? "Flagged" : "Flag for review"}
-        </button>
-        <div data-d="palette" className="mt-3">
-          <QuestionPalette
-            questions={TOUR_QUESTIONS}
-            currentIndex={1}
-            answers={{}}
-            flagged={flagged ? new Set([TOUR_QUESTIONS[1].id]) : new Set()}
-            visited={new Set([TOUR_QUESTIONS[0].id, TOUR_QUESTIONS[1].id])}
-            onNavigate={() => {}}
-            compact
-          />
-        </div>
-      </div>
-      <div data-d="sheet">
-        <ExamAnswerSheet
-          marksByNumber={bubble ? { 2: [true, false, false, false, false] } : {}}
-          questionCount={8}
-          currentQuestion={2}
-          flaggedNumbers={flagged ? new Set([2]) : new Set()}
-          onToggle={() => {}}
-          onNavigate={() => {}}
-        />
-      </div>
-    </div>
-  );
-}
-
-function Results() {
-  const bars = [42, 68, 30, 88, 51, 74];
-  return (
-    <div>
-      <div className="mb-3 rounded-2xl border border-border bg-background px-3 py-3 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-          Mock Exam 1
-        </p>
-        <p className="mt-0.5 text-sm text-muted-foreground">
-          Score overview, or tasks with answers and explanations.
-        </p>
-      </div>
-      <div data-d="chart" className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-        <p className="text-sm font-semibold">Time per question</p>
-        <div className="mt-3 flex h-28 items-end gap-2">
-          {bars.map((height, index) => (
-            <div key={height} className="flex flex-1 flex-col items-center gap-1">
-              <div className="w-full rounded-t bg-caramel-deep" style={{ height: `${height}%` }} />
-              <span className="text-[10px] text-muted-foreground">{index + 1}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Builder({ chosen, built }: { chosen: boolean; built: boolean }) {
-  return (
-    <div>
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-        Custom Mock Builder
-      </p>
-      <h3 className="font-display text-lg font-bold tracking-tight">Economics</h3>
-      <div
-        data-d="topic"
-        className="mt-3 flex items-start gap-2 rounded-xl border border-border bg-card px-3 py-2"
-      >
-        <span
-          className={cn(
-            "mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded border-2",
-            chosen ? "text-white" : "border-border bg-background",
-          )}
-          style={chosen ? { backgroundColor: ACCENT, borderColor: ACCENT } : undefined}
-        >
-          {chosen ? <Check className="h-3 w-3" strokeWidth={3} /> : null}
-        </span>
-        <span>
-          <span className="text-sm font-semibold tabular-nums">3.1</span>
-          <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
-            Factors of production
-          </span>
-        </span>
-      </div>
-      <p className="mt-2 text-xs text-muted-foreground">12 questions · 18 min timed</p>
-      <div
-        data-d="build"
-        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md px-4 py-3 text-sm font-semibold text-white shadow-sm"
-        style={{ backgroundColor: ACCENT, boxShadow: `0 4px 14px -4px ${ACCENT}80` }}
-      >
-        <BookOpen className="h-4 w-4" />
-        {built ? "Mock ready" : "Create Economics Mock from Full Course"}
-      </div>
-    </div>
-  );
-}
-
-function Tools({
-  mode,
-  flipped,
-  matched,
-  picked,
-}: {
-  mode: ToolMode;
-  flipped: boolean;
-  matched: boolean;
-  picked: boolean;
-}) {
-  if (mode === "match") {
-    return (
-      <div>
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-          Study tools · Economics
-        </p>
-        <h3 className="font-display text-lg font-bold tracking-tight">Connect concept → meaning</h3>
-        <div className="mt-3 grid grid-cols-2 gap-x-8">
-          <div className="flex min-h-12 items-center gap-2 rounded-xl border border-border bg-card px-2.5 py-2 text-[13px] font-semibold">
-            <FlashcardMath text={LABOUR.term} />
-          </div>
-          <div
-            data-d="pair"
-            className={cn(
-              "flex min-h-12 items-center gap-2 rounded-xl border px-2.5 py-2 text-[13px]",
-              matched ? "border-emerald-300 bg-emerald-50/90" : "border-border bg-card",
-            )}
-          >
-            {matched ? <Check className="h-3 w-3 text-emerald-600" /> : null}
-            <FlashcardMath text={LABOUR.explanation} className="min-w-0 flex-1" />
-          </div>
-        </div>
-      </div>
-    );
-  }
-  if (mode === "tutor") {
-    const choices = ["Labour", "Land", "Capital (factor of production)", "Entrepreneurship"];
-    return (
-      <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-        <div className="border-b border-border p-3">
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Tutor Bot · Q1
-          </p>
-          <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3 py-2 text-sm">
-            Which factor bears the risk?
-          </div>
-        </div>
-        <ul className="space-y-1.5 p-3">
-          {choices.map((choice, index) => {
-            const on = picked && index === 3;
-            return (
-              <li key={choice}>
-                <div
-                  data-d={`c${index}`}
-                  className={cn(
-                    "flex min-h-11 items-center gap-2 rounded-xl border px-2.5 py-2 text-[13px]",
-                    on ? "border-emerald-300 bg-emerald-50/90" : "border-border bg-card",
-                  )}
-                >
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full border text-[10px] font-bold">
-                    {on ? <Check className="h-3 w-3" /> : String.fromCharCode(65 + index)}
-                  </span>
-                  {choice}
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    );
-  }
-  return (
-    <div>
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-        Study tools · Economics
-      </p>
-      <h3 className="font-display text-lg font-bold tracking-tight">Flashcards</h3>
-      <div data-d="card" className="flashcard-viewport relative mt-3 overflow-hidden">
-        <div className={cn("flashcard-inner", flipped && "is-flipped")}>
-          <div className="flashcard-face flashcard-front min-h-36 rounded-2xl border border-border bg-card p-4 shadow-sm">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-              <Layers className="h-3 w-3" /> Term
-            </div>
-            <div className="flex min-h-20 items-center justify-center text-center">
-              <FlashcardMath text={FLASH.term} className="font-display text-xl font-bold" />
-            </div>
-          </div>
-          <div className="flashcard-face flashcard-back min-h-36 rounded-2xl border border-border bg-card p-4 shadow-sm">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-              <Layers className="h-3 w-3" /> Explanation
-            </div>
-            <div className="flex min-h-20 items-center justify-center text-center">
-              <FlashcardMath text={FLASH.explanation} className="text-[13px] leading-snug" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mt-3 text-center">
-        <span
-          data-d="flip"
-          className="rounded-md px-4 py-2 text-xs font-semibold text-white shadow-sm"
-          style={{ backgroundColor: ACCENT }}
-        >
-          Flip
-        </span>
-      </div>
-    </div>
   );
 }
