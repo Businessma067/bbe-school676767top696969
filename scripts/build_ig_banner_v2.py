@@ -74,17 +74,20 @@ def cover(im: Image.Image, tw: int, th: int) -> Image.Image:
 def make_bg() -> Image.Image:
     src = next(p for p in BG_CANDIDATES if p.exists())
     im = cover(Image.open(src).convert("RGB"), W, H)
-    im = ImageEnhance.Brightness(im).enhance(0.86)
-    im = ImageEnhance.Contrast(im).enhance(1.06)
-    im = ImageEnhance.Color(im).enhance(1.05)
+    # Darker campus so white cards + header type read cleanly
+    im = ImageEnhance.Brightness(im).enhance(0.58)
+    im = ImageEnhance.Contrast(im).enhance(1.12)
+    im = ImageEnhance.Color(im).enhance(0.95)
 
     overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    for y in range(0, 200):
-        a = int(140 * (1 - y / 200))
+    # Even veil across the frame
+    d.rectangle([0, 0, W, H], fill=(0, 0, 0, 70))
+    for y in range(0, 240):
+        a = int(160 * (1 - y / 240))
         d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
-    for y in range(H - 100, H):
-        a = int(100 * ((y - (H - 100)) / 100))
+    for y in range(H - 120, H):
+        a = int(120 * ((y - (H - 120)) / 120))
         d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
     return Image.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
 
