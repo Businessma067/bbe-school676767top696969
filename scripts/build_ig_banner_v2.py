@@ -35,6 +35,7 @@ PAD_Y = 48
 HEADER = 130
 FOOTER = 72
 LOGO = 68
+LOGO_INSET = 40  # equal distance from top-right corner on every tile
 
 ORANGE = (234, 112, 36)
 BLUE = (0, 114, 206)
@@ -75,23 +76,34 @@ def cover(im: Image.Image, tw: int, th: int) -> Image.Image:
     return im.crop((x, y, x + tw, y + th))
 
 
-def make_bg() -> Image.Image:
+def make_tile_bg() -> Image.Image:
+    """One LLC crop at tile size — same photo on every pin."""
     src = next(p for p in BG_CANDIDATES if p.exists())
-    im = cover(Image.open(src).convert("RGB"), W, H)
+    print(f"bg = {src} (identical on all 3 tiles)")
+    im = cover(Image.open(src).convert("RGB"), TILE, H)
     im = ImageEnhance.Brightness(im).enhance(0.62)
     im = ImageEnhance.Contrast(im).enhance(1.10)
     im = ImageEnhance.Color(im).enhance(1.0)
 
-    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    overlay = Image.new("RGBA", (TILE, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    d.rectangle([0, 0, W, H], fill=(0, 0, 0, 55))
+    d.rectangle([0, 0, TILE, H], fill=(0, 0, 0, 55))
     for y in range(0, 220):
         a = int(150 * (1 - y / 220))
-        d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
+        d.line([(0, y), (TILE, y)], fill=(0, 0, 0, a))
     for y in range(H - 110, H):
         a = int(110 * ((y - (H - 110)) / 110))
-        d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
+        d.line([(0, y), (TILE, y)], fill=(0, 0, 0, a))
     return Image.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
+
+
+def make_bg() -> Image.Image:
+    """Repeat the exact same tile background three times (not a panorama slice)."""
+    tile = make_tile_bg()
+    canvas = Image.new("RGB", (W, H))
+    for i in range(3):
+        canvas.paste(tile, (i * TILE, 0))
+    return canvas
 
 
 def draw_centered(
@@ -286,29 +298,32 @@ def build() -> Image.Image:
         left = i * TILE + (TILE - CARD_W) // 2
         card(canvas, left, TOP, tag, accent, title, bullets)
 
-    # Header over campus photo
-    title_f = F("Inter-Bold.ttf", 44)
-    sub_f = F("Inter-Medium.ttf", 22)
+    # Same header / logo / footer on every tile
+    title_f = F("Inter-Bold.ttf", 40)
+    sub_f = F("Inter-Medium.ttf", 20)
     t = "Preparation Courses"
     tw, th = measure(draw, t, title_f)
     s = "WU Vienna entrance exam prep"
     sw, sh = measure(draw, s, sub_f)
     block_h = th + 6 + sh
     title_y = (HEADER - block_h) // 2
-    draw.text(((W - tw) / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
-    draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
-    draw.text(((W - sw) / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
-
-    logo_y = (HEADER - LOGO) // 2
-    for i in range(3):
-        logo_x = i * TILE + TILE - SIDE - LOGO
-        paste_logo(canvas, logo_x, logo_y, LOGO)
 
     url_f = F("Inter-Medium.ttf", 22)
     u = "bbe-school.com"
     uw, uh = measure(draw, u, url_f)
     url_y = H - FOOTER + (FOOTER - uh) // 2
-    draw.text(((W - uw) / 2, url_y), u, font=url_f, fill=MUTED)
+
+    for i in range(3):
+        cx = i * TILE + TILE / 2
+        draw.text((cx - tw / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
+        draw.text((cx - tw / 2, title_y), t, font=title_f, fill=WHITE)
+        draw.text((cx - sw / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
+
+        logo_x = i * TILE + TILE - LOGO_INSET - LOGO
+        logo_y = LOGO_INSET
+        paste_logo(canvas, logo_x, logo_y, LOGO)
+
+        draw.text((cx - uw / 2, url_y), u, font=url_f, fill=MUTED)
 
     return canvas.convert("RGB")
 
@@ -351,16 +366,29 @@ def verify(full: Image.Image) -> None:
     assert mean[0] < 40
 
     for i in range(3):
-        logo_x = i * TILE + TILE - SIDE - LOGO
-        logo_y = (HEADER - LOGO) // 2
+        logo_x = i * TILE + TILE - LOGO_INSET - LOGO
+        logo_y = LOGO_INSET
+        assert (i + 1) * TILE - (logo_x + LOGO) == LOGO_INSET
+        assert logo_y == LOGO_INSET
         patch = arr[logo_y : logo_y + LOGO, logo_x : logo_x + LOGO]
         dark = (patch[:, :, 0] < 40) & (patch[:, :, 1] < 40) & (patch[:, :, 2] < 40)
         assert dark.mean() > 0.55
 
+    # Background must be identical on all three tiles (sample outside cards/logos)
+    patches = []
     for i in range(3):
+        # bottom-left campus strip — no card, no logo
+        p = arr[H - 80 : H - 20, i * TILE + 40 : i * TILE + 200]
+        patches.append(p.astype(np.float64).mean(axis=(0, 1)))
         t = full.crop((i * TILE, 0, (i + 1) * TILE, H))
         assert t.size == (1080, 1440)
-    print("VERIFY OK — compact cards, campus visible, 3:4")
+    diffs = [
+        float(np.linalg.norm(patches[0] - patches[1])),
+        float(np.linalg.norm(patches[1] - patches[2])),
+    ]
+    print(f"bg identity diffs (should be ~0) = {diffs}")
+    assert max(diffs) < 1.0, diffs
+    print("VERIFY OK — same LLC bg on all 3, logos corner-aligned, 3:4")
 
 
 def main() -> None:
@@ -376,11 +404,15 @@ def main() -> None:
     full.save(OUT / "bbe-prep-courses-banner-full.png", "PNG", optimize=True)
 
     names = ["01-bbe-full-course", "02-wiso-full-course", "03-demo-access"]
+    posts = OUT / "ig-posts"
+    posts.mkdir(parents=True, exist_ok=True)
+    post_names = ["1-bbe.jpg", "2-wiso.jpg", "3-demo.jpg"]
     for i, name in enumerate(names):
         tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
         tile.save(fresh / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.png", "PNG", optimize=True)
+        tile.save(posts / post_names[i], "JPEG", quality=95)
 
     gap = 14
     preview = Image.new("RGB", (W + 2 * gap, H), (24, 24, 26))
