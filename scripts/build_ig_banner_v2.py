@@ -16,17 +16,11 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "design-explorations" / "instagram-pinned-banner"
 SITE_LOGO = ROOT / "public" / "logo.png"
-# Three distinct WU campus photos — one per pin tile
-BG_TILES = [
-    ROOT / "public" / "wu-vienna" / "library-learning-center.jpg",  # BBE
-    ROOT / "public" / "wu-vienna" / "campus-plaza.jpg",             # WiSo
-    ROOT / "public" / "wu-vienna" / "teaching-center.jpg",          # Demo
-]
-# Fallbacks if a public asset is missing
-BG_FALLBACKS = [
+# One continuous daytime LLC photo sliced across the 3 pins
+BG_CANDIDATES = [
+    Path("/opt/cursor/artifacts/assets/wu-bg-llc-day-match.jpg"),
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day.jpg"),
-    Path("/opt/cursor/artifacts/assets/wu-bg-plaza-level.jpg"),
-    Path("/opt/cursor/artifacts/assets/wu-bg-audimax-dark.jpg"),
+    ROOT / "public" / "wu-vienna" / "library-learning-center.jpg",
 ]
 
 # Instagram profile grid = 3:4
@@ -87,43 +81,25 @@ def cover(im: Image.Image, tw: int, th: int) -> Image.Image:
     return im.crop((x, y, x + tw, y + th))
 
 
-def tone_bg(im: Image.Image) -> Image.Image:
-    """Shared darken/veil so three different photos still match in mood."""
+def make_bg() -> Image.Image:
+    """One daytime LLC photo across the full banner (continuous when pinned)."""
+    src = next(p for p in BG_CANDIDATES if p.exists())
+    print(f"bg = {src}")
+    im = cover(Image.open(src).convert("RGB"), W, H)
     im = ImageEnhance.Brightness(im).enhance(0.62)
     im = ImageEnhance.Contrast(im).enhance(1.10)
     im = ImageEnhance.Color(im).enhance(1.0)
-    overlay = Image.new("RGBA", im.size, (0, 0, 0, 0))
+
+    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    d.rectangle([0, 0, im.size[0], im.size[1]], fill=(0, 0, 0, 55))
-    w, h = im.size
+    d.rectangle([0, 0, W, H], fill=(0, 0, 0, 55))
     for y in range(0, 220):
         a = int(150 * (1 - y / 220))
-        d.line([(0, y), (w, y)], fill=(0, 0, 0, a))
-    for y in range(h - 110, h):
-        a = int(110 * ((y - (h - 110)) / 110))
-        d.line([(0, y), (w, y)], fill=(0, 0, 0, a))
+        d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
+    for y in range(H - 110, H):
+        a = int(110 * ((y - (H - 110)) / 110))
+        d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
     return Image.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
-
-
-def resolve_bg(i: int) -> Path:
-    primary = BG_TILES[i]
-    if primary.exists():
-        return primary
-    fb = BG_FALLBACKS[i]
-    if fb.exists():
-        return fb
-    raise FileNotFoundError(f"No background for tile {i}")
-
-
-def make_bg() -> Image.Image:
-    """Three different campus photos side by side (not one continuous crop)."""
-    canvas = Image.new("RGB", (W, H))
-    for i in range(3):
-        src = resolve_bg(i)
-        tile = tone_bg(cover(Image.open(src).convert("RGB"), TILE, H))
-        canvas.paste(tile, (i * TILE, 0))
-        print(f"tile{i} bg = {src.name}")
-    return canvas
 
 
 def draw_centered(
@@ -401,22 +377,10 @@ def verify(full: Image.Image) -> None:
         assert dark.mean() > 0.55, dark.mean()
         print(f"logo tile{i} inset L/T/R = top={top_gap} right={right_gap}")
 
-    # Three tiles must use different photo content (not one continuous crop)
-    means = []
     for i in range(3):
-        t = arr[200:400, i * TILE + 100 : i * TILE + 300]
-        means.append(t.mean(axis=(0, 1)))
         tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
         assert tile.size == (1080, 1440)
-    # Distinct backgrounds → mean RGB of a sky/building patch should differ
-    diffs = [
-        float(np.linalg.norm(means[0] - means[1])),
-        float(np.linalg.norm(means[1] - means[2])),
-        float(np.linalg.norm(means[0] - means[2])),
-    ]
-    print(f"bg tile mean diffs = {diffs}")
-    assert max(diffs) > 8, diffs
-    print("VERIFY OK — 3 distinct photos, logos corner-aligned, 3:4")
+    print("VERIFY OK — continuous LLC bg, logos corner-aligned, 3:4")
 
 
 def main() -> None:
@@ -432,11 +396,15 @@ def main() -> None:
     full.save(OUT / "bbe-prep-courses-banner-full.png", "PNG", optimize=True)
 
     names = ["01-bbe-full-course", "02-wiso-full-course", "03-demo-access"]
+    posts = OUT / "ig-posts"
+    posts.mkdir(parents=True, exist_ok=True)
+    post_names = ["1-bbe.jpg", "2-wiso.jpg", "3-demo.jpg"]
     for i, name in enumerate(names):
         tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
         tile.save(fresh / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.png", "PNG", optimize=True)
+        tile.save(posts / post_names[i], "JPEG", quality=95)
 
     gap = 14
     preview = Image.new("RGB", (W + 2 * gap, H), (24, 24, 26))
