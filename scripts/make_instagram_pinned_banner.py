@@ -25,9 +25,22 @@ MUTED_LT = (190, 190, 190)
 CARD = (255, 255, 255)
 CARD_BORDER = (230, 226, 218)
 ORANGE = (232, 122, 46)
-PURPLE = (124, 92, 191)
+BLUE = (30, 136, 229)  # WiSo — clear blue (#1E88E5)
 TEAL = (46, 140, 130)
 WHITE = (255, 255, 255)
+
+# Layout system (each Instagram tile = 1080×1350)
+MARGIN_X = 48  # card ↔ tile edge (left/right equal)
+MARGIN_TOP = 196  # below header → card
+MARGIN_BOTTOM = 56  # card ↔ footer
+CARD_W = TILE_W - 2 * MARGIN_X  # 984
+CARD_H = TILE_H - MARGIN_TOP - MARGIN_BOTTOM  # 1098
+CARD_PAD = 56  # inner padding
+GAP_TAG_TITLE = 32
+GAP_TITLE_RULE = 32
+GAP_RULE_LIST = 44
+BULLET_ROW = 108
+CHECK_GAP = 22  # checkmark → text
 
 FONT_DIR = Path("/usr/share/fonts/truetype/macos")
 
@@ -45,7 +58,7 @@ CARDS = [
     },
     {
         "tag": "WiSo",
-        "accent": PURPLE,
+        "accent": BLUE,
         "title": "Full WiSo Course",
         "bullets": [
             "Wirtschaft • Math • German",
@@ -164,36 +177,35 @@ def draw_logo(draw: ImageDraw.ImageDraw, x: int, y: int, size: int = 100, light:
 
 
 def draw_check(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int]) -> None:
-    draw.line([(x, y + 14), (x + 11, y + 26), (x + 32, y)], fill=color, width=5)
+    """Checkmark with top-left at (x, y); ~32px tall to match ~48px text."""
+    draw.line([(x, y + 16), (x + 12, y + 28), (x + 34, y + 2)], fill=color, width=5)
 
 
 def draw_card(
     canvas: Image.Image,
     *,
-    cx: int,
+    left: int,
     top: int,
     tag: str,
     accent: tuple[int, int, int],
     title: str,
     bullets: list[str],
-    width: int = 980,
-    height: int = 980,
+    width: int = CARD_W,
+    height: int = CARD_H,
     glass: bool = False,
 ) -> None:
-    left = cx - width // 2
     layer = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
-    radius = 36
+    radius = 32
 
-    # shadow
     shadow = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     sd = ImageDraw.Draw(shadow)
     sd.rounded_rectangle(
-        [left + 12, top + 16, left + width + 12, top + height + 16],
+        [left + 10, top + 14, left + width + 10, top + height + 14],
         radius=radius,
-        fill=(0, 0, 0, 100),
+        fill=(0, 0, 0, 90),
     )
-    canvas.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(18)))
+    canvas.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(16)))
 
     if glass:
         d.rounded_rectangle(
@@ -217,72 +229,97 @@ def draw_card(
     canvas.alpha_composite(layer)
     draw = ImageDraw.Draw(canvas)
 
-    pad = 64
-    tag_f = font("Inter-Bold.ttf", 42)
-    tw, th = text_size(draw, tag, tag_f)
-    pad_x, pad_y = 28, 14
-    tag_w, tag_h = tw + pad_x * 2, th + pad_y * 2
-    tag_x, tag_y = left + pad, top + 64
-    draw.rounded_rectangle([tag_x, tag_y, tag_x + tag_w, tag_y + tag_h], radius=10, fill=accent)
-    draw.text((tag_x + pad_x, tag_y + pad_y - 2), tag, font=tag_f, fill=WHITE)
+    pad = CARD_PAD
+    content_left = left + pad
+    content_right = left + width - pad
 
-    title_f = font("Inter-Bold.ttf", 72)
-    draw.text((left + pad, top + 170), title, font=title_f, fill=title_c)
-    draw.line(
-        [(left + pad, top + 280), (left + width - pad, top + 280)],
-        fill=border_c,
-        width=3,
+    # --- measure content block, then vertically center inside the card ---
+    tag_f = font("Inter-Bold.ttf", 36)
+    title_f = font("Inter-Bold.ttf", 64)
+    bullet_f = font("Inter-Medium.ttf", 44)
+
+    tag_tw, tag_th = text_size(draw, tag, tag_f)
+    tag_pad_x, tag_pad_y = 24, 12
+    tag_box_h = tag_th + tag_pad_y * 2
+    _, title_h = text_size(draw, title, title_f)
+    _, bullet_h = text_size(draw, "Ag", bullet_f)
+
+    # Top-aligned with equal inner padding — same rhythm on every card
+    y = top + pad
+
+    # Tag
+    tag_box_w = tag_tw + tag_pad_x * 2
+    draw.rounded_rectangle(
+        [content_left, y, content_left + tag_box_w, y + tag_box_h],
+        radius=8,
+        fill=accent,
     )
+    draw.text((content_left + tag_pad_x, y + tag_pad_y - 1), tag, font=tag_f, fill=WHITE)
+    y += tag_box_h + GAP_TAG_TITLE
 
-    bullet_f = font("Inter-Medium.ttf", 48)
-    # Spread bullets through the tall card so the box feels full
-    y = top + 350
-    row = 125
+    # Title
+    draw.text((content_left, y), title, font=title_f, fill=title_c)
+    y += title_h + GAP_TITLE_RULE
+
+    # Rule
+    draw.line([(content_left, y), (content_right, y)], fill=border_c, width=2)
+    y += GAP_RULE_LIST
+
+    # Bullets — equal row rhythm
     for bullet in bullets:
-        draw_check(draw, left + pad + 4, y + 12, accent)
-        draw.text((left + pad + 60, y), bullet, font=bullet_f, fill=body_c)
-        y += row
+        # Align check to text vertical center
+        check_y = y + max(0, (bullet_h - 30) // 2)
+        draw_check(draw, content_left, check_y, accent)
+        draw.text((content_left + 34 + CHECK_GAP, y), bullet, font=bullet_f, fill=body_c)
+        y += BULLET_ROW
 
 
 def build_banner(bg: Image.Image, *, glass_cards: bool = False) -> Image.Image:
     canvas = bg.convert("RGBA")
     draw = ImageDraw.Draw(canvas)
 
-    # Compact header so cards dominate the frame
-    title_f = font("Inter-Bold.ttf", 72)
-    sub_f = font("Inter-Medium.ttf", 34)
+    # Header band — centered on full banner, fixed rhythm
+    title_f = font("Inter-Bold.ttf", 68)
+    sub_f = font("Inter-Medium.ttf", 32)
     title = "Preparation Courses"
-    tw, _ = text_size(draw, title, title_f)
-    draw.text(((W - tw) / 2 + 2, 42), title, font=title_f, fill=(0, 0, 0, 160))
-    draw.text(((W - tw) / 2, 40), title, font=title_f, fill=WHITE)
+    tw, th = text_size(draw, title, title_f)
+    title_y = 40
+    draw.text(((W - tw) / 2 + 2, title_y + 2), title, font=title_f, fill=(0, 0, 0, 150))
+    draw.text(((W - tw) / 2, title_y), title, font=title_f, fill=WHITE)
 
     sub = "WU Vienna entrance exam prep"
-    sw, _ = text_size(draw, sub, sub_f)
-    draw.text(((W - sw) / 2, 125), sub, font=sub_f, fill=MUTED_LT)
-    draw.line([(120, 180), (W - 120, 180)], fill=(255, 255, 255, 55), width=2)
+    sw, sh = text_size(draw, sub, sub_f)
+    sub_y = title_y + th + 16
+    draw.text(((W - sw) / 2, sub_y), sub, font=sub_f, fill=MUTED_LT)
 
-    draw_logo(draw, W - 40 - 88, 36, size=88, light=True)
+    rule_y = sub_y + sh + 20
+    draw.line([(160, rule_y), (W - 160, rule_y)], fill=(255, 255, 255, 60), width=2)
 
-    # Large cards — main focus (~95% tile width, ~80% height)
+    logo_size = 84
+    draw_logo(draw, W - MARGIN_X - logo_size, 32, size=logo_size, light=True)
+
+    # Cards: identical size, equal side margins inside every tile
     for i, card in enumerate(CARDS):
-        cx = i * TILE_W + TILE_W // 2
+        left = i * TILE_W + MARGIN_X
         draw_card(
             canvas,
-            cx=cx,
-            top=195,
+            left=left,
+            top=MARGIN_TOP,
             tag=card["tag"],
             accent=card["accent"],
             title=card["title"],
             bullets=card["bullets"],
             glass=glass_cards,
-            width=1020,
-            height=1080,
+            width=CARD_W,
+            height=CARD_H,
         )
 
-    url_f = font("Inter-Medium.ttf", 28)
+    url_f = font("Inter-Medium.ttf", 26)
     url = "bbe-school.com"
-    uw, _ = text_size(draw, url, url_f)
-    draw.text(((W - uw) / 2, H - 40), url, font=url_f, fill=MUTED_LT)
+    uw, uh = text_size(draw, url, url_f)
+    # Sit in the bottom margin, vertically centered in that band
+    url_y = H - MARGIN_BOTTOM + (MARGIN_BOTTOM - uh) // 2
+    draw.text(((W - uw) / 2, url_y), url, font=url_f, fill=MUTED_LT)
     return canvas.convert("RGB")
 
 
