@@ -89,7 +89,7 @@ type DashTab = "courses" | "mocks" | "custom" | "games";
 type ToolMode = "flash" | "match" | "tutor";
 
 /**
- * Fast pass through the real Full BBE Course screens.
+ * Two-minute pass through the real Full BBE Course screens.
  * The pointer arrives, then one rust arrow draws to a single caption.
  */
 export function FullCourseTour() {
@@ -110,164 +110,160 @@ export function FullCourseTour() {
   const [picked, setPicked] = useState(false);
   const [tool, setTool] = useState<ToolMode>("flash");
 
-  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
-    async (api) => {
-      const arrow = () => arrowRef.current;
-      const tip = async (selector: string, text: string, hold = 680) => {
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    const arrow = () => arrowRef.current;
+    const tip = async (selector: string, text: string, hold = 4200) => {
+      if (api.cancelled()) return;
+      await api.moveTo(selector, 40);
+      arrow()?.show(selector, text);
+      await api.tween(420, (eased) => arrow()?.draw(eased));
+      await api.wait(hold);
+      if (api.cancelled()) return;
+      await api.tween(260, (eased) => arrow()?.draw(1 - eased));
+      arrow()?.hide();
+    };
+    const enter = async (next: Scene) => {
+      if (api.cancelled()) return;
+      arrow()?.hide();
+      setFade(true);
+      await api.wait(180);
+      setScene(next);
+      await api.flush();
+      setFade(false);
+      await api.wait(240);
+    };
+
+    while (!api.cancelled()) {
+      setDashTab("courses");
+      setRead(false);
+      setTimed(false);
+      setMarks({});
+      setShown(false);
+      setCalcOn(false);
+      setBubble(false);
+      setFlagged(false);
+      setChosen(false);
+      setBuilt(false);
+      setFlipped(false);
+      setMatched(false);
+      setPicked(false);
+      setTool("flash");
+      await enter("dash");
+
+      await tip(
+        '[data-d="continue"]',
+        "Continue opens the course. Streak and accuracy live here.",
+        4800,
+      );
+      await tip(
+        '[data-d="stats"]',
+        "Attempts, accuracy, and days in a row, counted for you.",
+        4000,
+      );
+      for (const id of ["mocks", "custom", "games"] as const) {
         if (api.cancelled()) return;
-        await api.moveTo(selector, 12);
-        arrow()?.show(selector, text);
-        await api.tween(260, (eased) => arrow()?.draw(eased));
-        await api.wait(hold);
-        if (api.cancelled()) return;
-        await api.tween(140, (eased) => arrow()?.draw(1 - eased));
-        arrow()?.hide();
-      };
-      const enter = async (next: Scene) => {
-        if (api.cancelled()) return;
-        arrow()?.hide();
-        setFade(true);
-        await api.wait(80);
-        setScene(next);
-        await api.flush();
-        setFade(false);
-        await api.wait(100);
-      };
-
-      while (!api.cancelled()) {
-        setDashTab("courses");
-        setRead(false);
-        setTimed(false);
-        setMarks({});
-        setShown(false);
-        setCalcOn(false);
-        setBubble(false);
-        setFlagged(false);
-        setChosen(false);
-        setBuilt(false);
-        setFlipped(false);
-        setMatched(false);
-        setPicked(false);
-        setTool("flash");
-        await enter("dash");
-
-        await tip(
-          '[data-d="continue"]',
-          "Continue opens the course. Streak and accuracy live here.",
-          760,
-        );
-        await tip(
-          '[data-d="stats"]',
-          "Attempts, accuracy, and days in a row, counted for you.",
-          680,
-        );
-        for (const id of ["mocks", "custom", "games"] as const) {
-          if (api.cancelled()) return;
-          await api.moveTo(`[data-d="tab-${id}"]`, 8);
-          await api.click(() => setDashTab(id));
-          await api.wait(50);
-        }
-        await tip(
-          '[data-d="tab-games"]',
-          "Progress, full mocks, your own mocks, and study tools.",
-          620,
-        );
-
-        await enter("theory");
-        await tip('[data-d="ch-3"]', "The chapter title opens the theory the tasks assume.", 680);
-        await api.click(() => setRead(true));
-        await api.wait(140);
-        await tip(
-          '[data-d="theory-title"]',
-          "Definitions first. The questions are written from this page.",
-          720,
-        );
-
-        await enter("task");
-        await tip('[data-d="m2"]', "A blank costs nothing. A wrong mark costs a point.", 720);
-        await api.moveTo('[data-d="m0"]', 8);
-        await api.click(() => setMarks({ 0: true }));
-        await api.wait(30);
-        await api.moveTo('[data-d="m1"]', 8);
-        await api.click(() => setMarks({ 0: true, 1: true }));
-        await api.wait(30);
-        await tip('[data-d="timed"]', "Timed Mode is the clock for the real limit.", 600);
-        await api.click(() => setTimed(true));
-        await api.wait(140);
-
-        await enter("expl");
-        await tip(
-          '[data-d="expl-scroll"]',
-          "The verdict, then the reason, in the bank's own words.",
-          820,
-        );
-
-        await enter("english");
-        await api.moveTo('[data-d="show"]', 8);
-        await api.click(() => setShown(true));
-        await api.wait(70);
-        await tip('[data-d="line"]', "The sentence the statement depends on.", 720);
-
-        await enter("math");
-        await api.moveTo('[data-d="calc"]', 8);
-        await api.click(() => setCalcOn(true));
-        await api.wait(70);
-        for (const key of KEYS) {
-          if (api.cancelled()) return;
-          await pressCalcKey(api, key);
-          await api.wait(12);
-        }
-        await tip('[data-d="calc"]', "The exam calculator, inside the task.", 620);
-
-        await enter("mock");
-        await tip(
-          '[data-d="palette"]',
-          "Every subject in one paper. Flag a question for later.",
-          660,
-        );
-        await api.moveTo('[data-d="flag"]', 8);
-        await api.click(() => setFlagged(true));
-        await api.wait(70);
-        await tip('[data-d="sheet"]', "The bubble sheet from the real exam.", 660);
-        await api.click(() => setBubble(true));
-        await api.wait(140);
-
-        await enter("results");
-        await tip('[data-d="chart"]', "How long each question took, then the review.", 720);
-
-        await enter("builder");
-        await api.moveTo('[data-d="topic"]', 8);
-        await api.click(() => setChosen(true));
-        await api.wait(60);
-        await tip('[data-d="build"]', "A mock built only from the topics you pick.", 680);
-        await api.click(() => setBuilt(true));
-        await api.wait(160);
-
-        await enter("tools");
-        await api.moveTo('[data-d="flip"]', 8);
-        await api.click(() => setFlipped(true));
-        await api.wait(70);
-        await tip('[data-d="card"]', "Flip a term, then mark whether you know it.", 600);
-        setTool("match");
-        await api.flush();
-        await api.wait(40);
-        await api.moveTo('[data-d="pair"]', 8);
-        await api.click(() => setMatched(true));
-        await api.wait(50);
-        await tip('[data-d="pair"]', "Match the term to its meaning.", 580);
-        setTool("tutor");
-        await api.flush();
-        await api.wait(40);
-        await api.moveTo('[data-d="c3"]', 8);
-        await api.click(() => setPicked(true));
-        await api.wait(40);
-        await tip('[data-d="c3"]', "A short quiz on the theory.", 640);
-        await api.wait(160);
+        await api.moveTo(`[data-d="tab-${id}"]`, 30);
+        await api.click(() => setDashTab(id));
+        await api.wait(280);
       }
-    },
-    [],
-    { pace: 2.2 },
-  );
+      await tip(
+        '[data-d="tab-games"]',
+        "Progress, full mocks, your own mocks, and study tools.",
+        3600,
+      );
+
+      await enter("theory");
+      await tip('[data-d="ch-3"]', "The chapter title opens the theory the tasks assume.", 4200);
+      await api.click(() => setRead(true));
+      await api.wait(280);
+      await tip(
+        '[data-d="theory-title"]',
+        "Definitions first. The questions are written from this page.",
+        4400,
+      );
+
+      await enter("task");
+      await tip('[data-d="m2"]', "A blank costs nothing. A wrong mark costs a point.", 4400);
+      await api.moveTo('[data-d="m0"]', 30);
+      await api.click(() => setMarks({ 0: true }));
+      await api.wait(80);
+      await api.moveTo('[data-d="m1"]', 30);
+      await api.click(() => setMarks({ 0: true, 1: true }));
+      await api.wait(100);
+      await tip('[data-d="timed"]', "Timed Mode is the clock for the real limit.", 3600);
+      await api.click(() => setTimed(true));
+      await api.wait(500);
+
+      await enter("expl");
+      await tip(
+        '[data-d="expl-scroll"]',
+        "The verdict, then the reason, in the bank's own words.",
+        5000,
+      );
+
+      await enter("english");
+      await api.moveTo('[data-d="show"]', 30);
+      await api.click(() => setShown(true));
+      await api.wait(220);
+      await tip('[data-d="line"]', "The sentence the statement depends on.", 4200);
+
+      await enter("math");
+      await api.moveTo('[data-d="calc"]', 30);
+      await api.click(() => setCalcOn(true));
+      await api.wait(180);
+      for (const key of KEYS) {
+        if (api.cancelled()) return;
+        await pressCalcKey(api, key);
+        await api.wait(50);
+      }
+      await tip('[data-d="calc"]', "The exam calculator, inside the task.", 3800);
+
+      await enter("mock");
+      await tip(
+        '[data-d="palette"]',
+        "Every subject in one paper. Flag a question for later.",
+        4200,
+      );
+      await api.moveTo('[data-d="flag"]', 24);
+      await api.click(() => setFlagged(true));
+      await api.wait(240);
+      await tip('[data-d="sheet"]', "The bubble sheet from the real exam.", 4200);
+      await api.click(() => setBubble(true));
+      await api.wait(400);
+
+      await enter("results");
+      await tip('[data-d="chart"]', "How long each question took, then the review.", 4800);
+
+      await enter("builder");
+      await api.moveTo('[data-d="topic"]', 30);
+      await api.click(() => setChosen(true));
+      await api.wait(200);
+      await tip('[data-d="build"]', "A mock built only from the topics you pick.", 4400);
+      await api.click(() => setBuilt(true));
+      await api.wait(500);
+
+      await enter("tools");
+      await api.moveTo('[data-d="flip"]', 30);
+      await api.click(() => setFlipped(true));
+      await api.wait(240);
+      await tip('[data-d="card"]', "Flip a term, then mark whether you know it.", 3600);
+      setTool("match");
+      await api.flush();
+      await api.wait(160);
+      await api.moveTo('[data-d="pair"]', 30);
+      await api.click(() => setMatched(true));
+      await api.wait(200);
+      await tip('[data-d="pair"]', "Match the term to its meaning.", 3400);
+      setTool("tutor");
+      await api.flush();
+      await api.wait(160);
+      await api.moveTo('[data-d="c3"]', 30);
+      await api.click(() => setPicked(true));
+      await api.wait(160);
+      await tip('[data-d="c3"]', "A short quiz on the theory.", 4000);
+      await api.wait(400);
+    }
+  }, []);
 
   return (
     <div
@@ -276,7 +272,7 @@ export function FullCourseTour() {
       aria-label="Full BBE Course walkthrough"
       className="absolute inset-0 bg-paper font-sans text-foreground"
     >
-      <div className={cn("absolute inset-0 transition-opacity duration-150", fade && "opacity-0")}>
+      <div className={cn("absolute inset-0 transition-opacity duration-200", fade && "opacity-0")}>
         <div
           ref={scrollRef}
           className="news-uniq-scroll h-full overflow-x-hidden overflow-y-auto px-3 py-3 sm:px-4"
