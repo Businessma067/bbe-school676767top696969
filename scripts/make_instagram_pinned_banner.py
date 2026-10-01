@@ -25,24 +25,19 @@ MUTED_LT = (190, 190, 190)
 CARD = (255, 255, 255)
 CARD_BORDER = (230, 226, 218)
 ORANGE = (232, 122, 46)
-BLUE = (14, 165, 233)  # WiSo — sky blue (#0EA5E9), clearly not purple
+BLUE = (21, 101, 192)  # WiSo — pure blue (#1565C0), no purple/magenta
 TEAL = (46, 140, 130)
 WHITE = (255, 255, 255)
 
 # Layout system (each Instagram tile = 1080×1350)
-# Header sits in a fixed top band; cards are optically centered in the
-# remaining space (equal gap under header and above footer).
+# True geometric center of the white card in the tile.
 MARGIN_X = 48
 CARD_W = TILE_W - 2 * MARGIN_X  # 984
-HEADER_BAND = 128  # title + subtitle zone
-FOOTER_BAND = 48
-CARD_H = 1020
-_free = TILE_H - HEADER_BAND - FOOTER_BAND - CARD_H  # space to split
-GAP_AROUND = _free // 2
-# Nudge cards slightly down — header text makes equal gaps look top-heavy
-NUDGE_DOWN = 36
-MARGIN_TOP = HEADER_BAND + GAP_AROUND + NUDGE_DOWN
-MARGIN_BOTTOM = TILE_H - MARGIN_TOP - CARD_H
+CARD_H = 1000
+MARGIN_TOP = (TILE_H - CARD_H) // 2  # 175
+MARGIN_BOTTOM = TILE_H - MARGIN_TOP - CARD_H  # 175
+HEADER_BAND = MARGIN_TOP  # header drawn inside top margin
+FOOTER_BAND = MARGIN_BOTTOM
 CARD_PAD = 56  # inner padding
 GAP_TAG_TITLE = 32
 GAP_TITLE_RULE = 32
