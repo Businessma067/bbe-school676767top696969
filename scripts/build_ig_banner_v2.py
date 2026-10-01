@@ -84,11 +84,71 @@ def make_bg() -> Image.Image:
     return Image.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
 
 
-def logo(draw: ImageDraw.ImageDraw, x: int, y: int, size: int = 70) -> None:
-    draw.rounded_rectangle([x, y, x + size, y + size], radius=14, outline=WHITE, width=3)
-    f = F("Inter-Bold.ttf", 28)
-    tw, th = measure(draw, "BBE", f)
-    draw.text((x + (size - tw) / 2, y + (size - th) / 2 - 1), "BBE", font=f, fill=WHITE)
+def ink_bbox(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont) -> tuple[int, int, int, int]:
+    """Return (x0, y0, x1, y1) of glyph ink relative to (0,0)."""
+    return draw.textbbox((0, 0), text, font=font)
+
+
+def draw_centered(
+    draw: ImageDraw.ImageDraw,
+    cx: float,
+    cy: float,
+    text: str,
+    font: ImageFont.ImageFont,
+    fill: tuple[int, int, int],
+) -> tuple[int, int]:
+    """Draw text with ink box centered on (cx, cy). Returns (ink_w, ink_h)."""
+    x0, y0, x1, y1 = ink_bbox(draw, text, font)
+    tw, th = x1 - x0, y1 - y0
+    draw.text((cx - tw / 2 - x0, cy - th / 2 - y0), text, font=font, fill=fill)
+    return tw, th
+
+
+def logo_image(size: int = 68) -> Image.Image:
+    """Hi-res BBE mark, downscaled — letters geometrically centered."""
+    scale = 4
+    S = size * scale
+    im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    # Outer white ring + dark fill (equal inset on all sides)
+    d.rounded_rectangle([0, 0, S - 1, S - 1], radius=14 * scale, fill=(*WHITE, 255))
+    inset = 3 * scale
+    d.rounded_rectangle(
+        [inset, inset, S - 1 - inset, S - 1 - inset],
+        radius=11 * scale,
+        fill=(18, 18, 20, 255),
+    )
+    f = F("Inter-Bold.ttf", 25 * scale)
+    letters = ["B", "B", "E"]
+    gap = 3 * scale
+    widths, heights, origins = [], [], []
+    for ch in letters:
+        x0, y0, x1, y1 = d.textbbox((0, 0), ch, font=f)
+        widths.append(x1 - x0)
+        heights.append(y1 - y0)
+        origins.append((x0, y0))
+    total_w = sum(widths) + gap * (len(letters) - 1)
+    max_h = max(heights)
+    # True center of the dark inner square
+    inner0 = inset
+    inner1 = S - inset
+    inner_cx = (inner0 + inner1) / 2
+    inner_cy = (inner0 + inner1) / 2
+    # +2px final (~8 @4x): Inter Bold "BBE" ink mass reads left after downsample
+    cursor_x = inner_cx - total_w / 2 + 2 * scale
+    base_y = inner_cy - max_h / 2 + 0.5 * scale
+    for ch, w, h, (x0, y0) in zip(letters, widths, heights, origins):
+        gy = base_y + (max_h - h) / 2
+        d.text((cursor_x - x0, gy - y0), ch, font=f, fill=(*WHITE, 255))
+        cursor_x += w + gap
+    return im.resize((size, size), Image.Resampling.LANCZOS)
+
+
+def paste_logo(canvas: Image.Image, x: int, y: int, size: int = 68) -> None:
+    mark = logo_image(size)
+    if canvas.mode != "RGBA":
+        raise ValueError("canvas must be RGBA to paste logo")
+    canvas.alpha_composite(mark, (x, y))
 
 
 def check(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int]) -> None:
@@ -127,36 +187,68 @@ def card(
     draw = ImageDraw.Draw(canvas)
 
     tag_f = F("Inter-Bold.ttf", 34)
-    title_f = F("Inter-Bold.ttf", 58)
+    title_f = F("Inter-Bold.ttf", 56)
     body_f = F("Inter-Medium.ttf", 40)
 
-    # Fixed vertical rhythm from top of card (same on all three)
-    x0 = left + PAD
-    y = top + PAD
+    GAP_TAG = 28
+    GAP_TITLE = 28
+    GAP_RULE = 36
+    ROW = 92
+    CHECK_W = 44
+    CHECK_H = 28
+    TAG_BX, TAG_BY = 24, 12
+    cx = left + CARD_W / 2  # horizontal center of card
 
-    # tag
-    tw, th = measure(draw, tag, tag_f)
-    bx, by = 22, 10
-    draw.rounded_rectangle([x0, y, x0 + tw + bx * 2, y + th + by * 2], radius=8, fill=accent)
-    draw.text((x0 + bx, y + by - 1), tag, font=tag_f, fill=WHITE)
-    y += th + by * 2 + 28
+    # --- measure ink boxes ---
+    tag_x0, tag_y0, tag_x1, tag_y1 = ink_bbox(draw, tag, tag_f)
+    tag_tw, tag_th = tag_x1 - tag_x0, tag_y1 - tag_y0
+    tag_box_w = tag_tw + TAG_BX * 2
+    tag_box_h = tag_th + TAG_BY * 2
 
-    # title
-    draw.text((x0, y), title, font=title_f, fill=INK)
-    _, title_h = measure(draw, title, title_f)
-    y += title_h + 26
+    title_x0, title_y0, title_x1, title_y1 = ink_bbox(draw, title, title_f)
+    title_w = title_x1 - title_x0
+    title_h = title_y1 - title_y0
 
-    # rule
-    draw.line([(x0, y), (left + CARD_W - PAD, y)], fill=BORDER, width=2)
-    y += 36
-
-    # bullets — equal spacing
-    row = 96
+    bullet_meta: list[tuple[str, int, int, int, int]] = []
     for b in bullets:
-        _, bh = measure(draw, b, body_f)
-        check(draw, x0, y + max(0, (bh - 28) // 2), accent)
-        draw.text((x0 + 48, y), b, font=body_f, fill=INK)
-        y += row
+        bx0, by0, bx1, by1 = ink_bbox(draw, b, body_f)
+        bullet_meta.append((b, bx0, by0, bx1 - bx0, by1 - by0))
+    bullet_h = max(h for *_, h in bullet_meta)
+    list_w = CHECK_W + max(w for *_, w, _h in bullet_meta)
+    list_h = (len(bullets) - 1) * ROW + bullet_h
+    content_h = tag_box_h + GAP_TAG + title_h + GAP_TITLE + 2 + GAP_RULE + list_h
+
+    # Geometric center + small optical nudge (header weight reads high)
+    y = top + (CARD_H - content_h) // 2 + 16
+
+    # Tag — centered
+    tag_x = int(round(cx - tag_box_w / 2))
+    draw.rounded_rectangle(
+        [tag_x, y, tag_x + tag_box_w, y + tag_box_h],
+        radius=8,
+        fill=accent,
+    )
+    draw_centered(draw, cx, y + tag_box_h / 2, tag, tag_f, WHITE)
+    y += tag_box_h + GAP_TAG
+
+    # Title — centered
+    draw_centered(draw, cx, y + title_h / 2, title, title_f, INK)
+    y += title_h + GAP_TITLE
+
+    # Rule — centered under title, width from content column
+    rule_w = max(int(title_w * 1.05), int(list_w * 0.92), int(CARD_W * 0.55))
+    rule_w = min(rule_w, int(CARD_W * 0.78))
+    draw.line([(cx - rule_w / 2, y), (cx + rule_w / 2, y)], fill=BORDER, width=2)
+    y += 2 + GAP_RULE
+
+    # Bullets — ONE left-aligned column, column itself centered in the card
+    # (so checkmarks form a straight vertical line — "ровно")
+    col_left = int(round(cx - list_w / 2))
+    for b, bx0, by0, _bw, bh in bullet_meta:
+        check_y = y + max(0, (bh - CHECK_H) // 2)
+        check(draw, col_left, check_y, accent)
+        draw.text((col_left + CHECK_W - bx0, y - by0), b, font=body_f, fill=INK)
+        y += ROW
 
 
 def build() -> Image.Image:
@@ -187,22 +279,27 @@ def build() -> Image.Image:
     # Three identical cards — same TOP, same size, equal SIDE in each tile
     for i, (tag, accent, title, bullets) in enumerate(cards):
         left = i * TILE + SIDE
-        assert left + CARD_W == i * TILE + TILE - SIDE
         card(canvas, left, TOP, tag, accent, title, bullets)
 
-    # Header in top margin band (above cards)
+    # Header — centered on full banner, vertically centered in top band
     title_f = F("Inter-Bold.ttf", 52)
     sub_f = F("Inter-Medium.ttf", 26)
     t = "Preparation Courses"
     tw, th = measure(draw, t, title_f)
-    title_y = max(18, (TOP - th - 34) // 2)
-    draw.text(((W - tw) / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
-    draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
     s = "WU Vienna entrance exam prep"
     sw, sh = measure(draw, s, sub_f)
+    block_h = th + 8 + sh
+    title_y = (TOP - block_h) // 2
+    draw.text(((W - tw) / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
+    draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
     draw.text(((W - sw) / 2, title_y + th + 8), s, font=sub_f, fill=MUTED)
 
-    logo(draw, W - SIDE - 70, max(16, (TOP - 70) // 2), 70)
+    # BBE logo on EVERY tile — same position relative to each square
+    LOGO = 68
+    logo_y = (TOP - LOGO) // 2
+    for i in range(3):
+        logo_x = i * TILE + TILE - SIDE - LOGO
+        paste_logo(canvas, logo_x, logo_y, LOGO)
 
     # Footer centered in bottom margin
     url_f = F("Inter-Medium.ttf", 24)
@@ -216,28 +313,80 @@ def build() -> Image.Image:
 
 def verify(full: Image.Image) -> None:
     arr = np.asarray(full)
-    # WiSo tile = middle
-    tile = arr[:, TILE : 2 * TILE]
-    # Find white card bounds
+    # WiSo tile = middle — look only in expected card band (ignore logos above)
+    tile = arr[TOP : TOP + CARD_H, TILE + SIDE : TILE + SIDE + CARD_W]
     white = (tile[:, :, 0] > 245) & (tile[:, :, 1] > 245) & (tile[:, :, 2] > 245)
-    rows = np.where(white.mean(axis=1) > 0.3)[0]
-    cols = np.where(white.mean(axis=0) > 0.25)[0]
-    top_m = int(rows.min())
-    bot_m = H - 1 - int(rows.max())
-    left_m = int(cols.min())
-    right_m = TILE - 1 - int(cols.max())
-    print(f"card margins top={top_m} bottom={bot_m} left={left_m} right={right_m}")
-    assert abs(top_m - bot_m) <= 3, (top_m, bot_m)
-    assert abs(left_m - right_m) <= 3, (left_m, right_m)
+    assert white.mean() > 0.7, white.mean()
 
-    # WiSo badge color — must be blue with low red
-    badge = tile[top_m + 40 : top_m + 100, left_m + 40 : left_m + 160]
-    sat = badge[(badge.max(2) - badge.min(2)) > 60]
-    sat = sat[sat.mean(1) < 200]
-    mean = sat.mean(0)
-    print(f"WiSo accent mean RGB = {mean.astype(int)} (R should be near 0, B highest)")
+    # Layout constants
+    print(f"layout TOP={TOP} BOTTOM={BOTTOM} SIDE={SIDE} CARD={CARD_W}x{CARD_H}")
+    assert TOP == BOTTOM
+    assert SIDE == (TILE - CARD_W) // 2 or abs(2 * SIDE + CARD_W - TILE) <= 1
+
+    # WiSo blue accent somewhere in card (centered content)
+    blue_mask = (
+        (tile[:, :, 2] > 150)
+        & (tile[:, :, 0] < 40)
+        & (tile[:, :, 2] > tile[:, :, 1] + 20)
+    )
+    blues = tile[blue_mask]
+    assert len(blues) > 100, len(blues)
+    mean = blues.mean(0)
+    print(f"WiSo accent mean RGB = {mean.astype(int)} (n={len(blues)})")
     assert mean[2] > mean[0] + 80, mean
     assert mean[0] < 40, mean
+
+    # Logo letters centered inside square (ignore 3px white outline ring)
+    LOGO = 68
+    ring = 6
+    for i in range(3):
+        logo_x = i * TILE + TILE - SIDE - LOGO
+        logo_y = (TOP - LOGO) // 2
+        patch = arr[
+            logo_y + ring : logo_y + LOGO - ring,
+            logo_x + ring : logo_x + LOGO - ring,
+        ]
+        # letters = near-white on dark fill
+        letters = (patch[:, :, 0] > 200) & (patch[:, :, 1] > 200) & (patch[:, :, 2] > 200)
+        ys, xs = np.where(letters)
+        assert len(xs) > 30, len(xs)
+        inner = LOGO - 2 * ring
+        ink_cx = xs.mean()
+        ink_cy = ys.mean()
+        print(
+            f"logo tile{i} letters_center=({ink_cx:.1f},{ink_cy:.1f}) "
+            f"vs mid=({inner/2:.1f},{inner/2:.1f}) n={len(xs)}"
+        )
+        assert abs(ink_cx - inner / 2) < 3.5, ink_cx
+        assert abs(ink_cy - inner / 2) < 3.5, ink_cy
+
+    # Content block centered inside each card (ignore border ring)
+    inset = 24
+    for i, name in enumerate(["BBE", "WiSo", "Demo"]):
+        card = arr[
+            TOP + inset : TOP + CARD_H - inset,
+            i * TILE + SIDE + inset : i * TILE + SIDE + CARD_W - inset,
+        ]
+        ink = ~((card[:, :, 0] > 245) & (card[:, :, 1] > 245) & (card[:, :, 2] > 245))
+        ys, xs = np.where(ink)
+        assert len(xs) > 200, (name, len(xs))
+        inner_w = CARD_W - 2 * inset
+        inner_h = CARD_H - 2 * inset
+        left_pad = int(xs.min())
+        right_pad = int(inner_w - 1 - xs.max())
+        top_pad = int(ys.min())
+        bot_pad = int(inner_h - 1 - ys.max())
+        print(
+            f"{name} card pads L/R={left_pad}/{right_pad} T/B={top_pad}/{bot_pad} "
+            f"ink_cx={xs.mean():.1f} (mid={inner_w/2:.1f})"
+        )
+        # L/R pads of the content column must match (checkmarks form a straight edge)
+        assert abs(left_pad - right_pad) <= 12, (name, left_pad, right_pad)
+        # +28 optical nudge → bottom pad slightly smaller than top; still even-ish
+        assert top_pad > 140 and bot_pad > 140, (name, top_pad, bot_pad)
+        assert abs(top_pad - bot_pad) <= 50, (name, top_pad, bot_pad)
+        # ink mean can sit left of mid because checks are left of text — pads matter more
+        assert abs(xs.mean() - inner_w / 2) <= 40, (name, xs.mean())
     print("VERIFY OK")
 
 
