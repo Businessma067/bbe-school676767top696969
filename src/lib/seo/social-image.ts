@@ -24,7 +24,10 @@ export function socialImageMeta(pathOrUrl: string): Array<Record<string, string>
   ];
 }
 
-/** Homepage product screenshot — used as the sitewide default share image. */
+/** Homepage share card. Other routes keep their own images. */
+const HOMEPAGE_SOCIAL_IMAGE = "/homepage-og.png";
+
+/** Fallback share image for routes that do not set their own. */
 export const DEFAULT_SOCIAL_IMAGE = absoluteMediaUrl("/how-it-works/economics-poster.jpg");
 
 /** Campus hero shared by BBE exam guide shells. */
@@ -35,7 +38,7 @@ export const WU_CAMPUS_SOCIAL_IMAGE = absoluteMediaUrl(wuAsset.url);
  * (or the subject/product art that represents that URL).
  */
 export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
-  "/": DEFAULT_SOCIAL_IMAGE,
+  "/": absoluteMediaUrl(HOMEPAGE_SOCIAL_IMAGE),
   "/bbe-entrance-exam": WU_CAMPUS_SOCIAL_IMAGE,
   "/bbe-exam-scoring": WU_CAMPUS_SOCIAL_IMAGE,
   "/bbe-mathematics": WU_CAMPUS_SOCIAL_IMAGE,
