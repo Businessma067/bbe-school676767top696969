@@ -134,9 +134,9 @@ def logo_image(size: int = 68) -> Image.Image:
     inner1 = S - inset
     inner_cx = (inner0 + inner1) / 2
     inner_cy = (inner0 + inner1) / 2
-    # +2px final (~8 @4x): Inter Bold "BBE" ink mass reads left after downsample
-    cursor_x = inner_cx - total_w / 2 + 2 * scale
-    base_y = inner_cy - max_h / 2 + 0.5 * scale
+    # Small +x after downsample; +y so caps don't read high in the square
+    cursor_x = inner_cx - total_w / 2 + 1 * scale
+    base_y = inner_cy - max_h / 2 + 1 * scale
     for ch, w, h, (x0, y0) in zip(letters, widths, heights, origins):
         gy = base_y + (max_h - h) / 2
         d.text((cursor_x - x0, gy - y0), ch, font=f, fill=(*WHITE, 255))
