@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -20,6 +20,13 @@ export type RouletteSlide =
       video: string;
       poster: string;
       /** Native recording aspect so the stage never crops the walkthrough. */
+      aspect: string;
+    }
+  | {
+      key: string;
+      label: string;
+      kind: "live";
+      poster: string;
       aspect: string;
     };
 
@@ -146,7 +153,14 @@ export function buildFullCourseRouletteSlides(options: {
 
 const SWIPE_THRESHOLD = 50;
 
-export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] }) {
+export function FullCourseVideoRoulette({
+  slides,
+  live,
+}: {
+  slides: RouletteSlide[];
+  /** Real-interface film shown on the first live slide. */
+  live?: ReactNode;
+}) {
   const [index, setIndex] = useState(0);
   const stageRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -215,7 +229,7 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
           const dx = t.clientX - start.x;
           const dy = t.clientY - start.y;
           if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
-            dx < 0 ? go(index + 1) : go(index - 1);
+            go(dx < 0 ? index + 1 : index - 1);
           }
         }}
       >
@@ -227,7 +241,7 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
             className="absolute inset-0 h-full w-full object-cover object-center"
             draggable={false}
           />
-        ) : (
+        ) : slide.kind === "video" ? (
           <video
             key={slide.key}
             ref={videoRef}
@@ -241,6 +255,8 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
             draggable={false}
             aria-label={`${slide.label} walkthrough`}
           />
+        ) : (
+          <div className="absolute inset-0 z-20">{live}</div>
         )}
 
         <button
@@ -308,7 +324,7 @@ export function FullCourseVideoRoulette({ slides }: { slides: RouletteSlide[] })
                 draggable={false}
                 loading="lazy"
               />
-              {s.kind === "video" && (
+              {s.kind !== "image" && (
                 <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-1 pb-1 pt-3 text-left text-[9px] font-semibold leading-tight text-white sm:text-[10px]">
                   {s.label}
                 </span>

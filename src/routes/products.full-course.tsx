@@ -25,16 +25,27 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import {
   FullCourseVideoRoulette,
   buildFullCourseRouletteSlides,
+  type RouletteSlide,
 } from "@/components/FullCourseVideoRoulette";
+import { FullCourseTour } from "@/components/how-it-works/FullCourseTour";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 
-const ROULETTE_SLIDES = buildFullCourseRouletteSlides({
-  track: "bbe",
-  posterSrc: FULL_COURSE_IMAGE,
-  posterAlt: "Full BBE Course",
-});
+const ROULETTE_SLIDES: RouletteSlide[] = [
+  {
+    key: "tour",
+    label: "Full course",
+    kind: "live",
+    poster: FULL_COURSE_IMAGE,
+    aspect: "16 / 9",
+  },
+  ...buildFullCourseRouletteSlides({
+    track: "bbe",
+    posterSrc: FULL_COURSE_IMAGE,
+    posterAlt: "Full BBE Course",
+  }),
+];
 
 const FULL_COURSE_PRICE = 449;
 
@@ -271,7 +282,7 @@ export function FullCourseProduct() {
             Full BBE Course
           </h1>
 
-          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
+          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} live={<FullCourseTour />} />
 
           {/* Rating */}
           <div className="mt-5 flex items-center gap-3">

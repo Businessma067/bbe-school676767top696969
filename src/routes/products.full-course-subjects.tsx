@@ -6,7 +6,6 @@ import { Wand2 } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
-import { FullCourseTour } from "@/components/how-it-works/FullCourseTour";
 
 export const Route = createFileRoute("/products/full-course-subjects")({
   head: () => ({
@@ -89,19 +88,6 @@ function FullCourseSubjects() {
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">Choose a subject to begin.</p>
           </div>
-
-          <section className="mb-14" aria-label="Course walkthrough">
-            <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-foreground">
-              See the whole course
-            </h2>
-            <p className="mx-auto mt-2 max-w-xl text-center text-sm text-muted-foreground">
-              Dashboard, theory, practice, explanations, the calculator, a full mock, and the study
-              tools.
-            </p>
-            <div className="relative mx-auto mt-6 aspect-video w-full max-w-5xl overflow-hidden rounded-2xl border border-border bg-[#f6f5f2] shadow-sm max-sm:min-h-[32rem]">
-              <FullCourseTour />
-            </div>
-          </section>
 
           <div className="grid gap-6 md:grid-cols-3">
             {subjects.map((s) => (
