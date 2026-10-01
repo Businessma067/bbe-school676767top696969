@@ -59,7 +59,7 @@ CARDS = [
         "accent": TEAL,
         "title": "Demo Access",
         "bullets": [
-            "Free practice tasks",
+            "100+ Free practice tasks",
             "Sample mock exam",
             "Try BBE & WiSo tracks",
             "No credit card required",
@@ -216,59 +216,60 @@ def draw_card(
     canvas.alpha_composite(layer)
     draw = ImageDraw.Draw(canvas)
 
-    tag_f = font("Inter-Bold.ttf", 30)
+    tag_f = font("Inter-Bold.ttf", 34)
     tw, th = text_size(draw, tag, tag_f)
-    pad_x, pad_y = 20, 12
+    pad_x, pad_y = 22, 12
     tag_w, tag_h = tw + pad_x * 2, th + pad_y * 2
-    tag_x, tag_y = left + 44, top + 44
+    tag_x, tag_y = left + 44, top + 40
     draw.rounded_rectangle([tag_x, tag_y, tag_x + tag_w, tag_y + tag_h], radius=8, fill=accent)
     draw.text((tag_x + pad_x, tag_y + pad_y - 2), tag, font=tag_f, fill=WHITE)
 
-    title_f = font("Inter-Bold.ttf", 52)
-    draw.text((left + 44, top + 130), title, font=title_f, fill=title_c)
-    draw.line([(left + 44, top + 210), (left + width - 44, top + 210)], fill=border_c, width=2)
+    title_f = font("Inter-Bold.ttf", 58)
+    draw.text((left + 44, top + 120), title, font=title_f, fill=title_c)
+    draw.line([(left + 44, top + 205), (left + width - 44, top + 205)], fill=border_c, width=2)
 
-    bullet_f = font("Inter-Medium.ttf", 34)
-    y = top + 260
+    bullet_f = font("Inter-Medium.ttf", 40)
+    y = top + 250
     for bullet in bullets:
-        draw_check(draw, left + 48, y + 6, accent)
+        draw_check(draw, left + 48, y + 8, accent)
         draw.text((left + 92, y), bullet, font=bullet_f, fill=body_c)
-        y += 88
+        y += 92
 
 
 def build_banner(bg: Image.Image, *, glass_cards: bool = False) -> Image.Image:
     canvas = bg.convert("RGBA")
     draw = ImageDraw.Draw(canvas)
 
-    title_f = font("Inter-Bold.ttf", 84)
-    sub_f = font("Inter-Medium.ttf", 38)
+    title_f = font("Inter-Bold.ttf", 96)
+    sub_f = font("Inter-Medium.ttf", 44)
     title = "Preparation Courses"
     tw, _ = text_size(draw, title, title_f)
     # soft text shadow for readability
-    draw.text(((W - tw) / 2 + 2, 72), title, font=title_f, fill=(0, 0, 0, 160))
-    draw.text(((W - tw) / 2, 70), title, font=title_f, fill=WHITE)
+    draw.text(((W - tw) / 2 + 2, 68), title, font=title_f, fill=(0, 0, 0, 160))
+    draw.text(((W - tw) / 2, 66), title, font=title_f, fill=WHITE)
 
     sub = "WU Vienna entrance exam prep"
     sw, _ = text_size(draw, sub, sub_f)
-    draw.text(((W - sw) / 2, 180), sub, font=sub_f, fill=MUTED_LT)
-    draw.line([(120, 250), (W - 120, 250)], fill=(255, 255, 255, 55), width=2)
+    draw.text(((W - sw) / 2, 185), sub, font=sub_f, fill=MUTED_LT)
+    draw.line([(120, 258), (W - 120, 258)], fill=(255, 255, 255, 55), width=2)
 
-    draw_logo(draw, W - 48 - 100, 56, size=100, light=True)
+    draw_logo(draw, W - 48 - 100, 52, size=108, light=True)
 
     for i, card in enumerate(CARDS):
         cx = i * TILE_W + TILE_W // 2
         draw_card(
             canvas,
             cx=cx,
-            top=300,
+            top=290,
             tag=card["tag"],
             accent=card["accent"],
             title=card["title"],
             bullets=card["bullets"],
             glass=glass_cards,
+            height=800,
         )
 
-    url_f = font("Inter-Medium.ttf", 30)
+    url_f = font("Inter-Medium.ttf", 34)
     url = "bbe-school.com"
     uw, _ = text_size(draw, url, url_f)
     draw.text(((W - uw) / 2, H - 70), url, font=url_f, fill=MUTED_LT)
@@ -332,24 +333,26 @@ def prepare_backgrounds() -> list[tuple[str, Image.Image, dict]]:
     real = ROOT / "public" / "wu-vienna"
 
     sources: list[tuple[str, Path, dict]] = [
-        # Level / straight campus (preferred — less “crooked”)
+        # Daytime LLC (requested default) — keep daylight readable, light top fade only
+        (
+            "00-llc-day-cards",
+            artifact / "wu-bg-llc-day-match.jpg",
+            dict(brightness=0.88, contrast=1.05, vignette=0.28, top_fade=0.4, bottom_fade=0.15, color=1.05),
+        ),
+        (
+            "00b-llc-day-soft",
+            artifact / "wu-bg-llc-day.jpg",
+            dict(brightness=0.9, contrast=1.04, vignette=0.25, top_fade=0.38, bottom_fade=0.12, color=1.08),
+        ),
+        (
+            "00c-llc-day-bright",
+            artifact / "wu-bg-llc-day-match.jpg",
+            dict(brightness=0.95, contrast=1.02, vignette=0.22, top_fade=0.35, bottom_fade=0.1, color=1.08),
+        ),
+        # Keep a few strong backups
         ("01-llc-level-cards", artifact / "wu-bg-llc-level.jpg", dict(brightness=0.55, contrast=1.14, vignette=0.52, top_fade=0.52)),
-        ("02-llc-level-glass", artifact / "wu-bg-llc-level.jpg", dict(brightness=0.46, contrast=1.16, vignette=0.6, top_fade=0.45, cool=True)),
-        ("03-plaza-level-cards", artifact / "wu-bg-plaza-level.jpg", dict(brightness=0.52, contrast=1.12, vignette=0.5, top_fade=0.5)),
-        ("04-plaza-level-deep", artifact / "wu-bg-plaza-level.jpg", dict(brightness=0.42, contrast=1.18, vignette=0.62, top_fade=0.55, cool=True)),
-        ("05-campus-night-cards", artifact / "wu-bg-campus-night-level.jpg", dict(brightness=0.58, contrast=1.1, vignette=0.48, top_fade=0.5)),
-        ("06-campus-night-glass", artifact / "wu-bg-campus-night-level.jpg", dict(brightness=0.48, contrast=1.14, vignette=0.58, top_fade=0.42)),
-        # Moody cinematic
         ("07-llc-dusk-cards", artifact / "wu-bg-llc-dusk.jpg", dict(brightness=0.56, contrast=1.15, vignette=0.5, top_fade=0.5)),
-        ("08-teaching-night-cards", artifact / "wu-bg-teaching-night.jpg", dict(brightness=0.58, contrast=1.1, vignette=0.48, top_fade=0.5)),
-        ("09-interior-dark-cards", artifact / "wu-bg-interior-dark.jpg", dict(brightness=0.6, contrast=1.08, vignette=0.42, top_fade=0.55)),
-        ("10-audimax-dark-cards", artifact / "wu-bg-audimax-dark.jpg", dict(brightness=0.54, contrast=1.14, vignette=0.55, top_fade=0.5)),
-        # Real campus photos, darkened
-        ("11-real-plaza-dark", real / "campus-plaza.jpg", dict(brightness=0.44, contrast=1.2, vignette=0.62, top_fade=0.55, cool=True)),
-        ("12-real-llc-dark", real / "library-learning-center.jpg", dict(brightness=0.48, contrast=1.15, vignette=0.55, top_fade=0.5)),
-        ("13-real-teaching-dark", real / "teaching-center.jpg", dict(brightness=0.46, contrast=1.16, vignette=0.55, top_fade=0.5)),
-        ("14-real-audimax-dark", real / "audimax.jpg", dict(brightness=0.4, contrast=1.2, vignette=0.6, top_fade=0.55, cool=True)),
-        ("15-real-interior-dark", real / "library-interior.jpg", dict(brightness=0.52, contrast=1.1, vignette=0.45, top_fade=0.55)),
+        ("11-real-plaza-dark", real / "campus-plaza.jpg", dict(brightness=0.55, contrast=1.12, vignette=0.45, top_fade=0.5, color=1.0)),
     ]
 
     out: list[tuple[str, Image.Image, dict]] = []
@@ -407,8 +410,8 @@ def build() -> None:
     fulls = sorted(VARIANTS_DIR.glob("*/full.jpg"))
     make_contact_sheet(fulls, OUT / "contact-sheet-fulls.jpg", cols=2)
 
-    # Default: level LLC dusk (straight horizon, less crooked)
-    default = "01-llc-level-cards"
+    # Default: daytime LLC
+    default = "00-llc-day-cards"
     if (VARIANTS_DIR / default).exists():
         promote_default(default)
         print(f"Promoted default: {default}")
