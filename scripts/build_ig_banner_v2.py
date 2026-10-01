@@ -17,6 +17,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "design-explorations" / "instagram-pinned-banner"
+SITE_LOGO = ROOT / "public" / "logo.png"  # same asset as bbe-school.com/logo.png
 BG_CANDIDATES = [
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day-match.jpg"),
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day.jpg"),
@@ -104,51 +105,16 @@ def draw_centered(
     return tw, th
 
 
-def logo_image(size: int = 68) -> Image.Image:
-    """Hi-res BBE mark, downscaled — letters geometrically centered."""
-    scale = 4
-    S = size * scale
-    im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-    d = ImageDraw.Draw(im)
-    # Outer white ring + dark fill (equal inset on all sides)
-    d.rounded_rectangle([0, 0, S - 1, S - 1], radius=14 * scale, fill=(*WHITE, 255))
-    inset = 3 * scale
-    d.rounded_rectangle(
-        [inset, inset, S - 1 - inset, S - 1 - inset],
-        radius=11 * scale,
-        fill=(18, 18, 20, 255),
-    )
-    f = F("Inter-Bold.ttf", 25 * scale)
-    letters = ["B", "B", "E"]
-    gap = 3 * scale
-    widths, heights, origins = [], [], []
-    for ch in letters:
-        x0, y0, x1, y1 = d.textbbox((0, 0), ch, font=f)
-        widths.append(x1 - x0)
-        heights.append(y1 - y0)
-        origins.append((x0, y0))
-    total_w = sum(widths) + gap * (len(letters) - 1)
-    max_h = max(heights)
-    # True center of the dark inner square
-    inner0 = inset
-    inner1 = S - inset
-    inner_cx = (inner0 + inner1) / 2
-    inner_cy = (inner0 + inner1) / 2
-    # Small +x after downsample; +y so caps don't read high in the square
-    cursor_x = inner_cx - total_w / 2 + 1 * scale
-    base_y = inner_cy - max_h / 2 + 1 * scale
-    for ch, w, h, (x0, y0) in zip(letters, widths, heights, origins):
-        gy = base_y + (max_h - h) / 2
-        d.text((cursor_x - x0, gy - y0), ch, font=f, fill=(*WHITE, 255))
-        cursor_x += w + gap
+def site_logo(size: int = 72) -> Image.Image:
+    """Site BBE logo from public/logo.png — just resized for the banner."""
+    im = Image.open(SITE_LOGO).convert("RGBA")
     return im.resize((size, size), Image.Resampling.LANCZOS)
 
 
-def paste_logo(canvas: Image.Image, x: int, y: int, size: int = 68) -> None:
-    mark = logo_image(size)
+def paste_logo(canvas: Image.Image, x: int, y: int, size: int = 72) -> None:
     if canvas.mode != "RGBA":
         raise ValueError("canvas must be RGBA to paste logo")
-    canvas.alpha_composite(mark, (x, y))
+    canvas.alpha_composite(site_logo(size), (x, y))
 
 
 def check(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int]) -> None:
@@ -294,8 +260,8 @@ def build() -> Image.Image:
     draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
     draw.text(((W - sw) / 2, title_y + th + 8), s, font=sub_f, fill=MUTED)
 
-    # BBE logo on EVERY tile — same position relative to each square
-    LOGO = 68
+    # Site BBE logo pasted on every tile (public/logo.png)
+    LOGO = 72
     logo_y = (TOP - LOGO) // 2
     for i in range(3):
         logo_x = i * TILE + TILE - SIDE - LOGO
@@ -336,29 +302,22 @@ def verify(full: Image.Image) -> None:
     assert mean[2] > mean[0] + 80, mean
     assert mean[0] < 40, mean
 
-    # Logo letters centered inside square (ignore 3px white outline ring)
-    LOGO = 68
-    ring = 6
+    # Site logo pasted — dark square with white BBE letters
+    LOGO = 72
     for i in range(3):
         logo_x = i * TILE + TILE - SIDE - LOGO
         logo_y = (TOP - LOGO) // 2
-        patch = arr[
-            logo_y + ring : logo_y + LOGO - ring,
-            logo_x + ring : logo_x + LOGO - ring,
-        ]
-        # letters = near-white on dark fill
+        patch = arr[logo_y : logo_y + LOGO, logo_x : logo_x + LOGO]
+        dark = (patch[:, :, 0] < 40) & (patch[:, :, 1] < 40) & (patch[:, :, 2] < 40)
         letters = (patch[:, :, 0] > 200) & (patch[:, :, 1] > 200) & (patch[:, :, 2] > 200)
-        ys, xs = np.where(letters)
-        assert len(xs) > 30, len(xs)
-        inner = LOGO - 2 * ring
-        ink_cx = xs.mean()
-        ink_cy = ys.mean()
         print(
-            f"logo tile{i} letters_center=({ink_cx:.1f},{ink_cy:.1f}) "
-            f"vs mid=({inner/2:.1f},{inner/2:.1f}) n={len(xs)}"
+            f"logo tile{i} at ({logo_x},{logo_y}) "
+            f"dark={dark.mean():.2f} letters={letters.mean():.2f}"
         )
-        assert abs(ink_cx - inner / 2) < 3.5, ink_cx
-        assert abs(ink_cy - inner / 2) < 3.5, ink_cy
+        assert dark.mean() > 0.55, dark.mean()
+        assert letters.mean() > 0.05, letters.mean()
+        # corner of site logo is solid black
+        assert arr[logo_y + 2, logo_x + 2].max() < 40
 
     # Content block centered inside each card (ignore border ring)
     inset = 24
