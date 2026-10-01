@@ -25,7 +25,7 @@ MUTED_LT = (190, 190, 190)
 CARD = (255, 255, 255)
 CARD_BORDER = (230, 226, 218)
 ORANGE = (232, 122, 46)
-BLUE = (21, 101, 192)  # WiSo — pure blue (#1565C0), no purple/magenta
+BLUE = (0, 122, 204)  # WiSo — clean blue, zero red (no purple cast)
 TEAL = (46, 140, 130)
 WHITE = (255, 255, 255)
 
@@ -247,8 +247,13 @@ def draw_card(
     _, title_h = text_size(draw, title, title_f)
     _, bullet_h = text_size(draw, "Ag", bullet_f)
 
-    # Top-aligned with equal inner padding — same rhythm on every card
-    y = top + pad
+    # Vertically center the text block inside the card so the white box
+    # doesn't look top-heavy (empty bottom makes the card feel high).
+    list_h = (len(bullets) - 1) * BULLET_ROW + bullet_h
+    content_h = (
+        tag_box_h + GAP_TAG_TITLE + title_h + GAP_TITLE_RULE + 2 + GAP_RULE_LIST + list_h
+    )
+    y = top + max(pad, (height - content_h) // 2)
 
     # Tag
     tag_box_w = tag_tw + tag_pad_x * 2
