@@ -217,29 +217,31 @@ def draw_card(
     canvas.alpha_composite(layer)
     draw = ImageDraw.Draw(canvas)
 
-    pad = 56
-    tag_f = font("Inter-Bold.ttf", 40)
+    pad = 64
+    tag_f = font("Inter-Bold.ttf", 42)
     tw, th = text_size(draw, tag, tag_f)
-    pad_x, pad_y = 26, 14
+    pad_x, pad_y = 28, 14
     tag_w, tag_h = tw + pad_x * 2, th + pad_y * 2
-    tag_x, tag_y = left + pad, top + 52
+    tag_x, tag_y = left + pad, top + 64
     draw.rounded_rectangle([tag_x, tag_y, tag_x + tag_w, tag_y + tag_h], radius=10, fill=accent)
     draw.text((tag_x + pad_x, tag_y + pad_y - 2), tag, font=tag_f, fill=WHITE)
 
-    title_f = font("Inter-Bold.ttf", 68)
-    draw.text((left + pad, top + 150), title, font=title_f, fill=title_c)
+    title_f = font("Inter-Bold.ttf", 72)
+    draw.text((left + pad, top + 170), title, font=title_f, fill=title_c)
     draw.line(
-        [(left + pad, top + 250), (left + width - pad, top + 250)],
+        [(left + pad, top + 280), (left + width - pad, top + 280)],
         fill=border_c,
         width=3,
     )
 
-    bullet_f = font("Inter-Medium.ttf", 46)
-    y = top + 310
+    bullet_f = font("Inter-Medium.ttf", 48)
+    # Spread bullets through the tall card so the box feels full
+    y = top + 350
+    row = 125
     for bullet in bullets:
-        draw_check(draw, left + pad + 4, y + 10, accent)
-        draw.text((left + pad + 56, y), bullet, font=bullet_f, fill=body_c)
-        y += 110
+        draw_check(draw, left + pad + 4, y + 12, accent)
+        draw.text((left + pad + 60, y), bullet, font=bullet_f, fill=body_c)
+        y += row
 
 
 def build_banner(bg: Image.Image, *, glass_cards: bool = False) -> Image.Image:
@@ -261,26 +263,26 @@ def build_banner(bg: Image.Image, *, glass_cards: bool = False) -> Image.Image:
 
     draw_logo(draw, W - 40 - 88, 36, size=88, light=True)
 
-    # Large cards — main focus (~91% of each tile width, ~73% height)
+    # Large cards — main focus (~95% tile width, ~80% height)
     for i, card in enumerate(CARDS):
         cx = i * TILE_W + TILE_W // 2
         draw_card(
             canvas,
             cx=cx,
-            top=210,
+            top=195,
             tag=card["tag"],
             accent=card["accent"],
             title=card["title"],
             bullets=card["bullets"],
             glass=glass_cards,
-            width=980,
-            height=980,
+            width=1020,
+            height=1080,
         )
 
-    url_f = font("Inter-Medium.ttf", 30)
+    url_f = font("Inter-Medium.ttf", 28)
     url = "bbe-school.com"
     uw, _ = text_size(draw, url, url_f)
-    draw.text(((W - uw) / 2, H - 52), url, font=url_f, fill=MUTED_LT)
+    draw.text(((W - uw) / 2, H - 40), url, font=url_f, fill=MUTED_LT)
     return canvas.convert("RGB")
 
 
