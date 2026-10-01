@@ -16,11 +16,10 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "design-explorations" / "instagram-pinned-banner"
 SITE_LOGO = ROOT / "public" / "logo.png"
-# One continuous daytime LLC photo sliced across the 3 pins
 BG_CANDIDATES = [
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day-match.jpg"),
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day.jpg"),
-    ROOT / "public" / "wu-vienna" / "library-learning-center.jpg",
+    ROOT / "public" / "wu-vienna" / "campus-plaza.jpg",
 ]
 
 # Instagram profile grid = 3:4
@@ -29,18 +28,13 @@ H = 1440
 W = TILE * 3
 assert TILE * 4 == H * 3
 
-# Small card — campus dominates the frame
-SIDE = 200
-PAD_X = 28
-PAD_Y = 26
+# Compact card — campus shows on all sides
+SIDE = 100
+PAD_X = 52
+PAD_Y = 48
 HEADER = 130
 FOOTER = 72
 LOGO = 68
-# Equal inset from the top-right corner of each tile
-LOGO_INSET = 40
-# Hard cap so white never eats the photo
-MAX_CARD_W = 440
-MAX_CARD_H = 380
 
 ORANGE = (234, 112, 36)
 BLUE = (0, 114, 206)
@@ -82,9 +76,7 @@ def cover(im: Image.Image, tw: int, th: int) -> Image.Image:
 
 
 def make_bg() -> Image.Image:
-    """One daytime LLC photo across the full banner (continuous when pinned)."""
     src = next(p for p in BG_CANDIDATES if p.exists())
-    print(f"bg = {src}")
     im = cover(Image.open(src).convert("RGB"), W, H)
     im = ImageEnhance.Brightness(im).enhance(0.62)
     im = ImageEnhance.Contrast(im).enhance(1.10)
@@ -125,7 +117,7 @@ def paste_logo(canvas: Image.Image, x: int, y: int, size: int = LOGO) -> None:
 
 
 def check(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int]) -> None:
-    draw.line([(x, y + 7), (x + 6, y + 13), (x + 16, y + 1)], fill=color, width=3)
+    draw.line([(x, y + 12), (x + 10, y + 22), (x + 28, y + 1)], fill=color, width=5)
 
 
 def content_metrics(
@@ -134,16 +126,16 @@ def content_metrics(
     title: str,
     bullets: list[str],
 ) -> dict:
-    tag_f = F("Inter-Bold.ttf", 20)
-    title_f = F("Inter-Bold.ttf", 28)
-    body_f = F("Inter-Medium.ttf", 20)
+    tag_f = F("Inter-Bold.ttf", 30)
+    title_f = F("Inter-Bold.ttf", 48)
+    body_f = F("Inter-Medium.ttf", 34)
 
-    GAP_TAG = 10
-    GAP_TITLE = 10
-    GAP_RULE = 14
-    ROW = 42
-    CHECK_W = 26
-    TAG_BX, TAG_BY = 12, 6
+    GAP_TAG = 22
+    GAP_TITLE = 22
+    GAP_RULE = 30
+    ROW = 78
+    CHECK_W = 40
+    TAG_BX, TAG_BY = 20, 10
 
     tag_x0, tag_y0, tag_x1, tag_y1 = ink_bbox(draw, tag, tag_f)
     tag_tw, tag_th = tag_x1 - tag_x0, tag_y1 - tag_y0
@@ -199,17 +191,17 @@ def card(
     sh = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     sd = ImageDraw.Draw(sh)
     sd.rounded_rectangle(
-        [left + 5, top + 8, left + CARD_W + 5, top + CARD_H + 8],
-        radius=20,
-        fill=(0, 0, 0, 80),
+        [left + 6, top + 10, left + CARD_W + 6, top + CARD_H + 10],
+        radius=26,
+        fill=(0, 0, 0, 90),
     )
-    canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(10)))
+    canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
 
     layer = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     ld = ImageDraw.Draw(layer)
     ld.rounded_rectangle(
         [left, top, left + CARD_W, top + CARD_H],
-        radius=20,
+        radius=26,
         fill=(*CARD_BG, 255),
         outline=(*BORDER, 255),
         width=2,
@@ -281,8 +273,8 @@ def build() -> Image.Image:
         max_cw = max(max_cw, m["content_w"])
         max_ch = max(max_ch, m["content_h"])
 
-    CARD_W = min(TILE - 2 * SIDE, MAX_CARD_W, max_cw + 2 * PAD_X)
-    CARD_H = min(MAX_CARD_H, max_ch + 2 * PAD_Y)
+    CARD_W = min(TILE - 2 * SIDE, max_cw + 2 * PAD_X)
+    CARD_H = max_ch + 2 * PAD_Y
     # Center card in the band between header and footer — campus visible around it
     avail_top = HEADER
     avail_bot = FOOTER
@@ -294,34 +286,29 @@ def build() -> Image.Image:
         left = i * TILE + (TILE - CARD_W) // 2
         card(canvas, left, TOP, tag, accent, title, bullets)
 
-    # Per-tile header (each post is self-contained with its own photo)
-    title_f = F("Inter-Bold.ttf", 40)
-    sub_f = F("Inter-Medium.ttf", 20)
+    # Header over campus photo
+    title_f = F("Inter-Bold.ttf", 44)
+    sub_f = F("Inter-Medium.ttf", 22)
     t = "Preparation Courses"
     tw, th = measure(draw, t, title_f)
     s = "WU Vienna entrance exam prep"
     sw, sh = measure(draw, s, sub_f)
     block_h = th + 6 + sh
     title_y = (HEADER - block_h) // 2
-    for i in range(3):
-        cx = i * TILE + TILE / 2
-        draw.text((cx - tw / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
-        draw.text((cx - tw / 2, title_y), t, font=title_f, fill=WHITE)
-        draw.text((cx - sw / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
+    draw.text(((W - tw) / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
+    draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
+    draw.text(((W - sw) / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
 
-    # Site logo — same inset from top-right corner on every tile
+    logo_y = (HEADER - LOGO) // 2
     for i in range(3):
-        logo_x = i * TILE + TILE - LOGO_INSET - LOGO
-        logo_y = LOGO_INSET
+        logo_x = i * TILE + TILE - SIDE - LOGO
         paste_logo(canvas, logo_x, logo_y, LOGO)
 
     url_f = F("Inter-Medium.ttf", 22)
     u = "bbe-school.com"
     uw, uh = measure(draw, u, url_f)
     url_y = H - FOOTER + (FOOTER - uh) // 2
-    for i in range(3):
-        cx = i * TILE + TILE / 2
-        draw.text((cx - uw / 2, url_y), u, font=url_f, fill=MUTED)
+    draw.text(((W - uw) / 2, url_y), u, font=url_f, fill=MUTED)
 
     return canvas.convert("RGB")
 
@@ -341,16 +328,16 @@ def verify(full: Image.Image) -> None:
     tile_white = (tile0[:, :, 0] > 245) & (tile0[:, :, 1] > 245) & (tile0[:, :, 2] > 245)
     white_frac = float(tile_white.mean())
     print(f"layout card={CARD_W}x{CARD_H} TOP={TOP} white_frac_in_tile={white_frac:.2f}")
-    assert CARD_H <= MAX_CARD_H and CARD_W <= MAX_CARD_W, (CARD_W, CARD_H)
-    assert white_frac < 0.12, white_frac
+    assert CARD_H < H * 0.62, CARD_H  # card not a full-bleed slab
+    assert white_frac < 0.45, white_frac  # most of the photo is visible
 
     # margins of campus around card
     top_margin = TOP
     bot_margin = H - (TOP + CARD_H)
     side_margin = (TILE - CARD_W) // 2
     print(f"campus margins T/B={top_margin}/{bot_margin} L/R={side_margin}")
-    assert top_margin >= 350 and bot_margin >= 350
-    assert side_margin >= 200
+    assert top_margin >= 160 and bot_margin >= 100
+    assert side_margin >= 80
 
     blue_mask = (
         (card_arr[:, :, 2] > 150)
@@ -363,24 +350,17 @@ def verify(full: Image.Image) -> None:
     print(f"WiSo accent mean RGB = {mean.astype(int)}")
     assert mean[0] < 40
 
-    # Logos: equal inset from top-right corner of each tile
     for i in range(3):
-        logo_x = i * TILE + TILE - LOGO_INSET - LOGO
-        logo_y = LOGO_INSET
-        assert logo_x - i * TILE == TILE - LOGO_INSET - LOGO
-        assert logo_y == LOGO_INSET
-        right_gap = (i + 1) * TILE - (logo_x + LOGO)
-        top_gap = logo_y
-        assert right_gap == LOGO_INSET == top_gap, (right_gap, top_gap)
+        logo_x = i * TILE + TILE - SIDE - LOGO
+        logo_y = (HEADER - LOGO) // 2
         patch = arr[logo_y : logo_y + LOGO, logo_x : logo_x + LOGO]
         dark = (patch[:, :, 0] < 40) & (patch[:, :, 1] < 40) & (patch[:, :, 2] < 40)
-        assert dark.mean() > 0.55, dark.mean()
-        print(f"logo tile{i} inset L/T/R = top={top_gap} right={right_gap}")
+        assert dark.mean() > 0.55
 
     for i in range(3):
-        tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
-        assert tile.size == (1080, 1440)
-    print("VERIFY OK — continuous LLC bg, logos corner-aligned, 3:4")
+        t = full.crop((i * TILE, 0, (i + 1) * TILE, H))
+        assert t.size == (1080, 1440)
+    print("VERIFY OK — compact cards, campus visible, 3:4")
 
 
 def main() -> None:
@@ -396,15 +376,11 @@ def main() -> None:
     full.save(OUT / "bbe-prep-courses-banner-full.png", "PNG", optimize=True)
 
     names = ["01-bbe-full-course", "02-wiso-full-course", "03-demo-access"]
-    posts = OUT / "ig-posts"
-    posts.mkdir(parents=True, exist_ok=True)
-    post_names = ["1-bbe.jpg", "2-wiso.jpg", "3-demo.jpg"]
     for i, name in enumerate(names):
         tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
         tile.save(fresh / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.jpg", "JPEG", quality=95)
         tile.save(OUT / f"{name}.png", "PNG", optimize=True)
-        tile.save(posts / post_names[i], "JPEG", quality=95)
 
     gap = 14
     preview = Image.new("RGB", (W + 2 * gap, H), (24, 24, 26))
