@@ -35,10 +35,10 @@ H = 1440
 W = TILE * 3
 assert TILE * 4 == H * 3
 
-# Compact card — campus shows on all sides
-SIDE = 100
-PAD_X = 52
-PAD_Y = 48
+# Small card — campus dominates the frame
+SIDE = 160
+PAD_X = 36
+PAD_Y = 32
 HEADER = 130
 FOOTER = 72
 LOGO = 68
@@ -146,7 +146,7 @@ def paste_logo(canvas: Image.Image, x: int, y: int, size: int = LOGO) -> None:
 
 
 def check(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int]) -> None:
-    draw.line([(x, y + 12), (x + 10, y + 22), (x + 28, y + 1)], fill=color, width=5)
+    draw.line([(x, y + 9), (x + 7, y + 16), (x + 20, y + 1)], fill=color, width=4)
 
 
 def content_metrics(
@@ -155,16 +155,16 @@ def content_metrics(
     title: str,
     bullets: list[str],
 ) -> dict:
-    tag_f = F("Inter-Bold.ttf", 30)
-    title_f = F("Inter-Bold.ttf", 48)
-    body_f = F("Inter-Medium.ttf", 34)
+    tag_f = F("Inter-Bold.ttf", 24)
+    title_f = F("Inter-Bold.ttf", 36)
+    body_f = F("Inter-Medium.ttf", 26)
 
-    GAP_TAG = 22
-    GAP_TITLE = 22
-    GAP_RULE = 30
-    ROW = 78
-    CHECK_W = 40
-    TAG_BX, TAG_BY = 20, 10
+    GAP_TAG = 14
+    GAP_TITLE = 14
+    GAP_RULE = 18
+    ROW = 56
+    CHECK_W = 32
+    TAG_BX, TAG_BY = 14, 7
 
     tag_x0, tag_y0, tag_x1, tag_y1 = ink_bbox(draw, tag, tag_f)
     tag_tw, tag_th = tag_x1 - tag_x0, tag_y1 - tag_y0
@@ -220,17 +220,17 @@ def card(
     sh = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     sd = ImageDraw.Draw(sh)
     sd.rounded_rectangle(
-        [left + 6, top + 10, left + CARD_W + 6, top + CARD_H + 10],
-        radius=26,
-        fill=(0, 0, 0, 90),
+        [left + 5, top + 8, left + CARD_W + 5, top + CARD_H + 8],
+        radius=20,
+        fill=(0, 0, 0, 80),
     )
-    canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
+    canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(10)))
 
     layer = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     ld = ImageDraw.Draw(layer)
     ld.rounded_rectangle(
         [left, top, left + CARD_W, top + CARD_H],
-        radius=26,
+        radius=20,
         fill=(*CARD_BG, 255),
         outline=(*BORDER, 255),
         width=2,
@@ -362,16 +362,16 @@ def verify(full: Image.Image) -> None:
     tile_white = (tile0[:, :, 0] > 245) & (tile0[:, :, 1] > 245) & (tile0[:, :, 2] > 245)
     white_frac = float(tile_white.mean())
     print(f"layout card={CARD_W}x{CARD_H} TOP={TOP} white_frac_in_tile={white_frac:.2f}")
-    assert CARD_H < H * 0.62, CARD_H  # card not a full-bleed slab
-    assert white_frac < 0.45, white_frac  # most of the photo is visible
+    assert CARD_H < H * 0.40, CARD_H  # small card, photo dominates
+    assert white_frac < 0.18, white_frac
 
     # margins of campus around card
     top_margin = TOP
     bot_margin = H - (TOP + CARD_H)
     side_margin = (TILE - CARD_W) // 2
     print(f"campus margins T/B={top_margin}/{bot_margin} L/R={side_margin}")
-    assert top_margin >= 160 and bot_margin >= 100
-    assert side_margin >= 80
+    assert top_margin >= 280 and bot_margin >= 280
+    assert side_margin >= 140
 
     blue_mask = (
         (card_arr[:, :, 2] > 150)
