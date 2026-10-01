@@ -36,14 +36,17 @@ W = TILE * 3
 assert TILE * 4 == H * 3
 
 # Small card — campus dominates the frame
-SIDE = 160
-PAD_X = 36
-PAD_Y = 32
+SIDE = 200
+PAD_X = 28
+PAD_Y = 26
 HEADER = 130
 FOOTER = 72
 LOGO = 68
 # Equal inset from the top-right corner of each tile
 LOGO_INSET = 40
+# Hard cap so white never eats the photo
+MAX_CARD_W = 440
+MAX_CARD_H = 380
 
 ORANGE = (234, 112, 36)
 BLUE = (0, 114, 206)
@@ -146,7 +149,7 @@ def paste_logo(canvas: Image.Image, x: int, y: int, size: int = LOGO) -> None:
 
 
 def check(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int]) -> None:
-    draw.line([(x, y + 9), (x + 7, y + 16), (x + 20, y + 1)], fill=color, width=4)
+    draw.line([(x, y + 7), (x + 6, y + 13), (x + 16, y + 1)], fill=color, width=3)
 
 
 def content_metrics(
@@ -155,16 +158,16 @@ def content_metrics(
     title: str,
     bullets: list[str],
 ) -> dict:
-    tag_f = F("Inter-Bold.ttf", 24)
-    title_f = F("Inter-Bold.ttf", 36)
-    body_f = F("Inter-Medium.ttf", 26)
+    tag_f = F("Inter-Bold.ttf", 20)
+    title_f = F("Inter-Bold.ttf", 28)
+    body_f = F("Inter-Medium.ttf", 20)
 
-    GAP_TAG = 14
-    GAP_TITLE = 14
-    GAP_RULE = 18
-    ROW = 56
-    CHECK_W = 32
-    TAG_BX, TAG_BY = 14, 7
+    GAP_TAG = 10
+    GAP_TITLE = 10
+    GAP_RULE = 14
+    ROW = 42
+    CHECK_W = 26
+    TAG_BX, TAG_BY = 12, 6
 
     tag_x0, tag_y0, tag_x1, tag_y1 = ink_bbox(draw, tag, tag_f)
     tag_tw, tag_th = tag_x1 - tag_x0, tag_y1 - tag_y0
@@ -302,8 +305,8 @@ def build() -> Image.Image:
         max_cw = max(max_cw, m["content_w"])
         max_ch = max(max_ch, m["content_h"])
 
-    CARD_W = min(TILE - 2 * SIDE, max_cw + 2 * PAD_X)
-    CARD_H = max_ch + 2 * PAD_Y
+    CARD_W = min(TILE - 2 * SIDE, MAX_CARD_W, max_cw + 2 * PAD_X)
+    CARD_H = min(MAX_CARD_H, max_ch + 2 * PAD_Y)
     # Center card in the band between header and footer — campus visible around it
     avail_top = HEADER
     avail_bot = FOOTER
@@ -362,16 +365,16 @@ def verify(full: Image.Image) -> None:
     tile_white = (tile0[:, :, 0] > 245) & (tile0[:, :, 1] > 245) & (tile0[:, :, 2] > 245)
     white_frac = float(tile_white.mean())
     print(f"layout card={CARD_W}x{CARD_H} TOP={TOP} white_frac_in_tile={white_frac:.2f}")
-    assert CARD_H < H * 0.40, CARD_H  # small card, photo dominates
-    assert white_frac < 0.18, white_frac
+    assert CARD_H <= MAX_CARD_H and CARD_W <= MAX_CARD_W, (CARD_W, CARD_H)
+    assert white_frac < 0.12, white_frac
 
     # margins of campus around card
     top_margin = TOP
     bot_margin = H - (TOP + CARD_H)
     side_margin = (TILE - CARD_W) // 2
     print(f"campus margins T/B={top_margin}/{bot_margin} L/R={side_margin}")
-    assert top_margin >= 280 and bot_margin >= 280
-    assert side_margin >= 140
+    assert top_margin >= 350 and bot_margin >= 350
+    assert side_margin >= 200
 
     blue_mask = (
         (card_arr[:, :, 2] > 150)
