@@ -16,10 +16,17 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "design-explorations" / "instagram-pinned-banner"
 SITE_LOGO = ROOT / "public" / "logo.png"
-BG_CANDIDATES = [
-    Path("/opt/cursor/artifacts/assets/wu-bg-llc-day-match.jpg"),
+# Three distinct WU campus photos — one per pin tile
+BG_TILES = [
+    ROOT / "public" / "wu-vienna" / "library-learning-center.jpg",  # BBE
+    ROOT / "public" / "wu-vienna" / "campus-plaza.jpg",             # WiSo
+    ROOT / "public" / "wu-vienna" / "teaching-center.jpg",          # Demo
+]
+# Fallbacks if a public asset is missing
+BG_FALLBACKS = [
     Path("/opt/cursor/artifacts/assets/wu-bg-llc-day.jpg"),
-    ROOT / "public" / "wu-vienna" / "campus-plaza.jpg",
+    Path("/opt/cursor/artifacts/assets/wu-bg-plaza-level.jpg"),
+    Path("/opt/cursor/artifacts/assets/wu-bg-audimax-dark.jpg"),
 ]
 
 # Instagram profile grid = 3:4
@@ -35,6 +42,8 @@ PAD_Y = 48
 HEADER = 130
 FOOTER = 72
 LOGO = 68
+# Equal inset from the top-right corner of each tile
+LOGO_INSET = 40
 
 ORANGE = (234, 112, 36)
 BLUE = (0, 114, 206)
@@ -75,23 +84,43 @@ def cover(im: Image.Image, tw: int, th: int) -> Image.Image:
     return im.crop((x, y, x + tw, y + th))
 
 
-def make_bg() -> Image.Image:
-    src = next(p for p in BG_CANDIDATES if p.exists())
-    im = cover(Image.open(src).convert("RGB"), W, H)
+def tone_bg(im: Image.Image) -> Image.Image:
+    """Shared darken/veil so three different photos still match in mood."""
     im = ImageEnhance.Brightness(im).enhance(0.62)
     im = ImageEnhance.Contrast(im).enhance(1.10)
     im = ImageEnhance.Color(im).enhance(1.0)
-
-    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    overlay = Image.new("RGBA", im.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    d.rectangle([0, 0, W, H], fill=(0, 0, 0, 55))
+    d.rectangle([0, 0, im.size[0], im.size[1]], fill=(0, 0, 0, 55))
+    w, h = im.size
     for y in range(0, 220):
         a = int(150 * (1 - y / 220))
-        d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
-    for y in range(H - 110, H):
-        a = int(110 * ((y - (H - 110)) / 110))
-        d.line([(0, y), (W, y)], fill=(0, 0, 0, a))
+        d.line([(0, y), (w, y)], fill=(0, 0, 0, a))
+    for y in range(h - 110, h):
+        a = int(110 * ((y - (h - 110)) / 110))
+        d.line([(0, y), (w, y)], fill=(0, 0, 0, a))
     return Image.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
+
+
+def resolve_bg(i: int) -> Path:
+    primary = BG_TILES[i]
+    if primary.exists():
+        return primary
+    fb = BG_FALLBACKS[i]
+    if fb.exists():
+        return fb
+    raise FileNotFoundError(f"No background for tile {i}")
+
+
+def make_bg() -> Image.Image:
+    """Three different campus photos side by side (not one continuous crop)."""
+    canvas = Image.new("RGB", (W, H))
+    for i in range(3):
+        src = resolve_bg(i)
+        tile = tone_bg(cover(Image.open(src).convert("RGB"), TILE, H))
+        canvas.paste(tile, (i * TILE, 0))
+        print(f"tile{i} bg = {src.name}")
+    return canvas
 
 
 def draw_centered(
@@ -286,29 +315,34 @@ def build() -> Image.Image:
         left = i * TILE + (TILE - CARD_W) // 2
         card(canvas, left, TOP, tag, accent, title, bullets)
 
-    # Header over campus photo
-    title_f = F("Inter-Bold.ttf", 44)
-    sub_f = F("Inter-Medium.ttf", 22)
+    # Per-tile header (each post is self-contained with its own photo)
+    title_f = F("Inter-Bold.ttf", 40)
+    sub_f = F("Inter-Medium.ttf", 20)
     t = "Preparation Courses"
     tw, th = measure(draw, t, title_f)
     s = "WU Vienna entrance exam prep"
     sw, sh = measure(draw, s, sub_f)
     block_h = th + 6 + sh
     title_y = (HEADER - block_h) // 2
-    draw.text(((W - tw) / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
-    draw.text(((W - tw) / 2, title_y), t, font=title_f, fill=WHITE)
-    draw.text(((W - sw) / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
-
-    logo_y = (HEADER - LOGO) // 2
     for i in range(3):
-        logo_x = i * TILE + TILE - SIDE - LOGO
+        cx = i * TILE + TILE / 2
+        draw.text((cx - tw / 2 + 2, title_y + 2), t, font=title_f, fill=(0, 0, 0, 140))
+        draw.text((cx - tw / 2, title_y), t, font=title_f, fill=WHITE)
+        draw.text((cx - sw / 2, title_y + th + 6), s, font=sub_f, fill=MUTED)
+
+    # Site logo — same inset from top-right corner on every tile
+    for i in range(3):
+        logo_x = i * TILE + TILE - LOGO_INSET - LOGO
+        logo_y = LOGO_INSET
         paste_logo(canvas, logo_x, logo_y, LOGO)
 
     url_f = F("Inter-Medium.ttf", 22)
     u = "bbe-school.com"
     uw, uh = measure(draw, u, url_f)
     url_y = H - FOOTER + (FOOTER - uh) // 2
-    draw.text(((W - uw) / 2, url_y), u, font=url_f, fill=MUTED)
+    for i in range(3):
+        cx = i * TILE + TILE / 2
+        draw.text((cx - uw / 2, url_y), u, font=url_f, fill=MUTED)
 
     return canvas.convert("RGB")
 
@@ -350,17 +384,36 @@ def verify(full: Image.Image) -> None:
     print(f"WiSo accent mean RGB = {mean.astype(int)}")
     assert mean[0] < 40
 
+    # Logos: equal inset from top-right corner of each tile
     for i in range(3):
-        logo_x = i * TILE + TILE - SIDE - LOGO
-        logo_y = (HEADER - LOGO) // 2
+        logo_x = i * TILE + TILE - LOGO_INSET - LOGO
+        logo_y = LOGO_INSET
+        assert logo_x - i * TILE == TILE - LOGO_INSET - LOGO
+        assert logo_y == LOGO_INSET
+        right_gap = (i + 1) * TILE - (logo_x + LOGO)
+        top_gap = logo_y
+        assert right_gap == LOGO_INSET == top_gap, (right_gap, top_gap)
         patch = arr[logo_y : logo_y + LOGO, logo_x : logo_x + LOGO]
         dark = (patch[:, :, 0] < 40) & (patch[:, :, 1] < 40) & (patch[:, :, 2] < 40)
-        assert dark.mean() > 0.55
+        assert dark.mean() > 0.55, dark.mean()
+        print(f"logo tile{i} inset L/T/R = top={top_gap} right={right_gap}")
 
+    # Three tiles must use different photo content (not one continuous crop)
+    means = []
     for i in range(3):
-        t = full.crop((i * TILE, 0, (i + 1) * TILE, H))
-        assert t.size == (1080, 1440)
-    print("VERIFY OK — compact cards, campus visible, 3:4")
+        t = arr[200:400, i * TILE + 100 : i * TILE + 300]
+        means.append(t.mean(axis=(0, 1)))
+        tile = full.crop((i * TILE, 0, (i + 1) * TILE, H))
+        assert tile.size == (1080, 1440)
+    # Distinct backgrounds → mean RGB of a sky/building patch should differ
+    diffs = [
+        float(np.linalg.norm(means[0] - means[1])),
+        float(np.linalg.norm(means[1] - means[2])),
+        float(np.linalg.norm(means[0] - means[2])),
+    ]
+    print(f"bg tile mean diffs = {diffs}")
+    assert max(diffs) > 8, diffs
+    print("VERIFY OK — 3 distinct photos, logos corner-aligned, 3:4")
 
 
 def main() -> None:
