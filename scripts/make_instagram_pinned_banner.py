@@ -14,6 +14,8 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "design-explorations" / "instagram-pinned-banner"
 BG_CANDIDATES = [
+    Path("/opt/cursor/artifacts/assets/ig-prep-bg-v2-blueprint.jpg"),
+    Path("/opt/cursor/artifacts/assets/ig-prep-bg-v2-soft.jpg"),
     Path("/opt/cursor/artifacts/assets/ig-prep-bg-wide-cream.jpg"),
     Path("/opt/cursor/artifacts/assets/ig-prep-bg-cream.jpg"),
 ]
@@ -54,33 +56,18 @@ def cover_resize(im: Image.Image, tw: int, th: int) -> Image.Image:
     return im.crop((left, top, left + tw, top + th))
 
 
-def draw_architecture(base: Image.Image) -> Image.Image:
-    """One continuous wireframe — drawn on the FULL canvas before any slice."""
+def soften_upper_half(base: Image.Image) -> Image.Image:
+    """Keep header area clean so title stays readable over the new bg."""
     overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    stroke = (*LINE, 50)
-    soft = (*LINE, 34)
-
-    vanishing = (W // 2 + 80, int(H * 0.36))
-    for x in range(-240, W + 240, 72):
-        d.line([(x, H + 60), vanishing], fill=stroke, width=2)
-
-    for i, y in enumerate(range(int(H * 0.42), H + 30, 46)):
-        t = i / 18
-        inset = int(24 + t * 50)
-        d.line([(inset, y), (W - inset, y)], fill=soft, width=1)
-
-    for x in range(32, W - 32, 68):
-        d.line([(x, 220), (x, int(H * 0.55))], fill=soft, width=1)
-    for y in range(240, int(H * 0.55), 52):
-        d.line([(32, y), (W - 32, y)], fill=soft, width=1)
-
-    for i in range(12):
-        x0 = -160 + i * 340
-        d.line([(x0, 160), (x0 + 980, int(H * 0.72))], fill=(*LINE, 26), width=2)
-
-    blurred = overlay.filter(ImageFilter.GaussianBlur(0.45))
-    return Image.alpha_composite(base.convert("RGBA"), blurred)
+    for y in range(0, 320):
+        a = int(170 * (1 - y / 320))
+        d.line([(0, y), (W, y)], fill=(*CREAM, a))
+    # light bottom fade for footer
+    for y in range(H - 120, H):
+        a = int(90 * ((y - (H - 120)) / 120))
+        d.line([(0, y), (W, y)], fill=(*CREAM, a))
+    return Image.alpha_composite(base.convert("RGBA"), overlay)
 
 
 def draw_logo(draw: ImageDraw.ImageDraw, x: int, y: int, size: int = 100) -> None:
@@ -177,12 +164,13 @@ def build_full_banner() -> Image.Image:
     for path in BG_CANDIDATES:
         if path.exists():
             wash = cover_resize(Image.open(path).convert("RGB"), W, H)
-            wash = ImageEnhance.Brightness(wash).enhance(1.08)
-            wash = ImageEnhance.Color(wash).enhance(0.5)
-            base = Image.blend(base, wash, 0.5)
+            wash = ImageEnhance.Brightness(wash).enhance(1.06)
+            wash = ImageEnhance.Contrast(wash).enhance(0.92)
+            # Prefer the photo/sketch bg more strongly — it's the new look
+            base = Image.blend(base, wash, 0.88)
             break
 
-    canvas = draw_architecture(base)
+    canvas = soften_upper_half(base)
     draw = ImageDraw.Draw(canvas)
 
     # --- shared header (once, across the full width) ---
