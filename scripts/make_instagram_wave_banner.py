@@ -48,7 +48,7 @@ CARDS = [
     },
     {
         "tag": "WiSo",
-        "accent": PURPLE,
+        "accent": BLUE,
         "title": "Full WiSo Course",
         "bullets": [
             "Wirtschaft • Math • German",

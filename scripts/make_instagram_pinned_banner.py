@@ -30,13 +30,17 @@ TEAL = (46, 140, 130)
 WHITE = (255, 255, 255)
 
 # Layout system (each Instagram tile = 1080×1350)
-# Cards centered in the frame: equal top & bottom margins
+# Header sits in a fixed top band; cards are optically centered in the
+# remaining space (equal gap under header and above footer).
 MARGIN_X = 48
 CARD_W = TILE_W - 2 * MARGIN_X  # 984
+HEADER_BAND = 128  # title + subtitle zone
+FOOTER_BAND = 48
 CARD_H = 1020
-MARGIN_V = (TILE_H - CARD_H) // 2  # 165 — same above and below
-MARGIN_TOP = MARGIN_V
-MARGIN_BOTTOM = TILE_H - MARGIN_TOP - CARD_H  # keep exact
+_free = TILE_H - HEADER_BAND - FOOTER_BAND - CARD_H  # space to split
+GAP_AROUND = _free // 2
+MARGIN_TOP = HEADER_BAND + GAP_AROUND
+MARGIN_BOTTOM = TILE_H - MARGIN_TOP - CARD_H
 CARD_PAD = 56  # inner padding
 GAP_TAG_TITLE = 32
 GAP_TITLE_RULE = 32
@@ -296,28 +300,26 @@ def build_banner(bg: Image.Image, *, glass_cards: bool = False) -> Image.Image:
             height=CARD_H,
         )
 
-    # Compact header sits in the top margin band (above the cards)
+    # Header centered inside HEADER_BAND
     title_f = font("Inter-Bold.ttf", 56)
     sub_f = font("Inter-Medium.ttf", 28)
     title = "Preparation Courses"
     tw, th = text_size(draw, title, title_f)
-    title_y = max(24, (MARGIN_TOP - th - 36) // 2)
-    draw.text(((W - tw) / 2 + 2, title_y + 2), title, font=title_f, fill=(0, 0, 0, 150))
-    draw.text(((W - tw) / 2, title_y), title, font=title_f, fill=WHITE)
-
     sub = "WU Vienna entrance exam prep"
     sw, sh = text_size(draw, sub, sub_f)
-    sub_y = title_y + th + 10
-    draw.text(((W - sw) / 2, sub_y), sub, font=sub_f, fill=MUTED_LT)
+    block_h = th + 10 + sh
+    title_y = max(16, (HEADER_BAND - block_h) // 2)
+    draw.text(((W - tw) / 2 + 2, title_y + 2), title, font=title_f, fill=(0, 0, 0, 150))
+    draw.text(((W - tw) / 2, title_y), title, font=title_f, fill=WHITE)
+    draw.text(((W - sw) / 2, title_y + th + 10), sub, font=sub_f, fill=MUTED_LT)
 
     logo_size = 72
-    draw_logo(draw, W - MARGIN_X - logo_size, 24, size=logo_size, light=True)
+    draw_logo(draw, W - MARGIN_X - logo_size, (HEADER_BAND - logo_size) // 2, size=logo_size, light=True)
 
     url_f = font("Inter-Medium.ttf", 26)
     url = "bbe-school.com"
     uw, uh = text_size(draw, url, url_f)
-    # Center URL in the equal bottom margin band
-    url_y = MARGIN_TOP + CARD_H + (MARGIN_BOTTOM - uh) // 2
+    url_y = MARGIN_TOP + CARD_H + (FOOTER_BAND - uh) // 2
     draw.text(((W - uw) / 2, url_y), url, font=url_f, fill=MUTED_LT)
     return canvas.convert("RGB")
 
