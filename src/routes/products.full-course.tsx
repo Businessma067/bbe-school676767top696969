@@ -27,19 +27,95 @@ import {
   buildFullCourseRouletteSlides,
   type RouletteSlide,
 } from "@/components/FullCourseVideoRoulette";
-import { FullCourseTour } from "@/components/how-it-works/FullCourseTour";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 
-const ROULETTE_SLIDES: RouletteSlide[] = [
+const GUIDE_SLIDES: RouletteSlide[] = [
   {
-    key: "tour",
-    label: "Full course",
-    kind: "live",
-    poster: FULL_COURSE_IMAGE,
+    key: "guide-dashboard",
+    label: "Dashboard",
+    kind: "image",
+    src: "/course-guide/dashboard.jpg",
+    alt: "Dashboard: Continue opens the course, and attempts, accuracy, and the streak are counted.",
     aspect: "16 / 9",
   },
+  {
+    key: "guide-theory",
+    label: "Theory",
+    kind: "image",
+    src: "/course-guide/theory.jpg",
+    alt: "A theory chapter. The practice tasks are written from this page.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-task",
+    label: "Practice",
+    kind: "image",
+    src: "/course-guide/task.jpg",
+    alt: "An economics task. A blank costs nothing, and Timed Mode is the exam clock.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-explanation",
+    label: "Explanation",
+    kind: "image",
+    src: "/course-guide/explanation.jpg",
+    alt: "The verdict first, then the reason in the bank's own words.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-english",
+    label: "English",
+    kind: "image",
+    src: "/course-guide/english.jpg",
+    alt: "The marked sentence is the one the statement depends on.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-math",
+    label: "Math",
+    kind: "image",
+    src: "/course-guide/math.jpg",
+    alt: "The exam calculator sits inside the task. 12 times 11 is 132.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-mock",
+    label: "Mock exam",
+    kind: "image",
+    src: "/course-guide/mock.jpg",
+    alt: "Every subject in one paper, with a flag to come back to a question.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-results",
+    label: "Results",
+    kind: "image",
+    src: "/course-guide/results.jpg",
+    alt: "How long each question took, and Tasks opens that paper with the answers.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-builder",
+    label: "Mock builder",
+    kind: "image",
+    src: "/course-guide/builder.jpg",
+    alt: "Tick the topics you want, then build a timed mock from them.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-flashcards",
+    label: "Flashcards",
+    kind: "image",
+    src: "/course-guide/flashcards.jpg",
+    alt: "Flip the term, then mark whether you know it.",
+    aspect: "16 / 9",
+  },
+];
+
+const ROULETTE_SLIDES: RouletteSlide[] = [
+  ...GUIDE_SLIDES,
   ...buildFullCourseRouletteSlides({
     track: "bbe",
     posterSrc: FULL_COURSE_IMAGE,
@@ -282,7 +358,7 @@ export function FullCourseProduct() {
             Full BBE Course
           </h1>
 
-          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} live={<FullCourseTour />} />
+          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
 
           {/* Rating */}
           <div className="mt-5 flex items-center gap-3">
