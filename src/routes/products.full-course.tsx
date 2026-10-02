@@ -22,11 +22,7 @@ import { FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
-import {
-  FullCourseVideoRoulette,
-  buildFullCourseRouletteSlides,
-  type RouletteSlide,
-} from "@/components/FullCourseVideoRoulette";
+import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
@@ -115,12 +111,15 @@ const GUIDE_SLIDES: RouletteSlide[] = [
 ];
 
 const ROULETTE_SLIDES: RouletteSlide[] = [
+  {
+    key: "poster",
+    label: "Full Course",
+    kind: "image",
+    src: FULL_COURSE_IMAGE,
+    alt: "Full BBE Course on a black background: 3300+ questions, 5 mock exams, Economics, Mathematics, and English.",
+    aspect: "16 / 9",
+  },
   ...GUIDE_SLIDES,
-  ...buildFullCourseRouletteSlides({
-    track: "bbe",
-    posterSrc: FULL_COURSE_IMAGE,
-    posterAlt: "Full BBE Course",
-  }),
 ];
 
 const FULL_COURSE_PRICE = 449;
