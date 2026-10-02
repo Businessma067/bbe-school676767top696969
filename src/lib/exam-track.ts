@@ -117,6 +117,9 @@ export function trackUiLang(track: ExamTrack): "en" | "de" {
  * LocalizedLink / effectiveLangFromLocation.
  */
 export function entryLangForDestination(to: string, fromPathname: string): "en" | "de" | null {
+  // A language the visitor picked themselves (anything but English) always
+  // wins over track defaults, so translation survives every click.
+  if (userPickedNonEnglish()) return null;
   const fromTrack = getExamTrackFromPath(fromPathname);
 
   if (isNewsAppPath(to)) {

@@ -5,6 +5,7 @@ import { useLanguage } from "@/lib/i18n/context";
 import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
 import {
   entryLangForDestination,
+  userPickedNonEnglish,
   resolveExamTrack,
   trackHome,
   trackUiLang,
@@ -87,7 +88,7 @@ export function NavItemLink({
     );
   }
 
-  const homeLang = trackUiLang(track);
+  const homeLang = userPickedNonEnglish() ? effective : trackUiLang(track);
   const home = getLocaleLinkProps(homePath, homeLang);
   return (
     <Link
