@@ -229,12 +229,12 @@ export function PageTranslator() {
       root.removeAttribute("data-i18n-pending");
     };
     // Let the MutationObserver note the new page's strings first.
-    queueMicrotask(() => {
+    setTimeout(() => {
       void Promise.race([
         warmLanguage(effectiveLang).catch(() => undefined),
         new Promise((r) => setTimeout(r, 900)),
       ]).then(() => requestAnimationFrame(reveal));
-    });
+    }, 0);
     return reveal;
   }, [pathname, effectiveLang]);
 
