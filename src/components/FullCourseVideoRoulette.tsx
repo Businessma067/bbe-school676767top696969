@@ -213,80 +213,87 @@ export function FullCourseVideoRoulette({
 
   return (
     <div className="space-y-3">
-      <div
-        ref={stageRef}
-        className="relative w-full touch-pan-y overflow-hidden rounded-2xl border border-black/80 bg-[#121212] pt-3 pr-14 pb-8 pl-14 shadow-[0_18px_50px_-24px_rgba(0,0,0,0.55)] select-none"
-        style={{ aspectRatio: slide.kind === "image" ? "16 / 9" : slide.aspect }}
-        onTouchStart={(e) => {
-          const t = e.touches[0];
-          touch.current = { x: t.clientX, y: t.clientY };
-        }}
-        onTouchEnd={(e) => {
-          const start = touch.current;
-          touch.current = null;
-          if (!start) return;
-          const t = e.changedTouches[0];
-          const dx = t.clientX - start.x;
-          const dy = t.clientY - start.y;
-          if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
-            go(dx < 0 ? index + 1 : index - 1);
-          }
-        }}
-      >
-        {slide.kind === "image" ? (
-          <img
-            key={slide.key}
-            src={slide.src}
-            alt={slide.alt}
-            className="absolute top-3 right-14 bottom-8 left-14 h-[calc(100%-2.75rem)] w-[calc(100%-7rem)] rounded-lg object-contain object-center"
-            draggable={false}
-          />
-        ) : slide.kind === "video" ? (
-          <video
-            key={slide.key}
-            ref={videoRef}
-            className="absolute top-3 right-14 bottom-8 left-14 h-[calc(100%-2.75rem)] w-[calc(100%-7rem)] rounded-lg object-contain object-center"
-            poster={slide.poster}
-            src={slide.video}
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            draggable={false}
-            aria-label={`${slide.label} walkthrough`}
-          />
-        ) : (
-          <div className="absolute inset-0 z-20">{live}</div>
-        )}
-
+      <div className="flex items-center gap-2 sm:gap-3">
         <button
           type="button"
           onClick={() => go(index - 1)}
           aria-label="Previous"
-          className="absolute left-2 top-1/2 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-background/85 text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background sm:h-9 sm:w-9"
+          className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-full border border-black bg-background text-foreground shadow-sm transition hover:bg-secondary sm:h-9 sm:w-9"
         >
           <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
+        <div
+          ref={stageRef}
+          className={cn(
+            "relative min-w-0 flex-1 touch-pan-y overflow-hidden rounded-xl border-2 border-black select-none",
+            slide.kind === "video" && "bg-muted",
+          )}
+          style={{ aspectRatio: slide.aspect }}
+          onTouchStart={(e) => {
+            const t = e.touches[0];
+            touch.current = { x: t.clientX, y: t.clientY };
+          }}
+          onTouchEnd={(e) => {
+            const start = touch.current;
+            touch.current = null;
+            if (!start) return;
+            const t = e.changedTouches[0];
+            const dx = t.clientX - start.x;
+            const dy = t.clientY - start.y;
+            if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
+              go(dx < 0 ? index + 1 : index - 1);
+            }
+          }}
+        >
+          {slide.kind === "image" ? (
+            <img
+              key={slide.key}
+              src={slide.src}
+              alt={slide.alt}
+              className="absolute inset-0 h-full w-full object-cover object-center"
+              draggable={false}
+            />
+          ) : slide.kind === "video" ? (
+            <video
+              key={slide.key}
+              ref={videoRef}
+              className="absolute inset-0 h-full w-full object-contain object-center"
+              poster={slide.poster}
+              src={slide.video}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              draggable={false}
+              aria-label={`${slide.label} walkthrough`}
+            />
+          ) : (
+            <div className="absolute inset-0 z-20">{live}</div>
+          )}
+        </div>
         <button
           type="button"
           onClick={() => go(index + 1)}
           aria-label="Next"
-          className="absolute right-2 top-1/2 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-background/85 text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background sm:h-9 sm:w-9"
+          className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-full border border-black bg-background text-foreground shadow-sm transition hover:bg-secondary sm:h-9 sm:w-9"
         >
           <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
+      </div>
 
-        <div className="pointer-events-none absolute bottom-2.5 left-1/2 z-10 flex -translate-x-1/2 gap-1.5">
-          {slides.map((s, i) => (
-            <span
-              key={s.key}
-              className={cn(
-                "h-1.5 rounded-full transition-all",
-                i === index ? "w-5 bg-white" : "w-1.5 bg-white/45",
-              )}
-            />
-          ))}
-        </div>
+      <div className="flex justify-center gap-1.5" role="tablist" aria-label="Slides">
+        {slides.map((s, i) => (
+          <button
+            key={s.key}
+            type="button"
+            aria-label={s.label}
+            onClick={() => setIndex(i)}
+            className={cn(
+              "h-1.5 rounded-full bg-foreground transition-all",
+              i === index ? "w-5" : "w-1.5 opacity-35",
+            )}
+          />
+        ))}
       </div>
 
       <div
@@ -308,17 +315,18 @@ export function FullCourseVideoRoulette({
               data-roulette-thumb={i}
               onClick={() => setIndex(i)}
               className={cn(
-                "relative aspect-video w-[4.75rem] flex-shrink-0 overflow-hidden rounded-lg bg-[#121212] p-0.5 transition-all sm:w-24",
+                "relative aspect-video w-[4.75rem] flex-shrink-0 overflow-hidden rounded-lg border border-black bg-background transition-all sm:w-24",
                 active
                   ? "ring-2 ring-foreground ring-offset-2 ring-offset-background"
-                  : "ring-1 ring-black/25 opacity-80 hover:opacity-100",
+                  : "opacity-80 hover:opacity-100",
               )}
             >
               <img
                 src={thumbSrc}
                 alt=""
                 className={cn(
-                  "absolute inset-0.5 h-[calc(100%-0.25rem)] w-[calc(100%-0.25rem)] rounded-[5px] object-contain object-center",
+                  "absolute inset-0 h-full w-full object-center",
+                  s.kind === "video" ? "object-contain bg-muted" : "object-cover",
                 )}
                 draggable={false}
                 loading="lazy"

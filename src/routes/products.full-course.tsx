@@ -116,8 +116,8 @@ const ROULETTE_SLIDES: RouletteSlide[] = [
     label: "Full Course",
     kind: "image",
     src: FULL_COURSE_IMAGE,
-    alt: "Full BBE Course on a black background: 3300+ questions, 5 mock exams, Economics, Mathematics, and English.",
-    aspect: "16 / 9",
+    alt: "Full BBE Course: 3300+ questions, 5 mock exams, Economics, Mathematics, and English.",
+    aspect: "4 / 3",
   },
   ...GUIDE_SLIDES,
 ];
