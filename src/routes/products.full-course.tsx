@@ -357,7 +357,9 @@ export function FullCourseProduct() {
             Full BBE Course
           </h1>
 
-          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
+          <div className="lg:relative lg:left-1/2 lg:w-[min(100vw-5rem,80rem)] lg:-translate-x-1/2">
+            <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
+          </div>
 
           {/* Rating */}
           <div className="mt-5 flex items-center gap-3">
