@@ -2655,3 +2655,8 @@ body.flashcard-swiping {
   }
 }
 
+
+/* Auto-translation: hide new page content until translated (max ~1s). */
+html[data-i18n-pending] main {
+  opacity: 0;
+}

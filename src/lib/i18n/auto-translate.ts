@@ -2,7 +2,7 @@ import { useSyncExternalStore } from "react";
 import { getAutoLanguage, isAutoLang, type AutoLang } from "@/lib/i18n/languages";
 
 const CACHE_KEY = "bbe.autotr.v1";
-const CACHE_LIMIT = 180_000;
+const CACHE_LIMIT = 2_000_000;
 const LETTER = /[A-Za-zÀ-ÿ]/;
 
 type ChromeTranslator = {
@@ -85,7 +85,7 @@ function persist(lang: string) {
     stored[lang] = Object.fromEntries(cacheFor(lang));
     const json = JSON.stringify(stored);
     if (json.length > CACHE_LIMIT) {
-      stored[lang] = Object.fromEntries([...cacheFor(lang)].slice(-80));
+      stored[lang] = Object.fromEntries([...cacheFor(lang)].slice(-4000));
     }
     localStorage.setItem(CACHE_KEY, JSON.stringify(stored));
   } catch {
@@ -254,17 +254,19 @@ async function translateWithGoogle(
   target: string,
   texts: string[],
 ): Promise<(string | null)[] | null> {
+  const chunks = chunkTexts(texts, 30, 2200);
+  // Chunks run in parallel so a new page is translated in one round-trip.
+  const parts = await Promise.all(chunks.map((chunk) => googleChunk(target, chunk)));
   const out: (string | null)[] = [];
   let any = false;
-  for (const chunk of chunkTexts(texts, 30, 2200)) {
-    const part = await googleChunk(target, chunk);
+  parts.forEach((part, index) => {
     if (!part) {
-      out.push(...chunk.map(() => null));
-      continue;
+      out.push(...chunks[index].map(() => null));
+      return;
     }
     if (part.some(Boolean)) any = true;
     out.push(...part);
-  }
+  });
   return any ? out : null;
 }
 
@@ -400,6 +402,8 @@ async function runTranslations(lang: AutoLang, texts: string[]) {
           else failed.add(pairKey(lang, text));
           release(text);
         });
+        // Paint each finished batch right away instead of waiting for all.
+        emit();
       } catch {
         for (const text of batch) {
           const key = pairKey(lang, text);

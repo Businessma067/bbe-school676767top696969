@@ -6,6 +6,7 @@ import {
   peekAutoTranslation,
   queueAutoTranslations,
   useAutoDictionaryVersion,
+  warmLanguage,
 } from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
 import { translate } from "@/lib/i18n/dictionary";
@@ -214,6 +215,28 @@ export function PageTranslator() {
       observer.disconnect();
     };
   }, [effectiveLang, revision]);
+
+  // On navigation in an automatic language, hide the new page body briefly
+  // until its strings are translated so English never flashes.
+  useLayoutEffect(() => {
+    if (typeof document === "undefined" || !isAutoLang(effectiveLang)) return;
+    const root = document.documentElement;
+    root.setAttribute("data-i18n-pending", "");
+    let done = false;
+    const reveal = () => {
+      if (done) return;
+      done = true;
+      root.removeAttribute("data-i18n-pending");
+    };
+    // Let the MutationObserver note the new page's strings first.
+    setTimeout(() => {
+      void Promise.race([
+        warmLanguage(effectiveLang).catch(() => undefined),
+        new Promise((r) => setTimeout(r, 900)),
+      ]).then(() => requestAnimationFrame(reveal));
+    }, 0);
+    return reveal;
+  }, [pathname, effectiveLang]);
 
   return null;
 }
