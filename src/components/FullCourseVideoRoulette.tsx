@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { ZoomableImage } from "@/components/ZoomableImage";
 
 export type RouletteSlide =
   | {
@@ -162,6 +165,7 @@ export function FullCourseVideoRoulette({
   live?: ReactNode;
 }) {
   const [index, setIndex] = useState(0);
+  const [imageOpen, setImageOpen] = useState(false);
   const stageRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const thumbsRef = useRef<HTMLDivElement | null>(null);
@@ -246,13 +250,26 @@ export function FullCourseVideoRoulette({
           }}
         >
           {slide.kind === "image" ? (
-            <img
-              key={slide.key}
-              src={slide.src}
-              alt={slide.alt}
-              className="absolute inset-0 h-full w-full object-cover object-center"
-              draggable={false}
-            />
+            <>
+              <img
+                key={slide.key}
+                src={slide.src}
+                alt={slide.alt}
+                className="absolute inset-0 h-full w-full object-cover object-center"
+                draggable={false}
+              />
+              <Button
+                type="button"
+                size="icon"
+                variant="outline"
+                className="absolute right-3 top-3 z-10 shadow-sm"
+                aria-label={`Enlarge ${slide.label} image`}
+                title="Enlarge image"
+                onClick={() => setImageOpen(true)}
+              >
+                <ZoomIn aria-hidden="true" />
+              </Button>
+            </>
           ) : slide.kind === "video" ? (
             <video
               key={slide.key}
@@ -340,6 +357,19 @@ export function FullCourseVideoRoulette({
           );
         })}
       </div>
+      <Dialog open={imageOpen} onOpenChange={setImageOpen}>
+        <DialogContent className="w-[96vw] max-w-none border-border p-3 sm:w-[96vw] sm:max-w-[1600px] sm:p-5">
+          <DialogTitle className="sr-only">{slide.label} image</DialogTitle>
+          {slide.kind === "image" && (
+            <ZoomableImage
+              key={slide.key}
+              src={slide.src}
+              alt={slide.alt}
+              className="mx-auto max-h-[78vh] w-full object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
