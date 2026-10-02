@@ -184,3 +184,14 @@ export function counterpartPath(pathname: string, target: ExamTrack): string {
   if (!isWisoPath(path)) return path === BBE_HOME ? BBE_HOME : path;
   return WISO_TO_BBE[path] ?? BBE_HOME;
 }
+
+/** True when the visitor chose a non-English language in the switcher. */
+export function userPickedNonEnglish(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    const stored = window.localStorage.getItem("bbe.lang");
+    return !!stored && stored !== "en";
+  } catch {
+    return false;
+  }
+}
