@@ -155,18 +155,22 @@ export function Index() {
                     key={exam.id}
                     className={cn(
                       "flex w-full flex-col rounded-2xl border p-5 sm:p-7",
-                      isHybrid || isWiso
-                        ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
-                        : "border-border bg-card",
+                      isHybrid
+                        ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
+                        : isWiso
+                          ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
+                          : "border-border bg-card",
                     )}
                   >
                     <div className="flex items-center gap-3">
                       <div
                         className={cn(
                           "grid h-11 w-11 shrink-0 place-items-center rounded-xl shadow-md ring-1",
-                          isHybrid || isWiso
-                            ? "bg-gradient-to-br from-indigo-700 via-indigo-600 to-indigo-800 ring-indigo-500/30"
-                            : "bg-gradient-to-br from-primary via-accent to-primary ring-primary/30",
+                          isHybrid
+                            ? "bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 ring-teal-500/30"
+                            : isWiso
+                              ? "bg-gradient-to-br from-indigo-700 via-indigo-600 to-indigo-800 ring-indigo-500/30"
+                              : "bg-gradient-to-br from-primary via-accent to-primary ring-primary/30",
                         )}
                         aria-hidden
                       >
@@ -177,9 +181,11 @@ export function Index() {
                       <p
                         className={cn(
                           "text-xs font-semibold uppercase tracking-wide",
-                          isHybrid || isWiso
-                            ? "text-indigo-800 dark:text-indigo-300"
-                            : "text-primary",
+                          isHybrid
+                            ? "text-teal-800 dark:text-teal-300"
+                            : isWiso
+                              ? "text-indigo-800 dark:text-indigo-300"
+                              : "text-primary",
                         )}
                         data-no-i18n
                       >
@@ -206,7 +212,7 @@ export function Index() {
                           <span
                             className={cn(
                               "mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full",
-                              isHybrid || isWiso ? "bg-indigo-700" : "bg-primary",
+                              isHybrid ? "bg-teal-700" : isWiso ? "bg-indigo-700" : "bg-primary",
                             )}
                           />
                           {item}
@@ -218,7 +224,7 @@ export function Index() {
                         <button
                           type="button"
                           disabled
-                          className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-sm bg-indigo-700/80 px-5 py-3.5 text-sm font-semibold text-white opacity-90"
+                          className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-sm bg-teal-700/80 px-5 py-3.5 text-sm font-semibold text-white opacity-90"
                         >
                           {exam.cta}
                         </button>
@@ -232,9 +238,11 @@ export function Index() {
                           }}
                           className={cn(
                             "inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
-                            isHybrid || isWiso
-                              ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
-                              : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                            isHybrid
+                              ? "bg-teal-700 hover:bg-teal-800 focus:ring-teal-700"
+                              : isWiso
+                                ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
+                                : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
                           )}
                         >
                           {exam.cta}

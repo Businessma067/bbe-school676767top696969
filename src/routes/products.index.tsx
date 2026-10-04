@@ -86,7 +86,7 @@ export const Route = createFileRoute("/products/")({
 
 const ORANGE = "#C2643A";
 const INDIGO = "#3730A3";
-const HYBRID = "#3730A3";
+const HYBRID = "#0F766E";
 
 type Product = {
   title: string;

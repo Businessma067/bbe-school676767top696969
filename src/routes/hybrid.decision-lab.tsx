@@ -45,7 +45,7 @@ function HybridDecisionLabPage() {
                   className={cn(
                     "flex w-full rounded-xl border px-4 py-3 text-left text-sm transition-colors",
                     answers[q.id] === opt.id
-                      ? "border-indigo-600 bg-indigo-50 text-foreground dark:bg-indigo-950/30"
+                      ? "border-teal-600 bg-teal-50 text-foreground dark:bg-teal-950/30"
                       : "border-border hover:bg-secondary",
                   )}
                 >
@@ -72,8 +72,8 @@ function HybridDecisionLabPage() {
       </button>
 
       {result ? (
-        <div className="mt-6 rounded-2xl border border-indigo-200/80 bg-indigo-50/50 p-5 dark:border-indigo-800/40 dark:bg-indigo-950/20">
-          <p className="text-xs font-semibold uppercase tracking-wide text-indigo-800 dark:text-indigo-300">
+        <div className="mt-6 rounded-2xl border border-teal-200/80 bg-teal-50/50 p-5 dark:border-teal-800/40 dark:bg-teal-950/20">
+          <p className="text-xs font-semibold uppercase tracking-wide text-teal-800 dark:text-teal-300">
             Result
           </p>
           <h3 className="mt-1 font-display text-2xl font-bold capitalize">

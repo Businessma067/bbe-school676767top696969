@@ -631,7 +631,7 @@ export function PrepJourneyRoadmap({
   track = "bbe",
 }: {
   className?: string;
-  /** BBE stakes red (default), or WiSo / Hybrid indigo. */
+  /** BBE stakes red (default), WiSo indigo, or Hybrid teal. */
   accent?: PrepRoadmapAccent;
   track?: "bbe" | "wiso" | "hybrid";
 }) {

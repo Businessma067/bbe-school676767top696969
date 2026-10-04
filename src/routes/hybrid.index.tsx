@@ -20,6 +20,7 @@ const HowItWorksSection = lazy(() =>
 );
 
 const PATH = "/hybrid" as const;
+const TEAL = "#0F766E";
 
 export const Route = createFileRoute("/hybrid/")({
   head: () => ({
@@ -62,7 +63,14 @@ export function HybridLandingPage() {
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
               <ExamCountdown className="mb-5 sm:mb-6" />
 
-              <p className="mb-3 rounded-full border border-indigo-200/80 bg-indigo-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-indigo-900 dark:border-indigo-800/50 dark:bg-indigo-950/40 dark:text-indigo-200 sm:text-xs">
+              <p
+                className="mb-3 rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-wide sm:text-xs"
+                style={{
+                  borderColor: `${TEAL}55`,
+                  backgroundColor: `${TEAL}14`,
+                  color: TEAL,
+                }}
+              >
                 Hybrid · BBE + WiSo
               </p>
 
@@ -81,14 +89,16 @@ export function HybridLandingPage() {
               >
                 <LocalizedLink
                   to="/products/hybrid-course"
-                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm bg-indigo-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  style={{ backgroundColor: TEAL }}
                 >
                   <span>Hybrid Course</span>
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">€649 · both exams</span>
                 </LocalizedLink>
                 <LocalizedLink
                   to="/demo-practice"
-                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-teal-700/10 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  style={{ borderColor: TEAL, color: TEAL }}
                 >
                   <span>BBE demo</span>
                   <span className="mt-0.5 text-[11px] font-medium opacity-70">50+ starter tasks</span>
@@ -106,7 +116,8 @@ export function HybridLandingPage() {
 
               <LocalizedLink
                 to="/bbe-vs-wiso"
-                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline"
+                style={{ color: TEAL }}
               >
                 See how BBE and WiSo differ
                 <ArrowRight className="h-3.5 w-3.5" />
@@ -114,7 +125,7 @@ export function HybridLandingPage() {
             </div>
 
             <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
-              <PrepJourneyRoadmap track="hybrid" accent="wiso-blue" />
+              <PrepJourneyRoadmap track="hybrid" accent="hybrid-teal" />
             </div>
           </div>
         </section>
@@ -124,7 +135,6 @@ export function HybridLandingPage() {
         </Suspense>
 
         <WhyChooseUsSection
-          track="hybrid"
           subtitle="Everything from Full BBE and Full WiSo in one course: questions, timed mocks, builders, flashcards, matching, and tutor exam, plus a shared plan so the overlap is not homework twice."
         />
 
@@ -147,7 +157,7 @@ export function HybridLandingPage() {
           </div>
         </section>
 
-        <section className="why-choose-us--wiso bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <section className="bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
