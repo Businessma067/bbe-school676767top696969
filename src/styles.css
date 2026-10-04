@@ -1576,12 +1576,12 @@ body.flashcard-swiping {
 }
 
 @keyframes hybrid-mode-chip {
-  0%, 100% { opacity: 0.38; transform: translateY(0); }
+  0%, 100% { opacity: 0.72; transform: translateY(0); }
   45%, 70% { opacity: 1; transform: translateY(-2px); }
 }
 
 .hybrid-clock-hand {
-  transform-origin: 18px 18px;
+  transform-origin: left center;
   animation: hybrid-clock-hand 8s linear infinite;
 }
 

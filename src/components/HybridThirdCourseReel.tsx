@@ -157,31 +157,46 @@ function PageFrame({
   kicker,
   title,
   body,
-  visual,
+  photo,
+  children,
 }: {
   step: string;
   kicker: string;
   title: string;
   body: string;
-  visual: ReactNode;
+  photo: string;
+  children?: ReactNode;
 }) {
   return (
     <div className="relative h-full overflow-hidden bg-[#071612]">
-      <div className="absolute inset-y-0 right-0 w-full lg:w-[58%]">{visual}</div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-full bg-gradient-to-t from-[#071612] via-[#071612]/75 to-[#071612]/20 lg:w-[46%] lg:bg-gradient-to-r lg:from-[#071612] lg:via-[#071612]/88 lg:to-transparent" />
-      <div className="relative z-10 flex h-full w-full flex-col justify-end px-6 pb-16 pt-8 sm:px-10 lg:w-[46%] lg:justify-center lg:px-14 lg:pb-12">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/55">
-          Why a third course
-        </p>
-        <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/80">
-          <span data-no-i18n>{step}</span>
-          {" · "}
-          {kicker}
-        </p>
-        <h3 className="mt-3 font-display text-[1.7rem] font-semibold leading-[1.12] text-why-us-fg sm:text-4xl">
-          {title}
-        </h3>
-        <p className="mt-4 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">{body}</p>
+      <img
+        src={photo}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+        onError={(event) => {
+          event.currentTarget.style.display = "none";
+        }}
+      />
+      <div className="pointer-events-none absolute inset-0 bg-[#071612]/35" />
+      <div className="absolute inset-0">{children}</div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[48%] bg-gradient-to-t from-[#071612] from-55% to-transparent" />
+      <div className="relative z-10 flex h-full w-full flex-col justify-end px-6 pb-16 pt-8 sm:px-12 lg:px-16">
+        <div className="max-w-xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/80 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
+            Why a third course
+          </p>
+          <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-100 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
+            <span data-no-i18n>{step}</span>
+            {" · "}
+            {kicker}
+          </p>
+          <h3 className="mt-3 font-display text-[1.7rem] font-semibold leading-[1.12] text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.55)] sm:text-5xl">
+            {title}
+          </h3>
+          <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/85 [text-shadow:0_1px_10px_rgba(0,0,0,0.5)] sm:text-lg">
+            {body}
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -194,53 +209,61 @@ function SharedCorePage({ live }: { live: boolean }) {
       kicker="Shared core"
       title="One chapter counts for both papers."
       body="Mathematics and economics stay a single queue. You flip the wording between English and German. You do not restart the chapter."
-      visual={
-        <div className="relative h-full min-h-[16rem] overflow-hidden">
-          <img src={economicsAsset.url} alt="" className="absolute inset-0 h-full w-full object-cover opacity-80" />
-          <img
-            src={mathAsset.url}
-            alt=""
-            className="absolute inset-y-0 left-0 hidden w-1/2 object-cover opacity-70 sm:block"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#071612]/40 via-transparent to-[#071612]/25" />
-          <div className="relative flex h-full flex-col items-end justify-center gap-4 px-6 py-16 sm:px-10">
-          <div className="w-full max-w-xs rounded-2xl border border-white/15 bg-black/50 p-4 backdrop-blur">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-teal-200">One queue</p>
-            <div className="mt-3 space-y-2">
-              <div className="h-2 overflow-hidden rounded-full bg-white/10">
-                <div className="h-full w-4/5 rounded-full bg-teal-300" />
-              </div>
-              <div className="flex justify-between text-[11px] text-white/75">
-                <span>Math</span>
-                <span>shared</span>
-              </div>
-              <div className="h-2 overflow-hidden rounded-full bg-white/10">
-                <div className="h-full w-3/5 rounded-full bg-teal-500" />
-              </div>
-              <div className="flex justify-between text-[11px] text-white/75">
-                <span>Economics</span>
-                <span>shared</span>
-              </div>
-            </div>
+      photo={economicsAsset.url}
+    >
+      <img
+        src={mathAsset.url}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+        onError={(event) => {
+          event.currentTarget.style.display = "none";
+        }}
+      />
+      <div
+        className={cn(
+          "hybrid-flip absolute left-[6%] top-[9%] w-[min(52rem,90vw)] sm:left-[8%] sm:top-[12%]",
+          !live && "[&_.hybrid-flip-inner]:![animation:none]",
+        )}
+      >
+        <div className="hybrid-flip-inner h-28 sm:h-40">
+          <div className="hybrid-flip-face flex h-full flex-col justify-end">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-teal-200">English · BBE</p>
+            <p className="font-display text-5xl font-semibold leading-none text-white sm:text-7xl lg:text-8xl">
+              Elasticity
+            </p>
           </div>
-          <div className={cn("hybrid-flip w-full max-w-xs", !live && "[&_.hybrid-flip-inner]:![animation:none]")}>
-            <div className="hybrid-flip-inner h-36">
-              <div className="hybrid-flip-face flex h-full flex-col justify-between rounded-2xl border border-white/15 bg-[#10241e]/90 p-4 shadow-2xl backdrop-blur">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-200">English · BBE</p>
-                <p className="font-display text-lg font-semibold text-white">Elasticity</p>
-                <p className="text-xs text-white/70">How quantity answers a price change.</p>
-              </div>
-              <div className="hybrid-flip-face hybrid-flip-back flex h-full flex-col justify-between rounded-2xl border border-teal-200/20 bg-[#0c2a24]/95 p-4 shadow-2xl">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-200">Deutsch · WiSo</p>
-                <p className="font-display text-lg font-semibold text-white">Elastizität</p>
-                <p className="text-xs text-white/70">Wie die Menge auf den Preis reagiert.</p>
-              </div>
-            </div>
-          </div>
+          <div className="hybrid-flip-face hybrid-flip-back flex h-full flex-col justify-end">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-teal-200">Deutsch · WiSo</p>
+            <p className="font-display text-5xl font-semibold leading-none text-white sm:text-7xl lg:text-8xl">
+              Elastizität
+            </p>
           </div>
         </div>
-      }
-    />
+      </div>
+      <div className="absolute inset-x-0 top-[calc(14%+8.5rem)] px-6 sm:top-[calc(14%+11rem)] sm:px-12 lg:px-16">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-200">One queue</p>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 sm:gap-10">
+          <div>
+            <div className="h-1.5 overflow-hidden rounded-full bg-white/15">
+              <div className="h-full w-4/5 rounded-full bg-teal-300" />
+            </div>
+            <div className="mt-1.5 flex justify-between text-[11px] text-white/80">
+              <span>Math</span>
+              <span>shared</span>
+            </div>
+          </div>
+          <div>
+            <div className="h-1.5 overflow-hidden rounded-full bg-white/15">
+              <div className="h-full w-3/5 rounded-full bg-teal-400" />
+            </div>
+            <div className="mt-1.5 flex justify-between text-[11px] text-white/80">
+              <span>Economics</span>
+              <span>shared</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </PageFrame>
   );
 }
 
@@ -254,17 +277,15 @@ function LanguageLanesPage({ live }: { live: boolean }) {
       kicker="Both language lanes"
       title="English and German stay in the same week."
       body="BBE still needs the English paper. WiSo still needs German reading. Hybrid keeps both lanes moving, lighter than buying a second full course."
-      visual={
-        <div className="relative h-full min-h-[16rem] overflow-hidden">
-          <img src={wuAsset.url} alt="" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-[#071612]/35" />
-          <div className="absolute inset-0 grid grid-cols-2 gap-3 p-5 sm:p-8">
-            <Lane title="English" words={EN_LANE} reverse={false} live={live} />
-            <Lane title="Deutsch" words={DE_LANE} reverse live={live} />
-          </div>
+      photo={wuAsset.url}
+    >
+      <div className="absolute inset-x-0 top-0 h-[54%] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_86%,transparent)] sm:h-[56%]">
+        <div className="grid h-full grid-cols-2">
+          <Lane title="English" words={EN_LANE} reverse={false} live={live} />
+          <Lane title="Deutsch" words={DE_LANE} reverse live={live} />
         </div>
-      }
-    />
+      </div>
+    </PageFrame>
   );
 }
 
@@ -281,18 +302,19 @@ function Lane({
 }) {
   const loop = [...words, ...words];
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-teal-100/20 bg-[#12352d]/90 backdrop-blur-sm">
-      <p className="border-b border-white/10 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-100">
+    <div className="relative h-full overflow-hidden">
+      <p className="absolute left-6 top-6 z-10 text-[10px] font-semibold uppercase tracking-[0.28em] text-teal-100 sm:left-12 lg:left-16">
         {title}
       </p>
-      <div className="h-52 overflow-hidden sm:h-64">
-        <div className={cn("hybrid-lane-track", reverse && "hybrid-lane-track-reverse", !live && "![animation:none]")}>
-          {loop.map((word, i) => (
-            <p key={`${word}-${i}`} className="px-3 py-2.5 font-display text-base text-white sm:text-lg">
-              {word}
-            </p>
-          ))}
-        </div>
+      <div className={cn("hybrid-lane-track pt-16", reverse && "hybrid-lane-track-reverse", !live && "![animation:none]")}>
+        {loop.map((word, i) => (
+          <p
+            key={`${word}-${i}`}
+            className="whitespace-nowrap px-6 py-3 font-display text-[1.65rem] font-semibold leading-none text-white/90 sm:px-12 sm:py-4 sm:text-5xl lg:px-16 lg:text-7xl"
+          >
+            {word}
+          </p>
+        ))}
       </div>
     </div>
   );
@@ -312,37 +334,27 @@ function EveryModePage({ live }: { live: boolean }) {
       kicker="Every mode"
       title="Both exam days, one rehearsal."
       body="Mocks, builders, flashcards, matching, and tutor stay. Hybrid adds Bridge, Mirror, Exam Flip, and a dual mock day so the two formats never blur together."
-      visual={
-        <div className="relative h-full min-h-[16rem] overflow-hidden">
-          <img src={hallAsset.url} alt="" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#071612]/75 via-[#071612]/45 to-teal-950/25" />
-          <div className="relative flex h-full flex-col justify-center gap-3 p-6 sm:p-8">
-            <div className="mb-1 flex items-center gap-3 text-teal-100">
-              <span className="relative grid h-9 w-9 place-items-center rounded-full border border-teal-200/40">
-                <span className="absolute h-px w-3.5 bg-teal-200 hybrid-clock-hand" />
-                <span className="h-1.5 w-1.5 rounded-full bg-teal-200" />
-              </span>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.22em]">One study day</p>
-            </div>
-            {MODES.map((mode, i) => (
-              <div
-                key={mode.name}
-                className={cn(
-                  "hybrid-mode-chip flex items-center justify-between rounded-xl border border-white/12 bg-black/40 px-4 py-3 backdrop-blur",
-                  !live && "![animation:none] opacity-100",
-                )}
-                style={{ animationDelay: `${i * 0.7}s` }}
-              >
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal-200/80">{mode.time}</p>
-                  <p className="font-display text-base font-semibold text-white">{mode.name}</p>
-                </div>
-                <p className="text-xs text-white/70">{mode.note}</p>
-              </div>
-            ))}
+      photo={hallAsset.url}
+    >
+      <div className="pointer-events-none absolute left-1/2 top-[42%] hidden h-48 w-48 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-teal-200/30 sm:grid sm:h-64 sm:w-64">
+        <span className="absolute left-1/2 top-1/2 h-px w-16 -translate-y-1/2 bg-teal-200 hybrid-clock-hand sm:w-24" />
+        <span className="h-2.5 w-2.5 rounded-full bg-teal-200" />
+      </div>
+      <div className="absolute inset-x-0 top-0 grid grid-cols-2 gap-y-8 px-6 pt-14 sm:grid-cols-4 sm:px-10 sm:pt-16 lg:px-14">
+        {MODES.map((mode, i) => (
+          <div
+            key={mode.name}
+            className={cn("hybrid-mode-chip", !live && "![animation:none] opacity-100")}
+            style={{ animationDelay: `${i * 0.7}s` }}
+          >
+            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-200">{mode.time}</p>
+            <p className="mt-2 font-display text-3xl font-semibold leading-none text-white sm:text-4xl lg:text-5xl">
+              {mode.name}
+            </p>
+            <p className="mt-2 max-w-[11rem] text-sm text-white/75">{mode.note}</p>
           </div>
-        </div>
-      }
-    />
+        ))}
+      </div>
+    </PageFrame>
   );
 }
