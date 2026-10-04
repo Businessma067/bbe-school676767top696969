@@ -29,7 +29,7 @@ export function PaymentModal({
   open,
   onOpenChange,
   productName = "Full BBE Course",
-  priceEuros = 449,
+  priceEuros = 411,
   productSlug = "full-course",
 }: PaymentModalProps) {
   const navigate = useNavigate();

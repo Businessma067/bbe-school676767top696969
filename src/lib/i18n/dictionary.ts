@@ -189,7 +189,7 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Full BBE Course": "BBE-Vollkurs",
     "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
       "1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
-    "Buy course · €449": "Kurs kaufen · 449 €",
+    "Buy course · €411": "Kurs kaufen · 411 €",
     "Coming soon": "Demnächst",
     "Unlock full access": "Vollzugang freischalten",
     "Start Practicing": "Jetzt üben",
@@ -419,7 +419,7 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Full BBE Course": "Повний курс BBE",
     "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
       "1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори.",
-    "Buy course · €449": "Купити курс · €449",
+    "Buy course · €411": "Купити курс · €411",
     "Coming soon": "Незабаром",
     "Unlock full access": "Відкрити повний доступ",
     "Start Practicing": "Почати практику",

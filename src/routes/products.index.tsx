@@ -48,7 +48,7 @@ const courseListJsonLd = [
     provider: PROVIDER,
     offers: {
       "@type": "Offer",
-      price: "449",
+      price: "411",
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: "https://bbe-school.com/products/full-course",
@@ -116,7 +116,7 @@ const products: Product[] = [
     image: FULL_COURSE_IMAGE,
     description:
       "1500+ practice cases across Economics, Mathematics and English, plus timing modules, full mocks, a study assistant, and clear task breakdowns.",
-    cta: "Buy course · €449",
+    cta: "Buy course · €411",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
     ownedTo: FULL_COURSE_HREF,
@@ -128,7 +128,7 @@ const products: Product[] = [
     image: WISO_COURSE_IMAGE,
     description:
       "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.",
-    cta: "Buy course · €449",
+    cta: "Buy course · €411",
     to: "/wiso/products/full-course",
     ownedCta: "Go to course",
     ownedTo: "/wiso/products/full-course-subjects",

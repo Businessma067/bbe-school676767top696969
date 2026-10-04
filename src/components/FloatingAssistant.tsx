@@ -52,7 +52,7 @@ function caseBadge(c: PracticeCasePayload): string {
 const SITE_FAQ: Array<{ q: string; a: string }> = [
   {
     q: "full course",
-    a: "**Full course** is the paid prep track (€349): Math, Economics, and English practice banks, mocks, and study tools. Open it from the hero CTA or **BBE-school products**.",
+    a: "**Full course** is the paid prep track (€411): Math, Economics, and English practice banks, mocks, and study tools. Open it from the hero CTA or **BBE-school products**.",
   },
   {
     q: "demo",
