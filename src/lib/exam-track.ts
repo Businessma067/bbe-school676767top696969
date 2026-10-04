@@ -8,7 +8,16 @@ export const WISO_HOME = "/wiso" as const;
 export const TRACK_STORAGE_KEY = "bbe-school-exam-track";
 
 /** Paths that belong to neither track (chooser / shared compare / account chrome). */
-const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso", "/dashboard", "/account", "/hybrid", "/products/hybrid-course"]);
+const NEUTRAL_PATHS = new Set([
+  "/",
+  "/bbe-vs-wiso",
+  "/dashboard",
+  "/account",
+  "/hybrid",
+  "/products/hybrid-course",
+  // Shared catalog (BBE + WiSo). Keep the visitor's current locale when leaving a track.
+  "/products",
+]);
 
 /** Shared news feed + posts (`/news`, `/news/<slug>`). */
 export function isNewsAppPath(pathname: string): boolean {

@@ -40,6 +40,14 @@ export const Route = createFileRoute("/$lang/$")({
       });
     }
 
+    // Alias matches EN `/wiso/products` → `/products` (keep locale prefix).
+    if (path === "/wiso/products") {
+      throw redirect({
+        to: "/$lang/$",
+        params: { lang: params.lang, _splat: "products" },
+      });
+    }
+
     if (!isLocalizablePath(path) || path === "/") throw notFound();
     if (!getLocalizedPage(path)) throw notFound();
   },

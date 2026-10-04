@@ -28,7 +28,7 @@ import {
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
 const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
-const FULL_COURSE_PRICE = 449;
+const FULL_COURSE_PRICE = 411;
 
 const ROULETTE_SLIDES = buildFullCourseRouletteSlides({
   track: "wiso",
@@ -127,7 +127,7 @@ const wisoCourseFaqs = [
   {
     question: "How much does it cost?",
     answer:
-      "Full WiSo Course is a one-time payment of €449. The same promocodes that work on Full BBE Course also apply at WiSo checkout.",
+      "Full WiSo Course is a one-time payment of €411. The same promocodes that work on Full BBE Course also apply at WiSo checkout.",
   },
   {
     question: "How is this different from the Full BBE Course?",

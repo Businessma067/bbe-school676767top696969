@@ -60,8 +60,8 @@ export const extraDe: Record<string, string> = {
   // ---------- Full course FAQs ----------
   "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.":
     "Der Vollkurs schaltet 100 % der Plattform frei. Du erhältst vollen Zugriff auf die Datenbank mit 1.200+ Aufgaben in allen Fächern, Schritt-für-Schritt-Logikanalysen, den Echtzeit-KI-Lernbegleiter, Probeprüfungen, das automatische Textmarker-Tool, alle Speed-Simulatoren und den digitalen Antwortbogen-Simulator.",
-  "It is a strict one-time payment of €449. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.":
-    "Es ist eine strikt einmalige Zahlung von 449 €. Keine monatlichen Gebühren, keine versteckten Abos, keine Upsells. Du zahlst einmal und hast vollen Zugriff bis zum Ende des gesamten Prüfungszyklus 2026/2027.",
+  "It is a strict one-time payment of €411. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.":
+    "Es ist eine strikt einmalige Zahlung von 411 €. Keine monatlichen Gebühren, keine versteckten Abos, keine Upsells. Du zahlst einmal und hast vollen Zugriff bis zum Ende des gesamten Prüfungszyklus 2026/2027.",
   "When you request a breakdown for any task, the system instantly scans the official exam literature. It returns a direct explanation written in simple language and applies an animated neon highlight to pin the exact proof sentence inside the source text viewport.":
     "Wenn du eine Erklärung zu einer Aufgabe anforderst, durchsucht das System sofort die offizielle Prüfungsliteratur. Es liefert eine direkte Erklärung in einfacher Sprache und markiert den exakten Beleg-Satz im Quelltext mit einem animierten Neon-Highlight.",
   "Yes, our database of 1,200+ cases is engineered strictly based on the institutional structure, negative scoring logic, and deceptive True/False phrasing style used by the examiners over the last years.":
@@ -137,7 +137,7 @@ export const extraDe: Record<string, string> = {
   "Every missed spot at the university costs the family the price of a car.":
     "Jeder verpasste Studienplatz kostet die Familie den Preis eines Autos.",
   "How we hack the system": "Wie wir das System knacken",
-  "€359 for the Full BBE Course": "359 € für den vollen BBE-Kurs",
+  "€411 for the Full BBE Course": "411 € für den vollen BBE-Kurs",
   ". It is not an educational expense. It is a direct financial insurance policy against burning €60,000+ later.":
     ". Das ist keine Bildungsausgabe. Das ist eine direkte Finanzversicherung dagegen, später 60.000 €+ zu verbrennen.",
   "The simulator trains your child's muscle memory in two tactics that regular tutors do not touch:":
@@ -220,8 +220,8 @@ export const extraUk: Record<string, string> = {
   // ---------- Full course FAQs ----------
   "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.":
     "Повний курс відкриває 100% платформи. Ти отримуєш повний доступ до бази з 1200+ завдань за всіма предметами, покрокові логічні розбори, ШІ-помічника в реальному часі, пробні іспити, автоматичний маркер тексту, усі симулятори швидкості та цифровий симулятор бланка відповідей.",
-  "It is a strict one-time payment of €449. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.":
-    "Це суто разова оплата 449 €. Без щомісячних платежів, прихованих підписок і доплат. Платиш один раз і маєш повний доступ до завершення всього екзаменаційного циклу 2026/2027.",
+  "It is a strict one-time payment of €411. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.":
+    "Це суто разова оплата 411 €. Без щомісячних платежів, прихованих підписок і доплат. Платиш один раз і маєш повний доступ до завершення всього екзаменаційного циклу 2026/2027.",
   "When you request a breakdown for any task, the system instantly scans the official exam literature. It returns a direct explanation written in simple language and applies an animated neon highlight to pin the exact proof sentence inside the source text viewport.":
     "Коли ти просиш розбір будь-якого завдання, система миттєво сканує офіційну екзаменаційну літературу. Вона дає пряме пояснення простою мовою й підсвічує анімованим неоном точне речення-доказ у вікні джерела.",
   "Yes, our database of 1,200+ cases is engineered strictly based on the institutional structure, negative scoring logic, and deceptive True/False phrasing style used by the examiners over the last years.":
@@ -297,7 +297,7 @@ export const extraUk: Record<string, string> = {
   "Every missed spot at the university costs the family the price of a car.":
     "Кожне втрачене місце в університеті коштує родині ціни автомобіля.",
   "How we hack the system": "Як ми зламуємо цю систему",
-  "€359 for the Full BBE Course": "359 € за повний курс BBE",
+  "€411 for the Full BBE Course": "411 € за повний курс BBE",
   ". It is not an educational expense. It is a direct financial insurance policy against burning €60,000+ later.":
     ". Це не витрата на освіту. Це пряма фінансова страховка від того, щоб спалити 60 000 €+ пізніше.",
   "The simulator trains your child's muscle memory in two tactics that regular tutors do not touch:":

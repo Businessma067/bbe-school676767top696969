@@ -122,7 +122,7 @@ const ROULETTE_SLIDES: RouletteSlide[] = [
   ...GUIDE_SLIDES,
 ];
 
-const FULL_COURSE_PRICE = 449;
+const FULL_COURSE_PRICE = 411;
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
@@ -214,7 +214,7 @@ const fullCourseFaqs = [
   {
     question: "Is this a subscription or a one-time payment?",
     answer:
-      "It is a one-time payment of €449 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.",
+      "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.",
   },
   {
     question: "How do explanations work?",

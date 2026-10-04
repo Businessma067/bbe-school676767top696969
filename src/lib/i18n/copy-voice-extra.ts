@@ -98,8 +98,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
   "Meanwhile, studying at WU Vienna is effectively free aside from token student fees. Getting into the Top-240 is financially close to saving more than €60,000 for the family.":
     "Studieren an der WU Wien ist dagegen effektiv kostenlos außer Token-Studentengebühren. In die Top-240 zu kommen kommt finanziell nah an mehr als 60.000 € Ersparnis für die Familie.",
   "How this prep is built": "Wie diese Prep gebaut ist",
-  "We do not dump dry economics textbooks on your child. The person who built this platform sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer sheet. Out of that came an interactive exam simulator for €359 for the Full BBE Course. Treat it less like a random course fee and more like insurance against burning €60,000+ later.":
-    "Wir schütten keine trockenen Wirtschaftslehrbücher über dein Kind. Wer diese Plattform gebaut hat, hat die WU-Prüfung geschrieben, Platz 24 erreicht und jeden Minuspunkt auf dem eigenen Antwortbogen gespürt. Daraus wurde ein interaktiver Prüfungssimulator für 359 € für den Full BBE Course. Sieh es weniger als beliebige Kursgebühr und mehr als Versicherung gegen 60.000 €+ Verbrennen später.",
+  "We do not dump dry economics textbooks on your child. The person who built this platform sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer sheet. Out of that came an interactive exam simulator for €411 for the Full BBE Course. Treat it less like a random course fee and more like insurance against burning €60,000+ later.":
+    "Wir schütten keine trockenen Wirtschaftslehrbücher über dein Kind. Wer diese Plattform gebaut hat, hat die WU-Prüfung geschrieben, Platz 24 erreicht und jeden Minuspunkt auf dem eigenen Antwortbogen gespürt. Daraus wurde ein interaktiver Prüfungssimulator für 411 € für den Full BBE Course. Sieh es weniger als beliebige Kursgebühr und mehr als Versicherung gegen 60.000 €+ Verbrennen später.",
   "The simulator trains your child's muscle memory in two tactics that regular tutors do not touch:":
     "Der Simulator trainiert die Muskelgedächtnis-Taktik deines Kindes in zwei Punkten, die normale Tutoren nicht anfassen:",
   "We drill exactly when to lock in an answer and move on, so the clock stops being an enemy and becomes a rhythm.":
@@ -108,8 +108,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
   "We train the student to leave uncertain fields blank. The WU marking system awards 0 for a blank and does not subtract, so that habit protects a passing score while other applicants lose points guessing out of panic.":
     "Wir trainieren, unsichere Felder leer zu lassen. Das WU-Bewertungssystem gibt 0 für leer und zieht nicht ab, deshalb schützt diese Gewohnheit eine Bestehensnote, während andere aus Panik raten und Punkte verlieren.",
   "The bottom line": "Das Fazit",
-  "You can rely on standard school knowledge and risk burning €60,000+ on private tuition or a lost foundation year, or you can invest €359 in a simulator that teaches your child how to handle the WU Vienna clock and penalty rules and keep a seat on an affordable program.":
-    "Du kannst auf normales Schulwissen setzen und riskieren, 60.000 €+ an Privatnachhilfe oder einem verlorenen Foundation Year zu verbrennen, oder du investierst 359 € in einen Simulator, der deinem Kind Uhr und Minuspunkte der WU Wien beibringt und einen Platz auf einem erschwinglichen Programm hält.",
+  "You can rely on standard school knowledge and risk burning €60,000+ on private tuition or a lost foundation year, or you can invest €411 in a simulator that teaches your child how to handle the WU Vienna clock and penalty rules and keep a seat on an affordable program.":
+    "Du kannst auf normales Schulwissen setzen und riskieren, 60.000 €+ an Privatnachhilfe oder einem verlorenen Foundation Year zu verbrennen, oder du investierst 411 € in einen Simulator, der deinem Kind Uhr und Minuspunkte der WU Wien beibringt und einen Platz auf einem erschwinglichen Programm hält.",
   "The exam is a stopwatch pretending to be a paper. Speed decides the score.":
     "Die Prüfung ist eine Stoppuhr, die sich als Papier tarnt. Tempo entscheidet den Score.",
   "Every missed spot at the university costs the family the price of a car.":
@@ -136,8 +136,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
   // Full BBE Course FAQs (rewritten)
   "You get the full task bank across all subjects, explanations under each statement, mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
     "Du bekommst die volle Aufgabenbank über alle Fächer, Erklärungen unter jeder Aussage, Mocks, den Highlighter, Speed-Drills und das digitale Antwortbogen-Übungstool.",
-  "It is a one-time payment of €449 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
-    "Es ist eine Einmalzahlung von 449 € ohne Monatsgebühren und ohne Upsells. Du zahlst einmal und behältst Zugang durch den Prüfungszyklus 2026/2027.",
+  "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
+    "Es ist eine Einmalzahlung von 411 € ohne Monatsgebühren und ohne Upsells. Du zahlst einmal und behältst Zugang durch den Prüfungszyklus 2026/2027.",
   "How do explanations work?": "Wie funktionieren die Erklärungen?",
   "When you open a breakdown for a task, you get a direct explanation and, where it helps, a highlight of the relevant sentence in the source text.":
     "Wenn du die Aufschlüsselung einer Aufgabe öffnest, bekommst du eine direkte Erklärung und wo es hilft ein Highlight des relevanten Satzes im Quelltext.",
@@ -282,8 +282,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
   "Meanwhile, studying at WU Vienna is effectively free aside from token student fees. Getting into the Top-240 is financially close to saving more than €60,000 for the family.":
     "Тим часом навчання у WU Vienna фактично безкоштовне, крім символічних студентських внесків. Потрапити в Top-240 фінансово близько до економії понад 60 000 € для родини.",
   "How this prep is built": "Як зібрана ця підготовка",
-  "We do not dump dry economics textbooks on your child. The person who built this platform sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer sheet. Out of that came an interactive exam simulator for €359 for the Full BBE Course. Treat it less like a random course fee and more like insurance against burning €60,000+ later.":
-    "Ми не висипаємо на дитину сухі економічні підручники. Той, хто зібрав цю платформу, складав іспит WU Vienna, зайняв 24 місце й відчув кожен штрафний бал на власному бланку. З цього вийшов інтерактивний симулятор іспиту за 359 € для Full BBE Course. Стався до цього менше як до випадкової плати за курс і більше як до страховки від спалення 60 000 €+ пізніше.",
+  "We do not dump dry economics textbooks on your child. The person who built this platform sat the WU Vienna exam, finished 24th, and felt every penalty mark on their own answer sheet. Out of that came an interactive exam simulator for €411 for the Full BBE Course. Treat it less like a random course fee and more like insurance against burning €60,000+ later.":
+    "Ми не висипаємо на дитину сухі економічні підручники. Той, хто зібрав цю платформу, складав іспит WU Vienna, зайняв 24 місце й відчув кожен штрафний бал на власному бланку. З цього вийшов інтерактивний симулятор іспиту за 411 € для Full BBE Course. Стався до цього менше як до випадкової плати за курс і більше як до страховки від спалення 60 000 €+ пізніше.",
   "The simulator trains your child's muscle memory in two tactics that regular tutors do not touch:":
     "Симулятор тренує м’язову пам’ять дитини у двох тактиках, яких звичайні репетитори не чіпають:",
   "We drill exactly when to lock in an answer and move on, so the clock stops being an enemy and becomes a rhythm.":
@@ -292,8 +292,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
   "We train the student to leave uncertain fields blank. The WU marking system awards 0 for a blank and does not subtract, so that habit protects a passing score while other applicants lose points guessing out of panic.":
     "Ми вчимо залишати непевні поля порожніми. Система оцінювання WU дає 0 за порожнє і не віднімає, тож ця звичка захищає прохідний бал, поки інші втрачають бали від панічних вгадувань.",
   "The bottom line": "Підсумок",
-  "You can rely on standard school knowledge and risk burning €60,000+ on private tuition or a lost foundation year, or you can invest €359 in a simulator that teaches your child how to handle the WU Vienna clock and penalty rules and keep a seat on an affordable program.":
-    "Можна покластися на звичайні шкільні знання й ризикнути спалити 60 000 €+ на репетиторів чи втрачений foundation year, або вкласти 359 € в симулятор, який навчить дитину годинника й штрафних правил WU Vienna і збереже місце на доступній програмі.",
+  "You can rely on standard school knowledge and risk burning €60,000+ on private tuition or a lost foundation year, or you can invest €411 in a simulator that teaches your child how to handle the WU Vienna clock and penalty rules and keep a seat on an affordable program.":
+    "Можна покластися на звичайні шкільні знання й ризикнути спалити 60 000 €+ на репетиторів чи втрачений foundation year, або вкласти 411 € в симулятор, який навчить дитину годинника й штрафних правил WU Vienna і збереже місце на доступній програмі.",
   "The exam is a stopwatch pretending to be a paper. Speed decides the score.":
     "Іспит, це секундомір, який вдає з себе папір. Швидкість вирішує бал.",
   "Every missed spot at the university costs the family the price of a car.":
@@ -320,8 +320,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
   // Full BBE Course FAQs (rewritten)
   "You get the full task bank across all subjects, explanations under each statement, mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
     "Отримуєш повний банк завдань з усіх предметів, пояснення під кожним твердженням, моки, highlighter, speed-drills і цифровий тренажер бланка відповідей.",
-  "It is a one-time payment of €449 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
-    "Це одноразовий платіж 449 € без щомісячної плати й без upsell. Платиш раз і тримаєш доступ через цикл іспиту 2026/2027.",
+  "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
+    "Це одноразовий платіж 411 € без щомісячної плати й без upsell. Платиш раз і тримаєш доступ через цикл іспиту 2026/2027.",
   "How do explanations work?": "Як працюють пояснення?",
   "When you open a breakdown for a task, you get a direct explanation and, where it helps, a highlight of the relevant sentence in the source text.":
     "Коли відкриваєш розбір завдання, отримуєш пряме пояснення і, де це допомагає, підсвітку релевантного речення в джерелі.",
