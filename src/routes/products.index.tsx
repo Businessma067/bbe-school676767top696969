@@ -11,6 +11,7 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 const WISO_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const DEMO_COURSE_IMAGE = "/demo-practice-product-v2.png";
+const HYBRID_COURSE_IMAGE = "/hybrid-bbe-wiso-course-product.jpg";
 
 const PROVIDER = {
   "@type": "Organization",
@@ -63,13 +64,13 @@ export const Route = createFileRoute("/products/")({
       {
         name: "description",
         content:
-          "Explore BBE School products for both WU tracks: Demo-Practice, Full BBE Course, and Full WiSo Course.",
+          "Explore BBE School products for both WU tracks: Demo-Practice, Full BBE Course, Full WiSo Course, and the Hybrid BBE + WiSo Course (coming soon).",
       },
       { property: "og:title", content: "Products for BBE and WiSo | BBE School" },
       {
         property: "og:description",
         content:
-          "BBE and WiSo prep products on one page: Demo-Practice, Full BBE Course, and Full WiSo Course.",
+          "BBE and WiSo prep products on one page: Demo-Practice, Full BBE, Full WiSo, and Hybrid BBE + WiSo (coming soon).",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -85,6 +86,7 @@ export const Route = createFileRoute("/products/")({
 
 const ORANGE = "#C2643A";
 const INDIGO = "#3730A3";
+const HYBRID = "#0F766E";
 
 type Product = {
   title: string;
@@ -94,7 +96,7 @@ type Product = {
   to?: string;
   disabled?: boolean;
   badge?: string;
-  accent?: "bbe" | "wiso";
+  accent?: "bbe" | "wiso" | "hybrid";
   ownedCta?: string;
   ownedTo?: string;
 };
@@ -133,6 +135,16 @@ const products: Product[] = [
     badge: "WiSo track",
     accent: "wiso",
   },
+  {
+    title: "Hybrid BBE + WiSo Course",
+    image: HYBRID_COURSE_IMAGE,
+    description:
+      "One study path for both entrance exams: shared math and economics once, English + German overlays, and dual BBE/WiSo practice modes — without doubling the workload.",
+    cta: "Coming soon",
+    disabled: true,
+    badge: "Coming soon",
+    accent: "hybrid",
+  },
 ];
 
 export function ProductsPage() {
@@ -158,11 +170,11 @@ export function ProductsPage() {
               Our products
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              BBE and WiSo full courses: pick the exam track you are preparing for.
+              BBE and WiSo full courses — or the hybrid path when you want both exams in one plan.
             </p>
           </div>
 
-          <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">
             {products.map((p) => {
               const isFullBbe = p.title === "Full BBE Course";
               const isFullWiso = p.title === "Full WiSo Course";
@@ -170,7 +182,8 @@ export function ProductsPage() {
                 (isFullBbe && ownsFullCourse) || (isFullWiso && ownsWisoFullCourse);
               const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
-              const accentColor = p.accent === "wiso" ? INDIGO : ORANGE;
+              const accentColor =
+                p.accent === "wiso" ? INDIGO : p.accent === "hybrid" ? HYBRID : ORANGE;
 
               return (
                 <div
