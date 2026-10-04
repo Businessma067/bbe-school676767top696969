@@ -135,6 +135,7 @@ export function HybridLandingPage() {
         </Suspense>
 
         <WhyChooseUsSection
+          track="hybrid"
           subtitle="Everything from Full BBE and Full WiSo in one course: questions, timed mocks, builders, flashcards, matching, and tutor exam, plus a shared plan so the overlap is not homework twice."
         />
 
@@ -157,7 +158,7 @@ export function HybridLandingPage() {
           </div>
         </section>
 
-        <section className="bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <section className="why-choose-us--hybrid bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
@@ -195,7 +196,7 @@ export function HybridLandingPage() {
             <div className="mt-10 flex justify-center">
               <LocalizedLink
                 to={ownsHybridCourse ? "/hybrid/course" : "/products/hybrid-course"}
-                className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#F2F1ED] px-8 py-4 text-sm font-semibold text-[#161616] transition-colors hover:bg-white"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#ECFDF5] px-8 py-4 text-sm font-semibold text-[#042F2E] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
               >
                 {ownsHybridCourse ? "Open Hybrid course" : "View Hybrid Course"}
                 <ArrowRight className="h-4 w-4" />
@@ -222,6 +223,7 @@ export function HybridLandingPage() {
         <PinnedReviewsBoard
           title="What dual-track applicants told us"
           reports={hybridReports}
+          accent="hybrid"
         />
 
         <div id="faq">

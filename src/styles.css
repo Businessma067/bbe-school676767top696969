@@ -1505,6 +1505,22 @@ body.flashcard-swiping {
   }
 }
 
+/* Why Choose Us — Hybrid green tone (same layout as WiSo, teal track) */
+.why-choose-us--hybrid {
+  --why-us-bg: #071612;
+  --why-us-card: #10241e;
+  --why-us-fg: #ecfdf5;
+  --color-why-us-bg: #071612;
+  --color-why-us-card: #10241e;
+  --color-why-us-fg: #ecfdf5;
+  --caramel-deep: #2dd4bf;
+  --color-caramel-deep: #2dd4bf;
+  --hybrid-teal: #5eead4;
+  background-image:
+    radial-gradient(120% 80% at 12% -10%, rgba(45, 212, 191, 0.26), transparent 55%),
+    radial-gradient(90% 70% at 100% 0%, rgba(15, 118, 110, 0.28), transparent 50%);
+}
+
 /* Why Choose Us — WiSo blue tone (indigo track) */
 .why-choose-us--wiso {
   --why-us-bg: #0a1022;

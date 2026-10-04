@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { HybridBrandMark } from "@/components/ExamTrackSwitcher";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HYBRID_ACCENT, HYBRID_NAV } from "@/lib/hybrid-course";
@@ -29,17 +30,7 @@ export function HybridShell({
             ← Products
           </LocalizedLink>
         }
-        left={
-          <LocalizedLink to="/hybrid" className="flex items-center gap-2">
-            <span
-              className="grid h-8 w-8 place-items-center rounded-lg text-[10px] font-bold text-white shadow-sm"
-              style={{ backgroundColor: HYBRID_ACCENT }}
-            >
-              HY
-            </span>
-            <span className="hidden font-display text-sm font-bold sm:inline">Hybrid Course</span>
-          </LocalizedLink>
-        }
+        left={<HybridBrandMark compact wordmark="always" />}
       />
 
       <div className="border-b border-border/70 bg-card/40">

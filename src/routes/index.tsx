@@ -175,7 +175,7 @@ export function Index() {
                         aria-hidden
                       >
                         <span className="font-display text-[10px] font-bold tracking-tight text-primary-foreground" data-no-i18n>
-                          {exam.label}
+                          {isHybrid ? "Hyb" : exam.label}
                         </span>
                       </div>
                       <p

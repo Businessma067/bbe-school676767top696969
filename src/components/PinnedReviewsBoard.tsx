@@ -10,7 +10,7 @@ export type PinnedReview = {
   fire?: boolean;
 };
 
-type Accent = "default" | "wiso";
+type Accent = "default" | "wiso" | "hybrid";
 
 function PinnedReviewCard({
   report,
@@ -38,7 +38,9 @@ function PinnedReviewCard({
           "after:pointer-events-none after:absolute after:inset-y-4 after:left-0 after:w-[3px] after:rounded-r-full",
           accent === "wiso"
             ? "after:bg-indigo-600/60 dark:after:bg-indigo-400/50"
-            : "after:bg-caramel-deep/60",
+            : accent === "hybrid"
+              ? "after:bg-teal-600/70 dark:after:bg-teal-300/50"
+              : "after:bg-caramel-deep/60",
           "review-pin-paper origin-top",
         )}
       >
@@ -46,7 +48,11 @@ function PinnedReviewCard({
         <span
           className={cn(
             "mb-1 block select-none font-display text-[2rem] leading-none opacity-[0.14] sm:mb-1.5 sm:text-[2.35rem]",
-            accent === "wiso" ? "text-indigo-800 dark:text-indigo-200" : "text-foreground",
+            accent === "wiso"
+              ? "text-indigo-800 dark:text-indigo-200"
+              : accent === "hybrid"
+                ? "text-teal-800 dark:text-teal-200"
+                : "text-foreground",
           )}
           aria-hidden
           data-no-i18n
@@ -70,7 +76,9 @@ function PinnedReviewCard({
             "mt-3 min-h-10 self-start px-0.5 text-xs font-semibold underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
             accent === "wiso"
               ? "text-indigo-700 focus-visible:ring-indigo-600 dark:text-indigo-300"
-              : "text-primary focus-visible:ring-primary",
+              : accent === "hybrid"
+                ? "text-teal-700 focus-visible:ring-teal-600 dark:text-teal-300"
+                : "text-primary focus-visible:ring-primary",
           )}
           aria-label={expanded ? t("Show less") : t("Show more")}
         >
@@ -137,7 +145,11 @@ export function PinnedReviewsBoard({
           <p
             className={cn(
               "mb-2 text-[11px] font-semibold uppercase tracking-[0.22em] sm:mb-3",
-              accent === "wiso" ? "text-indigo-700 dark:text-indigo-300" : "text-caramel-deep",
+              accent === "wiso"
+                ? "text-indigo-700 dark:text-indigo-300"
+                : accent === "hybrid"
+                  ? "text-teal-700 dark:text-teal-300"
+                  : "text-caramel-deep",
             )}
           >
             Acceptance notes

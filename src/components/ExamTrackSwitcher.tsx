@@ -3,6 +3,7 @@ import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import {
   getExamTrackFromPath,
+  isHybridPath,
   pathForTrack,
   resolveNavTrack,
   storeExamTrack,
@@ -107,6 +108,52 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
   );
 }
 
+/**
+ * Hybrid mark in the same rounded-square family as BBE and WiSo.
+ * Short "Hyb" fits the tile; the wordmark reads Hybrid.
+ */
+export function HybridBrandMark({
+  compact = false,
+  wordmark = "wide",
+}: {
+  compact?: boolean;
+  /** "wide" matches the header (2xl+). "always" shows the name from sm up. */
+  wordmark?: "wide" | "always";
+}) {
+  return (
+    <LocalizedLink
+      to="/hybrid"
+      aria-label="Hybrid home"
+      className="group flex shrink-0 items-center gap-2 sm:gap-3"
+    >
+      <div
+        className={cn(
+          "relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 shadow-md ring-1 ring-teal-500/30 transition-transform group-hover:scale-105",
+          compact ? "h-9 w-9" : "h-10 w-10",
+        )}
+      >
+        <span
+          className={cn(
+            "font-display font-bold leading-none tracking-tight text-white",
+            compact ? "text-[10px]" : "text-[11px]",
+          )}
+        >
+          Hyb
+        </span>
+      </div>
+      <span
+        className={cn(
+          "font-display font-bold tracking-tight text-foreground",
+          wordmark === "always" ? "hidden sm:inline" : "hidden 2xl:inline",
+          compact ? "text-sm" : "text-sm sm:text-base",
+        )}
+      >
+        Hybrid
+      </span>
+    </LocalizedLink>
+  );
+}
+
 /** Logo / brand that always returns to the active track landing. */
 export function TrackBrandMark({
   compact = false,
@@ -117,6 +164,9 @@ export function TrackBrandMark({
   forceTrack?: ExamTrack;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  if (!forceTrack && isHybridPath(pathname)) {
+    return <HybridBrandMark compact={compact} />;
+  }
   const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
   const track =
     forceTrack ?? resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
