@@ -3,7 +3,9 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import hallAsset from "@/assets/exam-hall-real.png.asset.json";
 import { cn } from "@/lib/utils";
 
-const DROP_MS = 900;
+const DROP_MS = 420;
+/** Wheel distance that moves one page. A long gesture can cross every page at once. */
+const PX_PER_PAGE = 160;
 
 const PAGES = [
   { id: "core", label: "Shared core" },
@@ -11,79 +13,141 @@ const PAGES = [
   { id: "modes", label: "Every mode" },
 ] as const;
 
+/** Pixels of slack before the block counts as sitting flush in the viewport. */
+const ALIGN_PX = 2;
+
+function stickyChromeHeight(): number {
+  const header = document.querySelector("header");
+  if (!header) return 0;
+  const position = getComputedStyle(header).position;
+  if (position !== "sticky" && position !== "fixed") return 0;
+  return Math.round(header.getBoundingClientRect().height);
+}
+
+/** Distance from the flush position: 0 when the block fills the screen under the header. */
+function misalign(el: HTMLElement): number {
+  return el.getBoundingClientRect().top - stickyChromeHeight();
+}
+
+function isFlush(el: HTMLElement): boolean {
+  return Math.abs(misalign(el)) <= ALIGN_PX;
+}
+
+function snapFlush(el: HTMLElement) {
+  const delta = misalign(el);
+  if (Math.abs(delta) <= ALIGN_PX) return;
+  window.scrollTo({ top: window.scrollY + delta, behavior: "auto" });
+}
+
 /**
- * The whole green square is the scroller. Wheel or swipe moves that square
- * to the next page; the rest of the document stays put until the last page.
+ * The block fills the screen under the header. Wheel or swipe turns its pages
+ * only once that block is fully in view and sitting flush. Page changes follow
+ * the scroll distance immediately, so one long gesture can cross every page.
  */
 export function HybridThirdCourseReel() {
   const [front, setFront] = useState(0);
-  const [dropTo, setDropTo] = useState<number | null>(null);
+  const [leaving, setLeaving] = useState<number | null>(null);
   const [dir, setDir] = useState<"down" | "up">("down");
-  const [reduceMotion, setReduceMotion] = useState(false);
+  const [chrome, setChrome] = useState(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const frontRef = useRef(0);
-  const busyRef = useRef(false);
+  const travelRef = useRef(0);
+  const leavingRef = useRef<number | null>(null);
+  const reduceRef = useRef(false);
+  const maxTravel = PX_PER_PAGE * (PAGES.length - 1);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => setReduceMotion(mq.matches);
+    const sync = () => {
+      reduceRef.current = mq.matches;
+    };
     sync();
     mq.addEventListener("change", sync);
     return () => mq.removeEventListener("change", sync);
   }, []);
 
   useEffect(() => {
-    if (dropTo === null) return;
+    if (leaving === null) return;
     const id = window.setTimeout(() => {
-      frontRef.current = dropTo;
-      setFront(dropTo);
-      setDropTo(null);
-      busyRef.current = false;
-    }, reduceMotion ? 0 : DROP_MS + 40);
+      leavingRef.current = null;
+      setLeaving(null);
+    }, DROP_MS);
     return () => window.clearTimeout(id);
-  }, [dropTo, reduceMotion]);
+  }, [leaving]);
 
-  const begin = (to: number) => {
-    if (busyRef.current || to === frontRef.current || to < 0 || to >= PAGES.length) return false;
-    if (reduceMotion) {
-      frontRef.current = to;
-      setFront(to);
-      return true;
+  const show = (to: number, syncTravel: boolean) => {
+    if (to === frontRef.current || to < 0 || to >= PAGES.length) return;
+    const from = frontRef.current;
+    const far = Math.abs(to - from) > 1;
+    const rushing = leavingRef.current !== null;
+    frontRef.current = to;
+    if (syncTravel) travelRef.current = to * PX_PER_PAGE;
+    setFront(to);
+    if (reduceRef.current || far || rushing) {
+      leavingRef.current = null;
+      setLeaving(null);
+      return;
     }
-    busyRef.current = true;
-    setDir(to > frontRef.current ? "down" : "up");
-    setDropTo(to);
-    return true;
+    setDir(to > from ? "down" : "up");
+    leavingRef.current = from;
+    setLeaving(from);
   };
+  const showRef = useRef(show);
+  showRef.current = show;
+
+  useEffect(() => {
+    const measure = () => setChrome(stickyChromeHeight());
+    measure();
+    const header = document.querySelector("header");
+    const observer = header ? new ResizeObserver(measure) : null;
+    observer?.observe(header);
+    window.addEventListener("resize", measure);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, []);
 
   useEffect(() => {
     const el = stageRef.current;
     if (!el) return;
-    let acc = 0;
     const onWheel = (event: WheelEvent) => {
-      const index = frontRef.current;
-      const atStart = index === 0;
-      const atEnd = index === PAGES.length - 1;
-      if (event.deltaY > 0 && atEnd && !busyRef.current) return;
-      if (event.deltaY < 0 && atStart && !busyRef.current) return;
+      let deltaY = event.deltaY;
+      const delta = misalign(el);
+      const flush = Math.abs(delta) <= ALIGN_PX;
+      if (!flush) {
+        const vh = window.innerHeight;
+        const toward =
+          (event.deltaY > 0 && delta > ALIGN_PX && delta < vh) ||
+          (event.deltaY < 0 && delta < -ALIGN_PX && el.getBoundingClientRect().bottom > stickyChromeHeight());
+        if (!(toward && Math.abs(delta) < vh * 0.72)) return;
+        event.preventDefault();
+        snapFlush(el);
+        const spent = Math.sign(deltaY) * Math.min(Math.abs(deltaY), 70);
+        deltaY -= spent;
+        if (Math.abs(deltaY) < 24) return;
+      }
+
+      const atStart = travelRef.current <= 0;
+      const atEnd = travelRef.current >= maxTravel;
+      if (deltaY > 0 && atEnd) return;
+      if (deltaY < 0 && atStart) return;
       event.preventDefault();
-      if (busyRef.current) return;
-      acc += event.deltaY;
-      if (Math.abs(acc) < 36) return;
-      const next = acc > 0 ? index + 1 : index - 1;
-      acc = 0;
-      begin(next);
+      travelRef.current = Math.min(maxTravel, Math.max(0, travelRef.current + deltaY));
+      const page = Math.round(travelRef.current / PX_PER_PAGE);
+      showRef.current(page, false);
     };
     el.addEventListener("wheel", onWheel, { passive: false });
     return () => el.removeEventListener("wheel", onWheel);
-  }, [reduceMotion]);
+  }, [maxTravel]);
 
   const touch = useRef<{ y: number } | null>(null);
 
   return (
     <div
       ref={stageRef}
-      className="relative h-[100svh] min-h-[36rem] w-full overflow-hidden bg-[#071612]"
+      className="relative w-full overflow-hidden bg-[#071612]"
+      style={{ height: `calc(100svh - ${chrome}px)` }}
       role="region"
       aria-roledescription="carousel"
       aria-label="Why a third course"
@@ -95,13 +159,24 @@ export function HybridThirdCourseReel() {
         touch.current = null;
         if (!start) return;
         const dy = (event.changedTouches[0]?.clientY ?? start.y) - start.y;
+        const stage = stageRef.current;
+        if (!stage) return;
+        if (!isFlush(stage)) {
+          if (Math.abs(misalign(stage)) < window.innerHeight * 0.72) snapFlush(stage);
+          return;
+        }
         if (Math.abs(dy) < 48) return;
-        begin(frontRef.current + (dy < 0 ? 1 : -1));
+        const index = frontRef.current;
+        const pages = Math.max(1, Math.min(PAGES.length - 1, Math.round(Math.abs(dy) / 220)));
+        const next = index + (dy < 0 ? pages : -pages);
+        if (next === index) return;
+        if (dy < 0 && index === PAGES.length - 1) return;
+        if (dy > 0 && index === 0) return;
+        showRef.current(Math.min(PAGES.length - 1, Math.max(0, next)), true);
       }}
     >
         {PAGES.map((page, index) => {
-          const dropping = dropTo !== null && index === front;
-          const underneath = dropTo === index;
+          const dropping = leaving === index;
           const shift = dir === "down" ? "105%" : "-105%";
           return (
             <article
@@ -111,7 +186,7 @@ export function HybridThirdCourseReel() {
               style={{
                 transform: dropping ? `translate3d(0, ${shift}, 0)` : "translate3d(0, 0, 0)",
                 transition: dropping ? `transform ${DROP_MS}ms cubic-bezier(0.4, 0, 0.2, 1)` : "none",
-                zIndex: dropping ? 3 : underneath ? 2 : index === front ? 2 : 1,
+                zIndex: dropping ? 3 : index === front ? 2 : 1,
               }}
             >
               {index === 0 ? <SharedCorePage live={index === front} /> : null}
@@ -131,7 +206,14 @@ export function HybridThirdCourseReel() {
                 type="button"
                 aria-label={page.label}
                 aria-current={selected ? "true" : undefined}
-                onClick={() => begin(index)}
+                onClick={() => {
+                  const stage = stageRef.current;
+                  if (stage && !isFlush(stage)) {
+                    if (Math.abs(misalign(stage)) < window.innerHeight * 0.72) snapFlush(stage);
+                    return;
+                  }
+                  showRef.current(index, true);
+                }}
                 className="flex h-10 items-center"
               >
                 <span
