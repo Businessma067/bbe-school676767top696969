@@ -206,7 +206,7 @@ function HybridBridgePage() {
           </button>
         )}
         {doneIds.has(active.id) ? (
-          <span className="inline-flex items-center text-sm font-semibold text-teal-700">
+          <span className="inline-flex items-center text-sm font-semibold text-indigo-700 dark:text-indigo-300">
             Concept bridged ✓
           </span>
         ) : null}

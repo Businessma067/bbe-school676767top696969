@@ -3,7 +3,8 @@
 export const HYBRID_FULL_COURSE_SLUG = "hybrid-full-course" as const;
 export const HYBRID_HUB_HREF = "/hybrid/course" as const;
 export const HYBRID_PRODUCT_HREF = "/products/hybrid-course" as const;
-export const HYBRID_ACCENT = "#0F766E" as const;
+/** Same indigo as the WiSo track. */
+export const HYBRID_ACCENT = "#3730A3" as const;
 
 /** SKUs unlocked together when Hybrid is purchased. */
 export const HYBRID_IMPLIED_SLUGS = [

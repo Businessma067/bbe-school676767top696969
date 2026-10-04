@@ -69,19 +69,20 @@ export function WhyChooseUsSection({
   track = "shared",
   subtitle,
 }: {
-  track?: "shared" | "wiso" | "bbe";
+  track?: "shared" | "wiso" | "bbe" | "hybrid";
   subtitle?: string;
 }) {
   const resolvedSubtitle =
     subtitle ?? (track === "wiso" ? WISO_SUBTITLE : DEFAULT_SUBTITLE);
   const isWiso = track === "wiso";
+  const blue = track === "wiso" || track === "hybrid";
 
   return (
     <section
       id="why-choose-us"
       className={cn(
         "relative overflow-hidden px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20",
-        isWiso ? "why-choose-us--wiso bg-why-us-bg" : "bg-why-us-bg",
+        blue ? "why-choose-us--wiso bg-why-us-bg" : "bg-why-us-bg",
       )}
     >
       <div className="relative mx-auto max-w-5xl">
@@ -105,7 +106,7 @@ export function WhyChooseUsSection({
                 <div
                   className={cn(
                     "grid h-11 w-11 place-items-center rounded-xl",
-                    isWiso
+                    blue
                       ? "bg-indigo-500/20 text-indigo-300"
                       : "bg-caramel-deep/20 text-caramel-deep",
                   )}

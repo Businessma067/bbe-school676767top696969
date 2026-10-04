@@ -35,9 +35,8 @@ export const Route = createFileRoute("/hybrid/course")({
   component: HybridCoursePage,
 });
 
-const TEAL = HYBRID_ACCENT;
 const ORANGE = "#C2643A";
-const INDIGO = "#3730A3";
+const INDIGO = HYBRID_ACCENT;
 
 const subjects = [
   {
@@ -66,7 +65,7 @@ const subjects = [
     id: "math",
     title: "Mathematics",
     image: mathAsset.url,
-    accent: TEAL,
+    accent: INDIGO,
     tag: "Shared · EN / DE",
     description:
       "One math bank for both exams. Flip English or German stems without studying the chapter twice.",
@@ -275,7 +274,7 @@ function HybridCoursePage() {
           <div className="mb-12 text-center">
             <p
               className="mb-3 text-xs font-semibold uppercase tracking-[0.2em]"
-              style={{ color: TEAL }}
+              style={{ color: INDIGO }}
             >
               Hybrid · BBE + WiSo
             </p>
@@ -385,7 +384,7 @@ function HybridCoursePage() {
             <div className="mb-6">
               <p
                 className="text-xs font-semibold uppercase tracking-[0.2em]"
-                style={{ color: TEAL }}
+                style={{ color: INDIGO }}
               >
                 Hybrid-only
               </p>
@@ -401,17 +400,17 @@ function HybridCoursePage() {
                     key={tool.id}
                     to={tool.to}
                     className="group flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-                    style={{ borderTop: `4px solid ${TEAL}` }}
+                    style={{ borderTop: `4px solid ${INDIGO}` }}
                   >
                     <span
                       className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg text-white"
-                      style={{ backgroundColor: TEAL }}
+                      style={{ backgroundColor: INDIGO }}
                     >
                       <Icon className="h-4 w-4" />
                     </span>
                     <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
                     <p className="mt-2 flex-1 text-sm text-muted-foreground">{tool.blurb}</p>
-                    <span className="mt-4 text-xs font-semibold" style={{ color: TEAL }}>
+                    <span className="mt-4 text-xs font-semibold" style={{ color: INDIGO }}>
                       {tool.cta}
                     </span>
                   </Link>
