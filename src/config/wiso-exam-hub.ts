@@ -48,7 +48,8 @@ export const WISO_PRACTICE_ROUTES = {
   flashcards: "/wiso/flashcards",
   matching: "/wiso/matching",
   tutorExam: "/wiso/tutor-exam",
-  products: "/wiso/products",
+  /** Shared catalog with BBE; LocalizedLink keeps /de or /uk from WiSo pages. */
+  products: "/products",
   fullCourse: "/wiso/products/full-course",
   subjects: "/wiso/products/full-course-subjects",
   math: "/wiso/products/full-course-math",
