@@ -10,6 +10,7 @@ import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { HybridThirdCourseReel } from "@/components/HybridThirdCourseReel";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
@@ -158,50 +159,24 @@ export function HybridLandingPage() {
           </div>
         </section>
 
-        <section className="why-choose-us--hybrid bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-6xl">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
-                Why a third course
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
-                Buying both full courses still leaves you with two plans. Hybrid is the course that
-                keeps one queue and both exam formats.
-              </p>
-            </div>
-            <div className="mt-10 grid gap-4 md:grid-cols-3">
-              {[
-                {
-                  title: "Shared core",
-                  body: "Mathematics and economics concepts count once. You flip language, you do not restart the chapter.",
-                },
-                {
-                  title: "Both language lanes",
-                  body: "English for BBE and German reading for WiSo stay in the plan every week, lighter than a second full course.",
-                },
-                {
-                  title: "Every mode",
-                  body: "Mocks, builders, flashcards, matching, and tutor exam from both tracks, plus Bridge, Mirror, Exam Flip, and Dual Mock Day.",
-                },
-              ].map((card) => (
-                <article
-                  key={card.title}
-                  className="rounded-2xl border border-white/10 bg-black/25 px-5 py-6"
-                >
-                  <h3 className="font-display text-xl font-semibold text-why-us-fg">{card.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-why-us-fg/75">{card.body}</p>
-                </article>
-              ))}
-            </div>
-            <div className="mt-10 flex justify-center">
-              <LocalizedLink
-                to={ownsHybridCourse ? "/hybrid/course" : "/products/hybrid-course"}
-                className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#ECFDF5] px-8 py-4 text-sm font-semibold text-[#042F2E] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
-              >
-                {ownsHybridCourse ? "Open Hybrid course" : "View Hybrid Course"}
-                <ArrowRight className="h-4 w-4" />
-              </LocalizedLink>
-            </div>
+        <section id="why-a-third-course" className="why-choose-us--hybrid bg-why-us-bg py-14 sm:py-16 lg:py-20">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+              Why a third course
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+              Buying both full courses still leaves you with two plans. Hybrid keeps one queue and both exam formats.
+            </p>
+          </div>
+          <HybridThirdCourseReel />
+          <div className="mt-8 flex justify-center px-4">
+            <LocalizedLink
+              to={ownsHybridCourse ? "/hybrid/course" : "/products/hybrid-course"}
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#ECFDF5] px-8 py-4 text-sm font-semibold text-[#042F2E] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
+            >
+              {ownsHybridCourse ? "Open Hybrid course" : "View Hybrid Course"}
+              <ArrowRight className="h-4 w-4" />
+            </LocalizedLink>
           </div>
         </section>
 
