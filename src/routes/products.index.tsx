@@ -60,17 +60,17 @@ export const Route = createFileRoute("/products/")({
   head: () => ({
     links: [...hreflangLinks("/products"), { rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
-      { title: "Products for BBE and WiSo | BBE School" },
+      { title: "Products for BBE, WiSo, and Hybrid | BBE School" },
       {
         name: "description",
         content:
-          "Explore BBE School products for both WU tracks: Demo-Practice, Full BBE Course, Full WiSo Course, and the Hybrid BBE + WiSo Course (coming soon).",
+          "Explore BBE School products: Demo-Practice, Full BBE Course, Full WiSo Course, and the Hybrid BBE + WiSo Course.",
       },
-      { property: "og:title", content: "Products for BBE and WiSo | BBE School" },
+      { property: "og:title", content: "Products for BBE, WiSo, and Hybrid | BBE School" },
       {
         property: "og:description",
         content:
-          "BBE and WiSo prep products on one page: Demo-Practice, Full BBE, Full WiSo, and Hybrid BBE + WiSo (coming soon).",
+          "BBE, WiSo, and Hybrid prep on one page: Demo-Practice, Full BBE, Full WiSo, and Hybrid BBE + WiSo.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

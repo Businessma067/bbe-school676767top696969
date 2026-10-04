@@ -279,6 +279,9 @@ export function WisoLandingPage() {
                 <LocalizedLink to="/bbe-vs-wiso" className="text-muted-foreground hover:underline">
                   BBE vs WiSo
                 </LocalizedLink>
+                <LocalizedLink to="/hybrid" className="text-muted-foreground hover:underline">
+                  Hybrid course
+                </LocalizedLink>
                 <LocalizedLink to="/terms" className="text-muted-foreground hover:underline">
                   Terms
                 </LocalizedLink>

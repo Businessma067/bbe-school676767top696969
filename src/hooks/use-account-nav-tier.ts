@@ -17,6 +17,7 @@ function accessFromState(state: AccessState): AccountNavAccess {
     hasLite: accessOwnsProduct(state, LITE_BBE_COURSE_SLUG),
     hasFull: accessOwnsProduct(state, "full-course"),
     hasWisoFull: accessOwnsWisoFull(state),
+    hasHybrid: accessOwnsProduct(state, "hybrid-full-course"),
   };
 }
 
@@ -24,6 +25,7 @@ const GUEST_ACCESS: AccountNavAccess = {
   hasLite: false,
   hasFull: false,
   hasWisoFull: false,
+  hasHybrid: false,
 };
 
 /**

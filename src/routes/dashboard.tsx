@@ -433,13 +433,14 @@ function CoursesTab({
           <div className="grid gap-3 sm:grid-cols-2">
             {enrollments.map((e) => {
               const isWiso = e.product_slug === WISO_FULL_COURSE_SLUG;
+              const isHybrid = e.product_slug === "hybrid-full-course";
               const continueHref =
                 COURSE_CATALOG[e.product_slug as CourseSlug]?.href ??
                 (isWiso ? "/wiso/products/full-course-subjects" : "/products");
               return (
                 <div key={e.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
                   <p className="text-xs text-muted-foreground">
-                    {e.tier} access{isWiso ? " · WiSo" : ""}
+                    {e.tier} access{isWiso ? " · WiSo" : isHybrid ? " · Hybrid" : ""}
                   </p>
                   <h3 className="mt-1 font-display text-lg font-bold">{e.product_name}</h3>
                   <p className="mt-1 text-xs text-muted-foreground">
@@ -474,7 +475,7 @@ function CoursesTab({
                         {WISO_DASHBOARD_STUDY.flashcardsCta}
                       </Link>
                     ) : null}
-                    {!isWiso && hasBbePaid && e.product_slug !== "demo-practice" ? (
+                    {!isWiso && !isHybrid && hasBbePaid && e.product_slug !== "demo-practice" ? (
                       <Link
                         to="/flashcards"
                         onClick={() => storeExamTrack("bbe")}
@@ -503,7 +504,9 @@ function CoursesTab({
                     ? "/products/demo-practice"
                     : slug === "wiso-full-course"
                       ? "/wiso/products/full-course"
-                      : "/products/full-course"
+                      : slug === "hybrid-full-course"
+                        ? "/products/hybrid-course"
+                        : "/products/full-course"
                 }
                 className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
               >

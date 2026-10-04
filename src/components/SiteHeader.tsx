@@ -7,12 +7,13 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileNav } from "@/components/MobileNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import {
+  hybridNavItems,
   navItemsForAccess,
   shouldShowSiteNav,
   type NavItem,
 } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
-import { resolveExamTrack } from "@/lib/exam-track";
+import { isHybridPath, resolveExamTrack } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
@@ -49,10 +50,12 @@ export function SiteHeader({
   void _maxWidthClassName;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const pathForNav = stripLocalePrefix(pathname);
+  const onHybrid = isHybridPath(pathname);
   const track = resolveExamTrack(pathname);
-  const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
+  const { hasLite, hasFull, hasWisoFull, hasHybrid } = useAccountNavTier();
   const navItems =
-    navItemsProp ?? navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
+    navItemsProp ??
+    (onHybrid ? hybridNavItems(hasHybrid) : navItemsForAccess({ hasLite, hasFull, hasWisoFull, hasHybrid }, track));
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
   /**

@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "Which exam should I prepare for if I am undecided?",
     answer:
-      "Decide by language of study first: strong English and an international cohort point toward BBE; strong German and broader curricular flexibility often point toward WISO. Many applicants sit a diagnostic-style practice set to see how they handle BBE-format mathematics, economics, and English under time pressure.",
+      "Decide by language of study first: strong English and an international cohort point toward BBE; strong German and broader curricular flexibility often point toward WISO. If you want both doors open, the Hybrid course prepares the shared math and economics once and keeps the English and German papers in the same week.",
   },
 ];
 
@@ -169,7 +169,7 @@ const decideCards: { title: string; body: string; tone: "bbe" | "wiso" | "both" 
   },
   {
     title: "Consider both if…",
-    body: "Your language skills support either path and you want a second chance at a WU bachelor seat. Register for each programme separately and prepare for the language section that each exam actually tests.",
+    body: "Your language skills support either path and you want a second chance at a WU bachelor seat. The Hybrid course keeps both papers in one plan: shared math and economics, plus the English and German sections each exam still requires.",
     tone: "both",
   },
 ];
@@ -183,6 +183,7 @@ export function BbeVsWisoPage() {
         <>
           <BbePrimaryButton to="/bbe">Enter BBE preparation</BbePrimaryButton>
           <BbeGhostButton to="/wiso">Enter WiSo preparation</BbeGhostButton>
+          <BbeGhostButton to="/hybrid">Prepare both · Hybrid</BbeGhostButton>
         </>
       }
     >
@@ -421,6 +422,9 @@ export function BbeVsWisoPage() {
               </div>
             ))}
           </div>
+          <BbeTextLink to="/hybrid" className="mt-4">
+            Prepare for both exams with the Hybrid course
+          </BbeTextLink>
         </BbeSection>
 
         <BbeSection id="preparation-overlap" title="Preparation differences that actually matter">

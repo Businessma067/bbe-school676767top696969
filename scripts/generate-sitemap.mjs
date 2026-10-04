@@ -27,6 +27,7 @@ const PUBLIC_LOCALIZABLE = [
   "/bbe-admission",
   "/bbe-vs-wiso",
   "/wu-vienna",
+  "/hybrid",
   "/wiso",
   "/wiso/entrance-exam",
   "/wiso/exam-scoring",
@@ -46,6 +47,7 @@ const PUBLIC_LOCALIZABLE = [
   "/products",
   "/products/demo-practice",
   "/products/full-course",
+  "/products/hybrid-course",
   "/demo-practice",
   "/demo-mock",
 ];

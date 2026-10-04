@@ -14,6 +14,8 @@ export type AccountNavAccess = {
   hasFull: boolean;
   /** Full WiSo Course enrollment (separate SKU from BBE Full). */
   hasWisoFull: boolean;
+  /** Hybrid course enrollment (also grants BBE and WiSo). */
+  hasHybrid: boolean;
 };
 
 export type AccountNavTier = "guest" | "lite" | "full";
@@ -202,14 +204,76 @@ const newsItem: NavItem = {
 export function homepageNavItems(): NavItem[] {
   return [
     {
-      label: "WiSo oder BBE",
+      label: "BBE vs WiSo",
       href: "/bbe-vs-wiso",
       isRoute: true,
       activePrefixes: ["/bbe-vs-wiso"],
     },
+    {
+      label: "Hybrid",
+      href: "/hybrid",
+      isRoute: true,
+      activePrefixes: ["/hybrid", "/products/hybrid-course"],
+    },
     productsItem("bbe"),
     newsItem,
   ];
+}
+
+/** Header links while the visitor is on the Hybrid course. */
+export function hybridNavItems(ownsHybrid = false): NavItem[] {
+  const items: NavItem[] = [];
+  if (ownsHybrid) {
+    items.push({
+      label: "Course",
+      href: "/hybrid/course",
+      isRoute: true,
+      activePrefixes: [
+        "/hybrid/course",
+        "/hybrid/math",
+        "/hybrid/bridge",
+        "/hybrid/mirror",
+        "/hybrid/exam-flip",
+        "/hybrid/dual-mock",
+        "/hybrid/decision-lab",
+      ],
+    });
+  }
+  items.push(
+    {
+      label: "Exam info",
+      href: "/bbe-vs-wiso",
+      isRoute: true,
+      activePrefixes: ["/bbe-vs-wiso"],
+    },
+    {
+      label: "How it works",
+      href: "/hybrid#how-it-works",
+      isRoute: true,
+      activeExact: ["/hybrid#how-it-works"],
+    },
+    {
+      label: "Features",
+      href: "/hybrid#why-choose-us",
+      isRoute: true,
+      activeExact: ["/hybrid#why-choose-us"],
+    },
+    productsItem("bbe"),
+    {
+      label: "Reviews",
+      href: "/hybrid#reviews",
+      isRoute: true,
+      activeExact: ["/hybrid#reviews"],
+    },
+    {
+      label: "FAQ",
+      href: "/hybrid#faq",
+      isRoute: true,
+      activeExact: ["/hybrid#faq"],
+    },
+    newsItem,
+  );
+  return items;
 }
 
 export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
@@ -279,6 +343,7 @@ export function navItemsForTier(tier: AccountNavTier): NavItem[] {
     hasLite: tier === "lite",
     hasFull: tier === "full",
     hasWisoFull: false,
+    hasHybrid: false,
   });
 }
 

@@ -11,6 +11,7 @@ import { Route as BbeMathematicsRoute } from "@/routes/bbe-mathematics";
 import { Route as BbeVsWisoRoute } from "@/routes/bbe-vs-wiso";
 import { Route as BbeLandingRoute } from "@/routes/bbe";
 import { Route as WuViennaRoute } from "@/routes/wu-vienna";
+import { Route as HybridLandingRoute } from "@/routes/hybrid.index";
 import { Route as WisoLandingRoute } from "@/routes/wiso.index";
 import { Route as WisoEntranceExamRoute } from "@/routes/wiso.entrance-exam";
 import { Route as WisoExamScoringRoute } from "@/routes/wiso.exam-scoring";
@@ -31,6 +32,7 @@ import { Route as ParentsRoute } from "@/routes/parents";
 import { Route as NewsRoute } from "@/routes/news";
 import { Route as DemoPracticeProductRoute } from "@/routes/products.demo-practice";
 import { Route as FullCourseRoute } from "@/routes/products.full-course";
+import { Route as HybridCourseProductRoute } from "@/routes/products.hybrid-course";
 import { Route as ProductsRoute } from "@/routes/products.index";
 import { Route as TermsRoute } from "@/routes/terms";
 import { Route as PrivacyRoute } from "@/routes/privacy";
@@ -67,6 +69,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/bbe-admission": () => headFrom(BbeAdmissionRoute),
   "/bbe-vs-wiso": () => headFrom(BbeVsWisoRoute),
   "/wu-vienna": () => headFrom(WuViennaRoute),
+  "/hybrid": () => headFrom(HybridLandingRoute),
   "/wiso": () => headFrom(WisoLandingRoute),
   "/wiso/entrance-exam": () => headFrom(WisoEntranceExamRoute),
   "/wiso/exam-scoring": () => headFrom(WisoExamScoringRoute),
@@ -89,6 +92,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/products": () => headFrom(ProductsRoute),
   "/products/demo-practice": () => headFrom(DemoPracticeProductRoute),
   "/products/full-course": () => headFrom(FullCourseRoute),
+  "/products/hybrid-course": () => headFrom(HybridCourseProductRoute),
   "/demo-practice": () => headFrom(DemoPracticeRoute),
   "/demo-mock": () => headFrom(DemoMockRoute),
   "/login": () => headFrom(LoginRoute),

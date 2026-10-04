@@ -82,6 +82,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/hybrid</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/hybrid"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/wiso</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
@@ -164,11 +172,10 @@
   <url>
     <loc>https://bbe-school.com/wiso/demo-practice</loc>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/wiso/demo-mock</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-practice"/>
   </url>
   <url>
     <loc>https://bbe-school.com/parents</loc>
@@ -241,6 +248,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/full-course"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/full-course"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/full-course"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/products/hybrid-course</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/hybrid-course"/>
   </url>
   <url>
     <loc>https://bbe-school.com/demo-practice</loc>
@@ -471,6 +486,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/hybrid</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/hybrid"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/wiso</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
@@ -551,6 +574,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/products/full-course"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/wiso/demo-practice</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-practice"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -621,6 +652,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/full-course"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/full-course"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/full-course"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/products/hybrid-course</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/hybrid-course"/>
   </url>
   <url>
     <loc>https://bbe-school.com/de/demo-mock</loc>
@@ -823,6 +862,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/uk/hybrid</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/hybrid"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/hybrid"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/uk/wiso</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
@@ -903,6 +950,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/products/full-course"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/uk/wiso/demo-practice</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/demo-practice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/demo-practice"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/uk/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -973,6 +1028,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/full-course"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/full-course"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/full-course"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/products/hybrid-course</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/products/hybrid-course"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/products/hybrid-course"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/demo-mock</loc>

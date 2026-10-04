@@ -12,6 +12,7 @@ import { BbeExamPreparationPage } from "@/routes/bbe-exam-preparation";
 import { BbeAdmissionPage } from "@/routes/bbe-admission";
 import { BbeVsWisoPage } from "@/routes/bbe-vs-wiso";
 import { WuViennaOverviewPage } from "@/routes/wu-vienna";
+import { HybridLandingPage } from "@/routes/hybrid.index";
 import { WisoLandingPage } from "@/routes/wiso.index";
 import { WisoEntranceExamPage } from "@/routes/wiso.entrance-exam";
 import { WisoExamScoringPage } from "@/routes/wiso.exam-scoring";
@@ -34,6 +35,7 @@ import { PrivacyPage } from "@/routes/privacy";
 import { ProductsPage } from "@/routes/products.index";
 import { DemoPracticeProduct } from "@/routes/products.demo-practice";
 import { FullCourseProduct } from "@/routes/products.full-course";
+import { HybridCourseProductPage } from "@/routes/products.hybrid-course";
 import { DemoPractice } from "@/routes/demo-practice.index";
 import { DemoMockPage } from "@/routes/demo-mock";
 import { LoginPage } from "@/routes/login";
@@ -54,6 +56,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/bbe-admission": BbeAdmissionPage,
   "/bbe-vs-wiso": BbeVsWisoPage,
   "/wu-vienna": WuViennaOverviewPage,
+  "/hybrid": HybridLandingPage,
   "/wiso": WisoLandingPage,
   "/wiso/entrance-exam": WisoEntranceExamPage,
   "/wiso/exam-scoring": WisoExamScoringPage,
@@ -76,6 +79,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/products": ProductsPage,
   "/products/demo-practice": DemoPracticeProduct,
   "/products/full-course": FullCourseProduct,
+  "/products/hybrid-course": HybridCourseProductPage,
   "/demo-practice": DemoPractice,
   "/demo-mock": DemoMockPage,
   "/login": LoginPage,
