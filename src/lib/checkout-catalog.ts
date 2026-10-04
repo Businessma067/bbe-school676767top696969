@@ -34,14 +34,14 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     slug: "full-course",
     name: "Full BBE Course",
     tier: "full",
-    priceEur: 449,
+    priceEur: 411,
     href: "/products/full-course-subjects",
   },
   "wiso-full-course": {
     slug: "wiso-full-course",
     name: "Full WiSo Course",
     tier: "full",
-    priceEur: 449,
+    priceEur: 411,
     href: "/wiso/products/full-course-subjects",
   },
   "hybrid-full-course": {
