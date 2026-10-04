@@ -71,6 +71,7 @@ import { Route as FlashcardsIndexRouteImport } from './routes/flashcards.index'
 import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
 import { Route as HybridIndexRouteImport } from './routes/hybrid.index'
 import { Route as HybridBridgeRouteImport } from './routes/hybrid.bridge'
+import { Route as HybridCourseRouteImport } from './routes/hybrid.course'
 import { Route as HybridDecisionLabRouteImport } from './routes/hybrid.decision-lab'
 import { Route as HybridDualMockRouteImport } from './routes/hybrid.dual-mock'
 import { Route as HybridExamFlipRouteImport } from './routes/hybrid.exam-flip'
@@ -458,6 +459,11 @@ const HybridIndexRoute = HybridIndexRouteImport.update({
 const HybridBridgeRoute = HybridBridgeRouteImport.update({
   id: '/bridge',
   path: '/bridge',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridCourseRoute = HybridCourseRouteImport.update({
+  id: '/course',
+  path: '/course',
   getParentRoute: () => HybridRoute,
 } as any)
 const HybridDecisionLabRoute = HybridDecisionLabRouteImport.update({
@@ -935,6 +941,7 @@ export interface FileRoutesByFullPath {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/hybrid/bridge': typeof HybridBridgeRoute
+  '/hybrid/course': typeof HybridCourseRoute
   '/hybrid/decision-lab': typeof HybridDecisionLabRoute
   '/hybrid/dual-mock': typeof HybridDualMockRoute
   '/hybrid/exam-flip': typeof HybridExamFlipRoute
@@ -1063,6 +1070,7 @@ export interface FileRoutesByTo {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/hybrid/bridge': typeof HybridBridgeRoute
+  '/hybrid/course': typeof HybridCourseRoute
   '/hybrid/decision-lab': typeof HybridDecisionLabRoute
   '/hybrid/dual-mock': typeof HybridDualMockRoute
   '/hybrid/exam-flip': typeof HybridExamFlipRoute
@@ -1198,6 +1206,7 @@ export interface FileRoutesById {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/hybrid/bridge': typeof HybridBridgeRoute
+  '/hybrid/course': typeof HybridCourseRoute
   '/hybrid/decision-lab': typeof HybridDecisionLabRoute
   '/hybrid/dual-mock': typeof HybridDualMockRoute
   '/hybrid/exam-flip': typeof HybridExamFlipRoute
@@ -1342,6 +1351,7 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/hybrid/bridge'
+    | '/hybrid/course'
     | '/hybrid/decision-lab'
     | '/hybrid/dual-mock'
     | '/hybrid/exam-flip'
@@ -1470,6 +1480,7 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/hybrid/bridge'
+    | '/hybrid/course'
     | '/hybrid/decision-lab'
     | '/hybrid/dual-mock'
     | '/hybrid/exam-flip'
@@ -1604,6 +1615,7 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/hybrid/bridge'
+    | '/hybrid/course'
     | '/hybrid/decision-lab'
     | '/hybrid/dual-mock'
     | '/hybrid/exam-flip'
@@ -2177,6 +2189,13 @@ declare module '@tanstack/react-router' {
       path: '/bridge'
       fullPath: '/hybrid/bridge'
       preLoaderRoute: typeof HybridBridgeRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/course': {
+      id: '/hybrid/course'
+      path: '/course'
+      fullPath: '/hybrid/course'
+      preLoaderRoute: typeof HybridCourseRouteImport
       parentRoute: typeof HybridRoute
     }
     '/hybrid/decision-lab': {
@@ -2854,6 +2873,7 @@ const FlashcardsRouteWithChildren = FlashcardsRoute._addFileChildren(
 
 interface HybridRouteChildren {
   HybridBridgeRoute: typeof HybridBridgeRoute
+  HybridCourseRoute: typeof HybridCourseRoute
   HybridDecisionLabRoute: typeof HybridDecisionLabRoute
   HybridDualMockRoute: typeof HybridDualMockRoute
   HybridExamFlipRoute: typeof HybridExamFlipRoute
@@ -2864,6 +2884,7 @@ interface HybridRouteChildren {
 
 const HybridRouteChildren: HybridRouteChildren = {
   HybridBridgeRoute: HybridBridgeRoute,
+  HybridCourseRoute: HybridCourseRoute,
   HybridDecisionLabRoute: HybridDecisionLabRoute,
   HybridDualMockRoute: HybridDualMockRoute,
   HybridExamFlipRoute: HybridExamFlipRoute,
