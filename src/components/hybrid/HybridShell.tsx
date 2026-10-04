@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { HybridBrandMark } from "@/components/ExamTrackSwitcher";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HYBRID_ACCENT, HYBRID_NAV } from "@/lib/hybrid-course";
@@ -21,7 +20,6 @@ export function HybridShell({
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-6xl"
-        hideTrackSwitcher
         actions={
           <LocalizedLink
             to="/products"
@@ -30,7 +28,6 @@ export function HybridShell({
             ← Products
           </LocalizedLink>
         }
-        left={<HybridBrandMark compact wordmark="always" />}
       />
 
       <div className="border-b border-border/70 bg-card/40">

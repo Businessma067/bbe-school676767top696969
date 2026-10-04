@@ -259,7 +259,6 @@ function HybridCoursePage() {
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-7xl"
-        hideTrackSwitcher
         actions={
           <LocalizedLink
             to="/products/hybrid-course"

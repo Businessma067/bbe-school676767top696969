@@ -56,7 +56,7 @@ export function HybridLandingPage() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader showNav showMobileNav hideTrackSwitcher />
+      <SiteHeader showNav showMobileNav />
 
       <main>
         <section className="relative overflow-hidden px-3 pt-7 pb-10 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">

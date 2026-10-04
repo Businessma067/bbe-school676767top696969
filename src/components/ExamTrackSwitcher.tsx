@@ -39,8 +39,10 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
     storeExamTrack(next);
   }, [pathname, hasLite, hasFull, hasWisoFull, ready]);
 
+  const onHybrid = isHybridPath(pathname);
+
   const switchTo = (next: ExamTrack) => {
-    if (next === track) return;
+    if (next === track && !onHybrid) return;
     storeExamTrack(next);
     setTrack(next);
     const lang = trackUiLang(next);
@@ -68,6 +70,16 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
     });
   };
 
+  const openHybrid = () => {
+    if (onHybrid) return;
+    setLang("en");
+    const link = getLocaleLinkProps("/hybrid", "en");
+    void navigate({
+      to: link.to as never,
+      params: link.params as never,
+    });
+  };
+
   return (
     <div
       className={cn(
@@ -83,11 +95,11 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
         onClick={() => switchTo("bbe")}
         className={cn(
           "rounded px-2 py-1 transition-colors sm:px-2.5",
-          track === "bbe"
+          !onHybrid && track === "bbe"
             ? "bg-primary text-primary-foreground"
             : "text-muted-foreground hover:text-foreground",
         )}
-        aria-pressed={track === "bbe"}
+        aria-pressed={!onHybrid && track === "bbe"}
       >
         BBE
       </button>
@@ -96,13 +108,26 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
         onClick={() => switchTo("wiso")}
         className={cn(
           "rounded px-2 py-1 transition-colors sm:px-2.5",
-          track === "wiso"
+          !onHybrid && track === "wiso"
             ? "bg-indigo-700 text-white dark:bg-indigo-600"
             : "text-muted-foreground hover:text-foreground",
         )}
-        aria-pressed={track === "wiso"}
+        aria-pressed={!onHybrid && track === "wiso"}
       >
         WiSo
+      </button>
+      <button
+        type="button"
+        onClick={openHybrid}
+        className={cn(
+          "rounded px-2 py-1 transition-colors sm:px-2.5",
+          onHybrid
+            ? "bg-teal-700 text-white dark:bg-teal-600"
+            : "text-muted-foreground hover:text-foreground",
+        )}
+        aria-pressed={onHybrid}
+      >
+        Hybrid
       </button>
     </div>
   );
@@ -123,7 +148,7 @@ export function HybridBrandMark({
   return (
     <LocalizedLink
       to="/hybrid"
-      aria-label="Hybrid home"
+      aria-label="Hybrid · BBE School home"
       className="group flex shrink-0 items-center gap-2 sm:gap-3"
     >
       <div
@@ -148,7 +173,7 @@ export function HybridBrandMark({
           compact ? "text-sm" : "text-sm sm:text-base",
         )}
       >
-        Hybrid
+        Hybrid · BBE School
       </span>
     </LocalizedLink>
   );
