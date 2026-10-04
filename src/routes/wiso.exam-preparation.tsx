@@ -185,7 +185,7 @@ export function WisoExamPreparationPage() {
         <WisoInfoCallout label="Stay on the WiSo track" tone="note">
           Demo practice, mocks, mock builder, and flashcards for WiSo live under /wiso/... so you do not
           accidentally jump into BBE English drills. Products for both tracks are listed together on{" "}
-          <WisoTextLink to="/products" className="inline-flex">
+          <WisoTextLink to={WISO_PRACTICE_ROUTES.products} className="inline-flex">
             /products
           </WisoTextLink>
           .
