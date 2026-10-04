@@ -97,8 +97,8 @@ const EXAM_OPTIONS: ExamOption[] = [
       "English + German overlays",
       "Dual BBE / WiSo practice modes",
     ],
-    cta: "Coming soon",
-    comingSoon: true,
+    cta: "Open Hybrid Course",
+    to: "/products/hybrid-course",
   },
 ];
 
@@ -141,8 +141,8 @@ export function Index() {
                 WiSo, BBE, and Hybrid
               </p>
               <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
-                One platform for both entrance paths: pick a single track, or wait for Hybrid if you
-                want to prepare for BBE and WiSo together.
+                One platform for both entrance paths: pick a single track, or Hybrid if you want to
+                prepare for BBE and WiSo together.
               </p>
             </div>
 
@@ -220,7 +220,7 @@ export function Index() {
                       ))}
                     </ul>
                     <div className="mt-auto pt-6">
-                      {exam.comingSoon || !exam.to ? (
+                      {!exam.to ? (
                         <button
                           type="button"
                           disabled
@@ -231,12 +231,18 @@ export function Index() {
                       ) : (
                         <LocalizedLink
                           to={exam.to}
-                          onClick={() => storeExamTrack(exam.id === "wiso" ? "wiso" : "bbe")}
+                          onClick={() => {
+                            if (exam.id === "bbe" || exam.id === "wiso") {
+                              storeExamTrack(exam.id);
+                            }
+                          }}
                           className={cn(
                             "inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
-                            isWiso
-                              ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
-                              : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                            isHybrid
+                              ? "bg-teal-700 hover:bg-teal-800 focus:ring-teal-700"
+                              : isWiso
+                                ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
+                                : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
                           )}
                         >
                           {exam.cta}
@@ -472,8 +478,8 @@ function SiteFooter() {
               </LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to="/products" className="text-foreground hover:underline">
-                Hybrid BBE + WiSo (Coming soon)
+              <LocalizedLink to="/products/hybrid-course" className="text-foreground hover:underline">
+                Hybrid BBE + WiSo Course
               </LocalizedLink>
             </li>
             <li>

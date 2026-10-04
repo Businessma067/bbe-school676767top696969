@@ -115,6 +115,17 @@ export function resolveUnlockEnrollmentSlug(
       return "wiso-full-course";
     }
   }
+  if (checkoutSlug === "hybrid-full-course") {
+    if (
+      codeProductSlug === "hybrid-full-course" ||
+      codeProductSlug === "full-course" ||
+      codeProductSlug === "wiso-full-course" ||
+      codeProductSlug === "any-paid" ||
+      !codeProductSlug
+    ) {
+      return "hybrid-full-course";
+    }
+  }
   if (checkoutSlug && checkoutSlug in COURSE_CATALOG) {
     if (codeProductSlug === "any-paid" || codeProductSlug === checkoutSlug) {
       return checkoutSlug as CourseSlug;
@@ -469,6 +480,23 @@ async function enrollFromClaim(
       .update({ used_at: null, used_by: null, used_by_email: null })
       .eq("id", claimed.id);
     return { ok: false, error: "Could not unlock access. Try again." };
+  }
+
+  if (slug === "hybrid-full-course") {
+    for (const implied of ["full-course", "wiso-full-course"] as const) {
+      const impliedMeta = COURSE_CATALOG[implied];
+      const impliedGrant = await grantPaidEnrollment({
+        userId,
+        product: {
+          slug: implied,
+          name: impliedMeta.name,
+          tier: impliedMeta.tier,
+        },
+      });
+      if (!impliedGrant.ok) {
+        console.error("promo enroll hybrid implied", implied, impliedGrant.error);
+      }
+    }
   }
 
   await supabaseAdmin

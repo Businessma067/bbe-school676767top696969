@@ -8,7 +8,7 @@ export const WISO_HOME = "/wiso" as const;
 export const TRACK_STORAGE_KEY = "bbe-school-exam-track";
 
 /** Paths that belong to neither track (chooser / shared compare / account chrome). */
-const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso", "/dashboard", "/account"]);
+const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso", "/dashboard", "/account", "/hybrid", "/products/hybrid-course"]);
 
 /** Shared news feed + posts (`/news`, `/news/<slug>`). */
 export function isNewsAppPath(pathname: string): boolean {
@@ -55,9 +55,14 @@ export function isWisoPath(pathname: string): boolean {
   return path === WISO_PREFIX || path.startsWith(`${WISO_PREFIX}/`);
 }
 
+export function isHybridPath(pathname: string): boolean {
+  const path = stripLocalePrefix(pathname);
+  return path === "/hybrid" || path.startsWith("/hybrid/") || path === "/products/hybrid-course";
+}
+
 export function isNeutralPath(pathname: string): boolean {
   const path = stripLocalePrefix(pathname);
-  return NEUTRAL_PATHS.has(path) || isNewsAppPath(path);
+  return NEUTRAL_PATHS.has(path) || isNewsAppPath(path) || isHybridPath(path);
 }
 
 /** Track implied by the URL alone; null on shared/chooser pages. */

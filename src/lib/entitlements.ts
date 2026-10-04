@@ -3,6 +3,7 @@ import {
   fetchEnrollments,
   highestBbeTier,
   ownsProductSlug,
+  HYBRID_FULL_COURSE_SLUG,
   WISO_FULL_COURSE_SLUG,
   type Enrollment,
 } from "@/lib/user-progress";
@@ -60,7 +61,12 @@ function stateFromEnrollments(
       signedIn: true,
       email,
       tier: "full",
-      productSlugs: ["full-course", WISO_FULL_COURSE_SLUG, "demo-practice"],
+      productSlugs: [
+        "full-course",
+        WISO_FULL_COURSE_SLUG,
+        HYBRID_FULL_COURSE_SLUG,
+        "demo-practice",
+      ],
     };
   }
   const productSlugs = enrollments.map((e) => e.product_slug);
@@ -125,11 +131,33 @@ export async function fetchAccessTier(): Promise<AccessTier> {
 }
 
 export function accessOwnsProduct(state: AccessState, productSlug: string): boolean {
-  return state.productSlugs.includes(productSlug);
+  if (state.productSlugs.includes(productSlug)) return true;
+  // Hybrid enrollment unlocks both track SKUs and the hybrid hub.
+  if (
+    state.productSlugs.includes(HYBRID_FULL_COURSE_SLUG) &&
+    (productSlug === "full-course" ||
+      productSlug === WISO_FULL_COURSE_SLUG ||
+      productSlug === HYBRID_FULL_COURSE_SLUG)
+  ) {
+    return true;
+  }
+  // Owning both full tracks unlocks the hybrid hub.
+  if (
+    productSlug === HYBRID_FULL_COURSE_SLUG &&
+    state.productSlugs.includes("full-course") &&
+    state.productSlugs.includes(WISO_FULL_COURSE_SLUG)
+  ) {
+    return true;
+  }
+  return false;
 }
 
 export function accessOwnsWisoFull(state: AccessState): boolean {
   return accessOwnsProduct(state, WISO_FULL_COURSE_SLUG);
+}
+
+export function accessOwnsHybrid(state: AccessState): boolean {
+  return accessOwnsProduct(state, HYBRID_FULL_COURSE_SLUG);
 }
 
 export function enrollmentsIncludeProduct(enrollments: Enrollment[], productSlug: string): boolean {

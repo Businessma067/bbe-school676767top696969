@@ -109,34 +109,36 @@ Entitlements sketch:
 
 ## 7. Build phases
 
-### Phase A — Teaser (this PR)
+### Phase A — Teaser
 
-- [x] Product card + Coming Soon icon on `/products`
+- [x] Product card + icon on `/products`
 - [x] Written plan (`docs/hybrid-bbe-wiso-course-plan.md`)
 
-### Phase B — Hybrid hub shell
+### Phase B — Hybrid hub shell (live)
 
-- [ ] Coming-soon landing page with waitlist / notify CTA
-- [ ] Explain shared vs overlay in plain language
-- [ ] Link from BBE and WiSo product pages
+- [x] Sales page `/products/hybrid-course` (SKU `hybrid-full-course`, €649)
+- [x] Hub `/hybrid` with Twin Readiness + Shared-First Planner
+- [x] Modes: Bridge, Mirror, Exam Flip, Dual Mock Day, Decision Lab, Shared Math
+- [x] Checkout grants Hybrid + Full BBE + Full WiSo enrollments
 
 ### Phase C — Data tagging
 
-- [ ] Tag math/econ items `shared` where overlap is real
-- [ ] Keep EN/DE language items track-specific
-- [ ] Concept ID bridge between BBE econ and *Wirtschaft verstehen*
+- [x] Bridge / Mirror seed packs with `conceptId`
+- [ ] Broader tagging across full econ banks
+- [ ] Populate `source_bbe_*` links at scale
 
 ### Phase D — Dual modes
 
-- [ ] Exam mode toggle (BBE ↔ WiSo) in mock/tutor/timed
-- [ ] Scoring engine respects selected mode
-- [ ] Single progress dashboard with “readiness BBE / readiness WiSo”
+- [x] Exam Flip mode (BBE ↔ WiSo framing)
+- [x] Dual Mock Day launcher into existing mocks
+- [x] Twin Readiness dashboard
+- [ ] Deeper scoring engine parity inside full mock take pages
 
 ### Phase E — Hybrid planner
 
-- [ ] Auto weekly plan: shared queue + language overlays
-- [ ] Avoid double-counting shared topics in XP/progress
-- [ ] Checkout + entitlements for hybrid SKU
+- [x] Auto daily Shared-First plan
+- [x] Shared math progress sync into readiness
+- [x] Checkout + entitlements for hybrid SKU
 
 ---
 

@@ -37,9 +37,12 @@ export const homeExtraDe: Record<string, string> = {
   "Dual BBE / WiSo practice modes": "Doppelte Übungsmodi BBE / WiSo",
   "Coming soon": "Demnächst",
   "Hybrid BBE + WiSo (Coming soon)": "Hybrid BBE + WiSo (Demnächst)",
+  "Open Hybrid Course": "Hybrid-Kurs öffnen",
   "WiSo, BBE, and Hybrid": "WiSo, BBE und Hybrid",
   "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
     "Eine Plattform für beide Aufnahmewege: wähl einen Track, oder warte auf Hybrid, wenn du BBE und WiSo zusammen vorbereiten willst.",
+  "One platform for both entrance paths: pick a single track, or Hybrid if you want to prepare for BBE and WiSo together.":
+    "Eine Plattform für beide Aufnahmewege: wähl einen Track oder Hybrid, wenn du BBE und WiSo zusammen vorbereiten willst.",
 
   // ---------- Why choose us ----------
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":
@@ -201,9 +204,12 @@ export const homeExtraUk: Record<string, string> = {
   "Dual BBE / WiSo practice modes": "Подвійні режими практики BBE / WiSo",
   "Coming soon": "Незабаром",
   "Hybrid BBE + WiSo (Coming soon)": "Hybrid BBE + WiSo (Незабаром)",
+  "Open Hybrid Course": "Відкрити Hybrid Course",
   "WiSo, BBE, and Hybrid": "WiSo, BBE і Hybrid",
   "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
     "Одна платформа для обох вступних шляхів: обери один трек або чекай на Hybrid, якщо хочеш готуватися до BBE і WiSo разом.",
+  "One platform for both entrance paths: pick a single track, or Hybrid if you want to prepare for BBE and WiSo together.":
+    "Одна платформа для обох вступних шляхів: обери один трек або Hybrid, якщо хочеш готуватися до BBE і WiSo разом.",
 
   // ---------- Why choose us ----------
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":

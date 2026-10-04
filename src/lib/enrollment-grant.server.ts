@@ -99,7 +99,23 @@ export async function ensureEnrollmentsFromSuccessfulPayments(
     if (owned.has(slug)) continue;
     const product = PAID_PRODUCTS[slug];
     const result = await grantPaidEnrollment({ userId, product });
-    if (result.ok) granted.push(slug);
+    if (result.ok) {
+      granted.push(slug);
+      owned.add(slug);
+    }
+  }
+
+  // Repair Hybrid → also ensure both track SKUs exist on the account.
+  if (owned.has("hybrid-full-course") || slugs.includes("hybrid-full-course")) {
+    for (const implied of ["full-course", "wiso-full-course"] as const) {
+      if (owned.has(implied)) continue;
+      const product = PAID_PRODUCTS[implied];
+      const result = await grantPaidEnrollment({ userId, product });
+      if (result.ok) {
+        granted.push(implied);
+        owned.add(implied);
+      }
+    }
   }
 
   return { granted };

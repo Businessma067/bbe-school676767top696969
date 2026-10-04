@@ -1,6 +1,6 @@
 /** Client-safe catalog of paid products and their prices. */
 
-export type PaidProductSlug = "full-course" | "wiso-full-course";
+export type PaidProductSlug = "full-course" | "wiso-full-course" | "hybrid-full-course";
 
 /** ISO 4217 numeric code for EUR (Monobank `ccy`). */
 export const MONOBANK_CURRENCY_EUR = 978;
@@ -44,6 +44,13 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     priceEur: 449,
     href: "/wiso/products/full-course-subjects",
   },
+  "hybrid-full-course": {
+    slug: "hybrid-full-course",
+    name: "Hybrid BBE + WiSo Course",
+    tier: "full",
+    priceEur: 649,
+    href: "/hybrid",
+  },
 };
 
 /** Promocode that takes 15% off the checkout price (validated server-side too). */
@@ -65,6 +72,13 @@ export function promoAppliesToProduct(
   if (promoProductSlug === checkoutSlug) return true;
   // All Full BBE discount codes also unlock the same % off Full WiSo.
   if (checkoutSlug === "wiso-full-course" && promoProductSlug === "full-course") return true;
+  // Full-track codes also apply to Hybrid checkout.
+  if (
+    checkoutSlug === "hybrid-full-course" &&
+    (promoProductSlug === "full-course" || promoProductSlug === "wiso-full-course")
+  ) {
+    return true;
+  }
   return false;
 }
 

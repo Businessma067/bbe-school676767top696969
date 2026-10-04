@@ -7,10 +7,13 @@ import type { MockExamSession } from "@/lib/mock-exam-session";
 export type CourseSlug =
   | "demo-practice"
   | "full-course"
-  | "wiso-full-course";
+  | "wiso-full-course"
+  | "hybrid-full-course";
 
 /** Legacy BBE Lite SKU — still recognized for existing enrollments. */
 export const LITE_BBE_COURSE_SLUG = "lite-bbe-course" as const;
+
+export const HYBRID_FULL_COURSE_SLUG = "hybrid-full-course" as const;
 
 export type Enrollment = {
   id: string;
@@ -85,6 +88,11 @@ export const COURSE_CATALOG: Record<
     tier: "full",
     href: "/wiso/products/full-course-subjects",
   },
+  "hybrid-full-course": {
+    name: "Hybrid BBE + WiSo Course",
+    tier: "full",
+    href: "/hybrid",
+  },
 };
 
 /* --------------------------- enrollments -------------------------- */
@@ -145,11 +153,13 @@ export function highestTier(enrollments: Enrollment[]): "none" | "demo" | "lite"
   return "none";
 }
 
-/** Highest BBE-track tier — WiSo Full does not unlock BBE tools. */
+/** Highest BBE-track tier — WiSo Full does not unlock BBE tools; Hybrid does. */
 export function highestBbeTier(enrollments: Enrollment[]): "none" | "demo" | "lite" | "full" {
-  const bbe = enrollments.filter((e) =>
-    (BBE_PAID_PRODUCT_SLUGS as readonly string[]).includes(e.product_slug) ||
-    e.product_slug === "demo-practice",
+  const bbe = enrollments.filter(
+    (e) =>
+      (BBE_PAID_PRODUCT_SLUGS as readonly string[]).includes(e.product_slug) ||
+      e.product_slug === "demo-practice" ||
+      e.product_slug === HYBRID_FULL_COURSE_SLUG,
   );
   return highestTier(bbe);
 }

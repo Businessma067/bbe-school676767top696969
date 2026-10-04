@@ -25,6 +25,7 @@ export const FULL_COURSE_PATH_PREFIXES = [
   "/wiso/products/full-course-math",
   "/wiso/products/full-course-economics",
   "/wiso/products/full-course-german",
+  "/hybrid",
 ] as const;
 
 /** Prefixes that require Lite or Full (paid study tools). */

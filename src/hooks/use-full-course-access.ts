@@ -15,6 +15,8 @@ export type FullCourseAccessState = {
   ownsFullCourse: boolean;
   /** Full WiSo Course enrollment. */
   ownsWisoFullCourse: boolean;
+  /** Hybrid BBE + WiSo Course (or both full tracks). */
+  ownsHybridCourse: boolean;
   refresh: () => Promise<void>;
 };
 
@@ -24,6 +26,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
   const [ownsPaidCourse, setOwnsPaidCourse] = useState(false);
   const [ownsFullCourse, setOwnsFullCourse] = useState(false);
   const [ownsWisoFullCourse, setOwnsWisoFullCourse] = useState(false);
+  const [ownsHybridCourse, setOwnsHybridCourse] = useState(false);
 
   const refresh = async () => {
     const { data } = await supabase.auth.getSession();
@@ -33,6 +36,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
       setOwnsPaidCourse(false);
       setOwnsFullCourse(false);
       setOwnsWisoFullCourse(false);
+      setOwnsHybridCourse(false);
       setReady(true);
       return;
     }
@@ -40,6 +44,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
     setOwnsPaidCourse(tierAtLeast(state.tier, "lite"));
     setOwnsFullCourse(accessOwnsProduct(state, "full-course"));
     setOwnsWisoFullCourse(accessOwnsProduct(state, "wiso-full-course"));
+    setOwnsHybridCourse(accessOwnsProduct(state, "hybrid-full-course"));
     setReady(true);
   };
 
@@ -75,6 +80,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
     ownsPaidCourse,
     ownsFullCourse,
     ownsWisoFullCourse,
+    ownsHybridCourse,
     refresh,
   };
 }

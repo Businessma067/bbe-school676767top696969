@@ -112,6 +112,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/wiso/products/full-course-math",
   "/wiso/products/full-course-economics",
   "/wiso/products/full-course-german",
+  "/hybrid",
   "/products/custom-mock-builder",
   "/wiso/mock-builder",
   "/mock-exams",

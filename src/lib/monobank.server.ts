@@ -184,6 +184,21 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
       console.error("syncInvoice: enrollment upsert failed", slug, grant.error);
     }
 
+    // Hybrid purchase also unlocks both full track SKUs so existing gates work.
+    if (enrolled && slug === "hybrid-full-course") {
+      const { PAID_PRODUCTS: catalog } = await import("@/lib/checkout-catalog");
+      for (const implied of ["full-course", "wiso-full-course"] as const) {
+        const impliedProduct = catalog[implied];
+        const impliedGrant = await grantPaidEnrollment({
+          userId: payment.user_id,
+          product: impliedProduct,
+        });
+        if (!impliedGrant.ok) {
+          console.error("syncInvoice: hybrid implied enrollment failed", implied, impliedGrant.error);
+        }
+      }
+    }
+
     const promoCode =
       typeof (payment as { promo_code?: string | null }).promo_code === "string"
         ? (payment as { promo_code: string }).promo_code

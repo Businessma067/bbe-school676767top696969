@@ -29,6 +29,7 @@ import { Route as DemoMockRouteImport } from './routes/demo-mock'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as HybridRouteImport } from './routes/hybrid'
 import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as MatchingRouteImport } from './routes/matching'
@@ -68,6 +69,13 @@ import { Route as DevMock6CaseAuditRouteImport } from './routes/dev.mock6-case-a
 import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
 import { Route as FlashcardsIndexRouteImport } from './routes/flashcards.index'
 import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
+import { Route as HybridIndexRouteImport } from './routes/hybrid.index'
+import { Route as HybridBridgeRouteImport } from './routes/hybrid.bridge'
+import { Route as HybridDecisionLabRouteImport } from './routes/hybrid.decision-lab'
+import { Route as HybridDualMockRouteImport } from './routes/hybrid.dual-mock'
+import { Route as HybridExamFlipRouteImport } from './routes/hybrid.exam-flip'
+import { Route as HybridMathRouteImport } from './routes/hybrid.math'
+import { Route as HybridMirrorRouteImport } from './routes/hybrid.mirror'
 import { Route as MatchingIndexRouteImport } from './routes/matching.index'
 import { Route as MatchingSubjectRouteImport } from './routes/matching.$subject'
 import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
@@ -83,6 +91,7 @@ import { Route as ProductsFullCourseEnglishRouteImport } from './routes/products
 import { Route as ProductsFullCourseMathRouteImport } from './routes/products.full-course-math'
 import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course-subjects'
 import { Route as ProductsFullCourseWisoEconomicsRouteImport } from './routes/products.full-course-wiso-economics'
+import { Route as ProductsHybridCourseRouteImport } from './routes/products.hybrid-course'
 import { Route as TutorExamIndexRouteImport } from './routes/tutor-exam.index'
 import { Route as TutorExamSubjectRouteImport } from './routes/tutor-exam.$subject'
 import { Route as WisoIndexRouteImport } from './routes/wiso.index'
@@ -239,6 +248,11 @@ const FlashcardsRoute = FlashcardsRouteImport.update({
 const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
   id: '/forgot-password',
   path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HybridRoute = HybridRouteImport.update({
+  id: '/hybrid',
+  path: '/hybrid',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImportantFeaturesRoute = ImportantFeaturesRouteImport.update({
@@ -436,6 +450,41 @@ const FlashcardsSubjectRoute = FlashcardsSubjectRouteImport.update({
   path: '/$subject',
   getParentRoute: () => FlashcardsRoute,
 } as any)
+const HybridIndexRoute = HybridIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridBridgeRoute = HybridBridgeRouteImport.update({
+  id: '/bridge',
+  path: '/bridge',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridDecisionLabRoute = HybridDecisionLabRouteImport.update({
+  id: '/decision-lab',
+  path: '/decision-lab',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridDualMockRoute = HybridDualMockRouteImport.update({
+  id: '/dual-mock',
+  path: '/dual-mock',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridExamFlipRoute = HybridExamFlipRouteImport.update({
+  id: '/exam-flip',
+  path: '/exam-flip',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridMathRoute = HybridMathRouteImport.update({
+  id: '/math',
+  path: '/math',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridMirrorRoute = HybridMirrorRouteImport.update({
+  id: '/mirror',
+  path: '/mirror',
+  getParentRoute: () => HybridRoute,
+} as any)
 const MatchingIndexRoute = MatchingIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -516,6 +565,11 @@ const ProductsFullCourseWisoEconomicsRoute =
     path: '/full-course-wiso-economics',
     getParentRoute: () => ProductsRoute,
   } as any)
+const ProductsHybridCourseRoute = ProductsHybridCourseRouteImport.update({
+  id: '/hybrid-course',
+  path: '/hybrid-course',
+  getParentRoute: () => ProductsRoute,
+} as any)
 const TutorExamIndexRoute = TutorExamIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -844,6 +898,7 @@ export interface FileRoutesByFullPath {
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
+  '/hybrid': typeof HybridRouteWithChildren
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/matching': typeof MatchingRouteWithChildren
@@ -879,6 +934,12 @@ export interface FileRoutesByFullPath {
   '/dev/mock6-case-audit': typeof DevMock6CaseAuditRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
+  '/hybrid/bridge': typeof HybridBridgeRoute
+  '/hybrid/decision-lab': typeof HybridDecisionLabRoute
+  '/hybrid/dual-mock': typeof HybridDualMockRoute
+  '/hybrid/exam-flip': typeof HybridExamFlipRoute
+  '/hybrid/math': typeof HybridMathRoute
+  '/hybrid/mirror': typeof HybridMirrorRoute
   '/matching/$subject': typeof MatchingSubjectRoute
   '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
@@ -891,6 +952,7 @@ export interface FileRoutesByFullPath {
   '/products/full-course-math': typeof ProductsFullCourseMathRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/full-course-wiso-economics': typeof ProductsFullCourseWisoEconomicsRoute
+  '/products/hybrid-course': typeof ProductsHybridCourseRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/wiso/admission': typeof WisoAdmissionRoute
   '/wiso/demo-mock': typeof WisoDemoMockRoute
@@ -911,6 +973,7 @@ export interface FileRoutesByFullPath {
   '/admin/': typeof AdminIndexRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
+  '/hybrid/': typeof HybridIndexRoute
   '/matching/': typeof MatchingIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
@@ -999,6 +1062,12 @@ export interface FileRoutesByTo {
   '/dev/mock6-case-audit': typeof DevMock6CaseAuditRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
+  '/hybrid/bridge': typeof HybridBridgeRoute
+  '/hybrid/decision-lab': typeof HybridDecisionLabRoute
+  '/hybrid/dual-mock': typeof HybridDualMockRoute
+  '/hybrid/exam-flip': typeof HybridExamFlipRoute
+  '/hybrid/math': typeof HybridMathRoute
+  '/hybrid/mirror': typeof HybridMirrorRoute
   '/matching/$subject': typeof MatchingSubjectRoute
   '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
@@ -1011,6 +1080,7 @@ export interface FileRoutesByTo {
   '/products/full-course-math': typeof ProductsFullCourseMathRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/full-course-wiso-economics': typeof ProductsFullCourseWisoEconomicsRoute
+  '/products/hybrid-course': typeof ProductsHybridCourseRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/wiso/admission': typeof WisoAdmissionRoute
   '/wiso/demo-mock': typeof WisoDemoMockRoute
@@ -1026,6 +1096,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminIndexRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/flashcards': typeof FlashcardsIndexRoute
+  '/hybrid': typeof HybridIndexRoute
   '/matching': typeof MatchingIndexRoute
   '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
@@ -1090,6 +1161,7 @@ export interface FileRoutesById {
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
+  '/hybrid': typeof HybridRouteWithChildren
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/matching': typeof MatchingRouteWithChildren
@@ -1125,6 +1197,12 @@ export interface FileRoutesById {
   '/dev/mock6-case-audit': typeof DevMock6CaseAuditRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
+  '/hybrid/bridge': typeof HybridBridgeRoute
+  '/hybrid/decision-lab': typeof HybridDecisionLabRoute
+  '/hybrid/dual-mock': typeof HybridDualMockRoute
+  '/hybrid/exam-flip': typeof HybridExamFlipRoute
+  '/hybrid/math': typeof HybridMathRoute
+  '/hybrid/mirror': typeof HybridMirrorRoute
   '/matching/$subject': typeof MatchingSubjectRoute
   '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
@@ -1137,6 +1215,7 @@ export interface FileRoutesById {
   '/products/full-course-math': typeof ProductsFullCourseMathRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/full-course-wiso-economics': typeof ProductsFullCourseWisoEconomicsRoute
+  '/products/hybrid-course': typeof ProductsHybridCourseRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/wiso/admission': typeof WisoAdmissionRoute
   '/wiso/demo-mock': typeof WisoDemoMockRoute
@@ -1157,6 +1236,7 @@ export interface FileRoutesById {
   '/admin/': typeof AdminIndexRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
+  '/hybrid/': typeof HybridIndexRoute
   '/matching/': typeof MatchingIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
@@ -1225,6 +1305,7 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
+    | '/hybrid'
     | '/important-features'
     | '/login'
     | '/matching'
@@ -1260,6 +1341,12 @@ export interface FileRouteTypes {
     | '/dev/mock6-case-audit'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
+    | '/hybrid/bridge'
+    | '/hybrid/decision-lab'
+    | '/hybrid/dual-mock'
+    | '/hybrid/exam-flip'
+    | '/hybrid/math'
+    | '/hybrid/mirror'
     | '/matching/$subject'
     | '/news/$slug'
     | '/payment/failed'
@@ -1272,6 +1359,7 @@ export interface FileRouteTypes {
     | '/products/full-course-math'
     | '/products/full-course-subjects'
     | '/products/full-course-wiso-economics'
+    | '/products/hybrid-course'
     | '/tutor-exam/$subject'
     | '/wiso/admission'
     | '/wiso/demo-mock'
@@ -1292,6 +1380,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/demo-practice/'
     | '/flashcards/'
+    | '/hybrid/'
     | '/matching/'
     | '/mock-exams/'
     | '/products/'
@@ -1380,6 +1469,12 @@ export interface FileRouteTypes {
     | '/dev/mock6-case-audit'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
+    | '/hybrid/bridge'
+    | '/hybrid/decision-lab'
+    | '/hybrid/dual-mock'
+    | '/hybrid/exam-flip'
+    | '/hybrid/math'
+    | '/hybrid/mirror'
     | '/matching/$subject'
     | '/news/$slug'
     | '/payment/failed'
@@ -1392,6 +1487,7 @@ export interface FileRouteTypes {
     | '/products/full-course-math'
     | '/products/full-course-subjects'
     | '/products/full-course-wiso-economics'
+    | '/products/hybrid-course'
     | '/tutor-exam/$subject'
     | '/wiso/admission'
     | '/wiso/demo-mock'
@@ -1407,6 +1503,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/demo-practice'
     | '/flashcards'
+    | '/hybrid'
     | '/matching'
     | '/mock-exams'
     | '/products'
@@ -1470,6 +1567,7 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
+    | '/hybrid'
     | '/important-features'
     | '/login'
     | '/matching'
@@ -1505,6 +1603,12 @@ export interface FileRouteTypes {
     | '/dev/mock6-case-audit'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
+    | '/hybrid/bridge'
+    | '/hybrid/decision-lab'
+    | '/hybrid/dual-mock'
+    | '/hybrid/exam-flip'
+    | '/hybrid/math'
+    | '/hybrid/mirror'
     | '/matching/$subject'
     | '/news/$slug'
     | '/payment/failed'
@@ -1517,6 +1621,7 @@ export interface FileRouteTypes {
     | '/products/full-course-math'
     | '/products/full-course-subjects'
     | '/products/full-course-wiso-economics'
+    | '/products/hybrid-course'
     | '/tutor-exam/$subject'
     | '/wiso/admission'
     | '/wiso/demo-mock'
@@ -1537,6 +1642,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/demo-practice/'
     | '/flashcards/'
+    | '/hybrid/'
     | '/matching/'
     | '/mock-exams/'
     | '/products/'
@@ -1604,6 +1710,7 @@ export interface RootRouteChildren {
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
   ForgotPasswordRoute: typeof ForgotPasswordRoute
+  HybridRoute: typeof HybridRouteWithChildren
   ImportantFeaturesRoute: typeof ImportantFeaturesRoute
   LoginRoute: typeof LoginRoute
   MatchingRoute: typeof MatchingRouteWithChildren
@@ -1776,6 +1883,13 @@ declare module '@tanstack/react-router' {
       path: '/forgot-password'
       fullPath: '/forgot-password'
       preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hybrid': {
+      id: '/hybrid'
+      path: '/hybrid'
+      fullPath: '/hybrid'
+      preLoaderRoute: typeof HybridRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/important-features': {
@@ -2051,6 +2165,55 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FlashcardsSubjectRouteImport
       parentRoute: typeof FlashcardsRoute
     }
+    '/hybrid/': {
+      id: '/hybrid/'
+      path: '/'
+      fullPath: '/hybrid/'
+      preLoaderRoute: typeof HybridIndexRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/bridge': {
+      id: '/hybrid/bridge'
+      path: '/bridge'
+      fullPath: '/hybrid/bridge'
+      preLoaderRoute: typeof HybridBridgeRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/decision-lab': {
+      id: '/hybrid/decision-lab'
+      path: '/decision-lab'
+      fullPath: '/hybrid/decision-lab'
+      preLoaderRoute: typeof HybridDecisionLabRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/dual-mock': {
+      id: '/hybrid/dual-mock'
+      path: '/dual-mock'
+      fullPath: '/hybrid/dual-mock'
+      preLoaderRoute: typeof HybridDualMockRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/exam-flip': {
+      id: '/hybrid/exam-flip'
+      path: '/exam-flip'
+      fullPath: '/hybrid/exam-flip'
+      preLoaderRoute: typeof HybridExamFlipRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/math': {
+      id: '/hybrid/math'
+      path: '/math'
+      fullPath: '/hybrid/math'
+      preLoaderRoute: typeof HybridMathRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/mirror': {
+      id: '/hybrid/mirror'
+      path: '/mirror'
+      fullPath: '/hybrid/mirror'
+      preLoaderRoute: typeof HybridMirrorRouteImport
+      parentRoute: typeof HybridRoute
+    }
     '/matching/': {
       id: '/matching/'
       path: '/'
@@ -2154,6 +2317,13 @@ declare module '@tanstack/react-router' {
       path: '/full-course-wiso-economics'
       fullPath: '/products/full-course-wiso-economics'
       preLoaderRoute: typeof ProductsFullCourseWisoEconomicsRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/hybrid-course': {
+      id: '/products/hybrid-course'
+      path: '/hybrid-course'
+      fullPath: '/products/hybrid-course'
+      preLoaderRoute: typeof ProductsHybridCourseRouteImport
       parentRoute: typeof ProductsRoute
     }
     '/tutor-exam/': {
@@ -2682,6 +2852,29 @@ const FlashcardsRouteWithChildren = FlashcardsRoute._addFileChildren(
   FlashcardsRouteChildren,
 )
 
+interface HybridRouteChildren {
+  HybridBridgeRoute: typeof HybridBridgeRoute
+  HybridDecisionLabRoute: typeof HybridDecisionLabRoute
+  HybridDualMockRoute: typeof HybridDualMockRoute
+  HybridExamFlipRoute: typeof HybridExamFlipRoute
+  HybridMathRoute: typeof HybridMathRoute
+  HybridMirrorRoute: typeof HybridMirrorRoute
+  HybridIndexRoute: typeof HybridIndexRoute
+}
+
+const HybridRouteChildren: HybridRouteChildren = {
+  HybridBridgeRoute: HybridBridgeRoute,
+  HybridDecisionLabRoute: HybridDecisionLabRoute,
+  HybridDualMockRoute: HybridDualMockRoute,
+  HybridExamFlipRoute: HybridExamFlipRoute,
+  HybridMathRoute: HybridMathRoute,
+  HybridMirrorRoute: HybridMirrorRoute,
+  HybridIndexRoute: HybridIndexRoute,
+}
+
+const HybridRouteWithChildren =
+  HybridRoute._addFileChildren(HybridRouteChildren)
+
 interface MatchingRouteChildren {
   MatchingSubjectRoute: typeof MatchingSubjectRoute
   MatchingIndexRoute: typeof MatchingIndexRoute
@@ -2731,6 +2924,7 @@ interface ProductsRouteChildren {
   ProductsFullCourseMathRoute: typeof ProductsFullCourseMathRoute
   ProductsFullCourseSubjectsRoute: typeof ProductsFullCourseSubjectsRoute
   ProductsFullCourseWisoEconomicsRoute: typeof ProductsFullCourseWisoEconomicsRoute
+  ProductsHybridCourseRoute: typeof ProductsHybridCourseRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -2743,6 +2937,7 @@ const ProductsRouteChildren: ProductsRouteChildren = {
   ProductsFullCourseMathRoute: ProductsFullCourseMathRoute,
   ProductsFullCourseSubjectsRoute: ProductsFullCourseSubjectsRoute,
   ProductsFullCourseWisoEconomicsRoute: ProductsFullCourseWisoEconomicsRoute,
+  ProductsHybridCourseRoute: ProductsHybridCourseRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 
@@ -2962,6 +3157,7 @@ const rootRouteChildren: RootRouteChildren = {
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,
   ForgotPasswordRoute: ForgotPasswordRoute,
+  HybridRoute: HybridRouteWithChildren,
   ImportantFeaturesRoute: ImportantFeaturesRoute,
   LoginRoute: LoginRoute,
   MatchingRoute: MatchingRouteWithChildren,

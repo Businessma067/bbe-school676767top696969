@@ -67,8 +67,16 @@ export function courseLockCopy(
   productSlug?: string,
 ) {
   const isWiso = productSlug === "wiso-full-course";
+  const isHybrid = productSlug === "hybrid-full-course";
   const label = isWiso ? FEATURE_LABEL_DE[feature] : FEATURE_LABEL[feature];
   const verb = feature === "course" || feature === "practice" ? "is" : "are";
+  if (isHybrid) {
+    return {
+      message: `${FEATURE_LABEL[feature]} ${verb} part of the Hybrid BBE + WiSo Course`,
+      ctaLabel: "Unlock Hybrid Course",
+      ctaTo: "/products/hybrid-course",
+    };
+  }
   if (isWiso || minTier === "full") {
     return {
       message: isWiso

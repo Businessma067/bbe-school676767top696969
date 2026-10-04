@@ -5,6 +5,8 @@ export const FULL_COURSE_HREF = "/products/full-course-subjects" as const;
 export const FULL_COURSE_PRODUCT_HREF = "/products/full-course" as const;
 export const WISO_FULL_COURSE_HREF = "/wiso/products/full-course-subjects" as const;
 export const WISO_FULL_COURSE_PRODUCT_HREF = "/wiso/products/full-course" as const;
+export const HYBRID_HUB_HREF = "/hybrid" as const;
+export const HYBRID_PRODUCT_HREF = "/products/hybrid-course" as const;
 
 /** True when the account owns any paid BBE course (Lite or Full) or is an admin. */
 export async function userOwnsPaidCourse(): Promise<boolean> {
@@ -30,6 +32,12 @@ export async function userOwnsFullTier(): Promise<boolean> {
 export async function userOwnsWisoFullCourse(): Promise<boolean> {
   const state = await fetchAccessState();
   return accessOwnsProduct(state, "wiso-full-course");
+}
+
+/** Hybrid hub access (hybrid SKU, or both full tracks, or admin). */
+export async function userOwnsHybridCourse(): Promise<boolean> {
+  const state = await fetchAccessState();
+  return accessOwnsProduct(state, "hybrid-full-course");
 }
 
 /** @deprecated Prefer userOwnsFullTier. */

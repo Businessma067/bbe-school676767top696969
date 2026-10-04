@@ -140,15 +140,17 @@ const products: Product[] = [
     image: HYBRID_COURSE_IMAGE,
     description:
       "One study path for both entrance exams: shared math and economics once, English + German overlays, and dual BBE/WiSo practice modes — without doubling the workload.",
-    cta: "Coming soon",
-    disabled: true,
-    badge: "Coming soon",
+    cta: "Buy Hybrid · €649",
+    to: "/products/hybrid-course",
+    ownedCta: "Go to Hybrid hub",
+    ownedTo: "/hybrid",
+    badge: "Hybrid · New",
     accent: "hybrid",
   },
 ];
 
 export function ProductsPage() {
-  const { ready, ownsFullCourse, ownsWisoFullCourse } = useFullCourseAccess();
+  const { ready, ownsFullCourse, ownsWisoFullCourse, ownsHybridCourse } = useFullCourseAccess();
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -178,8 +180,11 @@ export function ProductsPage() {
             {products.map((p) => {
               const isFullBbe = p.title === "Full BBE Course";
               const isFullWiso = p.title === "Full WiSo Course";
+              const isHybrid = p.title === "Hybrid BBE + WiSo Course";
               const owned =
-                (isFullBbe && ownsFullCourse) || (isFullWiso && ownsWisoFullCourse);
+                (isFullBbe && ownsFullCourse) ||
+                (isFullWiso && ownsWisoFullCourse) ||
+                (isHybrid && ownsHybridCourse);
               const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
               const accentColor =
@@ -227,7 +232,7 @@ export function ProductsPage() {
                     <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
                       {p.description}
                     </p>
-                    {!ready && isFullBbe ? (
+                    {!ready && (isFullBbe || isHybrid) ? (
                       <div className="mt-5 h-10 animate-pulse rounded-md bg-secondary" aria-hidden />
                     ) : to && !p.disabled ? (
                       isLocalizablePath(to) ? (
