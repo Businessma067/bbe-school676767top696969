@@ -1,337 +1,426 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
+import mathAsset from "@/assets/math-bw.jpg.asset.json";
+import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import {
-  ArrowRight,
+  ClipboardCheck,
   FlipHorizontal2,
   GitBranch,
   Layers,
   Scale,
+  Shuffle,
+  Sparkles,
   Split,
-  Target,
+  Wand2,
 } from "lucide-react";
-import { HybridShell } from "@/components/hybrid/HybridShell";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { HYBRID_BRIDGE_CASES } from "@/data/hybrid-bridge-cases";
-import { HYBRID_MIRROR_SETS } from "@/data/hybrid-mirror-sets";
+import { SiteHeader } from "@/components/SiteHeader";
+import { storeExamTrack } from "@/lib/exam-track";
 import { HYBRID_ACCENT } from "@/lib/hybrid-course";
-import { buildTodayPlan } from "@/lib/hybrid-planner";
-import {
-  computeTwinReadiness,
-  loadHybridProgress,
-  patchHybridProgress,
-  todayStamp,
-  type HybridProgress,
-} from "@/lib/hybrid-progress";
-import { cn } from "@/lib/utils";
+import { patchHybridProgress, loadHybridProgress } from "@/lib/hybrid-progress";
 
 export const Route = createFileRoute("/hybrid/")({
   head: () => ({
     links: [{ rel: "canonical", href: "https://bbe-school.com/hybrid" }],
     meta: [
-      { title: "Hybrid BBE + WiSo Course Hub | BBE School" },
+      { title: "Hybrid Course — Subjects & modes | BBE School" },
       {
         name: "description",
         content:
-          "Hybrid hub: Twin Readiness, Shared-First Planner, Bridge Cases, Exam Flip, and dual exam modes for BBE and WiSo.",
+          "Hybrid BBE + WiSo course: economics, math, English, German, mocks, flashcards, matching, tutor exam, and dual-exam modes.",
       },
       { name: "robots", content: "noindex, follow" },
     ],
   }),
-  component: HybridHubPage,
+  component: HybridCoursePage,
 });
 
-const LIBRARY = [
+const TEAL = HYBRID_ACCENT;
+const ORANGE = "#C2643A";
+const INDIGO = "#3730A3";
+
+const subjects = [
   {
-    title: "BBE Economics",
+    id: "econ-bbe",
+    title: "Economics",
+    image: economicsAsset.url,
+    accent: ORANGE,
+    tag: "BBE · English",
+    description:
+      "Supply and demand, market structures, elasticities, and the English economics wording of the BBE exam.",
     to: "/products/full-course-economics",
-    blurb: "English economics bank",
+    track: "bbe" as const,
   },
   {
-    title: "WiSo Economics",
+    id: "econ-wiso",
+    title: "Wirtschaft verstehen",
+    image: economicsAsset.url,
+    accent: INDIGO,
+    tag: "WiSo · German",
+    description:
+      "The same economics ideas in Wirtschaft-verstehen wording for the German-taught WiSo exam.",
     to: "/wiso/products/full-course-economics",
-    blurb: "Wirtschaft verstehen",
+    track: "wiso" as const,
   },
   {
-    title: "English lane",
+    id: "math",
+    title: "Mathematics",
+    image: mathAsset.url,
+    accent: TEAL,
+    tag: "Shared · EN / DE",
+    description:
+      "One math bank for both exams. Flip English or German stems without studying the chapter twice.",
+    to: "/hybrid/math",
+    track: null,
+  },
+  {
+    id: "english",
+    title: "English",
+    image: englishAsset.url,
+    accent: "#2DD4A8",
+    tag: "BBE · Language",
+    description:
+      "Reading speed, vocabulary, and grammar for the BBE language section.",
     to: "/products/full-course-english",
-    blurb: "BBE language overlay",
-    onOpen: () => patchHybridProgress({ englishSessions: loadHybridProgress().englishSessions + 1 }),
+    track: "bbe" as const,
+    overlay: "en" as const,
   },
   {
-    title: "German lane",
+    id: "german",
+    title: "Deutsches Sprachverständnis",
+    image: englishAsset.url,
+    accent: "#6366F1",
+    tag: "WiSo · Language",
+    description:
+      "German reading comprehension for the WiSo language section.",
     to: "/wiso/products/full-course-german",
-    blurb: "WiSo reading overlay",
-    onOpen: () => patchHybridProgress({ germanSessions: loadHybridProgress().germanSessions + 1 }),
+    track: "wiso" as const,
+    overlay: "de" as const,
   },
-  { title: "BBE Mocks", to: "/mock-exams", blurb: "Full BBE simulations" },
-  { title: "WiSo Mocks", to: "/wiso/mock-exams", blurb: "Full WiSo simulations" },
-  { title: "BBE Flashcards", to: "/flashcards", blurb: "Recall drills" },
-  { title: "WiSo Flashcards", to: "/wiso/flashcards", blurb: "DE recall drills" },
 ] as const;
 
-const MODES = [
+const studyModes = [
   {
+    id: "mock-bbe",
+    title: "Mock Exams · BBE",
+    blurb: "Full-length BBE simulations with English and wi2-style scoring.",
+    to: "/mock-exams",
+    accent: ORANGE,
+    icon: ClipboardCheck,
+    cta: "Open BBE mocks →",
+    track: "bbe" as const,
+  },
+  {
+    id: "mock-wiso",
+    title: "Probeprüfungen · WiSo",
+    blurb: "Full WiSo mocks with German reading and Teilpunktesystem pacing.",
+    to: "/wiso/mock-exams",
+    accent: INDIGO,
+    icon: ClipboardCheck,
+    cta: "Open WiSo mocks →",
+    track: "wiso" as const,
+  },
+  {
+    id: "builder-bbe",
+    title: "Custom Mock Builder",
+    blurb: "Build BBE mocks by textbook topic across Economics, Math, and English.",
+    to: "/products/custom-mock-builder",
+    accent: "#8B5E3C",
+    icon: Wand2,
+    cta: "Open BBE builder →",
+    track: "bbe" as const,
+  },
+  {
+    id: "builder-wiso",
+    title: "WiSo Mock Builder",
+    blurb: "Build WiSo mocks from Wirtschaft verstehen, Mathematik, and German reading.",
+    to: "/wiso/mock-builder",
+    accent: "#4338CA",
+    icon: Wand2,
+    cta: "Open WiSo builder →",
+    track: "wiso" as const,
+  },
+  {
+    id: "flash-bbe",
+    title: "Flashcards · BBE",
+    blurb: "Economics, math, and English recall decks from the BBE course.",
+    to: "/flashcards",
+    accent: ORANGE,
+    icon: Layers,
+    cta: "Open BBE flashcards →",
+    track: "bbe" as const,
+  },
+  {
+    id: "flash-wiso",
+    title: "Karteikarten · WiSo",
+    blurb: "German decks for Wirtschaft, Mathematik, and Sprachverständnis.",
+    to: "/wiso/flashcards",
+    accent: INDIGO,
+    icon: Layers,
+    cta: "Open WiSo flashcards →",
+    track: "wiso" as const,
+  },
+  {
+    id: "match-bbe",
+    title: "Matching · BBE",
+    blurb: "Pair each term with its meaning on the BBE decks.",
+    to: "/matching",
+    accent: "#C2703A",
+    icon: Shuffle,
+    cta: "Open BBE matching →",
+    track: "bbe" as const,
+  },
+  {
+    id: "match-wiso",
+    title: "Zuordnung · WiSo",
+    blurb: "Same WiSo decks as flashcards, matching drill.",
+    to: "/wiso/matching",
+    accent: "#4338CA",
+    icon: Shuffle,
+    cta: "Open WiSo matching →",
+    track: "wiso" as const,
+  },
+  {
+    id: "tutor-bbe",
+    title: "Tutor Exam · BBE",
+    blurb: "Guided BBE theory checks with a fresh mix each run.",
+    to: "/tutor-exam",
+    accent: "#E85D3A",
+    icon: Sparkles,
+    cta: "Open BBE tutor →",
+    track: "bbe" as const,
+  },
+  {
+    id: "tutor-wiso",
+    title: "Tutor-Prüfung · WiSo",
+    blurb: "Guided WiSo theory checks in German.",
+    to: "/wiso/tutor-exam",
+    accent: "#6366F1",
+    icon: Sparkles,
+    cta: "Open WiSo tutor →",
+    track: "wiso" as const,
+  },
+] as const;
+
+const hybridModes = [
+  {
+    id: "bridge",
     title: "Bridge Cases",
-    blurb: "Same concept in EN + DE, back to back.",
+    blurb: "Same concept in English then German.",
     to: "/hybrid/bridge",
     icon: GitBranch,
+    cta: "Open bridge →",
   },
   {
+    id: "mirror",
     title: "Mirror Drill",
-    blurb: "Alternate languages until the idea sticks.",
+    blurb: "Alternate EN and DE until the idea sticks.",
     to: "/hybrid/mirror",
     icon: Split,
+    cta: "Open mirror →",
   },
   {
+    id: "flip",
     title: "Exam Flip",
     blurb: "Switch BBE ↔ WiSo framing on one sprint.",
     to: "/hybrid/exam-flip",
     icon: FlipHorizontal2,
+    cta: "Open flip →",
   },
   {
+    id: "dual",
     title: "Dual Mock Day",
-    blurb: "Checklist for both full exam formats.",
+    blurb: "Run both full exam formats in one day.",
     to: "/hybrid/dual-mock",
-    icon: Layers,
+    icon: ClipboardCheck,
+    cta: "Open dual mock →",
   },
   {
+    id: "lab",
     title: "Decision Lab",
-    blurb: "See which track you currently lean toward.",
+    blurb: "See which exam you currently lean toward.",
     to: "/hybrid/decision-lab",
     icon: Scale,
-  },
-  {
-    title: "Shared Math",
-    blurb: "One math bank with EN/DE flip.",
-    to: "/hybrid/math",
-    icon: Target,
+    cta: "Open lab →",
   },
 ] as const;
 
-function ReadinessRing({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value: number;
-  tone: "bbe" | "wiso";
-}) {
-  const color = tone === "bbe" ? "#C2643A" : "#3730A3";
-  const r = 42;
-  const c = 2 * Math.PI * r;
-  const offset = c - (value / 100) * c;
-  return (
-    <div className="flex flex-col items-center gap-2">
-      <div className="relative h-28 w-28">
-        <svg viewBox="0 0 100 100" className="h-full w-full -rotate-90">
-          <circle cx="50" cy="50" r={r} fill="none" stroke="currentColor" strokeWidth="8" className="text-border" />
-          <circle
-            cx="50"
-            cy="50"
-            r={r}
-            fill="none"
-            stroke={color}
-            strokeWidth="8"
-            strokeLinecap="round"
-            strokeDasharray={c}
-            strokeDashoffset={offset}
-          />
-        </svg>
-        <div className="absolute inset-0 grid place-items-center">
-          <span className="font-display text-2xl font-bold">{value}%</span>
-        </div>
-      </div>
-      <p className="text-sm font-semibold" style={{ color }}>
-        {label}
-      </p>
-    </div>
-  );
+function rememberOverlay(overlay?: "en" | "de") {
+  if (overlay === "en") {
+    patchHybridProgress({ englishSessions: loadHybridProgress().englishSessions + 1 });
+  }
+  if (overlay === "de") {
+    patchHybridProgress({ germanSessions: loadHybridProgress().germanSessions + 1 });
+  }
 }
 
-function HybridHubPage() {
-  const [progress, setProgress] = useState<HybridProgress | null>(null);
-
-  useEffect(() => {
-    setProgress(loadHybridProgress());
-  }, []);
-
-  if (!progress) {
-    return (
-      <HybridShell title="Hybrid Hub" lead="Loading your Twin Readiness…">
-        <div className="h-40 animate-pulse rounded-2xl bg-secondary" />
-      </HybridShell>
-    );
-  }
-
-  const readiness = computeTwinReadiness(progress, {
-    bridgeTotal: HYBRID_BRIDGE_CASES.length,
-    mirrorTotal: HYBRID_MIRROR_SETS.length,
-  });
-  const plan = buildTodayPlan(progress);
-  const stamp = todayStamp();
-
+function HybridCoursePage() {
   return (
-    <HybridShell
-      title="Hybrid BBE + WiSo Hub"
-      lead="One study path for both entrance exams: shared core once, language overlays in parallel, dual exam modes when you need format pressure."
-    >
-      <section className="rounded-2xl border border-teal-200/80 bg-teal-50/40 p-6 dark:border-teal-800/40 dark:bg-teal-950/20">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-800 dark:text-teal-300">
-              Twin Readiness
-            </p>
-            <h2 className="mt-1 font-display text-2xl font-bold">Are you ready for both?</h2>
-            <p className="mt-2 max-w-md text-sm text-muted-foreground">
-              Shared math and Bridge Cases feed both rings. English and German lanes move each ring
-              separately.
-            </p>
-          </div>
-          <div className="flex gap-8">
-            <ReadinessRing label="BBE ready" value={readiness.bbe} tone="bbe" />
-            <ReadinessRing label="WiSo ready" value={readiness.wiso} tone="wiso" />
-          </div>
-        </div>
-        <div className="mt-6 grid gap-3 sm:grid-cols-4">
-          {[
-            { label: "Shared math", value: readiness.sharedMath },
-            { label: "Bridge", value: readiness.bridge },
-            { label: "English lane", value: readiness.languageEn },
-            { label: "German lane", value: readiness.languageDe },
-          ].map((row) => (
-            <div key={row.label} className="rounded-xl border border-border/70 bg-background/70 px-3 py-2">
-              <p className="text-[11px] font-medium text-muted-foreground">{row.label}</p>
-              <p className="font-display text-lg font-semibold">{row.value}%</p>
-            </div>
-          ))}
-        </div>
-      </section>
+    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        hideTrackSwitcher
+        actions={
+          <LocalizedLink
+            to="/products/hybrid-course"
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            ← Course
+          </LocalizedLink>
+        }
+      />
 
-      <section className="mt-10">
-        <div className="mb-4 flex items-end justify-between gap-3">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: HYBRID_ACCENT }}>
-              Shared-First Planner
-            </p>
-            <h2 className="mt-1 font-display text-2xl font-bold">Today&apos;s plan</h2>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            {plan.completedCount}/{plan.items.length} started
-          </p>
-        </div>
-        <div className="space-y-3">
-          {plan.items.map((item, idx) => {
-            const done = item.doneHint?.(progress);
-            return (
-              <LocalizedLink
-                key={item.id}
-                to={item.to}
-                onClick={() => {
-                  if (item.id === "shared-math" && !progress.plannerDays.includes(stamp)) {
-                    setProgress(
-                      patchHybridProgress({
-                        plannerDays: [...progress.plannerDays, stamp],
-                      }),
-                    );
-                  }
-                  if (item.to.includes("english")) {
-                    setProgress(
-                      patchHybridProgress({
-                        englishSessions: loadHybridProgress().englishSessions + 1,
-                      }),
-                    );
-                  }
-                  if (item.to.includes("german")) {
-                    setProgress(
-                      patchHybridProgress({
-                        germanSessions: loadHybridProgress().germanSessions + 1,
-                      }),
-                    );
-                  }
-                }}
-                className={cn(
-                  "flex items-start gap-4 rounded-2xl border bg-card p-4 transition-all hover:-translate-y-0.5 hover:shadow-md",
-                  done ? "border-teal-300/80" : "border-border",
-                )}
-              >
-                <span
-                  className="grid h-8 w-8 shrink-0 place-items-center rounded-lg text-xs font-bold text-white"
-                  style={{ backgroundColor: done ? HYBRID_ACCENT : "#64748B" }}
-                >
-                  {idx + 1}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h3 className="font-display text-lg font-semibold">{item.title}</h3>
-                    <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-                      ~{item.minutes} min
-                    </span>
-                    {done ? (
-                      <span className="text-[10px] font-semibold uppercase tracking-wide text-teal-700">
-                        In progress
-                      </span>
-                    ) : null}
-                  </div>
-                  <p className="mt-1 text-sm text-muted-foreground">{item.blurb}</p>
-                </div>
-                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground" />
-              </LocalizedLink>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="mt-12">
-        <h2 className="font-display text-2xl font-bold">Hybrid modes</h2>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Modes that do not exist in single-track courses.
-        </p>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {MODES.map((mode) => {
-            const Icon = mode.icon;
-            return (
-              <LocalizedLink
-                key={mode.to}
-                to={mode.to}
-                className="group rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-                style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
-              >
-                <span
-                  className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg text-white"
-                  style={{ backgroundColor: HYBRID_ACCENT }}
-                >
-                  <Icon className="h-4 w-4" />
-                </span>
-                <h3 className="font-display text-lg font-semibold">{mode.title}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{mode.blurb}</p>
-              </LocalizedLink>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="mt-12">
-        <h2 className="font-display text-2xl font-bold">Library</h2>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Deep links into Full BBE and Full WiSo banks — Hybrid orchestrates, it does not duplicate.
-        </p>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {LIBRARY.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              onClick={() => {
-                if ("onOpen" in item && typeof item.onOpen === "function") item.onOpen();
-              }}
-              className="rounded-xl border border-border bg-card px-4 py-3 transition-colors hover:bg-secondary"
+      <main className="px-6 py-16 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <p
+              className="mb-3 text-xs font-semibold uppercase tracking-[0.2em]"
+              style={{ color: TEAL }}
             >
-              <p className="text-sm font-semibold">{item.title}</p>
-              <p className="text-xs text-muted-foreground">{item.blurb}</p>
-            </Link>
-          ))}
+              Hybrid · BBE + WiSo
+            </p>
+            <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
+              Hybrid Course
+            </h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Choose a subject, or open the same study modes you already know from both full courses.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {subjects.map((s) => (
+              <div
+                key={s.id}
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                style={{ borderTop: `4px solid ${s.accent}` }}
+              >
+                <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+                  <img
+                    src={s.image}
+                    alt={`${s.title} practice`}
+                    width={768}
+                    height={576}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <span
+                    className="absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white shadow-sm"
+                    style={{ backgroundColor: s.accent }}
+                  >
+                    {s.tag}
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <h2 className="font-display text-xl font-semibold text-foreground">{s.title}</h2>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    {s.description}
+                  </p>
+                  <Link
+                    to={s.to}
+                    onClick={() => {
+                      if (s.track) storeExamTrack(s.track);
+                      if ("overlay" in s) rememberOverlay(s.overlay);
+                    }}
+                    className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+                    style={{
+                      backgroundColor: s.accent,
+                      boxShadow: `0 4px 14px -4px ${s.accent}80`,
+                    }}
+                  >
+                    Go to tasks →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <section className="mt-14">
+            <div className="mb-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                Study modes
+              </p>
+              <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                Same modes as both full courses
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm text-muted-foreground sm:text-base">
+                Mocks, builders, flashcards, matching, and tutor exam — BBE and WiSo, side by side.
+              </p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {studyModes.map((tool) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.id}
+                    to={tool.to}
+                    onClick={() => storeExamTrack(tool.track)}
+                    className="group flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md sm:flex-row sm:items-center sm:justify-between"
+                    style={{ borderTop: `4px solid ${tool.accent}` }}
+                  >
+                    <div className="flex gap-4">
+                      <span
+                        className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-white"
+                        style={{ backgroundColor: tool.accent }}
+                      >
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <div>
+                        <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
+                        <p className="mt-1 max-w-xl text-sm text-muted-foreground">{tool.blurb}</p>
+                      </div>
+                    </div>
+                    <span
+                      className="mt-4 shrink-0 text-xs font-semibold sm:mt-0"
+                      style={{ color: tool.accent }}
+                    >
+                      {tool.cta}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+
+          <section className="mt-14">
+            <div className="mb-6">
+              <p
+                className="text-xs font-semibold uppercase tracking-[0.2em]"
+                style={{ color: TEAL }}
+              >
+                Hybrid-only
+              </p>
+              <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                Dual-exam modes
+              </h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {hybridModes.map((tool) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.id}
+                    to={tool.to}
+                    className="group flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                    style={{ borderTop: `4px solid ${TEAL}` }}
+                  >
+                    <span
+                      className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg text-white"
+                      style={{ backgroundColor: TEAL }}
+                    >
+                      <Icon className="h-4 w-4" />
+                    </span>
+                    <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
+                    <p className="mt-2 flex-1 text-sm text-muted-foreground">{tool.blurb}</p>
+                    <span className="mt-4 text-xs font-semibold" style={{ color: TEAL }}>
+                      {tool.cta}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
         </div>
-      </section>
-    </HybridShell>
+      </main>
+    </div>
   );
 }

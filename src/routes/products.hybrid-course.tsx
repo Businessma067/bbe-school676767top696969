@@ -152,7 +152,7 @@ export function HybridCourseProductPage() {
                 className="inline-flex items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white"
                 style={{ backgroundColor: HYBRID_ACCENT }}
               >
-                Go to Hybrid hub →
+                Go to course →
               </Link>
             ) : (
               <button
