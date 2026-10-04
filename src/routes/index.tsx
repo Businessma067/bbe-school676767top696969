@@ -51,12 +51,13 @@ export const Route = createFileRoute("/")({
 });
 
 type ExamOption = {
-  id: "bbe" | "wiso";
+  id: "bbe" | "wiso" | "hybrid";
   label: string;
   title: string;
   differences: string[];
   cta: string;
-  to: string;
+  to?: string;
+  comingSoon?: boolean;
 };
 
 const EXAM_OPTIONS: ExamOption[] = [
@@ -85,6 +86,19 @@ const EXAM_OPTIONS: ExamOption[] = [
     ],
     cta: "Enter WiSo preparation",
     to: "/wiso",
+  },
+  {
+    id: "hybrid",
+    label: "Hybrid",
+    title: "Hybrid BBE + WiSo Course",
+    differences: [
+      "Prepare for both exams in one plan",
+      "Shared math and economics once",
+      "English + German overlays",
+      "Dual BBE / WiSo practice modes",
+    ],
+    cta: "Coming soon",
+    comingSoon: true,
   },
 ];
 
@@ -124,45 +138,54 @@ export function Index() {
                 Step by step preparation for your 2027 WU exam
               </h1>
               <p className="mt-3 font-display text-base font-semibold tracking-wide text-muted-foreground sm:mt-4 sm:text-xl">
-                WiSo and BBE
+                WiSo, BBE, and Hybrid
               </p>
               <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
-                One platform for both entrance paths: pick the track that matches how you want to study
-                at WU Vienna.
+                One platform for both entrance paths: pick a single track, or wait for Hybrid if you
+                want to prepare for BBE and WiSo together.
               </p>
             </div>
 
-            <div className="mx-auto mt-8 flex max-w-5xl flex-col gap-4 md:mt-10 md:flex-row md:items-stretch md:gap-6">
+            <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-4 md:mt-10 md:grid-cols-3 md:items-stretch md:gap-5">
               {EXAM_OPTIONS.map((exam) => {
                 const isWiso = exam.id === "wiso";
+                const isHybrid = exam.id === "hybrid";
                 return (
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex w-full flex-1 flex-col rounded-2xl border p-5 sm:p-8",
-                      isWiso
-                        ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
-                        : "border-border bg-card",
+                      "flex w-full flex-col rounded-2xl border p-5 sm:p-7",
+                      isHybrid
+                        ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
+                        : isWiso
+                          ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
+                          : "border-border bg-card",
                     )}
                   >
                     <div className="flex items-center gap-3">
                       <div
                         className={cn(
                           "grid h-11 w-11 shrink-0 place-items-center rounded-xl shadow-md ring-1",
-                          isWiso
-                            ? "bg-gradient-to-br from-indigo-700 via-indigo-600 to-indigo-800 ring-indigo-500/30"
-                            : "bg-gradient-to-br from-primary via-accent to-primary ring-primary/30",
+                          isHybrid
+                            ? "bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 ring-teal-500/30"
+                            : isWiso
+                              ? "bg-gradient-to-br from-indigo-700 via-indigo-600 to-indigo-800 ring-indigo-500/30"
+                              : "bg-gradient-to-br from-primary via-accent to-primary ring-primary/30",
                         )}
                         aria-hidden
                       >
-                        <span className="font-display text-xs font-bold tracking-tight text-primary-foreground" data-no-i18n>
+                        <span className="font-display text-[10px] font-bold tracking-tight text-primary-foreground" data-no-i18n>
                           {exam.label}
                         </span>
                       </div>
                       <p
                         className={cn(
                           "text-xs font-semibold uppercase tracking-wide",
-                          isWiso ? "text-indigo-800 dark:text-indigo-300" : "text-primary",
+                          isHybrid
+                            ? "text-teal-800 dark:text-teal-300"
+                            : isWiso
+                              ? "text-indigo-800 dark:text-indigo-300"
+                              : "text-primary",
                         )}
                         data-no-i18n
                       >
@@ -175,19 +198,21 @@ export function Index() {
                     >
                       {exam.title}
                     </h2>
-                    <ul className={cn("mt-5", isWiso ? "space-y-2" : "space-y-3.5")}>
+                    <ul className={cn("mt-5", isWiso || isHybrid ? "space-y-2" : "space-y-3.5")}>
                       {exam.differences.map((item) => (
                         <li
                           key={item}
                           className={cn(
                             "flex items-start gap-2 text-foreground",
-                            isWiso ? "text-sm sm:text-[0.95rem]" : "text-[0.95rem] sm:text-base",
+                            isWiso || isHybrid
+                              ? "text-sm sm:text-[0.95rem]"
+                              : "text-[0.95rem] sm:text-base",
                           )}
                         >
                           <span
                             className={cn(
                               "mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full",
-                              isWiso ? "bg-indigo-700" : "bg-primary",
+                              isHybrid ? "bg-teal-700" : isWiso ? "bg-indigo-700" : "bg-primary",
                             )}
                           />
                           {item}
@@ -195,19 +220,29 @@ export function Index() {
                       ))}
                     </ul>
                     <div className="mt-auto pt-6">
-                      <LocalizedLink
-                        to={exam.to}
-                        onClick={() => storeExamTrack(exam.id)}
-                        className={cn(
-                          "inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
-                          isWiso
-                            ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
-                            : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
-                        )}
-                      >
-                        {exam.cta}
-                        <ArrowRight className="h-4 w-4" />
-                      </LocalizedLink>
+                      {exam.comingSoon || !exam.to ? (
+                        <button
+                          type="button"
+                          disabled
+                          className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-sm bg-teal-700/80 px-5 py-3.5 text-sm font-semibold text-white opacity-90"
+                        >
+                          {exam.cta}
+                        </button>
+                      ) : (
+                        <LocalizedLink
+                          to={exam.to}
+                          onClick={() => storeExamTrack(exam.id === "wiso" ? "wiso" : "bbe")}
+                          className={cn(
+                            "inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+                            isWiso
+                              ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
+                              : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                          )}
+                        >
+                          {exam.cta}
+                          <ArrowRight className="h-4 w-4" />
+                        </LocalizedLink>
+                      )}
                     </div>
                   </article>
                 );
@@ -434,6 +469,11 @@ function SiteFooter() {
                 className="text-foreground hover:underline"
               >
                 Full WiSo Course
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/products" className="text-foreground hover:underline">
+                Hybrid BBE + WiSo (Coming soon)
               </LocalizedLink>
             </li>
             <li>

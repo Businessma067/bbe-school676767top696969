@@ -69,10 +69,12 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Your 2027 WU WiSo exam, prepared one stage at a time":
       "Deine WU-WiSo-Prüfung 2027, vorbereitet Stufe für Stufe",
     "WiSo and BBE": "WiSo und BBE",
+    "WiSo, BBE, and Hybrid": "WiSo, BBE und Hybrid",
     "One platform. Two entrance exams. Pick the path that matches how you want to study at WU Vienna.":
       "Eine Plattform. Zwei Aufnahmeprüfungen. Wähle den Weg, der zu deinem Studium an der WU Wien passt.",
     "Enter BBE preparation": "Zur BBE-Vorbereitung",
     "Enter WiSo preparation": "Zur WiSo-Vorbereitung",
+    "Coming soon": "Demnächst",
     "Learn more about the difference between the exams":
       "Mehr über die Unterschiede zwischen den Prüfungen erfahren",
     "Why Choose Us": "Warum wir",
@@ -297,10 +299,12 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Your 2027 WU WiSo exam, prepared one stage at a time":
       "Твій іспит WU WiSo 2027, підготовка крок за кроком",
     "WiSo and BBE": "WiSo та BBE",
+    "WiSo, BBE, and Hybrid": "WiSo, BBE і Hybrid",
     "One platform. Two entrance exams. Pick the path that matches how you want to study at WU Vienna.":
       "Одна платформа. Два вступні іспити. Обери шлях, який відповідає тому, як ти хочеш навчатися у WU Vienna.",
     "Enter BBE preparation": "Перейти до підготовки BBE",
     "Enter WiSo preparation": "Перейти до підготовки WiSo",
+    "Coming soon": "Незабаром",
     "Learn more about the difference between the exams":
       "Дізнатися більше про різницю між іспитами",
     "Why Choose Us": "Чому ми",

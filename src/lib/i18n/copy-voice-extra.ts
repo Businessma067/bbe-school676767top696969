@@ -6,6 +6,8 @@
 export const copyVoiceExtraDe: Record<string, string> = {
   "One platform for both entrance paths: pick the track that matches how you want to study at WU Vienna.":
     "Eine Plattform für beide Aufnahmewege: wähl den Track, der zu deinem Studium an der WU Wien passt.",
+  "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
+    "Eine Plattform für beide Aufnahmewege: wähl einen Track, oder warte auf Hybrid, wenn du BBE und WiSo zusammen vorbereiten willst.",
   "WU’s English-taught bachelor with a smaller intake of about 240 places, an international cohort, and a winter start only. The exam covers Economics and Business, English, and Mathematics.":
     "Der englischsprachige Bachelor der WU mit kleinerer Aufnahme von etwa 240 Plätzen, internationaler Kohorte und nur Winterstart. Die Prüfung umfasst Economics and Business, Englisch und Mathematik.",
   "Exam and study language: English": "Prüfungs- und Studiensprache: Englisch",
@@ -190,6 +192,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
 export const copyVoiceExtraUk: Record<string, string> = {
   "One platform for both entrance paths: pick the track that matches how you want to study at WU Vienna.":
     "Одна платформа для обох вступних шляхів: обери трек, який пасує до того, як ти хочеш вчитися у WU Vienna.",
+  "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
+    "Одна платформа для обох вступних шляхів: обери один трек або чекай на Hybrid, якщо хочеш готуватися до BBE і WiSo разом.",
   "WU’s English-taught bachelor with a smaller intake of about 240 places, an international cohort, and a winter start only. The exam covers Economics and Business, English, and Mathematics.":
     "Англомовний бакалавр WU з меншим набором близько 240 місць, міжнародною когортою і лише зимовим стартом. Іспит охоплює Economics and Business, англійську та математику.",
   "Exam and study language: English": "Мова іспиту й навчання: англійська",

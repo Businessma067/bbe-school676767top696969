@@ -30,6 +30,16 @@ export const homeExtraDe: Record<string, string> = {
   "Subjects: Economics, Math, German": "Fächer: Wirtschaft, Mathematik, Deutsch",
   "Winter semester start only": "Nur Wintersemester-Start",
   "Winter or summer start possible": "Winter- oder Sommersemester-Start möglich",
+  "Hybrid BBE + WiSo Course": "Hybrid-Kurs BBE + WiSo",
+  "Prepare for both exams in one plan": "Vorbereitung auf beide Prüfungen in einem Plan",
+  "Shared math and economics once": "Gemeinsame Mathematik und Wirtschaft einmal",
+  "English + German overlays": "Englisch- und Deutsch-Overlays",
+  "Dual BBE / WiSo practice modes": "Doppelte Übungsmodi BBE / WiSo",
+  "Coming soon": "Demnächst",
+  "Hybrid BBE + WiSo (Coming soon)": "Hybrid BBE + WiSo (Demnächst)",
+  "WiSo, BBE, and Hybrid": "WiSo, BBE und Hybrid",
+  "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
+    "Eine Plattform für beide Aufnahmewege: wähl einen Track, oder warte auf Hybrid, wenn du BBE und WiSo zusammen vorbereiten willst.",
 
   // ---------- Why choose us ----------
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":
@@ -184,6 +194,16 @@ export const homeExtraUk: Record<string, string> = {
   "Subjects: Economics, Math, German": "Предмети: економіка, математика, німецька",
   "Winter semester start only": "Лише початок у зимовому семестрі",
   "Winter or summer start possible": "Можливий початок узимку або влітку",
+  "Hybrid BBE + WiSo Course": "Гібридний курс BBE + WiSo",
+  "Prepare for both exams in one plan": "Підготовка до обох іспитів в одному плані",
+  "Shared math and economics once": "Спільні математика й економіка один раз",
+  "English + German overlays": "Англійський і німецький overlays",
+  "Dual BBE / WiSo practice modes": "Подвійні режими практики BBE / WiSo",
+  "Coming soon": "Незабаром",
+  "Hybrid BBE + WiSo (Coming soon)": "Hybrid BBE + WiSo (Незабаром)",
+  "WiSo, BBE, and Hybrid": "WiSo, BBE і Hybrid",
+  "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
+    "Одна платформа для обох вступних шляхів: обери один трек або чекай на Hybrid, якщо хочеш готуватися до BBE і WiSo разом.",
 
   // ---------- Why choose us ----------
   "Everything you need to prepare for a WU entrance exam, built around the real format, scoring, and time pressure.":
