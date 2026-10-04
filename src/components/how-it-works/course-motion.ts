@@ -30,7 +30,11 @@ export function evenExplanation(raw: string): string {
     .split(/\n\n+/)
     .map((part) => part.trim())
     .filter(Boolean);
-  const verdict = [...parts].reverse().find((part) => /statement is (?:true|false)/i.test(part));
+  const verdict = [...parts].reverse().find(
+    (part) =>
+      /statement is (?:true|false)/i.test(part) ||
+      /die aussage ist (?:wahr|falsch|richtig)/i.test(part),
+  );
   const prose = parts.find(
     (part) => part !== verdict && !isLetterHeader(part) && !isFormulaDump(part),
   );
@@ -149,21 +153,23 @@ async function glideWithPointer(
   const from = cursorFrom(stage);
   let x = from.x;
   let y = from.y;
+  let prev = performance.now();
+  let lastSpot: { x: number; y: number } | null = null;
   await api.tween(duration, (eased) => {
+    const now = performance.now();
+    const dt = Math.min(0.05, Math.max(0, (now - prev) / 1000));
+    prev = now;
     panel.scrollTop = fromTop + (dest - fromTop) * eased;
     const spot = spotAt(eased);
     if (!spot) return;
-    let dx = (spot.x - x) * 0.2;
-    let dy = (spot.y - y) * 0.2;
-    const step = Math.hypot(dx, dy);
-    if (step > 24) {
-      dx *= 24 / step;
-      dy *= 24 / step;
-    }
-    x += dx;
-    y += dy;
+    lastSpot = spot;
+    // Time constant, not a per-frame fraction, so a 30fps hitch still draws a curve.
+    const follow = 1 - Math.exp(-dt / 0.085);
+    x += (spot.x - x) * follow;
+    y += (spot.y - y) * follow;
     api.setCursorAt({ x, y });
   });
+  if (lastSpot) api.setCursorAt(lastSpot);
 }
 
 function cursorFrom(stage: HTMLElement) {

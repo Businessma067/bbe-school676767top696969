@@ -79,7 +79,10 @@ function Reader({
 }
 
 /** How it works · Theory: open math chapters 1, 10 and 11 and pause on three highlights in each. */
-export function CourseTheoryDemo() {
+export function CourseTheoryDemo({
+  rest = 1,
+  lockCopy = false,
+}: { rest?: number; lockCopy?: boolean } = {}) {
   const [open, setOpen] = useState<number | null>(null);
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
@@ -107,7 +110,7 @@ export function CourseTheoryDemo() {
       await readChapter(num);
     }
     await api.wait(360);
-  }, []);
+  }, [rest], { rest });
 
   const chapter = open == null ? null : MATH_COURSE_THEORY[open];
 
@@ -118,6 +121,7 @@ export function CourseTheoryDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
       overlay={
         chapter ? (
           <Reader

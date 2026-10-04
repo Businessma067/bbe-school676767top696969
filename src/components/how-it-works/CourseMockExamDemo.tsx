@@ -65,7 +65,10 @@ const COMPLETED = completedAnswers();
 type Phase = "exam" | "check" | "stats" | "tasks";
 
 /** How it works · Mock Exams: the live 34-question paper, full screen. */
-export function CourseMockExamDemo() {
+export function CourseMockExamDemo({
+  rest = 1,
+  lockCopy = false,
+}: { rest?: number; lockCopy?: boolean } = {}) {
   const [phase, setPhase] = useState<Phase>("exam");
   const [index, setIndex] = useState(0);
   const [marks, setMarks] = useState<Record<string, boolean[]>>({});
@@ -163,7 +166,7 @@ export function CourseMockExamDemo() {
     await api.moveTo('[data-d="prose0"]', 40);
     await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
     await api.wait(280);
-  }, []);
+  }, [rest], { rest });
 
   const question = QUESTIONS[index] ?? QUESTIONS[0]!;
   const currentMarks = marks[question.id] ?? EMPTY_MARKS;
@@ -182,6 +185,7 @@ export function CourseMockExamDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
       bleed
     >
       {phase === "exam" ? (

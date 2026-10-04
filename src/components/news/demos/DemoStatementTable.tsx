@@ -13,6 +13,8 @@ type DemoStatementTableProps = {
   /** data-d attribute prefix, e.g. "m" → data-d="m0". */
   dataPrefix?: string;
   className?: string;
+  statementLabel?: string;
+  trueLabel?: string;
 };
 
 /**
@@ -26,6 +28,8 @@ export function DemoStatementTable({
   answerKey,
   dataPrefix = "m",
   className,
+  statementLabel = "Statement",
+  trueLabel = "True",
 }: DemoStatementTableProps) {
   const showVerdict = checked && Array.isArray(answerKey);
 
@@ -38,8 +42,8 @@ export function DemoStatementTable({
     >
       <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
         <span className="w-6 text-center">#</span>
-        <span className="flex-1">Statement</span>
-        <span className="w-14 text-center">True</span>
+        <span className="flex-1">{statementLabel}</span>
+        <span className="w-14 text-center">{trueLabel}</span>
         {showVerdict ? <span className="w-6" aria-hidden /> : null}
       </li>
       {statements.map((stmt, i) => {

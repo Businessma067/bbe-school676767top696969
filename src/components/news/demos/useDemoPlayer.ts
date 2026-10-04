@@ -52,7 +52,7 @@ export function useDemoPlayer(
   run: (api: DemoPlayerApi) => Promise<void>,
   deps: unknown[] = [],
   /** `flow` is the study-tool pace: steady travel, a short click, then the next move. */
-  options?: { pace?: number; flow?: boolean },
+  options?: { pace?: number; flow?: boolean; rest?: number },
 ): {
   stageRef: RefObject<HTMLDivElement | null>;
   scrollRef: RefObject<HTMLDivElement | null>;
@@ -70,9 +70,11 @@ export function useDemoPlayer(
   const [fade, setFade] = useState(false);
   const flow = options?.flow !== false;
   const pace = Math.min(2.4, Math.max(1, options?.pace ?? (flow ? 1.45 : 1)));
+  const rest = options?.rest ?? 1;
+  const cinematic = rest > 1;
   const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
-  const glidePxPerMs = 0.32 * pace;
-  const glideMinMs = Math.max(200, 320 / pace);
+  const glidePxPerMs = cinematic ? 0.2 * pace : 0.32 * pace;
+  const glideMinMs = cinematic ? Math.max(480, 560 / pace) : Math.max(200, 320 / pace);
 
   useEffect(() => {
     const el = stageRef.current;
@@ -92,7 +94,7 @@ export function useDemoPlayer(
     const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
     const wait = async (ms: number) => {
-      await sleep(ms);
+      await sleep(cinematic ? ms * rest : ms);
       while (!cancelled && !visibleRef.current) await sleep(200);
     };
 
@@ -385,7 +387,7 @@ export function useDemoPlayer(
       lastSelector = selector;
       await settleOn(selector);
       if (cancelled) return;
-      await wait(dwell);
+      await wait(cinematic ? Math.max(dwell, 160) : dwell);
     };
 
     const reveal = async (selector: string) => {
