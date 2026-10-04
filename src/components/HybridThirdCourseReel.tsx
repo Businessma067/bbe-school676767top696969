@@ -1,11 +1,10 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import hallAsset from "@/assets/exam-hall-real.png.asset.json";
 import { cn } from "@/lib/utils";
 
-const HOLD_MS = 5600;
 const DROP_MS = 900;
 
 const PAGES = [
@@ -15,13 +14,17 @@ const PAGES = [
 ] as const;
 
 /**
- * Three full-bleed pages. The visible page slides down and the next one is
- * already underneath, so the document itself never moves.
+ * The whole green square is the scroller. Wheel or swipe moves that square
+ * to the next page; the rest of the document stays put until the last page.
  */
 export function HybridThirdCourseReel() {
   const [front, setFront] = useState(0);
   const [dropTo, setDropTo] = useState<number | null>(null);
+  const [dir, setDir] = useState<"down" | "up">("down");
   const [reduceMotion, setReduceMotion] = useState(false);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const frontRef = useRef(0);
+  const busyRef = useRef(false);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -32,47 +35,83 @@ export function HybridThirdCourseReel() {
   }, []);
 
   useEffect(() => {
-    if (reduceMotion || dropTo !== null) return;
-    const id = window.setTimeout(() => setDropTo((front + 1) % PAGES.length), HOLD_MS);
-    return () => window.clearTimeout(id);
-  }, [front, dropTo, reduceMotion]);
-
-  useEffect(() => {
     if (dropTo === null) return;
     const id = window.setTimeout(() => {
+      frontRef.current = dropTo;
       setFront(dropTo);
       setDropTo(null);
-    }, DROP_MS + 40);
+      busyRef.current = false;
+    }, reduceMotion ? 0 : DROP_MS + 40);
     return () => window.clearTimeout(id);
-  }, [dropTo]);
+  }, [dropTo, reduceMotion]);
 
-  const goTo = (index: number) => {
-    if (dropTo !== null || index === front) return;
+  const begin = (to: number) => {
+    if (busyRef.current || to === frontRef.current || to < 0 || to >= PAGES.length) return false;
     if (reduceMotion) {
-      setFront(index);
-      return;
+      frontRef.current = to;
+      setFront(to);
+      return true;
     }
-    setDropTo(index);
+    busyRef.current = true;
+    setDir(to > frontRef.current ? "down" : "up");
+    setDropTo(to);
+    return true;
   };
 
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el) return;
+    let acc = 0;
+    const onWheel = (event: WheelEvent) => {
+      const index = frontRef.current;
+      const atStart = index === 0;
+      const atEnd = index === PAGES.length - 1;
+      if (event.deltaY > 0 && atEnd && !busyRef.current) return;
+      if (event.deltaY < 0 && atStart && !busyRef.current) return;
+      event.preventDefault();
+      if (busyRef.current) return;
+      acc += event.deltaY;
+      if (Math.abs(acc) < 36) return;
+      const next = acc > 0 ? index + 1 : index - 1;
+      acc = 0;
+      begin(next);
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, [reduceMotion]);
+
+  const touch = useRef<{ y: number } | null>(null);
+
   return (
-    <div className="relative mx-auto mt-8 w-full max-w-[90rem] px-3 sm:mt-10 sm:px-6 lg:px-8">
-      <div
-        className="relative h-[34rem] overflow-hidden rounded-3xl border border-white/10 shadow-[0_30px_80px_-48px_rgba(0,0,0,0.8)] sm:h-[36rem] lg:h-[min(70vh,40rem)]"
-        role="region"
-        aria-roledescription="carousel"
-        aria-label="Why a third course"
-      >
+    <div
+      ref={stageRef}
+      className="relative h-[100svh] min-h-[36rem] w-full overflow-hidden bg-[#071612]"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Why a third course"
+      onTouchStart={(event) => {
+        touch.current = { y: event.touches[0]?.clientY ?? 0 };
+      }}
+      onTouchEnd={(event) => {
+        const start = touch.current;
+        touch.current = null;
+        if (!start) return;
+        const dy = (event.changedTouches[0]?.clientY ?? start.y) - start.y;
+        if (Math.abs(dy) < 48) return;
+        begin(frontRef.current + (dy < 0 ? 1 : -1));
+      }}
+    >
         {PAGES.map((page, index) => {
           const dropping = dropTo !== null && index === front;
           const underneath = dropTo === index;
+          const shift = dir === "down" ? "105%" : "-105%";
           return (
             <article
               key={page.id}
               aria-hidden={index !== front}
-              className="absolute inset-0"
+              className="absolute inset-0 bg-[#071612]"
               style={{
-                transform: dropping ? "translate3d(0, 105%, 0)" : "translate3d(0, 0, 0)",
+                transform: dropping ? `translate3d(0, ${shift}, 0)` : "translate3d(0, 0, 0)",
                 transition: dropping ? `transform ${DROP_MS}ms cubic-bezier(0.22, 1, 0.36, 1)` : "none",
                 zIndex: dropping ? 3 : underneath ? 2 : index === front ? 2 : 1,
               }}
@@ -94,7 +133,7 @@ export function HybridThirdCourseReel() {
                 type="button"
                 aria-label={page.label}
                 aria-current={selected ? "true" : undefined}
-                onClick={() => goTo(index)}
+                onClick={() => begin(index)}
                 className="flex h-10 items-center"
               >
                 <span
@@ -103,21 +142,12 @@ export function HybridThirdCourseReel() {
                     selected ? "w-12" : "w-2.5",
                   )}
                 >
-                  {selected && dropTo === null && !reduceMotion ? (
-                    <span
-                      key={front}
-                      className="hybrid-reel-progress absolute inset-0 origin-left bg-teal-300"
-                    />
-                  ) : null}
-                  {selected && (dropTo !== null || reduceMotion) ? (
-                    <span className="absolute inset-0 bg-teal-300" />
-                  ) : null}
+                  {selected ? <span className="absolute inset-0 bg-teal-300" /> : null}
                 </span>
               </button>
             );
           })}
         </div>
-      </div>
     </div>
   );
 }
@@ -140,7 +170,10 @@ function PageFrame({
       <div className="absolute inset-y-0 right-0 w-full lg:w-[58%]">{visual}</div>
       <div className="pointer-events-none absolute inset-y-0 left-0 w-full bg-gradient-to-t from-[#071612] via-[#071612]/75 to-[#071612]/20 lg:w-[46%] lg:bg-gradient-to-r lg:from-[#071612] lg:via-[#071612]/88 lg:to-transparent" />
       <div className="relative z-10 flex h-full w-full flex-col justify-end px-6 pb-16 pt-8 sm:px-10 lg:w-[46%] lg:justify-center lg:px-14 lg:pb-12">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/80">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/55">
+          Why a third course
+        </p>
+        <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/80">
           <span data-no-i18n>{step}</span>
           {" · "}
           {kicker}

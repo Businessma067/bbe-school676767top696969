@@ -159,20 +159,12 @@ export function HybridLandingPage() {
           </div>
         </section>
 
-        <section id="why-a-third-course" className="why-choose-us--hybrid bg-why-us-bg py-14 sm:py-16 lg:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
-              Why a third course
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
-              Buying both full courses still leaves you with two plans. Hybrid keeps one queue and both exam formats.
-            </p>
-          </div>
+        <section id="why-a-third-course" className="why-choose-us--hybrid bg-[#071612]">
           <HybridThirdCourseReel />
-          <div className="mt-8 flex justify-center px-4">
+          <div className="flex justify-center bg-[#071612] px-4 py-8">
             <LocalizedLink
               to={ownsHybridCourse ? "/hybrid/course" : "/products/hybrid-course"}
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#ECFDF5] px-8 py-4 text-sm font-semibold text-[#042F2E] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-teal-200/30 bg-teal-800 px-8 py-4 text-sm font-semibold text-teal-50 transition-colors hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2 focus:ring-offset-[#071612]"
             >
               {ownsHybridCourse ? "Open Hybrid course" : "View Hybrid Course"}
               <ArrowRight className="h-4 w-4" />
