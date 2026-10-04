@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import mathAsset from "@/assets/math-bw.jpg.asset.json";
-import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import hallAsset from "@/assets/exam-hall-real.png.asset.json";
 import { cn } from "@/lib/utils";
@@ -112,7 +110,7 @@ export function HybridThirdCourseReel() {
               className="absolute inset-0 bg-[#071612]"
               style={{
                 transform: dropping ? `translate3d(0, ${shift}, 0)` : "translate3d(0, 0, 0)",
-                transition: dropping ? `transform ${DROP_MS}ms cubic-bezier(0.22, 1, 0.36, 1)` : "none",
+                transition: dropping ? `transform ${DROP_MS}ms cubic-bezier(0.4, 0, 0.2, 1)` : "none",
                 zIndex: dropping ? 3 : underneath ? 2 : index === front ? 2 : 1,
               }}
             >
@@ -164,20 +162,22 @@ function PageFrame({
   kicker: string;
   title: string;
   body: string;
-  photo: string;
+  photo?: string;
   children?: ReactNode;
 }) {
   return (
     <div className="relative h-full overflow-hidden bg-[#071612]">
-      <img
-        src={photo}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover"
-        onError={(event) => {
-          event.currentTarget.style.display = "none";
-        }}
-      />
-      <div className="pointer-events-none absolute inset-0 bg-[#071612]/35" />
+      {photo ? (
+        <img
+          src={photo}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+          }}
+        />
+      ) : null}
+      <div className={cn("pointer-events-none absolute inset-0", photo ? "bg-[#071612]/55" : "bg-[#071612]")} />
       <div className="absolute inset-0">{children}</div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[48%] bg-gradient-to-t from-[#071612] from-55% to-transparent" />
       <div className="relative z-10 flex h-full w-full flex-col justify-end px-6 pb-16 pt-8 sm:px-12 lg:px-16">
@@ -209,16 +209,8 @@ function SharedCorePage({ live }: { live: boolean }) {
       kicker="Shared core"
       title="One chapter counts for both papers."
       body="Mathematics and economics stay a single queue. You flip the wording between English and German. You do not restart the chapter."
-      photo={economicsAsset.url}
     >
-      <img
-        src={mathAsset.url}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-40"
-        onError={(event) => {
-          event.currentTarget.style.display = "none";
-        }}
-      />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(45,212,191,0.18),transparent_58%)]" />
       <div
         className={cn(
           "hybrid-flip absolute left-[6%] top-[9%] w-[min(52rem,90vw)] sm:left-[8%] sm:top-[12%]",
@@ -320,6 +312,38 @@ function Lane({
   );
 }
 
+function StudyClock({ live }: { live: boolean }) {
+  const ticks = Array.from({ length: 12 }, (_, index) => index);
+  return (
+    <div className="pointer-events-none absolute left-1/2 top-[40%] w-36 -translate-x-1/2 -translate-y-1/2 sm:top-[36%] sm:w-60" aria-hidden>
+      <svg viewBox="0 0 120 120" className="h-auto w-full drop-shadow-[0_0_18px_rgba(45,212,191,0.45)]">
+        <circle cx="60" cy="60" r="56" fill="#0c2a24" stroke="#99f6e4" strokeWidth="3.5" />
+        <circle cx="60" cy="60" r="50" fill="#071612" stroke="#5eead4" strokeWidth="1.5" />
+        {ticks.map((index) => (
+          <line
+            key={index}
+            x1="60"
+            y1="16"
+            x2="60"
+            y2={index % 3 === 0 ? 24 : 20}
+            stroke="#f0fdfa"
+            strokeWidth={index % 3 === 0 ? 2.6 : 1.3}
+            strokeLinecap="round"
+            transform={`rotate(${index * 30} 60 60)`}
+          />
+        ))}
+        <g className={cn("hybrid-clock-hand-slow", !live && "![animation:none]")}>
+          <line x1="60" y1="64" x2="60" y2="36" stroke="#5eead4" strokeWidth="4.5" strokeLinecap="round" />
+        </g>
+        <g className={cn("hybrid-clock-hand", !live && "![animation:none]")}>
+          <line x1="60" y1="66" x2="60" y2="24" stroke="#f8fffe" strokeWidth="2.4" strokeLinecap="round" />
+        </g>
+        <circle cx="60" cy="60" r="3.5" fill="#ccfbf1" />
+      </svg>
+    </div>
+  );
+}
+
 const MODES = [
   { time: "Morning", name: "BBE mock", note: "English clock" },
   { time: "Midday", name: "Bridge", note: "Same idea, two wordings" },
@@ -336,10 +360,7 @@ function EveryModePage({ live }: { live: boolean }) {
       body="Mocks, builders, flashcards, matching, and tutor stay. Hybrid adds Bridge, Mirror, Exam Flip, and a dual mock day so the two formats never blur together."
       photo={hallAsset.url}
     >
-      <div className="pointer-events-none absolute left-1/2 top-[42%] hidden h-48 w-48 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-teal-200/30 sm:grid sm:h-64 sm:w-64">
-        <span className="absolute left-1/2 top-1/2 h-px w-16 -translate-y-1/2 bg-teal-200 hybrid-clock-hand sm:w-24" />
-        <span className="h-2.5 w-2.5 rounded-full bg-teal-200" />
-      </div>
+      <StudyClock live={live} />
       <div className="absolute inset-x-0 top-0 grid grid-cols-2 gap-y-8 px-6 pt-14 sm:grid-cols-4 sm:px-10 sm:pt-16 lg:px-14">
         {MODES.map((mode, i) => (
           <div

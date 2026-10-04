@@ -1580,12 +1580,18 @@ body.flashcard-swiping {
   45%, 70% { opacity: 1; transform: translateY(-2px); }
 }
 
-.hybrid-clock-hand {
-  transform-origin: left center;
-  animation: hybrid-clock-hand 8s linear infinite;
+.hybrid-clock-hand,
+.hybrid-clock-hand-slow {
+  transform-box: view-box;
+  transform-origin: 60px 60px;
+  animation: hybrid-clock-spin 24s linear infinite;
 }
 
-@keyframes hybrid-clock-hand {
+.hybrid-clock-hand-slow {
+  animation-duration: 144s;
+}
+
+@keyframes hybrid-clock-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
@@ -1595,7 +1601,8 @@ body.flashcard-swiping {
   .hybrid-flip-inner,
   .hybrid-lane-track,
   .hybrid-mode-chip,
-  .hybrid-clock-hand {
+  .hybrid-clock-hand,
+  .hybrid-clock-hand-slow {
     animation: none;
   }
 }
