@@ -12,7 +12,7 @@ type Milestone = {
 };
 
 /** Accent CSS custom property (defined in styles.css). */
-export type PrepRoadmapAccent = "exam-red" | "wiso-blue";
+export type PrepRoadmapAccent = "exam-red" | "wiso-blue" | "hybrid-teal";
 
 const BBE_MILESTONES: Milestone[] = [
   {
@@ -65,7 +65,9 @@ const WISO_MILESTONES: Milestone[] = [
 ];
 
 function accentVar(accent: PrepRoadmapAccent): string {
-  return accent === "wiso-blue" ? "var(--wiso-blue)" : "var(--exam-red)";
+  if (accent === "wiso-blue") return "var(--wiso-blue)";
+  if (accent === "hybrid-teal") return "var(--hybrid-teal)";
+  return "var(--exam-red)";
 }
 
 function MilestoneIcon({
@@ -598,22 +600,50 @@ function MobileRoadmap({
   );
 }
 
+const HYBRID_MILESTONES: Milestone[] = [
+  {
+    title: "Free demos",
+    label: "Try BBE and WiSo starter tasks before you commit",
+    icon: "demo",
+    youAreHere: true,
+  },
+  {
+    title: "Shared fundamentals",
+    label: "Math and economics once, English and German in parallel",
+    icon: "lite",
+  },
+  {
+    title: "Dual simulation",
+    label: "Mocks, builders, flashcards, matching, and tutor for both exams",
+    icon: "full",
+  },
+  {
+    title: "Exam days",
+    label: "BBE and WiSo 2027 at WU Vienna",
+    icon: "exam",
+    destination: true,
+  },
+];
+
 export function PrepJourneyRoadmap({
   className,
   accent = "exam-red",
   track = "bbe",
 }: {
   className?: string;
-  /** BBE stakes red (default) or WiSo indigo blue. */
+  /** BBE stakes red (default), WiSo indigo, or Hybrid teal. */
   accent?: PrepRoadmapAccent;
-  track?: "bbe" | "wiso";
+  track?: "bbe" | "wiso" | "hybrid";
 }) {
-  const milestones = track === "wiso" ? WISO_MILESTONES : BBE_MILESTONES;
+  const milestones =
+    track === "wiso" ? WISO_MILESTONES : track === "hybrid" ? HYBRID_MILESTONES : BBE_MILESTONES;
   const youAreHereLabel = track === "wiso" ? "du bist hier" : "you are here";
   const ariaLabel =
     track === "wiso"
       ? "Schritt-für-Schritt-Vorbereitung: Kostenlose Demo, Grundlagen aufbauen, Vollsimulation, Prüfungstag"
-      : "Step by step preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day";
+      : track === "hybrid"
+        ? "Hybrid preparation: free demos, shared fundamentals, dual simulation, both exam days"
+        : "Step by step preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day";
 
   return (
     <div

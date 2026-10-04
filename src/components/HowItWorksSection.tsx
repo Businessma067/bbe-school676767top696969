@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 type MainTab = "course" | "theory" | "mock-exams" | "mock-builder" | "games";
 type CourseSubject = "economics" | "math" | "english" | "german";
 type StudyTool = "flashcards" | "matching" | "tutor-exam";
-export type HowItWorksTrack = "bbe" | "wiso";
+export type HowItWorksTrack = "bbe" | "wiso" | "hybrid";
 
 type ShowcaseSlide = {
   key: string;
@@ -194,6 +194,53 @@ const BBE_STUDY_TOOLS: ShowcaseSlide[] = [
   },
 ];
 
+const HYBRID_COURSE_SUBJECTS: ShowcaseSlide[] = [
+  {
+    key: "economics",
+    label: "Economics",
+    title: "English and German economics, one idea",
+    body: "Work BBE economics in English and Wirtschaft verstehen in German. Bridge cases train the same concept in both wordings so you do not study the chapter twice.",
+    cta: "Open Hybrid economics",
+    href: "/hybrid/course",
+    video: "/how-it-works/economics.mp4",
+    poster: "/how-it-works/economics-poster.jpg",
+    aspect: "16 / 9",
+  },
+  {
+    key: "math",
+    label: "Math",
+    title: "One math bank, two exam languages",
+    body: "Shared mathematics with an English or German stem. Timed mode, the exam calculator, and a full solution after you submit.",
+    cta: "Open shared math",
+    href: "/hybrid/math",
+    video: "/how-it-works/math.mp4",
+    poster: "/how-it-works/math-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+  {
+    key: "english",
+    label: "English",
+    title: "The BBE language section",
+    body: "Reading, grammar, and vocabulary for the English pillar. Show in text jumps from each explanation back to the passage.",
+    cta: "Open English",
+    href: "/hybrid/course",
+    video: "/how-it-works/english.mp4",
+    poster: "/how-it-works/english-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+  {
+    key: "german",
+    label: "German",
+    title: "The WiSo language section",
+    body: "Deutsches Sprachverständnis: reading passages with statements, then jump from each explanation back into the text.",
+    cta: "Open German",
+    href: "/hybrid/course",
+    video: "/how-it-works/english.mp4",
+    poster: "/how-it-works/english-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
 const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
   {
     key: "flashcards",
@@ -250,7 +297,12 @@ const INITIAL_LIGHTBOX_ZOOM = 1;
 
 export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }) {
   const { t } = useLanguage();
-  const courseSubjects = track === "wiso" ? WISO_COURSE_SUBJECTS : BBE_COURSE_SUBJECTS;
+  const courseSubjects =
+    track === "wiso"
+      ? WISO_COURSE_SUBJECTS
+      : track === "hybrid"
+        ? HYBRID_COURSE_SUBJECTS
+        : BBE_COURSE_SUBJECTS;
   const studyTools = track === "wiso" ? WISO_STUDY_TOOLS : BBE_STUDY_TOOLS;
   const mainTabs = track === "wiso" ? WISO_MAIN_TABS : BBE_MAIN_TABS;
   const [tab, setTab] = useState<MainTab>("course");
@@ -286,14 +338,15 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             : subject;
   const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
+  const liveTrack = track === "bbe" || track === "hybrid";
   const liveCourseDemo =
-    track === "bbe" &&
+    liveTrack &&
     tab === "course" &&
     (slide.key === "economics" || slide.key === "math" || slide.key === "english");
-  const liveMockDemo = track === "bbe" && tab === "mock-builder";
-  const liveMockExamDemo = track === "bbe" && tab === "mock-exams";
-  const liveStudyDemo = track === "bbe" && tab === "games";
-  const liveTheoryDemo = track === "bbe" && tab === "theory";
+  const liveMockDemo = liveTrack && tab === "mock-builder";
+  const liveMockExamDemo = liveTrack && tab === "mock-exams";
+  const liveStudyDemo = liveTrack && tab === "games";
+  const liveTheoryDemo = liveTrack && tab === "theory";
   const liveStage = liveCourseDemo || liveMockDemo || liveMockExamDemo || liveStudyDemo || liveTheoryDemo;
 
   const goSlide = (next: number) => {

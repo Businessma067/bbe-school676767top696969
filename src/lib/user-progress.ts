@@ -91,7 +91,7 @@ export const COURSE_CATALOG: Record<
   "hybrid-full-course": {
     name: "Hybrid BBE + WiSo Course",
     tier: "full",
-    href: "/hybrid",
+    href: "/hybrid/course",
   },
 };
 

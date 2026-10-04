@@ -102,6 +102,7 @@
   --ivory: #f2f1ed;
   --exam-red: #b3392a;                   /* stakes only: timers, negative marking, one CTA */
   --wiso-blue: #4338ca;                  /* WiSo track accent (indigo-700) — roadmap comet / nodes */
+  --hybrid-teal: #0f766e;                /* Hybrid course accent */
   --caramel: #d8d6ce;                    /* quiet hairline tone (legacy token) */
   --caramel-deep: #b3392a;
   --espresso: #161616;
@@ -164,6 +165,7 @@
   --ivory: #131210;
   --exam-red: #c94a3a;
   --wiso-blue: #818cf8;                  /* WiSo track accent (indigo-400) on dark */
+  --hybrid-teal: #2dd4bf;
   --caramel: #3a3832;
   --caramel-deep: #c94a3a;
   --espresso: #ecebe6;

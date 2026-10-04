@@ -1,7 +1,7 @@
 /** Hybrid BBE + WiSo course constants and helpers. */
 
 export const HYBRID_FULL_COURSE_SLUG = "hybrid-full-course" as const;
-export const HYBRID_HUB_HREF = "/hybrid" as const;
+export const HYBRID_HUB_HREF = "/hybrid/course" as const;
 export const HYBRID_PRODUCT_HREF = "/products/hybrid-course" as const;
 export const HYBRID_ACCENT = "#0F766E" as const;
 
@@ -13,7 +13,7 @@ export const HYBRID_IMPLIED_SLUGS = [
 ] as const;
 
 export const HYBRID_NAV = [
-  { to: "/hybrid", label: "Course", short: "Course" },
+  { to: "/hybrid/course", label: "Course", short: "Course" },
   { to: "/hybrid/math", label: "Shared Math", short: "Math" },
   { to: "/hybrid/bridge", label: "Bridge Cases", short: "Bridge" },
   { to: "/hybrid/mirror", label: "Mirror Drill", short: "Mirror" },

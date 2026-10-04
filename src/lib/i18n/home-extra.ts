@@ -38,6 +38,7 @@ export const homeExtraDe: Record<string, string> = {
   "Coming soon": "Demnächst",
   "Hybrid BBE + WiSo (Coming soon)": "Hybrid BBE + WiSo (Demnächst)",
   "Open Hybrid Course": "Hybrid-Kurs öffnen",
+  "Enter Hybrid preparation": "Zur Hybrid-Vorbereitung",
   "WiSo, BBE, and Hybrid": "WiSo, BBE und Hybrid",
   "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
     "Eine Plattform für beide Aufnahmewege: wähl einen Track, oder warte auf Hybrid, wenn du BBE und WiSo zusammen vorbereiten willst.",
@@ -205,6 +206,7 @@ export const homeExtraUk: Record<string, string> = {
   "Coming soon": "Незабаром",
   "Hybrid BBE + WiSo (Coming soon)": "Hybrid BBE + WiSo (Незабаром)",
   "Open Hybrid Course": "Відкрити Hybrid Course",
+  "Enter Hybrid preparation": "Перейти до підготовки Hybrid",
   "WiSo, BBE, and Hybrid": "WiSo, BBE і Hybrid",
   "One platform for both entrance paths: pick a single track, or wait for Hybrid if you want to prepare for BBE and WiSo together.":
     "Одна платформа для обох вступних шляхів: обери один трек або чекай на Hybrid, якщо хочеш готуватися до BBE і WiSo разом.",

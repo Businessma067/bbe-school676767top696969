@@ -113,3 +113,35 @@ export function FaqAccordion() {
 export function WisoFaqAccordion() {
   return <FaqSection items={wisoFaqs} />;
 }
+
+export const hybridFaqs = [
+  {
+    question: "What is the Hybrid BBE + WiSo Course?",
+    answer:
+      "It is a third course for people who want to sit both WU entrance exams. Shared math and economics are studied once. English and German stay as separate language lanes, and every study mode from both full courses is included.",
+  },
+  {
+    question: "Do I still get the full BBE and full WiSo libraries?",
+    answer:
+      "Yes. A Hybrid purchase unlocks the Hybrid course page plus Full BBE and Full WiSo: subject banks, mocks, mock builders, flashcards, matching, and tutor exam.",
+  },
+  {
+    question: "Will I have to do every chapter twice?",
+    answer:
+      "No. Mathematics is one bank with an English or German stem. Economics concepts can be bridged across languages. Only the language sections (English for BBE, German reading for WiSo) stay separate.",
+  },
+  {
+    question: "Which modes are on the Hybrid course page?",
+    answer:
+      "The same modes as both tracks: subject practice, full mocks, custom mock builders, flashcards, matching, and tutor exam, plus Hybrid-only Bridge Cases, Mirror Drill, Exam Flip, Dual Mock Day, and Decision Lab.",
+  },
+  {
+    question: "How much does Hybrid cost?",
+    answer:
+      "Hybrid is a one-time payment of €649. Existing full-course promocodes also apply at Hybrid checkout.",
+  },
+];
+
+export function HybridFaqAccordion() {
+  return <FaqSection items={hybridFaqs} />;
+}

@@ -143,7 +143,7 @@ const products: Product[] = [
     cta: "Buy Hybrid · €649",
     to: "/products/hybrid-course",
     ownedCta: "Go to Hybrid hub",
-    ownedTo: "/hybrid",
+    ownedTo: "/hybrid/course",
     badge: "Hybrid · New",
     accent: "hybrid",
   },

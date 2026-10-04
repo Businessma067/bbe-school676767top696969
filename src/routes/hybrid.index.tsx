@@ -1,426 +1,315 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
-import mathAsset from "@/assets/math-bw.jpg.asset.json";
-import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
-import {
-  ClipboardCheck,
-  FlipHorizontal2,
-  GitBranch,
-  Layers,
-  Scale,
-  Shuffle,
-  Sparkles,
-  Split,
-  Wand2,
-} from "lucide-react";
-import { LocalizedLink } from "@/components/LocalizedLink";
+import { createFileRoute } from "@tanstack/react-router";
+import { Suspense, lazy } from "react";
+import { ArrowRight } from "lucide-react";
+import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+
+import { ExamCountdown } from "@/components/ExamCountdown";
+import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
+import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
+import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
+import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
-import { storeExamTrack } from "@/lib/exam-track";
-import { HYBRID_ACCENT } from "@/lib/hybrid-course";
-import { patchHybridProgress, loadHybridProgress } from "@/lib/hybrid-progress";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { useFullCourseAccess } from "@/hooks/use-full-course-access";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+const HowItWorksSection = lazy(() =>
+  import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
+);
+
+const PATH = "/hybrid" as const;
+const TEAL = "#0F766E";
 
 export const Route = createFileRoute("/hybrid/")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/hybrid" }],
+    links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "Hybrid Course — Subjects & modes | BBE School" },
+      { title: "Hybrid BBE + WiSo Exam Prep 2027 | BBE School" },
       {
         name: "description",
         content:
-          "Hybrid BBE + WiSo course: economics, math, English, German, mocks, flashcards, matching, tutor exam, and dual-exam modes.",
+          "Prepare for both WU Vienna entrance exams in one course: shared math and economics, English and German, mocks, and the same study modes as Full BBE and Full WiSo.",
       },
-      { name: "robots", content: "noindex, follow" },
+      { property: "og:title", content: "Hybrid BBE + WiSo Exam Prep | BBE School" },
+      {
+        property: "og:description",
+        content:
+          "A third WU prep course for applicants who want BBE and WiSo together, with every practice mode from both tracks.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `https://bbe-school.com${PATH}` },
+      { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath(PATH),
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(hybridFaqs)) },
     ],
   }),
-  component: HybridCoursePage,
+  component: HybridLandingPage,
 });
 
-const TEAL = HYBRID_ACCENT;
-const ORANGE = "#C2643A";
-const INDIGO = "#3730A3";
+export function HybridLandingPage() {
+  const { ownsHybridCourse } = useFullCourseAccess();
 
-const subjects = [
-  {
-    id: "econ-bbe",
-    title: "Economics",
-    image: economicsAsset.url,
-    accent: ORANGE,
-    tag: "BBE · English",
-    description:
-      "Supply and demand, market structures, elasticities, and the English economics wording of the BBE exam.",
-    to: "/products/full-course-economics",
-    track: "bbe" as const,
-  },
-  {
-    id: "econ-wiso",
-    title: "Wirtschaft verstehen",
-    image: economicsAsset.url,
-    accent: INDIGO,
-    tag: "WiSo · German",
-    description:
-      "The same economics ideas in Wirtschaft-verstehen wording for the German-taught WiSo exam.",
-    to: "/wiso/products/full-course-economics",
-    track: "wiso" as const,
-  },
-  {
-    id: "math",
-    title: "Mathematics",
-    image: mathAsset.url,
-    accent: TEAL,
-    tag: "Shared · EN / DE",
-    description:
-      "One math bank for both exams. Flip English or German stems without studying the chapter twice.",
-    to: "/hybrid/math",
-    track: null,
-  },
-  {
-    id: "english",
-    title: "English",
-    image: englishAsset.url,
-    accent: "#2DD4A8",
-    tag: "BBE · Language",
-    description:
-      "Reading speed, vocabulary, and grammar for the BBE language section.",
-    to: "/products/full-course-english",
-    track: "bbe" as const,
-    overlay: "en" as const,
-  },
-  {
-    id: "german",
-    title: "Deutsches Sprachverständnis",
-    image: englishAsset.url,
-    accent: "#6366F1",
-    tag: "WiSo · Language",
-    description:
-      "German reading comprehension for the WiSo language section.",
-    to: "/wiso/products/full-course-german",
-    track: "wiso" as const,
-    overlay: "de" as const,
-  },
-] as const;
-
-const studyModes = [
-  {
-    id: "mock-bbe",
-    title: "Mock Exams · BBE",
-    blurb: "Full-length BBE simulations with English and wi2-style scoring.",
-    to: "/mock-exams",
-    accent: ORANGE,
-    icon: ClipboardCheck,
-    cta: "Open BBE mocks →",
-    track: "bbe" as const,
-  },
-  {
-    id: "mock-wiso",
-    title: "Probeprüfungen · WiSo",
-    blurb: "Full WiSo mocks with German reading and Teilpunktesystem pacing.",
-    to: "/wiso/mock-exams",
-    accent: INDIGO,
-    icon: ClipboardCheck,
-    cta: "Open WiSo mocks →",
-    track: "wiso" as const,
-  },
-  {
-    id: "builder-bbe",
-    title: "Custom Mock Builder",
-    blurb: "Build BBE mocks by textbook topic across Economics, Math, and English.",
-    to: "/products/custom-mock-builder",
-    accent: "#8B5E3C",
-    icon: Wand2,
-    cta: "Open BBE builder →",
-    track: "bbe" as const,
-  },
-  {
-    id: "builder-wiso",
-    title: "WiSo Mock Builder",
-    blurb: "Build WiSo mocks from Wirtschaft verstehen, Mathematik, and German reading.",
-    to: "/wiso/mock-builder",
-    accent: "#4338CA",
-    icon: Wand2,
-    cta: "Open WiSo builder →",
-    track: "wiso" as const,
-  },
-  {
-    id: "flash-bbe",
-    title: "Flashcards · BBE",
-    blurb: "Economics, math, and English recall decks from the BBE course.",
-    to: "/flashcards",
-    accent: ORANGE,
-    icon: Layers,
-    cta: "Open BBE flashcards →",
-    track: "bbe" as const,
-  },
-  {
-    id: "flash-wiso",
-    title: "Karteikarten · WiSo",
-    blurb: "German decks for Wirtschaft, Mathematik, and Sprachverständnis.",
-    to: "/wiso/flashcards",
-    accent: INDIGO,
-    icon: Layers,
-    cta: "Open WiSo flashcards →",
-    track: "wiso" as const,
-  },
-  {
-    id: "match-bbe",
-    title: "Matching · BBE",
-    blurb: "Pair each term with its meaning on the BBE decks.",
-    to: "/matching",
-    accent: "#C2703A",
-    icon: Shuffle,
-    cta: "Open BBE matching →",
-    track: "bbe" as const,
-  },
-  {
-    id: "match-wiso",
-    title: "Zuordnung · WiSo",
-    blurb: "Same WiSo decks as flashcards, matching drill.",
-    to: "/wiso/matching",
-    accent: "#4338CA",
-    icon: Shuffle,
-    cta: "Open WiSo matching →",
-    track: "wiso" as const,
-  },
-  {
-    id: "tutor-bbe",
-    title: "Tutor Exam · BBE",
-    blurb: "Guided BBE theory checks with a fresh mix each run.",
-    to: "/tutor-exam",
-    accent: "#E85D3A",
-    icon: Sparkles,
-    cta: "Open BBE tutor →",
-    track: "bbe" as const,
-  },
-  {
-    id: "tutor-wiso",
-    title: "Tutor-Prüfung · WiSo",
-    blurb: "Guided WiSo theory checks in German.",
-    to: "/wiso/tutor-exam",
-    accent: "#6366F1",
-    icon: Sparkles,
-    cta: "Open WiSo tutor →",
-    track: "wiso" as const,
-  },
-] as const;
-
-const hybridModes = [
-  {
-    id: "bridge",
-    title: "Bridge Cases",
-    blurb: "Same concept in English then German.",
-    to: "/hybrid/bridge",
-    icon: GitBranch,
-    cta: "Open bridge →",
-  },
-  {
-    id: "mirror",
-    title: "Mirror Drill",
-    blurb: "Alternate EN and DE until the idea sticks.",
-    to: "/hybrid/mirror",
-    icon: Split,
-    cta: "Open mirror →",
-  },
-  {
-    id: "flip",
-    title: "Exam Flip",
-    blurb: "Switch BBE ↔ WiSo framing on one sprint.",
-    to: "/hybrid/exam-flip",
-    icon: FlipHorizontal2,
-    cta: "Open flip →",
-  },
-  {
-    id: "dual",
-    title: "Dual Mock Day",
-    blurb: "Run both full exam formats in one day.",
-    to: "/hybrid/dual-mock",
-    icon: ClipboardCheck,
-    cta: "Open dual mock →",
-  },
-  {
-    id: "lab",
-    title: "Decision Lab",
-    blurb: "See which exam you currently lean toward.",
-    to: "/hybrid/decision-lab",
-    icon: Scale,
-    cta: "Open lab →",
-  },
-] as const;
-
-function rememberOverlay(overlay?: "en" | "de") {
-  if (overlay === "en") {
-    patchHybridProgress({ englishSessions: loadHybridProgress().englishSessions + 1 });
-  }
-  if (overlay === "de") {
-    patchHybridProgress({ germanSessions: loadHybridProgress().germanSessions + 1 });
-  }
-}
-
-function HybridCoursePage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader
-        maxWidthClassName="max-w-7xl"
-        hideTrackSwitcher
-        actions={
-          <LocalizedLink
-            to="/products/hybrid-course"
-            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
-          >
-            ← Course
-          </LocalizedLink>
-        }
-      />
+      <SiteHeader showNav showMobileNav hideTrackSwitcher />
 
-      <main className="px-6 py-16 lg:px-8 lg:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <p
-              className="mb-3 text-xs font-semibold uppercase tracking-[0.2em]"
-              style={{ color: TEAL }}
-            >
-              Hybrid · BBE + WiSo
-            </p>
-            <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Hybrid Course
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Choose a subject, or open the same study modes you already know from both full courses.
-            </p>
-          </div>
+      <main>
+        <section className="relative overflow-hidden px-3 pt-7 pb-10 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+              <ExamCountdown className="mb-5 sm:mb-6" />
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {subjects.map((s) => (
-              <div
-                key={s.id}
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-                style={{ borderTop: `4px solid ${s.accent}` }}
-              >
-                <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
-                  <img
-                    src={s.image}
-                    alt={`${s.title} practice`}
-                    width={768}
-                    height={576}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <span
-                    className="absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white shadow-sm"
-                    style={{ backgroundColor: s.accent }}
-                  >
-                    {s.tag}
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <h2 className="font-display text-xl font-semibold text-foreground">{s.title}</h2>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                    {s.description}
-                  </p>
-                  <Link
-                    to={s.to}
-                    onClick={() => {
-                      if (s.track) storeExamTrack(s.track);
-                      if ("overlay" in s) rememberOverlay(s.overlay);
-                    }}
-                    className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
-                    style={{
-                      backgroundColor: s.accent,
-                      boxShadow: `0 4px 14px -4px ${s.accent}80`,
-                    }}
-                  >
-                    Go to tasks →
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <section className="mt-14">
-            <div className="mb-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                Study modes
-              </p>
-              <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                Same modes as both full courses
-              </h2>
-              <p className="mt-2 max-w-2xl text-sm text-muted-foreground sm:text-base">
-                Mocks, builders, flashcards, matching, and tutor exam — BBE and WiSo, side by side.
-              </p>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {studyModes.map((tool) => {
-                const Icon = tool.icon;
-                return (
-                  <Link
-                    key={tool.id}
-                    to={tool.to}
-                    onClick={() => storeExamTrack(tool.track)}
-                    className="group flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md sm:flex-row sm:items-center sm:justify-between"
-                    style={{ borderTop: `4px solid ${tool.accent}` }}
-                  >
-                    <div className="flex gap-4">
-                      <span
-                        className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-white"
-                        style={{ backgroundColor: tool.accent }}
-                      >
-                        <Icon className="h-4 w-4" />
-                      </span>
-                      <div>
-                        <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
-                        <p className="mt-1 max-w-xl text-sm text-muted-foreground">{tool.blurb}</p>
-                      </div>
-                    </div>
-                    <span
-                      className="mt-4 shrink-0 text-xs font-semibold sm:mt-0"
-                      style={{ color: tool.accent }}
-                    >
-                      {tool.cta}
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-          </section>
-
-          <section className="mt-14">
-            <div className="mb-6">
               <p
-                className="text-xs font-semibold uppercase tracking-[0.2em]"
+                className="mb-3 rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-wide sm:text-xs"
+                style={{
+                  borderColor: `${TEAL}55`,
+                  backgroundColor: `${TEAL}14`,
+                  color: TEAL,
+                }}
+              >
+                Hybrid · BBE + WiSo
+              </p>
+
+              <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
+                Step by step preparation for both 2027 WU exams
+              </h1>
+
+              <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
+                One course for applicants who want BBE and WiSo. Shared math and economics once,
+                English and German in parallel, and every practice mode from both full courses.
+              </p>
+
+              <div
+                id="full-course"
+                className="mt-6 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-7 sm:w-auto sm:flex-row sm:flex-wrap"
+              >
+                <LocalizedLink
+                  to="/products/hybrid-course"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  style={{ backgroundColor: TEAL }}
+                >
+                  <span>Hybrid Course</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/80">€649 · both exams</span>
+                </LocalizedLink>
+                <LocalizedLink
+                  to="/demo-practice"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-teal-700/10 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  style={{ borderColor: TEAL, color: TEAL }}
+                >
+                  <span>BBE demo</span>
+                  <span className="mt-0.5 text-[11px] font-medium opacity-70">50+ starter tasks</span>
+                </LocalizedLink>
+                <LocalizedLink
+                  to="/wiso/demo-practice"
+                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-foreground/20 bg-foreground px-6 py-3.5 text-sm font-semibold text-background transition-colors hover:bg-foreground/90"
+                >
+                  <span>WiSo demo</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-background/70">
+                    German-track start
+                  </span>
+                </LocalizedLink>
+              </div>
+
+              <LocalizedLink
+                to="/bbe-vs-wiso"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline"
                 style={{ color: TEAL }}
               >
-                Hybrid-only
-              </p>
-              <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                Dual-exam modes
+                See how BBE and WiSo differ
+                <ArrowRight className="h-3.5 w-3.5" />
+              </LocalizedLink>
+            </div>
+
+            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
+              <PrepJourneyRoadmap track="hybrid" accent="hybrid-teal" />
+            </div>
+          </div>
+        </section>
+
+        <Suspense fallback={<div className="min-h-[28rem] bg-background" aria-hidden />}>
+          <HowItWorksSection track="hybrid" />
+        </Suspense>
+
+        <WhyChooseUsSection
+          subtitle="Everything from Full BBE and Full WiSo in one course: questions, timed mocks, builders, flashcards, matching, and tutor exam, plus a shared plan so the overlap is not homework twice."
+        />
+
+        <section
+          className="relative bg-scroll"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
+              Same campus. Two papers. One preparation.
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
+              BBE is the selective English track. WiSo is the larger German-taught track. Hybrid is
+              for the year you refuse to guess wrong and close the other door.
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+                Why a third course
               </h2>
+              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+                Buying both full courses still leaves you with two plans. Hybrid is the course that
+                keeps one queue and both exam formats.
+              </p>
             </div>
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {hybridModes.map((tool) => {
-                const Icon = tool.icon;
-                return (
-                  <Link
-                    key={tool.id}
-                    to={tool.to}
-                    className="group flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-                    style={{ borderTop: `4px solid ${TEAL}` }}
-                  >
-                    <span
-                      className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg text-white"
-                      style={{ backgroundColor: TEAL }}
-                    >
-                      <Icon className="h-4 w-4" />
-                    </span>
-                    <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
-                    <p className="mt-2 flex-1 text-sm text-muted-foreground">{tool.blurb}</p>
-                    <span className="mt-4 text-xs font-semibold" style={{ color: TEAL }}>
-                      {tool.cta}
-                    </span>
-                  </Link>
-                );
-              })}
+            <div className="mt-10 grid gap-4 md:grid-cols-3">
+              {[
+                {
+                  title: "Shared core",
+                  body: "Mathematics and economics concepts count once. You flip language, you do not restart the chapter.",
+                },
+                {
+                  title: "Both language lanes",
+                  body: "English for BBE and German reading for WiSo stay in the plan every week, lighter than a second full course.",
+                },
+                {
+                  title: "Every mode",
+                  body: "Mocks, builders, flashcards, matching, and tutor exam from both tracks, plus Bridge, Mirror, Exam Flip, and Dual Mock Day.",
+                },
+              ].map((card) => (
+                <article
+                  key={card.title}
+                  className="rounded-2xl border border-white/10 bg-black/25 px-5 py-6"
+                >
+                  <h3 className="font-display text-xl font-semibold text-why-us-fg">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-why-us-fg/75">{card.body}</p>
+                </article>
+              ))}
             </div>
-          </section>
+            <div className="mt-10 flex justify-center">
+              <LocalizedLink
+                to={ownsHybridCourse ? "/hybrid/course" : "/products/hybrid-course"}
+                className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#F2F1ED] px-8 py-4 text-sm font-semibold text-[#161616] transition-colors hover:bg-white"
+              >
+                {ownsHybridCourse ? "Open Hybrid course" : "View Hybrid Course"}
+                <ArrowRight className="h-4 w-4" />
+              </LocalizedLink>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="relative bg-scroll"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
+              Notes from people who kept both options open
+            </h2>
+          </div>
+        </section>
+
+        <PinnedReviewsBoard
+          title="What dual-track applicants told us"
+          reports={hybridReports}
+        />
+
+        <div id="faq">
+          <HybridFaqAccordion />
         </div>
+
+        <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+            <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
+              BBE School · Hybrid
+            </span>
+            <nav className="flex flex-wrap items-center justify-center gap-4 text-xs">
+              {ownsHybridCourse ? (
+                <LocalizedLink to="/hybrid/course" className="text-muted-foreground hover:underline">
+                  Course
+                </LocalizedLink>
+              ) : (
+                <LocalizedLink
+                  to="/products/hybrid-course"
+                  className="text-muted-foreground hover:underline"
+                >
+                  Hybrid Course
+                </LocalizedLink>
+              )}
+              <LocalizedLink to="/bbe" className="text-muted-foreground hover:underline">
+                BBE
+              </LocalizedLink>
+              <LocalizedLink to="/wiso" className="text-muted-foreground hover:underline">
+                WiSo
+              </LocalizedLink>
+              <LocalizedLink to="/bbe-vs-wiso" className="text-muted-foreground hover:underline">
+                Compare
+              </LocalizedLink>
+              <LocalizedLink to="/terms" className="text-muted-foreground hover:underline">
+                Terms
+              </LocalizedLink>
+              <LocalizedLink to="/privacy" className="text-muted-foreground hover:underline">
+                Privacy
+              </LocalizedLink>
+            </nav>
+          </div>
+        </footer>
       </main>
     </div>
   );
 }
+
+const hybridReports = [
+  {
+    id: 1,
+    name: "Mira, Vienna",
+    quote:
+      "I was not ready to drop German or English. Doing math once and keeping both language lanes was the only plan that did not double my week.",
+    badge: "Hybrid · both tracks",
+  },
+  {
+    id: 2,
+    name: "Adam, Bratislava",
+    quote:
+      "The BBE mock and the WiSo mock feel like different papers. Having both formats in one course stopped me from pretending they were the same exam.",
+    badge: "Hybrid · both tracks",
+  },
+  {
+    id: 3,
+    name: "Lea, Graz",
+    quote:
+      "Economics clicked when I saw the English statement and the German statement of the same idea back to back. I stopped memorising one language.",
+    badge: "Hybrid · both tracks",
+  },
+  {
+    id: 4,
+    name: "Omar, Budapest",
+    quote:
+      "I used Decision Lab in week two and it pushed me toward WiSo, but I kept the English lane. I did not have to buy a second course to stay covered.",
+    badge: "Hybrid · both tracks",
+  },
+  {
+    id: 5,
+    name: "Sofia, Bucharest",
+    quote:
+      "Flashcards, matching, and the tutor were already how I studied. Hybrid just put the BBE set and the WiSo set on one page.",
+    badge: "Hybrid · both tracks",
+  },
+  {
+    id: 6,
+    name: "Jonas, Linz",
+    quote:
+      "Dual mock day was brutal and useful. Morning BBE, evening WiSo, then I knew which clock I was actually afraid of.",
+    badge: "Hybrid · both tracks",
+  },
+];

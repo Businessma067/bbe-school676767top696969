@@ -97,8 +97,8 @@ const EXAM_OPTIONS: ExamOption[] = [
       "English + German overlays",
       "Dual BBE / WiSo practice modes",
     ],
-    cta: "Open Hybrid Course",
-    to: "/products/hybrid-course",
+    cta: "Enter Hybrid preparation",
+    to: "/hybrid",
   },
 ];
 

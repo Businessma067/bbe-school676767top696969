@@ -5,7 +5,7 @@ export const FULL_COURSE_HREF = "/products/full-course-subjects" as const;
 export const FULL_COURSE_PRODUCT_HREF = "/products/full-course" as const;
 export const WISO_FULL_COURSE_HREF = "/wiso/products/full-course-subjects" as const;
 export const WISO_FULL_COURSE_PRODUCT_HREF = "/wiso/products/full-course" as const;
-export const HYBRID_HUB_HREF = "/hybrid" as const;
+export const HYBRID_HUB_HREF = "/hybrid/course" as const;
 export const HYBRID_PRODUCT_HREF = "/products/hybrid-course" as const;
 
 /** True when the account owns any paid BBE course (Lite or Full) or is an admin. */
