@@ -1,24 +1,28 @@
 /**
- * Client-side Hybrid progress: Twin Readiness + planner completion.
- * Shared math mastery feeds both readiness rings once.
+ * Client-side Hybrid progress.
+ * Shared math and a bridged concept each count once for both exams.
  */
 
 export const HYBRID_PROGRESS_KEY = "hybrid.progress.v1";
 
+export type BridgeScore = {
+  bbeCorrect: number;
+  wisoCorrect: number;
+  total: number;
+};
+
 export type HybridProgress = {
-  /** Shared math case ids completed. */
+  /** Shared math task ids answered fully correct. */
   sharedMathPassed: string[];
-  /** Bridge case ids completed (both sides). */
+  /** Bridge case ids cleared on both languages. */
   bridgePassed: string[];
-  /** Mirror set ids completed. */
-  mirrorPassed: string[];
-  /** Exam Flip sessions completed (count). */
-  examFlipSessions: number;
-  /** Decision Lab result lean. */
-  decisionLean: "bbe" | "wiso" | "close" | null;
-  /** Dual mock checklist. */
-  dualMock: { bbeDone: boolean; wisoDone: boolean };
-  /** Planner day stamps (YYYY-MM-DD) with completed shared block. */
+  /** Best recorded score for each bridge case. */
+  bridgeBest: Record<string, BridgeScore>;
+  /** Days a shared-math task was newly cleared. */
+  mathDays: string[];
+  /** Days a bridge case was newly cleared. */
+  bridgeDays: string[];
+  /** Days (YYYY-MM-DD) when either shared block was completed. */
   plannerDays: string[];
   /** English / German overlay session counts. */
   englishSessions: number;
@@ -29,45 +33,51 @@ export type HybridProgress = {
 const EMPTY: HybridProgress = {
   sharedMathPassed: [],
   bridgePassed: [],
-  mirrorPassed: [],
-  examFlipSessions: 0,
-  decisionLean: null,
-  dualMock: { bbeDone: false, wisoDone: false },
+  bridgeBest: {},
+  mathDays: [],
+  bridgeDays: [],
   plannerDays: [],
   englishSessions: 0,
   germanSessions: 0,
   updatedAt: new Date(0).toISOString(),
 };
 
+function isScore(value: unknown): value is BridgeScore {
+  if (!value || typeof value !== "object") return false;
+  const row = value as BridgeScore;
+  return (
+    typeof row.bbeCorrect === "number" &&
+    typeof row.wisoCorrect === "number" &&
+    typeof row.total === "number"
+  );
+}
+
 export function loadHybridProgress(): HybridProgress {
-  if (typeof window === "undefined") return { ...EMPTY };
+  if (typeof window === "undefined") return { ...EMPTY, bridgeBest: {} };
   try {
     const raw = localStorage.getItem(HYBRID_PROGRESS_KEY);
-    if (!raw) return { ...EMPTY };
+    if (!raw) return { ...EMPTY, bridgeBest: {} };
     const parsed = JSON.parse(raw) as Partial<HybridProgress>;
+    const bridgeBest: Record<string, BridgeScore> = {};
+    if (parsed.bridgeBest && typeof parsed.bridgeBest === "object") {
+      for (const [id, score] of Object.entries(parsed.bridgeBest)) {
+        if (isScore(score)) bridgeBest[id] = score;
+      }
+    }
     return {
       ...EMPTY,
       ...parsed,
       sharedMathPassed: Array.isArray(parsed.sharedMathPassed) ? parsed.sharedMathPassed : [],
       bridgePassed: Array.isArray(parsed.bridgePassed) ? parsed.bridgePassed : [],
-      mirrorPassed: Array.isArray(parsed.mirrorPassed) ? parsed.mirrorPassed : [],
+      bridgeBest,
+      mathDays: Array.isArray(parsed.mathDays) ? parsed.mathDays : [],
+      bridgeDays: Array.isArray(parsed.bridgeDays) ? parsed.bridgeDays : [],
       plannerDays: Array.isArray(parsed.plannerDays) ? parsed.plannerDays : [],
-      dualMock: {
-        bbeDone: !!parsed.dualMock?.bbeDone,
-        wisoDone: !!parsed.dualMock?.wisoDone,
-      },
-      examFlipSessions: typeof parsed.examFlipSessions === "number" ? parsed.examFlipSessions : 0,
       englishSessions: typeof parsed.englishSessions === "number" ? parsed.englishSessions : 0,
       germanSessions: typeof parsed.germanSessions === "number" ? parsed.germanSessions : 0,
-      decisionLean:
-        parsed.decisionLean === "bbe" ||
-        parsed.decisionLean === "wiso" ||
-        parsed.decisionLean === "close"
-          ? parsed.decisionLean
-          : null,
     };
   } catch {
-    return { ...EMPTY };
+    return { ...EMPTY, bridgeBest: {} };
   }
 }
 
@@ -84,27 +94,64 @@ export function patchHybridProgress(patch: Partial<HybridProgress>): HybridProgr
   return next;
 }
 
+export function todayStamp(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function withToday(days: string[]): string[] {
+  const stamp = todayStamp();
+  return days.includes(stamp) ? days : [...days, stamp];
+}
+
 export function markSharedMathPassed(caseId: string): HybridProgress {
   const current = loadHybridProgress();
   if (current.sharedMathPassed.includes(caseId)) return current;
   return patchHybridProgress({
     sharedMathPassed: [...current.sharedMathPassed, caseId],
+    mathDays: withToday(current.mathDays),
+    plannerDays: withToday(current.plannerDays),
   });
 }
 
-export function markBridgePassed(caseId: string): HybridProgress {
+export function markBridgePassed(caseId: string, score?: BridgeScore): HybridProgress {
   const current = loadHybridProgress();
-  if (current.bridgePassed.includes(caseId)) return current;
+  const bridgeBest = score
+    ? mergeBridgeScore(current.bridgeBest, caseId, score)
+    : current.bridgeBest;
+  if (current.bridgePassed.includes(caseId)) {
+    return patchHybridProgress({ bridgeBest });
+  }
   return patchHybridProgress({
     bridgePassed: [...current.bridgePassed, caseId],
+    bridgeBest,
+    bridgeDays: withToday(current.bridgeDays),
+    plannerDays: withToday(current.plannerDays),
   });
 }
 
-export function markMirrorPassed(setId: string): HybridProgress {
+function mergeBridgeScore(
+  current: Record<string, BridgeScore>,
+  caseId: string,
+  score: BridgeScore,
+): Record<string, BridgeScore> {
+  const prev = current[caseId];
+  const prevSum = prev ? prev.bbeCorrect + prev.wisoCorrect : -1;
+  const nextSum = score.bbeCorrect + score.wisoCorrect;
+  if (prev && prevSum >= nextSum) return current;
+  return { ...current, [caseId]: score };
+}
+
+/** Store a score even when the case is not cleared yet. */
+export function recordBridgeScore(
+  caseId: string,
+  score: BridgeScore,
+  cleared: boolean,
+): HybridProgress {
+  if (cleared) return markBridgePassed(caseId, score);
   const current = loadHybridProgress();
-  if (current.mirrorPassed.includes(setId)) return current;
   return patchHybridProgress({
-    mirrorPassed: [...current.mirrorPassed, setId],
+    bridgeBest: mergeBridgeScore(current.bridgeBest, caseId, score),
   });
 }
 
@@ -115,42 +162,29 @@ export type TwinReadiness = {
   bridge: number;
   languageEn: number;
   languageDe: number;
-  format: number;
 };
 
-/** Rough readiness 0–100 from local hybrid signals + library deep-link activity counts. */
+/**
+ * Readiness 0–100.
+ * Shared math and bridge feed both exams. Language lanes stay separate.
+ */
 export function computeTwinReadiness(
   progress: HybridProgress,
-  totals: { bridgeTotal: number; mirrorTotal: number; sharedMathTarget?: number },
+  totals: { bridgeTotal: number; sharedMathTarget?: number },
 ): TwinReadiness {
   const mathTarget = totals.sharedMathTarget ?? 40;
-  const sharedMath = Math.min(100, Math.round((progress.sharedMathPassed.length / mathTarget) * 100));
+  const sharedMath = Math.min(
+    100,
+    Math.round((progress.sharedMathPassed.length / mathTarget) * 100),
+  );
   const bridge =
     totals.bridgeTotal > 0
       ? Math.min(100, Math.round((progress.bridgePassed.length / totals.bridgeTotal) * 100))
       : 0;
-  const mirror =
-    totals.mirrorTotal > 0
-      ? Math.min(100, Math.round((progress.mirrorPassed.length / totals.mirrorTotal) * 100))
-      : 0;
-  const languageEn = Math.min(100, progress.englishSessions * 12 + Math.round(bridge * 0.25));
-  const languageDe = Math.min(100, progress.germanSessions * 12 + Math.round(bridge * 0.25));
-  const format = Math.min(
-    100,
-    progress.examFlipSessions * 15 +
-      (progress.dualMock.bbeDone ? 25 : 0) +
-      (progress.dualMock.wisoDone ? 25 : 0) +
-      Math.round(mirror * 0.2),
-  );
-
-  const sharedCore = Math.round(sharedMath * 0.55 + bridge * 0.35 + mirror * 0.1);
-  const bbe = Math.min(100, Math.round(sharedCore * 0.55 + languageEn * 0.25 + format * 0.2));
-  const wiso = Math.min(100, Math.round(sharedCore * 0.55 + languageDe * 0.25 + format * 0.2));
-
-  return { bbe, wiso, sharedMath, bridge, languageEn, languageDe, format };
-}
-
-export function todayStamp(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  const languageEn = Math.min(100, progress.englishSessions * 12 + Math.round(bridge * 0.2));
+  const languageDe = Math.min(100, progress.germanSessions * 12 + Math.round(bridge * 0.2));
+  const sharedCore = Math.round(sharedMath * 0.6 + bridge * 0.4);
+  const bbe = Math.min(100, Math.round(sharedCore * 0.7 + languageEn * 0.3));
+  const wiso = Math.min(100, Math.round(sharedCore * 0.7 + languageDe * 0.3));
+  return { bbe, wiso, sharedMath, bridge, languageEn, languageDe };
 }

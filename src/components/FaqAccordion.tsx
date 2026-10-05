@@ -133,7 +133,7 @@ export const hybridFaqs = [
   {
     question: "Which modes are on the Hybrid course page?",
     answer:
-      "The same modes as both tracks: subject practice, full mocks, custom mock builders, flashcards, matching, and tutor exam, plus Hybrid-only Bridge Cases, Mirror Drill, Exam Flip, Dual Mock Day, and Decision Lab.",
+      "The same modes as both tracks: subject practice, full mocks, custom mock builders, flashcards, matching, and tutor exam. Hybrid adds two tools of its own: the Shared Math library and Bridge Cases.",
   },
   {
     question: "How much does Hybrid cost?",

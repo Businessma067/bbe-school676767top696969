@@ -1,14 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import {
-  Check,
-  FlipHorizontal2,
-  GitBranch,
-  Layers,
-  Scale,
-  Split,
-  Target,
-} from "lucide-react";
+import { Check, GitBranch, Languages, Layers, Target } from "lucide-react";
 import { AuthModal } from "@/components/AuthModal";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PaymentModal } from "@/components/PaymentModal";
@@ -31,13 +23,13 @@ export const Route = createFileRoute("/products/hybrid-course")({
       {
         name: "description",
         content:
-          "Hybrid Course: one plan for both WU exams — shared math and economics, English + German overlays, Bridge Cases, Exam Flip, Dual Mock Day.",
+          "Hybrid Course: one plan for both WU exams — shared math library, bridge cases, and English + German lanes.",
       },
       { property: "og:title", content: "Hybrid BBE + WiSo Course" },
       {
         property: "og:description",
         content:
-          "Prepare for BBE and WiSo with one homework stream, Twin Readiness, and dual exam modes.",
+          "Prepare for BBE and WiSo with one homework stream, a shared math library, and bridge cases.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -50,34 +42,24 @@ export const Route = createFileRoute("/products/hybrid-course")({
 
 const FEATURES = [
   {
-    icon: Target,
-    title: "Shared-First Planner",
-    text: "Daily queue: shared math/econ once, then EN + DE overlays — no double homework.",
+    icon: Layers,
+    title: "Shared Math library",
+    text: "Thirteen chapters, English or German stem, one progress count for both exams.",
   },
   {
     icon: GitBranch,
-    title: "Bridge Cases",
-    text: "Same economics concept in English and German, scored as one mastery step.",
+    title: "Bridge case library",
+    text: "Twenty economics concepts. English side, then German, cleared once at 75% on both.",
   },
   {
-    icon: Split,
-    title: "Mirror Drill",
-    text: "Alternate languages until the idea is language-proof.",
+    icon: Languages,
+    title: "Two language lanes",
+    text: "BBE English and WiSo German stay separate. Neither lane moves the other paper.",
   },
   {
-    icon: FlipHorizontal2,
-    title: "Exam Flip",
-    text: "Switch BBE ↔ WiSo framing and penalty habits in one sprint.",
-  },
-  {
-    icon: Layers,
-    title: "Dual Mock Day",
-    text: "Run both real exam formats in one day with a single checklist.",
-  },
-  {
-    icon: Scale,
-    title: "Decision Lab + Twin Readiness",
-    text: "See which track you lean toward while staying ready for both.",
+    icon: Target,
+    title: "Twin readiness",
+    text: "One daily plan: shared math, one bridge case, then the two language lanes.",
   },
 ];
 
@@ -120,8 +102,8 @@ export function HybridCourseProductPage() {
             Hybrid BBE + WiSo Course
           </h1>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            One study path for both WU entrance exams. Shared math and economics once, English and
-            German overlays in parallel, dual exam modes when you need format pressure.
+            One study path for both WU entrance exams. Shared math and bridged economics count once.
+            English and German stay as separate lanes, and both full course libraries stay open.
           </p>
 
           <div className="relative mt-8 aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-secondary">
@@ -141,7 +123,7 @@ export function HybridCourseProductPage() {
                 {ownsHybridCourse ? "Unlocked" : `€${PRODUCT.priceEur}`}
               </div>
               <p className="mt-1 text-xs text-muted-foreground">
-                Includes Full BBE + Full WiSo libraries plus Hybrid modes.
+                Includes Full BBE + Full WiSo libraries plus the Hybrid tools.
               </p>
             </div>
             {!ready ? (
@@ -187,10 +169,9 @@ export function HybridCourseProductPage() {
             <h2 className="font-display text-xl font-semibold">What you unlock</h2>
             <ul className="mt-4 space-y-2">
               {[
-                "Hybrid hub with Twin Readiness Board",
-                "Shared Math with EN/DE flip",
-                "Bridge Cases + Mirror Drill packs",
-                "Exam Flip + Dual Mock Day + Decision Lab",
+                "Hybrid hub with twin readiness and a daily plan",
+                "Shared Math library, chapters 1–13, EN/DE stem",
+                "Bridge library: 20 concepts in 4 units",
                 "Full BBE Course library (econ, math, English, mocks, tools)",
                 "Full WiSo Course library (Wirtschaft verstehen, math, German, mocks, tools)",
               ].map((line) => (

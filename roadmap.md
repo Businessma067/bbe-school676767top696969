@@ -1,7 +1,7 @@
 # Roadmap
 
 - [x] Hybrid BBE + WiSo Course live (hub `/hybrid`, sales `/products/hybrid-course`, €559)
-  - Modes: Twin Readiness, Shared-First Planner, Bridge, Mirror, Exam Flip, Dual Mock, Decision Lab, Shared Math EN/DE
+  - Tools: Twin Readiness, Shared-First Planner, Shared Math library (EN/DE), Bridge case library
   - Plan: `docs/hybrid-bbe-wiso-course-plan.md`
   - Next: scale econ concept tagging, deeper mock scoring parity
 - [ ] Propose advanced design directions for BBE School (photos only, no code changes yet)

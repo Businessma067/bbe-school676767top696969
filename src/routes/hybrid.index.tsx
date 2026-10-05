@@ -94,7 +94,9 @@ export function HybridLandingPage() {
                   style={{ backgroundColor: TEAL }}
                 >
                   <span>Hybrid Course</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-white/80">€559 · both exams</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/80">
+                    €559 · both exams
+                  </span>
                 </LocalizedLink>
                 <LocalizedLink
                   to="/demo-practice"
@@ -102,7 +104,9 @@ export function HybridLandingPage() {
                   style={{ borderColor: TEAL, color: TEAL }}
                 >
                   <span>BBE demo</span>
-                  <span className="mt-0.5 text-[11px] font-medium opacity-70">50+ starter tasks</span>
+                  <span className="mt-0.5 text-[11px] font-medium opacity-70">
+                    50+ starter tasks
+                  </span>
                 </LocalizedLink>
                 <LocalizedLink
                   to="/wiso/demo-practice"
@@ -213,7 +217,10 @@ export function HybridLandingPage() {
             </span>
             <nav className="flex flex-wrap items-center justify-center gap-4 text-xs">
               {ownsHybridCourse ? (
-                <LocalizedLink to="/hybrid/course" className="text-muted-foreground hover:underline">
+                <LocalizedLink
+                  to="/hybrid/course"
+                  className="text-muted-foreground hover:underline"
+                >
                   Course
                 </LocalizedLink>
               ) : (
@@ -273,7 +280,7 @@ const hybridReports = [
     id: 4,
     name: "Omar, Budapest",
     quote:
-      "I used Decision Lab in week two and it pushed me toward WiSo, but I kept the English lane. I did not have to buy a second course to stay covered.",
+      "The bridge cases made the economics wording obvious: English statement, then the German one, and the concept was done. I did not buy a second course to stay covered.",
     badge: "Hybrid · both tracks",
   },
   {
