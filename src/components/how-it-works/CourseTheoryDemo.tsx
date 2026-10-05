@@ -4,7 +4,7 @@ import { MATH_COURSE_THEORY, type MathCourseTheoryChapter } from "@/data/math-co
 import { TheoryArticle } from "@/components/TheoryReader";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
-import { skimChapter } from "./course-motion";
+import { glideChapterRow, skimChapter } from "./course-motion";
 
 const READ = [1, 10, 11] as const;
 
@@ -60,7 +60,7 @@ function Reader({
       </div>
       <div
         data-d="theory-scroll"
-        className="min-h-0 flex-1 overflow-y-auto"
+        className="min-h-0 flex-1 overflow-y-auto opacity-0 transition-opacity duration-700 data-[posed=1]:opacity-100"
         onScroll={(event) => {
           const el = event.currentTarget;
           const max = el.scrollHeight - el.clientHeight;
@@ -78,7 +78,7 @@ function Reader({
   );
 }
 
-/** How it works · Theory: open math chapters 1, 10 and 11 and pause on three highlights in each. */
+/** How it works · Theory: open math chapters 1, 10 and 11 and pause twice, slowly, near the start of each. */
 export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
@@ -87,7 +87,8 @@ export function CourseTheoryDemo({
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const readChapter = async (num: number) => {
-      await api.moveTo(`[data-d="ch-${num}"]`, 40);
+      await glideChapterRow(api, `[data-d="ch-${num}"]`);
+      await api.moveTo(`[data-d="ch-${num}"]`, 80);
       await api.click();
       setOpen(num);
       await api.flush();
@@ -99,11 +100,12 @@ export function CourseTheoryDemo({
     };
 
     setFade(true);
-    await api.wait(150);
+    await api.wait(560);
     setOpen(null);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
+    await api.flush();
     setFade(false);
-    await api.wait(260);
+    await api.wait(420);
 
     for (const num of READ) {
       if (api.cancelled()) return;

@@ -241,13 +241,14 @@ export async function glideRead(api: DemoPlayerApi, endSelector: string, trackSe
 }
 
 /**
- * Three showpiece spots in each chapter. Headings are element ids.
+ * Two nearby spots at the opening of each chapter. Headings are element ids.
  * A phrase with a space is matched against a figure caption.
+ * The pair stays in one section so the reader never races through the rest of the chapter.
  */
-const CHAPTER_SPOTS: Record<number, readonly [string, string, string]> = {
-  1: ["the-power-set", "the-truth-table-of-an-implication", "mathematical-induction"],
-  10: ["Growth uses a base", "doubling-time-and-half-life", "Read the intercept"],
-  11: ["the-newton-quotient", "Expand while MR", "Zeros at"],
+const CHAPTER_SPOTS: Record<number, readonly [string, string]> = {
+  1: ["elements-versus-subsets", "the-power-set"],
+  10: ["start-with-a-picture", "Growth uses a base"],
+  11: ["the-newton-quotient", "the-tangent-line"],
 };
 
 function findSpot(panel: HTMLElement, key: string): HTMLElement | null {
@@ -284,8 +285,15 @@ function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
   return Math.max(0, Math.min(dest, max));
 }
 
+/** Show the article only after it is already parked on the first stop. */
+function poseReader(panel: HTMLElement) {
+  panel.dataset.posed = "1";
+}
+
 /**
- * Read the whole chapter the site shows. Three pauses, each on a highlight of that chapter.
+ * Read the opening of the chapter. Two slow pauses, close together.
+ * The view opens on the first stop. It does not travel down from the title,
+ * and it does not run through the rest of the chapter to reach a late heading.
  */
 export async function skimChapter(api: DemoPlayerApi, panelSelector: string, chapter = 1) {
   await api.flush();
@@ -310,10 +318,10 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
   if (!panel) return;
   max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   if (max < 24) {
+    poseReader(panel);
     await api.wait(240);
     return;
   }
-  await api.moveTo('[data-d="prose0"]', 20);
   const found = spots
     .map((key) => {
       const el = findSpot(panel!, key);
@@ -323,22 +331,35 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
     .sort((a, b) => a.dest - b.dest);
   const plan = (
     found.length
-      ? found
+      ? found.slice(0, 2)
       : [
-          { dest: max * 0.28, el: panel },
-          { dest: max * 0.55, el: panel },
-          { dest: max * 0.82, el: panel },
+          { dest: Math.min(max, panel.clientHeight * 0.15), el: panel },
+          { dest: Math.min(max, panel.clientHeight * 0.95), el: panel },
         ]
   ).map((stop) => ({ ...stop, pause: true }));
 
-  let fromTop = 0;
+  // Park just above the first highlight while the article is still hidden.
+  // Do not move the cursor onto the whole article: that scroller target is the
+  // full chapter, and bringing it into view races scrollTop to the bottom.
+  panel.style.scrollBehavior = "auto";
+  const lead = Math.min(panel.clientHeight * 0.22, 180);
+  panel.scrollTop = Math.max(0, plan[0].dest - lead);
+  poseReader(panel);
+  if (plan[0].el !== panel) {
+    plan[0].el.setAttribute("data-theory-spot", "1");
+    await api.moveTo('[data-theory-spot="1"]', 30);
+  }
+  await api.wait(280);
+
+  let fromTop = panel.scrollTop;
   for (const step of plan) {
     if (api.cancelled()) return;
     const dest = step.dest;
     const distance = dest - fromTop;
     const onFigure = step.el.tagName === "FIGURE";
     if (distance >= 8) {
-      const duration = Math.round(Math.min(5200, Math.max(1100, distance * 1.15)));
+      // Steady ~90px/s. A longer gap takes longer. Nothing speeds the scroll up.
+      const duration = Math.round(Math.max(3400, distance / 0.09));
       const anchors = onFigure ? null : captureReading(stage, panel);
       await glideWithPointer(
         api,
@@ -353,8 +374,45 @@ export async function skimChapter(api: DemoPlayerApi, panelSelector: string, cha
       );
     }
     fromTop = panel.scrollTop;
-    if (step.pause) await api.wait(160);
+    if (step.pause) await api.wait(1200);
   }
+}
+
+/**
+ * Bring a chapter title into view without whipping past the titles in between.
+ */
+export async function glideChapterRow(api: DemoPlayerApi, selector: string) {
+  await api.flush();
+  const stage = api.stage();
+  const scroller = api.scroll();
+  const el = stage?.querySelector<HTMLElement>(selector);
+  if (!stage || !scroller || !el) return;
+  const sb = stage.getBoundingClientRect();
+  const lb = scroller.getBoundingClientRect();
+  const eb = el.getBoundingClientRect();
+  if (eb.width === 0 && eb.height === 0) return;
+  const cy = eb.top + eb.height / 2;
+  const top = Math.max(lb.top, sb.top) + 36;
+  const bottom = Math.min(lb.bottom, sb.bottom) - 36;
+  let delta = 0;
+  if (cy < top) delta = cy - top;
+  else if (cy > bottom) delta = cy - bottom;
+  if (Math.abs(delta) < 2) return;
+  const start = scroller.scrollTop;
+  // One pixel of scroll, measured, so a scaled list still moves the right distance.
+  scroller.scrollTop = start + 1;
+  const shifted = el.getBoundingClientRect().top;
+  scroller.scrollTop = start;
+  const pxPerScroll = eb.top - shifted || 1;
+  const max = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
+  const next = Math.max(0, Math.min(start + delta / pxPerScroll, max));
+  const change = next - start;
+  if (Math.abs(change) < 2) return;
+  const duration = Math.round(Math.max(2000, Math.abs(change) / 0.07));
+  await api.tween(duration, (eased) => {
+    scroller.scrollTop = start + change * eased;
+  });
+  await api.flush();
 }
 
 /**
