@@ -9,7 +9,7 @@ import { CourseFrame } from "./CourseFrame";
 const READ = [1, 10, 11] as const;
 
 /** Cruise speed of each rush, before the brake. */
-const CRUISE_PX_PER_MS = 2;
+const CRUISE_PX_PER_MS = 2.7;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
@@ -99,13 +99,13 @@ function cursorNow(stage: HTMLElement) {
   };
 }
 
-/** Fast for most of the way, then a smooth brake to a full stop. */
+/** Fast for most of the way, then a long soft brake. Speed matches at the join and ends at rest. */
 function fastThenStop(t: number) {
-  const split = 0.75;
-  const coast = (3 * split) / (1 + 2 * split);
+  const split = 0.68;
+  const coast = 0.914;
   if (t <= split) return (t / split) * coast;
   const u = (t - split) / (1 - split);
-  return coast + (1 - coast) * (1 - (1 - u) ** 3);
+  return coast + (1 - coast) * (1 - (1 - u) ** 5);
 }
 
 function pointOf(stage: HTMLElement, el: HTMLElement) {
@@ -174,21 +174,30 @@ function handInText(stage: HTMLElement, panel: HTMLElement, depth: number, acros
   };
 }
 
+/** Move the chapter on the compositor. scrollTop would repaint the text and tear. */
+function placeChapter(panel: HTMLElement, offset: number, max: number) {
+  const article = panel.querySelector<HTMLElement>("article");
+  if (article) article.style.transform = `translate3d(0, ${(-offset).toFixed(2)}px, 0)`;
+  const bar = panel.parentElement?.querySelector<HTMLElement>('[data-d="theory-bar"]');
+  if (bar && max > 0) bar.style.transform = `scaleX(${Math.min(1, offset / max)})`;
+  panel.dataset.offset = String(Math.round(offset));
+}
+
 /** Rush, then brake. The hand glides for the whole rush, with no chase and no layout. */
 async function rushThenStop(
   api: DemoPlayerApi,
   panel: HTMLElement,
+  from: number,
   dest: number,
+  max: number,
   depth: number,
   across: number,
 ) {
   const stage = api.stage();
   if (!stage) return;
-  panel.style.scrollBehavior = "auto";
-  const fromTop = panel.scrollTop;
-  const distance = dest - fromTop;
+  const distance = dest - from;
   if (distance < 16) return;
-  const duration = Math.round(Math.max(820, (1.15 * distance) / CRUISE_PX_PER_MS));
+  const duration = Math.round(Math.max(720, distance / CRUISE_PX_PER_MS));
   const handFrom = cursorNow(stage);
   const handTo = handInText(stage, panel, depth, across);
   let elapsed = 0;
@@ -197,11 +206,11 @@ async function rushThenStop(
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
       // A late frame must not skip ahead, or the page looks torn.
-      elapsed += Math.min(32, Math.max(0, now - last));
+      elapsed += Math.min(28, Math.max(0, now - last));
       last = now;
       const t = Math.min(1, elapsed / duration);
       const e = carryHand(t);
-      panel.scrollTop = fromTop + distance * fastThenStop(t);
+      placeChapter(panel, from + distance * fastThenStop(t), max);
       api.setCursorAt({
         x: handFrom.x + (handTo.x - handFrom.x) * e,
         y: handFrom.y + (handTo.y - handFrom.y) * e,
@@ -211,7 +220,7 @@ async function rushThenStop(
     };
     requestAnimationFrame(frame);
   });
-  panel.scrollTop = dest;
+  placeChapter(panel, dest, max);
   api.setCursorAt(handTo);
 }
 
@@ -236,14 +245,20 @@ async function readTwoStops(api: DemoPlayerApi) {
   const stage = api.stage();
   if (!stage) return;
   panel.scrollTop = 0;
+  panel.style.overflow = "hidden";
+  const article = panel.querySelector<HTMLElement>("article");
+  if (article) {
+    article.style.willChange = "transform";
+    article.style.transform = "translate3d(0, 0, 0)";
+  }
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const first = Math.round(max * 0.4);
   const second = Math.round(Math.min(max, Math.max(first + panel.clientHeight, max * 0.76)));
   panel.dataset.max = String(max);
-  await rushThenStop(api, panel, first, 0.46, 0.3);
+  await rushThenStop(api, panel, 0, first, max, 0.46, 0.3);
   if (api.cancelled()) return;
   await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 320);
-  await rushThenStop(api, panel, Math.min(second, max), 0.7, 0.64);
+  await rushThenStop(api, panel, first, Math.min(second, max), max, 0.7, 0.64);
 }
 
 /** How it works · Theory: chapters 1, 10 and 11, two rushes that reach about 75%. */
@@ -279,7 +294,7 @@ export function CourseTheoryDemo({
       await readChapter(num);
     }
     await api.wait(360);
-  }, [rest], { rest });
+  }, [rest], { rest, glideScale: 1 });
 
   const chapter = open == null ? null : MATH_COURSE_THEORY[open];
 

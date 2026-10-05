@@ -52,7 +52,7 @@ export function useDemoPlayer(
   run: (api: DemoPlayerApi) => Promise<void>,
   deps: unknown[] = [],
   /** `flow` is the study-tool pace: steady travel, a short click, then the next move. */
-  options?: { pace?: number; flow?: boolean; rest?: number },
+  options?: { pace?: number; flow?: boolean; rest?: number; glideScale?: number },
 ): {
   stageRef: RefObject<HTMLDivElement | null>;
   scrollRef: RefObject<HTMLDivElement | null>;
@@ -73,8 +73,10 @@ export function useDemoPlayer(
   const rest = options?.rest ?? 1;
   const cinematic = rest > 1;
   const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
-  const glidePxPerMs = cinematic ? 0.25 * pace : 0.38 * pace;
-  const glideMinMs = cinematic ? Math.max(380, 440 / pace) : Math.max(180, 280 / pace);
+  const glideScale = options?.glideScale ?? 1.22;
+  const glidePxPerMs = (cinematic ? 0.25 * pace : 0.38 * pace) * glideScale;
+  const glideMinMs =
+    (cinematic ? Math.max(380, 440 / pace) : Math.max(180, 280 / pace)) / glideScale;
 
   useEffect(() => {
     const el = stageRef.current;
