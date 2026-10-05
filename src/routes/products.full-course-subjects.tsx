@@ -14,12 +14,12 @@ export const Route = createFileRoute("/products/full-course-subjects")({
       { title: "Full Course — Choose a Subject — BBE School" },
       {
         name: "description",
-        content: "Access 2000+ tasks across Economics, Math, and English for the WU BBE exam.",
+        content: "Access 3300+ questions across Economics, Math, and English for the WU BBE exam.",
       },
       { property: "og:title", content: "Full Course — Choose a Subject — BBE School" },
       {
         property: "og:description",
-        content: "Access 2000+ tasks across Economics, Math, and English for the WU BBE exam.",
+        content: "Access 3300+ questions across Economics, Math, and English for the WU BBE exam.",
       },
     ],
   }),

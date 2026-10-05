@@ -187,8 +187,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Ein kostenloser Test mit 50+ Einstiegsaufgaben in allen drei Fächern samt Schritt-für-Schritt-Erklärungen zum Prüfungsformat.",
     "Visit for free": "Kostenlos ansehen",
     "Full BBE Course": "BBE-Vollkurs",
-    "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
-      "1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
+    "3300+ questions across all three subjects, 5 mock exams, a study assistant, and detailed task breakdowns.":
+      "3300+ Fragen in allen drei Fächern, 5 Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
     "Buy course · €411": "Kurs kaufen · 411 €",
     "Unlock full access": "Vollzugang freischalten",
     "Start Practicing": "Jetzt üben",
@@ -198,13 +198,14 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "3 Subjects": "3 Fächer",
     "Math, English, and Business & Economics, fully covered.":
       "Mathematik, Englisch sowie Wirtschaft & Business, vollständig abgedeckt.",
-    "2000+ Practice Tasks": "2000+ Übungsaufgaben",
+    "3300+ Questions": "3300+ Fragen",
     "A constantly growing question bank across every chapter.":
       "Eine ständig wachsende Fragendatenbank für jedes Kapitel.",
     "Direct Support": "Direkter Support",
     "Real answers from real people, not a bot ticket queue.":
       "Echte Antworten von echten Menschen, keine Bot-Warteschlange.",
     "A written explanation for every question.": "Eine schriftliche Erklärung zu jeder Frage.",
+    "5 Mock Exams": "5 Probeprüfungen",
     "Full-length simulations under real exam conditions and timing.":
       "Vollständige Simulationen unter echten Prüfungsbedingungen und Zeitvorgaben.",
     "Special Features": "Besondere Funktionen",
@@ -416,8 +417,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Безкоштовна проба: 50+ стартових завдань із трьох предметів і покрокові пояснення формату іспиту.",
     "Visit for free": "Відкрити безкоштовно",
     "Full BBE Course": "Повний курс BBE",
-    "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
-      "1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори.",
+    "3300+ questions across all three subjects, 5 mock exams, a study assistant, and detailed task breakdowns.":
+      "3300+ питань із трьох предметів, 5 пробних іспитів, навчальний асистент і детальні розбори.",
     "Buy course · €411": "Купити курс · €411",
     "Unlock full access": "Відкрити повний доступ",
     "Start Practicing": "Почати практику",
@@ -427,13 +428,14 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "3 Subjects": "3 предмети",
     "Math, English, and Business & Economics, fully covered.":
       "Математика, англійська та бізнес і економіка, повністю покриті.",
-    "2000+ Practice Tasks": "2000+ практичних завдань",
+    "3300+ Questions": "3300+ питань",
     "A constantly growing question bank across every chapter.":
       "База питань, що постійно зростає, з кожного розділу.",
     "Direct Support": "Пряма підтримка",
     "Real answers from real people, not a bot ticket queue.":
       "Справжні відповіді від людей, а не черга ботів.",
     "A written explanation for every question.": "Письмове пояснення до кожного питання.",
+    "5 Mock Exams": "5 пробних іспитів",
     "Full-length simulations under real exam conditions and timing.":
       "Повноформатні симуляції у справжніх умовах і з таймінгом іспиту.",
     "Special Features": "Особливі можливості",

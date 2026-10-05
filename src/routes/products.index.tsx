@@ -43,7 +43,7 @@ const courseListJsonLd = [
     "@type": "Course",
     name: "Full BBE Course",
     description:
-      "The complete WU Vienna BBE prep system: 1500+ practice cases, timing and stress modules, full mock exams, a study assistant and detailed task breakdowns.",
+      "The complete WU Vienna BBE prep system: 3300+ questions, 5 mock exams, a study assistant and detailed task breakdowns.",
     url: "https://bbe-school.com/products/full-course",
     provider: PROVIDER,
     offers: {
@@ -115,7 +115,7 @@ const products: Product[] = [
     title: "Full BBE Course",
     image: FULL_COURSE_IMAGE,
     description:
-      "1500+ practice cases across Economics, Mathematics and English, plus timing modules, full mocks, a study assistant, and clear task breakdowns.",
+      "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.",
     cta: "Buy course · €411",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
