@@ -116,7 +116,7 @@ Entitlements sketch:
 
 ### Phase B — Hybrid hub shell (live)
 
-- [x] Sales page `/products/hybrid-course` (SKU `hybrid-full-course`, €649)
+- [x] Sales page `/products/hybrid-course` (SKU `hybrid-full-course`, €559)
 - [x] Hub `/hybrid` with Twin Readiness + Shared-First Planner
 - [x] Modes: Bridge, Mirror, Exam Flip, Dual Mock Day, Decision Lab, Shared Math
 - [x] Checkout grants Hybrid + Full BBE + Full WiSo enrollments

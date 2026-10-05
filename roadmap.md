@@ -1,6 +1,6 @@
 # Roadmap
 
-- [x] Hybrid BBE + WiSo Course live (hub `/hybrid`, sales `/products/hybrid-course`, €649)
+- [x] Hybrid BBE + WiSo Course live (hub `/hybrid`, sales `/products/hybrid-course`, €559)
   - Modes: Twin Readiness, Shared-First Planner, Bridge, Mirror, Exam Flip, Dual Mock, Decision Lab, Shared Math EN/DE
   - Plan: `docs/hybrid-bbe-wiso-course-plan.md`
   - Next: scale econ concept tagging, deeper mock scoring parity
