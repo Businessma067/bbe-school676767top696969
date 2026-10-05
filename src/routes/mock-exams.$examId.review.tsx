@@ -160,7 +160,7 @@ function ReviewExamPage() {
   const current = analytics.tasks[currentIndex] ?? null;
   const de = examTrack === "wiso";
   const headerNavItems = navItemsForAccess(
-    { hasLite, hasFull, hasWisoFull },
+    { hasLite, hasFull, hasWisoFull, hasHybrid: false },
     examTrack,
   );
 

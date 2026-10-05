@@ -190,7 +190,6 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
       "1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
     "Buy course · €411": "Kurs kaufen · 411 €",
-    "Coming soon": "Demnächst",
     "Unlock full access": "Vollzugang freischalten",
     "Start Practicing": "Jetzt üben",
     "✓ 100% Free • Instant web access": "✓ 100 % kostenlos • Sofortiger Web-Zugang",
@@ -420,7 +419,6 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
       "1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори.",
     "Buy course · €411": "Купити курс · €411",
-    "Coming soon": "Незабаром",
     "Unlock full access": "Відкрити повний доступ",
     "Start Practicing": "Почати практику",
     "✓ 100% Free • Instant web access": "✓ 100% безкоштовно • Миттєвий доступ",

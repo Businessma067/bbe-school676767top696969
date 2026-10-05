@@ -33,10 +33,7 @@ export function HybridShell({
       <div className="border-b border-border/70 bg-card/40">
         <nav className="mx-auto flex max-w-6xl gap-1 overflow-x-auto px-3 py-2 sm:px-6 lg:px-8">
           {HYBRID_NAV.map((item) => {
-            const active =
-              item.to === "/hybrid"
-                ? pathname === "/hybrid" || pathname.endsWith("/hybrid/")
-                : pathname.includes(item.to);
+            const active = pathname.includes(item.to);
             return (
               <LocalizedLink
                 key={item.to}
