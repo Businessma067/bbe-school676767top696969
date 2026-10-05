@@ -140,7 +140,7 @@ const products: Product[] = [
     image: HYBRID_COURSE_IMAGE,
     description:
       "One study path for both entrance exams: shared math and economics once, English + German overlays, and dual BBE/WiSo practice modes — without doubling the workload.",
-    cta: "Buy Hybrid · €649",
+    cta: "Buy Hybrid · €559",
     to: "/products/hybrid-course",
     ownedCta: "Go to Hybrid hub",
     ownedTo: "/hybrid/course",

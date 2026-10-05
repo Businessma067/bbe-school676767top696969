@@ -138,7 +138,7 @@ export const hybridFaqs = [
   {
     question: "How much does Hybrid cost?",
     answer:
-      "Hybrid is a one-time payment of €649. Existing full-course promocodes also apply at Hybrid checkout.",
+      "Hybrid is a one-time payment of €559. Existing full-course promocodes also apply at Hybrid checkout.",
   },
 ];
 

@@ -94,7 +94,7 @@ export function HybridLandingPage() {
                   style={{ backgroundColor: TEAL }}
                 >
                   <span>Hybrid Course</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-white/80">€649 · both exams</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/80">€559 · both exams</span>
                 </LocalizedLink>
                 <LocalizedLink
                   to="/demo-practice"

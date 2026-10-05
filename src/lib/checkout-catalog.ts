@@ -48,7 +48,7 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     slug: "hybrid-full-course",
     name: "Hybrid BBE + WiSo Course",
     tier: "full",
-    priceEur: 649,
+    priceEur: 559,
     href: "/hybrid/course",
   },
 };
