@@ -10,13 +10,29 @@ import { CourseFrame } from "./CourseFrame";
 import { CourseSolution } from "./CourseSolution";
 import { CourseTimedBar } from "./CourseTimedBar";
 import { parkCalcKeys, pressCalcKey, readPanel } from "./course-motion";
-import { COURSE_MATH } from "./course-tasks";
+import { COURSE_MATH, type CourseTask } from "./course-tasks";
+import { EN_CHROME, type CourseChrome } from "./course-copy";
 
 const TASK = COURSE_MATH;
 const KEYS = ["1", "2", "×", "1", "1", "="];
+const DEFAULT_MARKS = [3, 4];
 
 /** Course · Math: MATH 12.01, timed 1:30, the exam calculator, then the bank solution. */
-export function CourseMathDemo() {
+export function CourseMathDemo({
+  task = TASK,
+  chrome = EN_CHROME,
+  markAt = DEFAULT_MARKS,
+  rest = 1,
+  lockCopy = false,
+  showOverview = true,
+}: {
+  task?: CourseTask;
+  chrome?: CourseChrome;
+  markAt?: number[];
+  rest?: number;
+  lockCopy?: boolean;
+  showOverview?: boolean;
+} = {}) {
   const [timed, setTimed] = useState(false);
   const [calc, setCalc] = useState(false);
   const [marks, setMarks] = useState<Record<number, boolean>>({});
@@ -55,7 +71,7 @@ export function CourseMathDemo() {
     await api.click(() => setCalc(false));
     await api.wait(70);
 
-    for (const i of [3, 4]) {
+    for (const i of markAt) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
@@ -71,12 +87,12 @@ export function CourseMathDemo() {
       setExpl(true);
       setActive(0);
     });
-    await api.wait(80);
+    await api.wait(rest > 1 ? 420 : 80);
     await readPanel(api, '[data-d="expl-scroll"]');
     await api.wait(200);
-  }, []);
+  }, [markAt, rest], { rest });
 
-  const score = demoCorrectCount(marks, TASK.answerKey);
+  const score = demoCorrectCount(marks, task.answerKey);
 
   return (
     <CourseFrame
@@ -85,6 +101,7 @@ export function CourseMathDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
       overlay={
         <>
           {calc ? (
@@ -96,54 +113,57 @@ export function CourseMathDemo() {
           ) : null}
           <CourseSolution
             open={expl}
-            answerKey={TASK.answerKey}
-            explanations={TASK.explanations}
-            shown={TASK.explanations.map((_, index) => index)}
+            answerKey={task.answerKey}
+            explanations={task.explanations}
+            shown={task.explanations.map((_, index) => index)}
             active={active}
             math
             full
-            overview={TASK.overview}
+            overview={showOverview ? task.overview : undefined}
+            chrome={chrome}
           />
         </>
       }
     >
-      <CourseTimedBar on={timed} calculator calcOpen={calc} />
-      <div className="mb-3 flex flex-wrap items-center gap-2" data-case={TASK.caseId}>
+      <CourseTimedBar on={timed} calculator calcOpen={calc} chrome={chrome} />
+      <div className="mb-3 flex flex-wrap items-center gap-2" data-case={task.caseId}>
         <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-800">
-          Task 1
+          {chrome.taskLabel}
         </span>
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          {TASK.caseId}
+          {task.caseId}
         </span>
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-          {TASK.chapter}
+          {task.chapter}
         </span>
       </div>
-      <h3 className="font-display text-lg font-bold tracking-tight">{TASK.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{TASK.context}</p>
+      <h3 className="font-display text-lg font-bold tracking-tight">{task.title}</h3>
+      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{task.context}</p>
       <DemoStatementTable
-        statements={TASK.statements}
+        statements={task.statements}
         marks={marks}
         checked={checked}
-        answerKey={TASK.answerKey}
+        answerKey={task.answerKey}
+        statementLabel={chrome.statement}
+        trueLabel={chrome.trueColumn}
       />
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3 pb-2">
         {!checked ? (
           <span data-d="submit" className={`${practiceSubmitButtonClass} min-w-56`}>
-            Check Answers / Submit
+            {chrome.submit}
           </span>
         ) : (
           <span data-d="expl" className={`${practiceExplanationToggleClass(expl)} min-w-56`}>
-            {expl ? "Hide Explanation" : "Explanation"}
+            {expl ? chrome.hideExplanation : chrome.explanation}
           </span>
         )}
         {checked ? (
           <span className="text-sm font-semibold text-muted-foreground">
-            {score}/{TASK.answerKey.length} correct
+            {score}/{task.answerKey.length} {chrome.correct}
           </span>
         ) : (
           <span data-d="expl" className="invisible">
-            Explanation
+            {chrome.explanation}
           </span>
         )}
       </div>

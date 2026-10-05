@@ -30,7 +30,11 @@ export function evenExplanation(raw: string): string {
     .split(/\n\n+/)
     .map((part) => part.trim())
     .filter(Boolean);
-  const verdict = [...parts].reverse().find((part) => /statement is (?:true|false)/i.test(part));
+  const verdict = [...parts].reverse().find(
+    (part) =>
+      /statement is (?:true|false)/i.test(part) ||
+      /die aussage ist (?:wahr|falsch|richtig)/i.test(part),
+  );
   const prose = parts.find(
     (part) => part !== verdict && !isLetterHeader(part) && !isFormulaDump(part),
   );
@@ -149,21 +153,23 @@ async function glideWithPointer(
   const from = cursorFrom(stage);
   let x = from.x;
   let y = from.y;
+  let prev = performance.now();
+  let lastSpot: { x: number; y: number } | null = null;
   await api.tween(duration, (eased) => {
+    const now = performance.now();
+    const dt = Math.min(0.05, Math.max(0, (now - prev) / 1000));
+    prev = now;
     panel.scrollTop = fromTop + (dest - fromTop) * eased;
     const spot = spotAt(eased);
     if (!spot) return;
-    let dx = (spot.x - x) * 0.2;
-    let dy = (spot.y - y) * 0.2;
-    const step = Math.hypot(dx, dy);
-    if (step > 24) {
-      dx *= 24 / step;
-      dy *= 24 / step;
-    }
-    x += dx;
-    y += dy;
+    lastSpot = spot;
+    // Time constant, not a per-frame fraction, so a 30fps hitch still draws a curve.
+    const follow = 1 - Math.exp(-dt / 0.085);
+    x += (spot.x - x) * follow;
+    y += (spot.y - y) * follow;
     api.setCursorAt({ x, y });
   });
+  if (lastSpot) api.setCursorAt(lastSpot);
 }
 
 function cursorFrom(stage: HTMLElement) {
@@ -232,123 +238,6 @@ export async function glideRead(api: DemoPlayerApi, endSelector: string, trackSe
   const max = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
   const dest = Math.max(0, Math.min(bottom - scroller.clientHeight + 20, max));
   await glideScroller(api, stage, scroller, dest, trackSelector, 2.6);
-}
-
-/**
- * Three showpiece spots in each chapter. Headings are element ids.
- * A phrase with a space is matched against a figure caption.
- */
-const CHAPTER_SPOTS: Record<number, readonly [string, string, string]> = {
-  1: ["the-power-set", "the-truth-table-of-an-implication", "mathematical-induction"],
-  10: ["Growth uses a base", "doubling-time-and-half-life", "Read the intercept"],
-  11: ["the-newton-quotient", "Expand while MR", "Zeros at"],
-};
-
-function findSpot(panel: HTMLElement, key: string): HTMLElement | null {
-  if (!key.includes(" ")) {
-    const byId = panel.querySelector<HTMLElement>(`#${CSS.escape(key)}`);
-    if (byId) return byId;
-  }
-  const caption = [...panel.querySelectorAll("figcaption")].find((node) =>
-    (node.textContent ?? "").includes(key),
-  );
-  return (caption?.closest("figure") as HTMLElement | null) ?? null;
-}
-
-function pointOn(stage: HTMLElement, el: HTMLElement) {
-  const sr = stage.getBoundingClientRect();
-  const box = el.getBoundingClientRect();
-  const top = Math.max(box.top, sr.top + 8);
-  const bottom = Math.min(box.bottom, sr.bottom - 8);
-  const left = Math.max(box.left, sr.left + 8);
-  const right = Math.min(box.right, sr.right - 8);
-  if (bottom - top < 8 || right - left < 8) return null;
-  return {
-    x: left - sr.left + (right - left) * 0.42,
-    y: (top + bottom) / 2 - sr.top,
-  };
-}
-
-/** Park a heading at the top, or a figure in the middle, so the highlight stays on screen. */
-function destFor(panel: HTMLElement, el: HTMLElement, max: number): number {
-  const top = el.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop;
-  const figure = el.tagName === "FIGURE";
-  const room = panel.clientHeight - el.offsetHeight;
-  const dest = figure ? top - Math.max(16, room / 2) : top - 8;
-  return Math.max(0, Math.min(dest, max));
-}
-
-/**
- * Read the whole chapter the site shows. Three pauses, each on a highlight of that chapter.
- */
-export async function skimChapter(api: DemoPlayerApi, panelSelector: string, chapter = 1) {
-  await api.flush();
-  const stage = api.stage();
-  if (!stage) return;
-  const spots = CHAPTER_SPOTS[chapter] ?? CHAPTER_SPOTS[1];
-  let panel: HTMLElement | null = null;
-  let max = 0;
-  // Wait for KaTeX / figures so stop targets exist before the skim starts.
-  for (let i = 0; i < 48; i++) {
-    if (api.cancelled()) return;
-    panel = stage.querySelector<HTMLElement>(panelSelector);
-    if (panel) {
-      panel.scrollTop = 0;
-      max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-      const ready = max > 80 && spots.every((key) => findSpot(panel!, key));
-      if (ready) break;
-    }
-    await api.flush();
-    await api.wait(40);
-  }
-  if (!panel) return;
-  max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  if (max < 24) {
-    await api.wait(240);
-    return;
-  }
-  await api.moveTo('[data-d="prose0"]', 20);
-  const found = spots
-    .map((key) => {
-      const el = findSpot(panel!, key);
-      return el ? { dest: destFor(panel!, el, max), el } : null;
-    })
-    .filter((stop): stop is { dest: number; el: HTMLElement } => stop != null)
-    .sort((a, b) => a.dest - b.dest);
-  const plan = (
-    found.length
-      ? found
-      : [
-          { dest: max * 0.28, el: panel },
-          { dest: max * 0.55, el: panel },
-          { dest: max * 0.82, el: panel },
-        ]
-  ).map((stop) => ({ ...stop, pause: true }));
-
-  let fromTop = 0;
-  for (const step of plan) {
-    if (api.cancelled()) return;
-    const dest = step.dest;
-    const distance = dest - fromTop;
-    const onFigure = step.el.tagName === "FIGURE";
-    if (distance >= 8) {
-      const duration = Math.round(Math.min(5200, Math.max(1100, distance * 1.15)));
-      const anchors = onFigure ? null : captureReading(stage, panel);
-      await glideWithPointer(
-        api,
-        stage,
-        panel,
-        fromTop,
-        dest,
-        duration,
-        () =>
-          (onFigure ? pointOn(stage, step.el) : null) ??
-          (anchors ? placeOnReading(stage, panel, anchors) : null),
-      );
-    }
-    fromTop = panel.scrollTop;
-    if (step.pause) await api.wait(160);
-  }
 }
 
 /**

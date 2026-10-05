@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
@@ -10,6 +10,12 @@ import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
 import { CourseMockExamDemo } from "@/components/how-it-works/CourseMockExamDemo";
 import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
 import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
+
+const WisoHowItWorksDemo = lazy(() =>
+  import("@/components/how-it-works/WisoLiveDemos").then((m) => ({ default: m.WisoHowItWorksDemo })),
+);
+
+const BBE_REST = 2.15;
 import { useLanguage } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 
@@ -277,16 +283,39 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
   },
 ];
 
-function BbeCourseStage({ subject }: { subject: string }) {
-  if (subject === "math") return <CourseMathDemo />;
-  if (subject === "english") return <CourseEnglishDemo />;
-  return <CourseEconDemo />;
-}
-
-function BbeStudyStage({ tool }: { tool: string }) {
-  if (tool === "matching") return <CourseMatchDemo />;
-  if (tool === "tutor-exam") return <CourseTutorDemo />;
-  return <CourseFlashDemo />;
+function HowItWorksLive({
+  track,
+  tab,
+  slideKey,
+}: {
+  track: HowItWorksTrack;
+  tab: MainTab;
+  slideKey: string;
+}) {
+  if (track === "wiso") {
+    return (
+      <Suspense fallback={null}>
+        <WisoHowItWorksDemo
+          tab={tab === "games" ? "games" : "course"}
+          slideKey={slideKey}
+          rest={BBE_REST}
+        />
+      </Suspense>
+    );
+  }
+  const rest = track === "bbe" ? BBE_REST : 1;
+  const lockCopy = track === "bbe";
+  if (tab === "theory") return <CourseTheoryDemo rest={rest} lockCopy={lockCopy} />;
+  if (tab === "mock-exams") return <CourseMockExamDemo rest={rest} lockCopy={lockCopy} />;
+  if (tab === "mock-builder") return <CourseMockDemo rest={rest} lockCopy={lockCopy} />;
+  if (tab === "games") {
+    if (slideKey === "matching") return <CourseMatchDemo rest={rest} lockCopy={lockCopy} />;
+    if (slideKey === "tutor-exam") return <CourseTutorDemo rest={rest} lockCopy={lockCopy} />;
+    return <CourseFlashDemo rest={rest} lockCopy={lockCopy} />;
+  }
+  if (slideKey === "math") return <CourseMathDemo rest={rest} lockCopy={lockCopy} />;
+  if (slideKey === "english") return <CourseEnglishDemo rest={rest} lockCopy={lockCopy} />;
+  return <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
 }
 
 const MIN_ZOOM = 1;
@@ -340,12 +369,13 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
   const liveTrack = track === "bbe" || track === "hybrid";
   const liveCourseDemo =
-    liveTrack &&
-    tab === "course" &&
-    (slide.key === "economics" || slide.key === "math" || slide.key === "english");
+    (liveTrack &&
+      tab === "course" &&
+      (slide.key === "economics" || slide.key === "math" || slide.key === "english")) ||
+    (track === "wiso" && tab === "course");
   const liveMockDemo = liveTrack && tab === "mock-builder";
   const liveMockExamDemo = liveTrack && tab === "mock-exams";
-  const liveStudyDemo = liveTrack && tab === "games";
+  const liveStudyDemo = (liveTrack && tab === "games") || (track === "wiso" && tab === "games");
   const liveTheoryDemo = liveTrack && tab === "theory";
   const liveStage = liveCourseDemo || liveMockDemo || liveMockExamDemo || liveStudyDemo || liveTheoryDemo;
 
@@ -514,17 +544,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   {liveStage ? (
                     // One live player at a time: hide the inline demo while the lightbox owns it.
                     !zoomed ? (
-                      liveTheoryDemo ? (
-                        <CourseTheoryDemo key="theory" />
-                      ) : liveMockExamDemo ? (
-                        <CourseMockExamDemo key="mock-exams" />
-                      ) : liveMockDemo ? (
-                        <CourseMockDemo key="mock-builder" />
-                      ) : liveStudyDemo ? (
-                        <BbeStudyStage key={slide.key} tool={slide.key} />
-                      ) : (
-                        <BbeCourseStage key={slide.key} subject={slide.key} />
-                      )
+                      <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
                     ) : null
                   ) : (
                     <video
@@ -633,17 +653,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: slide.aspect }}>
                   {liveStage ? (
                     <div className="absolute inset-0">
-                      {liveTheoryDemo ? (
-                        <CourseTheoryDemo key="theory" />
-                      ) : liveMockExamDemo ? (
-                        <CourseMockExamDemo key="mock-exams" />
-                      ) : liveMockDemo ? (
-                        <CourseMockDemo key="mock-builder" />
-                      ) : liveStudyDemo ? (
-                        <BbeStudyStage key={slide.key} tool={slide.key} />
-                      ) : (
-                        <BbeCourseStage key={slide.key} subject={slide.key} />
-                      )}
+                      <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
                     </div>
                   ) : (
                     <video

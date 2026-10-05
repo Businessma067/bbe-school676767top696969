@@ -13,6 +13,7 @@ export function CourseFrame({
   lane = false,
   bleed = false,
   fill = true,
+  lockCopy = false,
   children,
   overlay,
 }: {
@@ -27,6 +28,8 @@ export function CourseFrame({
   bleed?: boolean;
   /** Scale a short stage up to the frame. Off when the demo's own clicks must stay put. */
   fill?: boolean;
+  /** Keep the stage in the language it was written in. */
+  lockCopy?: boolean;
   children: ReactNode;
   overlay?: ReactNode;
 }) {
@@ -36,6 +39,7 @@ export function CourseFrame({
   return (
     <div
       ref={stageRef}
+      {...(lockCopy ? { "data-no-i18n": true } : null)}
       className={cn(
         "absolute inset-0",
         bleed

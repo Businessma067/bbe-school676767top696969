@@ -80,8 +80,86 @@ const TUTOR_QUESTIONS: TutorQ[] = [
   tutorIdentify("Land", ["Labour", "Capital (factor of production)", "Land", "Entrepreneurship"]),
 ];
 
+export type DemoCard = { term: string; explanation: string };
+
+export type DemoFlashCopy = {
+  eyebrow: string;
+  title: string;
+  known: string;
+  dont: string;
+  fresh: string;
+  term: string;
+  explanation: string;
+  flip: string;
+};
+
+export type DemoMatchCopy = {
+  eyebrow: string;
+  title: string;
+  round: (done: number, total: number) => string;
+  concepts: string;
+  meanings: string;
+  complete: string;
+};
+
+export type DemoTutorCopy = {
+  eyebrow: string;
+  title: string;
+  exam: string;
+  question: (n: number, total: number) => string;
+  score: (score: number, pct: string) => string;
+  complete: string;
+  resultLine: string;
+  correctLine: string;
+  greeting: string;
+  defineHint: string;
+  identifyHint: string;
+  next: string;
+  results: string;
+  pct: (pct: number) => string;
+  asking: (n: number) => string;
+};
+
+const EN_FLASH: DemoFlashCopy = {
+  eyebrow: "Study tools · Economics",
+  title: "Flashcards",
+  known: "Known",
+  dont: "Don't know",
+  fresh: "New",
+  term: "Term",
+  explanation: "Explanation",
+  flip: "Flip",
+};
+
+const EN_MATCH: DemoMatchCopy = {
+  eyebrow: "Study tools · Economics",
+  title: "Connect concept → meaning",
+  round: (done, total) => `Round 1 · ${done}/${total}`,
+  concepts: "Concepts",
+  meanings: "Meanings",
+  complete: "Round complete · 4/4",
+};
+
 const GREETING = TUTOR_GREETINGS[1];
 const CORRECT_LINE = TUTOR_CORRECT[0];
+
+const EN_TUTOR: DemoTutorCopy = {
+  eyebrow: "Study tools · Economics",
+  title: "Theory exam with Tutor Bot",
+  exam: "Exam 1",
+  question: (n, total) => `Question ${n} / ${total}`,
+  score: (score, pct) => `Score ${score}${pct}`,
+  complete: "Tutor Bot · Exam complete",
+  resultLine: "Strong theory pass. Want another random set?",
+  correctLine: CORRECT_LINE,
+  greeting: GREETING,
+  defineHint: "Define the concept. Pick the best meaning.",
+  identifyHint: "Read the meaning. Pick the matching concept.",
+  next: "Next question →",
+  results: "See results →",
+  pct: (pct) => `${pct}% correct`,
+  asking: (n) => `Tutor Bot · Q${n}`,
+};
 
 async function swipeCard(
   api: DemoPlayerApi,
@@ -186,7 +264,21 @@ function TutorFace({ mood }: { mood: "idle" | "happy" | "sad" }) {
 }
 
 /** Study tools · Flashcards: the opening economics cards, flip, then Know / Don't know. */
-export function CourseFlashDemo() {
+export function CourseFlashDemo({
+  cards = FLASH_CARDS,
+  deckTotal = DECK_TOTAL,
+  topic = CORE.title,
+  copy = EN_FLASH,
+  rest = 1,
+  lockCopy = false,
+}: {
+  cards?: DemoCard[];
+  deckTotal?: number;
+  topic?: string;
+  copy?: DemoFlashCopy;
+  rest?: number;
+  lockCopy?: boolean;
+} = {}) {
   const [idx, setIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [exitDir, setExitDir] = useState<Side>(null);
@@ -210,7 +302,7 @@ export function CourseFlashDemo() {
 
       await api.moveTo('[data-d="term"]', 40);
       await api.click(() => setFlipped(true));
-      await api.wait(70);
+      await api.wait(rest > 1 ? 280 : 70);
 
       await api.moveTo('[data-d="dont"]', 40);
       await api.click(() => setUnknown(1));
@@ -221,7 +313,7 @@ export function CourseFlashDemo() {
 
       await api.moveTo('[data-d="flip"]', 40);
       await api.click(() => setFlipped(true));
-      await api.wait(70);
+      await api.wait(rest > 1 ? 280 : 70);
 
       await api.moveTo('[data-d="know"]', 40);
       await api.click(() => setKnown(1));
@@ -231,12 +323,12 @@ export function CourseFlashDemo() {
       });
       await api.wait(280);
     },
-    [],
-    { flow: true },
+    [rest],
+    { flow: true, rest },
   );
 
-  const card = FLASH_CARDS[idx] ?? FLASH_CARDS[0];
-  const fresh = DECK_TOTAL - known - unknown;
+  const card = cards[idx] ?? cards[0];
+  const fresh = deckTotal - known - unknown;
   const transform = exitDir
     ? `translateX(${exitDir === "right" ? "118%" : "-118%"}) rotate(${exitDir === "right" ? 16 : -16}deg)`
     : undefined;
@@ -248,18 +340,19 @@ export function CourseFlashDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
     >
       <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-        Study tools · Economics
+        {copy.eyebrow}
       </p>
-      <h3 className="font-display text-lg font-bold tracking-tight">Flashcards</h3>
+      <h3 className="font-display text-lg font-bold tracking-tight">{copy.title}</h3>
       <div className="mt-2 grid grid-cols-3 gap-2">
-        <StatChip label="Known" value={known} tone="known" />
-        <StatChip label="Don't know" value={unknown} tone="unknown" />
-        <StatChip label="New" value={fresh} tone="new" />
+        <StatChip label={copy.known} value={known} tone="known" />
+        <StatChip label={copy.dont} value={unknown} tone="unknown" />
+        <StatChip label={copy.fresh} value={fresh} tone="new" />
       </div>
       <p className="mb-2 mt-3 text-center text-[11px] font-semibold text-muted-foreground">
-        {CORE.title}
+        {topic}
       </p>
       <div className="hiw-study-flash flashcard-viewport relative overflow-x-clip py-1">
         <div
@@ -281,7 +374,7 @@ export function CourseFlashDemo() {
               <div className="flashcard-face flashcard-front rounded-2xl border border-border bg-card p-4 shadow-sm">
                 <div className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                   <Layers className="h-3 w-3" />
-                  Term
+                  {copy.term}
                 </div>
                 <div
                   data-d="term"
@@ -296,7 +389,7 @@ export function CourseFlashDemo() {
               <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-4 shadow-sm">
                 <div className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                   <Layers className="h-3 w-3" />
-                  Explanation
+                  {copy.explanation}
                 </div>
                 <div className="flex h-full items-center justify-center px-3 text-center">
                   <FlashcardMath text={card.explanation} className="text-[13px] leading-snug" />
@@ -312,21 +405,21 @@ export function CourseFlashDemo() {
           className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-xs font-semibold text-red-700"
         >
           <ThumbsDown className="h-3.5 w-3.5" />
-          Don't know
+          {copy.dont}
         </span>
         <span
           data-d="flip"
           className="rounded-md px-4 py-2 text-xs font-semibold text-white shadow-sm"
           style={{ backgroundColor: ACCENT }}
         >
-          Flip
+          {copy.flip}
         </span>
         <span
           data-d="know"
           className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-xs font-semibold text-emerald-700"
         >
           <ThumbsUp className="h-3.5 w-3.5" />
-          Know
+          {copy.known}
         </span>
       </div>
     </CourseFrame>
@@ -350,7 +443,21 @@ function boardEdge(board: HTMLElement, el: HTMLElement, edge: "left" | "right") 
 }
 
 /** Study tools · Matching: four real economics pairs, locked in with a line. */
-export function CourseMatchDemo() {
+export function CourseMatchDemo({
+  pairs = MATCH_PAIRS,
+  rightOrder = MATCH_RIGHT,
+  topic = TYPES.title,
+  copy = EN_MATCH,
+  rest = 1,
+  lockCopy = false,
+}: {
+  pairs?: { id: number; term: string; explanation: string }[];
+  rightOrder?: number[];
+  topic?: string;
+  copy?: DemoMatchCopy;
+  rest?: number;
+  lockCopy?: boolean;
+} = {}) {
   const boardRef = useRef<HTMLDivElement | null>(null);
   const [selected, setSelected] = useState<number | null>(null);
   const [matched, setMatched] = useState<number[]>([]);
@@ -398,7 +505,7 @@ export function CourseMatchDemo() {
       setFade(false);
       await api.wait(200);
 
-      for (const id of MATCH_PAIRS.map((pair) => pair.id)) {
+      for (const id of pairs.map((pair) => pair.id)) {
         if (api.cancelled()) return;
         await api.moveTo(`[data-d="L${id}"]`, 40);
         if (api.cancelled()) return;
@@ -419,8 +526,8 @@ export function CourseMatchDemo() {
       if (api.cancelled()) return;
       await api.wait(360);
     },
-    [],
-    { flow: true },
+    [rest],
+    { flow: true, rest },
   );
 
   return (
@@ -430,25 +537,24 @@ export function CourseMatchDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
       fill={false}
     >
       <div className="mb-2 flex items-end justify-between gap-2">
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Study tools · Economics
+            {copy.eyebrow}
           </p>
-          <h3 className="font-display text-lg font-bold tracking-tight">
-            Connect concept → meaning
-          </h3>
+          <h3 className="font-display text-lg font-bold tracking-tight">{copy.title}</h3>
         </div>
         <span className="rounded-full border border-border bg-card px-2.5 py-1 text-[10px] font-semibold">
-          Round 1 · {matched.length}/{MATCH_PAIRS.length}
+          {copy.round(matched.length, pairs.length)}
         </span>
       </div>
-      <p className="mb-2 text-[11px] font-semibold text-muted-foreground">{TYPES.title}</p>
+      <p className="mb-2 text-[11px] font-semibold text-muted-foreground">{topic}</p>
       <div className="mb-1.5 grid grid-cols-2 gap-x-8 sm:gap-x-14">
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Concepts</p>
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">Meanings</p>
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">{copy.concepts}</p>
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">{copy.meanings}</p>
       </div>
       <div ref={boardRef} className="relative">
         <svg
@@ -468,21 +574,19 @@ export function CourseMatchDemo() {
           ))}
         </svg>
         <div className="relative z-0 grid grid-cols-2 items-stretch gap-x-8 gap-y-2 sm:gap-x-14">
-          {MATCH_PAIRS.map((pair, index) => (
+          {pairs.map((pair, index) => (
             <MatchRow
               key={pair.id}
               left={pair}
-              right={MATCH_PAIRS[MATCH_RIGHT[index]]}
+              right={pairs[rightOrder[index]] ?? pair}
               selected={selected === pair.id}
               matched={matched}
             />
           ))}
         </div>
       </div>
-      {matched.length === MATCH_PAIRS.length ? (
-        <p className="mt-3 text-center text-sm font-semibold text-emerald-800">
-          Round complete · 4/4
-        </p>
+      {matched.length === pairs.length ? (
+        <p className="mt-3 text-center text-sm font-semibold text-emerald-800">{copy.complete}</p>
       ) : null}
     </CourseFrame>
   );
@@ -544,8 +648,8 @@ function MatchRow({
   selected,
   matched,
 }: {
-  left: (typeof MATCH_PAIRS)[number];
-  right: (typeof MATCH_PAIRS)[number];
+  left: { id: number; term: string; explanation: string };
+  right: { id: number; term: string; explanation: string };
   selected: boolean;
   matched: number[];
 }) {
@@ -572,7 +676,17 @@ function MatchRow({
 }
 
 /** Study tools · Tutor Exam: two bank questions, correct picks, then the results card. */
-export function CourseTutorDemo() {
+export function CourseTutorDemo({
+  questions = TUTOR_QUESTIONS,
+  copy = EN_TUTOR,
+  rest = 1,
+  lockCopy = false,
+}: {
+  questions?: TutorQ[];
+  copy?: DemoTutorCopy;
+  rest?: number;
+  lockCopy?: boolean;
+} = {}) {
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [score, setScore] = useState(0);
@@ -591,10 +705,10 @@ export function CourseTutorDemo() {
       setFade(false);
       await api.wait(200);
 
-      for (let q = 0; q < TUTOR_QUESTIONS.length; q++) {
+      for (let q = 0; q < questions.length; q++) {
         if (api.cancelled()) return;
-        const question = TUTOR_QUESTIONS[q];
-        const last = q === TUTOR_QUESTIONS.length - 1;
+        const question = questions[q];
+        const last = q === questions.length - 1;
         await api.moveTo(`[data-d="c${question.correct}"]`, 40);
         if (api.cancelled()) return;
         await api.click(() => {
@@ -623,21 +737,21 @@ export function CourseTutorDemo() {
       await api.moveTo('[data-d="result"]', 60);
       await api.wait(400);
     },
-    [],
-    { flow: true },
+    [rest],
+    { flow: true, rest },
   );
 
-  const question = TUTOR_QUESTIONS[index] ?? TUTOR_QUESTIONS[0];
+  const question = questions[index] ?? questions[0];
   const mood = picked == null ? "idle" : "happy";
   const bubble =
     picked != null
-      ? CORRECT_LINE
+      ? copy.correctLine
       : index === 0
-        ? GREETING
+        ? copy.greeting
         : question.mode === "define"
-          ? "Define the concept. Pick the best meaning."
-          : "Read the meaning. Pick the matching concept.";
-  const pct = TUTOR_QUESTIONS.length === 0 ? 0 : Math.round((score / TUTOR_QUESTIONS.length) * 100);
+          ? copy.defineHint
+          : copy.identifyHint;
+  const pct = questions.length === 0 ? 0 : Math.round((score / questions.length) * 100);
 
   return (
     <CourseFrame
@@ -646,23 +760,19 @@ export function CourseTutorDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
       fill={false}
     >
       <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-        Study tools · Economics
+        {copy.eyebrow}
       </p>
-      <h3 className="font-display text-lg font-bold tracking-tight">Theory exam with Tutor Bot</h3>
+      <h3 className="font-display text-lg font-bold tracking-tight">{copy.title}</h3>
       <div className="mb-2 mt-2 flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
         <span className="rounded-full border border-border bg-card px-2 py-0.5 font-semibold text-foreground">
-          Exam 1
+          {copy.exam}
         </span>
-        <span>
-          Question {finished ? TUTOR_QUESTIONS.length : index + 1} / {TUTOR_QUESTIONS.length}
-        </span>
-        <span>
-          Score {score}
-          {picked != null || finished ? ` · ${pct}%` : ""}
-        </span>
+        <span>{copy.question(finished ? questions.length : index + 1, questions.length)}</span>
+        <span>{copy.score(score, picked != null || finished ? ` · ${pct}%` : "")}</span>
       </div>
       {finished ? (
         <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
@@ -670,18 +780,18 @@ export function CourseTutorDemo() {
             <TutorFace mood="happy" />
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-                Tutor Bot · Exam complete
+                {copy.complete}
               </p>
               <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3 py-2 text-sm">
-                Strong theory pass. Want another random set?
+                {copy.resultLine}
               </div>
             </div>
           </div>
           <div data-d="result" className="mx-auto mt-4 w-fit px-6 py-1 text-center">
             <p className="font-display text-3xl font-bold leading-none">
-              {score}/{TUTOR_QUESTIONS.length}
+              {score}/{questions.length}
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">{pct}% correct</p>
+            <p className="mt-1 text-sm text-muted-foreground">{copy.pct(pct)}</p>
           </div>
         </div>
       ) : (
@@ -690,7 +800,7 @@ export function CourseTutorDemo() {
             <div
               className="absolute inset-y-0 left-0 transition-all duration-300"
               style={{
-                width: `${((index + 1) / TUTOR_QUESTIONS.length) * 100}%`,
+                width: `${((index + 1) / questions.length) * 100}%`,
                 backgroundColor: ACCENT,
               }}
             />
@@ -699,7 +809,7 @@ export function CourseTutorDemo() {
             <TutorFace mood={mood} />
             <div className="min-w-0 flex-1">
               <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-                Tutor Bot · Q{index + 1}
+                {copy.asking(index + 1)}
               </p>
               <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3 py-2 text-sm leading-snug">
                 {bubble}
@@ -761,7 +871,7 @@ export function CourseTutorDemo() {
                   className="inline-flex shrink-0 rounded-md px-4 py-2 text-xs font-semibold text-white"
                   style={{ backgroundColor: ACCENT }}
                 >
-                  {index + 1 >= TUTOR_QUESTIONS.length ? "See results →" : "Next question →"}
+                  {index + 1 >= questions.length ? copy.results : copy.next}
                 </span>
                 <p className="min-w-0 text-sm font-semibold">{question.revealTerm}</p>
               </div>

@@ -22,7 +22,10 @@ const TRUE_AT = FIRST.answerKey.flatMap((on, index) => (on ? [index] : []));
 const EXAM_SECONDS = 12 * CUSTOM_MOCK_MINUTES_PER_QUESTION * 60;
 
 /** How it works · Mock Builder: four real subtopics, then the mix, a step quicker than Course. */
-export function CourseMockDemo() {
+export function CourseMockDemo({
+  rest = 1,
+  lockCopy = false,
+}: { rest?: number; lockCopy?: boolean } = {}) {
   const chapters = useMemo(() => getCustomMockChapters("economics").slice(0, 3), []);
   const chapter = chapters[0];
   const picks = useMemo(() => chapter?.subtopics.slice(0, 4) ?? [], [chapter]);
@@ -137,7 +140,8 @@ export function CourseMockDemo() {
       }
       await api.wait(280);
     },
-    [chapter, picks],
+    [chapter, picks, rest],
+    { rest },
   );
 
   return (
@@ -147,6 +151,7 @@ export function CourseMockDemo() {
       cursorRef={cursorRef}
       clicking={clicking}
       fade={fade}
+      lockCopy={lockCopy}
       overlay={
         dialog && !exam ? (
           <div className="absolute inset-0 z-20 grid place-items-center bg-black/70 p-4">

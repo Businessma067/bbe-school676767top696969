@@ -4,6 +4,7 @@ import { FlashcardMath } from "@/components/FlashcardMath";
 import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
 import { cleanExplanation } from "@/lib/clean-explanation";
 import { englishBankExplanation, evenExplanation, fullExplanation } from "./course-motion";
+import { EN_CHROME, type CourseChrome } from "./course-copy";
 import { cn } from "@/lib/utils";
 
 const LETTERS = "ABCDE";
@@ -22,6 +23,7 @@ export function CourseSolution({
   overview,
   locateAt,
   located = false,
+  chrome = EN_CHROME,
 }: {
   open: boolean;
   dimmed?: boolean;
@@ -38,6 +40,7 @@ export function CourseSolution({
   overview?: string;
   locateAt?: number;
   located?: boolean;
+  chrome?: CourseChrome;
 }) {
   return (
     <>
@@ -60,11 +63,11 @@ export function CourseSolution({
           className="practice-scroll h-full overflow-y-auto border-l border-border bg-card p-4 shadow-2xl sm:p-5"
         >
           <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
-            Explanation
+            {chrome.sheetTitle}
           </p>
           <section className="mb-3 overflow-x-auto border-b border-border/60 pb-3">
             <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
-              Answer key
+              {chrome.answerKey}
             </p>
             <table className="w-full min-w-[14rem] border-collapse border border-foreground/20 text-center text-[13px] shadow-sm">
               <thead>
@@ -86,7 +89,7 @@ export function CourseSolution({
                       key={i}
                       className="px-2 py-2.5 text-[12px] font-bold uppercase tracking-widest text-foreground"
                     >
-                      {isTrue ? "TRUE" : "FALSE"}
+                      {isTrue ? chrome.trueWord : chrome.falseWord}
                     </td>
                   ))}
                 </tr>
@@ -101,7 +104,7 @@ export function CourseSolution({
           <div className="space-y-3">
             {shown.map((i) => {
               const letter = LETTERS[i];
-              const verdict = answerKey[i] ? "True" : "False";
+              const verdict = answerKey[i] ? chrome.trueWord : chrome.falseWord;
               const raw = explanations[i] ?? "";
               const body = bank
                 ? englishBankExplanation(raw)
@@ -130,11 +133,11 @@ export function CourseSolution({
                           {letter}
                         </span>
                         <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
-                          {answerKey[i] ? "TRUE" : "FALSE"}
+                          {answerKey[i] ? chrome.trueWord : chrome.falseWord}
                         </span>
                         {locateAt === i ? (
                           <span data-d="show" className={practiceInlineLocateButtonClass(located)}>
-                            {located ? "Located in text" : "Show solution in the text"}
+                            {located ? chrome.locatedInText : chrome.showInText}
                           </span>
                         ) : null}
                       </div>
@@ -153,7 +156,7 @@ export function CourseSolution({
                   )}
                   {!bank && locateAt === i ? (
                     <span data-d="show" className={cn("mt-3", practiceInlineLocateButtonClass(located))}>
-                      {located ? "Located in text" : "Show solution in the text"}
+                      {located ? chrome.locatedInText : chrome.showInText}
                     </span>
                   ) : null}
                 </div>
