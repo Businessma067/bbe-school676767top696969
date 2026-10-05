@@ -73,8 +73,8 @@ export function useDemoPlayer(
   const rest = options?.rest ?? 1;
   const cinematic = rest > 1;
   const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
-  const glidePxPerMs = cinematic ? 0.2 * pace : 0.32 * pace;
-  const glideMinMs = cinematic ? Math.max(480, 560 / pace) : Math.max(200, 320 / pace);
+  const glidePxPerMs = cinematic ? 0.25 * pace : 0.38 * pace;
+  const glideMinMs = cinematic ? Math.max(380, 440 / pace) : Math.max(180, 280 / pace);
 
   useEffect(() => {
     const el = stageRef.current;

@@ -9,7 +9,7 @@ import { CourseFrame } from "./CourseFrame";
 const READ = [1, 10, 11] as const;
 
 /** Cruise speed of each rush, before the brake. */
-const CRUISE_PX_PER_MS = 1.6;
+const CRUISE_PX_PER_MS = 2;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
@@ -63,11 +63,12 @@ function Reader({
       </div>
       <div
         data-d="theory-scroll"
-        className="min-h-0 flex-1 overflow-y-auto"
+        className="min-h-0 flex-1 overflow-y-auto [overflow-anchor:none]"
         style={{ scrollBehavior: "auto" }}
         onScroll={(event) => {
           const el = event.currentTarget;
-          const max = el.scrollHeight - el.clientHeight;
+          const cached = Number(el.dataset.max);
+          const max = cached > 0 ? cached : el.scrollHeight - el.clientHeight;
           onScroll(max > 0 ? el.scrollTop / max : 0);
         }}
       >
@@ -137,7 +138,7 @@ async function glideHand(
     api.setCursorAt(to);
     return;
   }
-  const ms = duration ?? Math.round(Math.min(420, Math.max(240, dist / 1.7)));
+  const ms = duration ?? Math.round(Math.min(360, Math.max(200, dist / 2.1)));
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
@@ -164,19 +165,6 @@ async function aim(api: DemoPlayerApi, selector: string) {
   await api.moveTo(selector, 30);
 }
 
-/** One layout pass, then off-screen sections stay out of later frames. */
-function restSections(panel: HTMLElement) {
-  const article = panel.querySelector("article");
-  if (!article) return;
-  for (const child of article.children) {
-    const el = child as HTMLElement;
-    const h = el.offsetHeight;
-    if (h < 8) continue;
-    el.style.containIntrinsicSize = `auto ${h}px`;
-    el.style.contentVisibility = "auto";
-  }
-}
-
 function handInText(stage: HTMLElement, panel: HTMLElement, depth: number, across: number) {
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
@@ -200,14 +188,18 @@ async function rushThenStop(
   const fromTop = panel.scrollTop;
   const distance = dest - fromTop;
   if (distance < 16) return;
-  const duration = Math.round(Math.max(980, (1.2 * distance) / CRUISE_PX_PER_MS));
+  const duration = Math.round(Math.max(820, (1.15 * distance) / CRUISE_PX_PER_MS));
   const handFrom = cursorNow(stage);
   const handTo = handInText(stage, panel, depth, across);
-  const started = performance.now();
+  let elapsed = 0;
+  let last = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
-      const t = Math.min(1, (now - started) / duration);
+      // A late frame must not skip ahead, or the page looks torn.
+      elapsed += Math.min(32, Math.max(0, now - last));
+      last = now;
+      const t = Math.min(1, elapsed / duration);
       const e = carryHand(t);
       panel.scrollTop = fromTop + distance * fastThenStop(t);
       api.setCursorAt({
@@ -247,10 +239,10 @@ async function readTwoStops(api: DemoPlayerApi) {
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const first = Math.round(max * 0.4);
   const second = Math.round(Math.min(max, Math.max(first + panel.clientHeight, max * 0.76)));
-  restSections(panel);
+  panel.dataset.max = String(max);
   await rushThenStop(api, panel, first, 0.46, 0.3);
   if (api.cancelled()) return;
-  await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 420);
+  await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 320);
   await rushThenStop(api, panel, Math.min(second, max), 0.7, 0.64);
 }
 

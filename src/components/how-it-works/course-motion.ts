@@ -192,7 +192,7 @@ async function glideScroller(
     await api.wait(120);
     return;
   }
-  const duration = Math.round(Math.min(5200, Math.max(1400, distance * pace * 0.55)));
+  const duration = Math.round(Math.min(4400, Math.max(1200, distance * pace * 0.46)));
   const anchors = captureReading(stage, scroller, trackSelector);
   await glideWithPointer(api, stage, scroller, start, dest, duration, anchors);
 }
@@ -251,7 +251,7 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
     await api.wait(160);
     return;
   }
-  const duration = Math.round(Math.min(3200, Math.max(1200, dest * 0.72)));
+  const duration = Math.round(Math.min(2700, Math.max(1000, dest * 0.58)));
   const anchors = captureReading(stage, panel);
   await glideWithPointer(api, stage, panel, 0, dest, duration, anchors);
 }
@@ -273,7 +273,7 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
     await api.wait(200);
     return;
   }
-  const duration = Math.max(1600, Math.min(4200, max * 0.45));
+  const duration = Math.max(1300, Math.min(3600, max * 0.36));
   const anchors = captureReading(stage, panel);
   await glideWithPointer(api, stage, panel, 0, max, duration, anchors);
 }
