@@ -8,40 +8,17 @@ import { CourseFrame } from "./CourseFrame";
 
 const READ = [1, 10, 11] as const;
 
-/** Two nearby headings. The reader opens on the first and eases only as far as the second. */
+/** Two headings in each chapter. The read starts at the top and eases to each one. */
 const STOPS: Record<(typeof READ)[number], readonly [string, string]> = {
-  1: ["elements-versus-subsets", "the-power-set"],
-  10: ["growth-or-decay-what-the-base-does", "what-happens-if-you-change-the-start"],
+  1: ["what-a-set-is", "the-power-set"],
+  10: ["start-with-a-picture", "growth-or-decay-what-the-base-does"],
   11: ["the-newton-quotient", "the-tangent-line"],
 };
 
+/** About 320px/s. Long enough to read, short of the old flick. */
+const SCROLL_PX_PER_MS = 0.32;
+
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
-
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s.-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-")
-    .slice(0, 80);
-}
-
-/** Only the two stops. Nothing above the first heading exists, so the open cannot skim the chapter. */
-function excerptBetween(markdown: string, firstId: string, secondId: string): string {
-  const lines = markdown.split("\n");
-  const marks: { index: number; id: string }[] = [];
-  lines.forEach((line, index) => {
-    const match = /^(#{2,3})\s+(.+)$/.exec(line);
-    if (!match) return;
-    marks.push({ index, id: slugify(match[2]) });
-  });
-  const start = marks.find((mark) => mark.id === firstId);
-  const second = marks.find((mark) => mark.id === secondId);
-  if (!start || !second || second.index <= start.index) return "";
-  const next = marks.find((mark) => mark.index > second.index);
-  const end = next ? next.index : Math.min(lines.length, second.index + 20);
-  return lines.slice(start.index, end).join("\n");
-}
 
 function headingTop(panel: HTMLElement, id: string): number | null {
   const el = panel.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
@@ -51,23 +28,16 @@ function headingTop(panel: HTMLElement, id: string): number | null {
 
 function Reader({
   chapter,
-  stops,
   onScroll,
 }: {
   chapter: MathCourseTheoryChapter;
-  stops: readonly [string, string];
   onScroll: (pct: number) => void;
 }) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const markdown = useMemo(
-    () => excerptBetween(chapter.markdown, stops[0], stops[1]),
-    [chapter.markdown, stops],
-  );
+  const markdown = chapter.markdown;
   const chip = useMemo(() => {
-    const line = chapter.markdown.split("\n").find((item) => /^##\s+\d+\.\d+\b/.test(item));
+    const line = markdown.split("\n").find((item) => /^##\s+\d+\.\d+\b/.test(item));
     return line?.replace(/^##\s+/, "").replace(/^(\d+\.\d+)\s+/, "$1 · ") ?? "";
-  }, [chapter.markdown]);
-
+  }, [markdown]);
   return (
     <div className="absolute inset-0 z-10 flex flex-col bg-card">
       <div className="shrink-0 border-b border-border px-3 py-1.5">
@@ -105,9 +75,7 @@ function Reader({
         ) : null}
       </div>
       <div
-        ref={scrollRef}
         data-d="theory-scroll"
-        data-theory-ready="1"
         className="min-h-0 flex-1 overflow-y-auto"
         style={{ scrollBehavior: "auto" }}
         onScroll={(event) => {
@@ -128,7 +96,7 @@ function cursorNow(stage: HTMLElement) {
   const cursor = stage.querySelector<HTMLElement>("[data-cx]");
   return {
     x: Number(cursor?.dataset.cx ?? 48),
-    y: Number(cursor?.dataset.cy ?? 88),
+    y: Number(cursor?.dataset.cy ?? 120),
   };
 }
 
@@ -137,43 +105,12 @@ function pointOnHeading(stage: HTMLElement, el: HTMLElement) {
   const box = el.getBoundingClientRect();
   return {
     x: Math.max(28, Math.min(box.left - sr.left + 42, sr.width - 28)),
-    y: Math.max(72, Math.min(box.top - sr.top + 16, sr.height - 40)),
+    y: Math.max(78, Math.min(box.top - sr.top + 16, sr.height - 36)),
   };
 }
 
-async function glideCursor(api: DemoPlayerApi, stage: HTMLElement, target: { x: number; y: number }) {
-  const from = cursorNow(stage);
-  const dist = Math.hypot(target.x - from.x, target.y - from.y);
-  if (dist < 2) {
-    api.setCursorAt(target);
-    return;
-  }
-  const duration = Math.round(Math.max(900, Math.min(1800, dist / 0.28)));
-  await api.tween(duration, (eased) => {
-    api.setCursorAt({
-      x: from.x + (target.x - from.x) * eased,
-      y: from.y + (target.y - from.y) * eased,
-    });
-  });
-  api.setCursorAt(target);
-}
-
-async function whenReady(api: DemoPlayerApi) {
-  for (let i = 0; i < 40; i++) {
-    if (api.cancelled()) return null;
-    const panel = api.stage()?.querySelector<HTMLElement>('[data-theory-ready="1"]');
-    if (panel && panel.clientHeight > 40) return panel;
-    await api.flush();
-    await api.wait(30);
-  }
-  return null;
-}
-
-/**
- * One short ease from the open heading to the next. Never walks the rest of the chapter.
- * The cursor is moved by hand here so the player does not scroll the article to "reveal" it.
- */
-async function easeToSecond(api: DemoPlayerApi, panel: HTMLElement, id: string) {
+/** Medium glide down to one heading, then the caller pauses. Does not touch the chapter list. */
+async function easeToHeading(api: DemoPlayerApi, panel: HTMLElement, id: string) {
   const stage = api.stage();
   const el = panel.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
   if (!stage || !el) return;
@@ -185,7 +122,7 @@ async function easeToSecond(api: DemoPlayerApi, panel: HTMLElement, id: string) 
   const dest = Math.max(from, Math.min(top - 12, max));
   const distance = dest - from;
   if (distance < 12) return;
-  const duration = Math.round(Math.max(3400, distance / 0.1));
+  const duration = Math.round(Math.max(1400, distance / SCROLL_PX_PER_MS));
   let x = cursorNow(stage).x;
   let y = cursorNow(stage).y;
   let prev = performance.now();
@@ -204,35 +141,67 @@ async function easeToSecond(api: DemoPlayerApi, panel: HTMLElement, id: string) 
   api.setCursorAt(pointOnHeading(stage, el));
 }
 
-/** How it works · Theory: three chapters, two smooth stops each, no opening skim. */
+async function readTwoStops(api: DemoPlayerApi, num: (typeof READ)[number]) {
+  const spots = STOPS[num];
+  let panel: HTMLElement | null = null;
+  for (let i = 0; i < 40; i++) {
+    if (api.cancelled()) return;
+    panel = api.stage()?.querySelector<HTMLElement>('[data-d="theory-scroll"]') ?? null;
+    if (panel) {
+      panel.style.scrollBehavior = "auto";
+      panel.scrollTop = 0;
+      const ready = spots.every((id) => panel!.querySelector(`#${CSS.escape(id)}`));
+      if (ready && panel.scrollHeight > panel.clientHeight + 40) break;
+    }
+    await api.flush();
+    await api.wait(40);
+  }
+  if (!panel) return;
+  panel.scrollTop = 0;
+  await api.wait(320);
+  for (const id of spots) {
+    if (api.cancelled()) return;
+    await easeToHeading(api, panel, id);
+    await api.wait(1000);
+  }
+}
+
+/** How it works · Theory: open chapters 1, 10 and 11 from the list, then two medium stops in each. */
 export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
 }: { rest?: number; lockCopy?: boolean } = {}) {
-  const [open, setOpen] = useState<number>(READ[0]);
+  const [open, setOpen] = useState<number | null>(null);
   const barPct = useRef(0);
-  const { stageRef, scrollRef, cursorRef, clicking, fade } = useDemoPlayer(async (api) => {
-    for (const num of READ) {
-      if (api.cancelled()) return;
-      const [first, second] = STOPS[num];
+  const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
+    const readChapter = async (num: (typeof READ)[number]) => {
+      await api.moveTo(`[data-d="ch-${num}"]`, 80);
+      await api.click();
       setOpen(num);
       await api.flush();
-      const panel = await whenReady(api);
-      const stage = api.stage();
-      const firstEl = panel?.querySelector<HTMLElement>(`#${CSS.escape(first)}`);
-      if (!panel || !stage || !firstEl) continue;
-      await glideCursor(api, stage, pointOnHeading(stage, firstEl));
-      await api.wait(1200);
+      await readTwoStops(api, num);
+      await api.moveTo('[data-d="chapters"]', 40);
+      await api.click();
+      setOpen(null);
+      await api.flush();
+    };
+
+    setFade(true);
+    await api.wait(420);
+    setOpen(null);
+    if (api.scroll()) api.scroll()!.scrollTop = 0;
+    await api.flush();
+    setFade(false);
+    await api.wait(360);
+
+    for (const num of READ) {
       if (api.cancelled()) return;
-      await easeToSecond(api, panel, second);
-      const secondEl = panel.querySelector<HTMLElement>(`#${CSS.escape(second)}`);
-      if (secondEl) await glideCursor(api, stage, pointOnHeading(stage, secondEl));
-      await api.wait(1200);
+      await readChapter(num);
     }
+    await api.wait(360);
   }, [rest], { rest });
 
-  const chapter = MATH_COURSE_THEORY[open];
-  const stops = STOPS[open as (typeof READ)[number]] ?? STOPS[1];
+  const chapter = open == null ? null : MATH_COURSE_THEORY[open];
 
   return (
     <CourseFrame
@@ -247,7 +216,6 @@ export function CourseTheoryDemo({
           <Reader
             key={chapter.num}
             chapter={chapter}
-            stops={stops}
             onScroll={(pct) => {
               barPct.current = pct;
               const bar = stageRef.current?.querySelector<HTMLElement>('[data-d="theory-bar"]');
