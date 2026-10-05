@@ -110,36 +110,30 @@ function captureReading(
   return anchors;
 }
 
-function placeOnReading(
-  stage: HTMLElement,
-  panel: HTMLElement,
+/** Where the reading hand sits for a scroll position. Geometry is measured once. */
+function handOnLine(
   anchors: ReadingAnchor[],
+  contentMid: number,
+  originY: number,
+  scrollTop: number,
 ): { x: number; y: number } | null {
   if (!anchors.length) return null;
-  const sr = stage.getBoundingClientRect();
-  const pr = panel.getBoundingClientRect();
-  const viewTop = Math.max(pr.top, sr.top);
-  const viewBottom = Math.min(pr.bottom, sr.bottom);
-  if (viewBottom - viewTop < 16) return null;
-  const contentMid = panel.scrollTop + (viewTop + viewBottom) / 2 - pr.top;
-  let best = anchors[0];
-  let bestDist = Math.abs(best.mid - contentMid);
-  for (let i = 1; i < anchors.length; i++) {
-    const dist = Math.abs(anchors[i].mid - contentMid);
-    if (dist < bestDist) {
-      best = anchors[i];
-      bestDist = dist;
-    }
-  }
+  let i = 0;
+  while (i < anchors.length - 1 && anchors[i + 1].mid < contentMid) i++;
+  const a = anchors[i];
+  const b = anchors[Math.min(i + 1, anchors.length - 1)];
+  const span = b.mid - a.mid;
+  const u = span > 1 ? Math.min(1, Math.max(0, (contentMid - a.mid) / span)) : 0;
+  const mid = a.mid + (b.mid - a.mid) * u;
   return {
-    x: best.x,
-    y: pr.top - sr.top + (best.mid - panel.scrollTop) - 3,
+    x: a.x + (b.x - a.x) * u,
+    y: originY + (mid - scrollTop) - 3,
   };
 }
 
 /**
- * Scroll while the pointer eases onto the passing line.
- * The line list is captured once, so each frame only moves scrollTop.
+ * Scroll while the pointer rides the passing line.
+ * Rects are read once, so a frame only writes scrollTop and the cursor.
  */
 async function glideWithPointer(
   api: DemoPlayerApi,
@@ -148,26 +142,27 @@ async function glideWithPointer(
   fromTop: number,
   dest: number,
   duration: number,
-  spotAt: (eased: number) => { x: number; y: number } | null,
+  anchors: ReadingAnchor[],
 ) {
+  const sr = stage.getBoundingClientRect();
+  const pr = panel.getBoundingClientRect();
+  const originY = pr.top - sr.top;
+  const viewMid = (Math.max(pr.top, sr.top) + Math.min(pr.bottom, sr.bottom)) / 2 - pr.top;
   const from = cursorFrom(stage);
-  let x = from.x;
-  let y = from.y;
-  let prev = performance.now();
+  const blendUntil = performance.now() + 220;
   let lastSpot: { x: number; y: number } | null = null;
   await api.tween(duration, (eased) => {
-    const now = performance.now();
-    const dt = Math.min(0.05, Math.max(0, (now - prev) / 1000));
-    prev = now;
-    panel.scrollTop = fromTop + (dest - fromTop) * eased;
-    const spot = spotAt(eased);
+    const top = fromTop + (dest - fromTop) * eased;
+    panel.scrollTop = top;
+    const spot = handOnLine(anchors, top + viewMid, originY, top);
     if (!spot) return;
     lastSpot = spot;
-    // Time constant, not a per-frame fraction, so a 30fps hitch still draws a curve.
-    const follow = 1 - Math.exp(-dt / 0.085);
-    x += (spot.x - x) * follow;
-    y += (spot.y - y) * follow;
-    api.setCursorAt({ x, y });
+    const u = Math.min(1, Math.max(0, 1 - (blendUntil - performance.now()) / 220));
+    const e = u * u * (3 - 2 * u);
+    api.setCursorAt({
+      x: from.x + (spot.x - from.x) * e,
+      y: from.y + (spot.y - from.y) * e,
+    });
   });
   if (lastSpot) api.setCursorAt(lastSpot);
 }
@@ -199,9 +194,7 @@ async function glideScroller(
   }
   const duration = Math.round(Math.min(5200, Math.max(1400, distance * pace * 0.55)));
   const anchors = captureReading(stage, scroller, trackSelector);
-  await glideWithPointer(api, stage, scroller, start, dest, duration, () =>
-    placeOnReading(stage, scroller, anchors),
-  );
+  await glideWithPointer(api, stage, scroller, start, dest, duration, anchors);
 }
 
 /** Read the whole results sheet, from the score down through the question table. */
@@ -260,9 +253,7 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
   }
   const duration = Math.round(Math.min(3200, Math.max(1200, dest * 0.72)));
   const anchors = captureReading(stage, panel);
-  await glideWithPointer(api, stage, panel, 0, dest, duration, () =>
-    placeOnReading(stage, panel, anchors),
-  );
+  await glideWithPointer(api, stage, panel, 0, dest, duration, anchors);
 }
 
 /**
@@ -284,9 +275,7 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
   }
   const duration = Math.max(1600, Math.min(4200, max * 0.45));
   const anchors = captureReading(stage, panel);
-  await glideWithPointer(api, stage, panel, 0, max, duration, () =>
-    placeOnReading(stage, panel, anchors),
-  );
+  await glideWithPointer(api, stage, panel, 0, max, duration, anchors);
 }
 
 /** Least scroll that puts `item` fully inside the panel. No-op when it already fits. */

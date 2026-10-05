@@ -13,12 +13,6 @@ const CRUISE_PX_PER_MS = 1.6;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
-function headingTop(panel: HTMLElement, id: string): number | null {
-  const el = panel.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
-  if (!el) return null;
-  return el.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop;
-}
-
 function Reader({
   chapter,
   onScroll,
@@ -77,8 +71,19 @@ function Reader({
           onScroll(max > 0 ? el.scrollTop / max : 0);
         }}
       >
-        <article className="mx-auto w-full max-w-[78rem] px-4 py-3 sm:px-5 [&_.katex]:text-[1.03em] [&_.katex-display]:my-3 [&_.katex-display]:overflow-x-auto">
-          <TheoryArticle markdown={markdown} enableMath dense />
+        <article
+          data-ready="0"
+          className="mx-auto w-full max-w-[78rem] px-4 py-3 sm:px-5 [&_.katex]:text-[1.03em] [&_.katex-display]:my-3 [&_.katex-display]:overflow-x-auto"
+        >
+          <TheoryArticle
+            markdown={markdown}
+            enableMath
+            dense
+            onReady={() => {
+              const article = document.querySelector<HTMLElement>('[data-d="theory-scroll"] article');
+              if (article) article.dataset.ready = "1";
+            }}
+          />
         </article>
       </div>
     </div>
@@ -100,18 +105,6 @@ function fastThenStop(t: number) {
   if (t <= split) return (t / split) * coast;
   const u = (t - split) / (1 - split);
   return coast + (1 - coast) * (1 - (1 - u) ** 3);
-}
-
-/** A reading hand, deep in the column, not pinned to the top edge. */
-function deepHand(stage: HTMLElement, panel: HTMLElement, depth = 0.7, across = 0.38) {
-  const sr = stage.getBoundingClientRect();
-  const pr = panel.getBoundingClientRect();
-  const x = pr.left - sr.left + pr.width * across;
-  const y = pr.top - sr.top + pr.height * depth;
-  return {
-    x: Math.max(32, Math.min(x, sr.width - 28)),
-    y: Math.max(pr.top - sr.top + 48, Math.min(y, sr.height - 28)),
-  };
 }
 
 function pointOf(stage: HTMLElement, el: HTMLElement) {
@@ -171,28 +164,29 @@ async function aim(api: DemoPlayerApi, selector: string) {
   await api.moveTo(selector, 30);
 }
 
-function stopNear(panel: HTMLElement, target: number, floor: number, ceiling: number) {
-  const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  const cap = Math.min(max, ceiling);
-  const goal = Math.min(cap, Math.max(floor, target));
-  let best = goal;
-  let bestDist = panel.clientHeight * 0.9;
-  for (const node of panel.querySelectorAll<HTMLElement>("h2, h3")) {
-    if (!node.id) continue;
-    const top = headingTop(panel, node.id);
-    if (top == null) continue;
-    const dest = Math.max(0, Math.min(top - 20, cap));
-    if (dest < floor) continue;
-    const dist = Math.abs(dest - goal);
-    if (dist < bestDist) {
-      bestDist = dist;
-      best = dest;
-    }
+/** One layout pass, then off-screen sections stay out of later frames. */
+function restSections(panel: HTMLElement) {
+  const article = panel.querySelector("article");
+  if (!article) return;
+  for (const child of article.children) {
+    const el = child as HTMLElement;
+    const h = el.offsetHeight;
+    if (h < 8) continue;
+    el.style.containIntrinsicSize = `auto ${h}px`;
+    el.style.contentVisibility = "auto";
   }
-  return best;
 }
 
-/** Rush, then brake smoothly onto one stop. The hand travels the whole rush. */
+function handInText(stage: HTMLElement, panel: HTMLElement, depth: number, across: number) {
+  const sr = stage.getBoundingClientRect();
+  const pr = panel.getBoundingClientRect();
+  return {
+    x: Math.max(24, Math.min(sr.width - 28, pr.left - sr.left + pr.width * across)),
+    y: Math.max(pr.top - sr.top + 40, Math.min(sr.height - 28, pr.top - sr.top + pr.height * depth)),
+  };
+}
+
+/** Rush, then brake. The hand glides for the whole rush, with no chase and no layout. */
 async function rushThenStop(
   api: DemoPlayerApi,
   panel: HTMLElement,
@@ -203,19 +197,19 @@ async function rushThenStop(
   const stage = api.stage();
   if (!stage) return;
   panel.style.scrollBehavior = "auto";
-  const from = panel.scrollTop;
-  const distance = dest - from;
+  const fromTop = panel.scrollTop;
+  const distance = dest - fromTop;
   if (distance < 16) return;
   const duration = Math.round(Math.max(980, (1.2 * distance) / CRUISE_PX_PER_MS));
   const handFrom = cursorNow(stage);
-  const handTo = deepHand(stage, panel, depth, across);
+  const handTo = handInText(stage, panel, depth, across);
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
       const t = Math.min(1, (now - started) / duration);
       const e = carryHand(t);
-      panel.scrollTop = from + distance * fastThenStop(t);
+      panel.scrollTop = fromTop + distance * fastThenStop(t);
       api.setCursorAt({
         x: handFrom.x + (handTo.x - handFrom.x) * e,
         y: handFrom.y + (handTo.y - handFrom.y) * e,
@@ -229,48 +223,35 @@ async function rushThenStop(
   api.setCursorAt(handTo);
 }
 
-/** Scroll holds. The pointer keeps gliding, so the pause is not a frozen hand. */
-async function driftHand(api: DemoPlayerApi, panel: HTMLElement, depth: number, across: number, ms: number) {
-  const stage = api.stage();
-  if (!stage) return;
-  await glideHand(api, stage, deepHand(stage, panel, depth, across), ms);
-}
-
 async function readTwoStops(api: DemoPlayerApi) {
   let panel: HTMLElement | null = null;
   let lastHeight = -1;
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 80; i++) {
     if (api.cancelled()) return;
     panel = api.stage()?.querySelector<HTMLElement>('[data-d="theory-scroll"]') ?? null;
     if (panel) {
       panel.style.scrollBehavior = "auto";
       panel.scrollTop = 0;
       const height = panel.scrollHeight;
-      if (height > panel.clientHeight + 80 && height === lastHeight) break;
+      const ready = panel.querySelector("article")?.dataset.ready === "1";
+      if (ready && height > panel.clientHeight + 80 && height === lastHeight) break;
       lastHeight = height;
     }
     await api.flush();
     await api.wait(40);
   }
   if (!panel) return;
+  const stage = api.stage();
+  if (!stage) return;
   panel.scrollTop = 0;
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  const view = panel.clientHeight;
-  // Two rushes land near 40%, then about 75% of the chapter.
-  const first = stopNear(panel, max * 0.4, max * 0.32, Math.min(max, max * 0.48));
-  const second = stopNear(
-    panel,
-    max * 0.76,
-    Math.min(max, Math.max(first + view, max * 0.68)),
-    Math.min(max, max * 0.82),
-  );
-  await api.wait(120);
-  await rushThenStop(api, panel, first, 0.44, 0.26);
+  const first = Math.round(max * 0.4);
+  const second = Math.round(Math.min(max, Math.max(first + panel.clientHeight, max * 0.76)));
+  restSections(panel);
+  await rushThenStop(api, panel, first, 0.46, 0.3);
   if (api.cancelled()) return;
-  await driftHand(api, panel, 0.52, 0.34, 520);
-  if (api.cancelled()) return;
-  await rushThenStop(api, panel, Math.min(second, max), 0.74, 0.62);
-  await driftHand(api, panel, 0.66, 0.7, 380);
+  await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 420);
+  await rushThenStop(api, panel, Math.min(second, max), 0.7, 0.64);
 }
 
 /** How it works · Theory: chapters 1, 10 and 11, two rushes that reach about 75%. */
