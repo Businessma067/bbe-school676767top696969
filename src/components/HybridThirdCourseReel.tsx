@@ -38,28 +38,20 @@ const PAPER_ROWS = [
 
 const MODES = [
   {
-    name: "Shared math",
-    text: "One mathematics queue counts toward both papers. You do not restart the chapter when you switch exams.",
+    name: "Shared math library",
+    text: "Thirteen chapters, one queue. A fully correct task counts for BBE and WiSo. The stem switches between English and German.",
   },
   {
-    name: "Bridge cases",
-    text: "The same economics idea in English and in German, scored as one step instead of two homework sets.",
+    name: "Bridge case library",
+    text: "Twenty economics concepts in four units. English statements, then the German wording of the same idea, scored as one step.",
   },
   {
-    name: "Mirror drill",
-    text: "Alternate the languages until you can answer without translating in your head.",
+    name: "Two language lanes",
+    text: `BBE English is ${BBE_EXAM_FORMAT.englishQuestions} questions. WiSo German reading is ${WISO_EXAM_FORMAT.germanQuestions}. Neither lane moves the other paper.`,
   },
   {
-    name: "Exam flip",
-    text: "Switch BBE and WiSo framing, including the penalty habits of each paper.",
-  },
-  {
-    name: "Dual mock day",
-    text: `Both formats in one day: BBE is ${BBE_EXAM_FORMAT.questionCount} questions, WiSo is ${WISO_EXAM_FORMAT.questionCount}, each about ${BBE_EXAM_FORMAT.durationHours} hours.`,
-  },
-  {
-    name: "Decision lab",
-    text: "See which track you are actually stronger on, while the other paper stays warm.",
+    name: "Both full libraries",
+    text: `Mocks, builders, flashcards, matching, and tutor stay. BBE is ${BBE_EXAM_FORMAT.questionCount} questions, WiSo is ${WISO_EXAM_FORMAT.questionCount}, each about ${BBE_EXAM_FORMAT.durationHours} hours.`,
   },
 ] as const;
 
@@ -230,9 +222,11 @@ export function HybridThirdCourseReel() {
               ))}
             </div>
             <p className="mt-5 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">
-              On the latest BBE paper, mathematics is about {BBE_EXAM_FORMAT.scoreWeighting.mathematics} of
-              the score and economics about {BBE_EXAM_FORMAT.scoreWeighting.economics}. English is about{" "}
-              {BBE_EXAM_FORMAT.scoreWeighting.english}. The heavy rows are the ones you can study once.
+              On the latest BBE paper, mathematics is about{" "}
+              {BBE_EXAM_FORMAT.scoreWeighting.mathematics} of the score and economics about{" "}
+              {BBE_EXAM_FORMAT.scoreWeighting.economics}. English is about{" "}
+              {BBE_EXAM_FORMAT.scoreWeighting.english}. The heavy rows are the ones you can study
+              once.
             </p>
           </Slide>
 
@@ -274,7 +268,7 @@ export function HybridThirdCourseReel() {
             step="03"
             title="What the third course adds"
           >
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 sm:grid-cols-2">
               {MODES.map((mode) => (
                 <div key={mode.name} className="rounded-xl border border-white/10 bg-black/25 p-4">
                   <p className="text-sm font-semibold text-why-us-fg">{mode.name}</p>
@@ -323,7 +317,9 @@ function Slide({
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-teal-200/80">
             <span data-no-i18n>{step}</span>
           </p>
-          <h3 className="mt-2 font-display text-xl font-semibold text-why-us-fg sm:text-3xl">{title}</h3>
+          <h3 className="mt-2 font-display text-xl font-semibold text-why-us-fg sm:text-3xl">
+            {title}
+          </h3>
         </div>
         {children}
       </div>
@@ -334,7 +330,9 @@ function Slide({
 function LaneCard({ kicker, title, points }: { kicker: string; title: string; points: string[] }) {
   return (
     <div className="rounded-xl border border-white/10 bg-black/25 p-4 sm:p-5">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-teal-200/80">{kicker}</p>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-teal-200/80">
+        {kicker}
+      </p>
       <p className="mt-2 font-display text-2xl font-semibold text-why-us-fg">{title}</p>
       <ul className="mt-3 space-y-2">
         {points.map((point) => (
@@ -350,7 +348,9 @@ function LaneCard({ kicker, title, points }: { kicker: string; title: string; po
 function Fact({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
     <div className="rounded-xl border border-white/10 px-4 py-3">
-      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal-200/70">{label}</p>
+      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal-200/70">
+        {label}
+      </p>
       <p className="mt-1 font-display text-2xl font-semibold text-why-us-fg">{value}</p>
       {note ? <p className="mt-1 text-xs text-why-us-fg/60">{note}</p> : null}
     </div>

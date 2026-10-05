@@ -164,6 +164,8 @@ type Props = {
   headerActions?: ReactNode;
   /** Empty-state exam name, e.g. "WU BBE exam" or "WU WiSo exam". */
   examLabel?: string;
+  /** Open this chapter immediately. The shared-math library passes it. */
+  initialChapter?: number;
 };
 
 export function MathTasksPage({
@@ -176,10 +178,11 @@ export function MathTasksPage({
   fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
   headerActions,
   examLabel = "WU BBE exam",
+  initialChapter,
 }: Props) {
   const mathChapterHasTheory = (num: number) => getTheory(num) != null;
   const chapters = chaptersProp ?? MATH_CHAPTERS;
-  const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
+  const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(initialChapter ?? null);
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);

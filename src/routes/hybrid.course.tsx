@@ -2,17 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
-import {
-  ClipboardCheck,
-  FlipHorizontal2,
-  GitBranch,
-  Layers,
-  Scale,
-  Shuffle,
-  Sparkles,
-  Split,
-  Wand2,
-} from "lucide-react";
+import { ClipboardCheck, GitBranch, Layers, Shuffle, Sparkles, Wand2 } from "lucide-react";
+import { HybridStudyBoard } from "@/components/hybrid/HybridStudyBoard";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -27,7 +18,7 @@ export const Route = createFileRoute("/hybrid/course")({
       {
         name: "description",
         content:
-          "Hybrid BBE + WiSo course: economics, math, English, German, mocks, flashcards, matching, tutor exam, and dual-exam modes.",
+          "Hybrid BBE + WiSo course: shared math, bridge cases, economics, English, German, mocks, flashcards, matching, and tutor exam.",
       },
       { name: "robots", content: "noindex, follow" },
     ],
@@ -79,8 +70,7 @@ const subjects = [
     image: englishAsset.url,
     accent: "#2DD4A8",
     tag: "BBE · Language",
-    description:
-      "Reading speed, vocabulary, and grammar for the BBE language section.",
+    description: "Reading speed, vocabulary, and grammar for the BBE language section.",
     to: "/products/full-course-english",
     track: "bbe" as const,
     overlay: "en" as const,
@@ -91,8 +81,7 @@ const subjects = [
     image: englishAsset.url,
     accent: "#6366F1",
     tag: "WiSo · Language",
-    description:
-      "German reading comprehension for the WiSo language section.",
+    description: "German reading comprehension for the WiSo language section.",
     to: "/wiso/products/full-course-german",
     track: "wiso" as const,
     overlay: "de" as const,
@@ -204,44 +193,20 @@ const studyModes = [
 
 const hybridModes = [
   {
+    id: "math",
+    title: "Shared Math library",
+    blurb: "Thirteen chapters, English or German stem, one progress count for both exams.",
+    to: "/hybrid/math",
+    icon: Layers,
+    cta: "Open math library →",
+  },
+  {
     id: "bridge",
-    title: "Bridge Cases",
-    blurb: "Same concept in English then German.",
+    title: "Bridge case library",
+    blurb: "Twenty economics concepts in four units. English, then German, scored once.",
     to: "/hybrid/bridge",
     icon: GitBranch,
-    cta: "Open bridge →",
-  },
-  {
-    id: "mirror",
-    title: "Mirror Drill",
-    blurb: "Alternate EN and DE until the idea sticks.",
-    to: "/hybrid/mirror",
-    icon: Split,
-    cta: "Open mirror →",
-  },
-  {
-    id: "flip",
-    title: "Exam Flip",
-    blurb: "Switch BBE ↔ WiSo framing on one sprint.",
-    to: "/hybrid/exam-flip",
-    icon: FlipHorizontal2,
-    cta: "Open flip →",
-  },
-  {
-    id: "dual",
-    title: "Dual Mock Day",
-    blurb: "Run both full exam formats in one day.",
-    to: "/hybrid/dual-mock",
-    icon: ClipboardCheck,
-    cta: "Open dual mock →",
-  },
-  {
-    id: "lab",
-    title: "Decision Lab",
-    blurb: "See which exam you currently lean toward.",
-    to: "/hybrid/decision-lab",
-    icon: Scale,
-    cta: "Open lab →",
+    cta: "Open bridge library →",
   },
 ] as const;
 
@@ -282,9 +247,12 @@ function HybridCoursePage() {
               Hybrid Course
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Choose a subject, or open the same study modes you already know from both full courses.
+              Shared math and bridge cases count once. English and German stay separate. The rest of
+              both full courses sits underneath.
             </p>
           </div>
+
+          <HybridStudyBoard />
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {subjects.map((s) => (
@@ -389,7 +357,7 @@ function HybridCoursePage() {
                 Hybrid-only
               </p>
               <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                Dual-exam modes
+                Hybrid tools
               </h2>
             </div>
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
