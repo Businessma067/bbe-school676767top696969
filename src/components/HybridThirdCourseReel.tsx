@@ -3,18 +3,11 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import hallAsset from "@/assets/exam-hall-real.png.asset.json";
 import { cn } from "@/lib/utils";
 
-const DROP_MS = 420;
-/** Wheel distance that moves one page. A long gesture can cross every page at once. */
-const PX_PER_PAGE = 160;
-
 const PAGES = [
   { id: "core", label: "Shared core" },
   { id: "lanes", label: "Language lanes" },
   { id: "modes", label: "Every mode" },
 ] as const;
-
-/** Pixels of slack before the block counts as sitting flush in the viewport. */
-const ALIGN_PX = 2;
 
 function stickyChromeHeight(): number {
   const header = document.querySelector("header");
@@ -24,37 +17,16 @@ function stickyChromeHeight(): number {
   return Math.round(header.getBoundingClientRect().height);
 }
 
-/** Distance from the flush position: 0 when the block fills the screen under the header. */
-function misalign(el: HTMLElement): number {
-  return el.getBoundingClientRect().top - stickyChromeHeight();
-}
-
-function isFlush(el: HTMLElement): boolean {
-  return Math.abs(misalign(el)) <= ALIGN_PX;
-}
-
-function snapFlush(el: HTMLElement) {
-  const delta = misalign(el);
-  if (Math.abs(delta) <= ALIGN_PX) return;
-  window.scrollTo({ top: window.scrollY + delta, behavior: "auto" });
-}
-
 /**
- * The block fills the screen under the header. Wheel or swipe turns its pages
- * only once that block is fully in view and sitting flush. Page changes follow
- * the scroll distance immediately, so one long gesture can cross every page.
+ * Three full-screen pages in an ordinary horizontal scroller. Swipe, drag, or
+ * the arrow buttons move left and right. Vertical scrolling stays with the page.
  */
 export function HybridThirdCourseReel() {
   const [front, setFront] = useState(0);
-  const [leaving, setLeaving] = useState<number | null>(null);
-  const [dir, setDir] = useState<"down" | "up">("down");
   const [chrome, setChrome] = useState(0);
-  const stageRef = useRef<HTMLDivElement>(null);
-  const frontRef = useRef(0);
-  const travelRef = useRef(0);
-  const leavingRef = useRef<number | null>(null);
+  const scrollerRef = useRef<HTMLDivElement>(null);
   const reduceRef = useRef(false);
-  const maxTravel = PX_PER_PAGE * (PAGES.length - 1);
+  const dragRef = useRef<{ pointerId: number; x: number; left: number } | null>(null);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -65,35 +37,6 @@ export function HybridThirdCourseReel() {
     mq.addEventListener("change", sync);
     return () => mq.removeEventListener("change", sync);
   }, []);
-
-  useEffect(() => {
-    if (leaving === null) return;
-    const id = window.setTimeout(() => {
-      leavingRef.current = null;
-      setLeaving(null);
-    }, DROP_MS);
-    return () => window.clearTimeout(id);
-  }, [leaving]);
-
-  const show = (to: number, syncTravel: boolean) => {
-    if (to === frontRef.current || to < 0 || to >= PAGES.length) return;
-    const from = frontRef.current;
-    const far = Math.abs(to - from) > 1;
-    const rushing = leavingRef.current !== null;
-    frontRef.current = to;
-    if (syncTravel) travelRef.current = to * PX_PER_PAGE;
-    setFront(to);
-    if (reduceRef.current || far || rushing) {
-      leavingRef.current = null;
-      setLeaving(null);
-      return;
-    }
-    setDir(to > from ? "down" : "up");
-    leavingRef.current = from;
-    setLeaving(from);
-  };
-  const showRef = useRef(show);
-  showRef.current = show;
 
   useEffect(() => {
     const measure = () => setChrome(stickyChromeHeight());
@@ -108,127 +51,156 @@ export function HybridThirdCourseReel() {
     };
   }, []);
 
-  useEffect(() => {
-    const el = stageRef.current;
-    if (!el) return;
-    const onWheel = (event: WheelEvent) => {
-      let deltaY = event.deltaY;
-      const delta = misalign(el);
-      const flush = Math.abs(delta) <= ALIGN_PX;
-      if (!flush) {
-        const vh = window.innerHeight;
-        const toward =
-          (event.deltaY > 0 && delta > ALIGN_PX && delta < vh) ||
-          (event.deltaY < 0 && delta < -ALIGN_PX && el.getBoundingClientRect().bottom > stickyChromeHeight());
-        if (!(toward && Math.abs(delta) < vh * 0.72)) return;
-        event.preventDefault();
-        snapFlush(el);
-        const spent = Math.sign(deltaY) * Math.min(Math.abs(deltaY), 70);
-        deltaY -= spent;
-        if (Math.abs(deltaY) < 24) return;
-      }
+  const go = (index: number) => {
+    const scroller = scrollerRef.current;
+    if (!scroller) return;
+    const next = Math.min(PAGES.length - 1, Math.max(0, index));
+    scroller.scrollTo({
+      left: next * scroller.clientWidth,
+      behavior: reduceRef.current ? "auto" : "smooth",
+    });
+  };
 
-      const atStart = travelRef.current <= 0;
-      const atEnd = travelRef.current >= maxTravel;
-      if (deltaY > 0 && atEnd) return;
-      if (deltaY < 0 && atStart) return;
-      event.preventDefault();
-      travelRef.current = Math.min(maxTravel, Math.max(0, travelRef.current + deltaY));
-      const page = Math.round(travelRef.current / PX_PER_PAGE);
-      showRef.current(page, false);
-    };
-    el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
-  }, [maxTravel]);
-
-  const touch = useRef<{ y: number } | null>(null);
+  const syncFront = () => {
+    const scroller = scrollerRef.current;
+    if (!scroller || scroller.clientWidth === 0) return;
+    const page = Math.round(scroller.scrollLeft / scroller.clientWidth);
+    const next = Math.min(PAGES.length - 1, Math.max(0, page));
+    setFront((current) => (current === next ? current : next));
+  };
 
   return (
     <div
-      ref={stageRef}
-      className="relative w-full overflow-hidden bg-[#071612]"
+      className="relative w-full bg-[#071612]"
       style={{ height: `calc(100svh - ${chrome}px)` }}
       role="region"
       aria-roledescription="carousel"
       aria-label="Why a third course"
-      onTouchStart={(event) => {
-        touch.current = { y: event.touches[0]?.clientY ?? 0 };
-      }}
-      onTouchEnd={(event) => {
-        const start = touch.current;
-        touch.current = null;
-        if (!start) return;
-        const dy = (event.changedTouches[0]?.clientY ?? start.y) - start.y;
-        const stage = stageRef.current;
-        if (!stage) return;
-        if (!isFlush(stage)) {
-          if (Math.abs(misalign(stage)) < window.innerHeight * 0.72) snapFlush(stage);
-          return;
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === "ArrowRight") {
+          event.preventDefault();
+          go(front + 1);
+        } else if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          go(front - 1);
         }
-        if (Math.abs(dy) < 48) return;
-        const index = frontRef.current;
-        const pages = Math.max(1, Math.min(PAGES.length - 1, Math.round(Math.abs(dy) / 220)));
-        const next = index + (dy < 0 ? pages : -pages);
-        if (next === index) return;
-        if (dy < 0 && index === PAGES.length - 1) return;
-        if (dy > 0 && index === 0) return;
-        showRef.current(Math.min(PAGES.length - 1, Math.max(0, next)), true);
       }}
     >
+      <div
+        ref={scrollerRef}
+        className="flex h-full w-full cursor-grab snap-x snap-mandatory select-none overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] active:cursor-grabbing [&::-webkit-scrollbar]:hidden"
+        onScroll={syncFront}
+        onPointerDown={(event) => {
+          if (event.pointerType !== "mouse" || event.button !== 0) return;
+          if ((event.target as HTMLElement).closest("button")) return;
+          const scroller = scrollerRef.current;
+          if (!scroller) return;
+          dragRef.current = { pointerId: event.pointerId, x: event.clientX, left: scroller.scrollLeft };
+          scroller.setPointerCapture(event.pointerId);
+          scroller.style.scrollSnapType = "none";
+          scroller.style.scrollBehavior = "auto";
+        }}
+        onPointerMove={(event) => {
+          const drag = dragRef.current;
+          const scroller = scrollerRef.current;
+          if (!drag || !scroller || drag.pointerId !== event.pointerId) return;
+          scroller.scrollLeft = drag.left - (event.clientX - drag.x);
+        }}
+        onPointerUp={(event) => {
+          const drag = dragRef.current;
+          if (!drag || drag.pointerId !== event.pointerId) return;
+          dragRef.current = null;
+          const scroller = scrollerRef.current;
+          if (!scroller) return;
+          scroller.style.scrollSnapType = "";
+          scroller.style.scrollBehavior = "";
+          const page = Math.round(scroller.scrollLeft / scroller.clientWidth);
+          go(page);
+        }}
+        onPointerCancel={() => {
+          dragRef.current = null;
+          const scroller = scrollerRef.current;
+          if (!scroller) return;
+          scroller.style.scrollSnapType = "";
+          scroller.style.scrollBehavior = "";
+        }}
+      >
+        {PAGES.map((page, index) => (
+          <article
+            key={page.id}
+            aria-hidden={index !== front}
+            aria-roledescription="slide"
+            aria-label={page.label}
+            className="h-full min-w-full shrink-0 snap-start bg-[#071612]"
+          >
+            {index === 0 ? <SharedCorePage live={index === front} /> : null}
+            {index === 1 ? <LanguageLanesPage live={index === front} /> : null}
+            {index === 2 ? <EveryModePage live={index === front} /> : null}
+          </article>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        aria-label="Previous page"
+        disabled={front === 0}
+        onClick={() => go(front - 1)}
+        className="absolute left-3 top-[62%] z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-[#071612]/70 text-white backdrop-blur-sm transition enabled:hover:bg-teal-800 disabled:opacity-30 sm:left-5"
+      >
+        <Chevron dir="left" />
+      </button>
+      <button
+        type="button"
+        aria-label="Next page"
+        disabled={front === PAGES.length - 1}
+        onClick={() => go(front + 1)}
+        className="absolute right-3 top-[62%] z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-[#071612]/70 text-white backdrop-blur-sm transition enabled:hover:bg-teal-800 disabled:opacity-30 sm:right-5"
+      >
+        <Chevron dir="right" />
+      </button>
+
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-gradient-to-t from-black/50 to-transparent" />
+      <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
         {PAGES.map((page, index) => {
-          const dropping = leaving === index;
-          const shift = dir === "down" ? "105%" : "-105%";
+          const selected = index === front;
           return (
-            <article
+            <button
               key={page.id}
-              aria-hidden={index !== front}
-              className="absolute inset-0 bg-[#071612]"
-              style={{
-                transform: dropping ? `translate3d(0, ${shift}, 0)` : "translate3d(0, 0, 0)",
-                transition: dropping ? `transform ${DROP_MS}ms cubic-bezier(0.4, 0, 0.2, 1)` : "none",
-                zIndex: dropping ? 3 : index === front ? 2 : 1,
-              }}
+              type="button"
+              aria-label={page.label}
+              aria-current={selected ? "true" : undefined}
+              onClick={() => go(index)}
+              className="flex h-10 items-center"
             >
-              {index === 0 ? <SharedCorePage live={index === front} /> : null}
-              {index === 1 ? <LanguageLanesPage live={index === front} /> : null}
-              {index === 2 ? <EveryModePage live={index === front} /> : null}
-            </article>
+              <span
+                className={cn(
+                  "relative block h-1.5 overflow-hidden rounded-full bg-white/25 transition-all",
+                  selected ? "w-12" : "w-2.5",
+                )}
+              >
+                {selected ? <span className="absolute inset-0 bg-teal-300" /> : null}
+              </span>
+            </button>
           );
         })}
-
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-gradient-to-t from-black/50 to-transparent" />
-        <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
-          {PAGES.map((page, index) => {
-            const selected = index === front;
-            return (
-              <button
-                key={page.id}
-                type="button"
-                aria-label={page.label}
-                aria-current={selected ? "true" : undefined}
-                onClick={() => {
-                  const stage = stageRef.current;
-                  if (stage && !isFlush(stage)) {
-                    if (Math.abs(misalign(stage)) < window.innerHeight * 0.72) snapFlush(stage);
-                    return;
-                  }
-                  showRef.current(index, true);
-                }}
-                className="flex h-10 items-center"
-              >
-                <span
-                  className={cn(
-                    "relative block h-1.5 overflow-hidden rounded-full bg-white/25 transition-all",
-                    selected ? "w-12" : "w-2.5",
-                  )}
-                >
-                  {selected ? <span className="absolute inset-0 bg-teal-300" /> : null}
-                </span>
-              </button>
-            );
-          })}
-        </div>
+      </div>
     </div>
+  );
+}
+
+function Chevron({ dir }: { dir: "left" | "right" }) {
+  return (
+    <svg viewBox="0 0 20 20" className="h-5 w-5" aria-hidden>
+      <path
+        d={dir === "left" ? "M12.5 4.5 7 10l5.5 5.5" : "M7.5 4.5 13 10l-5.5 5.5"}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
@@ -262,7 +234,7 @@ function PageFrame({
       <div className={cn("pointer-events-none absolute inset-0", photo ? "bg-[#071612]/55" : "bg-[#071612]")} />
       <div className="absolute inset-0">{children}</div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[48%] bg-gradient-to-t from-[#071612] from-55% to-transparent" />
-      <div className="relative z-10 flex h-full w-full flex-col justify-end px-6 pb-16 pt-8 sm:px-12 lg:px-16">
+      <div className="relative z-10 flex h-full w-full flex-col justify-end pb-20 pl-16 pr-6 pt-8 sm:pb-20 sm:pl-20 sm:pr-12 lg:pl-24 lg:pr-16">
         <div className="max-w-xl">
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/80 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
             Why a third course
@@ -353,7 +325,7 @@ function LanguageLanesPage({ live }: { live: boolean }) {
       body="BBE still needs the English paper. WiSo still needs German reading. Hybrid keeps both lanes moving, lighter than buying a second full course."
       photo={wuAsset.url}
     >
-      <div className="absolute inset-x-0 top-0 h-[54%] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_86%,transparent)] sm:h-[56%]">
+      <div className="absolute left-24 right-24 top-0 h-[50%] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_78%,transparent)] sm:left-28 sm:right-28 sm:h-[52%]">
         <div className="grid h-full grid-cols-2">
           <Lane title="English" words={EN_LANE} reverse={false} live={live} />
           <Lane title="Deutsch" words={DE_LANE} reverse live={live} />
@@ -384,7 +356,7 @@ function Lane({
         {loop.map((word, i) => (
           <p
             key={`${word}-${i}`}
-            className="whitespace-nowrap px-6 py-3 font-display text-[1.65rem] font-semibold leading-none text-white/90 sm:px-12 sm:py-4 sm:text-5xl lg:px-16 lg:text-7xl"
+            className="whitespace-nowrap px-4 py-3 font-display text-[1.65rem] font-semibold leading-none text-white/90 sm:px-6 sm:py-4 sm:text-5xl lg:text-7xl"
           >
             {word}
           </p>
