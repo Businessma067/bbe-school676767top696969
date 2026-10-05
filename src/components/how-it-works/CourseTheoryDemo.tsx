@@ -163,18 +163,19 @@ async function aim(api: DemoPlayerApi, selector: string) {
   await api.moveTo(selector, 30);
 }
 
-function stopNear(panel: HTMLElement, fraction: number, floor: number) {
+function stopNear(panel: HTMLElement, target: number, floor: number, ceiling: number) {
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  const target = max * fraction;
-  let best = Math.min(max, Math.max(floor, target));
-  let bestDist = max * 0.18;
+  const cap = Math.min(max, ceiling);
+  const goal = Math.min(cap, Math.max(floor, target));
+  let best = goal;
+  let bestDist = panel.clientHeight * 0.9;
   for (const node of panel.querySelectorAll<HTMLElement>("h2, h3")) {
     if (!node.id) continue;
     const top = headingTop(panel, node.id);
     if (top == null) continue;
-    const dest = Math.max(0, Math.min(top - 20, max));
+    const dest = Math.max(0, Math.min(top - 20, cap));
     if (dest < floor) continue;
-    const dist = Math.abs(dest - target);
+    const dist = Math.abs(dest - goal);
     if (dist < bestDist) {
       bestDist = dist;
       best = dest;
@@ -191,7 +192,7 @@ async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number
   const from = panel.scrollTop;
   const distance = dest - from;
   if (distance < 16) return;
-  const duration = Math.round(Math.max(1500, (1.2 * distance) / CRUISE_PX_PER_MS));
+  const duration = Math.round(Math.max(980, (1.2 * distance) / CRUISE_PX_PER_MS));
   const handFrom = cursorNow(stage);
   const handTo = deepHand(stage, panel, depth);
   const handMs = Math.round(
@@ -237,8 +238,14 @@ async function readTwoStops(api: DemoPlayerApi) {
   if (!panel) return;
   panel.scrollTop = 0;
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  const first = stopNear(panel, 0.46, max * 0.34);
-  const second = Math.max(first + panel.clientHeight, stopNear(panel, 0.96, max * 0.84));
+  const view = panel.clientHeight;
+  // Only the opening of the chapter. A full pass is too long.
+  const reach = Math.min(max, view * 4.4);
+  const first = stopNear(panel, reach * 0.46, reach * 0.28, reach);
+  const second = Math.min(
+    reach,
+    Math.max(first + view * 0.8, stopNear(panel, reach * 0.94, first + view * 0.55, reach)),
+  );
   await api.wait(180);
   await rushThenStop(api, panel, first, 0.5);
   await api.wait(850);
