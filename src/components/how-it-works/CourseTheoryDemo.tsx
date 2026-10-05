@@ -102,16 +102,11 @@ function fastThenStop(t: number) {
   return coast + (1 - coast) * (1 - (1 - u) ** 3);
 }
 
-/** Zero speed at both ends, so a fast glide still has no jerk. */
-function smoothHand(t: number) {
-  return t * t * t * (t * (t * 6 - 15) + 10);
-}
-
 /** A reading hand, deep in the column, not pinned to the top edge. */
-function deepHand(stage: HTMLElement, panel: HTMLElement, depth = 0.7) {
+function deepHand(stage: HTMLElement, panel: HTMLElement, depth = 0.7, across = 0.38) {
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
-  const x = pr.left - sr.left + Math.min(168, Math.max(84, pr.width * 0.38));
+  const x = pr.left - sr.left + pr.width * across;
   const y = pr.top - sr.top + pr.height * depth;
   return {
     x: Math.max(32, Math.min(x, sr.width - 28)),
@@ -128,21 +123,34 @@ function pointOf(stage: HTMLElement, el: HTMLElement) {
   };
 }
 
-/** The pointer itself: fast, and on a smooth curve instead of a lagging chase. */
-async function glideHand(api: DemoPlayerApi, stage: HTMLElement, to: { x: number; y: number }) {
+/** Steady carry, then a soft landing. The hand is already moving on the first frame. */
+function carryHand(t: number) {
+  const brake = 0.84;
+  if (t <= brake) return (t / brake) * 0.94;
+  const u = (t - brake) / (1 - brake);
+  return 0.94 + 0.06 * (1 - (1 - u) * (1 - u));
+}
+
+/** Move the pointer for the whole interval, so it never darts and then freezes. */
+async function glideHand(
+  api: DemoPlayerApi,
+  stage: HTMLElement,
+  to: { x: number; y: number },
+  duration?: number,
+) {
   const from = cursorNow(stage);
   const dist = Math.hypot(to.x - from.x, to.y - from.y);
   if (dist < 2) {
     api.setCursorAt(to);
     return;
   }
-  const duration = Math.round(Math.min(380, Math.max(200, dist / 1.45)));
+  const ms = duration ?? Math.round(Math.min(420, Math.max(240, dist / 1.7)));
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
-      const t = Math.min(1, (now - started) / duration);
-      const e = smoothHand(t);
+      const t = Math.min(1, (now - started) / ms);
+      const e = carryHand(t);
       api.setCursorAt({
         x: from.x + (to.x - from.x) * e,
         y: from.y + (to.y - from.y) * e,
@@ -184,8 +192,14 @@ function stopNear(panel: HTMLElement, target: number, floor: number, ceiling: nu
   return best;
 }
 
-/** Rush, then brake smoothly onto one stop. The hand stays deep in the text. */
-async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number, depth: number) {
+/** Rush, then brake smoothly onto one stop. The hand travels the whole rush. */
+async function rushThenStop(
+  api: DemoPlayerApi,
+  panel: HTMLElement,
+  dest: number,
+  depth: number,
+  across: number,
+) {
   const stage = api.stage();
   if (!stage) return;
   panel.style.scrollBehavior = "auto";
@@ -194,17 +208,13 @@ async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number
   if (distance < 16) return;
   const duration = Math.round(Math.max(980, (1.2 * distance) / CRUISE_PX_PER_MS));
   const handFrom = cursorNow(stage);
-  const handTo = deepHand(stage, panel, depth);
-  const handMs = Math.round(
-    Math.min(380, Math.max(200, Math.hypot(handTo.x - handFrom.x, handTo.y - handFrom.y) / 1.45)),
-  );
+  const handTo = deepHand(stage, panel, depth, across);
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
       const t = Math.min(1, (now - started) / duration);
-      const handT = Math.min(1, (now - started) / handMs);
-      const e = smoothHand(handT);
+      const e = carryHand(t);
       panel.scrollTop = from + distance * fastThenStop(t);
       api.setCursorAt({
         x: handFrom.x + (handTo.x - handFrom.x) * e,
@@ -217,6 +227,13 @@ async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number
   });
   panel.scrollTop = dest;
   api.setCursorAt(handTo);
+}
+
+/** Scroll holds. The pointer keeps gliding, so the pause is not a frozen hand. */
+async function driftHand(api: DemoPlayerApi, panel: HTMLElement, depth: number, across: number, ms: number) {
+  const stage = api.stage();
+  if (!stage) return;
+  await glideHand(api, stage, deepHand(stage, panel, depth, across), ms);
 }
 
 async function readTwoStops(api: DemoPlayerApi) {
@@ -239,22 +256,24 @@ async function readTwoStops(api: DemoPlayerApi) {
   panel.scrollTop = 0;
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const view = panel.clientHeight;
-  // Only the opening of the chapter. A full pass is too long.
-  const reach = Math.min(max, view * 4.4);
-  const first = stopNear(panel, reach * 0.46, reach * 0.28, reach);
-  const second = Math.min(
-    reach,
-    Math.max(first + view * 0.8, stopNear(panel, reach * 0.94, first + view * 0.55, reach)),
+  // Two rushes land near 40%, then about 75% of the chapter.
+  const first = stopNear(panel, max * 0.4, max * 0.32, Math.min(max, max * 0.48));
+  const second = stopNear(
+    panel,
+    max * 0.76,
+    Math.min(max, Math.max(first + view, max * 0.68)),
+    Math.min(max, max * 0.82),
   );
-  await api.wait(180);
-  await rushThenStop(api, panel, first, 0.5);
-  await api.wait(850);
+  await api.wait(120);
+  await rushThenStop(api, panel, first, 0.44, 0.26);
   if (api.cancelled()) return;
-  await rushThenStop(api, panel, Math.min(second, max), 0.74);
-  await api.wait(850);
+  await driftHand(api, panel, 0.52, 0.34, 520);
+  if (api.cancelled()) return;
+  await rushThenStop(api, panel, Math.min(second, max), 0.74, 0.62);
+  await driftHand(api, panel, 0.66, 0.7, 380);
 }
 
-/** How it works · Theory: chapters 1, 10 and 11, two fast rushes with a smooth stop in each. */
+/** How it works · Theory: chapters 1, 10 and 11, two rushes that reach about 75%. */
 export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
