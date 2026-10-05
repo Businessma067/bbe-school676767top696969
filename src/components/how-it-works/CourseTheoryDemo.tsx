@@ -102,16 +102,65 @@ function fastThenStop(t: number) {
   return coast + (1 - coast) * (1 - (1 - u) ** 3);
 }
 
+/** Zero speed at both ends, so a fast glide still has no jerk. */
+function smoothHand(t: number) {
+  return t * t * t * (t * (t * 6 - 15) + 10);
+}
+
 /** A reading hand, deep in the column, not pinned to the top edge. */
-function deepHand(stage: HTMLElement, panel: HTMLElement) {
+function deepHand(stage: HTMLElement, panel: HTMLElement, depth = 0.7) {
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
-  const x = pr.left - sr.left + Math.min(148, Math.max(72, pr.width * 0.34));
-  const y = pr.top - sr.top + pr.height * 0.64;
+  const x = pr.left - sr.left + Math.min(168, Math.max(84, pr.width * 0.38));
+  const y = pr.top - sr.top + pr.height * depth;
   return {
     x: Math.max(32, Math.min(x, sr.width - 28)),
-    y: Math.max(pr.top - sr.top + 36, Math.min(y, sr.height - 24)),
+    y: Math.max(pr.top - sr.top + 48, Math.min(y, sr.height - 28)),
   };
+}
+
+function pointOf(stage: HTMLElement, el: HTMLElement) {
+  const sr = stage.getBoundingClientRect();
+  const box = el.getBoundingClientRect();
+  return {
+    x: box.left - sr.left + box.width / 2 - 5,
+    y: box.top - sr.top + Math.min(box.height / 2, 18) - 3,
+  };
+}
+
+/** The pointer itself: fast, and on a smooth curve instead of a lagging chase. */
+async function glideHand(api: DemoPlayerApi, stage: HTMLElement, to: { x: number; y: number }) {
+  const from = cursorNow(stage);
+  const dist = Math.hypot(to.x - from.x, to.y - from.y);
+  if (dist < 2) {
+    api.setCursorAt(to);
+    return;
+  }
+  const duration = Math.round(Math.min(380, Math.max(200, dist / 1.45)));
+  const started = performance.now();
+  await new Promise<void>((resolve) => {
+    const frame = (now: number) => {
+      if (api.cancelled()) return resolve();
+      const t = Math.min(1, (now - started) / duration);
+      const e = smoothHand(t);
+      api.setCursorAt({
+        x: from.x + (to.x - from.x) * e,
+        y: from.y + (to.y - from.y) * e,
+      });
+      if (t < 1) requestAnimationFrame(frame);
+      else resolve();
+    };
+    requestAnimationFrame(frame);
+  });
+  api.setCursorAt(to);
+}
+
+async function aim(api: DemoPlayerApi, selector: string) {
+  await api.reveal(selector);
+  const stage = api.stage();
+  const el = stage?.querySelector<HTMLElement>(selector);
+  if (stage && el) await glideHand(api, stage, pointOf(stage, el));
+  await api.moveTo(selector, 30);
 }
 
 function stopNear(panel: HTMLElement, fraction: number, floor: number) {
@@ -135,7 +184,7 @@ function stopNear(panel: HTMLElement, fraction: number, floor: number) {
 }
 
 /** Rush, then brake smoothly onto one stop. The hand stays deep in the text. */
-async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number) {
+async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number, depth: number) {
   const stage = api.stage();
   if (!stage) return;
   panel.style.scrollBehavior = "auto";
@@ -143,29 +192,30 @@ async function rushThenStop(api: DemoPlayerApi, panel: HTMLElement, dest: number
   const distance = dest - from;
   if (distance < 16) return;
   const duration = Math.round(Math.max(1500, (1.2 * distance) / CRUISE_PX_PER_MS));
-  let x = cursorNow(stage).x;
-  let y = cursorNow(stage).y;
-  let prev = performance.now();
+  const handFrom = cursorNow(stage);
+  const handTo = deepHand(stage, panel, depth);
+  const handMs = Math.round(
+    Math.min(380, Math.max(200, Math.hypot(handTo.x - handFrom.x, handTo.y - handFrom.y) / 1.45)),
+  );
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
       const t = Math.min(1, (now - started) / duration);
-      const dt = Math.min(0.05, Math.max(0, (now - prev) / 1000));
-      prev = now;
+      const handT = Math.min(1, (now - started) / handMs);
+      const e = smoothHand(handT);
       panel.scrollTop = from + distance * fastThenStop(t);
-      const spot = deepHand(stage, panel);
-      const follow = 1 - Math.exp(-dt / 0.06);
-      x += (spot.x - x) * follow;
-      y += (spot.y - y) * follow;
-      api.setCursorAt({ x, y });
+      api.setCursorAt({
+        x: handFrom.x + (handTo.x - handFrom.x) * e,
+        y: handFrom.y + (handTo.y - handFrom.y) * e,
+      });
       if (t < 1) requestAnimationFrame(frame);
       else resolve();
     };
     requestAnimationFrame(frame);
   });
   panel.scrollTop = dest;
-  if (stage) api.setCursorAt(deepHand(stage, panel));
+  api.setCursorAt(handTo);
 }
 
 async function readTwoStops(api: DemoPlayerApi) {
@@ -190,10 +240,10 @@ async function readTwoStops(api: DemoPlayerApi) {
   const first = stopNear(panel, 0.46, max * 0.34);
   const second = Math.max(first + panel.clientHeight, stopNear(panel, 0.96, max * 0.84));
   await api.wait(180);
-  await rushThenStop(api, panel, first);
+  await rushThenStop(api, panel, first, 0.5);
   await api.wait(850);
   if (api.cancelled()) return;
-  await rushThenStop(api, panel, Math.min(second, max));
+  await rushThenStop(api, panel, Math.min(second, max), 0.74);
   await api.wait(850);
 }
 
@@ -206,12 +256,12 @@ export function CourseTheoryDemo({
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const readChapter = async (num: (typeof READ)[number]) => {
-      await api.moveTo(`[data-d="ch-${num}"]`, 80);
+      await aim(api, `[data-d="ch-${num}"]`);
       await api.click();
       setOpen(num);
       await api.flush();
       await readTwoStops(api);
-      await api.moveTo('[data-d="chapters"]', 40);
+      await aim(api, '[data-d="chapters"]');
       await api.click();
       setOpen(null);
       await api.flush();
