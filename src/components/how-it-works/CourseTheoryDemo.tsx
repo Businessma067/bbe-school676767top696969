@@ -1,10 +1,9 @@
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { BookOpen, ChevronDown, PanelLeftOpen } from "lucide-react";
 import { MATH_COURSE_THEORY, type MathCourseTheoryChapter } from "@/data/math-course-theory";
 import { TheoryArticle } from "@/components/TheoryReader";
 import type { DemoPlayerApi } from "@/components/news/demos/useDemoPlayer";
 import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
-import { cn } from "@/lib/utils";
 import { CourseFrame } from "./CourseFrame";
 
 const READ = [1, 10, 11] as const;
@@ -18,53 +17,56 @@ const STOPS: Record<(typeof READ)[number], readonly [string, string]> = {
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s.-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 80);
+}
+
+/** Only the two stops. Nothing above the first heading exists, so the open cannot skim the chapter. */
+function excerptBetween(markdown: string, firstId: string, secondId: string): string {
+  const lines = markdown.split("\n");
+  const marks: { index: number; id: string }[] = [];
+  lines.forEach((line, index) => {
+    const match = /^(#{2,3})\s+(.+)$/.exec(line);
+    if (!match) return;
+    marks.push({ index, id: slugify(match[2]) });
+  });
+  const start = marks.find((mark) => mark.id === firstId);
+  const second = marks.find((mark) => mark.id === secondId);
+  if (!start || !second || second.index <= start.index) return "";
+  const next = marks.find((mark) => mark.index > second.index);
+  const end = next ? next.index : Math.min(lines.length, second.index + 20);
+  return lines.slice(start.index, end).join("\n");
+}
+
 function headingTop(panel: HTMLElement, id: string): number | null {
   const el = panel.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
   if (!el) return null;
   return el.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop;
 }
 
-function parkOn(panel: HTMLElement, id: string) {
-  panel.style.scrollBehavior = "auto";
-  const top = headingTop(panel, id);
-  if (top == null || panel.clientHeight < 40) return false;
-  const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  panel.scrollTop = Math.max(0, Math.min(top - 12, max));
-  return true;
-}
-
 function Reader({
   chapter,
-  firstStop,
+  stops,
   onScroll,
 }: {
   chapter: MathCourseTheoryChapter;
-  firstStop: string;
+  stops: readonly [string, string];
   onScroll: (pct: number) => void;
 }) {
-  const markdown = chapter.markdown;
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [ready, setReady] = useState(false);
+  const markdown = useMemo(
+    () => excerptBetween(chapter.markdown, stops[0], stops[1]),
+    [chapter.markdown, stops],
+  );
   const chip = useMemo(() => {
-    const line = markdown.split("\n").find((item) => /^##\s+\d+\.\d+\b/.test(item));
+    const line = chapter.markdown.split("\n").find((item) => /^##\s+\d+\.\d+\b/.test(item));
     return line?.replace(/^##\s+/, "").replace(/^(\d+\.\d+)\s+/, "$1 · ") ?? "";
-  }, [markdown]);
-
-  useLayoutEffect(() => {
-    const panel = scrollRef.current;
-    if (!panel) return;
-    let cancelled = false;
-    parkOn(panel, firstStop);
-    const raf = requestAnimationFrame(() => {
-      if (cancelled) return;
-      parkOn(panel, firstStop);
-      setReady(true);
-    });
-    return () => {
-      cancelled = true;
-      cancelAnimationFrame(raf);
-    };
-  }, [chapter.num, firstStop]);
+  }, [chapter.markdown]);
 
   return (
     <div className="absolute inset-0 z-10 flex flex-col bg-card">
@@ -105,8 +107,8 @@ function Reader({
       <div
         ref={scrollRef}
         data-d="theory-scroll"
-        data-theory-ready={ready ? "1" : "0"}
-        className={cn("min-h-0 flex-1 overflow-y-auto", !ready && "invisible")}
+        data-theory-ready="1"
+        className="min-h-0 flex-1 overflow-y-auto"
         style={{ scrollBehavior: "auto" }}
         onScroll={(event) => {
           const el = event.currentTarget;
@@ -180,8 +182,7 @@ async function easeToSecond(api: DemoPlayerApi, panel: HTMLElement, id: string) 
   const top = headingTop(panel, id);
   if (top == null) return;
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  const cap = panel.clientHeight * 1.35;
-  const dest = Math.max(from, Math.min(top - 12, from + cap, max));
+  const dest = Math.max(from, Math.min(top - 12, max));
   const distance = dest - from;
   if (distance < 12) return;
   const duration = Math.round(Math.max(3400, distance / 0.1));
@@ -231,7 +232,7 @@ export function CourseTheoryDemo({
   }, [rest], { rest });
 
   const chapter = MATH_COURSE_THEORY[open];
-  const firstStop = STOPS[open as (typeof READ)[number]]?.[0] ?? STOPS[1][0];
+  const stops = STOPS[open as (typeof READ)[number]] ?? STOPS[1];
 
   return (
     <CourseFrame
@@ -246,7 +247,7 @@ export function CourseTheoryDemo({
           <Reader
             key={chapter.num}
             chapter={chapter}
-            firstStop={firstStop}
+            stops={stops}
             onScroll={(pct) => {
               barPct.current = pct;
               const bar = stageRef.current?.querySelector<HTMLElement>('[data-d="theory-bar"]');
