@@ -1,60 +1,82 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
-import hallAsset from "@/assets/exam-hall-real.png.asset.json";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { BBE_EXAM_FORMAT } from "@/config/bbe-exam-hub";
+import { WISO_EXAM_FORMAT } from "@/config/wiso-exam-hub";
+import { PAID_PRODUCTS } from "@/lib/checkout-catalog";
 import { cn } from "@/lib/utils";
 
-const DROP_MS = 420;
-/** Wheel distance that moves one page. A long gesture can cross every page at once. */
-const PX_PER_PAGE = 160;
-
-const PAGES = [
-  { id: "core", label: "Shared core" },
-  { id: "lanes", label: "Language lanes" },
-  { id: "modes", label: "Every mode" },
+const SLIDES = [
+  { id: "core", label: "Shared core", short: "Core" },
+  { id: "lanes", label: "Languages", short: "Languages" },
+  { id: "modes", label: "Modes", short: "Modes" },
 ] as const;
 
-/** Pixels of slack before the block counts as sitting flush in the viewport. */
-const ALIGN_PX = 2;
+const BBE_PRICE = PAID_PRODUCTS["full-course"].priceEur;
+const WISO_PRICE = PAID_PRODUCTS["wiso-full-course"].priceEur;
+const HYBRID_PRICE = PAID_PRODUCTS["hybrid-full-course"].priceEur;
 
-function stickyChromeHeight(): number {
-  const header = document.querySelector("header");
-  if (!header) return 0;
-  const position = getComputedStyle(header).position;
-  if (position !== "sticky" && position !== "fixed") return 0;
-  return Math.round(header.getBoundingClientRect().height);
-}
+const PAPER_ROWS = [
+  {
+    area: "Mathematics",
+    bbe: `${BBE_EXAM_FORMAT.mathQuestions} questions`,
+    wiso: `${WISO_EXAM_FORMAT.mathQuestions} questions`,
+    note: "Same skill. One queue.",
+  },
+  {
+    area: "Economics",
+    bbe: `${BBE_EXAM_FORMAT.economicsQuestions} questions`,
+    wiso: `${WISO_EXAM_FORMAT.economicsQuestions} questions`,
+    note: "Same ideas. The wording flips.",
+  },
+  {
+    area: "Language",
+    bbe: `${BBE_EXAM_FORMAT.englishQuestions} English`,
+    wiso: `${WISO_EXAM_FORMAT.germanQuestions} German`,
+    note: "This row does not transfer.",
+  },
+] as const;
 
-/** Distance from the flush position: 0 when the block fills the screen under the header. */
-function misalign(el: HTMLElement): number {
-  return el.getBoundingClientRect().top - stickyChromeHeight();
-}
-
-function isFlush(el: HTMLElement): boolean {
-  return Math.abs(misalign(el)) <= ALIGN_PX;
-}
-
-function snapFlush(el: HTMLElement) {
-  const delta = misalign(el);
-  if (Math.abs(delta) <= ALIGN_PX) return;
-  window.scrollTo({ top: window.scrollY + delta, behavior: "auto" });
-}
+const MODES = [
+  {
+    name: "Shared math",
+    text: "One mathematics queue counts toward both papers. You do not restart the chapter when you switch exams.",
+  },
+  {
+    name: "Bridge cases",
+    text: "The same economics idea in English and in German, scored as one step instead of two homework sets.",
+  },
+  {
+    name: "Mirror drill",
+    text: "Alternate the languages until you can answer without translating in your head.",
+  },
+  {
+    name: "Exam flip",
+    text: "Switch BBE and WiSo framing, including the penalty habits of each paper.",
+  },
+  {
+    name: "Dual mock day",
+    text: `Both formats in one day: BBE is ${BBE_EXAM_FORMAT.questionCount} questions, WiSo is ${WISO_EXAM_FORMAT.questionCount}, each about ${BBE_EXAM_FORMAT.durationHours} hours.`,
+  },
+  {
+    name: "Decision lab",
+    text: "See which track you are actually stronger on, while the other paper stays warm.",
+  },
+] as const;
 
 /**
- * The block fills the screen under the header. Wheel or swipe turns its pages
- * only once that block is fully in view and sitting flush. Page changes follow
- * the scroll distance immediately, so one long gesture can cross every page.
+ * Three horizontal pages, sized like the BBE and WiSo sliders. Each page is a
+ * card of exam facts, not a full-screen frame.
  */
 export function HybridThirdCourseReel() {
-  const [front, setFront] = useState(0);
-  const [leaving, setLeaving] = useState<number | null>(null);
-  const [dir, setDir] = useState<"down" | "up">("down");
-  const [chrome, setChrome] = useState(0);
-  const stageRef = useRef<HTMLDivElement>(null);
-  const frontRef = useRef(0);
-  const travelRef = useRef(0);
-  const leavingRef = useRef<number | null>(null);
+  const [active, setActive] = useState(0);
+  const total = SLIDES.length;
+  const goTo = (index: number) => setActive(Math.min(total - 1, Math.max(0, index)));
+  const next = () => goTo(active + 1);
+  const prev = () => goTo(active - 1);
+
+  const rootRef = useRef<HTMLDivElement>(null);
   const reduceRef = useRef(false);
-  const maxTravel = PX_PER_PAGE * (PAGES.length - 1);
+  const touch = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -67,397 +89,270 @@ export function HybridThirdCourseReel() {
   }, []);
 
   useEffect(() => {
-    if (leaving === null) return;
-    const id = window.setTimeout(() => {
-      leavingRef.current = null;
-      setLeaving(null);
-    }, DROP_MS);
-    return () => window.clearTimeout(id);
-  }, [leaving]);
-
-  const show = (to: number, syncTravel: boolean) => {
-    if (to === frontRef.current || to < 0 || to >= PAGES.length) return;
-    const from = frontRef.current;
-    const far = Math.abs(to - from) > 1;
-    const rushing = leavingRef.current !== null;
-    frontRef.current = to;
-    if (syncTravel) travelRef.current = to * PX_PER_PAGE;
-    setFront(to);
-    if (reduceRef.current || far || rushing) {
-      leavingRef.current = null;
-      setLeaving(null);
-      return;
-    }
-    setDir(to > from ? "down" : "up");
-    leavingRef.current = from;
-    setLeaving(from);
-  };
-  const showRef = useRef(show);
-  showRef.current = show;
-
-  useEffect(() => {
-    const measure = () => setChrome(stickyChromeHeight());
-    measure();
-    const header = document.querySelector("header");
-    const observer = header ? new ResizeObserver(measure) : null;
-    observer?.observe(header);
-    window.addEventListener("resize", measure);
-    return () => {
-      observer?.disconnect();
-      window.removeEventListener("resize", measure);
+    const onKey = (event: KeyboardEvent) => {
+      const el = rootRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const visible = rect.top < window.innerHeight * 0.6 && rect.bottom > window.innerHeight * 0.4;
+      if (!visible) return;
+      if (event.key === "ArrowRight") next();
+      if (event.key === "ArrowLeft") prev();
     };
-  }, []);
-
-  useEffect(() => {
-    const el = stageRef.current;
-    if (!el) return;
-    const onWheel = (event: WheelEvent) => {
-      let deltaY = event.deltaY;
-      const delta = misalign(el);
-      const flush = Math.abs(delta) <= ALIGN_PX;
-      if (!flush) {
-        const vh = window.innerHeight;
-        const toward =
-          (event.deltaY > 0 && delta > ALIGN_PX && delta < vh) ||
-          (event.deltaY < 0 && delta < -ALIGN_PX && el.getBoundingClientRect().bottom > stickyChromeHeight());
-        if (!(toward && Math.abs(delta) < vh * 0.72)) return;
-        event.preventDefault();
-        snapFlush(el);
-        const spent = Math.sign(deltaY) * Math.min(Math.abs(deltaY), 70);
-        deltaY -= spent;
-        if (Math.abs(deltaY) < 24) return;
-      }
-
-      const atStart = travelRef.current <= 0;
-      const atEnd = travelRef.current >= maxTravel;
-      if (deltaY > 0 && atEnd) return;
-      if (deltaY < 0 && atStart) return;
-      event.preventDefault();
-      travelRef.current = Math.min(maxTravel, Math.max(0, travelRef.current + deltaY));
-      const page = Math.round(travelRef.current / PX_PER_PAGE);
-      showRef.current(page, false);
-    };
-    el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
-  }, [maxTravel]);
-
-  const touch = useRef<{ y: number } | null>(null);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [active]);
 
   return (
-    <div
-      ref={stageRef}
-      className="relative w-full overflow-hidden bg-[#071612]"
-      style={{ height: `calc(100svh - ${chrome}px)` }}
-      role="region"
-      aria-roledescription="carousel"
-      aria-label="Why a third course"
-      onTouchStart={(event) => {
-        touch.current = { y: event.touches[0]?.clientY ?? 0 };
-      }}
-      onTouchEnd={(event) => {
-        const start = touch.current;
-        touch.current = null;
-        if (!start) return;
-        const dy = (event.changedTouches[0]?.clientY ?? start.y) - start.y;
-        const stage = stageRef.current;
-        if (!stage) return;
-        if (!isFlush(stage)) {
-          if (Math.abs(misalign(stage)) < window.innerHeight * 0.72) snapFlush(stage);
-          return;
-        }
-        if (Math.abs(dy) < 48) return;
-        const index = frontRef.current;
-        const pages = Math.max(1, Math.min(PAGES.length - 1, Math.round(Math.abs(dy) / 220)));
-        const next = index + (dy < 0 ? pages : -pages);
-        if (next === index) return;
-        if (dy < 0 && index === PAGES.length - 1) return;
-        if (dy > 0 && index === 0) return;
-        showRef.current(Math.min(PAGES.length - 1, Math.max(0, next)), true);
-      }}
-    >
-        {PAGES.map((page, index) => {
-          const dropping = leaving === index;
-          const shift = dir === "down" ? "105%" : "-105%";
-          return (
-            <article
-              key={page.id}
-              aria-hidden={index !== front}
-              className="absolute inset-0 bg-[#071612]"
-              style={{
-                transform: dropping ? `translate3d(0, ${shift}, 0)` : "translate3d(0, 0, 0)",
-                transition: dropping ? `transform ${DROP_MS}ms cubic-bezier(0.4, 0, 0.2, 1)` : "none",
-                zIndex: dropping ? 3 : index === front ? 2 : 1,
-              }}
-            >
-              {index === 0 ? <SharedCorePage live={index === front} /> : null}
-              {index === 1 ? <LanguageLanesPage live={index === front} /> : null}
-              {index === 2 ? <EveryModePage live={index === front} /> : null}
-            </article>
-          );
-        })}
-
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-gradient-to-t from-black/50 to-transparent" />
-        <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
-          {PAGES.map((page, index) => {
-            const selected = index === front;
+    <div ref={rootRef} className="relative w-full overflow-hidden pb-12 pt-6 sm:pb-14 sm:pt-8">
+      <div className="relative z-20 mx-auto mb-3 flex max-w-xl justify-center px-4 sm:mb-4 sm:px-6">
+        <div
+          role="tablist"
+          aria-label="Why a third course"
+          className="inline-flex w-full max-w-md items-center gap-1 rounded-full border border-white/12 bg-black/35 p-1.5 backdrop-blur-md sm:gap-1.5 sm:p-2"
+        >
+          {SLIDES.map((slide, index) => {
+            const selected = active === index;
             return (
               <button
-                key={page.id}
+                key={slide.id}
                 type="button"
-                aria-label={page.label}
-                aria-current={selected ? "true" : undefined}
-                onClick={() => {
-                  const stage = stageRef.current;
-                  if (stage && !isFlush(stage)) {
-                    if (Math.abs(misalign(stage)) < window.innerHeight * 0.72) snapFlush(stage);
-                    return;
-                  }
-                  showRef.current(index, true);
-                }}
-                className="flex h-10 items-center"
+                role="tab"
+                aria-selected={selected}
+                aria-controls={`hybrid-slide-${slide.id}`}
+                id={`hybrid-tab-${slide.id}`}
+                onClick={() => goTo(index)}
+                className={cn(
+                  "relative flex-1 rounded-full px-3 py-2.5 text-center text-xs font-semibold tracking-wide transition-all duration-300 sm:px-4 sm:py-3 sm:text-sm",
+                  selected
+                    ? "bg-teal-600 text-white shadow-[0_0_12px_-6px_rgba(45,212,191,0.7)]"
+                    : "text-why-us-fg/55 hover:bg-white/5 hover:text-why-us-fg/85",
+                )}
               >
-                <span
-                  className={cn(
-                    "relative block h-1.5 overflow-hidden rounded-full bg-white/25 transition-all",
-                    selected ? "w-12" : "w-2.5",
-                  )}
-                >
-                  {selected ? <span className="absolute inset-0 bg-teal-300" /> : null}
-                </span>
+                <span className="sm:hidden">{slide.short}</span>
+                <span className="hidden sm:inline">{slide.label}</span>
               </button>
             );
           })}
         </div>
+      </div>
+
+      <button
+        type="button"
+        aria-label="Previous page"
+        onClick={prev}
+        disabled={active === 0}
+        className="absolute left-2 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-teal-300/50 hover:bg-black/70 hover:text-white disabled:opacity-30 sm:left-6 sm:flex sm:h-12 sm:w-12"
+      >
+        <ChevronLeft size={24} />
+      </button>
+      <button
+        type="button"
+        aria-label="Next page"
+        onClick={next}
+        disabled={active === total - 1}
+        className="absolute right-2 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-teal-300/50 hover:bg-black/70 hover:text-white disabled:opacity-30 sm:right-6 sm:flex sm:h-12 sm:w-12"
+      >
+        <ChevronRight size={24} />
+      </button>
+
+      <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1 sm:bottom-6 sm:gap-2">
+        {SLIDES.map((slide, index) => (
+          <button
+            key={slide.id}
+            type="button"
+            aria-label={`Go to ${slide.label}`}
+            onClick={() => goTo(index)}
+            className="flex h-10 w-10 items-center justify-center"
+          >
+            <span
+              className={cn(
+                "rounded-full transition-all duration-300",
+                active === index ? "h-2 w-8 bg-teal-300" : "h-2 w-2 bg-primary-foreground/30",
+              )}
+            />
+          </button>
+        ))}
+      </div>
+
+      <div
+        className="relative z-10 w-full overflow-hidden"
+        onTouchStart={(event) => {
+          const point = event.touches[0];
+          touch.current = { x: point.clientX, y: point.clientY };
+        }}
+        onTouchEnd={(event) => {
+          const start = touch.current;
+          touch.current = null;
+          if (!start) return;
+          const point = event.changedTouches[0];
+          const dx = point.clientX - start.x;
+          const dy = point.clientY - start.y;
+          if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+            if (dx < 0) next();
+            else prev();
+          }
+        }}
+      >
+        <div
+          className="flex w-full items-stretch"
+          style={{
+            transform: `translate3d(-${active * 100}%, 0, 0)`,
+            transitionProperty: "transform",
+            transitionDuration: reduceRef.current ? "0ms" : "700ms",
+            transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
+          }}
+        >
+          <Slide
+            id="hybrid-slide-core"
+            labelledBy="hybrid-tab-core"
+            step="01"
+            title="What is actually shared"
+          >
+            <div className="overflow-hidden rounded-xl border border-white/10">
+              <div className="grid grid-cols-[1.2fr_1fr_1fr] bg-black/30 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-teal-200/80 sm:px-4 sm:text-xs">
+                <span>Section</span>
+                <span>BBE</span>
+                <span>WiSo</span>
+              </div>
+              {PAPER_ROWS.map((row) => (
+                <div
+                  key={row.area}
+                  className="grid grid-cols-[1.2fr_1fr_1fr] items-start gap-y-1 border-t border-white/10 px-3 py-3 sm:px-4"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-why-us-fg sm:text-base">{row.area}</p>
+                    <p className="mt-1 hidden text-xs text-why-us-fg/60 sm:block">{row.note}</p>
+                  </div>
+                  <p className="text-sm text-why-us-fg/85">{row.bbe}</p>
+                  <p className="text-sm text-why-us-fg/85">{row.wiso}</p>
+                  <p className="col-span-3 text-xs text-why-us-fg/60 sm:hidden">{row.note}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">
+              On the latest BBE paper, mathematics is about {BBE_EXAM_FORMAT.scoreWeighting.mathematics} of
+              the score and economics about {BBE_EXAM_FORMAT.scoreWeighting.economics}. English is about{" "}
+              {BBE_EXAM_FORMAT.scoreWeighting.english}. The heavy rows are the ones you can study once.
+            </p>
+          </Slide>
+
+          <Slide
+            id="hybrid-slide-lanes"
+            labelledBy="hybrid-tab-lanes"
+            step="02"
+            title="The row you cannot share"
+          >
+            <div className="grid gap-4 sm:grid-cols-2">
+              <LaneCard
+                kicker="BBE · English"
+                title={`${BBE_EXAM_FORMAT.englishQuestions} questions`}
+                points={[
+                  "Reading, grammar, and vocabulary on the English-taught paper.",
+                  `About ${BBE_EXAM_FORMAT.scoreWeighting.english} of the BBE score.`,
+                  "WiSo has no English section. This practice does not move that paper.",
+                ]}
+              />
+              <LaneCard
+                kicker="WiSo · German"
+                title={`${WISO_EXAM_FORMAT.germanQuestions} questions`}
+                points={[
+                  "German reading comprehension, not a separate grammar drill.",
+                  "WU lists deutsches Sprachverständnis, not English.",
+                  "A BBE English set will not show whether this section is ready.",
+                ]}
+              />
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">
+              A Hybrid week keeps both lanes next to the shared chapter: mathematics and economics
+              once, then the English wording and the German wording before you leave the topic.
+            </p>
+          </Slide>
+
+          <Slide
+            id="hybrid-slide-modes"
+            labelledBy="hybrid-tab-modes"
+            step="03"
+            title="What the third course adds"
+          >
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {MODES.map((mode) => (
+                <div key={mode.name} className="rounded-xl border border-white/10 bg-black/25 p-4">
+                  <p className="text-sm font-semibold text-why-us-fg">{mode.name}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-why-us-fg/70">{mode.text}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <Fact label="BBE places" value={String(BBE_EXAM_FORMAT.places)} />
+              <Fact label="WiSo places" value={WISO_EXAM_FORMAT.places.toLocaleString("en-US")} />
+              <Fact
+                label="Both courses"
+                value={`€${HYBRID_PRICE}`}
+                note={`Separate would be €${BBE_PRICE + WISO_PRICE}`}
+              />
+            </div>
+          </Slide>
+        </div>
+      </div>
     </div>
   );
 }
 
-function PageFrame({
+function Slide({
+  id,
+  labelledBy,
   step,
-  kicker,
   title,
-  body,
-  photo,
   children,
 }: {
+  id: string;
+  labelledBy: string;
   step: string;
-  kicker: string;
   title: string;
-  body: string;
-  photo?: string;
-  children?: ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <div className="relative h-full overflow-hidden bg-[#071612]">
-      {photo ? (
-        <img
-          src={photo}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          onError={(event) => {
-            event.currentTarget.style.display = "none";
-          }}
-        />
-      ) : null}
-      <div className={cn("pointer-events-none absolute inset-0", photo ? "bg-[#071612]/55" : "bg-[#071612]")} />
-      <div className="absolute inset-0">{children}</div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[48%] bg-gradient-to-t from-[#071612] from-55% to-transparent" />
-      <div className="relative z-10 flex h-full w-full flex-col justify-end px-6 pb-16 pt-8 sm:px-12 lg:px-16">
-        <div className="max-w-xl">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-200/80 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
-            Why a third course
-          </p>
-          <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-100 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
+    <section
+      id={id}
+      role="tabpanel"
+      aria-labelledby={labelledBy}
+      className="flex w-full min-w-full flex-none items-stretch justify-center px-3 py-2 sm:px-16 sm:py-4 lg:px-20"
+    >
+      <div className="flex w-full max-w-6xl flex-col rounded-2xl border border-white/12 bg-why-us-card p-4 sm:p-8 lg:p-10">
+        <div className="mb-5 border-b border-white/12 pb-3 sm:mb-6 sm:pb-4">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-teal-200/80">
             <span data-no-i18n>{step}</span>
-            {" · "}
-            {kicker}
           </p>
-          <h3 className="mt-3 font-display text-[1.7rem] font-semibold leading-[1.12] text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.55)] sm:text-5xl">
-            {title}
-          </h3>
-          <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/85 [text-shadow:0_1px_10px_rgba(0,0,0,0.5)] sm:text-lg">
-            {body}
-          </p>
+          <h3 className="mt-2 font-display text-xl font-semibold text-why-us-fg sm:text-3xl">{title}</h3>
         </div>
+        {children}
       </div>
+    </section>
+  );
+}
+
+function LaneCard({ kicker, title, points }: { kicker: string; title: string; points: string[] }) {
+  return (
+    <div className="rounded-xl border border-white/10 bg-black/25 p-4 sm:p-5">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-teal-200/80">{kicker}</p>
+      <p className="mt-2 font-display text-2xl font-semibold text-why-us-fg">{title}</p>
+      <ul className="mt-3 space-y-2">
+        {points.map((point) => (
+          <li key={point} className="text-sm leading-relaxed text-why-us-fg/75">
+            {point}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
 
-function SharedCorePage({ live }: { live: boolean }) {
+function Fact({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
-    <PageFrame
-      step="01"
-      kicker="Shared core"
-      title="One chapter counts for both papers."
-      body="Mathematics and economics stay a single queue. You flip the wording between English and German. You do not restart the chapter."
-    >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(45,212,191,0.18),transparent_58%)]" />
-      <div
-        className={cn(
-          "hybrid-flip absolute left-[6%] top-[9%] w-[min(52rem,90vw)] sm:left-[8%] sm:top-[12%]",
-          !live && "[&_.hybrid-flip-inner]:![animation:none]",
-        )}
-      >
-        <div className="hybrid-flip-inner h-28 sm:h-40">
-          <div className="hybrid-flip-face flex h-full flex-col justify-end">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-teal-200">English · BBE</p>
-            <p className="font-display text-5xl font-semibold leading-none text-white sm:text-7xl lg:text-8xl">
-              Elasticity
-            </p>
-          </div>
-          <div className="hybrid-flip-face hybrid-flip-back flex h-full flex-col justify-end">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-teal-200">Deutsch · WiSo</p>
-            <p className="font-display text-5xl font-semibold leading-none text-white sm:text-7xl lg:text-8xl">
-              Elastizität
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="absolute inset-x-0 top-[calc(14%+8.5rem)] px-6 sm:top-[calc(14%+11rem)] sm:px-12 lg:px-16">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-200">One queue</p>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2 sm:gap-10">
-          <div>
-            <div className="h-1.5 overflow-hidden rounded-full bg-white/15">
-              <div className="h-full w-4/5 rounded-full bg-teal-300" />
-            </div>
-            <div className="mt-1.5 flex justify-between text-[11px] text-white/80">
-              <span>Math</span>
-              <span>shared</span>
-            </div>
-          </div>
-          <div>
-            <div className="h-1.5 overflow-hidden rounded-full bg-white/15">
-              <div className="h-full w-3/5 rounded-full bg-teal-400" />
-            </div>
-            <div className="mt-1.5 flex justify-between text-[11px] text-white/80">
-              <span>Economics</span>
-              <span>shared</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </PageFrame>
-  );
-}
-
-const EN_LANE = ["demand", "margin", "surplus", "incentive", "trade-off", "cost"];
-const DE_LANE = ["Nachfrage", "Marge", "Überschuss", "Anreiz", "Abwägung", "Kosten"];
-
-function LanguageLanesPage({ live }: { live: boolean }) {
-  return (
-    <PageFrame
-      step="02"
-      kicker="Both language lanes"
-      title="English and German stay in the same week."
-      body="BBE still needs the English paper. WiSo still needs German reading. Hybrid keeps both lanes moving, lighter than buying a second full course."
-      photo={wuAsset.url}
-    >
-      <div className="absolute inset-x-0 top-0 h-[54%] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_86%,transparent)] sm:h-[56%]">
-        <div className="grid h-full grid-cols-2">
-          <Lane title="English" words={EN_LANE} reverse={false} live={live} />
-          <Lane title="Deutsch" words={DE_LANE} reverse live={live} />
-        </div>
-      </div>
-    </PageFrame>
-  );
-}
-
-function Lane({
-  title,
-  words,
-  reverse,
-  live,
-}: {
-  title: string;
-  words: string[];
-  reverse: boolean;
-  live: boolean;
-}) {
-  const loop = [...words, ...words];
-  return (
-    <div className="relative h-full overflow-hidden">
-      <p className="absolute left-6 top-6 z-10 text-[10px] font-semibold uppercase tracking-[0.28em] text-teal-100 sm:left-12 lg:left-16">
-        {title}
-      </p>
-      <div className={cn("hybrid-lane-track pt-16", reverse && "hybrid-lane-track-reverse", !live && "![animation:none]")}>
-        {loop.map((word, i) => (
-          <p
-            key={`${word}-${i}`}
-            className="whitespace-nowrap px-6 py-3 font-display text-[1.65rem] font-semibold leading-none text-white/90 sm:px-12 sm:py-4 sm:text-5xl lg:px-16 lg:text-7xl"
-          >
-            {word}
-          </p>
-        ))}
-      </div>
+    <div className="rounded-xl border border-white/10 px-4 py-3">
+      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal-200/70">{label}</p>
+      <p className="mt-1 font-display text-2xl font-semibold text-why-us-fg">{value}</p>
+      {note ? <p className="mt-1 text-xs text-why-us-fg/60">{note}</p> : null}
     </div>
-  );
-}
-
-function StudyClock({ live }: { live: boolean }) {
-  const ticks = Array.from({ length: 12 }, (_, index) => index);
-  return (
-    <div className="pointer-events-none absolute left-1/2 top-[40%] w-36 -translate-x-1/2 -translate-y-1/2 sm:top-[36%] sm:w-60" aria-hidden>
-      <svg viewBox="0 0 120 120" className="h-auto w-full drop-shadow-[0_0_18px_rgba(45,212,191,0.45)]">
-        <circle cx="60" cy="60" r="56" fill="#0c2a24" stroke="#99f6e4" strokeWidth="3.5" />
-        <circle cx="60" cy="60" r="50" fill="#071612" stroke="#5eead4" strokeWidth="1.5" />
-        {ticks.map((index) => (
-          <line
-            key={index}
-            x1="60"
-            y1="16"
-            x2="60"
-            y2={index % 3 === 0 ? 24 : 20}
-            stroke="#f0fdfa"
-            strokeWidth={index % 3 === 0 ? 2.6 : 1.3}
-            strokeLinecap="round"
-            transform={`rotate(${index * 30} 60 60)`}
-          />
-        ))}
-        <g className={cn("hybrid-clock-hand-slow", !live && "![animation:none]")}>
-          <line x1="60" y1="64" x2="60" y2="36" stroke="#5eead4" strokeWidth="4.5" strokeLinecap="round" />
-        </g>
-        <g className={cn("hybrid-clock-hand", !live && "![animation:none]")}>
-          <line x1="60" y1="66" x2="60" y2="24" stroke="#f8fffe" strokeWidth="2.4" strokeLinecap="round" />
-        </g>
-        <circle cx="60" cy="60" r="3.5" fill="#ccfbf1" />
-      </svg>
-    </div>
-  );
-}
-
-const MODES = [
-  { time: "Morning", name: "BBE mock", note: "English clock" },
-  { time: "Midday", name: "Bridge", note: "Same idea, two wordings" },
-  { time: "Afternoon", name: "Mirror drill", note: "EN then DE, again" },
-  { time: "Evening", name: "WiSo mock", note: "German clock" },
-];
-
-function EveryModePage({ live }: { live: boolean }) {
-  return (
-    <PageFrame
-      step="03"
-      kicker="Every mode"
-      title="Both exam days, one rehearsal."
-      body="Mocks, builders, flashcards, matching, and tutor stay. Hybrid adds Bridge, Mirror, Exam Flip, and a dual mock day so the two formats never blur together."
-      photo={hallAsset.url}
-    >
-      <StudyClock live={live} />
-      <div className="absolute inset-x-0 top-0 grid grid-cols-2 gap-y-8 px-6 pt-14 sm:grid-cols-4 sm:px-10 sm:pt-16 lg:px-14">
-        {MODES.map((mode, i) => (
-          <div
-            key={mode.name}
-            className={cn("hybrid-mode-chip", !live && "![animation:none] opacity-100")}
-            style={{ animationDelay: `${i * 0.7}s` }}
-          >
-            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-200">{mode.time}</p>
-            <p className="mt-2 font-display text-3xl font-semibold leading-none text-white sm:text-4xl lg:text-5xl">
-              {mode.name}
-            </p>
-            <p className="mt-2 max-w-[11rem] text-sm text-white/75">{mode.note}</p>
-          </div>
-        ))}
-      </div>
-    </PageFrame>
   );
 }
