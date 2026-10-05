@@ -160,6 +160,15 @@ export function HybridLandingPage() {
         </section>
 
         <section id="why-a-third-course" className="why-choose-us--hybrid bg-[#071612]">
+          <div className="mx-auto max-w-3xl px-6 pt-16 text-center lg:px-8 lg:pt-20">
+            <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+              Why a third course
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+              Mathematics and economics overlap. The language section does not. Hybrid keeps both
+              papers in one plan without doing the shared work twice.
+            </p>
+          </div>
           <HybridThirdCourseReel />
           <div className="flex justify-center bg-[#071612] px-4 py-8">
             <LocalizedLink
