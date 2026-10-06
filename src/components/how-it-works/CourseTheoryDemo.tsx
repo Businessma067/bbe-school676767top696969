@@ -109,6 +109,14 @@ function Reader({
   );
 }
 
+function cursorNow(stage: HTMLElement) {
+  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
+  return {
+    x: Number(cursor?.dataset.cx ?? 48),
+    y: Number(cursor?.dataset.cy ?? 120),
+  };
+}
+
 /**
  * One glide. Speed eases only in the first and last 12% and is steady between,
  * the same shape as the pointer, so the chapter does not kick or stop midway.
@@ -125,7 +133,60 @@ function oneGlide(t: number) {
   return shoulder + v * (t - s);
 }
 
+function pointOf(stage: HTMLElement, el: HTMLElement) {
+  const sr = stage.getBoundingClientRect();
+  const box = el.getBoundingClientRect();
+  return {
+    x: box.left - sr.left + box.width / 2 - 5,
+    y: box.top - sr.top + Math.min(box.height / 2, 18) - 3,
+  };
+}
+
+/** Steady carry, then a soft landing. The hand is already moving on the first frame. */
+function carryHand(t: number) {
+  const brake = 0.84;
+  if (t <= brake) return (t / brake) * 0.94;
+  const u = (t - brake) / (1 - brake);
+  return 0.94 + 0.06 * (1 - (1 - u) * (1 - u));
+}
+
+/** Move the pointer for the whole interval, so it never darts and then freezes. */
+async function glideHand(
+  api: DemoPlayerApi,
+  stage: HTMLElement,
+  to: { x: number; y: number },
+  duration?: number,
+) {
+  const from = cursorNow(stage);
+  const dist = Math.hypot(to.x - from.x, to.y - from.y);
+  if (dist < 2) {
+    api.setCursorAt(to);
+    return;
+  }
+  const ms = duration ?? Math.round(Math.min(1100, Math.max(220, dist / 1.1)));
+  const started = performance.now();
+  await new Promise<void>((resolve) => {
+    const frame = (now: number) => {
+      if (api.cancelled()) return resolve();
+      const t = Math.min(1, (now - started) / ms);
+      const e = carryHand(t);
+      api.setCursorAt({
+        x: from.x + (to.x - from.x) * e,
+        y: from.y + (to.y - from.y) * e,
+      });
+      if (t < 1) requestAnimationFrame(frame);
+      else resolve();
+    };
+    requestAnimationFrame(frame);
+  });
+  api.setCursorAt(to);
+}
+
 async function aim(api: DemoPlayerApi, selector: string) {
+  await api.reveal(selector);
+  const stage = api.stage();
+  const el = stage?.querySelector<HTMLElement>(selector);
+  if (stage && el) await glideHand(api, stage, pointOf(stage, el));
   await api.moveTo(selector, 30);
 }
 
@@ -228,18 +289,18 @@ export function CourseTheoryDemo({
     };
 
     setFade(true);
-    await api.wait(160);
+    await api.wait(420);
     setOpen(null);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     await api.flush();
     setFade(false);
-    await api.wait(120);
+    await api.wait(360);
 
     for (const num of READ) {
       if (api.cancelled()) return;
       await readChapter(num);
     }
-    await api.wait(160);
+    await api.wait(360);
   }, [rest], { rest, glideScale: howItWorksGlide(rest) });
 
   const chapter = open == null ? null : catalog[open];

@@ -207,7 +207,7 @@ export function CourseMockExamDemo({
     };
 
     setFade(true);
-    await api.wait(80);
+    await api.wait(140);
     setPhase("exam");
     setIndex(0);
     setMarks({});
@@ -215,7 +215,7 @@ export function CourseMockExamDemo({
     setTaskIndex(0);
     resetScroll();
     setFade(false);
-    await api.wait(100);
+    await api.wait(260);
 
     for (let step = 0; step < plan.show.length; step++) {
       if (api.cancelled()) return;
@@ -225,7 +225,6 @@ export function CourseMockExamDemo({
         await api.click(() => openQuestion(at));
         await api.flush();
         resetScroll();
-        await api.wait(70);
       }
       const question = questions[at]!;
       for (const statement of trueIndexes(question)) {
@@ -238,7 +237,6 @@ export function CourseMockExamDemo({
             return { ...prev, [question.id]: next };
           }),
         );
-        await api.wait(80);
       }
     }
 
@@ -246,13 +244,11 @@ export function CourseMockExamDemo({
     await api.click(openReview);
     await api.flush();
     resetScroll();
-    await api.wait(80);
 
     await api.moveTo('[data-d="submit-exam"]', DWELL);
     await api.click(() => setPhase("stats"));
     await api.flush();
     resetScroll();
-    await api.wait(120);
     await glideFrame(api, '[data-d^="stat"], [data-d="time-chart"]');
     await api.wait(80);
     await api.moveTo('[data-d="tasks"]', DWELL);
@@ -262,7 +258,6 @@ export function CourseMockExamDemo({
     });
     await api.flush();
     resetScroll();
-    await api.wait(90);
     await api.moveTo('[data-d="prose0"]', 40);
     await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
     await api.wait(280);

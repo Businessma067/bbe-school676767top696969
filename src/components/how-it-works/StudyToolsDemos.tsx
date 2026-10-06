@@ -324,7 +324,7 @@ export function CourseFlashDemo({
       };
 
       setFade(true);
-      await api.wait(80);
+      await api.wait(160);
       setIdx(0);
       setTurn(0);
       setSlide(CARD_REST);
@@ -332,24 +332,28 @@ export function CourseFlashDemo({
       setUnknown(0);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(80);
+      await api.wait(160);
 
       if (!(await arriveAndClick(api, '[data-d="term"]'))) return;
-      await flipAfterClick();
-      await api.wait(80);
-
-      if (!(await arriveAndClick(api, '[data-d="dont"]'))) return;
+      const firstFlip = flipAfterClick();
+      await api.moveTo('[data-d="dont"]', 60);
+      await firstFlip;
+      if (api.cancelled()) return;
+      await api.click();
       setUnknown(1);
-      await swipeAfterClick("left", () => setIdx(1));
-
-      if (!(await arriveAndClick(api, '[data-d="flip"]'))) return;
-      await flipAfterClick();
-      await api.wait(80);
-
-      if (!(await arriveAndClick(api, '[data-d="know"]'))) return;
+      const firstSwipe = swipeAfterClick("left", () => setIdx(1));
+      await api.moveTo('[data-d="flip"]', 60);
+      await firstSwipe;
+      if (api.cancelled()) return;
+      await api.click();
+      const secondFlip = flipAfterClick();
+      await api.moveTo('[data-d="know"]', 60);
+      await secondFlip;
+      if (api.cancelled()) return;
+      await api.click();
       setKnown(1);
       await swipeAfterClick("right", () => setIdx(2));
-      await api.wait(140);
+      await api.wait(280);
     },
     [rest],
     { flow: true, rest, glideScale: howItWorksGlide(rest) },
@@ -522,27 +526,25 @@ export function CourseMatchDemo({
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
       setFade(true);
-      await api.wait(80);
+      await api.wait(160);
       setSelected(null);
       setMatched([]);
       setLines([]);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(80);
+      await api.wait(200);
 
       for (const id of pairs.map((pair) => pair.id)) {
         if (api.cancelled()) return;
         if (!(await arriveAndClick(api, `[data-d="L${id}"]`))) return;
         setSelected(id);
-        await api.wait(40);
         if (api.cancelled()) return;
         if (!(await arriveAndClick(api, `[data-d="R${id}"]`))) return;
         setMatched((current) => (current.includes(id) ? current : [...current, id]));
         setSelected(null);
-        await api.wait(50);
       }
       if (api.cancelled()) return;
-      await api.wait(140);
+      await api.wait(360);
     },
     [rest],
     { flow: true, rest, glideScale: howItWorksGlide(rest) },
@@ -713,7 +715,7 @@ export function CourseTutorDemo({
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
       setFade(true);
-      await api.wait(80);
+      await api.wait(160);
       if (api.cancelled()) return;
       setFinished(false);
       setIndex(0);
@@ -721,7 +723,7 @@ export function CourseTutorDemo({
       setScore(0);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(80);
+      await api.wait(200);
 
       for (let q = 0; q < questions.length; q++) {
         if (api.cancelled()) return;
@@ -731,7 +733,6 @@ export function CourseTutorDemo({
         setPicked(question.correct);
         setScore(q + 1);
         await api.flush();
-        await api.wait(50);
         if (api.cancelled()) return;
         if (!(await arriveAndClick(api, '[data-d="next"]'))) return;
         if (last) setFinished(true);
@@ -740,11 +741,10 @@ export function CourseTutorDemo({
           setPicked(null);
         }
         await api.flush();
-        if (!last) await api.wait(40);
       }
       if (api.cancelled()) return;
       await api.moveTo('[data-d="result"]', 60);
-      await api.wait(160);
+      await api.wait(400);
     },
     [rest],
     { flow: true, rest, glideScale: howItWorksGlide(rest) },

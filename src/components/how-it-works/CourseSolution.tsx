@@ -47,14 +47,14 @@ export function CourseSolution({
       <div
         className={cn(
           "pointer-events-none absolute inset-0 z-[5] bg-black/75 ease-in-out",
-          dimmed ? "opacity-100 transition-opacity duration-300" : "opacity-0 transition-none",
+          dimmed ? "opacity-100 transition-opacity duration-700" : "opacity-0 transition-none",
         )}
       />
       <div
         className={cn(
           "absolute inset-y-0 right-0 z-10 w-full ease-in-out sm:w-[54%]",
           open
-            ? "translate-x-0 opacity-100 transition-opacity duration-200"
+            ? "translate-x-0 opacity-100 transition-opacity duration-300"
             : "pointer-events-none translate-x-[105%] opacity-0 transition-none",
         )}
       >
