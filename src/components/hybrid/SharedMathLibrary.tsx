@@ -14,6 +14,7 @@ export function SharedMathLibrary() {
   const [passed, setPassed] = useState<string[]>([]);
   const [revision, setRevision] = useState<string[]>([]);
   const [totals, setTotals] = useState<Record<number, number>>({});
+  const [chapterIds, setChapterIds] = useState<Record<number, readonly string[]>>({});
 
   useEffect(() => {
     const snap = readSharedMathSnapshot();
