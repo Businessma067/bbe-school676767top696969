@@ -73,7 +73,7 @@ export function useDemoPlayer(
   const rest = options?.rest ?? 1;
   const cinematic = rest > 1;
   const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
-  const glideScale = options?.glideScale ?? 1.6;
+  const glideScale = options?.glideScale ?? 2.2;
   const glidePxPerMs = (cinematic ? 0.25 * pace : 0.38 * pace) * glideScale;
   const glideMinMs =
     (cinematic ? Math.max(380, 440 / pace) : Math.max(180, 280 / pace)) / glideScale;

@@ -8,7 +8,7 @@ import { CourseFrame } from "./CourseFrame";
 
 const READ = [1, 10, 11] as const;
 
-/** Cruise speed of each rush, before the brake. */
+/** Cruise speed of the single chapter glide. */
 const CRUISE_PX_PER_MS = 2.7;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
@@ -99,13 +99,20 @@ function cursorNow(stage: HTMLElement) {
   };
 }
 
-/** Fast for most of the way, then a long soft brake. Speed matches at the join and ends at rest. */
-function fastThenStop(t: number) {
-  const split = 0.68;
-  const coast = 0.914;
-  if (t <= split) return (t / split) * coast;
-  const u = (t - split) / (1 - split);
-  return coast + (1 - coast) * (1 - (1 - u) ** 5);
+/**
+ * One glide. Speed eases only in the first and last 12% and is steady between,
+ * the same shape as the pointer, so the chapter does not kick or stop midway.
+ */
+function oneGlide(t: number) {
+  const s = 0.12;
+  const v = 1 / (1 - 2 * s + (4 * s) / Math.PI);
+  const shoulder = (v * 2 * s) / Math.PI;
+  if (t < s) return shoulder * (1 - Math.cos((Math.PI * t) / (2 * s)));
+  if (t > 1 - s) {
+    const q = t - (1 - s);
+    return shoulder + v * (1 - 2 * s) + shoulder * Math.sin((Math.PI * q) / (2 * s));
+  }
+  return shoulder + v * (t - s);
 }
 
 function pointOf(stage: HTMLElement, el: HTMLElement) {
@@ -138,7 +145,7 @@ async function glideHand(
     api.setCursorAt(to);
     return;
   }
-  const ms = duration ?? Math.round(Math.min(460, Math.max(260, dist / 1.65)));
+  const ms = duration ?? Math.round(Math.min(340, Math.max(190, dist / 2.25)));
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
@@ -174,17 +181,12 @@ function placeChapter(panel: HTMLElement, offset: number, max: number) {
   panel.dataset.offset = String(Math.round(offset));
 }
 
-/** Rush, then brake. The pointer stays where it is while the chapter moves. */
-async function rushThenStop(
-  api: DemoPlayerApi,
-  panel: HTMLElement,
-  from: number,
-  dest: number,
-  max: number,
-) {
-  const distance = dest - from;
-  if (distance < 16) return;
-  const duration = Math.round(Math.max(720, distance / CRUISE_PX_PER_MS));
+/** One continuous glide. The pointer stays where it is while the chapter moves. */
+async function glideChapter(api: DemoPlayerApi, panel: HTMLElement, dest: number, max: number) {
+  const article = panel.querySelector<HTMLElement>("article");
+  const bar = panel.parentElement?.querySelector<HTMLElement>('[data-d="theory-bar"]');
+  if (dest < 16) return;
+  const duration = Math.round(Math.max(900, dest / CRUISE_PX_PER_MS));
   let elapsed = 0;
   let last = performance.now();
   await new Promise<void>((resolve) => {
@@ -194,7 +196,10 @@ async function rushThenStop(
       elapsed += Math.min(28, Math.max(0, now - last));
       last = now;
       const t = Math.min(1, elapsed / duration);
-      placeChapter(panel, from + distance * fastThenStop(t), max);
+      const offset = dest * oneGlide(t);
+      if (article) article.style.transform = `translate3d(0, ${(-offset).toFixed(2)}px, 0)`;
+      if (bar && max > 0) bar.style.transform = `scaleX(${Math.min(1, offset / max)})`;
+      panel.dataset.offset = String(Math.round(offset));
       if (t < 1) requestAnimationFrame(frame);
       else resolve();
     };
@@ -203,7 +208,7 @@ async function rushThenStop(
   placeChapter(panel, dest, max);
 }
 
-async function readTwoStops(api: DemoPlayerApi) {
+async function readChapterGlide(api: DemoPlayerApi) {
   let panel: HTMLElement | null = null;
   let lastHeight = -1;
   for (let i = 0; i < 80; i++) {
@@ -229,20 +234,12 @@ async function readTwoStops(api: DemoPlayerApi) {
     article.style.transform = "translate3d(0, 0, 0)";
   }
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
-  const first = Math.round(max * 0.4);
-  const second = Math.round(Math.min(max, Math.max(first + panel.clientHeight, max * 0.76)));
+  const dest = Math.round(max * 0.76);
   panel.dataset.max = String(max);
-  await rushThenStop(api, panel, 0, first, max);
-  if (api.cancelled()) return;
-  const pauseUntil = performance.now() + 420;
-  while (performance.now() < pauseUntil) {
-    if (api.cancelled()) return;
-    await api.flush();
-  }
-  await rushThenStop(api, panel, first, Math.min(second, max), max);
+  await glideChapter(api, panel, dest, max);
 }
 
-/** How it works · Theory: chapters 1, 10 and 11, two rushes that reach about 75%. */
+/** How it works · Theory: chapters 1, 10 and 11, one glide to about 75%. */
 export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
@@ -255,7 +252,7 @@ export function CourseTheoryDemo({
       await api.click();
       setOpen(num);
       await api.flush();
-      await readTwoStops(api);
+      await readChapterGlide(api);
       await aim(api, '[data-d="chapters"]');
       await api.click();
       setOpen(null);
@@ -275,7 +272,7 @@ export function CourseTheoryDemo({
       await readChapter(num);
     }
     await api.wait(360);
-  }, [rest], { rest, glideScale: 0.8 });
+  }, [rest], { rest, glideScale: 1.1 });
 
   const chapter = open == null ? null : MATH_COURSE_THEORY[open];
 
