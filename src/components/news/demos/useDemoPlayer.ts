@@ -52,6 +52,11 @@ export function howItWorksGlide(rest = 1) {
   return rest > 1 ? 2.8 : 2;
 }
 
+/** Economics, math, and the language task. Same hand, a slower cruise. */
+export function howItWorksTaskGlide(rest = 1) {
+  return howItWorksGlide(rest) * 0.62;
+}
+
 /**
  * Shared rAF cursor loop used by news unique demos.
  * Matches MockBuilderSimulator smoothness: DOM transform cursor, visibility pause, eased tweens.

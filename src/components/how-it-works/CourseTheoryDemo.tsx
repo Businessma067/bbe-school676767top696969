@@ -202,6 +202,8 @@ async function readChapterGlide(api: DemoPlayerApi) {
   const mid = Math.round(dest * 0.48);
   await glideChapter(api, panel, 0, mid, max);
   if (api.cancelled()) return;
+  // The first stop holds. The second pass starts from here and is unchanged.
+  await api.wait(640);
   await glideChapter(api, panel, mid, dest, max);
 }
 

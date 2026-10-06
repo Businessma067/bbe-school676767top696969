@@ -1,4 +1,4 @@
-/** Chrome inside the How it works stage. English for BBE, German for WiSo. */
+/** Chrome inside the How it works stage. WiSo math overrides the verdicts the site translates. */
 
 export type CourseChrome = {
   taskLabel: string;
@@ -30,7 +30,7 @@ export const EN_CHROME: CourseChrome = {
   timedOn: "Timed Mode ON",
   standard: "Standard · 1:30",
   calculator: "Calculator",
-  sheetTitle: "Explanation",
+  sheetTitle: "Full solution · Task 1",
   answerKey: "Answer key",
   trueWord: "True",
   falseWord: "False",
@@ -40,22 +40,12 @@ export const EN_CHROME: CourseChrome = {
   trueColumn: "True",
 };
 
+/** WiSo math only. The site keeps English buttons and translates the verdicts. */
 export const DE_CHROME: CourseChrome = {
-  taskLabel: "Aufgabe 1",
-  submit: "Antworten prüfen / Absenden",
-  explanation: "Erklärung",
-  hideExplanation: "Erklärung ausblenden",
-  correct: "richtig",
-  timedOff: "Zeitmodus",
-  timedOn: "Zeitmodus an",
-  standard: "Standard · 1:30",
-  calculator: "Rechner",
-  sheetTitle: "Erklärung",
-  answerKey: "Lösungsschlüssel",
-  trueWord: "Wahr",
+  ...EN_CHROME,
+  answerKey: "Antwortschlüssel",
+  trueWord: "Richtig",
   falseWord: "Falsch",
-  showInText: "Im Text zeigen",
-  locatedInText: "Im Text markiert",
   statement: "Aussage",
-  trueColumn: "Wahr",
+  trueColumn: "Richtig",
 };

@@ -329,7 +329,7 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string, stops
     if (api.cancelled()) return;
     const dest = legs[i]!;
     const distance = dest - from;
-    const duration = Math.max(720, Math.min(2400, distance * 0.85));
+    const duration = Math.max(1100, Math.min(3800, distance * 1.35));
     const last = i === legs.length - 1;
     await glideWithPointer(api, stage, panel, from, dest, duration, anchors, !last);
     from = dest;
@@ -367,7 +367,7 @@ export async function scrollPanelTo(
     panel.style.overflow = "hidden";
     inner.style.willChange = "transform";
   }
-  await api.tween(Math.round(Math.min(800, Math.max(240, travel * 0.7))), (eased) => {
+  await api.tween(Math.round(Math.min(1280, Math.max(380, travel * 1.12))), (eased) => {
     const top = start + (next - start) * eased;
     if (inner) inner.style.transform = `translate3d(0, ${(-top).toFixed(2)}px, 0)`;
     else panel.scrollTop = top;

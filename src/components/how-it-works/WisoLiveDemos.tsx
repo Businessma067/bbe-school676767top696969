@@ -279,7 +279,6 @@ export function WisoHowItWorksDemo({
         highlight={GERMAN_HIGHLIGHT}
         showAt={GERMAN_SHOW}
         markAt={GERMAN_MARKS}
-        chrome={DE_CHROME}
         rest={rest}
         lockCopy
       />
@@ -288,7 +287,6 @@ export function WisoHowItWorksDemo({
   return (
     <CourseEconDemo
       task={WISO_ECON}
-      chrome={DE_CHROME}
       markAt={ECON_MARKS}
       rest={rest}
       lockCopy
