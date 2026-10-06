@@ -42,11 +42,20 @@ export function SharedMathLibrary() {
 
   const passedTotal = passed.length;
   const ring = Math.min(100, Math.round((passedTotal / HYBRID_MATH_TARGET) * 100));
+  const countDone = (num: number): number => {
+    const ids = chapterIds[num];
+    if (!ids) return 0;
+    return countSharedMathPassedIn(
+      passed,
+      ids.map((id) => ({ id })),
+    );
+  };
+
   const continueChapter =
     HYBRID_MATH_UNITS.flatMap((unit) => [...unit.chapters]).find((num) => {
       const total = totals[num];
       if (!total) return false;
-      return countSharedMathPassed(passed, num) < total;
+      return countDone(num) < total;
     }) ?? 1;
 
   return (
