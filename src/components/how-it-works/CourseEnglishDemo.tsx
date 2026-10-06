@@ -47,7 +47,7 @@ export function CourseEnglishDemo({
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
-    await api.wait(80);
+    await api.wait(180);
     setMarks({});
     setChecked(false);
     setExpl(false);
@@ -55,30 +55,26 @@ export function CourseEnglishDemo({
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(80);
+    await api.wait(200);
 
     for (const i of markAt) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
-      await api.wait(50);
     }
 
     await api.moveTo('[data-d="submit"]');
     await api.click(() => setChecked(true));
-    await api.wait(70);
 
     await api.moveTo('[data-d="expl"]');
     await api.click(() => setExpl(true));
-    await api.wait(40);
 
     await scrollPanelTo(api, '[data-d="expl-scroll"]', '[data-d="show"]');
     await api.moveTo('[data-d="show"]');
     setActive(showAt);
     await api.click(() => setShown(true));
-    await api.wait(70);
     await api.moveTo('[data-d="line"]');
-    await api.wait(rest > 1 ? 240 : 400);
+    await api.wait(rest > 1 ? 520 : 400);
   }, [markAt, rest, showAt], { rest, glideScale: howItWorksGlide(rest) });
 
   const score = demoCorrectCount(marks, task.answerKey);

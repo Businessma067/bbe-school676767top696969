@@ -104,9 +104,7 @@ export function useDemoPlayer(
     const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
     const wait = async (ms: number) => {
-      // Do not stretch these gaps. The pointer's speed is already set, and a
-      // multiplied pause reads as the hand stopping between controls.
-      await sleep(ms);
+      await sleep(cinematic ? ms * rest : ms);
       while (!cancelled && !visibleRef.current) await sleep(200);
     };
 
@@ -327,19 +325,10 @@ export function useDemoPlayer(
         const next = Math.max(0, Math.min(start + delta, max));
         if (Math.abs(next - start) < 2) continue;
         const change = next - start;
-        const origin = { ...cursorPos.current };
-        let lastLive = pointOf(selector);
         await tween(
-          Math.max(glideMinMs, Math.min(640, Math.abs(change) / (0.9 * pace))),
+          Math.max(glideMinMs, Math.min(1400, Math.abs(change) / (0.36 * pace))),
           (eased) => {
             scroller.scrollTop = start + change * eased;
-            const live = pointOf(selector);
-            if (live) lastLive = live;
-            const aim = lastLive ?? { x: origin.x, y: origin.y + Math.sign(change) * 72 };
-            setCursorAt({
-              x: origin.x + (aim.x - origin.x) * eased,
-              y: origin.y + (aim.y - origin.y) * eased,
-            });
           },
         );
         await flush();
@@ -408,7 +397,8 @@ export function useDemoPlayer(
       lastSelector = selector;
       await settleOn(selector);
       if (cancelled) return;
-      await wait(dwell);
+      // How it works clicks on arrival. A rest here is the freeze before the press.
+      if (!cinematic) await wait(dwell);
     };
 
     const reveal = async (selector: string) => {
@@ -430,17 +420,23 @@ export function useDemoPlayer(
       // does not finish on a sheet or card that just replaced the target.
       setClicking(true);
       await flush();
-      // How it works keeps the press visible, without the long freeze a stretched wait adds.
-      await wait(cinematic ? 70 : 110);
+      // A short tap on the How it works pointer. The news demos keep the longer press.
+      if (cinematic) await sleep(80);
+      else await wait(110);
       if (cancelled) {
         setClicking(false);
         return;
       }
       onPress?.();
       await flush();
-      await wait(cinematic ? 24 : 40);
+      if (cinematic) {
+        // How it works: the press is the click. The next move starts at once.
+        setClicking(false);
+        return;
+      }
+      await wait(40);
       setClicking(false);
-      await wait(cinematic ? 20 : 30);
+      await wait(30);
     };
 
     const snapTo = (selector: string) => {

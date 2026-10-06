@@ -42,7 +42,7 @@ export function CourseMathDemo({
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
-    await api.wait(80);
+    await api.wait(180);
     setTimed(false);
     setCalc(false);
     setMarks({});
@@ -51,43 +51,35 @@ export function CourseMathDemo({
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(80);
+    await api.wait(200);
 
     await api.moveTo('[data-d="timed"]');
     await api.click(() => setTimed(true));
-    await api.wait(70);
 
     await api.moveTo('[data-d="calc"]');
     await api.click(() => setCalc(true));
-    await api.wait(70);
     await parkCalcKeys(api, KEYS);
     for (const key of KEYS) {
       if (api.cancelled()) return;
       await pressCalcKey(api, key);
-      await api.wait(50);
     }
-    await api.wait(100);
     await api.moveTo('[data-d="calc"]');
     await api.click(() => setCalc(false));
-    await api.wait(70);
 
     for (const i of markAt) {
       if (api.cancelled()) return;
       await api.moveTo(`[data-d="m${i}"]`);
       await api.click(() => setMarks((m) => ({ ...m, [i]: true })));
-      await api.wait(50);
     }
 
     await api.moveTo('[data-d="submit"]');
     await api.click(() => setChecked(true));
-    await api.wait(70);
 
     await api.moveTo('[data-d="expl"]');
     await api.click(() => {
       setExpl(true);
       setActive(0);
     });
-    await api.wait(40);
     await readPanel(api, '[data-d="expl-scroll"]');
     await api.wait(200);
   }, [markAt, rest], { rest, glideScale: howItWorksGlide(rest) });

@@ -15,7 +15,7 @@ const WisoHowItWorksDemo = lazy(() =>
   import("@/components/how-it-works/WisoLiveDemos").then((m) => ({ default: m.WisoHowItWorksDemo })),
 );
 
-const BBE_REST = 2.15;
+const BBE_REST = 2;
 import { useLanguage } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 

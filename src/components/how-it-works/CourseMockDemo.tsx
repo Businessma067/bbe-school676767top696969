@@ -133,7 +133,7 @@ export function CourseMockDemo({
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
       setFade(true);
-      await api.wait(80);
+      await api.wait(140);
       setExpanded({});
       setSelected([]);
       setQuestionCount(10);
@@ -145,12 +145,11 @@ export function CourseMockDemo({
       setMarks({});
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(100);
+      await api.wait(240);
       if (!chapter || picks.length < 4) return;
 
       await api.moveTo(`[data-d="ch-${chapter.num}"]`, DWELL);
       await api.click(() => setExpanded({ [chapter.num]: true }));
-      await api.wait(70);
 
       for (const topic of picks) {
         if (api.cancelled()) return;
@@ -158,9 +157,7 @@ export function CourseMockDemo({
         await api.click(() =>
           setSelected((prev) => (prev.includes(topic.id) ? prev : [...prev, topic.id])),
         );
-        await api.wait(50);
       }
-      await api.wait(40);
 
       await api.moveTo('[data-d="count"]', DWELL);
       await api.click();
@@ -170,7 +167,6 @@ export function CourseMockDemo({
         await api.wait(110);
       }
       setQuestionCount(12);
-      await api.wait(70);
 
       const path: Vec2[] = [
         { x: 0.26, y: -0.2 },
@@ -198,11 +194,9 @@ export function CourseMockDemo({
 
       await api.moveTo('[data-d="build"]', DWELL);
       await api.click(() => setBuilding(true));
-      await api.wait(420);
       setBuilding(false);
       setDialog(true);
       await api.flush();
-      await api.wait(80);
       await api.moveTo('[data-d="start"]', DWELL);
       await api.click(() => {
         setDialog(false);
@@ -220,7 +214,6 @@ export function CourseMockDemo({
         if (api.cancelled()) return;
         await api.moveTo(`[data-d="q${index}"]`, DWELL);
         await api.click(() => setMarks((prev) => ({ ...prev, [index]: true })));
-        await api.wait(50);
       }
       await api.wait(280);
     },
