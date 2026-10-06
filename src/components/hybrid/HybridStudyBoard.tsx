@@ -63,13 +63,10 @@ export function HybridStudyBoard() {
   return (
     <section className="mb-14 grid gap-4 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
       <div
-        className="rounded-2xl border border-border bg-card p-5"
+        className="rounded-2xl border border-border bg-card p-5 shadow-sm"
         style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
       >
-        <p
-          className="text-xs font-semibold uppercase tracking-[0.16em]"
-          style={{ color: HYBRID_ACCENT }}
-        >
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           Twin readiness
         </p>
         <div className="mt-3 grid grid-cols-2 gap-4">
@@ -93,9 +90,9 @@ export function HybridStudyBoard() {
         </p>
       </div>
 
-      <div className="rounded-2xl border border-border bg-card p-5">
+      <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
         <div className="flex items-baseline justify-between gap-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
             Today
           </p>
           <p className="text-xs text-muted-foreground">

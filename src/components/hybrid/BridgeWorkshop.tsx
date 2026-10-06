@@ -63,8 +63,11 @@ function SidePlayer({
   onToggle: (index: number, value: boolean) => void;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-5">
-      <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: accent }}>
+    <div
+      className="rounded-2xl border border-border bg-card p-5 shadow-sm"
+      style={{ borderTop: `4px solid ${accent}` }}
+    >
+      <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: accent }}>
         {label}
       </p>
       <p className="mt-2 text-sm leading-relaxed text-foreground">{side.stem}</p>
@@ -156,11 +159,11 @@ export function BridgeWorkshop({
   return (
     <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
       <aside className="lg:sticky lg:top-24 lg:max-h-[calc(100svh-7rem)] lg:overflow-y-auto">
-        <div className="rounded-2xl border border-border bg-card p-4">
-          <p
-            className="text-xs font-semibold uppercase tracking-[0.16em]"
-            style={{ color: HYBRID_ACCENT }}
-          >
+        <div
+          className="rounded-2xl border border-border bg-card p-4 shadow-sm"
+          style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
+        >
+          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
             Library
           </p>
           <p className="mt-1 font-display text-lg font-semibold">
@@ -280,14 +283,11 @@ function LibraryIntro({
   onOpen: (id: string) => void;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-6">
-      <p
-        className="text-xs font-semibold uppercase tracking-[0.16em]"
-        style={{ color: HYBRID_ACCENT }}
-      >
-        How a case works
-      </p>
-      <h2 className="mt-2 font-display text-2xl font-semibold">One concept, two papers</h2>
+    <div
+      className="rounded-2xl border border-border bg-card p-6 shadow-sm"
+      style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
+    >
+      <h2 className="font-display text-2xl font-semibold">One concept, two papers</h2>
       <ol className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
         <li>1. Read the English stem and mark every statement true or false.</li>
         <li>
@@ -305,8 +305,11 @@ function LibraryIntro({
         <button
           type="button"
           onClick={() => onOpen(nextId)}
-          className="mt-5 inline-flex items-center rounded-md px-4 py-2.5 text-sm font-semibold text-white"
-          style={{ backgroundColor: HYBRID_ACCENT }}
+          className="mt-5 inline-flex items-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+          style={{
+            backgroundColor: HYBRID_ACCENT,
+            boxShadow: `0 4px 14px -4px ${HYBRID_ACCENT}80`,
+          }}
         >
           {cleared > 0 ? "Continue the next open case" : "Start the first case"}
           <ChevronRight className="ml-1 h-4 w-4" />
@@ -415,11 +418,11 @@ function CasePlayer({
         </ul>
       ) : null}
 
-      <div className="mb-4 flex gap-2">
+      <div className="mb-4 flex flex-wrap gap-2">
         {(
           [
-            ["bbe", "1 · BBE English", BBE],
-            ["wiso", "2 · WiSo German", WISO],
+            ["bbe", "BBE", BBE],
+            ["wiso", "WiSo", WISO],
           ] as const
         ).map(([key, label, color]) => (
           <button
@@ -427,10 +430,12 @@ function CasePlayer({
             type="button"
             onClick={() => setStage(key)}
             className={cn(
-              "rounded-md px-4 py-2 text-sm font-semibold",
-              stage === key ? "text-white" : "border border-border bg-card",
+              "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all",
+              stage === key
+                ? "text-white shadow-md"
+                : "border-border bg-card text-muted-foreground hover:border-foreground/30 hover:text-foreground",
             )}
-            style={stage === key ? { backgroundColor: color } : undefined}
+            style={stage === key ? { backgroundColor: color, borderColor: color } : undefined}
           >
             {label}
           </button>

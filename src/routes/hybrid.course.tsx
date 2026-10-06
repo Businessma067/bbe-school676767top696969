@@ -264,8 +264,8 @@ function HybridCoursePage() {
               Hybrid Course
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Shared math counts once, in English, German, or both at the same time. The hybrid
-              paper leans toward BBE, half, or WiSo. Bridge cases and both full libraries sit
+              Shared math counts once. One task at a time: BBE, then WiSo, or the reverse. The
+              hybrid paper follows the focus you pick. Bridge cases and both full libraries sit
               underneath.
             </p>
           </div>
