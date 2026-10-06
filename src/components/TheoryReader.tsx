@@ -274,15 +274,34 @@ export function TheoryArticle({
   markdown,
   enableMath = true,
   dense = true,
+  onReady,
 }: {
   markdown: string;
   enableMath?: boolean;
   dense?: boolean;
+  onReady?: () => void;
 }) {
   const segments = useMemo(() => segmentTheory(markdown), [markdown]);
+  const [count, setCount] = useState(() => Math.min(2, segments.length));
+  useEffect(() => {
+    let shown = Math.min(2, segments.length);
+    setCount(shown);
+    if (shown >= segments.length) return;
+    let timer: ReturnType<typeof setTimeout>;
+    const pump = () => {
+      shown = Math.min(shown + 2, segments.length);
+      setCount(shown);
+      if (shown < segments.length) timer = setTimeout(pump, 16);
+    };
+    timer = setTimeout(pump, 16);
+    return () => clearTimeout(timer);
+  }, [segments]);
+  useEffect(() => {
+    if (count >= segments.length) onReady?.();
+  }, [count, segments.length, onReady]);
   return (
     <>
-      {segments.map((seg, i) => {
+      {segments.slice(0, count).map((seg, i) => {
         if (seg.kind === "figure") {
           return <TheoryFigure key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />;
         }

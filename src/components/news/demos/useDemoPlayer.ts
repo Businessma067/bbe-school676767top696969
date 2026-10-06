@@ -45,6 +45,14 @@ const flowEase = (t: number) => {
 const MAX_FRAME_MS = 34;
 
 /**
+ * How it works pointer, just under the Welcome news demo.
+ * News keeps the default scale. The same ease, a slightly lower speed.
+ */
+export function howItWorksGlide(rest = 1) {
+  return rest > 1 ? 3.54 : 2;
+}
+
+/**
  * Shared rAF cursor loop used by news unique demos.
  * Matches MockBuilderSimulator smoothness: DOM transform cursor, visibility pause, eased tweens.
  */
@@ -52,7 +60,7 @@ export function useDemoPlayer(
   run: (api: DemoPlayerApi) => Promise<void>,
   deps: unknown[] = [],
   /** `flow` is the study-tool pace: steady travel, a short click, then the next move. */
-  options?: { pace?: number; flow?: boolean; rest?: number },
+  options?: { pace?: number; flow?: boolean; rest?: number; glideScale?: number },
 ): {
   stageRef: RefObject<HTMLDivElement | null>;
   scrollRef: RefObject<HTMLDivElement | null>;
@@ -73,8 +81,10 @@ export function useDemoPlayer(
   const rest = options?.rest ?? 1;
   const cinematic = rest > 1;
   const ease = flow ? flowEase : pace > 1 ? smootherStep : easeInOut;
-  const glidePxPerMs = cinematic ? 0.2 * pace : 0.32 * pace;
-  const glideMinMs = cinematic ? Math.max(480, 560 / pace) : Math.max(200, 320 / pace);
+  const glideScale = options?.glideScale ?? 2.2;
+  const glidePxPerMs = (cinematic ? 0.25 * pace : 0.38 * pace) * glideScale;
+  const glideMinMs =
+    (cinematic ? Math.max(380, 440 / pace) : Math.max(180, 280 / pace)) / glideScale;
 
   useEffect(() => {
     const el = stageRef.current;
@@ -94,7 +104,9 @@ export function useDemoPlayer(
     const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
     const wait = async (ms: number) => {
-      await sleep(cinematic ? ms * rest : ms);
+      // Do not stretch these gaps. The pointer's speed is already set, and a
+      // multiplied pause reads as the hand stopping between controls.
+      await sleep(ms);
       while (!cancelled && !visibleRef.current) await sleep(200);
     };
 
@@ -315,10 +327,19 @@ export function useDemoPlayer(
         const next = Math.max(0, Math.min(start + delta, max));
         if (Math.abs(next - start) < 2) continue;
         const change = next - start;
+        const origin = { ...cursorPos.current };
+        let lastLive = pointOf(selector);
         await tween(
-          Math.max(glideMinMs, Math.min(1400, Math.abs(change) / (0.36 * pace))),
+          Math.max(glideMinMs, Math.min(640, Math.abs(change) / (0.9 * pace))),
           (eased) => {
             scroller.scrollTop = start + change * eased;
+            const live = pointOf(selector);
+            if (live) lastLive = live;
+            const aim = lastLive ?? { x: origin.x, y: origin.y + Math.sign(change) * 72 };
+            setCursorAt({
+              x: origin.x + (aim.x - origin.x) * eased,
+              y: origin.y + (aim.y - origin.y) * eased,
+            });
           },
         );
         await flush();
@@ -387,7 +408,7 @@ export function useDemoPlayer(
       lastSelector = selector;
       await settleOn(selector);
       if (cancelled) return;
-      await wait(cinematic ? Math.max(dwell, 160) : dwell);
+      await wait(dwell);
     };
 
     const reveal = async (selector: string) => {
@@ -409,16 +430,17 @@ export function useDemoPlayer(
       // does not finish on a sheet or card that just replaced the target.
       setClicking(true);
       await flush();
-      await wait(110);
+      // How it works keeps the press visible, without the long freeze a stretched wait adds.
+      await wait(cinematic ? 70 : 110);
       if (cancelled) {
         setClicking(false);
         return;
       }
       onPress?.();
       await flush();
-      await wait(40);
+      await wait(cinematic ? 24 : 40);
       setClicking(false);
-      await wait(30);
+      await wait(cinematic ? 20 : 30);
     };
 
     const snapTo = (selector: string) => {

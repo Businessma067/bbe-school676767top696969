@@ -17,50 +17,137 @@ import { formatExamTime, formatQuestionTime } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
-import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { glideFrame, glideRead } from "./course-motion";
 
 const DWELL = 40;
 const EXAM_SECONDS = 2 * 60 * 60;
-const QUESTIONS = buildMockExam1Questions();
-const ENGLISH_AT = QUESTIONS.findIndex((question) => question.subject === "english");
-const MATH_AT = QUESTIONS.findIndex((question) => question.subject === "math");
-const SHOW = [0, ENGLISH_AT, MATH_AT] as const;
+const BBE_QUESTIONS = buildMockExam1Questions();
 
 /**
  * A finished 34-question sitting. Reading runs longer than a short case,
  * grammar is quicker, and a few math items take the most time.
  */
-const TIMES = [
+const EXAM_TIMES = [
   128, 152, 114, 176, 139, 163, 102, 192, 133, 147, 246, 268, 214, 287, 233, 122, 101, 134, 111,
   144, 118, 214, 248, 192, 286, 231, 180, 322, 218, 254, 201, 268, 175, 234,
 ] as const;
 
-if (TIMES.length !== QUESTIONS.length) {
+if (EXAM_TIMES.length !== BBE_QUESTIONS.length) {
   throw new Error("Mock exam demo needs one time for every question");
 }
 
-const TIME_TAKEN = TIMES.reduce((sum, seconds) => sum + seconds, 0);
-const REMAINING = EXAM_SECONDS - TIME_TAKEN;
+export type MockExamDemoCopy = {
+  locale: "en" | "de";
+  examTitle: string;
+  question: (index: number, total: number) => string;
+  thisQuestion: string;
+  questionsHeading: string;
+  flag: string;
+  flagShort: string;
+  previous: string;
+  next: string;
+  finish: string;
+  review: string;
+  sheet: string;
+  sheetShort: string;
+  calc: string;
+  calcShort: string;
+  notes: string;
+  notesShort: string;
+  draw: string;
+  drawShort: string;
+  overviewHint: string;
+  backLabel: string;
+  navTrack: "bbe" | "wiso";
+};
+
+const EN_EXAM: MockExamDemoCopy = {
+  locale: "en",
+  examTitle: "Mock Exam 1",
+  question: (index, total) => `Question ${index} / ${total}`,
+  thisQuestion: "This question",
+  questionsHeading: "Questions",
+  flag: "Flag for review",
+  flagShort: "Flag",
+  previous: "Previous",
+  next: "Next",
+  finish: "Finish exam",
+  review: "Review",
+  sheet: "Answer Sheet",
+  sheetShort: "Sheet",
+  calc: "Calculator",
+  calcShort: "Calc",
+  notes: "Notes",
+  notesShort: "Notes",
+  draw: "Draw",
+  drawShort: "Draw",
+  overviewHint: "Score overview, or tasks with answers and explanations.",
+  backLabel: "← All mock exams",
+  navTrack: "bbe",
+};
+
+export const DE_MOCK_EXAM_COPY: MockExamDemoCopy = {
+  locale: "de",
+  examTitle: "WiSo Mock Exam 1",
+  question: (index, total) => `Aufgabe ${index} / ${total}`,
+  thisQuestion: "Diese Aufgabe",
+  questionsHeading: "Aufgaben",
+  flag: "Zur Überprüfung markieren",
+  flagShort: "Markieren",
+  previous: "Zurück",
+  next: "Weiter",
+  finish: "Prüfung beenden",
+  review: "Prüfen",
+  sheet: "Antwortbogen",
+  sheetShort: "Bogen",
+  calc: "Rechner",
+  calcShort: "Rechner",
+  notes: "Notizen",
+  notesShort: "Notizen",
+  draw: "Zeichnen",
+  drawShort: "Stift",
+  overviewHint: "Ergebnisübersicht oder Aufgaben mit Lösungen und Erklärungen.",
+  backLabel: "← Alle Probeprüfungen",
+  navTrack: "wiso",
+};
+
 const EMPTY_MARKS = [false, false, false, false, false];
 const NO_FLAGS = new Set<string>();
-const GUEST_NAV = guestNavItems("bbe");
 
 function trueIndexes(question: ExamQuestion): number[] {
   return question.statements.flatMap((statement, index) => (statement.isTrue ? [index] : []));
 }
 
-function completedAnswers(): Record<string, boolean[]> {
+function completedAnswers(list: ExamQuestion[]): Record<string, boolean[]> {
   return Object.fromEntries(
-    QUESTIONS.map((question) => [
+    list.map((question) => [
       question.id,
       question.statements.map((statement) => statement.isTrue),
     ]),
   );
 }
 
-const COMPLETED = completedAnswers();
+/** Same walk: first case, first language item, first math item, then chapter 11. */
+function paperPlan(list: ExamQuestion[]) {
+  const languageAt = list.findIndex(
+    (question) => question.subject === "english" || question.subject === "german",
+  );
+  const mathAt = list.findIndex((question) => question.subject === "math");
+  const byChapter = list.findIndex(
+    (question) => question.subject === "math" && (question.subtopicTag ?? "").startsWith("#11"),
+  );
+  const byNumber = list.findIndex((question) => question.index === 32);
+  const derivAt = byChapter >= 0 ? byChapter : byNumber >= 0 ? byNumber : Math.max(0, mathAt);
+  const show = [...new Set([0, languageAt, mathAt].filter((index) => index >= 0))];
+  const times: readonly number[] =
+    list.length === EXAM_TIMES.length
+      ? EXAM_TIMES
+      : Array.from({ length: list.length }, (_, i) => EXAM_TIMES[i] ?? 180);
+  const timeTaken = times.reduce((sum, seconds) => sum + seconds, 0);
+  return { show, derivAt, times, timeTaken, remaining: EXAM_SECONDS - timeTaken };
+}
 
 type Phase = "exam" | "check" | "stats" | "tasks";
 
@@ -68,40 +155,50 @@ type Phase = "exam" | "check" | "stats" | "tasks";
 export function CourseMockExamDemo({
   rest = 1,
   lockCopy = false,
-}: { rest?: number; lockCopy?: boolean } = {}) {
+  questions = BBE_QUESTIONS,
+  copy = EN_EXAM,
+}: {
+  rest?: number;
+  lockCopy?: boolean;
+  questions?: ExamQuestion[];
+  copy?: MockExamDemoCopy;
+} = {}) {
+  const plan = useMemo(() => paperPlan(questions), [questions]);
+  const completed = useMemo(() => completedAnswers(questions), [questions]);
+  const guestNav = useMemo(() => guestNavItems(copy.navTrack), [copy.navTrack]);
   const [phase, setPhase] = useState<Phase>("exam");
   const [index, setIndex] = useState(0);
   const [marks, setMarks] = useState<Record<string, boolean[]>>({});
-  const [visited, setVisited] = useState<Set<string>>(() => new Set([QUESTIONS[0]!.id]));
+  const [visited, setVisited] = useState<Set<string>>(() => new Set([questions[0]!.id]));
   const [taskIndex, setTaskIndex] = useState(0);
 
   const openQuestion = (next: number) => {
     setIndex(next);
     setVisited((prev) => {
-      const id = QUESTIONS[next]?.id;
+      const id = questions[next]?.id;
       if (!id || prev.has(id)) return prev;
-      const copy = new Set(prev);
-      copy.add(id);
-      return copy;
+      const nextVisited = new Set(prev);
+      nextVisited.add(id);
+      return nextVisited;
     });
   };
 
   const openReview = () => {
-    setMarks(COMPLETED);
+    setMarks(completed);
     setPhase("check");
   };
 
   const analytics = useMemo(
     () =>
-      buildExamAnalytics(QUESTIONS, {
-        answers: phase === "exam" ? marks : COMPLETED,
+      buildExamAnalytics(questions, {
+        answers: phase === "exam" ? marks : completed,
         timed: true,
-        secondsTaken: TIME_TAKEN,
+        secondsTaken: plan.timeTaken,
         timeByQuestion: Object.fromEntries(
-          QUESTIONS.map((question, i) => [question.id, TIMES[i] ?? 0]),
+          questions.map((question, i) => [question.id, plan.times[i] ?? 0]),
         ),
       }),
-    [marks, phase],
+    [completed, marks, phase, plan.timeTaken, plan.times, questions],
   );
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
@@ -110,19 +207,19 @@ export function CourseMockExamDemo({
     };
 
     setFade(true);
-    await api.wait(140);
+    await api.wait(80);
     setPhase("exam");
     setIndex(0);
     setMarks({});
-    setVisited(new Set([QUESTIONS[0]!.id]));
+    setVisited(new Set([questions[0]!.id]));
     setTaskIndex(0);
     resetScroll();
     setFade(false);
-    await api.wait(260);
+    await api.wait(100);
 
-    for (let step = 0; step < SHOW.length; step++) {
+    for (let step = 0; step < plan.show.length; step++) {
       if (api.cancelled()) return;
-      const at = SHOW[step]!;
+      const at = plan.show[step]!;
       if (step > 0) {
         await api.moveTo(`[data-q="${at + 1}"]`, DWELL);
         await api.click(() => openQuestion(at));
@@ -130,7 +227,7 @@ export function CourseMockExamDemo({
         resetScroll();
         await api.wait(70);
       }
-      const question = QUESTIONS[at]!;
+      const question = questions[at]!;
       for (const statement of trueIndexes(question)) {
         if (api.cancelled()) return;
         await api.moveTo(`[data-d="m${statement}"]`, DWELL);
@@ -159,23 +256,26 @@ export function CourseMockExamDemo({
     await glideFrame(api, '[data-d^="stat"], [data-d="time-chart"]');
     await api.wait(80);
     await api.moveTo('[data-d="tasks"]', DWELL);
-    await api.click(() => setPhase("tasks"));
+    await api.click(() => {
+      setTaskIndex(plan.derivAt);
+      setPhase("tasks");
+    });
     await api.flush();
     resetScroll();
-    await api.wait(70);
+    await api.wait(90);
     await api.moveTo('[data-d="prose0"]', 40);
     await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
     await api.wait(280);
-  }, [rest], { rest });
+  }, [rest, questions], { rest, glideScale: howItWorksGlide(rest) });
 
-  const question = QUESTIONS[index] ?? QUESTIONS[0]!;
+  const question = questions[index] ?? questions[0]!;
   const currentMarks = marks[question.id] ?? EMPTY_MARKS;
   const meta = SUBJECT_META[question.subject];
-  const subjectName = subjectLabel(question.subject);
-  const isLast = index === QUESTIONS.length - 1;
-  const secondsLeft = REMAINING;
+  const subjectName = subjectLabel(question.subject, copy.locale);
+  const isLast = index === questions.length - 1;
+  const secondsLeft = plan.remaining;
   const timerWarn = secondsLeft < 5 * 60 ? "critical" : secondsLeft < 15 * 60 ? "warn" : null;
-  const questionSeconds = TIMES[index] ?? 0;
+  const questionSeconds = plan.times[index] ?? 0;
   const currentTask = analytics.tasks[taskIndex] ?? null;
 
   return (
@@ -196,7 +296,7 @@ export function CourseMockExamDemo({
           >
             <div className={PRACTICE_HEADER_INNER} data-exam-fit="header">
               <div className="flex min-w-0 items-center gap-3">
-                <h1 className="truncate font-display text-base font-bold">Mock Exam 1</h1>
+                <h1 className="truncate font-display text-base font-bold">{copy.examTitle}</h1>
                 <span
                   className={`hidden rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest sm:inline ${meta.badgeClass}`}
                 >
@@ -205,7 +305,7 @@ export function CourseMockExamDemo({
               </div>
               <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <span data-exam-fit="count" className="text-sm tabular-nums text-muted-foreground">
-                  Question {index + 1} / {QUESTIONS.length}
+                  {copy.question(index + 1, questions.length)}
                 </span>
                 <span
                   className={cn(
@@ -228,7 +328,7 @@ export function CourseMockExamDemo({
                   onClick={openReview}
                   className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
                 >
-                  Review
+                  {copy.review}
                 </button>
                 <span data-exam-fit="auth" className="inline-flex items-center gap-2">
                   <ThemeToggle />
@@ -246,7 +346,7 @@ export function CourseMockExamDemo({
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">{subjectName}</p>
                 <p className="mt-3 text-xs tabular-nums text-muted-foreground">
-                  This question · {formatQuestionTime(questionSeconds)}
+                  {copy.thisQuestion} · {formatQuestionTime(questionSeconds)}
                 </p>
                 <button
                   type="button"
@@ -254,14 +354,14 @@ export function CourseMockExamDemo({
                   className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold transition-colors hover:bg-secondary"
                 >
                   <Flag className="h-3.5 w-3.5 text-taupe" />
-                  Flag for review
+                  {copy.flag}
                 </button>
               </div>
 
               <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-                <h2 className="mb-3 font-display text-sm font-semibold">Questions</h2>
+                <h2 className="mb-3 font-display text-sm font-semibold">{copy.questionsHeading}</h2>
                 <QuestionPalette
-                  questions={QUESTIONS}
+                  questions={questions}
                   currentIndex={index}
                   answers={marks}
                   flagged={NO_FLAGS}
@@ -276,7 +376,8 @@ export function CourseMockExamDemo({
               <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm lg:hidden">
                 <div className="mb-2 flex items-center justify-between gap-2">
                   <span className="text-sm font-medium text-muted-foreground">
-                    Q{question.index} · {subjectName} · {formatQuestionTime(questionSeconds)}
+                    {copy.locale === "de" ? "A" : "Q"}
+                    {question.index} · {subjectName} · {formatQuestionTime(questionSeconds)}
                   </span>
                   <button
                     type="button"
@@ -284,11 +385,11 @@ export function CourseMockExamDemo({
                     className="inline-flex items-center gap-1.5 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold hover:bg-secondary"
                   >
                     <Flag className="h-3 w-3 text-taupe" />
-                    Flag
+                    {copy.flagShort}
                   </button>
                 </div>
                 <QuestionPalette
-                  questions={QUESTIONS}
+                  questions={questions}
                   currentIndex={index}
                   answers={marks}
                   flagged={NO_FLAGS}
@@ -354,7 +455,7 @@ export function CourseMockExamDemo({
                   onClick={() => openQuestion(index - 1)}
                   className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-all hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
                 >
-                  Previous
+                  {copy.previous}
                 </button>
                 {isLast ? (
                   <button
@@ -362,7 +463,7 @@ export function CourseMockExamDemo({
                     onClick={openReview}
                     className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
                   >
-                    Finish exam
+                    {copy.finish}
                   </button>
                 ) : (
                   <button
@@ -370,7 +471,7 @@ export function CourseMockExamDemo({
                     onClick={() => openQuestion(index + 1)}
                     className="rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
                   >
-                    Next
+                    {copy.next}
                   </button>
                 )}
               </nav>
@@ -381,16 +482,16 @@ export function CourseMockExamDemo({
               data-exam-fit="rail"
               className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:inset-auto lg:bottom-auto lg:top-[4.5rem] lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none"
             >
-              <ToolRailButton label="Answer Sheet" short="Sheet">
+              <ToolRailButton label={copy.sheet} short={copy.sheetShort}>
                 <FileSpreadsheet className="h-5 w-5" />
               </ToolRailButton>
-              <ToolRailButton label="Calculator" short="Calc">
+              <ToolRailButton label={copy.calc} short={copy.calcShort}>
                 <Calculator className="h-5 w-5" />
               </ToolRailButton>
-              <ToolRailButton label="Notes" short="Notes">
+              <ToolRailButton label={copy.notes} short={copy.notesShort}>
                 <StickyNote className="h-5 w-5" />
               </ToolRailButton>
-              <ToolRailButton label="Draw" short="Draw">
+              <ToolRailButton label={copy.draw} short={copy.drawShort}>
                 <PenLine className="h-5 w-5" />
               </ToolRailButton>
             </aside>
@@ -401,13 +502,14 @@ export function CourseMockExamDemo({
       {phase === "check" ? (
         <div className="min-h-dvh bg-background font-sans text-foreground antialiased">
           <ExamReviewScreen
-            questions={QUESTIONS}
+            questions={questions}
             answers={marks}
             flagged={NO_FLAGS}
             usesAnswerSheet
             onJump={openQuestion}
             onSubmit={() => setPhase("stats")}
             onBack={() => setPhase("exam")}
+            locale={copy.locale}
           />
         </div>
       ) : null}
@@ -418,14 +520,23 @@ export function CourseMockExamDemo({
             <SiteHeader
               sticky={false}
               maxWidthClassName="max-w-none"
-              navItems={GUEST_NAV}
+              navItems={guestNav}
               actions={
-                <Link
-                  to="/mock-exams"
-                  className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
-                >
-                  ← All mock exams
-                </Link>
+                copy.navTrack === "wiso" ? (
+                  <Link
+                    to="/wiso/mock-exams"
+                    className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+                  >
+                    {copy.backLabel}
+                  </Link>
+                ) : (
+                  <Link
+                    to="/mock-exams"
+                    className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+                  >
+                    {copy.backLabel}
+                  </Link>
+                )
               }
             />
           </div>
@@ -436,24 +547,25 @@ export function CourseMockExamDemo({
             >
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  Mock Exam 1
+                  {copy.examTitle}
                 </p>
                 <p data-exam-fit="viewbar-copy" className="mt-0.5 text-sm text-muted-foreground">
-                  Score overview, or tasks with answers and explanations.
+                  {copy.overviewHint}
                 </p>
               </div>
               <ReviewViewToggle
                 showTaskReview={phase === "tasks"}
                 onShowResults={() => setPhase("stats")}
                 onShowTasks={() => setPhase("tasks")}
-                de={false}
+                de={copy.locale === "de"}
                 tasksAnchor="tasks"
               />
             </div>
             {phase === "stats" ? (
               <ExamResultOverview
-                examTitle="Mock Exam 1"
+                examTitle={copy.examTitle}
                 analytics={analytics}
+                locale={copy.locale}
                 onOpenTask={(next) => {
                   setTaskIndex(next);
                   setPhase("tasks");
@@ -466,6 +578,7 @@ export function CourseMockExamDemo({
                 onNavigate={setTaskIndex}
                 onBackToResults={() => setPhase("stats")}
                 explanationAnchors
+                locale={copy.locale}
               />
             ) : null}
           </main>

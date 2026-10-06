@@ -4,7 +4,7 @@ import {
   practiceSubmitButtonClass,
 } from "@/lib/practice-button-styles";
 import { DemoStatementTable, demoCorrectCount } from "@/components/news/demos/DemoStatementTable";
-import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { CoursePassage, CourseSolution } from "./CourseSolution";
 import { scrollPanelTo } from "./course-motion";
@@ -47,7 +47,7 @@ export function CourseEnglishDemo({
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
-    await api.wait(180);
+    await api.wait(80);
     setMarks({});
     setChecked(false);
     setExpl(false);
@@ -55,7 +55,7 @@ export function CourseEnglishDemo({
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(200);
+    await api.wait(80);
 
     for (const i of markAt) {
       if (api.cancelled()) return;
@@ -70,7 +70,7 @@ export function CourseEnglishDemo({
 
     await api.moveTo('[data-d="expl"]');
     await api.click(() => setExpl(true));
-    await api.wait(rest > 1 ? 420 : 80);
+    await api.wait(40);
 
     await scrollPanelTo(api, '[data-d="expl-scroll"]', '[data-d="show"]');
     await api.moveTo('[data-d="show"]');
@@ -78,8 +78,8 @@ export function CourseEnglishDemo({
     await api.click(() => setShown(true));
     await api.wait(70);
     await api.moveTo('[data-d="line"]');
-    await api.wait(rest > 1 ? 520 : 400);
-  }, [markAt, rest, showAt], { rest });
+    await api.wait(rest > 1 ? 240 : 400);
+  }, [markAt, rest, showAt], { rest, glideScale: howItWorksGlide(rest) });
 
   const score = demoCorrectCount(marks, task.answerKey);
 
