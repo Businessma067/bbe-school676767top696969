@@ -60,10 +60,14 @@ export function CourseSolution({
       >
         <div
           data-d="expl-scroll"
+          data-math-sheet={math ? "" : undefined}
           className="practice-scroll h-full overflow-y-auto border-l border-border bg-card p-4 shadow-2xl sm:p-5"
         >
           <div data-glide-inner>
-          <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
+          <p
+            data-d={math ? "read-start" : undefined}
+            className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary"
+          >
             {chrome.sheetTitle}
           </p>
           <section className="mb-3 overflow-x-auto border-b border-border/60 pb-3">
@@ -98,7 +102,7 @@ export function CourseSolution({
             </table>
           </section>
           {overview ? (
-            <div className="mb-4 text-[13px] leading-relaxed text-foreground/90">
+            <div data-math-block className="mb-4 text-[13px] leading-relaxed text-foreground/90">
               <FlashcardMath text={overview} />
             </div>
           ) : null}

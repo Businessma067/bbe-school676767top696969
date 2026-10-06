@@ -146,6 +146,10 @@ async function glideWithPointer(
   hold = false,
 ) {
   const inner = panel.querySelector<HTMLElement>("[data-glide-inner]");
+  // A math sheet is a tall KaTeX layer. Moving it whole misses frames.
+  // Scroll the viewport instead, and let off-screen cards skip paint.
+  const mathSheet = panel.hasAttribute("data-math-sheet");
+  const layer = Boolean(inner) && !mathSheet;
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
   const originY = pr.top - sr.top;
@@ -153,13 +157,13 @@ async function glideWithPointer(
   const from = cursorFrom(stage);
   const blendUntil = performance.now() + 180;
   let lastSpot: { x: number; y: number } | null = null;
-  if (inner) {
+  if (layer && inner) {
     panel.style.overflow = "hidden";
     inner.style.willChange = "transform";
   }
   await api.tween(duration, (eased) => {
     const top = fromTop + (dest - fromTop) * eased;
-    if (inner) inner.style.transform = `translate3d(0, ${(-top).toFixed(2)}px, 0)`;
+    if (layer && inner) inner.style.transform = `translate3d(0, ${(-top).toFixed(2)}px, 0)`;
     else panel.scrollTop = top;
     const spot = handOnLine(anchors, top + viewMid, originY, top);
     if (!spot) return;
@@ -171,7 +175,7 @@ async function glideWithPointer(
       y: from.y + (spot.y - from.y) * e,
     });
   });
-  if (inner && !hold) {
+  if (layer && inner && !hold) {
     panel.scrollTop = dest;
     inner.style.transform = "";
     inner.style.willChange = "";
@@ -270,6 +274,30 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
 }
 
 /**
+ * Lock each math card and display formula, then skip paint for the ones
+ * outside the sheet. Heights stay put, so the two reading stops do not jump.
+ */
+function rememberMathCards(panel: HTMLElement) {
+  if (!panel.hasAttribute("data-math-sheet")) return;
+  const blocks = panel.querySelectorAll<HTMLElement>(
+    "[data-d^='card'], [data-math-block], .flashcard-math-display",
+  );
+  const sized: { el: HTMLElement; h: number }[] = [];
+  for (const block of blocks) {
+    if (block.dataset.paintReady) continue;
+    const h = block.offsetHeight;
+    if (h < 8) continue;
+    sized.push({ el: block, h });
+  }
+  for (const { el, h } of sized) {
+    el.style.height = `${h}px`;
+    el.style.contentVisibility = "auto";
+    el.style.containIntrinsicSize = `auto ${h}px`;
+    el.dataset.paintReady = "1";
+  }
+}
+
+/**
  * Steady read of a sheet. The pointer starts on the first line and stays
  * over the words while the sheet eases from top to bottom.
  */
@@ -282,13 +310,19 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string, stops
   if (inner) inner.style.transform = "";
   panel.scrollTop = 0;
   await api.flush();
-  await api.moveTo('[data-d="prose0"]', 40);
+  // A tall overview would be scrolled clear of the zoom control, then the
+  // read would jump back to the top. Aim at the short title instead.
+  await api.moveTo(
+    panel.hasAttribute("data-math-sheet") ? '[data-d="read-start"]' : '[data-d="prose0"]',
+    40,
+  );
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   if (max < 8) {
     await api.wait(200);
     return;
   }
   const anchors = captureReading(stage, panel);
+  rememberMathCards(panel);
   const legs = stops >= 2 && max > 48 ? [max * 0.46, max * 0.84] : [max];
   let from = 0;
   for (let i = 0; i < legs.length; i++) {
@@ -327,7 +361,8 @@ export async function scrollPanelTo(
   const next = Math.max(0, Math.min(start + delta, max));
   if (Math.abs(next - start) < 2) return;
   const travel = Math.abs(next - start);
-  const inner = panel.querySelector<HTMLElement>("[data-glide-inner]");
+  const mathSheet = panel.hasAttribute("data-math-sheet");
+  const inner = mathSheet ? null : panel.querySelector<HTMLElement>("[data-glide-inner]");
   if (inner) {
     panel.style.overflow = "hidden";
     inner.style.willChange = "transform";
