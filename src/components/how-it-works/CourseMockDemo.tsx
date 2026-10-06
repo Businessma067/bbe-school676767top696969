@@ -13,20 +13,104 @@ import { DemoStatementTable } from "@/components/news/demos/DemoStatementTable";
 import { formatExamTime } from "@/lib/mock-exam-session";
 import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
-import { MOCK_BUILDER_FIRST } from "./course-tasks";
+import { MOCK_BUILDER_FIRST, type CourseTask } from "./course-tasks";
 
 const ACCENT = "#E85D3A";
 const DWELL = 40;
-const FIRST = MOCK_BUILDER_FIRST;
-const TRUE_AT = FIRST.answerKey.flatMap((on, index) => (on ? [index] : []));
 const EXAM_SECONDS = 12 * CUSTOM_MOCK_MINUTES_PER_QUESTION * 60;
+
+export type MockBuilderChapter = {
+  num: number;
+  heading: string;
+  title: string;
+  subtopics: { id: string; title: string }[];
+};
+
+export type MockBuilderCopy = {
+  locale: "en" | "de";
+  badge: string;
+  subject: string;
+  heading: string;
+  hint: string;
+  countHeading: string;
+  countHint: (max: number, minutesEach: number) => string;
+  questionsLabel: string;
+  timedShort: (minutes: number) => string;
+  weightTitle: string;
+  building: string;
+  create: string;
+  dialogTitle: (chapterNum: number) => string;
+  dialogBody: (count: number, minutes: number, topics: number) => string;
+  timedStart: (minutes: number) => string;
+  untimed: string;
+  questionBadge: string;
+};
+
+const EN_BUILDER: MockBuilderCopy = {
+  locale: "en",
+  badge: "Custom Mock Builder",
+  subject: "Economics",
+  heading: "Select topics & subtopics",
+  hint: "Expand a chapter and tick sections. Topics appear as vertices on the right.",
+  countHeading: "Number of Questions",
+  countHint: (max, minutesEach) => `1–${max} for the whole mock · ${minutesEach} min each timed`,
+  questionsLabel: "Questions",
+  timedShort: (minutes) => `${minutes} min timed`,
+  weightTitle: "Topic Weight Selector",
+  building: "Building mock…",
+  create: "Create Economics Mock from Full Course",
+  dialogTitle: (chapterNum) => `Economics Mock · Chapter ${chapterNum}`,
+  dialogBody: (count, minutes, topics) =>
+    `${count} questions · ${minutes} minutes timed · ${topics} topics`,
+  timedStart: (minutes) => `Timed (${minutes} min)`,
+  untimed: "Untimed practice",
+  questionBadge: "Question 1 / 12",
+};
+
+export const DE_MOCK_BUILDER_COPY: MockBuilderCopy = {
+  locale: "de",
+  badge: "Mock-Builder",
+  subject: "Wirtschaft",
+  heading: "Themen & Unterkapitel",
+  hint: "Kapitel öffnen und Abschnitte anhaken. Gewählte Themen erscheinen rechts als Gewichte.",
+  countHeading: "Anzahl der Fragen",
+  countHint: (max, minutesEach) =>
+    `1–${max} für den gesamten Mock · ${minutesEach} Min. je Frage (mit Zeitlimit)`,
+  questionsLabel: "Fragen",
+  timedShort: (minutes) => `${minutes} Min. mit Zeitlimit`,
+  weightTitle: "Themengewichtung",
+  building: "Mock wird erstellt…",
+  create: "Wirtschaft-Mock aus dem Full Course erstellen",
+  dialogTitle: (chapterNum) => `Wirtschaft-Mock · Kapitel ${chapterNum}`,
+  dialogBody: (count, minutes, topics) =>
+    `${count} Fragen · ${minutes} Minuten mit Zeitlimit · ${topics} Unterkapitel`,
+  timedStart: (minutes) => `Mit Zeitlimit (${minutes} Min.)`,
+  untimed: "Ohne Zeitdruck üben",
+  questionBadge: "Aufgabe 1 / 12",
+};
 
 /** How it works · Mock Builder: four real subtopics, then the mix, a step quicker than Course. */
 export function CourseMockDemo({
   rest = 1,
   lockCopy = false,
-}: { rest?: number; lockCopy?: boolean } = {}) {
-  const chapters = useMemo(() => getCustomMockChapters("economics").slice(0, 3), []);
+  chapters: chaptersProp,
+  preview = MOCK_BUILDER_FIRST,
+  copy = EN_BUILDER,
+}: {
+  rest?: number;
+  lockCopy?: boolean;
+  chapters?: MockBuilderChapter[];
+  preview?: CourseTask;
+  copy?: MockBuilderCopy;
+} = {}) {
+  const chapters = useMemo(
+    () => chaptersProp ?? getCustomMockChapters("economics").slice(0, 3),
+    [chaptersProp],
+  );
+  const trueAt = useMemo(
+    () => preview.answerKey.flatMap((on, index) => (on ? [index] : [])),
+    [preview],
+  );
   const chapter = chapters[0];
   const picks = useMemo(() => chapter?.subtopics.slice(0, 4) ?? [], [chapter]);
 
@@ -132,7 +216,7 @@ export function CourseMockDemo({
       setFade(false);
       await api.wait(160);
 
-      for (const index of TRUE_AT) {
+      for (const index of trueAt) {
         if (api.cancelled()) return;
         await api.moveTo(`[data-d="q${index}"]`, DWELL);
         await api.click(() => setMarks((prev) => ({ ...prev, [index]: true })));
@@ -140,7 +224,7 @@ export function CourseMockDemo({
       }
       await api.wait(280);
     },
-    [chapter, picks, rest],
+    [chapter, picks, preview, rest, trueAt],
     { rest, glideScale: howItWorksGlide(rest) },
   );
 
@@ -157,11 +241,10 @@ export function CourseMockDemo({
           <div className="absolute inset-0 z-20 grid place-items-center bg-black/70 p-4">
             <div className="w-full max-w-sm rounded-2xl border border-border bg-card p-5 shadow-2xl">
               <p className="font-display text-base font-semibold">
-                Economics Mock · Chapter {chapter?.num ?? 2}
+                {copy.dialogTitle(chapter?.num ?? 2)}
               </p>
               <p className="mt-1 text-xs text-muted-foreground">
-                {questionCount} questions · {durationMinutes} minutes timed · {selected.length}{" "}
-                topics
+                {copy.dialogBody(questionCount, durationMinutes, selected.length)}
               </p>
               <div className="mt-4 grid gap-2">
                 <span
@@ -169,10 +252,10 @@ export function CourseMockDemo({
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-3 text-sm font-semibold text-background"
                 >
                   <Clock className="h-4 w-4" />
-                  Timed ({durationMinutes} min)
+                  {copy.timedStart(durationMinutes)}
                 </span>
                 <span className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-3 text-sm font-semibold">
-                  Untimed practice
+                  {copy.untimed}
                 </span>
               </div>
             </div>
@@ -184,13 +267,13 @@ export function CourseMockDemo({
         <div>
           <div className="mb-3 flex flex-wrap items-center gap-2">
             <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-              Question 1 / 12
+              {copy.questionBadge}
             </span>
             <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-              {FIRST.caseId}
+              {preview.caseId}
             </span>
             <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-              {FIRST.chapter}
+              {preview.chapter}
             </span>
             <span className="ml-auto inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1 font-mono text-xs font-semibold tabular-nums">
               <Clock className="h-3.5 w-3.5" />
@@ -212,10 +295,10 @@ export function CourseMockDemo({
               </span>
             ))}
           </div>
-          <h3 className="font-display text-lg font-bold tracking-tight">{FIRST.title}</h3>
-          <p className="mt-3 text-sm leading-relaxed text-foreground/90">{FIRST.context}</p>
+          <h3 className="font-display text-lg font-bold tracking-tight">{preview.title}</h3>
+          <p className="mt-3 text-sm leading-relaxed text-foreground/90">{preview.context}</p>
           <DemoStatementTable
-            statements={FIRST.statements}
+            statements={preview.statements}
             marks={marks}
             dataPrefix="q"
             className="mt-4"
@@ -228,19 +311,17 @@ export function CourseMockDemo({
               className="rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white"
               style={{ backgroundColor: ACCENT }}
             >
-              Custom Mock Builder
+              {copy.badge}
             </span>
             <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-              Economics
+              {copy.subject}
             </span>
           </div>
 
           <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start">
             <div className="min-w-0">
-              <h3 className="font-display text-base font-semibold">Select topics & subtopics</h3>
-              <p className="mt-1 text-xs text-muted-foreground">
-                Expand a chapter and tick sections. Topics appear as vertices on the right.
-              </p>
+              <h3 className="font-display text-base font-semibold">{copy.heading}</h3>
+              <p className="mt-1 text-xs text-muted-foreground">{copy.hint}</p>
               <ul className="mt-3 space-y-2">
                 {chapters.map((item) => {
                   const open = expanded[item.num] === true;
@@ -315,13 +396,12 @@ export function CourseMockDemo({
                 })}
               </ul>
 
-              <h3 className="mt-4 font-display text-sm font-semibold">Number of Questions</h3>
+              <h3 className="mt-4 font-display text-sm font-semibold">{copy.countHeading}</h3>
               <p className="mt-1 text-xs text-muted-foreground">
-                1–{CUSTOM_MOCK_MAX_QUESTIONS} for the whole mock ·{" "}
-                {CUSTOM_MOCK_MINUTES_PER_QUESTION} min each timed
+                {copy.countHint(CUSTOM_MOCK_MAX_QUESTIONS, CUSTOM_MOCK_MINUTES_PER_QUESTION)}
               </p>
               <div className="mt-2 flex flex-wrap items-center gap-2">
-                <span className="text-sm font-medium">Questions</span>
+                <span className="text-sm font-medium">{copy.questionsLabel}</span>
                 <span
                   data-d="count"
                   className="w-24 rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold tabular-nums"
@@ -331,7 +411,7 @@ export function CourseMockDemo({
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" />
-                  {durationMinutes} min timed
+                  {copy.timedShort(durationMinutes)}
                 </span>
               </div>
             </div>
@@ -342,9 +422,10 @@ export function CourseMockDemo({
                 questionCount={questionCount}
                 point={weightPoint}
                 onPointChange={setWeightPoint}
-                title="Topic Weight Selector"
+                title={copy.weightTitle}
                 accent={ACCENT}
-                subjectLabel="Economics"
+                subjectLabel={copy.subject}
+                locale={copy.locale}
               />
             </div>
           </div>
@@ -357,12 +438,12 @@ export function CourseMockDemo({
             {building ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Building mock…
+                {copy.building}
               </>
             ) : (
               <>
                 <BookOpen className="h-4 w-4" />
-                Create Economics Mock from Full Course
+                {copy.create}
               </>
             )}
           </div>

@@ -11,13 +11,31 @@ const READ = [1, 10, 11] as const;
 /** Cruise speed of the single chapter glide, a little under the news demo. */
 const CRUISE_PX_PER_MS = 2.45;
 
-const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
+export type TheoryDemoCopy = {
+  listLabel: string;
+  chapterLabel: (num: number) => string;
+  showChapters: string;
+};
+
+const EN_THEORY: TheoryDemoCopy = {
+  listLabel: "Chapters",
+  chapterLabel: (num) => `Chapter ${num} · Theory`,
+  showChapters: "Show chapters",
+};
+
+export const DE_THEORY_COPY: TheoryDemoCopy = {
+  listLabel: "Kapitel",
+  chapterLabel: (num) => `Kapitel ${num} · Theorie`,
+  showChapters: "Kapitel anzeigen",
+};
 
 function Reader({
   chapter,
+  copy,
   onScroll,
 }: {
   chapter: MathCourseTheoryChapter;
+  copy: TheoryDemoCopy;
   onScroll: (pct: number) => void;
 }) {
   const markdown = chapter.markdown;
@@ -32,7 +50,7 @@ function Reader({
           <BookOpen className="h-4 w-4 shrink-0 text-primary" />
           <div className="min-w-0 flex-1">
             <div className="truncate text-[10px] font-bold uppercase tracking-widest text-taupe">
-              Chapter {chapter.num} · Theory
+              {copy.chapterLabel(chapter.num)}
             </div>
             <div className="truncate font-display text-sm font-bold leading-tight">
               {chapter.title}
@@ -43,7 +61,7 @@ function Reader({
             className="inline-flex h-8 shrink-0 items-center gap-1 whitespace-nowrap rounded-md border border-border bg-card px-2 text-[11px] font-semibold text-foreground"
           >
             <PanelLeftOpen className="h-3.5 w-3.5" />
-            Show chapters
+            {copy.showChapters}
           </span>
         </div>
         <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
@@ -243,7 +261,18 @@ async function readChapterGlide(api: DemoPlayerApi) {
 export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
-}: { rest?: number; lockCopy?: boolean } = {}) {
+  catalog = MATH_COURSE_THEORY,
+  copy = EN_THEORY,
+}: {
+  rest?: number;
+  lockCopy?: boolean;
+  catalog?: Record<number, MathCourseTheoryChapter>;
+  copy?: TheoryDemoCopy;
+} = {}) {
+  const chapters = useMemo(
+    () => Object.values(catalog).sort((a, b) => a.num - b.num),
+    [catalog],
+  );
   const [open, setOpen] = useState<number | null>(null);
   const barPct = useRef(0);
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
@@ -274,7 +303,7 @@ export function CourseTheoryDemo({
     await api.wait(360);
   }, [rest], { rest, glideScale: howItWorksGlide(rest) });
 
-  const chapter = open == null ? null : MATH_COURSE_THEORY[open];
+  const chapter = open == null ? null : catalog[open];
 
   return (
     <CourseFrame
@@ -289,6 +318,7 @@ export function CourseTheoryDemo({
           <Reader
             key={chapter.num}
             chapter={chapter}
+            copy={copy}
             onScroll={(pct) => {
               barPct.current = pct;
               const bar = stageRef.current?.querySelector<HTMLElement>('[data-d="theory-bar"]');
@@ -300,10 +330,10 @@ export function CourseTheoryDemo({
     >
       <div className="rounded-2xl border border-border bg-card p-3 shadow-sm">
         <div className="mb-2 px-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-          Chapters
+          {copy.listLabel}
         </div>
         <ul className="space-y-1">
-          {CHAPTERS.map((item) => (
+          {chapters.map((item) => (
             <li key={item.num}>
               <div className="flex h-10 items-center gap-2 rounded-xl px-2">
                 <ChevronDown className="h-4 w-4 shrink-0 -rotate-90 text-muted-foreground" />

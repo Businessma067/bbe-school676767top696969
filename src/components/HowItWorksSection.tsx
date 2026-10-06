@@ -45,10 +45,7 @@ const BBE_MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "games", label: "Study tools" },
 ];
 
-const WISO_MAIN_TABS: { key: MainTab; label: string }[] = [
-  { key: "course", label: "Course" },
-  { key: "games", label: "Study tools" },
-];
+const WISO_MAIN_TABS = BBE_MAIN_TABS;
 
 const BBE_THEORY: ShowcaseSlide[] = [
   {
@@ -124,6 +121,48 @@ const BBE_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/english",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
+const WISO_THEORY: ShowcaseSlide[] = [
+  {
+    key: "theory",
+    label: "Theory",
+    title: "Read the theory the tasks assume",
+    body: "Every WiSo math chapter has its own German theory reader: the definitions, the formulas, and the reasoning the statements rely on. Open a chapter and read the part you need before you practice.",
+    cta: "Open Math theory",
+    href: "/wiso/products/full-course-math",
+    video: "/how-it-works/math.mp4",
+    poster: "/how-it-works/math-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
+const WISO_MOCK_EXAMS: ShowcaseSlide[] = [
+  {
+    key: "mock-exams",
+    label: "Mock Exams",
+    title: "Finish the paper and read the result",
+    body: "Answer one Wirtschaft question, one German question, and one math question on the 34-question WiSo mock. After you submit, the results chart shows how long each question took. Open the tasks and read the explanations.",
+    cta: "Open Mock Exams",
+    href: "/wiso/mock-exams",
+    video: "/how-it-works/mock-builder.mp4",
+    poster: "/how-it-works/mock-builder-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
+const WISO_MOCK_BUILDER: ShowcaseSlide[] = [
+  {
+    key: "mock-builder",
+    label: "Mock Builder",
+    title: "Build a mock around your weak spots",
+    body: "Choose the WiSo chapters and subtopics you struggle with, set the mix and question count, then start. You get a timed mock drawn from the Full Course, not a random paper.",
+    cta: "Open Mock Builder",
+    href: "/wiso/mock-builder",
+    video: "/how-it-works/mock-builder.mp4",
+    poster: "/how-it-works/mock-builder-poster.jpg",
     aspect: "3420 / 1966",
   },
 ];
@@ -295,11 +334,7 @@ function HowItWorksLive({
   if (track === "wiso") {
     return (
       <Suspense fallback={null}>
-        <WisoHowItWorksDemo
-          tab={tab === "games" ? "games" : "course"}
-          slideKey={slideKey}
-          rest={BBE_REST}
-        />
+        <WisoHowItWorksDemo tab={tab} slideKey={slideKey} rest={BBE_REST} />
       </Suspense>
     );
   }
@@ -333,6 +368,9 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
         ? HYBRID_COURSE_SUBJECTS
         : BBE_COURSE_SUBJECTS;
   const studyTools = track === "wiso" ? WISO_STUDY_TOOLS : BBE_STUDY_TOOLS;
+  const theorySlides = track === "wiso" ? WISO_THEORY : BBE_THEORY;
+  const mockExamSlides = track === "wiso" ? WISO_MOCK_EXAMS : BBE_MOCK_EXAMS;
+  const mockBuilderSlides = track === "wiso" ? WISO_MOCK_BUILDER : BBE_MOCK_BUILDER;
   const mainTabs = track === "wiso" ? WISO_MAIN_TABS : BBE_MAIN_TABS;
   const [tab, setTab] = useState<MainTab>("course");
   const [subject, setSubject] = useState<CourseSubject>(
@@ -349,11 +387,11 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     tab === "games"
       ? studyTools
       : tab === "mock-exams"
-        ? BBE_MOCK_EXAMS
+        ? mockExamSlides
         : tab === "mock-builder"
-          ? BBE_MOCK_BUILDER
+          ? mockBuilderSlides
           : tab === "theory"
-            ? BBE_THEORY
+            ? theorySlides
             : courseSubjects;
   const activeKey =
     tab === "games"
@@ -373,10 +411,10 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
       tab === "course" &&
       (slide.key === "economics" || slide.key === "math" || slide.key === "english")) ||
     (track === "wiso" && tab === "course");
-  const liveMockDemo = liveTrack && tab === "mock-builder";
-  const liveMockExamDemo = liveTrack && tab === "mock-exams";
+  const liveMockDemo = (liveTrack || track === "wiso") && tab === "mock-builder";
+  const liveMockExamDemo = (liveTrack || track === "wiso") && tab === "mock-exams";
   const liveStudyDemo = (liveTrack && tab === "games") || (track === "wiso" && tab === "games");
-  const liveTheoryDemo = liveTrack && tab === "theory";
+  const liveTheoryDemo = (liveTrack || track === "wiso") && tab === "theory";
   const liveStage = liveCourseDemo || liveMockDemo || liveMockExamDemo || liveStudyDemo || liveTheoryDemo;
 
   const applySlideKey = (key: string) => {

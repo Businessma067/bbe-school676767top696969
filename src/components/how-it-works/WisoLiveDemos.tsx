@@ -12,9 +12,15 @@ import {
   WISO_TUTOR_RESULT_LINES,
   WISO_TUTOR_UI,
 } from "@/lib/wiso-study-ui";
+import { getWisoCustomMockChapters } from "@/data/wiso-custom-mock-catalog";
+import { WISO_MATH_COURSE_THEORY } from "@/data/wiso-math-course-theory";
+import { buildWisoMockExam1Questions } from "@/lib/wiso-mock-exam-1-content";
 import { CourseEconDemo } from "./CourseEconDemo";
 import { CourseEnglishDemo } from "./CourseEnglishDemo";
 import { CourseMathDemo } from "./CourseMathDemo";
+import { CourseMockDemo, DE_MOCK_BUILDER_COPY } from "./CourseMockDemo";
+import { CourseMockExamDemo, DE_MOCK_EXAM_COPY } from "./CourseMockExamDemo";
+import { CourseTheoryDemo, DE_THEORY_COPY } from "./CourseTheoryDemo";
 import { COURSE_MATH, type CourseTask } from "./course-tasks";
 import { DE_CHROME } from "./course-copy";
 import {
@@ -163,6 +169,9 @@ const TUTOR_COPY: DemoTutorCopy = {
   asking: (n) => `Tutor Bot · F${n}`,
 };
 
+const WISO_EXAM_QUESTIONS = buildWisoMockExam1Questions();
+const WISO_BUILDER_CHAPTERS = getWisoCustomMockChapters("economics").slice(0, 3);
+
 const DEFINE_TERMS = ["Produkt", "Dienstleistung", "Güter", "Unternehmen"] as const;
 
 const TUTOR_QUESTIONS = [
@@ -193,10 +202,41 @@ export function WisoHowItWorksDemo({
   slideKey,
   rest,
 }: {
-  tab: "course" | "games";
+  tab: "course" | "theory" | "mock-exams" | "mock-builder" | "games";
   slideKey: string;
   rest: number;
 }) {
+  if (tab === "theory") {
+    return (
+      <CourseTheoryDemo
+        catalog={WISO_MATH_COURSE_THEORY}
+        copy={DE_THEORY_COPY}
+        rest={rest}
+        lockCopy
+      />
+    );
+  }
+  if (tab === "mock-exams") {
+    return (
+      <CourseMockExamDemo
+        questions={WISO_EXAM_QUESTIONS}
+        copy={DE_MOCK_EXAM_COPY}
+        rest={rest}
+        lockCopy
+      />
+    );
+  }
+  if (tab === "mock-builder") {
+    return (
+      <CourseMockDemo
+        chapters={WISO_BUILDER_CHAPTERS}
+        preview={WISO_ECON}
+        copy={DE_MOCK_BUILDER_COPY}
+        rest={rest}
+        lockCopy
+      />
+    );
+  }
   if (tab === "games") {
     if (slideKey === "matching") {
       return (
