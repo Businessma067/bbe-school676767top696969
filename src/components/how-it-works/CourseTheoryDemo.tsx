@@ -138,7 +138,7 @@ async function glideHand(
     api.setCursorAt(to);
     return;
   }
-  const ms = duration ?? Math.round(Math.min(360, Math.max(200, dist / 2.1)));
+  const ms = duration ?? Math.round(Math.min(460, Math.max(260, dist / 1.65)));
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
@@ -198,6 +198,7 @@ async function rushThenStop(
   const distance = dest - from;
   if (distance < 16) return;
   const duration = Math.round(Math.max(720, distance / CRUISE_PX_PER_MS));
+  const handMs = Math.round(duration * 1.22);
   const handFrom = cursorNow(stage);
   const handTo = handInText(stage, panel, depth, across);
   let elapsed = 0;
@@ -209,13 +210,13 @@ async function rushThenStop(
       elapsed += Math.min(28, Math.max(0, now - last));
       last = now;
       const t = Math.min(1, elapsed / duration);
-      const e = carryHand(t);
+      const e = carryHand(Math.min(1, elapsed / handMs));
       placeChapter(panel, from + distance * fastThenStop(t), max);
       api.setCursorAt({
         x: handFrom.x + (handTo.x - handFrom.x) * e,
         y: handFrom.y + (handTo.y - handFrom.y) * e,
       });
-      if (t < 1) requestAnimationFrame(frame);
+      if (t < 1 || elapsed < handMs) requestAnimationFrame(frame);
       else resolve();
     };
     requestAnimationFrame(frame);
@@ -257,7 +258,7 @@ async function readTwoStops(api: DemoPlayerApi) {
   panel.dataset.max = String(max);
   await rushThenStop(api, panel, 0, first, max, 0.46, 0.3);
   if (api.cancelled()) return;
-  await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 320);
+  await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 420);
   await rushThenStop(api, panel, first, Math.min(second, max), max, 0.7, 0.64);
 }
 
@@ -294,7 +295,7 @@ export function CourseTheoryDemo({
       await readChapter(num);
     }
     await api.wait(360);
-  }, [rest], { rest, glideScale: 1 });
+  }, [rest], { rest, glideScale: 0.8 });
 
   const chapter = open == null ? null : MATH_COURSE_THEORY[open];
 
