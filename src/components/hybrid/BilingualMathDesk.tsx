@@ -135,7 +135,10 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
   }
 
   const translated = tasks.filter((item) => item.translated).length;
-  const chapterPassed = countSharedMathPassedIn(passed, tasks);
+  const chapterPassed = countSharedMathPassedIn(
+    passed,
+    tasks.map((item) => item.en),
+  );
   const source = step ? (step.side === "wiso" ? step.task.de : step.task.en) : null;
   const answerKey = step?.task.en.answer_key ?? [];
   const correctCount = source
