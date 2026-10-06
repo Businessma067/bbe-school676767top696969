@@ -163,7 +163,7 @@ async function glideHand(
     api.setCursorAt(to);
     return;
   }
-  const ms = duration ?? Math.round(Math.min(1100, Math.max(220, dist / 1.1)));
+  const ms = duration ?? Math.round(Math.min(2200, Math.max(440, dist / 0.55)));
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
