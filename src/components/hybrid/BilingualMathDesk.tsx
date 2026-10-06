@@ -14,8 +14,30 @@ import {
   syncSharedMathIntoHybrid,
 } from "@/lib/hybrid-math";
 import { cn } from "@/lib/utils";
+import type { HybridLeanId } from "@/config/hybrid-mock-builder";
 
-type View = "en" | "both" | "de";
+const BBE = "#C2643A";
+const WISO = "#3730A3";
+
+type Side = "bbe" | "wiso";
+
+const FOCI: { id: HybridLeanId; title: string; blurb: string }[] = [
+  {
+    id: "bbe",
+    title: "BBE",
+    blurb: "English first, then the German stem of the same task.",
+  },
+  {
+    id: "half",
+    title: "Half",
+    blurb: "Odd tasks open in English. Even tasks open in German. Then the other stem.",
+  },
+  {
+    id: "wiso",
+    title: "WiSo",
+    blurb: "German first, then the English stem of the same task.",
+  },
+];
 
 function readPassed(): string[] {
   if (typeof window === "undefined") return [];
@@ -48,50 +70,32 @@ function writePassed(id: string): void {
   syncSharedMathIntoHybrid();
 }
 
-function Stem({
-  label,
-  title,
-  context,
-  statements,
-  accent,
-}: {
-  label: string;
-  title: string;
-  context: string;
-  statements: string[];
-  accent: string;
-}) {
-  return (
-    <div className="rounded-2xl border border-border bg-card p-4">
-      <p
-        className="text-[11px] font-semibold uppercase tracking-[0.16em]"
-        style={{ color: accent }}
-      >
-        {label}
-      </p>
-      <h3 className="mt-2 font-display text-lg font-semibold">{title}</h3>
-      {context ? (
-        <div className="mt-2 text-sm leading-relaxed text-foreground">
-          <FlashcardMath text={context} />
-        </div>
-      ) : null}
-      <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-relaxed">
-        {statements.map((statement, index) => (
-          <li key={index}>
-            <FlashcardMath text={statement} />
-          </li>
-        ))}
-      </ol>
-    </div>
+function leadFor(focus: HybridLeanId, taskIndex: number): Side {
+  if (focus === "wiso") return "wiso";
+  if (focus === "half" && taskIndex % 2 === 1) return "wiso";
+  return "bbe";
+}
+
+/** Book order. One stem on screen, then the other stem of that task. */
+function stepsFor(tasks: PairedMathTask[], focus: HybridLeanId) {
+  const ordered = [...tasks].sort(
+    (a, b) => a.en.sort_order - b.en.sort_order || a.id.localeCompare(b.id),
   );
+  return ordered.flatMap((task, taskIndex) => {
+    const lead = leadFor(focus, taskIndex);
+    const follow: Side = lead === "bbe" ? "wiso" : "bbe";
+    return [
+      { task, side: lead, part: 1 as const },
+      { task, side: follow, part: 2 as const },
+    ];
+  });
 }
 
 export function BilingualMathDesk({ chapter }: { chapter: number }) {
   const [tasks, setTasks] = useState<PairedMathTask[] | null>(null);
-  const [index, setIndex] = useState(0);
-  const [view, setView] = useState<View>("both");
+  const [focus, setFocus] = useState<HybridLeanId>("bbe");
   const [subsection, setSubsection] = useState<string | null>(null);
-  const [onlyTranslated, setOnlyTranslated] = useState(false);
+  const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState<Array<boolean | null>>([]);
   const [checked, setChecked] = useState(false);
   const [passed, setPassed] = useState<string[]>([]);
@@ -101,7 +105,7 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
   useEffect(() => {
     let cancelled = false;
     setTasks(null);
-    setIndex(0);
+    setStepIndex(0);
     setSubsection(null);
     void loadPairedChapter(chapter).then((rows) => {
       if (!cancelled) setTasks(rows);
@@ -114,22 +118,21 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
 
   const visible = useMemo(() => {
     if (!tasks) return [];
-    return tasks.filter((item) => {
-      if (onlyTranslated && !item.translated) return false;
-      if (subsection && item.subsection !== subsection) return false;
-      return true;
-    });
-  }, [tasks, onlyTranslated, subsection]);
+    return tasks.filter((item) => !subsection || item.subsection === subsection);
+  }, [tasks, subsection]);
 
-  const task = visible[index];
-
-  const taskId = task?.id;
-  const statementCount = task?.en.statements.length ?? 0;
+  const steps = useMemo(() => stepsFor(visible, focus), [visible, focus]);
+  const step = steps[stepIndex];
+  const taskId = step?.task.id;
+  const side = step?.side;
+  const statementCount = step
+    ? (step.side === "wiso" ? step.task.de.statements : step.task.en.statements).length
+    : 0;
 
   useEffect(() => {
     setAnswers(Array.from({ length: statementCount }, () => null));
     setChecked(false);
-  }, [taskId, statementCount]);
+  }, [taskId, side, statementCount]);
 
   if (!tasks) {
     return <div className="h-40 animate-pulse rounded-2xl bg-secondary" />;
@@ -137,29 +140,30 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
 
   const translated = tasks.filter((item) => item.translated).length;
   const chapterPassed = passed.filter((id) => isSharedMathTaskId(id, chapter)).length;
-
+  const source = step ? (step.side === "wiso" ? step.task.de : step.task.en) : null;
+  const answerKey = step?.task.en.answer_key ?? [];
   const complete =
-    !!task &&
-    answers.length === task.en.statements.length &&
+    !!source &&
+    answers.length === source.statements.length &&
     answers.every((value) => value != null);
-  const correctCount = task
-    ? task.en.statements.reduce(
-        (sum, _statement, i) => sum + (answers[i] === task.en.answer_key[i] ? 1 : 0),
+  const correctCount = source
+    ? source.statements.reduce(
+        (sum, _statement, i) => sum + (answers[i] === answerKey[i] ? 1 : 0),
         0,
       )
     : 0;
+  const accent = step?.side === "wiso" ? WISO : BBE;
+  const trueLabel = step?.side === "wiso" ? "Richtig" : "True";
+  const falseLabel = step?.side === "wiso" ? "Falsch" : "False";
 
   const check = () => {
-    if (!task || !complete) return;
+    if (!step || !source || !complete) return;
     setChecked(true);
-    if (correctCount === task.en.statements.length) {
-      writePassed(task.id);
+    if (correctCount === source.statements.length) {
+      writePassed(step.task.id);
       setPassed(readPassed());
     }
   };
-
-  const trueLabel = view === "de" ? "Richtig" : view === "both" ? "True · Richtig" : "True";
-  const falseLabel = view === "de" ? "Falsch" : view === "both" ? "False · Falsch" : "False";
 
   return (
     <div>
@@ -174,148 +178,98 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
         <p className="text-sm text-muted-foreground">{titles.de}</p>
         <p className="mt-2 text-sm text-muted-foreground">
           {translated}/{tasks.length} tasks have a German stem. {chapterPassed} in this chapter are
-          already counted. The answer key is shared, so a correct result is stored once.
+          already counted. One task is on screen. The other language of that task comes next.
         </p>
       </div>
 
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-wrap items-center gap-2">
-          <label className="text-xs font-semibold text-muted-foreground">
-            Subsection
-            <select
-              value={subsection ?? ""}
-              onChange={(event) => {
-                setSubsection(event.target.value || null);
-                setIndex(0);
-              }}
-              className="ml-2 rounded-md border border-border bg-background px-2 py-1 text-xs font-semibold text-foreground"
-            >
-              <option value="">All</option>
-              {terms.map((term) => (
-                <option key={term.id} value={term.id}>
-                  {term.id} · {term.en}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="flex items-center gap-2 text-xs font-semibold text-muted-foreground">
-            <input
-              type="checkbox"
-              checked={onlyTranslated}
-              onChange={(event) => {
-                setOnlyTranslated(event.target.checked);
-                setIndex(0);
-              }}
-            />
-            German stem only
-          </label>
-        </div>
-        <div className="inline-flex rounded-lg border border-border p-0.5">
-          {(
-            [
-              ["en", "English"],
-              ["both", "Both"],
-              ["de", "Deutsch"],
-            ] as const
-          ).map(([id, label]) => (
+      <div className="mb-4 grid gap-2 sm:grid-cols-3">
+        {FOCI.map((item) => {
+          const active = focus === item.id;
+          return (
             <button
-              key={id}
+              key={item.id}
               type="button"
-              onClick={() => setView(id)}
+              onClick={() => {
+                setFocus(item.id);
+                setStepIndex(0);
+              }}
               className={cn(
-                "rounded-md px-3 py-1.5 text-xs font-semibold",
-                view === id ? "text-white" : "text-foreground",
+                "rounded-xl border p-3 text-left",
+                active ? "text-white" : "border-border bg-card",
               )}
-              style={view === id ? { backgroundColor: HYBRID_ACCENT } : undefined}
+              style={
+                active ? { backgroundColor: HYBRID_ACCENT, borderColor: HYBRID_ACCENT } : undefined
+              }
             >
-              {label}
+              <p className="font-display text-base font-semibold">{item.title}</p>
+              <p
+                className={cn(
+                  "mt-1 text-xs leading-relaxed",
+                  active ? "text-white/80" : "text-muted-foreground",
+                )}
+              >
+                {item.blurb}
+              </p>
             </button>
-          ))}
-        </div>
+          );
+        })}
       </div>
 
-      {terms.length > 0 ? (
-        <ul className="mb-4 flex flex-wrap gap-2">
-          {terms.map((term) => {
-            const active = subsection === term.id;
-            return (
-              <li key={term.id}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSubsection(active ? null : term.id);
-                    setIndex(0);
-                  }}
-                  className={cn(
-                    "rounded-full border px-3 py-1 text-left text-[11px]",
-                    active ? "text-white" : "border-border bg-card",
-                  )}
-                  style={
-                    active
-                      ? { backgroundColor: HYBRID_ACCENT, borderColor: HYBRID_ACCENT }
-                      : undefined
-                  }
-                >
-                  <span className="font-semibold">{term.en}</span>
-                  <span className={active ? "text-white/80" : "text-muted-foreground"}>
-                    {" "}
-                    · {term.de}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      ) : null}
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <label className="text-xs font-semibold text-muted-foreground">
+          Subsection
+          <select
+            value={subsection ?? ""}
+            onChange={(event) => {
+              setSubsection(event.target.value || null);
+              setStepIndex(0);
+            }}
+            className="ml-2 rounded-md border border-border bg-background px-2 py-1 text-xs font-semibold text-foreground"
+          >
+            <option value="">All</option>
+            {terms.map((term) => (
+              <option key={term.id} value={term.id}>
+                {term.id} · {term.en}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
 
-      {!task ? (
+      {!step || !source ? (
         <p className="text-sm text-muted-foreground">No tasks match this filter.</p>
       ) : (
-        <>
-          <div className={cn("grid gap-4", view === "both" && "lg:grid-cols-2")}>
-            {view !== "de" ? (
-              <Stem
-                label="BBE · English"
-                title={task.en.title}
-                context={task.en.context}
-                statements={task.en.statements}
-                accent="#C2643A"
-              />
-            ) : null}
-            {view !== "en" ? (
-              <Stem
-                label={
-                  task.translated
-                    ? "WiSo · Deutsch"
-                    : "WiSo · Deutsch (English stem, no overlay yet)"
-                }
-                title={task.de.title}
-                context={task.de.context}
-                statements={task.de.statements}
-                accent="#115E59"
-              />
-            ) : null}
+        <div className="rounded-2xl border border-border bg-card p-5">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <p
+              className="text-xs font-semibold uppercase tracking-[0.16em]"
+              style={{ color: accent }}
+            >
+              {step.part} · {step.side === "bbe" ? "BBE · English" : "WiSo · Deutsch"}
+              {!step.task.translated && step.side === "wiso"
+                ? " · English stem, no overlay yet"
+                : ""}
+            </p>
+            <p className="text-xs text-muted-foreground">
+              {stepIndex + 1} / {steps.length} · {step.task.caseId}
+            </p>
           </div>
+          <h3 className="mt-2 font-display text-lg font-semibold">{source.title}</h3>
+          {source.context ? (
+            <div className="mt-2 text-sm leading-relaxed">
+              <FlashcardMath text={source.context} />
+            </div>
+          ) : null}
 
           <ul className="mt-4 space-y-3">
-            {task.en.statements.map((_statement, i) => {
+            {source.statements.map((statement, i) => {
               const chosen = answers[i];
-              const right = task.en.answer_key[i];
-              const stem =
-                view === "de"
-                  ? (task.de.statements[i] ?? task.en.statements[i])
-                  : task.en.statements[i];
+              const right = answerKey[i];
               return (
-                <li key={i} className="rounded-xl border border-border bg-card p-3">
-                  <p className="text-xs font-semibold text-muted-foreground">Statement {i + 1}</p>
-                  <div className="mt-1 text-sm leading-relaxed">
-                    <FlashcardMath text={stem} />
+                <li key={i} className="rounded-xl border border-border/80 p-3">
+                  <div className="text-sm leading-relaxed">
+                    <FlashcardMath text={statement} />
                   </div>
-                  {view === "both" && task.translated ? (
-                    <div className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                      <FlashcardMath text={task.de.statements[i] ?? ""} />
-                    </div>
-                  ) : null}
                   <div className="mt-2 flex flex-wrap gap-2">
                     {(
                       [
@@ -326,7 +280,6 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
                       const selected = chosen === value;
                       const good = checked && value === right && selected;
                       const bad = checked && selected && value !== right;
-                      const reveal = checked && value === right && !selected;
                       return (
                         <button
                           key={label}
@@ -337,15 +290,12 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
                           }
                           className={cn(
                             "rounded-md px-3 py-1.5 text-xs font-semibold",
-                            !selected && !reveal && "border border-border bg-background",
+                            !selected && "border border-border bg-background",
                             selected && !checked && "text-white",
                             good && "bg-emerald-600 text-white",
                             bad && "bg-destructive text-white",
-                            reveal && "border border-emerald-600 text-emerald-700",
                           )}
-                          style={
-                            selected && !checked ? { backgroundColor: HYBRID_ACCENT } : undefined
-                          }
+                          style={selected && !checked ? { backgroundColor: accent } : undefined}
                         >
                           {label}
                         </button>
@@ -354,14 +304,11 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
                   </div>
                   {checked ? (
                     <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                      {view === "de"
-                        ? task.de.tactical_explanations?.[i]
-                        : task.en.tactical_explanations?.[i]}
-                    </p>
-                  ) : null}
-                  {checked && view === "both" && task.translated ? (
-                    <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                      {task.de.tactical_explanations?.[i]}
+                      {
+                        (step.side === "wiso"
+                          ? step.task.de.tactical_explanations
+                          : step.task.en.tactical_explanations)?.[i]
+                      }
                     </p>
                   ) : null}
                 </li>
@@ -381,45 +328,27 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
             </button>
             {checked ? (
               <span className="text-sm font-semibold">
-                {correctCount}/{task.en.statements.length}
-                {passed.includes(task.id) ? " · counted once" : ""}
+                {correctCount}/{source.statements.length}
+                {passed.includes(step.task.id) ? " · counted once" : ""}
               </span>
             ) : null}
             <button
               type="button"
-              disabled={index === 0}
-              onClick={() => setIndex((n) => n - 1)}
-              className="rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold disabled:opacity-40"
+              disabled={stepIndex === 0}
+              onClick={() => setStepIndex((n) => n - 1)}
+              className="rounded-md border border-border bg-background px-3 py-2 text-sm font-semibold disabled:opacity-40"
             >
               Previous
             </button>
             <button
               type="button"
-              disabled={index >= visible.length - 1}
-              onClick={() => setIndex((n) => n + 1)}
-              className="rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold disabled:opacity-40"
+              disabled={!checked || stepIndex >= steps.length - 1}
+              onClick={() => setStepIndex((n) => n + 1)}
+              className="rounded-md px-3 py-2 text-sm font-semibold text-white disabled:opacity-40"
+              style={{ backgroundColor: HYBRID_ACCENT }}
             >
-              Next
+              {step.part === 1 ? (step.side === "bbe" ? "Next · WiSo" : "Next · BBE") : "Next task"}
             </button>
-            <label className="text-xs text-muted-foreground">
-              Task
-              <select
-                value={index}
-                onChange={(event) => setIndex(Number(event.target.value))}
-                className="ml-2 rounded-md border border-border bg-background px-2 py-1 text-xs font-semibold text-foreground"
-              >
-                {visible.map((item, i) => (
-                  <option key={item.id} value={i}>
-                    {i + 1}. {item.caseId}
-                    {item.translated ? " · DE" : ""}
-                    {passed.includes(item.id) ? " · counted" : ""}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <span className="text-xs text-muted-foreground">
-              {index + 1} / {visible.length}
-            </span>
             <Link
               to="/hybrid/math"
               search={{ chapter }}
@@ -429,7 +358,7 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
               Open the full paper player
             </Link>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

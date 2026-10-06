@@ -51,7 +51,7 @@ function HybridMathPage() {
     return (
       <HybridShell
         title="Shared Math"
-        lead="Thirteen chapters, one progress store. Open a chapter as a paper in English or German, or open the split desk and read both stems of the same task."
+        lead="Thirteen chapters, one progress store. Open a chapter as a paper, or take the same task in order: BBE, then WiSo, or the other way around."
       >
         <SharedMathLibrary />
       </HybridShell>
@@ -62,7 +62,7 @@ function HybridMathPage() {
     return (
       <HybridShell
         title="Shared Math"
-        lead="The same task in English and German. Answers are marked once. A missing German overlay stays in English and is labelled."
+        lead="One task on screen. The focus sets whether BBE or WiSo comes first. The other language of that task is the next step."
       >
         <div className="mb-4">
           <Link
@@ -103,7 +103,7 @@ function HybridMathPage() {
             search={{ chapter, view: "split" }}
             className="rounded-md border border-border bg-card px-2.5 py-1 text-[11px] font-semibold text-foreground"
           >
-            Split
+            In order
           </Link>
           <div className="inline-flex rounded-lg border border-border p-0.5">
             {(["en", "de"] as const).map((code) => (

@@ -14,29 +14,31 @@ import {
   HYBRID_PAPER_MAX_QUESTIONS,
   HYBRID_PAPER_MIN_QUESTIONS,
   clampPaperCount,
+  focusRhythm,
   leanValueFor,
   mixForPaper,
   paperMinutes,
-  paperSections,
   type HybridLeanId,
 } from "@/config/hybrid-mock-builder";
 import { cn } from "@/lib/utils";
 
-const LEANS: { id: HybridLeanId; title: string; blurb: string }[] = [
+const FOCI: { id: HybridLeanId; title: string; blurb: string }[] = [
   {
     id: "bbe",
     title: "BBE",
-    blurb: "Mathematics in English. German reading stays in the paper, as the shorter block.",
+    blurb: "Opens on English mathematics, then a WiSo task. The German block stays shorter.",
   },
   {
     id: "half",
     title: "Half",
-    blurb: "Equal mathematics and German reading. Math stems split evenly, English and German.",
+    blurb:
+      "BBE and WiSo take turns. Extra tasks from the longer side are spaced through the paper.",
   },
   {
     id: "wiso",
     title: "WiSo",
-    blurb: "Mathematics in German, then German reading, in the 13 + 9 shape of the WiSo paper.",
+    blurb:
+      "Opens on WiSo. German mathematics leads, then German reading. English mathematics follows only while some remains.",
   },
 ];
 
@@ -57,9 +59,10 @@ export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: Hyb
   }, []);
 
   const mix = mixForPaper(total, lean);
-  const sections = paperSections(mix);
+  const rhythm = focusRhythm(mix);
   const questionCount = mix.enMath + mix.deMath + mix.germanCount;
   const minutes = paperMinutes(questionCount);
+  const preview = rhythm.slice(0, 16);
 
   const toggleChapter = (num: number) => {
     setChapters((prev) =>
@@ -99,10 +102,10 @@ export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: Hyb
           className="text-xs font-semibold uppercase tracking-[0.16em]"
           style={{ color: HYBRID_ACCENT }}
         >
-          Lean
+          Focus
         </p>
         <div className="mt-3 grid gap-3 md:grid-cols-3">
-          {LEANS.map((item) => {
+          {FOCI.map((item) => {
             const active = mix.leanId === item.id;
             return (
               <button
@@ -133,7 +136,7 @@ export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: Hyb
           })}
         </div>
         <label className="mt-4 block text-xs font-semibold text-muted-foreground">
-          Fine lean · {lean}
+          Focus · {lean}
           <input
             type="range"
             min={0}
@@ -158,51 +161,46 @@ export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: Hyb
           <p className="mt-2 font-display text-2xl font-semibold">
             {mix.mathCount} mathematics + {mix.germanCount} German
           </p>
-          <div className="mt-3 flex h-2 overflow-hidden rounded-full bg-secondary">
-            {sections.map((section) => (
-              <div
-                key={section.id}
-                title={`${section.label} · ${section.count}`}
-                style={{
-                  width: `${(section.count / questionCount) * 100}%`,
-                  backgroundColor:
-                    section.id === "math-en"
-                      ? "#C2643A"
-                      : section.id === "math-de"
-                        ? "#115E59"
-                        : "#5EEAD4",
-                }}
-              />
-            ))}
-          </div>
-          <ol className="mt-3 space-y-1 text-sm text-muted-foreground">
-            {sections.map((section, index) => (
-              <li key={section.id} className="flex items-center gap-2">
-                <span
-                  className="inline-block h-2 w-2 rounded-full"
-                  style={{
-                    backgroundColor:
-                      section.id === "math-en"
-                        ? "#C2643A"
-                        : section.id === "math-de"
-                          ? "#115E59"
-                          : "#5EEAD4",
-                  }}
-                />
-                {index + 1}. {section.label} · {section.count}
+          <p className="mt-2 text-sm text-muted-foreground">
+            {mix.enMath} English mathematics · {mix.deMath} German mathematics · {mix.germanCount}{" "}
+            German reading · {minutes} minutes
+          </p>
+          <p className="mt-3 text-sm text-foreground">
+            {rhythm[0] === "bbe"
+              ? "Opens on BBE. A WiSo task follows."
+              : rhythm.includes("bbe")
+                ? "Opens on WiSo. A BBE task follows."
+                : "Opens on WiSo. German mathematics and German reading follow the book."}
+          </p>
+          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+            Order · one task at a time
+          </p>
+          <ol className="mt-2 flex flex-wrap gap-1.5">
+            {preview.map((side, index) => (
+              <li
+                key={`${side}-${index}`}
+                className="rounded-full px-2.5 py-1 text-[10px] font-semibold text-white"
+                style={{ backgroundColor: side === "bbe" ? "#C2643A" : "#3730A3" }}
+              >
+                {index + 1} {side === "bbe" ? "BBE" : "WiSo"}
               </li>
             ))}
-            <li>
-              {minutes} minutes · {questionCount} questions · at least one mathematics and one
-              German task
-            </li>
+            {rhythm.length > preview.length ? (
+              <li className="px-1 py-1 text-[10px] font-semibold text-muted-foreground">
+                +{rhythm.length - preview.length}
+              </li>
+            ) : null}
           </ol>
           <ul className="mt-3 space-y-1 text-xs leading-relaxed text-muted-foreground">
-            <li>BBE is 13 mathematics for every 6 German, and every math stem stays English.</li>
-            <li>Half splits the two sections, then splits the math stems evenly by language.</li>
-            <li>WiSo follows 13 mathematics + 9 German reading, with German math stems.</li>
             <li>
-              A case is used once. German math slots prefer a real overlay when the bank has one.
+              BBE opens on English mathematics, then a WiSo task. The German block is shorter.
+            </li>
+            <li>
+              Half turns BBE and WiSo. Extra tasks from the longer side are spaced, not grouped.
+            </li>
+            <li>WiSo opens on German mathematics, then German reading, in book order.</li>
+            <li>
+              Tasks follow the book, one from each selected chapter in turn. Nothing is shuffled.
             </li>
           </ul>
         </div>

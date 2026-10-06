@@ -255,7 +255,7 @@ const HYBRID_COURSE_SUBJECTS: ShowcaseSlide[] = [
     key: "math",
     label: "Math",
     title: "One math bank, two exam languages",
-    body: "Shared mathematics with an English stem, a German stem, or both on the split desk. Timed mode, the exam calculator, and a hybrid paper you can lean toward BBE, half, or WiSo.",
+    body: "Shared mathematics one task at a time: BBE, then WiSo, or the reverse. Timed mode, the exam calculator, and a hybrid paper whose order follows the focus you pick.",
     cta: "Open shared math",
     href: "/hybrid/math",
     video: "/how-it-works/math.mp4",
