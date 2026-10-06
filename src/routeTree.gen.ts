@@ -77,6 +77,7 @@ import { Route as HybridDualMockRouteImport } from './routes/hybrid.dual-mock'
 import { Route as HybridExamFlipRouteImport } from './routes/hybrid.exam-flip'
 import { Route as HybridMathRouteImport } from './routes/hybrid.math'
 import { Route as HybridMirrorRouteImport } from './routes/hybrid.mirror'
+import { Route as HybridMockBuilderRouteImport } from './routes/hybrid.mock-builder'
 import { Route as MatchingIndexRouteImport } from './routes/matching.index'
 import { Route as MatchingSubjectRouteImport } from './routes/matching.$subject'
 import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
@@ -489,6 +490,11 @@ const HybridMathRoute = HybridMathRouteImport.update({
 const HybridMirrorRoute = HybridMirrorRouteImport.update({
   id: '/mirror',
   path: '/mirror',
+  getParentRoute: () => HybridRoute,
+} as any)
+const HybridMockBuilderRoute = HybridMockBuilderRouteImport.update({
+  id: '/mock-builder',
+  path: '/mock-builder',
   getParentRoute: () => HybridRoute,
 } as any)
 const MatchingIndexRoute = MatchingIndexRouteImport.update({
@@ -947,6 +953,7 @@ export interface FileRoutesByFullPath {
   '/hybrid/exam-flip': typeof HybridExamFlipRoute
   '/hybrid/math': typeof HybridMathRoute
   '/hybrid/mirror': typeof HybridMirrorRoute
+  '/hybrid/mock-builder': typeof HybridMockBuilderRoute
   '/matching/$subject': typeof MatchingSubjectRoute
   '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
@@ -1076,6 +1083,7 @@ export interface FileRoutesByTo {
   '/hybrid/exam-flip': typeof HybridExamFlipRoute
   '/hybrid/math': typeof HybridMathRoute
   '/hybrid/mirror': typeof HybridMirrorRoute
+  '/hybrid/mock-builder': typeof HybridMockBuilderRoute
   '/matching/$subject': typeof MatchingSubjectRoute
   '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
@@ -1212,6 +1220,7 @@ export interface FileRoutesById {
   '/hybrid/exam-flip': typeof HybridExamFlipRoute
   '/hybrid/math': typeof HybridMathRoute
   '/hybrid/mirror': typeof HybridMirrorRoute
+  '/hybrid/mock-builder': typeof HybridMockBuilderRoute
   '/matching/$subject': typeof MatchingSubjectRoute
   '/news/$slug': typeof NewsSlugRoute
   '/payment/failed': typeof PaymentFailedRoute
@@ -1357,6 +1366,7 @@ export interface FileRouteTypes {
     | '/hybrid/exam-flip'
     | '/hybrid/math'
     | '/hybrid/mirror'
+    | '/hybrid/mock-builder'
     | '/matching/$subject'
     | '/news/$slug'
     | '/payment/failed'
@@ -1486,6 +1496,7 @@ export interface FileRouteTypes {
     | '/hybrid/exam-flip'
     | '/hybrid/math'
     | '/hybrid/mirror'
+    | '/hybrid/mock-builder'
     | '/matching/$subject'
     | '/news/$slug'
     | '/payment/failed'
@@ -1621,6 +1632,7 @@ export interface FileRouteTypes {
     | '/hybrid/exam-flip'
     | '/hybrid/math'
     | '/hybrid/mirror'
+    | '/hybrid/mock-builder'
     | '/matching/$subject'
     | '/news/$slug'
     | '/payment/failed'
@@ -2231,6 +2243,13 @@ declare module '@tanstack/react-router' {
       path: '/mirror'
       fullPath: '/hybrid/mirror'
       preLoaderRoute: typeof HybridMirrorRouteImport
+      parentRoute: typeof HybridRoute
+    }
+    '/hybrid/mock-builder': {
+      id: '/hybrid/mock-builder'
+      path: '/mock-builder'
+      fullPath: '/hybrid/mock-builder'
+      preLoaderRoute: typeof HybridMockBuilderRouteImport
       parentRoute: typeof HybridRoute
     }
     '/matching/': {
@@ -2879,6 +2898,7 @@ interface HybridRouteChildren {
   HybridExamFlipRoute: typeof HybridExamFlipRoute
   HybridMathRoute: typeof HybridMathRoute
   HybridMirrorRoute: typeof HybridMirrorRoute
+  HybridMockBuilderRoute: typeof HybridMockBuilderRoute
   HybridIndexRoute: typeof HybridIndexRoute
 }
 
@@ -2890,6 +2910,7 @@ const HybridRouteChildren: HybridRouteChildren = {
   HybridExamFlipRoute: HybridExamFlipRoute,
   HybridMathRoute: HybridMathRoute,
   HybridMirrorRoute: HybridMirrorRoute,
+  HybridMockBuilderRoute: HybridMockBuilderRoute,
   HybridIndexRoute: HybridIndexRoute,
 }
 

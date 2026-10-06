@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Check, GitBranch, Languages, Layers, Target } from "lucide-react";
+import { Check, FileText, GitBranch, Languages, Layers, Target } from "lucide-react";
 import { AuthModal } from "@/components/AuthModal";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PaymentModal } from "@/components/PaymentModal";
@@ -23,13 +23,13 @@ export const Route = createFileRoute("/products/hybrid-course")({
       {
         name: "description",
         content:
-          "Hybrid Course: one plan for both WU exams — shared math library, bridge cases, and English + German lanes.",
+          "Hybrid Course: one plan for both WU exams — shared math in English and German, a hybrid paper, bridge cases, and English + German lanes.",
       },
       { property: "og:title", content: "Hybrid BBE + WiSo Course" },
       {
         property: "og:description",
         content:
-          "Prepare for BBE and WiSo with one homework stream, a shared math library, and bridge cases.",
+          "Prepare for BBE and WiSo with one homework stream, shared math in both languages, a hybrid paper, and bridge cases.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -44,7 +44,12 @@ const FEATURES = [
   {
     icon: Layers,
     title: "Shared Math library",
-    text: "Thirteen chapters, English or German stem, one progress count for both exams.",
+    text: "Thirteen chapters. Paper view in English or German, or the split desk with both stems of the same task.",
+  },
+  {
+    icon: FileText,
+    title: "Hybrid paper",
+    text: "Mathematics plus German reading. Lean the paper toward BBE, half, or WiSo before you sit down.",
   },
   {
     icon: GitBranch,
@@ -59,7 +64,7 @@ const FEATURES = [
   {
     icon: Target,
     title: "Twin readiness",
-    text: "One daily plan: shared math, one bridge case, then the two language lanes.",
+    text: "One daily plan: shared math, one bridge case, both language lanes, then a hybrid paper.",
   },
 ];
 
@@ -170,7 +175,8 @@ export function HybridCourseProductPage() {
             <ul className="mt-4 space-y-2">
               {[
                 "Hybrid hub with twin readiness and a daily plan",
-                "Shared Math library, chapters 1–13, EN/DE stem",
+                "Shared Math library, chapters 1–13, with a split English/German desk",
+                "Hybrid paper: mathematics plus German reading, leaned toward BBE, half, or WiSo",
                 "Bridge library: 20 concepts in 4 units",
                 "Full BBE Course library (econ, math, English, mocks, tools)",
                 "Full WiSo Course library (Wirtschaft verstehen, math, German, mocks, tools)",

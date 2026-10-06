@@ -119,14 +119,25 @@ export function HybridStudyBoard() {
                     {item.blurb}
                   </p>
                 </div>
-                <Link
-                  to={item.to}
-                  onClick={() => openLanguage(item)}
-                  className="shrink-0 text-xs font-semibold"
-                  style={{ color: HYBRID_ACCENT }}
-                >
-                  Open
-                </Link>
+                {item.to === "/hybrid/mock-builder" ? (
+                  <Link
+                    to="/hybrid/mock-builder"
+                    search={{ lean: item.lean ?? "half" }}
+                    className="shrink-0 text-xs font-semibold"
+                    style={{ color: HYBRID_ACCENT }}
+                  >
+                    Open
+                  </Link>
+                ) : (
+                  <Link
+                    to={item.to}
+                    onClick={() => openLanguage(item)}
+                    className="shrink-0 text-xs font-semibold"
+                    style={{ color: HYBRID_ACCENT }}
+                  >
+                    Open
+                  </Link>
+                )}
               </li>
             );
           })}

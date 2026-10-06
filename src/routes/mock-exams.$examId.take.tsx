@@ -1,8 +1,18 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X, Calculator, Check } from "lucide-react";
+import {
+  FileSpreadsheet,
+  Flag,
+  StickyNote,
+  PenLine,
+  Timer,
+  X,
+  Calculator,
+  Check,
+} from "lucide-react";
 import { SUBJECT_META, subjectLabel } from "@/config/scoring-config";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
+import { isHybridMockExamId } from "@/config/hybrid-mock-builder";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import { storeExamTrack } from "@/lib/exam-track";
 import { isCustomExamId, isWisoCuratedMockId } from "@/lib/mock-exams";
@@ -19,10 +29,7 @@ import {
   type AnnotationStroke,
   type MockExamSession,
 } from "@/lib/mock-exam-session";
-import {
-  fetchInProgressMockSession,
-  upsertMockExamProgress,
-} from "@/lib/user-progress";
+import { fetchInProgressMockSession, upsertMockExamProgress } from "@/lib/user-progress";
 import { AnnotationLayer } from "@/components/mock-exam/AnnotationLayer";
 import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
 import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
@@ -155,19 +162,14 @@ function TakeExamPage() {
           return;
         }
       } else if (resolved.summary.tier === "full") {
-        const { userOwnsFullTier, userOwnsWisoFullCourse } = await import(
-          "@/lib/full-course-access"
-        );
+        const { userOwnsFullTier, userOwnsWisoFullCourse } =
+          await import("@/lib/full-course-access");
         const ownsFull =
-          resolved.track === "wiso"
-            ? await userOwnsWisoFullCourse()
-            : await userOwnsFullTier();
+          resolved.track === "wiso" ? await userOwnsWisoFullCourse() : await userOwnsFullTier();
         if (cancelled) return;
         if (!ownsFull) {
           setLockMinTier("full");
-          setLockProductSlug(
-            resolved.track === "wiso" ? "wiso-full-course" : undefined,
-          );
+          setLockProductSlug(resolved.track === "wiso" ? "wiso-full-course" : undefined);
           setContentReady(true);
           return;
         }
@@ -308,8 +310,7 @@ function TakeExamPage() {
       const s = sessionRef.current;
       const totalSeconds = examSecondsRef.current;
       const secondsTaken =
-        elapsed ??
-        (s.timed && s.secondsLeft != null ? totalSeconds - s.secondsLeft : null);
+        elapsed ?? (s.timed && s.secondsLeft != null ? totalSeconds - s.secondsLeft : null);
       try {
         sessionStorage.setItem(
           answersStorageKey(examId),
@@ -472,12 +473,10 @@ function TakeExamPage() {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background px-6 font-sans text-foreground">
         <div className="max-w-sm text-center">
-          <h1 className="text-xl font-semibold tracking-tight">
-            Sign in to take the demo mock
-          </h1>
+          <h1 className="text-xl font-semibold tracking-tight">Sign in to take the demo mock</h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            The free demo course stays open without an account. The full timed demo mock needs a free
-            registration first so we can save your attempt.
+            The free demo course stays open without an account. The full timed demo mock needs a
+            free registration first so we can save your attempt.
           </p>
           <div className="mt-6 flex flex-col items-stretch gap-2 sm:flex-row sm:justify-center">
             <LocalizedLink
@@ -508,11 +507,7 @@ function TakeExamPage() {
 
   if (lockMinTier) {
     return (
-      <CourseLockedView
-        feature="mock-exams"
-        minTier={lockMinTier}
-        productSlug={lockProductSlug}
-      />
+      <CourseLockedView feature="mock-exams" minTier={lockMinTier} productSlug={lockProductSlug} />
     );
   }
 
@@ -524,24 +519,28 @@ function TakeExamPage() {
         <p className="text-sm text-muted-foreground">{loadError}</p>
         <Link
           to={
-            custom
-              ? wisoLoad
-                ? "/wiso/mock-builder"
-                : "/products/custom-mock-builder"
-              : wisoLoad
-                ? "/wiso/mock-exams"
-                : "/mock-exams"
+            isHybridMockExamId(examId)
+              ? "/hybrid/mock-builder"
+              : custom
+                ? wisoLoad
+                  ? "/wiso/mock-builder"
+                  : "/products/custom-mock-builder"
+                : wisoLoad
+                  ? "/wiso/mock-exams"
+                  : "/mock-exams"
           }
           className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
         >
           ←{" "}
-          {custom
-            ? wisoLoad
-              ? "WiSo Mock Builder"
-              : "Custom Mock Builder"
-            : wisoLoad
-              ? "WiSo Mock Exams"
-              : "Mock Exams"}
+          {isHybridMockExamId(examId)
+            ? "Hybrid paper"
+            : custom
+              ? wisoLoad
+                ? "WiSo Mock Builder"
+                : "Custom Mock Builder"
+              : wisoLoad
+                ? "WiSo Mock Exams"
+                : "Mock Exams"}
         </Link>
       </div>
     );
@@ -614,8 +613,8 @@ function TakeExamPage() {
           </div>
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span className="text-sm text-muted-foreground tabular-nums">
-              {examTrack === "wiso" ? "Aufgabe" : "Question"}{" "}
-              {session.currentIndex + 1} / {questions.length}
+              {examTrack === "wiso" ? "Aufgabe" : "Question"} {session.currentIndex + 1} /{" "}
+              {questions.length}
             </span>
             {session.timed && (
               <span
@@ -696,7 +695,9 @@ function TakeExamPage() {
               <Flag
                 className={cn(
                   "h-3.5 w-3.5",
-                  isFlagged ? "fill-red-600 text-red-700 dark:fill-red-400 dark:text-red-300" : "text-taupe",
+                  isFlagged
+                    ? "fill-red-600 text-red-700 dark:fill-red-400 dark:text-red-300"
+                    : "text-taupe",
                 )}
               />
               {isFlagged ? "Flagged" : "Flag for review"}
@@ -738,7 +739,9 @@ function TakeExamPage() {
                 <Flag
                   className={cn(
                     "h-3 w-3",
-                    isFlagged ? "fill-red-600 text-red-700 dark:fill-red-400 dark:text-red-300" : "text-taupe",
+                    isFlagged
+                      ? "fill-red-600 text-red-700 dark:fill-red-400 dark:text-red-300"
+                      : "text-taupe",
                   )}
                 />
                 Flag
@@ -879,7 +882,10 @@ function TakeExamPage() {
       </div>
 
       {usesAnswerSheet && (
-        <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
+        <Sheet
+          open={rightPanel === "sheet"}
+          onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}
+        >
           <SheetContent side="right" className="flex w-full flex-col overflow-y-auto sm:max-w-md">
             <SheetHeader className="pr-8 text-left">
               <SheetTitle className="font-display">

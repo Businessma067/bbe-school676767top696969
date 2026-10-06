@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG } from "@/config/scoring-config";
+import { isHybridMockExamId } from "@/config/hybrid-mock-builder";
 import { isCustomExamId, isFreeDemoMockId, isWisoCuratedMockId } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
@@ -22,7 +23,9 @@ import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
   head: ({ params }) => ({
-    links: [{ rel: "canonical", href: `https://bbe-school.com/mock-exams/${params.examId}/review` }],
+    links: [
+      { rel: "canonical", href: `https://bbe-school.com/mock-exams/${params.examId}/review` },
+    ],
     meta: [
       { title: "Mock Exam Review — BBE School" },
       { name: "description", content: "Detailed wi2-scored review of your WU BBE mock exam." },
@@ -138,7 +141,14 @@ function ReviewExamPage() {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-background px-6">
         <p className="text-sm text-muted-foreground">{loadError}</p>
-        {isCustomExamId(examId) ? (
+        {isHybridMockExamId(examId) ? (
+          <Link
+            to="/hybrid/mock-builder"
+            className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
+          >
+            ← Hybrid paper
+          </Link>
+        ) : isCustomExamId(examId) ? (
           <Link
             to={examTrack === "wiso" ? "/wiso/mock-builder" : "/products/custom-mock-builder"}
             className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
@@ -147,7 +157,11 @@ function ReviewExamPage() {
           </Link>
         ) : (
           <Link
-            to={isWisoCuratedMockId(examId) || examTrack === "wiso" ? "/wiso/mock-exams" : "/mock-exams"}
+            to={
+              isWisoCuratedMockId(examId) || examTrack === "wiso"
+                ? "/wiso/mock-exams"
+                : "/mock-exams"
+            }
             className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
           >
             ← Back
@@ -174,31 +188,35 @@ function ReviewExamPage() {
         actions={
           <Link
             to={
-              isCustom
-                ? de
-                  ? "/wiso/mock-builder"
-                  : "/products/custom-mock-builder"
-                : de
-                  ? isFreeDemoMockId(examId)
-                    ? "/wiso/demo-mock"
-                    : "/wiso/mock-exams"
-                  : isFreeDemoMockId(examId)
-                    ? "/demo-mock"
-                    : "/mock-exams"
+              isHybridMockExamId(examId)
+                ? "/hybrid/mock-builder"
+                : isCustom
+                  ? de
+                    ? "/wiso/mock-builder"
+                    : "/products/custom-mock-builder"
+                  : de
+                    ? isFreeDemoMockId(examId)
+                      ? "/wiso/demo-mock"
+                      : "/wiso/mock-exams"
+                    : isFreeDemoMockId(examId)
+                      ? "/demo-mock"
+                      : "/mock-exams"
             }
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            {isCustom
-              ? de
-                ? "← WiSo Mock-Builder"
-                : "← Custom Mock Builder"
-              : isFreeDemoMockId(examId)
+            {isHybridMockExamId(examId)
+              ? "← Hybrid paper"
+              : isCustom
                 ? de
-                  ? "← Demo-Probeprüfung"
-                  : "← Demo Exam"
-                : de
-                  ? "← Alle Probeprüfungen"
-                  : "← All mock exams"}
+                  ? "← WiSo Mock-Builder"
+                  : "← Custom Mock Builder"
+                : isFreeDemoMockId(examId)
+                  ? de
+                    ? "← Demo-Probeprüfung"
+                    : "← Demo Exam"
+                  : de
+                    ? "← Alle Probeprüfungen"
+                    : "← All mock exams"}
           </Link>
         }
       />

@@ -232,6 +232,7 @@ export function hybridNavItems(ownsHybrid = false): NavItem[] {
         "/hybrid/course",
         "/hybrid/math",
         "/hybrid/bridge",
+        "/hybrid/mock-builder",
         "/hybrid/mirror",
         "/hybrid/exam-flip",
         "/hybrid/dual-mock",
@@ -306,10 +307,7 @@ export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
   return items;
 }
 
-export function navItemsForAccess(
-  access: AccountNavAccess,
-  track: ExamTrack = "bbe",
-): NavItem[] {
+export function navItemsForAccess(access: AccountNavAccess, track: ExamTrack = "bbe"): NavItem[] {
   if (track === "wiso") {
     if (!access.hasWisoFull) return guestNavItems(track);
     return [
@@ -354,19 +352,16 @@ export function navItemsForContext(_pathname: string, tier: AccountNavTier): Nav
 function searchRecord(search: unknown): Record<string, unknown> {
   if (!search) return {};
   if (typeof search === "string") {
-    return Object.fromEntries(new URLSearchParams(search.startsWith("?") ? search.slice(1) : search));
+    return Object.fromEntries(
+      new URLSearchParams(search.startsWith("?") ? search.slice(1) : search),
+    );
   }
   if (typeof search === "object") return search as Record<string, unknown>;
   return {};
 }
 
-export function isNavItemActive(
-  item: NavItem,
-  pathname: string,
-  search?: unknown,
-): boolean {
-  const matchesPrefix = (base: string) =>
-    pathname === base || pathname.startsWith(`${base}/`);
+export function isNavItemActive(item: NavItem, pathname: string, search?: unknown): boolean {
+  const matchesPrefix = (base: string) => pathname === base || pathname.startsWith(`${base}/`);
   const matchesExact = (base: string) => pathname === base;
 
   if (item.activeExact?.some(matchesExact)) return true;

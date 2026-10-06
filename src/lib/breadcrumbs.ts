@@ -39,6 +39,7 @@ const SEGMENT_LABELS: Record<string, string> = {
   "hybrid-course": "Hybrid Course",
   course: "Course",
   bridge: "Bridge Cases",
+  "mock-builder": "Hybrid paper",
   mirror: "Course",
   "exam-flip": "Course",
   "dual-mock": "Course",
@@ -158,10 +159,7 @@ function withLocale(to: string | null, locale: LocalePrefix | null): string | nu
  * Standard hierarchical breadcrumbs from the URL (not click history).
  * Home is rendered separately in the component.
  */
-export function buildBreadcrumbs(
-  pathname: string,
-  ctx: BreadcrumbContext = {},
-): BreadcrumbCrumb[] {
+export function buildBreadcrumbs(pathname: string, ctx: BreadcrumbContext = {}): BreadcrumbCrumb[] {
   const locale = getLocaleFromPath(pathname);
   const path = stripLocalePrefix(normalizePathname(pathname));
   if (path === "/") return [];

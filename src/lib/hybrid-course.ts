@@ -16,4 +16,5 @@ export const HYBRID_NAV = [
   { to: "/hybrid/course", label: "Course", short: "Course" },
   { to: "/hybrid/math", label: "Shared Math", short: "Math" },
   { to: "/hybrid/bridge", label: "Bridge Cases", short: "Bridge" },
+  { to: "/hybrid/mock-builder", label: "Hybrid paper", short: "Paper" },
 ] as const;

@@ -2,7 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
-import { ClipboardCheck, GitBranch, Layers, Shuffle, Sparkles, Wand2 } from "lucide-react";
+import {
+  ClipboardCheck,
+  FileText,
+  GitBranch,
+  Layers,
+  Shuffle,
+  Sparkles,
+  Wand2,
+} from "lucide-react";
 import { HybridStudyBoard } from "@/components/hybrid/HybridStudyBoard";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -18,7 +26,7 @@ export const Route = createFileRoute("/hybrid/course")({
       {
         name: "description",
         content:
-          "Hybrid BBE + WiSo course: shared math, bridge cases, economics, English, German, mocks, flashcards, matching, and tutor exam.",
+          "Hybrid BBE + WiSo course: shared math in English and German, a hybrid paper, bridge cases, economics, English, German, mocks, flashcards, matching, and tutor exam.",
       },
       { name: "robots", content: "noindex, follow" },
     ],
@@ -195,7 +203,8 @@ const hybridModes = [
   {
     id: "math",
     title: "Shared Math library",
-    blurb: "Thirteen chapters, English or German stem, one progress count for both exams.",
+    blurb:
+      "Thirteen chapters. Work the paper in English or German, or open the split desk and read both stems. One progress count.",
     to: "/hybrid/math",
     icon: Layers,
     cta: "Open math library →",
@@ -207,6 +216,14 @@ const hybridModes = [
     to: "/hybrid/bridge",
     icon: GitBranch,
     cta: "Open bridge library →",
+  },
+  {
+    id: "paper",
+    title: "Hybrid paper",
+    blurb: "Mathematics plus German reading. Lean the paper toward BBE, half, or WiSo.",
+    to: "/hybrid/mock-builder",
+    icon: FileText,
+    cta: "Open paper builder →",
   },
 ] as const;
 
@@ -247,8 +264,9 @@ function HybridCoursePage() {
               Hybrid Course
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Shared math and bridge cases count once. English and German stay separate. The rest of
-              both full courses sits underneath.
+              Shared math counts once, in English, German, or both at the same time. The hybrid
+              paper leans toward BBE, half, or WiSo. Bridge cases and both full libraries sit
+              underneath.
             </p>
           </div>
 
