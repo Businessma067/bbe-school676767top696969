@@ -31,6 +31,8 @@ export function SharedMathLibrary() {
         const tasks = await loadMathChapterTasks(num);
         if (cancelled) return;
         setTotals((prev) => (prev[num] === tasks.length ? prev : { ...prev, [num]: tasks.length }));
+        const ids = tasks.map((t) => t.id);
+        setChapterIds((prev) => (prev[num] ? prev : { ...prev, [num]: ids }));
       }
     })();
     return () => {
