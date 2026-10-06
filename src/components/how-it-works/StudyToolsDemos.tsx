@@ -294,20 +294,30 @@ export function CourseFlashDemo({
         const inner = innerMotion.current;
         if (inner) inner.style.transform = `rotateY(${(180 * next).toFixed(2)}deg)`;
       };
+      let motion = 0;
       const flipAfterClick = async () => {
-        await api.tween(460, (eased) => paintTurn(eased));
+        const gen = ++motion;
+        await api.tween(280, (eased) => {
+          if (gen !== motion) return;
+          paintTurn(eased);
+        });
+        if (gen !== motion || api.cancelled()) return;
         setTurn(1);
       };
       const swipeAfterClick = async (dir: "left" | "right", swap: () => void) => {
+        const gen = ++motion;
         const sign = dir === "right" ? 1 : -1;
+        paintTurn(1);
+        setTurn(1);
         await api.tween(400, (eased) => {
+          if (gen !== motion) return;
           paintCard({
             x: sign * 112 * eased,
             rot: sign * 12 * eased,
             opacity: 1 - 0.75 * eased,
           });
         });
-        if (api.cancelled()) return;
+        if (gen !== motion || api.cancelled()) return;
         paintTurn(0);
         setTurn(0);
         swap();
@@ -316,9 +326,11 @@ export function CourseFlashDemo({
         setSlide(entered);
         await api.flush();
         await api.tween(340, (eased) => {
+          if (gen !== motion) return;
           const remain = 1 - eased;
           paintCard({ x: -sign * 46 * remain, rot: 0, opacity: eased });
         });
+        if (gen !== motion) return;
         paintCard(CARD_REST);
         setSlide(CARD_REST);
       };
@@ -335,20 +347,17 @@ export function CourseFlashDemo({
       await api.wait(160);
 
       if (!(await arriveAndClick(api, '[data-d="term"]'))) return;
-      const firstFlip = flipAfterClick();
+      void flipAfterClick();
       await api.moveTo('[data-d="dont"]', 60);
-      await firstFlip;
       if (api.cancelled()) return;
       await api.click();
       setUnknown(1);
-      const firstSwipe = swipeAfterClick("left", () => setIdx(1));
+      void swipeAfterClick("left", () => setIdx(1));
       await api.moveTo('[data-d="flip"]', 60);
-      await firstSwipe;
       if (api.cancelled()) return;
       await api.click();
-      const secondFlip = flipAfterClick();
+      void flipAfterClick();
       await api.moveTo('[data-d="know"]', 60);
-      await secondFlip;
       if (api.cancelled()) return;
       await api.click();
       setKnown(1);

@@ -397,7 +397,8 @@ export function useDemoPlayer(
       lastSelector = selector;
       await settleOn(selector);
       if (cancelled) return;
-      await wait(cinematic ? Math.max(dwell, 160) : dwell);
+      // How it works clicks on arrival. A rest here is the freeze before the press.
+      if (!cinematic) await wait(dwell);
     };
 
     const reveal = async (selector: string) => {
@@ -419,7 +420,9 @@ export function useDemoPlayer(
       // does not finish on a sheet or card that just replaced the target.
       setClicking(true);
       await flush();
-      await wait(110);
+      // A short tap on the How it works pointer. The news demos keep the longer press.
+      if (cinematic) await sleep(80);
+      else await wait(110);
       if (cancelled) {
         setClicking(false);
         return;
