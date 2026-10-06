@@ -60,8 +60,8 @@ export function SharedMathLibrary() {
             English or German stem, one result
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Chapters 1–13 are the shared mathematics syllabus. Open a chapter as a paper and switch
-            EN or DE, or open the split desk and read both stems of the same task. A fully correct
+            Chapters 1–13 are the shared mathematics syllabus. Open a chapter as a paper, or take
+            each task in order: the focus decides whether BBE or WiSo comes first. A fully correct
             task is stored once. Tasks still in revision stay out of the count until every statement
             is right.
           </p>
@@ -141,7 +141,7 @@ export function SharedMathLibrary() {
                         Paper
                       </Link>
                       <Link to="/hybrid/math" search={{ chapter: num, view: "split" }}>
-                        Split EN / DE
+                        BBE then WiSo
                       </Link>
                     </div>
                   </article>

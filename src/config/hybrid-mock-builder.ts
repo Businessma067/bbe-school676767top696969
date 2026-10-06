@@ -2,9 +2,9 @@
  * Hybrid paper: shared mathematics plus German reading.
  * The lean moves the paper between a BBE-shaped mix and a WiSo-shaped mix.
  *
- * 0 = BBE. Mathematics stays in English. German reading is the smaller block.
- * 50 = half. The two sections are equal, and math stems split evenly by language.
- * 100 = WiSo. Mathematics is in German. The section ratio follows 13 math + 9 German.
+ * 0 = BBE. The paper opens on English mathematics, then a WiSo task.
+ * 50 = half. One BBE task, then one WiSo task, for the whole paper.
+ * 100 = WiSo. The paper opens on a WiSo task, then a BBE task.
  */
 
 export const HYBRID_PAPER_MIN_QUESTIONS = 6;
@@ -120,7 +120,46 @@ export type PaperSection = {
   count: number;
 };
 
-/** Order on the paper: English math, then German math, then German reading. */
+export type TrackSide = "bbe" | "wiso";
+
+/**
+ * Focus leads. The other track follows. Spacing follows the two counts,
+ * so a longer side is spread through the paper instead of dumped at the end.
+ */
+export function weaveByLead<T>(leadItems: readonly T[], followItems: readonly T[]): T[] {
+  const out: T[] = [];
+  let i = 0;
+  let j = 0;
+  let debt = 0;
+  while (i < leadItems.length || j < followItems.length) {
+    if (i >= leadItems.length) {
+      out.push(followItems[j++]);
+      continue;
+    }
+    if (j >= followItems.length) {
+      out.push(leadItems[i++]);
+      continue;
+    }
+    if (debt <= 0) {
+      out.push(leadItems[i++]);
+      debt += followItems.length;
+    } else {
+      out.push(followItems[j++]);
+      debt -= leadItems.length;
+    }
+  }
+  return out;
+}
+
+/** BBE = English mathematics. WiSo = German mathematics and German reading. */
+export function focusRhythm(mix: HybridPaperMix): TrackSide[] {
+  const bbe = Array.from({ length: mix.enMath }, (): TrackSide => "bbe");
+  const wiso = Array.from({ length: mix.deMath + mix.germanCount }, (): TrackSide => "wiso");
+  if (mix.leanId === "wiso") return weaveByLead(wiso, bbe);
+  return weaveByLead(bbe, wiso);
+}
+
+/** Counts only. The sitting order is focusRhythm, one task at a time. */
 export function paperSections(mix: HybridPaperMix): PaperSection[] {
   const sections: PaperSection[] = [];
   if (mix.enMath > 0) {

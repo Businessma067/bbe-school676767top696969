@@ -28,7 +28,7 @@ function HybridMockBuilderPage() {
   return (
     <HybridShell
       title="Hybrid paper"
-      lead="One builder for shared mathematics and German reading. Set the lean to BBE, half, or WiSo. Mathematics stays one bank; only the stem language and the size of the German block move."
+      lead="Mathematics and German reading, one task at a time. The focus sets which track opens the paper and how the two tracks alternate. The order follows the book."
     >
       <HybridPaperBuilder key={lean ?? "half"} initialLean={lean ?? "half"} />
     </HybridShell>

@@ -44,12 +44,12 @@ const FEATURES = [
   {
     icon: Layers,
     title: "Shared Math library",
-    text: "Thirteen chapters. Paper view in English or German, or the split desk with both stems of the same task.",
+    text: "Thirteen chapters. One task at a time, BBE then WiSo or the reverse, following the focus you pick.",
   },
   {
     icon: FileText,
     title: "Hybrid paper",
-    text: "Mathematics plus German reading. Lean the paper toward BBE, half, or WiSo before you sit down.",
+    text: "Mathematics plus German reading, one task at a time. The focus sets BBE then WiSo, or the reverse.",
   },
   {
     icon: GitBranch,
@@ -175,8 +175,8 @@ export function HybridCourseProductPage() {
             <ul className="mt-4 space-y-2">
               {[
                 "Hybrid hub with twin readiness and a daily plan",
-                "Shared Math library, chapters 1–13, with a split English/German desk",
-                "Hybrid paper: mathematics plus German reading, leaned toward BBE, half, or WiSo",
+                "Shared Math library, chapters 1–13, BBE then WiSo in the order you choose",
+                "Hybrid paper: mathematics plus German reading, BBE then WiSo or the reverse",
                 "Bridge library: 20 concepts in 4 units",
                 "Full BBE Course library (econ, math, English, mocks, tools)",
                 "Full WiSo Course library (Wirtschaft verstehen, math, German, mocks, tools)",

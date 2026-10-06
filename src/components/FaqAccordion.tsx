@@ -133,7 +133,7 @@ export const hybridFaqs = [
   {
     question: "Which modes are on the Hybrid course page?",
     answer:
-      "The same modes as both tracks: subject practice, full mocks, custom mock builders, flashcards, matching, and tutor exam. Hybrid adds the Shared Math library, including a split English/German desk, Bridge Cases, and a hybrid paper of mathematics plus German reading that leans toward BBE, half, or WiSo.",
+      "The same modes as both tracks: subject practice, full mocks, custom mock builders, flashcards, matching, and tutor exam. Hybrid adds the Shared Math library, where each task is BBE then WiSo or the reverse, Bridge Cases, and a hybrid paper of mathematics plus German reading in that same order.",
   },
   {
     question: "How much does Hybrid cost?",

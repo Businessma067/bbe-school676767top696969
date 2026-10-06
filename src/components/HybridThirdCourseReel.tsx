@@ -39,7 +39,7 @@ const PAPER_ROWS = [
 const MODES = [
   {
     name: "Shared math library",
-    text: "Thirteen chapters, one queue. Open a stem in English, in German, or both at once. A fully correct task counts for BBE and WiSo.",
+    text: "Thirteen chapters, one queue. Each task is BBE, then WiSo, or the other way around. A fully correct task counts once.",
   },
   {
     name: "Bridge case library",
@@ -47,7 +47,7 @@ const MODES = [
   },
   {
     name: "Hybrid paper",
-    text: "Mathematics plus German reading. Lean it toward BBE, half, or WiSo: the stem language and the size of the German block both move.",
+    text: "Mathematics plus German reading, one task at a time. Pick a focus and the paper opens on BBE or on WiSo, then alternates.",
   },
   {
     name: "Both full libraries",

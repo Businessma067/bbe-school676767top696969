@@ -204,7 +204,7 @@ const hybridModes = [
     id: "math",
     title: "Shared Math library",
     blurb:
-      "Thirteen chapters. Work the paper in English or German, or open the split desk and read both stems. One progress count.",
+      "Thirteen chapters. One task at a time: BBE, then WiSo, or the other way around. One progress count.",
     to: "/hybrid/math",
     icon: Layers,
     cta: "Open math library →",
@@ -220,7 +220,7 @@ const hybridModes = [
   {
     id: "paper",
     title: "Hybrid paper",
-    blurb: "Mathematics plus German reading. Lean the paper toward BBE, half, or WiSo.",
+    blurb: "Mathematics plus German reading, one task at a time. BBE then WiSo, or the reverse.",
     to: "/hybrid/mock-builder",
     icon: FileText,
     cta: "Open paper builder →",
