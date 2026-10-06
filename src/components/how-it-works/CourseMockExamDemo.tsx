@@ -17,7 +17,7 @@ import { formatExamTime, formatQuestionTime } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
-import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { glideFrame, glideRead } from "./course-motion";
 
@@ -178,7 +178,7 @@ export function CourseMockExamDemo({
     await api.moveTo('[data-d="prose0"]', 40);
     await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
     await api.wait(280);
-  }, [rest], { rest });
+  }, [rest], { rest, glideScale: howItWorksGlide(rest) });
 
   const question = QUESTIONS[index] ?? QUESTIONS[0]!;
   const currentMarks = marks[question.id] ?? EMPTY_MARKS;

@@ -3,13 +3,13 @@ import { BookOpen, ChevronDown, PanelLeftOpen } from "lucide-react";
 import { MATH_COURSE_THEORY, type MathCourseTheoryChapter } from "@/data/math-course-theory";
 import { TheoryArticle } from "@/components/TheoryReader";
 import type { DemoPlayerApi } from "@/components/news/demos/useDemoPlayer";
-import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 
 const READ = [1, 10, 11] as const;
 
-/** Cruise speed of the single chapter glide. */
-const CRUISE_PX_PER_MS = 2.7;
+/** Cruise speed of the single chapter glide, a little under the news demo. */
+const CRUISE_PX_PER_MS = 2.45;
 
 const CHAPTERS = Object.values(MATH_COURSE_THEORY).sort((a, b) => a.num - b.num);
 
@@ -145,7 +145,7 @@ async function glideHand(
     api.setCursorAt(to);
     return;
   }
-  const ms = duration ?? Math.round(Math.min(340, Math.max(190, dist / 2.25)));
+  const ms = duration ?? Math.round(Math.min(1100, Math.max(220, dist / 1.1)));
   const started = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
@@ -272,7 +272,7 @@ export function CourseTheoryDemo({
       await readChapter(num);
     }
     await api.wait(360);
-  }, [rest], { rest, glideScale: 1.1 });
+  }, [rest], { rest, glideScale: howItWorksGlide(rest) });
 
   const chapter = open == null ? null : MATH_COURSE_THEORY[open];
 

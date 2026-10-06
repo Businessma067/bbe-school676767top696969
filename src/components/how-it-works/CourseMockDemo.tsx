@@ -11,7 +11,7 @@ import { balancedPoint, type TopicWeightTopic, type Vec2 } from "@/lib/topic-wei
 import { cn } from "@/lib/utils";
 import { DemoStatementTable } from "@/components/news/demos/DemoStatementTable";
 import { formatExamTime } from "@/lib/mock-exam-session";
-import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { MOCK_BUILDER_FIRST } from "./course-tasks";
 
@@ -141,7 +141,7 @@ export function CourseMockDemo({
       await api.wait(280);
     },
     [chapter, picks, rest],
-    { rest },
+    { rest, glideScale: howItWorksGlide(rest) },
   );
 
   return (

@@ -4,7 +4,7 @@ import {
   practiceSubmitButtonClass,
 } from "@/lib/practice-button-styles";
 import { DemoStatementTable, demoCorrectCount } from "@/components/news/demos/DemoStatementTable";
-import { useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 import { CoursePassage, CourseSolution } from "./CourseSolution";
 import { scrollPanelTo } from "./course-motion";
@@ -79,7 +79,7 @@ export function CourseEnglishDemo({
     await api.wait(70);
     await api.moveTo('[data-d="line"]');
     await api.wait(rest > 1 ? 520 : 400);
-  }, [markAt, rest, showAt], { rest });
+  }, [markAt, rest, showAt], { rest, glideScale: howItWorksGlide(rest) });
 
   const score = demoCorrectCount(marks, task.answerKey);
 

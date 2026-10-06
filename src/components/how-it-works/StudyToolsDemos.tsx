@@ -4,7 +4,7 @@ import { FlashcardMath } from "@/components/FlashcardMath";
 import { countCards, ECONOMICS_FLASHCARD_SECTIONS } from "@/data/flashcards";
 import { TUTOR_CORRECT, TUTOR_GREETINGS } from "@/lib/tutor-exam";
 import { cn } from "@/lib/utils";
-import { useDemoPlayer, type DemoPlayerApi } from "@/components/news/demos/useDemoPlayer";
+import { howItWorksGlide, useDemoPlayer, type DemoPlayerApi } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 
 const ACCENT = "#c8763a";
@@ -352,7 +352,7 @@ export function CourseFlashDemo({
       await api.wait(280);
     },
     [rest],
-    { flow: true, rest },
+    { flow: true, rest, glideScale: howItWorksGlide(rest) },
   );
 
   const card = cards[idx] ?? cards[0];
@@ -545,7 +545,7 @@ export function CourseMatchDemo({
       await api.wait(360);
     },
     [rest],
-    { flow: true, rest },
+    { flow: true, rest, glideScale: howItWorksGlide(rest) },
   );
 
   return (
@@ -747,7 +747,7 @@ export function CourseTutorDemo({
       await api.wait(400);
     },
     [rest],
-    { flow: true, rest },
+    { flow: true, rest, glideScale: howItWorksGlide(rest) },
   );
 
   const question = questions[index] ?? questions[0];

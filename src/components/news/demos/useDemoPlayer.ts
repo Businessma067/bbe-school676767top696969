@@ -45,6 +45,14 @@ const flowEase = (t: number) => {
 const MAX_FRAME_MS = 34;
 
 /**
+ * How it works pointer, just under the Welcome news demo.
+ * News keeps the default scale. The same ease, a slightly lower speed.
+ */
+export function howItWorksGlide(rest = 1) {
+  return rest > 1 ? 3.54 : 2;
+}
+
+/**
  * Shared rAF cursor loop used by news unique demos.
  * Matches MockBuilderSimulator smoothness: DOM transform cursor, visibility pause, eased tweens.
  */
