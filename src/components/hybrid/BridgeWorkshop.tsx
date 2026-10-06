@@ -1,6 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState, type Dispatch, type SetStateAction } from "react";
 import { Check, ChevronRight } from "lucide-react";
+import { StatementMarkTable } from "@/components/StatementMarkTable";
+import {
+  practiceExplanationToggleClass,
+  practiceSubmitButtonClass,
+  practiceTryAgainButtonClass,
+} from "@/lib/practice-button-styles";
 import {
   BRIDGE_PASS_RATIO,
   BRIDGE_TERMS,
@@ -34,88 +40,60 @@ function scoreSide(
   answers: Array<boolean | null>,
 ): { correct: number; total: number; complete: boolean } {
   const total = side.statements.length;
-  const complete =
-    answers.length >= total && answers.slice(0, total).every((value) => value != null);
   const correct = side.statements.reduce(
-    (sum, statement, index) => sum + (answers[index] === statement.answer ? 1 : 0),
+    (sum, statement, index) => sum + ((answers[index] === true) === statement.answer ? 1 : 0),
     0,
   );
-  return { correct, total, complete };
+  return { correct, total, complete: true };
 }
 
 function SidePlayer({
   side,
   label,
-  accent,
-  trueLabel,
-  falseLabel,
+  statementHeading,
+  trueHeading,
   answers,
   checked,
+  explanationsOpen,
   onToggle,
 }: {
   side: BridgeSide;
   label: string;
-  accent: string;
-  trueLabel: string;
-  falseLabel: string;
+  statementHeading: string;
+  trueHeading: string;
   answers: Array<boolean | null>;
   checked: boolean;
-  onToggle: (index: number, value: boolean) => void;
+  explanationsOpen: boolean;
+  onToggle: (index: number) => void;
 }) {
   return (
-    <div
-      className="rounded-2xl border border-border bg-card p-5 shadow-sm"
-      style={{ borderTop: `4px solid ${accent}` }}
-    >
-      <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: accent }}>
-        {label}
-      </p>
-      <p className="mt-2 text-sm leading-relaxed text-foreground">{side.stem}</p>
-      <ul className="mt-4 space-y-3">
-        {side.statements.map((statement, index) => {
-          const chosen = answers[index];
-          const correct = checked && chosen === statement.answer;
-          const wrong = checked && chosen != null && chosen !== statement.answer;
-          return (
-            <li key={index} className="rounded-xl border border-border/80 p-3">
-              <p className="text-sm text-foreground">{statement.text}</p>
-              <div className="mt-2 flex gap-2">
-                {(
-                  [
-                    [true, trueLabel],
-                    [false, falseLabel],
-                  ] as const
-                ).map(([value, labelText]) => (
-                  <button
-                    key={labelText}
-                    type="button"
-                    disabled={checked}
-                    onClick={() => onToggle(index, value)}
-                    className={cn(
-                      "rounded-md px-3 py-1.5 text-xs font-semibold transition-colors",
-                      chosen === value
-                        ? "text-white"
-                        : "border border-border bg-background text-foreground",
-                      checked && statement.answer === value && "ring-2 ring-emerald-500",
-                      wrong && chosen === value && "bg-destructive text-white",
-                      correct && chosen === value && "bg-emerald-600 text-white",
-                    )}
-                    style={!checked && chosen === value ? { backgroundColor: accent } : undefined}
-                  >
-                    {labelText}
-                  </button>
-                ))}
-              </div>
-              {checked ? (
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                  {statement.explanation}
-                </p>
-              ) : null}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+          {label}
+        </span>
+      </div>
+      <p className="text-sm leading-relaxed text-foreground">{side.stem}</p>
+      <StatementMarkTable
+        statements={side.statements.map((statement) => statement.text)}
+        marked={side.statements.map((_, index) => answers[index] === true)}
+        answerKey={side.statements.map((statement) => statement.answer)}
+        checked={checked}
+        onToggle={onToggle}
+        statementHeading={statementHeading}
+        trueHeading={trueHeading}
+      />
+      {checked && explanationsOpen ? (
+        <div className="mt-4 space-y-3 rounded-xl border border-border bg-secondary/30 p-4 text-sm sm:p-5">
+          {side.statements.map((statement, index) => (
+            <p key={index} className="leading-relaxed text-foreground">
+              <span className="font-semibold">{String.fromCharCode(65 + index)}.</span>{" "}
+              {statement.explanation}
+            </p>
+          ))}
+        </div>
+      ) : null}
+    </article>
   );
 }
 
@@ -135,6 +113,8 @@ export function BridgeWorkshop({
   const [bbeChecked, setBbeChecked] = useState(false);
   const [wisoChecked, setWisoChecked] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
+  const [bbeExplain, setBbeExplain] = useState(false);
+  const [wisoExplain, setWisoExplain] = useState(false);
 
   useEffect(() => {
     setProgress(loadHybridProgress());
@@ -147,6 +127,8 @@ export function BridgeWorkshop({
     setWisoAnswers(emptyAnswers(active.wiso.statements.length));
     setBbeChecked(false);
     setWisoChecked(false);
+    setBbeExplain(false);
+    setWisoExplain(false);
     setNotice(null);
   }, [active]);
 
@@ -159,10 +141,7 @@ export function BridgeWorkshop({
   return (
     <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
       <aside className="lg:sticky lg:top-24 lg:max-h-[calc(100svh-7rem)] lg:overflow-y-auto">
-        <div
-          className="rounded-2xl border border-border bg-card p-4 shadow-sm"
-          style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
-        >
+        <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
           <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
             Library
           </p>
@@ -211,19 +190,13 @@ export function BridgeWorkshop({
                           onClick={() => open(item.id)}
                           className={cn(
                             "flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left text-xs",
-                            selected ? "text-white" : "hover:bg-secondary",
+                            selected ? "bg-primary/10 font-semibold" : "hover:bg-secondary",
                           )}
-                          style={selected ? { backgroundColor: HYBRID_ACCENT } : undefined}
                         >
                           <span className="w-3 shrink-0">{done ? "✓" : ""}</span>
                           <span className="min-w-0 flex-1">{item.conceptTitle}</span>
                           {best ? (
-                            <span
-                              className={cn(
-                                "shrink-0 tabular-nums",
-                                selected ? "text-white/80" : "text-muted-foreground",
-                              )}
-                            >
+                            <span className="shrink-0 tabular-nums text-muted-foreground">
                               {best.bbeCorrect + best.wisoCorrect}/{best.total * 2}
                             </span>
                           ) : null}
@@ -254,6 +227,10 @@ export function BridgeWorkshop({
             setWisoChecked={setWisoChecked}
             notice={notice}
             setNotice={setNotice}
+            bbeExplain={bbeExplain}
+            wisoExplain={wisoExplain}
+            setBbeExplain={setBbeExplain}
+            setWisoExplain={setWisoExplain}
             cleared={passed.has(active.id)}
             onProgress={setProgress}
             onOpenCase={onOpenCase}
@@ -283,13 +260,10 @@ function LibraryIntro({
   onOpen: (id: string) => void;
 }) {
   return (
-    <div
-      className="rounded-2xl border border-border bg-card p-6 shadow-sm"
-      style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
-    >
+    <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center sm:p-10">
       <h2 className="font-display text-2xl font-semibold">One concept, two papers</h2>
       <ol className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
-        <li>1. Read the English stem and mark every statement true or false.</li>
+        <li>1. Read the English stem and mark each true statement.</li>
         <li>
           2. Check it. Explanations stay on the card. Then do the German stem of the same idea.
         </li>
@@ -305,11 +279,7 @@ function LibraryIntro({
         <button
           type="button"
           onClick={() => onOpen(nextId)}
-          className="mt-5 inline-flex items-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
-          style={{
-            backgroundColor: HYBRID_ACCENT,
-            boxShadow: `0 4px 14px -4px ${HYBRID_ACCENT}80`,
-          }}
+          className={`mt-5 ${practiceSubmitButtonClass}`}
         >
           {cleared > 0 ? "Continue the next open case" : "Start the first case"}
           <ChevronRight className="ml-1 h-4 w-4" />
@@ -333,6 +303,10 @@ function CasePlayer({
   setWisoChecked,
   notice,
   setNotice,
+  bbeExplain,
+  wisoExplain,
+  setBbeExplain,
+  setWisoExplain,
   cleared,
   onProgress,
   onOpenCase,
@@ -350,6 +324,10 @@ function CasePlayer({
   setWisoChecked: (value: boolean) => void;
   notice: string | null;
   setNotice: (value: string | null) => void;
+  bbeExplain: boolean;
+  wisoExplain: boolean;
+  setBbeExplain: (value: boolean) => void;
+  setWisoExplain: (value: boolean) => void;
   cleared: boolean;
   onProgress: (progress: HybridProgress) => void;
   onOpenCase: (id: string | null) => void;
@@ -384,6 +362,8 @@ function CasePlayer({
     setWisoAnswers(emptyAnswers(active.wiso.statements.length));
     setBbeChecked(false);
     setWisoChecked(false);
+    setBbeExplain(false);
+    setWisoExplain(false);
     setStage("bbe");
     setNotice(null);
   };
@@ -446,26 +426,26 @@ function CasePlayer({
         <SidePlayer
           side={active.bbe}
           label="BBE · English"
-          accent={BBE}
-          trueLabel="True"
-          falseLabel="False"
+          statementHeading="Statement"
+          trueHeading="True"
           answers={bbeAnswers}
           checked={bbeChecked}
-          onToggle={(index, value) =>
-            setBbeAnswers((prev) => prev.map((item, i) => (i === index ? value : item)))
+          explanationsOpen={bbeExplain}
+          onToggle={(index) =>
+            setBbeAnswers((prev) => prev.map((item, i) => (i === index ? item !== true : item)))
           }
         />
       ) : (
         <SidePlayer
           side={active.wiso}
           label="WiSo · Deutsch"
-          accent={WISO}
-          trueLabel="Richtig"
-          falseLabel="Falsch"
+          statementHeading="Aussage"
+          trueHeading="Richtig"
           answers={wisoAnswers}
           checked={wisoChecked}
-          onToggle={(index, value) =>
-            setWisoAnswers((prev) => prev.map((item, i) => (i === index ? value : item)))
+          explanationsOpen={wisoExplain}
+          onToggle={(index) =>
+            setWisoAnswers((prev) => prev.map((item, i) => (i === index ? item !== true : item)))
           }
         />
       )}
@@ -473,24 +453,21 @@ function CasePlayer({
       {notice ? <p className="mt-4 text-sm font-medium text-foreground">{notice}</p> : null}
 
       <div className="mt-5 flex flex-wrap gap-3">
-        {stage === "bbe" ? (
+        {stage === "bbe" && !bbeChecked ? (
           <button
             type="button"
             onClick={() => {
-              if (!bbeScore.complete) {
-                setNotice("Mark every English statement before checking.");
-                return;
-              }
               setBbeChecked(true);
-              setNotice(`${bbeScore.correct}/${bbeScore.total} on the English side.`);
+              setBbeExplain(true);
+              setNotice(`${bbeScore.correct}/${bbeScore.total} correct`);
               setStage("wiso");
             }}
-            className="rounded-md px-4 py-2.5 text-sm font-semibold text-white"
-            style={{ backgroundColor: BBE }}
+            className={practiceSubmitButtonClass}
           >
-            Check English → German
+            Check Answers / Submit
           </button>
-        ) : (
+        ) : null}
+        {stage === "wiso" && !wisoChecked ? (
           <button
             type="button"
             onClick={() => {
@@ -499,26 +476,31 @@ function CasePlayer({
                 setStage("bbe");
                 return;
               }
-              if (!wisoScore.complete) {
-                setNotice("Mark every German statement before checking.");
-                return;
-              }
               setWisoChecked(true);
+              setWisoExplain(true);
               finish(true);
             }}
-            className="rounded-md px-4 py-2.5 text-sm font-semibold text-white"
-            style={{ backgroundColor: WISO }}
+            className={practiceSubmitButtonClass}
           >
-            Check German and score the bridge
+            Check Answers / Submit
           </button>
-        )}
-        <button
-          type="button"
-          onClick={retry}
-          className="rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold"
-        >
-          Retry case
-        </button>
+        ) : null}
+        {(stage === "bbe" && bbeChecked) || (stage === "wiso" && wisoChecked) ? (
+          <>
+            <button type="button" onClick={retry} className={practiceTryAgainButtonClass}>
+              Try again
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                stage === "bbe" ? setBbeExplain(!bbeExplain) : setWisoExplain(!wisoExplain)
+              }
+              className={practiceExplanationToggleClass(stage === "bbe" ? bbeExplain : wisoExplain)}
+            >
+              {(stage === "bbe" ? bbeExplain : wisoExplain) ? "Hide Explanation" : "Explanation"}
+            </button>
+          </>
+        ) : null}
         {nextId ? (
           <button
             type="button"

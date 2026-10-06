@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { MathTasksPage } from "@/components/MathTasksPage";
-import { HybridShell } from "@/components/hybrid/HybridShell";
 import { BilingualMathDesk } from "@/components/hybrid/BilingualMathDesk";
-import { SharedMathLibrary } from "@/components/hybrid/SharedMathLibrary";
+import { SiteHeader } from "@/components/SiteHeader";
 import { loadMathChapterTasks } from "@/data/math-chapters";
 import { loadWisoMathChapterTasks } from "@/data/wiso-math-chapters";
 import { HYBRID_ACCENT } from "@/lib/hybrid-course";
 import { HYBRID_MATH_STORAGE_KEY, syncSharedMathIntoHybrid } from "@/lib/hybrid-math";
+import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 
 type MathSearch = { chapter?: number; view?: "split" };
@@ -47,40 +47,33 @@ function HybridMathPage() {
     [lang],
   );
 
-  if (chapter == null) {
+  if (view === "split" && chapter != null) {
     return (
-      <HybridShell
-        title="Shared Math"
-        lead="Thirteen chapters, one progress store. Open a chapter as a paper, or take the same task in order: BBE, then WiSo, or the other way around."
-      >
-        <SharedMathLibrary />
-      </HybridShell>
-    );
-  }
-
-  if (view === "split") {
-    return (
-      <HybridShell
-        title="Shared Math"
-        lead="One task on screen. The focus sets whether BBE or WiSo comes first. The other language of that task is the next step."
-      >
-        <div className="mb-4">
-          <Link
-            to="/hybrid/math"
-            search={{}}
-            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
-          >
-            ← Library
-          </Link>
+      <div className={PRACTICE_PAGE}>
+        <SiteHeader
+          maxWidthClassName="max-w-none"
+          compact
+          actions={
+            <Link
+              to="/hybrid/course"
+              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+            >
+              ← Hybrid Course
+            </Link>
+          }
+        />
+        <div className={PRACTICE_BODY_STACK}>
+          <main className="min-w-0 flex-1">
+            <BilingualMathDesk chapter={chapter} />
+          </main>
         </div>
-        <BilingualMathDesk chapter={chapter} />
-      </HybridShell>
+      </div>
     );
   }
 
   return (
     <MathTasksPage
-      key={`${lang}-${chapter}`}
+      key={`${lang}-${chapter ?? "library"}`}
       tier="full"
       initialChapter={chapter}
       storageKey={HYBRID_MATH_STORAGE_KEY}
@@ -91,15 +84,14 @@ function HybridMathPage() {
       headerActions={
         <div className="flex items-center gap-2">
           <Link
-            to="/hybrid/math"
-            search={{}}
+            to="/hybrid/course"
             className="rounded-md border border-border bg-card px-2.5 py-1 text-[11px] font-semibold text-foreground"
           >
-            Library
+            ← Course
           </Link>
           <Link
             to="/hybrid/math"
-            search={{ chapter, view: "split" }}
+            search={{ chapter: chapter ?? 1, view: "split" }}
             className="rounded-md border border-border bg-card px-2.5 py-1 text-[11px] font-semibold text-foreground"
           >
             In order
