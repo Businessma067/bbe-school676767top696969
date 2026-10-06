@@ -26,6 +26,15 @@ const EXAM_SECONDS = 2 * 60 * 60;
 const QUESTIONS = buildMockExam1Questions();
 const ENGLISH_AT = QUESTIONS.findIndex((question) => question.subject === "english");
 const MATH_AT = QUESTIONS.findIndex((question) => question.subject === "math");
+/** Differentiation task (chapter 11). It is question 32 on the current paper. */
+const DERIV_AT = (() => {
+  const byChapter = QUESTIONS.findIndex(
+    (question) => question.subject === "math" && (question.subtopicTag ?? "").startsWith("#11"),
+  );
+  if (byChapter >= 0) return byChapter;
+  const byNumber = QUESTIONS.findIndex((question) => question.index === 32);
+  return byNumber >= 0 ? byNumber : MATH_AT;
+})();
 const SHOW = [0, ENGLISH_AT, MATH_AT] as const;
 
 /**
@@ -159,10 +168,13 @@ export function CourseMockExamDemo({
     await glideFrame(api, '[data-d^="stat"], [data-d="time-chart"]');
     await api.wait(80);
     await api.moveTo('[data-d="tasks"]', DWELL);
-    await api.click(() => setPhase("tasks"));
+    await api.click(() => {
+      setTaskIndex(DERIV_AT);
+      setPhase("tasks");
+    });
     await api.flush();
     resetScroll();
-    await api.wait(70);
+    await api.wait(90);
     await api.moveTo('[data-d="prose0"]', 40);
     await glideRead(api, '[data-d="prose2"]', "[data-d^='prose']");
     await api.wait(280);

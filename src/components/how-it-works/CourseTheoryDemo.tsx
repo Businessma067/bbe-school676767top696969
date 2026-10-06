@@ -165,15 +165,6 @@ async function aim(api: DemoPlayerApi, selector: string) {
   await api.moveTo(selector, 30);
 }
 
-function handInText(stage: HTMLElement, panel: HTMLElement, depth: number, across: number) {
-  const sr = stage.getBoundingClientRect();
-  const pr = panel.getBoundingClientRect();
-  return {
-    x: Math.max(24, Math.min(sr.width - 28, pr.left - sr.left + pr.width * across)),
-    y: Math.max(pr.top - sr.top + 40, Math.min(sr.height - 28, pr.top - sr.top + pr.height * depth)),
-  };
-}
-
 /** Move the chapter on the compositor. scrollTop would repaint the text and tear. */
 function placeChapter(panel: HTMLElement, offset: number, max: number) {
   const article = panel.querySelector<HTMLElement>("article");
@@ -183,24 +174,17 @@ function placeChapter(panel: HTMLElement, offset: number, max: number) {
   panel.dataset.offset = String(Math.round(offset));
 }
 
-/** Rush, then brake. The hand glides for the whole rush, with no chase and no layout. */
+/** Rush, then brake. The pointer stays where it is while the chapter moves. */
 async function rushThenStop(
   api: DemoPlayerApi,
   panel: HTMLElement,
   from: number,
   dest: number,
   max: number,
-  depth: number,
-  across: number,
 ) {
-  const stage = api.stage();
-  if (!stage) return;
   const distance = dest - from;
   if (distance < 16) return;
   const duration = Math.round(Math.max(720, distance / CRUISE_PX_PER_MS));
-  const handMs = Math.round(duration * 1.22);
-  const handFrom = cursorNow(stage);
-  const handTo = handInText(stage, panel, depth, across);
   let elapsed = 0;
   let last = performance.now();
   await new Promise<void>((resolve) => {
@@ -210,19 +194,13 @@ async function rushThenStop(
       elapsed += Math.min(28, Math.max(0, now - last));
       last = now;
       const t = Math.min(1, elapsed / duration);
-      const e = carryHand(Math.min(1, elapsed / handMs));
       placeChapter(panel, from + distance * fastThenStop(t), max);
-      api.setCursorAt({
-        x: handFrom.x + (handTo.x - handFrom.x) * e,
-        y: handFrom.y + (handTo.y - handFrom.y) * e,
-      });
-      if (t < 1 || elapsed < handMs) requestAnimationFrame(frame);
+      if (t < 1) requestAnimationFrame(frame);
       else resolve();
     };
     requestAnimationFrame(frame);
   });
   placeChapter(panel, dest, max);
-  api.setCursorAt(handTo);
 }
 
 async function readTwoStops(api: DemoPlayerApi) {
@@ -243,8 +221,6 @@ async function readTwoStops(api: DemoPlayerApi) {
     await api.wait(40);
   }
   if (!panel) return;
-  const stage = api.stage();
-  if (!stage) return;
   panel.scrollTop = 0;
   panel.style.overflow = "hidden";
   const article = panel.querySelector<HTMLElement>("article");
@@ -256,10 +232,14 @@ async function readTwoStops(api: DemoPlayerApi) {
   const first = Math.round(max * 0.4);
   const second = Math.round(Math.min(max, Math.max(first + panel.clientHeight, max * 0.76)));
   panel.dataset.max = String(max);
-  await rushThenStop(api, panel, 0, first, max, 0.46, 0.3);
+  await rushThenStop(api, panel, 0, first, max);
   if (api.cancelled()) return;
-  await glideHand(api, stage, handInText(stage, panel, 0.55, 0.42), 420);
-  await rushThenStop(api, panel, first, Math.min(second, max), max, 0.7, 0.64);
+  const pauseUntil = performance.now() + 420;
+  while (performance.now() < pauseUntil) {
+    if (api.cancelled()) return;
+    await api.flush();
+  }
+  await rushThenStop(api, panel, first, Math.min(second, max), max);
 }
 
 /** How it works · Theory: chapters 1, 10 and 11, two rushes that reach about 75%. */

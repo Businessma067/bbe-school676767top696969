@@ -21,8 +21,6 @@ const TYPES = sectionOrThrow("econ-3");
 
 const FLASH_CARDS = CORE.cards.slice(0, 3);
 
-type Side = "left" | "right" | null;
-
 const MATCH_TERMS = ["Labour", "Land", "Entrepreneurship", "Factors of production"] as const;
 
 function pairByTerm(term: string) {
@@ -161,23 +159,20 @@ const EN_TUTOR: DemoTutorCopy = {
   asking: (n) => `Tutor Bot · Q${n}`,
 };
 
-async function swipeCard(
-  api: DemoPlayerApi,
-  dir: "left" | "right",
-  setExit: (value: Side) => void,
-  setEnter: (value: Side) => void,
-  swap: () => void,
-) {
-  setExit(dir);
-  setEnter(null);
-  await api.wait(270);
-  swap();
-  setExit(null);
-  setEnter(dir === "right" ? "left" : "right");
+/** Land on the control, then press. The card must not move until this resolves. */
+async function arriveAndClick(api: DemoPlayerApi, selector: string) {
+  await api.moveTo(selector, 60);
+  if (api.cancelled()) return false;
+  api.snapTo(selector);
   await api.flush();
-  await api.wait(140);
-  setEnter(null);
+  if (api.cancelled()) return false;
+  await api.click();
+  return !api.cancelled();
 }
+
+type CardSlide = { x: number; rot: number; opacity: number };
+
+const CARD_REST: CardSlide = { x: 0, rot: 0, opacity: 1 };
 
 function StatChip({
   label,
@@ -280,47 +275,80 @@ export function CourseFlashDemo({
   lockCopy?: boolean;
 } = {}) {
   const [idx, setIdx] = useState(0);
-  const [flipped, setFlipped] = useState(false);
-  const [exitDir, setExitDir] = useState<Side>(null);
-  const [enterFrom, setEnterFrom] = useState<Side>(null);
+  const [turn, setTurn] = useState(0);
+  const [slide, setSlide] = useState<CardSlide>(CARD_REST);
   const [known, setKnown] = useState(0);
   const [unknown, setUnknown] = useState(0);
+  const cardMotion = useRef<HTMLDivElement | null>(null);
+  const innerMotion = useRef<HTMLDivElement | null>(null);
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
+      const paintCard = (next: CardSlide) => {
+        const card = cardMotion.current;
+        if (!card) return;
+        card.style.transform = `translate3d(${next.x}%, 0, 0) rotate(${next.rot}deg)`;
+        card.style.opacity = String(next.opacity);
+      };
+      const paintTurn = (next: number) => {
+        const inner = innerMotion.current;
+        if (inner) inner.style.transform = `rotateY(${(180 * next).toFixed(2)}deg)`;
+      };
+      const flipAfterClick = async () => {
+        await api.tween(460, (eased) => paintTurn(eased));
+        setTurn(1);
+      };
+      const swipeAfterClick = async (dir: "left" | "right", swap: () => void) => {
+        const sign = dir === "right" ? 1 : -1;
+        await api.tween(400, (eased) => {
+          paintCard({
+            x: sign * 112 * eased,
+            rot: sign * 12 * eased,
+            opacity: 1 - 0.75 * eased,
+          });
+        });
+        if (api.cancelled()) return;
+        paintTurn(0);
+        setTurn(0);
+        swap();
+        const entered = { x: -sign * 46, rot: 0, opacity: 0 };
+        paintCard(entered);
+        setSlide(entered);
+        await api.flush();
+        await api.tween(340, (eased) => {
+          const remain = 1 - eased;
+          paintCard({ x: -sign * 46 * remain, rot: 0, opacity: eased });
+        });
+        paintCard(CARD_REST);
+        setSlide(CARD_REST);
+      };
+
       setFade(true);
       await api.wait(160);
       setIdx(0);
-      setFlipped(false);
-      setExitDir(null);
-      setEnterFrom(null);
+      setTurn(0);
+      setSlide(CARD_REST);
       setKnown(0);
       setUnknown(0);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
       await api.wait(160);
 
-      await api.moveTo('[data-d="term"]', 40);
-      await api.click(() => setFlipped(true));
-      await api.wait(rest > 1 ? 280 : 70);
+      if (!(await arriveAndClick(api, '[data-d="term"]'))) return;
+      await flipAfterClick();
+      await api.wait(200);
 
-      await api.moveTo('[data-d="dont"]', 40);
-      await api.click(() => setUnknown(1));
-      await swipeCard(api, "left", setExitDir, setEnterFrom, () => {
-        setIdx(1);
-        setFlipped(false);
-      });
+      if (!(await arriveAndClick(api, '[data-d="dont"]'))) return;
+      setUnknown(1);
+      await swipeAfterClick("left", () => setIdx(1));
 
-      await api.moveTo('[data-d="flip"]', 40);
-      await api.click(() => setFlipped(true));
-      await api.wait(rest > 1 ? 280 : 70);
+      if (!(await arriveAndClick(api, '[data-d="flip"]'))) return;
+      await flipAfterClick();
+      await api.wait(200);
 
-      await api.moveTo('[data-d="know"]', 40);
-      await api.click(() => setKnown(1));
-      await swipeCard(api, "right", setExitDir, setEnterFrom, () => {
-        setIdx(2);
-        setFlipped(false);
-      });
+      if (!(await arriveAndClick(api, '[data-d="know"]'))) return;
+      setKnown(1);
+      await swipeAfterClick("right", () => setIdx(2));
       await api.wait(280);
     },
     [rest],
@@ -329,9 +357,6 @@ export function CourseFlashDemo({
 
   const card = cards[idx] ?? cards[0];
   const fresh = deckTotal - known - unknown;
-  const transform = exitDir
-    ? `translateX(${exitDir === "right" ? "118%" : "-118%"}) rotate(${exitDir === "right" ? 16 : -16}deg)`
-    : undefined;
 
   return (
     <CourseFrame
@@ -356,21 +381,21 @@ export function CourseFlashDemo({
       </p>
       <div className="hiw-study-flash flashcard-viewport relative overflow-x-clip py-1">
         <div
+          ref={cardMotion}
           data-d="card"
-          className={cn(
-            "flashcard-stage relative w-full",
-            exitDir
-              ? "flashcard-exiting"
-              : enterFrom === "left"
-                ? "flashcard-entering-left"
-                : enterFrom === "right"
-                  ? "flashcard-entering-right"
-                  : "",
-          )}
-          style={transform ? { transform } : undefined}
+          className="flashcard-stage relative w-full"
+          style={{
+            transform: `translate3d(${slide.x}%, 0, 0) rotate(${slide.rot}deg)`,
+            opacity: slide.opacity,
+            transition: "none",
+          }}
         >
           <div className="flashcard-flip w-full">
-            <div className={cn("flashcard-inner", flipped && "is-flipped")}>
+            <div
+              ref={innerMotion}
+              className="flashcard-inner"
+              style={{ transform: `rotateY(${turn * 180}deg)`, transition: "none" }}
+            >
               <div className="flashcard-face flashcard-front rounded-2xl border border-border bg-card p-4 shadow-sm">
                 <div className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                   <Layers className="h-3 w-3" />
@@ -507,21 +532,14 @@ export function CourseMatchDemo({
 
       for (const id of pairs.map((pair) => pair.id)) {
         if (api.cancelled()) return;
-        await api.moveTo(`[data-d="L${id}"]`, 40);
+        if (!(await arriveAndClick(api, `[data-d="L${id}"]`))) return;
+        setSelected(id);
+        await api.wait(40);
         if (api.cancelled()) return;
-        await api.click(() => {
-          if (!api.cancelled()) setSelected(id);
-        });
+        if (!(await arriveAndClick(api, `[data-d="R${id}"]`))) return;
+        setMatched((current) => (current.includes(id) ? current : [...current, id]));
+        setSelected(null);
         await api.wait(50);
-        if (api.cancelled()) return;
-        await api.moveTo(`[data-d="R${id}"]`, 40);
-        if (api.cancelled()) return;
-        await api.click(() => {
-          if (api.cancelled()) return;
-          setMatched((current) => (current.includes(id) ? current : [...current, id]));
-          setSelected(null);
-        });
-        await api.wait(70);
       }
       if (api.cancelled()) return;
       await api.wait(360);
@@ -709,27 +727,18 @@ export function CourseTutorDemo({
         if (api.cancelled()) return;
         const question = questions[q];
         const last = q === questions.length - 1;
-        await api.moveTo(`[data-d="c${question.correct}"]`, 40);
-        if (api.cancelled()) return;
-        await api.click(() => {
-          if (api.cancelled()) return;
-          setPicked(question.correct);
-          setScore(q + 1);
-        });
+        if (!(await arriveAndClick(api, `[data-d="c${question.correct}"]`))) return;
+        setPicked(question.correct);
+        setScore(q + 1);
         await api.flush();
-        api.snapTo(`[data-d="c${question.correct}"]`);
-        await api.wait(70);
+        await api.wait(50);
         if (api.cancelled()) return;
-        await api.moveTo('[data-d="next"]', 40);
-        if (api.cancelled()) return;
-        await api.click(() => {
-          if (api.cancelled()) return;
-          if (last) setFinished(true);
-          else {
-            setIndex(q + 1);
-            setPicked(null);
-          }
-        });
+        if (!(await arriveAndClick(api, '[data-d="next"]'))) return;
+        if (last) setFinished(true);
+        else {
+          setIndex(q + 1);
+          setPicked(null);
+        }
         await api.flush();
         if (!last) await api.wait(40);
       }

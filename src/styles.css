@@ -2674,6 +2674,36 @@ body.flashcard-swiping {
 }
 
 
+/* How it works: the demo and its description turn together instead of cutting. */
+::view-transition-old(hiw-pane) {
+  animation: hiw-pane-out 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+::view-transition-new(hiw-pane) {
+  animation: hiw-pane-in 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes hiw-pane-out {
+  to {
+    opacity: 0;
+    transform: translate3d(calc(var(--hiw-shift, 42px) * -0.6), 0, 0);
+  }
+}
+
+@keyframes hiw-pane-in {
+  from {
+    opacity: 0;
+    transform: translate3d(var(--hiw-shift, 42px), 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(hiw-pane),
+  ::view-transition-new(hiw-pane) {
+    animation: none;
+  }
+}
+
 /* Auto-translation: hide new page content until translated (max ~1s). */
 html[data-i18n-pending] main {
   opacity: 0;

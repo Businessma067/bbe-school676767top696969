@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { createPortal } from "react-dom";
+import { createPortal, flushSync } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -379,16 +379,41 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const liveTheoryDemo = liveTrack && tab === "theory";
   const liveStage = liveCourseDemo || liveMockDemo || liveMockExamDemo || liveStudyDemo || liveTheoryDemo;
 
-  const goSlide = (next: number) => {
-    const i = (next + slides.length) % slides.length;
-    const key = slides[i].key;
+  const applySlideKey = (key: string) => {
     if (tab === "games") setTool(key as StudyTool);
     else if (tab === "course") setSubject(key as CourseSubject);
   };
 
+  const turnPane = (dir: 1 | -1, apply: () => void) => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const start = document.startViewTransition?.bind(document);
+    if (reduce || !start) {
+      apply();
+      return;
+    }
+    document.documentElement.style.setProperty("--hiw-shift", `${dir * 42}px`);
+    try {
+      start(() => {
+        flushSync(apply);
+      });
+    } catch {
+      apply();
+    }
+  };
+
+  const goSlide = (next: number) => {
+    const i = (next + slides.length) % slides.length;
+    const key = slides[i].key;
+    if (key === slide.key) return;
+    const dir: 1 | -1 = next > slideIndex ? 1 : -1;
+    turnPane(dir, () => applySlideKey(key));
+  };
+
   const setSlideKey = (key: string) => {
-    if (tab === "games") setTool(key as StudyTool);
-    else if (tab === "course") setSubject(key as CourseSubject);
+    if (key === slide.key) return;
+    const next = slides.findIndex((item) => item.key === key);
+    const dir: 1 | -1 = next > slideIndex ? 1 : -1;
+    turnPane(dir, () => applySlideKey(key));
   };
 
   const openZoom = () => {
@@ -498,7 +523,10 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             <button
               key={item.key}
               type="button"
-              onClick={() => setTab(item.key)}
+              onClick={() => {
+                if (item.key === tab) return;
+                turnPane(1, () => setTab(item.key));
+              }}
               className={cn(
                 "min-h-11 rounded-sm border px-3 py-2.5 text-xs font-semibold tracking-wide transition-colors sm:min-h-10 sm:px-5 sm:py-2 sm:text-sm",
                 active
@@ -534,7 +562,10 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             <ChevronRight className="h-5 w-5" />
           </button>
 
-          <div className="grid items-stretch gap-5 px-9 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
+          <div
+            className="grid items-stretch gap-5 px-9 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6"
+            style={{ viewTransitionName: "hiw-pane" }}
+          >
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div
