@@ -14,7 +14,7 @@ import {
 } from "@/lib/hybrid-math-pair";
 import {
   HYBRID_MATH_STORAGE_KEY,
-  isSharedMathTaskId,
+  countSharedMathPassedIn,
   syncSharedMathIntoHybrid,
 } from "@/lib/hybrid-math";
 import { cn } from "@/lib/utils";
