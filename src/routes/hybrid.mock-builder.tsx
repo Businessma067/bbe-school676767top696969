@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { HybridShell } from "@/components/hybrid/HybridShell";
 import { HybridPaperBuilder } from "@/components/hybrid/HybridPaperBuilder";
 import type { HybridLeanId } from "@/config/hybrid-mock-builder";
 
@@ -25,12 +24,5 @@ export const Route = createFileRoute("/hybrid/mock-builder")({
 
 function HybridMockBuilderPage() {
   const { lean } = Route.useSearch();
-  return (
-    <HybridShell
-      title="Hybrid paper"
-      lead="Mathematics and German reading, one task at a time. The focus sets which track opens the paper and how the two tracks alternate. The order follows the book."
-    >
-      <HybridPaperBuilder key={lean ?? "half"} initialLean={lean ?? "half"} />
-    </HybridShell>
-  );
+  return <HybridPaperBuilder key={lean ?? "half"} initialLean={lean ?? "half"} />;
 }

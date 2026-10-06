@@ -68,8 +68,7 @@ function HybridMathPage() {
           <Link
             to="/hybrid/math"
             search={{}}
-            className="text-xs font-semibold"
-            style={{ color: HYBRID_ACCENT }}
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Library
           </Link>
