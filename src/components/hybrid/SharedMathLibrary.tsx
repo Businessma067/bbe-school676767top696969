@@ -115,7 +115,7 @@ export function SharedMathLibrary() {
               {unit.chapters.map((num) => {
                 const chapter = hybridMathChapter(num);
                 if (!chapter) return null;
-                const done = countSharedMathPassed(passed, num);
+                const done = countDone(num);
                 const total = totals[num];
                 const width = total ? Math.min(100, (done / total) * 100) : 0;
                 return (
