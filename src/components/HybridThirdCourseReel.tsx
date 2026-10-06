@@ -39,15 +39,15 @@ const PAPER_ROWS = [
 const MODES = [
   {
     name: "Shared math library",
-    text: "Thirteen chapters, one queue. A fully correct task counts for BBE and WiSo. The stem switches between English and German.",
+    text: "Thirteen chapters, one queue. Open a stem in English, in German, or both at once. A fully correct task counts for BBE and WiSo.",
   },
   {
     name: "Bridge case library",
     text: "Twenty economics concepts in four units. English statements, then the German wording of the same idea, scored as one step.",
   },
   {
-    name: "Two language lanes",
-    text: `BBE English is ${BBE_EXAM_FORMAT.englishQuestions} questions. WiSo German reading is ${WISO_EXAM_FORMAT.germanQuestions}. Neither lane moves the other paper.`,
+    name: "Hybrid paper",
+    text: "Mathematics plus German reading. Lean it toward BBE, half, or WiSo: the stem language and the size of the German block both move.",
   },
   {
     name: "Both full libraries",

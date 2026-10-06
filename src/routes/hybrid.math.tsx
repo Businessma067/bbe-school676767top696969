@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { MathTasksPage } from "@/components/MathTasksPage";
 import { HybridShell } from "@/components/hybrid/HybridShell";
+import { BilingualMathDesk } from "@/components/hybrid/BilingualMathDesk";
 import { SharedMathLibrary } from "@/components/hybrid/SharedMathLibrary";
 import { loadMathChapterTasks } from "@/data/math-chapters";
 import { loadWisoMathChapterTasks } from "@/data/wiso-math-chapters";
@@ -9,14 +10,15 @@ import { HYBRID_ACCENT } from "@/lib/hybrid-course";
 import { HYBRID_MATH_STORAGE_KEY, syncSharedMathIntoHybrid } from "@/lib/hybrid-math";
 import { cn } from "@/lib/utils";
 
-type MathSearch = { chapter?: number };
+type MathSearch = { chapter?: number; view?: "split" };
 
 export const Route = createFileRoute("/hybrid/math")({
   validateSearch: (search: Record<string, unknown>): MathSearch => {
     const raw = search.chapter;
     const n = typeof raw === "number" ? raw : typeof raw === "string" ? Number(raw) : NaN;
-    if (Number.isInteger(n) && n >= 1 && n <= 13) return { chapter: n };
-    return {};
+    const chapter = Number.isInteger(n) && n >= 1 && n <= 13 ? n : undefined;
+    if (chapter == null) return {};
+    return search.view === "split" ? { chapter, view: "split" } : { chapter };
   },
   head: () => ({
     meta: [
@@ -28,7 +30,7 @@ export const Route = createFileRoute("/hybrid/math")({
 });
 
 function HybridMathPage() {
-  const { chapter } = Route.useSearch();
+  const { chapter, view } = Route.useSearch();
   const [lang, setLang] = useState<"en" | "de">("en");
 
   useEffect(() => {
@@ -49,9 +51,30 @@ function HybridMathPage() {
     return (
       <HybridShell
         title="Shared Math"
-        lead="Thirteen chapters, one progress store. Switch the stem between English and German inside a chapter. A correct task is not studied again for the other exam."
+        lead="Thirteen chapters, one progress store. Open a chapter as a paper in English or German, or open the split desk and read both stems of the same task."
       >
         <SharedMathLibrary />
+      </HybridShell>
+    );
+  }
+
+  if (view === "split") {
+    return (
+      <HybridShell
+        title="Shared Math"
+        lead="The same task in English and German. Answers are marked once. A missing German overlay stays in English and is labelled."
+      >
+        <div className="mb-4">
+          <Link
+            to="/hybrid/math"
+            search={{}}
+            className="text-xs font-semibold"
+            style={{ color: HYBRID_ACCENT }}
+          >
+            ← Library
+          </Link>
+        </div>
+        <BilingualMathDesk chapter={chapter} />
       </HybridShell>
     );
   }
@@ -74,6 +97,13 @@ function HybridMathPage() {
             className="rounded-md border border-border bg-card px-2.5 py-1 text-[11px] font-semibold text-foreground"
           >
             Library
+          </Link>
+          <Link
+            to="/hybrid/math"
+            search={{ chapter, view: "split" }}
+            className="rounded-md border border-border bg-card px-2.5 py-1 text-[11px] font-semibold text-foreground"
+          >
+            Split
           </Link>
           <div className="inline-flex rounded-lg border border-border p-0.5">
             {(["en", "de"] as const).map((code) => (

@@ -31,7 +31,7 @@ export const Route = createFileRoute("/hybrid/")({
       {
         name: "description",
         content:
-          "Prepare for both WU Vienna entrance exams in one course: shared math and economics, English and German, mocks, and the same study modes as Full BBE and Full WiSo.",
+          "Prepare for both WU Vienna entrance exams in one course: shared math in English and German, a hybrid paper, bridge cases, and the same study modes as Full BBE and Full WiSo.",
       },
       { property: "og:title", content: "Hybrid BBE + WiSo Exam Prep | BBE School" },
       {
@@ -80,8 +80,8 @@ export function HybridLandingPage() {
               </h1>
 
               <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
-                One course for applicants who want BBE and WiSo. Shared math and economics once,
-                English and German in parallel, and every practice mode from both full courses.
+                One course for applicants who want BBE and WiSo. Shared math in English and German,
+                a paper you can lean either way, and every practice mode from both full courses.
               </p>
 
               <div

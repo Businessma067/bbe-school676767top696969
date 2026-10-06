@@ -22,6 +22,8 @@ export type HybridProgress = {
   mathDays: string[];
   /** Days a bridge case was newly cleared. */
   bridgeDays: string[];
+  /** Days a hybrid paper was built. */
+  paperDays: string[];
   /** Days (YYYY-MM-DD) when either shared block was completed. */
   plannerDays: string[];
   /** English / German overlay session counts. */
@@ -36,6 +38,7 @@ const EMPTY: HybridProgress = {
   bridgeBest: {},
   mathDays: [],
   bridgeDays: [],
+  paperDays: [],
   plannerDays: [],
   englishSessions: 0,
   germanSessions: 0,
@@ -72,6 +75,7 @@ export function loadHybridProgress(): HybridProgress {
       bridgeBest,
       mathDays: Array.isArray(parsed.mathDays) ? parsed.mathDays : [],
       bridgeDays: Array.isArray(parsed.bridgeDays) ? parsed.bridgeDays : [],
+      paperDays: Array.isArray(parsed.paperDays) ? parsed.paperDays : [],
       plannerDays: Array.isArray(parsed.plannerDays) ? parsed.plannerDays : [],
       englishSessions: typeof parsed.englishSessions === "number" ? parsed.englishSessions : 0,
       germanSessions: typeof parsed.germanSessions === "number" ? parsed.germanSessions : 0,
@@ -111,6 +115,15 @@ export function markSharedMathPassed(caseId: string): HybridProgress {
     sharedMathPassed: [...current.sharedMathPassed, caseId],
     mathDays: withToday(current.mathDays),
     plannerDays: withToday(current.plannerDays),
+  });
+}
+
+export function logHybridPaper(): HybridProgress {
+  const current = loadHybridProgress();
+  return patchHybridProgress({
+    paperDays: withToday(current.paperDays),
+    plannerDays: withToday(current.plannerDays),
+    germanSessions: current.germanSessions + 1,
   });
 }
 

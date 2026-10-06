@@ -1,7 +1,4 @@
-import {
-  isCustomExamId,
-  parseCustomMockId,
-} from "@/config/custom-mock-builder";
+import { isCustomExamId, parseCustomMockId } from "@/config/custom-mock-builder";
 import { isWisoCustomMockDbSubject } from "@/config/wiso-custom-mock-builder";
 import {
   cacheCustomMock,
@@ -17,6 +14,8 @@ import {
   type ExamQuestion,
   type MockExamSummary,
 } from "@/lib/mock-exams";
+import { isHybridMockExamId } from "@/config/hybrid-mock-builder";
+import { readHybridPaperByExamId } from "@/lib/hybrid-mock-paper";
 import { EXAM_SECONDS } from "@/lib/mock-exam-session";
 
 export type ResolvedExam = {
@@ -41,6 +40,26 @@ async function loadCustomRow(examId: string): Promise<CustomMockRow | null> {
 
 /** Resolve catalog mock or Custom Mock Builder exam for take/review. */
 export async function resolveExam(examId: string): Promise<ResolvedExam | null> {
+  if (isHybridMockExamId(examId)) {
+    const paper = readHybridPaperByExamId(examId);
+    if (!paper || paper.questions.length === 0) return null;
+    return {
+      summary: {
+        id: paper.examId,
+        title: paper.title,
+        questionCount: paper.questions.length,
+        durationMinutes: paper.durationMinutes,
+        tier: "full",
+        pointsTotal: paper.pointsTotal,
+      },
+      questions: paper.questions,
+      durationSeconds: paper.durationMinutes * 60,
+      pointsTotal: paper.pointsTotal,
+      isCustom: true,
+      track: paper.lean >= 75 ? "wiso" : "bbe",
+    };
+  }
+
   if (isCustomExamId(examId)) {
     const row = await loadCustomRow(examId);
     if (!row || !row.questions?.length) return null;
@@ -68,9 +87,7 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
     console.error("[resolveExam] empty question set", examId);
     return null;
   }
-  const pointsTotal =
-    summary.pointsTotal ??
-    questions.reduce((sum, q) => sum + q.maxPoints, 0);
+  const pointsTotal = summary.pointsTotal ?? questions.reduce((sum, q) => sum + q.maxPoints, 0);
   return {
     summary,
     questions,

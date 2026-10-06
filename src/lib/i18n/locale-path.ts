@@ -117,6 +117,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/hybrid/course",
   "/hybrid/math",
   "/hybrid/bridge",
+  "/hybrid/mock-builder",
   "/hybrid/mirror",
   "/hybrid/exam-flip",
   "/hybrid/dual-mock",

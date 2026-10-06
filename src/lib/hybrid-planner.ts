@@ -1,3 +1,4 @@
+import type { HybridLeanId } from "@/config/hybrid-mock-builder";
 import { todayStamp, type HybridProgress } from "@/lib/hybrid-progress";
 
 export type PlannerItem = {
@@ -11,8 +12,10 @@ export type PlannerItem = {
     | "/products/full-course-english"
     | "/wiso/products/full-course-german"
     | "/products/full-course-economics"
-    | "/wiso/products/full-course-economics";
-  kind: "shared" | "bridge" | "language" | "econ";
+    | "/wiso/products/full-course-economics"
+    | "/hybrid/mock-builder";
+  kind: "shared" | "bridge" | "language" | "econ" | "paper";
+  lean?: HybridLeanId;
   doneHint?: (p: HybridProgress, stamp: string) => boolean;
 };
 
@@ -26,7 +29,7 @@ export function buildTodayPlan(progress: HybridProgress): {
   const dayIndex = Math.floor(Date.now() / 86_400_000) % 2;
   const languageFirst = dayIndex === 0 ? "english" : "german";
   const languageSecond = dayIndex === 0 ? "german" : "english";
-  const econFirst = dayIndex === 0 ? "bbe" : "wiso";
+  const paperLean = (["bbe", "half", "wiso"] as const)[Math.floor(Date.now() / 86_400_000) % 3];
 
   const items: PlannerItem[] = [
     {
@@ -77,18 +80,20 @@ export function buildTodayPlan(progress: HybridProgress): {
         languageSecond === "english" ? p.englishSessions > 0 : p.germanSessions > 0,
     },
     {
-      id: "econ-library",
-      title: econFirst === "bbe" ? "Economics library" : "Wirtschaft library",
+      id: "hybrid-paper",
+      title:
+        paperLean === "bbe"
+          ? "Hybrid paper · BBE"
+          : paperLean === "wiso"
+            ? "Hybrid paper · WiSo"
+            : "Hybrid paper · half",
       blurb:
-        econFirst === "bbe"
-          ? "Full English economics bank. Bridge covers the overlap; this bank is the long form."
-          : "Wirtschaft verstehen in German. Same ideas, the wording the WiSo paper uses.",
-      minutes: 20,
-      to:
-        econFirst === "bbe"
-          ? "/products/full-course-economics"
-          : "/wiso/products/full-course-economics",
-      kind: "econ",
+        "Shared mathematics plus German reading. The lean sets the stem language and how large the German block is.",
+      minutes: 30,
+      to: "/hybrid/mock-builder",
+      kind: "paper",
+      lean: paperLean,
+      doneHint: (p, day) => p.paperDays.includes(day),
     },
   ];
 

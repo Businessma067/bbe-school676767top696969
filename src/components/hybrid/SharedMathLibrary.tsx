@@ -60,9 +60,10 @@ export function SharedMathLibrary() {
             English or German stem, one result
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Chapters 1–13 are the shared mathematics syllabus. Inside a chapter, switch EN or DE. A
-            fully correct task is stored once and feeds both readiness rings. Tasks still in
-            revision stay out of the count until every statement is right.
+            Chapters 1–13 are the shared mathematics syllabus. Open a chapter as a paper and switch
+            EN or DE, or open the split desk and read both stems of the same task. A fully correct
+            task is stored once. Tasks still in revision stay out of the count until every statement
+            is right.
           </p>
           <Link
             to="/hybrid/math"
@@ -106,11 +107,9 @@ export function SharedMathLibrary() {
                 const total = totals[num];
                 const width = total ? Math.min(100, (done / total) * 100) : 0;
                 return (
-                  <Link
+                  <article
                     key={num}
-                    to="/hybrid/math"
-                    search={{ chapter: num }}
-                    className="rounded-2xl border border-border bg-card p-4 transition-shadow hover:shadow-md"
+                    className="rounded-2xl border border-border bg-card p-4"
                     style={{ borderTop: `3px solid ${HYBRID_ACCENT}` }}
                   >
                     <div className="flex items-baseline justify-between gap-3">
@@ -134,7 +133,18 @@ export function SharedMathLibrary() {
                         style={{ width: `${width}%`, backgroundColor: HYBRID_ACCENT }}
                       />
                     </div>
-                  </Link>
+                    <div
+                      className="mt-3 flex gap-3 text-xs font-semibold"
+                      style={{ color: HYBRID_ACCENT }}
+                    >
+                      <Link to="/hybrid/math" search={{ chapter: num }}>
+                        Paper
+                      </Link>
+                      <Link to="/hybrid/math" search={{ chapter: num, view: "split" }}>
+                        Split EN / DE
+                      </Link>
+                    </div>
+                  </article>
                 );
               })}
             </div>
