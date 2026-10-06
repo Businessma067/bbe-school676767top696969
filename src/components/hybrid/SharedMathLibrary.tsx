@@ -5,7 +5,7 @@ import { HYBRID_ACCENT } from "@/lib/hybrid-course";
 import {
   HYBRID_MATH_TARGET,
   HYBRID_MATH_UNITS,
-  countSharedMathPassed,
+  countSharedMathPassedIn,
   hybridMathChapter,
   readSharedMathSnapshot,
 } from "@/lib/hybrid-math";
