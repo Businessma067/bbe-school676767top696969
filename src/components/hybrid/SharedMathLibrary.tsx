@@ -5,7 +5,7 @@ import { HYBRID_ACCENT } from "@/lib/hybrid-course";
 import {
   HYBRID_MATH_TARGET,
   HYBRID_MATH_UNITS,
-  countSharedMathPassed,
+  countSharedMathPassedIn,
   hybridMathChapter,
   readSharedMathSnapshot,
 } from "@/lib/hybrid-math";
@@ -14,6 +14,7 @@ export function SharedMathLibrary() {
   const [passed, setPassed] = useState<string[]>([]);
   const [revision, setRevision] = useState<string[]>([]);
   const [totals, setTotals] = useState<Record<number, number>>({});
+  const [chapterIds, setChapterIds] = useState<Record<number, readonly string[]>>({});
 
   useEffect(() => {
     const snap = readSharedMathSnapshot();
@@ -30,6 +31,8 @@ export function SharedMathLibrary() {
         const tasks = await loadMathChapterTasks(num);
         if (cancelled) return;
         setTotals((prev) => (prev[num] === tasks.length ? prev : { ...prev, [num]: tasks.length }));
+        const ids = tasks.map((t) => t.id);
+        setChapterIds((prev) => (prev[num] ? prev : { ...prev, [num]: ids }));
       }
     })();
     return () => {
@@ -39,11 +42,20 @@ export function SharedMathLibrary() {
 
   const passedTotal = passed.length;
   const ring = Math.min(100, Math.round((passedTotal / HYBRID_MATH_TARGET) * 100));
+  const countDone = (num: number): number => {
+    const ids = chapterIds[num];
+    if (!ids) return 0;
+    return countSharedMathPassedIn(
+      passed,
+      ids.map((id) => ({ id })),
+    );
+  };
+
   const continueChapter =
     HYBRID_MATH_UNITS.flatMap((unit) => [...unit.chapters]).find((num) => {
       const total = totals[num];
       if (!total) return false;
-      return countSharedMathPassed(passed, num) < total;
+      return countDone(num) < total;
     }) ?? 1;
 
   return (
@@ -103,7 +115,7 @@ export function SharedMathLibrary() {
               {unit.chapters.map((num) => {
                 const chapter = hybridMathChapter(num);
                 if (!chapter) return null;
-                const done = countSharedMathPassed(passed, num);
+                const done = countDone(num);
                 const total = totals[num];
                 const width = total ? Math.min(100, (done / total) * 100) : 0;
                 return (

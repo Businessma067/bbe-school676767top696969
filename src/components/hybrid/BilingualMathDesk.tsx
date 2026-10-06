@@ -14,7 +14,7 @@ import {
 } from "@/lib/hybrid-math-pair";
 import {
   HYBRID_MATH_STORAGE_KEY,
-  isSharedMathTaskId,
+  countSharedMathPassedIn,
   syncSharedMathIntoHybrid,
 } from "@/lib/hybrid-math";
 import { cn } from "@/lib/utils";
@@ -131,7 +131,10 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
   }
 
   const translated = tasks.filter((item) => item.translated).length;
-  const chapterPassed = passed.filter((id) => isSharedMathTaskId(id, chapter)).length;
+  const chapterPassed = countSharedMathPassedIn(
+    passed,
+    tasks.map((item) => item.en),
+  );
   const source = step ? (step.side === "wiso" ? step.task.de : step.task.en) : null;
   const answerKey = step?.task.en.answer_key ?? [];
   const complete =
