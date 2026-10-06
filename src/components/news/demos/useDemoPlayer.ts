@@ -45,11 +45,11 @@ const flowEase = (t: number) => {
 const MAX_FRAME_MS = 34;
 
 /**
- * How it works pointer. Same ease as the news demos, about half the travel speed.
+ * How it works pointer. Same ease as the news demos, a fluid cruise.
  * News keeps the default scale. The hand still taps on arrival.
  */
 export function howItWorksGlide(rest = 1) {
-  return rest > 1 ? 1.77 : 2;
+  return rest > 1 ? 2.8 : 2;
 }
 
 /**

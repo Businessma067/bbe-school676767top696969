@@ -132,8 +132,8 @@ function handOnLine(
 }
 
 /**
- * Scroll while the pointer rides the passing line.
- * Rects are read once, so a frame only writes scrollTop and the cursor.
+ * Move a sheet on the compositor. One frame only writes a transform and the
+ * cursor, so the text is not repainted on every tick.
  */
 async function glideWithPointer(
   api: DemoPlayerApi,
@@ -143,27 +143,40 @@ async function glideWithPointer(
   dest: number,
   duration: number,
   anchors: ReadingAnchor[],
+  hold = false,
 ) {
+  const inner = panel.querySelector<HTMLElement>("[data-glide-inner]");
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
   const originY = pr.top - sr.top;
   const viewMid = (Math.max(pr.top, sr.top) + Math.min(pr.bottom, sr.bottom)) / 2 - pr.top;
   const from = cursorFrom(stage);
-  const blendUntil = performance.now() + 220;
+  const blendUntil = performance.now() + 180;
   let lastSpot: { x: number; y: number } | null = null;
+  if (inner) {
+    panel.style.overflow = "hidden";
+    inner.style.willChange = "transform";
+  }
   await api.tween(duration, (eased) => {
     const top = fromTop + (dest - fromTop) * eased;
-    panel.scrollTop = top;
+    if (inner) inner.style.transform = `translate3d(0, ${(-top).toFixed(2)}px, 0)`;
+    else panel.scrollTop = top;
     const spot = handOnLine(anchors, top + viewMid, originY, top);
     if (!spot) return;
     lastSpot = spot;
-    const u = Math.min(1, Math.max(0, 1 - (blendUntil - performance.now()) / 220));
+    const u = Math.min(1, Math.max(0, 1 - (blendUntil - performance.now()) / 180));
     const e = u * u * (3 - 2 * u);
     api.setCursorAt({
       x: from.x + (spot.x - from.x) * e,
       y: from.y + (spot.y - from.y) * e,
     });
   });
+  if (inner && !hold) {
+    panel.scrollTop = dest;
+    inner.style.transform = "";
+    inner.style.willChange = "";
+    panel.style.overflow = "";
+  }
   if (lastSpot) api.setCursorAt(lastSpot);
 }
 
@@ -260,11 +273,13 @@ export async function skimPanel(api: DemoPlayerApi, panelSelector: string, fract
  * Steady read of a sheet. The pointer starts on the first line and stays
  * over the words while the sheet eases from top to bottom.
  */
-export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
+export async function readPanel(api: DemoPlayerApi, panelSelector: string, stops = 1) {
   await api.flush();
   const stage = api.stage();
   const panel = stage?.querySelector<HTMLElement>(panelSelector);
   if (!panel || !stage) return;
+  const inner = panel.querySelector<HTMLElement>("[data-glide-inner]");
+  if (inner) inner.style.transform = "";
   panel.scrollTop = 0;
   await api.flush();
   await api.moveTo('[data-d="prose0"]', 40);
@@ -273,9 +288,18 @@ export async function readPanel(api: DemoPlayerApi, panelSelector: string) {
     await api.wait(200);
     return;
   }
-  const duration = Math.max(1300, Math.min(3600, max * 0.36));
   const anchors = captureReading(stage, panel);
-  await glideWithPointer(api, stage, panel, 0, max, duration, anchors);
+  const legs = stops >= 2 && max > 48 ? [max * 0.46, max * 0.84] : [max];
+  let from = 0;
+  for (let i = 0; i < legs.length; i++) {
+    if (api.cancelled()) return;
+    const dest = legs[i]!;
+    const distance = dest - from;
+    const duration = Math.max(720, Math.min(2400, distance * 0.85));
+    const last = i === legs.length - 1;
+    await glideWithPointer(api, stage, panel, from, dest, duration, anchors, !last);
+    from = dest;
+  }
 }
 
 /** Least scroll that puts `item` fully inside the panel. No-op when it already fits. */
@@ -303,9 +327,22 @@ export async function scrollPanelTo(
   const next = Math.max(0, Math.min(start + delta, max));
   if (Math.abs(next - start) < 2) return;
   const travel = Math.abs(next - start);
+  const inner = panel.querySelector<HTMLElement>("[data-glide-inner]");
+  if (inner) {
+    panel.style.overflow = "hidden";
+    inner.style.willChange = "transform";
+  }
   await api.tween(Math.round(Math.min(800, Math.max(240, travel * 0.7))), (eased) => {
-    panel.scrollTop = start + (next - start) * eased;
+    const top = start + (next - start) * eased;
+    if (inner) inner.style.transform = `translate3d(0, ${(-top).toFixed(2)}px, 0)`;
+    else panel.scrollTop = top;
   });
+  if (inner) {
+    panel.scrollTop = next;
+    inner.style.transform = "";
+    inner.style.willChange = "";
+    panel.style.overflow = "";
+  }
 }
 
 function scrollerOf(el: HTMLElement): HTMLElement | null {

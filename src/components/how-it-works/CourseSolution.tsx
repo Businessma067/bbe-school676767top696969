@@ -62,6 +62,7 @@ export function CourseSolution({
           data-d="expl-scroll"
           className="practice-scroll h-full overflow-y-auto border-l border-border bg-card p-4 shadow-2xl sm:p-5"
         >
+          <div data-glide-inner>
           <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
             {chrome.sheetTitle}
           </p>
@@ -162,6 +163,7 @@ export function CourseSolution({
                 </div>
               );
             })}
+          </div>
           </div>
         </div>
       </div>

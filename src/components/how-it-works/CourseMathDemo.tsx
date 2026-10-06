@@ -80,7 +80,7 @@ export function CourseMathDemo({
       setExpl(true);
       setActive(0);
     });
-    await readPanel(api, '[data-d="expl-scroll"]');
+    await readPanel(api, '[data-d="expl-scroll"]', 2);
     await api.wait(200);
   }, [markAt, rest], { rest, glideScale: howItWorksGlide(rest) });
 

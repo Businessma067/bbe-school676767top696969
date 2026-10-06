@@ -109,17 +109,9 @@ function Reader({
   );
 }
 
-function cursorNow(stage: HTMLElement) {
-  const cursor = stage.querySelector<HTMLElement>("[data-cx]");
-  return {
-    x: Number(cursor?.dataset.cx ?? 48),
-    y: Number(cursor?.dataset.cy ?? 120),
-  };
-}
-
 /**
  * One glide. Speed eases only in the first and last 12% and is steady between,
- * the same shape as the pointer, so the chapter does not kick or stop midway.
+ * the same shape as the pointer, so each pass lands softly.
  */
 function oneGlide(t: number) {
   const s = 0.12;
@@ -133,61 +125,8 @@ function oneGlide(t: number) {
   return shoulder + v * (t - s);
 }
 
-function pointOf(stage: HTMLElement, el: HTMLElement) {
-  const sr = stage.getBoundingClientRect();
-  const box = el.getBoundingClientRect();
-  return {
-    x: box.left - sr.left + box.width / 2 - 5,
-    y: box.top - sr.top + Math.min(box.height / 2, 18) - 3,
-  };
-}
-
-/** Steady carry, then a soft landing. The hand is already moving on the first frame. */
-function carryHand(t: number) {
-  const brake = 0.84;
-  if (t <= brake) return (t / brake) * 0.94;
-  const u = (t - brake) / (1 - brake);
-  return 0.94 + 0.06 * (1 - (1 - u) * (1 - u));
-}
-
-/** Move the pointer for the whole interval, so it never darts and then freezes. */
-async function glideHand(
-  api: DemoPlayerApi,
-  stage: HTMLElement,
-  to: { x: number; y: number },
-  duration?: number,
-) {
-  const from = cursorNow(stage);
-  const dist = Math.hypot(to.x - from.x, to.y - from.y);
-  if (dist < 2) {
-    api.setCursorAt(to);
-    return;
-  }
-  const ms = duration ?? Math.round(Math.min(2200, Math.max(440, dist / 0.55)));
-  const started = performance.now();
-  await new Promise<void>((resolve) => {
-    const frame = (now: number) => {
-      if (api.cancelled()) return resolve();
-      const t = Math.min(1, (now - started) / ms);
-      const e = carryHand(t);
-      api.setCursorAt({
-        x: from.x + (to.x - from.x) * e,
-        y: from.y + (to.y - from.y) * e,
-      });
-      if (t < 1) requestAnimationFrame(frame);
-      else resolve();
-    };
-    requestAnimationFrame(frame);
-  });
-  api.setCursorAt(to);
-}
-
 async function aim(api: DemoPlayerApi, selector: string) {
-  await api.reveal(selector);
-  const stage = api.stage();
-  const el = stage?.querySelector<HTMLElement>(selector);
-  if (stage && el) await glideHand(api, stage, pointOf(stage, el));
-  await api.moveTo(selector, 30);
+  await api.moveTo(selector);
 }
 
 /** Move the chapter on the compositor. scrollTop would repaint the text and tear. */
@@ -199,22 +138,28 @@ function placeChapter(panel: HTMLElement, offset: number, max: number) {
   panel.dataset.offset = String(Math.round(offset));
 }
 
-/** One continuous glide. The pointer stays where it is while the chapter moves. */
-async function glideChapter(api: DemoPlayerApi, panel: HTMLElement, dest: number, max: number) {
+/** One pass. The pointer stays where it is while the chapter moves on the compositor. */
+async function glideChapter(
+  api: DemoPlayerApi,
+  panel: HTMLElement,
+  from: number,
+  to: number,
+  max: number,
+) {
   const article = panel.querySelector<HTMLElement>("article");
   const bar = panel.parentElement?.querySelector<HTMLElement>('[data-d="theory-bar"]');
-  if (dest < 16) return;
-  const duration = Math.round(Math.max(900, dest / CRUISE_PX_PER_MS));
+  const span = to - from;
+  if (span < 16) return;
+  const duration = Math.round(Math.max(780, span / CRUISE_PX_PER_MS));
   let elapsed = 0;
   let last = performance.now();
   await new Promise<void>((resolve) => {
     const frame = (now: number) => {
       if (api.cancelled()) return resolve();
-      // A late frame must not skip ahead, or the page looks torn.
       elapsed += Math.min(28, Math.max(0, now - last));
       last = now;
       const t = Math.min(1, elapsed / duration);
-      const offset = dest * oneGlide(t);
+      const offset = from + span * oneGlide(t);
       if (article) article.style.transform = `translate3d(0, ${(-offset).toFixed(2)}px, 0)`;
       if (bar && max > 0) bar.style.transform = `scaleX(${Math.min(1, offset / max)})`;
       panel.dataset.offset = String(Math.round(offset));
@@ -223,7 +168,7 @@ async function glideChapter(api: DemoPlayerApi, panel: HTMLElement, dest: number
     };
     requestAnimationFrame(frame);
   });
-  placeChapter(panel, dest, max);
+  placeChapter(panel, to, max);
 }
 
 async function readChapterGlide(api: DemoPlayerApi) {
@@ -254,10 +199,13 @@ async function readChapterGlide(api: DemoPlayerApi) {
   const max = Math.max(0, panel.scrollHeight - panel.clientHeight);
   const dest = Math.round(max * 0.76);
   panel.dataset.max = String(max);
-  await glideChapter(api, panel, dest, max);
+  const mid = Math.round(dest * 0.48);
+  await glideChapter(api, panel, 0, mid, max);
+  if (api.cancelled()) return;
+  await glideChapter(api, panel, mid, dest, max);
 }
 
-/** How it works · Theory: chapters 1, 10 and 11, one glide to about 75%. */
+/** How it works · Theory: chapters 1, 10 and 11, two soft stops on the way to about 75%. */
 export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
