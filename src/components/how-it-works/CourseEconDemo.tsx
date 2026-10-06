@@ -38,7 +38,7 @@ export function CourseEconDemo({
 
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     setFade(true);
-    await api.wait(180);
+    await api.wait(80);
     setTimed(false);
     setMarks({});
     setChecked(false);
@@ -46,7 +46,7 @@ export function CourseEconDemo({
     setActive(-1);
     if (api.scroll()) api.scroll()!.scrollTop = 0;
     setFade(false);
-    await api.wait(200);
+    await api.wait(80);
 
     await api.moveTo('[data-d="timed"]');
     await api.click(() => setTimed(true));
@@ -68,7 +68,7 @@ export function CourseEconDemo({
       setExpl(true);
       setActive(0);
     });
-    await api.wait(rest > 1 ? 420 : 80);
+    await api.wait(40);
     await readPanel(api, '[data-d="expl-scroll"]');
     await api.wait(200);
   }, [markAt, rest], { rest, glideScale: howItWorksGlide(rest) });

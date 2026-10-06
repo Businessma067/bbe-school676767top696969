@@ -324,7 +324,7 @@ export function CourseFlashDemo({
       };
 
       setFade(true);
-      await api.wait(160);
+      await api.wait(80);
       setIdx(0);
       setTurn(0);
       setSlide(CARD_REST);
@@ -332,11 +332,11 @@ export function CourseFlashDemo({
       setUnknown(0);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(160);
+      await api.wait(80);
 
       if (!(await arriveAndClick(api, '[data-d="term"]'))) return;
       await flipAfterClick();
-      await api.wait(200);
+      await api.wait(80);
 
       if (!(await arriveAndClick(api, '[data-d="dont"]'))) return;
       setUnknown(1);
@@ -344,12 +344,12 @@ export function CourseFlashDemo({
 
       if (!(await arriveAndClick(api, '[data-d="flip"]'))) return;
       await flipAfterClick();
-      await api.wait(200);
+      await api.wait(80);
 
       if (!(await arriveAndClick(api, '[data-d="know"]'))) return;
       setKnown(1);
       await swipeAfterClick("right", () => setIdx(2));
-      await api.wait(280);
+      await api.wait(140);
     },
     [rest],
     { flow: true, rest, glideScale: howItWorksGlide(rest) },
@@ -522,13 +522,13 @@ export function CourseMatchDemo({
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
       setFade(true);
-      await api.wait(160);
+      await api.wait(80);
       setSelected(null);
       setMatched([]);
       setLines([]);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(200);
+      await api.wait(80);
 
       for (const id of pairs.map((pair) => pair.id)) {
         if (api.cancelled()) return;
@@ -542,7 +542,7 @@ export function CourseMatchDemo({
         await api.wait(50);
       }
       if (api.cancelled()) return;
-      await api.wait(360);
+      await api.wait(140);
     },
     [rest],
     { flow: true, rest, glideScale: howItWorksGlide(rest) },
@@ -713,7 +713,7 @@ export function CourseTutorDemo({
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
       setFade(true);
-      await api.wait(160);
+      await api.wait(80);
       if (api.cancelled()) return;
       setFinished(false);
       setIndex(0);
@@ -721,7 +721,7 @@ export function CourseTutorDemo({
       setScore(0);
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(200);
+      await api.wait(80);
 
       for (let q = 0; q < questions.length; q++) {
         if (api.cancelled()) return;
@@ -744,7 +744,7 @@ export function CourseTutorDemo({
       }
       if (api.cancelled()) return;
       await api.moveTo('[data-d="result"]', 60);
-      await api.wait(400);
+      await api.wait(160);
     },
     [rest],
     { flow: true, rest, glideScale: howItWorksGlide(rest) },

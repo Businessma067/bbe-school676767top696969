@@ -207,7 +207,7 @@ export function CourseMockExamDemo({
     };
 
     setFade(true);
-    await api.wait(140);
+    await api.wait(80);
     setPhase("exam");
     setIndex(0);
     setMarks({});
@@ -215,7 +215,7 @@ export function CourseMockExamDemo({
     setTaskIndex(0);
     resetScroll();
     setFade(false);
-    await api.wait(260);
+    await api.wait(100);
 
     for (let step = 0; step < plan.show.length; step++) {
       if (api.cancelled()) return;

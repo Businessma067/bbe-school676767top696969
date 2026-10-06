@@ -133,7 +133,7 @@ export function CourseMockDemo({
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(
     async (api) => {
       setFade(true);
-      await api.wait(140);
+      await api.wait(80);
       setExpanded({});
       setSelected([]);
       setQuestionCount(10);
@@ -145,7 +145,7 @@ export function CourseMockDemo({
       setMarks({});
       if (api.scroll()) api.scroll()!.scrollTop = 0;
       setFade(false);
-      await api.wait(240);
+      await api.wait(100);
       if (!chapter || picks.length < 4) return;
 
       await api.moveTo(`[data-d="ch-${chapter.num}"]`, DWELL);

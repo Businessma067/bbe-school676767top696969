@@ -147,17 +147,20 @@ async function glideWithPointer(
   const sr = stage.getBoundingClientRect();
   const pr = panel.getBoundingClientRect();
   const originY = pr.top - sr.top;
-  const viewMid = (Math.max(pr.top, sr.top) + Math.min(pr.bottom, sr.bottom)) / 2 - pr.top;
+  const viewTop = Math.max(pr.top, sr.top);
+  const viewH = Math.min(pr.bottom, sr.bottom) - viewTop;
   const from = cursorFrom(stage);
-  const blendUntil = performance.now() + 220;
+  const blendUntil = performance.now() + 180;
   let lastSpot: { x: number; y: number } | null = null;
   await api.tween(duration, (eased) => {
     const top = fromTop + (dest - fromTop) * eased;
     panel.scrollTop = top;
-    const spot = handOnLine(anchors, top + viewMid, originY, top);
+    // Travel down the visible page with the words, instead of parking on one line.
+    const contentMid = top + viewH * (0.16 + 0.68 * eased);
+    const spot = handOnLine(anchors, contentMid, originY, top);
     if (!spot) return;
     lastSpot = spot;
-    const u = Math.min(1, Math.max(0, 1 - (blendUntil - performance.now()) / 220));
+    const u = Math.min(1, Math.max(0, 1 - (blendUntil - performance.now()) / 180));
     const e = u * u * (3 - 2 * u);
     api.setCursorAt({
       x: from.x + (spot.x - from.x) * e,
