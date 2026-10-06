@@ -71,6 +71,19 @@ export function countSharedMathPassed(passed: readonly string[], chapter: number
   return passed.filter((id) => isSharedMathTaskId(id, chapter)).length;
 }
 
+/**
+ * Count passed ids against the chapter's real task list. Some banks reuse
+ * foreign id prefixes (chapter 3 tasks are `math-11-*`, chapter 10 are
+ * `ch10-*`), so prefix matching miscounts — match by exact id instead.
+ */
+export function countSharedMathPassedIn(
+  passed: readonly string[],
+  tasks: readonly { id: string }[],
+): number {
+  const ids = new Set(tasks.map((t) => t.id));
+  return passed.filter((id) => ids.has(id)).length;
+}
+
 export type HybridMathSnapshot = {
   passed: string[];
   revision: string[];

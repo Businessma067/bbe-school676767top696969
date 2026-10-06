@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { FlashcardMath } from "@/components/FlashcardMath";
+import { StatementMarkTable } from "@/components/StatementMarkTable";
 import { HYBRID_ACCENT } from "@/lib/hybrid-course";
 import {
+  practiceExplanationToggleClass,
   practiceSubmitButtonClass,
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
@@ -14,7 +16,7 @@ import {
 } from "@/lib/hybrid-math-pair";
 import {
   HYBRID_MATH_STORAGE_KEY,
-  isSharedMathTaskId,
+  countSharedMathPassedIn,
   syncSharedMathIntoHybrid,
 } from "@/lib/hybrid-math";
 import { cn } from "@/lib/utils";
@@ -88,8 +90,9 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
   const [focus, setFocus] = useState<HybridLeanId>("bbe");
   const [subsection, setSubsection] = useState<string | null>(null);
   const [stepIndex, setStepIndex] = useState(0);
-  const [answers, setAnswers] = useState<Array<boolean | null>>([]);
+  const [marked, setMarked] = useState<boolean[]>([]);
   const [checked, setChecked] = useState(false);
+  const [explanationsOpen, setExplanationsOpen] = useState(false);
   const [passed, setPassed] = useState<string[]>([]);
   const titles = chapterTitlePair(chapter);
   const terms = chapterTermPairs(chapter);
@@ -122,8 +125,9 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
     : 0;
 
   useEffect(() => {
-    setAnswers(Array.from({ length: statementCount }, () => null));
+    setMarked(Array.from({ length: statementCount }, () => false));
     setChecked(false);
+    setExplanationsOpen(false);
   }, [taskId, side, statementCount]);
 
   if (!tasks) {
@@ -131,48 +135,53 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
   }
 
   const translated = tasks.filter((item) => item.translated).length;
-  const chapterPassed = passed.filter((id) => isSharedMathTaskId(id, chapter)).length;
+  const chapterPassed = countSharedMathPassedIn(
+    passed,
+    tasks.map((item) => item.en),
+  );
   const source = step ? (step.side === "wiso" ? step.task.de : step.task.en) : null;
   const answerKey = step?.task.en.answer_key ?? [];
-  const complete =
-    !!source &&
-    answers.length === source.statements.length &&
-    answers.every((value) => value != null);
   const correctCount = source
     ? source.statements.reduce(
-        (sum, _statement, i) => sum + (answers[i] === answerKey[i] ? 1 : 0),
+        (sum, _statement, i) => sum + ((marked[i] === true) === Boolean(answerKey[i]) ? 1 : 0),
         0,
       )
     : 0;
-  const accent = step?.side === "wiso" ? WISO : BBE;
-  const trueLabel = step?.side === "wiso" ? "Richtig" : "True";
-  const falseLabel = step?.side === "wiso" ? "Falsch" : "False";
+  const explanations = source
+    ? ((step?.side === "wiso"
+        ? step.task.de.tactical_explanations
+        : step?.task.en.tactical_explanations) ?? [])
+    : [];
 
   const check = () => {
-    if (!step || !source || !complete) return;
+    if (!step || !source) return;
     setChecked(true);
+    setExplanationsOpen(true);
     if (correctCount === source.statements.length) {
       writePassed(step.task.id);
       setPassed(readPassed());
     }
   };
 
+  const germanSide = step?.side === "wiso";
+
   return (
     <div>
-      <div
-        className="mb-6 rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6"
-        style={{ borderTop: `4px solid ${HYBRID_ACCENT}` }}
-      >
-        <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-          Chapter {chapter}
-        </p>
-        <h2 className="mt-1 font-display text-2xl font-semibold">{titles.en}</h2>
-        <p className="text-sm text-muted-foreground">{titles.de}</p>
-        <p className="mt-2 text-sm text-muted-foreground">
-          {translated}/{tasks.length} tasks have a German stem. {chapterPassed} in this chapter are
-          already counted. One task is on screen. The other language of that task comes next.
-        </p>
-        <div className="mt-5 flex flex-wrap items-center gap-2">
+      <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Chapter {chapter}
+          </span>
+          <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+            {titles.en}
+          </h1>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {titles.de}
+            {" · "}
+            {translated}/{tasks.length} with a German stem · {chapterPassed} counted in this chapter
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center gap-2">
           {FOCI.map((item) => {
             const active = focus === item.id;
             return (
@@ -197,7 +206,7 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
               </button>
             );
           })}
-          <label className="ml-auto text-xs font-semibold text-muted-foreground">
+          <label className="text-xs font-semibold text-muted-foreground">
             Subsection
             <select
               value={subsection ?? ""}
@@ -219,129 +228,131 @@ export function BilingualMathDesk({ chapter }: { chapter: number }) {
       </div>
 
       {!step || !source ? (
-        <p className="text-sm text-muted-foreground">No tasks match this filter.</p>
+        <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center">
+          <p className="text-sm text-muted-foreground">No tasks match this filter.</p>
+        </div>
       ) : (
-        <div
-          className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6"
-          style={{ borderTop: `4px solid ${accent}` }}
-        >
-          <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <p
-              className="text-[10px] font-bold uppercase tracking-widest"
-              style={{ color: accent }}
-            >
-              {step.part} · {step.side === "bbe" ? "BBE · English" : "WiSo · Deutsch"}
-              {!step.task.translated && step.side === "wiso"
-                ? " · English stem, no overlay yet"
-                : ""}
-            </p>
-            <p className="text-xs text-muted-foreground">
-              {stepIndex + 1} / {steps.length} · {step.task.caseId}
-            </p>
+        <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+          <div className="mb-4 flex flex-wrap items-center gap-2">
+            <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+              Task {stepIndex + 1}
+            </span>
+            <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+              {step.task.caseId}
+            </span>
+            <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+              {germanSide ? "WiSo · Deutsch" : "BBE · English"}
+              {!step.task.translated && germanSide ? " · English stem" : ""}
+            </span>
+            {passed.includes(step.task.id) ? (
+              <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
+                Passed
+              </span>
+            ) : null}
+            <span className="ml-auto text-xs text-muted-foreground">
+              {stepIndex + 1} / {steps.length}
+            </span>
           </div>
-          <h3 className="mt-2 font-display text-xl font-semibold">{source.title}</h3>
+
+          <h2 className="font-display text-lg font-bold tracking-tight">
+            <FlashcardMath text={source.title} />
+          </h2>
           {source.context ? (
-            <div className="mt-2 text-sm leading-relaxed">
+            <div className="mt-3 text-sm leading-relaxed text-foreground/90">
               <FlashcardMath text={source.context} />
             </div>
           ) : null}
 
-          <ul className="mt-4 space-y-3">
-            {source.statements.map((statement, i) => {
-              const chosen = answers[i];
-              const right = answerKey[i];
-              return (
-                <li key={i} className="rounded-xl border border-border/80 p-3">
-                  <div className="text-sm leading-relaxed">
-                    <FlashcardMath text={statement} />
-                  </div>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {(
-                      [
-                        [true, trueLabel],
-                        [false, falseLabel],
-                      ] as const
-                    ).map(([value, label]) => {
-                      const selected = chosen === value;
-                      const good = checked && value === right && selected;
-                      const bad = checked && selected && value !== right;
-                      return (
-                        <button
-                          key={label}
-                          type="button"
-                          disabled={checked}
-                          onClick={() =>
-                            setAnswers((prev) => prev.map((item, j) => (j === i ? value : item)))
-                          }
-                          className={cn(
-                            "rounded-md px-3 py-1.5 text-xs font-semibold",
-                            !selected && "border border-border bg-background",
-                            selected && !checked && "text-white",
-                            good && "bg-emerald-600 text-white",
-                            bad && "bg-destructive text-white",
-                          )}
-                          style={selected && !checked ? { backgroundColor: accent } : undefined}
-                        >
-                          {label}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {checked ? (
-                    <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                      {
-                        (step.side === "wiso"
-                          ? step.task.de.tactical_explanations
-                          : step.task.en.tactical_explanations)?.[i]
-                      }
-                    </p>
-                  ) : null}
-                </li>
-              );
-            })}
-          </ul>
+          <StatementMarkTable
+            statements={source.statements}
+            marked={marked}
+            answerKey={answerKey.map(Boolean)}
+            checked={checked}
+            math
+            statementHeading={germanSide ? "Aussage" : "Statement"}
+            trueHeading={germanSide ? "Richtig" : "True"}
+            onToggle={(index) =>
+              setMarked((prev) => prev.map((item, j) => (j === index ? !item : item)))
+            }
+          />
 
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            <button
-              type="button"
-              disabled={!complete || checked}
-              onClick={check}
-              className={practiceSubmitButtonClass}
-            >
-              Check
-            </button>
+          <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-2">
+              {!checked ? (
+                <button type="button" onClick={check} className={practiceSubmitButtonClass}>
+                  Check Answers / Submit
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setChecked(false);
+                    setExplanationsOpen(false);
+                    setMarked(source.statements.map(() => false));
+                  }}
+                  className={practiceTryAgainButtonClass}
+                >
+                  Try again
+                </button>
+              )}
+              {checked ? (
+                <button
+                  type="button"
+                  onClick={() => setExplanationsOpen((open) => !open)}
+                  className={practiceExplanationToggleClass(explanationsOpen)}
+                >
+                  {explanationsOpen ? "Hide Explanation" : "Explanation"}
+                </button>
+              ) : null}
+              <button
+                type="button"
+                disabled={stepIndex === 0}
+                onClick={() => setStepIndex((n) => n - 1)}
+                className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-all hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Previous
+              </button>
+              <button
+                type="button"
+                disabled={!checked || stepIndex >= steps.length - 1}
+                onClick={() => setStepIndex((n) => n + 1)}
+                className="rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                {step.part === 1 ? (step.side === "bbe" ? "Next · WiSo" : "Next · BBE") : "Next"}
+              </button>
+              <Link
+                to="/hybrid/math"
+                search={{ chapter }}
+                className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold hover:bg-secondary"
+              >
+                Chapter list
+              </Link>
+            </div>
             {checked ? (
-              <span className="text-sm font-semibold">
-                {correctCount}/{source.statements.length}
-                {passed.includes(step.task.id) ? " · counted once" : ""}
+              <span className="text-sm font-semibold text-muted-foreground">
+                {correctCount}/{source.statements.length} correct
               </span>
             ) : null}
-            <button
-              type="button"
-              disabled={stepIndex === 0}
-              onClick={() => setStepIndex((n) => n - 1)}
-              className={cn(practiceTryAgainButtonClass, "disabled:opacity-40")}
-            >
-              Previous
-            </button>
-            <button
-              type="button"
-              disabled={!checked || stepIndex >= steps.length - 1}
-              onClick={() => setStepIndex((n) => n + 1)}
-              className="inline-flex items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:opacity-40"
-              style={{ backgroundColor: HYBRID_ACCENT }}
-            >
-              {step.part === 1 ? (step.side === "bbe" ? "Next · WiSo" : "Next · BBE") : "Next task"}
-            </button>
-            <Link
-              to="/hybrid/math"
-              search={{ chapter }}
-              className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold hover:bg-secondary"
-            >
-              Paper player
-            </Link>
           </div>
-        </div>
+
+          {checked && explanationsOpen ? (
+            <div className="mt-4 space-y-3 rounded-xl border border-border bg-secondary/30 p-4 text-sm sm:p-5">
+              {source.statements.map((_, i) => (
+                <p key={i} className="leading-relaxed text-foreground">
+                  <span className="font-semibold">{String.fromCharCode(65 + i)}.</span>{" "}
+                  {explanations[i] ||
+                    (answerKey[i]
+                      ? germanSide
+                        ? "Richtig."
+                        : "True."
+                      : germanSide
+                        ? "Falsch."
+                        : "False.")}
+                </p>
+              ))}
+            </div>
+          ) : null}
+        </article>
       )}
     </div>
   );
