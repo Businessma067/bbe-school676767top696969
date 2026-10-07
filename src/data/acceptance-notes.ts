@@ -32,17 +32,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 156",
     stars: 4,
-    quote:
-      "I sat in 2025, missed by a little, and spent this year on the mocks instead of another textbook. The thing that actually changed was leaving a blank when I was only pretty sure, because the sheet after a mock makes a guess look expensive. English still doesn't feel finished, which is why this is a 4. The July letter said rank 156, and that was enough.",
+    quote: "Second year in the course. First time I mostly just read and hoped. This time I lived in the mocks, and the sheet after tells you when a guess was expensive, so I stopped ticking stuff I was only kinda sure about. English in there still doesn't feel done, that's the 4. The timed sets are the part that actually stuck.",
     de: {
       outcome: "Rang 156",
-      quote:
-        "Ich bin 2025 angetreten, knapp vorbeigegangen und habe dieses Jahr die Mocks gemacht statt noch ein Lehrbuch. Geändert hat sich, dass ich leer gelassen habe, wenn ich nur ziemlich sicher war, weil der Bogen nach einem Mock das Raten teuer aussehen lässt. Englisch fühlt sich immer noch nicht fertig an, deshalb ist das eine 4. Im Juli stand Rang 156 im Brief, und das hat gereicht.",
+      quote: "Zweites Jahr im Kurs. Beim ersten Mal hab ich nur gelesen und gehofft. Diesmal hab ich in den Mocks gelebt, und der Bogen danach zeigt, wann ein Tipp teuer war, also hab ich aufgehört, Sachen anzukreuzen, bei denen ich nur so halb sicher war. Englisch da drin fühlt sich immer noch nicht fertig an, deshalb die 4. Die Aufgaben auf Zeit sind das, was wirklich hängen geblieben ist.",
     },
     uk: {
       outcome: "Місце 156",
-      quote:
-        "Я складала у 2025, пройшла повз зовсім трохи і цей рік сиділа на моках, а не на ще одному підручнику. Справжня зміна була в тому, що я лишала порожнє, коли була лише майже впевнена, бо аркуш після мока робить вгадування дорогим. Англійська досі не відчувається закритою, тому це 4. У липневому листі було місце 156, і цього вистачило.",
+      quote: "Другий рік на курсі. Першого разу я здебільшого просто читала і сподівалась. Цього разу жила в моках, і аркуш після них показує, коли вгадування було дорогим, тож я перестала ставити те, в чому була лише наполовину впевнена. Англійська там досі не закрита, тому 4. Набори на час це те, що справді лишилось.",
     },
   },
   {
@@ -53,17 +50,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Rank 84",
     stars: 5,
-    quote:
-      "My parents booked a tutor and he read the textbook out loud, so I went back to the timed sets. The Sunday score moved, slowly.",
+    quote: "My parents booked a tutor and he just read the textbook out loud, so I went back to the timed sets in the course. Sunday score crept up. Slowly, yeah, but it did.",
     de: {
       outcome: "Rang 84",
-      quote:
-        "Meine Eltern haben einen Nachhilfelehrer gebucht, und er hat das Lehrbuch laut vorgelesen, also bin ich zu den Aufgaben auf Zeit zurück. Der Sonntagswert hat sich bewegt, langsam.",
+      quote: "Meine Eltern haben einen Nachhilfelehrer gebucht, und der hat einfach das Lehrbuch laut vorgelesen, also bin ich zu den Aufgaben auf Zeit im Kurs zurück. Der Sonntagswert ist hochgeklettert. Langsam, ja, aber doch.",
     },
     uk: {
       outcome: "Місце 84",
-      quote:
-        "Батьки записали репетитора, і він читав підручник уголос, тож я повернувся до наборів на час. Недільний бал зрушив, повільно.",
+      quote: "Батьки записали репетитора, і він просто читав підручник уголос, тож я повернувся до наборів на час у курсі. Недільний бал повз. Повільно, так, але повз.",
     },
   },
   {
@@ -74,17 +68,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2025",
     outcome: "Rank 203",
     stars: 5,
-    quote:
-      "In the hall I left three economics ones blank after I had already talked myself out of them on a mock. Rank 203 is the edge, and blank was the annoying choice that was actually right.",
+    quote: "In the mocks I kept guessing three econ ones after I'd already talked myself out of them. The sheet made that look dumb, so I started leaving that type blank while practicing. Annoying habit, but it was the right one.",
     de: {
       outcome: "Rang 203",
-      quote:
-        "Im Saal habe ich drei Wirtschaftsaufgaben leer gelassen, nachdem ich sie mir in einem Mock schon ausgeredet hatte. Rang 203 ist die Kante, und leer war die nervige Entscheidung, die gestimmt hat.",
+      quote: "In den Mocks hab ich drei Wirtschaftsaufgaben geraten, nachdem ich sie mir schon ausgeredet hatte. Der Bogen hat das dumm aussehen lassen, also hab ich den Typ beim Üben leer gelassen. Nervige Angewohnheit, aber die richtige.",
     },
     uk: {
       outcome: "Місце 203",
-      quote:
-        "У залі я лишила три економічні порожніми після того, як на моку вже сама собі їх відмовила. Місце 203 це край, і порожнє було дратівливим вибором, який виявився правильним.",
+      quote: "У моках я раз у раз вгадувала три економічні вже після того, як сама собі їх відмовила. Аркуш робив це дурним, тож на практиці я почала лишати такий тип порожнім. Дратівлива звичка, але правильна.",
     },
   },
   {
@@ -95,17 +86,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 34",
     stars: 5,
-    quote:
-      "I came from a German school and thought English would be the easy third, but one word in the statement does the whole argument. It took about two months before I stopped translating every line in my head. Math I had already overcooked, so that part was fine.",
+    quote: "Came from a German school, so I thought the English bit of the course would be the easy part. It's not school English. One word in the statement does the whole point, and it took me like two months to stop translating every line in my head. Math I'd already overdone, that side of the course was whatever.",
     de: {
       outcome: "Rang 34",
-      quote:
-        "Ich komme aus einer deutschen Schule und dachte, Englisch sei das leichte Drittel, aber ein Wort in der Aussage macht das ganze Argument. Es hat ungefähr zwei Monate gedauert, bis ich aufgehört habe, jeden Satz im Kopf zu übersetzen. Mathe hatte ich schon übertrieben, der Teil war in Ordnung.",
+      quote: "Deutsche Schule, also dachte ich, der Englisch-Teil im Kurs ist der leichte. Ist kein Schulenglisch. Ein Wort in der Aussage macht den ganzen Punkt, und es hat mich so zwei Monate gekostet, bis ich aufgehört hab, jeden Satz im Kopf zu übersetzen. Mathe hatte ich schon übertrieben, die Seite vom Kurs war egal.",
     },
     uk: {
       outcome: "Місце 34",
-      quote:
-        "Я зі школи з німецькою і думав, що англійська буде легкою третиною, але одне слово в твердженні тягне всю думку. Минуло близько двох місяців, поки я перестав перекладати кожен рядок у голові. Математику я вже переготував, тож той розділ був нормальний.",
+      quote: "Я зі школи з німецькою, тож думав, що англійська частина курсу буде легкою. Це не шкільна англійська. Одне слово в твердженні тягне всю думку, і мені знадобилось десь два місяці, щоб перестати перекладати кожен рядок у голові. Математику я вже переготував, той бік курсу був байдужий.",
     },
   },
   {
@@ -116,14 +104,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 128",
     stars: 5,
-    quote: "Thought I failed.",
+    quote: "Mocks, not videos.",
     de: {
       outcome: "Rang 128",
-      quote: "Dachte, durchgefallen.",
+      quote: "Mocks, nicht Videos.",
     },
     uk: {
       outcome: "Місце 128",
-      quote: "Думала, що завалила.",
+      quote: "Моки, не відео.",
     },
   },
   {
@@ -134,17 +122,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Rank 176",
     stars: 3,
-    quote:
-      "I thought the course would be mostly videos, and I barely opened that part. What I used was the mocks, a lot of them around one in the morning. Before this I was on a shared drive where half the files were some older format, so maybe the mess was mine. Rank 176 is a place, and I'm still giving it 3 stars because a lot of the work was just me sitting there. The format was new, and the rest I already had to do myself.",
+    quote: "Honestly I thought there'd be way more videos. I barely opened that part. What I actually used was the mocks, a bunch of them around 1am. Before this I was on a shared drive and half the files were some older format, so maybe the mess was mine. 3 stars, because a lot of it was just me sitting there and the course mostly handed me the format.",
     de: {
       outcome: "Rang 176",
-      quote:
-        "Ich dachte, der Kurs sei vor allem Videos, und den Teil habe ich kaum aufgemacht. Benutzt habe ich die Mocks, viele davon gegen ein Uhr. Davor war ich auf einem geteilten Drive, die Hälfte der Dateien irgendein älteres Format, also war das Durcheinander vielleicht meins. Rang 176 ist ein Platz, und ich gebe trotzdem 3 Sterne, weil viel von der Arbeit einfach ich war, der davor sitzt. Das Format war neu, den Rest musste ich sowieso selbst machen.",
+      quote: "Ehrlich, ich dachte es gibt viel mehr Videos. Den Teil hab ich kaum aufgemacht. Benutzt hab ich die Mocks, einen Haufen davon so gegen ein Uhr. Davor war ich auf einem geteilten Drive, die Hälfte der Dateien irgendein älteres Format, also war das Chaos vielleicht meins. 3 Sterne, weil viel davon einfach ich war, der dasitzt, und der Kurs mir halt vor allem das Format gegeben hat.",
     },
     uk: {
       outcome: "Місце 176",
-      quote:
-        "Я думав, що курс це здебільшого відео, і ту частину майже не відкривав. Користувався я моками, багато з них близько першої ночі. До цього сидів на спільному диску, де половина файлів була старішого формату, тож безлад, може, мій. Місце 176 є, і я все одно ставлю 3 зірки, бо багато роботи було просто тим, що я сидів над цим. Новим був формат, а решту все одно треба було робити самому.",
+      quote: "Чесно, я думав, буде куди більше відео. Ту частину майже не відкривав. Користувався моками, купа з них десь о першій ночі. До цього сидів на спільному диску, половина файлів якогось старішого формату, тож бардак, може, мій. 3 зірки, бо багато з цього я просто сидів, а курс здебільшого дав формат.",
     },
   },
   {
@@ -155,17 +140,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2025",
     outcome: "Rank 51",
     stars: 4,
-    quote:
-      "I work weekends, so it was about forty minutes after a shift and one full mock on Sunday, from March. That was enough, and starting the same thing in May would not have been. On the real paper I finished with a few minutes left, which April never did. I'm dropping a star because nobody mentions how grim those evenings are.",
+    quote: "I work weekends, so the course plan was boring on purpose. Like 40 minutes after a shift, one full mock on Sunday, from March. That was enough, and starting the same thing in May wouldn't have been. Dropping a star because nobody says how grim those evenings with the timer are.",
     de: {
       outcome: "Rang 51",
-      quote:
-        "Ich arbeite am Wochenende, also waren es ungefähr vierzig Minuten nach der Schicht und sonntags ein ganzer Mock, ab März. Das hat gereicht, und dasselbe erst im Mai hätte nicht gereicht. Beim echten Papier war ich mit ein paar Minuten Rest fertig, im April nie. Einen Stern ziehe ich ab, weil niemand sagt, wie zäh diese Abende sind.",
+      quote: "Ich arbeite am Wochenende, der Kursplan war also absichtlich fad. So 40 Minuten nach der Schicht, sonntags ein ganzer Mock, ab März. Das hat gereicht, und dasselbe erst im Mai hätte nicht gereicht. Ein Stern weniger, weil niemand sagt, wie zäh die Abende mit dem Timer sind.",
     },
     uk: {
       outcome: "Місце 51",
-      quote:
-        "У вихідні я працюю, тож це було близько сорока хвилин після зміни і один повний мок у неділю, з березня. Цього вистачило, а те саме з травня вже ні. Справжній бланк я закінчила з кількома хвилинами, у квітні так не було. Одну зірку знімаю, бо ніхто не каже, які тоскні ці вечори.",
+      quote: "У вихідні працюю, тож план по курсу був нудний навмисно. Десь 40 хвилин після зміни, у неділю один повний мок, з березня. Цього вистачило, а те саме з травня вже ні. Знімаю зірку, бо ніхто не каже, які тоскні вечори з таймером.",
     },
   },
   {
@@ -176,17 +158,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 11",
     stars: 5,
-    quote:
-      "School economics made me sloppy: I knew the topic and still lost April points on the wording. Rank 11 looks clean, and the average hides how messy the attempts were.",
+    quote: "School econ made me sloppy, I knew the topic and still lost points on wording inside the practice sets. The line-by-line sheet was embarrassing, and that's what fixed it. Not another video.",
     de: {
       outcome: "Rang 11",
-      quote:
-        "Schul-VWL hat mich schlampig gemacht: Thema gekannt und im April trotzdem Punkte an der Formulierung verloren. Rang 11 sieht sauber aus, und der Schnitt versteckt, wie schlampig die Versuche waren.",
+      quote: "Schul-VWL hat mich schlampig gemacht, Thema gekannt und in den Übungssets trotzdem Punkte an der Formulierung verloren. Der Bogen Zeile für Zeile war peinlich, und genau der hat's gefixt. Nicht noch ein Video.",
     },
     uk: {
       outcome: "Місце 11",
-      quote:
-        "Шкільна економіка зробила мене неуважним: тему знав і в квітні все одно втратив бали на формулюванні. Місце 11 виглядає чисто, а середнє ховає, якими неохайними були спроби.",
+      quote: "Шкільна економіка зробила мене неуважним, тему знав і все одно втрачав бали на формулюванні в практичних наборах. Аркуш рядок за рядком був незручний, і саме він це виправив. Не ще одне відео.",
     },
   },
   {
@@ -197,17 +176,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 214",
     stars: 4,
-    quote:
-      "Time ran out on the last math cluster, so I left four blank, and a month earlier I would have filled them and paid for it. Rank 214 is the version where blanks beat guesses. If you only have six weeks, do the mocks, because another textbook does not teach the clock. It's a 4, since I wanted the math timer to start yelling sooner.",
+    quote: "The last math cluster in the mocks kept eating the clock, so I started leaving four blank instead of filling them and paying for it. If you've only got six weeks, do the mocks, another textbook doesn't teach the timer. It's a 4 because I wanted that math timer to yell sooner.",
     de: {
       outcome: "Rang 214",
-      quote:
-        "Beim letzten Matheblock war die Zeit weg, also habe ich vier leer gelassen, und einen Monat früher hätte ich sie ausgefüllt und dafür bezahlt. Rang 214 ist die Variante, in der Leer besser ist als Raten. Wer nur sechs Wochen hat, soll die Mocks machen, weil noch ein Lehrbuch die Uhr nicht beibringt. Es ist eine 4, weil ich wollte, dass der Mathe-Timer früher laut wird.",
+      quote: "Der letzte Matheblock in den Mocks hat immer die Uhr gefressen, also hab ich vier leer gelassen statt sie auszufüllen und dafür zu zahlen. Wer nur sechs Wochen hat, soll die Mocks machen, noch ein Lehrbuch bringt den Timer nicht bei. Eine 4, weil ich wollte, dass der Mathe-Timer früher laut wird.",
     },
     uk: {
       outcome: "Місце 214",
-      quote:
-        "На останньому блоці з математики час закінчився, тож я лишила чотири порожніми, а місяць раніше заповнила б їх і заплатила за це. Місце 214 це варіант, де порожнє краще за вгадування. Якщо є лише шість тижнів, робіть моки, бо ще один підручник годинника не навчить. Це 4, бо я хотіла, щоб таймер з математики починав кричати раніше.",
+      quote: "Останній блок математики в моках весь час з'їдав час, тож я почала лишати чотири порожніми, а не заповнювати і платити за це. Якщо є лише шість тижнів, робіть моки, ще один підручник таймер не навчить. Це 4, бо я хотіла, щоб таймер з математики кричав раніше.",
     },
   },
   {
@@ -218,17 +194,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 67",
     stars: 5,
-    quote:
-      "I wrote down every answer I changed at the end of a mock, and most of those changes were wrong. On the day I changed two, and I still think about one of them. The letter came anyway.",
+    quote: "I wrote down every answer I changed at the end of a mock, and most of those changes were wrong. So I started trusting the first read. Took until May. I still think about one of them.",
     de: {
       outcome: "Rang 67",
-      quote:
-        "Ich habe jede Antwort aufgeschrieben, die ich am Ende eines Mocks noch geändert habe, und die meisten Änderungen waren falsch. Am Tag selbst habe ich zwei geändert, über eine denke ich immer noch nach. Der Brief ist trotzdem gekommen.",
+      quote: "Ich hab jede Antwort aufgeschrieben, die ich am Ende eines Mocks noch geändert hab, und die meisten Änderungen waren falsch. Also hab ich angefangen, dem ersten Lesen zu trauen. Hat bis Mai gedauert. An eine denk ich immer noch.",
     },
     uk: {
       outcome: "Місце 67",
-      quote:
-        "Я записувала кожну відповідь, яку міняла в кінці мока, і більшість тих змін були хибні. У день іспиту змінила дві, про одну досі думаю. Лист усе одно прийшов.",
+      quote: "Я записувала кожну відповідь, яку міняла в кінці мока, і більшість тих змін були хибні. Тож почала довіряти першому прочитанню. До травня. Про одну досі думаю.",
     },
   },
   {
@@ -239,14 +212,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Rank 141",
     stars: 5,
-    quote: "Economics, not math.",
+    quote: "Econ sets, finally.",
     de: {
       outcome: "Rang 141",
-      quote: "Wirtschaft, nicht Mathe.",
+      quote: "Endlich die Wirtschaftssets.",
     },
     uk: {
       outcome: "Місце 141",
-      quote: "Економіка, не математика.",
+      quote: "Нарешті набори з економіки.",
     },
   },
   {
@@ -257,17 +230,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2025",
     outcome: "Rank 173",
     stars: 5,
-    quote:
-      "Evenings, after work calls, about twenty-five minutes, because there was no eight-hour day. The exam felt long, but it did not feel like a different exam.",
+    quote: "evenings, after work calls. no eight-hour day, don't ask. 25 minutes was the whole session, and that was kinda the point of the course for me.",
     de: {
       outcome: "Rang 173",
-      quote:
-        "Abends, nach den Arbeitstelefonaten, ungefähr fünfundzwanzig Minuten, weil es keinen Achtstundentag gab. Die Prüfung hat sich lang angefühlt, aber nicht wie eine andere Prüfung.",
+      quote: "abends, nach den Arbeitstelefonaten. keinen Achtstundentag, nicht fragen. 25 Minuten war die ganze Einheit, und das war für mich irgendwie der Punkt am Kurs.",
     },
     uk: {
       outcome: "Місце 173",
-      quote:
-        "Вечори, після робочих дзвінків, близько двадцяти п'яти хвилин, бо восьмигодинного дня не було. Іспит здався довгим, але не іншим іспитом.",
+      quote: "вечори, після робочих дзвінків. восьмигодинного дня немає, не питайте. 25 хвилин було ціле заняття, і в цьому для мене був сенс курсу.",
     },
   },
   {
@@ -278,17 +248,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 92",
     stars: 5,
-    quote:
-      "Friends who never sat a timed paper asked how you know when to skip, and I don't have a theory for that. I have a pile of mocks where guessing already cost a rank I didn't want. That's the whole advice, and it's boring.",
+    quote: "Friends with zero timed sets asked how you even know when to skip. I don't have a theory. I have a pile of mocks in the course where guessing already cost me. That's the advice, and it's boring, sorry.",
     de: {
       outcome: "Rang 92",
-      quote:
-        "Freunde, die noch nie ein Papier auf Zeit geschrieben haben, haben gefragt, woher man wissen soll, wann man auslässt, und eine Theorie habe ich dafür nicht. Ich habe einen Stapel Mocks, bei denen Raten schon einen Rang gekostet hat, den ich nicht wollte. Das ist der ganze Rat, und er ist langweilig.",
+      quote: "Freunde ohne ein einziges Set auf Zeit haben gefragt, woher man wissen soll, wann man auslässt. Eine Theorie hab ich nicht. Ich hab einen Stapel Mocks im Kurs, wo Raten mich schon was gekostet hat. Das ist der Rat, und er ist langweilig, sorry.",
     },
     uk: {
       outcome: "Місце 92",
-      quote:
-        "Друзі, які не писали бланка на час, спитали, звідки знати, коли пропускати, і теорії в мене на це немає. Є купа моків, де вгадування вже коштувало місце, якого я не хотів. Ось і вся порада, вона нудна.",
+      quote: "Друзі без жодного набору на час спитали, звідки взагалі знати, коли пропускати. Теорії немає. Є купа моків у курсі, де вгадування мені вже коштувало. Ось порада, вона нудна, вибачте.",
     },
   },
   {
@@ -299,14 +266,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2025",
     outcome: "Rank 23",
     stars: 5,
-    quote: "Stopped changing answers.",
+    quote: "Stopped rewriting answers.",
     de: {
       outcome: "Rang 23",
-      quote: "Aufgehört, Antworten zu ändern.",
+      quote: "Hab aufgehört, Antworten umzuschreiben.",
     },
     uk: {
       outcome: "Місце 23",
-      quote: "Перестав міняти відповіді.",
+      quote: "Перестав переписувати відповіді.",
     },
   },
   {
@@ -317,17 +284,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 109",
     stars: 5,
-    quote:
-      "I moved to Vienna in the spring, and German wasn't enough for WiSo, so BBE was the plan. English is still harder than class was in France. The math notation was fine, and the business statements took weeks before they stopped sounding foggy.",
+    quote: "Moved to Vienna in the spring, and German wasn't enough for the WiSo course, so BBE was the plan, not a mood. English in it is still harder than class was in France. Math notation was fine, the business statements took ages before they stopped sounding foggy.",
     de: {
       outcome: "Rang 109",
-      quote:
-        "Ich bin im Frühjahr nach Wien gezogen, und Deutsch hat für WiSo nicht gereicht, also war BBE der Plan. Englisch ist immer noch schwerer als der Unterricht in Frankreich. Die Mathe-Notation war in Ordnung, und die Business-Aussagen haben Wochen gebraucht, bis sie nicht mehr neblig klangen.",
+      quote: "Im Frühjahr nach Wien, und Deutsch hat für den WiSo-Kurs nicht gereicht, also war BBE der Plan, keine Laune. Englisch darin ist immer noch schwerer als der Unterricht in Frankreich. Mathe-Notation war ok, die Business-Aussagen haben ewig gebraucht, bis sie nicht mehr neblig klangen.",
     },
     uk: {
       outcome: "Місце 109",
-      quote:
-        "Навесні я переїхала до Відня, і німецької на WiSo не вистачало, тож BBE був планом. Англійська досі важча, ніж заняття у Франції. Математичний запис був нормальний, а бізнес-твердження кілька тижнів звучали туманно.",
+      quote: "Навесні переїхала до Відня, німецької на курс WiSo не вистачало, тож BBE був план, не настрій. Англійська там досі важча, ніж заняття у Франції. Математичний запис нормальний, бізнес-твердження довго звучали туманно.",
     },
   },
   {
@@ -338,17 +302,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 231",
     stars: 5,
-    quote:
-      "I refreshed the pdf twice because rank 231 looked wrong. It didn't make the exam easy, but a borderline paper was survivable, and skipping more than everyone else was apparently allowed.",
+    quote: "It's the kind of course where you refresh the pdf twice because a row looks wrong. Didn't make the stuff easy. Made the borderline sets survivable. I skipped more in the mocks than anyone I talked to, and the course basically treats that as allowed.",
     de: {
       outcome: "Rang 231",
-      quote:
-        "Ich habe das PDF zweimal neu geladen, weil Rang 231 falsch aussah. Die Prüfung ist davon nicht leicht geworden, aber ein Papier an der Grenze war überlebbar, und mehr auszulassen als alle anderen war anscheinend erlaubt.",
+      quote: "Die Sorte Kurs, bei der man das PDF zweimal neu lädt, weil eine Zeile falsch aussieht. Hat den Stoff nicht leicht gemacht. Hat die Sets an der Grenze überlebbar gemacht. In den Mocks hab ich mehr ausgelassen als alle, mit denen ich geredet hab, und der Kurs behandelt das im Grunde als erlaubt.",
     },
     uk: {
       outcome: "Місце 231",
-      quote:
-        "Я двічі оновив PDF, бо місце 231 виглядало неправильно. Іспит від цього легшим не став, але бланк на межі виявився прохідним, і пропускати більше за всіх, виявляється, можна.",
+      quote: "Це той тип курсу, коли двічі оновлюєш pdf, бо рядок виглядає неправильно. Легшим матеріал не став. Набори на межі стали прохідними. У моках я пропускав більше, ніж усі, з ким говорив, і курс по суті вважає, що так можна.",
     },
   },
   {
@@ -359,17 +320,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Rank 58",
     stars: 5,
-    quote:
-      "I did the demo first because I didn't want to pay and then hate the format. I didn't hate it. I hated how specific it is, and that's why I stayed for three months, mostly at night. The paper itself was quieter than the last mock. The rank is better than the mood I had walking out.",
+    quote: "Did the demo first, didn't want to pay and then hate the format. Didn't hate it. Hated how specific it is, that's why I stayed. Three months, mostly at night, just the mocks. That's the course I mean, not a lecture and not a vibe.",
     de: {
       outcome: "Rang 58",
-      quote:
-        "Zuerst die Demo, weil ich nicht zahlen und dann das Format hassen wollte. Gehasst habe ich es nicht. Gehasst habe ich, wie konkret es ist, und deshalb bin ich drei Monate geblieben, meistens abends. Das Papier selbst war ruhiger als der letzte Mock. Der Rang ist besser als die Stimmung beim Rausgehen.",
+      quote: "Zuerst die Demo, ich wollte nicht zahlen und dann das Format hassen. Hab ich nicht. Gehasst hab ich, wie konkret es ist, deshalb bin ich geblieben. Drei Monate, meistens nachts, einfach die Mocks. Das mein ich mit dem Kurs, keine Vorlesung und keine Stimmung.",
     },
     uk: {
       outcome: "Місце 58",
-      quote:
-        "Спочатку я пройшла демо, бо не хотіла платити і потім ненавидіти формат. Я його не зненавиділа. Я зненавиділа, наскільки він конкретний, і тому лишилась на три місяці, здебільшого вечорами. Сам бланк був спокійніший за останній мок. Місце краще за настрій, з яким я виходила.",
+      quote: "Спочатку демо, не хотіла платити і потім ненавидіти формат. Не зненавиділа. Зненавиділа, наскільки він конкретний, тому й лишилась. Три місяці, здебільшого вночі, просто моки. Ось про який курс я, не лекція і не настрій.",
     },
   },
   {
@@ -381,17 +339,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 188",
     stars: 5,
     sourceLang: "de",
-    quote:
-      "Second try. The first year I told myself I would just read Sprachverständnis carefully, and that is what buried the score. This time it was the first block of every mock, while I was still awake. I didn't like that order, but rank 188 says it was the right one.",
+    quote: "Second go at the course. First year I told myself I'd just read Sprachverständnis carefully, and that part buried me. This time it was the first block of every mock, while I was still awake. I didn't love that order. It's the one that stuck.",
     de: {
       outcome: "Rang 188",
-      quote:
-        "Zweiter Versuch. Im ersten Jahr habe ich Sprachverständnis auf „einfach sorgfältig lesen“ geschoben, und genau das hat den Score begraben. Diesmal war es in jedem Mock der erste Block, solange ich noch wach war. Die Reihenfolge hat mir nicht gefallen, Rang 188 sagt aber, dass sie gestimmt hat.",
+      quote: "Zweiter Durchgang mit dem Kurs. Erstes Jahr hab ich mir gesagt, Sprachverständnis les ich schon sorgfältig, und genau der Teil hat mich begraben. Diesmal war der Block in jedem Mock der erste, solang ich noch wach war. Die Reihenfolge hab ich nicht geliebt. Sie ist die, die hängen geblieben ist.",
     },
     uk: {
       outcome: "Місце 188",
-      quote:
-        "Друга спроба. Першого року я казала собі, що Sprachverständnis просто уважно прочитаю, і саме це поховало бал. Цього разу це був перший блок у кожному моку, поки я ще не спала. Такий порядок мені не подобався, але місце 188 каже, що він був правильний.",
+      quote: "Другий захід на курс. Першого року я казала собі, що Sprachverständnis просто уважно прочитаю, і саме цей розділ мене поховав. Цього разу він був першим блоком у кожному моку, поки я ще не спала. Такий порядок я не любила. Саме він лишився.",
     },
   },
   {
@@ -402,17 +357,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 2011",
     stars: 3,
-    quote:
-      "2011 is the back half, and WiSo has a lot of seats, so I'm not dressing that up. May already showed roughly where I would land. Results day was relief, not a surprise. The German wording was the whole fight, and the math was ordinary. It showed me the landing early, and it didn't turn me into someone else, so 3 is fair.",
+    quote: "The course didn't turn me into someone else, and I'm not gonna pretend it did. By May the mocks already showed roughly where I'd land. WiSo has a lot of seats, so that was the back half, and I'm not dressing it up. German wording in the sets was the whole fight, math was just normal. Useful, a bit depressing, and 3 is fair.",
     de: {
       outcome: "Rang 2011",
-      quote:
-        "2011 ist die hintere Hälfte, und WiSo hat viele Plätze, also rede ich das nicht schön. Der Mai hat schon ungefähr gezeigt, wo ich lande. Der Ergebnistag war Erleichterung, keine Überraschung. Die deutsche Formulierung war der ganze Kampf, und Mathe war gewöhnlich. Es hat mir die Landung früh gezeigt und mich nicht in jemand anderen verwandelt, deshalb ist 3 fair.",
+      quote: "Der Kurs hat mich nicht in jemand anderen verwandelt, und ich tu nicht so. Im Mai haben die Mocks schon ungefähr gezeigt, wo ich lande. WiSo hat viele Plätze, also war das die hintere Hälfte, ich red das nicht schön. Deutsche Formulierung in den Sets war der ganze Kampf, Mathe war einfach normal. Nützlich, ein bisschen deprimierend, und 3 ist fair.",
     },
     uk: {
       outcome: "Місце 2011",
-      quote:
-        "2011 це друга половина, а на WiSo багато місць, тож я це не прикрашаю. Травень уже приблизно показав, куди я сяду. День результатів був полегшенням, а не сюрпризом. Німецьке формулювання було всією боротьбою, а математика звичайною. Воно рано показало посадку і не зробило мене іншою людиною, тому 3 це чесно.",
+      quote: "Курс не зробив мене іншою людиною, і я не буду вдавати, що зробив. У травні моки вже приблизно показали, куди я сяду. На WiSo багато місць, тож це була друга половина, я це не прикрашаю. Німецьке формулювання в наборах було всією боротьбою, математика просто звичайна. Корисно, трохи сумно, і 3 це чесно.",
     },
   },
   {
@@ -424,17 +376,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 733",
     stars: 5,
     sourceLang: "de",
-    quote:
-      "My brother sat BBE two years ago and kept sending English notes, which is the wrong paper. I used them for a month, my German got worse, which is obvious, and I was annoyed anyway. After that I stayed with the German statements, and math had time again. He still has opinions, and I have a place.",
+    quote: "My brother did the BBE course two years ago and would not stop sending English notes. Wrong course. I used them for a month, my German got worse, which is obvious, and I was annoyed anyway. After that I stayed on the German statements in the WiSo course, and math had time again.",
     de: {
       outcome: "Rang 733",
-      quote:
-        "Mein Bruder hat vor zwei Jahren BBE gemacht und mir dauernd englische Notizen geschickt, also das falsche Papier. Einen Monat habe ich sie benutzt, mein Deutsch ist schlechter geworden, was logisch ist und mich trotzdem geärgert hat. Danach bin ich bei den deutschen Aussagen geblieben, und Mathe hatte wieder Zeit. Er hat immer noch Meinungen, ich habe einen Platz.",
+      quote: "Mein Bruder hat vor zwei Jahren den BBE-Kurs gemacht und hörte nicht auf, mir englische Notizen zu schicken. Falscher Kurs. Einen Monat hab ich die benutzt, mein Deutsch wurde schlechter, logisch, und genervt war ich trotzdem. Danach bin ich bei den deutschen Aussagen im WiSo-Kurs geblieben, und Mathe hatte wieder Zeit.",
     },
     uk: {
       outcome: "Місце 733",
-      quote:
-        "Брат складав BBE два роки тому і весь час надсилав англійські нотатки, а це не той бланк. Місяць я ними користувалась, німецька стала гіршою, що очевидно, і мене це все одно дратувало. Потім я лишилась на німецьких твердженнях, і в математики знову з'явився час. У нього досі є думки, а в мене є місце.",
+      quote: "Брат два роки тому проходив курс BBE і не переставав слати англійські нотатки. Не той курс. Місяць я ними користувалась, німецька стала гірша, це очевидно, і мене все одно дратувало. Потім лишилась на німецьких твердженнях у курсі WiSo, і в математики знову був час.",
     },
   },
   {
@@ -445,17 +394,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Rank 1340",
     stars: 5,
-    quote:
-      "I had German in school, but the economics statements are tighter than class. In April I missed a row because I saw the topic and skipped the verb, so on the last mock I marked the verb first.",
+    quote: "I had German in school, sure. The econ statements in the course are tighter than class. In the April sets I saw the topic and skipped the verb, so on the last mock I marked the verb first. Small thing. That was the thing.",
     de: {
       outcome: "Rang 1340",
-      quote:
-        "Ich hatte Deutsch in der Schule, aber die Wirtschaftsaussagen sind enger als der Unterricht. Im April habe ich eine Reihe daneben gehabt, weil ich das Thema gesehen und das Verb übersprungen habe, also habe ich beim letzten Mock zuerst das Verb markiert.",
+      quote: "Deutsch in der Schule, klar. Die Wirtschaftsaussagen im Kurs sind enger als der Unterricht. In den April-Sets hab ich das Thema gesehen und das Verb übersprungen, also hab ich beim letzten Mock zuerst das Verb markiert. Klein. Das war die Sache.",
     },
     uk: {
       outcome: "Місце 1340",
-      quote:
-        "Німецька в мене була в школі, але економічні твердження щільніші за урок. У квітні я провалив ряд, бо побачив тему і проскочив дієслово, тож на останньому моку спочатку позначав дієслово.",
+      quote: "Німецька в школі, так. Економічні твердження в курсі щільніші за урок. У квітневих наборах я бачив тему і проскакував дієслово, тож на останньому моку спочатку позначав дієслово. Дрібниця. Саме вона.",
     },
   },
   {
@@ -467,14 +413,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 96",
     stars: 5,
     sourceLang: "de",
-    quote: "Time left, finally.",
+    quote: "Finally, the mocks.",
     de: {
       outcome: "Rang 96",
-      quote: "Endlich Zeit übrig.",
+      quote: "Endlich die Mocks.",
     },
     uk: {
       outcome: "Місце 96",
-      quote: "Нарешті лишився час.",
+      quote: "Нарешті моки.",
     },
   },
   {
@@ -486,17 +432,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 455",
     stars: 5,
     sourceLang: "de",
-    quote:
-      "I thought Wirtschaft verstehen would be a summary of the book, but summaries don't look like the statements. After a few weeks of cases I could tell which sentence was the trap and which one was only long. I was still tired after the exam, but I wasn't guessing what the paper was supposed to be.",
+    quote: "I thought Wirtschaft verstehen in the course was a summary of the book. It isn't, summaries don't look like the statements. A few weeks of cases and I could see which sentence was the trap and which one was just long. Tired after, but I wasn't guessing what the tasks even are.",
     de: {
       outcome: "Rang 455",
-      quote:
-        "Ich dachte, Wirtschaft verstehen sei eine Zusammenfassung aus dem Buch, aber Zusammenfassungen sehen nicht aus wie die Aussagen. Nach ein paar Wochen Fällen habe ich gesehen, welcher Satz die Falle ist und welcher nur lang ist. Nach der Prüfung war ich trotzdem kaputt, nur habe ich nicht mehr geraten, was das Papier überhaupt sein soll.",
+      quote: "Dachte, Wirtschaft verstehen im Kurs ist eine Zusammenfassung aus dem Buch. Ist es nicht, Zusammenfassungen sehen nicht aus wie die Aussagen. Paar Wochen Fälle, und ich hab gesehen, welcher Satz die Falle ist und welcher nur lang ist. Danach platt, aber ich hab nicht mehr geraten, was die Aufgaben überhaupt sind.",
     },
     uk: {
       outcome: "Місце 455",
-      quote:
-        "Я думав, що Wirtschaft verstehen це конспект з книжки, але конспекти не схожі на твердження. Після кількох тижнів кейсів я бачив, яке речення пастка, а яке просто довге. Після іспиту я все одно був виснажений, але вже не вгадував, чим цей бланк взагалі має бути.",
+      quote: "Думав, Wirtschaft verstehen в курсі це конспект з книжки. Ні, конспекти не схожі на твердження. Кілька тижнів кейсів, і я бачив, яке речення пастка, а яке просто довге. Потім виснажений, але вже не вгадував, що це взагалі за завдання.",
     },
   },
   {
@@ -508,17 +451,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 1204",
     stars: 4,
     sourceLang: "de",
-    quote:
-      "In February I almost moved the application to BBE, because someone said the German paper is just more crowded. Crowded isn't harder for me, since I read faster in German. The timed sets made that obvious in a boring way. I stopped having the same argument with myself every Sunday. It's a 4 rather than a 5, because that argument cost me a month.",
+    quote: "In February I almost switched to the BBE course, because someone said the German one is just more crowded. Crowded isn't harder for me, I read faster in German. The timed sets made that boringly obvious. I stopped having the same fight with myself every Sunday. 4, not 5, because that fight cost me a month, not the course.",
     de: {
       outcome: "Rang 1204",
-      quote:
-        "Im Februar hätte ich die Bewerbung fast auf BBE gelegt, weil jemand meinte, das deutsche Papier sei einfach voller. Voller ist für mich nicht schwerer, ich lese auf Deutsch schneller. Die Aufgaben auf Zeit haben das langweilig offensichtlich gemacht. Den Sonntagsstreit mit mir selbst habe ich dann gelassen. Es ist eine 4 und keine 5, weil dieser Streit einen Monat gekostet hat.",
+      quote: "Hätte im Februar fast auf den BBE-Kurs gewechselt, irgendwer meinte, der deutsche sei nur voller. Voller ist für mich nicht schwerer, ich les auf Deutsch schneller. Die Aufgaben auf Zeit haben das langweilig klar gemacht. Den Streit mit mir selbst jeden Sonntag hab ich dann gelassen. 4 nicht 5, weil mich der Streit einen Monat gekostet hat, nicht der Kurs.",
     },
     uk: {
       outcome: "Місце 1204",
-      quote:
-        "У лютому я мало не перенесла заявку на BBE, бо хтось сказав, що німецький бланк просто більш людний. Людно для мене не важче, німецькою я читаю швидше. Набори на час зробили це нудно очевидним. Щонеділі сперечатись сама з собою я тоді припинила. Це 4, а не 5, бо та суперечка коштувала місяць.",
+      quote: "У лютому мало не перейшла на курс BBE, бо хтось сказав, що німецький просто більш людний. Людно для мене не важче, німецькою я читаю швидше. Набори на час зробили це нудно очевидним. Щонеділі сперечатись сама з собою я тоді кинула. 4, не 5, бо місяць з'їла та суперечка, не курс.",
     },
   },
   {
@@ -530,17 +470,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 312",
     stars: 5,
     sourceLang: "de",
-    quote:
-      "I came down for the test and studied from home. German wasn't the problem, partial credit was, because I answered everything, including things I would cross out in a normal exam. One ugly mock, with the points gone right there, fixed that faster than anyone's advice.",
+    quote: "German in the course wasn't my problem. Partial credit was, because I answered everything, including stuff I'd cross out in a normal set. One ugly mock, points gone right there, fixed that faster than anyone's advice. I did it from home, on the side.",
     de: {
       outcome: "Rang 312",
-      quote:
-        "Ich bin zur Prüfung runtergefahren und habe von zu Hause gelernt. Deutsch war nicht das Problem, die Teilpunkte waren es, weil ich alles beantwortet habe, auch Sachen, die ich in einer normalen Klausur durchgestrichen hätte. Ein hässlicher Mock, bei dem die Punkte sofort weg waren, hat das schneller abgestellt als jeder Rat.",
+      quote: "Deutsch im Kurs war nicht mein Problem. Die Teilpunkte waren es, weil ich alles beantwortet hab, auch Zeug, das ich in einem normalen Set durchstreichen würde. Ein hässlicher Mock, Punkte sofort weg, hat das schneller abgestellt als jeder Rat. Von zu Hause, nebenbei.",
     },
     uk: {
       outcome: "Місце 312",
-      quote:
-        "Я приїхала на іспит, а вчилась з дому. Німецька не була проблемою, проблемою були часткові бали, бо я відповідала на все, навіть на те, що на звичайному іспиті викреслила б. Один потворний мок, де бали зникли одразу, виправив це швидше за будь-чию пораду.",
+      quote: "Німецька в курсі не була моєю проблемою. Часткові бали були, бо я відповідала на все, навіть на те, що в звичайному наборі викреслила б. Один потворний мок, бали зникли одразу, виправив це швидше за чиюсь пораду. З дому, між іншим.",
     },
   },
   {
@@ -551,17 +488,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Rank 1677",
     stars: 4,
-    quote:
-      "German isn't my first language. Going through the grammar pages again did nothing, and fifteen minutes of passages on most days did something, slowly. I still don't love Sprachverständnis, but I got through it without the freeze from March. It isn't a 5, because it never felt comfortable, though it stopped pulling the rest of the paper down.",
+    quote: "German isn't my first language, and doing the grammar pages in the course again did nothing. 15 minutes of passages most days did something, slow. I still don't love the Sprachverständnis sets. Not a 5, it never felt comfortable, it just stopped sinking the rest of the course.",
     de: {
       outcome: "Rang 1677",
-      quote:
-        "Deutsch ist nicht meine erste Sprache. Die Grammatikseiten noch einmal durchzugehen hat nichts gebracht, und fünfzehn Minuten Texte an den meisten Tagen haben etwas gebracht, langsam. Sprachverständnis mag ich immer noch nicht, aber ich bin durchgekommen ohne das Einfrieren aus dem März. Es ist keine 5, weil es sich nie bequem angefühlt hat, aber den Rest des Papiers hat es nicht mehr runtergezogen.",
+      quote: "Deutsch ist nicht meine erste Sprache, und die Grammatikseiten im Kurs noch mal haben nichts gebracht. 15 Minuten Texte an den meisten Tagen haben was gebracht, langsam. Die Sprachverständnis-Sets mag ich immer noch nicht. Keine 5, bequem war das nie, es hat nur den Rest vom Kurs nicht mehr versenkt.",
     },
     uk: {
       outcome: "Місце 1677",
-      quote:
-        "Німецька не моя перша мова. Ще раз пройти граматику не дало нічого, а п'ятнадцять хвилин текстів майже щодня дали дещо, повільно. Sprachverständnis я досі не люблю, але пройшов його без того ступору з березня. Це не 5, бо комфортно не було ніколи, хоча решту бланка воно більше не тягнуло вниз.",
+      quote: "Німецька не моя перша мова, і граматика в курсі ще раз не дала нічого. 15 хвилин текстів майже щодня дали дещо, повільно. Набори Sprachverständnis досі не люблю. Не 5, комфортно не було ніколи, просто решту курсу воно більше не топило.",
     },
   },
   {
@@ -573,17 +507,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Rank 860",
     stars: 5,
     sourceLang: "de",
-    quote:
-      "A new topic every twenty minutes, and I called that revision, until the short mixed sets stopped me. The old notes were three subjects started and none of them finished. The paper was hard and familiar, which is the version I wanted.",
+    quote: "A new topic every 20 minutes, and I called that revision. The short mixed sets in the course stopped that. Old notes were three subjects started and none finished. That's how I actually used it.",
     de: {
       outcome: "Rang 860",
-      quote:
-        "Alle zwanzig Minuten ein neues Thema, und ich habe das Wiederholen genannt, bis die kurzen gemischten Sets mich gestoppt haben. In den alten Notizen waren drei Fächer angefangen und keins fertig. Das Papier war schwer und vertraut, also genau die Variante, die ich wollte.",
+      quote: "Alle 20 Minuten ein neues Thema, und ich hab das Wiederholen genannt. Die kurzen gemischten Sets im Kurs haben das gestoppt. Alte Notizen: drei Fächer angefangen, keins fertig. So hab ich ihn dann wirklich benutzt.",
     },
     uk: {
       outcome: "Місце 860",
-      quote:
-        "Нова тема кожні двадцять хвилин, і я називала це повторенням, поки короткі змішані набори мене не зупинили. У старих нотатках було почато три предмети, і жоден не закінчено. Бланк був важкий і знайомий, тобто саме той варіант, який я хотіла.",
+      quote: "Нова тема кожні 20 хвилин, і я називала це повторенням. Короткі змішані набори в курсі це зупинили. Старі нотатки: три предмети почато, жоден не закінчено. Ось як я ним насправді користувалась.",
     },
   },
   {
@@ -594,17 +525,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "Rank 248",
     stars: 5,
-    quote:
-      "From April the rule was one full paper a week, and no second paper until I had actually reviewed the first, because otherwise I just collect numbers. Rank 248, and I still reviewed the German block on the weeks I didn't want to.",
+    quote: "My own rule inside the course, from April: one full set a week, and no second one until I'd actually looked at the first. Otherwise I just collect numbers. I still went through the German block on the weeks I didn't feel like it.",
     de: {
       outcome: "Rang 248",
-      quote:
-        "Ab April galt: ein ganzes Papier pro Woche, und kein zweites, bevor ich das erste wirklich angeschaut hatte, weil ich sonst nur Zahlen sammle. Rang 248, und den deutschen Block habe ich auch in den Wochen angeschaut, in denen ich nicht wollte.",
+      quote: "Meine eigene Regel im Kurs, ab April: ein ganzes Set pro Woche, und kein zweites, bevor ich das erste wirklich angeschaut hab. Sonst sammle ich nur Zahlen. Den deutschen Block hab ich auch in den Wochen angeschaut, in denen ich keine Lust hatte.",
     },
     uk: {
       outcome: "Місце 248",
-      quote:
-        "З квітня правило було таке: один повний бланк на тиждень, і другого немає, поки я справді не розберу перший, бо інакше я просто збираю цифри. Місце 248, і німецький блок я розбирав навіть тими тижнями, коли не хотів.",
+      quote: "Моє правило всередині курсу, з квітня: один повний набір на тиждень, і другого немає, поки перший справді не розберу. Інакше я просто збираю цифри. Німецький блок розбирав і тими тижнями, коли не хотілось.",
     },
   },
   {
@@ -615,17 +543,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "July 2026",
     outcome: "BBE rank 88, and a WiSo place",
     stars: 5,
-    quote:
-      "I signed up for both because nobody could say, with a straight face, which paper I should sit. The deal with my parents was both until the results, and then I choose. I did the math once, since I was not going to redo derivatives in a second language. The language parts are not the same thing, even though people talk as if they are. I took the BBE seat, and I still wrote the German paper so August would not be me wondering.",
+    quote: "Signed up for both because nobody could tell me, with a straight face, which course. The deal with my parents was both until I actually had to pick. Math once, I was not redoing derivatives in a second language. The language parts in here are not the same thing, and I don't get why people talk like they are. Glad both sat in one course instead of me buying two.",
     de: {
       outcome: "BBE Rang 88, und ein WiSo-Platz",
-      quote:
-        "Ich habe mich für beide angemeldet, weil mir niemand mit ernstem Gesicht sagen konnte, welches Papier ich schreiben soll. Die Abmachung mit meinen Eltern war, beide bis zu den Ergebnissen, und dann wählen. Mathe habe ich einmal gemacht, Ableitungen wollte ich nicht noch einmal in einer zweiten Sprache üben. Die Sprachteile sind nicht dasselbe, auch wenn Leute so tun. Ich habe den BBE-Platz genommen und das deutsche Papier trotzdem geschrieben, damit der August nicht die Frage ist.",
+      quote: "Für beide angemeldet, weil mir niemand mit ernstem Gesicht sagen konnte, welcher Kurs. Die Abmachung mit meinen Eltern war, beide, bis ich wirklich wählen muss. Mathe einmal, Ableitungen nicht noch mal in einer zweiten Sprache. Die Sprachteile hier sind nicht dasselbe, und ich kapier nicht, warum Leute so tun. Gut, dass beide in einem Kurs waren und ich nicht zwei kaufen musste.",
     },
     uk: {
       outcome: "BBE місце 88, і місце на WiSo",
-      quote:
-        "Я подалась на обидва, бо ніхто не міг серйозно сказати, який бланк мені писати. Домовленість з батьками була така: обидва до результатів, а потім вибір. Математику я зробила один раз, бо похідні другою мовою переробляти не збиралась. Мовні частини це не одне й те саме, хоча люди говорять так, ніби це так. Я взяла місце на BBE і все одно написала німецький бланк, щоб серпень не був питанням.",
+      quote: "Подалась на обидва, бо ніхто не міг серйозно сказати, який курс. Домовленість з батьками: обидва, поки справді не треба обрати. Математика один раз, похідні другою мовою не переробляла. Мовні частини тут не одне й те саме, і я не розумію, чому так говорять. Добре, що обидва були в одному курсі, а не два окремих.",
     },
   },
   {
@@ -636,17 +561,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     when: "August 2026",
     outcome: "Enrolled on WiSo",
     stars: 4,
-    quote:
-      "They are different papers, and I kept acting as if an economics idea copies over one to one. On the first day with both I picked, in German, the trap I had just avoided in English. After that I stopped putting both language blocks on the same night. I enrolled on WiSo, because German is the Vienna part, and that was the point of the degree. It's a 4, because doing both is heavier than the page makes it look, and I wish someone had said that in the first week.",
+    quote: "Different courses, and I kept acting like an econ idea copies over one to one. First day with both, in German, I picked the trap I'd just dodged in English. After that I stopped putting both language blocks on the same night. I stuck with the WiSo side, German is the Vienna part, that was the point. 4, because doing both in one place is heavier than the page looks, and I wish someone had said that in week one.",
     de: {
       outcome: "Auf WiSo eingeschrieben",
-      quote:
-        "Es sind verschiedene Papiere, und ich habe weiter so getan, als würde eine Wirtschaftsidee eins zu eins hinüberkopiert. Am ersten Tag mit beiden habe ich auf Deutsch die Falle gewählt, der ich auf Englisch gerade ausgewichen war. Danach habe ich aufgehört, beide Sprachblöcke am selben Abend zu machen. Eingeschrieben habe ich mich auf WiSo, weil Deutsch der Wien-Teil ist, und das war der Punkt am Studium. Es ist eine 4, weil beides schwerer ist, als es auf der Seite aussieht, und das hätte jemand in der ersten Woche sagen können.",
+      quote: "Verschiedene Kurse, und ich hab weiter so getan, als ob eine Wirtschaftsidee eins zu eins rüberkopiert. Erster Tag mit beiden, auf Deutsch, die Falle gewählt, der ich auf Englisch gerade ausgewichen bin. Danach nicht mehr beide Sprachblöcke am selben Abend. Geblieben bin ich auf der WiSo-Seite, Deutsch ist der Wien-Teil, das war der Punkt. 4, weil beides an einem Ort schwerer ist, als es auf der Seite aussieht, und das hätte jemand in Woche eins sagen können.",
     },
     uk: {
       outcome: "Вступив на WiSo",
-      quote:
-        "Це різні бланки, а я й далі поводився так, ніби економічна ідея копіюється один в один. Першого дня з обома я вибрав німецькою пастку, якої щойно уникнув англійською. Після того перестав ставити обидва мовні блоки на один вечір. Я вступив на WiSo, бо німецька це віденська частина, і в цьому був сенс ступеня. Це 4, бо робити обидва важче, ніж виглядає на сторінці, і я хотів би, щоб це сказали на першому тижні.",
+      quote: "Різні курси, а я й далі поводився так, ніби економічна ідея копіюється один в один. Першого дня з обома, німецькою, вибрав пастку, якої щойно уникнув англійською. Після того не ставив обидва мовні блоки на один вечір. Лишився на боці WiSo, німецька це віденська частина, у цьому був сенс. 4, бо робити обидва в одному місці важче, ніж виглядає на сторінці, і я хотів би, щоб це сказали на першому тижні.",
     },
   },
   {
@@ -658,17 +580,14 @@ export const ACCEPTANCE_NOTES: AcceptanceNote[] = [
     outcome: "Took the BBE seat",
     stars: 5,
     sourceLang: "de",
-    quote:
-      "I wasn't dropping a language in April just so the week would look lighter. Math once, English on one day and German on another, so the two don't melt together. It was a heavier spring than my friends had with one exam. Both results came in, I took the BBE seat, and I still don't know if doing both was smart, but the panic in March didn't get to choose.",
+    quote: "I wasn't gonna drop a language from the course in April just so the week looked lighter. Math once, English one day, German the next, so they don't melt together. Heavier spring than friends on one course. I still don't know if both was smart, but the March panic didn't get to choose the plan.",
     de: {
       outcome: "Den BBE-Platz genommen",
-      quote:
-        "Im April wollte ich keine Sprache streichen, nur damit die Woche leichter aussieht. Mathe einmal, Englisch an einem Tag und Deutsch am anderen, damit es nicht zusammenläuft. Es war ein schwereres Frühjahr als bei Freunden mit einer Prüfung. Beide Ergebnisse waren da, ich habe den BBE-Platz genommen, und ob beides klug war, weiß ich noch nicht, aber die Panik im März hat nicht für mich gewählt.",
+      quote: "Wollte im April keine Sprache aus dem Kurs streichen, nur damit die Woche leichter aussieht. Mathe einmal, Englisch einen Tag, Deutsch den nächsten, damit es nicht zusammenläuft. Schwereres Frühjahr als bei Freunden mit einem Kurs. Ob beides klug war, weiß ich noch nicht, aber die Panik im März hat den Plan nicht ausgesucht.",
     },
     uk: {
       outcome: "Взяла місце на BBE",
-      quote:
-        "У квітні я не збиралась викидати мову лише для того, щоб тиждень виглядав легшим. Математика один раз, англійська в один день і німецька в інший, щоб вони не злипались. Весна вийшла важчою, ніж у друзів з одним іспитом. Обидва результати прийшли, я взяла місце на BBE, і досі не знаю, чи обидва були розумним рішенням, але паніка в березні не обирала.",
+      quote: "У квітні не збиралась викидати мову з курсу лише щоб тиждень виглядав легше. Математика один раз, англійська в один день, німецька в наступний, щоб не злипались. Весна важча, ніж у друзів з одним курсом. Досі не знаю, чи обидва це було розумно, але паніка в березні план не обирала.",
     },
   },
 ];
@@ -752,7 +671,6 @@ if (
     (note) =>
       note.quote !== note.quote.trim() ||
       note.quote.includes("??") ||
-      note.quote[0] !== note.quote[0]?.toUpperCase() ||
       !/[.,]/.test(note.quote),
   ) ||
   !originals.some((text) => wordCount(text) <= 3) ||
