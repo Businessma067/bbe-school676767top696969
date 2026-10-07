@@ -2,6 +2,7 @@ import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { Star } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { WriteReviewBox } from "@/components/WriteReviewBox";
 import {
   ACCEPTANCE_NOTES,
   averageStarsLabel,
@@ -217,6 +218,8 @@ export function ReviewsPage() {
             </section>
           ))}
         </div>
+
+        <WriteReviewBox track={active} />
       </main>
       <footer className="border-t border-border px-4 py-8 text-center text-xs text-muted-foreground sm:px-6">
         © 2026 BBE School. Not affiliated with WU Vienna.

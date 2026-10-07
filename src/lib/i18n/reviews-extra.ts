@@ -26,6 +26,26 @@ export const reviewsChromeDe: Record<string, string> = {
   "Notes from people who sat the WU Vienna entrance exam: 17 on BBE, 11 on WiSo, and 3 who prepared for both.":
     "Notizen von Leuten, die die Aufnahmeprüfung der WU Wien geschrieben haben: 17 zu BBE, 11 zu WiSo und 3, die sich auf beide vorbereitet haben.",
   "Filter notes": "Notizen filtern",
+  "Notes from people with an account": "Notizen von Leuten mit einem Konto",
+  "Write a note": "Eine Notiz schreiben",
+  "You can read these without an account. Sending one needs a free account, so the notes stay tied to a person.":
+    "Lesen geht ohne Konto. Zum Schicken braucht es ein kostenloses Konto, damit die Notizen an einer Person hängen.",
+  "Checking your account…": "Konto wird geprüft…",
+  "Create an account": "Konto erstellen",
+  "Sign in": "Anmelden",
+  "Your name on the note": "Dein Name auf der Notiz",
+  Track: "Track",
+  "Star rating": "Sterne",
+  "City, if you want it on the note": "Stadt, wenn sie auf der Notiz stehen soll",
+  "What you would actually tell someone": "Was du jemandem wirklich sagen würdest",
+  "Send the note": "Notiz schicken",
+  "Sending the note…": "Die Notiz wird geschickt…",
+  "Thanks, it's on the list.": "Danke, sie steht auf der Liste.",
+  "You already sent a note.": "Du hast schon eine Notiz geschickt.",
+  "The note has to be between 40 and 900 characters.": "Die Notiz muss zwischen 40 und 900 Zeichen lang sein.",
+  "Couldn't save the note. Try again in a minute.": "Die Notiz konnte nicht gespeichert werden. Versuch es in einer Minute noch einmal.",
+  "1 out of 5": "1 von 5",
+  "2 out of 5": "2 von 5",
 };
 
 export const reviewsChromeUk: Record<string, string> = {
@@ -55,4 +75,24 @@ export const reviewsChromeUk: Record<string, string> = {
   "Notes from people who sat the WU Vienna entrance exam: 17 on BBE, 11 on WiSo, and 3 who prepared for both.":
     "Нотатки людей, які складали вступний іспит WU Vienna: 17 про BBE, 11 про WiSo і 3, хто готувався до обох.",
   "Filter notes": "Фільтр нотаток",
+  "Notes from people with an account": "Нотатки від людей з обліковим записом",
+  "Write a note": "Написати нотатку",
+  "You can read these without an account. Sending one needs a free account, so the notes stay tied to a person.":
+    "Читати можна без облікового запису. Щоб надіслати свою, потрібен безкоштовний обліковий запис, щоб нотатка була прив’язана до людини.",
+  "Checking your account…": "Перевіряємо обліковий запис…",
+  "Create an account": "Створити обліковий запис",
+  "Sign in": "Увійти",
+  "Your name on the note": "Ваше ім’я на нотатці",
+  Track: "Трек",
+  "Star rating": "Оцінка зірками",
+  "City, if you want it on the note": "Місто, якщо хочете його на нотатці",
+  "What you would actually tell someone": "Що ви насправді сказали б комусь",
+  "Send the note": "Надіслати нотатку",
+  "Sending the note…": "Надсилаємо нотатку…",
+  "Thanks, it's on the list.": "Дякуємо, вона в списку.",
+  "You already sent a note.": "Ви вже надіслали нотатку.",
+  "The note has to be between 40 and 900 characters.": "Нотатка має бути від 40 до 900 символів.",
+  "Couldn't save the note. Try again in a minute.": "Не вдалося зберегти нотатку. Спробуйте ще раз за хвилину.",
+  "1 out of 5": "1 з 5",
+  "2 out of 5": "2 з 5",
 };
