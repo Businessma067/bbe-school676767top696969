@@ -71,8 +71,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Es läuft auf Handy, Tablet und Laptop. Toggles, Erklärungen und Tracker bleiben auf kleinem Screen nutzbar, damit du auch ohne Schreibtisch eine kurze tägliche Session halten kannst.",
   "BBE and WiSo full courses: pick the exam track you are preparing for.":
     "BBE- und WiSo-Vollkurse: wähl den Prüfungstrack, für den du dich vorbereitest.",
-  "1500+ practice cases across Economics, Mathematics and English, plus timing modules, full mocks, a study assistant, and clear task breakdowns.":
-    "1500+ Übungsfälle in Economics, Mathematik und Englisch, plus Timing-Module, volle Mocks, ein Study Assistant und klare Aufgabenaufschlüsselungen.",
+  "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.":
+    "3300+ Fragen in Economics, Mathematik und Englisch, plus 5 Probeprüfungen, ein Study Assistant und klare Aufgabenaufschlüsselungen.",
   "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.":
     "WiSo-Track-Prep für Wirtschaft verstehen, Mathematik und deutsches Leseverständnis auf eigenen /wiso-URLs, optisch klar von BBE getrennt.",
   "Free · Instant web access": "Kostenlos · Sofortiger Webzugang",
@@ -134,8 +134,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Ja. Deine History bleibt in der Datenbank und wird übernommen, wenn du Full Access freischaltest.",
 
   // Full BBE Course FAQs (rewritten)
-  "You get the full task bank across all subjects, explanations under each statement, mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
-    "Du bekommst die volle Aufgabenbank über alle Fächer, Erklärungen unter jeder Aussage, Mocks, den Highlighter, Speed-Drills und das digitale Antwortbogen-Übungstool.",
+  "You get 3300+ questions across all subjects, explanations under each statement, 5 mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
+    "Du bekommst 3300+ Fragen über alle Fächer, Erklärungen unter jeder Aussage, 5 Probeprüfungen, den Highlighter, Speed-Drills und das digitale Antwortbogen-Übungstool.",
   "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
     "Es ist eine Einmalzahlung von 411 € ohne Monatsgebühren und ohne Upsells. Du zahlst einmal und behältst Zugang durch den Prüfungszyklus 2026/2027.",
   "How do explanations work?": "Wie funktionieren die Erklärungen?",
@@ -157,8 +157,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Nein. Jeder Account ist persönlich und an ein Analytics-Dashboard gebunden. Gleichzeitige Logins von verschiedenen Geräten können den Account sperren.",
   "No course can guarantee admission, because that still depends on your own work. Students who train here for about 45 to 60 minutes a day have reached a 41.3% success rate in our cohort, against about 8% in the general pool.":
     "Kein Kurs kann die Zulassung garantieren, weil das weiterhin an deiner eigenen Arbeit hängt. Wer hier etwa 45 bis 60 Minuten am Tag trainiert, hat in unserer Kohorte 41,3% Erfolgsquote erreicht, gegen etwa 8% im allgemeinen Pool.",
-  "Yes. You get complete 120-minute mocks that mix all three subjects under the same kind of time pressure as the real hall.":
-    "Ja. Du bekommst volle 120-Minuten-Mocks, die alle drei Fächer unter demselben Zeitdruck wie in der echten Halle mischen.",
+  "Yes. You get 5 complete 120-minute mock exams that mix all three subjects under the same kind of time pressure as the real hall.":
+    "Ja. Du bekommst 5 vollständige 120-Minuten-Probeprüfungen, die alle drei Fächer unter demselben Zeitdruck wie in der echten Halle mischen.",
   "The study assistant sits inside the question view and can break equations, logic chains, or vocabulary rules into smaller steps when you need a push.":
     "Der Study Assistant sitzt in der Fragenansicht und kann Gleichungen, Logikketten oder Vokabelregeln in kleinere Schritte zerlegen, wenn du einen Schubs brauchst.",
   "Yes. Checkout supports major cards, Apple Pay, Google Pay, and standard European bank transfers.":
@@ -185,8 +185,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Noch etwas: die Bewerber:innen, die am meisten aus der Prep geholt haben, waren nicht die, die Aufgaben passiv durchgearbeitet haben. Es waren die, die nachgefragt haben, wenn etwas nicht klickte, und drangeblieben sind, bis sie wirklich verstanden haben, warum. Deshalb ist direkter Support hier kein Nachgedanke. Jede Frage bekommt eine echte, detaillierte Antwort, weil ein halb verstandenes Konzept am Prüfungstag dasselbe ist wie gar nicht wissen.",
   "A free trial with 50+ starter cases across Economics, Mathematics and English with step-by-step explanations of the real WU Vienna BBE exam format.":
     "Kostenlose Trial mit 50+ Starter-Fällen in Economics, Mathematik und Englisch mit Schritt-für-Schritt-Erklärungen zum echten WU-Vienna-BBE-Prüfungsformat.",
-  "The complete WU Vienna BBE prep system: 1500+ practice cases, timing and stress modules, full mock exams, a study assistant and detailed task breakdowns.":
-    "Das komplette WU-Vienna-BBE-Prep-System: 1500+ Übungsfälle, Timing- und Stress-Module, volle Mocks, ein Study Assistant und detaillierte Aufgabenaufschlüsselungen.",
+  "The complete WU Vienna BBE prep system: 3300+ questions, 5 mock exams, a study assistant and detailed task breakdowns.":
+    "Das komplette WU-Vienna-BBE-Prep-System: 3300+ Fragen, 5 Probeprüfungen, ein Study Assistant und detaillierte Aufgabenaufschlüsselungen.",
 };
 
 export const copyVoiceExtraUk: Record<string, string> = {
@@ -255,8 +255,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Працює на телефоні, планшеті й ноутбуці. Перемикачі, пояснення й трекери лишаються зручними на маленькому екрані, тож коротку щоденну сесію можна тримати навіть не за столом.",
   "BBE and WiSo full courses: pick the exam track you are preparing for.":
     "Повні курси BBE і WiSo: обери трек іспиту, до якого готуєшся.",
-  "1500+ practice cases across Economics, Mathematics and English, plus timing modules, full mocks, a study assistant, and clear task breakdowns.":
-    "1500+ практичних кейсів з Economics, математики й англійської, плюс модулі таймінгу, повні моки, study assistant і зрозумілі розбори задач.",
+  "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.":
+    "3300+ питань з Economics, математики й англійської, плюс 5 пробних іспитів, study assistant і зрозумілі розбори задач.",
   "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.":
     "Підготовка треку WiSo: Wirtschaft verstehen, математика й німецьке читання з розумінням на окремих /wiso URL, візуально відмінних від BBE.",
   "Free · Instant web access": "Безкоштовно · Миттєвий доступ у браузері",
@@ -318,8 +318,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Так. Історія лишається в базі й переноситься, коли відкриваєш повний доступ.",
 
   // Full BBE Course FAQs (rewritten)
-  "You get the full task bank across all subjects, explanations under each statement, mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
-    "Отримуєш повний банк завдань з усіх предметів, пояснення під кожним твердженням, моки, highlighter, speed-drills і цифровий тренажер бланка відповідей.",
+  "You get 3300+ questions across all subjects, explanations under each statement, 5 mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
+    "Отримуєш 3300+ питань з усіх предметів, пояснення під кожним твердженням, 5 пробних іспитів, highlighter, speed-drills і цифровий тренажер бланка відповідей.",
   "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
     "Це одноразовий платіж 411 € без щомісячної плати й без upsell. Платиш раз і тримаєш доступ через цикл іспиту 2026/2027.",
   "How do explanations work?": "Як працюють пояснення?",
@@ -341,8 +341,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Ні. Кожен акаунт особистий і прив’язаний до однієї analytics-панелі. Одночасні логіни з різних пристроїв можуть заблокувати акаунт.",
   "No course can guarantee admission, because that still depends on your own work. Students who train here for about 45 to 60 minutes a day have reached a 41.3% success rate in our cohort, against about 8% in the general pool.":
     "Жоден курс не гарантує вступу, бо це все одно залежить від твоєї роботи. Ті, хто тренується тут близько 45–60 хвилин на день, досягли 41,3% успішності в нашій когорті проти близько 8% у загальному пулі.",
-  "Yes. You get complete 120-minute mocks that mix all three subjects under the same kind of time pressure as the real hall.":
-    "Так. Отримуєш повні 120-хвилинні моки, що змішують усі три предмети під тим самим тиском часу, що й у реальній залі.",
+  "Yes. You get 5 complete 120-minute mock exams that mix all three subjects under the same kind of time pressure as the real hall.":
+    "Так. Отримуєш 5 повних 120-хвилинних пробних іспитів, що змішують усі три предмети під тим самим тиском часу, що й у реальній залі.",
   "The study assistant sits inside the question view and can break equations, logic chains, or vocabulary rules into smaller steps when you need a push.":
     "Study assistant сидить у вікні питання й може розкласти рівняння, логічні ланцюги чи словникові правила на менші кроки, коли потрібен поштовх.",
   "Yes. Checkout supports major cards, Apple Pay, Google Pay, and standard European bank transfers.":
@@ -369,6 +369,6 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Ще одне: ті, хто найбільше виграв від підготовки, не були тими, хто пасивно проходив задачі. Це були ті, хто питав, коли щось не клікало, і тиснув, доки справді не зрозумів чому. Тому пряма підтримка тут не другорядна. На кожне питання є реальна детальна відповідь, бо напівзрозумілий концепт у день іспиту, це те саме, що не знати взагалі.",
   "A free trial with 50+ starter cases across Economics, Mathematics and English with step-by-step explanations of the real WU Vienna BBE exam format.":
     "Безкоштовний trial із 50+ стартовими кейсами з Economics, математики й англійської з покроковими поясненнями реального формату іспиту WU Vienna BBE.",
-  "The complete WU Vienna BBE prep system: 1500+ practice cases, timing and stress modules, full mock exams, a study assistant and detailed task breakdowns.":
-    "Повна система підготовки WU Vienna BBE: 1500+ практичних кейсів, модулі таймінгу й стресу, повні моки, study assistant і детальні розбори задач.",
+  "The complete WU Vienna BBE prep system: 3300+ questions, 5 mock exams, a study assistant and detailed task breakdowns.":
+    "Повна система підготовки WU Vienna BBE: 3300+ питань, 5 пробних іспитів, study assistant і детальні розбори задач.",
 };

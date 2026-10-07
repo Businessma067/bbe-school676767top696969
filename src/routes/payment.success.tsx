@@ -1,11 +1,12 @@
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 import { breakOutOfIframe } from "@/lib/break-out-of-iframe";
+import { consumePaymentSuccessAccess } from "@/lib/payment-success-access";
 
 type SuccessSearch = {
   product?: string;
@@ -66,14 +67,27 @@ export const Route = createFileRoute("/payment/success")({
 
 const ORANGE = "#C2643A";
 
+/**
+ * Google Ads conversion landing — only reachable right after a verified Monobank
+ * payment (via /payment-result) or a successful promocode unlock. A one-shot
+ * sessionStorage flag blocks opening the page from the URL alone.
+ */
 export function PaymentSuccessPage() {
   const navigate = useLocalizedNavigate();
+  const [allowed, setAllowed] = useState(false);
   const { product, href, promo } = useRouterState({
     select: (s) => parseSuccessSearch(s.location.search as Record<string, unknown>),
   });
+
   useLayoutEffect(() => {
     breakOutOfIframe();
-  }, []);
+    if (!consumePaymentSuccessAccess()) {
+      void navigate({ to: "/", replace: true });
+      return;
+    }
+    setAllowed(true);
+  }, [navigate]);
+
   const productSlug =
     typeof product === "string" && isPaidProductSlug(product) ? product : undefined;
   const startHref = safeStartHref(href, productSlug);
@@ -81,6 +95,14 @@ export function PaymentSuccessPage() {
     (productSlug ? PAID_PRODUCTS[productSlug].name : null) ??
     (typeof product === "string" && product.trim() ? product : null) ??
     "Your course";
+
+  if (!allowed) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-6">
+        <p className="text-sm text-muted-foreground">Confirming your purchase…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">

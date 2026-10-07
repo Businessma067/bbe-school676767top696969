@@ -135,13 +135,13 @@ export const Route = createFileRoute("/products/full-course")({
       {
         name: "description",
         content:
-          "The complete WU BBE entrance exam preparation system: practice tasks, full mock exams, explanations, and support.",
+          "The complete WU BBE entrance exam preparation system: 3300+ questions, 5 mock exams, explanations, and support.",
       },
       { property: "og:title", content: "Full BBE Course | Full Access | BBE School" },
       {
         property: "og:description",
         content:
-          "2000+ practice tasks, mock exams, explanations, and direct support for the real WU BBE exam.",
+          "3300+ questions, 5 mock exams, explanations, and direct support for the real WU BBE exam.",
       },
       { name: "twitter:card", content: "summary_large_image" },
       ...socialImageMetaForPath("/products/full-course"),
@@ -154,8 +154,8 @@ const ORANGE = "#C2643A";
 
 const fullStats = [
   { value: "3", label: "Subjects" },
-  { value: "2000+", label: "Tasks" },
-  { value: "7", label: "Mock Exams", sub: "All features" },
+  { value: "3300+", label: "Questions" },
+  { value: "5", label: "Mock Exams" },
 ];
 
 const features = [
@@ -167,7 +167,7 @@ const features = [
   },
   {
     icon: ListChecks,
-    title: "2000+ Practice Tasks",
+    title: "3300+ Questions",
     text: "A constantly growing question bank across every chapter.",
     accent: false,
   },
@@ -185,7 +185,7 @@ const features = [
   },
   {
     icon: ClipboardCheck,
-    title: "Mock Exams",
+    title: "5 Mock Exams",
     text: "Full-length simulations under real exam conditions and timing.",
     accent: true,
   },
@@ -209,7 +209,7 @@ const fullCourseFaqs = [
   {
     question: "What is included in the Full Course?",
     answer:
-      "You get the full task bank across all subjects, explanations under each statement, mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.",
+      "You get 3300+ questions across all subjects, explanations under each statement, 5 mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.",
   },
   {
     question: "Is this a subscription or a one-time payment?",
@@ -264,7 +264,7 @@ const fullCourseFaqs = [
   {
     question: "Are there full-length mock exams included?",
     answer:
-      "Yes. You get complete 120-minute mocks that mix all three subjects under the same kind of time pressure as the real hall.",
+      "Yes. You get 5 complete 120-minute mock exams that mix all three subjects under the same kind of time pressure as the real hall.",
   },
   {
     question: "What if I get completely stuck on a complex task?",
@@ -381,11 +381,6 @@ export function FullCourseProduct() {
                 <div key={s.label} className="flex flex-col items-center">
                   <span className="font-display text-2xl font-bold text-foreground">{s.value}</span>
                   <span className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</span>
-                  {s.sub && (
-                    <span className="mt-0.5 text-[10px] font-medium text-muted-foreground/60">
-                      {s.sub}
-                    </span>
-                  )}
                 </div>
               ))}
             </div>

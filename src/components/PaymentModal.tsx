@@ -13,6 +13,7 @@ import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
+import { markPaymentSuccessAccess } from "@/lib/payment-success-access";
 import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
@@ -202,6 +203,7 @@ export function PaymentModal({
       setPromoUnlocked(true);
       setTimeout(() => {
         onOpenChange(false);
+        markPaymentSuccessAccess();
         navigate({
           to: "/payment/success",
           search: {

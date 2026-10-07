@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { getPaymentStatus, listMyPayments } from "@/lib/payments.functions";
 import { breakOutOfIframe, navigateTopWindow } from "@/lib/break-out-of-iframe";
+import { markPaymentSuccessAccess } from "@/lib/payment-success-access";
 
 export const Route = createFileRoute("/payment-result")({
   head: () => ({
@@ -73,6 +74,8 @@ function PaymentResultPage() {
           else if (result.productName) paramsOut.set("product", result.productName);
           if (result.href) paramsOut.set("href", result.href);
           const qs = paramsOut.toString();
+          // One-shot gate so /payment/success cannot be opened from the URL alone.
+          markPaymentSuccessAccess();
           // Always leave the Monobank iframe and land on the shared success page.
           navigateTopWindow(`/payment/success${qs ? `?${qs}` : ""}`);
           return;
