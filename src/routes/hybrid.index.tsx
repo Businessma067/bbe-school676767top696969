@@ -12,6 +12,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { HybridThirdCourseReel } from "@/components/HybridThirdCourseReel";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { pinnedNote } from "@/data/acceptance-notes";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
@@ -256,46 +257,7 @@ export function HybridLandingPage() {
 }
 
 const hybridReports = [
-  {
-    id: 1,
-    name: "Mira, Vienna",
-    quote:
-      "I was not ready to drop German or English. Doing math once and keeping both language lanes was the only plan that did not double my week.",
-    badge: "Hybrid · both tracks",
-  },
-  {
-    id: 2,
-    name: "Adam, Bratislava",
-    quote:
-      "The BBE mock and the WiSo mock feel like different papers. Having both formats in one course stopped me from pretending they were the same exam.",
-    badge: "Hybrid · both tracks",
-  },
-  {
-    id: 3,
-    name: "Lea, Graz",
-    quote:
-      "Economics clicked when I saw the English statement and the German statement of the same idea back to back. I stopped memorising one language.",
-    badge: "Hybrid · both tracks",
-  },
-  {
-    id: 4,
-    name: "Omar, Budapest",
-    quote:
-      "The bridge cases made the economics wording obvious: English statement, then the German one, and the concept was done. I did not buy a second course to stay covered.",
-    badge: "Hybrid · both tracks",
-  },
-  {
-    id: 5,
-    name: "Sofia, Bucharest",
-    quote:
-      "Flashcards, matching, and the tutor were already how I studied. Hybrid just put the BBE set and the WiSo set on one page.",
-    badge: "Hybrid · both tracks",
-  },
-  {
-    id: 6,
-    name: "Jonas, Linz",
-    quote:
-      "Dual mock day was brutal and useful. Morning BBE, evening WiSo, then I knew which clock I was actually afraid of.",
-    badge: "Hybrid · both tracks",
-  },
+  pinnedNote("hybrid-karolina"),
+  pinnedNote("hybrid-ben"),
+  pinnedNote("hybrid-yasmin"),
 ];

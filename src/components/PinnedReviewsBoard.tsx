@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { ReviewQuote } from "@/components/ReviewQuote";
 import { useLanguage } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 import type { AcceptanceTrack } from "@/data/acceptance-notes";
@@ -8,7 +9,11 @@ import type { AcceptanceTrack } from "@/data/acceptance-notes";
 export type PinnedReview = {
   id: number | string;
   name: string;
+  /** What the student wrote. German when sourceLang is de. */
   quote: string;
+  english: string;
+  ukrainian: string;
+  sourceLang?: "en" | "de";
   badge: string;
   fire?: boolean;
 };
@@ -25,6 +30,7 @@ function PinnedReviewCard({
   badgeExtra?: ReactNode;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const [overflows, setOverflows] = useState(false);
   const { t } = useLanguage();
 
   return (
@@ -63,33 +69,39 @@ function PinnedReviewCard({
           “
         </span>
 
-        <p
+        <ReviewQuote
+          original={report.quote}
+          english={report.english}
+          ukrainian={report.ukrainian}
+          sourceLang={report.sourceLang}
+          expanded={expanded}
+          onMeasure={setOverflows}
           className={cn(
             "relative text-[0.9rem] leading-[1.6] text-muted-foreground sm:text-base sm:leading-[1.65]",
             !expanded && "line-clamp-4",
           )}
-        >
-          {report.quote}
-        </p>
+        />
 
-        <button
-          type="button"
-          onClick={() => setExpanded((v) => !v)}
-          className={cn(
-            "mt-3 min-h-10 self-start px-0.5 text-xs font-semibold underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
-            accent === "wiso"
-              ? "text-indigo-700 focus-visible:ring-indigo-600 dark:text-indigo-300"
-              : accent === "hybrid"
-                ? "text-teal-700 focus-visible:ring-teal-600 dark:text-teal-300"
-                : "text-primary focus-visible:ring-primary",
-          )}
-          aria-label={expanded ? t("Show less") : t("Show more")}
-        >
-          {expanded ? "Show less" : "Show more"}
-        </button>
+        {overflows ? (
+          <button
+            type="button"
+            onClick={() => setExpanded((v) => !v)}
+            className={cn(
+              "mt-3 min-h-10 self-start px-0.5 text-xs font-semibold underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+              accent === "wiso"
+                ? "text-indigo-700 focus-visible:ring-indigo-600 dark:text-indigo-300"
+                : accent === "hybrid"
+                  ? "text-teal-700 focus-visible:ring-teal-600 dark:text-teal-300"
+                  : "text-primary focus-visible:ring-primary",
+            )}
+            aria-label={expanded ? t("Show less") : t("Show more")}
+          >
+            {expanded ? "Show less" : "Show more"}
+          </button>
+        ) : null}
 
         <div className="mt-auto flex flex-col gap-2.5 border-t border-border/60 pt-3.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:pt-4">
-          <p className="min-w-0 font-display text-sm font-semibold tracking-tight text-foreground">
+          <p className="min-w-0 font-display text-sm font-semibold tracking-tight text-foreground" data-no-i18n>
             {report.name}
           </p>
           <div
@@ -178,11 +190,7 @@ export function PinnedReviewsBoard({
           </div>
         </div>
 
-        <div className="relative mt-8 flex flex-col items-center gap-3 text-center sm:mt-10">
-          <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
-            These are the notes we pinned. The longer list is its own page, average 4.7: 17 from BBE,
-            11 from WiSo, and 3 from Hybrid.
-          </p>
+        <div className="relative mt-8 flex flex-col items-center text-center sm:mt-10">
           <LocalizedLink
             to="/reviews"
             hash={archiveHash}

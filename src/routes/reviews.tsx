@@ -2,6 +2,7 @@ import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { Star } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { ReviewQuote } from "@/components/ReviewQuote";
 import { WriteReviewBox } from "@/components/WriteReviewBox";
 import {
   ACCEPTANCE_NOTES,
@@ -206,9 +207,13 @@ export function ReviewsPage() {
                         <p className="text-xs text-muted-foreground">{note.when}</p>
                       </div>
                     </div>
-                    <p className="mt-3 whitespace-pre-line text-[0.95rem] leading-[1.65] text-foreground/90">
-                      {note.quote}
-                    </p>
+                    <ReviewQuote
+                      original={note.sourceLang === "de" ? note.de.quote : note.quote}
+                      english={note.quote}
+                      ukrainian={note.uk.quote}
+                      sourceLang={note.sourceLang}
+                      className="mt-3 text-[0.95rem] leading-[1.65] text-foreground/90"
+                    />
                     <p className="mt-3 text-xs font-semibold tracking-wide text-muted-foreground">
                       {note.outcome}
                     </p>

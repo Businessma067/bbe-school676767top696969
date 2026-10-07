@@ -11,6 +11,7 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { pinnedNote } from "@/data/acceptance-notes";
 import { WisoDachAdvantageSlider } from "@/components/WisoDachAdvantageSlider";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -301,47 +302,4 @@ export function WisoLandingPage() {
   );
 }
 
-const wisoReports = [
-  {
-    id: 1,
-    name: "Nina, Linz",
-    quote:
-      "I kept underestimating Sprachverständnis. The practice passages finally made me slow down and mark carefully instead of racing, and math felt fine once I stopped second-guessing every statement.",
-    badge: "WiSo · accepted",
-  },
-  {
-    id: 2,
-    name: "Jonas, Vienna",
-    quote:
-      "Wirtschaft verstehen felt endless until I drilled statement-style cases. Seeing the Teilpunktesystem in mocks changed how I guessed: I skipped more, and my score went up.",
-    badge: "WiSo · accepted",
-  },
-  {
-    id: 3,
-    name: "Elena, Salzburg",
-    quote:
-      "Honestly I almost switched to BBE because of English. Staying on WiSo was the right call for me. German reading still ate time, but timed sets made the length feel normal by exam day.",
-    badge: "WiSo · accepted",
-  },
-  {
-    id: 4,
-    name: "Matej, Brno",
-    quote:
-      "I’m not a native speaker, so the German section scared me most. Short daily drills helped more than rereading textbooks. Nothing flashy, just consistent practice that stuck.",
-    badge: "WiSo · accepted",
-  },
-  {
-    id: 5,
-    name: "Lea, Graz",
-    quote:
-      "I didn’t need another lecture series. I needed the format. Once the mocks matched the real pacing, I stopped panicking when a block looked unfamiliar.",
-    badge: "WiSo · accepted",
-  },
-  {
-    id: 6,
-    name: "David, Innsbruck",
-    quote:
-      "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard, just not surprising.",
-    badge: "WiSo · accepted",
-  },
-];
+const wisoReports = [pinnedNote("wiso-jasmin"), pinnedNote("wiso-filip"), pinnedNote("wiso-lara")];

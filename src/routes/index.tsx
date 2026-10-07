@@ -12,6 +12,7 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { pinnedNote } from "@/data/acceptance-notes";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { homepageNavItems } from "@/config/site-nav";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -587,47 +588,4 @@ function PlacementsTicker() {
   );
 }
 
-const reports = [
-  {
-    id: 0,
-    name: "Anna, Vienna",
-    quote:
-      "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click, I stopped guessing and started managing risk.",
-    badge: "Rank: 19th",
-  },
-  {
-    id: 1,
-    name: "Tomáš, Bratislava",
-    quote:
-      "Math used to eat my whole clock. After timed drills I finished with minutes left. Economics statements stopped feeling like traps once I learned the wording patterns.",
-    badge: "Rank: 112th",
-  },
-  {
-    id: 2,
-    name: "Sofia, Bucharest",
-    quote:
-      "In general, I’ve always found the material easy to grasp. The exam questions were relatively easy, though the wording was tricky. It was a huge help that I’d done so many mock exams and learned time management.",
-    badge: "Rank: 43rd",
-  },
-  {
-    id: 3,
-    name: "Lisa, Graz",
-    quote:
-      "I don't even understand how others manage to pass such a strange exam without materials like this. Buying the course three months before the exam was the best decision.",
-    badge: "Rank: 227th",
-  },
-  {
-    id: 4,
-    name: "Marcus, Zagreb",
-    quote:
-      "I don’t think I would have even come close to passing without BBE School. I have absolutely no regrets about the money, time, and effort I put in.",
-    badge: "Rank: 97th",
-  },
-  {
-    id: 5,
-    name: "Daniel, Ljubljana",
-    quote:
-      "Clear, structured questions that offer the best possible simulation of the live exam. Time-management tools were exactly what helped me meet the deadline.",
-    badge: "Rank: 7th",
-  },
-];
+const reports = [pinnedNote("bbe-hana"), pinnedNote("bbe-leon"), pinnedNote("bbe-tereza")];

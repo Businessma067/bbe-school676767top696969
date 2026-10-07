@@ -46,6 +46,8 @@ export const reviewsChromeDe: Record<string, string> = {
   "Couldn't save the note. Try again in a minute.": "Die Notiz konnte nicht gespeichert werden. Versuch es in einer Minute noch einmal.",
   "1 out of 5": "1 von 5",
   "2 out of 5": "2 von 5",
+  Translate: "Übersetzen",
+  "Show original": "Original anzeigen",
 };
 
 export const reviewsChromeUk: Record<string, string> = {
@@ -95,4 +97,6 @@ export const reviewsChromeUk: Record<string, string> = {
   "Couldn't save the note. Try again in a minute.": "Не вдалося зберегти нотатку. Спробуйте ще раз за хвилину.",
   "1 out of 5": "1 з 5",
   "2 out of 5": "2 з 5",
+  Translate: "Перекласти",
+  "Show original": "Показати оригінал",
 };
