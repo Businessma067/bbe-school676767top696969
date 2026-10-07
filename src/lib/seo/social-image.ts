@@ -48,6 +48,7 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/bbe-vs-wiso": WU_CAMPUS_SOCIAL_IMAGE,
   "/wu-vienna": absoluteMediaUrl("/wu-vienna/campus-plaza.jpg"),
   "/parents": absoluteMediaUrl(hallAsset.url),
+  "/reviews": absoluteMediaUrl(examHallAsset.url),
   "/important-features": absoluteMediaUrl(examHallAsset.url),
   "/features/answer-sheet": absoluteMediaUrl(examHallAsset.url),
   "/products": absoluteMediaUrl(FULL_COURSE_PRODUCT_IMAGE),

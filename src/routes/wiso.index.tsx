@@ -232,6 +232,7 @@ export function WisoLandingPage() {
           title="What students told us after the WiSo Aufnahmeprüfung"
           reports={wisoReports}
           accent="wiso"
+          archiveHash="wiso"
         />
 
         <div id="faq">

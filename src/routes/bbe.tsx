@@ -204,6 +204,7 @@ export function BbeLandingPage() {
         <PinnedReviewsBoard
           title="What students wrote after they got an acceptance letter"
           reports={reports}
+          archiveHash="bbe"
           badgeExtraFor={(report) =>
             report.fire ? (
               <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />

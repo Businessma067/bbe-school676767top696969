@@ -26,6 +26,7 @@ import { WisoDemoPractice } from "@/routes/wiso.demo-practice.index";
 import { WisoDemoMockPage } from "@/routes/wiso.demo-mock";
 import { WisoMockExamsPage } from "@/routes/wiso.mock-exams";
 import { ParentsPage } from "@/routes/parents";
+import { ReviewsPage } from "@/routes/reviews";
 import { NewsPage } from "@/routes/news";
 import { NewsPostPage } from "@/routes/news.$slug";
 import { ImportantFeaturesPage } from "@/routes/important-features";
@@ -71,6 +72,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/wiso/demo-mock": WisoDemoMockPage,
   "/wiso/mock-exams": WisoMockExamsPage,
   "/parents": ParentsPage,
+  "/reviews": ReviewsPage,
   "/news": NewsPage,
   "/important-features": ImportantFeaturesPage,
   "/features/answer-sheet": AnswerSheetFeaturePage,

@@ -187,6 +187,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/parents"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/reviews</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/reviews"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/reviews"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/reviews"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/reviews"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/news</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news"/>
@@ -583,6 +591,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/parents"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/reviews</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/reviews"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/reviews"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/reviews"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/reviews"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/news</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/news"/>
@@ -949,6 +965,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/parents"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/parents"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/parents"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/reviews</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/reviews"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/reviews"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/reviews"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/reviews"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/news</loc>

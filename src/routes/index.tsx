@@ -508,6 +508,11 @@ function SiteFooter() {
               </LocalizedLink>
             </li>
             <li>
+              <LocalizedLink to="/reviews" className="text-foreground hover:underline">
+                Acceptance notes
+              </LocalizedLink>
+            </li>
+            <li>
               <LocalizedLink to="/news" className="text-foreground hover:underline">
                 News
               </LocalizedLink>

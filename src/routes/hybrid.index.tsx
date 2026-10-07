@@ -204,6 +204,7 @@ export function HybridLandingPage() {
           title="What dual-track applicants told us"
           reports={hybridReports}
           accent="hybrid"
+          archiveHash="hybrid"
         />
 
         <div id="faq">

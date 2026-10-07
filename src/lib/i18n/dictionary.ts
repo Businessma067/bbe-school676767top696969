@@ -10,6 +10,8 @@ import { wisoHubExtraDe, wisoHubExtraUk } from "./wiso-hub-extra";
 import { copyVoiceExtraDe, copyVoiceExtraUk } from "./copy-voice-extra";
 import { newsExtraDe, newsExtraUk } from "./news-extra";
 import { newsBodyExtraDe, newsBodyExtraUk } from "./news-body-extra";
+import { reviewsChromeDe, reviewsChromeUk } from "./reviews-extra";
+import { acceptanceNoteDictionary } from "@/data/acceptance-notes";
 import { isDictionaryLang, type Lang } from "./languages";
 
 export type { Lang } from "./languages";
@@ -497,6 +499,8 @@ export const dictionary: Record<EditedLang, Record<string, string>> = {
     ...copyVoiceExtraDe,
     ...newsExtraDe,
     ...newsBodyExtraDe,
+    ...reviewsChromeDe,
+    ...acceptanceNoteDictionary("de"),
     ...baseDictionary.de,
   },
   uk: {
@@ -512,6 +516,8 @@ export const dictionary: Record<EditedLang, Record<string, string>> = {
     ...copyVoiceExtraUk,
     ...newsExtraUk,
     ...newsBodyExtraUk,
+    ...reviewsChromeUk,
+    ...acceptanceNoteDictionary("uk"),
     ...baseDictionary.uk,
   },
 };

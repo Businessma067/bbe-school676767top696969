@@ -1,6 +1,9 @@
 import { useState, type ReactNode } from "react";
+import { ArrowRight } from "lucide-react";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLanguage } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
+import type { AcceptanceTrack } from "@/data/acceptance-notes";
 
 export type PinnedReview = {
   id: number | string;
@@ -109,12 +112,15 @@ export function PinnedReviewsBoard({
   reports,
   accent = "default",
   badgeExtraFor,
+  archiveHash,
   className,
 }: {
   title: string;
   reports: PinnedReview[];
   accent?: Accent;
   badgeExtraFor?: (report: PinnedReview) => ReactNode;
+  /** Opens the longer list already filtered to one track. */
+  archiveHash?: AcceptanceTrack;
   className?: string;
 }) {
   return (
@@ -170,6 +176,28 @@ export function PinnedReviewsBoard({
               />
             ))}
           </div>
+        </div>
+
+        <div className="relative mt-8 flex flex-col items-center gap-3 text-center sm:mt-10">
+          <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+            These are the notes we pinned. The longer list is its own page, average 4.7: 17 from BBE,
+            11 from WiSo, and 3 from Hybrid.
+          </p>
+          <LocalizedLink
+            to="/reviews"
+            hash={archiveHash}
+            className={cn(
+              "group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+              accent === "wiso"
+                ? "bg-indigo-700 text-white hover:bg-indigo-800 focus-visible:ring-indigo-600"
+                : accent === "hybrid"
+                  ? "bg-teal-800 text-teal-50 hover:bg-teal-700 focus-visible:ring-teal-600"
+                  : "bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-primary",
+            )}
+          >
+            Read the rest of the notes
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </LocalizedLink>
         </div>
       </div>
     </section>
