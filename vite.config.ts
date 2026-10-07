@@ -46,6 +46,14 @@ export default defineConfig({
   },
   vite: {
     plugins: [sitemapPlugin(), entitiesCompatPlugin(), unbundledJsxRuntimePlugin()],
+    resolve: {
+      alias: {
+        // The Node build of @vercel/oidc (pulled in by `ai`) requires node:fs at load,
+        // which crashes every SSR request on the Worker runtime. Use its fs-free build.
+        "@vercel/oidc": new URL("./node_modules/@vercel/oidc/dist/index-browser.js", import.meta.url)
+          .pathname,
+      },
+    },
     build: {
       rollupOptions: {
         output: {
