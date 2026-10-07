@@ -26,7 +26,7 @@ const comparisonSections: ComparisonSection[] = [
       { label: "Textbook Theory", free: "❌", full: "Full materials", wiso: "Wirtschaft verstehen" },
       { label: "Answer Sheet Simulator", free: "❌", full: "tick", wiso: "tick" },
       { label: "Interactive Speed Simulators", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Mock Exams", free: "❌", full: "7+ exams with answer sheets", wiso: "WiSo mocks with answer sheets" },
+      { label: "Mock Exams", free: "❌", full: "5 exams with answer sheets", wiso: "WiSo mocks with answer sheets" },
     ],
   },
   {
