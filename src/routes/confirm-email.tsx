@@ -6,6 +6,7 @@ import { AuthShell } from "./signup";
 import { friendlyAuthError } from "@/lib/auth-ui";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { markSignupComplete, SIGNUP_COMPLETE_PATH } from "@/lib/signup-complete";
 
 const PENDING_EMAIL_KEY = "bbe.pendingConfirmEmail";
 
@@ -223,8 +224,9 @@ function VerifyingEmail() {
 
         if (cancelled) return;
         setStatus("ok");
-        setMessage("Email confirmed. Taking you to your dashboard…");
-        setTimeout(() => navigate({ to: "/dashboard" }), 900);
+        setMessage("Email confirmed. Taking you to the next step…");
+        markSignupComplete();
+        setTimeout(() => navigate({ to: SIGNUP_COMPLETE_PATH }), 900);
       } catch (err) {
         console.error("Email confirm failed", err);
         if (cancelled) return;
