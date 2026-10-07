@@ -29,6 +29,7 @@ const PRIVATE_PATH_PREFIXES = [
   "/reset-password",
   "/forgot-password",
   "/confirm-email",
+  "/signup-complete",
   "/api",
   "/payment",
   "/payment-result",

@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
 import { signInWithGoogle } from "@/lib/google-auth";
 import { friendlyAuthError } from "@/lib/auth-ui";
+import { markSignupComplete, SIGNUP_COMPLETE_PATH } from "@/lib/signup-complete";
 
 export const Route = createFileRoute("/auth")({
   component: AuthPage,
@@ -44,12 +45,17 @@ function AuthPage() {
     setLoading(true);
     try {
       if (mode === "signup") {
-        const { error } = await supabase.auth.signUp({
+        const { data, error } = await supabase.auth.signUp({
           email,
           password,
           options: { emailRedirectTo: `${window.location.origin}/confirm-email` },
         });
         if (error) throw error;
+        if (data.session) {
+          markSignupComplete();
+          navigate({ to: SIGNUP_COMPLETE_PATH });
+          return;
+        }
         sessionStorage.setItem("bbe.pendingConfirmEmail", email.trim().toLowerCase());
         navigate({ to: "/confirm-email" });
       } else {

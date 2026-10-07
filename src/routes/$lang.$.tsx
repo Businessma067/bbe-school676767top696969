@@ -32,6 +32,11 @@ export const Route = createFileRoute("/$lang/$")({
       });
     }
 
+    // Google Ads signup conversion URL stays unprefixed and auth-gated.
+    if (path === "/signup-complete") {
+      throw redirect({ to: "/signup-complete" });
+    }
+
     // Alias matches EN `/forgot-password` → `/reset-password`.
     if (path === "/forgot-password") {
       throw redirect({

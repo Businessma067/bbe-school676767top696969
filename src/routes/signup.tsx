@@ -10,6 +10,12 @@ import { useAuthReturnTo } from "@/hooks/use-auth-return-to";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
+import {
+  clearSignupComplete,
+  markSignupComplete,
+  SIGNUP_COMPLETE_PATH,
+  stashPostSignupContinue,
+} from "@/lib/signup-complete";
 
 type SignupSearch = { returnTo?: string };
 
@@ -33,6 +39,7 @@ export function SignupPage() {
   const navigate = useLocalizedNavigate();
   // Must not use Route.useSearch() — this page also mounts under /$lang/$ splat.
   const returnTo = useAuthReturnTo();
+  /** Already signed-in visitors leave signup for their return path or dashboard. */
   const afterAuth = returnTo ?? "/dashboard";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -60,15 +67,18 @@ export function SignupPage() {
     if (!agree)
       return setError("Please accept the Terms of Service and Privacy Policy to continue.");
     setLoading(true);
-    if (returnTo) stashAuthReturnTo(returnTo);
-    const result = await signInWithGoogle({ redirectTo: returnTo ?? afterAuth });
+    markSignupComplete();
+    if (returnTo) stashPostSignupContinue(returnTo);
+    stashAuthReturnTo(SIGNUP_COMPLETE_PATH);
+    const result = await signInWithGoogle({ redirectTo: SIGNUP_COMPLETE_PATH });
     if (result.error) {
+      clearSignupComplete();
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
     if (result.redirected) return;
-    navigate({ to: afterAuth });
+    navigate({ to: SIGNUP_COMPLETE_PATH });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -116,10 +126,13 @@ export function SignupPage() {
           { user_id: data.session.user.id, display_name: displayName },
           { onConflict: "user_id" },
         );
-        navigate({ to: afterAuth });
+        markSignupComplete();
+        if (returnTo) stashPostSignupContinue(returnTo);
+        navigate({ to: SIGNUP_COMPLETE_PATH });
         return;
       }
 
+      if (returnTo) stashPostSignupContinue(returnTo);
       sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
       navigate({ to: "/confirm-email" });
     } catch (err: any) {
