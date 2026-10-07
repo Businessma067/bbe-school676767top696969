@@ -10,7 +10,14 @@ import {
 } from "@/components/ui/dialog";
 import { supabase } from "@/integrations/supabase/client";
 import { friendlyAuthError } from "@/lib/auth-ui";
+import { currentReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
 import { signInWithGoogle } from "@/lib/google-auth";
+import {
+  clearSignupComplete,
+  markSignupComplete,
+  SIGNUP_COMPLETE_PATH,
+  stashPostSignupContinue,
+} from "@/lib/signup-complete";
 import { cn } from "@/lib/utils";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 
@@ -61,6 +68,22 @@ export function AuthModal({
       return;
     }
     setLoading(true);
+    if (mode === "signup") {
+      markSignupComplete();
+      stashPostSignupContinue(currentReturnPath());
+      stashAuthReturnTo(SIGNUP_COMPLETE_PATH);
+      const result = await signInWithGoogle({ redirectTo: SIGNUP_COMPLETE_PATH });
+      if (result.error) {
+        clearSignupComplete();
+        setError(friendlyAuthError(result.error, "Google sign-in failed"));
+        setLoading(false);
+        return;
+      }
+      if (result.redirected) return;
+      onOpenChange(false);
+      navigate({ to: SIGNUP_COMPLETE_PATH });
+      return;
+    }
     const result = await signInWithGoogle({ redirectTo: window.location.href });
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
@@ -128,11 +151,14 @@ export function AuthModal({
               { user_id: data.session.user.id, display_name: displayName },
               { onConflict: "user_id" },
             );
+          markSignupComplete();
+          stashPostSignupContinue(currentReturnPath());
           onOpenChange(false);
-          onSignedIn?.();
+          navigate({ to: SIGNUP_COMPLETE_PATH });
           return;
         }
 
+        stashPostSignupContinue(currentReturnPath());
         sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
         onOpenChange(false);
         navigate({ to: "/confirm-email" });

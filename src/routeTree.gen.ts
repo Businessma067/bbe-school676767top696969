@@ -43,6 +43,7 @@ import { Route as ProductsRouteImport } from './routes/products'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as SignupRouteImport } from './routes/signup'
+import { Route as SignupCompleteRouteImport } from './routes/signup-complete'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TutorExamRouteImport } from './routes/tutor-exam'
@@ -321,6 +322,11 @@ const ReviewsRoute = ReviewsRouteImport.update({
 const SignupRoute = SignupRouteImport.update({
   id: '/signup',
   path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignupCompleteRoute = SignupCompleteRouteImport.update({
+  id: '/signup-complete',
+  path: '/signup-complete',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -930,6 +936,7 @@ export interface FileRoutesByFullPath {
   '/reset-password': typeof ResetPasswordRoute
   '/reviews': typeof ReviewsRoute
   '/signup': typeof SignupRoute
+  '/signup-complete': typeof SignupCompleteRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
@@ -1067,6 +1074,7 @@ export interface FileRoutesByTo {
   '/reset-password': typeof ResetPasswordRoute
   '/reviews': typeof ReviewsRoute
   '/signup': typeof SignupRoute
+  '/signup-complete': typeof SignupCompleteRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/wu-vienna': typeof WuViennaRoute
@@ -1199,6 +1207,7 @@ export interface FileRoutesById {
   '/reset-password': typeof ResetPasswordRoute
   '/reviews': typeof ReviewsRoute
   '/signup': typeof SignupRoute
+  '/signup-complete': typeof SignupCompleteRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
@@ -1346,6 +1355,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/reviews'
     | '/signup'
+    | '/signup-complete'
     | '/sitemap.xml'
     | '/terms'
     | '/tutor-exam'
@@ -1483,6 +1493,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/reviews'
     | '/signup'
+    | '/signup-complete'
     | '/sitemap.xml'
     | '/terms'
     | '/wu-vienna'
@@ -1614,6 +1625,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/reviews'
     | '/signup'
+    | '/signup-complete'
     | '/sitemap.xml'
     | '/terms'
     | '/tutor-exam'
@@ -1760,6 +1772,7 @@ export interface RootRouteChildren {
   ResetPasswordRoute: typeof ResetPasswordRoute
   ReviewsRoute: typeof ReviewsRoute
   SignupRoute: typeof SignupRoute
+  SignupCompleteRoute: typeof SignupCompleteRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   TutorExamRoute: typeof TutorExamRouteWithChildren
@@ -2018,6 +2031,13 @@ declare module '@tanstack/react-router' {
       path: '/signup'
       fullPath: '/signup'
       preLoaderRoute: typeof SignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signup-complete': {
+      id: '/signup-complete'
+      path: '/signup-complete'
+      fullPath: '/signup-complete'
+      preLoaderRoute: typeof SignupCompleteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -3233,6 +3253,7 @@ const rootRouteChildren: RootRouteChildren = {
   ResetPasswordRoute: ResetPasswordRoute,
   ReviewsRoute: ReviewsRoute,
   SignupRoute: SignupRoute,
+  SignupCompleteRoute: SignupCompleteRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   TutorExamRoute: TutorExamRouteWithChildren,
@@ -3255,13 +3276,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
