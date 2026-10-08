@@ -13,11 +13,11 @@ export const MONOBANK_CURRENCY_UAH = 980;
  * When enabled, every invoice is forced to this amount instead of the catalog price.
  */
 export const MONOBANK_TEST_CHARGE = {
-  enabled: true,
-  /** 100.00 UAH in kopiyky (only used when `enabled` is true). */
-  amountMinor: 10000,
-  ccy: MONOBANK_CURRENCY_UAH,
-  label: "100 UAH",
+  enabled: false,
+  /** 1.00 EUR in cents (only used when `enabled` is true). */
+  amountMinor: 100,
+  ccy: MONOBANK_CURRENCY_EUR,
+  label: "€1",
 } as const;
 
 export type PaidProduct = {
