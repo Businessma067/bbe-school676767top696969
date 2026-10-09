@@ -8,6 +8,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { AuthModal } from "@/components/AuthModal";
+import { DemoSubmittedNote } from "@/components/DemoSubmittedNote";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode";
@@ -504,6 +505,7 @@ export function DemoMockPage() {
                 </p>
               </div>
             ) : (
+              <>
               <div className="space-y-3">
                 {completed.map((c) => {
                   const pct = Math.round((c.points_earned / c.points_total) * 100);
@@ -542,6 +544,8 @@ export function DemoMockPage() {
                   );
                 })}
               </div>
+              <DemoSubmittedNote track="bbe" />
+              </>
             )}
           </div>
         </section>

@@ -23,6 +23,7 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
+import { SalesWarmup } from "@/components/SalesWarmup";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
@@ -387,7 +388,8 @@ export function FullCourseProduct() {
           </div>
 
           {/* Price + CTA */}
-          <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
+          <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <div>
               <div className="text-sm text-muted-foreground">
                 {ownsFullCourse ? "Your access" : "One-time payment"}
@@ -418,6 +420,10 @@ export function FullCourseProduct() {
             ) : (
               <CtaButton onClick={openBuy} label="Buy course" />
             )}
+            </div>
+            {ready && !ownsFullCourse ? (
+              <SalesWarmup noteIds={["bbe-felix", "bbe-hana", "bbe-tereza"]} />
+            ) : null}
           </div>
 
           {/* Section 1 — Feature grid */}

@@ -5,6 +5,7 @@ import { AuthModal } from "@/components/AuthModal";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PaymentModal } from "@/components/PaymentModal";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SalesWarmup } from "@/components/SalesWarmup";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { PAID_PRODUCTS } from "@/lib/checkout-catalog";
 import { HYBRID_HUB_HREF } from "@/lib/full-course-access";
@@ -119,7 +120,8 @@ export function HybridCourseProductPage() {
             />
           </div>
 
-          <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
+          <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <div>
               <div className="text-sm text-muted-foreground">
                 {ownsHybridCourse ? "Your access" : "One-time payment"}
@@ -151,6 +153,10 @@ export function HybridCourseProductPage() {
                 Buy Hybrid · €{PRODUCT.priceEur} →
               </button>
             )}
+            </div>
+            {ready && !ownsHybridCourse ? (
+              <SalesWarmup noteIds={["hybrid-karolina", "hybrid-ben", "hybrid-yasmin"]} />
+            ) : null}
           </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2">

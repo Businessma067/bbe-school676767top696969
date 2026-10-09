@@ -6,7 +6,7 @@ import {
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
-import { ExamCountdown } from "@/components/ExamCountdown";
+import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -133,7 +133,10 @@ export function Index() {
         <section className="relative overflow-hidden px-3 pt-10 pb-12 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <ExamCountdown className="mb-5 sm:mb-6" />
+              <div className="mb-5 flex w-full flex-col items-center sm:mb-6">
+                <ExamCountdown />
+                <ExamCourseSentence />
+              </div>
 
               <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Step by step preparation for your 2027 WU exam

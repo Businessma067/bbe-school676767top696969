@@ -203,6 +203,15 @@ const POST_HYDRATION_TICK = `(function(){
  * client painted different Date.now() text. ClientOnly + a static placeholder
  * keeps hydration identical; the live interval mounts only in the browser.
  */
+/** One honest line under the countdown on the homepage and the three landings. */
+export function ExamCourseSentence() {
+  return (
+    <p className="mx-auto mt-3 max-w-md text-center text-sm leading-snug text-muted-foreground">
+      The free tasks are enough to try. The mocks are in the course.
+    </p>
+  );
+}
+
 export function ExamCountdown({ className }: { className?: string }) {
   return (
     <>

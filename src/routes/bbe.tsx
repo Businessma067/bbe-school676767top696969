@@ -11,7 +11,7 @@ import googleLogo from "@/assets/google.png.asset.json";
 import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
-import { ExamCountdown } from "@/components/ExamCountdown";
+import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
@@ -69,7 +69,10 @@ export function BbeLandingPage() {
         <section className="relative overflow-hidden px-4 pt-8 pb-12 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <ExamCountdown className="mb-5 sm:mb-6" />
+              <div className="mb-5 flex w-full flex-col items-center sm:mb-6">
+                <ExamCountdown />
+                <ExamCourseSentence />
+              </div>
 
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Step by step preparation for your 2027 WU BBE exam

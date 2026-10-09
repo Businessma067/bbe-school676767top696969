@@ -3,7 +3,7 @@ import { Suspense, lazy } from "react";
 import { ArrowRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
-import { ExamCountdown } from "@/components/ExamCountdown";
+import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
@@ -63,7 +63,10 @@ export function HybridLandingPage() {
         <section className="relative overflow-hidden px-3 pt-7 pb-10 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <ExamCountdown className="mb-5 sm:mb-6" />
+              <div className="mb-5 flex w-full flex-col items-center sm:mb-6">
+                <ExamCountdown />
+                <ExamCourseSentence />
+              </div>
 
               <p
                 className="mb-3 rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-wide sm:text-xs"

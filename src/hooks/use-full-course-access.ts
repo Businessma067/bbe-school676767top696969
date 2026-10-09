@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import {
-  accessOwnsProduct,
-  fetchAccessState,
-  tierAtLeast,
-} from "@/lib/entitlements";
+import { accessOwnsProduct, fetchAccessState, tierAtLeast } from "@/lib/entitlements";
 
 export type FullCourseAccessState = {
   ready: boolean;
@@ -17,6 +13,8 @@ export type FullCourseAccessState = {
   ownsWisoFullCourse: boolean;
   /** Hybrid BBE + WiSo Course (or both full tracks). */
   ownsHybridCourse: boolean;
+  /** Increments after each access refresh has written ownership. */
+  revision: number;
   refresh: () => Promise<void>;
 };
 
@@ -27,6 +25,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
   const [ownsFullCourse, setOwnsFullCourse] = useState(false);
   const [ownsWisoFullCourse, setOwnsWisoFullCourse] = useState(false);
   const [ownsHybridCourse, setOwnsHybridCourse] = useState(false);
+  const [revision, setRevision] = useState(0);
 
   const refresh = async () => {
     const { data } = await supabase.auth.getSession();
@@ -38,6 +37,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
       setOwnsWisoFullCourse(false);
       setOwnsHybridCourse(false);
       setReady(true);
+      setRevision((value) => value + 1);
       return;
     }
     const state = await fetchAccessState({ refresh: true });
@@ -46,6 +46,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
     setOwnsWisoFullCourse(accessOwnsProduct(state, "wiso-full-course"));
     setOwnsHybridCourse(accessOwnsProduct(state, "hybrid-full-course"));
     setReady(true);
+    setRevision((value) => value + 1);
   };
 
   useEffect(() => {
@@ -81,6 +82,7 @@ export function useFullCourseAccess(): FullCourseAccessState {
     ownsFullCourse,
     ownsWisoFullCourse,
     ownsHybridCourse,
+    revision,
     refresh,
   };
 }

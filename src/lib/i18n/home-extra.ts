@@ -16,8 +16,7 @@ export const homeExtraDe: Record<string, string> = {
   "Business and Economics (BBE)": "Business and Economics (BBE)",
   "Business, Economics and Social Sciences (WiSo)":
     "Business, Economics and Social Sciences (WiSo)",
-  "Wirtschafts- und Sozialwissenschaften (WiSo)":
-    "Wirtschafts- und Sozialwissenschaften (WiSo)",
+  "Wirtschafts- und Sozialwissenschaften (WiSo)": "Wirtschafts- und Sozialwissenschaften (WiSo)",
   "WU’s English-taught bachelor. Smaller intake (~240 places), international cohort, winter start only. The exam tests Economics & Business, English, and Mathematics.":
     "WU’s englischsprachiger Bachelor. Kleinerer Jahrgang (~240 Plätze), internationale Kohorte, nur Wintersemester. Die Prüfung testet Wirtschaft & Betriebswirtschaft, Englisch und Mathematik.",
   "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension, not English.":
@@ -173,6 +172,24 @@ export const homeExtraDe: Record<string, string> = {
   "Register now and get 100+ free tasks":
     "Registriere dich jetzt und hol dir 100+ kostenlose Aufgaben",
   "Register now": "Jetzt registrieren",
+  "Free tasks get you in. The full course is where the mocks and the mock builder are.":
+    "Die kostenlosen Aufgaben holen dich rein. Die Mocks und der Mock Builder sind im vollen Kurs.",
+  "See the full course": "Zum vollen Kurs",
+  "The free tasks are a start. The WiSo course is the mocks and the German explanations.":
+    "Die kostenlosen Aufgaben sind ein Anfang. Im WiSo-Kurs sind die Mocks und die deutschen Erklärungen.",
+  "See the WiSo course": "Zum WiSo-Kurs",
+  "Both exams sit in one course, so you don't prepare twice.":
+    "Beide Prüfungen stecken in einem Kurs, also bereitest du dich nicht zweimal vor.",
+  "See the hybrid course": "Zum Hybrid-Kurs",
+  "The free tasks are the start. The course is the mocks, the explanations, and the mock builder.":
+    "Die kostenlosen Aufgaben sind der Anfang. Im Kurs sind die Mocks, die Erklärungen und der Mock Builder.",
+  "See the courses": "Zu den Kursen",
+  "The free tasks are enough to try the format. The mocks and the mock builder are in the course.":
+    "Die kostenlosen Aufgaben reichen, um das Format auszuprobieren. Die Mocks und der Mock Builder sind im Kurs.",
+  "The free tasks are enough to try. The mocks are in the course.":
+    "Die kostenlosen Aufgaben reichen zum Ausprobieren. Die Mocks sind im Kurs.",
+  "This is the short pass. The full course walks each task through and adds the other mocks and the mock builder.":
+    "Das ist der kurze Durchgang. Der volle Kurs geht jede Aufgabe durch und legt die anderen Mocks und den Mock Builder dazu.",
 };
 
 export const homeExtraUk: Record<string, string> = {
@@ -188,8 +205,7 @@ export const homeExtraUk: Record<string, string> = {
   "Business and Economics (BBE)": "Business and Economics (BBE)",
   "Business, Economics and Social Sciences (WiSo)":
     "Business, Economics and Social Sciences (WiSo)",
-  "Wirtschafts- und Sozialwissenschaften (WiSo)":
-    "Wirtschafts- und Sozialwissenschaften (WiSo)",
+  "Wirtschafts- und Sozialwissenschaften (WiSo)": "Wirtschafts- und Sozialwissenschaften (WiSo)",
   "WU’s English-taught bachelor. Smaller intake (~240 places), international cohort, winter start only. The exam tests Economics & Business, English, and Mathematics.":
     "Англомовний бакалавр WU. Менший набір (~240 місць), міжнародна когорта, лише зимовий семестр. Іспит перевіряє економіку та бізнес, англійську та математику.",
   "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension, not English.":
@@ -342,7 +358,24 @@ export const homeExtraUk: Record<string, string> = {
   Time: "Час",
   Start: "Старт",
 
-  "Register now and get 100+ free tasks":
-    "Реєструйся зараз і отримай 100+ безкоштовних завдань",
+  "Register now and get 100+ free tasks": "Реєструйся зараз і отримай 100+ безкоштовних завдань",
   "Register now": "Зареєструйся",
+  "Free tasks get you in. The full course is where the mocks and the mock builder are.":
+    "Безкоштовні завдання дають тобі увійти. Моки і mock builder — у повному курсі.",
+  "See the full course": "Переглянути повний курс",
+  "The free tasks are a start. The WiSo course is the mocks and the German explanations.":
+    "Безкоштовні завдання — це початок. Курс WiSo — це моки і німецькі пояснення.",
+  "See the WiSo course": "Переглянути курс WiSo",
+  "Both exams sit in one course, so you don't prepare twice.":
+    "Обидва іспити в одному курсі, тож не готуєшся двічі.",
+  "See the hybrid course": "Переглянути гібридний курс",
+  "The free tasks are the start. The course is the mocks, the explanations, and the mock builder.":
+    "Безкоштовні завдання — це початок. Курс — це моки, пояснення і mock builder.",
+  "See the courses": "Переглянути курси",
+  "The free tasks are enough to try the format. The mocks and the mock builder are in the course.":
+    "Безкоштовних завдань вистачає, щоб спробувати формат. Моки і mock builder є в курсі.",
+  "The free tasks are enough to try. The mocks are in the course.":
+    "Безкоштовних завдань вистачає, щоб спробувати. Моки є в курсі.",
+  "This is the short pass. The full course walks each task through and adds the other mocks and the mock builder.":
+    "Це короткий прохід. Повний курс розбирає кожне завдання і додає інші моки та mock builder.",
 };
