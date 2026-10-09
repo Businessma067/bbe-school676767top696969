@@ -169,6 +169,10 @@ export const homeExtraDe: Record<string, string> = {
   Mix: "Mix",
   Time: "Zeit",
   Start: "Start",
+
+  "Register now and get 100+ free tasks":
+    "Registriere dich jetzt und hol dir 100+ kostenlose Aufgaben",
+  "Register now": "Jetzt registrieren",
 };
 
 export const homeExtraUk: Record<string, string> = {
@@ -337,4 +341,8 @@ export const homeExtraUk: Record<string, string> = {
   Mix: "Мікс",
   Time: "Час",
   Start: "Старт",
+
+  "Register now and get 100+ free tasks":
+    "Реєструйся зараз і отримай 100+ безкоштовних завдань",
+  "Register now": "Зареєструйся",
 };

@@ -25,6 +25,7 @@ import { THEME_INIT_SCRIPT } from "../lib/theme";
 import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
+import { SignupBite } from "../components/SignupBite";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
 
@@ -225,6 +226,7 @@ function RootComponent() {
             {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
             <Outlet />
             <DeferredChrome>
+              <SignupBite />
               <FloatingAssistant />
             </DeferredChrome>
           </PracticeCaseProvider>
