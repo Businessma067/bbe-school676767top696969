@@ -3,48 +3,55 @@ import { useRouterState } from "@tanstack/react-router";
 import { X } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { getCurrentAuthState } from "@/lib/auth-ui";
+import { supabase } from "@/integrations/supabase/client";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
 const DISMISS_KEY = "bbe-signup-bite-dismissed";
 
-/** Small homepage nudge above the chat button. Guests only. */
+/** Small homepage nudge beside the chat button. Hidden once a session exists. */
 export function SignupBite() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const home = stripLocalePrefix(pathname) === "/";
-  const [open, setOpen] = useState(false);
+  const [guest, setGuest] = useState<boolean | null>(null);
   const [clearOfHero, setClearOfHero] = useState(false);
 
   useEffect(() => {
-    if (!home) {
-      setOpen(false);
-      return;
-    }
-    try {
-      if (sessionStorage.getItem(DISMISS_KEY) === "1") return;
-    } catch {
-      /* private mode */
-    }
-
     let cancelled = false;
-    const timer = window.setTimeout(() => {
-      getCurrentAuthState()
-        .then((auth) => {
-          if (!cancelled && !auth) setOpen(true);
-        })
-        .catch(() => {
-          if (!cancelled) setOpen(true);
-        });
-    }, 900);
+
+    const apply = (signedIn: boolean) => {
+      if (!cancelled) setGuest(!signedIn);
+    };
+
+    const refresh = async () => {
+      try {
+        const { data } = await supabase.auth.getSession();
+        apply(!!data.session);
+      } catch {
+        apply(true);
+      }
+    };
+
+    void refresh();
+    const { data } = supabase.auth.onAuthStateChange((event, session) => {
+      if (
+        event === "INITIAL_SESSION" ||
+        event === "SIGNED_IN" ||
+        event === "SIGNED_OUT" ||
+        event === "TOKEN_REFRESHED" ||
+        event === "USER_UPDATED"
+      ) {
+        apply(!!session);
+      }
+    });
 
     return () => {
       cancelled = true;
-      window.clearTimeout(timer);
+      data.subscription.unsubscribe();
     };
-  }, [home]);
+  }, []);
 
   useEffect(() => {
-    if (!home || !open) return;
+    if (!home || guest !== true) return;
     const update = () => {
       const hero = document.querySelector("main > section");
       if (!hero) {
@@ -60,9 +67,18 @@ export function SignupBite() {
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
     };
-  }, [home, open]);
+  }, [home, guest]);
 
-  if (!open || !clearOfHero) return null;
+  let dismissed = false;
+  if (typeof window !== "undefined") {
+    try {
+      dismissed = sessionStorage.getItem(DISMISS_KEY) === "1";
+    } catch {
+      dismissed = false;
+    }
+  }
+
+  if (!home || guest !== true || dismissed || !clearOfHero) return null;
 
   const dismiss = () => {
     try {
@@ -70,7 +86,7 @@ export function SignupBite() {
     } catch {
       /* ignore */
     }
-    setOpen(false);
+    setGuest(false);
   };
 
   return (
