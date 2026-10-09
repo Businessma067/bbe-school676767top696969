@@ -8,10 +8,14 @@ import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
 const DISMISS_KEY = "bbe-signup-bite-dismissed";
 
-/** Small homepage nudge beside the chat button. Hidden once a session exists. */
+/** Homepage plus the three track landings. */
+const BITE_PATHS = new Set(["/", "/bbe", "/wiso", "/hybrid"]);
+
+/** Small signup nudge beside the chat button. Hidden once a session exists. */
 export function SignupBite() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const home = stripLocalePrefix(pathname) === "/";
+  const path = stripLocalePrefix(pathname);
+  const show = BITE_PATHS.has(path);
   const [guest, setGuest] = useState<boolean | null>(null);
   const [clearOfHero, setClearOfHero] = useState(false);
 
@@ -51,7 +55,11 @@ export function SignupBite() {
   }, []);
 
   useEffect(() => {
-    if (!home || guest !== true) return;
+    setClearOfHero(false);
+  }, [path]);
+
+  useEffect(() => {
+    if (!show || guest !== true) return;
     const update = () => {
       const hero = document.querySelector("main > section");
       if (!hero) {
@@ -67,7 +75,7 @@ export function SignupBite() {
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
     };
-  }, [home, guest]);
+  }, [show, guest]);
 
   let dismissed = false;
   if (typeof window !== "undefined") {
@@ -78,7 +86,7 @@ export function SignupBite() {
     }
   }
 
-  if (!home || guest !== true || dismissed || !clearOfHero) return null;
+  if (!show || guest !== true || dismissed || !clearOfHero) return null;
 
   const dismiss = () => {
     try {
