@@ -23,4 +23,4 @@
 <!-- LOVABLE:END -->
 
 - Present How it works in a shared widescreen aspect with contained native recordings and fixed desktop live stages scaled as a whole in inline and enlarged views; this prevents mobile reflow from cropping the demonstration.
-- Use a shared fullscreen viewer for enlarged How it works media, applying pinch zoom and bounded panning to the whole stage; this preserves desktop layout while allowing mobile users to inspect details.
+- Use a shared fullscreen viewer for enlarged How it works media with frame-rate-independent smoothing, cursor/pinch-anchored zoom and bounded panning of the whole stage; this preserves desktop layout while allowing users to inspect details without anchor drift.

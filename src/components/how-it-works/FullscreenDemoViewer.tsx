@@ -11,9 +11,46 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
 }) {
   const root = useRef<HTMLDivElement | null>(null);
   const frame = useRef<HTMLDivElement | null>(null);
+  const content = useRef<HTMLDivElement | null>(null);
+  const target = useRef({ scale: 1, x: 0, y: 0 });
+  const rendered = useRef({ scale: 1, x: 0, y: 0 });
+  const animation = useRef(0);
   const pointers = useRef(new Map<number, { x: number; y: number }>());
   const [zoom, setZoom] = useState({ scale: 1, x: 0, y: 0 });
   const [rotated, setRotated] = useState(false);
+
+  target.current = zoom;
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let previous = performance.now();
+    const animate = (now: number) => {
+      const amount = reduced ? 1 : 1 - Math.exp(-Math.min(now - previous, 64) / 70);
+      previous = now;
+      const current = rendered.current;
+      const goal = target.current;
+      for (const key of ["scale", "x", "y"] as const) {
+        current[key] += (goal[key] - current[key]) * amount;
+        if (Math.abs(goal[key] - current[key]) < 0.0001) current[key] = goal[key];
+      }
+      if (content.current) content.current.style.transform = `translate(${current.x}px, ${current.y}px) scale(${current.scale})`;
+      animation.current = requestAnimationFrame(animate);
+    };
+    animation.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animation.current);
+  }, []);
+
+  useEffect(() => {
+    const element = frame.current;
+    if (!element) return;
+    const wheel = (event: WheelEvent) => {
+      event.preventDefault();
+      const anchor = point(event.clientX, event.clientY);
+      const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? element.clientHeight : 1);
+      setZoom((z) => zoomAt(z, z.scale * Math.exp(-delta * 0.002), anchor));
+    };
+    element.addEventListener("wheel", wheel, { passive: false });
+    return () => element.removeEventListener("wheel", wheel);
+  }, [rotated]);
 
   const reset = () => setZoom({ scale: 1, x: 0, y: 0 });
   const fullscreen = async () => {
@@ -42,9 +79,17 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
     const maxY = height * (nextScale - 1) / 2;
     return { scale: nextScale, x: Math.max(-maxX, Math.min(maxX, x)), y: Math.max(-maxY, Math.min(maxY, y)) };
   };
-  const point = (clientX: number, clientY: number) => rotated
-    ? { x: clientY, y: -clientX }
-    : { x: clientX, y: clientY };
+  const point = (clientX: number, clientY: number) => {
+    const rect = frame.current?.getBoundingClientRect();
+    const x = clientX - (rect ? rect.left + rect.width / 2 : 0);
+    const y = clientY - (rect ? rect.top + rect.height / 2 : 0);
+    return rotated ? { x: y, y: -x } : { x, y };
+  };
+  const zoomAt = (z: typeof zoom, scale: number, anchor: { x: number; y: number }, nextAnchor = anchor) => {
+    const nextScale = Math.max(1, Math.min(4, scale));
+    const ratio = nextScale / z.scale;
+    return clamp(nextScale, nextAnchor.x - (anchor.x - z.x) * ratio, nextAnchor.y - (anchor.y - z.y) * ratio);
+  };
 
   return (
     <Dialog open onOpenChange={(open) => { if (!open) onClose(); }}>
@@ -65,6 +110,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
         </div>
         <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
           <div ref={frame} className={`demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
+            onDoubleClick={(e) => setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY)))}
             onPointerDown={(e) => {
               if (e.pointerType === "mouse" && zoom.scale === 1) return;
               pointers.current.set(e.pointerId, point(e.clientX, e.clientY));
@@ -78,7 +124,9 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
               if (other) {
                 const before = Math.hypot(previous.x - other.x, previous.y - other.y);
                 const after = Math.hypot(next.x - other.x, next.y - other.y);
-                if (before > 0) setZoom((z) => clamp(z.scale * after / before, z.x + (next.x - previous.x) / 2, z.y + (next.y - previous.y) / 2));
+                if (before > 0) setZoom((z) => zoomAt(z, z.scale * after / before,
+                  { x: (previous.x + other.x) / 2, y: (previous.y + other.y) / 2 },
+                  { x: (next.x + other.x) / 2, y: (next.y + other.y) / 2 }));
               } else setZoom((z) => clamp(z.scale, z.x + next.x - previous.x, z.y + next.y - previous.y));
               pointers.current.set(e.pointerId, next);
             }}
@@ -86,7 +134,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
             onPointerCancel={(e) => pointers.current.delete(e.pointerId)}
             onLostPointerCapture={(e) => pointers.current.delete(e.pointerId)}
           >
-            <div className="absolute inset-0 origin-center" style={{ transform: `translate(${zoom.x}px, ${zoom.y}px) scale(${zoom.scale})` }}>{children}</div>
+            <div ref={content} className="absolute inset-0 origin-center will-change-transform">{children}</div>
           </div>
         </div>
       </DialogContent>
