@@ -11,6 +11,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
 }) {
   const root = useRef<HTMLDivElement | null>(null);
   const frame = useRef<HTMLDivElement | null>(null);
+  const [wheelFrame, setWheelFrame] = useState<HTMLDivElement | null>(null);
   const content = useRef<HTMLDivElement | null>(null);
   const target = useRef({ scale: 1, x: 0, y: 0 });
   const rendered = useRef({ scale: 1, x: 0, y: 0 });
@@ -40,7 +41,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
   }, []);
 
   useEffect(() => {
-    const element = frame.current;
+    const element = wheelFrame;
     if (!element) return;
     const wheel = (event: WheelEvent) => {
       event.preventDefault();
@@ -50,7 +51,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
     };
     element.addEventListener("wheel", wheel, { passive: false });
     return () => element.removeEventListener("wheel", wheel);
-  }, [rotated]);
+  }, [rotated, wheelFrame]);
 
   const reset = () => setZoom({ scale: 1, x: 0, y: 0 });
   const fullscreen = async () => {
@@ -109,7 +110,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
           </div>
         </div>
         <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
-          <div ref={frame} className={`demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
+          <div ref={(element) => { frame.current = element; setWheelFrame(element); }} className={`demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
             onDoubleClick={(e) => setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY)))}
             onPointerDown={(e) => {
               if (e.pointerType === "mouse" && zoom.scale === 1) return;
