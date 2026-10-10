@@ -68,7 +68,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
             onPointerDown={(e) => {
               if (e.pointerType === "mouse" && zoom.scale === 1) return;
               pointers.current.set(e.pointerId, point(e.clientX, e.clientY));
-              e.currentTarget.setPointerCapture(e.pointerId);
+              if (e.isTrusted) e.currentTarget.setPointerCapture(e.pointerId);
             }}
             onPointerMove={(e) => {
               const previous = pointers.current.get(e.pointerId);
