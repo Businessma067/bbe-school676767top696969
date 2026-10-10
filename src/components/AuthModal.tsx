@@ -162,6 +162,7 @@ export function AuthModal({
         }
 
         stashPostSignupContinue(currentReturnPath());
+        if (onSignedIn) stashResumeCheckout();
         sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
         onOpenChange(false);
         navigate({ to: "/confirm-email" });
