@@ -4,6 +4,30 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.demo-fullscreen-viewer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  transform: none;
+  border-radius: 0;
+}
+.demo-fullscreen-frame {
+  position: relative;
+  width: min(100vw, calc((100dvh - 3.5rem) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  flex-shrink: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+.demo-fullscreen-frame-rotated {
+  width: min(calc(100dvh - 3.5rem), calc(100vw * 16 / 9));
+  transform: rotate(90deg);
+}
+
 /*
  * Design system: exam-paper institutional.
  *
