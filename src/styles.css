@@ -6,14 +6,14 @@
 
 .demo-fullscreen-viewer {
   position: fixed;
-  inset: 0;
+  inset: 0 !important;
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100dvh;
   max-width: none;
-  transform: none;
-  translate: none;
+  transform: none !important;
+  translate: none !important;
   animation: none;
   border-radius: 0;
 }
