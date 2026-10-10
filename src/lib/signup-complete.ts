@@ -6,6 +6,31 @@ export const SIGNUP_COMPLETE_PATH = "/signup-complete" as const;
 
 const FLAG_KEY = "bbe.signupComplete";
 const CONTINUE_KEY = "bbe.postSignupContinue";
+const RESUME_CHECKOUT_KEY = "bbe.resumeCheckout";
+
+/**
+ * Remember that signup started from a Buy flow so the destination page can
+ * reopen the payment modal after the /signup-complete full-page reload.
+ */
+export function stashResumeCheckout(): void {
+  if (typeof window === "undefined") return;
+  try {
+    sessionStorage.setItem(RESUME_CHECKOUT_KEY, "1");
+  } catch {
+    /* ignore */
+  }
+}
+
+export function consumeResumeCheckout(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    const raw = sessionStorage.getItem(RESUME_CHECKOUT_KEY);
+    sessionStorage.removeItem(RESUME_CHECKOUT_KEY);
+    return raw === "1";
+  } catch {
+    return false;
+  }
+}
 
 export function markSignupComplete(): void {
   if (typeof window === "undefined") return;

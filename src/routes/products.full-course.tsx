@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BookOpen,
   ListChecks,
@@ -24,6 +24,7 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
 import { SalesWarmup } from "@/components/SalesWarmup";
+import { consumeResumeCheckout } from "@/lib/signup-complete";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
@@ -328,6 +329,13 @@ export function FullCourseProduct() {
   const { ready, signedIn, ownsFullCourse } = useFullCourseAccess();
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+
+  // After signup from the Buy flow, /signup-complete reloads this page —
+  // reopen the payment modal so the user doesn't have to click Buy again.
+  useEffect(() => {
+    if (!ready || !signedIn) return;
+    if (consumeResumeCheckout()) setPaymentOpen(true);
+  }, [ready, signedIn]);
 
   const openBuy = () => {
     if (!signedIn) {

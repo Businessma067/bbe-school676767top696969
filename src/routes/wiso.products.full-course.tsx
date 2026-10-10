@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BookOpen,
   ListChecks,
@@ -19,6 +19,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 import { AuthModal } from "@/components/AuthModal";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { WISO_FULL_COURSE_HREF } from "@/lib/full-course-access";
+import { consumeResumeCheckout } from "@/lib/signup-complete";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import {
@@ -185,6 +186,13 @@ export function WisoFullCourseProduct() {
   const { ready, signedIn, ownsWisoFullCourse } = useFullCourseAccess();
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+
+  // After signup from the Buy flow, /signup-complete reloads this page —
+  // reopen the payment modal so the user doesn't have to click Buy again.
+  useEffect(() => {
+    if (!ready || !signedIn) return;
+    if (consumeResumeCheckout()) setPaymentOpen(true);
+  }, [ready, signedIn]);
 
   const openBuy = () => {
     if (!signedIn) {

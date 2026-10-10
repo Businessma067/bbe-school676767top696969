@@ -17,6 +17,7 @@ import {
   markSignupComplete,
   SIGNUP_COMPLETE_PATH,
   stashPostSignupContinue,
+  stashResumeCheckout,
 } from "@/lib/signup-complete";
 import { cn } from "@/lib/utils";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
@@ -71,6 +72,7 @@ export function AuthModal({
     if (mode === "signup") {
       markSignupComplete();
       stashPostSignupContinue(currentReturnPath());
+      if (onSignedIn) stashResumeCheckout();
       stashAuthReturnTo(SIGNUP_COMPLETE_PATH);
       const result = await signInWithGoogle({ redirectTo: SIGNUP_COMPLETE_PATH });
       if (result.error) {
@@ -153,12 +155,14 @@ export function AuthModal({
             );
           markSignupComplete();
           stashPostSignupContinue(currentReturnPath());
+          if (onSignedIn) stashResumeCheckout();
           onOpenChange(false);
           navigate({ to: SIGNUP_COMPLETE_PATH });
           return;
         }
 
         stashPostSignupContinue(currentReturnPath());
+        if (onSignedIn) stashResumeCheckout();
         sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
         onOpenChange(false);
         navigate({ to: "/confirm-email" });
