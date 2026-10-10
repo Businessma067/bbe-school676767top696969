@@ -824,7 +824,7 @@ export function EconomicsTasksPage({
                 void recordTaskAttempt({
                   subject: "economics",
                   chapter: `Chapter ${chapterOf(activeCase)}`,
-                  taskKey: `full:${activeCase.case_id}`,
+                  taskKey: `${Number.isFinite(freeLimitPerChapter) ? "demo" : "full"}:${activeCase.case_id}`,
                   taskTitle: activeCase.title,
                   correctCount,
                   statementCount: activeCase.statements.length || 5,

@@ -49,36 +49,68 @@ const DEMO_PRACTICE_ENROLLMENT = {
   tier: "demo",
 } as const;
 
-/** Give every listed account the free demo package if signup never wrote it. */
-async function grantMissingDemoEnrollments(
+/**
+ * Demo Practice Package is for someone who finished at least one demo task.
+ * Signing up, or opening the admin list, does not grant it.
+ */
+async function grantDemoEnrollmentAfterDemoTask(
   db: AdminDb,
-  users: { userId: string; createdAt: string }[],
+  users: { userId: string }[],
 ): Promise<void> {
   if (users.length === 0) return;
   const ids = users.map((u) => u.userId);
-  const { data, error } = await db
-    .from("enrollments")
-    .select("user_id")
-    .eq("product_slug", DEMO_PRACTICE_ENROLLMENT.product_slug)
+  const { data: attempts, error: attemptError } = await db
+    .from("task_attempts")
+    .select("user_id, created_at, task_key")
     .in("user_id", ids);
-  if (error) {
-    console.error("grantMissingDemoEnrollments lookup", error);
+  if (attemptError) {
+    console.error("grantDemoEnrollmentAfterDemoTask attempts", attemptError);
     return;
   }
-  const owned = new Set((data ?? []).map((row) => row.user_id));
-  const missing = users.filter((u) => !owned.has(u.userId));
+
+  const { data: paid, error: paidError } = await db
+    .from("enrollments")
+    .select("user_id, tier, product_slug")
+    .in("user_id", ids);
+  if (paidError) {
+    console.error("grantDemoEnrollmentAfterDemoTask enrollments", paidError);
+    return;
+  }
+
+  const hasPaid = new Set(
+    (paid ?? [])
+      .filter((row) => row.tier === "full" || row.tier === "lite")
+      .map((row) => row.user_id),
+  );
+  const hasDemo = new Set(
+    (paid ?? [])
+      .filter((row) => row.product_slug === DEMO_PRACTICE_ENROLLMENT.product_slug)
+      .map((row) => row.user_id),
+  );
+
+  const firstDemoTask = new Map<string, string>();
+  for (const row of attempts ?? []) {
+    const fromDemo = row.task_key.startsWith("demo:");
+    const unpaidPractice = !hasPaid.has(row.user_id);
+    if (!fromDemo && !unpaidPractice) continue;
+    const prev = firstDemoTask.get(row.user_id);
+    if (!prev || row.created_at < prev) firstDemoTask.set(row.user_id, row.created_at);
+  }
+
+  const missing = [...firstDemoTask.entries()].filter(([userId]) => !hasDemo.has(userId));
   if (missing.length === 0) return;
+
   const { error: upsertError } = await db.from("enrollments").upsert(
-    missing.map((u) => ({
-      user_id: u.userId,
+    missing.map(([userId, createdAt]) => ({
+      user_id: userId,
       product_slug: DEMO_PRACTICE_ENROLLMENT.product_slug,
       product_name: DEMO_PRACTICE_ENROLLMENT.product_name,
       tier: DEMO_PRACTICE_ENROLLMENT.tier,
-      created_at: u.createdAt,
+      created_at: createdAt,
     })),
     { onConflict: "user_id,product_slug", ignoreDuplicates: true },
   );
-  if (upsertError) console.error("grantMissingDemoEnrollments", upsertError);
+  if (upsertError) console.error("grantDemoEnrollmentAfterDemoTask", upsertError);
 }
 
 const RPC_MISSING_HINT =
@@ -242,7 +274,7 @@ export const adminListUsers = createServerFn({ method: "POST" })
     }
 
     if (context.adminUsesServiceRole) {
-      await grantMissingDemoEnrollments(
+      await grantDemoEnrollmentAfterDemoTask(
         db,
         authUsers.map((u) => ({ userId: u.id, createdAt: u.created_at })),
       );

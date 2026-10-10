@@ -204,7 +204,13 @@ export async function recordTaskAttempt(input: {
     statement_count: input.statementCount,
     is_passed: input.correctCount === input.statementCount,
   });
-  if (error) console.error("recordTaskAttempt", error);
+  if (error) {
+    console.error("recordTaskAttempt", error);
+    return;
+  }
+  if (input.taskKey.startsWith("demo:")) {
+    void enrollInCourse("demo-practice");
+  }
 }
 
 export async function fetchTaskAttempts(): Promise<TaskAttempt[]> {

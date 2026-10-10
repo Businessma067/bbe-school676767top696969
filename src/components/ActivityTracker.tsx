@@ -2,7 +2,6 @@ import { useRouterState } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { runOnceOnLogin, startActivityHeartbeat, trackPageView } from "@/lib/activity-tracker";
-import { enrollInCourse } from "@/lib/user-progress";
 
 function scheduleIdle(fn: () => void): () => void {
   if (typeof window === "undefined") return () => {};
@@ -34,7 +33,6 @@ export function ActivityTracker() {
       stopHeartbeat = startActivityHeartbeat(() => window.location.pathname);
       // Heavy login sync must not block first paint / clicks.
       cancelIdle = scheduleIdle(() => {
-        void enrollInCourse("demo-practice");
         void runOnceOnLogin(session.user.id);
       });
     };
@@ -45,7 +43,6 @@ export function ActivityTracker() {
       if (event === "SIGNED_IN" && session?.user) {
         cancelIdle?.();
         cancelIdle = scheduleIdle(() => {
-          void enrollInCourse("demo-practice");
           void runOnceOnLogin(session.user.id);
         });
         stopHeartbeat?.();
