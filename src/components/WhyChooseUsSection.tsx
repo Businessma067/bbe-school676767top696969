@@ -105,7 +105,7 @@ export function WhyChooseUsSection({
             return (
               <article
                 key={feature.id}
-                className="flex h-full flex-col rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-8"
+                className="flex h-full flex-col rounded-2xl border border-white/12 bg-why-us-card p-4 sm:p-8"
               >
                 <div
                   className={cn(
@@ -308,7 +308,7 @@ function MockBuilderOrbit() {
       aria-hidden
       style={{ ["--orbit-cycle" as string]: `${cycleSec}s` }}
     >
-      <div className="relative h-[15.5rem] w-[15.5rem] sm:h-[16.5rem] sm:w-[16.5rem]">
+      <div className="relative h-44 w-44 sm:h-[16.5rem] sm:w-[16.5rem]">
         <svg className="absolute inset-0 h-full w-full" viewBox="0 0 160 160" fill="none">
           <circle
             cx="80"

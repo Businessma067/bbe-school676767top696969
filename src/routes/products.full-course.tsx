@@ -468,7 +468,7 @@ export function FullCourseProduct() {
           </section>
 
           {/* Persuasive section */}
-          <section className="mt-16">
+          <section className="mt-8 sm:mt-16">
             <h2 className="mb-6 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
               Why most applicants fail, and why this course is built to fix that
             </h2>
@@ -596,7 +596,7 @@ export function FullCourseProduct() {
           </section>
 
           {/* Section 3 — Time investment */}
-          <section className="mt-16 rounded-2xl border border-border bg-gradient-to-br from-secondary to-background p-6 sm:p-8">
+          <section className="mt-8 sm:mt-16 rounded-2xl border border-border bg-gradient-to-br from-secondary to-background p-6 sm:p-8">
             <div className="flex flex-col items-center gap-4 text-center">
               <div
                 className="grid h-14 w-14 place-items-center rounded-2xl"
@@ -632,7 +632,7 @@ export function FullCourseProduct() {
           />
 
           {/* FAQ */}
-          <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
+          <section className="mt-8 sm:mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
             <div className="mx-auto max-w-3xl">
               <h2 className="text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                 Frequently asked questions

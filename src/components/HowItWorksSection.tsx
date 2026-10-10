@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { createPortal, flushSync } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
@@ -353,9 +353,6 @@ function HowItWorksLive({
   return <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
 }
 
-/** Desktop canvas width. Phones scale this down so the whole walkthrough stays visible. */
-const HIW_CANVAS_W = 1280;
-
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
@@ -385,7 +382,6 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
-  const mediaRef = useRef<HTMLDivElement | null>(null);
 
   const slides =
     tab === "games"
@@ -525,42 +521,6 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
   }, [tab, subject, tool]);
 
-  useLayoutEffect(() => {
-    const frame = mediaRef.current;
-    if (!frame) return;
-    const fit = () => {
-      const canvas = frame.querySelector(".hiw-phone-canvas") as HTMLElement | null;
-      if (!canvas) return;
-      if (window.innerWidth >= 640 || zoomed) {
-        canvas.style.transform = "";
-        canvas.style.width = "";
-        canvas.style.height = "";
-        frame.style.height = "";
-        frame.style.aspectRatio = slide.aspect;
-        return;
-      }
-      const scroller = canvas.querySelector(".news-uniq-scroll") as HTMLElement | null;
-      const natural = Math.max(scroller?.scrollHeight ?? 0, canvas.scrollHeight, 640);
-      const scaleToWidth = frame.clientWidth / HIW_CANVAS_W;
-      const maxH = Math.min(window.innerHeight * 0.5, 420);
-      const scale = Math.min(scaleToWidth, maxH / natural);
-      canvas.style.width = `${HIW_CANVAS_W}px`;
-      canvas.style.height = `${natural}px`;
-      canvas.style.transformOrigin = "top left";
-      canvas.style.transform = `scale(${scale})`;
-      frame.style.aspectRatio = "auto";
-      frame.style.height = `${Math.round(natural * scale)}px`;
-    };
-    fit();
-    const ro = new ResizeObserver(fit);
-    ro.observe(frame);
-    const timer = window.setInterval(fit, 400);
-    return () => {
-      ro.disconnect();
-      window.clearInterval(timer);
-    };
-  }, [slide.aspect, slide.key, zoomed, tab, subject, tool]);
-
   useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
@@ -623,35 +583,33 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
           ref={stageRef}
           className="relative rounded-2xl border border-border bg-card px-3 py-4 shadow-sm sm:px-10 sm:py-5 lg:px-12 lg:py-5"
         >
-          <button
-            type="button"
-            aria-label={t("Previous")}
-            onClick={() => goSlide(slideIndex - 1)}
-            className="absolute left-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            type="button"
-            aria-label={t("Next")}
-            onClick={() => goSlide(slideIndex + 1)}
-            className="absolute right-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
-
           <div
-            className="grid items-stretch gap-5 px-9 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6"
+            className="grid items-stretch gap-5 px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6"
             style={{ viewTransitionName: "hiw-pane" }}
           >
-            <div className="min-w-0">
-              <div className="overflow-hidden rounded-xl border border-border bg-muted">
+            <div className="relative min-w-0">
+              <button
+                type="button"
+                aria-label={t("Previous")}
+                onClick={() => goSlide(slideIndex - 1)}
+                className="absolute left-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-5"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                aria-label={t("Next")}
+                onClick={() => goSlide(slideIndex + 1)}
+                className="absolute right-1 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-5"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+              <div className="relative overflow-hidden rounded-xl border border-border bg-muted">
                 <div
-                  ref={mediaRef}
                   className="relative w-full overflow-hidden"
                   style={{ aspectRatio: slide.aspect }}
                 >
-                  <div className="hiw-phone-canvas absolute inset-0">
+                  <div className="absolute inset-0">
                   {liveStage ? (
                     // One live player at a time: hide the inline demo while the lightbox owns it.
                     !zoomed ? (
@@ -661,7 +619,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="pointer-events-none absolute inset-0 h-full w-full object-contain sm:object-cover"
+                      className="pointer-events-none absolute inset-0 h-full w-full object-contain"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -676,12 +634,21 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     type="button"
                     onClick={openZoom}
                     aria-label={t("Zoom in")}
-                    className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-black/95 px-3 py-2 text-xs font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
+                    className="absolute bottom-3 right-3 z-10 hidden items-center gap-2 rounded-md border border-white/40 bg-black/95 px-5 py-3 text-base font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:inline-flex"
                   >
-                    <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
+                    <ZoomIn className="h-6 w-6" />
                     Zoom in
                   </button>
                 </div>
+                <button
+                  type="button"
+                  onClick={openZoom}
+                  aria-label={t("Zoom in")}
+                  className="flex w-full items-center justify-center gap-1.5 border-t border-border bg-foreground px-3 py-2.5 text-xs font-semibold text-background sm:hidden"
+                >
+                  <ZoomIn className="h-4 w-4" />
+                  Zoom in
+                </button>
               </div>
             </div>
 
@@ -757,12 +724,20 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             >
               <div
                 className="relative overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
-                style={{
-                  width: `min(98vw, calc(94vh * (${slide.aspect})))`,
-                }}
+                style={
+                  liveStage
+                    ? { width: "min(96vw, 1100px)", height: "min(92dvh, 860px)" }
+                    : {
+                        width: `min(96vw, calc((100dvh - 2.5rem) * (${slide.aspect})))`,
+                        maxHeight: "calc(100dvh - 2.5rem)",
+                      }
+                }
                 onClick={(event) => event.stopPropagation()}
               >
-                <div className="relative w-full overflow-hidden" style={{ aspectRatio: slide.aspect }}>
+                <div
+                  className="relative h-full w-full overflow-hidden bg-black"
+                  style={liveStage ? undefined : { aspectRatio: slide.aspect }}
+                >
                   {liveStage ? (
                     <div className="absolute inset-0">
                       <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
@@ -771,11 +746,8 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     <video
                       key={`zoom-${slide.key}`}
                       ref={zoomVideoRef}
-                      className="pointer-events-none absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
-                      style={{
-                        width: `${lightboxScale * 100}%`,
-                        height: `${lightboxScale * 100}%`,
-                      }}
+                      className="pointer-events-none absolute inset-0 h-full w-full origin-center object-contain"
+                      style={{ transform: `scale(${lightboxScale})` }}
                       poster={slide.poster}
                       src={slide.video}
                       muted

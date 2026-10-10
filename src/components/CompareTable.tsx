@@ -43,10 +43,10 @@ const comparisonSections: ComparisonSection[] = [
   },
 ];
 
-const columns: { key: ColKey; label: string }[] = [
-  { key: "free", label: "Free Sample" },
-  { key: "full", label: "BBE Full Course" },
-  { key: "wiso", label: "WiSo Full Course" },
+const columns: { key: ColKey; label: string; short: string }[] = [
+  { key: "free", label: "Free Sample", short: "Free" },
+  { key: "full", label: "BBE Full Course", short: "BBE" },
+  { key: "wiso", label: "WiSo Full Course", short: "WiSo" },
 ];
 
 const COL_COUNT = columns.length + 1;
@@ -160,11 +160,11 @@ export function CompareTable({
 
         {/* Mobile unified table */}
         <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[520px] border-collapse text-[10px]">
+          <div>
+            <table className="w-full table-fixed border-collapse text-[10px]">
               <thead>
                 <tr className="border-b border-border bg-muted/50">
-                  <th className="sticky left-0 z-10 w-[120px] bg-muted px-2 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+                  <th className="w-[34%] bg-muted px-1.5 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
                     Compare
                   </th>
                   {columns.map((col) => {
@@ -173,11 +173,11 @@ export function CompareTable({
                     return (
                       <th
                         key={col.key}
-                        className={`px-1.5 py-1.5 text-center font-display text-[9px] font-semibold uppercase tracking-widest ${
+                        className={`px-1 py-1.5 text-center font-display text-[9px] font-semibold uppercase tracking-widest ${
                           isHi ? `text-foreground bg-muted ${hiClassFor(col.key)}` : "bg-muted/50 text-muted-foreground"
                         } ${isDim ? dimClass : ""}`}
                       >
-                        {col.label}
+                        {col.short}
                       </th>
                     );
                   })}
@@ -199,16 +199,16 @@ export function CompareTable({
                         key={row.label}
                         className={`border-t border-border ${rowIdx % 2 === 0 ? "bg-muted/[0.4]" : "bg-transparent"}`}
                       >
-                        <td className="sticky left-0 z-10 w-[120px] bg-background px-2 py-1.5 text-[10px] font-medium text-foreground/90">
-                          {row.label}
-                        </td>
+                      <td className="bg-background px-1.5 py-1.5 text-left text-[10px] font-medium leading-snug text-foreground/90">
+                        {row.label}
+                      </td>
                         {columns.map((col) => {
                           const isHi = highlight === col.key;
                           const isDim = Boolean(highlight && !isHi);
                           return (
                             <td
                               key={col.key}
-                              className={`px-1.5 py-1.5 text-center text-[10px] font-medium text-foreground/80 ${
+                              className={`break-words px-1 py-1.5 text-center text-[10px] font-medium leading-snug text-foreground/80 ${
                                 isHi ? hiClassFor(col.key) : ""
                               } ${isDim ? dimClass : ""}`}
                             >

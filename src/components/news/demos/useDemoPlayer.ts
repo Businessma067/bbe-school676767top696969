@@ -248,14 +248,27 @@ export function useDemoPlayer(
       );
     };
 
+    /** Viewport pixels per layout pixel. A CSS scale on the stage must not send the hand to the wrong control. */
+    const visualScale = () => {
+      const stage = stageRef.current;
+      if (!stage) return 1;
+      const layout = stage.offsetWidth;
+      if (layout < 1) return 1;
+      const scale = stage.getBoundingClientRect().width / layout;
+      return scale > 0.05 && Number.isFinite(scale) ? scale : 1;
+    };
+
     const setCursorAt = (p: { x: number; y: number }) => {
       const c = clampToStage(p);
       cursorPos.current = c;
       const el = cursorRef.current;
       if (el) {
-        el.dataset.cx = String(c.x);
-        el.dataset.cy = String(c.y);
-        el.style.transform = `translate3d(${c.x}px, ${c.y}px, 0)`;
+        const scale = visualScale();
+        const x = c.x / scale;
+        const y = c.y / scale;
+        el.dataset.cx = String(x);
+        el.dataset.cy = String(y);
+        el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
     };
 

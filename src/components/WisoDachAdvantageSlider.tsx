@@ -146,7 +146,7 @@ export function WisoDachAdvantageSlider() {
             title="Places on the same campus"
             active={active === 0}
           >
-            <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+            <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8">
               <RingMetric
                 value={String(WISO_EXAM_FORMAT.places)}
                 label="WiSo places"
@@ -163,7 +163,7 @@ export function WisoDachAdvantageSlider() {
                 percent={240 / WISO_EXAM_FORMAT.places}
               />
             </div>
-            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-why-us-fg sm:text-xl">
+            <p className="mx-auto mt-4 max-w-2xl text-center text-sm font-semibold leading-relaxed text-why-us-fg sm:mt-10 sm:text-xl">
               More seats do not make the paper gentle. They do make WiSo a real scale path onto the
               same WU campus.
             </p>
@@ -324,7 +324,7 @@ function RingMetric({
     <div
       ref={containerRef}
       className={cn(
-        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-4 py-6 text-center sm:px-8 sm:py-12",
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-2 py-3 text-center sm:px-8 sm:py-12",
         glow && "why-us-glow why-us-pulse",
       )}
     >
@@ -364,7 +364,7 @@ function RingMetric({
           </span>
         </div>
       </div>
-      <h3 className="mt-6 font-display text-lg font-semibold text-why-us-fg">{label}</h3>
+      <h3 className="mt-3 font-display text-sm font-semibold text-why-us-fg sm:mt-6 sm:text-lg">{label}</h3>
       <p className="mt-1 text-sm text-why-us-fg/60">{sublabel}</p>
     </div>
   );
@@ -460,11 +460,11 @@ function DachTicker() {
   return (
     <div className="mt-8 rounded-xl border border-white/12 bg-black/40 px-4 py-6 sm:px-8 sm:py-8">
       <p className="mb-6 text-center text-sm font-medium text-why-us-fg/55">DACH is where it pays off</p>
-      <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
+      <div className="grid grid-cols-3 gap-2 sm:gap-4">
         {regions.map((r) => (
           <div
             key={r.code}
-            className="group flex flex-col items-center rounded-xl border border-white/12 bg-gradient-to-b from-white/[0.04] to-transparent px-4 py-6 text-center transition hover:border-white/20 hover:from-white/[0.07]"
+            className="group flex flex-col items-center rounded-xl border border-white/12 bg-gradient-to-b from-white/[0.04] to-transparent px-2 py-3 text-center transition hover:border-white/20 hover:from-white/[0.07] sm:px-4 sm:py-6"
           >
             <span className="relative mb-3 block h-11 w-[4.25rem] overflow-hidden rounded-sm shadow-[0_6px_16px_-8px_rgba(0,0,0,0.55)] transition duration-300 group-hover:scale-[1.02] sm:h-12 sm:w-[4.75rem]">
               <DachFlag code={r.code} />

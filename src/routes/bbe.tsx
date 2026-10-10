@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 import { Flame, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
@@ -360,7 +360,7 @@ function RingMetric({
     <div
       ref={containerRef}
       className={cn(
-        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-4 py-6 text-center sm:px-8 sm:py-12",
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-2 py-3 text-center sm:px-8 sm:py-12",
         glow && "why-us-glow why-us-pulse",
       )}
     >
@@ -382,7 +382,7 @@ function RingMetric({
           </span>
         </div>
       </div>
-      <h3 className="mt-6 font-display text-lg font-semibold text-why-us-fg">{label}</h3>
+      <h3 className="mt-3 font-display text-sm font-semibold text-why-us-fg sm:mt-6 sm:text-lg">{label}</h3>
       <p className="mt-1 text-sm text-why-us-fg/60">{sublabel}</p>
     </div>
   );
@@ -487,7 +487,7 @@ function WhyUsSlider() {
         >
           {/* Slide 01 — Acceptance Rate */}
           <WhySlide title="Acceptance Rate">
-            <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+            <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8">
               <RingMetric
                 value="8%"
                 label="Official WU Vienna BBE Acceptance Rate"
@@ -504,7 +504,7 @@ function WhyUsSlider() {
                 glow
               />
             </div>
-            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-why-us-fg sm:text-xl">
+            <p className="mx-auto mt-4 max-w-2xl text-center text-sm font-semibold leading-relaxed text-why-us-fg sm:mt-10 sm:text-xl">
               Our students achieve a success rate nearly 6 times higher than the general applicant
               pool.
             </p>
@@ -558,6 +558,15 @@ function WhySlide({ title, children }: { title: string; children: ReactNode }) {
 function CapitalBars() {
   const ref = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
+  const [maxH, setMaxH] = useState(260);
+
+  useLayoutEffect(() => {
+    const mq = window.matchMedia("(max-width: 639px)");
+    const apply = () => setMaxH(mq.matches ? 168 : 260);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
 
   useEffect(() => {
     const el = ref.current;
@@ -584,12 +593,11 @@ function CapitalBars() {
     return () => obs.disconnect();
   }, []);
 
-  const maxH = 260;
   const ukHeight = maxH * progress;
   const wuHeight = maxH * 0.11 * progress;
 
   return (
-    <div ref={ref} className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8">
+    <div ref={ref} className="rounded-xl border border-white/10 bg-black/40 p-4 sm:p-8">
       <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-why-us-fg/50">
         Total tuition · 3 years
       </p>
