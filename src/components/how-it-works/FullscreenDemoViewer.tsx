@@ -28,24 +28,39 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
   const [rotated, setRotated] = useState(false);
 
   target.current = zoom;
+  // Animate only while moving; when settled drop the GPU layer so text re-rasterizes crisp at the final scale.
   useEffect(() => {
+    const el = content.current;
+    if (!el) return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let previous = performance.now();
+    cancelAnimationFrame(animation.current);
+    el.style.willChange = "transform";
     const animate = (now: number) => {
-      const amount = reduced ? 1 : 1 - Math.exp(-Math.min(now - previous, 64) / 70);
+      const amount = reduced ? 1 : 1 - Math.exp(-Math.min(now - previous, 64) / 90);
       previous = now;
       const current = rendered.current;
       const goal = target.current;
+      let settled = true;
       for (const key of ["scale", "x", "y"] as const) {
         current[key] += (goal[key] - current[key]) * amount;
-        if (Math.abs(goal[key] - current[key]) < 0.0001) current[key] = goal[key];
+        const eps = key === "scale" ? 0.0005 : 0.1;
+        if (Math.abs(goal[key] - current[key]) < eps) current[key] = goal[key];
+        else settled = false;
       }
-      if (content.current) content.current.style.transform = `translate(${current.x}px, ${current.y}px) scale(${current.scale})`;
+      if (settled) {
+        el.style.willChange = "auto";
+        el.style.transform = current.scale === 1 && current.x === 0 && current.y === 0
+          ? "none"
+          : `translate(${Math.round(current.x)}px, ${Math.round(current.y)}px) scale(${current.scale})`;
+        return;
+      }
+      el.style.transform = `translate3d(${current.x}px, ${current.y}px, 0) scale(${current.scale})`;
       animation.current = requestAnimationFrame(animate);
     };
     animation.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animation.current);
-  }, []);
+  }, [zoom]);
 
   useEffect(() => {
     const element = wheelFrame;
@@ -149,7 +164,7 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
             onPointerCancel={(e) => pointers.current.delete(e.pointerId)}
             onLostPointerCapture={(e) => pointers.current.delete(e.pointerId)}
           >
-            <div ref={content} className={`absolute inset-0 origin-center will-change-transform${inline ? " pointer-events-none" : ""}`}>{children}</div>
+            <div ref={content} className={`absolute inset-0 origin-center${inline ? " pointer-events-none" : ""}`}>{children}</div>
           </div>
         </div>
     </>
