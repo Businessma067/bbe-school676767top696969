@@ -13,6 +13,8 @@
   height: 100dvh;
   max-width: none;
   transform: none;
+  translate: none;
+  animation: none;
   border-radius: 0;
 }
 .demo-fullscreen-frame {
