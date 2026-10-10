@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { createPortal, flushSync } from "react-dom";
-import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
+import { flushSync } from "react-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";
@@ -11,6 +11,7 @@ import { CourseMockExamDemo } from "@/components/how-it-works/CourseMockExamDemo
 import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
 import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
 import { DesktopDemoViewport } from "@/components/how-it-works/DesktopDemoViewport";
+import { FullscreenDemoViewer } from "@/components/how-it-works/FullscreenDemoViewer";
 
 const WisoHowItWorksDemo = lazy(() =>
   import("@/components/how-it-works/WisoLiveDemos").then((m) => ({ default: m.WisoHowItWorksDemo })),
@@ -354,12 +355,6 @@ function HowItWorksLive({
   return <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
 }
 
-const MIN_ZOOM = 1;
-const MAX_ZOOM = 2.4;
-const ZOOM_STEP = 0.35;
-/** Open the lightbox at native 100% — sharper on large screens than CSS upscaling. */
-const INITIAL_LIGHTBOX_ZOOM = 1;
-
 export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }) {
   const { t } = useLanguage();
   const courseSubjects =
@@ -379,7 +374,6 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   );
   const [tool, setTool] = useState<StudyTool>("flashcards");
   const [zoomed, setZoomed] = useState(false);
-  const [lightboxScale, setLightboxScale] = useState(INITIAL_LIGHTBOX_ZOOM);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -457,7 +451,6 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
 
   const openZoom = () => {
     videoRef.current?.pause();
-    setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
     setZoomed(true);
   };
 
@@ -468,58 +461,21 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
       inline.currentTime = zoomVideo.currentTime;
     }
     setZoomed(false);
-    setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
     if (inline) void inline.play().catch(() => {});
-  };
-
-  const nudgeLightboxZoom = (dir: 1 | -1) => {
-    setLightboxScale((prev) =>
-      Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, +(prev + dir * ZOOM_STEP).toFixed(2))),
-    );
   };
 
   useEffect(() => {
     if (!zoomed) return;
-
     const zoomVideo = zoomVideoRef.current;
     const inline = videoRef.current;
     if (zoomVideo) {
-      if (inline && Number.isFinite(inline.currentTime)) {
-        zoomVideo.currentTime = inline.currentTime;
-      }
+      if (inline && Number.isFinite(inline.currentTime)) zoomVideo.currentTime = inline.currentTime;
       void zoomVideo.play().catch(() => {});
     }
-
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        const z = zoomVideoRef.current;
-        const v = videoRef.current;
-        if (z && v && Number.isFinite(z.currentTime)) v.currentTime = z.currentTime;
-        setZoomed(false);
-        setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
-        if (v) void v.play().catch(() => {});
-      }
-      if (event.key === "+" || event.key === "=") {
-        event.preventDefault();
-        setLightboxScale((prev) => Math.min(MAX_ZOOM, +(prev + ZOOM_STEP).toFixed(2)));
-      }
-      if (event.key === "-" || event.key === "_") {
-        event.preventDefault();
-        setLightboxScale((prev) => Math.max(MIN_ZOOM, +(prev - ZOOM_STEP).toFixed(2)));
-      }
-    };
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", onKey);
-    return () => {
-      document.body.style.overflow = prevOverflow;
-      window.removeEventListener("keydown", onKey);
-    };
   }, [zoomed, slide.key]);
 
   useEffect(() => {
     setZoomed(false);
-    setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
   }, [tab, subject, tool]);
 
   useEffect(() => {
@@ -716,89 +672,26 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
         </div>
       </div>
 
-      {zoomed
-        ? createPortal(
-            <div
-              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/88 p-2 sm:p-4"
-              role="dialog"
-              aria-modal="true"
-              aria-label={`${slide.label} walkthrough zoomed`}
-              onClick={closeZoom}
-            >
-              <div
-                className="relative overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
-                style={{
-                  width: "min(96vw, calc((100dvh - 2.5rem) * 16 / 9))",
-                  aspectRatio: "16 / 9",
-                  maxHeight: "calc(100dvh - 2.5rem)",
-                }}
-                onClick={(event) => event.stopPropagation()}
-              >
-                <div
-                  className="relative h-full w-full overflow-hidden bg-black"
-                  style={{ aspectRatio: "16 / 9" }}
-                >
-                  {liveStage ? (
-                    <DesktopDemoViewport>
-                      <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
-                    </DesktopDemoViewport>
-                  ) : (
-                    <video
-                      key={`zoom-${slide.key}`}
-                      ref={zoomVideoRef}
-                      className="pointer-events-none absolute inset-0 h-full w-full origin-center object-contain"
-                      style={{ transform: `scale(${lightboxScale})` }}
-                      poster={slide.poster}
-                      src={slide.video}
-                      muted
-                      loop
-                      playsInline
-                      autoPlay
-                      preload="metadata"
-                      aria-label={`${slide.label} walkthrough enlarged`}
-                    />
-                  )}
-                </div>
-
-                {!liveStage ? (
-                  <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-black/92 p-1.5 shadow-lg backdrop-blur-sm">
-                    <button
-                      type="button"
-                      onClick={() => nudgeLightboxZoom(-1)}
-                      disabled={lightboxScale <= MIN_ZOOM}
-                      aria-label={t("Zoom out")}
-                      className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
-                    >
-                      <ZoomOut className="h-5 w-5" />
-                    </button>
-                    <span className="min-w-[3.25rem] text-center text-sm font-semibold tabular-nums text-white">
-                      {Math.round(lightboxScale * 100)}%
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => nudgeLightboxZoom(1)}
-                      disabled={lightboxScale >= MAX_ZOOM}
-                      aria-label={t("Zoom in")}
-                      className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
-                    >
-                      <ZoomIn className="h-5 w-5" />
-                    </button>
-                  </div>
-                ) : null}
-
-                <button
-                  type="button"
-                  onClick={closeZoom}
-                  aria-label={t("Close zoom")}
-                  className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-black/92 text-white shadow-md backdrop-blur-sm transition hover:bg-black"
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              </div>
-            </div>,
-            document.body,
-          )
-        : null}
+      {zoomed && (
+        <FullscreenDemoViewer label={`${slide.label} walkthrough zoomed`} onClose={closeZoom}>
+          {liveStage ? (
+            <DesktopDemoViewport>
+              <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
+            </DesktopDemoViewport>
+          ) : (
+            <video
+              key={`zoom-${slide.key}`}
+              ref={zoomVideoRef}
+              className="absolute inset-0 h-full w-full object-contain"
+              poster={slide.poster}
+              src={slide.video}
+              muted loop playsInline autoPlay preload="metadata"
+              aria-label={`${slide.label} walkthrough enlarged`}
+              onLoadedMetadata={(event) => { event.currentTarget.currentTime = videoRef.current?.currentTime ?? 0; }}
+            />
+          )}
+        </FullscreenDemoViewer>
+      )}
     </section>
   );
 }

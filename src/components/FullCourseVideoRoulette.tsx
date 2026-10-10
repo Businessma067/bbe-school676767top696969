@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { ZoomableImage } from "@/components/ZoomableImage";
+import { FullscreenDemoViewer } from "@/components/how-it-works/FullscreenDemoViewer";
 
 export type RouletteSlide =
   | {
@@ -372,29 +373,12 @@ export function FullCourseVideoRoulette({
           );
         })}
       </div>
-      <Dialog open={imageOpen} onOpenChange={(open) => {
+      <Dialog open={imageOpen && slide.kind === "image"} onOpenChange={(open) => {
         setImageOpen(open);
         if (!open) void videoRef.current?.play().catch(() => {});
       }}>
         <DialogContent className="w-[96vw] max-w-none border-border p-3 sm:w-[96vw] sm:max-w-[1600px] sm:p-5">
           <DialogTitle className="sr-only">{slide.label}</DialogTitle>
-          {slide.kind === "video" && (
-            <video
-              key={`enlarged-${slide.key}`}
-              src={slide.video}
-              poster={slide.poster}
-              className="mx-auto aspect-video max-h-[78dvh] w-full object-contain"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-              onLoadedMetadata={(event) => {
-                event.currentTarget.currentTime = videoRef.current?.currentTime ?? 0;
-              }}
-              aria-label={`${slide.label} walkthrough enlarged`}
-            />
-          )}
           {slide.kind === "image" && (
             <ZoomableImage
               key={slide.key}
@@ -405,6 +389,28 @@ export function FullCourseVideoRoulette({
           )}
         </DialogContent>
       </Dialog>
+      {imageOpen && slide.kind === "video" && (
+        <FullscreenDemoViewer label={slide.label} onClose={() => {
+          setImageOpen(false);
+          void videoRef.current?.play().catch(() => {});
+        }}>
+
+            <video
+              key={`enlarged-${slide.key}`}
+              src={slide.video}
+              poster={slide.poster}
+              className="absolute inset-0 h-full w-full object-contain"
+              autoPlay
+              muted
+              loop
+              playsInline
+              onLoadedMetadata={(event) => {
+                event.currentTarget.currentTime = videoRef.current?.currentTime ?? 0;
+              }}
+              aria-label={`${slide.label} walkthrough enlarged`}
+            />
+        </FullscreenDemoViewer>
+      )}
     </div>
   );
 }
