@@ -156,7 +156,7 @@ export function WisoLandingPage() {
           </div>
         </section>
 
-        <Suspense fallback={<div className="min-h-[28rem] bg-background" aria-hidden />}>
+        <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
           <HowItWorksSection track="wiso" />
         </Suspense>
 

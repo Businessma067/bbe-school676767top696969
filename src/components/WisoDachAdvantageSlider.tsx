@@ -324,11 +324,11 @@ function RingMetric({
     <div
       ref={containerRef}
       className={cn(
-        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-4 py-6 text-center sm:px-8 sm:py-12",
         glow && "why-us-glow why-us-pulse",
       )}
     >
-      <div className="relative h-44 w-44">
+      <div className="relative h-32 w-32 sm:h-44 sm:w-44">
         <svg className="h-full w-full -rotate-90" viewBox="0 0 180 180" aria-hidden>
           <circle
             cx="90"

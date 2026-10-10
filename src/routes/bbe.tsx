@@ -132,7 +132,7 @@ export function BbeLandingPage() {
           </div>
         </section>
 
-        <Suspense fallback={<div className="min-h-[28rem] bg-background" aria-hidden />}>
+        <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
           <HowItWorksSection />
         </Suspense>
 
@@ -360,11 +360,11 @@ function RingMetric({
     <div
       ref={containerRef}
       className={cn(
-        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-4 py-6 text-center sm:px-8 sm:py-12",
         glow && "why-us-glow why-us-pulse",
       )}
     >
-      <div className="relative h-44 w-44">
+      <div className="relative h-32 w-32 sm:h-44 sm:w-44">
         <svg className="h-full w-full" viewBox="0 0 180 180">
           <path d={fullCircle} className="fill-white/15" />
           <path d={filledPath} className={cn("ring-animate-fill", "fill-caramel-deep")} />

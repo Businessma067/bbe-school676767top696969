@@ -273,7 +273,7 @@ export function Index() {
 
         <WhyChooseUsSection />
 
-        <Suspense fallback={<div className="min-h-[28rem] bg-background" aria-hidden />}>
+        <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
           <HowItWorksSection />
         </Suspense>
 
@@ -285,7 +285,7 @@ export function Index() {
             backgroundPosition: "center",
           }}
         >
-          <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
               A triple-accredited business school with tuition that stays close to free
             </h2>
@@ -295,7 +295,7 @@ export function Index() {
           </div>
         </section>
 
-        <section className="bg-why-us-bg px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <section className="bg-why-us-bg px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-12">
             <div>
               <h2 className="font-display text-2xl font-semibold text-why-us-fg sm:text-3xl">
@@ -324,7 +324,7 @@ export function Index() {
         </section>
 
         {/* PARENTS — frank audit teaser (shared for BBE & WiSo) */}
-        <section className="relative bg-background px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <section className="relative bg-background px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl">
             <div className="text-center">
               <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -390,7 +390,7 @@ export function Index() {
             backgroundPosition: "center 30%",
           }}
         >
-          <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
               Notes from people who sat the exam
             </h2>
@@ -414,7 +414,7 @@ export function Index() {
 
 function SiteFooter() {
   return (
-    <footer className="border-t border-border bg-card px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <footer className="border-t border-border bg-card px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <p className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">

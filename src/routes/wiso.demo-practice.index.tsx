@@ -78,13 +78,13 @@ export function WisoDemoPractice() {
         }
       />
 
-      <main className="px-6 py-16 lg:px-8 lg:py-24">
+      <main className="px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-wide text-indigo-800 dark:text-indigo-300">
               WiSo · WU Aufnahmeprüfung
             </p>
-            <h1 className="mt-3 font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
+            <h1 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
               Demo Practice
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">

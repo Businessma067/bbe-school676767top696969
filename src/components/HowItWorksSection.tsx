@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal, flushSync } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
@@ -353,6 +353,9 @@ function HowItWorksLive({
   return <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
 }
 
+/** Desktop canvas width. Phones scale this down so the whole walkthrough stays visible. */
+const HIW_CANVAS_W = 1280;
+
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
@@ -382,6 +385,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
+  const mediaRef = useRef<HTMLDivElement | null>(null);
 
   const slides =
     tab === "games"
@@ -521,6 +525,42 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
     setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
   }, [tab, subject, tool]);
 
+  useLayoutEffect(() => {
+    const frame = mediaRef.current;
+    if (!frame) return;
+    const fit = () => {
+      const canvas = frame.querySelector(".hiw-phone-canvas") as HTMLElement | null;
+      if (!canvas) return;
+      if (window.innerWidth >= 640 || zoomed) {
+        canvas.style.transform = "";
+        canvas.style.width = "";
+        canvas.style.height = "";
+        frame.style.height = "";
+        frame.style.aspectRatio = slide.aspect;
+        return;
+      }
+      const scroller = canvas.querySelector(".news-uniq-scroll") as HTMLElement | null;
+      const natural = Math.max(scroller?.scrollHeight ?? 0, canvas.scrollHeight, 640);
+      const scaleToWidth = frame.clientWidth / HIW_CANVAS_W;
+      const maxH = Math.min(window.innerHeight * 0.5, 420);
+      const scale = Math.min(scaleToWidth, maxH / natural);
+      canvas.style.width = `${HIW_CANVAS_W}px`;
+      canvas.style.height = `${natural}px`;
+      canvas.style.transformOrigin = "top left";
+      canvas.style.transform = `scale(${scale})`;
+      frame.style.aspectRatio = "auto";
+      frame.style.height = `${Math.round(natural * scale)}px`;
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(frame);
+    const timer = window.setInterval(fit, 400);
+    return () => {
+      ro.disconnect();
+      window.clearInterval(timer);
+    };
+  }, [slide.aspect, slide.key, zoomed, tab, subject, tool]);
+
   useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
@@ -547,7 +587,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   }, [tab, subject, tool, zoomed]);
 
   return (
-    <section id="how-it-works" className="relative bg-background px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <section id="how-it-works" className="relative bg-background px-3 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-[90rem] text-center">
         <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
           How it works
@@ -607,9 +647,11 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div
-                  className={cn("relative w-full", liveStage && "max-sm:min-h-[32rem]")}
+                  ref={mediaRef}
+                  className="relative w-full overflow-hidden"
                   style={{ aspectRatio: slide.aspect }}
                 >
+                  <div className="hiw-phone-canvas absolute inset-0">
                   {liveStage ? (
                     // One live player at a time: hide the inline demo while the lightbox owns it.
                     !zoomed ? (
@@ -619,7 +661,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+                      className="pointer-events-none absolute inset-0 h-full w-full object-contain sm:object-cover"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -629,6 +671,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                       aria-label={`${slide.label} walkthrough`}
                     />
                   )}
+                  </div>
                   <button
                     type="button"
                     onClick={openZoom}
