@@ -43,6 +43,44 @@ type AdminDb = Awaited<
 
 type AuthUserMeta = { id: string; email: string; created_at: string; phone?: string | null };
 
+const DEMO_PRACTICE_ENROLLMENT = {
+  product_slug: "demo-practice",
+  product_name: "Demo Practice Package",
+  tier: "demo",
+} as const;
+
+/** Give every listed account the free demo package if signup never wrote it. */
+async function grantMissingDemoEnrollments(
+  db: AdminDb,
+  users: { userId: string; createdAt: string }[],
+): Promise<void> {
+  if (users.length === 0) return;
+  const ids = users.map((u) => u.userId);
+  const { data, error } = await db
+    .from("enrollments")
+    .select("user_id")
+    .eq("product_slug", DEMO_PRACTICE_ENROLLMENT.product_slug)
+    .in("user_id", ids);
+  if (error) {
+    console.error("grantMissingDemoEnrollments lookup", error);
+    return;
+  }
+  const owned = new Set((data ?? []).map((row) => row.user_id));
+  const missing = users.filter((u) => !owned.has(u.userId));
+  if (missing.length === 0) return;
+  const { error: upsertError } = await db.from("enrollments").upsert(
+    missing.map((u) => ({
+      user_id: u.userId,
+      product_slug: DEMO_PRACTICE_ENROLLMENT.product_slug,
+      product_name: DEMO_PRACTICE_ENROLLMENT.product_name,
+      tier: DEMO_PRACTICE_ENROLLMENT.tier,
+      created_at: u.createdAt,
+    })),
+    { onConflict: "user_id,product_slug", ignoreDuplicates: true },
+  );
+  if (upsertError) console.error("grantMissingDemoEnrollments", upsertError);
+}
+
 const RPC_MISSING_HINT =
   "В Supabase нет функции admin_list_users. Выполните SQL из supabase/migrations/20260825010000_admin_emails_and_list_users.sql в SQL Editor, либо добавьте SUPABASE_SERVICE_ROLE_KEY в Lovable Cloud / .env.";
 
@@ -201,6 +239,13 @@ export const adminListUsers = createServerFn({ method: "POST" })
         source: "empty",
         hint,
       };
+    }
+
+    if (context.adminUsesServiceRole) {
+      await grantMissingDemoEnrollments(
+        db,
+        authUsers.map((u) => ({ userId: u.id, createdAt: u.created_at })),
+      );
     }
 
     const profilesRes = await db.from("profiles").select("user_id, display_name");
