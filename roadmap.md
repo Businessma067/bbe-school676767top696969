@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Enable magnification of the actual inline demonstration content at the selected point.
+
 - [x] Add fullscreen, rotation, pinch zoom and panning to enlarged How it works demonstrations.
 
 - [x] Fit the complete desktop How it works stage inside every inline and enlarged view, including phones.
