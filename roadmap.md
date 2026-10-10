@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Enable magnification of the actual inline demonstration content at the selected point.
+- [x] Enable magnification of the actual inline demonstration content at the selected point.
 
 - [x] Add fullscreen, rotation, pinch zoom and panning to enlarged How it works demonstrations.
 
