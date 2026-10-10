@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";

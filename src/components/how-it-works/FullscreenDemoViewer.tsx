@@ -23,9 +23,15 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
       await orientation.lock?.("landscape");
     } catch { /* Viewport-sized fallback remains available, including on iOS. */ }
   };
-  useEffect(() => () => {
-    screen.orientation?.unlock?.();
-    if (document.fullscreenElement === root.current) void document.exitFullscreen().catch(() => {});
+  useEffect(() => {
+    const element = root.current;
+    const resize = () => { reset(); pointers.current.clear(); };
+    window.addEventListener("resize", resize);
+    return () => {
+      window.removeEventListener("resize", resize);
+      screen.orientation?.unlock?.();
+      if (document.fullscreenElement === element) void document.exitFullscreen().catch(() => {});
+    };
   }, []);
 
   const clamp = (scale: number, x: number, y: number) => {
@@ -42,7 +48,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
 
   return (
     <Dialog open onOpenChange={(open) => { if (!open) onClose(); }}>
-      <DialogContent ref={root} className="demo-fullscreen-viewer gap-0 border-0 bg-background p-0 text-foreground [&>button]:hidden" aria-describedby={undefined}>
+      <DialogContent ref={root} className="demo-fullscreen-viewer gap-0 border-0 bg-background p-0 text-foreground sm:max-w-none [&>button]:hidden" aria-describedby={undefined}>
         <DialogTitle className="sr-only">{label}</DialogTitle>
         <div className="flex h-14 shrink-0 items-center justify-between gap-1 border-b border-border bg-background px-2">
           <div className="flex items-center gap-1">
