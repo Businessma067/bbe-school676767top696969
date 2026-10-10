@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Make all How it works videos 16:9 with uncropped content and enlarged playback for readability.
+
 - [x] Hybrid BBE + WiSo Course live (hub `/hybrid`, sales `/products/hybrid-course`, €559)
   - Tools: Twin Readiness, Shared-First Planner, Shared Math library (EN/DE), Bridge case library
   - Plan: `docs/hybrid-bbe-wiso-course-plan.md`

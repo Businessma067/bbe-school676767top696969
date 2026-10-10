@@ -33,8 +33,7 @@ export type RouletteSlide =
       aspect: string;
     };
 
-/** Most How-it-works recordings are ~3420×1966 (slightly wider than 16:9). */
-const HIW_WIDE = "3420 / 1966";
+/** Widescreen presentation; keep the native high-resolution recordings uncropped. */
 const HIW_16_9 = "16 / 9";
 const POSTER_ASPECT = "16 / 10";
 
@@ -51,42 +50,42 @@ const BBE_VIDEOS: Omit<Extract<RouletteSlide, { kind: "video" }>, "kind">[] = [
     label: "Math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "english",
     label: "English",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "mock-builder",
     label: "Mock Builder",
     video: "/how-it-works/mock-builder.mp4",
     poster: "/how-it-works/mock-builder-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "flashcards",
     label: "Flashcards",
     video: "/how-it-works/flashcards.mp4",
     poster: "/how-it-works/flashcards-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "matching",
     label: "Matching",
     video: "/how-it-works/matching.mp4",
     poster: "/how-it-works/matching-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "tutor-exam",
     label: "Tutor Exam",
     video: "/how-it-works/tutor-exam.mp4",
     poster: "/how-it-works/tutor-exam-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
 ];
 
@@ -103,35 +102,35 @@ const WISO_VIDEOS: Omit<Extract<RouletteSlide, { kind: "video" }>, "kind">[] = [
     label: "Math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "german",
     label: "German",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "flashcards",
     label: "Flashcards",
     video: "/how-it-works/wiso-flashcards.mp4",
     poster: "/how-it-works/wiso-flashcards-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "matching",
     label: "Matching",
     video: "/how-it-works/wiso-matching.mp4",
     poster: "/how-it-works/wiso-matching-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
   {
     key: "tutor-exam",
     label: "Tutor Exam",
     video: "/how-it-works/wiso-tutor-exam.mp4",
     poster: "/how-it-works/wiso-tutor-exam-poster.jpg",
-    aspect: HIW_WIDE,
+    aspect: HIW_16_9,
   },
 ];
 
@@ -232,7 +231,7 @@ export function FullCourseVideoRoulette({
             "relative min-w-0 flex-1 touch-pan-y overflow-hidden rounded-xl border-2 border-black select-none",
             slide.kind === "video" && "bg-muted",
           )}
-          style={{ aspectRatio: slide.aspect }}
+          style={{ aspectRatio: slide.kind === "video" ? HIW_16_9 : slide.aspect }}
           onTouchStart={(e) => {
             const t = e.touches[0];
             touch.current = { x: t.clientX, y: t.clientY };
@@ -271,6 +270,7 @@ export function FullCourseVideoRoulette({
               </Button>
             </>
           ) : slide.kind === "video" ? (
+            <>
             <video
               key={slide.key}
               ref={videoRef}
@@ -284,6 +284,21 @@ export function FullCourseVideoRoulette({
               draggable={false}
               aria-label={`${slide.label} walkthrough`}
             />
+            <Button
+              type="button"
+              size="icon"
+              variant="outline"
+              className="absolute right-3 top-3 z-10 shadow-sm"
+              aria-label={`Enlarge ${slide.label} video`}
+              title="Enlarge video"
+              onClick={() => {
+                videoRef.current?.pause();
+                setImageOpen(true);
+              }}
+            >
+              <ZoomIn aria-hidden="true" />
+            </Button>
+            </>
           ) : (
             <div className="absolute inset-0 z-20">{live}</div>
           )}
@@ -357,9 +372,29 @@ export function FullCourseVideoRoulette({
           );
         })}
       </div>
-      <Dialog open={imageOpen} onOpenChange={setImageOpen}>
+      <Dialog open={imageOpen} onOpenChange={(open) => {
+        setImageOpen(open);
+        if (!open) void videoRef.current?.play().catch(() => {});
+      }}>
         <DialogContent className="w-[96vw] max-w-none border-border p-3 sm:w-[96vw] sm:max-w-[1600px] sm:p-5">
-          <DialogTitle className="sr-only">{slide.label} image</DialogTitle>
+          <DialogTitle className="sr-only">{slide.label}</DialogTitle>
+          {slide.kind === "video" && (
+            <video
+              key={`enlarged-${slide.key}`}
+              src={slide.video}
+              poster={slide.poster}
+              className="mx-auto aspect-video max-h-[78dvh] w-full object-contain"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              onLoadedMetadata={(event) => {
+                event.currentTarget.currentTime = videoRef.current?.currentTime ?? 0;
+              }}
+              aria-label={`${slide.label} walkthrough enlarged`}
+            />
+          )}
           {slide.kind === "image" && (
             <ZoomableImage
               key={slide.key}

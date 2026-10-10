@@ -21,3 +21,5 @@
 >    production/Lovable preview build. Put shared types in a normal module and
 >    keep browser helpers in a non-`.client` file (or a true client-only island).
 <!-- LOVABLE:END -->
+
+- Present How it works in a shared widescreen aspect with contained native recordings and responsive live demos, including enlarged views; this preserves sharp text without cropping or distorting source media.
