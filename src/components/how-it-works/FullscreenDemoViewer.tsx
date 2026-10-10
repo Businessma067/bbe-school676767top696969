@@ -164,7 +164,7 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
             onPointerCancel={(e) => pointers.current.delete(e.pointerId)}
             onLostPointerCapture={(e) => pointers.current.delete(e.pointerId)}
           >
-            <div ref={content} className={`absolute inset-0 origin-center will-change-transform${inline ? " pointer-events-none" : ""}`}>{children}</div>
+            <div ref={content} className={`absolute inset-0 origin-center${inline ? " pointer-events-none" : ""}`}>{children}</div>
           </div>
         </div>
     </>
