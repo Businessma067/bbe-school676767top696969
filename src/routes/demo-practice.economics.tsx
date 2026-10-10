@@ -390,8 +390,8 @@ function EconomicsTasks() {
                     >
                       <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-baseline justify-between gap-2">
-                          <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
+                        <div className="flex items-start justify-between gap-2">
+                          <span className="line-clamp-2 min-w-0 flex-1 whitespace-normal text-sm font-bold leading-snug text-foreground">{ch.num}. {ch.title}</span>
                           <span className="flex shrink-0 items-center gap-1.5">
                             <UnansweredIndicator count={unanswered} />
                             <span className="text-[10px] font-bold text-muted-foreground">{done}/{total}</span>

@@ -41,7 +41,7 @@ export function CourseFrame({
       ref={stageRef}
       {...(lockCopy ? { "data-no-i18n": true } : null)}
       className={cn(
-        "absolute inset-0",
+        "pointer-events-none absolute inset-0",
         bleed
           ? "bg-background [container-name:exam-stage] [container-type:size] [transform:translateZ(0)]"
           : "bg-paper",

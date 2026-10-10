@@ -542,8 +542,8 @@ export function EconomicsTasksPage({
                           : "Open chapter practice"
                       }
                     >
-                      <div className="flex min-w-0 flex-1 items-center gap-2">
-                        <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
+                      <div className="flex min-w-0 flex-1 items-start gap-2">
+                        <span className="line-clamp-2 min-w-0 flex-1 whitespace-normal text-sm font-bold leading-snug text-foreground">
                           {ch.num}. {ch.title}
                         </span>
                         <UnansweredIndicator count={unanswered} />

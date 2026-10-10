@@ -301,14 +301,16 @@ export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: Hyb
                                 open ? "rotate-0" : "-rotate-90",
                               )}
                             />
-                            <span className="shrink-0 whitespace-nowrap font-display text-sm font-semibold">
-                              {group.heading}
-                            </span>
-                            {group.heading !== group.title ? (
-                              <span className="min-w-0 flex-1 truncate text-xs text-muted-foreground">
-                                {group.title}
+                            <span className="min-w-0 flex-1">
+                              <span className="block font-display text-sm font-semibold leading-snug">
+                                {group.heading}
                               </span>
-                            ) : null}
+                              {group.heading !== group.title ? (
+                                <span className="mt-0.5 line-clamp-2 block whitespace-normal text-xs leading-snug text-muted-foreground">
+                                  {group.title}
+                                </span>
+                              ) : null}
+                            </span>
                             {picked > 0 ? (
                               <span
                                 className="ml-auto shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold"
@@ -348,11 +350,11 @@ export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: Hyb
                                       checked={checked}
                                       onChange={() => toggleRow(row.id)}
                                     />
-                                    <span>
+                                    <span className="min-w-0 flex-1">
                                       <span className="text-sm font-semibold tabular-nums">
                                         {row.id}
                                       </span>
-                                      <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                      <span className="mt-0.5 line-clamp-2 block whitespace-normal text-xs leading-snug text-muted-foreground">
                                         {row.title}
                                         {row.detail ? ` · ${row.detail}` : ""}
                                       </span>

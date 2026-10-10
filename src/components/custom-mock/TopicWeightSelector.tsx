@@ -608,7 +608,7 @@ export function TopicWeightSelector({
           <ul className="space-y-2">
             {topics.map((t) => (
               <li key={t.id} className="flex items-center gap-2">
-                <label className="min-w-0 flex-1 truncate text-xs font-medium text-foreground" htmlFor={`q-${t.id}`}>
+                <label className="line-clamp-2 min-w-0 flex-1 whitespace-normal text-xs font-medium leading-snug text-foreground" htmlFor={`q-${t.id}`}>
                   <span className="tabular-nums text-muted-foreground">{t.id}</span>
                   <span className="text-muted-foreground"> · </span>
                   {t.label.replace(/^\S+\s+/, "")}
@@ -732,7 +732,7 @@ function PreviewList({
       <ul className="mt-2 space-y-1.5">
         {topics.map((t) => (
           <li key={t.id} className="flex items-baseline justify-between gap-3 text-xs">
-            <span className="min-w-0 truncate font-medium text-foreground">
+            <span className="line-clamp-2 min-w-0 whitespace-normal font-medium leading-snug text-foreground">
               <span className="tabular-nums text-muted-foreground">{t.id}</span>{" "}
               <span className="text-muted-foreground">·</span>{" "}
               {t.label.replace(/^\S+\s+/, "")}

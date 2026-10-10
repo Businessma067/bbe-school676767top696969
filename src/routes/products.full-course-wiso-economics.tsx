@@ -387,8 +387,8 @@ function EconomicsTasks() {
                       title="Open Theory Reader for this chapter"
                     >
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-baseline justify-between gap-2">
-                          <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
+                        <div className="flex items-start justify-between gap-2">
+                          <span className="line-clamp-2 min-w-0 flex-1 whitespace-normal text-sm font-bold leading-snug text-foreground">{ch.num}. {ch.title}</span>
                           <span className="shrink-0 text-[10px] font-bold text-muted-foreground">{done}/{total}</span>
                         </div>
                         <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">

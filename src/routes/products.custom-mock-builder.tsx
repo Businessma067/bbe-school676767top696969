@@ -389,14 +389,16 @@ function CustomMockBuilderPage() {
                                 open ? "rotate-0" : "-rotate-90",
                               )}
                             />
-                            <span className="shrink-0 whitespace-nowrap font-display text-sm font-semibold">
-                              {ch.heading}
-                            </span>
-                            {ch.heading !== ch.title && (
-                              <span className="min-w-0 flex-1 truncate text-xs text-muted-foreground">
-                                {ch.title}
+                            <span className="min-w-0 flex-1">
+                              <span className="block font-display text-sm font-semibold leading-snug">
+                                {ch.heading}
                               </span>
-                            )}
+                              {ch.heading !== ch.title ? (
+                                <span className="mt-0.5 line-clamp-2 block whitespace-normal text-xs leading-snug text-muted-foreground">
+                                  {ch.title}
+                                </span>
+                              ) : null}
+                            </span>
                             {selectedInCh > 0 && (
                               <span
                                 className="ml-auto shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold"
@@ -433,11 +435,11 @@ function CustomMockBuilderPage() {
                                       checked={checked}
                                       onChange={() => toggleSubtopic(s.id)}
                                     />
-                                    <span>
+                                    <span className="min-w-0 flex-1">
                                       <span className="text-sm font-semibold tabular-nums">
                                         {s.id}
                                       </span>
-                                      <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                      <span className="mt-0.5 line-clamp-2 block whitespace-normal text-xs leading-snug text-muted-foreground">
                                         {s.title}
                                       </span>
                                     </span>

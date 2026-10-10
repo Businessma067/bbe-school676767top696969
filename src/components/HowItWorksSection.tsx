@@ -619,7 +619,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-cover"
+                      className="pointer-events-none absolute inset-0 h-full w-full object-cover"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -728,7 +728,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                     <video
                       key={`zoom-${slide.key}`}
                       ref={zoomVideoRef}
-                      className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
+                      className="pointer-events-none absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
                       style={{
                         width: `${lightboxScale * 100}%`,
                         height: `${lightboxScale * 100}%`,
