@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { Expand, RotateCw, Scan, X, ZoomIn, ZoomOut } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,10 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
   const root = useRef<HTMLDivElement | null>(null);
   const frame = useRef<HTMLDivElement | null>(null);
   const [wheelFrame, setWheelFrame] = useState<HTMLDivElement | null>(null);
+  const attachFrame = useCallback((element: HTMLDivElement | null) => {
+    frame.current = element;
+    setWheelFrame(element);
+  }, []);
   const content = useRef<HTMLDivElement | null>(null);
   const target = useRef({ scale: 1, x: 0, y: 0 });
   const rendered = useRef({ scale: 1, x: 0, y: 0 });
@@ -110,7 +114,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
           </div>
         </div>
         <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
-          <div ref={(element) => { frame.current = element; setWheelFrame(element); }} className={`demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
+          <div ref={attachFrame} className={`demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
             onDoubleClick={(e) => setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY)))}
             onPointerDown={(e) => {
               if (e.pointerType === "mouse" && zoom.scale === 1) return;
