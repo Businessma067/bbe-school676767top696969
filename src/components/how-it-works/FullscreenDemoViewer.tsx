@@ -48,7 +48,7 @@ export function FullscreenDemoViewer({ children, label, onClose }: {
 
   return (
     <Dialog open onOpenChange={(open) => { if (!open) onClose(); }}>
-      <DialogContent ref={root} className="demo-fullscreen-viewer gap-0 border-0 bg-background p-0 text-foreground sm:max-w-none [&>button]:hidden" aria-describedby={undefined}>
+      <DialogContent ref={root} className="demo-fullscreen-viewer left-0 top-0 flex translate-x-0 translate-y-0 gap-0 border-0 bg-background p-0 text-foreground sm:max-w-none sm:rounded-none [&>button]:hidden" aria-describedby={undefined}>
         <DialogTitle className="sr-only">{label}</DialogTitle>
         <div className="flex h-14 shrink-0 items-center justify-between gap-1 border-b border-border bg-background px-2">
           <div className="flex items-center gap-1">
