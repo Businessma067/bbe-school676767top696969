@@ -12,8 +12,8 @@ export function DesktopDemoViewport({ children }: { children: ReactNode }) {
     const fit = () => {
       const scale = Math.min(frame.clientWidth / 1280, frame.clientHeight / 720);
       desktop.style.transform = `scale(${scale})`;
-      desktop.style.left = `${(frame.clientWidth - 1280 * scale) / 2}px`;
-      desktop.style.top = `${(frame.clientHeight - 720 * scale) / 2}px`;
+      desktop.style.left = `${Math.round((frame.clientWidth - 1280 * scale) / 2)}px`;
+      desktop.style.top = `${Math.round((frame.clientHeight - 720 * scale) / 2)}px`;
     };
     fit();
     const observer = new ResizeObserver(fit);
