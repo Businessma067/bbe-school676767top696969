@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Remove cursor-follow stutter and unify smooth zoom/pan across demonstrations.
+- [x] Remove cursor-follow stutter and unify smooth zoom/pan across demonstrations.
 
 - [x] Enable magnification of the actual inline demonstration content at the selected point.
 
