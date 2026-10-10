@@ -562,11 +562,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                 <ChevronRight className="h-5 w-5" />
               </button>
               <div className="relative overflow-hidden rounded-xl border border-border bg-muted">
-                <div
-                  className="relative w-full overflow-hidden"
-                  style={{ aspectRatio: slide.aspect }}
-                >
-                  <div className="absolute inset-0">
+                <FullscreenDemoViewer key={`${tab}-${slide.key}`} inline label={`${slide.label} inline walkthrough`} onClose={() => {}} onEnlarge={openZoom}>
                   {liveStage ? (
                     // One live player at a time: hide the inline demo while the lightbox owns it.
                     !zoomed ? (
@@ -588,26 +584,7 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                       aria-label={`${slide.label} walkthrough`}
                     />
                   )}
-                  </div>
-                  <button
-                    type="button"
-                    onClick={openZoom}
-                    aria-label={t("Zoom in")}
-                    className="absolute bottom-3 right-3 z-10 hidden items-center gap-2 rounded-md border border-white/40 bg-black/95 px-5 py-3 text-base font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:inline-flex"
-                  >
-                    <ZoomIn className="h-6 w-6" />
-                    Zoom in
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  onClick={openZoom}
-                  aria-label={t("Zoom in")}
-                  className="flex w-full items-center justify-center gap-1.5 border-t border-border bg-foreground px-3 py-2.5 text-xs font-semibold text-background sm:hidden"
-                >
-                  <ZoomIn className="h-4 w-4" />
-                  Zoom in
-                </button>
+                </FullscreenDemoViewer>
               </div>
             </div>
 
