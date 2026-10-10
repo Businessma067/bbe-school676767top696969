@@ -15,10 +15,11 @@ const BITE_PATHS = new Set(["/", "/bbe", "/wiso", "/hybrid"]);
 const linkClass =
   "mt-2 inline-flex items-center justify-center rounded-md bg-foreground px-3 py-1.5 text-xs font-semibold text-background transition-colors hover:bg-foreground/90 focus:outline-none focus:ring-2 focus:ring-ring";
 
-function readDismissed(key: string): boolean {
+function readDismissed(key: string, persistent = false): boolean {
   if (typeof window === "undefined") return false;
   try {
-    return sessionStorage.getItem(key) === "1";
+    const store = persistent ? localStorage : sessionStorage;
+    return store.getItem(key) === "1";
   } catch {
     return false;
   }
@@ -126,7 +127,7 @@ export function SignupBite() {
   const [buyReady, setBuyReady] = useState(false);
   const epochSeen = useRef<number | null>(null);
 
-  const signupDismissed = signupClosed || readDismissed(SIGNUP_DISMISS_KEY);
+  const signupDismissed = signupClosed || readDismissed(SIGNUP_DISMISS_KEY, true);
   const buyDismissed = buyClosed || readDismissed(BUY_DISMISS_KEY);
   const signedIn = access.ready && access.signedIn;
   const ownsCourse = buyReady && signedIn && ownsPageCourse(path, access);
@@ -182,7 +183,8 @@ export function SignupBite() {
   const dismiss = () => {
     const key = signedIn ? BUY_DISMISS_KEY : SIGNUP_DISMISS_KEY;
     try {
-      sessionStorage.setItem(key, "1");
+      const store = signedIn ? sessionStorage : localStorage;
+      store.setItem(key, "1");
     } catch {
       /* ignore */
     }
