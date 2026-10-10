@@ -12,6 +12,7 @@ import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
+import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import {
   PracticeChaptersOpenButton,
   PracticeChaptersShell,
@@ -42,7 +43,6 @@ import {
 } from "@/components/UnansweredIndicator";
 import {
   MATH_CHAPTERS,
-  demoMathLockDistance,
   isDemoMathTaskLocked,
   lastUnlockedDemoMathIndex,
   loadMathChapterTasks,
@@ -762,15 +762,13 @@ export function MathTasksPage({
                                     </button>
                                     <Collapse open={subOpen}>
                                       <ul className="pb-1">
-                                        {subTasks.map(({ c, i }, localI) => {
+                                        {takeVisibleTasks(subTasks, ({ i }) =>
+                                          isLocked(tier, ch.num, i, list),
+                                        ).map(({ item: { c, i }, index: localI, locked, lockedPos }) => {
                                           const passed = progress.passed.includes(c.id);
                                           const rev = progress.revision.includes(c.id);
                                           const active =
                                             isActiveCh && activeList[activeIdx]?.id === c.id;
-                                          const locked = isLocked(tier, ch.num, i, list);
-                                          const lockedPos = locked
-                                            ? demoMathLockDistance(ch.num, i, list)
-                                            : -1;
                                           const lockedOpacity = locked
                                             ? Math.max(
                                                 0.15,
@@ -857,14 +855,12 @@ export function MathTasksPage({
                                   </li>
                                 );
                               })
-                            : list.map((c, i) => {
+                            : takeVisibleTasks(list, (_task, i) =>
+                                isLocked(tier, ch.num, i, list),
+                              ).map(({ item: c, index: i, locked, lockedPos }) => {
                                 const passed = progress.passed.includes(c.id);
                                 const rev = progress.revision.includes(c.id);
                                 const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                                const locked = isLocked(tier, ch.num, i, list);
-                                const lockedPos = locked
-                                  ? demoMathLockDistance(ch.num, i, list)
-                                  : -1;
                                 const lockedOpacity = locked
                                   ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                                   : undefined;
@@ -936,7 +932,14 @@ export function MathTasksPage({
                                 );
                               })}
                           {!ch.subsections?.length &&
-                            Array.from({ length: phantomCountFor(tier) }).map((_, p) => {
+                            Array.from({
+                              length: remainingPhantomLocks(
+                                takeVisibleTasks(list, (_task, i) =>
+                                  isLocked(tier, ch.num, i, list),
+                                ).filter((row) => row.locked).length,
+                                phantomCountFor(tier),
+                              ),
+                            }).map((_, p) => {
                               const num = list.length + p + 1;
                               const opacity = Math.max(0.08, 0.45 - p * 0.15);
                               return (

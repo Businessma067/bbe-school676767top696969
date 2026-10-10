@@ -23,6 +23,7 @@ import {
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import { Collapse } from "@/components/Collapse";
 import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
 import {
@@ -653,15 +654,13 @@ export function EnglishTasksPage({
                                       </button>
                                       <Collapse open={subOpen}>
                                         <ul className="pb-1">
-                                          {subTasks.map(({ c, i }, localI) => {
+                                          {takeVisibleTasks(subTasks, ({ i }) =>
+                                            isLocked(tier, i, list, demoSubsectionFree),
+                                          ).map(({ item: { c, i }, index: localI, locked, lockedPos }) => {
                                             const passed = progress.passed.includes(c.id);
                                             const rev = progress.revision.includes(c.id);
                                             const active =
                                               isActiveCh && activeList[activeIdx]?.id === c.id;
-                                            const locked = isLocked(tier, i, list, demoSubsectionFree);
-                                            const lockedPos = locked
-                                              ? lockDistance(tier, i, list, demoSubsectionFree)
-                                              : -1;
                                             const lockedOpacity = locked
                                               ? Math.max(
                                                   0.15,
@@ -751,12 +750,13 @@ export function EnglishTasksPage({
                                     </li>
                                   );
                                 })
-                              : list.map((c, i) => {
+                              : takeVisibleTasks(list, (_task, i) =>
+                                  isLocked(tier, i, list, demoSubsectionFree),
+                                ).map(({ item: c, index: i, locked }) => {
                                   const passed = progress.passed.includes(c.id);
                                   const rev = progress.revision.includes(c.id);
                                   const active =
                                     isActiveCh && activeList[activeIdx]?.id === c.id;
-                                  const locked = isLocked(tier, i, list, demoSubsectionFree);
                                   return (
                                     <li key={c.id}>
                                       <button

@@ -33,6 +33,7 @@ import {
   countUnansweredTasks,
 } from "@/components/UnansweredIndicator";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
 import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
 import {
@@ -513,6 +514,11 @@ export function EconomicsTasksPage({
                       progress,
                     )
                   : 0;
+                const visibleTasks = takeVisibleTasks(list, (_task, i) => isLocked(ch.num, i));
+                const phantomSlots = remainingPhantomLocks(
+                  visibleTasks.filter((row) => row.locked).length,
+                  phantomCountFor(ch.num),
+                );
                 return (
                   <li key={ch.num} className={cn(
                     "overflow-hidden rounded-xl border transition-colors",
@@ -572,12 +578,10 @@ export function EconomicsTasksPage({
                         {list.length === 0 && (
                           <li className="px-4 py-2 text-[11px] text-muted-foreground">No cases yet.</li>
                         )}
-                        {list.map((c, i) => {
+                        {visibleTasks.map(({ item: c, index: i, locked, lockedPos }) => {
                           const passed = progress.passed.includes(c.id);
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                          const locked = isLocked(ch.num, i);
-                          const lockedPos = locked ? i - freeLimitOf(ch.num) : -1;
                           // Fade text toward invisibility as tasks get deeper into locked territory
                           const lockedOpacity = locked
                             ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
@@ -630,7 +634,7 @@ export function EconomicsTasksPage({
 
 
                         })}
-                        {Array.from({ length: phantomCountFor(ch.num) }).map((_, p) => {
+                        {Array.from({ length: phantomSlots }).map((_, p) => {
                           const num = list.length + p + 1;
                           const opacity = Math.max(0.08, 0.45 - p * 0.15);
                           return (

@@ -14,6 +14,7 @@ import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
 import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
+import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
@@ -378,6 +379,11 @@ function EconomicsTasks() {
                   })),
                   progress,
                 );
+                const visibleTasks = takeVisibleTasks(list, (_task, i) => isLocked(ch.num, i));
+                const phantomSlots = remainingPhantomLocks(
+                  visibleTasks.filter((row) => row.locked).length,
+                  phantomCountFor(ch.num),
+                );
                 return (
                   <li key={ch.num} className={cn(
                     "rounded-xl border transition-colors",
@@ -423,12 +429,10 @@ function EconomicsTasks() {
                         {list.length === 0 && (
                           <li className="px-4 py-2 text-[11px] text-muted-foreground">No cases yet.</li>
                         )}
-                        {list.map((c, i) => {
+                        {visibleTasks.map(({ item: c, index: i, locked, lockedPos }) => {
                           const passed = progress.passed.includes(c.id);
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                          const locked = isLocked(ch.num, i);
-                          const lockedPos = locked ? i - freeLimitOf(ch.num) : -1;
                           // Fade text toward invisibility as tasks get deeper into locked territory
                           const lockedOpacity = locked
                             ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
@@ -480,7 +484,7 @@ function EconomicsTasks() {
 
 
                         })}
-                        {Array.from({ length: phantomCountFor(ch.num) }).map((_, p) => {
+                        {Array.from({ length: phantomSlots }).map((_, p) => {
                           const num = list.length + p + 1;
                           const opacity = Math.max(0.08, 0.45 - p * 0.15);
                           return (
