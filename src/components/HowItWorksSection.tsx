@@ -10,6 +10,7 @@ import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
 import { CourseMockExamDemo } from "@/components/how-it-works/CourseMockExamDemo";
 import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
 import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
+import { DesktopDemoViewport } from "@/components/how-it-works/DesktopDemoViewport";
 
 const WisoHowItWorksDemo = lazy(() =>
   import("@/components/how-it-works/WisoLiveDemos").then((m) => ({ default: m.WisoHowItWorksDemo })),
@@ -613,7 +614,9 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   {liveStage ? (
                     // One live player at a time: hide the inline demo while the lightbox owns it.
                     !zoomed ? (
-                      <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
+                       <DesktopDemoViewport>
+                         <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
+                       </DesktopDemoViewport>
                     ) : null
                   ) : (
                     <video
@@ -736,9 +739,9 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
                   style={{ aspectRatio: "16 / 9" }}
                 >
                   {liveStage ? (
-                    <div className="absolute inset-0">
+                    <DesktopDemoViewport>
                       <HowItWorksLive key={slide.key} track={track} tab={tab} slideKey={slide.key} />
-                    </div>
+                    </DesktopDemoViewport>
                   ) : (
                     <video
                       key={`zoom-${slide.key}`}

@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Fit the complete desktop How it works stage inside every inline and enlarged view, including phones.
+
 - [x] Make all How it works videos 16:9 with uncropped content and enlarged playback for readability.
 
 - [x] Hybrid BBE + WiSo Course live (hub `/hybrid`, sales `/products/hybrid-course`, €559)
