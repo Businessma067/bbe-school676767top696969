@@ -24,3 +24,4 @@
 
 - Present How it works in a shared widescreen aspect with contained native recordings and fixed desktop live stages scaled as a whole in inline and enlarged views; this prevents mobile reflow from cropping the demonstration.
 - Use the shared demo viewer for inline and fullscreen How it works media with frame-rate-independent smoothing, cursor/pinch-anchored zoom and bounded panning of the whole stage; this magnifies the actual content while preserving desktop layout and avoiding anchor drift.
+- Keep demo pan targets in refs and update transforms through one uninterrupted animation loop; pointer movement must not rerender live demonstrations or restart frame timing.

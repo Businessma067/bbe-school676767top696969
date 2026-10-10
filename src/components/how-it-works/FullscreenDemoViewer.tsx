@@ -27,15 +27,22 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
   const [zoom, setZoom] = useState({ scale: 1, x: 0, y: 0 });
   const [rotated, setRotated] = useState(false);
 
-  target.current = zoom;
+  const wakeAnimation = useRef<() => void>(() => {});
+  const updateZoom = (update: typeof zoom | ((current: typeof zoom) => typeof zoom)) => {
+    const previous = target.current;
+    const next = typeof update === "function" ? update(previous) : update;
+    target.current = next;
+    // Panning never re-renders the complete live demonstration or restarts its animation.
+    if (next.scale !== previous.scale) setZoom(next);
+    wakeAnimation.current();
+  };
   // Animate only while moving; when settled drop the GPU layer so text re-rasterizes crisp at the final scale.
   useEffect(() => {
     const el = content.current;
     if (!el) return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let previous = performance.now();
-    cancelAnimationFrame(animation.current);
-    el.style.willChange = "transform";
+    animation.current = 0;
     const animate = (now: number) => {
       const amount = reduced ? 1 : 1 - Math.exp(-Math.min(now - previous, 64) / 90);
       previous = now;
@@ -49,6 +56,7 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
         else settled = false;
       }
       if (settled) {
+        animation.current = 0;
         el.style.willChange = "auto";
         el.style.transform = current.scale === 1 && current.x === 0 && current.y === 0
           ? "none"
@@ -58,9 +66,19 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
       el.style.transform = `translate3d(${current.x}px, ${current.y}px, 0) scale(${current.scale})`;
       animation.current = requestAnimationFrame(animate);
     };
-    animation.current = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animation.current);
-  }, [zoom]);
+    wakeAnimation.current = () => {
+      if (animation.current) return;
+      previous = performance.now();
+      el.style.willChange = "transform";
+      animation.current = requestAnimationFrame(animate);
+    };
+    wakeAnimation.current();
+    return () => {
+      cancelAnimationFrame(animation.current);
+      animation.current = 0;
+      wakeAnimation.current = () => {};
+    };
+  }, []);
 
   useEffect(() => {
     const element = wheelFrame;
@@ -69,13 +87,13 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
       event.preventDefault();
       const anchor = point(event.clientX, event.clientY);
       const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? element.clientHeight : 1);
-      setZoom((z) => zoomAt(z, z.scale * Math.exp(-delta * 0.002), anchor));
+      updateZoom((z) => zoomAt(z, z.scale * Math.exp(-delta * 0.002), anchor));
     };
     element.addEventListener("wheel", wheel, { passive: false });
     return () => element.removeEventListener("wheel", wheel);
   }, [rotated, wheelFrame]);
 
-  const reset = () => setZoom({ scale: 1, x: 0, y: 0 });
+  const reset = () => updateZoom({ scale: 1, x: 0, y: 0 });
   const fullscreen = async () => {
     try {
       await root.current?.requestFullscreen();
@@ -118,9 +136,9 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
     <>
         <div className="flex h-14 shrink-0 items-center justify-between gap-1 border-b border-border bg-background px-2">
           <div className="flex items-center gap-1">
-            <Button variant="ghost" size="icon" title="Zoom out" aria-label="Zoom out" disabled={zoom.scale <= 1} onClick={() => setZoom((z) => clamp(z.scale - 0.5, z.x, z.y))}><ZoomOut /></Button>
+            <Button variant="ghost" size="icon" title="Zoom out" aria-label="Zoom out" disabled={zoom.scale <= 1} onClick={() => updateZoom((z) => clamp(z.scale - 0.5, z.x, z.y))}><ZoomOut /></Button>
             <span className="w-12 text-center text-xs tabular-nums">{Math.round(zoom.scale * 100)}%</span>
-            <Button variant="ghost" size="icon" title="Zoom in" aria-label="Zoom in" disabled={zoom.scale >= 4} onClick={() => setZoom((z) => clamp(z.scale + 0.5, z.x, z.y))}><ZoomIn /></Button>
+            <Button variant="ghost" size="icon" title="Zoom in" aria-label="Zoom in" disabled={zoom.scale >= 4} onClick={() => updateZoom((z) => clamp(z.scale + 0.5, z.x, z.y))}><ZoomIn /></Button>
             <Button variant="ghost" size="icon" title="Fit entire screen" aria-label="Fit entire screen" onClick={reset}><Scan /></Button>
           </div>
           <div className="flex items-center gap-1">
@@ -131,8 +149,8 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
         </div>
         <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
           <div ref={attachFrame} className={inline ? "relative aspect-video w-full overflow-hidden touch-none" : `demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
-            onClick={(e) => { if (inline && !moved.current) setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY))); }}
-            onDoubleClick={(e) => { if (!inline) setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY))); }}
+            onClick={(e) => { if (inline && !moved.current) updateZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY))); }}
+            onDoubleClick={(e) => { if (!inline) updateZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY))); }}
             onPointerDown={(e) => {
               moved.current = false;
               if (e.pointerType === "mouse" && zoom.scale === 1) return;
@@ -144,7 +162,7 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
               if (!previous) {
                 if (inline && e.pointerType === "mouse" && zoom.scale > 1) {
                   const anchor = point(e.clientX, e.clientY);
-                  setZoom((z) => clamp(z.scale, -anchor.x * (z.scale - 1), -anchor.y * (z.scale - 1)));
+                  updateZoom((z) => clamp(z.scale, -anchor.x * (z.scale - 1), -anchor.y * (z.scale - 1)));
                 }
                 return;
               }
@@ -154,10 +172,10 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
               if (other) {
                 const before = Math.hypot(previous.x - other.x, previous.y - other.y);
                 const after = Math.hypot(next.x - other.x, next.y - other.y);
-                if (before > 0) setZoom((z) => zoomAt(z, z.scale * after / before,
+                if (before > 0) updateZoom((z) => zoomAt(z, z.scale * after / before,
                   { x: (previous.x + other.x) / 2, y: (previous.y + other.y) / 2 },
                   { x: (next.x + other.x) / 2, y: (next.y + other.y) / 2 }));
-              } else setZoom((z) => clamp(z.scale, z.x + next.x - previous.x, z.y + next.y - previous.y));
+              } else updateZoom((z) => clamp(z.scale, z.x + next.x - previous.x, z.y + next.y - previous.y));
               pointers.current.set(e.pointerId, next);
             }}
             onPointerUp={(e) => pointers.current.delete(e.pointerId)}
