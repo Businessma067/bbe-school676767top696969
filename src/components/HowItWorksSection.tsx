@@ -33,7 +33,7 @@ type ShowcaseSlide = {
   href: string;
   video: string;
   poster: string;
-  /** CSS aspect-ratio for a perfect edge-to-edge fit (no letterbox / crop). */
+  /** Shared widescreen stage; recordings use contain to preserve the full interface. */
   aspect: string;
 };
 
@@ -57,7 +57,7 @@ const BBE_THEORY: ShowcaseSlide[] = [
     href: "/products/full-course-math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -71,7 +71,7 @@ const BBE_MOCK_EXAMS: ShowcaseSlide[] = [
     href: "/mock-exams",
     video: "/how-it-works/mock-builder.mp4",
     poster: "/how-it-works/mock-builder-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -85,7 +85,7 @@ const BBE_MOCK_BUILDER: ShowcaseSlide[] = [
     href: "/products/custom-mock-builder",
     video: "/how-it-works/mock-builder.mp4",
     poster: "/how-it-works/mock-builder-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -110,7 +110,7 @@ const BBE_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "english",
@@ -121,7 +121,7 @@ const BBE_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/english",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -135,7 +135,7 @@ const WISO_THEORY: ShowcaseSlide[] = [
     href: "/wiso/products/full-course-math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -149,7 +149,7 @@ const WISO_MOCK_EXAMS: ShowcaseSlide[] = [
     href: "/wiso/mock-exams",
     video: "/how-it-works/mock-builder.mp4",
     poster: "/how-it-works/mock-builder-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -163,7 +163,7 @@ const WISO_MOCK_BUILDER: ShowcaseSlide[] = [
     href: "/wiso/mock-builder",
     video: "/how-it-works/mock-builder.mp4",
     poster: "/how-it-works/mock-builder-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -188,7 +188,7 @@ const WISO_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/wiso/demo-practice/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "german",
@@ -199,7 +199,7 @@ const WISO_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/wiso/demo-practice/german",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -213,7 +213,7 @@ const BBE_STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/flashcards",
     video: "/how-it-works/flashcards.mp4",
     poster: "/how-it-works/flashcards-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "matching",
@@ -224,7 +224,7 @@ const BBE_STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/matching",
     video: "/how-it-works/matching.mp4",
     poster: "/how-it-works/matching-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "tutor-exam",
@@ -235,7 +235,7 @@ const BBE_STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/tutor-exam",
     video: "/how-it-works/tutor-exam.mp4",
     poster: "/how-it-works/tutor-exam-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -260,7 +260,7 @@ const HYBRID_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/hybrid/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "english",
@@ -271,7 +271,7 @@ const HYBRID_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/hybrid/course",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "german",
@@ -282,7 +282,7 @@ const HYBRID_COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/hybrid/course",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -296,7 +296,7 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/wiso/flashcards",
     video: "/how-it-works/wiso-flashcards.mp4",
     poster: "/how-it-works/wiso-flashcards-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "matching",
@@ -307,7 +307,7 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/wiso/matching",
     video: "/how-it-works/wiso-matching.mp4",
     poster: "/how-it-works/wiso-matching-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
   {
     key: "tutor-exam",
@@ -318,7 +318,7 @@ const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/wiso/tutor-exam",
     video: "/how-it-works/wiso-tutor-exam.mp4",
     poster: "/how-it-works/wiso-tutor-exam-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "16 / 9",
   },
 ];
 
@@ -724,19 +724,16 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
             >
               <div
                 className="relative overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
-                style={
-                  liveStage
-                    ? { width: "min(96vw, 1100px)", height: "min(92dvh, 860px)" }
-                    : {
-                        width: `min(96vw, calc((100dvh - 2.5rem) * (${slide.aspect})))`,
-                        maxHeight: "calc(100dvh - 2.5rem)",
-                      }
-                }
+                style={{
+                  width: "min(96vw, calc((100dvh - 2.5rem) * 16 / 9))",
+                  aspectRatio: "16 / 9",
+                  maxHeight: "calc(100dvh - 2.5rem)",
+                }}
                 onClick={(event) => event.stopPropagation()}
               >
                 <div
                   className="relative h-full w-full overflow-hidden bg-black"
-                  style={liveStage ? undefined : { aspectRatio: slide.aspect }}
+                  style={{ aspectRatio: "16 / 9" }}
                 >
                   {liveStage ? (
                     <div className="absolute inset-0">
