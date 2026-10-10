@@ -102,6 +102,8 @@ type Props = {
   subjectLabel?: string;
   /** UI language — WiSo builder uses German. */
   locale?: UiLocale;
+  /** Scripted demo already interpolates every frame; do not add competing CSS easing. */
+  animated?: boolean;
 };
 
 function toSvg(p: Vec2): Vec2 {
@@ -157,6 +159,7 @@ export function TopicWeightSelector({
   accent = DEFAULT_ACCENT,
   subjectLabel = "Economics",
   locale = "en",
+  animated = false,
 }: Props) {
   const copy = weightCopy(locale);
   const accentSoft = softFromAccent(accent);
@@ -447,7 +450,7 @@ export function TopicWeightSelector({
                 strokeWidth={0.9 + w * 2.4}
                 strokeOpacity={0.14 + w * 0.55}
                 style={{
-                  transition: draggingUi
+                  transition: draggingUi || animated
                     ? "none"
                     : "stroke-opacity 180ms ease, stroke-width 180ms ease",
                 }}
@@ -485,7 +488,7 @@ export function TopicWeightSelector({
                   stroke="#FFF9F2"
                   strokeWidth={1.4}
                   style={{
-                    transition: draggingUi ? "none" : "r 180ms ease, fill-opacity 180ms ease",
+                    transition: draggingUi || animated ? "none" : "r 180ms ease, fill-opacity 180ms ease",
                   }}
                 />
                 <text
@@ -499,7 +502,7 @@ export function TopicWeightSelector({
                     fontWeight: 700,
                     fill: "#2A2118",
                     opacity: 0.5 + w * 0.5,
-                    transition: draggingUi ? "none" : "opacity 180ms ease",
+                    transition: draggingUi || animated ? "none" : "opacity 180ms ease",
                   }}
                 >
                   {label}
@@ -514,7 +517,7 @@ export function TopicWeightSelector({
                     fontWeight: 700,
                     fill: accent,
                     opacity: 0.6 + w * 0.4,
-                    transition: draggingUi ? "none" : "opacity 180ms ease",
+                    transition: draggingUi || animated ? "none" : "opacity 180ms ease",
                   }}
                 >
                   {pct}%
@@ -534,7 +537,7 @@ export function TopicWeightSelector({
             filter={`url(#${gid}-soft)`}
             style={{
               cursor: "grab",
-              transition: draggingUi ? "none" : "r 160ms ease",
+              transition: draggingUi || animated ? "none" : "r 160ms ease",
             }}
             onPointerDown={onPointerDown}
             onPointerMove={onPointerMove}

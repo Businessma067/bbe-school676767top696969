@@ -175,17 +175,27 @@ export function CourseMockDemo({
       ];
       await api.moveTo('[data-d="weight"] [data-weight-handle]', DWELL);
       await api.click();
+      const weightSvg = api.stage()?.querySelector<SVGSVGElement>('[data-d="weight"] svg');
       let from = balancedPoint();
       for (const point of path) {
         if (api.cancelled()) return;
         const start = from;
         const dist = Math.hypot(point.x - start.x, point.y - start.y);
         await api.tween(260 + dist * 240, (eased) => {
-          setWeightPoint({
+          // Read geometry before changing SVG attributes, not after a dirty React commit.
+          const stageBox = api.stage()?.getBoundingClientRect();
+          const svgBox = weightSvg?.getBoundingClientRect();
+          const next = {
             x: start.x + (point.x - start.x) * eased,
             y: start.y + (point.y - start.y) * eased,
-          });
-          api.snapTo('[data-d="weight"] [data-weight-handle]');
+          };
+          if (stageBox && svgBox) {
+            api.setCursorAt({
+              x: svgBox.left - stageBox.left + (120 + next.x * 102) / 240 * svgBox.width,
+              y: svgBox.top - stageBox.top + (120 + next.y * 102) / 240 * svgBox.height,
+            });
+          }
+          setWeightPoint(next);
         });
         from = point;
         await api.wait(90);
@@ -411,6 +421,7 @@ export function CourseMockDemo({
 
             <div data-d="weight" className="min-w-0">
               <TopicWeightSelector
+                animated
                 topics={weightTopics}
                 questionCount={questionCount}
                 point={weightPoint}
