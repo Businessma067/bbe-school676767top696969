@@ -34,7 +34,7 @@ export const Route = createFileRoute("/signup-complete")({
 
 /**
  * Google Ads conversion landing — only reachable right after a successful signup.
- * Then continues to the page where signup started (demo course, free mock, etc.).
+ * Every signup then opens the BBE demo. WiSo demo is a switch on that page.
  */
 function SignupCompletePage() {
   const navigate = useLocalizedNavigate();
