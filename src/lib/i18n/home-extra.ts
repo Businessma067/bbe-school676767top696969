@@ -172,6 +172,11 @@ export const homeExtraDe: Record<string, string> = {
   "Register now and get 100+ free tasks":
     "Registriere dich jetzt und hol dir 100+ kostenlose Aufgaben",
   "Register now": "Jetzt registrieren",
+  "BBE demo": "BBE-Demo",
+  "WiSo demo": "WiSo-Demo",
+  "Start the demo →": "Demo starten →",
+  "Your BBE School account is confirmed. Taking you to the free demo…":
+    "Dein BBE-School-Konto ist bestätigt. Du wirst zum kostenlosen Demo weitergeleitet…",
   "Free tasks get you in. The full course is where the mocks and the mock builder are.":
     "Die kostenlosen Aufgaben holen dich rein. Die Mocks und der Mock Builder sind im vollen Kurs.",
   "See the full course": "Zum vollen Kurs",
@@ -360,6 +365,11 @@ export const homeExtraUk: Record<string, string> = {
 
   "Register now and get 100+ free tasks": "Реєструйся зараз і отримай 100+ безкоштовних завдань",
   "Register now": "Зареєструйся",
+  "BBE demo": "Демо BBE",
+  "WiSo demo": "Демо WiSo",
+  "Start the demo →": "Почати демо →",
+  "Your BBE School account is confirmed. Taking you to the free demo…":
+    "Акаунт BBE School підтверджено. Зараз відкриється безкоштовне демо…",
   "Free tasks get you in. The full course is where the mocks and the mock builder are.":
     "Безкоштовні завдання дають тобі увійти. Моки і mock builder — у повному курсі.",
   "See the full course": "Переглянути повний курс",

@@ -5,6 +5,7 @@ import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { DemoStudyToolsSection } from "@/components/study-modes/DemoStudyToolsSection";
+import { DemoTrackSwitch } from "@/components/DemoTrackSwitch";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -82,6 +83,7 @@ export function DemoPractice() {
             <p className="mt-4 text-lg text-muted-foreground">
               Choose a subject to begin your free demo practice.
             </p>
+            <DemoTrackSwitch active="bbe" />
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">

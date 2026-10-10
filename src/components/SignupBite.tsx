@@ -51,8 +51,8 @@ function BiteShell({ children, onDismiss }: { children: ReactNode; onDismiss: ()
   );
 }
 
-function RegisterCopy({ path }: { path: string }) {
-  const returnTo = path === "/wiso" ? "/wiso/demo-practice" : "/demo-practice";
+function RegisterCopy() {
+  const returnTo = "/demo-practice";
   return (
     <>
       <p className="font-display text-[13px] font-semibold leading-snug text-foreground">
@@ -194,7 +194,7 @@ export function SignupBite() {
 
   return (
     <BiteShell onDismiss={dismiss}>
-      {signedIn ? <BuyCopy path={path} /> : <RegisterCopy path={path} />}
+      {signedIn ? <BuyCopy path={path} /> : <RegisterCopy />}
     </BiteShell>
   );
 }

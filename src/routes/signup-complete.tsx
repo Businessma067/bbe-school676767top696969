@@ -2,8 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { getCurrentAuthState } from "@/lib/auth-ui";
+import { useLanguage } from "@/lib/i18n/context";
+import { localizePath } from "@/lib/i18n/locale-path";
 import { consumePostSignupContinue, consumeSignupComplete } from "@/lib/signup-complete";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+
+const DEMO_AFTER_SIGNUP = "/demo-practice";
 
 /** Let the Google Ads tag register before leaving the conversion URL. */
 const CONTINUE_DELAY_MS = 2000;
@@ -34,8 +38,9 @@ export const Route = createFileRoute("/signup-complete")({
  */
 function SignupCompletePage() {
   const navigate = useLocalizedNavigate();
+  const { lang } = useLanguage();
   const [allowed, setAllowed] = useState(false);
-  const [continueTo, setContinueTo] = useState("/dashboard");
+  const [continueTo, setContinueTo] = useState(DEMO_AFTER_SIGNUP);
 
   useEffect(() => {
     let cancelled = false;
@@ -54,14 +59,15 @@ function SignupCompletePage() {
         return;
       }
 
-      setContinueTo(consumePostSignupContinue() ?? "/dashboard");
+      consumePostSignupContinue();
+      setContinueTo(localizePath(DEMO_AFTER_SIGNUP, lang));
       setAllowed(true);
     })();
 
     return () => {
       cancelled = true;
     };
-  }, [navigate]);
+  }, [navigate, lang]);
 
   useEffect(() => {
     if (!allowed) return;
@@ -79,10 +85,7 @@ function SignupCompletePage() {
     );
   }
 
-  const continueLabel =
-    continueTo === "/dashboard" || continueTo.startsWith("/dashboard?")
-      ? "Go to dashboard →"
-      : "Continue →";
+  const continueLabel = "Start the demo →";
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">
@@ -92,7 +95,7 @@ function SignupCompletePage() {
           You&apos;re signed up
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Your BBE School account is confirmed. Taking you back to where you left off…
+          Your BBE School account is confirmed. Taking you to the free demo…
         </p>
         <button
           type="button"
