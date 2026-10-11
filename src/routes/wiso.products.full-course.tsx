@@ -22,21 +22,107 @@ import { WISO_FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { consumeResumeCheckout } from "@/lib/signup-complete";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
-import {
-  FullCourseVideoRoulette,
-  buildFullCourseRouletteSlides,
-} from "@/components/FullCourseVideoRoulette";
+import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
 import { SalesWarmup } from "@/components/SalesWarmup";
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
 const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const FULL_COURSE_PRICE = 411;
 
-const ROULETTE_SLIDES = buildFullCourseRouletteSlides({
-  track: "wiso",
-  posterSrc: FULL_COURSE_IMAGE,
-  posterAlt: "Full WiSo Course",
-});
+const GUIDE_SLIDES: RouletteSlide[] = [
+  {
+    key: "guide-dashboard",
+    label: "Übersicht",
+    kind: "image",
+    src: "/course-guide/wiso-dashboard.jpg",
+    alt: "Weiter macht den Kurs da auf, wo du warst. Versuche, Trefferquote und die Serie werden gezählt.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-theory",
+    label: "Theorie",
+    kind: "image",
+    src: "/course-guide/wiso-theory.jpg",
+    alt: "Ein Kapitel aufmachen. Die Aufgaben sind aus dieser Seite geschrieben.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-task",
+    label: "Aufgabe",
+    kind: "image",
+    src: "/course-guide/wiso-task.jpg",
+    alt: "Zeitmodus ist die Uhr für das echte Limit. Eine leere Zeile kostet nichts.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-explanation",
+    label: "Erklärung",
+    kind: "image",
+    src: "/course-guide/wiso-explanation.jpg",
+    alt: "Zuerst das Urteil, dann der Grund so, wie ihn die Bank schreibt.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-german",
+    label: "Deutsch",
+    kind: "image",
+    src: "/course-guide/wiso-german.jpg",
+    alt: "Der markierte Satz ist der, an dem die Aussage hängt.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-math",
+    label: "Mathe",
+    kind: "image",
+    src: "/course-guide/wiso-math.jpg",
+    alt: "Der Prüfungsrechner sitzt in der Aufgabe.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-mock",
+    label: "Probeklausur",
+    kind: "image",
+    src: "/course-guide/wiso-mock.jpg",
+    alt: "Alle Fächer in einer Klausur. Eine Frage markieren und später zurückkommen.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-results",
+    label: "Ergebnis",
+    kind: "image",
+    src: "/course-guide/wiso-results.jpg",
+    alt: "Wie lange jede Frage gedauert hat. Aufgaben öffnet die Klausur mit den Antworten.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-builder",
+    label: "Mock-Builder",
+    kind: "image",
+    src: "/course-guide/wiso-builder.jpg",
+    alt: "Nur die Themen ankreuzen, die in diese Klausur sollen, und daraus eine Probeklausur mit Zeit bauen.",
+    aspect: "16 / 9",
+  },
+  {
+    key: "guide-flashcards",
+    label: "Karteikarten",
+    kind: "image",
+    src: "/course-guide/wiso-flashcards.jpg",
+    alt: "Den Begriff umdrehen und markieren, ob du ihn kannst.",
+    aspect: "16 / 9",
+  },
+];
+
+const ROULETTE_SLIDES: RouletteSlide[] = [
+  {
+    key: "poster",
+    label: "WiSo-Kurs",
+    kind: "image",
+    src: FULL_COURSE_IMAGE,
+    alt: "Voller WiSo-Kurs",
+    aspect: "4 / 3",
+  },
+  ...GUIDE_SLIDES,
+];
 
 const PATH = "/wiso/products/full-course" as const;
 const INDIGO = "#3730A3";
