@@ -15,6 +15,7 @@ import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
 import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
 import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
+import { DemoLockNote } from "@/components/DemoLockNote";
 import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
@@ -445,12 +446,11 @@ function EconomicsTasks() {
                                   setActiveChapter(ch.num);
                                   setActiveIdx(i);
                                 }}
-                                disabled={locked}
                                 style={locked ? { opacity: lockedOpacity } : undefined}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
-                                  locked && "cursor-not-allowed hover:bg-transparent text-muted-foreground",
+                                  locked && "text-muted-foreground",
                                 )}
                               >
                                 <span
@@ -491,9 +491,14 @@ function EconomicsTasks() {
                             <li key={`phantom-${ch.num}-${p}`}>
                               <button
                                 type="button"
-                                disabled
                                 style={{ opacity }}
-                                className="flex w-full cursor-not-allowed items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground"
+                                onClick={() => {
+                                  const lockedIdx = list.findIndex((_, i) => isLocked(ch.num, i));
+                                  skipNextIdxResetRef.current = true;
+                                  setActiveChapter(ch.num);
+                                  setActiveIdx(lockedIdx >= 0 ? lockedIdx : 0);
+                                }}
+                                className="flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground hover:bg-secondary/60"
                               >
                                 <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
                                   <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
@@ -613,21 +618,10 @@ function EconomicsTasks() {
             const freeLimit = freeLimitOf(activeChapter);
 
             return (
-            <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
-              <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
-                <Lock className="h-6 w-6" />
-              </div>
-              <h2 className="font-display text-xl font-bold">Locked in demo</h2>
-              <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                Chapter {activeChapter} tasks {freeLimit + 1}+ are part of the full course. The first {freeLimit} are free.
-              </p>
-              <button
-                onClick={() => setActiveIdx(freeLimit - 1)}
-                className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
-              >
-                <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimit}
-              </button>
-            </div>
+            <DemoLockNote
+              href="/products/full-course"
+              onBack={() => setActiveIdx(Math.max(0, freeLimit - 1))}
+            />
             );
           })() : activeCase && (
             <CaseCard

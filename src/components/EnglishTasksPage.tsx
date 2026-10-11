@@ -24,6 +24,7 @@ import {
 } from "@/lib/practice-button-styles";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { takeVisibleTasks } from "@/lib/visible-locked-tasks";
+import { DemoLockNote } from "@/components/DemoLockNote";
 import { Collapse } from "@/components/Collapse";
 import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
 import {
@@ -153,6 +154,8 @@ type Props = {
    * When set, replaces the flat DEMO_ENGLISH_FREE_LIMIT.
    */
   demoSubsectionFree?: Readonly<Record<string, number>>;
+  /** Sales page opened from a locked demo task. */
+  courseHref?: string;
   /**
    * WiSo German texts: DE|EN toggle. German stays source of truth;
    * EN translates passage + statements + explanations on demand.
@@ -184,6 +187,7 @@ export function EnglishTasksPage({
     </>
   ),
   demoSubsectionFree,
+  courseHref = "/products/full-course",
   enableContentTranslation = false,
   contentLangStorageKey = "wiso.german.contentLang.v1",
   contentTranslationCacheKey = "wiso.german.enCache.v1",
@@ -676,7 +680,6 @@ export function EnglishTasksPage({
                                                     setActiveChapter(ch.key);
                                                     setActiveIdx(i);
                                                   }}
-                                                  disabled={locked}
                                                   style={
                                                     locked
                                                       ? { opacity: lockedOpacity }
@@ -766,7 +769,6 @@ export function EnglishTasksPage({
                                           setActiveChapter(ch.key);
                                           setActiveIdx(i);
                                         }}
-                                        disabled={locked}
                                         className={cn(
                                           "flex w-full items-center gap-2 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                           active
@@ -949,25 +951,12 @@ export function EnglishTasksPage({
             )}
 
             {activeCase && isLocked(tier, activeIdx, activeList, demoSubsectionFree) ? (
-              <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
-                <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
-                  <Lock className="h-6 w-6" />
-                </div>
-                <h2 className="font-display text-xl font-bold">Locked in demo</h2>
-                <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                  This task is part of the full course. Demo practice includes a free sample of
-                  each text.
-                </p>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setActiveIdx(lastUnlockedIndex(tier, activeList, demoSubsectionFree))
-                  }
-                  className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
-                >
-                  <ChevronLeft className="h-4 w-4" /> Back to free tasks
-                </button>
-              </div>
+              <DemoLockNote
+                href={courseHref}
+                onBack={() =>
+                  setActiveIdx(lastUnlockedIndex(tier, activeList, demoSubsectionFree))
+                }
+              />
             ) : textsWorkspace && activeCase && displayCase ? (
               <div
                 key={activeCase.id}

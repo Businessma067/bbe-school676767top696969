@@ -40,6 +40,7 @@ function WisoDemoGermanTasks() {
       subjectLabel="Deutsch"
       progressSubject="german"
       demoSubsectionFree={DEMO_WISO_GERMAN_SUBSECTION_FREE}
+      courseHref="/wiso/products/full-course"
       emptyHint={
         <>
           Tippe in der Seitenleiste auf <span className="font-semibold text-foreground">Chapters</span>, um die

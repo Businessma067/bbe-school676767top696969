@@ -45,6 +45,7 @@ function WisoDemoEconomicsTasks() {
       backTo="/wiso/demo-practice"
       enableTheory={false}
       freeLimitPerChapter={WISO_DEMO_ECON_FREE_LIMIT}
+      courseHref="/wiso/products/full-course"
       phantomLockedCount={3}
       examLabel="WU WiSo exam"
     />

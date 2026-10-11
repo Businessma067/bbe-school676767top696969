@@ -13,6 +13,7 @@ import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedMo
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
+import { DemoLockNote } from "@/components/DemoLockNote";
 import {
   PracticeChaptersOpenButton,
   PracticeChaptersShell,
@@ -1014,7 +1015,7 @@ export function MathTasksPage({
               className="mb-4 inline-flex max-w-full items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:bg-primary/15"
             >
               <Sparkles className="h-3.5 w-3.5 shrink-0" />
-              <span className="truncate">Unlock 2800+ more questions</span>
+              <span className="truncate">The other tasks are in the course</span>
               <ChevronRight className="h-3.5 w-3.5 shrink-0 opacity-70" />
             </Link>
           )}
@@ -2092,10 +2093,10 @@ function UnlockQuestionsDialog({
           <div className="mx-auto mb-2 grid h-12 w-12 place-items-center rounded-full bg-primary/10 text-primary">
             <Lock className="h-5 w-5" />
           </div>
-          <DialogTitle className="font-display text-xl">Unlock all questions</DialogTitle>
-          <DialogDescription className="text-sm">
-            This task is part of the full course. Get access to 2800+ math questions with
-            full explanations.
+          <DialogTitle className="sr-only">The course</DialogTitle>
+          <DialogDescription className="text-sm text-foreground">
+            The free tasks stop here, and the other tasks, the mocks and the mock builder are in the
+            course.
           </DialogDescription>
         </DialogHeader>
         <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
@@ -2103,14 +2104,14 @@ function UnlockQuestionsDialog({
             to={fullCourseHref}
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
           >
-            Unlock all questions
+            See the course
           </Link>
           <button
             type="button"
             onClick={() => onOpenChange(false)}
             className="inline-flex items-center justify-center rounded-md border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-secondary"
           >
-            Keep practicing free
+            Back to the free ones
           </button>
         </div>
       </DialogContent>
@@ -2125,33 +2126,7 @@ function LockedDemoCard({
   onBack: () => void;
   fullCourseHref?: string;
 }) {
-  return (
-    <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
-      <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
-        <Lock className="h-6 w-6" />
-      </div>
-      <h2 className="font-display text-xl font-bold">Unlock all questions</h2>
-      <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-        This task is part of the full course. Demo practice includes a free sample of
-        each topic.
-      </p>
-      <div className="mt-5 flex flex-col items-center justify-center gap-2 sm:flex-row">
-        <Link
-          to={fullCourseHref}
-          className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
-        >
-          Unlock all questions
-        </Link>
-        <button
-          type="button"
-          onClick={onBack}
-          className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
-        >
-          <ChevronLeft className="h-4 w-4" /> Back to free tasks
-        </button>
-      </div>
-    </div>
-  );
+  return <DemoLockNote href={fullCourseHref} onBack={onBack} />;
 }
 
 const MathTaskCard = memo(function MathTaskCard({
