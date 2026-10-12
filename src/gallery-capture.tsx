@@ -23,4 +23,4 @@ if(w&&['theory','explanation','math','flashcards'].includes(scene)) {
  case 'builder':content=<T.TourBuilder open built={false}/>;break;
  default:content=<T.TourTools mode="flash" flipped={false} matched={false} picked={false}/>;
 }
-createRoot(document.getElementById('root')!).render(<div id="capture" style={{width:1280,height:720,position:'relative',overflow:'hidden',padding:w?0:32,background:'var(--background)'}}><div style={{transform: ["builder","dashboard"].includes(scene)?"scale(0.76)":"none",transformOrigin:"top left",width:["builder","dashboard"].includes(scene)?1600:undefined}}>{content}</div></div>);
+createRoot(document.getElementById('root')!).render(<div id="capture" style={{width:1280,height:720,position:'relative',overflow:'hidden',padding:w?0:32,background:'var(--background)'}}><div style={{zoom: ["builder","dashboard"].includes(scene)?0.68:1,width:["builder","dashboard"].includes(scene)?1720:undefined}}>{content}</div></div>);
