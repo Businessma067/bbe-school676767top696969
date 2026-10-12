@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Replace generic product-image callouts with meaningful exam-preparation features in both course galleries.
+
 - [x] Improve BBE and WiSo product-gallery clarity with uncropped, equally sized images and full-screen detail viewing.
 
 - [x] Enable magnification of the actual inline demonstration content at the selected point.
