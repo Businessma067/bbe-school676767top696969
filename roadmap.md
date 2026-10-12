@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Remove crossing arrows from all 20 course images; use subtle local highlights and one consistent caption style.
+- [x] Remove crossing arrows from all 20 course images; use subtle local highlights and one consistent caption style. Both galleries load all slides without runtime errors; build OK.
 
 - [x] Replace generic product-image callouts with meaningful exam-preparation features in both course galleries; preserve original 3200×1800 screenshots and verify all slides in the browser.
 
