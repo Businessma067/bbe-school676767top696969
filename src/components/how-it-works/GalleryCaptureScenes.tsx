@@ -24,7 +24,7 @@ import {
   Wand2,
 } from "lucide-react";
 const AuthNav = () => null;
-import { ThemeToggle } from "@/components/ThemeToggle";
+const ThemeToggle = () => null;
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
