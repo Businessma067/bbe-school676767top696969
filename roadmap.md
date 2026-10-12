@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Inspect all BBE / WiSo gallery annotations and correct misaligned boxes or arrows without altering authentic interface content.
+
 - [x] Produce and visually verify two authentic high-resolution website examples with centered local callouts and short arrows, without changing the galleries.
 - [x] Apply the approved authentic-capture style to all 28 gallery images with centered local callouts, short measured arrows and orange BBE / blue WiSo outlines; browser-verified all 28 images at 3200×1800 and both enlarged viewers without runtime errors.
 
