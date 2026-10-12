@@ -29,7 +29,6 @@ import { Route as DemoMockRouteImport } from './routes/demo-mock'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
-import { Route as GalleryStudioRouteImport } from './routes/gallery-studio'
 import { Route as HybridRouteImport } from './routes/hybrid'
 import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as LoginRouteImport } from './routes/login'
@@ -253,11 +252,6 @@ const FlashcardsRoute = FlashcardsRouteImport.update({
 const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
   id: '/forgot-password',
   path: '/forgot-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GalleryStudioRoute = GalleryStudioRouteImport.update({
-  id: '/gallery-studio',
-  path: '/gallery-studio',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HybridRoute = HybridRouteImport.update({
@@ -928,7 +922,6 @@ export interface FileRoutesByFullPath {
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
-  '/gallery-studio': typeof GalleryStudioRoute
   '/hybrid': typeof HybridRouteWithChildren
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
@@ -1071,7 +1064,6 @@ export interface FileRoutesByTo {
   '/dashboard': typeof DashboardRoute
   '/demo-mock': typeof DemoMockRoute
   '/forgot-password': typeof ForgotPasswordRoute
-  '/gallery-studio': typeof GalleryStudioRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/news': typeof NewsRouteWithChildren
@@ -1201,7 +1193,6 @@ export interface FileRoutesById {
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
-  '/gallery-studio': typeof GalleryStudioRoute
   '/hybrid': typeof HybridRouteWithChildren
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
@@ -1350,7 +1341,6 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
-    | '/gallery-studio'
     | '/hybrid'
     | '/important-features'
     | '/login'
@@ -1493,7 +1483,6 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/demo-mock'
     | '/forgot-password'
-    | '/gallery-studio'
     | '/important-features'
     | '/login'
     | '/news'
@@ -1622,7 +1611,6 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
-    | '/gallery-studio'
     | '/hybrid'
     | '/important-features'
     | '/login'
@@ -1770,7 +1758,6 @@ export interface RootRouteChildren {
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
   ForgotPasswordRoute: typeof ForgotPasswordRoute
-  GalleryStudioRoute: typeof GalleryStudioRoute
   HybridRoute: typeof HybridRouteWithChildren
   ImportantFeaturesRoute: typeof ImportantFeaturesRoute
   LoginRoute: typeof LoginRoute
@@ -1946,13 +1933,6 @@ declare module '@tanstack/react-router' {
       path: '/forgot-password'
       fullPath: '/forgot-password'
       preLoaderRoute: typeof ForgotPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gallery-studio': {
-      id: '/gallery-studio'
-      path: '/gallery-studio'
-      fullPath: '/gallery-studio'
-      preLoaderRoute: typeof GalleryStudioRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hybrid': {
@@ -3259,7 +3239,6 @@ const rootRouteChildren: RootRouteChildren = {
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,
   ForgotPasswordRoute: ForgotPasswordRoute,
-  GalleryStudioRoute: GalleryStudioRoute,
   HybridRoute: HybridRouteWithChildren,
   ImportantFeaturesRoute: ImportantFeaturesRoute,
   LoginRoute: LoginRoute,
