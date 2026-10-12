@@ -103,6 +103,10 @@
 
 :root {
   --radius: 0.625rem;
+  --gallery-bbe: oklch(0.66 0.18 48);
+  --gallery-wiso: oklch(0.61 0.19 255);
+  --gallery-caption-surface: oklch(0.99 0.002 90);
+  --gallery-caption-ink: oklch(0.23 0.015 255);
 
   /* Exam-paper institutional palette */
   --background: #f2f1ed;
