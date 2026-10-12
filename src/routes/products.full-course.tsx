@@ -140,6 +140,7 @@ export const Route = createFileRoute("/products/full-course")({
           "The complete WU BBE entrance exam preparation system: 3300+ questions, 5 mock exams, explanations, and support.",
       },
       { property: "og:title", content: "Full BBE Course | Full Access | BBE School" },
+      { property: "og:type", content: "website" },
       {
         property: "og:description",
         content:
@@ -366,7 +367,7 @@ export function FullCourseProduct() {
             Full BBE Course
           </h1>
 
-          <div className="lg:relative lg:left-1/2 lg:w-[min(100vw-5rem,80rem)] lg:-translate-x-1/2">
+          <div className="lg:ml-[calc((min(100vw-4rem,80rem)-100%)/-2)] lg:w-[min(calc(100vw-4rem),80rem)]">
             <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
           </div>
 

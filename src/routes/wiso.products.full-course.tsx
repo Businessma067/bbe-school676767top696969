@@ -141,6 +141,7 @@ export const Route = createFileRoute("/wiso/products/full-course")({
           "Full WiSo Course: Wirtschaft verstehen economics, mathematics, German reading, mocks and study tools for the WU Vienna WiSo exam.",
       },
       { property: "og:title", content: "Full WiSo Course | WiSo Prep" },
+      { property: "og:type", content: "website" },
       {
         property: "og:description",
         content:
@@ -308,7 +309,9 @@ export function WisoFullCourseProduct() {
             Full WiSo Course
           </h1>
 
-          <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
+          <div className="lg:ml-[calc((min(100vw-4rem,80rem)-100%)/-2)] lg:w-[min(calc(100vw-4rem),80rem)]">
+            <FullCourseVideoRoulette slides={ROULETTE_SLIDES} />
+          </div>
 
           <div className="mt-5 flex items-center gap-3">
             <div className="flex items-center gap-0.5">
