@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Replace both galleries' footer captions with centered local callouts over authentic high-resolution website captures; verify aligned highlights and non-overlapping arrows.
+
 - [x] Rebuild both full-course galleries with 14 feature screenshots each, aligned uncropped frames, safe caption margins and orange BBE / blue WiSo caption outlines; all 28 images load at 3200×1800, both enlarged viewers open, and browser checks report no errors.
 
 - [x] Place consistent gallery captions in empty interface areas and connect them to relevant controls with short arrows; all 20 images load at 3200×1800 in both galleries without browser errors.
