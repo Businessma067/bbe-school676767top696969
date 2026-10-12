@@ -1,7 +1,7 @@
 # Roadmap
 
 - [x] Produce and visually verify two authentic high-resolution website examples with centered local callouts and short arrows, without changing the galleries.
-- [ ] Apply the approved authentic-capture style to both galleries — awaiting approval of the corrected centered examples.
+- [x] Apply the approved authentic-capture style to all 28 gallery images with centered local callouts, short measured arrows and orange BBE / blue WiSo outlines; browser-verified all 28 images at 3200×1800 and both enlarged viewers without runtime errors.
 
 - [x] Rebuild both full-course galleries with 14 feature screenshots each, aligned uncropped frames, safe caption margins and orange BBE / blue WiSo caption outlines; all 28 images load at 3200×1800, both enlarged viewers open, and browser checks report no errors.
 
