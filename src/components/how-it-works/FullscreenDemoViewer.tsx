@@ -67,7 +67,7 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
     if (!element) return;
     const wheel = (event: WheelEvent) => {
       // Inline demos must not trap page scrolling: at fit scale a downward wheel does nothing.
-      if (inline && zoom.scale <= 1 && event.deltaY > 0) return;
+      if (inline && target.current.scale <= 1 && event.deltaY > 0) return;
       event.preventDefault();
       const anchor = point(event.clientX, event.clientY);
       const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? element.clientHeight : 1);
@@ -132,12 +132,12 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
           </div>
         </div>
         <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
-          <div ref={attachFrame} className={inline ? "relative aspect-video w-full overflow-hidden touch-none" : `demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
+          <div ref={attachFrame} className={inline ? `relative aspect-video w-full overflow-hidden${zoom.scale > 1 ? " touch-none" : ""}` : `demo-fullscreen-frame${rotated ? " demo-fullscreen-frame-rotated" : ""}`} data-demo-zoom={zoom.scale}
             onClick={(e) => { if (inline && !moved.current) setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY))); }}
             onDoubleClick={(e) => { if (!inline) setZoom((z) => zoomAt(z, z.scale > 1 ? 1 : 2.5, point(e.clientX, e.clientY))); }}
             onPointerDown={(e) => {
               moved.current = false;
-              if (e.pointerType === "mouse" && zoom.scale === 1) return;
+              if (zoom.scale === 1 && (e.pointerType === "mouse" || inline)) return;
               pointers.current.set(e.pointerId, point(e.clientX, e.clientY));
               if (e.isTrusted) e.currentTarget.setPointerCapture(e.pointerId);
             }}
