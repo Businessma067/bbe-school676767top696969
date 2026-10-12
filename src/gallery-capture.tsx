@@ -8,7 +8,7 @@ import {WisoHowItWorksDemo} from './components/how-it-works/WisoLiveDemos';
 const n=new URLSearchParams(location.search).get('scene')||'dashboard';
 const w=n.startsWith('wiso-');const scene=n.replace('wiso-','');
 let content:React.ReactNode;
-if(w&&!['dashboard','results','task','german'].includes(scene)) {
+if(w&&['theory','explanation','math'].includes(scene)) {
  const tab=scene==='theory'?'theory':scene==='mock'?'mock-exams':scene==='builder'?'mock-builder':scene==='flashcards'?'games':'course';
  content=<WisoHowItWorksDemo tab={tab} slideKey={scene} rest={25}/>;
 } else switch(scene){
