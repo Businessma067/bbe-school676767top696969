@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Remove crossing arrows from all 20 course images; use subtle local highlights and one consistent caption style. Both galleries load all slides without runtime errors; build OK.
+
 - [x] Replace generic product-image callouts with meaningful exam-preparation features in both course galleries; preserve original 3200×1800 screenshots and verify all slides in the browser.
 
 - [x] Improve BBE and WiSo product-gallery clarity with uncropped, equally sized images and full-screen detail viewing.
