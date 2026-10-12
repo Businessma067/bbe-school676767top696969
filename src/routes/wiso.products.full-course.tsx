@@ -1,3 +1,13 @@
+import guideDashboardImage from "@/assets/course-guide/wiso-dashboard-annotated.webp";
+import guideTheoryImage from "@/assets/course-guide/wiso-theory-annotated.webp";
+import guideTaskImage from "@/assets/course-guide/wiso-task-annotated.webp";
+import guideExplanationImage from "@/assets/course-guide/wiso-explanation-annotated.webp";
+import guideGermanImage from "@/assets/course-guide/wiso-german-annotated.webp";
+import guideMathImage from "@/assets/course-guide/wiso-math-annotated.webp";
+import guideMockImage from "@/assets/course-guide/wiso-mock-annotated.webp";
+import guideResultsImage from "@/assets/course-guide/wiso-results-annotated.webp";
+import guideBuilderImage from "@/assets/course-guide/wiso-builder-annotated.webp";
+import guideFlashcardsImage from "@/assets/course-guide/wiso-flashcards-annotated.webp";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
@@ -34,80 +44,80 @@ const GUIDE_SLIDES: RouletteSlide[] = [
     key: "guide-dashboard",
     label: "Übersicht",
     kind: "image",
-    src: "/course-guide/wiso-dashboard.jpg",
-    alt: "Weiter macht den Kurs da auf, wo du warst. Versuche, Trefferquote und die Serie werden gezählt.",
+    src: guideDashboardImage,
+    alt: "Lernfortschritt und Trefferquote verfolgen und die Vorbereitung fortsetzen.",
     aspect: "16 / 9",
   },
   {
     key: "guide-theory",
     label: "Theorie",
     kind: "image",
-    src: "/course-guide/wiso-theory.jpg",
-    alt: "Ein Kapitel aufmachen. Die Aufgaben sind aus dieser Seite geschrieben.",
+    src: guideTheoryImage,
+    alt: "Kapiteltheorie verstehen und direkt üben.",
     aspect: "16 / 9",
   },
   {
     key: "guide-task",
     label: "Aufgabe",
     kind: "image",
-    src: "/course-guide/wiso-task.jpg",
-    alt: "Zeitmodus ist die Uhr für das echte Limit. Eine leere Zeile kostet nichts.",
+    src: guideTaskImage,
+    alt: "Mit Zeitlimit trainieren, Aussagen prüfen und Fehler verstehen.",
     aspect: "16 / 9",
   },
   {
     key: "guide-explanation",
     label: "Erklärung",
     kind: "image",
-    src: "/course-guide/wiso-explanation.jpg",
-    alt: "Zuerst das Urteil, dann der Grund so, wie ihn die Bank schreibt.",
+    src: guideExplanationImage,
+    alt: "Ausführliche Begründungen für jede richtige und falsche Aussage.",
     aspect: "16 / 9",
   },
   {
     key: "guide-german",
     label: "Deutsch",
     kind: "image",
-    src: "/course-guide/wiso-german.jpg",
-    alt: "Der markierte Satz ist der, an dem die Aussage hängt.",
+    src: guideGermanImage,
+    alt: "Textbelege markieren und Notizen beim Leseverständnis ergänzen.",
     aspect: "16 / 9",
   },
   {
     key: "guide-math",
     label: "Mathe",
     kind: "image",
-    src: "/course-guide/wiso-math.jpg",
-    alt: "Der Prüfungsrechner sitzt in der Aufgabe.",
+    src: guideMathImage,
+    alt: "Rechnen, ohne die Aufgabe zu verlassen.",
     aspect: "16 / 9",
   },
   {
     key: "guide-mock",
     label: "Probeklausur",
     kind: "image",
-    src: "/course-guide/wiso-mock.jpg",
-    alt: "Alle Fächer in einer Klausur. Eine Frage markieren und später zurückkommen.",
+    src: guideMockImage,
+    alt: "Alle Fächer in einer Probeklausur üben und schwierige Fragen für später markieren.",
     aspect: "16 / 9",
   },
   {
     key: "guide-results",
     label: "Ergebnis",
     kind: "image",
-    src: "/course-guide/wiso-results.jpg",
-    alt: "Wie lange jede Frage gedauert hat. Aufgaben öffnet die Klausur mit den Antworten.",
+    src: guideResultsImage,
+    alt: "Antworten mit Erklärungen prüfen und die Zeit pro Frage analysieren.",
     aspect: "16 / 9",
   },
   {
     key: "guide-builder",
     label: "Mock-Builder",
     kind: "image",
-    src: "/course-guide/wiso-builder.jpg",
-    alt: "Nur die Themen ankreuzen, die in diese Klausur sollen, und daraus eine Probeklausur mit Zeit bauen.",
+    src: guideBuilderImage,
+    alt: "Themen und Fragenanzahl auswählen und mit Zeitlimit üben.",
     aspect: "16 / 9",
   },
   {
     key: "guide-flashcards",
     label: "Karteikarten",
     kind: "image",
-    src: "/course-guide/wiso-flashcards.jpg",
-    alt: "Den Begriff umdrehen und markieren, ob du ihn kannst.",
+    src: guideFlashcardsImage,
+    alt: "Antworten aktiv erinnern und schwache Karten gezielt wiederholen.",
     aspect: "16 / 9",
   },
 ];

@@ -1,3 +1,13 @@
+import guideDashboardImage from "@/assets/course-guide/dashboard-annotated.webp";
+import guideTheoryImage from "@/assets/course-guide/theory-annotated.webp";
+import guideTaskImage from "@/assets/course-guide/task-annotated.webp";
+import guideExplanationImage from "@/assets/course-guide/explanation-annotated.webp";
+import guideEnglishImage from "@/assets/course-guide/english-annotated.webp";
+import guideMathImage from "@/assets/course-guide/math-annotated.webp";
+import guideMockImage from "@/assets/course-guide/mock-annotated.webp";
+import guideResultsImage from "@/assets/course-guide/results-annotated.webp";
+import guideBuilderImage from "@/assets/course-guide/builder-annotated.webp";
+import guideFlashcardsImage from "@/assets/course-guide/flashcards-annotated.webp";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
@@ -34,80 +44,80 @@ const GUIDE_SLIDES: RouletteSlide[] = [
     key: "guide-dashboard",
     label: "Dashboard",
     kind: "image",
-    src: "/course-guide/dashboard.jpg",
-    alt: "Dashboard: Continue opens the course, and attempts, accuracy, and the streak are counted.",
+    src: guideDashboardImage,
+    alt: "Track learning activity and accuracy, and resume your preparation.",
     aspect: "16 / 9",
   },
   {
     key: "guide-theory",
     label: "Theory",
     kind: "image",
-    src: "/course-guide/theory.jpg",
-    alt: "A theory chapter. The practice tasks are written from this page.",
+    src: guideTheoryImage,
+    alt: "Study chapter theory alongside related practice.",
     aspect: "16 / 9",
   },
   {
     key: "guide-task",
     label: "Practice",
     kind: "image",
-    src: "/course-guide/task.jpg",
-    alt: "An economics task. A blank costs nothing, and Timed Mode is the exam clock.",
+    src: guideTaskImage,
+    alt: "Practise with a time limit, check statements and review mistakes.",
     aspect: "16 / 9",
   },
   {
     key: "guide-explanation",
     label: "Explanation",
     kind: "image",
-    src: "/course-guide/explanation.jpg",
-    alt: "The verdict first, then the reason in the bank's own words.",
+    src: guideExplanationImage,
+    alt: "Detailed reasoning explains why each statement is right or wrong.",
     aspect: "16 / 9",
   },
   {
     key: "guide-english",
     label: "English",
     kind: "image",
-    src: "/course-guide/english.jpg",
-    alt: "The marked sentence is the one the statement depends on.",
+    src: guideEnglishImage,
+    alt: "Highlight text evidence and add notes while practising reading.",
     aspect: "16 / 9",
   },
   {
     key: "guide-math",
     label: "Math",
     kind: "image",
-    src: "/course-guide/math.jpg",
-    alt: "The exam calculator sits inside the task. 12 times 11 is 132.",
+    src: guideMathImage,
+    alt: "Use the calculator without leaving the question.",
     aspect: "16 / 9",
   },
   {
     key: "guide-mock",
     label: "Mock exam",
     kind: "image",
-    src: "/course-guide/mock.jpg",
-    alt: "Every subject in one paper, with a flag to come back to a question.",
+    src: guideMockImage,
+    alt: "Practise all subjects in one exam and flag difficult questions for review.",
     aspect: "16 / 9",
   },
   {
     key: "guide-results",
     label: "Results",
     kind: "image",
-    src: "/course-guide/results.jpg",
-    alt: "How long each question took, and Tasks opens that paper with the answers.",
+    src: guideResultsImage,
+    alt: "Review answers and explanations and see time spent on each question.",
     aspect: "16 / 9",
   },
   {
     key: "guide-builder",
     label: "Mock builder",
     kind: "image",
-    src: "/course-guide/builder.jpg",
-    alt: "Tick the topics you want, then build a timed mock from them.",
+    src: guideBuilderImage,
+    alt: "Select topics and question count to build a timed practice exam.",
     aspect: "16 / 9",
   },
   {
     key: "guide-flashcards",
     label: "Flashcards",
     kind: "image",
-    src: "/course-guide/flashcards.jpg",
-    alt: "Flip the term, then mark whether you know it.",
+    src: guideFlashcardsImage,
+    alt: "Recall answers before revealing them and separate weak cards for revision.",
     aspect: "16 / 9",
   },
 ];
