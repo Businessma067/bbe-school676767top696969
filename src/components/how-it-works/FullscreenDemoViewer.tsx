@@ -66,6 +66,8 @@ export function FullscreenDemoViewer({ children, label, onClose, inline = false,
     const element = wheelFrame;
     if (!element) return;
     const wheel = (event: WheelEvent) => {
+      // Inline demos must not trap page scrolling: at fit scale a downward wheel does nothing.
+      if (inline && zoom.scale <= 1 && event.deltaY > 0) return;
       event.preventDefault();
       const anchor = point(event.clientX, event.clientY);
       const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? element.clientHeight : 1);
