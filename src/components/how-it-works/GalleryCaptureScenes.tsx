@@ -1,3 +1,7 @@
+import {buildWisoMockExam1Questions} from "@/lib/wiso-mock-exam-1-content";
+import {getWisoCustomMockChapters} from "@/data/wiso-custom-mock-catalog";
+import {WISO_ECONOMICS_FLASHCARD_SECTIONS} from "@/data/wiso-economics-flashcards";
+const WISO=location.search.includes("wiso-");
 import { lazy, Suspense, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   BookOpen,
@@ -95,7 +99,7 @@ const PASSAGE =
 const ENGLISH_MARKS: Record<number, boolean> = { 2: true, 4: true };
 
 const CHAPTERS = Object.values(ECONOMICS_COURSE_THEORY);
-const BUILDER_CHAPTERS = getCustomMockChapters("economics").slice(0, 3);
+const BUILDER_CHAPTERS = (WISO?getWisoCustomMockChapters("economics"):getCustomMockChapters("economics")).slice(0, 3);
 const BUILDER_CHAPTER = BUILDER_CHAPTERS[0];
 const BUILDER_PICKS = BUILDER_CHAPTER?.subtopics.slice(0, 4) ?? [];
 
@@ -105,7 +109,7 @@ if (!BUILDER_CHAPTER || BUILDER_PICKS.length < 4) {
 
 export const TOUR_BUILDER_CHAPTER = BUILDER_CHAPTER.num;
 
-const QUESTIONS = buildMockExam1Questions();
+const QUESTIONS = WISO?buildWisoMockExam1Questions():buildMockExam1Questions();
 const EXAM_AT = 1;
 const EXAM_SECONDS = 2 * 60 * 60;
 const TIMES = [
@@ -142,7 +146,7 @@ function sectionOrThrow(id: string) {
   return section;
 }
 
-const CORE = sectionOrThrow("econ-1");
+const CORE = WISO?WISO_ECONOMICS_FLASHCARD_SECTIONS[0]:sectionOrThrow("econ-1");
 const TYPES = sectionOrThrow("econ-3");
 const FLASH_CARD = CORE.cards[0];
 const DECK_TOTAL = countCards(ECONOMICS_FLASHCARD_SECTIONS);
