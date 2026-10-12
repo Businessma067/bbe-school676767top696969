@@ -181,7 +181,7 @@ export function FullCourseVideoRoulette({
     const row = thumbsRef.current;
     if (!row) return;
     const thumb = row.querySelector<HTMLElement>(`[data-roulette-thumb="${index}"]`);
-    thumb?.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "nearest" });
+    if (thumb) row.scrollTo({ left: thumb.offsetLeft - (row.clientWidth - thumb.clientWidth) / 2, behavior: "smooth" });
   }, [index]);
 
   // Autoplay the active video when the stage is on screen.
@@ -249,18 +249,30 @@ export function FullCourseVideoRoulette({
             }
           }}
         >
-          {slide.kind === "image" ? (
-            <>
+          {slides.map((s, i) => {
+            if (s.kind !== "image" && !(s.kind === "video" && i !== index)) return null;
+            const offset = i - index;
+            const near = Math.abs(offset) <= 1 || Math.abs(offset) === count - 1;
+            return (
               <img
-                key={slide.key}
-                src={slide.src}
-                alt={slide.alt}
-                className="absolute inset-0 h-full w-full object-contain object-center"
-                decoding="sync"
-                fetchPriority="high"
+                key={s.key}
+                src={s.kind === "image" ? s.src : s.poster}
+                alt={i === index ? (s.kind === "image" ? s.alt : "") : ""}
+                aria-hidden={i !== index}
+                className="absolute inset-0 h-full w-full object-contain object-center transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform motion-reduce:transition-none"
+                style={{
+                  opacity: i === index ? 1 : 0,
+                  transform: `translateX(${offset === 0 ? 0 : offset > 0 ? 6 : -6}%) scale(${i === index ? 1 : 0.985})`,
+                }}
+                decoding="async"
+                loading={near || i === index ? "eager" : "lazy"}
                 onDoubleClick={() => setImageOpen(true)}
                 draggable={false}
               />
+            );
+          })}
+          {slide.kind === "image" ? (
+            <>
               <Button
                 type="button"
                 size="icon"
@@ -319,24 +331,24 @@ export function FullCourseVideoRoulette({
         </Button>
       </div>
 
-      <div className="flex justify-center gap-1.5" role="tablist" aria-label="Slides">
-        {slides.map((s, i) => (
-          <button
-            key={s.key}
-            type="button"
-            aria-label={s.label}
-            onClick={() => setIndex(i)}
-            className={cn(
-              "h-1.5 rounded-full bg-foreground transition-all",
-              i === index ? "w-5" : "w-1.5 opacity-35",
-            )}
+      <div className="flex items-center justify-between gap-3 px-1">
+        <p className="min-w-0 truncate text-sm font-semibold text-foreground">
+          <span className="mr-2 tabular-nums text-muted-foreground">
+            {String(index + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
+          </span>
+          {slide.label}
+        </p>
+        <div className="h-1 w-24 flex-shrink-0 overflow-hidden rounded-full bg-muted sm:w-40">
+          <div
+            className="h-full rounded-full bg-primary transition-[width] duration-500 ease-out"
+            style={{ width: `${((index + 1) / count) * 100}%` }}
           />
-        ))}
+        </div>
       </div>
 
       <div
         ref={thumbsRef}
-        className="flex gap-2.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x gap-2 overflow-x-auto scroll-smooth px-1 pb-2 pt-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         role="tablist"
         aria-label="Course walkthrough previews"
       >
@@ -353,27 +365,28 @@ export function FullCourseVideoRoulette({
               data-roulette-thumb={i}
               onClick={() => setIndex(i)}
               className={cn(
-                "relative aspect-video w-[4.75rem] flex-shrink-0 overflow-hidden rounded-lg border border-foreground bg-background transition-all sm:w-24",
-                active
-                  ? "ring-2 ring-foreground ring-offset-2 ring-offset-background"
-                  : "opacity-80 hover:opacity-100",
+                "group flex w-28 flex-shrink-0 snap-start flex-col gap-1.5 rounded-xl p-1.5 text-left transition-all duration-300 sm:w-36",
+                active ? "bg-foreground text-background shadow-lg" : "bg-muted/60 text-foreground hover:bg-muted",
               )}
             >
-              <img
-                src={thumbSrc}
-                alt=""
-                className={cn(
-                  "absolute inset-0 h-full w-full object-contain object-center",
-                  s.kind === "video" && "bg-muted",
-                )}
-                draggable={false}
-                loading="lazy"
-              />
-              {s.kind !== "image" && (
-                <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-1 pb-1 pt-3 text-left text-[9px] font-semibold leading-tight text-white sm:text-[10px]">
-                  {s.label}
+              <span className="relative block aspect-video w-full overflow-hidden rounded-lg bg-background">
+                <img
+                  src={thumbSrc}
+                  alt=""
+                  className={cn(
+                    "absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500",
+                    active ? "scale-100" : "scale-[1.04] opacity-75 group-hover:scale-100 group-hover:opacity-100",
+                  )}
+                  draggable={false}
+                  loading="lazy"
+                />
+              </span>
+              <span className="flex items-center gap-1.5 px-0.5 text-[11px] font-semibold leading-tight sm:text-xs">
+                <span className={cn("tabular-nums", active ? "opacity-70" : "text-muted-foreground")}>
+                  {String(i + 1).padStart(2, "0")}
                 </span>
-              )}
+                <span className="truncate">{s.label}</span>
+              </span>
             </button>
           );
         })}
