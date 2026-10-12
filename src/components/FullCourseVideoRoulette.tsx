@@ -3,8 +3,6 @@ import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { ZoomableImage } from "@/components/ZoomableImage";
 import { FullscreenDemoViewer } from "@/components/how-it-works/FullscreenDemoViewer";
 
 export type RouletteSlide =
@@ -218,21 +216,23 @@ export function FullCourseVideoRoulette({
   return (
     <div className="space-y-3">
       <div className="flex items-center gap-2 sm:gap-3">
-        <button
+        <Button
           type="button"
+          variant="outline"
+          size="icon"
           onClick={() => go(index - 1)}
           aria-label="Previous"
-          className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-full border border-black bg-background text-foreground shadow-sm transition hover:bg-secondary sm:h-9 sm:w-9"
+          className="h-8 w-8 flex-shrink-0 rounded-full border-foreground bg-background text-foreground shadow-sm sm:h-9 sm:w-9"
         >
           <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
-        </button>
+        </Button>
         <div
           ref={stageRef}
           className={cn(
-            "relative min-w-0 flex-1 touch-pan-y overflow-hidden rounded-xl border-2 border-black select-none",
+            "relative min-w-0 flex-1 touch-pan-y overflow-hidden rounded-lg border-2 border-foreground bg-background select-none",
             slide.kind === "video" && "bg-muted",
           )}
-          style={{ aspectRatio: slide.kind === "video" ? HIW_16_9 : slide.aspect }}
+          style={{ aspectRatio: HIW_16_9 }}
           onTouchStart={(e) => {
             const t = e.touches[0];
             touch.current = { x: t.clientX, y: t.clientY };
@@ -255,7 +255,10 @@ export function FullCourseVideoRoulette({
                 key={slide.key}
                 src={slide.src}
                 alt={slide.alt}
-                className="absolute inset-0 h-full w-full object-cover object-center"
+                className="absolute inset-0 h-full w-full object-contain object-center"
+                decoding="sync"
+                fetchPriority="high"
+                onDoubleClick={() => setImageOpen(true)}
                 draggable={false}
               />
               <Button
@@ -304,14 +307,16 @@ export function FullCourseVideoRoulette({
             <div className="absolute inset-0 z-20">{live}</div>
           )}
         </div>
-        <button
+        <Button
           type="button"
+          variant="outline"
+          size="icon"
           onClick={() => go(index + 1)}
           aria-label="Next"
-          className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-full border border-black bg-background text-foreground shadow-sm transition hover:bg-secondary sm:h-9 sm:w-9"
+          className="h-8 w-8 flex-shrink-0 rounded-full border-foreground bg-background text-foreground shadow-sm sm:h-9 sm:w-9"
         >
           <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
-        </button>
+        </Button>
       </div>
 
       <div className="flex justify-center gap-1.5" role="tablist" aria-label="Slides">
@@ -348,7 +353,7 @@ export function FullCourseVideoRoulette({
               data-roulette-thumb={i}
               onClick={() => setIndex(i)}
               className={cn(
-                "relative aspect-video w-[4.75rem] flex-shrink-0 overflow-hidden rounded-lg border border-black bg-background transition-all sm:w-24",
+                "relative aspect-video w-[4.75rem] flex-shrink-0 overflow-hidden rounded-lg border border-foreground bg-background transition-all sm:w-24",
                 active
                   ? "ring-2 ring-foreground ring-offset-2 ring-offset-background"
                   : "opacity-80 hover:opacity-100",
@@ -358,8 +363,8 @@ export function FullCourseVideoRoulette({
                 src={thumbSrc}
                 alt=""
                 className={cn(
-                  "absolute inset-0 h-full w-full object-center",
-                  s.kind === "video" ? "object-contain bg-muted" : "object-cover",
+                  "absolute inset-0 h-full w-full object-contain object-center",
+                  s.kind === "video" && "bg-muted",
                 )}
                 draggable={false}
                 loading="lazy"
@@ -373,22 +378,18 @@ export function FullCourseVideoRoulette({
           );
         })}
       </div>
-      <Dialog open={imageOpen && slide.kind === "image"} onOpenChange={(open) => {
-        setImageOpen(open);
-        if (!open) void videoRef.current?.play().catch(() => {});
-      }}>
-        <DialogContent className="w-[96vw] max-w-none border-border p-3 sm:w-[96vw] sm:max-w-[1600px] sm:p-5">
-          <DialogTitle className="sr-only">{slide.label}</DialogTitle>
-          {slide.kind === "image" && (
-            <ZoomableImage
-              key={slide.key}
-              src={slide.src}
-              alt={slide.alt}
-              className="mx-auto max-h-[78vh] w-full object-contain"
-            />
-          )}
-        </DialogContent>
-      </Dialog>
+      {imageOpen && slide.kind === "image" && (
+        <FullscreenDemoViewer label={slide.label} onClose={() => setImageOpen(false)}>
+          <img
+            key={slide.key}
+            src={slide.src}
+            alt={slide.alt}
+            draggable={false}
+            decoding="sync"
+            className="absolute inset-0 h-full w-full select-none object-contain object-center"
+          />
+        </FullscreenDemoViewer>
+      )}
       {imageOpen && slide.kind === "video" && (
         <FullscreenDemoViewer label={slide.label} onClose={() => {
           setImageOpen(false);
