@@ -1,13 +1,17 @@
-import guideDashboardImage from "@/assets/course-guide/dashboard-annotated.webp";
-import guideTheoryImage from "@/assets/course-guide/theory-annotated.webp";
-import guideTaskImage from "@/assets/course-guide/task-annotated.webp";
-import guideExplanationImage from "@/assets/course-guide/explanation-annotated.webp";
-import guideEnglishImage from "@/assets/course-guide/english-annotated.webp";
-import guideMathImage from "@/assets/course-guide/math-annotated.webp";
-import guideMockImage from "@/assets/course-guide/mock-annotated.webp";
-import guideResultsImage from "@/assets/course-guide/results-annotated.webp";
-import guideBuilderImage from "@/assets/course-guide/builder-annotated.webp";
-import guideFlashcardsImage from "@/assets/course-guide/flashcards-annotated.webp";
+import guideChaptersAsset from "@/assets/course-guide-v2/bbe-chapters.webp.asset.json";
+import guideTheoryAsset from "@/assets/course-guide-v2/bbe-theory.webp.asset.json";
+import guidePracticeAsset from "@/assets/course-guide-v2/bbe-practice.webp.asset.json";
+import guideExplanationAsset from "@/assets/course-guide-v2/bbe-explanation.webp.asset.json";
+import guideLanguageAsset from "@/assets/course-guide-v2/bbe-language.webp.asset.json";
+import guideMathAsset from "@/assets/course-guide-v2/bbe-math.webp.asset.json";
+import guideMockAsset from "@/assets/course-guide-v2/bbe-mock.webp.asset.json";
+import guideResultsAsset from "@/assets/course-guide-v2/bbe-results.webp.asset.json";
+import guideBuilderAsset from "@/assets/course-guide-v2/bbe-builder.webp.asset.json";
+import guideFlashcardsAsset from "@/assets/course-guide-v2/bbe-flashcards.webp.asset.json";
+import guideMatchingAsset from "@/assets/course-guide-v2/bbe-matching.webp.asset.json";
+import guideTutorAsset from "@/assets/course-guide-v2/bbe-tutor.webp.asset.json";
+import guideSheetAsset from "@/assets/course-guide-v2/bbe-sheet.webp.asset.json";
+import guideTimedAsset from "@/assets/course-guide-v2/bbe-timed.webp.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
@@ -40,86 +44,20 @@ import { consumeResumeCheckout } from "@/lib/signup-complete";
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 
 const GUIDE_SLIDES: RouletteSlide[] = [
-  {
-    key: "guide-dashboard",
-    label: "Dashboard",
-    kind: "image",
-    src: guideDashboardImage,
-    alt: "Track learning activity and accuracy, and resume your preparation.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-theory",
-    label: "Theory",
-    kind: "image",
-    src: guideTheoryImage,
-    alt: "Study chapter theory alongside related practice.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-task",
-    label: "Practice",
-    kind: "image",
-    src: guideTaskImage,
-    alt: "Practise with a time limit, check statements and review mistakes.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-explanation",
-    label: "Explanation",
-    kind: "image",
-    src: guideExplanationImage,
-    alt: "Detailed reasoning explains why each statement is right or wrong.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-english",
-    label: "English",
-    kind: "image",
-    src: guideEnglishImage,
-    alt: "Highlight text evidence and add notes while practising reading.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-math",
-    label: "Math",
-    kind: "image",
-    src: guideMathImage,
-    alt: "Use the calculator without leaving the question.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-mock",
-    label: "Mock exam",
-    kind: "image",
-    src: guideMockImage,
-    alt: "Practise all subjects in one exam and flag difficult questions for review.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-results",
-    label: "Results",
-    kind: "image",
-    src: guideResultsImage,
-    alt: "Review answers and explanations and see time spent on each question.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-builder",
-    label: "Mock builder",
-    kind: "image",
-    src: guideBuilderImage,
-    alt: "Select topics and question count to build a timed practice exam.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-flashcards",
-    label: "Flashcards",
-    kind: "image",
-    src: guideFlashcardsImage,
-    alt: "Recall answers before revealing them and separate weak cards for revision.",
-    aspect: "16 / 9",
-  },
+  { key: "guide-chapters", label: "Chapters", kind: "image", src: guideChaptersAsset.url, alt: "Chapters — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-theory", label: "Theory", kind: "image", src: guideTheoryAsset.url, alt: "Theory — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-practice", label: "Practice", kind: "image", src: guidePracticeAsset.url, alt: "Practice — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-explanation", label: "Explanation", kind: "image", src: guideExplanationAsset.url, alt: "Explanation — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-language", label: "English", kind: "image", src: guideLanguageAsset.url, alt: "English — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-math", label: "Calculator", kind: "image", src: guideMathAsset.url, alt: "Calculator — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-mock", label: "Mock exam", kind: "image", src: guideMockAsset.url, alt: "Mock exam — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-results", label: "Results", kind: "image", src: guideResultsAsset.url, alt: "Results — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-builder", label: "Mock builder", kind: "image", src: guideBuilderAsset.url, alt: "Mock builder — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-flashcards", label: "Flashcards", kind: "image", src: guideFlashcardsAsset.url, alt: "Flashcards — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-matching", label: "Matching", kind: "image", src: guideMatchingAsset.url, alt: "Matching — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-tutor", label: "Tutor exam", kind: "image", src: guideTutorAsset.url, alt: "Tutor exam — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-sheet", label: "Answer sheet", kind: "image", src: guideSheetAsset.url, alt: "Answer sheet — Full BBE Course", aspect: "16 / 9" },
+  { key: "guide-timed", label: "Timed mode", kind: "image", src: guideTimedAsset.url, alt: "Timed mode — Full BBE Course", aspect: "16 / 9" },
 ];
 
 const ROULETTE_SLIDES: RouletteSlide[] = [

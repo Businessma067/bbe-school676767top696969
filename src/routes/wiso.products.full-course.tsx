@@ -1,13 +1,17 @@
-import guideDashboardImage from "@/assets/course-guide/wiso-dashboard-annotated.webp";
-import guideTheoryImage from "@/assets/course-guide/wiso-theory-annotated.webp";
-import guideTaskImage from "@/assets/course-guide/wiso-task-annotated.webp";
-import guideExplanationImage from "@/assets/course-guide/wiso-explanation-annotated.webp";
-import guideGermanImage from "@/assets/course-guide/wiso-german-annotated.webp";
-import guideMathImage from "@/assets/course-guide/wiso-math-annotated.webp";
-import guideMockImage from "@/assets/course-guide/wiso-mock-annotated.webp";
-import guideResultsImage from "@/assets/course-guide/wiso-results-annotated.webp";
-import guideBuilderImage from "@/assets/course-guide/wiso-builder-annotated.webp";
-import guideFlashcardsImage from "@/assets/course-guide/wiso-flashcards-annotated.webp";
+import guideChaptersAsset from "@/assets/course-guide-v2/wiso-chapters.webp.asset.json";
+import guideTheoryAsset from "@/assets/course-guide-v2/wiso-theory.webp.asset.json";
+import guidePracticeAsset from "@/assets/course-guide-v2/wiso-practice.webp.asset.json";
+import guideExplanationAsset from "@/assets/course-guide-v2/wiso-explanation.webp.asset.json";
+import guideLanguageAsset from "@/assets/course-guide-v2/wiso-language.webp.asset.json";
+import guideMathAsset from "@/assets/course-guide-v2/wiso-math.webp.asset.json";
+import guideMockAsset from "@/assets/course-guide-v2/wiso-mock.webp.asset.json";
+import guideResultsAsset from "@/assets/course-guide-v2/wiso-results.webp.asset.json";
+import guideBuilderAsset from "@/assets/course-guide-v2/wiso-builder.webp.asset.json";
+import guideFlashcardsAsset from "@/assets/course-guide-v2/wiso-flashcards.webp.asset.json";
+import guideMatchingAsset from "@/assets/course-guide-v2/wiso-matching.webp.asset.json";
+import guideTutorAsset from "@/assets/course-guide-v2/wiso-tutor.webp.asset.json";
+import guideSheetAsset from "@/assets/course-guide-v2/wiso-sheet.webp.asset.json";
+import guideTimedAsset from "@/assets/course-guide-v2/wiso-timed.webp.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
@@ -40,86 +44,20 @@ const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const FULL_COURSE_PRICE = 411;
 
 const GUIDE_SLIDES: RouletteSlide[] = [
-  {
-    key: "guide-dashboard",
-    label: "Übersicht",
-    kind: "image",
-    src: guideDashboardImage,
-    alt: "Lernfortschritt und Trefferquote verfolgen und die Vorbereitung fortsetzen.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-theory",
-    label: "Theorie",
-    kind: "image",
-    src: guideTheoryImage,
-    alt: "Kapiteltheorie verstehen und direkt üben.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-task",
-    label: "Aufgabe",
-    kind: "image",
-    src: guideTaskImage,
-    alt: "Mit Zeitlimit trainieren, Aussagen prüfen und Fehler verstehen.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-explanation",
-    label: "Erklärung",
-    kind: "image",
-    src: guideExplanationImage,
-    alt: "Ausführliche Begründungen für jede richtige und falsche Aussage.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-german",
-    label: "Deutsch",
-    kind: "image",
-    src: guideGermanImage,
-    alt: "Textbelege markieren und Notizen beim Leseverständnis ergänzen.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-math",
-    label: "Mathe",
-    kind: "image",
-    src: guideMathImage,
-    alt: "Rechnen, ohne die Aufgabe zu verlassen.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-mock",
-    label: "Probeklausur",
-    kind: "image",
-    src: guideMockImage,
-    alt: "Alle Fächer in einer Probeklausur üben und schwierige Fragen für später markieren.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-results",
-    label: "Ergebnis",
-    kind: "image",
-    src: guideResultsImage,
-    alt: "Antworten mit Erklärungen prüfen und die Zeit pro Frage analysieren.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-builder",
-    label: "Mock-Builder",
-    kind: "image",
-    src: guideBuilderImage,
-    alt: "Themen und Fragenanzahl auswählen und mit Zeitlimit üben.",
-    aspect: "16 / 9",
-  },
-  {
-    key: "guide-flashcards",
-    label: "Karteikarten",
-    kind: "image",
-    src: guideFlashcardsImage,
-    alt: "Antworten aktiv erinnern und schwache Karten gezielt wiederholen.",
-    aspect: "16 / 9",
-  },
+  { key: "guide-chapters", label: "Kapitel", kind: "image", src: guideChaptersAsset.url, alt: "Kapitel — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-theory", label: "Theorie", kind: "image", src: guideTheoryAsset.url, alt: "Theorie — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-practice", label: "Aufgaben", kind: "image", src: guidePracticeAsset.url, alt: "Aufgaben — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-explanation", label: "Erklärungen", kind: "image", src: guideExplanationAsset.url, alt: "Erklärungen — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-language", label: "Deutsch", kind: "image", src: guideLanguageAsset.url, alt: "Deutsch — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-math", label: "Rechner", kind: "image", src: guideMathAsset.url, alt: "Rechner — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-mock", label: "Probeklausur", kind: "image", src: guideMockAsset.url, alt: "Probeklausur — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-results", label: "Ergebnisse", kind: "image", src: guideResultsAsset.url, alt: "Ergebnisse — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-builder", label: "Mock-Builder", kind: "image", src: guideBuilderAsset.url, alt: "Mock-Builder — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-flashcards", label: "Karteikarten", kind: "image", src: guideFlashcardsAsset.url, alt: "Karteikarten — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-matching", label: "Zuordnung", kind: "image", src: guideMatchingAsset.url, alt: "Zuordnung — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-tutor", label: "Tutor-Prüfung", kind: "image", src: guideTutorAsset.url, alt: "Tutor-Prüfung — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-sheet", label: "Antwortbogen", kind: "image", src: guideSheetAsset.url, alt: "Antwortbogen — Full WiSo Course", aspect: "16 / 9" },
+  { key: "guide-timed", label: "Zeitmodus", kind: "image", src: guideTimedAsset.url, alt: "Zeitmodus — Full WiSo Course", aspect: "16 / 9" },
 ];
 
 const ROULETTE_SLIDES: RouletteSlide[] = [
