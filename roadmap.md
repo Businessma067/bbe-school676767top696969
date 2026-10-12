@@ -1,8 +1,8 @@
 # Roadmap
 
-- [ ] Place gallery captions outside interface text and connect them to relevant controls with short arrows.
+- [x] Place consistent gallery captions in empty interface areas and connect them to relevant controls with short arrows; all 20 images load at 3200×1800 in both galleries without browser errors.
 
-- [x] Remove crossing arrows from all 20 course images; use subtle local highlights and one consistent caption style. Both galleries load all slides without runtime errors; build OK.
+- [x] Replace old annotations with clean captures, subtle local highlights and one consistent caption style; verify both galleries in the browser.
 
 - [x] Replace generic product-image callouts with meaningful exam-preparation features in both course galleries; preserve original 3200×1800 screenshots and verify all slides in the browser.
 
