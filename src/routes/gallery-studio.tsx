@@ -21,7 +21,7 @@ function Studio() {
   const tab = ['chapters','theory'].includes(feature) ? 'theory' : ['mock','results','sheet'].includes(feature) ? 'mock-exams' : feature === 'builder' ? 'mock-builder' : ['flashcards','matching','tutor'].includes(feature) ? 'games' : 'course';
   const slideKey = feature === 'tutor' ? 'tutor-exam' : feature === 'language' ? 'german' : feature === 'math' ? 'math' : feature;
   const demo = track === 'wiso' ? <WisoHowItWorksDemo tab={tab} slideKey={slideKey} rest={1} /> : tab === 'theory' ? <CourseTheoryDemo /> : tab === 'mock-exams' ? <CourseMockExamDemo /> : tab === 'mock-builder' ? <CourseMockDemo /> : feature === 'flashcards' ? <CourseFlashDemo /> : feature === 'matching' ? <CourseMatchDemo /> : feature === 'tutor' ? <CourseTutorDemo /> : feature === 'math' ? <CourseMathDemo /> : feature === 'language' ? <CourseEnglishDemo /> : <CourseEconDemo />;
-  return <div data-no-i18n data-capture-stage className="fixed left-0 top-0 z-[9999] h-[720px] w-[1280px] overflow-hidden bg-background">
+  return <div data-no-i18n data-capture-stage data-feature={feature} data-track={track} className="fixed left-0 top-0 z-[9999] h-[720px] w-[1280px] overflow-hidden bg-background">
     {demo}
     {feature === 'sheet' && <div className="absolute bottom-6 right-6 top-20 z-50 w-[500px] overflow-hidden bg-card p-4"><ExamAnswerSheet variant={track === 'wiso' ? 'wiso' : 'bbe'} marksByNumber={{1:[true,false,true,false,false],3:[false,true,false,true,false]}} questionCount={34} currentQuestion={3} flaggedNumbers={new Set([5])} onNavigate={() => {}} onToggle={() => {}} /></div>}
   </div>;
