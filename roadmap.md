@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Improve BBE and WiSo product-gallery clarity with uncropped, equally sized images and full-screen detail viewing.
+- [x] Improve BBE and WiSo product-gallery clarity with uncropped, equally sized images and full-screen detail viewing.
 
 - [x] Enable magnification of the actual inline demonstration content at the selected point.
 
