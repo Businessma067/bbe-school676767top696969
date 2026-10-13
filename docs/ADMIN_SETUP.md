@@ -46,3 +46,11 @@ Run after the base promocodes migration:
 `supabase/migrations/20260907180000_discount_promocodes.sql`
 
 Adds ten unlimited `BBE-15-*` codes (15% off Lite + Full, expire 2026-12-06) and usage tracking.
+
+### Single-use 10% / 15% codes
+
+Run in Supabase → SQL Editor (safe to re-run):
+
+`supabase/migrations/20261013140000_discount_promocodes_10_15_single_use.sql`
+
+Adds ten `BBE-10-*` (10% once) and ten `BBE-15-*` (15% once) codes for any paid course (`max_uses = 1`). They show on `/admin/promocodes` after the SQL runs.
