@@ -27,17 +27,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [...hreflangLinks("/"), { rel: "canonical", href: "https://bbe-school.com/" }],
     meta: [
-      { title: "WU Vienna Entrance Exam Prep 2027 — BBE & WiSo | BBE School" },
+      { title: "WU Vienna Admission 2027 — BBE Exam & WiSo Prep | BBE School" },
       {
         name: "description",
         content:
-          "Prep for the 2027 WU entrance exam on BBE or WiSo with practice questions, timed mocks, and study tools built around the real format.",
+          "Prepare for WU Vienna admission in 2027: BBE exam (BBE Aufnahmetest) and WiSo entrance exam practice, timed mock exams, and study tools.",
       },
-      { property: "og:title", content: "WU Vienna Entrance Exam Prep 2027 — BBE & WiSo | BBE School" },
+      { property: "og:title", content: "WU Vienna Admission 2027 — BBE Exam & WiSo Prep | BBE School" },
       {
         property: "og:description",
         content:
-          "Practice questions, timed mocks, a mock builder, and study tools for WU Vienna’s BBE or WiSo entrance exam.",
+          "Prepare for WU Vienna admission in 2027 with BBE and WiSo entrance exam practice, timed mocks, a mock builder, and study tools.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://bbe-school.com/" },
@@ -139,14 +139,14 @@ export function Index() {
               </div>
 
               <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
-                Step by step preparation for your 2027 WU exam
+                WU Vienna entrance exam preparation 2027
               </h1>
               <p className="mt-3 font-display text-base font-semibold tracking-wide text-muted-foreground sm:mt-4 sm:text-xl">
                 WiSo, BBE, and Hybrid
               </p>
               <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
-                One platform for both entrance paths: pick a single track, or Hybrid if you want to
-                prepare for BBE and WiSo together.
+                Prepare for WU Vienna admission with BBE exam (BBE Aufnahmetest) or WiSo entrance
+                exam practice. Choose one track, or Hybrid to prepare for both together.
               </p>
             </div>
 
