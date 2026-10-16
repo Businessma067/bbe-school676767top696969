@@ -31,13 +31,13 @@ export const Route = createFileRoute("/bbe")({
   head: () => ({
     links: [...hreflangLinks("/bbe"), { rel: "canonical", href: "https://bbe-school.com/bbe" }],
     meta: [
-      { title: "WU Vienna BBE Exam Prep | Practice Simulator | BBE School" },
+      { title: "BBE Exam Prep 2027 — WU Vienna Aufnahmetest Simulator | BBE School" },
       {
         name: "description",
         content:
           "Prepare for the WU Vienna BBE entrance exam with realistic cases, timed mock exams, and step-by-step explanations for Economics, Mathematics, and English.",
       },
-      { property: "og:title", content: "WU Vienna BBE Exam Prep | Practice Simulator | BBE School" },
+      { property: "og:title", content: "BBE Exam Prep 2027 — WU Vienna Aufnahmetest Simulator | BBE School" },
       {
         property: "og:description",
         content:

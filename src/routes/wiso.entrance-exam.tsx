@@ -41,22 +41,22 @@ export const Route = createFileRoute("/wiso/entrance-exam")({
         crumb: "Overview",
         headline: "WU Vienna WiSo Entrance Exam: Format, Topics & Preparation Guide",
         description:
-          "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.",
+          "WU Wien WiSo Aufnahmetest 2027 explained: dates, subjects (economics, math, German), Teilpunktesystem scoring, places and a free timed mock exam to test yourself.",
       }),
     ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       {
-        title: "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School",
+        title: "WU WiSo Aufnahmetest 2027: Format, Topics & Free Mock | BBE School",
       },
       {
         name: "description",
         content:
-          "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.",
+          "WU Wien WiSo Aufnahmetest 2027 explained: dates, subjects (economics, math, German), Teilpunktesystem scoring, places and a free timed mock exam to test yourself.",
       },
       {
         property: "og:title",
-        content: "WU Vienna WiSo Entrance Exam: Format, Topics & Guide",
+        content: "WU WiSo Aufnahmetest 2027: Format, Topics & Free Mock",
       },
       {
         property: "og:description",
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/wiso/entrance-exam")({
       { name: "twitter:card", content: "summary_large_image" },
       ...wisoShareMeta(
         PATH,
-        "WU Vienna WiSo Entrance Exam: Format, Topics & Guide",
+        "WU WiSo Aufnahmetest 2027: Format, Topics & Free Mock",
         "What the WiSo Aufnahmeprüfung covers: structure, subjects, scoring, and how to prepare.",
       ),
       ...socialImageMetaForPath(PATH),

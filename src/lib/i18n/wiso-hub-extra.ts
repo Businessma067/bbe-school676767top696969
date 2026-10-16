@@ -679,6 +679,18 @@ export const wisoHubExtraDe: Record<string, string> = {
   "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School": "WiSo-Aufnahmeprüfung WU Wien: Ablauf, Format & Themen | BBE School",
   "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.": "Wie läuft die WiSo-Aufnahmeprüfung der WU Wien ab? Format, Fächer (Wirtschaft, Mathe, Deutsch), Teilpunktesystem, Studienplätze, das zweistufige Verfahren und die richtige Vorbereitung.",
   "Everything you need for the WiSo Aufnahmeprüfung, Wirtschaft verstehen, Mathematik, and German reading, built around the real format and Teilpunktesystem.": "Alles, was du für die WiSo-Aufnahmeprüfung brauchst – Wirtschaft verstehen, Mathematik und Deutsch-Leseverstehen – aufgebaut nach dem echten Format und Teilpunktesystem.",
+  "WU WiSo Aufnahmetest 2027: Format, Topics & Free Mock | BBE School": "WU WiSo Aufnahmetest 2027: Ablauf, Themen & gratis Probetest | BBE School",
+  "WU WiSo Aufnahmetest 2027: Format, Topics & Free Mock": "WU WiSo Aufnahmetest 2027: Ablauf, Themen & gratis Probetest",
+  "WU Wien WiSo Aufnahmetest 2027 explained: dates, subjects (economics, math, German), Teilpunktesystem scoring, places and a free timed mock exam to test yourself.": "Der WiSo Aufnahmetest der WU Wien 2027 erklärt: Termine, Fächer (Wirtschaft, Mathe, Deutsch), Teilpunktesystem, Studienplätze und ein gratis Probetest auf Zeit.",
+  "BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock | BBE School": "BBE Aufnahmetest WU 2027: Ablauf, Bewertung & gratis Probetest | BBE School",
+  "BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock": "BBE Aufnahmetest WU 2027: Ablauf, Bewertung & gratis Probetest",
+  "The WU Vienna BBE exam (Aufnahmetest) for 2027: format, topics, pass scores, difficulty and a free timed mock exam with explanations.": "Der BBE Aufnahmetest der WU Wien 2027: Format, Themen, Bestehensgrenze, Schwierigkeit und ein gratis Probetest auf Zeit mit Lösungen.",
+  "BBE & WiSo Exam Prep Courses 2027 — Free Demo | BBE School": "Vorbereitung WU Aufnahmetest BBE & WiSo 2027 — gratis Demo | BBE School",
+  "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3300+ questions, timed mock exams and step-by-step explanations.": "Vorbereitung auf den WU Aufnahmetest (BBE & WiSo) 2027: gratis mit 50+ Übungsaufgaben starten, dann 3300+ Fragen, Probetests auf Zeit und Schritt-für-Schritt-Lösungen.",
+  "How to Pass the BBE Exam 2027: Study Plan & Free Mock | BBE School": "BBE Aufnahmetest 2027 bestehen: Lernplan & gratis Probetest | BBE School",
+  "How to Pass the BBE Exam 2027: Study Plan & Free Mock": "BBE Aufnahmetest 2027 bestehen: Lernplan & gratis Probetest",
+  "Step-by-step BBE exam study plan for WU Vienna 2027: 4/8/12-week timelines, math focus areas, timed practice and a free mock exam to find your weak spots.": "Lernplan für den BBE Aufnahmetest der WU Wien 2027: 4/8/12-Wochen-Pläne, Mathe-Schwerpunkte, Üben auf Zeit und ein gratis Probetest für deine Schwächen.",
+  "BBE Exam Prep 2027 — WU Vienna Aufnahmetest Simulator | BBE School": "BBE Aufnahmetest Vorbereitung 2027 — WU Wien Simulator | BBE School",
   "before you grind volume.": "bevor du auf Menge trainierst.",
 };
 
