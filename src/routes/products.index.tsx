@@ -60,13 +60,13 @@ export const Route = createFileRoute("/products/")({
   head: () => ({
     links: [...hreflangLinks("/products"), { rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
-      { title: "Products for BBE, WiSo, and Hybrid | BBE School" },
+      { title: "BBE & WiSo Exam Prep Courses 2027 — Free Demo | BBE School" },
       {
         name: "description",
         content:
-          "Explore BBE School products: Demo-Practice, Full BBE Course, Full WiSo Course, and the Hybrid BBE + WiSo Course.",
+          "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3300+ questions, timed mock exams and step-by-step explanations.",
       },
-      { property: "og:title", content: "Products for BBE, WiSo, and Hybrid | BBE School" },
+      { property: "og:title", content: "BBE & WiSo Exam Prep Courses 2027 — Free Demo | BBE School" },
       {
         property: "og:description",
         content:

@@ -38,16 +38,16 @@ export const Route = createFileRoute("/bbe-entrance-exam")({
     links: [...hreflangLinks("/bbe-entrance-exam"), { rel: "canonical", href: "https://bbe-school.com/bbe-entrance-exam" }],
     meta: [
       {
-        title: "WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide | BBE School",
+        title: "BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock | BBE School",
       },
       {
         name: "description",
         content:
-          "What is the WU Vienna BBE entrance exam? Format, topics, scoring overview, difficulty, and how to prepare, with links to practice and the free demo course.",
+          "The WU Vienna BBE exam (Aufnahmetest) for 2027: format, topics, pass scores, difficulty and a free timed mock exam with explanations.",
       },
       {
         property: "og:title",
-        content: "WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide",
+        content: "BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock",
       },
       {
         property: "og:description",
@@ -207,7 +207,7 @@ const mistakes = [
 export function BbeEntranceExamHubPage() {
   return (
     <BbeExamShell
-      h1="WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide"
+      h1="BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock"
       lead="What is the WU Vienna BBE entrance exam, and what should you expect? This hub walks through format, subjects, scoring, difficulty, and preparation, then points you toward deeper guides and free practice."
       heroActions={
         <>

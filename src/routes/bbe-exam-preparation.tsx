@@ -19,16 +19,16 @@ export const Route = createFileRoute("/bbe-exam-preparation")({
     links: [...hreflangLinks("/bbe-exam-preparation"), { rel: "canonical", href: "https://bbe-school.com/bbe-exam-preparation" }],
     meta: [
       {
-        title: "How to Prepare for the WU Vienna BBE Entrance Exam | BBE School",
+        title: "How to Pass the BBE Exam 2027: Study Plan & Free Mock | BBE School",
       },
       {
         name: "description",
         content:
-          "How to prepare for the WU Vienna BBE entrance exam: diagnostic testing, subject assessment, study schedules, timed practice, mock exams and example 4/8/12-week timelines.",
+          "Step-by-step BBE exam study plan for WU Vienna 2027: 4/8/12-week timelines, math focus areas, timed practice and a free mock exam to find your weak spots.",
       },
       {
         property: "og:title",
-        content: "How to Prepare for the WU Vienna BBE Entrance Exam",
+        content: "How to Pass the BBE Exam 2027: Study Plan & Free Mock",
       },
       {
         property: "og:description",
@@ -102,7 +102,7 @@ const steps = [
 export function BbeExamPreparationPage() {
   return (
     <BbeExamShell
-      h1="How to Prepare for the WU Vienna BBE Entrance Exam"
+      h1="How to Pass the BBE Exam 2027: Study Plan & Free Mock"
       lead="A practical preparation path: diagnose your starting point, plan by subject, practise BBE-style questions, then move into timed mocks. Example timelines below are there to adapt, not copy."
       heroActions={
         <>
