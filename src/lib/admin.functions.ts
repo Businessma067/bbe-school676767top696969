@@ -8,6 +8,7 @@ import {
   fetchUserBundle,
   isAtRisk,
 } from "@/lib/admin-stats.server";
+import { resolveAdminCountry } from "@/lib/countries";
 import type {
   AdminCohortStats,
   AdminJsonValue,
@@ -231,12 +232,20 @@ export const adminGetCohortStats = createServerFn({ method: "GET" })
       scoreCount += 1;
     }
 
-    const profilesRes = await db.from("profiles").select("user_id, display_name");
-    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
+    const profilesRes = await db.from("profiles").select("user_id, display_name, signup_country");
+    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p]));
 
     const userRows = await Promise.all(
       authUsers.map((u) =>
-        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
+        buildAdminUserRow(
+          db,
+          u.id,
+          u.email,
+          u.created_at,
+          profileMap.get(u.id)?.display_name ?? null,
+          profileMap.get(u.id)?.signup_country ?? null,
+          u.phone ?? null,
+        ),
       ),
     );
 
@@ -280,12 +289,20 @@ export const adminListUsers = createServerFn({ method: "POST" })
       );
     }
 
-    const profilesRes = await db.from("profiles").select("user_id, display_name");
-    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
+    const profilesRes = await db.from("profiles").select("user_id, display_name, signup_country");
+    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p]));
 
     let rows = await Promise.all(
       authUsers.map((u) =>
-        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
+        buildAdminUserRow(
+          db,
+          u.id,
+          u.email,
+          u.created_at,
+          profileMap.get(u.id)?.display_name ?? null,
+          profileMap.get(u.id)?.signup_country ?? null,
+          u.phone ?? null,
+        ),
       ),
     );
 
@@ -328,7 +345,16 @@ export const adminListUsers = createServerFn({ method: "POST" })
       db,
       pageRows.map((u) => u.userId),
     );
-    const users = attachPaymentsToRows(pageRows, paymentsByUser);
+    const users = attachPaymentsToRows(pageRows, paymentsByUser).map((row) => ({
+      ...row,
+      country:
+        row.country ??
+        resolveAdminCountry({
+          payerCountryName:
+            row.payments.find((p) => p.status === "success" && p.payerCountryName)
+              ?.payerCountryName ?? null,
+        }),
+    }));
 
     return {
       users,
@@ -436,17 +462,25 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
     }
 
     const authUsers = await listAllAuthUsers(db, useServiceRole);
-    const profilesRes = await db.from("profiles").select("user_id, display_name");
-    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
+    const profilesRes = await db.from("profiles").select("user_id, display_name, signup_country");
+    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p]));
 
     const rows = await Promise.all(
       authUsers.map((u) =>
-        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
+        buildAdminUserRow(
+          db,
+          u.id,
+          u.email,
+          u.created_at,
+          profileMap.get(u.id)?.display_name ?? null,
+          profileMap.get(u.id)?.signup_country ?? null,
+          u.phone ?? null,
+        ),
       ),
     );
 
     const header =
-      "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,streak,accuracy";
+      "user_id,email,name,tier,country,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,streak,accuracy";
     const lines = [header];
     for (const u of rows) {
       lines.push(
@@ -463,6 +497,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
           u.mockAttempts,
           u.currentStreak,
           u.averageAccuracy ?? "",
+          u.country ?? "",
         ].join(","),
       );
     }
