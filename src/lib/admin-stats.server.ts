@@ -17,6 +17,7 @@ import {
   countryLabelFromNumeric,
   paymentMethodLabel,
 } from "@/lib/payment-display";
+import { resolveAdminCountry } from "@/lib/countries";
 import { buildStudyProgress, type SessionAnswerStat } from "@/lib/study-progress";
 import {
   computeStreak,
@@ -292,7 +293,7 @@ export async function fetchUserBundle(
     activityRes,
     paymentsRes,
   ] = await Promise.all([
-    db.from("profiles").select("display_name, created_at").eq("user_id", userId).maybeSingle(),
+    db.from("profiles").select("display_name, created_at, signup_country").eq("user_id", userId).maybeSingle(),
     db.from("user_roles").select("role").eq("user_id", userId),
     db
       .from("enrollments")
@@ -418,12 +419,21 @@ export async function fetchUserBundle(
     payments = (paymentsRes.data ?? []).map((row) => mapPaymentRow(row));
   }
 
+  const profileCountry = resolveAdminCountry({
+    signupCountry: profileRes.data?.signup_country ?? null,
+    phone,
+    payerCountryName:
+      payments.find((p) => p.status === "success" && p.payerCountryName)?.payerCountryName ?? null,
+  });
+
   return {
     profile: {
       userId,
       email,
       displayName,
       phone,
+      signupCountry: profileRes.data?.signup_country ?? null,
+      country: profileCountry,
       registeredAt: profileRes.data?.created_at ?? registeredAt,
       lastSeenAt: presenceRes.data?.last_seen_at ?? null,
       lastPath: presenceRes.data?.last_path ?? null,
@@ -469,6 +479,8 @@ export async function buildAdminUserRow(
   email: string,
   registeredAt: string,
   displayName: string | null,
+  signupCountry: string | null = null,
+  phone: string | null = null,
 ): Promise<AdminUserRow> {
   const [rolesRes, enrollmentsRes, presenceRes, tasksRes, mocksRes] = await Promise.all([
     db.from("user_roles").select("role").eq("user_id", userId),
@@ -511,6 +523,7 @@ export async function buildAdminUserRow(
     registeredAt,
     lastSeenAt: presence?.last_seen_at ?? null,
     lastPath: presence?.last_path ?? null,
+    country: resolveAdminCountry({ signupCountry, phone }),
     tier: highestTier(enrollments.map((e) => e.tier)),
     roles: roles.map((r) => r.role),
     tasksPassed: passed,
