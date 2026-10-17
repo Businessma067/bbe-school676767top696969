@@ -35,6 +35,9 @@ import {
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import { DemoLockNote } from "@/components/DemoLockNote";
+import { AuthModal } from "@/components/AuthModal";
+import { useAuthGate } from "@/hooks/use-auth-gate";
+import { guestAccessByTaskId } from "@/lib/guest-preview";
 import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
 import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
 import {
@@ -148,6 +151,8 @@ export function EconomicsTasksPage({
   };
   const isLocked = (chapter: number | "revision" | null, idx: number) =>
     idx >= freeLimitOf(chapter);
+  const guestGateOn = Number.isFinite(freeLimitPerChapter);
+  const authGate = useAuthGate();
   const [cases, setCases] = useState<Case[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
@@ -279,6 +284,24 @@ export function EconomicsTasksPage({
     });
     return map;
   }, [cases]);
+
+  const guestAccess = useMemo(() => {
+    if (!guestGateOn) return null;
+    const ordered: { id: string; demoLocked: boolean }[] = [];
+    for (const ch of CHAPTERS) {
+      const list = byChapter.get(ch.num) ?? [];
+      list.forEach((task, i) => {
+        ordered.push({ id: task.id, demoLocked: i >= freeLimitPerChapter });
+      });
+    }
+    return guestAccessByTaskId(ordered);
+  }, [guestGateOn, CHAPTERS, byChapter, freeLimitPerChapter]);
+  const holdGuest = (taskId: string) => {
+    if (!guestGateOn || authGate.signedIn) return false;
+    if (guestAccess?.get(taskId) === "play") return false;
+    authGate.setAuthOpen(true);
+    return true;
+  };
 
   const revisionCases = useMemo(
     () => (cases ?? []).filter((c) => progress.revision.includes(c.id)),
@@ -590,10 +613,16 @@ export function EconomicsTasksPage({
                           const lockedOpacity = locked
                             ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                             : undefined;
+                          const needsAccount =
+                            !locked &&
+                            guestGateOn &&
+                            !authGate.signedIn &&
+                            guestAccess?.get(c.id) === "register";
                           return (
                             <li key={c.id}>
                               <button
                                 onClick={() => {
+                                  if (holdGuest(c.id)) return;
                                   setTheoryChapter(null);
                                   skipNextIdxResetRef.current = true;
                                   setActiveChapter(ch.num);
@@ -604,12 +633,13 @@ export function EconomicsTasksPage({
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
                                   locked && "text-muted-foreground",
+                                  needsAccount && "text-muted-foreground",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                    locked
+                                    locked || needsAccount
                                       ? "border-transparent bg-transparent text-muted-foreground"
                                       : passed
                                         ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
@@ -618,17 +648,17 @@ export function EconomicsTasksPage({
                                           : "border-border bg-background",
                                   )}
                                 >
-                                  {locked && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
-                                  {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
-                                  {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
+                                  {(locked || needsAccount) && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
+                                  {!locked && !needsAccount && passed && <Check className="h-3 w-3" strokeWidth={3} />}
+                                  {!locked && !needsAccount && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && "line-through text-muted-foreground")}>
-                                  Task {i + 1}{locked && " · Locked"}
+                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && !needsAccount && "line-through text-muted-foreground")}>
+                                  Task {i + 1}{locked && " · Locked"}{needsAccount && " · Account"}
                                 </span>
-                                {timed.enabled && !locked && (
+                                {timed.enabled && !locked && !needsAccount && (
                                   <TimerStatusDot entry={timed.state[c.id]} />
                                 )}
-                                {!locked && c.difficulty_level !== "—" && (
+                                {!locked && !needsAccount && c.difficulty_level !== "—" && (
                                   <DifficultyBars level={c.difficulty_level} />
                                 )}
                               </button>
@@ -646,6 +676,10 @@ export function EconomicsTasksPage({
                                 type="button"
                                 style={{ opacity }}
                                 onClick={() => {
+                                  if (guestGateOn && !authGate.signedIn) {
+                                    authGate.setAuthOpen(true);
+                                    return;
+                                  }
                                   const lockedIdx = list.findIndex((_, i) => isLocked(ch.num, i));
                                   skipNextIdxResetRef.current = true;
                                   setTheoryChapter(null);
@@ -851,15 +885,24 @@ export function EconomicsTasksPage({
                 {activeIdx + 1} / {activeList.length}
               </span>
               <button
-                onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
+                onClick={() => {
+                  const next = activeList[activeIdx + 1];
+                  if (next && holdGuest(next.id)) return;
+                  if (isLocked(activeChapter, activeIdx + 1)) return;
+                  setActiveIdx((i) => Math.min(activeList.length - 1, i + 1));
+                }}
                 disabled={
                   activeIdx >= activeList.length - 1 ||
-                  isLocked(activeChapter, activeIdx + 1)
+                  ((authGate.signedIn || !guestGateOn) && isLocked(activeChapter, activeIdx + 1))
                 }
-                title={isLocked(activeChapter, activeIdx + 1) ? "Next task is locked in the demo" : undefined}
+                title={
+                  (authGate.signedIn || !guestGateOn) && isLocked(activeChapter, activeIdx + 1)
+                    ? "Next task is locked in the demo"
+                    : undefined
+                }
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
+                {(authGate.signedIn || !guestGateOn) && isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
               </button>
             </div>
           )}
@@ -894,6 +937,16 @@ export function EconomicsTasksPage({
         <TimeoutModal
           onOvertime={() => timed.chooseOvertime(activeCase.id)}
           onReview={() => timed.chooseReview(activeCase.id)}
+        />
+      )}
+
+      {guestGateOn && (
+        <AuthModal
+          open={authGate.authOpen}
+          onOpenChange={authGate.setAuthOpen}
+          defaultMode="signup"
+          guestPreview
+          guestPreviewLang={examLabel.toLowerCase().includes("wiso") ? "de" : "en"}
         />
       )}
 

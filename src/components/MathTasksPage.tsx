@@ -12,6 +12,7 @@ import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
+import { guestAccessByTaskId } from "@/lib/guest-preview";
 import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import { DemoLockNote } from "@/components/DemoLockNote";
 import {
@@ -194,8 +195,35 @@ export function MathTasksPage({
   const loadedTasksRef = useRef(loadedTasks);
   loadedTasksRef.current = loadedTasks;
   const authGate = useAuthGate();
-  const requireAuthForAnswers =
-    tier === "demo" ? authGate.requireAuth : () => true;
+  const guestAccess = useMemo(() => {
+    if (tier !== "demo") return null;
+    const ordered: { id: string; demoLocked: boolean }[] = [];
+    let opened = 0;
+    let waitingForEarlier = false;
+    for (const ch of chapters) {
+      const list = loadedTasks[ch.num];
+      if (!list) {
+        waitingForEarlier = true;
+        continue;
+      }
+      list.forEach((task, i) => {
+        if (task.placeholder) return;
+        const demoLocked = isLocked(tier, ch.num, i, list);
+        ordered.push({
+          id: task.id,
+          demoLocked: waitingForEarlier || demoLocked || opened >= 2,
+        });
+        if (!waitingForEarlier && !demoLocked && opened < 2) opened += 1;
+      });
+    }
+    return guestAccessByTaskId(ordered);
+  }, [tier, chapters, loadedTasks]);
+  const holdGuest = (taskId: string) => {
+    if (tier !== "demo" || authGate.signedIn) return false;
+    if (guestAccess?.get(taskId) === "play") return false;
+    authGate.setAuthOpen(true);
+    return true;
+  };
   const [unlockOpen, setUnlockOpen] = useState(false);
 
   const openUnlockPrompt = () => {
@@ -316,6 +344,12 @@ export function MathTasksPage({
   }, [tier, activeChapter, activeList, activeIdx]);
 
   const activeCase = activeList[activeIdx];
+  const requireAuthForAnswers = () => {
+    if (tier !== "demo") return true;
+    const taskId = activeCase?.id;
+    if (taskId && guestAccess?.get(taskId) === "play" && !authGate.signedIn) return true;
+    return authGate.requireAuth();
+  };
   // Defer heavy KaTeX task body so chapter/task list clicks paint immediately.
   const deferredCase = useDeferredValue(activeCase);
   const deferredCaseRef = useRef(deferredCase);
@@ -776,11 +810,16 @@ export function MathTasksPage({
                                                 0.6 - Math.min(lockedPos, 2) * 0.22,
                                               )
                                             : undefined;
+                                          const needsAccount =
+                                            !locked &&
+                                            !authGate.signedIn &&
+                                            guestAccess?.get(c.id) === "register";
                                           return (
                                             <li key={c.id}>
                                               <button
                                                 type="button"
                                                 onClick={() => {
+                                                  if (holdGuest(c.id)) return;
                                                   if (locked) {
                                                     openUnlockPrompt();
                                                     skipNextIdxResetRef.current = true;
@@ -802,14 +841,14 @@ export function MathTasksPage({
                                                   active
                                                     ? "font-semibold text-primary"
                                                     : "text-foreground hover:bg-secondary/60",
-                                                  locked &&
+                                                  (locked || needsAccount) &&
                                                     "text-muted-foreground hover:bg-secondary/40",
                                                 )}
                                               >
                                                 <span
                                                   className={cn(
                                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                                    locked
+                                                    locked || needsAccount
                                                       ? "border-transparent bg-transparent text-muted-foreground"
                                                       : passed
                                                         ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
@@ -818,13 +857,13 @@ export function MathTasksPage({
                                                           : "border-border bg-background",
                                                   )}
                                                 >
-                                                  {locked && (
+                                                  {(locked || needsAccount) && (
                                                     <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
                                                   )}
-                                                  {!locked && passed && (
+                                                  {!locked && !needsAccount && passed && (
                                                     <Check className="h-3 w-3" strokeWidth={3} />
                                                   )}
-                                                  {!locked && !passed && rev && (
+                                                  {!locked && !needsAccount && !passed && rev && (
                                                     <X className="h-3 w-3" strokeWidth={3} />
                                                   )}
                                                 </span>
@@ -833,16 +872,19 @@ export function MathTasksPage({
                                                     "min-w-0 flex-1 truncate",
                                                     passed &&
                                                       !locked &&
+                                                      !needsAccount &&
                                                       "text-muted-foreground line-through",
                                                   )}
                                                 >
                                                   Task {localI + 1}
                                                   {locked && " · Locked"}
+                                                  {needsAccount && " · Account"}
                                                 </span>
-                                                {!locked && !c.placeholder && (
+                                                {!locked && !needsAccount && !c.placeholder && (
                                                   <TimerStatusDot entry={timed.state[c.id]} />
                                                 )}
                                                 {!locked &&
+                                                  !needsAccount &&
                                                   !c.placeholder &&
                                                   c.difficulty_level !== "—" && (
                                                     <DifficultyBars level={c.difficulty_level} />
@@ -865,11 +907,16 @@ export function MathTasksPage({
                                 const lockedOpacity = locked
                                   ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                                   : undefined;
+                                const needsAccount =
+                                  !locked &&
+                                  !authGate.signedIn &&
+                                  guestAccess?.get(c.id) === "register";
                                 return (
                                   <li key={c.id}>
                                     <button
                                       type="button"
                                       onClick={() => {
+                                        if (holdGuest(c.id)) return;
                                         if (locked) {
                                           openUnlockPrompt();
                                           skipNextIdxResetRef.current = true;
@@ -889,14 +936,14 @@ export function MathTasksPage({
                                         active
                                           ? "font-semibold text-primary"
                                           : "text-foreground hover:bg-secondary/60",
-                                        locked &&
+                                        (locked || needsAccount) &&
                                           "text-muted-foreground hover:bg-secondary/40",
                                       )}
                                     >
                                       <span
                                         className={cn(
                                           "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                          locked
+                                          locked || needsAccount
                                             ? "border-transparent bg-transparent text-muted-foreground"
                                             : passed
                                               ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
@@ -905,27 +952,36 @@ export function MathTasksPage({
                                                 : "border-border bg-background",
                                         )}
                                       >
-                                        {locked && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
-                                        {!locked && passed && (
+                                        {(locked || needsAccount) && (
+                                          <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
+                                        )}
+                                        {!locked && !needsAccount && passed && (
                                           <Check className="h-3 w-3" strokeWidth={3} />
                                         )}
-                                        {!locked && !passed && rev && (
+                                        {!locked && !needsAccount && !passed && rev && (
                                           <X className="h-3 w-3" strokeWidth={3} />
                                         )}
                                       </span>
                                       <span
                                         className={cn(
                                           "min-w-0 flex-1 truncate",
-                                          passed && !locked && "text-muted-foreground line-through",
+                                          passed &&
+                                            !locked &&
+                                            !needsAccount &&
+                                            "text-muted-foreground line-through",
                                         )}
                                       >
                                         Task {i + 1}
                                         {locked && " · Locked"}
+                                        {needsAccount && " · Account"}
                                       </span>
-                                      {!locked && !c.placeholder && (
+                                      {!locked && !needsAccount && !c.placeholder && (
                                         <TimerStatusDot entry={timed.state[c.id]} />
                                       )}
-                                      {!locked && !c.placeholder && c.difficulty_level !== "—" && (
+                                      {!locked &&
+                                        !needsAccount &&
+                                        !c.placeholder &&
+                                        c.difficulty_level !== "—" && (
                                         <DifficultyBars level={c.difficulty_level} />
                                       )}
                                     </button>
@@ -1181,6 +1237,16 @@ export function MathTasksPage({
               <button
                 type="button"
                 onClick={() => {
+                  if (!authGate.signedIn && tier === "demo") {
+                    const nextId =
+                      nextTaskIdx !== null ? activeList[nextTaskIdx]?.id : undefined;
+                    if (nextId) {
+                      if (holdGuest(nextId)) return;
+                    } else if (remainingLocked) {
+                      authGate.setAuthOpen(true);
+                      return;
+                    }
+                  }
                   if (remainingLocked && tier === "demo") {
                     openUnlockPrompt();
                     if (activeIdx < activeList.length - 1) {
@@ -1250,7 +1316,13 @@ export function MathTasksPage({
       )}
 
       {tier === "demo" && (
-        <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+        <AuthModal
+          open={authGate.authOpen}
+          onOpenChange={authGate.setAuthOpen}
+          defaultMode="signup"
+          guestPreview
+          guestPreviewLang={contentLang === "de" ? "de" : "en"}
+        />
       )}
 
       {tier === "demo" && (

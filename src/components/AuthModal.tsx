@@ -30,6 +30,12 @@ type AuthModalProps = {
   /** Called after a successful sign-in (email password or Google without redirect). */
   onSignedIn?: () => void;
   defaultMode?: Mode;
+  /**
+   * Visitor tried to go past the two no-account tasks.
+   * Same dialog, with the free-preview offer.
+   */
+  guestPreview?: boolean;
+  guestPreviewLang?: "en" | "de";
 };
 
 export function AuthModal({
@@ -37,6 +43,8 @@ export function AuthModal({
   onOpenChange,
   onSignedIn,
   defaultMode = "signin",
+  guestPreview = false,
+  guestPreviewLang = "en",
 }: AuthModalProps) {
   const navigate = useLocalizedNavigate();
   const [mode, setMode] = useState<Mode>(defaultMode);
@@ -197,14 +205,36 @@ export function AuthModal({
       <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="font-display text-xl">
-            {mode === "signin" ? "Sign in to continue" : "Create your account"}
+            {guestPreview
+              ? guestPreviewLang === "de"
+                ? "100+ kostenlose Aufgaben freischalten"
+                : "Unlock 100+ free tasks"
+              : mode === "signin"
+                ? "Sign in to continue"
+                : "Create your account"}
           </DialogTitle>
           <DialogDescription>
-            {mode === "signin"
-              ? "Sign in to answer demo questions and save your progress."
-              : "Create a free account to practice demo questions."}
+            {guestPreview
+              ? guestPreviewLang === "de"
+                ? "Dafür reicht ein kostenloses Konto. Zwei Aufgaben pro Fach kannst du auch ohne Konto lösen."
+                : "Create a free account to keep going. Two tasks in each subject are open with no account."
+              : mode === "signin"
+                ? "Sign in to answer demo questions and save your progress."
+                : "Create a free account to practice demo questions."}
           </DialogDescription>
         </DialogHeader>
+
+        {guestPreview ? (
+          <button
+            type="button"
+            onClick={() => onOpenChange(false)}
+            className="text-sm font-semibold text-primary hover:underline"
+          >
+            {guestPreviewLang === "de"
+              ? "Kostenlose Aufgaben ohne Konto ausprobieren"
+              : "try the free tasks without an account"}
+          </button>
+        ) : null}
 
         <div className="grid grid-cols-2 gap-1 rounded-lg border border-border bg-secondary/50 p-1">
           <button

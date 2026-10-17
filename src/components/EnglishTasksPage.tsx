@@ -12,6 +12,7 @@ import {
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { useAuthGate } from "@/hooks/use-auth-gate";
+import { guestAccessByTaskId } from "@/lib/guest-preview";
 import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
@@ -212,8 +213,25 @@ export function EnglishTasksPage({
   const [showExplanations, setShowExplanations] = useState(false);
   const timed = useTimedSession();
   const authGate = useAuthGate();
-  const requireAuthForAnswers =
-    tier === "demo" ? authGate.requireAuth : () => true;
+  const guestAccess = useMemo(() => {
+    if (tier !== "demo") return null;
+    const ordered: { id: string; demoLocked: boolean }[] = [];
+    for (const ch of chapters) {
+      ch.tasks.forEach((task, i) => {
+        ordered.push({
+          id: task.id,
+          demoLocked: isLocked(tier, i, ch.tasks, demoSubsectionFree),
+        });
+      });
+    }
+    return guestAccessByTaskId(ordered);
+  }, [tier, chapters, demoSubsectionFree]);
+  const holdGuest = (taskId: string) => {
+    if (tier !== "demo" || authGate.signedIn) return false;
+    if (guestAccess?.get(taskId) === "play") return false;
+    authGate.setAuthOpen(true);
+    return true;
+  };
 
   useEffect(() => {
     setMobileChaptersOpen(false);
@@ -280,6 +298,26 @@ export function EnglishTasksPage({
         ? []
         : (byChapter.get(activeChapter) ?? []);
   const activeCase = activeList[activeIdx];
+  const requireAuthForAnswers = () => {
+    if (tier !== "demo") return true;
+    const taskId = activeCase?.id;
+    if (taskId && guestAccess?.get(taskId) === "play" && !authGate.signedIn) return true;
+    return authGate.requireAuth();
+  };
+  const nextIsDemoLocked =
+    tier === "demo" &&
+    activeIdx + 1 < activeList.length &&
+    isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree);
+  const goNext = () => {
+    const next = activeList[activeIdx + 1];
+    if (!next) return;
+    if (holdGuest(next.id)) return;
+    if (nextIsDemoLocked) return;
+    setActiveIdx((i) => Math.min(activeList.length - 1, i + 1));
+  };
+  const nextDisabled =
+    activeIdx >= activeList.length - 1 ||
+    ((authGate.signedIn || tier !== "demo") && nextIsDemoLocked);
   const activePassageDe = passageForTask(activeCase, chapters);
   const isTextsCase =
     !!activeCase &&
@@ -671,11 +709,16 @@ export function EnglishTasksPage({
                                                   0.6 - Math.min(lockedPos, 2) * 0.22,
                                                 )
                                               : undefined;
+                                            const needsAccount =
+                                              !locked &&
+                                              !authGate.signedIn &&
+                                              guestAccess?.get(c.id) === "register";
                                             return (
                                               <li key={c.id}>
                                                 <button
                                                   type="button"
                                                   onClick={() => {
+                                                    if (holdGuest(c.id)) return;
                                                     skipNextIdxResetRef.current = true;
                                                     setActiveChapter(ch.key);
                                                     setActiveIdx(i);
@@ -690,14 +733,14 @@ export function EnglishTasksPage({
                                                     active
                                                       ? "font-semibold text-primary"
                                                       : "text-foreground hover:bg-secondary/60",
-                                                    locked &&
+                                                    (locked || needsAccount) &&
                                                       "cursor-not-allowed text-muted-foreground hover:bg-transparent",
                                                   )}
                                                 >
                                                   <span
                                                     className={cn(
                                                       "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                                      locked
+                                                      locked || needsAccount
                                                         ? "border-transparent bg-transparent text-muted-foreground"
                                                         : passed
                                                           ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
@@ -706,19 +749,19 @@ export function EnglishTasksPage({
                                                             : "border-border bg-background",
                                                     )}
                                                   >
-                                                    {locked && (
+                                                    {(locked || needsAccount) && (
                                                       <Lock
                                                         className="h-2.5 w-2.5"
                                                         strokeWidth={2.5}
                                                       />
                                                     )}
-                                                    {!locked && passed && (
+                                                    {!locked && !needsAccount && passed && (
                                                       <Check
                                                         className="h-3 w-3"
                                                         strokeWidth={3}
                                                       />
                                                     )}
-                                                    {!locked && !passed && rev && (
+                                                    {!locked && !needsAccount && !passed && rev && (
                                                       <X
                                                         className="h-3 w-3"
                                                         strokeWidth={3}
@@ -730,16 +773,18 @@ export function EnglishTasksPage({
                                                       "min-w-0 flex-1 truncate",
                                                       passed &&
                                                         !locked &&
+                                                        !needsAccount &&
                                                         "text-muted-foreground line-through",
                                                     )}
                                                   >
                                                     Task {localI + 1}
                                                     {locked && " · Locked"}
+                                                    {needsAccount && " · Account"}
                                                   </span>
-                                                  {!locked && (
+                                                  {!locked && !needsAccount && (
                                                     <TimerStatusDot entry={timed.state[c.id]} />
                                                   )}
-                                                  {!locked && c.difficulty_level !== "—" && (
+                                                  {!locked && !needsAccount && c.difficulty_level !== "—" && (
                                                     <DifficultyBars
                                                       level={c.difficulty_level}
                                                     />
@@ -760,11 +805,16 @@ export function EnglishTasksPage({
                                   const rev = progress.revision.includes(c.id);
                                   const active =
                                     isActiveCh && activeList[activeIdx]?.id === c.id;
+                                  const needsAccount =
+                                    !locked &&
+                                    !authGate.signedIn &&
+                                    guestAccess?.get(c.id) === "register";
                                   return (
                                     <li key={c.id}>
                                       <button
                                         type="button"
                                         onClick={() => {
+                                          if (holdGuest(c.id)) return;
                                           skipNextIdxResetRef.current = true;
                                           setActiveChapter(ch.key);
                                           setActiveIdx(i);
@@ -774,14 +824,14 @@ export function EnglishTasksPage({
                                           active
                                             ? "font-semibold text-primary"
                                             : "text-foreground hover:bg-secondary/60",
-                                          locked &&
+                                          (locked || needsAccount) &&
                                             "cursor-not-allowed text-muted-foreground hover:bg-transparent",
                                         )}
                                       >
                                         <span
                                           className={cn(
                                             "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                            locked
+                                            locked || needsAccount
                                               ? "border-transparent bg-transparent text-muted-foreground"
                                               : passed
                                                 ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
@@ -790,13 +840,13 @@ export function EnglishTasksPage({
                                                   : "border-border bg-background",
                                           )}
                                         >
-                                          {locked && (
+                                          {(locked || needsAccount) && (
                                             <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
                                           )}
-                                          {!locked && passed && (
+                                          {!locked && !needsAccount && passed && (
                                             <Check className="h-3 w-3" strokeWidth={3} />
                                           )}
-                                          {!locked && !passed && rev && (
+                                          {!locked && !needsAccount && !passed && rev && (
                                             <X className="h-3 w-3" strokeWidth={3} />
                                           )}
                                         </span>
@@ -805,13 +855,15 @@ export function EnglishTasksPage({
                                             "min-w-0 flex-1 truncate",
                                             passed &&
                                               !locked &&
+                                              !needsAccount &&
                                               "text-muted-foreground line-through",
                                           )}
                                         >
                                           Task {i + 1}
                                           {locked && " · Locked"}
+                                          {needsAccount && " · Account"}
                                         </span>
-                                        {!locked && (
+                                        {!locked && !needsAccount && (
                                           <TimerStatusDot entry={timed.state[c.id]} />
                                         )}
                                       </button>
@@ -1049,15 +1101,11 @@ export function EnglishTasksPage({
                       </span>
                       <button
                         type="button"
-                        onClick={() =>
-                          setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))
-                        }
-                        disabled={
-                          activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree)
-                        }
+                        onClick={goNext}
+                        disabled={nextDisabled}
                         className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
                       >
-                        {isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree) ? (
+                        {(authGate.signedIn || tier !== "demo") && nextIsDemoLocked ? (
                           <>
                             <Lock className="h-3.5 w-3.5" /> Locked
                           </>
@@ -1131,13 +1179,11 @@ export function EnglishTasksPage({
                 </span>
                 <button
                   type="button"
-                  onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
-                  disabled={
-                    activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree)
-                  }
+                  onClick={goNext}
+                  disabled={nextDisabled}
                   className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
                 >
-                  {isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree) ? (
+                  {(authGate.signedIn || tier !== "demo") && nextIsDemoLocked ? (
                     <>
                       <Lock className="h-3.5 w-3.5" /> Locked
                     </>
@@ -1173,7 +1219,13 @@ export function EnglishTasksPage({
       </div>
 
       {tier === "demo" && (
-        <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+        <AuthModal
+          open={authGate.authOpen}
+          onOpenChange={authGate.setAuthOpen}
+          defaultMode="signup"
+          guestPreview
+          guestPreviewLang={progressSubject === "german" ? "de" : "en"}
+        />
       )}
 
       {timed.enabled && activeCase && activeTimer?.awaitingChoice && (

@@ -32,6 +32,7 @@ import {
 import { DifficultyBars } from "@/components/DifficultyBars";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { useAuthGate } from "@/hooks/use-auth-gate";
+import { guestAccessByTaskId } from "@/lib/guest-preview";
 import {
   UnansweredIndicator,
   countUnansweredTasks,
@@ -241,6 +242,23 @@ function EconomicsTasks() {
     return map;
   }, [cases]);
 
+  const guestAccess = useMemo(() => {
+    const ordered: { id: string; demoLocked: boolean }[] = [];
+    for (const ch of CHAPTERS) {
+      const list = byChapter.get(ch.num) ?? [];
+      list.forEach((task, i) => {
+        ordered.push({ id: task.id, demoLocked: isLocked(ch.num, i) });
+      });
+    }
+    return guestAccessByTaskId(ordered);
+  }, [byChapter]);
+  const holdGuest = (taskId: string) => {
+    if (authGate.signedIn) return false;
+    if (guestAccess.get(taskId) === "play") return false;
+    authGate.setAuthOpen(true);
+    return true;
+  };
+
   const revisionCases = useMemo(
     () => (cases ?? []).filter((c) => progress.revision.includes(c.id)),
     [cases, progress.revision],
@@ -438,10 +456,13 @@ function EconomicsTasks() {
                           const lockedOpacity = locked
                             ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                             : undefined;
+                          const needsAccount =
+                            !locked && !authGate.signedIn && guestAccess.get(c.id) === "register";
                           return (
                             <li key={c.id}>
                               <button
                                 onClick={() => {
+                                  if (holdGuest(c.id)) return;
                                   skipNextIdxResetRef.current = true;
                                   setActiveChapter(ch.num);
                                   setActiveIdx(i);
@@ -451,12 +472,13 @@ function EconomicsTasks() {
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
                                   locked && "text-muted-foreground",
+                                  needsAccount && "text-muted-foreground",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                    locked
+                                    locked || needsAccount
                                       ? "border-transparent bg-transparent text-muted-foreground"
                                       : passed
                                         ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
@@ -465,17 +487,17 @@ function EconomicsTasks() {
                                           : "border-border bg-background",
                                   )}
                                 >
-                                  {locked && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
-                                  {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
-                                  {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
+                                  {(locked || needsAccount) && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
+                                  {!locked && !needsAccount && passed && <Check className="h-3 w-3" strokeWidth={3} />}
+                                  {!locked && !needsAccount && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && "line-through text-muted-foreground")}>
-                                  Task {i + 1}{locked && " · Locked"}
+                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && !needsAccount && "line-through text-muted-foreground")}>
+                                  Task {i + 1}{locked && " · Locked"}{needsAccount && " · Account"}
                                 </span>
-                                {timed.enabled && !locked && (
+                                {timed.enabled && !locked && !needsAccount && (
                                   <TimerStatusDot entry={timed.state[c.id]} />
                                 )}
-                                {!locked && c.difficulty_level !== "—" && (
+                                {!locked && !needsAccount && c.difficulty_level !== "—" && (
                                   <DifficultyBars level={c.difficulty_level} />
                                 )}
                               </button>
@@ -493,6 +515,10 @@ function EconomicsTasks() {
                                 type="button"
                                 style={{ opacity }}
                                 onClick={() => {
+                                  if (!authGate.signedIn) {
+                                    authGate.setAuthOpen(true);
+                                    return;
+                                  }
                                   const lockedIdx = list.findIndex((_, i) => isLocked(ch.num, i));
                                   skipNextIdxResetRef.current = true;
                                   setActiveChapter(ch.num);
@@ -636,7 +662,10 @@ function EconomicsTasks() {
                   ? "Failed on time"
                   : null
               }
-              requireAuth={authGate.requireAuth}
+              requireAuth={() => {
+                if (!authGate.signedIn && guestAccess.get(activeCase.id) === "play") return true;
+                return authGate.requireAuth();
+              }}
               onGraded={(allCorrect, correctCount) => {
                 recordResult(activeCase.id, allCorrect);
                 if (timed.enabled) timed.markSubmitted(activeCase.id);
@@ -675,15 +704,24 @@ function EconomicsTasks() {
                 {activeIdx + 1} / {activeList.length}
               </span>
               <button
-                onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
+                onClick={() => {
+                  const next = activeList[activeIdx + 1];
+                  if (next && holdGuest(next.id)) return;
+                  if (isLocked(activeChapter, activeIdx + 1)) return;
+                  setActiveIdx((i) => Math.min(activeList.length - 1, i + 1));
+                }}
                 disabled={
                   activeIdx >= activeList.length - 1 ||
-                  isLocked(activeChapter, activeIdx + 1)
+                  (authGate.signedIn && isLocked(activeChapter, activeIdx + 1))
                 }
-                title={isLocked(activeChapter, activeIdx + 1) ? "Next task is locked in the demo" : undefined}
+                title={
+                  authGate.signedIn && isLocked(activeChapter, activeIdx + 1)
+                    ? "Next task is locked in the demo"
+                    : undefined
+                }
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
+                {authGate.signedIn && isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
               </button>
             </div>
           )}
@@ -727,7 +765,12 @@ function EconomicsTasks() {
         />
       )}
 
-      <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+      <AuthModal
+        open={authGate.authOpen}
+        onOpenChange={authGate.setAuthOpen}
+        defaultMode="signup"
+        guestPreview
+      />
     </div>
     </PracticeCalcProvider>
   );
