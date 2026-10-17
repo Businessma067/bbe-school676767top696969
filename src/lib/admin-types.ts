@@ -37,6 +37,8 @@ export type AdminUserRow = {
   registeredAt: string;
   lastSeenAt: string | null;
   lastPath: string | null;
+  /** Resolved registration country (signup geo → phone → payment payer). */
+  country: string | null;
   tier: string;
   roles: string[];
   tasksPassed: number;
@@ -145,6 +147,8 @@ export type AdminUserDetail = {
     email: string;
     displayName: string;
     phone: string | null;
+    signupCountry: string | null;
+    country: string | null;
     registeredAt: string;
     lastSeenAt: string | null;
     lastPath: string | null;
