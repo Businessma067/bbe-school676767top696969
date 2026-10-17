@@ -83,11 +83,10 @@ function TryCopy({ path }: { path: string }) {
 }
 
 const OFFER_DWELL_MS = 3500;
-/** Long glide with a soft landing, like a drum rolling into the next face. */
-const OFFER_ROLL_MS = 1150;
-const OFFER_ROLL_EASE = "cubic-bezier(0.16, 0.84, 0.22, 1)";
+const OFFER_SWAP_MS = 680;
+const OFFER_SWAP_EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 
-/** Two guest offers, rolling upward like a drum. */
+/** Two guest offers. The whole card slides sideways; the type stays solid. */
 function GuestOfferWheel({ path }: { path: string }) {
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState(false);
@@ -141,32 +140,23 @@ function GuestOfferWheel({ path }: { path: string }) {
   const upcoming = (current + 1) % offers.length;
 
   return (
-    <div
-      className="overflow-hidden"
-      style={{
-        height: slotHeight ?? undefined,
-        ...(leaving
-          ? {
-              WebkitMaskImage:
-                "linear-gradient(to bottom, transparent 0%, #000 22%, #000 78%, transparent 100%)",
-              maskImage:
-                "linear-gradient(to bottom, transparent 0%, #000 22%, #000 78%, transparent 100%)",
-            }
-          : {}),
-      }}
-    >
+    <div className="overflow-hidden" style={slotHeight ? { height: slotHeight } : undefined}>
       <div
+        className="flex w-[200%]"
         onTransitionEnd={finishTurn}
         style={{
-          transform: leaving ? "translateY(-50%)" : "translateY(0)",
-          transition: leaving ? `transform ${OFFER_ROLL_MS}ms ${OFFER_ROLL_EASE}` : "none",
-          willChange: "transform",
+          transform: leaving ? "translateX(-50%)" : "translateX(0)",
+          transition: leaving ? `transform ${OFFER_SWAP_MS}ms ${OFFER_SWAP_EASE}` : "none",
         }}
       >
-        <div style={slotHeight ? { height: slotHeight } : undefined}>
+        <div className="w-1/2 shrink-0" style={slotHeight ? { height: slotHeight } : undefined}>
           <div ref={currentRef}>{offers[current]}</div>
         </div>
-        <div style={slotHeight ? { height: slotHeight } : undefined} aria-hidden>
+        <div
+          className="w-1/2 shrink-0"
+          style={slotHeight ? { height: slotHeight } : undefined}
+          aria-hidden
+        >
           <div ref={nextRef}>{offers[upcoming]}</div>
         </div>
       </div>
