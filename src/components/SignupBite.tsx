@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode, type TransitionEvent } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { X } from "lucide-react";
 
@@ -62,6 +62,96 @@ function RegisterCopy() {
         Register now
       </LocalizedLink>
     </>
+  );
+}
+
+function tryTasksHref(path: string) {
+  return path === "/wiso" ? "/wiso/demo-practice" : "/demo-practice";
+}
+
+function TryCopy({ path }: { path: string }) {
+  return (
+    <>
+      <p className="font-display text-[13px] font-semibold leading-snug text-foreground">
+        Try 2 free tasks per subject, no account
+      </p>
+      <LocalizedLink to={tryTasksHref(path)} className={linkClass}>
+        Try now
+      </LocalizedLink>
+    </>
+  );
+}
+
+/** Two guest offers, rolling upward like a wheel every 5 seconds. */
+function GuestOfferWheel({ path }: { path: string }) {
+  const [index, setIndex] = useState(0);
+  const [leaving, setLeaving] = useState(false);
+  const [slotHeight, setSlotHeight] = useState<number | null>(null);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const currentRef = useRef<HTMLDivElement>(null);
+  const nextRef = useRef<HTMLDivElement>(null);
+  const offers = [
+    <RegisterCopy key="register" />,
+    <TryCopy key="try" path={path} />,
+  ];
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const apply = () => setReducedMotion(media.matches);
+    apply();
+    media.addEventListener("change", apply);
+    return () => media.removeEventListener("change", apply);
+  }, []);
+
+  useLayoutEffect(() => {
+    const measure = () => {
+      const next = Math.max(
+        currentRef.current?.offsetHeight ?? 0,
+        nextRef.current?.offsetHeight ?? 0,
+      );
+      if (next > 0) setSlotHeight((prev) => (prev === next ? prev : next));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    if (currentRef.current) observer.observe(currentRef.current);
+    if (nextRef.current) observer.observe(nextRef.current);
+    return () => observer.disconnect();
+  }, [path, index]);
+
+  useEffect(() => {
+    const id = window.setTimeout(() => {
+      if (reducedMotion) setIndex((i) => (i + 1) % offers.length);
+      else setLeaving(true);
+    }, 5000);
+    return () => window.clearTimeout(id);
+  }, [index, reducedMotion, offers.length]);
+
+  const finishTurn = (event: TransitionEvent<HTMLDivElement>) => {
+    if (event.propertyName !== "transform" || !leaving) return;
+    setIndex((i) => (i + 1) % offers.length);
+    setLeaving(false);
+  };
+
+  const current = index % offers.length;
+  const upcoming = (current + 1) % offers.length;
+
+  return (
+    <div className="overflow-hidden" style={slotHeight ? { height: slotHeight } : undefined}>
+      <div
+        onTransitionEnd={finishTurn}
+        style={{
+          transform: leaving ? "translateY(-50%)" : "translateY(0)",
+          transition: leaving ? "transform 720ms cubic-bezier(0.22, 1, 0.36, 1)" : "none",
+        }}
+      >
+        <div style={slotHeight ? { height: slotHeight } : undefined}>
+          <div ref={currentRef}>{offers[current]}</div>
+        </div>
+        <div style={slotHeight ? { height: slotHeight } : undefined} aria-hidden>
+          <div ref={nextRef}>{offers[upcoming]}</div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -194,7 +284,7 @@ export function SignupBite() {
 
   return (
     <BiteShell onDismiss={dismiss}>
-      {signedIn ? <BuyCopy path={path} /> : <RegisterCopy />}
+      {signedIn ? <BuyCopy path={path} /> : <GuestOfferWheel path={path} />}
     </BiteShell>
   );
 }

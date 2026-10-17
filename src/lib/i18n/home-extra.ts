@@ -172,6 +172,9 @@ export const homeExtraDe: Record<string, string> = {
   "Register now and get 100+ free tasks":
     "Registriere dich jetzt und hol dir 100+ kostenlose Aufgaben",
   "Register now": "Jetzt registrieren",
+  "Try 2 free tasks per subject, no account":
+    "2 kostenlose Aufgaben pro Fach, ohne Konto",
+  "Try now": "Jetzt ausprobieren",
   "BBE demo": "BBE-Demo",
   "WiSo demo": "WiSo-Demo",
   "Start the demo →": "Demo starten →",
@@ -371,6 +374,9 @@ export const homeExtraUk: Record<string, string> = {
 
   "Register now and get 100+ free tasks": "Реєструйся зараз і отримай 100+ безкоштовних завдань",
   "Register now": "Зареєструйся",
+  "Try 2 free tasks per subject, no account":
+    "2 безкоштовні завдання з предмета, без акаунта",
+  "Try now": "Спробувати",
   "BBE demo": "Демо BBE",
   "WiSo demo": "Демо WiSo",
   "Start the demo →": "Почати демо →",
