@@ -2,6 +2,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Database } from "@/integrations/supabase/types";
 import type { AdminPlanRow, AdminUserRow } from "@/lib/admin-types";
 import { fetchPaymentsByUserIds, pct } from "@/lib/admin-stats.server";
+import { resolveAdminCountry } from "@/lib/countries";
 
 type Db = SupabaseClient<Database>;
 
@@ -18,7 +19,7 @@ export async function fetchLiveUserRows(db: Db): Promise<{
 
   const ids = users.map((u) => u.user_id);
 
-  const [rolesRes, enrollRes, tasksRes, mocksRes, practiceRes, paymentsByUser] = await Promise.all([
+  const [rolesRes, enrollRes, tasksRes, mocksRes, practiceRes, profilesRes, paymentsByUser] = await Promise.all([
     db.from("user_roles").select("user_id, role").in("user_id", ids),
     db
       .from("enrollments")
@@ -31,8 +32,11 @@ export async function fetchLiveUserRows(db: Db): Promise<{
       .select("user_id, points_earned, points_total, status")
       .in("user_id", ids),
     db.from("practice_sessions").select("user_id").in("user_id", ids),
+    db.from("profiles").select("user_id, display_name, signup_country"),
     fetchPaymentsByUserIds(db, ids),
   ]);
+
+  const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p]));
 
   const rolesByUser = new Map<string, string[]>();
   for (const r of rolesRes.data ?? []) {
@@ -82,6 +86,11 @@ export async function fetchLiveUserRows(db: Db): Promise<{
   const rows: AdminUserRow[] = users.map((u) => {
     const tasks = taskStats.get(u.user_id) ?? { attempted: 0, passed: 0 };
     const mocks = mockStats.get(u.user_id) ?? { attempts: 0, best: null };
+    const profile = profileMap.get(u.user_id);
+    const payerCountryName =
+      paymentsByUser
+        .get(u.user_id)
+        ?.find((p) => p.status === "success" && p.payerCountryName)?.payerCountryName ?? null;
     const email = u.email ?? "";
     return {
       userId: u.user_id,
@@ -90,6 +99,10 @@ export async function fetchLiveUserRows(db: Db): Promise<{
       registeredAt: u.registered_at,
       lastSeenAt: null,
       lastPath: null,
+      country: resolveAdminCountry({
+        signupCountry: profile?.signup_country ?? null,
+        payerCountryName,
+      }),
       tier: tierByUser.get(u.user_id) ?? "none",
       roles: rolesByUser.get(u.user_id) ?? ["student"],
       tasksPassed: tasks.passed,
