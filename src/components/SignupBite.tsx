@@ -82,7 +82,12 @@ function TryCopy({ path }: { path: string }) {
   );
 }
 
-/** Two guest offers, rolling upward like a wheel every 5 seconds. */
+const OFFER_DWELL_MS = 3500;
+/** Long glide with a soft landing, like a drum rolling into the next face. */
+const OFFER_ROLL_MS = 1150;
+const OFFER_ROLL_EASE = "cubic-bezier(0.16, 0.84, 0.22, 1)";
+
+/** Two guest offers, rolling upward like a drum. */
 function GuestOfferWheel({ path }: { path: string }) {
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState(false);
@@ -122,7 +127,7 @@ function GuestOfferWheel({ path }: { path: string }) {
     const id = window.setTimeout(() => {
       if (reducedMotion) setIndex((i) => (i + 1) % offers.length);
       else setLeaving(true);
-    }, 5000);
+    }, OFFER_DWELL_MS);
     return () => window.clearTimeout(id);
   }, [index, reducedMotion, offers.length]);
 
@@ -136,12 +141,26 @@ function GuestOfferWheel({ path }: { path: string }) {
   const upcoming = (current + 1) % offers.length;
 
   return (
-    <div className="overflow-hidden" style={slotHeight ? { height: slotHeight } : undefined}>
+    <div
+      className="overflow-hidden"
+      style={{
+        height: slotHeight ?? undefined,
+        ...(leaving
+          ? {
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent 0%, #000 22%, #000 78%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to bottom, transparent 0%, #000 22%, #000 78%, transparent 100%)",
+            }
+          : {}),
+      }}
+    >
       <div
         onTransitionEnd={finishTurn}
         style={{
           transform: leaving ? "translateY(-50%)" : "translateY(0)",
-          transition: leaving ? "transform 720ms cubic-bezier(0.22, 1, 0.36, 1)" : "none",
+          transition: leaving ? `transform ${OFFER_ROLL_MS}ms ${OFFER_ROLL_EASE}` : "none",
+          willChange: "transform",
         }}
       >
         <div style={slotHeight ? { height: slotHeight } : undefined}>
