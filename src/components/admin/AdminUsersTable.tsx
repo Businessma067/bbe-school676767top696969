@@ -66,6 +66,7 @@ export function AdminUsersTable({
                 <p className="truncate text-xs text-muted-foreground">{u.displayName}</p>
               </div>
               <PlanChips plans={u.plans} tier={u.tier} />
+              <CountryChip name={u.country} />
               <PaymentSummaryChip payment={latestPaid} />
               <div className="hidden text-xs text-muted-foreground sm:block">
                 {fmtDate(u.lastSeenAt)}
@@ -120,6 +121,17 @@ function PlanChips({
   );
 }
 
+function CountryChip({ name }: { name: string | null }) {
+  return (
+    <span
+      className="max-w-[10rem] truncate rounded-full border border-border px-2 py-0.5 text-[11px] font-semibold text-foreground"
+      title={name ?? "Country was not captured at signup"}
+    >
+      {name ?? "No country"}
+    </span>
+  );
+}
+
 function PaymentSummaryChip({ payment }: { payment: AdminPaymentRow | null }) {
   if (!payment) {
     return (
@@ -143,6 +155,15 @@ function PaymentSummaryChip({ payment }: { payment: AdminPaymentRow | null }) {
 function UserPaymentExpanded({ user }: { user: AdminUserRow }) {
   return (
     <div className="space-y-3 text-sm">
+      <section>
+        <h3 className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+          Country
+        </h3>
+        <p className={user.country ? "font-medium" : "text-muted-foreground"}>
+          {user.country ?? "Unknown — country was not stored at signup."}
+        </p>
+      </section>
+
       <section>
         <h3 className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
           Plan

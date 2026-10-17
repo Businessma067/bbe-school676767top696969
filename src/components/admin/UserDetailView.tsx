@@ -38,6 +38,10 @@ export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
             <span className="font-mono">{p.phone}</span>
           </p>
         ) : null}
+        <p className="mt-1 text-sm text-foreground">
+          <span className="text-muted-foreground">Country · </span>
+          <span>{p.country ?? "Unknown"}</span>
+        </p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {detail.enrollments.map((e) => (
             <span
