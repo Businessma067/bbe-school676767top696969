@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState, type ReactNode, type TransitionEvent } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode, type TransitionEvent } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { X } from "lucide-react";
 
@@ -82,21 +82,55 @@ function TryCopy({ path }: { path: string }) {
   );
 }
 
+function MockCopy({ onChoosing }: { onChoosing: (open: boolean) => void }) {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    onChoosing(open);
+    return () => onChoosing(false);
+  }, [open, onChoosing]);
+
+  return (
+    <>
+      <p className="font-display text-[13px] font-semibold leading-snug text-foreground">
+        Try a free demo mock
+      </p>
+      {open ? (
+        <div className="mt-2 flex gap-1.5">
+          <LocalizedLink to="/demo-mock" className={`${linkClass} mt-0 min-w-0 flex-1`}>
+            BBE
+          </LocalizedLink>
+          <LocalizedLink to="/wiso/demo-mock" className={`${linkClass} mt-0 min-w-0 flex-1`}>
+            WiSo
+          </LocalizedLink>
+        </div>
+      ) : (
+        <button type="button" onClick={() => setOpen(true)} className={linkClass}>
+          Try a mock
+        </button>
+      )}
+    </>
+  );
+}
+
 const OFFER_DWELL_MS = 3500;
 const OFFER_SWAP_MS = 680;
 const OFFER_SWAP_EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 
-/** Two guest offers. The whole card slides sideways; the type stays solid. */
+/** Guest offers. The whole card slides sideways; the type stays solid. */
 function GuestOfferWheel({ path }: { path: string }) {
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState(false);
+  const [paused, setPaused] = useState(false);
   const [slotHeight, setSlotHeight] = useState<number | null>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
   const currentRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
+  const holdForChoice = useCallback((open: boolean) => setPaused(open), []);
   const offers = [
     <RegisterCopy key="register" />,
     <TryCopy key="try" path={path} />,
+    <MockCopy key="mock" onChoosing={holdForChoice} />,
   ];
 
   useEffect(() => {
@@ -123,12 +157,13 @@ function GuestOfferWheel({ path }: { path: string }) {
   }, [path, index]);
 
   useEffect(() => {
+    if (paused) return;
     const id = window.setTimeout(() => {
       if (reducedMotion) setIndex((i) => (i + 1) % offers.length);
       else setLeaving(true);
     }, OFFER_DWELL_MS);
     return () => window.clearTimeout(id);
-  }, [index, reducedMotion, offers.length]);
+  }, [index, paused, reducedMotion, offers.length]);
 
   const finishTurn = (event: TransitionEvent<HTMLDivElement>) => {
     if (event.propertyName !== "transform" || !leaving) return;
