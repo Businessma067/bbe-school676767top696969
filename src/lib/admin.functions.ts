@@ -489,6 +489,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
           csvEscape(u.email),
           csvEscape(u.displayName),
           u.tier,
+          csvEscape(u.country ?? ""),
           u.registeredAt,
           u.lastSeenAt ?? "",
           u.tasksPassed,
@@ -497,7 +498,6 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
           u.mockAttempts,
           u.currentStreak,
           u.averageAccuracy ?? "",
-          u.country ?? "",
         ].join(","),
       );
     }
