@@ -175,6 +175,8 @@ export const homeExtraDe: Record<string, string> = {
   "Try 2 free tasks per subject, no account":
     "2 kostenlose Aufgaben pro Fach, ohne Konto",
   "Try now": "Jetzt ausprobieren",
+  "Try a free demo mock": "Kostenlosen Demo-Mock ausprobieren",
+  "Try a mock": "Mock starten",
   "BBE demo": "BBE-Demo",
   "WiSo demo": "WiSo-Demo",
   "Start the demo →": "Demo starten →",
@@ -377,6 +379,8 @@ export const homeExtraUk: Record<string, string> = {
   "Try 2 free tasks per subject, no account":
     "2 безкоштовні завдання з предмета, без акаунта",
   "Try now": "Спробувати",
+  "Try a free demo mock": "Спробуй безкоштовний демо-мок",
+  "Try a mock": "Спробувати мок",
   "BBE demo": "Демо BBE",
   "WiSo demo": "Демо WiSo",
   "Start the demo →": "Почати демо →",
