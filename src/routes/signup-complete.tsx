@@ -6,6 +6,7 @@ import { useLanguage } from "@/lib/i18n/context";
 import { localizePath } from "@/lib/i18n/locale-path";
 import { consumePostSignupContinue, consumeSignupComplete } from "@/lib/signup-complete";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { recordSignupCountry } from "@/lib/signup-country";
 
 const DEMO_AFTER_SIGNUP = "/demo-practice";
 
@@ -28,6 +29,10 @@ export const Route = createFileRoute("/signup-complete")({
         content: "Your BBE School account is ready. Start practicing for the WU Vienna entrance exam.",
       },
       { name: "robots", content: "noindex, nofollow" },
+      { property: "og:title", content: "Sign up confirmed · BBE School" },
+      { property: "og:description", content: "Your BBE School account is ready. Start practicing for the WU Vienna entrance exam." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
 });
@@ -58,6 +63,9 @@ function SignupCompletePage() {
         void navigate({ to: "/dashboard", replace: true });
         return;
       }
+
+      await recordSignupCountry();
+      if (cancelled) return;
 
       consumePostSignupContinue();
       setContinueTo(localizePath(DEMO_AFTER_SIGNUP, lang));

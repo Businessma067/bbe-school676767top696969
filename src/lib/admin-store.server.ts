@@ -18,6 +18,7 @@ import {
   type TaskAttempt,
 } from "@/lib/user-progress";
 import { isAtRisk, pct } from "@/lib/admin-stats.server";
+import { resolveAdminCountry } from "@/lib/countries";
 
 const STORE_DIR = path.join(process.cwd(), "data", "admin-store");
 const USERS_DIR = path.join(STORE_DIR, "users");
@@ -31,6 +32,7 @@ export type StoredUser = {
   firstName?: string | null;
   lastName?: string | null;
   phone?: string | null;
+  signupCountry?: string | null;
   registeredAt: string;
   lastSeenAt: string | null;
   lastPath: string | null;
@@ -424,6 +426,7 @@ function userRowFromRecord(record: UserRecord): AdminUserRow {
     userId: user.userId,
     email: user.email,
     displayName: user.displayName,
+    country: resolveAdminCountry({ signupCountry: user.signupCountry, phone: user.phone }),
     registeredAt: user.registeredAt,
     lastSeenAt: user.lastSeenAt,
     lastPath: user.lastPath,
@@ -501,6 +504,8 @@ function detailFromRecord(record: UserRecord): AdminUserDetail {
       email: user.email,
       displayName: user.displayName,
       phone: user.phone ?? null,
+      signupCountry: user.signupCountry ?? null,
+      country: resolveAdminCountry({ signupCountry: user.signupCountry, phone: user.phone }),
       registeredAt: user.registeredAt,
       lastSeenAt: user.lastSeenAt,
       lastPath: user.lastPath,
