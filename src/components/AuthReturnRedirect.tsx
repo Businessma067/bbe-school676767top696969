@@ -3,6 +3,7 @@ import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 import { consumeAuthReturnTo, safeInternalReturnPath } from "@/lib/auth-return";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
+import { completeGoogleAuth, hasOAuthAttempt } from "@/lib/oauth-signup";
 
 const STORAGE_KEY = "bbe.authReturnTo";
 
@@ -59,13 +60,29 @@ export function AuthReturnRedirect() {
       void navigate({ to: to as never, search: search as never, replace: true });
     };
 
-    void (async () => {
+    const resolveReturn = async (fromSignIn: boolean) => {
+      if (handled.current) return;
       const { data } = await supabase.auth.getSession();
-      if (data.session) tryRedirect();
-    })();
+      if (!data.session || handled.current) return;
+
+      const stripped = stripLocalePrefix(pathname);
+      const onLanding =
+        stripped === "/" ||
+        stripped === "/login" ||
+        stripped === "/signup" ||
+        stripped === "/auth";
+      if (hasOAuthAttempt() && (fromSignIn || onLanding)) {
+        handled.current = true;
+        await completeGoogleAuth();
+        return;
+      }
+      if (onLanding) tryRedirect();
+    };
+
+    void resolveReturn(false);
 
     const { data } = supabase.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_IN") tryRedirect();
+      if (event === "SIGNED_IN") void resolveReturn(true);
     });
 
     return () => {

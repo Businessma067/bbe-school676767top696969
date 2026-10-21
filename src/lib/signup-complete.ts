@@ -66,6 +66,19 @@ export function consumeSignupComplete(): boolean {
   }
 }
 
+/** True while a just-finished signup still has to pass the confirmation gate. */
+export function hasSignupComplete(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    return sessionStorage.getItem(FLAG_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+/** Subject picker: Economics, Math, and English. Every new account opens here. */
+export const DEMO_SUBJECTS_PATH = "/demo-practice" as const;
+
 /** Where to send the user after the conversion confirmation page. */
 function safeContinuePath(value: unknown): string | null {
   const safe = safeInternalReturnPath(value);

@@ -5,8 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { AuthShell } from "./signup";
 import { friendlyAuthError } from "@/lib/auth-ui";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
-import { markSignupComplete, SIGNUP_COMPLETE_PATH } from "@/lib/signup-complete";
+import { markSignupComplete, openSignupComplete } from "@/lib/signup-complete";
 
 const PENDING_EMAIL_KEY = "bbe.pendingConfirmEmail";
 
@@ -170,7 +169,6 @@ function PendingEmailConfirmation() {
 }
 
 function VerifyingEmail() {
-  const navigate = useLocalizedNavigate();
   const [status, setStatus] = useState<"working" | "ok" | "error">("working");
   const [message, setMessage] = useState("Confirming your email…");
 
@@ -226,7 +224,7 @@ function VerifyingEmail() {
         setStatus("ok");
         setMessage("Email confirmed. Taking you to the next step…");
         markSignupComplete();
-        setTimeout(() => navigate({ to: SIGNUP_COMPLETE_PATH }), 900);
+        setTimeout(() => openSignupComplete(), 900);
       } catch (err) {
         console.error("Email confirm failed", err);
         if (cancelled) return;
@@ -238,7 +236,7 @@ function VerifyingEmail() {
     return () => {
       cancelled = true;
     };
-  }, [navigate]);
+  }, []);
 
   return (
     <AuthShell

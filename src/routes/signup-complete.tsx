@@ -52,7 +52,8 @@ function SignupCompletePage() {
     let cancelled = false;
 
     (async () => {
-      const auth = await getCurrentAuthState();
+      let auth = await getCurrentAuthState();
+      if (!auth) auth = await getCurrentAuthState({ refresh: true });
       if (cancelled) return;
 
       if (!auth) {

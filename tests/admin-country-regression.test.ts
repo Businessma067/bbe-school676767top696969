@@ -29,14 +29,43 @@ describe("verified signup country capture", () => {
     if (!body) throw new Error("Signup completion flow not found");
     const record = mock(async () => undefined);
     const allowed = mock(() => undefined);
-    const execute = new Function("getCurrentAuthState", "cancelled", "navigate", "consumeSignupComplete", "recordSignupCountry", "consumePostSignupContinue", "setContinueTo", "localizePath", "DEMO_AFTER_SIGNUP", "lang", "setAllowed", `return (async () => {${body}})();`);
-    await execute(async () => auth, false, () => {}, () => signup, record, () => {}, () => {}, (p: string) => p, "/demo-practice", "en", allowed);
-    return { record, allowed };
+    const continueTo = mock(() => undefined);
+    const execute = new Function(
+      "getCurrentAuthState",
+      "cancelled",
+      "navigate",
+      "consumeSignupComplete",
+      "recordSignupCountry",
+      "ensureOwnDemoEnrollment",
+      "consumePostSignupContinue",
+      "setContinueTo",
+      "localizePath",
+      "DEMO_AFTER_SIGNUP",
+      "lang",
+      "setAllowed",
+      `return (async () => {${body}})();`,
+    );
+    await execute(
+      async () => auth,
+      false,
+      () => {},
+      () => signup,
+      record,
+      async () => undefined,
+      () => {},
+      continueTo,
+      (p: string) => p,
+      "/demo-practice",
+      "en",
+      allowed,
+    );
+    return { record, allowed, continueTo };
   }
   test("successful signup records country before continuation is enabled", async () => {
-    const { record, allowed } = await run(true, true);
+    const { record, allowed, continueTo } = await run(true, true);
     expect(record).toHaveBeenCalledTimes(1);
     expect(record.mock.invocationCallOrder[0]).toBeLessThan(allowed.mock.invocationCallOrder[0] ?? 0);
+    expect(continueTo).toHaveBeenCalledWith("/demo-practice");
   });
   test("regular signed-in visits do not capture registration country", async () => {
     const { record } = await run(true, false);
