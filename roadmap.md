@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Route all verified new email and Google signups through the success page, exclude returning Google users, and verify redirect regressions; leave production unpublished.
+
 - [x] Align user CSV country column and run country capture after verified signup; regression tests pass, preview builds and authenticated admin list opens. A fresh signup with real country persistence has not been exercised end-to-end.
 
 - [x] Inspect all 28 BBE / WiSo gallery annotations; replace the covered BBE answer sheet with a complete clean browser capture, move its centered caption into the empty gutter, and correct the WiSo pointer to the highlighted answer cell. Both replacement assets load in the live preview without runtime errors.

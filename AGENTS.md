@@ -24,6 +24,7 @@
 
 - Present How it works in a shared widescreen aspect with contained native recordings and fixed desktop live stages scaled as a whole in inline and enlarged views; this prevents mobile reflow from cropping the demonstration.
 - Run signup-country capture in the verified signup-complete gate before enabling onward navigation; all signup methods share this gate and regular sign-ins must not record a registration country.
+- Resolve all Google entry points through a shared, verified OAuth-attempt classifier before navigating; only newly created accounts receive the signup gate, and success uses a document load so URL-based conversion tracking sees the canonical page.
 - Use the shared demo viewer for inline and fullscreen How it works media with frame-rate-independent smoothing, cursor/pinch-anchored zoom and bounded panning of the whole stage; this magnifies the actual content while preserving desktop layout and avoiding anchor drift.
 - Keep both full-course product galleries equally wide, contain original screenshots without cropping, and use the shared fullscreen viewer for image details; this preserves source content and consistent zoom behavior.
 - Build course-gallery artwork from pixel-preserved browser captures with compact callouts placed in verified empty areas and short pointers to precisely measured controls; this preserves authentic interface text and prevents annotation overlaps. Store finished artwork as CDN asset pointers.
