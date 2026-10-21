@@ -4,6 +4,11 @@ import { safeInternalReturnPath } from "@/lib/auth-return";
 
 export const SIGNUP_COMPLETE_PATH = "/signup-complete" as const;
 
+/** A document load lets the existing URL-based Google Ads rule see this page. */
+export function openSignupComplete(): void {
+  window.location.assign(SIGNUP_COMPLETE_PATH);
+}
+
 const FLAG_KEY = "bbe.signupComplete";
 const CONTINUE_KEY = "bbe.postSignupContinue";
 const RESUME_CHECKOUT_KEY = "bbe.resumeCheckout";
