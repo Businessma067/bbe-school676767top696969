@@ -6,6 +6,7 @@ import { useLanguage } from "@/lib/i18n/context";
 import { localizePath } from "@/lib/i18n/locale-path";
 import { consumePostSignupContinue, consumeSignupComplete } from "@/lib/signup-complete";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { ensureOwnDemoEnrollment } from "@/lib/ensure-own-demo-enrollment";
 import { recordSignupCountry } from "@/lib/signup-country";
 
 const DEMO_AFTER_SIGNUP = "/demo-practice";
@@ -64,7 +65,7 @@ function SignupCompletePage() {
         return;
       }
 
-      await recordSignupCountry();
+      await Promise.all([recordSignupCountry(), ensureOwnDemoEnrollment()]);
       if (cancelled) return;
 
       consumePostSignupContinue();
