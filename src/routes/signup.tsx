@@ -2,19 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
-import { signInWithGoogle } from "@/lib/google-auth";
+import { startGoogleAuth } from "@/lib/oauth-signup";
 import { Eye, EyeOff } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useAuthReturnTo } from "@/hooks/use-auth-return-to";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
-import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
+import { safeInternalReturnPath } from "@/lib/auth-return";
 import {
-  clearSignupComplete,
+  hasSignupComplete,
   markSignupComplete,
-  SIGNUP_COMPLETE_PATH,
-  stashPostSignupContinue,
+  openSignupComplete,
 } from "@/lib/signup-complete";
 
 type SignupSearch = { returnTo?: string };
@@ -55,7 +54,12 @@ export function SignupPage() {
     let cancelled = false;
     (async () => {
       const auth = await getCurrentAuthState();
-      if (!cancelled && auth) navigate({ to: afterAuth });
+      if (cancelled || !auth) return;
+      if (hasSignupComplete()) {
+        openSignupComplete();
+        return;
+      }
+      navigate({ to: afterAuth });
     })();
     return () => {
       cancelled = true;
@@ -67,18 +71,13 @@ export function SignupPage() {
     if (!agree)
       return setError("Please accept the Terms of Service and Privacy Policy to continue.");
     setLoading(true);
-    markSignupComplete();
-    if (returnTo) stashPostSignupContinue(returnTo);
-    stashAuthReturnTo(SIGNUP_COMPLETE_PATH);
-    const result = await signInWithGoogle({ redirectTo: SIGNUP_COMPLETE_PATH });
+    const result = await startGoogleAuth(returnTo ?? "/dashboard");
     if (result.error) {
-      clearSignupComplete();
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
-    if (result.redirected) return;
-    navigate({ to: SIGNUP_COMPLETE_PATH });
+    if (!result.left) setLoading(false);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -127,12 +126,10 @@ export function SignupPage() {
           { onConflict: "user_id" },
         );
         markSignupComplete();
-        if (returnTo) stashPostSignupContinue(returnTo);
-        navigate({ to: SIGNUP_COMPLETE_PATH });
+        openSignupComplete();
         return;
       }
 
-      if (returnTo) stashPostSignupContinue(returnTo);
       sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
       navigate({ to: "/confirm-email" });
     } catch (err: any) {

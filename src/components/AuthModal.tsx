@@ -10,13 +10,11 @@ import {
 } from "@/components/ui/dialog";
 import { supabase } from "@/integrations/supabase/client";
 import { friendlyAuthError } from "@/lib/auth-ui";
-import { currentReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
-import { signInWithGoogle } from "@/lib/google-auth";
+import { currentReturnPath } from "@/lib/auth-return";
+import { startGoogleAuth } from "@/lib/oauth-signup";
 import {
-  clearSignupComplete,
   markSignupComplete,
-  SIGNUP_COMPLETE_PATH,
-  stashPostSignupContinue,
+  openSignupComplete,
   stashResumeCheckout,
 } from "@/lib/signup-complete";
 import { cn } from "@/lib/utils";
@@ -77,30 +75,14 @@ export function AuthModal({
       return;
     }
     setLoading(true);
-    if (mode === "signup") {
-      markSignupComplete();
-      stashPostSignupContinue(currentReturnPath());
-      if (onSignedIn) stashResumeCheckout();
-      stashAuthReturnTo(SIGNUP_COMPLETE_PATH);
-      const result = await signInWithGoogle({ redirectTo: SIGNUP_COMPLETE_PATH });
-      if (result.error) {
-        clearSignupComplete();
-        setError(friendlyAuthError(result.error, "Google sign-in failed"));
-        setLoading(false);
-        return;
-      }
-      if (result.redirected) return;
-      onOpenChange(false);
-      navigate({ to: SIGNUP_COMPLETE_PATH });
-      return;
-    }
-    const result = await signInWithGoogle({ redirectTo: window.location.href });
+    if (mode === "signup" && onSignedIn) stashResumeCheckout();
+    const result = await startGoogleAuth(mode === "signup" ? currentReturnPath() : window.location.href);
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
-    if (result.redirected) return;
+    if (result.left) return;
     onOpenChange(false);
     onSignedIn?.();
   };
@@ -162,14 +144,11 @@ export function AuthModal({
               { onConflict: "user_id" },
             );
           markSignupComplete();
-          stashPostSignupContinue(currentReturnPath());
           if (onSignedIn) stashResumeCheckout();
-          onOpenChange(false);
-          navigate({ to: SIGNUP_COMPLETE_PATH });
+          openSignupComplete();
           return;
         }
 
-        stashPostSignupContinue(currentReturnPath());
         if (onSignedIn) stashResumeCheckout();
         sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
         onOpenChange(false);

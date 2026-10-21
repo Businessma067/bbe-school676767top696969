@@ -2,9 +2,9 @@ import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
-import { signInWithGoogle } from "@/lib/google-auth";
+import { startGoogleAuth } from "@/lib/oauth-signup";
 import { friendlyAuthError } from "@/lib/auth-ui";
-import { markSignupComplete, SIGNUP_COMPLETE_PATH } from "@/lib/signup-complete";
+import { markSignupComplete, openSignupComplete } from "@/lib/signup-complete";
 
 export const Route = createFileRoute("/auth")({
   component: AuthPage,
@@ -29,14 +29,13 @@ function AuthPage() {
   const handleGoogle = async () => {
     setError(null);
     setLoading(true);
-    const result = await signInWithGoogle({ redirectTo: window.location.origin });
+    const result = await startGoogleAuth("/");
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
-    if (result.redirected) return;
-    navigate({ to: "/" });
+    if (!result.left) navigate({ to: "/" });
   };
 
   const handleEmail = async (e: React.FormEvent) => {
@@ -53,7 +52,7 @@ function AuthPage() {
         if (error) throw error;
         if (data.session) {
           markSignupComplete();
-          navigate({ to: SIGNUP_COMPLETE_PATH });
+          openSignupComplete();
           return;
         }
         sessionStorage.setItem("bbe.pendingConfirmEmail", email.trim().toLowerCase());

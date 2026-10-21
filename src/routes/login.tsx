@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { AuthShell, Field, PasswordField, GoogleButton, Divider } from "./signup";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
-import { signInWithGoogle } from "@/lib/google-auth";
+import { startGoogleAuth } from "@/lib/oauth-signup";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useAuthReturnTo } from "@/hooks/use-auth-return-to";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
-import { safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
+import { safeInternalReturnPath } from "@/lib/auth-return";
 
 type LoginSearch = { returnTo?: string };
 
@@ -53,15 +53,13 @@ export function LoginPage() {
   const handleGoogle = async () => {
     setError(null);
     setLoading(true);
-    if (returnTo) stashAuthReturnTo(returnTo);
-    const result = await signInWithGoogle({ redirectTo: returnTo ?? afterAuth });
+    const result = await startGoogleAuth(afterAuth);
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
-    if (result.redirected) return;
-    navigate({ to: afterAuth });
+    if (!result.left) navigate({ to: afterAuth });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {

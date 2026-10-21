@@ -1,6 +1,7 @@
 import { supabase } from "@/integrations/supabase/client";
 import { consumeAuthReturnTo, safeInternalReturnPath, stashAuthReturnTo } from "@/lib/auth-return";
-import { markSignupComplete, SIGNUP_COMPLETE_PATH } from "@/lib/signup-complete";
+import { signInWithGoogle } from "@/lib/google-auth";
+import { markSignupComplete, openSignupComplete, SIGNUP_COMPLETE_PATH } from "@/lib/signup-complete";
 
 const ATTEMPT_KEY = "bbe.googleAuthAttempt";
 type Attempt = { startedAt: number; returnTo: string };
@@ -29,6 +30,7 @@ export function clearOAuthAttempt(): void {
 }
 
 let finishing: Promise<string | null> | null = null;
+let recentDest: { at: number; dest: string } | null = null;
 /** Shared by popup completion and the origin callback after a full-page redirect. */
 export function finishOAuthAttempt(): Promise<string | null> {
   if (finishing) return finishing;
@@ -52,4 +54,39 @@ export function finishOAuthAttempt(): Promise<string | null> {
     return safeInternalReturnPath(attempt.returnTo) ?? "/dashboard";
   })().finally(() => { finishing = null; });
   return finishing;
+}
+
+/**
+ * Leave the Google flow. A new account loads the signup gate (then the
+ * three-subject demo). An existing account returns to `returnTo`.
+ */
+export async function completeGoogleAuth(): Promise<boolean> {
+  const fresh = await finishOAuthAttempt();
+  const dest =
+    fresh ?? (recentDest && Date.now() - recentDest.at < 5000 ? recentDest.dest : null);
+  if (!dest) return false;
+  recentDest = { at: Date.now(), dest };
+  if (dest === SIGNUP_COMPLETE_PATH) {
+    openSignupComplete();
+    return true;
+  }
+  window.location.assign(dest);
+  return true;
+}
+
+/** Start Google sign-in. The attempt decides signup vs return after the session exists. */
+export async function startGoogleAuth(existingUserPath: string): Promise<{
+  error: Error | null;
+  left: boolean;
+}> {
+  const dest = safeInternalReturnPath(existingUserPath) ?? "/dashboard";
+  beginOAuthAttempt(dest);
+  const result = await signInWithGoogle({ redirectTo: dest });
+  if (result.error) {
+    clearOAuthAttempt();
+    return { error: result.error, left: false };
+  }
+  if (result.redirected) return { error: null, left: true };
+  const left = await completeGoogleAuth();
+  return { error: null, left };
 }
