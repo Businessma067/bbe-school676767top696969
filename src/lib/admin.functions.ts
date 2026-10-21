@@ -16,6 +16,7 @@ import type {
   AdminTimelineResult,
   AdminUserDetail,
 } from "@/lib/admin-types";
+import { DEMO_PRACTICE_ENROLLMENT, demoEnrollmentInsert, usersMissingDemoEnrollment } from "@/lib/demo-enrollment";
 
 const ListUsersInput = z.object({
   page: z.number().int().min(1).default(1),
@@ -44,74 +45,41 @@ type AdminDb = Awaited<
 
 type AuthUserMeta = { id: string; email: string; created_at: string; phone?: string | null };
 
-const DEMO_PRACTICE_ENROLLMENT = {
-  product_slug: "demo-practice",
-  product_name: "Demo Practice Package",
-  tier: "demo",
-} as const;
-
 /**
- * Demo Practice Package is for someone who finished at least one demo task.
- * Signing up, or opening the admin list, does not grant it.
+ * Every account gets the Demo Practice Package at registration.
+ * Repairs people who signed up while the trigger only granted it after a task.
  */
-async function grantDemoEnrollmentAfterDemoTask(
+async function ensureDemoEnrollmentOnSignup(
   db: AdminDb,
-  users: { userId: string }[],
+  users: { userId: string; createdAt: string }[],
 ): Promise<void> {
   if (users.length === 0) return;
-  const ids = users.map((u) => u.userId);
-  const { data: attempts, error: attemptError } = await db
-    .from("task_attempts")
-    .select("user_id, created_at, task_key")
-    .in("user_id", ids);
-  if (attemptError) {
-    console.error("grantDemoEnrollmentAfterDemoTask attempts", attemptError);
-    return;
+  const enrolled: string[] = [];
+  for (let i = 0; i < users.length; i += 200) {
+    const ids = users.slice(i, i + 200).map((user) => user.userId);
+    const { data, error } = await db
+      .from("enrollments")
+      .select("user_id")
+      .eq("product_slug", DEMO_PRACTICE_ENROLLMENT.product_slug)
+      .in("user_id", ids);
+    if (error) {
+      console.error("ensureDemoEnrollmentOnSignup", error);
+      return;
+    }
+    for (const row of data ?? []) enrolled.push(row.user_id);
   }
 
-  const { data: paid, error: paidError } = await db
-    .from("enrollments")
-    .select("user_id, tier, product_slug")
-    .in("user_id", ids);
-  if (paidError) {
-    console.error("grantDemoEnrollmentAfterDemoTask enrollments", paidError);
-    return;
-  }
-
-  const hasPaid = new Set(
-    (paid ?? [])
-      .filter((row) => row.tier === "full" || row.tier === "lite")
-      .map((row) => row.user_id),
-  );
-  const hasDemo = new Set(
-    (paid ?? [])
-      .filter((row) => row.product_slug === DEMO_PRACTICE_ENROLLMENT.product_slug)
-      .map((row) => row.user_id),
-  );
-
-  const firstDemoTask = new Map<string, string>();
-  for (const row of attempts ?? []) {
-    const fromDemo = row.task_key.startsWith("demo:");
-    const unpaidPractice = !hasPaid.has(row.user_id);
-    if (!fromDemo && !unpaidPractice) continue;
-    const prev = firstDemoTask.get(row.user_id);
-    if (!prev || row.created_at < prev) firstDemoTask.set(row.user_id, row.created_at);
-  }
-
-  const missing = [...firstDemoTask.entries()].filter(([userId]) => !hasDemo.has(userId));
+  const missing = usersMissingDemoEnrollment(users, enrolled);
   if (missing.length === 0) return;
 
-  const { error: upsertError } = await db.from("enrollments").upsert(
-    missing.map(([userId, createdAt]) => ({
-      user_id: userId,
-      product_slug: DEMO_PRACTICE_ENROLLMENT.product_slug,
-      product_name: DEMO_PRACTICE_ENROLLMENT.product_name,
-      tier: DEMO_PRACTICE_ENROLLMENT.tier,
-      created_at: createdAt,
-    })),
-    { onConflict: "user_id,product_slug", ignoreDuplicates: true },
-  );
-  if (upsertError) console.error("grantDemoEnrollmentAfterDemoTask", upsertError);
+  for (let i = 0; i < missing.length; i += 200) {
+    const batch = missing.slice(i, i + 200);
+    const { error } = await db.from("enrollments").upsert(
+      batch.map((user) => demoEnrollmentInsert(user.userId, user.createdAt)),
+      { onConflict: "user_id,product_slug", ignoreDuplicates: true },
+    );
+    if (error) console.error("ensureDemoEnrollmentOnSignup", error);
+  }
 }
 
 const RPC_MISSING_HINT =
@@ -283,7 +251,7 @@ export const adminListUsers = createServerFn({ method: "POST" })
     }
 
     if (context.adminUsesServiceRole) {
-      await grantDemoEnrollmentAfterDemoTask(
+      await ensureDemoEnrollmentOnSignup(
         db,
         authUsers.map((u) => ({ userId: u.id, createdAt: u.created_at })),
       );
@@ -375,6 +343,11 @@ export const adminGetUserDetail = createServerFn({ method: "POST" })
   .handler(async ({ context, data }): Promise<AdminUserDetail> => {
     const db = context.supabaseAdmin;
     const authUser = await resolveAuthUser(db, data.userId, Boolean(context.adminUsesServiceRole));
+    if (context.adminUsesServiceRole) {
+      await ensureDemoEnrollmentOnSignup(db, [
+        { userId: authUser.id, createdAt: authUser.created_at },
+      ]);
+    }
     return fetchUserBundle(
       db,
       data.userId,
