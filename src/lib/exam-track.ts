@@ -167,11 +167,22 @@ export function resolveNavTrack(
   return readStoredExamTrack() ?? "bbe";
 }
 
+/** Subject picker for someone without a paid course. */
+export function visitorDemoPath(track: ExamTrack): string {
+  return track === "wiso" ? "/wiso/demo-practice" : "/demo-practice";
+}
+
 /**
- * Prefer staying on the dashboard when the header track toggle flips, so Study
- * tools / courses keep working without bouncing to the landing page.
+ * Header BBE / WiSo toggle.
+ * Visitors open that track's demo immediately. Paid accounts stay on the
+ * dashboard or account page, and otherwise open the track home.
  */
-export function pathForTrack(pathname: string, target: ExamTrack): string {
+export function pathForTrack(
+  pathname: string,
+  target: ExamTrack,
+  visitor = false,
+): string {
+  if (visitor) return visitorDemoPath(target);
   const path = stripLocalePrefix(pathname);
   if (path === "/dashboard" || path.startsWith("/dashboard/")) {
     return "/dashboard";

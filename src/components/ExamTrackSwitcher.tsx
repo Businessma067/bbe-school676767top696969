@@ -40,15 +40,22 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
   }, [pathname, hasLite, hasFull, hasWisoFull, ready]);
 
   const onHybrid = isHybridPath(pathname);
+  const visitor = !hasLite && !hasFull && !hasWisoFull && !hasHybrid;
 
   const switchTo = (next: ExamTrack) => {
-    if (next === track && !onHybrid) return;
+    const here = stripLocalePrefix(pathname);
+    const target = pathForTrack(pathname, next, visitor);
+    if (visitor) {
+      if (here === target || here.startsWith(`${target}/`)) return;
+    } else if (next === track && !onHybrid) {
+      return;
+    }
     storeExamTrack(next);
     setTrack(next);
     const lang = trackUiLang(next);
     setLang(lang);
-    const path = stripLocalePrefix(pathname);
-    if (path === "/dashboard" || path.startsWith("/dashboard/")) {
+    const path = here;
+    if (!visitor && (path === "/dashboard" || path.startsWith("/dashboard/"))) {
       const tab = (search as { tab?: string } | undefined)?.tab;
       const link = getLocaleLinkProps("/dashboard", lang);
       void navigate({
@@ -59,10 +66,9 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
       });
       return;
     }
-    if (path === "/account" || path.startsWith("/account/")) {
+    if (!visitor && (path === "/account" || path.startsWith("/account/"))) {
       return;
     }
-    const target = pathForTrack(pathname, next);
     const link = getLocaleLinkProps(target, lang);
     void navigate({
       to: link.to as never,
