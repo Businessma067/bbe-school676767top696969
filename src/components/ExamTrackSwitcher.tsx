@@ -21,7 +21,7 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
   const search = useRouterState({ select: (s) => s.location.search });
   const navigate = useNavigate();
   const { setLang } = useLanguage();
-  const { hasLite, hasFull, hasWisoFull, ready } = useAccountNavTier();
+  const { hasLite, hasFull, hasWisoFull, hasHybrid, ready } = useAccountNavTier();
   const [track, setTrack] = useState<ExamTrack>(() =>
     resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull }),
   );
