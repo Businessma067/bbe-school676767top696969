@@ -54,6 +54,7 @@ import { Route as LangSplatRouteImport } from './routes/$lang.$'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as AdminPromocodesRouteImport } from './routes/admin.promocodes'
+import { Route as AdminSupportRouteImport } from './routes/admin.support'
 import { Route as AdminUsersRouteImport } from './routes/admin.users'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
@@ -377,6 +378,11 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
 const AdminPromocodesRoute = AdminPromocodesRouteImport.update({
   id: '/promocodes',
   path: '/promocodes',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminSupportRoute = AdminSupportRouteImport.update({
+  id: '/support',
+  path: '/support',
   getParentRoute: () => AdminRoute,
 } as any)
 const AdminUsersRoute = AdminUsersRouteImport.update({
@@ -945,6 +951,7 @@ export interface FileRoutesByFullPath {
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
+  '/admin/support': typeof AdminSupportRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -1081,6 +1088,7 @@ export interface FileRoutesByTo {
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
+  '/admin/support': typeof AdminSupportRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -1216,6 +1224,7 @@ export interface FileRoutesById {
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
+  '/admin/support': typeof AdminSupportRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -1364,6 +1373,7 @@ export interface FileRouteTypes {
     | '/$lang/$'
     | '/admin/economics'
     | '/admin/promocodes'
+    | '/admin/support'
     | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -1500,6 +1510,7 @@ export interface FileRouteTypes {
     | '/$lang/$'
     | '/admin/economics'
     | '/admin/promocodes'
+    | '/admin/support'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -1634,6 +1645,7 @@ export interface FileRouteTypes {
     | '/$lang/$'
     | '/admin/economics'
     | '/admin/promocodes'
+    | '/admin/support'
     | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -2108,6 +2120,13 @@ declare module '@tanstack/react-router' {
       path: '/promocodes'
       fullPath: '/admin/promocodes'
       preLoaderRoute: typeof AdminPromocodesRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/support': {
+      id: '/admin/support'
+      path: '/support'
+      fullPath: '/admin/support'
+      preLoaderRoute: typeof AdminSupportRouteImport
       parentRoute: typeof AdminRoute
     }
     '/admin/users': {
@@ -2835,6 +2854,7 @@ const AdminUsersRouteWithChildren = AdminUsersRoute._addFileChildren(
 interface AdminRouteChildren {
   AdminEconomicsRoute: typeof AdminEconomicsRoute
   AdminPromocodesRoute: typeof AdminPromocodesRoute
+  AdminSupportRoute: typeof AdminSupportRoute
   AdminUsersRoute: typeof AdminUsersRouteWithChildren
   AdminIndexRoute: typeof AdminIndexRoute
 }
@@ -2842,6 +2862,7 @@ interface AdminRouteChildren {
 const AdminRouteChildren: AdminRouteChildren = {
   AdminEconomicsRoute: AdminEconomicsRoute,
   AdminPromocodesRoute: AdminPromocodesRoute,
+  AdminSupportRoute: AdminSupportRoute,
   AdminUsersRoute: AdminUsersRouteWithChildren,
   AdminIndexRoute: AdminIndexRoute,
 }

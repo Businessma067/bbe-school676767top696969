@@ -9,6 +9,7 @@ import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { HybridThirdCourseReel } from "@/components/HybridThirdCourseReel";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
@@ -216,6 +217,9 @@ export function HybridLandingPage() {
         </div>
 
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
+          <div className="mx-auto mb-8 max-w-7xl">
+            <SiteContacts />
+          </div>
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
             <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
               BBE School · Hybrid

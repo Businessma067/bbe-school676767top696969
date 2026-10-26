@@ -42,6 +42,7 @@ const FloatingAssistant = lazyNamed(
   () => import("../components/FloatingAssistant"),
   "FloatingAssistant",
 );
+const SupportChat = lazyNamed(() => import("../components/SupportChat"), "SupportChat");
 
 function NotFoundComponent() {
   return (
@@ -228,6 +229,7 @@ function RootComponent() {
             <DeferredChrome>
               <SignupBite />
               <FloatingAssistant />
+              <SupportChat />
             </DeferredChrome>
           </PracticeCaseProvider>
         </PageLangProvider>

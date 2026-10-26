@@ -10,6 +10,7 @@ import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { pinnedNote } from "@/data/acceptance-notes";
@@ -493,6 +494,7 @@ function SiteFooter() {
             </li>
           </ul>
         </div>
+        <SiteContacts />
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Legal</p>
           <ul className="mt-3 space-y-2 text-sm">

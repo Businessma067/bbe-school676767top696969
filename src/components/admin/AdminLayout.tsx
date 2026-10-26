@@ -2,6 +2,7 @@ import { Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
+import { adminSupportUnread } from "@/lib/support-chat";
 
 type Props = {
   children: ReactNode;
@@ -34,7 +35,24 @@ export function useAdminGate() {
 
 export function AdminLayout({ children, title, wide }: Props) {
   const auth = useAdminGate();
+  const [unread, setUnread] = useState(0);
   const maxW = wide ? "max-w-7xl" : "max-w-6xl";
+
+  useEffect(() => {
+    if (auth?.role !== "admin") return;
+    let stop = false;
+    const tick = () => {
+      void adminSupportUnread().then((n) => {
+        if (!stop) setUnread(n);
+      });
+    };
+    tick();
+    const timer = window.setInterval(tick, 12000);
+    return () => {
+      stop = true;
+      window.clearInterval(timer);
+    };
+  }, [auth]);
 
   if (auth === undefined) {
     return (
@@ -73,6 +91,9 @@ export function AdminLayout({ children, title, wide }: Props) {
         <aside className="lg:w-52 lg:shrink-0">
           <nav className="flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-1">
             <AdminNavLink to="/admin/users">Users</AdminNavLink>
+            <AdminNavLink to="/admin/support">
+              Support{unread > 0 ? ` (${unread})` : ""}
+            </AdminNavLink>
             <AdminNavLink to="/admin/promocodes">Promocodes</AdminNavLink>
           </nav>
         </aside>
@@ -91,7 +112,7 @@ function AdminNavLink({
   to,
   children,
 }: {
-  to: "/admin/users" | "/admin/promocodes";
+  to: "/admin/users" | "/admin/promocodes" | "/admin/support";
   children: ReactNode;
 }) {
   return (
