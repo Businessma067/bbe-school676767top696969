@@ -18,6 +18,7 @@ import {
   paymentMethodLabel,
 } from "@/lib/payment-display";
 import { resolveAdminCountry } from "@/lib/countries";
+import { phoneWithCountryCode } from "@/lib/phone-country";
 import { buildStudyProgress, type SessionAnswerStat } from "@/lib/study-progress";
 import {
   computeStreak,
@@ -546,6 +547,7 @@ export async function buildAdminUserRow(
     })(),
     plans,
     payments: [],
+    phone: phone ? phoneWithCountryCode(phone, signupCountry) : null,
   };
 }
 

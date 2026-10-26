@@ -446,6 +446,7 @@ function userRowFromRecord(record: UserRecord): AdminUserRow {
       createdAt: e.createdAt,
     })),
     payments: [],
+    phone: user.phone ?? null,
   };
 }
 

@@ -5,6 +5,7 @@ import { UserProgressCharts } from "@/components/admin/UserProgressCharts";
 import { HEATMAP_LEVEL_COLORS, accuracyToLevel } from "@/lib/study-progress";
 import type { AdminUserDetail } from "@/lib/admin-types";
 import { formatAmountMinor } from "@/lib/payment-display";
+import { whatsAppHref } from "@/lib/phone-country";
 
 const TABS = [
   "Overview",
@@ -24,6 +25,7 @@ type Tab = (typeof TABS)[number];
 export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
   const [tab, setTab] = useState<Tab>("Overview");
   const p = detail.profile;
+  const whatsApp = whatsAppHref(p.phone);
 
   return (
     <div className="space-y-5">
@@ -35,7 +37,18 @@ export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
         {p.phone ? (
           <p className="mt-1 text-sm text-foreground">
             <span className="text-muted-foreground">Phone · </span>
-            <span className="font-mono">{p.phone}</span>
+            {whatsApp ? (
+              <a
+                href={whatsApp}
+                target="_blank"
+                rel="noreferrer"
+                className="font-mono text-primary hover:underline"
+              >
+                {p.phone}
+              </a>
+            ) : (
+              <span className="font-mono">{p.phone}</span>
+            )}
           </p>
         ) : null}
         <p className="mt-1 text-sm text-foreground">

@@ -55,6 +55,15 @@ export function clearSignupComplete(): void {
   }
 }
 
+export function hasSignupComplete(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    return sessionStorage.getItem(FLAG_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
 export function consumeSignupComplete(): boolean {
   if (typeof window === "undefined") return false;
   try {

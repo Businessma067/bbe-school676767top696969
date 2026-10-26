@@ -52,6 +52,8 @@ export type AdminUserRow = {
   plans: AdminPlanRow[];
   /** Payments newest-first. */
   payments: AdminPaymentRow[];
+  /** Phone with a country calling code when one is known, for WhatsApp. */
+  phone: string | null;
 };
 
 export type AdminCohortStats = {

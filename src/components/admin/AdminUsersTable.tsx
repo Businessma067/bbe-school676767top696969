@@ -3,6 +3,7 @@ import { useState } from "react";
 import { fmtDate } from "@/components/admin/AdminLayout";
 import type { AdminPaymentRow, AdminUserRow } from "@/lib/admin-types";
 import { formatAmountMinor } from "@/lib/payment-display";
+import { whatsAppHref } from "@/lib/phone-country";
 
 /** Expandable one-row-per-account list with plan + payment details. */
 export function AdminUsersTable({
@@ -64,6 +65,7 @@ export function AdminUsersTable({
                   {u.email || "—"}
                 </Link>
                 <p className="truncate text-xs text-muted-foreground">{u.displayName}</p>
+                {u.phone ? <PhoneLine phone={u.phone} /> : null}
               </div>
               <PlanChips plans={u.plans} tier={u.tier} />
               <CountryChip name={u.country} />
@@ -89,6 +91,21 @@ export function AdminUsersTable({
         );
       })}
     </div>
+  );
+}
+
+function PhoneLine({ phone }: { phone: string }) {
+  const whatsApp = whatsAppHref(phone);
+  return (
+    <p className="truncate font-mono text-xs text-foreground">
+      {whatsApp ? (
+        <a href={whatsApp} target="_blank" rel="noreferrer" className="hover:underline">
+          {phone}
+        </a>
+      ) : (
+        phone
+      )}
+    </p>
   );
 }
 

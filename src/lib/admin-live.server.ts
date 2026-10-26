@@ -115,6 +115,7 @@ export async function fetchLiveUserRows(db: Db): Promise<{
         tasks.attempted > 0 ? Math.round((tasks.passed / tasks.attempted) * 1000) / 10 : null,
       plans: plansByUser.get(u.user_id) ?? [],
       payments: paymentsByUser.get(u.user_id) ?? [],
+      phone: null,
     };
   });
 
