@@ -33,7 +33,9 @@ describe("verified signup country capture", () => {
     const execute = new Function(
       "getCurrentAuthState",
       "cancelled",
+      "supabase",
       "navigate",
+      "hasSignupComplete",
       "consumeSignupComplete",
       "recordSignupCountry",
       "ensureOwnDemoEnrollment",
@@ -48,7 +50,9 @@ describe("verified signup country capture", () => {
     await execute(
       async () => auth,
       false,
+      { auth: { getUser: async () => ({ data: { user: null } }) } },
       () => {},
+      () => signup,
       () => signup,
       record,
       async () => undefined,
