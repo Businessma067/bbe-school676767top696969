@@ -163,6 +163,64 @@ function isExpired(expiresAt: string | null | undefined): boolean {
   return new Date(expiresAt).getTime() < Date.now();
 }
 
+/** STUDYLINE is once per signed-in account (paid usage or pending checkout). */
+async function assertStudylineAvailableForUser(input: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  supabaseAdmin: any;
+  userId?: string;
+  promocodeId?: string | null;
+}): Promise<DiscountValidateResult | null> {
+  if (!input.userId) {
+    return { ok: false, error: "Sign in to use this promocode." };
+  }
+
+  let usageCount = 0;
+  if (input.promocodeId) {
+    const { count, error } = await input.supabaseAdmin
+      .from("promo_usages")
+      .select("id", { count: "exact", head: true })
+      .eq("promocode_id", input.promocodeId)
+      .eq("user_id", input.userId);
+    if (error) {
+      if (!isMissingRelationError(error)) {
+        return { ok: false, error: "Could not verify promocode. Try again." };
+      }
+    } else {
+      usageCount = count ?? 0;
+    }
+  } else {
+    const { count, error } = await input.supabaseAdmin
+      .from("promo_usages")
+      .select("id", { count: "exact", head: true })
+      .eq("code", "STUDYLINE")
+      .eq("user_id", input.userId);
+    if (error) {
+      if (!isMissingRelationError(error)) {
+        return { ok: false, error: "Could not verify promocode. Try again." };
+      }
+    } else {
+      usageCount = count ?? 0;
+    }
+  }
+
+  const { count: paymentCount, error: paymentError } = await input.supabaseAdmin
+    .from("payments")
+    .select("id", { count: "exact", head: true })
+    .eq("promo_code", "STUDYLINE")
+    .eq("user_id", input.userId)
+    .not("status", "in", "(failure,expired,reversed)");
+  if (paymentError && !isMissingRelationError(paymentError)) {
+    return { ok: false, error: "Could not verify promocode. Try again." };
+  }
+  if (usageCount > 0 || (paymentCount ?? 0) > 0) {
+    return {
+      ok: false,
+      error: "This promocode was already used or has a pending payment on your account.",
+    };
+  }
+  return null;
+}
+
 /** Resolve a live discount promocode (DB first, legacy hardcoded fallback). */
 export async function lookupDiscountPromo(input: {
   code: string;
@@ -207,26 +265,12 @@ export async function lookupDiscountPromo(input: {
         return { ok: false, error: "This promocode is invalid." };
       }
       if (code === "STUDYLINE") {
-        if (!input.userId) {
-          return { ok: false, error: "Sign in to use this promocode." };
-        }
-        const { count: usageCount, error: usageError } = await supabaseAdmin
-          .from("promo_usages")
-          .select("id", { count: "exact", head: true })
-          .eq("promocode_id", data.id)
-          .eq("user_id", input.userId);
-        const { count: paymentCount, error: paymentError } = await supabaseAdmin
-          .from("payments")
-          .select("id", { count: "exact", head: true })
-          .eq("promo_code", code)
-          .eq("user_id", input.userId)
-          .not("status", "in", "(failure,expired,reversed)");
-        if (usageError || paymentError) {
-          return { ok: false, error: "Could not verify promocode. Try again." };
-        }
-        if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
-          return { ok: false, error: "This promocode was already used or has a pending payment on your account." };
-        }
+        const blocked = await assertStudylineAvailableForUser({
+          supabaseAdmin,
+          userId: input.userId,
+          promocodeId: data.id,
+        });
+        if (blocked) return blocked;
       }
       if (data.max_uses != null) {
         const { count, error: countError } = await supabaseAdmin
@@ -265,6 +309,20 @@ export async function lookupDiscountPromo(input: {
     if (!promoAppliesToProduct(hardcoded.productSlug, input.productSlug)) {
       return { ok: false, error: "This promocode does not apply to this course." };
     }
+    if (normalizeCode(hardcoded.code) === "STUDYLINE") {
+      try {
+        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+        const blocked = await assertStudylineAvailableForUser({
+          supabaseAdmin,
+          userId: input.userId,
+          promocodeId: null,
+        });
+        if (blocked) return blocked;
+      } catch (err) {
+        console.error("lookupDiscountPromo studyline hardcoded", err);
+        return { ok: false, error: "Could not verify promocode. Try again." };
+      }
+    }
     return {
       ok: true,
       code: normalizeCode(hardcoded.code),
@@ -292,6 +350,42 @@ export async function lookupDiscountPromo(input: {
 // Actual usage is recorded in `promo_usages` after a successful payment.
 
 
+async function ensureStudylinePromocodeRow(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  supabaseAdmin: any,
+): Promise<{ id: string; kind: string } | null> {
+  const { data: existing } = await supabaseAdmin
+    .from("promocodes")
+    .select("id, kind")
+    .eq("code", "STUDYLINE")
+    .maybeSingle();
+  if (existing) return existing;
+
+  const { data: inserted, error } = await supabaseAdmin
+    .from("promocodes")
+    .insert({
+      code: "STUDYLINE",
+      product_slug: "any-paid",
+      kind: "discount",
+      discount_pct: 5,
+      max_uses: null,
+      expires_at: null,
+      name: "Studyline 5% · once per account",
+    })
+    .select("id, kind")
+    .maybeSingle();
+  if (error) {
+    // Concurrent insert — re-read.
+    const { data: raced } = await supabaseAdmin
+      .from("promocodes")
+      .select("id, kind")
+      .eq("code", "STUDYLINE")
+      .maybeSingle();
+    return raced ?? null;
+  }
+  return inserted;
+}
+
 export async function recordPromoUsage(input: {
   code: string;
   userId: string;
@@ -304,11 +398,16 @@ export async function recordPromoUsage(input: {
 
   try {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const { data: promo } = await supabaseAdmin
+    let { data: promo } = await supabaseAdmin
       .from("promocodes")
       .select("id, kind")
       .eq("code", code)
       .maybeSingle();
+
+    // Auto-seed STUDYLINE so admin usage tracking works before the SQL migration runs.
+    if ((!promo || promo.kind !== "discount") && code === "STUDYLINE") {
+      promo = await ensureStudylinePromocodeRow(supabaseAdmin);
+    }
 
     if (!promo || promo.kind !== "discount") return;
 

@@ -66,8 +66,17 @@ export function getAppliedPromoMap(): PromoMap {
 
 export function saveAppliedPromo(productSlug: PaidProductSlug, promo: AppliedPromo) {
   const map = readMap();
+  const code = promo.code.trim().toUpperCase();
+  // STUDYLINE is once per account: keep only one course selection in this browser.
+  if (code === "STUDYLINE") {
+    for (const slug of Object.keys(map) as PaidProductSlug[]) {
+      if (map[slug]?.code === "STUDYLINE") {
+        delete map[slug];
+      }
+    }
+  }
   map[productSlug] = {
-    code: promo.code.trim().toUpperCase(),
+    code,
     discountPct: promo.discountPct,
   };
   writeMap(map);

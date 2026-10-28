@@ -54,3 +54,11 @@ Run in Supabase → SQL Editor (safe to re-run):
 `supabase/migrations/20261013140000_discount_promocodes_10_15_single_use.sql`
 
 Adds ten `BBE-10-*` (10% once) and ten `BBE-15-*` (15% once) codes for any paid course (`max_uses = 1`). They show on `/admin/promocodes` after the SQL runs.
+
+### STUDYLINE (partner, 5%, once per account)
+
+Run in Supabase → SQL Editor (safe to re-run):
+
+`supabase/migrations/20261028150000_studyline_promocode.sql`
+
+Seeds `STUDYLINE` (5% off any paid course, unlimited global uses, **once per signed-in account**). Checkout and `promo_usages` remember which users applied it; `/admin/promocodes` lists those emails after a successful payment.

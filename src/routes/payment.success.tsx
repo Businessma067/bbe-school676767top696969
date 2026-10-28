@@ -86,7 +86,13 @@ export function PaymentSuccessPage() {
       return;
     }
     setAllowed(true);
-  }, [navigate]);
+    // Sticky checkout discounts are spent once payment succeeds.
+    if (typeof product === "string" && isPaidProductSlug(product)) {
+      void import("@/lib/applied-promo").then(({ clearAppliedPromo }) => {
+        clearAppliedPromo(product);
+      });
+    }
+  }, [navigate, product]);
 
   const productSlug =
     typeof product === "string" && isPaidProductSlug(product) ? product : undefined;

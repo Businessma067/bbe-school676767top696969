@@ -110,6 +110,13 @@ const BBE_15_CODES = [
 
 export const HARDCODED_DISCOUNT_PROMOS: HardcodedDiscountPromo[] = [
   {
+    code: "STUDYLINE",
+    discountPct: 5,
+    productSlug: "any-paid",
+    name: "Studyline 5% · once per account",
+    expiresAt: null,
+  },
+  {
     code: "BBE-JFKDJT15",
     discountPct: 15,
     productSlug: "any-paid",
