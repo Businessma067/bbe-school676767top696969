@@ -8,6 +8,13 @@
       "when": 1792235220975,
       "tag": "0000_signup_country",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793185929611,
+      "tag": "0001_studyline_account_limit",
+      "breakpoints": true
     }
   ]
 }
