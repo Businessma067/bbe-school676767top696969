@@ -350,6 +350,42 @@ export async function lookupDiscountPromo(input: {
 // Actual usage is recorded in `promo_usages` after a successful payment.
 
 
+async function ensureStudylinePromocodeRow(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  supabaseAdmin: any,
+): Promise<{ id: string; kind: string } | null> {
+  const { data: existing } = await supabaseAdmin
+    .from("promocodes")
+    .select("id, kind")
+    .eq("code", "STUDYLINE")
+    .maybeSingle();
+  if (existing) return existing;
+
+  const { data: inserted, error } = await supabaseAdmin
+    .from("promocodes")
+    .insert({
+      code: "STUDYLINE",
+      product_slug: "any-paid",
+      kind: "discount",
+      discount_pct: 5,
+      max_uses: null,
+      expires_at: null,
+      name: "Studyline 5% · once per account",
+    })
+    .select("id, kind")
+    .maybeSingle();
+  if (error) {
+    // Concurrent insert — re-read.
+    const { data: raced } = await supabaseAdmin
+      .from("promocodes")
+      .select("id, kind")
+      .eq("code", "STUDYLINE")
+      .maybeSingle();
+    return raced ?? null;
+  }
+  return inserted;
+}
+
 export async function recordPromoUsage(input: {
   code: string;
   userId: string;
@@ -362,11 +398,16 @@ export async function recordPromoUsage(input: {
 
   try {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const { data: promo } = await supabaseAdmin
+    let { data: promo } = await supabaseAdmin
       .from("promocodes")
       .select("id, kind")
       .eq("code", code)
       .maybeSingle();
+
+    // Auto-seed STUDYLINE so admin usage tracking works before the SQL migration runs.
+    if ((!promo || promo.kind !== "discount") && code === "STUDYLINE") {
+      promo = await ensureStudylinePromocodeRow(supabaseAdmin);
+    }
 
     if (!promo || promo.kind !== "discount") return;
 
