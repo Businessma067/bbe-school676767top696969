@@ -15,7 +15,7 @@ import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
 import { markPaymentSuccessAccess } from "@/lib/payment-success-access";
 import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
-import { getAppliedPromo, saveAppliedPromo } from "@/lib/applied-promo";
+import { clearAppliedPromo, getAppliedPromo, saveAppliedPromo } from "@/lib/applied-promo";
 
 const ORANGE = "#C2643A";
 
@@ -64,12 +64,28 @@ export function PaymentModal({
     setPromoUnlocked(false);
     setAuthOpen(false);
 
-    // Buying requires an account first.
+    // Buying requires an account first. Re-check sticky promos against account limits.
     void (async () => {
       const { data } = await supabase.auth.getSession();
       if (!data.session) {
         onOpenChange(false);
         setAuthOpen(true);
+        return;
+      }
+      if (!saved?.code) return;
+      try {
+        const discount = await validateDiscountCode({
+          data: { code: saved.code, productSlug },
+        });
+        if (!discount.ok) {
+          clearAppliedPromo(productSlug);
+          setPromoCode("");
+          setAppliedPromoCode(null);
+          setDiscountPct(0);
+          setError(discount.error);
+        }
+      } catch {
+        // Keep the sticky UI price if the network blips; checkout re-validates.
       }
     })();
   }, [open, onOpenChange, productSlug]);
@@ -124,8 +140,9 @@ export function PaymentModal({
     }
 
     const discountOnlyError =
-      /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
-      !/unlock/i.test(discount.error);
+      /expired|use limit|does not apply|percent off|% off|already used|pending payment|sign in to use/i.test(
+        discount.error,
+      ) && !/unlock/i.test(discount.error);
     if (discountOnlyError) {
       setError(discount.error);
       return true; // handled; caller should not try unlock
