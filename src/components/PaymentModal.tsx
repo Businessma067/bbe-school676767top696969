@@ -15,6 +15,7 @@ import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
 import { markPaymentSuccessAccess } from "@/lib/payment-success-access";
 import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
+import { getAppliedPromo, saveAppliedPromo } from "@/lib/applied-promo";
 
 const ORANGE = "#C2643A";
 
@@ -53,10 +54,11 @@ export function PaymentModal({
 
   useEffect(() => {
     if (!open) return;
+    const saved = getAppliedPromo(productSlug);
     setMethod("card");
-    setPromoCode("");
-    setAppliedPromoCode(null);
-    setDiscountPct(0);
+    setPromoCode(saved?.code ?? "");
+    setAppliedPromoCode(saved?.code ?? null);
+    setDiscountPct(saved?.discountPct ?? 0);
     setLoading(false);
     setError(null);
     setPromoUnlocked(false);
@@ -70,7 +72,7 @@ export function PaymentModal({
         setAuthOpen(true);
       }
     })();
-  }, [open, onOpenChange]);
+  }, [open, onOpenChange, productSlug]);
 
   const handlePay = async () => {
     setError(null);
@@ -112,6 +114,10 @@ export function PaymentModal({
     if (discount.ok) {
       setAppliedPromoCode(discount.code);
       setDiscountPct(discount.discountPct);
+      saveAppliedPromo(productSlug, {
+        code: discount.code,
+        discountPct: discount.discountPct,
+      });
       setMethod("card");
       setError(null);
       return true;
@@ -121,8 +127,6 @@ export function PaymentModal({
       /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
       !/unlock/i.test(discount.error);
     if (discountOnlyError) {
-      setAppliedPromoCode(null);
-      setDiscountPct(0);
       setError(discount.error);
       return true; // handled; caller should not try unlock
     }
@@ -314,10 +318,10 @@ export function PaymentModal({
                         type="text"
                         value={promoCode}
                         onChange={(e) => setPromoCode(e.target.value)}
-                        placeholder="BBE-15-……"
+                        placeholder="Enter a promocode and get a discount"
                         autoComplete="off"
                         spellCheck={false}
-                        className="min-w-0 flex-1 rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase outline-none focus:ring-2 focus:ring-ring"
+                        className="min-w-0 flex-1 rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase placeholder:normal-case placeholder:font-sans outline-none focus:ring-2 focus:ring-ring"
                       />
                       <button
                         type="submit"
@@ -330,18 +334,23 @@ export function PaymentModal({
                   </form>
 
                   {discountApplied && (
-                    <p
-                      className="rounded-md border px-3 py-2 text-sm font-semibold"
+                    <div
+                      className="rounded-md border px-3 py-2 text-sm"
                       style={{
                         borderColor: `${ORANGE}55`,
                         backgroundColor: `${ORANGE}10`,
                         color: ORANGE,
                       }}
                     >
-                      {MONOBANK_TEST_CHARGE.enabled
-                        ? `Discount noted (${appliedPromoCode}): test charge remains ${MONOBANK_TEST_CHARGE.label}`
-                        : `${discountPct}% off applied (${appliedPromoCode}): pay €${eurPrice} instead of €${catalogEur}`}
-                    </p>
+                      <p className="font-semibold">
+                        {MONOBANK_TEST_CHARGE.enabled
+                          ? `Discount noted (${appliedPromoCode}): test charge remains ${MONOBANK_TEST_CHARGE.label}`
+                          : `${discountPct}% off applied (${appliedPromoCode}): pay €${eurPrice} instead of €${catalogEur}`}
+                      </p>
+                      <p className="mt-1 text-xs font-medium opacity-90">
+                        You can change this promocode before you pay.
+                      </p>
+                    </div>
                   )}
 
                   {error && (
@@ -377,8 +386,8 @@ export function PaymentModal({
               <TabsContent value="promo" className="mt-4">
                 <form onSubmit={handlePromoRedeem} className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Enter a discount code for 15% off Lite or Full, or a one-time unlock code for
-                    free access.
+                    Enter a discount code for percent off, or a one-time unlock code for free access.
+                    A discount stays on this course until you change it or pay.
                   </p>
                   <div>
                     <label className="mb-1 block text-xs font-medium text-foreground">
@@ -388,12 +397,19 @@ export function PaymentModal({
                       type="text"
                       value={promoCode}
                       onChange={(e) => setPromoCode(e.target.value)}
-                      placeholder="BBE-15-……"
+                      placeholder="Enter a promocode and get a discount"
                       autoComplete="off"
                       spellCheck={false}
-                      className="w-full rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase placeholder:normal-case placeholder:font-sans outline-none focus:ring-2 focus:ring-ring"
                     />
                   </div>
+
+                  {discountApplied && (
+                    <p className="text-sm text-muted-foreground">
+                      {discountPct}% off is saved on this course ({appliedPromoCode}). You can
+                      change this promocode before you pay.
+                    </p>
+                  )}
 
                   {error && (
                     <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">

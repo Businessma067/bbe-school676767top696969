@@ -38,6 +38,9 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
 import { SalesWarmup } from "@/components/SalesWarmup";
+import { CourseOfferPrice } from "@/components/CourseOfferPrice";
+import { useAppliedPromo } from "@/hooks/use-applied-promo";
+import { discountedPriceEur } from "@/lib/applied-promo";
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
 const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
@@ -219,6 +222,10 @@ function CtaButton({ onClick, label }: { onClick: () => void; label: string }) {
 
 export function WisoFullCourseProduct() {
   const { ready, signedIn, ownsWisoFullCourse } = useFullCourseAccess();
+  const appliedPromo = useAppliedPromo("wiso-full-course");
+  const offerEur = appliedPromo
+    ? discountedPriceEur(FULL_COURSE_PRICE, appliedPromo.discountPct)
+    : FULL_COURSE_PRICE;
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
@@ -295,18 +302,11 @@ export function WisoFullCourseProduct() {
               <div className="text-sm text-muted-foreground">
                 {ownsWisoFullCourse ? "Your access" : "One-time payment"}
               </div>
-              <div className="mt-1 flex items-baseline gap-2">
-                {ownsWisoFullCourse ? (
-                  <span className="font-display text-2xl font-bold text-foreground">Unlocked</span>
-                ) : (
-                  <>
-                    <span className="font-display text-4xl font-bold text-foreground">
-                      €{FULL_COURSE_PRICE}
-                    </span>
-                    <span className="text-sm text-muted-foreground">full access</span>
-                  </>
-                )}
-              </div>
+              <CourseOfferPrice
+                catalogEur={FULL_COURSE_PRICE}
+                applied={appliedPromo}
+                owned={ownsWisoFullCourse}
+              />
             </div>
             {!ready ? (
               <div className="h-12 w-40 animate-pulse rounded-xl bg-secondary" />
@@ -319,7 +319,7 @@ export function WisoFullCourseProduct() {
                 Go to course →
               </Link>
             ) : (
-              <CtaButton onClick={openBuy} label="Buy course" />
+              <CtaButton onClick={openBuy} label={`Buy course · €${offerEur}`} />
             )}
             </div>
             {ready && !ownsWisoFullCourse ? (
@@ -431,11 +431,12 @@ export function WisoFullCourseProduct() {
                 Train the WiSo format, not a different exam&apos;s language section.
               </p>
               <p className="mt-2 text-xs text-muted-foreground">
-                One-time payment · €{FULL_COURSE_PRICE} · Instant full access
+                One-time payment · €{offerEur} · Instant full access
+                {appliedPromo ? " · You can change this promocode before you pay" : ""}
               </p>
               {!ownsWisoFullCourse ? (
                 <div className="mt-4">
-                  <CtaButton onClick={openBuy} label="Buy course" />
+                  <CtaButton onClick={openBuy} label={`Buy course · €${offerEur}`} />
                 </div>
               ) : null}
             </div>

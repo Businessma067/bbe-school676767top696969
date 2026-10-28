@@ -6,7 +6,10 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { PaymentModal } from "@/components/PaymentModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SalesWarmup } from "@/components/SalesWarmup";
+import { CourseOfferPrice } from "@/components/CourseOfferPrice";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
+import { useAppliedPromo } from "@/hooks/use-applied-promo";
+import { discountedPriceEur } from "@/lib/applied-promo";
 import { PAID_PRODUCTS } from "@/lib/checkout-catalog";
 import { HYBRID_HUB_HREF } from "@/lib/full-course-access";
 import { HYBRID_ACCENT } from "@/lib/hybrid-course";
@@ -71,6 +74,10 @@ const FEATURES = [
 
 export function HybridCourseProductPage() {
   const { ready, signedIn, ownsHybridCourse } = useFullCourseAccess();
+  const appliedPromo = useAppliedPromo("hybrid-full-course");
+  const offerEur = appliedPromo
+    ? discountedPriceEur(PRODUCT.priceEur, appliedPromo.discountPct)
+    : PRODUCT.priceEur;
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
@@ -126,9 +133,12 @@ export function HybridCourseProductPage() {
               <div className="text-sm text-muted-foreground">
                 {ownsHybridCourse ? "Your access" : "One-time payment"}
               </div>
-              <div className="mt-1 font-display text-3xl font-bold">
-                {ownsHybridCourse ? "Unlocked" : `€${PRODUCT.priceEur}`}
-              </div>
+              <CourseOfferPrice
+                catalogEur={PRODUCT.priceEur}
+                applied={appliedPromo}
+                owned={ownsHybridCourse}
+                suffix=""
+              />
               <p className="mt-1 text-xs text-muted-foreground">
                 Includes Full BBE + Full WiSo libraries plus the Hybrid tools.
               </p>
@@ -150,7 +160,7 @@ export function HybridCourseProductPage() {
                 className="inline-flex items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white"
                 style={{ backgroundColor: HYBRID_ACCENT }}
               >
-                Buy Hybrid · €{PRODUCT.priceEur} →
+                Buy Hybrid · €{offerEur} →
               </button>
             )}
             </div>

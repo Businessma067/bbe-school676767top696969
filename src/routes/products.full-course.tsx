@@ -38,7 +38,10 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
 import { SalesWarmup } from "@/components/SalesWarmup";
+import { CourseOfferPrice } from "@/components/CourseOfferPrice";
 import { consumeResumeCheckout } from "@/lib/signup-complete";
+import { useAppliedPromo } from "@/hooks/use-applied-promo";
+import { discountedPriceEur } from "@/lib/applied-promo";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
@@ -276,6 +279,10 @@ function CtaButton({
 
 export function FullCourseProduct() {
   const { ready, signedIn, ownsFullCourse } = useFullCourseAccess();
+  const appliedPromo = useAppliedPromo("full-course");
+  const offerEur = appliedPromo
+    ? discountedPriceEur(FULL_COURSE_PRICE, appliedPromo.discountPct)
+    : FULL_COURSE_PRICE;
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
@@ -351,18 +358,11 @@ export function FullCourseProduct() {
               <div className="text-sm text-muted-foreground">
                 {ownsFullCourse ? "Your access" : "One-time payment"}
               </div>
-              <div className="mt-1 flex items-baseline gap-2">
-                {ownsFullCourse ? (
-                  <span className="font-display text-2xl font-bold text-foreground">Unlocked</span>
-                ) : (
-                  <>
-                    <span className="font-display text-4xl font-bold text-foreground">
-                      €{FULL_COURSE_PRICE}
-                    </span>
-                    <span className="text-sm text-muted-foreground">full access</span>
-                  </>
-                )}
-              </div>
+              <CourseOfferPrice
+                catalogEur={FULL_COURSE_PRICE}
+                applied={appliedPromo}
+                owned={ownsFullCourse}
+              />
             </div>
             {!ready ? (
               <div className="h-12 w-40 animate-pulse rounded-xl bg-secondary" />
@@ -375,7 +375,7 @@ export function FullCourseProduct() {
                 Go to course →
               </Link>
             ) : (
-              <CtaButton onClick={openBuy} label="Buy course" />
+              <CtaButton onClick={openBuy} label={`Buy course · €${offerEur}`} />
             )}
             </div>
             {ready && !ownsFullCourse ? (
@@ -547,7 +547,8 @@ export function FullCourseProduct() {
                 Stop guessing. Start training the way the exam actually tests you.
               </p>
               <p className="mt-2 text-xs text-muted-foreground">
-                One-time payment · €{FULL_COURSE_PRICE} · Instant full access
+                One-time payment · €{offerEur} · Instant full access
+                {appliedPromo ? " · You can change this promocode before you pay" : ""}
               </p>
             </div>
           </section>

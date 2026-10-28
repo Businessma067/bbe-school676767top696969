@@ -6,6 +6,9 @@ import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-ac
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { useAppliedPromoMap } from "@/hooks/use-applied-promo";
+import { discountedPriceEur } from "@/lib/applied-promo";
+import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
 
 /** Local remakes served from public/ (avoids stale Lovable CDN assets). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
@@ -99,6 +102,7 @@ type Product = {
   accent?: "bbe" | "wiso" | "hybrid";
   ownedCta?: string;
   ownedTo?: string;
+  productSlug?: PaidProductSlug;
 };
 
 const products: Product[] = [
@@ -117,6 +121,7 @@ const products: Product[] = [
     description:
       "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.",
     cta: "Buy course · €411",
+    productSlug: "full-course",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
     ownedTo: FULL_COURSE_HREF,
@@ -129,6 +134,7 @@ const products: Product[] = [
     description:
       "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.",
     cta: "Buy course · €411",
+    productSlug: "wiso-full-course",
     to: "/wiso/products/full-course",
     ownedCta: "Go to course",
     ownedTo: "/wiso/products/full-course-subjects",
@@ -141,6 +147,7 @@ const products: Product[] = [
     description:
       "One study path for both entrance exams: shared math and economics once, English + German overlays, and dual BBE/WiSo practice modes — without doubling the workload.",
     cta: "Buy Hybrid · €559",
+    productSlug: "hybrid-full-course",
     to: "/products/hybrid-course",
     ownedCta: "Go to Hybrid hub",
     ownedTo: "/hybrid/course",
@@ -151,6 +158,7 @@ const products: Product[] = [
 
 export function ProductsPage() {
   const { ready, ownsFullCourse, ownsWisoFullCourse, ownsHybridCourse } = useFullCourseAccess();
+  const appliedPromos = useAppliedPromoMap();
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -185,7 +193,19 @@ export function ProductsPage() {
                 (isFullBbe && ownsFullCourse) ||
                 (isFullWiso && ownsWisoFullCourse) ||
                 (isHybrid && ownsHybridCourse);
-              const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
+              const applied = p.productSlug ? appliedPromos[p.productSlug] : null;
+              const catalogEur = p.productSlug ? PAID_PRODUCTS[p.productSlug].priceEur : null;
+              const saleEur =
+                applied && catalogEur != null
+                  ? discountedPriceEur(catalogEur, applied.discountPct)
+                  : catalogEur;
+              const buyCta =
+                saleEur != null
+                  ? p.accent === "hybrid"
+                    ? `Buy Hybrid · €${saleEur}`
+                    : `Buy course · €${saleEur}`
+                  : p.cta;
+              const cta = owned && p.ownedCta ? p.ownedCta : buyCta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
               const accentColor =
                 p.accent === "wiso" ? INDIGO : p.accent === "hybrid" ? HYBRID : ORANGE;
@@ -232,6 +252,12 @@ export function ProductsPage() {
                     <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
                       {p.description}
                     </p>
+                    {!owned && applied ? (
+                      <p className="mt-2 text-xs text-muted-foreground">
+                        {applied.discountPct}% off saved on this course.{" "}
+                        You can change this promocode before you pay.
+                      </p>
+                    ) : null}
                     {!ready && (isFullBbe || isHybrid) ? (
                       <div className="mt-5 h-10 animate-pulse rounded-md bg-secondary" aria-hidden />
                     ) : to && !p.disabled ? (

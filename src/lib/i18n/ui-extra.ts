@@ -135,6 +135,14 @@ export const uiExtraDe: Record<string, string> = {
   "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
     "Zahle per Karte, Apple Pay oder Google Pay. Nach der Zahlung kommst du hierher zurück.",
   "15% discount applied": "15 % Rabatt angewendet",
+  "You can change this promocode before you pay.":
+    "Du kannst diesen Promocode vor dem Kauf noch ändern.",
+  "A discount stays on this course until you change it or pay.":
+    "Der Rabatt bleibt auf diesem Kurs, bis du ihn änderst oder bezahlst.",
+  "Enter a discount code for percent off, or a one-time unlock code for free access. A discount stays on this course until you change it or pay.":
+    "Gib einen Rabattcode für Prozentnachlass ein oder einen Einmal-Code für kostenlosen Zugang. Der Rabatt bleibt auf diesem Kurs, bis du ihn änderst oder bezahlst.",
+  "off saved on this course. You can change this promocode before you pay.":
+    " Rabatt auf diesem Kurs gespeichert. Du kannst den Promocode vor dem Kauf noch ändern.",
   "Proceed to payment · ": "Zur Zahlung · ",
   "One-time payment · No subscription · Secured by Monobank":
     "Einmalige Zahlung · Kein Abo · Gesichert durch Monobank",
@@ -148,6 +156,9 @@ export const uiExtraDe: Record<string, string> = {
   Promocode: "Promocode",
   "Redeem & unlock": "Einlösen & freischalten",
   "Enter a promocode.": "Promocode eingeben.",
+  "Enter a promocode and get a discount": "Promocode eingeben und Rabatt erhalten",
+  "Discount promocode": "Rabatt-Promocode",
+  "Apply promocode": "Promocode anwenden",
   "Sign in to continue to payment.": "Melde dich an, um zur Zahlung fortzufahren.",
   "Sign in to redeem a promocode and unlock full access.":
     "Melde dich an, um einen Promocode einzulösen und vollen Zugang freizuschalten.",
@@ -486,6 +497,14 @@ export const uiExtraUk: Record<string, string> = {
   "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
     "Оплатіть карткою, Apple Pay або Google Pay. Після оплати ви повернетесь сюди.",
   "15% discount applied": "Знижку 15% застосовано",
+  "You can change this promocode before you pay.":
+    "Промокод можна змінити перед покупкою.",
+  "A discount stays on this course until you change it or pay.":
+    "Знижка лишається на цьому курсі, поки ви не зміните її або не оплатите.",
+  "Enter a discount code for percent off, or a one-time unlock code for free access. A discount stays on this course until you change it or pay.":
+    "Введіть код зі знижкою або одноразовий код для безкоштовного доступу. Знижка лишається на цьому курсі, поки ви не зміните її або не оплатите.",
+  "off saved on this course. You can change this promocode before you pay.":
+    " знижки збережено на цьому курсі. Промокод можна змінити перед покупкою.",
   "Proceed to payment · ": "До оплати · ",
   "One-time payment · No subscription · Secured by Monobank":
     "Одноразова оплата · Без підписки · Захищено Monobank",
@@ -499,6 +518,9 @@ export const uiExtraUk: Record<string, string> = {
   Promocode: "Промокод",
   "Redeem & unlock": "Активувати та відкрити",
   "Enter a promocode.": "Введіть промокод.",
+  "Enter a promocode and get a discount": "Введіть промокод і отримайте знижку",
+  "Discount promocode": "Промокод на знижку",
+  "Apply promocode": "Застосувати промокод",
   "Sign in to continue to payment.": "Увійдіть, щоб перейти до оплати.",
   "Sign in to redeem a promocode and unlock full access.":
     "Увійдіть, щоб активувати промокод і відкрити повний доступ.",
