@@ -7,7 +7,7 @@ const start = source.indexOf("export async function lookupDiscountPromo(");
 const end = source.indexOf("// Discount promocodes are multi-use and are never claimed", start);
 const js = new Bun.Transpiler({ loader: "ts" }).transformSync(source.slice(start, end)
   .replace("export async function", "async function")
-  .replace('await import("@/integrations/supabase/client.server")', "({ supabaseAdmin })"));
+  .replace('await import("@/integrations/supabase/client.server")', "({ supabaseAdmin: databaseMock })"));
 
 async function lookup(userId: string | undefined, usages = 0, payments = 0, productSlug = "full-course") {
   const filters: Record<string, Record<string, string>> = {};
@@ -21,7 +21,7 @@ async function lookup(userId: string | undefined, usages = 0, payments = 0, prod
     };
     return query;
   } };
-  const run = new Function("supabaseAdmin", "normalizeCode", "isExpired", "isPaidProductSlug", "promoAppliesToProduct", "HARDCODED_DISCOUNT_PROMOS", "DISCOUNT_CODE", "DISCOUNT_PCT", `${js}; return lookupDiscountPromo;`);
+  const run = new Function("databaseMock", "normalizeCode", "isExpired", "isPaidProductSlug", "promoAppliesToProduct", "HARDCODED_DISCOUNT_PROMOS", "DISCOUNT_CODE", "DISCOUNT_PCT", `${js}; return lookupDiscountPromo;`);
   const fn = run(supabaseAdmin, (code: string) => code.trim().toUpperCase(), () => false, isPaidProductSlug, promoAppliesToProduct, HARDCODED_DISCOUNT_PROMOS, DISCOUNT_CODE, DISCOUNT_PCT);
   return { result: await fn({ code: "studyline", userId, productSlug }), filters };
 }
