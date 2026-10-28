@@ -1,0 +1,2 @@
+CREATE UNIQUE INDEX IF NOT EXISTS payments_studyline_once_per_account ON public.payments (user_id) WHERE upper(promo_code) = 'STUDYLINE' AND status NOT IN ('failure', 'expired', 'reversed');
+CREATE UNIQUE INDEX IF NOT EXISTS promo_usages_studyline_once_per_account ON public.promo_usages (user_id) WHERE upper(code) = 'STUDYLINE';

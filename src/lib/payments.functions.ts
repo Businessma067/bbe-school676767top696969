@@ -154,6 +154,9 @@ export const createCheckout = createServerFn({ method: "POST" })
       });
       if (error) {
         console.error("createCheckout: payment insert", error);
+        if (appliedPromoCode === "STUDYLINE" && error.code === "23505") {
+          return { ok: false, error: "This promocode was already used or has a pending payment on your account." };
+        }
         return { ok: false, error: "Could not start the payment. Try again." };
       }
 

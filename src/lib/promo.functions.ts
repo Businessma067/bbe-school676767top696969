@@ -167,7 +167,7 @@ function isExpired(expiresAt: string | null | undefined): boolean {
 export async function lookupDiscountPromo(input: {
   code: string;
   productSlug?: string;
-  /** When set, a code already claimed by this user still validates (checkout after apply). */
+  /** Verified account identity for account-limited discounts. */
   userId?: string;
 }): Promise<DiscountValidateResult> {
   const code = normalizeCode(input.code);
@@ -205,6 +205,28 @@ export async function lookupDiscountPromo(input: {
       const pct = data.discount_pct ?? DISCOUNT_PCT;
       if (!pct || pct <= 0) {
         return { ok: false, error: "This promocode is invalid." };
+      }
+      if (code === "STUDYLINE") {
+        if (!input.userId) {
+          return { ok: false, error: "Sign in to use this promocode." };
+        }
+        const { count: usageCount, error: usageError } = await supabaseAdmin
+          .from("promo_usages")
+          .select("id", { count: "exact", head: true })
+          .eq("promocode_id", data.id)
+          .eq("user_id", input.userId);
+        const { count: paymentCount, error: paymentError } = await supabaseAdmin
+          .from("payments")
+          .select("id", { count: "exact", head: true })
+          .eq("promo_code", code)
+          .eq("user_id", input.userId)
+          .not("status", "in", "(failure,expired,reversed)");
+        if (usageError || paymentError) {
+          return { ok: false, error: "Could not verify promocode. Try again." };
+        }
+        if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
+          return { ok: false, error: "This promocode was already used or has a pending payment on your account." };
+        }
       }
       if (data.max_uses != null) {
         const { count, error: countError } = await supabaseAdmin
