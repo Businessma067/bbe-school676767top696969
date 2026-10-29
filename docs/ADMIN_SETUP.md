@@ -38,13 +38,14 @@ Visitors write via the floating **Support** button. Every admin (`georgtyrin@gma
 `info@spray-go.com`) sees the inbox at `/admin/support` and replies land back in the
 visitor’s chat.
 
-**One-time setup** (pick one):
+**Setup (automatic via Lovable):** push/merge `drizzle/migrations/0004_support_chat.sql`.
+Lovable Cloud applies Drizzle migrations to the connected database. The server then uses,
+in order: Postgres `DATABASE_URL` → service-role tables → RPCs → file fallback.
 
-1. **SQL (recommended):** Supabase → SQL Editor → paste and Run  
-   `supabase/migrations/20261026120000_support_chat.sql`  
-   (also available as **Copy SQL** on `/admin/support` when the backend is not ready)
-2. **Or** add `SUPABASE_SERVICE_ROLE_KEY` in Lovable Cloud → Secrets (chat uses Storage)
-3. **Or** add `DATABASE_URL` (Supabase DB URI) and click **Apply schema** on `/admin/support`
+Optional secrets that make the primary path stronger:
+
+- `DATABASE_URL` / `SUPABASE_DB_URL` / `LOVABLE_DB_MIGRATION_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
 
 ## Pages
 

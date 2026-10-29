@@ -29,6 +29,13 @@
       "when": 1793278667550,
       "tag": "0003_studyline_per_course",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793280782674,
+      "tag": "0004_support_chat",
+      "breakpoints": true
     }
   ]
 }

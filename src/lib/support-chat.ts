@@ -66,7 +66,7 @@ export async function adminSupportReply(threadId: string, body: string): Promise
 
 export async function adminSupportStatus(): Promise<{
   ready: boolean;
-  mode: "storage" | "rpc" | "none";
+  mode: "postgres" | "tables" | "rpc" | "file" | "none";
   hint: string | null;
 }> {
   return adminSupportStatusFn();

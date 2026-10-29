@@ -28,7 +28,7 @@ function SupportPage() {
   const [text, setText] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [ready, setReady] = useState<boolean | null>(null);
-  const [mode, setMode] = useState<"storage" | "rpc" | "none" | null>(null);
+  const [mode, setMode] = useState<"postgres" | "tables" | "rpc" | "file" | "none" | null>(null);
   const [copied, setCopied] = useState(false);
   const [replyError, setReplyError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
@@ -199,7 +199,16 @@ function SupportPage() {
 
       {ready && mode ? (
         <p className="mb-3 text-xs text-muted-foreground">
-          Backend: {mode === "storage" ? "Supabase Storage" : "Supabase SQL RPCs"}
+          Backend:{" "}
+          {mode === "postgres"
+            ? "Lovable / Postgres"
+            : mode === "tables"
+              ? "Supabase tables"
+              : mode === "rpc"
+                ? "Supabase RPCs"
+                : mode === "file"
+                  ? "Temporary server store (waiting for Lovable drizzle 0004_support_chat)"
+                  : mode}
           {rows.some((r) => r.admin_unread) ? " · new messages waiting" : ""}
         </p>
       ) : null}
