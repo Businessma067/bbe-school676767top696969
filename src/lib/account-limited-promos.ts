@@ -1,6 +1,6 @@
 /**
- * Partner / campaign discounts that require a signed-in account and may be
- * used once per account per paid course (same rules as STUDYLINE).
+ * Partner discounts: one code per account, forever, on every paid course.
+ * Activating STUDYLINE or VSTUPUNI locks that account to that single partner code.
  */
 export const ACCOUNT_LIMITED_DISCOUNT_CODES = {
   STUDYLINE: { discountPct: 5, name: "Studyline" },
@@ -9,7 +9,13 @@ export const ACCOUNT_LIMITED_DISCOUNT_CODES = {
 
 export type AccountLimitedDiscountCode = keyof typeof ACCOUNT_LIMITED_DISCOUNT_CODES;
 
-export function isAccountLimitedDiscountCode(code: string): code is AccountLimitedDiscountCode {
+export const ACCOUNT_LIMITED_DISCOUNT_CODE_LIST = Object.keys(
+  ACCOUNT_LIMITED_DISCOUNT_CODES,
+) as AccountLimitedDiscountCode[];
+
+export function isAccountLimitedDiscountCode(
+  code: string,
+): code is AccountLimitedDiscountCode {
   return Object.prototype.hasOwnProperty.call(
     ACCOUNT_LIMITED_DISCOUNT_CODES,
     code.trim().toUpperCase(),

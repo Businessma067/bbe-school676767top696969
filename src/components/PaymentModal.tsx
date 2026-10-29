@@ -15,7 +15,8 @@ import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
 import { markPaymentSuccessAccess } from "@/lib/payment-success-access";
 import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
-import { getAppliedPromo, saveAppliedPromo } from "@/lib/applied-promo";
+import { getAppliedPromo } from "@/lib/applied-promo";
+import { isAccountLimitedDiscountCode } from "@/lib/account-limited-promos";
 
 const ORANGE = "#C2643A";
 
@@ -114,23 +115,28 @@ export function PaymentModal({
     if (discount.ok) {
       setAppliedPromoCode(discount.code);
       setDiscountPct(discount.discountPct);
-      saveAppliedPromo(productSlug, {
-        code: discount.code,
-        discountPct: discount.discountPct,
-      });
+      const { saveAccountWidePromo, saveAppliedPromo: saveOne } = await import(
+        "@/lib/applied-promo"
+      );
+      if (isAccountLimitedDiscountCode(discount.code)) {
+        saveAccountWidePromo({
+          code: discount.code,
+          discountPct: discount.discountPct,
+        });
+      } else {
+        saveOne(productSlug, {
+          code: discount.code,
+          discountPct: discount.discountPct,
+        });
+      }
       setMethod("card");
       setError(null);
       return true;
     }
 
-    const discountOnlyError =
-      /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
-      !/unlock/i.test(discount.error);
-    if (discountOnlyError) {
-      setError(discount.error);
-      return true; // handled; caller should not try unlock
-    }
-    return false;
+    // Always surface the server reason (invalid, unlock-only, already bound, …).
+    setError(discount.error);
+    return true;
   };
 
   const handleApplyDiscountOnCard = async (e: React.FormEvent) => {
@@ -152,10 +158,7 @@ export function PaymentModal({
 
     setLoading(true);
     try {
-      const handled = await applyDiscountCode(code);
-      if (!handled) {
-        setError("This promocode is invalid, or it is an unlock code, use the Promo tab.");
-      }
+      await applyDiscountCode(code);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not apply promocode.";
       if (/unauthorized/i.test(message)) {

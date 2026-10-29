@@ -8,61 +8,91 @@ import {
   DISCOUNT_PCT,
 } from "../src/lib/checkout-catalog";
 import {
+  ACCOUNT_LIMITED_DISCOUNT_CODE_LIST,
   ACCOUNT_LIMITED_DISCOUNT_CODES,
   accountLimitedDiscountMeta,
   isAccountLimitedDiscountCode,
 } from "../src/lib/account-limited-promos";
 
 const source = readFileSync(new URL("../src/lib/promo.functions.ts", import.meta.url), "utf8");
-const start = source.indexOf("export async function lookupDiscountPromo(");
+const start = source.indexOf("/** Which partner discount (if any) this account already activated. */");
 const end = source.indexOf("// Discount promocodes are multi-use and are never claimed", start);
 const js = new Bun.Transpiler({ loader: "ts" }).transformSync(
   source
     .slice(start, end)
-    .replace("export async function", "async function")
+    .replace(/export async function/g, "async function")
     .replace(
-      'await import("@/integrations/supabase/client.server")',
+      /await import\("@\/integrations\/supabase\/client\.server"\)/g,
       "({ supabaseAdmin: databaseMock })",
     ),
 );
 
+type BoundState = {
+  binding: string | null;
+  selections: string[];
+  usages: string[];
+  payments: string[];
+};
+
+function emptyState(overrides: Partial<BoundState> = {}): BoundState {
+  return {
+    binding: null,
+    selections: [],
+    usages: [],
+    payments: [],
+    ...overrides,
+  };
+}
+
 async function lookup(
   userId: string | undefined,
-  usages = 0,
-  payments = 0,
   productSlug = "full-course",
+  state: BoundState = emptyState(),
+  code = "studyline",
 ) {
-  const filters: Record<string, Record<string, string>> = {};
   const supabaseAdmin = {
     from(table: string) {
-      const query = {
+      const query: Record<string, unknown> = {
         select() {
           return query;
         },
-        eq(key: string, value: string) {
-          (filters[table] ??= {})[key] = value;
+        eq() {
+          return query;
+        },
+        in() {
           return query;
         },
         not() {
           return query;
         },
-        maybeSingle: async () => ({
-          data: {
-            id: "studyline-id",
-            code: "STUDYLINE",
-            kind: "discount",
-            discount_pct: 5,
-            max_uses: null,
-            expires_at: null,
-            product_slug: "any-paid",
-            name: "Studyline",
-          },
-          error: null,
-        }),
+        limit() {
+          return query;
+        },
+        insert: async (row: { code?: string }) => {
+          if (table === "account_partner_bindings" && row.code) {
+            state.binding = row.code;
+          }
+          return { data: null, error: null };
+        },
+        maybeSingle: async () => {
+          if (table === "account_partner_bindings") {
+            return {
+              data: state.binding ? { code: state.binding } : null,
+              error: null,
+            };
+          }
+          return { data: null, error: null };
+        },
         then(resolve: (value: unknown) => unknown) {
-          return Promise.resolve(
-            resolve({ count: table === "promo_usages" ? usages : payments, error: null }),
-          );
+          let rows: { code?: string; promo_code?: string }[] = [];
+          if (table === "promo_course_selections") {
+            rows = state.selections.map((c) => ({ code: c }));
+          } else if (table === "promo_usages") {
+            rows = state.usages.map((c) => ({ code: c }));
+          } else if (table === "payments") {
+            rows = state.payments.map((c) => ({ promo_code: c }));
+          }
+          return Promise.resolve(resolve({ data: rows, error: null }));
         },
       };
       return query;
@@ -78,13 +108,15 @@ async function lookup(
     "DISCOUNT_CODE",
     "DISCOUNT_PCT",
     "ACCOUNT_LIMITED_DISCOUNT_CODES",
+    "ACCOUNT_LIMITED_DISCOUNT_CODE_LIST",
     "accountLimitedDiscountMeta",
     "isAccountLimitedDiscountCode",
+    "isMissingRelationError",
     `${js}; return lookupDiscountPromo;`,
   );
   const fn = run(
     supabaseAdmin,
-    (code: string) => code.trim().toUpperCase(),
+    (value: string) => value.trim().toUpperCase(),
     () => false,
     isPaidProductSlug,
     promoAppliesToProduct,
@@ -92,33 +124,43 @@ async function lookup(
     DISCOUNT_CODE,
     DISCOUNT_PCT,
     ACCOUNT_LIMITED_DISCOUNT_CODES,
+    ACCOUNT_LIMITED_DISCOUNT_CODE_LIST,
     accountLimitedDiscountMeta,
     isAccountLimitedDiscountCode,
+    () => false,
   );
-  return { result: await fn({ code: "studyline", userId, productSlug }), filters };
+  return { result: await fn({ code, userId, productSlug }) };
 }
 
 describe("STUDYLINE conditions", () => {
-  test("gives 5% on every paid course without a global usage count", async () => {
+  test("gives 5% on every paid course without a per-course use limit", async () => {
     for (const slug of ["full-course", "wiso-full-course", "hybrid-full-course"]) {
-      const { result, filters } = await lookup("new-account", 0, 0, slug);
+      const { result } = await lookup("new-account", slug);
       expect(result.ok).toBe(true);
-      expect(result.discountPct).toBe(5);
-      expect(filters.promo_usages?.user_id).toBe("new-account");
-      expect(filters.promo_usages?.product_slug).toBe(slug);
-      expect(filters.payments?.product_slug).toBe(slug);
+      if (result.ok) expect(result.discountPct).toBe(5);
     }
   });
-  test("allows the same account to use it on another course", async () => {
-    // Account already paid for full-course with STUDYLINE; wiso is a different course.
-    expect((await lookup("used-account", 0, 0, "wiso-full-course")).result.ok).toBe(true);
+
+  test("allows the same account to keep using it on another course forever", async () => {
+    const { result } = await lookup(
+      "used-account",
+      "wiso-full-course",
+      emptyState({ binding: "STUDYLINE", usages: ["STUDYLINE"] }),
+    );
+    expect(result.ok).toBe(true);
+    if (result.ok) expect(result.discountPct).toBe(5);
   });
-  test("rejects a second use by the same account on the same course", async () => {
-    expect((await lookup("used-account", 1, 0, "full-course")).result.ok).toBe(false);
+
+  test("rejects switching to another partner promocode", async () => {
+    const { result } = await lookup(
+      "bound-account",
+      "full-course",
+      emptyState({ binding: "STUDYLINE" }),
+      "VSTUPUNI",
+    );
+    expect(result.ok).toBe(false);
   });
-  test("blocks another checkout on the same course while a payment is pending or paid", async () => {
-    expect((await lookup("pending-account", 0, 1, "full-course")).result.ok).toBe(false);
-  });
+
   test("requires a verified account", async () => {
     expect((await lookup(undefined)).result.ok).toBe(false);
   });

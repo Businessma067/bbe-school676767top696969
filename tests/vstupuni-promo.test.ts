@@ -8,65 +8,93 @@ import {
   DISCOUNT_PCT,
 } from "../src/lib/checkout-catalog";
 import {
+  ACCOUNT_LIMITED_DISCOUNT_CODE_LIST,
   ACCOUNT_LIMITED_DISCOUNT_CODES,
   accountLimitedDiscountMeta,
   isAccountLimitedDiscountCode,
 } from "../src/lib/account-limited-promos";
 
 const source = readFileSync(new URL("../src/lib/promo.functions.ts", import.meta.url), "utf8");
-const start = source.indexOf("export async function lookupDiscountPromo(");
+const start = source.indexOf("/** Which partner discount (if any) this account already activated. */");
 const end = source.indexOf("// Discount promocodes are multi-use and are never claimed", start);
 const js = new Bun.Transpiler({ loader: "ts" }).transformSync(
   source
     .slice(start, end)
-    .replace("export async function", "async function")
+    .replace(/export async function/g, "async function")
     .replace(
-      'await import("@/integrations/supabase/client.server")',
+      /await import\("@\/integrations\/supabase\/client\.server"\)/g,
       "({ supabaseAdmin: databaseMock })",
     ),
 );
 
+type BoundState = {
+  binding: string | null;
+  selections: string[];
+  usages: string[];
+  payments: string[];
+};
+
+function emptyState(overrides: Partial<BoundState> = {}): BoundState {
+  return {
+    binding: null,
+    selections: [],
+    usages: [],
+    payments: [],
+    ...overrides,
+  };
+}
+
 async function lookup(
   code: string,
   userId: string | undefined,
-  usages = 0,
-  payments = 0,
   productSlug = "full-course",
-  row?: Record<string, unknown> | null,
+  state: BoundState = emptyState(),
 ) {
-  const filters: Record<string, Record<string, string>> = {};
-  const defaultRow = {
-    id: `${code.toLowerCase()}-id`,
-    code: code.toUpperCase(),
-    kind: "discount",
-    discount_pct:
-      ACCOUNT_LIMITED_DISCOUNT_CODES[code.toUpperCase() as "VSTUPUNI"]?.discountPct ?? 10,
-    max_uses: null,
-    expires_at: null,
-    product_slug: "any-paid",
-    name: ACCOUNT_LIMITED_DISCOUNT_CODES[code.toUpperCase() as "VSTUPUNI"]?.name ?? code,
-  };
+  const touched: string[] = [];
   const supabaseAdmin = {
     from(table: string) {
-      const query = {
+      touched.push(table);
+      const query: Record<string, unknown> = {
         select() {
           return query;
         },
-        eq(key: string, value: string) {
-          (filters[table] ??= {})[key] = value;
+        eq() {
+          return query;
+        },
+        in() {
           return query;
         },
         not() {
           return query;
         },
-        maybeSingle: async () => ({
-          data: row === undefined ? defaultRow : row,
-          error: null,
-        }),
+        limit() {
+          return query;
+        },
+        insert: async (row: { code?: string }) => {
+          if (table === "account_partner_bindings" && row.code) {
+            state.binding = row.code;
+          }
+          return { data: null, error: null };
+        },
+        maybeSingle: async () => {
+          if (table === "account_partner_bindings") {
+            return {
+              data: state.binding ? { code: state.binding } : null,
+              error: null,
+            };
+          }
+          return { data: null, error: null };
+        },
         then(resolve: (value: unknown) => unknown) {
-          return Promise.resolve(
-            resolve({ count: table === "promo_usages" ? usages : payments, error: null }),
-          );
+          let rows: { code?: string; promo_code?: string }[] = [];
+          if (table === "promo_course_selections") {
+            rows = state.selections.map((c) => ({ code: c }));
+          } else if (table === "promo_usages") {
+            rows = state.usages.map((c) => ({ code: c }));
+          } else if (table === "payments") {
+            rows = state.payments.map((c) => ({ promo_code: c }));
+          }
+          return Promise.resolve(resolve({ data: rows, error: null }));
         },
       };
       return query;
@@ -82,8 +110,10 @@ async function lookup(
     "DISCOUNT_CODE",
     "DISCOUNT_PCT",
     "ACCOUNT_LIMITED_DISCOUNT_CODES",
+    "ACCOUNT_LIMITED_DISCOUNT_CODE_LIST",
     "accountLimitedDiscountMeta",
     "isAccountLimitedDiscountCode",
+    "isMissingRelationError",
     `${js}; return lookupDiscountPromo;`,
   );
   const fn = run(
@@ -96,12 +126,14 @@ async function lookup(
     DISCOUNT_CODE,
     DISCOUNT_PCT,
     ACCOUNT_LIMITED_DISCOUNT_CODES,
+    ACCOUNT_LIMITED_DISCOUNT_CODE_LIST,
     accountLimitedDiscountMeta,
     isAccountLimitedDiscountCode,
+    () => false,
   );
   return {
     result: await fn({ code, userId, productSlug }),
-    filters,
+    touched,
   };
 }
 
@@ -117,29 +149,32 @@ describe("VSTUPUNI conditions", () => {
 
   test("gives 10% on every paid course", async () => {
     for (const slug of ["full-course", "wiso-full-course", "hybrid-full-course"]) {
-      const { result, filters } = await lookup("vstupuni", "new-account", 0, 0, slug);
+      const { result } = await lookup("vstupuni", "new-account", slug);
       expect(result.ok).toBe(true);
       if (result.ok) expect(result.discountPct).toBe(10);
-      expect(filters.promo_usages?.user_id).toBe("new-account");
-      expect(filters.promo_usages?.product_slug).toBe(slug);
-      expect(filters.payments?.product_slug).toBe(slug);
     }
   });
 
-  test("allows the same account to use it on another course", async () => {
-    expect((await lookup("VSTUPUNI", "used-account", 0, 0, "wiso-full-course")).result.ok).toBe(
-      true,
+  test("keeps working forever on another course after the account already used it", async () => {
+    const { result } = await lookup(
+      "VSTUPUNI",
+      "used-account",
+      "wiso-full-course",
+      emptyState({ binding: "VSTUPUNI", usages: ["VSTUPUNI"] }),
     );
+    expect(result.ok).toBe(true);
+    if (result.ok) expect(result.discountPct).toBe(10);
   });
 
-  test("rejects a second use by the same account on the same course", async () => {
-    expect((await lookup("VSTUPUNI", "used-account", 1, 0, "full-course")).result.ok).toBe(false);
-  });
-
-  test("blocks another checkout on the same course while a payment is pending or paid", async () => {
-    expect((await lookup("VSTUPUNI", "pending-account", 0, 1, "full-course")).result.ok).toBe(
-      false,
+  test("rejects a different partner code once the account is bound", async () => {
+    const { result } = await lookup(
+      "STUDYLINE",
+      "bound-account",
+      "full-course",
+      emptyState({ binding: "VSTUPUNI" }),
     );
+    expect(result.ok).toBe(false);
+    if (!result.ok) expect(result.error).toMatch(/already uses VSTUPUNI/i);
   });
 
   test("requires a verified account", async () => {
@@ -147,33 +182,18 @@ describe("VSTUPUNI conditions", () => {
   });
 });
 
-describe("STUDYLINE still account-limited", () => {
-  test("keeps 5% and the same per-course limit", async () => {
-    const { result } = await lookup("STUDYLINE", "new-account", 0, 0, "full-course", {
-      id: "studyline-id",
-      code: "STUDYLINE",
-      kind: "discount",
-      discount_pct: 5,
-      max_uses: null,
-      expires_at: null,
-      product_slug: "any-paid",
-      name: "Studyline",
-    });
+describe("STUDYLINE still account-wide partner", () => {
+  test("keeps 5% and blocks switching to VSTUPUNI", async () => {
+    const { result } = await lookup("STUDYLINE", "new-account", "full-course");
     expect(result.ok).toBe(true);
     if (result.ok) expect(result.discountPct).toBe(5);
-    expect(
-      (
-        await lookup("STUDYLINE", "used-account", 1, 0, "full-course", {
-          id: "studyline-id",
-          code: "STUDYLINE",
-          kind: "discount",
-          discount_pct: 5,
-          max_uses: null,
-          expires_at: null,
-          product_slug: "any-paid",
-          name: "Studyline",
-        })
-      ).result.ok,
-    ).toBe(false);
+
+    const blocked = await lookup(
+      "VSTUPUNI",
+      "studyline-account",
+      "full-course",
+      emptyState({ binding: "STUDYLINE" }),
+    );
+    expect(blocked.result.ok).toBe(false);
   });
 });

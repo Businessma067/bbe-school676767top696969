@@ -43,6 +43,13 @@
       "when": 1793292871423,
       "tag": "0005_vstupuni_promo",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1793298000000,
+      "tag": "0006_partner_promo_account_wide",
+      "breakpoints": true
     }
   ]
 }

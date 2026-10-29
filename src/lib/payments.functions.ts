@@ -162,7 +162,8 @@ export const createCheckout = createServerFn({ method: "POST" })
         ) {
           return {
             ok: false,
-            error: "This promocode was already used or has a pending payment on your account.",
+            error:
+              "Your account already has a partner promocode bound, or a conflicting payment exists.",
           };
         }
         return { ok: false, error: "Could not start the payment. Try again." };

@@ -14,6 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
+      account_partner_bindings: {
+        Row: {
+          bound_at: string
+          code: string
+          discount_pct: number
+          user_id: string
+        }
+        Insert: {
+          bound_at?: string
+          code: string
+          discount_pct: number
+          user_id: string
+        }
+        Update: {
+          bound_at?: string
+          code?: string
+          discount_pct?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
       activity_events: {
         Row: {
           created_at: string

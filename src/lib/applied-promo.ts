@@ -74,6 +74,19 @@ export function saveAppliedPromo(productSlug: PaidProductSlug, promo: AppliedPro
   writeMap(map);
 }
 
+/** Bind a partner discount to every paid course on this device. */
+export function saveAccountWidePromo(promo: AppliedPromo) {
+  const map = readMap();
+  const next = {
+    code: promo.code.trim().toUpperCase(),
+    discountPct: promo.discountPct,
+  };
+  for (const slug of Object.keys(PAID_PRODUCTS) as PaidProductSlug[]) {
+    map[slug] = next;
+  }
+  writeMap(map);
+}
+
 export function clearAppliedPromo(productSlug: PaidProductSlug) {
   const map = readMap();
   if (!(productSlug in map)) return;

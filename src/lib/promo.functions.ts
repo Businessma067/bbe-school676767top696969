@@ -7,13 +7,17 @@ import {
   DISCOUNT_CODE,
   DISCOUNT_PCT,
   HARDCODED_DISCOUNT_PROMOS,
+  PAID_PRODUCTS,
   isPaidProductSlug,
   promoAppliesToProduct,
+  type PaidProductSlug,
 } from "@/lib/checkout-catalog";
 import {
+  ACCOUNT_LIMITED_DISCOUNT_CODE_LIST,
   ACCOUNT_LIMITED_DISCOUNT_CODES,
   accountLimitedDiscountMeta,
   isAccountLimitedDiscountCode,
+  type AccountLimitedDiscountCode,
 } from "@/lib/account-limited-promos";
 
 const MAX_ATTEMPTS_PER_IP = 10;
@@ -151,6 +155,8 @@ function isMissingRelationError(
     blob.includes("promocodes") ||
     blob.includes("promo_redeem_attempts") ||
     blob.includes("promo_usages") ||
+    blob.includes("promo_course_selections") ||
+    blob.includes("account_partner_bindings") ||
     blob.includes("pgrst205") ||
     blob.includes("does not exist") ||
     blob.includes("schema cache")
@@ -173,7 +179,155 @@ function isExpired(expiresAt: string | null | undefined): boolean {
   return new Date(expiresAt).getTime() < Date.now();
 }
 
-/** Resolve a live discount promocode (DB first, legacy hardcoded fallback). */
+/** Which partner discount (if any) this account already activated. */
+async function findAccountPartnerCode(userId: string): Promise<string | null> {
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { data: binding } = await supabaseAdmin
+      .from("account_partner_bindings")
+      .select("code")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (binding?.code && isAccountLimitedDiscountCode(binding.code)) {
+      return normalizeCode(binding.code);
+    }
+
+    const { data: selections } = await supabaseAdmin
+      .from("promo_course_selections")
+      .select("code")
+      .eq("user_id", userId)
+      .in("code", [...ACCOUNT_LIMITED_DISCOUNT_CODE_LIST])
+      .limit(1);
+    const fromSelection = selections?.[0]?.code;
+    if (fromSelection && isAccountLimitedDiscountCode(fromSelection)) {
+      return normalizeCode(fromSelection);
+    }
+
+    const { data: usages } = await supabaseAdmin
+      .from("promo_usages")
+      .select("code")
+      .eq("user_id", userId)
+      .in("code", [...ACCOUNT_LIMITED_DISCOUNT_CODE_LIST])
+      .limit(1);
+    const fromUsage = usages?.[0]?.code;
+    if (fromUsage && isAccountLimitedDiscountCode(fromUsage)) {
+      return normalizeCode(fromUsage);
+    }
+
+    const { data: payments } = await supabaseAdmin
+      .from("payments")
+      .select("promo_code")
+      .eq("user_id", userId)
+      .in("promo_code", [...ACCOUNT_LIMITED_DISCOUNT_CODE_LIST])
+      .not("status", "in", "(failure,expired,reversed)")
+      .limit(1);
+    const fromPayment = payments?.[0]?.promo_code;
+    if (fromPayment && isAccountLimitedDiscountCode(fromPayment)) {
+      return normalizeCode(fromPayment);
+    }
+  } catch (err) {
+    console.error("findAccountPartnerCode", err);
+  }
+  return null;
+}
+
+/** Persist the account's single partner code; rejects a different code on conflict. */
+async function bindAccountPartnerCode(
+  userId: string,
+  code: AccountLimitedDiscountCode,
+  discountPct: number,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { data: existing } = await supabaseAdmin
+      .from("account_partner_bindings")
+      .select("code")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (existing?.code) {
+      const bound = normalizeCode(existing.code);
+      if (bound !== code) {
+        return {
+          ok: false,
+          error: `Your account already uses ${bound}. Only one partner promocode can be active per account.`,
+        };
+      }
+      return { ok: true };
+    }
+
+    const { error } = await supabaseAdmin.from("account_partner_bindings").insert({
+      user_id: userId,
+      code,
+      discount_pct: discountPct,
+    });
+    if (error) {
+      if (error.code === "23505") {
+        const again = await findAccountPartnerCode(userId);
+        if (again && again !== code) {
+          return {
+            ok: false,
+            error: `Your account already uses ${again}. Only one partner promocode can be active per account.`,
+          };
+        }
+        return { ok: true };
+      }
+      // Table may not exist yet on older previews — selections still remember the code.
+      if (!isMissingRelationError(error)) {
+        console.error("bindAccountPartnerCode", error);
+      }
+    }
+    return { ok: true };
+  } catch (err) {
+    console.error("bindAccountPartnerCode", err);
+    return { ok: true };
+  }
+}
+
+async function resolvePartnerDiscount(input: {
+  code: string;
+  userId?: string;
+  productSlug?: string;
+}): Promise<DiscountValidateResult | null> {
+  const limited = accountLimitedDiscountMeta(input.code);
+  if (!limited) return null;
+
+  if (!input.userId) {
+    return { ok: false, error: "Sign in to use this promocode." };
+  }
+  if (
+    input.productSlug &&
+    !isPaidProductSlug(input.productSlug) &&
+    input.productSlug !== "any-paid"
+  ) {
+    return { ok: false, error: "This promocode does not apply to this course." };
+  }
+
+  const existing = await findAccountPartnerCode(input.userId);
+  if (existing && existing !== limited.code) {
+    return {
+      ok: false,
+      error: `Your account already uses ${existing}. Only one partner promocode can be active per account.`,
+    };
+  }
+
+  const bound = await bindAccountPartnerCode(
+    input.userId,
+    limited.code,
+    limited.discountPct,
+  );
+  if (!bound.ok) return bound;
+
+  // Same code already on the account: keep applying it to every course forever.
+  return {
+    ok: true,
+    code: limited.code,
+    discountPct: limited.discountPct,
+    name: limited.name,
+    expiresAt: null,
+  };
+}
+
+/** Resolve a live discount promocode (partner codes first, then DB / hardcoded). */
 export async function lookupDiscountPromo(input: {
   code: string;
   productSlug?: string;
@@ -190,6 +344,15 @@ export async function lookupDiscountPromo(input: {
   ) {
     return { ok: false, error: "This promocode does not apply to this course." };
   }
+
+  // Partner codes (STUDYLINE / VSTUPUNI) are resolved in code so a missing or
+  // mis-typed DB row cannot show "unlock / Promo tab" for a discount code.
+  const partner = await resolvePartnerDiscount({
+    code,
+    userId: input.userId,
+    productSlug: input.productSlug,
+  });
+  if (partner) return partner;
 
   try {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
@@ -222,38 +385,6 @@ export async function lookupDiscountPromo(input: {
       if (!pct || pct <= 0) {
         return { ok: false, error: "This promocode is invalid." };
       }
-      if (isAccountLimitedDiscountCode(code)) {
-        if (!input.userId) {
-          return { ok: false, error: "Sign in to use this promocode." };
-        }
-        // Once per account per course: the same account may use the code on
-        // every course, but not twice on the same course.
-        if (input.productSlug) {
-          const { count: usageCount, error: usageError } = await supabaseAdmin
-            .from("promo_usages")
-            .select("id", { count: "exact", head: true })
-            .eq("promocode_id", data.id)
-            .eq("user_id", input.userId)
-            .eq("product_slug", input.productSlug);
-          const { count: paymentCount, error: paymentError } = await supabaseAdmin
-            .from("payments")
-            .select("id", { count: "exact", head: true })
-            .eq("promo_code", code)
-            .eq("user_id", input.userId)
-            .eq("product_slug", input.productSlug)
-            .not("status", "in", "(failure,expired,reversed)");
-          if (usageError || paymentError) {
-            return { ok: false, error: "Could not verify promocode. Try again." };
-          }
-          if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
-            return {
-              ok: false,
-              error:
-                "This promocode was already used on this course or has a pending payment on your account.",
-            };
-          }
-        }
-      }
       if (data.max_uses != null) {
         const { count, error: countError } = await supabaseAdmin
           .from("promo_usages")
@@ -280,54 +411,6 @@ export async function lookupDiscountPromo(input: {
     }
   } catch (err) {
     console.error("lookupDiscountPromo", err);
-  }
-
-  // Partner account-limited codes (STUDYLINE / VSTUPUNI) when the row is missing.
-  const limited = accountLimitedDiscountMeta(code);
-  if (limited) {
-    if (!input.userId) {
-      return { ok: false, error: "Sign in to use this promocode." };
-    }
-    if (input.productSlug) {
-      try {
-        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-        const { count: usageCount, error: usageError } = await supabaseAdmin
-          .from("promo_usages")
-          .select("id", { count: "exact", head: true })
-          .eq("code", limited.code)
-          .eq("user_id", input.userId)
-          .eq("product_slug", input.productSlug);
-        const { count: paymentCount, error: paymentError } = await supabaseAdmin
-          .from("payments")
-          .select("id", { count: "exact", head: true })
-          .eq("promo_code", limited.code)
-          .eq("user_id", input.userId)
-          .eq("product_slug", input.productSlug)
-          .not("status", "in", "(failure,expired,reversed)");
-        if (usageError || paymentError) {
-          return { ok: false, error: "Could not verify promocode. Try again." };
-        }
-        if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
-          return {
-            ok: false,
-            error:
-              "This promocode was already used on this course or has a pending payment on your account.",
-          };
-        }
-      } catch (err) {
-        console.error("lookupDiscountPromo limited fallback", err);
-      }
-    }
-    if (!promoAppliesToProduct("any-paid", input.productSlug)) {
-      return { ok: false, error: "This promocode does not apply to this course." };
-    }
-    return {
-      ok: true,
-      code: limited.code,
-      discountPct: limited.discountPct,
-      name: limited.name,
-      expiresAt: null,
-    };
   }
 
   // Hardcoded discounts (pre-migration / when DB table is missing).
@@ -419,21 +502,53 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
       productSlug: data.productSlug,
       userId,
     });
-    // Remember each course the account applied this code to; the discount
-    // stays on every course it was applied to.
-    if (result.ok && data.productSlug && isPaidProductSlug(data.productSlug)) {
+    // Remember applied discounts. Partner codes bind to the whole account and
+    // every paid course forever; regular codes stay on the course they were applied to.
+    if (result.ok) {
+      if (isAccountLimitedDiscountCode(result.code)) {
+        const bound = await bindAccountPartnerCode(
+          userId,
+          result.code,
+          result.discountPct,
+        );
+        if (!bound.ok) return bound;
+      }
       try {
         const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-        await supabaseAdmin.from("promo_course_selections").upsert(
-          {
-            user_id: userId,
-            code: result.code,
-            product_slug: data.productSlug,
-            discount_pct: result.discountPct,
-            updated_at: new Date().toISOString(),
-          },
-          { onConflict: "user_id,code,product_slug" },
-        );
+        const slugs: PaidProductSlug[] = isAccountLimitedDiscountCode(result.code)
+          ? (Object.keys(PAID_PRODUCTS) as PaidProductSlug[])
+          : data.productSlug && isPaidProductSlug(data.productSlug)
+            ? [data.productSlug]
+            : [];
+        const now = new Date().toISOString();
+        for (const slug of slugs) {
+          await supabaseAdmin.from("promo_course_selections").upsert(
+            {
+              user_id: userId,
+              code: result.code,
+              product_slug: slug,
+              discount_pct: result.discountPct,
+              updated_at: now,
+            },
+            { onConflict: "user_id,code,product_slug" },
+          );
+        }
+        // Heal a mis-seeded partner row so admin + RPC paths stay consistent.
+        if (isAccountLimitedDiscountCode(result.code)) {
+          const meta = accountLimitedDiscountMeta(result.code)!;
+          await supabaseAdmin.from("promocodes").upsert(
+            {
+              code: meta.code,
+              product_slug: "any-paid",
+              kind: "discount",
+              discount_pct: meta.discountPct,
+              max_uses: null,
+              expires_at: null,
+              name: meta.name,
+            },
+            { onConflict: "code" },
+          );
+        }
       } catch (err) {
         console.error("save promo selection", err);
       }
@@ -449,9 +564,23 @@ export const getMyPromoSelections = createServerFn({ method: "GET" })
       .from("promo_course_selections")
       .select("code, product_slug, discount_pct");
     if (error) return [] as { code: string; productSlug: string; discountPct: number }[];
-    const rows = [];
+    const rows: { code: string; productSlug: string; discountPct: number }[] = [];
+    const partnerSeen = new Set<string>();
     for (const row of data ?? []) {
-      // Drop selections that are no longer valid (e.g. STUDYLINE / VSTUPUNI already used).
+      const partner = accountLimitedDiscountMeta(row.code);
+      if (partner) {
+        // One partner code covers every paid course forever.
+        if (partnerSeen.has(partner.code)) continue;
+        partnerSeen.add(partner.code);
+        for (const slug of Object.keys(PAID_PRODUCTS) as PaidProductSlug[]) {
+          rows.push({
+            code: partner.code,
+            productSlug: slug,
+            discountPct: partner.discountPct,
+          });
+        }
+        continue;
+      }
       const check = await lookupDiscountPromo({
         code: row.code,
         productSlug: row.product_slug,
@@ -463,6 +592,21 @@ export const getMyPromoSelections = createServerFn({ method: "GET" })
           productSlug: row.product_slug,
           discountPct: check.discountPct,
         });
+      }
+    }
+
+    // Binding alone (no selections yet) still restores the account-wide discount.
+    if (partnerSeen.size === 0) {
+      const bound = await findAccountPartnerCode(context.userId);
+      const meta = bound ? accountLimitedDiscountMeta(bound) : null;
+      if (meta) {
+        for (const slug of Object.keys(PAID_PRODUCTS) as PaidProductSlug[]) {
+          rows.push({
+            code: meta.code,
+            productSlug: slug,
+            discountPct: meta.discountPct,
+          });
+        }
       }
     }
     return rows;
