@@ -10,6 +10,11 @@ import {
   isPaidProductSlug,
   promoAppliesToProduct,
 } from "@/lib/checkout-catalog";
+import {
+  ACCOUNT_LIMITED_DISCOUNT_CODES,
+  accountLimitedDiscountMeta,
+  isAccountLimitedDiscountCode,
+} from "@/lib/account-limited-promos";
 
 const MAX_ATTEMPTS_PER_IP = 10;
 const ATTEMPT_WINDOW_MS = 24 * 60 * 60 * 1000;
@@ -88,7 +93,10 @@ function clientIpFromHeaders(headers: Headers): string {
   return "unknown";
 }
 
-function resolveCatalog(slug: string): { slug: CourseSlug; meta: (typeof COURSE_CATALOG)[CourseSlug] } {
+function resolveCatalog(slug: string): {
+  slug: CourseSlug;
+  meta: (typeof COURSE_CATALOG)[CourseSlug];
+} {
   if (slug in COURSE_CATALOG) {
     const courseSlug = slug as CourseSlug;
     return { slug: courseSlug, meta: COURSE_CATALOG[courseSlug] };
@@ -134,7 +142,9 @@ export function resolveUnlockEnrollmentSlug(
   return resolveCatalog(codeProductSlug).slug;
 }
 
-function isMissingRelationError(error: { message?: string; code?: string; details?: string } | null) {
+function isMissingRelationError(
+  error: { message?: string; code?: string; details?: string } | null,
+) {
   if (!error) return false;
   const blob = `${error.code ?? ""} ${error.message ?? ""} ${error.details ?? ""}`.toLowerCase();
   return (
@@ -173,7 +183,11 @@ export async function lookupDiscountPromo(input: {
   const code = normalizeCode(input.code);
   if (!code) return { ok: false, error: "Enter a promocode." };
 
-  if (input.productSlug && !isPaidProductSlug(input.productSlug) && input.productSlug !== "any-paid") {
+  if (
+    input.productSlug &&
+    !isPaidProductSlug(input.productSlug) &&
+    input.productSlug !== "any-paid"
+  ) {
     return { ok: false, error: "This promocode does not apply to this course." };
   }
 
@@ -181,7 +195,9 @@ export async function lookupDiscountPromo(input: {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data, error } = await supabaseAdmin
       .from("promocodes")
-      .select("id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at, used_by")
+      .select(
+        "id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at, used_by",
+      )
       .eq("code", code)
       .maybeSingle();
 
@@ -206,11 +222,11 @@ export async function lookupDiscountPromo(input: {
       if (!pct || pct <= 0) {
         return { ok: false, error: "This promocode is invalid." };
       }
-      if (code === "STUDYLINE") {
+      if (isAccountLimitedDiscountCode(code)) {
         if (!input.userId) {
           return { ok: false, error: "Sign in to use this promocode." };
         }
-        // Once per account per course: the same account may use STUDYLINE on
+        // Once per account per course: the same account may use the code on
         // every course, but not twice on the same course.
         if (input.productSlug) {
           const { count: usageCount, error: usageError } = await supabaseAdmin
@@ -230,7 +246,11 @@ export async function lookupDiscountPromo(input: {
             return { ok: false, error: "Could not verify promocode. Try again." };
           }
           if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
-            return { ok: false, error: "This promocode was already used on this course or has a pending payment on your account." };
+            return {
+              ok: false,
+              error:
+                "This promocode was already used on this course or has a pending payment on your account.",
+            };
           }
         }
       }
@@ -260,6 +280,54 @@ export async function lookupDiscountPromo(input: {
     }
   } catch (err) {
     console.error("lookupDiscountPromo", err);
+  }
+
+  // Partner account-limited codes (STUDYLINE / VSTUPUNI) when the row is missing.
+  const limited = accountLimitedDiscountMeta(code);
+  if (limited) {
+    if (!input.userId) {
+      return { ok: false, error: "Sign in to use this promocode." };
+    }
+    if (input.productSlug) {
+      try {
+        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+        const { count: usageCount, error: usageError } = await supabaseAdmin
+          .from("promo_usages")
+          .select("id", { count: "exact", head: true })
+          .eq("code", limited.code)
+          .eq("user_id", input.userId)
+          .eq("product_slug", input.productSlug);
+        const { count: paymentCount, error: paymentError } = await supabaseAdmin
+          .from("payments")
+          .select("id", { count: "exact", head: true })
+          .eq("promo_code", limited.code)
+          .eq("user_id", input.userId)
+          .eq("product_slug", input.productSlug)
+          .not("status", "in", "(failure,expired,reversed)");
+        if (usageError || paymentError) {
+          return { ok: false, error: "Could not verify promocode. Try again." };
+        }
+        if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
+          return {
+            ok: false,
+            error:
+              "This promocode was already used on this course or has a pending payment on your account.",
+          };
+        }
+      } catch (err) {
+        console.error("lookupDiscountPromo limited fallback", err);
+      }
+    }
+    if (!promoAppliesToProduct("any-paid", input.productSlug)) {
+      return { ok: false, error: "This promocode does not apply to this course." };
+    }
+    return {
+      ok: true,
+      code: limited.code,
+      discountPct: limited.discountPct,
+      name: limited.name,
+      expiresAt: null,
+    };
   }
 
   // Hardcoded discounts (pre-migration / when DB table is missing).
@@ -296,7 +364,6 @@ export async function lookupDiscountPromo(input: {
 
 // Discount promocodes are multi-use and are never claimed at apply time.
 // Actual usage is recorded in `promo_usages` after a successful payment.
-
 
 export async function recordPromoUsage(input: {
   code: string;
@@ -384,19 +451,22 @@ export const getMyPromoSelections = createServerFn({ method: "GET" })
     if (error) return [] as { code: string; productSlug: string; discountPct: number }[];
     const rows = [];
     for (const row of data ?? []) {
-      // Drop selections that are no longer valid (e.g. STUDYLINE already used).
+      // Drop selections that are no longer valid (e.g. STUDYLINE / VSTUPUNI already used).
       const check = await lookupDiscountPromo({
         code: row.code,
         productSlug: row.product_slug,
         userId: context.userId,
       });
       if (check.ok) {
-        rows.push({ code: row.code, productSlug: row.product_slug, discountPct: check.discountPct });
+        rows.push({
+          code: row.code,
+          productSlug: row.product_slug,
+          discountPct: check.discountPct,
+        });
       }
     }
     return rows;
   });
-
 
 export const redeemPromocode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
@@ -410,8 +480,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
     const code = normalizeCode(data.code);
     const checkoutSlug = data.productSlug;
     const userId = context.userId;
-    const email =
-      typeof context.claims.email === "string" ? context.claims.email : null;
+    const email = typeof context.claims.email === "string" ? context.claims.email : null;
 
     const since = new Date(Date.now() - ATTEMPT_WINDOW_MS).toISOString();
     const { count, error: countError } = await supabaseAdmin
@@ -570,10 +639,7 @@ async function enrollFromClaim(
     }
   }
 
-  await supabaseAdmin
-    .from("promo_redeem_attempts")
-    .update({ success: true })
-    .eq("id", attemptId);
+  await supabaseAdmin.from("promo_redeem_attempts").update({ success: true }).eq("id", attemptId);
 
   return { ok: true, href: meta.href, productSlug: slug, productName: meta.name };
 }
@@ -590,24 +656,47 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
       .order("kind", { ascending: true })
       .order("code", { ascending: true });
 
-    const hardcodedRows = (): AdminPromocodeRow[] =>
-      HARDCODED_DISCOUNT_PROMOS.map((p) => ({
-        id: `hardcoded-${normalizeCode(p.code)}`,
-        code: normalizeCode(p.code),
-        name: p.name,
-        kind: "discount" as const,
-        productSlug: p.productSlug,
-        discountPct: p.discountPct,
-        maxUses: null,
-        expiresAt: p.expiresAt,
-        usedAt: null,
-        usedBy: null,
-        usedByEmail: null,
-        createdAt: new Date(0).toISOString(),
-        useCount: 0,
-        usages: [],
-        status: isExpired(p.expiresAt) ? ("expired" as const) : ("active" as const),
-      }));
+    const hardcodedRows = (): AdminPromocodeRow[] => {
+      const partnerRows: AdminPromocodeRow[] = Object.entries(ACCOUNT_LIMITED_DISCOUNT_CODES).map(
+        ([code, meta]) => ({
+          id: `hardcoded-${code}`,
+          code,
+          name: meta.name,
+          kind: "discount" as const,
+          productSlug: "any-paid",
+          discountPct: meta.discountPct,
+          maxUses: null,
+          expiresAt: null,
+          usedAt: null,
+          usedBy: null,
+          usedByEmail: null,
+          createdAt: new Date(0).toISOString(),
+          useCount: 0,
+          usages: [],
+          status: "active" as const,
+        }),
+      );
+      return [
+        ...partnerRows,
+        ...HARDCODED_DISCOUNT_PROMOS.map((p) => ({
+          id: `hardcoded-${normalizeCode(p.code)}`,
+          code: normalizeCode(p.code),
+          name: p.name,
+          kind: "discount" as const,
+          productSlug: p.productSlug,
+          discountPct: p.discountPct,
+          maxUses: null,
+          expiresAt: p.expiresAt,
+          usedAt: null,
+          usedBy: null,
+          usedByEmail: null,
+          createdAt: new Date(0).toISOString(),
+          useCount: 0,
+          usages: [],
+          status: isExpired(p.expiresAt) ? ("expired" as const) : ("active" as const),
+        })),
+      ];
+    };
 
     if (error) {
       console.error("adminListPromocodes", error);
@@ -654,12 +743,7 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
     const codes: AdminPromocodeRow[] = (data ?? []).map((row) => {
       const kind = row.kind === "discount" ? "discount" : "unlock";
       const usages = usagesByPromo.get(row.id) ?? [];
-      const useCount =
-        kind === "discount"
-          ? usages.length
-          : row.used_at
-            ? 1
-            : 0;
+      const useCount = kind === "discount" ? usages.length : row.used_at ? 1 : 0;
 
       let status: AdminPromocodeRow["status"];
       if (kind === "discount") {
@@ -719,6 +803,8 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
 
     const used = codes.filter((c) => c.kind === "unlock" && c.status === "used").length;
     const available = codes.filter((c) => c.kind === "unlock" && c.status === "available").length;
-    const activeDiscounts = codes.filter((c) => c.kind === "discount" && c.status === "active").length;
+    const activeDiscounts = codes.filter(
+      (c) => c.kind === "discount" && c.status === "active",
+    ).length;
     return { ok: true, codes, available, used, activeDiscounts };
   });

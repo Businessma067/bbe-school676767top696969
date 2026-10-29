@@ -36,6 +36,13 @@
       "when": 1793280782674,
       "tag": "0004_support_chat",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793292871423,
+      "tag": "0005_vstupuni_promo",
+      "breakpoints": true
     }
   ]
 }

@@ -7,6 +7,7 @@ import {
   PAID_PRODUCTS,
   isPaidProductSlug,
 } from "@/lib/checkout-catalog";
+import { isAccountLimitedDiscountCode } from "@/lib/account-limited-promos";
 import { lookupDiscountPromo } from "@/lib/promo.functions";
 
 export type CheckoutResult =
@@ -154,8 +155,15 @@ export const createCheckout = createServerFn({ method: "POST" })
       });
       if (error) {
         console.error("createCheckout: payment insert", error);
-        if (appliedPromoCode === "STUDYLINE" && error.code === "23505") {
-          return { ok: false, error: "This promocode was already used or has a pending payment on your account." };
+        if (
+          appliedPromoCode &&
+          isAccountLimitedDiscountCode(appliedPromoCode) &&
+          error.code === "23505"
+        ) {
+          return {
+            ok: false,
+            error: "This promocode was already used or has a pending payment on your account.",
+          };
         }
         return { ok: false, error: "Could not start the payment. Try again." };
       }
@@ -211,7 +219,10 @@ export const getPaymentStatus = createServerFn({ method: "POST" })
         ...(result.failureReason
           ? { failureReason: result.failureReason }
           : result.status === "success" && !result.enrolled
-            ? { failureReason: "Payment succeeded but course access could not be unlocked. Contact support." }
+            ? {
+                failureReason:
+                  "Payment succeeded but course access could not be unlocked. Contact support.",
+              }
             : {}),
       };
     } catch (err) {
@@ -227,9 +238,8 @@ export const getPaymentStatus = createServerFn({ method: "POST" })
 export const syncMyPaidEnrollments = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }): Promise<SyncMyEnrollmentsResult> => {
-    const { ensureEnrollmentsFromSuccessfulPayments } = await import(
-      "@/lib/enrollment-grant.server"
-    );
+    const { ensureEnrollmentsFromSuccessfulPayments } =
+      await import("@/lib/enrollment-grant.server");
     const { granted } = await ensureEnrollmentsFromSuccessfulPayments(context.userId);
     return { ok: true, granted };
   });

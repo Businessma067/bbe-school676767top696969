@@ -1,28 +1,100 @@
 import { describe, expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
-import { promoAppliesToProduct, isPaidProductSlug, HARDCODED_DISCOUNT_PROMOS, DISCOUNT_CODE, DISCOUNT_PCT } from "../src/lib/checkout-catalog";
+import {
+  promoAppliesToProduct,
+  isPaidProductSlug,
+  HARDCODED_DISCOUNT_PROMOS,
+  DISCOUNT_CODE,
+  DISCOUNT_PCT,
+} from "../src/lib/checkout-catalog";
+import {
+  ACCOUNT_LIMITED_DISCOUNT_CODES,
+  accountLimitedDiscountMeta,
+  isAccountLimitedDiscountCode,
+} from "../src/lib/account-limited-promos";
 
 const source = readFileSync(new URL("../src/lib/promo.functions.ts", import.meta.url), "utf8");
 const start = source.indexOf("export async function lookupDiscountPromo(");
 const end = source.indexOf("// Discount promocodes are multi-use and are never claimed", start);
-const js = new Bun.Transpiler({ loader: "ts" }).transformSync(source.slice(start, end)
-  .replace("export async function", "async function")
-  .replace('await import("@/integrations/supabase/client.server")', "({ supabaseAdmin: databaseMock })"));
+const js = new Bun.Transpiler({ loader: "ts" }).transformSync(
+  source
+    .slice(start, end)
+    .replace("export async function", "async function")
+    .replace(
+      'await import("@/integrations/supabase/client.server")',
+      "({ supabaseAdmin: databaseMock })",
+    ),
+);
 
-async function lookup(userId: string | undefined, usages = 0, payments = 0, productSlug = "full-course") {
+async function lookup(
+  userId: string | undefined,
+  usages = 0,
+  payments = 0,
+  productSlug = "full-course",
+) {
   const filters: Record<string, Record<string, string>> = {};
-  const supabaseAdmin = { from(table: string) {
-    const query = {
-      select() { return query; },
-      eq(key: string, value: string) { (filters[table] ??= {})[key] = value; return query; },
-      not() { return query; },
-      maybeSingle: async () => ({ data: { id: "studyline-id", code: "STUDYLINE", kind: "discount", discount_pct: 5, max_uses: null, expires_at: null, product_slug: "any-paid", name: "Studyline" }, error: null }),
-      then(resolve: (value: unknown) => unknown) { return Promise.resolve(resolve({ count: table === "promo_usages" ? usages : payments, error: null })); },
-    };
-    return query;
-  } };
-  const run = new Function("databaseMock", "normalizeCode", "isExpired", "isPaidProductSlug", "promoAppliesToProduct", "HARDCODED_DISCOUNT_PROMOS", "DISCOUNT_CODE", "DISCOUNT_PCT", `${js}; return lookupDiscountPromo;`);
-  const fn = run(supabaseAdmin, (code: string) => code.trim().toUpperCase(), () => false, isPaidProductSlug, promoAppliesToProduct, HARDCODED_DISCOUNT_PROMOS, DISCOUNT_CODE, DISCOUNT_PCT);
+  const supabaseAdmin = {
+    from(table: string) {
+      const query = {
+        select() {
+          return query;
+        },
+        eq(key: string, value: string) {
+          (filters[table] ??= {})[key] = value;
+          return query;
+        },
+        not() {
+          return query;
+        },
+        maybeSingle: async () => ({
+          data: {
+            id: "studyline-id",
+            code: "STUDYLINE",
+            kind: "discount",
+            discount_pct: 5,
+            max_uses: null,
+            expires_at: null,
+            product_slug: "any-paid",
+            name: "Studyline",
+          },
+          error: null,
+        }),
+        then(resolve: (value: unknown) => unknown) {
+          return Promise.resolve(
+            resolve({ count: table === "promo_usages" ? usages : payments, error: null }),
+          );
+        },
+      };
+      return query;
+    },
+  };
+  const run = new Function(
+    "databaseMock",
+    "normalizeCode",
+    "isExpired",
+    "isPaidProductSlug",
+    "promoAppliesToProduct",
+    "HARDCODED_DISCOUNT_PROMOS",
+    "DISCOUNT_CODE",
+    "DISCOUNT_PCT",
+    "ACCOUNT_LIMITED_DISCOUNT_CODES",
+    "accountLimitedDiscountMeta",
+    "isAccountLimitedDiscountCode",
+    `${js}; return lookupDiscountPromo;`,
+  );
+  const fn = run(
+    supabaseAdmin,
+    (code: string) => code.trim().toUpperCase(),
+    () => false,
+    isPaidProductSlug,
+    promoAppliesToProduct,
+    HARDCODED_DISCOUNT_PROMOS,
+    DISCOUNT_CODE,
+    DISCOUNT_PCT,
+    ACCOUNT_LIMITED_DISCOUNT_CODES,
+    accountLimitedDiscountMeta,
+    isAccountLimitedDiscountCode,
+  );
   return { result: await fn({ code: "studyline", userId, productSlug }), filters };
 }
 
