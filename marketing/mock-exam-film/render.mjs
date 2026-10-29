@@ -20,7 +20,7 @@ const args = process.argv.slice(2);
 const atIdx = args.indexOf("--at");
 const only = atIdx >= 0 ? args[atIdx + 1].split(",").map(Number) : null;
 const FPS = 30;
-const FILM = 24;
+const FILM = 33.6;
 const PORT = 8931;
 const DEBUG = 9333;
 const framesDir = "/tmp/mock-exam-film-frames";
