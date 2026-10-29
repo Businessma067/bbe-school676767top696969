@@ -28,13 +28,19 @@ export function SupportChat() {
           if (!stop) {
             setMessages(next);
             setUnread(false);
+            setError(null);
           }
         } else {
           const flag = await supportHasReply();
           if (!stop) setUnread(flag);
         }
-      } catch {
-        /* chat tables may not be applied yet */
+      } catch (err) {
+        if (open && !stop) {
+          const msg = err instanceof Error ? err.message : "";
+          if (/SQL Editor|SERVICE_ROLE|not connected|schema cache|support_send/i.test(msg)) {
+            setError("Support is being set up. Please try again in a moment.");
+          }
+        }
       }
     };
     void tick();
@@ -61,8 +67,13 @@ export function SupportChat() {
       await sendSupportMessage(body);
       setText("");
       setMessages(await pullSupportMessages());
-    } catch {
-      setError("Message was not sent. Try again.");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "";
+      setError(
+        /SQL Editor|SERVICE_ROLE|schema cache|support_send/i.test(msg)
+          ? "Support is not connected yet. An admin needs to finish setup in /admin/support."
+          : "Message was not sent. Try again.",
+      );
     } finally {
       setSending(false);
     }
@@ -87,7 +98,9 @@ export function SupportChat() {
           </div>
           <div ref={scroller} className="flex-1 space-y-2 overflow-y-auto px-3 py-3">
             {messages.length === 0 ? (
-              <p className="text-sm text-muted-foreground">Write a message and we will answer here.</p>
+              <p className="text-sm text-muted-foreground">
+                Write a message and we will answer here.
+              </p>
             ) : (
               messages.map((m) => (
                 <p

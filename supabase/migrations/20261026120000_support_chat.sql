@@ -206,6 +206,15 @@ BEGIN
 END;
 $$;
 
+REVOKE ALL ON FUNCTION public.support_thread_for(text) FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_pull(text) FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_unread(text) FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_send(text, text) FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_admin_unread() FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_admin_inbox() FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_admin_thread(uuid) FROM PUBLIC;
+REVOKE ALL ON FUNCTION public.support_admin_reply(uuid, text) FROM PUBLIC;
+
 GRANT EXECUTE ON FUNCTION public.support_thread_for(text) TO anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.support_pull(text) TO anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.support_unread(text) TO anon, authenticated;

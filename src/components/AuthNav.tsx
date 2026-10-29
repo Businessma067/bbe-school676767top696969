@@ -1,11 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import {
-  getCurrentAuthState,
-  peekAuthState,
-  type AuthState,
-} from "@/lib/auth-ui";
+import { getCurrentAuthState, peekAuthState, type AuthState } from "@/lib/auth-ui";
 import { safeInternalReturnPath } from "@/lib/auth-return";
 import { ChevronDown } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -28,6 +24,7 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   // Prefer cached chrome immediately, even while a background refresh is in flight.
   const [ready, setReady] = useState(() => Boolean(peeked?.ready || peeked?.auth));
   const [open, setOpen] = useState(false);
+  const [supportUnread, setSupportUnread] = useState(0);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -54,6 +51,29 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   }, []);
 
   useEffect(() => {
+    if (auth?.role !== "admin") {
+      setSupportUnread(0);
+      return;
+    }
+    let stop = false;
+    const tick = async () => {
+      try {
+        const { adminSupportUnread } = await import("@/lib/support-chat");
+        const n = await adminSupportUnread();
+        if (!stop) setSupportUnread(n);
+      } catch {
+        if (!stop) setSupportUnread(0);
+      }
+    };
+    void tick();
+    const timer = window.setInterval(tick, 15000);
+    return () => {
+      stop = true;
+      window.clearInterval(timer);
+    };
+  }, [auth?.role]);
+
+  useEffect(() => {
     if (!open) return;
     const handle = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
@@ -67,7 +87,10 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   if (!ready) {
     if (hideGuestLinks) return null;
     return (
-      <div className="h-9 w-16 rounded-md border border-border bg-card sm:w-28" aria-hidden="true" />
+      <div
+        className="h-9 w-16 rounded-md border border-border bg-card sm:w-28"
+        aria-hidden="true"
+      />
     );
   }
 
@@ -120,10 +143,15 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
     <div className="flex items-center gap-2" data-no-i18n>
       {auth.role === "admin" && (
         <Link
-          to="/admin/users"
+          to="/admin/support"
           className="hidden rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:inline-flex"
         >
           {t("Admin panel")}
+          {supportUnread > 0 ? (
+            <span className="ml-1.5 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-bold text-primary-foreground">
+              {supportUnread > 9 ? "9+" : supportUnread}
+            </span>
+          ) : null}
         </Link>
       )}
       <div className="relative" ref={menuRef}>
@@ -170,12 +198,13 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
           </LocalizedLink>
           {auth.role === "admin" && (
             <Link
-              to="/admin/users"
+              to="/admin/support"
               onClick={() => setOpen(false)}
               tabIndex={open ? 0 : -1}
               className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
             >
               {t("Admin panel")}
+              {supportUnread > 0 ? ` (${supportUnread})` : ""}
             </Link>
           )}
         </div>

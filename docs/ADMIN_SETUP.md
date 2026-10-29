@@ -32,11 +32,26 @@ To clear existing Full Course access for everyone and block self-enroll into pai
 
 `supabase/migrations/20260829220000_revoke_full_course_enrollments.sql`
 
+## Support chat (required for site Support widget + `/admin/support`)
+
+Visitors write via the floating **Support** button. Every admin (`georgtyrin@gmail.com`,
+`info@spray-go.com`) sees the inbox at `/admin/support` and replies land back in the
+visitor’s chat.
+
+**One-time setup** (pick one):
+
+1. **SQL (recommended):** Supabase → SQL Editor → paste and Run  
+   `supabase/migrations/20261026120000_support_chat.sql`  
+   (also available as **Copy SQL** on `/admin/support` when the backend is not ready)
+2. **Or** add `SUPABASE_SERVICE_ROLE_KEY` in Lovable Cloud → Secrets (chat uses Storage)
+3. **Or** add `DATABASE_URL` (Supabase DB URI) and click **Apply schema** on `/admin/support`
+
 ## Pages
 
 - `/admin` — redirects to Users
 - `/admin/users` — searchable user list
 - `/admin/users/{id}` — per-user detail (shows phone from signup metadata when present)
+- `/admin/support` — support inbox (reply to site chat)
 - `/admin/promocodes` — unlock codes + 15% discount codes (usages, courses, expiry)
 
 ## Discount promocodes
