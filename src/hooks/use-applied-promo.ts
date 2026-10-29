@@ -6,6 +6,21 @@ import {
   type AppliedPromo,
 } from "@/lib/applied-promo";
 import type { PaidProductSlug } from "@/lib/checkout-catalog";
+import { syncAccountPromos } from "@/lib/applied-promo";
+import { getMyPromoSelections } from "@/lib/promo.functions";
+import { supabase } from "@/integrations/supabase/client";
+
+let accountSync: Promise<void> | null = null;
+function syncFromAccount() {
+  accountSync ??= (async () => {
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) return;
+    syncAccountPromos(await getMyPromoSelections());
+  })().catch(() => {
+    accountSync = null;
+  });
+}
+
 
 export function useAppliedPromo(productSlug: PaidProductSlug): AppliedPromo | null {
   const [applied, setApplied] = useState<AppliedPromo | null>(null);
@@ -13,6 +28,7 @@ export function useAppliedPromo(productSlug: PaidProductSlug): AppliedPromo | nu
   useEffect(() => {
     const sync = () => setApplied(getAppliedPromo(productSlug));
     sync();
+    syncFromAccount();
     window.addEventListener(APPLIED_PROMO_EVENT, sync);
     window.addEventListener("storage", sync);
     return () => {
@@ -30,6 +46,7 @@ export function useAppliedPromoMap(): Partial<Record<PaidProductSlug, AppliedPro
   useEffect(() => {
     const sync = () => setMap(getAppliedPromoMap());
     sync();
+    syncFromAccount();
     window.addEventListener(APPLIED_PROMO_EVENT, sync);
     window.addEventListener("storage", sync);
     return () => {
