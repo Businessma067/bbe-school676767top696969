@@ -66,6 +66,11 @@ export function getAppliedPromoMap(): PromoMap {
 
 export function saveAppliedPromo(productSlug: PaidProductSlug, promo: AppliedPromo) {
   const map = readMap();
+  const code = promo.code.trim().toUpperCase();
+  // A code is saved on one course at a time; applying it here moves it.
+  for (const slug of Object.keys(map) as PaidProductSlug[]) {
+    if (slug !== productSlug && map[slug]?.code === code) delete map[slug];
+  }
   map[productSlug] = {
     code: promo.code.trim().toUpperCase(),
     discountPct: promo.discountPct,
@@ -77,5 +82,18 @@ export function clearAppliedPromo(productSlug: PaidProductSlug) {
   const map = readMap();
   if (!(productSlug in map)) return;
   delete map[productSlug];
+  writeMap(map);
+}
+
+/** Replace codes saved on this device with the account's saved course choices. */
+export function syncAccountPromos(rows: { code: string; productSlug: string; discountPct: number }[]) {
+  const map = readMap();
+  const codes = new Set(rows.map((r) => r.code.toUpperCase()));
+  for (const slug of Object.keys(map) as PaidProductSlug[]) {
+    if (codes.has(map[slug]!.code)) delete map[slug];
+  }
+  for (const r of rows) {
+    if (isPaidProductSlug(r.productSlug)) map[r.productSlug] = { code: r.code.toUpperCase(), discountPct: r.discountPct };
+  }
   writeMap(map);
 }
