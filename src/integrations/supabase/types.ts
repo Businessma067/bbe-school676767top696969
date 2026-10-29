@@ -503,6 +503,30 @@ export type Database = {
         }
         Relationships: []
       }
+      promo_course_selections: {
+        Row: {
+          code: string
+          discount_pct: number
+          product_slug: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          code: string
+          discount_pct: number
+          product_slug: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          code?: string
+          discount_pct?: number
+          product_slug?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       promo_redeem_attempts: {
         Row: {
           code_attempted: string
