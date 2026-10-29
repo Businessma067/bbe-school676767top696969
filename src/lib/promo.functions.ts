@@ -341,11 +341,54 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
   .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
     const userId = context.userId;
 
-    return await lookupDiscountPromo({
+    const result = await lookupDiscountPromo({
       code: data.code,
       productSlug: data.productSlug,
       userId,
     });
+    // Remember which course the account applied this code to (one course per
+    // code; applying it to another course moves the discount there).
+    if (result.ok && data.productSlug && isPaidProductSlug(data.productSlug)) {
+      try {
+        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+        await supabaseAdmin.from("promo_course_selections").upsert(
+          {
+            user_id: userId,
+            code: result.code,
+            product_slug: data.productSlug,
+            discount_pct: result.discountPct,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "user_id,code" },
+        );
+      } catch (err) {
+        console.error("save promo selection", err);
+      }
+    }
+    return result;
+  });
+
+/** Promo codes this account has applied, with the course each one is saved on. */
+export const getMyPromoSelections = createServerFn({ method: "GET" })
+  .middleware([requireSupabaseAuth])
+  .handler(async ({ context }) => {
+    const { data, error } = await context.supabase
+      .from("promo_course_selections")
+      .select("code, product_slug, discount_pct");
+    if (error) return [] as { code: string; productSlug: string; discountPct: number }[];
+    const rows = [];
+    for (const row of data ?? []) {
+      // Drop selections that are no longer valid (e.g. STUDYLINE already used).
+      const check = await lookupDiscountPromo({
+        code: row.code,
+        productSlug: row.product_slug,
+        userId: context.userId,
+      });
+      if (check.ok) {
+        rows.push({ code: row.code, productSlug: row.product_slug, discountPct: check.discountPct });
+      }
+    }
+    return rows;
   });
 
 
