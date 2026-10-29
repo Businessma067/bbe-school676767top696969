@@ -33,13 +33,19 @@ describe("STUDYLINE conditions", () => {
       expect(result.ok).toBe(true);
       expect(result.discountPct).toBe(5);
       expect(filters.promo_usages?.user_id).toBe("new-account");
+      expect(filters.promo_usages?.product_slug).toBe(slug);
+      expect(filters.payments?.product_slug).toBe(slug);
     }
   });
-  test("rejects a second use by the same account across courses", async () => {
-    expect((await lookup("used-account", 1, 0, "wiso-full-course")).result.ok).toBe(false);
+  test("allows the same account to use it on another course", async () => {
+    // Account already paid for full-course with STUDYLINE; wiso is a different course.
+    expect((await lookup("used-account", 0, 0, "wiso-full-course")).result.ok).toBe(true);
   });
-  test("blocks another checkout while a payment is pending or paid", async () => {
-    expect((await lookup("pending-account", 0, 1)).result.ok).toBe(false);
+  test("rejects a second use by the same account on the same course", async () => {
+    expect((await lookup("used-account", 1, 0, "full-course")).result.ok).toBe(false);
+  });
+  test("blocks another checkout on the same course while a payment is pending or paid", async () => {
+    expect((await lookup("pending-account", 0, 1, "full-course")).result.ok).toBe(false);
   });
   test("requires a verified account", async () => {
     expect((await lookup(undefined)).result.ok).toBe(false);

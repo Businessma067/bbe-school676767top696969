@@ -210,22 +210,28 @@ export async function lookupDiscountPromo(input: {
         if (!input.userId) {
           return { ok: false, error: "Sign in to use this promocode." };
         }
-        const { count: usageCount, error: usageError } = await supabaseAdmin
-          .from("promo_usages")
-          .select("id", { count: "exact", head: true })
-          .eq("promocode_id", data.id)
-          .eq("user_id", input.userId);
-        const { count: paymentCount, error: paymentError } = await supabaseAdmin
-          .from("payments")
-          .select("id", { count: "exact", head: true })
-          .eq("promo_code", code)
-          .eq("user_id", input.userId)
-          .not("status", "in", "(failure,expired,reversed)");
-        if (usageError || paymentError) {
-          return { ok: false, error: "Could not verify promocode. Try again." };
-        }
-        if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
-          return { ok: false, error: "This promocode was already used or has a pending payment on your account." };
+        // Once per account per course: the same account may use STUDYLINE on
+        // every course, but not twice on the same course.
+        if (input.productSlug) {
+          const { count: usageCount, error: usageError } = await supabaseAdmin
+            .from("promo_usages")
+            .select("id", { count: "exact", head: true })
+            .eq("promocode_id", data.id)
+            .eq("user_id", input.userId)
+            .eq("product_slug", input.productSlug);
+          const { count: paymentCount, error: paymentError } = await supabaseAdmin
+            .from("payments")
+            .select("id", { count: "exact", head: true })
+            .eq("promo_code", code)
+            .eq("user_id", input.userId)
+            .eq("product_slug", input.productSlug)
+            .not("status", "in", "(failure,expired,reversed)");
+          if (usageError || paymentError) {
+            return { ok: false, error: "Could not verify promocode. Try again." };
+          }
+          if ((usageCount ?? 0) > 0 || (paymentCount ?? 0) > 0) {
+            return { ok: false, error: "This promocode was already used on this course or has a pending payment on your account." };
+          }
         }
       }
       if (data.max_uses != null) {
@@ -346,8 +352,8 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
       productSlug: data.productSlug,
       userId,
     });
-    // Remember which course the account applied this code to (one course per
-    // code; applying it to another course moves the discount there).
+    // Remember each course the account applied this code to; the discount
+    // stays on every course it was applied to.
     if (result.ok && data.productSlug && isPaidProductSlug(data.productSlug)) {
       try {
         const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
@@ -359,7 +365,7 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
             discount_pct: result.discountPct,
             updated_at: new Date().toISOString(),
           },
-          { onConflict: "user_id,code" },
+          { onConflict: "user_id,code,product_slug" },
         );
       } catch (err) {
         console.error("save promo selection", err);
