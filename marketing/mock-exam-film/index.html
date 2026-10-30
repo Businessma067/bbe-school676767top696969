@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mock exams — a short film</title>
+  <style>
+    @font-face {
+      font-family: "Film Sans";
+      src: url("/fonts/Inter-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Film Sans";
+      src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Film Sans";
+      src: url("/fonts/Inter-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Film Serif";
+      src: url("/fonts/NotoSerif-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Film Serif";
+      src: url("/fonts/NotoSerif-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Film Mono";
+      src: url("/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #f2f1ed;
+      color: #161616;
+      font-family: "Film Sans", Inter, sans-serif;
+      cursor: none;
+    }
+    button { font: inherit; color: inherit; cursor: none; }
+    .stage {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #f2f1ed;
+    }
+    .stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.045;
+      background-image: radial-gradient(#161616 0.55px, transparent 0.6px);
+      background-size: 3px 3px;
+      z-index: 8;
+    }
+    .scene {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 68px 120px 92px;
+    }
+    .kicker {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #5a584f;
+    }
+    .kicker b {
+      color: #b3392a;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+    }
+    .grow {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 0;
+    }
+    .caption {
+      position: absolute;
+      left: 160px;
+      right: 160px;
+      bottom: 36px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.45;
+      color: #5a584f;
+    }
+    .rule {
+      width: 72px;
+      height: 2px;
+      background: #b3392a;
+      transform-origin: left center;
+      margin: 22px 0 20px;
+    }
+
+    /* Title */
+    .title-block { width: 920px; }
+    .eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #b3392a;
+    }
+    h1 {
+      margin: 18px 0 0;
+      font-family: "Film Serif", "Noto Serif", serif;
+      font-weight: 700;
+      font-size: 112px;
+      line-height: 0.92;
+      letter-spacing: -0.035em;
+    }
+    .sub {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.45;
+      color: #5a584f;
+    }
+    .sub strong { color: #161616; font-weight: 600; }
+
+    /* Choose */
+    .choose-block { display: flex; flex-direction: column; align-items: center; gap: 26px; }
+    .cards { display: flex; gap: 22px; }
+    .card {
+      width: 340px;
+      height: 196px;
+      padding: 26px 26px 22px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid #d8d6ce;
+      box-shadow: 0 18px 40px -24px rgba(22, 22, 22, 0.35);
+      display: flex;
+      flex-direction: column;
+    }
+    .card .doc {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: #f4f1ea;
+      color: #b3392a;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      margin: 0;
+      font-family: "Film Serif", serif;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+    .card p { margin: 8px 0 0; color: #5a584f; font-size: 15px; line-height: 1.4; }
+    .card .pts { margin-top: auto; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: #161616; }
+    .panel {
+      width: 640px;
+      background: #fff;
+      border: 1px solid #d8d6ce;
+      border-radius: 18px;
+      padding: 22px 22px 20px;
+      box-shadow: 0 24px 50px -28px rgba(22, 22, 22, 0.4);
+    }
+    .panel .ask { margin: 0 0 12px; font-size: 13px; font-weight: 600; color: #5a584f; }
+    .modes, .go { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .modes button, .go button {
+      border-radius: 10px;
+      border: 1px solid #d8d6ce;
+      background: #fff;
+      padding: 12px 14px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .modes button.on, .go button.on {
+      background: #161616;
+      color: #f2f1ed;
+      border-color: #161616;
+    }
+    .hint { margin: 12px 2px 14px; font-size: 14px; color: #5a584f; min-height: 1.3em; }
+
+    /* Exam */
+    .exam {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #d8d6ce;
+      border-radius: 22px;
+      box-shadow: 0 30px 70px -36px rgba(22, 22, 22, 0.45);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .exam-head {
+      height: 74px;
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      border-bottom: 1px solid #e6e3db;
+    }
+    .head-left, .head-right { display: flex; align-items: center; gap: 14px; }
+    .exam-name {
+      font-family: "Film Serif", serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+    }
+    .badge.econ { color: #c2412c; background: rgba(232, 93, 58, 0.1); border-color: rgba(232, 93, 58, 0.28); }
+    .badge.math { color: #2563eb; background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.28); }
+    .qcount { color: #5a584f; font-size: 16px; font-variant-numeric: tabular-nums; }
+    .timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #d8d6ce;
+      background: #f7f6f3;
+      border-radius: 9px;
+      padding: 7px 12px;
+      font-family: "Film Mono", ui-monospace, monospace;
+      font-size: 16px;
+      font-variant-numeric: tabular-nums;
+    }
+    .exam-body {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 292px 1fr 332px;
+      gap: 20px;
+      padding: 20px 22px 22px;
+    }
+    .side-card {
+      background: #f7f6f3;
+      border: 1px solid #e6e3db;
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .side-card + .side-card { margin-top: 12px; }
+    .stack { display: grid; }
+    .stack > * { grid-area: 1 / 1; }
+    .qnum {
+      font-family: "Film Serif", serif;
+      font-size: 52px;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+    .qsub { margin-top: 6px; color: #5a584f; font-size: 15px; }
+    .qtime { margin-top: 10px; color: #8a877c; font-size: 13px; font-variant-numeric: tabular-nums; }
+    #flagBtn {
+      margin-top: 16px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 10px;
+      border: 1px solid #d8d6ce;
+      background: #fff;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .pal-title { font-size: 13px; font-weight: 700; margin-bottom: 10px; }
+    .sec-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 5px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a877c;
+    }
+    .sec-label:first-of-type { margin-top: 0; }
+    .dot { width: 7px; height: 7px; border-radius: 99px; }
+    .grid { display: flex; flex-wrap: wrap; gap: 4px; width: 206px; }
+    .cell {
+      position: relative;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      border: 1px solid #e0ddd4;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 10px;
+      font-weight: 600;
+      color: #8a877c;
+      font-variant-numeric: tabular-nums;
+    }
+    .pip {
+      position: absolute;
+      top: -5px;
+      right: -4px;
+      width: 12px;
+      height: 12px;
+      opacity: 0;
+      transform-origin: center;
+    }
+    .stem {
+      font-family: "Film Serif", serif;
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      margin: 4px 0 16px;
+    }
+    .statements {
+      border: 1px solid #e6e3db;
+      border-radius: 14px;
+      background: #f7f6f3;
+      overflow: hidden;
+    }
+    .stmt {
+      display: grid;
+      grid-template-columns: 28px 1fr 32px;
+      gap: 12px;
+      align-items: center;
+      min-height: 58px;
+      padding: 8px 14px;
+      border-top: 1px solid #e6e3db;
+    }
+    .stmt:first-child { border-top: 0; }
+    .letter { font-size: 13px; font-weight: 700; color: #8a877c; text-align: center; }
+    .stmt p { margin: 0; font-size: 18px; line-height: 1.35; }
+    .box {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      border: 1.5px solid #cfcbc1;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+    .box-fill {
+      position: absolute;
+      inset: -1.5px;
+      border-radius: 8px;
+      background: #161616;
+      opacity: 0;
+      transform-origin: center;
+    }
+    .box svg { position: relative; width: 16px; height: 16px; }
+    .box svg path, .bub svg path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+    }
+    .navrow {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+    .navrow button {
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid #d8d6ce;
+      background: #fff;
+    }
+    .navrow .next { background: #161616; color: #f2f1ed; border-color: #161616; }
+    .navrow .prev { color: #8a877c; }
+    .tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px; }
+    .tool {
+      border: 1px solid #e6e3db;
+      background: #f7f6f3;
+      border-radius: 10px;
+      padding: 8px 2px 7px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: #5a584f;
+    }
+    .tool.on { background: #161616; color: #f2f1ed; border-color: #161616; }
+    .tool svg { display: block; margin: 0 auto 4px; }
+    .sheet, .calc {
+      border: 1px solid #e6e3db;
+      border-radius: 14px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .sheet-head, .calc-screen {
+      padding: 12px 14px 10px;
+      background: #f7f6f3;
+      border-bottom: 1px solid #e6e3db;
+    }
+    .sheet-head strong, .calc-screen { display: block; font-size: 13px; }
+    .sheet-head span, .expr { color: #8a877c; font-size: 12px; }
+    .srow {
+      display: grid;
+      grid-template-columns: 22px repeat(5, 1fr);
+      gap: 6px;
+      align-items: center;
+      padding: 7px 12px;
+    }
+    .srow.onrow { background: #f7f6f3; }
+    .srow .qn { font-size: 12px; font-weight: 700; color: #5a584f; font-variant-numeric: tabular-nums; }
+    .bub {
+      height: 26px;
+      border-radius: 6px;
+      border: 1px solid #e0ddd4;
+      display: grid;
+      place-items: center;
+      position: relative;
+      font-size: 11px;
+      font-weight: 700;
+      color: #8a877c;
+    }
+    .bub svg {
+      position: absolute;
+      inset: 3px;
+    }
+    .calc { padding-bottom: 12px; }
+    .calc-screen { min-height: 78px; }
+    .expr {
+      font-family: "Film Mono", monospace;
+      font-size: 14px;
+      color: #8a877c;
+      min-height: 18px;
+    }
+    .result {
+      font-family: "Film Serif", serif;
+      font-size: 32px;
+      letter-spacing: -0.03em;
+      margin-top: 2px;
+    }
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      padding: 12px;
+    }
+    .keys i {
+      font-style: normal;
+      text-align: center;
+      border-radius: 8px;
+      background: #f4f2ec;
+      padding: 9px 0;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .panel-stack { display: grid; }
+    .panel-stack > * { grid-area: 1 / 1; }
+
+    /* Score */
+    .score-wrap {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+    .score-card {
+      background: #fff;
+      border: 1px solid #d8d6ce;
+      border-radius: 22px;
+      box-shadow: 0 30px 70px -36px rgba(22, 22, 22, 0.4);
+      padding: 36px 40px 32px;
+      min-height: 560px;
+    }
+    .score-line { display: flex; align-items: flex-end; gap: 12px; }
+    #scoreNum {
+      font-family: "Film Serif", serif;
+      font-weight: 700;
+      font-size: 120px;
+      line-height: 0.85;
+      letter-spacing: -0.045em;
+      font-variant-numeric: tabular-nums;
+      min-width: 3.2ch;
+    }
+    .score-of {
+      font-size: 28px;
+      color: #5a584f;
+      padding-bottom: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+    .score-tag {
+      margin: 12px 0 28px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a877c;
+    }
+    .bar { display: grid; grid-template-columns: 130px 1fr 78px; gap: 12px; align-items: center; margin-top: 14px; }
+    .bar .name { font-size: 16px; font-weight: 600; }
+    .track { height: 8px; border-radius: 99px; background: #e9e7e1; overflow: hidden; }
+    .track span { display: block; height: 100%; background: #161616; transform-origin: left center; }
+    .bar .val { text-align: right; font-variant-numeric: tabular-nums; font-size: 15px; color: #5a584f; }
+    .trend-label {
+      margin: 32px 0 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a877c;
+    }
+    .task-kicker { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #8a877c; }
+    .task-total {
+      margin-top: 8px;
+      font-family: "Film Serif", serif;
+      font-size: 42px;
+      letter-spacing: -0.03em;
+      font-variant-numeric: tabular-nums;
+    }
+    .task-total small { font-family: "Film Sans", sans-serif; font-size: 18px; color: #5a584f; letter-spacing: 0; }
+    .jrow {
+      display: grid;
+      grid-template-columns: 24px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 0;
+      border-top: 1px solid #eeeae2;
+      font-size: 16px;
+    }
+    .jrow:first-of-type { margin-top: 18px; }
+    .jrow b { font-variant-numeric: tabular-nums; font-weight: 700; }
+    .explain {
+      margin: 8px 0 0;
+      font-size: 16px;
+      line-height: 1.45;
+      color: #5a584f;
+    }
+    #cursor {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 28px;
+      height: 28px;
+      z-index: 40;
+      pointer-events: none;
+      filter: drop-shadow(0 2px 2px rgba(22, 22, 22, 0.2));
+    }
+    #filmbar {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background: #b3392a;
+      transform-origin: left center;
+      z-index: 9;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage" id="stage">
+    <section class="scene" id="sceneTitle">
+      <div class="grow">
+        <div class="title-block">
+          <div class="eyebrow" id="eyebrow">BBE School</div>
+          <h1 id="title">Mock exams</h1>
+          <div class="rule" id="titleRule"></div>
+          <p class="sub" id="subtitle"><strong>34 questions · 2 hours · 159 points.</strong><br />The written paper, scored with the wi2 method.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="sceneChoose">
+      <div class="kicker"><b>01</b> Choose the paper</div>
+      <div class="grow">
+        <div class="choose-block">
+          <div class="cards">
+            <article class="card" id="cardDemo">
+              <div class="doc">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 1.5h5.2L13 5.2V14.5H4z"/><path d="M9 1.8V5.4H12.6"/></svg>
+              </div>
+              <h2>Demo</h2>
+              <p>A free diagnostic, open before you buy.</p>
+              <div class="pts">Always unlocked</div>
+            </article>
+            <article class="card" id="card1">
+              <div class="doc">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 1.5h5.2L13 5.2V14.5H4z"/><path d="M9 1.8V5.4H12.6"/></svg>
+              </div>
+              <h2>Mock Exam 1</h2>
+              <p>34 questions · 2 hours</p>
+              <div class="pts">159 points</div>
+            </article>
+            <article class="card" id="card2">
+              <div class="doc">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 1.5h5.2L13 5.2V14.5H4z"/><path d="M9 1.8V5.4H12.6"/></svg>
+              </div>
+              <h2>Mock Exam 2</h2>
+              <p>Another full sitting</p>
+              <div class="pts">Same clock, same score</div>
+            </article>
+          </div>
+          <div class="panel" id="startPanel">
+            <p class="ask">How do you want to answer?</p>
+            <div class="modes">
+              <button type="button" id="modeSheet">With answer sheet</button>
+              <button type="button" id="modeInline">Without answer sheet</button>
+            </div>
+            <p class="hint" id="modeHint"></p>
+            <div class="go">
+              <button type="button" id="timedBtn">Timed · 2 hours</button>
+              <button type="button" id="untimedBtn">Untimed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="caption" id="capChoose"></p>
+    </section>
+
+    <section class="scene" id="sceneExam">
+      <div class="kicker"><b>02</b> Mark what is true</div>
+      <div class="grow">
+        <div class="exam">
+          <header class="exam-head">
+            <div class="head-left">
+              <div class="exam-name">Mock Exam 1</div>
+              <div class="stack" style="width:148px;height:26px">
+                <span class="badge econ" id="badgeEcon">Economics</span>
+                <span class="badge math" id="badgeMath">Mathematics</span>
+              </div>
+            </div>
+            <div class="head-right">
+              <div class="stack" style="width:150px;height:22px">
+                <span class="qcount" id="countEcon">Question 4 / 34</span>
+                <span class="qcount" id="countMath">Question 22 / 34</span>
+              </div>
+              <div class="timer" id="timer">1:46:20</div>
+            </div>
+          </header>
+          <div class="exam-body">
+            <aside>
+              <div class="side-card">
+                <div class="stack" style="height:52px">
+                  <div class="qnum" id="numEcon">4</div>
+                  <div class="qnum" id="numMath">22</div>
+                </div>
+                <div class="stack" style="height:22px">
+                  <div class="qsub" id="subEcon">Economics</div>
+                  <div class="qsub" id="subMath">Mathematics</div>
+                </div>
+                <div class="qtime">This question · 2:18</div>
+                <button type="button" id="flagBtn">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.5 14V2.5h8.2L10 6l1.7 3.5H3.5"/></svg>
+                  Flag for review
+                </button>
+              </div>
+              <div class="side-card">
+                <div class="pal-title">Questions</div>
+                <div class="sec-label"><i class="dot" style="background:#E85D3A"></i> Economics</div>
+                <div class="grid" id="palEcon"></div>
+                <div class="sec-label"><i class="dot" style="background:#0F9B7C"></i> English</div>
+                <div class="grid" id="palEng"></div>
+                <div class="sec-label"><i class="dot" style="background:#3B82F6"></i> Mathematics</div>
+                <div class="grid" id="palMath"></div>
+              </div>
+            </aside>
+            <main>
+              <div class="stack">
+                <div id="paperEcon">
+                  <div class="stem">A price ceiling is set below the equilibrium price.</div>
+                  <div class="statements" id="stmtsEcon"></div>
+                </div>
+                <div id="paperMath">
+                  <div class="stem">1,000 grows by 8% a year for 3 years.</div>
+                  <div class="statements" id="stmtsMath"></div>
+                </div>
+              </div>
+              <div class="navrow">
+                <button type="button" class="prev">Previous</button>
+                <button type="button" class="next">Next</button>
+              </div>
+            </main>
+            <aside>
+              <div class="tools">
+                <div class="tool" id="toolSheet">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="2" width="10" height="12" rx="1.4"/><path d="M5.5 5.5h5M5.5 8h5M5.5 10.5h3"/></svg>
+                  Sheet
+                </div>
+                <div class="tool" id="toolCalc">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2" width="11" height="12" rx="1.5"/><path d="M5 5.2h6M5 8h2M9 8h2M5 10.8h2M9 10.8h2"/></svg>
+                  Calc
+                </div>
+                <div class="tool" id="toolNotes">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 2.5h6.2L13 5.2V13.5H4z"/><path d="M9.5 2.8V5.5H12.2"/></svg>
+                  Notes
+                </div>
+                <div class="tool" id="toolDraw">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9.2 3.2l3.6 3.6L6 13.6H2.5V10z"/></svg>
+                  Draw
+                </div>
+              </div>
+              <div class="panel-stack">
+                <div class="sheet" id="sheet">
+                  <div class="sheet-head">
+                    <strong>Answer sheet</strong><br />
+                    <span>Mark ✕ for True</span>
+                  </div>
+                  <div id="sheetRows"></div>
+                </div>
+                <div class="calc" id="calc">
+                  <div class="calc-screen">
+                    <div class="expr" id="calcExpr"></div>
+                    <div class="result" id="calcResult">1.259712</div>
+                  </div>
+                  <div class="keys" id="calcKeys"></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <p class="caption" id="capExam"></p>
+    </section>
+
+    <section class="scene" id="sceneScore">
+      <div class="kicker"><b>03</b> Where the points went</div>
+      <div class="grow">
+        <div class="score-wrap">
+          <div class="score-card" id="scoreLeft">
+            <div class="score-line">
+              <div id="scoreNum">0.0</div>
+              <div class="score-of">/ 159</div>
+            </div>
+            <div class="score-tag">wi2 points · Mock Exam 1</div>
+            <div class="bar"><div class="name">Economics</div><div class="track"><span id="barEcon"></span></div><div class="val">46 / 60</div></div>
+            <div class="bar"><div class="name">English</div><div class="track"><span id="barEng"></span></div><div class="val">28 / 35</div></div>
+            <div class="bar"><div class="name">Mathematics</div><div class="track"><span id="barMath"></span></div><div class="val">50 / 64</div></div>
+            <div class="trend-label">Four sittings</div>
+            <svg id="trend" viewBox="0 0 520 120" width="100%" height="120" fill="none"></svg>
+          </div>
+          <div class="score-card" id="scoreRight">
+            <div class="task-kicker">Question 4 · Economics</div>
+            <div class="task-total" id="taskTotal">0.0 <small>/ 6</small></div>
+            <div class="jrow" id="rowA"><span>A</span><span>Marked true · key true</span><b>+3.0</b></div>
+            <div class="jrow" id="rowB"><span>B</span><span>Marked true · key false</span><b style="color:#b3392a">−2.0</b></div>
+            <div class="jrow" id="rowC"><span>C</span><span>Marked true · key true</span><b>+3.0</b></div>
+            <div class="jrow" id="rowD"><span>D</span><span>Left blank · key false</span><b>0</b></div>
+            <div class="jrow" id="rowE"><span>E</span><span>Left blank · key false</span><b>0</b></div>
+            <p class="explain" id="explain">A true statement earns points only when it is marked. A false statement loses points only when it is marked. Leaving a false statement blank costs nothing, and the task never falls below zero.</p>
+          </div>
+        </div>
+      </div>
+      <p class="caption" id="capScore"></p>
+    </section>
+    <div id="filmbar"></div>
+  </div>
+  <svg id="cursor" viewBox="0 0 24 24">
+    <path d="M5.2 2.4 L5.2 18.6 L9.2 14.8 L12.8 21.4 L15.5 20.1 L11.8 13.5 L17.6 13.1 Z" fill="#161616" stroke="#fff" stroke-width="1.15" stroke-linejoin="round"/>
+  </svg>
+
+  <script>
+    const FILM = 33.6;
+    const CLICK = {
+      mode: 8.0,
+      timed: 10.55,
+      a: 13.1,
+      b: 15.65,
+      c: 18.2,
+      flag: 20.75,
+    };
+    const $ = (id) => document.getElementById(id);
+    const clamp01 = (v) => Math.min(1, Math.max(0, v));
+    const span = (t, a, b) => clamp01((t - a) / (b - a));
+    const easeOut = (p) => 1 - Math.pow(1 - p, 3);
+    const easeInOut = (p) => (p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2);
+    const easeOutExpo = (p) => (p >= 1 ? 1 : 1 - Math.pow(2, -10 * p));
+    const mix = (a, b, p) => a + (b - a) * p;
+    const lerpHex = (a, b, p) => {
+      const pa = [1, 3, 5].map((i) => parseInt(a.slice(i, i + 2), 16));
+      const pb = [1, 3, 5].map((i) => parseInt(b.slice(i, i + 2), 16));
+      const c = pa.map((v, i) => Math.round(v + (pb[i] - v) * p));
+      return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
+    };
+
+    const ECON = [
+      ["A", "Quantity demanded exceeds quantity supplied.", "A"],
+      ["B", "Producers offer more than they do at equilibrium.", "B"],
+      ["C", "Some buyers may trade above the official price.", "C"],
+      ["D", "The effect is the same as a price floor.", "D"],
+      ["E", "The market remains in equilibrium.", "E"],
+    ];
+    const MATH = [
+      ["A", "The three-year factor is 1.08³.", "MA"],
+      ["B", "The amount is 1,000 × 1.08 × 3.", "MB"],
+      ["C", "1.08³ is about 1.26.", "MC"],
+      ["D", "The rate is applied only once, at the end.", "MD"],
+      ["E", "After 3 years the amount is below 1,000.", "ME"],
+    ];
+
+    function checkSvg() {
+      return `<svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M3.2 8.2 L6.5 11.4 L12.8 4.6"/></svg>`;
+    }
+    function xSvg() {
+      return `<svg viewBox="0 0 16 16" fill="none" stroke="#EA6A2C" stroke-width="1.8" stroke-linecap="round"><path pathLength="1" d="M4 4 L12 12"/><path pathLength="1" d="M12 4 L4 12"/></svg>`;
+    }
+    function buildStatements(host, rows) {
+      host.innerHTML = rows
+        .map(
+          ([letter, text, id]) => `
+          <div class="stmt">
+            <div class="letter">${letter}</div>
+            <p>${text}</p>
+            <div class="box" id="box${id}">
+              <span class="box-fill" id="fill${id}"></span>
+              <span id="tick${id}">${checkSvg()}</span>
+            </div>
+          </div>`,
+        )
+        .join("");
+    }
+    buildStatements($("stmtsEcon"), ECON);
+    buildStatements($("stmtsMath"), MATH);
+
+    const cells = [];
+    function addCells(parent, from, to) {
+      for (let n = from; n <= to; n += 1) {
+        const el = document.createElement("div");
+        el.className = "cell";
+        el.id = `cell${n}`;
+        el.textContent = String(n);
+        if (n === 22) {
+          const pip = document.createElement("span");
+          pip.className = "pip";
+          pip.id = "flagPip";
+          pip.innerHTML = `<svg viewBox="0 0 10 10"><path d="M1.4 9V1.2h6.2L6.2 3.6l1.4 2.5H1.4" fill="#b3392a"/></svg>`;
+          el.appendChild(pip);
+        }
+        parent.appendChild(el);
+        cells[n] = el;
+      }
+    }
+    addCells($("palEcon"), 1, 10);
+    addCells($("palEng"), 11, 21);
+    addCells($("palMath"), 22, 34);
+
+    const sheetMarks = { 1: [1, 0, 0, 1, 0], 2: [0, 0, 1, 0, 0], 3: [1, 1, 0, 0, 0], 5: [0, 0, 0, 0, 0], 6: [0, 0, 0, 0, 0] };
+    const sheetHost = $("sheetRows");
+    for (let q = 1; q <= 6; q += 1) {
+      const row = document.createElement("div");
+      row.className = "srow" + (q === 4 ? " onrow" : "");
+      row.innerHTML = `<div class="qn">${q}</div>` + "ABCDE".split("").map((letter, i) => {
+        const id = `bub${q}${letter}`;
+        return `<div class="bub" id="${id}"><span>${letter}</span>${xSvg()}</div>`;
+      }).join("");
+      sheetHost.appendChild(row);
+      if (sheetMarks[q]) {
+        sheetMarks[q].forEach((on, i) => {
+          if (!on) return;
+          $(`bub${q}${"ABCDE"[i]}`).dataset.preset = "1";
+        });
+      }
+    }
+
+    "7 8 9 ÷|4 5 6 ×|1 2 3 −|0 . ^ =".split("|").join(" ").split(" ").forEach((key) => {
+      const el = document.createElement("i");
+      el.textContent = key;
+      if (key === "=") el.id = "keyEq";
+      if (key === "^") el.id = "keyPow";
+      $("calcKeys").appendChild(el);
+    });
+
+    const trend = $("trend");
+    const vals = [97, 109, 116, 124];
+    const pts = vals.map((v, i) => {
+      const x = 28 + i * (460 / 3);
+      const y = 18 + (1 - (v - 88) / 52) * 78;
+      return [x, y];
+    });
+    const line = pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
+    const area = `${line} L${pts[3][0].toFixed(1)} 108 L${pts[0][0].toFixed(1)} 108 Z`;
+    trend.innerHTML = `
+      <path d="${area}" fill="#b3392a" opacity="0" id="trendArea"/>
+      <path d="${line}" stroke="#b3392a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" id="trendLine"/>
+      ${pts.map((p, i) => `<circle cx="${p[0]}" cy="${p[1]}" r="4.5" fill="#fff" stroke="#b3392a" stroke-width="2" id="dot${i}"/>`).join("")}
+      ${pts.map((p, i) => `<text x="${p[0]}" y="118" text-anchor="middle" font-family="Film Sans, sans-serif" font-size="11" fill="#8a877c">${vals[i]}</text>`).join("")}
+    `;
+
+    function setDraw(id, p) {
+      const tick = $(`tick${id}`);
+      if (!tick) return;
+      tick.querySelectorAll("path").forEach((path) => {
+        path.style.strokeDasharray = "1";
+        path.style.strokeDashoffset = String(1 - clamp01(p));
+      });
+    }
+    function setFill(id, p) {
+      const fill = $(`fill${id}`);
+      if (!fill) return;
+      const e = easeOut(clamp01(p));
+      fill.style.opacity = String(e);
+      fill.style.transform = `scale(${mix(0.55, 1, e)})`;
+    }
+    function setBub(q, letter, p) {
+      const bub = $(`bub${q}${letter}`);
+      if (!bub) return;
+      const e = clamp01(p);
+      bub.querySelector("span").style.opacity = String(1 - e);
+      bub.querySelectorAll("path").forEach((path) => {
+        path.style.strokeDasharray = "1";
+        path.style.strokeDashoffset = String(1 - e);
+      });
+    }
+    function show(el, p, dy = 18) {
+      const e = easeOut(clamp01(p));
+      el.style.opacity = String(e);
+      el.style.transform = `translateY(${mix(dy, 0, e)}px)`;
+      el.style.visibility = e < 0.01 ? "hidden" : "visible";
+    }
+    function placeCursor(x, y, opacity, scale) {
+      const c = $("cursor");
+      c.style.opacity = String(opacity);
+      c.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+    }
+    function tip(el) {
+      const r = el.getBoundingClientRect();
+      return { x: r.left + r.width / 2 - 5, y: r.top + r.height / 2 - 2 };
+    }
+    function arc(t, a, b, from, to) {
+      const p = easeInOut(span(t, a, b));
+      return {
+        x: mix(from.x, to.x, p),
+        y: mix(from.y, to.y, p) - Math.sin(p * Math.PI) * 10,
+        p,
+      };
+    }
+    function press(t, at) {
+      const p = span(t, at, at + 0.34);
+      if (p <= 0 || p >= 1) return 1;
+      return p < 0.45 ? mix(1, 0.97, easeInOut(p / 0.45)) : mix(0.97, 1, easeInOut((p - 0.45) / 0.55));
+    }
+    function reveal(el, t, start, dur = 0.72, dy = 10) {
+      const e = easeInOut(span(t, start, start + dur));
+      el.style.opacity = String(e);
+      el.style.transform = `translateY(${mix(dy, 0, e)}px)`;
+      return e;
+    }
+
+    const econStmts = [...$("stmtsEcon").children];
+    const sheetRows = [...$("sheetRows").children];
+    const examHead = document.querySelector(".exam-head");
+    const qCard = document.querySelector(".exam-body aside .side-card");
+    const palCard = document.querySelectorAll(".exam-body aside .side-card")[1];
+    const econStem = $("paperEcon").querySelector(".stem");
+    const navRow = document.querySelector(".navrow");
+    const toolEls = [...document.querySelectorAll(".tool")];
+
+    const CAPTIONS = [
+      [5.5, 11.15, "Same length as the written exam. Timed, or on your own clock."],
+      [11.5, 21.2, "You mark True. The answer sheet mirrors every cross."],
+      [21.5, 25.3, "A calculator for the powers. A flag for anything to revisit."],
+      [25.6, 33.6, "A correct true earns the points. A false cross gives them back."],
+    ];
+
+    function apply(t) {
+      t = Math.max(0, t);
+      $("filmbar").style.transform = `scaleX(${clamp01(t / FILM)})`;
+
+      const titleIn = easeInOut(span(t, 0.25, 1.7));
+      const titleOut = easeInOut(span(t, 4.55, 5.75));
+      $("eyebrow").style.opacity = String(easeInOut(span(t, 0.2, 1.35)) * (1 - titleOut));
+      $("eyebrow").style.transform = `translateY(${mix(8, 0, easeInOut(span(t, 0.2, 1.35)))}px)`;
+      $("title").style.opacity = String(titleIn * (1 - titleOut));
+      $("title").style.transform = `translateY(${mix(16, 0, titleIn)}px)`;
+      $("titleRule").style.transform = `scaleX(${easeInOut(span(t, 1.7, 2.7)) * (1 - titleOut)})`;
+      $("subtitle").style.opacity = String(easeInOut(span(t, 2.35, 3.55)) * (1 - titleOut));
+      $("sceneTitle").style.opacity = String(1 - titleOut);
+
+      const chooseIn = easeInOut(span(t, 4.7, 5.9));
+      const chooseOut = easeInOut(span(t, 10.75, 11.95));
+      $("sceneChoose").style.opacity = String(chooseIn * (1 - chooseOut));
+      $("sceneChoose").style.transform = `translateY(${mix(16, 0, chooseIn) + mix(0, -10, chooseOut)}px)`;
+      $("sceneChoose").style.visibility = chooseIn < 0.01 ? "hidden" : "visible";
+
+      const cards = [$("cardDemo"), $("card1"), $("card2")];
+      const sel = easeInOut(span(t, 7.15, 8.05));
+      cards.forEach((card, i) => {
+        const p = easeInOut(span(t, 5.55 + i * 0.48, 6.55 + i * 0.48));
+        const lift = card === $("card1") ? -6 * sel : 0;
+        const dim = card === $("card1") ? 1 : mix(1, 0.8, sel);
+        card.style.opacity = String(p * dim);
+        card.style.transform = `translateY(${mix(12, 0, p) + lift}px)`;
+      });
+      $("card1").style.borderColor = lerpHex("#d8d6ce", "#161616", sel);
+
+      const panelP = easeInOut(span(t, 6.7, 7.55));
+      $("startPanel").style.opacity = String(panelP);
+      $("startPanel").style.transform = `translateY(${mix(12, 0, panelP)}px)`;
+      const sheetOn = easeInOut(span(t, CLICK.mode, CLICK.mode + 0.55));
+      $("modeSheet").style.background = lerpHex("#ffffff", "#161616", sheetOn);
+      $("modeSheet").style.color = lerpHex("#161616", "#f2f1ed", sheetOn);
+      $("modeSheet").style.borderColor = lerpHex("#d8d6ce", "#161616", sheetOn);
+      $("modeHint").textContent = sheetOn > 0.5 ? "Mark ✕ for True, like the optical sheet." : "";
+      $("modeHint").style.opacity = String(sheetOn);
+      $("timedBtn").style.transform = `scale(${press(t, CLICK.timed)})`;
+      const timedOn = easeInOut(span(t, CLICK.timed, CLICK.timed + 0.5));
+      $("timedBtn").style.background = lerpHex("#ffffff", "#161616", timedOn);
+      $("timedBtn").style.color = lerpHex("#161616", "#f2f1ed", timedOn);
+      $("timedBtn").style.borderColor = lerpHex("#d8d6ce", "#161616", timedOn);
+
+      const examIn = easeInOut(span(t, 10.9, 12.15));
+      const examOut = easeInOut(span(t, 25.15, 26.35));
+      $("sceneExam").style.opacity = String(examIn * (1 - examOut));
+      $("sceneExam").style.transform = `translateY(${mix(14, 0, examIn) + mix(0, -10, examOut)}px)`;
+      $("sceneExam").style.visibility = examIn < 0.01 ? "hidden" : "visible";
+
+      reveal(examHead, t, 11.35, 0.75, 8);
+      reveal(qCard, t, 11.55, 0.75, 10);
+      reveal(econStem, t, 11.75, 0.7, 8);
+      econStmts.forEach((stmt, i) => reveal(stmt, t, 11.9 + i * 0.16, 0.62, 8));
+      reveal(navRow, t, 12.7, 0.6, 8);
+      reveal(palCard, t, 11.7, 0.7, 10);
+      toolEls.forEach((tool, i) => reveal(tool, t, 12.15 + i * 0.08, 0.5, 6));
+      reveal($("sheet"), t, 12.05, 0.7, 10);
+      sheetRows.forEach((row, i) => reveal(row, t, 12.25 + i * 0.1, 0.55, 6));
+
+      const toMath = easeInOut(span(t, 21.55, 22.75));
+      $("paperEcon").style.opacity = String(1 - toMath);
+      $("paperMath").style.opacity = String(toMath);
+      $("badgeEcon").style.opacity = String(1 - toMath);
+      $("badgeMath").style.opacity = String(toMath);
+      $("countEcon").style.opacity = String(1 - toMath);
+      $("countMath").style.opacity = String(toMath);
+      $("numEcon").style.opacity = String(1 - toMath);
+      $("numMath").style.opacity = String(toMath);
+      $("subEcon").style.opacity = String(1 - toMath);
+      $("subMath").style.opacity = String(toMath);
+
+      const mark = (id, letter, at) => {
+        const p = easeInOut(span(t, at, at + 0.62));
+        setFill(id, span(t, at, at + 0.36));
+        setDraw(id, p);
+        setBub(4, letter, p);
+      };
+      mark("A", "A", CLICK.a);
+      mark("B", "B", CLICK.b);
+      mark("C", "C", CLICK.c);
+      setFill("MA", span(t, 23.85, 24.2));
+      setDraw("MA", easeInOut(span(t, 23.85, 24.55)));
+      setFill("MC", span(t, 24.6, 24.95));
+      setDraw("MC", easeInOut(span(t, 24.6, 25.3)));
+
+      const flagP = easeInOut(span(t, CLICK.flag, CLICK.flag + 0.5));
+      $("flagBtn").style.background = lerpHex("#ffffff", "#161616", flagP);
+      $("flagBtn").style.color = lerpHex("#161616", "#f2f1ed", flagP);
+      $("flagBtn").style.borderColor = lerpHex("#d8d6ce", "#161616", flagP);
+      $("flagBtn").style.transform = `scale(${press(t, CLICK.flag)})`;
+      $("flagPip").style.opacity = String(flagP);
+      $("flagPip").style.transform = `scale(${mix(0.6, 1, flagP)})`;
+
+      const secs = Math.max(0, 1 * 3600 + 46 * 60 + 20 - Math.floor(Math.max(0, t - 11.4) * 0.7));
+      const hh = Math.floor(secs / 3600);
+      const mm = Math.floor((secs % 3600) / 60);
+      const ss = secs % 60;
+      $("timer").textContent = `${hh}:${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+
+      cells.forEach((cell, n) => {
+        if (!cell) return;
+        const appear = easeInOut(span(t, 11.85 + (n - 1) * 0.028, 12.5 + (n - 1) * 0.028));
+        cell.style.opacity = String(appear);
+        cell.style.transform = `scale(${mix(0.88, 1, appear)})`;
+        let bg = "#ffffff";
+        let fg = "#8a877c";
+        let border = "#e0ddd4";
+        const answered = n <= 3 || (n === 4 && toMath > 0.65);
+        const current = (n === 4 && toMath < 0.65) || (n === 22 && toMath > 0.35);
+        if (answered) {
+          bg = "#f97316";
+          fg = "#ffffff";
+          border = "#f97316";
+        }
+        if (current) {
+          const k = n === 4 ? 1 - easeInOut(span(t, 21.55, 22.35)) : easeInOut(span(t, 21.75, 22.55));
+          bg = lerpHex(answered && n === 4 ? "#f97316" : "#ffffff", "#161616", n === 4 ? 1 - toMath : k);
+          fg = lerpHex(answered && n === 4 ? "#ffffff" : "#8a877c", "#f2f1ed", n === 4 ? 1 - toMath : k);
+          border = lerpHex(answered && n === 4 ? "#f97316" : "#e0ddd4", "#161616", n === 4 ? 1 - toMath : k);
+          if (n === 4 && toMath > 0.65) {
+            bg = "#f97316";
+            fg = "#ffffff";
+            border = "#f97316";
+          }
+        }
+        cell.style.background = bg;
+        cell.style.color = fg;
+        cell.style.borderColor = border;
+      });
+
+      document.querySelectorAll(".bub[data-preset]").forEach((bub) => {
+        const idx = sheetRows.indexOf(bub.parentElement);
+        const p = easeInOut(span(t, 12.4 + Math.max(0, idx) * 0.1, 13.05 + Math.max(0, idx) * 0.1));
+        bub.querySelector("span").style.opacity = String(1 - p);
+        bub.querySelectorAll("path").forEach((path) => {
+          path.style.strokeDasharray = "1";
+          path.style.strokeDashoffset = String(1 - p);
+        });
+      });
+
+      const sheetP = 1 - toMath;
+      $("sheet").style.opacity = String(Math.min(sheetP, easeInOut(span(t, 12.05, 12.75))));
+      $("sheet").style.transform = `translateY(${mix(10, 0, easeInOut(span(t, 12.05, 12.75))) + mix(0, 8, toMath)}px)`;
+      $("calc").style.opacity = String(toMath);
+      $("calc").style.transform = `translateY(${mix(12, 0, toMath)}px)`;
+      $("toolSheet").classList.toggle("on", toMath < 0.5);
+      $("toolCalc").classList.toggle("on", toMath >= 0.5);
+      const expr = "1.08³";
+      const typed = Math.round(easeInOut(span(t, 22.7, 23.9)) * expr.length);
+      $("calcExpr").textContent = expr.slice(0, typed);
+      const resP = easeInOut(span(t, 23.55, 24.35));
+      $("calcResult").style.opacity = String(resP);
+      $("calcResult").style.transform = `translateY(${mix(6, 0, resP)}px)`;
+      const pow = easeInOut(span(t, 23.15, 23.7));
+      $("keyPow").style.background = pow > 0.15 && pow < 0.9 ? "#161616" : "#f4f2ec";
+      $("keyPow").style.color = pow > 0.15 && pow < 0.9 ? "#f2f1ed" : "#161616";
+      const eq = easeInOut(span(t, 23.55, 24.05));
+      $("keyEq").style.background = eq > 0.15 && eq < 0.9 ? "#b3392a" : "#f4f2ec";
+      $("keyEq").style.color = eq > 0.15 && eq < 0.9 ? "#fff" : "#161616";
+
+      const scoreIn = easeInOut(span(t, 25.35, 26.6));
+      $("sceneScore").style.opacity = String(scoreIn);
+      $("sceneScore").style.transform = `translateY(${mix(16, 0, scoreIn)}px)`;
+      $("sceneScore").style.visibility = scoreIn < 0.01 ? "hidden" : "visible";
+      const countP = easeInOut(span(t, 26.35, 28.7));
+      $("scoreNum").textContent = (124 * countP).toFixed(1);
+      [["barEcon", 46 / 60, 27.7], ["barEng", 28 / 35, 28.15], ["barMath", 50 / 64, 28.6]].forEach(([id, pct, at]) => {
+        $(id).style.transform = `scaleX(${pct * easeInOut(span(t, at, at + 1.15))})`;
+      });
+
+      const rowTimes = [29.15, 29.6, 30.05, 30.5, 30.95];
+      const totalAt = (time) => {
+        if (time < rowTimes[0]) return 0;
+        if (time < rowTimes[1]) return mix(0, 3, easeInOut(span(time, rowTimes[0], rowTimes[0] + 0.45)));
+        if (time < rowTimes[2]) return mix(3, 1, easeInOut(span(time, rowTimes[1], rowTimes[1] + 0.45)));
+        return mix(1, 4, easeInOut(span(time, rowTimes[2], rowTimes[2] + 0.45)));
+      };
+      const total = totalAt(t);
+      $("taskTotal").textContent = "";
+      $("taskTotal").append(document.createTextNode(total.toFixed(1) + " "));
+      const small = document.createElement("small");
+      small.textContent = "/ 6";
+      $("taskTotal").append(small);
+      $("taskTotal").style.color = t >= rowTimes[1] && t < rowTimes[2] + 0.15 ? "#b3392a" : "#161616";
+      ["rowA", "rowB", "rowC", "rowD", "rowE"].forEach((id, i) => {
+        const p = easeInOut(span(t, rowTimes[i], rowTimes[i] + 0.55));
+        $(id).style.opacity = String(p);
+        $(id).style.transform = `translateY(${mix(8, 0, p)}px)`;
+      });
+      const exp = easeInOut(span(t, 31.35, 32.15));
+      $("explain").style.opacity = String(exp);
+      $("explain").style.transform = `translateY(${mix(8, 0, exp)}px)`;
+
+      const draw = easeInOut(span(t, 30.4, 32.15));
+      $("trendLine").style.strokeDasharray = "1";
+      $("trendLine").style.strokeDashoffset = String(1 - draw);
+      $("trendArea").style.opacity = String(0.12 * easeInOut(span(t, 31.4, 32.2)));
+      pts.forEach((_, i) => {
+        const p = easeInOut(span(t, 30.4 + i * 0.5, 30.9 + i * 0.5));
+        $(`dot${i}`).style.opacity = String(p);
+      });
+      trend.querySelectorAll("text").forEach((el, i) => {
+        el.style.opacity = String(easeInOut(span(t, 30.55 + i * 0.42, 31.15 + i * 0.42)));
+      });
+
+      const cap = CAPTIONS.find(([a, b]) => t >= a && t < b);
+      const capText = cap ? cap[2] : "";
+      const capFade = cap ? Math.min(easeInOut(span(t, cap[0], cap[0] + 0.45)), 1 - easeInOut(span(t, cap[1] - 0.4, cap[1]))) : 0;
+      ["capChoose", "capExam", "capScore"].forEach((id) => {
+        $(id).textContent = capText;
+        $(id).style.opacity = String(Math.max(0, capFade));
+      });
+
+      const modeTip = tip($("modeSheet"));
+      const timedTip = tip($("timedBtn"));
+      const boxA = tip($("boxA"));
+      const boxB = tip($("boxB"));
+      const boxC = tip($("boxC"));
+      const flagTip = tip($("flagBtn"));
+      let cursor = { x: -80, y: -80, o: 0, s: 1 };
+      const ride = (t0, t1, from, to, clickAt, fadeIn, fadeOut) => {
+        const moving = t < t1;
+        const pos = moving ? arc(t, t0, t1, from, to) : to;
+        const o = (fadeIn ? easeInOut(span(t, fadeIn[0], fadeIn[1])) : 1) * (fadeOut ? 1 - easeInOut(span(t, fadeOut[0], fadeOut[1])) : 1);
+        return { x: pos.x, y: pos.y, o, s: press(t, clickAt) };
+      };
+      if (t >= 6.7 && t < 9.0) {
+        cursor = ride(6.75, 7.6, { x: modeTip.x - 130, y: modeTip.y + 22 }, modeTip, CLICK.mode, [6.7, 7.2], null);
+      } else if (t >= 9.0 && t < 10.95) {
+        cursor = ride(9.0, 10.15, modeTip, timedTip, CLICK.timed, null, [10.7, 10.95]);
+      } else if (t >= 12.05 && t < 21.45) {
+        if (t < 14.15) cursor = ride(12.05, 12.75, { x: boxA.x - 110, y: boxA.y + 24 }, boxA, CLICK.a, [12.05, 12.45], null);
+        else if (t < 16.7) cursor = ride(14.15, 15.3, boxA, boxB, CLICK.b, null, null);
+        else if (t < 19.25) cursor = ride(16.7, 17.85, boxB, boxC, CLICK.c, null, null);
+        else cursor = ride(19.25, 20.4, boxC, flagTip, CLICK.flag, null, [21.1, 21.45]);
+      }
+      placeCursor(cursor.x, cursor.y, cursor.o, cursor.s);
+    }
+
+    let locked = false;
+    let origin = 0;
+    function tick(now) {
+      if (locked) return;
+      if (!origin) origin = now;
+      const elapsed = ((now - origin) / 1000) % (FILM + 0.4);
+      apply(Math.min(elapsed, FILM));
+      requestAnimationFrame(tick);
+    }
+    window.renderAt = (time) => {
+      locked = true;
+      apply(time);
+      return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    };
+    const params = new URLSearchParams(location.search);
+    if (params.has("scrub")) locked = true;
+    const startAt = params.has("t") ? parseFloat(params.get("t")) : 0;
+    document.fonts.ready.then(() => {
+      if (params.has("t") || params.has("scrub")) apply(startAt);
+      if (!params.has("scrub") && !params.has("t")) requestAnimationFrame(tick);
+    });
+  </script>
+</body>
+</html>
