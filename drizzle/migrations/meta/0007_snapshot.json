@@ -1,0 +1,14 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "id": "0007_startstudy_promo",
+  "prevId": "0006_partner_promo_account_wide",
+  "tables": {},
+  "schemas": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}

@@ -50,6 +50,13 @@
       "when": 1793298000000,
       "tag": "0006_partner_promo_account_wide",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1793380000000,
+      "tag": "0007_startstudy_promo",
+      "breakpoints": true
     }
   ]
 }

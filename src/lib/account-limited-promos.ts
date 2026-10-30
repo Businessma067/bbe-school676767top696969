@@ -1,10 +1,11 @@
 /**
- * Partner discounts: one code per account, forever, on every paid course.
- * Activating STUDYLINE or VSTUPUNI locks that account to that single partner code.
+ * Partner discounts: one code per account forever, on every paid course.
+ * Activating any of these locks that account to that single partner code.
  */
 export const ACCOUNT_LIMITED_DISCOUNT_CODES = {
   STUDYLINE: { discountPct: 5, name: "Studyline" },
   VSTUPUNI: { discountPct: 10, name: "Vstup Uni" },
+  STARTSTUDY: { discountPct: 10, name: "Start Study" },
 } as const;
 
 export type AccountLimitedDiscountCode = keyof typeof ACCOUNT_LIMITED_DISCOUNT_CODES;
