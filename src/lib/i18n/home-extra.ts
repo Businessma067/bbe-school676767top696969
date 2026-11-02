@@ -126,6 +126,13 @@ export const homeExtraDe: Record<string, string> = {
   "Focused platform prep": "Gezielte Plattform-Prep",
   "One investment": "Eine Investition",
 
+  // ---------- Book a call ----------
+  "Book a 30-minute call": "30-Minuten-Gespräch buchen",
+  "Pick a time that works for you. We can walk through BBE, WiSo, or Hybrid and help you choose a prep plan.":
+    "Wähl einen Termin, der dir passt. Wir gehen BBE, WiSo oder Hybrid durch und helfen dir bei der Prep-Plan-Wahl.",
+  "Book a call": "Gespräch buchen",
+  "Open the booking calendar": "Buchungskalender öffnen",
+
   // ---------- Footer ----------
   "Independent prep for WU Vienna BBE and WiSo entrance exams. Not affiliated with WU Vienna.":
     "Unabhängige Prep für die Aufnahmeprüfungen BBE und WiSo der WU Wien. Nicht mit der WU Wien verbunden.",
@@ -330,6 +337,13 @@ export const homeExtraUk: Record<string, string> = {
   "Private tutoring trap": "Пастка приватних репетиторів",
   "Focused platform prep": "Цілеспрямована підготовка на платформі",
   "One investment": "Одна інвестиція",
+
+  // ---------- Book a call ----------
+  "Book a 30-minute call": "Забронювати 30-хвилинну розмову",
+  "Pick a time that works for you. We can walk through BBE, WiSo, or Hybrid and help you choose a prep plan.":
+    "Обери зручний час. Пройдемося по BBE, WiSo або Hybrid і допоможемо обрати план підготовки.",
+  "Book a call": "Забронювати дзвінок",
+  "Open the booking calendar": "Відкрити календар бронювання",
 
   // ---------- Footer ----------
   "Independent prep for WU Vienna BBE and WiSo entrance exams. Not affiliated with WU Vienna.":

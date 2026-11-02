@@ -217,6 +217,11 @@ export function homepageNavItems(): NavItem[] {
     },
     productsItem("bbe"),
     newsItem,
+    {
+      label: "Book a call",
+      href: "#book",
+      isRoute: false,
+    },
   ];
 }
 
