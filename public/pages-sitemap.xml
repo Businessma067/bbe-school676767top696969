@@ -391,6 +391,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/news/bbe-vs-wiso-chooser"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/book-a-call</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bbe-school.com/demo-practice/economics</loc>
     <priority>0.7</priority>
   </url>

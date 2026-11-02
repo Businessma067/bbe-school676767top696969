@@ -15,7 +15,7 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { pinnedNote } from "@/data/acceptance-notes";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
-import { CalendlyInlineEmbed } from "@/components/CalendlyInlineEmbed";
+import { BookCallSection } from "@/components/BookCallSection";
 import { homepageNavItems } from "@/config/site-nav";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
@@ -404,22 +404,7 @@ export function Index() {
           reports={reports}
         />
 
-        <section id="book" className="bg-background px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-4xl">
-            <div className="text-center">
-              <h2 className="font-display text-2xl font-semibold text-foreground sm:text-3xl lg:text-4xl">
-                Book a 30-minute call
-              </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Pick a time that works for you. We can walk through BBE, WiSo, or Hybrid and help you
-                choose a prep plan.
-              </p>
-            </div>
-            <div className="mt-8 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
-              <CalendlyInlineEmbed />
-            </div>
-          </div>
-        </section>
+        <BookCallSection />
 
         <div id="faq">
           <FaqAccordion />

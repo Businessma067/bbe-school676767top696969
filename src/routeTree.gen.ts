@@ -23,6 +23,7 @@ import { Route as BbeExamPreparationRouteImport } from './routes/bbe-exam-prepar
 import { Route as BbeExamScoringRouteImport } from './routes/bbe-exam-scoring'
 import { Route as BbeMathematicsRouteImport } from './routes/bbe-mathematics'
 import { Route as BbeVsWisoRouteImport } from './routes/bbe-vs-wiso'
+import { Route as BookACallRouteImport } from './routes/book-a-call'
 import { Route as ConfirmEmailRouteImport } from './routes/confirm-email'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as DemoMockRouteImport } from './routes/demo-mock'
@@ -223,6 +224,11 @@ const BbeMathematicsRoute = BbeMathematicsRouteImport.update({
 const BbeVsWisoRoute = BbeVsWisoRouteImport.update({
   id: '/bbe-vs-wiso',
   path: '/bbe-vs-wiso',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookACallRoute = BookACallRouteImport.update({
+  id: '/book-a-call',
+  path: '/book-a-call',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConfirmEmailRoute = ConfirmEmailRouteImport.update({
@@ -922,6 +928,7 @@ export interface FileRoutesByFullPath {
   '/bbe-exam-scoring': typeof BbeExamScoringRoute
   '/bbe-mathematics': typeof BbeMathematicsRoute
   '/bbe-vs-wiso': typeof BbeVsWisoRoute
+  '/book-a-call': typeof BookACallRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-mock': typeof DemoMockRoute
@@ -1067,6 +1074,7 @@ export interface FileRoutesByTo {
   '/bbe-exam-scoring': typeof BbeExamScoringRoute
   '/bbe-mathematics': typeof BbeMathematicsRoute
   '/bbe-vs-wiso': typeof BbeVsWisoRoute
+  '/book-a-call': typeof BookACallRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-mock': typeof DemoMockRoute
@@ -1195,6 +1203,7 @@ export interface FileRoutesById {
   '/bbe-exam-scoring': typeof BbeExamScoringRoute
   '/bbe-mathematics': typeof BbeMathematicsRoute
   '/bbe-vs-wiso': typeof BbeVsWisoRoute
+  '/book-a-call': typeof BookACallRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-mock': typeof DemoMockRoute
@@ -1344,6 +1353,7 @@ export interface FileRouteTypes {
     | '/bbe-exam-scoring'
     | '/bbe-mathematics'
     | '/bbe-vs-wiso'
+    | '/book-a-call'
     | '/confirm-email'
     | '/dashboard'
     | '/demo-mock'
@@ -1489,6 +1499,7 @@ export interface FileRouteTypes {
     | '/bbe-exam-scoring'
     | '/bbe-mathematics'
     | '/bbe-vs-wiso'
+    | '/book-a-call'
     | '/confirm-email'
     | '/dashboard'
     | '/demo-mock'
@@ -1616,6 +1627,7 @@ export interface FileRouteTypes {
     | '/bbe-exam-scoring'
     | '/bbe-mathematics'
     | '/bbe-vs-wiso'
+    | '/book-a-call'
     | '/confirm-email'
     | '/dashboard'
     | '/demo-mock'
@@ -1764,6 +1776,7 @@ export interface RootRouteChildren {
   BbeExamScoringRoute: typeof BbeExamScoringRoute
   BbeMathematicsRoute: typeof BbeMathematicsRoute
   BbeVsWisoRoute: typeof BbeVsWisoRoute
+  BookACallRoute: typeof BookACallRoute
   ConfirmEmailRoute: typeof ConfirmEmailRoute
   DashboardRoute: typeof DashboardRoute
   DemoMockRoute: typeof DemoMockRoute
@@ -1903,6 +1916,13 @@ declare module '@tanstack/react-router' {
       path: '/bbe-vs-wiso'
       fullPath: '/bbe-vs-wiso'
       preLoaderRoute: typeof BbeVsWisoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book-a-call': {
+      id: '/book-a-call'
+      path: '/book-a-call'
+      fullPath: '/book-a-call'
+      preLoaderRoute: typeof BookACallRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/confirm-email': {
@@ -3254,6 +3274,7 @@ const rootRouteChildren: RootRouteChildren = {
   BbeExamScoringRoute: BbeExamScoringRoute,
   BbeMathematicsRoute: BbeMathematicsRoute,
   BbeVsWisoRoute: BbeVsWisoRoute,
+  BookACallRoute: BookACallRoute,
   ConfirmEmailRoute: ConfirmEmailRoute,
   DashboardRoute: DashboardRoute,
   DemoMockRoute: DemoMockRoute,

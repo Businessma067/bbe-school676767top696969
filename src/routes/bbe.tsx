@@ -18,6 +18,7 @@ import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
+import { BookCallSection } from "@/components/BookCallSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { pinnedNote } from "@/data/acceptance-notes";
@@ -221,6 +222,8 @@ export function BbeLandingPage() {
             ) : null
           }
         />
+
+        <BookCallSection description="Pick a time that works for you. We can walk through the BBE exam — Economics, Math, and English — and help you choose a prep plan." />
 
         {/* FAQ */}
         <div id="faq">

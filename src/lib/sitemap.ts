@@ -71,6 +71,7 @@ const PRIVATE_PATHS_EXACT = new Set<string>([
  *  behind a course purchase (flashcards, matching, tutor exam, mock exams,
  *  course subjects) is intentionally excluded. */
 export const ENGLISH_ONLY_INDEXABLE_PATHS = [
+  "/book-a-call",
   "/demo-practice/economics",
   "/demo-practice/math",
   "/demo-practice/english",

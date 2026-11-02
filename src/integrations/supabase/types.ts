@@ -14,6 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
+      account_partner_bindings: {
+        Row: {
+          bound_at: string
+          code: string
+          discount_pct: number
+          user_id: string
+        }
+        Insert: {
+          bound_at?: string
+          code: string
+          discount_pct: number
+          user_id: string
+        }
+        Update: {
+          bound_at?: string
+          code?: string
+          discount_pct?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
       activity_events: {
         Row: {
           created_at: string
@@ -799,6 +820,71 @@ export type Database = {
         }
         Relationships: []
       }
+      support_messages: {
+        Row: {
+          body: string
+          created_at: string
+          id: string
+          sender: string
+          thread_id: string
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          id?: string
+          sender: string
+          thread_id: string
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          id?: string
+          sender?: string
+          thread_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "support_messages_thread_id_fkey"
+            columns: ["thread_id"]
+            isOneToOne: false
+            referencedRelation: "support_threads"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      support_threads: {
+        Row: {
+          admin_unread: boolean
+          created_at: string
+          id: string
+          updated_at: string
+          user_email: string | null
+          user_id: string | null
+          user_unread: boolean
+          visitor_key: string
+        }
+        Insert: {
+          admin_unread?: boolean
+          created_at?: string
+          id?: string
+          updated_at?: string
+          user_email?: string | null
+          user_id?: string | null
+          user_unread?: boolean
+          visitor_key: string
+        }
+        Update: {
+          admin_unread?: boolean
+          created_at?: string
+          id?: string
+          updated_at?: string
+          user_email?: string | null
+          user_id?: string | null
+          user_unread?: boolean
+          visitor_key?: string
+        }
+        Relationships: []
+      }
       task_attempts: {
         Row: {
           attempt_number: number | null
@@ -995,6 +1081,46 @@ export type Database = {
           similarity: number
         }[]
       }
+      support_admin_inbox: {
+        Args: never
+        Returns: {
+          admin_unread: boolean
+          id: string
+          last_body: string
+          last_sender: string
+          updated_at: string
+          user_email: string
+        }[]
+      }
+      support_admin_reply: {
+        Args: { p_body: string; p_thread: string }
+        Returns: undefined
+      }
+      support_admin_thread: {
+        Args: { p_thread: string }
+        Returns: {
+          body: string
+          created_at: string
+          id: string
+          sender: string
+        }[]
+      }
+      support_admin_unread: { Args: never; Returns: number }
+      support_pull: {
+        Args: { p_key: string }
+        Returns: {
+          body: string
+          created_at: string
+          id: string
+          sender: string
+        }[]
+      }
+      support_send: {
+        Args: { p_body: string; p_key: string }
+        Returns: undefined
+      }
+      support_thread_for: { Args: { p_key: string }; Returns: string }
+      support_unread: { Args: { p_key: string }; Returns: boolean }
     }
     Enums: {
       activity_event_type:
