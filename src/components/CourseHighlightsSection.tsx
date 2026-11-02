@@ -47,7 +47,7 @@ export function CourseHighlightsSection({
         {track === "wiso" ? "What you get in the WiSo course" : "What you get in the BBE course"}
       </h2>
 
-      <ul className="-mx-1 flex items-center gap-x-4 overflow-x-auto px-1 text-left text-[13px] font-medium text-foreground sm:justify-center sm:gap-x-5 sm:text-sm lg:flex-wrap lg:justify-center lg:overflow-visible">
+      <ul className="-mx-1 flex flex-nowrap items-center justify-start gap-x-4 overflow-x-auto px-1 text-left text-[12px] font-medium text-foreground sm:justify-center sm:gap-x-5 sm:text-[13px]">
         {bullets.map((bullet) => (
           <li key={bullet} className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap">
             <span
