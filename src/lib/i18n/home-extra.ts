@@ -132,6 +132,12 @@ export const homeExtraDe: Record<string, string> = {
     "Wähl einen Termin, der dir passt. Wir gehen BBE, WiSo oder Hybrid durch und helfen dir bei der Prep-Plan-Wahl.",
   "Book a call": "Gespräch buchen",
   "Open the booking calendar": "Buchungskalender öffnen",
+  "Pick a time that works for you. We can walk through the BBE exam — Economics, Math, and English — and help you choose a prep plan.":
+    "Wähl einen Termin, der dir passt. Wir gehen die BBE-Prüfung durch – Economics, Mathe und Englisch – und helfen dir bei der Prep-Plan-Wahl.",
+  "Pick a time that works for you. We can walk through the WiSo Aufnahmeprüfung and help you choose a prep plan.":
+    "Wähl einen Termin, der dir passt. Wir gehen die WiSo-Aufnahmeprüfung durch und helfen dir bei der Prep-Plan-Wahl.",
+  "Pick a time that works for you. In 30 minutes we can walk through BBE, WiSo, or Hybrid, answer your questions about the WU Vienna entrance exam, and help you choose a prep plan.":
+    "Wähl einen Termin, der dir passt. In 30 Minuten gehen wir BBE, WiSo oder Hybrid durch, beantworten deine Fragen zur Aufnahmeprüfung der WU Wien und helfen dir bei der Prep-Plan-Wahl.",
 
   // ---------- Footer ----------
   "Independent prep for WU Vienna BBE and WiSo entrance exams. Not affiliated with WU Vienna.":
@@ -344,6 +350,12 @@ export const homeExtraUk: Record<string, string> = {
     "Обери зручний час. Пройдемося по BBE, WiSo або Hybrid і допоможемо обрати план підготовки.",
   "Book a call": "Забронювати дзвінок",
   "Open the booking calendar": "Відкрити календар бронювання",
+  "Pick a time that works for you. We can walk through the BBE exam — Economics, Math, and English — and help you choose a prep plan.":
+    "Обери зручний час. Пройдемося по іспиту BBE — економіка, математика й англійська — і допоможемо обрати план підготовки.",
+  "Pick a time that works for you. We can walk through the WiSo Aufnahmeprüfung and help you choose a prep plan.":
+    "Обери зручний час. Пройдемося по вступному іспиту WiSo і допоможемо обрати план підготовки.",
+  "Pick a time that works for you. In 30 minutes we can walk through BBE, WiSo, or Hybrid, answer your questions about the WU Vienna entrance exam, and help you choose a prep plan.":
+    "Обери зручний час. За 30 хвилин пройдемося по BBE, WiSo або Hybrid, відповімо на питання про вступний іспит WU Vienna і допоможемо обрати план підготовки.",
 
   // ---------- Footer ----------
   "Independent prep for WU Vienna BBE and WiSo entrance exams. Not affiliated with WU Vienna.":
