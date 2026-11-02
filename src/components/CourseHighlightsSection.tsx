@@ -11,6 +11,7 @@ import {
   type CourseHighlightTrack,
 } from "@/config/course-highlights";
 import { cleanExplanation } from "@/lib/clean-explanation";
+import { fullExplanation } from "@/components/how-it-works/course-motion";
 import {
   practiceExplanationToggleClass,
   practiceSubmitButtonClass,
@@ -296,7 +297,7 @@ function TryItQuestionBox({
           )}
           aria-hidden={!showExpl}
         >
-          <div className="practice-scroll h-full overflow-y-auto p-4 sm:p-5">
+          <div className="practice-scroll h-full overflow-y-auto p-3 sm:p-3.5">
             <ExplanationPanel task={task} marked={marked} chrome={chrome} accent={accent} />
           </div>
         </div>
@@ -305,38 +306,18 @@ function TryItQuestionBox({
   );
 }
 
-/** Short, clean bank text for the marketing try-it sheet (no raw markdown chrome). */
-function conciseTryItExplanation(raw: string, maxChars = 180): string {
-  const cleaned = cleanExplanation(raw)
-    .replace(/^\*\*[A-E]\.\*\*\s*(?:→|->)?\s*/i, "")
+/**
+ * Complete bank explanation for the try-it sheet: keep calculations and steps,
+ * strip letter/verdict chrome and raw ** markers, collapse empty vertical space.
+ */
+function cleanCompleteExplanation(raw: string, math: boolean): string {
+  const base = math ? fullExplanation(raw) : cleanExplanation(raw);
+  return base
+    .replace(/^\*\*[A-E]\.\*\*\s*(?:→|->)?\s*(?:True|False|Richtig|Falsch)?\s*/i, "")
     .replace(/^[A-E]\.\s*(?:→|->)\s*(?:True|False|Richtig|Falsch)\s*/i, "")
     .replace(/\*\*/g, "")
-    .replace(/\$\$[\s\S]*?\$\$/g, " ")
-    .replace(/\$([^$]+)\$/g, "$1")
-    .replace(/[ \t]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
     .trim();
-  const paragraphs = cleaned
-    .split(/\n\s*\n/)
-    .map((p) => p.trim())
-    .filter(Boolean)
-    .filter((paragraph, index) => {
-      if (/^the statement is (?:true|false)\b/i.test(paragraph) && index > 0) return false;
-      return true;
-    });
-  if (paragraphs.length === 0) return cleaned;
-
-  // One tight sentence/paragraph for the marketing sheet.
-  let text = paragraphs[0] ?? cleaned;
-  const sentenceEnd = text.search(/(?<=\S[.!?])\s+(?=[A-ZÄÖÜ])/);
-  if (sentenceEnd > 40 && sentenceEnd < maxChars + 40) {
-    text = text.slice(0, sentenceEnd + 1).trim();
-  }
-  if (text.length > maxChars) {
-    const cut = text.slice(0, maxChars);
-    const lastStop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf(", "), cut.lastIndexOf(" "));
-    text = `${(lastStop > 60 ? cut.slice(0, lastStop) : cut).trim()}…`;
-  }
-  return text;
 }
 
 function ExplanationPanel({
@@ -355,27 +336,29 @@ function ExplanationPanel({
   };
   accent: "bbe" | "wiso";
 }) {
+  const overview = task.overview ? cleanCompleteExplanation(task.overview, !!task.math) : "";
+
   return (
-    <div>
+    <div className="text-[12.5px] leading-snug">
       <p
         className={cn(
-          "mb-4 text-[11px] font-bold uppercase tracking-widest",
+          "mb-2.5 text-[10px] font-bold uppercase tracking-widest",
           accent === "wiso" ? "text-indigo-700 dark:text-indigo-300" : "text-primary",
         )}
       >
         {chrome.sheetTitle} · Task 1
       </p>
-      <section className="mb-4 overflow-x-auto border-b border-border/60 pb-3">
-        <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
+      <section className="mb-3 overflow-x-auto border-b border-border/60 pb-2.5">
+        <p className="mb-1.5 text-[11px] font-bold uppercase tracking-widest text-foreground">
           {chrome.answerKey}
         </p>
-        <table className="w-full min-w-[14rem] border-collapse border border-foreground/20 text-center text-[13px] shadow-sm">
+        <table className="w-full min-w-[14rem] border-collapse border border-foreground/20 text-center text-[12px] shadow-sm">
           <thead>
             <tr className="bg-foreground text-background">
               {task.answerKey.map((_, i) => (
                 <th
                   key={i}
-                  className="border-b border-foreground/20 px-2 py-2 text-[11px] font-bold uppercase tracking-wide"
+                  className="border-b border-foreground/20 px-1.5 py-1.5 text-[10px] font-bold uppercase tracking-wide"
                 >
                   {LETTERS[i]}
                 </th>
@@ -387,7 +370,7 @@ function ExplanationPanel({
               {task.answerKey.map((isTrue, i) => (
                 <td
                   key={i}
-                  className="px-2 py-2.5 text-[12px] font-bold uppercase tracking-widest text-foreground"
+                  className="px-1.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-foreground"
                 >
                   {isTrue ? chrome.trueWord : chrome.falseWord}
                 </td>
@@ -397,25 +380,31 @@ function ExplanationPanel({
         </table>
       </section>
 
-      <div className="space-y-3">
+      {overview ? (
+        <div className="mb-2.5 text-[12.5px] leading-snug text-foreground/90 [&_.katex-display]:my-1.5">
+          {task.math ? <FlashcardMath text={overview} /> : <ExplanationProse text={overview} className="text-[12.5px] leading-snug" />}
+        </div>
+      ) : null}
+
+      <div className="space-y-2">
         {task.explanations.map((raw, i) => {
           const letter = LETTERS[i] ?? String(i + 1);
           const verdict = task.answerKey[i] ? chrome.trueWord : chrome.falseWord;
-          const body = conciseTryItExplanation(raw);
+          const body = cleanCompleteExplanation(raw, !!task.math);
           const userMarked = marked[i] === true;
           const isCorrect = userMarked === task.answerKey[i];
           return (
-            <div key={letter} className="rounded-xl border border-border bg-background p-3">
-              <div className="mb-2 flex flex-wrap items-center gap-2">
-                <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+            <div key={letter} className="rounded-lg border border-border bg-background px-2.5 py-2">
+              <div className="mb-1.5 flex flex-wrap items-center gap-1.5">
+                <span className="rounded-md bg-secondary px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                   {letter}
                 </span>
-                <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
+                <span className="rounded-md border border-border bg-secondary px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
                   {verdict}
                 </span>
                 <span
                   className={cn(
-                    "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white",
+                    "inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white",
                     isCorrect ? "bg-emerald-500" : "bg-destructive",
                   )}
                 >
@@ -423,7 +412,13 @@ function ExplanationPanel({
                   {isCorrect ? "Correct" : "Incorrect"}
                 </span>
               </div>
-              <ExplanationProse text={body} className="text-[13px]" />
+              {task.math ? (
+                <div className="text-[12.5px] leading-snug text-foreground/90 [&_.katex-display]:my-1.5 [&_p]:my-1">
+                  <FlashcardMath text={body} />
+                </div>
+              ) : (
+                <ExplanationProse text={body} className="text-[12.5px] leading-snug [&_p]:my-1" />
+              )}
             </div>
           );
         })}

@@ -34,24 +34,20 @@ function formatCount(n: number): string {
 export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
   if (track === "wiso") {
     const q = formatCount(WISO_COURSE_COUNTS.practiceQuestions);
-    const cards = formatCount(WISO_COURSE_COUNTS.studyToolCards);
     return [
       `${q} practice questions`,
       "6+ WiSo-style exams",
       "Economics, Math & German theory",
       "Custom mock exam builder",
-      `${cards} Flashcards, TutorExam & matching`,
     ];
   }
 
   const q = formatCount(BBE_COURSE_COUNTS.practiceQuestions);
-  const cards = formatCount(BBE_COURSE_COUNTS.studyToolCards);
   return [
     `${q} practice questions`,
     "6+ BBE-style exams",
     "Economics, Math & English theory",
     "Custom mock exam builder",
-    `${cards} Flashcards, TutorExam & matching`,
   ];
 }
 
