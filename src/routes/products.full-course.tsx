@@ -37,11 +37,13 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
+import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SalesWarmup } from "@/components/SalesWarmup";
 import { CourseOfferPrice } from "@/components/CourseOfferPrice";
 import { consumeResumeCheckout } from "@/lib/signup-complete";
 import { useAppliedPromo } from "@/hooks/use-applied-promo";
 import { discountedPriceEur } from "@/lib/applied-promo";
+import { BBE_COURSE_COUNTS } from "@/config/course-highlights";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
@@ -69,13 +71,14 @@ const ROULETTE_SLIDES: RouletteSlide[] = [
     label: "Full Course",
     kind: "image",
     src: FULL_COURSE_IMAGE,
-    alt: "Full BBE Course: 3300+ questions, 5 mock exams, Economics, Mathematics, and English.",
+    alt: `Full BBE Course: ${BBE_COURSE_COUNTS.practiceQuestions.toLocaleString("en-US")} questions, 6+ mock exams, Economics, Mathematics, and English.`,
     aspect: "4 / 3",
   },
   ...GUIDE_SLIDES,
 ];
 
 const FULL_COURSE_PRICE = 411;
+const BBE_QUESTIONS_LABEL = BBE_COURSE_COUNTS.practiceQuestions.toLocaleString("en-US");
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
@@ -87,15 +90,13 @@ export const Route = createFileRoute("/products/full-course")({
       { title: "Full BBE Course | Full Access | BBE School" },
       {
         name: "description",
-        content:
-          "The complete WU BBE entrance exam preparation system: 3300+ questions, 5 mock exams, explanations, and support.",
+        content: `The complete WU BBE entrance exam preparation system: ${BBE_QUESTIONS_LABEL} questions, 6+ mock exams, explanations, and support.`,
       },
       { property: "og:title", content: "Full BBE Course | Full Access | BBE School" },
       { property: "og:type", content: "website" },
       {
         property: "og:description",
-        content:
-          "3300+ questions, 5 mock exams, explanations, and direct support for the real WU BBE exam.",
+        content: `${BBE_QUESTIONS_LABEL} questions, 6+ mock exams, explanations, and direct support for the real WU BBE exam.`,
       },
       { name: "twitter:card", content: "summary_large_image" },
       ...socialImageMetaForPath("/products/full-course"),
@@ -108,8 +109,8 @@ const ORANGE = "#C2643A";
 
 const fullStats = [
   { value: "3", label: "Subjects" },
-  { value: "3300+", label: "Questions" },
-  { value: "5", label: "Mock Exams" },
+  { value: BBE_QUESTIONS_LABEL, label: "Questions" },
+  { value: "6+", label: "Mock Exams" },
 ];
 
 const features = [
@@ -121,7 +122,7 @@ const features = [
   },
   {
     icon: ListChecks,
-    title: "3300+ Questions",
+    title: `${BBE_QUESTIONS_LABEL} Questions`,
     text: "A constantly growing question bank across every chapter.",
     accent: false,
   },
@@ -139,7 +140,7 @@ const features = [
   },
   {
     icon: ClipboardCheck,
-    title: "5 Mock Exams",
+    title: "6+ Mock Exams",
     text: "Full-length simulations under real exam conditions and timing.",
     accent: true,
   },
@@ -162,8 +163,7 @@ const failureReasons = [
 const fullCourseFaqs = [
   {
     question: "What is included in the Full Course?",
-    answer:
-      "You get 3300+ questions across all subjects, explanations under each statement, 5 mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.",
+    answer: `You get ${BBE_QUESTIONS_LABEL} questions across all subjects, explanations under each statement, 6+ mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.`,
   },
   {
     question: "Is this a subscription or a one-time payment?",
@@ -218,7 +218,7 @@ const fullCourseFaqs = [
   {
     question: "Are there full-length mock exams included?",
     answer:
-      "Yes. You get 5 complete 120-minute mock exams that mix all three subjects under the same kind of time pressure as the real hall.",
+      "Yes. You get 6+ complete 120-minute mock exams that mix all three subjects under the same kind of time pressure as the real hall.",
   },
   {
     question: "What if I get completely stuck on a complex task?",
@@ -383,13 +383,17 @@ export function FullCourseProduct() {
             ) : null}
           </div>
 
-          {/* Section 1 — Feature grid */}
-          <section className="mt-12">
+          <CourseHighlightsSection track="bbe" variant="product" />
+
+          {/* Extra inclusions still worth listing beside the highlight strip */}
+          <section className="mt-8">
             <h2 className="mb-6 text-center font-display text-2xl font-bold tracking-tight text-foreground">
-              Everything included
+              Also included
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              {features.map((f) => (
+              {features
+                .filter((f) => f.icon === Headphones || f.icon === Gem || f.icon === Sparkles)
+                .map((f) => (
                 <div
                   key={f.title}
                   className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"

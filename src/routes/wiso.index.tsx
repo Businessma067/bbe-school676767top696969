@@ -5,6 +5,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
+import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
@@ -156,6 +157,8 @@ export function WisoLandingPage() {
             </div>
           </div>
         </section>
+
+        <CourseHighlightsSection track="wiso" variant="landing" />
 
         <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
           <HowItWorksSection track="wiso" />

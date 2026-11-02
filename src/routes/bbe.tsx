@@ -15,6 +15,7 @@ import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
+import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -132,6 +133,8 @@ export function BbeLandingPage() {
             </div>
           </div>
         </section>
+
+        <CourseHighlightsSection track="bbe" variant="landing" />
 
         <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
           <HowItWorksSection />

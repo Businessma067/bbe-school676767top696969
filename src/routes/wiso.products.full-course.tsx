@@ -37,10 +37,12 @@ import { consumeResumeCheckout } from "@/lib/signup-complete";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
+import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SalesWarmup } from "@/components/SalesWarmup";
 import { CourseOfferPrice } from "@/components/CourseOfferPrice";
 import { useAppliedPromo } from "@/hooks/use-applied-promo";
 import { discountedPriceEur } from "@/lib/applied-promo";
+import { WISO_COURSE_COUNTS } from "@/config/course-highlights";
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
 const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
@@ -105,10 +107,12 @@ export const Route = createFileRoute("/wiso/products/full-course")({
   component: WisoFullCourseProduct,
 });
 
+const WISO_QUESTIONS_LABEL = WISO_COURSE_COUNTS.practiceQuestions.toLocaleString("en-US");
+
 const fullStats = [
   { value: "3", label: "Pillars" },
-  { value: "2,703", label: "Places", sub: "WiSo intake" },
-  { value: "Mocks", label: "On /wiso URLs", sub: "Track-native" },
+  { value: WISO_QUESTIONS_LABEL, label: "Questions" },
+  { value: "6+", label: "WiSo exams" },
 ];
 
 const features = [
@@ -120,7 +124,7 @@ const features = [
   },
   {
     icon: ListChecks,
-    title: "Exam-format practice",
+    title: `${WISO_QUESTIONS_LABEL} practice questions`,
     text: "Statement-style cases with Teilpunktesystem scoring, not BBE English drills.",
     accent: false,
   },
@@ -138,7 +142,7 @@ const features = [
   },
   {
     icon: ClipboardCheck,
-    title: "Mocks on /wiso URLs",
+    title: "6+ WiSo-style exams",
     text: "Timed mocks and the builder stay on the WiSo track so you do not land in BBE by accident.",
     accent: true,
   },
@@ -286,11 +290,6 @@ export function WisoFullCourseProduct() {
                 <div key={s.label} className="flex flex-col items-center">
                   <span className="font-display text-2xl font-bold text-foreground">{s.value}</span>
                   <span className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</span>
-                  {s.sub ? (
-                    <span className="mt-0.5 text-[10px] font-medium text-muted-foreground/60">
-                      {s.sub}
-                    </span>
-                  ) : null}
                 </div>
               ))}
             </div>
@@ -327,12 +326,16 @@ export function WisoFullCourseProduct() {
             ) : null}
           </div>
 
-          <section className="mt-12">
+          <CourseHighlightsSection track="wiso" variant="product" />
+
+          <section className="mt-8">
             <h2 className="mb-6 text-center font-display text-2xl font-bold tracking-tight text-foreground">
-              Everything included
+              Also included
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              {features.map((f) => (
+              {features
+                .filter((f) => f.icon === Languages || f.icon === Gem || f.icon === Sparkles)
+                .map((f) => (
                 <div
                   key={f.title}
                   className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
