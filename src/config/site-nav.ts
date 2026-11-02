@@ -219,8 +219,9 @@ export function homepageNavItems(): NavItem[] {
     newsItem,
     {
       label: "Book a call",
-      href: "#book",
-      isRoute: false,
+      href: "/book-a-call",
+      isRoute: true,
+      activeExact: ["/book-a-call"],
     },
   ];
 }

@@ -11,6 +11,7 @@ import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
+import { BookCallSection } from "@/components/BookCallSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { pinnedNote } from "@/data/acceptance-notes";
@@ -244,6 +245,8 @@ export function WisoLandingPage() {
           accent="wiso"
           archiveHash="wiso"
         />
+
+        <BookCallSection description="Pick a time that works for you. We can walk through the WiSo Aufnahmeprüfung and help you choose a prep plan." />
 
         <div id="faq">
           <WisoFaqAccordion />
