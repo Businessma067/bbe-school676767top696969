@@ -47,12 +47,12 @@ export function CourseHighlightsSection({
         {track === "wiso" ? "What you get in the WiSo course" : "What you get in the BBE course"}
       </h2>
 
-      <ul className="-mx-1 flex flex-nowrap items-center justify-start gap-x-4 overflow-x-auto px-1 text-left text-[12px] font-medium text-foreground sm:justify-center sm:gap-x-5 sm:text-[13px]">
+      <ul className="-mx-1 flex flex-nowrap items-center justify-start gap-x-5 overflow-x-auto px-1 text-left text-[15px] font-semibold leading-snug text-foreground sm:justify-center sm:gap-x-6 sm:text-base">
         {bullets.map((bullet) => (
-          <li key={bullet} className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap">
+          <li key={bullet} className="inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap">
             <span
               className={cn(
-                "h-1.5 w-1.5 shrink-0 rounded-full",
+                "h-2 w-2 shrink-0 rounded-full",
                 accent === "wiso" ? "bg-indigo-700" : "bg-[var(--exam-red)]",
               )}
               aria-hidden
@@ -305,6 +305,40 @@ function TryItQuestionBox({
   );
 }
 
+/** Short, clean bank text for the marketing try-it sheet (no raw markdown chrome). */
+function conciseTryItExplanation(raw: string, maxChars = 180): string {
+  const cleaned = cleanExplanation(raw)
+    .replace(/^\*\*[A-E]\.\*\*\s*(?:→|->)?\s*/i, "")
+    .replace(/^[A-E]\.\s*(?:→|->)\s*(?:True|False|Richtig|Falsch)\s*/i, "")
+    .replace(/\*\*/g, "")
+    .replace(/\$\$[\s\S]*?\$\$/g, " ")
+    .replace(/\$([^$]+)\$/g, "$1")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
+  const paragraphs = cleaned
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .filter((paragraph, index) => {
+      if (/^the statement is (?:true|false)\b/i.test(paragraph) && index > 0) return false;
+      return true;
+    });
+  if (paragraphs.length === 0) return cleaned;
+
+  // One tight sentence/paragraph for the marketing sheet.
+  let text = paragraphs[0] ?? cleaned;
+  const sentenceEnd = text.search(/(?<=\S[.!?])\s+(?=[A-ZÄÖÜ])/);
+  if (sentenceEnd > 40 && sentenceEnd < maxChars + 40) {
+    text = text.slice(0, sentenceEnd + 1).trim();
+  }
+  if (text.length > maxChars) {
+    const cut = text.slice(0, maxChars);
+    const lastStop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf(", "), cut.lastIndexOf(" "));
+    text = `${(lastStop > 60 ? cut.slice(0, lastStop) : cut).trim()}…`;
+  }
+  return text;
+}
+
 function ExplanationPanel({
   task,
   marked,
@@ -363,17 +397,11 @@ function ExplanationPanel({
         </table>
       </section>
 
-      {task.overview ? (
-        <div className="mb-4 text-[13px] leading-relaxed text-foreground/90">
-          <FlashcardMath text={task.overview} />
-        </div>
-      ) : null}
-
       <div className="space-y-3">
         {task.explanations.map((raw, i) => {
           const letter = LETTERS[i] ?? String(i + 1);
           const verdict = task.answerKey[i] ? chrome.trueWord : chrome.falseWord;
-          const body = task.math ? raw : cleanExplanation(raw);
+          const body = conciseTryItExplanation(raw);
           const userMarked = marked[i] === true;
           const isCorrect = userMarked === task.answerKey[i];
           return (
@@ -395,13 +423,7 @@ function ExplanationPanel({
                   {isCorrect ? "Correct" : "Incorrect"}
                 </span>
               </div>
-              {task.math ? (
-                <div className="text-[13px] leading-relaxed text-foreground/90">
-                  <FlashcardMath text={`**${letter}.** → ${verdict}\n\n${body}`} />
-                </div>
-              ) : (
-                <ExplanationProse text={`**${letter}.** → ${verdict}\n\n${body}`} className="text-[13px]" />
-              )}
+              <ExplanationProse text={body} className="text-[13px]" />
             </div>
           );
         })}

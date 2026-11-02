@@ -45,11 +45,8 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
   const switchTo = (next: ExamTrack) => {
     const here = stripLocalePrefix(pathname);
     const target = pathForTrack(pathname, next, visitor);
-    if (visitor) {
-      if (here === target || here.startsWith(`${target}/`)) return;
-    } else if (next === track && !onHybrid) {
-      return;
-    }
+    // Stay put only when already on that track's main landing (or dashboard/account for paid).
+    if (here === target) return;
     storeExamTrack(next);
     setTrack(next);
     const lang = trackUiLang(next);

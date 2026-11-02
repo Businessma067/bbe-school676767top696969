@@ -122,7 +122,7 @@ export function WisoLandingPage() {
                 >
                   <span>WiSo Demo Practice</span>
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">
-                    Aufgaben zum Einstieg
+                    100+ questions
                   </span>
                 </LocalizedLink>
                 <LocalizedLink

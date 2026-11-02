@@ -95,7 +95,7 @@ export function BbeLandingPage() {
                 >
                   <span>Demo course</span>
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">
-                    50+ tasks for start
+                    100+ questions
                   </span>
                 </LocalizedLink>
                 <LocalizedLink

@@ -105,6 +105,7 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Or try the demo course without registering →":
       "Oder den Demo-Kurs ohne Registrierung ausprobieren →",
     "50+ tasks for start": "50+ Aufgaben zum Start",
+    "100+ questions": "100+ Fragen",
     "Explore Courses": "Kurse entdecken",
     "See all BBE School products": "Alle BBE-School-Produkte ansehen",
     "Beauty of stress and time management": "Stress- und Zeitmanagement meistern",
@@ -335,6 +336,7 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "Or try the demo course without registering →":
       "Або спробуй демо-курс без реєстрації →",
     "50+ tasks for start": "50+ завдань для старту",
+    "100+ questions": "100+ питань",
     "Explore Courses": "Переглянути курси",
     "See all BBE School products": "Усі продукти BBE School",
     "Beauty of stress and time management": "Керування стресом і часом",

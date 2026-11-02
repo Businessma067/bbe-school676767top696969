@@ -174,15 +174,14 @@ export function visitorDemoPath(track: ExamTrack): string {
 
 /**
  * Header BBE / WiSo toggle.
- * Visitors open that track's demo immediately. Paid accounts stay on the
- * dashboard or account page, and otherwise open the track home.
+ * Always opens that track's main landing (`/bbe` or `/wiso`). Paid accounts
+ * stay on the dashboard or account page when switching from those screens.
  */
 export function pathForTrack(
   pathname: string,
   target: ExamTrack,
-  visitor = false,
+  _visitor = false,
 ): string {
-  if (visitor) return visitorDemoPath(target);
   const path = stripLocalePrefix(pathname);
   if (path === "/dashboard" || path.startsWith("/dashboard/")) {
     return "/dashboard";
