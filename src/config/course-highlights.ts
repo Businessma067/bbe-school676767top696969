@@ -1,7 +1,10 @@
 /**
  * Marketing totals for BBE / WiSo course highlight sections.
- * Counts are derived from the Full Course practice banks and flashcard decks
- * (unique exam-format cases and flashcard cards that also power matching + tutor exam).
+ * Counts are derived from the Full Course practice banks and theory readers.
+ *
+ * Preparation-material page totals = Economics + Math theory only, as Word-page
+ * equivalents: economics uses the published textbook PDF page count; math uses
+ * theory-markdown word count ÷ 300 (calibrated against the economics PDFs).
  */
 
 export type CourseHighlightTrack = "bbe" | "wiso";
@@ -15,6 +18,11 @@ export const BBE_COURSE_COUNTS = {
   styleExams: 6,
   /** Flashcard cards across Economics, Math, and English (also matching + tutor exam). */
   studyToolCards: 1148,
+  /**
+   * Economics textbook PDF (75) + Math theory markdown ≈198 Word pages.
+   * Math estimate: ~59,300 words ÷ 300.
+   */
+  preparationMaterialPages: 273,
 } as const;
 
 export const WISO_COURSE_COUNTS = {
@@ -24,6 +32,11 @@ export const WISO_COURSE_COUNTS = {
   styleExams: 6,
   /** Flashcard cards across Economics, Math, and German (also matching + tutor exam). */
   studyToolCards: 675,
+  /**
+   * Wirtschaft verstehen PDF (105) + Math theory markdown ≈189 Word pages.
+   * Math estimate: ~56,550 words ÷ 300.
+   */
+  preparationMaterialPages: 294,
 } as const;
 
 function formatCount(n: number): string {
@@ -34,18 +47,22 @@ function formatCount(n: number): string {
 export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
   if (track === "wiso") {
     const q = formatCount(WISO_COURSE_COUNTS.practiceQuestions);
+    const pages = formatCount(WISO_COURSE_COUNTS.preparationMaterialPages);
     return [
       `${q} practice questions`,
       "6+ WiSo-style exams",
+      `${pages} preparation material pages`,
       "Economics, Math & German theory",
       "Custom mock exam builder",
     ];
   }
 
   const q = formatCount(BBE_COURSE_COUNTS.practiceQuestions);
+  const pages = formatCount(BBE_COURSE_COUNTS.preparationMaterialPages);
   return [
     `${q} practice questions`,
     "6+ BBE-style exams",
+    `${pages} preparation material pages`,
     "Economics, Math & English theory",
     "Custom mock exam builder",
   ];
