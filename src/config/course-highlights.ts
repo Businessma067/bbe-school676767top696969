@@ -36,22 +36,22 @@ export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
     const q = formatCount(WISO_COURSE_COUNTS.practiceQuestions);
     const cards = formatCount(WISO_COURSE_COUNTS.studyToolCards);
     return [
-      `${q} unique practice questions`,
+      `${q} practice questions`,
       "6+ WiSo-style exams",
-      "Economics, Math, and German theory",
+      "Economics, Math & German theory",
       "Custom mock exam builder",
-      `${cards} Flashcards, TutorExam, and matching questions`,
+      `${cards} Flashcards, TutorExam & matching`,
     ];
   }
 
   const q = formatCount(BBE_COURSE_COUNTS.practiceQuestions);
   const cards = formatCount(BBE_COURSE_COUNTS.studyToolCards);
   return [
-    `${q} unique practice questions`,
+    `${q} practice questions`,
     "6+ BBE-style exams",
-    "Economics, Math, and English theory",
+    "Economics, Math & English theory",
     "Custom mock exam builder",
-    `${cards} Flashcards, TutorExam, and matching questions`,
+    `${cards} Flashcards, TutorExam & matching`,
   ];
 }
 
