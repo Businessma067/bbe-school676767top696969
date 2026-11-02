@@ -17,6 +17,9 @@ const NEUTRAL_PATHS = new Set([
   "/products/hybrid-course",
   // Shared catalog (BBE + WiSo). Keep the visitor's current locale when leaving a track.
   "/products",
+  // Track-aware walkthrough page — demos follow the stored exam track.
+  "/how-it-works",
+  "/reviews",
 ]);
 
 /** Shared news feed + posts (`/news`, `/news/<slug>`). */

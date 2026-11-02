@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
 } from "lucide-react";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
@@ -12,18 +11,12 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
-import { pinnedNote } from "@/data/acceptance-notes";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { BookCallSection } from "@/components/BookCallSection";
 import { homepageNavItems } from "@/config/site-nav";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
-
-const HowItWorksSection = lazy(() =>
-  import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
-);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -275,28 +268,6 @@ export function Index() {
 
         <WhyChooseUsSection />
 
-        <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
-          <HowItWorksSection />
-        </Suspense>
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              A triple-accredited business school with tuition that stays close to free
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:text-lg">
-              One two-hour exam sits between your family and a strong degree at almost zero cost.
-            </p>
-          </div>
-        </section>
-
         <section className="bg-why-us-bg px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-12">
             <div>
@@ -383,26 +354,6 @@ export function Index() {
             </div>
           </div>
         </section>
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Notes from people who sat the exam
-            </h2>
-          </div>
-        </section>
-
-        <PinnedReviewsBoard
-          title="What students wrote after they got an acceptance letter"
-          reports={reports}
-        />
 
         <BookCallSection />
 
@@ -600,5 +551,3 @@ function PlacementsTicker() {
     </div>
   );
 }
-
-const reports = [pinnedNote("bbe-hana"), pinnedNote("bbe-leon"), pinnedNote("bbe-tereza")];

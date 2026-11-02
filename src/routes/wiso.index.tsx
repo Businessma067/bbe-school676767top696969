@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect } from "react";
+import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
-import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
@@ -13,8 +12,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { BookCallSection } from "@/components/BookCallSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
-import { pinnedNote } from "@/data/acceptance-notes";
 import { WisoDachAdvantageSlider } from "@/components/WisoDachAdvantageSlider";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -22,10 +19,6 @@ import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { WISO_KEYWORDS, wisoBreadcrumbScript, wisoShareMeta } from "@/lib/seo/wiso-seo";
-
-const HowItWorksSection = lazy(() =>
-  import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
-);
 
 const PATH = "/wiso" as const;
 
@@ -156,16 +149,8 @@ export function WisoLandingPage() {
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
               <CourseHighlightsSection track="wiso" variant="landing" />
             </div>
-
-            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
-              <PrepJourneyRoadmap track="wiso" accent="wiso-blue" />
-            </div>
           </div>
         </section>
-
-        <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
-          <HowItWorksSection track="wiso" />
-        </Suspense>
 
         <WhyChooseUsSection track="wiso" />
 
@@ -223,28 +208,6 @@ export function WisoLandingPage() {
             </div>
           </section>
         </div>
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Notes from people who sat WiSo
-            </h2>
-          </div>
-        </section>
-
-        <PinnedReviewsBoard
-          title="What students told us after the WiSo Aufnahmeprüfung"
-          reports={wisoReports}
-          accent="wiso"
-          archiveHash="wiso"
-        />
 
         <BookCallSection description="Pick a time that works for you. We can walk through the WiSo Aufnahmeprüfung and help you choose a prep plan." />
 
@@ -316,5 +279,3 @@ export function WisoLandingPage() {
     </div>
   );
 }
-
-const wisoReports = [pinnedNote("wiso-jasmin"), pinnedNote("wiso-filip"), pinnedNote("wiso-lara")];

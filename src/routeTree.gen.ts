@@ -30,6 +30,7 @@ import { Route as DemoMockRouteImport } from './routes/demo-mock'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as HybridRouteImport } from './routes/hybrid'
 import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as LoginRouteImport } from './routes/login'
@@ -259,6 +260,11 @@ const FlashcardsRoute = FlashcardsRouteImport.update({
 const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
   id: '/forgot-password',
   path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HybridRoute = HybridRouteImport.update({
@@ -935,6 +941,7 @@ export interface FileRoutesByFullPath {
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
+  '/how-it-works': typeof HowItWorksRoute
   '/hybrid': typeof HybridRouteWithChildren
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
@@ -1079,6 +1086,7 @@ export interface FileRoutesByTo {
   '/dashboard': typeof DashboardRoute
   '/demo-mock': typeof DemoMockRoute
   '/forgot-password': typeof ForgotPasswordRoute
+  '/how-it-works': typeof HowItWorksRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/news': typeof NewsRouteWithChildren
@@ -1210,6 +1218,7 @@ export interface FileRoutesById {
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
+  '/how-it-works': typeof HowItWorksRoute
   '/hybrid': typeof HybridRouteWithChildren
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
@@ -1360,6 +1369,7 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
+    | '/how-it-works'
     | '/hybrid'
     | '/important-features'
     | '/login'
@@ -1504,6 +1514,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/demo-mock'
     | '/forgot-password'
+    | '/how-it-works'
     | '/important-features'
     | '/login'
     | '/news'
@@ -1634,6 +1645,7 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/flashcards'
     | '/forgot-password'
+    | '/how-it-works'
     | '/hybrid'
     | '/important-features'
     | '/login'
@@ -1783,6 +1795,7 @@ export interface RootRouteChildren {
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
   ForgotPasswordRoute: typeof ForgotPasswordRoute
+  HowItWorksRoute: typeof HowItWorksRoute
   HybridRoute: typeof HybridRouteWithChildren
   ImportantFeaturesRoute: typeof ImportantFeaturesRoute
   LoginRoute: typeof LoginRoute
@@ -1965,6 +1978,13 @@ declare module '@tanstack/react-router' {
       path: '/forgot-password'
       fullPath: '/forgot-password'
       preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hybrid': {
@@ -3281,6 +3301,7 @@ const rootRouteChildren: RootRouteChildren = {
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,
   ForgotPasswordRoute: ForgotPasswordRoute,
+  HowItWorksRoute: HowItWorksRoute,
   HybridRoute: HybridRouteWithChildren,
   ImportantFeaturesRoute: ImportantFeaturesRoute,
   LoginRoute: LoginRoute,

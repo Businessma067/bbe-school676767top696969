@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
-import { Flame, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
 import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
 import bcgLogo from "@/assets/bcg.png.asset.json";
@@ -14,21 +13,14 @@ import { cn } from "@/lib/utils";
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
-import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { BookCallSection } from "@/components/BookCallSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
-import { pinnedNote } from "@/data/acceptance-notes";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { storeExamTrack } from "@/lib/exam-track";
-
-const HowItWorksSection = lazy(() =>
-  import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
-);
 
 export const Route = createFileRoute("/bbe")({
   head: () => ({
@@ -132,36 +124,6 @@ export function BbeLandingPage() {
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
               <CourseHighlightsSection track="bbe" variant="landing" />
             </div>
-
-            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
-              <PrepJourneyRoadmap />
-            </div>
-          </div>
-        </section>
-
-        <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
-          <HowItWorksSection />
-        </Suspense>
-
-        {/* PARALLAX BAND — darkened WU campus */}
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              A triple-accredited business school with tuition that stays close to free
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              One timed entrance exam sits between your family and a strong degree at almost zero
-              cost. The paper is hard because the seats are limited, not because the university wants
-              drama. About 240 BBE places face a much larger applicant pool under the same partial
-              credit pressure you will feel in the hall.
-            </p>
           </div>
         </section>
 
@@ -195,33 +157,6 @@ export function BbeLandingPage() {
             </LocalizedLink>
           </div>
         </section>
-
-        {/* PARALLAX BAND #2 */}
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Notes from people who sat the exam
-            </h2>
-          </div>
-        </section>
-
-        <PinnedReviewsBoard
-          title="What students wrote after they got an acceptance letter"
-          reports={reports}
-          archiveHash="bbe"
-          badgeExtraFor={(report) =>
-            report.fire ? (
-              <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />
-            ) : null
-          }
-        />
 
         <BookCallSection description="Pick a time that works for you. We can walk through the BBE exam — Economics, Math, and English — and help you choose a prep plan." />
 
@@ -699,9 +634,3 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
     </div>
   );
 }
-
-const reports = [
-  pinnedNote("bbe-felix", { fire: true }),
-  pinnedNote("bbe-petra"),
-  pinnedNote("bbe-andrei"),
-];

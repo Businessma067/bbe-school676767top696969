@@ -288,8 +288,9 @@ export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
   items.push(
     {
       label: "How it works",
-      href: track === "wiso" ? "/wiso#how-it-works" : "/bbe#how-it-works",
+      href: "/how-it-works",
       isRoute: true,
+      activeExact: ["/how-it-works"],
     },
     productsItem(track),
     {
@@ -301,8 +302,9 @@ export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
     newsItem,
     {
       label: "Reviews",
-      href: track === "wiso" ? "/wiso#reviews" : "/bbe#reviews",
+      href: track === "wiso" ? "/reviews#wiso" : "/reviews#bbe",
       isRoute: true,
+      activePrefixes: ["/reviews"],
     },
     {
       label: "FAQ",

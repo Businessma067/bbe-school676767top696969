@@ -60,6 +60,7 @@ const SEGMENT_LABELS: Record<string, string> = {
   "answer-sheet": "Answer Sheet",
   parents: "Parents",
   reviews: "Reviews",
+  "how-it-works": "How it works",
   account: "Account",
   practice: "Practice",
   admin: "Admin",

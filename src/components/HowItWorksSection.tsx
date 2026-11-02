@@ -355,7 +355,14 @@ function HowItWorksLive({
   return <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
 }
 
-export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }) {
+export function HowItWorksSection({
+  track = "bbe",
+  headingLevel = "h2",
+}: {
+  track?: HowItWorksTrack;
+  /** Use h1 on the dedicated How it works page. */
+  headingLevel?: "h1" | "h2";
+}) {
   const { t } = useLanguage();
   const courseSubjects =
     track === "wiso"
@@ -506,9 +513,15 @@ export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }
   return (
     <section id="how-it-works" className="relative bg-background px-3 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-[90rem] text-center">
-        <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-          How it works
-        </h2>
+        {headingLevel === "h1" ? (
+          <h1 className="font-display text-[1.65rem] font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
+            How it works
+          </h1>
+        ) : (
+          <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
+            How it works
+          </h2>
+        )}
       </div>
 
       <div className="mx-auto mt-6 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2 sm:mt-8">
