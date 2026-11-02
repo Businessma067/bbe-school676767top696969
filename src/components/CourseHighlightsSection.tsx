@@ -48,12 +48,12 @@ export function CourseHighlightsSection({
         {track === "wiso" ? "What you get in the WiSo course" : "What you get in the BBE course"}
       </h2>
 
-      <ul className="-mx-1 flex flex-nowrap items-center justify-start gap-x-5 overflow-x-auto px-1 text-left text-[15px] font-semibold leading-snug text-foreground sm:justify-center sm:gap-x-6 sm:text-base">
+      <ul className="-mx-1 flex flex-nowrap items-center justify-start gap-x-6 overflow-x-auto px-1 text-left text-base font-semibold leading-snug text-foreground sm:justify-center sm:gap-x-8 sm:text-lg">
         {bullets.map((bullet) => (
-          <li key={bullet} className="inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap">
+          <li key={bullet} className="inline-flex shrink-0 items-center gap-3 whitespace-nowrap">
             <span
               className={cn(
-                "h-2 w-2 shrink-0 rounded-full",
+                "h-2.5 w-2.5 shrink-0 rounded-full",
                 accent === "wiso" ? "bg-indigo-700" : "bg-[var(--exam-red)]",
               )}
               aria-hidden

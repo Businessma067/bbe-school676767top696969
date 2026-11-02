@@ -52,7 +52,6 @@ export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
       `${q} practice questions`,
       "6+ WiSo-style exams",
       `${pages} preparation material pages`,
-      "Economics, Math & German theory",
       "Custom mock exam builder",
     ];
   }
@@ -63,7 +62,6 @@ export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
     `${q} practice questions`,
     "6+ BBE-style exams",
     `${pages} preparation material pages`,
-    "Economics, Math & English theory",
     "Custom mock exam builder",
   ];
 }
