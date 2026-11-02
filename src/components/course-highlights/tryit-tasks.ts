@@ -1,11 +1,11 @@
 /**
  * Real Full Course bank tasks for the marketing try-it box.
- * Same seeds as How it works, so explanations match the course.
+ * Same seeds as How it works (econ/math), English uses a Grammar bank task.
  */
 
 import econCh3 from "@/data/economics-cases-ch3-subtopics.json";
 import mathCh12 from "@/data/math-cases-ch12-probability.json";
-import englishTexts from "@/data/english/texts.json";
+import englishGrammar from "@/data/english/grammar.json";
 import wisoEconCh1 from "@/data/wiso-economics-cases-ch1-subtopics.json";
 import mathDe12 from "@/data/wiso/math-de-ch12.json";
 import germanTexts from "@/data/wiso/german/texts.json";
@@ -57,21 +57,18 @@ function asTask(
 
 const bbeEconRaw = (econCh3 as RawTask[]).find((task) => task.case_id === "CASE 3.1.01");
 const bbeMathRaw = (mathCh12 as { tasks: RawTask[] }).tasks.find((task) => task.case_id === "MATH 12.01");
-const bbeEngRaw = (englishTexts as { tasks: RawTask[] }).tasks.find((task) => task.case_id === "ENG T.1.01");
-const bbePassage = (englishTexts as { subsections: { id: string; passage?: string }[] }).subsections.find(
-  (section) => section.id === "t.1",
-)?.passage;
+const bbeGrammarRaw = (englishGrammar as { tasks: RawTask[] }).tasks.find(
+  (task) => task.case_id === "ENG G.1.01",
+);
 
-if (!bbeEconRaw || !bbeMathRaw || !bbeEngRaw || !bbePassage) {
+if (!bbeEconRaw || !bbeMathRaw || !bbeGrammarRaw) {
   throw new Error("BBE try-it task missing from the bank");
 }
 
 const BBE_TASKS: Record<"economics" | "math" | "english", TryItTask> = {
   economics: asTask(bbeEconRaw, "economics", "Chapter 3 · Focus on different types of businesses"),
   math: asTask(bbeMathRaw, "math", "Chapter 12 · Elementary probability", { math: true }),
-  english: asTask(bbeEngRaw, "english", "Texts · The Rise of the Four-Day Workweek", {
-    passage: bbePassage.split(/\n\n/).slice(0, 3).join("\n\n"),
-  }),
+  english: asTask(bbeGrammarRaw, "english", "Grammar · Sentence correctness"),
 };
 
 const wisoEconRaw = (wisoEconCh1 as RawTask[])[0];

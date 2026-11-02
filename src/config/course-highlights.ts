@@ -30,62 +30,28 @@ function formatCount(n: number): string {
   return n.toLocaleString("en-US");
 }
 
-export type CourseHighlightPoint = {
-  title: string;
-  detail: string;
-};
-
-export function courseHighlightPoints(track: CourseHighlightTrack): CourseHighlightPoint[] {
+/** Short bullet labels only — no supporting copy. */
+export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
   if (track === "wiso") {
     const q = formatCount(WISO_COURSE_COUNTS.practiceQuestions);
     const cards = formatCount(WISO_COURSE_COUNTS.studyToolCards);
     return [
-      {
-        title: `${q} unique practice questions`,
-        detail: "Wirtschaft verstehen, mathematics, and German reading in the real exam format.",
-      },
-      {
-        title: "6+ WiSo-style exams",
-        detail: "Timed Probeprüfungen plus papers you build around your weak chapters.",
-      },
-      {
-        title: "Economics, Math, and German theory",
-        detail: "Chapter theory readers for the definitions and formulas the statements assume.",
-      },
-      {
-        title: "Custom mock exam builder",
-        detail: "Pick WiSo chapters and subtopics, set the mix, and start a timed paper from the bank.",
-      },
-      {
-        title: `${cards} Flashcards, TutorExam, and matching questions`,
-        detail: "One deck powers flashcards, matching drills, and tutor-exam quizzes.",
-      },
+      `${q} unique practice questions`,
+      "6+ WiSo-style exams",
+      "Economics, Math, and German theory",
+      "Custom mock exam builder",
+      `${cards} Flashcards, TutorExam, and matching questions`,
     ];
   }
 
   const q = formatCount(BBE_COURSE_COUNTS.practiceQuestions);
   const cards = formatCount(BBE_COURSE_COUNTS.studyToolCards);
   return [
-    {
-      title: `${q} unique practice questions`,
-      detail: "Economics, Mathematics, and English cases in the real BBE statement format.",
-    },
-    {
-      title: "6+ BBE-style exams",
-      detail: "Full-length timed mocks with the same scoring and pacing as exam day.",
-    },
-    {
-      title: "Economics, Math, and English theory",
-      detail: "Chapter theory readers for the definitions and formulas the statements assume.",
-    },
-    {
-      title: "Custom mock exam builder",
-      detail: "Pick chapters and subtopics, set the mix, and start a timed paper from the Full Course bank.",
-    },
-    {
-      title: `${cards} Flashcards, TutorExam, and matching questions`,
-      detail: "One deck powers flashcards, matching drills, and tutor-exam quizzes.",
-    },
+    `${q} unique practice questions`,
+    "6+ BBE-style exams",
+    "Economics, Math, and English theory",
+    "Custom mock exam builder",
+    `${cards} Flashcards, TutorExam, and matching questions`,
   ];
 }
 

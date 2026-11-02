@@ -128,13 +128,15 @@ export function BbeLandingPage() {
               </LocalizedLink>
             </div>
 
+            <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
+              <CourseHighlightsSection track="bbe" variant="landing" />
+            </div>
+
             <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
               <PrepJourneyRoadmap />
             </div>
           </div>
         </section>
-
-        <CourseHighlightsSection track="bbe" variant="landing" />
 
         <Suspense fallback={<div className="min-h-[12rem] bg-background sm:min-h-[28rem]" aria-hidden />}>
           <HowItWorksSection />
