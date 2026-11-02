@@ -110,7 +110,7 @@ function CalendlyInlineWidget({
       // Not `calendly-inline-widget`: widget.js auto-processes that class on load,
       // throws without a data-url, and never defines window.Calendly.
       data-auto-load="false"
-      className={cn("bbe-calendly-embed min-h-[700px] w-full overflow-hidden", className)}
+      className={cn("bbe-calendly-embed h-[700px] w-full overflow-hidden", className)}
       style={{ minWidth: 320 }}
     />
   );
