@@ -3,47 +3,47 @@
     {
       "case_id": "WISO-M2-E01",
       "id": "WISO-M2-E01",
-      "title": "Verkauf, Betrieb, Wartung",
+      "title": "Modernisierung, Verkauf, Buchwert, Strafe",
       "subsection": "1.3",
       "chapter": 1,
       "difficulty_level": "5/5",
-      "context": "Drei sich ausschließende Verwendungen. Verkauf bringt 40. Betrieb ohne Wartung bringt 90 Erlös, 30 Betriebskosten und danach sicher 28 Wiederherstellung. Betrieb mit Wartung bringt denselben Erlös und dieselben Betriebskosten, kostet zusätzlich 12 Wartung und danach nur 6 Wiederherstellung. Der frühere Kaufpreis 100 ist in allen drei Fällen schon bezahlt. Bewerten Sie jede Aussage.",
+      "context": "Drei sich ausschließende Verwendungen einer Anlage: Verkauf heute, Weiterbetrieb ohne Modernisierung, Weiterbetrieb mit Modernisierung. Historischer Kaufpreis 187.500, Buchwert heute 48.750. Verkaufserlös heute 47.850. Ohne Modernisierung: abgezinste Zusatzeinzahlungen 51.200, Demontage danach 8.750. Mit Modernisierung: Sofortkosten 13.875, abgezinste Zusatzeinzahlungen 71.250, Demontage 2.150. Eine bereits ausgelöste Strafe von 4.875 fällt in allen drei Wegen an und ist nicht vermeidbar. Versunkene Größen und Opportunitätsvergleiche sind zu trennen. Bewerten Sie jede Aussage.",
       "statements": [
-        "Mit Wartung bleibt mehr als beim Verkauf. Der schon bezahlte Kaufpreis dreht diese Rangfolge nicht, weil er in jeder Verwendung gleich anfällt.",
-        "Ohne Wartung schlägt der Verkauf, weil der Erlös die Betriebskosten übersteigt und die Wiederherstellung deshalb keine Rolle spielt.",
-        "Die Wartung ist gegenüber dem ungewarteten Betrieb vorteilhaft und gegenüber dem Verkauf ebenfalls. Es genügt nicht, nur einen der beiden Vergleiche zu gewinnen.",
-        "Weil der Kaufpreis größer ist als jeder Überschuss, ist der Verkauf die beste Verwendung.",
-        "Die Wiederherstellung ohne Wartung ist größer als der Vorsprung der Wartung vor dem Verkauf. Deshalb kann die Wartung den Verkauf nicht schlagen."
+        "Gegen den Verkauf ist Betrieb ohne Modernisierung nach Demontage im Nachteil und Betrieb mit Modernisierung im Vorteil. Buchwert und Strafe drehen keine dieser Rangfolgen.",
+        "Die Strafe gehört nur zum Weiterbetrieb und kippt den Modernisierungsvorteil gegen den Verkauf.",
+        "Wer nur die Einzahlungen ohne Demontage gegen den Verkauf stellt, dreht die Rangfolge des unmodernisierten Betriebs. Wer Kaufpreis und Verkauf zugleich ansetzt, zählt dieselbe Anlage doppelt.",
+        "Jede Verwendung lohnt, sobald die abgezinsten Einzahlungen den Buchwert übersteigen.",
+        "Der Modernisierungsvorsprung gegen den Verkauf ist kleiner als die Demontage ohne Modernisierung und trotzdem positiv."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        false
+        true
       ],
       "tactical_explanations": [
-        "Ohne Wartung bleiben 90 minus 30 minus 28, also 32, das liegt unter 40. Mit Wartung bleiben 90 minus 30 minus 12 minus 6, also 42, das liegt über 40. Der Kaufpreis 100 sitzt auf allen drei Seiten und ändert die Differenzen nicht.\n\nDie Aussage ist wahr.",
-        "90 minus 30 ist 60 und übersteigt 40. Die sichere Wiederherstellung von 28 zieht das Ergebnis auf 32 und damit unter den Verkauf. Wer sie weglässt, dreht die Rangfolge.\n\nDie Aussage ist falsch.",
-        "42 liegt über 32 und über 40. Der erste Vergleich sagt nur, dass man warten soll, wenn man betreibt. Erst der zweite sagt, dass man überhaupt betreiben soll. Beide sind nötig.\n\nDie Aussage ist wahr.",
-        "100 ist größer als 42, 40 und 32. Als versunkene Ausgabe liegt er aber auf jeder Seite. Die beste Verwendung ist der gewartete Betrieb, nicht der Verkauf.\n\nDie Aussage ist falsch.",
-        "28 ist tatsächlich größer als der Vorsprung 42 minus 40. Dieser Vergleich mischt eine Kostenart mit einer Nettodifferenz. Die richtige Nettorechnung schlägt den Verkauf trotzdem.\n\nDie Aussage ist falsch."
+        "Ohne Modernisierung: 51.200−8.750=42.450 < 47.850. Mit: 71.250−13.875−2.150=55.225 > 47.850. Strafe und historischer Kaufpreis sitzen auf allen Seiten; der Buchwert fließt in keiner Differenz.\n\nDie Aussage ist wahr.",
+        "Die Strafe fällt auch beim Verkauf an und kürzt sich im Differenzvergleich heraus. 55.225 gegen 47.850 bleibt positiv.\n\nDie Aussage ist falsch.",
+        "51.200 > 47.850 täuscht einen Vorteil vor; nach Demontage 42.450 liegt darunter. 187.500 und 47.850 am selben Objekt sind doppelte Erfassung.\n\nDie Aussage ist wahr.",
+        "Der Buchwert ist versunken. Bindend ist der Verkauf. 51.200 liegt über 48.750 und trotzdem unter 47.850 nach Demontage.\n\nDie Aussage ist falsch.",
+        "55.225−47.850=7.375 < 8.750, aber 7.375 > 0. Der Größenvergleich mit der Demontage löscht den Vorteil nicht.\n\nDie Aussage ist wahr."
       ]
     },
     {
       "case_id": "WISO-M2-E02",
       "id": "WISO-M2-E02",
-      "title": "Vorteil, Fracht, Zoll",
+      "title": "Komparativer Vorteil, Fracht, zwei Zölle",
       "subsection": "1.2",
       "chapter": 1,
       "difficulty_level": "5/5",
-      "context": "Land A braucht 2 Stunden für Tuch und 6 für Wein, Land B 4 Stunden für Tuch und 6 für Wein. Der Stundenlohn ist in A 15 und in B 10, jeweils für beide Güter. Wein aus B trägt auf dem Weg nach A 20 Fracht, Tuch keine. Zusätzlich erhebt A einen Zoll von 15 je importierter Weineinheit. Bewerten Sie jede Aussage.",
+      "context": "Zwei Länder, zwei Güter, Löhne je Stunde für beide Güter gleich. Land A braucht 2,75 Stunden für Tuch und 8,25 für Wein, Lohn 17,5. Land B braucht 4,5 Stunden für Tuch und 6,75 für Wein, Lohn 12. Wein von B nach A trägt Fracht 37,5 und zusätzlich einen Einfuhrzoll 28,5. Tuch von B nach A trägt keinen Frachtzuschlag, aber einen Einfuhrzoll 6,25. Zuerst Güter-Opportunitätskosten, dann Lohnstückkosten, dann Zuschläge nacheinander. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die Güter-Opportunitätskosten geben B den Vorteil beim Wein und A den Vorteil beim Tuch. Der unterschiedliche Lohn dreht diese Vorteile nicht, weil er innerhalb jedes Landes für beide Güter gleich ist.",
-        "Die Fracht allein macht Wein aus B in A teurer als Wein aus A.",
-        "Fracht und Zoll zusammen drehen die Reihenfolge beim Wein. Beim Tuch bleibt A auch ohne Zoll der günstigere Anbieter.",
-        "Weil B beim Wein den komparativen Vorteil hat, importiert A den Wein auch nach Fracht und Zoll.",
-        "Ein gleich hoher Zoll auf Tuch würde B zum günstigeren Tuchanbieter in A machen, weil B mehr Stunden braucht."
+        "Die Güter-Opportunitätskosten geben A den Vorteil beim Tuch und B beim Wein. Der Lohn dreht diese Güterverhältnisse nicht.",
+        "Fracht allein dreht die Lohnkostenrangfolge beim Wein.",
+        "Fracht und Weinzoll zusammen drehen die Wein-Rangfolge. Der Tuchzoll dreht die Tuch-Rangfolge nicht.",
+        "Weil B beim Wein den komparativen Vorteil hat, importiert A Wein auch nach Fracht und Zoll.",
+        "Ein Tuchzoll in Höhe des Weinzolls macht B zum billigeren Tuchlieferanten."
       ],
       "answer_key": [
         true,
@@ -53,27 +53,27 @@
         false
       ],
       "tactical_explanations": [
-        "Ein Tuch kostet in A ein Drittel Wein und in B zwei Drittel Wein. Ein Wein kostet in A drei Tuch und in B eineinhalb Tuch. Der Lohn kürzt sich im Stundenverhältnis. Er verändert die Lohnkosten je Stück, nicht den Gütervergleich.\n\nDie Aussage ist wahr.",
-        "Lohnkosten Wein: A 90, B 60. Mit 20 Fracht liegt B bei 80 und damit weiter unter 90. Die Fracht verkleinert den Vorsprung und dreht ihn nicht.\n\nDie Aussage ist falsch.",
-        "80 plus 15 Zoll sind 95 und liegen über 90. Tuch kostet in A 30 und in B 40, ohne Fracht. Der Wein-Zoll trifft das Tuch nicht. Es sind zwei Güter und zwei verschiedene Ergebnisse.\n\nDie Aussage ist wahr.",
-        "Der komparative Vorteil beschreibt die Produktion, nicht die Lieferung nach Zöllen. Nach Fracht und Zoll ist Wein aus A im eigenen Markt billiger. Der Vorteil in der Produktion setzt sich nicht bis zum gelieferten Preis durch.\n\nDie Aussage ist falsch.",
-        "B ist beim Tuch schon ohne Zoll teurer. Ein Zoll auf importiertes Tuch macht B noch teurer, er macht B nicht billiger. Mehr Stunden erklären die Richtung vor dem Zoll und nicht eine Umkehr durch den Zoll.\n\nDie Aussage ist falsch."
+        "Tuch kostet in A 2,75/8,25=1/3 Wein, in B 4,5/6,75=2/3 Wein. Der Lohn ist im Land für beide Güter gleich und fällt aus dem Güterverhältnis heraus.\n\nDie Aussage ist wahr.",
+        "Wein: A 8,25·17,5=144,375; B 6,75·12=81. Mit Fracht 37,5 liegt B bei 118,5 < 144,375. Die Fracht verkleinert den Vorsprung und dreht ihn nicht.\n\nDie Aussage ist falsch.",
+        "Wein: 118,5+28,5=147 > 144,375. Tuch: A 2,75·17,5=48,125; B 4,5·12=54, mit Zoll 60,25 > 48,125. Der Tuchzoll macht Importtuch teurer, nicht billiger.\n\nDie Aussage ist wahr.",
+        "Komparativer Vorteil beschreibt Produktion, nicht den gelieferten Preis nach Fracht und Zoll. Nach beiden Zuschlägen ist Heimwein billiger.\n\nDie Aussage ist falsch.",
+        "B ist beim Tuch schon ohne Zoll teurer (54 > 48,125). Ein Importzoll von 28,5 statt 6,25 vergrößert den Abstand auf 82,5 gegen 48,125.\n\nDie Aussage ist falsch."
       ]
     },
     {
       "case_id": "WISO-M2-E03",
       "id": "WISO-M2-E03",
-      "title": "Identität mit zwei Verhaltensreaktionen",
+      "title": "Identität mit zwei unvollständigen Reaktionen",
       "subsection": "2.2",
       "chapter": 2,
       "difficulty_level": "5/5",
-      "context": "Einkommen 100, Konsum 60, Investitionen 20, Staatsausgaben 25, Exporte 10, Importe 15, Steuern 18. Danach steigen Staatsausgaben und Steuern um je 5. Der Konsum fällt um vier Fünftel der Steuererhöhung. Die Importe fallen um ein Viertel dieses Konsumrückgangs. Einkommen, Investitionen und Exporte bleiben in der Teilrechnung fest. Bewerten Sie jede Aussage.",
+      "context": "Ausgangsgrößen der Kreislaufteilrechnung: Y=180, C=108, I=36, G=45, X=18, M=27, T=27. Identität: Ersparnis plus Steuern gegen Investitionen plus Staat plus Nettoexport. Danach steigt G um 7,5 und T um 7,5. Der Konsum fällt um 6, die Importe um 1,5. Y, I und X bleiben in dieser Teilrechnung festgehalten; nur die genannten Reaktionen bewegen sich. Vergleichen Sie Vorstoß, Nachstoß, fehlende Importreaktion und volle Steuerüberwälzung im Konsum. Bewerten Sie jede Aussage.",
       "statements": [
-        "Vor dem Stoß ist der Abstand zwischen Ersparnis plus Steuern und Investitionen plus Staat plus Exportüberschuss null.",
-        "Nach den beschriebenen Reaktionen geht die Teilrechnung wieder auf.",
-        "Wer die Importreaktion ignoriert und die Importe festhält, sieht einen kleineren Abstand als den der vollständigen Teilrechnung.",
-        "Fiele der Konsum um die ganze Steuererhöhung und die Importe um ein Viertel dieses größeren Rückgangs, wäre der Abstand in derselben Teilrechnung wieder null.",
-        "Der Staatshaushalt selbst ist ausgeglichen verändert. Der verbleibende Abstand kommt daher, dass Konsum und Importe nicht genau die Bewegung der Steuern nachbilden."
+        "Vor dem Stoß ist der Identitätsabstand null.",
+        "Nach den beschriebenen Reaktionen geht die Teilrechnung auf.",
+        "Ohne Importreaktion wäre der Abstand kleiner, aber nicht null.",
+        "Konsumrückgang um die ganze Steuererhöhung bei Import −1,5 macht den Abstand null.",
+        "Staat und Steuern ändern sich ausgeglichen; der Abstand kommt von den unvollständigen Reaktionen."
       ],
       "answer_key": [
         true,
@@ -83,27 +83,27 @@
         true
       ],
       "tactical_explanations": [
-        "Ersparnis ist 100 minus 60 minus 18, also 22. Mit den Steuern sind es 40. Rechts stehen 20 plus 25 plus 10 minus 15, ebenfalls 40. Die Identität gilt, bevor jemand eine Größe festhält.\n\nDie Aussage ist wahr.",
-        "Konsum fällt um 4 auf 56, Steuern sind 23, Ersparnis 21, linke Seite 44. Importe fallen um 1 auf 14. Rechts: 20 plus 30 plus 10 minus 14 sind 46. Es bleibt ein Abstand von 2.\n\nDie Aussage ist falsch.",
-        "Mit festen Importen von 15 steht rechts 45 statt 46. Der Abstand zur linken Seite 44 ist dann 1 statt 2. Die vergessene Reaktion verkleinert den sichtbaren Bruch, sie erzeugt ihn nicht.\n\nDie Aussage ist wahr.",
-        "Konsum 55, Ersparnis 22, linke Seite 45. Importe fielen um 1,25 auf 13,75. Rechts stünden 46,25. Der Abstand wäre 1,25 und nicht null. Die volle Konsumreaktion allein schließt die Lücke nicht, sobald die Importe mitziehen.\n\nDie Aussage ist falsch.",
-        "Staat und Steuern steigen um denselben Betrag. Wichen Konsum um 5 und Importe gar nicht, bliebe die Ersparnis 22 und beide Seiten träfen sich bei 45. Die kleineren, gekoppelten Reaktionen lassen genau diese Deckung verfehlen.\n\nDie Aussage ist wahr."
+        "S=180−108−27=45; S+T=72. Rechts I+G+X−M=36+45+18−27=72.\n\nDie Aussage ist wahr.",
+        "Neu: C=102, T=34,5, G=52,5, M=25,5. S=180−102−34,5=43,5; links 78; rechts 36+52,5+18−25,5=81. Abstand 3.\n\nDie Aussage ist falsch.",
+        "Rechts ohne dM: 36+52,5+18−27=79,5. Links bleibt 78. Abstand 1,5 statt 3.\n\nDie Aussage ist wahr.",
+        "Bei dC=−7,5 und dM=−1,5: S=45; links 79,5; rechts 81. Abstand 1,5 bleibt.\n\nDie Aussage ist falsch.",
+        "Volle Deckung in dieser Teilrechnung bräuchte dC=−7,5 und dM=0: dann links 79,5 und rechts 79,5. Die unvollständigen Reaktionen öffnen den Abstand.\n\nDie Aussage ist wahr."
       ]
     },
     {
       "case_id": "WISO-M2-E04",
       "id": "WISO-M2-E04",
-      "title": "Wer die steilere Seite ist",
+      "title": "Inzidenz bei ungleichen Steigungen",
       "subsection": "1.4",
       "chapter": 1,
       "difficulty_level": "5/5",
-      "context": "Nachfrage: Preis = 50 minus Menge. Angebot: Preis = 10 plus 2 mal Menge. Eine Stücksteuer von 6 wird bei den Anbietern erhoben. Dieselben Kurven gelten, wenn die Steuer stattdessen bei den Nachfragern erhoben wird. Bewerten Sie jede Aussage.",
+      "context": "Lineare Nachfrage P=67,5−0,375Q, lineares Angebot P=9,5+0,225Q. Zuerst Gleichgewicht ohne Steuer. Dann Stücksteuer 6,75 rechtlich bei den Anbietern: Keil zwischen Käuferpreis und Verkäufererlös. Alternativ dieselbe Steuer rechtlich bei den Nachfragern. Steigungen bestimmen die Lastenteilung; Rechtsseite und Aufkommen sind getrennt zu prüfen. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die Nachfrager tragen weniger als die Hälfte der Steuer, und die Menge sinkt.",
-        "Weil die Steuer rechtlich bei den Anbietern liegt, tragen die Anbieter sie ganz.",
-        "Die steilere Kurve trägt mehr. Hier ist das die Angebotsseite, und eine Verlagerung der rechtlichen Zahlung auf die Nachfrager kehrt diese Teilung nicht um.",
-        "Der Käuferpreis steigt um mehr, als der Verkäufererlös fällt.",
-        "Die Steuereinnahme ist die Steuer mal die alte Gleichgewichtsmenge, weil die Steuer auf jeder verkauften Einheit liegt, die es vorher gab."
+        "Die Menge sinkt. Die Nachfrager tragen mehr als die Hälfte der Steuer.",
+        "Rechtlich bei Anbietern heißt: Anbieter tragen alles.",
+        "Die steilere Kurve trägt mehr. Rechtliche Verlagerung auf Nachfrager kehrt das nicht um.",
+        "Der Käuferpreis steigt um weniger als der Erlös fällt.",
+        "Das Steueraufkommen ist Steuer mal alte Menge."
       ],
       "answer_key": [
         true,
@@ -113,117 +113,117 @@
         false
       ],
       "tactical_explanations": [
-        "Ohne Steuer ist die Menge 40/3 und der Preis 110/3. Mit Steuer der Anbieter wird das Angebot 16 plus 2 mal Menge, die Menge 34/3, der Käuferpreis 116/3 und der Verkäufererlös 98/3. Der Käuferpreis steigt um 2, der Erlös fällt um 4. Die Menge ist kleiner als vorher.\n\nDie Aussage ist wahr.",
-        "Der Käuferpreis steigt um 2 von 6. Die rechtliche Seite legt die Zahlung fest, nicht die Teilung. Die Teilung folgt aus den Steigungen.\n\nDie Aussage ist falsch.",
-        "Das Angebot steigt mit der Menge doppelt so schnell, wie die Nachfrage fällt. Die Anbieter tragen 4, die Nachfrager 2. Dieselbe Keilrechnung entsteht, wenn die 6 vom Käuferpreis abgezogen werden statt auf die Angebotskurve gelegt zu werden.\n\nDie Aussage ist wahr.",
-        "Der Käuferpreis steigt um 2, der Erlös fällt um 4. Die größere Bewegung liegt bei den Anbietern. Die Aussage vertauscht die beiden Seiten.\n\nDie Aussage ist falsch.",
-        "Bestand hat nur die neue, kleinere Menge. Die alte Menge wird nicht mehr gehandelt. Einnahme ist Steuer mal neue Menge, nicht mal die Menge vor der Steuer.\n\nDie Aussage ist falsch."
+        "Vorher Q=96,6̅, P=31,25. Nachher Q=85,416̅. Käuferpreis 35,46875 (+4,21875), Verkäufererlös 28,71875 (−2,53125). 4,21875 > 3,375.\n\nDie Aussage ist wahr.",
+        "Die Teilung folgt aus den Steigungen, nicht aus der Rechtsseite. Hier tragen Nachfrager den größeren Teil.\n\nDie Aussage ist falsch.",
+        "Nachfrage steiler (|0,375| > 0,225). Dieselbe Keilrechnung bei Steuer auf Nachfrager: derselbe Käuferpreis und derselbe Nettoerlös.\n\nDie Aussage ist wahr.",
+        "Anstieg 4,21875 gegen Rückgang 2,53125. Der Käuferpreis steigt stärker.\n\nDie Aussage ist falsch.",
+        "Besteuert wird die neue Menge: 6,75·85,416̅=576,5625, nicht 6,75·96,6̅.\n\nDie Aussage ist falsch."
       ]
     },
     {
       "case_id": "WISO-M2-E05",
       "id": "WISO-M2-E05",
-      "title": "Exakter Realzins und ein Punkt auf der Grenze",
+      "title": "Kalte Progression, zwei Grenzen",
       "subsection": "1.5",
       "chapter": 1,
       "difficulty_level": "5/5",
-      "context": "Heute und in einem Jahr stehen je 100 Einheiten Kaufkraft zur Verfügung. Der Nominalzins ist 21 Prozent, die Preise steigen um 10 Prozent. Ein Plan verzichtet heute auf 20 Einheiten und will dafür in einem Jahr 22 Einheiten zusätzliche Kaufkraft. Ein anderer Plan will für denselben Verzicht 23 Einheiten. Bewerten Sie jede Aussage.",
+      "context": "Jahreseinkommen 48.750. Tarif: bis 13.750 frei, nächste 18.750 mit 17,5 %, darüber 36,5 %. Preise steigen um 7,5 %, der Nominallohn folgt auf 52.406,25. Regime A: Grenzen starr. Regime B: beide Grenzen ebenfalls um 7,5 % indexiert. Vergleichen Sie nominales und reales Netto, Durchschnittssatz-Kurzschluss und den Abstand zwischen nominalem Steuerunterschied und realem Nettovorteil. Bewerten Sie jede Aussage.",
       "statements": [
-        "Der exakte Realzins ist positiv und kleiner als die Differenz aus Nominalzins und Inflation.",
-        "Sparen erhöht den Gegenwartswert der Lebenskaufkraft, weil der Nominalzins über der Inflation liegt.",
-        "Der Plan mit 22 zusätzlichen Einheiten liegt auf der realen Budgetgrenze, der Plan mit 23 liegt außerhalb.",
-        "Die Näherung, die den Nominalzins um die Inflation kürzt, trifft den exakten Realzins.",
-        "Ein Realzins von null läge nur vor, wenn Nominalzins und Inflation übereinstimmten. Das tun sie hier nicht, deshalb ist auch der Verzicht von 20 gegen 20 morgen nicht finanzierbar."
+        "Starr: nominales Netto steigt, reales fällt unter das alte. Bruttoreallohn bleibt.",
+        "Alter Durchschnittssatz auf den neuen Lohn trifft die starre Steuer.",
+        "Indexierte Grenzen halten reales Netto bei 39.537,5; die Steuer liegt unter der starren.",
+        "Nominales Netto steigt in beiden Fällen, also auch das reale.",
+        "Der nominale Steuerunterschied gleich dem realen Nettovorteil der Indexierung."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "1,21 durch 1,10 minus 1 ist genau 10 Prozent. Die Differenz 21 minus 10 ist 11 Prozent. Der exakte Wert liegt darunter und bleibt positiv. Die Näherung verschiebt die Grenze, auf der die beiden Pläne geprüft werden.\n\nDie Aussage ist wahr.",
-        "Der Realzins ist positiv, das verändert die Steigung der Budgetgerade und nicht ihren Gegenwartswert. Jede Bewegung entlang der Gerade hat denselben Gegenwartswert wie die Ausgangsausstattung. Sparen verschiebt den Zeitpunkt, es vergrößert den Wert nicht.\n\nDie Aussage ist falsch.",
-        "20 Einheiten heute wachsen real um genau 10 Prozent und werden 22. 23 wäre ein Realzins von 15 Prozent auf diesen Verzicht und liegt über dem, was der Markt hergibt. Die Näherung von 11 Prozent würde 22 immer noch tragen und 23 immer noch nicht, aber aus dem falschen Satz.\n\nDie Aussage ist wahr.",
-        "11 Prozent sind nicht 10 Prozent. Bei gleich großen Sätzen wäre die Näherung zufällig exakt. Hier ist der Nominalzins nicht gleich der Inflation, und der Quotient der Aufzinsungsfaktoren ist der exakte Weg.\n\nDie Aussage ist falsch.",
-        "Gleichheit der beiden Sätze ergäbe den Quotienten 1. Hier ist der Nominalzins höher, der Realzins positiv. 20 gegen nur 20 morgen bliebe hinter der Grenze zurück. Die Aussage verbindet die Bedingung für null mit diesem konkreten Plan.\n\nDie Aussage ist wahr."
+        "Alt Steuer 9.212,5, Netto 39.537,5. Starr Steuer 10.547,03125, Netto 41.859,21875, real ≈38.938,81 < 39.537,5. Brutto 52.406,25/1,075=48.750.\n\nDie Aussage ist wahr.",
+        "9.212,5/48.750·52.406,25=9.903,4375 ≠ 10.547,03125. Der Durchschnittssatz trifft hier zufällig die indexierte, nicht die starre Steuer.\n\nDie Aussage ist falsch.",
+        "Indexierte Steuer 9.903,4375 < 10.547,03125. Netto 42.502,8125 / 1,075 = 39.537,5.\n\nDie Aussage ist wahr.",
+        "Nominal steigt starr und indexiert. Real steigt nur bei Indexierung; starr fällt es.\n\nDie Aussage ist falsch.",
+        "Nominal 10.547,03125−9.903,4375=643,59375. Realer Nettovorteil ≈598,69. Durch 1,075 teilen.\n\nDie Aussage ist falsch."
       ]
     },
     {
       "case_id": "WISO-M2-E06",
       "id": "WISO-M2-E06",
-      "title": "Kurzfristig erzeugen, langfristig gehen",
-      "subsection": "3.3",
+      "title": "Teilweise Leasingaktivierung, zwei Klauseln",
+      "subsection": "3.4",
       "chapter": 3,
       "difficulty_level": "5/5",
-      "context": "Fixkosten 30, in der kurzen Frist versunken, in der langen Frist vermeidbar. Variable Kosten sind ein halb mal Menge zum Quadrat plus 5 mal Menge. Der Preis ist 8. Ein zweiter Preis von 5 wird nur für die Angebotsentscheidung verglichen. Bewerten Sie jede Aussage.",
+      "context": "Vor Aktivierung: Umlaufvermögen 287,5, kurzfristige Schulden 187,5, Vermögen 875, Eigenkapital 287,5. Ein Leasingvertrag hat Barwert 125; davon sind 37,5 innerhalb eines Jahres fällig, der Rest langfristig. Der geleaste Gegenstand ist nicht umlaufend. Nach Aktivierung steigen Vermögen und Schulden um 125; in die Liquiditätskennzahl fließt nur der kurzfristige Teil. Klauseln verlangen Liquidität ≥ 1,4 und EK-Quote ≥ 36 %. Bewerten Sie jede Aussage.",
       "statements": [
-        "Beim Preis 8 wird in der kurzen Frist eine positive Menge erzeugt, und in der langen Frist wird der Markt verlassen.",
-        "Beim Preis 8 wird sofort eingestellt, weil der Gewinn negativ ist.",
-        "Die langfristige Entscheidung vergleicht den Preis mit den gesamten Stückkosten an der kurzfristigen Menge, und dieser Vergleich geht beim Preis 8 gegen das Verbleiben.",
-        "Ein Preis von 5 zieht ein positives Angebot, weil er die untere Grenze der variablen Stückkosten berührt.",
-        "Es gibt Preise über 8, bei denen der Gewinn positiv ist. Der Preis 8 gehört nicht dazu."
+        "Nach fristgerechter Aktivierung scheitert die Liquiditätsklausel, die EK-Klausel bleibt erfüllt.",
+        "Die ganzen 125 sind kurzfristig, weil Raten laufend gezahlt werden.",
+        "Gegenstand ins Umlaufvermögen legen, weil die nächste Rate bald fällig ist, vermischt Gegenstand und Schuldfristigkeit.",
+        "Vermögen und Schulden +125 ⇒ EK-Quote unverändert.",
+        "Fristgerecht mit nur 37,5 im Nenner liegt die Liquidität unter 1,4; mit allen 125 wäre sie noch tiefer darunter. Der kurze Teil ist die fristgerechte, nicht die einzige unter 1,4 fallende Rechnung."
       ],
       "answer_key": [
-        true,
+        false,
         false,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "Grenzkosten sind Menge plus 5. Beim Preis 8 ist die Menge 3. Die variablen Stückkosten sind dort 6,5 und liegen unter 8, die gesamten Stückkosten 16,5 liegen darüber. Der Deckungsbeitrag ist positiv, der Gewinn negativ. Kurzfristig erzeugen, langfristig gehen.\n\nDie Aussage ist wahr.",
-        "Negativer Gewinn heißt, dass die Fixkosten nicht gedeckt sind. In der kurzen Frist sind sie versunken. Entscheidend gegen die Einstellung ist, dass der Preis über den variablen Stückkosten liegt. Der Verlust ist kleiner als die Fixkosten.\n\nDie Aussage ist falsch.",
-        "Die kurzfristige Menge bleibt 3, weil dort Grenzkosten und Preis gleich sind. Die gesamten Stückkosten an dieser Stelle liegen über 8. Die lange Frist vermeidet die Fixkosten durch Austritt.\n\nDie Aussage ist wahr.",
-        "Variable Stückkosten sind ein halb mal Menge plus 5 und liegen für jede positive Menge echt über 5. Grenzkosten gleich 5 erzwingen die Menge 0. Berühren im Grenzwert ist kein positives Angebot.\n\nDie Aussage ist falsch.",
-        "Das Minimum der gesamten Stückkosten liegt bei der Menge Wurzel aus 60 und bei den Stückkosten 5 plus dieser Wurzel, also über 12. Jeder Preis darüber trägt einen positiven Gewinn. 8 liegt darunter.\n\nDie Aussage ist wahr."
+        "Liquidität 287,5/(187,5+37,5)=287,5/225≈1,278 < 1,4. EK-Quote 287,5/(875+125)=287,5/1.000=28,75 % < 36 %. Beide scheitern.\n\nDie Aussage ist falsch.",
+        "Kurzfristig nur 37,5. Laufende Zahlung macht die Restschuld nicht insgesamt kurzfristig.\n\nDie Aussage ist falsch.",
+        "Die Rate erhöht die kurzfristigen Schulden; der Gegenstand bleibt langfristig, solange er nicht umlaufend ist.\n\nDie Aussage ist wahr.",
+        "Zähler 287,5 bleibt, Nenner wird 1.000. Quote sinkt von 32,857… % auf 28,75 %.\n\nDie Aussage ist falsch.",
+        "Fristgerecht 287,5/225≈1,278 < 1,4. Mit allen 125: 287,5/312,5=0,92. Beide unter 1,4; fristgerecht zählt nur 37,5.\n\nDie Aussage ist wahr."
       ]
     },
     {
       "case_id": "WISO-M2-E07",
       "id": "WISO-M2-E07",
-      "title": "Zwei Klauseln, dann eine Rückstellung",
-      "subsection": "3.4",
+      "title": "Fixkostensprung und zwei Gewinnschwellen",
+      "subsection": "3.3",
       "chapter": 3,
       "difficulty_level": "5/5",
-      "context": "Eigenkapital 200, Vermögen 500. Betriebsergebnis 30, Zinsen 18. Eine Klausel verlangt eine Eigenkapitalquote von mindestens 35 Prozent, eine zweite eine Deckung der Zinsen von mindestens 2. Danach wird eine Rückstellung von 40 passiviert, ohne dass sich das Betriebsergebnis oder die Zinsen schon ändern. Bewerten Sie jede Aussage.",
+      "context": "Stückpreis 47,5, variable Stückkosten 28,75, also Stückdeckungsbeitrag 18,75. Fixkosten springen: bis einschließlich 420 Stück gelten 7.125; ab der 421. Einheit gelten 13.125. Es gibt damit zwei Gewinnschwellen, eine je Fixkostenschicht, und eine Lücke zwischen Kapazitätsgrenze der billigen Schicht und der teuren Schwelle. Prüfen Sie Erreichbarkeit, Vorzeichen bei 420 und 650 sowie den Sprungeffekt. Bewerten Sie jede Aussage.",
       "statements": [
-        "Vor der Rückstellung besteht die Eigenkapitalklausel, und die Zinsklausel besteht nicht.",
-        "Die Rückstellung heilt die Zinsklausel, weil sie Schulden in Eigenkapital umwandelt.",
-        "Nach der Rückstellung scheitern beide Klauseln.",
-        "Die Rückstellung senkt die Eigenkapitalquote und hebt die Zinsdeckung.",
-        "Vor der Rückstellung geben die beiden Klauseln verschiedene Ergebnisse, nach der Rückstellung dasselbe."
+        "Die Gewinnschwelle der billigen Schicht liegt unter 420 und ist erreichbar. Bei 420 ist der Gewinn positiv.",
+        "Die Gewinnschwelle der teuren Schicht liegt über 420. Bei 650 liegt trotzdem Verlust.",
+        "Jede Menge über 380 ist Gewinn, weil der Stückdeckungsbeitrag positiv bleibt.",
+        "Der Sprung 6.000 ist größer als der Gewinn bei 420. Die erste Einheit jenseits von 420 rutscht in den Verlust.",
+        "Bei 650 liegt der Gewinn über dem bei 420, weil nach dem Sprung jede Einheit 18,75 beiträgt."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "200 von 500 sind 40 Prozent und liegen über 35. 30 durch 18 ist 1,67 und liegt unter 2. Die beiden Klauseln fallen vor der Rückstellung auseinander.\n\nDie Aussage ist wahr.",
-        "Eine Rückstellung erhöht die Schulden und senkt das Eigenkapital. Die Zinsen bleiben 18, das Betriebsergebnis 30. Die Deckung bleibt unter 2. Die Richtung der Umbuchung ist die entgegengesetzte.\n\nDie Aussage ist falsch.",
-        "Eigenkapital 160 bei unverändertem Vermögen 500 ist 32 Prozent und liegt unter 35. Die Zinsdeckung bleibt 1,67. Aus einer bestandenen und einer gescheiterten Klausel werden zwei gescheiterte.\n\nDie Aussage ist wahr.",
-        "Die Quote sinkt. Die Deckung bleibt, sie steigt nicht. Wer die Rückstellung wie eine Zinsersparnis liest, erfindet eine Zahlung, die der Sachverhalt ausschließt.\n\nDie Aussage ist falsch.",
-        "Vorher besteht nur die Eigenkapitalklausel. Nachher scheitern beide. Ein Blick auf nur eine Klausel genügt vor der Rückstellung nicht und genügt nachher nur deshalb, weil beide in dieselbe Richtung gekippt sind.\n\nDie Aussage ist wahr."
+        "Stückdeckungsbeitrag 18,75. BE₁=7.125/18,75=380 < 420. Bei 420: 18,75·420−7.125=750.\n\nDie Aussage ist wahr.",
+        "BE₂=13.125/18,75=700. Bei 650: 18,75·650−13.125=−937,5.\n\nDie Aussage ist wahr.",
+        "Nach dem Sprung gilt BE₂=700. Zwischen 421 und 700 Verlust trotz positivem Deckungsbeitrag.\n\nDie Aussage ist falsch.",
+        "6.000 > 750. Bei 421: 18,75·421=7.893,75; 7.893,75−13.125=−5.231,25 < 0.\n\nDie Aussage ist wahr.",
+        "−937,5 < 750. Der positive Grenzbeitrag holt den Sprung bis 650 nicht ein.\n\nDie Aussage ist falsch."
       ]
     },
     {
       "case_id": "WISO-M2-E08",
       "id": "WISO-M2-E08",
-      "title": "Zweiter Markt mit Eintrittskosten",
+      "title": "Zwei Märkte, gemeinsamer Preis",
       "subsection": "1.4",
       "chapter": 1,
       "difficulty_level": "5/5",
-      "context": "Markt 1: Preis = 24 minus Menge. Markt 2: Preis = 16 minus Menge. Grenzkosten überall 6, keine Fixkosten außer einer einmaligen Kosten von 30, wenn Markt 2 überhaupt beliefert wird. Bewerten Sie jede Aussage.",
+      "context": "Zwei getrennte Märkte, konstante Grenzkosten 7,5, keine Fixkosten. Markt 1: P=37,5−0,625Q. Markt 2: P=22,5−0,625Q. Regime A: getrennte Monopolpreise je Markt. Regime B: ein gemeinsamer Einheitspreis über beide Märkte, solange beide nachfragen. Zusätzlich: Markt 2 ganz schließen und nur Markt 1 bedienen. Mengenverschiebung, Gewinnvergleich und zufälliges Mittel der Trennungspreise sind zu prüfen. Bewerten Sie jede Aussage.",
       "statements": [
-        "Ohne die einmaligen Kosten würden beide Märkte beliefert, und Markt 2 trüge positiv zum Gewinn bei.",
-        "Mit den einmaligen Kosten bleibt Markt 2 lohnend, weil sein Preis über den Grenzkosten liegt.",
-        "Die einmaligen Kosten ändern die optimale Menge in Markt 2 nicht, falls der Markt beliefert wird. Sie können aber ändern, ob er beliefert wird.",
-        "Markt 2 zu öffnen erhöht den Gesamtgewinn, sobald der Beitrag positiv ist.",
-        "Die Monopolmenge in Markt 1 ist größer als die Menge, die Markt 2 ohne die einmaligen Kosten hätte. Die Eintrittskosten sind für diesen Vergleich nicht nötig."
+        "Getrennte Preise bringen mehr Gewinn als der gemeinsame Preis. Beim gemeinsamen Preis bleiben beide Märkte offen.",
+        "Im kleineren Markt liegt der getrennte Preis unter den Grenzkosten.",
+        "Beim Einheitspreis steigt die Menge im großen Markt und fällt im kleinen; die Summe bleibt 36, der Gewinn nicht.",
+        "Einheitspreis = Mittel der Trennungspreise und deshalb gewinnmaximal.",
+        "Markt 2 zu schließen kostet mehr Gewinn als die Trennung gegenüber dem Einheitspreis einbringt."
       ],
       "answer_key": [
         true,
@@ -233,27 +233,27 @@
         true
       ],
       "tactical_explanations": [
-        "Grenzumsatz gleich 6 gibt in Markt 1 die Menge 9 und den Preis 15, Beitrag 81. In Markt 2 die Menge 5 und den Preis 11, Beitrag 25. Beide Beiträge sind positiv, solange die 30 nicht anfallen.\n\nDie Aussage ist wahr.",
-        "Der Preis 11 liegt über 6, der Beitrag ist 25. Die einmaligen Kosten sind 30 und größer als dieser Beitrag. Ein Preis über den Grenzkosten trägt den Eintritt nicht, wenn der ganze Beitrag die Eintrittskosten nicht deckt.\n\nDie Aussage ist falsch.",
-        "Ist der Markt offen, bleiben Grenzumsatz und Grenzkosten dieselben, die Menge bleibt 5. Die 30 sind dann versunken für die Mengenwahl und entscheidend für die vorherige Öffnung. 25 gegen 30 schließt den Markt.\n\nDie Aussage ist wahr.",
-        "Positiv gegenüber null ist 25. Gegen die 30 ist derselbe Beitrag negativ. Der relevante Vergleich hängt daran, welche Kosten durch die Öffnung erst entstehen.\n\nDie Aussage ist falsch.",
-        "9 gegen 5 folgt allein aus den beiden Grenzumsätzen. Die 30 entscheiden die Öffnung und nicht diese Rangfolge der Mengen.\n\nDie Aussage ist wahr."
+        "Getrennt: Q₁=24, P₁=22,5, π=360; Q₂=12, P₂=15, π=90; Summe 450. Gemeinsam Q=36, P=18,75, π=405. Markt 2: Q₂=6 > 0.\n\nDie Aussage ist wahr.",
+        "P₂=15 > 7,5.\n\nDie Aussage ist falsch.",
+        "24→30 und 12→6, Summe 36. Gewinn 450→405.\n\nDie Aussage ist wahr.",
+        "Mittel (22,5+15)/2=18,75 trifft den Einheitspreis zufällig. Gewinn 405 liegt trotzdem unter der Trennung 450; Zufallsgleichheit begründet kein Maximum.\n\nDie Aussage ist falsch.",
+        "π₂=90 > 450−405=45.\n\nDie Aussage ist wahr."
       ]
     },
     {
       "case_id": "WISO-M2-E09",
       "id": "WISO-M2-E09",
-      "title": "Studium, Abzinsung, Abbruch",
+      "title": "Studium mit Abbruchrisiko und Abzinsung",
       "subsection": "3.3",
       "chapter": 3,
       "difficulty_level": "5/5",
-      "context": "Ein Studium kostet heute 8.000. Bei Erfolg bringt es fünf Jahre lang je 2.500 zusätzliche Lohnkaufkraft. Der Zinssatz ist 8 Prozent. Mit Wahrscheinlichkeit 40 Prozent bricht die Person nach der Zahlung ab und erhält keine Lohndifferenz. Bewerten Sie jede Aussage.",
+      "context": "Studieninvestition kostet heute 11.250. Bei Erfolg fließen fünf Jahre lang je 3.375 zusätzliche Lohnkaufkraft. Diskontsatz 7,5 % p. a. Mit Wahrscheinlichkeit 37,5 % Abbruch unmittelbar nach der Zahlung: dann keine Lohndifferenz. Mit 62,5 % Erfolg: volle fünf Zahlungen. Vergleichen Sie undiskontierte Summe, sicheren Rentenbarwert und erwarteten Barwert unter Abbruchrisiko. Bewerten Sie jede Aussage.",
       "statements": [
-        "Ohne Abzinsung übersteigen die Lohnzuwächse die Kosten. Auch abgezinst und sicher übersteigt ihr Gegenwartswert die Kosten.",
-        "Mit dem Abbruchrisiko liegt der erwartete Gegenwartswert der Lohnzuwächse immer noch über den Kosten.",
+        "Ohne Abzinsung übersteigen die Lohnzuwächse die Kosten. Auch abgezinst und sicher übersteigt ihr Barwert die Kosten.",
+        "Mit Abbruchrisiko liegt der erwartete Barwert der Lohnzuwächse über den Kosten.",
         "Das Abbruchrisiko kehrt die Entscheidung gegenüber dem sicheren Fall um.",
-        "Weil der jährliche Zuwachs positiv ist, ist auch der erwartete Kapitalwert positiv.",
-        "Die sichere Investition wäre auch ohne jede Abzinsung akzeptabel. Die Abzinsung verkleinert ihren Vorteil und löscht ihn nicht."
+        "Positiver Jahreszuwachs ⇒ erwarteter Kapitalwert positiv.",
+        "Sicher wäre die Investition auch ohne Abzinsung akzeptabel; Abzinsung verkleinert den Vorteil und löscht ihn nicht."
       ],
       "answer_key": [
         true,
@@ -263,41 +263,41 @@
         true
       ],
       "tactical_explanations": [
-        "Fünf mal 2.500 sind 12.500 und liegen über 8.000. Der Rentenbarwertfaktor über fünf Jahre zu 8 Prozent liegt knapp unter 4. 2.500 mal dieser Faktor liegt über 8.000. Sicherheit und Abzinsung reichen noch für die Investition.\n\nDie Aussage ist wahr.",
-        "Nur 60 Prozent der Fälle tragen den Barwert. 60 Prozent dieses Barwerts liegen unter 8.000. Der sichere Fall und der erwartete Fall fallen auf verschiedene Seiten der Kosten.\n\nDie Aussage ist falsch.",
-        "Sicher ist der Kapitalwert positiv, erwartet negativ. Dieselbe Lohnreihe wechselt das Vorzeichen nur durch die Wahrscheinlichkeit. Wer die Wahrscheinlichkeit erst nach der Abzinsung ansetzt oder gar nicht, bleibt auf der falschen Seite.\n\nDie Aussage ist wahr.",
-        "Ein positiver jährlicher Zuwachs übersteht weder automatisch die Abzinsung noch die Wahrscheinlichkeit. Hier übersteht er die Abzinsung und scheitert an der Wahrscheinlichkeit.\n\nDie Aussage ist falsch.",
-        "12.500 und der abgezinste Betrag liegen beide über 8.000. Der Abstand wird kleiner und bleibt positiv. Erst die Wahrscheinlichkeit löscht ihn.\n\nDie Aussage ist wahr."
+        "5·3.375=16.875 > 11.250. Rentenbarwertfaktor 5 Jahre bei 7,5 % ≈4,04558; 3.375·4,04558≈13.653,8 > 11.250.\n\nDie Aussage ist wahr.",
+        "Erfolgswahrscheinlichkeit 0,625. 0,625·13.653,8≈8.533,6 < 11.250.\n\nDie Aussage ist falsch.",
+        "Sicher positiv (≈13.653,8−11.250), erwartet negativ (≈8.533,6−11.250).\n\nDie Aussage ist wahr.",
+        "Abzinsung und Wahrscheinlichkeit können kippen; hier kippt die Wahrscheinlichkeit den schon abgezinsten Vorteil.\n\nDie Aussage ist falsch.",
+        "16.875 und ≈13.653,8 liegen beide über 11.250. Erst 0,625·Barwert fällt darunter.\n\nDie Aussage ist wahr."
       ]
     },
     {
       "case_id": "WISO-M2-E10",
       "id": "WISO-M2-E10",
-      "title": "Dieselbe Bürgschaft, zwei Gläubiger",
+      "title": "GmbH-Bürgschaft mit Vorbelastung",
       "subsection": "3.1",
       "chapter": 3,
       "difficulty_level": "5/5",
-      "context": "Eine GmbH schuldet Gläubiger A 40.000. Im Gesellschaftsvermögen liegen 15.000. Gesellschafter B schuldet noch 6.000 Nachschuss und hat keine Bürgschaft gegeben. Gesellschafter C hat eine Bürgschaft über höchstens 10.000 gegeben, die schon einen anderen Gläubiger und diese Schuld gemeinsam deckt. Der andere Gläubiger nimmt davon 8.000 in Anspruch. Eine offene Handelsgesellschaft hätte keine solche Obergrenze. Bewerten Sie jede Aussage.",
+      "context": "GmbH schuldet Gläubiger A 87.500. Im Gesellschaftsvermögen liegen 28.750. Gesellschafter B schuldet noch 11.250 Nachschuss und hat keine Bürgschaft übernommen. Gesellschafter C hat eine Bürgschaft mit Obergrenze 18.750, davon sind bereits 6.250 für einen anderen Gläubiger verbraucht. Vergleichen Sie volle Decke gegen freien Rest, die Lücke nach Vermögen und Nachschuss sowie dieselbe Schuld in einer OHG ohne vertragliche Obergrenze. Bewerten Sie jede Aussage.",
       "statements": [
-        "Nach dem Nachschuss bleibt eine Lücke. Selbst die noch ungeschmälerte Obergrenze der Bürgschaft würde sie nicht schließen.",
-        "Weil die Obergrenze 10.000 ist, kann Gläubiger A nach der anderen Schuld weiterhin 10.000 aus der Bürgschaft verlangen.",
-        "Die andere Schuld verkürzt, was A aus der Bürgschaft noch erreichen kann, und in beiden Lesarten bleibt eine Lücke.",
-        "In der offenen Handelsgesellschaft könnte dieselbe Geschäftsschuld persönliches Vermögen ohne diese Obergrenze erreichen.",
-        "Der Nachschuss deckt mehr von der Lücke als der noch freie Rest der Bürgschaft."
+        "Nach dem Nachschuss bleibt eine Lücke. Selbst die volle Bürgschaftsobergrenze würde sie nicht schließen.",
+        "A kann nach der anderen Schuld weiterhin 18.750 aus der Bürgschaft verlangen.",
+        "Die Vorbelastung verkürzt, was A erreicht; in beiden Lesarten bleibt eine Lücke.",
+        "In der OHG könnte dieselbe Schuld persönliches Vermögen ohne diese Obergrenze erreichen.",
+        "Der Nachschuss deckt streng mehr von der Lücke als der noch freie Bürgschaftsrest."
       ],
       "answer_key": [
         true,
         false,
         true,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "15.000 plus 6.000 sind 21.000. Gegen 40.000 bleiben 19.000. Die Obergrenze ist 10.000 und liegt darunter. Schon vor der zweiten Schuld ist die Bürgschaft zu klein.\n\nDie Aussage ist wahr.",
-        "Dieselbe Obergrenze ist gemeinsam. 8.000 sind verbraucht, es bleiben 2.000. Die Obergrenze ist kein Betrag je Gläubiger.\n\nDie Aussage ist falsch.",
-        "Mit vollen 10.000 blieben 9.000 offen, mit den verbleibenden 2.000 bleiben 17.000 offen. Die andere Schuld verändert die Größe der Lücke und nicht die Tatsache, dass eine Lücke bleibt.\n\nDie Aussage ist wahr.",
-        "Die Obergrenze ist ein Vertrag neben der GmbH. Die offene Handelsgesellschaft hat diese Decke nicht. Die Rechtsform ändert nicht die 40.000, sondern wer den Rest tragen muss.\n\nDie Aussage ist wahr.",
-        "Der Nachschuss bringt 6.000 in das Gesellschaftsvermögen. Der freie Rest der Bürgschaft ist 2.000. 6.000 schließen mehr als 2.000, und beide zusammen schließen die 19.000 nicht.\n\nDie Aussage ist wahr."
+        "Lücke nach Vermögen und Nachschuss: 87.500−28.750−11.250=47.500 > 18.750.\n\nDie Aussage ist wahr.",
+        "Restobergrenze 18.750−6.250=12.500, nicht die volle Decke.\n\nDie Aussage ist falsch.",
+        "Mit voller Decke Restlücke 47.500−18.750=28.750; mit freiem Rest 47.500−12.500=35.000.\n\nDie Aussage ist wahr.",
+        "Die Obergrenze ist GmbH-vertraglich; die OHG hat diese Decke nicht.\n\nDie Aussage ist wahr.",
+        "Nachschuss 11.250 < freier Rest 12.500. Nicht streng mehr.\n\nDie Aussage ist falsch."
       ]
     }
   ],
@@ -654,83 +654,83 @@
     {
       "case_id": "WISO-M2-M01",
       "id": "WISO-M2-M01",
-      "title": "Fünf Regeln, drei davon entbehrlich allein",
+      "title": "Acht Regeln für einen Fünferausschuss",
       "chapter": 1,
       "subsection": "1.5",
       "difficulty_level": "5/5",
-      "context": "Aus $\\{1,2,3,4,5,6\\}$ wird eine dreielementige Menge gewählt.\n\n(1) Wenn $1$ enthalten ist, ist $2$ nicht enthalten.\n\n(2) $3$ ist genau dann enthalten, wenn $4$ enthalten ist.\n\n(3) Von $5$ und $6$ ist genau eine Zahl enthalten.\n\n(4) Wenn $2$ nicht enthalten ist, ist $6$ enthalten.\n\n(5) Die Summe der drei Zahlen ist eine Primzahl.\n\nBewerten Sie jede Aussage. Eine Regel heißt allein entbehrlich, wenn ihr Wegfall die Lösungsmenge nicht vergrößert.",
+      "context": "Aus acht Personen $\\{P_1,\\ldots,P_8\\}$ wird ein Ausschuss mit genau fünf Mitgliedern gebildet. Es gelten alle acht Regeln zugleich:\n\n(1) $P_1$ ist genau dann Mitglied, wenn $P_2$ Mitglied ist.\n\n(2) Wenn $P_2$ Mitglied ist, dann ist $P_3$ Mitglied.\n\n(3) Genau eine der Personen $P_3$ und $P_4$ ist Mitglied.\n\n(4) Wenn $P_4$ Mitglied ist, dann ist $P_5$ nicht Mitglied.\n\n(5) Mindestens eine der Personen $P_5$ und $P_6$ ist Mitglied.\n\n(6) Wenn $P_6$ Mitglied ist, dann ist $P_7$ nicht Mitglied.\n\n(7) Wenn $P_7$ Mitglied ist, dann ist $P_1$ Mitglied.\n\n(8) $P_8$ ist Mitglied.\n\nBewerten Sie jede Aussage.",
       "statements": [
-        "Es gibt genau eine zulässige Menge.",
-        "Regel (4) ist allein entbehrlich.",
-        "Regel (5) ist allein entbehrlich, und Regel (2) ist ebenfalls allein entbehrlich.",
-        "Lässt man nur Regel (1) weg, entsteht eine zulässige Menge, die $1$ und $2$ zugleich enthält.",
-        "Es gibt eine Regel, deren Wegfall die Anzahl der Lösungen mehr als verdoppelt."
+        "Es gibt genau zwei zulässige Belegungen.",
+        "In jeder zulässigen Belegung ist $P_8$ Mitglied, und $P_4$ ist Mitglied.",
+        "Regel (8) ist allein entbehrlich: ohne sie bleibt dieselbe Lösungsmenge.",
+        "In jeder zulässigen Belegung ist $P_3$ Mitglied, und $P_5$ ist Mitglied.",
+        "Regel (5) ist allein entbehrlich: ohne sie bleibt dieselbe Lösungsmenge."
       ],
       "answer_key": [
         true,
-        true,
         false,
         false,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie Bedingungen (1) bis (4) allein ließen schon nur $\\{3,4,6\\}$ zu, und deren Summe ist prim. Keine andere dreielementige Menge erfüllt alle fünf zugleich. Die Anzahl folgt erst aus dem vollständigen Ausschluss, nicht aus einer vorgezeigten Menge.\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\nDie einzige Menge, die (1), (2), (3) und (5) erfüllt und an (4) scheitern würde, hat eine zusammengesetzte Summe und scheitert deshalb schon an (5). Nach dem Wegfall von (4) bleibt dieselbe eine Lösung.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\n(5) ist allein entbehrlich, weil (4) dieselbe Konkurrenzmenge schon ausschließt. (2) ist es nicht: ohne (2) werden Mengen zulässig, die genau eine der Zahlen $3$ und $4$ enthalten. Die Konjunktion scheitert an der zweiten Regel.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nJede Menge mit $1$ und $2$ verfehlt schon (2), (3) oder (5). Der Wegfall von (1) ändert die Lösungsmenge nicht. Eine Menge mit beiden Zahlen entsteht dadurch nicht.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nOhne (2) sind es vier Lösungen statt einer. Das ist mehr als das Doppelte. Ohne (3) sind es genau zwei, also nur eine Verdopplung. Die Aussage verlangt mehr als das Doppelte und trifft deshalb nur den Wegfall von (2).\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie acht Regeln und die feste Größe fünf lassen nach Fallunterscheidung an (3) und an (5) genau zwei Fünferausschüsse übrig. Beide enthalten $P_1,P_2,P_3,P_8$ und unterscheiden sich bei $P_5$ und $P_6$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$P_8$ ist durch (8) erzwungen. $P_4$ ist in keiner der beiden Lösungen Mitglied: die XOR-Bedingung mit $P_3$ und die Kette aus (1)–(2) schließen $P_4$ aus.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nOhne (8) entstehen zusätzliche Fünferausschüsse, die $P_8$ weglassen und eine andere Person nachrücken lassen.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\n$P_3$ ist in beiden Lösungen Mitglied. $P_5$ fehlt in $\\{P_1,P_2,P_3,P_6,P_8\\}$. Die Konjunktion scheitert.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nOhne (5) wird zusätzlich $\\{P_1,P_2,P_3,P_7,P_8\\}$ zulässig. Die Lösungsmenge wird echt größer.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Mit allen fünf Regeln bleibt nur $\\{3,4,6\\}$, Summe $13$. Die Menge $\\{3,4,5\\}$ verletzt (4) und hat die Summe $12$, verletzt also auch (5). Deshalb bleibt beim Wegfall von nur (4) oder nur (5) dieselbe eine Lösung. Auch (1) bindet nie: jede Menge mit $1$ und $2$ scheitert schon an (2), (3) oder (5). Der Wegfall von (2) lässt drei weitere Mengen zu, der Wegfall von (3) eine weitere.",
+      "solution_overview": "Aus (8) ist $P_8$ erzwungen. Fallunterscheidung an der XOR-Bedingung (3) und Ketten über (1)–(2) und (4)–(7) bei fester Größe fünf lassen genau zwei zulässige Belegungen übrig: $\\{P_1,P_2,P_3,P_5,P_8\\}$ und $\\{P_1,P_2,P_3,P_6,P_8\\}$. In beiden ist $P_3$ Mitglied und $P_4$ nicht.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M02",
       "id": "WISO-M2-M02",
-      "title": "Kürzen, dann ein neues Vorzeichen",
+      "title": "Geschachtelte Brüche ohne Kürzungshilfe",
       "chapter": 2,
       "subsection": "2.2",
       "difficulty_level": "5/5",
-      "context": "Für die zulässigen $x$ sei\n\\[\nh(x)=\\frac{x^{2}-5x+6}{x^{2}-x-6}-\\frac{x-1}{x+2}.\n\\]\nGesucht ist die Lösungsmenge von $h(x)\\ge 0$. Bewerten Sie jede Aussage.",
+      "context": "Es sei\n\\[\nf(x)=\\dfrac{\\dfrac{2x-7}{3x+1}-\\dfrac{x+4}{2x-5}}{\\dfrac{5x-2}{x-3}+\\dfrac{1}{4}}\n\\]\nfür alle $x$, für die kein Nenner verschwindet. Zusätzlich werden die Stellen geprüft, an denen ein innerer Nenner null wäre. Bewerten Sie jede Aussage.",
       "statements": [
-        "Nach dem Kürzen eines gemeinsamen Faktors ist $h$ nirgends gleich null.",
-        "Die gekürzte Stelle liegt in der Lösungsmenge.",
-        "Die Lösungsmenge ist ein offener Strahl, der die Polstelle nicht enthält.",
-        "Die Lösungsmenge enthält eine positive Zahl.",
-        "Weil sich ein Faktor kürzt, erfüllt die gekürzte Stelle die ursprüngliche Ungleichung."
+        "Die Definitionsmenge hat mindestens vier verschiedene Lücken.",
+        "Nach dem Zusammenfassen kürzt sich $f$ zu einer konstanten Funktion auf dem Definitionsbereich.",
+        "An jeder Definitionslücke hat $f$ eine Polstelle.",
+        "Es gibt eine Definitionslücke links von $0$ und mindestens zwei rechts von $0$.",
+        "Weil jeder Bruch linear über linear ist, genügt es, nur den äußeren Nenner auf null zu prüfen."
       ],
       "answer_key": [
         true,
         false,
-        true,
         false,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDer erste Zähler teilt mit dem Nenner den Faktor $x-3$. Danach bleibt eine Differenz mit dem Nenner $x+2$, die sich zu $-\\dfrac{1}{x+2}$ zusammenzieht. Dieser Term hat keine Nullstelle. Kürzen und Zusammenfassen sind zwei Schritte, erst dann sieht man die Nullstellenfreiheit.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nAn $x=3$ ist der ursprüngliche erste Bruch nicht definiert. Außerdem wäre der vereinfachte Term dort negativ. Die Stelle scheitert doppelt: sie liegt nicht im Definitionsbereich, und sie läge auch nicht auf der richtigen Seite der Ungleichung.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$-\\dfrac{1}{x+2}\\ge 0$ gilt genau links der Polstelle, die Polstelle selbst nicht. Der Strahl ist nach links unbeschränkt und nach rechts offen. $x=3$ liegt nicht in diesem Strahl.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nDer Strahl liegt ganz links von $-2$. Jede positive Zahl liegt rechts der Polstelle, dort ist $h$ negativ oder nicht definiert. Das Vorzeichen der vereinfachten Funktion muss man kennen, bevor diese Richtung feststeht.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\nKürzen entfernt eine Definitionslücke nicht aus dem ursprünglichen Ausdruck. An der Lücke ist $h$ nicht definiert, also keine Lösung. Der Wert des gekürzten Terms ist eine andere Funktion.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie beiden inneren Nenner $3x+1$ und $2x-5$, der Nenner $x-3$ und der zusammengefasste Nenner der unteren Zeile sind vier verschiedene Bedingungen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Zählerkombination und die Nennerkombination sind teilerfremd. Es bleibt eine echte rationale Funktion.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nManche Lücken entstehen nur aus einem inneren Bruch und können hebbar sein. Nicht jede Lücke ist ein Pol.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$x=-\\dfrac13$ liegt links von $0$. $x=\\dfrac52$ und $x=3$ liegen rechts.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nJeder innere Nenner ist eine eigene Bedingung, bevor der äußere Bruch überhaupt gebildet wird.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Der erste Bruch ist $\\dfrac{x-2}{x+2}$ für $x\\neq 3$, der gemeinsame Nenner danach liefert $h(x)=-\\dfrac{1}{x+2}$ für $x\\neq 3$ und $x\\neq -2$. Nichtnegativ ist das nur für $x<-2$. Die Stelle $x=3$ bleibt ausgeschlossen.",
+      "solution_overview": "Jeder innere Nenner und der äußere Nenner erzeugen eigene Definitionslücken: $x=-\\dfrac13$, $x=\\dfrac52$, $x=3$ und die Nullstelle des zusammengefassten äußeren Nenners $x=\\dfrac{11}{21}$. Nach dem Hauptnenner kürzen sich Zähler und Nenner nicht zu einer linearen Identität.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M03",
       "id": "WISO-M2-M03",
-      "title": "Zwei Jahre nur Zins, dann Tilgung",
+      "title": "Sechs Zahlungen, 7,5 Prozent, Rest nach drei",
       "chapter": 3,
       "subsection": "3.6",
       "difficulty_level": "5/5",
-      "context": "Ein Kredit über $20\\,000$ wird mit $8\\%$ pro Jahr verzinst. Vertrag Z verlangt zwei Jahre lang nur die Zinsen und tilgt die unveränderte Schuld danach in drei gleichen jährlichen Annuitäten zum selben Satz. Vertrag A ist von Anfang an eine fünfjährige Annuität über dieselbe Schuld und denselben Satz. Bewerten Sie jede Aussage.",
+      "context": "Ein Kredit über EUR $87\\,500$ wird durch sechs gleiche Jahresendzahlungen bei effektivem Jahreszins $7{,}5\\%$ getilgt. Sei $A$ die Annuität und $B_k$ das Restkapital unmittelbar nach der Zahlung in Jahr $k$ ($B_0=87\\,500$). Zusätzlich wird eine Vergleichsannuität mit fünf gleichen Zahlungen über dieselbe Schuld und denselben Satz betrachtet. Bewerten Sie jede Aussage.",
       "statements": [
-        "Nach zwei Jahren schuldet Vertrag Z noch die volle ursprüngliche Schuld, und diese Restschuld ist höher als die Restschuld von Vertrag A zum selben Zeitpunkt.",
-        "Der Zinsvorlauf senkt die gesamte Zinslast, weil die ersten Zahlungen kleiner sind.",
-        "Die Annuität der letzten drei Jahre in Vertrag Z ist größer als die Annuität von Vertrag A und größer als die reine Zinszahlung.",
-        "Vertrag Z verlangt insgesamt weniger Zahlungen in der Summe, weil zwei seiner Zahlungen nur Zinsen sind.",
-        "Wer nur die erste Zahlung vergleicht, zieht Vertrag Z vor, und dieser Vertrag hat die höhere gesamte Zinslast."
+        "Die sechsjährige Annuität liegt zwischen EUR $18\\,500$ und EUR $19\\,000$.",
+        "Nach genau drei Zahlungen liegt das Restkapital unter der Hälfte der Anfangsschuld.",
+        "Die fünfjährige Annuität über derselben Schuld ist größer als die sechsjährige, und die Summe ihrer fünf Zahlungen liegt unter der Summe der sechs Zahlungen.",
+        "$B_1$ ist die Anfangsschuld minus $A$, weil die erste Zahlung voll tilgt.",
+        "Verdoppelt man den Zinssatz und lässt Laufzeit und Schuld gleich, verdoppelt sich die Annuität nicht."
       ],
       "answer_key": [
         true,
@@ -740,228 +740,228 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nVertrag Z tilgt zwei Jahre lang nichts. Vertrag A tilgt von der ersten Annuität an. Der Restbetrag einer Annuität nach $k$ Zahlungen ist $P\\dfrac{(1+r)^{n}-(1+r)^{k}}{(1+r)^{n}-1}$. Für $n=5$ und $k=2$ liegt er unter $20\\,000$. Der Vergleich braucht beide Verträge, nicht nur die Höhe der ersten Zahlung.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDie ersten Zahlungen sind kleiner, gerade weil sie nicht tilgen. Die Schuld bleibt länger hoch, die späteren Annuitäten werden größer, und die Summe aller Zahlungen liegt über der Summe der fünfjährigen Annuität. Kleinere Anfangszahlungen sind hier die teurere Struktur.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDieselbe Schuld wird in drei statt in fünf Jahren getilgt, also ist die Annuität höher. Die reine Zinszahlung deckt nur $8\\%$ der Schuld und enthält keine Tilgung. Beide Vergleiche gehen in dieselbe Richtung und aus verschiedenen Gründen.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nWeniger Tilgung am Anfang erhöht die spätere Zinsbasis. Die Gesamtsumme von Z liegt über der Gesamtsumme von A. Dass einzelne Zahlungen nur Zinsen sind, verkürzt die Summe nicht.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDie erste Zinszahlung liegt unter der ersten vollen Annuität. Dieselbe Struktur erzeugt über die fünf Jahre mehr Zinsen. Der Blick auf die erste Zahlung und der Blick auf die Zinslast wählen entgegengesetzt.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie Rentenformel mit $r=0{,}075$ und $n=6$ liefert einen Wert knapp unter $18\\,650$. Die Näherung $87500/6$ ist keine Annuität.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$B_3$ liegt bei etwa $48\\,480$ und damit über $43\\,750$. In der ersten Hälfte tilgt die Annuität weniger als die Hälfte.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nKürzere Laufzeit erzwingt die höhere Rate. Die Gesamtsumme der kürzeren Annuität ist trotzdem kleiner, weil weniger Jahre Zinsen auflaufen.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nVon $A$ gehen zuerst $0{,}075\\cdot 87500$ als Zinsen ab. $B_1=87500\\cdot 1{,}075-A$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDie Annuitätenformel ist nicht linear in $r$. Der Faktor $\\dfrac{r}{1-(1+r)^{-n}}$ verdoppelt sich nicht mit $r$.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Die Zinszahlung ist $1\\,600$. Die dreijährige Annuität auf $20\\,000$ ist größer als die fünfjährige Annuität auf $20\\,000$. Nach zwei Jahren schuldet Vertrag Z noch die vollen $20\\,000$, Vertrag A nur noch den Restbetrag der fünfjährigen Tilgung. Die Summe aller Zahlungen und damit die gesamte Zinslast ist bei Z höher.",
+      "solution_overview": "\\[\nA=87500\\cdot\\frac{0{,}075}{1-1{,}075^{-6}}\\approx 18641{,}43.\n\\]\nNach drei Zahlungen liegt $B_3$ über der Hälfte von $87\\,500$. Die fünfjährige Annuität ist größer als $A$; die Summe ihrer fünf Zahlungen liegt unter der Summe der sechs.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M04",
       "id": "WISO-M2-M04",
-      "title": "Quadrieren und der verlorene Bereich",
+      "title": "Rundfahrt, Wurzel, Betrag, Substitution",
       "chapter": 4,
-      "subsection": "4.3",
+      "subsection": "4.4",
       "difficulty_level": "5/5",
-      "context": "Gesucht sind alle reellen Lösungen von $\\sqrt{x+5}=x-1$. Bewerten Sie jede Aussage.",
+      "context": "Eine Strecke von $180\\,\\mathrm{km}$ wird hin mit konstanter Geschwindigkeit $v\\,\\mathrm{km/h}$ und zurück mit $v-15\\,\\mathrm{km/h}$ gefahren. Die Durchschnittsgeschwindigkeit der Rundfahrt ist das harmonische Mittel und beträgt $54\\,\\mathrm{km/h}$. Daraus entstehen nacheinander die Bruchgleichung für $v$, die nach dem Hauptnenner entstehende quadratische Gleichung, die Gleichung $\\sqrt{2v-15}=v-30$ und die Betragsgleichung $|v-60|=2{,}5$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die quadratische Gleichung nach dem Quadrieren hat zwei reelle Lösungen, und nur eine davon löst die Ausgangsgleichung.",
-        "Beide Lösungen der quadratischen Gleichung liegen dort, wo die rechte Seite der Ausgangsgleichung nichtnegativ ist.",
-        "Es gibt genau eine Lösung der Ausgangsgleichung, und sie ist größer als $1$.",
-        "Ersetzt man die rechte Seite durch ihren Betrag, werden beide Lösungen der quadratischen Gleichung zu Lösungen.",
-        "Beide Seiten sind auf dem ganzen Definitionsbereich der Wurzel nichtnegativ, deshalb kann Quadrieren keine Lösung außerhalb der Ausgangsgleichung erzeugen."
+        "Die Bruchgleichung hat genau eine zulässige Lösung oberhalb von $15$, und diese liegt zwischen $60$ und $65$.",
+        "Beide Wurzeln der nach dem Hauptnenner entstandenen quadratischen Gleichung lösen die Bruchgleichung der Rundfahrt.",
+        "Die Gleichung $\\sqrt{2v-15}=v-30$ hat im Bereich $v>15$ genau eine Lösung, und diese stimmt mit der Rundfahrtgeschwindigkeit überein.",
+        "Die Betragsgleichung hat zwei reelle Lösungen, und keine davon ist die Rundfahrtgeschwindigkeit.",
+        "Ersetzt man $54$ durch das arithmetische Mittel von $v$ und $v-15$, erhält man dieselbe Geschwindigkeit $v$."
       ],
       "answer_key": [
         true,
         false,
-        true,
+        false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie quadratische Gleichung zerfällt in zwei verschiedene reelle Linearfaktoren. Die negative Lösung macht die rechte Seite der Ausgangsgleichung negativ, während eine Quadratwurzel nicht negativ ist. Nur die Lösung im Bereich $x\\ge 1$ überlebt die Probe.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nNichtnegativ ist die rechte Seite erst ab $1$. Eine der beiden quadratischen Lösungen liegt darunter. Der Definitionsbereich der Wurzel allein, $x\\ge -5$, wäre zu weit.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nIm zulässigen Bereich bleibt eine Lösung, und sie liegt echt über der Grenze, an der die rechte Seite null wird. Die Grenze selbst erfüllt die quadratische Gleichung nicht.\n\nDie Aussage ist richtig.",
-        "**D.** → Richtig\n\nMit dem Betrag ist die rechte Seite überall nichtnegativ. Die vorher ausgeschlossene Lösung erfüllt dann Wurzel gleich Betrag, die schon zulässige Lösung erst recht. Der Betrag holt genau die Lösung zurück, die am Vorzeichen gescheitert ist.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nDie Wurzel ist links von $1$ definiert, die rechte Seite dort aber negativ. Quadriert man ohne die Vorzeichenbedingung, erscheint eine Lösung, die der Ausgangsgleichung nicht genügt. Die Nichtnegativität gilt nicht auf dem ganzen Wurzelbereich.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie quadratische Gleichung hat zwei positive Wurzeln, eine davon unter $15$. Für die Rückfahrt muss $v-15>0$ gelten. Nur die größere Wurzel bleibt.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie kleinere Wurzel macht die Rückfahrtgeschwindigkeit negativ oder null und ist keine zulässige Geschwindigkeit.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nRechts muss $v\\ge 30$ gelten. Quadrieren liefert Kandidaten, die die Ausgangsgleichung nicht erfüllen oder von der Rundfahrtwurzel verschieden sind.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$v=62{,}5$ und $v=57{,}5$. Die Rundfahrtwurzel liegt bei etwa $62{,}52$ und trifft keinen der beiden Werte.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDas arithmetische Mittel gleich $54$ erzwänge $v=61{,}5$. Das ist nicht die harmonische Lösung.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Die linke Seite ist für $x\\ge -5$ definiert, die rechte Seite muss für eine Gleichheit nichtnegativ sein, also $x\\ge 1$. Quadrieren ergibt $x+5=(x-1)^{2}$, also $x^{2}-3x-4=0$, mit den Lösungen $4$ und $-1$. Nur $4$ liegt im Bereich $x\\ge 1$ und erfüllt die Ausgangsgleichung.",
+      "solution_overview": "$\\dfrac{2v(v-15)}{2v-15}=54$ führt auf $v^{2}-69v+405=0$. Nur die Wurzel oberhalb von $15$ ist zulässig, etwa $62{,}52$. Die Wurzelgleichung hat im zulässigen Bereich keine Lösung. Die Betragsgleichung hat zwei Lösungen, von denen keine die Rundfahrtgeschwindigkeit ist.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M05",
       "id": "WISO-M2-M05",
-      "title": "Eindeutig, und trotzdem eine Null",
+      "title": "Drei Unbekannte, vier Schranken",
       "chapter": 5,
       "subsection": "5.5",
       "difficulty_level": "5/5",
-      "context": "Für eine reelle Zahl $k$ seien $x+2y=4$ und $kx+4y=8$ gegeben. Bewerten Sie jede Aussage.",
+      "context": "Gegeben sind\n\\[\n0{,}4x+1{,}2y=7{,}6,\\qquad 2{,}5x-0{,}5y+z=13{,}5,\\qquad x+y+z=15\n\\]\nmit den Schranken $x\\ge 0$, $y\\ge 0$, $z\\ge 0$ und $x+y\\le 16$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Es gibt genau einen Wert von $k$, bei dem Lösungen existieren, aber nicht eindeutig sind. Für dieses $k$ gibt es unendlich viele Lösungen mit zwei positiven Koordinaten.",
-        "Für jedes $k$, das eine eindeutige Lösung erzeugt, sind beide Koordinaten dieser Lösung positiv.",
-        "Für jedes $k$ mit eindeutiger Lösung liegt diese Lösung auf der ersten Geraden und hat eine Koordinate null.",
-        "Wenn die Determinante verschwindet, gibt es keine Lösung.",
-        "Eine Lösung mit zwei positiven Koordinaten gibt es nur in dem Fall, der nicht eindeutig ist."
+        "Das System der drei Gleichungen hat genau eine reelle Lösung, und alle drei Koordinaten sind positiv.",
+        "Die Schranke $x+y\\le 16$ schließt diese Lösung aus.",
+        "Lässt man die dritte Gleichung weg und behält die Vorzeichen, gibt es unendlich viele zulässige Punkte.",
+        "Verdoppelt man in der ersten Gleichung beide Koeffizienten und die rechte Seite, ändert sich die eindeutige Lösung.",
+        "Es gibt eine Lösung mit $z=0$, die alle drei Gleichungen und die Vorzeichen erfüllt."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nAbhängigkeit tritt nur bei einem $k$ ein, und dann sind die Gleichungen dieselbe Gerade, nicht ein Widerspruch. Auf der Geraden $x+2y=4$ liegen unendlich viele Punkte mit $x>0$ und $y>0$. Eindeutigkeit und Existenz fallen hier auseinander.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nEindeutigkeit gilt für alle $k$ außer einem. Die eindeutige Lösung hat in allen diesen Fällen dieselbe zweite Koordinate und die erste Koordinate null. Null ist nicht positiv. Fast alle Parameter liefern dieselbe nicht durchweg positive Lösung.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nJede Lösung der zweiten Gleichung wird mit der ersten geschnitten. Der Schnitt ist für jedes solche $k$ derselbe Punkt der ersten Geraden, und eine Koordinate verschwindet. Das sieht man erst, nachdem sich der Parameter im Zähler und im Nenner kürzt.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nHier ist die zweite Gleichung im singulären Fall das Doppelte der ersten, inklusive der rechten Seite. Es gibt unendlich viele Lösungen. Verschwindende Determinante bedeutet nicht automatisch Widerspruch. Dafür müsste die rechte Seite aus der Abhängigkeit fallen.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDer eindeutige Fall hat eine verschwindende Koordinate. Positive Paare liegen auf der Geraden des nicht eindeutigen Falls. Die Suche nach positiven Lösungen führt also gerade dorthin, wo die Determinante null ist.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie Koeffizientenmatrix ist regulär. Einsetzen liefert das Tripel $(4,5,6)$. Die Nachkommastellen in den Koeffizienten verhindern eine ganzzahlige Kurzrechnung ohne Umformung.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nIn der eindeutigen Lösung ist $x+y=9\\le 16$. Die Schranke ist erfüllt.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nZwei Gleichungen in drei Unbekannten lassen einen freien Parameter. Die Vorzeichen schneiden ihn auf eine Strecke.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie verdoppelte Gleichung ist dieselbe Ebene. Homogenes Verdoppeln einer Zeile ändert den Schnittpunkt nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nMit $z=0$ entstehen aus der zweiten und dritten Gleichung Werte, die der ersten widersprechen. Die eindeutige Lösung hat $z=6$.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Die Determinante ist $4-2k$ und verschwindet bei $k=2$. Dort beschreiben beide Gleichungen dieselbe Gerade, mit unendlich vielen Lösungen und auch mit positiven. Für jedes andere $k$ ergibt Einsetzen $y=2$ und $x=0$.",
+      "solution_overview": "Aus der ersten Gleichung folgt $x+3y=19$. Zusammen mit den übrigen Gleichungen ergibt sich das eindeutige Tripel $(4,5,6)$. Alle Koordinaten sind positiv, und $x+y=9\\le 16$. Streicht man eine Gleichung, entsteht eine Strecke zulässiger Punkte. Eine Randlösung mit $z=0$ erfüllt nicht alle drei Gleichungen.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M06",
       "id": "WISO-M2-M06",
-      "title": "Ein Loch im Inneren des Schnitts",
+      "title": "Schnitt von fünf Ungleichungen",
       "chapter": 6,
-      "subsection": "6.1",
+      "subsection": "6.3",
       "difficulty_level": "5/5",
-      "context": "Gesucht sind alle reellen $x$ mit\n\\[\n\\frac{x^{2}-5x+6}{x-2}\\le 0\\qquad\\text{und}\\qquad |x-4|\\le 3.\n\\]\nBewerten Sie jede Aussage.",
+      "context": "Gesucht sind alle reellen $x$, die zugleich alle fünf Ungleichungen erfüllen:\n\n(1) $3x+2>5$\n\n(2) $4-x\\ge 0$\n\n(3) $|2x-5|\\le 3$\n\n(4) $\\dfrac{x-3}{x+1}<0$\n\n(5) $x^{2}-6x+8\\ge 0$\n\nBewerten Sie jede Aussage.",
       "statements": [
-        "Die Lösungsmenge ist beschränkt und hat genau eine fehlende innere Stelle.",
-        "Die fehlende Stelle ist ein Randpunkt des Betragsintervalls.",
-        "Jede Stelle im Betragsintervall, die höchstens $3$ ist, erfüllt die ursprüngliche Bruchungleichung.",
-        "Die gekürzte Stelle würde die vereinfachte Ungleichung erfüllen und erfüllt die ursprüngliche nicht.",
-        "Die Lösungsmenge enthält ihr größtes Element und enthält ihr kleinstes Element nicht."
+        "Die Lösungsmenge ist ein halb offenes Intervall, dessen linker Rand nicht dazu gehört und dessen rechter Rand dazu gehört.",
+        "Der Punkt $x=4$ liegt in der Lösungsmenge.",
+        "Streicht man nur Ungleichung (5), wird die Lösungsmenge echt größer.",
+        "Streicht man nur Ungleichung (4), bleibt dieselbe Lösungsmenge.",
+        "Jede der fünf Ungleichungen für sich hat eine unbeschränkte oder halbbeschränkte Lösungsmenge, der Schnitt aller fünf ist beschränkt."
       ],
       "answer_key": [
         true,
         false,
-        false,
         true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nNach dem Kürzen bleibt eine lineare Ungleichung, deren Schnitt mit dem Betragsintervall ein abgeschlossenes Intervall ist. Die gekürzte Stelle liegt im Inneren dieses Intervalls und muss entfernt werden. Es fehlt genau diese eine Stelle.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDie Ränder des Betragsintervalls sind die Lösungen der Gleichung $|x-4|=3$. Die fehlende Stelle ist die Nullstelle des ursprünglichen Nenners und liegt echt zwischen diesen Rändern. Sie ist ein Loch, kein Rand.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nDie lineare Ungleichung nach dem Kürzen würde diese Stellen tragen. Eine davon macht den ursprünglichen Nenner null. Sie liegt im Betragsintervall und ist keine Lösung. Kürzen und Einsetzen sind nicht derselbe Schritt.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nNach dem Kürzen bleibt ein Ausdruck, der an dieser Stelle nichtpositiv ist. Der ursprüngliche Bruch ist dort nicht definiert. Die Stelle zeigt den Unterschied zwischen der vereinfachten und der gegebenen Funktion.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nBeide Enden des abgeschlossenen Schnitts erfüllen Nenner ungleich null und die Ungleichung. Das kleinste Element gehört dazu. Die fehlende Stelle liegt dazwischen und ist keines der beiden Enden.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDer Schnitt der fünf Bedingungen ist $(1,2]$. Links schließt (1) streng, rechts erlaubt (5) den Punkt $2$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$x=4$ erfüllt (2), (3) und (5), scheitert aber an (4), weil der Bruch dort positiv ist.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nOhne (5) bleibt aus den ersten vier Bedingungen $(1,3)$. Das Intervall $(2,3)$ kommt hinzu.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nOhne (4) wird $x=4$ zulässig. Die Lösungsmenge wird größer.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n(1) und (5) sind nach einer Seite unbeschränkt. Der gemeinsame Schnitt ist trotzdem das beschränkte Intervall $(1,2]$.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Für $x\\neq 2$ ist der Bruch $x-3$. Die Ungleichung wird zu $x\\le 3$ ohne die Stelle $2$. Der Betrag liefert $[1,7]$. Der Schnitt ist $[1,3]$ ohne $2$.",
+      "solution_overview": "(1) liefert $x>1$, (2) $x\\le 4$, (3) $1\\le x\\le 4$, (4) $-1<x<3$, (5) $x\\le 2$ oder $x\\ge 4$. Der Schnitt ist $(1,2]$. Keine der fünf Ungleichungen ist allein entbehrlich.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M07",
       "id": "WISO-M2-M07",
-      "title": "Welche Steigung berührt",
+      "title": "Parabel, Gerade und Parameterfenster",
       "chapter": 7,
       "subsection": "7.5",
       "difficulty_level": "5/5",
-      "context": "Die Parabel $y=x^{2}$ und die Geraden $y=mx-1$ werden verglichen. Bewerten Sie jede Aussage.",
+      "context": "Die Parabel $y=x^{2}+bx+c$ und die Gerade $y=2{,}5x-1{,}75$ sollen untersucht werden. Zusätzlich gelte $b+c=-1$ und $b-2c=5$. Bewerten Sie jede Aussage über Schnittpunkte und Lage.",
       "statements": [
-        "Genau zwei Werte von $m$ machen $y=mx-1$ zu einer Tangente an die Parabel.",
-        "Eine dieser Tangenten berührt die Parabel unter der $x$-Achse.",
-        "In jedem Berührpunkt stimmt die Steigung der Parabel mit $m$ überein, und die beiden Berührpunkte liegen symmetrisch zur $y$-Achse.",
-        "Jede Gerade $y=mx-1$ schneidet die Parabel mindestens einmal.",
-        "Ersetzt man den Achsenabschnitt $-1$ durch $+1$, schneidet jede solche Gerade die Parabel zweimal."
+        "Die beiden Bedingungen an $b$ und $c$ bestimmen das Paar eindeutig.",
+        "Bei diesem Paar hat die Parabel mit der Geraden genau einen Schnittpunkt.",
+        "Genau einer der beiden Schnittpunkte hat negative $x$-Koordinate.",
+        "Der Scheitel der Parabel liegt auf der Geraden.",
+        "Senkt man nur den Achsenabschnitt der Geraden um $3$ und lässt $b,c$ gleich, bleibt die Anzahl der Schnittpunkte gleich."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nBerührung heißt Diskriminante null, also ein Quadrat gleich $4$. Es gibt zwei reelle Steigungen mit demselben Betrag und entgegengesetztem Vorzeichen. Eine davon zu finden genügt nicht, die Gleichung für $m$ ist selbst quadratisch.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nBeide Berührpunkte haben die $y$-Koordinate $1$. Die Parabel $y=x^{2}$ liegt nie unter der Achse, eine Tangente aus dieser Familie also auch nicht. Das Vorzeichen des Achsenabschnitts der Geraden entscheidet, dass die Berührung oben liegt.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDie Ableitung $2x$ muss gleich $m$ sein. Zusammen mit dem Punkt auf der Parabel und auf der Geraden entstehen zwei Punkte mit entgegengesetzten $x$-Koordinaten und derselben Höhe. Symmetrie und Steigung sind zwei Bedingungen, nicht eine.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nFür $|m|<2$ ist die Diskriminante negativ. Es gibt weder Schnitt noch Berührung. Nur ab dem Betrag $2$ entsteht Kontakt, und erst darüber entstehen zwei Schnittpunkte.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDie Diskriminante wird $m^{2}+4$ und ist für jedes reelle $m$ positiv. Aus Berührung oder Verfehlen wird ein immer vorhandener doppelter Schnitt. Das Vorzeichen des Achsenabschnitts dreht den konstanten Term der Diskriminante.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nEs handelt sich um ein reguläres $2\\times 2$-System. Einsetzen liefert genau $(1,-2)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Diskriminante von $x^{2}+(b-2{,}5)x+(c+1{,}75)=0$ ist $3{,}25>0$. Es gibt zwei verschiedene Schnittpunkte.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nProdukt der Wurzeln $c+1{,}75=-0{,}25<0$, Summe $2{,}5-b=1{,}5>0$. Genau eine Wurzel ist negativ.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nScheitel bei $x=-\\dfrac{b}{2}=-0{,}5$: Parabelwert $-2{,}25$, Geradenwert $-3$. Verschieden.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nDie Diskriminante fällt unter null: aus zwei Schnittpunkten wird keiner. Die Anzahl bleibt nicht gleich.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "$x^{2}-mx+1=0$ hat die Diskriminante $m^{2}-4$. Berührung gibt es genau für $m=\\pm 2$, in den Punkten $(1,1)$ und $(-1,1)$. Für $|m|<2$ gibt es keinen Schnitt, für $|m|>2$ zwei. Die Gerade $y=mx+1$ schneidet immer zweimal, weil die Diskriminante $m^{2}+4$ positiv ist.",
+      "solution_overview": "Aus den beiden linearen Bedingungen folgt $(b,c)=(1,-2)$. Die Diskriminante der Schnittgleichung ist $3{,}25>0$, also zwei verschiedene Schnittpunkte. Genau eine Schnitt-$x$-Koordinate ist negativ. Der Scheitel liegt nicht auf der Geraden. Senkt man den Achsenabschnitt der Geraden um $3$, fällt die Diskriminante unter null.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M08",
       "id": "WISO-M2-M08",
-      "title": "Elastisch, und der Grenzumsatz bleibt positiv",
+      "title": "Drei Oktanströme, festes Verhältnis",
       "chapter": 8,
       "subsection": "8.5",
       "difficulty_level": "5/5",
-      "context": "Die Nachfrage sei $q=100\\,p^{-2}$ für $p>0$. Elastizität meint hier $\\dfrac{p}{q}\\dfrac{\\mathrm{d}q}{\\mathrm{d}p}$. Der Grenzumsatz ist die Ableitung des Umsatzes nach der Menge. Bewerten Sie jede Aussage.",
+      "context": "Drei Kraftstoffströme mit Oktanzahlen $98$, $91$ und $88$ werden zu insgesamt $600$ Litern mit Zieloktanzahl $94$ gemischt. Das Volumen des Stroms mit $98$ ist doppelt so groß wie das Volumen des Stroms mit $88$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die Elastizität ist an jeder positiven Stelle konstant und elastisch, und eine Preiserhöhung senkt den Umsatz.",
-        "Der Grenzumsatz nach der Menge ist negativ, weil die Nachfrage elastisch ist.",
-        "Verdoppelt man den Preis, fällt die Menge um einen größeren Faktor als der Umsatz, und beide fallen.",
-        "Es gibt einen positiven Preis, an dem die Elastizität $-1$ ist und der Umsatz maximal wird.",
-        "Halbiert man den Preis, steigt der Umsatz, und die Menge steigt um einen größeren Faktor als der Umsatz."
+        "Alle drei Volumina sind positiv, und das größte Volumen gehört zum Strom mit der höchsten Oktanzahl.",
+        "Das Volumen des mittleren Oktanstroms ist größer als das Volumen des niedrigsten.",
+        "Ohne die Bedingung, dass ein Volumen das Doppelte eines anderen ist, gäbe es unendlich viele Mischungen mit Ziel $94$.",
+        "Verdoppelt man alle drei Oktanzahlen und das Ziel, bleiben die Volumina gleich.",
+        "Ersetzt man das Ziel $94$ durch $95$ und lässt das Volumenverhältnis gleich, bleiben alle drei Volumina positiv."
       ],
       "answer_key": [
         true,
         false,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDer Exponent $-2$ ist die Elastizität und liegt betragsmäßig über $1$. Der Umsatz $pq$ ist $100/p$. Er fällt, wenn der Preis steigt. Konstanz, elastische Lage und Umsatzrichtung sind drei Ablesungen derselben Potenz.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nElastisch heißt, dass eine Preiserhöhung den Umsatz senkt. Der Grenzumsatz nach der Menge hat das andere Vorzeichen: $1+1/\\varepsilon$ ist bei $\\varepsilon=-2$ positiv. Die Merkregel überträgt das Vorzeichen der Preisrichtung auf die Mengenrichtung.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDie Menge trägt den Exponenten $-2$, der Umsatz den Exponenten $-1$. Beide fallen, und die Menge fällt stärker. Dafür muss man Umsatz und Menge getrennt potenzieren und nicht den Umsatz wie die Menge behandeln.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nDie Elastizität ist überall $-2$ und nirgends $-1$. Der Umsatz $100/p$ hat auf $p>0$ kein Maximum, er steigt, wenn der Preis fällt. Ein Umsatzmaximum bei Elastizität $-1$ setzt eine Elastizität voraus, die mit dem Preis wandert.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDer Umsatz skaliert mit dem Kehrwert des Preises, die Menge mit dem Quadrat dieses Kehrwerts. Beide steigen, die Menge stärker. Dieselbe Potenzrechnung wie bei der Verdopplung, nur in die andere Richtung.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie drei Brüche mit Nenner $11$ sind positiv, und $\\dfrac{3600}{11}$ ist das größte.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$\\dfrac{1200}{11}$ gegen $\\dfrac{1800}{11}$: der mittlere Strom ist der kleinere.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nZwei Gleichungen in drei Unbekannten lassen einen freien Parameter.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nEin gemeinsamer Faktor kürzt sich in der Mischungsbedingung.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDieselbe Rechnung mit $95$ erzeugt ein negatives Volumen. Positivität ist keine Selbstverständlichkeit.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Die Elastizität ist konstant $-2$. Der Umsatz ist $100/p$ und fällt mit dem Preis. Nach der Menge geschrieben steigt er, der Grenzumsatz ist positiv: $p\\bigl(1+\\dfrac{1}{\\varepsilon}\\bigr)=\\dfrac{p}{2}$. Eine Preiserhöhung senkt trotzdem den Umsatz, weil sie die Menge stark genug senkt.",
+      "solution_overview": "Mit $x=2z$, $y=600-3z$ und der Mischungsbedingung folgt $z=\\dfrac{1800}{11}$, $x=\\dfrac{3600}{11}$, $y=\\dfrac{1200}{11}$. Alle drei Volumina sind positiv. Ohne die Verhältnisbedingung wäre die Lösung unterbestimmt.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M09",
       "id": "WISO-M2-M09",
-      "title": "Zwei Bedingungen, eine doppelte Stelle",
+      "title": "Kubik nach Vertikalverschiebung",
       "chapter": 9,
       "subsection": "9.5",
       "difficulty_level": "5/5",
-      "context": "Es sei $p(x)=x^{3}+ax^{2}+bx+2$, mit $p(1)=0$ und $p'(1)=0$. Bewerten Sie jede Aussage.",
+      "context": "Es sei $p(x)=2x^{3}-5x^{2}-4x+3$. Zuerst wird $p$ selbst untersucht. Danach die verschobene Funktion $p(x)-k$ für reelles $k$. Bewerten Sie jede Aussage.",
       "statements": [
-        "$p'(1)=0$ allein macht $x=1$ zur Nullstelle von $p$. Zusammen mit $p(1)=0$ ist diese Nullstelle mehrfach, und es gibt genau eine weitere reelle Nullstelle.",
-        "Neben der mehrfachen Nullstelle gibt es genau eine weitere reelle Nullstelle, und sie ist negativ. $p$ hat keine weitere positive Nullstelle.",
-        "Jede Nullstelle der Ableitung ist eine Nullstelle von $p$.",
-        "Es gibt eine negative Nullstelle von $p$, die keine Nullstelle der Ableitung ist.",
-        "Der positive Leitkoeffizient erzwingt rechts von der mehrfachen Nullstelle noch eine weitere Nullstelle."
+        "$p$ hat drei verschiedene reelle Nullstellen, genau eine davon ist negativ.",
+        "Jede Nullstelle von $p'$ ist auch Nullstelle von $p$.",
+        "Es gibt ein offenes Intervall von Verschiebungen $k$, in dem $p(x)-k$ genau drei verschiedene reelle Nullstellen hat.",
+        "Für jedes reelle $k$ hat $p(x)-k$ mindestens zwei verschiedene reelle Nullstellen.",
+        "An den Grenzen des $k$-Fensters mit drei Nullstellen hat $p(x)-k$ eine mehrfache Nullstelle."
       ],
       "answer_key": [
-        false,
         true,
         false,
         true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\nEine waagerechte Tangente legt den Funktionswert nicht auf null. Erst beide Bedingungen tun das und erzwingen die Vielfachheit. Die weitere reelle Nullstelle existiert, der erste Satz der Aussage ist aber schon falsch. Die Konjunktion fällt.\n\nDie Aussage ist falsch.",
-        "**B.** → Richtig\n\nDie Faktorisierung nach den beiden Bedingungen zeigt eine einfache negative Nullstelle und sonst nur die mehrfache positive. Eine dritte positive Nullstelle entstünde nur bei anderem konstanten Glied. Das konstante Glied $2$ ist für das Vorzeichen dieser einfachen Nullstelle mitverantwortlich.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\nDie Ableitung ist ein quadratisches Polynom und hat zwei reelle Nullstellen. Nur eine davon erfüllt $p(x)=0$. Die andere ist eine waagerechte Tangente abseits der Achse. Gemeinsame Nullstelle und Nullstelle der Ableitung sind nicht dasselbe.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nDie einfache negative Nullstelle von $p$ hat Ableitung ungleich null, sonst wäre sie mehrfach. Die negative Nullstelle der Ableitung ist eine andere Zahl. Man muss beide Nullstellenmengen bestimmen und dann schneiden.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nRechts der mehrfachen Nullstelle bleibt $p$ positiv und ohne weitere Nullstelle. Der Leitkoeffizient beschreibt das Verhalten für große $x$ und erzwingt nicht, dass die Achse noch einmal getroffen wird.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nNach dem Abspalten einer rationalen Nullstelle bleibt ein quadratischer Faktor mit positiver Diskriminante und negativem Produkt der Nullstellen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Ableitung hat zwei Nullstellen zwischen den Nullstellen von $p$; beide sind selbst keine Nullstellen von $p$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nZwischen lokalem Maximum und lokalem Minimum schneidet jede horizontale Gerade die kubische Funktion dreimal.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nAußerhalb des Fensters zwischen den Extremwerten gibt es nur noch eine reelle Nullstelle.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nGenau wenn $k$ dem lokalen Extremwert gleicht, berührt die horizontale Gerade die Kurve.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "$p(1)=0$ und $p'(1)=0$ erzwingen $a=0$ und $b=-3$, also $p(x)=x^{3}-3x+2=(x-1)^{2}(x+2)$. Die Nullstellen sind $1$ mit Vielfachheit zwei und $-2$ einfach. $p'(x)=3x^{2}-3$ hat außerdem die Nullstelle $-1$, die keine Nullstelle von $p$ ist.",
+      "solution_overview": "$p$ hat die drei reellen Nullstellen $-1$, $\\dfrac12$ und $3$. $p'$ hat die Nullstellen $-\\dfrac13$ und $2$. Zwischen den Extremwerten liegt das offene $k$-Fenster mit drei verschiedenen reellen Nullstellen von $p(x)-k$.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M10",
       "id": "WISO-M2-M10",
-      "title": "Wer zuerst auf null fällt",
+      "title": "Stetig gegen jährlich, 6,5 Prozent, vier Jahre",
       "chapter": 10,
-      "subsection": "10.5",
+      "subsection": "10.2",
       "difficulty_level": "5/5",
-      "context": "Konto A beginnt bei $15\\,000$, Konto B bei $20\\,000$. Beide werden stetig mit $5\\%$ verzinst. Aus A werden stetig $1\\,000$ pro Jahr entnommen, aus B stetig $1\\,500$, solange das Konto positiv ist. Bewerten Sie jede Aussage.",
+      "context": "Ein Kapital von EUR $12\\,500$ wird vier Jahre lang einmal mit stetigem Zinssatz $6{,}5\\%$ und einmal mit jährlicher Verzinsung $6{,}5\\%$ angelegt. Zusätzlich wird die Zeit bis zur Verdopplung bei stetiger Verzinsung mit demselben Satz betrachtet. Bewerten Sie jede Aussage.",
       "statements": [
-        "Beide Konten starten unter ihrem Gleichgewicht und fallen.",
-        "Das Konto mit dem höheren Startbestand erreicht null später.",
-        "Das Konto, dessen Entnahme den größeren Anteil des eigenen Startbestands ausmacht, erreicht null zuerst.",
-        "Eines der beiden Gleichgewichte liegt unter dem Startbestand dieses Kontos, deshalb wächst dieses Konto.",
-        "Würde jede Entnahme auf genau $5\\%$ des eigenen Startbestands gesenkt, bliebe jedes Konto auf seinem Startbestand stehen."
+        "Nach vier Jahren liegt der stetige Endwert über EUR $16\\,200$ und der jährliche unter EUR $16\\,100$.",
+        "Der absolute Vorsprung der stetigen Verzinsung nach vier Jahren liegt über EUR $150$.",
+        "Die stetige Verdopplungszeit liegt zwischen $10$ und $11$ Jahren.",
+        "Bei jährlicher Verzinsung verdoppelt sich das Kapital in weniger als $11$ Jahren.",
+        "Für dieselbe Laufzeit von vier Jahren ist der stetige Endwert größer als der jährliche, und das Verhältnis stetig zu jährlich liegt unter $1{,}01$."
       ],
       "answer_key": [
         true,
@@ -971,112 +971,112 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDas Gleichgewicht ist Entnahme durch Zinssatz. Für A sind das $20\\,000$, für B $30\\,000$. Beide Startwerte liegen darunter, die Entnahme übersteigt also den Zins auf den Startbestand, und der Bestand fällt.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nB startet höher und erreicht null früher. Die Zeit bis null ist der Logarithmus eines Verhältnisses aus Gleichgewicht und Abstand, geteilt durch den Zins. Der höhere Start verkürzt diesen Logarithmus hier nicht genug, weil auch die Entnahme höher ist.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDer Anteil ist Entnahme durch Startbestand. Er ist bei B größer, und B erreicht null zuerst. Derselbe Zinssatz auf verschiedene Entnahmequoten entscheidet die Reihenfolge, nicht der absolut höhere Bestand.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nBeide Gleichgewichte liegen über den jeweiligen Startbeständen. Kein Konto wächst. Ein Gleichgewicht unter dem Start würde Wachstum bedeuten, dieser Fall tritt hier nicht ein.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDann wäre die Entnahme genau der Zins auf den Startbestand, das Gleichgewicht also der Start selbst. Beide Konten wären stationär. Die tatsächlichen Entnahmen liegen über diesen $5\\%$ und sind gerade deshalb nicht stationär.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nBeide Endwerte müssen mit $e^{0{,}26}$ bzw. $1{,}065^{4}$ berechnet werden. Sie fallen in die genannten Bänder.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Differenz liegt bei etwa EUR $131$ und damit unter $150$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$\\ln 2/0{,}065$ liegt bei etwa $10{,}66$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$1{,}065^{11}<2$. Nach elf Jahren ist die Verdopplung noch nicht erreicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$e^{0{,}26}/1{,}065^{4}$ liegt knapp über $1$ und unter $1{,}01$.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Die Gleichgewichte liegen bei $20\\,000$ und bei $30\\,000$. Beide Konten starten darunter und fallen. A trifft null bei $\\ln 4/0{,}05$, B bei $\\ln 3/0{,}05$. B ist früher bei null, obwohl es höher startet, weil die Entnahme einen größeren Anteil des eigenen Startbestands ausmacht.",
+      "solution_overview": "Stetig: $12500\\,e^{0{,}26}\\approx 16211{,}63$. Jährlich: $12500\\cdot 1{,}065^{4}\\approx 16080{,}83$. Der stetige Vorsprung liegt unter EUR $150$. Die Verdopplungszeit ist $\\dfrac{\\ln 2}{0{,}065}\\approx 10{,}66$ Jahre. $1{,}065^{11}<2$.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M11",
       "id": "WISO-M2-M11",
-      "title": "Der Deckel ist teurer als der Boden",
+      "title": "Offene Schachtel aus Rechteckblech",
       "chapter": 11,
-      "subsection": "11.5",
+      "subsection": "11.4",
       "difficulty_level": "5/5",
-      "context": "Ein geschlossener Zylinder hat das Volumen $200\\pi$. Der Mantel kostet so viel wie der Boden, der Deckel kostet dreimal so viel wie der Boden, jeweils je Flächeneinheit. Die Kosten sollen minimal werden. Bewerten Sie jede Aussage.",
+      "context": "Aus einem Rechteckblech der Maße $48\\,\\mathrm{cm}\\times 30\\,\\mathrm{cm}$ werden an den Ecken kongruente Quadrate der Seitenlänge $a$ ausgeschnitten und die Ränder hochgeklappt. Das Volumen der offenen Schachtel ist $V(a)=a(48-2a)(30-2a)$ für $0<a<15$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Im Kostenminimum ist die Höhe ein konstantes Vielfaches des Radius, und dieses Vielfache ist größer als $2$.",
-        "Setzt man für den Deckel denselben Flächenpreis wie für den Boden, bleibt das Verhältnis von Höhe zu Radius dasselbe.",
-        "Die zweite Ableitung der Kosten nach dem Radius ist an der kritischen Stelle positiv, die Stelle ist ein Minimum.",
-        "Derselbe Radius minimiert auch die Mantelfläche allein.",
-        "Verdoppelt man alle drei Flächenpreise, ändert sich der kostenminimierende Radius."
+        "Im zulässigen Intervall gibt es genau eine kritische Stelle, und dort liegt das globale Maximum.",
+        "Die zweite kritische Stelle der unbeschränkten Ableitung liegt ebenfalls im zulässigen Intervall.",
+        "Verdoppelt man beide Blechseiten und lässt $a$ gleich, verdoppelt sich das Maximalvolumen.",
+        "Am zulässigen Maximum sind Länge, Breite und Höhe der Schachtel alle verschieden.",
+        "Weil $V$ an beiden Enden des zulässigen Intervalls verschwindet, liegt jedes lokale Maximum automatisch in der Intervallmitte $a=7{,}5$."
       ],
       "answer_key": [
         true,
         false,
-        true,
         false,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nNach dem Einsetzen des Volumens bleibt eine Funktion von $r$. Ihre kritische Stelle verbindet Höhe und Radius durch einen konstanten Faktor. Weil der Deckel dreimal so teuer ist wie der Boden, wird der Zylinder schlanker als im Fall gleicher Flächenpreise, und der Faktor liegt über $2$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nGleiche Preise ändern den Koeffizienten der beiden Kreise in der Kostenfunktion und damit die Gleichung der kritischen Stelle. Das klassische Verhältnis $2$ ist der Sonderfall gleicher Preise und nicht dieser Deckel.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDie Kostenfunktion in $r$ hat nach dem Einsetzen eine zweite Ableitung, die für positive Radien positiv ist. Es gibt nur eine kritische Stelle. Sie ist ein Minimum und kein Sattel.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nDie Mantelfläche ist bei festem Volumen proportional zu $1/r$ und fällt mit dem Radius. Sie hat kein positives Minimum. Der kostenminimierende Radius balanciert Mantel gegen die teuren Kreise und minimiert den Mantel nicht für sich.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\nEin gemeinsamer Faktor zieht sich aus der Kostenfunktion und aus der Ableitung. Die Gleichung für den Radius bleibt. Der Radius änderte sich, wenn sich die Preise relativ zueinander änderten, nicht wenn alle denselben Faktor tragen.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie Ableitung faktorisiert zu $12(a-6)(a-20)$. Nur $a=6$ liegt in $(0,15)$. An den Enden geht $V$ gegen $0$, also ist der kritische Wert das Maximum.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$a=20$ liegt rechts von $15$ und ist für das Blech unmöglich.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nDas Volumen ist trilinear in den drei Kanten. Eine Verdopplung nur der Grundfläche bei gleichem $a$ ändert auch die optimale Schnittkante; das Maximalvolumen verdoppelt sich nicht.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nBei $a=6$ entstehen Höhe $6$, Länge $36$ und Breite $18$. Drei verschiedene Kanten.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nVerschwinden an den Enden erzwingt ein Inneres Maximum, aber nicht die geometrische Mitte. Die kritische Stelle liegt bei $6$, nicht bei $7{,}5$.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Mit $r^{2}h=200$ werden die Kosten, geteilt durch den Flächenpreis des Bodens und durch $\\pi$, zu $400/r+4r^{2}$. Die Ableitung verschwindet bei $r^{3}=50$. Dort ist $h=4r$. Die zweite Ableitung ist positiv. Gleiche Preise für Deckel und Boden ergäben $h=2r$.",
+      "solution_overview": "$V'(a)=12(a-6)(a-20)$. Im offenen Intervall $(0,15)$ liegt die einzige kritische Stelle bei $a=6$. Dort liegt das globale Maximum $V(6)=3888$. Am Rand des zulässigen Bereichs fällt $V$ gegen $0$. Die kritische Stelle $a=20$ ist unzulässig.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M12",
       "id": "WISO-M2-M12",
-      "title": "Erst der Befund, dann die Bestätigung",
+      "title": "Seltene Krankheit, zwei Fehlerarten",
       "chapter": 12,
-      "subsection": "12.5",
+      "subsection": "12.6",
       "difficulty_level": "5/5",
-      "context": "Werk 1 fertigt $60\\%$ der Teile mit Fehlerquote $2\\%$, Werk 2 fertigt $40\\%$ mit Fehlerquote $5\\%$. Ein Test schlägt bei einem fehlerhaften Teil mit Wahrscheinlichkeit $90\\%$ an und bei einem fehlerfreien Teil mit Wahrscheinlichkeit $1\\%$. Bewerten Sie jede Aussage über die Wahrscheinlichkeit, dass das Teil wirklich fehlerhaft ist, wenn der Test anschlägt.",
+      "context": "Eine Krankheit hat Prävalenz $0{,}8\\%$. Ein Test erkennt Erkrankte mit Wahrscheinlichkeit $92\\%$ und Gesunde mit Wahrscheinlichkeit $97\\%$ korrekt. Eine zufällig gewählte Person wird positiv getestet. Bewerten Sie jede Aussage über die bedingte Wahrscheinlichkeit, wirklich erkrankt zu sein, und über verwandte Größen.",
       "statements": [
-        "Wenn der Test anschlägt, liegt die Wahrscheinlichkeit eines Fehlers über $70\\%$ und unter $75\\%$.",
-        "Der Anschlag hebt die Fehlerwahrscheinlichkeit auf mehr als das Zwanzigfache der Ausgangswahrscheinlichkeit.",
-        "Weil Werk 1 mehr fertigt, ist ein angeschlagenes Teil wahrscheinlicher aus Werk 1 und deshalb wahrscheinlicher fehlerfrei.",
-        "Ein Test, der bei fehlerhaften und fehlerfreien Teilen gleich oft anschlägt, ließe die Fehlerwahrscheinlichkeit unverändert.",
-        "Die Wahrscheinlichkeit nach dem Anschlag liegt näher an der Ausgangswahrscheinlichkeit als an $50\\%$."
+        "Die bedingte Wahrscheinlichkeit, erkrankt zu sein, liegt unter $25\\%$ und über $15\\%$.",
+        "Weil der Test Erkrankte in $92\\%$ der Fälle erkennt, liegt die gesuchte Wahrscheinlichkeit bei $92\\%$.",
+        "Verdoppelt man die Prävalenz und lässt Sensitivität und Spezifität gleich, verdoppelt sich die gesuchte Wahrscheinlichkeit nicht.",
+        "Unter den positiv Getesteten sind die Falsch-Positiven streng mehr als die richtig Positiven.",
+        "Eine Spezifität von $100\\%$ bei unveränderter Sensitivität und Prävalenz würde die gesuchte Wahrscheinlichkeit auf $1$ heben."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
-        false
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nZuerst die totale Fehlerquote aus beiden Werken, dann die totale Wahrscheinlichkeit eines Anschlags aus Trefferquote und Fehlalarm, dann der Quotient. Das Ergebnis liegt in diesem Band. Wer nach der Fehlerquote von $3{,}2\\%$ stehen bleibt, ist zwei Schritte zu früh.\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\nDie Ausgangswahrscheinlichkeit ist $0{,}032$, das Zwanzigfache $0{,}64$. Der Wert nach dem Test liegt darüber und unter $0{,}75$. Das Zwanzigfache gilt, die Schwelle $75\\%$ wäre eine engere und andere Behauptung.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\nDer Test ändert die Wahrscheinlichkeit eines Fehlers stark nach oben. Die Herkunft aus dem größeren Werk wäre eine weitere bedingte Wahrscheinlichkeit und macht das Teil nicht fehlerfrei. Die Aussage verknüpft die Fertigungsmenge mit dem falschen Schluss über den Fehler.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nSind die beiden bedingten Wahrscheinlichkeiten gleich, kürzt sich der Anschlag im Satz von Bayes heraus. Übrig bleibt die Ausgangswahrscheinlichkeit. Im gegebenen Test sind $90\\%$ und $1\\%$ nicht gleich, die Aussage betrifft den vergleichbaren Test mit gleichen Raten.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nSie liegt über $70\\%$ und damit über $50\\%$ und weit über $3{,}2\\%$. Die Seltenheit des Fehlers vor dem Test bestimmt den Wert nach einem so trennscharfen Test nicht mehr in dieser Stärke.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nBayes liefert etwa $19{,}8\\%$. Prävalenz, Sensitivität und Komplement der Spezifität müssen alle drei eingehen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nSensitivität ist $P(+\\mid E)$, nicht $P(E\\mid +)$. Die Prävalenz und die Falsch-Positiven fehlen in dieser Kurzformel.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nBayes ist eine gebrochene lineare Funktion der Prävalenz. Verdopplung im Zähler trifft nicht denselben Faktor im Nenner.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nFalsch-Positive: $0{,}03\\cdot 0{,}992=0{,}02976$. Richtig-Positive: $0{,}00736$. Der Nenner wird von den Falsch-Positiven dominiert.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\nOhne Falsch-Positive fällt der zweite Summand im Nenner weg. Jeder positive Befund stammt dann von einem Erkrankten.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Die Fehlerwahrscheinlichkeit vor dem Test ist $0{,}032$. Die Wahrscheinlichkeit, dass der Test anschlägt, ist $0{,}9\\cdot 0{,}032+0{,}01\\cdot 0{,}968$. Der Satz von Bayes liefert danach knapp $0{,}748$. Das liegt unter $75\\%$ und weit über der Ausgangswahrscheinlichkeit.",
+      "solution_overview": "Mit Bayes:\n\\[\nP(E\\mid +)=\\dfrac{0{,}92\\cdot 0{,}008}{0{,}92\\cdot 0{,}008+0{,}03\\cdot 0{,}992}=\\dfrac{0{,}00736}{0{,}03712}=0{,}198275\\ldots\n\\]\nalso knapp unter $20\\%$. Die Spezifität allein und die Sensitivität allein sind keine PPV.",
       "figure": "",
       "tables_markdown": ""
     },
     {
       "case_id": "WISO-M2-M13",
       "id": "WISO-M2-M13",
-      "title": "Tschebyscheff neben der exakten Tail",
+      "title": "Tschebyscheff gegen exakte Binomialschranke",
       "chapter": 13,
-      "subsection": "13.5",
+      "subsection": "13.4",
       "difficulty_level": "5/5",
-      "context": "$X$ sei binomial mit $n=20$ und $p=0{,}1$. Die Tschebyscheff-Ungleichung schätzt die Wahrscheinlichkeit einer Abweichung vom Erwartungswert nach oben oder unten. Bewerten Sie jede Aussage über die Wahrscheinlichkeit von mindestens sechs Erfolgen.",
+      "context": "Sei $X$ binomialverteilt mit $n=8$ und $p=\\dfrac12$. Betrachtet wird $P(|X-4|\\ge 3)$ sowie die Tschebyscheff-Schranke zu Mittelwert und Varianz von $X$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Eine Tschebyscheff-Schranke für eine Abweichung von mindestens $4$ vom Erwartungswert liegt über $0{,}1$.",
-        "Die exakte Wahrscheinlichkeit von mindestens sechs Erfolgen liegt über dieser Tschebyscheff-Schranke.",
-        "Die exakte Wahrscheinlichkeit von mindestens sechs Erfolgen liegt unter $0{,}02$.",
-        "Die Tschebyscheff-Schranke ist hier scharf, sie trifft die exakte Wahrscheinlichkeit.",
-        "Der Erwartungswert ist eine ganze Zahl, und die Varianz ist kleiner als der Erwartungswert."
+        "Die Tschebyscheff-Schranke zu dieser Abweichung liegt streng über $0{,}2$.",
+        "Die exakte Wahrscheinlichkeit liegt über der Tschebyscheff-Schranke.",
+        "Die exakte Wahrscheinlichkeit liegt unter $0{,}1$, die Tschebyscheff-Schranke darüber.",
+        "Weil die Verteilung symmetrisch um $4$ ist, ist $P(X\\ge 7)$ genau halb so groß wie $P(|X-4|\\ge 3)$.",
+        "Tschebyscheff liefert hier denselben Zahlenwert wie die exakte Wahrscheinlichkeit, weil $X$ beschränkt ist."
       ],
       "answer_key": [
         true,
         false,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie Varianz geteilt durch das Quadrat der Abweichung ist $1{,}8/16$. Das liegt über $0{,}1$. Die Schranke ist zweiseitig und deckt damit auch die hier unmögliche negative Seite ab. Sie ist eine Oberschranke und nicht der exakte Wert.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDie exakte Tailwahrscheinlichkeit liegt bei etwa $0{,}011$ und damit unter $0{,}1125$. Tschebyscheff liefert eine obere Schranke. Über der Schranke kann die Wahrscheinlichkeit nicht liegen.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDie Summe der Binomialterme ab sechs liegt unter $0{,}02$ und auch unter der viel gröberen Tschebyscheff-Schranke. Dafür müssen die einzelnen Terme oder eine rechnerische Summe her, die Schranke allein zeigt nur etwas unter $0{,}12$.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nZwischen etwa $0{,}011$ und $0{,}1125$ liegt ein Faktor von ungefähr zehn. Scharf wäre die Schranke nur bei einer Verteilung, die ihre Masse an den Randpunkten konzentriert. Die Binomialverteilung tut das hier nicht.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\n$np=2$ ist ganzzahlig. $np(1-p)=1{,}8$ liegt darunter, weil $1-p<1$. Beides folgt aus $n$ und $p$, bevor irgendeine Tailwahrscheinlichkeit berechnet wird, und die Tailfrage braucht danach noch die Schranke oder die Summe.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\n$\\mathrm{Var}/3^{2}=2/9\\approx 0{,}222>0{,}2$. Die Schranke braucht nur Mittelwert und Varianz.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nExakt $9/128\\approx 0{,}070$, Schranke $2/9$. Tschebyscheff ist eine Obergrenze und hier echt größer.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nBeide Vergleiche folgen aus den beiden verschiedenen Rechnungen: Binomialsumme gegen Varianz durch Abstandsquadrat.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nDie beiden Ränder $\\{0,1\\}$ und $\\{7,8\\}$ sind gleich wahrscheinlich. Die Hälfte der zweiseitigen Wahrscheinlichkeit sitzt auf einer Seite.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nBeschränktheit allein macht Tschebyscheff nicht scharf. Die Zahlen $2/9$ und $9/128$ fallen auseinander.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Erwartungswert $2$, Varianz $1{,}8$. Mindestens sechs Erfolge sind eine Abweichung von mindestens $4$ nach oben. Die zweiseitige Tschebyscheff-Schranke dafür ist $1{,}8/16=0{,}1125$. Die exakte Wahrscheinlichkeit ist etwa $0{,}0113$ und liegt darunter.",
+      "solution_overview": "$E[X]=4$, $\\mathrm{Var}(X)=2$. Tschebyscheff liefert $P(|X-4|\\ge 3)\\le \\dfrac{2}{9}$. Exakt ist\n\\[\nP(X\\in\\{0,1,7,8\\})=\\dfrac{1+8+8+1}{256}=\\dfrac{18}{256}=\\dfrac{9}{128}=0{,}0703125,\n\\]\nalso streng unter $\\dfrac29$ und unter $0{,}1$.",
       "figure": "",
       "tables_markdown": ""
     }
