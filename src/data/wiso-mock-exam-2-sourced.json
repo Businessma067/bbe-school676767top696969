@@ -1,78 +1,18 @@
 {
   "economics": [
     {
-      "case_id": "WISO M2.1.1",
-      "id": "WISO M2.1.1",
-      "title": "Haushaltsbudget einer Studierenden",
-      "subsection": "1.1",
-      "chapter": 1,
-      "context": "Lea wohnt allein. Ihr monatliches Nettoeinkommen beträgt 1.400 Euro. Sie notiert feste Verwendungen:\n\n| Posten | Euro |\n| --- | ---: |\n| Miete | 620 |\n| Nahrung | 280 |\n| Verkehr | 90 |\n| Streaming | 18 |\n| Sparen | 150 |\n\nDer Rest bleibt frei verfügbar. Bewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "Die Miete ist größer als Nahrung und Verkehr zusammen.",
-        "Die Sparquote am Einkommen liegt über 15 Prozent.",
-        "Nach Abzug der fünf genannten Posten bleiben mehr als 300 Euro frei.",
-        "Weil Lea allein wohnt, bildet sie keinen privaten Haushalt.",
-        "Steigt die Miete um 40 Euro und bleiben Einkommen sowie die anderen vier Posten gleich, sinkt der frei verfügbare Rest um 40 Euro."
-      ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Nahrung und Verkehr ergeben 280 + 90 = 370 Euro. Die Miete von 620 Euro liegt darüber. Ein privater Haushalt entscheidet genau über solche konkurrierenden Verwendungen desselben Einkommens.\n\nDie Aussage ist wahr.",
-        "150 Euro von 1.400 Euro sind 150/1400 = 10,7 Prozent. Das liegt unter 15 Prozent. Eine höhere Sparquote wäre erst ab 210 Euro erreicht.\n\nDie Aussage ist falsch.",
-        "Die fünf Posten summieren sich zu 620 + 280 + 90 + 18 + 150 = 1.158 Euro. Frei bleiben 1.400 − 1.158 = 242 Euro, also weniger als 300.\n\nDie Aussage ist falsch.",
-        "Ein privater Haushalt ist die wirtschaftliche Einheit, in der Bedürfnisse auftreten. Eine allein lebende Person bildet einen solchen Haushalt. Die Personenzahl zwei ist keine Voraussetzung.\n\nDie Aussage ist falsch.",
-        "Die Miete ist einer der fünf abgezogenen Posten. Steigt nur sie um 40 Euro, steigt die Summe der Verwendungen um 40 Euro und der Rest fällt von 242 auf 202 Euro.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "3/5"
-    },
-    {
-      "case_id": "WISO M2.1.2",
-      "id": "WISO M2.1.2",
-      "title": "Absoluter und komparativer Vorteil",
-      "subsection": "1.2",
-      "chapter": 1,
-      "context": "Lea und Omar erzeugen Brot und Stühle. Die Tabelle nennt die Arbeitsstunden je Stück.\n\n| Person | Stunden je Brot | Stunden je Stuhl |\n| --- | ---: | ---: |\n| Lea | 2 | 4 |\n| Omar | 3 | 12 |\n\nBewerten Sie die folgenden Aussagen zu Arbeitsteilung und Spezialisierung:",
-      "statements": [
-        "Lea hat bei beiden Gütern einen absoluten Vorteil.",
-        "Omars Opportunitätskosten für ein Brot sind höher als die von Lea.",
-        "Lea hat einen komparativen Vorteil bei Stühlen.",
-        "Spezialisierung nach komparativem Vorteil bedeutet, dass jede Person das Gut erzeugt, das sie absolut schneller herstellt.",
-        "Nach dem komparativen Vorteil erzeugt Omar Brot und Lea Stühle."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Lea braucht für ein Brot 2 statt 3 Stunden und für einen Stuhl 4 statt 12 Stunden. Weniger Einsatz je Stück ist der absolute Vorteil, und er liegt bei Lea in beiden Zeilen.\n\nDie Aussage ist wahr.",
-        "Ein Brot kostet Lea 2 Stunden, in denen sie 2/4 = 0,5 Stühle erzeugen könnte. Omar opfert für ein Brot 3 Stunden und damit 3/12 = 0,25 Stühle. Seine Opportunitätskosten sind niedriger, nicht höher.\n\nDie Aussage ist falsch.",
-        "Ein Stuhl kostet Lea 4/2 = 2 Brote und Omar 12/3 = 4 Brote. Lea gibt für einen Stuhl weniger Brot auf und hat damit den komparativen Vorteil bei Stühlen.\n\nDie Aussage ist wahr.",
-        "Absolut schneller ist Lea bei beiden Gütern. Würden beide nur danach entscheiden, bliebe Omar ohne Aufgabe. Der komparative Vorteil vergleicht die relativen Kosten und teilt die Güter auf, auch wenn eine Person überall absolut schneller ist.\n\nDie Aussage ist falsch.",
-        "Omar hat die niedrigeren Opportunitätskosten beim Brot, Lea bei den Stühlen. Genau diese Zuordnung folgt aus dem Vergleich der Verhältnisse, nicht aus der absoluten Zeit.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "4/5"
-    },
-    {
       "case_id": "WISO M2.1.3",
       "id": "WISO M2.1.3",
-      "title": "Samstag: Praktikum, Job, Ticket",
+      "title": "Maschine: Buchwert, Verkauf, Projekt",
       "subsection": "1.3",
       "chapter": 1,
-      "context": "Mira hat am Samstag sechs Stunden. Sie kann ein unbezahltes Praktikum ableisten oder in dieser Zeit einen Job zu 14 Euro je Stunde annehmen. Ein Konzertticket für denselben Abend hat sie schon für 40 Euro gekauft. Sie kann es nicht weiterverkaufen, und beide Samstagsoptionen schließen den Konzertbesuch aus.\n\nBewerten Sie die folgenden Aussagen zu Opportunitätskosten:",
+      "context": "Eine bereits gekaufte Maschine steht mit 18.000 Euro Buchwert in den Büchern. Der Kaufpreis damals betrug 40.000 Euro. Heute ließe sie sich für 12.000 Euro verkaufen. Wird sie stattdessen in einem Projekt eingesetzt, entgeht dieser Verkauf. Das Projekt bringt zusätzlich 15.000 Euro Einzahlung und keine weiteren Kosten der Maschine.\n\nBewerten Sie die folgenden Aussagen zu Opportunitätskosten:",
       "statements": [
-        "Zu den Opportunitätskosten des unbezahlten Praktikums gehört der entgangene Lohn von 84 Euro.",
-        "Die 40 Euro für das Ticket sind bei der Wahl zwischen Praktikum und Job zusätzliche Opportunitätskosten, weil das Ticket in beiden Fällen verfällt.",
-        "Opportunitätskosten sind immer eine zusätzliche Geldzahlung, die vom Konto abfließt.",
-        "Wer den Job wählt, hat als Opportunitätskosten unter anderem den entgangenen Nutzen des Praktikums.",
-        "Weil das Praktikum keinen Lohn zahlt, sind seine Opportunitätskosten null."
+        "Die ökonomischen Opportunitätskosten des Einsatzes sind die entgangenen 12.000 Euro Verkaufserlös.",
+        "Der historische Kaufpreis von 40.000 Euro ist heute noch eine zusätzliche Opportunitätskostengröße des Einsatzes.",
+        "Der Buchwert von 18.000 Euro ist der richtige ökonomische Kostenansatz für die Entscheidung.",
+        "Die zusätzlichen 15.000 Euro decken die entgangenen 12.000 Euro und lassen vor anderen Kosten 3.000 Euro übrig.",
+        "Kaufpreis und Verkaufserlös sind zusammen anzusetzen, also 52.000 Euro Opportunitätskosten."
       ],
       "answer_key": [
         true,
@@ -82,177 +22,27 @@
         false
       ],
       "tactical_explanations": [
-        "Sechs Stunden zu 14 Euro ergeben 84 Euro Lohn, auf den Mira verzichtet, wenn sie das Praktikum wählt. Opportunitätskosten sind der entgangene Nutzen der besten nicht gewählten Verwendung, hier dieser Lohn.\n\nDie Aussage ist wahr.",
-        "Das Ticket verfällt bei beiden Alternativen gleichermaßen. Es unterscheidet die beiden Optionen nicht und ist eine versunkene Ausgabe. Versunkene Kosten sind keine zusätzlichen Opportunitätskosten genau dieser Wahl.\n\nDie Aussage ist falsch.",
-        "Der entgangene Lohn und der entgangene Lerneffekt sind Nutzausfälle, keine neue Überweisung. Opportunitätskosten können Geldgrößen sein, müssen aber nicht als zusätzliche Zahlung anfallen.\n\nDie Aussage ist falsch.",
-        "Jede Wahl verdrängt die andere. Der Job verdrängt das, was das Praktikum an Erfahrung gebracht hätte. Dieser entgangene Nutzen gehört zu den Opportunitätskosten des Jobs.\n\nDie Aussage ist wahr.",
-        "Gerade weil das Praktikum keinen Lohn zahlt, besteht sein Preis in dem, was Mira stattdessen tun könnte. Null Lohn bedeutet nicht Kosten von null.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "3/5"
-    },
-    {
-      "case_id": "WISO M2.1.4",
-      "id": "WISO M2.1.4",
-      "title": "Geld- und Güterströme einer Periode",
-      "subsection": "1.4",
-      "chapter": 1,
-      "context": "In einer einfachen Periode gelten diese Geldströme, in Millionen Euro. Weitere Ströme gibt es nicht.\n\n| Strom | Millionen Euro |\n| --- | ---: |\n| Löhne der Unternehmen an die Haushalte | 70 |\n| Transfers des Staates an die Haushalte | 8 |\n| Konsumausgaben der Haushalte an die Unternehmen | 55 |\n| Steuern der Haushalte an den Staat | 12 |\n| Käufe des Staates bei den Unternehmen | 15 |\n\nBewerten Sie die folgenden Aussagen zum Wirtschaftskreislauf:",
-      "statements": [
-        "Die Lohnzahlung ist in diesem Modell ein Geldstrom.",
-        "Die Ersparnis der Haushalte beträgt 11 Millionen Euro.",
-        "Die Steuerzahlung ist ein Güterstrom an den Staat.",
-        "Die staatlichen Käufe sind ein Geldstrom an die Unternehmen.",
-        "Wenn die Haushalte 5 Millionen Euro weniger konsumieren und um denselben Betrag mehr sparen, ändern sich die Zuflüsse der Haushalte in der Tabelle nicht."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "Löhne fließen als Geld von den Unternehmen zu den Haushalten. Der zugehörige Güterstrom wäre die Arbeitsleistung in die Gegenrichtung. Die Tabelle erfasst die Geldseite.\n\nDie Aussage ist wahr.",
-        "Zuflüsse der Haushalte: 70 + 8 = 78. Abflüsse ohne Ersparnis: Konsum 55 und Steuern 12, zusammen 67. Als Rest bleibt 78 − 67 = 11. Das ist die Ersparnis, die den Haushaltskreislauf schließt.\n\nDie Aussage ist wahr.",
-        "Steuern fließen als Geld an den Staat, nicht als Güterlieferung. Güter würden die Unternehmen gegen die staatlichen Käufe liefern. Die Richtung und die Art des Stroms sind hier vertauscht.\n\nDie Aussage ist falsch.",
-        "Der Staat zahlt 15 Millionen Euro an die Unternehmen. Das ist die Geldseite der staatlichen Nachfrage. Die Güter laufen umgekehrt von den Unternehmen zum Staat.\n\nDie Aussage ist wahr.",
-        "Die Zuflüsse sind Löhne und Transfers, zusammen 78. Konsum und Ersparnis sind Verwendungen dieses Zuflusses. Eine Umbuchung zwischen Konsum und Ersparnis lässt Löhne und Transfers unberührt.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "4/5"
-    },
-    {
-      "case_id": "WISO M2.1.5",
-      "id": "WISO M2.1.5",
-      "title": "Nominalzins und Kaufkraft",
-      "subsection": "1.5",
-      "chapter": 1,
-      "context": "Am Jahresanfang liegen 1.000 Euro auf einem Sparkonto. Der Nominalzins beträgt 3 Prozent, die Inflationsrate im selben Jahr 8 Prozent. Es gibt keine Steuern und keine Gebühren.\n\nBewerten Sie die folgenden Aussagen zu den Geldfunktionen:",
-      "statements": [
-        "Der positive Nominalzins reicht in diesem Jahr aus, damit die Kaufkraft des Guthabens steigt.",
-        "Die Kaufkraft des Guthabens nach einem Jahr liegt unter dem Ausgangsbetrag von 1.000 Euro.",
-        "Bei dieser Inflation verliert das Geld die Tauschmittelfunktion, weil man damit nichts mehr kaufen kann.",
-        "Der Euro bleibt Recheneinheit, auch wenn das Preisniveau steigt.",
-        "1.030 Euro nach einem Jahr, geteilt durch 1,08, ergeben mehr als 1.000 Euro Kaufkraft des Ausgangsjahres."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "Aus 1.000 Euro werden nominal 1.030 Euro. Die Preise steigen um 8 Prozent, die Kaufkraft ist 1030/1,08 ≈ 953,70 Euro. Sie sinkt. Ein positiver Nominalzins unter der Inflationsrate erhält die Kaufkraft nicht.\n\nDie Aussage ist falsch.",
-        "1030/1,08 = 953,70 Euro in Kaufkraft des Jahresanfangs. Das liegt unter 1.000 Euro. Als Wertaufbewahrung verliert das Guthaben in diesem Jahr real an Wert.\n\nDie Aussage ist wahr.",
-        "Man kann mit dem Euro weiterhin zahlen. Die Tauschmittelfunktion bleibt erhalten. Was leidet, ist die Wertaufbewahrung, weil dieselbe Geldsumme weniger Güter kauft.\n\nDie Aussage ist falsch.",
-        "Preise, Löhne und Verträge werden weiter in Euro ausgedrückt. Steigende Preise ändern die Maßeinheit nicht. Die Recheneinheit bleibt der Euro.\n\nDie Aussage ist wahr.",
-        "1030/1,08 ≈ 953,70 und damit weniger als 1.000. Die Aussage kehrt die Richtung des realen Ergebnisses um.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "4/5"
-    },
-    {
-      "case_id": "WISO M2.2.3",
-      "id": "WISO M2.2.3",
-      "title": "BIP, Emissionen und Entkopplung",
-      "subsection": "2.3",
-      "chapter": 2,
-      "context": "Eine Region weist für zwei Jahre diese Werte aus.\n\n[[CHART type=\"grouped-bar\" title=\"Region Nord — BIP und Emissionen\"]]\nBIP | Jahr 1=200 | Jahr 2=220\nEmissionen | Jahr 1=80 | Jahr 2=76\n[[/CHART]]\n\nBIP ist in Milliarden Euro, Emissionen in Millionen Tonnen. Bewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "Die Emissionen sind von Jahr 1 auf Jahr 2 absolut gesunken.",
-        "Die Emissionen je Milliarde Euro BIP sind gestiegen.",
-        "Steigendes BIP bei sinkenden Emissionen ist hier eine absolute Entkopplung.",
-        "Ein Rückgang der Emissionen um 4 Millionen Tonnen widerlegt, dass Senken knapp sein können.",
-        "76/220 ist kleiner als 80/200."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Die Emissionen fallen von 80 auf 76 Millionen Tonnen. Absolut heißt: die Menge selbst sinkt, nicht nur die Menge je BIP-Einheit.\n\nDie Aussage ist wahr.",
-        "Jahr 1: 80/200 = 0,40 Tonnen je Milliarde? Nein, 80 Millionen Tonnen auf 200 Milliarden Euro, also 0,40 Millionen Tonnen je Milliarde Euro. Jahr 2: 76/220 ≈ 0,345. Die Intensität sinkt.\n\nDie Aussage ist falsch.",
-        "Absolute Entkopplung liegt vor, wenn die Wirtschaftsleistung steigt und die Umweltbelastung gleichzeitig absolut zurückgeht. Genau das zeigen 220 > 200 und 76 < 80.\n\nDie Aussage ist wahr.",
-        "Vier Millionen Tonnen weniger heißen nicht, dass die Aufnahmekapazität von Luft, Wasser und Boden unbegrenzt wäre. Eine Senke kann knapper werden, auch wenn eine einzelne Periode etwas weniger einträgt.\n\nDie Aussage ist falsch.",
-        "80/200 = 0,400 und 76/220 ≈ 0,345. Der zweite Quotient ist kleiner. Das ist die rechnerische Seite der relativen Verbesserung.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "4/5"
-    },
-    {
-      "case_id": "WISO M2.3.2",
-      "id": "WISO M2.3.2",
-      "title": "Bäckerei: Einzelunternehmen oder GmbH",
-      "subsection": "3.2",
-      "chapter": 3,
-      "context": "Anna will eine Bäckerei gründen und verfügt über 15.000 Euro. In diesem Fall verlangt die GmbH ein Stammkapital von 10.000 Euro vor der Eintragung. Im Einzelunternehmen haftet Anna unbeschränkt. In der GmbH haftet grundsätzlich das Gesellschaftsvermögen. Gewinne der GmbH werden nicht automatisch wie eine Privatentnahme ausgezahlt.\n\nBewerten Sie die folgenden Aussagen zu den Rechtsformen:",
-      "statements": [
-        "Im Einzelunternehmen haftet Anna auch mit ihrem Privatvermögen.",
-        "Das im Fall genannte Stammkapital liegt unter den Mitteln, über die Anna verfügt.",
-        "Die GmbH ist in diesem Fall eine Personengesellschaft.",
-        "Gewinne der GmbH kann Anna jederzeit wie im Einzelunternehmen als Privatentnahme entnehmen, ohne gesellschaftsrechtliche Regeln.",
-        "Die beschränkte Haftung beseitigt für Anna jedes unternehmerische Risiko."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "Unbeschränkte Haftung des Einzelunternehmens bedeutet, dass Gläubiger auch auf das Privatvermögen zugreifen können, nicht nur auf das Betriebsvermögen.\n\nDie Aussage ist wahr.",
-        "Das Beispiel nennt 10.000 Euro Stammkapital. Anna hat 15.000 Euro. 10.000 liegt darunter, die Aufbringung wäre aus ihren Mitteln rechnerisch möglich.\n\nDie Aussage ist wahr.",
-        "Die GmbH ist eine Kapitalgesellschaft. Personengesellschaften sind etwa die Offene Gesellschaft oder die Kommanditgesellschaft. Die Rechtsform im Fall ist nicht dadurch eine Personengesellschaft, dass Anna sie allein gründet.\n\nDie Aussage ist falsch.",
-        "Im Einzelunternehmen und in der GmbH ist der Zugriff auf Gewinne verschieden geregelt. Der Fall sagt ausdrücklich, dass GmbH-Gewinne nicht automatisch wie eine Privatentnahme ausgezahlt werden.\n\nDie Aussage ist falsch.",
-        "Anna kann das eingebrachte Kapital verlieren, und Banken verlangen oft zusätzliche Sicherheiten. Beschränkte Haftung begrenzt den Zugriff auf das Privatvermögen, sie löscht das Verlustrisiko nicht.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "3/5"
-    },
-    {
-      "case_id": "WISO M2.3.4",
-      "id": "WISO M2.3.4",
-      "title": "DonauLicht — Ergebnis und Bilanz",
-      "subsection": "3.4",
-      "chapter": 3,
-      "context": "DonauLicht GmbH, Angaben in Tausend Euro. Der Gewinn vor Steuern wird mit 20 Prozent besteuert.\n\n| Erfolg | Tsd. Euro |\n| --- | ---: |\n| Umsatzerlöse | 480 |\n| Herstellungskosten des Umsatzes | 300 |\n| Sonstige betriebliche Aufwendungen | 90 |\n| Zinsaufwand | 15 |\n\n[[CHART type=\"bar\" title=\"DonauLicht — Umlaufvermögen und kurzfristige Schulden (Tsd. Euro)\"]]\nUmlaufvermögen | Betrag=120\nKurzfristige Schulden | Betrag=80\n[[/CHART]]\n\n| Bestand zum Jahresende | Tsd. Euro |\n| --- | ---: |\n| Vermögen insgesamt | 340 |\n| Eigenkapital | 140 |\n| Schulden insgesamt | 200 |\n\nBewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "Das Betriebsergebnis beträgt 90 Tausend Euro.",
-        "Die Eigenkapitalquote liegt über 50 Prozent.",
-        "Umlaufvermögen je Euro kurzfristiger Schulden beträgt 1,5.",
-        "Der Gewinn nach Steuern übersteigt 70 Tausend Euro.",
-        "Die Schulden sind größer als das Eigenkapital."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Vom Umsatz 480 gehen Herstellungskosten 300 und sonstige betriebliche Aufwendungen 90 ab: 480 − 300 − 90 = 90. Zinsen gehören nicht in dieses Betriebsergebnis.\n\nDie Aussage ist wahr.",
-        "140 / 340 ≈ 0,412, also etwa 41 Prozent. Die Hälfte von 340 wäre 170. Das Eigenkapital bleibt darunter.\n\nDie Aussage ist falsch.",
-        "Das Chart nennt 120 zu 80. 120/80 = 1,5. Je Euro kurzfristiger Schulden stehen 1,50 Euro Umlaufvermögen.\n\nDie Aussage ist wahr.",
-        "Betriebsergebnis 90 minus Zinsen 15 ergibt 75 vor Steuern. 20 Prozent von 75 sind 15, der Gewinn nach Steuern ist 60. Das liegt unter 70.\n\nDie Aussage ist falsch.",
-        "Die Bilanz nennt Schulden 200 und Eigenkapital 140. 200 ist größer. Vermögen 340 = 140 + 200, die Bilanz geht auf.\n\nDie Aussage ist wahr."
+        "Opportunitätskosten sind der entgangene Nutzen der besten nicht gewählten Verwendung. Die beste Alternative zum Einsatz ist der Verkauf heute für 12.000 Euro. Genau dieser Betrag wird aufgegeben.\n\nDie Aussage ist wahr.",
+        "Die 40.000 Euro sind ausgegeben, ob die Maschine verkauft oder eingesetzt wird. Sie ändern sich durch die heutige Entscheidung nicht. Versunkene Ausgaben sind keine zusätzlichen Opportunitätskosten.\n\nDie Aussage ist falsch.",
+        "Der Buchwert ist eine Rechnungslegungsgröße aus Anschaffung und Abschreibung. Die Entscheidung vergleicht Einsatz und Verkauf. Der Verkauf bringt 12.000 Euro, nicht 18.000. Der Buchwert misst die entgangene Alternative nicht.\n\nDie Aussage ist falsch.",
+        "15.000 minus 12.000 sind 3.000 Euro. Der Fall nennt keine weiteren Maschinenkosten. Der Überschuss über den entgangenen Verkauf ist damit 3.000 Euro, nicht der volle Einzahlungsbetrag.\n\nDie Aussage ist wahr.",
+        "Den Kaufpreis noch einmal zum Verkaufserlös zu addieren zählt eine versunkene Ausgabe und die echte Alternative in einem Topf. Die Alternative ist nur der heutige Verkauf.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5"
     },
     {
-      "case_id": "WISO M2.3.5",
-      "id": "WISO M2.3.5",
-      "title": "Café Kanne — Preis und Menge",
-      "subsection": "3.5",
-      "chapter": 3,
-      "context": "Das Café Kanne senkt den Preis für einen Becher von 3,20 Euro auf 2,80 Euro. Die verkaufte Menge steigt von 400 auf 500 Becher je Woche. Zusätzlich ändert das Café das Becherdesign. Verkaufsort und Öffnungszeiten bleiben gleich.\n\nBewerten Sie die folgenden Aussagen. Die Preiselastizität ist auf die Ausgangswerte bezogen:",
+      "case_id": "WISO M2.1.2",
+      "id": "WISO M2.1.2",
+      "title": "Tuch und Wein, absolut und komparativ",
+      "subsection": "1.2",
+      "chapter": 1,
+      "context": "Zwei Länder, Arbeitsstunden je Stück.\n\n| Land | Stunden je Tuch | Stunden je Wein |\n| --- | ---: | ---: |\n| A | 2 | 6 |\n| B | 4 | 8 |\n\nBewerten Sie die folgenden Aussagen. Mehr Stunden je Stück bedeuten geringere Produktivität:",
       "statements": [
-        "Der Umsatz je Woche steigt.",
-        "Die Nachfrage ist in diesem Intervall unelastisch, weil die Menge nur um 100 Becher steigt.",
-        "Die Preissenkung ist eine Maßnahme der Preispolitik.",
-        "Ein neues Becherdesign bei gleichem Getränk berührt die Produktpolitik.",
-        "Weil der Umsatz steigt, muss auch der Gewinn steigen."
+        "Land A hat bei beiden Gütern einen absoluten Vorteil.",
+        "Land B hat einen absoluten Vorteil bei Wein, weil es dafür 8 Stunden braucht und A nur 6.",
+        "Die Opportunitätskosten von einem Tuch sind in A ein Drittel Wein und in B ein halbes Wein.",
+        "Nach dem komparativen Vorteil erzeugt A Tuch und B Wein.",
+        "Handel kann B nichts bringen, weil B bei beiden Gütern mehr Stunden braucht."
       ],
       "answer_key": [
         true,
@@ -262,27 +52,207 @@
         false
       ],
       "tactical_explanations": [
-        "Vorher: 400 × 3,20 = 1.280 Euro. Nachher: 500 × 2,80 = 1.400 Euro. Der Umsatz steigt um 120 Euro.\n\nDie Aussage ist wahr.",
-        "Die Menge steigt um 100/400 = 25 Prozent, der Preis fällt um 0,40/3,20 = 12,5 Prozent. Der Betrag der Elastizität ist 25/12,5 = 2, also größer als 1. Die Nachfrage reagiert elastisch. Der Blick nur auf 100 Stück ignoriert die prozentuale Preisänderung.\n\nDie Aussage ist falsch.",
-        "Der Preis je Becher wird verändert. Das ist die Preispolitik im Marketing-Mix. Ort und Öffnungszeiten, also die Distribution, bleiben ausdrücklich gleich.\n\nDie Aussage ist wahr.",
-        "Das Becherdesign verändert das angebotene Produkt, auch wenn das Getränk dasselbe ist. Gestaltung des Produkts gehört zur Produktpolitik, nicht zur Preispolitik.\n\nDie Aussage ist wahr.",
-        "Der Umsatz ist nicht der Gewinn. Ob die niedrigeren Preise und die höhere Menge die Kosten decken, sagt die Umsatzrechnung nicht. Mehr Umsatz kann mit weniger Gewinn einhergehen.\n\nDie Aussage ist falsch."
+        "A braucht für Tuch 2 statt 4 Stunden und für Wein 6 statt 8. Weniger Einsatz je Stück ist der absolute Vorteil, und er liegt bei A in beiden Spalten.\n\nDie Aussage ist wahr.",
+        "Acht Stunden sind mehr Aufwand als sechs, also ist B bei Wein langsamer. Der absolute Vorteil liegt bei der geringeren Stundenzahl, nicht bei der größeren. Die Aussage liest die Tabelle in der falschen Richtung.\n\nDie Aussage ist falsch.",
+        "Ein Tuch kostet A 2 Stunden, in denen A 2/6 = 1/3 Wein erzeugen könnte. B opfert für ein Tuch 4 Stunden und damit 4/8 = 1/2 Wein. Die Aussage nennt genau diese beiden Quotienten.\n\nDie Aussage ist wahr.",
+        "A hat die niedrigeren Opportunitätskosten beim Tuch (1/3 gegen 1/2). Beim Wein ist es umgekehrt: A opfert 6/2 = 3 Tücher, B nur 8/4 = 2 Tücher. A spezialisiert sich auf Tuch, B auf Wein.\n\nDie Aussage ist wahr.",
+        "Gerade weil die relativen Kosten auseinanderfallen, kann B das Gut mit dem eigenen komparativen Vorteil erzeugen und das andere eintauschen. Absolute Unterlegenheit bei beiden Gütern schließt den Gewinn aus Spezialisierung nicht aus.\n\nDie Aussage ist falsch."
       ],
-      "difficulty_level": "4/5"
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.1.4",
+      "id": "WISO M2.1.4",
+      "title": "Sparen, Steuern und die Identität",
+      "subsection": "1.4",
+      "chapter": 1,
+      "context": "Geschlossene Volkswirtschaft, eine Periode, Millionen Euro. Die Haushalte erhalten 80 Löhne und 20 ausgeschüttete Gewinne. Sie konsumieren 70 und zahlen 18 Steuern. Der Staat kauft für 22 bei den Unternehmen, die Unternehmen investieren 8. Weitere Ströme gibt es nicht.\n\nBewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Die Ersparnis der Haushalte beträgt 12.",
+        "Ersparnis plus Steuern ist gleich Investition plus Staatsnachfrage.",
+        "Wenn die Steuern um 4 steigen, der Konsum um 4 sinkt und Investition sowie Staatsnachfrage gleich bleiben, bleibt die Identität erfüllt.",
+        "Die Steuerzahlung ist ein Güterstrom an den Staat.",
+        "Ausgeschüttete Gewinne sind ein Geldstrom von den Unternehmen an die Haushalte."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Einkommen der Haushalte: 80 + 20 = 100. Verwendungen ohne Ersparnis: Konsum 70 und Steuern 18, zusammen 88. Als Rest bleibt 100 − 88 = 12 Ersparnis.\n\nDie Aussage ist wahr.",
+        "Ersparnis plus Steuern: 12 + 18 = 30. Investition plus Staatsnachfrage: 8 + 22 = 30. In dieser geschlossenen Rechnung ohne weitere Lecks stimmen die Summen überein.\n\nDie Aussage ist wahr.",
+        "Einkommen bleibt 100. Konsum 66 und Steuern 22 lassen die Ersparnis bei 12. Die Abflüsse der Haushalte in den Kreislauf der Verwendung ändern ihre Summe nicht, aber Ersparnis plus Steuern wird 12 + 22 = 34, während Investition plus Staat bei 30 bleiben. Die Identität geht dann nicht mehr auf.\n\nDie Aussage ist falsch.",
+        "Steuern fließen als Geld. Der Güterstrom zur staatlichen Nachfrage läuft von den Unternehmen zum Staat, bezahlt durch die 22. Die Steuer selbst ist kein Güterstrom.\n\nDie Aussage ist falsch.",
+        "Die 20 sind ausgeschüttete Gewinne an die Haushalte, also Geld in deren Richtung. Sie stehen neben den Löhnen auf der Einkommensseite und sind kein Güterstrom.\n\nDie Aussage ist wahr."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.1.4b",
+      "id": "WISO M2.1.4b",
+      "title": "Höchstpreis und die Angebotsmenge",
+      "subsection": "1.4",
+      "chapter": 1,
+      "context": "Ein Markt.\n\n| Preis | Angebotene Menge | Nachgefragte Menge |\n| --- | ---: | ---: |\n| 28 | 520 | 280 |\n| 24 | 460 | 340 |\n| 20 | 400 | 400 |\n| 16 | 340 | 500 |\n| 12 | 280 | 650 |\n\nEin Höchstpreis verbietet Preise über der gesetzten Grenze. Bewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Ohne Eingriff räumen 20 Euro den Markt bei 400 Stück.",
+        "Ein Höchstpreis von 12 Euro erzeugt eine Fehlmenge von 250, weil die Kapazität 400 ist.",
+        "Bei 28 Euro ist der Angebotsüberhang 240.",
+        "Ein Höchstpreis von 28 Euro ist nicht bindend.",
+        "Der Höchstpreis von 12 Euro beseitigt die Knappheit, weil mehr Menschen das Gut wollen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "In der Zeile 20 stehen angebotene und nachgefragte Menge beide bei 400. Das ist die Ausgleichszeile. Darüber liegt ein Überhang, darunter eine Fehlmenge.\n\nDie Aussage ist wahr.",
+        "Bei 12 Euro werden 280 angeboten und 650 nachgefragt. Die Fehlmenge ist 650 − 280 = 370. Wer 400 als feste Kapazität einsetzt, benutzt die Ausgleichsmenge einer anderen Zeile und verfehlt das Angebot bei 12 Euro.\n\nDie Aussage ist falsch.",
+        "Bei 28 Euro stehen 520 gegen 280. Der Überhang ist 520 − 280 = 240. Das ist die Menge, die zum Preis von 28 keinen Käufer findet.\n\nDie Aussage ist wahr.",
+        "Der Ausgleich liegt bei 20. Ein Höchstpreis von 28 liegt darüber und verbietet nur Preise, die der Markt ohnehin nicht braucht, um zu räumen. Die Grenze bindet nicht.\n\nDie Aussage ist wahr.",
+        "Bei 12 Euro wollen mehr Menschen das Gut, als angeboten wird. Die Fehlmenge wird größer, nicht kleiner. Zusätzliche Wunschmenge schafft keine zusätzlichen Stücke.\n\nDie Aussage ist falsch."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.1.5",
+      "id": "WISO M2.1.5",
+      "title": "Nominalzins, exakt und angenähert",
+      "subsection": "1.5",
+      "chapter": 1,
+      "context": "2.000 Euro liegen ein Jahr zu 6 Prozent Nominalzins. Die Preise steigen im selben Jahr um 9 Prozent. Keine Steuern, keine Gebühren.\n\nBewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Der exakte reale Zinsfaktor 1,06/1,09 liegt unter 1, der reale Zins ist also negativ.",
+        "Die Näherung Nominalzins minus Inflationsrate trifft den exakten realen Zins genau.",
+        "Die Kaufkraft der 2.120 Euro nach einem Jahr liegt unter den ursprünglichen 2.000 Euro.",
+        "Ein positiver Nominalzins bedeutet, dass das Guthaben die Wertaufbewahrung vollständig erfüllt.",
+        "Der Euro bleibt Recheneinheit, auch wenn die Kaufkraft sinkt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "1,06/1,09 ≈ 0,9725, also unter 1. Der exakte reale Zins ist etwa −2,75 Prozent. Das Guthaben verliert Kaufkraft.\n\nDie Aussage ist wahr.",
+        "6 minus 9 ergibt −3 Prozentpunkte. Der exakte Wert aus 1,06/1,09 − 1 ist etwa −2,75 Prozent. Die Näherung liegt daneben und ist nicht genau derselbe Satz.\n\nDie Aussage ist falsch.",
+        "2.000 mal 1,06 sind 2.120 Euro nominal. Geteilt durch 1,09 sind das etwa 1.945 Euro Kaufkraft des Jahresanfangs. Das liegt unter 2.000.\n\nDie Aussage ist wahr.",
+        "Der Nominalzins ist positiv, die Kaufkraft sinkt trotzdem, weil die Inflation höher ist. Wertaufbewahrung verlangt den Erhalt der Kaufkraft, nicht nur ein Plus auf dem Konto.\n\nDie Aussage ist falsch.",
+        "Preise und Verträge werden weiter in Euro ausgedrückt. Eine sinkende Kaufkraft ändert die Maßeinheit nicht.\n\nDie Aussage ist wahr."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.2.4",
+      "id": "WISO M2.2.4",
+      "title": "Steuer, die über das Optimum hinausgeht",
+      "subsection": "2.4",
+      "chapter": 1,
+      "context": "Die Nachfrage lautet Preis = 30 − 0,1 mal Menge. Die privaten Grenzkosten sind konstant 10 Euro. Zusätzlich entstehen 6 Euro externe Kosten je Stück, die der Betrieb nicht trägt.\n\nBewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Ohne Berücksichtigung der externen Kosten werden 200 Stück gehandelt.",
+        "Die sozial bessere Menge, bei der der Preis den privaten plus den externen Grenzkosten entspricht, ist 140.",
+        "Eine Steuer von 6 Euro je Stück führt auf diese Menge 140.",
+        "Eine Steuer von 10 Euro je Stück ist besser, weil sie die Menge noch stärker senkt.",
+        "Die externen 6 Euro stecken bereits in den privaten Grenzkosten von 10 Euro."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "30 − 0,1Q = 10 ergibt 0,1Q = 20 und Q = 200. Der Preis ist dann 10. Das ist die Menge, wenn nur die privaten Kosten zählen.\n\nDie Aussage ist wahr.",
+        "Soziale Grenzkosten sind 10 + 6 = 16. 30 − 0,1Q = 16 ergibt 0,1Q = 14 und Q = 140. Das ist die Menge, bei der der Preis die vollen Grenzkosten deckt.\n\nDie Aussage ist wahr.",
+        "Eine Steuer von 6 hebt die vom Betrieb getragenen Grenzkosten von 10 auf 16. Dieselbe Gleichung wie bei den sozialen Kosten liefert wieder Q = 140.\n\nDie Aussage ist wahr.",
+        "Eine Steuer von 10 hebt die privaten Grenzkosten auf 20. Dann ist 30 − 0,1Q = 20, also Q = 100. Das liegt unter der sozial besseren Menge 140. Mehr Senkung ist hier nicht besser, sondern zu viel.\n\nDie Aussage ist falsch.",
+        "Der Fall trennt die privaten 10 Euro von den externen 6 Euro. Die 6 Euro sind gerade dadurch extern, dass sie nicht in den 10 Euro enthalten sind.\n\nDie Aussage ist falsch."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.3.4",
+      "id": "WISO M2.3.4",
+      "title": "Kontokorrent in der kurzfristigen Rechnung",
+      "subsection": "3.4",
+      "chapter": 1,
+      "context": "Jahresendbestände in Tausend Euro.\n\n| Vermögen | Betrag |\n| --- | ---: |\n| Gebäude | 500 |\n| Maschinen | 200 |\n| Vorräte | 80 |\n| Forderungen | 70 |\n| Kasse | 50 |\n\n| Kapital | Betrag |\n| --- | ---: |\n| Stammkapital | 200 |\n| Rücklagen | 250 |\n| Langfristiges Darlehen | 300 |\n| Lieferverbindlichkeiten | 100 |\n| Kontokorrent | 50 |\n\nBewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Umlaufvermögen je Euro kurzfristiger Schulden beträgt genau 4/3.",
+        "Die Eigenkapitalquote liegt streng über 50 Prozent.",
+        "Der Kontokorrent gehört zu den kurzfristigen Schulden.",
+        "Setzt man nur das Stammkapital ins Verhältnis zum Vermögen, erhält man dieselbe Quote wie mit Stammkapital plus Rücklagen.",
+        "Vermögen ist gleich Eigenkapital plus Schulden."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Umlaufvermögen: 80 + 70 + 50 = 200. Kurzfristige Schulden: Lieferverbindlichkeiten 100 plus Kontokorrent 50 = 150. 200/150 = 4/3.\n\nDie Aussage ist wahr.",
+        "Eigenkapital ist Stammkapital 200 plus Rücklagen 250 = 450. Vermögen ist 900. 450/900 = 50 Prozent, nicht mehr als 50 Prozent.\n\nDie Aussage ist falsch.",
+        "Ein Kontokorrent ist jederzeit fällig und steht neben den Lieferverbindlichkeiten auf der kurzfristigen Seite. Er gehört nicht zum langfristigen Darlehen von 300.\n\nDie Aussage ist wahr.",
+        "Nur das Stammkapital ergäbe 200/900. Mit den Rücklagen sind es 450/900. Die beiden Quoten sind nicht gleich, weil die Rücklagen Eigenkapital sind und nicht Schulden.\n\nDie Aussage ist falsch.",
+        "Vermögen 900. Eigenkapital 450 plus Schulden 300 + 100 + 50 = 450. Zusammen 900. Die Bilanz geht auf.\n\nDie Aussage ist wahr."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.3.4b",
+      "id": "WISO M2.3.4b",
+      "title": "Preissenkung unter die Gewinnschwelle",
+      "subsection": "3.4",
+      "chapter": 1,
+      "context": "Preis 40 Euro, variable Kosten 25 Euro, Fixkosten 9.000 Euro im Jahr. Die Jahresmenge ist 800 Stück. Danach fällt der Preis auf 34 Euro, Menge und Kosten bleiben.\n\nBewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Beim Preis von 40 Euro liegt die Gewinnschwelle bei 600 Stück.",
+        "Beim Preis von 34 Euro decken 800 Stück die Fixkosten noch.",
+        "Der Deckungsbeitrag je Stück fällt um 6 Euro, nicht um 15 Euro.",
+        "Beim ursprünglichen Preis und 800 Stück beträgt der Gewinn 3.000 Euro.",
+        "Weil 800 über der ursprünglichen Gewinnschwelle liegt, bleibt nach der Preissenkung ein Gewinn."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Deckungsbeitrag 40 − 25 = 15. Fixkosten 9.000 geteilt durch 15 sind 600 Stück. Ab dieser Menge ist der Fixkostenblock beim alten Preis gedeckt.\n\nDie Aussage ist wahr.",
+        "Neuer Deckungsbeitrag 34 − 25 = 9. 800 mal 9 sind 7.200, die Fixkosten sind 9.000. Es fehlen 1.800 Euro. Die Menge liegt unter der neuen Gewinnschwelle von 9.000/9 = 1.000.\n\nDie Aussage ist falsch.",
+        "Der Preis fällt um 6 Euro, die variablen Kosten bleiben. Der Deckungsbeitrag fällt von 15 auf 9, also um 6, nicht um die ganzen 15.\n\nDie Aussage ist wahr.",
+        "800 liegt 200 Stück über 600. 200 mal 15 sind 3.000 Euro Gewinn. Dieselbe Zahl: 800 mal 15 minus 9.000 = 12.000 − 9.000 = 3.000.\n\nDie Aussage ist wahr.",
+        "Die alte Schwelle von 600 gilt nur beim Preis von 40. Nach der Senkung ist der Deckungsbeitrag 9 Euro, und 800 Stück bleiben unter der neuen Schwelle. Der Vergleich mit der alten Schwelle rettet den Gewinn nicht.\n\nDie Aussage ist falsch."
+      ],
+      "difficulty_level": "5/5"
     },
     {
       "case_id": "WISO M2.4.3",
       "id": "WISO M2.4.3",
-      "title": "Zwei Seiten einer Fahrtenplattform",
+      "title": "Provision und weniger Fahrten",
       "subsection": "4.3",
-      "chapter": 4,
-      "context": "Eine Plattform vermittelt Fahrten und behält 20 Prozent des Fahrpreises ein. 2024 werden 300.000 Fahrten zu durchschnittlich 16 Euro vermittelt.\n\n[[CHART type=\"line\" title=\"Fahrgäste auf der Plattform (Tausend)\"]]\n2022 | Fahrgäste=25\n2023 | Fahrgäste=40\n2024 | Fahrgäste=70\n[[/CHART]]\n\nDie Zahl der Fahrerinnen und Fahrer steigt im selben Zeitraum von 1.200 auf 5.000. Bewerten Sie die folgenden Aussagen:",
+      "chapter": 1,
+      "context": "Eine Plattform vermittelt 250.000 Fahrten zu durchschnittlich 18 Euro und behält 22 Prozent ein. Steigt der Anteil auf 30 Prozent, sinkt die Fahrtenzahl um 10 Prozent. Der Fahrpreis bleibt 18 Euro.\n\nBewerten Sie die folgenden Aussagen:",
       "statements": [
-        "Die Plattform verbindet zwei Marktseiten.",
-        "Der Umsatz der Plattform im Jahr 2024 übersteigt 1 Million Euro.",
-        "Gleichzeitig mehr Fahrgäste und mehr Fahrer passen zu einem indirekten Netzeffekt.",
-        "Ein Vermittlungsanteil von 25 statt 20 Prozent würde den Plattformumsatz bei gleicher Fahrtenzahl und gleichem Fahrpreis um 240.000 Euro erhöhen.",
-        "Weil die Plattform keine eigenen Autos besitzt, erzielt sie keinen Umsatz."
+        "Der Plattformumsatz bei 22 Prozent liegt unter 1 Million Euro.",
+        "Der Umsatz fällt, wenn der Anteil auf 30 Prozent steigt und zugleich 10 Prozent der Fahrten wegbleiben.",
+        "Fahrgäste und Fahrer sind zwei Marktseiten derselben Plattform.",
+        "Bei unveränderter Fahrtenzahl würde ein höherer Provisionsanteil den Umsatz der Plattform erhöhen.",
+        "Ohne eigene Autos kann die Plattform keinen Umsatz erzielen."
       ],
       "answer_key": [
         true,
@@ -292,11 +262,41 @@
         false
       ],
       "tactical_explanations": [
-        "Fahrgäste und Fahrer sind zwei Gruppen, die über die Plattform zusammenkommen. Das ist ein zweiseitiger Markt, nicht ein Verkauf aus eigenem Lager.\n\nDie Aussage ist wahr.",
-        "300.000 × 16 = 4.800.000 Euro vermitteltes Volumen. 20 Prozent davon sind 960.000 Euro. Das liegt unter 1 Million.\n\nDie Aussage ist falsch.",
-        "Mehr Fahrgäste machen die Plattform für Fahrer attraktiver, mehr Fahrer für Fahrgäste. Dieses gegenseitige Anziehen ist der indirekte Netzeffekt. Die beiden Reihen im Chart und im Text laufen gemeinsam nach oben.\n\nDie Aussage ist wahr.",
-        "Fünf zusätzliche Prozentpunkte von 4.800.000 Euro sind 240.000 Euro. Der Umsatz stiege von 960.000 auf 1.200.000 Euro, Differenz 240.000.\n\nDie Aussage ist wahr.",
-        "Der Umsatz entsteht aus der Vermittlungsgebühr, nicht aus dem Eigentum an den Autos. Eine Plattform kann Umsatz erzielen, ohne die vermittelte Sache zu besitzen.\n\nDie Aussage ist falsch."
+        "250.000 mal 18 sind 4.500.000 Euro vermitteltes Volumen. 22 Prozent davon sind 990.000 Euro. Das liegt unter 1 Million.\n\nDie Aussage ist wahr.",
+        "Zehn Prozent weniger Fahrten sind 225.000. Volumen 225.000 mal 18 = 4.050.000. Davon 30 Prozent sind 1.215.000 Euro. Das liegt über 990.000. Der Umsatz steigt, er fällt nicht.\n\nDie Aussage ist falsch.",
+        "Die Plattform führt Fahrgäste und Fahrer zusammen und behält eine Provision ein. Das sind zwei Seiten, nicht ein Verkauf aus eigenem Fuhrpark.\n\nDie Aussage ist wahr.",
+        "Bei gleicher Fahrtenzahl und gleichem Fahrpreis ist das Volumen konstant. Ein höherer Prozentanteil davon ist ein höherer Umsatz. Die Aussage setzt die Fahrtenzahl ausdrücklich unverändert.\n\nDie Aussage ist wahr.",
+        "Der Umsatz ist die Provision auf vermittelte Fahrten. Eigentum an den Autos ist dafür nicht nötig.\n\nDie Aussage ist falsch."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "WISO M2.3.2",
+      "id": "WISO M2.3.2",
+      "title": "Verlust, GmbH und Bürgschaft",
+      "subsection": "3.2",
+      "chapter": 1,
+      "context": "Anna haftet im Einzelunternehmen unbeschränkt. In der GmbH beträgt das Gesellschaftsvermögen 10.000 Euro. Ein Verlust von 25.000 Euro trifft die Gesellschaft. Eine persönliche Bürgschaft hat sie nicht abgegeben. Ihr Haus ist Privatvermögen.\n\nBewerten Sie die folgenden Aussagen:",
+      "statements": [
+        "Im Einzelunternehmen kann ein Gläubiger auch auf das Haus zugreifen.",
+        "In der GmbH wird die Lücke von 15.000 Euro zwischen Verlust und Gesellschaftsvermögen automatisch Annas private Schuld.",
+        "Die GmbH ist eine Personengesellschaft.",
+        "Die beschränkte Haftung bedeutet, dass Anna die 10.000 Euro Gesellschaftsvermögen nicht verlieren kann.",
+        "Hätte Anna eine persönliche Bürgschaft abgegeben, könnte das Haus trotz GmbH wieder haften."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Unbeschränkte Haftung heißt, dass Gläubiger nicht auf das Betriebsvermögen beschränkt sind. Das private Haus steht dann mit im Zugriff.\n\nDie Aussage ist wahr.",
+        "Ohne Bürgschaft oder sonstigen privaten Haftungsgrund bleibt die Lücke bei der Gesellschaft. Sie springt nicht von selbst auf Anna über. Die beschränkte Haftung ist genau diese Trennung.\n\nDie Aussage ist falsch.",
+        "Die GmbH ist eine Kapitalgesellschaft. Dass Anna sie allein hält, macht sie nicht zur Personengesellschaft.\n\nDie Aussage ist falsch.",
+        "Die 10.000 Euro können im Verlust aufgebraucht werden. Beschränkte Haftung schützt das Privatvermögen, nicht das eingelegte Gesellschaftsvermögen.\n\nDie Aussage ist falsch.",
+        "Eine Bürgschaft ist ein eigener Anspruch gegen Anna persönlich. Dann haftet sie neben der Gesellschaft, und das Haus kann wieder betroffen sein.\n\nDie Aussage ist wahr."
       ],
       "difficulty_level": "4/5"
     }
@@ -654,83 +654,83 @@
     {
       "case_id": "WISO M2.MATH.1",
       "id": "WISO M2.MATH.1",
-      "title": "Freitag, Samstag und drei Beschäftigte",
+      "title": "Ritter und Knappen",
       "chapter": 1,
       "subsection": "1.4",
       "difficulty_level": "5/5",
-      "context": "Ann, Bo und Chi arbeiten in einem Café. Es gelten genau diese Regeln:\n\n1. Genau zwei der drei Personen arbeiten freitags.\n2. Wer samstags arbeitet, arbeitet auch freitags.\n3. Ann arbeitet samstags.\n4. Bo arbeitet freitags nicht.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Vier Personen A, B, C und D sind jeweils entweder Ritter, die immer die Wahrheit sagen, oder Knappen, die immer lügen.\n\nA sagt: „B ist ein Knappe.“\nB sagt: „C ist ein Ritter.“\nC sagt: „A und D sind verschiedene Typen.“\nD sagt: „Genau zwei von uns sind Ritter.“\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Chi arbeitet in jeder zulässigen Belegung freitags.",
-        "Es ist möglich, dass Bo samstags arbeitet.",
-        "Ann arbeitet freitags.",
-        "In jeder zulässigen Belegung arbeitet genau eine Person samstags.",
-        "Die Aussage „wer freitags nicht arbeitet, arbeitet samstags nicht“ folgt aus Regel 2."
+        "D ist in der einzigen widerspruchsfreien Belegung ein Ritter.",
+        "Es gibt eine widerspruchsfreie Belegung mit genau drei Rittern.",
+        "In der einzigen Lösung sind B und C beide Knappen.",
+        "A und D sind verschiedene Typen.",
+        "C sagt in der einzigen Lösung die Wahrheit."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nAus Regel 4 ist Bo freitags draußen. Regel 1 verlangt genau zwei Freitage, also müssen Ann und Chi freitags arbeiten. Chi ist damit erzwungen, nicht nur möglich.\n\n$$\n\\neg F(Bo) \\Rightarrow F(Ann)\\land F(Chi).\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nRegel 2 ist die Implikation $S(x)\\Rightarrow F(x)$. Bo arbeitet freitags nicht, also ist die Kontraposition\n\n$$\n\\neg F(Bo)\\Rightarrow \\neg S(Bo).\n$$\n\nEin Samstag für Bo verletzt Regel 2. Möglich ist diese Belegung nicht.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nRegel 3 setzt $S(Ann)$. Mit Regel 2 folgt $F(Ann)$. Dieselbe Folgerung ergibt sich noch einmal daraus, dass Bo freitags ausfällt und genau zwei Personen freitags arbeiten.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nFest steht nur Ann am Samstag. Chi arbeitet freitags und darf samstags arbeiten, muss aber nicht: Beide Wahlen erfüllen $S\\Rightarrow F$. Bo bleibt draußen. Zulässig sind daher die Samstagsmengen $\\{Ann\\}$ und $\\{Ann, Chi\\}$. Nicht jede Belegung hat genau eine Person.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nRegel 2 lautet $\\forall x\\,(S(x)\\Rightarrow F(x))$. Die Kontraposition von $S\\Rightarrow F$ ist $\\neg F\\Rightarrow \\neg S$, also: Wer freitags nicht arbeitet, arbeitet samstags nicht. Die Aussage wiederholt diese logische Umformung und fügt keine neue Regel hinzu.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nAngenommen, D ist Knappe. Dann ist die Zahl der Ritter nicht 2. Ist A Ritter, so ist B Knappe, also ist C kein Ritter, also Knappe. C lügt, also sind A und D gleichartig. A ist Ritter und D Knappe, sie sind verschieden, C hätte also die Wahrheit gesagt. Widerspruch. Ist A Knappe, so ist B Ritter, also C Ritter. C sagt die Wahrheit, A und D sind verschieden. A ist Knappe, also müsste D Ritter sein. D ist aber Knappe. Widerspruch. D kann kein Knappe sein.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nD ist Ritter, also gibt es genau zwei Ritter. Drei Ritter würden Ds wahre Aussage verletzen. Der Fall ist nicht nur unmöglich, er widerspricht der einzigen offenen Lage.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nD ist Ritter und es gibt genau einen weiteren Ritter unter A, B, C. Nur A als dieser Ritter passt: B ist dann Knappe, C ist Knappe, und Cs Lüge stimmt, weil A und D beide Ritter sind. B als Ritter würde C zum Ritter machen und damit mindestens drei Ritter erzeugen. C als Ritter scheitert an As Aussage.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie einzige Lösung ist A Ritter, B Knappe, C Knappe, D Ritter. A und D sind gleichartig, nicht verschieden. Cs Satz ist genau deshalb falsch.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nC ist Knappe und lügt. Die Aussage, A und D seien verschieden, trifft in der Lösung nicht zu.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Schreibe $F$ für Freitag und $S$ für Samstag. Regel 2 ist $\\forall x\\,(S(x)\\Rightarrow F(x))$, Regel 3 ist $S(Ann)$, Regel 4 ist $\\neg F(Bo)$.\n\nAus Regel 4 und „genau zwei“ folgen $F(Ann)$ und $F(Chi)$. Bo kann nicht samstags arbeiten. Chi kann samstags dabei sein oder nicht. Es gibt damit zwei zulässige Belegungen, nicht eine.",
+      "solution_overview": "Einziger widerspruchsfreier Fall: A und D Ritter, B und C Knappen. D sagt die Wahrheit, es sind genau zwei Ritter. Drei Ritter und der Fall „D ist Knappe“ führen jeweils auf einen Widerspruch.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.2",
       "id": "WISO M2.MATH.2",
-      "title": "Potenzen, Wurzel und eine Identität",
+      "title": "Ein Bruch, eine Lücke",
       "chapter": 2,
-      "subsection": "2.3",
-      "difficulty_level": "3/5",
-      "context": "Jede Aussage ist eine eigene algebraische Prüfung. Entscheide, ob sie richtig oder falsch ist.",
+      "subsection": "2.2",
+      "difficulty_level": "5/5",
+      "context": "Für $x\\neq \\pm 3$ sei\n\n$$\nf(x)=\\frac{x^{2}-5x+6}{x^{2}-9}.\n$$\n\nEntscheide, ob jede Aussage richtig oder falsch ist. Die Aussagen nennen Schranken oder Eigenschaften, nicht die vollständig gekürzte Funktion als Antwort.",
       "statements": [
-        "$(2^{5}\\cdot 2^{-3})/2^{4}=2^{-2}$.",
-        "$(x^{2}-9)/(x-3)=x+3$ gilt für alle reellen $x$.",
-        "$\\sqrt{48}=4\\sqrt{3}$.",
-        "$|3-7|+|-2|=2$.",
-        "$(a+b)^{2}-(a-b)^{2}=4ab$ gilt für alle reellen $a$ und $b$."
+        "Für $x=0$ ist $f(0)$ streng größer als $-1$.",
+        "$f$ ist bei $x=3$ definiert und hat dort den Wert $1/6$.",
+        "Für alle $x>3$ ist $f(x)$ positiv.",
+        "Die Gleichung $f(x)=1$ hat eine Lösung mit $x>0$.",
+        "$|f(0)|$ ist kleiner als $|f(1)|$."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie Exponenten derselben Basis werden addiert beziehungsweise subtrahiert:\n\n$$\n2^{5+(-3)-4}=2^{-2}.\n$$\n\nDie behauptete Potenz stimmt.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nFür $x\\neq 3$ kürzt der Faktor $x-3$:\n\n$$\n\\frac{(x-3)(x+3)}{x-3}=x+3.\n$$\n\nBei $x=3$ ist der linke Bruch nicht definiert. Die Gleichheit gilt daher nicht für alle reellen $x$.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nZerlege den Radikanden in eine Quadratzahl und einen Rest:\n\n$$\n48=16\\cdot 3,\\qquad \\sqrt{48}=\\sqrt{16}\\cdot\\sqrt{3}=4\\sqrt{3}.\n$$\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nErst die Beträge, dann die Summe:\n\n$$\n|3-7|=4,\\qquad |-2|=2,\\qquad 4+2=6.\n$$\n\nDer Wert 2 wäre nur einer der beiden Beträge, nicht ihre Summe.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nAusmultiplizieren:\n\n$$\n(a^{2}+2ab+b^{2})-(a^{2}-2ab+b^{2})=4ab.\n$$\n\nDie Quadrate heben sich weg, die gemischten Glieder addieren sich. Die Identität gilt für alle reellen $a$ und $b$.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nZähler $6$, Nenner $-9$, also $f(0)=-2/3$. Wegen $-2/3>-1$ ist die Schranke erfüllt. Der Wert selbst ist nicht $-1$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $x=3$ ist der Nenner $0$. Die Stelle ist eine Definitionslücke. Der gekürzte Ausdruck $(x-2)/(x+3)$ hätte dort $1/6$, aber $f$ selbst ist dort nicht definiert. Die Aussage verlangt beides und scheitert am Definitionsbereich.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nFür $x\\neq 3$ ist $f(x)=(x-2)/(x+3)$. Für $x>3$ sind Zähler und Nenner positiv, der Quotient also positiv. Die Lücke $x=3$ liegt nicht in diesem Bereich.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$(x-2)/(x+3)=1$ ergibt $x-2=x+3$, also $-2=3$. Es gibt keine Lösung, auch keine positive.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$f(0)=-2/3$, Betrag $2/3$. $f(1)=(1-5+6)/(1-9)=2/(-8)=-1/4$, Betrag $1/4$. $2/3$ ist nicht kleiner als $1/4$.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Fünf getrennte Prüfungen: Potenzrechnung bei gleicher Basis, Definitionsbereich einer Kürzung, teilweises Wurzelziehen, Betragsaddition und die Differenz zweier Binome. Nur die zweite und die vierte Behauptung scheitern, einmal an $x=3$ und einmal an der Summe $6$.",
+      "solution_overview": "Nach dem Kürzen bleibt $(x-2)/(x+3)$ für $x\\neq 3$, mit zusätzlichem Ausschluss $x\\neq -3$. Es gilt $f(0)=-2/3$, $f(1)=-1/4$, keine Lösung von $f(x)=1$, und $x=3$ bleibt eine Lücke.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.3",
       "id": "WISO M2.MATH.3",
-      "title": "Vier Einzahlungen, nachschüssig und vorschüssig",
+      "title": "Wachsende und gleichbleibende Rente",
       "chapter": 3,
       "subsection": "3.5",
       "difficulty_level": "5/5",
-      "context": "Am Ende jedes Jahres werden vier Jahre lang $2\\,000$ Euro eingezahlt. Der effektive Jahreszins beträgt $5\\%$. Die vorschüssige Variante verschiebt jede Einzahlung auf den Jahresanfang, bei demselben Zins und derselben Laufzeit.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Vier Zahlungen am Jahresende: $5\\,000$, danach jeweils $10\\%$ mehr, also $5\\,500$, $6\\,050$ und $6\\,655$. Der Kalkulationszins ist $8\\%$. Daneben steht eine gleichbleibende Rente von viermal $5\\,000$ Euro zum selben Zins.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Der Endwert der nachschüssigen Reihe liegt streng über $8\\,600$ Euro.",
-        "Der Barwert der nachschüssigen Reihe am Zeitpunkt null liegt streng über $7\\,200$ Euro.",
-        "Der Endwert der vorschüssigen Reihe liegt streng über $9\\,000$ Euro.",
-        "Die Zinsen der nachschüssigen Reihe, also Endwert minus eingezahlte Summe, übersteigen $700$ Euro.",
-        "Bei $10\\%$ Jahreszins sind die Zinsen der nachschüssigen Reihe mehr als doppelt so hoch wie bei $5\\%$."
+        "Der Barwert der wachsenden Reihe liegt streng über $18\\,000$ Euro.",
+        "Der Barwert der wachsenden Reihe liegt über der Summe der nicht abgezinsten Zahlungen.",
+        "Der Barwert der gleichbleibenden Rente liegt unter dem Barwert der wachsenden Reihe.",
+        "Die vierte Zahlung ist streng größer als $6\\,700$ Euro.",
+        "Jeder abgezinste Betrag der wachsenden Reihe ist größer als der unmittelbar vorangehende abgezinste Betrag."
       ],
       "answer_key": [
         true,
@@ -740,129 +740,129 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nNachschüssiger Rentenendwert:\n\n$$\nFV=2000\\cdot\\frac{1{,}05^{4}-1}{0{,}05}.\n$$\n\n$$\n1{,}05^{2}=1{,}1025,\\qquad 1{,}05^{4}=1{,}21550625.\n$$\n\n$$\n\\frac{0{,}21550625}{0{,}05}=4{,}310125,\\qquad FV=8620{,}25>8600.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nBarwert derselben nachschüssigen Reihe:\n\n$$\nPV=2000\\cdot\\frac{1-1{,}05^{-4}}{0{,}05}=2000\\cdot\\frac{1-1/1{,}21550625}{0{,}05}.\n$$\n\n$$\n1{,}05^{-4}\\approx 0{,}82270,\\qquad PV\\approx 7091{,}90.\n$$\n\nDas liegt unter $7\\,200$.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nJede vorschüssige Einzahlung steht ein Jahr länger. Der Endwert ist der nachschüssige Endwert mal $1{,}05$:\n\n$$\n8620{,}25\\cdot 1{,}05=9051{,}26>9000.\n$$\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nEingezahlt werden $4\\cdot 2000=8000$ Euro. Die Zinsen sind\n\n$$\n8620{,}25-8000=620{,}25,\n$$\n\nalso nicht mehr als $700$ Euro.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nBei $10\\%$:\n\n$$\n1{,}1^{4}=1{,}4641,\\qquad FV=2000\\cdot\\frac{0{,}4641}{0{,}1}=9282.\n$$\n\nZinsen: $9282-8000=1282$. Das Doppelte von $620{,}25$ ist $1240{,}50$. Weil $1282>1240{,}50$, ist mehr als eine Verdopplung erreicht.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie vier Barwerte sind etwa $4\\,629{,}63$, $4\\,715{,}36$, $4\\,802{,}69$ und $4\\,891{,}62$. Die Summe ist etwa $19\\,039$ und damit größer als $18\\,000$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie nicht abgezinste Summe ist $5\\,000+5\\,500+6\\,050+6\\,655=23\\,205$. Der Barwert etwa $19\\,039$ liegt darunter, nicht darüber. Abzinsen verkleinert positive zukünftige Beträge.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDer Barwert von viermal $5\\,000$ bei $8\\%$ ist\n\n$$\n5000\\cdot\\frac{1-1{,}08^{-4}}{0{,}08}\\approx 16561.\n$$\n\nDas liegt unter etwa $19\\,039$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie vierte Zahlung ist $5\\,000\\cdot 1{,}1^{3}=6\\,655$. Das ist nicht größer als $6\\,700$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nWeil die Zahlungen mit $10\\%$ wachsen und nur mit $8\\%$ abgezinst werden, steigt die abgezinste Folge: etwa $4\\,630$, $4\\,715$, $4\\,803$, $4\\,892$. Jedes Glied ist größer als das vorige.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Nachschüssiger Endwert $8620{,}25$, Barwert etwa $7091{,}90$, vorschüssiger Endwert $9051{,}26$. Die Zinsen bei $5\\%$ betragen $620{,}25$, bei $10\\%$ betragen sie $1282$ und damit mehr als das Doppelte. Der Barwert bleibt unter $7\\,200$, die Zinsen bei $5\\%$ bleiben unter $700$.",
+      "solution_overview": "Wachsende Barwerte etwa $4629{,}63+4715{,}36+4802{,}69+4891{,}62=19039$. Gleichbleibende Rente etwa $16561$. Nominale Summe $23205$. Die vierte Zahlung ist $6655$.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.4",
       "id": "WISO M2.MATH.4",
-      "title": "Quadrat, Betrag und Wurzel",
+      "title": "Zwei Arbeitszeiten, eine negative Wurzel",
       "chapter": 4,
-      "subsection": "4.5",
-      "difficulty_level": "4/5",
-      "context": "Gegeben sind drei getrennte Gleichungen:\n\n$$\n2x^{2}-8x+6=0,\\qquad |x-1|=4,\\qquad \\sqrt{2x+3}=x.\n$$\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "subsection": "4.2",
+      "difficulty_level": "5/5",
+      "context": "Person A braucht $x$ Stunden für einen Auftrag, Person B braucht $x+3$ Stunden. Zusammen brauchen sie $2$ Stunden.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Beide Lösungen der quadratischen Gleichung sind positiv.",
-        "Die Summe der beiden Lösungen der quadratischen Gleichung ist $8$.",
-        "Die Betragsgleichung hat genau eine reelle Lösung.",
-        "$x=3$ erfüllt die Wurzelgleichung und ihren Definitionsbereich.",
-        "Die negative Lösung der Betragsgleichung ist streng kleiner als $-5$."
+        "Die positive Lösung für $x$ ist $3$.",
+        "B braucht in dieser Lösung $6$ Stunden.",
+        "Die zweite Lösung $x=-2$ der quadratischen Gleichung ist eine zulässige Arbeitszeit.",
+        "Zusammen sind sie schneller als jede Person allein.",
+        "A braucht länger als B."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nTeile durch 2:\n\n$$\nx^{2}-4x+3=0,\\qquad (x-1)(x-3)=0.\n$$\n\nDie Lösungen sind $1$ und $3$, beide positiv.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nFür $x^{2}-4x+3=0$ ist die Summe der Lösungen $4$, nicht $8$. In der Ausgangsform $2x^{2}-8x+6=0$ liefert der Satz von Vieta die Summe $8/2=4$.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nDer Betrag ergibt zwei Punkte im Abstand 4 von 1:\n\n$$\nx-1=4\\quad\\text{oder}\\quad x-1=-4,\n$$\n\nalso $x=5$ und $x=-3$. Genau eine Lösung wäre falsch.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nEinsetzen: $\\sqrt{2\\cdot 3+3}=\\sqrt{9}=3$. Außerdem ist $2\\cdot 3+3=9\\geq 0$, der Radikand ist zulässig. Die Probe geht auf.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nDie negative Betragslösung ist $-3$. Es gilt $-3>-5$, nicht $-3<-5$.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie Gleichung ist $1/x+1/(x+3)=1/2$. Mit dem Hauptnenner $2x(x+3)$ folgt\n\n$$\n2(x+3)+2x=x(x+3),\\qquad x^{2}-x-6=0,\\qquad (x-3)(x+2)=0.\n$$\n\nDie positive Lösung ist $x=3$.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\nB braucht $x+3=6$ Stunden. Probe: $1/3+1/6=1/2$, also genau $2$ Stunden zusammen.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\n$x=-2$ erfüllt die quadratische Gleichung, aber keine positive Arbeitszeit. Auch $x+3=1$ wäre dann positiv, doch eine negative Dauer für A ist als Zeit unzulässig.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nA allein $3$ Stunden, B allein $6$ Stunden, zusammen $2$ Stunden. $2$ ist kleiner als beide Einzelzeiten.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nA braucht $3$ Stunden, B $6$. A ist schneller, nicht langsamer.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Die quadratische Gleichung hat die Lösungen $1$ und $3$, Summe $4$. Der Betrag hat die Lösungen $5$ und $-3$. Die Wurzelgleichung wird von $x=3$ erfüllt; sie ist hier nur als Probe gefragt und nicht vollständig gelöst.",
+      "solution_overview": "$x^{2}-x-6=0$ hat die Wurzeln $3$ und $-2$. Nur $x=3$ ist eine Dauer. Dann braucht B $6$ Stunden, und die gemeinsame Zeit $2$ liegt unter beiden Einzelzeiten.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.5",
       "id": "WISO M2.MATH.5",
-      "title": "Zwei Kaffeesorten, ein Zielpreis",
+      "title": "Unterbestimmte Mischung mit Untergrenze",
       "chapter": 5,
       "subsection": "5",
-      "difficulty_level": "4/5",
-      "context": "Sorte A kostet $9$ Euro je Kilogramm, Sorte B $15$ Euro je Kilogramm. Es werden $10$ Kilogramm gemischt, der Einkauf soll genau $126$ Euro kosten.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "difficulty_level": "5/5",
+      "context": "Zwei Mengen $x$ und $y$ erfüllen $x+y=100$, $x\\ge 0$, $y\\ge 0$ und $2x+y\\ge 160$. Die Kosten sind $4x+y$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Von der teureren Sorte wird mehr verwendet als von der günstigeren.",
-        "Der Mengenanteil der günstigeren Sorte liegt über 50 Prozent.",
-        "Ersetzt man ein Kilogramm der teuren Sorte durch die günstige, sinkt der Einkaufspreis um genau 6 Euro.",
-        "Der Einkaufspreis der Mischung übersteigt 130 Euro.",
-        "Es gibt genau eine Lösung für die beiden Mengen."
+        "Jedes zulässige Paar hat $x\\ge 60$.",
+        "Die niedrigsten zulässigen Kosten betragen 280.",
+        "Es gibt einen zulässigen Plan mit $y=50$.",
+        "Es gibt genau einen zulässigen Plan.",
+        "Steigt $x$ von $60$ auf $80$, steigen die Kosten um $60$."
       ],
       "answer_key": [
         true,
-        false,
         true,
+        false,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nMit $a+b=10$ und $9a+15b=126$:\n\n$$\n9(10-b)+15b=126,\\qquad 90+6b=126,\\qquad b=6,\\quad a=4.\n$$\n\nSorte B ist teurer, und $6>4$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDie günstigere Sorte ist A mit 4 Kilogramm. Der Anteil ist $4/10=40\\%$, nicht über $50\\%$.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nEin Kilogramm weniger von B und ein Kilogramm mehr von A ändert den Preis um\n\n$$\n9-15=-6\n$$\n\nEuro. Die Gesamtmenge bleibt 10 Kilogramm.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nDer Einkauf ist auf genau 126 Euro gesetzt. 126 ist nicht größer als 130.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nZwei lineare Gleichungen mit zwei Unbekannten, die Koeffizientenmatrix hat Determinante $9\\cdot 1-15\\cdot 1=-6\\neq 0$. Die Lösung $(a,b)=(4,6)$ ist eindeutig.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nMit $y=100-x$ wird $2x+(100-x)\\ge 160$, also $x\\ge 60$. Dann ist $y=100-x\\le 40$ und nicht negativ.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\nDie Kosten sind $4x+y=3x+100$. Auf $x\\in[60,100]$ ist das Minimum $3\\cdot 60+100=280$ bei $x=60$. Jedes größere $x$ kostet mehr.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\n$y=50$ erzwingt $x=50$. Dann ist $2x+y=150<160$. Der Plan verletzt die Untergrenze.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\nJedes $x$ von $60$ bis $100$ mit $y=100-x$ ist zulässig. Das sind unendlich viele Pläne, nicht einer.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nKosten $3x+100$. Von $x=60$ auf $x=80$ steigt der Term $3x$ um $60$. Die $100$ bleiben.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Das System $a+b=10$, $9a+15b=126$ hat die einzige Lösung $a=4$, $b=6$. Der Preisunterschied je ersetztem Kilogramm beträgt 6 Euro, der Gesamtpreis bleibt 126 Euro.",
+      "solution_overview": "Zulässig sind alle $x\\in[60,100]$ mit $y=100-x$. Die Kosten $3x+100$ laufen von $280$ bis $400$. Der Plan $y=50$ ist unzulässig.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.6",
       "id": "WISO M2.MATH.6",
-      "title": "Vorzeichen eines Bruchs",
+      "title": "Summe zweier Beträge",
       "chapter": 6,
-      "subsection": "6.1",
-      "difficulty_level": "4/5",
-      "context": "Löse über den reellen Zahlen\n\n$$\n\\frac{x-1}{x-4}\\geq 0,\\qquad x\\neq 4.\n$$\n\nEntscheide, ob jede Aussage über die Lösungsmenge richtig oder falsch ist.",
+      "subsection": "6.3",
+      "difficulty_level": "5/5",
+      "context": "Löse $|2x-3|+|x+1|<10$ über den reellen Zahlen.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "$x=1$ gehört zur Lösungsmenge.",
-        "$x=4$ gehört zur Lösungsmenge.",
-        "Jede Zahl zwischen 1 und 4 ist eine Lösung.",
-        "$x=5$ ist eine Lösung.",
-        "Die Lösungsmenge ist ein einziges Intervall."
+        "$x=-2$ ist eine Lösung.",
+        "$x=-3$ ist eine Lösung.",
+        "$x=4$ ist eine Lösung.",
+        "Die Lösungsmenge ist ein einziges offenes Intervall.",
+        "Jedes $x$ mit $|x|<2$ ist eine Lösung."
       ],
       "answer_key": [
         true,
         false,
         false,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nBei $x=1$ ist der Zähler 0 und der Nenner $-3\\neq 0$. Der Bruch ist 0 und erfüllt $\\geq 0$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nBei $x=4$ ist der Nenner 0. Die Stelle ist aus dem Definitionsbereich ausgeschlossen und damit keine Lösung.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nFür $1<x<4$ ist der Zähler positiv und der Nenner negativ. Der Quotient ist negativ und verletzt $\\geq 0$. Zum Beispiel $x=2$ ergibt $1/(-2)<0$.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nBei $x=5$ sind Zähler und Nenner positiv: $4/1=4\\geq 0$. Die Stelle liegt in $(4,\\infty)$.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nDie Lösungsmenge ist $(-\\infty,1]\\cup(4,\\infty)$. Zwei getrennte Teile sind kein einziges Intervall.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie Knickstellen sind $x=-1$ und $x=3/2$. Links von $-1$ wird die Ungleichung zu $2-3x<10$, also $x>-8/3$, zusammen mit $x<-1$. Bei $x=-8/3$ steht links genau $10$, die strenge Ungleichung gilt dort nicht. $x=-2$ liegt in $(-8/3,-1)$ und ist Lösung.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$-3$ liegt links von $-8/3\\approx -2{,}667$. Dort ist $2-3x$ mindestens $2-3\\cdot(-8/3)=10$ und für $x=-3$ gleich $11$. Die Summe der Beträge ist nicht kleiner als $10$.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nRechts von $3/2$ lautet die Ungleichung $3x-2<10$, also $x<4$. Bei $x=4$ ist der Wert genau $10$, nicht kleiner. Der rechte Rand gehört nicht dazu.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nIn der Mitte $-1\\le x<3/2$ ist die Ungleichung $4-x<10$ auf dem ganzen Stück wahr. Zusammen mit den beiden äußeren Stücken entsteht $(-8/3,4)$, ein einziges offenes Intervall.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\n$|x|<2$ ist das Intervall $(-2,2)$. Es liegt ganz in $(-8/3,4)$, weil $-2>-8/3$ und $2<4$ ist. Jeder solche Punkt ist Lösung.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Kritische Stellen sind $x=1$ und $x=4$. Links von 1 ist der Bruch positiv, zwischen 1 und 4 negativ, rechts von 4 positiv. Hinzu kommt die Nullstelle $x=1$. Nicht dazu gehört die Definitionslücke $x=4$.",
+      "solution_overview": "Die Lösungsmenge ist $(-8/3,4)$. Die Ränder $-8/3$ und $4$ ergeben den Wert $10$ und fallen heraus. $-2$ und das Intervall $|x|<2$ liegen innen, $-3$ liegt außen.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.7",
       "id": "WISO M2.MATH.7",
-      "title": "Parabel und Gerade",
+      "title": "Kubische Funktion mit zwei Extrema",
       "chapter": 7,
       "subsection": "7",
-      "difficulty_level": "4/5",
-      "context": "Es seien $f(x)=x^{2}-4x+3$ und $g(x)=x-1$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "difficulty_level": "5/5",
+      "context": "Sei $f(x)=x^{3}-6x^{2}+9x+1$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Der Scheitel von $f$ liegt unter der $x$-Achse.",
-        "Die Graphen von $f$ und $g$ schneiden sich in genau einem Punkt.",
-        "An der Stelle $x=4$ haben $f$ und $g$ denselben Wert.",
-        "Die Gerade $g$ hat die Steigung 2.",
-        "$f$ ist auf $(2,\\infty)$ streng monoton steigend."
+        "Bei $x=1$ liegt ein lokales Maximum mit Funktionswert $5$.",
+        "Das lokale Minimum liegt über dem lokalen Maximum.",
+        "$f$ hat genau eine reelle Nullstelle.",
+        "$f'(2)$ ist positiv.",
+        "Der Funktionswert am lokalen Minimum ist $1$."
       ],
       "answer_key": [
         true,
@@ -872,195 +872,195 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDer Scheitel einer nach oben geöffneten Parabel $x^{2}-4x+3$ liegt bei $x=4/2=2$:\n\n$$\nf(2)=4-8+3=-1<0.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nGleichsetzen:\n\n$$\nx^{2}-4x+3=x-1,\\qquad x^{2}-5x+4=0,\\qquad (x-1)(x-4)=0.\n$$\n\nZwei Schnittstellen, $x=1$ und $x=4$, sind nicht genau eine.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$f(4)=16-16+3=3$ und $g(4)=3$. Die Werte stimmen überein; das ist der zweite Schnittpunkt.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\n$g(x)=x-1$ hat die Steigung $1$, nicht $2$.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDie Parabel öffnet nach oben, der Scheitel ist die tiefste Stelle bei $x=2$. Rechts davon steigt $f$ streng.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\n$f'(x)=3x^{2}-12x+9=3(x-1)(x-3)$. Vorzeichenwechsel von plus nach minus bei $x=1$: lokales Maximum.\n\n$$\nf(1)=1-6+9+1=5.\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $x=3$ wechselt die Ableitung von minus nach plus, also lokales Minimum. $f(3)=27-54+27+1=1$. Der Wert $1$ liegt unter dem Maximum $5$, nicht darüber.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$f(0)=1>0$ und $f(-1)=-1-6-9+1=-15<0$, also liegt eine Nullstelle in $(-1,0)$. Das lokale Minimum ist $1>0$ und das lokale Maximum ist $5>0$. Weitere Schnittpunkte mit der $x$-Achse gibt es nicht.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$f'(2)=3(2-1)(2-3)=3\\cdot 1\\cdot(-1)=-3<0$. Zwischen den Extrema fällt $f$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$f(3)=27-54+27+1=1$. Das ist der Wert an der einzigen lokalen Minimalstelle.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Scheitel $(2,-1)$, Nullstellen von $f$ bei $1$ und $3$, Schnitte mit $g$ bei $x=1$ und $x=4$. Die Steigung von $g$ ist 1. Rechts vom Scheitel steigt $f$.",
+      "solution_overview": "$f'(x)=3(x-1)(x-3)$. Lokales Maximum $f(1)=5$, lokales Minimum $f(3)=1$. Genau eine reelle Nullstelle, links vom Maximum.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.8",
       "id": "WISO M2.MATH.8",
-      "title": "Maler und Potenzen",
+      "title": "Stückkosten aus zwei gegenläufigen Termen",
       "chapter": 8,
       "subsection": "8",
-      "difficulty_level": "3/5",
-      "context": "Die Zeit zum Streichen einer Wand ist umgekehrt proportional zur Zahl der Maler. Drei Maler brauchen 8 Stunden. Daneben stehen zwei reine Potenzvergleiche.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "difficulty_level": "5/5",
+      "context": "Für $q>0$ seien die Kosten\n\n$$\nC(q)=\\frac{48}{q}+3q.\n$$\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Sechs Maler brauchen genau 4 Stunden.",
-        "Verdoppelt man die Zahl der Maler von 3 auf 6, halbiert sich die Zeit.",
-        "Ein einzelner Maler braucht weniger als 20 Stunden.",
-        "$2^{5}$ ist größer als $5^{2}$.",
-        "$(1/2)^{-3}=1/8$."
+        "Die Kosten sind bei $q=4$ minimal.",
+        "Die minimalen Kosten betragen $24$.",
+        "$C(8)$ ist kleiner als $C(4)$, weil sich der Term $48/q$ auf mehr Einheiten verteilt.",
+        "An der kritischen Stelle ist die zweite Ableitung positiv.",
+        "Im Minimum sind die beiden Summanden $48/q$ und $3q$ gleich groß."
       ],
       "answer_key": [
         true,
         true,
         false,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nAus $t=k/n$ und $8=k/3$ folgt $k=24$. Für sechs Maler gilt\n\n$$\nt=24/6=4.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\nDie Verdopplung von 3 auf 6 teilt $k/n$ durch 2. Aus 8 Stunden werden 4 Stunden. Bei umgekehrter Proportionalität ist das genau die Halbierung.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\nEin Maler braucht $t=24/1=24$ Stunden. 24 ist nicht kleiner als 20.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\n$2^{5}=32$ und $5^{2}=25$. Weil $32>25$, ist die Ungleichung richtig.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nEin negativer Exponent kehrt den Bruch um:\n\n$$\n\\left(\\frac{1}{2}\\right)^{-3}=2^{3}=8,\n$$\n\nnicht $1/8$.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$C'(q)=-48/q^{2}+3=0$ ergibt $q^{2}=16$. Für $q>0$ bleibt $q=4$. Die zweite Ableitung $96/q^{3}$ ist dort positiv, also ein Minimum.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\n$C(4)=48/4+3\\cdot 4=12+12=24$.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\n$C(8)=48/8+3\\cdot 8=6+24=30$. Das ist größer als $24$, nicht kleiner. Der lineare Term wächst stärker, als der Bruch fällt.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$C''(q)=96/q^{3}$. Bei $q=4$ ist das $96/64=1{,}5>0$.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\nIm Minimum stehen $48/4=12$ und $3\\cdot 4=12$ nebeneinander. Das ist kein Zufall dieser einen Zahl: aus $48/q^{2}=3$ folgt $48/q=3q$.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Die Konstante der umgekehrten Proportionalität ist $k=24$. Daraus folgen 4 Stunden bei sechs Malern und 24 Stunden bei einem Maler. Außerdem ist $2^{5}=32>25=5^{2}$ und $(1/2)^{-3}=8$.",
+      "solution_overview": "Minimum bei $q=4$ mit $C(4)=24$. Dort sind beide Summanden $12$, und $C(8)=30$ liegt darüber.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.9",
       "id": "WISO M2.MATH.9",
-      "title": "Drei lineare Faktoren",
+      "title": "Doppelte Nullstelle erzwingen",
       "chapter": 9,
       "subsection": "9",
-      "difficulty_level": "3/5",
-      "context": "Gegeben ist $p(x)=x^{3}-6x^{2}+11x-6$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "difficulty_level": "5/5",
+      "context": "Für $p(x)=x^{3}+ax^{2}+bx-4$ sollen $p(2)=0$ und $p'(2)=0$ gleichzeitig gelten.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "$x=1$ ist eine Nullstelle.",
-        "Die Summe der Nullstellen ist 6.",
-        "$p(0)$ ist positiv.",
-        "Der Grad von $p$ ist 2.",
-        "$p(x)=(x-1)(x-2)(x-3)$."
+        "Das Paar $a=-5$, $b=8$ erfüllt beide Bedingungen.",
+        "$x=2$ ist dann eine einfache Nullstelle.",
+        "Neben der doppelten Nullstelle $x=2$ gibt es die weitere reelle Nullstelle $x=1$.",
+        "Für diese Koeffizienten ist $p(0)$ positiv.",
+        "Aus $p'(2)=0$ allein folgt bereits $a=-5$, auch ohne $p(2)=0$."
       ],
       "answer_key": [
         true,
+        false,
         true,
         false,
-        false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nEinsetzen:\n\n$$\np(1)=1-6+11-6=0.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\nSind die Nullstellen 1, 2 und 3, ist ihre Summe 6. Dasselbe liefert der Satz von Vieta: Bei Leitkoeffizient 1 ist die Summe der Nullstellen der Koeffizient von $x^{2}$ mit umgekehrtem Vorzeichen, also 6.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\n$p(0)=-6<0$. Das konstante Glied ist negativ.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nDie höchste Potenz ist $x^{3}$. Der Grad ist 3, nicht 2.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nAus $p(1)=0$ und der Polynomdivision, oder durch Ausmultiplizieren:\n\n$$\n(x-1)(x-2)(x-3)=x^{3}-6x^{2}+11x-6.\n$$\n\nDie Faktoren treffen $p$.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\n$p(2)=4+4a+2b=0$ kürzt sich zu $b=-2-2a$. $p'(x)=3x^{2}+2ax+b$ und $p'(2)=12+4a+b=0$. Einsetzen von $b$ ergibt $12+4a-2-2a=0$, also $a=-5$ und $b=8$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$p(2)=0$ und $p'(2)=0$ zusammen bedeuten eine mehrfache Nullstelle, nicht eine einfache. Eine einfache Nullstelle hätte $p'(2)\\neq 0$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nMit diesen Koeffizienten ist $p(x)=x^{3}-5x^{2}+8x-4=(x-2)^{2}(x-1)$. Die weitere Nullstelle ist $x=1$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$p(0)=-4<0$. Das konstante Glied ist negativ.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$p'(2)=12+4a+b=0$ enthält $a$ und $b$. Ohne die zweite Gleichung bleibt ein freier Parameter. $a=-5$ entsteht erst, wenn beide Gleichungen gleichzeitig gelten.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "$p$ hat den Grad 3, $p(0)=-6$ und die Nullstellen 1, 2 und 3. Ihre Summe ist 6, und $p$ zerfällt in $(x-1)(x-2)(x-3)$.",
+      "solution_overview": "Beide Bedingungen erzwingen $a=-5$, $b=8$ und $p(x)=(x-2)^{2}(x-1)$. Die Nullstelle bei $2$ ist doppelt, $p(0)=-4$.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.10",
       "id": "WISO M2.MATH.10",
-      "title": "Verdopplung und Logarithmen",
+      "title": "Wer überholt wen",
       "chapter": 10,
       "subsection": "10.1",
       "difficulty_level": "5/5",
-      "context": "Eine Bevölkerung von $5\\,000$ Personen verdoppelt sich alle 6 Jahre. Daneben stehen drei logarithmische Behauptungen.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Zwei Bestände, $t$ in Jahren:\n\n$$\nA(t)=1000\\cdot 1{,}08^{t},\\qquad B(t)=1800\\cdot 1{,}03^{t}.\n$$\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Nach 18 Jahren beträgt die Bevölkerung genau 40.000.",
-        "Nach 6 Jahren ist sie mehr als dreimal so groß wie am Anfang.",
-        "$\\log_{2}(32)=6$.",
-        "$3^{\\log_{3}(7)}=7$.",
-        "Die jährliche Wachstumsrate dieser Verdopplung ist größer als 15 Prozent."
+        "Nach $10$ Jahren liegt $A$ noch unter $B$.",
+        "Nach $13$ Jahren liegt $A$ über $B$.",
+        "Die Verdopplungszeit von $A$ ist streng kürzer als $9$ Jahre.",
+        "$B$ startet mit dem größeren Bestand.",
+        "Der Überholpunkt liegt vor dem Ende des $12.$ Jahres."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n18 Jahre sind drei Verdopplungen:\n\n$$\n5000\\cdot 2^{3}=5000\\cdot 8=40000.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nNach einer Verdopplungszeit gilt $5000\\cdot 2=10000$. Das Dreifache des Anfangs wäre 15.000. 10.000 ist nicht mehr als das Dreifache.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\n$2^{5}=32$, also $\\log_{2}(32)=5$, nicht 6. Sechs wäre $\\log_{2}(64)$.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nLogarithmus und Exponentialfunktion derselben Basis heben sich auf:\n\n$$\n3^{\\log_{3}(7)}=7.\n$$\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nGesucht ist $r$ mit $(1+r)^{6}=2$, also $1+r=2^{1/6}$.\n\n$$\n1{,}12^{6}\\approx 1{,}974,\\qquad 1{,}13^{6}\\approx 2{,}082.\n$$\n\nDamit liegt $2^{1/6}$ zwischen 1,12 und 1,13, genauer bei etwa 1,122. Die Rate ist ungefähr 12,2 Prozent und nicht größer als 15 Prozent.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$A(10)=1000\\cdot 1{,}08^{10}\\approx 2158{,}9$ und $B(10)=1800\\cdot 1{,}03^{10}\\approx 2419{,}0$. $A$ liegt noch darunter.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\n$A(13)\\approx 2719{,}6$ und $B(13)\\approx 2643{,}4$. Nach $13$ Jahren hat $A$ überholt.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nDie Verdopplungszeit ist $\\ln 2/\\ln 1{,}08\\approx 9{,}006$ Jahre. Sie ist knapp länger als $9$ Jahre, nicht kürzer.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$A(0)=1000$ und $B(0)=1800$. Der Startwert von $B$ ist größer.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nGleichsetzen ergibt $(1{,}08/1{,}03)^{t}=1{,}8$, also $t\\approx 12{,}40$ Jahre. Das liegt nach dem Ende des zwölften Jahres, nicht davor.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Drei Verdopplungen ergeben 40.000. Eine Verdopplung ist keine Verdreifachung. $\\log_{2}(32)=5$, die Potenz-Logarithmus-Umkehr gibt 7 zurück, und $2^{1/6}\\approx 1{,}122$ liegt unter 1,15.",
+      "solution_overview": "$A$ startet kleiner, wächst schneller und überholt bei etwa $12{,}40$ Jahren. Nach $10$ Jahren liegt $A$ noch zurück, nach $13$ Jahren vorne. Die Verdopplungszeit von $A$ ist etwa $9{,}006$ Jahre.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.11",
       "id": "WISO M2.MATH.11",
-      "title": "Preis, Kosten und Gewinnmaximum",
+      "title": "Weide am Fluss",
       "chapter": 11,
-      "subsection": "11.2",
-      "difficulty_level": "4/5",
-      "context": "Ein Betrieb erzielt je Stück den konstanten Preis 30. Die Kosten sind\n\n$$\nC(q)=q^{2}+6q+20,\\qquad q\\geq 0.\n$$\n\nDer Gewinn ist Erlös minus Kosten. Entscheide, ob jede Aussage richtig oder falsch ist.",
+      "subsection": "11.3",
+      "difficulty_level": "5/5",
+      "context": "Ein rechteckiges Stück wird an einem geraden Fluss eingezäunt. Der Fluss ist eine Seite, die anderen drei Seiten brauchen zusammen $120$ Meter Zaun. Sei $x$ die Länge jeder der beiden zum Fluss senkrechten Seiten.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Der Gewinn ist bei $q=12$ maximal.",
-        "Die Grenzkosten bei dieser Menge liegen über dem Preis 30.",
-        "Die zweite Ableitung des Gewinns ist dort negativ.",
-        "Der maximale Gewinn übersteigt 150.",
-        "Die Fixkosten betragen 20."
+        "Die Fläche ist bei $x=30$ maximal.",
+        "Die maximale Fläche beträgt $1\\,800$ Quadratmeter.",
+        "Ein Zuschnitt mit drei gleich langen Zaunseiten schließt mehr Fläche ein als das Maximum.",
+        "Bei $x=20$ ist die Fläche kleiner als im Maximum.",
+        "Legt man alle $120$ Meter in die flussparallele Seite und setzt $x=0$, entsteht eine positive Fläche."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nGewinn:\n\n$$\nP(q)=30q-(q^{2}+6q+20)=-q^{2}+24q-20.\n$$\n\n$$\nP'(q)=-2q+24=0\\Rightarrow q=12.\n$$\n\nWegen $P''(q)=-2<0$ liegt ein Maximum.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nGrenzkosten $C'(q)=2q+6$. Bei $q=12$:\n\n$$\nC'(12)=24+6=30.\n$$\n\nSie liegen auf dem Preis, nicht darüber. Das ist die Bedingung Preis gleich Grenzkosten.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$P''(q)=-2$ für jedes $q$, also auch bei $q=12$. Negativ heißt, die Parabel des Gewinns öffnet nach unten.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nEinsetzen der Menge:\n\n$$\nP(12)=-144+288-20=124.\n$$\n\n124 übersteigt 150 nicht.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\n$C(0)=20$. Der von $q$ unabhängige Summand ist der Fixkostenblock.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie flussparallele Seite ist $120-2x$. Die Fläche ist $A(x)=x(120-2x)=120x-2x^{2}$. $A'(x)=120-4x=0$ ergibt $x=30$. $A''(x)=-4<0$, also ein Maximum.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\nBei $x=30$ ist die parallele Seite $60$. Die Fläche ist $30\\cdot 60=1\\,800$.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nDrei gleiche Zaunseiten bedeuten $3x=120$, also $x=40$, parallele Seite ebenfalls $40$. Die Fläche ist $1\\,600$. Das liegt unter $1\\,800$, nicht darüber.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$A(20)=20\\cdot 80=1\\,600<1\\,800$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\n$x=0$ lässt keine zum Fluss senkrechte Seite. Die Fläche $x(120-2x)$ ist $0$, nicht positiv.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "$P(q)=-q^{2}+24q-20$, kritische Stelle $q=12$, zweite Ableitung $-2$, Gewinn $124$, Grenzkosten $30$ und Fixkosten $20$.",
+      "solution_overview": "$A(x)=120x-2x^{2}$ hat das Maximum $1\\,800$ bei $x=30$ und paralleler Seite $60$. Der gleichseitige Dreierzaun liefert nur $1\\,600$, und $x=0$ liefert die Fläche $0$.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.12",
       "id": "WISO M2.MATH.12",
-      "title": "Zwei Kugeln ohne Zurücklegen",
+      "title": "Drei Kugeln ohne Zurücklegen",
       "chapter": 12,
       "subsection": "12.3",
       "difficulty_level": "5/5",
-      "context": "Eine Urne enthält 5 rote, 3 blaue und 2 grüne Kugeln. Es werden zwei Kugeln ohne Zurücklegen gezogen. Jedes Paar ist gleich wahrscheinlich.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Eine Urne enthält 4 rote und 6 blaue Kugeln. Es werden drei Kugeln ohne Zurücklegen gezogen.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Die Wahrscheinlichkeit für zwei rote Kugeln beträgt 2/9.",
-        "Die Wahrscheinlichkeit, dass die zweite Kugel rot ist, wenn die erste rot war, beträgt 1/2.",
-        "Es gibt 45 gleich wahrscheinliche Paare.",
-        "Die Wahrscheinlichkeit für mindestens eine grüne Kugel ist kleiner als 1/5.",
-        "Zieht man mit Zurücklegen, bleibt die bedingte Wahrscheinlichkeit für die zweite rote Kugel nach einer ersten roten Kugel gleich 4/9."
+        "Die Wahrscheinlichkeit für genau zwei rote Kugeln liegt streng über $1/4$.",
+        "Weil die Züge unabhängig wären, ist die Wahrscheinlichkeit für drei blaue Kugeln gleich $0{,}6^{3}$.",
+        "Die erwartete Anzahl roter Kugeln in den drei Zügen ist $1{,}2$.",
+        "Die Wahrscheinlichkeit für mindestens eine rote Kugel ist $5/6$.",
+        "Die Wahrscheinlichkeit, dass die ersten beiden Kugeln rot sind, beträgt $0{,}16$."
       ],
       "answer_key": [
         true,
         false,
         true,
-        false,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nZahl der Paare $\\binom{10}{2}=45$, Zahl der roten Paare $\\binom{5}{2}=10$:\n\n$$\n\\frac{10}{45}=\\frac{2}{9}.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nNach einer roten Kugel bleiben 4 rote unter 9 Kugeln:\n\n$$\nP=\\frac{4}{9}\\neq\\frac{1}{2}.\n$$\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$\\binom{10}{2}=45$. Ohne Zurücklegen und ohne Beachtung der Reihenfolge ist das die Grundmenge.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nKeine grüne Kugel heißt beide Kugeln aus den 8 nicht grünen:\n\n$$\nP(\\text{mindestens eine grün})=1-\\frac{\\binom{8}{2}}{45}=1-\\frac{28}{45}=\\frac{17}{45}.\n$$\n\n$17/45\\approx 0{,}378>1/5=0{,}2$.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\nMit Zurücklegen bleibt der Anteil rot bei $5/10=1/2$. Der Wert $4/9$ gehört nur zum Ziehen ohne Zurücklegen.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$\\binom{10}{3}=120$ und $\\binom{4}{2}\\binom{6}{1}=36$. Die Wahrscheinlichkeit ist $36/120=0{,}3$. Das liegt über $1/4=0{,}25$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nOhne Zurücklegen sind die Züge abhängig. Drei blaue Kugeln haben die Wahrscheinlichkeit $\\binom{6}{3}/120=20/120=1/6\\approx 0{,}1667$. Der Wert $0{,}6^{3}=0{,}216$ wäre das Ziehen mit Zurücklegen und trifft die Aufgabe nicht.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nJede einzelne Ziehung hat unter der symmetrischen ohne Zurücklegen die Trefferwahrscheinlichkeit $4/10$. Bei drei Zügen ist der Erwartungswert $3\\cdot 0{,}4=1{,}2$.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nDas Gegenereignis ist drei blaue Kugeln mit Wahrscheinlichkeit $1/6$. Mindestens eine rote Kugel hat Wahrscheinlichkeit $1-1/6=5/6$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nOhne Zurücklegen gilt $(4/10)\\cdot(3/9)=12/90=0{,}1\\overline{3}$, nicht $0{,}16$. Der Wert $0{,}16$ wäre $(4/10)^{2}$ und setzt Zurücklegen voraus.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "45 Paare, 10 davon rot, also $2/9$. Bedingt ohne Zurücklegen $4/9$, mit Zurücklegen $1/2$. Mindestens eine grüne Kugel hat Wahrscheinlichkeit $17/45$.",
+      "solution_overview": "Genau zwei rote Kugeln: $36/120=0{,}3$. Drei blaue: $1/6$. Erwartete rote Kugeln: $1{,}2$. Die ersten beiden rot: $4/10\\cdot 3/9$, nicht $0{,}16$.",
       "figure": null,
       "tables_markdown": null
     },
     {
       "case_id": "WISO M2.MATH.13",
       "id": "WISO M2.MATH.13",
-      "title": "Binomialverteilung mit p = 1/4",
+      "title": "Zehn Versuche, kleine Trefferquote",
       "chapter": 13,
       "subsection": "13",
-      "difficulty_level": "4/5",
-      "context": "$X$ sei binomialverteilt mit $n=8$ und $p=0{,}25$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "difficulty_level": "5/5",
+      "context": "$X$ sei binomialverteilt mit $n=10$ und $p=0{,}2$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
       "statements": [
-        "Der Erwartungswert ist 2.",
-        "Die Varianz ist größer als 2.",
-        "$P(X=0)$ liegt streng zwischen $0{,}10$ und $0{,}11$.",
-        "$P(X=2)$ ist kleiner als $0{,}25$.",
-        "$P(X\\geq 1)$ ist kleiner als $0{,}85$."
+        "Der Erwartungswert ist $2$.",
+        "$P(X=0)$ liegt streng über $0{,}12$.",
+        "$P(X=2)$ liegt streng zwischen $0{,}25$ und $0{,}35$.",
+        "Die Varianz ist größer als der Erwartungswert.",
+        "$P(X\\le 1)$ liegt streng über $0{,}5$."
       ],
       "answer_key": [
         true,
@@ -1070,13 +1070,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$E(X)=np=8\\cdot 0{,}25=2$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\n$Var(X)=np(1-p)=8\\cdot 0{,}25\\cdot 0{,}75=1{,}5$. Der Wert 1,5 ist nicht größer als 2.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$P(X=0)=0{,}75^{8}$.\n\n$$\n0{,}75^{2}=0{,}5625,\\quad 0{,}75^{4}=0{,}31640625,\\quad 0{,}75^{8}=0{,}1001129\\ldots\n$$\n\nDas liegt streng zwischen 0,10 und 0,11.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\n$\\binom{8}{2}=28$ und\n\n$$\nP(X=2)=28\\cdot 0{,}25^{2}\\cdot 0{,}75^{6}\\approx 0{,}311.\n$$\n\n0,311 ist nicht kleiner als 0,25.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\n$P(X\\geq 1)=1-P(X=0)\\approx 1-0{,}1001=0{,}8999$. Das liegt über 0,85, nicht darunter.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$E(X)=np=10\\cdot 0{,}2=2$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$P(X=0)=0{,}8^{10}=0{,}10737\\ldots$. Das liegt unter $0{,}12$, nicht darüber.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$\\binom{10}{2}=45$ und\n\n$$\nP(X=2)=45\\cdot 0{,}2^{2}\\cdot 0{,}8^{8}=45\\cdot 0{,}04\\cdot 0{,}16777216\\approx 0{,}302.\n$$\n\n$0{,}302$ liegt zwischen $0{,}25$ und $0{,}35$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$Var(X)=np(1-p)=10\\cdot 0{,}2\\cdot 0{,}8=1{,}6$. Der Erwartungswert ist $2$. Die Varianz ist kleiner.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$P(X=1)=10\\cdot 0{,}2\\cdot 0{,}8^{9}\\approx 0{,}2684$. Zusammen mit $P(X=0)\\approx 0{,}1074$ entsteht etwa $0{,}376$. Das liegt unter $0{,}5$.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Erwartungswert 2, Varianz 1,5, $P(X=0)\\approx 0{,}1001$, $P(X=2)\\approx 0{,}311$ und $P(X\\geq 1)\\approx 0{,}900$.",
+      "solution_overview": "Erwartungswert $2$, Varianz $1{,}6$, $P(X=0)\\approx 0{,}107$, $P(X=2)\\approx 0{,}302$ und $P(X\\le 1)\\approx 0{,}376$.",
       "figure": null,
       "tables_markdown": null
     }
