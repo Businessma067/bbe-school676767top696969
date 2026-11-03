@@ -2,9 +2,9 @@
  * Curated WiSo Mock Exam 3:
  * - Economics (Wirtschaft verstehen) → German reading → Math
  * - Same shape as BBE / WiSo Mock 1: 10 + 11 + 13, five statements, tactical explanations, math solution overview
- * - Original tasks, different types from Mock 2: assembly line, price ceiling, barter, external cost, income shares, institutions, enterprise forms, loan versus equity, break-even, subscription.
- * - German: new water-utility passage (10 tasks) plus an apprenticeship short text.
- * - Math: nested sets, interest conventions, Bayes, a shifted cubic, a line through two points, each with a German solution overview.
+ * - Economics: option to wait, transaction costs, tax on a monopoly, indexed debt, two inventory pictures, public goods, adverse selection, transfer prices, abatement order, sunk failure cost.
+ * - German: hospital retention-payment passage with separate clocks and tests, plus a supply-chain short text.
+ * - Math: one new task type per chapter, each statement a near-miss after a full derivation.
  */
 
 import sourced from "@/data/wiso-mock-exam-3-sourced.json";
@@ -79,7 +79,7 @@ export const WISO_MOCK_EXAM_3_POINTS_TOTAL =
   bundle.german.tasks.length * SCORING_CONFIG.german.defaultMaxPerTask +
   WISO_MOCK_EXAM_3_MATH_POINTS.reduce((a, b) => a + b, 0);
 
-export const WISO_MOCK_EXAM_3_CONTENT_REV = "2026-11-03d · 34q · all harder · explanations";
+export const WISO_MOCK_EXAM_3_CONTENT_REV = "2026-11-03e · 34q · tangled · above course";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

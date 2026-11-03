@@ -1,138 +1,19 @@
 {
   "economics": [
     {
-      "case_id": "WISO M3.1.2",
-      "id": "WISO M3.1.2",
-      "title": "Taktzeit plus Warten",
-      "subsection": "1.2",
-      "chapter": 1,
-      "context": "Allein dauert eine Lampe 40 Minuten. In der Linie sind die Schritte 8, 7, 9 und 6 Minuten. Der langsamste Schritt setzt die reine Taktzeit. Zusätzlich entstehen 4 Minuten Warten je Takt. Steigt das Warten auf 35 Minuten, bleibt die reine Taktzeit 9 Minuten.\n\nBewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "Die Summe 30 Minuten ist die Zeit, in der die laufende Linie eine Lampe fertigstellt.",
-        "Mit 4 Minuten Warten verlässt im laufenden Betrieb alle 13 Minuten eine Lampe die Linie.",
-        "Vier Lampen verlassen die laufende Linie in 30 Minuten.",
-        "Auch mit 4 Minuten Warten bleibt die Linie schneller als die Alleinzeit von 40 Minuten.",
-        "Mit 35 Minuten Warten je Takt bleibt die Linie schneller als die Alleinproduktion."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "30 ist die Summe der vier Schritte einer Lampe, nicht der Takt. Im laufenden Betrieb bestimmt der langsamste Schritt die reine Taktzeit, hier 9 Minuten. Die Summe beschreibt nicht, wann die nächste Lampe die Linie verlässt.\n\nDie Aussage ist falsch.",
-        "Reine Taktzeit 9 plus 4 Minuten Warten sind 13 Minuten. Im gefüllten Betrieb ist das der Abstand zwischen zwei fertigen Lampen.\n\nDie Aussage ist wahr.",
-        "Selbst die reine Taktzeit von 9 Minuten liefert in 30 Minuten nicht vier fertige Lampen aus dem laufenden Takt: 30/9 ist weniger als vier. Die Summe 30 mit vier Lampen zu verbinden, verwechselt Addition und Engpass.\n\nDie Aussage ist falsch.",
-        "13 Minuten je Lampe bleiben unter 40 Minuten Alleinzeit. Die Wartezeit frisst den Vorteil nicht vollständig auf.\n\nDie Aussage ist wahr.",
-        "9 plus 35 sind 44 Minuten je Lampe. Das liegt über der Alleinzeit von 40 Minuten. Ab dieser Wartezeit ist die Linie langsamer, nicht schneller.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "WISO M3.2.3",
-      "id": "WISO M3.2.3",
-      "title": "Mehr Ausstoß, mehr Emissionen",
-      "subsection": "2.3",
-      "chapter": 1,
-      "context": "| | Jahr 1 | Jahr 2 |\n| --- | ---: | ---: |\n| BIP in Milliarden Euro | 200 | 250 |\n| Emissionen in Millionen Tonnen | 80 | 90 |\n\nBewerten Sie die folgenden Aussagen zur Entkopplung:",
-      "statements": [
-        "Die Emissionen sind absolut gesunken.",
-        "Die Emissionen je Milliarde Euro BIP sind gesunken.",
-        "Hier liegt eine absolute Entkopplung vor.",
-        "Hier liegt eine relative Entkopplung vor: das BIP steigt, die Intensität sinkt, die Emissionen können trotzdem zunehmen.",
-        "Weil die Intensität sinkt, kann die Senke nicht knapper werden."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "Die Emissionen steigen von 80 auf 90 Millionen Tonnen. Absolut gesunken wäre ein kleinerer zweite Wert. Der zweite Wert ist größer.\n\nDie Aussage ist falsch.",
-        "Jahr 1: 80/200 = 0,40. Jahr 2: 90/250 = 0,36. Die Intensität sinkt, obwohl die Tonne-Menge steigt.\n\nDie Aussage ist wahr.",
-        "Absolute Entkopplung verlangt sinkende Umweltbelastung bei steigender Wirtschaftsleistung. Hier steigen die Emissionen. Das ist das Gegenteil der absoluten Entkopplung.\n\nDie Aussage ist falsch.",
-        "Relative Entkopplung heißt: die Belastung je Einheit Wirtschaftsleistung sinkt. 0,36 liegt unter 0,40, das BIP steigt, und die Emissionen dürfen dabei trotzdem zunehmen. Genau das zeigt die Tabelle.\n\nDie Aussage ist wahr.",
-        "Eine niedrigere Intensität bei größerer Menge kann die Senke stärker belasten als zuvor. 90 Tonnen sind mehr als 80. Die Knappheit der Senke richtet sich nach der Last, nicht nach dem Quotienten allein.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "WISO M3.2.5",
-      "id": "WISO M3.2.5",
-      "title": "Vier Prozentpunkte, die das Verhältnis kippen",
-      "subsection": "2.5",
-      "chapter": 1,
-      "context": "Fünf gleich große Gruppen, Anteile am Einkommen: 5, 11, 17, 24 und 43 Prozent. Danach wandern 4 Prozentpunkte von der fünften in die erste Gruppe.\n\nBewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "Vor dem Transfer hat die reichste Gruppe mehr als doppelt so viel Anteil wie die beiden ärmsten Gruppen zusammen.",
-        "Nach dem Transfer hat die reichste Gruppe immer noch mehr als doppelt so viel Anteil wie die beiden ärmsten Gruppen zusammen.",
-        "Die fünf Anteile summieren sich vor und nach dem Transfer zu 100 Prozent.",
-        "Der Transfer macht die Verteilung gleich.",
-        "Nach dem Transfer hat die ärmste Gruppe 9 Prozent."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "Die beiden ärmsten Gruppen haben 5 + 11 = 16 Prozent. Das Doppelte ist 32. Die reichste Gruppe hat 43 und liegt darüber.\n\nDie Aussage ist wahr.",
-        "Nach dem Transfer hat die reichste Gruppe 43 − 4 = 39 Prozent. Die beiden ärmsten haben 9 + 11 = 20 Prozent, das Doppelte ist 40. 39 liegt nicht über 40. Das Verhältnis kippt durch genau diese 4 Punkte.\n\nDie Aussage ist falsch.",
-        "5 + 11 + 17 + 24 + 43 = 100. Der Transfer verschiebt 4 Punkte innerhalb der Summe. Sie bleibt 100.\n\nDie Aussage ist wahr.",
-        "Gleichverteilung wäre je 20 Prozent. Nach dem Transfer stehen 9, 11, 17, 24 und 39. Das ist immer noch stark ungleich.\n\nDie Aussage ist falsch.",
-        "5 + 4 = 9. Die ärmste Gruppe erhält genau die abgegebenen 4 Prozentpunkte.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "WISO M3.3.1",
-      "id": "WISO M3.3.1",
-      "title": "Kopfstimme gegen Kapitalstimme",
-      "subsection": "3.1",
-      "chapter": 1,
-      "context": "Drei Mitglieder halten 10, 30 und 60 Kapitalanteile. In der GmbH stimmt das Kapital. In der Genossenschaft hat jedes Mitglied eine Stimme. Ein Antrag wird von den beiden kleineren Mitgliedern befürwortet und vom größten abgelehnt. Eine Mehrheit ist mehr als die Hälfte.\n\nBewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "In der GmbH hat das größte Mitglied allein die Mehrheit.",
-        "In der Genossenschaft können die beiden kleineren Mitglieder das größte überstimmen.",
-        "GmbH und Genossenschaft entscheiden diesen Antrag gleich.",
-        "Auch in der beschriebenen Genossenschaft richtet sich die Stimme nach der Kapitalhöhe.",
-        "Kopfstimme und Kapitalstimme können bei demselben Antrag auseinanderfallen."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "60 von 100 Anteilen sind mehr als die Hälfte. Das größte Mitglied braucht niemanden, um in der GmbH zu gewinnen.\n\nDie Aussage ist wahr.",
-        "Zwei von drei Kopfstimmen sind eine Mehrheit, unabhängig von 10 und 30 gegen 60. Die beiden kleineren Mitglieder setzen den Antrag durch.\n\nDie Aussage ist wahr.",
-        "In der GmbH unterliegt der Antrag, weil 10 + 30 = 40 unter 50 bleiben und das größte Mitglied mit 60 gewinnt. In der Genossenschaft gewinnt der Antrag mit 2 zu 1. Die Ergebnisse sind entgegengesetzt.\n\nDie Aussage ist falsch.",
-        "Der Fall setzt für die Genossenschaft ausdrücklich eine Stimme je Mitglied. Die Kapitalhöhen 10, 30 und 60 gelten dort nicht als Stimmgewichte.\n\nDie Aussage ist falsch.",
-        "Derselbe Antrag gewinnt in der einen Form und verliert in der anderen. Die beiden Stimmregeln sind nicht austauschbar.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "4/5"
-    },
-    {
-      "case_id": "WISO M3.3.3",
-      "id": "WISO M3.3.3",
-      "title": "Schlechtes Jahr, Zins bleibt",
+      "case_id": "WISO-M3-E01",
+      "id": "WISO-M3-E01",
+      "title": "Sofort investieren oder nur im guten Zustand",
       "subsection": "3.3",
-      "chapter": 1,
-      "context": "Der Kredit über 40.000 Euro kostet 8 Prozent Zins im Jahr, fällig auch bei niedrigem Gewinn. Die Partnerin erhält 30 Prozent des Gewinns. Im betrachteten Jahr beträgt der Gewinn vor Zins und vor Partneranteil nur 2.000 Euro.\n\nBewerten Sie die folgenden Aussagen:",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Eine Anlage kostet 100 und ist danach nicht mehr verkaufbar. Im guten Zustand, Wahrscheinlichkeit ein halb, ist der abgezinste Rückfluss 160. Im schlechten Zustand ist er 30. Wer wartet, investiert nur, wenn der Zustand gut ist, und verzichtet im schlechten Zustand. Die Rückflüsse sind bereits auf heute bezogen. Bewerten Sie jede Aussage.",
       "statements": [
-        "Der Zins beträgt auch in diesem Jahr 3.200 Euro.",
-        "Die Partnerin erhält in diesem Jahr mehr als der Zins des Kredits.",
-        "Die Gründerin behält nach dem Partneranteil mehr übrig als nach dem Zins.",
-        "Der Zins entfällt, weil der Gewinn unter dem Zins liegt.",
-        "Die Zahlung an die Partnerin ist kleiner, als sie bei einem Gewinn von 12.000 Euro wäre."
+        "Sofort begonnen ist der Kapitalwert negativ. Die Möglichkeit zu warten ist positiv und größer als dieser Kapitalwert.",
+        "Im schlechten Zustand würde man nach dem Warten trotzdem investieren, weil 30 eine Einzahlung ist.",
+        "Der Vorteil des Wartens gegenüber dem Sofortstart ist 35. Er entsteht, weil der schlechte Zustand vermieden wird, nicht weil der gute Zustand einen anderen Rückfluss hätte.",
+        "Weil der Erwartungswert der Rückflüsse unter 100 liegt, ist auch das Warten wertlos.",
+        "Investiert wird nach dem Warten genau im guten Zustand. Dieser Zustand hat die Wahrscheinlichkeit ein halb, und der schlechte Zustand hat dieselbe Wahrscheinlichkeit, aber eine andere Entscheidung."
       ],
       "answer_key": [
         true,
@@ -142,244 +23,303 @@
         true
       ],
       "tactical_explanations": [
-        "8 Prozent von 40.000 Euro sind 3.200 Euro. Der Fall bindet den Zins nicht an die Gewinnhöhe.\n\nDie Aussage ist wahr.",
-        "30 Prozent von 2.000 Euro sind 600 Euro. 600 liegt unter 3.200. Im schlechten Jahr ist der feste Zins die größere Zahlung.\n\nDie Aussage ist falsch.",
-        "Nach Zins bleiben 2.000 − 3.200 = −1.200 Euro. Nach dem Partneranteil bleiben 2.000 − 600 = 1.400 Euro. 1.400 ist mehr als −1.200.\n\nDie Aussage ist wahr.",
-        "Der Zins ist auch bei niedrigem Gewinn fällig. Dass der Gewinn ihn nicht deckt, streicht ihn nicht.\n\nDie Aussage ist falsch.",
-        "Bei 12.000 Euro Gewinn wären 30 Prozent 3.600 Euro. Bei 2.000 Euro sind es 600 Euro. Die erfolgsabhängige Zahlung schrumpft mit dem Gewinn.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "5/5"
+        "Sofort: minus 100 plus ein halb mal 160 plus ein halb mal 30 ist minus 5. Warten: ein halb mal (160 minus 100) ist 30, der schlechte Zustand bleibt ohne Investition. 30 liegt über minus 5, der Abstand ist 35.\n\nDie Aussage ist wahr.",
+        "30 deckt die 100 nicht. Nach dem Warten wird im schlechten Zustand nicht investiert. Eine positive Einzahlung unter den Kosten ist kein Grund zu bauen.\n\nDie Aussage ist falsch.",
+        "30 minus minus 5 ist 35. Der gute Rückfluss 160 steht in beiden Rechnungen. Der Unterschied ist der schlechte Zustand: sofort zieht er 30 mit hinein, nach dem Warten wird er ausgelassen.\n\nDie Aussage ist wahr.",
+        "Der unbedingte Erwartungswert 95 liegt unter 100 und macht den Sofortstart negativ. Das Warten benutzt denselben guten Rückfluss und lässt den schlechten weg. 30 ist nicht wertlos.\n\nDie Aussage ist falsch.",
+        "Gut und schlecht sind je ein halb. Die Entscheidung ist nicht symmetrisch: nur der gute Zustand löst die Ausgabe 100 aus. Gleiche Wahrscheinlichkeit heißt hier nicht gleiche Handlung.\n\nDie Aussage ist wahr."
+      ]
     },
     {
-      "case_id": "WISO M3.3.5",
-      "id": "WISO M3.3.5",
-      "title": "Mehr Umsatz, weniger Deckungsbeitrag",
-      "subsection": "3.5",
-      "chapter": 1,
-      "context": "Ein Becher kostet zuerst 3,20 Euro bei variablen Kosten von 2,50 Euro, verkauft werden 400 Becher. Danach kostet er 2,80 Euro, verkauft werden 500 Becher. Die variablen Kosten je Becher bleiben. Fixkosten spielen für den Vergleich keine Rolle.\n\nBewerten Sie die folgenden Aussagen. Die Elastizität ist auf die Ausgangswerte bezogen:",
-      "statements": [
-        "Der Umsatz steigt.",
-        "Der Betrag der Preiselastizität der Nachfrage ist 2.",
-        "Der gesamte Deckungsbeitrag sinkt.",
-        "Weil der Umsatz steigt, muss auch der Gewinn steigen.",
-        "Die Preissenkung ist eine Maßnahme der Distributionspolitik."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "Vorher 400 mal 3,20 = 1.280 Euro. Nachher 500 mal 2,80 = 1.400 Euro. Der Umsatz steigt um 120 Euro.\n\nDie Aussage ist wahr.",
-        "Die Menge steigt um 100/400 = 25 Prozent, der Preis fällt um 0,40/3,20 = 12,5 Prozent. 25/12,5 = 2. Der Betrag der Elastizität ist 2, die Nachfrage reagiert elastisch.\n\nDie Aussage ist wahr.",
-        "Vorher je Becher 3,20 − 2,50 = 0,70, mal 400 sind 280 Euro. Nachher 2,80 − 2,50 = 0,30, mal 500 sind 150 Euro. Der Deckungsbeitrag fällt von 280 auf 150.\n\nDie Aussage ist wahr.",
-        "Der Deckungsbeitrag fällt, und die Fixkosten bleiben. Der Gewinn fällt mit dem Deckungsbeitrag, obwohl der Umsatz steigt. Umsatz ist nicht Gewinn.\n\nDie Aussage ist falsch.",
-        "Geändert wird der Preis. Ort und Weg der Abgabe bleiben im Fall unberührt. Das ist Preispolitik, nicht Distribution.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "5/5"
-    },
-    {
-      "case_id": "WISO M3.4.2",
-      "id": "WISO M3.4.2",
-      "title": "Acht Monate oder zwölf",
-      "subsection": "4.2",
-      "chapter": 1,
-      "context": "Die Software kostet 12 Euro je Monat oder 120 Euro für ein Jahr im Voraus. Ein Datenexport fehlt. Wer nach acht Monaten aufhört, zahlt im Monatsmodell nur diese acht Monate.\n\nBewerten Sie die folgenden Aussagen:",
-      "statements": [
-        "Zehn Monatszahlungen sind genau so teuer wie die Jahreszahlung.",
-        "Wer nach acht Monaten aufhört, zahlt im Monatsmodell weniger als 120 Euro.",
-        "Die Jahreszahlung ist für jede Nutzungsdauer billiger als das Monatsmodell.",
-        "Fehlender Datenexport erhöht die Kosten eines Wechsels zu einem anderen Angebot.",
-        "Ein digitales Abonnement ist kein Geschäftsmodell."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "Zehn mal 12 Euro sind 120 Euro. Ab dem zehnten Monat hat das Monatsmodell den Jahrespreis eingeholt.\n\nDie Aussage ist wahr.",
-        "Acht mal 12 Euro sind 96 Euro. Das liegt unter 120. Wer früh aufhört, ist mit der monatlichen Zahlung billiger.\n\nDie Aussage ist wahr.",
-        "Bei acht Monaten ist das Monatsmodell billiger. Die Jahreszahlung ist nur dann billiger, wenn genug Monate genutzt werden, dass zwölf mal 12 die 120 übersteigen. Nicht jede Nutzungsdauer erfüllt das.\n\nDie Aussage ist falsch.",
-        "Ohne Export muss neu erfasst werden. Diese Mühe ist ein Wechselkostenbestandteil und macht den Verbleib teurer zu verlassen, auch wenn ein anderes Angebot einen niedrigeren Preis hat.\n\nDie Aussage ist wahr.",
-        "Preis, Laufzeit und die Bindung über die Daten sind das Geschäftsmodell. Dass die Leistung digital ist, nimmt ihm den wirtschaftlichen Charakter nicht.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "4/5"
-    },
-    {
-      "case_id": "WISO M3.2.4",
-      "id": "WISO M3.2.4",
-      "title": "Vier Jahre, ein Budget",
+      "case_id": "WISO-M3-E02",
+      "id": "WISO-M3-E02",
+      "title": "Zwei Rechtsregeln und Transaktionskosten 10",
       "subsection": "2.4",
-      "chapter": 1,
-      "context": "Eine Senke verträgt 5 Einheiten je Jahr. Die tatsächliche Belastung in vier aufeinanderfolgenden Jahren ist 4, 6, 7 und 3.\n\nBewerten Sie die folgenden Aussagen:",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Eine Anlage kann hoch, mittel oder niedrig gefahren werden. Gewinn der Anlage: 50, 35 und 20. Schaden bei den Betroffenen: 40, 18 und 4. Verhandeln kostet 10, und diese 10 fressen einen Einigungsgewinn auf, der nicht größer ist als 10. Ohne diese Kosten wäre verhandeln kostenlos. Bewerten Sie jede Aussage.",
       "statements": [
-        "Jedes einzelne Jahr bleibt innerhalb des Jahresbudgets.",
-        "Die Summe der vier Jahre ist gleich dem Budget von viermal 5.",
-        "Weil die Vierjahressumme das Budget trifft, hat kein einzelnes Jahr das Jahresbudget überschritten.",
-        "Zwei der vier Jahre liegen über dem Jahresbudget.",
-        "Eine Senke, deren Vierjahresbudget genau aufgezehrt wird, war in dieser Rechnung nicht knapp."
+        "Das höchste Netto hat die mittlere Fahrweise. Ohne Verhandlungskosten wird sie erreicht, egal wer das Recht hat.",
+        "Bei Verhandlungskosten von 10 wird mittel erreicht, sobald die Anlage das Recht auf die hohe Fahrweise hat.",
+        "Bei Kosten von 10 bleiben beide Rechtsregeln unter dem effizienten Netto, aber nicht auf demselben Niveau.",
+        "Der Schadenrückgang von hoch auf mittel deckt den Gewinnverlust der Anlage und die Verhandlungskosten von 10 gemeinsam.",
+        "Niedrig hat das höchste Netto, weil dort der Schaden am kleinsten ist."
       ],
       "answer_key": [
-        false,
         true,
         false,
         true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "Jahr 2 hat 6 und Jahr 3 hat 7. Beide liegen über 5. Die Aussage, jedes Jahr bleibe innerhalb, scheitert an diesen beiden Jahren.\n\nDie Aussage ist falsch.",
-        "4 + 6 + 7 + 3 = 20, und viermal 5 ist ebenfalls 20. Die Summen sind gleich.\n\nDie Aussage ist wahr.",
-        "Die ausgeglichene Summe verdeckt die Jahre 6 und 7. Sie liegen über 5. Die Summe gleicht das nicht zu der Aussage um, kein Jahr habe überschritten.\n\nDie Aussage ist falsch.",
-        "Über 5 liegen das zweite Jahr mit 6 und das dritte mit 7. Das erste Jahr mit 4 und das vierte mit 3 liegen darunter. Es sind genau zwei Jahre.\n\nDie Aussage ist wahr.",
-        "Das Budget ist am Ende genau aufgebraucht, und zwei Jahre haben die Jahresgrenze überschritten. Aufzehren heißt, dass die Senke bis an ihre Grenze genutzt wurde. Das ist Knappheit, nicht ihr Gegenteil.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "4/5"
+        "Netto hoch 10, mittel 17, niedrig 16. Mittel ist effizient. Ohne Reibung zahlt die belastete Seite die andere bis zur effizienten Fahrweise. Die Rechtsregel verteilt das Ergebnis, sie wählt es nicht.\n\nDie Aussage ist wahr.",
+        "Von hoch auf mittel sinkt der Schaden um 22, der Gewinn der Anlage um 15. Der Einigungsgewinn ist 7 und liegt unter 10. Die Verhandlung scheitert. Es bleibt hoch, Netto 10, nicht mittel.\n\nDie Aussage ist falsch.",
+        "Recht der Anlage: es bleibt hoch, Netto 10. Recht der Betroffenen auf niedrig: von niedrig auf mittel gewinnt die Anlage 15 und der Schaden steigt um 14, Einigungsgewinn 1, kleiner als 10. Es bleibt niedrig, Netto 16. Beides liegt unter 17, und 10 ist nicht 16.\n\nDie Aussage ist wahr.",
+        "15 plus 10 sind 25. Der Schaden sinkt nur um 22. 22 deckt 25 nicht. Genau deshalb scheitert der Weg von hoch nach mittel.\n\nDie Aussage ist falsch.",
+        "Der Schaden ist bei niedrig am kleinsten, der Gewinn der Anlage aber auch. Netto 16 liegt unter 17. Der kleinste Schaden ist nicht das größte Netto.\n\nDie Aussage ist falsch."
+      ]
     },
     {
-      "case_id": "WISO M3.1.5",
-      "id": "WISO M3.1.5",
-      "title": "Vier Wünsche, ein teilweiser Tausch",
+      "case_id": "WISO-M3-E03",
+      "id": "WISO-M3-E03",
+      "title": "Steuer auf das Monopol, halbe Überwälzung",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "5/5",
+      "context": "Preis = 50 minus 2 mal Menge. Grenzkosten ohne Steuer konstant 10. Zuerst Wettbewerb, dann ein Monopol, dann eine Stücksteuer von 6 nur auf das Monopol. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Wettbewerbsmenge ist 20, die unbesteuerte Monopolmenge 10, der Monopolpreis das Dreifache des Wettbewerbspreises. Die Steuer senkt die Monopolmenge weiter und vergrößert den Abstand zur Wettbewerbsmenge.",
+        "Die Steuer hebt die Monopolmenge in Richtung Wettbewerbsmenge, weil sie den Preis nach oben deckelt.",
+        "Der Preis steigt um 6, weil eine Stücksteuer vollständig auf den Preis gelegt wird.",
+        "Das Steueraufkommen ist 51 und kleiner als die Dreiecksfläche 100 zwischen unbesteuerter Monopolmenge und Wettbewerbsmenge.",
+        "Die unbesteuerte Monopolmenge ist halb so groß wie die Wettbewerbsmenge, der Preis aber nicht doppelt so hoch."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Wettbewerb: 50 minus 2 Menge gleich 10, Menge 20, Preis 10. Monopol: Grenzumsatz 50 minus 4 Menge gleich 10, Menge 10, Preis 30. 30 ist das Dreifache von 10. Mit Steuer sind die relevanten Kosten 16, Menge 8,5. Der Abstand zur Menge 20 wächst von 10 auf 11,5.\n\nDie Aussage ist wahr.",
+        "Die Steuer senkt die Menge von 10 auf 8,5. Sie ist keine Preisobergrenze. Eine Obergrenze würde, wenn sie bindet, die Menge eher stützen. Hier läuft die Menge in die andere Richtung.\n\nDie Aussage ist falsch.",
+        "Der Preis geht von 30 auf 33, also um 3. Bei dieser linearen Nachfrage und konstanten Kosten bleibt die Hälfte der Steuer im Preis hängen, nicht die ganze Steuer.\n\nDie Aussage ist falsch.",
+        "6 mal 8,5 ist 51. Das Dreieck zwischen Menge 10 und 20 hat die Höhe 20 und die Breite 10, Fläche 100. 51 liegt darunter. Aufkommen und Dreieck sind verschiedene Flächen und dürfen nicht gleichgesetzt werden.\n\nDie Aussage ist wahr.",
+        "10 ist die Hälfte von 20. Der Preis ist 30 gegen 10, also das Dreifache, nicht das Doppelte. Wer aus der halben Menge einen doppelten Preis macht, liest die Nachfrage falsch.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M3-E04",
+      "id": "WISO-M3-E04",
+      "title": "Nominalzins, Index und der zinslose Vertrag",
       "subsection": "1.5",
       "chapter": 1,
-      "context": "Vier Personen: Die Tischlerin will Brot, die Bäckerin will Schuhe, der Schuster will einen Stuhl, die Gärtnerin will einen Tisch. Nur Tischlerin und Gärtnerin könnten unmittelbar tauschen, Stuhl gegen nichts aus diesem Kreis. Eine Kette über alle vier kommt nicht zustande. Geld wird von allen angenommen.\n\nBewerten Sie die folgenden Aussagen:",
+      "difficulty_level": "5/5",
+      "context": "Ein Kredit über 1.000 läuft ein Jahr. Die Preise steigen um 10 Prozent. Vertrag A verzinst nominal mit 8 Prozent. Vertrag B zahlt die Preissteigerung und zusätzlich 2 Prozent real. Vertrag C ist zinslos. Bewerten Sie jede Aussage.",
       "statements": [
-        "Ein unmittelbarer Tausch aller vier scheitert, obwohl ein Paar zueinander passende Wünsche haben könnte.",
-        "Geld als Tauschmittel trennt den Verkauf der eigenen Leistung vom Kauf des gewünschten Guts.",
-        "Weil ein Paar unmittelbar tauschen kann, braucht die Gruppe kein Tauschmittel.",
-        "Die Recheneinheit wird überflüssig, sobald mehr als zwei Personen tauschen.",
-        "Damit Geld diese Lücke schließt, muss es aus Gold bestehen."
+        "Bei Vertrag A verliert der Gläubiger real Kaufkraft, der Schuldner gewinnt sie. Der exakte Realzins liegt über minus 2 Prozent und unter minus 1 Prozent.",
+        "Der exakte Realzins von Vertrag A liegt unter minus 2 Prozent, weil 8 minus 10 gleich minus 2 ist und die genaue Rechnung noch darunter fällt.",
+        "Vertrag B zahlt nominal 1.122. Real bleiben dem Gläubiger 1.020, also 20 auf 1.000.",
+        "Der zinslose Vertrag schützt den Gläubiger besser vor der Preissteigerung als Vertrag A, weil keine Zinsen die Rückzahlung aufblähen.",
+        "Der reale Verlust des Gläubigers in Vertrag A ist kleiner als 20 und größer als der reale Gewinn in Vertrag B."
       ],
       "answer_key": [
         true,
-        true,
         false,
+        true,
         false,
         false
       ],
       "tactical_explanations": [
-        "Tischlerin und Gärtnerin passen möglicherweise zueinander. Bäckerin und Schuster bleiben ohne Gegenwunsch aus dem Kreis. Ein einzelner passender Paartausch hebt den fehlenden Tausch der ganzen Gruppe nicht auf.\n\nDie Aussage ist wahr.",
-        "Wer Geld annimmt, kann zuerst die eigene Leistung verkaufen und danach das gewünschte Gut bei einer anderen Person kaufen. Die beiden Hälften müssen nicht dieselbe Person sein.\n\nDie Aussage ist wahr.",
-        "Das passende Paar löst nur sich selbst. Bäckerin und Schuster bleiben ohne doppelte Übereinstimmung. Die Gruppe als Ganze braucht deshalb weiterhin ein Tauschmittel.\n\nDie Aussage ist falsch.",
-        "Mehr Personen machen gemeinsame Preise nötiger, nicht überflüssig. Ohne Recheneinheit bleiben Brot, Schuhe, Stuhl und Tisch unvergleichbar.\n\nDie Aussage ist falsch.",
-        "Entscheidend ist, dass alle das Geld annehmen. Der Stoff ist keine Bedingung dieser Geschichte. Gold ist eine historische Form, keine logische Voraussetzung.\n\nDie Aussage ist falsch."
-      ],
-      "difficulty_level": "4/5"
+        "1.080 durch 1,1 ist etwa 981,82. Der Gläubiger erhält real weniger als 1.000, der Schuldner gibt real weniger zurück. 1,08 durch 1,1 minus 1 ist etwa minus 1,82 Prozent. Das liegt zwischen minus 2 und minus 1.\n\nDie Aussage ist wahr.",
+        "Die Näherung minus 2 ist schon zu niedrig. Die genaue Rechnung liegt bei etwa minus 1,82 und damit über minus 2. Die Näherung verschärft den Verlust, sie trifft ihn nicht.\n\nDie Aussage ist falsch.",
+        "1.000 mal 1,1 mal 1,02 ist 1.122. Durch 1,1 bleiben 1.020. Der reale Zuwachs ist die vereinbarten 2 Prozent, die Preissteigerung ist herausgerechnet und nicht noch einmal ein Gewinn.\n\nDie Aussage ist wahr.",
+        "Vertrag C gibt real 1.000 durch 1,1, etwa 909. Vertrag A gibt etwa 982. Der fehlende Zins schützt nicht, er vergrößert den realen Verlust.\n\nDie Aussage ist falsch.",
+        "Der reale Verlust in A ist etwa 18,18 und damit kleiner als 20. Der reale Gewinn in B ist 20. 18,18 ist nicht größer als 20. Die zweite Hälfte scheitert, obwohl die erste für sich stimmen würde.\n\nDie Aussage ist falsch."
+      ]
     },
     {
-      "case_id": "WISO M3.2.6",
-      "id": "WISO M3.2.6",
-      "title": "Dreißig Tage statt Vorauskasse",
-      "subsection": "2.6",
-      "chapter": 1,
-      "context": "Eine Lieferantin hat bisher nur gegen Vorauskasse geliefert, weil Streitfälle drei Jahre dauern. Sie stellt auf Zahlung binnen 30 Tagen um. Der Rechnungsbetrag bleibt 10.000 Euro. Ein Eigentumsvorbehalt gilt bis zur Zahlung. Gerichte bleiben langsam.\n\nBewerten Sie die folgenden Aussagen:",
+      "case_id": "WISO-M3-E05",
+      "id": "WISO-M3-E05",
+      "title": "Zwei Vorratsbewertungen, zwei Bilder",
+      "subsection": "3.4",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Die Preise der Vorräte sind gestiegen. Nach der einen zulässigen Methode stehen die Vorräte bei 140 und der Gewinn bei 90. Nach der anderen stehen die Vorräte bei 100 und der Gewinn bei 50. Kurzfristige Schulden 80. Das Umlaufvermögen ohne diese Vorräte ist in beiden Rechnungen 60. Steuern bleiben außen vor. Bewerten Sie jede Aussage.",
       "statements": [
-        "Durch die neue Frist trägt die Lieferantin bis zur Zahlung das Risiko, Ware gegeben und noch kein Geld erhalten zu haben.",
-        "Der Eigentumsvorbehalt lässt das Eigentum bis zur Zahlung bei der Lieferantin, auch wenn die Ware schon beim Kunden ist.",
-        "Weil Gerichte langsam bleiben, ist das Risiko der Nichtzahlung verschwunden.",
-        "Verlässlichere Gerichte hätten die Vorauskasse in der alten Regelung weniger nötig gemacht.",
-        "Institutionen spielen nur eine Rolle, wenn der Staat die Ware selbst herstellt."
+        "Die Methode mit den niedrigeren Vorräten zeigt den niedrigeren Gewinn und die niedrigere kurzfristige Quote. Beide Quoten liegen bei 2,5 und bei 2.",
+        "Der Vorratsunterschied von 40 hebt bei der höheren Methode nur den Gewinn, nicht das Umlaufvermögen.",
+        "Die Quote fällt von 2,5 auf 2, der Abstand ist größer als 0,4. Wer die 40 nur aus dem Gewinn streicht und die Vorräte bei 140 lässt, untertreibt den Gewinn und übertreibt die Quote gegenüber der niedrigen Methode.",
+        "Die niedrigere Quote ist die liquidere Darstellung, weil vorsichtige Vorräte die Zahlungsfähigkeit erhöhen.",
+        "Beide Methoden verwenden dieselben Schulden von 80. Der Methodenunterschied kann deshalb keine Quote ändern."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Umlaufvermögen 200 gegen 160. Durch 80 sind die Quoten 2,5 und 2. Gewinn 90 gegen 50. Dieselbe Preissteigerung drückt in dieser Methode Gewinn und Quote gemeinsam, sie poliert nicht die eine Größe auf Kosten der anderen.\n\nDie Aussage ist wahr.",
+        "Die 40 stehen in den Vorräten und damit im Umlaufvermögen und, solange keine Steuer greift, auch im Gewinn. Wer sie nur im Gewinn sieht, lässt die Quote unverändert, die sich tatsächlich von 2 auf 2,5 bewegt.\n\nDie Aussage ist falsch.",
+        "Der Abstand ist 0,5. Gewinn 50 mit Vorräten 140 wäre eine Mischung, die so nicht entsteht: der Gewinn läge um 40 unter der hohen Rechnung, die Quote bliebe 2,5 statt 2. Beides weicht von der niedrigen Methode ab, in entgegengesetzte Richtungen.\n\nDie Aussage ist wahr.",
+        "Die Quote ist eine Darstellung, kein Kassenbestand. 2 ist kleiner als 2,5. Vorsicht in der Bewertung macht die ausgewiesene Quote kleiner, nicht die Kasse größer. In der Aufgabe fließt kein Geld durch den Methodenwechsel.\n\nDie Aussage ist falsch.",
+        "Der Nenner ist gleich, der Zähler nicht. 200 gegen 160 bei demselben Nenner ändert die Quote. Gleiche Schulden sind genau der Grund, warum der Vorratsunterschied vollständig in der Quote sichtbar wird.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M3-E06",
+      "id": "WISO-M3-E06",
+      "title": "Zwei öffentliche Leistungen, zwei Schwellen",
+      "subsection": "2.5",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Leistung G kostet 12. Zwei Personen haben sie je 8 wert, niemand kann ausgeschlossen werden. Leistung H kostet 7 und ist jedem ebenfalls 8 wert, auch hier ohne Ausschluss. Bei G kann jede Person 6 beitragen oder nichts. Die Leistung entsteht nur, wenn mindestens 12 zusammenkommen. Bei H kann eine Person allein 7 zahlen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "G ist zusammen sinnvoll und wird von einer Person allein nicht gekauft. H wird von einer Person allein gekauft, obwohl auch H niemand ausschließt.",
+        "H kauft niemand allein, weil eine nicht ausschließbare Leistung nie privat zustande kommt.",
+        "Zahlen beide bei G je 6, stehen beide besser da als ohne G. Zahlen beide nichts, ist das ebenfalls ein Gleichgewicht, weil ein einzelner Beitrag von 6 die Leistung nicht entstehen lässt.",
+        "Einzahlen ist bei G dominant, weil der gemeinsame Wert über den Kosten liegt.",
+        "Bei H ist ein Gleichgewicht, in dem nur eine Person zahlt. Die zahlende Person steht dann schlechter da als ohne H, die andere besser."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "8 plus 8 ist mehr als 12, eine Person allein stellt 8 gegen 12 und kauft G nicht. Bei H stehen 8 gegen 7, eine Person kauft. Der fehlende Ausschluss entscheidet die Schwelle nicht, die Höhe der Kosten gegen den einzelnen Wert entscheidet.\n\nDie Aussage ist wahr.",
+        "Das stimmt für G und nicht für H. 8 liegt über 7. Dieselbe Nichtausschließbarkeit hat hier ein anderes Zahlenverhältnis.\n\nDie Aussage ist falsch.",
+        "Beide zahlen: jeder erhält 8 minus 6. Zahlt nur eine Person 6, entstehen keine 12, sie verliert 6. Wenn die andere nichts zahlt, ist nichts zahlen besser als 6 zu verlieren. Beide nichts ist damit ein Gleichgewicht, obwohl beide besser wären, wenn beide zahlten.\n\nDie Aussage ist wahr.",
+        "Der gemeinsame Wert begründet keine dominante Strategie. Wenn die andere Person nichts zahlt, ist der eigene Beitrag von 6 verloren. Dominant wäre eine Handlung, die in jedem Fall besser ist. Das ist Einzahlen hier nicht.\n\nDie Aussage ist falsch.",
+        "Die zahlende Person erhält 8 minus 7, also 1, und steht besser da als ohne H. Die andere erhält 8. Die erste Hälfte kann stimmen, die zweite nicht. Beide gewinnen gegenüber dem Zustand ohne H, nur ungleich.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M3-E07",
+      "id": "WISO-M3-E07",
+      "title": "Pool, der an der Zahlungsbereitschaft scheitert",
+      "subsection": "3.2",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Von 100 Personen sind 80 niedrige Risiken mit erwarteten Kosten 100 und höchster Zahlungsbereitschaft 150. 20 sind hohe Risiken mit erwarteten Kosten 600 und Zahlungsbereitschaft 700. Ein Vertrag kann alle nehmen oder nur die, die freiwillig bleiben. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die faire Prämie aller 100 ist 200. Sie liegt über der Zahlungsbereitschaft der niedrigen Risiken und unter der der hohen.",
+        "Bei freiwilligem Abschluss und Prämie 200 bleiben beide Gruppen im Vertrag, weil 200 unter dem Durchschnitt der beiden Zahlungsbereitschaften liegt.",
+        "Nachdem die niedrigen Risiken gegangen sind, liegt die faire Prämie bei 600 und noch unter der Zahlungsbereitschaft der hohen Risiken. Der gemeinsame Vertrag ist damit nicht gerettet.",
+        "Ein Pflichtvertrag zu 200 ist für die niedrigen Risiken gegenüber ihrer Zahlungsbereitschaft ein Verlust, und die hohen Risiken zahlen dann mehr als ihre erwarteten Kosten.",
+        "Die hohen Risiken sind ein Fünftel der Personen und tragen mehr als die Hälfte der erwarteten Kosten des gemeinsamen Pools."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "80 mal 100 plus 20 mal 600 ist 20.000, je Person 200. 200 liegt über 150 und unter 700. Dieselbe Prämie sortiert die beiden Gruppen in entgegengesetzte Richtungen.\n\nDie Aussage ist wahr.",
+        "Der Durchschnitt der Zahlungsbereitschaften rettet den niedrigen Risikoträger nicht. 200 liegt über 150, diese Gruppe geht. Zurück bleiben die hohen Risiken.\n\nDie Aussage ist falsch.",
+        "20 mal 600 durch 20 ist 600, und 600 liegt unter 700. Die hohen Risiken bleiben unter sich. Der Pool aus 100 ist zerfallen, auch wenn der Restvertrag für sich tragfähig ist.\n\nDie Aussage ist wahr.",
+        "200 gegen 150 ist für die niedrigen Risiken ein Zwang unter ihrer Grenze. 200 gegen erwartete Kosten 600 ist für die hohen Risiken ein Vorteil, nicht eine Mehrzahlung über die Kosten. Die zweite Hälfte dreht die Richtung um.\n\nDie Aussage ist falsch.",
+        "20 von 100 ist ein Fünftel. 12.000 von 20.000 ist 60 Prozent, mehr als die Hälfte. Kopfzahl und Kostenanteil laufen auseinander. Genau das macht die Prämie 200 für die große Gruppe unattraktiv.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M3-E08",
+      "id": "WISO-M3-E08",
+      "title": "Verrechnungspreis in zwei Wochen",
+      "subsection": "4.1",
+      "chapter": 4,
+      "difficulty_level": "5/5",
+      "context": "Bereich A hat Grenzkosten 40 und kann extern 70 erzielen. Bereich B braucht das Teil, verkauft sein Endprodukt für 100 und hat sonstige Kosten 20. Extern würde B 70 zahlen. In Woche 1 hat A freie Kapazität und keinen entgehenden Externverkauf. In Woche 2 ist A voll ausgelastet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "In Woche 1 liegen die entscheidungsrelevanten Kosten bei 40, in Woche 2 bei 70. Dieselbe Grenzkostenstelle ist nicht in beiden Wochen der richtige Verrechnungspreis.",
+        "Ein erzwungener Transfer zu 40 ist in der vollen Woche für das Unternehmen teurer als der externe Bezug von B bei gleichzeitigem Externverkauf von A.",
+        "Die Auslastung ändert die relevanten Kosten nicht, weil die Fertigung weiter 40 kostet.",
+        "Der externe Preis 70 ist in beiden Wochen der richtige Verrechnungspreis, weil B ihn draußen zahlen würde.",
+        "In Woche 1 ist der Fremdbezug von B für das Unternehmen um 30 schlechter als ein interner Transfer zu 40. In Woche 2 ist derselbe Vergleich kein Nachteil von 30 mehr."
       ],
       "answer_key": [
         true,
         true,
         false,
-        true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "Vorauskasse nahm der Lieferantin das Risiko der offenen Rechnung. Binnen 30 Tagen ist die Ware weg und das Geld noch nicht da. Dieses Risiko liegt jetzt bei ihr, bis gezahlt wird.\n\nDie Aussage ist wahr.",
-        "Der Eigentumsvorbehalt hält das Eigentum bis zur Zahlung zurück. Besitz beim Kunden und Eigentum bei der Lieferantin fallen dann auseinander. Die Aussage trennt genau diese beiden Seiten.\n\nDie Aussage ist wahr.",
-        "Langsame Gerichte bleiben der Grund, warum eine offene Rechnung schwer einzutreiben ist. Die Frist von 30 Tagen beseitigt die Dauer von drei Jahren nicht. Das Risiko wechselt die Seite, es verschwindet nicht.\n\nDie Aussage ist falsch.",
-        "In der alten Regelung war die Vorauskasse die Antwort auf schwer durchsetzbare Verträge. Verlässliche Gerichte hätten die Lieferung auf Rechnung schon damals tragbarer gemacht.\n\nDie Aussage ist wahr.",
-        "Die Lieferantin ist kein Staatsbetrieb. Trotzdem entscheiden Gerichte, Zahlungsfristen und der Eigentumsvorbehalt über ihr Risiko. Institutionen tragen auch diesen privaten Tausch.\n\nDie Aussage ist falsch."
+        "Freie Kapazität: der Verzicht ist nur 40. Volle Auslastung: jeder interne Abruf verdrängt einen Externverkauf mit Spanne 30, die relevanten Kosten sind 70. Die Grenzkosten der Fertigung bleiben 40 und sind in Woche 2 nicht mehr die ganzen Kosten.\n\nDie Aussage ist wahr.",
+        "Extern beide: A verdient 30, B verdient 100 minus 20 minus 70, also 10, zusammen 40. Erzwungener Transfer zu 40: das Unternehmen verdient 100 minus 20 minus 40, also 40, verliert aber den Externverkauf von 30, zusammen 10. 10 liegt unter 40.\n\nDie Aussage ist wahr.",
+        "Die Fertigung kostet weiter 40. In der vollen Woche kommt der entgehende Externerlös dazu. Wer nur die Fertigung sieht, trifft Woche 1 und verfehlt Woche 2.\n\nDie Aussage ist falsch.",
+        "Was B draußen zahlt, ist in Woche 1 die Obergrenze, nicht die Untergrenze. Bei freier Kapazität ist ein Transfer zwischen 40 und 70 für das Unternehmen besser als der Fremdbezug. 70 in beiden Wochen festzuschreiben ignoriert die freie Kapazität.\n\nDie Aussage ist falsch.",
+        "Woche 1: intern kosten 40, extern 70, Unterschied 30, und A verschenkt keinen Verkauf. Woche 2: der interne Abruf kostet den Externverkauf. Der Vorteil von 30 verschwindet, sobald dieser Verkauf entgeht.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M3-E09",
+      "id": "WISO-M3-E09",
+      "title": "Wer die letzte Einheit vermeidet",
+      "subsection": "2.4",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Zwei Betriebe dürfen zusammen noch 30 Einheiten ausstoßen, ohne weitere Vermeidung wären es 60. Betrieb 1 kann bis zu 40 Einheiten vermeiden, jede zu 8. Betrieb 2 kann bis zu 20 Einheiten vermeiden, jede zu 3. Ein Zertifikat, das zum Ausstoß berechtigt, wird mit diesen Vermeidungskosten verglichen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die letzte vermiedene Einheit kostet 8. Betrieb 2 allein kann die Lücke von 30 nicht schließen, auch wenn er billiger vermeidet.",
+        "Gleichmäßiges Vermeiden von je 15 kostet 25 mehr als die kostenminimale Aufteilung.",
+        "Kostenminimal bleibt Betrieb 1 ungekürzt, weil er teurer vermeidet.",
+        "Ein Zertifikatspreis von 3 bringt auch Betrieb 1 zum Vermeiden.",
+        "Betrieb 2 vermeidet 20 und Betrieb 1 vermeidet 10. Die Gesamtkosten 140 liegen unter der gleichmäßigen Lösung und über den Kosten, die entstünden, wenn Betrieb 2 die ganzen 30 könnte."
       ],
-      "difficulty_level": "5/5"
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Zuerst vermeidet Betrieb 2 seine 20 zu je 3. Es fehlen weiter 10, die nur Betrieb 1 zu 8 vermeiden kann. Die letzte Einheit kostet deshalb 8. Die billigere Technik hat eine Kapazitätsgrenze.\n\nDie Aussage ist wahr.",
+        "Je 15: Betrieb 1 zahlt 120, Betrieb 2 zahlt 45, Summe 165. Minimal: 20 mal 3 plus 10 mal 8 ist 140. Abstand 25. Gleiche Mengen sind hier nicht gleiche Kosten und nicht die kleinsten Kosten.\n\nDie Aussage ist wahr.",
+        "Betrieb 2 kann nur 20 der nötigen 30 übernehmen. Betrieb 1 vermeidet die restlichen 10. Die teurere Einheit wird benutzt, weil die billigere nicht reicht. Ungekürzt bliebe die Lücke offen.\n\nDie Aussage ist falsch.",
+        "Betrieb 1 vermeidet nur, wenn das Zertifikat mindestens 8 kostet. Bei 3 kauft er das Recht und vermeidet nicht. Betrieb 2 ist bei 3 an seiner eigenen Kostengrenze, Betrieb 1 nicht.\n\nDie Aussage ist falsch.",
+        "140 gegen 165 ist die erste Hälfte. Könnte Betrieb 2 dreißig Einheiten zu 3 vermeiden, wären es 90, und 140 liegt darüber. Die Kapazitätsgrenze ist der Grund für die teureren zehn Einheiten, nicht ein Rechenfehler in der 140.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M3-E10",
+      "id": "WISO-M3-E10",
+      "title": "Kulanz, verlorener Auftrag, versunkene Fertigung",
+      "subsection": "4.1",
+      "chapter": 4,
+      "difficulty_level": "5/5",
+      "context": "Eine Nacharbeit kostet 60 an Lohn. Unterbleibt sie, zahlt das Unternehmen 30 Kulanz und verliert einen Folgeauftrag mit Deckungsbeitrag 80. Die ursprüngliche Fertigung des beanstandeten Stücks hat 60 gekostet und ist nicht mehr verkaufbar. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Kulanz plus verlorener Deckungsbeitrag liegen über den Nacharbeitskosten. Die Nacharbeit lohnt gegenüber diesem Unterlassen.",
+        "Die 30 Kulanz sind die ganzen externen Fehlerfolgen, weil nur sie eine Zahlung sind.",
+        "Die ursprünglichen 60 Fertigungskosten sind für diese Entscheidung versunken. Wer sie zu 30 und 80 hinzuzählt, beschreibt nicht die zusätzliche Last des Unterlassens.",
+        "Die Nacharbeit lohnt nicht, sobald ihr Lohn über 30 liegt.",
+        "Der verlorene Deckungsbeitrag ist größer als die Kulanz und kleiner als Kulanz plus Nacharbeitslohn."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "30 plus 80 sind 110. 110 gegen 60 spricht für die Nacharbeit. Die Kulanz allein läge unter 60 und würde die Entscheidung drehen, sie ist aber nicht der ganze Schaden des Unterlassens.\n\nDie Aussage ist wahr.",
+        "Der verlorene Deckungsbeitrag von 80 ist keine Kassenausgabe und trotzdem ein Verzicht. 30 sind der kleinere Teil der 110.\n\nDie Aussage ist falsch.",
+        "Die 60 sind in beiden Wegen schon ausgegeben, das Stück ist so oder so nicht mehr regulär verkaufbar. Zusätzlich beim Unterlassen sind 30 und 80. Eine Summe 170 vermischt den versunkenen Block mit der noch offenen Entscheidung.\n\nDie Aussage ist wahr.",
+        "Der Vergleichsmaßstab ist 110, nicht 30. 60 liegt über 30 und unter 110. Die engere Schwelle würde eine lohnende Nacharbeit ablehnen.\n\nDie Aussage ist falsch.",
+        "80 liegt über 30 und unter 90. Er ist weder ein Rundungsrest der Kulanz noch schon die Summe aus Kulanz und Nacharbeit. Genau in dieser mittleren Lage kippt er die Entscheidung, ohne die Nacharbeit allein zu übersteigen.\n\nDie Aussage ist wahr."
+      ]
     }
   ],
   "german": {
-    "passage": "(1) In der Gemeinde Brunnau betreibt die Kommune das Trinkwassernetz seit 1958 selbst. Das Wasser wird aus zwei Brunnen im Gemeindewald entnommen, in einem kleinen Werk aufbereitet und über 86 Kilometer Rohre an etwa 18.000 Haushalte geliefert. Ein Verkauf an einen privaten Betreiber stand 2018 zur Abstimmung. 64 Prozent der Abstimmenden lehnten ihn ab, 36 Prozent stimmten zu. Die Beteiligung lag bei 49 Prozent der Stimmberechtigten.\n\n(2) Der Preis besteht aus zwei Teilen. Jeder Haushalt zahlt 8 Euro Grundgebühr im Monat, unabhängig von der entnommenen Menge, und dazu 2,40 Euro je Kubikmeter. Ein Haushalt mit 100 Kubikmetern im Jahr zahlt also 96 Euro Grundgebühr und 240 Euro Mengenentgelt, zusammen 336 Euro. Die Nachbargemeinde Kleinau hat das Netz 2011 einem Konzessionär übergeben. Dort gibt es keine Grundgebühr, der Kubikmeter kostet 3,10 Euro. Dieselben 100 Kubikmeter kosten dort 310 Euro.\n\n(3) Der Vergleich der Rechnung täuscht, wenn man nur auf den Endbetrag sieht. In Brunnau gehen nach Angaben des Werks 12 Prozent des ins Netz gegebenen Wassers durch Lecks verloren, in Kleinau 21 Prozent. Außerdem sind in Brunnau 38 Prozent der Rohre älter als 50 Jahre. Das Werk legte 2023 Investitionen von 4,2 Millionen Euro vor. Die Grundgebühren deckten davon 1,1 Millionen Euro, der Rest kam aus dem Überschuss des Mengenentgelts und aus dem Gemeindehaushalt.\n\n(4) Wasser ist zugleich ein Gut, das niemand beliebig vergeuden sollte, und ein Gut, auf das Haushalte angewiesen sind. Ein Preis von null je Kubikmeter würde die einzelne Entnahme billig machen und die Knappheit des Brunnens verdecken. Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen treffen, obwohl sie kaum mehr als den Grundbedarf entnehmen. Die Gemeinde versucht beides: Der Kubikmeterpreis soll sparen helfen, die Grundgebühr soll das Netz tragen.\n\n(5) Für 1.200 der 18.000 Haushalte entfällt die Grundgebühr, wenn das Einkommen unter einer im Gemeinderat beschlossenen Schwelle liegt. Das sind rund 6,7 Prozent der Haushalte, ein Fünfzehntel und nicht ein Sechstel. Der erlassene Betrag wird nicht als eigener Zuschlag auf die übrigen Haushalte umgelegt. Er erscheint als geringerer Überschuss des Werks und damit häufiger als Zuschuss der Gemeinde.\n\n(6) In der Debatte vor der Abstimmung von 2018 wurden zwei Fragen oft in einen Satz gepackt. Die eine lautet, wem das Netz gehört. Die andere lautet, welche Regeln für Preis, Investition und Qualität gelten. Ein privater Konzessionär kann unter einer harten Preisaufsicht stehen, ein Gemeindebetrieb kann ohne Aufsicht verfallen. Die Eigentumsform entscheidet nicht allein über Lecks, Preise und Erneuerung.\n\n(7) Der Konzessionsvertrag von Kleinau läuft 20 Jahre und endet 2031. Er schreibt eine Höchstverlustrate von 15 Prozent vor, die der Betreiber seit 2019 überschreitet. Die Gemeinde Kleinau darf deshalb eine Vertragsstrafe verlangen, hat das bis 2024 aber nicht getan. Brunnau hat keine solche Klausel, weil es keinen externen Betreiber gibt. Dafür kann der Gemeinderat die Investition jedes Jahr neu beschließen oder streichen.\n\n(8) Eine Ingenieurin des Brunnauer Werks warnt vor einem Trugschluss aus den Prozenten. Zwölf Prozent Verlust auf einem alten Netz sind nicht dasselbe wie zwölf Prozent auf einem neuen Netz. Und 38 Prozent Rohre über 50 Jahre bedeuten nicht, dass 38 Prozent des Wassers verloren gehen. Verlustrate und Rohralter sind zwei Messungen. Wer sie addiert, erhält keine kennzeichnende dritte Zahl.\n\n(9) Offen ist, ob die Ablehnung von 2018 auch dann noch tragen würde, wenn Brunnau denselben Vertrag prüfen müsste, den Kleinau 2031 neu verhandelt. Die Abstimmung hat einen Verkauf abgelehnt und keine ewige Organisationsform beschlossen. Ob Grundgebühr, Sozialerlass und Gemeinderatsbeschluss die Rohre rechtzeitig erneuern, lässt sich an einem einzelnen Jahr mit 4,2 Millionen Euro nicht entscheiden.",
-    "passageTitle": "Brunnau, Kleinau und der Preis des Wassers",
+    "passage": "(1) Ab 2025 soll eine Vorhaltepauschale die bereitgehaltene Kapazität vergüten. Die Fallpauschale bleibt daneben für die Behandlung zuständig. Die Reform ersetzt die Fallpauschale nicht. Wer schreibt, künftig werde nur noch vorgehalten und nicht mehr die Behandlung vergütet, verlässt den Text.\n\n(2) Die volle Vorhaltezahlung erhält nur ein Haus, das im Landeskrankenhausplan bleibt und in den genannten Leistungsgruppen die Mindestmenge erreicht. Wer aus dem Plan fällt, verliert die Vorhaltezahlung, auch wenn weiter behandelt wird. Eine verfehlte Mindestmenge kürzt die Vorhaltezahlung. Sie schließt das Haus nicht von selbst.\n\n(3) Ein Pilot in zwei Ländern lief 2024 an. Seine Ergebnisse sind keine bundesweite Regel. Eine Pressemitteilung sagte, der Pilot beweise, dass die Reform überall trage. Der Text sagt, das Ministerium übernehme diesen Satz nicht.\n\n(4) Ein Modellhaus hat 200 genehmigte Betten, 160 davon personell besetzt, 140 dieser besetzten Betten in der maßgeblichen Leistungsgruppe. Grundlage der Pauschale sind die besetzten und zugleich in der Gruppe geführten Betten, also 140. Genehmigte und besetzte Betten zu addieren zählt doppelt und ist nicht die Grundlage. Die 160 allein wären die besetzten Betten ohne den Gruppenfilter.\n\n(5) Liegt die Auslastung in einem Quartal über 90 Prozent, darf ein Zuschlag berechnet werden. Er ist gedeckelt und darf die für dasselbe Quartal schon gewährte Vorhaltezahlung nicht übersteigen. Im Beispiel liegt die Auslastung bei 93 Prozent, der ungedeckelte Zuschlag betrüge 1,2 Millionen, die Vorhaltezahlung des Quartals 1,0 Millionen. Zahlbar ist der gedeckelte Betrag. Der Text sagt, die Deckelung greife. Dieser Zuschlag ist keine neue Steuer und auch nicht die Fallpauschale.\n\n(6) Pflegepersonalkosten stecken zum Teil in der Vorhaltezahlung und dürfen für dieselben Betten nicht noch einmal als separates Pflegeentgelt berechnet werden. Eine Übergangsausnahme gilt für psychiatrische Betten bis Ende 2026: dort darf das alte Pflegeentgelt bleiben. Somatische Betten dürfen das nicht. Die Ausnahme hängt an der Art der Betten und am Datum, nicht am Träger.\n\n(7) Der Verband möchte die Mindestmengen in ländlichen Kreisen aussetzen. Der Text sagt, das Gesetz enthalte diese Aussetzung nicht. Ein Land darf eine befristete Ausnahme für drei Jahre nur zulassen, wenn das nächste Krankenhaus mehr als 40 Kilometer entfernt ist und der Kreis sie beantragt. Beide Bedingungen müssen vorliegen. Im Beispiel sind es 28 Kilometer, und der Kreis hat beantragt. Die Ausnahme scheitert an der Entfernung. Wer nur den Antrag liest, irrt.\n\n(8) Finanziert wird die Vorhaltezahlung aus einem Fonds, den ein Abzug von den Fallpauschalen speist, nicht eine neue Steuer. Eine höhere Vorhaltezahlung ist damit nicht schon zusätzliches Geld bei unveränderten Fallpauschalen. Den Satz der Direktion, der Fonds liege obendrauf auf unveränderten Fallpauschalen, weist der Text zurück.\n\n(9) Verfehlt ein Haus einen Qualitätsindikator zweimal, verliert es 20 Prozent der Vorhaltezahlung des Folgejahres, nicht des laufenden Jahres. Das Beispiel verfehlt den Indikator 2025 und 2026. Der Abschlag trifft 2027. Er trifft nicht 2025. Ein einmaliges Verfehlen 2025 allein hätte den Abschlag nicht ausgelöst.",
+    "passageTitle": "Vorhaltepauschale, Pilot und drei verschiedene Kürzungen",
     "tasks": [
       {
-        "id": "wiso-m3-de-01",
-        "case_id": "WISO-M3.DE.01",
-        "title": "Zwei Rechnungen, eine Differenz",
-        "context": "Die Aussagen verlangen, Grundgebühr und die beiden Jahresrechnungen gegeneinander zu rechnen.",
+        "id": "WISO-M3-G01",
+        "case_id": "WISO-M3-G01",
+        "title": "Neben der Fallpauschale, nicht an ihrer Stelle",
+        "subsection": "text",
         "kind": "text",
         "with_passage": true,
-        "statements": [
-          "Die Jahresgrundgebühr des Beispielhaushalts ist größer als die Differenz zwischen der Brunnauer Rechnung von 336 Euro und der Kleinauer von 310 Euro.",
-          "Kleinau ist beim Beispielhaushalt um mehr als 50 Euro billiger.",
-          "100 Kubikmeter mal 2,40 Euro ergeben 240 Euro Mengenentgelt.",
-          "Kleinau verlangt neben 3,10 Euro je Kubikmeter dieselbe Grundgebühr wie Brunnau.",
-          "Wer nur 336 gegen 310 hält, hat laut Absatz 3 bereits über Lecks und Rohralter mitentschieden."
-        ],
-        "answer_key": [
-          true,
-          false,
-          true,
-          false,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) Die Jahresgrundgebühr des Beispielhaushalts ist größer als die Differenz zwischen der Brunnauer Rechnung von 336 Euro und der Kleinauer von 310 Euro.**\n\nAcht Euro mal zwölf sind 96 Euro Grundgebühr. 336 minus 310 sind 26 Euro Differenz. 96 ist größer als 26. Beide Bausteine stehen im Text, der Vergleich nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Kleinau ist beim Beispielhaushalt um mehr als 50 Euro billiger.**\n\nDie Differenz ist 26 Euro, nicht mehr als 50. Kleinau ist billiger, aber nicht um diesen Betrag.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) 100 Kubikmeter mal 2,40 Euro ergeben 240 Euro Mengenentgelt.**\n\nAbsatz 2 rechnet 100 mal 2,40 Euro als 240 Euro Mengenentgelt vor. Zusammen mit 96 Euro Grundgebühr entstehen die 336 Euro.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Kleinau verlangt neben 3,10 Euro je Kubikmeter dieselbe Grundgebühr wie Brunnau.**\n\nIn Kleinau gibt es keine Grundgebühr. Dieselbe Grundgebühr ist ausdrücklich verneint.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Wer nur 336 gegen 310 hält, hat laut Absatz 3 bereits über Lecks und Rohralter mitentschieden.**\n\nAbsatz 3 sagt, der Vergleich der Rechnung täusche, wenn man nur auf den Endbetrag sehe, und nennt danach Lecks und Rohralter als weitere Größen. Der Endbetrag allein entscheidet diese Größen nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
         "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-02",
-        "case_id": "WISO-M3.DE.02",
-        "title": "1,1 von 4,2",
-        "context": "Die Aussagen prüfen, ob ein Teilbetrag zur ganzen Investition oder zum Wasserverlust umgedeutet wird.",
-        "kind": "text",
-        "with_passage": true,
+        "context": "Die Aussagen prüfen, was die Reform ersetzt und was nebeneinander bleibt.",
         "statements": [
-          "1,1 Millionen Euro sind mehr als die Hälfte der Investition von 4,2 Millionen Euro.",
-          "1,1 Millionen Euro sind weniger als ein Drittel von 4,2 Millionen Euro.",
-          "Die Grundgebühren deckten 2023 den gesamten Investitionsbetrag.",
-          "Ein Teil der Investition kam aus dem Gemeindehaushalt.",
-          "38 Prozent Rohre, die älter als 50 Jahre sind, bedeuten 38 Prozent Wasserverlust."
-        ],
-        "answer_key": [
-          false,
-          true,
-          false,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) 1,1 Millionen Euro sind mehr als die Hälfte der Investition von 4,2 Millionen Euro.**\n\nDie Hälfte von 4,2 ist 2,1. 1,1 liegt darunter. Mehr als die Hälfte wäre ein anderer Deckungsgrad als der genannte.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) 1,1 Millionen Euro sind weniger als ein Drittel von 4,2 Millionen Euro.**\n\nEin Drittel von 4,2 ist 1,4. 1,1 ist kleiner als 1,4. Der Text nennt 1,1 und 4,2 getrennt. Die Aussage ist die Rechnung daraus.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Die Grundgebühren deckten 2023 den gesamten Investitionsbetrag.**\n\n1,1 von 4,2 ist ein Teil. Der gesamte Betrag wäre nur gedeckt, wenn beide Zahlen gleich wären.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Ein Teil der Investition kam aus dem Gemeindehaushalt.**\n\nDer Rest nach den Grundgebühren kam aus dem Überschuss des Mengenentgelts und aus dem Gemeindehaushalt. Der Haushalt ist eine der genannten Quellen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) 38 Prozent Rohre, die älter als 50 Jahre sind, bedeuten 38 Prozent Wasserverlust.**\n\nAbsatz 3 nennt 38 Prozent alte Rohre und getrennt davon 12 Prozent Wasserverlust. Absatz 8 verbietet später genau diese Gleichsetzung.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-03",
-        "case_id": "WISO-M3.DE.03",
-        "title": "21, 15 und 12",
-        "context": "Die Aussagen zwingen dazu, drei verschiedene Prozentzahlen auseinanderzuhalten: Verlust Brunnau, Vertrag Kleinau, Verlust Kleinau.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Kleinaus Verlustrate liegt sowohl über der Brunnauer Rate als auch über der vertraglichen Höchstgrenze.",
-          "Die vertragliche Höchstverlustrate beträgt 12 Prozent.",
-          "Kleinau hat die zulässige Vertragsstrafe bis 2024 bereits eingezogen.",
-          "Brunnau hat keine solche Klausel, weil es keinen externen Betreiber gibt.",
-          "Der Text setzt die Vertragsstrafe auf die Differenz von 21 minus 15, also auf 6 Prozentpunkte, fest."
+          "Die Vorhaltepauschale vergütet die bereitgehaltene Kapazität, die Fallpauschale bleibt für die Behandlung zuständig, und die Reform ersetzt die Fallpauschale nicht.",
+          "Ab 2025 wird nur noch Kapazität vergütet. Die Behandlung fällt aus der Vergütung, weil die neue Pauschale sie aufnimmt.",
+          "Wer die Fallpauschale für abgeschafft hält und die Vorhaltepauschale zu ihrer Rechtsnachfolgerin im selben Gegenstand macht, folgt Absatz 1.",
+          "Beide Zahlungen bleiben zuständig, aber nicht für denselben Gegenstand. Kapazität und Behandlung werden nicht zu einem Vergütungstatbestand verschmolzen.",
+          "Der Pilot von 2024 hat die Fallpauschale schon bundesweit abgelöst, die Vorhaltepauschale ist nur der neue Name."
         ],
         "answer_key": [
           true,
@@ -389,28 +329,276 @@
           false
         ],
         "tactical_explanations": [
-          "**A) Kleinaus Verlustrate liegt sowohl über der Brunnauer Rate als auch über der vertraglichen Höchstgrenze.**\n\n21 Prozent in Kleinau stehen gegen 12 Prozent in Brunnau und gegen die vertragliche Grenze von 15 Prozent. 21 liegt über beiden. Die Aussage bündelt zwei Vergleiche, die der Text an verschiedenen Stellen lässt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Die vertragliche Höchstverlustrate beträgt 12 Prozent.**\n\n15 Prozent ist die vertragliche Höchstgrenze. 12 Prozent ist die tatsächliche Verlustrate Brunnaus. Die Aussage hängt die Brunnauer Messzahl an den Kleinauer Vertrag.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Kleinau hat die zulässige Vertragsstrafe bis 2024 bereits eingezogen.**\n\nKleinau darf die Strafe verlangen und hat das bis 2024 nicht getan. Eingezogen ist das Gegenteil.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Brunnau hat keine solche Klausel, weil es keinen externen Betreiber gibt.**\n\nAbsatz 7 gibt diese Begründung ausdrücklich. Sie ist keine zusätzliche Vermutung über einen fehlenden Gemeinderat.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Text setzt die Vertragsstrafe auf die Differenz von 21 minus 15, also auf 6 Prozentpunkte, fest.**\n\n21 und 15 stehen im Text, die Differenz 6 und ein darauf lautendes Strafmaß nicht. Die Strafe wird nur als bestehende Möglichkeit genannt, nicht als Prozentformel.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
+          "**A) Die Vorhaltepauschale vergütet die bereitgehaltene Kapazität, die Fallpauschale bleibt für die Behandlung zuständig, und die Reform ersetzt die Fallpauschale nicht.**\n\nAbsatz 1 teilt die beiden Gegenstände auf und sagt, die Reform ersetze die Fallpauschale nicht. Die Aussage braucht alle drei Teile. Einer allein wäre nur die Überschrift.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Ab 2025 wird nur noch Kapazität vergütet. Die Behandlung fällt aus der Vergütung, weil die neue Pauschale sie aufnimmt.**\n\nAbsatz 1 nennt genau diesen Satz als Verlassen des Textes. Die neue Pauschale nimmt die Behandlung nicht auf, sie tritt neben die Fallpauschale.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer die Fallpauschale für abgeschafft hält und die Vorhaltepauschale zu ihrer Rechtsnachfolgerin im selben Gegenstand macht, folgt Absatz 1.**\n\nAbsatz 1 hält die Gegenstände auseinander und bestreitet die Ersetzung. Rechtsnachfolge im selben Gegenstand ist die Lesart, die der Text verwirft.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Beide Zahlungen bleiben zuständig, aber nicht für denselben Gegenstand. Kapazität und Behandlung werden nicht zu einem Vergütungstatbestand verschmolzen.**\n\nAbsatz 1 lässt beide Zahlungen bestehen und weist jeder einen Gegenstand zu. Verschmelzen wäre die Lesart, die nur noch eine Zahlung kennt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Der Pilot von 2024 hat die Fallpauschale schon bundesweit abgelöst, die Vorhaltepauschale ist nur der neue Name.**\n\nAbsatz 3 macht den Pilot ausdrücklich nicht zur bundesweiten Regel. Absatz 1 macht die Vorhaltepauschale nicht zum neuen Namen der Fallpauschale. Beide Hälften fehlen im Text.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
       },
       {
-        "id": "wiso-m3-de-04",
-        "case_id": "WISO-M3.DE.04",
-        "title": "1.200 von 18.000",
-        "context": "Die Aussagen prüfen Brüche, die der Text selbst zurückweist, und eine Prozentrechnung, die danebenliegt.",
+        "id": "WISO-M3-G02",
+        "case_id": "WISO-M3-G02",
+        "title": "Plan, Menge, nicht dieselbe Folge",
+        "subsection": "text",
         "kind": "text",
         "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welche Folge der Planaustritt hat und welche die verfehlte Mindestmenge.",
         "statements": [
-          "1.200 von 18.000 Haushalten sind ein Sechstel.",
-          "1.200 von 18.000 Haushalten sind ein Fünfzehntel, rund 6,7 Prozent.",
-          "Der erlassene Betrag wird als eigener Zuschlag auf die übrigen Haushalte umgelegt.",
-          "1.200 Haushalte sind genau 6 Prozent von 18.000.",
-          "Der Erlass kann als Zuschuss der Gemeinde sichtbar werden."
+          "Wer aus dem Plan fällt, verliert die Vorhaltezahlung auch bei fortgesetzter Behandlung. Eine verfehlte Mindestmenge kürzt die Zahlung und schließt das Haus nicht von selbst.",
+          "Volle Zahlung verlangt den Verbleib im Plan und die Mindestmenge zugleich. Behandlung allein ersetzt den Planplatz.",
+          "Eine verfehlte Mindestmenge und der Planaustritt sind im Text dieselbe Sanktion, weil beide die Vorhaltezahlung betreffen.",
+          "Das Haus bleibt im Text auch dann offen, wenn die Mindestmenge verfehlt wird. Offen bleiben und die volle Zahlung behalten sind dabei nicht dasselbe.",
+          "Weil weiter behandelt wird, bleibt die Vorhaltezahlung auch ohne Planplatz erhalten, solange die Qualität nicht zweimal verfehlt wurde."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Wer aus dem Plan fällt, verliert die Vorhaltezahlung auch bei fortgesetzter Behandlung. Eine verfehlte Mindestmenge kürzt die Zahlung und schließt das Haus nicht von selbst.**\n\nAbsatz 2 trennt die beiden Folgen. Planaustritt beendet die Zahlung trotz Behandlung. Mengenverfehlung kürzt und schließt nicht. Die Aussage hält die Folgen auseinander.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Volle Zahlung verlangt den Verbleib im Plan und die Mindestmenge zugleich. Behandlung allein ersetzt den Planplatz.**\n\nDie erste Hälfte steht in Absatz 2. Die zweite widerspricht demselben Absatz: Behandlung rettet die Zahlung nicht, wenn der Planplatz fehlt. Die Konjunktion fällt mit der zweiten Hälfte.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Eine verfehlte Mindestmenge und der Planaustritt sind im Text dieselbe Sanktion, weil beide die Vorhaltezahlung betreffen.**\n\nBeide betreffen die Zahlung und tun nicht dasselbe. Die eine kürzt, die andere nimmt die Zahlung weg und hängt nicht an der Menge. Derselbe Topf ist nicht dieselbe Regel.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Das Haus bleibt im Text auch dann offen, wenn die Mindestmenge verfehlt wird. Offen bleiben und die volle Zahlung behalten sind dabei nicht dasselbe.**\n\nAbsatz 2 schließt das Haus nicht. Die volle Zahlung verlangt aber Plan und Menge. Wer offen bleibt, hat deshalb nicht schon die volle Zahlung. Die Aussage trennt diese beiden Sätze.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil weiter behandelt wird, bleibt die Vorhaltezahlung auch ohne Planplatz erhalten, solange die Qualität nicht zweimal verfehlt wurde.**\n\nAbsatz 2 lässt die Behandlung den Planplatz nicht ersetzen. Absatz 9 regelt einen Qualitätsabschlag auf ein Folgejahr und repariert den fehlenden Planplatz nicht. Die Aussage kreuzt zwei Regeln zu einer, die der Text nicht hat.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G03",
+        "case_id": "WISO-M3-G03",
+        "title": "Was der Pilot nicht beweist",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Pressemitteilung, Ministerium und Reichweite des Piloten.",
+        "statements": [
+          "Der Pilot in zwei Ländern ist keine bundesweite Regel, und das Ministerium übernimmt den Satz nicht, der Pilot beweise die Reform überall.",
+          "Weil der Pilot 2024 läuft, gilt die in ihm erprobte Reform schon 2024 überall, sonst wäre der Pilot folgenlos.",
+          "Pressemitteilung und Text ziehen aus dem Pilot denselben Schluss. Das Ministerium macht sich den Satz zu eigen.",
+          "Der Text trennt den Pilot von der bundesweiten Regel und trennt ihn auch von der Behauptung, die Fallpauschale sei schon ersetzt.",
+          "Zwei Länder genügen im Text als Beweis für alle Länder, weil ein Pilot sonst keinen Sinn hätte."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Der Pilot in zwei Ländern ist keine bundesweite Regel, und das Ministerium übernimmt den Satz nicht, der Pilot beweise die Reform überall.**\n\nAbsatz 3 sagt beides. Zwei Länder und das Jahr 2024 machen den Pilot nicht zur Regel für alle. Die Pressemitteilung wird zitiert und nicht übernommen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil der Pilot 2024 läuft, gilt die in ihm erprobte Reform schon 2024 überall, sonst wäre der Pilot folgenlos.**\n\nAbsatz 3 verweigert genau diese Ausweitung. Folgenlos ist der Pilot dadurch nicht, er ist nur keine bundesweite Regel. Die Aussage füllt diese Lücke mit einem Schluss, den der Text nicht zieht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Pressemitteilung und Text ziehen aus dem Pilot denselben Schluss. Das Ministerium macht sich den Satz zu eigen.**\n\nDer Text sagt, das Ministerium übernehme den Satz nicht. Dieselbe Quelle wäre nur gegeben, wenn die Übernahme stünde. Sie steht als Verweigerung da.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Der Text trennt den Pilot von der bundesweiten Regel und trennt ihn auch von der Behauptung, die Fallpauschale sei schon ersetzt.**\n\nAbsatz 3 besorgt die erste Trennung. Absatz 1 besorgt die zweite, und der Pilot wird dort nicht zur Ausnahme von der Nicht-Ersetzung. Wer den Pilot als frühe Ersetzung liest, braucht einen Satz, den keiner der beiden Absätze hergibt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Zwei Länder genügen im Text als Beweis für alle Länder, weil ein Pilot sonst keinen Sinn hätte.**\n\nAbsatz 3 sagt das Gegenteil. Der Sinn eines Piloten wird im Text nicht in einen bundesweiten Beweis umgedeutet.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G04",
+        "case_id": "WISO-M3-G04",
+        "title": "140, nicht die Summe und nicht 160",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welche Bettenzahl die Grundlage ist und welche Addition der Text verbietet.",
+        "statements": [
+          "Grundlage sind die 140 Betten, die besetzt und in der Gruppe geführt sind. Die Summe aus 200 und 160 ist es nicht, und die 160 ohne Gruppenfilter sind es auch nicht.",
+          "Die 200 genehmigten Betten sind die Grundlage, weil die Genehmigung der rechtlich höchste Wert ist und der Gruppenfilter nur eine interne Liste ist.",
+          "160 und 140 sind verschiedene Zahlen. Der Filter senkt die Grundlage gegenüber den bloß besetzten Betten, und diese Senkung ist keine Doppelzählung.",
+          "Man addiert genehmigte und besetzte Betten, damit kein Bett fehlt, und legt den Satz dann auf 140, damit die Gruppe stimmt.",
+          "Die 140 sind ein Teil der 160, und die 160 sind ein Teil der 200. Deshalb ist die Grundlage 200, denn die Teile bleiben in der Genehmigung enthalten."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Grundlage sind die 140 Betten, die besetzt und in der Gruppe geführt sind. Die Summe aus 200 und 160 ist es nicht, und die 160 ohne Gruppenfilter sind es auch nicht.**\n\nAbsatz 4 nennt 140 als Grundlage, verbietet die Addition von genehmigten und besetzten Betten und stellt die 160 als die besetzten Betten ohne Filter daneben. Alle drei Abgrenzungen stehen im selben Absatz.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die 200 genehmigten Betten sind die Grundlage, weil die Genehmigung der rechtlich höchste Wert ist und der Gruppenfilter nur eine interne Liste ist.**\n\nAbsatz 4 macht die Genehmigung nicht zur Grundlage. Der Gruppenfilter ist Teil der Grundlage, keine interne Liste neben ihr. Der höchste Wert ist hier die falsche Wahl.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 160 und 140 sind verschiedene Zahlen. Der Filter senkt die Grundlage gegenüber den bloß besetzten Betten, und diese Senkung ist keine Doppelzählung.**\n\nAbsatz 4 hält 160 und 140 auseinander. Die Doppelzählung ist die Addition von 200 und 160, nicht der Schritt von 160 auf 140. Die Aussage trifft diese Unterscheidung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Man addiert genehmigte und besetzte Betten, damit kein Bett fehlt, und legt den Satz dann auf 140, damit die Gruppe stimmt.**\n\nDie Addition ist verboten und ist nicht die Grundlage. 140 ist die Grundlage gerade ohne diese Addition. Beides zugleich zu tun vermischt die verworfene und die genannte Zahl.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Die 140 sind ein Teil der 160, und die 160 sind ein Teil der 200. Deshalb ist die Grundlage 200, denn die Teile bleiben in der Genehmigung enthalten.**\n\nDie Teilbeziehung hindert den Text nicht, die Grundlage bei 140 zu setzen. Enthaltensein in der Genehmigung ist nicht die Bemessung. Absatz 4 wäre sonst überflüssig.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G05",
+        "case_id": "WISO-M3-G05",
+        "title": "Deckel und Fonds, nicht 1,2 und nicht eine Steuer",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen verbinden den Zuschlag des Beispiels mit der Finanzierung und verbieten, die Fallpauschale mit dem Zuschlag zu verwechseln.",
+        "statements": [
+          "Bei 93 Prozent Auslastung werden 1,2 Millionen gezahlt, weil die Schwelle von 90 überschritten ist und der ungedeckelte Betrag damit fällig wird.",
+          "Der zahlbare Zuschlag ist durch die Vorhaltezahlung desselben Quartals gedeckelt, und der Fonds entsteht durch einen Abzug von den Fallpauschalen, nicht durch eine neue Steuer.",
+          "Die Deckelung greift im Beispiel, und der Zuschlag ist zusätzliches Geld auf unveränderten Fallpauschalen.",
+          "1,0 Millionen ist im Beispiel die Obergrenze des Zuschlags. Diese Obergrenze ist nicht die Fallpauschale und nicht der ungedeckelte Betrag von 1,2 Millionen.",
+          "Wer 1,2 Millionen auszahlt und den Fonds als neue Steuer liest, trifft die Deckelung und die Finanzierungsregel."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Bei 93 Prozent Auslastung werden 1,2 Millionen gezahlt, weil die Schwelle von 90 überschritten ist und der ungedeckelte Betrag damit fällig wird.**\n\nDie Schwelle ist überschritten, der ungedeckelte Betrag wird gerade nicht gezahlt. Absatz 5 sagt, die Deckelung greife und zahlbar sei der gedeckelte Betrag. Die Schwelle öffnet die Rechnung, sie hebt die Deckelung nicht auf.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Der zahlbare Zuschlag ist durch die Vorhaltezahlung desselben Quartals gedeckelt, und der Fonds entsteht durch einen Abzug von den Fallpauschalen, nicht durch eine neue Steuer.**\n\nAbsatz 5 trägt die Deckelung, Absatz 8 die Quelle des Fonds. Der Zuschlag ist in Absatz 5 ausdrücklich keine neue Steuer. Die Aussage setzt die Deckelung nicht mit der Finanzierungsquelle gleich, sie nennt beide richtig.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Die Deckelung greift im Beispiel, und der Zuschlag ist zusätzliches Geld auf unveränderten Fallpauschalen.**\n\nDie erste Hälfte steht in Absatz 5. Die zweite ist der Satz der Direktion, den Absatz 8 zurückweist. Eine wahre Deckelung rettet die falsche Finanzierungsbehauptung nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) 1,0 Millionen ist im Beispiel die Obergrenze des Zuschlags. Diese Obergrenze ist nicht die Fallpauschale und nicht der ungedeckelte Betrag von 1,2 Millionen.**\n\nAbsatz 5 setzt die Obergrenze bei der Vorhaltezahlung des Quartals von 1,0 Millionen und sagt, der Zuschlag sei nicht die Fallpauschale. 1,2 ist der ungedeckelte Betrag, nicht der zahlbare.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Wer 1,2 Millionen auszahlt und den Fonds als neue Steuer liest, trifft die Deckelung und die Finanzierungsregel.**\n\nBeide Lesarten sind die, die Absatz 5 und Absatz 8 zurückweisen. Die Aussage kehrt die beiden Regeln um.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G06",
+        "case_id": "WISO-M3-G06",
+        "title": "Psychiatrie bis Ende 2026, nicht der Träger",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, woran die Pflegeausnahme hängt und woran nicht.",
+        "statements": [
+          "Somatische Betten dürfen das alte Pflegeentgelt neben der Vorhaltezahlung nicht weiterberechnen. Psychiatrische Betten dürfen es bis Ende 2026.",
+          "Die Ausnahme gilt für alle Betten eines Trägers, sobald mindestens ein psychiatrisches Bett dazu gehört.",
+          "Datum und Bettenart müssen zusammen vorliegen. Ein somatisches Bett im Jahr 2026 bleibt von der Ausnahme draußen, obwohl das Datum noch läuft.",
+          "Ab 2025 ist jedes Pflegeentgelt gestrichen, auch auf psychiatrischen Betten, weil die Kosten in der Vorhaltezahlung stecken.",
+          "Die Ausnahme hängt am Träger und nicht an der Bettenart. Das Datum begrenzt nur, wie lange der Träger insgesamt ausgenommen ist."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Somatische Betten dürfen das alte Pflegeentgelt neben der Vorhaltezahlung nicht weiterberechnen. Psychiatrische Betten dürfen es bis Ende 2026.**\n\nAbsatz 6 zieht genau diese Grenze. Dieselben Kosten stecken zum Teil in der Vorhaltezahlung, die Ausnahme ist eng und datiert. Somatisch bleibt draußen, psychiatrisch bis zum genannten Ende drin.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die Ausnahme gilt für alle Betten eines Trägers, sobald mindestens ein psychiatrisches Bett dazu gehört.**\n\nAbsatz 6 bindet die Ausnahme nicht an den Träger. Ein psychiatrisches Bett färbt die somatischen Betten desselben Hauses nicht. Sonst wäre die Bettenart überflüssig.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Datum und Bettenart müssen zusammen vorliegen. Ein somatisches Bett im Jahr 2026 bleibt von der Ausnahme draußen, obwohl das Datum noch läuft.**\n\nAbsatz 6 verlangt Art und Datum. 2026 liegt vor dem Ende und rettet das somatische Bett nicht. Die Aussage ist der Fall, an dem man sieht, dass das Datum allein nicht trägt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Ab 2025 ist jedes Pflegeentgelt gestrichen, auch auf psychiatrischen Betten, weil die Kosten in der Vorhaltezahlung stecken.**\n\nDass die Kosten zum Teil in der Vorhaltezahlung stecken, ist der Grund für das Verbot bei denselben Betten. Die Übergangsausnahme lässt das alte Entgelt auf psychiatrischen Betten bis Ende 2026 gerade bestehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Die Ausnahme hängt am Träger und nicht an der Bettenart. Das Datum begrenzt nur, wie lange der Träger insgesamt ausgenommen ist.**\n\nAbsatz 6 sagt das Gegenteil: Art und Datum, nicht der Träger. Eine trägerweite Frist ist eine andere Regel als die, die dort steht.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G07",
+        "case_id": "WISO-M3-G07",
+        "title": "28 Kilometer und ein Antrag",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen die beiden Bedingungen der ländlichen Ausnahme und die Forderung des Verbands.",
+        "statements": [
+          "Das Gesetz setzt die Mindestmengen in ländlichen Kreisen nicht allgemein aus. Im Beispiel scheitert die befristete Ausnahme, obwohl der Kreis beantragt hat.",
+          "Antrag und Entfernung liegen im Beispiel beide vor, die Ausnahme für drei Jahre wird erteilt.",
+          "Es braucht mehr als 40 Kilometer und einen Antrag. Wer nur den Antrag liest, irrt, und die Verbandsforderung nach einer allgemeinen Aussetzung ist nicht die gesetzliche Regel.",
+          "28 Kilometer erfüllen die Entfernungsbedingung, weil der Kreis ländlich ist und ländliche Kreise vom Verband gerade ausgenommen werden sollen.",
+          "Die Befristung auf drei Jahre ersetzt eine der beiden Bedingungen, wenn der Kreis den Antrag stellt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Das Gesetz setzt die Mindestmengen in ländlichen Kreisen nicht allgemein aus. Im Beispiel scheitert die befristete Ausnahme, obwohl der Kreis beantragt hat.**\n\nAbsatz 7 verweigert die allgemeine Aussetzung. Im Beispiel liegen 28 Kilometer und ein Antrag vor. Mehr als 40 Kilometer fehlen, der Antrag allein trägt nicht. Die Aussage nutzt beide Sätze.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Antrag und Entfernung liegen im Beispiel beide vor, die Ausnahme für drei Jahre wird erteilt.**\n\nDer Antrag liegt vor, die Entfernung von mehr als 40 Kilometern nicht. 28 erfüllen die Bedingung nicht. Beide Bedingungen müssen vorliegen, eine genügt nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Es braucht mehr als 40 Kilometer und einen Antrag. Wer nur den Antrag liest, irrt, und die Verbandsforderung nach einer allgemeinen Aussetzung ist nicht die gesetzliche Regel.**\n\nAbsatz 7 nennt beide Bedingungen, den Irrtum des reinen Antragslesens und die nicht übernommene Verbandsforderung. Die Aussage setzt diese drei Abgrenzungen zusammen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) 28 Kilometer erfüllen die Entfernungsbedingung, weil der Kreis ländlich ist und ländliche Kreise vom Verband gerade ausgenommen werden sollen.**\n\nLändlich zu sein ist der Wunsch des Verbands, nicht die gesetzliche Schwelle. 28 liegt unter der Bedingung von mehr als 40. Der Wunsch ersetzt die Kilometer nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Die Befristung auf drei Jahre ersetzt eine der beiden Bedingungen, wenn der Kreis den Antrag stellt.**\n\nDrei Jahre ist die Dauer einer Ausnahme, die nur entsteht, wenn beide Bedingungen vorliegen. Die Dauer ersetzt weder die Entfernung noch macht sie den Antrag allein ausreichend.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G08",
+        "case_id": "WISO-M3-G08",
+        "title": "Abzug, nicht obendrauf",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen die Quelle des Fonds und den zurückgewiesenen Satz der Direktion.",
+        "statements": [
+          "Der Fonds wird aus einem Abzug von den Fallpauschalen gespeist und nicht aus einer neuen Steuer. Der Satz, er liege obendrauf auf unveränderten Fallpauschalen, wird zurückgewiesen.",
+          "Eine höhere Vorhaltezahlung ist im Text zusätzliches Geld bei unveränderter Fallpauschale, weil der Fonds einen eigenen Namen hat.",
+          "Abzug und neue Steuer sind zwei Namen für dieselbe Quelle. Deshalb kann die Direktion den Fonds zugleich als Abzug und als Zusatzgeld beschreiben.",
+          "Die Zusammensetzung der Mittel kann sich verschieben, ohne dass der Text von einer neuen Steuer spricht. Der Pilot ändert an dieser Finanzierungsregel nichts.",
+          "Weil der Zuschlag bei hoher Auslastung zahlbar wird, ist er die neue Steuer, aus der der Fonds gespeist wird."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Der Fonds wird aus einem Abzug von den Fallpauschalen gespeist und nicht aus einer neuen Steuer. Der Satz, er liege obendrauf auf unveränderten Fallpauschalen, wird zurückgewiesen.**\n\nAbsatz 8 nennt die Quelle, verneint die neue Steuer und weist den Satz der Direktion zurück. Die Aussage ist nur wahr, wenn alle drei Teile zusammen gelesen werden.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Eine höhere Vorhaltezahlung ist im Text zusätzliches Geld bei unveränderter Fallpauschale, weil der Fonds einen eigenen Namen hat.**\n\nDer eigene Name ändert die Quelle nicht. Absatz 8 sagt, höhere Vorhaltezahlung sei nicht schon zusätzliches Geld bei unveränderten Fallpauschalen. Der Satz der Direktion wird zurückgewiesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Abzug und neue Steuer sind zwei Namen für dieselbe Quelle. Deshalb kann die Direktion den Fonds zugleich als Abzug und als Zusatzgeld beschreiben.**\n\nAbsatz 8 stellt Abzug und neue Steuer gegeneinander. Dieselbe Quelle sind sie nicht. Die Direktion wird zurückgewiesen, nicht in beiden Beschreibungen bestätigt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Die Zusammensetzung der Mittel kann sich verschieben, ohne dass der Text von einer neuen Steuer spricht. Der Pilot ändert an dieser Finanzierungsregel nichts.**\n\nAbsatz 8 beschreibt die Verschiebung über den Abzug und spricht nicht von einer neuen Steuer. Absatz 3 macht den Pilot nicht zur bundesweiten Gegenregel und schon gar nicht zu einer anderen Kasse.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil der Zuschlag bei hoher Auslastung zahlbar wird, ist er die neue Steuer, aus der der Fonds gespeist wird.**\n\nAbsatz 5 sagt, der Zuschlag sei keine neue Steuer. Absatz 8 speist den Fonds aus dem Abzug von den Fallpauschalen. Der Zuschlag ist weder die Steuer noch die Quelle des Fonds.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G09",
+        "case_id": "WISO-M3-G09",
+        "title": "Zweimal verfehlt, Abschlag im Folgejahr",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welches Jahr der Qualitätsabschlag trifft und was ein einmaliges Verfehlen nicht auslöst.",
+        "statements": [
+          "Zweimaliges Verfehlen kürzt das Folgejahr und nicht das laufende Jahr. Im Beispiel trifft der Abschlag 2027 und nicht 2025.",
+          "Der Abschlag trifft schon 2025, weil dort das erste Verfehlen liegt und 20 Prozent ab dem ersten Mal gelten.",
+          "Ein einmaliges Verfehlen 2025 hätte denselben Abschlag ausgelöst. 2026 ist zugleich das zweite Verfehlen und das Jahr, dessen Zahlung gekürzt wird.",
+          "Der Text bindet den Abschlag an das Folgejahr nach dem zweiten Verfehlen. Ein Qualitätsabschlag repariert weder einen fehlenden Planplatz noch eine verfehlte Mindestmenge.",
+          "20 Prozent von der Zahlung des Jahres 2025 sind der Abschlag des Beispiels, weil zweimaliges Verfehlen rückwirkend wirkt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Zweimaliges Verfehlen kürzt das Folgejahr und nicht das laufende Jahr. Im Beispiel trifft der Abschlag 2027 und nicht 2025.**\n\nAbsatz 9 legt den Abschlag auf das Folgejahr nach dem zweiten Verfehlen. 2025 und 2026 sind die beiden Verfehlen, 2027 ist das Folgejahr. 2025 wird ausdrücklich ausgenommen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Der Abschlag trifft schon 2025, weil dort das erste Verfehlen liegt und 20 Prozent ab dem ersten Mal gelten.**\n\nAbsatz 9 verlangt zwei Verfehlen und legt den Abschlag nicht auf 2025. Das erste Jahr ist der Beginn der Zählung, nicht das Jahr der Kürzung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Ein einmaliges Verfehlen 2025 hätte denselben Abschlag ausgelöst. 2026 ist zugleich das zweite Verfehlen und das Jahr, dessen Zahlung gekürzt wird.**\n\nAbsatz 9 verneint den Abschlag nach einem einmaligen Verfehlen. 2026 ist das zweite Verfehlen, gekürzt wird nicht 2026, sondern das Folgejahr 2027. Beide Hälften scheitern.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Der Text bindet den Abschlag an das Folgejahr nach dem zweiten Verfehlen. Ein Qualitätsabschlag repariert weder einen fehlenden Planplatz noch eine verfehlte Mindestmenge.**\n\nDie erste Hälfte ist Absatz 9. Planplatz und Mindestmenge stehen in Absatz 2 mit eigenen Folgen. Der Text benutzt den Qualitätsabschlag nicht, um diese Folgen zu ersetzen oder zurückzunehmen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) 20 Prozent von der Zahlung des Jahres 2025 sind der Abschlag des Beispiels, weil zweimaliges Verfehlen rückwirkend wirkt.**\n\nRückwirkung auf 2025 steht nicht im Text. Absatz 9 trifft 2027 und sagt, 2025 werde nicht getroffen. Die Prozentzahl allein wählt das Jahr nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M3-G10",
+        "case_id": "WISO-M3-G10",
+        "title": "Drei Regeln, die sich nicht vertreten",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, ob Plan, Mindestmenge, Kilometer und Qualität sich gegenseitig ersetzen.",
+        "statements": [
+          "Planaustritt und verfehlte Mindestmenge schließen beide das Haus. Die Kilometerausnahme setzt die Mindestmenge wieder in Kraft, wenn der Kreis beantragt.",
+          "Die ländliche Ausnahme scheitert im Beispiel an 28 Kilometern. Eine verfehlte Mindestmenge würde das Haus auch ohne diese Ausnahme nicht schon schließen.",
+          "Weil der Kreis beantragt hat, bleibt die volle Vorhaltezahlung trotz 28 Kilometern und trotz eines etwaigen Planaustritts.",
+          "Wer aus dem Plan fällt, behält die Vorhaltezahlung, solange der Qualitätsindikator nicht zweimal verfehlt wurde.",
+          "Mindestmenge, Planplatz und die kilometergebundene Ausnahme sind drei verschiedene Regeln. Der Qualitätsabschlag ist eine vierte und trifft ein anderes Jahr als das erste Verfehlen."
         ],
         "answer_key": [
           false,
@@ -420,152 +608,28 @@
           true
         ],
         "tactical_explanations": [
-          "**A) 1.200 von 18.000 Haushalten sind ein Sechstel.**\n\nEin Sechstel von 18.000 wäre 3.000. 1.200 ist ein Fünfzehntel. Absatz 5 verneint das Sechstel ausdrücklich.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) 1.200 von 18.000 Haushalten sind ein Fünfzehntel, rund 6,7 Prozent.**\n\n18.000 geteilt durch 1.200 ist 15, und 1.200/18.000 ist rund 6,7 Prozent. Der Text nennt beide Formen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Der erlassene Betrag wird als eigener Zuschlag auf die übrigen Haushalte umgelegt.**\n\nAbsatz 5 sagt, der Betrag werde nicht als eigener Zuschlag auf die übrigen Haushalte umgelegt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) 1.200 Haushalte sind genau 6 Prozent von 18.000.**\n\nSechs Prozent von 18.000 sind 1.080, nicht 1.200. 1.200 sind rund 6,7 Prozent. Genau 6 Prozent wäre eine andere Haushaltszahl.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Der Erlass kann als Zuschuss der Gemeinde sichtbar werden.**\n\nDer geringere Überschuss des Werks erscheint häufiger als Zuschuss der Gemeinde. Die Aussage sagt können und macht daraus keinen Automatismus für jedes Jahr.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
+          "**A) Planaustritt und verfehlte Mindestmenge schließen beide das Haus. Die Kilometerausnahme setzt die Mindestmenge wieder in Kraft, wenn der Kreis beantragt.**\n\nAbsatz 2 schließt das Haus bei Mengenverfehlung nicht. Absatz 7 erteilt die Ausnahme im Beispiel nicht, und sie setzt keine Mindestmenge in Kraft, sie kann sie nur unter zwei Bedingungen befristet aussetzen. Beide Hälften laufen dem Text entgegen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Die ländliche Ausnahme scheitert im Beispiel an 28 Kilometern. Eine verfehlte Mindestmenge würde das Haus auch ohne diese Ausnahme nicht schon schließen.**\n\nAbsatz 7 scheitert an der Entfernung trotz Antrag. Absatz 2 kürzt bei Mengenverfehlung und schließt nicht. Die gescheiterte Ausnahme ändert die Schließungsfolge nicht, weil diese Folge so nicht besteht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Weil der Kreis beantragt hat, bleibt die volle Vorhaltezahlung trotz 28 Kilometern und trotz eines etwaigen Planaustritts.**\n\nDer Antrag rettet die Entfernung nicht. Ein Planaustritt nimmt die Zahlung nach Absatz 2 unabhängig von den Kilometern. Die Aussage lässt eine Bedingung zwei andere Regeln außer Kraft setzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer aus dem Plan fällt, behält die Vorhaltezahlung, solange der Qualitätsindikator nicht zweimal verfehlt wurde.**\n\nAbsatz 2 nimmt die Zahlung beim Planaustritt auch bei fortgesetzter Behandlung. Absatz 9 ist eine zusätzliche Kürzung im Folgejahr, keine Bedingung, unter der der Planplatz entbehrlich würde.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Mindestmenge, Planplatz und die kilometergebundene Ausnahme sind drei verschiedene Regeln. Der Qualitätsabschlag ist eine vierte und trifft ein anderes Jahr als das erste Verfehlen.**\n\nAbsatz 2, Absatz 7 und Absatz 9 tragen vier verschiedene Mechanismen. Der Abschlag trifft 2027, nicht 2025. Die Aussage fasst sie zusammen, ohne eine zur anderen zu machen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ]
       },
       {
-        "id": "wiso-m3-de-05",
-        "case_id": "WISO-M3.DE.05",
-        "title": "64 Prozent von 49 Prozent",
-        "context": "Die Aussagen prüfen, ob eine Mehrheit der Abstimmenden schon eine Mehrheit aller Stimmberechtigten ist.",
+        "id": "WISO-M3-G11",
+        "case_id": "WISO-M3-G11",
+        "title": "Hinweis ist nicht Verstoß",
+        "subsection": "text",
         "kind": "text",
         "with_passage": true,
-        "statements": [
-          "64 Prozent der Abstimmenden lehnten den Verkauf ab.",
-          "Weil 64 Prozent der Abstimmenden ablehnten und die Beteiligung 49 Prozent betrug, lehnte eine Mehrheit aller Stimmberechtigten ab.",
-          "36 Prozent der Abstimmenden stimmten dem Verkauf zu.",
-          "Die Kommune betreibt das Netz seit 1958 selbst.",
-          "64 plus 36 ergibt 100, also war die Beteiligung vollständig."
-        ],
-        "answer_key": [
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) 64 Prozent der Abstimmenden lehnten den Verkauf ab.**\n\nAbsatz 1 ordnet 64 Prozent der Ablehnung und 36 Prozent der Zustimmung zu, jeweils unter den Abstimmenden.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Weil 64 Prozent der Abstimmenden ablehnten und die Beteiligung 49 Prozent betrug, lehnte eine Mehrheit aller Stimmberechtigten ab.**\n\n64 Prozent von 49 Prozent Beteiligung sind etwa 31 Prozent aller Stimmberechtigten. Das ist keine Mehrheit der Stimmberechtigten. Die Aussage multipliziert die beiden echten Zahlen und liest das Produkt als Mehrheit. Das Produkt trägt diese Lesart nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) 36 Prozent der Abstimmenden stimmten dem Verkauf zu.**\n\n36 Prozent stimmten zu. Die Aussage lässt diese Zahl bei der Zustimmung und schiebt sie nicht auf die Ablehnung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Die Kommune betreibt das Netz seit 1958 selbst.**\n\nDer erste Satz datiert den kommunalen Betrieb auf 1958. Das ist eine andere Jahreszahl als die Abstimmung 2018 und die Konzession Kleinaus 2011.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) 64 plus 36 ergibt 100, also war die Beteiligung vollständig.**\n\n64 und 36 sind Anteile der abgegebenen Stimmen und ergänzen sich zu 100 Prozent der Abstimmenden. Die Beteiligung war 49 Prozent der Stimmberechtigten. Vollständig wäre eine andere Größe.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
         "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-06",
-        "case_id": "WISO-M3.DE.06",
-        "title": "Nicht addieren",
-        "context": "Die Aussagen prüfen, ob zwei Prozent aus Absatz 3 zu einer dritten Kennzahl addiert werden dürfen.",
-        "kind": "text",
-        "with_passage": true,
+        "context": "Die Aussagen prüfen nur den Kurztext zum Sorgfaltspflichtengesetz.",
         "statements": [
-          "Ein privater Konzessionär kann unter harter Preisaufsicht stehen.",
-          "Ein Gemeindebetrieb ist laut Text schon durch die Eigentumsform vor Verfall geschützt.",
-          "Die Abstimmung von 2018 hat eine ewige Organisationsform beschlossen.",
-          "Absatz 8 verbietet, Verlustrate und Rohralter gleichzusetzen oder zu addieren.",
-          "12 Prozent Wasserverlust plus 38 Prozent alte Rohre ergeben laut Text eine Kennzahl von 50 Prozent."
-        ],
-        "answer_key": [
-          true,
-          false,
-          false,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) Ein privater Konzessionär kann unter harter Preisaufsicht stehen.**\n\nAbsatz 6 nennt diesen Fall ausdrücklich. Privat und Aufsicht gleich null ist die Vermischung, die der Absatz auflöst.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Ein Gemeindebetrieb ist laut Text schon durch die Eigentumsform vor Verfall geschützt.**\n\nEin Gemeindebetrieb kann ohne Aufsicht verfallen. Die Eigentumsform allein schützt nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Die Abstimmung von 2018 hat eine ewige Organisationsform beschlossen.**\n\nAbsatz 9 sagt, die Abstimmung habe einen Verkauf abgelehnt und keine ewige Organisationsform beschlossen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Absatz 8 verbietet, Verlustrate und Rohralter gleichzusetzen oder zu addieren.**\n\nDie Ingenieurin warnt, 38 Prozent alte Rohre bedeuteten nicht 38 Prozent Wasserverlust, und die Summe der beiden Prozent sei keine kennzeichnende dritte Zahl.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) 12 Prozent Wasserverlust plus 38 Prozent alte Rohre ergeben laut Text eine Kennzahl von 50 Prozent.**\n\n12 plus 38 ist rechnerisch 50, aber Absatz 8 sagt, wer die beiden Prozent addiere, erhalte keine kennzeichnende Kennzahl. Die Aussage macht aus der verbotenen Summe einen Textbefund.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-07",
-        "case_id": "WISO-M3.DE.07",
-        "title": "2011 plus 20",
-        "context": "Die Aussagen prüfen, ob das Vertragsende zur Überschreitung und zur Investition passt.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "2011 plus eine Laufzeit von 20 Jahren trifft das im Text genannte Vertragsende 2031.",
-          "Die Überschreitung der Höchstverlustrate begann 2024.",
-          "Der Brunnauer Gemeinderat kann die Investition jedes Jahr streichen.",
-          "Das Investitionsjahr 2023 mit 4,2 Millionen Euro entscheidet bereits, dass die Rohre rechtzeitig erneuert werden.",
-          "Die Ingenieurin hält 38 Prozent Rohralter und 38 Prozent Wasserverlust für dieselbe Aussage."
-        ],
-        "answer_key": [
-          true,
-          false,
-          true,
-          false,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) 2011 plus eine Laufzeit von 20 Jahren trifft das im Text genannte Vertragsende 2031.**\n\nAbsatz 2 datiert die Konzession auf 2011, Absatz 7 die Laufzeit auf 20 Jahre und das Ende auf 2031. 2011 plus 20 ist 2031. Die Aussage prüft, ob die drei Angaben zusammenpassen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Die Überschreitung der Höchstverlustrate begann 2024.**\n\nDie Überschreitung läuft seit 2019. 2024 ist das Jahr, bis zu dem die Strafe nicht eingezogen wurde, nicht der Beginn der Überschreitung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Der Brunnauer Gemeinderat kann die Investition jedes Jahr streichen.**\n\nStatt einer Vertragsstrafe kann der Gemeinderat die Investition jedes Jahr neu beschließen oder streichen. Das Streichen ist ausdrücklich genannt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Das Investitionsjahr 2023 mit 4,2 Millionen Euro entscheidet bereits, dass die Rohre rechtzeitig erneuert werden.**\n\nDer letzte Satz sagt, ein einzelnes Jahr mit 4,2 Millionen Euro entscheide diese Frage nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Die Ingenieurin hält 38 Prozent Rohralter und 38 Prozent Wasserverlust für dieselbe Aussage.**\n\nSie warnt vor genau dieser Gleichsetzung. 38 Prozent alte Rohre bedeuten nicht 38 Prozent Wasserverlust.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-08",
-        "case_id": "WISO-M3.DE.08",
-        "title": "Preis null und 96 von 336",
-        "context": "Die Aussagen verbinden die Preisfunktion mit einer Rechnung aus der Beispielrechnung.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Ein Kubikmeterpreis von null macht die Knappheit des Brunnens sichtbar.",
-          "Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen belasten.",
-          "Die Grundgebühr soll das Netz tragen, der Kubikmeterpreis soll sparen helfen.",
-          "Wasser ist im Text entweder nur ein knappes Gut oder nur ein Grundbedürfnis.",
-          "Die Jahresgrundgebühr von 96 Euro ist mehr als ein Viertel der Brunnauer Jahresrechnung von 336 Euro."
-        ],
-        "answer_key": [
-          false,
-          true,
-          true,
-          false,
-          true
-        ],
-        "tactical_explanations": [
-          "**A) Ein Kubikmeterpreis von null macht die Knappheit des Brunnens sichtbar.**\n\nAbsatz 4 sagt, ein Preis von null verdecke die Knappheit. Sichtbar machen wäre die umgekehrte Wirkung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen belasten.**\n\nDerselbe Absatz nennt diese Verteilungswirkung auch für Haushalte, die kaum mehr als den Grundbedarf entnehmen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Die Grundgebühr soll das Netz tragen, der Kubikmeterpreis soll sparen helfen.**\n\nDie Gemeinde teilt die Aufgaben in diesem Satz. Die Aussage gibt beide Hälften wieder und vertauscht sie nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Wasser ist im Text entweder nur ein knappes Gut oder nur ein Grundbedürfnis.**\n\nDer Absatz beginnt damit, dass Wasser beides zugleich ist. Ein Entweder-oder widerspricht dem ersten Satz.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Die Jahresgrundgebühr von 96 Euro ist mehr als ein Viertel der Brunnauer Jahresrechnung von 336 Euro.**\n\n96 geteilt durch 336 ist etwa 0,286 und damit mehr als 0,25. Ein Viertel von 336 wäre 84. Die Grundgebühr liegt darüber. Die Rechnung steht so nicht im Text, sie folgt aus 96 und 336.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-09",
-        "case_id": "WISO-M3.DE.09",
-        "title": "Absatzarbeit und eine falsche Mehrheit",
-        "context": "Die Aussagen prüfen, welcher Absatz welche Zahlen trägt, und eine Mehrheit, die aus zwei Prozent nicht folgt.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Absatz 2 liefert die Rechnungen 336 Euro und 310 Euro.",
-          "Absatz 6 ist eine chemische Abhandlung über die zwei Brunnen.",
-          "64, 36 und 49 Prozent stehen in Absatz 1, nicht in Absatz 4.",
-          "64 Prozent der Abstimmenden mal 49 Prozent Beteiligung ergeben eine Mehrheit aller Stimmberechtigten.",
-          "Absatz 3 nennt 12 und 21 Prozent Verlust und getrennt davon 38 Prozent alte Rohre."
+          "Ein Zulieferer im Drittstaat wird nicht selbst Adressat, nur weil er an ein erfasstes Unternehmen liefert, und er kann trotzdem Anlass für Pflichten dieses Unternehmens sein.",
+          "Die Ökonomin liest den Vorfall als Beweis für zu wenige Prüfkräfte und sagt, eine mittelbare Pflicht entstehe nie.",
+          "260 und 170 dürfen nicht addiert werden. 420 ist nicht die Zahl der Unternehmen, die eine Pflicht verletzt haben, weil ein Hinweis kein festgestellter Verstoß ist.",
+          "Die Übergangsregel schiebt jedem Unternehmen den Start um ein Jahr, das einen neuen Lieferanten aufnimmt, und die Kammerforderung wird dabei übernommen.",
+          "Unmittelbare Vertragspflicht und mittelbare Pflicht sind im Text nicht dasselbe, und die Verschiebung bei einer späteren Schwelle ist nicht die Folge jedes neuen Lieferanten."
         ],
         "answer_key": [
           true,
@@ -575,426 +639,362 @@
           true
         ],
         "tactical_explanations": [
-          "**A) Absatz 2 liefert die Rechnungen 336 Euro und 310 Euro.**\n\nGrundgebühr, Kubikmeterpreise und die beiden Jahresrechnungen für 100 Kubikmeter stehen in Absatz 2. Ohne ihn fehlen 336 und 310.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Absatz 6 ist eine chemische Abhandlung über die zwei Brunnen.**\n\nDie zwei Brunnen stehen kurz in Absatz 1. Absatz 6 trennt Eigentum und Regeln. Eine chemische Abhandlung ist nicht sein Gegenstand.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) 64, 36 und 49 Prozent stehen in Absatz 1, nicht in Absatz 4.**\n\nDie Abstimmung mit diesen drei Zahlen steht im ersten Absatz. Absatz 4 behandelt Preis null, volle Kosten und Grundbedarf.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) 64 Prozent der Abstimmenden mal 49 Prozent Beteiligung ergeben eine Mehrheit aller Stimmberechtigten.**\n\n64 Prozent von 49 Prozent sind etwa 31 Prozent aller Stimmberechtigten. 31 Prozent sind keine Mehrheit. Die Aussage rechnet mit zwei echten Zahlen und überzieht das Produkt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Absatz 3 nennt 12 und 21 Prozent Verlust und getrennt davon 38 Prozent alte Rohre.**\n\nAbsatz 3 hält die drei Prozent auseinander: 12 Brunnau, 21 Kleinau, 38 alte Rohre. Die Aussage lässt sie getrennt und setzt sie nicht ineinander um.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Ein Zulieferer im Drittstaat wird nicht selbst Adressat, nur weil er an ein erfasstes Unternehmen liefert, und er kann trotzdem Anlass für Pflichten dieses Unternehmens sein.**\n\nAbsatz 1 sagt beides. Nicht Adressat zu sein und trotzdem Anlass zu geben ist der Kern des Absatzes. Die Aussage lässt die beiden Rollen nicht zusammenfallen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die Ökonomin liest den Vorfall als Beweis für zu wenige Prüfkräfte und sagt, eine mittelbare Pflicht entstehe nie.**\n\nDie Kammer liest den Mangel an Prüfkräften. Die Ökonomin liest eine fehlende Zuordnung über den Zwischenhändler und sagt ausdrücklich nicht, eine mittelbare Pflicht entstehe nie. Beide Hälften gehören der anderen Person oder werden verneint.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 260 und 170 dürfen nicht addiert werden. 420 ist nicht die Zahl der Unternehmen, die eine Pflicht verletzt haben, weil ein Hinweis kein festgestellter Verstoß ist.**\n\nAbsatz 3 verbietet die Addition und verbietet, 420 als Zahl der Verletzungen zu lesen. Der letzte Satz des Absatzes trägt die Begründung. Die Aussage braucht das Verbot und die Begründung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Die Übergangsregel schiebt jedem Unternehmen den Start um ein Jahr, das einen neuen Lieferanten aufnimmt, und die Kammerforderung wird dabei übernommen.**\n\nAbsatz 4 schiebt nur denen, die erst durch eine spätere Schwelle erfasst werden. Wer schon in der ersten Schwelle liegt und nur einen neuen Lieferanten aufnimmt, erhält die Verschiebung nicht. Die Kammerforderung wird nicht übernommen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Unmittelbare Vertragspflicht und mittelbare Pflicht sind im Text nicht dasselbe, und die Verschiebung bei einer späteren Schwelle ist nicht die Folge jedes neuen Lieferanten.**\n\nAbsatz 2 trennt die geprüfte unmittelbare Pflicht von der nicht geprüften mittelbaren. Absatz 4 verweigert die Verschiebung für den bloßen neuen Lieferanten eines schon erfassten Unternehmens. Zwei Abgrenzungen, keine ersetzt die andere.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "5/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-10",
-        "case_id": "WISO-M3.DE.10",
-        "title": "Was offen bleibt",
-        "context": "Die Aussagen prüfen den Schluss gegen die Vertragszahlen.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Die Abstimmung lehnte einen Verkauf ab und beschloss keine ewige Organisationsform.",
-          "Der Text entscheidet, dass Brunnau 2031 den Vertrag annimmt, den Kleinau neu verhandelt.",
-          "Kleinau darf eine Vertragsstrafe verlangen und hat das bis 2024 nicht getan.",
-          "21 Prozent Verlustrate ist kleiner als die vertragliche Grenze von 15 Prozent.",
-          "Ein einzelnes Investitionsjahr mit 4,2 Millionen Euro entscheidet nicht, ob die Rohre rechtzeitig erneuert werden."
-        ],
-        "answer_key": [
-          true,
-          false,
-          true,
-          false,
-          true
-        ],
-        "tactical_explanations": [
-          "**A) Die Abstimmung lehnte einen Verkauf ab und beschloss keine ewige Organisationsform.**\n\nAbsatz 9 trennt diese beiden Ergebnisse. Die Aussage behält beide und macht aus der Ablehnung keinen Ewigkeitsbeschluss.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Der Text entscheidet, dass Brunnau 2031 den Vertrag annimmt, den Kleinau neu verhandelt.**\n\nDer Absatz lässt offen, ob die Meinung von 2018 bei einer späteren Vertragsprüfung noch tragen würde. Eine Entscheidung für die Annahme steht nicht da.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Kleinau darf eine Vertragsstrafe verlangen und hat das bis 2024 nicht getan.**\n\nBeides steht in Absatz 7: das Recht auf die Strafe und das Unterlassen bis 2024. Die Aussage streicht keine der beiden Hälften.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) 21 Prozent Verlustrate ist kleiner als die vertragliche Grenze von 15 Prozent.**\n\n21 liegt über 15. Kleiner wäre die Umkehrung der Überschreitung, von der der Text seit 2019 spricht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Ein einzelnes Investitionsjahr mit 4,2 Millionen Euro entscheidet nicht, ob die Rohre rechtzeitig erneuert werden.**\n\nDas ist der letzte Satz. Er verweigert den Schluss von einem Jahr auf die rechtzeitige Erneuerung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
-        ],
-        "difficulty_level": "4/5",
-        "subsection": "t.main"
-      },
-      {
-        "id": "wiso-m3-de-11",
-        "case_id": "WISO-M3.DE.11",
-        "title": "Kurztext Lehrstellen",
-        "context": "Die Aussagen beziehen sich nur auf den kurzen Text zum Bezirk Ost. Zwei verlangen eine Rechnung mit 420, 1.800, 170 und 260.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "420 von 1.800 angebotenen Lehrstellen sind mehr als ein Fünftel.",
-          "170 von 260 noch suchenden Jugendlichen sind mehr als die Hälfte und zugleich mehr als zwei Drittel.",
-          "Die Ökonomin sieht in den Zahlen den Beweis, dass zu wenige Jugendliche vorhanden sind.",
-          "190 unbesetzte Stellen im ländlichen Raum sind mehr als die 170 Jugendlichen, die nur eine Stelle in der Stadt wollten.",
-          "Kammer und Ökonomin ziehen aus den Zahlen denselben Schluss."
-        ],
-        "answer_key": [
-          true,
-          false,
-          false,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) 420 von 1.800 angebotenen Lehrstellen sind mehr als ein Fünftel.**\n\n420 geteilt durch 1.800 ist etwa 0,233. Ein Fünftel ist 0,2. Der Anteil liegt darüber. Der Text nennt Zähler und Nenner, nicht den Bruch.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) 170 von 260 noch suchenden Jugendlichen sind mehr als die Hälfte und zugleich mehr als zwei Drittel.**\n\n170 geteilt durch 260 ist etwa 0,654. Das ist mehr als die Hälfte, aber weniger als zwei Drittel, denn zwei Drittel wären etwa 0,667. Die zweite Hälfte der Aussage kippt die erste.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Die Ökonomin sieht in den Zahlen den Beweis, dass zu wenige Jugendliche vorhanden sind.**\n\nSie nennt die Lage ausdrücklich keinen Beweis dafür, dass zu wenige Jugendliche vorhanden wären. Die Aussage schreibt ihr den Schluss zu, den sie ablehnt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) 190 unbesetzte Stellen im ländlichen Raum sind mehr als die 170 Jugendlichen, die nur eine Stelle in der Stadt wollten.**\n\n190 gegen 170. Die größere Zahl ist 190. Die Aussage vergleicht nur diese beiden Gruppen und behauptet nicht, sie seien deshalb vermittelbar.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Kammer und Ökonomin ziehen aus den Zahlen denselben Schluss.**\n\nDie Kammer spricht von Fachkräftemangel, die Ökonomin von einem Passungsproblem. Der Kurztext stellt die Schlüsse gegeneinander.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "5/5",
-        "subsection": "t.apprentice",
-        "passage_override": "Im Handwerkskammerbezirk Ost blieben 2024 von 1.800 angebotenen Lehrstellen 420 unbesetzt. Gleichzeitig suchten 260 Jugendliche am Ende des Vermittlungsjahres noch eine Stelle. Die Kammer spricht von einem Fachkräftemangel. Eine Arbeitsmarktökonomin widerspricht der Gleichsetzung: Unbesetzte Stellen und suchende Jugendliche können zugleich bestehen, wenn Beruf, Ort oder Betrieb nicht zusammenpassen. Von den unbesetzten Stellen lagen 190 im ländlichen Raum, während 170 der noch suchenden Jugendlichen nur eine Stelle in der Stadt angeben wollten. Die Ökonomin nennt das ein Passungsproblem und keinen Beweis dafür, dass zu wenige Jugendliche vorhanden wären.",
-        "passage_title_override": "Lehrstellen und Passung im Bezirk Ost"
+        "passage_override": "(1) Das Sorgfaltspflichtengesetz trifft in der hier geschilderten Fassung Unternehmen ab einer bestimmten Größe in Deutschland, nicht jeden Lieferanten im Ausland. Ein Zulieferer in einem Drittstaat wird nicht selbst Adressat, nur weil er an ein erfasstes Unternehmen liefert. Er kann trotzdem der Anlass für Pflichten des erfassten Unternehmens sein.\n\n(2) Die Kammer liest einen gemeldeten Vorfall in einer Spinnerei als Beleg, dass das erfasste Unternehmen zu wenig eigene Prüfkräfte habe. Die Ökonomin im Text liest denselben Vorfall als fehlende Zuordnung: der Vertrag lief über einen Zwischenhändler, und die unmittelbare Vertragspflicht war geprüft, die mittelbare nicht. Sie sagt nicht, eine mittelbare Pflicht entstehe nie. Sie sagt, der Vorfall beweise nicht schon die Zahl der Prüfkräfte.\n\n(3) Von 1.800 erfassten Unternehmen hatten 420 im Berichtsjahr einen Hinweis. 260 dieser Hinweise betrafen unmittelbare Vertragspartner, 170 davon zugleich nur Standorte im Ausland, die das erfasste Unternehmen nicht selbst betreibt. Der Text verbietet, 260 und 170 zu addieren, und er verbietet, 420 als die Zahl der Unternehmen zu lesen, die eine Pflicht verletzt haben. Ein Hinweis ist nicht der festgestellte Verstoß.\n\n(4) Eine Übergangsregel schiebt für Unternehmen, die erst durch eine spätere Schwelle erfasst werden, den Start um ein Jahr. Sie schiebt ihn nicht für Unternehmen, die schon in der ersten Schwelle liegen und nur einen neuen Lieferanten aufnehmen. Die Kammer fordert, jeder neue Lieferant löse die Verschiebung aus. Der Text übernimmt diese Forderung nicht.",
+        "passage_title_override": "Hinweis, Zwischenhändler, spätere Schwelle"
       }
     ]
   },
   "math": [
     {
-      "case_id": "WISO M3.MATH.1",
-      "id": "WISO M3.MATH.1",
-      "title": "Was aus den Prämissen folgt",
+      "case_id": "WISO-M3-M01",
+      "id": "WISO-M3-M01",
+      "title": "Genau zwei wahre Sätze",
       "chapter": 1,
-      "subsection": "1.3",
+      "subsection": "1.4",
       "difficulty_level": "5/5",
-      "context": "Alle Mitglieder des Klubs K besuchen den Kurs M. Einige Mitglieder von K besuchen den Kurs S nicht. Niemand, der S besucht, besucht den Kurs T.\n\nEntscheide, ob jede Aussage richtig oder falsch ist. „Folgt“ heißt: die Aussage muss wahr sein, wenn die drei Prämissen wahr sind.",
+      "context": "Genau eine der Personen $A$, $B$, $C$, $D$ ist schuldig. Genau zwei der vier Sätze sind wahr.\n\n$A$: „$B$ war es.“\n\n$B$: „$A$ war es nicht.“\n\n$C$: „Ich war es.“\n\n$D$: „Weder ich noch $C$ war es.“\n\nBewerten Sie jede Aussage.",
       "statements": [
-        "Es folgt, dass einige Personen in M den Kurs S nicht besuchen.",
-        "Es folgt, dass kein Mitglied von K den Kurs T besucht.",
-        "Es folgt, dass K und S keine gemeinsamen Personen haben.",
-        "Es folgt, dass jede Person in T außerhalb von K liegt.",
-        "Es folgt, dass es mindestens eine Person in M gibt, die S nicht besucht."
+        "Genau $C$ ist schuldig, und dabei sind die Sätze von $B$ und $C$ wahr.",
+        "Auch $A$ wäre mit genau zwei wahren Sätzen vereinbar, weil $A$ dann selbst nichts Wahres sagt.",
+        "Wäre $D$ schuldig, wäre genau ein Satz wahr, und dieser Satz wäre nicht der von $C$.",
+        "In der Lösung sagen $C$ und $A$ die Wahrheit.",
+        "Die Lösung ist eindeutig, und der Schuldige sagt von sich selbst, er sei schuldig."
       ],
       "answer_key": [
         true,
         false,
-        false,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie Personen aus K, die S nicht besuchen, liegen nach der ersten Prämisse in M. Sie sind der Beleg dafür, dass M und das Außen von S sich schneiden. Die Existenz kommt aus „einige“, nicht aus einer zusätzlichen Annahme.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nVerboten ist nur, zugleich in S und in T zu sein. Mitglieder von K, die nicht in S sind, könnten in T liegen. Die Prämissen sagen darüber nichts. Ein allgemeines Verbot für ganz K folgt nicht.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\n„Einige sind nicht in S“ lässt zu, dass andere Mitglieder von K sehr wohl in S sind. Disjunktheit wäre die stärkere Aussage und steht nicht da.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nDas wäre die Aussage, T und K seien disjunkt. Sie scheitert an derselben Lücke: Personen in K und außerhalb von S dürfen in T sein. Die dritte Prämisse bindet nur diejenigen, die S besuchen.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDas ist dieselbe Existenz wie in der ersten Aussage, nur mit dem Subjekt M. Die Personen aus K, die S nicht besuchen, liegen in M. Mindestens eine solche Person gibt es, weil „einige“ nicht leer ist.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nBei schuldiger Person $C$ sagt $A$ etwas Falsches, $B$ sagt wahr, dass $A$ es nicht war, $C$ sagt wahr, $D$ sagt falsch, weil $C$ es war. Das sind genau zwei wahre Sätze. Die anderen drei Schuldhypothesen erzeugen eine andere Anzahl.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nIst $A$ schuldig, ist $A$s Satz falsch, $B$s Satz falsch, $C$s Satz falsch und $D$s Satz wahr. Es bleibt eine Wahrheit, nicht zwei. Dass $A$ nichts Wahres sagt, rettet die Zählung nicht.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nIst $D$ schuldig, sagt $D$ etwas Falsches, $C$ sagt etwas Falsches, $A$ sagt etwas Falsches, nur $B$ sagt Wahres. Genau eine Wahrheit, und sie liegt bei $B$, nicht bei $C$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$C$ sagt die Wahrheit. $A$ sagt, $B$ sei schuldig, und das ist falsch. Die Lösung trägt nicht zwei wahre Sätze von $A$ und $C$, sondern von $B$ und $C$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nNur die Schuld von $C$ erzeugt genau zwei Wahrheiten. $C$s Satz ist „Ich war es.“ In den Fällen mit genau einer Wahrheit, $A$ oder $D$, sagt der Schuldige das nicht von sich. Die Eindeutigkeit hängt an der Zahl zwei, nicht an der Zahl eins.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Aus „alle K liegen in M“ und „einige aus K liegen außerhalb von S“ folgt, dass M und das Außen von S sich schneiden. Nicht folgt, dass K ganz außerhalb von S oder außerhalb von T liegt. T ist nur für diejenigen verboten, die S besuchen.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Ist $C$ schuldig, dann ist $A$ falsch, $B$ wahr, $C$ wahr und $D$ falsch: genau zwei Wahrheiten. In den drei anderen Fällen ist die Zahl der wahren Sätze $1$, $3$ oder $1$, nie $2$. Die Lösung ist eindeutig, und der Schuldige behauptet von sich selbst, schuldig zu sein.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.2",
-      "id": "WISO M3.MATH.2",
-      "title": "Zwei Gleichungen für zwei Exponenten",
+      "case_id": "WISO-M3-M02",
+      "id": "WISO-M3-M02",
+      "title": "Der Bruch wird a, die Wurzel nicht",
       "chapter": 2,
       "subsection": "2.3",
       "difficulty_level": "5/5",
-      "context": "Es gilt $2^{a}\\cdot 4^{b}=2^{10}$ und $a+b=6$, mit reellen $a$ und $b$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Für $a\\neq 0$ und $b\\neq 0$ sei\n\\[\nE=\\frac{a^{2}b^{-1}}{a^{-1}b}\\cdot\\left(\\frac{b}{a}\\right)^{2}.\n\\]\nAußerdem wird $(a^{2})^{1/2}$ betrachtet. Bewerten Sie jede Aussage.",
       "statements": [
-        "$a=2$.",
-        "$b=4$.",
-        "$4^{b}=2^{b}$.",
-        "Es gibt eine zweite, davon verschiedene Lösung, weil dieselbe Potenz von 2 auf mehrere Arten geschrieben werden kann.",
-        "$a+2b=10$."
+        "$E=a$ für alle zulässigen $a$ und $b$, auch wenn $a$ negativ ist. $(a^{2})^{1/2}$ ist für dieselben $a$ ebenfalls $a$.",
+        "Bei $a=-3$ und $b=2$ ist $E=-3$, und $(a^{2})^{1/2}=3$.",
+        "Weil beide Ausdrücke aus Potenzen bestehen, stimmen sie bei $a=-3$ überein.",
+        "Für $a>0$ gilt $(a^{2})^{1/2}=a$ und $E=a$, die beiden Ausdrücke stimmen dort überein. Für $a<0$ stimmen sie nicht.",
+        "$E=1$ für alle zulässigen $a$ und $b$, weil sich Zähler und Nenner aufheben."
       ],
       "answer_key": [
-        true,
+        false,
         true,
         false,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$4^{b}=(2^{2})^{b}=2^{2b}$. Die erste Gleichung wird $2^{a+2b}=2^{10}$, also $a+2b=10$. Zusammen mit $a+b=6$ folgt durch Subtraktion $b=4$ und $a=2$.\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\nAus $a+2b=10$ und $a+b=6$ entsteht $b=4$. Probe: $2^{2}\\cdot 4^{4}=2^{2}\\cdot 2^{8}=2^{10}$.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\n$4^{b}=2^{2b}$, nicht $2^{b}$. Für $b=4$ steht links $256$ und rechts $16$.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nDie beiden Gleichungen sind linear und der Koeffizient von $b$ in der Differenz ist $1\\neq 0$. Die Lösung $(a,b)=(2,4)$ ist die einzige.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDas ist die umgeschriebene Potenzgleichung, bevor $a+b=6$ eingesetzt wird. Sie gilt unabhängig von der zweiten Zeile, sobald die erste gilt.\n\nDie Aussage ist richtig."
+        "**A.** → Falsch\n\nDie erste Hälfte stimmt: die Exponenten von $b$ heben sich, es bleibt $a^{3-2}=a$, ohne eine Wurzel zu ziehen. Die zweite Hälfte stimmt nur für $a\\ge 0$. Für $a<0$ ist $(a^{2})^{1/2}$ positiv. Die Konjunktion fällt.\n\nDie Aussage ist falsch.",
+        "**B.** → Richtig\n\n$E$ hängt von $b$ am Ende nicht ab und ist gleich $a$, also $-3$. $(9)^{1/2}=3$, nicht $-3$. Die beiden Ausdrücke stehen an dieser Stelle auf verschiedenen Seiten der Null.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\n$-3$ und $3$ stimmen nicht überein. Potenz zu sein erzwingt nicht dieselbe Vereinfachung. $E$ kürzt Exponenten, $(a^{2})^{1/2}$ führt einen Betrag ein.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nFür positives $a$ ist der Betrag das $a$ selbst, und $E$ ist ebenfalls $a$. Für negatives $a$ bleibt $E$ negativ und die Wurzel positiv. Die Fallunterscheidung ist der ganze Inhalt, eine der beiden Seiten allein wäre zu wenig.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nEs hebt sich nicht alles auf. $b$ hebt sich auf, von $a$ bleibt der erste Grad. $E=1$ wäre nur für $a=1$ richtig und ist nicht die Identität.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "$4^{b}=2^{2b}$ macht aus der ersten Zeile $a+2b=10$. Mit $a+b=6$ folgt eindeutig $a=2$, $b=4$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Der erste Bruch ist $a^{3}b^{-2}$. Mal $b^{2}/a^{2}$ bleibt $a$. Das gilt auch für negatives $a$. Dagegen ist $(a^{2})^{1/2}=|a|$, also nur für $a>0$ gleich $a$. Bei $a=-3$ und $b=2$ ist $E=-3$ und $(a^{2})^{1/2}=3$.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.3",
-      "id": "WISO M3.MATH.3",
-      "title": "Kupon unter der Rendite",
+      "case_id": "WISO-M3-M03",
+      "id": "WISO-M3-M03",
+      "title": "Zwei interne Zinsen, das Vorzeichen dazwischen",
       "chapter": 3,
-      "subsection": "3.1",
+      "subsection": "3.7",
       "difficulty_level": "5/5",
-      "context": "Eine Anleihe mit Nennwert $1\\,000$ Euro, jährlichem Kupon $4\\%$ und Restlaufzeit $2$ Jahre wird mit der Rendite $7\\%$ bewertet. Der Kurs ist der Barwert von $40$ Euro in einem Jahr und $1\\,040$ Euro in zwei Jahren.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Ein Projekt zahlt heute $-100$, nach einem Jahr $+230$ und nach zwei Jahren $-132$. Bewerten Sie jede Aussage. Kapitalwerte sind auf heute bezogen.",
       "statements": [
-        "Der Kurs liegt streng unter $960$ Euro.",
-        "Der Kurs liegt über dem Nennwert, weil der Kupon positiv ist.",
-        "Liegt die Rendite bei $4\\%$, ist der Kurs genau $1\\,000$ Euro.",
-        "Der abgezinste Betrag aus Kupon und Rückzahlung im zweiten Jahr liegt streng unter $900$ Euro.",
-        "Eine höhere Rendite senkt den Kurs dieser fest verzinsten Anleihe."
+        "Es gibt zwei positive interne Zinsen, $10\\%$ und $20\\%$. Bei $15\\%$ ist der Kapitalwert positiv, bei $5\\%$ negativ.",
+        "Bei einem Kalkulationszins von $0\\%$ ist der Kapitalwert positiv, weil undiskontierte Einzahlungen die Auszahlung heute übersteigen.",
+        "Zwischen den beiden internen Zinsen ist der Kapitalwert positiv. Außerhalb dieses Intervalls, also auch bei $25\\%$, ist er negativ.",
+        "Zwei Vorzeichenwechsel der Zahlungsreihe erzeugen zwei interne Zinsen, und zwischen ihnen ist der Kapitalwert negativ.",
+        "Der Mittelwert $15\\%$ der beiden internen Zinsen ist selbst ein interner Zins, weil der Kapitalwert dort null ist."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$1{,}07^{2}=1{,}1449$. Der Kurs ist\n\n$$\n\\frac{40}{1{,}07}+\\frac{1040}{1{,}1449}\\approx 37{,}38+908{,}38=945{,}76.\n$$\n\nDas liegt unter $960$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDer Kupon $4\\%$ liegt unter der Rendite $7\\%$. Der Kurs etwa $945{,}76$ liegt unter $1\\,000$. Ein positiver Kupon allein hebt die Anleihe nicht über den Nennwert.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nBei einer Rendite gleich dem Kupon sind beide Zahlungen mit $4\\%$ abzuzinsen: $40/1{,}04+1040/1{,}04^{2}$. Das ist genau der Nennwert $1\\,000$, weil $40\\cdot 1{,}04+1000=1040$ und damit der zweite Zähler den aufgezinsten ersten Kupon ersetzt.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\n$1040/1{,}1449\\approx 908{,}38$. Das liegt über $900$, nicht darunter.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nBeide Summanden haben positive Zähler und Nenner, die mit der Rendite steigen. Ein höherer Zins senkt daher beide Barwerte und den Kurs. Das ist hier keine Aussage über eine andere Anleihe.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nNach Multiplikation mit $(1+r)^{2}$ entsteht $100r^{2}-30r+2=0$, Diskriminante $100$, Zinsen $\\dfrac{30\\pm 10}{200}$. Bei $0{,}15$ liegt der Kapitalwert knapp über null, bei $0{,}05$ darunter. Ein Zins unter beiden Nullstellen ist hier nicht schon ein Vorteil.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$-100+230-132=-2$. Die mittlere Einzahlung ist groß, die letzte Auszahlung frisst den Überschuss und noch $2$. Undiskontiert ist das Projekt bereits negativ. Die Aussage sieht nur die $230$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDer Kapitalwert als Funktion des Zinses wechselt an jeder einfachen positiven Nullstelle das Vorzeichen. Innen, etwa bei $15\\%$, ist er positiv. Bei $25\\%$ liegt man über $20\\%$, das Vorzeichen ist wieder das des undiskontierten Falls, negativ.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie Zahlungsreihe wechselt zweimal das Vorzeichen, und es gibt tatsächlich zwei positive interne Zinsen. Zwischen ihnen ist der Kapitalwert aber positiv, nicht negativ. Die zweite Hälfte dreht das Innere des Intervalls um.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$15\\%$ liegt genau in der Mitte von $10\\%$ und $20\\%$ und ist keine Wurzel der quadratischen Gleichung. Der Kapitalwert dort ist positiv, nicht null. Der Mittelwert zweier Wurzeln ist nur bei einer besonderen Gleichung wieder eine Wurzel.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Kurs etwa $945{,}76$ Euro, also unter $960$ und unter pari. Der zweite Baustein allein ist etwa $908{,}38$. Bei Rendite gleich Kupon steht der Kurs auf $1\\,000$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Die Gleichung für den internen Zins führt auf $100r^{2}-30r+2=0$, also $r=0{,}1$ und $r=0{,}2$. Der Kapitalwert ist bei $0\\%$ gleich $-2$, bei $5\\%$ negativ, zwischen den beiden Zinsen positiv und außerhalb wieder negativ. $15\\%$ ist der Mittelwert der beiden Zinsen und keine Nullstelle.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.4",
-      "id": "WISO M3.MATH.4",
-      "title": "Logarithmus, eine Wurzel fällt weg",
+      "case_id": "WISO-M3-M04",
+      "id": "WISO-M3-M04",
+      "title": "Eine algebraische Wurzel fällt heraus",
       "chapter": 4,
       "subsection": "4.4",
       "difficulty_level": "5/5",
-      "context": "Löse $\\log_{2}(x)+\\log_{2}(x-2)=3$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Gesucht ist die Lösung von\n\\[\n\\log_{3}(x-2)+\\log_{3}(x-4)=1.\n\\]\nBewerten Sie jede Aussage.",
       "statements": [
-        "$x=4$ ist eine Lösung.",
-        "$x=-2$ ist eine Lösung.",
-        "Die Gleichung hat zwei zulässige reelle Lösungen.",
-        "Auch $x=8$ erfüllt die Gleichung.",
-        "Der Definitionsbereich verlangt $x>2$."
+        "Die algebraische Gleichung hat die Lösungen $1$ und $5$, und beide erfüllen die Logarithmusgleichung.",
+        "Im Definitionsbereich gibt es genau eine Lösung, und die Summe der beiden algebraischen Lösungen ist nicht diese Lösung.",
+        "$x=4$ ist eine Lösung, weil ein Argument dann $0$ ist und der Logarithmus von $0$ als $0$ gezählt werden darf.",
+        "Für $x=5$ ist die linke Seite $1$, und $x=5$ ist größer als beide Stellen $2$ und $4$, die in den Argumenten stehen.",
+        "Weil das Produkt der algebraischen Lösungen $5$ ist, ist $x=5$ eine doppelte Lösung der Logarithmusgleichung."
       ],
       "answer_key": [
+        false,
         true,
         false,
-        false,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$\\log_{2}(4)+\\log_{2}(2)=2+1=3$. Außerdem ist $4>2$, die Stelle liegt im Definitionsbereich.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDie quadratische Gleichung $x(x-2)=8$ hat die Wurzel $x=-2$. Dort ist $\\log_{2}(x)$ nicht definiert. Die Wurzel fällt bei der Probe weg.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nNach dem Quadrieren, hier dem Umkehren des Logarithmus, bleiben $x=4$ und $x=-2$. Nur $x=4$ liegt im Definitionsbereich. Eine zweite zulässige Lösung gibt es nicht.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\n$\\log_{2}(8)+\\log_{2}(6)=3+\\log_{2}(6)$. Weil $\\log_{2}(6)>0$ ist, liegt die Summe über $3$.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nBeide Logarithmen verlangen positive Argumente: $x>0$ und $x-2>0$. Die schärfere Bedingung ist $x>2$.\n\nDie Aussage ist richtig."
+        "**A.** → Falsch\n\n$(x-1)(x-5)=0$ ist die quadratische Gleichung. $x=1$ macht beide Argumente negativ und liegt nicht im Definitionsbereich $x>4$. Nur $x=5$ bleibt. Die algebraische Summe der Wurzeln ist kein Beweis, dass beide logarithmiert werden dürfen.\n\nDie Aussage ist falsch.",
+        "**B.** → Richtig\n\nNur $x=5$ ist zulässig. Die Summe $1+5=6$ ist eine andere Zahl und erfüllt die Logarithmusgleichung nicht: die Argumente $4$ und $2$ hätten das Produkt $8$, nicht $3$. Die Summe der Kandidaten ist hier eine Falle, kein neuer Kandidat.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\n$\\log_{3}0$ ist nicht definiert und nicht $0$. $x=4$ ist der Rand, der ausgeschlossen bleibt. $\\log_{3}1=0$ wäre das Argument $1$, nicht das Argument $0$.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$\\log_{3}(3)+\\log_{3}(1)=1+0=1$. $5>4>2$, beide Argumente sind positiv. Die Ungleichung gegen $2$ allein würde $x=1$ nicht sicher ausschließen, wenn man nur $x-2$ ansieht; hier sind beide Schranken erfüllt.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDas Produkt $1\\cdot 5=5$ erklärt nicht die Vielfachheit. $x=1$ fällt heraus, $x=5$ bleibt einfach. Eine doppelte Lösung läge vor, wenn dieselbe zulässige Zahl zweimal entstünde. Das passiert nicht.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "$x(x-2)=8$ führt auf $x=4$ und $x=-2$. Nur $x=4$ ist zulässig und erfüllt die Probe. Der Definitionsbereich ist $x>2$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Der Definitionsbereich ist $x>4$. Die Summe der Logarithmen ist der Logarithmus des Produkts, also $(x-2)(x-4)=3$. Daraus folgt $x^{2}-6x+5=0$, mit den algebraischen Lösungen $1$ und $5$. Nur $x=5$ liegt im Definitionsbereich. Dort ist $\\log_{3}3+\\log_{3}1=1$.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.5",
-      "id": "WISO M3.MATH.5",
-      "title": "Die dritte Gleichung ist die Summe",
+      "case_id": "WISO-M3-M05",
+      "id": "WISO-M3-M05",
+      "title": "Kosten auf einer Strecke, nicht in der Mitte",
       "chapter": 5,
-      "subsection": "5",
+      "subsection": "5.5",
       "difficulty_level": "5/5",
-      "context": "Das System lautet\n\n$$\nx+y+z=6,\\qquad x+2y+z=8,\\qquad 2x+3y+2z=14.\n$$\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Es gelten $x+y+z=10$ und $2x+y=8$ mit $x\\ge 0$, $y\\ge 0$, $z\\ge 0$. Bewertet wird $K=3x+y+4z$. Bewerten Sie jede Aussage.",
       "statements": [
-        "$y$ ist eindeutig $2$.",
-        "Es gibt genau eine Lösung.",
-        "$x=1$, $y=2$, $z=3$ ist eine Lösung.",
-        "$z=10$ und $x=-6$ können zusammen mit $y=2$ eine Lösung sein.",
-        "Die dritte Gleichung widerspricht den ersten beiden."
+        "Zulässig sind genau die Punkte mit $0\\le x\\le 4$, $y=8-2x$ und $z=x+2$. Das Minimum von $K$ liegt bei $x=0$ und das Maximum bei $x=4$.",
+        "Die Mitte $x=2$ ist zulässig und die kostengünstigste Stelle, weil sie von beiden Enden gleich weit entfernt ist.",
+        "Zwei Gleichungen in drei Unbekannten lassen hier genau einen zulässigen Punkt, weil sonst $K$ nicht eindeutig wäre.",
+        "$K$ kann $16$ und $36$ annehmen, aber nicht $15$ und nicht $37$. Der Punkt $(1,6,3)$ ist zulässig und hat die Kosten $21$.",
+        "Weil zwei Gleichungen drei Unbekannte offen lassen, ist $z$ frei wählbar und $K$ nach unten unbeschränkt."
       ],
       "answer_key": [
         true,
         false,
-        true,
+        false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie Differenz der ersten beiden Gleichungen ist $y=2$. Dieser Wert hängt nicht davon ab, wie $x$ und $z$ die Restsumme teilen.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nMit $y=2$ bleibt $x+z=4$. Jede solche Wahl erfüllt auch die dritte Gleichung, weil sie die Summe der ersten beiden ist. Es gibt unendlich viele Lösungen.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$1+2+3=6$, $1+4+3=8$ und $2+6+6=14$. Alle drei Gleichungen stimmen.\n\nDie Aussage ist richtig.",
-        "**D.** → Richtig\n\n$-6+10=4$ und $y=2$. Die ersten beiden Gleichungen werden $-6+2+10=6$ und $-6+4+10=8$. Die dritte ist ihre Summe und stimmt mit.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\n$2x+3y+2z=(x+y+z)+(x+2y+z)$. Die dritte Zeile wiederholt die Summe der ersten beiden. Sie schränkt nichts weiter ein und widerspricht ihnen nicht.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$y\\ge 0$ erzwingt $x\\le 4$, $x\\ge 0$ und $z=x+2\\ge 0$ sind dann automatisch. $K=3x+(8-2x)+4(x+2)=5x+16$ steigt mit $x$. Der kleinste Wert ist $16$ bei $(0,8,2)$, der größte $36$ bei $(4,0,6)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$x=2$ ergibt $y=4$, $z=4$, alle nichtnegativ, also zulässig. $K=26$. Das ist der Mittelwert von $16$ und $36$, nicht das Minimum. Gleiche Entfernung auf einer Strecke minimiert eine steigende lineare Funktion nicht.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nDie beiden Gleichungen lassen einen freien Parameter. Die Vorzeichen schneiden ihn auf eine ganze Strecke, nicht auf einen Punkt. $K$ ist auf dieser Strecke trotzdem eindeutig bestimmt, sobald $x$ festliegt. Eindeutige Kosten an einem Punkt sind nicht Eindeutigkeit des Punkts.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nDie Bildmenge von $K$ ist $[16,36]$. $15$ und $37$ liegen draußen. Für $x=1$ ist $y=6$, $z=3$, und $K=5+16=21$. Alle drei Koordinaten erfüllen beide Gleichungen.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nZwei Gleichungen lassen hier nur einen Parameter frei, und die Vorzeichen schneiden ihn auf $[0,4]$. $z=x+2$ ist nicht frei. $K$ hat auf dieser Strecke ein Minimum. Unbeschränkt wäre die Aufgabe ohne $x\\ge 0$, $y\\ge 0$, $z\\ge 0$.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "$y=2$ ist erzwungen, $x+z=4$ bleibt frei, und die dritte Gleichung ist die Summe der ersten beiden. $(1,2,3)$ und $(-6,2,10)$ sind zwei verschiedene Lösungen.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Aus der zweiten Gleichung folgt $y=8-2x$. Eingesetzt in die erste: $z=x+2$. Nichtnegativität erzwingt $0\\le x\\le 4$. Dann ist $K=5x+16$. Das Minimum $16$ liegt bei $x=0$, das Maximum $36$ bei $x=4$. Die Mitte $x=2$ hat $K=26$ und ist keines von beiden.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.6",
-      "id": "WISO M3.MATH.6",
-      "title": "Schwache Ungleichung, danach ein Schnitt",
+      "case_id": "WISO-M3-M06",
+      "id": "WISO-M3-M06",
+      "title": "Zwei Äste, kein Inneres bei 2",
       "chapter": 6,
-      "subsection": "6.2",
+      "subsection": "6.1",
       "difficulty_level": "5/5",
-      "context": "Gesucht sind alle reellen $x$ mit $x^{2}-5x+6\\le 0$ und zusätzlich $x>2{,}5$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Gesucht ist die Lösungsmenge von\n\\[\n\\frac{x^{2}-x-6}{x-2}<0.\n\\]\nBewerten Sie jede Aussage.",
       "statements": [
-        "$x=3$ gehört zur Lösungsmenge.",
-        "$x=2$ gehört zur Lösungsmenge.",
-        "$x=2{,}5$ gehört zur Lösungsmenge.",
-        "Die Lösungsmenge ist das halboffene Intervall $(2{,}5,\\,3]$.",
-        "$x=4$ erfüllt wenigstens die quadratische Ungleichung."
+        "Die Lösungsmenge ist $(-\\infty,-2)\\cup(2,3)$. $-2$ und $3$ gehören dazu, weil der Zähler dort null ist.",
+        "Es gibt keine ganze Lösung im Intervall $(2,3)$, und $-3$ ist eine Lösung. $2$ ist keine Lösung.",
+        "Im Intervall $(-2,2)$ ist der Bruch negativ, weil er zwischen zwei kritischen Stellen liegt.",
+        "Jede ganze Zahl $n\\le -3$ ist eine Lösung, und die drei Zahlen $-5,-4,-3$ sind nicht die einzigen ganzen Lösungen.",
+        "Nach dem Kürzen durch $x-2$ bleibt $(x-3)(x+2)<0$, und diese Ungleichung hat dieselbe Lösungsmenge wie die ursprüngliche."
       ],
       "answer_key": [
-        true,
         false,
+        true,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$(x-2)(x-3)\\le 0$ gilt auf $[2,3]$. Die Zusatzbedingung $x>2{,}5$ lässt $x=3$ übrig. Am Rand $x=3$ ist das Produkt $0$ und damit zugelassen.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\n$x=2$ erfüllt die quadratische Ungleichung, aber nicht $x>2{,}5$. Die Lösungsmenge ist der Schnitt, nicht das ganze Intervall $[2,3]$.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\n$x=2{,}5$ erfüllt $(2{,}5-2)(2{,}5-3)<0$, also die quadratische Ungleichung. Die Zusatzbedingung ist streng. $2{,}5$ ist nicht größer als $2{,}5$ und fällt heraus.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nVom Intervall $[2,3]$ bleibt nach $x>2{,}5$ genau $(2{,}5,3]$. Der linke Rand ist offen, der rechte geschlossen.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nFür $x>3$ sind beide Faktoren positiv, das Produkt positiv. $x=4$ verletzt bereits $\\le 0$.\n\nDie Aussage ist falsch."
+        "**A.** → Falsch\n\nDie beiden Äste stimmen. An $x=-2$ und $x=3$ ist der Bruch null, und null ist nicht kleiner als null. Die strenge Ungleichung lässt die Nullstellen draußen. Wer $\\le$ gelesen hat, nimmt sie mit.\n\nDie Aussage ist falsch.",
+        "**B.** → Richtig\n\nZwischen $2$ und $3$ liegt keine ganze Zahl. Bei $x=-3$ ist der Zähler $6$ und der Nenner $-5$, der Bruch ist negativ. $x=2$ macht den Nenner null und fällt aus dem Bereich.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nBei $x=0$ ist der Bruch $(-6)/(-2)=3>0$. Der Vorzeichenwechsel an $x=-2$ lässt $(-2,2)$ ohne die Stelle $2$ positiv, nicht negativ. Zwischen zwei kritischen Stellen liegt nicht automatisch die Lösung.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nDer linke Ast $(-\\infty,-2)$ enthält alle ganzen Zahlen bis $-3$ und keine Grenze nach links. $-5,-4,-3$ liegen darin, $-6$ aber auch. Eine endliche Aufzählung der drei nächsten Zahlen ist zu kurz.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\n$x-2$ ist kein gemeinsamer Faktor des Zählers. Kürzen ist nicht erlaubt, und $(x-3)(x+2)<0$ beschreibt nur $(-2,3)$. Die ursprüngliche Menge hat einen linken Ast und ein Loch bei $2$. Dieselbe Menge entsteht nicht.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Die quadratische Ungleichung gilt auf $[2,3]$. Geschnitten mit $x>2{,}5$ bleibt $(2{,}5,3]$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Für $x\\neq 2$ ist der Bruch $\\dfrac{(x-3)(x+2)}{x-2}$. Die Lösungsmenge der strengen Ungleichung ist $(-\\infty,-2)\\cup(2,3)$. Die Nullstellen des Zählers gehören nicht dazu, $x=2$ ist nicht definiert. Es gibt keine ganze Zahl im Intervall $(2,3)$.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.7",
-      "id": "WISO M3.MATH.7",
-      "title": "Parabel und Gerade, Abstand der Schnittpunkte",
+      "case_id": "WISO-M3-M07",
+      "id": "WISO-M3-M07",
+      "title": "Sehne, Mittelpunkt, parallele Tangente",
       "chapter": 7,
-      "subsection": "7",
+      "subsection": "7.5",
       "difficulty_level": "5/5",
-      "context": "Die Parabel $y=x^{2}$ und die Gerade $y=2x+3$ werden verglichen.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Die Parabel $y=x^{2}$ und die Gerade $y=x+2$ schneiden sich. Bewerten Sie jede Aussage über die Sehne zwischen den Schnittpunkten.",
       "statements": [
-        "Die Graphen schneiden sich in genau zwei Punkten.",
-        "Einer der Schnittpunkte hat eine negative $x$-Koordinate.",
-        "Der Abstand der beiden Schnittpunkte ist genau $8$.",
-        "Bei $x=0$ liegt die Gerade über der Parabel.",
-        "Die Gerade ist eine Tangente der Parabel."
+        "Die Schnittpunkte sind $(-1,1)$ und $(2,4)$. Die Sehnenlänge ist $3\\sqrt{2}$ und nicht $3$.",
+        "Der Mittelpunkt der Sehne ist der Scheitel der Parabel.",
+        "An der $x$-Koordinate des Sehnenmittelpunkts ist die Tangente an die Parabel parallel zur Sehne.",
+        "Beide Schnittpunkte liegen über der $x$-Achse, und der linke hat die größere $y$-Koordinate.",
+        "Es gibt genau zwei Schnittpunkte, einer mit negativer $x$-Koordinate. Die Tangente im Scheitel ist parallel zur Sehne."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$x^{2}=2x+3$ ergibt $x^{2}-2x-3=0$, also $(x-3)(x+1)=0$. Zwei verschiedene Schnittstellen, $x=-1$ und $x=3$.\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\nBei $x=-1$ ist $y=1$. Der Punkt $(-1,1)$ liegt links der $y$-Achse.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\nDie Punkte sind $(-1,1)$ und $(3,9)$. Der Abstand ist\n\n$$\n\\sqrt{(3-(-1))^{2}+(9-1)^{2}}=\\sqrt{16+64}=\\sqrt{80}=4\\sqrt{5}.\n$$\n\n$4\\sqrt{5}$ ist nicht $8$, denn $80$ ist nicht $64$.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nBei $x=0$ ist die Gerade $3$ und die Parabel $0$. Die Gerade liegt darüber.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nEine Tangente berührt in genau einem Punkt. Hier gibt es zwei Schnittpunkte, also eine Sekante.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie Differenzen der Koordinaten sind beide $3$. Die Länge ist $\\sqrt{3^{2}+3^{2}}=\\sqrt{18}=3\\sqrt{2}$. Wer nur eine Differenz als Länge nimmt, bleibt bei $3$ und vergisst die andere Richtung.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDer Mittelpunkt ist $\\left(\\dfrac12,\\dfrac52\\right)$. Der Scheitel ist $(0,0)$. Bei einer verschobenen Sehne fällt der Mittelpunkt nicht auf den Scheitel, auch wenn die Parabel symmetrisch ist.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDie Sehne steigt um $3$ auf $3$, Steigung $1$. $y'=2x=1$ genau bei $x=\\dfrac12$, der $x$-Koordinate des Mittelpunkts. Parallel heißt gleiche Steigung, nicht dieselbe Gerade.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie $y$-Koordinaten $1$ und $4$ sind positiv. Der linke Punkt hat $y=1$, der rechte $y=4$. Die größere Höhe liegt rechts. Links auf der $x$-Achse heißt nicht links oben.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nZwei Schnittpunkte, $x=-1$ negativ: das stimmt. Die Tangente im Scheitel hat die Steigung $0$, die Sehne die Steigung $1$. Parallel sind sie nicht. Die parallele Tangente sitzt bei $x=\\dfrac12$, nicht im Scheitel.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Schnittpunkte $(-1,1)$ und $(3,9)$, Abstand $\\sqrt{80}=4\\sqrt{5}$, nicht $8$. Bei $x=0$ liegt die Gerade oben. Zwei Schnittpunkte schließen eine Tangente aus.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "$x^{2}-x-2=0$ ergibt die Punkte $(-1,1)$ und $(2,4)$. Die Sehne hat die Länge $3\\sqrt{2}$. Ihr Mittelpunkt ist $\\left(\\dfrac12,\\dfrac52\\right)$ und nicht der Scheitel. Die Steigung der Sehne ist $1$, und $y'=2x$ nimmt den Wert $1$ bei $x=\\dfrac12$ an.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.8",
-      "id": "WISO M3.MATH.8",
-      "title": "Nach unten geöffnete, verschobene Parabel",
+      "case_id": "WISO-M3-M08",
+      "id": "WISO-M3-M08",
+      "title": "Vervierfachen ist nicht mal vier",
       "chapter": 8,
-      "subsection": "8",
+      "subsection": "8.5",
       "difficulty_level": "5/5",
-      "context": "Sei $f(x)=x^{2}$ und $g(x)=-(x+1)^{2}+4$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Ein Aufwand folgt $E=k\\,q^{3/2}$ für $q>0$. Bei $q=4$ ist $E=16$. Bewerten Sie jede Aussage. Ein falsches Modell mit dem Exponenten $2$ und eines mit dem Exponenten $1$ werden an derselben Stelle $q=4$, $E=16$ festgenagelt.",
       "statements": [
-        "Der Scheitel von $g$ ist $(-1,4)$.",
-        "$g$ hat zwei verschiedene reelle Nullstellen.",
-        "$g$ entsteht aus $f$ nur durch eine Verschiebung um $1$ nach rechts.",
-        "Der größte Wert von $g$ ist $4$.",
-        "$g(0)=3$."
+        "Von $q=4$ auf $q=16$ wächst $E$ um den Faktor $8$ und nicht um den Faktor $4$. Das am selben Punkt festgenagelte Modell mit Exponent $2$ wächst um den Faktor $16$.",
+        "Der Faktor $16$ des quadratischen Vergleichsmodells ist auch der Faktor von $E$ im gegebenen Modell.",
+        "Eine Verdopplung von $q=4$ auf $q=8$ multipliziert $E$ mit $2\\sqrt{2}$, und $2\\sqrt{2}$ liegt über $2$ und unter $4$.",
+        "Wer den Exponenten $1$ an $q=4$, $E=16$ festnagelt, sagt für $q=16$ den Wert $64$ voraus, und diese Vorhersage trifft $E$ im gegebenen Modell.",
+        "$E(8)$ ist mehr als doppelt so groß wie $E(4)$ und weniger als viermal so groß."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$(x+1)^{2}$ verschiebt um $1$ nach links, das Minus öffnet nach unten, $+4$ hebt um $4$. Der Scheitel der nach unten geöffneten Parabel liegt bei $x=-1$ und $y=4$.\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\n$g(x)=0$ bedeutet $(x+1)^{2}=4$, also $x+1=\\pm 2$. Die Nullstellen sind $x=1$ und $x=-3$, verschieden und reell.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\nEine Verschiebung um $1$ nach rechts ergäbe $(x-1)^{2}$, ohne Minus und ohne $+4$. Hier liegen eine Verschiebung nach links, eine Spiegelung an der $x$-Achse und eine Verschiebung nach oben übereinander.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nWegen des Minus vor dem Quadrat ist der Scheitel die höchste Stelle. Ihr $y$-Wert ist $4$.\n\nDie Aussage ist richtig.",
-        "**E.** → Richtig\n\n$g(0)=-(1)^{2}+4=3$.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\n$k=2$, $E(16)=2\\cdot 16^{3/2}=2\\cdot 64=128$, und $128/16=8$. Das Quadratmodell braucht $k=1$, weil $4^{2}=16$, und liefert bei $q=16$ den Wert $256$, Faktor $16$. Drei verschiedene Faktoren, nur einer gehört zum Exponenten $\\dfrac32$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDer quadratische Faktor von $q$ ist $4$, der von $E$ im Quadratmodell $16$, der von $E$ im gegebenen Modell $8$. Dieselbe Vervierfachung der Einsatzmenge erzeugt nicht denselben Faktor, sobald der Exponent sich ändert.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$8^{3/2}=(2^{3})^{3/2}=2^{9/2}=16\\sqrt{2}$, mal $k=2$ ergibt $E=32\\sqrt{2}$. Der Faktor gegen $E(4)=16$ ist $2\\sqrt{2}\\approx 2{,}83$. Das liegt über $2$ und unter $4$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nExponent $1$ ergibt $k=4$ und bei $q=16$ den Wert $64$. Das gegebene Modell ergibt $128$. $64$ ist genau die Hälfte und nicht der Treffer. Die lineare Fortschreibung unterschätzt die Krümmung des Exponenten $\\dfrac32$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$32\\sqrt{2}\\approx 45{,}3$. Das Doppelte von $16$ ist $32$, das Vierfache $64$. $45{,}3$ liegt dazwischen. Doppelt so viel Einsatz ist hier weder doppelt noch viermal so viel Aufwand.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Scheitel $(-1,4)$, Nullstellen $-3$ und $1$, höchster Wert $4$, $g(0)=3$. Die Abbildung ist nicht nur eine Rechtsverschiebung von $f$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "$4^{3/2}=8$, also $k=2$. Dann ist $E(16)=128$ und $E(8)=32\\sqrt{2}\\approx 45{,}25$. Der Faktor von $q=4$ auf $q=16$ ist $8$, nicht $4$ und nicht $16$. Das quadratische Vergleichsmodell sagt $256$ voraus, das lineare $64$.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.9",
-      "id": "WISO M3.MATH.9",
-      "title": "Eine ganze Wurzel, zwei weitere",
+      "case_id": "WISO-M3-M09",
+      "id": "WISO-M3-M09",
+      "title": "Rest a+2, danach drei Nullstellen",
       "chapter": 9,
-      "subsection": "9",
+      "subsection": "9.5",
       "difficulty_level": "5/5",
-      "context": "Sei $p(x)=2x^{3}-3x^{2}-3x+2$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Es sei $p(x)=x^{3}+ax^{2}-x+2$. Bewerten Sie jede Aussage.",
       "statements": [
-        "$x=2$ ist eine Nullstelle.",
-        "$x=1$ ist eine Nullstelle.",
-        "Die beiden weiteren Nullstellen sind reell.",
-        "Nach Abspalten von $x-2$ bleibt der Faktor $2x^{2}+x-2$.",
-        "Die beiden weiteren Nullstellen sind ganze Zahlen."
+        "Für $a=-2$ ist $x=1$ eine einfache Nullstelle, und die beiden anderen Nullstellen haben verschiedene Vorzeichen.",
+        "Das Produkt aller drei Nullstellen ist $-2$, und ihre Summe ist $0$.",
+        "$p(x)=(x-1)(x-2)(x+1)$ für $a=-2$, und auf dem offenen Intervall $(-1,1)$ ist $p$ positiv.",
+        "Der Rest bei Division durch $x-1$ ist $a+2$, und für $a=0$ ist dieser Rest $0$.",
+        "Für $a=-2$ gibt es genau eine negative Nullstelle, und sie liegt zwischen $-2$ und $0$. Es gibt keine doppelte Nullstelle."
       ],
       "answer_key": [
         true,
         false,
         true,
-        true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$p(2)=16-12-6+2=0$. Nach dem Faktorsatz ist $x-2$ ein Faktor.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\n$p(1)=2-3-3+2=-2\\neq 0$. Die naheliegende Probe $x=1$ trifft nicht.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nSynthetische Division durch $2$ liefert $2x^{2}+x-2$. Die Diskriminante ist $1+16=17>0$. Zwei weitere reelle Nullstellen.\n\nDie Aussage ist richtig.",
-        "**D.** → Richtig\n\nDie Division\n\n$$\n2\\mid 2\\quad -3\\quad -3\\quad 2\n$$\n\nergibt die Koeffizienten $2$, $1$, $-2$ und den Rest $0$. Der quadratische Faktor ist $2x^{2}+x-2$.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nDie weiteren Nullstellen sind $(-1\\pm\\sqrt{17})/4$. $\\sqrt{17}$ ist keine ganze Zahl, also sind es die Nullstellen auch nicht.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$p(x)=(x+1)(x-1)(x-2)$. Jeder Faktor ist einfach. Die anderen Nullstellen sind $-1$ und $2$. Ein Vorzeichenwechsel zwischen ihnen ist sichtbar, $x=1$ liegt dazwischen und ist selbst eine Nullstelle, nicht eine der beiden anderen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nFür das normierte Polynom ist das Produkt der Nullstellen gleich minus dem konstanten Glied, also $-2$. Die Summe ist der Koeffizient von $x^{2}$ mit umgekehrtem Vorzeichen, also $2$, nicht $0$. Die zweite Hälfte verwechselt Summe und einen mittleren Koeffizienten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nBei $x=0$ ist $p(0)=2>0$. Die Faktoren $(x-1)$ und $(x-2)$ sind auf $(-1,1)$ beide negativ, $(x+1)$ positiv, das Produkt positiv. Ein Vorzeichen aus der Zahl der Minuszeichen genügt, man muss nicht jede Stelle neu einsetzen.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$p(1)=1+a-1+2=a+2$. Für $a=0$ bleibt $2$, nicht $0$. Null wäre der Rest nur für $a=-2$. Die allgemeine Restformel stimmt, der Spezialfall nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDie einzige negative Nullstelle ist $-1$. Sie liegt zwischen $-2$ und $0$. Die drei Faktoren sind verschieden, keine doppelte Nullstelle. $p'(1)$ muss dafür nicht null sein und ist es auch nicht.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "$p(2)=0$, $p(1)=-2$, und $p(x)=(x-2)(2x^{2}+x-2)$. Die Diskriminante $17$ liefert zwei weitere reelle, nicht ganze Nullstellen.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Der Rest bei Division durch $x-1$ ist $p(1)=a+2$. Für $a=-2$ ist $x=1$ eine Nullstelle, und $p(x)=(x-1)(x-2)(x+1)$. Die Nullstellen sind $-1$, $1$ und $2$. Ihre Summe ist $2$, ihr Produkt $-2$. Auf $(-1,1)$ ist $p$ positiv.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.10",
-      "id": "WISO M3.MATH.10",
-      "title": "Fünf Jahre stetig oder jährlich",
+      "case_id": "WISO-M3-M10",
+      "id": "WISO-M3-M10",
+      "title": "Monat, Jahr, drei verschiedene Realzinsen",
       "chapter": 10,
-      "subsection": "10.2",
+      "subsection": "10.4",
       "difficulty_level": "5/5",
-      "context": "$1\\,000$ Euro werden fünf Jahre angelegt, einmal stetig mit $8\\%$ und einmal jährlich mit $8\\%$. Außerdem sei die Verdopplungszeit der stetigen Anlage gesucht.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Ein nominaler Jahreszins von $12\\%$ wird monatlich verzinst. Die Preise steigen jeden Monat um $0{,}5\\%$. Verglichen werden der effektive Jahreszins, der effektive jährliche Preisanstieg, der exakte reale Jahreszins und das Zwölffache des exakten realen Monatszinses. Bewerten Sie jede Aussage.",
       "statements": [
-        "Der stetige Endwert liegt streng über $1\\,490$ Euro.",
-        "Der stetige Endwert liegt unter dem jährlich verzinsten Endwert.",
-        "Der natürliche Logarithmus des stetigen Wachstumsfaktors ist $0{,}4$.",
-        "Die stetige Verdopplungszeit liegt streng unter $9$ Jahren.",
-        "Der jährlich verzinste Endwert liegt streng über $1\\,500$ Euro."
+        "Der effektive Nominalzins liegt über $12{,}6\\%$ und unter $12{,}7\\%$. Der exakte reale Jahreszins liegt über $6{,}1\\%$ und unter $6{,}2\\%$.",
+        "Die Differenz der beiden effektiven Jahressätze liegt über dem exakten realen Jahreszins, und das Zwölffache des exakten realen Monatszinses liegt ebenfalls darüber.",
+        "Der exakte reale Jahreszins liegt über $6{,}2\\%$. Zwölfmal der exakte reale Monatszins liegt über dem exakten realen Jahreszins.",
+        "Der reale Monatszins ist genau $0{,}5$ Prozentpunkte unter $1\\%$, also genau $0{,}5\\%$.",
+        "Zwölfmal der exakte reale Monatszins liegt unter dem exakten realen Jahreszins, und die Differenz der beiden Effektivsätze liegt über ihm."
       ],
       "answer_key": [
         true,
         false,
-        true,
-        true,
-        false
+        false,
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDer stetige Faktor ist $e^{0{,}08\\cdot 5}=e^{0{,}4}\\approx 1{,}49182$. Der Endwert ist etwa $1\\,491{,}82$ Euro und damit größer als $1\\,490$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nJährlich: $1{,}08^{5}=1{,}08^{4}\\cdot 1{,}08$. Mit $1{,}08^{2}=1{,}1664$ und $1{,}08^{4}\\approx 1{,}36049$ folgt $1{,}08^{5}\\approx 1{,}46933$, Endwert etwa $1\\,469{,}33$. Der stetige Endwert liegt darüber.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDer Faktor ist $e^{0{,}4}$, und $\\ln(e^{0{,}4})=0{,}4$.\n\nDie Aussage ist richtig.",
-        "**D.** → Richtig\n\n$e^{0{,}08t}=2$ ergibt $t=\\ln 2/0{,}08$. Wegen $\\ln 2\\approx 0{,}693$ ist $t\\approx 8{,}66$ Jahre und damit kürzer als $9$ Jahre.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nDer jährliche Endwert ist etwa $1\\,469{,}33$ Euro. Das liegt unter $1\\,500$.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\n$1{,}01^{12}-1\\approx 0{,}126825$. $\\left(1{,}01/1{,}005\\right)^{12}-1\\approx 0{,}061363$. Beide Schranken sind eng und treffen nur die jeweils richtig aufgezinste Größe, nicht die Nominaldifferenz $12\\%-6\\%$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Differenz der Effektivsätze ist etwa $0{,}06515$ und liegt über $0{,}06136$. Das Zwölffache des Monatsrealzinses ist etwa $0{,}05970$ und liegt darunter. Die zweite Hälfte läuft in die andere Richtung. Drei Rechnungen, nicht eine.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\n$6{,}136\\%$ liegt unter $6{,}2\\%$. Das Zwölffache liegt bei etwa $5{,}970\\%$ und damit unter dem Jahreswert, nicht darüber. Beide Hälften wären die Richtung, die entstünde, wenn man lineare Aufzinsung mit Zinseszins verwechselt.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\nDie Näherung $1\\%-0{,}5\\%$ ist $0{,}5\\%$. Exakt ist $1{,}01/1{,}005-1\\approx 0{,}49751\\%$. Der Unterschied ist klein und entscheidet die Aussage, weil sie das Wort genau benutzt. Dieselbe Näherung ist auch der Grund, warum das Zwölffache den Jahreszins nicht trifft.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nEtwa $5{,}970\\% < 6{,}136\\% < 6{,}515\\%$. Der exakte Jahreszins sitzt zwischen der zu kleinen linearen Fortschreibung und der zu großen Fisher-Differenz. Wer eine der beiden Nachbargrößen für den Realzins hält, liegt jedes Mal auf einer anderen Seite.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Stetig etwa $1\\,491{,}82$ Euro, jährlich etwa $1\\,469{,}33$ Euro. $\\ln(e^{0{,}4})=0{,}4$, und die stetige Verdopplungszeit ist etwa $8{,}66$ Jahre.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Der effektive Nominalzins ist $1{,}01^{12}-1\\approx 12{,}6825\\%$. Der effektive Preisanstieg ist $1{,}005^{12}-1\\approx 6{,}1678\\%$. Der exakte reale Jahreszins ist\n\\[\n\\frac{1{,}01^{12}}{1{,}005^{12}}-1\\approx 6{,}1363\\%.\n\\]\nDer exakte reale Monatszins ist $1{,}01/1{,}005-1\\approx 0{,}49751\\%$, sein Zwölffaches etwa $5{,}970\\%$. Die Differenz der beiden Effektivsätze liegt darüber, das Zwölffache darunter.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.11",
-      "id": "WISO M3.MATH.11",
-      "title": "Zwei kritische Stellen, nur eine davon ein Maximum",
+      "case_id": "WISO-M3-M11",
+      "id": "WISO-M3-M11",
+      "title": "Preis gleich Grenzkosten, und trotzdem das Minimum",
       "chapter": 11,
-      "subsection": "11.3",
+      "subsection": "11.5",
       "difficulty_level": "5/5",
-      "context": "Sei $P(q)=-q^{3}+12q^{2}-36q$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Für $q>0$ seien die Kosten $C(q)=20\\sqrt{q}+5q$ und der Preis konstant $15$. Nichts zu produzieren kostet nichts und bringt nichts. Bewerten Sie jede Aussage.",
       "statements": [
-        "$q=6$ ist eine lokale Maximalstelle.",
-        "$q=2$ ist eine lokale Maximalstelle.",
-        "Der Funktionswert an der lokalen Maximalstelle ist positiv.",
-        "$P''(6)$ ist negativ.",
-        "Es gibt genau zwei positive kritische Stellen."
+        "Bei $q=1$ gilt Preis gleich Grenzkosten, und dieser Punkt ist ein Gewinnminimum, kein Gewinnmaximum.",
+        "Bei $q=1$ ist der Gewinn $-10$ und damit schlechter als der Gewinn $0$ bei Nichtproduktion. Die Stückkosten bei $q=1$ liegen unter dem Preis.",
+        "Weil die zweite Ableitung des Gewinns positiv ist, liegt ein Maximum vor. Man sollte $q=1$ produzieren.",
+        "Die Grenzkosten fallen mit $q$ und nähern sich $5$. Sie liegen bei $q=1$ über dem Preis nicht, sondern genau auf dem Preis.",
+        "Für sehr große $q$ wird der Gewinn positiv, weil die Grenzkosten gegen $5$ fallen und der Preis $15$ darüber bleibt."
       ],
       "answer_key": [
         true,
@@ -1004,30 +1004,30 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$P'(q)=-3q^{2}+24q-36=-3(q^{2}-8q+12)=-3(q-2)(q-6)$. $P''(q)=-6q+24$. Bei $q=6$ ist $P''(6)=-12<0$, also ein lokales Maximum.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nBei $q=2$ ist $P''(2)=12>0$. Das ist ein lokales Minimum, kein Maximum.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\n$P(6)=-216+432-216=0$. Null ist nicht positiv. Das lokale Maximum hat den Wert $0$.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\n$P''(q)=-6q+24$, also $P''(6)=-36+24=-12<0$.\n\nDie Aussage ist richtig.",
-        "**E.** → Richtig\n\n$P'(q)=0$ genau für $q=2$ und $q=6$. Beide sind positiv, und der quadratische Faktor hat keine weitere Wurzel.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\n$10/\\sqrt{q}=10$ ergibt $q=1$. Der Gewinn $15q-20\\sqrt{q}-5q=10q-20\\sqrt{q}$ hat dort die Ableitung null. Die zweite Ableitung $5 q^{-3/2}$ ist positiv. Die übliche Merkregel liest jede Nullstelle der ersten Ableitung als Maximum und liegt hier falsch.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nGewinn $15-20-5=-10$, das liegt unter $0$. Die Stückkosten sind $25$ und liegen über $15$, nicht darunter. Die zweite Hälfte würde aus dem Verlust ein Argument für die Produktion machen und dreht den Vergleich um.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nPositive zweite Ableitung heißt Minimum. $q=1$ ist die schlechteste Stelle in der Nähe, nicht die beste. Nicht zu produzieren bringt $0$ und ist besser als $-10$.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\n$10/\\sqrt{q}$ fällt, die Grenzkosten fallen gegen $5$. Bei $q=1$ sind sie $15$, also gleich dem Preis, nicht darüber. Ein fallender Grenzverlauf ist der Grund, warum die übliche Schnittregel hier kein Maximum liefert.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\nDer Gewinn $10q-20\\sqrt{q}=10\\sqrt{q}\\left(\\sqrt{q}-2\\right)$ wird für $q>4$ positiv und wächst danach unbeschränkt. Die kritische Stelle $q=1$ liegt noch im Verlustgebiet. Fallende Grenzkosten unter den Preis schließen einen späteren Gewinn nicht aus, sie warnen nur vor der falschen Station.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Kritische Stellen $q=2$ (lokales Minimum, $P(2)=-32$) und $q=6$ (lokales Maximum, $P(6)=0$). $P''(6)=-12$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Die Grenzkosten sind $5+10/\\sqrt{q}$. Gleich dem Preis werden sie bei $q=1$. Dort ist der Gewinn $-10$. Die zweite Ableitung des Gewinns ist positiv, die kritische Stelle ist ein Minimum. Für große $q$ sinken die Grenzkosten gegen $5$, sie steigen nicht.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.12",
-      "id": "WISO M3.MATH.12",
-      "title": "Würfel und danach eine Münze",
+      "case_id": "WISO-M3-M12",
+      "id": "WISO-M3-M12",
+      "title": "Das größere Werk ist nicht die wahrscheinlichere Quelle",
       "chapter": 12,
-      "subsection": "12.4",
+      "subsection": "12.5",
       "difficulty_level": "5/5",
-      "context": "Ein fairer Würfel wird geworfen. Bei einer geraden Zahl gibt es 10 Euro. Bei einer ungeraden Zahl wird eine faire Münze geworfen: Kopf bringt 4 Euro, Zahl kostet 6 Euro.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "Werk 1 fertigt $60\\%$ der Teile und hat eine Fehlerquote von $2\\%$. Werk 2 fertigt $40\\%$ und hat eine Fehlerquote von $5\\%$. Ein Teil wird zufällig geprüft. Bewerten Sie jede Aussage.",
       "statements": [
-        "Der erwartete Gewinn beträgt $4{,}5$ Euro.",
-        "Der erwartete Gewinn liegt streng über $5$ Euro.",
-        "Die Wahrscheinlichkeit eines Verlusts beträgt $1/4$.",
-        "Entfällt der Münzwurf und zahlt jede ungerade Zahl sicher 4 Euro, steigt der Erwartungswert.",
-        "Gerade Augenzahl und der verlierende Münzwurf sind gleich wahrscheinlich."
+        "Ein fehlerhaftes Teil stammt mit Wahrscheinlichkeit $0{,}375$ von Werk 1 und damit seltener von Werk 1 als von Werk 2.",
+        "Weil Werk 1 mehr Teile fertigt, stammt ein fehlerhaftes Teil wahrscheinlicher von Werk 1.",
+        "Die Wahrscheinlichkeit eines Fehlers liegt zwischen $3\\%$ und $4\\%$, und mehr als die Hälfte dieser Wahrscheinlichkeit kommt aus Werk 2.",
+        "Unter den guten Teilen liegt der Anteil von Werk 1 über $60\\%$ und unter $62\\%$. Er liegt damit über dem Fertigungsanteil von Werk 1.",
+        "$P(\\text{Werk 1}\\mid F)$ ist größer als der Fertigungsanteil von Werk 1, und $P(\\text{Werk 1}\\mid \\text{gut})$ ist kleiner als dieser Fertigungsanteil."
       ],
       "answer_key": [
         true,
@@ -1037,48 +1037,48 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nGerade Augenzahl hat Wahrscheinlichkeit $1/2$ und zahlt $10$. Kopf nach ungerade hat $1/4$ und zahlt $4$. Zahl nach ungerade hat $1/4$ und zahlt $-6$.\n\n$$\nE=\\frac12\\cdot 10+\\frac14\\cdot 4+\\frac14\\cdot(-6)=5+1-1{,}5=4{,}5.\n$$\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\n$4{,}5$ liegt nicht über $5$. Der Erwartungswert bleibt darunter.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nVerloren wird nur bei ungerader Augenzahl und Zahl. Das ist $\\frac12\\cdot\\frac12=\\frac14$.\n\nDie Aussage ist richtig.",
-        "**D.** → Richtig\n\nOhne Münze ist $E=\\frac12\\cdot 10+\\frac12\\cdot 4=7$. Wegen $7>4{,}5$ steigt der Erwartungswert. Der verlierende Ast fällt weg.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nGerade Augenzahl hat Wahrscheinlichkeit $1/2$. Der verlierende Münzwurf hat Wahrscheinlichkeit $1/4$. Die beiden Ereignisse sind nicht gleich wahrscheinlich.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDer Anteil der fehlerhaften Teile aus Werk 1 an allen Teilen ist $0{,}012$, aus Werk 2 $0{,}020$. Geteilt durch $0{,}032$ entstehen $0{,}375$ und $0{,}625$. Das größere Werk hat die kleinere Fehlerquelle, sobald man auf den Fehler bedingt.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nWerk 1 fertigt mehr und macht seltener Fehler. Das Produkt $0{,}012$ bleibt unter $0{,}020$. Die Fertigungsmenge allein dreht die bedingte Wahrscheinlichkeit nicht. Genau das wäre der Schluss ohne die Fehlerquoten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$0{,}032$ liegt zwischen $0{,}03$ und $0{,}04$. Der Anteil von Werk 2 daran ist $0{,}020/0{,}032=0{,}625$ und damit mehr als die Hälfte. Die Gesamtfehlerquote und die Aufteilung sind zwei verschiedene Rechnungen.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nGute Teile aus Werk 1: $0{,}6\\cdot 0{,}98=0{,}588$. Alle guten Teile: $0{,}968$. Der Quotient ist etwa $0{,}607$, also zwischen $60\\%$ und $62\\%$ und über dem Fertigungsanteil $60\\%$. Die guten Teile schieben das bessere Werk leicht nach vorn, die fehlerhaften schieben es deutlich zurück.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nBedingt auf den Fehler fällt der Anteil von $0{,}60$ auf $0{,}375$. Bedingt auf gut steigt er auf etwa $0{,}607$. Die Aussage vertauscht die beiden Richtungen. Der Fehler zieht das schlechtere Werk nach vorn, das gute Teil das bessere.\n\nDie Aussage ist falsch."
       ],
-      "solution_overview": "Erwartungswert $4{,}5$ Euro. Verlustwahrscheinlichkeit $1/4$. Ohne den Münzwurf steigt der Erwartungswert auf $7$. Gerade Augenzahl ist doppelt so wahrscheinlich wie der Verlustast.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "$P(F)=0{,}6\\cdot 0{,}02+0{,}4\\cdot 0{,}05=0{,}032$. Unter den fehlerhaften Teilen kommt Werk 1 mit Wahrscheinlichkeit $0{,}012/0{,}032=0{,}375$ vor, Werk 2 mit $0{,}625$. Unter den guten Teilen liegt der Anteil von Werk 1 bei $0{,}588/0{,}968\\approx 0{,}607$.",
+      "figure": "",
+      "tables_markdown": ""
     },
     {
-      "case_id": "WISO M3.MATH.13",
-      "id": "WISO M3.MATH.13",
-      "title": "Sechs Versuche, Trefferwahrscheinlichkeit ein Drittel",
+      "case_id": "WISO-M3-M13",
+      "id": "WISO-M3-M13",
+      "title": "Sechs Treffer, knapp unter fünf Prozent",
       "chapter": 13,
-      "subsection": "13",
+      "subsection": "13.5",
       "difficulty_level": "5/5",
-      "context": "$X$ sei binomialverteilt mit $n=6$ und $p=1/3$.\n\nEntscheide, ob jede Aussage richtig oder falsch ist.",
+      "context": "$X$ sei binomial mit $n=8$. Verglichen werden $p=0{,}4$ und $p=0{,}5$ an der Beobachtung von genau sechs Treffern und an der rechten Tailwahrscheinlichkeit unter $p=0{,}4$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Der Erwartungswert ist $2$.",
-        "$P(X=6)=1/729$.",
-        "$P(X\\ge 5)$ liegt streng über $0{,}05$.",
-        "Die Varianz ist größer als $2$.",
-        "$P(X=0)$ ist größer als $P(X=6)$."
+        "Die Wahrscheinlichkeit von genau sechs Treffern ist unter $p=0{,}5$ größer als unter $p=0{,}4$, und $28/256$ liegt unter $0{,}1$.",
+        "Unter $p=0{,}4$ liegt $P(X\\ge 6)$ über $5\\%$. Sechs liegt zugleich mehr als zwei Standardabweichungen über dem Erwartungswert.",
+        "Unter $p=0{,}4$ ist der Erwartungswert $3{,}2$, und sechs liegt mehr als zwei Standardabweichungen darüber. $P(X=8)$ ist kleiner als $P(X=7)$ und kleiner als $0{,}001$.",
+        "Die Beobachtung von genau sechs Treffern ist unter $p=0{,}4$ wahrscheinlicher als unter $p=0{,}5$, weil $0{,}4$ näher an $6/8$ liegt als $0{,}5$.",
+        "$P(X\\ge 6)$ unter $p=0{,}4$ liegt unter $5\\%$, und $P(X=6)$ macht davon mehr als die Hälfte aus."
       ],
       "answer_key": [
-        true,
-        true,
         false,
+        false,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$E(X)=np=6\\cdot 1/3=2$.\n\nDie Aussage ist richtig.",
-        "**B.** → Richtig\n\n$P(X=6)=(1/3)^{6}=1/729$.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\n$P(X=5)=\\binom{6}{5}(1/3)^{5}(2/3)=6\\cdot 2/729=12/729$. Zusammen mit $P(X=6)$ sind das $13/729\\approx 0{,}0178$. Das liegt unter $0{,}05$.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\n$Var(X)=np(1-p)=6\\cdot\\frac13\\cdot\\frac23=\\frac43$. $\\frac43$ ist kleiner als $2$, nicht größer.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\n$P(X=0)=(2/3)^{6}=64/729$. Das ist größer als $1/729$.\n\nDie Aussage ist richtig."
+        "**A.** → Falsch\n\n$0{,}109375>0{,}0413$, die erste Hälfte stimmt. $28/256=0{,}109375$ liegt über $0{,}1$, nicht darunter. Die Nähe zu $0{,}1$ ist der übliche Fehlschluss aus $28$ gegen $256$.\n\nDie Aussage ist falsch.",
+        "**B.** → Falsch\n\nDie Tailwahrscheinlichkeit ist etwa $0{,}04981$ und liegt unter $5\\%$. Der Abstand $6-3{,}2=2{,}8$ ist größer als $2\\sqrt{1{,}92}\\approx 2{,}771$. Die zweite Hälfte stimmt knapp, die erste nicht. Über zwei Standardabweichungen heißt hier noch nicht über $5\\%$ in der exakten Tailwahrscheinlichkeit.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nStandardabweichung $\\sqrt{8\\cdot 0{,}4\\cdot 0{,}6}=\\sqrt{1{,}92}\\approx 1{,}3856$, das Doppelte etwa $2{,}771$, und $2{,}8$ liegt darüber. $P(X=8)=0{,}4^{8}\\approx 0{,}000655$. $P(X=7)=8\\cdot 0{,}4^{7}\\cdot 0{,}6\\approx 0{,}00786$. Beide Vergleiche für $P(X=8)$ stimmen.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$6/8=0{,}75$. Davon ist $0{,}5$ weniger weit entfernt als $0{,}4$ es ist: Abstand $0{,}25$ gegen $0{,}35$. Außerdem ist $P(X=6)$ unter $p=0{,}5$ größer, etwa $0{,}109$ gegen $0{,}041$. Beide Begründungen laufen der Rechnung entgegen.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDie Tailwahrscheinlichkeit ist etwa $0{,}0498$. $P(X=6)\\approx 0{,}0413$ ist mehr als die Hälfte davon, $P(X=7)$ und $P(X=8)$ sind der kleinere Rest. Unter $5\\%$ zu liegen heißt nicht, dass der einzelne Punkt $X=6$ schon die ganze Tailwahrscheinlichkeit ist.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Erwartungswert $2$, Varianz $4/3$, $P(X=6)=1/729$, $P(X=0)=64/729$ und $P(X\\ge 5)=13/729\\approx 0{,}0178$.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "$\\binom{8}{6}=28$. Unter $p=0{,}4$ ist $P(X=6)\\approx 0{,}0413$, unter $p=0{,}5$ ist sie $28/256=0{,}109375$. Die Tailwahrscheinlichkeit $P(X\\ge 6)$ unter $p=0{,}4$ ist etwa $0{,}0498$ und liegt unter $5\\%$. Der Erwartungswert unter $p=0{,}4$ ist $3{,}2$, die Standardabweichung $\\sqrt{1{,}92}\\approx 1{,}386$. Sechs liegt knapp mehr als zwei Standardabweichungen darüber.",
+      "figure": "",
+      "tables_markdown": ""
     }
   ]
 }

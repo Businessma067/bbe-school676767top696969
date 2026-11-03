@@ -2,9 +2,9 @@
  * Curated WiSo Mock Exam 2:
  * - Economics (Wirtschaft verstehen) → German reading → Math
  * - Same shape as BBE / WiSo Mock 1: 10 + 11 + 13, five statements, tactical explanations, math solution overview
- * - Original tasks: household budget, comparative advantage, opportunity cost, circular flow, inflation, decoupling, legal form, accounts, café pricing, two-sided platform.
- * - German: new repair-rights passage (10 tasks) plus a rent-control short text.
- * - Math: one new task type per chapter, German worked explanations and a solution overview.
+ * - Economics: tangled two-part traps (licence versus resale, transport that flips one good, a broken identity, tariff versus quota, bracket creep, partial lease, step fixed cost, two markets, capped guarantee, minimum wage).
+ * - German: share-deal passage with two clocks and two tests, plus a clinic short text.
+ * - Math: one new task type per chapter, each statement a near-miss after a full derivation.
  */
 
 import sourced from "@/data/wiso-mock-exam-2-sourced.json";
@@ -79,7 +79,7 @@ export const WISO_MOCK_EXAM_2_POINTS_TOTAL =
   bundle.german.tasks.length * SCORING_CONFIG.german.defaultMaxPerTask +
   WISO_MOCK_EXAM_2_MATH_POINTS.reduce((a, b) => a + b, 0);
 
-export const WISO_MOCK_EXAM_2_CONTENT_REV = "2026-11-03d · 34q · all harder · explanations";
+export const WISO_MOCK_EXAM_2_CONTENT_REV = "2026-11-03e · 34q · tangled · above course";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
