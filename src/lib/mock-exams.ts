@@ -58,6 +58,18 @@ import {
   buildWisoMockExam1Questions,
 } from "@/lib/wiso-mock-exam-1-content";
 import {
+  WISO_MOCK_EXAM_2_CONTENT_REV,
+  WISO_MOCK_EXAM_2_POINTS_TOTAL,
+  WISO_MOCK_EXAM_2_QUESTION_COUNT,
+  buildWisoMockExam2Questions,
+} from "@/lib/wiso-mock-exam-2-content";
+import {
+  WISO_MOCK_EXAM_3_CONTENT_REV,
+  WISO_MOCK_EXAM_3_POINTS_TOTAL,
+  WISO_MOCK_EXAM_3_QUESTION_COUNT,
+  buildWisoMockExam3Questions,
+} from "@/lib/wiso-mock-exam-3-content";
+import {
   WISO_MOCK_EXAM_DEMO_CONTENT_REV,
   WISO_MOCK_EXAM_DEMO_POINTS_TOTAL,
   WISO_MOCK_EXAM_DEMO_QUESTION_COUNT,
@@ -207,6 +219,24 @@ export const WISO_MOCK_EXAMS: MockExamSummary[] = [
     pointsTotal: WISO_MOCK_EXAM_1_POINTS_TOTAL,
     contentRev: WISO_MOCK_EXAM_1_CONTENT_REV,
   },
+  {
+    id: "wiso-mock-2",
+    title: "WiSo Mock Exam 2",
+    questionCount: WISO_MOCK_EXAM_2_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: WISO_MOCK_EXAM_2_POINTS_TOTAL,
+    contentRev: WISO_MOCK_EXAM_2_CONTENT_REV,
+  },
+  {
+    id: "wiso-mock-3",
+    title: "WiSo Mock Exam 3",
+    questionCount: WISO_MOCK_EXAM_3_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: WISO_MOCK_EXAM_3_POINTS_TOTAL,
+    contentRev: WISO_MOCK_EXAM_3_CONTENT_REV,
+  },
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
@@ -306,6 +336,12 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   }
   if (examId === "wiso-mock-1") {
     return buildWisoMockExam1Questions(examId);
+  }
+  if (examId === "wiso-mock-2") {
+    return buildWisoMockExam2Questions(examId);
+  }
+  if (examId === "wiso-mock-3") {
+    return buildWisoMockExam3Questions(examId);
   }
 
   const rand = makeRandom(examId);
