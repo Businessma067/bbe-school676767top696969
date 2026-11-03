@@ -307,343 +307,343 @@
     "tasks": [
       {
         "id": "wiso-m2-de-01",
-        "case_id": "WISO M2.DE.01",
-        "title": "Absätze 1–2",
-        "context": "Die Aussagen prüfen Geschichte, Index und den Umfang der europäischen Regeln.",
+        "case_id": "WISO-M2.DE.01",
+        "title": "Jahresabstände",
+        "context": "Die Aussagen verlangen, Jahreszahlen aus verschiedenen Absätzen gegeneinander zu rechnen, nicht nur eine Zahl abzuschreiben.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Der Text behauptet, Waschmaschinen seien seit 1995 im realen Verkaufspreis teurer geworden.",
-          "Frankreich führte den Reparaturindex im Jahr 2021 ein.",
-          "Der Index verwendet eine Skala von null bis hundert.",
-          "Die Einigung der Europäischen Union von 2024 gilt ausnahmslos für alle Produkte des Binnenmarkts.",
-          "Hersteller sollen Ersatzteile über einen festgelegten Zeitraum bereithalten."
+          "Von der politischen Wende etwa 2015 bis zum Reparaturindex 2021 vergehen mehr als zehn Jahre.",
+          "Vom Reparaturindex 2021 bis zur Einigung der Europäischen Union 2024 vergehen drei Jahre.",
+          "1995 liegt im Text nach der politischen Wende.",
+          "Wer 1995 als Jahr der politischen Wende liest, verwechselt den Preisvergleich der Waschmaschine mit der späteren Debatte.",
+          "Die Indexskala läuft von null bis zehn, und die Regeln von 2024 gelten nur für ausgewählte Produktgruppen."
         ],
         "answer_key": [
           false,
           true,
           false,
-          false,
+          true,
           true
         ],
         "tactical_explanations": [
-          "**A) Der Text behauptet, Waschmaschinen seien seit 1995 im realen Verkaufspreis teurer geworden.**\n\nAbsatz 1 sagt das Gegenteil: Die Waschmaschine ist real billiger geworden. Teurer wurde die Arbeitsstunde der Fachkraft, nicht das Gerät.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Frankreich führte den Reparaturindex im Jahr 2021 ein.**\n\nAbsatz 2 datiert die Einführung des französischen Reparaturindex auf 2021. Die politische Wende setzt der Text schon etwa 2015 an, den Index selbst aber später.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Der Index verwendet eine Skala von null bis hundert.**\n\nDieselbe Stelle nennt eine Skala von null bis zehn. Hundert wäre eine andere Skala und steht nicht im Text.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Die Einigung der Europäischen Union von 2024 gilt ausnahmslos für alle Produkte des Binnenmarkts.**\n\nAbsatz 2 beschränkt die Regeln auf ausgewählte Produktgruppen. Ein Wort wie ausnahmslos für alle Produkte geht über den Text hinaus.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Hersteller sollen Ersatzteile über einen festgelegten Zeitraum bereithalten.**\n\nZu den 2024 vereinbarten Pflichten gehört, Ersatzteile über einen festgelegten Zeitraum bereitzuhalten, neben Reparaturen nach der Gewährleistung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Von der politischen Wende etwa 2015 bis zum Reparaturindex 2021 vergehen mehr als zehn Jahre.**\n\n2021 minus etwa 2015 sind etwa sechs Jahre. Mehr als zehn wäre erst ein Abstand jenseits von 2025. Die beiden echten Jahreszahlen stehen in Absatz 2, die Rechnung gehört dem Leser.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Vom Reparaturindex 2021 bis zur Einigung der Europäischen Union 2024 vergehen drei Jahre.**\n\n2024 minus 2021 ist drei. Index und EU-Einigung stehen im selben Absatz, der Abstand wird dort aber nicht ausgerechnet.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) 1995 liegt im Text nach der politischen Wende.**\n\n1995 ist der Vergleichspunkt für den realen Preis der Waschmaschine in Absatz 1. Die politische Wende setzt Absatz 2 etwa 2015 an. 1995 liegt davor, nicht danach.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer 1995 als Jahr der politischen Wende liest, verwechselt den Preisvergleich der Waschmaschine mit der späteren Debatte.**\n\nBeide Zahlen sind echt und liegen im Text. Der Schaden entsteht, wenn der Preisvergleich von 1995 zur politischen Wende umetikettiert wird. Die Wende ist die spätere Datierung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Die Indexskala läuft von null bis zehn, und die Regeln von 2024 gelten nur für ausgewählte Produktgruppen.**\n\nBeides steht in Absatz 2: Skala null bis zehn, und die Regeln gelten für ausgewählte Produktgruppen. Die Aussage ist nur wahr, weil beide Hälften stimmen. Eine Skala bis hundert oder ein Geltungsbereich für alle Produkte würde sie kippen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "2/5",
-        "subsection": "t.repair"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-02",
-        "case_id": "WISO M2.DE.02",
-        "title": "Modellrechnung",
-        "context": "Die Aussagen prüfen die Untersuchung von 2022 und ihre Grenzen.",
+        "case_id": "WISO-M2.DE.02",
+        "title": "Modellrechnung gegen Kritik",
+        "context": "Die Aussagen zwingen dazu, die zwölf Prozent aus Absatz 3 mit dem Einwand aus Absatz 4 zusammenzuhalten.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Die Zahl von etwa zwölf Prozent ist im Text eine gemessene Jahresbilanz der tatsächlichen Emissionen.",
-          "Die Schätzung betrifft eine um ein Jahr verlängerte Nutzung von Smartphones und Waschmaschinen.",
-          "Die Schätzung gilt auch dann, wenn das Gerät nach der Reparatur nicht weiter genutzt wird.",
-          "Auftraggeberin der Untersuchung ist laut Text eine Umweltbehörde.",
-          "Die Schätzung bezieht sich auf einen mittelgroßen Mitgliedstaat."
+          "Die zwölf Prozent sind eine gemessene Jahresbilanz der tatsächlichen Emissionen.",
+          "Die Schätzung setzt voraus, dass repariert wird und das Gerät danach weiter genutzt wird.",
+          "Wer die zwölf Prozent und die Indexskala von zehn addiert, erhält laut Text die Lebensdauer in Jahren.",
+          "Kritiker halten einen frühen Austausch für möglicherweise emissionsärmer, wenn das neue Gerät im Betrieb sparsamer ist.",
+          "Weiterverkauf, Zweitnutzung und Schreddern ergeben laut Text dieselbe Bilanz."
         ],
         "answer_key": [
           false,
           true,
           false,
           true,
-          true
+          false
         ],
         "tactical_explanations": [
-          "**A) Die Zahl von etwa zwölf Prozent ist im Text eine gemessene Jahresbilanz der tatsächlichen Emissionen.**\n\nAbsatz 3 stellt die zwölf Prozent ausdrücklich als Modellrechnung und nicht als gemessene Jahresbilanz vor.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Die Schätzung betrifft eine um ein Jahr verlängerte Nutzung von Smartphones und Waschmaschinen.**\n\nDie verlängerte Nutzungsdauer um ein Jahr und die beiden Produktgruppen Smartphones und Waschmaschinen stehen im selben Satz.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Die Schätzung gilt auch dann, wenn das Gerät nach der Reparatur nicht weiter genutzt wird.**\n\nDer Text knüpft die Zahl an zwei Bedingungen: Die Reparatur findet statt, und das Gerät wird danach weiter genutzt. Ohne die zweite Bedingung trägt die Schätzung nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Auftraggeberin der Untersuchung ist laut Text eine Umweltbehörde.**\n\nDie Untersuchung erfolgte im Auftrag einer Umweltbehörde. Eine andere Institution nennt Absatz 3 nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Die Schätzung bezieht sich auf einen mittelgroßen Mitgliedstaat.**\n\nDer räumliche Bezug ist ein mittelgroßer Mitgliedstaat, nicht die ganze Welt und nicht ein einzelner Haushalt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Die zwölf Prozent sind eine gemessene Jahresbilanz der tatsächlichen Emissionen.**\n\nAbsatz 3 nennt die Zahl ausdrücklich eine Modellrechnung und keine gemessene Jahresbilanz. Die Aussage zieht die vorsichtige Einordnung ab.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Die Schätzung setzt voraus, dass repariert wird und das Gerät danach weiter genutzt wird.**\n\nDieselbe Stelle knüpft die Zahl an zwei Bedingungen zugleich: Die Reparatur findet statt, und das Gerät wird danach weiter genutzt. Eine Bedingung allein trägt die Schätzung nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Wer die zwölf Prozent und die Indexskala von zehn addiert, erhält laut Text die Lebensdauer in Jahren.**\n\nDie zwölf Prozent sind eine Emissionsmodellrechnung, die Skala misst Reparierbarkeit. Absatz 6 sagt, der Index messe nicht die Lebensdauer. Eine Summe aus beiden Größen kommt im Text nicht vor und wäre eine Vermischung zweier Maßstäbe.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Kritiker halten einen frühen Austausch für möglicherweise emissionsärmer, wenn das neue Gerät im Betrieb sparsamer ist.**\n\nAbsatz 4 beschreibt genau diesen Fall: Ein sparsameres Nachfolgegerät kann den frühen Austausch emissionsseitig günstiger machen. Das ist der Einwand gegen die Hoffnungsrechnung, nicht ihre Wiederholung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weiterverkauf, Zweitnutzung und Schreddern ergeben laut Text dieselbe Bilanz.**\n\nAbsatz 4 sagt, die drei Wege ergäben drei verschiedene Bilanzen. Dieselbe Bilanz wäre das Gegenteil der Unterscheidung.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.repair"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-03",
-        "case_id": "WISO M2.DE.03",
-        "title": "Einwand der Kritiker",
-        "context": "Die Aussagen prüfen den Energievergleich und die drei Bilanzen des Altgeräts.",
+        "case_id": "WISO-M2.DE.03",
+        "title": "Index ist keine Lebensdauer",
+        "context": "Die Aussagen prüfen, ob zwei verschiedene Kennzahlen zu einem Beleg zusammengesetzt werden dürfen.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Kritiker halten einen frühen Austausch unter Umständen für emissionsärmer, wenn das neue Gerät im Betrieb sparsamer ist.",
-          "Der Text stellt fest, ein repariertes Gerät verbrauche immer weniger Strom als ein neues.",
-          "Der Vergleich hängt unter anderem am Strommix und an der Nutzungshäufigkeit.",
-          "Weiterverkauf, Zweitnutzung und Schreddern führen laut Text zur selben Emissionsbilanz.",
-          "Kritiker halten die Rechnung der Befürworter für unvollständig."
+          "Ein hoher Indexwert und die zwölf Prozent belegen gemeinsam, dass ein repariertes Gerät immer weniger emittiert.",
+          "Ein hoher Indexwert bedeutet nicht, dass das Gerät lange hält.",
+          "Fehlende Schaltpläne gelten im Text als direkter Beweis einer branchenweiten Absicht.",
+          "Gerichte beanstandeten einzelne irreführende Haltbarkeitsangaben, und ein allgemeiner Nachweis für ganze Branchen ist nicht erbracht.",
+          "Die Hersteller liefern keinen Teil der Angaben, aus denen der Index besteht."
         ],
         "answer_key": [
-          true,
           false,
           true,
           false,
-          true
+          true,
+          false
         ],
         "tactical_explanations": [
-          "**A) Kritiker halten einen frühen Austausch unter Umständen für emissionsärmer, wenn das neue Gerät im Betrieb sparsamer ist.**\n\nAbsatz 4 beschreibt genau diesen Fall: Ein sparsameres Nachfolgegerät kann den frühen Austausch emissionsseitig günstiger machen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Der Text stellt fest, ein repariertes Gerät verbrauche immer weniger Strom als ein neues.**\n\nDer Text sagt, ein älteres Gerät könne im Betrieb mehr Strom verbrauchen. Die Aussage dreht diese Möglichkeit in ein Immer-weniger um.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Der Vergleich hängt unter anderem am Strommix und an der Nutzungshäufigkeit.**\n\nStrommix, Nutzungshäufigkeit und der Verbleib des Altgeräts sind die drei Abhängigkeiten, die Absatz 4 nennt. Die ersten beiden stehen in der Aussage.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Weiterverkauf, Zweitnutzung und Schreddern führen laut Text zur selben Emissionsbilanz.**\n\nAbsatz 4 sagt, die drei Wege ergäben drei verschiedene Bilanzen. Dieselbe Bilanz wäre das Gegenteil.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Kritiker halten die Rechnung der Befürworter für unvollständig.**\n\nDer Absatz beginnt damit, dass Kritiker die Rechnung für unvollständig halten. Das ist ihre Rolle im Text, nicht eine Erfindung der Aussage.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Ein hoher Indexwert und die zwölf Prozent belegen gemeinsam, dass ein repariertes Gerät immer weniger emittiert.**\n\nAbsatz 6 trennt den Index von der gemessenen Lebensdauer. Absatz 4 lässt sogar offen, dass ein neues Gerät im Betrieb emissionsärmer sein kann. Die beiden Zahlen zu einem Immer-weniger zu verschweißen, widerspricht beiden Absätzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Ein hoher Indexwert bedeutet nicht, dass das Gerät lange hält.**\n\nAbsatz 6 verneint genau diese Gleichsetzung: Ein hoher Wert bedeutet nicht, dass das Gerät lange hält.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Fehlende Schaltpläne gelten im Text als direkter Beweis einer branchenweiten Absicht.**\n\nFehlende Schaltpläne stehen in der Reihe konstruktiver Hindernisse, aus denen allein keine Absicht folgt. Der allgemeine Branchennachweis ist ausdrücklich nicht erbracht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Gerichte beanstandeten einzelne irreführende Haltbarkeitsangaben, und ein allgemeiner Nachweis für ganze Branchen ist nicht erbracht.**\n\nAbsatz 5 hält beide Hälften zusammen: einzelne beanstandete Fälle und das Fehlen eines allgemeinen Nachweises. Die Aussage ist nur tragfähig, weil sie den Nachweis nicht aus den Einzelfällen ableitet.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Die Hersteller liefern keinen Teil der Angaben, aus denen der Index besteht.**\n\nDer letzte Satz von Absatz 6 sagt, einen Teil der Angaben lieferten die Hersteller selbst. Keinen Teil ist die Verneinung dieses Satzes.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.repair"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-04",
-        "case_id": "WISO M2.DE.04",
-        "title": "Geplante Obsoleszenz",
-        "context": "Die Aussagen prüfen, was der Text belegt und was er nur als Behauptung führt.",
+        "case_id": "WISO-M2.DE.04",
+        "title": "Kosten und Quote",
+        "context": "Die Aussagen prüfen, ob aus einer Pflicht eine logische Ersparnis und aus Zustimmung eine Reparaturquote wird.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Geplante Obsoleszenz bezeichnet im Text die Behauptung einer absichtlich verkürzten Lebensdauer.",
-          "Der Text stellt fest, ein allgemeiner Nachweis für ganze Branchen sei erbracht.",
-          "Verklebte Akkus sind ein Beispiel für erschwerte Reparatur und nicht automatisch für eine bewiesene Absicht.",
-          "Gerichte haben einzelne Fälle irreführender Haltbarkeitsangaben beanstandet.",
-          "Fehlende Schaltpläne gelten im Text als direkter Beweis einer branchenweiten Strategie."
+          "Aus dem Verordnungstext folgt logisch, dass die Gesamtkosten sinken.",
+          "Kosten der Pflicht können im Neupreis, in der Reparaturrechnung oder in geringerer Modellvielfalt erscheinen.",
+          "Hohe Zustimmung ist im Text dasselbe wie eine hohe tatsächliche Reparaturquote.",
+          "Ein Recht, das niemand ausübt, verändert die Stoffströme nicht.",
+          "Weil die Regeln für eine mehrjährige Kontrolle zu jung sind, ist die Wirkung von Index, Ersatzteilpflicht und Softwarezugang nicht belegt."
         ],
         "answer_key": [
+          false,
           true,
           false,
           true,
-          true,
-          false
+          true
         ],
         "tactical_explanations": [
-          "**A) Geplante Obsoleszenz bezeichnet im Text die Behauptung einer absichtlich verkürzten Lebensdauer.**\n\nAbsatz 5 definiert den Begriff als die Behauptung, Hersteller verkürzten die Lebensdauer absichtlich, um den nächsten Kauf zu erzwingen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Der Text stellt fest, ein allgemeiner Nachweis für ganze Branchen sei erbracht.**\n\nDerselbe Absatz sagt, ein allgemeiner Nachweis für ganze Branchen sei nicht erbracht. Die Aussage behauptet das Gegenteil.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Verklebte Akkus sind ein Beispiel für erschwerte Reparatur und nicht automatisch für eine bewiesene Absicht.**\n\nVerklebte Akkus stehen in der Reihe konstruktiver Entscheidungen, die Reparaturen erschweren, ohne dass daraus allein eine Absicht folgt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Gerichte haben einzelne Fälle irreführender Haltbarkeitsangaben beanstandet.**\n\nDer Text trennt diese Einzelfälle von einem Branchennachweis: Gerichte haben einzelne irreführende Haltbarkeitsangaben beanstandet.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Fehlende Schaltpläne gelten im Text als direkter Beweis einer branchenweiten Strategie.**\n\nFehlende Schaltpläne gehören zu den Belegen für erschwerte Reparatur. Der Text verweigert gerade den Schritt, daraus eine branchenweite Absicht abzuleiten.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**A) Aus dem Verordnungstext folgt logisch, dass die Gesamtkosten sinken.**\n\nAbsatz 7 sagt das Gegenteil: Ob die Gesamtkosten sinken, sei kein logisches Ergebnis des Verordnungstextes, sondern eine empirische Frage.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Kosten der Pflicht können im Neupreis, in der Reparaturrechnung oder in geringerer Modellvielfalt erscheinen.**\n\nDie drei Orte stehen in Absatz 7 nebeneinander. Die Aussage lässt keinen weg und setzt keinen vierten an seine Stelle.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Hohe Zustimmung ist im Text dasselbe wie eine hohe tatsächliche Reparaturquote.**\n\nAbsatz 9 stellt hohe Zustimmung und eine deutlich niedrigere Reparaturquote direkt gegeneinander. Dieselbe Größe wären sie nur, wenn der Text die Lücke nicht beschriebe.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Ein Recht, das niemand ausübt, verändert die Stoffströme nicht.**\n\nDer Satz steht so in Absatz 9. Ein nicht ausgeübtes Recht wird dort von einer durchgeführten Reparatur unterschieden.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil die Regeln für eine mehrjährige Kontrolle zu jung sind, ist die Wirkung von Index, Ersatzteilpflicht und Softwarezugang nicht belegt.**\n\nAbsatz 9 verbindet zwei Punkte: Die Wirkung ist nicht belegt, und der Grund ist das geringe Alter der Regeln. Die Aussage gibt diese Verbindung wieder und behauptet nicht, die Wirkung sei bereits gemessen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "4/5",
-        "subsection": "t.repair"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-05",
-        "case_id": "WISO M2.DE.05",
-        "title": "Was der Index misst",
-        "context": "Die Aussagen prüfen die Reichweite des französischen Reparaturindex.",
+        "case_id": "WISO-M2.DE.05",
+        "title": "Reihenfolge und Software",
+        "context": "Die Aussagen verbinden die Jahresfolge aus Absatz 2 mit der Reparaturgrenze aus Absatz 8.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Ein hoher Indexwert belegt eine lange gemessene Lebensdauer.",
-          "Der Index berücksichtigt unter anderem den Preis der Ersatzteile im Verhältnis zum Neupreis.",
-          "Einen Teil der Angaben liefern die Hersteller selbst.",
-          "Der Index misst Reparierbarkeit und Lebensdauer mit derselben Kennzahl.",
-          "Ein niedriger Indexwert bedeutet laut Text, dass das Gerät früh ausfällt."
+          "Wer die Ersatzteile besitzt, kann das Gerät laut Text in jedem Fall vollständig reparieren.",
+          "Die europäischen Regeln verlangen Bauteile und Informationen.",
+          "Der Verordnungstext allein legt fest, wie weit der Softwarezugang in der Praxis reicht.",
+          "Politische Wende, Reparaturindex und EU-Einigung stehen in der Reihenfolge etwa 2015, 2021, 2024.",
+          "1995 ist im Text das Jahr der EU-Einigung."
         ],
         "answer_key": [
           false,
           true,
-          true,
           false,
+          true,
           false
         ],
         "tactical_explanations": [
-          "**A) Ein hoher Indexwert belegt eine lange gemessene Lebensdauer.**\n\nAbsatz 6 verneint genau das: Ein hoher Wert bedeutet nicht, dass das Gerät lange hält. Reparierbarkeit und gemessene Lebensdauer fallen auseinander.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Der Index berücksichtigt unter anderem den Preis der Ersatzteile im Verhältnis zum Neupreis.**\n\nNeben Verfügbarkeit der Teile und Zugänglichkeit der Anleitungen nennt der Text den Preis der Ersatzteile im Verhältnis zum Neupreis.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Einen Teil der Angaben liefern die Hersteller selbst.**\n\nDer letzte Satz von Absatz 6 hält fest, dass einen Teil der Angaben die Hersteller selbst liefern.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Der Index misst Reparierbarkeit und Lebensdauer mit derselben Kennzahl.**\n\nDer Text stellt die beiden Größen gegenüber und sagt, der Index messe Reparierbarkeit, nicht die gemessene Lebensdauer.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Ein niedriger Indexwert bedeutet laut Text, dass das Gerät früh ausfällt.**\n\nEin niedriger Wert bedeutet laut Absatz 6 nicht, dass das Gerät früh ausfällt. Die Aussage macht aus einer Reparierbarkeitsnote eine Ausfallprognose.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**A) Wer die Ersatzteile besitzt, kann das Gerät laut Text in jedem Fall vollständig reparieren.**\n\nAbsatz 8 beschreibt den Gegenfall: Teile ohne das Recht, die Fehlermeldung zu löschen, ergeben keine vollständige Reparatur. In jedem Fall scheitert an diesem Satz.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Die europäischen Regeln verlangen Bauteile und Informationen.**\n\nDer Absatz verlangt nicht nur Schrauben und Dichtungen, sondern auch Informationen. Beide Seiten gehören zur Regel.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Der Verordnungstext allein legt fest, wie weit der Softwarezugang in der Praxis reicht.**\n\nWie weit der Zugang reicht, entscheiden Durchführungsregeln und Behörden, nicht der Verordnungstext allein.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Politische Wende, Reparaturindex und EU-Einigung stehen in der Reihenfolge etwa 2015, 2021, 2024.**\n\nAbsatz 2 datiert die Wende auf etwa 2015, den Index auf 2021 und die Einigung auf 2024. Die Aussage sortiert diese drei Punkte in der Textreihenfolge und vertauscht keinen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) 1995 ist im Text das Jahr der EU-Einigung.**\n\n1995 gehört zum Preisvergleich der Waschmaschine in Absatz 1. Die EU-Einigung ist 2024. Die Jahreszahl ist echt, der Bezug falsch.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.repair"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-06",
-        "case_id": "WISO M2.DE.06",
-        "title": "Wer die Kosten trägt",
-        "context": "Die Aussagen prüfen die ökonomische Verschiebung in Absatz 7.",
+        "case_id": "WISO-M2.DE.06",
+        "title": "Zwei Lager, zwei Größen",
+        "context": "Die Aussagen prüfen, ob Befürworter und Kritiker dieselbe Emissionsfolge ziehen.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Der Text folgert aus dem Verordnungstext logisch, dass die Gesamtkosten sinken.",
-          "Kosten der Pflicht können im Neupreis, in Reparaturrechnungen oder in geringerer Modellvielfalt erscheinen.",
-          "Das Recht auf Reparatur macht aus dem nächsten Verkauf teilweise eine Pflicht der Hersteller.",
-          "Werkstätten verursachen keine Kosten, weil die Pflicht nur die Hersteller trifft.",
-          "Ob die Pflicht die Gesamtkosten senkt, nennt der Text eine empirische Frage."
+          "Absatz 3 und Absatz 4 ziehen dieselbe Schlussfolgerung darüber, ob Reparatur die Emissionen senkt.",
+          "Die Untersuchung im Auftrag einer Umweltbehörde ist eine Modellrechnung und keine gemessene Jahresbilanz.",
+          "Der Text empfiehlt Haushalten, defekte Geräte grundsätzlich nicht mehr zu reparieren.",
+          "Absatz 9 schließt mit einer bereits entschiedenen Erfolgsbilanz der neuen Regeln.",
+          "Der Index spricht über Reparierbarkeit, die Modellrechnung über Emissionen bei längerer Nutzung. Das sind zwei verschiedene Größen."
         ],
         "answer_key": [
           false,
           true,
-          true,
+          false,
           false,
           true
         ],
         "tactical_explanations": [
-          "**A) Der Text folgert aus dem Verordnungstext logisch, dass die Gesamtkosten sinken.**\n\nAbsatz 7 sagt das Gegenteil: Ob die Gesamtkosten sinken, sei kein logisches Ergebnis des Verordnungstextes.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Kosten der Pflicht können im Neupreis, in Reparaturrechnungen oder in geringerer Modellvielfalt erscheinen.**\n\nDie drei Orte, an denen die Kosten erscheinen können, stehen wörtlich: Neupreis, höhere Reparaturrechnungen, geringere Modellvielfalt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Das Recht auf Reparatur macht aus dem nächsten Verkauf teilweise eine Pflicht der Hersteller.**\n\nDer Vorteil der Wegwerflogik war der nächste Verkauf. Diesen Vorteil beschreibt der Text als teilweise in eine Pflicht verwandelt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Werkstätten verursachen keine Kosten, weil die Pflicht nur die Hersteller trifft.**\n\nWerkstätten und Ersatzteillager werden als Kostenverursacher genannt. Dass die Pflicht bei den Herstellern ansetzt, löscht diese Kosten nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Ob die Pflicht die Gesamtkosten senkt, nennt der Text eine empirische Frage.**\n\nDer Absatz endet damit, dass die Frage nach den Gesamtkosten empirisch ist. Die Aussage gibt diese Zurückhaltung wieder und überzieht sie nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Absatz 3 und Absatz 4 ziehen dieselbe Schlussfolgerung darüber, ob Reparatur die Emissionen senkt.**\n\nAbsatz 3 trägt die Hoffnung, verhinderte Neuanschaffung spare Emissionen. Absatz 4 hält einen frühen Austausch für möglicherweise emissionsärmer. Dieselbe Schlussfolgerung wäre das Verwischen dieses Gegensatzes.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Die Untersuchung im Auftrag einer Umweltbehörde ist eine Modellrechnung und keine gemessene Jahresbilanz.**\n\nAbsatz 3 nennt Auftrag, Modellcharakter und die Abgrenzung gegen eine gemessene Bilanz in einem Absatz. Die Aussage behält alle drei Stücke.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Der Text empfiehlt Haushalten, defekte Geräte grundsätzlich nicht mehr zu reparieren.**\n\nDer Text beschreibt eine Wendung hin zur Reparatur und lässt am Ende offen, ob Haushalte sie annehmen. Eine Empfehlung gegen die Reparatur steht nirgends.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Absatz 9 schließt mit einer bereits entschiedenen Erfolgsbilanz der neuen Regeln.**\n\nAbsatz 9 hält die Wirkung für nicht belegt und die Regeln für zu jung. Eine entschiedene Erfolgsbilanz wäre ein anderes Ende.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Der Index spricht über Reparierbarkeit, die Modellrechnung über Emissionen bei längerer Nutzung. Das sind zwei verschiedene Größen.**\n\nAbsatz 6 definiert den Index als Maß der Reparierbarkeit, nicht der Lebensdauer. Absatz 3 rechnet an Emissionen. Die Aussage hält die beiden Maßstäbe auseinander, statt sie zu einer Kennzahl zu addieren.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.repair"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-07",
-        "case_id": "WISO M2.DE.07",
-        "title": "Software und Werkstatt",
-        "context": "Die Aussagen prüfen den Unterschied zwischen Ersatzteil und Diagnosezugang.",
+        "case_id": "WISO-M2.DE.07",
+        "title": "Was der Absatz nicht hergibt",
+        "context": "Die Aussagen prüfen Überdehnungen, die ein einzelnes richtiges Detail zur falschen Allgemeinheit machen.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Viele Störungen lassen sich nur mit Diagnosegeräten auslesen.",
-          "Wer die Ersatzteile besitzt, kann das Gerät laut Text in jedem Fall vollständig reparieren.",
-          "Die europäischen Regeln verlangen auch Informationen, nicht nur Bauteile.",
-          "Der Verordnungstext allein legt abschließend fest, wie weit der Softwarezugang in der Praxis reicht.",
-          "Der Zugang zur Software ist für unabhängige Werkstätten entscheidend."
+          "Zwischen 2021 und 2024 liegen fünf Jahre.",
+          "Die Arbeitsstunde der Fachkraft wurde teurer, während die Waschmaschine real billiger wurde.",
+          "Ausgewählte Produktgruppen bedeutet im Text: alle Produkte des Binnenmarkts.",
+          "Ersatzteile über einen festgelegten Zeitraum gehören zu den 2024 genannten Pflichten.",
+          "Die Indexskala von null bis zehn ist im Text dieselbe Skala wie null bis hundert."
         ],
         "answer_key": [
-          true,
           false,
           true,
           false,
-          true
+          true,
+          false
         ],
         "tactical_explanations": [
-          "**A) Viele Störungen lassen sich nur mit Diagnosegeräten auslesen.**\n\nAbsatz 8 beginnt die technische Schwierigkeit damit, dass sich viele Störungen nur mit herstellerkontrollierten Diagnosegeräten auslesen lassen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Wer die Ersatzteile besitzt, kann das Gerät laut Text in jedem Fall vollständig reparieren.**\n\nDer Text beschreibt den Gegenfall: Teile ohne das Recht, die Fehlermeldung zu löschen, ergeben keine vollständige Reparatur. Das Wort in jedem Fall scheitert an diesem Satz.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Die europäischen Regeln verlangen auch Informationen, nicht nur Bauteile.**\n\nDie Regeln verlangen nicht nur Schrauben und Dichtungen, sondern auch Informationen. Die Aussage trennt Bauteil und Information genau so.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Der Verordnungstext allein legt abschließend fest, wie weit der Softwarezugang in der Praxis reicht.**\n\nWie weit der Zugang reicht, entscheiden laut Text Durchführungsregeln und Behörden, nicht der Verordnungstext allein.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Der Zugang zur Software ist für unabhängige Werkstätten entscheidend.**\n\nDer erste Satz von Absatz 8 sagt, für unabhängige Werkstätten sei der Softwarezugang entscheidend. Die Aussage übernimmt diese Gewichtung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Zwischen 2021 und 2024 liegen fünf Jahre.**\n\n2024 minus 2021 ist drei, nicht fünf. Fünf wäre der Abstand einer anderen Paarung, etwa eines Jahrfünfts, das der Text hier nicht nennt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Die Arbeitsstunde der Fachkraft wurde teurer, während die Waschmaschine real billiger wurde.**\n\nAbsatz 1 stellt genau diese beiden Bewegungen nebeneinander: real billigeres Gerät, teurere Facharbeit. Daraus folgt der verlorene rechnerische Vorteil der Reparatur.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Ausgewählte Produktgruppen bedeutet im Text: alle Produkte des Binnenmarkts.**\n\nAbsatz 2 beschränkt die Regeln auf ausgewählte Produktgruppen. Alle Produkte wäre die Streichung dieser Beschränkung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Ersatzteile über einen festgelegten Zeitraum gehören zu den 2024 genannten Pflichten.**\n\nNeben Reparaturen nach der Gewährleistung und dem Verbot, Werkstätten allein durch Software-Sperren auszuschließen, nennt Absatz 2 die Bereithaltung von Ersatzteilen über einen festgelegten Zeitraum.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Die Indexskala von null bis zehn ist im Text dieselbe Skala wie null bis hundert.**\n\nDer Text nennt null bis zehn. Null bis hundert ist eine andere Skala und steht nicht da. Die Aussage setzt zwei Skalen gleich, die der Absatz unterscheidet, indem er nur eine nennt.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.repair"
+        "difficulty_level": "4/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m2-de-08",
-        "case_id": "WISO M2.DE.08",
-        "title": "Zustimmung und Verhalten",
-        "context": "Die Aussagen prüfen die Lücke zwischen Meinung und Reparaturquote.",
+        "case_id": "WISO-M2.DE.08",
+        "title": "Absicht und Hindernis",
+        "context": "Die Aussagen prüfen, ob ein konstruktives Hindernis schon der Nachweis geplanter Obsoleszenz ist.",
         "kind": "text",
         "with_passage": true,
         "statements": [
+          "Geplante Obsoleszenz ist im Text eine bereits für ganze Branchen belegte Strategie und nicht bloß eine Behauptung.",
+          "Verklebte Akkus erschweren die Reparatur, ohne dass daraus allein eine Absicht folgt.",
+          "Die einzelnen beanstandeten Gerichtsfälle ersetzen den fehlenden allgemeinen Nachweis.",
+          "Ersatzteile nur im Set stehen in derselben Reihe wie fehlende Schaltpläne und verklebte Akkus.",
+          "Der Text setzt jedes konstruktive Reparaturhindernis mit geplanter Obsoleszenz gleich."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Geplante Obsoleszenz ist im Text eine bereits für ganze Branchen belegte Strategie und nicht bloß eine Behauptung.**\n\nAbsatz 5 definiert den Begriff als Behauptung einer absichtlich verkürzten Lebensdauer und sagt, ein allgemeiner Nachweis für ganze Branchen sei nicht erbracht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Verklebte Akkus erschweren die Reparatur, ohne dass daraus allein eine Absicht folgt.**\n\nVerklebte Akkus stehen in der Reihe der konstruktiven Entscheidungen, die Reparaturen erschweren, ohne dass daraus allein eine Absicht folgt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Die einzelnen beanstandeten Gerichtsfälle ersetzen den fehlenden allgemeinen Nachweis.**\n\nDer Absatz trennt die Einzelfälle vom fehlenden allgemeinen Nachweis. Ersetzen würde diese Trennung aufheben.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Ersatzteile nur im Set stehen in derselben Reihe wie fehlende Schaltpläne und verklebte Akkus.**\n\nDie drei Beispiele stehen in einem Satz: verklebte Akkus, fehlende Schaltpläne, Ersatzteile nur im Set. Die Aussage ordnet das dritte Beispiel dieser Reihe zu und macht es nicht zu einem Sonderfall außerhalb.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Der Text setzt jedes konstruktive Reparaturhindernis mit geplanter Obsoleszenz gleich.**\n\nAbsatz 5 zählt die Hindernisse auf und verweigert gerade den Schluss, daraus folge allein die Absicht. Gleichsetzen wäre die Verwechslung, die der Text vermeiden will.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ],
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
+      },
+      {
+        "id": "wiso-m2-de-09",
+        "case_id": "WISO-M2.DE.09",
+        "title": "Empirisch, nicht logisch",
+        "context": "Die Aussagen prüfen den Unterschied zwischen einem Teil der Lücke und einer erschöpfenden Erklärung.",
+        "kind": "text",
+        "with_passage": true,
+        "statements": [
+          "Ob die Pflicht die Gesamtkosten senkt, nennt der Text eine empirische Frage.",
+          "Werkstätten und Ersatzteillager verursachen keine Kosten, weil die Pflicht nur die Hersteller trifft.",
           "Umfragen zeigen hohe Zustimmung und eine deutlich niedrigere tatsächliche Reparaturquote.",
-          "Zeit, Misstrauen und der Vergleich mit einem rabattierten Neugerät erklären einen Teil der Lücke.",
-          "Ein Recht, das niemand ausübt, verändert die Stoffströme im selben Ausmaß wie eine durchgeführte Reparatur.",
-          "Die Wirkung von Index, Ersatzteilpflicht und Softwarezugang ist durch eine mehrjährige Kontrolle bereits belegt.",
-          "Die Regeln sind laut Text für eine solche mehrjährige Kontrolle zu jung."
+          "Zeit, Misstrauen und der Vergleich mit einem rabattierten Neugerät erklären die Lücke restlos und schließen jede andere Ursache aus.",
+          "Absatz 4 lässt offen, dass ein sparsameres Neugerät die Emissionen senken kann, während Absatz 3 auf die Ersparnis verhinderter Neuanschaffung setzt."
         ],
         "answer_key": [
           true,
+          false,
           true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Ob die Pflicht die Gesamtkosten senkt, nennt der Text eine empirische Frage.**\n\nAbsatz 7 endet mit dieser Zurückhaltung. Die Aussage übernimmt sie und macht aus der empirischen Frage keine bereits entschiedene Ersparnis.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Werkstätten und Ersatzteillager verursachen keine Kosten, weil die Pflicht nur die Hersteller trifft.**\n\nAbsatz 7 nennt Werkstätten und Ersatzteillager als Kostenverursacher. Dass die Pflicht bei den Herstellern ansetzt, löscht diese Kosten nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Umfragen zeigen hohe Zustimmung und eine deutlich niedrigere tatsächliche Reparaturquote.**\n\nAbsatz 9 stellt beide Beobachtungen nebeneinander. Die Aussage behält den Gegensatz und macht aus der Quote nicht die Zustimmung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Zeit, Misstrauen und der Vergleich mit einem rabattierten Neugerät erklären die Lücke restlos und schließen jede andere Ursache aus.**\n\nDer Text sagt, diese drei Stücke erklärten einen Teil der Lücke. Restlos und jede andere Ursache ausgeschlossen wäre eine Stärkung, die der Absatz nicht hergibt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Absatz 4 lässt offen, dass ein sparsameres Neugerät die Emissionen senken kann, während Absatz 3 auf die Ersparnis verhinderter Neuanschaffung setzt.**\n\nDas ist der Gegensatz der beiden Absätze: Hoffnung auf ersparte Emissionen durch längere Nutzung gegen den Einwand, ein sparsameres Gerät könne den Austausch rechtfertigen. Die Aussage hält den Gegensatz, statt ihn einzuebnen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ],
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
+      },
+      {
+        "id": "wiso-m2-de-10",
+        "case_id": "WISO-M2.DE.10",
+        "title": "Welcher Absatz welche Arbeit tut",
+        "context": "Die Aussagen prüfen die Funktion eines Absatzes, nicht ein einzelnes herausgelöstes Wort.",
+        "kind": "text",
+        "with_passage": true,
+        "statements": [
+          "Absatz 6 korrigiert die Gleichsetzung von Reparierbarkeit und gemessener Lebensdauer.",
+          "Absatz 8 berichtet eine Abstimmung über den Verkauf eines Wassernetzes.",
+          "Absatz 1 liefert den Preisvergleich von 1995, Absatz 2 die Jahreszahlen etwa 2015, 2021 und 2024.",
+          "Absatz 7 behauptet, die Gesamtkosten sänken als logische Folge des Verordnungstextes.",
+          "Der letzte Absatz lässt offen, ob Haushalte das Reparaturangebot annehmen."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Absatz 6 korrigiert die Gleichsetzung von Reparierbarkeit und gemessener Lebensdauer.**\n\nAbsatz 6 sagt, ein hoher Indexwert bedeute nicht, dass das Gerät lange halte, und ein niedriger nicht, dass es früh ausfalle. Das ist die Korrektur der Gleichsetzung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Absatz 8 berichtet eine Abstimmung über den Verkauf eines Wassernetzes.**\n\nEine Abstimmung über ein Wassernetz gehört nicht in diesen Text. Absatz 8 behandelt Diagnosegeräte, Fehlermeldungen und den Softwarezugang für Werkstätten.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Absatz 1 liefert den Preisvergleich von 1995, Absatz 2 die Jahreszahlen etwa 2015, 2021 und 2024.**\n\nDie Arbeitsteilung der beiden Absätze ist genau diese: Absatz 1 der ältere Preisvergleich, Absatz 2 die drei späteren politischen Daten. Die Aussage vertauscht die Absätze nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Absatz 7 behauptet, die Gesamtkosten sänken als logische Folge des Verordnungstextes.**\n\nAbsatz 7 sagt, das Sinken der Gesamtkosten sei kein logisches Ergebnis des Verordnungstextes. Die Aussage behauptet das Ergebnis, das der Absatz verweigert.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Der letzte Absatz lässt offen, ob Haushalte das Reparaturangebot annehmen.**\n\nAbsatz 9 beginnt mit der offenen Frage, ob Haushalte das Angebot annehmen, und bleibt bei Zustimmung, Quote und fehlender Langzeitkontrolle.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ],
+        "difficulty_level": "4/5",
+        "subsection": "t.main"
+      },
+      {
+        "id": "wiso-m2-de-11",
+        "case_id": "WISO-M2.DE.11",
+        "title": "Kurztext Mietpreisbremse",
+        "context": "Die Aussagen beziehen sich nur auf den kurzen Text zu Neustadt. Zwei davon verlangen eine Rechnung mit den genannten Prozentzahlen.",
+        "kind": "text",
+        "with_passage": true,
+        "statements": [
+          "Der Anstieg im ausgenommenen Neubau ist dreimal so hoch wie der Anstieg der regulierten Neuvertragsmiete.",
+          "Die Bestandsmiete stieg stärker als die regulierte Neuvertragsmiete.",
+          "Neubauten, die ab 2020 erstmals vermietet werden, fallen unter die Bremse.",
+          "Die Studie führt den Anstieg im Neubau ausschließlich auf die Bremse zurück.",
+          "Der Neubauanstieg liegt um 14 Prozentpunkte über dem Anstieg der Bestandsmiete."
+        ],
+        "answer_key": [
+          true,
+          false,
           false,
           false,
           true
         ],
         "tactical_explanations": [
-          "**A) Umfragen zeigen hohe Zustimmung und eine deutlich niedrigere tatsächliche Reparaturquote.**\n\nAbsatz 9 stellt hohe Zustimmung und niedrigere Reparaturquote direkt nebeneinander. Beides gehört zum Befund.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Zeit, Misstrauen und der Vergleich mit einem rabattierten Neugerät erklären einen Teil der Lücke.**\n\nDie drei Erklärungsstücke stehen im selben Absatz: Zeit, Misstrauen gegenüber dem Erfolg, Vergleich mit einem rabattierten Neugerät. Sie erklären einen Teil, nicht zwingend die ganze Lücke, und genau so ist die Aussage formuliert.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Ein Recht, das niemand ausübt, verändert die Stoffströme im selben Ausmaß wie eine durchgeführte Reparatur.**\n\nDer Text sagt, ein nicht ausgeübtes Recht verändere die Stoffströme nicht. Dieselbe Wirkung wie eine echte Reparatur wäre die gegenteilige Behauptung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Die Wirkung von Index, Ersatzteilpflicht und Softwarezugang ist durch eine mehrjährige Kontrolle bereits belegt.**\n\nAbsatz 9 sagt, diese Wirkung sei nicht belegt. Die Aussage behauptet einen bereits vorliegenden Beweis.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Die Regeln sind laut Text für eine solche mehrjährige Kontrolle zu jung.**\n\nDer Grund für die fehlende Beleglage ist das Alter der Regeln: Sie sind für eine mehrjährige Kontrolle zu jung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
-        ],
-        "difficulty_level": "3/5",
-        "subsection": "t.repair"
-      },
-      {
-        "id": "wiso-m2-de-09",
-        "case_id": "WISO M2.DE.09",
-        "title": "Paraphrase über den ganzen Text",
-        "context": "Die Aussagen prüfen, ob eine knappe Wiedergabe den Bezugspunkt verschiebt.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Der Text führt die politische Wende auf das Jahr 1995 zurück.",
-          "Sinkende reale Gerätepreise und teurere Facharbeit werden als Grund genannt, warum die Reparatur an rechnerischem Vorteil verlor.",
-          "Der Text behauptet, jede Reparatur spare zwölf Prozent Emissionen, unabhängig vom Produkt.",
-          "Software-Sperren werden als ein Weg genannt, unabhängige Werkstätten auszuschließen.",
-          "Der Text empfiehlt Haushalten, defekte Geräte grundsätzlich nicht mehr zu reparieren."
-        ],
-        "answer_key": [
-          false,
-          true,
-          false,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) Der Text führt die politische Wende auf das Jahr 1995 zurück.**\n\n1995 ist die Vergleichsmarke für den realen Preis der Waschmaschine. Die politische Wende setzt Absatz 2 etwa 2015 an. Die Jahreszahl ist echt, der Bezug falsch.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Sinkende reale Gerätepreise und teurere Facharbeit werden als Grund genannt, warum die Reparatur an rechnerischem Vorteil verlor.**\n\nAbsatz 1 verbindet den real billigeren Neukauf mit der teureren Arbeitsstunde und zieht daraus den verlorenen rechnerischen Vorteil der Reparatur.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Der Text behauptet, jede Reparatur spare zwölf Prozent Emissionen, unabhängig vom Produkt.**\n\nDie zwölf Prozent gelten als Modell für Smartphones und Waschmaschinen unter genannten Bedingungen, nicht für jede Reparatur und nicht unabhängig vom Produkt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Software-Sperren werden als ein Weg genannt, unabhängige Werkstätten auszuschließen.**\n\nAbsatz 2 nennt Software-Sperren als das Mittel, mit dem unabhängige Werkstätten nicht allein ausgesperrt werden sollen. Der Text setzt dieses Mittel also als vorhandenen Ausschlussweg voraus.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Text empfiehlt Haushalten, defekte Geräte grundsätzlich nicht mehr zu reparieren.**\n\nDer Text beschreibt eine politische Wendung hin zur Reparatur und lässt am Ende offen, ob Haushalte sie annehmen. Eine Empfehlung gegen die Reparatur steht nirgends.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "4/5",
-        "subsection": "t.repair"
-      },
-      {
-        "id": "wiso-m2-de-10",
-        "case_id": "WISO M2.DE.10",
-        "title": "Aufbau und offenes Ende",
-        "context": "Die Aussagen prüfen, welche Absätze einander widersprechen und wie der Text schließt.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Absatz 9 schließt mit einer bereits entschiedenen Erfolgsbilanz der neuen Regeln.",
-          "Der Text unterscheidet an mehreren Stellen zwischen Behauptung, Modellrechnung und Beleg.",
-          "Absatz 3 und Absatz 4 ziehen dieselbe Schlussfolgerung über die Emissionen.",
-          "Der letzte Absatz behandelt vor allem die Frage, ob Haushalte das Angebot annehmen.",
-          "Der Text setzt geplante Obsoleszenz mit jedem konstruktiven Reparaturhindernis gleich."
-        ],
-        "answer_key": [
-          false,
-          true,
-          false,
-          true,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) Absatz 9 schließt mit einer bereits entschiedenen Erfolgsbilanz der neuen Regeln.**\n\nAbsatz 9 hält die Wirkung für nicht belegt und die Regeln für zu jung. Eine entschiedene Erfolgsbilanz wäre ein anderes Ende.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Der Text unterscheidet an mehreren Stellen zwischen Behauptung, Modellrechnung und Beleg.**\n\nDie zwölf Prozent sind eine Modellrechnung, die geplante Obsoleszenz bleibt eine nicht allgemein belegte Behauptung, Einzelfälle vor Gericht sind beanstandet. Der Text trennt diese Stufen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Absatz 3 und Absatz 4 ziehen dieselbe Schlussfolgerung über die Emissionen.**\n\nAbsatz 3 trägt die Hoffnung der Befürworter, Absatz 4 den Einwand, der Austausch könne emissionseitig günstiger sein. Die Schlussfolgerungen fallen auseinander.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Der letzte Absatz behandelt vor allem die Frage, ob Haushalte das Angebot annehmen.**\n\nDer Schlussabsatz beginnt mit der offenen Frage, ob Haushalte das Angebot annehmen, und bleibt bei Zustimmung, Quote und fehlender Langzeitkontrolle.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Text setzt geplante Obsoleszenz mit jedem konstruktiven Reparaturhindernis gleich.**\n\nAbsatz 5 zählt konstruktive Hindernisse auf und sagt, daraus folge nicht allein eine Absicht. Gleichsetzen wäre genau die Verwechslung, die der Text vermeiden will.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
-        ],
-        "difficulty_level": "4/5",
-        "subsection": "t.repair"
-      },
-      {
-        "id": "wiso-m2-de-11",
-        "case_id": "WISO M2.DE.11",
-        "title": "Eigener Kurztext",
-        "context": "Die Aussagen beziehen sich nur auf den kurzen Text zur Mietpreisbremse in Neustadt, nicht auf den Reparaturtext.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Die Bremse gilt auch für Neubauten, die ab 2020 erstmals vermietet werden.",
-          "Bei einer Wiedervermietung darf die neue Miete höchstens zehn Prozent über der ortsüblichen Vergleichsmiete liegen.",
-          "Von 2019 bis 2023 stieg die Miete in den ausgenommenen Neubauten stärker als die Neuvertragsmiete im regulierten Bestand.",
-          "Die Studie führt den Anstieg im Neubau ausschließlich auf die Bremse zurück.",
-          "Der Text bezeichnet die Bremse als Wohnungsbauprogramm."
-        ],
-        "answer_key": [
-          false,
-          true,
-          true,
-          false,
-          false
-        ],
-        "tactical_explanations": [
-          "**A) Die Bremse gilt auch für Neubauten, die ab 2020 erstmals vermietet werden.**\n\nDer Kurztext nimmt Neubauten, die ab 2020 erstmals vermietet werden, von der Bremse aus. Die Aussage dehnt die Regel auf genau diese Gruppe aus.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Bei einer Wiedervermietung darf die neue Miete höchstens zehn Prozent über der ortsüblichen Vergleichsmiete liegen.**\n\nDie Grenze steht im zweiten Satz: höchstens zehn Prozent über der ortsüblichen Vergleichsmiete, und zwar bei Wiedervermietung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Von 2019 bis 2023 stieg die Miete in den ausgenommenen Neubauten stärker als die Neuvertragsmiete im regulierten Bestand.**\n\nAchtzehn Prozent im ausgenommenen Neubau stehen gegen sechs Prozent bei der regulierten Neuvertragsmiete. Achtzehn ist der größere Anstieg.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**A) Der Anstieg im ausgenommenen Neubau ist dreimal so hoch wie der Anstieg der regulierten Neuvertragsmiete.**\n\nAchtzehn geteilt durch sechs ist drei. Die beiden Prozentzahlen stehen im Text, das Verhältnis nicht. Die Rechnung 18/6 bestätigt die Aussage.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die Bestandsmiete stieg stärker als die regulierte Neuvertragsmiete.**\n\nVier Prozent Bestand gegen sechs Prozent regulierte Neuvertragsmiete. Vier ist der kleinere Anstieg. Die Aussage kehrt die Rangfolge um.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Neubauten, die ab 2020 erstmals vermietet werden, fallen unter die Bremse.**\n\nDer Kurztext nimmt genau diese Neubauten von der Bremse aus. Die Aussage dehnt die Regel auf die ausgenommene Gruppe aus.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
           "**D) Die Studie führt den Anstieg im Neubau ausschließlich auf die Bremse zurück.**\n\nDie Studie warnt davor, den Anstieg allein der Bremse zuzuschreiben, und nennt Bauzinsen, Baukosten und ein hinter dem Zuzug zurückbleibendes Angebot.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Der Text bezeichnet die Bremse als Wohnungsbauprogramm.**\n\nDer letzte Satz sagt, die Bremse sei eine Preisvorschrift für einen Teil des Marktes und kein Wohnungsbauprogramm.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**E) Der Neubauanstieg liegt um 14 Prozentpunkte über dem Anstieg der Bestandsmiete.**\n\n18 minus 4 ist 14. Der Text nennt die beiden Anstiege getrennt. Die Differenz ist die Rechnung daraus und keine dritte, im Text schon fertig dastehende Kennzahl. Sie stimmt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "4/5",
+        "difficulty_level": "5/5",
         "subsection": "t.rent",
         "passage_override": "Die Stadt Neustadt führte 2019 eine Mietpreisbremse für bestehende Wohnungen ein. Bei einer Wiedervermietung darf die neue Miete höchstens zehn Prozent über der ortsüblichen Vergleichsmiete liegen. Neubauten, die ab 2020 erstmals vermietet werden, sind von der Bremse ausgenommen. Zwischen 2019 und 2023 stieg die durchschnittliche Bestandsmiete um vier Prozent, die durchschnittliche Neuvertragsmiete im regulierten Bestand um sechs Prozent und die Miete in den ausgenommenen Neubauten um achtzehn Prozent. Eine Studie warnt davor, den Anstieg im Neubau allein der Bremse zuzuschreiben: In denselben Jahren stiegen Bauzinsen und Baukosten, und das Angebot an neuen Wohnungen blieb hinter dem Zuzug zurück. Die Studie hält fest, dass die Bremse eine Preisvorschrift für einen Teil des Marktes ist und kein Wohnungsbauprogramm.",
         "passage_title_override": "Mietpreisbremse und Neubau in Neustadt"

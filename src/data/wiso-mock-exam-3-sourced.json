@@ -307,343 +307,343 @@
     "tasks": [
       {
         "id": "wiso-m3-de-01",
-        "case_id": "WISO M3.DE.01",
-        "title": "Gemeinde und Abstimmung",
-        "context": "Die Aussagen prüfen nur die Angaben in Absatz 1.",
+        "case_id": "WISO-M3.DE.01",
+        "title": "Zwei Rechnungen, eine Differenz",
+        "context": "Die Aussagen verlangen, Grundgebühr und die beiden Jahresrechnungen gegeneinander zu rechnen.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Brunnau betreibt das Trinkwassernetz seit 1958 in kommunaler Hand.",
-          "2018 stimmten 64 Prozent der Abstimmenden für einen Verkauf an einen privaten Betreiber.",
-          "Die Ablehnung erhielt 36 Prozent der abgegebenen Stimmen.",
-          "An der Abstimmung beteiligte sich knapp die Hälfte der Stimmberechtigten.",
-          "Das Netz beliefert etwa 18.000 Haushalte und ist 86 Kilometer lang."
+          "Die Jahresgrundgebühr des Beispielhaushalts ist größer als die Differenz zwischen der Brunnauer Rechnung von 336 Euro und der Kleinauer von 310 Euro.",
+          "Kleinau ist beim Beispielhaushalt um mehr als 50 Euro billiger.",
+          "100 Kubikmeter mal 2,40 Euro ergeben 240 Euro Mengenentgelt.",
+          "Kleinau verlangt neben 3,10 Euro je Kubikmeter dieselbe Grundgebühr wie Brunnau.",
+          "Wer nur 336 gegen 310 hält, hat laut Absatz 3 bereits über Lecks und Rohralter mitentschieden."
         ],
         "answer_key": [
           true,
           false,
-          false,
           true,
-          true
+          false,
+          false
         ],
         "tactical_explanations": [
-          "**A) Brunnau betreibt das Trinkwassernetz seit 1958 in kommunaler Hand.**\n\nAbsatz 1 beginnt damit, dass die Kommune das Netz seit 1958 selbst betreibt. Kommunale Hand ist genau diese Trägerschaft.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) 2018 stimmten 64 Prozent der Abstimmenden für einen Verkauf an einen privaten Betreiber.**\n\n64 Prozent lehnten den Verkauf ab. Die Aussage kehrt die Mehrheit in eine Zustimmung um.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Die Ablehnung erhielt 36 Prozent der abgegebenen Stimmen.**\n\n36 Prozent stimmten zu. Die Ablehnung ist mit 64 Prozent beziffert. Die Aussage hängt die kleinere Zahl an das falsche Lager.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) An der Abstimmung beteiligte sich knapp die Hälfte der Stimmberechtigten.**\n\n49 Prozent Beteiligung liegen knapp unter der Hälfte. Die Aussage sagt knapp die Hälfte und dehnt die Zahl nicht auf alle Einwohner aus.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Das Netz beliefert etwa 18.000 Haushalte und ist 86 Kilometer lang.**\n\nBeide Größen stehen im selben Absatz: etwa 18.000 Haushalte und 86 Kilometer Rohre.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Die Jahresgrundgebühr des Beispielhaushalts ist größer als die Differenz zwischen der Brunnauer Rechnung von 336 Euro und der Kleinauer von 310 Euro.**\n\nAcht Euro mal zwölf sind 96 Euro Grundgebühr. 336 minus 310 sind 26 Euro Differenz. 96 ist größer als 26. Beide Bausteine stehen im Text, der Vergleich nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Kleinau ist beim Beispielhaushalt um mehr als 50 Euro billiger.**\n\nDie Differenz ist 26 Euro, nicht mehr als 50. Kleinau ist billiger, aber nicht um diesen Betrag.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 100 Kubikmeter mal 2,40 Euro ergeben 240 Euro Mengenentgelt.**\n\nAbsatz 2 rechnet 100 mal 2,40 Euro als 240 Euro Mengenentgelt vor. Zusammen mit 96 Euro Grundgebühr entstehen die 336 Euro.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Kleinau verlangt neben 3,10 Euro je Kubikmeter dieselbe Grundgebühr wie Brunnau.**\n\nIn Kleinau gibt es keine Grundgebühr. Dieselbe Grundgebühr ist ausdrücklich verneint.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Wer nur 336 gegen 310 hält, hat laut Absatz 3 bereits über Lecks und Rohralter mitentschieden.**\n\nAbsatz 3 sagt, der Vergleich der Rechnung täusche, wenn man nur auf den Endbetrag sehe, und nennt danach Lecks und Rohralter als weitere Größen. Der Endbetrag allein entscheidet diese Größen nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "2/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-02",
-        "case_id": "WISO M3.DE.02",
-        "title": "Zwei Rechnungen",
-        "context": "Die Aussagen prüfen Grundgebühr, Mengenpreis und den Vergleich mit Kleinau.",
+        "case_id": "WISO-M3.DE.02",
+        "title": "1,1 von 4,2",
+        "context": "Die Aussagen prüfen, ob ein Teilbetrag zur ganzen Investition oder zum Wasserverlust umgedeutet wird.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Die Grundgebühr in Brunnau hängt von der entnommenen Menge ab.",
-          "100 Kubikmeter kosten in Brunnau 336 Euro, davon 96 Euro Grundgebühr.",
-          "Kleinau verlangt neben 3,10 Euro je Kubikmeter eine Grundgebühr in derselben Höhe wie Brunnau.",
-          "Dieselben 100 Kubikmeter sind in Kleinau billiger als in Brunnau.",
-          "Kleinau hat das Netz 2011 einem Konzessionär übergeben."
-        ],
-        "answer_key": [
-          false,
-          true,
-          false,
-          true,
-          true
-        ],
-        "tactical_explanations": [
-          "**A) Die Grundgebühr in Brunnau hängt von der entnommenen Menge ab.**\n\nAbsatz 2 sagt, die Grundgebühr von 8 Euro im Monat falle unabhängig von der Menge an. Eine Mengenabhängigkeit hätte das Mengenentgelt, nicht die Grundgebühr.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) 100 Kubikmeter kosten in Brunnau 336 Euro, davon 96 Euro Grundgebühr.**\n\n8 Euro mal 12 Monate sind 96 Euro. 100 mal 2,40 Euro sind 240 Euro. Die Summe 336 Euro steht im Text.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Kleinau verlangt neben 3,10 Euro je Kubikmeter eine Grundgebühr in derselben Höhe wie Brunnau.**\n\nIn Kleinau gibt es keine Grundgebühr. Dieselbe Grundgebühr wie in Brunnau ist ausdrücklich verneint.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Dieselben 100 Kubikmeter sind in Kleinau billiger als in Brunnau.**\n\n310 Euro in Kleinau stehen gegen 336 Euro in Brunnau. Für diesen Verbrauch ist Kleinau der kleinere Rechnungsbetrag. Der nächste Absatz warnt nur davor, daraus schon den ganzen Vergleich zu machen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Kleinau hat das Netz 2011 einem Konzessionär übergeben.**\n\nDie Übergabe an den Konzessionär ist auf 2011 datiert. Das ist eine andere Jahreszahl als die Abstimmung 2018 in Brunnau.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
-        ],
-        "difficulty_level": "3/5",
-        "subsection": "t.water"
-      },
-      {
-        "id": "wiso-m3-de-03",
-        "case_id": "WISO M3.DE.03",
-        "title": "Lecks, Rohre, Investition",
-        "context": "Die Aussagen prüfen die Kennzahlen in Absatz 3, nicht die Warnung der Ingenieurin.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Die Verlustrate in Kleinau liegt über der Verlustrate in Brunnau.",
-          "38 Prozent des Wassers gehen in Brunnau verloren, weil 38 Prozent der Rohre älter als 50 Jahre sind.",
-          "Die Investitionen 2023 betrugen 4,2 Millionen Euro.",
+          "1,1 Millionen Euro sind mehr als die Hälfte der Investition von 4,2 Millionen Euro.",
+          "1,1 Millionen Euro sind weniger als ein Drittel von 4,2 Millionen Euro.",
           "Die Grundgebühren deckten 2023 den gesamten Investitionsbetrag.",
-          "Ein Teil der Investition kam aus dem Gemeindehaushalt."
-        ],
-        "answer_key": [
-          true,
-          false,
-          true,
-          false,
-          true
-        ],
-        "tactical_explanations": [
-          "**A) Die Verlustrate in Kleinau liegt über der Verlustrate in Brunnau.**\n\n12 Prozent in Brunnau und 21 Prozent in Kleinau: die Kleinauer Rate ist höher. Absatz 8 warnt später vor falschen Schlüssen aus Prozenten, hebt diese Rangfolge aber nicht auf.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) 38 Prozent des Wassers gehen in Brunnau verloren, weil 38 Prozent der Rohre älter als 50 Jahre sind.**\n\nAbsatz 3 nennt 38 Prozent alte Rohre und getrennt davon 12 Prozent Wasserverlust. Die Aussage setzt die beiden Prozent gleich. Genau diese Verwechslung greift Absatz 8 später an.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Die Investitionen 2023 betrugen 4,2 Millionen Euro.**\n\nDer Investitionsbetrag 2023 ist mit 4,2 Millionen Euro angegeben.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Die Grundgebühren deckten 2023 den gesamten Investitionsbetrag.**\n\nDie Grundgebühren deckten 1,1 von 4,2 Millionen Euro. Der gesamte Betrag wäre nur gedeckt, wenn 1,1 gleich 4,2 wäre.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**E) Ein Teil der Investition kam aus dem Gemeindehaushalt.**\n\nDer Rest nach den Grundgebühren kam aus dem Überschuss des Mengenentgelts und aus dem Gemeindehaushalt. Der Haushalt ist damit eine der genannten Quellen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
-        ],
-        "difficulty_level": "4/5",
-        "subsection": "t.water"
-      },
-      {
-        "id": "wiso-m3-de-04",
-        "case_id": "WISO M3.DE.04",
-        "title": "Preis null und Grundbedarf",
-        "context": "Die Aussagen prüfen die doppelte Funktion des Preises in Absatz 4.",
-        "kind": "text",
-        "with_passage": true,
-        "statements": [
-          "Ein Kubikmeterpreis von null würde die Knappheit des Brunnens sichtbar machen.",
-          "Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen belasten.",
-          "Die Grundgebühr soll in der dargestellten Logik das Netz tragen.",
-          "Der Kubikmeterpreis soll die Entnahme drosseln helfen.",
-          "Der Text hält Wasser entweder nur für ein knappes Gut oder nur für ein Grundbedürfnis, nicht für beides."
+          "Ein Teil der Investition kam aus dem Gemeindehaushalt.",
+          "38 Prozent Rohre, die älter als 50 Jahre sind, bedeuten 38 Prozent Wasserverlust."
         ],
         "answer_key": [
           false,
           true,
-          true,
+          false,
           true,
           false
         ],
         "tactical_explanations": [
-          "**A) Ein Kubikmeterpreis von null würde die Knappheit des Brunnens sichtbar machen.**\n\nAbsatz 4 sagt, ein Preis von null verdecke die Knappheit des Brunnens. Sichtbar machen wäre die umgekehrte Wirkung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen belasten.**\n\nDerselbe Absatz nennt diese Verteilungswirkung: Volle Kosten können kleine Einkommen treffen, auch wenn nur der Grundbedarf entnommen wird.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Die Grundgebühr soll in der dargestellten Logik das Netz tragen.**\n\nDie Gemeinde teilt die Aufgaben: Grundgebühr für das Netz, Kubikmeterpreis für das Sparen. Die erste Hälfte steht so in der Aussage.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Der Kubikmeterpreis soll die Entnahme drosseln helfen.**\n\nDer Kubikmeterpreis soll sparen helfen. Das ist die zweite Hälfte desselben Satzes und keine zusätzliche Erfindung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Text hält Wasser entweder nur für ein knappes Gut oder nur für ein Grundbedürfnis, nicht für beides.**\n\nDer Absatz beginnt damit, dass Wasser beides zugleich ist. Ein Entweder-oder widerspricht dem ersten Satz.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**A) 1,1 Millionen Euro sind mehr als die Hälfte der Investition von 4,2 Millionen Euro.**\n\nDie Hälfte von 4,2 ist 2,1. 1,1 liegt darunter. Mehr als die Hälfte wäre ein anderer Deckungsgrad als der genannte.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) 1,1 Millionen Euro sind weniger als ein Drittel von 4,2 Millionen Euro.**\n\nEin Drittel von 4,2 ist 1,4. 1,1 ist kleiner als 1,4. Der Text nennt 1,1 und 4,2 getrennt. Die Aussage ist die Rechnung daraus.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Die Grundgebühren deckten 2023 den gesamten Investitionsbetrag.**\n\n1,1 von 4,2 ist ein Teil. Der gesamte Betrag wäre nur gedeckt, wenn beide Zahlen gleich wären.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Ein Teil der Investition kam aus dem Gemeindehaushalt.**\n\nDer Rest nach den Grundgebühren kam aus dem Überschuss des Mengenentgelts und aus dem Gemeindehaushalt. Der Haushalt ist eine der genannten Quellen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) 38 Prozent Rohre, die älter als 50 Jahre sind, bedeuten 38 Prozent Wasserverlust.**\n\nAbsatz 3 nennt 38 Prozent alte Rohre und getrennt davon 12 Prozent Wasserverlust. Absatz 8 verbietet später genau diese Gleichsetzung.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
-        "id": "wiso-m3-de-05",
-        "case_id": "WISO M3.DE.05",
-        "title": "Wer die Grundgebühr nicht zahlt",
-        "context": "Die Aussagen prüfen den Sozialerlass und seine Finanzierung.",
+        "id": "wiso-m3-de-03",
+        "case_id": "WISO-M3.DE.03",
+        "title": "21, 15 und 12",
+        "context": "Die Aussagen zwingen dazu, drei verschiedene Prozentzahlen auseinanderzuhalten: Verlust Brunnau, Vertrag Kleinau, Verlust Kleinau.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "1.200 Haushalte sind ein Sechstel der 18.000 Haushalte.",
-          "Die Grundgebühr entfällt nur unter einer vom Gemeinderat beschlossenen Einkommensschwelle.",
+          "Kleinaus Verlustrate liegt sowohl über der Brunnauer Rate als auch über der vertraglichen Höchstgrenze.",
+          "Die vertragliche Höchstverlustrate beträgt 12 Prozent.",
+          "Kleinau hat die zulässige Vertragsstrafe bis 2024 bereits eingezogen.",
+          "Brunnau hat keine solche Klausel, weil es keinen externen Betreiber gibt.",
+          "Der Text setzt die Vertragsstrafe auf die Differenz von 21 minus 15, also auf 6 Prozentpunkte, fest."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Kleinaus Verlustrate liegt sowohl über der Brunnauer Rate als auch über der vertraglichen Höchstgrenze.**\n\n21 Prozent in Kleinau stehen gegen 12 Prozent in Brunnau und gegen die vertragliche Grenze von 15 Prozent. 21 liegt über beiden. Die Aussage bündelt zwei Vergleiche, die der Text an verschiedenen Stellen lässt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die vertragliche Höchstverlustrate beträgt 12 Prozent.**\n\n15 Prozent ist die vertragliche Höchstgrenze. 12 Prozent ist die tatsächliche Verlustrate Brunnaus. Die Aussage hängt die Brunnauer Messzahl an den Kleinauer Vertrag.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Kleinau hat die zulässige Vertragsstrafe bis 2024 bereits eingezogen.**\n\nKleinau darf die Strafe verlangen und hat das bis 2024 nicht getan. Eingezogen ist das Gegenteil.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Brunnau hat keine solche Klausel, weil es keinen externen Betreiber gibt.**\n\nAbsatz 7 gibt diese Begründung ausdrücklich. Sie ist keine zusätzliche Vermutung über einen fehlenden Gemeinderat.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Der Text setzt die Vertragsstrafe auf die Differenz von 21 minus 15, also auf 6 Prozentpunkte, fest.**\n\n21 und 15 stehen im Text, die Differenz 6 und ein darauf lautendes Strafmaß nicht. Die Strafe wird nur als bestehende Möglichkeit genannt, nicht als Prozentformel.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ],
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
+      },
+      {
+        "id": "wiso-m3-de-04",
+        "case_id": "WISO-M3.DE.04",
+        "title": "1.200 von 18.000",
+        "context": "Die Aussagen prüfen Brüche, die der Text selbst zurückweist, und eine Prozentrechnung, die danebenliegt.",
+        "kind": "text",
+        "with_passage": true,
+        "statements": [
+          "1.200 von 18.000 Haushalten sind ein Sechstel.",
+          "1.200 von 18.000 Haushalten sind ein Fünfzehntel, rund 6,7 Prozent.",
           "Der erlassene Betrag wird als eigener Zuschlag auf die übrigen Haushalte umgelegt.",
-          "Rund 6,7 Prozent der Haushalte sind von der Grundgebühr befreit.",
+          "1.200 Haushalte sind genau 6 Prozent von 18.000.",
           "Der Erlass kann als Zuschuss der Gemeinde sichtbar werden."
         ],
         "answer_key": [
           false,
           true,
           false,
-          true,
+          false,
           true
         ],
         "tactical_explanations": [
-          "**A) 1.200 Haushalte sind ein Sechstel der 18.000 Haushalte.**\n\n1.200 von 18.000 ist ein Fünfzehntel, rund 6,7 Prozent. Ein Sechstel wäre etwa 16,7 Prozent. Der Text verneint das Sechstel ausdrücklich.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Die Grundgebühr entfällt nur unter einer vom Gemeinderat beschlossenen Einkommensschwelle.**\n\nDie Bedingung ist die Einkommensschwelle, und beschlossen hat sie der Gemeinderat. Beides steht in Absatz 5.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Der erlassene Betrag wird als eigener Zuschlag auf die übrigen Haushalte umgelegt.**\n\nDer Text sagt, der Betrag werde nicht als eigener Zuschlag auf die übrigen Haushalte umgelegt. Die Aussage behauptet diese Umlage.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Rund 6,7 Prozent der Haushalte sind von der Grundgebühr befreit.**\n\nRund 6,7 Prozent ist die Prozentform desselben Bruchs 1.200/18.000. Die Aussage bleibt bei der Rundung des Textes.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Erlass kann als Zuschuss der Gemeinde sichtbar werden.**\n\nDer geringere Überschuss des Werks erscheint häufiger als Zuschuss der Gemeinde. Die Aussage sagt können und überzieht den Text nicht zu einem Automatismus in jedem Jahr.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) 1.200 von 18.000 Haushalten sind ein Sechstel.**\n\nEin Sechstel von 18.000 wäre 3.000. 1.200 ist ein Fünfzehntel. Absatz 5 verneint das Sechstel ausdrücklich.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) 1.200 von 18.000 Haushalten sind ein Fünfzehntel, rund 6,7 Prozent.**\n\n18.000 geteilt durch 1.200 ist 15, und 1.200/18.000 ist rund 6,7 Prozent. Der Text nennt beide Formen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Der erlassene Betrag wird als eigener Zuschlag auf die übrigen Haushalte umgelegt.**\n\nAbsatz 5 sagt, der Betrag werde nicht als eigener Zuschlag auf die übrigen Haushalte umgelegt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) 1.200 Haushalte sind genau 6 Prozent von 18.000.**\n\nSechs Prozent von 18.000 sind 1.080, nicht 1.200. 1.200 sind rund 6,7 Prozent. Genau 6 Prozent wäre eine andere Haushaltszahl.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Der Erlass kann als Zuschuss der Gemeinde sichtbar werden.**\n\nDer geringere Überschuss des Werks erscheint häufiger als Zuschuss der Gemeinde. Die Aussage sagt können und macht daraus keinen Automatismus für jedes Jahr.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
+      },
+      {
+        "id": "wiso-m3-de-05",
+        "case_id": "WISO-M3.DE.05",
+        "title": "64 Prozent von 49 Prozent",
+        "context": "Die Aussagen prüfen, ob eine Mehrheit der Abstimmenden schon eine Mehrheit aller Stimmberechtigten ist.",
+        "kind": "text",
+        "with_passage": true,
+        "statements": [
+          "64 Prozent der Abstimmenden lehnten den Verkauf ab.",
+          "Weil 64 Prozent der Abstimmenden ablehnten und die Beteiligung 49 Prozent betrug, lehnte eine Mehrheit aller Stimmberechtigten ab.",
+          "36 Prozent der Abstimmenden stimmten dem Verkauf zu.",
+          "Die Kommune betreibt das Netz seit 1958 selbst.",
+          "64 plus 36 ergibt 100, also war die Beteiligung vollständig."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) 64 Prozent der Abstimmenden lehnten den Verkauf ab.**\n\nAbsatz 1 ordnet 64 Prozent der Ablehnung und 36 Prozent der Zustimmung zu, jeweils unter den Abstimmenden.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil 64 Prozent der Abstimmenden ablehnten und die Beteiligung 49 Prozent betrug, lehnte eine Mehrheit aller Stimmberechtigten ab.**\n\n64 Prozent von 49 Prozent Beteiligung sind etwa 31 Prozent aller Stimmberechtigten. Das ist keine Mehrheit der Stimmberechtigten. Die Aussage multipliziert die beiden echten Zahlen und liest das Produkt als Mehrheit. Das Produkt trägt diese Lesart nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 36 Prozent der Abstimmenden stimmten dem Verkauf zu.**\n\n36 Prozent stimmten zu. Die Aussage lässt diese Zahl bei der Zustimmung und schiebt sie nicht auf die Ablehnung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Die Kommune betreibt das Netz seit 1958 selbst.**\n\nDer erste Satz datiert den kommunalen Betrieb auf 1958. Das ist eine andere Jahreszahl als die Abstimmung 2018 und die Konzession Kleinaus 2011.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) 64 plus 36 ergibt 100, also war die Beteiligung vollständig.**\n\n64 und 36 sind Anteile der abgegebenen Stimmen und ergänzen sich zu 100 Prozent der Abstimmenden. Die Beteiligung war 49 Prozent der Stimmberechtigten. Vollständig wäre eine andere Größe.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ],
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-06",
-        "case_id": "WISO M3.DE.06",
-        "title": "Eigentum und Regeln",
-        "context": "Die Aussagen prüfen die Trennung zweier Fragen in Absatz 6.",
+        "case_id": "WISO-M3.DE.06",
+        "title": "Nicht addieren",
+        "context": "Die Aussagen prüfen, ob zwei Prozent aus Absatz 3 zu einer dritten Kennzahl addiert werden dürfen.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Der Text behandelt Eigentum und Aufsicht als dieselbe Frage.",
           "Ein privater Konzessionär kann unter harter Preisaufsicht stehen.",
           "Ein Gemeindebetrieb ist laut Text schon durch die Eigentumsform vor Verfall geschützt.",
-          "Die Eigentumsform entscheidet nicht allein über Lecks, Preise und Erneuerung.",
-          "Die Vermischung der beiden Fragen gehört in die Debatte vor der Abstimmung von 2018."
+          "Die Abstimmung von 2018 hat eine ewige Organisationsform beschlossen.",
+          "Absatz 8 verbietet, Verlustrate und Rohralter gleichzusetzen oder zu addieren.",
+          "12 Prozent Wasserverlust plus 38 Prozent alte Rohre ergeben laut Text eine Kennzahl von 50 Prozent."
         ],
         "answer_key": [
-          false,
           true,
           false,
+          false,
           true,
-          true
+          false
         ],
         "tactical_explanations": [
-          "**A) Der Text behandelt Eigentum und Aufsicht als dieselbe Frage.**\n\nAbsatz 6 trennt, wem das Netz gehört, von den Regeln für Preis, Investition und Qualität. Dieselbe Frage wäre die Vermischung, die der Text auflöst.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Ein privater Konzessionär kann unter harter Preisaufsicht stehen.**\n\nDer Text nennt diesen Fall ausdrücklich: Ein privater Konzessionär kann unter harter Preisaufsicht stehen. Eigentum privat heißt nicht Aufsicht gleich null.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Ein Gemeindebetrieb ist laut Text schon durch die Eigentumsform vor Verfall geschützt.**\n\nEin Gemeindebetrieb kann ohne Aufsicht verfallen. Die Eigentumsform allein schützt nicht. Die Aussage behauptet einen Schutz, den der Text verneint.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Die Eigentumsform entscheidet nicht allein über Lecks, Preise und Erneuerung.**\n\nDer letzte Satz von Absatz 6 sagt, die Eigentumsform entscheide nicht allein über Lecks, Preise und Erneuerung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Die Vermischung der beiden Fragen gehört in die Debatte vor der Abstimmung von 2018.**\n\nDie Vermischung wird in die Debatte vor der Abstimmung von 2018 gelegt, nicht in eine spätere Sitzung und nicht in den Kleinauer Vertrag.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Ein privater Konzessionär kann unter harter Preisaufsicht stehen.**\n\nAbsatz 6 nennt diesen Fall ausdrücklich. Privat und Aufsicht gleich null ist die Vermischung, die der Absatz auflöst.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Ein Gemeindebetrieb ist laut Text schon durch die Eigentumsform vor Verfall geschützt.**\n\nEin Gemeindebetrieb kann ohne Aufsicht verfallen. Die Eigentumsform allein schützt nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Die Abstimmung von 2018 hat eine ewige Organisationsform beschlossen.**\n\nAbsatz 9 sagt, die Abstimmung habe einen Verkauf abgelehnt und keine ewige Organisationsform beschlossen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Absatz 8 verbietet, Verlustrate und Rohralter gleichzusetzen oder zu addieren.**\n\nDie Ingenieurin warnt, 38 Prozent alte Rohre bedeuteten nicht 38 Prozent Wasserverlust, und die Summe der beiden Prozent sei keine kennzeichnende dritte Zahl.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) 12 Prozent Wasserverlust plus 38 Prozent alte Rohre ergeben laut Text eine Kennzahl von 50 Prozent.**\n\n12 plus 38 ist rechnerisch 50, aber Absatz 8 sagt, wer die beiden Prozent addiere, erhalte keine kennzeichnende Kennzahl. Die Aussage macht aus der verbotenen Summe einen Textbefund.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "4/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-07",
-        "case_id": "WISO M3.DE.07",
-        "title": "Vertrag, Strafe, Gemeinderat",
-        "context": "Die Aussagen prüfen Fristen und die unterschiedliche Steuerung der beiden Gemeinden.",
+        "case_id": "WISO-M3.DE.07",
+        "title": "2011 plus 20",
+        "context": "Die Aussagen prüfen, ob das Vertragsende zur Überschreitung und zur Investition passt.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Der Kleinauer Vertrag endet 2031 und ist auf 20 Jahre geschlossen.",
-          "Die Höchstverlustrate im Vertrag beträgt 12 Prozent.",
-          "Kleinau hat die zulässige Vertragsstrafe bis 2024 bereits eingezogen.",
-          "Brunnau verzichtet auf eine solche Klausel, weil kein externer Betreiber vorhanden ist.",
-          "Der Brunnauer Gemeinderat kann die Investition jedes Jahr streichen."
+          "2011 plus eine Laufzeit von 20 Jahren trifft das im Text genannte Vertragsende 2031.",
+          "Die Überschreitung der Höchstverlustrate begann 2024.",
+          "Der Brunnauer Gemeinderat kann die Investition jedes Jahr streichen.",
+          "Das Investitionsjahr 2023 mit 4,2 Millionen Euro entscheidet bereits, dass die Rohre rechtzeitig erneuert werden.",
+          "Die Ingenieurin hält 38 Prozent Rohralter und 38 Prozent Wasserverlust für dieselbe Aussage."
         ],
         "answer_key": [
           true,
           false,
-          false,
           true,
-          true
+          false,
+          false
         ],
         "tactical_explanations": [
-          "**A) Der Kleinauer Vertrag endet 2031 und ist auf 20 Jahre geschlossen.**\n\nAbsatz 7 nennt beide Angaben zusammen: Laufzeit 20 Jahre, Ende 2031. Das passt zu einem Beginn um 2011, den Absatz 2 für die Konzession nennt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Die Höchstverlustrate im Vertrag beträgt 12 Prozent.**\n\nDie vertragliche Höchstverlustrate ist 15 Prozent. 12 Prozent ist die tatsächliche Verlustrate Brunnaus, nicht die Kleinauer Vertragsgrenze.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Kleinau hat die zulässige Vertragsstrafe bis 2024 bereits eingezogen.**\n\nKleinau darf die Strafe verlangen und hat das bis 2024 nicht getan. Eingezogen ist das Gegenteil des Textes.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Brunnau verzichtet auf eine solche Klausel, weil kein externer Betreiber vorhanden ist.**\n\nBrunnau hat die Klausel nicht, weil es keinen externen Betreiber gibt. Die Begründung steht im Text und ist keine zusätzliche Vermutung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Brunnauer Gemeinderat kann die Investition jedes Jahr streichen.**\n\nStatt einer Vertragsstrafe kann der Gemeinderat die Investition jedes Jahr neu beschließen oder streichen. Das Streichen ist ausdrücklich genannt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) 2011 plus eine Laufzeit von 20 Jahren trifft das im Text genannte Vertragsende 2031.**\n\nAbsatz 2 datiert die Konzession auf 2011, Absatz 7 die Laufzeit auf 20 Jahre und das Ende auf 2031. 2011 plus 20 ist 2031. Die Aussage prüft, ob die drei Angaben zusammenpassen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die Überschreitung der Höchstverlustrate begann 2024.**\n\nDie Überschreitung läuft seit 2019. 2024 ist das Jahr, bis zu dem die Strafe nicht eingezogen wurde, nicht der Beginn der Überschreitung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Der Brunnauer Gemeinderat kann die Investition jedes Jahr streichen.**\n\nStatt einer Vertragsstrafe kann der Gemeinderat die Investition jedes Jahr neu beschließen oder streichen. Das Streichen ist ausdrücklich genannt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Das Investitionsjahr 2023 mit 4,2 Millionen Euro entscheidet bereits, dass die Rohre rechtzeitig erneuert werden.**\n\nDer letzte Satz sagt, ein einzelnes Jahr mit 4,2 Millionen Euro entscheide diese Frage nicht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Die Ingenieurin hält 38 Prozent Rohralter und 38 Prozent Wasserverlust für dieselbe Aussage.**\n\nSie warnt vor genau dieser Gleichsetzung. 38 Prozent alte Rohre bedeuten nicht 38 Prozent Wasserverlust.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "4/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-08",
-        "case_id": "WISO M3.DE.08",
-        "title": "Zwei Prozent, zwei Messungen",
-        "context": "Die Aussagen prüfen die Warnung der Ingenieurin.",
+        "case_id": "WISO-M3.DE.08",
+        "title": "Preis null und 96 von 336",
+        "context": "Die Aussagen verbinden die Preisfunktion mit einer Rechnung aus der Beispielrechnung.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Die Ingenieurin hält 38 Prozent Rohralter und 38 Prozent Wasserverlust für dieselbe Aussage.",
-          "Verlustrate und Alter der Rohre sind zwei verschiedene Messungen.",
-          "Die Summe aus Verlustrate und Anteil alter Rohre ergibt laut Text eine kennzeichnende dritte Kennzahl.",
-          "Zwölf Prozent Verlust auf einem alten Netz lassen sich nicht ohne weiteres mit zwölf Prozent auf einem neuen Netz gleichsetzen.",
-          "Die Warnung richtet sich gegen das Addieren der beiden Prozentsätze."
+          "Ein Kubikmeterpreis von null macht die Knappheit des Brunnens sichtbar.",
+          "Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen belasten.",
+          "Die Grundgebühr soll das Netz tragen, der Kubikmeterpreis soll sparen helfen.",
+          "Wasser ist im Text entweder nur ein knappes Gut oder nur ein Grundbedürfnis.",
+          "Die Jahresgrundgebühr von 96 Euro ist mehr als ein Viertel der Brunnauer Jahresrechnung von 336 Euro."
         ],
         "answer_key": [
           false,
           true,
-          false,
           true,
+          false,
           true
         ],
         "tactical_explanations": [
-          "**A) Die Ingenieurin hält 38 Prozent Rohralter und 38 Prozent Wasserverlust für dieselbe Aussage.**\n\nSie warnt vor genau dieser Gleichsetzung. 38 Prozent alte Rohre bedeuten nicht 38 Prozent Wasserverlust.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Verlustrate und Alter der Rohre sind zwei verschiedene Messungen.**\n\nDer Satz stellt die beiden Messungen nebeneinander und nennt sie verschieden. Die Aussage gibt diese Trennung wieder.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Die Summe aus Verlustrate und Anteil alter Rohre ergibt laut Text eine kennzeichnende dritte Kennzahl.**\n\nWer die beiden Prozent addiert, erhält laut Text keine kennzeichnende dritte Zahl. Die Aussage behauptet das Gegenteil.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Zwölf Prozent Verlust auf einem alten Netz lassen sich nicht ohne weiteres mit zwölf Prozent auf einem neuen Netz gleichsetzen.**\n\nDer erste Satz der Warnung sagt, zwölf Prozent auf einem alten Netz seien nicht dasselbe wie zwölf Prozent auf einem neuen Netz.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Die Warnung richtet sich gegen das Addieren der beiden Prozentsätze.**\n\nDas Addieren ist der Trugschluss, vor dem der Absatz warnt. Die Aussage benennt dieses Ziel der Warnung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+          "**A) Ein Kubikmeterpreis von null macht die Knappheit des Brunnens sichtbar.**\n\nAbsatz 4 sagt, ein Preis von null verdecke die Knappheit. Sichtbar machen wäre die umgekehrte Wirkung.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Ein Preis, der die vollen Kosten trägt, kann Haushalte mit kleinem Einkommen belasten.**\n\nDerselbe Absatz nennt diese Verteilungswirkung auch für Haushalte, die kaum mehr als den Grundbedarf entnehmen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Die Grundgebühr soll das Netz tragen, der Kubikmeterpreis soll sparen helfen.**\n\nDie Gemeinde teilt die Aufgaben in diesem Satz. Die Aussage gibt beide Hälften wieder und vertauscht sie nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Wasser ist im Text entweder nur ein knappes Gut oder nur ein Grundbedürfnis.**\n\nDer Absatz beginnt damit, dass Wasser beides zugleich ist. Ein Entweder-oder widerspricht dem ersten Satz.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Die Jahresgrundgebühr von 96 Euro ist mehr als ein Viertel der Brunnauer Jahresrechnung von 336 Euro.**\n\n96 geteilt durch 336 ist etwa 0,286 und damit mehr als 0,25. Ein Viertel von 336 wäre 84. Die Grundgebühr liegt darüber. Die Rechnung steht so nicht im Text, sie folgt aus 96 und 336.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "3/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-09",
-        "case_id": "WISO M3.DE.09",
-        "title": "Was 2018 nicht beschlossen hat",
-        "context": "Die Aussagen prüfen den offenen Schluss.",
+        "case_id": "WISO-M3.DE.09",
+        "title": "Absatzarbeit und eine falsche Mehrheit",
+        "context": "Die Aussagen prüfen, welcher Absatz welche Zahlen trägt, und eine Mehrheit, die aus zwei Prozent nicht folgt.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Die Abstimmung von 2018 hat eine ewige Organisationsform beschlossen.",
-          "Die Abstimmung hat einen Verkauf abgelehnt.",
-          "Aus dem Investitionsjahr 2023 mit 4,2 Millionen Euro folgt bereits, dass die Rohre rechtzeitig erneuert werden.",
-          "Der Schluss stellt eine mögliche spätere Prüfung eines Vertrags neben die Ablehnung von 2018.",
-          "Der Text entscheidet, dass Brunnau 2031 denselben Vertrag annehmen wird, den Kleinau neu verhandelt."
+          "Absatz 2 liefert die Rechnungen 336 Euro und 310 Euro.",
+          "Absatz 6 ist eine chemische Abhandlung über die zwei Brunnen.",
+          "64, 36 und 49 Prozent stehen in Absatz 1, nicht in Absatz 4.",
+          "64 Prozent der Abstimmenden mal 49 Prozent Beteiligung ergeben eine Mehrheit aller Stimmberechtigten.",
+          "Absatz 3 nennt 12 und 21 Prozent Verlust und getrennt davon 38 Prozent alte Rohre."
         ],
         "answer_key": [
-          false,
           true,
           false,
           true,
-          false
+          false,
+          true
         ],
         "tactical_explanations": [
-          "**A) Die Abstimmung von 2018 hat eine ewige Organisationsform beschlossen.**\n\nAbsatz 9 sagt, die Abstimmung habe keine ewige Organisationsform beschlossen. Die Aussage behauptet diesen Beschluss.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Die Abstimmung hat einen Verkauf abgelehnt.**\n\nAbgelehnt wurde ein Verkauf. Das ist der Inhalt der Abstimmung, von der ewigen Form ausdrücklich getrennt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**C) Aus dem Investitionsjahr 2023 mit 4,2 Millionen Euro folgt bereits, dass die Rohre rechtzeitig erneuert werden.**\n\nDer letzte Satz sagt, ein einzelnes Jahr mit 4,2 Millionen Euro entscheide diese Frage nicht. Eine bereits folgende Rechtzeitigkeit überzieht den Text.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Der Schluss stellt eine mögliche spätere Prüfung eines Vertrags neben die Ablehnung von 2018.**\n\nDer Absatz stellt die offene Frage, ob die Ablehnung auch bei einer späteren Vertragsprüfung noch tragen würde. Er legt die beiden Zeitpunkte nebeneinander und schließt nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Der Text entscheidet, dass Brunnau 2031 denselben Vertrag annehmen wird, den Kleinau neu verhandelt.**\n\nDer Text lässt offen, ob die Meinung von 2018 dann noch gelten würde. Eine Entscheidung für die Annahme des Vertrags steht nicht da.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**A) Absatz 2 liefert die Rechnungen 336 Euro und 310 Euro.**\n\nGrundgebühr, Kubikmeterpreise und die beiden Jahresrechnungen für 100 Kubikmeter stehen in Absatz 2. Ohne ihn fehlen 336 und 310.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Absatz 6 ist eine chemische Abhandlung über die zwei Brunnen.**\n\nDie zwei Brunnen stehen kurz in Absatz 1. Absatz 6 trennt Eigentum und Regeln. Eine chemische Abhandlung ist nicht sein Gegenstand.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 64, 36 und 49 Prozent stehen in Absatz 1, nicht in Absatz 4.**\n\nDie Abstimmung mit diesen drei Zahlen steht im ersten Absatz. Absatz 4 behandelt Preis null, volle Kosten und Grundbedarf.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) 64 Prozent der Abstimmenden mal 49 Prozent Beteiligung ergeben eine Mehrheit aller Stimmberechtigten.**\n\n64 Prozent von 49 Prozent sind etwa 31 Prozent aller Stimmberechtigten. 31 Prozent sind keine Mehrheit. Die Aussage rechnet mit zwei echten Zahlen und überzieht das Produkt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Absatz 3 nennt 12 und 21 Prozent Verlust und getrennt davon 38 Prozent alte Rohre.**\n\nAbsatz 3 hält die drei Prozent auseinander: 12 Brunnau, 21 Kleinau, 38 alte Rohre. Die Aussage lässt sie getrennt und setzt sie nicht ineinander um.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
-        "difficulty_level": "4/5",
-        "subsection": "t.water"
+        "difficulty_level": "5/5",
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-10",
-        "case_id": "WISO M3.DE.10",
-        "title": "Funktion der Absätze",
-        "context": "Die Aussagen prüfen, welchen Job ein Absatz im Text hat, nicht eine einzelne Zahl.",
+        "case_id": "WISO-M3.DE.10",
+        "title": "Was offen bleibt",
+        "context": "Die Aussagen prüfen den Schluss gegen die Vertragszahlen.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Absatz 2 liefert die Rechengrundlage, mit der 336 Euro und 310 Euro verglichen werden.",
-          "Absatz 6 berichtet vor allem die chemische Aufbereitung in den zwei Brunnen.",
-          "Absatz 8 korrigiert eine naheliegende Vermischung zweier Prozentangaben aus Absatz 3.",
-          "Absatz 7 stellt eine vertragliche Sanktion einer jährlichen politischen Entscheidung gegenüber.",
-          "Absatz 4 enthält die Ergebnisse der Abstimmung von 2018."
+          "Die Abstimmung lehnte einen Verkauf ab und beschloss keine ewige Organisationsform.",
+          "Der Text entscheidet, dass Brunnau 2031 den Vertrag annimmt, den Kleinau neu verhandelt.",
+          "Kleinau darf eine Vertragsstrafe verlangen und hat das bis 2024 nicht getan.",
+          "21 Prozent Verlustrate ist kleiner als die vertragliche Grenze von 15 Prozent.",
+          "Ein einzelnes Investitionsjahr mit 4,2 Millionen Euro entscheidet nicht, ob die Rohre rechtzeitig erneuert werden."
         ],
         "answer_key": [
           true,
           false,
           true,
-          true,
-          false
+          false,
+          true
         ],
         "tactical_explanations": [
-          "**A) Absatz 2 liefert die Rechengrundlage, mit der 336 Euro und 310 Euro verglichen werden.**\n\nGrundgebühr, Kubikmeterpreise und die beiden Jahresrechnungen für 100 Kubikmeter stehen in Absatz 2. Ohne ihn fehlen 336 und 310.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**B) Absatz 6 berichtet vor allem die chemische Aufbereitung in den zwei Brunnen.**\n\nDie zwei Brunnen stehen in Absatz 1, die Aufbereitung nur als kurzer Hinweis dort. Absatz 6 trennt Eigentum und Regeln. Eine chemische Abhandlung ist nicht sein Gegenstand.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**C) Absatz 8 korrigiert eine naheliegende Vermischung zweier Prozentangaben aus Absatz 3.**\n\nAbsatz 3 nennt 12 Prozent Verlust und 38 Prozent alte Rohre. Absatz 8 verbietet, diese beiden Prozent gleichzusetzen oder zu addieren.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**D) Absatz 7 stellt eine vertragliche Sanktion einer jährlichen politischen Entscheidung gegenüber.**\n\nAuf der einen Seite die nicht genutzte Vertragsstrafe Kleinaus, auf der anderen der jährliche Beschluss des Brunnauer Gemeinderats. Das ist der Gegensatz von Absatz 7.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Absatz 4 enthält die Ergebnisse der Abstimmung von 2018.**\n\nDie Abstimmung mit 64, 36 und 49 Prozent steht in Absatz 1. Absatz 4 behandelt Preis null, Kosten und Grundbedarf.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**A) Die Abstimmung lehnte einen Verkauf ab und beschloss keine ewige Organisationsform.**\n\nAbsatz 9 trennt diese beiden Ergebnisse. Die Aussage behält beide und macht aus der Ablehnung keinen Ewigkeitsbeschluss.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Der Text entscheidet, dass Brunnau 2031 den Vertrag annimmt, den Kleinau neu verhandelt.**\n\nDer Absatz lässt offen, ob die Meinung von 2018 bei einer späteren Vertragsprüfung noch tragen würde. Eine Entscheidung für die Annahme steht nicht da.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Kleinau darf eine Vertragsstrafe verlangen und hat das bis 2024 nicht getan.**\n\nBeides steht in Absatz 7: das Recht auf die Strafe und das Unterlassen bis 2024. Die Aussage streicht keine der beiden Hälften.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) 21 Prozent Verlustrate ist kleiner als die vertragliche Grenze von 15 Prozent.**\n\n21 liegt über 15. Kleiner wäre die Umkehrung der Überschreitung, von der der Text seit 2019 spricht.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Ein einzelnes Investitionsjahr mit 4,2 Millionen Euro entscheidet nicht, ob die Rohre rechtzeitig erneuert werden.**\n\nDas ist der letzte Satz. Er verweigert den Schluss von einem Jahr auf die rechtzeitige Erneuerung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
         ],
         "difficulty_level": "4/5",
-        "subsection": "t.water"
+        "subsection": "t.main"
       },
       {
         "id": "wiso-m3-de-11",
-        "case_id": "WISO M3.DE.11",
-        "title": "Eigener Kurztext",
-        "context": "Die Aussagen beziehen sich nur auf den kurzen Text zu den Lehrstellen im Bezirk Ost, nicht auf den Wassertext.",
+        "case_id": "WISO-M3.DE.11",
+        "title": "Kurztext Lehrstellen",
+        "context": "Die Aussagen beziehen sich nur auf den kurzen Text zum Bezirk Ost. Zwei verlangen eine Rechnung mit 420, 1.800, 170 und 260.",
         "kind": "text",
         "with_passage": true,
         "statements": [
-          "Alle 1.800 angebotenen Lehrstellen wurden 2024 besetzt.",
-          "Unbesetzte Stellen und noch suchende Jugendliche können nach der Ökonomin zugleich bestehen.",
+          "420 von 1.800 angebotenen Lehrstellen sind mehr als ein Fünftel.",
+          "170 von 260 noch suchenden Jugendlichen sind mehr als die Hälfte und zugleich mehr als zwei Drittel.",
           "Die Ökonomin sieht in den Zahlen den Beweis, dass zu wenige Jugendliche vorhanden sind.",
-          "Mehr als die Hälfte der noch suchenden Jugendlichen wollte nur eine Stelle in der Stadt.",
+          "190 unbesetzte Stellen im ländlichen Raum sind mehr als die 170 Jugendlichen, die nur eine Stelle in der Stadt wollten.",
           "Kammer und Ökonomin ziehen aus den Zahlen denselben Schluss."
         ],
         "answer_key": [
-          false,
           true,
+          false,
           false,
           true,
           false
         ],
         "tactical_explanations": [
-          "**A) Alle 1.800 angebotenen Lehrstellen wurden 2024 besetzt.**\n\n420 der 1.800 Stellen blieben unbesetzt. Alle besetzt wäre nur bei einer Null in dieser Zeile richtig.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**B) Unbesetzte Stellen und noch suchende Jugendliche können nach der Ökonomin zugleich bestehen.**\n\nDie Ökonomin sagt, beides könne zugleich bestehen, wenn Beruf, Ort oder Betrieb nicht zusammenpassen. Das ist ihre Gegenrede zur Gleichsetzung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**A) 420 von 1.800 angebotenen Lehrstellen sind mehr als ein Fünftel.**\n\n420 geteilt durch 1.800 ist etwa 0,233. Ein Fünftel ist 0,2. Der Anteil liegt darüber. Der Text nennt Zähler und Nenner, nicht den Bruch.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) 170 von 260 noch suchenden Jugendlichen sind mehr als die Hälfte und zugleich mehr als zwei Drittel.**\n\n170 geteilt durch 260 ist etwa 0,654. Das ist mehr als die Hälfte, aber weniger als zwei Drittel, denn zwei Drittel wären etwa 0,667. Die zweite Hälfte der Aussage kippt die erste.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
           "**C) Die Ökonomin sieht in den Zahlen den Beweis, dass zu wenige Jugendliche vorhanden sind.**\n\nSie nennt die Lage ausdrücklich keinen Beweis dafür, dass zu wenige Jugendliche vorhanden wären. Die Aussage schreibt ihr den Schluss zu, den sie ablehnt.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
-          "**D) Mehr als die Hälfte der noch suchenden Jugendlichen wollte nur eine Stelle in der Stadt.**\n\n170 von 260 Jugendlichen wollten nur eine Stadtstelle. 170/260 ist etwa 65 Prozent und damit mehr als die Hälfte.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
-          "**E) Kammer und Ökonomin ziehen aus den Zahlen denselben Schluss.**\n\nDie Kammer spricht von Fachkräftemangel, die Ökonomin von einem Passungsproblem. Der Kurztext stellt die beiden Schlüsse gegeneinander.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+          "**D) 190 unbesetzte Stellen im ländlichen Raum sind mehr als die 170 Jugendlichen, die nur eine Stelle in der Stadt wollten.**\n\n190 gegen 170. Die größere Zahl ist 190. Die Aussage vergleicht nur diese beiden Gruppen und behauptet nicht, sie seien deshalb vermittelbar.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Kammer und Ökonomin ziehen aus den Zahlen denselben Schluss.**\n\nDie Kammer spricht von Fachkräftemangel, die Ökonomin von einem Passungsproblem. Der Kurztext stellt die Schlüsse gegeneinander.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
         ],
-        "difficulty_level": "4/5",
+        "difficulty_level": "5/5",
         "subsection": "t.apprentice",
         "passage_override": "Im Handwerkskammerbezirk Ost blieben 2024 von 1.800 angebotenen Lehrstellen 420 unbesetzt. Gleichzeitig suchten 260 Jugendliche am Ende des Vermittlungsjahres noch eine Stelle. Die Kammer spricht von einem Fachkräftemangel. Eine Arbeitsmarktökonomin widerspricht der Gleichsetzung: Unbesetzte Stellen und suchende Jugendliche können zugleich bestehen, wenn Beruf, Ort oder Betrieb nicht zusammenpassen. Von den unbesetzten Stellen lagen 190 im ländlichen Raum, während 170 der noch suchenden Jugendlichen nur eine Stelle in der Stadt angeben wollten. Die Ökonomin nennt das ein Passungsproblem und keinen Beweis dafür, dass zu wenige Jugendliche vorhanden wären.",
         "passage_title_override": "Lehrstellen und Passung im Bezirk Ost"

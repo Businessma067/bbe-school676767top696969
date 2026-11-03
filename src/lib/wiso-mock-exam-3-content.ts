@@ -79,7 +79,7 @@ export const WISO_MOCK_EXAM_3_POINTS_TOTAL =
   bundle.german.tasks.length * SCORING_CONFIG.german.defaultMaxPerTask +
   WISO_MOCK_EXAM_3_MATH_POINTS.reduce((a, b) => a + b, 0);
 
-export const WISO_MOCK_EXAM_3_CONTENT_REV = "2026-11-03c · 34q · harder · explanations";
+export const WISO_MOCK_EXAM_3_CONTENT_REV = "2026-11-03d · 34q · all harder · explanations";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
