@@ -9,11 +9,11 @@
       "difficulty_level": "5/5",
       "context": "Eine Anlage kostet 100 und ist danach nicht mehr verkaufbar. Im guten Zustand, Wahrscheinlichkeit ein halb, ist der abgezinste Rückfluss 160. Im schlechten Zustand ist er 30. Wer wartet, investiert nur, wenn der Zustand gut ist, und verzichtet im schlechten Zustand. Die Rückflüsse sind bereits auf heute bezogen. Bewerten Sie jede Aussage.",
       "statements": [
-        "Sofort begonnen ist der Kapitalwert negativ. Die Möglichkeit zu warten ist positiv und größer als dieser Kapitalwert.",
-        "Im schlechten Zustand würde man nach dem Warten trotzdem investieren, weil 30 eine Einzahlung ist.",
-        "Der Vorteil des Wartens gegenüber dem Sofortstart ist 35. Er entsteht, weil der schlechte Zustand vermieden wird, nicht weil der gute Zustand einen anderen Rückfluss hätte.",
-        "Weil der Erwartungswert der Rückflüsse unter 100 liegt, ist auch das Warten wertlos.",
-        "Investiert wird nach dem Warten genau im guten Zustand. Dieser Zustand hat die Wahrscheinlichkeit ein halb, und der schlechte Zustand hat dieselbe Wahrscheinlichkeit, aber eine andere Entscheidung."
+        "Sofort begonnen ist der Kapitalwert negativ. Die Möglichkeit zu warten ist positiv und vorteilhafter als der Sofortstart.",
+        "Im schlechten Zustand würde man nach dem Warten trotzdem investieren, weil der Rückfluss positiv ist.",
+        "Der Vorteil des Wartens entsteht, weil der schlechte Zustand vermieden wird, nicht weil der gute Rückfluss sich ändert. Dieser Vorteil ist größer als der Betrag des sofortigen Kapitalwerts.",
+        "Weil der Erwartungswert der Rückflüsse unter der Ausgabe liegt, ist auch das Warten wertlos.",
+        "Nach dem Warten wird genau im guten Zustand investiert. Beide Zustände sind gleich wahrscheinlich, die Entscheidungen sind es nicht."
       ],
       "answer_key": [
         true,
@@ -23,11 +23,11 @@
         true
       ],
       "tactical_explanations": [
-        "Sofort: minus 100 plus ein halb mal 160 plus ein halb mal 30 ist minus 5. Warten: ein halb mal (160 minus 100) ist 30, der schlechte Zustand bleibt ohne Investition. 30 liegt über minus 5, der Abstand ist 35.\n\nDie Aussage ist wahr.",
-        "30 deckt die 100 nicht. Nach dem Warten wird im schlechten Zustand nicht investiert. Eine positive Einzahlung unter den Kosten ist kein Grund zu bauen.\n\nDie Aussage ist falsch.",
-        "30 minus minus 5 ist 35. Der gute Rückfluss 160 steht in beiden Rechnungen. Der Unterschied ist der schlechte Zustand: sofort zieht er 30 mit hinein, nach dem Warten wird er ausgelassen.\n\nDie Aussage ist wahr.",
-        "Der unbedingte Erwartungswert 95 liegt unter 100 und macht den Sofortstart negativ. Das Warten benutzt denselben guten Rückfluss und lässt den schlechten weg. 30 ist nicht wertlos.\n\nDie Aussage ist falsch.",
-        "Gut und schlecht sind je ein halb. Die Entscheidung ist nicht symmetrisch: nur der gute Zustand löst die Ausgabe 100 aus. Gleiche Wahrscheinlichkeit heißt hier nicht gleiche Handlung.\n\nDie Aussage ist wahr."
+        "Der unbedingte Erwartungswert der Rückflüsse deckt die Ausgabe nicht. Wer nur im guten Zustand investiert, lässt den schlechten weg und erhält einen positiven Wert. Dieser Wert liegt über dem sofortigen Kapitalwert.\n\nDie Aussage ist wahr.",
+        "Der Rückfluss im schlechten Zustand deckt die Ausgabe nicht. Nach dem Warten wird dann nicht investiert. Eine positive Einzahlung unter den Kosten ist kein Grund zu bauen.\n\nDie Aussage ist falsch.",
+        "Der gute Rückfluss steht in beiden Rechnungen. Der Unterschied ist der schlechte Zustand. Der Abstand zwischen Wartewert und Sofortkapitalwert ist größer als der Betrag des negativen Sofortkapitalwerts.\n\nDie Aussage ist wahr.",
+        "Der unbedingte Erwartungswert macht den Sofortstart negativ. Das Warten benutzt denselben guten Rückfluss und lässt den schlechten weg. Der Wartewert ist nicht null.\n\nDie Aussage ist falsch.",
+        "Gut und schlecht haben dieselbe Wahrscheinlichkeit. Nur der gute Zustand löst die Ausgabe aus. Gleiche Wahrscheinlichkeit heißt hier nicht gleiche Handlung.\n\nDie Aussage ist wahr."
       ]
     },
     {
@@ -69,11 +69,11 @@
       "difficulty_level": "5/5",
       "context": "Preis = 50 minus 2 mal Menge. Grenzkosten ohne Steuer konstant 10. Zuerst Wettbewerb, dann ein Monopol, dann eine Stücksteuer von 6 nur auf das Monopol. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die Wettbewerbsmenge ist 20, die unbesteuerte Monopolmenge 10, der Monopolpreis das Dreifache des Wettbewerbspreises. Die Steuer senkt die Monopolmenge weiter und vergrößert den Abstand zur Wettbewerbsmenge.",
+        "Unbesteuert ist die Monopolmenge halb so groß wie die Wettbewerbsmenge, der Preis mehr als doppelt so hoch. Die Steuer vergrößert den Mengenabstand zur Wettbewerbsmenge.",
         "Die Steuer hebt die Monopolmenge in Richtung Wettbewerbsmenge, weil sie den Preis nach oben deckelt.",
-        "Der Preis steigt um 6, weil eine Stücksteuer vollständig auf den Preis gelegt wird.",
-        "Das Steueraufkommen ist 51 und kleiner als die Dreiecksfläche 100 zwischen unbesteuerter Monopolmenge und Wettbewerbsmenge.",
-        "Die unbesteuerte Monopolmenge ist halb so groß wie die Wettbewerbsmenge, der Preis aber nicht doppelt so hoch."
+        "Der Preis steigt um die ganze Steuer, weil eine Stücksteuer vollständig überwälzt wird.",
+        "Das Steueraufkommen ist kleiner als die Dreiecksfläche zwischen unbesteuerter Monopolmenge und Wettbewerbsmenge.",
+        "Die unbesteuerte Monopolmenge ist halb so groß wie die Wettbewerbsmenge, der Preis aber nicht bloß doppelt so hoch."
       ],
       "answer_key": [
         true,
@@ -83,11 +83,11 @@
         true
       ],
       "tactical_explanations": [
-        "Wettbewerb: 50 minus 2 Menge gleich 10, Menge 20, Preis 10. Monopol: Grenzumsatz 50 minus 4 Menge gleich 10, Menge 10, Preis 30. 30 ist das Dreifache von 10. Mit Steuer sind die relevanten Kosten 16, Menge 8,5. Der Abstand zur Menge 20 wächst von 10 auf 11,5.\n\nDie Aussage ist wahr.",
-        "Die Steuer senkt die Menge von 10 auf 8,5. Sie ist keine Preisobergrenze. Eine Obergrenze würde, wenn sie bindet, die Menge eher stützen. Hier läuft die Menge in die andere Richtung.\n\nDie Aussage ist falsch.",
-        "Der Preis geht von 30 auf 33, also um 3. Bei dieser linearen Nachfrage und konstanten Kosten bleibt die Hälfte der Steuer im Preis hängen, nicht die ganze Steuer.\n\nDie Aussage ist falsch.",
-        "6 mal 8,5 ist 51. Das Dreieck zwischen Menge 10 und 20 hat die Höhe 20 und die Breite 10, Fläche 100. 51 liegt darunter. Aufkommen und Dreieck sind verschiedene Flächen und dürfen nicht gleichgesetzt werden.\n\nDie Aussage ist wahr.",
-        "10 ist die Hälfte von 20. Der Preis ist 30 gegen 10, also das Dreifache, nicht das Doppelte. Wer aus der halben Menge einen doppelten Preis macht, liest die Nachfrage falsch.\n\nDie Aussage ist wahr."
+        "Bei linearer Nachfrage und konstanten Grenzkosten halbiert das unbesteuerte Monopol die Menge und hebt den Preis stärker als auf das Doppelte. Die Stücksteuer senkt die Monopolmenge weiter. Der Abstand zur Wettbewerbsmenge wächst.\n\nDie Aussage ist wahr.",
+        "Die Steuer senkt die Menge. Sie ist keine Preisobergrenze. Eine bindende Obergrenze würde die Menge eher stützen.\n\nDie Aussage ist falsch.",
+        "Bei dieser Nachfrage und konstanten Kosten bleibt nur ein Teil der Steuer im Preis hängen. Volle Überwälzung ist hier die falsche Merkregel.\n\nDie Aussage ist falsch.",
+        "Das Aufkommen ist Steuer mal besteuerte Menge. Das Dreieck zwischen Monopol- und Wettbewerbsmenge hat eine andere Höhe und eine andere Breite. Das Aufkommen liegt darunter. Die beiden Flächen dürfen nicht gleichgesetzt werden.\n\nDie Aussage ist wahr.",
+        "Die Halbierung der Menge folgt aus der doppelt so steilen Grenzumsatzgeraden. Der Preis steigt stärker als auf das Doppelte. Aus der halben Menge einen doppelten Preis zu machen, liest die Nachfrage falsch.\n\nDie Aussage ist wahr."
       ]
     },
     {
@@ -99,11 +99,11 @@
       "difficulty_level": "5/5",
       "context": "Ein Kredit über 1.000 läuft ein Jahr. Die Preise steigen um 10 Prozent. Vertrag A verzinst nominal mit 8 Prozent. Vertrag B zahlt die Preissteigerung und zusätzlich 2 Prozent real. Vertrag C ist zinslos. Bewerten Sie jede Aussage.",
       "statements": [
-        "Bei Vertrag A verliert der Gläubiger real Kaufkraft, der Schuldner gewinnt sie. Der exakte Realzins liegt über minus 2 Prozent und unter minus 1 Prozent.",
-        "Der exakte Realzins von Vertrag A liegt unter minus 2 Prozent, weil 8 minus 10 gleich minus 2 ist und die genaue Rechnung noch darunter fällt.",
-        "Vertrag B zahlt nominal 1.122. Real bleiben dem Gläubiger 1.020, also 20 auf 1.000.",
-        "Der zinslose Vertrag schützt den Gläubiger besser vor der Preissteigerung als Vertrag A, weil keine Zinsen die Rückzahlung aufblähen.",
-        "Der reale Verlust des Gläubigers in Vertrag A ist kleiner als 20 und größer als der reale Gewinn in Vertrag B."
+        "Beim Nominalvertrag verliert der Gläubiger real Kaufkraft, und der Schuldner gewinnt sie. Der exakte Realzins liegt über minus $2$ Prozent und unter minus $1$ Prozent.",
+        "Der exakte Realzins liegt unter minus $2$ Prozent, weil die Näherung minus $2$ ist und die genaue Rechnung noch darunter fällt.",
+        "Der indexierte Vertrag lässt dem Gläubiger real einen positiven Zuwachs. Die nominale Rückzahlung liegt über der nominalen Rückzahlung des reinen Nominalvertrags.",
+        "Der zinslose Vertrag schützt den Gläubiger besser vor der Preissteigerung als der Nominalvertrag, weil keine Zinsen die Rückzahlung aufblähen.",
+        "Der reale Verlust des Gläubigers im Nominalvertrag ist kleiner als $20$ auf $1\\,000$ und größer als der reale Gewinn im indexierten Vertrag."
       ],
       "answer_key": [
         true,
@@ -113,11 +113,11 @@
         false
       ],
       "tactical_explanations": [
-        "1.080 durch 1,1 ist etwa 981,82. Der Gläubiger erhält real weniger als 1.000, der Schuldner gibt real weniger zurück. 1,08 durch 1,1 minus 1 ist etwa minus 1,82 Prozent. Das liegt zwischen minus 2 und minus 1.\n\nDie Aussage ist wahr.",
-        "Die Näherung minus 2 ist schon zu niedrig. Die genaue Rechnung liegt bei etwa minus 1,82 und damit über minus 2. Die Näherung verschärft den Verlust, sie trifft ihn nicht.\n\nDie Aussage ist falsch.",
-        "1.000 mal 1,1 mal 1,02 ist 1.122. Durch 1,1 bleiben 1.020. Der reale Zuwachs ist die vereinbarten 2 Prozent, die Preissteigerung ist herausgerechnet und nicht noch einmal ein Gewinn.\n\nDie Aussage ist wahr.",
-        "Vertrag C gibt real 1.000 durch 1,1, etwa 909. Vertrag A gibt etwa 982. Der fehlende Zins schützt nicht, er vergrößert den realen Verlust.\n\nDie Aussage ist falsch.",
-        "Der reale Verlust in A ist etwa 18,18 und damit kleiner als 20. Der reale Gewinn in B ist 20. 18,18 ist nicht größer als 20. Die zweite Hälfte scheitert, obwohl die erste für sich stimmen würde.\n\nDie Aussage ist falsch."
+        "Die nominale Rückzahlung wächst langsamer als die Preise. Der exakte Quotient der Aufzinsungsfaktoren liegt zwischen minus $2$ und minus $1$ Prozent. Die Näherung aus der Differenz der beiden Sätze ist die untere Nachbarzahl und nicht der exakte Wert.\n\nDie Aussage ist wahr.",
+        "Die Näherung liegt unter dem exakten Wert. Die genaue Rechnung ist weniger negativ als minus $2$ Prozent. Die Näherung verschärft den Verlust, sie trifft ihn nicht.\n\nDie Aussage ist falsch.",
+        "Index plus der vereinbarte reale Aufschlag stellt den realen Zuwachs her und hebt die nominale Rückzahlung über die des Nominalvertrags. Die Preissteigerung ist herausgerechnet und nicht noch einmal ein Gewinn.\n\nDie Aussage ist wahr.",
+        "Ohne Zins ist der reale Verlust größer. Der Nominalzins ersetzt die Preissteigerung nicht, er verkleinert den realen Verlust aber gegenüber dem zinslosen Vertrag.\n\nDie Aussage ist falsch.",
+        "Der reale Verlust liegt unter $20$. Der reale Gewinn des indexierten Vertrags ist $20$. Die zweite Hälfte scheitert, obwohl die erste für sich stimmen würde.\n\nDie Aussage ist falsch."
       ]
     },
     {
@@ -129,11 +129,11 @@
       "difficulty_level": "5/5",
       "context": "Die Preise der Vorräte sind gestiegen. Nach der einen zulässigen Methode stehen die Vorräte bei 140 und der Gewinn bei 90. Nach der anderen stehen die Vorräte bei 100 und der Gewinn bei 50. Kurzfristige Schulden 80. Das Umlaufvermögen ohne diese Vorräte ist in beiden Rechnungen 60. Steuern bleiben außen vor. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die Methode mit den niedrigeren Vorräten zeigt den niedrigeren Gewinn und die niedrigere kurzfristige Quote. Beide Quoten liegen bei 2,5 und bei 2.",
-        "Der Vorratsunterschied von 40 hebt bei der höheren Methode nur den Gewinn, nicht das Umlaufvermögen.",
-        "Die Quote fällt von 2,5 auf 2, der Abstand ist größer als 0,4. Wer die 40 nur aus dem Gewinn streicht und die Vorräte bei 140 lässt, untertreibt den Gewinn und übertreibt die Quote gegenüber der niedrigen Methode.",
+        "Die Methode mit den niedrigeren Vorräten zeigt den niedrigeren Gewinn und die niedrigere kurzfristige Quote. Beide Quoten sind mindestens $2$.",
+        "Der Vorratsunterschied hebt bei der höheren Methode nur den Gewinn, nicht das Umlaufvermögen.",
+        "Der Abstand der beiden Quoten ist größer als $0{,}4$. Wer den niedrigeren Gewinn mit den höheren Vorräten mischt, trifft keine der beiden Methoden.",
         "Die niedrigere Quote ist die liquidere Darstellung, weil vorsichtige Vorräte die Zahlungsfähigkeit erhöhen.",
-        "Beide Methoden verwenden dieselben Schulden von 80. Der Methodenunterschied kann deshalb keine Quote ändern."
+        "Beide Methoden verwenden dieselben Schulden. Der Methodenunterschied kann deshalb keine Quote ändern."
       ],
       "answer_key": [
         true,
@@ -143,11 +143,11 @@
         false
       ],
       "tactical_explanations": [
-        "Umlaufvermögen 200 gegen 160. Durch 80 sind die Quoten 2,5 und 2. Gewinn 90 gegen 50. Dieselbe Preissteigerung drückt in dieser Methode Gewinn und Quote gemeinsam, sie poliert nicht die eine Größe auf Kosten der anderen.\n\nDie Aussage ist wahr.",
-        "Die 40 stehen in den Vorräten und damit im Umlaufvermögen und, solange keine Steuer greift, auch im Gewinn. Wer sie nur im Gewinn sieht, lässt die Quote unverändert, die sich tatsächlich von 2 auf 2,5 bewegt.\n\nDie Aussage ist falsch.",
-        "Der Abstand ist 0,5. Gewinn 50 mit Vorräten 140 wäre eine Mischung, die so nicht entsteht: der Gewinn läge um 40 unter der hohen Rechnung, die Quote bliebe 2,5 statt 2. Beides weicht von der niedrigen Methode ab, in entgegengesetzte Richtungen.\n\nDie Aussage ist wahr.",
-        "Die Quote ist eine Darstellung, kein Kassenbestand. 2 ist kleiner als 2,5. Vorsicht in der Bewertung macht die ausgewiesene Quote kleiner, nicht die Kasse größer. In der Aufgabe fließt kein Geld durch den Methodenwechsel.\n\nDie Aussage ist falsch.",
-        "Der Nenner ist gleich, der Zähler nicht. 200 gegen 160 bei demselben Nenner ändert die Quote. Gleiche Schulden sind genau der Grund, warum der Vorratsunterschied vollständig in der Quote sichtbar wird.\n\nDie Aussage ist falsch."
+        "Dieselbe Preissteigerung drückt in der niedrigeren Methode Gewinn und Umlaufvermögen. Die Schulden bleiben. Beide Quoten liegen bei mindestens $2$, die höhere Methode darüber hinaus höher.\n\nDie Aussage ist wahr.",
+        "Die Differenz steht in den Vorräten und damit im Umlaufvermögen und, ohne Steuer, auch im Gewinn. Wer sie nur im Gewinn sieht, lässt die Quote unverändert, die sich tatsächlich bewegt.\n\nDie Aussage ist falsch.",
+        "Der Abstand der Quoten ist ein halber Punkt. Die Mischung aus niedrigem Gewinn und hohen Vorräten entsteht in keiner der beiden zulässigen Methoden. Sie untertreibt den Gewinn der hohen Methode und übertreibt die Quote der niedrigen.\n\nDie Aussage ist wahr.",
+        "Die Quote ist eine Darstellung, kein Kassenbestand. Die niedrigere Quote ist die kleinere. In der Aufgabe fließt durch den Methodenwechsel kein Geld.\n\nDie Aussage ist falsch.",
+        "Der Nenner ist gleich, der Zähler nicht. Gleiche Schulden machen den Vorratsunterschied in der Quote erst vollständig sichtbar.\n\nDie Aussage ist falsch."
       ]
     },
     {
@@ -189,11 +189,11 @@
       "difficulty_level": "5/5",
       "context": "Von 100 Personen sind 80 niedrige Risiken mit erwarteten Kosten 100 und höchster Zahlungsbereitschaft 150. 20 sind hohe Risiken mit erwarteten Kosten 600 und Zahlungsbereitschaft 700. Ein Vertrag kann alle nehmen oder nur die, die freiwillig bleiben. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die faire Prämie aller 100 ist 200. Sie liegt über der Zahlungsbereitschaft der niedrigen Risiken und unter der der hohen.",
-        "Bei freiwilligem Abschluss und Prämie 200 bleiben beide Gruppen im Vertrag, weil 200 unter dem Durchschnitt der beiden Zahlungsbereitschaften liegt.",
-        "Nachdem die niedrigen Risiken gegangen sind, liegt die faire Prämie bei 600 und noch unter der Zahlungsbereitschaft der hohen Risiken. Der gemeinsame Vertrag ist damit nicht gerettet.",
-        "Ein Pflichtvertrag zu 200 ist für die niedrigen Risiken gegenüber ihrer Zahlungsbereitschaft ein Verlust, und die hohen Risiken zahlen dann mehr als ihre erwarteten Kosten.",
-        "Die hohen Risiken sind ein Fünftel der Personen und tragen mehr als die Hälfte der erwarteten Kosten des gemeinsamen Pools."
+        "Die faire Prämie aller liegt über der Zahlungsbereitschaft der niedrigen Risiken und unter der Zahlungsbereitschaft der hohen.",
+        "Bei freiwilligem Abschluss bleiben beide Gruppen, weil die gemeinsame Prämie unter dem Durchschnitt der beiden Zahlungsbereitschaften liegt.",
+        "Nachdem die niedrigen Risiken gegangen sind, liegt die faire Prämie noch unter der Zahlungsbereitschaft der hohen Risiken. Der gemeinsame Vertrag ist damit nicht gerettet.",
+        "Ein Pflichtvertrag zur gemeinsamen Prämie ist für die niedrigen Risiken gegenüber ihrer Zahlungsbereitschaft ein Verlust, und die hohen Risiken zahlen dann mehr als ihre erwarteten Kosten.",
+        "Die hohen Risiken sind die kleinere Personengruppe und tragen mehr als die Hälfte der erwarteten Kosten des gemeinsamen Pools."
       ],
       "answer_key": [
         true,
@@ -203,11 +203,11 @@
         true
       ],
       "tactical_explanations": [
-        "80 mal 100 plus 20 mal 600 ist 20.000, je Person 200. 200 liegt über 150 und unter 700. Dieselbe Prämie sortiert die beiden Gruppen in entgegengesetzte Richtungen.\n\nDie Aussage ist wahr.",
-        "Der Durchschnitt der Zahlungsbereitschaften rettet den niedrigen Risikoträger nicht. 200 liegt über 150, diese Gruppe geht. Zurück bleiben die hohen Risiken.\n\nDie Aussage ist falsch.",
-        "20 mal 600 durch 20 ist 600, und 600 liegt unter 700. Die hohen Risiken bleiben unter sich. Der Pool aus 100 ist zerfallen, auch wenn der Restvertrag für sich tragfähig ist.\n\nDie Aussage ist wahr.",
-        "200 gegen 150 ist für die niedrigen Risiken ein Zwang unter ihrer Grenze. 200 gegen erwartete Kosten 600 ist für die hohen Risiken ein Vorteil, nicht eine Mehrzahlung über die Kosten. Die zweite Hälfte dreht die Richtung um.\n\nDie Aussage ist falsch.",
-        "20 von 100 ist ein Fünftel. 12.000 von 20.000 ist 60 Prozent, mehr als die Hälfte. Kopfzahl und Kostenanteil laufen auseinander. Genau das macht die Prämie 200 für die große Gruppe unattraktiv.\n\nDie Aussage ist wahr."
+        "Dieselbe Prämie sortiert die Gruppen in entgegengesetzte Richtungen. Sie ist aus den erwarteten Kosten beider Gruppen gemittelt und trifft keine der beiden Zahlungsbereitschaften von der günstigen Seite für beide.\n\nDie Aussage ist wahr.",
+        "Ein Durchschnitt der Zahlungsbereitschaften rettet die niedrigen Risiken nicht. Für sie liegt die Prämie über der eigenen Grenze. Sie gehen.\n\nDie Aussage ist falsch.",
+        "Die verbleibende Prämie ist die erwartete Kostenhöhe der hohen Risiken und liegt unter deren Zahlungsbereitschaft. Der Pool aus allen Personen ist trotzdem zerfallen.\n\nDie Aussage ist wahr.",
+        "Für die niedrigen Risiken liegt die Prämie über der Zahlungsbereitschaft. Für die hohen Risiken liegt sie unter den erwarteten Kosten. Die zweite Hälfte dreht die Richtung um.\n\nDie Aussage ist falsch.",
+        "Kopfzahl und Kostenanteil laufen auseinander. Genau das macht die gemeinsame Prämie für die große Gruppe unattraktiv.\n\nDie Aussage ist wahr."
       ]
     },
     {
@@ -249,11 +249,11 @@
       "difficulty_level": "5/5",
       "context": "Zwei Betriebe dürfen zusammen noch 30 Einheiten ausstoßen, ohne weitere Vermeidung wären es 60. Betrieb 1 kann bis zu 40 Einheiten vermeiden, jede zu 8. Betrieb 2 kann bis zu 20 Einheiten vermeiden, jede zu 3. Ein Zertifikat, das zum Ausstoß berechtigt, wird mit diesen Vermeidungskosten verglichen. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die letzte vermiedene Einheit kostet 8. Betrieb 2 allein kann die Lücke von 30 nicht schließen, auch wenn er billiger vermeidet.",
-        "Gleichmäßiges Vermeiden von je 15 kostet 25 mehr als die kostenminimale Aufteilung.",
-        "Kostenminimal bleibt Betrieb 1 ungekürzt, weil er teurer vermeidet.",
-        "Ein Zertifikatspreis von 3 bringt auch Betrieb 1 zum Vermeiden.",
-        "Betrieb 2 vermeidet 20 und Betrieb 1 vermeidet 10. Die Gesamtkosten 140 liegen unter der gleichmäßigen Lösung und über den Kosten, die entstünden, wenn Betrieb 2 die ganzen 30 könnte."
+        "Die letzte vermiedene Einheit kostet so viel wie die teurere Vermeidung. Die billigere Firma allein kann die ganze Lücke nicht schließen.",
+        "Gleichmäßige Mengen kosten mehr als die kostenminimale Aufteilung. Der Mehrbetrag ist kleiner, als wenn nur die teurere Firma die ganze Lücke vermiede.",
+        "Kostenminimal bleibt die teurere Firma ungekürzt, weil sie teurer vermeidet.",
+        "Ein Zertifikatspreis in Höhe der billigeren Vermeidungskosten bringt auch die teurere Firma zum Vermeiden.",
+        "Die billigere Firma vermeidet mehr Einheiten als die teurere. Die Gesamtkosten liegen unter der gleichmäßigen Lösung und über den Kosten, die entstünden, wenn die billigere Firma die ganze Lücke könnte."
       ],
       "answer_key": [
         true,
@@ -263,11 +263,11 @@
         true
       ],
       "tactical_explanations": [
-        "Zuerst vermeidet Betrieb 2 seine 20 zu je 3. Es fehlen weiter 10, die nur Betrieb 1 zu 8 vermeiden kann. Die letzte Einheit kostet deshalb 8. Die billigere Technik hat eine Kapazitätsgrenze.\n\nDie Aussage ist wahr.",
-        "Je 15: Betrieb 1 zahlt 120, Betrieb 2 zahlt 45, Summe 165. Minimal: 20 mal 3 plus 10 mal 8 ist 140. Abstand 25. Gleiche Mengen sind hier nicht gleiche Kosten und nicht die kleinsten Kosten.\n\nDie Aussage ist wahr.",
-        "Betrieb 2 kann nur 20 der nötigen 30 übernehmen. Betrieb 1 vermeidet die restlichen 10. Die teurere Einheit wird benutzt, weil die billigere nicht reicht. Ungekürzt bliebe die Lücke offen.\n\nDie Aussage ist falsch.",
-        "Betrieb 1 vermeidet nur, wenn das Zertifikat mindestens 8 kostet. Bei 3 kauft er das Recht und vermeidet nicht. Betrieb 2 ist bei 3 an seiner eigenen Kostengrenze, Betrieb 1 nicht.\n\nDie Aussage ist falsch.",
-        "140 gegen 165 ist die erste Hälfte. Könnte Betrieb 2 dreißig Einheiten zu 3 vermeiden, wären es 90, und 140 liegt darüber. Die Kapazitätsgrenze ist der Grund für die teureren zehn Einheiten, nicht ein Rechenfehler in der 140.\n\nDie Aussage ist wahr."
+        "Zuerst vermeidet die billigere Firma bis an ihre Kapazität. Der Rest bleibt bei der teureren. Die letzte Einheit kostet deshalb den höheren Satz. Die billigere Technik hat eine Grenze.\n\nDie Aussage ist wahr.",
+        "Gleiche Mengen ignorieren den Kostenunterschied und die Kapazitätsgrenze. Sie liegen über dem Minimum und unter den Kosten einer Lösung, die nur die teure Firma einsetzt.\n\nDie Aussage ist wahr.",
+        "Die billigere Firma kann nicht die ganze Lücke übernehmen. Die teurere vermeidet den Rest. Ungekürzt bliebe die Lücke offen.\n\nDie Aussage ist falsch.",
+        "Die teurere Firma vermeidet nur, wenn das Zertifikat mindestens ihre eigenen Kosten erreicht. Beim niedrigeren Preis kauft sie das Recht und vermeidet nicht.\n\nDie Aussage ist falsch.",
+        "Die Kapazität schickt die billigere Firma an ihre Obergrenze und lässt der teureren den kleineren Rest. Die Kosten liegen zwischen der gleichmäßigen Lösung und der Lösung ohne diese Obergrenze.\n\nDie Aussage ist wahr."
       ]
     },
     {
@@ -660,11 +660,11 @@
       "difficulty_level": "5/5",
       "context": "Genau eine der Personen $A$, $B$, $C$, $D$ ist schuldig. Genau zwei der vier Sätze sind wahr.\n\n$A$: „$B$ war es.“\n\n$B$: „$A$ war es nicht.“\n\n$C$: „Ich war es.“\n\n$D$: „Weder ich noch $C$ war es.“\n\nBewerten Sie jede Aussage.",
       "statements": [
-        "Genau $C$ ist schuldig, und dabei sind die Sätze von $B$ und $C$ wahr.",
-        "Auch $A$ wäre mit genau zwei wahren Sätzen vereinbar, weil $A$ dann selbst nichts Wahres sagt.",
-        "Wäre $D$ schuldig, wäre genau ein Satz wahr, und dieser Satz wäre nicht der von $C$.",
-        "In der Lösung sagen $C$ und $A$ die Wahrheit.",
-        "Die Lösung ist eindeutig, und der Schuldige sagt von sich selbst, er sei schuldig."
+        "Die Lösung ist eindeutig, und der Schuldige behauptet von sich selbst, schuldig zu sein.",
+        "Zwei verschiedene Schuldhypothesen sind mit genau zwei wahren Sätzen vereinbar.",
+        "In jedem Fall mit genau einer wahren Aussage ist der Schuldige nicht die Person, die sich selbst beschuldigt.",
+        "In der Lösung ist die Aussage der Person wahr, die eine andere Person beschuldigt, und die Aussage der Person falsch, die sich selbst beschuldigt.",
+        "Es gibt eine Schuldhypothese mit genau drei wahren Sätzen, und sie ist nicht die Lösung."
       ],
       "answer_key": [
         true,
@@ -674,11 +674,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nBei schuldiger Person $C$ sagt $A$ etwas Falsches, $B$ sagt wahr, dass $A$ es nicht war, $C$ sagt wahr, $D$ sagt falsch, weil $C$ es war. Das sind genau zwei wahre Sätze. Die anderen drei Schuldhypothesen erzeugen eine andere Anzahl.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nIst $A$ schuldig, ist $A$s Satz falsch, $B$s Satz falsch, $C$s Satz falsch und $D$s Satz wahr. Es bleibt eine Wahrheit, nicht zwei. Dass $A$ nichts Wahres sagt, rettet die Zählung nicht.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nIst $D$ schuldig, sagt $D$ etwas Falsches, $C$ sagt etwas Falsches, $A$ sagt etwas Falsches, nur $B$ sagt Wahres. Genau eine Wahrheit, und sie liegt bei $B$, nicht bei $C$.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\n$C$ sagt die Wahrheit. $A$ sagt, $B$ sei schuldig, und das ist falsch. Die Lösung trägt nicht zwei wahre Sätze von $A$ und $C$, sondern von $B$ und $C$.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nNur die Schuld von $C$ erzeugt genau zwei Wahrheiten. $C$s Satz ist „Ich war es.“ In den Fällen mit genau einer Wahrheit, $A$ oder $D$, sagt der Schuldige das nicht von sich. Die Eindeutigkeit hängt an der Zahl zwei, nicht an der Zahl eins.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nNur eine Schuldhypothese erzeugt genau zwei wahre Sätze. In ihr sagt die schuldige Person, sie selbst sei es. Die Aussage nennt die Person nicht. Man muss die vier Fälle zählen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Zählung ergibt für genau zwei wahre Sätze nur eine Hypothese. Zwei Hypothesen haben genau eine wahre Aussage, eine hat drei. Die Zahl zwei ist nicht mehrdeutig.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nGenau eine wahre Aussage entsteht in zwei Hypothesen. In beiden ist eine andere Person schuldig als die, deren Satz ein Selbstbekenntnis ist. Das Selbstbekenntnis ist in diesen Fällen falsch.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nIn der Lösung ist das Selbstbekenntnis wahr und die Beschuldigung einer anderen Person falsch. Die Aussage vertauscht die beiden. Wer nur eine Hypothese einsetzt und die Anzahl der wahren Sätze nicht mit den anderen Fällen vergleicht, kann die Vertauschung übersehen.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nEine der vier Hypothesen macht drei Sätze wahr. Die Lösung verlangt genau zwei. Diese Hypothese scheidet aus, auch wenn sie viele wahre Sätze enthält.\n\nDie Aussage ist richtig."
       ],
       "solution_overview": "Ist $C$ schuldig, dann ist $A$ falsch, $B$ wahr, $C$ wahr und $D$ falsch: genau zwei Wahrheiten. In den drei anderen Fällen ist die Zahl der wahren Sätze $1$, $3$ oder $1$, nie $2$. Die Lösung ist eindeutig, und der Schuldige behauptet von sich selbst, schuldig zu sein.",
       "figure": "",
@@ -693,11 +693,11 @@
       "difficulty_level": "5/5",
       "context": "Für $a\\neq 0$ und $b\\neq 0$ sei\n\\[\nE=\\frac{a^{2}b^{-1}}{a^{-1}b}\\cdot\\left(\\frac{b}{a}\\right)^{2}.\n\\]\nAußerdem wird $(a^{2})^{1/2}$ betrachtet. Bewerten Sie jede Aussage.",
       "statements": [
-        "$E=a$ für alle zulässigen $a$ und $b$, auch wenn $a$ negativ ist. $(a^{2})^{1/2}$ ist für dieselben $a$ ebenfalls $a$.",
-        "Bei $a=-3$ und $b=2$ ist $E=-3$, und $(a^{2})^{1/2}=3$.",
-        "Weil beide Ausdrücke aus Potenzen bestehen, stimmen sie bei $a=-3$ überein.",
-        "Für $a>0$ gilt $(a^{2})^{1/2}=a$ und $E=a$, die beiden Ausdrücke stimmen dort überein. Für $a<0$ stimmen sie nicht.",
-        "$E=1$ für alle zulässigen $a$ und $b$, weil sich Zähler und Nenner aufheben."
+        "$E$ und $(a^{2})^{1/2}$ stimmen für alle zulässigen $a$ überein, auch für negative.",
+        "$E$ hängt am Ende nicht von $b$ ab und behält das Vorzeichen von $a$. Die Wurzel aus $a^{2}$ behält es nicht, sobald $a$ negativ ist.",
+        "Für negatives $a$ sind beide Ausdrücke negativ.",
+        "Für positives $a$ stimmen die beiden Ausdrücke überein, für negatives nicht.",
+        "$E$ ist für alle zulässigen $a$ und $b$ gleich $1$, weil Zähler und Nenner sich aufheben."
       ],
       "answer_key": [
         false,
@@ -707,11 +707,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\nDie erste Hälfte stimmt: die Exponenten von $b$ heben sich, es bleibt $a^{3-2}=a$, ohne eine Wurzel zu ziehen. Die zweite Hälfte stimmt nur für $a\\ge 0$. Für $a<0$ ist $(a^{2})^{1/2}$ positiv. Die Konjunktion fällt.\n\nDie Aussage ist falsch.",
-        "**B.** → Richtig\n\n$E$ hängt von $b$ am Ende nicht ab und ist gleich $a$, also $-3$. $(9)^{1/2}=3$, nicht $-3$. Die beiden Ausdrücke stehen an dieser Stelle auf verschiedenen Seiten der Null.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\n$-3$ und $3$ stimmen nicht überein. Potenz zu sein erzwingt nicht dieselbe Vereinfachung. $E$ kürzt Exponenten, $(a^{2})^{1/2}$ führt einen Betrag ein.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nFür positives $a$ ist der Betrag das $a$ selbst, und $E$ ist ebenfalls $a$. Für negatives $a$ bleibt $E$ negativ und die Wurzel positiv. Die Fallunterscheidung ist der ganze Inhalt, eine der beiden Seiten allein wäre zu wenig.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nEs hebt sich nicht alles auf. $b$ hebt sich auf, von $a$ bleibt der erste Grad. $E=1$ wäre nur für $a=1$ richtig und ist nicht die Identität.\n\nDie Aussage ist falsch."
+        "**A.** → Falsch\n\n$E$ kürzt sich zu $a$ und behält das Vorzeichen. $(a^{2})^{1/2}$ ist der Betrag und wird für negatives $a$ positiv. Dieselbe Potenzsprache erzeugt nicht denselben Wert.\n\nDie Aussage ist falsch.",
+        "**B.** → Richtig\n\nDie Exponenten von $b$ heben sich, von $a$ bleibt der erste Grad. Für $a<0$ ist $E$ negativ und $(a^{2})^{1/2}$ positiv. Man muss nicht eine Probezahl einsetzen, um das Vorzeichen zu kennen, aber eine Probe bestätigt es.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nNur $E$ ist dann negativ. Die Wurzel aus dem Quadrat ist positiv. Die Aussage überträgt das Vorzeichen des einen Ausdrucks auf den anderen.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nFür $a>0$ ist der Betrag gleich $a$, und $E$ ist ebenfalls $a$. Für $a<0$ bleiben sie auf verschiedenen Seiten der Null. Die Fallunterscheidung ist der ganze Inhalt.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nEs hebt sich nicht alles auf. $b$ verschwindet, von $a$ bleibt der erste Grad. Gleich $1$ wäre nur ein Sonderfall und keine Identität.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "Der erste Bruch ist $a^{3}b^{-2}$. Mal $b^{2}/a^{2}$ bleibt $a$. Das gilt auch für negatives $a$. Dagegen ist $(a^{2})^{1/2}=|a|$, also nur für $a>0$ gleich $a$. Bei $a=-3$ und $b=2$ ist $E=-3$ und $(a^{2})^{1/2}=3$.",
       "figure": "",
@@ -726,11 +726,11 @@
       "difficulty_level": "5/5",
       "context": "Ein Projekt zahlt heute $-100$, nach einem Jahr $+230$ und nach zwei Jahren $-132$. Bewerten Sie jede Aussage. Kapitalwerte sind auf heute bezogen.",
       "statements": [
-        "Es gibt zwei positive interne Zinsen, $10\\%$ und $20\\%$. Bei $15\\%$ ist der Kapitalwert positiv, bei $5\\%$ negativ.",
-        "Bei einem Kalkulationszins von $0\\%$ ist der Kapitalwert positiv, weil undiskontierte Einzahlungen die Auszahlung heute übersteigen.",
-        "Zwischen den beiden internen Zinsen ist der Kapitalwert positiv. Außerhalb dieses Intervalls, also auch bei $25\\%$, ist er negativ.",
-        "Zwei Vorzeichenwechsel der Zahlungsreihe erzeugen zwei interne Zinsen, und zwischen ihnen ist der Kapitalwert negativ.",
-        "Der Mittelwert $15\\%$ der beiden internen Zinsen ist selbst ein interner Zins, weil der Kapitalwert dort null ist."
+        "Es gibt zwei verschiedene positive interne Zinsen. Zwischen ihnen ist der Kapitalwert positiv, außerhalb negativ.",
+        "Bei einem Kalkulationszins von null ist der Kapitalwert positiv, weil die mittlere Einzahlung die beiden Auszahlungen übersteigt.",
+        "Der kleinere interne Zins liegt unter $15\\%$, der größere darüber. Bei $15\\%$ ist der Kapitalwert nicht null.",
+        "Zwei Vorzeichenwechsel erzeugen zwei interne Zinsen, und zwischen ihnen ist der Kapitalwert negativ.",
+        "Der arithmetische Mittelwert der beiden internen Zinsen ist selbst ein interner Zins."
       ],
       "answer_key": [
         true,
@@ -740,11 +740,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nNach Multiplikation mit $(1+r)^{2}$ entsteht $100r^{2}-30r+2=0$, Diskriminante $100$, Zinsen $\\dfrac{30\\pm 10}{200}$. Bei $0{,}15$ liegt der Kapitalwert knapp über null, bei $0{,}05$ darunter. Ein Zins unter beiden Nullstellen ist hier nicht schon ein Vorteil.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\n$-100+230-132=-2$. Die mittlere Einzahlung ist groß, die letzte Auszahlung frisst den Überschuss und noch $2$. Undiskontiert ist das Projekt bereits negativ. Die Aussage sieht nur die $230$.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDer Kapitalwert als Funktion des Zinses wechselt an jeder einfachen positiven Nullstelle das Vorzeichen. Innen, etwa bei $15\\%$, ist er positiv. Bei $25\\%$ liegt man über $20\\%$, das Vorzeichen ist wieder das des undiskontierten Falls, negativ.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nDie Zahlungsreihe wechselt zweimal das Vorzeichen, und es gibt tatsächlich zwei positive interne Zinsen. Zwischen ihnen ist der Kapitalwert aber positiv, nicht negativ. Die zweite Hälfte dreht das Innere des Intervalls um.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\n$15\\%$ liegt genau in der Mitte von $10\\%$ und $20\\%$ und ist keine Wurzel der quadratischen Gleichung. Der Kapitalwert dort ist positiv, nicht null. Der Mittelwert zweier Wurzeln ist nur bei einer besonderen Gleichung wieder eine Wurzel.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie quadratische Gleichung nach dem Hauptnenner hat zwei verschiedene positive Wurzeln. An beiden wechselt das Vorzeichen. Innen ist der Kapitalwert positiv, wie eine Probe zwischen den Wurzeln zeigt, außen negativ. Die Aussage nennt die Wurzeln nicht.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nUndiskontiert bleibt ein negativer Kapitalwert. Die mittlere Einzahlung ist groß und reicht nicht über beide Auszahlungen hinaus. Wer nur die Einzahlung ansieht, dreht das Vorzeichen.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDie beiden Wurzeln liegen auf verschiedenen Seiten von $15\\%$. Der Kapitalwert dort ist positiv und nicht null. $15\\%$ ist der Mittelwert der Wurzeln und deshalb gerade keine Wurzel. Das muss man aus der quadratischen Gleichung sehen und nicht aus dem Wort Mittelwert.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nZwei Vorzeichenwechsel lassen bis zu zwei positive interne Zinsen zu, und hier gibt es sie. Zwischen ihnen ist der Kapitalwert positiv, nicht negativ. Die zweite Hälfte dreht das Innere um.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nDer Mittelwert liegt zwischen den Wurzeln, und dort ist der Kapitalwert nicht null. Der Mittelwert zweier Wurzeln ist nur in einer besonderen Gleichung wieder eine Wurzel.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "Die Gleichung für den internen Zins führt auf $100r^{2}-30r+2=0$, also $r=0{,}1$ und $r=0{,}2$. Der Kapitalwert ist bei $0\\%$ gleich $-2$, bei $5\\%$ negativ, zwischen den beiden Zinsen positiv und außerhalb wieder negativ. $15\\%$ ist der Mittelwert der beiden Zinsen und keine Nullstelle.",
       "figure": "",
@@ -759,11 +759,11 @@
       "difficulty_level": "5/5",
       "context": "Gesucht ist die Lösung von\n\\[\n\\log_{3}(x-2)+\\log_{3}(x-4)=1.\n\\]\nBewerten Sie jede Aussage.",
       "statements": [
-        "Die algebraische Gleichung hat die Lösungen $1$ und $5$, und beide erfüllen die Logarithmusgleichung.",
-        "Im Definitionsbereich gibt es genau eine Lösung, und die Summe der beiden algebraischen Lösungen ist nicht diese Lösung.",
-        "$x=4$ ist eine Lösung, weil ein Argument dann $0$ ist und der Logarithmus von $0$ als $0$ gezählt werden darf.",
-        "Für $x=5$ ist die linke Seite $1$, und $x=5$ ist größer als beide Stellen $2$ und $4$, die in den Argumenten stehen.",
-        "Weil das Produkt der algebraischen Lösungen $5$ ist, ist $x=5$ eine doppelte Lösung der Logarithmusgleichung."
+        "Jede Lösung der entlogarithmierten Gleichung liegt im Definitionsbereich.",
+        "Im Definitionsbereich gibt es genau eine Lösung. Die Summe der beiden algebraischen Kandidaten ist keine Lösung der Logarithmusgleichung.",
+        "Der Rand des Definitionsbereichs ist eine Lösung, weil der Logarithmus von null als null gilt.",
+        "Die einzige zulässige Lösung ist größer als beide Zahlen, die in den Argumenten subtrahiert werden, und sie ist keine doppelte Lösung.",
+        "Das Produkt der algebraischen Kandidaten ist eine doppelte Lösung der Logarithmusgleichung."
       ],
       "answer_key": [
         false,
@@ -773,11 +773,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\n$(x-1)(x-5)=0$ ist die quadratische Gleichung. $x=1$ macht beide Argumente negativ und liegt nicht im Definitionsbereich $x>4$. Nur $x=5$ bleibt. Die algebraische Summe der Wurzeln ist kein Beweis, dass beide logarithmiert werden dürfen.\n\nDie Aussage ist falsch.",
-        "**B.** → Richtig\n\nNur $x=5$ ist zulässig. Die Summe $1+5=6$ ist eine andere Zahl und erfüllt die Logarithmusgleichung nicht: die Argumente $4$ und $2$ hätten das Produkt $8$, nicht $3$. Die Summe der Kandidaten ist hier eine Falle, kein neuer Kandidat.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\n$\\log_{3}0$ ist nicht definiert und nicht $0$. $x=4$ ist der Rand, der ausgeschlossen bleibt. $\\log_{3}1=0$ wäre das Argument $1$, nicht das Argument $0$.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\n$\\log_{3}(3)+\\log_{3}(1)=1+0=1$. $5>4>2$, beide Argumente sind positiv. Die Ungleichung gegen $2$ allein würde $x=1$ nicht sicher ausschließen, wenn man nur $x-2$ ansieht; hier sind beide Schranken erfüllt.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nDas Produkt $1\\cdot 5=5$ erklärt nicht die Vielfachheit. $x=1$ fällt heraus, $x=5$ bleibt einfach. Eine doppelte Lösung läge vor, wenn dieselbe zulässige Zahl zweimal entstünde. Das passiert nicht.\n\nDie Aussage ist falsch."
+        "**A.** → Falsch\n\nDie entlogarithmierte Gleichung ist quadratisch und hat zwei Lösungen. Nur eine liegt im Bereich $x>4$. Die andere macht beide Argumente der Logarithmen ungültig. Wer beide algebraischen Lösungen einsetzt, ohne den Bereich zu prüfen, nimmt eine Scheinlösung mit.\n\nDie Aussage ist falsch.",
+        "**B.** → Richtig\n\nNur eine der beiden algebraischen Lösungen ist zulässig. Ihre Summe ist eine dritte Zahl. An ihr ist das Produkt der Argumente nicht die geforderte Potenz von $3$. Die Summe der Kandidaten ist keine zusätzliche Lösung.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nAm Rand ist ein Argument null. Der Logarithmus davon ist nicht definiert und nicht null. Der Rand bleibt draußen.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nDie zulässige Lösung liegt echt über der größeren der beiden Subtrahenden, sonst wäre ein Argument nicht positiv. Sie entsteht einfach, nicht doppelt. Die andere algebraische Lösung fällt vorher aus dem Bereich.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDas Produkt erklärt keine Vielfachheit. Eine der beiden Zahlen ist unzulässig, die andere bleibt eine einfache Lösung. Eine doppelte Lösung entstünde nur, wenn dieselbe zulässige Zahl zweimal aufträte.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "Der Definitionsbereich ist $x>4$. Die Summe der Logarithmen ist der Logarithmus des Produkts, also $(x-2)(x-4)=3$. Daraus folgt $x^{2}-6x+5=0$, mit den algebraischen Lösungen $1$ und $5$. Nur $x=5$ liegt im Definitionsbereich. Dort ist $\\log_{3}3+\\log_{3}1=1$.",
       "figure": "",
@@ -792,11 +792,11 @@
       "difficulty_level": "5/5",
       "context": "Es gelten $x+y+z=10$ und $2x+y=8$ mit $x\\ge 0$, $y\\ge 0$, $z\\ge 0$. Bewertet wird $K=3x+y+4z$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Zulässig sind genau die Punkte mit $0\\le x\\le 4$, $y=8-2x$ und $z=x+2$. Das Minimum von $K$ liegt bei $x=0$ und das Maximum bei $x=4$.",
-        "Die Mitte $x=2$ ist zulässig und die kostengünstigste Stelle, weil sie von beiden Enden gleich weit entfernt ist.",
-        "Zwei Gleichungen in drei Unbekannten lassen hier genau einen zulässigen Punkt, weil sonst $K$ nicht eindeutig wäre.",
-        "$K$ kann $16$ und $36$ annehmen, aber nicht $15$ und nicht $37$. Der Punkt $(1,6,3)$ ist zulässig und hat die Kosten $21$.",
-        "Weil zwei Gleichungen drei Unbekannte offen lassen, ist $z$ frei wählbar und $K$ nach unten unbeschränkt."
+        "Die zulässige Menge ist eine Strecke. Die Kosten steigen entlang dieser Strecke streng, das Minimum liegt am einen Endpunkt und das Maximum am anderen.",
+        "Der Mittelpunkt der Strecke ist zulässig und die kostengünstigste Stelle, weil er von beiden Enden gleich weit entfernt ist.",
+        "Zwei Gleichungen in drei Unbekannten lassen hier genau einen zulässigen Punkt.",
+        "Die Kosten nehmen jeden Wert zwischen Minimum und Maximum an und keinen Wert außerhalb. Ein innerer Punkt ist teurer als einer der Endpunkte.",
+        "Die dritte Unbekannte ist frei wählbar, und die Kosten sind nach unten unbeschränkt."
       ],
       "answer_key": [
         true,
@@ -806,11 +806,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$y\\ge 0$ erzwingt $x\\le 4$, $x\\ge 0$ und $z=x+2\\ge 0$ sind dann automatisch. $K=3x+(8-2x)+4(x+2)=5x+16$ steigt mit $x$. Der kleinste Wert ist $16$ bei $(0,8,2)$, der größte $36$ bei $(4,0,6)$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\n$x=2$ ergibt $y=4$, $z=4$, alle nichtnegativ, also zulässig. $K=26$. Das ist der Mittelwert von $16$ und $36$, nicht das Minimum. Gleiche Entfernung auf einer Strecke minimiert eine steigende lineare Funktion nicht.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nDie beiden Gleichungen lassen einen freien Parameter. Die Vorzeichen schneiden ihn auf eine ganze Strecke, nicht auf einen Punkt. $K$ ist auf dieser Strecke trotzdem eindeutig bestimmt, sobald $x$ festliegt. Eindeutige Kosten an einem Punkt sind nicht Eindeutigkeit des Punkts.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nDie Bildmenge von $K$ ist $[16,36]$. $15$ und $37$ liegen draußen. Für $x=1$ ist $y=6$, $z=3$, und $K=5+16=21$. Alle drei Koordinaten erfüllen beide Gleichungen.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nZwei Gleichungen lassen hier nur einen Parameter frei, und die Vorzeichen schneiden ihn auf $[0,4]$. $z=x+2$ ist nicht frei. $K$ hat auf dieser Strecke ein Minimum. Unbeschränkt wäre die Aufgabe ohne $x\\ge 0$, $y\\ge 0$, $z\\ge 0$.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie beiden Gleichungen lassen einen Parameter frei, die Vorzeichen schneiden ihn auf ein abgeschlossenes Intervall. Die Kosten werden darauf eine steigende lineare Funktion. Minimum und Maximum sitzen an den Enden, nicht in der Mitte.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDer Mittelpunkt ist zulässig. Die Kosten liegen dort zwischen Minimum und Maximum. Gleiche Entfernung minimiert eine streng steigende Funktion nicht.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nEs bleibt ein freier Parameter, und die Vorzeichen lassen ein ganzes Intervall zu. Eindeutig sind die Kosten erst, wenn der Parameter festliegt, nicht der Punkt selbst.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nEine stetige streng steigende Funktion auf einer Strecke nimmt genau das Intervall zwischen den Endwerten an. Jeder innere Punkt liegt über dem billigeren Ende.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDie dritte Unbekannte hängt an dem einen Parameter, und der Parameter ist beschränkt. Die Kosten haben auf der Strecke ein Minimum. Unbeschränkt wäre die Aufgabe ohne die Vorzeichen.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "Aus der zweiten Gleichung folgt $y=8-2x$. Eingesetzt in die erste: $z=x+2$. Nichtnegativität erzwingt $0\\le x\\le 4$. Dann ist $K=5x+16$. Das Minimum $16$ liegt bei $x=0$, das Maximum $36$ bei $x=4$. Die Mitte $x=2$ hat $K=26$ und ist keines von beiden.",
       "figure": "",
@@ -825,11 +825,11 @@
       "difficulty_level": "5/5",
       "context": "Gesucht ist die Lösungsmenge von\n\\[\n\\frac{x^{2}-x-6}{x-2}<0.\n\\]\nBewerten Sie jede Aussage.",
       "statements": [
-        "Die Lösungsmenge ist $(-\\infty,-2)\\cup(2,3)$. $-2$ und $3$ gehören dazu, weil der Zähler dort null ist.",
-        "Es gibt keine ganze Lösung im Intervall $(2,3)$, und $-3$ ist eine Lösung. $2$ ist keine Lösung.",
-        "Im Intervall $(-2,2)$ ist der Bruch negativ, weil er zwischen zwei kritischen Stellen liegt.",
-        "Jede ganze Zahl $n\\le -3$ ist eine Lösung, und die drei Zahlen $-5,-4,-3$ sind nicht die einzigen ganzen Lösungen.",
-        "Nach dem Kürzen durch $x-2$ bleibt $(x-3)(x+2)<0$, und diese Ungleichung hat dieselbe Lösungsmenge wie die ursprüngliche."
+        "Die Lösungsmenge ist ein einziges Intervall, und die Nullstellen des Zählers gehören dazu.",
+        "Es gibt einen beschränkten und einen unbeschränkten Lösungsast. Keiner der Ränder des beschränkten Astes gehört zur Lösung, und zwischen diesen Rändern liegt keine ganze Zahl.",
+        "Zwischen der Definitionslücke und der kleineren Nullstelle des Zählers ist der Bruch negativ.",
+        "Jede ganze Zahl, die echt links von beiden Nullstellen des Zählers liegt, ist eine Lösung, und es gibt unendlich viele solche Zahlen.",
+        "Man darf durch den Faktor der Definitionslücke kürzen. Die gekürzte Ungleichung hat dieselbe Lösungsmenge."
       ],
       "answer_key": [
         false,
@@ -839,11 +839,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\nDie beiden Äste stimmen. An $x=-2$ und $x=3$ ist der Bruch null, und null ist nicht kleiner als null. Die strenge Ungleichung lässt die Nullstellen draußen. Wer $\\le$ gelesen hat, nimmt sie mit.\n\nDie Aussage ist falsch.",
-        "**B.** → Richtig\n\nZwischen $2$ und $3$ liegt keine ganze Zahl. Bei $x=-3$ ist der Zähler $6$ und der Nenner $-5$, der Bruch ist negativ. $x=2$ macht den Nenner null und fällt aus dem Bereich.\n\nDie Aussage ist richtig.",
-        "**C.** → Falsch\n\nBei $x=0$ ist der Bruch $(-6)/(-2)=3>0$. Der Vorzeichenwechsel an $x=-2$ lässt $(-2,2)$ ohne die Stelle $2$ positiv, nicht negativ. Zwischen zwei kritischen Stellen liegt nicht automatisch die Lösung.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\nDer linke Ast $(-\\infty,-2)$ enthält alle ganzen Zahlen bis $-3$ und keine Grenze nach links. $-5,-4,-3$ liegen darin, $-6$ aber auch. Eine endliche Aufzählung der drei nächsten Zahlen ist zu kurz.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\n$x-2$ ist kein gemeinsamer Faktor des Zählers. Kürzen ist nicht erlaubt, und $(x-3)(x+2)<0$ beschreibt nur $(-2,3)$. Die ursprüngliche Menge hat einen linken Ast und ein Loch bei $2$. Dieselbe Menge entsteht nicht.\n\nDie Aussage ist falsch."
+        "**A.** → Falsch\n\nEs gibt zwei Äste, getrennt durch die Definitionslücke. An den Nullstellen des Zählers ist der Bruch null, und null ist nicht kleiner als null. Weder die eine Menge noch die Zugehörigkeit der Ränder stimmt.\n\nDie Aussage ist falsch.",
+        "**B.** → Richtig\n\nDer beschränkte Ast liegt zwischen der Definitionslücke und der größeren Zählernullstelle, beide ausgeschlossen. Dazwischen liegt keine ganze Zahl. Der andere Ast läuft nach links und ist durch die kleinere Zählernullstelle begrenzt, die selbst nicht dazu gehört.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nDort haben die Faktoren ein Vorzeichenmuster, das den Bruch positiv macht. Zwischen zwei kritischen Stellen liegt nicht automatisch eine Lösung. Eine Probe in diesem offenen Intervall genügt, um die Aussage zu widerlegen, aber man muss das Intervall erst aus der Vorzeichentabelle gewinnen.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nLinks von beiden Zählernullstellen und links der Definitionslücke bleibt der Bruch negativ. Das sind alle genügend kleinen ganzen Zahlen, ohne untere Schranke. Eine endliche Liste der drei nächsten Zahlen wäre zu kurz.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDieser Faktor steht nicht im Zähler. Kürzen ist nicht erlaubt. Die Ungleichung ohne ihn beschreibt ein anderes Intervall und verliert den linken Ast sowie das Loch.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "Für $x\\neq 2$ ist der Bruch $\\dfrac{(x-3)(x+2)}{x-2}$. Die Lösungsmenge der strengen Ungleichung ist $(-\\infty,-2)\\cup(2,3)$. Die Nullstellen des Zählers gehören nicht dazu, $x=2$ ist nicht definiert. Es gibt keine ganze Zahl im Intervall $(2,3)$.",
       "figure": "",
@@ -858,11 +858,11 @@
       "difficulty_level": "5/5",
       "context": "Die Parabel $y=x^{2}$ und die Gerade $y=x+2$ schneiden sich. Bewerten Sie jede Aussage über die Sehne zwischen den Schnittpunkten.",
       "statements": [
-        "Die Schnittpunkte sind $(-1,1)$ und $(2,4)$. Die Sehnenlänge ist $3\\sqrt{2}$ und nicht $3$.",
+        "Es gibt zwei Schnittpunkte. Die Sehne ist länger als der Abstand der $x$-Koordinaten und länger als der Abstand der $y$-Koordinaten, und diese beiden Abstände sind gleich.",
         "Der Mittelpunkt der Sehne ist der Scheitel der Parabel.",
-        "An der $x$-Koordinate des Sehnenmittelpunkts ist die Tangente an die Parabel parallel zur Sehne.",
-        "Beide Schnittpunkte liegen über der $x$-Achse, und der linke hat die größere $y$-Koordinate.",
-        "Es gibt genau zwei Schnittpunkte, einer mit negativer $x$-Koordinate. Die Tangente im Scheitel ist parallel zur Sehne."
+        "An der $x$-Koordinate des Sehnenmittelpunkts ist die Tangente parallel zur Sehne, und sie ist nicht dieselbe Gerade wie die Sehne.",
+        "Beide Schnittpunkte liegen über der $x$-Achse, und der linke liegt höher als der rechte.",
+        "Die Tangente im Scheitel ist parallel zur Sehne."
       ],
       "answer_key": [
         true,
@@ -872,11 +872,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDie Differenzen der Koordinaten sind beide $3$. Die Länge ist $\\sqrt{3^{2}+3^{2}}=\\sqrt{18}=3\\sqrt{2}$. Wer nur eine Differenz als Länge nimmt, bleibt bei $3$ und vergisst die andere Richtung.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDer Mittelpunkt ist $\\left(\\dfrac12,\\dfrac52\\right)$. Der Scheitel ist $(0,0)$. Bei einer verschobenen Sehne fällt der Mittelpunkt nicht auf den Scheitel, auch wenn die Parabel symmetrisch ist.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nDie Sehne steigt um $3$ auf $3$, Steigung $1$. $y'=2x=1$ genau bei $x=\\dfrac12$, der $x$-Koordinate des Mittelpunkts. Parallel heißt gleiche Steigung, nicht dieselbe Gerade.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nDie $y$-Koordinaten $1$ und $4$ sind positiv. Der linke Punkt hat $y=1$, der rechte $y=4$. Die größere Höhe liegt rechts. Links auf der $x$-Achse heißt nicht links oben.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\nZwei Schnittpunkte, $x=-1$ negativ: das stimmt. Die Tangente im Scheitel hat die Steigung $0$, die Sehne die Steigung $1$. Parallel sind sie nicht. Die parallele Tangente sitzt bei $x=\\dfrac12$, nicht im Scheitel.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDie Schnittgleichung hat zwei verschiedene reelle Lösungen. Die Differenzen der Koordinaten sind gleich und positiv. Die Sehnenlänge ist die Wurzel aus der Summe der Quadrate und damit größer als jeder der beiden Abstände.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDer Mittelpunkt hat eine positive $x$-Koordinate und eine positive $y$-Koordinate. Der Scheitel liegt im Ursprung. Symmetrie der Parabel legt den Mittelpunkt einer schiefen Sehne nicht in den Scheitel.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDie Steigung der Sehne gleicht der Ableitung an der mittleren $x$-Koordinate. Die Tangente trifft die Parabel dort und hat dieselbe Steigung, ihr Achsenabschnitt ist aber ein anderer als der der Sehne. Parallel und identisch fallen auseinander.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBeide $y$-Koordinaten sind positiv. Die größere gehört zum größeren $x$. Links auf der Achse heißt nicht weiter oben.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nIm Scheitel ist die Ableitung null. Die Sehne hat eine positive Steigung. Parallel wären gleiche Steigungen. Die parallele Tangente sitzt an der mittleren $x$-Koordinate der Sehne, nicht im Scheitel.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "$x^{2}-x-2=0$ ergibt die Punkte $(-1,1)$ und $(2,4)$. Die Sehne hat die Länge $3\\sqrt{2}$. Ihr Mittelpunkt ist $\\left(\\dfrac12,\\dfrac52\\right)$ und nicht der Scheitel. Die Steigung der Sehne ist $1$, und $y'=2x$ nimmt den Wert $1$ bei $x=\\dfrac12$ an.",
       "figure": "",
@@ -891,11 +891,11 @@
       "difficulty_level": "5/5",
       "context": "Ein Aufwand folgt $E=k\\,q^{3/2}$ für $q>0$. Bei $q=4$ ist $E=16$. Bewerten Sie jede Aussage. Ein falsches Modell mit dem Exponenten $2$ und eines mit dem Exponenten $1$ werden an derselben Stelle $q=4$, $E=16$ festgenagelt.",
       "statements": [
-        "Von $q=4$ auf $q=16$ wächst $E$ um den Faktor $8$ und nicht um den Faktor $4$. Das am selben Punkt festgenagelte Modell mit Exponent $2$ wächst um den Faktor $16$.",
-        "Der Faktor $16$ des quadratischen Vergleichsmodells ist auch der Faktor von $E$ im gegebenen Modell.",
-        "Eine Verdopplung von $q=4$ auf $q=8$ multipliziert $E$ mit $2\\sqrt{2}$, und $2\\sqrt{2}$ liegt über $2$ und unter $4$.",
-        "Wer den Exponenten $1$ an $q=4$, $E=16$ festnagelt, sagt für $q=16$ den Wert $64$ voraus, und diese Vorhersage trifft $E$ im gegebenen Modell.",
-        "$E(8)$ ist mehr als doppelt so groß wie $E(4)$ und weniger als viermal so groß."
+        "Vervierfacht man die Einsatzmenge von der gegebenen Stelle aus, wächst $E$ um einen Faktor, der größer als $4$ und kleiner als der Faktor des am selben Punkt festgenagelten Quadratmodells ist.",
+        "Das Quadratmodell und das gegebene Modell vervielfachen $E$ bei dieser Vervierfachung um denselben Faktor.",
+        "Eine Verdopplung der Einsatzmenge multipliziert $E$ mit einem Faktor, der über $2$ und unter $4$ liegt.",
+        "Das lineare Vergleichsmodell trifft an der vervierfachten Stelle denselben Wert wie das gegebene Modell.",
+        "Nach einer Verdopplung liegt $E$ über dem Doppelten und unter dem Vierfachen des Ausgangswerts."
       ],
       "answer_key": [
         true,
@@ -905,11 +905,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$k=2$, $E(16)=2\\cdot 16^{3/2}=2\\cdot 64=128$, und $128/16=8$. Das Quadratmodell braucht $k=1$, weil $4^{2}=16$, und liefert bei $q=16$ den Wert $256$, Faktor $16$. Drei verschiedene Faktoren, nur einer gehört zum Exponenten $\\dfrac32$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDer quadratische Faktor von $q$ ist $4$, der von $E$ im Quadratmodell $16$, der von $E$ im gegebenen Modell $8$. Dieselbe Vervierfachung der Einsatzmenge erzeugt nicht denselben Faktor, sobald der Exponent sich ändert.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$8^{3/2}=(2^{3})^{3/2}=2^{9/2}=16\\sqrt{2}$, mal $k=2$ ergibt $E=32\\sqrt{2}$. Der Faktor gegen $E(4)=16$ ist $2\\sqrt{2}\\approx 2{,}83$. Das liegt über $2$ und unter $4$.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\nExponent $1$ ergibt $k=4$ und bei $q=16$ den Wert $64$. Das gegebene Modell ergibt $128$. $64$ ist genau die Hälfte und nicht der Treffer. Die lineare Fortschreibung unterschätzt die Krümmung des Exponenten $\\dfrac32$.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\n$32\\sqrt{2}\\approx 45{,}3$. Das Doppelte von $16$ ist $32$, das Vierfache $64$. $45{,}3$ liegt dazwischen. Doppelt so viel Einsatz ist hier weder doppelt noch viermal so viel Aufwand.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nAus der gegebenen Stelle folgt der Koeffizient des Exponenten $\\dfrac32$. Der Faktor der Vervierfachung liegt über $4$ und unter $16$. Das Quadratmodell, an derselben Stelle festgenagelt, vervielfacht mit $16$. Die Aussage nennt den mittleren Faktor nicht.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDer Faktor hängt am Exponenten. $4^{2}$ und $4^{3/2}$ sind verschieden. Dieselbe Vervierfachung der Einsatzmenge ist nicht derselbe Faktor für $E$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDer Faktor einer Verdopplung ist $2^{3/2}$. Das liegt über $2$ und unter $4$. Doppelt so viel Einsatz ist hier weder doppelt noch viermal so viel Aufwand.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDas lineare Modell, an der gegebenen Stelle festgenagelt, bleibt bei der Vervierfachung unter dem Wert des Exponenten $\\dfrac32$. Gleich wären die Werte nur bei gleichem Exponenten.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDas ist derselbe Faktor $2^{3/2}$ gegen den Ausgangswert. Die Schranken $2$ und $4$ sind die Faktoren der Exponenten $1$ und $2$, nicht der Faktor der Aufgabe.\n\nDie Aussage ist richtig."
       ],
       "solution_overview": "$4^{3/2}=8$, also $k=2$. Dann ist $E(16)=128$ und $E(8)=32\\sqrt{2}\\approx 45{,}25$. Der Faktor von $q=4$ auf $q=16$ ist $8$, nicht $4$ und nicht $16$. Das quadratische Vergleichsmodell sagt $256$ voraus, das lineare $64$.",
       "figure": "",
@@ -924,11 +924,11 @@
       "difficulty_level": "5/5",
       "context": "Es sei $p(x)=x^{3}+ax^{2}-x+2$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Für $a=-2$ ist $x=1$ eine einfache Nullstelle, und die beiden anderen Nullstellen haben verschiedene Vorzeichen.",
-        "Das Produkt aller drei Nullstellen ist $-2$, und ihre Summe ist $0$.",
-        "$p(x)=(x-1)(x-2)(x+1)$ für $a=-2$, und auf dem offenen Intervall $(-1,1)$ ist $p$ positiv.",
-        "Der Rest bei Division durch $x-1$ ist $a+2$, und für $a=0$ ist dieser Rest $0$.",
-        "Für $a=-2$ gibt es genau eine negative Nullstelle, und sie liegt zwischen $-2$ und $0$. Es gibt keine doppelte Nullstelle."
+        "Es gibt genau einen Parameter, für den der Rest bei Division durch $x-1$ verschwindet. Für diesen Parameter hat $p$ drei verschiedene reelle Nullstellen, und genau eine davon ist negativ.",
+        "Für diesen Parameter ist das Produkt der Nullstellen negativ und ihre Summe null.",
+        "Für diesen Parameter ist $p$ zwischen der negativen Nullstelle und der kleinsten positiven Nullstelle positiv.",
+        "Der Rest bei Division durch $x-1$ hängt nicht vom Parameter ab.",
+        "Für den Parameter mit Rest null gibt es keine doppelte Nullstelle. Die negative Nullstelle liegt zwischen $-2$ und $0$."
       ],
       "answer_key": [
         true,
@@ -938,11 +938,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$p(x)=(x+1)(x-1)(x-2)$. Jeder Faktor ist einfach. Die anderen Nullstellen sind $-1$ und $2$. Ein Vorzeichenwechsel zwischen ihnen ist sichtbar, $x=1$ liegt dazwischen und ist selbst eine Nullstelle, nicht eine der beiden anderen.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nFür das normierte Polynom ist das Produkt der Nullstellen gleich minus dem konstanten Glied, also $-2$. Die Summe ist der Koeffizient von $x^{2}$ mit umgekehrtem Vorzeichen, also $2$, nicht $0$. Die zweite Hälfte verwechselt Summe und einen mittleren Koeffizienten.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nBei $x=0$ ist $p(0)=2>0$. Die Faktoren $(x-1)$ und $(x-2)$ sind auf $(-1,1)$ beide negativ, $(x+1)$ positiv, das Produkt positiv. Ein Vorzeichen aus der Zahl der Minuszeichen genügt, man muss nicht jede Stelle neu einsetzen.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\n$p(1)=1+a-1+2=a+2$. Für $a=0$ bleibt $2$, nicht $0$. Null wäre der Rest nur für $a=-2$. Die allgemeine Restformel stimmt, der Spezialfall nicht.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDie einzige negative Nullstelle ist $-1$. Sie liegt zwischen $-2$ und $0$. Die drei Faktoren sind verschieden, keine doppelte Nullstelle. $p'(1)$ muss dafür nicht null sein und ist es auch nicht.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDer Rest ist $p(1)$ und verschwindet für genau einen Parameter. Danach zerfällt $p$ in drei verschiedene Linearfaktoren. Genau einer hat eine negative Nullstelle. Die Aussage nennt die drei Nullstellen nicht.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDas Produkt der Nullstellen eines normierten Polynoms mit positivem konstantem Glied ist negativ, das stimmt. Die Summe ist der Koeffizient von $x^{2}$ mit umgekehrtem Vorzeichen und ist hier nicht null. Die zweite Hälfte scheitert.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDort sind zwei Faktoren negativ und einer positiv. Das Produkt ist positiv. Man muss die Reihenfolge der Nullstellen kennen und nicht eine einzelne Stelle aus der Aussage einsetzen.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDer Rest ist eine nicht konstante lineare Funktion des Parameters. Nur für einen Wert verschwindet er. Unabhängigkeit würde bedeuten, dass entweder immer oder nie eine Nullstelle bei $1$ vorliegt.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDie drei Faktoren sind verschieden, also keine Doppelstelle. Die negative Nullstelle liegt echt zwischen $-2$ und $0$. Die Schranken ersetzen nicht die Faktorisierung, sie prüfen sie.\n\nDie Aussage ist richtig."
       ],
       "solution_overview": "Der Rest bei Division durch $x-1$ ist $p(1)=a+2$. Für $a=-2$ ist $x=1$ eine Nullstelle, und $p(x)=(x-1)(x-2)(x+1)$. Die Nullstellen sind $-1$, $1$ und $2$. Ihre Summe ist $2$, ihr Produkt $-2$. Auf $(-1,1)$ ist $p$ positiv.",
       "figure": "",
@@ -960,7 +960,7 @@
         "Der effektive Nominalzins liegt über $12{,}6\\%$ und unter $12{,}7\\%$. Der exakte reale Jahreszins liegt über $6{,}1\\%$ und unter $6{,}2\\%$.",
         "Die Differenz der beiden effektiven Jahressätze liegt über dem exakten realen Jahreszins, und das Zwölffache des exakten realen Monatszinses liegt ebenfalls darüber.",
         "Der exakte reale Jahreszins liegt über $6{,}2\\%$. Zwölfmal der exakte reale Monatszins liegt über dem exakten realen Jahreszins.",
-        "Der reale Monatszins ist genau $0{,}5$ Prozentpunkte unter $1\\%$, also genau $0{,}5\\%$.",
+        "Der reale Monatszins ist genau ein halber Prozentpunkt unter dem monatlichen Nominalzins.",
         "Zwölfmal der exakte reale Monatszins liegt unter dem exakten realen Jahreszins, und die Differenz der beiden Effektivsätze liegt über ihm."
       ],
       "answer_key": [
@@ -971,11 +971,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$1{,}01^{12}-1\\approx 0{,}126825$. $\\left(1{,}01/1{,}005\\right)^{12}-1\\approx 0{,}061363$. Beide Schranken sind eng und treffen nur die jeweils richtig aufgezinste Größe, nicht die Nominaldifferenz $12\\%-6\\%$.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nDie Differenz der Effektivsätze ist etwa $0{,}06515$ und liegt über $0{,}06136$. Das Zwölffache des Monatsrealzinses ist etwa $0{,}05970$ und liegt darunter. Die zweite Hälfte läuft in die andere Richtung. Drei Rechnungen, nicht eine.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\n$6{,}136\\%$ liegt unter $6{,}2\\%$. Das Zwölffache liegt bei etwa $5{,}970\\%$ und damit unter dem Jahreswert, nicht darüber. Beide Hälften wären die Richtung, die entstünde, wenn man lineare Aufzinsung mit Zinseszins verwechselt.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nDie Näherung $1\\%-0{,}5\\%$ ist $0{,}5\\%$. Exakt ist $1{,}01/1{,}005-1\\approx 0{,}49751\\%$. Der Unterschied ist klein und entscheidet die Aussage, weil sie das Wort genau benutzt. Dieselbe Näherung ist auch der Grund, warum das Zwölffache den Jahreszins nicht trifft.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nEtwa $5{,}970\\% < 6{,}136\\% < 6{,}515\\%$. Der exakte Jahreszins sitzt zwischen der zu kleinen linearen Fortschreibung und der zu großen Fisher-Differenz. Wer eine der beiden Nachbargrößen für den Realzins hält, liegt jedes Mal auf einer anderen Seite.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nBeide Grenzen treffen nur die aufgezinste Größe: $1{,}01^{12}-1$ und $(1{,}01/1{,}005)^{12}-1$. Die Nominaldifferenz aus $12\\%$ und $6\\%$ liegt daneben.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Differenz der Effektivsätze liegt über dem exakten Realzins. Das Zwölffache des Monatsrealzinses liegt darunter. Die zweite Hälfte läuft in die andere Richtung.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nDer exakte Jahresrealzins liegt unter $6{,}2\\%$. Das Zwölffache des Monatsrealzinses liegt unter dem Jahreswert, nicht darüber. Beide Hälften wären die lineare Verwechslung.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\nDie Differenz der beiden Monatsraten ist ein halber Prozentpunkt. Der exakte reale Monatszins ist der Quotient der Aufzinsungsfaktoren minus eins und liegt darunter. Die Aussage setzt Differenz und Quotient gleich.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDer exakte Jahresrealzins sitzt zwischen der zu kleinen linearen Fortschreibung und der zu großen Differenz der Effektivsätze. Drei verschiedene Rechnungen, nicht eine.\n\nDie Aussage ist richtig."
       ],
       "solution_overview": "Der effektive Nominalzins ist $1{,}01^{12}-1\\approx 12{,}6825\\%$. Der effektive Preisanstieg ist $1{,}005^{12}-1\\approx 6{,}1678\\%$. Der exakte reale Jahreszins ist\n\\[\n\\frac{1{,}01^{12}}{1{,}005^{12}}-1\\approx 6{,}1363\\%.\n\\]\nDer exakte reale Monatszins ist $1{,}01/1{,}005-1\\approx 0{,}49751\\%$, sein Zwölffaches etwa $5{,}970\\%$. Die Differenz der beiden Effektivsätze liegt darüber, das Zwölffache darunter.",
       "figure": "",
@@ -990,11 +990,11 @@
       "difficulty_level": "5/5",
       "context": "Für $q>0$ seien die Kosten $C(q)=20\\sqrt{q}+5q$ und der Preis konstant $15$. Nichts zu produzieren kostet nichts und bringt nichts. Bewerten Sie jede Aussage.",
       "statements": [
-        "Bei $q=1$ gilt Preis gleich Grenzkosten, und dieser Punkt ist ein Gewinnminimum, kein Gewinnmaximum.",
-        "Bei $q=1$ ist der Gewinn $-10$ und damit schlechter als der Gewinn $0$ bei Nichtproduktion. Die Stückkosten bei $q=1$ liegen unter dem Preis.",
-        "Weil die zweite Ableitung des Gewinns positiv ist, liegt ein Maximum vor. Man sollte $q=1$ produzieren.",
-        "Die Grenzkosten fallen mit $q$ und nähern sich $5$. Sie liegen bei $q=1$ über dem Preis nicht, sondern genau auf dem Preis.",
-        "Für sehr große $q$ wird der Gewinn positiv, weil die Grenzkosten gegen $5$ fallen und der Preis $15$ darüber bleibt."
+        "Die Stelle, an der der Preis den Grenzkosten gleicht, ist ein Gewinnminimum. Der Gewinn dort ist schlechter als bei Nichtproduktion.",
+        "An dieser Stelle liegen die Stückkosten unter dem Preis, und der Gewinn ist positiv.",
+        "Weil die zweite Ableitung des Gewinns positiv ist, liegt ein Maximum vor, und diese Stelle soll produziert werden.",
+        "Die Grenzkosten fallen mit der Menge und liegen an der kritischen Stelle genau auf dem Preis, nicht darüber.",
+        "Für große Mengen wird der Gewinn positiv, obwohl die kritische Stelle ein Verlust ist."
       ],
       "answer_key": [
         true,
@@ -1004,11 +1004,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\n$10/\\sqrt{q}=10$ ergibt $q=1$. Der Gewinn $15q-20\\sqrt{q}-5q=10q-20\\sqrt{q}$ hat dort die Ableitung null. Die zweite Ableitung $5 q^{-3/2}$ ist positiv. Die übliche Merkregel liest jede Nullstelle der ersten Ableitung als Maximum und liegt hier falsch.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nGewinn $15-20-5=-10$, das liegt unter $0$. Die Stückkosten sind $25$ und liegen über $15$, nicht darunter. Die zweite Hälfte würde aus dem Verlust ein Argument für die Produktion machen und dreht den Vergleich um.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nPositive zweite Ableitung heißt Minimum. $q=1$ ist die schlechteste Stelle in der Nähe, nicht die beste. Nicht zu produzieren bringt $0$ und ist besser als $-10$.\n\nDie Aussage ist falsch.",
-        "**D.** → Richtig\n\n$10/\\sqrt{q}$ fällt, die Grenzkosten fallen gegen $5$. Bei $q=1$ sind sie $15$, also gleich dem Preis, nicht darüber. Ein fallender Grenzverlauf ist der Grund, warum die übliche Schnittregel hier kein Maximum liefert.\n\nDie Aussage ist richtig.",
-        "**E.** → Richtig\n\nDer Gewinn $10q-20\\sqrt{q}=10\\sqrt{q}\\left(\\sqrt{q}-2\\right)$ wird für $q>4$ positiv und wächst danach unbeschränkt. Die kritische Stelle $q=1$ liegt noch im Verlustgebiet. Fallende Grenzkosten unter den Preis schließen einen späteren Gewinn nicht aus, sie warnen nur vor der falschen Station.\n\nDie Aussage ist richtig."
+        "**A.** → Richtig\n\nDie erste Ableitung des Gewinns verschwindet an genau einer Stelle. Die zweite Ableitung ist dort positiv, also ein Minimum. Der Gewinn liegt unter null, Nichtproduktion bringt null. Die übliche Lesart, jede Nullstelle der ersten Ableitung sei ein Maximum, scheitert hier.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Stückkosten liegen über dem Preis, der Gewinn ist negativ. Beide Vergleiche laufen gegen die Produktion an dieser Stelle.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nPositive zweite Ableitung heißt Minimum. Produzieren soll man dort nicht. Nichtproduktion ist besser.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nDer fallende Bestandteil der Grenzkosten geht gegen null, die Grenzkosten fallen gegen die variablen Stückkosten der linearen Komponente. An der kritischen Stelle sind sie dem Preis gleich. Gleich ist nicht größer.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\nNach der kritischen Stelle steigen die Gewinne, weil die Grenzkosten unter dem Preis bleiben, und sie werden positiv. Die kritische Stelle liegt noch im Verlust. Ein Minimum im Verlustgebiet schließt einen späteren Gewinn nicht aus.\n\nDie Aussage ist richtig."
       ],
       "solution_overview": "Die Grenzkosten sind $5+10/\\sqrt{q}$. Gleich dem Preis werden sie bei $q=1$. Dort ist der Gewinn $-10$. Die zweite Ableitung des Gewinns ist positiv, die kritische Stelle ist ein Minimum. Für große $q$ sinken die Grenzkosten gegen $5$, sie steigen nicht.",
       "figure": "",
@@ -1023,11 +1023,11 @@
       "difficulty_level": "5/5",
       "context": "Werk 1 fertigt $60\\%$ der Teile und hat eine Fehlerquote von $2\\%$. Werk 2 fertigt $40\\%$ und hat eine Fehlerquote von $5\\%$. Ein Teil wird zufällig geprüft. Bewerten Sie jede Aussage.",
       "statements": [
-        "Ein fehlerhaftes Teil stammt mit Wahrscheinlichkeit $0{,}375$ von Werk 1 und damit seltener von Werk 1 als von Werk 2.",
-        "Weil Werk 1 mehr Teile fertigt, stammt ein fehlerhaftes Teil wahrscheinlicher von Werk 1.",
-        "Die Wahrscheinlichkeit eines Fehlers liegt zwischen $3\\%$ und $4\\%$, und mehr als die Hälfte dieser Wahrscheinlichkeit kommt aus Werk 2.",
-        "Unter den guten Teilen liegt der Anteil von Werk 1 über $60\\%$ und unter $62\\%$. Er liegt damit über dem Fertigungsanteil von Werk 1.",
-        "$P(\\text{Werk 1}\\mid F)$ ist größer als der Fertigungsanteil von Werk 1, und $P(\\text{Werk 1}\\mid \\text{gut})$ ist kleiner als dieser Fertigungsanteil."
+        "Unter den fehlerhaften Teilen ist das größere Werk die unwahrscheinlichere Quelle.",
+        "Weil das größere Werk mehr fertigt, ist es die wahrscheinlichere Quelle eines Fehlers.",
+        "Die Wahrscheinlichkeit eines Fehlers liegt zwischen $3\\%$ und $4\\%$, und mehr als die Hälfte davon kommt aus dem kleineren Werk.",
+        "Unter den guten Teilen liegt der Anteil des größeren Werks über seinem Fertigungsanteil, aber nicht um mehr als zwei Prozentpunkte.",
+        "Bedingt auf den Fehler liegt der Anteil des größeren Werks über seinem Fertigungsanteil, bedingt auf gut darunter."
       ],
       "answer_key": [
         true,
@@ -1037,11 +1037,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Richtig\n\nDer Anteil der fehlerhaften Teile aus Werk 1 an allen Teilen ist $0{,}012$, aus Werk 2 $0{,}020$. Geteilt durch $0{,}032$ entstehen $0{,}375$ und $0{,}625$. Das größere Werk hat die kleinere Fehlerquelle, sobald man auf den Fehler bedingt.\n\nDie Aussage ist richtig.",
-        "**B.** → Falsch\n\nWerk 1 fertigt mehr und macht seltener Fehler. Das Produkt $0{,}012$ bleibt unter $0{,}020$. Die Fertigungsmenge allein dreht die bedingte Wahrscheinlichkeit nicht. Genau das wäre der Schluss ohne die Fehlerquoten.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\n$0{,}032$ liegt zwischen $0{,}03$ und $0{,}04$. Der Anteil von Werk 2 daran ist $0{,}020/0{,}032=0{,}625$ und damit mehr als die Hälfte. Die Gesamtfehlerquote und die Aufteilung sind zwei verschiedene Rechnungen.\n\nDie Aussage ist richtig.",
-        "**D.** → Richtig\n\nGute Teile aus Werk 1: $0{,}6\\cdot 0{,}98=0{,}588$. Alle guten Teile: $0{,}968$. Der Quotient ist etwa $0{,}607$, also zwischen $60\\%$ und $62\\%$ und über dem Fertigungsanteil $60\\%$. Die guten Teile schieben das bessere Werk leicht nach vorn, die fehlerhaften schieben es deutlich zurück.\n\nDie Aussage ist richtig.",
-        "**E.** → Falsch\n\nBedingt auf den Fehler fällt der Anteil von $0{,}60$ auf $0{,}375$. Bedingt auf gut steigt er auf etwa $0{,}607$. Die Aussage vertauscht die beiden Richtungen. Der Fehler zieht das schlechtere Werk nach vorn, das gute Teil das bessere.\n\nDie Aussage ist falsch."
+        "**A.** → Richtig\n\nDas größere Werk fertigt mehr und macht seltener Fehler. Das Produkt aus Anteil und Fehlerquote bleibt unter dem des kleineren Werks. Bedingt auf den Fehler dreht sich die Rangfolge der Mengen um. Die Aussage nennt den Bruch nicht.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Fertigungsmenge allein entscheidet die bedingte Wahrscheinlichkeit nicht. Die höhere Fehlerquote des kleineren Werks wiegt schwerer. Genau das wäre der Schluss ohne die beiden Quoten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDie totale Fehlerwahrscheinlichkeit liegt in diesem Band. Der größere der beiden Summanden gehört zum kleineren Werk und ist mehr als die Hälfte der Summe. Gesamtquote und Aufteilung sind zwei Rechnungen.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nBedingt auf gut rückt das größere Werk über seinen Fertigungsanteil, der Abstand bleibt unter zwei Prozentpunkten. Unter den fehlerhaften Teilen liegt derselbe Anteil deutlich darunter. Die Richtung hängt am Befund.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDie Richtungen sind vertauscht. Der Fehler zieht das schlechtere Werk nach vorn, das gute Teil das bessere. Die Aussage kehrt beide bedingten Vergleiche um.\n\nDie Aussage ist falsch."
       ],
       "solution_overview": "$P(F)=0{,}6\\cdot 0{,}02+0{,}4\\cdot 0{,}05=0{,}032$. Unter den fehlerhaften Teilen kommt Werk 1 mit Wahrscheinlichkeit $0{,}012/0{,}032=0{,}375$ vor, Werk 2 mit $0{,}625$. Unter den guten Teilen liegt der Anteil von Werk 1 bei $0{,}588/0{,}968\\approx 0{,}607$.",
       "figure": "",
@@ -1056,11 +1056,11 @@
       "difficulty_level": "5/5",
       "context": "$X$ sei binomial mit $n=8$. Verglichen werden $p=0{,}4$ und $p=0{,}5$ an der Beobachtung von genau sechs Treffern und an der rechten Tailwahrscheinlichkeit unter $p=0{,}4$. Bewerten Sie jede Aussage.",
       "statements": [
-        "Die Wahrscheinlichkeit von genau sechs Treffern ist unter $p=0{,}5$ größer als unter $p=0{,}4$, und $28/256$ liegt unter $0{,}1$.",
-        "Unter $p=0{,}4$ liegt $P(X\\ge 6)$ über $5\\%$. Sechs liegt zugleich mehr als zwei Standardabweichungen über dem Erwartungswert.",
-        "Unter $p=0{,}4$ ist der Erwartungswert $3{,}2$, und sechs liegt mehr als zwei Standardabweichungen darüber. $P(X=8)$ ist kleiner als $P(X=7)$ und kleiner als $0{,}001$.",
-        "Die Beobachtung von genau sechs Treffern ist unter $p=0{,}4$ wahrscheinlicher als unter $p=0{,}5$, weil $0{,}4$ näher an $6/8$ liegt als $0{,}5$.",
-        "$P(X\\ge 6)$ unter $p=0{,}4$ liegt unter $5\\%$, und $P(X=6)$ macht davon mehr als die Hälfte aus."
+        "Genau sechs Treffer sind unter $p=0{,}4$ wahrscheinlicher als unter $p=0{,}5$, und die Wahrscheinlichkeit unter $p=0{,}5$ liegt unter einem Zehntel.",
+        "Unter $p=0{,}4$ liegt die Wahrscheinlichkeit von mindestens sechs Treffern über $5\\%$. Sechs liegt dabei höchstens zwei Standardabweichungen über dem Erwartungswert.",
+        "Unter $p=0{,}4$ liegt sechs mehr als zwei Standardabweichungen über dem Erwartungswert, und die Wahrscheinlichkeit von mindestens sechs Treffern bleibt unter $5\\%$. Die Wahrscheinlichkeit von acht Treffern ist kleiner als die von sieben.",
+        "$0{,}4$ liegt näher an sechs Achteln als $0{,}5$, deshalb sind sechs Treffer unter $p=0{,}4$ wahrscheinlicher.",
+        "Unter $p=0{,}4$ stellt der Einzelwert sechs mehr als die Hälfte der rechten Tailwahrscheinlichkeit ab sechs, und diese Tailwahrscheinlichkeit bleibt unter $5\\%$."
       ],
       "answer_key": [
         false,
@@ -1070,11 +1070,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\n$0{,}109375>0{,}0413$, die erste Hälfte stimmt. $28/256=0{,}109375$ liegt über $0{,}1$, nicht darunter. Die Nähe zu $0{,}1$ ist der übliche Fehlschluss aus $28$ gegen $256$.\n\nDie Aussage ist falsch.",
-        "**B.** → Falsch\n\nDie Tailwahrscheinlichkeit ist etwa $0{,}04981$ und liegt unter $5\\%$. Der Abstand $6-3{,}2=2{,}8$ ist größer als $2\\sqrt{1{,}92}\\approx 2{,}771$. Die zweite Hälfte stimmt knapp, die erste nicht. Über zwei Standardabweichungen heißt hier noch nicht über $5\\%$ in der exakten Tailwahrscheinlichkeit.\n\nDie Aussage ist falsch.",
-        "**C.** → Richtig\n\nStandardabweichung $\\sqrt{8\\cdot 0{,}4\\cdot 0{,}6}=\\sqrt{1{,}92}\\approx 1{,}3856$, das Doppelte etwa $2{,}771$, und $2{,}8$ liegt darüber. $P(X=8)=0{,}4^{8}\\approx 0{,}000655$. $P(X=7)=8\\cdot 0{,}4^{7}\\cdot 0{,}6\\approx 0{,}00786$. Beide Vergleiche für $P(X=8)$ stimmen.\n\nDie Aussage ist richtig.",
-        "**D.** → Falsch\n\n$6/8=0{,}75$. Davon ist $0{,}5$ weniger weit entfernt als $0{,}4$ es ist: Abstand $0{,}25$ gegen $0{,}35$. Außerdem ist $P(X=6)$ unter $p=0{,}5$ größer, etwa $0{,}109$ gegen $0{,}041$. Beide Begründungen laufen der Rechnung entgegen.\n\nDie Aussage ist falsch.",
-        "**E.** → Richtig\n\nDie Tailwahrscheinlichkeit ist etwa $0{,}0498$. $P(X=6)\\approx 0{,}0413$ ist mehr als die Hälfte davon, $P(X=7)$ und $P(X=8)$ sind der kleinere Rest. Unter $5\\%$ zu liegen heißt nicht, dass der einzelne Punkt $X=6$ schon die ganze Tailwahrscheinlichkeit ist.\n\nDie Aussage ist richtig."
+        "**A.** → Falsch\n\nUnter $p=0{,}5$ ist die Wahrscheinlichkeit größer, und sie liegt über einem Zehntel. Der Abstand von $0{,}4$ zu sechs Achteln ist größer als der Abstand von $0{,}5$ dorthin. Beide Hälften laufen der Rechnung entgegen.\n\nDie Aussage ist falsch.",
+        "**B.** → Falsch\n\nDie Tailwahrscheinlichkeit liegt knapp unter $5\\%$. Der Abstand vom Erwartungswert ist größer als zwei Standardabweichungen. Über zwei Standardabweichungen heißt hier noch nicht über $5\\%$ in der exakten Tailwahrscheinlichkeit, und die Aussage behauptet beide Richtungen falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDer standardisierte Abstand liegt knapp über $2$. Die Tailwahrscheinlichkeit bleibt knapp unter $5\\%$. Acht Treffer sind seltener als sieben, weil jeder weitere Treffer den Faktor $p$ gegen $1-p$ tauscht und der Binomialkoeffizient das nicht ausgleicht.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nSechs Achtel liegen bei drei Vierteln. Davon ist $0{,}5$ weniger weit entfernt als $0{,}4$. Die Wahrscheinlichkeit ist unter $p=0{,}5$ die größere. Nähe zur falschen Seite der Quote dreht den Vergleich nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDer Einzelwert sechs ist der größte Brocken der Tailwahrscheinlichkeit, sieben und acht sind der kleinere Rest. Zusammen bleiben sie unter $5\\%$. Unter $5\\%$ zu liegen heißt nicht, dass der Einzelwert schon die ganze Tailwahrscheinlichkeit ist.\n\nDie Aussage ist richtig."
       ],
       "solution_overview": "$\\binom{8}{6}=28$. Unter $p=0{,}4$ ist $P(X=6)\\approx 0{,}0413$, unter $p=0{,}5$ ist sie $28/256=0{,}109375$. Die Tailwahrscheinlichkeit $P(X\\ge 6)$ unter $p=0{,}4$ ist etwa $0{,}0498$ und liegt unter $5\\%$. Der Erwartungswert unter $p=0{,}4$ ist $3{,}2$, die Standardabweichung $\\sqrt{1{,}92}\\approx 1{,}386$. Sechs liegt knapp mehr als zwei Standardabweichungen darüber.",
       "figure": "",
