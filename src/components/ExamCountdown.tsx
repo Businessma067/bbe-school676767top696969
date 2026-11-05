@@ -204,9 +204,14 @@ const POST_HYDRATION_TICK = `(function(){
  * keeps hydration identical; the live interval mounts only in the browser.
  */
 /** One honest line under the countdown on the homepage and the three landings. */
-export function ExamCourseSentence() {
+export function ExamCourseSentence({ className }: { className?: string }) {
   return (
-    <p className="mx-auto mt-3 max-w-md text-center text-sm leading-snug text-muted-foreground">
+    <p
+      className={cn(
+        "mx-auto mt-3 max-w-md text-center text-sm leading-snug text-muted-foreground",
+        className,
+      )}
+    >
       The free tasks are enough to try. The mocks are in the course.
     </p>
   );

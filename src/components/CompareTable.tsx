@@ -1,13 +1,14 @@
 import { Fragment } from "react";
 import { Check, X } from "lucide-react";
 
-type ColKey = "free" | "full" | "wiso";
+type ColKey = "free" | "full" | "wiso" | "hybrid";
 
 type ComparisonCell = {
   label: string;
   free: string;
   full: string;
   wiso: string;
+  hybrid: string;
 };
 
 type ComparisonSection = {
@@ -19,26 +20,26 @@ const comparisonSections: ComparisonSection[] = [
   {
     title: "Features",
     rows: [
-      { label: "Math Tasks", free: "70", full: "1870", wiso: "1870" },
-      { label: "Economics Tasks", free: "33", full: "913", wiso: "576" },
-      { label: "English Tasks", free: "6", full: "729", wiso: "❌" },
-      { label: "German Reading", free: "❌", full: "❌", wiso: "100" },
-      { label: "Textbook Theory", free: "❌", full: "Full materials", wiso: "Wirtschaft verstehen" },
-      { label: "Answer Sheet Simulator", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Interactive Speed Simulators", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Mock Exams", free: "❌", full: "5 exams with answer sheets", wiso: "WiSo mocks with answer sheets" },
+      { label: "Math Tasks", free: "70", full: "1870", wiso: "1870", hybrid: "3740" },
+      { label: "Economics Tasks", free: "33", full: "913", wiso: "576", hybrid: "1489" },
+      { label: "English Tasks", free: "6", full: "729", wiso: "❌", hybrid: "729" },
+      { label: "German Reading", free: "❌", full: "❌", wiso: "100", hybrid: "100" },
+      { label: "Textbook Theory", free: "❌", full: "Full materials", wiso: "Wirtschaft verstehen", hybrid: "Full materials + Wirtschaft verstehen" },
+      { label: "Answer Sheet Simulator", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "Interactive Speed Simulators", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "Mock Exams", free: "❌", full: "5 exams with answer sheets", wiso: "WiSo mocks with answer sheets", hybrid: "12 mock exams" },
     ],
   },
   {
     title: "Insider Guide",
     rows: [
-      { label: "Step by step explanations", free: "tick", full: "tick", wiso: "tick" },
-      { label: "AI Study Assistant", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Tactical Trap Callouts", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Dynamic Focus Heatmap", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Support Chat", free: "❌", full: "tick", wiso: "tick" },
-      { label: "Achievements & Medals Tab", free: "❌", full: "tick", wiso: "tick" },
-      { label: "OSA Guide", free: "❌", full: "tick", wiso: "tick" },
+      { label: "Step by step explanations", free: "tick", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "AI Study Assistant", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "Tactical Trap Callouts", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "Dynamic Focus Heatmap", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "Support Chat", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "Achievements & Medals Tab", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      { label: "OSA Guide", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
     ],
   },
 ];
@@ -47,6 +48,7 @@ const columns: { key: ColKey; label: string; short: string }[] = [
   { key: "free", label: "Free Sample", short: "Free" },
   { key: "full", label: "BBE Full Course", short: "BBE" },
   { key: "wiso", label: "WiSo Full Course", short: "WiSo" },
+  { key: "hybrid", label: "Hybrid Course", short: "Hybrid" },
 ];
 
 const COL_COUNT = columns.length + 1;
@@ -75,8 +77,11 @@ export function CompareTable({
     "relative bg-gradient-to-b from-[#C2643A0d] to-transparent ring-2 ring-[#C2643A] shadow-[0_0_24px_-4px_rgba(194,100,58,0.55)]";
   const hiClassWiso =
     "relative bg-gradient-to-b from-indigo-500/10 to-transparent ring-2 ring-indigo-600 shadow-[0_0_24px_-4px_rgba(79,70,229,0.45)]";
+  const hiClassHybrid =
+    "relative bg-gradient-to-b from-teal-700/10 to-transparent ring-2 ring-teal-700 shadow-[0_0_24px_-4px_rgba(15,118,110,0.45)]";
 
-  const hiClassFor = (key: ColKey) => (key === "wiso" ? hiClassWiso : hiClassBbe);
+  const hiClassFor = (key: ColKey) =>
+    key === "wiso" ? hiClassWiso : key === "hybrid" ? hiClassHybrid : hiClassBbe;
 
   return (
     <section className="mt-14 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
@@ -90,7 +95,7 @@ export function CompareTable({
 
         {/* Desktop table */}
         <div className="hidden overflow-x-auto rounded-2xl border border-border bg-background sm:block">
-          <table className="w-full min-w-[640px] border-collapse text-[11px]">
+          <table className="w-full min-w-[760px] border-collapse text-[11px]">
             <thead>
               <tr className="border-b border-border bg-muted/50">
                 <th className="sticky left-0 z-10 w-[170px] bg-muted px-2.5 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
@@ -159,9 +164,9 @@ export function CompareTable({
         </div>
 
         {/* Mobile unified table */}
-        <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
+        <div className="overflow-x-auto rounded-2xl border border-border bg-background sm:hidden">
           <div>
-            <table className="w-full table-fixed border-collapse text-[10px]">
+            <table className="w-full min-w-[640px] border-collapse text-[10px]">
               <thead>
                 <tr className="border-b border-border bg-muted/50">
                   <th className="w-[34%] bg-muted px-1.5 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">

@@ -12,7 +12,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
-import { BookCallSection } from "@/components/BookCallSection";
+import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { homepageNavItems } from "@/config/site-nav";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
@@ -127,22 +127,25 @@ export function Index() {
       <main>
         <section className="relative overflow-hidden px-3 pt-10 pb-12 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
           <div className="mx-auto max-w-6xl">
-            <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <div className="mb-5 flex w-full flex-col items-center sm:mb-6">
-                <ExamCountdown />
-                <ExamCourseSentence />
-              </div>
+            <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_22.5rem] lg:gap-10 xl:gap-14">
+              <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:pt-2 lg:text-left">
+                <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
+                  <ExamCountdown className="lg:items-start" />
+                  <ExamCourseSentence className="lg:mx-0 lg:text-left" />
+                </div>
 
-              <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
-                WU Vienna entrance exam preparation 2027
-              </h1>
-              <p className="mt-3 font-display text-base font-semibold tracking-wide text-muted-foreground sm:mt-4 sm:text-xl">
-                WiSo, BBE, and Hybrid
-              </p>
-              <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
-                Prepare for WU Vienna admission with BBE exam (BBE Aufnahmetest) or WiSo entrance
-                exam practice. Choose one track, or Hybrid to prepare for both together.
-              </p>
+                <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[2.6rem] sm:leading-[1.05] lg:text-[3.15rem]">
+                  WU Vienna entrance exam preparation 2027
+                </h1>
+                <p className="mt-3 font-display text-base font-semibold tracking-wide text-muted-foreground sm:mt-4 sm:text-xl">
+                  WiSo, BBE, and Hybrid
+                </p>
+                <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
+                  Prepare for WU Vienna admission with BBE exam (BBE Aufnahmetest) or WiSo entrance
+                  exam practice. Choose one track, or Hybrid to prepare for both together.
+                </p>
+              </div>
+              <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
             </div>
 
             <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-4 md:mt-10 md:grid-cols-3 md:items-stretch md:gap-5">
@@ -354,8 +357,6 @@ export function Index() {
             </div>
           </div>
         </section>
-
-        <BookCallSection />
 
         <div id="faq">
           <FaqAccordion />
