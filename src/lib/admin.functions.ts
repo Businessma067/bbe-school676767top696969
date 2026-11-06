@@ -32,6 +32,11 @@ const UserIdInput = z.object({
   userId: z.string().uuid(),
 });
 
+const AdminCustomMockInput = z.object({
+  userId: z.string().uuid(),
+  examId: z.string().min(1),
+});
+
 const TimelineInput = z.object({
   userId: z.string().uuid(),
   page: z.number().int().min(1).default(1),
@@ -355,6 +360,53 @@ export const adminGetUserDetail = createServerFn({ method: "POST" })
       authUser.created_at,
       authUser.phone ?? null,
     );
+  });
+
+/** Load another user's Custom Mock Builder paper for admin answer review. */
+export const adminGetCustomMockPaper = createServerFn({ method: "POST" })
+  .middleware([requireAdmin])
+  .inputValidator((d: unknown) => AdminCustomMockInput.parse(d))
+  .handler(async ({ context, data }) => {
+    const { parseCustomMockId } = await import("@/config/custom-mock-builder");
+    const { isWisoCustomMockDbSubject } = await import("@/config/wiso-custom-mock-builder");
+    const { summaryFromCustomMock } = await import("@/lib/mock-exams");
+    const id = parseCustomMockId(data.examId);
+    if (!id) return null;
+
+    const { data: row, error } = await context.supabaseAdmin
+      .from("custom_mocks")
+      .select(
+        "id, user_id, subject, title, chapters, question_count, duration_minutes, points_total, questions, created_at",
+      )
+      .eq("id", id)
+      .eq("user_id", data.userId)
+      .maybeSingle();
+
+    if (error) {
+      console.error("adminGetCustomMockPaper", error);
+      return null;
+    }
+    if (!row || !Array.isArray(row.questions) || row.questions.length === 0) return null;
+
+    const customRow = {
+      id: row.id,
+      user_id: row.user_id,
+      subject: row.subject,
+      title: row.title,
+      chapters: row.chapters ?? [],
+      question_count: row.question_count,
+      duration_minutes: row.duration_minutes,
+      points_total: Number(row.points_total),
+      questions: row.questions as unknown as import("@/lib/mock-exams").ExamQuestion[],
+      created_at: row.created_at,
+    };
+    const summary = summaryFromCustomMock(customRow);
+    return {
+      summary,
+      questions: customRow.questions,
+      pointsTotal: customRow.points_total,
+      track: (isWisoCustomMockDbSubject(customRow.subject) ? "wiso" : "bbe") as "bbe" | "wiso",
+    };
   });
 
 export const adminGetUserTimeline = createServerFn({ method: "POST" })

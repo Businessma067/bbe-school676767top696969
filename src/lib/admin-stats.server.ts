@@ -20,6 +20,7 @@ import {
 import { resolveAdminCountry } from "@/lib/countries";
 import { phoneWithCountryCode } from "@/lib/phone-country";
 import { buildStudyProgress, type SessionAnswerStat } from "@/lib/study-progress";
+import { handoffFromStoredMockAnswers } from "@/lib/mock-exam-analytics";
 import {
   computeStreak,
   summarizeTaskAttempts,
@@ -74,9 +75,44 @@ function mapTaskRow(row: Record<string, unknown>): AdminTaskAttemptRow {
   };
 }
 
+function enrichMockAnswersForReview(row: Record<string, unknown>): AdminJsonValue | null {
+  const raw = row.answers;
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+    return (raw ?? null) as AdminJsonValue | null;
+  }
+  const answers = { ...(raw as Record<string, unknown>) };
+  const progress = row.progress;
+  if (
+    (!answers.timeByQuestion || typeof answers.timeByQuestion !== "object") &&
+    progress &&
+    typeof progress === "object" &&
+    !Array.isArray(progress)
+  ) {
+    const tbq = (progress as Record<string, unknown>).timeByQuestion;
+    if (tbq && typeof tbq === "object" && !Array.isArray(tbq)) {
+      answers.timeByQuestion = tbq;
+    }
+  }
+  if (
+    !answers.flagged &&
+    row.flags &&
+    typeof row.flags === "object" &&
+    !Array.isArray(row.flags)
+  ) {
+    answers.flagged = row.flags;
+  }
+  return answers as AdminJsonValue;
+}
+
 function mapMockRow(row: Record<string, unknown>): AdminMockRow {
   const pointsEarned = Number(row.points_earned ?? 0);
   const pointsTotal = Number(row.points_total ?? 0);
+  const secondsTaken = row.seconds_taken != null ? Number(row.seconds_taken) : null;
+  const timed = Boolean(row.timed);
+  const answers = enrichMockAnswersForReview(row);
+  const hasReview = Boolean(
+    handoffFromStoredMockAnswers(answers, { timed, secondsTaken }),
+  );
   return {
     id: String(row.id),
     examId: String(row.exam_id),
@@ -85,11 +121,13 @@ function mapMockRow(row: Record<string, unknown>): AdminMockRow {
     pointsEarned,
     pointsTotal,
     perSubject: (row.per_subject ?? {}) as Record<string, number>,
-    secondsTaken: row.seconds_taken != null ? Number(row.seconds_taken) : null,
-    timed: Boolean(row.timed),
+    secondsTaken,
+    timed,
     startedAt: row.started_at != null ? String(row.started_at) : null,
     completedAt: row.completed_at != null ? String(row.completed_at) : null,
     scorePct: pct(pointsEarned, pointsTotal),
+    hasReview,
+    answers,
   };
 }
 
