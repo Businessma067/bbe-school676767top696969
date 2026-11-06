@@ -121,6 +121,8 @@ function ReviewExamPage() {
       correctCount: analytics.statementCorrect,
       statementCount: analytics.statementCount,
       marks: attempt.answers,
+      timeByQuestion: attempt.timeByQuestion,
+      flagged: attempt.flagged,
     });
   }, [ready, attempt, exam, examId, analytics, pointsTotal, questions.length]);
 

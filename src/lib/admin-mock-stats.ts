@@ -53,6 +53,8 @@ export type AdminMockAttemptRow = {
   pct: number;
   secondsTaken: number | null;
   answers: AdminMockAttemptAnswer[] | null;
+  /** Raw statement marks when stored — used for full student-style review. */
+  marks: Record<string, boolean[]> | null;
 };
 
 export type AdminMockExamStats = {
@@ -130,6 +132,7 @@ export function buildAdminMockExamStats(
       pct: round1(pct),
       secondsTaken: a.secondsTaken,
       answers,
+      marks: a.marks,
     };
   });
 

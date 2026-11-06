@@ -81,13 +81,31 @@ function parseMarksMap(raw: unknown): Record<string, boolean[]> | null {
   const out: Record<string, boolean[]> = {};
   let count = 0;
   for (const [id, value] of Object.entries(raw as Record<string, unknown>)) {
+    // Skip aggregate / metadata fields that may sit alongside marks.
+    if (
+      id === "correct_count" ||
+      id === "statement_count" ||
+      id === "marks" ||
+      id === "timeByQuestion" ||
+      id === "flagged" ||
+      id === "answers"
+    ) {
+      continue;
+    }
     if (!Array.isArray(value)) continue;
-    const marks = value.map((v) => v === true);
+    const marks = value.map((v) => v === true || v === 1 || v === "true");
     if (marks.length === 0) continue;
     out[id] = marks;
     count += 1;
   }
   return count > 0 ? out : null;
+}
+
+/** Pull per-question marks from any known `mock_attempts.answers` shape. */
+export function extractMarksFromAnswers(answersRaw: unknown): Record<string, boolean[]> | null {
+  if (!answersRaw || typeof answersRaw !== "object" || Array.isArray(answersRaw)) return null;
+  const o = answersRaw as Record<string, unknown>;
+  return parseMarksMap(o.marks) ?? parseMarksMap(o.answers) ?? parseMarksMap(o);
 }
 
 export function parseMockAttemptHandoff(raw: unknown): MockAttemptHandoff | null {
@@ -114,7 +132,7 @@ export function handoffFromStoredMockAnswers(
 ): MockAttemptHandoff | null {
   if (!answersRaw || typeof answersRaw !== "object" || Array.isArray(answersRaw)) return null;
   const o = answersRaw as Record<string, unknown>;
-  const marks = parseMarksMap(o.marks) ?? parseMarksMap(o.answers);
+  const marks = extractMarksFromAnswers(answersRaw);
   if (!marks) return null;
   const flaggedFromObj =
     o.flagged && typeof o.flagged === "object" && !Array.isArray(o.flagged)

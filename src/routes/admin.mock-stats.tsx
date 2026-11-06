@@ -1,9 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { Fragment, useEffect, useMemo, useState } from "react";
+import { AdminMockAttemptReview } from "@/components/admin/AdminMockAttemptReview";
 import { AdminLayout, StatCard, fmtDate, fmtDuration } from "@/components/admin/AdminLayout";
 import { adminGetMockExamStats } from "@/lib/admin.functions";
-import type { AdminMockExamStats } from "@/lib/admin-mock-stats";
+import type { AdminMockAttemptRow, AdminMockExamStats } from "@/lib/admin-mock-stats";
+import type { AdminMockRow } from "@/lib/admin-types";
 
 export const Route = createFileRoute("/admin/mock-stats")({
   component: AdminMockStatsPage,
@@ -16,6 +18,25 @@ export const Route = createFileRoute("/admin/mock-stats")({
   }),
 });
 
+function toAdminMockRow(exam: AdminMockExamStats, attempt: AdminMockAttemptRow): AdminMockRow {
+  return {
+    id: attempt.id,
+    examId: exam.examId,
+    examTitle: exam.title,
+    status: "submitted",
+    pointsEarned: attempt.pointsEarned,
+    pointsTotal: attempt.pointsTotal,
+    perSubject: {},
+    secondsTaken: attempt.secondsTaken,
+    timed: attempt.secondsTaken != null,
+    startedAt: null,
+    completedAt: attempt.completedAt,
+    scorePct: attempt.pct,
+    hasReview: Boolean(attempt.marks),
+    answers: attempt.marks ? { marks: attempt.marks } : null,
+  };
+}
+
 function AdminMockStatsPage() {
   const load = useServerFn(adminGetMockExamStats);
   const [exams, setExams] = useState<AdminMockExamStats[]>([]);
@@ -25,6 +46,9 @@ function AdminMockStatsPage() {
   const [openQ, setOpenQ] = useState<string | null>(null);
   const [openA, setOpenA] = useState<string | null>(null);
   const [search, setSearch] = useState("");
+  const [review, setReview] = useState<{ exam: AdminMockExamStats; attempt: AdminMockAttemptRow } | null>(
+    null,
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -47,6 +71,18 @@ function AdminMockStatsPage() {
     () => (exam?.attempts ?? []).filter((a) => a.email.toLowerCase().includes(search.toLowerCase())),
     [exam, search],
   );
+
+  if (review) {
+    return (
+      <AdminLayout title="Mock attempt review" wide>
+        <AdminMockAttemptReview
+          mock={toAdminMockRow(review.exam, review.attempt)}
+          userId={review.attempt.userId}
+          onBack={() => setReview(null)}
+        />
+      </AdminLayout>
+    );
+  }
 
   return (
     <AdminLayout title="Mock exam statistics" wide>
@@ -76,7 +112,11 @@ function AdminMockStatsPage() {
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
             <StatCard label="Submissions" value={exam.attemptCount} />
             <StatCard label="Average score" value={`${exam.avgPct}%`} />
-            <StatCard label="With saved answers" value={exam.detailedCount} hint="Answers are saved for attempts from now on" />
+            <StatCard
+              label="With saved answers"
+              value={exam.detailedCount}
+              hint="Full answer review is available for these attempts"
+            />
             <StatCard label="Students" value={new Set(exam.attempts.map((a) => a.userId)).size} />
           </div>
 
@@ -87,7 +127,9 @@ function AdminMockStatsPage() {
                 <div key={i} className="flex flex-1 flex-col items-center gap-1">
                   <span className="text-xs text-muted-foreground">{n}</span>
                   <div className="w-full rounded-t bg-primary" style={{ height: `${(n / maxBucket) * 110}px` }} />
-                  <span className="text-[10px] text-muted-foreground">{i * 10}–{i === 9 ? 100 : i * 10 + 9}%</span>
+                  <span className="text-[10px] text-muted-foreground">
+                    {i * 10}–{i === 9 ? 100 : i * 10 + 9}%
+                  </span>
                 </div>
               ))}
             </div>
@@ -97,7 +139,8 @@ function AdminMockStatsPage() {
             <h2 className="mb-2 font-semibold">By question</h2>
             {exam.detailedCount === 0 ? (
               <p className="rounded-xl border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
-                No attempts with saved answers yet for this exam.
+                No attempts with saved answers yet for this exam. New submits keep statement marks — after
+                students finish a mock, question-level stats appear here.
               </p>
             ) : (
               <div className="overflow-x-auto rounded-xl border border-border">
@@ -115,7 +158,10 @@ function AdminMockStatsPage() {
                   <tbody className="divide-y divide-border bg-card">
                     {exam.questions.map((q) => (
                       <Fragment key={q.id}>
-                        <tr className="cursor-pointer hover:bg-secondary/30" onClick={() => setOpenQ(openQ === q.id ? null : q.id)}>
+                        <tr
+                          className="cursor-pointer hover:bg-secondary/30"
+                          onClick={() => setOpenQ(openQ === q.id ? null : q.id)}
+                        >
                           <td className="px-3 py-2 font-semibold">{q.index}</td>
                           <td className="px-3 py-2 capitalize">{q.subject}</td>
                           <td className="max-w-md truncate px-3 py-2">{q.stem}</td>
@@ -137,8 +183,14 @@ function AdminMockStatsPage() {
                               {q.statements.map((s) => (
                                 <div key={s.letter} className="flex items-start gap-3 py-1 text-xs">
                                   <span className="w-5 font-bold">{s.letter}</span>
-                                  <span className={`w-12 font-semibold ${s.isTrue ? "text-primary" : "text-muted-foreground"}`}>{s.isTrue ? "True" : "False"}</span>
-                                  <span className="w-28">ticked {s.markedCount}/{q.attempts}</span>
+                                  <span
+                                    className={`w-12 font-semibold ${s.isTrue ? "text-primary" : "text-muted-foreground"}`}
+                                  >
+                                    {s.isTrue ? "True" : "False"}
+                                  </span>
+                                  <span className="w-28">
+                                    ticked {s.markedCount}/{q.attempts}
+                                  </span>
                                   <span className="w-24">{s.correctPct}% right</span>
                                   <span className="flex-1">{s.text}</span>
                                 </div>
@@ -179,17 +231,40 @@ function AdminMockStatsPage() {
                   {attempts.map((a) => (
                     <Fragment key={a.id}>
                       <tr>
-                        <td className="px-3 py-2">{a.email}</td>
+                        <td className="px-3 py-2">
+                          <Link
+                            to="/admin/users/$userId"
+                            params={{ userId: a.userId }}
+                            className="font-medium text-primary hover:underline"
+                          >
+                            {a.email}
+                          </Link>
+                        </td>
                         <td className="px-3 py-2">{fmtDate(a.completedAt)}</td>
-                        <td className="px-3 py-2">{a.pointsEarned}/{a.pointsTotal} ({a.pct}%)</td>
+                        <td className="px-3 py-2">
+                          {a.pointsEarned}/{a.pointsTotal} ({a.pct}%)
+                        </td>
                         <td className="px-3 py-2">{fmtDuration(a.secondsTaken)}</td>
                         <td className="px-3 py-2">
-                          {a.answers ? (
-                            <button type="button" className="text-primary underline" onClick={() => setOpenA(openA === a.id ? null : a.id)}>
-                              {openA === a.id ? "Hide" : "Show"}
-                            </button>
+                          {a.marks ? (
+                            <div className="flex flex-wrap gap-2">
+                              <button
+                                type="button"
+                                className="rounded-md border border-primary/40 bg-primary/10 px-2.5 py-1 text-sm font-semibold text-primary hover:bg-primary/15"
+                                onClick={() => setReview({ exam, attempt: a })}
+                              >
+                                View answers
+                              </button>
+                              <button
+                                type="button"
+                                className="text-sm text-muted-foreground underline"
+                                onClick={() => setOpenA(openA === a.id ? null : a.id)}
+                              >
+                                {openA === a.id ? "Hide grid" : "Quick grid"}
+                              </button>
+                            </div>
                           ) : (
-                            <span className="text-muted-foreground">Not saved</span>
+                            <span className="text-muted-foreground">Score only</span>
                           )}
                         </td>
                       </tr>
@@ -198,15 +273,24 @@ function AdminMockStatsPage() {
                           <td colSpan={5} className="bg-secondary/20 px-3 py-3">
                             <div className="grid grid-cols-2 gap-1 text-xs sm:grid-cols-4 lg:grid-cols-6">
                               {a.answers.map((ans) => (
-                                <div key={ans.questionIndex} className="rounded border border-border bg-card px-2 py-1">
+                                <div
+                                  key={ans.questionIndex}
+                                  className="rounded border border-border bg-card px-2 py-1"
+                                >
                                   <span className="font-bold">Q{ans.questionIndex}</span>{" "}
-                                  <span className={ans.marked === ans.correct ? "text-primary" : ""}>{ans.marked || "—"}</span>
+                                  <span className={ans.marked === ans.correct ? "text-primary" : ""}>
+                                    {ans.marked || "—"}
+                                  </span>
                                   <span className="text-muted-foreground"> / {ans.correct || "none"}</span>
-                                  <span className="float-right">{ans.score}/{ans.maxPoints}</span>
+                                  <span className="float-right">
+                                    {ans.score}/{ans.maxPoints}
+                                  </span>
                                 </div>
                               ))}
                             </div>
-                            <p className="mt-2 text-[11px] text-muted-foreground">Ticked / correct letters, points.</p>
+                            <p className="mt-2 text-[11px] text-muted-foreground">
+                              Ticked / correct letters, points.
+                            </p>
                           </td>
                         </tr>
                       ) : null}

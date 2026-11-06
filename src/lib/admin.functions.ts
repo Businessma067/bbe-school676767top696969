@@ -541,9 +541,10 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
   .handler(async ({ context }) => {
     const db = context.supabaseAdmin;
-    const [{ buildAdminMockExamStats }, mockExams] = await Promise.all([
+    const [{ buildAdminMockExamStats }, mockExams, { extractMarksFromAnswers }] = await Promise.all([
       import("@/lib/admin-mock-stats"),
       import("@/lib/mock-exams"),
+      import("@/lib/mock-exam-analytics"),
     ]);
     const authUsers = await listAllAuthUsers(db, Boolean(context.adminUsesServiceRole));
     const emailById = new Map(authUsers.map((u) => [u.id, u.email]));
@@ -597,19 +598,16 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
           examId,
           title,
           questions,
-          list.map((r) => {
-            const a = (r.answers ?? {}) as { marks?: Record<string, boolean[]> };
-            return {
-              id: r.id,
-              userId: r.user_id,
-              email: emailById.get(r.user_id) ?? r.user_id,
-              completedAt: r.completed_at,
-              pointsEarned: Number(r.points_earned),
-              pointsTotal: Number(r.points_total),
-              secondsTaken: r.seconds_taken,
-              marks: a.marks && typeof a.marks === "object" ? a.marks : null,
-            };
-          }),
+          list.map((r) => ({
+            id: r.id,
+            userId: r.user_id,
+            email: emailById.get(r.user_id) ?? r.user_id,
+            completedAt: r.completed_at,
+            pointsEarned: Number(r.points_earned),
+            pointsTotal: Number(r.points_total),
+            secondsTaken: r.seconds_taken,
+            marks: extractMarksFromAnswers(r.answers),
+          })),
         ),
       );
     }
