@@ -23,6 +23,8 @@ describe("admin mock stats", () => {
     expect(s.questions[0].fullScoreCount).toBe(1);
     expect(s.questions[0].statements[0].markedCount).toBe(1);
     expect(s.attempts[0].answers?.[0].marked).toBe("A");
+    expect(s.attempts[0].marks?.q1?.[0]).toBe(true);
     expect(s.attempts[1].answers).toBeNull();
+    expect(s.attempts[1].marks).toBeNull();
   });
 });

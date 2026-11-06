@@ -67,6 +67,8 @@ export type MockAnswersPayload = {
   statement_count: number;
   /** Per-question ticks (question id → 5 booleans), kept for admin statistics. */
   marks?: Record<string, boolean[]>;
+  timeByQuestion?: Record<string, number>;
+  flagged?: string[];
 };
 
 function parseMockAnswers(raw: unknown): { correct_count: number | null; statement_count: number | null } {
@@ -232,6 +234,21 @@ export async function fetchTaskAttempts(): Promise<TaskAttempt[]> {
 
 /* -------------------------- mock attempts ------------------------- */
 
+function marksFromAnswersJson(raw: unknown): Record<string, boolean[]> | null {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return null;
+  const o = raw as Record<string, unknown>;
+  const nested = o.marks;
+  if (nested && typeof nested === "object" && !Array.isArray(nested)) {
+    const out: Record<string, boolean[]> = {};
+    for (const [id, value] of Object.entries(nested as Record<string, unknown>)) {
+      if (!Array.isArray(value) || value.length === 0) continue;
+      out[id] = value.map((v) => v === true);
+    }
+    if (Object.keys(out).length > 0) return out;
+  }
+  return null;
+}
+
 export async function recordMockAttempt(input: {
   examId: string;
   examTitle: string;
@@ -243,23 +260,35 @@ export async function recordMockAttempt(input: {
   correctCount: number;
   statementCount: number;
   marks?: Record<string, boolean[]>;
+  timeByQuestion?: Record<string, number>;
+  flagged?: string[];
 }): Promise<void> {
   const userId = await currentUserId();
   if (!userId) return;
-  const answers: MockAnswersPayload = {
-    correct_count: input.correctCount,
-    statement_count: input.statementCount,
-    ...(input.marks ? { marks: input.marks } : {}),
-  };
 
   // Prefer converting in-progress row → submitted so recovery state is cleared.
   const { data: existing } = await supabase
     .from("mock_attempts")
-    .select("id")
+    .select("id, answers")
     .eq("user_id", userId)
     .eq("exam_id", input.examId)
     .eq("status", "in_progress")
     .maybeSingle();
+
+  const inputMarks =
+    input.marks && Object.keys(input.marks).length > 0 ? input.marks : null;
+  const priorMarks = marksFromAnswersJson(existing?.answers);
+  const marks = inputMarks ?? priorMarks;
+
+  const answers: MockAnswersPayload = {
+    correct_count: input.correctCount,
+    statement_count: input.statementCount,
+    ...(marks ? { marks } : {}),
+    ...(input.timeByQuestion && Object.keys(input.timeByQuestion).length > 0
+      ? { timeByQuestion: input.timeByQuestion }
+      : {}),
+    ...(input.flagged && input.flagged.length > 0 ? { flagged: input.flagged } : {}),
+  };
 
   if (existing?.id) {
     const { error } = await supabase

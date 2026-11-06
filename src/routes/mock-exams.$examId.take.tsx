@@ -325,10 +325,17 @@ function TakeExamPage() {
       } catch {
         /* review falls back */
       }
+      // Final backup of marks before review converts the row to submitted.
+      void upsertMockExamProgress({
+        examId,
+        examTitle: exam?.title ?? examId,
+        session: s,
+        pointsTotal: exam?.pointsTotal,
+      });
       clearSession(examId);
       navigate({ to: "/mock-exams/$examId/review", params: { examId } });
     },
-    [examId, navigate],
+    [examId, navigate, exam?.title, exam?.pointsTotal],
   );
 
   useEffect(() => {

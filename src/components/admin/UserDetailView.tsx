@@ -313,6 +313,7 @@ function TasksTab({ detail }: { detail: AdminUserDetail }) {
 
 function MocksTab({ detail }: { detail: AdminUserDetail }) {
   const [reviewMock, setReviewMock] = useState<AdminMockRow | null>(null);
+  const withAnswers = detail.mocks.filter((m) => m.hasReview).length;
 
   if (reviewMock) {
     return (
@@ -325,39 +326,50 @@ function MocksTab({ detail }: { detail: AdminUserDetail }) {
   }
 
   return (
-    <DataTable
-      columns={[
-        { key: "date", label: "Date" },
-        { key: "exam", label: "Exam" },
-        { key: "status", label: "Status" },
-        { key: "score", label: "Score" },
-        { key: "points", label: "Points" },
-        { key: "time", label: "Time" },
-        { key: "timed", label: "Timed" },
-        { key: "review", label: "Review" },
-      ]}
-      rows={detail.mocks.map((m) => ({
-        date: fmtDate(m.completedAt ?? m.startedAt),
-        exam: m.examTitle,
-        status: m.status,
-        score: m.scorePct != null ? `${m.scorePct}%` : "—",
-        points: `${m.pointsEarned}/${m.pointsTotal}`,
-        time: fmtDuration(m.secondsTaken),
-        timed: m.timed ? "Yes" : "No",
-        review: m.hasReview ? (
-          <button
-            type="button"
-            onClick={() => setReviewMock(m)}
-            className="text-sm font-semibold text-primary hover:underline"
-          >
-            View answers
-          </button>
-        ) : (
-          <span className="text-xs text-muted-foreground">No detail</span>
-        ),
-      }))}
-      empty="No mock exam data."
-    />
+    <div className="space-y-3">
+      <p className="text-sm text-muted-foreground">
+        {withAnswers > 0
+          ? `${withAnswers} of ${detail.mocks.length} attempt(s) have saved answers — open View answers for the full student review.`
+          : detail.mocks.length > 0
+            ? "Score totals are shown below. Full answer review needs attempts submitted after answer-saving was enabled (new submits keep marks)."
+            : null}
+      </p>
+      <DataTable
+        columns={[
+          { key: "date", label: "Date" },
+          { key: "exam", label: "Exam" },
+          { key: "status", label: "Status" },
+          { key: "score", label: "Score" },
+          { key: "points", label: "Points" },
+          { key: "time", label: "Time" },
+          { key: "timed", label: "Timed" },
+          { key: "review", label: "Review" },
+        ]}
+        rows={detail.mocks.map((m) => ({
+          date: fmtDate(m.completedAt ?? m.startedAt),
+          exam: m.examTitle,
+          status: m.status,
+          score: m.scorePct != null ? `${m.scorePct}%` : "—",
+          points: `${m.pointsEarned}/${m.pointsTotal}`,
+          time: fmtDuration(m.secondsTaken),
+          timed: m.timed ? "Yes" : "No",
+          review: m.hasReview ? (
+            <button
+              type="button"
+              onClick={() => setReviewMock(m)}
+              className="rounded-md border border-primary/40 bg-primary/10 px-2.5 py-1 text-sm font-semibold text-primary hover:bg-primary/15"
+            >
+              View answers
+            </button>
+          ) : (
+            <span className="text-xs text-muted-foreground" title="Statement marks were not stored for this attempt">
+              Score only
+            </span>
+          ),
+        }))}
+        empty="No mock exam data."
+      />
+    </div>
   );
 }
 
