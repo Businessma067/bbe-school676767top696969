@@ -55,6 +55,7 @@ import { Route as LangIndexRouteImport } from './routes/$lang.index'
 import { Route as LangSplatRouteImport } from './routes/$lang.$'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
+import { Route as AdminMockStatsRouteImport } from './routes/admin.mock-stats'
 import { Route as AdminPromocodesRouteImport } from './routes/admin.promocodes'
 import { Route as AdminSupportRouteImport } from './routes/admin.support'
 import { Route as AdminUsersRouteImport } from './routes/admin.users'
@@ -385,6 +386,11 @@ const AdminIndexRoute = AdminIndexRouteImport.update({
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/economics',
   path: '/economics',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminMockStatsRoute = AdminMockStatsRouteImport.update({
+  id: '/mock-stats',
+  path: '/mock-stats',
   getParentRoute: () => AdminRoute,
 } as any)
 const AdminPromocodesRoute = AdminPromocodesRouteImport.update({
@@ -964,6 +970,7 @@ export interface FileRoutesByFullPath {
   '/wu-vienna': typeof WuViennaRoute
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/mock-stats': typeof AdminMockStatsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/support': typeof AdminSupportRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
@@ -1103,6 +1110,7 @@ export interface FileRoutesByTo {
   '/wu-vienna': typeof WuViennaRoute
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/mock-stats': typeof AdminMockStatsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/support': typeof AdminSupportRoute
   '/api/chat': typeof ApiChatRoute
@@ -1241,6 +1249,7 @@ export interface FileRoutesById {
   '/wu-vienna': typeof WuViennaRoute
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/mock-stats': typeof AdminMockStatsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/support': typeof AdminSupportRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
@@ -1392,6 +1401,7 @@ export interface FileRouteTypes {
     | '/wu-vienna'
     | '/$lang/$'
     | '/admin/economics'
+    | '/admin/mock-stats'
     | '/admin/promocodes'
     | '/admin/support'
     | '/admin/users'
@@ -1531,6 +1541,7 @@ export interface FileRouteTypes {
     | '/wu-vienna'
     | '/$lang/$'
     | '/admin/economics'
+    | '/admin/mock-stats'
     | '/admin/promocodes'
     | '/admin/support'
     | '/api/chat'
@@ -1668,6 +1679,7 @@ export interface FileRouteTypes {
     | '/wu-vienna'
     | '/$lang/$'
     | '/admin/economics'
+    | '/admin/mock-stats'
     | '/admin/promocodes'
     | '/admin/support'
     | '/admin/users'
@@ -2153,6 +2165,13 @@ declare module '@tanstack/react-router' {
       path: '/economics'
       fullPath: '/admin/economics'
       preLoaderRoute: typeof AdminEconomicsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/mock-stats': {
+      id: '/admin/mock-stats'
+      path: '/mock-stats'
+      fullPath: '/admin/mock-stats'
+      preLoaderRoute: typeof AdminMockStatsRouteImport
       parentRoute: typeof AdminRoute
     }
     '/admin/promocodes': {
@@ -2893,6 +2912,7 @@ const AdminUsersRouteWithChildren = AdminUsersRoute._addFileChildren(
 
 interface AdminRouteChildren {
   AdminEconomicsRoute: typeof AdminEconomicsRoute
+  AdminMockStatsRoute: typeof AdminMockStatsRoute
   AdminPromocodesRoute: typeof AdminPromocodesRoute
   AdminSupportRoute: typeof AdminSupportRoute
   AdminUsersRoute: typeof AdminUsersRouteWithChildren
@@ -2901,6 +2921,7 @@ interface AdminRouteChildren {
 
 const AdminRouteChildren: AdminRouteChildren = {
   AdminEconomicsRoute: AdminEconomicsRoute,
+  AdminMockStatsRoute: AdminMockStatsRoute,
   AdminPromocodesRoute: AdminPromocodesRoute,
   AdminSupportRoute: AdminSupportRoute,
   AdminUsersRoute: AdminUsersRouteWithChildren,

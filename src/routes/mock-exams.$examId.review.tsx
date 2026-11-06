@@ -120,6 +120,7 @@ function ReviewExamPage() {
       timed: attempt.timed,
       correctCount: analytics.statementCorrect,
       statementCount: analytics.statementCount,
+      marks: attempt.answers,
     });
   }, [ready, attempt, exam, examId, analytics, pointsTotal, questions.length]);
 

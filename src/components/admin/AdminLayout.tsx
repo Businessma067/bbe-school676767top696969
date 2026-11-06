@@ -95,6 +95,7 @@ export function AdminLayout({ children, title, wide }: Props) {
               Support{unread > 0 ? ` (${unread})` : ""}
             </AdminNavLink>
             <AdminNavLink to="/admin/promocodes">Promocodes</AdminNavLink>
+            <AdminNavLink to="/admin/mock-stats">Mock stats</AdminNavLink>
           </nav>
         </aside>
         <div className="min-w-0 flex-1">
@@ -112,7 +113,7 @@ function AdminNavLink({
   to,
   children,
 }: {
-  to: "/admin/users" | "/admin/promocodes" | "/admin/support";
+  to: "/admin/users" | "/admin/promocodes" | "/admin/support" | "/admin/mock-stats";
   children: ReactNode;
 }) {
   return (
