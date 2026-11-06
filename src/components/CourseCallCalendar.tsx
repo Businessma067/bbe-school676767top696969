@@ -47,8 +47,10 @@ function formatTime(iso: string): string {
   }).format(new Date(iso));
 }
 
+/** Calendly only keeps the slot when the path time is UTC (`...T17:30:00Z`). */
 function slotHref(start: string): string {
-  return `${CALENDLY_BOOKING_URL}/${start.replace(/\+/g, "%2B")}`;
+  const utc = new Date(start).toISOString().replace(".000Z", "Z");
+  return `${CALENDLY_BOOKING_URL}/${utc}`;
 }
 
 const DRUM_ITEM_PX = 32;
