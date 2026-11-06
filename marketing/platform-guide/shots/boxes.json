@@ -1,0 +1,71 @@
+{
+  "ch2": {
+    "x": 213,
+    "y": 212,
+    "w": 301,
+    "h": 69,
+    "t": "2. Basic Economic Concepts\n6\n0/146"
+  },
+  "task1": {
+    "x": 231,
+    "y": 266,
+    "w": 337,
+    "h": 28,
+    "t": "Task 1"
+  },
+  "checks": [
+    {
+      "x": 1482,
+      "y": 458,
+      "label": "Mark statement A as true"
+    },
+    {
+      "x": 1482,
+      "y": 507,
+      "label": "Mark statement B as true"
+    },
+    {
+      "x": 1482,
+      "y": 556,
+      "label": "Mark statement C as true"
+    },
+    {
+      "x": 1482,
+      "y": 605,
+      "label": "Mark statement D as true"
+    },
+    {
+      "x": 1482,
+      "y": 654,
+      "label": "Mark statement E as true"
+    }
+  ],
+  "checkBtn": {
+    "x": 584,
+    "y": 723,
+    "w": 206,
+    "h": 40,
+    "t": "Check Answers / Submit"
+  },
+  "sheet": {
+    "x": 1175,
+    "y": 491,
+    "w": 55,
+    "h": 48,
+    "t": "Sheet"
+  },
+  "calc": {
+    "x": 1176,
+    "y": 631,
+    "w": 138,
+    "h": 121,
+    "t": "Calc"
+  },
+  "flip": {
+    "x": 819,
+    "y": 825,
+    "w": 56,
+    "h": 40,
+    "t": "Flip"
+  }
+}

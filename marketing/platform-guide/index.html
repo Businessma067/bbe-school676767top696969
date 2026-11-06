@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>BBE School — platform guide</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; overflow: hidden; }
+  #stage { position: absolute; width: 1600px; height: 900px; overflow: hidden; background: #f2f1ed; transform-origin: top left; }
+  #world { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; }
+  .plate { position: absolute; inset: 0; width: 1600px; height: 900px; object-fit: fill; }
+  .mark {
+    position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px;
+    z-index: 3; pointer-events: none; opacity: 0;
+  }
+  .mark svg { display: block; width: 100%; height: 100%; }
+  #cursor {
+    position: absolute; left: 0; top: 0; width: 28px; height: 28px; z-index: 6;
+    pointer-events: none; transform-origin: 5px 3px;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.35));
+  }
+  #ripple {
+    position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px;
+    border: 1.5px solid #161616; border-radius: 99px; z-index: 5;
+    pointer-events: none; opacity: 0;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="world">
+    <img class="plate" id="a" alt="">
+    <img class="plate" id="b" alt="">
+    <div id="marks"></div>
+  </div>
+  <div id="ripple"></div>
+  <svg id="cursor" viewBox="0 0 28 28">
+    <path d="M5 3 L5 22 L10.2 17.2 L14.2 25 L17.4 23.4 L13.3 15.6 L20.2 15.2 Z" fill="#161616" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+  </svg>
+</div>
+<script>
+const SRC = {
+  "01": "shots/01-home.jpg",
+  "02": "shots/02-bbe.jpg",
+  "03": "shots/03-demo-practice.jpg",
+  "04": "shots/04-econ.jpg",
+  "06": "shots/06-demo-mock.jpg",
+  "07": "shots/07-products.jpg",
+  "08": "shots/08-full.jpg",
+  "14": "shots/14-flash.jpg",
+  "15": "shots/15-match.jpg",
+  "16": "shots/16-tutor.jpg",
+  "35": "shots/35-math-task.jpg",
+  "36": "shots/36-features.jpg",
+  "41": "shots/41-hiw-theory.jpg",
+  "42": "shots/42-hiw-mocks.jpg",
+  "43": "shots/43-hiw-builder.jpg",
+  "50": "shots/50-ch-open.jpg",
+  "51": "shots/51-task-empty.jpg",
+  "52": "shots/52-task-marked.jpg",
+  "54": "shots/54-after-check.jpg",
+  "57": "shots/57-card-front.jpg",
+  "58": "shots/58-card-back.jpg"
+};
+function k(t, img, x, y, s, cx, cy, click) {
+  return { t, img, x, y, s, cx, cy, click: click || 0 };
+}
+const KEYS = [
+  k(0.0, "01", 800, 450, 1.00, 1180, 160),
+  k(2.6, "01", 700, 640, 1.06, 620, 700),
+  k(5.4, "01", 700, 640, 1.06, 400, 730),
+  k(6.6, "01", 700, 640, 1.06, 400, 730, 1),
+
+  k(7.1, "02", 800, 450, 1.00, 900, 420),
+  k(9.2, "02", 790, 545, 1.06, 617, 550),
+  k(10.8, "02", 790, 545, 1.06, 773, 564),
+  k(12.4, "02", 790, 545, 1.06, 956, 564),
+  k(13.8, "02", 790, 545, 1.06, 617, 550),
+  k(14.6, "02", 790, 545, 1.06, 617, 550, 1),
+
+  k(15.0, "03", 800, 450, 1.00, 900, 420),
+  k(17.0, "03", 800, 760, 1.06, 408, 868),
+  k(18.8, "03", 800, 760, 1.06, 800, 871),
+  k(20.6, "03", 800, 760, 1.06, 1192, 871),
+  k(22.0, "03", 800, 760, 1.06, 408, 868),
+  k(22.9, "03", 800, 760, 1.06, 408, 868, 1),
+
+  k(23.3, "04", 800, 450, 1.00, 640, 360),
+  k(25.0, "04", 420, 340, 1.08, 280, 250),
+  k(26.8, "04", 420, 340, 1.08, 240, 208),
+  k(27.5, "04", 420, 340, 1.08, 240, 208, 1),
+  k(27.9, "50", 420, 340, 1.08, 240, 208),
+  k(28.8, "50", 420, 340, 1.08, 210, 266),
+  k(29.7, "50", 420, 340, 1.08, 210, 266, 1),
+
+  k(30.1, "51", 800, 450, 1.00, 760, 420),
+  k(32.4, "51", 760, 360, 1.06, 530, 243),
+  k(36.4, "51", 980, 540, 1.06, 1200, 457),
+  k(38.5, "51", 980, 540, 1.06, 1481, 457),
+  k(40.7, "51", 980, 540, 1.06, 1481, 506, 2),
+  k(43.1, "51", 980, 540, 1.06, 1481, 555, 2),
+  k(45.3, "51", 980, 540, 1.06, 1481, 604, 2),
+  k(47.5, "51", 980, 540, 1.06, 1481, 653, 2),
+  k(48.0, "52", 980, 540, 1.06, 1481, 653),
+  k(50.6, "52", 980, 540, 1.06, 584, 723),
+  k(53.1, "52", 980, 540, 1.06, 584, 723, 1),
+  k(53.6, "54", 980, 540, 1.06, 900, 500),
+  k(55.6, "54", 1080, 420, 1.07, 1240, 340),
+  k(59.6, "54", 900, 470, 1.03, 1100, 460),
+
+  k(61.2, "35", 800, 450, 1.00, 520, 340),
+  k(63.2, "35", 460, 400, 1.07, 240, 300),
+  k(67.0, "35", 480, 520, 1.06, 260, 540),
+
+  k(70.4, "06", 800, 450, 1.00, 860, 400),
+  k(72.4, "06", 800, 520, 1.05, 799, 500),
+  k(75.2, "06", 800, 560, 1.06, 799, 583),
+  k(78.2, "06", 800, 560, 1.06, 799, 583, 1),
+
+  k(78.6, "42", 800, 450, 1.00, 760, 480),
+  k(80.8, "42", 760, 520, 1.05, 640, 560),
+  k(83.0, "42", 520, 620, 1.08, 220, 734),
+  k(86.0, "42", 520, 580, 1.08, 303, 582),
+  k(87.2, "42", 520, 580, 1.08, 303, 582, 1),
+  k(89.4, "42", 900, 450, 1.06, 910, 425),
+  k(91.6, "42", 900, 450, 1.06, 995, 425),
+  k(94.2, "42", 980, 540, 1.06, 1175, 506),
+  k(97.2, "42", 980, 540, 1.06, 1175, 561),
+  k(99.8, "42", 980, 540, 1.06, 1175, 617),
+  k(102.2, "42", 980, 540, 1.06, 1175, 672),
+  k(105.4, "42", 820, 500, 1.03, 900, 520),
+
+  k(108.2, "36", 800, 450, 1.00, 640, 460),
+  k(110.0, "36", 720, 480, 1.05, 520, 500),
+
+  k(113.4, "07", 800, 450, 1.00, 900, 420),
+  k(115.2, "07", 800, 580, 1.05, 356, 620),
+  k(116.8, "07", 800, 580, 1.05, 651, 560),
+  k(118.4, "07", 800, 580, 1.05, 947, 560),
+  k(120.0, "07", 800, 580, 1.05, 1243, 560),
+  k(121.2, "07", 800, 640, 1.06, 652, 768),
+  k(121.8, "07", 800, 640, 1.06, 652, 768, 1),
+
+  k(122.2, "08", 800, 450, 1.00, 800, 460),
+  k(124.0, "08", 780, 460, 1.04, 740, 440),
+
+  k(126.4, "41", 800, 450, 1.00, 700, 360),
+  k(128.6, "41", 620, 480, 1.06, 400, 460),
+  k(132.4, "41", 640, 640, 1.06, 420, 700),
+  k(135.6, "41", 660, 720, 1.05, 440, 800),
+
+  k(138.0, "43", 800, 450, 1.00, 700, 420),
+  k(140.2, "43", 520, 560, 1.07, 280, 560),
+  k(142.2, "43", 520, 560, 1.07, 168, 592),
+  k(142.8, "43", 520, 560, 1.07, 168, 592, 3),
+  k(145.2, "43", 860, 500, 1.05, 980, 480),
+
+  k(150.4, "14", 800, 450, 1.00, 860, 420),
+  k(152.4, "14", 640, 680, 1.06, 407, 755),
+  k(155.0, "14", 640, 680, 1.06, 407, 755, 1),
+
+  k(155.4, "57", 800, 450, 1.00, 860, 480),
+  k(157.4, "57", 800, 580, 1.05, 800, 611),
+  k(159.4, "57", 810, 700, 1.06, 818, 824),
+  k(160.4, "57", 810, 700, 1.06, 818, 824, 1),
+  k(160.8, "58", 810, 620, 1.05, 800, 540),
+  k(163.2, "58", 790, 640, 1.06, 739, 641),
+
+  k(166.0, "15", 800, 450, 1.00, 860, 420),
+  k(168.2, "15", 720, 620, 1.06, 500, 560),
+  k(170.8, "15", 700, 680, 1.06, 407, 733),
+
+  k(173.0, "16", 800, 450, 1.00, 860, 420),
+  k(175.2, "16", 680, 660, 1.06, 408, 755),
+  k(178.0, "16", 800, 560, 1.03, 860, 640),
+  k(180.0, "16", 800, 520, 1.02, 900, 600)
+];
+const FILM = 180;
+
+const marks = document.getElementById("marks");
+KEYS.forEach((key) => {
+  if (key.click < 2) return;
+  const size = key.click === 3 ? 12 : 22;
+  const el = document.createElement("div");
+  el.className = "mark";
+  el.style.width = size + "px";
+  el.style.height = size + "px";
+  el.style.margin = (-size / 2) + "px 0 0 " + (-size / 2) + "px";
+  el.style.left = key.cx + "px";
+  el.style.top = key.cy + "px";
+  el.innerHTML = '<svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19.5 7" fill="none" stroke="#161616" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  marks.appendChild(el);
+  key.mark = el;
+});
+
+function smoother(p) {
+  p = Math.max(0, Math.min(1, p));
+  return p * p * p * (p * (p * 6 - 15) + 10);
+}
+function idxAt(t) {
+  let i = 0;
+  while (i < KEYS.length - 1 && KEYS[i + 1].t <= t) i++;
+  return i;
+}
+function place(x, y, s) {
+  let tx = 800 - x * s;
+  let ty = 450 - y * s;
+  tx = Math.min(0, Math.max(1600 * (1 - s), tx));
+  ty = Math.min(0, Math.max(900 * (1 - s), ty));
+  return { tx, ty, s };
+}
+function hand(a, b, p) {
+  const dx = b.cx - a.cx;
+  const dy = b.cy - a.cy;
+  const len = Math.hypot(dx, dy);
+  const bend = len < 90 ? 0 : Math.min(18, len * 0.045);
+  const mx = (a.cx + b.cx) / 2 - (dy / (len || 1)) * bend;
+  const my = (a.cy + b.cy) / 2 + (dx / (len || 1)) * bend;
+  const u = 1 - p;
+  return {
+    x: u * u * a.cx + 2 * u * p * mx + p * p * b.cx,
+    y: u * u * a.cy + 2 * u * p * my + p * p * b.cy
+  };
+}
+
+const world = document.getElementById("world");
+const A = document.getElementById("a");
+const B = document.getElementById("b");
+const cursor = document.getElementById("cursor");
+const ripple = document.getElementById("ripple");
+Object.values(SRC).forEach((src) => { const im = new Image(); im.src = src; });
+
+function view(t) {
+  const i = idxAt(t);
+  const a = KEYS[i];
+  const b = KEYS[i + 1];
+  const prev = i > 0 ? KEYS[i - 1] : null;
+  const local = t - a.t;
+  const pageIn = !!(prev && a.img !== prev.img);
+  let x = a.x;
+  let y = a.y;
+  let s = a.s;
+  if (b && b.img === a.img) {
+    const dur = b.t - a.t;
+    const hold = pageIn ? 0.22 : 0;
+    const moveDur = Math.min(1.8, Math.max(0.45, (dur - hold) * 0.8));
+    const p = smoother(Math.min(1, Math.max(0, (local - hold) / moveDur)));
+    x = a.x + (b.x - a.x) * p;
+    y = a.y + (b.y - a.y) * p;
+    s = a.s + (b.s - a.s) * p;
+  }
+  let cur = { x: a.cx, y: a.cy };
+  if (b && b.img === a.img) {
+    const dur = b.t - a.t;
+    const dist = Math.hypot(b.cx - a.cx, b.cy - a.cy);
+    const moveDur = Math.min(1.15, Math.max(0.42, dist / 780));
+    const begin = Math.max(0, dur - moveDur - (b.click ? 0.14 : 0.04));
+    cur = hand(a, b, smoother(Math.min(1, Math.max(0, (local - begin) / moveDur))));
+  }
+  let op = 1;
+  if (pageIn) op = smoother(Math.min(1, Math.max(0, (local - 0.08) / 0.22)));
+  if (b && b.img !== a.img) {
+    const remain = b.t - t;
+    if (remain < 0.12) op = Math.min(op, Math.max(0, remain / 0.12));
+  }
+  return { cam: place(x, y, s), cur, img: a.img, op };
+}
+
+function apply(t) {
+  const v = view(Math.max(0, Math.min(FILM, t)));
+  const src = SRC[v.img];
+  if (B.getAttribute("data-src") !== src) {
+    const previous = B.getAttribute("data-src") || src;
+    A.setAttribute("data-src", previous);
+    A.src = previous;
+    B.setAttribute("data-src", src);
+    B.src = src;
+    B.setAttribute("data-t", String(t));
+  }
+  const age = t - parseFloat(B.getAttribute("data-t") || "0");
+  const same = A.getAttribute("data-src") === B.getAttribute("data-src");
+  const fade = same ? 1 : smoother(Math.min(1, Math.max(0, age / 0.12)));
+  A.style.opacity = String(1 - fade);
+  B.style.opacity = String(fade);
+  A.style.transform = "none";
+  B.style.transform = "none";
+  const cam = v.cam;
+  world.style.transform = "translate(" + cam.tx.toFixed(2) + "px," + cam.ty.toFixed(2) + "px) scale(" + cam.s.toFixed(4) + ")";
+  const sx = cam.tx + v.cur.x * cam.s;
+  const sy = cam.ty + v.cur.y * cam.s;
+  let press = 1;
+  let rip = null;
+  for (let n = KEYS.length - 1; n >= 0; n--) {
+    const key = KEYS[n];
+    if (key.t > t) continue;
+    if (key.click && t - key.t < 0.45) {
+      rip = key;
+      if (t - key.t < 0.1) press = 0.86;
+    }
+    break;
+  }
+  cursor.style.opacity = String(v.op);
+  cursor.style.transform = "translate(" + (sx - 5).toFixed(1) + "px," + (sy - 3).toFixed(1) + "px) scale(" + press + ")";
+  if (rip) {
+    const ageR = t - rip.t;
+    const rx = cam.tx + rip.cx * cam.s;
+    const ry = cam.ty + rip.cy * cam.s;
+    ripple.style.opacity = String(Math.max(0, 1 - ageR / 0.4) * v.op);
+    ripple.style.transform = "translate(" + rx.toFixed(1) + "px," + ry.toFixed(1) + "px) scale(" + (0.4 + ageR * 4.2).toFixed(2) + ")";
+  } else ripple.style.opacity = "0";
+  for (let n = 0; n < KEYS.length; n++) {
+    const key = KEYS[n];
+    if (!key.mark) continue;
+    const on = v.img === key.img && t >= key.t;
+    if (!on) { key.mark.style.opacity = "0"; continue; }
+    const born = Math.min(1, (t - key.t) / 0.12);
+    key.mark.style.opacity = String(smoother(born));
+    key.mark.style.transform = "scale(" + (0.7 + 0.3 * smoother(born)).toFixed(3) + ")";
+  }
+}
+
+const stage = document.getElementById("stage");
+const exporting = new URLSearchParams(location.search).has("export");
+function fit() {
+  if (exporting) { stage.style.transform = "none"; stage.style.left = "0"; stage.style.top = "0"; return; }
+  const sc = Math.min(innerWidth / 1600, innerHeight / 900);
+  stage.style.transform = "scale(" + sc + ")";
+  stage.style.left = ((innerWidth - 1600 * sc) / 2) + "px";
+  stage.style.top = ((innerHeight - 900 * sc) / 2) + "px";
+}
+addEventListener("resize", fit);
+fit();
+window.renderAt = (t) => apply(Math.max(0, Math.min(FILM, t)));
+window.FILM = FILM;
+const q = new URLSearchParams(location.search);
+if (q.has("t")) renderAt(parseFloat(q.get("t")) || 0);
+else if (q.has("scrub") || q.has("export")) renderAt(0);
+else {
+  const t0 = performance.now();
+  const loop = (now) => {
+    const elapsed = (now - t0) / 1000;
+    if (elapsed < FILM) { apply(elapsed); requestAnimationFrame(loop); }
+    else apply(FILM);
+  };
+  requestAnimationFrame(loop);
+}
+</script>
+</body>
+</html>
