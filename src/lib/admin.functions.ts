@@ -483,3 +483,84 @@ function csvEscape(value: string): string {
   }
   return value;
 }
+
+/** Whole-platform mock exam statistics: score distribution, per-question stats, every answer. */
+export const adminGetMockExamStats = createServerFn({ method: "GET" })
+  .middleware([requireAdmin])
+  .handler(async ({ context }) => {
+    const db = context.supabaseAdmin;
+    const [{ buildAdminMockExamStats }, mockExams] = await Promise.all([
+      import("@/lib/admin-mock-stats"),
+      import("@/lib/mock-exams"),
+    ]);
+    const authUsers = await listAllAuthUsers(db, Boolean(context.adminUsesServiceRole));
+    const emailById = new Map(authUsers.map((u) => [u.id, u.email]));
+
+    const rows: {
+      id: string; user_id: string; exam_id: string; exam_title: string;
+      points_earned: number; points_total: number; seconds_taken: number | null;
+      completed_at: string | null; answers: unknown;
+    }[] = [];
+    for (let from = 0; from < 20000; from += 1000) {
+      const { data, error } = await db
+        .from("mock_attempts")
+        .select("id, user_id, exam_id, exam_title, points_earned, points_total, seconds_taken, completed_at, answers")
+        .or("status.eq.submitted,status.is.null")
+        .order("completed_at", { ascending: false })
+        .range(from, from + 999);
+      if (error) throw new Error(error.message);
+      rows.push(...((data ?? []) as typeof rows));
+      if (!data || data.length < 1000) break;
+    }
+
+    const byExam = new Map<string, typeof rows>();
+    for (const r of rows) {
+      const list = byExam.get(r.exam_id) ?? [];
+      list.push(r);
+      byExam.set(r.exam_id, list);
+    }
+
+    const exams = [];
+    for (const [examId, list] of byExam) {
+      let questions: import("@/lib/mock-exams").ExamQuestion[] = [];
+      let title = list[0]?.exam_title ?? examId;
+      const custom = mockExams.parseCustomMockId(examId);
+      if (custom) {
+        const { data } = await db.from("custom_mocks").select("title, questions").eq("id", custom).maybeSingle();
+        if (data) {
+          title = data.title;
+          questions = Array.isArray(data.questions) ? (data.questions as unknown as typeof questions) : [];
+        }
+      } else {
+        const summary = mockExams.getExamById(examId);
+        if (summary) title = summary.title;
+        try {
+          questions = mockExams.buildExamQuestions(examId);
+        } catch {
+          questions = [];
+        }
+      }
+      exams.push(
+        buildAdminMockExamStats(
+          examId,
+          title,
+          questions,
+          list.map((r) => {
+            const a = (r.answers ?? {}) as { marks?: Record<string, boolean[]> };
+            return {
+              id: r.id,
+              userId: r.user_id,
+              email: emailById.get(r.user_id) ?? r.user_id,
+              completedAt: r.completed_at,
+              pointsEarned: Number(r.points_earned),
+              pointsTotal: Number(r.points_total),
+              secondsTaken: r.seconds_taken,
+              marks: a.marks && typeof a.marks === "object" ? a.marks : null,
+            };
+          }),
+        ),
+      );
+    }
+    exams.sort((a, b) => b.attemptCount - a.attemptCount);
+    return { exams };
+  });
