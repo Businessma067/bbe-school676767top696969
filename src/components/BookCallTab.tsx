@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CalendarDays, Loader2, Lock } from "lucide-react";
 import {
   CalendlyInlineEmbed,
@@ -8,6 +8,7 @@ import {
 import {
   CONSULTATION_CALL_SLUG,
   FREE_CALLS_WITH_COURSE,
+  computeCallBookingStatus,
   type CallBookingStatus,
 } from "@/lib/call-booking";
 import { getCallBookingStatus, recordCallBooking } from "@/lib/call-booking.functions";
@@ -18,12 +19,20 @@ type BookCallTabProps = {
   prefill?: CalendlyPrefill;
 };
 
+function bookingDedupeKey(payload: CalendlyScheduledPayload, clientKey: string): string {
+  return payload.eventUri || payload.inviteeUri || clientKey;
+}
+
 export function BookCallTab({ prefill }: BookCallTabProps) {
   const [status, setStatus] = useState<CallBookingStatus | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [buying, setBuying] = useState(false);
   const [buyError, setBuyError] = useState<string | null>(null);
   const [recordNote, setRecordNote] = useState<string | null>(null);
+  const [recording, setRecording] = useState(false);
+  const recordedKeysRef = useRef(new Set<string>());
+  const statusRef = useRef<CallBookingStatus | null>(null);
+  statusRef.current = status;
 
   useEffect(() => {
     let cancelled = false;
@@ -47,23 +56,57 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
   }, []);
 
   const handleScheduled = async (payload: CalendlyScheduledPayload) => {
+    const clientKey =
+      typeof crypto !== "undefined" && "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `bk-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+    const dedupeKey = bookingDedupeKey(payload, clientKey);
+    if (recordedKeysRef.current.has(dedupeKey)) return;
+    recordedKeysRef.current.add(dedupeKey);
+
+    const previous = statusRef.current;
     setRecordNote(null);
+    setRecording(true);
+
+    // Optimistic decrement so remaining calls update immediately on booking.
+    if (previous) {
+      setStatus(
+        computeCallBookingStatus({
+          ownsPaidCourse: previous.ownsPaidCourse,
+          bookingsUsed: previous.bookingsUsed + 1,
+          paidCredits: previous.paidCredits,
+        }),
+      );
+    }
+
     try {
       const result = await recordCallBooking({
         data: {
           ...(payload.eventUri ? { eventUri: payload.eventUri } : {}),
           ...(payload.inviteeUri ? { inviteeUri: payload.inviteeUri } : {}),
+          clientKey,
         },
       });
-      if (result.status) setStatus(result.status);
+      if (result.status) {
+        setStatus(result.status);
+      } else if (previous && !result.ok) {
+        setStatus(previous);
+      }
       if (!result.ok) {
+        recordedKeysRef.current.delete(dedupeKey);
         setRecordNote(result.error);
         return;
       }
       setRecordNote("Your call is booked. See you then.");
     } catch (err) {
       console.error("BookCallTab: record", err);
-      setRecordNote("Call booked in Calendly, but we could not update your allowance. Contact support if this persists.");
+      if (previous) setStatus(previous);
+      recordedKeysRef.current.delete(dedupeKey);
+      setRecordNote(
+        "Call booked in Calendly, but we could not update your allowance. Contact support if this persists.",
+      );
+    } finally {
+      setRecording(false);
     }
   };
 
@@ -109,10 +152,11 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
             ? `Course students get ${status.freeAllowance} free 30-minute calls. Extra calls are ${priceLabel} each.`
             : `You can book ${status.freeAllowance} free intro call without a course. After buying a course you get ${FREE_CALLS_WITH_COURSE} free calls; extra slots are ${priceLabel}.`}
         </p>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className="mt-2 text-sm text-muted-foreground" aria-live="polite">
           {locked
             ? `No free calls left · ${status.bookingsUsed} used`
             : `${status.remaining} call${status.remaining === 1 ? "" : "s"} remaining · ${status.bookingsUsed} used`}
+          {recording ? " · Saving booking…" : null}
         </p>
         {recordNote ? (
           <p className="mt-2 text-sm text-foreground" role="status">

@@ -58,19 +58,55 @@ function loadCalendlyScript(): Promise<void> {
   });
 }
 
-function parseScheduledPayload(data: unknown): CalendlyScheduledPayload | null {
-  if (!data || typeof data !== "object") return null;
-  const root = data as { event?: unknown; payload?: unknown };
-  if (root.event !== "calendly.event_scheduled") return null;
-  const payload = root.payload;
+function isCalendlyOrigin(origin: string): boolean {
+  try {
+    const host = new URL(origin).hostname;
+    return host === "calendly.com" || host.endsWith(".calendly.com");
+  } catch {
+    return false;
+  }
+}
+
+function coerceMessageData(data: unknown): unknown {
+  if (typeof data !== "string") return data;
+  try {
+    return JSON.parse(data) as unknown;
+  } catch {
+    return data;
+  }
+}
+
+/** Exported for tests — parses Calendly parent-window postMessage payloads. */
+export function parseScheduledPayload(data: unknown): CalendlyScheduledPayload | null {
+  const root = coerceMessageData(data);
+  if (!root || typeof root !== "object") return null;
+  const eventName = (root as { event?: unknown }).event;
+  if (typeof eventName !== "string" || eventName !== "calendly.event_scheduled") return null;
+
+  const payload = (root as { payload?: unknown }).payload;
   if (!payload || typeof payload !== "object") return {};
+
   const p = payload as {
-    event?: { uri?: unknown };
-    invitee?: { uri?: unknown };
+    event?: { uri?: unknown } | string;
+    invitee?: { uri?: unknown } | string;
   };
+
+  const eventUri =
+    typeof p.event === "string"
+      ? p.event
+      : typeof p.event?.uri === "string"
+        ? p.event.uri
+        : undefined;
+  const inviteeUri =
+    typeof p.invitee === "string"
+      ? p.invitee
+      : typeof p.invitee?.uri === "string"
+        ? p.invitee.uri
+        : undefined;
+
   return {
-    eventUri: typeof p.event?.uri === "string" ? p.event.uri : undefined,
-    inviteeUri: typeof p.invitee?.uri === "string" ? p.invitee.uri : undefined,
+    ...(eventUri ? { eventUri } : {}),
+    ...(inviteeUri ? { inviteeUri } : {}),
   };
 }
 
@@ -88,6 +124,7 @@ function CalendlyInlineWidget({
   const containerRef = useRef<HTMLDivElement>(null);
   const onScheduledRef = useRef(onEventScheduled);
   onScheduledRef.current = onEventScheduled;
+  const seenKeysRef = useRef(new Set<string>());
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
@@ -125,9 +162,18 @@ function CalendlyInlineWidget({
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
-      if (event.origin !== "https://calendly.com") return;
+      if (!isCalendlyOrigin(event.origin)) return;
       const scheduled = parseScheduledPayload(event.data);
       if (!scheduled) return;
+
+      // Deduplicate duplicate postMessage deliveries for the same booking.
+      const key =
+        scheduled.eventUri ||
+        scheduled.inviteeUri ||
+        `scheduled:${JSON.stringify(event.data).slice(0, 200)}`;
+      if (seenKeysRef.current.has(key)) return;
+      seenKeysRef.current.add(key);
+
       onScheduledRef.current?.(scheduled);
     };
     window.addEventListener("message", onMessage);

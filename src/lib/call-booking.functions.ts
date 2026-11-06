@@ -8,9 +8,19 @@ import {
   type CallBookingStatus,
 } from "@/lib/call-booking";
 
+/** Calendly may send API URIs; keep validation permissive so recording never drops. */
+const OptionalUri = z
+  .string()
+  .trim()
+  .max(500)
+  .optional()
+  .transform((value) => (value && value.length > 0 ? value : undefined));
+
 const RecordBookingInput = z.object({
-  eventUri: z.string().url().max(500).optional(),
-  inviteeUri: z.string().url().max(500).optional(),
+  eventUri: OptionalUri,
+  inviteeUri: OptionalUri,
+  /** Client-generated id used when Calendly omits URIs, so repeats still dedupe. */
+  clientKey: z.string().trim().min(8).max(120).optional(),
 });
 
 async function loadCallBookingStatus(userId: string): Promise<CallBookingStatus> {
@@ -78,14 +88,17 @@ export const recordCallBooking = createServerFn({ method: "POST" })
     }
 
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const eventUri = data.eventUri?.trim() || null;
-    const inviteeUri = data.inviteeUri?.trim() || null;
+    const eventUri = data.eventUri ?? null;
+    const inviteeUri = data.inviteeUri ?? null;
+    // Prefer Calendly URIs; fall back to a client key so a booking with empty
+    // payload still lands once and decrements remaining.
+    const sourceKey = data.clientKey ? `client:${data.clientKey}` : "calendly";
 
     const { error } = await supabaseAdmin.from("call_bookings").insert({
       user_id: context.userId,
       calendly_event_uri: eventUri,
       calendly_invitee_uri: inviteeUri,
-      source: "calendly",
+      source: sourceKey.slice(0, 40),
     });
 
     if (error) {
