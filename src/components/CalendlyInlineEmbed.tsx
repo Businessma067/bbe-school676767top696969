@@ -18,6 +18,16 @@ declare global {
   }
 }
 
+export type CalendlyPrefill = {
+  name?: string;
+  email?: string;
+};
+
+export type CalendlyScheduledPayload = {
+  eventUri?: string;
+  inviteeUri?: string;
+};
+
 function loadCalendlyScript(): Promise<void> {
   if (typeof window === "undefined") return Promise.resolve();
   if (window.Calendly) return Promise.resolve();
@@ -48,14 +58,36 @@ function loadCalendlyScript(): Promise<void> {
   });
 }
 
+function parseScheduledPayload(data: unknown): CalendlyScheduledPayload | null {
+  if (!data || typeof data !== "object") return null;
+  const root = data as { event?: unknown; payload?: unknown };
+  if (root.event !== "calendly.event_scheduled") return null;
+  const payload = root.payload;
+  if (!payload || typeof payload !== "object") return {};
+  const p = payload as {
+    event?: { uri?: unknown };
+    invitee?: { uri?: unknown };
+  };
+  return {
+    eventUri: typeof p.event?.uri === "string" ? p.event.uri : undefined,
+    inviteeUri: typeof p.invitee?.uri === "string" ? p.invitee.uri : undefined,
+  };
+}
+
 function CalendlyInlineWidget({
   url = CALENDLY_BOOKING_URL,
   className,
+  prefill,
+  onEventScheduled,
 }: {
   url?: string;
   className?: string;
+  prefill?: CalendlyPrefill;
+  onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const onScheduledRef = useRef(onEventScheduled);
+  onScheduledRef.current = onEventScheduled;
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
@@ -71,6 +103,14 @@ function CalendlyInlineWidget({
         window.Calendly.initInlineWidget({
           url: `${url}${url.includes("?") ? "&" : "?"}hide_gdpr_banner=1`,
           parentElement: containerRef.current,
+          ...(prefill?.name || prefill?.email
+            ? {
+                prefill: {
+                  ...(prefill.name ? { name: prefill.name } : {}),
+                  ...(prefill.email ? { email: prefill.email } : {}),
+                },
+              }
+            : {}),
         });
       })
       .catch(() => {
@@ -81,7 +121,18 @@ function CalendlyInlineWidget({
       cancelled = true;
       parent.replaceChildren();
     };
-  }, [url]);
+  }, [url, prefill?.name, prefill?.email]);
+
+  useEffect(() => {
+    const onMessage = (event: MessageEvent) => {
+      if (event.origin !== "https://calendly.com") return;
+      const scheduled = parseScheduledPayload(event.data);
+      if (!scheduled) return;
+      onScheduledRef.current?.(scheduled);
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
 
   if (failed) {
     return (
@@ -120,9 +171,13 @@ function CalendlyInlineWidget({
 export function CalendlyInlineEmbed({
   url = CALENDLY_BOOKING_URL,
   className,
+  prefill,
+  onEventScheduled,
 }: {
   url?: string;
   className?: string;
+  prefill?: CalendlyPrefill;
+  onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
 }) {
   return (
     <ClientOnly
@@ -133,7 +188,12 @@ export function CalendlyInlineEmbed({
         />
       }
     >
-      <CalendlyInlineWidget url={url} className={className} />
+      <CalendlyInlineWidget
+        url={url}
+        className={className}
+        prefill={prefill}
+        onEventScheduled={onEventScheduled}
+      />
     </ClientOnly>
   );
 }

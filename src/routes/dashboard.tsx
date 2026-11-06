@@ -33,6 +33,7 @@ import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { LockedFeaturePanel, LockedToolCard } from "@/components/CourseLockedView";
 import {
   BookOpen,
+  CalendarDays,
   ClipboardCheck,
   Flame,
   Target,
@@ -45,6 +46,7 @@ import {
   Layers,
   Lock,
 } from "lucide-react";
+import { BookCallTab } from "@/components/BookCallTab";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import {
@@ -79,10 +81,10 @@ function studyToolAccessFromState(
   };
 }
 
-export type DashboardTab = "courses" | "mocks" | "custom" | "games";
+export type DashboardTab = "courses" | "mocks" | "custom" | "games" | "book";
 
 function parseDashboardTab(raw: unknown): DashboardTab {
-  if (raw === "mocks" || raw === "custom" || raw === "games") return raw;
+  if (raw === "mocks" || raw === "custom" || raw === "games" || raw === "book") return raw;
   if (raw === "modes") return "games";
   return "courses";
 }
@@ -273,6 +275,12 @@ function DashboardPage() {
               active={tab === "games"}
               onClick={() => setTab("games")}
             />
+            <SideItem
+              icon={<CalendarDays className="h-4 w-4" />}
+              label="Book a call"
+              active={tab === "book"}
+              onClick={() => setTab("book")}
+            />
           </nav>
         </aside>
 
@@ -316,7 +324,7 @@ function DashboardPage() {
             </button>
           </div>
 
-          <div className="mt-6 flex gap-2 sm:hidden">
+          <div className="mt-6 flex flex-wrap gap-2 sm:hidden">
             <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>
               Courses
             </MobileTab>
@@ -337,10 +345,20 @@ function DashboardPage() {
             <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
               Study tools
             </MobileTab>
+            <MobileTab active={tab === "book"} onClick={() => setTab("book")}>
+              Book a call
+            </MobileTab>
           </div>
 
           <div className="mt-8">
-            {tab === "games" ? (
+            {tab === "book" ? (
+              <BookCallTab
+                prefill={{
+                  name: auth.name,
+                  ...(auth.email ? { email: auth.email } : {}),
+                }}
+              />
+            ) : tab === "games" ? (
               <GamesTab hasWisoFull={hasWisoFull} hasBbePaid={hasBbePaid} />
             ) : tab === "courses" ? (
               coursesLoading ? (
@@ -1422,7 +1440,7 @@ function MobileTab({
       type="button"
       onClick={onClick}
       className={
-        "inline-flex flex-1 items-center justify-center gap-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
+        "inline-flex min-w-[calc(50%-0.25rem)] flex-1 items-center justify-center gap-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
         (active
           ? "border-primary bg-primary text-primary-foreground"
           : "border-border bg-card text-foreground hover:bg-secondary")

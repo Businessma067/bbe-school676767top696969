@@ -4,8 +4,8 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import {
   MONOBANK_CURRENCY_EUR,
   MONOBANK_TEST_CHARGE,
-  PAID_PRODUCTS,
-  isPaidProductSlug,
+  CHECKOUT_PRODUCTS,
+  isCheckoutProductSlug,
 } from "@/lib/checkout-catalog";
 import { isAccountLimitedDiscountCode } from "@/lib/account-limited-promos";
 import { lookupDiscountPromo } from "@/lib/promo.functions";
@@ -82,15 +82,16 @@ export const createCheckout = createServerFn({ method: "POST" })
   .handler(async ({ context, data }): Promise<CheckoutResult> => {
     try {
       const slug = data.productSlug;
-      if (!isPaidProductSlug(slug)) {
+      if (!isCheckoutProductSlug(slug)) {
         return { ok: false, error: "Unknown product." };
       }
-      const product = PAID_PRODUCTS[slug];
+      const product = CHECKOUT_PRODUCTS[slug];
 
       let discountPct = 0;
       let appliedPromoCode: string | null = null;
       const rawPromo = (data.promoCode ?? "").trim();
-      if (rawPromo) {
+      // Course promocodes do not apply to one-off add-ons (e.g. consultation calls).
+      if (rawPromo && product.tier !== "addon") {
         const promo = await lookupDiscountPromo({
           code: rawPromo,
           productSlug: slug,
@@ -101,6 +102,8 @@ export const createCheckout = createServerFn({ method: "POST" })
         }
         discountPct = Math.max(0, Math.min(100, Number(promo.discountPct) || 0));
         appliedPromoCode = promo.code;
+      } else if (rawPromo && product.tier === "addon") {
+        return { ok: false, error: "Promocodes do not apply to consultation calls." };
       }
 
       // Charge the catalog EUR price in minor units (cents). Promocode % still applies.
