@@ -14,6 +14,7 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { homepageNavItems } from "@/config/site-nav";
+import { PAID_PRODUCTS } from "@/lib/checkout-catalog";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
@@ -52,6 +53,7 @@ type ExamOption = {
   title: string;
   differences: string[];
   cta: string;
+  priceEur: number;
   to?: string;
   comingSoon?: boolean;
 };
@@ -68,6 +70,7 @@ const EXAM_OPTIONS: ExamOption[] = [
       "Winter semester start only",
     ],
     cta: "Enter BBE preparation",
+    priceEur: PAID_PRODUCTS["full-course"].priceEur,
     to: "/bbe",
   },
   {
@@ -81,6 +84,7 @@ const EXAM_OPTIONS: ExamOption[] = [
       "Winter or summer start possible",
     ],
     cta: "Enter WiSo preparation",
+    priceEur: PAID_PRODUCTS["wiso-full-course"].priceEur,
     to: "/wiso",
   },
   {
@@ -94,6 +98,7 @@ const EXAM_OPTIONS: ExamOption[] = [
       "Dual BBE / WiSo practice modes",
     ],
     cta: "Enter Hybrid preparation",
+    priceEur: PAID_PRODUCTS["hybrid-full-course"].priceEur,
     to: "/hybrid",
   },
 ];
@@ -127,7 +132,7 @@ export function Index() {
       <main>
         <section className="relative overflow-hidden px-3 pt-10 pb-12 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
           <div className="mx-auto max-w-6xl">
-            <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_22.5rem] lg:gap-10 xl:gap-14">
+            <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-8 xl:gap-12">
               <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:pt-2 lg:text-left">
                 <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
                   <ExamCountdown className="lg:items-start" />
@@ -156,7 +161,7 @@ export function Index() {
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex w-full flex-col rounded-2xl border p-5 sm:p-7",
+                      "relative flex w-full flex-col rounded-2xl border p-5 sm:p-7",
                       isHybrid
                         ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
                         : isWiso
@@ -164,7 +169,13 @@ export function Index() {
                           : "border-border bg-card",
                     )}
                   >
-                    <div className="flex items-center gap-3">
+                    <p
+                      className="absolute right-4 top-4 font-display text-sm font-semibold tabular-nums leading-none text-foreground"
+                      data-no-i18n
+                    >
+                      €{exam.priceEur}
+                    </p>
+                    <div className="flex items-center gap-3 pr-12">
                       <div
                         className={cn(
                           "grid h-11 w-11 shrink-0 place-items-center rounded-xl shadow-md ring-1",

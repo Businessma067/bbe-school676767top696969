@@ -1,5 +1,5 @@
 import { ClientOnly } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { CALENDLY_BOOKING_URL } from "@/components/CalendlyInlineEmbed";
@@ -51,6 +51,84 @@ function slotHref(start: string): string {
   return `${CALENDLY_BOOKING_URL}/${start.replace(/\+/g, "%2B")}`;
 }
 
+const DRUM_ITEM_PX = 32;
+
+/** One scrollable wheel. The centered time is the selection. */
+function TimeDrum({
+  spots,
+  value,
+  onChange,
+}: {
+  spots: string[];
+  value: string | null;
+  onChange: (spot: string) => void;
+}) {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const fromUserScroll = useRef(false);
+
+  useLayoutEffect(() => {
+    const el = scrollerRef.current;
+    if (!el || !value) return;
+    if (fromUserScroll.current) {
+      fromUserScroll.current = false;
+      return;
+    }
+    const index = spots.indexOf(value);
+    if (index < 0) return;
+    el.scrollTop = index * DRUM_ITEM_PX;
+  }, [spots, value]);
+
+  function handleScroll() {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const index = Math.max(0, Math.min(spots.length - 1, Math.round(el.scrollTop / DRUM_ITEM_PX)));
+    const spot = spots[index];
+    if (!spot || spot === value) return;
+    fromUserScroll.current = true;
+    onChange(spot);
+  }
+
+  return (
+    <div className="relative h-24 overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-x-0 top-1/2 z-0 h-8 -translate-y-1/2 rounded-sm bg-secondary"
+        aria-hidden
+      />
+      <div
+        ref={scrollerRef}
+        onScroll={handleScroll}
+        role="listbox"
+        aria-label="Vienna time"
+        data-no-i18n
+        className="relative z-10 h-24 snap-y snap-mandatory overflow-y-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        <div className="h-8" aria-hidden />
+        {spots.map((spot) => {
+          const selected = spot === value;
+          return (
+            <button
+              key={spot}
+              type="button"
+              role="option"
+              aria-selected={selected}
+              onClick={() => onChange(spot)}
+              className={cn(
+                "flex h-8 w-full snap-center items-center justify-center text-sm tabular-nums",
+                selected ? "font-semibold text-foreground" : "text-muted-foreground",
+              )}
+            >
+              {formatTime(spot)}
+            </button>
+          );
+        })}
+        <div className="h-8" aria-hidden />
+      </div>
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 h-7 bg-gradient-to-b from-card to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-7 bg-gradient-to-t from-card to-transparent" />
+    </div>
+  );
+}
+
 function monthCells(month: string): { date: string | null; day: number | null }[] {
   const [year, monthIndex] = month.split("-").map(Number);
   const first = new Date(Date.UTC(year, monthIndex - 1, 1));
@@ -73,6 +151,8 @@ function CourseCallCalendarLive() {
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [selectedSpot, setSelectedSpot] = useState<string | null>(null);
+  const selectedDateRef = useRef(selectedDate);
+  selectedDateRef.current = selectedDate;
 
   useEffect(() => {
     let cancelled = false;
@@ -85,13 +165,15 @@ function CourseCallCalendarLive() {
           setStatus("error");
           return;
         }
+        const current = selectedDateRef.current;
+        const nextDate =
+          current && result.days.some((day) => day.date === current)
+            ? current
+            : (result.days[0]?.date ?? null);
         setDays(result.days);
         setStatus("ready");
-        setSelectedDate((current) => {
-          if (current && result.days.some((day) => day.date === current)) return current;
-          return result.days[0]?.date ?? null;
-        });
-        setSelectedSpot(null);
+        setSelectedDate(nextDate);
+        setSelectedSpot(result.days.find((day) => day.date === nextDate)?.spots[0] ?? null);
       })
       .catch(() => {
         if (!cancelled) {
@@ -116,11 +198,11 @@ function CourseCallCalendarLive() {
           aria-label="Previous month"
           disabled={month <= currentMonth}
           onClick={() => setMonth((value) => shiftMonth(value, -1))}
-          className="grid h-8 w-8 place-items-center rounded-sm border border-border text-foreground transition-colors hover:bg-secondary disabled:pointer-events-none disabled:opacity-30"
+          className="grid h-7 w-7 place-items-center rounded-sm border border-border text-foreground transition-colors hover:bg-secondary disabled:pointer-events-none disabled:opacity-30"
         >
-          <ChevronLeft className="h-4 w-4" />
+          <ChevronLeft className="h-3.5 w-3.5" />
         </button>
-        <p className="font-display text-sm font-semibold text-foreground">
+        <p className="font-display text-[13px] font-semibold text-foreground">
           {MONTHS[Number(month.slice(5, 7)) - 1]}{" "}
           <span data-no-i18n>{month.slice(0, 4)}</span>
         </p>
@@ -129,24 +211,24 @@ function CourseCallCalendarLive() {
           aria-label="Next month"
           disabled={month >= lastMonth}
           onClick={() => setMonth((value) => shiftMonth(value, 1))}
-          className="grid h-8 w-8 place-items-center rounded-sm border border-border text-foreground transition-colors hover:bg-secondary disabled:pointer-events-none disabled:opacity-30"
+          className="grid h-7 w-7 place-items-center rounded-sm border border-border text-foreground transition-colors hover:bg-secondary disabled:pointer-events-none disabled:opacity-30"
         >
-          <ChevronRight className="h-4 w-4" />
+          <ChevronRight className="h-3.5 w-3.5" />
         </button>
       </div>
 
-      <div className="mt-3 grid grid-cols-7 gap-y-1 text-center">
+      <div className="mt-2 grid grid-cols-7 text-center">
         {WEEKDAYS.map((day) => (
           <div
             key={day}
-            className="py-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground"
+            className="py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground"
           >
             {day}
           </div>
         ))}
         {monthCells(month).map((cell, index) => {
           if (!cell.date || cell.day == null) {
-            return <div key={`pad-${index}`} className="h-8" />;
+            return <div key={`pad-${index}`} className="h-7" />;
           }
           const available = spotsByDate.has(cell.date);
           const selected = cell.date === selectedDate;
@@ -160,10 +242,10 @@ function CourseCallCalendarLive() {
               aria-label={cell.date}
               onClick={() => {
                 setSelectedDate(cell.date);
-                setSelectedSpot(null);
+                setSelectedSpot(spotsByDate.get(cell.date)?.[0] ?? null);
               }}
               className={cn(
-                "mx-auto grid h-8 w-8 place-items-center rounded-sm font-display text-sm tabular-nums",
+                "mx-auto grid h-7 w-7 place-items-center rounded-sm font-display text-[13px] tabular-nums",
                 available && !selected && "text-foreground hover:bg-secondary",
                 !available && "cursor-default text-muted-foreground/35",
                 selected && "bg-primary text-primary-foreground",
@@ -176,7 +258,7 @@ function CourseCallCalendarLive() {
         })}
       </div>
 
-      <div className="mt-4 border-t border-border pt-3">
+      <div className="mt-2 border-t border-border pt-2">
         <p className="text-[11px] font-medium tracking-wide text-taupe">Vienna time</p>
         {status === "loading" ? (
           <p className="mt-2 text-sm text-muted-foreground">Loading open times</p>
@@ -190,38 +272,17 @@ function CourseCallCalendarLive() {
         ) : spots.length === 0 ? (
           <p className="mt-2 text-sm text-muted-foreground">No open times this month</p>
         ) : (
-          <div className="mt-2 grid grid-cols-3 gap-1.5" data-no-i18n>
-            {spots.map((spot) => {
-              const selected = spot === selectedSpot;
-              return (
-                <button
-                  key={spot}
-                  type="button"
-                  aria-pressed={selected}
-                  onClick={() => setSelectedSpot(spot)}
-                  className={cn(
-                    "rounded-sm border px-2 py-1.5 text-sm font-medium tabular-nums transition-colors",
-                    selected
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border bg-background text-foreground hover:bg-secondary",
-                  )}
-                >
-                  {formatTime(spot)}
-                </button>
-              );
-            })}
+          <div className="mt-1">
+            <TimeDrum spots={spots} value={selectedSpot} onChange={setSelectedSpot} />
           </div>
         )}
 
         {selectedSpot ? (
           <a
             href={slotHref(selectedSpot)}
-            className="mt-3 inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="mt-2 inline-flex w-full items-center justify-center rounded-sm bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Confirm this time
-            <span data-no-i18n className="ml-1.5 tabular-nums">
-              {formatTime(selectedSpot)}
-            </span>
           </a>
         ) : null}
       </div>
@@ -230,7 +291,7 @@ function CourseCallCalendarLive() {
 }
 
 function CalendarSkeleton() {
-  return <div className="h-72 animate-pulse rounded-sm bg-muted/50" aria-hidden />;
+  return <div className="h-56 animate-pulse rounded-sm bg-muted/50" aria-hidden />;
 }
 
 /** Site-styled 20-minute call picker. Availability is live; confirmation opens the reserved slot. */
@@ -239,15 +300,15 @@ export function CourseCallCalendar({ className }: { className?: string }) {
     <section
       id="book"
       className={cn(
-        "scroll-mt-24 rounded-2xl border border-border bg-card p-4 text-foreground shadow-sm sm:p-5",
+        "scroll-mt-24 rounded-2xl border border-border bg-card p-3 text-foreground shadow-sm sm:p-3.5",
         className,
       )}
     >
       <p className="text-[11px] font-medium tracking-wide text-taupe">20 minutes · phone call</p>
-      <h2 className="mt-1.5 font-display text-lg font-semibold leading-snug text-foreground">
+      <h2 className="mt-1 font-display text-[15px] font-semibold leading-snug text-foreground">
         Book a 20-minute call to learn everything about the course
       </h2>
-      <div className="mt-4">
+      <div className="mt-2.5">
         <ClientOnly fallback={<CalendarSkeleton />}>
           <CourseCallCalendarLive />
         </ClientOnly>
