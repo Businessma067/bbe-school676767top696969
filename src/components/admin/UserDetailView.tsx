@@ -1,9 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
+import { AdminMockAttemptReview } from "@/components/admin/AdminMockAttemptReview";
 import { DataTable, fmtDate, fmtDuration, StatCard } from "@/components/admin/AdminLayout";
 import { UserProgressCharts } from "@/components/admin/UserProgressCharts";
 import { HEATMAP_LEVEL_COLORS, accuracyToLevel } from "@/lib/study-progress";
-import type { AdminUserDetail } from "@/lib/admin-types";
+import type { AdminMockRow, AdminUserDetail } from "@/lib/admin-types";
 import { formatAmountMinor } from "@/lib/payment-display";
 import { whatsAppHref } from "@/lib/phone-country";
 
@@ -311,6 +312,18 @@ function TasksTab({ detail }: { detail: AdminUserDetail }) {
 }
 
 function MocksTab({ detail }: { detail: AdminUserDetail }) {
+  const [reviewMock, setReviewMock] = useState<AdminMockRow | null>(null);
+
+  if (reviewMock) {
+    return (
+      <AdminMockAttemptReview
+        mock={reviewMock}
+        userId={detail.profile.userId}
+        onBack={() => setReviewMock(null)}
+      />
+    );
+  }
+
   return (
     <DataTable
       columns={[
@@ -321,6 +334,7 @@ function MocksTab({ detail }: { detail: AdminUserDetail }) {
         { key: "points", label: "Points" },
         { key: "time", label: "Time" },
         { key: "timed", label: "Timed" },
+        { key: "review", label: "Review" },
       ]}
       rows={detail.mocks.map((m) => ({
         date: fmtDate(m.completedAt ?? m.startedAt),
@@ -330,6 +344,17 @@ function MocksTab({ detail }: { detail: AdminUserDetail }) {
         points: `${m.pointsEarned}/${m.pointsTotal}`,
         time: fmtDuration(m.secondsTaken),
         timed: m.timed ? "Yes" : "No",
+        review: m.hasReview ? (
+          <button
+            type="button"
+            onClick={() => setReviewMock(m)}
+            className="text-sm font-semibold text-primary hover:underline"
+          >
+            View answers
+          </button>
+        ) : (
+          <span className="text-xs text-muted-foreground">No detail</span>
+        ),
       }))}
       empty="No mock exam data."
     />

@@ -97,6 +97,10 @@ export type AdminMockRow = {
   startedAt: string | null;
   completedAt: string | null;
   scorePct: number | null;
+  /** True when full per-statement marks are stored for review. */
+  hasReview: boolean;
+  /** Raw `mock_attempts.answers` jsonb (marks + statement totals). */
+  answers: AdminJsonValue | null;
 };
 
 export type AdminPracticeSessionRow = {

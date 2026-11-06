@@ -8,7 +8,8 @@ import {
   type StoredUser,
   type UserRecord,
 } from "@/lib/admin-store.server";
-import type { AdminMockRow, AdminPracticeSessionRow, AdminTaskAttemptRow } from "@/lib/admin-types";
+import type { AdminJsonValue, AdminMockRow, AdminPracticeSessionRow, AdminTaskAttemptRow } from "@/lib/admin-types";
+import { handoffFromStoredMockAnswers } from "@/lib/mock-exam-analytics";
 import type { SessionAnswerStat } from "@/lib/study-progress";
 
 type Db = SupabaseClient<Database>;
@@ -77,6 +78,32 @@ export async function syncSingleUserFromSupabase(
   record.mocks = (mocksRes.data ?? []).map((row): AdminMockRow => {
     const pointsEarned = Number(row.points_earned);
     const pointsTotal = Number(row.points_total);
+    const secondsTaken = row.seconds_taken;
+    const timed = row.timed;
+    const rawAnswers = (row as { answers?: unknown }).answers;
+    const answersObj =
+      rawAnswers && typeof rawAnswers === "object" && !Array.isArray(rawAnswers)
+        ? { ...(rawAnswers as Record<string, unknown>) }
+        : null;
+    if (answersObj) {
+      const progress = (row as { progress?: unknown }).progress;
+      if (
+        (!answersObj.timeByQuestion || typeof answersObj.timeByQuestion !== "object") &&
+        progress &&
+        typeof progress === "object" &&
+        !Array.isArray(progress)
+      ) {
+        const tbq = (progress as Record<string, unknown>).timeByQuestion;
+        if (tbq && typeof tbq === "object" && !Array.isArray(tbq)) {
+          answersObj.timeByQuestion = tbq;
+        }
+      }
+      const flags = (row as { flags?: unknown }).flags;
+      if (!answersObj.flagged && flags && typeof flags === "object" && !Array.isArray(flags)) {
+        answersObj.flagged = flags;
+      }
+    }
+    const answers = (answersObj ?? rawAnswers ?? null) as AdminJsonValue | null;
     return {
       id: row.id,
       examId: row.exam_id,
@@ -85,11 +112,13 @@ export async function syncSingleUserFromSupabase(
       pointsEarned,
       pointsTotal,
       perSubject: (row.per_subject ?? {}) as Record<string, number>,
-      secondsTaken: row.seconds_taken,
-      timed: row.timed,
+      secondsTaken,
+      timed,
       startedAt: (row as { started_at?: string }).started_at ?? null,
       completedAt: row.completed_at ?? null,
       scorePct: pct(pointsEarned, pointsTotal),
+      hasReview: Boolean(handoffFromStoredMockAnswers(answers, { timed, secondsTaken })),
+      answers,
     };
   });
 

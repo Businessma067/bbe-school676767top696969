@@ -65,25 +65,71 @@ const SUBJECT_ORDER: SubjectKey[] = ["economics", "english", "german", "math"];
 const REVIEW_BELOW = 70;
 const STRONG_AT = 85;
 
+function parseTimeByQuestion(raw: unknown): Record<string, number> {
+  const timeByQuestion: Record<string, number> = {};
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return timeByQuestion;
+  for (const [id, value] of Object.entries(raw as Record<string, unknown>)) {
+    if (typeof value === "number" && Number.isFinite(value) && value >= 0) {
+      timeByQuestion[id] = Math.round(value);
+    }
+  }
+  return timeByQuestion;
+}
+
+function parseMarksMap(raw: unknown): Record<string, boolean[]> | null {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return null;
+  const out: Record<string, boolean[]> = {};
+  let count = 0;
+  for (const [id, value] of Object.entries(raw as Record<string, unknown>)) {
+    if (!Array.isArray(value)) continue;
+    const marks = value.map((v) => v === true);
+    if (marks.length === 0) continue;
+    out[id] = marks;
+    count += 1;
+  }
+  return count > 0 ? out : null;
+}
+
 export function parseMockAttemptHandoff(raw: unknown): MockAttemptHandoff | null {
   if (!raw || typeof raw !== "object") return null;
   const o = raw as Record<string, unknown>;
-  if (!o.answers || typeof o.answers !== "object" || Array.isArray(o.answers)) return null;
-  const timeRaw = o.timeByQuestion;
-  const timeByQuestion: Record<string, number> = {};
-  if (timeRaw && typeof timeRaw === "object" && !Array.isArray(timeRaw)) {
-    for (const [id, value] of Object.entries(timeRaw as Record<string, unknown>)) {
-      if (typeof value === "number" && Number.isFinite(value) && value >= 0) {
-        timeByQuestion[id] = Math.round(value);
-      }
-    }
-  }
+  const answers = parseMarksMap(o.answers);
+  if (!answers) return null;
   return {
-    answers: o.answers as Record<string, boolean[]>,
+    answers,
     timed: o.timed === true,
     secondsTaken: typeof o.secondsTaken === "number" && Number.isFinite(o.secondsTaken) ? o.secondsTaken : null,
-    timeByQuestion,
+    timeByQuestion: parseTimeByQuestion(o.timeByQuestion),
     flagged: Array.isArray(o.flagged) ? o.flagged.filter((x): x is string => typeof x === "string") : [],
+  };
+}
+
+/**
+ * Rebuild a review handoff from `mock_attempts.answers` jsonb
+ * (submitted payload with `marks`, or in-progress `{ marks }`).
+ */
+export function handoffFromStoredMockAnswers(
+  answersRaw: unknown,
+  meta: { timed: boolean; secondsTaken: number | null },
+): MockAttemptHandoff | null {
+  if (!answersRaw || typeof answersRaw !== "object" || Array.isArray(answersRaw)) return null;
+  const o = answersRaw as Record<string, unknown>;
+  const marks = parseMarksMap(o.marks) ?? parseMarksMap(o.answers);
+  if (!marks) return null;
+  const flaggedFromObj =
+    o.flagged && typeof o.flagged === "object" && !Array.isArray(o.flagged)
+      ? Object.entries(o.flagged as Record<string, unknown>)
+          .filter(([, v]) => v === true)
+          .map(([k]) => k)
+      : null;
+  return {
+    answers: marks,
+    timed: meta.timed,
+    secondsTaken: meta.secondsTaken,
+    timeByQuestion: parseTimeByQuestion(o.timeByQuestion),
+    flagged: Array.isArray(o.flagged)
+      ? o.flagged.filter((x): x is string => typeof x === "string")
+      : (flaggedFromObj ?? []),
   };
 }
 
