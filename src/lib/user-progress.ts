@@ -65,6 +65,8 @@ export type MockAttempt = {
 export type MockAnswersPayload = {
   correct_count: number;
   statement_count: number;
+  /** Per-question ticks (question id → 5 booleans), kept for admin statistics. */
+  marks?: Record<string, boolean[]>;
 };
 
 function parseMockAnswers(raw: unknown): { correct_count: number | null; statement_count: number | null } {
@@ -240,12 +242,14 @@ export async function recordMockAttempt(input: {
   timed: boolean;
   correctCount: number;
   statementCount: number;
+  marks?: Record<string, boolean[]>;
 }): Promise<void> {
   const userId = await currentUserId();
   if (!userId) return;
   const answers: MockAnswersPayload = {
     correct_count: input.correctCount,
     statement_count: input.statementCount,
+    ...(input.marks ? { marks: input.marks } : {}),
   };
 
   // Prefer converting in-progress row → submitted so recovery state is cleared.
