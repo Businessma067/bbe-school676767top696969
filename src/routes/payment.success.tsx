@@ -3,7 +3,11 @@ import { useLayoutEffect, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
-import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
+import {
+  CHECKOUT_PRODUCTS,
+  isAddonProductSlug,
+  isCheckoutProductSlug,
+} from "@/lib/checkout-catalog";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 import { breakOutOfIframe } from "@/lib/break-out-of-iframe";
 import { consumePaymentSuccessAccess } from "@/lib/payment-success-access";
@@ -25,11 +29,11 @@ function parseSuccessSearch(search: Record<string, unknown>): SuccessSearch {
 
 /** Only allow post-checkout deep links into known product destinations. */
 function safeStartHref(href: string | undefined, productSlug: string | undefined): string {
-  if (productSlug && isPaidProductSlug(productSlug)) {
-    return PAID_PRODUCTS[productSlug].href;
+  if (productSlug && isCheckoutProductSlug(productSlug)) {
+    return CHECKOUT_PRODUCTS[productSlug].href;
   }
   if (href) {
-    for (const product of Object.values(PAID_PRODUCTS)) {
+    for (const product of Object.values(CHECKOUT_PRODUCTS)) {
       if (href === product.href || href.startsWith(`${product.href}/`)) {
         return product.href;
       }
@@ -89,12 +93,13 @@ export function PaymentSuccessPage() {
   }, [navigate]);
 
   const productSlug =
-    typeof product === "string" && isPaidProductSlug(product) ? product : undefined;
+    typeof product === "string" && isCheckoutProductSlug(product) ? product : undefined;
   const startHref = safeStartHref(href, productSlug);
+  const isCallAddon = productSlug ? isAddonProductSlug(productSlug) : false;
   const productLabel =
-    (productSlug ? PAID_PRODUCTS[productSlug].name : null) ??
+    (productSlug ? CHECKOUT_PRODUCTS[productSlug].name : null) ??
     (typeof product === "string" && product.trim() ? product : null) ??
-    "Your course";
+    (isCallAddon ? "Consultation call" : "Your course");
 
   if (!allowed) {
     return (
@@ -112,22 +117,23 @@ export function PaymentSuccessPage() {
           {promo ? "Promocode redeemed" : "Payment received"}
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          {productLabel} is unlocked on your account
-          {promo ? ": no payment needed." : "."}
+          {isCallAddon
+            ? `${productLabel} credit is ready — open the calendar to pick a time.`
+            : `${productLabel} is unlocked on your account${promo ? ": no payment needed." : "."}`}
         </p>
         <button
           type="button"
           onClick={() => {
-            if (isLocalizablePath(startHref)) {
-              navigate({ to: startHref });
-            } else {
+            if (startHref.includes("?") || !isLocalizablePath(startHref)) {
               window.location.assign(startHref);
+              return;
             }
+            navigate({ to: startHref });
           }}
           className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white"
           style={{ backgroundColor: ORANGE }}
         >
-          Start the course →
+          {isCallAddon ? "Open booking calendar →" : "Start the course →"}
         </button>
         <LocalizedLink
           to="/dashboard"

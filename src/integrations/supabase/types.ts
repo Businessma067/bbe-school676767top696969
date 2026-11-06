@@ -35,6 +35,33 @@ export type Database = {
         }
         Relationships: []
       }
+      call_bookings: {
+        Row: {
+          calendly_event_uri: string | null
+          calendly_invitee_uri: string | null
+          created_at: string
+          id: string
+          source: string
+          user_id: string
+        }
+        Insert: {
+          calendly_event_uri?: string | null
+          calendly_invitee_uri?: string | null
+          created_at?: string
+          id?: string
+          source?: string
+          user_id: string
+        }
+        Update: {
+          calendly_event_uri?: string | null
+          calendly_invitee_uri?: string | null
+          created_at?: string
+          id?: string
+          source?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       activity_events: {
         Row: {
           created_at: string

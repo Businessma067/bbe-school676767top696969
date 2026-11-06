@@ -134,7 +134,12 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
   failureReason?: string;
 }> {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-  const { PAID_PRODUCTS, isPaidProductSlug } = await import("@/lib/checkout-catalog");
+  const {
+    ADDON_PRODUCTS,
+    PAID_PRODUCTS,
+    isAddonProductSlug,
+    isPaidProductSlug,
+  } = await import("@/lib/checkout-catalog");
   const { grantPaidEnrollment } = await import("@/lib/enrollment-grant.server");
 
   const { data: payment, error } = await supabaseAdmin
@@ -172,6 +177,7 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
 
   const slug = payment.product_slug;
   const product = isPaidProductSlug(slug) ? PAID_PRODUCTS[slug] : null;
+  const addon = isAddonProductSlug(slug) ? ADDON_PRODUCTS[slug] : null;
   let enrolled = false;
 
   if (paid && product) {
@@ -213,12 +219,15 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
         paymentId: payment.id,
       });
     }
+  } else if (paid && addon) {
+    // Add-ons (e.g. consultation call) are fulfilled by the successful payment row.
+    enrolled = true;
   }
 
   return {
     status,
     productSlug: slug,
-    href: product?.href ?? null,
+    href: product?.href ?? addon?.href ?? null,
     enrolled,
     ...(mono.failureReason ? { failureReason: mono.failureReason } : {}),
   };

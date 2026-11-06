@@ -1,6 +1,13 @@
 /** Client-safe catalog of paid products and their prices. */
 
+/** Course SKUs that create enrollments and accept partner promocodes. */
 export type PaidProductSlug = "full-course" | "wiso-full-course" | "hybrid-full-course";
+
+/** One-off checkout add-ons (no course enrollment). */
+export type AddonProductSlug = "consultation-call";
+
+/** Anything that can be charged through Monobank checkout. */
+export type CheckoutProductSlug = PaidProductSlug | AddonProductSlug;
 
 /** ISO 4217 numeric code for EUR (Monobank `ccy`). */
 export const MONOBANK_CURRENCY_EUR = 978;
@@ -29,6 +36,15 @@ export type PaidProduct = {
   href: string;
 };
 
+export type AddonProduct = {
+  slug: AddonProductSlug;
+  name: string;
+  tier: "addon";
+  priceEur: number;
+  /** Post-checkout destination (may include a query string). */
+  href: string;
+};
+
 export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
   "full-course": {
     slug: "full-course",
@@ -51,6 +67,26 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     priceEur: 559,
     href: "/hybrid/course",
   },
+};
+
+export const CONSULTATION_CALL_PRICE_EUR = 50;
+
+export const ADDON_PRODUCTS: Record<AddonProductSlug, AddonProduct> = {
+  "consultation-call": {
+    slug: "consultation-call",
+    name: "Consultation call",
+    tier: "addon",
+    priceEur: CONSULTATION_CALL_PRICE_EUR,
+    href: "/dashboard?tab=book",
+  },
+};
+
+export const CHECKOUT_PRODUCTS: Record<
+  CheckoutProductSlug,
+  PaidProduct | AddonProduct
+> = {
+  ...PAID_PRODUCTS,
+  ...ADDON_PRODUCTS,
 };
 
 /** Promocode that takes 15% off the checkout price (validated server-side too). */
@@ -141,4 +177,12 @@ export const HARDCODED_DISCOUNT_PROMOS: HardcodedDiscountPromo[] = [
 
 export function isPaidProductSlug(value: string): value is PaidProductSlug {
   return value in PAID_PRODUCTS;
+}
+
+export function isAddonProductSlug(value: string): value is AddonProductSlug {
+  return value in ADDON_PRODUCTS;
+}
+
+export function isCheckoutProductSlug(value: string): value is CheckoutProductSlug {
+  return value in CHECKOUT_PRODUCTS;
 }
