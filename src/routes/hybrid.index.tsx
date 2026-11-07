@@ -1,11 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Suspense, lazy } from "react";
 import { ArrowRight } from "lucide-react";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
-import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -144,30 +142,6 @@ export function HybridLandingPage() {
           <HowItWorksSection track="hybrid" />
         </Suspense>
 
-        <WhyChooseUsSection
-          track="hybrid"
-          subtitle="Everything from Full BBE and Full WiSo in one course: questions, timed mocks, builders, flashcards, matching, and tutor exam, plus a shared plan so the overlap is not homework twice."
-        />
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              Same campus. Two papers. One preparation.
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              BBE is the selective English track. WiSo is the larger German-taught track. Hybrid is
-              for the year you refuse to guess wrong and close the other door.
-            </p>
-          </div>
-        </section>
-
         <section id="why-a-third-course" className="why-choose-us--hybrid bg-[#071612]">
           <div className="mx-auto max-w-3xl px-6 pt-16 text-center lg:px-8 lg:pt-20">
             <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
@@ -187,21 +161,6 @@ export function HybridLandingPage() {
               {ownsHybridCourse ? "Open Hybrid course" : "View Hybrid Course"}
               <ArrowRight className="h-4 w-4" />
             </LocalizedLink>
-          </div>
-        </section>
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Notes from people who kept both options open
-            </h2>
           </div>
         </section>
 

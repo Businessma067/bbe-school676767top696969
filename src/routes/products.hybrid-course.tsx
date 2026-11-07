@@ -6,6 +6,7 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { PaymentModal } from "@/components/PaymentModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SalesWarmup } from "@/components/SalesWarmup";
+import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { CourseOfferPrice } from "@/components/CourseOfferPrice";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { useAppliedPromo } from "@/hooks/use-applied-promo";
@@ -104,20 +105,25 @@ export function HybridCourseProductPage() {
       />
 
       <main className="px-6 py-10 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl">
-          <p
-            className="mb-3 text-xs font-semibold uppercase tracking-[0.2em]"
-            style={{ color: HYBRID_ACCENT }}
-          >
-            New product
-          </p>
-          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Hybrid BBE + WiSo Course
-          </h1>
-          <p className="mt-3 max-w-2xl text-muted-foreground">
-            One study path for both WU entrance exams. Shared math and bridged economics count once.
-            English and German stay as separate lanes, and both full course libraries stay open.
-          </p>
+        <div className="mx-auto grid max-w-6xl items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10">
+          <div className="lg:pt-4">
+            <p
+              className="mb-3 text-xs font-semibold uppercase tracking-[0.2em]"
+              style={{ color: HYBRID_ACCENT }}
+            >
+              New product
+            </p>
+            <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              Hybrid BBE + WiSo Course
+            </h1>
+            <p className="mt-3 max-w-2xl text-muted-foreground">
+              One study path for both WU entrance exams. Shared math and bridged economics count once.
+              English and German stay as separate lanes, and both full course libraries stay open.
+            </p>
+          </div>
+          <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
+        </div>
+        <div className="mx-auto mt-8 max-w-4xl">
 
           <div className="relative mt-8 aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-secondary">
             <img

@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { ChevronLeft, ChevronRight, ArrowRight, Flame } from "lucide-react";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
 import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
 import bcgLogo from "@/assets/bcg.png.asset.json";
@@ -157,21 +156,6 @@ export function BbeLandingPage() {
             >
               View Preparation Products
             </LocalizedLink>
-          </div>
-        </section>
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Notes from people who sat the exam
-            </h2>
           </div>
         </section>
 

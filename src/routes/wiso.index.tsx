@@ -1,11 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
-import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -153,27 +151,6 @@ export function WisoLandingPage() {
           </div>
         </section>
 
-        <WhyChooseUsSection track="wiso" />
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              Same WU campus, German-taught path
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              WiSo opens far more places than BBE, but the written exam still sorts thousands of
-              people under the same partial credit pressure. The hall does not feel softer on the day.
-            </p>
-          </div>
-        </section>
-
         <div className="why-choose-us--wiso bg-why-us-bg">
           <section className="relative overflow-hidden px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
             <div className="relative mx-auto max-w-6xl">
@@ -209,21 +186,6 @@ export function WisoLandingPage() {
             </div>
           </section>
         </div>
-
-        <section
-          className="relative bg-scroll"
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-          }}
-        >
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Notes from people who sat WiSo
-            </h2>
-          </div>
-        </section>
 
         <PinnedReviewsBoard
           title="What students told us after the WiSo Aufnahmeprüfung"
