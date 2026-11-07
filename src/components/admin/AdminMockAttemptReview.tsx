@@ -11,6 +11,8 @@ import type { AdminMockRow } from "@/lib/admin-types";
 import { ExamResultOverview } from "@/components/mock-exam/ExamResultOverview";
 import { ReviewViewToggle, TaskReviewWorkspace } from "@/components/mock-exam/ExamTaskReview";
 import { fmtDate, fmtDuration } from "@/components/admin/AdminLayout";
+import { useServerFn } from "@tanstack/react-start";
+import { Button } from "@/components/ui/button";
 
 export function AdminMockAttemptReview({
   mock,
@@ -21,6 +23,7 @@ export function AdminMockAttemptReview({
   userId: string;
   onBack: () => void;
 }) {
+  const getCustomPaper = useServerFn(adminGetCustomMockPaper);
   const [exam, setExam] = useState<MockExamSummary | null>(null);
   const [questions, setQuestions] = useState<ExamQuestion[]>([]);
   const [examTrack, setExamTrack] = useState<"bbe" | "wiso">("bbe");
@@ -40,9 +43,18 @@ export function AdminMockAttemptReview({
 
   useEffect(() => {
     let cancelled = false;
+    setReady(false);
+    setLoadError(null);
     (async () => {
+      const payload = mock.answers as Record<string, unknown> | null;
+      if (payload && Array.isArray(payload.questions) && payload.questions.length > 0) {
+        setQuestions(payload.questions as ExamQuestion[]);
+        setExamTrack(payload.track === "wiso" ? "wiso" : "bbe");
+        setReady(true);
+        return;
+      }
       if (isCustomExamId(mock.examId)) {
-        const paper = await adminGetCustomMockPaper({
+        const paper = await getCustomPaper({
           data: { userId, examId: mock.examId },
         });
         if (cancelled) return;
@@ -69,11 +81,16 @@ export function AdminMockAttemptReview({
       setQuestions(resolved.questions);
       setExamTrack(resolved.track);
       setReady(true);
-    })();
+    })().catch(() => {
+      if (!cancelled) {
+        setLoadError("The exam paper could not be loaded. Please try again.");
+        setReady(true);
+      }
+    });
     return () => {
       cancelled = true;
     };
-  }, [mock.examId, userId]);
+  }, [mock.examId, mock.answers, userId, getCustomPaper]);
 
   const uiLocale = examTrack === "wiso" ? "de" : "en";
   const analytics = useMemo(
@@ -94,13 +111,13 @@ export function AdminMockAttemptReview({
   if (loadError || !attempt) {
     return (
       <div className="space-y-3">
-        <button
+        <Button variant="link"
           type="button"
           onClick={onBack}
           className="text-sm font-semibold text-primary hover:underline"
         >
           ← Back to mocks
-        </button>
+        </Button>
         <p className="rounded-xl border border-border bg-card p-4 text-sm text-muted-foreground">
           {loadError ??
             "Full answer review is not stored for this attempt (submitted before per-answer marks were saved)."}
@@ -116,13 +133,13 @@ export function AdminMockAttemptReview({
     <div className="space-y-5">
       <div className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <button
+          <Button variant="link"
             type="button"
             onClick={onBack}
             className="text-sm font-semibold text-primary hover:underline"
           >
             ← Back to mocks
-          </button>
+          </Button>
           <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             {exam?.title ?? mock.examTitle}
           </p>

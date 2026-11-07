@@ -10,6 +10,8 @@ export type AdminMockAttemptInput = {
   pointsTotal: number;
   secondsTaken: number | null;
   marks: Record<string, boolean[]> | null;
+  timed?: boolean;
+  storedAnswers?: Record<string, unknown> | null;
 };
 
 export type AdminMockStatementStat = {
@@ -55,6 +57,8 @@ export type AdminMockAttemptRow = {
   answers: AdminMockAttemptAnswer[] | null;
   /** Raw statement marks when stored — used for full student-style review. */
   marks: Record<string, boolean[]> | null;
+  timed: boolean;
+  storedAnswers: Record<string, unknown> | null;
 };
 
 export type AdminMockExamStats = {
@@ -67,6 +71,7 @@ export type AdminMockExamStats = {
   distribution: number[];
   questions: AdminMockQuestionStat[];
   attempts: AdminMockAttemptRow[];
+  paperAvailable: boolean;
 };
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
@@ -133,12 +138,15 @@ export function buildAdminMockExamStats(
       secondsTaken: a.secondsTaken,
       answers,
       marks: a.marks,
+      timed: a.timed ?? false,
+      storedAnswers: a.storedAnswers ?? null,
     };
   });
 
   const detailedCount = rows.filter((r) => r.answers).length;
   return {
     examId,
+    paperAvailable: questions.length > 0,
     title,
     attemptCount: attempts.length,
     detailedCount,
@@ -148,7 +156,7 @@ export function buildAdminMockExamStats(
       id: agg.q.id,
       index: agg.q.index,
       subject: agg.q.subject,
-      stem: agg.q.stem.slice(0, 220),
+      stem: agg.q.stem,
       maxPoints: agg.q.maxPoints,
       attempts: agg.attempts,
       avgScore: agg.attempts ? round2(agg.scoreSum / agg.attempts) : 0,
@@ -157,7 +165,7 @@ export function buildAdminMockExamStats(
       zeroScoreCount: agg.zero,
       statements: agg.q.statements.map((s, i) => ({
         letter: LETTERS[i] ?? String(i + 1),
-        text: s.text.slice(0, 200),
+        text: s.text,
         isTrue: s.isTrue,
         markedCount: agg.marked[i],
         correctPct: agg.attempts ? round1((agg.judgedOk[i] / agg.attempts) * 100) : 0,
