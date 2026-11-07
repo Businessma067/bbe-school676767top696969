@@ -232,6 +232,7 @@ function CourseCallCalendarLive() {
           if (!cell.date || cell.day == null) {
             return <div key={`pad-${index}`} className="h-7" />;
           }
+          const date = cell.date;
           const available = spotsByDate.has(cell.date);
           const selected = cell.date === selectedDate;
           const isToday = cell.date === today;
@@ -243,8 +244,8 @@ function CourseCallCalendarLive() {
               aria-pressed={selected}
               aria-label={cell.date}
               onClick={() => {
-                setSelectedDate(cell.date);
-                setSelectedSpot(spotsByDate.get(cell.date)?.[0] ?? null);
+                setSelectedDate(date);
+                setSelectedSpot(spotsByDate.get(date)?.[0] ?? null);
               }}
               className={cn(
                 "mx-auto grid h-7 w-7 place-items-center rounded-sm font-display text-[13px] tabular-nums",

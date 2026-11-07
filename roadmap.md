@@ -1,4 +1,5 @@
 # Roadmap
+- [ ] Finish admin mock statistics, preserve every submitted answer and paper, and verify saved results and admin review.
 - [x] Persist STUDYLINE's selected course per account, show its reduced price, allow switching before payment with a visible note, and verify persistence and limits.
 
 - [ ] Route all verified new email and Google signups through the success page, exclude returning Google users, and verify redirect regressions; leave production unpublished.
