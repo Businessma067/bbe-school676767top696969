@@ -27,4 +27,13 @@ describe("admin mock stats", () => {
     expect(s.attempts[1].answers).toBeNull();
     expect(s.attempts[1].marks).toBeNull();
   });
+  test("preserves the complete paper payload and actual timed mode for review", () => {
+    const payload = { marks: { q1: [true, false, false, false, false] }, timeByQuestion: { q1: 45 }, track: "wiso" };
+    const stats = buildAdminMockExamStats("m", "M", [q], [{ id: "a", userId: "other-user", email: "e", completedAt: null, pointsEarned: 2, pointsTotal: 2, secondsTaken: 45, timed: false, marks: payload.marks, storedAnswers: payload }]);
+    expect(stats.attempts[0].storedAnswers).toEqual(payload);
+    expect(stats.attempts[0].userId).toBe("other-user");
+    expect(stats.attempts[0].timed).toBe(false);
+    expect(stats.questions[0].avgScore).toBe(2);
+    expect(stats.questions[0].statements[1].correctPct).toBe(100);
+  });
 });
