@@ -20,6 +20,7 @@ import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { storeExamTrack } from "@/lib/exam-track";
 import { navItemsForAccess } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
   head: ({ params }) => ({
@@ -30,6 +31,10 @@ export const Route = createFileRoute("/mock-exams/$examId/review")({
       { title: "Mock Exam Review — BBE School" },
       { name: "description", content: "Detailed wi2-scored review of your WU BBE mock exam." },
       { name: "robots", content: "noindex" },
+      { property: "og:title", content: "Mock Exam Review — BBE School" },
+      { property: "og:description", content: "Your mock exam scores, answers and explanations." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: ReviewExamPage,
@@ -89,13 +94,14 @@ function ReviewExamPage() {
   );
 
   const saved = useRef(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [saveRetry, setSaveRetry] = useState(0);
   useEffect(() => {
     if (!ready || saved.current || !attempt || questions.length === 0) return;
     saved.current = true;
-    const flag = `bbe-mock-saved:${examId}:${attempt.secondsTaken ?? "x"}`;
+    const flag = `bbe-mock-saved:${examId}:${JSON.stringify(attempt)}`;
     try {
       if (sessionStorage.getItem(flag)) return;
-      sessionStorage.setItem(flag, "1");
     } catch {
       /* ignore */
     }
@@ -123,8 +129,18 @@ function ReviewExamPage() {
       marks: attempt.answers,
       timeByQuestion: attempt.timeByQuestion,
       flagged: attempt.flagged,
+      questions,
+      track: examTrack,
+    }).then((persisted) => {
+      if (persisted) {
+        try { sessionStorage.setItem(flag, "1"); } catch { /* storage unavailable */ }
+      }
+      setSaveError(null);
+    }).catch(() => {
+      saved.current = false;
+      setSaveError("Your exam answers were not saved. Please retry before leaving this page.");
     });
-  }, [ready, attempt, exam, examId, analytics, pointsTotal, questions.length]);
+  }, [ready, attempt, exam, examId, analytics, pointsTotal, questions, examTrack, saveRetry]);
 
   useEffect(() => {
     if (currentIndex >= analytics.tasks.length && analytics.tasks.length > 0) {
@@ -224,6 +240,10 @@ function ReviewExamPage() {
         }
       />
       <main className={`${PRACTICE_BODY} flex-col py-8 sm:py-10`}>
+        {saveError ? <div role="alert" className="mb-4 flex items-center gap-3 text-sm text-destructive">
+          {saveError}
+          <Button variant="outline" size="sm" onClick={() => setSaveRetry((value) => value + 1)}>Retry saving</Button>
+        </div> : null}
         <div className="sticky top-16 z-20 -mx-1 mb-6 flex flex-col gap-3 rounded-2xl border border-border bg-background/95 px-3 py-3 shadow-sm backdrop-blur-sm sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
