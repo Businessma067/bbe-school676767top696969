@@ -616,7 +616,7 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
             marks: extractMarksFromAnswers(r.answers),
             timed: r.timed,
             storedAnswers: r.answers && typeof r.answers === "object" && !Array.isArray(r.answers)
-              ? r.answers as Record<string, unknown> : null,
+              ? r.answers as AdminJsonValue : null,
           })),
         ),
       );

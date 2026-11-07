@@ -1,5 +1,6 @@
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { calculateTaskScore } from "@/lib/scoring";
+import type { AdminJsonValue } from "@/lib/admin-types";
 
 export type AdminMockAttemptInput = {
   id: string;
@@ -11,7 +12,7 @@ export type AdminMockAttemptInput = {
   secondsTaken: number | null;
   marks: Record<string, boolean[]> | null;
   timed?: boolean;
-  storedAnswers?: Record<string, unknown> | null;
+  storedAnswers?: AdminJsonValue | null;
 };
 
 export type AdminMockStatementStat = {
@@ -58,7 +59,7 @@ export type AdminMockAttemptRow = {
   /** Raw statement marks when stored — used for full student-style review. */
   marks: Record<string, boolean[]> | null;
   timed: boolean;
-  storedAnswers: Record<string, unknown> | null;
+  storedAnswers: AdminJsonValue | null;
 };
 
 export type AdminMockExamStats = {

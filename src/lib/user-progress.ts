@@ -3,6 +3,7 @@ import { mirrorTaskAttempt } from "@/lib/activity-tracker";
 import type { MockExamSession } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { queueMockSave } from "@/lib/mock-save-queue";
+import type { Json } from "@/integrations/supabase/types";
 
 /* ----------------------------- types ----------------------------- */
 
@@ -308,7 +309,7 @@ async function persistMockAttempt(input: {
         per_subject: input.perSubject,
         seconds_taken: input.secondsTaken,
         timed: input.timed,
-        answers,
+        answers: JSON.parse(JSON.stringify(answers)) as Json,
         status: "submitted",
         completed_at: new Date().toISOString(),
         flags: {},
@@ -330,7 +331,7 @@ async function persistMockAttempt(input: {
     per_subject: input.perSubject,
     seconds_taken: input.secondsTaken,
     timed: input.timed,
-    answers,
+    answers: JSON.parse(JSON.stringify(answers)) as Json,
     status: "submitted",
     completed_at: new Date().toISOString(),
   });
