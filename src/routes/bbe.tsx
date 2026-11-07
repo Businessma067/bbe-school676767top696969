@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, Flame } from "lucide-react";
+import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
 import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
 import bcgLogo from "@/assets/bcg.png.asset.json";
@@ -16,8 +17,9 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
-import { BookCallSection } from "@/components/BookCallSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { pinnedNote } from "@/data/acceptance-notes";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -158,7 +160,31 @@ export function BbeLandingPage() {
           </div>
         </section>
 
-        <BookCallSection description="Pick a time that works for you. We can walk through the BBE exam — Economics, Math, and English — and help you choose a prep plan." />
+        <section
+          className="relative bg-scroll"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
+              Notes from people who sat the exam
+            </h2>
+          </div>
+        </section>
+
+        <PinnedReviewsBoard
+          title="What students wrote after they got an acceptance letter"
+          reports={reports}
+          archiveHash="bbe"
+          badgeExtraFor={(report) =>
+            report.fire ? (
+              <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />
+            ) : null
+          }
+        />
 
         {/* FAQ */}
         <div id="faq">
@@ -610,6 +636,12 @@ function PlacementsTicker() {
     </div>
   );
 }
+
+const reports = [
+  pinnedNote("bbe-felix", { fire: true }),
+  pinnedNote("bbe-petra"),
+  pinnedNote("bbe-andrei"),
+];
 
 const placements: { name: string; src: string }[] = [
   { name: "Goldman Sachs", src: goldmanLogo.url },

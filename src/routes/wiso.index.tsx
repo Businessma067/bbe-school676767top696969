@@ -10,8 +10,9 @@ import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
-import { BookCallSection } from "@/components/BookCallSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
+import { pinnedNote } from "@/data/acceptance-notes";
 import { WisoDachAdvantageSlider } from "@/components/WisoDachAdvantageSlider";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -209,7 +210,27 @@ export function WisoLandingPage() {
           </section>
         </div>
 
-        <BookCallSection description="Pick a time that works for you. We can walk through the WiSo Aufnahmeprüfung and help you choose a prep plan." />
+        <section
+          className="relative bg-scroll"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-4 py-8 text-center sm:px-6 sm:py-10 lg:px-8 lg:py-11">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
+              Notes from people who sat WiSo
+            </h2>
+          </div>
+        </section>
+
+        <PinnedReviewsBoard
+          title="What students told us after the WiSo Aufnahmeprüfung"
+          reports={wisoReports}
+          accent="wiso"
+          archiveHash="wiso"
+        />
 
         <div id="faq">
           <WisoFaqAccordion />
@@ -279,3 +300,5 @@ export function WisoLandingPage() {
     </div>
   );
 }
+
+const wisoReports = [pinnedNote("wiso-jasmin"), pinnedNote("wiso-filip"), pinnedNote("wiso-lara")];
