@@ -3,7 +3,7 @@ import { Suspense, lazy } from "react";
 import { ArrowRight } from "lucide-react";
 
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
-import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
+import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -61,10 +61,11 @@ export function HybridLandingPage() {
       <main>
         <section className="relative overflow-hidden px-3 pt-7 pb-10 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
           <div className="mx-auto max-w-6xl">
-            <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <div className="mb-5 flex w-full flex-col items-center sm:mb-6">
-                <ExamCountdown />
-                <ExamCourseSentence />
+            <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10">
+            <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left">
+              <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
+                <ExamCountdown className="lg:items-start" />
+                <ExamCourseSentence className="lg:mx-0 lg:text-left" />
               </div>
 
               <p
@@ -78,7 +79,7 @@ export function HybridLandingPage() {
                 Hybrid · BBE + WiSo
               </p>
 
-              <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
+              <h1 className="font-display text-[1.65rem] font-semibold leading-[1.15] text-foreground sm:text-[2.6rem] sm:leading-[1.05] lg:text-[3.15rem]">
                 Step by step preparation for both 2027 WU exams
               </h1>
 
@@ -131,9 +132,7 @@ export function HybridLandingPage() {
                 <ArrowRight className="h-3.5 w-3.5" />
               </LocalizedLink>
             </div>
-
-            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
-              <PrepJourneyRoadmap track="hybrid" accent="hybrid-teal" />
+            <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
             </div>
           </div>
         </section>
