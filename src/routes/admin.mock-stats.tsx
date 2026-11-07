@@ -6,6 +6,7 @@ import { AdminLayout, StatCard, fmtDate, fmtDuration } from "@/components/admin/
 import { adminGetMockExamStats } from "@/lib/admin.functions";
 import type { AdminMockAttemptRow, AdminMockExamStats } from "@/lib/admin-mock-stats";
 import type { AdminMockRow } from "@/lib/admin-types";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/admin/mock-stats")({
   component: AdminMockStatsPage,
@@ -14,6 +15,10 @@ export const Route = createFileRoute("/admin/mock-stats")({
       { title: "Mock exam statistics · Admin · BBE School" },
       { name: "description", content: "Admin statistics for submitted mock exams." },
       { name: "robots", content: "noindex" },
+      { property: "og:title", content: "Mock exam statistics · Admin · BBE School" },
+      { property: "og:description", content: "Submitted exam scores and detailed student answers for BBE School administrators." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
 });
@@ -28,12 +33,12 @@ function toAdminMockRow(exam: AdminMockExamStats, attempt: AdminMockAttemptRow):
     pointsTotal: attempt.pointsTotal,
     perSubject: {},
     secondsTaken: attempt.secondsTaken,
-    timed: attempt.secondsTaken != null,
+    timed: attempt.timed,
     startedAt: null,
     completedAt: attempt.completedAt,
     scorePct: attempt.pct,
     hasReview: Boolean(attempt.marks),
-    answers: attempt.marks ? { marks: attempt.marks } : null,
+    answers: attempt.storedAnswers as AdminMockRow["answers"] ?? (attempt.marks ? { marks: attempt.marks } : null),
   };
 }
 
@@ -94,6 +99,7 @@ function AdminMockStatsPage() {
       {exam ? (
         <div className="space-y-6">
           <select
+            aria-label="Exam"
             value={examId}
             onChange={(e) => {
               setExamId(e.target.value);
@@ -120,7 +126,7 @@ function AdminMockStatsPage() {
             <StatCard label="Students" value={new Set(exam.attempts.map((a) => a.userId)).size} />
           </div>
 
-          <section className="rounded-xl border border-border bg-card p-4">
+          <section className="border-y border-border py-4">
             <h2 className="mb-3 font-semibold">Score distribution</h2>
             <div className="flex h-40 items-end gap-2">
               {exam.distribution.map((n, i) => (
@@ -137,10 +143,11 @@ function AdminMockStatsPage() {
 
           <section>
             <h2 className="mb-2 font-semibold">By question</h2>
+            <p className="mb-3 text-sm text-muted-foreground">Based on {exam.detailedCount} submissions with saved answers out of {exam.attemptCount} total.</p>
+            {!exam.paperAvailable ? <p className="mb-3 text-sm text-muted-foreground">The original question paper is unavailable for this exam.</p> : null}
             {exam.detailedCount === 0 ? (
               <p className="rounded-xl border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
-                No attempts with saved answers yet for this exam. New submits keep statement marks — after
-                students finish a mock, question-level stats appear here.
+                No saved answer breakdowns are available for this exam.
               </p>
             ) : (
               <div className="overflow-x-auto rounded-xl border border-border">
@@ -153,6 +160,7 @@ function AdminMockStatsPage() {
                       <th className="px-3 py-2">Avg</th>
                       <th className="px-3 py-2">Full</th>
                       <th className="px-3 py-2">Zero</th>
+                      <th className="px-3 py-2">Answers</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border bg-card">
@@ -175,13 +183,14 @@ function AdminMockStatsPage() {
                           </td>
                           <td className="px-3 py-2">{q.fullScoreCount}</td>
                           <td className="px-3 py-2">{q.zeroScoreCount}</td>
+                          <td className="px-3 py-2">{q.attempts}</td>
                         </tr>
                         {openQ === q.id ? (
                           <tr>
-                            <td colSpan={6} className="bg-secondary/20 px-3 py-3">
+                            <td colSpan={7} className="bg-secondary/20 px-3 py-3">
                               <p className="mb-2 text-xs text-muted-foreground">{q.stem}</p>
                               {q.statements.map((s) => (
-                                <div key={s.letter} className="flex items-start gap-3 py-1 text-xs">
+                                <div key={s.letter} className="flex flex-wrap items-start gap-3 py-1 text-xs">
                                   <span className="w-5 font-bold">{s.letter}</span>
                                   <span
                                     className={`w-12 font-semibold ${s.isTrue ? "text-primary" : "text-muted-foreground"}`}
@@ -210,6 +219,7 @@ function AdminMockStatsPage() {
             <div className="mb-2 flex items-center justify-between gap-3">
               <h2 className="font-semibold">All submissions</h2>
               <input
+                aria-label="Search student email"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search email"
@@ -248,20 +258,20 @@ function AdminMockStatsPage() {
                         <td className="px-3 py-2">
                           {a.marks ? (
                             <div className="flex flex-wrap gap-2">
-                              <button
+                              <Button variant="outline" size="sm"
                                 type="button"
                                 className="rounded-md border border-primary/40 bg-primary/10 px-2.5 py-1 text-sm font-semibold text-primary hover:bg-primary/15"
                                 onClick={() => setReview({ exam, attempt: a })}
                               >
                                 View answers
-                              </button>
-                              <button
+                              </Button>
+                              <Button variant="link" size="sm"
                                 type="button"
                                 className="text-sm text-muted-foreground underline"
                                 onClick={() => setOpenA(openA === a.id ? null : a.id)}
                               >
                                 {openA === a.id ? "Hide grid" : "Quick grid"}
-                              </button>
+                              </Button>
                             </div>
                           ) : (
                             <span className="text-muted-foreground">Score only</span>

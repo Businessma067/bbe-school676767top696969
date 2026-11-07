@@ -259,7 +259,7 @@ function TakeExamPage() {
   }, [session, hydrated]);
 
   useEffect(() => {
-    if (!hydrated || !session) return;
+    if (!hydrated || !session || submitted.current) return;
     if (remoteTimer.current) clearTimeout(remoteTimer.current);
     remoteTimer.current = setTimeout(() => {
       void upsertMockExamProgress({
@@ -307,6 +307,7 @@ function TakeExamPage() {
     (elapsed?: number) => {
       if (submitted.current || !sessionRef.current) return;
       submitted.current = true;
+      if (remoteTimer.current) clearTimeout(remoteTimer.current);
       const s = sessionRef.current;
       const totalSeconds = examSecondsRef.current;
       const secondsTaken =
@@ -331,7 +332,7 @@ function TakeExamPage() {
         examTitle: exam?.title ?? examId,
         session: s,
         pointsTotal: exam?.pointsTotal,
-      });
+      }).catch(() => undefined);
       clearSession(examId);
       navigate({ to: "/mock-exams/$examId/review", params: { examId } });
     },

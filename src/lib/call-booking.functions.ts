@@ -1,6 +1,18 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import type { Database } from "@/integrations/supabase/types";
+
+// The existing call-booking migration is pending; type its ledger locally until applied.
+type BookingRow = { id: string; user_id: string; calendly_event_uri: string | null; calendly_invitee_uri: string | null; source: string; created_at: string };
+type BookingDatabase = Omit<Database, "public"> & {
+  public: Omit<Database["public"], "Tables"> & {
+    Tables: Database["public"]["Tables"] & {
+      call_bookings: { Row: BookingRow; Insert: Pick<BookingRow, "user_id"> & Partial<BookingRow>; Update: Partial<BookingRow>; Relationships: [] };
+    };
+  };
+};
 import {
   accountOwnsPaidCourse,
   computeCallBookingStatus,
@@ -25,13 +37,14 @@ const RecordBookingInput = z.object({
 
 async function loadCallBookingStatus(userId: string): Promise<CallBookingStatus> {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+  const bookingDb = supabaseAdmin as unknown as SupabaseClient<BookingDatabase>;
 
   const [enrollmentsRes, bookingsRes, paymentsRes] = await Promise.all([
     supabaseAdmin
       .from("enrollments")
       .select("id, product_slug, product_name, tier, created_at")
       .eq("user_id", userId),
-    supabaseAdmin
+    bookingDb
       .from("call_bookings")
       .select("id", { count: "exact", head: true })
       .eq("user_id", userId),
@@ -94,7 +107,8 @@ export const recordCallBooking = createServerFn({ method: "POST" })
     // payload still lands once and decrements remaining.
     const sourceKey = data.clientKey ? `client:${data.clientKey}` : "calendly";
 
-    const { error } = await supabaseAdmin.from("call_bookings").insert({
+    const bookingDb = supabaseAdmin as unknown as SupabaseClient<BookingDatabase>;
+    const { error } = await bookingDb.from("call_bookings").insert({
       user_id: context.userId,
       calendly_event_uri: eventUri,
       calendly_invitee_uri: inviteeUri,

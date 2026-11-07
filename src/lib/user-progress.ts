@@ -1,6 +1,9 @@
 import { supabase } from "@/integrations/supabase/client";
 import { mirrorTaskAttempt } from "@/lib/activity-tracker";
 import type { MockExamSession } from "@/lib/mock-exam-session";
+import type { ExamQuestion } from "@/lib/mock-exams";
+import { queueMockSave } from "@/lib/mock-save-queue";
+import type { Json } from "@/integrations/supabase/types";
 
 /* ----------------------------- types ----------------------------- */
 
@@ -69,6 +72,8 @@ export type MockAnswersPayload = {
   marks?: Record<string, boolean[]>;
   timeByQuestion?: Record<string, number>;
   flagged?: string[];
+  questions?: ExamQuestion[];
+  track?: "bbe" | "wiso";
 };
 
 function parseMockAnswers(raw: unknown): { correct_count: number | null; statement_count: number | null } {
@@ -249,7 +254,7 @@ function marksFromAnswersJson(raw: unknown): Record<string, boolean[]> | null {
   return null;
 }
 
-export async function recordMockAttempt(input: {
+async function persistMockAttempt(input: {
   examId: string;
   examTitle: string;
   pointsEarned: number;
@@ -262,18 +267,21 @@ export async function recordMockAttempt(input: {
   marks?: Record<string, boolean[]>;
   timeByQuestion?: Record<string, number>;
   flagged?: string[];
-}): Promise<void> {
+  questions?: ExamQuestion[];
+  track?: "bbe" | "wiso";
+}): Promise<boolean> {
   const userId = await currentUserId();
-  if (!userId) return;
+  if (!userId) return false;
 
   // Prefer converting in-progress row → submitted so recovery state is cleared.
-  const { data: existing } = await supabase
+  const { data: existing, error: lookupError } = await supabase
     .from("mock_attempts")
     .select("id, answers")
     .eq("user_id", userId)
     .eq("exam_id", input.examId)
     .eq("status", "in_progress")
     .maybeSingle();
+  if (lookupError) throw new Error("Could not load your exam submission. Please retry.");
 
   const inputMarks =
     input.marks && Object.keys(input.marks).length > 0 ? input.marks : null;
@@ -283,6 +291,7 @@ export async function recordMockAttempt(input: {
   const answers: MockAnswersPayload = {
     correct_count: input.correctCount,
     statement_count: input.statementCount,
+    ...(input.questions ? { questions: input.questions, track: input.track } : {}),
     ...(marks ? { marks } : {}),
     ...(input.timeByQuestion && Object.keys(input.timeByQuestion).length > 0
       ? { timeByQuestion: input.timeByQuestion }
@@ -300,7 +309,7 @@ export async function recordMockAttempt(input: {
         per_subject: input.perSubject,
         seconds_taken: input.secondsTaken,
         timed: input.timed,
-        answers,
+        answers: JSON.parse(JSON.stringify(answers)) as Json,
         status: "submitted",
         completed_at: new Date().toISOString(),
         flags: {},
@@ -309,8 +318,8 @@ export async function recordMockAttempt(input: {
         progress: {},
       })
       .eq("id", existing.id);
-    if (error) console.error("recordMockAttempt", error);
-    return;
+    if (error) throw new Error("Could not save your exam answers. Please retry.");
+    return true;
   }
 
   const { error } = await supabase.from("mock_attempts").insert({
@@ -322,14 +331,20 @@ export async function recordMockAttempt(input: {
     per_subject: input.perSubject,
     seconds_taken: input.secondsTaken,
     timed: input.timed,
-    answers,
+    answers: JSON.parse(JSON.stringify(answers)) as Json,
     status: "submitted",
+    completed_at: new Date().toISOString(),
   });
-  if (error) console.error("recordMockAttempt", error);
+  if (error) throw new Error("Could not save your exam answers. Please retry.");
+  return true;
+}
+
+export function recordMockAttempt(input: Parameters<typeof persistMockAttempt>[0]): Promise<boolean> {
+  return queueMockSave(input.examId, () => persistMockAttempt(input));
 }
 
 /** Debounced remote backup of an in-progress sitting (logged-in users only). */
-export async function upsertMockExamProgress(input: {
+async function persistMockExamProgress(input: {
   examId: string;
   examTitle: string;
   session: MockExamSession;
@@ -375,13 +390,18 @@ export async function upsertMockExamProgress(input: {
     const { error } = await supabase
       .from("mock_attempts")
       .update(row as never)
-      .eq("id", existing.id);
-    if (error) console.error("upsertMockExamProgress", error);
+      .eq("id", existing.id)
+      .eq("status", "in_progress");
+    if (error) throw new Error("Could not sync exam progress.");
     return;
   }
 
   const { error } = await supabase.from("mock_attempts").insert(row as never);
-  if (error) console.error("upsertMockExamProgress", error);
+  if (error) throw new Error("Could not sync exam progress.");
+}
+
+export function upsertMockExamProgress(input: Parameters<typeof persistMockExamProgress>[0]): Promise<void> {
+  return queueMockSave(input.examId, () => persistMockExamProgress(input));
 }
 
 export async function fetchInProgressMockSession(

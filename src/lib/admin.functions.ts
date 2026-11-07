@@ -552,14 +552,15 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
     const rows: {
       id: string; user_id: string; exam_id: string; exam_title: string;
       points_earned: number; points_total: number; seconds_taken: number | null;
-      completed_at: string | null; answers: unknown;
+      completed_at: string | null; answers: unknown; timed: boolean;
     }[] = [];
-    for (let from = 0; from < 20000; from += 1000) {
+    for (let from = 0; ; from += 1000) {
       const { data, error } = await db
         .from("mock_attempts")
-        .select("id, user_id, exam_id, exam_title, points_earned, points_total, seconds_taken, completed_at, answers")
+        .select("id, user_id, exam_id, exam_title, points_earned, points_total, seconds_taken, completed_at, answers, timed")
         .or("status.eq.submitted,status.is.null")
         .order("completed_at", { ascending: false })
+        .order("id", { ascending: true })
         .range(from, from + 999);
       if (error) throw new Error(error.message);
       rows.push(...((data ?? []) as typeof rows));
@@ -579,7 +580,8 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
       let title = list[0]?.exam_title ?? examId;
       const custom = mockExams.parseCustomMockId(examId);
       if (custom) {
-        const { data } = await db.from("custom_mocks").select("title, questions").eq("id", custom).maybeSingle();
+        const { data, error } = await db.from("custom_mocks").select("title, questions").eq("id", custom).eq("user_id", list[0].user_id).maybeSingle();
+        if (error) throw new Error("Could not load custom exam papers.");
         if (data) {
           title = data.title;
           questions = Array.isArray(data.questions) ? (data.questions as unknown as typeof questions) : [];
@@ -592,6 +594,11 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
         } catch {
           questions = [];
         }
+      }
+      const snapshot = list.find((r) => r.answers && typeof r.answers === "object" &&
+        Array.isArray((r.answers as Record<string, unknown>).questions));
+      if (snapshot) {
+        questions = (snapshot.answers as { questions: typeof questions }).questions;
       }
       exams.push(
         buildAdminMockExamStats(
@@ -607,6 +614,9 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
             pointsTotal: Number(r.points_total),
             secondsTaken: r.seconds_taken,
             marks: extractMarksFromAnswers(r.answers),
+            timed: r.timed,
+            storedAnswers: r.answers && typeof r.answers === "object" && !Array.isArray(r.answers)
+              ? r.answers as AdminJsonValue : null,
           })),
         ),
       );
