@@ -280,9 +280,9 @@ export function Index() {
           </div>
         </section>
 
-        <WhyChooseUsSection />
+        <WhyChooseUsSection className="pb-4 sm:pb-6 lg:pb-6" />
 
-        <section className="bg-why-us-bg px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <section className="bg-why-us-bg px-4 pb-10 pt-0 sm:px-6 sm:pb-12 lg:px-8 lg:pb-14">
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-12">
             <div>
               <h2 className="font-display text-2xl font-semibold text-why-us-fg sm:text-3xl">
@@ -311,7 +311,7 @@ export function Index() {
         </section>
 
         {/* PARENTS — frank audit teaser (shared for BBE & WiSo) */}
-        <section className="relative bg-background px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <section className="relative bg-background px-4 pb-4 pt-8 sm:px-6 sm:pb-6 sm:pt-12 lg:px-8 lg:pb-6 lg:pt-14">
           <div className="mx-auto max-w-3xl">
             <div className="text-center">
               <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -370,7 +370,7 @@ export function Index() {
         </section>
 
         <div id="faq">
-          <FaqAccordion />
+          <FaqAccordion className="pt-6 sm:pt-8 lg:pt-8" />
         </div>
 
         <SiteFooter />

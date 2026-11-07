@@ -1,4 +1,5 @@
 import { SeoFaq } from "@/components/SeoFaq";
+import { cn } from "@/lib/utils";
 
 export const homepageFaqs = [
   {
@@ -87,9 +88,15 @@ export const wisoFaqs = [
   },
 ];
 
-function FaqSection({ items }: { items: typeof homepageFaqs }) {
+function FaqSection({
+  items,
+  className,
+}: {
+  items: typeof homepageFaqs;
+  className?: string;
+}) {
   return (
-    <section className="bg-ivory px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <section className={cn("bg-ivory px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20", className)}>
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center font-display text-[1.65rem] font-semibold leading-tight text-espresso sm:text-4xl">
           Frequently asked questions
@@ -106,8 +113,8 @@ function FaqSection({ items }: { items: typeof homepageFaqs }) {
   );
 }
 
-export function FaqAccordion() {
-  return <FaqSection items={homepageFaqs} />;
+export function FaqAccordion({ className }: { className?: string }) {
+  return <FaqSection items={homepageFaqs} className={className} />;
 }
 
 export function WisoFaqAccordion() {

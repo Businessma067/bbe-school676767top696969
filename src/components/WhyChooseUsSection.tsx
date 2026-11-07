@@ -68,9 +68,11 @@ const WISO_SUBTITLE =
 export function WhyChooseUsSection({
   track = "shared",
   subtitle,
+  className,
 }: {
   track?: "shared" | "wiso" | "bbe" | "hybrid";
   subtitle?: string;
+  className?: string;
 }) {
   const resolvedSubtitle =
     subtitle ?? (track === "wiso" ? WISO_SUBTITLE : DEFAULT_SUBTITLE);
@@ -82,6 +84,7 @@ export function WhyChooseUsSection({
       id="why-choose-us"
       className={cn(
         "relative overflow-hidden px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20",
+        className,
         tone === "wiso"
           ? "why-choose-us--wiso bg-why-us-bg"
           : tone === "hybrid"
