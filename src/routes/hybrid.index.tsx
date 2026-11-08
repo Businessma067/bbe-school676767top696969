@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
 import { CourseCallCalendar } from "@/components/CourseCallCalendar";
+import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -133,6 +134,10 @@ export function HybridLandingPage() {
               </LocalizedLink>
             </div>
             <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
+            </div>
+
+            <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
+              <CourseHighlightsSection track="hybrid" variant="landing" />
             </div>
           </div>
         </section>

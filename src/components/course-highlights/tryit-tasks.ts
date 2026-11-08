@@ -120,6 +120,12 @@ export function tryItTaskFor(
     if (subject === "german") return WISO_TASKS.german;
     return WISO_TASKS[subject];
   }
+  if (track === "hybrid") {
+    if (subject === "german") return WISO_TASKS.german;
+    if (subject === "economics") return BBE_TASKS.economics;
+    if (subject === "math") return BBE_TASKS.math;
+    return BBE_TASKS.english;
+  }
   if (subject === "german") return BBE_TASKS.english;
   return BBE_TASKS[subject];
 }
