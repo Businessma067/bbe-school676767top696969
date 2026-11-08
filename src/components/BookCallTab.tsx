@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { CalendarDays, Loader2, Lock } from "lucide-react";
 import {
   CalendlyInlineEmbed,
+  warmCalendlyConnections,
   type CalendlyPrefill,
   type CalendlyScheduledPayload,
 } from "@/components/CalendlyInlineEmbed";
@@ -23,8 +24,33 @@ function bookingDedupeKey(payload: CalendlyScheduledPayload, clientKey: string):
   return payload.eventUri || payload.inviteeUri || clientKey;
 }
 
+let cachedCallStatus: CallBookingStatus | null = null;
+let callStatusInflight: Promise<CallBookingStatus> | null = null;
+
+function fetchCallStatus(): Promise<CallBookingStatus> {
+  if (cachedCallStatus) return Promise.resolve(cachedCallStatus);
+  if (callStatusInflight) return callStatusInflight;
+  callStatusInflight = getCallBookingStatus()
+    .then((next) => {
+      cachedCallStatus = next;
+      return next;
+    })
+    .finally(() => {
+      callStatusInflight = null;
+    });
+  return callStatusInflight;
+}
+
+/** Prefetch allowance + warm Calendly while the user is still on another dashboard tab. */
+export function prefetchBookCallTab(): void {
+  warmCalendlyConnections();
+  void fetchCallStatus().catch((err) => {
+    console.error("BookCallTab: prefetch", err);
+  });
+}
+
 export function BookCallTab({ prefill }: BookCallTabProps) {
-  const [status, setStatus] = useState<CallBookingStatus | null>(null);
+  const [status, setStatus] = useState<CallBookingStatus | null>(() => cachedCallStatus);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [buying, setBuying] = useState(false);
   const [buyError, setBuyError] = useState<string | null>(null);
@@ -35,10 +61,11 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
   statusRef.current = status;
 
   useEffect(() => {
+    warmCalendlyConnections();
     let cancelled = false;
     void (async () => {
       try {
-        const next = await getCallBookingStatus();
+        const next = await fetchCallStatus();
         if (!cancelled) {
           setStatus(next);
           setLoadError(null);
@@ -70,13 +97,13 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
 
     // Optimistic decrement so remaining calls update immediately on booking.
     if (previous) {
-      setStatus(
-        computeCallBookingStatus({
-          ownsPaidCourse: previous.ownsPaidCourse,
-          bookingsUsed: previous.bookingsUsed + 1,
-          paidCredits: previous.paidCredits,
-        }),
-      );
+      const optimistic = computeCallBookingStatus({
+        ownsPaidCourse: previous.ownsPaidCourse,
+        bookingsUsed: previous.bookingsUsed + 1,
+        paidCredits: previous.paidCredits,
+      });
+      cachedCallStatus = optimistic;
+      setStatus(optimistic);
     }
 
     try {
@@ -88,8 +115,10 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
         },
       });
       if (result.status) {
+        cachedCallStatus = result.status;
         setStatus(result.status);
       } else if (previous && !result.ok) {
+        cachedCallStatus = previous;
         setStatus(previous);
       }
       if (!result.ok) {
@@ -100,7 +129,10 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
       setRecordNote("Your call is booked. See you then.");
     } catch (err) {
       console.error("BookCallTab: record", err);
-      if (previous) setStatus(previous);
+      if (previous) {
+        cachedCallStatus = previous;
+        setStatus(previous);
+      }
       recordedKeysRef.current.delete(dedupeKey);
       setRecordNote(
         "Call booked in Calendly, but we could not update your allowance. Contact support if this persists.",
@@ -130,17 +162,28 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
     }
   };
 
+  const priceLabel = MONOBANK_TEST_CHARGE.enabled
+    ? MONOBANK_TEST_CHARGE.label
+    : `€${ADDON_PRODUCTS["consultation-call"].priceEur}`;
+
   if (loadError) {
     return <p className="text-sm text-destructive">{loadError}</p>;
   }
 
   if (!status) {
-    return <p className="text-sm text-muted-foreground">Loading the booking calendar…</p>;
+    return (
+      <div className="space-y-6">
+        <div>
+          <h2 className="font-display text-xl font-bold tracking-tight">Book a call</h2>
+          <p className="mt-2 text-sm text-muted-foreground">Checking your call allowance…</p>
+        </div>
+        <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+          <div className="h-[760px] w-full animate-pulse bg-muted/40" aria-hidden />
+        </div>
+      </div>
+    );
   }
 
-  const priceLabel = MONOBANK_TEST_CHARGE.enabled
-    ? MONOBANK_TEST_CHARGE.label
-    : `€${ADDON_PRODUCTS["consultation-call"].priceEur}`;
   const locked = !status.canBook;
 
   return (
@@ -216,7 +259,7 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
             ) : null}
           </div>
         ) : (
-          <CalendlyInlineEmbed prefill={prefill} onEventScheduled={handleScheduled} />
+          <CalendlyInlineEmbed eager prefill={prefill} onEventScheduled={handleScheduled} />
         )}
       </div>
     </div>

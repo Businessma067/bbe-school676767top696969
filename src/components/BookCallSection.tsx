@@ -1,4 +1,5 @@
-import { CalendlyInlineEmbed } from "@/components/CalendlyInlineEmbed";
+import { useEffect } from "react";
+import { CalendlyInlineEmbed, warmCalendlyConnections } from "@/components/CalendlyInlineEmbed";
 import { cn } from "@/lib/utils";
 
 const DEFAULT_DESCRIPTION =
@@ -18,6 +19,10 @@ export function BookCallSection({
   headingLevel?: "h1" | "h2";
   className?: string;
 }) {
+  useEffect(() => {
+    warmCalendlyConnections();
+  }, []);
+
   const Heading = headingLevel;
   return (
     <section
