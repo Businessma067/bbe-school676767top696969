@@ -95,15 +95,6 @@ export function BbeLandingPage() {
                   </span>
                 </LocalizedLink>
                 <LocalizedLink
-                  to="/demo-mock"
-                  className="inline-flex flex-col items-center justify-center rounded-sm border border-exam-red bg-exam-red/10 px-6 py-3.5 text-sm font-semibold text-exam-red transition-colors hover:bg-exam-red/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-                >
-                  <span>Demo mock</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-exam-red/80">
-                    Free after sign-up
-                  </span>
-                </LocalizedLink>
-                <LocalizedLink
                   to="/products"
                   id="explore-courses"
                   className="inline-flex flex-col items-center justify-center rounded-sm border border-primary bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
