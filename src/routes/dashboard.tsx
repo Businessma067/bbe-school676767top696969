@@ -46,7 +46,7 @@ import {
   Layers,
   Lock,
 } from "lucide-react";
-import { BookCallTab } from "@/components/BookCallTab";
+import { BookCallTab, prefetchBookCallTab } from "@/components/BookCallTab";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import {
@@ -205,6 +205,8 @@ function DashboardPage() {
       void settle(fetchMockAttempts(), setMocks, []);
       void settle(fetchSessionAnswerStats(), setSessionAnswers, []);
       void settle(fetchAllCustomMockSummaries(), setCustomMocks, []);
+      // Warm Calendly + call allowance so the Book tab paints quickly.
+      prefetchBookCallTab();
     })();
     return () => {
       cancelled = true;

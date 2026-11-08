@@ -6,6 +6,47 @@ import { CALENDLY_BOOKING_URL } from "@/components/CalendlyInlineEmbed";
 import { getCallMonth, type CallDay } from "@/lib/call-availability.functions";
 import { cn } from "@/lib/utils";
 
+type MonthResult = { ok: true; days: CallDay[] } | { ok: false; days: [] };
+
+const CLIENT_MONTH_TTL_MS = 5 * 60 * 1000;
+const monthInflight = new Map<string, Promise<MonthResult>>();
+const monthCache = new Map<string, { at: number; result: MonthResult }>();
+
+function peekCachedMonth(month: string): MonthResult | null {
+  const cached = monthCache.get(month);
+  if (!cached) return null;
+  if (Date.now() - cached.at > CLIENT_MONTH_TTL_MS) {
+    monthCache.delete(month);
+    return null;
+  }
+  return cached.result;
+}
+
+function loadCallMonth(month: string): Promise<MonthResult> {
+  const cached = peekCachedMonth(month);
+  if (cached) return Promise.resolve(cached);
+  const existing = monthInflight.get(month);
+  if (existing) return existing;
+  const request = getCallMonth({ data: { month } })
+    .then((result) => {
+      monthCache.set(month, { at: Date.now(), result });
+      return result;
+    })
+    .finally(() => {
+      monthInflight.delete(month);
+    });
+  monthInflight.set(month, request);
+  return request;
+}
+
+/** Start the availability fetch before the interactive calendar hydrates. */
+export function prefetchCallMonth(month?: string): void {
+  const target = month ?? viennaToday().slice(0, 7);
+  void loadCallMonth(target).catch(() => {
+    /* live UI handles errors */
+  });
+}
+
 const TIMEZONE = "Europe/Vienna";
 const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
 const MONTHS = [
@@ -145,37 +186,56 @@ function monthCells(month: string): { date: string | null; day: number | null }[
   return cells;
 }
 
+function applyMonthResult(
+  result: MonthResult,
+  selectedDate: string | null,
+): {
+  days: CallDay[];
+  status: "ready" | "error";
+  selectedDate: string | null;
+  selectedSpot: string | null;
+} {
+  if (!result.ok) {
+    return { days: [], status: "error", selectedDate: null, selectedSpot: null };
+  }
+  const nextDate =
+    selectedDate && result.days.some((day) => day.date === selectedDate)
+      ? selectedDate
+      : (result.days[0]?.date ?? null);
+  return {
+    days: result.days,
+    status: "ready",
+    selectedDate: nextDate,
+    selectedSpot: result.days.find((day) => day.date === nextDate)?.spots[0] ?? null,
+  };
+}
+
 function CourseCallCalendarLive() {
   const today = viennaToday();
   const currentMonth = today.slice(0, 7);
+  const cached = peekCachedMonth(currentMonth);
+  const initial = cached ? applyMonthResult(cached, null) : null;
   const [month, setMonth] = useState(currentMonth);
-  const [days, setDays] = useState<CallDay[]>([]);
-  const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
-  const [selectedSpot, setSelectedSpot] = useState<string | null>(null);
+  const [days, setDays] = useState<CallDay[]>(initial?.days ?? []);
+  const [status, setStatus] = useState<"loading" | "ready" | "error">(initial?.status ?? "loading");
+  const [selectedDate, setSelectedDate] = useState<string | null>(initial?.selectedDate ?? null);
+  const [selectedSpot, setSelectedSpot] = useState<string | null>(initial?.selectedSpot ?? null);
   const selectedDateRef = useRef(selectedDate);
   selectedDateRef.current = selectedDate;
 
   useEffect(() => {
     let cancelled = false;
-    setStatus("loading");
-    getCallMonth({ data: { month } })
+    if (!peekCachedMonth(month)) setStatus("loading");
+    loadCallMonth(month)
       .then((result) => {
         if (cancelled) return;
-        if (!result.ok) {
-          setDays([]);
-          setStatus("error");
-          return;
-        }
-        const current = selectedDateRef.current;
-        const nextDate =
-          current && result.days.some((day) => day.date === current)
-            ? current
-            : (result.days[0]?.date ?? null);
-        setDays(result.days);
-        setStatus("ready");
-        setSelectedDate(nextDate);
-        setSelectedSpot(result.days.find((day) => day.date === nextDate)?.spots[0] ?? null);
+        const next = applyMonthResult(result, selectedDateRef.current);
+        setDays(next.days);
+        setStatus(next.status);
+        setSelectedDate(next.selectedDate);
+        setSelectedSpot(next.selectedSpot);
+        // Warm the neighboring month while the user is picking a day.
+        if (result.ok) prefetchCallMonth(shiftMonth(month, 1));
       })
       .catch(() => {
         if (!cancelled) {
@@ -299,6 +359,11 @@ function CalendarSkeleton() {
 
 /** Site-styled 20-minute call picker. Availability is live; confirmation opens the reserved slot. */
 export function CourseCallCalendar({ className }: { className?: string }) {
+  // Kick off the availability fetch during the outer shell render — do not wait for ClientOnly.
+  useEffect(() => {
+    prefetchCallMonth();
+  }, []);
+
   return (
     <section
       id="book"

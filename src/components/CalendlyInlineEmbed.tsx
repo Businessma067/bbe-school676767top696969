@@ -2,21 +2,12 @@ import { ClientOnly } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
-const CALENDLY_SCRIPT_SRC = "https://assets.calendly.com/assets/external/widget.js";
 export const CALENDLY_BOOKING_URL = "https://calendly.com/bbe-school-info/30min";
 
-declare global {
-  interface Window {
-    Calendly?: {
-      initInlineWidget: (options: {
-        url: string;
-        parentElement: HTMLElement;
-        prefill?: Record<string, unknown>;
-        utm?: Record<string, unknown>;
-      }) => void;
-    };
-  }
-}
+const CALENDLY_ORIGINS = ["https://calendly.com", "https://assets.calendly.com"] as const;
+/** Start the iframe a bit before the section enters the viewport. */
+const LOAD_ROOT_MARGIN = "480px 0px";
+const DEFAULT_HEIGHT = 760;
 
 export type CalendlyPrefill = {
   name?: string;
@@ -28,34 +19,29 @@ export type CalendlyScheduledPayload = {
   inviteeUri?: string;
 };
 
-function loadCalendlyScript(): Promise<void> {
-  if (typeof window === "undefined") return Promise.resolve();
-  if (window.Calendly) return Promise.resolve();
-
-  const existing = document.querySelector<HTMLScriptElement>(
-    `script[src="${CALENDLY_SCRIPT_SRC}"]`,
-  );
-  if (existing) {
-    return new Promise((resolve, reject) => {
-      if (window.Calendly) {
-        resolve();
-        return;
-      }
-      existing.addEventListener("load", () => resolve(), { once: true });
-      existing.addEventListener("error", () => reject(new Error("Calendly script failed")), {
-        once: true,
-      });
-    });
+/** DNS/TLS warm-up so the iframe can appear sooner once it mounts. */
+export function warmCalendlyConnections(): void {
+  if (typeof document === "undefined") return;
+  for (const href of CALENDLY_ORIGINS) {
+    if (document.querySelector(`link[data-calendly-warm][href="${href}"]`)) continue;
+    const link = document.createElement("link");
+    link.rel = "preconnect";
+    link.href = href;
+    link.setAttribute("data-calendly-warm", "1");
+    document.head.appendChild(link);
   }
+}
 
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = CALENDLY_SCRIPT_SRC;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("Calendly script failed"));
-    document.head.appendChild(script);
-  });
+function buildCalendlyEmbedSrc(url: string, prefill?: CalendlyPrefill): string {
+  const parsed = new URL(url);
+  parsed.searchParams.set("hide_gdpr_banner", "1");
+  parsed.searchParams.set("embed_type", "Inline");
+  if (typeof window !== "undefined" && window.location.hostname) {
+    parsed.searchParams.set("embed_domain", window.location.hostname);
+  }
+  if (prefill?.name) parsed.searchParams.set("name", prefill.name);
+  if (prefill?.email) parsed.searchParams.set("email", prefill.email);
+  return parsed.toString();
 }
 
 function isCalendlyOrigin(origin: string): boolean {
@@ -110,63 +96,80 @@ export function parseScheduledPayload(data: unknown): CalendlyScheduledPayload |
   };
 }
 
+function parsePageHeight(data: unknown): number | null {
+  const root = coerceMessageData(data);
+  if (!root || typeof root !== "object") return null;
+  if ((root as { event?: unknown }).event !== "calendly.page_height") return null;
+  const payload = (root as { payload?: unknown }).payload;
+  if (!payload || typeof payload !== "object") return null;
+  const height = (payload as { height?: unknown }).height;
+  if (typeof height === "number" && Number.isFinite(height) && height > 0) return height;
+  if (typeof height === "string") {
+    const n = Number.parseFloat(height);
+    return Number.isFinite(n) && n > 0 ? n : null;
+  }
+  return null;
+}
+
 function CalendlyInlineWidget({
   url = CALENDLY_BOOKING_URL,
   className,
   prefill,
   onEventScheduled,
+  eager = false,
 }: {
   url?: string;
   className?: string;
   prefill?: CalendlyPrefill;
   onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
+  eager?: boolean;
 }) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const hostRef = useRef<HTMLDivElement>(null);
   const onScheduledRef = useRef(onEventScheduled);
   onScheduledRef.current = onEventScheduled;
   const seenKeysRef = useRef(new Set<string>());
+
+  const [shouldLoad, setShouldLoad] = useState(eager);
+  const [iframeHeight, setIframeHeight] = useState(DEFAULT_HEIGHT);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    const parent = containerRef.current;
-    if (!parent) return;
+    warmCalendlyConnections();
+    if (eager || shouldLoad) return;
+    const el = hostRef.current;
+    if (!el) return;
 
-    let cancelled = false;
-    parent.replaceChildren();
+    if (typeof IntersectionObserver === "undefined") {
+      setShouldLoad(true);
+      return;
+    }
 
-    loadCalendlyScript()
-      .then(() => {
-        if (cancelled || !containerRef.current || !window.Calendly) return;
-        window.Calendly.initInlineWidget({
-          url: `${url}${url.includes("?") ? "&" : "?"}hide_gdpr_banner=1`,
-          parentElement: containerRef.current,
-          ...(prefill?.name || prefill?.email
-            ? {
-                prefill: {
-                  ...(prefill.name ? { name: prefill.name } : {}),
-                  ...(prefill.email ? { email: prefill.email } : {}),
-                },
-              }
-            : {}),
-        });
-      })
-      .catch(() => {
-        if (!cancelled) setFailed(true);
-      });
-
-    return () => {
-      cancelled = true;
-      parent.replaceChildren();
-    };
-  }, [url, prefill?.name, prefill?.email]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { root: null, rootMargin: LOAD_ROOT_MARGIN, threshold: 0 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [eager, shouldLoad]);
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
       if (!isCalendlyOrigin(event.origin)) return;
+
+      const height = parsePageHeight(event.data);
+      if (height != null) {
+        setIframeHeight(Math.max(560, Math.ceil(height)));
+        return;
+      }
+
       const scheduled = parseScheduledPayload(event.data);
       if (!scheduled) return;
 
-      // Deduplicate duplicate postMessage deliveries for the same booking.
       const key =
         scheduled.eventUri ||
         scheduled.inviteeUri ||
@@ -202,28 +205,45 @@ function CalendlyInlineWidget({
 
   return (
     <div
-      ref={containerRef}
+      ref={hostRef}
       data-no-i18n
-      // Not `calendly-inline-widget`: widget.js auto-processes that class on load,
-      // throws without a data-url, and never defines window.Calendly.
       data-auto-load="false"
-      className={cn("bbe-calendly-embed h-[760px] w-full overflow-hidden", className)}
-      style={{ minWidth: 320 }}
-    />
+      className={cn("bbe-calendly-embed w-full overflow-hidden", className)}
+      style={{ minHeight: iframeHeight, minWidth: 320 }}
+    >
+      {shouldLoad ? (
+        <iframe
+          title="Book a call"
+          src={buildCalendlyEmbedSrc(url, prefill)}
+          className="block w-full border-0"
+          style={{ height: iframeHeight, minWidth: 320 }}
+          loading={eager ? "eager" : "lazy"}
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <div
+          className="h-full w-full animate-pulse rounded-xl bg-muted/40"
+          style={{ minHeight: DEFAULT_HEIGHT }}
+          aria-hidden
+        />
+      )}
+    </div>
   );
 }
 
-/** Inline Calendly scheduler — mounts only after hydration (script + iframe). */
+/** Inline Calendly scheduler — mounts after hydration; iframe loads near viewport. */
 export function CalendlyInlineEmbed({
   url = CALENDLY_BOOKING_URL,
   className,
   prefill,
   onEventScheduled,
+  eager = false,
 }: {
   url?: string;
   className?: string;
   prefill?: CalendlyPrefill;
   onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
+  eager?: boolean;
 }) {
   return (
     <ClientOnly
@@ -239,6 +259,7 @@ export function CalendlyInlineEmbed({
         className={className}
         prefill={prefill}
         onEventScheduled={onEventScheduled}
+        eager={eager}
       />
     </ClientOnly>
   );
