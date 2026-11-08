@@ -121,15 +121,6 @@ export function WisoLandingPage() {
                   </span>
                 </LocalizedLink>
                 <LocalizedLink
-                  to={WISO_PRACTICE_ROUTES.demoMock}
-                  className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
-                >
-                  <span>Demo-Probeprüfung</span>
-                  <span className="mt-0.5 text-[11px] font-medium opacity-70">
-                    Kostenlos nach Anmeldung
-                  </span>
-                </LocalizedLink>
-                <LocalizedLink
                   to={WISO_PRACTICE_ROUTES.products}
                   className="inline-flex min-h-12 flex-col items-center justify-center rounded-sm border border-indigo-900 bg-indigo-950 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:border-indigo-400 dark:bg-indigo-900"
                 >
