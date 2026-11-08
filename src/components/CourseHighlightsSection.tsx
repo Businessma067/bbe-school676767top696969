@@ -36,7 +36,7 @@ export function CourseHighlightsSection({
 }: Props) {
   const bullets = courseHighlightBullets(track);
   const subjects = courseHighlightSubjects(track);
-  const accent = track === "wiso" ? "wiso" : "bbe";
+  const accent = track === "wiso" ? "wiso" : track === "hybrid" ? "hybrid" : "bbe";
   const [subject, setSubject] = useState<CourseHighlightSubject>(subjects[0]!.id);
 
   return (
@@ -45,16 +45,24 @@ export function CourseHighlightsSection({
       aria-labelledby="course-highlights-heading"
     >
       <h2 id="course-highlights-heading" className="sr-only">
-        {track === "wiso" ? "What you get in the WiSo course" : "What you get in the BBE course"}
+        {track === "wiso"
+          ? "What you get in the WiSo course"
+          : track === "hybrid"
+            ? "What you get in the Hybrid course"
+            : "What you get in the BBE course"}
       </h2>
 
-      <ul className="grid grid-cols-1 gap-5 text-foreground sm:grid-cols-3 sm:gap-6 sm:text-center">
+      <ul className="grid grid-cols-1 gap-5 text-foreground sm:grid-cols-2 sm:gap-6 sm:text-center lg:grid-cols-4">
         {bullets.map((bullet) => (
           <li key={bullet} className="flex flex-col items-start gap-2.5 sm:items-center">
             <span
               className={cn(
                 "h-3 w-3 shrink-0 rounded-full",
-                accent === "wiso" ? "bg-indigo-700" : "bg-[var(--exam-red)]",
+                accent === "wiso"
+                  ? "bg-indigo-700"
+                  : accent === "hybrid"
+                    ? "bg-teal-700"
+                    : "bg-[var(--exam-red)]",
               )}
               aria-hidden
             />
@@ -89,7 +97,7 @@ function TryItQuestionBox({
   subject: CourseHighlightSubject;
   subjects: { id: CourseHighlightSubject; label: string }[];
   onSubjectChange: (subject: CourseHighlightSubject) => void;
-  accent: "bbe" | "wiso";
+  accent: "bbe" | "wiso" | "hybrid";
 }) {
   const task = tryItTaskFor(track, subject);
   const [marked, setMarked] = useState<boolean[]>(() => task.statements.map(() => false));
@@ -138,7 +146,11 @@ function TryItQuestionBox({
     <div
       className={cn(
         "overflow-hidden rounded-sm border bg-card text-left shadow-sm",
-        accent === "wiso" ? "border-indigo-200/80 dark:border-indigo-900/60" : "border-border",
+        accent === "wiso"
+          ? "border-indigo-200/80 dark:border-indigo-900/60"
+          : accent === "hybrid"
+            ? "border-teal-200/80 dark:border-teal-900/60"
+            : "border-border",
       )}
     >
       <div
@@ -146,7 +158,9 @@ function TryItQuestionBox({
           "flex flex-wrap items-center justify-between gap-3 border-b px-4 py-3 sm:px-5",
           accent === "wiso"
             ? "border-indigo-200/80 bg-indigo-50/50 dark:border-indigo-900/60 dark:bg-indigo-950/30"
-            : "border-border bg-secondary/40",
+            : accent === "hybrid"
+              ? "border-teal-200/80 bg-teal-50/50 dark:border-teal-900/60 dark:bg-teal-950/30"
+              : "border-border bg-secondary/40",
         )}
       >
         <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -167,7 +181,9 @@ function TryItQuestionBox({
                   active
                     ? accent === "wiso"
                       ? "border-indigo-700 bg-indigo-700 text-white"
-                      : "border-[var(--exam-red)] bg-[var(--exam-red)] text-white"
+                      : accent === "hybrid"
+                        ? "border-teal-700 bg-teal-700 text-white"
+                        : "border-[var(--exam-red)] bg-[var(--exam-red)] text-white"
                     : "border-border bg-background text-foreground hover:bg-secondary",
                 )}
               >
@@ -191,7 +207,9 @@ function TryItQuestionBox({
                 "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
                 accent === "wiso"
                   ? "bg-indigo-700/15 text-indigo-900 dark:text-indigo-200"
-                  : "bg-primary/15 text-primary",
+                  : accent === "hybrid"
+                    ? "bg-teal-700/15 text-teal-900 dark:text-teal-200"
+                    : "bg-primary/15 text-primary",
               )}
             >
               Task 1
@@ -336,7 +354,7 @@ function ExplanationPanel({
     trueWord: string;
     falseWord: string;
   };
-  accent: "bbe" | "wiso";
+  accent: "bbe" | "wiso" | "hybrid";
 }) {
   const overview = task.overview ? cleanCompleteExplanation(task.overview, !!task.math) : "";
 
@@ -345,7 +363,11 @@ function ExplanationPanel({
       <p
         className={cn(
           "mb-2.5 text-[10px] font-bold uppercase tracking-widest",
-          accent === "wiso" ? "text-indigo-700 dark:text-indigo-300" : "text-primary",
+          accent === "wiso"
+            ? "text-indigo-700 dark:text-indigo-300"
+            : accent === "hybrid"
+              ? "text-teal-700 dark:text-teal-300"
+              : "text-primary",
         )}
       >
         {chrome.sheetTitle} · Task 1
