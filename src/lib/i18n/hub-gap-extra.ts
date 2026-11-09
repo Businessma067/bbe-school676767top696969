@@ -22,6 +22,11 @@ export const hubGapExtraDe: Record<string, string> = {
   "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien":
     "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien",
   "Until the 2027 BBE exam · 7 July": "Bis zur BBE-Prüfung 2027 · 7. Juli",
+  "Until the BBE exam · 7 July": "Bis zur BBE-Prüfung · 7. Juli",
+  "Until the WiSo exam · 6 July, 10:00": "Bis zur WiSo-Prüfung · 6. Juli, 10:00",
+  "VIECON, Messe Wien": "VIECON, Messe Wien",
+  "WiSo is 6 July, 10:00 · VIECON, Messe Wien": "WiSo ist am 6. Juli, 10:00 · VIECON, Messe Wien",
+  "BBE is 7 July · VIECON, Messe Wien": "BBE ist am 7. Juli · VIECON, Messe Wien",
   "Until the 2027 BBE exam · 30 June": "Bis zur BBE-Prüfung 2027 · 30. Juni",
   "Academic year": "Studienjahr",
   "OSA window": "OSA-Zeitfenster",
@@ -135,6 +140,11 @@ export const hubGapExtraUk: Record<string, string> = {
   "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien":
     "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien",
   "Until the 2027 BBE exam · 7 July": "До іспиту BBE 2027 · 7 липня",
+  "Until the BBE exam · 7 July": "До іспиту BBE · 7 липня",
+  "Until the WiSo exam · 6 July, 10:00": "До іспиту WiSo · 6 липня, 10:00",
+  "VIECON, Messe Wien": "VIECON, Messe Wien",
+  "WiSo is 6 July, 10:00 · VIECON, Messe Wien": "WiSo 6 липня, 10:00 · VIECON, Messe Wien",
+  "BBE is 7 July · VIECON, Messe Wien": "BBE 7 липня · VIECON, Messe Wien",
   "Until the 2027 BBE exam · 30 June": "До іспиту BBE 2027 · 30 червня",
   "Academic year": "Навчальний рік",
   "OSA window": "Вікно OSA",

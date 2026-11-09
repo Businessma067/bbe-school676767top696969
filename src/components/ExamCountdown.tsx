@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import { ClientOnly, ScriptOnce, useRouterState } from "@tanstack/react-router";
 
 import { cn } from "@/lib/utils";
-import { isWisoPath } from "@/lib/exam-track";
+import { isHybridPath, isWisoPath } from "@/lib/exam-track";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
-/** Next BBE entrance exam — 7 July 2027 (Vienna). Session clock time is announced by WU with the invitation. */
-const EXAM_AT_MS = new Date("2027-07-07T00:00:00+02:00").getTime();
+/** WiSo: 6 July 2027, 10:00–12:00. BBE: 7 July 2027; WU has not published the clock time. Both at VIECON. */
+const WISO_EXAM_AT_MS = new Date("2027-07-06T10:00:00+02:00").getTime();
+const BBE_EXAM_AT_MS = new Date("2027-07-07T00:00:00+02:00").getTime();
+
+type ExamKind = "bbe" | "wiso" | "home" | "hybrid";
 
 type Remaining = {
   days: number;
@@ -15,8 +19,19 @@ type Remaining = {
   done: boolean;
 };
 
-function getRemaining(nowMs: number = Date.now()): Remaining {
-  const ms = EXAM_AT_MS - nowMs;
+function examKind(pathname: string): ExamKind {
+  if (isWisoPath(pathname)) return "wiso";
+  if (isHybridPath(pathname)) return "hybrid";
+  if (stripLocalePrefix(pathname) === "/") return "home";
+  return "bbe";
+}
+
+function examAtFor(kind: ExamKind): number {
+  return kind === "wiso" || kind === "hybrid" ? WISO_EXAM_AT_MS : BBE_EXAM_AT_MS;
+}
+
+function getRemaining(examAt: number, nowMs: number = Date.now()): Remaining {
+  const ms = examAt - nowMs;
   if (ms <= 0) {
     return { days: 0, hours: 0, minutes: 0, seconds: 0, done: true };
   }
@@ -47,12 +62,12 @@ function CountdownView({
   remaining,
   className,
   placeholder = false,
-  track = "bbe",
+  kind = "bbe",
 }: {
   remaining: Remaining;
   className?: string;
   placeholder?: boolean;
-  track?: "bbe" | "wiso";
+  kind?: ExamKind;
 }) {
   const units: { key: string; value: string; label: string }[] = [
     {
@@ -77,12 +92,21 @@ function CountdownView({
     },
   ];
 
-  const examName = track === "wiso" ? "WiSo" : "BBE";
+  const examAt = examAtFor(kind);
   const untilLabel =
-    track === "wiso"
-      ? "Until the 2027 WiSo exam · 30 June"
-      : "Until the 2027 BBE exam · 7 July";
-  const ariaCountdown = `Countdown to the 2027 ${examName} exam`;
+    kind === "wiso" || kind === "hybrid"
+      ? "Until the WiSo exam · 6 July, 10:00"
+      : "Until the BBE exam · 7 July";
+  const placeLine =
+    kind === "hybrid"
+      ? "BBE is 7 July · VIECON, Messe Wien"
+      : kind === "home"
+        ? "WiSo is 6 July, 10:00 · VIECON, Messe Wien"
+        : "VIECON, Messe Wien";
+  const ariaCountdown =
+    kind === "wiso" || kind === "hybrid"
+      ? "Countdown to the 2027 WiSo exam"
+      : "Countdown to the 2027 BBE exam";
 
   return (
     <div
@@ -90,7 +114,7 @@ function CountdownView({
       role="timer"
       aria-live="off"
       data-exam-countdown=""
-      data-exam-at={String(EXAM_AT_MS)}
+      data-exam-at={String(examAt)}
       aria-label={
         placeholder
           ? ariaCountdown
@@ -127,6 +151,7 @@ function CountdownView({
           </div>
         ))}
       </div>
+      <p className="text-[11px] font-medium tracking-wide text-taupe">{placeLine}</p>
     </div>
   );
 }
@@ -137,29 +162,29 @@ function CountdownView({
  */
 function ExamCountdownLive({ className }: { className?: string }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const track = isWisoPath(pathname) ? "wiso" : "bbe";
-  const [remaining, setRemaining] = useState<Remaining>(() => getRemaining());
+  const kind = examKind(pathname);
+  const examAt = examAtFor(kind);
+  const [remaining, setRemaining] = useState<Remaining>(() => getRemaining(examAt));
 
   useEffect(() => {
-    setRemaining(getRemaining());
+    setRemaining(getRemaining(examAt));
     const id = window.setInterval(() => {
-      setRemaining(getRemaining());
+      setRemaining(getRemaining(examAt));
     }, 1000);
     return () => window.clearInterval(id);
-  }, []);
+  }, [examAt]);
 
-  return <CountdownView remaining={remaining} className={className} track={track} />;
+  return <CountdownView remaining={remaining} className={className} kind={kind} />;
 }
 
 function ExamCountdownFallback({ className }: { className?: string }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const track = isWisoPath(pathname) ? "wiso" : "bbe";
   return (
     <CountdownView
       remaining={PLACEHOLDER}
       className={className}
       placeholder
-      track={track}
+      kind={examKind(pathname)}
     />
   );
 }
@@ -171,12 +196,13 @@ function ExamCountdownFallback({ className }: { className?: string }) {
 const POST_HYDRATION_TICK = `(function(){
   if(window.__bbeExamTick)return;
   window.__bbeExamTick=1;
-  var EXAM=${EXAM_AT_MS};
   function pad(n){return String(n).padStart(2,"0");}
   function tick(){
     var root=document.querySelector("[data-exam-countdown]");
     if(!root)return;
-    var ms=EXAM-Date.now();
+    var exam=Number(root.getAttribute("data-exam-at"));
+    if(!exam)return;
+    var ms=exam-Date.now();
     if(ms<0)ms=0;
     var s=Math.floor(ms/1000);
     var map={days:String(Math.floor(s/86400)),hours:pad(Math.floor((s%86400)/3600)),min:pad(Math.floor((s%3600)/60)),sec:pad(s%60)};

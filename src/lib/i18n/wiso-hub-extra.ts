@@ -446,6 +446,8 @@ export const wisoHubExtraDe: Record<string, string> = {
   "Understand scoring first": "Zuerst die Bewertung verstehen",
   "Unofficial guide": "Inoffizieller Leitfaden",
   "Until the 2027 WiSo exam · 30 June": "Bis zur WiSo-Prüfung 2027 · 30. Juni",
+  "2 hours. The 2027 sitting is July 6, 2027, 10:00–12:00 CEST at VIECON, Vienna Congress and Convention Center (Messe Wien).":
+    "2 Stunden. Der Termin 2027 ist der 6. Juli 2027, 10:00–12:00 MESZ im VIECON, Vienna Congress and Convention Center (Messe Wien).",
   "Using only BBE English packs because “math is the same.”": "Nur BBE-Englisch-Pakete nutzen, weil „Mathe ist dasselbe.“",
   "vs BBE": "vs BBE",
   "vs ~240). The filter is still a timed multiple-choice exam with gemischtes Teilpunktesystem scoring, held in person at VIECON when demand exceeds supply.": "gegenüber ~240). Der Filter bleibt eine timed Multiple-Choice-Prüfung mit gemischtem Teilpunktesystem, vor Ort bei VIECON, wenn die Nachfrage das Angebot übersteigt.",
@@ -1141,6 +1143,8 @@ export const wisoHubExtraUk: Record<string, string> = {
   "Understand scoring first": "Спочатку зрозумій систему оцінювання",
   "Unofficial guide": "Неофіційний гід",
   "Until the 2027 WiSo exam · 30 June": "До іспиту WiSo 2027 · 30 червня",
+  "2 hours. The 2027 sitting is July 6, 2027, 10:00–12:00 CEST at VIECON, Vienna Congress and Convention Center (Messe Wien).":
+    "2 години. Іспит 2027 — 6 липня 2027, 10:00–12:00 CEST у VIECON, Vienna Congress and Convention Center (Messe Wien).",
   "Using only BBE English packs because “math is the same.”": "Використовувати лише англійські пакети BBE, бо «математика та сама».",
   "vs BBE": "vs BBE",
   "vs ~240). The filter is still a timed multiple-choice exam with gemischtes Teilpunktesystem scoring, held in person at VIECON when demand exceeds supply.": "проти ~240). Фільтр усе одно, timed multiple-choice іспит з gemischtes Teilpunktesystem, очно у VIECON, коли попит перевищує пропозицію.",

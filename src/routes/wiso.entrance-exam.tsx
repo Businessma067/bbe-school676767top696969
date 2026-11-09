@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     question: "How long is the WiSo exam?",
-    answer: `2 hours. The 2026 cycle is scheduled for ${WISO_EXAM_FORMAT.cycle.examDate} at ${WISO_EXAM_FORMAT.location}.`,
+    answer: `2 hours. The 2027 sitting is ${WISO_EXAM_FORMAT.cycle.examDate} at ${WISO_EXAM_FORMAT.location}.`,
   },
   {
     question: "How many questions are on the WiSo exam?",

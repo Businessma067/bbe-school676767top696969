@@ -87,10 +87,10 @@ export const WISO_EXAM_FORMAT = {
   places: 2703,
   location: "VIECON, Vienna Congress and Convention Center (Messe Wien)",
   cycle: {
-    lastUpdated: "September 15, 2026",
+    lastUpdated: "November 9, 2026",
     /** Same date as `lastUpdated`, for schema.org dateModified and sitemap lastmod. */
-    lastUpdatedIso: "2026-09-15",
-    examDate: "June 30, 2026, 10:00–12:00 CEST",
+    lastUpdatedIso: "2026-11-09",
+    examDate: "July 6, 2027, 10:00–12:00 CEST",
     registrationWindow: "March 2 – May 19, 2026",
     registrationFee: "€50 per programme (non-refundable)",
     osaDeadline: "May 28, 2026, 12:00 CEST",
