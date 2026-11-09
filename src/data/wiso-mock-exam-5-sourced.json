@@ -746,7 +746,7 @@
         "**D.** → Falsch\n\n$A_{s}(n)=S r/((1+r)^{n}-1)$ ist nicht proportional zu $1/n$. Mit $n=14$:\n$$\nA_{s}(14)=42000\\cdot\\dfrac{0{,}06}{1{,}06^{14}-1}\\approx 1947{,}6\\neq \\tfrac12 A_{s}(7)\\approx 2501{,}8.\n$$\nDie Halbierungsregel gilt nicht.\n\nDie Aussage ist falsch.",
         "**E.** → Richtig\n\nMit $u=(1+r)^{n}$:\n$$\n\\dfrac{r}{1-u^{-1}}-\\dfrac{r}{u-1}=r\\cdot\\dfrac{u}{u-1}-r\\cdot\\dfrac{1}{u-1}=r.\n$$\nMultiplikation mit $S$ liefert $A_{\\ell}=A_{s}+Sr$ unabhängig von $n$.\n\nDie Aussage ist richtig."
       ],
-      "solution_overview": "Mit $S=42000$, $r=0{,}06$, $u=1{,}06^{7}$:\n$$\nA_{s}=S\\cdot\\dfrac{r}{u-1}\\approx 5003{,}67,\\qquad\nA_{\\ell}=S\\cdot\\dfrac{r}{1-u^{-1}}\\approx 7523{,}67.\n$$\nAlgebraisch gilt stets\n$$\nA_{\\ell}-A_{s}=Sr=2520.\n$$\nNach der ersten Kreditrate: $B_{1}=S(1+r)-A_{\\ell}\\approx 36996{,}33$. Der Fonds steht nach der ersten Einzahlung nur bei $A_{s}\\approx 5003{,}67}$. Die Summe $A_{s}+A_{\\ell}$ ist kein Vielfaches von $S$.",
+      "solution_overview": "Mit $S=42000$, $r=0{,}06$, $u=1{,}06^{7}$:\n$$\nA_{s}=S\\cdot\\dfrac{r}{u-1}\\approx 5003{,}67,\\qquad\nA_{\\ell}=S\\cdot\\dfrac{r}{1-u^{-1}}\\approx 7523{,}67.\n$$\nAlgebraisch gilt stets\n$$\nA_{\\ell}-A_{s}=Sr=2520.\n$$\nNach der ersten Kreditrate: $B_{1}=S(1+r)-A_{\\ell}\\approx 36996{,}33$. Der Fonds steht nach der ersten Einzahlung nur bei $A_{s}\\approx 5003{,}67$. Die Summe $A_{s}+A_{\\ell}$ ist kein Vielfaches von $S$.",
       "figure": "",
       "tables_markdown": ""
     },
