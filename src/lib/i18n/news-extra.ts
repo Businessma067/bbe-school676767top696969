@@ -15,6 +15,11 @@ export const newsExtraDe: Record<string, string> = {
   "Latest posts from the BBE School creators.":
     "Die neuesten Beiträge der Macher von BBE School.",
 
+  "WU Vienna BBE Entrance Exam Date 2027: July 7 at VIECON — Selection Procedure 2027/2028":
+    "WU Wien BBE-Aufnahmeprüfung 2027: 7. Juli im VIECON — Auswahlverfahren 2027/2028",
+  "Official WU dates for the BBE selection procedure 2027/2028: registration March 1–May 24, OSA until June 2 noon CEST, in-person exam July 7 at VIECON (Messeplatz 1), admission July 12–September 5.":
+    "Offizielle WU-Termine für das BBE-Auswahlverfahren 2027/2028: Anmeldung 1. März–24. Mai, OSA bis 2. Juni mittags MESZ, Präsenzprüfung am 7. Juli im VIECON (Messeplatz 1), Zulassung 12. Juli–5. September.",
+
   "Welcome to BBE School News": "Willkommen bei den BBE-School-Neuigkeiten",
   "A simple place for product updates, exam notes, and short explanations from the team behind BBE School.":
     "Ein klarer Ort für Produkt-Updates, Prüfungshinweise und kurze Erklärungen vom Team hinter BBE School.",
@@ -88,6 +93,11 @@ export const newsExtraUk: Record<string, string> = {
     "Оновлення від творців BBE School: нотатки про продукт, поради щодо іспиту та закулісні пости.",
   "Latest posts from the BBE School creators.":
     "Останні пости творців BBE School.",
+
+  "WU Vienna BBE Entrance Exam Date 2027: July 7 at VIECON — Selection Procedure 2027/2028":
+    "Дата вступного іспиту BBE WU Відень 2027: 7 липня у VIECON — процедура відбору 2027/2028",
+  "Official WU dates for the BBE selection procedure 2027/2028: registration March 1–May 24, OSA until June 2 noon CEST, in-person exam July 7 at VIECON (Messeplatz 1), admission July 12–September 5.":
+    "Офіційні дати WU для процедури відбору BBE 2027/2028: реєстрація 1 березня–24 травня, OSA до 2 червня опівдні CEST, очний іспит 7 липня у VIECON (Messeplatz 1), вступ 12 липня–5 вересня.",
 
   "Welcome to BBE School News": "Ласкаво просимо до новин BBE School",
   "A simple place for product updates, exam notes, and short explanations from the team behind BBE School.":

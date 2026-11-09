@@ -6,15 +6,35 @@
  */
 
 export const hubGapExtraDe: Record<string, string> = {
-  // ---------- Cycle / dates (2027) ----------
+  // ---------- Cycle / dates (2027/2028) ----------
+  "November 9, 2026": "9. November 2026",
+  "Last updated: November 9, 2026": "Zuletzt aktualisiert: 9. November 2026",
   "September 6, 2026": "6. September 2026",
   "Last updated: September 6, 2026": "Zuletzt aktualisiert: 6. September 2026",
-  "June 30, 2027, 3:00 to 5:00 p.m. CEST": "30. Juni 2027, 15:00 bis 17:00 Uhr MESZ",
-  "March to May 2027 (exact window announced by WU)":
-    "März bis Mai 2027 (genaues Zeitfenster wird von der WU bekannt gegeben)",
-  "Announced with the 2027 registration window":
-    "Wird mit dem Anmeldezeitraum 2027 bekannt gegeben",
+  "July 7, 2027": "7. Juli 2027",
+  "March 1 – May 24, 2027": "1. März – 24. Mai 2027",
+  "March 1 – June 2, 2027": "1. März – 2. Juni 2027",
+  "June 2, 2027, 12:00 noon CEST": "2. Juni 2027, 12:00 mittags MESZ",
+  "July 12 – September 5, 2027": "12. Juli – 5. September 2027",
+  "Within two weeks of the exam": "Innerhalb von zwei Wochen nach der Prüfung",
+  "Study Service Center, WU Campus": "Study Service Center, WU Campus",
+  "September 2027 (WU Campus)": "September 2027 (WU Campus)",
+  "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien":
+    "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien",
+  "Until the 2027 BBE exam · 7 July": "Bis zur BBE-Prüfung 2027 · 7. Juli",
   "Until the 2027 BBE exam · 30 June": "Bis zur BBE-Prüfung 2027 · 30. Juni",
+  "Academic year": "Studienjahr",
+  "OSA window": "OSA-Zeitfenster",
+  "Exam results": "Prüfungsergebnisse",
+  "Admission / enrollment": "Zulassung / Einschreibung",
+  "Admission location": "Zulassungsort",
+  "BBE Welcome Days": "BBE Welcome Days",
+  "When is the WU Vienna BBE entrance exam in 2027?":
+    "Wann findet die WU-Wien-BBE-Aufnahmeprüfung 2027 statt?",
+  "When is the BBE OSA deadline for 2027?": "Wann ist die BBE-OSA-Frist für 2027?",
+  "WU Vienna BBE Admission 2027/2028: Requirements, OSA & Entrance Exam Dates":
+    "WU Wien BBE-Zulassung 2027/2028: Voraussetzungen, OSA & Prüfungstermine",
+  "Important dates for 2027/2028": "Wichtige Termine für 2027/2028",
 
   // ---------- Dynamic FAQ answers ----------
   "240 places are referenced in the BBE Entrance Exam Guide overview.":
@@ -99,15 +119,35 @@ export const hubGapExtraDe: Record<string, string> = {
 };
 
 export const hubGapExtraUk: Record<string, string> = {
-  // ---------- Cycle / dates (2027) ----------
+  // ---------- Cycle / dates (2027/2028) ----------
+  "November 9, 2026": "9 листопада 2026",
+  "Last updated: November 9, 2026": "Оновлено: 9 листопада 2026",
   "September 6, 2026": "6 вересня 2026",
   "Last updated: September 6, 2026": "Оновлено: 6 вересня 2026",
-  "June 30, 2027, 3:00 to 5:00 p.m. CEST": "30 червня 2027 р., з 15:00 до 17:00 за CEST",
-  "March to May 2027 (exact window announced by WU)":
-    "Березень–травень 2027 (точне вікно оголошує WU)",
-  "Announced with the 2027 registration window":
-    "Оголошується разом із періодом реєстрації 2027",
+  "July 7, 2027": "7 липня 2027",
+  "March 1 – May 24, 2027": "1 березня – 24 травня 2027",
+  "March 1 – June 2, 2027": "1 березня – 2 червня 2027",
+  "June 2, 2027, 12:00 noon CEST": "2 червня 2027, 12:00 полудень CEST",
+  "July 12 – September 5, 2027": "12 липня – 5 вересня 2027",
+  "Within two weeks of the exam": "Протягом двох тижнів після іспиту",
+  "Study Service Center, WU Campus": "Study Service Center, кампус WU",
+  "September 2027 (WU Campus)": "Вересень 2027 (кампус WU)",
+  "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien":
+    "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien",
+  "Until the 2027 BBE exam · 7 July": "До іспиту BBE 2027 · 7 липня",
   "Until the 2027 BBE exam · 30 June": "До іспиту BBE 2027 · 30 червня",
+  "Academic year": "Навчальний рік",
+  "OSA window": "Вікно OSA",
+  "Exam results": "Результати іспиту",
+  "Admission / enrollment": "Вступ / зарахування",
+  "Admission location": "Місце зарахування",
+  "BBE Welcome Days": "BBE Welcome Days",
+  "When is the WU Vienna BBE entrance exam in 2027?":
+    "Коли вступний іспит BBE WU Відень у 2027?",
+  "When is the BBE OSA deadline for 2027?": "Коли дедлайн OSA для BBE у 2027?",
+  "WU Vienna BBE Admission 2027/2028: Requirements, OSA & Entrance Exam Dates":
+    "Вступ BBE WU Відень 2027/2028: вимоги, OSA та дати іспиту",
+  "Important dates for 2027/2028": "Важливі дати на 2027/2028",
 
   // ---------- Dynamic FAQ answers ----------
   "240 places are referenced in the BBE Entrance Exam Guide overview.":

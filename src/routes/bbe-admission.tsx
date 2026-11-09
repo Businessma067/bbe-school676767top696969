@@ -9,7 +9,12 @@ import {
 } from "@/components/bbe-exam/BbeExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
-import { BBE_EXAM_FORMAT, BBE_FORMAT_NOTE, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
+import {
+  BBE_EXAM_FORMAT,
+  BBE_FORMAT_NOTE,
+  BBE_OFFICIAL_LINKS,
+  BBE_PRACTICE_ROUTES,
+} from "@/config/bbe-exam-hub";
 import { cn } from "@/lib/utils";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
@@ -18,26 +23,45 @@ export const Route = createFileRoute("/bbe-admission")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "WU Vienna BBE Admission 2027/2028: Dates, OSA & Entrance Exam",
+          description:
+            "Official WU Vienna BBE selection procedure dates for 2027/2028: registration March 1–May 24 2027, OSA until June 2 noon CEST, in-person exam July 7 2027 at VIECON.",
+          dateModified: BBE_EXAM_FORMAT.cycle.lastUpdatedIso,
+          datePublished: BBE_EXAM_FORMAT.cycle.lastUpdatedIso,
+          author: { "@type": "Organization", name: "BBE School" },
+          mainEntityOfPage: "https://bbe-school.com/bbe-admission",
+        }),
+      },
     ],
     links: [...hreflangLinks("/bbe-admission"), { rel: "canonical", href: "https://bbe-school.com/bbe-admission" }],
     meta: [
       {
         title:
-          "WU Vienna BBE Admission & Application: Requirements, OSA & Entrance Exam | BBE School",
+          "WU Vienna BBE Admission 2027/2028: Exam July 7, OSA & Registration Dates | BBE School",
       },
       {
         name: "description",
         content:
-          "How WU Vienna BBE admission works: application overview, registration, OSA, entrance exam, ranking and dates, with a reminder that administrative details can change.",
+          "WU Vienna BBE selection procedure 2027/2028: register March 1–May 24 2027, finish the ungraded OSA by June 2 noon CEST, sit the in-person exam July 7 at VIECON (Messeplatz 1), then enroll July 12–September 5.",
+      },
+      {
+        name: "keywords",
+        content:
+          "WU Vienna BBE admission 2027, BBE entrance exam July 7 2027, BBE OSA deadline, BBE selection procedure 2027/2028, VIECON Messeplatz, WU BBE registration",
       },
       {
         property: "og:title",
-        content: "WU Vienna BBE Admission & Application: Requirements, OSA & Entrance Exam",
+        content: "WU Vienna BBE Admission 2027/2028: Exam July 7, OSA & Registration Dates",
       },
       {
         property: "og:description",
         content:
-          "Registration, OSA, entrance exam and ranking for WU Vienna’s BBE programme: an independent overview.",
+          "Registration, OSA, July 7 VIECON exam, admission window and Welcome Days for WU Vienna’s BBE programme — independent overview of the official 2027/2028 timeline.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -49,6 +73,11 @@ export const Route = createFileRoute("/bbe-admission")({
 
 const faqs = [
   {
+    question: "When is the WU Vienna BBE entrance exam in 2027?",
+    answer:
+      `The in-person BBE entrance exam for the ${BBE_EXAM_FORMAT.cycle.academicYear} academic year is on ${BBE_EXAM_FORMAT.cycle.examDate} at ${BBE_EXAM_FORMAT.location}. Duration is ${BBE_EXAM_FORMAT.durationHours} hours. Results are announced ${BBE_EXAM_FORMAT.cycle.examResults.toLowerCase()}. Confirm the session clock time on your official invitation.`,
+  },
+  {
     question: "Is there an entrance exam every year?",
     answer:
       "The written entrance exam is part of the selection procedure when registrations exceed available places. Confirm the current cycle on the official WU website.",
@@ -56,6 +85,10 @@ const faqs = [
   {
     question: "Is the OSA graded?",
     answer: "No. The OSA is ungraded and does not enter the ranking based on written-exam performance.",
+  },
+  {
+    question: "When is the BBE OSA deadline for 2027?",
+    answer: `Complete the Online Self-Assessment by ${BBE_EXAM_FORMAT.cycle.osaDeadline}. The OSA window runs ${BBE_EXAM_FORMAT.cycle.osaWindow}.`,
   },
   {
     question: "How many places are available?",
@@ -72,13 +105,19 @@ const faqs = [
   },
 ];
 
-/** Time-sensitive fields — update yearly from official WU info via the exam guide source. */
+/** Time-sensitive fields — update yearly from official WU selection procedure. */
 const cycleDates: { field: string; detail: string }[] = [
+  { field: "Academic year", detail: BBE_EXAM_FORMAT.cycle.academicYear },
   { field: "Registration window", detail: BBE_EXAM_FORMAT.cycle.registrationWindow },
   { field: "Registration fee", detail: BBE_EXAM_FORMAT.cycle.registrationFee },
+  { field: "OSA window", detail: BBE_EXAM_FORMAT.cycle.osaWindow },
   { field: "OSA deadline", detail: BBE_EXAM_FORMAT.cycle.osaDeadline },
   { field: "Entrance exam", detail: BBE_EXAM_FORMAT.cycle.examDate },
   { field: "Exam location", detail: BBE_EXAM_FORMAT.location },
+  { field: "Exam results", detail: BBE_EXAM_FORMAT.cycle.examResults },
+  { field: "Admission / enrollment", detail: BBE_EXAM_FORMAT.cycle.admissionWindow },
+  { field: "Admission location", detail: BBE_EXAM_FORMAT.cycle.admissionLocation },
+  { field: "BBE Welcome Days", detail: BBE_EXAM_FORMAT.cycle.welcomeDays },
   { field: "Available places", detail: String(BBE_EXAM_FORMAT.places) },
   {
     field: "Approx. admission rate",
@@ -90,8 +129,8 @@ const cycleDates: { field: string; detail: string }[] = [
 export function BbeAdmissionPage() {
   return (
     <BbeExamShell
-      h1="WU Vienna BBE Admission & Application: Requirements, OSA & Entrance Exam"
-      lead="Application, registration, the OSA, and the entrance exam all fit into WU Vienna’s Bachelor in Business and Economics selection process. Here is how they connect, and which details change from one cycle to the next."
+      h1="WU Vienna BBE Admission 2027/2028: Requirements, OSA & Entrance Exam Dates"
+      lead="WU has published the official selection-procedure timeline for the Bachelor in Business and Economics academic year 2027/2028. Here is how registration, the OSA, the July 7 in-person exam, and enrollment connect — and which details you should still confirm on wu.ac.at."
       heroActions={
         <>
           <BbePrimaryButton to="/bbe-entrance-exam">Read the exam overview</BbePrimaryButton>
@@ -103,20 +142,43 @@ export function BbeAdmissionPage() {
         <BbeSection id="overview" title="Overview of the admission process">
           <p>
             WU Vienna’s English-taught Bachelor&apos;s Program in Business and Economics (BBE) admits for
-            the winter semester. When registrations exceed available places, selection includes a written,
-            in-person multiple-choice entrance exam. Applicants are ranked by written-exam performance for
-            the {BBE_EXAM_FORMAT.places} places described in the exam guide.
+            the winter semester of {BBE_EXAM_FORMAT.cycle.academicYear}. When registrations exceed available
+            places, selection includes a written, in-person multiple-choice entrance exam. Applicants are
+            ranked by written-exam performance for the {BBE_EXAM_FORMAT.places} places described in the exam
+            guide.
           </p>
           <ol className="list-decimal space-y-2 pl-5">
-            <li>Check eligibility and prepare required application materials via official WU channels.</li>
-            <li>Register within the published window and pay the fee if applicable.</li>
-            <li>Complete the OSA by the deadline (ungraded).</li>
-            <li>Sit the entrance exam if it forms part of that cycle’s selection procedure.</li>
-            <li>Await ranking / admission outcome based on written-exam performance.</li>
+            <li>
+              Register online from {BBE_EXAM_FORMAT.cycle.registrationWindow} and pay the registration fee.
+              Students in their last year of school may register before they receive their secondary-school
+              leaving certificate.
+            </li>
+            <li>
+              Complete the ungraded Online Self-Assessment (OSA) by {BBE_EXAM_FORMAT.cycle.osaDeadline}.
+            </li>
+            <li>
+              Sit the in-person entrance exam on {BBE_EXAM_FORMAT.cycle.examDate} at{" "}
+              {BBE_EXAM_FORMAT.location} ({BBE_EXAM_FORMAT.durationHours} hours).
+            </li>
+            <li>Await ranking / results ({BBE_EXAM_FORMAT.cycle.examResults.toLowerCase()}).</li>
+            <li>
+              If you receive an offer, enroll at the Study Service Center during{" "}
+              {BBE_EXAM_FORMAT.cycle.admissionWindow}.
+            </li>
           </ol>
           <BbeInfoCallout label="Independent guide" tone="official">
-            This page summarises information already presented in BBE School&apos;s BBE Entrance Exam Guide.
-            Always confirm requirements, fees and dates on the official WU Vienna website.
+            This page summarises WU’s published {BBE_EXAM_FORMAT.cycle.academicYear} selection-procedure
+            timeline and BBE School&apos;s BBE Entrance Exam Guide. Always confirm requirements, fees and
+            dates on the official WU Vienna website (
+            <a
+              href={BBE_OFFICIAL_LINKS.selectionProcedureShort}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline-offset-4 hover:underline"
+            >
+              short.wu.ac.at/sp-bbe
+            </a>
+            ).
           </BbeInfoCallout>
         </BbeSection>
 
@@ -135,15 +197,18 @@ export function BbeAdmissionPage() {
 
         <BbeSection id="registration" title="Registration">
           <p>
-            Registration for the selection procedure runs in a published window. The guide’s current cycle
-            details list a fee of {BBE_EXAM_FORMAT.cycle.registrationFee}.
+            Online registration for the {BBE_EXAM_FORMAT.cycle.academicYear} selection procedure runs{" "}
+            {BBE_EXAM_FORMAT.cycle.registrationWindow}. Fill in the online registration tool and pay the
+            fee ({BBE_EXAM_FORMAT.cycle.registrationFee}). Applicants in their final school year can
+            register even if the secondary-school leaving certificate is not yet available.
           </p>
           <DateTable rows={cycleDates.filter((r) => r.field.startsWith("Registration"))} />
         </BbeSection>
 
         <BbeSection id="osa" title="OSA">
           <p>
-            The OSA must be completed by the published deadline. It is{" "}
+            The Online Self-Assessment runs {BBE_EXAM_FORMAT.cycle.osaWindow} and must be completed by{" "}
+            <span className="font-medium text-foreground">{BBE_EXAM_FORMAT.cycle.osaDeadline}</span>. It is{" "}
             <span className="font-medium text-foreground">ungraded</span> and does not factor into ranking
             based on written-exam performance. Missing the OSA deadline can still block your application.
             Treat it as a hard administrative step even though it does not produce a score.
@@ -154,8 +219,13 @@ export function BbeAdmissionPage() {
         </BbeSection>
 
         <BbeSection id="entrance-exam" title="Entrance exam">
-          <BbeInfoCallout label="Most recent exam structure" tone="official">
-            <p>{BBE_FORMAT_NOTE}</p>
+          <BbeInfoCallout label="2027/2028 exam day" tone="official">
+            <p>
+              In-person exam on <span className="font-medium">{BBE_EXAM_FORMAT.cycle.examDate}</span> at{" "}
+              {BBE_EXAM_FORMAT.location}. Duration: {BBE_EXAM_FORMAT.durationHours} hours. Results:{" "}
+              {BBE_EXAM_FORMAT.cycle.examResults.toLowerCase()}.
+            </p>
+            <p className="mt-2">{BBE_FORMAT_NOTE}</p>
             <p className="mt-2">
               <BbeWuSourceLink />
             </p>
@@ -200,17 +270,29 @@ export function BbeAdmissionPage() {
 
         <BbeSection id="after-exam" title="Admission after the exam">
           <p>
-            After the exam, WU communicates outcomes through its official admission channels. Preparation
-            resources on BBE School stop at helping you perform on the written test; enrolment steps,
-            visa/residence topics and tuition questions belong on official WU pages.
+            After you pass the selection procedure and receive an admission offer, enrollment at the{" "}
+            {BBE_EXAM_FORMAT.cycle.admissionLocation} runs {BBE_EXAM_FORMAT.cycle.admissionWindow}. The
+            programme starts in the winter semester only. New students are invited to BBE Welcome Days in{" "}
+            {BBE_EXAM_FORMAT.cycle.welcomeDays}.
+          </p>
+          <DateTable
+            rows={cycleDates.filter((r) =>
+              ["Admission / enrollment", "Admission location", "BBE Welcome Days", "Program start"].includes(
+                r.field,
+              ),
+            )}
+          />
+          <p className="mt-4">
+            Preparation resources on BBE School stop at helping you perform on the written test; visa /
+            residence topics and tuition questions belong on official WU pages.
           </p>
         </BbeSection>
 
-        <BbeSection id="dates" title="Important dates">
+        <BbeSection id="dates" title="Important dates for 2027/2028">
           <BbeInfoCallout label="Update each cycle" tone="advice">
-            Dates below reflect the cycle details currently recorded in the BBE Entrance Exam Guide (last
-            updated {BBE_EXAM_FORMAT.cycle.lastUpdated}). Re-check official WU pages before you rely on them
-            for planning.
+            Dates below reflect WU’s published {BBE_EXAM_FORMAT.cycle.academicYear} selection-procedure
+            timeline (last updated on this site {BBE_EXAM_FORMAT.cycle.lastUpdated}). Re-check official WU
+            pages before you rely on them for planning.
           </BbeInfoCallout>
           <DateTable rows={cycleDates} />
         </BbeSection>

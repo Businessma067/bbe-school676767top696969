@@ -685,6 +685,8 @@ export const wisoHubExtraDe: Record<string, string> = {
   "BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock | BBE School": "BBE Aufnahmetest WU 2027: Ablauf, Bewertung & gratis Probetest | BBE School",
   "BBE Exam 2027 (WU Aufnahmetest): Format, Scoring & Free Mock": "BBE Aufnahmetest WU 2027: Ablauf, Bewertung & gratis Probetest",
   "The WU Vienna BBE exam (Aufnahmetest) for 2027: format, topics, pass scores, difficulty and a free timed mock exam with explanations.": "Der BBE Aufnahmetest der WU Wien 2027: Format, Themen, Bestehensgrenze, Schwierigkeit und ein gratis Probetest auf Zeit mit Lösungen.",
+  "WU Vienna BBE exam (Aufnahmetest) 2027: in-person test on July 7 at VIECON, format, topics, scoring, difficulty and a free timed mock with explanations.":
+    "BBE Aufnahmetest der WU Wien 2027: Präsenzprüfung am 7. Juli im VIECON, Format, Themen, Bewertung, Schwierigkeit und ein gratis Timed Mock mit Erklärungen.",
   "BBE & WiSo Exam Prep Courses 2027 — Free Demo | BBE School": "Vorbereitung WU Aufnahmetest BBE & WiSo 2027 — gratis Demo | BBE School",
   "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3300+ questions, timed mock exams and step-by-step explanations.": "Vorbereitung auf den WU Aufnahmetest (BBE & WiSo) 2027: gratis mit 50+ Übungsaufgaben starten, dann 3300+ Fragen, Probetests auf Zeit und Schritt-für-Schritt-Lösungen.",
   "How to Pass the BBE Exam 2027: Study Plan & Free Mock | BBE School": "BBE Aufnahmetest 2027 bestehen: Lernplan & gratis Probetest | BBE School",
@@ -1395,5 +1397,7 @@ export const wisoHubExtraUk: Record<string, string> = {
   "WU WiSo Exam (Aufnahmeprüfung): Format & Topics | BBE School": "Іспит WU WiSo (Aufnahmeprüfung): формат і теми | BBE School",
   "What is the WU Vienna WiSo exam (Aufnahmeprüfung)? Format, subjects (economics, math, German), Teilpunktesystem scoring, places, the two-stage process, and how to prepare.": "Що таке іспит WiSo у WU Vienna (Aufnahmeprüfung)? Формат, предмети (економіка, математика, німецька), оцінювання за Teilpunktesystem, кількість місць, двоетапний відбір і як підготуватися.",
   "Everything you need for the WiSo Aufnahmeprüfung, Wirtschaft verstehen, Mathematik, and German reading, built around the real format and Teilpunktesystem.": "Усе, що потрібно для WiSo Aufnahmeprüfung, Wirtschaft verstehen, математика та читання німецькою, побудовано за реальним форматом і Teilpunktesystem.",
+  "WU Vienna BBE exam (Aufnahmetest) 2027: in-person test on July 7 at VIECON, format, topics, scoring, difficulty and a free timed mock with explanations.":
+    "Вступний іспит BBE WU Відень (Aufnahmetest) 2027: очний тест 7 липня у VIECON, формат, теми, скоринг, складність і безкоштовний timed-мок із поясненнями.",
   "before you grind volume.": "перш ніж братися за великі обсяги задач.",
 };

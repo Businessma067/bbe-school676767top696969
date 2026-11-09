@@ -388,7 +388,8 @@ export function BbeVsWisoPage() {
             <li>OSA is usually ungraded and does not replace the ranking based on the written exam.</li>
             <li>
               Recent BBE and WISO exams have been held at VIECON, Vienna Congress and Convention
-              Center (Messe Wien).
+              Center (Messeplatz 1, 1020 Wien). The BBE exam for 2027/2028 is scheduled for July 7,
+              2027.
             </li>
             <li>
               BBE start is winter semester only; WISO can allow winter or summer start after a

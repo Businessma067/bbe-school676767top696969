@@ -70,6 +70,8 @@ export const BBE_PRACTICE_ROUTES = {
 export const BBE_OFFICIAL_LINKS = {
   selectionProcedure:
     "https://www.wu.ac.at/en/programs/bachelors-programs/business-and-economics/overview/selection-procedure-bbe-1",
+  /** Short official link printed on WU’s 2027/2028 selection-procedure flyer. */
+  selectionProcedureShort: "https://short.wu.ac.at/sp-bbe",
 } as const;
 
 /**
@@ -89,14 +91,22 @@ export const BBE_EXAM_FORMAT = {
     mathematics: "43%",
   },
   places: 240,
-  location: "VIECON, Vienna Congress and Convention Center (Messe Wien)",
-  /** Time-sensitive cycle details from the existing guide — update yearly. */
+  location: "VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien",
+  /** Time-sensitive cycle details — update yearly from official WU selection procedure. */
   cycle: {
-    lastUpdated: "September 6, 2026",
-    examDate: "June 30, 2027, 3:00 to 5:00 p.m. CEST",
-    registrationWindow: "March to May 2027 (exact window announced by WU)",
+    academicYear: "2027/2028",
+    lastUpdated: "November 9, 2026",
+    /** Same date as `lastUpdated`, for schema.org dateModified and sitemap lastmod. */
+    lastUpdatedIso: "2026-11-09",
+    examDate: "July 7, 2027",
+    examResults: "Within two weeks of the exam",
+    registrationWindow: "March 1 – May 24, 2027",
     registrationFee: "€50 (waived for Ukrainian citizens)",
-    osaDeadline: "Announced with the 2027 registration window",
+    osaWindow: "March 1 – June 2, 2027",
+    osaDeadline: "June 2, 2027, 12:00 noon CEST",
+    admissionWindow: "July 12 – September 5, 2027",
+    admissionLocation: "Study Service Center, WU Campus",
+    welcomeDays: "September 2027 (WU Campus)",
   },
 } as const;
 

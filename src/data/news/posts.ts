@@ -21,6 +21,133 @@ export type {
 /** Static creator posts — edit this file / feature-posts.ts to publish. */
 const CORE_POSTS: NewsPost[] = [
   {
+    slug: "wu-bbe-entrance-exam-date-2027-july-7-selection-procedure",
+    title:
+      "WU Vienna BBE Entrance Exam Date 2027: July 7 at VIECON — Selection Procedure 2027/2028",
+    date: "2026-11-09",
+    author: "BBE School creators",
+    summary:
+      "Official WU dates for the BBE selection procedure 2027/2028: registration March 1–May 24, OSA until June 2 noon CEST, in-person exam July 7 at VIECON (Messeplatz 1), admission July 12–September 5.",
+    body: [
+      {
+        type: "p",
+        text: "WU Vienna has published the official timeline for the Bachelor’s Program in Business & Economics (BBE) selection procedure for academic year 2027/2028. The headline change for applicants: the in-person entrance exam is on July 7, 2027 at VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien.",
+      },
+      {
+        type: "p",
+        text: "If you are preparing for the WU Vienna BBE entrance exam (Aufnahmetest), lock these dates into your calendar early. Registration, the Online Self-Assessment (OSA), exam day, enrollment, and Welcome Days now have clear published windows.",
+      },
+      {
+        type: "media",
+        kind: "image",
+        src: "/news/wu-bbe-selection-procedure-2027-2028.png",
+        alt: "WU Vienna official BBE selection procedure timeline 2027/2028 showing registration, OSA, July 7 exam at VIECON, admission and Welcome Days",
+        caption:
+          "Official WU timeline for the BBE selection procedure 2027/2028. Always re-check short.wu.ac.at/sp-bbe for binding details.",
+      },
+      {
+        type: "h2",
+        text: "BBE selection procedure dates 2027/2028",
+      },
+      {
+        type: "timeline",
+        caption:
+          "Key WU Vienna BBE admission milestones for the 2027/2028 cycle, from registration through Welcome Days.",
+        entries: [
+          {
+            id: "registration",
+            dateLabel: "Mar 1 – May 24, 2027",
+            title: "Online registration",
+            note: "Fill in the online registration tool and pay the registration fee. Final-year school students may register before they receive their secondary-school leaving certificate.",
+          },
+          {
+            id: "osa",
+            dateLabel: "Mar 1 – Jun 2, 2027",
+            title: "Online Self-Assessment (OSA)",
+            note: "Required and ungraded. Finish every section by June 2, 2027, 12:00 noon CEST. Missing the OSA can still block your application.",
+          },
+          {
+            id: "exam",
+            dateLabel: "July 7, 2027",
+            title: "In-person entrance exam",
+            note: "Two-hour written exam at VIECON, Messeplatz 1, 1020 Wien. Results are announced within two weeks. No alternative or online date.",
+          },
+          {
+            id: "admission",
+            dateLabel: "Jul 12 – Sep 5, 2027",
+            title: "Admission / enrollment",
+            note: "After an offer, enroll at the Study Service Center on the WU Campus. The programme starts in the winter semester only.",
+          },
+          {
+            id: "welcome",
+            dateLabel: "September 2027",
+            title: "BBE Welcome Days",
+            note: "Welcome and information event for new BBE students on the WU Campus.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "What this means for your BBE exam prep",
+      },
+      {
+        type: "p",
+        text: "July 7 gives a clear target for timed mocks, answer-sheet practice, and a final revision block. Build backwards from exam day: finish content coverage before late spring, then spend the weeks before July under exam timing. Keep the OSA deadline of June 2 noon CEST on the same calendar — it is administrative, not graded, but still mandatory.",
+      },
+      {
+        type: "aside",
+        text: "BBE School is an independent preparation site and is not affiliated with WU Vienna. Fees, invitation clock times, and document checklists can still change — confirm them on the official WU selection-procedure page.",
+      },
+      {
+        type: "p",
+        text: "We have updated the BBE admission guide and exam overview on this site to match the published 2027/2028 timeline, including the VIECON address and the admission window after results.",
+      },
+      {
+        type: "steps",
+        title: "Next steps for applicants",
+        caption: "A practical order that matches the official WU sequence.",
+        steps: [
+          {
+            id: "calendar",
+            title: "Save the hard dates",
+            detail:
+              "Registration ends May 24, OSA ends June 2 at noon CEST, exam day is July 7, enrollment runs July 12–September 5.",
+          },
+          {
+            id: "format",
+            title: "Learn the exam format early",
+            detail:
+              "The written paper is multiple-choice with partial credit across Economics & Business, English, and Mathematics. Scoring behaviour matters as much as content.",
+          },
+          {
+            id: "practice",
+            title: "Practice under time pressure",
+            detail:
+              "Use timed mocks and answer-sheet transfer practice so July 7 feels familiar, not surprising.",
+          },
+          {
+            id: "official",
+            title: "Re-check WU before you act",
+            detail:
+              "Use short.wu.ac.at/sp-bbe for binding registration, invitation, and enrollment instructions.",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        label: "Open the BBE admission dates page",
+        href: "/bbe-admission",
+        note: "Full 2027/2028 timeline: registration, OSA, July 7 exam, enrollment and Welcome Days.",
+      },
+      {
+        type: "cta",
+        label: "Read the BBE Entrance Exam Guide",
+        href: "/bbe-entrance-exam",
+        note: "Format, subjects, scoring and a free timed mock to find weak spots before July.",
+      },
+    ],
+  },
+  {
     slug: "welcome-to-bbe-school-news",
     title: "Welcome to BBE School News",
     date: "2026-09-26",

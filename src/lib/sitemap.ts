@@ -6,6 +6,7 @@ import {
   localizePath,
 } from "./i18n/locale-path";
 import { getNewsPostPaths } from "../data/news/posts";
+import { BBE_EXAM_FORMAT } from "../config/bbe-exam-hub";
 import { WISO_EXAM_FORMAT } from "../config/wiso-exam-hub";
 
 const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
@@ -71,7 +72,6 @@ const PRIVATE_PATHS_EXACT = new Set<string>([
  *  behind a course purchase (flashcards, matching, tutor exam, mock exams,
  *  course subjects) is intentionally excluded. */
 export const ENGLISH_ONLY_INDEXABLE_PATHS = [
-  "/book-a-call",
   "/demo-practice/economics",
   "/demo-practice/math",
   "/demo-practice/english",
@@ -134,6 +134,13 @@ function lastmodFor(englishPath: string): string | undefined {
   }
   if (englishPath === "/wiso" || englishPath.startsWith("/wiso/")) {
     return WISO_EXAM_FORMAT.cycle.lastUpdatedIso;
+  }
+  if (
+    englishPath === "/bbe" ||
+    englishPath.startsWith("/bbe-") ||
+    englishPath === "/wu-vienna"
+  ) {
+    return BBE_EXAM_FORMAT.cycle.lastUpdatedIso;
   }
   return undefined;
 }
