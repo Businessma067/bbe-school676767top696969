@@ -43,6 +43,8 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "If you are aiming at BBE specifically, dig into the Mathematics and Economics & English guides next.":
     "Wenn du gezielt auf BBE zielst, schau als Nächstes in die Leitfäden zu Mathematik sowie Wirtschaft & Englisch.",
 
+  "Recent BBE and WISO exams have been held at VIECON, Vienna Congress and Convention Center (Messeplatz 1, 1020 Wien). The BBE exam for 2027/2028 is scheduled for July 7, 2027.":
+    "Aktuelle BBE- und WISO-Prüfungen fanden im VIECON, Vienna Congress and Convention Center (Messeplatz 1, 1020 Wien) statt. Die BBE-Prüfung für 2027/2028 ist für den 7. Juli 2027 geplant.",
   "Recent BBE and WISO exams have been held at VIECON, Vienna Congress and Convention Center (Messe Wien).":
     "Aktuelle BBE- und WISO-Prüfungen fanden im VIECON, Vienna Congress and Convention Center (Messe Wien) statt.",
 
@@ -387,6 +389,8 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "If you are aiming at BBE specifically, dig into the Mathematics and Economics & English guides next.":
     "Якщо ви цілитеся саме в BBE, далі заглибтеся в гайди з математики та економіки й англійської.",
 
+  "Recent BBE and WISO exams have been held at VIECON, Vienna Congress and Convention Center (Messeplatz 1, 1020 Wien). The BBE exam for 2027/2028 is scheduled for July 7, 2027.":
+    "Нещодавні іспити BBE і WISO проводилися в VIECON, Vienna Congress and Convention Center (Messeplatz 1, 1020 Wien). Іспит BBE на 2027/2028 заплановано на 7 липня 2027.",
   "Recent BBE and WISO exams have been held at VIECON, Vienna Congress and Convention Center (Messe Wien).":
     "Нещодавні іспити BBE і WISO проводилися в VIECON, Vienna Congress and Convention Center (Messe Wien).",
 

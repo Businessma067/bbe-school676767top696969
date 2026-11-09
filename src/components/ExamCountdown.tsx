@@ -4,8 +4,8 @@ import { ClientOnly, ScriptOnce, useRouterState } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { isWisoPath } from "@/lib/exam-track";
 
-/** Next BBE entrance exam — 30 June 2027, 15:00 CEST (Vienna). */
-const EXAM_AT_MS = new Date("2027-06-30T15:00:00+02:00").getTime();
+/** Next BBE entrance exam — 7 July 2027 (Vienna). Session clock time is announced by WU with the invitation. */
+const EXAM_AT_MS = new Date("2027-07-07T00:00:00+02:00").getTime();
 
 type Remaining = {
   days: number;
@@ -81,7 +81,7 @@ function CountdownView({
   const untilLabel =
     track === "wiso"
       ? "Until the 2027 WiSo exam · 30 June"
-      : "Until the 2027 BBE exam · 30 June";
+      : "Until the 2027 BBE exam · 7 July";
   const ariaCountdown = `Countdown to the 2027 ${examName} exam`;
 
   return (

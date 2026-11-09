@@ -43,7 +43,7 @@ export const Route = createFileRoute("/bbe-entrance-exam")({
       {
         name: "description",
         content:
-          "The WU Vienna BBE exam (Aufnahmetest) for 2027: format, topics, pass scores, difficulty and a free timed mock exam with explanations.",
+          "WU Vienna BBE exam (Aufnahmetest) 2027: in-person test on July 7 at VIECON, format, topics, scoring, difficulty and a free timed mock with explanations.",
       },
       {
         property: "og:title",
@@ -107,7 +107,7 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
   { field: "Exam type", detail: "Written, in person, multiple-choice only" },
   { field: "Exam location", detail: BBE_EXAM_FORMAT.location },
   { field: "Exam duration", detail: `${BBE_EXAM_FORMAT.durationHours} hours` },
-  { field: "Exam date / time", detail: BBE_EXAM_FORMAT.cycle.examDate },
+  { field: "Exam date", detail: BBE_EXAM_FORMAT.cycle.examDate },
   { field: "Alternative date / online option", detail: "None. No exceptions." },
   {
     field: "Exam sections",

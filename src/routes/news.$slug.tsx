@@ -22,14 +22,54 @@ export function newsPostHead(slug: string) {
   const title = post ? `${post.title} — BBE School News` : "News — BBE School";
   const description = post?.summary ?? "A post from the BBE School creators.";
   const path = `/news/${slug}`;
+  const canonical = `https://bbe-school.com${path}`;
+  const scripts = post
+    ? [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            headline: post.title,
+            description: post.summary,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: {
+              "@type": "Organization",
+              name: post.author,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "BBE School",
+              url: "https://bbe-school.com",
+            },
+            mainEntityOfPage: canonical,
+            image: post.body
+              .filter((block): block is Extract<typeof block, { type: "media" }> => block.type === "media")
+              .map((block) =>
+                block.src.startsWith("http") ? block.src : `https://bbe-school.com${block.src}`,
+              ),
+          }),
+        },
+      ]
+    : [];
   return {
-    links: [...hreflangLinks(path), { rel: "canonical", href: `https://bbe-school.com${path}` }],
+    scripts,
+    links: [...hreflangLinks(path), { rel: "canonical", href: canonical }],
     meta: [
       { title },
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "article" },
+      { property: "og:url", content: canonical },
+      ...(post
+        ? [
+            { property: "article:published_time", content: post.date },
+            { property: "article:modified_time", content: post.date },
+            { name: "robots", content: "index, follow, max-image-preview:large" },
+          ]
+        : []),
       { name: "twitter:card", content: "summary_large_image" },
       ...socialImageMetaForPath("/news"),
     ],

@@ -4,6 +4,64 @@
  * Titles/summaries/feed chrome live in news-extra.ts — do not duplicate those here.
  */
 export const newsBodyExtraDe: Record<string, string> = {
+  "WU Vienna has published the official timeline for the Bachelor’s Program in Business & Economics (BBE) selection procedure for academic year 2027/2028. The headline change for applicants: the in-person entrance exam is on July 7, 2027 at VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien.":
+    "Die WU Wien hat den offiziellen Zeitplan für das Auswahlverfahren des Bachelorstudiums Business & Economics (BBE) für das Studienjahr 2027/2028 veröffentlicht. Die zentrale Neuigkeit für Bewerber:innen: Die Präsenz-Aufnahmeprüfung findet am 7. Juli 2027 im VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien statt.",
+  "If you are preparing for the WU Vienna BBE entrance exam (Aufnahmetest), lock these dates into your calendar early. Registration, the Online Self-Assessment (OSA), exam day, enrollment, and Welcome Days now have clear published windows.":
+    "Wenn du dich auf die WU-Wien-BBE-Aufnahmeprüfung (Aufnahmetest) vorbereitest, trage diese Termine früh in den Kalender ein. Anmeldung, Online Self-Assessment (OSA), Prüfungstag, Einschreibung und Welcome Days haben jetzt klar veröffentlichte Fenster.",
+  "Official WU timeline for the BBE selection procedure 2027/2028. Always re-check short.wu.ac.at/sp-bbe for binding details.":
+    "Offizieller WU-Zeitplan für das BBE-Auswahlverfahren 2027/2028. Verbindliche Details immer auf short.wu.ac.at/sp-bbe nachprüfen.",
+  "BBE selection procedure dates 2027/2028": "Termine des BBE-Auswahlverfahrens 2027/2028",
+  "Key WU Vienna BBE admission milestones for the 2027/2028 cycle, from registration through Welcome Days.":
+    "Wichtige WU-Wien-BBE-Zulassungsmilestones für den Zyklus 2027/2028 – von der Anmeldung bis zu den Welcome Days.",
+  "Mar 1 – May 24, 2027": "1. Mär. – 24. Mai 2027",
+  "Online registration": "Online-Anmeldung",
+  "Fill in the online registration tool and pay the registration fee. Final-year school students may register before they receive their secondary-school leaving certificate.":
+    "Daten im Online-Anmeldetool ausfüllen und die Anmeldegebühr zahlen. Schüler:innen im letzten Schuljahr können sich auch ohne abgeschlossenes Reifezeugnis anmelden.",
+  "Mar 1 – Jun 2, 2027": "1. Mär. – 2. Jun. 2027",
+  "Online Self-Assessment (OSA)": "Online Self-Assessment (OSA)",
+  "Required and ungraded. Finish every section by June 2, 2027, 12:00 noon CEST. Missing the OSA can still block your application.":
+    "Erforderlich und unbenotet. Alle Abschnitte bis zum 2. Juni 2027, 12:00 mittags MESZ abschließen. Eine verpasste OSA kann die Bewerbung trotzdem blockieren.",
+  "July 7, 2027": "7. Juli 2027",
+  "In-person entrance exam": "Präsenz-Aufnahmeprüfung",
+  "Two-hour written exam at VIECON, Messeplatz 1, 1020 Wien. Results are announced within two weeks. No alternative or online date.":
+    "Zweistündige schriftliche Prüfung im VIECON, Messeplatz 1, 1020 Wien. Ergebnisse innerhalb von zwei Wochen. Kein Alternativ- oder Online-Termin.",
+  "Jul 12 – Sep 5, 2027": "12. Jul. – 5. Sep. 2027",
+  "Admission / enrollment": "Zulassung / Einschreibung",
+  "After an offer, enroll at the Study Service Center on the WU Campus. The programme starts in the winter semester only.":
+    "Nach einem Angebot Einschreibung im Study Service Center am WU-Campus. Das Studium beginnt nur im Wintersemester.",
+  "September 2027": "September 2027",
+  "BBE Welcome Days": "BBE Welcome Days",
+  "Welcome and information event for new BBE students on the WU Campus.":
+    "Willkommens- und Informationsveranstaltung für neue BBE-Studierende am WU-Campus.",
+  "What this means for your BBE exam prep": "Was das für deine BBE-Prüfungsvorbereitung bedeutet",
+  "July 7 gives a clear target for timed mocks, answer-sheet practice, and a final revision block. Build backwards from exam day: finish content coverage before late spring, then spend the weeks before July under exam timing. Keep the OSA deadline of June 2 noon CEST on the same calendar — it is administrative, not graded, but still mandatory.":
+    "Der 7. Juli gibt ein klares Ziel für Timed Mocks, Answer-Sheet-Übung und einen finalen Wiederholungsblock. Plane rückwärts vom Prüfungstag: Inhalte vor dem späten Frühjahr abschließen, die Wochen vor Juli unter Prüfungszeitdruck üben. Die OSA-Frist am 2. Juni mittags MESZ gehört in denselben Kalender – administrativ, unbenotet, aber Pflicht.",
+  "BBE School is an independent preparation site and is not affiliated with WU Vienna. Fees, invitation clock times, and document checklists can still change — confirm them on the official WU selection-procedure page.":
+    "BBE School ist eine unabhängige Prep-Seite und nicht mit der WU Wien verbunden. Gebühren, Uhrzeiten auf der Einladung und Dokumentenchecklisten können sich noch ändern – prüfe sie auf der offiziellen WU-Seite zum Auswahlverfahren.",
+  "We have updated the BBE admission guide and exam overview on this site to match the published 2027/2028 timeline, including the VIECON address and the admission window after results.":
+    "Wir haben den BBE-Zulassungsleitfaden und den Prüfungsüberblick auf dieser Seite an den veröffentlichten Zeitplan 2027/2028 angepasst – inklusive VIECON-Adresse und Zulassungsfenster nach den Ergebnissen.",
+  "Next steps for applicants": "Nächste Schritte für Bewerber:innen",
+  "A practical order that matches the official WU sequence.":
+    "Eine praktische Reihenfolge, die der offiziellen WU-Abfolge entspricht.",
+  "Save the hard dates": "Die harten Termine speichern",
+  "Registration ends May 24, OSA ends June 2 at noon CEST, exam day is July 7, enrollment runs July 12–September 5.":
+    "Anmeldung endet am 24. Mai, OSA am 2. Juni mittags MESZ, Prüfungstag ist der 7. Juli, Einschreibung läuft vom 12. Juli bis 5. September.",
+  "Learn the exam format early": "Das Prüfungsformat früh lernen",
+  "The written paper is multiple-choice with partial credit across Economics & Business, English, and Mathematics. Scoring behaviour matters as much as content.":
+    "Die schriftliche Prüfung ist Multiple Choice mit Partial Credit in Economics & Business, English und Mathematics. Das Scoring-Verhalten zählt genauso wie der Inhalt.",
+  "Practice under time pressure": "Unter Zeitdruck üben",
+  "Use timed mocks and answer-sheet transfer practice so July 7 feels familiar, not surprising.":
+    "Nutze Timed Mocks und Answer-Sheet-Übertragungspraxis, damit sich der 7. Juli vertraut statt überraschend anfühlt.",
+  "Re-check WU before you act": "WU vor dem Handeln nochmals prüfen",
+  "Use short.wu.ac.at/sp-bbe for binding registration, invitation, and enrollment instructions.":
+    "Nutze short.wu.ac.at/sp-bbe für verbindliche Anmelde-, Einladungs- und Einschreibungsanweisungen.",
+  "Open the BBE admission dates page": "BBE-Zulassungstermine öffnen",
+  "Full 2027/2028 timeline: registration, OSA, July 7 exam, enrollment and Welcome Days.":
+    "Vollständiger Zeitplan 2027/2028: Anmeldung, OSA, Prüfung am 7. Juli, Einschreibung und Welcome Days.",
+  "Read the BBE Entrance Exam Guide": "BBE-Aufnahmeprüfungsleitfaden lesen",
+  "Format, subjects, scoring and a free timed mock to find weak spots before July.":
+    "Format, Fächer, Scoring und ein kostenloser Timed Mock, um Schwachstellen vor Juli zu finden.",
+
   "We created this page so important updates have a clear home. Before this, small changes were easy to miss: a scoring note in chat, a task-bank rewrite in a release list, or a study tip left unfinished while we fixed something else.": "Wir haben diese Seite angelegt, damit wichtige Updates einen klaren Ort haben. Früher gingen kleine Änderungen leicht unter: eine Scoring-Notiz im Chat, ein Task-Bank-Rewrite in einer Release-Liste oder ein Lerntipp, der liegen blieb, während wir etwas anderes repariert haben.",
   "This is not a marketing blog, and it is not a full changelog. We will write here when something changes how you practice, how a mock feels, or how we prepare students for the WU entrance exams for BBE and WiSo.": "Das ist kein Marketing-Blog und auch kein vollständiges Changelog. Wir schreiben hier, wenn sich ändert, wie du übst, wie sich ein Mock anfühlt oder wie wir Studierende auf die WU-Aufnahmeprüfungen für BBE und WiSo vorbereiten.",
   "If a post does not match what you see in the live product, trust the product and tell us. These notes should follow the software.": "Wenn ein Beitrag nicht zu dem passt, was du im Live-Produkt siehst, vertrau dem Produkt und sag uns Bescheid. Diese Notizen sollen der Software folgen.",
@@ -341,6 +399,8 @@ export const newsBodyExtraDe: Record<string, string> = {
   "Ch. 3 · resume": "Kap. 3 · fortsetzen",
   "12 due today": "12 fällig heute",
   "Last: 18/24": "Zuletzt: 18/24",
+  "WU Vienna BBE Entrance Exam Date 2027: July 7 at VIECON — Selection Procedure 2027/2028 — BBE School News":
+    "WU Wien BBE-Aufnahmeprüfung 2027: 7. Juli im VIECON — Auswahlverfahren 2027/2028 — BBE-School-Neuigkeiten",
   "Welcome to BBE School News — BBE-School-Neuigkeiten": "Willkommen bei den BBE-School-Neuigkeiten — BBE-School-Neuigkeiten",
   "How we build mock exams — BBE-School-Neuigkeiten": "So bauen wir Probeprüfungen — BBE-School-Neuigkeiten",
   "Demo Exam: a free hard mock with a free account — BBE-School-Neuigkeiten": "Demo Exam: ein kostenloser harter Mock mit kostenlosem Konto — BBE-School-Neuigkeiten",
@@ -358,6 +418,66 @@ export const newsBodyExtraDe: Record<string, string> = {
 };
 
 export const newsBodyExtraUk: Record<string, string> = {
+  "WU Vienna has published the official timeline for the Bachelor’s Program in Business & Economics (BBE) selection procedure for academic year 2027/2028. The headline change for applicants: the in-person entrance exam is on July 7, 2027 at VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien.":
+    "WU Відень опублікувала офіційний графік процедури відбору на бакалаврську програму Business & Economics (BBE) на навчальний рік 2027/2028. Головна новина для абітурієнтів: очний вступний іспит — 7 липня 2027 у VIECON Vienna Congress and Convention Center, Messeplatz 1, 1020 Wien.",
+  "If you are preparing for the WU Vienna BBE entrance exam (Aufnahmetest), lock these dates into your calendar early. Registration, the Online Self-Assessment (OSA), exam day, enrollment, and Welcome Days now have clear published windows.":
+    "Якщо готуєшся до вступного іспиту BBE WU Відень (Aufnahmetest), внеси ці дати в календар заздалегідь. Реєстрація, Online Self-Assessment (OSA), день іспиту, зарахування та Welcome Days тепер мають чітко опубліковані вікна.",
+  "Official WU timeline for the BBE selection procedure 2027/2028. Always re-check short.wu.ac.at/sp-bbe for binding details.":
+    "Офіційний графік WU для процедури відбору BBE 2027/2028. Обов’язкові деталі завжди перевіряй на short.wu.ac.at/sp-bbe.",
+  "BBE selection procedure dates 2027/2028": "Дати процедури відбору BBE 2027/2028",
+  "Key WU Vienna BBE admission milestones for the 2027/2028 cycle, from registration through Welcome Days.":
+    "Ключові віхи вступу BBE WU Відень для циклу 2027/2028 — від реєстрації до Welcome Days.",
+  "Mar 1 – May 24, 2027": "1 бер. – 24 трав. 2027",
+  "Online registration": "Онлайн-реєстрація",
+  "Fill in the online registration tool and pay the registration fee. Final-year school students may register before they receive their secondary-school leaving certificate.":
+    "Заповни онлайн-форму реєстрації й сплати реєстраційний збір. Учні випускного класу можуть реєструватися ще до отримання атестата.",
+  "Mar 1 – Jun 2, 2027": "1 бер. – 2 черв. 2027",
+  "Online Self-Assessment (OSA)": "Online Self-Assessment (OSA)",
+  "Required and ungraded. Finish every section by June 2, 2027, 12:00 noon CEST. Missing the OSA can still block your application.":
+    "Обов’язкова й без оцінки. Заверши всі розділи до 2 червня 2027, 12:00 полудень CEST. Пропуск OSA все одно може заблокувати заявку.",
+  "July 7, 2027": "7 липня 2027",
+  "In-person entrance exam": "Очний вступний іспит",
+  "Two-hour written exam at VIECON, Messeplatz 1, 1020 Wien. Results are announced within two weeks. No alternative or online date.":
+    "Двогодинний письмовий іспит у VIECON, Messeplatz 1, 1020 Wien. Результати оголошують протягом двох тижнів. Альтернативної чи онлайн-дати немає.",
+  "Jul 12 – Sep 5, 2027": "12 лип. – 5 вер. 2027",
+  "Admission / enrollment": "Вступ / зарахування",
+  "After an offer, enroll at the Study Service Center on the WU Campus. The programme starts in the winter semester only.":
+    "Після оферу зараховуйся в Study Service Center на кампусі WU. Програма стартує лише в зимовому семестрі.",
+  "September 2027": "Вересень 2027",
+  "BBE Welcome Days": "BBE Welcome Days",
+  "Welcome and information event for new BBE students on the WU Campus.":
+    "Вітальна та інформаційна подія для нових студентів BBE на кампусі WU.",
+  "What this means for your BBE exam prep": "Що це означає для твоєї підготовки до BBE",
+  "July 7 gives a clear target for timed mocks, answer-sheet practice, and a final revision block. Build backwards from exam day: finish content coverage before late spring, then spend the weeks before July under exam timing. Keep the OSA deadline of June 2 noon CEST on the same calendar — it is administrative, not graded, but still mandatory.":
+    "7 липня дає чітку ціль для timed-моків, практики бланка відповідей і фінального повторення. Плануй назад від дня іспиту: закрий контент до пізньої весни, а тижні до липня працюй під таймером. Дедлайн OSA 2 червня опівдні CEST тримай у тому ж календарі — адміністративний, без оцінки, але обов’язковий.",
+  "BBE School is an independent preparation site and is not affiliated with WU Vienna. Fees, invitation clock times, and document checklists can still change — confirm them on the official WU selection-procedure page.":
+    "BBE School — незалежний сайт підготовки й не афілійований із WU Відень. Збори, час на запрошенні та чеклісти документів можуть змінюватися — підтверджуй їх на офіційній сторінці процедури відбору WU.",
+  "We have updated the BBE admission guide and exam overview on this site to match the published 2027/2028 timeline, including the VIECON address and the admission window after results.":
+    "Ми оновили гайд зі вступу BBE й огляд іспиту на цьому сайті під опублікований графік 2027/2028, включно з адресою VIECON і вікном зарахування після результатів.",
+  "Next steps for applicants": "Наступні кроки для абітурієнтів",
+  "A practical order that matches the official WU sequence.":
+    "Практичний порядок, що збігається з офіційною послідовністю WU.",
+  "Save the hard dates": "Збережи жорсткі дати",
+  "Registration ends May 24, OSA ends June 2 at noon CEST, exam day is July 7, enrollment runs July 12–September 5.":
+    "Реєстрація закінчується 24 травня, OSA — 2 червня опівдні CEST, день іспиту — 7 липня, зарахування триває з 12 липня до 5 вересня.",
+  "Learn the exam format early": "Вивчи формат іспиту рано",
+  "The written paper is multiple-choice with partial credit across Economics & Business, English, and Mathematics. Scoring behaviour matters as much as content.":
+    "Письмова робота — multiple choice з partial credit з Economics & Business, English і Mathematics. Поведінка скорингу важлива не менше за зміст.",
+  "Practice under time pressure": "Практикуйся під тиском часу",
+  "Use timed mocks and answer-sheet transfer practice so July 7 feels familiar, not surprising.":
+    "Використовуй timed-моки й практику перенесення на бланк, щоб 7 липня відчувався знайомим, а не сюрпризом.",
+  "Re-check WU before you act": "Перевір WU перед діями",
+  "Use short.wu.ac.at/sp-bbe for binding registration, invitation, and enrollment instructions.":
+    "Використовуй short.wu.ac.at/sp-bbe для обов’язкових інструкцій з реєстрації, запрошення й зарахування.",
+  "Open the BBE admission dates page": "Відкрити сторінку дат вступу BBE",
+  "Full 2027/2028 timeline: registration, OSA, July 7 exam, enrollment and Welcome Days.":
+    "Повний графік 2027/2028: реєстрація, OSA, іспит 7 липня, зарахування та Welcome Days.",
+  "Read the BBE Entrance Exam Guide": "Читати гайд зі вступного іспиту BBE",
+  "Format, subjects, scoring and a free timed mock to find weak spots before July.":
+    "Формат, предмети, скоринг і безкоштовний timed-мок, щоб знайти слабкі місця до липня.",
+  "WU Vienna BBE Entrance Exam Date 2027: July 7 at VIECON — Selection Procedure 2027/2028 — BBE School News":
+    "Дата вступного іспиту BBE WU Відень 2027: 7 липня у VIECON — процедура відбору 2027/2028 — Новини BBE School",
+
   "We created this page so important updates have a clear home. Before this, small changes were easy to miss: a scoring note in chat, a task-bank rewrite in a release list, or a study tip left unfinished while we fixed something else.": "Ми створили цю сторінку, щоб важливі оновлення мали зрозуміле місце. Раніше дрібні зміни легко губились: нотатка про скоринг у чаті, перепис банку завдань у списку релізів або порада з підготовки, яку відклали, поки лагодили щось інше.",
   "This is not a marketing blog, and it is not a full changelog. We will write here when something changes how you practice, how a mock feels, or how we prepare students for the WU entrance exams for BBE and WiSo.": "Це не маркетинговий блог і не повний changelog. Ми пишемо тут, коли змінюється те, як ти практикуєшся, як відчувається мок, або як ми готуємо студентів до вступних іспитів WU для BBE і WiSo.",
   "If a post does not match what you see in the live product, trust the product and tell us. These notes should follow the software.": "Якщо пост не збігається з тим, що ти бачиш у живому продукті, довіряй продукту й скажи нам. Ці нотатки мають йти за софтом.",
