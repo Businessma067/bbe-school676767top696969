@@ -59,7 +59,7 @@ function formatCount(n: number): string {
 }
 
 function coursePriceBullet(slug: keyof typeof PAID_PRODUCTS): string {
-  return `Course price: €${PAID_PRODUCTS[slug].priceEur}`;
+  return `€${PAID_PRODUCTS[slug].priceEur}`;
 }
 
 /** Short bullet labels only — no supporting copy. */
