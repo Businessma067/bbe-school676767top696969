@@ -1,0 +1,1084 @@
+{
+  "economics": [
+    {
+      "case_id": "WISO-M4-E01",
+      "id": "WISO-M4-E01",
+      "title": "Kapazitätsmiete gegen Deckungsbeitrag",
+      "subsection": "1.3",
+      "chapter": "1",
+      "difficulty_level": "5/5",
+      "context": "Eine bereits gekaufte Anlage (historischer Preis 63.250) hat Jahreskapazität 640 Einheiten.\nReine Vermietung der Kapazität bringt 14,5 je Einheit; die Anlage bleibt geöffnet.\nZwei Linien teilen dieselbe Kapazität: Linie X liefert Stückdeckungsbeitrag 22,5 und\nverbraucht 1,25 Kapazitätseinheiten je Stück (Nachfrage höchstens 280). Linie Y liefert\n31,25 bei Verbrauch 2,5 (Nachfrage höchstens 160). Vermeidbare Jahresfixkosten 4.875\nfallen bei jeder Öffnung an — Produktion oder Vermietung — und entfallen nur bei Schließung.\nSchließen liefert 0. Versunkene Anschaffung und Opportunitätskosten der Kapazität sind zu trennen.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Das Optimum öffnet, fährt X bis 280 und vermietet den Rest; das Netto beträgt 5.630.",
+        "Volle Vermietung ohne Produktion liefert 4.405 und dominiert das Programm mit X.",
+        "Linie Y bleibt nach Opportunitätskosten der Kapazität außerhalb des Programms.",
+        "Vom Netto 5.630 ist der historische Kaufpreis 63.250 als Hürde abzuziehen, bevor Öffnen lohnt.",
+        "Schließen mit Netto 0 bleibt strikt schlechter als das optimale Öffnungsprogramm."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Zuerst Kapazitätsbeitrag je Einheit: X liefert 22,5 / 1,25 = 18, Y nur 31,25 / 2,5 = 12,5.\nGegen Miete 14,5 bleibt allein X positiv (18 − 14,5 = 3,5 je Kapazitätseinheit; absolut\n22,5 − 1,25 · 14,5 = 4,375 je Stück). Y ist nach Opportunitätskosten negativ\n(31,25 − 2,5 · 14,5 = −5) und fällt aus.\n\nX bis Nachfrage 280 verbraucht 280 · 1,25 = 350; Restkapazität 640 − 350 = 290 wird vermietet.\nNetto: 280 · 22,5 + 290 · 14,5 − 4.875 = 6.300 + 4.205 − 4.875 = 5.630.\nFalle: Y wegen höherem Stückdeckungsbeitrag 31,25 vor X zu setzen — je Kapazitätseinheit\nverliert Y klar gegen Miete und gegen X.\n\nDie Aussage ist wahr.",
+        "Volle Vermietung bei Öffnung: 640 · 14,5 − 4.875 = 9.280 − 4.875 = 4.405.\nDas X-Programm liefert 5.630. Wegen 5.630 > 4.405 dominiert nicht die reine Miete,\nsondern X plus Restmiete.\n\nFalle: „Miete 14,5 unter X-Kapazitätsbeitrag 18, also ist reine Miete egal oder besser“ —\nsobald X die teureren Kapazitätsslots besetzt und nur der Rest vermietet wird, steigt das\nNetto um genau 280 · 4,375 = 1.225 von 4.405 auf 5.630.\n\nDie Aussage ist falsch.",
+        "Opportunitätskosten je Y-Stück: 2,5 · 14,5 = 36,25. Stückdeckungsbeitrag 31,25 liegt darunter;\nResidualbeitrag 31,25 − 36,25 = −5 < 0. Jede Y-Einheit verdrängt Miete oder X und vernichtet\nWert.\n\nSelbst auf freier Restkapazität nach X (290): höchstens 290 / 2,5 = 116 Stück Y\nbrächten 116 · (−5) = −580 zusätzlich. Falle: „freier Rest, also Y mitnehmen“ — frei heißt\nnicht kostenlos, solange Vermietung 14,5 je Kapazitätseinheit möglich ist.\n\nDie Aussage ist wahr.",
+        "Der Kaufpreis 63.250 ist versunken: er fällt bei Öffnen mit X, bei reiner Miete und bei\nSchließen gleichermaßen an und kürzt sich in jeder Differenz heraus. Bindend sind nur noch\nvermeidbare Fixkosten 4.875 und die laufenden Deckungsbeiträge bzw. Mieten.\n\n5.630 > 0 und 5.630 > 4.405 > 0 — Öffnen mit X dominiert Schließen und reine Miete ohne\nAbzug von 63.250. Falle: Buch- oder Anschaffungswert als zusätzliche Cash-Hürde zu lesen;\ndas verdoppelt versunkene Größe und verdreht die Rangfolge gegen jede Öffnung.\n\nDie Aussage ist falsch.",
+        "Schließen vermeidet 4.875, liefert aber weder Produktions- noch Mietzahlungen — Netto 0.\nOptimal öffnen liefert 5.630. Differenz 5.630 − 0 = 5.630 > 0.\n\nFalle: die vermeidbaren 4.875 gegen Schließen als Argument für Schließen zu werten, ohne die\nEinzahlungen 6.300 + 4.205 = 10.505 dagegenzuhalten. Einzahlungen decken Fixkosten und\nlassen 5.630 übrig; Schließen verwirft genau diesen Überschuss.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E02",
+      "id": "WISO-M4-E02",
+      "title": "Maschinen und Chemikalien, asymmetrische Fracht",
+      "subsection": "1.2",
+      "chapter": "1",
+      "difficulty_level": "5/5",
+      "context": "Zwei Länder, zwei Güter, Lohn je Stunde landesweit einheitlich. Land R braucht 2,4 Stunden\nfür eine Maschine und 7,2 für eine Chemikalienpartie, Lohn 25. Land P braucht 5,6 Stunden\nfür Maschinen und 4,2 für Chemikalien, Lohn 12,5. Chemikalien von P nach R tragen Fracht\n96,25 und zusätzlich Einfuhrzoll 37,5. Maschinen von P nach R tragen Fracht 22,5 und Zoll\n8,75. Zuerst Güter-Opportunitätskosten, dann Lohnstückkosten, dann Zuschläge nacheinander.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Güter-Opportunitätskosten geben R den Vorteil bei Maschinen und P bei Chemikalien; der Lohn dreht diese Relation nicht.",
+        "Fracht allein dreht die Lohnkostenrangfolge bei Chemikalien zulasten von P.",
+        "Fracht und Chemiezoll zusammen drehen die Chemikalien-Rangfolge. Der Maschinenzoll dreht die Maschinen-Rangfolge nicht zugunsten von P.",
+        "Weil P bei Chemikalien den komparativen Vorteil hat, importiert R Chemikalien auch nach Fracht und Zoll.",
+        "Ein Maschinenzoll in Höhe des Chemiezolls 37,5 macht P zum billigeren Maschinenlieferanten in R."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Komparativer Vorteil folgt aus Stundenquotienten. Maschinen in R: 2,4 / 7,2 = 1/3 Chemikalienpartie\nje Maschine; in P: 5,6 / 4,2 = 4/3. Also hat R den Maschinen-Vorteil. Chemikalien in R:\n7,2 / 2,4 = 3 Maschinen; in P: 4,2 / 5,6 = 3/4 — Vorteil P.\n\nWeil der Lohn in jedem Land für beide Güter gleich ist, kürzt er sich im Quotienten heraus\nund dreht die Güterrelation nicht. Falle: niedrigeren Lohn in P als Drehpunkt der\nGüterverhältnisse zu lesen — absolute Lohnniveaus ändern Stundenquotienten nicht.\n\nDie Aussage ist wahr.",
+        "Chemikalien Lohnstückkosten: R 7,2 · 25 = 180; P 4,2 · 12,5 = 52,5. Mit Fracht allein:\n52,5 + 96,25 = 148,75. Wegen 148,75 < 180 bleibt geliefertes P billiger als Heimware in R;\nder Vorsprung schrumpft von 127,5 auf 31,25, dreht aber nicht.\n\nFalle: „hohe Fracht 96,25 belastet P, also dreht sie“ — Belastung ist nicht Rangfolgenwechsel.\nDrehung verlangt geliefert ≥ 180; 148,75 liegt klar darunter.\n\nDie Aussage ist falsch.",
+        "Chemikalien mit beiden Zuschlägen: 148,75 + 37,5 = 186,25 > 180 — Fracht und Zoll drehen\ngemeinsam, Heimware in R wird billiger. Maschinen ohne Zuschlag: R 2,4 · 25 = 60; P\n5,6 · 12,5 = 70 > 60. Mit Fracht 70 + 22,5 = 92,5; mit Zoll zusätzlich 92,5 + 8,75 = 101,25.\nJeder Zuschlag macht Importmaschinen teurer, nicht billiger — eine Drehung zugunsten von P\nist unmöglich.\n\nFalle: Zoll wie einen Kostenvorteil des Exporteurs zu lesen. Zuschläge sind güterspezifisch\nnacheinander zu testen; nur Chemikalien drehen, Maschinen nicht.\n\nDie Aussage ist wahr.",
+        "Komparativer Vorteil beschreibt relative Produktionskosten, nicht den gelieferten Preis nach\nZuschlägen. P hat den Chemikalien-Vorteil (3/4 gegen 3 Maschinen je Partie). Nach Fracht und\nZoll liegt geliefert 52,5 + 96,25 + 37,5 = 186,25 über Heimkosten 180.\n\nFalle: „komparativer Vorteil ⇒ Import trotz Zuschlägen“. Hier ist Heimchemie nach beiden\nZuschlägen billiger; der gelieferte Preis entscheidet den Import, nicht allein das\nStundenverhältnis.\n\nDie Aussage ist falsch.",
+        "P ist bei Maschinen schon ohne Zoll lohnkostenteurer (70 gegen 60). Ein Importzoll in Höhe\n37,5 statt 8,75 belastet zusätzlich: 70 + 22,5 + 37,5 = 130 gegen Heim 60. Der Abstand wächst\nvon 10 (ohne Zuschlag) über 32,5 (mit Fracht) auf 70.\n\nFalle: Zoll und Liefervorteil zu verwechseln. Der Zoll trifft den Import und macht P relativ\nteurer, nicht billiger; schon die Basis 70 > 60 schließt einen Liefervorteil von P aus.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E03",
+      "id": "WISO-M4-E03",
+      "title": "Identitätsstoß mit Teilkompensation",
+      "subsection": "2.2",
+      "chapter": "2",
+      "difficulty_level": "5/5",
+      "context": "Geschlossene Identitätsrechnung mit Außenbeitragsleckage:\nC = 125 + 0,72 · (Y − T), T = 187,5 fest, I = 96,25, G = 142,5,\nNX = 37,5 − 0,08 · Y. Gleichgewicht über Y = C + I + G + NX.\nDrei Regime nacheinander: zuerst sinkt G um 18,75; parallel steigt autonomes I um 11,25;\ndanach steigt T um 12,5. Multiplikatoren mit NX-Abfluss, nicht mit 1/(1 − c).\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Allein der G-Rückgang um 18,75 senkt das Gleichgewichtseinkommen um 52,0833…",
+        "G-Rückgang und I-Anstieg kompensieren sich exakt; Y bleibt bei Y₀.",
+        "Nach allen drei Schocks liegt Y bei 693,75.",
+        "Der Betrag des Steuermultiplikators übersteigt den Ausgabenmultiplikator 1/0,36.",
+        "Wer 1/(1 − 0,72) ohne NX-Abfluss nutzt, überschätzt den Einkommensrückgang aus ΔG = −18,75."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Aus Y = 125 + 0,72(Y − T) + I + G + 37,5 − 0,08Y folgt\nY · (1 − 0,72 + 0,08) = 162,5 − 0,72T + I + G, also 0,36 · Y = RHS.\nAusgabenmultiplikator 1 / 0,36 = 25/9. ΔG = −18,75 liefert\nΔY = −18,75 / 0,36 = −52,0833…\n\nAusgang Y₀ = 8.875 / 12 ≈ 739,5833. Falle: Multiplikator 1/(1 − 0,72) ≈ 3,571 ohne\nNX-Leckage — der überschätzt |ΔY| auf etwa 66,96 und verfehlt 52,0833.\n\nDie Aussage ist wahr.",
+        "Netto autonom: ΔG + ΔI = −18,75 + 11,25 = −7,5 ≠ 0. ΔY = −7,5 / 0,36 = −20,8333…\nNeues Y₁ = 2.875 / 4 = 718,75 ≠ Y₀ ≈ 739,5833.\n\nFalle: „beide sind Ausgaben, also heben sie sich betragsmäßig“ — die Beträge 18,75 und\n11,25 sind ungleich; nur die Summe −7,5 multipliziert mit 25/9. Exakte Kompensation\nverlangte ΔI = +18,75, nicht +11,25.\n\nDie Aussage ist falsch.",
+        "Zusätzlich ΔT = +12,5. Steuermultiplikator −0,72 / 0,36 = −2, also ΔY_T = −25.\nKumuliert: ΔY = −52,0833… + 31,25 − 25 = −45,8333…; Y₂ = Y₀ − 45,8333… = 693,75\n(= 2.775 / 4). Direkt: RHS mit T = 200, I = 107,5, G = 123,75 liefert dasselbe Y₂.\n\nFalle: Steuerimpuls mit Ausgabenmultiplikator 25/9 statt −2 zu bewerten — das verfehlt\nY₂ um mehrere Punkte.\n\nDie Aussage ist wahr.",
+        "Ausgabenmultiplikator 1 / 0,36 ≈ 2,777…; |Steuermultiplikator| = 0,72 / 0,36 = 2.\nWegen 2 < 2,777… ist die Behauptung falsch.\n\nMechanisch: eine Steuererhöhung wirkt nur über c · ΔT auf die autonome Nachfrage, eine\nAusgabenänderung voll. Falle: „Steuern treffen Y direkt stärker“ — hier dämpft c = 0,72\nden Steuerimpuls unter den Ausgabenimpuls.\n\nDie Aussage ist falsch.",
+        "Ohne NX-Leckage: Multiplikator 1 / 0,28 ≈ 3,5714, |ΔY| ≈ 18,75 · 3,5714 ≈ 66,964.\nMit Leckage: 18,75 / 0,36 ≈ 52,083. Differenz der Überschätzung ≈ 14,88.\n\nFalle: NX = 37,5 − 0,08Y als bloße Konstante 37,5 zu lesen und den marginalen Abfluss\n0,08 zu vergessen — genau dieser Term hebt den Nenner von 0,28 auf 0,36.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E04",
+      "id": "WISO-M4-E04",
+      "title": "Steuerkeil bei ungleichen Elastizitäten",
+      "subsection": "1.4",
+      "chapter": "1",
+      "difficulty_level": "5/5",
+      "context": "Lineare Nachfrage P = 82,5 − 0,45 Q, lineares Angebot P = 12,5 + 0,30 Q.\nStücksteuer t = 9,75 wird rechtlich den Anbietern auferlegt; Käuferpreis = Verkäufererlös + 9,75.\nLastenteilung folgt aus den Steigungen bzw. Elastizitäten, nicht aus der Rechtszuweisung.\nDieselbe Steuer rechtlich bei Nachfragern erzeugt denselben Keil. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach der Steuer tragen die Nachfrager mehr als die Hälfte des Keils; die Menge sinkt.",
+        "Weil die Steuer rechtlich bei Anbietern liegt, tragen Anbieter den größeren Lastanteil.",
+        "Dieselbe Stücksteuer rechtlich bei Nachfragern lässt Käuferpreis und Nettoerlös unverändert gegen die Anbieter-Rechtsseite.",
+        "Der Käuferpreisanstieg ist kleiner als der Erlösrückgang.",
+        "Am Ausgangsgleichgewicht ist das Angebot elastischer als die Nachfrage; deshalb tragen Nachfrager mehr."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Ohne Steuer: 82,5 − 0,45Q = 12,5 + 0,30Q ⇒ 70 = 0,75Q ⇒ Q₀ = 280/3 ≈ 93,333; P₀ = 40,5.\nMit Steuer: 82,5 − 0,45Q = 12,5 + 0,30Q + 9,75 ⇒ 60,25 = 0,75Q ⇒ Q₁ = 241/3 ≈ 80,333.\nKäuferpreis 46,35 (+5,85), Verkäufererlös 36,6 (−3,9). Wegen 5,85 > 4,875 tragen Nachfrager\nmehr als die Hälfte; Q fällt von ≈ 93,333 auf ≈ 80,333.\n\nFalle: Rechtsseite „bei Anbietern“ als volle Anbieterlast zu lesen — ökonomisch 60 % / 40 %.\n\nDie Aussage ist wahr.",
+        "Rechtliche Abfuhrseite setzt den Keil, nicht die Anteile. Anbieter tragen nur den\nErlösrückgang 3,9 von 9,75 (Anteil 0,4); Nachfrager tragen 5,85 (Anteil 0,6).\n\nNachfrage ist steiler (0,45 gegen 0,30) bzw. unelastischer am Ausgangspunkt — deshalb\ngrößerer Käuferanteil. Falle: formale Abfuhr mit Inzidenz gleichzusetzen.\n\nDie Aussage ist falsch.",
+        "Der Keil P_Käufer − P_Verkäufer = 9,75 ist rechtsunabhängig. Dieselbe Gleichungen liefern\ndieselbe Q₁ ≈ 80,333, denselben Käuferpreis 46,35 und denselben Nettoerlös 36,6.\n\nFalle: Verlagerung der Rechtsseite als Umkehr der Lastenteilung zu lesen — ökonomisch bleiben\nAnstieg und Rückgang unverändert; nur wer den Schein abführt, wechselt.\n\nDie Aussage ist wahr.",
+        "Anstieg 46,35 − 40,5 = 5,85; Rückgang 40,5 − 36,6 = 3,9. Wegen 5,85 > 3,9 steigt der\nKäuferpreis stärker, als der Erlös fällt.\n\nFalle: aus „Steuer bei Anbietern“ auf stärkeren Erlösrückgang zu schließen — die Steigungen\nliefern das Gegenteil. Anteile 5,85 / 9,75 = 0,6 gegen 3,9 / 9,75 = 0,4.\n\nDie Aussage ist falsch.",
+        "Punktelastizitäten bei (Q₀, P₀): |ε_D| = (1 / 0,45) · (40,5 / Q₀) ≈ 0,964;\nε_S = (1 / 0,30) · (40,5 / Q₀) ≈ 1,446. Angebot elastischer ⇒ Nachfrager tragen mehr —\nkonsistent mit Anteilen 0,6 / 0,4.\n\nFalle: Steigung und Elastizität zu verwechseln und aus „Nachfrage steiler“ fälschlich\n„Nachfrage elastischer“ zu folgern; hier ist die steilere Kurve die unelastischere.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E05",
+      "id": "WISO-M4-E05",
+      "title": "Nominaleinkommenssprung ohne Indexierung",
+      "subsection": "1.5",
+      "chapter": "1",
+      "difficulty_level": "5/5",
+      "context": "Tarif auf das Nominaleinkommen: bis einschließlich 28.750 gilt 14,5 %, darüber 32,5 %.\nAusgangsnominaleinkommen 41.250. Inflation 8,75 %; das Bruttorealeinkommen bleibt konstant\n(Nominaleinkommen steigt um genau 8,75 %). Erste Regimevariante: Tarifgrenzen bleiben nominal\nstarr. Zweite: Grenzen werden voll mit 8,75 % indexiert. Kalte Progression heißt: realer\nNettolohn fällt trotz konstantem realen Brutto. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Im Ausgangsjahr beträgt die Steuer 8.231,25 und das Netto 33.018,75.",
+        "Ohne Indexierung steigt das reale Netto, weil das nominale Netto klar zulegt.",
+        "Mit voll indexierten Grenzen bleibt das reale Netto bei 33.018,75.",
+        "Ohne Indexierung sinkt der durchschnittliche Steuersatz, weil Inflation die Bemessung verwässert.",
+        "Selbst ohne Indexierung bleibt das reale Brutto 41.250; nur das reale Netto fällt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Untergrenze 28.750 · 0,145 = 4.168,75. Darüber: (41.250 − 28.750) · 0,325 = 12.500 · 0,325\n= 4.062,5. Summe Steuer 8.231,25; Netto 41.250 − 8.231,25 = 33.018,75.\n\nFalle: den oberen Satz 32,5 % auf das gesamte Einkommen zu legen — das überschätzt die\nSteuer auf 13.406,25 und verfehlt beide Ausgangswerte.\n\nDie Aussage ist wahr.",
+        "Neues Nominal 41.250 · 1,0875 = 44.859,375. Steuer starr:\n28.750 · 0,145 + (44.859,375 − 28.750) · 0,325 = 4.168,75 + 5.235,546875 = 9.404,296875.\nNominalnetto 35.455,078125; real 35.455,078125 / 1,0875 ≈ 32.602,37 < 33.018,75.\n\nFalle: nominales Nettoplus als reales Plus zu lesen. Brutto real konstant, Netto real fallend —\nKern der kalten Progression (Verlust ≈ 416,38).\n\nDie Aussage ist falsch.",
+        "Indexierte Grenze 28.750 · 1,0875 = 31.265,625. Steuer:\n31.265,625 · 0,145 + (44.859,375 − 31.265,625) · 0,325 = 4.533,515625 + 4.418,015625\n= 8.951,53125. Nominalnetto 35.907,84375; real 35.907,84375 / 1,0875 = 33.018,75\nexakt gleich dem Ausgangsnetto.\n\nFalle: Indexierung nur auf die untere Stufe zu beziehen und den oberen Block nominal zu\nlassen — volle Indexierung hält den realen Tarifkeil konstant.\n\nDie Aussage ist wahr.",
+        "Durchschnitt alt: 8.231,25 / 41.250 ≈ 0,1995. Neu starr: 9.404,296875 / 44.859,375 ≈ 0,2096.\nDer Durchschnittssatz steigt, weil ein größerer Nominalanteil in die 32,5 %-Stufe rutscht.\n\nFalle: Inflation als Tarifsenkung zu lesen. Bei starren Grenzen wirkt sie wie eine heimliche\nTariferhöhung — kalte Progression.\n\nDie Aussage ist falsch.",
+        "Brutto nominal 44.859,375 / 1,0875 = 41.250 — reales Brutto unverändert nach Konstruktion.\nReales Netto fällt auf ≈ 32.602,37. Die gesamte Last der starren Grenzen trifft das Netto,\nnicht das reale Brutto.\n\nFalle: aus fallendem realen Netto auf fallendes reales Brutto zu schließen — hier ist die\nTrennung gerade der Prüfungspunkt.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E06",
+      "id": "WISO-M4-E06",
+      "title": "Covenant-Bruch nach Leasingaktivierung",
+      "subsection": "3.4",
+      "chapter": "3",
+      "difficulty_level": "5/5",
+      "context": "Vor Aktivierung: Umlaufvermögen 312,5; kurzfristige Schulden 175; Vermögen 962,5;\nEigenkapital 337,5. Ein Operating-Leasing hat Barwert 156,25; davon sind 42,5 innerhalb\neines Jahres fällig, der Rest langfristig. Der geleaste Gegenstand ist nicht umlaufend.\nNach Aktivierung steigen Vermögen und Schulden um 156,25; in die Liquiditätskennzahl fließt\nnur der kurzfristige Teil. Klauseln verlangen Liquidität (UV/kurzfr. Schulden) ≥ 1,55 und\nEK-Quote ≥ 32,5 %. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach fristgerechter Aktivierung brechen beide Klauseln.",
+        "Weil Aktivierung beidseitig um 156,25 erhöht, bleibt die EK-Quote unverändert.",
+        "Der geleaste Gegenstand gehört trotz Jahresrate 42,5 nicht ins Umlaufvermögen.",
+        "Setzt man fälschlich alle 156,25 in die kurzfristigen Schulden, bleibt die Liquidität trotzdem über 1,55.",
+        "Vor Aktivierung sind beide Klauseln erfüllt; der Bruch entsteht erst durch die Aktivierung."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Liquidität: 312,5 / (175 + 42,5) = 312,5 / 217,5 = 125/87 ≈ 1,4368 < 1,55.\nEK-Quote: 337,5 / (962,5 + 156,25) = 337,5 / 1.118,75 = 54/179 ≈ 30,17 % < 32,5 %.\nBeide Klauseln scheitern.\n\nFalle: „nur die Liquidität bricht, EK bleibt über 32,5 %“ — 30,17 % liegt klar darunter.\nBeide Kennzahlen getrennt gegen 1,55 und 32,5 % prüfen.\n\nDie Aussage ist wahr.",
+        "Vorher: 337,5 / 962,5 ≈ 35,065 %. Nachher: 337,5 / 1.118,75 ≈ 30,17 %. Die Quote fällt um\nrund 4,9 Prozentpunkte. Algebraisch Quote = EK / (V + 156,25) bei konstantem EK; jede\nErhöhung des Nenners senkt die Quote.\n\nFalle: „+156,25 beidseitig ⇒ Quote gleich“ — beidseitig trifft Vermögen und Schulden, nicht\nVermögen und Eigenkapital. EK bleibt 337,5, Nenner wächst.\n\nDie Aussage ist falsch.",
+        "Aktivierung: Vermögen +156,25 als langfristiger Gegenstand, kurzfristige Schulden +42,5,\nlangfristige Schulden +113,75. Umlaufvermögen bleibt 312,5.\n\nFalle: Fälligkeit der Rate als Grund, den Gegenstand ins UV zu legen — das vermischt Aktivum\nund Passivfristigkeit. Aktivum langfristig, Passivteil kurzfristig: das ist die Trennung.\n\nDie Aussage ist wahr.",
+        "Fristgerecht: ≈ 1,4368 < 1,55. Mit allen 156,25 im Nenner: 312,5 / (175 + 156,25) =\n312,5 / 331,25 = 0,9434 < 1,55 und tiefer.\n\nFalle: aus „beide unter 1,55“ zu schließen, der Fehler sei harmlos — er verschärft den Bruch\ndeutlich (Abstand 1,55 − 1,4368 ≈ 0,113 gegen 1,55 − 0,9434 ≈ 0,607). Fristgerecht bleibt\nallein der kurze Teil 42,5.\n\nDie Aussage ist falsch.",
+        "Vorher Liquidität 312,5 / 175 ≈ 1,7857 ≥ 1,55; EK-Quote 337,5 / 962,5 ≈ 35,065 % ≥ 32,5 %.\nNachher beide unter den Schwellen. Der Vertragsbruch ist aktivierungsbedingt, nicht schon\nex ante angelegt.\n\nFalle: aus dem späteren Bruch zu schließen, schon die Ausgangsbilanz sei covenant-widrig —\nvorher halten beide Kennzahlen klar.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E07",
+      "id": "WISO-M4-E07",
+      "title": "Sprungfixe Kosten und Verlustband",
+      "subsection": "3.3",
+      "chapter": "3",
+      "difficulty_level": "5/5",
+      "context": "Stückpreis 53,75; variable Stückkosten 29,5; also Stückdeckungsbeitrag 24,25.\nFixkosten springen: bis einschließlich 375 Stück gelten 5.820; ab der 376. Einheit gelten\n10.125. Es gibt damit zwei Gewinnschwellen — eine je Fixkostenschicht — und ein Verlustband\nzwischen Kapazitätsgrenze der billigen Schicht und der teuren Schwelle. Prüfen Sie\nErreichbarkeit, Vorzeichen bei 375 und 376 sowie den Sprungeffekt. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die billige Gewinnschwelle liegt bei 240 Stück und ist in ihrer Schicht erreichbar.",
+        "Bei 375 Stück ist der Gewinn positiv; bei 376 Stück bleibt er positiv, weil eine Einheit mehr immer hilft.",
+        "Die teure Gewinnschwelle liegt oberhalb von 375; zwischen 376 und dieser Schwelle ist der Gewinn negativ.",
+        "Bei 420 Stück ist der Gewinn wieder positiv und beträgt 60.",
+        "Der Sprung der Fixkosten um 4.305 ist kleiner als der Deckungsbeitrag von 178 Stück und deshalb unterhalb von 375 irrelevant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Stückdeckungsbeitrag 53,75 − 29,5 = 24,25. Billige Schwelle 5.820 / 24,25 = 240.\nWegen 240 ≤ 375 liegt sie in der billigen Schicht und ist betrieblich erreichbar; bei 240\ngilt noch Fixkostensatz 5.820.\n\nFalle: die teure Schwelle 10.125 / 24,25 ≈ 417,53 fälschlich als einzige Schwelle zu lesen und\n240 zu verwerfen.\n\nDie Aussage ist wahr.",
+        "Bei 375: 375 · 24,25 − 5.820 = 9.093,75 − 5.820 = 3.273,75 > 0.\nBei 376: 376 · 24,25 − 10.125 = 9.118 − 10.125 = −1.007 < 0.\nDer Sprung der Fixkosten um 4.305 übersteigt den zusätzlichen Deckungsbeitrag 24,25 klar.\n\nFalle: „eine Einheit mehr erhöht den Gewinn“ — am Sprungpunkt vernichtet die Fixkostenschicht\nden bisherigen Gewinn und öffnet ein Verlustband.\n\nDie Aussage ist falsch.",
+        "Teure Schwelle 10.125 / 24,25 = 40.500 / 97 ≈ 417,53 > 375. Für Mengen in [376; 417]\ngilt Fixkostensatz 10.125 bei noch nicht erreichter Schwelle — Gewinn negativ.\nProbe: 417 · 24,25 − 10.125 = −12,75; 418 · 24,25 − 10.125 = 11,5.\n\nFalle: aus positiver billiger Schwelle 240 zu schließen, jenseits von 375 sei man automatisch\nin der Gewinnzone — der Sprung setzt die Schwelle neu auf ≈ 417,53.\n\nDie Aussage ist wahr.",
+        "420 liegt über ≈ 417,53, Fixkosten 10.125.\n420 · 24,25 − 10.125 = 10.185 − 10.125 = 60 > 0.\n\nFalle: 420 noch im Verlustband zu vermuten, weil 420 nahe am Sprung 376 liegt — maßgeblich\nist die teure Schwelle ≈ 417,53, nicht die Sprungstelle.\n\nDie Aussage ist wahr.",
+        "4.305 / 24,25 = 177,525… — der Sprung entspricht dem Deckungsbeitrag von mehr als\n177 Stück, nicht „kleiner als 178 und deshalb harmlos“. Unterhalb von 375 ist der Sprung\nzwar noch nicht aktiv, aber für die Programmplanung jenseits von 375 ist er bindend:\ner öffnet das Verlustband bis ≈ 417,53.\n\nFalle: Nichtaktivierung unter 375 mit wirtschaftlicher Irrelevanz gleichzusetzen — die\nEntscheidung, 376 anzusteuern, muss den Sprung voll einpreisen.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E08",
+      "id": "WISO-M4-E08",
+      "title": "Preisdiskriminierung gegen Einheitspreis",
+      "subsection": "1.4",
+      "chapter": "1",
+      "difficulty_level": "5/5",
+      "context": "Zwei getrennte Märkte, konstante Grenzkosten 8,75.\nMarkt 1: P = 62,5 − 1,25 Q₁. Markt 2: P = 41,25 − 0,75 Q₂.\nErste Regimevariante: dritte-Grad-Diskriminierung mit MR = MC in jedem Markt.\nZweite: einheitlicher Preis auf der aggregierten Nachfrage (beide Märkte offen, sofern der\nPreis den kleineren Prohibitivpreis nicht überschreitet). Gewinne und Mengenumschichtung\nvergleichen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Unter Diskriminierung gelten Q₁ = 21,5 und Q₂ = 21,666…; der Gesamtgewinn beträgt 929,8958…",
+        "Der gewinnmaximale Einheitspreis liegt über 41,25 und bedient nur Markt 1.",
+        "Der Einheitspreis-Gewinn bleibt unter dem Diskriminierungsgewinn, obwohl die Mengensumme nahe beieinander liegt.",
+        "Unter Einheitspreis steigt die Menge in Markt 1 und sinkt sie in Markt 2 gegenüber der Diskriminierung.",
+        "Weil MC konstant 8,75 ist, muss der Einheitspreis-Gewinn dem Diskriminierungsgewinn entsprechen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "MR₁ = 62,5 − 2,5 Q₁ = 8,75 ⇒ Q₁ = 53,75 / 2,5 = 21,5; P₁ = 62,5 − 1,25 · 21,5 = 35,625;\nπ₁ = (35,625 − 8,75) · 21,5 = 577,8125.\nMR₂ = 41,25 − 1,5 Q₂ = 8,75 ⇒ Q₂ = 32,5 / 1,5 = 65/3 ≈ 21,6667; P₂ = 25;\nπ₂ = (25 − 8,75) · 65/3 = 352,0833…; Summe 929,8958…\n\nFalle: Mengen zu addieren und mit einem Mischpreis zu bewerten — die getrennten MR-Bedingungen\nsind der Kern der Diskriminierung.\n\nDie Aussage ist wahr.",
+        "Im beiden-Märkte-Bereich ist P = 105 · 15/32 − Q · 15/32, MR = 105 · 15/32 − 2 Q · 15/32.\nMR = 8,75 liefert Q_u = 259/6 ≈ 43,1667; P_u = 1.855/64 = 28,984375 ≤ 41,25.\nBeide Märkte bleiben offen (Q₁ᵤ ≈ 26,8125; Q₂ᵤ ≈ 16,3542).\n\nFalle: aus P₂-Prohibitiv 41,25 zu schließen, das Optimum liege darüber — das Innenoptimum\nder Aggregatkurve liegt bei ≈ 28,98.\n\nDie Aussage ist falsch.",
+        "Einheitsgewinn (28,984375 − 8,75) · 259/6 = 873,4505… < 929,8958…\nMengensumme Diskriminierung 21,5 + 65/3 = 130/3 ≈ 43,333 gegen Q_u ≈ 43,167 — nahezu gleich,\nGewinnabstand ≈ 56,445.\n\nFalle: „Mengensumme ≈ gleich ⇒ Gewinn gleich“. Die Umschichtung verschiebt Menge in den\nMarkt mit anderer MR; ohne Angleich der MR fällt der Gesamtgewinn.\n\nDie Aussage ist wahr.",
+        "Diskriminierung: Q₁ = 21,5; Q₂ ≈ 21,667. Einheitspreis: Q₁ ≈ 26,8125; Q₂ ≈ 16,354.\nMarkt 1 expandiert um ≈ 5,31; Markt 2 schrumpft um ≈ 5,31.\n\nFalle: einheitlicher Preis als proportionale Kürzung beider Mengen zu lesen — der Preis\n28,98 liegt zwischen den Diskriminierungspreisen 35,625 und 25 und verschiebt Menge vom\nhochpreisigen in den niedrigpreisigen Markt nicht symmetrisch zum Gewinn.\n\nDie Aussage ist wahr.",
+        "Konstante MC vereinfachen MR = MC je Markt, erzwingen aber keinen Gewinn-Gleichstand zwischen\nRegimen. Numerisch 873,4505… gegen 929,8958…; Differenz 7.225/128 = 56,4453125 > 0.\n\nFalle: „konstante MC ⇒ Preisregime irrelevant“. Dritte-Grad-Diskriminierung nutzt\nunterschiedliche Nachfrageelastizitäten; Einheitspreis verwirft genau diese Information.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E09",
+      "id": "WISO-M4-E09",
+      "title": "Humankapital mit Abbruchwahrscheinlichkeit",
+      "subsection": "3.3",
+      "chapter": "3",
+      "difficulty_level": "5/5",
+      "context": "Studium kostet heute Studiengebühren 18.750 zuzüglich entgangenem Arbeitseinkommen 32.500,\ninsgesamt 51.250. Erfolgswahrscheinlichkeit 0,68: dann beträgt der heutige Barwert der\nLohngewinne 97.500. Mit Wahrscheinlichkeit 0,32 bricht die Person ab; Barwert der\nLohngewinne dann nur 12.250. Alternative: kein Studium, Netto 0 gegen dieselbe Basis.\nEin Stipendium senkt die Gebühren um 6.250, falls eingeschrieben wird (entgangenes\nEinkommen bleibt). Abzinsung steckt bereits in den Barwerten. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Erwartungswert der Lohngewinne beträgt 70.220; die NPV ohne Stipendium ist 18.970.",
+        "Mit Stipendium steigt die NPV auf 25.220.",
+        "Selbst im Abbruchzweig allein wäre die NPV ohne Stipendium positiv.",
+        "Eine fälschlich angesetzte Erfolgswahrscheinlichkeit 0,80 lässt die NPV ohne Stipendium als 29.200 erscheinen.",
+        "Weil die NPV ohne Stipendium positiv ist, bleibt der Abbruchzweig für die Entscheidung irrelevant."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "EV = 0,68 · 97.500 + 0,32 · 12.250 = 66.300 + 3.920 = 70.220.\nNPV = 70.220 − 51.250 = 18.970 > 0 — Studium ohne Stipendium lohnt gegen 0.\n\nFalle: nur den Erfolgszweig 97.500 − 51.250 = 46.250 zu rechnen und das Abbruchrisiko zu\nstreichen — das überschätzt die NPV um 27.280.\n\nDie Aussage ist wahr.",
+        "Gebühren nach Stipendium 18.750 − 6.250 = 12.500; Gesamtkosten 12.500 + 32.500 = 45.000.\nNPV = 70.220 − 45.000 = 25.220. Das Stipendium hebt die NPV um genau 6.250.\n\nFalle: das Stipendium auch vom entgangenen Einkommen abzuziehen — es mindert nur Gebühren,\nnicht den Lohnverzicht.\n\nDie Aussage ist wahr.",
+        "Abbruchzweig allein: 12.250 − 51.250 = −39.000 < 0. Ohne den Erfolgszweig lohnt das Studium\nnicht; die positive Gesamt-NPV 18.970 lebt vom Gewicht 0,68 auf 97.500.\n\nFalle: Abbruchgewinn 12.250 gegen nur Gebühren 18.750 zu halten und den Lohnverzicht 32.500\nzu vergessen — auch dann 12.250 − 18.750 < 0, und mit vollem Kostensatz erst recht.\n\nDie Aussage ist falsch.",
+        "Falsches EV = 0,80 · 97.500 + 0,20 · 12.250 = 78.000 + 2.450 = 80.450.\nNPV = 80.450 − 51.250 = 29.200. Gegen korrekte 18.970 beträgt die Überschätzung 10.230.\n\nFalle: 0,80 als „rund 0,68“ zu akzeptieren — die NPV reagiert linear mit Steigung\n(97.500 − 12.250) = 85.250 je Wahrscheinlichkeitspunkt.\n\nDie Aussage ist wahr.",
+        "Der Abbruchzweig ist über die Wahrscheinlichkeit 0,32 im EV fest eingebaut und senkt EV\ngegenüber reinem Erfolg um 0,32 · (97.500 − 12.250) = 27.280. Ohne diesen Zweig entstünde\ndie Schein-NPV 46.250 statt 18.970.\n\nFalle: positive Gesamt-NPV als Freibrief, Risikozweige zu ignorieren — die Positivität gilt\nnur nach Einpreisung des Abbruchs, nicht davor.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M4-E10",
+      "id": "WISO-M4-E10",
+      "title": "Kommanditist gegen Komplementärhaftung",
+      "subsection": "3.1",
+      "chapter": "3",
+      "difficulty_level": "5/5",
+      "context": "Kommanditgesellschaft schuldet Gläubiger A 96.750. Im Gesellschaftsvermögen liegen 41.250.\nKommanditist K ist auf 22.500 begrenzt und hat davon 15.000 eingezahlt; ausstehend 7.500.\nKomplementär U haftet unbeschränkt und verfügt außerhalb der Gesellschaft über 28.750.\nVergleichspfad: dieselbe Schuld in einer OHG, in der K zusätzlich Privatvermögen 19.500 hat\nund beide unbeschränkt haften. Trennen Sie Firmenvermögen, ausstehende Einlage und\nPrivatvermögen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach Verwertung des Gesellschaftsvermögens bleibt eine Lücke von 55.500.",
+        "Kommanditist K haftet für die Restlücke 55.500 unbeschränkt mit seinem gesamten Privatvermögen.",
+        "Nach ausstehender Einlage 7.500 und Privatvermögen des Komplementärs 28.750 bleibt eine Restlücke 19.250.",
+        "In der OHG-Variante mit Privatvermögen K = 19.500 und U = 28.750 wäre die Schuld nach Firmenvermögen und beiden Privatvermögen vollständig gedeckt.",
+        "Die ausstehende Kommanditeinlage 7.500 deckt streng mehr von der Lücke 55.500 als das Privatvermögen des Komplementärs."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Lücke = 96.750 − 41.250 = 55.500. Erst diese Restforderung trifft Einlage und\nPrivatvermögen; wer Firmenvermögen und Privatvermögen in einem Schritt saldiert, verdunkelt\ndie Haftungsreihenfolge.\n\nFalle: die ausstehende Einlage 7.500 schon vom Brutto 96.750 abzuziehen, bevor das\nFirmenvermögen verwertet wird — Reihenfolge ist Vermögen zuerst, dann nachgelagerte Haftung.\n\nDie Aussage ist wahr.",
+        "K haftet nur bis zur ausstehenden Einlage 7.500 (Pflichteinlage 22.500 abzüglich bereits\neingezahlter 15.000). Unbeschränkte Haftung trifft den Komplementär U, nicht K.\n\nFalle: KG-Kommanditisten mit OHG-Gesellschaftern gleichzusetzen — gerade die Einlagengrenze\nunterscheidet die Rechtsformen.\n\nDie Aussage ist falsch.",
+        "Nach K: 55.500 − 7.500 = 48.000. U kann 28.750 zahlen; Restlücke 48.000 − 28.750 = 19.250.\nSelbst beide nachgelagerten Blöcke zusammen (7.500 + 28.750 = 36.250) decken 55.500 nicht.\n\nFalle: U-Privatvermögen 28.750 gegen die Bruttoschuld 96.750 zu halten — maßgeblich ist die\nLücke nach Firmenvermögen und Einlage.\n\nDie Aussage ist wahr.",
+        "OHG: nach Firmenvermögen Lücke 55.500; beide unbeschränkt mit 19.500 + 28.750 = 48.250.\nRestlücke 55.500 − 48.250 = 7.250 > 0 — nicht vollständig gedeckt.\nGesamtmittel 41.250 + 48.250 = 89.500 < 96.750.\n\nFalle: OHG-Privatvermögen automatisch als Volldeckung zu lesen; hier fehlen weiterhin 7.250.\n\nDie Aussage ist falsch.",
+        "7.500 < 28.750 — der Komplementärblock ist größer, nicht kleiner. Relativ zur Lücke:\nEinlage ≈ 13,5 %, U-Privatvermögen ≈ 51,8 %.\n\nFalle: „Kommanditist zahlt zuerst, also mehr“ — Zahlungsreihenfolge setzt keine Betragsordnung;\nstreng mehr verlangte 7.500 > 28.750.\n\nDie Aussage ist falsch."
+      ]
+    }
+  ],
+  "german": {
+    "passage": "(1) Die Mietpreisbremse begrenzt die Miete in einem neuen Vertrag. Maßstab ist die ortsübliche Vergleichsmiete zuzüglich zehn Prozent. Sie trifft Neuverträge in ausgewiesenen Gebieten, nicht jede Bestandsmiete und nicht jeden Ort. Wer schreibt, sämtliche Mieten seien landesweit gedeckelt, liest einen Satz, den der Text ausdrücklich zurückweist. Die Bremse verengt die freie Vereinbarung der Startmiete; sie schafft die Vereinbarung nicht ab.\n\n(2) Maßgeblich für das Gebietsfenster ist der Tag des Vertragsschlusses, nicht der spätere Einzug. Eine Landesverordnung weist das Gebiet aus. Ein Vertrag am Tag vor dem Inkrafttreten bleibt außen vor, auch wenn der Mieter erst danach einzieht. Ein Vertrag am Tag des Inkrafttretens fällt hinein. Der Einzug schaltet das Gebietsfenster nicht um. Das sind zwei Uhren: Vertragsschluss wählt das Fenster, der Einzug den Beginn der Nutzung.\n\n(3) Zwei Ausnahmen stehen nebeneinander und sind nicht dasselbe. Wohnungen bei erster Vermietung nach dem 1. Oktober 2014 bleiben außen vor, wenn sie nach dem 1. Oktober 2014 erstmals genutzt werden. Außerdem bleibt außen vor, wer umfassend modernisiert hat und dabei mindestens ein Drittel der Kosten einer vergleichbaren Neubauwohnung aufgewendet hat. Eine Modernisierung unter dieser Schwelle rettet nicht. Neubau-Erstnutzung und Ein-Drittel-Modernisierung sind zwei Türen, nicht eine.\n\n(4) Im Haus Elbe wird Wohnung A seit 2012 vermietet und 2019 modernisiert; die Kosten erreichen 28 Prozent einer vergleichbaren Neubauwohnung. Die Ein-Drittel-Schwelle ist verfehlt, die Bremse gilt, sofern das Gebiet ausgewiesen ist. Wohnung B wird 2016 erstmals genutzt und erstmals vermietet; sie liegt in der Neubauausnahme. Wohnung C wird 2013 erstmals genutzt, ohne spätere Modernisierung über der Schwelle; die Neubauausnahme greift nicht, weil die Erstnutzung vor dem Stichtag liegt. Wer A und C gleichsetzt, weil beide „alt“ wirken, kommt am Text vorbei: A scheitert an der Modernisierungsschwelle, C am Stichtag der Erstnutzung.\n\n(5) Die Indexmiete ist ein eigenes Instrument und nicht dasselbe wie die Bremse. Bei einer Indexmiete folgt die spätere Anpassung dem Verbraucherpreisindex. Der Text sagt: Die Startmiete eines Indexvertrags in einem ausgewiesenen Gebiet wird gleichwohl an der Bremse gemessen. Spätere Indexschritte werden nicht erneut an der Zehn-Prozent-Grenze der Neuvertragsprüfung gemessen. Wer aus „Indexmiete“ ableitet, die Startmiete sei frei, verlässt den Text. Startprüfung und Indexuhr sind zwei Uhren.\n\n(6) Der Verband wendet ein, Indexmietverträge fielen insgesamt aus der Bremse. Das Ministerium antwortet nicht, jeder Indexvertrag sei frei. Frei von der Neuvertragsprüfung ist die spätere Indexanpassung, nicht die vereinbarte Startmiete. Ein Indexvertrag mit überhöhter Startmiete bleibt an der Bremse messbar. Der Satz des Verbands, Index gleich Befreiung vom ersten Tag an, gilt nach dem Text nicht.\n\n(7) Staffelmiete und Indexmiete dürfen in demselben Vertrag nicht verbunden werden. Eine Staffelmiete setzt künftige Beträge im Voraus fest; eine Indexmiete knüpft an den Index. Die Startmiete einer Staffelmiete in einem ausgewiesenen Gebiet unterliegt der Bremse ebenso. Wer Staffelschritte wie Indexanpassungen liest, vermengt zwei Mechaniken. Der Text setzt Staffel und Index nicht gleich, nur weil beide die Miete später ändern.\n\n(8) Eine überhöhte Startmiete wird durch bloßen Zeitablauf nicht rechtmäßig. Der Mieter muss die Überhöhung rügen. Ohne Rüge bleibt die Rückforderung für die Vergangenheit gesperrt; nach wirksamer Rüge kann er für die Zukunft den zulässigen Betrag verlangen und rückwirkend für einen begrenzten Zeitraum zurückfordern. Der Text sagt nicht, Schweigen für drei Jahre heile die Startmiete dauerhaft. Er sagt auch nicht, ohne Rüge entfalle jeder Anspruch für die Zukunft. Die Rüge öffnet den Weg; sie ist nicht die Bremse selbst.\n\n(9) Ein Möblierungszuschlag tritt neben die Grundmiete und ist nicht automatisch Teil der Vergleichsmiete. Der Text rechnet den Zuschlag nicht in die Zehn-Prozent-Grenze hinein, wenn er gesondert und nachvollziehbar ausgewiesen ist. Fehlt die Ausweisung, zählt der Gesamtbetrag in die Prüfung. Wer jeden Möblierungszuschlag für unbegrenzt hält, verlässt den Text ebenso wie wer ihn stets streicht.",
+    "passageTitle": "Mietpreisbremse, Indexmiete und zwei Fenster",
+    "tasks": [
+      {
+        "id": "WISO-M4-G01",
+        "case_id": "WISO-M4-G01",
+        "title": "Was die Bremse trifft und was nicht",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Reichweite der Mietpreisbremse und den zurückgewiesenen Deckel-Satz.",
+        "statements": [
+          "Die Mietpreisbremse begrenzt die Startmiete neuer Verträge in ausgewiesenen Gebieten auf die ortsübliche Vergleichsmiete zuzüglich zehn Prozent und schafft die Vereinbarung nicht ab.",
+          "Sämtliche Mieten sind landesweit gedeckelt, Bestand und Neuvertrag gleichermaßen.",
+          "Die Bremse trifft nicht jede Bestandsmiete und nicht jeden Ort; ausgewiesene Gebiete und Neuverträge markieren den Anwendungsbereich.",
+          "Zehn Prozent sind ein Zuschlag auf jede gewünschte Ausgangsmiete des Vermieters, unabhängig von der Vergleichsmiete.",
+          "Weil die Bremse die Vereinbarung nur verengt, gilt sie auch außerhalb ausgewiesener Gebiete für jeden Neuvertrag."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Die Mietpreisbremse begrenzt die Startmiete neuer Verträge in ausgewiesenen Gebieten auf die ortsübliche Vergleichsmiete zuzüglich zehn Prozent und schafft die Vereinbarung nicht ab.**\n\nAbsatz 1: Maßstab ist die ortsübliche Vergleichsmiete „zuzüglich zehn Prozent“. Die Bremse trifft Neuverträge in ausgewiesenen Gebieten und „verengt die freie Vereinbarung der Startmiete; sie schafft die Vereinbarung nicht ab.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Sämtliche Mieten sind landesweit gedeckelt, Bestand und Neuvertrag gleichermaßen.**\n\nAbsatz 1 weist genau diesen Satz zurück: Wer schreibt, sämtliche Mieten seien landesweit gedeckelt, liest einen Satz, den der Text „ausdrücklich zurückweist“. Bestand und jeder Ort fallen nicht unter denselben Deckel.\n\n**Falle:** Aus „Bremse“ eine landesweite Deckelung aller Mieten zu machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Die Bremse trifft nicht jede Bestandsmiete und nicht jeden Ort; ausgewiesene Gebiete und Neuverträge markieren den Anwendungsbereich.**\n\nAbsatz 1 sagt beides: Sie trifft Neuverträge in ausgewiesenen Gebieten, „nicht jede Bestandsmiete und nicht jeden Ort.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Zehn Prozent sind ein Zuschlag auf jede gewünschte Ausgangsmiete des Vermieters, unabhängig von der Vergleichsmiete.**\n\nAbsatz 1 bindet den Maßstab an die ortsübliche Vergleichsmiete zuzüglich zehn Prozent, nicht an eine frei gewählte Ausgangsmiete des Vermieters.\n\n**Falle:** Die Zehn Prozent von der Vergleichsmiete zu lösen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Weil die Bremse die Vereinbarung nur verengt, gilt sie auch außerhalb ausgewiesener Gebiete für jeden Neuvertrag.**\n\nAbsatz 1 koppelt die Wirkung an ausgewiesene Gebiete. Verengen heißt nicht: überall. Absatz 2 ergänzt die Ausweisung durch Landesverordnung.\n\n**Falle:** „Verengen statt abschaffen“ als Beweis für landesweite Geltung zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G02",
+        "case_id": "WISO-M4-G02",
+        "title": "Gebietsfenster und der Vortag",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welche Uhr das Gebietsfenster wählt und was der Einzug nicht schaltet.",
+        "statements": [
+          "Ein Vertrag am Tag vor dem Inkrafttreten bleibt außen vor, auch wenn der Einzug danach liegt, und ein Vertrag am Tag des Inkrafttretens fällt hinein.",
+          "Jeder Vorgang, dessen Einzug nach dem Inkrafttreten liegt, fällt in die Bremse, gleichgültig wann der Vertrag geschlossen wurde.",
+          "Vertragsschluss wählt das Gebietsfenster, der Einzug den Beginn der Nutzung; das sind zwei Uhren.",
+          "Tag vor Inkrafttreten und Tag des Inkrafttretens werden mit demselben Gebietsstatus geprüft, weil beide Kalendertage benachbart sind.",
+          "Die Landesverordnung weist das Gebiet aus, aber erst der Einzug entscheidet, ob die Bremse greift."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Ein Vertrag am Tag vor dem Inkrafttreten bleibt außen vor, auch wenn der Einzug danach liegt, und ein Vertrag am Tag des Inkrafttretens fällt hinein.**\n\nAbsatz 2: Vertrag am Tag vor dem Inkrafttreten „bleibt außen vor, auch wenn der Mieter erst danach einzieht.“ Vertrag am Tag des Inkrafttretens „fällt hinein.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Vorgang, dessen Einzug nach dem Inkrafttreten liegt, fällt in die Bremse, gleichgültig wann der Vertrag geschlossen wurde.**\n\nAbsatz 2 macht den Vertragsschluss maßgeblich; der Einzug „schaltet das Gebietsfenster nicht um“. Ein Vortagsvertrag bleibt außen vor trotz späteren Einzugs.\n\n**Falle:** Aus dem späteren Einzug die alleinige Gebietsuhr zu machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Vertragsschluss wählt das Gebietsfenster, der Einzug den Beginn der Nutzung; das sind zwei Uhren.**\n\nAbsatz 2 formuliert genau diese Teilung: „Vertragsschluss wählt das Fenster, der Einzug den Beginn der Nutzung.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Tag vor Inkrafttreten und Tag des Inkrafttretens werden mit demselben Gebietsstatus geprüft, weil beide Kalendertage benachbart sind.**\n\nAbsatz 2 stellt die Wende gegenüber: Vortag außen vor, Tag des Inkrafttretens hinein. Benachbarte Daten heißen gerade nicht derselbe Status.\n\n**Falle:** Kalendernähe mit Regelgleichheit zu verwechseln.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Die Landesverordnung weist das Gebiet aus, aber erst der Einzug entscheidet, ob die Bremse greift.**\n\nAbsatz 2: Die Verordnung weist aus; maßgeblich für das Fenster bleibt der Vertragsschluss, nicht der Einzug.\n\n**Falle:** Ausweisung und Einzug zur entscheidenden Uhr zusammenzuziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G03",
+        "case_id": "WISO-M4-G03",
+        "title": "Zwei Türen, nicht eine Ausnahme",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Neubau-Erstnutzung und Ein-Drittel-Modernisierung als getrennte Ausnahmen.",
+        "statements": [
+          "Neubau-Erstnutzung nach dem 1. Oktober 2014 und eine Modernisierung mit mindestens einem Drittel der vergleichbaren Neubaukosten sind zwei Ausnahmen und nicht dasselbe.",
+          "Jede Modernisierung nach 2014 rettet vor der Bremse, auch unter der Ein-Drittel-Schwelle.",
+          "Wer einen der beiden Ausnahmewege verfehlt, bleibt nicht automatisch in der anderen Tür; unter der Schwelle modernisieren rettet die verfehlte Neubau-Erstnutzung nicht.",
+          "Erste Vermietung nach dem 1. Oktober 2014 genügt allein, auch wenn die Wohnung schon 2012 erstmals genutzt wurde.",
+          "Weil beide Ausnahmen Wohnraum betreffen, sind sie im Text dieselbe Rechtsfolge mit demselben Tatbestand."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Neubau-Erstnutzung nach dem 1. Oktober 2014 und eine Modernisierung mit mindestens einem Drittel der vergleichbaren Neubaukosten sind zwei Ausnahmen und nicht dasselbe.**\n\nAbsatz 3: „Zwei Ausnahmen stehen nebeneinander und sind nicht dasselbe.“ Schluss: „Neubau-Erstnutzung und Ein-Drittel-Modernisierung sind zwei Türen, nicht eine.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jede Modernisierung nach 2014 rettet vor der Bremse, auch unter der Ein-Drittel-Schwelle.**\n\nAbsatz 3: Eine Modernisierung „unter dieser Schwelle rettet nicht.“ Erstnutzung und Ein-Drittel sind getrennt; bloßes Modernisieren nach 2014 genügt nicht.\n\n**Falle:** Jede Baumaßnahme nach dem Stichtag zur Ausnahme zu machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer einen der beiden Ausnahmewege verfehlt, bleibt nicht automatisch in der anderen Tür; unter der Schwelle modernisieren rettet die verfehlte Neubau-Erstnutzung nicht.**\n\nAbsatz 3 trennt die Türen und sagt ausdrücklich, Modernisierung unter der Schwelle rette nicht. Eine verfehlte Erstnutzung wird dadurch nicht geheilt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Erste Vermietung nach dem 1. Oktober 2014 genügt allein, auch wenn die Wohnung schon 2012 erstmals genutzt wurde.**\n\nAbsatz 3 verlangt Erstvermietung und Erstnutzung nach dem 1. Oktober 2014. Absatz 4 zeigt Wohnung C: Erstnutzung 2013, deshalb greift die Neubauausnahme nicht.\n\n**Falle:** Nur die Vermietung zu lesen und die Erstnutzung zu streichen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Weil beide Ausnahmen Wohnraum betreffen, sind sie im Text dieselbe Rechtsfolge mit demselben Tatbestand.**\n\nAbsatz 3 stellt sie nebeneinander und nennt sie ausdrücklich „nicht dasselbe“ — zwei Türen, nicht eine. Gemeinsamer Gegenstand Wohnraum macht die Tatbestände nicht gleich.\n\n**Falle:** Vom gemeinsamen Bezugspunkt auf Tatbestandsidentität schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G04",
+        "case_id": "WISO-M4-G04",
+        "title": "Haus Elbe: A, B und C",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welche Wohnung welche Ausnahme trifft und warum A und C nicht zusammenfallen.",
+        "statements": [
+          "Wohnung A verfehlt mit 28 Prozent die Ein-Drittel-Schwelle, und Wohnung B liegt in der Neubauausnahme.",
+          "Wohnung A und Wohnung C bleiben aus demselben Grund außen vor, weil beide schon vor 2014 genutzt wurden.",
+          "Wohnung C greift die Neubauausnahme nicht, weil die Erstnutzung vor dem Stichtag liegt.",
+          "28 Prozent reichen im Text als Ein-Drittel-Modernisierung, aufgerundet zugunsten der Ausnahme.",
+          "Wohnung B entkommt der Bremse über die Neubauausnahme; ob das Gebiet ausgewiesen ist, ändert an dieser Ausnahme nichts."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Wohnung A verfehlt mit 28 Prozent die Ein-Drittel-Schwelle, und Wohnung B liegt in der Neubauausnahme.**\n\nAbsatz 4: A erreicht 28 Prozent — „Die Ein-Drittel-Schwelle ist verfehlt“. B wird 2016 erstmals genutzt und vermietet und „liegt in der Neubauausnahme.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Wohnung A und Wohnung C bleiben aus demselben Grund außen vor, weil beide schon vor 2014 genutzt wurden.**\n\nAbsatz 4 widerspricht der Gleichsetzung: A scheitert an der Modernisierungsschwelle (und die Bremse gilt bei Ausweisung), C am Stichtag der Erstnutzung für die Neubauausnahme. „Wer A und C gleichsetzt … kommt am Text vorbei.“\n\n**Falle:** „Alt“ als gemeinsamen Ausnahmegrund zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wohnung C greift die Neubauausnahme nicht, weil die Erstnutzung vor dem Stichtag liegt.**\n\nAbsatz 4: Wohnung C 2013 erstmals genutzt; „die Neubauausnahme greift nicht, weil die Erstnutzung vor dem Stichtag liegt.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) 28 Prozent reichen im Text als Ein-Drittel-Modernisierung, aufgerundet zugunsten der Ausnahme.**\n\nAbsatz 4: 28 Prozent — Schwelle verfehlt. Der Text rundet nicht zugunsten der Ausnahme und verlangt „mindestens ein Drittel“ (Absatz 3).\n\n**Falle:** Nahe Zahlen zur erfüllten Schwelle aufzurunden.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Wohnung B entkommt der Bremse über die Neubauausnahme; ob das Gebiet ausgewiesen ist, ändert an dieser Ausnahme nichts.**\n\nAbsatz 4 ordnet B der Neubauausnahme zu. Absatz 3 stellt die Ausnahme neben die Gebietsregel: Wer in der Ausnahme steht, bleibt außen vor — die Gebietsausweisung steuert die Bremse, nicht diese Tür.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ]
+      },
+      {
+        "id": "WISO-M4-G05",
+        "case_id": "WISO-M4-G05",
+        "title": "Index: Startmiete und spätere Uhr",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen die Trennung von Startprüfung und Indexanpassung.",
+        "statements": [
+          "Die Startmiete eines Indexvertrags in einem ausgewiesenen Gebiet wird an der Bremse gemessen; spätere Indexschritte werden nicht erneut an der Zehn-Prozent-Neuvertragsgrenze gemessen.",
+          "Aus dem Wort Indexmiete folgt, dass die Startmiete frei vereinbart werden darf.",
+          "Startprüfung und Indexuhr sind zwei Uhren; die Indexmiete ist nicht dasselbe Instrument wie die Bremse.",
+          "Jeder spätere Indexschritt muss erneut die ortsübliche Vergleichsmiete zuzüglich zehn Prozent einhalten.",
+          "Weil spätere Anpassungen dem Index folgen, entfällt die Gebietsausweisung für den ganzen Indexvertrag."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Die Startmiete eines Indexvertrags in einem ausgewiesenen Gebiet wird an der Bremse gemessen; spätere Indexschritte werden nicht erneut an der Zehn-Prozent-Neuvertragsgrenze gemessen.**\n\nAbsatz 5 sagt beides: Startmiete „wird gleichwohl an der Bremse gemessen.“ Spätere Indexschritte „werden nicht erneut an der Zehn-Prozent-Grenze der Neuvertragsprüfung gemessen.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Aus dem Wort Indexmiete folgt, dass die Startmiete frei vereinbart werden darf.**\n\nAbsatz 5: Wer aus „Indexmiete“ ableitet, die Startmiete sei frei, „verlässt den Text.“ Startprüfung und Indexuhr bleiben getrennt.\n\n**Falle:** Den Namen des Instruments zur Befreiung der Startmiete zu machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Startprüfung und Indexuhr sind zwei Uhren; die Indexmiete ist nicht dasselbe Instrument wie die Bremse.**\n\nAbsatz 5: Indexmiete ist „ein eigenes Instrument und nicht dasselbe wie die Bremse.“ Schluss: „Startprüfung und Indexuhr sind zwei Uhren.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Jeder spätere Indexschritt muss erneut die ortsübliche Vergleichsmiete zuzüglich zehn Prozent einhalten.**\n\nAbsatz 5 verneint die erneute Neuvertragsprüfung für spätere Indexschritte; sie folgen dem Verbraucherpreisindex.\n\n**Falle:** Die Startgrenze auf jede spätere Anpassung zu legen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Weil spätere Anpassungen dem Index folgen, entfällt die Gebietsausweisung für den ganzen Indexvertrag.**\n\nAbsatz 5 hält die Startmiete im ausgewiesenen Gebiet an der Bremse. Die Indexuhr ersetzt nicht die Gebietsbindung der Startprüfung.\n\n**Falle:** Von der Indexuhr auf Wegfall des Gebietsfensters schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G06",
+        "case_id": "WISO-M4-G06",
+        "title": "Verbandssatz und ministerielle Lesart der Bremse",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welchen Index-Satz der Text dem Verband nicht gibt.",
+        "statements": [
+          "Frei von der Neuvertragsprüfung ist nach dem Text die spätere Indexanpassung, nicht die vereinbarte Startmiete.",
+          "Das Ministerium macht sich den Satz zu eigen, Indexmietverträge fielen insgesamt aus der Bremse.",
+          "Ein Indexvertrag mit überhöhter Startmiete bleibt an der Bremse messbar.",
+          "Index gleich Befreiung vom ersten Tag an ist der Satz, den der Text dem Verband bestätigt.",
+          "Verband und Text ziehen aus der Indexmiete denselben Schluss zur Startmiete."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Frei von der Neuvertragsprüfung ist nach dem Text die spätere Indexanpassung, nicht die vereinbarte Startmiete.**\n\nAbsatz 6: „Frei von der Neuvertragsprüfung ist die spätere Indexanpassung, nicht die vereinbarte Startmiete.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Das Ministerium macht sich den Satz zu eigen, Indexmietverträge fielen insgesamt aus der Bremse.**\n\nAbsatz 6: Der Verband wendet die Gesamtheitsthese ein; „Das Ministerium antwortet nicht, jeder Indexvertrag sei frei.“ Der Verbandssatz gilt nach dem Text nicht.\n\n**Falle:** Vorkommen beider Akteure als Einigkeit zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Ein Indexvertrag mit überhöhter Startmiete bleibt an der Bremse messbar.**\n\nAbsatz 6 sagt das wörtlich: „Ein Indexvertrag mit überhöhter Startmiete bleibt an der Bremse messbar.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Index gleich Befreiung vom ersten Tag an ist der Satz, den der Text dem Verband bestätigt.**\n\nAbsatz 6: „Der Satz des Verbands, Index gleich Befreiung vom ersten Tag an, gilt nach dem Text nicht.“\n\n**Falle:** Die Verbandsforderung als Textaussage zu übernehmen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Verband und Text ziehen aus der Indexmiete denselben Schluss zur Startmiete.**\n\nAbsatz 6 stellt Verband (insgesamt frei) und Text (nur spätere Anpassung frei von der Neuvertragsprüfung) gegenüber. Derselbe Schluss liegt nicht vor.\n\n**Falle:** Gemeinsames Stichwort Index als gemeinsame Rechtsfolge zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G07",
+        "case_id": "WISO-M4-G07",
+        "title": "Staffel und Index nicht denselben Vertrag",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen das Verbindungsverbot und die Startmiete der Staffel.",
+        "statements": [
+          "Staffelmiete und Indexmiete dürfen in demselben Vertrag nicht verbunden werden, und die Startmiete einer Staffel in einem ausgewiesenen Gebiet unterliegt der Bremse ebenso.",
+          "Staffelschritte sind im Text dasselbe wie Indexanpassungen, weil beide die Miete später ändern.",
+          "Eine Staffelmiete setzt künftige Beträge im Voraus fest; eine Indexmiete knüpft an den Index.",
+          "Weil die Staffel künftige Beträge festsetzt, entfällt die Bremsenprüfung der Startmiete.",
+          "Ein Vertrag darf Staffel und Index verbinden, wenn die Startmiete die Bremse einhält."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Staffelmiete und Indexmiete dürfen in demselben Vertrag nicht verbunden werden, und die Startmiete einer Staffel in einem ausgewiesenen Gebiet unterliegt der Bremse ebenso.**\n\nAbsatz 7: Sie „dürfen in demselben Vertrag nicht verbunden werden.“ Die Startmiete einer Staffelmiete in einem ausgewiesenen Gebiet „unterliegt der Bremse ebenso.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Staffelschritte sind im Text dasselbe wie Indexanpassungen, weil beide die Miete später ändern.**\n\nAbsatz 7: Wer Staffelschritte wie Indexanpassungen liest, „vermengt zwei Mechaniken.“ Der Text setzt sie „nicht gleich, nur weil beide die Miete später ändern.“\n\n**Falle:** Vom gemeinsamen späteren Ändern auf Mechanikgleichheit schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Eine Staffelmiete setzt künftige Beträge im Voraus fest; eine Indexmiete knüpft an den Index.**\n\nAbsatz 7 formuliert genau diese Gegenüberstellung der Mechaniken.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Weil die Staffel künftige Beträge festsetzt, entfällt die Bremsenprüfung der Startmiete.**\n\nAbsatz 7 hält die Startmiete der Staffel in ausgewiesenen Gebieten unter der Bremse. Vorausfestsetzung ersetzt die Startprüfung nicht.\n\n**Falle:** Spätere Staffelbeträge als Freistellung der Startmiete zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Ein Vertrag darf Staffel und Index verbinden, wenn die Startmiete die Bremse einhält.**\n\nAbsatz 7 verbietet die Verbindung in demselben Vertrag ohne diese Ausnahme. Die Startprüfung heilt das Verbindungsverbot nicht.\n\n**Falle:** Eine erfüllte Startprüfung als Erlaubnis zur Mischform zu nehmen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G08",
+        "case_id": "WISO-M4-G08",
+        "title": "Rüge öffnet, heilt nicht",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, was Schweigen und was die Rüge für Vergangenheit und Zukunft tun.",
+        "statements": [
+          "Ohne Rüge bleibt die Rückforderung für die Vergangenheit gesperrt; nach wirksamer Rüge kann der Mieter für die Zukunft den zulässigen Betrag verlangen und rückwirkend für einen begrenzten Zeitraum zurückfordern.",
+          "Schweigen für drei Jahre heilt die überhöhte Startmiete dauerhaft.",
+          "Die Rüge öffnet den Weg; sie ist nicht die Bremse selbst, und bloßer Zeitablauf macht die überhöhte Startmiete nicht rechtmäßig.",
+          "Ohne Rüge entfällt jeder Anspruch auch für die Zukunft.",
+          "Nach der Rüge entfällt jede Begrenzung der Rückwirkung; der Mieter holt die gesamte Vertragszeit zurück."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Ohne Rüge bleibt die Rückforderung für die Vergangenheit gesperrt; nach wirksamer Rüge kann der Mieter für die Zukunft den zulässigen Betrag verlangen und rückwirkend für einen begrenzten Zeitraum zurückfordern.**\n\nAbsatz 8: Ohne Rüge bleibt die Rückforderung für die Vergangenheit „gesperrt“; nach wirksamer Rüge Zukunft und begrenzte Rückwirkung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Schweigen für drei Jahre heilt die überhöhte Startmiete dauerhaft.**\n\nAbsatz 8: Der Text sagt nicht, Schweigen für drei Jahre heile die Startmiete dauerhaft. Bloßer Zeitablauf macht sie nicht rechtmäßig.\n\n**Falle:** Lange Untätigkeit als Heilung zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Die Rüge öffnet den Weg; sie ist nicht die Bremse selbst, und bloßer Zeitablauf macht die überhöhte Startmiete nicht rechtmäßig.**\n\nAbsatz 8: „Die Rüge öffnet den Weg; sie ist nicht die Bremse selbst.“ Und: Überhöhung wird „durch bloßen Zeitablauf nicht rechtmäßig.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Ohne Rüge entfällt jeder Anspruch auch für die Zukunft.**\n\nAbsatz 8 sagt ausdrücklich nicht, ohne Rüge entfalle jeder Anspruch für die Zukunft. Gesperrt ist die Rückforderung der Vergangenheit ohne Rüge.\n\n**Falle:** Die Sperre der Vergangenheit auf die gesamte Zukunft zu ziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Nach der Rüge entfällt jede Begrenzung der Rückwirkung; der Mieter holt die gesamte Vertragszeit zurück.**\n\nAbsatz 8 erlaubt Rückforderung „für einen begrenzten Zeitraum“, nicht die unbegrenzte gesamte Vertragszeit.\n\n**Falle:** „Rückwirkend“ als schrankenlos zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G09",
+        "case_id": "WISO-M4-G09",
+        "title": "Möblierungszuschlag und Ausweisung",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, wann der Zuschlag in die Zehn-Prozent-Prüfung fällt.",
+        "statements": [
+          "Ist der Möblierungszuschlag gesondert und nachvollziehbar ausgewiesen, rechnet der Text ihn nicht in die Zehn-Prozent-Grenze hinein.",
+          "Fehlt die Ausweisung, zählt der Gesamtbetrag gleichwohl nicht in die Prüfung, weil Möblierung immer Sondergut ist.",
+          "Wer jeden Möblierungszuschlag für unbegrenzt hält, verlässt den Text ebenso wie wer ihn stets streicht.",
+          "Der Möblierungszuschlag ist automatisch Teil der Vergleichsmiete und erhöht damit die zulässige Startmiete um denselben Betrag.",
+          "Nachvollziehbare Ausweisung und fehlende Ausweisung führen im Text zur selben Behandlung in der Zehn-Prozent-Prüfung."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Ist der Möblierungszuschlag gesondert und nachvollziehbar ausgewiesen, rechnet der Text ihn nicht in die Zehn-Prozent-Grenze hinein.**\n\nAbsatz 9: Der Text rechnet den Zuschlag nicht in die Zehn-Prozent-Grenze hinein, „wenn er gesondert und nachvollziehbar ausgewiesen ist.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Fehlt die Ausweisung, zählt der Gesamtbetrag gleichwohl nicht in die Prüfung, weil Möblierung immer Sondergut ist.**\n\nAbsatz 9: Fehlt die Ausweisung, „zählt der Gesamtbetrag in die Prüfung.“ Sondergut ohne Ausweisung rettet nicht.\n\n**Falle:** Den Charakter Möblierung über die fehlende Ausweisung zu stellen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer jeden Möblierungszuschlag für unbegrenzt hält, verlässt den Text ebenso wie wer ihn stets streicht.**\n\nAbsatz 9 weist beide Extreme zurück: unbegrenzt und stets streichen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Der Möblierungszuschlag ist automatisch Teil der Vergleichsmiete und erhöht damit die zulässige Startmiete um denselben Betrag.**\n\nAbsatz 9: Er tritt neben die Grundmiete und „ist nicht automatisch Teil der Vergleichsmiete.“\n\n**Falle:** Neben-der-Grundmiete als Erhöhung der Vergleichsmiete zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Nachvollziehbare Ausweisung und fehlende Ausweisung führen im Text zur selben Behandlung in der Zehn-Prozent-Prüfung.**\n\nAbsatz 9 trennt die Fälle: ausgewiesen → nicht in die Grenze; fehlt Ausweisung → Gesamtbetrag zählt. Dieselbe Behandlung liegt nicht vor.\n\n**Falle:** Beide Varianten als gleichwertige Möblierung zu lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M4-G10",
+        "case_id": "WISO-M4-G10",
+        "title": "Gebiet, Vertragstyp und Ausweisung zugleich",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Querschnitt: Gebiet, Ausnahme, Indexuhr und Rüge.",
+        "statements": [
+          "Für die Bremsenprüfung der Startmiete müssen Neuvertrag und ausgewiesenes Gebiet zusammenkommen; eine verfehlte Neubau- oder Modernisierungsausnahme lässt die Prüfung nicht von selbst entfallen.",
+          "Ein Indexvertrag in ausgewiesenem Gebiet entzieht der Startmiete die Bremsenprüfung, sobald spätere Schritte dem Index folgen.",
+          "Vortagsvertrag und Einzug danach bleiben außen vor dem Gebietsfenster; Wohnung B entkommt über die Neubauausnahme; ohne Rüge bleibt die Rückforderung der Vergangenheit gesperrt.",
+          "Staffel und Index dürfen verbunden werden, wenn zugleich gerügt und möbliert ausgewiesen wird.",
+          "Haus-Elbe-Wohnung A und ein Indexvertrag mit überhöhter Startmiete können beide an der Bremse messbar bleiben, und der Verbandssatz zur Gesamtheitbefreiung gilt für keinen von beiden."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Für die Bremsenprüfung der Startmiete müssen Neuvertrag und ausgewiesenes Gebiet zusammenkommen; eine verfehlte Neubau- oder Modernisierungsausnahme lässt die Prüfung nicht von selbst entfallen.**\n\nAbsatz 1–3: Neuvertrag in ausgewiesenem Gebiet; Ausnahmen sind eigene Türen. Wer sie verfehlt (Absatz 4: A), bleibt in der Prüfung, sofern das Gebiet ausgewiesen ist.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Ein Indexvertrag in ausgewiesenem Gebiet entzieht der Startmiete die Bremsenprüfung, sobald spätere Schritte dem Index folgen.**\n\nAbsatz 5–6: Spätere Indexschritte sind frei von der Neuvertragsprüfung; die Startmiete bleibt messbar. Indexuhr ersetzt die Startprüfung nicht.\n\n**Falle:** Spätere Freiheit auf den ersten Tag zurückzuziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Vortagsvertrag und Einzug danach bleiben außen vor dem Gebietsfenster; Wohnung B entkommt über die Neubauausnahme; ohne Rüge bleibt die Rückforderung der Vergangenheit gesperrt.**\n\nAbsatz 2: Vortag außen vor trotz späteren Einzugs. Absatz 4: B in der Neubauausnahme. Absatz 8: ohne Rüge Vergangenheit gesperrt. Drei getrennte Regeln, die der Text nebeneinander hält.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Staffel und Index dürfen verbunden werden, wenn zugleich gerügt und möbliert ausgewiesen wird.**\n\nAbsatz 7 verbietet die Verbindung ohne diese Rettung. Rüge (Absatz 8) und Möblierungsausweis (Absatz 9) steuern andere Fragen und heben das Verbot nicht auf.\n\n**Falle:** Unzusammenhängende Institute zu einer Erlaubnis zu addieren.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Haus-Elbe-Wohnung A und ein Indexvertrag mit überhöhter Startmiete können beide an der Bremse messbar bleiben, und der Verbandssatz zur Gesamtheitbefreiung gilt für keinen von beiden.**\n\nAbsatz 4: A verfehlt die Modernisierungsschwelle, Bremse gilt bei Ausweisung. Absatz 6: überhöhte Index-Startmiete bleibt messbar; Verbandssatz gilt nicht. Beide Fälle zeigen in dieselbe Richtung gegen Gesamtheitbefreiung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ]
+      },
+      {
+        "id": "WISO-M4-G11",
+        "case_id": "WISO-M4-G11",
+        "title": "15 Prozent vom Ausgang, nicht vom Zwischenstand",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen nur den Kurztext zur Kappungsgrenze bei Bestand.",
+        "statements": [
+          "Die Kappungsgrenze begrenzt Bestandserhöhungen und ist nicht dieselbe Regel wie die Mietpreisbremse für Neuverträge; in ausgewiesenen Gebieten gilt 15 Prozent in drei Jahren statt 20.",
+          "Bei Haus Nord darf man 15 Prozent auf die heutigen 900 legen und so 135 freigeben.",
+          "Eine weitere Erhöhung um 80 Euro auf 980 bleibt bei Nord unter 15 Prozent von 800, gerechnet vom Ausgangswert vor drei Jahren.",
+          "Haus Süd und Haus Nord haben dieselbe Kappung, weil beide Bestandserhöhungen betreffen.",
+          "Derselbe Sprung von 800 auf 980 wäre in Süd mit 22,5 Prozent über der 20-Prozent-Grenze; Gebiet entscheidet die Höhe der Grenze, nicht ob überhaupt eine Grenze gilt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Die Kappungsgrenze begrenzt Bestandserhöhungen und ist nicht dieselbe Regel wie die Mietpreisbremse für Neuverträge; in ausgewiesenen Gebieten gilt 15 Prozent in drei Jahren statt 20.**\n\nNur der Kurztext zur Kappungsgrenze (passage_override): Absatz 1 trennt Kappung (Erhöhungen im laufenden Verhältnis) und Mietpreisbremse (Neuvertrag). In ausgewiesenen Gebieten sinkt die Grenze auf 15 Prozent in drei Jahren, sonst 20.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Bei Haus Nord darf man 15 Prozent auf die heutigen 900 legen und so 135 freigeben.**\n\nOverride Absatz 2: Wer die 15 Prozent auf die heutigen 900 legt und 135 freigibt, „rechnet nach dem Text falsch.“ Maßstab ist der Stand vor drei Jahren (800).\n\n**Falle:** Den letzten Zwischenstand zur Basis der Kappung zu machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Eine weitere Erhöhung um 80 Euro auf 980 bleibt bei Nord unter 15 Prozent von 800, gerechnet vom Ausgangswert vor drei Jahren.**\n\nOverride Absatz 2: Miete vor drei Jahren 800, heute 900; weitere 80 auf 980 „bliebe unter 15 Prozent von 800, gerechnet vom Ausgangswert vor drei Jahren.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Haus Süd und Haus Nord haben dieselbe Kappung, weil beide Bestandserhöhungen betreffen.**\n\nOverride Absatz 3: Süd außerhalb — 20 Prozent; Nord ausgewiesen — 15 Prozent. „Der Text sagt nicht, Süd und Nord hätten dieselbe Kappung, nur weil beide Bestandserhöhungen betreffen.“\n\n**Falle:** Vom gemeinsamen Gegenstand Bestand auf gleiche Grenzenhöhe schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Derselbe Sprung von 800 auf 980 wäre in Süd mit 22,5 Prozent über der 20-Prozent-Grenze; Gebiet entscheidet die Höhe der Grenze, nicht ob überhaupt eine Grenze gilt.**\n\nOverride Absatz 3: 800 auf 980 = 22,5 Prozent, über 20 in Süd. „Gebiet entscheidet die Höhe der Grenze, nicht ob überhaupt eine Grenze gilt.“\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ],
+        "passage_override": "(1) Die Kappungsgrenze begrenzt die Erhöhung einer bestehenden Miete, nicht die Startmiete eines neuen Vertrags. In drei Jahren darf die Bestandsmiete um höchstens 20 Prozent steigen. In ausgewiesenen Gebieten sinkt die Grenze auf 15 Prozent in drei Jahren. Der Text setzt die Kappungsgrenze nicht mit der Mietpreisbremse gleich: Die eine prüft Erhöhungen im laufenden Mietverhältnis, die andere die Vereinbarung beim Neuvertrag.\n\n(2) Haus Nord liegt im ausgewiesenen Gebiet. Die Miete lag vor drei Jahren bei 800 Euro und steht heute bei 900. Eine weitere Erhöhung um 80 Euro auf 980 bliebe unter 15 Prozent von 800, gerechnet vom Ausgangswert vor drei Jahren. Wer die 15 Prozent auf die heutigen 900 legt und 135 freigibt, rechnet nach dem Text falsch. Maßstab ist der Stand vor drei Jahren, nicht der letzte Zwischenstand.\n\n(3) Haus Süd liegt außerhalb des ausgewiesenen Gebiets. Dort gilt die 20-Prozent-Grenze. Derselbe Sprung von 800 auf 980 wäre 22,5 Prozent und läge über 20. Der Text sagt nicht, Süd und Nord hätten dieselbe Kappung, nur weil beide Bestandserhöhungen betreffen. Gebiet entscheidet die Höhe der Grenze, nicht ob überhaupt eine Grenze gilt.",
+        "passage_title_override": "Kappungsgrenze, Gebiet und drei Jahre"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "WISO-M4-M01",
+      "id": "WISO-M4-M01",
+      "title": "Sechs Module, genau drei aktiv",
+      "chapter": 1,
+      "subsection": "1.4",
+      "difficulty_level": "5/5",
+      "context": "Aus den sechs Modulen $\\{M_1,\\ldots,M_6\\}$ werden genau drei aktiv geschaltet. Es gelten alle sechs Regeln zugleich:\n\n(1) Genau zwei der Module $M_1,M_2,M_3$ sind aktiv.\n\n(2) $M_4$ ist genau dann aktiv, wenn $M_1$ aktiv ist.\n\n(3) Wenn $M_5$ aktiv ist, dann sind $M_2$ und $M_3$ beide aktiv.\n\n(4) Genau eines der Module $M_5$ und $M_6$ ist aktiv.\n\n(5) $M_3$ und $M_4$ sind nicht beide aktiv.\n\n(6) Mindestens eines der Module $M_5$ und $M_6$ ist aktiv.\n\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Es gibt genau zwei zulässige Belegungen.",
+        "In jeder zulässigen Belegung sind $M_2$ und $M_3$ aktiv.",
+        "In jeder zulässigen Belegung ist $M_5$ aktiv.",
+        "Regel (1) ist allein entbehrlich: ohne sie bleibt dieselbe Lösungsmenge.",
+        "Regel (6) ist allein entbehrlich: ohne sie bleibt dieselbe Lösungsmenge."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nVollständige Enumeration der Dreier unter (1)–(6) liefert nur\n$$\n\\{M_2,M_3,M_5\\}\\quad\\text{und}\\quad\\{M_2,M_3,M_6\\}.\n$$\nBeide erfüllen XOR (4), die Zwei-aus-drei-Regel (1) und die übrigen Implikationen. Eine dritte Dreierkombination verletzt mindestens eine Regel.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\nIn beiden Lösungen steht $\\{M_2,M_3\\}$ fest. Wäre eines von beiden inaktiv, müsste (1) durch $M_1$ und das verbleibende Modul aus $\\{M_2,M_3\\}$ erfüllt werden; dann erzwingt (2) auch $M_4$, und (5) schließt $M_3$ aus — der verbleibende Platz reicht nicht, (1) und (3)–(4) zugleich zu bedienen.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nDie Lösung $\\{M_2,M_3,M_6\\}$ erfüllt alle sechs Regeln und enthält $M_5$ nicht. $M_5$ ist also nicht erzwungen.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\nOhne nur (1) wird zusätzlich\n$$\n\\{M_1,M_4,M_6\\}\n$$\nzulässig (zwei aus $\\{M_1,M_2,M_3\\}$ entfällt als Forderung; (2)–(6) halten). Die Lösungsmenge wächst von zwei auf drei.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nRegel (4) verlangt bereits genau eines von $M_5,M_6$, also insbesondere mindestens eines. Jede Belegung, die (1)–(5) erfüllt, erfüllt automatisch (6). Die beiden Lösungen bleiben dieselben; keine neue Dreierkombination entsteht.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Unter Kardinalität drei erzwingen (1) und (2) zusammen mit (5), dass $M_1$ und $M_4$ ausbleiben: wären sie aktiv, bliebe nur ein freier Platz, aber (1) verlangt noch ein zweites Modul aus $\\{M_2,M_3\\}$, und (5) verbietet $M_3$ neben $M_4$. Zulässig bleibt nur\n$$\n\\{M_2,M_3\\}\\quad\\text{aktiv aus }\\{M_1,M_2,M_3\\},\n$$\nalso bereits zwei Plätze belegt. Der dritte Platz ist $M_5$ oder $M_6$ (XOR aus (4)); beide Varianten erfüllen (3) und (6). Die beiden Lösungen sind\n$$\n\\{M_2,M_3,M_5\\}\\qquad\\text{und}\\qquad\\{M_2,M_3,M_6\\}.\n$$\nOhne nur (1) kommt zusätzlich $\\{M_1,M_4,M_6\\}$ hinzu. Ohne nur (6) bleibt dieselbe Menge, weil (4) bereits genau eines von $M_5,M_6$ erzwingt.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M02",
+      "id": "WISO-M4-M02",
+      "title": "Doppelt geschachtelter Bruch mit vier Lücken",
+      "chapter": 2,
+      "subsection": "2.2",
+      "difficulty_level": "5/5",
+      "context": "Es sei\n\\[\nf(x)=\\dfrac{\\dfrac{3x-1}{x+2}-\\dfrac{x-4}{2x-1}}{\\dfrac{x+5}{x-3}+\\dfrac{2}{5}}\n\\]\nfür alle $x$, für die kein Nenner verschwindet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Definitionsmenge hat genau vier verschiedene Lücken.",
+        "Nach dem Zusammenfassen kürzt sich $f$ zu einer konstanten Funktion auf dem Definitionsbereich.",
+        "An der Lücke $x=3$ hat $f$ eine Polstelle.",
+        "Es gibt mindestens zwei Definitionslücken links von $0$ und mindestens eine rechts von $0$.",
+        "Weil der äußere Nenner bei $x=3$ divergiert, brauchen innere Nenner nicht gesondert geprüft zu werden."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nVerschwindende Nenner:\n$$\nx+2=0\\Rightarrow x=-2,\\qquad 2x-1=0\\Rightarrow x=\\dfrac12,\\qquad x-3=0\\Rightarrow x=3.\n$$\nUnterer Stock:\n$$\n\\dfrac{x+5}{x-3}+\\dfrac25=\\dfrac{7x+19}{5(x-3)},\n$$\nzusätzlich null bei $7x+19=0$, also $x=-\\dfrac{19}{7}$. Die vier Werte sind paarweise verschieden.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nAuf dem Definitionsbereich gilt\n$$\nf(x)=\\dfrac{5(5x^{2}-3x+9)(x-3)}{(x+2)(2x-1)(7x+19)}.\n$$\nWegen $\\Delta=9-180<0$ hat $5x^{2}-3x+9$ keine reelle Nullstelle und teilt keinen linearen Nennerfaktor. $f$ ist nicht konstant.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nFür $x\\to 3$ divergiert der untere Stock, der äußere Nenner geht gegen Unendlich, und der Zähler bleibt endlich und nichtnull in einer punktierten Umgebung. Damit\n$$\n\\lim_{x\\to 3}f(x)=0\\neq\\infty.\n$$\nEin Pol würde $|f|\\to\\infty$ verlangen.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nLinks: $x=-2$ und $x=-\\dfrac{19}{7}$. Rechts: $x=\\dfrac12$ und $x=3$. Die Behauptung ist damit erfüllt.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nBereits $x=-2$ oder $x=\\dfrac12$ macht einen inneren Nenner null, unabhängig vom äußeren Stock. Jeder innere Nenner ist eine eigene Definitionsbedingung.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Innere Nenner und der zusammengefasste untere Stock liefern vier verschiedene Nullstellen:\n$$\nx=-2,\\quad x=\\dfrac12,\\quad x=3,\\quad x=-\\dfrac{19}{7}.\n$$\nZwei davon liegen links von $0$ ($-2$ und $-\\tfrac{19}{7}$), zwei rechts ($\\tfrac12$ und $3$). Der Zähler der oberen Differenz wird\n$$\n(3x-1)(2x-1)-(x-4)(x+2)=5x^{2}-3x+9;\n$$\nDiskriminante $9-180=-171<0$, also keine reelle Nullstelle und keine Kürzung gegen die linearen Nenner. An $x=3$ geht der untere Stock gegen Unendlich und\n$$\n\\lim_{x\\to 3}f(x)=0\n$$\n— die Lücke ist kein Pol.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M03",
+      "id": "WISO-M4-M03",
+      "title": "Annuität 52800 zu 6,2 Prozent über sieben Jahre",
+      "chapter": 3,
+      "subsection": "3.6",
+      "difficulty_level": "5/5",
+      "context": "Ein Kredit über EUR $52\\,800$ wird durch sieben gleiche Jahresendzahlungen bei effektivem Jahreszins $6{,}2\\%$ getilgt. Sei $A$ die Annuität und $B_k$ das Restkapital unmittelbar nach der Zahlung in Jahr $k$ ($B_0=52\\,800$). Zusätzlich wird eine Vergleichsannuität mit fünf gleichen Zahlungen über dieselbe Schuld und denselben Satz betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die siebenjährige Annuität liegt zwischen EUR $9\\,400$ und EUR $9\\,600$.",
+        "Nach genau drei Zahlungen liegt das Restkapital unter der Hälfte der Anfangsschuld.",
+        "Die fünfjährige Annuität über derselben Schuld ist größer als die siebenjährige, und die Summe ihrer fünf Zahlungen liegt unter der Summe der sieben Zahlungen.",
+        "$B_1$ ist die Anfangsschuld minus $A$, weil die erste Zahlung voll tilgt.",
+        "Verdoppelt man den Zinssatz und lässt Laufzeit und Schuld gleich, verdoppelt sich die Annuität nicht."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$$\nA=52800\\cdot\\dfrac{0{,}062}{1-1{,}062^{-7}}.\n$$\nMit $1{,}062^{7}\\approx 1{,}5229$ folgt $1{,}062^{-7}\\approx 0{,}6566$ und\n$$\nA=52800\\cdot\\dfrac{0{,}062}{0{,}3434}\\approx 9525{,}67,\n$$\nalso $9400<A<9600$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$$\nB_3=52800\\cdot 1{,}062^{3}-A\\cdot\\dfrac{1{,}062^{3}-1}{0{,}062}\\approx 32856{,}86.\n$$\nHalbschuld ist $26400$. Wegen $32856{,}86>26400$ liegt $B_3$ darüber, nicht darunter.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$$\nA_5=52800\\cdot\\dfrac{0{,}062}{1-1{,}062^{-5}}\\approx 12602{,}80>A\\approx 9525{,}67.\n$$\nZugleich $5A_5\\approx 63014{,}02$ und $7A\\approx 66679{,}71$, also $5A_5<7A$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nNach einem Jahr ist zuerst Zins fällig:\n$$\nB_1=S(1+r)-A=52800\\cdot 1{,}062-A\\approx 46547{,}93,\n$$\nwährend $S-A\\approx 43274{,}33$. Die Differenz ist genau der Jahreszins auf $S$; die erste Zahlung tilgt nicht voll.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nBei $r=0{,}124$ und $n=7$ wird\n$$\nA^{\\ast}=52800\\cdot\\dfrac{0{,}124}{1-1{,}124^{-7}}\\approx 11716{,}54,\n$$\nwährend $2A\\approx 19051{,}35$. Insbesondere $A^{\\ast}\\neq 2A$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Mit $S=52800$, $r=0{,}062$, $n=7$ ist\n$$\nA=S\\cdot\\dfrac{r}{1-(1+r)^{-n}}=52800\\cdot\\dfrac{0{,}062}{1-1{,}062^{-7}}\\approx 9525{,}67\n$$\n(zwischen $9400$ und $9600$). Rest nach drei Zahlungen:\n$$\nB_3=S(1+r)^{3}-A\\cdot\\dfrac{(1+r)^{3}-1}{r}\\approx 32856{,}86>\\tfrac12 S=26400.\n$$\nFünfjährige Annuität $A_5\\approx 12602{,}80>A$, aber $5A_5\\approx 63014<7A\\approx 66680$. Ferner $B_1=S(1+r)-A\\neq S-A$, und bei verdoppeltem Satz $A^{\\ast}\\approx 11716{,}54\\neq 2A$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M04",
+      "id": "WISO-M4-M04",
+      "title": "Logarithmus, Betrag und Wurzel zugleich",
+      "chapter": 4,
+      "subsection": "4.4",
+      "difficulty_level": "5/5",
+      "context": "Gleichzeitig werden drei Formen betrachtet:\n\n(I) $\\log_{3}(x+2)+\\log_{3}(x-1)=2$\n\n(II) $|x-4|<1$\n\n(III) $\\sqrt{3x+1}=x-1$\n\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Form (I) besitzt genau eine reelle Lösung.",
+        "Die Lösung von (I) liegt in der Lösungsmenge von (II).",
+        "Form (III) besitzt genau eine zulässige reelle Lösung.",
+        "Das Paar (I)$\\land$(II) besitzt mindestens eine Lösung.",
+        "Ersetzt man in (II) das Zeichen $<$ durch $\\le$, so wird das Tripel (I)$\\land$(II)$\\land$(III) nichtleer."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDefinitionsbereich $x>1$ und\n$$\n\\log_{3}\\bigl((x+2)(x-1)\\bigr)=2\\implies x^{2}+x-11=0.\n$$\nDie positive Wurzel $x=\\dfrac{-1+\\sqrt{45}}{2}\\approx 2{,}854$ liegt in $x>1$; die negative nicht. Genau eine zulässige Lösung.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$|x-4|<1$ bedeutet $3<x<5$. Die Lösung $x\\approx 2{,}854$ von (I) liegt links von $3$, also nicht in (II).\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDomain $x\\ge 1$ und $3x+1\\ge 0$. Quadrieren:\n$$\n3x+1=(x-1)^{2}\\implies x^{2}-5x=0\\implies x(x-5)=0.\n$$\n$x=0$ verletzt $x\\ge 1$; $x=5$ erfüllt $\\sqrt{16}=4=5-1$. Genau eine zulässige Lösung.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie einzige Lösung von (I) liegt bei $\\approx 2{,}854\\notin(3,5)$. Das Paar ist leer.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nMit $\\le$ wird (II) zu $[3,5]$. Weder die Lösung $\\approx 2{,}854$ von (I) noch eine neue gemeinsame Wurzel entsteht; $x=5$ löst (III) und liegt in $[3,5]$, erfüllt aber (I) nicht ($\\log_{3}(7\\cdot 4)\\neq 2$). Das Tripel bleibt leer.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "(I) verlangt $x>1$ und $\\log_{3}\\bigl((x+2)(x-1)\\bigr)=2$, also $(x+2)(x-1)=9$ und\n$$\nx^{2}+x-11=0,\\qquad x=\\dfrac{-1\\pm\\sqrt{45}}{2}.\n$$\nNur $x=\\dfrac{-1+3\\sqrt{5}}{2}\\approx 2{,}854$ liegt in $x>1$. (II) ist das offene Intervall $(3,5)$ — diese Lösung liegt nicht darin. (III) nach Quadrieren und Probe: nur $x=5$ (denn $x=0$ verletzt $x\\ge 1$). Das Paar (I)$\\land$(II) ist leer; auch mit $\\le$ statt $<$ in (II) bleibt $x=5$ außerhalb von $[3,5]$ als Lösung von (I), und das Tripel mit (III) bleibt leer.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M05",
+      "id": "WISO-M4-M05",
+      "title": "Drei Gleichungen mit zwei Kapazitätsschranken",
+      "chapter": 5,
+      "subsection": "5.5",
+      "difficulty_level": "5/5",
+      "context": "Gegeben sind\n\\[\n1{,}2x+0{,}6y=7{,}2,\\qquad 3x-0{,}5y+z=14,\\qquad x+y+z=16\n\\]\nmit den Schranken $x\\ge 0$, $y\\ge 0$, $z\\ge 0$, $x\\le 5$ und $z\\le 8$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Es gibt genau eine zulässige Lösung $(x,y,z)$.",
+        "In der zulässigen Lösung gilt $z\\le x$.",
+        "Ersetzt man die Schranke $z\\le 8$ durch $z\\le 6$, so wird die Lösungsmenge leer.",
+        "Ohne die Schranke $x\\le 5$ entstehen weitere zulässige Lösungen.",
+        "Es gilt $y=12-2x$ auf der gesamten Lösung der ersten Gleichung, unabhängig von $z$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDrei unabhängige lineare Gleichungen bestimmen $(x,y,z)$ eindeutig als\n$$\n(3{,}2;\\,5{,}6;\\,7{,}2).\n$$\nDiese Tripel erfüllt $x,y,z\\ge 0$, $x\\le 5$ und $z\\le 8$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nMit $z=7{,}2$ und $x=3{,}2$ ist $z>x$. Die behauptete Ungleichung $z\\le x$ ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nDie Gleichungen erzwingen $z=7{,}2>6$. Kein Punkt erfüllt zugleich die drei Gleichungen und $z\\le 6$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie drei Gleichungen lassen nur den einen Punkt $(3{,}2;\\,5{,}6;\\,7{,}2)$ zu. Die Schranke $x\\le 5$ ist dort nicht bindend; ohne sie ändert sich die Lösungsmenge nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$1{,}2x+0{,}6y=7{,}2$ ist äquivalent zu $2x+y=12$, also $y=12-2x$. Die Variable $z$ kommt in der ersten Gleichung nicht vor.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Aus der ersten Gleichung $2x+y=12$, also $y=12-2x$. Mit der dritten:\n$$\nx+(12-2x)+z=16\\implies z=4+x.\n$$\nEinsetzen in die zweite:\n$$\n3x-0{,}5(12-2x)+(4+x)=14\\implies 5x-2=14\\implies x=3{,}2.\n$$\nDamit $y=5{,}6$, $z=7{,}2$. Alle Nichtnegativitätsbedingungen und $x\\le 5$, $z\\le 8$ sind erfüllt; die Lösung ist eindeutig. Insbesondere $z>x$. Die schärfere Schranke $z\\le 6$ macht das System unlösbar. Ohne $x\\le 5$ bleibt dieselbe eindeutige Lösung.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M06",
+      "id": "WISO-M4-M06",
+      "title": "Fünf Ungleichungen mit rechtem Rand 4,5",
+      "chapter": 6,
+      "subsection": "6.3",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen $x$, die zugleich alle fünf Ungleichungen erfüllen:\n\n(1) $4x-7>1$\n\n(2) $x\\le 4{,}5$\n\n(3) $|2x-7|\\le 3$\n\n(4) $\\dfrac{x-1}{5-x}\\ge 0$\n\n(5) $x^{2}-6x+5\\le 0$\n\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Lösungsmenge ist ein halb offenes Intervall, dessen linker Rand nicht dazu gehört und dessen rechter Rand dazu gehört.",
+        "Der Punkt $x=2$ liegt in der Lösungsmenge.",
+        "Streicht man nur Ungleichung (2), wird die Lösungsmenge echt größer.",
+        "Streicht man nur Ungleichung (4), bleibt dieselbe Lösungsmenge.",
+        "Der Punkt $x=4{,}5$ liegt in der Lösungsmenge, der Punkt $x=5$ nicht."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus (1)–(5) folgt $L=(2,4{,}5]$. Der linke Rand $2$ scheitert an der strikten Ungleichung (1); der rechte Rand $4{,}5$ erfüllt alle fünf Bedingungen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nUngleichung (1) verlangt $4x-7>1$, also $x>2$. Bei $x=2$ gilt Gleichheit $1\\not>1$; der Punkt liegt nicht in $L$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nOhne (2) schneiden (1),(3),(4),(5) zu $(2,5)$. Dieses Intervall enthält etwa $x=4{,}7\\notin L$, ist also echte Obermenge.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nOhne (4) liefern (1),(2),(3),(5) weiterhin $(2,4{,}5]$. Der einzige Kandidat, den (4) zusätzlich ausschließen könnte, wäre $x=5$, der aber schon an (2) scheitert.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\nBei $x=4{,}5$: (1)–(3) und (5) ok, und $\\dfrac{3{,}5}{0{,}5}>0$. Bei $x=5$ ist (4) undefiniert und (2) verletzt. Genau die behauptete Kombination.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Einzeln:\n$$\n(1)\\ x>2,\\quad\n(2)\\ x\\le 4{,}5,\\quad\n(3)\\ 2\\le x\\le 5,\\quad\n(4)\\ x\\in[1,5),\\quad\n(5)\\ x\\in[1,5].\n$$\nDer Schnitt ist\n$$\nL=(2,4{,}5].\n$$\nLinker Rand offen (durch (1)), rechter Rand geschlossen (durch (2)). Streicht man nur (2), entsteht $(2,5)$ — echt größer. Streicht man nur (4), bleibt $(2,4{,}5]$, weil (2) den Punkt $5$ bereits ausschließt. Der Punkt $x=3$ liegt in $L$; $x=2$ und $x=5$ nicht.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M07",
+      "id": "WISO-M4-M07",
+      "title": "Ellipse mit a=5, b=4 und Tangenten vom Punkt",
+      "chapter": 7,
+      "subsection": "7.4",
+      "difficulty_level": "5/5",
+      "context": "Gegeben ist die Ellipse\n\\[\n\\dfrac{x^{2}}{25}+\\dfrac{y^{2}}{16}=1.\n\\]\nSei $e$ ihre Exzentrizität und seien $F_{\\pm}$ die Brennpunkte. Zusätzlich werden Tangenten vom Punkt $(0,6)$ an die Ellipse betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Exzentrizität beträgt $e=\\dfrac35$, und die Brennpunkte liegen bei $(\\pm 3,0)$.",
+        "Die Leitlinien sind $x=\\pm 5$.",
+        "Vom Punkt $(0,6)$ gibt es genau zwei Tangenten an die Ellipse.",
+        "Der Flächeninhalt der Ellipse beträgt $20\\pi$.",
+        "Weil $b<a$ gilt, liegt die große Halbachse parallel zur $y$-Achse."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$$\ne=\\sqrt{1-\\dfrac{16}{25}}=\\sqrt{\\dfrac{9}{25}}=\\dfrac35,\\qquad ae=5\\cdot\\dfrac35=3.\n$$\nBrennpunkte $(\\pm 3,0)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nLeitlinien bei $x=\\pm\\dfrac{a}{e}=\\pm\\dfrac{5}{3/5}=\\pm\\dfrac{25}{3}\\approx\\pm 8{,}333$, nicht bei $\\pm 5$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nFür $y=mx+6$ verlangt die Tangentialbedingung\n$$\n36=25m^{2}+16\\implies m^{2}=\\dfrac45.\n$$\nZwei reelle Steigungen $m=\\pm\\dfrac{2}{\\sqrt{5}}$, also genau zwei Tangenten.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nFlächenmaß $ab\\pi=5\\cdot 4\\cdot\\pi=20\\pi$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nBei der Normalform $\\dfrac{x^{2}}{a^{2}}+\\dfrac{y^{2}}{b^{2}}=1$ mit $a>b$ liegt die große Halbachse parallel zur $x$-Achse. Hier $a=5>4=b$.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Mit $a=5$, $b=4$ ist\n$$\ne=\\sqrt{1-\\dfrac{b^{2}}{a^{2}}}=\\sqrt{1-\\dfrac{16}{25}}=\\dfrac35,\n$$\nBrennpunkte $(\\pm ae,0)=(\\pm 3,0)$, Leitlinien $x=\\pm\\dfrac{a}{e}=\\pm\\dfrac{25}{3}$. Die Flächenmaßzahl ist $ab\\pi=20\\pi$. Tangentialbedingung für $y=mx+c$ an die Ellipse:\n$$\nc^{2}=a^{2}m^{2}+b^{2}.\n$$\nVom Punkt $(0,6)$ ist $c=6$, also $36=25m^{2}+16$ und $m^{2}=\\dfrac45$ — genau zwei reelle Tangenten. Die große Halbachse ist horizontal, nicht vertikal.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M08",
+      "id": "WISO-M4-M08",
+      "title": "Drei Säurelösungen auf 32 Prozent",
+      "chapter": 8,
+      "subsection": "8.5",
+      "difficulty_level": "5/5",
+      "context": "Drei Säurelösungen mit Konzentrationen $50\\%$, $30\\%$ und $15\\%$ werden zu insgesamt $360$ Litern mit Zielkonzentration $32\\%$ gemischt. Sei $a$ die Menge der $50\\%$-Lösung, $b$ die der $30\\%$-Lösung und $c$ die der $15\\%$-Lösung (jeweils in Litern). Zusätzlich gelte das Mengenverhältnis $a:c=3:2$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Mit dem vorgeschriebenen Verhältnis gibt es genau eine nichtnegative Lösung $(a,b,c)$.",
+        "Ohne das Verhältnis $a:c=3:2$ bleibt dieselbe eindeutige Lösung.",
+        "In der eindeutigen Lösung mit Verhältnis ist $b$ doppelt so groß wie $a+c$.",
+        "Der Säureanteil der $30\\%$-Komponente an der Gesamtmischung beträgt genau ein Drittel.",
+        "Ersetzt man in der gefundenen Lösung $a$ durch $2a$ und lässt $b,c$ unverändert, so liegt die neue Konzentration streng über $32\\%$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus $c=\\dfrac{2}{3}a$ und den zwei Mischgleichungen folgt\n$$\na=72,\\quad c=48,\\quad b=240.\n$$\nAlle Komponenten sind positiv; die Lösung ist eindeutig.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie beiden Mischgleichungen sind zwei Bedingungen in drei Unbekannten. Die Lösungsmenge ist eine Gerade im $(a,b,c)$-Raum (geschnitten mit dem Positivitätsoktanten), also nicht ein einziger Punkt.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$a+c=72+48=120$ und $b=240=2\\cdot 120$. Die Behauptung trifft zu.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nVolumenanteil von $b$ ist $\\dfrac{240}{360}=\\dfrac{2}{3}$, nicht $\\dfrac{1}{3}$. (Der Säurebeitrag $0{,}3\\cdot 240=72$ ist $\\dfrac{72}{115{,}2}=\\dfrac{5}{8}$ der Gesamtsäure — ebenfalls kein Drittel.)\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nNeue Totale $72+240+48+72=432$, neue Säure $115{,}2+0{,}5\\cdot 72=151{,}2$, Konzentration\n$$\n\\dfrac{151{,}2}{432}=0{,}35=35\\%>32\\%.\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Die beiden Mischbedingungen\n$$\na+b+c=360,\\qquad 0{,}5a+0{,}3b+0{,}15c=0{,}32\\cdot 360=115{,}2\n$$\nallein lassen eine Freiheitsgerade. Mit $a:c=3:2$, also $c=\\tfrac23 a$, folgt eindeutig\n$$\na=72,\\quad b=240,\\quad c=48.\n$$\nOhne das Verhältnis bleibt die Lösung unterbestimmt. Verdoppelt man nur $a$ und hält $b,c$ fest, steigt die Gesamtkonzentration über $32\\%$. Der Anteil der $30\\%$-Lösung an der Mischung ist $\\tfrac{240}{360}=\\tfrac23$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M09",
+      "id": "WISO-M4-M09",
+      "title": "Kubische mit drei rationalen Wurzeln und Schar",
+      "chapter": 9,
+      "subsection": "9.5",
+      "difficulty_level": "5/5",
+      "context": "Es sei $p(x)=2x^{3}-3x^{2}-11x+6$. Zuerst wird $p$ selbst untersucht. Danach die Schar $p(x)-k$ für reelle $k$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "$p$ besitzt genau drei verschiedene reelle Nullstellen, darunter $x=-2$ und $x=3$.",
+        "$p'$ hat keine reelle Nullstelle, weil die führende Koeffiziente von $p$ positiv ist.",
+        "Die Gleichung $p(x)=6$ besitzt drei verschiedene reelle Lösungen.",
+        "Für jedes reelle $k$ hat $p(x)-k$ mindestens drei verschiedene reelle Nullstellen.",
+        "Das Produkt der drei Nullstellen von $p$ beträgt $-3$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nPolynomdivision bzw. Horner mit $-2$ liefert\n$$\np(x)=(x+2)(2x^{2}-7x+3)=(x+2)(2x-1)(x-3).\n$$\nNullstellen $-2$, $\\tfrac12$, $3$ — drei verschiedene reelle.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$p'(x)=6x^{2}-6x-11$ hat Diskriminante $36+264=300>0$, also zwei reelle kritische Stellen. Das Vorzeichen des führenden Koeffizienten von $p$ allein erzwingt nicht $p'>0$ überall.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$p(x)-6=2x^{3}-3x^{2}-11x=x(2x^{2}-3x-11)$. Neben $x=0$ liefert $2x^{2}-3x-11=0$ die Wurzeln $\\dfrac{3\\pm\\sqrt{97}}{4}$, beide reell und von $0$ verschieden.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nAußerhalb des offenen Intervalls zwischen lokalem Maximum und lokalem Minimum schneidet die Horizontale $y=k$ den Graphen von $p$ nur einmal. Etwa für $k=100$ gibt es genau eine reelle Nullstelle.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nNach Vieta für $2x^{3}-3x^{2}-11x+6=0$ ist das Produkt der Nullstellen $-\\dfrac{6}{2}=-3$. Probe: $(-2)\\cdot\\tfrac12\\cdot 3=-3$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Rationale Nullstellenprüfung liefert die Zerlegung\n$$\np(x)=(x+2)(2x-1)(x-3),\n$$\nalso die drei reellen Nullstellen $x=-2$, $x=\\dfrac12$, $x=3$. Ableitung $p'(x)=6x^{2}-6x-11$ hat Diskriminante $300>0$, zwei kritische Stellen\n$$\nx=\\dfrac{3\\pm 5\\sqrt{3}}{6},\n$$\nmit lokalem Maximum links und lokalem Minimum rechts und Werten $\\approx\\pm 12{,}028$. Für $k=0$ liegen drei einfache Nullstellen vor. Für $p(x)-6=x(2x^{2}-3x-11)$ ist die Diskriminante des Quadrats $97>0$, wiederum drei reelle Nullstellen. Außerhalb des offenen Intervalls zwischen den Extremwerten hat $p(x)-k$ nur eine reelle Nullstelle.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M10",
+      "id": "WISO-M4-M10",
+      "title": "Zwei stetige Bestände, Führungswechsel zwischen 11 und 12",
+      "chapter": 10,
+      "subsection": "10.4",
+      "difficulty_level": "5/5",
+      "context": "Bestand $A$ startet bei $2\\,500$ und wächst stetig mit $5{,}5\\%$ pro Jahr. Bestand $B$ startet ein Jahr später bei $1\\,800$ und wächst stetig mit $9\\%$ pro Jahr. Sei $t$ die Zeit in Jahren seit Start von $A$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Es gibt genau einen Zeitpunkt $t>1$, an dem $A(t)=B(t)$, und dieser liegt zwischen $11$ und $12$.",
+        "Zum Zeitpunkt $t=11$ ist bereits $B(11)>A(11)$.",
+        "Zum Zeitpunkt $t=12$ gilt $B(12)>A(12)$.",
+        "Ersetzt man die stetige Verzinsung von $A$ durch jährliches Aufzinsen mit demselben Satz $5{,}5\\%$, so bleibt $A(t)$ an jeder Stelle $t>0$ unverändert.",
+        "Zum Zeitpunkt $t=0$ ist $B$ bereits definiert und gleich $1800$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus $2500\\,e^{0{,}055t}=1800\\,e^{0{,}09(t-1)}$ folgt\n$$\nt=\\dfrac{\\ln(25/18)+0{,}09}{0{,}035}\\approx 11{,}957\\in(11,12).\n$$\nWegen strikt verschiedener Wachstumsraten ist der Schnittpunkt eindeutig.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$$\nA(11)=2500\\,e^{0{,}055\\cdot 11}\\approx 4578{,}13,\\qquad\nB(11)=1800\\,e^{0{,}09\\cdot 10}\\approx 4427{,}29.\n$$\nAlso $A(11)>B(11)$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$$\nA(12)\\approx 4836{,}98,\\qquad B(12)=1800\\,e^{0{,}09\\cdot 11}\\approx 4844{,}22.\n$$\nDamit $B(12)>A(12)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nJährliches Aufzinsen liefert $2500\\cdot(1{,}055)^{t}$, stetiges $2500\\,e^{0{,}055t}$. Wegen $1{,}055<e^{0{,}055}$ sind die Bahnen verschieden.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$B$ startet erst ein Jahr später. Bei $t=0$ ist $B$ noch nicht gestartet; der Ausdruck $1800\\,e^{0{,}09(t-1)}$ beschreibt $B$ erst für $t\\ge 1$.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "$$\nA(t)=2500\\,e^{0{,}055t},\\qquad B(t)=1800\\,e^{0{,}09(t-1)}\\ (t\\ge 1).\n$$\nGleichsetzen:\n$$\n\\ln\\dfrac{25}{18}+0{,}055t=0{,}09(t-1)\\implies t=\\dfrac{\\ln(25/18)+0{,}09}{0{,}035}\\approx 11{,}957.\n$$\nDer Schnitt liegt strikt zwischen $11$ und $12$. Explizit $A(11)>B(11)$ und $A(12)<B(12)$. Stetige Verzinsung ist nicht dieselbe Bahn wie jährliches Aufzinsen mit demselben Nominalsatz. $B$ startet nicht bei $t=0$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M11",
+      "id": "WISO-M4-M11",
+      "title": "Offene Schachtel aus 60 mal 40 Blech",
+      "chapter": 11,
+      "subsection": "11.4",
+      "difficulty_level": "5/5",
+      "context": "Aus einem Rechteckblech der Maße $60\\,\\mathrm{cm}\\times 40\\,\\mathrm{cm}$ werden an den Ecken kongruente Quadrate der Seitenlänge $a$ ausgeschnitten und die Ränder hochgeklappt. Das Volumen der entstehenden offenen Schachtel sei $V(a)$. Zulässig ist $0<a<20$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Im offenen Intervall $(0,20)$ gibt es genau eine kritische Stelle von $V$, und dort liegt das globale Maximum.",
+        "Das Maximalvolumen liegt über $8500\\,\\mathrm{cm}^{3}$.",
+        "Das Maximalvolumen liegt zwischen $8400$ und $8500\\,\\mathrm{cm}^{3}$.",
+        "Unter der Zusatzbedingung $a\\le 6$ bleibt dasselbe Maximalvolumen erreichbar.",
+        "An der kritischen Stelle im zulässigen Intervall ist die Grundfläche der Schachtel größer als $1000\\,\\mathrm{cm}^{2}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDie Quadratgleichung $3a^{2}-100a+600=0$ hat zwei positive Wurzeln; nur\n$$\na^{\\ast}=\\dfrac{50-10\\sqrt{7}}{3}\\approx 7{,}847\n$$\nliegt in $(0,20)$. Wegen $V\\to 0$ an beiden Rändern ist $a^{\\ast}$ globales Maximum.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$V(a^{\\ast})\\approx 8450{,}45<8500$. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nMit $a^{\\ast}\\approx 7{,}847$ wird\n$$\nV(a^{\\ast})=(60-2a^{\\ast})(40-2a^{\\ast})a^{\\ast}\\approx 8450{,}45,\n$$\nalso $8400<V(a^{\\ast})<8500$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$a^{\\ast}\\approx 7{,}847>6$ liegt außerhalb. Auf $[0,6]$ ist $V$ streng wachsend bis $a=6$, und $V(6)=48\\cdot 28\\cdot 6=8064<V(a^{\\ast})$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nGrundseite $(60-2a^{\\ast})\\times(40-2a^{\\ast})\\approx 44{,}305\\times 24{,}305$, Produkt $\\approx 1076{,}8>1000$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$$\nV(a)=(60-2a)(40-2a)a=4a^{3}-200a^{2}+2400a.\n$$\n$$\nV'(a)=12a^{2}-400a+2400=0\\iff 3a^{2}-100a+600=0.\n$$\nKritische Stellen\n$$\na=\\dfrac{50\\pm 10\\sqrt{7}}{3};\n$$\nnur $a^{\\ast}=\\dfrac{50-10\\sqrt{7}}{3}\\approx 7{,}847$ liegt in $(0,20)$. Dort $V(a^{\\ast})\\approx 8450{,}45\\in(8400,8500)$. Am Rand $a\\to 0^{+}$ und $a\\to 20^{-}$ gilt $V\\to 0$. Unter der Zusatzschranke $a\\le 6$ liegt das Maximum von $V$ auf $[0,6]$ bei $a=6$, mit $V(6)=8064<V(a^{\\ast})$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M12",
+      "id": "WISO-M4-M12",
+      "title": "Prävalenz 1,5 Prozent mit Sensitivität 88",
+      "chapter": 12,
+      "subsection": "12.6",
+      "difficulty_level": "5/5",
+      "context": "Eine Krankheit hat Prävalenz $1{,}5\\%$. Ein Test erkennt Erkrankte mit Wahrscheinlichkeit $88\\%$ (Sensitivität) und Gesunde mit Wahrscheinlichkeit $94\\%$ (Spezifität) korrekt. Eine zufällig gewählte Person wird positiv getestet. Bewerten Sie jede Aussage über die bedingte Wahrscheinlichkeit, wirklich erkrankt zu sein, und über verwandte Größen.",
+      "statements": [
+        "Die bedingte Wahrscheinlichkeit, erkrankt zu sein, liegt unter $20\\%$ und über $15\\%$.",
+        "Weil der Test Erkrankte in $88\\%$ der Fälle erkennt, liegt die gesuchte Wahrscheinlichkeit bei $88\\%$.",
+        "Verdoppelt man die Prävalenz und lässt Sensitivität und Spezifität gleich, verdoppelt sich die gesuchte Wahrscheinlichkeit nicht.",
+        "Unter den positiv Getesteten sind die Falsch-Positiven streng mehr als die richtig Positiven.",
+        "Eine Spezifität von $100\\%$ bei unveränderter Sensitivität und Prävalenz würde die gesuchte Wahrscheinlichkeit auf $1$ heben."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$$\nP(D\\mid +)=\\dfrac{0{,}88\\cdot 0{,}015}{0{,}88\\cdot 0{,}015+(1-0{,}94)\\cdot 0{,}985}=\\dfrac{0{,}0132}{0{,}0132+0{,}0591}\\approx 0{,}1826.\n$$\nEs gilt $0{,}15<0{,}1826<0{,}20$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$88\\%$ ist die Sensitivität $P(+\\mid D)$, nicht der positiv prädiktive Wert $P(D\\mid +)$. Bayes liefert $\\approx 18{,}3\\%$, nicht $88\\%$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nBei Prävalenz $3\\%$ wird\n$$\nP(D\\mid +)=\\dfrac{0{,}88\\cdot 0{,}03}{0{,}88\\cdot 0{,}03+0{,}06\\cdot 0{,}97}\\approx 0{,}312,\n$$\nwährend $2\\cdot 0{,}1826\\approx 0{,}365$. Die Werte sind verschieden.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nAuf eine zufällige Person bezogen: richtig-positive Masse $0{,}0132$, falsch-positive Masse $0{,}0591$. Wegen $0{,}0591>0{,}0132$ überwiegen die Falsch-Positiven unter den Positiven.\n\nDie Aussage ist richtig.",
+        "**E.** → Richtig\n\nBei Spezifität $1$ verschwindet der falsch-positive Term. Dann\n$$\nP(D\\mid +)=\\dfrac{0{,}88\\cdot 0{,}015}{0{,}88\\cdot 0{,}015}=1.\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Mit $P(D)=0{,}015$, Sensitivität $0{,}88$, Spezifität $0{,}94$ ist\n$$\nP(D\\mid +)=\\dfrac{0{,}88\\cdot 0{,}015}{0{,}88\\cdot 0{,}015+0{,}06\\cdot 0{,}985}\\approx 0{,}1826\n$$\n(zwischen $15\\%$ und $20\\%$). Die falsch-positive Masse $0{,}06\\cdot 0{,}985=0{,}0591$ übersteigt die richtig-positive Masse $0{,}0132$. Verdopplung der Prävalenz auf $3\\%$ hebt den positiv prädiktiven Wert auf $\\approx 31{,}2\\%$, nicht auf das Doppelte von $18{,}3\\%$. Bei Spezifität $100\\%$ und unveränderter Sensitivität/Prävalenz wird $P(D\\mid +)=1$. Sensitivität allein ist nicht der PPV.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M4-M13",
+      "id": "WISO-M4-M13",
+      "title": "Binomial n=10 p=0,4 gegen Tschebyscheff und Likelihood",
+      "chapter": 13,
+      "subsection": "13.4",
+      "difficulty_level": "5/5",
+      "context": "Sei $X$ binomialverteilt mit $n=10$ und $p=\\dfrac{2}{5}$. Betrachtet wird $P(|X-4|\\ge 3)$ sowie die Tschebyscheff-Schranke zu derselben Abweichung. Zusätzlich wird bei Beobachtung von genau sechs Erfolgen die Likelihood bei $p=\\dfrac12$ mit der bei $p=\\dfrac35$ verglichen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die exakte Wahrscheinlichkeit $P(|X-4|\\ge 3)$ liegt unter $0{,}12$.",
+        "Die Tschebyscheff-Schranke zu $|X-4|\\ge 3$ ist kleiner als die exakte Wahrscheinlichkeit.",
+        "Bei sechs beobachteten Erfolgen ist die Likelihood bei $p=\\dfrac35$ größer als bei $p=\\dfrac12$.",
+        "Es gilt $P(|X-4|\\ge 3)=P(X\\ge 7)$, weil die Verteilung symmetrisch um $4$ ist.",
+        "Der Likelihood-Quotient $L(0{,}6)/L(0{,}5)$ liegt zwischen $1{,}2$ und $1{,}3$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$$\nP(|X-4|\\ge 3)=\\sum_{k=0}^{1}\\binom{10}{k}(0{,}4)^{k}(0{,}6)^{10-k}+\\sum_{k=7}^{10}\\binom{10}{k}(0{,}4)^{k}(0{,}6)^{10-k}\\approx 0{,}1011<0{,}12.\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nTschebyscheff liefert $\\dfrac{\\mathrm{Var}(X)}{3^{2}}=\\dfrac{2{,}4}{9}=0{,}2\\overline{6}>0{,}1011$. Die Schranke liegt über der exakten Wahrscheinlichkeit, nicht darunter.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$$\nL(p)=\\binom{10}{6}p^{6}(1-p)^{4}.\n$$\n$L(0{,}6)\\approx 0{,}2508$ und $L(0{,}5)\\approx 0{,}2051$, also $L(0{,}6)>L(0{,}5)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBei $p=0{,}4\\neq 0{,}5$ ist die Binomialverteilung nicht symmetrisch um $4$. Konkret $P(X\\le 1)\\approx 0{,}0464$ und $P(X\\ge 7)\\approx 0{,}0548$ — verschieden; die Summe ist größer als $P(X\\ge 7)$ allein.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$$\n\\dfrac{L(0{,}6)}{L(0{,}5)}=\\dfrac{0{,}6^{6}\\cdot 0{,}4^{4}}{0{,}5^{10}}=\\dfrac{0{,}6^{6}\\cdot 0{,}4^{4}}{0{,}5^{6}\\cdot 0{,}5^{4}}\\approx 1{,}223\\in(1{,}2;\\,1{,}3).\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Es gilt $\\mathbb{E}X=4$, $\\mathrm{Var}(X)=10\\cdot 0{,}4\\cdot 0{,}6=2{,}4$. Exakt\n$$\nP(|X-4|\\ge 3)=P(X\\le 1)+P(X\\ge 7)\\approx 0{,}1011,\n$$\nwährend Tschebyscheff\n$$\nP(|X-4|\\ge 3)\\le\\dfrac{2{,}4}{9}=0{,}2\\overline{6}\n$$\nliefert — die Schranke ist strikt größer. Die Likelihood\n$$\nL(p)=\\binom{10}{6}p^{6}(1-p)^{4}\n$$\nerfüllt $L(0{,}6)>L(0{,}5)$ mit Quotient $\\approx 1{,}223$. Tschebyscheff ersetzt nicht die exakte Wahrscheinlichkeit; $P(|X-4|\\ge 3)$ ist nicht gleich $P(X\\ge 7)$.",
+      "figure": "",
+      "tables_markdown": ""
+    }
+  ]
+}

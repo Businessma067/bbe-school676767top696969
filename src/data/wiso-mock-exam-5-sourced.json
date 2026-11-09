@@ -1,0 +1,1084 @@
+{
+  "economics": [
+    {
+      "case_id": "WISO-M5-E01",
+      "id": "WISO-M5-E01",
+      "title": "Bohroption mit Beobachtungskosten",
+      "subsection": "3.3",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Eine irreversible Bohrung kostet heute 128,75; danach ist das Feld unveräußerlich.\nZustand ergiebig mit Wahrscheinlichkeit 0,55: abgezinster Rückfluss 201,25.\nZustand trocken mit 0,45: Rückfluss 26,25. Regime Sofort: bohren ohne\nInformationsgewinn. Regime Warten: erst den Zustand beobachten und nur bei\nergiebig bohren; dafür fallen sofort sichere Beobachtungskosten 52,5 an,\nunabhängig vom späteren Zustand. Alle Rückflüsse sind bereits auf heute bezogen.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Sofort und Warten nach Beobachtungskosten sind beide negativ.",
+        "Warten ist besser, weil der Bruttowert der Option positiv ist.",
+        "Gewählt wird Sofort, weil der absolute Verlust kleiner ist als beim Warten.",
+        "Positiver Bruttowert des Wartens genügt, sobald Sofort negativ ist.",
+        "Ohne die Beobachtungskosten 52,5 würde gewartet."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Sofort und Warten rivalisieren um dieselbe irreversible Ausgabe 128,75. Bindend sind die Nettobarwerte beider Regime, nicht der Bruttowert der Option allein.\n\nSofort: 0,55 · 201,25 + 0,45 · 26,25 − 128,75 = 110,6875 + 11,8125 − 128,75 = −6,25. Warten: nur ergiebig löst 201,25 − 128,75 = 72,5 aus → 0,55 · 72,5 = 39,875, nach Beobachtungskosten 39,875 − 52,5 = −12,625. Beide unter null. Falle: Brutto 39,875 schon als „Warten positiv“ zu lesen — die 52,5 drehen ihn unter null.\n\nDie Aussage ist wahr.",
+        "Positiver Bruttowert heißt nur: erwarteter Bohrgewinn vor Beobachtungskosten > 0. Rangiert wird nach Netto und gegen Sofort.\n\nBrutto: 39,875 > 0. Nach 52,5: −12,625. Sofort −6,25. Wegen −12,625 < −6,25 ist Warten schlechter. Falle: „Brutto positiv ⇒ Warten wählen“.\n\nDie Aussage ist falsch.",
+        "Gewählt wird das Regime mit dem algebraisch größeren Kapitalwert. Beide negativ — der kleinere absolute Verlust gewinnt.\n\nSofort −6,25 gegen Warten −12,625: −6,25 > −12,625, Abstand 6,375 zugunsten Sofort. Falle: aus „beide negativ“ auf Indifferenz oder auf Warten wegen Optionswert zu schließen.\n\nDie Aussage ist wahr.",
+        "Brutto positiv und Sofort negativ reichen nicht. Beobachtungskosten müssen überlebt werden, und Warten muss Sofort schlagen.\n\n39,875 − 52,5 = −12,625 < 0 und −12,625 < −6,25. Falle: „Sofort negativ und Brutto positiv ⇒ unbedingt warten“ — ohne die 52,5 kippt die Logik.\n\nDie Aussage ist falsch.",
+        "Ohne den Abzug 52,5 steht der Bruttowert der Option direkt gegen Sofort; die Optionsstruktur bleibt unverändert.\n\nOhne 52,5: Warten = 39,875 > Sofort −6,25 — es würde gewartet (Abstand 46,125). Falle: die 52,5 als irrelevanten Fixposten streichen, obwohl genau sie Warten unter Sofort drehen (−12,625).\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E02",
+      "id": "WISO-M5-E02",
+      "title": "Nachtfluglärm, einseitige Verhandlungskosten",
+      "subsection": "2.4",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Ein Flughafen kann nachts hoch, mittel oder niedrig fliegen. Betreibergewinn\n92,5 / 61,25 / 33,75; externer Lärmschaden 71,25 / 28,75 / 8,75.\nGesellschaftliches Netto ist Gewinn minus Schaden. Recht des Flughafens auf\nhohe Frequenz: Verhandeln ist kostenlos. Recht der Anwohner auf niedrige\nFrequenz: Verhandeln kostet die Anwohner 9,375. Einigungsgewinn muss die\nVerhandlungskosten übersteigen, sonst bleibt das Ausgangsrecht.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Höchstes gesellschaftliches Netto hat die mittlere Frequenz.",
+        "Wären Verhandlungen auf beiden Rechtsseiten kostenlos, wäre das Ergebnis rechtsinvariant.",
+        "Beim Recht der Anwohner mit Kosten 9,375 bleibt die niedrige Frequenz.",
+        "Beim Recht des Flughafens wird die mittlere Frequenz erreicht.",
+        "Das Recht ist egal, weil Verhandeln immer möglich ist."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Gesellschaftliches Netto = Gewinn minus Schaden. Effizient ist das Maximum der drei Frequenzen.\n\nHoch: 92,5 − 71,25 = 21,25. Mittel: 61,25 − 28,75 = 32,5. Niedrig: 33,75 − 8,75 = 25. Wegen 32,5 > 25 > 21,25 hat mittel das höchste Netto. Falle: kleinsten Schaden (8,75 bei niedrig) mit höchstem Netto verwechseln.\n\nDie Aussage ist wahr.",
+        "Ohne Transaktionskosten lenkt Coase jede Ausgangsrechtslage zur effizienten Frequenz; das Recht verteilt nur den Einigungsgewinn.\n\nVom Recht des Flughafens (hoch→mittel): Einigungsgewinn 32,5 − 21,25 = 11,25 > 0. Vom Recht der Anwohner (niedrig→mittel): 32,5 − 25 = 7,5 > 0. Beide landen bei Netto 32,5. Falle: das Recht als Mengentreiber zu lesen — ohne Reibung ist das Ergebnis rechtsinvariant.\n\nDie Aussage ist wahr.",
+        "Beim Recht der Anwohner startet man bei niedrig. Einigung auf mittel braucht Einigungsgewinn > Verhandlungskosten 9,375.\n\nGewinn: 7,5 < 9,375 — Verhandlung scheitert, es bleibt niedrig (Netto 25). Falle: „Verhandeln möglich ⇒ Einigung“.\n\nDie Aussage ist wahr.",
+        "Beim Recht des Flughafens startet man bei hoch; Verhandeln ist kostenlos. Jeder positive Einigungsgewinn wird realisiert.\n\nHoch→mittel: 11,25 > 0 und Kosten 0 → Einigung auf mittel, Netto 32,5. Falle: die einseitigen Kosten 9,375 auf dieses Recht zu übertragen.\n\nDie Aussage ist wahr.",
+        "„Verhandeln möglich“ heißt nicht „Einigung erfolgreich“. Einseitige Kosten können genau einen Rechtsweg blockieren.\n\nRecht des Flughafens: Kosten 0, Gewinn 11,25 → mittel (32,5). Recht der Anwohner: 7,5 < 9,375 → bleibt niedrig (25). Ergebnisse verschieden — das Recht ist nicht egal.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E03",
+      "id": "WISO-M5-E03",
+      "title": "Mengenmonopol mit Stücksteuer 12,5",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "5/5",
+      "context": "Lineare Nachfrage P = 82,5 − 2,5Q, konstante Grenzkosten MC = 17,5, keine Fixkosten.\nZuerst Wettbewerb (Preis gleich MC). Dann unbesteuertes Mengenmonopol\n(Grenzerlös gleich MC). Dann Stücksteuer 12,5 nur im Monopol, die die\nGrenzkosten auf 30 hebt. Vergleichen Sie Preisüberwälzung gegen volle Steuer,\nMengenbewegung relativ zur Wettbewerbsmenge und Steueraufkommen gegen den\nEffizienzverlust des unbesteuerten Monopols. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Steuer hebt den Monopolpreis um weniger als 12,5 und senkt die Menge.",
+        "Die Steuer schiebt die Monopolmenge zur Wettbewerbsmenge.",
+        "Unbesteuert ist die Monopolmenge halb so groß wie im Wettbewerb, der Preis mehr als doppelt gegen MC.",
+        "Das Steueraufkommen übersteigt den Effizienzverlust des unbesteuerten Monopols gegen Wettbewerb.",
+        "Volle Überwälzung der 12,5 geschähe hier nicht."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Unbesteuertes Mengenmonopol setzt MR = MC; die Stücksteuer 12,5 hebt MC auf 30. Überwälzung = Preisanstieg gegen volle Steuer.\n\nUnbesteuert: 82,5 − 5Q = 17,5 ⇒ Q = 13, P = 50. Mit Steuer: Q = 10,5, P = 56,25. Anstieg 6,25 = Hälfte von 12,5; Menge fällt. Falle: volle Überwälzung 12,5 zu erwarten.\n\nDie Aussage ist wahr.",
+        "Wettbewerbsmenge bei P = MC. Eine Stücksteuer aufs Monopol schiebt dessen Menge weiter nach links — weg vom Wettbewerb, nicht hin.\n\nWettbewerb Q = 26. Unbesteuert Monopol Q = 13. Mit Steuer Q = 10,5; Abstand zu 26 wächst von 13 auf 15,5. Falle: „Steuer korrigiert Monopol Richtung Wettbewerb“.\n\nDie Aussage ist falsch.",
+        "Bei linearer Nachfrage und konstantem MC halbiert das Mengenmonopol die Wettbewerbsmenge; der Preis kann über dem Doppelten von MC liegen.\n\nQ_c = 26, Q_m = 13 = Hälfte. P_m = 50 gegen MC 17,5: 50/17,5 ≈ 2,857 > 2. Falle: aus halbierter Menge automatisch „Preis verdoppelt“ zu lesen — die Nachfrage liefert 50, nicht 35.\n\nDie Aussage ist wahr.",
+        "Aufkommen = Steuer × besteuerte Menge. Effizienzverlust unbesteuert = Harberger-Dreieck zwischen Q_m und Q_c.\n\nAufkommen: 12,5 · 10,5 = 131,25. Dreieck: ½ · (50 − 17,5) · (26 − 13) = 211,25. Wegen 131,25 < 211,25 ist Aufkommen kleiner, nicht größer.\n\nDie Aussage ist falsch.",
+        "Volle Überwälzung hieße Preisanstieg um die gesamte Steuer 12,5. Bei linearer Nachfrage und konstantem MC bleibt typisch die Hälfte.\n\nUnbesteuert P = 50; mit Steuer P = 56,25; Anstieg 6,25 ≠ 12,5. Falle: alten Monopolpreis plus Steuer als Preisformel zu legen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E04",
+      "id": "WISO-M5-E04",
+      "title": "Nominalsteuer auf Gläubigerzins bei Inflation",
+      "subsection": "1.5",
+      "chapter": 1,
+      "difficulty_level": "5/5",
+      "context": "Kredit über 3.750 für ein Jahr. Nominale Verzinsung 8,75 %, Inflation 11,25 %.\nAuf die Nominalzinsen des Gläubigers fällt eine Steuer von 32,5 %. Alternative\nBemessung: Steuer nur auf einen positiven realen Ertrag vor Steuer. Vergleichen\nSie exakten Realertrag als Quotient, die Differenzformel Nominal nach Steuer\nminus Inflation und nominale Rückzahlung gegen reale Kaufkraft.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Steuer vertieft den schon negativen realen Ertrag.",
+        "Nominal nach Steuer minus Inflation trifft den exakten Realertrag.",
+        "Steuer nur auf positiven Realgewinn nähme hier nichts.",
+        "Trotz allem bleibt der reale Ertrag nach Steuer positiv.",
+        "Nach Steuer: nominale Rückzahlung übersteigt das Kapital, reale Kaufkraft liegt darunter."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Exakter Realertrag: (1 + Nominalnetto) / (1 + π) − 1. Vor Steuer schon negativ (8,75 % < 11,25 %); die Nominalsteuer kürzt den Zähler weiter.\n\nVor Steuer: 1,0875 / 1,1125 − 1 ≈ −2,247 %. Nach Steuer: 8,75 % · 0,675 = 5,90625 % → 1,0590625 / 1,1125 − 1 ≈ −4,803 %. Vertiefung um rund 2,556 Punkte. Falle: Steuer nur bei positivem Realertrag zu erwarten.\n\nDie Aussage ist wahr.",
+        "„Nominal nach Steuer minus Inflation“ approximiert; exakt ist der Quotient. Bei spürbarer Inflation weicht die Differenz nach unten ab.\n\nNetto 5,90625 %. Differenz: −5,34375 %. Quotient ≈ −4,803 %. Ungleich; Abstand ≈ 0,54 Punkte. Falle: Differenz und Quotient als austauschbar zu lesen.\n\nDie Aussage ist falsch.",
+        "Alternative: Steuer nur auf positiven Realertrag vor Steuer. Ist der schon negativ, ist die Bemessungsgrundlage null.\n\nReal vor Steuer ≈ −2,247 % < 0 → Steuerbasis 0, die Steuer nähme nichts. Falle: die tatsächliche Nominalsteuer 32,5 % in diese Alternativregel hineinzulesen.\n\nDie Aussage ist wahr.",
+        "„Trotz allem positiv“ verlangt Realertrag nach Steuer > 0. Der Quotient liegt klar darunter; schon vor Steuer war er negativ.\n\nNach Steuer ≈ −4,803 % < 0 (Differenz −5,34375 % ebenfalls). Falle: nominale Rückzahlung 3.750 · 1,0590625 = 3.971,484375 > 3.750 mit positivem Realertrag zu verwechseln.\n\nDie Aussage ist falsch.",
+        "Nominal kann das Kapital übersteigen, während reale Kaufkraft darunter liegt — Euro gegen Güter.\n\nNominal: 3.971,484375 > 3.750. Real: 3.971,484375 / 1,1125 ≈ 3.569,87 < 3.750. Falle: nominale Zunahme als realen Gewinn zu lesen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E05",
+      "id": "WISO-M5-E05",
+      "title": "FIFO und LIFO unter Kredit und Bonus",
+      "subsection": "3.4",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Zwei zulässige Vorratsmethoden bei gestiegenen Einstandspreisen. FIFO: Vorräte\n312,5, Periodengewinn 198,75. LIFO: Vorräte 221,25, Periodengewinn 107,5.\nÜbriges Umlaufvermögen 136,25, kurzfristige Schulden 178,75 in beiden Fällen.\nKreditklausel: Liquiditätsquote (Vorräte plus übriges UV) / kurzfristige\nSchulden ≥ 2,45. Bonusvertrag: Zahlung nur wenn ausgewiesener Gewinn > 165.\nBeide Verträge gleichzeitig prüfen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Genau eine der beiden Methoden besteht den Kreditvertrag.",
+        "Die Methode, die den Kredit verfehlt, weist den höheren Gewinn aus.",
+        "Bonus und Kreditvertrag fallen auf dieselbe Methode.",
+        "Bonus vermeiden und zugleich den Kredit bestehen ist möglich.",
+        "Weil die kurzfristigen Schulden gleich sind, bestehen oder scheitern beide Methoden gemeinsam."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Kreditklausel: (Vorräte + übriges UV) / kurzfristige Schulden ≥ 2,45. Schulden und übriges UV sind gleich; nur die Vorräte unterscheiden FIFO und LIFO.\n\nFIFO: (312,5 + 136,25) / 178,75 = 2,510… ≥ 2,45 — besteht. LIFO: 357,5 / 178,75 = 2,0 < 2,45 — scheitert. Genau eine Methode (FIFO) besteht. Falle: gleiche Schulden als gleiche Quote zu lesen.\n\nDie Aussage ist wahr.",
+        "Die verfehlende Methode ist LIFO (Quote 2,0). Höherer Gewinn wäre 198,75 bei FIFO — nicht bei LIFO.\n\nLIFO-Gewinn 107,5 < FIFO-Gewinn 198,75. LIFO verfehlt den Kredit und weist zugleich den niedrigeren Gewinn aus. Falle: niedrigere Vorräte mit höherem Gewinn koppeln.\n\nDie Aussage ist falsch.",
+        "Bonus bei Gewinn > 165; Kredit bei Quote ≥ 2,45. „Dieselbe Methode“ heißt: beide Verträge bündeln auf FIFO.\n\nFIFO: 198,75 > 165 und Quote ≈ 2,51 ≥ 2,45. LIFO: 107,5 ≤ 165 und Quote 2,0 < 2,45. Nur FIFO erfüllt beide. Falle: Bonus und Kredit als gegenläufig zu lesen.\n\nDie Aussage ist wahr.",
+        "Bonus vermeiden ⇒ LIFO (107,5). Kredit bestehen ⇒ FIFO (≈ 2,51). Die Schnittmenge ist leer.\n\nLIFO vermeidet den Bonus, scheitert am Kredit. FIFO besteht den Kredit, löst den Bonus aus. Zugleich geht es nicht.\n\nDie Aussage ist falsch.",
+        "Gleicher Nenner macht die Quote nicht automatisch gleich. Der Zähler differiert mit den Vorräten.\n\nZähler FIFO 448,75 gegen LIFO 357,5 bei Nenner 178,75 → Quoten ≈ 2,51 gegen 2,0. Eine über, eine unter 2,45. Falle: gleichen Nenner mit gemeinsamem Schicksal gleichsetzen.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E06",
+      "id": "WISO-M5-E06",
+      "title": "Deichschutz mit Erstattungsregel",
+      "subsection": "2.5",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Öffentliches Gut G (Deichabschnitt) kostet 38,75 und stiftet zwei Anrainern je\n23,75 Nutzen; niemand kann ausgeschlossen werden. Jede kann 19,375 beitragen.\nRegime ohne Erstattung: ein einzelner Beitrag ist verloren, wenn die 38,75 nicht\nzusammenkommen. Regime mit Erstattung: der Beitrag kommt zurück, falls 38,75\nfehlen. Zusätzlich Gut H zu Kosten 21,25 mit demselben Einzelnutzen 23,75, das\neine Person allein kaufen kann. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Ohne Erstattung sind „beide zahlen“ und „niemand zahlt“ Gleichgewichte.",
+        "Mit Erstattung verliert eine einzelne Zahlerin Geld, wenn die 38,75 fehlen.",
+        "G ist zusammen sinnvoll; eine Person allein kauft zum vollen Preis nicht.",
+        "Erstattung macht die Finanzierung unmöglich, weil jede wartet.",
+        "H wird allein gekauft — ohne Erstattung und ohne zweite Person."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Ohne Erstattung ist ein Solo-Beitrag verloren, wenn 38,75 fehlen. Gleichgewichte: keine Person will einseitig abweichen.\n\nBeide zahlen: Netto 23,75 − 19,375 = +4,375; Abweichen zerstört G und kostet 23,75. Niemand zahlt: Solo-Zahlen verliert 19,375 ohne G. Beide Profile sind Nash. Falle: nur das effiziente Profil als Gleichgewicht zählen.\n\nDie Aussage ist wahr.",
+        "Mit Erstattung kommt der Beitrag zurück, falls 38,75 fehlen. Solo-Zahlerin verliert dann nichts.\n\nFehlt die Summe: Nettoverlust 0 statt −19,375. Falle: das Regime ohne Erstattung (Solo −19,375) in das mit Erstattung zu übertragen.\n\nDie Aussage ist falsch.",
+        "Zusammen sinnvoll: Summe Nutzen ≥ Kosten. Allein unrentabel: Einzelnutzen < volle Kosten 38,75.\n\nZusammen: 47,5 > 38,75 (Überschuss 8,75). Allein: 23,75 < 38,75 (Fehlbetrag 15). Falle: aus gesellschaftlichem Vorteil auf Solo-Kauf schließen.\n\nDie Aussage ist wahr.",
+        "Erstattung beseitigt das Solo-Risiko, löscht aber nicht das Gleichgewicht „beide zahlen“. Finanzierung bleibt möglich.\n\nZahlt die andere, lohnt Mitziehen: +4,375. „Jede wartet“ ist ein weiteres Gleichgewicht, kein Zwang. Falle: Erstattung mit unvermeidlichem Warte-Dilemma gleichsetzen.\n\nDie Aussage ist falsch.",
+        "H kostet 21,25 bei Einzelnutzen 23,75 — allein beschaffbar, ohne zweite Person und ohne Erstattung.\n\n23,75 − 21,25 = 2,5 > 0. Gegenprobe G: 23,75 < 38,75. Falle: H wie G mit Vollkosten 38,75 oder Beitragsdilemma behandeln.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E07",
+      "id": "WISO-M5-E07",
+      "title": "Gebrauchtwagen-Zitronenmarkt",
+      "subsection": "3.2",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "100 Gebrauchtwagen: 72 gute und 28 Zitronen. Käufer bewerten gut 337,5 und\nZitrone 123,75; Verkäufer reservieren gut 281,25 und Zitrone 91,25. Käufer\nsehen die Qualität nicht und bieten den erwarteten Käuferwert unter voller\nMischung. Verkäufer guter Wagen verkaufen nur, wenn der Preis ihre Reservation\nerreicht; Zitronenverkäufer analog. Nach Abwanderung der Guten bleibt der\nRestmarkt. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Mischpreis liegt unter der Reservation der Guten — die Guten wandern ab.",
+        "Nach Abwanderung der Guten handeln Zitronen weiter, weil Käuferwert über Verkäuferreservation liegt.",
+        "Der Mischpreis liegt über 281,25, deshalb bleibt der Pool aus 100 stabil.",
+        "Der gesellschaftliche Verlust entspricht dem Handelsvolumen der Zitronen mal deren (Käufer − Verkäufer)-Spanne.",
+        "Könnten Käufer Qualität erkennen, würden auch die Guten gehandelt."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Faire Mischbewertung der Käufer gewichtet 72/100 und 28/100 und ist gegen die Reservation der Guten zu halten.\n\nMischpreis: 0,72 · 337,5 + 0,28 · 123,75 = 243 + 34,65 = 277,65. Reservation gut: 281,25. Wegen 277,65 < 281,25 verkaufen die Guten nicht. Falle: Durchschnitt der Verkäuferreservationen (≈ 228,05) als Verkaufshürde der Guten zu lesen.\n\nDie Aussage ist wahr.",
+        "Restmarkt nur Zitronen: Preis ≤ Käuferwert 123,75. Verkäuferreservation 91,25 < 123,75 — Handel bleibt möglich.\n\nSpielraum 123,75 − 91,25 = 32,5 je Zitrone. Falle: „Adverse Selection ⇒ kein Handel mehr“.\n\nDie Aussage ist wahr.",
+        "Stabilität verlangt Mischpreis ≥ Reservation der Guten. Bindend ist 281,25, nicht ein Käuferdurchschnitt allein.\n\n277,65 < 281,25 ⇒ Gute wandern ab. Falle: „Durchschnittswert nahe 281 ⇒ Pool hält“ — die Lücke 3,6 kippt genau die Guten.\n\nDie Aussage ist falsch.",
+        "Verloren gehen die unterlassenen effizienten Trades der Guten, nicht die stattfindenden Zitronentrades.\n\nJe Gutem: 337,5 − 281,25 = 56,25; über 72 Wagen: 4.050. Zitronenspanne 32,5 · 28 = 910 misst realisierten, nicht verlorenen Surplus. Falle: Zitronenvolumen als Verlustträger lesen.\n\nDie Aussage ist falsch.",
+        "Mit Beobachtbarkeit: Preis für Gut zwischen 281,25 und 337,5, für Zitrone zwischen 91,25 und 123,75 — beide Typen handeln.\n\nDie Informationsasymmetrie, nicht fehlender Bruttovorteil, blockiert die Guten. Falle: aus Abwanderung auf fehlenden gesellschaftlichen Vorteil der Guten schließen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E08",
+      "id": "WISO-M5-E08",
+      "title": "Gemischte Kapazität, Internverrechnung",
+      "subsection": "4.1",
+      "chapter": 4,
+      "difficulty_level": "5/5",
+      "context": "Bereich A liefert intern 18 Stück an Bereich B. Davon können 11 Stück aus freier\nKapazität zu Grenzkosten 36,25 kommen. Die übrigen 7 Stück verdrängen einen\nExternverkauf zu 67,5 je Stück. B kann alternativ alle 18 Stück extern zu 67,5\nkaufen. Relevante Kosten mischen freie Kapazität und Opportunitätskosten; reine\n36,25- und reine 67,5-Verrechnung sind Gegenproben. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Relevante Kosten sind weder durchgängig 36,25 noch durchgängig 67,5.",
+        "Nur freie Kapazität ansetzen untertreibt die relevanten Kosten.",
+        "Nur Externpreis ansetzen übertreibt, weil ein Teil nichts verdrängt.",
+        "B soll extern kaufen, weil 67,5 die Opportunitätskosten jedes Stücks sind.",
+        "Bei völlig freier Kapazität wäre Verrechnung zu 36,25 richtig; hier ist sie zu niedrig."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Relevant: 11 Stück zu 36,25 (freie Kapazität), 7 Stück zu 67,5 (verdrängter Externverkauf). Weder durchgängig 36,25 noch 67,5.\n\n11 · 36,25 + 7 · 67,5 = 398,75 + 472,5 = 871,25 (Durchschnitt ≈ 48,40). Reine 36,25 → 652,5; reine 67,5 → 1.215 — beides ≠ 871,25.\n\nDie Aussage ist wahr.",
+        "Nur freie Kapazität ansetzen heißt 18 · 36,25 und ignoriert die 7 verdrängten Externverkäufe.\n\n18 · 36,25 = 652,5 < 871,25. Differenz 218,75 = 7 · (67,5 − 36,25). Falle: „Grenzkosten = relevante Kosten“ bei knapper Kapazität.\n\nDie Aussage ist wahr.",
+        "Nur Externpreis heißt 18 · 67,5 und unterstellt Verdrängung bei jedem Stück. 11 Stück aus freier Kapazität verdrängen nichts.\n\n18 · 67,5 = 1.215 > 871,25. Differenz 343,75 = 11 · (67,5 − 36,25). Falle: Knappheitspreis auf freie Kapazität übertragen.\n\nDie Aussage ist wahr.",
+        "B soll extern kaufen nur wenn Extern < relevant intern. Nicht jedes Stück hat Opportunitätskosten 67,5.\n\nExtern: 1.215. Intern: 871,25 < 1.215 — intern bleibt günstiger. Falle: 67,5 auf jedes Stück legen und daraus Externkauf ableiten.\n\nDie Aussage ist falsch.",
+        "Bei völlig freier Kapazität wären alle 18 zu 36,25 relevant. Hier sind 7 Stück knapp — reine 36,25-Verrechnung ist zu niedrig.\n\nVolle Freiheit: 652,5 wäre richtig. Gemischt: 871,25, Differenz 218,75 für die sieben verdrängten Stück. Falle: Mischkapazität wie völlig freie behandeln.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E09",
+      "id": "WISO-M5-E09",
+      "title": "Abgasvermeidung mit Kapazitätsgrenze",
+      "subsection": "2.4",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Zwei Betriebe dürfen zusammen noch 67,5 Einheiten ausstoßen. Ohne Vermeidung\nwären es 127,5, davon 75 bei Betrieb 1 und 52,5 bei Betrieb 2 — zu vermeiden\nsind also 60. Betrieb 1 kann bis 75 Einheiten à 13,75 vermeiden. Betrieb 2 kann\nbis 37,5 Einheiten à 5,625 vermeiden, nicht mehr. Anfangsausstattung je 33,75\nZertifikate. Handel ist erlaubt; der Zertifikatspreis entspricht den Grenzkosten\nder letzten vermiedenen Einheit. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Kostenminimal vermeidet der billigere Betrieb mehr als die Hälfte der 60.",
+        "Zertifikatspreis = Kosten des billigeren Betriebs, weil er verkauft.",
+        "Gleichmäßige Vermeidung je 30 kostet mehr als das Minimum.",
+        "Der teurere Betrieb kauft Rechte und vermeidet trotzdem selbst.",
+        "Könnte Betrieb 2 alle 60 vermeiden, läge der Grenzpreis niedriger."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Kostenminimal: billigere Grenzvermeidung zuerst. Betrieb 2 zu 5,625 (Kapazität 37,5), Betrieb 1 den Rest zu 13,75.\n\nBetrieb 2 vermeidet 37,5 > 30 (Hälfte von 60); Betrieb 1 vermeidet 22,5. Kosten: 37,5 · 5,625 + 22,5 · 13,75 = 520,3125. Falle: gleichmäßige 30 als Minimum setzen.\n\nDie Aussage ist wahr.",
+        "Zertifikatspreis = Grenzkosten der letzten vermiedenen Einheit, nicht der Verkäufer-Kostensatz.\n\nLetzte Einheit von Betrieb 1 → Preis 13,75. Betrieb 2 verkauft Rechte, aber 5,625 ist nicht der Marktpreis. Falle: „Verkäuferpreis = seine Vermeidungskosten“.\n\nDie Aussage ist falsch.",
+        "Gleichmäßige Vermeidung je 30 nutzt Betrieb 2 nicht voll und lässt Betrieb 1 mehr vermeiden als im Minimum.\n\nGleichmäßig: 30 · 13,75 + 30 · 5,625 = 581,25 > 520,3125. Mehrkosten 60,9375. Falle: Anfangsausstattung je 33,75 mit optimaler Vermeidung verwechseln.\n\nDie Aussage ist wahr.",
+        "Betrieb 1 erhält 33,75 Rechte, vermeidet 22,5, stößt 52,5 aus → muss 18,75 Rechte zukaufen und vermeidet trotzdem selbst.\n\nWeitere Vermeidung bei Betrieb 2 endet an Kapazität 37,5; Rest 22,5 bleibt bei 1. Falle: „Käufer vermeidet nicht“.\n\nDie Aussage ist wahr.",
+        "Könnte Betrieb 2 alle 60 vermeiden, wäre die letzte Einheit bei ihm zu 5,625 — Grenzpreis fiele von 13,75.\n\nHypothetisch Preis = 5,625 < 13,75. Tatsächlich Kapazität 37,5 < 60 erzwingt den teuren Rand bei Betrieb 1. Falle: Verkäufer-Satz 5,625 als Marktpreis lesen, obwohl die Kapazität nicht reicht.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M5-E10",
+      "id": "WISO-M5-E10",
+      "title": "Nacharbeit gegen Beschwerdeerwartung",
+      "subsection": "4.1",
+      "chapter": 4,
+      "difficulty_level": "5/5",
+      "context": "Fehlerhafte Charge: Nacharbeit kostet sicher 102,5. Unterlassen der Nacharbeit:\nmit Wahrscheinlichkeit 72 % kommt es zur Beschwerde, dann Kulanz 41,25 plus\nverlorener Deckungsbeitrag 128,75; mit 28 % bleibt es folgenlos. Die\nursprüngliche Fertigung von 86,25 ist in beiden Wegen bereits ausgegeben.\nVergleichen Sie Erwartungsschaden, Kulanz allein, Kippschwelle der\nBeschwerdewahrscheinlichkeit und die Rolle versunkener Kosten.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Der erwartete Schaden des Unterlassens übersteigt die Nacharbeit.",
+        "Die erwartete Kulanz allein übersteigt die Nacharbeit.",
+        "Erst der verlorene Deckungsbeitrag hebt den Erwartungswert über die Nacharbeit.",
+        "Bei 50 % Beschwerde würde die Entscheidung kippen; bei 72 % nicht.",
+        "Die versunkenen 86,25 gehören in den Erwartungswert der Beschwerde."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Unterlassen: mit 0,72 Schaden Kulanz + verlorener DB; mit 0,28 folgenlos. Erwartung gegen sichere Nacharbeit 102,5.\n\nSchaden 41,25 + 128,75 = 170; Erwartung 0,72 · 170 = 122,4 > 102,5. Falle: nur Kulanz 41,25 in die Erwartung nehmen (gäbe 29,7 < 102,5).\n\nDie Aussage ist wahr.",
+        "Erwartete Kulanz allein = 0,72 · 41,25 — ohne den DB 128,75. Schon dieser Teil soll angeblich über 102,5 liegen.\n\n0,72 · 41,25 = 29,7 < 102,5 (Lücke 72,8). Falle: Kulanz mit vollem Beschwerdeschaden 170 verwechseln.\n\nDie Aussage ist falsch.",
+        "Ohne DB bleibt die Erwartung bei der Kulanz und unter der Nacharbeit; erst der DB-Block hebt über 102,5.\n\nOhne DB: 29,7 < 102,5. Beitrag DB: 0,72 · 128,75 = 92,7 → Summe 122,4 > 102,5. Falle: Kulanz als allein entscheidungsrelevant nehmen.\n\nDie Aussage ist wahr.",
+        "Kippschwelle p* mit p · 170 = 102,5. Darunter lohnt Unterlassen, darüber Nacharbeit.\n\np* = 102,5 / 170 ≈ 0,6029. Bei 50 %: 85 < 102,5 — kippt. Bei 72 %: 122,4 > 102,5 — kippt nicht. Falle: 72 % als unter der Schwelle lesen.\n\nDie Aussage ist wahr.",
+        "Fertigung 86,25 ist in beiden Wegen schon ausgegeben — versunken, nicht im entscheidungsrelevanten Erwartungswert der Beschwerde.\n\nOb man 86,25 zu beiden Seiten addiert, kürzen sie sich heraus. Falle: versunkene Fertigung dem Beschwerdepfad allein zuschlagen.\n\nDie Aussage ist falsch."
+      ]
+    }
+  ],
+  "german": {
+    "passageTitle": "Nationaler CO2-Preis, EU-ETS und zwei getrennte Märkte",
+    "passage": "(1) Der nationale CO2-Preis nach dem Brennstoffemissionshandelsgesetz trifft Inverkehrbringer von Heiz- und Kraftstoffen. Das europäische Emissionshandelssystem (EU-ETS) trifft große Industrieanlagen und die Stromerzeugung. Das sind zwei Märkte mit unterschiedlichen Adressaten. Wer schreibt, es gebe künftig einen einheitlichen CO2-Preis für alle Emittenten in Deutschland, verlässt den Text.\n\n(2) Bis Ende 2025 gilt im nationalen System ein fest vorgegebener Preispfad. Ab 2026 folgt eine Handelsphase mit Preiskorridor. Maßgeblich für den Wechsel ist der Kalendertag der Emission im jeweiligen Jahr, nicht der spätere Verkauf der Zertifikate. Eine Emission am 31. Dezember 2025 bleibt im Festpreis. Der 1. Januar 2026 fällt nicht mehr in diesen Festpreis.\n\n(3) Die Firma Süd betreibt ein Verwaltungsgebäude mit Heizöl und daneben ein Kraftwerk, das bereits dem EU-ETS unterliegt. Für das Heizöl zahlt sie den nationalen Preis. Die Kraftwerksemissionen zählen im EU-ETS und werden nach diesem Text nicht noch einmal mit dem nationalen Preis belegt. Wer beide Mengen addiert und den nationalen Satz auf die Summe legt, zählt doppelt und verlässt den Text.\n\n(4) Der nationale Preis wird mit der Jahresmeldung fällig, nicht am Tag der einzelnen Tankung. Im EU-ETS sind Zertifikate bis zum 30. April des Folgejahres abzugeben. Meldung und Abgabe sind zwei Uhren. Der Zertifikateverkauf schaltet die nationale Fälligkeit nicht um.\n\n(5) Einnahmen aus dem nationalen System sind für Klimaschutzmaßnahmen und ein geplantes Klimageld vorgesehen. Eine Pressemitteilung behauptet, jeder Euro aus dem nationalen Preis sei 2024 bereits als Klimageld an Haushalte ausgezahlt worden. Der Text sagt, das Ministerium übernehme diesen Satz nicht. Vorgesehen und bereits ausgezahlt sind nicht dasselbe.\n\n(6) Anlagen unter der EU-ETS-Schwelle fallen nicht allein deshalb unter den nationalen Preis. Der nationale Preis setzt voraus, dass erfasste Brennstoffe in Verkehr gebracht werden. Zwei Eintrittsbedingungen stehen nebeneinander und sind nicht dasselbe: ETS-Schwelle einerseits, Inverkehrbringen erfasster Brennstoffe andererseits. Wer eine der beiden verfehlt, tritt in den jeweiligen Markt nicht ein.\n\n(7) In der Handelsphase begrenzt ein Korridor den Preis nach oben und unten. Der Verband liest die Handelsphase als Abschaffung jeder Bindung. Der Text weist diesen Satz zurück: Der Korridor bleibt. Umgekehrt bleibt der Preis ab 2026 nicht der feste Satz von 2025; wer beides zugleich behauptet, vermengt Festpreis und Korridor.\n\n(8) Kraftstoff, der im Ausland gekauft und in Deutschland getankt wird, kann die nationale Pflicht auslösen. Der bloße Firmensitz im Ausland befreit nicht. Umgekehrt gilt nicht, dass jeder Auslandskauf automatisch befreit. Sitz und Tankort sind im Text verschiedene Anknüpfungspunkte.\n\n(9) Im Beispieljahr liegt der nationale Festpreis bei 45 Euro je Tonne, der Auktionspreis im EU-ETS bei 68 Euro. Der Text verbietet, aus beiden den Mittelwert 56,5 als „den“ deutschen CO2-Preis zu lesen. Er verbietet auch, die 45 Euro auf ETS-Anlagen zu legen, nur weil beide Zahlen CO2 betreffen.",
+    "tasks": [
+      {
+        "id": "WISO-M5-G01",
+        "case_id": "WISO-M5-G01",
+        "title": "Zwei Märkte, kein Einheitspreis",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, wen der nationale Preis und wen das EU-ETS trifft.",
+        "statements": [
+          "Der nationale Preis trifft Inverkehrbringer von Heiz- und Kraftstoffen, das EU-ETS große Industrie und Strom, und der Text weist einen einheitlichen Preis für alle Emittenten zurück.",
+          "Ab dem Reformjahr gilt ein einziger CO2-Preis für jeden Emittenten in Deutschland, weil beide Systeme CO2 bepreisen.",
+          "Wer Heizöl in Verkehr bringt, fällt deshalb zugleich unter das EU-ETS, weil Brennstoff Emissionen erzeugt.",
+          "Die Systeme haben unterschiedliche Adressaten. Dass beide CO2 betreffen, macht sie im Text nicht zu demselben Markt.",
+          "Das EU-ETS ersetzt den nationalen Preis für Heiz- und Kraftstoffe, sobald der Auktionspreis höher liegt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Der nationale Preis trifft Inverkehrbringer von Heiz- und Kraftstoffen, das EU-ETS große Industrie und Strom, und der Text weist einen einheitlichen Preis für alle Emittenten zurück.**\n\nAbsatz 1 teilt die Adressaten und schließt mit der ausdrücklichen Zurückweisung eines Einheitspreises für alle Emittenten. Zwei Märkte und die Zurückweisung stehen nebeneinander.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Ab dem Reformjahr gilt ein einziger CO2-Preis für jeden Emittenten in Deutschland, weil beide Systeme CO2 bepreisen.**\n\nAbsatz 1 nennt zwei Märkte mit unterschiedlichen Adressaten und weist den Einheitspreis ausdrücklich zurück. Gemeinsamer Bezugspunkt CO2 macht die Systeme nicht zu einem Preis.\n\n**Falle:** Vom gemeinsamen Stoff auf einen einheitlichen Marktpreis schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer Heizöl in Verkehr bringt, fällt deshalb zugleich unter das EU-ETS, weil Brennstoff Emissionen erzeugt.**\n\nAbsatz 1 und Absatz 3 trennen: Nationaler Preis für Inverkehrbringer von Heiz- und Kraftstoffen; EU-ETS für große Industrie und Strom. Bloßes Erzeugen von Emissionen aus Heizöl ist nicht der ETS-Eintritt.\n\n**Falle:** Emission als hinreichende Bedingung für beide Märkte lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Die Systeme haben unterschiedliche Adressaten. Dass beide CO2 betreffen, macht sie im Text nicht zu demselben Markt.**\n\nAbsatz 1: unterschiedliche Adressaten, zwei Märkte. Der gemeinsame Gegenstand CO2 wird gerade nicht zur Marktgleichheit erhoben.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Das EU-ETS ersetzt den nationalen Preis für Heiz- und Kraftstoffe, sobald der Auktionspreis höher liegt.**\n\nAbsatz 1 hält beide Märkte nebeneinander; Absatz 9 verbietet sogar, den nationalen Satz auf ETS-Anlagen zu legen. Ein höherer Auktionspreis ersetzt den nationalen Brennstoffpreis nicht.\n\n**Falle:** Höheren Preis als Rechtsnachfolger des anderen Systems lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G02",
+        "case_id": "WISO-M5-G02",
+        "title": "Welche Uhr den Festpreis schaltet",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, wann der Festpreis endet und was die Handelsphase nicht rückwirkend ändert.",
+        "statements": [
+          "Eine Emission am 31. Dezember 2025 bleibt im Festpreis, auch wenn Zertifikate erst später verkauft werden, und der 1. Januar 2026 fällt nicht mehr in diesen Festpreis.",
+          "Jeder Vorgang, dessen Zertifikateverkauf nach dem 1. Januar 2026 liegt, wird nach dem Korridor beurteilt, gleichgültig wann emittiert wurde.",
+          "31. Dezember 2025 und 1. Januar 2026 werden mit demselben festen Satz geprüft.",
+          "Maßgeblich ist der Emissionstag, nicht der spätere Verkauf, und der Text beschreibt den Wechsel als Kalendergrenze, nicht als Abschaffung jeder Preisbindung.",
+          "Weil die Handelsphase 2026 beginnt, gilt der Korridor schon für alle Emissionen des Jahres 2025, sonst wäre der Übergang folgenlos."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Eine Emission am 31. Dezember 2025 bleibt im Festpreis, auch wenn Zertifikate erst später verkauft werden, und der 1. Januar 2026 fällt nicht mehr in diesen Festpreis.**\n\nAbsatz 2 bindet den Wechsel an den Kalendertag der Emission. Späterer Zertifikateverkauf schaltet nicht um; 31.12.2025 bleibt fest, 1.1.2026 nicht mehr.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Vorgang, dessen Zertifikateverkauf nach dem 1. Januar 2026 liegt, wird nach dem Korridor beurteilt, gleichgültig wann emittiert wurde.**\n\nAbsatz 2 macht die Emission maßgeblich; Absatz 4 ergänzt, der Zertifikateverkauf schalte die nationale Fälligkeit nicht um. Eine Dezember-Emission 2025 bleibt im Festpreis.\n\n**Falle:** Die spätere Verkaufsuhr zur Regimeuhr machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 31. Dezember 2025 und 1. Januar 2026 werden mit demselben festen Satz geprüft.**\n\nAbsatz 2 stellt die Kalenderwende gegenüber: bis Ende 2025 Festpreispfad, ab 2026 Handelsphase mit Korridor. Dieselbe Tonne heißt nicht derselbe Satz.\n\n**Falle:** Benachbarte Daten wie ein Paar mit gleichen Regeln lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Maßgeblich ist der Emissionstag, nicht der spätere Verkauf, und der Text beschreibt den Wechsel als Kalendergrenze, nicht als Abschaffung jeder Preisbindung.**\n\nAbsatz 2: Emissionstag maßgeblich; ab 2026 Korridor, nicht Bindungslosigkeit. Absatz 7 bestätigt, dass der Korridor bleibt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil die Handelsphase 2026 beginnt, gilt der Korridor schon für alle Emissionen des Jahres 2025, sonst wäre der Übergang folgenlos.**\n\nAbsatz 2 belässt 2025 im Festpreis und lässt 2026 den Korridor beginnen. „Sonst folgenlos“ ist ein Schluss, den der Text nicht zieht.\n\n**Falle:** Vom Startjahr der Handelsphase auf Rückwirkung für 2025 schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G03",
+        "case_id": "WISO-M5-G03",
+        "title": "Firma Süd: Heizöl gegen Kraftwerk",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen die Doppelzählungsgrenze am Beispiel Süd.",
+        "statements": [
+          "Für das Heizöl zahlt Süd den nationalen Preis, die Kraftwerksemissionen liegen im EU-ETS und werden nicht noch einmal national belegt.",
+          "Weil Süd ein Kraftwerk betreibt, fällt auch das Heizöl des Verwaltungsgebäudes unter das EU-ETS.",
+          "Wer Heizölmenge und Kraftwerksmenge addiert und den nationalen Satz auf die Summe legt, folgt Absatz 3.",
+          "Nationaler Satz auf ETS-Mengen und ETS-Preis auf nationales Heizöl sind im Text nicht dieselbe zulässige Verrechnung.",
+          "Ein Unternehmen mit ETS-Anlage zahlt den nationalen Preis nie, sobald im Namen der Firma Strom vorkommt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Für das Heizöl zahlt Süd den nationalen Preis, die Kraftwerksemissionen liegen im EU-ETS und werden nicht noch einmal national belegt.**\n\nAbsatz 3 stellt beides nebeneinander: nationales Heizöl, ETS-Kraftwerk ohne zweite nationale Belastung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil Süd ein Kraftwerk betreibt, fällt auch das Heizöl des Verwaltungsgebäudes unter das EU-ETS.**\n\nAbsatz 3 trennt Gebäude-Heizöl und Kraftwerk. Der ETS-Status des Kraftwerks zieht das Heizöl nicht mit.\n\n**Falle:** Aus einem ETS-Betriebsteil den ganzen Firmenverbrauch in denselben Markt ziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer Heizölmenge und Kraftwerksmenge addiert und den nationalen Satz auf die Summe legt, folgt Absatz 3.**\n\nAbsatz 3 nennt genau diese Addition als Doppelzählung und als Verlassen des Textes. „Folgt Absatz 3“ kehrt den Absatz um.\n\n**Falle:** Eine Absatznnummer als Deckung lesen, obwohl der Absatz die Behauptung zurückweist.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Nationaler Satz auf ETS-Mengen und ETS-Preis auf nationales Heizöl sind im Text nicht dieselbe zulässige Verrechnung.**\n\nAbsatz 3 verbietet die nationale Zweitbelastung der Kraftwerksmenge; Absatz 9 verbietet, 45 Euro auf ETS-Anlagen zu legen. Beide Richtungen sind unzulässige Vermengung, nicht eine erlaubte Verrechnung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Ein Unternehmen mit ETS-Anlage zahlt den nationalen Preis nie, sobald im Namen der Firma Strom vorkommt.**\n\nAbsatz 3: Süd zahlt für Heizöl den nationalen Preis trotz ETS-Kraftwerk. Bloßes Vorkommen von Strom im Firmenprofil befreit nicht.\n\n**Falle:** „Nie“ und „sobald … vorkommt“ über die Mengentrennung hinausziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G04",
+        "case_id": "WISO-M5-G04",
+        "title": "Zwei Uhren, nicht der Tanktag",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Fälligkeit national und Abgabefrist im EU-ETS.",
+        "statements": [
+          "Der nationale Preis wird mit der Jahresmeldung fällig, nicht am Tag der einzelnen Tankung, und die ETS-Abgabe bis 30. April ist eine andere Uhr.",
+          "Gezahlt wird am Tag der Tankung, also ersetzt der Tanktag die Jahresmeldung.",
+          "Meldung und Abgabe sind im Text verschiedene Zeitpunkte, und der Zertifikateverkauf schaltet die nationale Fälligkeit nicht um.",
+          "Weil ein Abgabetermin genannt ist, muss die nationale Grundlage der Auktionspreis sein.",
+          "Ein 2025 emittierter und erst 2026 gemeldeter nationaler Vorgang ist deshalb schon 2025 nach Korridor zu zahlen."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Der nationale Preis wird mit der Jahresmeldung fällig, nicht am Tag der einzelnen Tankung, und die ETS-Abgabe bis 30. April ist eine andere Uhr.**\n\nAbsatz 4 nennt Jahresmeldung, nicht Tanktag, und stellt die ETS-Abgabe daneben. „Zwei Uhren“.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Gezahlt wird am Tag der Tankung, also ersetzt der Tanktag die Jahresmeldung.**\n\nAbsatz 4 entscheidet gegen den Tanktag: fällig mit der Jahresmeldung. Der Tanktag ersetzt diese Uhr nicht.\n\n**Falle:** Den sichtbaren Verbrauchstag als selbstverständliche Fälligkeit nehmen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Meldung und Abgabe sind im Text verschiedene Zeitpunkte, und der Zertifikateverkauf schaltet die nationale Fälligkeit nicht um.**\n\nAbsatz 4: zwei Uhren; Zertifikateverkauf schaltet die nationale Fälligkeit nicht um.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Weil ein Abgabetermin genannt ist, muss die nationale Grundlage der Auktionspreis sein.**\n\nAbsatz 4 ordnet den 30. April dem EU-ETS zu, nicht der nationalen Bemessung. Absatz 9 hält nationale 45 und ETS 68 getrennt.\n\n**Falle:** Aus dem Vorhandensein eines ETS-Termins auf die nationale Grundlage schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Ein 2025 emittierter und erst 2026 gemeldeter nationaler Vorgang ist deshalb schon 2025 nach Korridor zu zahlen.**\n\nAbsatz 2 bindet das Regime an den Emissionstag 2025 (Festpreis). Absatz 4 bindet die Zahlung an die Meldung, ändert aber das Regime nicht in den Korridor.\n\n**Falle:** Zahlungsjahr und Regimejahr vertauschen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G05",
+        "case_id": "WISO-M5-G05",
+        "title": "Vorgesehen ist nicht ausgezahlt",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Einnahmenzweck und die zurückgewiesene Pressemitteilung.",
+        "statements": [
+          "Einnahmen sind für Klimaschutz und ein geplantes Klimageld vorgesehen, und der Text übernimmt nicht den Satz, jeder Euro sei 2024 bereits ausgezahlt worden.",
+          "Weil Klimageld geplant ist, war 2024 jeder Euro aus dem nationalen Preis bereits an Haushalte ausgezahlt.",
+          "Pressemitteilung und Text ziehen aus den Einnahmen denselben Schluss. Das Ministerium macht sich den Satz zu eigen.",
+          "Der Text trennt die Zweckbindung von der Behauptung der bereits erfolgten Haushaltsauszahlung und trennt sie auch von einem Einheitspreis für alle Emittenten.",
+          "Ohne Klimageldauszahlung wäre die Zweckbindung im Text gegenstandslos, deshalb muss die Auszahlung 2024 schon gelten."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Einnahmen sind für Klimaschutz und ein geplantes Klimageld vorgesehen, und der Text übernimmt nicht den Satz, jeder Euro sei 2024 bereits ausgezahlt worden.**\n\nAbsatz 5: vorgesehen für Maßnahmen und Klimageld; Pressemitteilung mit flächendeckender Auszahlung 2024 wird nicht übernommen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil Klimageld geplant ist, war 2024 jeder Euro aus dem nationalen Preis bereits an Haushalte ausgezahlt.**\n\nAbsatz 5 trennt „vorgesehen“ und „bereits ausgezahlt“ und lässt das Ministerium den Presssatz nicht übernehmen.\n\n**Falle:** Planung mit Vollzug gleichsetzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Pressemitteilung und Text ziehen aus den Einnahmen denselben Schluss. Das Ministerium macht sich den Satz zu eigen.**\n\nAbsatz 5 stellt Mitteilung und Text gegenüber: Die Mitteilung behauptet die Auszahlung jedes Euros; der Text sagt, das Ministerium übernehme diesen Satz nicht.\n\n**Falle:** Vorkommen beider Akteure im selben Absatz als Einigkeit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Der Text trennt die Zweckbindung von der Behauptung der bereits erfolgten Haushaltsauszahlung und trennt sie auch von einem Einheitspreis für alle Emittenten.**\n\nAbsatz 5: Zweckbindung ≠ schon ausgezahlt. Absatz 1: kein Einheitspreis. Die Einnahmenregel wird in keinem Absatz zur Ausnahme von der Markttrennung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Ohne Klimageldauszahlung wäre die Zweckbindung im Text gegenstandslos, deshalb muss die Auszahlung 2024 schon gelten.**\n\nAbsatz 5 lässt Zweckbindung ohne die behauptete Auszahlung stehen. Zweckargumente ersetzen die ausdrückliche Zurückweisung nicht.\n\n**Falle:** „Sonst sinnlos“ über die Textgrenze legen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G06",
+        "case_id": "WISO-M5-G06",
+        "title": "Zwei Eintrittsbedingungen",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen ETS-Schwelle und Inverkehrbringen als getrennte Tore.",
+        "statements": [
+          "Unter der ETS-Schwelle zu liegen setzt nicht von selbst den nationalen Preis. Der nationale Preis verlangt erfasste Brennstoffe im Verkehr.",
+          "Jede Anlage außerhalb des EU-ETS fällt automatisch unter den nationalen Preis, sonst bliebe eine Lücke.",
+          "ETS-Schwelle und Inverkehrbringen sind im Text dasselbe Kriterium, weil beide den CO2-Ausstoß betreffen.",
+          "Wer eine der beiden Bedingungen verfehlt, tritt in den jeweiligen Markt nicht ein. Das ist nicht dieselbe Aussage wie ein Einheitspreis.",
+          "Inverkehrbringen erfasster Brennstoffe und ETS-Abgabe bis 30. April sind im Text dieselbe Pflicht."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Unter der ETS-Schwelle zu liegen setzt nicht von selbst den nationalen Preis. Der nationale Preis verlangt erfasste Brennstoffe im Verkehr.**\n\nAbsatz 6: ETS-Schwelle allein genügt nicht; Inverkehrbringen erfasster Brennstoffe ist die nationale Eintrittsbedingung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jede Anlage außerhalb des EU-ETS fällt automatisch unter den nationalen Preis, sonst bliebe eine Lücke.**\n\nAbsatz 6 verlangt für den nationalen Preis das Inverkehrbringen erfasster Brennstoffe. „Sonst Lücke“ schließt der Text nicht.\n\n**Falle:** ETS-Negativstatus als nationale Positivpflicht lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) ETS-Schwelle und Inverkehrbringen sind im Text dasselbe Kriterium, weil beide den CO2-Ausstoß betreffen.**\n\nAbsatz 6: zwei Eintrittsbedingungen „stehen nebeneinander und sind nicht dasselbe.“ Gemeinsamer Stoff macht die Tore nicht identisch.\n\n**Falle:** Vom gemeinsamen Bezugspunkt auf Kriteriengleichheit schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer eine der beiden Bedingungen verfehlt, tritt in den jeweiligen Markt nicht ein. Das ist nicht dieselbe Aussage wie ein Einheitspreis.**\n\nAbsatz 6: Wer eine verfehlt, tritt nicht ein. Absatz 1 hält die Märkte getrennt — kein Einheitspreis.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Inverkehrbringen erfasster Brennstoffe und ETS-Abgabe bis 30. April sind im Text dieselbe Pflicht.**\n\nAbsatz 6 betrifft den Markteintritt national; Absatz 4 die ETS-Abgabeuhr. Eintritt und Abgabefrist sind nicht dieselbe Pflicht.\n\n**Falle:** Nationale Mengenvoraussetzung mit ETS-Kalenderpflicht verschmelzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G07",
+        "case_id": "WISO-M5-G07",
+        "title": "Korridor bleibt, Festpreis nicht",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, was die Handelsphase ändert und was sie nicht abschafft.",
+        "statements": [
+          "In der Handelsphase begrenzt ein Korridor oben und unten. Der Text weist den Satz zurück, die Handelsphase schaffe jede Bindung ab.",
+          "Ab 2026 gilt weiter der feste Satz von 2025, und zugleich entfällt jede obere und untere Bindung.",
+          "Verband und Text ziehen aus der Handelsphase denselben Schluss zur Bindung.",
+          "Der Preis ab 2026 ist nicht mehr der feste Satz von 2025, und er ist auch nicht bindungslos.",
+          "Weil ein Korridor genannt ist, entfällt die Unterscheidung zwischen nationalem Markt und EU-ETS."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In der Handelsphase begrenzt ein Korridor oben und unten. Der Text weist den Satz zurück, die Handelsphase schaffe jede Bindung ab.**\n\nAbsatz 7: Korridor bleibt; Verbandsthese der Bindungslosigkeit wird zurückgewiesen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Ab 2026 gilt weiter der feste Satz von 2025, und zugleich entfällt jede obere und untere Bindung.**\n\nAbsatz 7 sagt beides nebeneinander als unzulässige Vermengung: weder bleibt der feste Satz, noch entfällt jede Bindung. Der Korridor ersetzt den Festpreis.\n\n**Falle:** Festpreis und Bindungslosigkeit zu einem Hybrid verbinden.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Verband und Text ziehen aus der Handelsphase denselben Schluss zur Bindung.**\n\nAbsatz 7: Der Verband liest Abschaffung jeder Bindung; der Text weist diesen Satz zurück und hält den Korridor.\n\n**Falle:** Gemeinsame Erwähnung als Einigkeit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Der Preis ab 2026 ist nicht mehr der feste Satz von 2025, und er ist auch nicht bindungslos.**\n\nAbsatz 7: kein Fortschreiben des Festpreises, aber Korridor statt Bindungslosigkeit.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil ein Korridor genannt ist, entfällt die Unterscheidung zwischen nationalem Markt und EU-ETS.**\n\nAbsatz 7 betrifft die nationale Handelsphase. Absatz 1 und 9 halten die Märkte und Preiszahlen getrennt. Ein Korridor löscht die Marktgrenze nicht.\n\n**Falle:** Nationale Ausgestaltung als Fusion mit dem EU-ETS lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G08",
+        "case_id": "WISO-M5-G08",
+        "title": "Tankort gegen Firmensitz",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welcher Anknüpfungspunkt die nationale Pflicht trägt.",
+        "statements": [
+          "Im Ausland gekaufter und in Deutschland getankter Kraftstoff kann die nationale Pflicht auslösen, und der bloße Firmensitz im Ausland befreit nicht.",
+          "Jeder Auslandskauf ist automatisch befreit, weil der Kaufort die Pflicht bestimmt.",
+          "Sitz und Tankort sind im Text verschiedene Anknüpfungspunkte, und die ETS-Abgabefrist ist nicht der Grund für diese Unterscheidung.",
+          "Weil der Sitz im Ausland liegt, entfällt der nationale Preis auch beim Tanken in Deutschland.",
+          "Tankort und Emissionstag der Handelsphase sind im Text dieselbe Schwelle."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Im Ausland gekaufter und in Deutschland getankter Kraftstoff kann die nationale Pflicht auslösen, und der bloße Firmensitz im Ausland befreit nicht.**\n\nAbsatz 8: Tankort kann auslösen; Sitz allein befreit nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Auslandskauf ist automatisch befreit, weil der Kaufort die Pflicht bestimmt.**\n\nAbsatz 8 weist gerade zurück, dass jeder Auslandskauf automatisch befreit. Kaufort allein ist nicht die Befreiungsuhr.\n\n**Falle:** Aus „Ausland“ eine pauschale Ausnahme lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Sitz und Tankort sind im Text verschiedene Anknüpfungspunkte, und die ETS-Abgabefrist ist nicht der Grund für diese Unterscheidung.**\n\nAbsatz 8 trennt Sitz und Tankort. Die Unterscheidung folgt der nationalen Anknüpfung, nicht der ETS-Uhr aus Absatz 4.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Weil der Sitz im Ausland liegt, entfällt der nationale Preis auch beim Tanken in Deutschland.**\n\nAbsatz 8: Sitz befreit nicht; Tanken in Deutschland kann die Pflicht auslösen.\n\n**Falle:** Firmensitz als umfassende Freistellung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Tankort und Emissionstag der Handelsphase sind im Text dieselbe Schwelle.**\n\nAbsatz 8 betrifft räumliche Anknüpfung; Absatz 2 die zeitliche Regimegrenze Festpreis/Handel. Ort und Kalendertag sind nicht dieselbe Schwelle.\n\n**Falle:** Räumliche und zeitliche Regel zu einer Schwelle zusammenziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G09",
+        "case_id": "WISO-M5-G09",
+        "title": "45 und 68, kein Mittelwert",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen, welche Zahl wofür gilt und was nicht gemittelt wird.",
+        "statements": [
+          "National 45 und ETS 68 sind verschiedene Beträge. Der Text legt weder den Mittelwert 56,5 als „den“ deutschen Preis noch die 45 auf ETS-Anlagen.",
+          "Weil beide Zahlen CO2 betreffen, ist 56,5 der maßgebliche deutsche CO2-Preis für alle Anlagen.",
+          "45 Euro ersetzen im Beispiel den Auktionspreis, sobald ein Unternehmen auch Heizöl nutzt.",
+          "45 und 68 bleiben getrennte Marktpreise, und die Klimagelddiskussion ist nicht die Begründung für diese Trennung.",
+          "Der Text rechnet den Mittelwert vor und setzt ihn mit dem nationalen Festpreis gleich."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) National 45 und ETS 68 sind verschiedene Beträge. Der Text legt weder den Mittelwert 56,5 als „den“ deutschen Preis noch die 45 auf ETS-Anlagen.**\n\nAbsatz 9 verbietet Mittelwert und das Legen der 45 auf ETS-Anlagen. Beide Beträge bleiben getrennt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil beide Zahlen CO2 betreffen, ist 56,5 der maßgebliche deutsche CO2-Preis für alle Anlagen.**\n\nAbsatz 9 verbietet genau diese Mittelung. Gemeinsamer Stoff rechtfertigt den Einheitswert nicht.\n\n**Falle:** Arithmetisches Mittel als Rechtspreis lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 45 Euro ersetzen im Beispiel den Auktionspreis, sobald ein Unternehmen auch Heizöl nutzt.**\n\nAbsatz 9 verbietet, 45 auf ETS-Anlagen zu legen. Absatz 3 hält Heizöl und Kraftwerk getrennt. Heizölnutzung ersetzt den Auktionspreis nicht.\n\n**Falle:** Nationale Zahl auf den ETS-Teil hinüberschieben.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) 45 und 68 bleiben getrennte Marktpreise, und die Klimagelddiskussion ist nicht die Begründung für diese Trennung.**\n\nAbsatz 9 trennt die Preise marktwechselnd. Die Begründung ist die Systemgrenze (Absatz 1 und 3), nicht Absatz 5 zum Klimageld.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Der Text rechnet den Mittelwert vor und setzt ihn mit dem nationalen Festpreis gleich.**\n\nAbsatz 9 verbietet den Mittelwert als „den“ Preis und setzt ihn nicht mit 45 gleich. Vorgeführt wird die Trennung, nicht die Mittelung.\n\n**Falle:** Genannte Zahlen als freigegebene Rechenaufgabe zum Mittelwert lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M5-G10",
+        "case_id": "WISO-M5-G10",
+        "title": "Festpreisende und Auszahlung zugleich",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen Kombinationen aus Marktgrenze, Uhren und Zahlenverbot.",
+        "statements": [
+          "Ein Einheitspreis für alle Emittenten und die Mittelung von 45 und 68 sind im Text dieselbe zulässige Vereinfachung.",
+          "Süd zahlt national nur auf Heizöl, bleibt mit dem Kraftwerk im EU-ETS, und der Emissionstag steuert Festpreis gegen Korridor.",
+          "Jahresmeldung und ETS-Abgabe bis 30. April sind dieselbe Uhr, weil beide nach dem Verbrauchsjahr liegen.",
+          "Wer den Verbandssatz zur bindungslosen Handelsphase übernimmt und zugleich 45 auf ETS-Anlagen legt, folgt dem Text in beiden Punkten.",
+          "Markttrennung, Doppelzählungsverbot bei Süd und Verbot des Mittelwerts können zusammen vorliegen, ohne dass Klimageld schon 2024 an alle Haushalte ausgezahlt sein muss."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Ein Einheitspreis für alle Emittenten und die Mittelung von 45 und 68 sind im Text dieselbe zulässige Vereinfachung.**\n\nAbsatz 1 weist den Einheitspreis zurück; Absatz 9 die Mittelung. Beides ist unzulässig, nicht eine gemeinsame Vereinfachung.\n\n**Falle:** Zwei verworfene Lesarten zu einer erlaubten Kurzformel verbinden.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Süd zahlt national nur auf Heizöl, bleibt mit dem Kraftwerk im EU-ETS, und der Emissionstag steuert Festpreis gegen Korridor.**\n\nAbsatz 3: Mengentrennung bei Süd. Absatz 2: Emissionstag als Regimeuhr. Beide Regeln liegen nebeneinander und widersprechen sich nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Jahresmeldung und ETS-Abgabe bis 30. April sind dieselbe Uhr, weil beide nach dem Verbrauchsjahr liegen.**\n\nAbsatz 4 nennt ausdrücklich zwei Uhren. Nachgelagert sein macht sie nicht identisch.\n\n**Falle:** Gemeinsame Nachverlagerung als Uhrenidentität lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer den Verbandssatz zur bindungslosen Handelsphase übernimmt und zugleich 45 auf ETS-Anlagen legt, folgt dem Text in beiden Punkten.**\n\nAbsatz 7 weist die Bindungslosigkeit zurück; Absatz 9 verbietet 45 auf ETS. „Folgt dem Text“ kehrt beide Stellen um.\n\n**Falle:** Zwei Zurückweisungen als doppelte Bestätigung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Markttrennung, Doppelzählungsverbot bei Süd und Verbot des Mittelwerts können zusammen vorliegen, ohne dass Klimageld schon 2024 an alle Haushalte ausgezahlt sein muss.**\n\nAbsätze 1, 3 und 9 tragen die drei Verbote/Trennungen. Absatz 5 verweigert die schon erfolgte Auszahlung — sie ist keine Voraussetzung der Marktregeln.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ]
+      },
+      {
+        "id": "WISO-M5-G11",
+        "case_id": "WISO-M5-G11",
+        "title": "Meldung ist nicht Repressalie",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Die Aussagen prüfen ausschließlich den Kurztext zum Hinweisgeberschutz.",
+        "statements": [
+          "Unternehmen ab einer bestimmten Größe müssen eine interne Meldestelle einrichten, und die externe Stelle beim Bund ersetzt diese Pflicht nicht.",
+          "Nords Zwischennotiz am 20. März ohne Substanz erfüllt die Drei-Monats-Frist, und jede kurze Eingangsbestätigung genügt als Rückmeldung.",
+          "95 und 40 dürfen nicht addiert werden. 180 ist nicht die Zahl der festgestellten Repressalien, weil eine eingegangene Meldung nicht schon die bewiesene Benachteiligung ist.",
+          "Jede Versetzung nach einer Meldung ist automatisch unzulässig, und die Verbandsforderung wird dabei übernommen.",
+          "Interne und externe Stelle sind im Override-Text nicht dieselbe Pflicht, und die Drei-Monats-Frist verlangt mehr als eine inhaltlose Zwischennotiz."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Unternehmen ab einer bestimmten Größe müssen eine interne Meldestelle einrichten, und die externe Stelle beim Bund ersetzt diese Pflicht nicht.**\n\nOverride Absatz 1: interne Pflicht bleibt; externe Stelle tritt daneben und ersetzt sie nicht. Wer die interne Stelle für überflüssig hält, verlässt den Text.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Nords Zwischennotiz am 20. März ohne Substanz erfüllt die Drei-Monats-Frist, und jede kurze Eingangsbestätigung genügt als Rückmeldung.**\n\nOverride Absatz 2: Rückmeldung über geplante oder ergriffene Maßnahmen bis zum 2. Juni; die Zwischennotiz ohne Substanz erfüllt das nicht. Der Text sagt ausdrücklich nicht, jede kurze Eingangsbestätigung genüge.\n\n**Falle:** Frühe Notiz mit fristgerechter Substanz-Rückmeldung verwechseln.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 95 und 40 dürfen nicht addiert werden. 180 ist nicht die Zahl der festgestellten Repressalien, weil eine eingegangene Meldung nicht schon die bewiesene Benachteiligung ist.**\n\nOverride Absatz 3 verbietet die Addition und verbietet, 180 als Repressalienzahl zu lesen. Meldung ≠ bewiesene Benachteiligung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Jede Versetzung nach einer Meldung ist automatisch unzulässig, und die Verbandsforderung wird dabei übernommen.**\n\nOverride Absatz 4: Repressalien wegen der Meldung sind verboten, aber eine betriebsbedingte Versetzung aus dokumentierten Kapazitätsgründen bleibt möglich, wenn sie nicht wegen der Meldung erfolgt. Die Verbandsforderung der Automatik wird nicht übernommen.\n\n**Falle:** Zeitliche Nähe nach der Meldung mit Kausalität „wegen der Meldung“ gleichsetzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Interne und externe Stelle sind im Override-Text nicht dieselbe Pflicht, und die Drei-Monats-Frist verlangt mehr als eine inhaltlose Zwischennotiz.**\n\nOverride Absatz 1 trennt interne Pflicht und externe Stelle. Absatz 2 bindet die Frist an Rückmeldung mit Substanz, nicht an bloße Eingangsbestätigung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ],
+        "passage_override": "(1) Das Hinweisgeberschutzgesetz verpflichtet Unternehmen ab einer bestimmten Größe, eine interne Meldestelle einzurichten. Die externe Meldestelle beim Bund tritt daneben; sie ersetzt die interne Pflicht nicht. Wer schreibt, externe Meldung mache die interne Stelle überflüssig, verlässt den Text.\n\n(2) Die Beschäftigte Nord meldet intern am 2. März einen Verstoß. Bis zum 2. Juni schuldet die Stelle eine Rückmeldung über geplante oder ergriffene Maßnahmen. Eine Zwischennotiz am 20. März ohne Substanz erfüllt diese Drei-Monats-Frist nicht. Der Text sagt nicht, jede kurze Eingangsbestätigung genüge als Rückmeldung.\n\n(3) Von 600 erfassten Unternehmen hatten 180 im Berichtsjahr mindestens eine interne Meldung. 95 dieser 180 betrafen zugleich Fälle mit verspäteter Rückmeldung, 40 davon zugleich Beschäftigte, die nach der Meldung versetzt wurden. Der Text verbietet, 95 und 40 zu addieren, und er verbietet, 180 als Zahl der festgestellten Repressalien zu lesen. Eine eingegangene Meldung ist nicht schon die bewiesene Benachteiligung.\n\n(4) Repressalien wegen einer Meldung sind verboten. Eine betriebsbedingte Versetzung aus dokumentierten Kapazitätsgründen bleibt möglich, wenn sie nicht wegen der Meldung erfolgt. Der Verband fordert, jede Versetzung nach einer Meldung sei automatisch unzulässig. Der Text übernimmt diese Forderung nicht.",
+        "passage_title_override": "Hinweisgeberschutz: interne Stelle, Frist und Repressalie"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "WISO-M5-M01",
+      "id": "WISO-M5-M01",
+      "title": "Genau-eins-Kern und blockierter B-Zweig",
+      "chapter": 1,
+      "subsection": "1.5",
+      "difficulty_level": "5/5",
+      "context": "Es gelten sieben Prämissen über die Aussagenvariablen $A,B,C,D,E$:\n\n(1) Mindestens eine der Aussagen $A,B$ ist wahr.\n\n(2) $A$ und $B$ sind nicht zugleich wahr.\n\n(3) Wenn $A$, dann $C$.\n\n(4) Wenn $B$, dann nicht $C$.\n\n(5) $C$ genau dann, wenn $D$.\n\n(6) Genau eine der Aussagen $D,E$ ist wahr.\n\n(7) Wenn $E$, dann $A$.\n\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Unter allen sieben Prämissen gibt es genau eine zulässige Belegung, und in ihr ist $A$ wahr sowie $E$ falsch.",
+        "Bereits aus (1)–(4) allein folgt, dass $C$ wahr ist.",
+        "Lässt man nur (7) weg, so wird die Belegung mit $B$ wahr und $A$ falsch zulässig.",
+        "In der eindeutigen Lösung aller sieben Prämissen ist $E$ wahr.",
+        "Prämisse (5) ist allein entbehrlich: ohne sie bleibt dieselbe einelementige Lösungsmenge."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n(1)–(2) erzwingen genau eine von $A,B$. Der $B$-Zweig scheitert an (7): aus $B$ folgen $\\neg C$, $\\neg D$, $E$, aber $E\\Rightarrow A$ widerspricht $\\neg A$. Übrig bleibt nur\n$$\nA,\\;\\neg B,\\;C,\\;D,\\;\\neg E.\n$$\nGenau diese eine Belegung erfüllt alle Prämissen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nMit nur (1)–(4) bleibt der $B$-Zweig offen: $B$ wahr, $A$ falsch, $C$ falsch erfüllt (1)–(4). In diesem Zweig ist $C$ falsch, im $A$-Zweig wahr — $C$ ist also nicht erzwungen.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nOhne (7) erfüllt\n$$\n\\neg A,\\;B,\\;\\neg C,\\;\\neg D,\\;E\n$$\ndie Prämissen (1)–(6): genau eine von $A,B$; (4) liefert $\\neg C$; (5) liefert $\\neg D$; (6) liefert $E$. Der zuvor blockierte Zweig ist zulässig.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie eindeutige Lösung hat $E$ falsch (weil $D$ wahr ist und (6) genau eine von $D,E$ verlangt). Die Behauptung widerspricht der Belegung.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nOhne (5) im $A$-Zweig: $A,\\neg B,C$ und etwa $D$ falsch, $E$ wahr erfüllt (1)–(4),(6),(7). Das ist eine zweite Belegung neben $A,\\neg B,C,D,\\neg E$. Die Lösungsmenge wächst — (5) ist nicht entbehrlich.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Aus (1) und (2) ist genau eine von $A,B$ wahr.\n\nFall $A$: Dann $\\neg B$, aus (3) folgt $C$, aus (5) folgt $D$, aus (6) folgt $\\neg E$. (7) ist erfüllt. Zulässig.\n\nFall $B$: Dann $\\neg A$, aus (4) folgt $\\neg C$, aus (5) folgt $\\neg D$, aus (6) folgt $E$. (7) verlangt dann $A$ — Widerspruch zu $\\neg A$.\n\nDie einzige Belegung ist daher\n$$\nA=\\top,\\; B=\\bot,\\; C=\\top,\\; D=\\top,\\; E=\\bot.\n$$\nOhne (7) wird der $B$-Zweig zulässig. Ohne (5) bleibt $D$ im $A$-Zweig frei gegen (6).",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M02",
+      "id": "WISO-M5-M02",
+      "title": "Konjugiertes Kürzen mit hebbarer Lücke",
+      "chapter": 2,
+      "subsection": "2.2",
+      "difficulty_level": "5/5",
+      "context": "Es sei\n$$\nh(x)=\\dfrac{x-9}{\\sqrt{x}-3}\n$$\nfür alle $x\\ge 0$, für die der Nenner nicht verschwindet. Bewerten Sie jede Aussage über Definitionsmenge, algebraische Vereinfachung und Grenzverhalten.",
+      "statements": [
+        "Auf dem gesamten Definitionsbereich gilt $h(x)=\\sqrt{x}+3$.",
+        "Die Definitionsmenge hat mindestens zwei verschiedene Lücken in $[0,\\infty)$.",
+        "An der Definitionslücke liegt ein Pol von $h$.",
+        "Es gilt $h(4)=5$.",
+        "Weil Zähler und Nenner bei $x=9$ beide null sind, darf $h(9)$ durch Einsetzen in die ungekürzte Form als $0$ definiert werden."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nFür $x\\ge 0$, $x\\neq 9$ ist $\\sqrt{x}-3\\neq 0$, also\n$$\nh(x)=\\dfrac{(\\sqrt{x}-3)(\\sqrt{x}+3)}{\\sqrt{x}-3}=\\sqrt{x}+3.\n$$\nDie Identität gilt genau auf dem Definitionsbereich.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDer Nenner verschwindet nur bei $x=9$. Der Radikand verlangt $x\\ge 0$, erzeugt aber keine weitere Lücke. Genau eine Lücke: $\\{9\\}$.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nNach dem Kürzen ist die Singularität hebbar:\n$$\n\\lim_{x\\to 9}h(x)=6\\in\\mathbb{R}.\n$$\nEin Pol würde $|h(x)|\\to\\infty$ verlangen — das trifft hier nicht zu.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nDirekt:\n$$\nh(4)=\\dfrac{4-9}{2-3}=\\dfrac{-5}{-1}=5,\n$$\noder über die Vereinfachung $\\sqrt{4}+3=5$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nDie ungekürzte Form ist an $x=9$ der unbestimmte Ausdruck $0/0$, nicht der Wert $0$. Sinnvoll ist nur die stetige Fortsetzung über $\\sqrt{x}+3$, die $h(9)=6$ setzt — nicht $0$.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Nenner null genau bei $\\sqrt{x}=3$, also $x=9$. Definitionsmenge $[0,\\infty)\\setminus\\{9\\}$.\n\nErweitern mit der Konjugierten:\n$$\nh(x)=\\dfrac{(\\sqrt{x}-3)(\\sqrt{x}+3)}{\\sqrt{x}-3}=\\sqrt{x}+3\n$$\nauf dem Definitionsbereich. Die Lücke bei $x=9$ ist hebbar mit\n$$\n\\lim_{x\\to 9}h(x)=6.\n$$\nInsbesondere ist $h(4)=\\sqrt{4}+3=5$. An $x=9$ steht im ursprünglichen Bruch $0/0$, kein Pol.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M03",
+      "id": "WISO-M5-M03",
+      "title": "Tilgungsfonds gegen Kreditannuität, Differenz Sr",
+      "chapter": 3,
+      "subsection": "3.6",
+      "difficulty_level": "5/5",
+      "context": "Eine Zielsumme bzw. Kreditschuld von EUR $42\\,000$ wird über $n=7$ Jahre bei effektivem Jahreszins $r=6\\%$ betrachtet. Variante Tilgungsfonds: jährlich nachschüssige Einzahlung $A_{s}$, die nach sieben Jahren genau $42\\,000$ erreicht. Variante Kredit: sieben gleiche nachschüssige Annuitäten $A_{\\ell}$, die dieselbe Schuld tilgen. Restschuld bzw. Fondsguthaben jeweils unmittelbar nach einer Zahlung. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Kreditannuität übersteigt die Fondseinzahlung um genau EUR $2\\,520$.",
+        "Nach der ersten Kreditzahlung liegt die Restschuld unter EUR $36\\,000$.",
+        "Beide Zahlungen $A_{s}$ und $A_{\\ell}$ liegen streng zwischen EUR $4\\,800$ und EUR $7\\,600$.",
+        "Verdoppelt man nur die Laufzeit auf $14$ Jahre bei gleichem Satz und gleicher Summe, so halbiert sich $A_{s}$.",
+        "Es gilt $A_{\\ell}=A_{s}+Sr$, und diese Zerlegung bleibt bei jedem $n\\ge 1$ und jedem $r>0$ gültig."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAllgemein $A_{\\ell}-A_{s}=Sr$. Hier\n$$\nSr=42000\\cdot 0{,}06=2520.\n$$\nNumerisch $7523{,}67-5003{,}67=2520$ — die Differenz ist exakt $Sr$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$$\nB_{1}=S(1+r)-A_{\\ell}=42000\\cdot 1{,}06-A_{\\ell}\\approx 44520-7523{,}67=36996{,}33>36000.\n$$\nDie Behauptung unterschätzt die Restschuld.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$A_{s}\\approx 5003{,}67\\in(4800,7600)$ und $A_{\\ell}\\approx 7523{,}67\\in(4800,7600)$. Beide Schranken sind streng erfüllt.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$A_{s}(n)=S r/((1+r)^{n}-1)$ ist nicht proportional zu $1/n$. Mit $n=14$:\n$$\nA_{s}(14)=42000\\cdot\\dfrac{0{,}06}{1{,}06^{14}-1}\\approx 1947{,}6\\neq \\tfrac12 A_{s}(7)\\approx 2501{,}8.\n$$\nDie Halbierungsregel gilt nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nMit $u=(1+r)^{n}$:\n$$\n\\dfrac{r}{1-u^{-1}}-\\dfrac{r}{u-1}=r\\cdot\\dfrac{u}{u-1}-r\\cdot\\dfrac{1}{u-1}=r.\n$$\nMultiplikation mit $S$ liefert $A_{\\ell}=A_{s}+Sr$ unabhängig von $n$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Mit $S=42000$, $r=0{,}06$, $u=1{,}06^{7}$:\n$$\nA_{s}=S\\cdot\\dfrac{r}{u-1}\\approx 5003{,}67,\\qquad\nA_{\\ell}=S\\cdot\\dfrac{r}{1-u^{-1}}\\approx 7523{,}67.\n$$\nAlgebraisch gilt stets\n$$\nA_{\\ell}-A_{s}=Sr=2520.\n$$\nNach der ersten Kreditrate: $B_{1}=S(1+r)-A_{\\ell}\\approx 36996{,}33$. Der Fonds steht nach der ersten Einzahlung nur bei $A_{s}\\approx 5003{,}67}$. Die Summe $A_{s}+A_{\\ell}$ ist kein Vielfaches von $S$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M04",
+      "id": "WISO-M5-M04",
+      "title": "Betrag gleich Wurzel, beide Kandidaten überleben",
+      "chapter": 4,
+      "subsection": "4.3",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen Lösungen von\n$$\n|2x-5|=\\sqrt{x+1}.\n$$\nZusätzlich wird die unkritische Ersatzgleichung $2x-5=\\sqrt{x+1}$ ohne Betrag betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Originalgleichung hat genau zwei verschiedene reelle Lösungen.",
+        "Beide Lösungen erfüllen $2x-5\\ge 0$.",
+        "Die Ersatzgleichung $2x-5=\\sqrt{x+1}$ hat genau eine reelle Lösung, und diese ist die größere Lösung der Originalgleichung.",
+        "Weil Quadrieren nicht injektiv ist, muss mindestens eine der beiden Quadratwurzeln der Hilfsgleichung eine Scheinlösung der Originalgleichung sein.",
+        "Die kleinere Lösung liegt streng zwischen $1$ und $2$, die größere streng zwischen $3$ und $4$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nBeide Wurzeln von $4x^{2}-21x+24=0$ liegen in $x\\ge -1$ und bestehen die Probe in $|2x-5|=\\sqrt{x+1}$. Diskriminante $\\sqrt{57}>0$ trennt sie — genau zwei Lösungen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nAn $x_{-}\\approx 1{,}681$ ist $2x_{-}-5\\approx -1{,}637<0$. Der Betrag ist nötig; die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$2x-5=\\sqrt{x+1}\\ge 0$ erzwingt $x\\ge 5/2$. Nur $x_{+}\\approx 3{,}569$ liegt darüber und löst beide Formen. $x_{-}$ fällt aus der Ersatzgleichung heraus.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nQuadrieren kann Scheinlösungen erzeugen — muss aber nicht. Hier bestehen beide Kandidaten die Probe. Die pauschale „mindestens eine Scheinlösung“-Regel greift nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\sqrt{57}\\approx 7{,}550$, also\n$$\nx_{-}=(21-7{,}550)/8\\approx 1{,}681\\in(1,2),\\qquad\nx_{+}=(21+7{,}550)/8\\approx 3{,}569\\in(3,4).\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Definitionsbereich $x\\ge -1$. Quadrieren liefert\n$$\n(2x-5)^{2}=x+1\\implies 4x^{2}-21x+24=0,\\qquad\nx=\\dfrac{21\\pm\\sqrt{57}}{8}.\n$$\nBeide Kandidaten liegen in $[-1,\\infty)$ und erfüllen die Ausgangsgleichung (Betrag fängt das Vorzeichen von $2x-5$ ab):\n$$\nx_{-}=\\dfrac{21-\\sqrt{57}}{8}\\approx 1{,}681,\\qquad\nx_{+}=\\dfrac{21+\\sqrt{57}}{8}\\approx 3{,}569.\n$$\nBei $x_{-}$ ist $2x-5<0$; die Ersatzgleichung ohne Betrag verwirft $x_{-}$. Es gibt genau zwei Lösungen der Originalgleichung, genau eine der Ersatzgleichung.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M05",
+      "id": "WISO-M5-M05",
+      "title": "Zwei Kapazitäten, Optimum am Schnittpunkt",
+      "chapter": 5,
+      "subsection": "5.5",
+      "difficulty_level": "5/5",
+      "context": "Zulässig sind alle $(x,y)$ mit\n$$\n3x+2y\\le 24,\\qquad x+2y\\le 16,\\qquad x\\ge 0,\\qquad y\\ge 0.\n$$\nZu maximieren ist $Z=5x+4y$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Das Maximum von $Z$ auf dem zulässigen Bereich wird genau an einem Eckpunkt angenommen, und dort gilt $Z=44$.",
+        "Am Achsenabschnitt $(8,0)$ ist $Z$ größer als am Achsenabschnitt $(0,8)$.",
+        "Jeder Punkt der Strecke zwischen $(8,0)$ und $(4,6)$ ist unzulässig, weil dort $x+2y>16$.",
+        "Ersetzt man die Zielfunktion durch $Z^{\\ast}=x+4y$, so bleibt $(4,6)$ optimal.",
+        "Die zulässige Menge enthält den Punkt $(6,5)$ nicht."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nLineare Zielfunktion auf einem Polygon: Optimum an einer Ecke. Vergleich liefert einzig $(4,6)$ mit $Z=5\\cdot 4+4\\cdot 6=44$.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\n$Z(8,0)=40>32=Z(0,8)$. Beide Punkte sind zulässig ($3\\cdot 8\\le 24$, $2\\cdot 8\\le 16$).\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nAuf der Kante $3x+2y=24$ zwischen $(8,0)$ und $(4,6)$ gilt wegen der Geometrie zugleich $x+2y\\le 16$ (Gleichheit nur am Schnitt). Die Strecke gehört zum Rand des Zulässigen.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\n$Z^{\\ast}(4,6)=4+24=28$, aber $Z^{\\ast}(0,8)=32>28$. Das Optimum wandert nach $(0,8)$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nProbe:\n$$\n3\\cdot 6+2\\cdot 5=28>24.\n$$\nDie erste Kapazität ist verletzt — $(6,5)$ liegt außerhalb.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Ecken des zulässigen Bereichs: $(0,0)$, $(8,0)$, $(4,6)$, $(0,8)$.\nSchnitt der beiden Kapazitäten:\n$$\n3x+2y=24,\\; x+2y=16\\implies x=4,\\; y=6.\n$$\nZielwerte: $Z(0,0)=0$, $Z(8,0)=40$, $Z(4,6)=44$, $Z(0,8)=32$. Maximum $44$ einzig an $(4,6)$. Das Minimum unter den Ecken liegt bei $(0,0)$, nicht bei $(0,8)$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M06",
+      "id": "WISO-M5-M06",
+      "title": "Doppelte Nullstelle isoliert in negativem Band",
+      "chapter": 6,
+      "subsection": "6.1",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen $x$ mit\n$$\n\\dfrac{(x-2)^{2}(x+1)}{(x-3)(x+4)}\\ge 0.\n$$\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Lösungsmenge enthält den isolierten Punkt $\\{2\\}$ und das Intervall $(-4,-1]$.",
+        "Das offene Intervall $(1,3)$ liegt vollständig in der Lösungsmenge.",
+        "Die Pole $x=-4$ und $x=3$ gehören nicht zur Lösungsmenge.",
+        "Weil $(x-2)^{2}$ stets nichtnegativ ist, ist jedes $x>3$ automatisch eine Lösung.",
+        "Ersetzt man $\\ge$ durch $>$, so entfällt nur der Punkt $x=-1$; $x=2$ bleibt Lösung."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAm doppelten Faktor ist der Ausdruck $0$ (Nenner $\\neq 0$), also $2\\in L$. Auf $(-4,-1)$ ist der Ausdruck positiv, bei $x=-1$ null — zusammen $(-4,-1]\\cup\\{2\\}\\subset L$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nIn $(1,3)\\setminus\\{2\\}$ ist der Ausdruck negativ (Vorzeichenband $-$). Nur der Einzelpunkt $x=2$ aus diesem Intervall gehört zu $L$ — nicht das ganze offene Intervall.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nAn den Nullstellen des Nenners ist der Ausdruck undefiniert. Unabhängig vom Zähler entfallen beide Ränder.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nFür $x>3$ sind $(x-2)^{2}>0$, $x+1>0$, $x-3>0$, $x+4>0$ — Quotient positiv. Die ganze Strahlhalbgerade $(3,\\infty)$ liegt in $L$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nStrikte Ungleichung verlangt positiven Wert. Sowohl $x=-1$ als auch $x=2$ liefern $0$ und entfallen. Auch $\\{2\\}$ fällt weg.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "$(x-2)^{2}$ wechselt das Vorzeichen nie. Vorzeichen von $(x+1)/((x-3)(x+4))$:\n\n| Intervall | Vorzeichen |\n|---|---|\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,-1)$ | $+$ |\n| $(-1,3)\\setminus\\{2\\}$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nNullstellen des Zählers: $x=-1$ (einfach, gehört dazu), $x=2$ (doppelt). Pole $x=-4$ und $x=3$ gehören nicht dazu. Wegen des negativen Bands um $x=2$ ist $\\{2\\}$ ein isolierter Punkt der Lösungsmenge:\n$$\nL=(-4,-1]\\cup\\{2\\}\\cup(3,\\infty).\n$$",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M07",
+      "id": "WISO-M5-M07",
+      "title": "Parabel trifft Betrags-V in drei Punkten",
+      "chapter": 7,
+      "subsection": "7.5",
+      "difficulty_level": "5/5",
+      "context": "Es seien\n$$\nf(x)=x^{2}-4x+3,\\qquad g(x)=|x-2|-1.\n$$\nGesucht sind die Schnittpunkte der Graphen sowie Lage zu Scheitel und Knick. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Graphen schneiden sich in genau drei verschiedenen Punkten.",
+        "Im Knickpunkt von $g$ gilt $f(x)>g(x)$.",
+        "Beide Nullstellen von $f$ sind zugleich Nullstellen von $g$.",
+        "Auf $(-\\infty,2)$ liegen genau zwei Schnittstellen.",
+        "Der Scheitel von $f$ und der Knick von $g$ fallen zusammen und sind ein Schnittpunkt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDie Fallrechnung liefert die Abszissen $1,2,3$ — paarweise verschieden — und damit genau drei Schnittpunkte.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $x=2$ ist $f(2)=-1=g(2)$. Die Graphen treffen sich dort; die strikte Ungleichung gilt nicht.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$f(1)=f(3)=0$. Ferner $g(1)=|1-2|-1=0$ und $g(3)=|3-2|-1=0$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nLinks inkl. Rand: $x=1$ und $x=2$. Streng auf $(-\\infty,2)$ liegt nur $x=1$ — genau eine Schnittstelle, nicht zwei.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nBeide kritischen Stellen sitzen bei $x=2$ mit Funktionswert $-1$. Der Punkt $(2,-1)$ ist Schnittpunkt.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Links von $2$: $x^{2}-4x+3=1-x$ ergibt $x^{2}-3x+2=0$, also $x=1$ und $x=2$.\nRechts von $2$: $x^{2}-4x+3=x-3$ ergibt $x^{2}-5x+6=0$, also $x=2$ und $x=3$.\nDrei Schnittstellen $x=1,2,3$ mit Punkten $(1,0)$, $(2,-1)$, $(3,0)$.\nScheitel von $f$ bei $x=2$, $f(2)=-1$; Knick von $g$ ebenfalls bei $x=2$, $g(2)=-1$ — sie berühren sich im gemeinsamen Extremum. $f$ hat Nullstellen bei $1$ und $3$; dort ist auch $g=0$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M08",
+      "id": "WISO-M5-M08",
+      "title": "Potenzprodukt mit Skalenelastizität 5/6",
+      "chapter": 8,
+      "subsection": "8.5",
+      "difficulty_level": "5/5",
+      "context": "Eine Produktion folge\n$$\nQ(L,K)=2\\,L^{1/2}K^{1/3}\n$$\nfür $L>0$, $K>0$. Betrachtet wird der Punkt $(L,K)=(36,27)$ sowie die gleichmäßige Skalierung beider Inputs mit dem Faktor $t>0$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Am Punkt $(36,27)$ gilt $Q=36$ und $\\partial Q/\\partial L=1/2$.",
+        "Verdoppelt man beide Inputs, so verdoppelt sich $Q$.",
+        "Die Skalenelastizität ist konstant gleich $5/6$.",
+        "Am betrachteten Punkt ist $\\partial Q/\\partial K$ größer als $\\partial Q/\\partial L$.",
+        "Wegen $\\tfrac12+\\tfrac13<1$ liegen abnehmende Skalenerträge vor."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$\\sqrt{36}=6$, $27^{1/3}=3$, also $Q=2\\cdot 6\\cdot 3=36$. Ferner\n$$\n\\partial Q/\\partial L=K^{1/3}/\\sqrt{L}=3/6=1/2.\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$Q(2L,2K)=2^{5/6}Q$. Wegen $2^{5/6}<2$ steigt der Output um den Faktor $2^{5/6}\\approx 1{,}781$, nicht um $2$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nHomogenität vom Grad $5/6$: $Q(tL,tK)=t^{5/6}Q(L,K)$ für alle $t>0$. Die Skalenelastizität ist diese Konstante.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$\\partial Q/\\partial K=4/9\\approx 0{,}444<1/2=\\partial Q/\\partial L$. Die Behauptung vertauscht die Größenordnung.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nSumme der Exponenten $5/6<1$ kennzeichnet abnehmende Skalenerträge der Potenzprodukt-Technologie.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Am Punkt $(36,27)$:\n$$\nQ=2\\cdot 6\\cdot 3=36.\n$$\nGrenzprodukte:\n$$\n\\frac{\\partial Q}{\\partial L}=\\frac{K^{1/3}}{\\sqrt{L}}=\\frac{3}{6}=\\frac12,\\qquad\n\\frac{\\partial Q}{\\partial K}=\\frac{2}{3}\\cdot\\frac{\\sqrt{L}}{K^{2/3}}=\\frac{2}{3}\\cdot\\frac{6}{9}=\\frac{4}{9}.\n$$\nSkalierung $(tL,tK)$ liefert\n$$\nQ(tL,tK)=t^{5/6}Q(L,K)\n$$\nweil $\\tfrac12+\\tfrac13=\\tfrac56<1$ — abnehmende Skalenerträge. Insbesondere verdoppelt $t=2$ den Output nicht.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M09",
+      "id": "WISO-M5-M09",
+      "title": "Parameter aus p(2)=0, dann irrationale Geschwister",
+      "chapter": 9,
+      "subsection": "9.5",
+      "difficulty_level": "5/5",
+      "context": "Es sei $p(x)=x^{3}+a x^{2}-x+6$. Es gelte $p(2)=0$. Danach wird der quadratische Faktor nach Division durch $x-2$ untersucht. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Parameter ist eindeutig $a=-3$, und $x=2$ ist rationale Nullstelle.",
+        "Nach dem Abspalten von $x-2$ hat der quadratische Faktor zwei positive Nullstellen.",
+        "Alle drei Nullstellen von $p$ sind reell und paarweise verschieden.",
+        "Das Produkt der beiden irrationalen Nullstellen ist $-3$.",
+        "Weil $p$ monisch vom Grad $3$ ist und eine rationale Nullstelle hat, müssen die anderen beiden Nullstellen ebenfalls rational sein."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$p(2)=12+4a=0\\Rightarrow a=-3$. Mit diesem $a$ ist $x=2$ nach Bauart Nullstelle.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$x=(1\\pm\\sqrt{13})/2$: wegen $\\sqrt{13}>1$ ist die kleinere Wurzel negativ. Genau eine positive irrationale Nullstelle.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$x=2$, $(1+\\sqrt{13})/2$, $(1-\\sqrt{13})/2$ — drei verschiedene reelle Zahlen ($\\sqrt{13}\\neq 3$).\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nAus $x^{2}-x-3=0$ ist das Produkt der Wurzeln gleich dem konstanten Term $-3$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nGanzzahlige Koeffizienten erzwingen das nicht für den quadratischen Faktor. Hier sind die Geschwister irrational ($\\sqrt{13}$).\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "$p(2)=8+4a-2+6=12+4a=0$ erzwingt $a=-3$. Also\n$$\np(x)=x^{3}-3x^{2}-x+6=(x-2)(x^{2}-x-3).\n$$\nQuadratische Nullstellen:\n$$\nx=\\dfrac{1\\pm\\sqrt{13}}{2},\n$$\neine positiv ($\\approx 2{,}303$), eine negativ ($\\approx -1{,}303$). Drei verschiedene reelle Nullstellen; genau eine ist rational ($x=2$). Das Produkt der irrationalen Wurzeln ist $-3$ (konstanter Term der Quadratik).",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M10",
+      "id": "WISO-M5-M10",
+      "title": "Halbwertszeit und Verdopplung mit gleicher Betragsrate",
+      "chapter": 10,
+      "subsection": "10.1",
+      "difficulty_level": "5/5",
+      "context": "Ein Zerfallsbestand folgt $N(t)=N_{0}e^{-\\lambda t}$ mit Halbwertszeit $8$ Jahre. Ein Wachstumsschatz folgt $W(t)=W_{0}e^{\\lambda t}$ mit derselben Konstanten $\\lambda>0$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Es gilt $\\lambda=(\\ln 2)/8$, und $W$ verdoppelt sich in genau $8$ Jahren.",
+        "Nach $4$ Jahren ist $N(4)/N_{0}$ gleich $W(4)/W_{0}$.",
+        "Für jedes $t$ gilt $\\bigl(N(t)/N_{0}\\bigr)\\cdot\\bigl(W(t)/W_{0}\\bigr)=1$.",
+        "Numerisch gilt $\\lambda>0{,}1$.",
+        "Verdoppelt man die Halbwertszeit auf $16$ Jahre, so halbiert sich $\\lambda$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus $N(8)=N_{0}/2$ folgt $e^{-8\\lambda}=1/2$, also $\\lambda=(\\ln 2)/8$. Dann $W(8)=W_{0}e^{\\ln 2}=2W_{0}$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$N(4)/N_{0}=e^{-4\\lambda}=2^{-1/2}$, $W(4)/W_{0}=2^{1/2}$. Die Faktoren sind Kehrwerte, nicht gleich.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$e^{-\\lambda t}\\cdot e^{\\lambda t}=1$ — die Faktoren kompensieren sich punktweise.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$\\ln 2\\approx 0{,}693$, also $\\lambda\\approx 0{,}0866<0{,}1$.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\lambda=(\\ln 2)/T_{1/2}$ ist antiproportional zur Halbwertszeit. $T_{1/2}\\mapsto 16$ halbiert $\\lambda$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Halbwertszeit $8$ bedeutet $e^{-\\lambda\\cdot 8}=1/2$, also $\\lambda=(\\ln 2)/8$. Dieselbe $\\lambda$ ist die Verdopplungsrate von $W$: $W(8)=2W_{0}$.\nNach $4$ Jahren: $N(4)=N_{0}/\\sqrt{2}$, $W(4)=W_{0}\\sqrt{2}$. Das Produkt der Wachstumsfaktoren $e^{-\\lambda t}\\cdot e^{\\lambda t}=1$ für jedes $t$. $\\lambda\\approx 0{,}0866$ liegt unter $0{,}1$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M11",
+      "id": "WISO-M5-M11",
+      "title": "Umsatzmaximum jenseits der Kapazitätsgrenze",
+      "chapter": 11,
+      "subsection": "11.3",
+      "difficulty_level": "5/5",
+      "context": "Der Umsatz sei $R(q)=24q-q^{2}$ für die produzierbare Menge $q\\in[0,8]$ (Kapazität $8$). Ohne Kapazität wäre $q\\ge 0$ beliebig. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die einzige kritische Stelle von $R$ liegt bei $q=12$ und außerhalb der Kapazität.",
+        "Unter der Kapazität ist das globale Maximum $R(8)=128$.",
+        "$R(7)>R(8)$, weil $7$ näher an der kritischen Stelle $12$ liegt.",
+        "Ohne Kapazitätsgrenze wäre das globale Maximum $144$.",
+        "Weil $R$ eine nach unten geöffnete Parabel ist, liegt das Maximum unter Kapazität stets am linken Rand $q=0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$R'(q)=24-2q=0\\Leftrightarrow q=12>8$. Im Intervall $(0,8)$ gibt es keine Nullstelle von $R'$.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\nAuf $[0,8]$ ist $R'(q)=24-2q\\ge 24-16=8>0$, also streng wachsend. Maximum am Rand $q=8$: $R(8)=128$.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nNähe zur kritischen Stelle allein entscheidet nicht unter einer Bindung links davon. Konkret $R(7)=119<128=R(8)$.\n\nDie Aussage ist falsch.",
+        "**D.** → Richtig\n\nBei $q=12$: $R(12)=24\\cdot 12-144=144$, und $R''<0$ bestätigt ein Maximum.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nNach unten geöffnet heißt nur: globales Maximum der unbeschränkten Parabel am Scheitel. Liegt der Scheitel rechts der Kapazität, sitzt das beschränkte Maximum am rechten Rand — hier $q=8$, nicht $q=0$.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "$R'(q)=24-2q=0$ bei $q=12$, $R''=-2<0$ — unbeschränktes Maximum bei $q=12$ mit $R=144$.\nIm zulässigen Intervall $[0,8]$ liegt $q=12$ außerhalb; $R'$ ist auf $[0,8]$ positiv, also ist $R$ streng wachsend und das Maximum liegt am rechten Rand:\n$$\nR(8)=192-64=128,\\qquad R(0)=0,\\qquad R(7)=168-49=119.\n$$",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M12",
+      "id": "WISO-M5-M12",
+      "title": "Drei Züge, genau zwei Weiße ohne Zurücklegen",
+      "chapter": 12,
+      "subsection": "12.1",
+      "difficulty_level": "5/5",
+      "context": "Eine Urne enthält $6$ weiße und $5$ schwarze Kugeln. Es werden drei Kugeln ohne Zurücklegen gezogen (Reihenfolge egal, sofern nicht anders gesagt). Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Wahrscheinlichkeit für genau zwei weiße Kugeln ist $5/11$.",
+        "Die Wahrscheinlichkeit für drei weiße Kugeln ist größer als die für genau zwei weiße.",
+        "Die Wahrscheinlichkeit der konkreten Reihenfolge weiß–weiß–weiß stimmt mit der kombinatorischen Wahrscheinlichkeit für drei Weiße überein.",
+        "Gegeben die erste Kugel sei weiß, ist die bedingte Wahrscheinlichkeit für Weiß in Zug zwei gleich $1/2$.",
+        "Weil ohne Zurücklegen gezogen wird, sind die Züge unabhängig."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$$\n\\dfrac{\\binom{6}{2}\\binom{5}{1}}{\\binom{11}{3}}=\\dfrac{15\\cdot 5}{165}=\\dfrac{75}{165}=\\dfrac{5}{11}.\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$P(\\text{drei weiß})=4/33\\approx 0{,}121<5/11\\approx 0{,}455=P(\\text{genau zwei})$. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$$\n\\dfrac{6}{11}\\cdot\\dfrac{5}{10}\\cdot\\dfrac{4}{9}=\\dfrac{4}{33}=\\dfrac{\\binom{6}{3}}{\\binom{11}{3}}.\n$$\nBeide Modelle zählen dasselbe Ereignis.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\nNach einer weißen Kugel bleiben $5$ weiß und $5$ schwarz, zusammen $10$. Also $5/10=1/2$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nOhne Zurücklegen ändert jeder Zug den Urneninhalt — die Züge sind abhängig. Die bedingte Rechnung $5/10\\neq 6/11$ zeigt die Abhängigkeit.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "$$\n\\binom{11}{3}=165,\\qquad\nP(\\text{genau }2\\text{ weiß})=\\dfrac{\\binom{6}{2}\\binom{5}{1}}{165}=\\dfrac{75}{165}=\\dfrac{5}{11},\n$$\n$$\nP(\\text{drei weiß})=\\dfrac{\\binom{6}{3}}{165}=\\dfrac{20}{165}=\\dfrac{4}{33}.\n$$\nMit Reihenfolge: $P(WWW)=\\dfrac{6}{11}\\cdot\\dfrac{5}{10}\\cdot\\dfrac{4}{9}=\\dfrac{4}{33}$ — derselbe Wert. Bedingt $P(\\text{2. weiß}\\mid\\text{1. weiß})=\\dfrac{5}{10}=\\dfrac12$. $P(\\text{genau }2\\text{ weiß})$ ist größer als $P(\\text{drei weiß})$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M5-M13",
+      "id": "WISO-M5-M13",
+      "title": "Binomial n=15, p=0,4: Modus und schiefe Schwänze",
+      "chapter": 13,
+      "subsection": "13.5",
+      "difficulty_level": "5/5",
+      "context": "Sei $X\\sim\\mathrm{Bin}(n=15,\\,p=0{,}4)$. Bewerten Sie jede Aussage zu Erwartungswert, Modus, Verteilungsfunktion und Symmetrie.",
+      "statements": [
+        "Es gilt $\\mathbb{E}[X]=6$, und $6$ ist der eindeutige Modus.",
+        "$P(X\\le 4)$ ist kleiner als $P(X\\ge 9)$.",
+        "Wegen $n$ ungerade und $p\\neq 1/2$ gilt $P(X=4)\\neq P(X=11)$.",
+        "$P(X<6)$ und $P(X>6)$ sind gleich, weil der Erwartungswert $6$ ist.",
+        "Die Varianz ist $3{,}6$, also kleiner als der Erwartungswert."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$np=6$. Vergleich der Punktwahrscheinlichkeiten: $P(X=6)$ ist strikt größer als $P(X=5)$ und $P(X=7)$ — eindeutiger Modus am Erwartungswert.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nNumerisch $P(X\\le 4)\\approx 0{,}217>0{,}095\\approx P(X\\ge 9)$. Der linke Schwanz bis $4$ ist schwerer als der rechte ab $9$ (Schiefe durch $p=0{,}4$).\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nSymmetrie $P(X=k)=P(X=n-k)$ verlangt $p=1/2$. Hier $p=0{,}4$, und explizit $P(X=4)\\approx 0{,}127\\neq 0{,}007\\approx P(X=11)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nErwartungswert allein erzwingt keine Gleichheit der strikten Seiten. Hier $P(X<6)\\approx 0{,}403\\neq 0{,}390\\approx P(X>6)$; die Masse bei $6$ und die Schiefe trennen die Seiten.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\mathrm{Var}(X)=15\\cdot 0{,}4\\cdot 0{,}6=3{,}6<6=\\mathbb{E}[X]$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$\\mathbb{E}[X]=np=6$, $\\mathrm{Var}(X)=np(1-p)=3{,}6$.\nModus: $P(X=6)\\approx 0{,}2066>P(X=5)\\approx 0{,}1859>P(X=7)\\approx 0{,}1771$ — eindeutiger Modus $6$.\n$$\nP(X\\le 4)\\approx 0{,}2173,\\qquad P(X\\ge 9)\\approx 0{,}0950.\n$$\nWegen $p\\neq 1/2$ gilt nicht $P(X=k)=P(X=15-k)$; etwa $P(X=4)\\approx 0{,}1268\\neq P(X=11)\\approx 0{,}0074$. Ferner $P(X<6)\\approx 0{,}403>P(X>6)\\approx 0{,}390$.",
+      "figure": "",
+      "tables_markdown": ""
+    }
+  ]
+}
