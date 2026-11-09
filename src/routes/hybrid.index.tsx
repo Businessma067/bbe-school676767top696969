@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Suspense, lazy } from "react";
 import { ArrowRight } from "lucide-react";
 
-import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
+import { ExamCountdown } from "@/components/ExamCountdown";
 import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
@@ -66,7 +66,6 @@ export function HybridLandingPage() {
             <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left">
               <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
                 <ExamCountdown className="lg:items-start" />
-                <ExamCourseSentence className="lg:mx-0 lg:text-left" />
               </div>
 
               <p

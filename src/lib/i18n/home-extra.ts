@@ -247,8 +247,6 @@ export const homeExtraDe: Record<string, string> = {
   "See the courses": "Zu den Kursen",
   "The free tasks are enough to try the format. The mocks and the mock builder are in the course.":
     "Die kostenlosen Aufgaben reichen, um das Format auszuprobieren. Die Mocks und der Mock Builder sind im Kurs.",
-  "The free tasks are enough to try. The mocks are in the course.":
-    "Die kostenlosen Aufgaben reichen zum Ausprobieren. Die Mocks sind im Kurs.",
   "This is the short pass. The full course walks each task through and adds the other mocks and the mock builder.":
     "Das ist der kurze Durchgang. Der volle Kurs geht jede Aufgabe durch und legt die anderen Mocks und den Mock Builder dazu.",
   "The free tasks stop here, and the other tasks, the mocks and the mock builder are in the course.":
@@ -502,8 +500,6 @@ export const homeExtraUk: Record<string, string> = {
   "See the courses": "Переглянути курси",
   "The free tasks are enough to try the format. The mocks and the mock builder are in the course.":
     "Безкоштовних завдань вистачає, щоб спробувати формат. Моки і mock builder є в курсі.",
-  "The free tasks are enough to try. The mocks are in the course.":
-    "Безкоштовних завдань вистачає, щоб спробувати. Моки є в курсі.",
   "This is the short pass. The full course walks each task through and adds the other mocks and the mock builder.":
     "Це короткий прохід. Повний курс розбирає кожне завдання і додає інші моки та mock builder.",
   "The free tasks stop here, and the other tasks, the mocks and the mock builder are in the course.":

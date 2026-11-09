@@ -10,7 +10,7 @@ import googleLogo from "@/assets/google.png.asset.json";
 import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
-import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
+import { ExamCountdown } from "@/components/ExamCountdown";
 import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
@@ -69,7 +69,6 @@ export function BbeLandingPage() {
             <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left">
               <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
                 <ExamCountdown className="lg:items-start" />
-                <ExamCourseSentence className="lg:mx-0 lg:text-left" />
               </div>
 
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[2.6rem] sm:leading-[1.05] lg:text-[3.15rem]">

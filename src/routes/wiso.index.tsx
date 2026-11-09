@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
-import { ExamCountdown, ExamCourseSentence } from "@/components/ExamCountdown";
+import { ExamCountdown } from "@/components/ExamCountdown";
 import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
@@ -93,7 +93,6 @@ export function WisoLandingPage() {
             <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left">
               <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
                 <ExamCountdown className="lg:items-start" />
-                <ExamCourseSentence className="lg:mx-0 lg:text-left" />
               </div>
 
               <p className="mb-3 rounded-full border border-indigo-200/80 bg-indigo-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-indigo-900 dark:border-indigo-800/50 dark:bg-indigo-950/40 dark:text-indigo-200 sm:text-xs">
