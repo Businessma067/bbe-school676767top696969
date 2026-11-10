@@ -1,0 +1,431 @@
+[
+  {
+    "case_id": "WISO-M7-M01",
+    "id": "WISO-M7-M01",
+    "title": "P-Zweig und T-Zweig, genau zwei Belegungen",
+    "chapter": 1,
+    "subsection": "1.3",
+    "difficulty_level": "5/5",
+    "context": "Es gelten sechs Prämissen über die Aussagenvariablen $P,Q,R,S,T$:\n\n(1) $P$ genau dann, wenn $Q$.\n\n(2) Wenn $Q$, dann $R$.\n\n(3) Wenn $R$, dann $S$.\n\n(4) Genau eine der Aussagen $S,T$ ist wahr.\n\n(5) Wenn $T$, dann nicht $P$.\n\n(6) Mindestens eine der Aussagen $P,T$ ist wahr.\n\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Unter allen sechs Prämissen gibt es genau zwei zulässige Belegungen.",
+      "In jeder zulässigen Belegung ist $S$ wahr.",
+      "Es gibt keine zulässige Belegung, in der $P$ und $T$ zugleich wahr sind.",
+      "Bereits aus (1)–(4) allein folgt, dass $T$ falsch ist.",
+      "Wenn man Prämisse (5) streicht, entsteht zusätzlich eine dritte zulässige Belegung mit $P$ und $T$ zugleich wahr."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer $P$-Zweig liefert genau $P,Q,R,S,\\neg T$. Der $\\neg P$-Zweig wird durch (6) auf $T$ und durch (4) auf $\\neg S$ gezwungen und liefert $\\neg P,\\neg Q,\\neg R,\\neg S,T$. Andere Fälle scheitern an (1)–(6).\n\nGenau zwei Belegungen bleiben.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nIm $T$-Zweig ist $S$ falsch. Nur der $P$-Zweig hat $S$ wahr. Die Allaussage ist daher falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nAus $P$ folgen $Q$, $R$, $S$; (4) erzwingt dann $\\neg T$. $P$ und $T$ können nicht zusammen auftreten.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nOhne (5) und (6) bleibt der Zweig $\\neg P,\\neg Q,\\neg R,\\neg S,T$ mit (1)–(4) verträglich: (4) ist durch $T$ und $\\neg S$ erfüllt. $T$ ist also durch (1)–(4) nicht ausgeschlossen.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nSelbst ohne (5) verbieten (1)–(4) die Kombination $P\\land T$: aus $P$ folgt $S$, und (4) lässt dann kein $T$ zu. Es kommt keine dritte Belegung hinzu.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Aus (1)–(3) folgt die Kette $P\\Rightarrow Q\\Rightarrow R\\Rightarrow S$.\n\nFall $P$: Dann $Q$, $R$, $S$; aus (4) folgt $\\neg T$; (5) ist erfüllt; (6) ist erfüllt.\nZulässig: $P,Q,R,S,\\neg T$.\n\nFall $\\neg P$: Aus (1) folgt $\\neg Q$. Aus (6) folgt $T$. Aus (4) folgt $\\neg S$.\nAus (3) und $\\neg S$ folgt $\\neg R$. (5) verlangt $\\neg P$, was hier gilt.\nZulässig: $\\neg P,\\neg Q,\\neg R,\\neg S,T$.\n\nGenau diese zwei Belegungen erfüllen alle sechs Prämissen. $P$ und $T$ sind nie zugleich wahr:\naus $P$ folgt $S$ und damit $\\neg T$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M02",
+    "id": "WISO-M7-M02",
+    "title": "Hebbare Lücke bei Wurzelverschiebung um 3",
+    "chapter": 2,
+    "subsection": "2.2",
+    "difficulty_level": "5/5",
+    "context": "Es sei\n$$\nh(x)=\\dfrac{\\sqrt{x+3}-2}{x-1}\n$$\nfür alle reellen $x$ im maximalen Definitionsbereich. Zusätzlich wird die durch Kürzen entstehende Vereinfachung betrachtet. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Der maximale Definitionsbereich von $h$ ist $[-3,\\infty)\\setminus\\{1\\}$.",
+      "Die hebbare Unstetigkeit an $x=1$ wird durch den Wert $\\dfrac12$ stetig ergänzt.",
+      "Es gilt $h(6)=\\dfrac15$.",
+      "Die Gleichung $h(x)=\\dfrac13$ besitzt genau eine Lösung im Definitionsbereich, und diese liegt in $(-3,0)$.",
+      "Für jedes $x$ im Definitionsbereich gilt $h(x)<\\dfrac12$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Radikand erzwingt $x\\ge -3$, der Nenner schließt $x=1$ aus. An keiner anderen Stelle verschwindet der Nenner. Genau diese Menge ist der Definitionsbereich.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nNach dem Kürzen ist der Grenzwert\n$$\n\\lim_{x\\to 1}h(x)=\\dfrac{1}{\\sqrt{4}+2}=\\dfrac14,\n$$\nnicht $\\tfrac12$. Die Behauptung nennt den falschen Ergänzungswert.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nMit der gekürzten Form:\n$$\nh(6)=\\dfrac{1}{\\sqrt{9}+2}=\\dfrac{1}{5}.\n$$\nDirekt: $(\\sqrt{9}-2)/(6-1)=(3-2)/5=\\tfrac15$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$$\n\\dfrac{1}{\\sqrt{x+3}+2}=\\dfrac13\\implies\\sqrt{x+3}=1\\implies x=-2.\n$$\nEs ist $-2\\in(-3,0)$ und $-2\\neq 1$, also genau eine zulässige Lösung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nAn der linken Grenze ist $h(-3)=\\dfrac{\\sqrt{0}-2}{-3-1}=\\dfrac12$, und $-3$ liegt im Definitionsbereich. Die strikte Ungleichung $h(x)<\\tfrac12$ gilt dort nicht.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Nenner null bei $x=1$; Radikand verlangt $x\\ge -3$. An $x=1$ ist auch der Zähler null, denn $\\sqrt{4}-2=0$. Erweitern mit der Konjugierten:\n$$\nh(x)=\\dfrac{(x+3)-4}{(x-1)(\\sqrt{x+3}+2)}=\\dfrac{1}{\\sqrt{x+3}+2}\\qquad(x\\neq 1).\n$$\nDefinitionsmenge $[-3,\\infty)\\setminus\\{1\\}$. Stetige Ergänzung an $x=1$ durch den Wert $\\tfrac14$. Für $x>-3$ ist $h(x)>0$; an $x=-3$ gilt $h(-3)=\\dfrac{0-2}{-3-1}=\\dfrac12$.\n$$\nh(6)=\\dfrac{1}{3+2}=\\dfrac15,\\qquad\nh(x)=\\dfrac13\\iff\\sqrt{x+3}+2=3\\iff x=-2.\n$$",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M03",
+    "id": "WISO-M7-M03",
+    "title": "Annuität 55000 zu 5 Prozent über fünf Jahre",
+    "chapter": 3,
+    "subsection": "3.6",
+    "difficulty_level": "5/5",
+    "context": "Ein Kredit über EUR $55\\,000$ wird durch fünf gleiche Jahresendzahlungen bei effektivem Jahreszins $5\\%$ getilgt. Sei $A$ die Annuität und $B_k$ die Restschuld unmittelbar nach der $k$-ten Zahlung ($B_0=55\\,000$). Bewerten Sie jede Aussage.",
+    "statements": [
+      "Die Annuität $A$ liegt streng zwischen $12\\,500$ und $13\\,000$.",
+      "Nach der zweiten Zahlung ist die Restschuld noch größer als $36\\,000$.",
+      "Die Zinsen des ersten Jahres betragen genau EUR $2750$, und die Tilgung des ersten Jahres liegt streng zwischen $9900$ und $10\\,000$.",
+      "Weil die Annuität konstant ist, ist die Tilgung in jedem der fünf Jahre dieselbe.",
+      "Die über die gesamte Laufzeit gezahlten Zinsen liegen streng zwischen $8000$ und $9000$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$1{,}05^{5}=1{,}2762815625$, also $1-1{,}05^{-5}\\approx 0{,}2165$ und\n$$\nA=55000\\cdot\\dfrac{0{,}05}{0{,}2165}\\approx 12\\,703{,}61\\in(12500,13000).\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$$\nB_2=A\\cdot\\dfrac{1-1{,}05^{-3}}{0{,}05}\\approx 34\\,595{,}09<36000.\n$$\nDie Schwelle $36\\,000$ wird unterschritten.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nJahreszinsen: $55\\,000\\cdot 0{,}05=2750$. Tilgung: $A-2750\\approx 9953{,}61\\in(9900,10000)$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nBei Annuitätendarlehen sinkt der Zinsanteil mit der Restschuld; der Tilgungsanteil steigt. Konstante Rate erzwingt keine konstante Tilgung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nGesamtzahlung $5A\\approx 63\\,518{,}07$, davon Schuld $55\\,000$, Rest\n$$\n5A-S\\approx 8518{,}07\\in(8000,9000).\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "Mit $S=55\\,000$, $r=0{,}05$, $n=5$ ist\n$$\nA=S\\cdot\\dfrac{r}{1-(1+r)^{-n}}=55000\\cdot\\dfrac{0{,}05}{1-1{,}05^{-5}}\\approx 12\\,703{,}61.\n$$\nRestschuld nach $k$ Zahlungen:\n$$\nB_k=A\\cdot\\dfrac{1-(1+r)^{-(n-k)}}{r}.\n$$\nInsbesondere $B_1\\approx 45\\,046{,}39$, $B_2\\approx 34\\,595{,}09$. Zinsen im ersten Jahr: $S r=2750$; Tilgung im ersten Jahr: $A-2750\\approx 9953{,}61$. Gesamte Zinslast $5A-S\\approx 8518{,}07$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M04",
+    "id": "WISO-M7-M04",
+    "title": "Betrag gleich Wurzel, kleinere Lösung negativ am Kern",
+    "chapter": 4,
+    "subsection": "4.3",
+    "difficulty_level": "5/5",
+    "context": "Gesucht sind alle reellen Lösungen von\n$$\n|2x-3|=\\sqrt{3x+1}.\n$$\nZusätzlich wird die unkritische Ersatzgleichung $2x-3=\\sqrt{3x+1}$ ohne Betrag betrachtet. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Die Originalgleichung hat genau zwei verschiedene reelle Lösungen.",
+      "Beide Lösungen erfüllen $2x-3\\ge 0$.",
+      "Die Ersatzgleichung $2x-3=\\sqrt{3x+1}$ hat genau eine reelle Lösung, und diese ist die größere Lösung der Originalgleichung.",
+      "Weil Quadrieren den Definitionsbereich verlässt, muss mindestens eine der beiden Quadratwurzeln der Hilfsgleichung eine Scheinlösung sein.",
+      "Die kleinere Lösung liegt streng zwischen $0$ und $1$, die größere streng zwischen $3$ und $4$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDiskriminante $\\sqrt{97}>0$ liefert zwei Kandidaten; beide liegen im Definitionsbereich und bestehen die Probe in $|2x-3|=\\sqrt{3x+1}$. Genau zwei Lösungen.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nAn $x_{-}\\approx 0{,}644$ ist $2x_{-}-3\\approx -1{,}712<0$. Der Betrag ist nötig; die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$2x-3=\\sqrt{3x+1}\\ge 0$ erzwingt $x\\ge\\tfrac32$. Nur $x_{+}\\approx 3{,}106$ liegt darüber und löst beide Formen. $x_{-}$ fällt aus der Ersatzgleichung heraus.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nBeide Kandidaten liegen in $x\\ge -\\tfrac13$ und bestehen die Probe. Quadrieren erzeugt hier keine Scheinlösung; die pauschale Regel greift nicht.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$\\sqrt{97}\\approx 9{,}849$, also\n$$\nx_{-}=(15-9{,}849)/8\\approx 0{,}644\\in(0,1),\\qquad\nx_{+}=(15+9{,}849)/8\\approx 3{,}106\\in(3,4).\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "Definitionsbereich $x\\ge -\\tfrac13$. Quadrieren liefert\n$$\n(2x-3)^{2}=3x+1\\implies 4x^{2}-15x+8=0,\\qquad\nx=\\dfrac{15\\pm\\sqrt{97}}{8}.\n$$\nBeide Kandidaten liegen in $[-\\tfrac13,\\infty)$ und erfüllen die Ausgangsgleichung:\n$$\nx_{-}=\\dfrac{15-\\sqrt{97}}{8}\\approx 0{,}644,\\qquad\nx_{+}=\\dfrac{15+\\sqrt{97}}{8}\\approx 3{,}106.\n$$\nBei $x_{-}$ ist $2x-3<0$; die Ersatzgleichung ohne Betrag verwirft $x_{-}$ und behält nur $x_{+}$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M05",
+    "id": "WISO-M7-M05",
+    "title": "Zwei Kapazitäten, Optimum bei vier und vier",
+    "chapter": 5,
+    "subsection": "5.5",
+    "difficulty_level": "5/5",
+    "context": "Zulässig sind alle $(x,y)$ mit\n$$\n2x+y\\le 12,\\qquad x+2y\\le 12,\\qquad x\\ge 0,\\qquad y\\ge 0.\n$$\nZu maximieren ist $Z=4x+5y$. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Das Maximum von $Z$ auf dem zulässigen Bereich ist $36$ und wird genau im Punkt $(4,4)$ angenommen.",
+      "Im Punkt $(0,6)$ ist $Z$ größer als in jedem anderen Eckpunkt außer $(4,4)$.",
+      "Jede zulässige Lösung mit $x=5$ erreicht mindestens $Z=30$.",
+      "Der zulässige Bereich enthält den Punkt $(5,5)$.",
+      "Ersetzt man das Ziel durch $Z^{\\ast}=x+6y$, so bleibt $(4,4)$ der eindeutige Maximalpunkt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nUnter den vier Ecken ist $Z(4,4)=36$ streng größer als $30$, $24$ und $0$. Ein lineares Ziel auf einem Polygon nimmt das Maximum in einer Ecke an — hier einzig bei $(4,4)$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$Z(0,6)=30$, $Z(6,0)=24$, $Z(0,0)=0$. Unter den Ecken außer $(4,4)$ ist $(0,6)$ der beste.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nMit $x=5$ erzwingt $2\\cdot 5+y\\le 12$ die Schranke $y\\le 2$; zugleich $5+2y\\le 12\\Rightarrow y\\le 3{,}5$. Zulässig ist etwa $(5,2)$ mit $Z=20+10=30$ — aber auch $(5,0)$ mit $Z=20<30$. Nicht jede solche Lösung erreicht $30$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$2\\cdot 5+5=15>12$ und $5+2\\cdot 5=15>12$. Beide Kapazitäten sind verletzt; $(5,5)$ liegt außerhalb.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nMit $Z^{\\ast}=x+6y$ gilt $Z^{\\ast}(0,6)=36$ und $Z^{\\ast}(4,4)=28$. Das Maximum wandert zur Ecke $(0,6)$; $(4,4)$ ist nicht mehr maximal.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Ecken des zulässigen Bereichs: $(0,0)$, $(6,0)$, $(0,6)$ und der Schnitt\n$$\n2x+y=12,\\; x+2y=12\\implies x=4,\\; y=4.\n$$\nZielwerte: $Z(0,0)=0$, $Z(6,0)=24$, $Z(0,6)=30$, $Z(4,4)=36$. Das Maximum $36$ liegt einzig am Schnittpunkt $(4,4)$. Entlang $x+2y=12$ ist $Z=4x+5(6-\\tfrac12 x)=30+\\tfrac32 x$ streng wachsend in $x$; entlang $2x+y=12$ ist $Z=4x+5(12-2x)=60-6x$ streng fallend in $x$ — das Maximum sitzt nur am Schnitt.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M06",
+    "id": "WISO-M7-M06",
+    "title": "Vier kritische Stellen, Lösung mit zwei Strahlen",
+    "chapter": 6,
+    "subsection": "6.1",
+    "difficulty_level": "5/5",
+    "context": "Gesucht sind alle reellen $x$ mit\n$$\n\\dfrac{(x-1)(x-5)}{(x+2)(x-4)}\\ge 0.\n$$\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Die Lösungsmenge ist $L=(-\\infty,-2)\\cup[1,4)\\cup[5,\\infty)$.",
+      "Die Zahl $0$ gehört zur Lösungsmenge.",
+      "Jedes $x>5$ ist eine Lösung, und $x=5$ ist ebenfalls eine Lösung.",
+      "Weil der Zähler bei $x=1$ verschwindet, gehört eine ganze Umgebung von $1$ zur Lösungsmenge.",
+      "Das offene Intervall $(4,5)$ ist disjunkt zur Lösungsmenge."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nVorzeichentabelle und Aufnahme der Nullstellen $1$, $5$ sowie Ausschluss der Pole $-2$, $4$ liefern genau diese Menge.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBei $x=0$ ist der Bruch $\\dfrac{(-1)(-5)}{(2)(-4)}=\\dfrac{5}{-8}<0$. Null liegt in $(-2,1)$ und fällt aus $L$ heraus.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFür $x>5$ sind Zähler und Nenner positiv. An $x=5$ ist der Zähler null und der Nenner $(7)(1)\\neq 0$, also gilt Gleichheit $\\ge 0$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nLinks von $1$ (noch in $(-2,1)$) ist der Bruch negativ. Nur $x=1$ selbst und rechts davon bis vor $4$ gehören zu $L$ — keine beidseitige Umgebung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nIm Intervall $(4,5)$ ist der Bruch negativ (Testpunkt $4{,}5$). Kein Punkt daraus erfüllt $\\ge 0$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "Kritische Stellen: Nullstellen $x=1$, $x=5$; Pole $x=-2$, $x=4$. Vorzeichentabelle (Testpunkte):\n$$\n\\begin{array}{c|c}\n\\text{Intervall}& \\text{Vorzeichen}\\\\\n\\hline\n(-\\infty,-2)& +\\\\\n(-2,1)& -\\\\\n(1,4)& +\\\\\n(4,5)& -\\\\\n(5,\\infty)& +\n\\end{array}\n$$\nEinschließlich der Nullstellen, ausschließlich der Pole:\n$$\nL=(-\\infty,-2)\\cup[1,4)\\cup[5,\\infty).\n$$\nLinker Strahl offen am Pol $-2$; bei $4$ endet das mittlere Stück offen; $5$ gehört zu $L$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M07",
+    "id": "WISO-M7-M07",
+    "title": "Parabel und Gerade, Schnitt bei drei plus minus Wurzel drei",
+    "chapter": 7,
+    "subsection": "7.5",
+    "difficulty_level": "5/5",
+    "context": "Es seien\n$$\nf(x)=x^{2}-5x+4,\\qquad g(x)=x-2.\n$$\nBetrachtet werden Schnittpunkte, Scheitel und Lagevergleiche. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Die Gleichung $f(x)=g(x)$ hat genau zwei reelle Lösungen, nämlich $3\\pm\\sqrt{3}$.",
+      "Der Scheitel von $f$ liegt oberhalb der Geraden $g$.",
+      "Beide Schnittstellen liegen außerhalb des offenen Intervalls $(2,4)$.",
+      "Auf dem Intervall $[1,4]$ gilt durchgängig $f(x)\\ge g(x)$.",
+      "Die kleinere Schnittstelle liegt streng zwischen $1$ und $2$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDiskriminante $36-24=12=4\\cdot 3$ liefert $x=\\dfrac{6\\pm 2\\sqrt{3}}{2}=3\\pm\\sqrt{3}$. Zwei verschiedene reelle Schnitte.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nScheitelwert $f(2{,}5)=-2{,}25$, Geradenwert $g(2{,}5)=0{,}5$. Es gilt $-2{,}25<0{,}5$; der Scheitel liegt unterhalb von $g$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$3-\\sqrt{3}\\approx 1{,}268<2$ und $3+\\sqrt{3}\\approx 4{,}732>4$. Keine der beiden liegt in $(2,4)$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nBereits am Scheitel $x=2{,}5\\in[1,4]$ ist $f=-2{,}25<0{,}5=g$. Die behauptete Ungleichung gilt nicht durchgängig.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$1<3-\\sqrt{3}<2$, denn $\\sqrt{3}\\approx 1{,}732$ liefert $1{,}268\\in(1,2)$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "$f(x)=(x-1)(x-4)$ hat Nullstellen $1$ und $4$; Scheitel bei $x=\\tfrac52$ mit\n$$\nf\\bigl(\\tfrac52\\bigr)=\\bigl(\\tfrac52\\bigr)^{2}-5\\cdot\\tfrac52+4=-\\dfrac94.\n$$\nSchnitt $f=g$:\n$$\nx^{2}-5x+4=x-2\\implies x^{2}-6x+6=0\\implies x=3\\pm\\sqrt{3}.\n$$\nNumerisch $x_{-}\\approx 1{,}268$, $x_{+}\\approx 4{,}732$. Beide Schnittpunkte liegen außerhalb von $[2,4]$; zwischen den Nullstellen von $f$ gilt $f\\le 0$, während $g(x)=x-2$ auf $[2,4]$ nichtnegativ ist — dort liegt $f$ unterhalb von $g$ außer an möglichen Rändern (an $x=4$: $f(4)=0$, $g(4)=2$).",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M08",
+    "id": "WISO-M7-M08",
+    "title": "Zwei Preisbeobachtungen, Exponent minus drei Halbe",
+    "chapter": 8,
+    "subsection": "8.5",
+    "difficulty_level": "5/5",
+    "context": "Zwei Beobachtungen einer Nachfrage lauten $(p,q)=(4;\\,48)$ und $(16;\\,6)$. Das Modell ist $q=k\\,p^{b}$ mit $k>0$. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Der Exponent ist $b=-\\dfrac32$, und die Konstante ist $k=384$.",
+      "Bei Preis $p=4$ ist die Grenznachfrage $q'(4)=-12$.",
+      "Die Preiselastizität der Nachfrage ist in diesem Modell konstant gleich $-\\dfrac32$.",
+      "Beim Preis $p=9$ liegt die Nachfragemenge streng zwischen $14$ und $15$.",
+      "Verdoppelt man den Preis, so verdoppelt sich die Nachfragemenge."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$\\ln(6/48)=\\ln(1/8)=-3\\ln 2$, $\\ln 4=2\\ln 2$, Quotient $-\\tfrac32$. Rückrechnung $k=48/4^{-3/2}=48\\cdot 8=384$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$q'(p)=-576\\,p^{-5/2}$, also $q'(4)=-576/4^{5/2}=-576/32=-18$, nicht $-12$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nBei $q=k p^{b}$ ist $\\varepsilon=b$ überall. Hier $b=-\\tfrac32$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$q(9)=384\\cdot 9^{-3/2}=384/27=\\dfrac{128}{9}\\approx 14{,}222\\in(14,15)$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBei $b=-\\tfrac32$ führt Preisverdopplung zu Faktor $2^{-3/2}=\\tfrac{1}{2\\sqrt{2}}\\approx 0{,}354$ — die Menge sinkt stark, sie verdoppelt sich nicht.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Aus den beiden Punkten:\n$$\nb=\\dfrac{\\ln(6/48)}{\\ln(16/4)}=\\dfrac{\\ln(1/8)}{\\ln 4}=-\\dfrac{3}{2},\n$$\nund $k=48\\cdot 4^{3/2}=48\\cdot 8=384$. Also $q=384\\,p^{-3/2}$.\nGrenznachfrage $\\dfrac{\\mathrm{d}q}{\\mathrm{d}p}=384\\cdot\\bigl(-\\dfrac32\\bigr)p^{-5/2}$; an $p=4$:\n$$\nq'(4)=-576\\cdot 4^{-5/2}=-576/32=-18.\n$$\nPreiselastizität $\\varepsilon=b=-\\tfrac32$ konstant. Bei $p=9$: $q=384\\cdot 9^{-3/2}=384/27=\\tfrac{128}{9}$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M09",
+    "id": "WISO-M7-M09",
+    "title": "Drei rationale Wurzeln minus eins, eins und vier",
+    "chapter": 9,
+    "subsection": "9.5",
+    "difficulty_level": "5/5",
+    "context": "Es sei $p(x)=x^{3}-4x^{2}-x+4$. Zuerst wird $p$ selbst untersucht. Danach die Schar $p(x)-k$ für reelle $k$. Bewerten Sie jede Aussage.",
+    "statements": [
+      "$p$ hat genau die drei reellen Nullstellen $-1$, $1$ und $4$.",
+      "Beide kritischen Stellen von $p$ liegen im offenen Intervall $(0,3)$.",
+      "Es gilt $p(0)=4$, und daher ist $x=0$ eine Nullstelle von $p(x)-4$.",
+      "Die lokale Extremstelle $x_{+}=\\dfrac{4+\\sqrt{19}}{3}$ liegt streng zwischen $2$ und $3$.",
+      "Für jedes reelle $k$ hat $p(x)-k$ mindestens zwei verschiedene reelle Nullstellen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nAus $p(1)=0$ folgt die Zerlegung $(x-1)(x^{2}-3x-4)=(x-1)(x-4)(x+1)$. Drei einfache reelle Nullstellen.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$x_{-}=(4-\\sqrt{19})/3\\approx -0{,}120<0$ liegt links von $0$. Nur $x_{+}$ liegt in $(0,3)$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nKonstanter Term $p(0)=4$. Also $p(0)-4=0$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\n$\\sqrt{19}\\approx 4{,}359$, also $x_{+}\\approx 8{,}359/3\\approx 2{,}786\\in(2,3)$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nAußerhalb des Werteintervalls zwischen lokalem Hoch- und Tiefpunkt schneidet die Horizontale $y=k$ den Graphen nur einmal. Gegenbeispiel: sehr großes $k$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Rationale Nullstellenprüfung liefert $p(1)=0$, und Polynomdivision ergibt\n$$\np(x)=(x-1)(x^{2}-3x-4)=(x-1)(x-4)(x+1).\n$$\nNullstellen $-1$, $1$, $4$. Ableitung $p'(x)=3x^{2}-8x-1$ mit\n$$\nx=\\dfrac{4\\pm\\sqrt{19}}{3};\n$$\nbeide kritisch, $\\sqrt{19}\\approx 4{,}359$, also $x_{+}\\approx 2{,}786$ und $x_{-}\\approx -0{,}120$.\n$p(x)-k=0$ hat genau dann drei verschiedene reelle Wurzeln, wenn $k$ streng zwischen den lokalen Extremwerten liegt. Insbesondere hat $p(x)-4$ die Wurzel $0$ (denn $p(0)=4$) und zerfällt weiter.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M10",
+    "id": "WISO-M7-M10",
+    "title": "Zwei stetige Bestände, Führungswechsel nach Jahr 16",
+    "chapter": 10,
+    "subsection": "10.1",
+    "difficulty_level": "5/5",
+    "context": "Bestand $A$ startet bei $3\\,200$ und wächst stetig mit $7\\%$ pro Jahr. Bestand $B$ startet zwei Jahre später bei $2\\,100$ und wächst stetig mit $11\\%$ pro Jahr. Es sei $t$ die Zeit in Jahren seit dem Start von $A$. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Der Zeitpunkt, zu dem beide Bestände gleich groß sind, liegt streng zwischen $16$ und $17$.",
+      "Zum Zeitpunkt $t=10$ ist Bestand $B$ bereits größer als Bestand $A$.",
+      "Würde $B$ bereits zum Zeitpunkt $0$ mit $2\\,100$ starten (ohne Delay), so läge der Schnitt streng zwischen $10$ und $11$.",
+      "Die Wachstumsrate von $B$ ist um genau vier Prozentpunkte höher als die von $A$; deshalb verdoppelt $B$ seinen Vorsprung alle $1/0{,}04$ Jahre.",
+      "Zum Schnittzeitpunkt $t^{\\ast}$ liegt der gemeinsame Bestand streng zwischen $9000$ und $11\\,000$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$t^{\\ast}=(\\ln(32/21)+0{,}22)/0{,}04$. Mit $\\ln(32/21)\\approx 0{,}421$ folgt $t^{\\ast}\\approx 16{,}03\\in(16,17)$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBei $t=10\\ge 2$: $A(10)=3200\\,e^{0{,}7}\\approx 6430$, $B(10)=2100\\,e^{0{,}88}\\approx 5060$. Noch ist $A>B$; der Wechsel kommt erst bei $\\approx 16{,}03$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nOhne Delay: $3200\\,e^{0{,}07t}=2100\\,e^{0{,}11t}\\Rightarrow t=\\ln(32/21)/0{,}04\\approx 10{,}53\\in(10,11)$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDie Differenz der Raten ist $0{,}04$, sie steuert den Schnittzeitpunkt — aber $B$ startet später und kleiner. Es gibt keinen konstanten „Vorsprung“, der sich alle $25$ Jahre verdoppelt.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$A(t^{\\ast})=3200\\,e^{0{,}07\\cdot 16{,}03}\\approx 3200\\cdot e^{1{,}122}\\approx 9828\\in(9000,11000)$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "$$\nA(t)=3200\\,e^{0{,}07t},\\qquad\nB(t)=2100\\,e^{0{,}11(t-2)}\\quad(t\\ge 2).\n$$\nGleichsetzen:\n$$\n\\ln\\dfrac{32}{21}+0{,}07t=0{,}11(t-2)\\implies\nt=\\dfrac{\\ln(32/21)+0{,}22}{0{,}04}\\approx 16{,}030.\n$$\nDer Führungswechsel liegt streng zwischen $16$ und $17$. Für $2\\le t<t^{\\ast}$ ist $A>B$; danach $B>A$. Bei gleichem Startzeitpunkt (hypothetisch ohne Delay) wäre der Schnitt schon bei $\\ln(32/21)/0{,}04\\approx 10{,}53$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M11",
+    "id": "WISO-M7-M11",
+    "title": "Offene Schachtel aus 42 mal 30, eine kritische Stelle außen",
+    "chapter": 11,
+    "subsection": "11.3",
+    "difficulty_level": "5/5",
+    "context": "Aus einem Rechteckblech der Maße $42\\,\\mathrm{cm}\\times 30\\,\\mathrm{cm}$ werden an den Ecken kongruente Quadrate der Seitenlänge $a$ ausgeschnitten und die Seiten hochgeklappt. Das Volumen der offenen Schachtel sei $V(a)$. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Im geometrisch zulässigen Intervall liegt genau eine kritische Stelle, und sie liegt streng zwischen $5$ und $6$.",
+      "Beide Wurzeln von $V'(a)=0$ liegen im offenen Intervall $(0,15)$.",
+      "Das maximale Volumen auf dem zulässigen Intervall liegt streng zwischen $3000$ und $3500$.",
+      "Weil $V'(a)$ eine nach oben geöffnete Parabel ist, ist jede kritische Stelle ein lokales Minimum von $V$.",
+      "Für $a=3$ ist das Volumen streng kleiner als für $a=6$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$a_{-}=12-\\sqrt{39}$ mit $\\sqrt{39}\\approx 6{,}245$ ergibt $\\approx 5{,}755\\in(5,6)$. $a_{+}$ liegt oberhalb von $15$ und fällt aus.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$a_{+}=12+\\sqrt{39}\\approx 18{,}245>15$ ist geometrisch unzulässig. Nur eine Wurzel liegt in $(0,15)$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$V(a_{-})=a_{-}(42-2a_{-})(30-2a_{-})\\approx 3244\\in(3000,3500)$. An den Rändern verschwindet $V$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$V'$ ist nach oben geöffnet, aber die Klassifikation von $V$ folgt aus dem Vorzeichenwechsel von $V'$ bzw. aus $V''$. An $a_{-}$ wechselt $V'$ von $+$ nach $-$ — lokales Maximum, kein Minimum.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$V(3)=3\\cdot 36\\cdot 24=2592$, $V(6)=6\\cdot 30\\cdot 18=3240$. Es gilt $2592<3240$; zudem liegt $6$ näher am Maximalpunkt $\\approx 5{,}76$ als $3$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "$$\nV(a)=a(42-2a)(30-2a)=4a^{3}-144a^{2}+1260a,\\qquad 0<a<15.\n$$\n$$\nV'(a)=12a^{2}-288a+1260=0\\iff a^{2}-24a+105=0.\n$$\nKritische Stellen\n$$\na=\\dfrac{24\\pm\\sqrt{156}}{2}=12\\pm\\sqrt{39};\n$$\n$a_{+}=12+\\sqrt{39}\\approx 18{,}245>15$ liegt außerhalb der Zulässigkeit, $a_{-}=12-\\sqrt{39}\\approx 5{,}755$ liegt in $(0,15)$.\n$V''(a_{-})<0$ (oder Randvergleich): lokales und globales Maximum auf $(0,15)$ bei $a_{-}$ mit $V(a_{-})\\approx 3244$. An den Rändern $V\\to 0$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M12",
+    "id": "WISO-M7-M12",
+    "title": "Prävalenz 1,2 Prozent, positiver Vorhersagewert ein Viertel",
+    "chapter": 12,
+    "subsection": "12.6",
+    "difficulty_level": "5/5",
+    "context": "Eine Krankheit hat Prävalenz $1{,}2\\%$. Ein Test erkennt Erkrankte mit Wahrscheinlichkeit $91\\%$ (Sensitivität) und Gesunde mit Wahrscheinlichkeit $96{,}5\\%$ (Spezifität). Bewerten Sie jede Aussage.",
+    "statements": [
+      "Der positive Vorhersagewert $P(D\\mid +)$ ist genau $0{,}24$.",
+      "Mehr als $5\\%$ aller Getesteten erhalten ein positives Ergebnis.",
+      "Der negative Vorhersagewert $P(D^{c}\\mid -)$ liegt streng über $0{,}99$.",
+      "Weil Sensitivität und Spezifität beide über $90\\%$ liegen, muss auch $P(D\\mid +)$ über $90\\%$ liegen.",
+      "Die Likelihood-Ratio positiv $\\dfrac{P(+\\mid D)}{P(+\\mid D^{c})}$ liegt streng zwischen $25$ und $27$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nZähler $0{,}91\\cdot 0{,}012=0{,}01092$, Nenner $0{,}01092+0{,}035\\cdot 0{,}988=0{,}0455$, Quotient $0{,}24$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$P(+)=0{,}0455<0{,}05$. Die $5\\%$-Schwelle wird unterschritten.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nWie oben $\\approx 0{,}9989>0{,}99$. Falsch-negative Masse $0{,}09\\cdot 0{,}012$ ist winzig gegen die richtig-negativen.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nBei kleiner Prävalenz dominieren die falsch positiven. Hier ist $P(D\\mid +)=0{,}24$ trotz hoher Sensitivität/Spezifität. Die Implikation ist falsch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$\\dfrac{0{,}91}{0{,}035}=26$ liegt in $(25,27)$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "$P(D)=0{,}012$, $P(+\\mid D)=0{,}91$, $P(-\\mid D^{c})=0{,}965$, also $P(+\\mid D^{c})=0{,}035$. Bayes:\n$$\nP(D\\mid +)=\\dfrac{0{,}91\\cdot 0{,}012}{0{,}91\\cdot 0{,}012+0{,}035\\cdot 0{,}988}=\\dfrac{0{,}01092}{0{,}0455}=0{,}24.\n$$\n$$\nP(D^{c}\\mid -)=\\dfrac{0{,}965\\cdot 0{,}988}{0{,}965\\cdot 0{,}988+0{,}09\\cdot 0{,}012}\\approx 0{,}9989.\n$$\n$P(+)=0{,}0455$. Der positive Vorhersagewert ist deutlich kleiner als Sensitivität oder Spezifität; der negative ist nahe bei $1$.",
+    "figure": "",
+    "tables_markdown": ""
+  },
+  {
+    "case_id": "WISO-M7-M13",
+    "id": "WISO-M7-M13",
+    "title": "Binomial n=9, p=0,4: zwei Modi und Tschebyscheff",
+    "chapter": 13,
+    "subsection": "13.4",
+    "difficulty_level": "5/5",
+    "context": "Sei $X$ binomialverteilt mit $n=9$ und $p=0{,}4$. Betrachtet werden Erwartungswert, Modus, Schwanzwahrscheinlichkeiten und die Tschebyscheff-Schranke zu $P(|X-3{,}6|\\ge 3)$. Bewerten Sie jede Aussage.",
+    "statements": [
+      "$X$ besitzt genau zwei Modi, nämlich $3$ und $4$.",
+      "Es gilt $P(X\\ge 6)>0{,}12$.",
+      "Die Tschebyscheff-Schranke liefert $P(|X-3{,}6|\\ge 3)\\le 0{,}24$, und der exakte Wert liegt streng unter $0{,}05$.",
+      "Der Erwartungswert ist zugleich der eindeutige Modus.",
+      "Bei Beobachtung $X=5$ ist die Likelihood unter $p=0{,}4$ kleiner als unter $p=0{,}5$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\n$(n+1)p=4$ ist ganzzahlig; dann sind $(n+1)p-1=3$ und $(n+1)p=4$ die beiden Modi, und die Punktmassen sind gleich.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nExakt $P(X\\ge 6)=\\sum_{k=6}^{9}\\binom{9}{k}0{,}4^{k}0{,}6^{9-k}\\approx 0{,}0994<0{,}12$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$\\mathrm{Var}/9=2{,}16/9=0{,}24$. Exakt tragen nur $X=0$ und $X\\in\\{7,8,9\\}$ bei ($|1-3{,}6|=2{,}6<3$), zusammen etwa $0{,}035<0{,}05$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\n$\\mathbb{E}[X]=3{,}6$ ist gar kein Wert von $X$. Die Modi sind die ganzen Zahlen $3$ und $4$ — nicht eindeutig und nicht gleich dem Erwartungswert.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDer Quotient $P(X=5\\mid 0{,}4)/P(X=5\\mid 0{,}5)\\approx 0{,}679<1$. Die Beobachtung $5$ spricht eher für $p=0{,}5$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview": "$\\mathbb{E}[X]=np=3{,}6$, $\\mathrm{Var}(X)=np(1-p)=2{,}16$. Weil $(n+1)p=4$ ganzzahlig ist, gibt es genau zwei Modi: $3$ und $4$, mit\n$$\nP(X=3)=P(X=4)\\approx 0{,}2508.\n$$\n$$\nP(X\\ge 6)\\approx 0{,}0994,\\qquad P(X\\le 1)\\approx 0{,}0705.\n$$\nTschebyscheff:\n$$\nP(|X-3{,}6|\\ge 3)\\le\\dfrac{2{,}16}{9}=0{,}24,\n$$\nwährend der exakte Wert $P(X=0)+P(X\\ge 7)\\approx 0{,}035$ deutlich kleiner ist. Likelihood-Quotient bei Beobachtung $X=5$:\n$$\n\\dfrac{P(X=5\\mid p=0{,}4)}{P(X=5\\mid p=0{,}5)}\\approx 0{,}679<1.\n$$",
+    "figure": "",
+    "tables_markdown": ""
+  }
+]
