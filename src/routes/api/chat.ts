@@ -158,7 +158,13 @@ export const Route = createFileRoute("/api/chat")({
         const system = systemParts.join("\n\n---\n\n");
         const modelMessages = await convertToModelMessages(messages);
         if (caseContext) {
-          const lastUserIndex = modelMessages.findLastIndex((message) => message.role === "user");
+          let lastUserIndex = -1;
+          for (let i = modelMessages.length - 1; i >= 0; i--) {
+            if (modelMessages[i]?.role === "user") {
+              lastUserIndex = i;
+              break;
+            }
+          }
           modelMessages.splice(Math.max(0, lastUserIndex), 0, untrustedCaseMessage(caseContext));
         }
 
