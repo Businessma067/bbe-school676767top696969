@@ -7,7 +7,7 @@ import { getFreshNewsPost } from "@/data/news/posts";
 import { isNewsAppPath } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
-const DWELL_MS = 60_000;
+const DWELL_MS = 15_000;
 const VISIBLE_MS = 7_000;
 const FRESH_DAYS = 7;
 const SEEN_PREFIX = "bbe-news-toast-seen:";
@@ -34,7 +34,7 @@ function markSeen(slug: string) {
   }
 }
 
-/** Milliseconds until the one-minute dwell is satisfied for this tab session. */
+/** Milliseconds until the 15-second dwell is satisfied for this tab session. */
 function msUntilDwell(): number {
   if (typeof window === "undefined") return DWELL_MS;
   try {
@@ -52,7 +52,7 @@ function msUntilDwell(): number {
 }
 
 /**
- * After one minute on the site, briefly surface the newest News post
+ * After 15 seconds on the site, briefly surface the newest News post
  * that is still inside its first week.
  */
 export function NewsFreshToast() {
@@ -64,7 +64,7 @@ export function NewsFreshToast() {
   const [armed, setArmed] = useState(false);
   const [open, setOpen] = useState(false);
 
-  // Arm once the visitor has been on the site for a minute this session.
+  // Arm once the visitor has been on the site for 15 seconds this session.
   useEffect(() => {
     if (!post || alreadySeen(post.slug)) return;
 
