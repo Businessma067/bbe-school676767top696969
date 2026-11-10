@@ -1,18 +1,17 @@
 import { describe, test, expect, mock } from "bun:test";
 import { readFileSync } from "node:fs";
+import { csvEscape } from "../src/lib/csv";
 
 // Exercise the actual export expressions without importing privileged server modules.
 const adminSource = readFileSync(new URL("../src/lib/admin.functions.ts", import.meta.url), "utf8");
 const rowExpression = adminSource.match(/lines\.push\(\s*(\[[\s\S]*?\]\.join\(","\))/)?.[1];
 const header = adminSource.match(/const header =\s*"([^"]+)"/)?.[1];
-const escapeSource = adminSource.slice(adminSource.indexOf("function csvEscape(value:"))
-  .replace("value: string", "value").replace("): string", ")");
 
 describe("user CSV country alignment", () => {
   test("country is fifth and dates and accuracy retain their headings", () => {
     if (!rowExpression || !header) throw new Error("CSV implementation not found");
     const u = { userId: "id", email: "a@example.com", displayName: "Test", tier: "full", country: "Austria", registeredAt: "2026-10-20", lastSeenAt: "2026-10-21", tasksPassed: 2, tasksAttempted: 3, mockBestPct: 75, mockAttempts: 1, currentStreak: 4, averageAccuracy: 80 };
-    const row = new Function("u", `${escapeSource}; return ${rowExpression};`)(u);
+    const row = new Function("u", "csvEscape", `return ${rowExpression};`)(u, csvEscape);
     const fields = Object.fromEntries(header.split(",").map((key, i) => [key, row.split(",")[i]]));
     expect(fields.country).toBe("Austria");
     expect(fields.registered).toBe("2026-10-20");
