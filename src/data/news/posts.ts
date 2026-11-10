@@ -332,6 +332,15 @@ export function getNewsPost(slug: string): NewsPost | undefined {
   return POSTS.find((post) => post.slug === slug);
 }
 
+/** Newest post whose publish date is still inside the highlight window (default 7 days). */
+export function getFreshNewsPost(withinDays = 7, now = new Date()): NewsPost | undefined {
+  const cutoffMs = now.getTime() - withinDays * 24 * 60 * 60 * 1000;
+  return getAllNewsPosts().find((post) => {
+    const published = new Date(`${post.date}T12:00:00Z`).getTime();
+    return !Number.isNaN(published) && published >= cutoffMs;
+  });
+}
+
 export function getNewsPostPaths(): string[] {
   return POSTS.map((post) => `/news/${post.slug}`);
 }

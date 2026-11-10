@@ -26,6 +26,7 @@ import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 import { SignupBite } from "../components/SignupBite";
+import { NewsFreshToast } from "../components/NewsFreshToast";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
 
@@ -228,6 +229,7 @@ function RootComponent() {
             <Outlet />
             <DeferredChrome>
               <SignupBite />
+              <NewsFreshToast />
               <FloatingAssistant />
               <SupportChat />
             </DeferredChrome>
