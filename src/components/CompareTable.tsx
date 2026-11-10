@@ -59,6 +59,13 @@ const comparisonSections: ComparisonSection[] = [
         wiso: `${wisoMocks} mocks with answer sheets`,
         hybrid: `${hybridMocks} mocks with answer sheets`,
       },
+      {
+        label: "Mock Builder",
+        free: "❌",
+        full: "Build custom BBE papers",
+        wiso: "Build custom WiSo papers",
+        hybrid: "BBE + WiSo builders",
+      },
     ],
   },
   {
