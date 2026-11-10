@@ -31,3 +31,7 @@
 - Partner discounts (STUDYLINE / VSTUPUNI / STARTSTUDY): one code per account forever via `account_partner_bindings`, applicable to every paid course; authenticated lookup must reject a second partner code, and pending/paid partner payments plus selections seed that binding so parallel checkouts cannot switch codes.
 - Persist submitted mock answers with a paper snapshot, serialize progress/submission writes, and use the server-admin-gated review for other users; this preserves custom papers and prevents late backups from reverting submissions.
 - Shared account/dashboard track switching must apply the stored choice before navigation and prefer it over enrollment defaults; identical URLs do not imply an unchanged track.
+- Self-service enrollment writes are restricted to the demo SKU and demo tier by RLS; paid access helpers ignore free-tier paid SKUs to prevent forged entitlements.
+- User CSV exports neutralize spreadsheet formula prefixes before CSV quoting to prevent exported profile text executing as formulas.
+- Monobank notifications must pass raw-body signature verification before payment synchronization so only the provider can trigger privileged updates.
+- Chat case context remains validated, structured user-role data, never system instructions, to preserve the tutor's trusted instruction boundary.
