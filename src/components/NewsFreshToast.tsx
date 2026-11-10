@@ -7,11 +7,21 @@ import { getFreshNewsPost } from "@/data/news/posts";
 import { isNewsAppPath } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
-const DWELL_MS = 15_000;
-const VISIBLE_MS = 7_000;
+/** Soft window — not a fixed beat. */
+const DWELL_MIN_MS = 9_000;
+const DWELL_MAX_MS = 14_000;
+const VISIBLE_MIN_MS = 4_200;
+const VISIBLE_MAX_MS = 5_800;
 const FRESH_DAYS = 7;
 const SEEN_PREFIX = "bbe-news-toast-seen:";
 const SESSION_START_KEY = "bbe-news-toast-session-start";
+const SESSION_DWELL_KEY = "bbe-news-toast-session-dwell";
+
+type Phase = "idle" | "enter" | "shown" | "leave";
+
+function jitter(min: number, max: number) {
+  return min + Math.floor(Math.random() * (max - min + 1));
+}
 
 function seenKey(slug: string) {
   return `${SEEN_PREFIX}${slug}`;
@@ -30,30 +40,46 @@ function markSeen(slug: string) {
   try {
     sessionStorage.setItem(seenKey(slug), "1");
   } catch {
-    /* ignore quota / private mode */
+    /* ignore */
   }
 }
 
-/** Milliseconds until the 15-second dwell is satisfied for this tab session. */
+function sessionDwellMs(): number {
+  if (typeof window === "undefined") return DWELL_MIN_MS;
+  try {
+    const raw = sessionStorage.getItem(SESSION_DWELL_KEY);
+    const saved = raw ? Number(raw) : NaN;
+    if (Number.isFinite(saved) && saved >= DWELL_MIN_MS && saved <= DWELL_MAX_MS) {
+      return saved;
+    }
+    const next = jitter(DWELL_MIN_MS, DWELL_MAX_MS);
+    sessionStorage.setItem(SESSION_DWELL_KEY, String(next));
+    return next;
+  } catch {
+    return DWELL_MIN_MS;
+  }
+}
+
 function msUntilDwell(): number {
-  if (typeof window === "undefined") return DWELL_MS;
+  if (typeof window === "undefined") return sessionDwellMs();
+  const target = sessionDwellMs();
   try {
     const raw = sessionStorage.getItem(SESSION_START_KEY);
     const started = raw ? Number(raw) : NaN;
     if (!Number.isFinite(started)) {
       const now = Date.now();
       sessionStorage.setItem(SESSION_START_KEY, String(now));
-      return DWELL_MS;
+      return target;
     }
-    return Math.max(0, DWELL_MS - (Date.now() - started));
+    return Math.max(0, target - (Date.now() - started));
   } catch {
-    return DWELL_MS;
+    return target;
   }
 }
 
 /**
- * After 15 seconds on the site, briefly surface the newest News post
- * that is still inside its first week.
+ * After a short dwell on the site, slide the newest week-fresh News post
+ * down from above the viewport, then tuck it away again.
  */
 export function NewsFreshToast() {
   const path = useRouterState({
@@ -62,59 +88,65 @@ export function NewsFreshToast() {
   const post = getFreshNewsPost(FRESH_DAYS);
   const onNews = isNewsAppPath(path);
   const [armed, setArmed] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [phase, setPhase] = useState<Phase>("idle");
 
-  // Arm once the visitor has been on the site for 15 seconds this session.
   useEffect(() => {
     if (!post || alreadySeen(post.slug)) return;
-
     const wait = msUntilDwell();
     const timer = setTimeout(() => setArmed(true), wait);
     return () => clearTimeout(timer);
   }, [post]);
 
-  // Show for 7 seconds when armed (and not already on News).
   useEffect(() => {
     if (!post || !armed || alreadySeen(post.slug) || onNews) {
-      setOpen(false);
+      setPhase((p) => (p === "enter" || p === "shown" ? "leave" : p));
       return;
     }
 
-    setOpen(true);
-    const hide = setTimeout(() => {
-      markSeen(post.slug);
-      setOpen(false);
-      setArmed(false);
-    }, VISIBLE_MS);
-
+    setPhase("enter");
+    const hold = jitter(VISIBLE_MIN_MS, VISIBLE_MAX_MS);
+    const hide = setTimeout(() => setPhase("leave"), hold);
     return () => clearTimeout(hide);
   }, [post, armed, onNews]);
 
-  // Visiting the highlighted post (or the feed) counts as seen for this session.
   useEffect(() => {
     if (!post) return;
     if (path === `/news/${post.slug}` || path === "/news") {
       markSeen(post.slug);
-      setOpen(false);
       setArmed(false);
+      setPhase((p) => (p === "idle" ? p : "leave"));
     }
   }, [path, post]);
 
-  if (!open || !post || onNews) return null;
+  const finishLeave = () => {
+    if (post) markSeen(post.slug);
+    setArmed(false);
+    setPhase("idle");
+  };
 
   const dismiss = () => {
-    markSeen(post.slug);
-    setOpen(false);
-    setArmed(false);
+    setPhase("leave");
   };
+
+  if (!post || onNews || phase === "idle") return null;
+
+  const motionClass =
+    phase === "leave" ? "news-toast-leave" : phase === "enter" ? "news-toast-enter" : "";
 
   return (
     <aside
       role="status"
       aria-live="polite"
-      className="pointer-events-none fixed inset-x-0 top-[max(0.75rem,env(safe-area-inset-top))] z-[60] flex justify-center px-3"
+      className="pointer-events-none fixed inset-x-0 top-0 z-[60] flex justify-center overflow-hidden px-3 pt-[max(0.75rem,env(safe-area-inset-top))]"
     >
-      <div className="news-toast-enter pointer-events-auto w-full max-w-md">
+      <div
+        className={`pointer-events-auto w-full max-w-md will-change-transform ${motionClass}`}
+        onAnimationEnd={(e) => {
+          if (e.target !== e.currentTarget) return;
+          if (phase === "enter") setPhase("shown");
+          if (phase === "leave") finishLeave();
+        }}
+      >
         <div className="relative flex items-start gap-3 rounded-2xl border border-border bg-background/95 p-3 pr-10 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.55)] backdrop-blur-md">
           <div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-caramel-deep/10 text-caramel-deep">
             <Newspaper className="h-4 w-4" strokeWidth={2.25} />
