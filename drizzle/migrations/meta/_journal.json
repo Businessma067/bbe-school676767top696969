@@ -64,6 +64,13 @@
       "when": 1793636162777,
       "tag": "0008_partner_promo_account_bindings",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1794274979613,
+      "tag": "0009_restrict_self_service_enrollments_to_demo",
+      "breakpoints": true
     }
   ]
 }
