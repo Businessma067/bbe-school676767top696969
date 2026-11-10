@@ -1,5 +1,5 @@
 # Roadmap
-- [ ] Verify and fix unlock-code redemption and BBE/WiSo switching on shared account pages; run targeted regressions.
+- [x] Fix unlock-code redemption and BBE/WiSo switching on shared account pages; promo submission regressions pass and signed-in dashboard/account switching is browser-verified. No live one-time code was consumed.
 - [ ] Finish admin mock statistics, preserve every submitted answer and paper, and verify saved results and admin review.
 - [x] Persist STUDYLINE's selected course per account, show its reduced price, allow switching before payment with a visible note, and verify persistence and limits.
 

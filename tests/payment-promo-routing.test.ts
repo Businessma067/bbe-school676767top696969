@@ -26,3 +26,24 @@ test("a rejected discount does not fall through to free-access redemption", asyn
   const error = "This promocode has reached its use limit.";
   expect(await apply(error)).toEqual({ handled: true, errors: [error] });
 });
+
+test("Promo submission reaches unlock redemption and the success state", async () => {
+  const handlerStart = source.indexOf("  const handlePromoRedeem =");
+  const handlerEnd = source.indexOf("  void priceEuros;", handlerStart);
+  const handlerJs = new Bun.Transpiler({ loader: "ts" }).transformSync(
+    source.slice(handlerStart, handlerEnd).replace('await import("@/lib/entitlements")', '({ clearAccessStateCache: () => {} })'),
+  );
+  const redeemed: unknown[] = [];
+  const unlocked: boolean[] = [];
+  const run = new Function("supabase", "promoCode", "productSlug", "setError", "setAuthOpen", "setLoading", "applyDiscountCode", "setAppliedPromoCode", "setDiscountPct", "redeemPromocode", "setPromoUnlocked", "setTimeout", `${handlerJs}; return handlePromoRedeem({ preventDefault() {} });`);
+  await run(
+    { auth: { getSession: async () => ({ data: { session: {} } }) } },
+    "ONE-TIME-CODE", "full-course", () => {}, () => {}, () => {},
+    async () => (await apply(unlockError)).handled,
+    () => {}, () => {},
+    async (input: unknown) => { redeemed.push(input); return { ok: true, productSlug: "full-course", href: "/dashboard" }; },
+    (value: boolean) => unlocked.push(value), () => {},
+  );
+  expect(redeemed).toEqual([{ data: { code: "ONE-TIME-CODE", productSlug: "full-course" } }]);
+  expect(unlocked).toEqual([true]);
+});
