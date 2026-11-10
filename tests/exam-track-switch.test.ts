@@ -37,11 +37,15 @@ for (const pathname of ["/dashboard", "/account"]) {
 
 test("an explicit track choice wins over the only owned course on shared pages", () => {
   const previous = Object.getOwnPropertyDescriptor(globalThis, "window");
+  const previousStorage = Object.getOwnPropertyDescriptor(globalThis, "sessionStorage");
   Object.defineProperty(globalThis, "window", { configurable: true, value: { sessionStorage: { getItem: () => "bbe" } } });
+  Object.defineProperty(globalThis, "sessionStorage", { configurable: true, value: { getItem: () => "bbe" } });
   try {
     expect(resolveNavTrack("/account", { hasWisoFull: true })).toBe("bbe");
   } finally {
     if (previous) Object.defineProperty(globalThis, "window", previous);
     else Reflect.deleteProperty(globalThis, "window");
+    if (previousStorage) Object.defineProperty(globalThis, "sessionStorage", previousStorage);
+    else Reflect.deleteProperty(globalThis, "sessionStorage");
   }
 });
