@@ -134,7 +134,11 @@ export function PaymentModal({
       return true;
     }
 
-    // Always surface the server reason (invalid, unlock-only, already bound, …).
+    // Only a verified unlock-kind response may fall through to redemption.
+    // Keep invalid/expired/partner-binding errors on the discount path.
+    if (discount.error === "This promocode unlocks access: redeem it in the Promo tab." && method === "promo") {
+      return false;
+    }
     setError(discount.error);
     return true;
   };
