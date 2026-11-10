@@ -45,8 +45,8 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
   const switchTo = (next: ExamTrack) => {
     const here = stripLocalePrefix(pathname);
     const target = pathForTrack(pathname, next, visitor);
-    // Stay put only when already on that track's main landing (or dashboard/account for paid).
-    if (here === target) return;
+    // Shared URLs can stay the same while the selected track and language change.
+    if (here === target && next === track && !onHybrid) return;
     storeExamTrack(next);
     setTrack(next);
     const lang = trackUiLang(next);

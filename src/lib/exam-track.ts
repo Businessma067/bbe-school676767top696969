@@ -154,7 +154,7 @@ export function entryLangForDestination(to: string, fromPathname: string): "en" 
 
 /**
  * Header / dashboard track when the URL is shared (`/dashboard`, `/account`).
- * Prefer the only course the account owns; for dual enrollments keep session.
+ * Respect an explicit session choice; otherwise default to the course owned.
  */
 export function resolveNavTrack(
   pathname: string,
@@ -163,11 +163,14 @@ export function resolveNavTrack(
   const fromPath = getExamTrackFromPath(pathname);
   if (fromPath) return fromPath;
 
+  const stored = readStoredExamTrack();
+  if (stored) return stored;
+
   const hasBbe = !!(access.hasLite || access.hasFull);
   const hasWiso = !!access.hasWisoFull;
   if (hasWiso && !hasBbe) return "wiso";
   if (hasBbe && !hasWiso) return "bbe";
-  return readStoredExamTrack() ?? "bbe";
+  return "bbe";
 }
 
 /** Subject picker for someone without a paid course. */
@@ -183,14 +186,14 @@ export function visitorDemoPath(track: ExamTrack): string {
 export function pathForTrack(
   pathname: string,
   target: ExamTrack,
-  _visitor = false,
+  visitor = false,
 ): string {
   const path = stripLocalePrefix(pathname);
   if (path === "/dashboard" || path.startsWith("/dashboard/")) {
-    return "/dashboard";
+    return visitor ? visitorDemoPath(target) : "/dashboard";
   }
   if (path === "/account" || path.startsWith("/account/")) {
-    return "/account";
+    return visitor ? visitorDemoPath(target) : "/account";
   }
   return trackHome(target);
 }
