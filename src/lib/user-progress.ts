@@ -157,9 +157,10 @@ export function ownsProductSlug(enrollments: Enrollment[], slug: string): boolea
 
 /** Highest tier across every enrollment (incl. WiSo). Prefer track-scoped helpers for gates. */
 export function highestTier(enrollments: Enrollment[]): "none" | "demo" | "lite" | "full" {
-  if (enrollments.some((e) => e.tier === "full")) return "full";
-  if (enrollments.some((e) => e.tier === "lite")) return "lite";
-  if (enrollments.length > 0) return "demo";
+  const validEnrollments = enrollments.filter(enrollmentConveysAccess);
+  if (validEnrollments.some((e) => e.tier === "full")) return "full";
+  if (validEnrollments.some((e) => e.tier === "lite")) return "lite";
+  if (validEnrollments.length > 0) return "demo";
   return "none";
 }
 
