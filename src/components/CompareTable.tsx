@@ -1,5 +1,10 @@
 import { Fragment } from "react";
 import { Check, X } from "lucide-react";
+import {
+  BBE_COURSE_COUNTS,
+  HYBRID_COURSE_COUNTS,
+  WISO_COURSE_COUNTS,
+} from "@/config/course-highlights";
 
 type ColKey = "free" | "full" | "wiso" | "hybrid";
 
@@ -16,18 +21,44 @@ type ComparisonSection = {
   rows: ComparisonCell[];
 };
 
+const bbeFlashcards = BBE_COURSE_COUNTS.studyToolCards.toLocaleString("en-US");
+const wisoFlashcards = WISO_COURSE_COUNTS.studyToolCards.toLocaleString("en-US");
+const hybridFlashcards = HYBRID_COURSE_COUNTS.studyToolCards.toLocaleString("en-US");
+const bbeMocks = BBE_COURSE_COUNTS.styleExams;
+const wisoMocks = WISO_COURSE_COUNTS.styleExams;
+const hybridMocks = HYBRID_COURSE_COUNTS.styleExams;
+
 const comparisonSections: ComparisonSection[] = [
   {
     title: "Features",
     rows: [
-      { label: "Math Tasks", free: "70", full: "1870", wiso: "1870", hybrid: "3740" },
-      { label: "Economics Tasks", free: "33", full: "913", wiso: "576", hybrid: "1489" },
+      { label: "Math Tasks", free: "70", full: "1,870", wiso: "1,870", hybrid: "3,740" },
+      { label: "Economics Tasks", free: "33", full: "913", wiso: "576", hybrid: "1,489" },
       { label: "English Tasks", free: "6", full: "729", wiso: "❌", hybrid: "729" },
-      { label: "German Reading", free: "❌", full: "❌", wiso: "100", hybrid: "100" },
-      { label: "Textbook Theory", free: "❌", full: "Full materials", wiso: "Wirtschaft verstehen", hybrid: "Full materials + Wirtschaft verstehen" },
+      { label: "German Reading", free: "❌", full: "❌", wiso: "100 tasks", hybrid: "100 tasks" },
+      {
+        label: "Flashcards",
+        free: "❌",
+        full: `${bbeFlashcards} cards (Econ, Math, English)`,
+        wiso: `${wisoFlashcards} cards (Econ, Math, German)`,
+        hybrid: `${hybridFlashcards} cards (both tracks)`,
+      },
+      {
+        label: "Theory materials",
+        free: "❌",
+        full: "Full BBE theory pack",
+        wiso: "Wirtschaft verstehen + math theory",
+        hybrid: "BBE theory + Wirtschaft verstehen",
+      },
       { label: "Answer Sheet Simulator", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
-      { label: "Interactive Speed Simulators", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
-      { label: "Mock Exams", free: "❌", full: "5 exams with answer sheets", wiso: "WiSo mocks with answer sheets", hybrid: "12 mock exams" },
+      { label: "Speed drills", free: "❌", full: "tick", wiso: "tick", hybrid: "tick" },
+      {
+        label: "Mock Exams",
+        free: "❌",
+        full: `${bbeMocks} mocks with answer sheets`,
+        wiso: `${wisoMocks} mocks with answer sheets`,
+        hybrid: `${hybridMocks} mocks with answer sheets`,
+      },
     ],
   },
   {
