@@ -114,8 +114,8 @@ export function NewsFreshToast() {
       aria-live="polite"
       className="pointer-events-none fixed inset-x-0 top-[max(0.75rem,env(safe-area-inset-top))] z-[60] flex justify-center px-3"
     >
-      <div className="pointer-events-auto w-full max-w-md animate-in fade-in slide-in-from-top-2 duration-300">
-        <div className="flex items-start gap-3 rounded-2xl border border-border bg-background/95 p-3 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.55)] backdrop-blur-md">
+      <div className="news-toast-enter pointer-events-auto w-full max-w-md">
+        <div className="relative flex items-start gap-3 rounded-2xl border border-border bg-background/95 p-3 pr-10 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.55)] backdrop-blur-md">
           <div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-caramel-deep/10 text-caramel-deep">
             <Newspaper className="h-4 w-4" strokeWidth={2.25} />
           </div>
@@ -141,9 +141,9 @@ export function NewsFreshToast() {
             type="button"
             onClick={dismiss}
             aria-label="Close"
-            className="grid h-6 w-6 shrink-0 place-items-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground"
+            className="absolute right-2.5 top-2.5 grid h-7 w-7 place-items-center rounded-full text-gray-400 transition-colors hover:bg-gray-100 hover:text-gray-500"
           >
-            <X className="h-3.5 w-3.5" />
+            <X className="h-4 w-4" strokeWidth={2} />
           </button>
         </div>
       </div>
