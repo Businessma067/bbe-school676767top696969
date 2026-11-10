@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CompareTable } from "@/components/CompareTable";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
@@ -176,16 +175,10 @@ export function ProductsPage() {
 
       <main className="px-6 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-12 grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10">
-            <div className="text-center lg:pt-6 lg:text-left">
-              <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-                Our products
-              </h1>
-              <p className="mt-4 text-lg text-muted-foreground">
-                BBE and WiSo full courses — or the hybrid path when you want both exams in one plan.
-              </p>
-            </div>
-            <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
+          <div className="mb-12 text-center">
+            <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
+              Our products
+            </h1>
           </div>
 
           <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">

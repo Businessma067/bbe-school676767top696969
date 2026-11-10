@@ -39,7 +39,6 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { FullCourseVideoRoulette, type RouletteSlide } from "@/components/FullCourseVideoRoulette";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SalesWarmup } from "@/components/SalesWarmup";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { CourseOfferPrice } from "@/components/CourseOfferPrice";
 import { consumeResumeCheckout } from "@/lib/signup-complete";
 import { useAppliedPromo } from "@/hooks/use-applied-promo";
@@ -317,11 +316,10 @@ export function FullCourseProduct() {
       />
 
       <main className="px-6 py-10 lg:px-8 lg:py-16">
-        <div className="mx-auto grid max-w-6xl items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10">
-          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:pt-4">
+        <div className="mx-auto max-w-6xl">
+          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Full BBE Course
           </h1>
-          <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
         </div>
         <div className="mx-auto mt-8 max-w-4xl">
 
