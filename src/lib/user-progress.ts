@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import { enrollmentConveysAccess } from "@/lib/enrollment-access";
 import { mirrorTaskAttempt } from "@/lib/activity-tracker";
 import type { MockExamSession } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
@@ -147,11 +148,11 @@ export async function fetchEnrollments(): Promise<Enrollment[]> {
     console.error("fetchEnrollments", error);
     return [];
   }
-  return (data ?? []) as Enrollment[];
+  return ((data ?? []) as Enrollment[]).filter(enrollmentConveysAccess);
 }
 
 export function ownsProductSlug(enrollments: Enrollment[], slug: string): boolean {
-  return enrollments.some((e) => e.product_slug === slug);
+  return enrollments.some((e) => e.product_slug === slug && enrollmentConveysAccess(e));
 }
 
 /** Highest tier across every enrollment (incl. WiSo). Prefer track-scoped helpers for gates. */

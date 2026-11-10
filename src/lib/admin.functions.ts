@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
+import { csvEscape } from "@/lib/csv";
 import { requireAdmin } from "@/lib/require-admin.server";
 import {
   attachPaymentsToRows,
@@ -528,13 +529,6 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
     }
     return { csv: lines.join("\n") };
   });
-
-function csvEscape(value: string): string {
-  if (value.includes(",") || value.includes('"') || value.includes("\n")) {
-    return `"${value.replace(/"/g, '""')}"`;
-  }
-  return value;
-}
 
 /** Whole-platform mock exam statistics: score distribution, per-question stats, every answer. */
 export const adminGetMockExamStats = createServerFn({ method: "GET" })

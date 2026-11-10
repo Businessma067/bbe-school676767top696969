@@ -8,6 +8,7 @@ import {
   type Enrollment,
 } from "@/lib/user-progress";
 import { isAdminEmail } from "@/lib/admin-access";
+import { enrollmentConveysAccess } from "@/lib/enrollment-access";
 
 export type AccessTier = "none" | "demo" | "lite" | "full";
 
@@ -69,8 +70,9 @@ function stateFromEnrollments(
       ],
     };
   }
-  const productSlugs = enrollments.map((e) => e.product_slug);
-  const tier = highestBbeTier(enrollments);
+  const validEnrollments = enrollments.filter(enrollmentConveysAccess);
+  const productSlugs = validEnrollments.map((e) => e.product_slug);
+  const tier = highestBbeTier(validEnrollments);
   if (tier === "full" || tier === "lite" || tier === "demo") {
     return { signedIn, email, tier, productSlugs };
   }
