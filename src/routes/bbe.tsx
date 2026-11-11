@@ -65,10 +65,9 @@ export function BbeLandingPage() {
         {/* HERO — centered paper */}
         <section className="relative overflow-hidden px-4 pt-8 pb-12 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
           <div className="mx-auto max-w-6xl">
-            <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10">
-            <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left">
-              <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
-                <ExamCountdown className="lg:items-start" />
+            <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
+              <div className="mb-5 flex w-full flex-col items-center sm:mb-6">
+                <ExamCountdown />
               </div>
 
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[2.6rem] sm:leading-[1.05] lg:text-[3.15rem]">
@@ -113,12 +112,12 @@ export function BbeLandingPage() {
                 <ArrowRight className="h-3.5 w-3.5" />
               </LocalizedLink>
             </div>
-            <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
-            </div>
 
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
               <CourseHighlightsSection track="bbe" variant="landing" />
             </div>
+
+            <CourseCallCalendar className="mx-auto mt-8 w-full max-w-md" />
           </div>
         </section>
 
