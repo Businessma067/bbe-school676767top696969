@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { ChevronLeft, ChevronRight, ArrowRight, Flame } from "lucide-react";
@@ -116,8 +115,6 @@ export function BbeLandingPage() {
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
               <CourseHighlightsSection track="bbe" variant="landing" />
             </div>
-
-            <CourseCallCalendar className="mx-auto mt-8 w-full max-w-md" />
           </div>
         </section>
 
