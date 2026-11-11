@@ -1,9 +1,11 @@
 import { ClientOnly } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, CalendarDays } from "lucide-react";
+import { useRouterState } from "@tanstack/react-router";
 
 import { CALENDLY_BOOKING_URL } from "@/components/CalendlyInlineEmbed";
 import { getCallMonth, type CallDay } from "@/lib/call-availability.functions";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
 type MonthResult = { ok: true; days: CallDay[] } | { ok: false; days: [] };
@@ -382,5 +384,40 @@ export function CourseCallCalendar({ className }: { className?: string }) {
         </ClientOnly>
       </div>
     </section>
+  );
+}
+
+/** Fixed corner chip. The page flow stays clear; the picker opens from the chip. */
+export function CourseCallDock() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const [open, setOpen] = useState(false);
+  const path = stripLocalePrefix(pathname);
+  if (path.startsWith("/admin")) return null;
+
+  return (
+    <div className="fixed top-[4.5rem] right-[max(0.75rem,env(safe-area-inset-right))] z-40 flex w-[min(19rem,calc(100vw-1.5rem))] flex-col items-end sm:top-[4.75rem]">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls="book"
+        onClick={() => setOpen((value) => !value)}
+        className="inline-flex items-center gap-2 rounded-full border border-border bg-card py-1.5 pr-3.5 pl-1.5 text-left shadow-[0_12px_32px_-16px_rgba(22,22,22,0.55)]"
+      >
+        <span className="grid h-8 w-8 place-items-center rounded-full bg-primary text-primary-foreground">
+          <CalendarDays className="h-4 w-4" />
+        </span>
+        <span className="min-w-0">
+          <span className="block text-[10px] font-medium tracking-wide text-taupe">20 min · phone</span>
+          <span className="block font-display text-[13px] font-semibold leading-tight text-foreground">
+            Book a call
+          </span>
+        </span>
+      </button>
+      {open ? (
+        <div className="mt-2 max-h-[min(32rem,calc(100vh-7.5rem))] w-full overflow-auto">
+          <CourseCallCalendar />
+        </div>
+      ) : null}
+    </div>
   );
 }

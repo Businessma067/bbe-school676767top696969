@@ -179,6 +179,9 @@ export function ProductsPage() {
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
               Our products
             </h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+              BBE and WiSo full courses — or the hybrid path when you want both exams in one plan.
+            </p>
           </div>
 
           <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">

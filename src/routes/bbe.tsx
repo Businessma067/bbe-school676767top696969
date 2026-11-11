@@ -11,7 +11,6 @@ import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";

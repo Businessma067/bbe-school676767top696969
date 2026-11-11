@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
 import { ExamCountdown } from "@/components/ExamCountdown";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";

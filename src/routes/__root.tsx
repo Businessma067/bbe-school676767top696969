@@ -27,6 +27,7 @@ import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 import { SignupBite } from "../components/SignupBite";
 import { NewsFreshToast } from "../components/NewsFreshToast";
+import { CourseCallDock } from "../components/CourseCallCalendar";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
 
@@ -228,6 +229,7 @@ function RootComponent() {
             {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
             <Outlet />
             <DeferredChrome>
+              <CourseCallDock />
               <SignupBite />
               <NewsFreshToast />
               <FloatingAssistant />
