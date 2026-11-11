@@ -5,8 +5,6 @@ import { cn } from "@/lib/utils";
 export const CALENDLY_BOOKING_URL = "https://calendly.com/bbe-school-info/30min";
 
 const CALENDLY_ORIGINS = ["https://calendly.com", "https://assets.calendly.com"] as const;
-/** Start the iframe a bit before the section enters the viewport. */
-const LOAD_ROOT_MARGIN = "480px 0px";
 const DEFAULT_HEIGHT = 760;
 
 export type CalendlyPrefill = {
@@ -116,15 +114,12 @@ function CalendlyInlineWidget({
   className,
   prefill,
   onEventScheduled,
-  eager = false,
 }: {
   url?: string;
   className?: string;
   prefill?: CalendlyPrefill;
   onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
-  eager?: boolean;
 }) {
-  const hostRef = useRef<HTMLDivElement>(null);
   const onScheduledRef = useRef(onEventScheduled);
   onScheduledRef.current = onEventScheduled;
   const seenKeysRef = useRef(new Set<string>());
