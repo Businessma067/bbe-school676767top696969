@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
