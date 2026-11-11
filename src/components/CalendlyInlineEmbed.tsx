@@ -5,8 +5,6 @@ import { cn } from "@/lib/utils";
 export const CALENDLY_BOOKING_URL = "https://calendly.com/bbe-school-info/30min";
 
 const CALENDLY_ORIGINS = ["https://calendly.com", "https://assets.calendly.com"] as const;
-/** Start the iframe a bit before the section enters the viewport. */
-const LOAD_ROOT_MARGIN = "480px 0px";
 const DEFAULT_HEIGHT = 760;
 
 export type CalendlyPrefill = {
@@ -116,46 +114,25 @@ function CalendlyInlineWidget({
   className,
   prefill,
   onEventScheduled,
-  eager = false,
 }: {
   url?: string;
   className?: string;
   prefill?: CalendlyPrefill;
   onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
-  eager?: boolean;
 }) {
-  const hostRef = useRef<HTMLDivElement>(null);
   const onScheduledRef = useRef(onEventScheduled);
   onScheduledRef.current = onEventScheduled;
   const seenKeysRef = useRef(new Set<string>());
 
-  const [shouldLoad, setShouldLoad] = useState(eager);
+  // Always load immediately — visitors should see available times without
+  // waiting for the section to scroll into view.
+  const [shouldLoad] = useState(true);
   const [iframeHeight, setIframeHeight] = useState(DEFAULT_HEIGHT);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     warmCalendlyConnections();
-    if (eager || shouldLoad) return;
-    const el = hostRef.current;
-    if (!el) return;
-
-    if (typeof IntersectionObserver === "undefined") {
-      setShouldLoad(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { root: null, rootMargin: LOAD_ROOT_MARGIN, threshold: 0 },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [eager, shouldLoad]);
+  }, []);
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
@@ -205,7 +182,6 @@ function CalendlyInlineWidget({
 
   return (
     <div
-      ref={hostRef}
       data-no-i18n
       data-auto-load="false"
       className={cn("bbe-calendly-embed w-full overflow-hidden", className)}
@@ -217,7 +193,7 @@ function CalendlyInlineWidget({
           src={buildCalendlyEmbedSrc(url, prefill)}
           className="block w-full border-0"
           style={{ height: iframeHeight, minWidth: 320 }}
-          loading={eager ? "eager" : "lazy"}
+          loading="eager"
           onError={() => setFailed(true)}
         />
       ) : (
@@ -231,19 +207,17 @@ function CalendlyInlineWidget({
   );
 }
 
-/** Inline Calendly scheduler — mounts after hydration; iframe loads near viewport. */
+/** Inline Calendly scheduler — mounts after hydration and loads right away. */
 export function CalendlyInlineEmbed({
   url = CALENDLY_BOOKING_URL,
   className,
   prefill,
   onEventScheduled,
-  eager = false,
 }: {
   url?: string;
   className?: string;
   prefill?: CalendlyPrefill;
   onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
-  eager?: boolean;
 }) {
   return (
     <ClientOnly
@@ -259,7 +233,6 @@ export function CalendlyInlineEmbed({
         className={className}
         prefill={prefill}
         onEventScheduled={onEventScheduled}
-        eager={eager}
       />
     </ClientOnly>
   );
