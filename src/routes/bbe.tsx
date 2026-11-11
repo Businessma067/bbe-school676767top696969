@@ -116,8 +116,6 @@ export function BbeLandingPage() {
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
               <CourseHighlightsSection track="bbe" variant="landing" />
             </div>
-
-            <CourseCallCalendar className="mx-auto mt-8 w-full max-w-md" />
           </div>
         </section>
 
