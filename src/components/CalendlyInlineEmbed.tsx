@@ -129,33 +129,15 @@ function CalendlyInlineWidget({
   onScheduledRef.current = onEventScheduled;
   const seenKeysRef = useRef(new Set<string>());
 
-  const [shouldLoad, setShouldLoad] = useState(eager);
+  // Always load immediately — visitors should see available times without
+  // waiting for the section to scroll into view.
+  const [shouldLoad] = useState(true);
   const [iframeHeight, setIframeHeight] = useState(DEFAULT_HEIGHT);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     warmCalendlyConnections();
-    if (eager || shouldLoad) return;
-    const el = hostRef.current;
-    if (!el) return;
-
-    if (typeof IntersectionObserver === "undefined") {
-      setShouldLoad(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { root: null, rootMargin: LOAD_ROOT_MARGIN, threshold: 0 },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [eager, shouldLoad]);
+  }, []);
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
