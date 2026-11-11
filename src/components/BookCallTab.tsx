@@ -259,7 +259,7 @@ export function BookCallTab({ prefill }: BookCallTabProps) {
             ) : null}
           </div>
         ) : (
-          <CalendlyInlineEmbed eager prefill={prefill} onEventScheduled={handleScheduled} />
+          <CalendlyInlineEmbed prefill={prefill} onEventScheduled={handleScheduled} />
         )}
       </div>
     </div>
