@@ -182,7 +182,6 @@ function CalendlyInlineWidget({
 
   return (
     <div
-      ref={hostRef}
       data-no-i18n
       data-auto-load="false"
       className={cn("bbe-calendly-embed w-full overflow-hidden", className)}
@@ -194,7 +193,7 @@ function CalendlyInlineWidget({
           src={buildCalendlyEmbedSrc(url, prefill)}
           className="block w-full border-0"
           style={{ height: iframeHeight, minWidth: 320 }}
-          loading={eager ? "eager" : "lazy"}
+          loading="eager"
           onError={() => setFailed(true)}
         />
       ) : (
@@ -208,19 +207,17 @@ function CalendlyInlineWidget({
   );
 }
 
-/** Inline Calendly scheduler — mounts after hydration; iframe loads near viewport. */
+/** Inline Calendly scheduler — mounts after hydration and loads right away. */
 export function CalendlyInlineEmbed({
   url = CALENDLY_BOOKING_URL,
   className,
   prefill,
   onEventScheduled,
-  eager = false,
 }: {
   url?: string;
   className?: string;
   prefill?: CalendlyPrefill;
   onEventScheduled?: (payload: CalendlyScheduledPayload) => void;
-  eager?: boolean;
 }) {
   return (
     <ClientOnly
@@ -236,7 +233,6 @@ export function CalendlyInlineEmbed({
         className={className}
         prefill={prefill}
         onEventScheduled={onEventScheduled}
-        eager={eager}
       />
     </ClientOnly>
   );
