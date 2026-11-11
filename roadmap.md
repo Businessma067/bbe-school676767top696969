@@ -39,3 +39,5 @@
   - Next: produce rich visual concept examples (images) showing advanced structure, depth and motion; await user's pick before implementing
 - [ ] Показать сложные анимированные концепты главной страницы (не шаблонные): живые анимации, ощущение переходов между страницами, уникальный дизайн; после выбора — реализовать
   - Новое требование: строить демо с нуля (не поверх текущего), очень техничное по анимациям, wow-эффект
+
+- [x] Booking calendar: load times immediately (eager), lower fixed call button below the header, remove call block under the BBE demo section
