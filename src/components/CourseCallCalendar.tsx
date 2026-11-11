@@ -432,7 +432,7 @@ export function CourseCallDock() {
   if (!DOCK_PATHS.has(path)) return null;
 
   return (
-    <div className="fixed top-[7rem] right-[max(0.75rem,env(safe-area-inset-right))] z-40 flex w-[min(19rem,calc(100vw-1.5rem))] flex-col items-end sm:top-[6rem]">
+    <div className="fixed top-[7.5rem] right-[max(0.75rem,env(safe-area-inset-right))] z-40 flex w-[min(19rem,calc(100vw-1.5rem))] flex-col items-end sm:top-[7rem]">
       <button
         type="button"
         aria-expanded={open}
