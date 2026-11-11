@@ -1,5 +1,5 @@
 import { ClientOnly } from "@tanstack/react-router";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { Component, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronLeft, ChevronRight, CalendarDays } from "lucide-react";
 import { useRouterState } from "@tanstack/react-router";
 
@@ -92,7 +92,9 @@ function formatTime(iso: string): string {
 
 /** Calendly only keeps the slot when the path time is UTC (`...T17:30:00Z`). */
 function slotHref(start: string): string {
-  const utc = new Date(start).toISOString().replace(".000Z", "Z");
+  const parsed = new Date(start);
+  if (Number.isNaN(parsed.getTime())) return CALENDLY_BOOKING_URL;
+  const utc = parsed.toISOString().replace(".000Z", "Z");
   return `${CALENDLY_BOOKING_URL}/${utc}`;
 }
 
@@ -359,6 +361,30 @@ function CalendarSkeleton() {
   return <div className="h-56 animate-pulse rounded-sm bg-muted/50" aria-hidden />;
 }
 
+function CalendarFallback() {
+  return (
+    <a
+      href={CALENDLY_BOOKING_URL}
+      className="inline-flex text-sm font-semibold text-foreground underline-offset-4 hover:underline"
+    >
+      Open the booking calendar
+    </a>
+  );
+}
+
+class CalendarBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+
+  render() {
+    if (this.state.failed) return <CalendarFallback />;
+    return this.props.children;
+  }
+}
+
 /** Site-styled 20-minute call picker. Availability is live; confirmation opens the reserved slot. */
 export function CourseCallCalendar({ className }: { className?: string }) {
   // Kick off the availability fetch during the outer shell render — do not wait for ClientOnly.
@@ -379,20 +405,31 @@ export function CourseCallCalendar({ className }: { className?: string }) {
         Book a 20-minute call to learn everything about the course
       </h2>
       <div className="mt-2.5">
-        <ClientOnly fallback={<CalendarSkeleton />}>
-          <CourseCallCalendarLive />
-        </ClientOnly>
+        <CalendarBoundary>
+          <ClientOnly fallback={<CalendarSkeleton />}>
+            <CourseCallCalendarLive />
+          </ClientOnly>
+        </CalendarBoundary>
       </div>
     </section>
   );
 }
 
-/** Fixed corner chip. The page flow stays clear; the picker opens from the chip. */
+const DOCK_PATHS = new Set([
+  "/bbe",
+  "/wiso",
+  "/hybrid",
+  "/products/full-course",
+  "/wiso/products/full-course",
+  "/products/hybrid-course",
+]);
+
+/** Fixed corner chip on the three tracks and their product pages. */
 export function CourseCallDock() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [open, setOpen] = useState(false);
   const path = stripLocalePrefix(pathname);
-  if (path.startsWith("/admin")) return null;
+  if (!DOCK_PATHS.has(path)) return null;
 
   return (
     <div className="fixed top-[4.5rem] right-[max(0.75rem,env(safe-area-inset-right))] z-40 flex w-[min(19rem,calc(100vw-1.5rem))] flex-col items-end sm:top-[4.75rem]">

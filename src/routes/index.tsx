@@ -12,6 +12,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
+import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { homepageNavItems } from "@/config/site-nav";
 import { PAID_PRODUCTS } from "@/lib/checkout-catalog";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -131,6 +132,7 @@ export function Index() {
       <main>
         <section className="relative overflow-hidden px-3 pt-10 pb-12 sm:px-6 sm:pt-14 sm:pb-20 lg:px-8 lg:pt-16 lg:pb-20">
           <div className="mx-auto max-w-6xl">
+            <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-8 xl:gap-12">
             <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:pt-2 lg:text-left">
                 <div className="mb-5 flex w-full flex-col items-center sm:mb-6 lg:items-start">
                   <ExamCountdown className="lg:items-start" />
@@ -146,6 +148,8 @@ export function Index() {
                   Prepare for WU Vienna admission with BBE exam (BBE Aufnahmetest) or WiSo entrance
                   exam practice. Choose one track, or Hybrid to prepare for both together.
                 </p>
+              </div>
+              <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
             </div>
 
             <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-4 md:mt-10 md:grid-cols-3 md:items-stretch md:gap-5">
@@ -475,7 +479,7 @@ function SiteFooter() {
               </LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to="/" hash="book" className="text-foreground hover:underline">
+              <LocalizedLink to="/book-a-call" className="text-foreground hover:underline">
                 Book a call
               </LocalizedLink>
             </li>
