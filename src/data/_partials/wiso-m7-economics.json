@@ -1,0 +1,302 @@
+[
+  {
+    "case_id": "WISO-M7-E01",
+    "id": "WISO-M7-E01",
+    "title": "Zweitarif mit versunkenem Zähler",
+    "subsection": "1.4",
+    "chapter": 1,
+    "difficulty_level": "5/5",
+    "context": "Lineare Nachfrage P = 70 − 2,5Q, konstante Grenzkosten MC = 20, keine Produktionsfixkosten.\nZweitarif: Nutzungspreis p und einmaliger Zähler F. Effizienter Tarif setzt p = MC = 20\nund schöpft die Konsumentenrente mit F ab. Nach Zahlung ist F versunken; der Anbieter\nkann p auf 32,5 anheben. Vergleichen Sie effizienten Zweitarif, nachträgliche Anhebung,\nex-ante-Anschluss und einfaches Mengenmonopol. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Bei p = 20 und F = 500 ist die Menge effizient; die gesamte Rente liegt beim Anbieter.",
+      "Nach Anhebung auf 32,5 stellt der Konsument die Nutzung ein, weil 281,25 − 500 < 0.",
+      "Wird die Anhebung auf 32,5 ex ante erwartet und F = 500 verlangt, kommt kein Anschluss zustande.",
+      "Der versunkene Zähler hält die Nutzung bei p = 32,5 aufrecht, solange die laufende Rente positiv ist.",
+      "Das einfache Mengenmonopol erzeugt mehr Gesamtwohlfahrt als der effiziente Zweitarif."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Effizienter Nutzungspreis gleich MC; F schöpft die Konsumentenrente bei diesem Preis ab.\n\np = 20 ⇒ Q = (70 − 20) / 2,5 = 20. CS = ½ · 50 · 20 = 500 = F. Gesamtrente 500 liegt beim Anbieter; Menge = First-Best. Falle: F als Produktionsfixkosten zu lesen.\n\nDie Aussage ist wahr.",
+      "Nach versunkenem F zählt nur die laufende Konsumentenrente, nicht CS − F.\n\np = 32,5 ⇒ Q = 15, laufende CS = ½ · 37,5 · 15 = 281,25 > 0 — Nutzung läuft weiter. 281,25 − 500 ist die ex-ante-Rechnung, nicht die Entscheidung nach Versenkung. Falle: versunkenes F in die Nutzungsentscheidung mitnehmen.\n\nDie Aussage ist falsch.",
+      "Ex ante schließt an, wer CS(p) ≥ F. Mit erwartetem p = 32,5 und F = 500 scheitert der Test.\n\nCS(32,5) = 281,25 < 500 — kein Anschluss. Falle: aus späterer Nutzung nach Versenkung auf ex-ante-Zustimmung schließen.\n\nDie Aussage ist wahr.",
+      "Versunkenes F ist entscheidungsirrelevant; bindend ist nur CS aus der Nutzung.\n\nBei p = 32,5 bleibt CS = 281,25 > 0 → weiter nutzen. Falle: negativen Nettobetrag CS − F als Abbruchsignal nach Zahlung lesen.\n\nDie Aussage ist wahr.",
+      "Gesamtwohlfahrt = Konsumenten- plus Produzentenrente. Effizienter Zweitarif maximiert sie; das Mengenmonopol lässt einen Keil.\n\nZweitarif bei p = 20: Wohlfahrt 500. Mengenmonopol: MR = 70 − 5Q = 20 ⇒ Q = 10, P = 45; Wohlfahrt ½ · 25 · 10 + 25 · 10 = 375 < 500. Falle: Monopolgewinn 250 mit Gesamtwohlfahrt verwechseln.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E02",
+    "id": "WISO-M7-E02",
+    "title": "Zertifikatsbanking über zwei Perioden",
+    "subsection": "2.4",
+    "chapter": 2,
+    "difficulty_level": "5/5",
+    "context": "Zwei Perioden, ohne Banking je 37,5 Einheiten zu vermeiden. Vermeidungskosten Periode 1:\n6,25 je Einheit; Periode 2: 16,25 je Einheit. Banking erlaubt unverbrauchte Rechte aus\nPeriode 1 in Periode 2 (Diskont 0). In Periode 1 sind höchstens 55 Einheiten vermeidbar.\nGesamtvermeidung über beide Perioden bleibt 75. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Banking senkt die Gesamtkosten gegenüber dem Periodensplitt um 175.",
+      "Ohne Banking sind die Periodenkosten gleich, weil je 37,5 vermieden werden.",
+      "Kostenminimal mit Banking vermeidet Periode 1 mehr als Periode 2.",
+      "Banking macht jede Vermeidung in Periode 2 überflüssig.",
+      "Die Obergrenze 55 bindet: ohne sie läge die gesamte Vermeidung in Periode 1."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ohne Banking: 37,5 je Periode. Mit Banking: möglichst viel zur billigen Periode 1, Rest Periode 2.\n\nOhne: 37,5 · 6,25 + 37,5 · 16,25 = 234,375 + 609,375 = 843,75. Mit: 55 · 6,25 + 20 · 16,25 = 343,75 + 325 = 668,75. Differenz 175. Falle: Banking als reine Verschiebung ohne Kosteneffekt lesen.\n\nDie Aussage ist wahr.",
+      "Gleiche Mengen je Periode heißen nicht gleiche Kosten, wenn die Sätze differieren.\n\nPeriode 1: 234,375; Periode 2: 609,375 — klar ungleich. Falle: Mengenparität mit Kostenparität gleichsetzen.\n\nDie Aussage ist falsch.",
+      "Kostenminimal schöpft die billige Periode bis zur Grenze aus und lässt den teuren Rest in Periode 2.\n\nPeriode 1 vermeidet 55, Periode 2 nur 20 — also 55 > 20. Ohne Banking wäre es 37,5 / 37,5. Falle: Banking als unveränderte Mengenhalbierung fortschreiben.\n\nDie Aussage ist wahr.",
+      "Banking verschiebt Vermeidung, löscht Periode 2 nur, wenn Periode 1 die gesamten 75 tragen kann.\n\nGrenze 55 < 75 ⇒ Rest 20 · 16,25 = 325 in Periode 2. Falle: „Banking ⇒ ausschließlich Periode 1“ trotz Kapazitätsdeckel.\n\nDie Aussage ist falsch.",
+      "Ohne die 55-Grenze wäre MAC₁ über alle 75 verfügbar; Periode 2 entfiele.\n\nHypothetisch 75 · 6,25 = 468,75 < 668,75. Die 55 bindet und drückt 20 Einheiten in Periode 2. Falle: 55 als nicht knappe Verwaltungszahl streichen.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E03",
+    "id": "WISO-M7-E03",
+    "title": "Cournot gegen Kartell",
+    "subsection": "1.4",
+    "chapter": 1,
+    "difficulty_level": "5/5",
+    "context": "Zwei symmetrische Unternehmen, P = 92,5 − 2,5(Q₁ + Q₂), konstante MC = 17,5, keine Fixkosten.\nCournot: jedes maximiert gegen die Menge des anderen. Kartell: gemeinsame Monopolmenge,\nhälftig geteilt. Wettbewerbsmenge bei P = MC. Prüfen Sie auch einseitiges Abweichen vom\nKartellanteil. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Im Cournot-Gleichgewicht erzeugt jedes Unternehmen 10; der Marktpreis ist 42,5.",
+      "Das Kartell wählt die Wettbewerbsmenge und teilt sie hälftig.",
+      "Der gemeinsame Kartellgewinn übersteigt die Summe der Cournot-Gewinne.",
+      "Einseitiges Abweichen vom Kartellanteil 7,5 auf die Cournot-Beste Antwort lohnt nicht.",
+      "Die Cournot-Gesamtmenge liegt strikt zwischen Kartell- und Wettbewerbsmenge."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Beste Antwort: Qᵢ = 15 − 0,5 Qⱼ. Symmetrie liefert die Cournot-Mengen und den Preis.\n\nQ = 15 − 0,5 Q ⇒ Q = 10 je Firma, Gesamt 20. P = 92,5 − 2,5 · 20 = 42,5. Falle: Kartellmenge 15 als Cournot lesen.\n\nDie Aussage ist wahr.",
+      "Kartell maximiert den gemeinsamen Gewinn wie ein Monopol — unter der Wettbewerbsmenge.\n\nMR = 92,5 − 5Q = 17,5 ⇒ Q = 15, P = 55. Wettbewerb: P = 17,5 ⇒ Q = 30. Kartell ≠ Wettbewerb. Falle: Kartell mit vollkommenem Wettbewerb verwechseln.\n\nDie Aussage ist falsch.",
+      "Kartellgewinn gegen Summe der Cournot-Gewinne halten.\n\nCournot je (42,5 − 17,5) · 10 = 250, Summe 500. Kartell (55 − 17,5) · 15 = 562,5 > 500. Falle: höheren Kartellpreis mit kleinerem Gesamtgewinn koppeln.\n\nDie Aussage ist wahr.",
+      "Abweichungsgewinn = Beste Antwort auf Qⱼ = 7,5 gegen den Kartellanteil 281,25.\n\nBeste Antwort: 15 − 0,5 · 7,5 = 11,25. P = 92,5 − 2,5 · 18,75 = 45,625. Gewinn (45,625 − 17,5) · 11,25 = 316,40625 > 281,25 — Abweichen lohnt. Falle: Kartellstabilität ohne Abweichungstest unterstellen.\n\nDie Aussage ist falsch.",
+      "Ordne Kartell-, Cournot- und Wettbewerbsmenge; Cournot muss strikt dazwischen liegen.\n\nKartell 15 < Cournot 20 < Wettbewerb 30. Abstand je 5 zur Kartell- und 10 zur Wettbewerbsmenge. Falle: Cournot mit Kartell (15) oder Wettbewerb (30) gleichsetzen.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E04",
+    "id": "WISO-M7-E04",
+    "title": "Umsatzsteuer gegen Stücksteuer im Monopol",
+    "subsection": "1.4",
+    "chapter": 1,
+    "difficulty_level": "5/5",
+    "context": "Mengenmonopol mit P = 90 − 2,5Q, konstante MC = 15, keine Fixkosten.\nZuerst unbesteuert (Grenzerlös = MC). Dann Stücksteuer 15, die MC auf 30 hebt.\nDann Umsatzsteuer τ auf den Erlös so, dass dieselbe Monopolmenge wie unter der\nStücksteuer entsteht (MR · (1 − τ) = MC). Vergleichen Sie Preisüberwälzung und Aufkommen.\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Die Stücksteuer 15 hebt den Monopolpreis um 7,5 und senkt Q von 15 auf 12.",
+      "Die Umsatzsteuer, die dieselbe Menge 12 erzeugt, liefert dasselbe Aufkommen wie die Stücksteuer.",
+      "Bei gleicher Menge 12 ist das Umsatzsteueraufkommen doppelt so hoch wie bei der Stücksteuer.",
+      "Die Stücksteuer 15 wird voll überwälzt.",
+      "Unbesteuert gelten Q = 15 und P = 52,5."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unbesteuert MR = MC; Stücksteuer hebt MC auf 30. Überwälzung = Preisanstieg.\n\nUnbesteuert: 90 − 5Q = 15 ⇒ Q = 15, P = 52,5. Mit Stücksteuer: Q = 12, P = 60. Anstieg 7,5; Menge fällt um 3. Falle: Anstieg 15 erwarten.\n\nDie Aussage ist wahr.",
+      "Gleiche Menge heißt nicht gleiches Aufkommen: Stück × Q gegen τ · P · Q.\n\nStück: 15 · 12 = 180. Für Q = 12 muss MR = 30 = 15 / (1 − τ) ⇒ τ = 0,5. Umsatzsteuer: 0,5 · 60 · 12 = 360 ≠ 180. Falle: Mengengleichheit mit Aufkommensgleichheit gleichsetzen.\n\nDie Aussage ist falsch.",
+      "Aufkommen bei gleicher Menge: Stücksteuer × Q gegen τ · P · Q.\n\nStück: 15 · 12 = 180. Umsatzsteuer: 0,5 · 60 · 12 = 360. Quotient genau 2. Falle: τ = 0,5 als „halbes“ Aufkommen oder als Aufkommensgleichheit lesen.\n\nDie Aussage ist wahr.",
+      "Volle Überwälzung hieße Preisanstieg um die gesamte Stücksteuer 15.\n\nUnbesteuert P = 52,5; mit Steuer P = 60; Anstieg 7,5 ≠ 15. Falle: neuen Preis als 52,5 + 15 = 67,5 legen.\n\nDie Aussage ist falsch.",
+      "Unbesteuertes Mengenmonopol setzt Grenzerlös gleich MC.\n\n90 − 5Q = 15 ⇒ Q = 15, P = 90 − 2,5 · 15 = 52,5. Falle: Wettbewerbsmenge (90 − 15) / 2,5 = 30 als Monopolausgangsmenge lesen.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E05",
+    "id": "WISO-M7-E05",
+    "title": "Vorratsabschreibung und Liquiditätscovenant",
+    "subsection": "3.4",
+    "chapter": 3,
+    "difficulty_level": "5/5",
+    "context": "Vorräte stehen zu 287,5 zu Buche. Eine außerplanmäßige Abschreibung setzt sie auf 198,75\nherunter (Abschreibung 88,75). Übriges Umlaufvermögen 142,5, kurzfristige Schulden 165\nbleiben gleich. Kreditklausel: Liquiditätsquote (Vorräte + übriges UV) / kurzfristige\nSchulden ≥ 2,35. Bonusvertrag: Zahlung nur wenn ausgewiesener Periodengewinn > 120;\nGewinn vor Abschreibung 156,25. Beide Klauseln gleichzeitig prüfen. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Vor der Abschreibung hält die Liquiditätsquote; danach bricht sie.",
+      "Die Abschreibung 88,75 senkt Umlaufvermögen und Periodengewinn um denselben Betrag.",
+      "Ohne Abschreibung läge die Quote bereits unter 2,35.",
+      "Der Bonus fällt durch die Abschreibung aus, der Kreditvertrag bleibt trotzdem erfüllt.",
+      "Weil die kurzfristigen Schulden gleich bleiben, ändert die Abschreibung die Quote nicht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Quote = (Vorräte + übriges UV) / 165 gegen Schwelle 2,35; nur die Vorräte ändern sich.\n\nVorher: (287,5 + 142,5) / 165 = 430 / 165 ≈ 2,606 ≥ 2,35. Nachher: 341,25 / 165 = 2,068… < 2,35. Falle: Abschreibung nur als Gewinnbuchung ohne UV-Effekt lesen.\n\nDie Aussage ist wahr.",
+      "Außerplanmäßige Vorratsabschreibung entlastet die Aktivseite und den Periodengewinn parallel.\n\nUV −88,75 und Gewinn 156,25 − 88,75 = 67,5 — dieselbe 88,75. Falle: Abschreibung nur auf einer der beiden Größen verbuchen.\n\nDie Aussage ist wahr.",
+      "Ohne Abschreibung gilt die Quote mit unverminderten Vorräten 287,5.\n\n(287,5 + 142,5) / 165 ≈ 2,606 ≥ 2,35 — klar über der Schwelle. Falle: die gebrochene Nach-Abschreibungsquote 2,068 rückwärts als Ausgangslage lesen.\n\nDie Aussage ist falsch.",
+      "Bonus und Kredit sind getrennt zu prüfen; „trotzdem erfüllt“ verlangt Quote ≥ 2,35 nach Abschreibung.\n\nGewinn nachher 67,5 ≤ 120 → Bonus aus. Quote ≈ 2,068 < 2,35 → Kredit bricht ebenfalls. Falle: nur den Bonuspfad aktualisieren.\n\nDie Aussage ist falsch.",
+      "Gleicher Nenner macht die Quote nicht invariant; der Zähler fällt mit den Vorräten.\n\nZähler 430 → 341,25 bei Nenner 165. Falle: stabile Schulden mit stabiler Quote verwechseln.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E06",
+    "id": "WISO-M7-E06",
+    "title": "Öffentliches Gut mit Erfolgsrabatt",
+    "subsection": "2.5",
+    "chapter": 2,
+    "difficulty_level": "5/5",
+    "context": "Öffentliches Gut G kostet 52,5 und stiftet zwei Personen je 33,75 Nutzen; niemand ist\nausschließbar. Jede kann 26,25 beitragen. Ohne Rabatt: ein Solo-Beitrag ist verloren,\nwenn 52,5 fehlen. Mit Erfolgsrabatt: kommen beide Beiträge zusammen, erhält jede 8,75\nzurück; scheitert die Summe, bleibt der Solo-Beitrag verloren und es gibt keinen Rabatt.\nZusätzlich Gut H zu Kosten 27,5 mit Einzelnutzen 33,75. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Ohne Rabatt sind „beide zahlen“ und „niemand zahlt“ Gleichgewichte.",
+      "Mit Erfolgsrabatt erhält eine Solo-Zahlerin 8,75 zurück, wenn die andere nicht zahlt.",
+      "G ist zusammen vorteilhaft; eine Person allein kauft zum vollen Preis nicht.",
+      "Der Erfolgsrabatt beseitigt das Gleichgewicht „niemand zahlt“.",
+      "H wird allein gekauft — ohne Rabatt und ohne zweite Person."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ohne Rabatt verliert Solo den Beitrag 26,25, wenn 52,5 fehlen. Gleichgewicht: keine einseitige Abweichung.\n\nBeide zahlen: Netto 33,75 − 26,25 = +7,5; Abweichen zerstört G. Niemand zahlt: Solo −26,25 ohne G. Beide Profile Nash. Falle: nur das effiziente Profil als Gleichgewicht zählen.\n\nDie Aussage ist wahr.",
+      "Erfolgsrabatt greift nur, wenn beide Beiträge die 52,5 erreichen — nicht bei Solo.\n\nSolo und Summe fehlt: Verlust 26,25, Rabatt 0. Falle: Erfolgsrabatt wie eine Misserfolgs-Erstattung lesen.\n\nDie Aussage ist falsch.",
+      "Zusammen: Summe Nutzen ≥ Kosten. Allein: Einzelnutzen < volle Kosten 52,5.\n\nZusammen: 67,5 − 52,5 = 15 > 0. Allein: 33,75 < 52,5 (Lücke 18,75). Falle: gesellschaftlichen Vorteil mit Solo-Kauf gleichsetzen.\n\nDie Aussage ist wahr.",
+      "Erfolgsrabatt verbessert „beide zahlen“, löscht aber nicht das Solo-Risiko ohne Erstattung.\n\nNiemand zahlt bleibt EQ: einseitiges Zahlen verliert weiter 26,25 ohne Rabatt. Falle: Erfolgsrabatt mit Misserfolgs-Erstattung verwechseln, die Solo risikofrei macht.\n\nDie Aussage ist falsch.",
+      "H kostet 27,5 bei Einzelnutzen 33,75 — allein beschaffbar, ohne zweite Person und ohne Rabatt.\n\n33,75 − 27,5 = 6,25 > 0. Gegenprobe G: 33,75 < 52,5. Falle: H dem Beitragsdilemma von G unterwerfen.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E07",
+    "id": "WISO-M7-E07",
+    "title": "Versicherung mit Selbstbeteiligung",
+    "subsection": "3.2",
+    "chapter": 3,
+    "difficulty_level": "5/5",
+    "context": "Risikoneutrale Person, Vermögen 625. Schaden 250 mit Wahrscheinlichkeit 0,3.\nPolice A: volle Deckung, Prämie 78,75 (fair wären 75; Ladezuschlag 3,75).\nPolice B: Selbstbeteiligung 62,5, Auszahlung im Schadenfall 187,5, Prämie fair 56,25.\nVergleichen Sie erwartetes Endvermögen, Schadenfall unter B und Indifferenz bei fairer\nVollpolice. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Für Risikoneutrale schlägt Police B die geladene Vollpolice A.",
+      "Die faire Vollprämie wäre 75; die geladene 78,75 drückt das sichere Endvermögen unter 550.",
+      "Unter Police B beträgt das Endvermögen im Schadenfall 506,25.",
+      "Zwischen fairer Vollpolice und fairer Selbstbeteiligung sind Risikoneutrale indifferent.",
+      "Die Selbstbeteiligung 62,5 treibt die Prämie über die geladene Vollprämie 78,75."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Risikoneutrale maximieren erwartetes Endvermögen; A sichert 625 − 78,75, B mischt zwei Zustände.\n\nA: 546,25. B: 0,7 · (625 − 56,25) + 0,3 · (625 − 56,25 − 62,5) = 0,7 · 568,75 + 0,3 · 506,25 = 550 > 546,25. Falle: jede Vollpolice als dominant lesen.\n\nDie Aussage ist wahr.",
+      "Faire Vollprämie = Eintrittswahrscheinlichkeit × Schaden = 0,3 · 250 = 75. Geladen wird 78,75.\n\nMit fair 75: sicheres Endvermögen 550. Mit 78,75: 546,25 < 550 — der Zuschlag 3,75 drückt unter 550. Falle: Ladezuschlag als entscheidungsirrelevant streichen.\n\nDie Aussage ist wahr.",
+      "Schadenfall B: Vermögen minus Prämie minus Selbstbeteiligung.\n\n625 − 56,25 − 62,5 = 506,25. Falle: nur Prämie abziehen (568,75) oder Auszahlung 187,5 mit Endvermögen verwechseln.\n\nDie Aussage ist wahr.",
+      "Fair voll und fair mit Selbstbeteiligung haben dieselbe Erwartung, wenn keine Risikoaversion belohnt wird.\n\nFair voll: 625 − 75 = 550. Fair B: 550. Indifferenz. Falle: Selbstbeteiligung als streng besser für Risikoneutrale lesen.\n\nDie Aussage ist wahr.",
+      "Selbstbeteiligung kürzt die Auszahlung und damit die faire Prämie, statt sie zu erhöhen.\n\nPrämie B = 0,3 · 187,5 = 56,25 < geladene Vollprämie 78,75 (und auch < fair 75). Falle: Selbstbeteiligung mit Prämienaufschlag verwechseln.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E08",
+    "id": "WISO-M7-E08",
+    "title": "Verrechnungspreis bei Kapazitätsgrenze",
+    "subsection": "4.1",
+    "chapter": 4,
+    "difficulty_level": "5/5",
+    "context": "Bereich A fertigt ein Zwischenprodukt: variable Kosten 18,75, Kapazität 40 Stück.\nExternverkauf zu 45, externe Nachfrage höchstens 18. Bereich B braucht 30 Stück und kann\nam Markt zu 39,5 kaufen. Opportunitätskosten entstehen nur, soweit Internlieferung\nExternverkäufe verdrängt. Vergleichen Sie kostenminimale Mischung, Voll-Internlieferung\nund reinen Marktbezug. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Kostenminimal verkauft A 18 extern und liefert 22 intern; B kauft 8 am Markt.",
+      "Alle 30 intern zu liefern ist günstiger, weil die Kapazität 40 ≥ 30 reicht.",
+      "Die 22 Internstücke im Optimum tragen keine Extern-Opportunitätskosten.",
+      "Voll-Internlieferung von 30 verdrängt 8 Externverkäufe gegenüber dem Optimum.",
+      "Reiner Marktbezug aller 30 durch B zu 39,5 ist teurer als das Optimum."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Externbeitrag 45 − 18,75 = 26,25 > 0, also zuerst externe Nachfrage 18 bedienen; Restkapazität 22 intern; Fehlmenge 8 am Markt.\n\n18 extern + 22 intern + 8 · 39,5. Falle: Internbedarf 30 vor Extern rangieren, nur weil B „intern“ heißt.\n\nDie Aussage ist wahr.",
+      "Kapazität ≥ Internbedarf heißt nicht, dass Voll-Intern die Opportunitätskosten der verdrängten Externverkäufe schlägt.\n\nVoll-Intern: 30 intern + 10 extern (statt 18). Zusätzliche Beschaffungskosten gegen Optimum: statt 8 · 39,5 intern zu 18,75 zu legen und 8 Externbeiträge zu verlieren — effektiv teurer (verlorener Beitrag 8 · 26,25 = 210). Falle: freie Restplätze 10 als Beweis für Voll-Intern lesen.\n\nDie Aussage ist falsch.",
+      "Nach Ausschöpfen der 18 Externplätze verdrängt zusätzliches Intern nichts mehr; VC 18,75 sind relevant.\n\n22 · 18,75 = 412,5 ohne Opportunitätszuschlag. Falle: auf alle Internstücke den Externpreis 45 legen.\n\nDie Aussage ist wahr.",
+      "Optimum: 18 Extern. Voll-Intern lässt nur 10 Extern → Differenz 8 verdrängte Verkäufe.\n\n8 · (45 − 18,75) = 210 Opportunitätsverlust. Falle: „Kapazität 40 reicht, also keine Verdrängung“.\n\nDie Aussage ist wahr.",
+      "Reiner Marktbezug: 30 · 39,5 = 1.185. Optimum beschafft 22 intern zu 18,75 und 8 zu 39,5 = 412,5 + 316 = 728,5 und behält 18 Externbeiträge.\n\n1.185 > 728,5 — Marktbezug teurer. Falle: Marktpreis 39,5 < Externpreis 45 als Signal für Voll-Marktbezug lesen.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E09",
+    "id": "WISO-M7-E09",
+    "title": "Abbruch- gegen Erweiterungsoption",
+    "subsection": "3.3",
+    "chapter": 3,
+    "difficulty_level": "5/5",
+    "context": "Irreversible Startkosten heute 125. Danach zwei Zustände (Werte schon auf heute bezogen):\nStark mit 0,55 — Fortführung 150; Erweiterung mit Zusatzinvest 40 liefert Gesamtwert 210\n(netto 170 nach Invest); Liquidation 80. Schwach mit 0,45 — Fortführung 60; Liquidation 80;\nErweiterung lieferte nach Invest nur 50. Ohne Flexibilität wird immer fortgeführt.\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Ohne Flexibilität ist der NPV negativ.",
+      "Nur die Abbruchoption reicht bereits für einen positiven NPV.",
+      "Nur die Erweiterungsoption allein lässt den NPV negativ.",
+      "Abbruch und Erweiterung zusammen machen den NPV positiv.",
+      "Im schwachen Zustand wird erweitert, weil 50 über der Liquidation 80 liegt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ohne Flexibilität: Erwartung der Fortführungswerte minus Startkosten 125.\n\n0,55 · 150 + 0,45 · 60 − 125 = 82,5 + 27 − 125 = −15,5 < 0. Falle: positiven Stark-Zweig 150 schon als Projektfreigabe lesen oder Startkosten als versunken ignorieren.\n\nDie Aussage ist wahr.",
+      "Nur Abbruch: schwach liquidieren (80), stark fortführen (150) — ohne Erweiterung.\n\n0,55 · 150 + 0,45 · 80 − 125 = 82,5 + 36 − 125 = −6,5 < 0. Die Option hebt um 9 gegenüber starr (−15,5), reicht aber nicht über null. Falle: Abbruchwert 80 als ausreichende Rettung lesen.\n\nDie Aussage ist falsch.",
+      "Nur Erweiterung: stark auf netto 170 heben, schwach weiter fortführen (60).\n\n0,55 · 170 + 0,45 · 60 − 125 = 93,5 + 27 − 125 = −4,5 < 0. Falle: Netto 170 im Stark-Zweig oder den isolierten Erweiterungsgewinn 20 als Gesamt-NPV lesen.\n\nDie Aussage ist wahr.",
+      "Beide Optionen: stark erweitern (170), schwach liquidieren (80).\n\n0,55 · 170 + 0,45 · 80 − 125 = 93,5 + 36 − 125 = 4,5 > 0. Erst die Kombination dreht das Vorzeichen. Falle: aus negativem Starren-Plan auf Wertlosigkeit beider Optionen schließen.\n\nDie Aussage ist wahr.",
+      "Im schwachen Zustand maximiert man über Fortführung 60, Liquidation 80 und Erweiterung netto 50.\n\n80 > 60 > 50 — liquidieren, nicht erweitern. Die Aussage dreht den Vergleich 50 gegen 80 um. Falle: Bruttowert vor Invest mit Liquidation vergleichen.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M7-E10",
+    "id": "WISO-M7-E10",
+    "title": "Stille Gesellschaft gegen GmbH-Bürgschaft",
+    "subsection": "3.1",
+    "chapter": 3,
+    "difficulty_level": "5/5",
+    "context": "Gesellschaft schuldet Gläubiger A 95.000. Im Gesellschaftsvermögen liegen 41.250.\nStiller Gesellschafter S hat seine Einlage 22.500 voll geleistet und haftet Gläubigern\nnicht darüber hinaus. GmbH-Gesellschafter G hat eine Bürgschaft mit Obergrenze 35.000\nübernommen; davon sind bereits 8.750 für einen anderen Gläubiger verbraucht.\nVergleichspfad: dieselbe Schuld in einer OHG, in der S zusätzlich Privatvermögen 19.500\nunbeschränkt einsetzt. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Nach Verwertung des Gesellschaftsvermögens bleibt eine Lücke von 53.750.",
+      "Stiller Gesellschafter S haftet A für die Restlücke unbeschränkt mit Privatvermögen.",
+      "Der freie Bürgschaftsrest des G verkürzt die Lücke auf 27.500, schließt sie aber nicht.",
+      "In der OHG-Variante mit Privatvermögen S = 19.500 wäre die Schuld nach Firmenvermögen und diesem Privatvermögen vollständig gedeckt.",
+      "Der freie Bürgschaftsrest 26.250 deckt streng mehr von der Lücke als das OHG-Privatvermögen 19.500 des S."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Lücke = Schuld minus Gesellschaftsvermögen, bevor Personenhaftung oder Bürgschaft geprüft wird.\n\n95.000 − 41.250 = 53.750. Falle: die schon geleistete Stilleinlage 22.500 zusätzlich vom Firmenvermögen abziehen oder die Bürgschaft vor der Lückenbildung einrechnen.\n\nDie Aussage ist wahr.",
+      "Typische stille Gesellschaft: Haftung gegenüber Gesellschaftsgläubigern auf die geleistete Einlage begrenzt — hier bereits voll gezahlt.\n\nS gibt A keinen Zugriff auf weiteres Privatvermögen. Falle: Stillen wie OHG-Gesellschafter unbeschränkt haften lassen.\n\nDie Aussage ist falsch.",
+      "Freier Bürgschaftsrest = Obergrenze minus Vorbelastung; danach Restlücke prüfen.\n\n35.000 − 8.750 = 26.250. Lücke nach Bürgschaft: 53.750 − 26.250 = 27.500 > 0. Falle: volle Obergrenze 35.000 ohne Vorbelastung ansetzen (gäbe Rest 18.750).\n\nDie Aussage ist wahr.",
+      "OHG-Pfad: Firmenvermögen plus Privatvermögen S gegen die volle Schuld.\n\n41.250 + 19.500 = 60.750 < 95.000 — Restlücke 34.250, nicht voll gedeckt. Falle: Privatvermögen mit der Lücke 53.750 statt mit der Bruttoschuld verrechnen und „gedeckt“ lesen.\n\nDie Aussage ist falsch.",
+      "Vergleich der beiden Haftungsblöcke betragsmäßig gegen dieselbe Lücke.\n\nFreier Bürgschaftsrest 26.250 > OHG-Privatvermögen 19.500. Falle: Vorbelastung 8.750 doppelt vom Rest abziehen oder 35.000 mit 19.500 vergleichen.\n\nDie Aussage ist wahr."
+    ]
+  }
+]
