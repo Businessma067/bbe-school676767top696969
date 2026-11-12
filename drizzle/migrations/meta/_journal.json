@@ -71,6 +71,13 @@
       "when": 1794274979613,
       "tag": "0009_restrict_self_service_enrollments_to_demo",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1794484800000,
+      "tag": "0010_studyguide_promo",
+      "breakpoints": true
     }
   ]
 }

@@ -6,6 +6,7 @@ export const ACCOUNT_LIMITED_DISCOUNT_CODES = {
   STUDYLINE: { discountPct: 5, name: "Studyline" },
   VSTUPUNI: { discountPct: 10, name: "Vstup Uni" },
   STARTSTUDY: { discountPct: 10, name: "Start Study" },
+  STUDYGUIDE: { discountPct: 10, name: "Study Guide" },
 } as const;
 
 export type AccountLimitedDiscountCode = keyof typeof ACCOUNT_LIMITED_DISCOUNT_CODES;
