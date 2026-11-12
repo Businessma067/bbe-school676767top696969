@@ -1,0 +1,1084 @@
+{
+  "economics": [
+    {
+      "case_id": "WISO-M7-E01",
+      "id": "WISO-M7-E01",
+      "title": "Zweitarif mit versunkenem Zähler",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "5/5",
+      "context": "Lineare Nachfrage P = 70 − 2,5Q, konstante Grenzkosten MC = 20, keine Produktionsfixkosten.\nZweitarif: Nutzungspreis p und einmaliger Zähler F. Effizienter Tarif setzt p = MC = 20\nund schöpft die Konsumentenrente mit F ab. Nach Zahlung ist F versunken; der Anbieter\nkann p auf 32,5 anheben. Vergleichen Sie effizienten Zweitarif, nachträgliche Anhebung,\nex-ante-Anschluss und einfaches Mengenmonopol. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Bei p = 20 und F = 500 ist die Menge effizient; die gesamte Rente liegt beim Anbieter.",
+        "Nach Anhebung auf 32,5 stellt der Konsument die Nutzung ein, weil 281,25 − 500 < 0.",
+        "Wird die Anhebung auf 32,5 ex ante erwartet und F = 500 verlangt, kommt kein Anschluss zustande.",
+        "Der versunkene Zähler hält die Nutzung bei p = 32,5 aufrecht, solange die laufende Rente positiv ist.",
+        "Das einfache Mengenmonopol erzeugt mehr Gesamtwohlfahrt als der effiziente Zweitarif."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Effizienter Nutzungspreis gleich MC; F schöpft die Konsumentenrente bei diesem Preis ab.\n\np = 20 ⇒ Q = (70 − 20) / 2,5 = 20. CS = ½ · 50 · 20 = 500 = F. Gesamtrente 500 liegt beim Anbieter; Menge = First-Best. Falle: F als Produktionsfixkosten zu lesen.\n\nDie Aussage ist wahr.",
+        "Nach versunkenem F zählt nur die laufende Konsumentenrente, nicht CS − F.\n\np = 32,5 ⇒ Q = 15, laufende CS = ½ · 37,5 · 15 = 281,25 > 0 — Nutzung läuft weiter. 281,25 − 500 ist die ex-ante-Rechnung, nicht die Entscheidung nach Versenkung. Falle: versunkenes F in die Nutzungsentscheidung mitnehmen.\n\nDie Aussage ist falsch.",
+        "Ex ante schließt an, wer CS(p) ≥ F. Mit erwartetem p = 32,5 und F = 500 scheitert der Test.\n\nCS(32,5) = 281,25 < 500 — kein Anschluss. Falle: aus späterer Nutzung nach Versenkung auf ex-ante-Zustimmung schließen.\n\nDie Aussage ist wahr.",
+        "Versunkenes F ist entscheidungsirrelevant; bindend ist nur CS aus der Nutzung.\n\nBei p = 32,5 bleibt CS = 281,25 > 0 → weiter nutzen. Falle: negativen Nettobetrag CS − F als Abbruchsignal nach Zahlung lesen.\n\nDie Aussage ist wahr.",
+        "Gesamtwohlfahrt = Konsumenten- plus Produzentenrente. Effizienter Zweitarif maximiert sie; das Mengenmonopol lässt einen Keil.\n\nZweitarif bei p = 20: Wohlfahrt 500. Mengenmonopol: MR = 70 − 5Q = 20 ⇒ Q = 10, P = 45; Wohlfahrt ½ · 25 · 10 + 25 · 10 = 375 < 500. Falle: Monopolgewinn 250 mit Gesamtwohlfahrt verwechseln.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E02",
+      "id": "WISO-M7-E02",
+      "title": "Zertifikatsbanking über zwei Perioden",
+      "subsection": "2.4",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Zwei Perioden, ohne Banking je 37,5 Einheiten zu vermeiden. Vermeidungskosten Periode 1:\n6,25 je Einheit; Periode 2: 16,25 je Einheit. Banking erlaubt unverbrauchte Rechte aus\nPeriode 1 in Periode 2 (Diskont 0). In Periode 1 sind höchstens 55 Einheiten vermeidbar.\nGesamtvermeidung über beide Perioden bleibt 75. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Banking senkt die Gesamtkosten gegenüber dem Periodensplitt um 175.",
+        "Ohne Banking sind die Periodenkosten gleich, weil je 37,5 vermieden werden.",
+        "Kostenminimal mit Banking vermeidet Periode 1 mehr als Periode 2.",
+        "Banking macht jede Vermeidung in Periode 2 überflüssig.",
+        "Die Obergrenze 55 bindet: ohne sie läge die gesamte Vermeidung in Periode 1."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Ohne Banking: 37,5 je Periode. Mit Banking: möglichst viel zur billigen Periode 1, Rest Periode 2.\n\nOhne: 37,5 · 6,25 + 37,5 · 16,25 = 234,375 + 609,375 = 843,75. Mit: 55 · 6,25 + 20 · 16,25 = 343,75 + 325 = 668,75. Differenz 175. Falle: Banking als reine Verschiebung ohne Kosteneffekt lesen.\n\nDie Aussage ist wahr.",
+        "Gleiche Mengen je Periode heißen nicht gleiche Kosten, wenn die Sätze differieren.\n\nPeriode 1: 234,375; Periode 2: 609,375 — klar ungleich. Falle: Mengenparität mit Kostenparität gleichsetzen.\n\nDie Aussage ist falsch.",
+        "Kostenminimal schöpft die billige Periode bis zur Grenze aus und lässt den teuren Rest in Periode 2.\n\nPeriode 1 vermeidet 55, Periode 2 nur 20 — also 55 > 20. Ohne Banking wäre es 37,5 / 37,5. Falle: Banking als unveränderte Mengenhalbierung fortschreiben.\n\nDie Aussage ist wahr.",
+        "Banking verschiebt Vermeidung, löscht Periode 2 nur, wenn Periode 1 die gesamten 75 tragen kann.\n\nGrenze 55 < 75 ⇒ Rest 20 · 16,25 = 325 in Periode 2. Falle: „Banking ⇒ ausschließlich Periode 1“ trotz Kapazitätsdeckel.\n\nDie Aussage ist falsch.",
+        "Ohne die 55-Grenze wäre MAC₁ über alle 75 verfügbar; Periode 2 entfiele.\n\nHypothetisch 75 · 6,25 = 468,75 < 668,75. Die 55 bindet und drückt 20 Einheiten in Periode 2. Falle: 55 als nicht knappe Verwaltungszahl streichen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E03",
+      "id": "WISO-M7-E03",
+      "title": "Cournot gegen Kartell",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "5/5",
+      "context": "Zwei symmetrische Unternehmen, P = 92,5 − 2,5(Q₁ + Q₂), konstante MC = 17,5, keine Fixkosten.\nCournot: jedes maximiert gegen die Menge des anderen. Kartell: gemeinsame Monopolmenge,\nhälftig geteilt. Wettbewerbsmenge bei P = MC. Prüfen Sie auch einseitiges Abweichen vom\nKartellanteil. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Im Cournot-Gleichgewicht erzeugt jedes Unternehmen 10; der Marktpreis ist 42,5.",
+        "Das Kartell wählt die Wettbewerbsmenge und teilt sie hälftig.",
+        "Der gemeinsame Kartellgewinn übersteigt die Summe der Cournot-Gewinne.",
+        "Einseitiges Abweichen vom Kartellanteil 7,5 auf die Cournot-Beste Antwort lohnt nicht.",
+        "Die Cournot-Gesamtmenge liegt strikt zwischen Kartell- und Wettbewerbsmenge."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Beste Antwort: Qᵢ = 15 − 0,5 Qⱼ. Symmetrie liefert die Cournot-Mengen und den Preis.\n\nQ = 15 − 0,5 Q ⇒ Q = 10 je Firma, Gesamt 20. P = 92,5 − 2,5 · 20 = 42,5. Falle: Kartellmenge 15 als Cournot lesen.\n\nDie Aussage ist wahr.",
+        "Kartell maximiert den gemeinsamen Gewinn wie ein Monopol — unter der Wettbewerbsmenge.\n\nMR = 92,5 − 5Q = 17,5 ⇒ Q = 15, P = 55. Wettbewerb: P = 17,5 ⇒ Q = 30. Kartell ≠ Wettbewerb. Falle: Kartell mit vollkommenem Wettbewerb verwechseln.\n\nDie Aussage ist falsch.",
+        "Kartellgewinn gegen Summe der Cournot-Gewinne halten.\n\nCournot je (42,5 − 17,5) · 10 = 250, Summe 500. Kartell (55 − 17,5) · 15 = 562,5 > 500. Falle: höheren Kartellpreis mit kleinerem Gesamtgewinn koppeln.\n\nDie Aussage ist wahr.",
+        "Abweichungsgewinn = Beste Antwort auf Qⱼ = 7,5 gegen den Kartellanteil 281,25.\n\nBeste Antwort: 15 − 0,5 · 7,5 = 11,25. P = 92,5 − 2,5 · 18,75 = 45,625. Gewinn (45,625 − 17,5) · 11,25 = 316,40625 > 281,25 — Abweichen lohnt. Falle: Kartellstabilität ohne Abweichungstest unterstellen.\n\nDie Aussage ist falsch.",
+        "Ordne Kartell-, Cournot- und Wettbewerbsmenge; Cournot muss strikt dazwischen liegen.\n\nKartell 15 < Cournot 20 < Wettbewerb 30. Abstand je 5 zur Kartell- und 10 zur Wettbewerbsmenge. Falle: Cournot mit Kartell (15) oder Wettbewerb (30) gleichsetzen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E04",
+      "id": "WISO-M7-E04",
+      "title": "Umsatzsteuer gegen Stücksteuer im Monopol",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "5/5",
+      "context": "Mengenmonopol mit P = 90 − 2,5Q, konstante MC = 15, keine Fixkosten.\nZuerst unbesteuert (Grenzerlös = MC). Dann Stücksteuer 15, die MC auf 30 hebt.\nDann Umsatzsteuer τ auf den Erlös so, dass dieselbe Monopolmenge wie unter der\nStücksteuer entsteht (MR · (1 − τ) = MC). Vergleichen Sie Preisüberwälzung und Aufkommen.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Stücksteuer 15 hebt den Monopolpreis um 7,5 und senkt Q von 15 auf 12.",
+        "Die Umsatzsteuer, die dieselbe Menge 12 erzeugt, liefert dasselbe Aufkommen wie die Stücksteuer.",
+        "Bei gleicher Menge 12 ist das Umsatzsteueraufkommen doppelt so hoch wie bei der Stücksteuer.",
+        "Die Stücksteuer 15 wird voll überwälzt.",
+        "Unbesteuert gelten Q = 15 und P = 52,5."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Unbesteuert MR = MC; Stücksteuer hebt MC auf 30. Überwälzung = Preisanstieg.\n\nUnbesteuert: 90 − 5Q = 15 ⇒ Q = 15, P = 52,5. Mit Stücksteuer: Q = 12, P = 60. Anstieg 7,5; Menge fällt um 3. Falle: Anstieg 15 erwarten.\n\nDie Aussage ist wahr.",
+        "Gleiche Menge heißt nicht gleiches Aufkommen: Stück × Q gegen τ · P · Q.\n\nStück: 15 · 12 = 180. Für Q = 12 muss MR = 30 = 15 / (1 − τ) ⇒ τ = 0,5. Umsatzsteuer: 0,5 · 60 · 12 = 360 ≠ 180. Falle: Mengengleichheit mit Aufkommensgleichheit gleichsetzen.\n\nDie Aussage ist falsch.",
+        "Aufkommen bei gleicher Menge: Stücksteuer × Q gegen τ · P · Q.\n\nStück: 15 · 12 = 180. Umsatzsteuer: 0,5 · 60 · 12 = 360. Quotient genau 2. Falle: τ = 0,5 als „halbes“ Aufkommen oder als Aufkommensgleichheit lesen.\n\nDie Aussage ist wahr.",
+        "Volle Überwälzung hieße Preisanstieg um die gesamte Stücksteuer 15.\n\nUnbesteuert P = 52,5; mit Steuer P = 60; Anstieg 7,5 ≠ 15. Falle: neuen Preis als 52,5 + 15 = 67,5 legen.\n\nDie Aussage ist falsch.",
+        "Unbesteuertes Mengenmonopol setzt Grenzerlös gleich MC.\n\n90 − 5Q = 15 ⇒ Q = 15, P = 90 − 2,5 · 15 = 52,5. Falle: Wettbewerbsmenge (90 − 15) / 2,5 = 30 als Monopolausgangsmenge lesen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E05",
+      "id": "WISO-M7-E05",
+      "title": "Vorratsabschreibung und Liquiditätscovenant",
+      "subsection": "3.4",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Vorräte stehen zu 287,5 zu Buche. Eine außerplanmäßige Abschreibung setzt sie auf 198,75\nherunter (Abschreibung 88,75). Übriges Umlaufvermögen 142,5, kurzfristige Schulden 165\nbleiben gleich. Kreditklausel: Liquiditätsquote (Vorräte + übriges UV) / kurzfristige\nSchulden ≥ 2,35. Bonusvertrag: Zahlung nur wenn ausgewiesener Periodengewinn > 120;\nGewinn vor Abschreibung 156,25. Beide Klauseln gleichzeitig prüfen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Vor der Abschreibung hält die Liquiditätsquote; danach bricht sie.",
+        "Die Abschreibung 88,75 senkt Umlaufvermögen und Periodengewinn um denselben Betrag.",
+        "Ohne Abschreibung läge die Quote bereits unter 2,35.",
+        "Der Bonus fällt durch die Abschreibung aus, der Kreditvertrag bleibt trotzdem erfüllt.",
+        "Weil die kurzfristigen Schulden gleich bleiben, ändert die Abschreibung die Quote nicht."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Quote = (Vorräte + übriges UV) / 165 gegen Schwelle 2,35; nur die Vorräte ändern sich.\n\nVorher: (287,5 + 142,5) / 165 = 430 / 165 ≈ 2,606 ≥ 2,35. Nachher: 341,25 / 165 = 2,068… < 2,35. Falle: Abschreibung nur als Gewinnbuchung ohne UV-Effekt lesen.\n\nDie Aussage ist wahr.",
+        "Außerplanmäßige Vorratsabschreibung entlastet die Aktivseite und den Periodengewinn parallel.\n\nUV −88,75 und Gewinn 156,25 − 88,75 = 67,5 — dieselbe 88,75. Falle: Abschreibung nur auf einer der beiden Größen verbuchen.\n\nDie Aussage ist wahr.",
+        "Ohne Abschreibung gilt die Quote mit unverminderten Vorräten 287,5.\n\n(287,5 + 142,5) / 165 ≈ 2,606 ≥ 2,35 — klar über der Schwelle. Falle: die gebrochene Nach-Abschreibungsquote 2,068 rückwärts als Ausgangslage lesen.\n\nDie Aussage ist falsch.",
+        "Bonus und Kredit sind getrennt zu prüfen; „trotzdem erfüllt“ verlangt Quote ≥ 2,35 nach Abschreibung.\n\nGewinn nachher 67,5 ≤ 120 → Bonus aus. Quote ≈ 2,068 < 2,35 → Kredit bricht ebenfalls. Falle: nur den Bonuspfad aktualisieren.\n\nDie Aussage ist falsch.",
+        "Gleicher Nenner macht die Quote nicht invariant; der Zähler fällt mit den Vorräten.\n\nZähler 430 → 341,25 bei Nenner 165. Falle: stabile Schulden mit stabiler Quote verwechseln.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E06",
+      "id": "WISO-M7-E06",
+      "title": "Öffentliches Gut mit Erfolgsrabatt",
+      "subsection": "2.5",
+      "chapter": 2,
+      "difficulty_level": "5/5",
+      "context": "Öffentliches Gut G kostet 52,5 und stiftet zwei Personen je 33,75 Nutzen; niemand ist\nausschließbar. Jede kann 26,25 beitragen. Ohne Rabatt: ein Solo-Beitrag ist verloren,\nwenn 52,5 fehlen. Mit Erfolgsrabatt: kommen beide Beiträge zusammen, erhält jede 8,75\nzurück; scheitert die Summe, bleibt der Solo-Beitrag verloren und es gibt keinen Rabatt.\nZusätzlich Gut H zu Kosten 27,5 mit Einzelnutzen 33,75. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Ohne Rabatt sind „beide zahlen“ und „niemand zahlt“ Gleichgewichte.",
+        "Mit Erfolgsrabatt erhält eine Solo-Zahlerin 8,75 zurück, wenn die andere nicht zahlt.",
+        "G ist zusammen vorteilhaft; eine Person allein kauft zum vollen Preis nicht.",
+        "Der Erfolgsrabatt beseitigt das Gleichgewicht „niemand zahlt“.",
+        "H wird allein gekauft — ohne Rabatt und ohne zweite Person."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Ohne Rabatt verliert Solo den Beitrag 26,25, wenn 52,5 fehlen. Gleichgewicht: keine einseitige Abweichung.\n\nBeide zahlen: Netto 33,75 − 26,25 = +7,5; Abweichen zerstört G. Niemand zahlt: Solo −26,25 ohne G. Beide Profile Nash. Falle: nur das effiziente Profil als Gleichgewicht zählen.\n\nDie Aussage ist wahr.",
+        "Erfolgsrabatt greift nur, wenn beide Beiträge die 52,5 erreichen — nicht bei Solo.\n\nSolo und Summe fehlt: Verlust 26,25, Rabatt 0. Falle: Erfolgsrabatt wie eine Misserfolgs-Erstattung lesen.\n\nDie Aussage ist falsch.",
+        "Zusammen: Summe Nutzen ≥ Kosten. Allein: Einzelnutzen < volle Kosten 52,5.\n\nZusammen: 67,5 − 52,5 = 15 > 0. Allein: 33,75 < 52,5 (Lücke 18,75). Falle: gesellschaftlichen Vorteil mit Solo-Kauf gleichsetzen.\n\nDie Aussage ist wahr.",
+        "Erfolgsrabatt verbessert „beide zahlen“, löscht aber nicht das Solo-Risiko ohne Erstattung.\n\nNiemand zahlt bleibt EQ: einseitiges Zahlen verliert weiter 26,25 ohne Rabatt. Falle: Erfolgsrabatt mit Misserfolgs-Erstattung verwechseln, die Solo risikofrei macht.\n\nDie Aussage ist falsch.",
+        "H kostet 27,5 bei Einzelnutzen 33,75 — allein beschaffbar, ohne zweite Person und ohne Rabatt.\n\n33,75 − 27,5 = 6,25 > 0. Gegenprobe G: 33,75 < 52,5. Falle: H dem Beitragsdilemma von G unterwerfen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E07",
+      "id": "WISO-M7-E07",
+      "title": "Versicherung mit Selbstbeteiligung",
+      "subsection": "3.2",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Risikoneutrale Person, Vermögen 625. Schaden 250 mit Wahrscheinlichkeit 0,3.\nPolice A: volle Deckung, Prämie 78,75 (fair wären 75; Ladezuschlag 3,75).\nPolice B: Selbstbeteiligung 62,5, Auszahlung im Schadenfall 187,5, Prämie fair 56,25.\nVergleichen Sie erwartetes Endvermögen, Schadenfall unter B und Indifferenz bei fairer\nVollpolice. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Für Risikoneutrale schlägt Police B die geladene Vollpolice A.",
+        "Die faire Vollprämie wäre 75; die geladene 78,75 drückt das sichere Endvermögen unter 550.",
+        "Unter Police B beträgt das Endvermögen im Schadenfall 506,25.",
+        "Zwischen fairer Vollpolice und fairer Selbstbeteiligung sind Risikoneutrale indifferent.",
+        "Die Selbstbeteiligung 62,5 treibt die Prämie über die geladene Vollprämie 78,75."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Risikoneutrale maximieren erwartetes Endvermögen; A sichert 625 − 78,75, B mischt zwei Zustände.\n\nA: 546,25. B: 0,7 · (625 − 56,25) + 0,3 · (625 − 56,25 − 62,5) = 0,7 · 568,75 + 0,3 · 506,25 = 550 > 546,25. Falle: jede Vollpolice als dominant lesen.\n\nDie Aussage ist wahr.",
+        "Faire Vollprämie = Eintrittswahrscheinlichkeit × Schaden = 0,3 · 250 = 75. Geladen wird 78,75.\n\nMit fair 75: sicheres Endvermögen 550. Mit 78,75: 546,25 < 550 — der Zuschlag 3,75 drückt unter 550. Falle: Ladezuschlag als entscheidungsirrelevant streichen.\n\nDie Aussage ist wahr.",
+        "Schadenfall B: Vermögen minus Prämie minus Selbstbeteiligung.\n\n625 − 56,25 − 62,5 = 506,25. Falle: nur Prämie abziehen (568,75) oder Auszahlung 187,5 mit Endvermögen verwechseln.\n\nDie Aussage ist wahr.",
+        "Fair voll und fair mit Selbstbeteiligung haben dieselbe Erwartung, wenn keine Risikoaversion belohnt wird.\n\nFair voll: 625 − 75 = 550. Fair B: 550. Indifferenz. Falle: Selbstbeteiligung als streng besser für Risikoneutrale lesen.\n\nDie Aussage ist wahr.",
+        "Selbstbeteiligung kürzt die Auszahlung und damit die faire Prämie, statt sie zu erhöhen.\n\nPrämie B = 0,3 · 187,5 = 56,25 < geladene Vollprämie 78,75 (und auch < fair 75). Falle: Selbstbeteiligung mit Prämienaufschlag verwechseln.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E08",
+      "id": "WISO-M7-E08",
+      "title": "Verrechnungspreis bei Kapazitätsgrenze",
+      "subsection": "4.1",
+      "chapter": 4,
+      "difficulty_level": "5/5",
+      "context": "Bereich A fertigt ein Zwischenprodukt: variable Kosten 18,75, Kapazität 40 Stück.\nExternverkauf zu 45, externe Nachfrage höchstens 18. Bereich B braucht 30 Stück und kann\nam Markt zu 39,5 kaufen. Opportunitätskosten entstehen nur, soweit Internlieferung\nExternverkäufe verdrängt. Vergleichen Sie kostenminimale Mischung, Voll-Internlieferung\nund reinen Marktbezug. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Kostenminimal verkauft A 18 extern und liefert 22 intern; B kauft 8 am Markt.",
+        "Alle 30 intern zu liefern ist günstiger, weil die Kapazität 40 ≥ 30 reicht.",
+        "Die 22 Internstücke im Optimum tragen keine Extern-Opportunitätskosten.",
+        "Voll-Internlieferung von 30 verdrängt 8 Externverkäufe gegenüber dem Optimum.",
+        "Reiner Marktbezug aller 30 durch B zu 39,5 ist teurer als das Optimum."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Externbeitrag 45 − 18,75 = 26,25 > 0, also zuerst externe Nachfrage 18 bedienen; Restkapazität 22 intern; Fehlmenge 8 am Markt.\n\n18 extern + 22 intern + 8 · 39,5. Falle: Internbedarf 30 vor Extern rangieren, nur weil B „intern“ heißt.\n\nDie Aussage ist wahr.",
+        "Kapazität ≥ Internbedarf heißt nicht, dass Voll-Intern die Opportunitätskosten der verdrängten Externverkäufe schlägt.\n\nVoll-Intern: 30 intern + 10 extern (statt 18). Zusätzliche Beschaffungskosten gegen Optimum: statt 8 · 39,5 intern zu 18,75 zu legen und 8 Externbeiträge zu verlieren — effektiv teurer (verlorener Beitrag 8 · 26,25 = 210). Falle: freie Restplätze 10 als Beweis für Voll-Intern lesen.\n\nDie Aussage ist falsch.",
+        "Nach Ausschöpfen der 18 Externplätze verdrängt zusätzliches Intern nichts mehr; VC 18,75 sind relevant.\n\n22 · 18,75 = 412,5 ohne Opportunitätszuschlag. Falle: auf alle Internstücke den Externpreis 45 legen.\n\nDie Aussage ist wahr.",
+        "Optimum: 18 Extern. Voll-Intern lässt nur 10 Extern → Differenz 8 verdrängte Verkäufe.\n\n8 · (45 − 18,75) = 210 Opportunitätsverlust. Falle: „Kapazität 40 reicht, also keine Verdrängung“.\n\nDie Aussage ist wahr.",
+        "Reiner Marktbezug: 30 · 39,5 = 1.185. Optimum beschafft 22 intern zu 18,75 und 8 zu 39,5 = 412,5 + 316 = 728,5 und behält 18 Externbeiträge.\n\n1.185 > 728,5 — Marktbezug teurer. Falle: Marktpreis 39,5 < Externpreis 45 als Signal für Voll-Marktbezug lesen.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E09",
+      "id": "WISO-M7-E09",
+      "title": "Abbruch- gegen Erweiterungsoption",
+      "subsection": "3.3",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Irreversible Startkosten heute 125. Danach zwei Zustände (Werte schon auf heute bezogen):\nStark mit 0,55 — Fortführung 150; Erweiterung mit Zusatzinvest 40 liefert Gesamtwert 210\n(netto 170 nach Invest); Liquidation 80. Schwach mit 0,45 — Fortführung 60; Liquidation 80;\nErweiterung lieferte nach Invest nur 50. Ohne Flexibilität wird immer fortgeführt.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Ohne Flexibilität ist der NPV negativ.",
+        "Nur die Abbruchoption reicht bereits für einen positiven NPV.",
+        "Nur die Erweiterungsoption allein lässt den NPV negativ.",
+        "Abbruch und Erweiterung zusammen machen den NPV positiv.",
+        "Im schwachen Zustand wird erweitert, weil 50 über der Liquidation 80 liegt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Ohne Flexibilität: Erwartung der Fortführungswerte minus Startkosten 125.\n\n0,55 · 150 + 0,45 · 60 − 125 = 82,5 + 27 − 125 = −15,5 < 0. Falle: positiven Stark-Zweig 150 schon als Projektfreigabe lesen oder Startkosten als versunken ignorieren.\n\nDie Aussage ist wahr.",
+        "Nur Abbruch: schwach liquidieren (80), stark fortführen (150) — ohne Erweiterung.\n\n0,55 · 150 + 0,45 · 80 − 125 = 82,5 + 36 − 125 = −6,5 < 0. Die Option hebt um 9 gegenüber starr (−15,5), reicht aber nicht über null. Falle: Abbruchwert 80 als ausreichende Rettung lesen.\n\nDie Aussage ist falsch.",
+        "Nur Erweiterung: stark auf netto 170 heben, schwach weiter fortführen (60).\n\n0,55 · 170 + 0,45 · 60 − 125 = 93,5 + 27 − 125 = −4,5 < 0. Falle: Netto 170 im Stark-Zweig oder den isolierten Erweiterungsgewinn 20 als Gesamt-NPV lesen.\n\nDie Aussage ist wahr.",
+        "Beide Optionen: stark erweitern (170), schwach liquidieren (80).\n\n0,55 · 170 + 0,45 · 80 − 125 = 93,5 + 36 − 125 = 4,5 > 0. Erst die Kombination dreht das Vorzeichen. Falle: aus negativem Starren-Plan auf Wertlosigkeit beider Optionen schließen.\n\nDie Aussage ist wahr.",
+        "Im schwachen Zustand maximiert man über Fortführung 60, Liquidation 80 und Erweiterung netto 50.\n\n80 > 60 > 50 — liquidieren, nicht erweitern. Die Aussage dreht den Vergleich 50 gegen 80 um. Falle: Bruttowert vor Invest mit Liquidation vergleichen.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M7-E10",
+      "id": "WISO-M7-E10",
+      "title": "Stille Gesellschaft gegen GmbH-Bürgschaft",
+      "subsection": "3.1",
+      "chapter": 3,
+      "difficulty_level": "5/5",
+      "context": "Gesellschaft schuldet Gläubiger A 95.000. Im Gesellschaftsvermögen liegen 41.250.\nStiller Gesellschafter S hat seine Einlage 22.500 voll geleistet und haftet Gläubigern\nnicht darüber hinaus. GmbH-Gesellschafter G hat eine Bürgschaft mit Obergrenze 35.000\nübernommen; davon sind bereits 8.750 für einen anderen Gläubiger verbraucht.\nVergleichspfad: dieselbe Schuld in einer OHG, in der S zusätzlich Privatvermögen 19.500\nunbeschränkt einsetzt. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach Verwertung des Gesellschaftsvermögens bleibt eine Lücke von 53.750.",
+        "Stiller Gesellschafter S haftet A für die Restlücke unbeschränkt mit Privatvermögen.",
+        "Der freie Bürgschaftsrest des G verkürzt die Lücke auf 27.500, schließt sie aber nicht.",
+        "In der OHG-Variante mit Privatvermögen S = 19.500 wäre die Schuld nach Firmenvermögen und diesem Privatvermögen vollständig gedeckt.",
+        "Der freie Bürgschaftsrest 26.250 deckt streng mehr von der Lücke als das OHG-Privatvermögen 19.500 des S."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Lücke = Schuld minus Gesellschaftsvermögen, bevor Personenhaftung oder Bürgschaft geprüft wird.\n\n95.000 − 41.250 = 53.750. Falle: die schon geleistete Stilleinlage 22.500 zusätzlich vom Firmenvermögen abziehen oder die Bürgschaft vor der Lückenbildung einrechnen.\n\nDie Aussage ist wahr.",
+        "Typische stille Gesellschaft: Haftung gegenüber Gesellschaftsgläubigern auf die geleistete Einlage begrenzt — hier bereits voll gezahlt.\n\nS gibt A keinen Zugriff auf weiteres Privatvermögen. Falle: Stillen wie OHG-Gesellschafter unbeschränkt haften lassen.\n\nDie Aussage ist falsch.",
+        "Freier Bürgschaftsrest = Obergrenze minus Vorbelastung; danach Restlücke prüfen.\n\n35.000 − 8.750 = 26.250. Lücke nach Bürgschaft: 53.750 − 26.250 = 27.500 > 0. Falle: volle Obergrenze 35.000 ohne Vorbelastung ansetzen (gäbe Rest 18.750).\n\nDie Aussage ist wahr.",
+        "OHG-Pfad: Firmenvermögen plus Privatvermögen S gegen die volle Schuld.\n\n41.250 + 19.500 = 60.750 < 95.000 — Restlücke 34.250, nicht voll gedeckt. Falle: Privatvermögen mit der Lücke 53.750 statt mit der Bruttoschuld verrechnen und „gedeckt“ lesen.\n\nDie Aussage ist falsch.",
+        "Vergleich der beiden Haftungsblöcke betragsmäßig gegen dieselbe Lücke.\n\nFreier Bürgschaftsrest 26.250 > OHG-Privatvermögen 19.500. Falle: Vorbelastung 8.750 doppelt vom Rest abziehen oder 35.000 mit 19.500 vergleichen.\n\nDie Aussage ist wahr."
+      ]
+    }
+  ],
+  "german": {
+    "passageTitle": "CSRD-Schwellen, Konzernlagebericht und zwei Berichtsjahre",
+    "passage": "(1) Die CSRD-Berichtspflicht trifft Unternehmen ab bestimmten Größenmerkmalen. Zwei Größenprüfungen stehen nebeneinander: die Schwelle der Einzelgesellschaft und die Schwelle des konsolidierten Konzerns. Nachhaltigkeitsangaben gehören in den Konzernlagebericht des erfassten Mutterunternehmens. Wer schreibt, jedes KMU falle allein durch Lieferbeziehung unter denselben Konzernbericht, verlässt den Text.\n\n(2) Die maßgeblichen Größenmerkmale müssen in zwei aufeinanderfolgenden Berichtsjahren überschritten sein. Maßgeblich sind die beiden Berichtsjahre selbst, nicht der Kalendertag, an dem der Jahresabschluss später festgestellt wird. Eine Überschreitung nur in einem der beiden Jahre genügt nicht. Feststellung am 15. Mai schaltet die Schwellenuhr der Berichtsjahre nicht um.\n\n(3) Die Firma Nord liegt als Einzelgesellschaft unter der Schwelle und gehört zugleich zu einem Konzern, der die Konsolidierungsschwelle überschreitet. Für Nord als Einzelgesellschaft gilt die Einzelprüfung. Für den Konzern gilt die Konsolidierungsprüfung. Wer Einzelkennzahl und Konzernkennzahl addiert und eine einzige Pflicht auf die Summe legt, vermengt die Ebenen.\n\n(4) Schwellenuhr und Veröffentlichungsuhr sind zwei Uhren. Die Schwellenuhr prüft zwei Berichtsjahre; die Veröffentlichung erfolgt im Konzernlagebericht des Folgejahres. Der Tag der Abschlussfeststellung ersetzt keine der beiden Uhren und rückt den Beginn der Berichtspflicht nicht vor.\n\n(5) Umsätze aus Beratung und Software sind für die Größenprüfung vorgesehen. Eine Pressemitteilung behauptet, jeder Euro aus einmaligen Sondereffekten sei im Beispieljahr bereits als dauerhafte Umsatzerhöhung in die Schwellenrechnung eingegangen. Der Text sagt, das Ministerium übernehme diesen Satz nicht. Vorgesehen in der Größenlogik und bereits als Dauereffekt gezählt sind nicht dasselbe.\n\n(6) Unternehmen unter der Einzelschwelle fallen nicht allein deshalb unter denselben Konzernbericht. Zwei Eintrittsbedingungen stehen nebeneinander: eigene Größenschwelle der Einzelgesellschaft einerseits, Zugehörigkeit zu einem berichtspflichtigen Konzern andererseits. Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein.\n\n(7) Erfasst der Konzern die Konsolidierungsschwelle, bleibt die Einzelschwelle der Tochter eine eigene Prüfung. Der Verband liest die Konzernpflicht als Abschaffung jeder Einzelschwelle. Der Text weist diesen Satz zurück: Die Einzelschwelle bleibt. Umgekehrt ersetzt die verfehlte Einzelschwelle nicht die Konzernpflicht der Mutter.\n\n(8) Überschreitet ein Konzern die Merkmale in den Berichtsjahren 2024 und 2025, greift die Berichtspflicht für das Jahr 2025 im Konzernlagebericht 2026. Eine Überschreitung nur 2024 ohne 2025 genügt nicht. Der 31. Dezember 2025 zählt noch zum Berichtsjahr 2025; der 1. Januar 2026 fällt nicht mehr in dasselbe Berichtsjahr.\n\n(9) Im Beispieljahr hatten 2.100 geprüfte Gesellschaften dokumentierte Größenangaben. 630 überschritten in mindestens einem Jahr eine Schwelle, 280 dieser 630 zugleich in zwei aufeinanderfolgenden Jahren, 85 davon zugleich mit verspäteter Aufnahme in den Konzernlagebericht. Der Text verbietet, 280 und 85 zu addieren, und er verbietet, 630 als Zahl der bereits berichtspflichtigen Konzerne zu lesen. Einjährige Überschreitung und zweijährige Pflicht sind nicht dasselbe.\n\n(10) Angaben der Einzelgesellschaft und Angaben im Konzernlagebericht sind unterschiedliche Instrumente.",
+    "tasks": [
+      {
+        "id": "WISO-M7-G01",
+        "case_id": "WISO-M7-G01",
+        "title": "Zwei Größenprüfungen, kein Liefer-KMU-Bericht",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu den Größenprüfungen und zum Konzernlagebericht korrekt?",
+        "statements": [
+          "Zwei Größenprüfungen stehen nebeneinander — Einzelgesellschaft und konsolidierter Konzern —, und Nachhaltigkeitsangaben gehören in den Konzernlagebericht des erfassten Mutterunternehmens.",
+          "Jedes KMU fällt allein durch Lieferbeziehung unter denselben Konzernbericht, weil beide Wirtschaftsteilnehmer sind.",
+          "Weil beide Prüfungen Größenmerkmale betreffen, sind Einzelschwelle und Konzernschwelle im Text dieselbe Prüfung.",
+          "Die Prüfungen haben unterschiedliche Bezugspunkte. Dass beide Größen betreffen, macht Liefer-KMU und Mutter nicht zu demselben Berichtspflichtigen.",
+          "Die Konzernpflicht ersetzt die Einzelschwelle für jedes KMU, sobald es an den Konzern liefert."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Zwei Größenprüfungen stehen nebeneinander — Einzelgesellschaft und konsolidierter Konzern —, und Nachhaltigkeitsangaben gehören in den Konzernlagebericht des erfassten Mutterunternehmens.**\n\nAbsatz 1 nennt zwei Größenprüfungen und ordnet Nachhaltigkeitsangaben dem Konzernlagebericht der erfassten Mutter zu.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jedes KMU fällt allein durch Lieferbeziehung unter denselben Konzernbericht, weil beide Wirtschaftsteilnehmer sind.**\n\nAbsatz 1 weist ausdrücklich zurück, jedes KMU falle allein durch Lieferbeziehung unter denselben Konzernbericht.\n\n**Falle:** Vom Lieferverhältnis auf Konzernberichtspflicht schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Weil beide Prüfungen Größenmerkmale betreffen, sind Einzelschwelle und Konzernschwelle im Text dieselbe Prüfung.**\n\nAbsatz 1 stellt zwei Größenprüfungen nebeneinander. Gemeinsamer Stoff Größe macht sie nicht identisch; Absatz 10 hält Einzel- und Konzernangaben als unterschiedliche Instrumente.\n\n**Falle:** Gemeinsamen Stoff als Einheitsprüfung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Die Prüfungen haben unterschiedliche Bezugspunkte. Dass beide Größen betreffen, macht Liefer-KMU und Mutter nicht zu demselben Berichtspflichtigen.**\n\nAbsatz 1 trennt die Bezugspunkte und weist die Liefer-KMU-Lesart zurück. Gemeinsamer Gegenstand Größe hebt die Personengrenze nicht auf.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Die Konzernpflicht ersetzt die Einzelschwelle für jedes KMU, sobald es an den Konzern liefert.**\n\nAbsatz 1 hält Lieferbeziehung und Konzernbericht auseinander; Absatz 6 und 7 halten Einzelschwelle und Konzernpflicht als eigene Eintritte.\n\n**Falle:** Liefern als Ersatz der Einzelschwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G02",
+        "case_id": "WISO-M7-G02",
+        "title": "Welche Uhr die zwei Berichtsjahre schließt",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zur Zwei-Jahres-Schwellenuhr korrekt?",
+        "statements": [
+          "Die Größenmerkmale müssen in zwei aufeinanderfolgenden Berichtsjahren überschritten sein; maßgeblich sind die Berichtsjahre selbst, nicht der spätere Feststellungstag des Abschlusses.",
+          "Jeder Vorgang, dessen Abschluss erst nach dem zweiten Jahr festgestellt wird, fällt aus der Schwellenuhr, gleichgültig welche Berichtsjahre überschritten wurden.",
+          "Ein Jahr Überschreitung und zwei Jahre Überschreitung werden mit derselben Schwellenuhr geprüft.",
+          "Überschreitung nur in einem der beiden Jahre genügt nicht, und Feststellung am 15. Mai schaltet die Schwellenuhr der Berichtsjahre nicht um.",
+          "Weil die Veröffentlichung im Folgejahr liegt, gilt schon ein einzelnes Überschreitungsjahr als vollständige Zwei-Jahres-Uhr."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Die Größenmerkmale müssen in zwei aufeinanderfolgenden Berichtsjahren überschritten sein; maßgeblich sind die Berichtsjahre selbst, nicht der spätere Feststellungstag des Abschlusses.**\n\nAbsatz 2 bindet die Schwelle an zwei aufeinanderfolgende Berichtsjahre und macht den Feststellungstag nicht maßgeblich.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Vorgang, dessen Abschluss erst nach dem zweiten Jahr festgestellt wird, fällt aus der Schwellenuhr, gleichgültig welche Berichtsjahre überschritten wurden.**\n\nAbsatz 2: maßgeblich sind die Berichtsjahre; Feststellung schaltet die Schwellenuhr nicht um und wirft erfüllte Jahre nicht heraus.\n\n**Falle:** Feststellungstag zur Regimeuhr machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Ein Jahr Überschreitung und zwei Jahre Überschreitung werden mit derselben Schwellenuhr geprüft.**\n\nAbsatz 2: nur ein Jahr genügt nicht; zwei aufeinanderfolgende Jahre sind erforderlich. Dieselbe Schwellenidee heißt nicht dieselbe erfüllte Uhr.\n\n**Falle:** Ein- und Zwei-Jahres-Fälle wie ein Paar mit gleicher Erfüllung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Überschreitung nur in einem der beiden Jahre genügt nicht, und Feststellung am 15. Mai schaltet die Schwellenuhr der Berichtsjahre nicht um.**\n\nAbsatz 2 sagt beides ausdrücklich: ein Jahr genügt nicht; Feststellung am 15. Mai schaltet nicht um.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil die Veröffentlichung im Folgejahr liegt, gilt schon ein einzelnes Überschreitungsjahr als vollständige Zwei-Jahres-Uhr.**\n\nAbsatz 2 verlangt zwei Jahre; Absatz 4 trennt Veröffentlichungsuhr und Schwellenuhr. Folgejahresveröffentlichung ersetzt das zweite Jahr nicht.\n\n**Falle:** Veröffentlichungsjahr als Ersatz der Zwei-Jahres-Schwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G03",
+        "case_id": "WISO-M7-G03",
+        "title": "Firma Nord: Einzel gegen Konzern",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zur Ebenentrennung bei Firma Nord korrekt?",
+        "statements": [
+          "Für Nord als Einzelgesellschaft gilt die Einzelprüfung, für den Konzern die Konsolidierungsprüfung, und eine Addition beider Kennzahlen zu einer einzigen Pflicht vermengt die Ebenen.",
+          "Weil Nord zu einem Konzern gehört, fällt auch die Einzelgesellschaft automatisch unter die Konsolidierungsschwelle als eigene Einzelpflicht.",
+          "Wer Einzelkennzahl und Konzernkennzahl addiert und eine einzige Pflicht auf die Summe legt, folgt Absatz 3.",
+          "Einzelprüfung und Konsolidierungsprüfung bleiben getrennte Ebenen; Konzernzugehörigkeit macht Nord nicht zur Einzelschwelle desselben Konzernsatzes.",
+          "Ein Unternehmen mit Konzernmutter prüft Einzelschwellen nie, sobald im Namen der Firma Konzern vorkommt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Für Nord als Einzelgesellschaft gilt die Einzelprüfung, für den Konzern die Konsolidierungsprüfung, und eine Addition beider Kennzahlen zu einer einzigen Pflicht vermengt die Ebenen.**\n\nAbsatz 3 stellt Einzel- und Konsolidierungsprüfung nebeneinander und nennt die Addition als Vermengung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil Nord zu einem Konzern gehört, fällt auch die Einzelgesellschaft automatisch unter die Konsolidierungsschwelle als eigene Einzelpflicht.**\n\nAbsatz 3: Nord liegt als Einzelgesellschaft unter der Schwelle trotz Konzernzugehörigkeit. Der Konzernstatus zieht die Einzelpflicht nicht mit.\n\n**Falle:** Aus Konzernzugehörigkeit die Einzelschwelle als erfüllt lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer Einzelkennzahl und Konzernkennzahl addiert und eine einzige Pflicht auf die Summe legt, folgt Absatz 3.**\n\nAbsatz 3 nennt genau diese Addition als Vermengung und als Verlassen der Ebenen. „Folgt Absatz 3“ kehrt den Absatz um.\n\n**Falle:** Eine Absatznummer als Deckung lesen, obwohl der Absatz die Behauptung zurückweist.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Einzelprüfung und Konsolidierungsprüfung bleiben getrennte Ebenen; Konzernzugehörigkeit macht Nord nicht zur Einzelschwelle desselben Konzernsatzes.**\n\nAbsatz 3 hält die Ebenen getrennt und belässt Nord unter der Einzelschwelle trotz Konzern.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Ein Unternehmen mit Konzernmutter prüft Einzelschwellen nie, sobald im Namen der Firma Konzern vorkommt.**\n\nAbsatz 3 und 7: Die Einzelschwelle bleibt eine eigene Prüfung. Bloßes Vorkommen von „Konzern“ im Profil schafft die Prüfung nicht ab.\n\n**Falle:** „Nie“ und Namensvorkommen über die Ebenentrennung hinausziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G04",
+        "case_id": "WISO-M7-G04",
+        "title": "Zwei Uhren, nicht der Feststellungstag",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu Schwellenuhr und Veröffentlichungsuhr korrekt?",
+        "statements": [
+          "Die Schwellenuhr prüft zwei Berichtsjahre, die Veröffentlichung erfolgt im Konzernlagebericht des Folgejahres, und das sind zwei Uhren.",
+          "Gezählt wird am Tag der Abschlussfeststellung, also ersetzt dieser Tag beide Uhren.",
+          "Schwellenuhr und Veröffentlichungsuhr sind im Text verschiedene Zeitpunkte, und die Abschlussfeststellung rückt den Beginn der Berichtspflicht nicht vor.",
+          "Weil ein Folgejahr genannt ist, muss die Schwellenuhr schon mit einem einzigen Berichtsjahr erfüllt sein.",
+          "Ein 2024 und 2025 überschrittener Konzern, dessen Lagebericht erst 2026 erscheint, verfehlt deshalb die Zwei-Jahres-Uhr."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Die Schwellenuhr prüft zwei Berichtsjahre, die Veröffentlichung erfolgt im Konzernlagebericht des Folgejahres, und das sind zwei Uhren.**\n\nAbsatz 4 nennt Schwellenuhr und Veröffentlichungsuhr ausdrücklich als zwei Uhren.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Gezählt wird am Tag der Abschlussfeststellung, also ersetzt dieser Tag beide Uhren.**\n\nAbsatz 4: Der Feststellungstag ersetzt keine der beiden Uhren. Absatz 2 bestätigt, Feststellung schalte die Schwellenuhr nicht um.\n\n**Falle:** Den sichtbaren Feststellungstag als selbstverständliche Regimeuhr nehmen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Schwellenuhr und Veröffentlichungsuhr sind im Text verschiedene Zeitpunkte, und die Abschlussfeststellung rückt den Beginn der Berichtspflicht nicht vor.**\n\nAbsatz 4: zwei Uhren; Feststellung rückt den Beginn nicht vor.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Weil ein Folgejahr genannt ist, muss die Schwellenuhr schon mit einem einzigen Berichtsjahr erfüllt sein.**\n\nAbsatz 4 ordnet das Folgejahr der Veröffentlichung zu, nicht der Schwellenfüllung. Absatz 2 verlangt zwei Jahre.\n\n**Falle:** Aus dem Vorhandensein eines Folgejahres auf Ein-Jahres-Schwelle schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Ein 2024 und 2025 überschrittener Konzern, dessen Lagebericht erst 2026 erscheint, verfehlt deshalb die Zwei-Jahres-Uhr.**\n\nAbsatz 8: 2024 und 2025 erfüllen die Schwelle; Veröffentlichung 2026 ist die vorgesehene Veröffentlichungsuhr, kein Verfehlen der Schwellenuhr.\n\n**Falle:** Veröffentlichungsjahr und Schwellenerfüllung vertauschen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G05",
+        "case_id": "WISO-M7-G05",
+        "title": "Vorgesehen ist nicht Dauereffekt",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zur Behandlung von Umsätzen in der Größenprüfung korrekt?",
+        "statements": [
+          "Umsätze aus Beratung und Software sind für die Größenprüfung vorgesehen, und der Text übernimmt nicht den Satz, jeder Sonder-Euro sei bereits als Dauereffekt in die Schwelle eingegangen.",
+          "Jeder Euro aus einmaligen Sondereffekten zählt im Beispieljahr automatisch als dauerhafte Umsatzerhöhung.",
+          "Vorgesehen in der Größenlogik und bereits als Dauereffekt gezählt sind im Text dasselbe.",
+          "Vorgesehen und bereits als Dauereffekt gezählt sind nicht dasselbe, und die Lieferbeziehung eines KMU ist nicht die Begründung für diese Trennung.",
+          "Das Ministerium macht sich den Pressetext zu eigen, Sondereffekte seien schon Dauereffekt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Umsätze aus Beratung und Software sind für die Größenprüfung vorgesehen, und der Text übernimmt nicht den Satz, jeder Sonder-Euro sei bereits als Dauereffekt in die Schwelle eingegangen.**\n\nAbsatz 5: vorgesehen für die Größenprüfung; Pressetext zu Sondereffekten als Dauereffekt wird nicht übernommen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Euro aus einmaligen Sondereffekten zählt im Beispieljahr automatisch als dauerhafte Umsatzerhöhung.**\n\nAbsatz 5: Das Ministerium übernimmt diesen Pressetext nicht. Automatische Dauerzählung steht nicht im Text.\n\n**Falle:** Pressetext als Textregel lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Vorgesehen in der Größenlogik und bereits als Dauereffekt gezählt sind im Text dasselbe.**\n\nAbsatz 5 sagt ausdrücklich, vorgesehen und bereits als Dauereffekt gezählt seien nicht dasselbe.\n\n**Falle:** Zwei Stufen der Größenlogik zusammenziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Vorgesehen und bereits als Dauereffekt gezählt sind nicht dasselbe, und die Lieferbeziehung eines KMU ist nicht die Begründung für diese Trennung.**\n\nAbsatz 5 trägt die Trennung vorgesehen/Dauereffekt. Die Liefer-KMU-Zurückweisung steht in Absatz 1 und begründet Absatz 5 nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Das Ministerium macht sich den Pressetext zu eigen, Sondereffekte seien schon Dauereffekt.**\n\nAbsatz 5: Der Text sagt, das Ministerium übernehme diesen Satz nicht.\n\n**Falle:** Vorkommen von Pressetext und Ministerium als Einigkeit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G06",
+        "case_id": "WISO-M7-G06",
+        "title": "Zwei Eintrittsbedingungen",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu den Eintrittsbedingungen korrekt?",
+        "statements": [
+          "Eigene Größenschwelle der Einzelgesellschaft und Zugehörigkeit zu einem berichtspflichtigen Konzern stehen nebeneinander und sind nicht dasselbe.",
+          "Unter der Einzelschwelle genügt die bloße Nähe zum Konzern, um denselben Konzernbericht auszulösen.",
+          "Wer eine der beiden Eintrittsbedingungen verfehlt, tritt dennoch in beide Pflichtlagen ein, weil beide CSRD betreffen.",
+          "Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein, und Lieferbeziehung allein ist nicht die Konzern-Eintrittsbedingung.",
+          "Beide Bedingungen fallen zusammen, sobald irgendeine Schwelle irgendwo im Konzern überschritten wird."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Eigene Größenschwelle der Einzelgesellschaft und Zugehörigkeit zu einem berichtspflichtigen Konzern stehen nebeneinander und sind nicht dasselbe.**\n\nAbsatz 6 nennt die zwei Eintrittsbedingungen ausdrücklich und hält sie auseinander.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Unter der Einzelschwelle genügt die bloße Nähe zum Konzern, um denselben Konzernbericht auszulösen.**\n\nAbsatz 6: Unter der Einzelschwelle fällt man nicht allein deshalb unter denselben Konzernbericht. Bloße Nähe genügt nicht.\n\n**Falle:** Nähe als Eintritt lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer eine der beiden Eintrittsbedingungen verfehlt, tritt dennoch in beide Pflichtlagen ein, weil beide CSRD betreffen.**\n\nAbsatz 6: Wer eine verfehlt, tritt in die jeweilige Pflichtlage nicht ein. Gemeinsamer Stoff CSRD rettet die verfehlte Bedingung nicht.\n\n**Falle:** Gemeinsames Regime als Doppel-Eintritt trotz Verfehlung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein, und Lieferbeziehung allein ist nicht die Konzern-Eintrittsbedingung.**\n\nAbsatz 6: Verfehlen sperrt die jeweilige Pflichtlage. Absatz 1: Lieferbeziehung allein begründet nicht denselben Konzernbericht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Beide Bedingungen fallen zusammen, sobald irgendeine Schwelle irgendwo im Konzern überschritten wird.**\n\nAbsatz 6 hält sie nebeneinander und nicht als automatische Einheit. Irgendwo im Konzern reicht nicht für beide Eintritte.\n\n**Falle:** Eine Konzernüberschreitung als Doppelbedingung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G07",
+        "case_id": "WISO-M7-G07",
+        "title": "Einzelschwelle bleibt, Konzernpflicht auch",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zum Verhältnis von Einzelschwelle und Konzernpflicht korrekt?",
+        "statements": [
+          "Erfasst der Konzern die Konsolidierungsschwelle, bleibt die Einzelschwelle der Tochter eine eigene Prüfung, und der Text weist die Abschaffungslesart zurück.",
+          "Die Konzernpflicht schafft jede Einzelschwelle ab, sobald konsolidiert wird.",
+          "Die verfehlte Einzelschwelle ersetzt die Konzernpflicht der Mutter.",
+          "Die Einzelschwelle bleibt, und umgekehrt ersetzt die verfehlte Einzelschwelle nicht die Konzernpflicht der Mutter.",
+          "Verband und Text lesen die Konzernpflicht als Ende jeder Einzelschwelle."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Erfasst der Konzern die Konsolidierungsschwelle, bleibt die Einzelschwelle der Tochter eine eigene Prüfung, und der Text weist die Abschaffungslesart zurück.**\n\nAbsatz 7: Einzelschwelle bleibt eigene Prüfung; Verbandssatz zur Abschaffung wird zurückgewiesen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Die Konzernpflicht schafft jede Einzelschwelle ab, sobald konsolidiert wird.**\n\nAbsatz 7 weist genau diesen Verbandssatz zurück: Die Einzelschwelle bleibt.\n\n**Falle:** Konsolidierung als Abschaffung der Einzelschwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Die verfehlte Einzelschwelle ersetzt die Konzernpflicht der Mutter.**\n\nAbsatz 7 sagt ausdrücklich das Gegenteil: Die verfehlte Einzelschwelle ersetzt die Konzernpflicht der Mutter nicht.\n\n**Falle:** Verfehlte Tochterschwelle als Freibrief der Mutter lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Die Einzelschwelle bleibt, und umgekehrt ersetzt die verfehlte Einzelschwelle nicht die Konzernpflicht der Mutter.**\n\nAbsatz 7 trägt beide Richtungen: bleibt; ersetzt nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Verband und Text lesen die Konzernpflicht als Ende jeder Einzelschwelle.**\n\nAbsatz 7: Der Verband liest so; der Text weist zurück. Keine Einigkeit.\n\n**Falle:** Verbandssatz und Text als Deckungsleichheit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G08",
+        "case_id": "WISO-M7-G08",
+        "title": "2024, 2025 und Lagebericht 2026",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zur Kalendergrenze der Berichtsjahre korrekt?",
+        "statements": [
+          "Überschreitung in 2024 und 2025 begründet die Berichtspflicht für 2025 im Konzernlagebericht 2026, und allein 2024 ohne 2025 genügt nicht.",
+          "Jeder Konzern mit irgendeiner Überschreitung 2024 gilt bereits als zweijährig berichtspflichtig.",
+          "31. Dezember 2025 zählt noch zum Berichtsjahr 2025, und der 1. Januar 2026 fällt nicht mehr in dasselbe Berichtsjahr.",
+          "2024 und 2025 werden mit demselben einzelnen Überschreitungsjahr geprüft.",
+          "Der Lagebericht 2026 schaltet die Schwelle rückwirkend auf nur 2024 um."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Überschreitung in 2024 und 2025 begründet die Berichtspflicht für 2025 im Konzernlagebericht 2026, und allein 2024 ohne 2025 genügt nicht.**\n\nAbsatz 8 bindet 2024 und 2025 an die Pflicht für 2025 mit Veröffentlichung 2026 und schließt allein 2024 aus.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Konzern mit irgendeiner Überschreitung 2024 gilt bereits als zweijährig berichtspflichtig.**\n\nAbsatz 8: allein 2024 ohne 2025 genügt nicht. Ein Jahr ist nicht die Zwei-Jahres-Uhr.\n\n**Falle:** Erstes Überschreitungsjahr als vollständige Pflicht lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 31. Dezember 2025 zählt noch zum Berichtsjahr 2025, und der 1. Januar 2026 fällt nicht mehr in dasselbe Berichtsjahr.**\n\nAbsatz 8 stellt die Jahreswende ausdrücklich gegenüber.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) 2024 und 2025 werden mit demselben einzelnen Überschreitungsjahr geprüft.**\n\nAbsatz 8 verlangt beide Jahre; ein einzelnes Jahr genügt nicht. Benachbarte Jahre sind nicht ein Jahr.\n\n**Falle:** Zwei genannte Jahre zu einem einzigen Erfüllungsjahr zusammenziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Der Lagebericht 2026 schaltet die Schwelle rückwirkend auf nur 2024 um.**\n\nAbsatz 8 und 4: 2026 ist Veröffentlichungsuhr; sie ersetzt weder 2025 noch verkürzt sie die Schwelle auf 2024.\n\n**Falle:** Veröffentlichungsjahr als Rückwirkungshebel auf die Schwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G09",
+        "case_id": "WISO-M7-G09",
+        "title": "630, 280 und 85, keine Summe",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu den Beispielzahlen korrekt?",
+        "statements": [
+          "Von 2.100 Gesellschaften überschritten 630 in mindestens einem Jahr; 280 dieser 630 zugleich in zwei Jahren; 85 davon zugleich verspätet im Konzernlagebericht.",
+          "280 und 85 dürfen addiert werden, und 630 ist die Zahl der bereits berichtspflichtigen Konzerne.",
+          "Einjährige Überschreitung und zweijährige Pflicht sind im Text dieselbe Menge.",
+          "280 und 85 dürfen nicht addiert werden, und 630 ist nicht die Zahl der bereits berichtspflichtigen Konzerne.",
+          "Der Text rechnet 280 und 85 zusammen und setzt die Summe mit 630 gleich."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Von 2.100 Gesellschaften überschritten 630 in mindestens einem Jahr; 280 dieser 630 zugleich in zwei Jahren; 85 davon zugleich verspätet im Konzernlagebericht.**\n\nAbsatz 9 führt genau diese Teilmengenkette vor.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) 280 und 85 dürfen addiert werden, und 630 ist die Zahl der bereits berichtspflichtigen Konzerne.**\n\nAbsatz 9 verbietet die Addition und verbietet, 630 als Zahl der bereits berichtspflichtigen Konzerne zu lesen.\n\n**Falle:** Teilmengen addieren und Ein-Jahres-Zahl als Pflichtzahl lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Einjährige Überschreitung und zweijährige Pflicht sind im Text dieselbe Menge.**\n\nAbsatz 9: Einjährige Überschreitung und zweijährige Pflicht sind nicht dasselbe.\n\n**Falle:** Genannte Zahlen als freigegebene Gleichsetzung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) 280 und 85 dürfen nicht addiert werden, und 630 ist nicht die Zahl der bereits berichtspflichtigen Konzerne.**\n\nAbsatz 9 verbietet beides ausdrücklich.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Der Text rechnet 280 und 85 zusammen und setzt die Summe mit 630 gleich.**\n\nAbsatz 9 verbietet die Addition und setzt sie nicht mit 630 gleich. Vorgeführt wird die Trennung, nicht die Summe.\n\n**Falle:** Genannte Zahlen als Additionsaufgabe lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M7-G10",
+        "case_id": "WISO-M7-G10",
+        "title": "Uhren und Ebenen zugleich",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu kombinierten Grenzen korrekt?",
+        "statements": [
+          "Jedes Liefer-KMU als Konzernberichtspflichtiger und die Addition von 280 und 85 sind im Text dieselbe zulässige Vereinfachung.",
+          "Nord trennt Einzel- und Konzernprüfung, die Schwelle braucht zwei Berichtsjahre, und die Feststellung steuert nicht die Schwellenuhr.",
+          "Schwellenuhr und Veröffentlichungsuhr sind dieselbe Uhr, weil beide nach dem Ereignisjahr liegen.",
+          "Wer den Verbandssatz zur Abschaffung der Einzelschwelle übernimmt und zugleich nur 2024 als Zwei-Jahres-Uhr setzt, folgt dem Text in beiden Punkten.",
+          "Ebenentrennung, Zwei-Jahres-Schwellenuhr und Verbot der Zahlenaddition können zusammen vorliegen, ohne dass vorgesehene Umsätze schon als Dauereffekt gezählt sein müssen."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Jedes Liefer-KMU als Konzernberichtspflichtiger und die Addition von 280 und 85 sind im Text dieselbe zulässige Vereinfachung.**\n\nAbsatz 1 weist die Liefer-KMU-Lesart zurück; Absatz 9 die Addition. Beides ist unzulässig, nicht eine gemeinsame Vereinfachung.\n\n**Falle:** Zwei verworfene Lesarten zu einer erlaubten Kurzformel verbinden.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) Nord trennt Einzel- und Konzernprüfung, die Schwelle braucht zwei Berichtsjahre, und die Feststellung steuert nicht die Schwellenuhr.**\n\nAbsatz 3: Ebenentrennung bei Nord. Absatz 2 und 8: zwei Berichtsjahre. Absatz 2 und 4: Feststellung steuert die Schwellenuhr nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Schwellenuhr und Veröffentlichungsuhr sind dieselbe Uhr, weil beide nach dem Ereignisjahr liegen.**\n\nAbsatz 4 nennt ausdrücklich zwei Uhren. Nachgelagert sein macht sie nicht identisch.\n\n**Falle:** Gemeinsame Nachverlagerung als Uhrenidentität lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer den Verbandssatz zur Abschaffung der Einzelschwelle übernimmt und zugleich nur 2024 als Zwei-Jahres-Uhr setzt, folgt dem Text in beiden Punkten.**\n\nAbsatz 7 weist den Verbandssatz zurück; Absatz 8 hält allein 2024 für ungenügend. „Folgt dem Text“ kehrt beide Stellen um.\n\n**Falle:** Zwei Zurückweisungen als doppelte Bestätigung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Ebenentrennung, Zwei-Jahres-Schwellenuhr und Verbot der Zahlenaddition können zusammen vorliegen, ohne dass vorgesehene Umsätze schon als Dauereffekt gezählt sein müssen.**\n\nAbsätze 3, 2/8 und 9 tragen Trennung, Zwei-Jahres-Uhr und Additionsverbot. Absatz 5: vorgesehen ≠ Dauereffekt — keine Voraussetzung der übrigen Regeln.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ]
+      },
+      {
+        "id": "WISO-M7-G11",
+        "case_id": "WISO-M7-G11",
+        "title": "Identität setzt die Auskunft",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut dem Kurztext zur DSGVO-Auskunft korrekt?",
+        "statements": [
+          "Vor der Herausgabe darf die Identität geprüft werden; der bloße Eingang eines Begehrens ohne geklärte Identität setzt die Herausgabepflicht der Kopie nicht in Gang.",
+          "Süd weist am 2. März die Identität nach; eine Eingangsbestätigung am 10. März ohne Substanz erfüllt die Frist bis zum 2. April als volle Auskunft.",
+          "55 und 20 dürfen nicht addiert werden, und 160 ist nicht die Zahl erteilter Auskünfte; fehlende Identität ist nicht die erteilte Auskunft.",
+          "Jedes interne Papier nach einem Begehren ist automatisch herauszugeben.",
+          "Eine Verlängerung bei komplexen Begehren kann greifen, heilt aber nicht rückwirkend eine schon verstrichene Monatsfrist ohne Mitteilung und setzt die Frist nicht auf die formlose Anfrage ohne Identität zurück."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Vor der Herausgabe darf die Identität geprüft werden; der bloße Eingang eines Begehrens ohne geklärte Identität setzt die Herausgabepflicht der Kopie nicht in Gang.**\n\nNur der Kurztext zur DSGVO-Auskunft (passage_override): Absatz 1 — Identitätsprüfung zulässig; Begehren ohne geklärte Identität setzt die Kopiepflicht nicht in Gang.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Süd weist am 2. März die Identität nach; eine Eingangsbestätigung am 10. März ohne Substanz erfüllt die Frist bis zum 2. April als volle Auskunft.**\n\nOverride Absatz 2: Bis zum 2. April schuldet der Verantwortliche Auskunft samt Kopie; Eingangsbestätigung am 10. März ohne Substanz erfüllt die Monatsfrist nicht.\n\n**Falle:** Formlose Bestätigung als inhaltliche Auskunft lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 55 und 20 dürfen nicht addiert werden, und 160 ist nicht die Zahl erteilter Auskünfte; fehlende Identität ist nicht die erteilte Auskunft.**\n\nOverride Absatz 3 verbietet, 55 und 20 zu addieren, und verbietet, 160 als Zahl erteilter Auskünfte zu lesen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Jedes interne Papier nach einem Begehren ist automatisch herauszugeben.**\n\nOverride Absatz 4: Kopie umfasst personenbezogene Daten, nicht jedes interne Dokument ohne Personenbezug; Verbandsautomatik wird nicht übernommen.\n\n**Falle:** Verbandsforderung als Textregel lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Eine Verlängerung bei komplexen Begehren kann greifen, heilt aber nicht rückwirkend eine schon verstrichene Monatsfrist ohne Mitteilung und setzt die Frist nicht auf die formlose Anfrage ohne Identität zurück.**\n\nOverride Absatz 5: Verlängerung möglich; keine rückwirkende Heilung ohne Mitteilung und keine Rücksetzung auf formlose Anfrage ohne Identität.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ],
+        "passage_override": "(1) Das Auskunftsrecht nach der DSGVO verpflichtet den Verantwortlichen, der betroffenen Person Auskunft über die sie betreffenden personenbezogenen Daten zu erteilen und eine Kopie dieser Daten zur Verfügung zu stellen. Vor der Herausgabe darf die Identität geprüft werden. Der bloße Eingang eines Begehrens ohne geklärte Identität setzt die Herausgabepflicht der Kopie nicht in Gang. Wer schreibt, jedes anonyme Schreiben starte sofort die volle Kopiepflicht, verlässt den Text.\n\n(2) Die Beschäftigte Süd stellt am 2. März ein Auskunftsbegehren und weist am selben Tag ihre Identität nach. Bis zum 2. April schuldet der Verantwortliche die Auskunft samt Kopie. Eine Eingangsbestätigung am 10. März ohne Substanz erfüllt diese Monatsfrist nicht. Der Text sagt nicht, jede kurze Bestätigung genüge als Auskunft.\n\n(3) Von 800 geprüften Begehren fehlte in 160 Fällen ein ausreichender Identitätsnachweis. 55 dieser 160 betrafen zugleich Fristüberschreitungen nach späterer Identitätsklärung, 20 davon zugleich die Herausgabe interner Vermerke ohne Personenbezug. Der Text verbietet, 55 und 20 zu addieren, und er verbietet, 160 als Zahl erteilter Auskünfte zu lesen. Fehlende Identität ist nicht die erteilte Auskunft.\n\n(4) Die Kopie umfasst die personenbezogenen Daten der betroffenen Person, nicht jedes interne Dokument ohne Personenbezug. Eine betriebsinterne Strategieakte ohne Bezug zu Süd bleibt außen vor. Der Verband fordert, jedes interne Papier nach einem Begehren sei automatisch herauszugeben. Der Text übernimmt diese Forderung nicht.\n\n(5) Bei komplexen Begehren kann die Frist verlängert werden. Die Verlängerung heilt nicht rückwirkend eine schon verstrichene Monatsfrist ohne Mitteilung und setzt die Frist nicht auf den Tag der ersten formlosen Anfrage ohne Identität zurück.",
+        "passage_title_override": "DSGVO-Auskunft: Identitätsprüfung, Frist und Kopie der Daten"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "WISO-M7-M01",
+      "id": "WISO-M7-M01",
+      "title": "P-Zweig und T-Zweig, genau zwei Belegungen",
+      "chapter": 1,
+      "subsection": "1.3",
+      "difficulty_level": "5/5",
+      "context": "Es gelten sechs Prämissen über die Aussagenvariablen $P,Q,R,S,T$:\n\n(1) $P$ genau dann, wenn $Q$.\n\n(2) Wenn $Q$, dann $R$.\n\n(3) Wenn $R$, dann $S$.\n\n(4) Genau eine der Aussagen $S,T$ ist wahr.\n\n(5) Wenn $T$, dann nicht $P$.\n\n(6) Mindestens eine der Aussagen $P,T$ ist wahr.\n\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Unter allen sechs Prämissen gibt es genau zwei zulässige Belegungen.",
+        "In jeder zulässigen Belegung ist $S$ wahr.",
+        "Es gibt keine zulässige Belegung, in der $P$ und $T$ zugleich wahr sind.",
+        "Bereits aus (1)–(4) allein folgt, dass $T$ falsch ist.",
+        "Wenn man Prämisse (5) streicht, entsteht zusätzlich eine dritte zulässige Belegung mit $P$ und $T$ zugleich wahr."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDer $P$-Zweig liefert genau $P,Q,R,S,\\neg T$. Der $\\neg P$-Zweig wird durch (6) auf $T$ und durch (4) auf $\\neg S$ gezwungen und liefert $\\neg P,\\neg Q,\\neg R,\\neg S,T$. Andere Fälle scheitern an (1)–(6).\n\nGenau zwei Belegungen bleiben.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nIm $T$-Zweig ist $S$ falsch. Nur der $P$-Zweig hat $S$ wahr. Die Allaussage ist daher falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nAus $P$ folgen $Q$, $R$, $S$; (4) erzwingt dann $\\neg T$. $P$ und $T$ können nicht zusammen auftreten.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nOhne (5) und (6) bleibt der Zweig $\\neg P,\\neg Q,\\neg R,\\neg S,T$ mit (1)–(4) verträglich: (4) ist durch $T$ und $\\neg S$ erfüllt. $T$ ist also durch (1)–(4) nicht ausgeschlossen.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nSelbst ohne (5) verbieten (1)–(4) die Kombination $P\\land T$: aus $P$ folgt $S$, und (4) lässt dann kein $T$ zu. Es kommt keine dritte Belegung hinzu.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Aus (1)–(3) folgt die Kette $P\\Rightarrow Q\\Rightarrow R\\Rightarrow S$.\n\nFall $P$: Dann $Q$, $R$, $S$; aus (4) folgt $\\neg T$; (5) ist erfüllt; (6) ist erfüllt.\nZulässig: $P,Q,R,S,\\neg T$.\n\nFall $\\neg P$: Aus (1) folgt $\\neg Q$. Aus (6) folgt $T$. Aus (4) folgt $\\neg S$.\nAus (3) und $\\neg S$ folgt $\\neg R$. (5) verlangt $\\neg P$, was hier gilt.\nZulässig: $\\neg P,\\neg Q,\\neg R,\\neg S,T$.\n\nGenau diese zwei Belegungen erfüllen alle sechs Prämissen. $P$ und $T$ sind nie zugleich wahr:\naus $P$ folgt $S$ und damit $\\neg T$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M02",
+      "id": "WISO-M7-M02",
+      "title": "Hebbare Lücke bei Wurzelverschiebung um 3",
+      "chapter": 2,
+      "subsection": "2.2",
+      "difficulty_level": "5/5",
+      "context": "Es sei\n$$\nh(x)=\\dfrac{\\sqrt{x+3}-2}{x-1}\n$$\nfür alle reellen $x$ im maximalen Definitionsbereich. Zusätzlich wird die durch Kürzen entstehende Vereinfachung betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der maximale Definitionsbereich von $h$ ist $[-3,\\infty)\\setminus\\{1\\}$.",
+        "Die hebbare Unstetigkeit an $x=1$ wird durch den Wert $\\dfrac12$ stetig ergänzt.",
+        "Es gilt $h(6)=\\dfrac15$.",
+        "Die Gleichung $h(x)=\\dfrac13$ besitzt genau eine Lösung im Definitionsbereich, und diese liegt in $(-3,0)$.",
+        "Für jedes $x$ im Definitionsbereich gilt $h(x)<\\dfrac12$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDer Radikand erzwingt $x\\ge -3$, der Nenner schließt $x=1$ aus. An keiner anderen Stelle verschwindet der Nenner. Genau diese Menge ist der Definitionsbereich.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nNach dem Kürzen ist der Grenzwert\n$$\n\\lim_{x\\to 1}h(x)=\\dfrac{1}{\\sqrt{4}+2}=\\dfrac14,\n$$\nnicht $\\tfrac12$. Die Behauptung nennt den falschen Ergänzungswert.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nMit der gekürzten Form:\n$$\nh(6)=\\dfrac{1}{\\sqrt{9}+2}=\\dfrac{1}{5}.\n$$\nDirekt: $(\\sqrt{9}-2)/(6-1)=(3-2)/5=\\tfrac15$.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\n$$\n\\dfrac{1}{\\sqrt{x+3}+2}=\\dfrac13\\implies\\sqrt{x+3}=1\\implies x=-2.\n$$\nEs ist $-2\\in(-3,0)$ und $-2\\neq 1$, also genau eine zulässige Lösung.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nAn der linken Grenze ist $h(-3)=\\dfrac{\\sqrt{0}-2}{-3-1}=\\dfrac12$, und $-3$ liegt im Definitionsbereich. Die strikte Ungleichung $h(x)<\\tfrac12$ gilt dort nicht.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Nenner null bei $x=1$; Radikand verlangt $x\\ge -3$. An $x=1$ ist auch der Zähler null, denn $\\sqrt{4}-2=0$. Erweitern mit der Konjugierten:\n$$\nh(x)=\\dfrac{(x+3)-4}{(x-1)(\\sqrt{x+3}+2)}=\\dfrac{1}{\\sqrt{x+3}+2}\\qquad(x\\neq 1).\n$$\nDefinitionsmenge $[-3,\\infty)\\setminus\\{1\\}$. Stetige Ergänzung an $x=1$ durch den Wert $\\tfrac14$. Für $x>-3$ ist $h(x)>0$; an $x=-3$ gilt $h(-3)=\\dfrac{0-2}{-3-1}=\\dfrac12$.\n$$\nh(6)=\\dfrac{1}{3+2}=\\dfrac15,\\qquad\nh(x)=\\dfrac13\\iff\\sqrt{x+3}+2=3\\iff x=-2.\n$$",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M03",
+      "id": "WISO-M7-M03",
+      "title": "Annuität 55000 zu 5 Prozent über fünf Jahre",
+      "chapter": 3,
+      "subsection": "3.6",
+      "difficulty_level": "5/5",
+      "context": "Ein Kredit über EUR $55\\,000$ wird durch fünf gleiche Jahresendzahlungen bei effektivem Jahreszins $5\\%$ getilgt. Sei $A$ die Annuität und $B_k$ die Restschuld unmittelbar nach der $k$-ten Zahlung ($B_0=55\\,000$). Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Annuität $A$ liegt streng zwischen $12\\,500$ und $13\\,000$.",
+        "Nach der zweiten Zahlung ist die Restschuld noch größer als $36\\,000$.",
+        "Die Zinsen des ersten Jahres betragen genau EUR $2750$, und die Tilgung des ersten Jahres liegt streng zwischen $9900$ und $10\\,000$.",
+        "Weil die Annuität konstant ist, ist die Tilgung in jedem der fünf Jahre dieselbe.",
+        "Die über die gesamte Laufzeit gezahlten Zinsen liegen streng zwischen $8000$ und $9000$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$1{,}05^{5}=1{,}2762815625$, also $1-1{,}05^{-5}\\approx 0{,}2165$ und\n$$\nA=55000\\cdot\\dfrac{0{,}05}{0{,}2165}\\approx 12\\,703{,}61\\in(12500,13000).\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$$\nB_2=A\\cdot\\dfrac{1-1{,}05^{-3}}{0{,}05}\\approx 34\\,595{,}09<36000.\n$$\nDie Schwelle $36\\,000$ wird unterschritten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nJahreszinsen: $55\\,000\\cdot 0{,}05=2750$. Tilgung: $A-2750\\approx 9953{,}61\\in(9900,10000)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBei Annuitätendarlehen sinkt der Zinsanteil mit der Restschuld; der Tilgungsanteil steigt. Konstante Rate erzwingt keine konstante Tilgung.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nGesamtzahlung $5A\\approx 63\\,518{,}07$, davon Schuld $55\\,000$, Rest\n$$\n5A-S\\approx 8518{,}07\\in(8000,9000).\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Mit $S=55\\,000$, $r=0{,}05$, $n=5$ ist\n$$\nA=S\\cdot\\dfrac{r}{1-(1+r)^{-n}}=55000\\cdot\\dfrac{0{,}05}{1-1{,}05^{-5}}\\approx 12\\,703{,}61.\n$$\nRestschuld nach $k$ Zahlungen:\n$$\nB_k=A\\cdot\\dfrac{1-(1+r)^{-(n-k)}}{r}.\n$$\nInsbesondere $B_1\\approx 45\\,046{,}39$, $B_2\\approx 34\\,595{,}09$. Zinsen im ersten Jahr: $S r=2750$; Tilgung im ersten Jahr: $A-2750\\approx 9953{,}61$. Gesamte Zinslast $5A-S\\approx 8518{,}07$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M04",
+      "id": "WISO-M7-M04",
+      "title": "Betrag gleich Wurzel, kleinere Lösung negativ am Kern",
+      "chapter": 4,
+      "subsection": "4.3",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen Lösungen von\n$$\n|2x-3|=\\sqrt{3x+1}.\n$$\nZusätzlich wird die unkritische Ersatzgleichung $2x-3=\\sqrt{3x+1}$ ohne Betrag betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Originalgleichung hat genau zwei verschiedene reelle Lösungen.",
+        "Beide Lösungen erfüllen $2x-3\\ge 0$.",
+        "Die Ersatzgleichung $2x-3=\\sqrt{3x+1}$ hat genau eine reelle Lösung, und diese ist die größere Lösung der Originalgleichung.",
+        "Weil Quadrieren den Definitionsbereich verlässt, muss mindestens eine der beiden Quadratwurzeln der Hilfsgleichung eine Scheinlösung sein.",
+        "Die kleinere Lösung liegt streng zwischen $0$ und $1$, die größere streng zwischen $3$ und $4$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDiskriminante $\\sqrt{97}>0$ liefert zwei Kandidaten; beide liegen im Definitionsbereich und bestehen die Probe in $|2x-3|=\\sqrt{3x+1}$. Genau zwei Lösungen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nAn $x_{-}\\approx 0{,}644$ ist $2x_{-}-3\\approx -1{,}712<0$. Der Betrag ist nötig; die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$2x-3=\\sqrt{3x+1}\\ge 0$ erzwingt $x\\ge\\tfrac32$. Nur $x_{+}\\approx 3{,}106$ liegt darüber und löst beide Formen. $x_{-}$ fällt aus der Ersatzgleichung heraus.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBeide Kandidaten liegen in $x\\ge -\\tfrac13$ und bestehen die Probe. Quadrieren erzeugt hier keine Scheinlösung; die pauschale Regel greift nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\sqrt{97}\\approx 9{,}849$, also\n$$\nx_{-}=(15-9{,}849)/8\\approx 0{,}644\\in(0,1),\\qquad\nx_{+}=(15+9{,}849)/8\\approx 3{,}106\\in(3,4).\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Definitionsbereich $x\\ge -\\tfrac13$. Quadrieren liefert\n$$\n(2x-3)^{2}=3x+1\\implies 4x^{2}-15x+8=0,\\qquad\nx=\\dfrac{15\\pm\\sqrt{97}}{8}.\n$$\nBeide Kandidaten liegen in $[-\\tfrac13,\\infty)$ und erfüllen die Ausgangsgleichung:\n$$\nx_{-}=\\dfrac{15-\\sqrt{97}}{8}\\approx 0{,}644,\\qquad\nx_{+}=\\dfrac{15+\\sqrt{97}}{8}\\approx 3{,}106.\n$$\nBei $x_{-}$ ist $2x-3<0$; die Ersatzgleichung ohne Betrag verwirft $x_{-}$ und behält nur $x_{+}$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M05",
+      "id": "WISO-M7-M05",
+      "title": "Zwei Kapazitäten, Optimum bei vier und vier",
+      "chapter": 5,
+      "subsection": "5.5",
+      "difficulty_level": "5/5",
+      "context": "Zulässig sind alle $(x,y)$ mit\n$$\n2x+y\\le 12,\\qquad x+2y\\le 12,\\qquad x\\ge 0,\\qquad y\\ge 0.\n$$\nZu maximieren ist $Z=4x+5y$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Das Maximum von $Z$ auf dem zulässigen Bereich ist $36$ und wird genau im Punkt $(4,4)$ angenommen.",
+        "Im Punkt $(0,6)$ ist $Z$ größer als in jedem anderen Eckpunkt außer $(4,4)$.",
+        "Jede zulässige Lösung mit $x=5$ erreicht mindestens $Z=30$.",
+        "Der zulässige Bereich enthält den Punkt $(5,5)$.",
+        "Ersetzt man das Ziel durch $Z^{\\ast}=x+6y$, so bleibt $(4,4)$ der eindeutige Maximalpunkt."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nUnter den vier Ecken ist $Z(4,4)=36$ streng größer als $30$, $24$ und $0$. Ein lineares Ziel auf einem Polygon nimmt das Maximum in einer Ecke an — hier einzig bei $(4,4)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\n$Z(0,6)=30$, $Z(6,0)=24$, $Z(0,0)=0$. Unter den Ecken außer $(4,4)$ ist $(0,6)$ der beste.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nMit $x=5$ erzwingt $2\\cdot 5+y\\le 12$ die Schranke $y\\le 2$; zugleich $5+2y\\le 12\\Rightarrow y\\le 3{,}5$. Zulässig ist etwa $(5,2)$ mit $Z=20+10=30$ — aber auch $(5,0)$ mit $Z=20<30$. Nicht jede solche Lösung erreicht $30$.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\n$2\\cdot 5+5=15>12$ und $5+2\\cdot 5=15>12$. Beide Kapazitäten sind verletzt; $(5,5)$ liegt außerhalb.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nMit $Z^{\\ast}=x+6y$ gilt $Z^{\\ast}(0,6)=36$ und $Z^{\\ast}(4,4)=28$. Das Maximum wandert zur Ecke $(0,6)$; $(4,4)$ ist nicht mehr maximal.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Ecken des zulässigen Bereichs: $(0,0)$, $(6,0)$, $(0,6)$ und der Schnitt\n$$\n2x+y=12,\\; x+2y=12\\implies x=4,\\; y=4.\n$$\nZielwerte: $Z(0,0)=0$, $Z(6,0)=24$, $Z(0,6)=30$, $Z(4,4)=36$. Das Maximum $36$ liegt einzig am Schnittpunkt $(4,4)$. Entlang $x+2y=12$ ist $Z=4x+5(6-\\tfrac12 x)=30+\\tfrac32 x$ streng wachsend in $x$; entlang $2x+y=12$ ist $Z=4x+5(12-2x)=60-6x$ streng fallend in $x$ — das Maximum sitzt nur am Schnitt.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M06",
+      "id": "WISO-M7-M06",
+      "title": "Vier kritische Stellen, Lösung mit zwei Strahlen",
+      "chapter": 6,
+      "subsection": "6.1",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen $x$ mit\n$$\n\\dfrac{(x-1)(x-5)}{(x+2)(x-4)}\\ge 0.\n$$\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Lösungsmenge ist $L=(-\\infty,-2)\\cup[1,4)\\cup[5,\\infty)$.",
+        "Die Zahl $0$ gehört zur Lösungsmenge.",
+        "Jedes $x>5$ ist eine Lösung, und $x=5$ ist ebenfalls eine Lösung.",
+        "Weil der Zähler bei $x=1$ verschwindet, gehört eine ganze Umgebung von $1$ zur Lösungsmenge.",
+        "Das offene Intervall $(4,5)$ ist disjunkt zur Lösungsmenge."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nVorzeichentabelle und Aufnahme der Nullstellen $1$, $5$ sowie Ausschluss der Pole $-2$, $4$ liefern genau diese Menge.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $x=0$ ist der Bruch $\\dfrac{(-1)(-5)}{(2)(-4)}=\\dfrac{5}{-8}<0$. Null liegt in $(-2,1)$ und fällt aus $L$ heraus.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nFür $x>5$ sind Zähler und Nenner positiv. An $x=5$ ist der Zähler null und der Nenner $(7)(1)\\neq 0$, also gilt Gleichheit $\\ge 0$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nLinks von $1$ (noch in $(-2,1)$) ist der Bruch negativ. Nur $x=1$ selbst und rechts davon bis vor $4$ gehören zu $L$ — keine beidseitige Umgebung.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nIm Intervall $(4,5)$ ist der Bruch negativ (Testpunkt $4{,}5$). Kein Punkt daraus erfüllt $\\ge 0$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Kritische Stellen: Nullstellen $x=1$, $x=5$; Pole $x=-2$, $x=4$. Vorzeichentabelle (Testpunkte):\n$$\n\\begin{array}{c|c}\n\\text{Intervall}& \\text{Vorzeichen}\\\\\n\\hline\n(-\\infty,-2)& +\\\\\n(-2,1)& -\\\\\n(1,4)& +\\\\\n(4,5)& -\\\\\n(5,\\infty)& +\n\\end{array}\n$$\nEinschließlich der Nullstellen, ausschließlich der Pole:\n$$\nL=(-\\infty,-2)\\cup[1,4)\\cup[5,\\infty).\n$$\nLinker Strahl offen am Pol $-2$; bei $4$ endet das mittlere Stück offen; $5$ gehört zu $L$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M07",
+      "id": "WISO-M7-M07",
+      "title": "Parabel und Gerade, Schnitt bei drei plus minus Wurzel drei",
+      "chapter": 7,
+      "subsection": "7.5",
+      "difficulty_level": "5/5",
+      "context": "Es seien\n$$\nf(x)=x^{2}-5x+4,\\qquad g(x)=x-2.\n$$\nBetrachtet werden Schnittpunkte, Scheitel und Lagevergleiche. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Gleichung $f(x)=g(x)$ hat genau zwei reelle Lösungen, nämlich $3\\pm\\sqrt{3}$.",
+        "Der Scheitel von $f$ liegt oberhalb der Geraden $g$.",
+        "Beide Schnittstellen liegen außerhalb des offenen Intervalls $(2,4)$.",
+        "Auf dem Intervall $[1,4]$ gilt durchgängig $f(x)\\ge g(x)$.",
+        "Die kleinere Schnittstelle liegt streng zwischen $1$ und $2$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDiskriminante $36-24=12=4\\cdot 3$ liefert $x=\\dfrac{6\\pm 2\\sqrt{3}}{2}=3\\pm\\sqrt{3}$. Zwei verschiedene reelle Schnitte.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nScheitelwert $f(2{,}5)=-2{,}25$, Geradenwert $g(2{,}5)=0{,}5$. Es gilt $-2{,}25<0{,}5$; der Scheitel liegt unterhalb von $g$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$3-\\sqrt{3}\\approx 1{,}268<2$ und $3+\\sqrt{3}\\approx 4{,}732>4$. Keine der beiden liegt in $(2,4)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBereits am Scheitel $x=2{,}5\\in[1,4]$ ist $f=-2{,}25<0{,}5=g$. Die behauptete Ungleichung gilt nicht durchgängig.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$1<3-\\sqrt{3}<2$, denn $\\sqrt{3}\\approx 1{,}732$ liefert $1{,}268\\in(1,2)$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$f(x)=(x-1)(x-4)$ hat Nullstellen $1$ und $4$; Scheitel bei $x=\\tfrac52$ mit\n$$\nf\\bigl(\\tfrac52\\bigr)=\\bigl(\\tfrac52\\bigr)^{2}-5\\cdot\\tfrac52+4=-\\dfrac94.\n$$\nSchnitt $f=g$:\n$$\nx^{2}-5x+4=x-2\\implies x^{2}-6x+6=0\\implies x=3\\pm\\sqrt{3}.\n$$\nNumerisch $x_{-}\\approx 1{,}268$, $x_{+}\\approx 4{,}732$. Beide Schnittpunkte liegen außerhalb von $[2,4]$; zwischen den Nullstellen von $f$ gilt $f\\le 0$, während $g(x)=x-2$ auf $[2,4]$ nichtnegativ ist — dort liegt $f$ unterhalb von $g$ außer an möglichen Rändern (an $x=4$: $f(4)=0$, $g(4)=2$).",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M08",
+      "id": "WISO-M7-M08",
+      "title": "Zwei Preisbeobachtungen, Exponent minus drei Halbe",
+      "chapter": 8,
+      "subsection": "8.5",
+      "difficulty_level": "5/5",
+      "context": "Zwei Beobachtungen einer Nachfrage lauten $(p,q)=(4;\\,48)$ und $(16;\\,6)$. Das Modell ist $q=k\\,p^{b}$ mit $k>0$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Exponent ist $b=-\\dfrac32$, und die Konstante ist $k=384$.",
+        "Bei Preis $p=4$ ist die Grenznachfrage $q'(4)=-12$.",
+        "Die Preiselastizität der Nachfrage ist in diesem Modell konstant gleich $-\\dfrac32$.",
+        "Beim Preis $p=9$ liegt die Nachfragemenge streng zwischen $14$ und $15$.",
+        "Verdoppelt man den Preis, so verdoppelt sich die Nachfragemenge."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$\\ln(6/48)=\\ln(1/8)=-3\\ln 2$, $\\ln 4=2\\ln 2$, Quotient $-\\tfrac32$. Rückrechnung $k=48/4^{-3/2}=48\\cdot 8=384$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$q'(p)=-576\\,p^{-5/2}$, also $q'(4)=-576/4^{5/2}=-576/32=-18$, nicht $-12$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nBei $q=k p^{b}$ ist $\\varepsilon=b$ überall. Hier $b=-\\tfrac32$.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\n$q(9)=384\\cdot 9^{-3/2}=384/27=\\dfrac{128}{9}\\approx 14{,}222\\in(14,15)$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nBei $b=-\\tfrac32$ führt Preisverdopplung zu Faktor $2^{-3/2}=\\tfrac{1}{2\\sqrt{2}}\\approx 0{,}354$ — die Menge sinkt stark, sie verdoppelt sich nicht.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Aus den beiden Punkten:\n$$\nb=\\dfrac{\\ln(6/48)}{\\ln(16/4)}=\\dfrac{\\ln(1/8)}{\\ln 4}=-\\dfrac{3}{2},\n$$\nund $k=48\\cdot 4^{3/2}=48\\cdot 8=384$. Also $q=384\\,p^{-3/2}$.\nGrenznachfrage $\\dfrac{\\mathrm{d}q}{\\mathrm{d}p}=384\\cdot\\bigl(-\\dfrac32\\bigr)p^{-5/2}$; an $p=4$:\n$$\nq'(4)=-576\\cdot 4^{-5/2}=-576/32=-18.\n$$\nPreiselastizität $\\varepsilon=b=-\\tfrac32$ konstant. Bei $p=9$: $q=384\\cdot 9^{-3/2}=384/27=\\tfrac{128}{9}$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M09",
+      "id": "WISO-M7-M09",
+      "title": "Drei rationale Wurzeln minus eins, eins und vier",
+      "chapter": 9,
+      "subsection": "9.5",
+      "difficulty_level": "5/5",
+      "context": "Es sei $p(x)=x^{3}-4x^{2}-x+4$. Zuerst wird $p$ selbst untersucht. Danach die Schar $p(x)-k$ für reelle $k$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "$p$ hat genau die drei reellen Nullstellen $-1$, $1$ und $4$.",
+        "Beide kritischen Stellen von $p$ liegen im offenen Intervall $(0,3)$.",
+        "Es gilt $p(0)=4$, und daher ist $x=0$ eine Nullstelle von $p(x)-4$.",
+        "Die lokale Extremstelle $x_{+}=\\dfrac{4+\\sqrt{19}}{3}$ liegt streng zwischen $2$ und $3$.",
+        "Für jedes reelle $k$ hat $p(x)-k$ mindestens zwei verschiedene reelle Nullstellen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus $p(1)=0$ folgt die Zerlegung $(x-1)(x^{2}-3x-4)=(x-1)(x-4)(x+1)$. Drei einfache reelle Nullstellen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$x_{-}=(4-\\sqrt{19})/3\\approx -0{,}120<0$ liegt links von $0$. Nur $x_{+}$ liegt in $(0,3)$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nKonstanter Term $p(0)=4$. Also $p(0)-4=0$.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\n$\\sqrt{19}\\approx 4{,}359$, also $x_{+}\\approx 8{,}359/3\\approx 2{,}786\\in(2,3)$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nAußerhalb des Werteintervalls zwischen lokalem Hoch- und Tiefpunkt schneidet die Horizontale $y=k$ den Graphen nur einmal. Gegenbeispiel: sehr großes $k$.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Rationale Nullstellenprüfung liefert $p(1)=0$, und Polynomdivision ergibt\n$$\np(x)=(x-1)(x^{2}-3x-4)=(x-1)(x-4)(x+1).\n$$\nNullstellen $-1$, $1$, $4$. Ableitung $p'(x)=3x^{2}-8x-1$ mit\n$$\nx=\\dfrac{4\\pm\\sqrt{19}}{3};\n$$\nbeide kritisch, $\\sqrt{19}\\approx 4{,}359$, also $x_{+}\\approx 2{,}786$ und $x_{-}\\approx -0{,}120$.\n$p(x)-k=0$ hat genau dann drei verschiedene reelle Wurzeln, wenn $k$ streng zwischen den lokalen Extremwerten liegt. Insbesondere hat $p(x)-4$ die Wurzel $0$ (denn $p(0)=4$) und zerfällt weiter.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M10",
+      "id": "WISO-M7-M10",
+      "title": "Zwei stetige Bestände, Führungswechsel nach Jahr 16",
+      "chapter": 10,
+      "subsection": "10.1",
+      "difficulty_level": "5/5",
+      "context": "Bestand $A$ startet bei $3\\,200$ und wächst stetig mit $7\\%$ pro Jahr. Bestand $B$ startet zwei Jahre später bei $2\\,100$ und wächst stetig mit $11\\%$ pro Jahr. Es sei $t$ die Zeit in Jahren seit dem Start von $A$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Zeitpunkt, zu dem beide Bestände gleich groß sind, liegt streng zwischen $16$ und $17$.",
+        "Zum Zeitpunkt $t=10$ ist Bestand $B$ bereits größer als Bestand $A$.",
+        "Würde $B$ bereits zum Zeitpunkt $0$ mit $2\\,100$ starten (ohne Delay), so läge der Schnitt streng zwischen $10$ und $11$.",
+        "Die Wachstumsrate von $B$ ist um genau vier Prozentpunkte höher als die von $A$; deshalb verdoppelt $B$ seinen Vorsprung alle $1/0{,}04$ Jahre.",
+        "Zum Schnittzeitpunkt $t^{\\ast}$ liegt der gemeinsame Bestand streng zwischen $9000$ und $11\\,000$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$t^{\\ast}=(\\ln(32/21)+0{,}22)/0{,}04$. Mit $\\ln(32/21)\\approx 0{,}421$ folgt $t^{\\ast}\\approx 16{,}03\\in(16,17)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $t=10\\ge 2$: $A(10)=3200\\,e^{0{,}7}\\approx 6430$, $B(10)=2100\\,e^{0{,}88}\\approx 5060$. Noch ist $A>B$; der Wechsel kommt erst bei $\\approx 16{,}03$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nOhne Delay: $3200\\,e^{0{,}07t}=2100\\,e^{0{,}11t}\\Rightarrow t=\\ln(32/21)/0{,}04\\approx 10{,}53\\in(10,11)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie Differenz der Raten ist $0{,}04$, sie steuert den Schnittzeitpunkt — aber $B$ startet später und kleiner. Es gibt keinen konstanten „Vorsprung“, der sich alle $25$ Jahre verdoppelt.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$A(t^{\\ast})=3200\\,e^{0{,}07\\cdot 16{,}03}\\approx 3200\\cdot e^{1{,}122}\\approx 9828\\in(9000,11000)$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$$\nA(t)=3200\\,e^{0{,}07t},\\qquad\nB(t)=2100\\,e^{0{,}11(t-2)}\\quad(t\\ge 2).\n$$\nGleichsetzen:\n$$\n\\ln\\dfrac{32}{21}+0{,}07t=0{,}11(t-2)\\implies\nt=\\dfrac{\\ln(32/21)+0{,}22}{0{,}04}\\approx 16{,}030.\n$$\nDer Führungswechsel liegt streng zwischen $16$ und $17$. Für $2\\le t<t^{\\ast}$ ist $A>B$; danach $B>A$. Bei gleichem Startzeitpunkt (hypothetisch ohne Delay) wäre der Schnitt schon bei $\\ln(32/21)/0{,}04\\approx 10{,}53$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M11",
+      "id": "WISO-M7-M11",
+      "title": "Offene Schachtel aus 42 mal 30, eine kritische Stelle außen",
+      "chapter": 11,
+      "subsection": "11.3",
+      "difficulty_level": "5/5",
+      "context": "Aus einem Rechteckblech der Maße $42\\,\\mathrm{cm}\\times 30\\,\\mathrm{cm}$ werden an den Ecken kongruente Quadrate der Seitenlänge $a$ ausgeschnitten und die Seiten hochgeklappt. Das Volumen der offenen Schachtel sei $V(a)$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Im geometrisch zulässigen Intervall liegt genau eine kritische Stelle, und sie liegt streng zwischen $5$ und $6$.",
+        "Beide Wurzeln von $V'(a)=0$ liegen im offenen Intervall $(0,15)$.",
+        "Das maximale Volumen auf dem zulässigen Intervall liegt streng zwischen $3000$ und $3500$.",
+        "Weil $V'(a)$ eine nach oben geöffnete Parabel ist, ist jede kritische Stelle ein lokales Minimum von $V$.",
+        "Für $a=3$ ist das Volumen streng kleiner als für $a=6$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$a_{-}=12-\\sqrt{39}$ mit $\\sqrt{39}\\approx 6{,}245$ ergibt $\\approx 5{,}755\\in(5,6)$. $a_{+}$ liegt oberhalb von $15$ und fällt aus.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$a_{+}=12+\\sqrt{39}\\approx 18{,}245>15$ ist geometrisch unzulässig. Nur eine Wurzel liegt in $(0,15)$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$V(a_{-})=a_{-}(42-2a_{-})(30-2a_{-})\\approx 3244\\in(3000,3500)$. An den Rändern verschwindet $V$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$V'$ ist nach oben geöffnet, aber die Klassifikation von $V$ folgt aus dem Vorzeichenwechsel von $V'$ bzw. aus $V''$. An $a_{-}$ wechselt $V'$ von $+$ nach $-$ — lokales Maximum, kein Minimum.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$V(3)=3\\cdot 36\\cdot 24=2592$, $V(6)=6\\cdot 30\\cdot 18=3240$. Es gilt $2592<3240$; zudem liegt $6$ näher am Maximalpunkt $\\approx 5{,}76$ als $3$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$$\nV(a)=a(42-2a)(30-2a)=4a^{3}-144a^{2}+1260a,\\qquad 0<a<15.\n$$\n$$\nV'(a)=12a^{2}-288a+1260=0\\iff a^{2}-24a+105=0.\n$$\nKritische Stellen\n$$\na=\\dfrac{24\\pm\\sqrt{156}}{2}=12\\pm\\sqrt{39};\n$$\n$a_{+}=12+\\sqrt{39}\\approx 18{,}245>15$ liegt außerhalb der Zulässigkeit, $a_{-}=12-\\sqrt{39}\\approx 5{,}755$ liegt in $(0,15)$.\n$V''(a_{-})<0$ (oder Randvergleich): lokales und globales Maximum auf $(0,15)$ bei $a_{-}$ mit $V(a_{-})\\approx 3244$. An den Rändern $V\\to 0$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M12",
+      "id": "WISO-M7-M12",
+      "title": "Prävalenz 1,2 Prozent, positiver Vorhersagewert ein Viertel",
+      "chapter": 12,
+      "subsection": "12.6",
+      "difficulty_level": "5/5",
+      "context": "Eine Krankheit hat Prävalenz $1{,}2\\%$. Ein Test erkennt Erkrankte mit Wahrscheinlichkeit $91\\%$ (Sensitivität) und Gesunde mit Wahrscheinlichkeit $96{,}5\\%$ (Spezifität). Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der positive Vorhersagewert $P(D\\mid +)$ ist genau $0{,}24$.",
+        "Mehr als $5\\%$ aller Getesteten erhalten ein positives Ergebnis.",
+        "Der negative Vorhersagewert $P(D^{c}\\mid -)$ liegt streng über $0{,}99$.",
+        "Weil Sensitivität und Spezifität beide über $90\\%$ liegen, muss auch $P(D\\mid +)$ über $90\\%$ liegen.",
+        "Die Likelihood-Ratio positiv $\\dfrac{P(+\\mid D)}{P(+\\mid D^{c})}$ liegt streng zwischen $25$ und $27$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nZähler $0{,}91\\cdot 0{,}012=0{,}01092$, Nenner $0{,}01092+0{,}035\\cdot 0{,}988=0{,}0455$, Quotient $0{,}24$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$P(+)=0{,}0455<0{,}05$. Die $5\\%$-Schwelle wird unterschritten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nWie oben $\\approx 0{,}9989>0{,}99$. Falsch-negative Masse $0{,}09\\cdot 0{,}012$ ist winzig gegen die richtig-negativen.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBei kleiner Prävalenz dominieren die falsch positiven. Hier ist $P(D\\mid +)=0{,}24$ trotz hoher Sensitivität/Spezifität. Die Implikation ist falsch.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\dfrac{0{,}91}{0{,}035}=26$ liegt in $(25,27)$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$P(D)=0{,}012$, $P(+\\mid D)=0{,}91$, $P(-\\mid D^{c})=0{,}965$, also $P(+\\mid D^{c})=0{,}035$. Bayes:\n$$\nP(D\\mid +)=\\dfrac{0{,}91\\cdot 0{,}012}{0{,}91\\cdot 0{,}012+0{,}035\\cdot 0{,}988}=\\dfrac{0{,}01092}{0{,}0455}=0{,}24.\n$$\n$$\nP(D^{c}\\mid -)=\\dfrac{0{,}965\\cdot 0{,}988}{0{,}965\\cdot 0{,}988+0{,}09\\cdot 0{,}012}\\approx 0{,}9989.\n$$\n$P(+)=0{,}0455$. Der positive Vorhersagewert ist deutlich kleiner als Sensitivität oder Spezifität; der negative ist nahe bei $1$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M7-M13",
+      "id": "WISO-M7-M13",
+      "title": "Binomial n=9, p=0,4: zwei Modi und Tschebyscheff",
+      "chapter": 13,
+      "subsection": "13.4",
+      "difficulty_level": "5/5",
+      "context": "Sei $X$ binomialverteilt mit $n=9$ und $p=0{,}4$. Betrachtet werden Erwartungswert, Modus, Schwanzwahrscheinlichkeiten und die Tschebyscheff-Schranke zu $P(|X-3{,}6|\\ge 3)$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "$X$ besitzt genau zwei Modi, nämlich $3$ und $4$.",
+        "Es gilt $P(X\\ge 6)>0{,}12$.",
+        "Die Tschebyscheff-Schranke liefert $P(|X-3{,}6|\\ge 3)\\le 0{,}24$, und der exakte Wert liegt streng unter $0{,}05$.",
+        "Der Erwartungswert ist zugleich der eindeutige Modus.",
+        "Bei Beobachtung $X=5$ ist die Likelihood unter $p=0{,}4$ kleiner als unter $p=0{,}5$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$(n+1)p=4$ ist ganzzahlig; dann sind $(n+1)p-1=3$ und $(n+1)p=4$ die beiden Modi, und die Punktmassen sind gleich.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nExakt $P(X\\ge 6)=\\sum_{k=6}^{9}\\binom{9}{k}0{,}4^{k}0{,}6^{9-k}\\approx 0{,}0994<0{,}12$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$\\mathrm{Var}/9=2{,}16/9=0{,}24$. Exakt tragen nur $X=0$ und $X\\in\\{7,8,9\\}$ bei ($|1-3{,}6|=2{,}6<3$), zusammen etwa $0{,}035<0{,}05$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$\\mathbb{E}[X]=3{,}6$ ist gar kein Wert von $X$. Die Modi sind die ganzen Zahlen $3$ und $4$ — nicht eindeutig und nicht gleich dem Erwartungswert.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDer Quotient $P(X=5\\mid 0{,}4)/P(X=5\\mid 0{,}5)\\approx 0{,}679<1$. Die Beobachtung $5$ spricht eher für $p=0{,}5$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$\\mathbb{E}[X]=np=3{,}6$, $\\mathrm{Var}(X)=np(1-p)=2{,}16$. Weil $(n+1)p=4$ ganzzahlig ist, gibt es genau zwei Modi: $3$ und $4$, mit\n$$\nP(X=3)=P(X=4)\\approx 0{,}2508.\n$$\n$$\nP(X\\ge 6)\\approx 0{,}0994,\\qquad P(X\\le 1)\\approx 0{,}0705.\n$$\nTschebyscheff:\n$$\nP(|X-3{,}6|\\ge 3)\\le\\dfrac{2{,}16}{9}=0{,}24,\n$$\nwährend der exakte Wert $P(X=0)+P(X\\ge 7)\\approx 0{,}035$ deutlich kleiner ist. Likelihood-Quotient bei Beobachtung $X=5$:\n$$\n\\dfrac{P(X=5\\mid p=0{,}4)}{P(X=5\\mid p=0{,}5)}\\approx 0{,}679<1.\n$$",
+      "figure": "",
+      "tables_markdown": ""
+    }
+  ]
+}

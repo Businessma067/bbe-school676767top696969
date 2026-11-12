@@ -33,7 +33,7 @@ export const WISO_COURSE_COUNTS = {
   /** Unique practice cases across Wirtschaft, Math, and German reading. */
   practiceQuestions: 2546,
   /** WiSo-style exam papers via curated mocks and the mock builder. */
-  styleExams: 6,
+  styleExams: 7,
   /** Flashcard cards across Economics, Math, and German (also matching + tutor exam). */
   studyToolCards: 675,
   /**
@@ -69,7 +69,7 @@ export function courseHighlightBullets(track: CourseHighlightTrack): string[] {
     const pages = formatCount(WISO_COURSE_COUNTS.preparationMaterialPages);
     return [
       `${q} practice questions`,
-      "6+ WiSo-style exams",
+      "7+ WiSo-style exams",
       `${pages} preparation material pages`,
       coursePriceBullet("wiso-full-course"),
     ];

@@ -1,0 +1,302 @@
+[
+  {
+    "case_id": "WISO-M6-E01",
+    "id": "WISO-M6-E01",
+    "title": "HelixForm: Kapazitätsreserve gegen Linienbeitrag",
+    "subsection": "1.3",
+    "chapter": 1,
+    "difficulty_level": "hard",
+    "context": "HelixForm GmbH besitzt eine Anlage (historischer Preis 71.250) mit Jahreskapazität 720 Einheiten.\nReine Vermietung der Kapazität bringt 16,5 je Einheit; die Anlage bleibt geöffnet.\nZwei Linien teilen dieselbe Kapazität: Linie Helix liefert Stückdeckungsbeitrag 26,25 und\nverbraucht 1,5 Kapazitätseinheiten je Stück (Nachfrage höchstens 300). Linie Orbit liefert\n36 bei Verbrauch 2,4 (Nachfrage höchstens 180). Vermeidbare Jahresfixkosten 5.625 fallen\nbei jeder Öffnung an — Produktion oder Vermietung — und entfallen nur bei Schließung.\nSchließen liefert 0. Versunkene Anschaffung und Opportunitätskosten der Kapazität sind zu trennen.\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Das Optimum öffnet, fährt Helix bis 300 und vermietet den Rest; das Netto beträgt 6.705.",
+      "Volle Vermietung ohne Produktion liefert 6.255 und dominiert das Programm mit Helix.",
+      "Linie Orbit bleibt nach Opportunitätskosten der Kapazität außerhalb des Programms.",
+      "Vom Netto 6.705 ist der historische Kaufpreis 71.250 als Hürde abzuziehen, bevor Öffnen lohnt.",
+      "Schließen mit Netto 0 bleibt strikt schlechter als das optimale Öffnungsprogramm."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zuerst Kapazitätsbeitrag je Einheit: Helix liefert 26,25 / 1,5 = 17,5, Orbit nur 36 / 2,4 = 15.\nGegen Miete 16,5 bleibt allein Helix positiv (17,5 − 16,5 = 1 je Kapazitätseinheit; absolut\n26,25 − 1,5 · 16,5 = 1,5 je Stück). Orbit ist nach Opportunitätskosten negativ\n(36 − 2,4 · 16,5 = −3,6) und fällt aus.\n\nHelix bis Nachfrage 300 verbraucht 300 · 1,5 = 450; Restkapazität 720 − 450 = 270 wird vermietet.\nNetto: 300 · 26,25 + 270 · 16,5 − 5.625 = 7.875 + 4.455 − 5.625 = 6.705.\nFalle: Orbit wegen höherem Stückdeckungsbeitrag 36 vor Helix zu setzen — je Kapazitätseinheit\nverliert Orbit klar gegen Miete und gegen Helix.\n\nDie Aussage ist wahr.",
+      "Volle Vermietung bei Öffnung: 720 · 16,5 − 5.625 = 11.880 − 5.625 = 6.255.\nDas Helix-Programm liefert 6.705. Wegen 6.705 > 6.255 dominiert nicht die reine Miete,\nsondern Helix plus Restmiete.\n\nFalle: „Miete 16,5 unter Helix-Kapazitätsbeitrag 17,5, also ist reine Miete egal oder besser“ —\nsobald Helix die teureren Kapazitätsslots besetzt und nur der Rest vermietet wird, steigt das\nNetto um genau 300 · 1,5 = 450 von 6.255 auf 6.705.\n\nDie Aussage ist falsch.",
+      "Opportunitätskosten je Orbit-Stück: 2,4 · 16,5 = 39,6. Stückdeckungsbeitrag 36 liegt darunter;\nResidualbeitrag 36 − 39,6 = −3,6 < 0. Jede Orbit-Einheit verdrängt Miete oder Helix und vernichtet\nWert.\n\nSelbst auf freier Restkapazität nach Helix (270): höchstens 270 / 2,4 = 112,5 Stück Orbit\nbrächten 112,5 · (−3,6) = −405 zusätzlich. Falle: „freier Rest, also Orbit mitnehmen“ — frei heißt\nnicht kostenlos, solange Vermietung 16,5 je Kapazitätseinheit möglich ist.\n\nDie Aussage ist wahr.",
+      "Der Kaufpreis 71.250 ist versunken: er fällt bei Öffnen mit Helix, bei reiner Miete und bei\nSchließen gleichermaßen an und kürzt sich in jeder Differenz heraus. Bindend sind nur noch\nvermeidbare Fixkosten 5.625 und die laufenden Deckungsbeiträge bzw. Mieten.\n\n6.705 > 0 und 6.705 > 6.255 > 0 — Öffnen mit Helix dominiert Schließen und reine Miete ohne\nAbzug von 71.250. Falle: Buch- oder Anschaffungswert als zusätzliche Cash-Hürde zu lesen;\ndas verdoppelt versunkene Größe und verdreht die Rangfolge gegen jede Öffnung.\n\nDie Aussage ist falsch.",
+      "Schließen vermeidet 5.625, liefert aber weder Produktions- noch Mietzahlungen — Netto 0.\nOptimal öffnen liefert 6.705. Differenz 6.705 − 0 = 6.705 > 0.\n\nFalle: die vermeidbaren 5.625 gegen Schließen als Argument für Schließen zu werten, ohne die\nEinzahlungen 7.875 + 4.455 = 12.330 dagegenzuhalten. Einzahlungen decken Fixkosten und\nlassen 6.705 übrig; Schließen verwirft genau diesen Überschuss.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E02",
+    "id": "WISO-M6-E02",
+    "title": "Turbinen und Batteriepacks, asymmetrische Fracht",
+    "subsection": "1.2",
+    "chapter": 1,
+    "difficulty_level": "hard",
+    "context": "Zwei Länder, zwei Güter, Lohn je Stunde landesweit einheitlich. Land Nord braucht 3,2 Stunden\nfür eine Turbine und 8,0 für ein Batteriepack, Lohn 22,5. Land Süd braucht 6,4 Stunden\nfür Turbinen und 4,8 für Batteriepacks, Lohn 15. Batteriepacks von Süd nach Nord tragen Fracht\n87,5 und zusätzlich Einfuhrzoll 22,5. Turbinen von Süd nach Nord tragen Fracht 18,75 und Zoll\n7,5. Zuerst Güter-Opportunitätskosten, dann Lohnstückkosten, dann Zuschläge nacheinander.\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Die Güter-Opportunitätskosten geben Nord den Vorteil bei Turbinen und Süd bei Batteriepacks; der Lohn dreht diese Relation nicht.",
+      "Fracht allein dreht die Lohnkostenrangfolge bei Batteriepacks zulasten von Süd.",
+      "Fracht und Batteriezoll zusammen drehen die Batterie-Rangfolge. Der Turbinenzoll dreht die Turbinen-Rangfolge nicht zugunsten von Süd.",
+      "Weil Süd bei Batteriepacks den komparativen Vorteil hat, importiert Nord Batteriepacks auch nach Fracht und Zoll.",
+      "Ein Turbinenzoll in Höhe des Batteriezolls 22,5 macht Süd zum billigeren Turbinenlieferanten in Nord."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Komparativer Vorteil folgt aus Stundenquotienten. Turbinen in Nord: 3,2 / 8,0 = 0,4 Batteriepack\nje Turbine; in Süd: 6,4 / 4,8 = 4/3. Also hat Nord den Turbinen-Vorteil. Batteriepacks in Nord:\n8,0 / 3,2 = 2,5 Turbinen; in Süd: 4,8 / 6,4 = 0,75 — Vorteil Süd.\n\nWeil der Lohn in jedem Land für beide Güter gleich ist, kürzt er sich im Quotienten heraus\nund dreht die Güterrelation nicht. Falle: niedrigeren Lohn in Süd als Drehpunkt der\nGüterverhältnisse zu lesen — absolute Lohnniveaus ändern Stundenquotienten nicht.\n\nDie Aussage ist wahr.",
+      "Batterie Lohnstückkosten: Nord 8,0 · 22,5 = 180; Süd 4,8 · 15 = 72. Mit Fracht allein:\n72 + 87,5 = 159,5. Wegen 159,5 < 180 bleibt geliefertes Süd billiger als Heimware in Nord;\nder Vorsprung schrumpft von 108 auf 20,5, dreht aber nicht.\n\nFalle: „hohe Fracht 87,5 belastet Süd, also dreht sie“ — Belastung ist nicht Rangfolgenwechsel.\nDrehung verlangt geliefert ≥ 180; 159,5 liegt klar darunter.\n\nDie Aussage ist falsch.",
+      "Batteriepacks mit beiden Zuschlägen: 159,5 + 22,5 = 182 > 180 — Fracht und Zoll drehen\ngemeinsam, Heimware in Nord wird billiger. Turbinen ohne Zuschlag: Nord 3,2 · 22,5 = 72; Süd\n6,4 · 15 = 96 > 72. Mit Fracht 96 + 18,75 = 114,75; mit Zoll zusätzlich 114,75 + 7,5 = 122,25.\nJeder Zuschlag macht Importturbinen teurer, nicht billiger — eine Drehung zugunsten von Süd\nist unmöglich.\n\nFalle: Zoll wie einen Kostenvorteil des Exporteurs zu lesen. Zuschläge sind güterspezifisch\nnacheinander zu testen; nur Batteriepacks drehen, Turbinen nicht.\n\nDie Aussage ist wahr.",
+      "Komparativer Vorteil beschreibt relative Produktionskosten, nicht den gelieferten Preis nach\nZuschlägen. Süd hat den Batterie-Vorteil (0,75 gegen 2,5 Turbinen je Pack). Nach Fracht und\nZoll liegt geliefert 72 + 87,5 + 22,5 = 182 über Heimkosten 180.\n\nFalle: „komparativer Vorteil ⇒ Import trotz Zuschlägen“. Hier ist Heimbatterie nach beiden\nZuschlägen billiger; der gelieferte Preis entscheidet den Import, nicht allein das\nStundenverhältnis.\n\nDie Aussage ist falsch.",
+      "Süd ist bei Turbinen schon ohne Zoll lohnkostenteurer (96 gegen 72). Ein Importzoll in Höhe\n22,5 statt 7,5 belastet zusätzlich: 96 + 18,75 + 22,5 = 137,25 gegen Heim 72. Der Abstand wächst\nvon 24 (ohne Zuschlag) über 42,75 (mit Fracht) auf 65,25.\n\nFalle: Zoll und Liefervorteil zu verwechseln. Der Zoll trifft den Import und macht Süd relativ\nteurer, nicht billiger; schon die Basis 96 > 72 schließt einen Liefervorteil von Süd aus.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E03",
+    "id": "WISO-M6-E03",
+    "title": "Einkommensstoß mit Teilkompensation und NX-Leck",
+    "subsection": "2.2",
+    "chapter": 2,
+    "difficulty_level": "hard",
+    "context": "Geschlossene Identitätsrechnung mit Außenbeitragsleckage:\nC = 125 + 0,80 · (Y − T), T = 200 fest, I = 100, G = 150,\nNX = 50 − 0,05 · Y. Gleichgewicht über Y = C + I + G + NX.\nDrei Regime nacheinander: zuerst sinkt G um 25; parallel steigt autonomes I um 15;\ndanach steigt T um 20. Multiplikatoren mit NX-Abfluss, nicht mit 1/(1 − c).\nBewerten Sie jede Aussage.",
+    "statements": [
+      "Allein der G-Rückgang um 25 senkt das Gleichgewichtseinkommen um 100.",
+      "G-Rückgang und I-Anstieg kompensieren sich exakt; Y bleibt bei Y₀.",
+      "Nach allen drei Schocks liegt Y bei 956.",
+      "Der Betrag des Steuermultiplikators übersteigt den Ausgabenmultiplikator 1/0,25.",
+      "Wer 1/(1 − 0,80) ohne NX-Abfluss nutzt, überschätzt den Einkommensrückgang aus ΔG = −25."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Aus Y = 125 + 0,80(Y − T) + I + G + 50 − 0,05Y folgt\nY · (1 − 0,80 + 0,05) = 175 − 0,80T + I + G, also 0,25 · Y = RHS.\nAusgabenmultiplikator 1 / 0,25 = 4. ΔG = −25 liefert ΔY = −25 / 0,25 = −100.\n\nAusgang Y₀ = 265 / 0,25 = 1.060. Falle: Multiplikator 1/(1 − 0,80) = 5 ohne\nNX-Leckage — der überschätzt |ΔY| auf 125 und verfehlt 100.\n\nDie Aussage ist wahr.",
+      "Netto autonom: ΔG + ΔI = −25 + 15 = −10 ≠ 0. ΔY = −10 / 0,25 = −40.\nNeues Y₁ = 1.060 − 40 = 1.020 ≠ Y₀ = 1.060.\n\nFalle: „beide sind Ausgaben, also heben sie sich betragsmäßig“ — die Beträge 25 und\n15 sind ungleich; nur die Summe −10 multipliziert mit 4. Exakte Kompensation\nverlangte ΔI = +25, nicht +15.\n\nDie Aussage ist falsch.",
+      "Zusätzlich ΔT = +20. Steuermultiplikator −0,80 / 0,25 = −3,2, also ΔY_T = −64.\nKumuliert: ΔY = −100 + 60 − 64 = −104; Y₂ = 1.060 − 104 = 956.\nDirekt: RHS mit T = 220, I = 115, G = 125 liefert 0,25 · Y = 239 ⇒ Y = 956.\n\nFalle: Steuerimpuls mit Ausgabenmultiplikator 4 statt −3,2 zu bewerten — das verfehlt\nY₂ um 16 Punkte.\n\nDie Aussage ist wahr.",
+      "Ausgabenmultiplikator 1 / 0,25 = 4; |Steuermultiplikator| = 0,80 / 0,25 = 3,2.\nWegen 3,2 < 4 ist die Behauptung falsch.\n\nMechanisch: eine Steuererhöhung wirkt nur über c · ΔT auf die autonome Nachfrage, eine\nAusgabenänderung voll. Falle: „Steuern treffen Y direkt stärker“ — hier dämpft c = 0,80\nden Steuerimpuls unter den Ausgabenimpuls.\n\nDie Aussage ist falsch.",
+      "Ohne NX-Leckage: Multiplikator 1 / 0,20 = 5, |ΔY| = 25 · 5 = 125.\nMit Leckage: 25 / 0,25 = 100. Differenz der Überschätzung = 25.\n\nFalle: NX = 50 − 0,05Y als bloße Konstante 50 zu lesen und den marginalen Abfluss\n0,05 zu vergessen — genau dieser Term hebt den Nenner von 0,20 auf 0,25.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E04",
+    "id": "WISO-M6-E04",
+    "title": "Steuerinzidenz bei ungleichen Elastizitäten",
+    "subsection": "1.4",
+    "chapter": 1,
+    "difficulty_level": "hard",
+    "context": "Lineare Nachfrage P = 90 − 0,50 Q, lineares Angebot P = 15 + 0,25 Q.\nStücksteuer t = 12 wird rechtlich den Anbietern auferlegt; Käuferpreis = Verkäufererlös + 12.\nLastenteilung folgt aus den Steigungen bzw. Elastizitäten, nicht aus der Rechtszuweisung.\nDieselbe Steuer rechtlich bei Nachfragern erzeugt denselben Keil. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Nach der Steuer tragen die Nachfrager mehr als die Hälfte des Keils; die Menge sinkt.",
+      "Weil die Steuer rechtlich bei Anbietern liegt, tragen Anbieter den größeren Lastanteil.",
+      "Dieselbe Stücksteuer rechtlich bei Nachfragern lässt Käuferpreis und Nettoerlös unverändert gegen die Anbieter-Rechtsseite.",
+      "Der Käuferpreisanstieg ist kleiner als der Erlösrückgang.",
+      "Am Ausgangsgleichgewicht ist das Angebot elastischer als die Nachfrage; deshalb tragen Nachfrager mehr."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ohne Steuer: 90 − 0,50Q = 15 + 0,25Q ⇒ 75 = 0,75Q ⇒ Q₀ = 100; P₀ = 40.\nMit Steuer: 90 − 0,50Q = 15 + 0,25Q + 12 ⇒ 63 = 0,75Q ⇒ Q₁ = 84.\nKäuferpreis 48 (+8), Verkäufererlös 36 (−4). Wegen 8 > 6 tragen Nachfrager\nmehr als die Hälfte; Q fällt von 100 auf 84.\n\nFalle: Rechtsseite „bei Anbietern“ als volle Anbieterlast zu lesen — ökonomisch 2/3 / 1/3.\n\nDie Aussage ist wahr.",
+      "Rechtliche Abfuhrseite setzt den Keil, nicht die Anteile. Anbieter tragen nur den\nErlösrückgang 4 von 12 (Anteil 1/3); Nachfrager tragen 8 (Anteil 2/3).\n\nNachfrage ist steiler (0,50 gegen 0,25) bzw. unelastischer am Ausgangspunkt — deshalb\ngrößerer Käuferanteil. Falle: formale Abfuhr mit Inzidenz gleichzusetzen.\n\nDie Aussage ist falsch.",
+      "Der Keil P_Käufer − P_Verkäufer = 12 ist rechtsunabhängig. Dieselbe Gleichungen liefern\ndieselbe Q₁ = 84, denselben Käuferpreis 48 und denselben Nettoerlös 36.\n\nFalle: Verlagerung der Rechtsseite als Umkehr der Lastenteilung zu lesen — ökonomisch bleiben\nAnstieg und Rückgang unverändert; nur wer den Schein abführt, wechselt.\n\nDie Aussage ist wahr.",
+      "Anstieg 48 − 40 = 8; Rückgang 40 − 36 = 4. Wegen 8 > 4 steigt der\nKäuferpreis stärker, als der Erlös fällt.\n\nFalle: aus „Steuer bei Anbietern“ auf stärkeren Erlösrückgang zu schließen — die Steigungen\nliefern das Gegenteil. Anteile 8 / 12 = 2/3 gegen 4 / 12 = 1/3.\n\nDie Aussage ist falsch.",
+      "Punktelastizitäten bei (Q₀, P₀): |ε_D| = (1 / 0,50) · (40 / 100) = 0,8;\nε_S = (1 / 0,25) · (40 / 100) = 1,6. Angebot elastischer ⇒ Nachfrager tragen mehr —\nkonsistent mit Anteilen 2/3 / 1/3.\n\nFalle: Steigung und Elastizität zu verwechseln und aus „Nachfrage steiler“ fälschlich\n„Nachfrage elastischer“ zu folgern; hier ist die steilere Kurve die unelastischere.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E05",
+    "id": "WISO-M6-E05",
+    "title": "Kalte Progression ohne Tarifindexierung",
+    "subsection": "1.5",
+    "chapter": 1,
+    "difficulty_level": "hard",
+    "context": "Tarif auf das Nominaleinkommen: bis einschließlich 32.500 gilt 16 %, darüber 35 %.\nAusgangsnominaleinkommen 46.000. Inflation 10 %; das Bruttorealeinkommen bleibt konstant\n(Nominaleinkommen steigt um genau 10 %). Erste Regimevariante: Tarifgrenzen bleiben nominal\nstarr. Zweite: Grenzen werden voll mit 10 % indexiert. Kalte Progression heißt: realer\nNettolohn fällt trotz konstantem realen Brutto. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Im Ausgangsjahr beträgt die Steuer 9.925 und das Netto 36.075.",
+      "Ohne Indexierung steigt das reale Netto, weil das nominale Netto klar zulegt.",
+      "Mit voll indexierten Grenzen bleibt das reale Netto bei 36.075.",
+      "Ohne Indexierung sinkt der durchschnittliche Steuersatz, weil Inflation die Bemessung verwässert.",
+      "Selbst ohne Indexierung bleibt das reale Brutto 46.000; nur das reale Netto fällt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Untergrenze 32.500 · 0,16 = 5.200. Darüber: (46.000 − 32.500) · 0,35 = 13.500 · 0,35\n= 4.725. Summe Steuer 9.925; Netto 46.000 − 9.925 = 36.075.\n\nFalle: den oberen Satz 35 % auf das gesamte Einkommen zu legen — das überschätzt die\nSteuer auf 16.100 und verfehlt beide Ausgangswerte.\n\nDie Aussage ist wahr.",
+      "Neues Nominal 46.000 · 1,10 = 50.600. Steuer starr:\n32.500 · 0,16 + (50.600 − 32.500) · 0,35 = 5.200 + 6.335 = 11.535.\nNominalnetto 39.065; real 39.065 / 1,10 = 35.513,63… < 36.075.\n\nFalle: nominales Nettoplus als reales Plus zu lesen. Brutto real konstant, Netto real fallend —\nKern der kalten Progression (Verlust ≈ 561,36).\n\nDie Aussage ist falsch.",
+      "Indexierte Grenze 32.500 · 1,10 = 35.750. Steuer:\n35.750 · 0,16 + (50.600 − 35.750) · 0,35 = 5.720 + 5.197,5 = 10.917,5.\nNominalnetto 39.682,5; real 39.682,5 / 1,10 = 36.075 exakt gleich dem Ausgangsnetto.\n\nFalle: Indexierung nur auf die untere Stufe zu beziehen und den oberen Block nominal zu\nlassen — volle Indexierung hält den realen Tarifkeil konstant.\n\nDie Aussage ist wahr.",
+      "Durchschnitt alt: 9.925 / 46.000 ≈ 0,2158. Neu starr: 11.535 / 50.600 ≈ 0,2280.\nDer Durchschnittssatz steigt, weil ein größerer Nominalanteil in die 35 %-Stufe rutscht.\n\nFalle: Inflation als Tarifsenkung zu lesen. Bei starren Grenzen wirkt sie wie eine heimliche\nTariferhöhung — kalte Progression.\n\nDie Aussage ist falsch.",
+      "Brutto nominal 50.600 / 1,10 = 46.000 — reales Brutto unverändert nach Konstruktion.\nReales Netto fällt auf ≈ 35.513,64. Die gesamte Last der starren Grenzen trifft das Netto,\nnicht das reale Brutto.\n\nFalle: aus fallendem realen Netto auf fallendes reales Brutto zu schließen — hier ist die\nTrennung gerade der Prüfungspunkt.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E06",
+    "id": "WISO-M6-E06",
+    "title": "VegaLog: Covenant-Bruch nach Leasingaktivierung",
+    "subsection": "3.4",
+    "chapter": 3,
+    "difficulty_level": "hard",
+    "context": "VegaLog AG vor Aktivierung: Umlaufvermögen 275; kurzfristige Schulden 165; Vermögen 900;\nEigenkapital 300. Ein Operating-Leasing hat Barwert 150; davon sind 40 innerhalb\neines Jahres fällig, der Rest langfristig. Der geleaste Gegenstand ist nicht umlaufend.\nNach Aktivierung steigen Vermögen und Schulden um 150; in die Liquiditätskennzahl fließt\nnur der kurzfristige Teil. Klauseln verlangen Liquidität (UV/kurzfr. Schulden) ≥ 1,55 und\nEK-Quote ≥ 31 %. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Nach fristgerechter Aktivierung brechen beide Klauseln.",
+      "Weil Aktivierung beidseitig um 150 erhöht, bleibt die EK-Quote unverändert.",
+      "Der geleaste Gegenstand gehört trotz Jahresrate 40 nicht ins Umlaufvermögen.",
+      "Setzt man fälschlich alle 150 in die kurzfristigen Schulden, bleibt die Liquidität trotzdem über 1,55.",
+      "Vor Aktivierung sind beide Klauseln erfüllt; der Bruch entsteht erst durch die Aktivierung."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Liquidität: 275 / (165 + 40) = 275 / 205 ≈ 1,3415 < 1,55.\nEK-Quote: 300 / (900 + 150) = 300 / 1.050 ≈ 28,57 % < 31 %.\nBeide Klauseln scheitern.\n\nFalle: „nur die Liquidität bricht, EK bleibt über 31 %“ — 28,57 % liegt klar darunter.\nBeide Kennzahlen getrennt gegen 1,55 und 31 % prüfen.\n\nDie Aussage ist wahr.",
+      "Vorher: 300 / 900 ≈ 33,33 %. Nachher: 300 / 1.050 ≈ 28,57 %. Die Quote fällt um\nrund 4,76 Prozentpunkte. Algebraisch Quote = EK / (V + 150) bei konstantem EK; jede\nErhöhung des Nenners senkt die Quote.\n\nFalle: „+150 beidseitig ⇒ Quote gleich“ — beidseitig trifft Vermögen und Schulden, nicht\nVermögen und Eigenkapital. EK bleibt 300, Nenner wächst.\n\nDie Aussage ist falsch.",
+      "Aktivierung: Vermögen +150 als langfristiger Gegenstand, kurzfristige Schulden +40,\nlangfristige Schulden +110. Umlaufvermögen bleibt 275.\n\nFalle: Fälligkeit der Rate als Grund, den Gegenstand ins UV zu legen — das vermischt Aktivum\nund Passivfristigkeit. Aktivum langfristig, Passivteil kurzfristig: das ist die Trennung.\n\nDie Aussage ist wahr.",
+      "Fristgerecht: ≈ 1,3415 < 1,55. Mit allen 150 im Nenner: 275 / (165 + 150) =\n275 / 315 ≈ 0,8730 < 1,55 und tiefer.\n\nFalle: aus „beide unter 1,55“ zu schließen, der Fehler sei harmlos — er verschärft den Bruch\ndeutlich (Abstand 1,55 − 1,3415 ≈ 0,208 gegen 1,55 − 0,873 ≈ 0,677). Fristgerecht bleibt\nallein der kurze Teil 40.\n\nDie Aussage ist falsch.",
+      "Vorher Liquidität 275 / 165 ≈ 1,6667 ≥ 1,55; EK-Quote 300 / 900 ≈ 33,33 % ≥ 31 %.\nNachher beide unter den Schwellen. Der Vertragsbruch ist aktivierungsbedingt, nicht schon\nex ante angelegt.\n\nFalle: aus dem späteren Bruch zu schließen, schon die Ausgangsbilanz sei covenant-widrig —\nvorher halten beide Kennzahlen klar.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E07",
+    "id": "WISO-M6-E07",
+    "title": "Quellwerk: Sprungfixe Kosten und Verlustband",
+    "subsection": "3.3",
+    "chapter": 3,
+    "difficulty_level": "hard",
+    "context": "Quellwerk produziert zu Stückpreis 48,5; variable Stückkosten 27,25; also Stückdeckungsbeitrag 21,25.\nFixkosten springen: bis einschließlich 360 Stück gelten 6.375; ab der 361. Einheit gelten\n11.050. Es gibt damit zwei Gewinnschwellen — eine je Fixkostenschicht — und ein Verlustband\nzwischen Kapazitätsgrenze der billigen Schicht und der teuren Schwelle. Prüfen Sie\nErreichbarkeit, Vorzeichen bei 360 und 361 sowie den Sprungeffekt. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Die billige Gewinnschwelle liegt bei 300 Stück und ist in ihrer Schicht erreichbar.",
+      "Bei 360 Stück ist der Gewinn positiv; bei 361 Stück bleibt er positiv, weil eine Einheit mehr immer hilft.",
+      "Die teure Gewinnschwelle liegt oberhalb von 360; zwischen 361 und dieser Schwelle ist der Gewinn negativ.",
+      "Bei 525 Stück ist der Gewinn wieder positiv und beträgt 106,25.",
+      "Der Sprung der Fixkosten um 4.675 ist kleiner als der Deckungsbeitrag von 220 Stück und deshalb unterhalb von 360 irrelevant."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Stückdeckungsbeitrag 48,5 − 27,25 = 21,25. Billige Schwelle 6.375 / 21,25 = 300.\nWegen 300 ≤ 360 liegt sie in der billigen Schicht und ist betrieblich erreichbar; bei 300\ngilt noch Fixkostensatz 6.375.\n\nFalle: die teure Schwelle 11.050 / 21,25 = 520 fälschlich als einzige Schwelle zu lesen und\n300 zu verwerfen.\n\nDie Aussage ist wahr.",
+      "Bei 360: 360 · 21,25 − 6.375 = 7.650 − 6.375 = 1.275 > 0.\nBei 361: 361 · 21,25 − 11.050 = 7.671,25 − 11.050 = −3.378,75 < 0.\nDer Sprung der Fixkosten um 4.675 übersteigt den zusätzlichen Deckungsbeitrag 21,25 klar.\n\nFalle: „eine Einheit mehr erhöht den Gewinn“ — am Sprungpunkt vernichtet die Fixkostenschicht\nden bisherigen Gewinn und öffnet ein Verlustband.\n\nDie Aussage ist falsch.",
+      "Teure Schwelle 11.050 / 21,25 = 520 > 360. Für Mengen in [361; 519]\ngilt Fixkostensatz 11.050 bei noch nicht erreichter Schwelle — Gewinn negativ.\nProbe: 519 · 21,25 − 11.050 = −21,25; 520 · 21,25 − 11.050 = 0.\n\nFalle: aus positiver billiger Schwelle 300 zu schließen, jenseits von 360 sei man automatisch\nin der Gewinnzone — der Sprung setzt die Schwelle neu auf 520.\n\nDie Aussage ist wahr.",
+      "525 liegt über 520, Fixkosten 11.050.\n525 · 21,25 − 11.050 = 11.156,25 − 11.050 = 106,25 > 0.\n\nFalle: 525 noch im Verlustband zu vermuten, weil 525 nahe am Sprung 361 liegt — maßgeblich\nist die teure Schwelle 520, nicht die Sprungstelle.\n\nDie Aussage ist wahr.",
+      "4.675 / 21,25 = 220 — der Sprung entspricht dem Deckungsbeitrag von genau 220 Stück,\nnicht „kleiner als 220 und deshalb harmlos“. Unterhalb von 360 ist der Sprung\nzwar noch nicht aktiv, aber für die Programmplanung jenseits von 360 ist er bindend:\ner öffnet das Verlustband bis 520.\n\nFalle: Nichtaktivierung unter 360 mit wirtschaftlicher Irrelevanz gleichzusetzen — die\nEntscheidung, 361 anzusteuern, muss den Sprung voll einpreisen.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E08",
+    "id": "WISO-M6-E08",
+    "title": "Drittgrad-Preis gegen Einheitspreis",
+    "subsection": "1.4",
+    "chapter": 1,
+    "difficulty_level": "hard",
+    "context": "Zwei getrennte Märkte, konstante Grenzkosten 10.\nMarkt 1: P = 70 − Q₁. Markt 2: P = 46 − 0,8 Q₂.\nErste Regimevariante: dritte-Grad-Diskriminierung mit MR = MC in jedem Markt.\nZweite: einheitlicher Preis auf der aggregierten Nachfrage (beide Märkte offen, sofern der\nPreis den kleineren Prohibitivpreis nicht überschreitet). Gewinne und Mengenumschichtung\nvergleichen. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Unter Diskriminierung gelten Q₁ = 30 und Q₂ = 22,5; der Gesamtgewinn beträgt 1.305.",
+      "Der gewinnmaximale Einheitspreis liegt über 46 und bedient nur Markt 1.",
+      "Der Einheitspreis-Gewinn bleibt unter dem Diskriminierungsgewinn, obwohl die Mengensumme nahe beieinander liegt.",
+      "Unter Einheitspreis steigt die Menge in Markt 1 und sinkt sie in Markt 2 gegenüber der Diskriminierung.",
+      "Weil MC konstant 10 ist, muss der Einheitspreis-Gewinn dem Diskriminierungsgewinn entsprechen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "MR₁ = 70 − 2 Q₁ = 10 ⇒ Q₁ = 30; P₁ = 70 − 30 = 40;\nπ₁ = (40 − 10) · 30 = 900.\nMR₂ = 46 − 1,6 Q₂ = 10 ⇒ Q₂ = 36 / 1,6 = 22,5; P₂ = 46 − 0,8 · 22,5 = 28;\nπ₂ = (28 − 10) · 22,5 = 405; Summe 1.305.\n\nFalle: Mengen zu addieren und mit einem Mischpreis zu bewerten — die getrennten MR-Bedingungen\nsind der Kern der Diskriminierung.\n\nDie Aussage ist wahr.",
+      "Im beiden-Märkte-Bereich: Q₁ = 70 − P, Q₂ = (46 − P) / 0,8 ⇒ Q = 127,5 − 2,25 P.\nP = (127,5 − Q) / 2,25; MR = 170/3 − (8/9) Q. MR = 10 liefert Q_u = 52,5;\nP_u = 100/3 ≈ 33,333 ≤ 46. Beide Märkte bleiben offen (Q₁ᵤ ≈ 36,667; Q₂ᵤ ≈ 15,833).\n\nFalle: aus P₂-Prohibitiv 46 zu schließen, das Optimum liege darüber — das Innenoptimum\nder Aggregatkurve liegt bei ≈ 33,33.\n\nDie Aussage ist falsch.",
+      "Einheitsgewinn (100/3 − 10) · 52,5 = 1.225 < 1.305.\nMengensumme Diskriminierung 30 + 22,5 = 52,5 gegen Q_u = 52,5 — gleich,\nGewinnabstand 80.\n\nFalle: „Mengensumme gleich ⇒ Gewinn gleich“. Die Umschichtung verschiebt Menge in den\nMarkt mit anderer MR; ohne Angleich der MR fällt der Gesamtgewinn.\n\nDie Aussage ist wahr.",
+      "Diskriminierung: Q₁ = 30; Q₂ = 22,5. Einheitspreis: Q₁ ≈ 36,667; Q₂ ≈ 15,833.\nMarkt 1 expandiert um ≈ 6,667; Markt 2 schrumpft um ≈ 6,667.\n\nFalle: einheitlicher Preis als proportionale Kürzung beider Mengen zu lesen — der Preis\n≈ 33,33 liegt zwischen den Diskriminierungspreisen 40 und 28 und verschiebt Menge vom\nhochpreisigen in den niedrigpreisigen Markt.\n\nDie Aussage ist wahr.",
+      "Konstante MC vereinfachen MR = MC je Markt, erzwingen aber keinen Gewinn-Gleichstand zwischen\nRegimen. Numerisch 1.225 gegen 1.305; Differenz 80 > 0.\n\nFalle: „konstante MC ⇒ Preisregime irrelevant“. Dritte-Grad-Diskriminierung nutzt\nunterschiedliche Nachfrageelastizitäten; Einheitspreis verwirft genau diese Information.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E09",
+    "id": "WISO-M6-E09",
+    "title": "Mira: Humankapital mit Abbruchrisiko",
+    "subsection": "3.3",
+    "chapter": 3,
+    "difficulty_level": "hard",
+    "context": "Mira erwägt ein Studium: Gebühren heute 22.000 zuzüglich entgangenem Arbeitseinkommen 38.000,\ninsgesamt 60.000. Erfolgswahrscheinlichkeit 0,72: dann beträgt der heutige Barwert der\nLohngewinne 108.000. Mit Wahrscheinlichkeit 0,28 bricht sie ab; Barwert der\nLohngewinne dann nur 14.000. Alternative: kein Studium, Netto 0 gegen dieselbe Basis.\nEin Stipendium senkt die Gebühren um 8.000, falls eingeschrieben wird (entgangenes\nEinkommen bleibt). Abzinsung steckt bereits in den Barwerten. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Der Erwartungswert der Lohngewinne beträgt 81.680; die NPV ohne Stipendium ist 21.680.",
+      "Mit Stipendium steigt die NPV auf 29.680.",
+      "Selbst im Abbruchzweig allein wäre die NPV ohne Stipendium positiv.",
+      "Eine fälschlich angesetzte Erfolgswahrscheinlichkeit 0,85 lässt die NPV ohne Stipendium als 33.900 erscheinen.",
+      "Weil die NPV ohne Stipendium positiv ist, bleibt der Abbruchzweig für die Entscheidung irrelevant."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "EV = 0,72 · 108.000 + 0,28 · 14.000 = 77.760 + 3.920 = 81.680.\nNPV = 81.680 − 60.000 = 21.680 > 0 — Studium ohne Stipendium lohnt gegen 0.\n\nFalle: nur den Erfolgszweig 108.000 − 60.000 = 48.000 zu rechnen und das Abbruchrisiko zu\nstreichen — das überschätzt die NPV um 26.320.\n\nDie Aussage ist wahr.",
+      "Gebühren nach Stipendium 22.000 − 8.000 = 14.000; Gesamtkosten 14.000 + 38.000 = 52.000.\nNPV = 81.680 − 52.000 = 29.680. Das Stipendium hebt die NPV um genau 8.000.\n\nFalle: das Stipendium auch vom entgangenen Einkommen abzuziehen — es mindert nur Gebühren,\nnicht den Lohnverzicht.\n\nDie Aussage ist wahr.",
+      "Abbruchzweig allein: 14.000 − 60.000 = −46.000 < 0. Ohne den Erfolgszweig lohnt das Studium\nnicht; die positive Gesamt-NPV 21.680 lebt vom Gewicht 0,72 auf 108.000.\n\nFalle: Abbruchgewinn 14.000 gegen nur Gebühren 22.000 zu halten und den Lohnverzicht 38.000\nzu vergessen — auch dann 14.000 − 22.000 < 0, und mit vollem Kostensatz erst recht.\n\nDie Aussage ist falsch.",
+      "Falsches EV = 0,85 · 108.000 + 0,15 · 14.000 = 91.800 + 2.100 = 93.900.\nNPV = 93.900 − 60.000 = 33.900. Gegen korrekte 21.680 beträgt die Überschätzung 12.220.\n\nFalle: 0,85 als „rund 0,72“ zu akzeptieren — die NPV reagiert linear mit Steigung\n(108.000 − 14.000) = 94.000 je Wahrscheinlichkeitspunkt.\n\nDie Aussage ist wahr.",
+      "Der Abbruchzweig ist über die Wahrscheinlichkeit 0,28 im EV fest eingebaut und senkt EV\ngegenüber reinem Erfolg um 0,28 · (108.000 − 14.000) = 26.320. Ohne diesen Zweig entstünde\ndie Schein-NPV 48.000 statt 21.680.\n\nFalle: positive Gesamt-NPV als Freibrief, Risikozweige zu ignorieren — die Positivität gilt\nnur nach Einpreisung des Abbruchs, nicht davor.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "WISO-M6-E10",
+    "id": "WISO-M6-E10",
+    "title": "AtlasPartner: Kommanditist gegen Komplementär",
+    "subsection": "3.1",
+    "chapter": 3,
+    "difficulty_level": "hard",
+    "context": "AtlasPartner KG schuldet Gläubiger A 108.000. Im Gesellschaftsvermögen liegen 48.000.\nKommanditist K ist auf 25.000 begrenzt und hat davon 16.000 eingezahlt; ausstehend 9.000.\nKomplementär U haftet unbeschränkt und verfügt außerhalb der Gesellschaft über 32.000.\nVergleichspfad: dieselbe Schuld in einer OHG, in der K zusätzlich Privatvermögen 22.000 hat\nund beide unbeschränkt haften. Trennen Sie Firmenvermögen, ausstehende Einlage und\nPrivatvermögen. Bewerten Sie jede Aussage.",
+    "statements": [
+      "Nach Verwertung des Gesellschaftsvermögens bleibt eine Lücke von 60.000.",
+      "Kommanditist K haftet für die Restlücke 60.000 unbeschränkt mit seinem gesamten Privatvermögen.",
+      "Nach ausstehender Einlage 9.000 und Privatvermögen des Komplementärs 32.000 bleibt eine Restlücke 19.000.",
+      "In der OHG-Variante mit Privatvermögen K = 22.000 und U = 32.000 wäre die Schuld nach Firmenvermögen und beiden Privatvermögen vollständig gedeckt.",
+      "Die ausstehende Kommanditeinlage 9.000 deckt streng mehr von der Lücke 60.000 als das Privatvermögen des Komplementärs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Lücke = 108.000 − 48.000 = 60.000. Erst diese Restforderung trifft Einlage und\nPrivatvermögen; wer Firmenvermögen und Privatvermögen in einem Schritt saldiert, verdunkelt\ndie Haftungsreihenfolge.\n\nFalle: die ausstehende Einlage 9.000 schon vom Brutto 108.000 abzuziehen, bevor das\nFirmenvermögen verwertet wird — Reihenfolge ist Vermögen zuerst, dann nachgelagerte Haftung.\n\nDie Aussage ist wahr.",
+      "K haftet nur bis zur ausstehenden Einlage 9.000 (Pflichteinlage 25.000 abzüglich bereits\neingezahlter 16.000). Unbeschränkte Haftung trifft den Komplementär U, nicht K.\n\nFalle: KG-Kommanditisten mit OHG-Gesellschaftern gleichzusetzen — gerade die Einlagengrenze\nunterscheidet die Rechtsformen.\n\nDie Aussage ist falsch.",
+      "Nach K: 60.000 − 9.000 = 51.000. U kann 32.000 zahlen; Restlücke 51.000 − 32.000 = 19.000.\nSelbst beide nachgelagerten Blöcke zusammen (9.000 + 32.000 = 41.000) decken 60.000 nicht.\n\nFalle: U-Privatvermögen 32.000 gegen die Bruttoschuld 108.000 zu halten — maßgeblich ist die\nLücke nach Firmenvermögen und Einlage.\n\nDie Aussage ist wahr.",
+      "OHG: nach Firmenvermögen Lücke 60.000; beide unbeschränkt mit 22.000 + 32.000 = 54.000.\nRestlücke 60.000 − 54.000 = 6.000 > 0 — nicht vollständig gedeckt.\nGesamtmittel 48.000 + 54.000 = 102.000 < 108.000.\n\nFalle: OHG-Privatvermögen automatisch als Volldeckung zu lesen; hier fehlen weiterhin 6.000.\n\nDie Aussage ist falsch.",
+      "9.000 < 32.000 — der Komplementärblock ist größer, nicht kleiner. Relativ zur Lücke:\nEinlage = 15 %, U-Privatvermögen ≈ 53,3 %.\n\nFalle: „Kommanditist zahlt zuerst, also mehr“ — Zahlungsreihenfolge setzt keine Betragsordnung;\nstreng mehr verlangte 9.000 > 32.000.\n\nDie Aussage ist falsch."
+    ]
+  }
+]

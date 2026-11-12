@@ -142,7 +142,7 @@ const features = [
   },
   {
     icon: ClipboardCheck,
-    title: "6+ WiSo-style exams",
+    title: "7+ WiSo-style exams",
     text: "Timed mocks and the builder stay on the WiSo track so you do not land in BBE by accident.",
     accent: true,
   },

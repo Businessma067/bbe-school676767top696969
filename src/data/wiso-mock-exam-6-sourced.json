@@ -1,0 +1,1084 @@
+{
+  "economics": [
+    {
+      "case_id": "WISO-M6-E01",
+      "id": "WISO-M6-E01",
+      "title": "HelixForm: Kapazitätsreserve gegen Linienbeitrag",
+      "subsection": "1.3",
+      "chapter": 1,
+      "difficulty_level": "hard",
+      "context": "HelixForm GmbH besitzt eine Anlage (historischer Preis 71.250) mit Jahreskapazität 720 Einheiten.\nReine Vermietung der Kapazität bringt 16,5 je Einheit; die Anlage bleibt geöffnet.\nZwei Linien teilen dieselbe Kapazität: Linie Helix liefert Stückdeckungsbeitrag 26,25 und\nverbraucht 1,5 Kapazitätseinheiten je Stück (Nachfrage höchstens 300). Linie Orbit liefert\n36 bei Verbrauch 2,4 (Nachfrage höchstens 180). Vermeidbare Jahresfixkosten 5.625 fallen\nbei jeder Öffnung an — Produktion oder Vermietung — und entfallen nur bei Schließung.\nSchließen liefert 0. Versunkene Anschaffung und Opportunitätskosten der Kapazität sind zu trennen.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Das Optimum öffnet, fährt Helix bis 300 und vermietet den Rest; das Netto beträgt 6.705.",
+        "Volle Vermietung ohne Produktion liefert 6.255 und dominiert das Programm mit Helix.",
+        "Linie Orbit bleibt nach Opportunitätskosten der Kapazität außerhalb des Programms.",
+        "Vom Netto 6.705 ist der historische Kaufpreis 71.250 als Hürde abzuziehen, bevor Öffnen lohnt.",
+        "Schließen mit Netto 0 bleibt strikt schlechter als das optimale Öffnungsprogramm."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Zuerst Kapazitätsbeitrag je Einheit: Helix liefert 26,25 / 1,5 = 17,5, Orbit nur 36 / 2,4 = 15.\nGegen Miete 16,5 bleibt allein Helix positiv (17,5 − 16,5 = 1 je Kapazitätseinheit; absolut\n26,25 − 1,5 · 16,5 = 1,5 je Stück). Orbit ist nach Opportunitätskosten negativ\n(36 − 2,4 · 16,5 = −3,6) und fällt aus.\n\nHelix bis Nachfrage 300 verbraucht 300 · 1,5 = 450; Restkapazität 720 − 450 = 270 wird vermietet.\nNetto: 300 · 26,25 + 270 · 16,5 − 5.625 = 7.875 + 4.455 − 5.625 = 6.705.\nFalle: Orbit wegen höherem Stückdeckungsbeitrag 36 vor Helix zu setzen — je Kapazitätseinheit\nverliert Orbit klar gegen Miete und gegen Helix.\n\nDie Aussage ist wahr.",
+        "Volle Vermietung bei Öffnung: 720 · 16,5 − 5.625 = 11.880 − 5.625 = 6.255.\nDas Helix-Programm liefert 6.705. Wegen 6.705 > 6.255 dominiert nicht die reine Miete,\nsondern Helix plus Restmiete.\n\nFalle: „Miete 16,5 unter Helix-Kapazitätsbeitrag 17,5, also ist reine Miete egal oder besser“ —\nsobald Helix die teureren Kapazitätsslots besetzt und nur der Rest vermietet wird, steigt das\nNetto um genau 300 · 1,5 = 450 von 6.255 auf 6.705.\n\nDie Aussage ist falsch.",
+        "Opportunitätskosten je Orbit-Stück: 2,4 · 16,5 = 39,6. Stückdeckungsbeitrag 36 liegt darunter;\nResidualbeitrag 36 − 39,6 = −3,6 < 0. Jede Orbit-Einheit verdrängt Miete oder Helix und vernichtet\nWert.\n\nSelbst auf freier Restkapazität nach Helix (270): höchstens 270 / 2,4 = 112,5 Stück Orbit\nbrächten 112,5 · (−3,6) = −405 zusätzlich. Falle: „freier Rest, also Orbit mitnehmen“ — frei heißt\nnicht kostenlos, solange Vermietung 16,5 je Kapazitätseinheit möglich ist.\n\nDie Aussage ist wahr.",
+        "Der Kaufpreis 71.250 ist versunken: er fällt bei Öffnen mit Helix, bei reiner Miete und bei\nSchließen gleichermaßen an und kürzt sich in jeder Differenz heraus. Bindend sind nur noch\nvermeidbare Fixkosten 5.625 und die laufenden Deckungsbeiträge bzw. Mieten.\n\n6.705 > 0 und 6.705 > 6.255 > 0 — Öffnen mit Helix dominiert Schließen und reine Miete ohne\nAbzug von 71.250. Falle: Buch- oder Anschaffungswert als zusätzliche Cash-Hürde zu lesen;\ndas verdoppelt versunkene Größe und verdreht die Rangfolge gegen jede Öffnung.\n\nDie Aussage ist falsch.",
+        "Schließen vermeidet 5.625, liefert aber weder Produktions- noch Mietzahlungen — Netto 0.\nOptimal öffnen liefert 6.705. Differenz 6.705 − 0 = 6.705 > 0.\n\nFalle: die vermeidbaren 5.625 gegen Schließen als Argument für Schließen zu werten, ohne die\nEinzahlungen 7.875 + 4.455 = 12.330 dagegenzuhalten. Einzahlungen decken Fixkosten und\nlassen 6.705 übrig; Schließen verwirft genau diesen Überschuss.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E02",
+      "id": "WISO-M6-E02",
+      "title": "Turbinen und Batteriepacks, asymmetrische Fracht",
+      "subsection": "1.2",
+      "chapter": 1,
+      "difficulty_level": "hard",
+      "context": "Zwei Länder, zwei Güter, Lohn je Stunde landesweit einheitlich. Land Nord braucht 3,2 Stunden\nfür eine Turbine und 8,0 für ein Batteriepack, Lohn 22,5. Land Süd braucht 6,4 Stunden\nfür Turbinen und 4,8 für Batteriepacks, Lohn 15. Batteriepacks von Süd nach Nord tragen Fracht\n87,5 und zusätzlich Einfuhrzoll 22,5. Turbinen von Süd nach Nord tragen Fracht 18,75 und Zoll\n7,5. Zuerst Güter-Opportunitätskosten, dann Lohnstückkosten, dann Zuschläge nacheinander.\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Güter-Opportunitätskosten geben Nord den Vorteil bei Turbinen und Süd bei Batteriepacks; der Lohn dreht diese Relation nicht.",
+        "Fracht allein dreht die Lohnkostenrangfolge bei Batteriepacks zulasten von Süd.",
+        "Fracht und Batteriezoll zusammen drehen die Batterie-Rangfolge. Der Turbinenzoll dreht die Turbinen-Rangfolge nicht zugunsten von Süd.",
+        "Weil Süd bei Batteriepacks den komparativen Vorteil hat, importiert Nord Batteriepacks auch nach Fracht und Zoll.",
+        "Ein Turbinenzoll in Höhe des Batteriezolls 22,5 macht Süd zum billigeren Turbinenlieferanten in Nord."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Komparativer Vorteil folgt aus Stundenquotienten. Turbinen in Nord: 3,2 / 8,0 = 0,4 Batteriepack\nje Turbine; in Süd: 6,4 / 4,8 = 4/3. Also hat Nord den Turbinen-Vorteil. Batteriepacks in Nord:\n8,0 / 3,2 = 2,5 Turbinen; in Süd: 4,8 / 6,4 = 0,75 — Vorteil Süd.\n\nWeil der Lohn in jedem Land für beide Güter gleich ist, kürzt er sich im Quotienten heraus\nund dreht die Güterrelation nicht. Falle: niedrigeren Lohn in Süd als Drehpunkt der\nGüterverhältnisse zu lesen — absolute Lohnniveaus ändern Stundenquotienten nicht.\n\nDie Aussage ist wahr.",
+        "Batterie Lohnstückkosten: Nord 8,0 · 22,5 = 180; Süd 4,8 · 15 = 72. Mit Fracht allein:\n72 + 87,5 = 159,5. Wegen 159,5 < 180 bleibt geliefertes Süd billiger als Heimware in Nord;\nder Vorsprung schrumpft von 108 auf 20,5, dreht aber nicht.\n\nFalle: „hohe Fracht 87,5 belastet Süd, also dreht sie“ — Belastung ist nicht Rangfolgenwechsel.\nDrehung verlangt geliefert ≥ 180; 159,5 liegt klar darunter.\n\nDie Aussage ist falsch.",
+        "Batteriepacks mit beiden Zuschlägen: 159,5 + 22,5 = 182 > 180 — Fracht und Zoll drehen\ngemeinsam, Heimware in Nord wird billiger. Turbinen ohne Zuschlag: Nord 3,2 · 22,5 = 72; Süd\n6,4 · 15 = 96 > 72. Mit Fracht 96 + 18,75 = 114,75; mit Zoll zusätzlich 114,75 + 7,5 = 122,25.\nJeder Zuschlag macht Importturbinen teurer, nicht billiger — eine Drehung zugunsten von Süd\nist unmöglich.\n\nFalle: Zoll wie einen Kostenvorteil des Exporteurs zu lesen. Zuschläge sind güterspezifisch\nnacheinander zu testen; nur Batteriepacks drehen, Turbinen nicht.\n\nDie Aussage ist wahr.",
+        "Komparativer Vorteil beschreibt relative Produktionskosten, nicht den gelieferten Preis nach\nZuschlägen. Süd hat den Batterie-Vorteil (0,75 gegen 2,5 Turbinen je Pack). Nach Fracht und\nZoll liegt geliefert 72 + 87,5 + 22,5 = 182 über Heimkosten 180.\n\nFalle: „komparativer Vorteil ⇒ Import trotz Zuschlägen“. Hier ist Heimbatterie nach beiden\nZuschlägen billiger; der gelieferte Preis entscheidet den Import, nicht allein das\nStundenverhältnis.\n\nDie Aussage ist falsch.",
+        "Süd ist bei Turbinen schon ohne Zoll lohnkostenteurer (96 gegen 72). Ein Importzoll in Höhe\n22,5 statt 7,5 belastet zusätzlich: 96 + 18,75 + 22,5 = 137,25 gegen Heim 72. Der Abstand wächst\nvon 24 (ohne Zuschlag) über 42,75 (mit Fracht) auf 65,25.\n\nFalle: Zoll und Liefervorteil zu verwechseln. Der Zoll trifft den Import und macht Süd relativ\nteurer, nicht billiger; schon die Basis 96 > 72 schließt einen Liefervorteil von Süd aus.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E03",
+      "id": "WISO-M6-E03",
+      "title": "Einkommensstoß mit Teilkompensation und NX-Leck",
+      "subsection": "2.2",
+      "chapter": 2,
+      "difficulty_level": "hard",
+      "context": "Geschlossene Identitätsrechnung mit Außenbeitragsleckage:\nC = 125 + 0,80 · (Y − T), T = 200 fest, I = 100, G = 150,\nNX = 50 − 0,05 · Y. Gleichgewicht über Y = C + I + G + NX.\nDrei Regime nacheinander: zuerst sinkt G um 25; parallel steigt autonomes I um 15;\ndanach steigt T um 20. Multiplikatoren mit NX-Abfluss, nicht mit 1/(1 − c).\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Allein der G-Rückgang um 25 senkt das Gleichgewichtseinkommen um 100.",
+        "G-Rückgang und I-Anstieg kompensieren sich exakt; Y bleibt bei Y₀.",
+        "Nach allen drei Schocks liegt Y bei 956.",
+        "Der Betrag des Steuermultiplikators übersteigt den Ausgabenmultiplikator 1/0,25.",
+        "Wer 1/(1 − 0,80) ohne NX-Abfluss nutzt, überschätzt den Einkommensrückgang aus ΔG = −25."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Aus Y = 125 + 0,80(Y − T) + I + G + 50 − 0,05Y folgt\nY · (1 − 0,80 + 0,05) = 175 − 0,80T + I + G, also 0,25 · Y = RHS.\nAusgabenmultiplikator 1 / 0,25 = 4. ΔG = −25 liefert ΔY = −25 / 0,25 = −100.\n\nAusgang Y₀ = 265 / 0,25 = 1.060. Falle: Multiplikator 1/(1 − 0,80) = 5 ohne\nNX-Leckage — der überschätzt |ΔY| auf 125 und verfehlt 100.\n\nDie Aussage ist wahr.",
+        "Netto autonom: ΔG + ΔI = −25 + 15 = −10 ≠ 0. ΔY = −10 / 0,25 = −40.\nNeues Y₁ = 1.060 − 40 = 1.020 ≠ Y₀ = 1.060.\n\nFalle: „beide sind Ausgaben, also heben sie sich betragsmäßig“ — die Beträge 25 und\n15 sind ungleich; nur die Summe −10 multipliziert mit 4. Exakte Kompensation\nverlangte ΔI = +25, nicht +15.\n\nDie Aussage ist falsch.",
+        "Zusätzlich ΔT = +20. Steuermultiplikator −0,80 / 0,25 = −3,2, also ΔY_T = −64.\nKumuliert: ΔY = −100 + 60 − 64 = −104; Y₂ = 1.060 − 104 = 956.\nDirekt: RHS mit T = 220, I = 115, G = 125 liefert 0,25 · Y = 239 ⇒ Y = 956.\n\nFalle: Steuerimpuls mit Ausgabenmultiplikator 4 statt −3,2 zu bewerten — das verfehlt\nY₂ um 16 Punkte.\n\nDie Aussage ist wahr.",
+        "Ausgabenmultiplikator 1 / 0,25 = 4; |Steuermultiplikator| = 0,80 / 0,25 = 3,2.\nWegen 3,2 < 4 ist die Behauptung falsch.\n\nMechanisch: eine Steuererhöhung wirkt nur über c · ΔT auf die autonome Nachfrage, eine\nAusgabenänderung voll. Falle: „Steuern treffen Y direkt stärker“ — hier dämpft c = 0,80\nden Steuerimpuls unter den Ausgabenimpuls.\n\nDie Aussage ist falsch.",
+        "Ohne NX-Leckage: Multiplikator 1 / 0,20 = 5, |ΔY| = 25 · 5 = 125.\nMit Leckage: 25 / 0,25 = 100. Differenz der Überschätzung = 25.\n\nFalle: NX = 50 − 0,05Y als bloße Konstante 50 zu lesen und den marginalen Abfluss\n0,05 zu vergessen — genau dieser Term hebt den Nenner von 0,20 auf 0,25.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E04",
+      "id": "WISO-M6-E04",
+      "title": "Steuerinzidenz bei ungleichen Elastizitäten",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "hard",
+      "context": "Lineare Nachfrage P = 90 − 0,50 Q, lineares Angebot P = 15 + 0,25 Q.\nStücksteuer t = 12 wird rechtlich den Anbietern auferlegt; Käuferpreis = Verkäufererlös + 12.\nLastenteilung folgt aus den Steigungen bzw. Elastizitäten, nicht aus der Rechtszuweisung.\nDieselbe Steuer rechtlich bei Nachfragern erzeugt denselben Keil. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach der Steuer tragen die Nachfrager mehr als die Hälfte des Keils; die Menge sinkt.",
+        "Weil die Steuer rechtlich bei Anbietern liegt, tragen Anbieter den größeren Lastanteil.",
+        "Dieselbe Stücksteuer rechtlich bei Nachfragern lässt Käuferpreis und Nettoerlös unverändert gegen die Anbieter-Rechtsseite.",
+        "Der Käuferpreisanstieg ist kleiner als der Erlösrückgang.",
+        "Am Ausgangsgleichgewicht ist das Angebot elastischer als die Nachfrage; deshalb tragen Nachfrager mehr."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Ohne Steuer: 90 − 0,50Q = 15 + 0,25Q ⇒ 75 = 0,75Q ⇒ Q₀ = 100; P₀ = 40.\nMit Steuer: 90 − 0,50Q = 15 + 0,25Q + 12 ⇒ 63 = 0,75Q ⇒ Q₁ = 84.\nKäuferpreis 48 (+8), Verkäufererlös 36 (−4). Wegen 8 > 6 tragen Nachfrager\nmehr als die Hälfte; Q fällt von 100 auf 84.\n\nFalle: Rechtsseite „bei Anbietern“ als volle Anbieterlast zu lesen — ökonomisch 2/3 / 1/3.\n\nDie Aussage ist wahr.",
+        "Rechtliche Abfuhrseite setzt den Keil, nicht die Anteile. Anbieter tragen nur den\nErlösrückgang 4 von 12 (Anteil 1/3); Nachfrager tragen 8 (Anteil 2/3).\n\nNachfrage ist steiler (0,50 gegen 0,25) bzw. unelastischer am Ausgangspunkt — deshalb\ngrößerer Käuferanteil. Falle: formale Abfuhr mit Inzidenz gleichzusetzen.\n\nDie Aussage ist falsch.",
+        "Der Keil P_Käufer − P_Verkäufer = 12 ist rechtsunabhängig. Dieselbe Gleichungen liefern\ndieselbe Q₁ = 84, denselben Käuferpreis 48 und denselben Nettoerlös 36.\n\nFalle: Verlagerung der Rechtsseite als Umkehr der Lastenteilung zu lesen — ökonomisch bleiben\nAnstieg und Rückgang unverändert; nur wer den Schein abführt, wechselt.\n\nDie Aussage ist wahr.",
+        "Anstieg 48 − 40 = 8; Rückgang 40 − 36 = 4. Wegen 8 > 4 steigt der\nKäuferpreis stärker, als der Erlös fällt.\n\nFalle: aus „Steuer bei Anbietern“ auf stärkeren Erlösrückgang zu schließen — die Steigungen\nliefern das Gegenteil. Anteile 8 / 12 = 2/3 gegen 4 / 12 = 1/3.\n\nDie Aussage ist falsch.",
+        "Punktelastizitäten bei (Q₀, P₀): |ε_D| = (1 / 0,50) · (40 / 100) = 0,8;\nε_S = (1 / 0,25) · (40 / 100) = 1,6. Angebot elastischer ⇒ Nachfrager tragen mehr —\nkonsistent mit Anteilen 2/3 / 1/3.\n\nFalle: Steigung und Elastizität zu verwechseln und aus „Nachfrage steiler“ fälschlich\n„Nachfrage elastischer“ zu folgern; hier ist die steilere Kurve die unelastischere.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E05",
+      "id": "WISO-M6-E05",
+      "title": "Kalte Progression ohne Tarifindexierung",
+      "subsection": "1.5",
+      "chapter": 1,
+      "difficulty_level": "hard",
+      "context": "Tarif auf das Nominaleinkommen: bis einschließlich 32.500 gilt 16 %, darüber 35 %.\nAusgangsnominaleinkommen 46.000. Inflation 10 %; das Bruttorealeinkommen bleibt konstant\n(Nominaleinkommen steigt um genau 10 %). Erste Regimevariante: Tarifgrenzen bleiben nominal\nstarr. Zweite: Grenzen werden voll mit 10 % indexiert. Kalte Progression heißt: realer\nNettolohn fällt trotz konstantem realen Brutto. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Im Ausgangsjahr beträgt die Steuer 9.925 und das Netto 36.075.",
+        "Ohne Indexierung steigt das reale Netto, weil das nominale Netto klar zulegt.",
+        "Mit voll indexierten Grenzen bleibt das reale Netto bei 36.075.",
+        "Ohne Indexierung sinkt der durchschnittliche Steuersatz, weil Inflation die Bemessung verwässert.",
+        "Selbst ohne Indexierung bleibt das reale Brutto 46.000; nur das reale Netto fällt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Untergrenze 32.500 · 0,16 = 5.200. Darüber: (46.000 − 32.500) · 0,35 = 13.500 · 0,35\n= 4.725. Summe Steuer 9.925; Netto 46.000 − 9.925 = 36.075.\n\nFalle: den oberen Satz 35 % auf das gesamte Einkommen zu legen — das überschätzt die\nSteuer auf 16.100 und verfehlt beide Ausgangswerte.\n\nDie Aussage ist wahr.",
+        "Neues Nominal 46.000 · 1,10 = 50.600. Steuer starr:\n32.500 · 0,16 + (50.600 − 32.500) · 0,35 = 5.200 + 6.335 = 11.535.\nNominalnetto 39.065; real 39.065 / 1,10 = 35.513,63… < 36.075.\n\nFalle: nominales Nettoplus als reales Plus zu lesen. Brutto real konstant, Netto real fallend —\nKern der kalten Progression (Verlust ≈ 561,36).\n\nDie Aussage ist falsch.",
+        "Indexierte Grenze 32.500 · 1,10 = 35.750. Steuer:\n35.750 · 0,16 + (50.600 − 35.750) · 0,35 = 5.720 + 5.197,5 = 10.917,5.\nNominalnetto 39.682,5; real 39.682,5 / 1,10 = 36.075 exakt gleich dem Ausgangsnetto.\n\nFalle: Indexierung nur auf die untere Stufe zu beziehen und den oberen Block nominal zu\nlassen — volle Indexierung hält den realen Tarifkeil konstant.\n\nDie Aussage ist wahr.",
+        "Durchschnitt alt: 9.925 / 46.000 ≈ 0,2158. Neu starr: 11.535 / 50.600 ≈ 0,2280.\nDer Durchschnittssatz steigt, weil ein größerer Nominalanteil in die 35 %-Stufe rutscht.\n\nFalle: Inflation als Tarifsenkung zu lesen. Bei starren Grenzen wirkt sie wie eine heimliche\nTariferhöhung — kalte Progression.\n\nDie Aussage ist falsch.",
+        "Brutto nominal 50.600 / 1,10 = 46.000 — reales Brutto unverändert nach Konstruktion.\nReales Netto fällt auf ≈ 35.513,64. Die gesamte Last der starren Grenzen trifft das Netto,\nnicht das reale Brutto.\n\nFalle: aus fallendem realen Netto auf fallendes reales Brutto zu schließen — hier ist die\nTrennung gerade der Prüfungspunkt.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E06",
+      "id": "WISO-M6-E06",
+      "title": "VegaLog: Covenant-Bruch nach Leasingaktivierung",
+      "subsection": "3.4",
+      "chapter": 3,
+      "difficulty_level": "hard",
+      "context": "VegaLog AG vor Aktivierung: Umlaufvermögen 275; kurzfristige Schulden 165; Vermögen 900;\nEigenkapital 300. Ein Operating-Leasing hat Barwert 150; davon sind 40 innerhalb\neines Jahres fällig, der Rest langfristig. Der geleaste Gegenstand ist nicht umlaufend.\nNach Aktivierung steigen Vermögen und Schulden um 150; in die Liquiditätskennzahl fließt\nnur der kurzfristige Teil. Klauseln verlangen Liquidität (UV/kurzfr. Schulden) ≥ 1,55 und\nEK-Quote ≥ 31 %. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach fristgerechter Aktivierung brechen beide Klauseln.",
+        "Weil Aktivierung beidseitig um 150 erhöht, bleibt die EK-Quote unverändert.",
+        "Der geleaste Gegenstand gehört trotz Jahresrate 40 nicht ins Umlaufvermögen.",
+        "Setzt man fälschlich alle 150 in die kurzfristigen Schulden, bleibt die Liquidität trotzdem über 1,55.",
+        "Vor Aktivierung sind beide Klauseln erfüllt; der Bruch entsteht erst durch die Aktivierung."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Liquidität: 275 / (165 + 40) = 275 / 205 ≈ 1,3415 < 1,55.\nEK-Quote: 300 / (900 + 150) = 300 / 1.050 ≈ 28,57 % < 31 %.\nBeide Klauseln scheitern.\n\nFalle: „nur die Liquidität bricht, EK bleibt über 31 %“ — 28,57 % liegt klar darunter.\nBeide Kennzahlen getrennt gegen 1,55 und 31 % prüfen.\n\nDie Aussage ist wahr.",
+        "Vorher: 300 / 900 ≈ 33,33 %. Nachher: 300 / 1.050 ≈ 28,57 %. Die Quote fällt um\nrund 4,76 Prozentpunkte. Algebraisch Quote = EK / (V + 150) bei konstantem EK; jede\nErhöhung des Nenners senkt die Quote.\n\nFalle: „+150 beidseitig ⇒ Quote gleich“ — beidseitig trifft Vermögen und Schulden, nicht\nVermögen und Eigenkapital. EK bleibt 300, Nenner wächst.\n\nDie Aussage ist falsch.",
+        "Aktivierung: Vermögen +150 als langfristiger Gegenstand, kurzfristige Schulden +40,\nlangfristige Schulden +110. Umlaufvermögen bleibt 275.\n\nFalle: Fälligkeit der Rate als Grund, den Gegenstand ins UV zu legen — das vermischt Aktivum\nund Passivfristigkeit. Aktivum langfristig, Passivteil kurzfristig: das ist die Trennung.\n\nDie Aussage ist wahr.",
+        "Fristgerecht: ≈ 1,3415 < 1,55. Mit allen 150 im Nenner: 275 / (165 + 150) =\n275 / 315 ≈ 0,8730 < 1,55 und tiefer.\n\nFalle: aus „beide unter 1,55“ zu schließen, der Fehler sei harmlos — er verschärft den Bruch\ndeutlich (Abstand 1,55 − 1,3415 ≈ 0,208 gegen 1,55 − 0,873 ≈ 0,677). Fristgerecht bleibt\nallein der kurze Teil 40.\n\nDie Aussage ist falsch.",
+        "Vorher Liquidität 275 / 165 ≈ 1,6667 ≥ 1,55; EK-Quote 300 / 900 ≈ 33,33 % ≥ 31 %.\nNachher beide unter den Schwellen. Der Vertragsbruch ist aktivierungsbedingt, nicht schon\nex ante angelegt.\n\nFalle: aus dem späteren Bruch zu schließen, schon die Ausgangsbilanz sei covenant-widrig —\nvorher halten beide Kennzahlen klar.\n\nDie Aussage ist wahr."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E07",
+      "id": "WISO-M6-E07",
+      "title": "Quellwerk: Sprungfixe Kosten und Verlustband",
+      "subsection": "3.3",
+      "chapter": 3,
+      "difficulty_level": "hard",
+      "context": "Quellwerk produziert zu Stückpreis 48,5; variable Stückkosten 27,25; also Stückdeckungsbeitrag 21,25.\nFixkosten springen: bis einschließlich 360 Stück gelten 6.375; ab der 361. Einheit gelten\n11.050. Es gibt damit zwei Gewinnschwellen — eine je Fixkostenschicht — und ein Verlustband\nzwischen Kapazitätsgrenze der billigen Schicht und der teuren Schwelle. Prüfen Sie\nErreichbarkeit, Vorzeichen bei 360 und 361 sowie den Sprungeffekt. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die billige Gewinnschwelle liegt bei 300 Stück und ist in ihrer Schicht erreichbar.",
+        "Bei 360 Stück ist der Gewinn positiv; bei 361 Stück bleibt er positiv, weil eine Einheit mehr immer hilft.",
+        "Die teure Gewinnschwelle liegt oberhalb von 360; zwischen 361 und dieser Schwelle ist der Gewinn negativ.",
+        "Bei 525 Stück ist der Gewinn wieder positiv und beträgt 106,25.",
+        "Der Sprung der Fixkosten um 4.675 ist kleiner als der Deckungsbeitrag von 220 Stück und deshalb unterhalb von 360 irrelevant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Stückdeckungsbeitrag 48,5 − 27,25 = 21,25. Billige Schwelle 6.375 / 21,25 = 300.\nWegen 300 ≤ 360 liegt sie in der billigen Schicht und ist betrieblich erreichbar; bei 300\ngilt noch Fixkostensatz 6.375.\n\nFalle: die teure Schwelle 11.050 / 21,25 = 520 fälschlich als einzige Schwelle zu lesen und\n300 zu verwerfen.\n\nDie Aussage ist wahr.",
+        "Bei 360: 360 · 21,25 − 6.375 = 7.650 − 6.375 = 1.275 > 0.\nBei 361: 361 · 21,25 − 11.050 = 7.671,25 − 11.050 = −3.378,75 < 0.\nDer Sprung der Fixkosten um 4.675 übersteigt den zusätzlichen Deckungsbeitrag 21,25 klar.\n\nFalle: „eine Einheit mehr erhöht den Gewinn“ — am Sprungpunkt vernichtet die Fixkostenschicht\nden bisherigen Gewinn und öffnet ein Verlustband.\n\nDie Aussage ist falsch.",
+        "Teure Schwelle 11.050 / 21,25 = 520 > 360. Für Mengen in [361; 519]\ngilt Fixkostensatz 11.050 bei noch nicht erreichter Schwelle — Gewinn negativ.\nProbe: 519 · 21,25 − 11.050 = −21,25; 520 · 21,25 − 11.050 = 0.\n\nFalle: aus positiver billiger Schwelle 300 zu schließen, jenseits von 360 sei man automatisch\nin der Gewinnzone — der Sprung setzt die Schwelle neu auf 520.\n\nDie Aussage ist wahr.",
+        "525 liegt über 520, Fixkosten 11.050.\n525 · 21,25 − 11.050 = 11.156,25 − 11.050 = 106,25 > 0.\n\nFalle: 525 noch im Verlustband zu vermuten, weil 525 nahe am Sprung 361 liegt — maßgeblich\nist die teure Schwelle 520, nicht die Sprungstelle.\n\nDie Aussage ist wahr.",
+        "4.675 / 21,25 = 220 — der Sprung entspricht dem Deckungsbeitrag von genau 220 Stück,\nnicht „kleiner als 220 und deshalb harmlos“. Unterhalb von 360 ist der Sprung\nzwar noch nicht aktiv, aber für die Programmplanung jenseits von 360 ist er bindend:\ner öffnet das Verlustband bis 520.\n\nFalle: Nichtaktivierung unter 360 mit wirtschaftlicher Irrelevanz gleichzusetzen — die\nEntscheidung, 361 anzusteuern, muss den Sprung voll einpreisen.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E08",
+      "id": "WISO-M6-E08",
+      "title": "Drittgrad-Preis gegen Einheitspreis",
+      "subsection": "1.4",
+      "chapter": 1,
+      "difficulty_level": "hard",
+      "context": "Zwei getrennte Märkte, konstante Grenzkosten 10.\nMarkt 1: P = 70 − Q₁. Markt 2: P = 46 − 0,8 Q₂.\nErste Regimevariante: dritte-Grad-Diskriminierung mit MR = MC in jedem Markt.\nZweite: einheitlicher Preis auf der aggregierten Nachfrage (beide Märkte offen, sofern der\nPreis den kleineren Prohibitivpreis nicht überschreitet). Gewinne und Mengenumschichtung\nvergleichen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Unter Diskriminierung gelten Q₁ = 30 und Q₂ = 22,5; der Gesamtgewinn beträgt 1.305.",
+        "Der gewinnmaximale Einheitspreis liegt über 46 und bedient nur Markt 1.",
+        "Der Einheitspreis-Gewinn bleibt unter dem Diskriminierungsgewinn, obwohl die Mengensumme nahe beieinander liegt.",
+        "Unter Einheitspreis steigt die Menge in Markt 1 und sinkt sie in Markt 2 gegenüber der Diskriminierung.",
+        "Weil MC konstant 10 ist, muss der Einheitspreis-Gewinn dem Diskriminierungsgewinn entsprechen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "MR₁ = 70 − 2 Q₁ = 10 ⇒ Q₁ = 30; P₁ = 70 − 30 = 40;\nπ₁ = (40 − 10) · 30 = 900.\nMR₂ = 46 − 1,6 Q₂ = 10 ⇒ Q₂ = 36 / 1,6 = 22,5; P₂ = 46 − 0,8 · 22,5 = 28;\nπ₂ = (28 − 10) · 22,5 = 405; Summe 1.305.\n\nFalle: Mengen zu addieren und mit einem Mischpreis zu bewerten — die getrennten MR-Bedingungen\nsind der Kern der Diskriminierung.\n\nDie Aussage ist wahr.",
+        "Im beiden-Märkte-Bereich: Q₁ = 70 − P, Q₂ = (46 − P) / 0,8 ⇒ Q = 127,5 − 2,25 P.\nP = (127,5 − Q) / 2,25; MR = 170/3 − (8/9) Q. MR = 10 liefert Q_u = 52,5;\nP_u = 100/3 ≈ 33,333 ≤ 46. Beide Märkte bleiben offen (Q₁ᵤ ≈ 36,667; Q₂ᵤ ≈ 15,833).\n\nFalle: aus P₂-Prohibitiv 46 zu schließen, das Optimum liege darüber — das Innenoptimum\nder Aggregatkurve liegt bei ≈ 33,33.\n\nDie Aussage ist falsch.",
+        "Einheitsgewinn (100/3 − 10) · 52,5 = 1.225 < 1.305.\nMengensumme Diskriminierung 30 + 22,5 = 52,5 gegen Q_u = 52,5 — gleich,\nGewinnabstand 80.\n\nFalle: „Mengensumme gleich ⇒ Gewinn gleich“. Die Umschichtung verschiebt Menge in den\nMarkt mit anderer MR; ohne Angleich der MR fällt der Gesamtgewinn.\n\nDie Aussage ist wahr.",
+        "Diskriminierung: Q₁ = 30; Q₂ = 22,5. Einheitspreis: Q₁ ≈ 36,667; Q₂ ≈ 15,833.\nMarkt 1 expandiert um ≈ 6,667; Markt 2 schrumpft um ≈ 6,667.\n\nFalle: einheitlicher Preis als proportionale Kürzung beider Mengen zu lesen — der Preis\n≈ 33,33 liegt zwischen den Diskriminierungspreisen 40 und 28 und verschiebt Menge vom\nhochpreisigen in den niedrigpreisigen Markt.\n\nDie Aussage ist wahr.",
+        "Konstante MC vereinfachen MR = MC je Markt, erzwingen aber keinen Gewinn-Gleichstand zwischen\nRegimen. Numerisch 1.225 gegen 1.305; Differenz 80 > 0.\n\nFalle: „konstante MC ⇒ Preisregime irrelevant“. Dritte-Grad-Diskriminierung nutzt\nunterschiedliche Nachfrageelastizitäten; Einheitspreis verwirft genau diese Information.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E09",
+      "id": "WISO-M6-E09",
+      "title": "Mira: Humankapital mit Abbruchrisiko",
+      "subsection": "3.3",
+      "chapter": 3,
+      "difficulty_level": "hard",
+      "context": "Mira erwägt ein Studium: Gebühren heute 22.000 zuzüglich entgangenem Arbeitseinkommen 38.000,\ninsgesamt 60.000. Erfolgswahrscheinlichkeit 0,72: dann beträgt der heutige Barwert der\nLohngewinne 108.000. Mit Wahrscheinlichkeit 0,28 bricht sie ab; Barwert der\nLohngewinne dann nur 14.000. Alternative: kein Studium, Netto 0 gegen dieselbe Basis.\nEin Stipendium senkt die Gebühren um 8.000, falls eingeschrieben wird (entgangenes\nEinkommen bleibt). Abzinsung steckt bereits in den Barwerten. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Erwartungswert der Lohngewinne beträgt 81.680; die NPV ohne Stipendium ist 21.680.",
+        "Mit Stipendium steigt die NPV auf 29.680.",
+        "Selbst im Abbruchzweig allein wäre die NPV ohne Stipendium positiv.",
+        "Eine fälschlich angesetzte Erfolgswahrscheinlichkeit 0,85 lässt die NPV ohne Stipendium als 33.900 erscheinen.",
+        "Weil die NPV ohne Stipendium positiv ist, bleibt der Abbruchzweig für die Entscheidung irrelevant."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "EV = 0,72 · 108.000 + 0,28 · 14.000 = 77.760 + 3.920 = 81.680.\nNPV = 81.680 − 60.000 = 21.680 > 0 — Studium ohne Stipendium lohnt gegen 0.\n\nFalle: nur den Erfolgszweig 108.000 − 60.000 = 48.000 zu rechnen und das Abbruchrisiko zu\nstreichen — das überschätzt die NPV um 26.320.\n\nDie Aussage ist wahr.",
+        "Gebühren nach Stipendium 22.000 − 8.000 = 14.000; Gesamtkosten 14.000 + 38.000 = 52.000.\nNPV = 81.680 − 52.000 = 29.680. Das Stipendium hebt die NPV um genau 8.000.\n\nFalle: das Stipendium auch vom entgangenen Einkommen abzuziehen — es mindert nur Gebühren,\nnicht den Lohnverzicht.\n\nDie Aussage ist wahr.",
+        "Abbruchzweig allein: 14.000 − 60.000 = −46.000 < 0. Ohne den Erfolgszweig lohnt das Studium\nnicht; die positive Gesamt-NPV 21.680 lebt vom Gewicht 0,72 auf 108.000.\n\nFalle: Abbruchgewinn 14.000 gegen nur Gebühren 22.000 zu halten und den Lohnverzicht 38.000\nzu vergessen — auch dann 14.000 − 22.000 < 0, und mit vollem Kostensatz erst recht.\n\nDie Aussage ist falsch.",
+        "Falsches EV = 0,85 · 108.000 + 0,15 · 14.000 = 91.800 + 2.100 = 93.900.\nNPV = 93.900 − 60.000 = 33.900. Gegen korrekte 21.680 beträgt die Überschätzung 12.220.\n\nFalle: 0,85 als „rund 0,72“ zu akzeptieren — die NPV reagiert linear mit Steigung\n(108.000 − 14.000) = 94.000 je Wahrscheinlichkeitspunkt.\n\nDie Aussage ist wahr.",
+        "Der Abbruchzweig ist über die Wahrscheinlichkeit 0,28 im EV fest eingebaut und senkt EV\ngegenüber reinem Erfolg um 0,28 · (108.000 − 14.000) = 26.320. Ohne diesen Zweig entstünde\ndie Schein-NPV 48.000 statt 21.680.\n\nFalle: positive Gesamt-NPV als Freibrief, Risikozweige zu ignorieren — die Positivität gilt\nnur nach Einpreisung des Abbruchs, nicht davor.\n\nDie Aussage ist falsch."
+      ]
+    },
+    {
+      "case_id": "WISO-M6-E10",
+      "id": "WISO-M6-E10",
+      "title": "AtlasPartner: Kommanditist gegen Komplementär",
+      "subsection": "3.1",
+      "chapter": 3,
+      "difficulty_level": "hard",
+      "context": "AtlasPartner KG schuldet Gläubiger A 108.000. Im Gesellschaftsvermögen liegen 48.000.\nKommanditist K ist auf 25.000 begrenzt und hat davon 16.000 eingezahlt; ausstehend 9.000.\nKomplementär U haftet unbeschränkt und verfügt außerhalb der Gesellschaft über 32.000.\nVergleichspfad: dieselbe Schuld in einer OHG, in der K zusätzlich Privatvermögen 22.000 hat\nund beide unbeschränkt haften. Trennen Sie Firmenvermögen, ausstehende Einlage und\nPrivatvermögen. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Nach Verwertung des Gesellschaftsvermögens bleibt eine Lücke von 60.000.",
+        "Kommanditist K haftet für die Restlücke 60.000 unbeschränkt mit seinem gesamten Privatvermögen.",
+        "Nach ausstehender Einlage 9.000 und Privatvermögen des Komplementärs 32.000 bleibt eine Restlücke 19.000.",
+        "In der OHG-Variante mit Privatvermögen K = 22.000 und U = 32.000 wäre die Schuld nach Firmenvermögen und beiden Privatvermögen vollständig gedeckt.",
+        "Die ausstehende Kommanditeinlage 9.000 deckt streng mehr von der Lücke 60.000 als das Privatvermögen des Komplementärs."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Lücke = 108.000 − 48.000 = 60.000. Erst diese Restforderung trifft Einlage und\nPrivatvermögen; wer Firmenvermögen und Privatvermögen in einem Schritt saldiert, verdunkelt\ndie Haftungsreihenfolge.\n\nFalle: die ausstehende Einlage 9.000 schon vom Brutto 108.000 abzuziehen, bevor das\nFirmenvermögen verwertet wird — Reihenfolge ist Vermögen zuerst, dann nachgelagerte Haftung.\n\nDie Aussage ist wahr.",
+        "K haftet nur bis zur ausstehenden Einlage 9.000 (Pflichteinlage 25.000 abzüglich bereits\neingezahlter 16.000). Unbeschränkte Haftung trifft den Komplementär U, nicht K.\n\nFalle: KG-Kommanditisten mit OHG-Gesellschaftern gleichzusetzen — gerade die Einlagengrenze\nunterscheidet die Rechtsformen.\n\nDie Aussage ist falsch.",
+        "Nach K: 60.000 − 9.000 = 51.000. U kann 32.000 zahlen; Restlücke 51.000 − 32.000 = 19.000.\nSelbst beide nachgelagerten Blöcke zusammen (9.000 + 32.000 = 41.000) decken 60.000 nicht.\n\nFalle: U-Privatvermögen 32.000 gegen die Bruttoschuld 108.000 zu halten — maßgeblich ist die\nLücke nach Firmenvermögen und Einlage.\n\nDie Aussage ist wahr.",
+        "OHG: nach Firmenvermögen Lücke 60.000; beide unbeschränkt mit 22.000 + 32.000 = 54.000.\nRestlücke 60.000 − 54.000 = 6.000 > 0 — nicht vollständig gedeckt.\nGesamtmittel 48.000 + 54.000 = 102.000 < 108.000.\n\nFalle: OHG-Privatvermögen automatisch als Volldeckung zu lesen; hier fehlen weiterhin 6.000.\n\nDie Aussage ist falsch.",
+        "9.000 < 32.000 — der Komplementärblock ist größer, nicht kleiner. Relativ zur Lücke:\nEinlage = 15 %, U-Privatvermögen ≈ 53,3 %.\n\nFalle: „Kommanditist zahlt zuerst, also mehr“ — Zahlungsreihenfolge setzt keine Betragsordnung;\nstreng mehr verlangte 9.000 > 32.000.\n\nDie Aussage ist falsch."
+      ]
+    }
+  ],
+  "german": {
+    "passageTitle": "Lieferkettensorgfalt, Risikomanagement und zwei Meldefristen",
+    "passage": "(1) Das Lieferkettensorgfaltspflichtengesetz verpflichtet in der hier geschilderten Fassung Unternehmen ab einer bestimmten Größe in Deutschland. Adressat ist das erfasste Unternehmen, nicht jeder ausländische Zulieferer allein deshalb, weil er liefert. Eigener Geschäftsbereich und unmittelbare Zulieferer stehen unter unterschiedlichen Prüfumfängen. Wer schreibt, jeder Zulieferer im Drittstaat werde selbst Adressat, verlässt den Text.\n\n(2) Die jährliche Risikoanalyse für den eigenen Geschäftsbereich und die unmittelbaren Zulieferer muss bis zum 31. März des Folgejahres abgeschlossen. Maßgeblich ist der Kalendertag des Abschlusses der Analyse, nicht der Tag, an dem ein einzelner Hinweis im Vorjahr einging. Abschluss am 31. März trifft die Frist; der 1. April nicht mehr.\n\n(3) Wird im eigenen Geschäftsbereich oder bei einem unmittelbaren Zulieferer ein Verstoß bekannt, schuldet das Unternehmen Abhilfemaßnahmen. Der Abhilfeplan ist innerhalb von drei Monaten nach Kenntnis vorzulegen, nicht innerhalb von drei Monaten nach dem mutmaßlichen Eintritt des Verstoßes. Kenntnis und Eintritt sind zwei Uhren. Wer die Eintrittsuhr an die Stelle der Kenntnisuhr setzt, verlässt den Text.\n\n(4) Die Firma West betreibt ein eigenes Werk in Deutschland und bezieht Komponenten von Zulieferer Nord. Für das eigene Werk gilt die Risikoanalyse des eigenen Geschäftsbereichs. Für Nord gilt die Prüfung als unmittelbarer Zulieferer. Eine mittelbare Vorstufe hinter Nord wird nicht allein dadurch zur unmittelbaren Prüfpflichtderselben Uhr, dass West sie kennt. Wer beide Stufen addiert und denselben Abhilfefristbeginn auf die Summe legt, vermengt die Ebenen.\n\n(5) Die Beschwerdestelle nimmt Hinweise entgegen. Eine eingegangene Beschwerde ist nicht schon der festgestellte Verstoß und nicht schon der Start der Abhilfefrist, solange keine Kenntnis im Sinne des Textes vorliegt. Der Verbandssatz, jede Beschwerde starte die Frist automatisch, wird nicht übernommen.\n\n(6) Unternehmen unter der Größenschwelle fallen nicht allein deshalb unter dasselbe Regime, weil sie an ein erfasstes Unternehmen liefern. Zwei Eintrittsbedingungen stehen nebeneinander: eigene Erfassungsschwelle einerseits, Stellung als unmittelbarer Zulieferer eines erfassten Unternehmens andererseits. Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein.\n\n(7) Die Behörde verlangt einen jährlichen Bericht über die Erfüllung der Sorgfaltspflichten. Berichtsfrist und Abhilfefrist sind zwei Uhren. Der Bericht ersetzt den Abhilfeplan nicht, und der Abhilfeplan schaltet die Berichtsfrist nicht um. Wer beide Fristen zu einer einzigen Meldepflicht zusammenzieht, verlässt den Text.\n\n(8) Ein Verstoß, der am 10. Januar eintritt, aber erst am 10. April bekannt wird, löst die Abhilfefrist ab dem 10. April aus. Die Risikoanalyse-Frist zum 31. März bleibt eine andere Uhr und rückt den Abhilfebeginn nicht vor. Eintrittstag und Analysetag ersetzen die Kenntnisuhr nicht.\n\n(9) Im Beispieljahr hatten 2.400 erfasste Unternehmen eine dokumentierte Risikoanalyse. 720 meldeten mindestens einen Hinweis, 310 dieser 720 zugleich einen vorgelegten Abhilfeplan, 95 davon zugleich eine verspätete Vorlage nach Kenntnis. Der Text verbietet, 310 und 95 zu addieren, und er verbietet, 720 als Zahl der festgestellten Verstöße zu lesen. Hinweis und festgestellter Verstoß sind nicht dasselbe.\n\n(10) Prävention im eigenen Geschäftsbereich und Abhilfe beim unmittelbaren Zulieferer sind unterschiedliche Instrumente.",
+    "tasks": [
+      {
+        "id": "WISO-M6-G01",
+        "case_id": "WISO-M6-G01",
+        "title": "Adressat und Prüfumfänge",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zum Adressaten und zu den Prüfumfängen korrekt?",
+        "statements": [
+          "Adressat ist das erfasste Unternehmen, nicht jeder ausländische Zulieferer allein deshalb, weil er liefert, und eigener Geschäftsbereich und unmittelbare Zulieferer stehen unter unterschiedlichen Prüfumfängen.",
+          "Jeder Zulieferer im Drittstaat wird selbst Adressat, sobald er an ein erfasstes Unternehmen liefert.",
+          "Weil beide demselben Gesetz entspringen, sind eigener Geschäftsbereich und unmittelbarer Zulieferer im Text derselbe Prüfumfang.",
+          "Unterschiedliche Prüfumfänge bleiben bestehen. Dass beide Sorgfaltspflichten betreffen, macht Zulieferer und Adressat nicht zu derselben Person.",
+          "Die Stellung als Zulieferer ersetzt die Erfassungsschwelle und macht den Zulieferer zum alleinigen Adressaten."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Adressat ist das erfasste Unternehmen, nicht jeder ausländische Zulieferer allein deshalb, weil er liefert, und eigener Geschäftsbereich und unmittelbare Zulieferer stehen unter unterschiedlichen Prüfumfängen.**\n\nAbsatz 1: Adressat ist das erfasste Unternehmen; Zulieferer allein deshalb nicht Adressat; eigener Geschäftsbereich und unmittelbare Zulieferer mit unterschiedlichen Prüfumfängen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Zulieferer im Drittstaat wird selbst Adressat, sobald er an ein erfasstes Unternehmen liefert.**\n\nAbsatz 1 weist ausdrücklich zurück, dass jeder Zulieferer im Drittstaat selbst Adressat werde. Liefern allein genügt nicht.\n\n**Falle:** Vom Lieferverhältnis auf Adressatenstellung schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Weil beide demselben Gesetz entspringen, sind eigener Geschäftsbereich und unmittelbarer Zulieferer im Text derselbe Prüfumfang.**\n\nAbsatz 1 trennt die Prüfumfänge ausdrücklich. Gemeinsamer Gesetzesbezug macht sie nicht identisch; Absatz 10 hält Prävention und Abhilfe als unterschiedliche Instrumente.\n\n**Falle:** Gemeinsames Gesetz als Einheitsumfang lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Unterschiedliche Prüfumfänge bleiben bestehen. Dass beide Sorgfaltspflichten betreffen, macht Zulieferer und Adressat nicht zu derselben Person.**\n\nAbsatz 1 hält Prüfumfänge und Adressatenstellung auseinander. Gemeinsamer Gegenstand Sorgfalt hebt die Personengrenze nicht auf.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Die Stellung als Zulieferer ersetzt die Erfassungsschwelle und macht den Zulieferer zum alleinigen Adressaten.**\n\nAbsatz 6: Zuliefererstellung allein macht den Zulieferer nicht zum Adressaten; die Erfassungsschwelle bleibt eine eigene Eintrittsbedingung.\n\n**Falle:** Zuliefererrolle als Ersatz der Schwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G02",
+        "case_id": "WISO-M6-G02",
+        "title": "Welche Uhr die Risikoanalyse schließt",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zur Frist der Risikoanalyse korrekt?",
+        "statements": [
+          "Die jährliche Risikoanalyse muss bis zum 31. März des Folgejahres abgeschlossen sein; maßgeblich ist der Abschlusstag der Analyse, nicht der Eingangstag eines einzelnen Hinweises im Vorjahr.",
+          "Jeder Hinweis, der im Vorjahr einging, schaltet die Analysefrist auf den Hinweisetag um, gleichgültig wann die Analyse fertig wird.",
+          "31. März und 1. April werden mit derselben Analysefrist geprüft.",
+          "Abschluss am 31. März trifft die Frist, und der 1. April fällt nicht mehr in dieselbe Frist.",
+          "Weil die Abhilfefrist drei Monate beträgt, gilt dieselbe Drei-Monats-Uhr auch für den Abschluss der Risikoanalyse."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Die jährliche Risikoanalyse muss bis zum 31. März des Folgejahres abgeschlossen sein; maßgeblich ist der Abschlusstag der Analyse, nicht der Eingangstag eines einzelnen Hinweises im Vorjahr.**\n\nAbsatz 2 bindet die jährliche Risikoanalyse an den 31. März und macht den Abschlusstag der Analyse maßgeblich, nicht den Hinweisetag.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jeder Hinweis, der im Vorjahr einging, schaltet die Analysefrist auf den Hinweisetag um, gleichgültig wann die Analyse fertig wird.**\n\nAbsatz 2: maßgeblich ist der Kalendertag des Abschlusses der Analyse, nicht der Tag, an dem ein einzelner Hinweis einging.\n\n**Falle:** Hinweisetag zur Analyseuhr machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 31. März und 1. April werden mit derselben Analysefrist geprüft.**\n\nAbsatz 2 stellt 31. März und 1. April gegenüber: fertig am 31. März trifft die Frist; der 1. April fällt nicht mehr hinein.\n\n**Falle:** Benachbarte Daten wie ein Paar mit gleicher Frist lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Abschluss am 31. März trifft die Frist, und der 1. April fällt nicht mehr in dieselbe Frist.**\n\nAbsatz 2: Abschluss am 31. März trifft; 1. April nicht mehr dieselbe Frist.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Weil die Abhilfefrist drei Monate beträgt, gilt dieselbe Drei-Monats-Uhr auch für den Abschluss der Risikoanalyse.**\n\nAbsatz 2 regelt die Analysefrist zum 31. März; Absatz 3 die Abhilfe binnen drei Monaten nach Kenntnis. Das sind zwei Uhren.\n\n**Falle:** Abhilfeuhr auf die Analyse übertragen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G03",
+        "case_id": "WISO-M6-G03",
+        "title": "Kenntnisuhr gegen Eintrittsuhr",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zum Beginn der Abhilfefrist korrekt?",
+        "statements": [
+          "Der Abhilfeplan ist innerhalb von drei Monaten nach Kenntnis vorzulegen, nicht innerhalb von drei Monaten nach dem mutmaßlichen Eintritt des Verstoßes.",
+          "Kenntnis und Eintritt sind im Text dieselbe Uhr, weil beide den Verstoß betreffen.",
+          "Wer die Eintrittsuhr an die Stelle der Kenntnisuhr setzt, folgt Absatz 3.",
+          "Kenntnis und Eintritt sind zwei Uhren, und die Risikoanalyse-Frist zum 31. März ist nicht der Ersatz für die Kenntnisuhr.",
+          "Sobald ein Verstoß irgendwann eingetreten ist, beginnt die Abhilfefrist automatisch am Eintrittstag, auch ohne Kenntnis."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Der Abhilfeplan ist innerhalb von drei Monaten nach Kenntnis vorzulegen, nicht innerhalb von drei Monaten nach dem mutmaßlichen Eintritt des Verstoßes.**\n\nAbsatz 3: Vorlage binnen drei Monaten nach Kenntnis; nicht nach mutmaßlichem Eintritt.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Kenntnis und Eintritt sind im Text dieselbe Uhr, weil beide den Verstoß betreffen.**\n\nAbsatz 3 nennt Kenntnis und Eintritt ausdrücklich als zwei Uhren. Gemeinsamer Bezug Verstoß macht sie nicht identisch.\n\n**Falle:** Vom gemeinsamen Stoff auf Uhrenidentität schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer die Eintrittsuhr an die Stelle der Kenntnisuhr setzt, folgt Absatz 3.**\n\nAbsatz 3 sagt: Wer die Eintrittsuhr an die Stelle der Kenntnisuhr setzt, verlässt den Text. „Folgt Absatz 3“ kehrt den Absatz um.\n\n**Falle:** Eine Absatznnummer als Deckung lesen, obwohl der Absatz die Behauptung zurückweist.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Kenntnis und Eintritt sind zwei Uhren, und die Risikoanalyse-Frist zum 31. März ist nicht der Ersatz für die Kenntnisuhr.**\n\nAbsatz 3: zwei Uhren Kenntnis/Eintritt. Absatz 8: die Analysefrist zum 31. März rückt den Abhilfebeginn nicht vor und ersetzt die Kenntnisuhr nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Sobald ein Verstoß irgendwann eingetreten ist, beginnt die Abhilfefrist automatisch am Eintrittstag, auch ohne Kenntnis.**\n\nAbsatz 3 und 8: Abhilfe läuft ab Kenntnis. Eintritt ohne Kenntnis setzt die Drei-Monats-Uhr nicht in Gang.\n\n**Falle:** Eintrittstag als automatischen Fristbeginn lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G04",
+        "case_id": "WISO-M6-G04",
+        "title": "Firma West: Werk, Nord, Vorstufe",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zur Ebenentrennung bei Firma West korrekt?",
+        "statements": [
+          "Für das eigene Werk gilt die Risikoanalyse des eigenen Geschäftsbereichs, für Zulieferer Nord die Prüfung als unmittelbarer Zulieferer, und eine mittelbare Vorstufe hinter Nord wird nicht allein dadurch zur unmittelbaren Prüfpflichtderselben Uhr, dass West sie kennt.",
+          "Weil West die mittelbare Vorstufe kennt, gilt für sie dieselbe Abhilfefristuhr wie für Nord.",
+          "Wer eigenes Werk und Nord addiert und denselben Abhilfefristbeginn auf die Summe legt, folgt Absatz 4.",
+          "Eigener Geschäftsbereich und unmittelbarer Zulieferer bleiben getrennte Ebenen; Kenntnis der Vorstufe hinter Nord macht sie nicht zur unmittelbaren Pflicht derselben Uhr.",
+          "Ein Unternehmen mit eigenem Werk prüft unmittelbare Zulieferer nie, sobald im Namen der Firma Produktion vorkommt."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Für das eigene Werk gilt die Risikoanalyse des eigenen Geschäftsbereichs, für Zulieferer Nord die Prüfung als unmittelbarer Zulieferer, und eine mittelbare Vorstufe hinter Nord wird nicht allein dadurch zur unmittelbaren Prüfpflichtderselben Uhr, dass West sie kennt.**\n\nAbsatz 4 trennt eigenes Werk, unmittelbaren Zulieferer Nord und die mittelbare Vorstufe: Kenntnis allein hebt die Vorstufe nicht auf die unmittelbare Uhr.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil West die mittelbare Vorstufe kennt, gilt für sie dieselbe Abhilfefristuhr wie für Nord.**\n\nAbsatz 4: Die mittelbare Vorstufe wird nicht allein dadurch zur unmittelbaren Prüfpflichtderselben Uhr, dass West sie kennt.\n\n**Falle:** Aus Kenntnis die unmittelbare Abhilfeuhr ableiten.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer eigenes Werk und Nord addiert und denselben Abhilfefristbeginn auf die Summe legt, folgt Absatz 4.**\n\nAbsatz 4 nennt genau diese Addition und denselben Fristbeginn auf die Summe als Vermengung der Ebenen. „Folgt Absatz 4“ kehrt den Absatz um.\n\n**Falle:** Absatznummer als Freigabe der verworfenen Rechenart lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Eigener Geschäftsbereich und unmittelbarer Zulieferer bleiben getrennte Ebenen; Kenntnis der Vorstufe hinter Nord macht sie nicht zur unmittelbaren Pflicht derselben Uhr.**\n\nAbsatz 4 hält die Ebenen auseinander und verweigert der bloßen Kenntnis die Wirkung, die Vorstufe zur unmittelbaren Pflicht derselben Uhr zu machen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Ein Unternehmen mit eigenem Werk prüft unmittelbare Zulieferer nie, sobald im Namen der Firma Produktion vorkommt.**\n\nAbsatz 4: West prüft Nord als unmittelbaren Zulieferer trotz eigenem Werk. Bloßes Vorkommen von Produktion befreit nicht von der Zuliefererprüfung.\n\n**Falle:** „Nie“ und Firmenprofil über die Ebenentrennung hinausziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G05",
+        "case_id": "WISO-M6-G05",
+        "title": "Beschwerde ist nicht Friststart",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu Beschwerde und Abhilfefrist korrekt?",
+        "statements": [
+          "Eine eingegangene Beschwerde ist nicht schon der festgestellte Verstoß und nicht schon der Start der Abhilfefrist, solange keine Kenntnis im Sinne des Textes vorliegt.",
+          "Weil eine Beschwerde eingegangen ist, beginnt die Abhilfefrist automatisch am Eingangstag.",
+          "Verband und Text ziehen aus jeder Beschwerde denselben Schluss zum Fristbeginn.",
+          "Der Text trennt Beschwerdeeingang von festgestelltem Verstoß und von automatischem Friststart und trennt sie auch von der Adressatenstellung des Zulieferers.",
+          "Ohne automatischen Friststart bei jeder Beschwerde wäre die Beschwerdestelle im Text gegenstandslos, deshalb muss jede Beschwerde die Frist auslösen."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Eine eingegangene Beschwerde ist nicht schon der festgestellte Verstoß und nicht schon der Start der Abhilfefrist, solange keine Kenntnis im Sinne des Textes vorliegt.**\n\nAbsatz 5: Beschwerde ≠ festgestellter Verstoß und ≠ Friststart ohne Kenntnis im Sinne des Textes.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil eine Beschwerde eingegangen ist, beginnt die Abhilfefrist automatisch am Eingangstag.**\n\nAbsatz 5 weist den automatischen Fristbeginn durch bloßen Beschwerdeeingang zurück; der Verbandssatz wird nicht übernommen.\n\n**Falle:** Eingang mit Kenntnis und Friststart gleichsetzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Verband und Text ziehen aus jeder Beschwerde denselben Schluss zum Fristbeginn.**\n\nAbsatz 5: Der Verbandssatz, jede Beschwerde starte die Frist automatisch, wird nicht übernommen. Gemeinsame Erwähnung ist keine Einigkeit.\n\n**Falle:** Gemeinsame Erwähnung als Einigkeit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Der Text trennt Beschwerdeeingang von festgestelltem Verstoß und von automatischem Friststart und trennt sie auch von der Adressatenstellung des Zulieferers.**\n\nAbsatz 5 trennt Beschwerde von Verstoß und Friststart. Absatz 1 und 6 halten die Adressatengrenze: Zulieferer allein ist nicht Adressat.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Ohne automatischen Friststart bei jeder Beschwerde wäre die Beschwerdestelle im Text gegenstandslos, deshalb muss jede Beschwerde die Frist auslösen.**\n\nAbsatz 5 lässt die Beschwerdestelle stehen, ohne jede Beschwerde zum Friststart zu machen. Zweckargumente ersetzen die ausdrückliche Zurückweisung nicht.\n\n**Falle:** „Sonst sinnlos“ über die Textgrenze legen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G06",
+        "case_id": "WISO-M6-G06",
+        "title": "Zwei Eintrittsbedingungen",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu Schwelle und Zuliefererstellung korrekt?",
+        "statements": [
+          "Unter der Größenschwelle zu liegen setzt nicht von selbst dasselbe Regime. Zuliefererstellung allein macht den Zulieferer nicht zum Adressaten.",
+          "Jedes Unternehmen außerhalb der Erfassungsschwelle fällt automatisch unter dieselben Pflichten, sobald es liefert, sonst bliebe eine Lücke.",
+          "Erfassungsschwelle und Stellung als unmittelbarer Zulieferer sind im Text dasselbe Kriterium, weil beide die Lieferkette betreffen.",
+          "Wer eine der beiden Bedingungen verfehlt, tritt in die jeweilige Pflichtlage nicht ein. Das ist nicht dieselbe Aussage wie die Behauptung, jeder Zulieferer sei Adressat.",
+          "Unmittelbare Zuliefererstellung und Abgabe des Abhilfeplans binnen drei Monaten sind im Text dieselbe Pflicht."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Unter der Größenschwelle zu liegen setzt nicht von selbst dasselbe Regime. Zuliefererstellung allein macht den Zulieferer nicht zum Adressaten.**\n\nAbsatz 6: Unter der Schwelle nicht automatisch dasselbe Regime; Zuliefererstellung allein macht nicht zum Adressaten.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Jedes Unternehmen außerhalb der Erfassungsschwelle fällt automatisch unter dieselben Pflichten, sobald es liefert, sonst bliebe eine Lücke.**\n\nAbsatz 6 verlangt die jeweilige Eintrittsbedingung. „Sonst Lücke“ und automatische Pflicht durch bloßes Liefern schließt der Text nicht.\n\n**Falle:** Lieferstatus als umfassende Positivpflicht lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Erfassungsschwelle und Stellung als unmittelbarer Zulieferer sind im Text dasselbe Kriterium, weil beide die Lieferkette betreffen.**\n\nAbsatz 6: zwei Eintrittsbedingungen stehen nebeneinander. Gemeinsamer Bezug Lieferkette macht sie nicht identisch.\n\n**Falle:** Vom gemeinsamen Bezugspunkt auf Kriteriengleichheit schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer eine der beiden Bedingungen verfehlt, tritt in die jeweilige Pflichtlage nicht ein. Das ist nicht dieselbe Aussage wie die Behauptung, jeder Zulieferer sei Adressat.**\n\nAbsatz 6: Wer eine verfehlt, tritt nicht ein. Absatz 1 weist zurück, dass jeder Zulieferer Adressat sei.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Unmittelbare Zuliefererstellung und Abgabe des Abhilfeplans binnen drei Monaten sind im Text dieselbe Pflicht.**\n\nAbsatz 6 betrifft den Markteintritt/die Pflichtlage; Absatz 3 die Abhilfeuhr nach Kenntnis. Eintritt und Abgabefrist sind nicht dieselbe Pflicht.\n\n**Falle:** Eintrittsbedingung mit Abhilfefrist verschmelzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G07",
+        "case_id": "WISO-M6-G07",
+        "title": "Bericht und Abhilfe, zwei Uhren",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu Berichtsfrist und Abhilfefrist korrekt?",
+        "statements": [
+          "Berichtsfrist und Abhilfefrist sind zwei Uhren. Der Bericht ersetzt den Abhilfeplan nicht, und der Abhilfeplan schaltet die Berichtsfrist nicht um.",
+          "Weil beide Fristen Meldepflichten sind, gelten sie im Text als eine einzige Meldepflicht.",
+          "Wer beide Fristen zu einer einzigen Meldepflicht zusammenzieht, folgt Absatz 7.",
+          "Der jährliche Bericht betrifft die Erfüllung der Sorgfaltspflichten und ist nicht dieselbe Uhr wie die drei Monate nach Kenntnis.",
+          "Sobald ein Abhilfeplan vorgelegt ist, entfällt die Pflicht zum jährlichen Bericht."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Berichtsfrist und Abhilfefrist sind zwei Uhren. Der Bericht ersetzt den Abhilfeplan nicht, und der Abhilfeplan schaltet die Berichtsfrist nicht um.**\n\nAbsatz 7: zwei Uhren; Bericht ersetzt Abhilfeplan nicht; Abhilfeplan schaltet Berichtsfrist nicht um.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil beide Fristen Meldepflichten sind, gelten sie im Text als eine einzige Meldepflicht.**\n\nAbsatz 7 hält die Fristen getrennt und weist das Zusammenziehen zu einer einzigen Meldepflicht zurück.\n\n**Falle:** Gemeinsames Melde-Wort als Uhrenidentität lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Wer beide Fristen zu einer einzigen Meldepflicht zusammenzieht, folgt Absatz 7.**\n\nAbsatz 7: Wer beide Fristen zusammenzieht, verlässt den Text. „Folgt Absatz 7“ kehrt den Absatz um.\n\n**Falle:** Absatznummer als Freigabe der verworfenen Lesart lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Der jährliche Bericht betrifft die Erfüllung der Sorgfaltspflichten und ist nicht dieselbe Uhr wie die drei Monate nach Kenntnis.**\n\nAbsatz 7 trennt Jahresbericht und Abhilfefrist. Absatz 3 bindet Abhilfe an Kenntnis, nicht an die Berichtsuhr.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Sobald ein Abhilfeplan vorgelegt ist, entfällt die Pflicht zum jährlichen Bericht.**\n\nAbsatz 7: Der Abhilfeplan schaltet die Berichtsfrist nicht um und ersetzt den Bericht nicht. Vorlage befreit nicht vom Jahresbericht.\n\n**Falle:** Abhilfeplan als Erlass der Berichtspflicht lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G08",
+        "case_id": "WISO-M6-G08",
+        "title": "10. Januar, 10. April, 31. März",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu Eintritt, Kenntnis und Analysefrist korrekt?",
+        "statements": [
+          "Ein Verstoß vom 10. Januar, der erst am 10. April bekannt wird, löst die Abhilfefrist ab dem 10. April aus; die Risikoanalyse-Frist zum 31. März rückt den Abhilfebeginn nicht vor.",
+          "Weil der Verstoß am 10. Januar eintrat, beginnt die Abhilfefrist am 10. Januar, auch wenn die Kenntnis erst am 10. April liegt.",
+          "Eintrittstag und Analysetag sind im Text verschiedene Anknüpfungspunkte, und keiner von beiden ersetzt die Kenntnisuhr.",
+          "Die Analysefrist zum 31. März ersetzt die Kenntnis vom 10. April und setzt die Abhilfe auf den 31. März.",
+          "Eintrittstag und Berichtsfrist sind im Text dieselbe Schwelle."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Ein Verstoß vom 10. Januar, der erst am 10. April bekannt wird, löst die Abhilfefrist ab dem 10. April aus; die Risikoanalyse-Frist zum 31. März rückt den Abhilfebeginn nicht vor.**\n\nAbsatz 8: Abhilfe ab 10. April (Kenntnis); die Analysefrist zum 31. März rückt den Abhilfebeginn nicht vor.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil der Verstoß am 10. Januar eintrat, beginnt die Abhilfefrist am 10. Januar, auch wenn die Kenntnis erst am 10. April liegt.**\n\nAbsatz 8: Auslösung ab Kenntnis am 10. April. Eintrittstag und Analysetag ersetzen die Kenntnisuhr nicht.\n\n**Falle:** Eintrittstag als Abhilfebeginn lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Eintrittstag und Analysetag sind im Text verschiedene Anknüpfungspunkte, und keiner von beiden ersetzt die Kenntnisuhr.**\n\nAbsatz 8 stellt Eintrittstag und Analysetag als untaugliche Ersatzuhren dar; maßgeblich bleibt die Kenntnis.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) Die Analysefrist zum 31. März ersetzt die Kenntnis vom 10. April und setzt die Abhilfe auf den 31. März.**\n\nAbsatz 8: Die Analysefrist rückt den Abhilfebeginn nicht vor. Kenntnis bleibt 10. April.\n\n**Falle:** Analysekalender über die Kenntnisuhr legen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Eintrittstag und Berichtsfrist sind im Text dieselbe Schwelle.**\n\nAbsatz 8 betrifft Kenntnis gegen Eintritt/Analyse; Absatz 7 die Berichtsuhr. Eintritt und Bericht sind nicht dieselbe Schwelle.\n\n**Falle:** Zeitliche Anknüpfungen verschiedener Pflichten verschmelzen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G09",
+        "case_id": "WISO-M6-G09",
+        "title": "720, 310 und 95, keine Summe",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu den Beispielzahlen korrekt?",
+        "statements": [
+          "310 und 95 dürfen nicht addiert werden. 720 ist nicht die Zahl der festgestellten Verstöße, weil ein Hinweis nicht schon der festgestellte Verstoß ist.",
+          "Weil beide Zahlen Hinweise und Pläne betreffen, ist 405 die maßgebliche Zahl der Verstöße.",
+          "720 ersetzt im Beispiel die Zahl der Abhilfepläne, sobald ein Unternehmen auch analysiert.",
+          "2.400 Analysen, 720 Hinweise und 310 Abhilfepläne bleiben getrennte Mengen, und die Beschwerdestelle ist nicht die Begründung für dieses Additionsverbot.",
+          "Der Text rechnet 310 und 95 zusammen und setzt die Summe mit 720 gleich."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) 310 und 95 dürfen nicht addiert werden. 720 ist nicht die Zahl der festgestellten Verstöße, weil ein Hinweis nicht schon der festgestellte Verstoß ist.**\n\nAbsatz 9 verbietet die Addition von 310 und 95 und verbietet, 720 als Verstoßzahl zu lesen. Hinweis ≠ festgestellter Verstoß.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Weil beide Zahlen Hinweise und Pläne betreffen, ist 405 die maßgebliche Zahl der Verstöße.**\n\nAbsatz 9 verbietet genau solche Additionen und die Lesart von 720 als Verstöße. 405 kommt im Text nicht als Verstoßmaß vor.\n\n**Falle:** Arithmetik über Teilmengen als Rechtszahl lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) 720 ersetzt im Beispiel die Zahl der Abhilfepläne, sobald ein Unternehmen auch analysiert.**\n\nAbsatz 9 hält Analysen, Hinweise und Abhilfepläne getrennt. 720 ersetzt 310 nicht.\n\n**Falle:** Hinweiszahl auf die Abhilfeebene hinüberschieben.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) 2.400 Analysen, 720 Hinweise und 310 Abhilfepläne bleiben getrennte Mengen, und die Beschwerdestelle ist nicht die Begründung für dieses Additionsverbot.**\n\nAbsatz 9 trennt die Mengen und verbietet die Addition. Das Additionsverbot folgt der Teilmengenlogik, nicht aus Absatz 5 zur Beschwerdestelle.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**E) Der Text rechnet 310 und 95 zusammen und setzt die Summe mit 720 gleich.**\n\nAbsatz 9 verbietet die Addition und setzt sie nicht mit 720 gleich. Vorgeführt wird die Trennung, nicht die Summe.\n\n**Falle:** Genannte Zahlen als freigegebene Additionsaufgabe lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+        ]
+      },
+      {
+        "id": "WISO-M6-G10",
+        "case_id": "WISO-M6-G10",
+        "title": "Uhren und Ebenen zugleich",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut Text zu kombinierten Grenzen korrekt?",
+        "statements": [
+          "Jeder Zulieferer als Adressat und die Addition von 310 und 95 sind im Text dieselbe zulässige Vereinfachung.",
+          "West trennt eigenes Werk und Nord, die Abhilfe läuft ab Kenntnis, und der 31. März steuert die Analysefrist, nicht den Abhilfebeginn.",
+          "Berichtsfrist und Abhilfefrist sind dieselbe Uhr, weil beide nach dem Ereignisjahr liegen.",
+          "Wer den Verbandssatz zum automatischen Friststart durch jede Beschwerde übernimmt und zugleich Eintritt statt Kenntnis setzt, folgt dem Text in beiden Punkten.",
+          "Adressatentrennung, Kenntnisuhr und Verbot der Zahlenaddition können zusammen vorliegen, ohne dass jede Beschwerde schon der festgestellte Verstoß sein muss."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Jeder Zulieferer als Adressat und die Addition von 310 und 95 sind im Text dieselbe zulässige Vereinfachung.**\n\nAbsatz 1 weist die Adressatenstellung jedes Zulieferers zurück; Absatz 9 die Addition. Beides ist unzulässig, nicht eine gemeinsame Vereinfachung.\n\n**Falle:** Zwei verworfene Lesarten zu einer erlaubten Kurzformel verbinden.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**B) West trennt eigenes Werk und Nord, die Abhilfe läuft ab Kenntnis, und der 31. März steuert die Analysefrist, nicht den Abhilfebeginn.**\n\nAbsatz 4: Ebenentrennung bei West. Absatz 3 und 8: Abhilfe ab Kenntnis. Absatz 2 und 8: 31. März steuert die Analyse, nicht den Abhilfebeginn.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**C) Berichtsfrist und Abhilfefrist sind dieselbe Uhr, weil beide nach dem Ereignisjahr liegen.**\n\nAbsatz 7 nennt ausdrücklich zwei Uhren. Nachgelagert sein macht sie nicht identisch.\n\n**Falle:** Gemeinsame Nachverlagerung als Uhrenidentität lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**D) Wer den Verbandssatz zum automatischen Friststart durch jede Beschwerde übernimmt und zugleich Eintritt statt Kenntnis setzt, folgt dem Text in beiden Punkten.**\n\nAbsatz 5 weist den Verbandssatz zurück; Absatz 3 und 8 halten die Kenntnisuhr. „Folgt dem Text“ kehrt beide Stellen um.\n\n**Falle:** Zwei Zurückweisungen als doppelte Bestätigung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Adressatentrennung, Kenntnisuhr und Verbot der Zahlenaddition können zusammen vorliegen, ohne dass jede Beschwerde schon der festgestellte Verstoß sein muss.**\n\nAbsätze 1, 3/8 und 9 tragen Trennung, Kenntnisuhr und Additionsverbot. Absatz 5: Beschwerde ist nicht schon der festgestellte Verstoß — keine Voraussetzung der übrigen Regeln.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ]
+      },
+      {
+        "id": "WISO-M6-G11",
+        "case_id": "WISO-M6-G11",
+        "title": "Belehrung setzt die 14 Tage",
+        "subsection": "text",
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "5/5",
+        "context": "Welche Aussagen sind laut dem Kurztext zum Verbraucherdarlehen korrekt?",
+        "statements": [
+          "Die Widerrufsfrist von 14 Tagen beginnt erst mit Zugang einer ordnungsgemäßen Widerrufsbelehrung; der Vertragsschluss allein setzt die Frist nicht in Gang.",
+          "Süd erhält am 2. Mai eine ordnungsgemäße Belehrung; ein Widerruf am 17. Mai liegt noch innerhalb der 14 Tage, weil Feiertage die Frist pauschal verlängern.",
+          "Bei verbundenem Geschäft erstreckt sich ein wirksamer Darlehenswiderruf auch auf den Kauf; eine eigene zweite 14-Tage-Uhr ab Übergabe der Sache wird dafür nicht verlangt.",
+          "70 und 25 dürfen addiert werden, und 180 ist die Zahl widerrufener Verträge.",
+          "Eine Nachbelehrung kann die Frist neu in Gang setzen, heilt aber nicht rückwirkend einen schon erklärten Widerruf und setzt die Frist nicht auf den Vertragsschluss zurück."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Die Widerrufsfrist von 14 Tagen beginnt erst mit Zugang einer ordnungsgemäßen Widerrufsbelehrung; der Vertragsschluss allein setzt die Frist nicht in Gang.**\n\nNur der Kurztext zum Verbraucherdarlehen (passage_override): Absatz 1 — Frist beginnt mit ordnungsgemäßer Belehrung; Vertragsschluss allein setzt sie nicht in Gang.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**B) Süd erhält am 2. Mai eine ordnungsgemäße Belehrung; ein Widerruf am 17. Mai liegt noch innerhalb der 14 Tage, weil Feiertage die Frist pauschal verlängern.**\n\nOverride Absatz 2: Frist endet mit Ablauf des 16. Mai; Widerruf am 17. Mai liegt außerhalb. Feiertage verlängern laut Text nicht pauschal.\n\n**Falle:** Pauschale Feiertagsverlängerung über die klare 14-Tage-Grenze legen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**C) Bei verbundenem Geschäft erstreckt sich ein wirksamer Darlehenswiderruf auch auf den Kauf; eine eigene zweite 14-Tage-Uhr ab Übergabe der Sache wird dafür nicht verlangt.**\n\nOverride Absatz 3: Wirksamer Darlehenswiderruf erstreckt sich auf das verbundene Geschäft; keine gesonderte zweite 14-Tage-Uhr ab Übergabe.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+          "**D) 70 und 25 dürfen addiert werden, und 180 ist die Zahl widerrufener Verträge.**\n\nOverride Absatz 4 verbietet, 70 und 25 zu addieren, und verbietet, 180 als Zahl widerrufener Verträge zu lesen. Fehlende Belehrung ≠ erklärter Widerruf.\n\n**Falle:** Teilmengen addieren und Fehlbestand als Widerrufszahl lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+          "**E) Eine Nachbelehrung kann die Frist neu in Gang setzen, heilt aber nicht rückwirkend einen schon erklärten Widerruf und setzt die Frist nicht auf den Vertragsschluss zurück.**\n\nOverride Absatz 5: Nachbelehrung kann neu in Gang setzen; heilt nicht rückwirkend schon erklärten Widerruf und setzt nicht auf Vertragsschluss zurück. Verbandsforderung wird nicht übernommen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+        ],
+        "passage_override": "(1) Beim Verbraucherdarlehensvertrag beginnt die Widerrufsfrist von 14 Tagen erst, wenn dem Verbraucher eine ordnungsgemäße Widerrufsbelehrung zugegangen ist. Der Vertragsschluss allein setzt die Frist nicht in Gang. Ohne ordnungsgemäße Belehrung läuft die Frist nicht. Wer den Tag des Vertragsschlusses als alleinigen Fristanfang liest, verlässt den Text.\n\n(2) Verbraucherin Süd schließt am 2. Mai einen Darlehensvertrag und erhält am selben Tag eine ordnungsgemäße Belehrung. Die Frist endet mit Ablauf des 16. Mai. Ein Widerruf am 17. Mai liegt außerhalb. Feiertage verlängern laut Text nicht pauschal.\n\n(3) Ist das Darlehen mit einem Kaufvertrag verbunden, erstreckt sich ein wirksamer Widerruf des Darlehens auch auf das verbundene Geschäft. Eine gesonderte zweite 14-Tage-Uhr ab Übergabe wird nicht verlangt.\n\n(4) Von 900 geprüften Verträgen fehlte in 180 Fällen eine ordnungsgemäße Belehrung. 70 dieser 180 betrafen zugleich verbundene Geschäfte, 25 davon zugleich einen Widerruf nach Ablauf von 14 Tagen ab Vertragsschluss ohne Belehrung. Der Text verbietet, 70 und 25 zu addieren, und er verbietet, 180 als Zahl widerrufener Verträge zu lesen. Fehlende Belehrung ist nicht der erklärte Widerruf.\n\n(5) Eine Nachbelehrung kann die Frist neu in Gang setzen. Sie heilt nicht rückwirkend einen schon erklärten Widerruf und setzt die Frist nicht auf den Vertragsschluss zurück. Die Verbandsforderung, Nachbelehrung mache jeden früheren Widerruf gegenstandslos, wird nicht übernommen.",
+        "passage_title_override": "Verbraucherdarlehen: Widerrufsbelehrung, 14 Tage und verbundenes Geschäft"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "WISO-M6-M01",
+      "id": "WISO-M6-M01",
+      "title": "Genau-eins von F und G, blockierter G-Zweig",
+      "chapter": 1,
+      "subsection": "1.5",
+      "difficulty_level": "5/5",
+      "context": "Es gelten sieben Prämissen über die Aussagenvariablen $F,G,H,J,K$:\n\n(1) Genau eine der Aussagen $F,G$ ist wahr.\n\n(2) Wenn $F$, dann $H$.\n\n(3) Wenn $G$, dann nicht $H$.\n\n(4) $H$ genau dann, wenn $J$.\n\n(5) Mindestens eine der Aussagen $J,K$ ist wahr.\n\n(6) Wenn $K$, dann nicht $G$.\n\n(7) Wenn $F$, dann nicht $K$.\n\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Unter allen sieben Prämissen gibt es genau eine zulässige Belegung, und in ihr ist $F$ wahr sowie $K$ falsch.",
+        "Bereits aus (1)–(4) allein folgt, dass $K$ falsch ist.",
+        "Lässt man nur (6) weg, so wird die Belegung mit $G$ wahr und $F$ falsch zulässig.",
+        "In der eindeutigen Lösung aller sieben Prämissen ist $J$ falsch.",
+        "Ohne Prämisse (5) bleibt dieselbe einelementige Lösungsmenge."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus (1) ist genau eine von $F,G$ wahr. Der $F$-Zweig liefert $H$, $J$ und durch (7) $\\neg K$; (5) und (6) sind erfüllt. Der $G$-Zweig erzwingt $\\neg H$, $\\neg J$ und damit $K$ aus (5), was (6) widerspricht. Übrig bleibt nur\n$$\nF,\\;\\neg G,\\;H,\\;J,\\;\\neg K.\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nDie Prämissen (1)–(4) erwähnen $K$ gar nicht. Der Zweig $\\neg F,G,\\neg H,\\neg J$ ist mit (1)–(4) verträglich, und $K$ kann dort wahr oder falsch sein. $K$ ist durch (1)–(4) nicht ausgeschlossen.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nOhne (6) wird der $G$-Zweig $\\neg F,G,\\neg H,\\neg J,K$ zulässig: (5) ist durch $K$ erfüllt, (7) greift nicht. Genau diese Belegung entsteht neu.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nIn der einzigen Lösung ist $J$ wahr, denn aus $F$ folgen $H$ und damit $J$. Die Behauptung nennt den falschen Wahrheitswert.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nOhne (5) überlebt der $G$-Zweig mit $\\neg K$: $\\neg F,G,\\neg H,\\neg J,\\neg K$ erfüllt (1)–(4), (6) und (7). Die Lösungsmenge wird größer, (5) ist nicht entbehrlich.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Aus (1) ist genau eine von $F,G$ wahr.\n\nFall $F$: Dann $\\neg G$, aus (2) folgt $H$, aus (4) folgt $J$, aus (7) folgt $\\neg K$. (5) ist durch $J$ erfüllt; (6) ist erfüllt. Zulässig:\n$$\nF,\\;\\neg G,\\;H,\\;J,\\;\\neg K.\n$$\n\nFall $G$: Dann $\\neg F$, aus (3) folgt $\\neg H$, aus (4) folgt $\\neg J$, aus (5) folgt $K$. (6) verlangt dann $\\neg G$ — Widerspruch.\n\nDie einzige Belegung unter allen sieben Prämissen ist der $F$-Zweig. Ohne (6) wird der $G$-Zweig zulässig; ohne (5) ebenfalls ein $G$-Zweig mit $\\neg K$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M02",
+      "id": "WISO-M6-M02",
+      "title": "Hebbare Lücke nach Konjugation von Wurzel und Linearfaktor",
+      "chapter": 2,
+      "subsection": "2.2",
+      "difficulty_level": "5/5",
+      "context": "Es sei\n$$\nh(x)=\\dfrac{\\sqrt{2x+7}-3}{x-1}\n$$\nfür alle reellen $x$ im maximalen Definitionsbereich. Zusätzlich wird die durch Erweitern mit der Konjugierten entstehende Vereinfachung betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der maximale Definitionsbereich von $h$ ist $\\bigl[-\\tfrac72,\\infty\\bigr)\\setminus\\{1\\}$.",
+        "Die hebbare Unstetigkeit an $x=1$ wird durch den Wert $\\dfrac12$ stetig ergänzt.",
+        "Es gilt $h(9)=\\dfrac14$.",
+        "Die Gleichung $h(x)=\\dfrac25$ besitzt genau eine Lösung im Definitionsbereich, und diese liegt in $(-2,0)$.",
+        "Für jedes $x$ im Definitionsbereich gilt $h(x)<\\dfrac23$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDer Radikand verlangt $2x+7\\ge 0$, also $x\\ge -\\tfrac72$. Der Nenner schließt $x=1$ aus. An keiner anderen Stelle verschwindet der Nenner.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nNach dem Erweitern mit der Konjugierten ist\n$$\n\\lim_{x\\to 1}h(x)=\\dfrac{2}{\\sqrt{9}+3}=\\dfrac{2}{6}=\\dfrac13,\n$$\nnicht $\\tfrac12$. Der Ergänzungswert ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nMit der gekürzten Form:\n$$\nh(9)=\\dfrac{2}{\\sqrt{25}+3}=\\dfrac{2}{8}=\\dfrac14.\n$$\nDirekt: $(\\sqrt{25}-3)/(9-1)=(5-3)/8=\\tfrac14$.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\n$$\n\\dfrac{2}{\\sqrt{2x+7}+3}=\\dfrac25\\implies\\sqrt{2x+7}=2\\implies x=-\\dfrac32.\n$$\nEs ist $-\\tfrac32\\in(-2,0)$ und $-\\tfrac32\\neq 1$, also genau eine zulässige Lösung.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nAn der linken Grenze ist $h\\bigl(-\\tfrac72\\bigr)=\\dfrac{0-3}{-\\tfrac72-1}=\\dfrac{-3}{-\\tfrac92}=\\dfrac23$, und $-\\tfrac72$ liegt im Definitionsbereich. Die strikte Ungleichung gilt dort nicht.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Nenner null bei $x=1$; Radikand verlangt $x\\ge -\\tfrac72$. An $x=1$ ist auch der Zähler null, denn $\\sqrt{9}-3=0$. Erweitern mit der Konjugierten:\n$$\nh(x)=\\dfrac{(2x+7)-9}{(x-1)\\bigl(\\sqrt{2x+7}+3\\bigr)}=\\dfrac{2}{\\sqrt{2x+7}+3}\\qquad(x\\neq 1).\n$$\nDefinitionsmenge $\\bigl[-\\tfrac72,\\infty\\bigr)\\setminus\\{1\\}$. Stetige Ergänzung an $x=1$ durch den Wert $\\tfrac13$. An $x=-\\tfrac72$ gilt $h=\\tfrac23$. Ferner\n$$\nh(9)=\\dfrac{2}{5+3}=\\dfrac14,\\qquad\nh(x)=\\dfrac25\\iff\\sqrt{2x+7}+3=5\\iff x=-\\dfrac32.\n$$",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M03",
+      "id": "WISO-M6-M03",
+      "title": "Annuität 48000 zu 5,5 Prozent über sechs Jahre",
+      "chapter": 3,
+      "subsection": "3.6",
+      "difficulty_level": "5/5",
+      "context": "Ein Kredit über EUR $48\\,000$ wird durch sechs gleiche Jahresendzahlungen bei effektivem Jahreszins $5{,}5\\%$ getilgt. Sei $A$ die Annuität und $B_k$ die Restschuld unmittelbar nach der $k$-ten Zahlung ($B_0=48\\,000$). Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Annuität $A$ liegt streng zwischen $9\\,000$ und $10\\,000$.",
+        "Nach der zweiten Zahlung ist die Restschuld noch größer als $34\\,000$.",
+        "Die Zinsen des ersten Jahres betragen genau EUR $2\\,640$, und die Tilgung des ersten Jahres liegt streng zwischen $6\\,900$ und $7\\,100$.",
+        "Weil die Annuität konstant ist, ist die Tilgung in jedem der sechs Jahre dieselbe.",
+        "Die über die gesamte Laufzeit gezahlten Zinsen liegen streng zwischen $9\\,000$ und $10\\,000$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nMit $u=1{,}055^{6}$ ist $1-u^{-1}\\approx 0{,}27455$ und\n$$\nA=48000\\cdot\\dfrac{0{,}055}{1-1{,}055^{-6}}\\approx 9\\,608{,}59\\in(9000,10000).\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$$\nB_2=A\\cdot\\dfrac{1-1{,}055^{-4}}{0{,}055}\\approx 33\\,679{,}55<34000.\n$$\nDie Schwelle $34\\,000$ wird unterschritten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nJahreszinsen: $48\\,000\\cdot 0{,}055=2640$. Tilgung: $A-2640\\approx 6\\,968{,}59\\in(6900,7100)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBei Annuitätendarlehen sinkt der Zinsanteil mit der Restschuld; der Tilgungsanteil steigt. Konstante Rate erzwingt keine konstante Tilgung.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nGesamtzahlung $6A\\approx 57\\,651{,}54$, davon Schuld $48\\,000$, Rest\n$$\n6A-S\\approx 9\\,651{,}54\\in(9000,10000).\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Mit $S=48\\,000$, $r=0{,}055$, $n=6$ ist\n$$\nA=S\\cdot\\dfrac{r}{1-(1+r)^{-n}}=48000\\cdot\\dfrac{0{,}055}{1-1{,}055^{-6}}\\approx 9\\,608{,}59.\n$$\nRestschuld nach $k$ Zahlungen:\n$$\nB_k=A\\cdot\\dfrac{1-(1+r)^{-(n-k)}}{r}.\n$$\nInsbesondere $B_1\\approx 41\\,031{,}41$, $B_2\\approx 33\\,679{,}55$. Zinsen im ersten Jahr: $Sr=2640$; Tilgung im ersten Jahr: $A-2640\\approx 6\\,968{,}59$. Gesamte Zinslast $6A-S\\approx 9\\,651{,}54$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M04",
+      "id": "WISO-M6-M04",
+      "title": "Betrag 3x-4 gleich Wurzel 2x+5, Kernwechsel",
+      "chapter": 4,
+      "subsection": "4.3",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen Lösungen von\n$$\n|3x-4|=\\sqrt{2x+5}.\n$$\nZusätzlich wird die unkritische Ersatzgleichung $3x-4=\\sqrt{2x+5}$ ohne Betrag betrachtet. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Originalgleichung hat genau zwei verschiedene reelle Lösungen.",
+        "Beide Lösungen erfüllen $3x-4\\ge 0$.",
+        "Die Ersatzgleichung $3x-4=\\sqrt{2x+5}$ hat genau eine reelle Lösung, und diese ist die größere Lösung der Originalgleichung.",
+        "Weil Quadrieren den Definitionsbereich verlässt, muss mindestens eine der beiden Quadratwurzeln der Hilfsgleichung eine Scheinlösung sein.",
+        "Die kleinere Lösung liegt streng zwischen $0$ und $1$, die größere streng zwischen $2$ und $3$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nDie quadratische Hilfsgleichung hat Diskriminante $280>0$ und liefert zwei Kandidaten; beide liegen im Definitionsbereich und bestehen die Probe in $|3x-4|=\\sqrt{2x+5}$. Genau zwei Lösungen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nAn $x_{-}\\approx 0{,}515$ ist $3x_{-}-4\\approx -2{,}456<0$. Der Betrag ist nötig; die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$3x-4=\\sqrt{2x+5}\\ge 0$ erzwingt $x\\ge\\tfrac43$. Nur $x_{+}\\approx 2{,}374$ liegt darüber und löst beide Formen. $x_{-}$ fällt aus der Ersatzgleichung heraus.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBeide Kandidaten liegen in $x\\ge -\\tfrac52$ und bestehen die Probe. Quadrieren erzeugt hier keine Scheinlösung; die pauschale Regel greift nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\sqrt{280}=2\\sqrt{70}\\approx 16{,}733$, also\n$$\nx_{-}=\\dfrac{26-\\sqrt{280}}{18}\\approx 0{,}515\\in(0,1),\\qquad\nx_{+}=\\dfrac{26+\\sqrt{280}}{18}\\approx 2{,}374\\in(2,3).\n$$\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Definitionsbereich $x\\ge -\\tfrac52$. Quadrieren liefert\n$$\n(3x-4)^{2}=2x+5\\implies 9x^{2}-26x+11=0,\\qquad\nx=\\dfrac{26\\pm\\sqrt{280}}{18}.\n$$\nBeide Kandidaten liegen in $[-\\tfrac52,\\infty)$ und erfüllen die Ausgangsgleichung:\n$$\nx_{-}=\\dfrac{26-\\sqrt{280}}{18}\\approx 0{,}515,\\qquad\nx_{+}=\\dfrac{26+\\sqrt{280}}{18}\\approx 2{,}374.\n$$\nBei $x_{-}$ ist $3x-4<0$; die Ersatzgleichung ohne Betrag verwirft $x_{-}$ und behält nur $x_{+}$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M05",
+      "id": "WISO-M6-M05",
+      "title": "Zwei Kapazitäten, Optimum bei vier und drei",
+      "chapter": 5,
+      "subsection": "5.5",
+      "difficulty_level": "5/5",
+      "context": "Zulässig sind alle $(x,y)$ mit\n$$\n3x+2y\\le 18,\\qquad x+2y\\le 10,\\qquad x\\ge 0,\\qquad y\\ge 0.\n$$\nZu maximieren ist $Z=5x+4y$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Das Maximum von $Z$ auf dem zulässigen Bereich ist $32$ und wird genau im Punkt $(4,3)$ angenommen.",
+        "Im Punkt $(6,0)$ ist $Z$ größer als in jedem anderen Eckpunkt außer $(4,3)$.",
+        "Jede zulässige Lösung mit $x=5$ erreicht mindestens $Z=30$.",
+        "Der zulässige Bereich enthält den Punkt $(5,3)$.",
+        "Ersetzt man das Ziel durch $Z^{\\ast}=x+5y$, so bleibt $(4,3)$ der eindeutige Maximalpunkt."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nUnter den vier Ecken ist $Z(4,3)=32$ streng größer als $30$, $20$ und $0$. Ein lineares Ziel auf einem Polygon nimmt das Maximum in einer Ecke an — hier einzig bei $(4,3)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Richtig\n\n$Z(6,0)=30$, $Z(0,5)=20$, $Z(0,0)=0$. Unter den Ecken außer $(4,3)$ ist $(6,0)$ der beste.\n\nDie Aussage ist richtig.",
+        "**C.** → Falsch\n\nMit $x=5$ erzwingt $3\\cdot 5+2y\\le 18$ die Schranke $y\\le 1{,}5$; zugleich $5+2y\\le 10\\Rightarrow y\\le 2{,}5$. Zulässig ist etwa $(5,1{,}5)$ mit $Z=31$, aber auch $(5,0)$ mit $Z=25<30$. Nicht jede solche Lösung erreicht $30$.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\n$3\\cdot 5+2\\cdot 3=21>18$ und $5+2\\cdot 3=11>10$. Beide Kapazitäten sind verletzt; $(5,3)$ liegt außerhalb.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nMit $Z^{\\ast}=x+5y$ gilt $Z^{\\ast}(0,5)=25$ und $Z^{\\ast}(4,3)=19$. Das Maximum wandert zur Ecke $(0,5)$; $(4,3)$ ist nicht mehr maximal.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Ecken des zulässigen Bereichs: $(0,0)$, $(6,0)$, $(0,5)$ und der Schnitt\n$$\n3x+2y=18,\\; x+2y=10\\implies 2x=8\\implies x=4,\\; y=3.\n$$\nZielwerte: $Z(0,0)=0$, $Z(6,0)=30$, $Z(0,5)=20$, $Z(4,3)=32$. Das Maximum $32$ liegt einzig am Schnittpunkt $(4,3)$. Entlang $x+2y=10$ ist $Z=5x+4\\bigl(5-\\tfrac12 x\\bigr)=20+3x$ streng wachsend in $x$; entlang $3x+2y=18$ ist $Z=5x+4\\bigl(9-\\tfrac32 x\\bigr)=36-x$ streng fallend in $x$ — das Maximum sitzt nur am Schnitt.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M06",
+      "id": "WISO-M6-M06",
+      "title": "Vier kritische Stellen, Lösung mit zwei Intervallen",
+      "chapter": 6,
+      "subsection": "6.1",
+      "difficulty_level": "5/5",
+      "context": "Gesucht sind alle reellen $x$ mit\n$$\n\\dfrac{(x+3)(x-2)}{(x-1)(x-6)}\\le 0.\n$$\nBewerten Sie jede Aussage.",
+      "statements": [
+        "Die Lösungsmenge ist $L=[-3,1)\\cup[2,6)$.",
+        "Die Zahl $-4$ gehört zur Lösungsmenge.",
+        "Jedes $x\\in(2,6)$ ist eine Lösung, und $x=2$ ist ebenfalls eine Lösung.",
+        "Weil der Zähler bei $x=-3$ verschwindet, gehört eine ganze Umgebung von $-3$ zur Lösungsmenge.",
+        "Das offene Intervall $(1,2)$ ist disjunkt zur Lösungsmenge."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nVorzeichentabelle und Aufnahme der Nullstellen $-3$, $2$ sowie Ausschluss der Pole $1$, $6$ liefern genau diese Menge.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $x=-4$ ist der Bruch $\\dfrac{(-1)(-6)}{(-5)(-10)}=\\dfrac{6}{50}>0$. Die Zahl $-4$ liegt in $(-\\infty,-3)$ und fällt aus $L$ heraus.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nFür $x\\in(2,6)$ ist der Bruch negativ. An $x=2$ ist der Zähler null und der Nenner $(1)(-4)\\neq 0$, also gilt Gleichheit $\\le 0$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nLinks von $-3$ ist der Bruch positiv. Nur $x=-3$ selbst und rechts davon bis vor $1$ gehören zu $L$ — keine beidseitige Umgebung.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nIm Intervall $(1,2)$ ist der Bruch positiv (Testpunkt $1{,}5$). Kein Punkt daraus erfüllt $\\le 0$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Kritische Stellen: Nullstellen $x=-3$, $x=2$; Pole $x=1$, $x=6$. Vorzeichentabelle (Testpunkte):\n$$\n\\begin{array}{c|c}\n\\text{Intervall}& \\text{Vorzeichen}\\\\\n\\hline\n(-\\infty,-3)& +\\\\\n(-3,1)& -\\\\\n(1,2)& +\\\\\n(2,6)& -\\\\\n(6,\\infty)& +\n\\end{array}\n$$\nEinschließlich der Nullstellen, ausschließlich der Pole:\n$$\nL=[-3,1)\\cup[2,6).\n$$\nBei $1$ und $6$ enden die Intervalle offen; $-3$ und $2$ gehören zu $L$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M07",
+      "id": "WISO-M6-M07",
+      "title": "Parabel und Gerade, Schnitt bei vier plus minus zwei Wurzel zwei",
+      "chapter": 7,
+      "subsection": "7.5",
+      "difficulty_level": "5/5",
+      "context": "Es seien\n$$\nf(x)=x^{2}-6x+5,\\qquad g(x)=2x-3.\n$$\nBetrachtet werden Schnittpunkte, Scheitel und Lagevergleiche. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Die Gleichung $f(x)=g(x)$ hat genau zwei reelle Lösungen, nämlich $4\\pm 2\\sqrt{2}$.",
+        "Der Scheitel von $f$ liegt oberhalb der Geraden $g$.",
+        "Beide Schnittstellen liegen außerhalb des offenen Intervalls $(2,5)$.",
+        "Auf dem Intervall $[1,5]$ gilt durchgängig $f(x)\\ge g(x)$.",
+        "Die kleinere Schnittstelle liegt streng zwischen $1$ und $2$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$f-g=x^{2}-8x+8=0$ hat Diskriminante $64-32=32=16\\cdot 2$, also $x=\\dfrac{8\\pm 4\\sqrt{2}}{2}=4\\pm 2\\sqrt{2}$. Zwei verschiedene reelle Schnitte.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nScheitelwert $f(3)=-4$, Geradenwert $g(3)=3$. Es gilt $-4<3$; der Scheitel liegt unterhalb von $g$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$4-2\\sqrt{2}\\approx 1{,}172<2$ und $4+2\\sqrt{2}\\approx 6{,}828>5$. Keine der beiden liegt in $(2,5)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBereits am Scheitel $x=3\\in[1,5]$ ist $f=-4<3=g$. Die behauptete Ungleichung gilt nicht durchgängig.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$1<4-2\\sqrt{2}<2$, denn $2\\sqrt{2}\\approx 2{,}828$ liefert $1{,}172\\in(1,2)$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$f(x)=(x-1)(x-5)$ hat Nullstellen $1$ und $5$; Scheitel bei $x=3$ mit $f(3)=-4$. Schnitt $f=g$:\n$$\nx^{2}-6x+5=2x-3\\implies x^{2}-8x+8=0\\implies x=4\\pm 2\\sqrt{2}.\n$$\nNumerisch $x_{-}\\approx 1{,}172$, $x_{+}\\approx 6{,}828$. Beide Schnittpunkte liegen außerhalb von $(2,5)$; zwischen den Nullstellen von $f$ gilt $f\\le 0$, während $g(x)=2x-3$ auf $[2,5]$ positiv ist — dort liegt $f$ unterhalb von $g$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M08",
+      "id": "WISO-M6-M08",
+      "title": "Potenzprodukt mit Skalenelastizität drei Viertel",
+      "chapter": 8,
+      "subsection": "8.5",
+      "difficulty_level": "5/5",
+      "context": "Eine Produktion folge\n$$\nQ(L,K)=4\\,L^{1/4}K^{1/2}\n$$\nfür $L>0$, $K>0$. Betrachtet wird der Punkt $(L,K)=(16,9)$ sowie die gleichmäßige Skalierung beider Inputs mit dem Faktor $t>0$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Am Punkt $(16,9)$ gilt $Q=24$ und $\\partial Q/\\partial L=3/8$.",
+        "Verdoppelt man beide Inputs, so verdoppelt sich $Q$.",
+        "Die Skalenelastizität ist konstant gleich $3/4$.",
+        "Am betrachteten Punkt ist $\\partial Q/\\partial K$ kleiner als $\\partial Q/\\partial L$.",
+        "Wegen $\\tfrac14+\\tfrac12<1$ liegen abnehmende Skalenerträge vor."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$Q=4\\cdot 2\\cdot 3=24$ und\n$$\n\\dfrac{\\partial Q}{\\partial L}=L^{-3/4}K^{1/2}=16^{-3/4}\\cdot 3=\\dfrac{3}{8}.\n$$\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nSkalierung mit $t=2$ multipliziert $Q$ mit $2^{3/4}\\approx 1{,}682$, nicht mit $2$. Der Output verdoppelt sich nicht.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$Q(tL,tK)=t^{1/4+1/2}Q(L,K)=t^{3/4}Q(L,K)$. Die Skalenelastizität ist konstant $\\tfrac34$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$\\partial Q/\\partial K=2\\,L^{1/4}K^{-1/2}=2\\cdot 2\\cdot\\tfrac13=\\tfrac43>\\tfrac38=\\partial Q/\\partial L$. Die behauptete Ungleichung ist falsch.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\tfrac14+\\tfrac12=\\tfrac34<1$ bedeutet abnehmende Skalenerträge; das passt zur Skalenelastizität $\\tfrac34$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "Am Punkt $(16,9)$:\n$$\nQ=4\\cdot 16^{1/4}\\cdot 9^{1/2}=4\\cdot 2\\cdot 3=24.\n$$\nGrenzprodukte:\n$$\n\\frac{\\partial Q}{\\partial L}=L^{-3/4}K^{1/2}=\\frac{3}{8},\\qquad\n\\frac{\\partial Q}{\\partial K}=2\\,L^{1/4}K^{-1/2}=\\frac{4}{3}.\n$$\nSkalierung $(tL,tK)$ liefert\n$$\nQ(tL,tK)=t^{3/4}Q(L,K)\n$$\nweil $\\tfrac14+\\tfrac12=\\tfrac34<1$ — abnehmende Skalenerträge. Insbesondere verdoppelt $t=2$ den Output nicht.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M09",
+      "id": "WISO-M6-M09",
+      "title": "Drei rationale Wurzeln minus zwei, eins und drei",
+      "chapter": 9,
+      "subsection": "9.5",
+      "difficulty_level": "5/5",
+      "context": "Es sei $p(x)=x^{3}-2x^{2}-5x+6$. Zuerst wird $p$ selbst untersucht. Danach die Schar $p(x)-k$ für reelle $k$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "$p$ hat genau die drei reellen Nullstellen $-2$, $1$ und $3$.",
+        "Beide kritischen Stellen von $p$ liegen im offenen Intervall $(0,3)$.",
+        "Es gilt $p(0)=6$, und daher ist $x=0$ eine Nullstelle von $p(x)-6$.",
+        "Die lokale Extremstelle $x_{+}=\\dfrac{2+\\sqrt{19}}{3}$ liegt streng zwischen $2$ und $3$.",
+        "Für jedes reelle $k$ hat $p(x)-k$ mindestens zwei verschiedene reelle Nullstellen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nAus $p(1)=0$ folgt die Zerlegung $(x-1)(x^{2}-x-6)=(x-1)(x-3)(x+2)$. Drei einfache reelle Nullstellen.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$x_{-}=(2-\\sqrt{19})/3\\approx -0{,}786<0$ liegt links von $0$. Nur $x_{+}$ liegt in $(0,3)$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nKonstanter Term $p(0)=6$. Also $p(0)-6=0$.\n\nDie Aussage ist richtig.",
+        "**D.** → Richtig\n\n$\\sqrt{19}\\approx 4{,}359$, also $x_{+}\\approx 6{,}359/3\\approx 2{,}120\\in(2,3)$.\n\nDie Aussage ist richtig.",
+        "**E.** → Falsch\n\nAußerhalb des Werteintervalls zwischen lokalem Hoch- und Tiefpunkt schneidet die Horizontale $y=k$ den Graphen nur einmal. Gegenbeispiel: sehr großes $k$.\n\nDie Aussage ist falsch."
+      ],
+      "solution_overview": "Rationale Nullstellenprüfung liefert $p(1)=0$, und Polynomdivision ergibt\n$$\np(x)=(x-1)(x^{2}-x-6)=(x-1)(x-3)(x+2).\n$$\nNullstellen $-2$, $1$, $3$. Ableitung $p'(x)=3x^{2}-4x-5$ mit\n$$\nx=\\dfrac{2\\pm\\sqrt{19}}{3};\n$$\nbeide kritisch, $\\sqrt{19}\\approx 4{,}359$, also $x_{+}\\approx 2{,}120$ und $x_{-}\\approx -0{,}786$.\n$p(x)-k=0$ hat genau dann drei verschiedene reelle Wurzeln, wenn $k$ streng zwischen den lokalen Extremwerten liegt. Insbesondere hat $p(x)-6$ die Wurzel $0$ (denn $p(0)=6$).",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M10",
+      "id": "WISO-M6-M10",
+      "title": "Zwei stetige Bestände, Führungswechsel nach Jahr 20",
+      "chapter": 10,
+      "subsection": "10.1",
+      "difficulty_level": "5/5",
+      "context": "Bestand $A$ startet bei $2\\,800$ und wächst stetig mit $8\\%$ pro Jahr. Bestand $B$ startet drei Jahre später bei $1\\,500$ und wächst stetig mit $13\\%$ pro Jahr. Es sei $t$ die Zeit in Jahren seit dem Start von $A$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der Zeitpunkt, zu dem beide Bestände gleich groß sind, liegt streng zwischen $20$ und $21$.",
+        "Zum Zeitpunkt $t=15$ ist Bestand $B$ bereits größer als Bestand $A$.",
+        "Würde $B$ bereits zum Zeitpunkt $0$ mit $1\\,500$ starten (ohne Delay), so läge der Schnitt streng zwischen $12$ und $13$.",
+        "Die Wachstumsrate von $B$ ist um genau fünf Prozentpunkte höher als die von $A$; deshalb verdoppelt $B$ seinen Vorsprung alle $1/0{,}05$ Jahre.",
+        "Zum Schnittzeitpunkt $t^{\\ast}$ liegt der gemeinsame Bestand streng zwischen $13\\,000$ und $15\\,000$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$t^{\\ast}=(\\ln(28/15)+0{,}39)/0{,}05$. Mit $\\ln(28/15)\\approx 0{,}624$ folgt $t^{\\ast}\\approx 20{,}28\\in(20,21)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nBei $t=15\\ge 3$: $A(15)=2800\\,e^{1{,}2}\\approx 9296$, $B(15)=1500\\,e^{1{,}56}\\approx 7138$. Noch ist $A>B$; der Wechsel kommt erst bei $\\approx 20{,}28$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\nOhne Delay: $2800\\,e^{0{,}08t}=1500\\,e^{0{,}13t}\\Rightarrow t=\\ln(28/15)/0{,}05\\approx 12{,}48\\in(12,13)$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nDie Differenz der Raten ist $0{,}05$, sie steuert den Schnittzeitpunkt — aber $B$ startet später und kleiner. Es gibt keinen konstanten „Vorsprung“, der sich alle $20$ Jahre verdoppelt.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$A(t^{\\ast})=2800\\,e^{0{,}08\\cdot 20{,}28}\\approx 2800\\cdot e^{1{,}622}\\approx 14\\,186\\in(13000,15000)$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$$\nA(t)=2800\\,e^{0{,}08t},\\qquad\nB(t)=1500\\,e^{0{,}13(t-3)}\\quad(t\\ge 3).\n$$\nGleichsetzen:\n$$\n\\ln\\dfrac{28}{15}+0{,}08t=0{,}13(t-3)\\implies\nt=\\dfrac{\\ln(28/15)+0{,}39}{0{,}05}\\approx 20{,}283.\n$$\nDer Führungswechsel liegt streng zwischen $20$ und $21$. Für $3\\le t<t^{\\ast}$ ist $A>B$; danach $B>A$. Bei gleichem Startzeitpunkt (hypothetisch ohne Delay) wäre der Schnitt schon bei $\\ln(28/15)/0{,}05\\approx 12{,}48$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M11",
+      "id": "WISO-M6-M11",
+      "title": "Offene Schachtel aus 50 mal 28, eine kritische Stelle außen",
+      "chapter": 11,
+      "subsection": "11.3",
+      "difficulty_level": "5/5",
+      "context": "Aus einem Rechteckblech der Maße $50\\,\\mathrm{cm}\\times 28\\,\\mathrm{cm}$ werden an den Ecken kongruente Quadrate der Seitenlänge $a$ ausgeschnitten und die Seiten hochgeklappt. Das Volumen der offenen Schachtel sei $V(a)$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Im geometrisch zulässigen Intervall liegt genau eine kritische Stelle, und sie liegt streng zwischen $5$ und $6$.",
+        "Beide Wurzeln von $V'(a)=0$ liegen im offenen Intervall $(0,14)$.",
+        "Das maximale Volumen auf dem zulässigen Intervall liegt streng zwischen $3600$ und $3700$.",
+        "Weil $V'(a)$ eine nach oben geöffnete Parabel ist, ist jede kritische Stelle ein lokales Minimum von $V$.",
+        "Für $a=5$ ist das Volumen streng kleiner als für $a=6$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$a_{-}=(78-\\sqrt{1884})/6$ mit $\\sqrt{1884}\\approx 43{,}405$ ergibt $\\approx 5{,}766\\in(5,6)$. $a_{+}$ liegt oberhalb von $14$ und fällt aus.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$a_{+}=(78+\\sqrt{1884})/6\\approx 20{,}234>14$ ist geometrisch unzulässig. Nur eine Wurzel liegt in $(0,14)$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$V(a_{-})=a_{-}(50-2a_{-})(28-2a_{-})\\approx 3653\\in(3600,3700)$. An den Rändern verschwindet $V$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$V'$ ist nach oben geöffnet, aber die Klassifikation von $V$ folgt aus dem Vorzeichenwechsel von $V'$. An $a_{-}$ wechselt $V'$ von $+$ nach $-$ — lokales Maximum, kein Minimum.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$V(5)=5\\cdot 40\\cdot 18=3600$, $V(6)=6\\cdot 38\\cdot 16=3648$. Es gilt $3600<3648$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$$\nV(a)=a(50-2a)(28-2a)=4a^{3}-156a^{2}+1400a,\\qquad 0<a<14.\n$$\n$$\nV'(a)=12a^{2}-312a+1400=0\\iff 3a^{2}-78a+350=0.\n$$\nKritische Stellen\n$$\na=\\dfrac{78\\pm\\sqrt{1884}}{6};\n$$\n$a_{+}\\approx 20{,}234>14$ liegt außerhalb der Zulässigkeit, $a_{-}\\approx 5{,}766$ liegt in $(0,14)$.\n$V''(a_{-})<0$ (oder Randvergleich): lokales und globales Maximum auf $(0,14)$ bei $a_{-}$ mit $V(a_{-})\\approx 3653$. An den Rändern $V\\to 0$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M12",
+      "id": "WISO-M6-M12",
+      "title": "Prävalenz 2,2 Prozent, positiver Vorhersagewert unter dreißig Prozent",
+      "chapter": 12,
+      "subsection": "12.6",
+      "difficulty_level": "5/5",
+      "context": "Eine Krankheit hat Prävalenz $2{,}2\\%$. Ein Test erkennt Erkrankte mit Wahrscheinlichkeit $93\\%$ (Sensitivität) und Gesunde mit Wahrscheinlichkeit $95\\%$ (Spezifität). Bewerten Sie jede Aussage.",
+      "statements": [
+        "Der positive Vorhersagewert $P(D\\mid +)$ liegt streng zwischen $0{,}29$ und $0{,}30$.",
+        "Mehr als $8\\%$ aller Getesteten erhalten ein positives Ergebnis.",
+        "Der negative Vorhersagewert $P(D^{c}\\mid -)$ liegt streng über $0{,}99$.",
+        "Weil Sensitivität und Spezifität beide über $90\\%$ liegen, muss auch $P(D\\mid +)$ über $90\\%$ liegen.",
+        "Die Likelihood-Ratio positiv $\\dfrac{P(+\\mid D)}{P(+\\mid D^{c})}$ liegt streng zwischen $18$ und $19$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\nZähler $0{,}93\\cdot 0{,}022=0{,}02046$, Nenner $0{,}02046+0{,}05\\cdot 0{,}978=0{,}06936$, Quotient $\\approx 0{,}2950\\in(0{,}29,0{,}30)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\n$P(+)=0{,}06936<0{,}08$. Die $8\\%$-Schwelle wird unterschritten.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$P(D^{c}\\mid -)\\approx 0{,}9983>0{,}99$. Falsch-negative Masse $0{,}07\\cdot 0{,}022$ ist winzig gegen die richtig-negativen.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\nBei kleiner Prävalenz dominieren die falsch positiven. Hier ist $P(D\\mid +)\\approx 0{,}295$ trotz hoher Sensitivität/Spezifität. Die Implikation ist falsch.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\n$\\dfrac{0{,}93}{0{,}05}=18{,}6$ liegt in $(18,19)$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$P(D)=0{,}022$, $P(+\\mid D)=0{,}93$, $P(-\\mid D^{c})=0{,}95$, also $P(+\\mid D^{c})=0{,}05$. Bayes:\n$$\nP(D\\mid +)=\\dfrac{0{,}93\\cdot 0{,}022}{0{,}93\\cdot 0{,}022+0{,}05\\cdot 0{,}978}=\\dfrac{0{,}02046}{0{,}06936}\\approx 0{,}2950.\n$$\n$$\nP(D^{c}\\mid -)=\\dfrac{0{,}95\\cdot 0{,}978}{0{,}95\\cdot 0{,}978+0{,}07\\cdot 0{,}022}\\approx 0{,}9983.\n$$\n$P(+)=0{,}06936$. Der positive Vorhersagewert ist deutlich kleiner als Sensitivität oder Spezifität; der negative ist nahe bei $1$.",
+      "figure": "",
+      "tables_markdown": ""
+    },
+    {
+      "case_id": "WISO-M6-M13",
+      "id": "WISO-M6-M13",
+      "title": "Binomial n=14, p=0,3: Modus und Tschebyscheff",
+      "chapter": 13,
+      "subsection": "13.4",
+      "difficulty_level": "5/5",
+      "context": "Sei $X$ binomialverteilt mit $n=14$ und $p=0{,}3$. Betrachtet werden Erwartungswert, Modus, Schwanzwahrscheinlichkeiten und die Tschebyscheff-Schranke zu $P(|X-4{,}2|\\ge 3)$. Bewerten Sie jede Aussage.",
+      "statements": [
+        "Es gilt $\\mathbb{E}[X]=4{,}2$, und $4$ ist der eindeutige Modus.",
+        "Es gilt $P(X\\ge 7)>0{,}12$.",
+        "Die Tschebyscheff-Schranke liefert $P(|X-4{,}2|\\ge 3)\\le 0{,}3267$, und der exakte Wert liegt streng unter $0{,}09$.",
+        "Der Erwartungswert ist zugleich der eindeutige Modus.",
+        "Bei Beobachtung $X=6$ ist die Likelihood unter $p=0{,}3$ kleiner als unter $p=0{,}5$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Richtig\n\n$\\mathbb{E}[X]=np=4{,}2$. Weil $(n+1)p=4{,}5$ nicht ganzzahlig ist, ist der eindeutige Modus $\\lfloor (n+1)p\\rfloor=4$, und $P(X=4)>P(X=3),P(X=5)$.\n\nDie Aussage ist richtig.",
+        "**B.** → Falsch\n\nExakt $P(X\\ge 7)=\\sum_{k=7}^{14}\\binom{14}{k}0{,}3^{k}0{,}7^{14-k}\\approx 0{,}0933<0{,}12$.\n\nDie Aussage ist falsch.",
+        "**C.** → Richtig\n\n$\\mathrm{Var}/9=2{,}94/9=0{,}3267$. Exakt tragen $X\\le 1$ und $X\\ge 8$ bei, zusammen etwa $0{,}0789<0{,}09$.\n\nDie Aussage ist richtig.",
+        "**D.** → Falsch\n\n$\\mathbb{E}[X]=4{,}2$ ist gar kein Wert von $X$. Der Modus ist die ganze Zahl $4$ — nicht gleich dem Erwartungswert.\n\nDie Aussage ist falsch.",
+        "**E.** → Richtig\n\nDer Quotient $P(X=6\\mid 0{,}3)/P(X=6\\mid 0{,}5)\\approx 0{,}689<1$. Die Beobachtung $6$ spricht eher für $p=0{,}5$.\n\nDie Aussage ist richtig."
+      ],
+      "solution_overview": "$\\mathbb{E}[X]=np=4{,}2$, $\\mathrm{Var}(X)=np(1-p)=2{,}94$. Weil $(n+1)p=4{,}5$ nicht ganzzahlig ist, gibt es genau einen Modus: $4$, mit\n$$\nP(X=4)\\approx 0{,}2290>P(X=5)\\approx 0{,}1963>P(X=3)\\approx 0{,}1943.\n$$\n$$\nP(X\\ge 7)\\approx 0{,}0933,\\qquad P(X\\le 2)\\approx 0{,}1608.\n$$\nTschebyscheff:\n$$\nP(|X-4{,}2|\\ge 3)\\le\\dfrac{2{,}94}{9}=0{,}3267,\n$$\nwährend der exakte Wert $P(X\\le 1)+P(X\\ge 8)\\approx 0{,}0789$ deutlich kleiner ist. Likelihood-Quotient bei Beobachtung $X=6$:\n$$\n\\dfrac{P(X=6\\mid p=0{,}3)}{P(X=6\\mid p=0{,}5)}\\approx 0{,}689<1.\n$$",
+      "figure": "",
+      "tables_markdown": ""
+    }
+  ]
+}
