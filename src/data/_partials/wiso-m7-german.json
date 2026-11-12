@@ -1,0 +1,349 @@
+{
+  "passageTitle": "CSRD-Schwellen, Konzernlagebericht und zwei Berichtsjahre",
+  "passage": "(1) Die CSRD-Berichtspflicht trifft Unternehmen ab bestimmten Größenmerkmalen. Zwei Größenprüfungen stehen nebeneinander: die Schwelle der Einzelgesellschaft und die Schwelle des konsolidierten Konzerns. Nachhaltigkeitsangaben gehören in den Konzernlagebericht des erfassten Mutterunternehmens. Wer schreibt, jedes KMU falle allein durch Lieferbeziehung unter denselben Konzernbericht, verlässt den Text.\n\n(2) Die maßgeblichen Größenmerkmale müssen in zwei aufeinanderfolgenden Berichtsjahren überschritten sein. Maßgeblich sind die beiden Berichtsjahre selbst, nicht der Kalendertag, an dem der Jahresabschluss später festgestellt wird. Eine Überschreitung nur in einem der beiden Jahre genügt nicht. Feststellung am 15. Mai schaltet die Schwellenuhr der Berichtsjahre nicht um.\n\n(3) Die Firma Nord liegt als Einzelgesellschaft unter der Schwelle und gehört zugleich zu einem Konzern, der die Konsolidierungsschwelle überschreitet. Für Nord als Einzelgesellschaft gilt die Einzelprüfung. Für den Konzern gilt die Konsolidierungsprüfung. Wer Einzelkennzahl und Konzernkennzahl addiert und eine einzige Pflicht auf die Summe legt, vermengt die Ebenen.\n\n(4) Schwellenuhr und Veröffentlichungsuhr sind zwei Uhren. Die Schwellenuhr prüft zwei Berichtsjahre; die Veröffentlichung erfolgt im Konzernlagebericht des Folgejahres. Der Tag der Abschlussfeststellung ersetzt keine der beiden Uhren und rückt den Beginn der Berichtspflicht nicht vor.\n\n(5) Umsätze aus Beratung und Software sind für die Größenprüfung vorgesehen. Eine Pressemitteilung behauptet, jeder Euro aus einmaligen Sondereffekten sei im Beispieljahr bereits als dauerhafte Umsatzerhöhung in die Schwellenrechnung eingegangen. Der Text sagt, das Ministerium übernehme diesen Satz nicht. Vorgesehen in der Größenlogik und bereits als Dauereffekt gezählt sind nicht dasselbe.\n\n(6) Unternehmen unter der Einzelschwelle fallen nicht allein deshalb unter denselben Konzernbericht. Zwei Eintrittsbedingungen stehen nebeneinander: eigene Größenschwelle der Einzelgesellschaft einerseits, Zugehörigkeit zu einem berichtspflichtigen Konzern andererseits. Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein.\n\n(7) Erfasst der Konzern die Konsolidierungsschwelle, bleibt die Einzelschwelle der Tochter eine eigene Prüfung. Der Verband liest die Konzernpflicht als Abschaffung jeder Einzelschwelle. Der Text weist diesen Satz zurück: Die Einzelschwelle bleibt. Umgekehrt ersetzt die verfehlte Einzelschwelle nicht die Konzernpflicht der Mutter.\n\n(8) Überschreitet ein Konzern die Merkmale in den Berichtsjahren 2024 und 2025, greift die Berichtspflicht für das Jahr 2025 im Konzernlagebericht 2026. Eine Überschreitung nur 2024 ohne 2025 genügt nicht. Der 31. Dezember 2025 zählt noch zum Berichtsjahr 2025; der 1. Januar 2026 fällt nicht mehr in dasselbe Berichtsjahr.\n\n(9) Im Beispieljahr hatten 2.100 geprüfte Gesellschaften dokumentierte Größenangaben. 630 überschritten in mindestens einem Jahr eine Schwelle, 280 dieser 630 zugleich in zwei aufeinanderfolgenden Jahren, 85 davon zugleich mit verspäteter Aufnahme in den Konzernlagebericht. Der Text verbietet, 280 und 85 zu addieren, und er verbietet, 630 als Zahl der bereits berichtspflichtigen Konzerne zu lesen. Einjährige Überschreitung und zweijährige Pflicht sind nicht dasselbe.\n\n(10) Angaben der Einzelgesellschaft und Angaben im Konzernlagebericht sind unterschiedliche Instrumente.",
+  "tasks": [
+    {
+      "id": "WISO-M7-G01",
+      "case_id": "WISO-M7-G01",
+      "title": "Zwei Größenprüfungen, kein Liefer-KMU-Bericht",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zu den Größenprüfungen und zum Konzernlagebericht korrekt?",
+      "statements": [
+        "Zwei Größenprüfungen stehen nebeneinander — Einzelgesellschaft und konsolidierter Konzern —, und Nachhaltigkeitsangaben gehören in den Konzernlagebericht des erfassten Mutterunternehmens.",
+        "Jedes KMU fällt allein durch Lieferbeziehung unter denselben Konzernbericht, weil beide Wirtschaftsteilnehmer sind.",
+        "Weil beide Prüfungen Größenmerkmale betreffen, sind Einzelschwelle und Konzernschwelle im Text dieselbe Prüfung.",
+        "Die Prüfungen haben unterschiedliche Bezugspunkte. Dass beide Größen betreffen, macht Liefer-KMU und Mutter nicht zu demselben Berichtspflichtigen.",
+        "Die Konzernpflicht ersetzt die Einzelschwelle für jedes KMU, sobald es an den Konzern liefert."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Zwei Größenprüfungen stehen nebeneinander — Einzelgesellschaft und konsolidierter Konzern —, und Nachhaltigkeitsangaben gehören in den Konzernlagebericht des erfassten Mutterunternehmens.**\n\nAbsatz 1 nennt zwei Größenprüfungen und ordnet Nachhaltigkeitsangaben dem Konzernlagebericht der erfassten Mutter zu.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Jedes KMU fällt allein durch Lieferbeziehung unter denselben Konzernbericht, weil beide Wirtschaftsteilnehmer sind.**\n\nAbsatz 1 weist ausdrücklich zurück, jedes KMU falle allein durch Lieferbeziehung unter denselben Konzernbericht.\n\n**Falle:** Vom Lieferverhältnis auf Konzernberichtspflicht schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Weil beide Prüfungen Größenmerkmale betreffen, sind Einzelschwelle und Konzernschwelle im Text dieselbe Prüfung.**\n\nAbsatz 1 stellt zwei Größenprüfungen nebeneinander. Gemeinsamer Stoff Größe macht sie nicht identisch; Absatz 10 hält Einzel- und Konzernangaben als unterschiedliche Instrumente.\n\n**Falle:** Gemeinsamen Stoff als Einheitsprüfung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Die Prüfungen haben unterschiedliche Bezugspunkte. Dass beide Größen betreffen, macht Liefer-KMU und Mutter nicht zu demselben Berichtspflichtigen.**\n\nAbsatz 1 trennt die Bezugspunkte und weist die Liefer-KMU-Lesart zurück. Gemeinsamer Gegenstand Größe hebt die Personengrenze nicht auf.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Die Konzernpflicht ersetzt die Einzelschwelle für jedes KMU, sobald es an den Konzern liefert.**\n\nAbsatz 1 hält Lieferbeziehung und Konzernbericht auseinander; Absatz 6 und 7 halten Einzelschwelle und Konzernpflicht als eigene Eintritte.\n\n**Falle:** Liefern als Ersatz der Einzelschwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G02",
+      "case_id": "WISO-M7-G02",
+      "title": "Welche Uhr die zwei Berichtsjahre schließt",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zur Zwei-Jahres-Schwellenuhr korrekt?",
+      "statements": [
+        "Die Größenmerkmale müssen in zwei aufeinanderfolgenden Berichtsjahren überschritten sein; maßgeblich sind die Berichtsjahre selbst, nicht der spätere Feststellungstag des Abschlusses.",
+        "Jeder Vorgang, dessen Abschluss erst nach dem zweiten Jahr festgestellt wird, fällt aus der Schwellenuhr, gleichgültig welche Berichtsjahre überschritten wurden.",
+        "Ein Jahr Überschreitung und zwei Jahre Überschreitung werden mit derselben Schwellenuhr geprüft.",
+        "Überschreitung nur in einem der beiden Jahre genügt nicht, und Feststellung am 15. Mai schaltet die Schwellenuhr der Berichtsjahre nicht um.",
+        "Weil die Veröffentlichung im Folgejahr liegt, gilt schon ein einzelnes Überschreitungsjahr als vollständige Zwei-Jahres-Uhr."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Größenmerkmale müssen in zwei aufeinanderfolgenden Berichtsjahren überschritten sein; maßgeblich sind die Berichtsjahre selbst, nicht der spätere Feststellungstag des Abschlusses.**\n\nAbsatz 2 bindet die Schwelle an zwei aufeinanderfolgende Berichtsjahre und macht den Feststellungstag nicht maßgeblich.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Jeder Vorgang, dessen Abschluss erst nach dem zweiten Jahr festgestellt wird, fällt aus der Schwellenuhr, gleichgültig welche Berichtsjahre überschritten wurden.**\n\nAbsatz 2: maßgeblich sind die Berichtsjahre; Feststellung schaltet die Schwellenuhr nicht um und wirft erfüllte Jahre nicht heraus.\n\n**Falle:** Feststellungstag zur Regimeuhr machen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Ein Jahr Überschreitung und zwei Jahre Überschreitung werden mit derselben Schwellenuhr geprüft.**\n\nAbsatz 2: nur ein Jahr genügt nicht; zwei aufeinanderfolgende Jahre sind erforderlich. Dieselbe Schwellenidee heißt nicht dieselbe erfüllte Uhr.\n\n**Falle:** Ein- und Zwei-Jahres-Fälle wie ein Paar mit gleicher Erfüllung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Überschreitung nur in einem der beiden Jahre genügt nicht, und Feststellung am 15. Mai schaltet die Schwellenuhr der Berichtsjahre nicht um.**\n\nAbsatz 2 sagt beides ausdrücklich: ein Jahr genügt nicht; Feststellung am 15. Mai schaltet nicht um.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Weil die Veröffentlichung im Folgejahr liegt, gilt schon ein einzelnes Überschreitungsjahr als vollständige Zwei-Jahres-Uhr.**\n\nAbsatz 2 verlangt zwei Jahre; Absatz 4 trennt Veröffentlichungsuhr und Schwellenuhr. Folgejahresveröffentlichung ersetzt das zweite Jahr nicht.\n\n**Falle:** Veröffentlichungsjahr als Ersatz der Zwei-Jahres-Schwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G03",
+      "case_id": "WISO-M7-G03",
+      "title": "Firma Nord: Einzel gegen Konzern",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zur Ebenentrennung bei Firma Nord korrekt?",
+      "statements": [
+        "Für Nord als Einzelgesellschaft gilt die Einzelprüfung, für den Konzern die Konsolidierungsprüfung, und eine Addition beider Kennzahlen zu einer einzigen Pflicht vermengt die Ebenen.",
+        "Weil Nord zu einem Konzern gehört, fällt auch die Einzelgesellschaft automatisch unter die Konsolidierungsschwelle als eigene Einzelpflicht.",
+        "Wer Einzelkennzahl und Konzernkennzahl addiert und eine einzige Pflicht auf die Summe legt, folgt Absatz 3.",
+        "Einzelprüfung und Konsolidierungsprüfung bleiben getrennte Ebenen; Konzernzugehörigkeit macht Nord nicht zur Einzelschwelle desselben Konzernsatzes.",
+        "Ein Unternehmen mit Konzernmutter prüft Einzelschwellen nie, sobald im Namen der Firma Konzern vorkommt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Für Nord als Einzelgesellschaft gilt die Einzelprüfung, für den Konzern die Konsolidierungsprüfung, und eine Addition beider Kennzahlen zu einer einzigen Pflicht vermengt die Ebenen.**\n\nAbsatz 3 stellt Einzel- und Konsolidierungsprüfung nebeneinander und nennt die Addition als Vermengung.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Weil Nord zu einem Konzern gehört, fällt auch die Einzelgesellschaft automatisch unter die Konsolidierungsschwelle als eigene Einzelpflicht.**\n\nAbsatz 3: Nord liegt als Einzelgesellschaft unter der Schwelle trotz Konzernzugehörigkeit. Der Konzernstatus zieht die Einzelpflicht nicht mit.\n\n**Falle:** Aus Konzernzugehörigkeit die Einzelschwelle als erfüllt lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Wer Einzelkennzahl und Konzernkennzahl addiert und eine einzige Pflicht auf die Summe legt, folgt Absatz 3.**\n\nAbsatz 3 nennt genau diese Addition als Vermengung und als Verlassen der Ebenen. „Folgt Absatz 3“ kehrt den Absatz um.\n\n**Falle:** Eine Absatznummer als Deckung lesen, obwohl der Absatz die Behauptung zurückweist.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Einzelprüfung und Konsolidierungsprüfung bleiben getrennte Ebenen; Konzernzugehörigkeit macht Nord nicht zur Einzelschwelle desselben Konzernsatzes.**\n\nAbsatz 3 hält die Ebenen getrennt und belässt Nord unter der Einzelschwelle trotz Konzern.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Ein Unternehmen mit Konzernmutter prüft Einzelschwellen nie, sobald im Namen der Firma Konzern vorkommt.**\n\nAbsatz 3 und 7: Die Einzelschwelle bleibt eine eigene Prüfung. Bloßes Vorkommen von „Konzern“ im Profil schafft die Prüfung nicht ab.\n\n**Falle:** „Nie“ und Namensvorkommen über die Ebenentrennung hinausziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G04",
+      "case_id": "WISO-M7-G04",
+      "title": "Zwei Uhren, nicht der Feststellungstag",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zu Schwellenuhr und Veröffentlichungsuhr korrekt?",
+      "statements": [
+        "Die Schwellenuhr prüft zwei Berichtsjahre, die Veröffentlichung erfolgt im Konzernlagebericht des Folgejahres, und das sind zwei Uhren.",
+        "Gezählt wird am Tag der Abschlussfeststellung, also ersetzt dieser Tag beide Uhren.",
+        "Schwellenuhr und Veröffentlichungsuhr sind im Text verschiedene Zeitpunkte, und die Abschlussfeststellung rückt den Beginn der Berichtspflicht nicht vor.",
+        "Weil ein Folgejahr genannt ist, muss die Schwellenuhr schon mit einem einzigen Berichtsjahr erfüllt sein.",
+        "Ein 2024 und 2025 überschrittener Konzern, dessen Lagebericht erst 2026 erscheint, verfehlt deshalb die Zwei-Jahres-Uhr."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Schwellenuhr prüft zwei Berichtsjahre, die Veröffentlichung erfolgt im Konzernlagebericht des Folgejahres, und das sind zwei Uhren.**\n\nAbsatz 4 nennt Schwellenuhr und Veröffentlichungsuhr ausdrücklich als zwei Uhren.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Gezählt wird am Tag der Abschlussfeststellung, also ersetzt dieser Tag beide Uhren.**\n\nAbsatz 4: Der Feststellungstag ersetzt keine der beiden Uhren. Absatz 2 bestätigt, Feststellung schalte die Schwellenuhr nicht um.\n\n**Falle:** Den sichtbaren Feststellungstag als selbstverständliche Regimeuhr nehmen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Schwellenuhr und Veröffentlichungsuhr sind im Text verschiedene Zeitpunkte, und die Abschlussfeststellung rückt den Beginn der Berichtspflicht nicht vor.**\n\nAbsatz 4: zwei Uhren; Feststellung rückt den Beginn nicht vor.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**D) Weil ein Folgejahr genannt ist, muss die Schwellenuhr schon mit einem einzigen Berichtsjahr erfüllt sein.**\n\nAbsatz 4 ordnet das Folgejahr der Veröffentlichung zu, nicht der Schwellenfüllung. Absatz 2 verlangt zwei Jahre.\n\n**Falle:** Aus dem Vorhandensein eines Folgejahres auf Ein-Jahres-Schwelle schließen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**E) Ein 2024 und 2025 überschrittener Konzern, dessen Lagebericht erst 2026 erscheint, verfehlt deshalb die Zwei-Jahres-Uhr.**\n\nAbsatz 8: 2024 und 2025 erfüllen die Schwelle; Veröffentlichung 2026 ist die vorgesehene Veröffentlichungsuhr, kein Verfehlen der Schwellenuhr.\n\n**Falle:** Veröffentlichungsjahr und Schwellenerfüllung vertauschen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G05",
+      "case_id": "WISO-M7-G05",
+      "title": "Vorgesehen ist nicht Dauereffekt",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zur Behandlung von Umsätzen in der Größenprüfung korrekt?",
+      "statements": [
+        "Umsätze aus Beratung und Software sind für die Größenprüfung vorgesehen, und der Text übernimmt nicht den Satz, jeder Sonder-Euro sei bereits als Dauereffekt in die Schwelle eingegangen.",
+        "Jeder Euro aus einmaligen Sondereffekten zählt im Beispieljahr automatisch als dauerhafte Umsatzerhöhung.",
+        "Vorgesehen in der Größenlogik und bereits als Dauereffekt gezählt sind im Text dasselbe.",
+        "Vorgesehen und bereits als Dauereffekt gezählt sind nicht dasselbe, und die Lieferbeziehung eines KMU ist nicht die Begründung für diese Trennung.",
+        "Das Ministerium macht sich den Pressetext zu eigen, Sondereffekte seien schon Dauereffekt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Umsätze aus Beratung und Software sind für die Größenprüfung vorgesehen, und der Text übernimmt nicht den Satz, jeder Sonder-Euro sei bereits als Dauereffekt in die Schwelle eingegangen.**\n\nAbsatz 5: vorgesehen für die Größenprüfung; Pressetext zu Sondereffekten als Dauereffekt wird nicht übernommen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Jeder Euro aus einmaligen Sondereffekten zählt im Beispieljahr automatisch als dauerhafte Umsatzerhöhung.**\n\nAbsatz 5: Das Ministerium übernimmt diesen Pressetext nicht. Automatische Dauerzählung steht nicht im Text.\n\n**Falle:** Pressetext als Textregel lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Vorgesehen in der Größenlogik und bereits als Dauereffekt gezählt sind im Text dasselbe.**\n\nAbsatz 5 sagt ausdrücklich, vorgesehen und bereits als Dauereffekt gezählt seien nicht dasselbe.\n\n**Falle:** Zwei Stufen der Größenlogik zusammenziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Vorgesehen und bereits als Dauereffekt gezählt sind nicht dasselbe, und die Lieferbeziehung eines KMU ist nicht die Begründung für diese Trennung.**\n\nAbsatz 5 trägt die Trennung vorgesehen/Dauereffekt. Die Liefer-KMU-Zurückweisung steht in Absatz 1 und begründet Absatz 5 nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Das Ministerium macht sich den Pressetext zu eigen, Sondereffekte seien schon Dauereffekt.**\n\nAbsatz 5: Der Text sagt, das Ministerium übernehme diesen Satz nicht.\n\n**Falle:** Vorkommen von Pressetext und Ministerium als Einigkeit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G06",
+      "case_id": "WISO-M7-G06",
+      "title": "Zwei Eintrittsbedingungen",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zu den Eintrittsbedingungen korrekt?",
+      "statements": [
+        "Eigene Größenschwelle der Einzelgesellschaft und Zugehörigkeit zu einem berichtspflichtigen Konzern stehen nebeneinander und sind nicht dasselbe.",
+        "Unter der Einzelschwelle genügt die bloße Nähe zum Konzern, um denselben Konzernbericht auszulösen.",
+        "Wer eine der beiden Eintrittsbedingungen verfehlt, tritt dennoch in beide Pflichtlagen ein, weil beide CSRD betreffen.",
+        "Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein, und Lieferbeziehung allein ist nicht die Konzern-Eintrittsbedingung.",
+        "Beide Bedingungen fallen zusammen, sobald irgendeine Schwelle irgendwo im Konzern überschritten wird."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Eigene Größenschwelle der Einzelgesellschaft und Zugehörigkeit zu einem berichtspflichtigen Konzern stehen nebeneinander und sind nicht dasselbe.**\n\nAbsatz 6 nennt die zwei Eintrittsbedingungen ausdrücklich und hält sie auseinander.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Unter der Einzelschwelle genügt die bloße Nähe zum Konzern, um denselben Konzernbericht auszulösen.**\n\nAbsatz 6: Unter der Einzelschwelle fällt man nicht allein deshalb unter denselben Konzernbericht. Bloße Nähe genügt nicht.\n\n**Falle:** Nähe als Eintritt lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Wer eine der beiden Eintrittsbedingungen verfehlt, tritt dennoch in beide Pflichtlagen ein, weil beide CSRD betreffen.**\n\nAbsatz 6: Wer eine verfehlt, tritt in die jeweilige Pflichtlage nicht ein. Gemeinsamer Stoff CSRD rettet die verfehlte Bedingung nicht.\n\n**Falle:** Gemeinsames Regime als Doppel-Eintritt trotz Verfehlung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Wer eine der beiden verfehlt, tritt in die jeweilige Pflichtlage nicht ein, und Lieferbeziehung allein ist nicht die Konzern-Eintrittsbedingung.**\n\nAbsatz 6: Verfehlen sperrt die jeweilige Pflichtlage. Absatz 1: Lieferbeziehung allein begründet nicht denselben Konzernbericht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Beide Bedingungen fallen zusammen, sobald irgendeine Schwelle irgendwo im Konzern überschritten wird.**\n\nAbsatz 6 hält sie nebeneinander und nicht als automatische Einheit. Irgendwo im Konzern reicht nicht für beide Eintritte.\n\n**Falle:** Eine Konzernüberschreitung als Doppelbedingung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G07",
+      "case_id": "WISO-M7-G07",
+      "title": "Einzelschwelle bleibt, Konzernpflicht auch",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zum Verhältnis von Einzelschwelle und Konzernpflicht korrekt?",
+      "statements": [
+        "Erfasst der Konzern die Konsolidierungsschwelle, bleibt die Einzelschwelle der Tochter eine eigene Prüfung, und der Text weist die Abschaffungslesart zurück.",
+        "Die Konzernpflicht schafft jede Einzelschwelle ab, sobald konsolidiert wird.",
+        "Die verfehlte Einzelschwelle ersetzt die Konzernpflicht der Mutter.",
+        "Die Einzelschwelle bleibt, und umgekehrt ersetzt die verfehlte Einzelschwelle nicht die Konzernpflicht der Mutter.",
+        "Verband und Text lesen die Konzernpflicht als Ende jeder Einzelschwelle."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Erfasst der Konzern die Konsolidierungsschwelle, bleibt die Einzelschwelle der Tochter eine eigene Prüfung, und der Text weist die Abschaffungslesart zurück.**\n\nAbsatz 7: Einzelschwelle bleibt eigene Prüfung; Verbandssatz zur Abschaffung wird zurückgewiesen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Die Konzernpflicht schafft jede Einzelschwelle ab, sobald konsolidiert wird.**\n\nAbsatz 7 weist genau diesen Verbandssatz zurück: Die Einzelschwelle bleibt.\n\n**Falle:** Konsolidierung als Abschaffung der Einzelschwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Die verfehlte Einzelschwelle ersetzt die Konzernpflicht der Mutter.**\n\nAbsatz 7 sagt ausdrücklich das Gegenteil: Die verfehlte Einzelschwelle ersetzt die Konzernpflicht der Mutter nicht.\n\n**Falle:** Verfehlte Tochterschwelle als Freibrief der Mutter lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Die Einzelschwelle bleibt, und umgekehrt ersetzt die verfehlte Einzelschwelle nicht die Konzernpflicht der Mutter.**\n\nAbsatz 7 trägt beide Richtungen: bleibt; ersetzt nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Verband und Text lesen die Konzernpflicht als Ende jeder Einzelschwelle.**\n\nAbsatz 7: Der Verband liest so; der Text weist zurück. Keine Einigkeit.\n\n**Falle:** Verbandssatz und Text als Deckungsleichheit lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G08",
+      "case_id": "WISO-M7-G08",
+      "title": "2024, 2025 und Lagebericht 2026",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zur Kalendergrenze der Berichtsjahre korrekt?",
+      "statements": [
+        "Überschreitung in 2024 und 2025 begründet die Berichtspflicht für 2025 im Konzernlagebericht 2026, und allein 2024 ohne 2025 genügt nicht.",
+        "Jeder Konzern mit irgendeiner Überschreitung 2024 gilt bereits als zweijährig berichtspflichtig.",
+        "31. Dezember 2025 zählt noch zum Berichtsjahr 2025, und der 1. Januar 2026 fällt nicht mehr in dasselbe Berichtsjahr.",
+        "2024 und 2025 werden mit demselben einzelnen Überschreitungsjahr geprüft.",
+        "Der Lagebericht 2026 schaltet die Schwelle rückwirkend auf nur 2024 um."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Überschreitung in 2024 und 2025 begründet die Berichtspflicht für 2025 im Konzernlagebericht 2026, und allein 2024 ohne 2025 genügt nicht.**\n\nAbsatz 8 bindet 2024 und 2025 an die Pflicht für 2025 mit Veröffentlichung 2026 und schließt allein 2024 aus.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Jeder Konzern mit irgendeiner Überschreitung 2024 gilt bereits als zweijährig berichtspflichtig.**\n\nAbsatz 8: allein 2024 ohne 2025 genügt nicht. Ein Jahr ist nicht die Zwei-Jahres-Uhr.\n\n**Falle:** Erstes Überschreitungsjahr als vollständige Pflicht lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) 31. Dezember 2025 zählt noch zum Berichtsjahr 2025, und der 1. Januar 2026 fällt nicht mehr in dasselbe Berichtsjahr.**\n\nAbsatz 8 stellt die Jahreswende ausdrücklich gegenüber.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**D) 2024 und 2025 werden mit demselben einzelnen Überschreitungsjahr geprüft.**\n\nAbsatz 8 verlangt beide Jahre; ein einzelnes Jahr genügt nicht. Benachbarte Jahre sind nicht ein Jahr.\n\n**Falle:** Zwei genannte Jahre zu einem einzigen Erfüllungsjahr zusammenziehen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**E) Der Lagebericht 2026 schaltet die Schwelle rückwirkend auf nur 2024 um.**\n\nAbsatz 8 und 4: 2026 ist Veröffentlichungsuhr; sie ersetzt weder 2025 noch verkürzt sie die Schwelle auf 2024.\n\n**Falle:** Veröffentlichungsjahr als Rückwirkungshebel auf die Schwelle lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G09",
+      "case_id": "WISO-M7-G09",
+      "title": "630, 280 und 85, keine Summe",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zu den Beispielzahlen korrekt?",
+      "statements": [
+        "Von 2.100 Gesellschaften überschritten 630 in mindestens einem Jahr; 280 dieser 630 zugleich in zwei Jahren; 85 davon zugleich verspätet im Konzernlagebericht.",
+        "280 und 85 dürfen addiert werden, und 630 ist die Zahl der bereits berichtspflichtigen Konzerne.",
+        "Einjährige Überschreitung und zweijährige Pflicht sind im Text dieselbe Menge.",
+        "280 und 85 dürfen nicht addiert werden, und 630 ist nicht die Zahl der bereits berichtspflichtigen Konzerne.",
+        "Der Text rechnet 280 und 85 zusammen und setzt die Summe mit 630 gleich."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Von 2.100 Gesellschaften überschritten 630 in mindestens einem Jahr; 280 dieser 630 zugleich in zwei Jahren; 85 davon zugleich verspätet im Konzernlagebericht.**\n\nAbsatz 9 führt genau diese Teilmengenkette vor.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) 280 und 85 dürfen addiert werden, und 630 ist die Zahl der bereits berichtspflichtigen Konzerne.**\n\nAbsatz 9 verbietet die Addition und verbietet, 630 als Zahl der bereits berichtspflichtigen Konzerne zu lesen.\n\n**Falle:** Teilmengen addieren und Ein-Jahres-Zahl als Pflichtzahl lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) Einjährige Überschreitung und zweijährige Pflicht sind im Text dieselbe Menge.**\n\nAbsatz 9: Einjährige Überschreitung und zweijährige Pflicht sind nicht dasselbe.\n\n**Falle:** Genannte Zahlen als freigegebene Gleichsetzung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) 280 und 85 dürfen nicht addiert werden, und 630 ist nicht die Zahl der bereits berichtspflichtigen Konzerne.**\n\nAbsatz 9 verbietet beides ausdrücklich.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**E) Der Text rechnet 280 und 85 zusammen und setzt die Summe mit 630 gleich.**\n\nAbsatz 9 verbietet die Addition und setzt sie nicht mit 630 gleich. Vorgeführt wird die Trennung, nicht die Summe.\n\n**Falle:** Genannte Zahlen als Additionsaufgabe lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch."
+      ]
+    },
+    {
+      "id": "WISO-M7-G10",
+      "case_id": "WISO-M7-G10",
+      "title": "Uhren und Ebenen zugleich",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut Text zu kombinierten Grenzen korrekt?",
+      "statements": [
+        "Jedes Liefer-KMU als Konzernberichtspflichtiger und die Addition von 280 und 85 sind im Text dieselbe zulässige Vereinfachung.",
+        "Nord trennt Einzel- und Konzernprüfung, die Schwelle braucht zwei Berichtsjahre, und die Feststellung steuert nicht die Schwellenuhr.",
+        "Schwellenuhr und Veröffentlichungsuhr sind dieselbe Uhr, weil beide nach dem Ereignisjahr liegen.",
+        "Wer den Verbandssatz zur Abschaffung der Einzelschwelle übernimmt und zugleich nur 2024 als Zwei-Jahres-Uhr setzt, folgt dem Text in beiden Punkten.",
+        "Ebenentrennung, Zwei-Jahres-Schwellenuhr und Verbot der Zahlenaddition können zusammen vorliegen, ohne dass vorgesehene Umsätze schon als Dauereffekt gezählt sein müssen."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Jedes Liefer-KMU als Konzernberichtspflichtiger und die Addition von 280 und 85 sind im Text dieselbe zulässige Vereinfachung.**\n\nAbsatz 1 weist die Liefer-KMU-Lesart zurück; Absatz 9 die Addition. Beides ist unzulässig, nicht eine gemeinsame Vereinfachung.\n\n**Falle:** Zwei verworfene Lesarten zu einer erlaubten Kurzformel verbinden.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**B) Nord trennt Einzel- und Konzernprüfung, die Schwelle braucht zwei Berichtsjahre, und die Feststellung steuert nicht die Schwellenuhr.**\n\nAbsatz 3: Ebenentrennung bei Nord. Absatz 2 und 8: zwei Berichtsjahre. Absatz 2 und 4: Feststellung steuert die Schwellenuhr nicht.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**C) Schwellenuhr und Veröffentlichungsuhr sind dieselbe Uhr, weil beide nach dem Ereignisjahr liegen.**\n\nAbsatz 4 nennt ausdrücklich zwei Uhren. Nachgelagert sein macht sie nicht identisch.\n\n**Falle:** Gemeinsame Nachverlagerung als Uhrenidentität lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**D) Wer den Verbandssatz zur Abschaffung der Einzelschwelle übernimmt und zugleich nur 2024 als Zwei-Jahres-Uhr setzt, folgt dem Text in beiden Punkten.**\n\nAbsatz 7 weist den Verbandssatz zurück; Absatz 8 hält allein 2024 für ungenügend. „Folgt dem Text“ kehrt beide Stellen um.\n\n**Falle:** Zwei Zurückweisungen als doppelte Bestätigung lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**E) Ebenentrennung, Zwei-Jahres-Schwellenuhr und Verbot der Zahlenaddition können zusammen vorliegen, ohne dass vorgesehene Umsätze schon als Dauereffekt gezählt sein müssen.**\n\nAbsätze 3, 2/8 und 9 tragen Trennung, Zwei-Jahres-Uhr und Additionsverbot. Absatz 5: vorgesehen ≠ Dauereffekt — keine Voraussetzung der übrigen Regeln.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+      ]
+    },
+    {
+      "id": "WISO-M7-G11",
+      "case_id": "WISO-M7-G11",
+      "title": "Identität setzt die Auskunft",
+      "subsection": "text",
+      "kind": "text",
+      "with_passage": true,
+      "difficulty_level": "5/5",
+      "context": "Welche Aussagen sind laut dem Kurztext zur DSGVO-Auskunft korrekt?",
+      "statements": [
+        "Vor der Herausgabe darf die Identität geprüft werden; der bloße Eingang eines Begehrens ohne geklärte Identität setzt die Herausgabepflicht der Kopie nicht in Gang.",
+        "Süd weist am 2. März die Identität nach; eine Eingangsbestätigung am 10. März ohne Substanz erfüllt die Frist bis zum 2. April als volle Auskunft.",
+        "55 und 20 dürfen nicht addiert werden, und 160 ist nicht die Zahl erteilter Auskünfte; fehlende Identität ist nicht die erteilte Auskunft.",
+        "Jedes interne Papier nach einem Begehren ist automatisch herauszugeben.",
+        "Eine Verlängerung bei komplexen Begehren kann greifen, heilt aber nicht rückwirkend eine schon verstrichene Monatsfrist ohne Mitteilung und setzt die Frist nicht auf die formlose Anfrage ohne Identität zurück."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Vor der Herausgabe darf die Identität geprüft werden; der bloße Eingang eines Begehrens ohne geklärte Identität setzt die Herausgabepflicht der Kopie nicht in Gang.**\n\nNur der Kurztext zur DSGVO-Auskunft (passage_override): Absatz 1 — Identitätsprüfung zulässig; Begehren ohne geklärte Identität setzt die Kopiepflicht nicht in Gang.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**B) Süd weist am 2. März die Identität nach; eine Eingangsbestätigung am 10. März ohne Substanz erfüllt die Frist bis zum 2. April als volle Auskunft.**\n\nOverride Absatz 2: Bis zum 2. April schuldet der Verantwortliche Auskunft samt Kopie; Eingangsbestätigung am 10. März ohne Substanz erfüllt die Monatsfrist nicht.\n\n**Falle:** Formlose Bestätigung als inhaltliche Auskunft lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**C) 55 und 20 dürfen nicht addiert werden, und 160 ist nicht die Zahl erteilter Auskünfte; fehlende Identität ist nicht die erteilte Auskunft.**\n\nOverride Absatz 3 verbietet, 55 und 20 zu addieren, und verbietet, 160 als Zahl erteilter Auskünfte zu lesen.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig.",
+        "**D) Jedes interne Papier nach einem Begehren ist automatisch herauszugeben.**\n\nOverride Absatz 4: Kopie umfasst personenbezogene Daten, nicht jedes interne Dokument ohne Personenbezug; Verbandsautomatik wird nicht übernommen.\n\n**Falle:** Verbandsforderung als Textregel lesen.\n\nDie Aussage widerspricht dem Text und ist daher falsch.",
+        "**E) Eine Verlängerung bei komplexen Begehren kann greifen, heilt aber nicht rückwirkend eine schon verstrichene Monatsfrist ohne Mitteilung und setzt die Frist nicht auf die formlose Anfrage ohne Identität zurück.**\n\nOverride Absatz 5: Verlängerung möglich; keine rückwirkende Heilung ohne Mitteilung und keine Rücksetzung auf formlose Anfrage ohne Identität.\n\nDie Aussage deckt sich mit dem Text, deshalb ist sie richtig."
+      ],
+      "passage_override": "(1) Das Auskunftsrecht nach der DSGVO verpflichtet den Verantwortlichen, der betroffenen Person Auskunft über die sie betreffenden personenbezogenen Daten zu erteilen und eine Kopie dieser Daten zur Verfügung zu stellen. Vor der Herausgabe darf die Identität geprüft werden. Der bloße Eingang eines Begehrens ohne geklärte Identität setzt die Herausgabepflicht der Kopie nicht in Gang. Wer schreibt, jedes anonyme Schreiben starte sofort die volle Kopiepflicht, verlässt den Text.\n\n(2) Die Beschäftigte Süd stellt am 2. März ein Auskunftsbegehren und weist am selben Tag ihre Identität nach. Bis zum 2. April schuldet der Verantwortliche die Auskunft samt Kopie. Eine Eingangsbestätigung am 10. März ohne Substanz erfüllt diese Monatsfrist nicht. Der Text sagt nicht, jede kurze Bestätigung genüge als Auskunft.\n\n(3) Von 800 geprüften Begehren fehlte in 160 Fällen ein ausreichender Identitätsnachweis. 55 dieser 160 betrafen zugleich Fristüberschreitungen nach späterer Identitätsklärung, 20 davon zugleich die Herausgabe interner Vermerke ohne Personenbezug. Der Text verbietet, 55 und 20 zu addieren, und er verbietet, 160 als Zahl erteilter Auskünfte zu lesen. Fehlende Identität ist nicht die erteilte Auskunft.\n\n(4) Die Kopie umfasst die personenbezogenen Daten der betroffenen Person, nicht jedes interne Dokument ohne Personenbezug. Eine betriebsinterne Strategieakte ohne Bezug zu Süd bleibt außen vor. Der Verband fordert, jedes interne Papier nach einem Begehren sei automatisch herauszugeben. Der Text übernimmt diese Forderung nicht.\n\n(5) Bei komplexen Begehren kann die Frist verlängert werden. Die Verlängerung heilt nicht rückwirkend eine schon verstrichene Monatsfrist ohne Mitteilung und setzt die Frist nicht auf den Tag der ersten formlosen Anfrage ohne Identität zurück.",
+      "passage_title_override": "DSGVO-Auskunft: Identitätsprüfung, Frist und Kopie der Daten"
+    }
+  ]
+}
