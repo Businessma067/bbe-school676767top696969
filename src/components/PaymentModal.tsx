@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { CreditCard, Lock, Loader2, Ticket } from "lucide-react";
 import {
@@ -15,7 +15,7 @@ import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
 import { markPaymentSuccessAccess } from "@/lib/payment-success-access";
 import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
-import { getAppliedPromo } from "@/lib/applied-promo";
+import { getAppliedPromo, saveAccountWidePromo, saveAppliedPromo as saveOne } from "@/lib/applied-promo";
 import { isAccountLimitedDiscountCode } from "@/lib/account-limited-promos";
 
 const ORANGE = "#C2643A";
@@ -108,16 +108,36 @@ export function PaymentModal({
     }
   };
 
+  // Pre-validate while typing so Apply responds instantly (server still decides).
+  const precheck = useRef<{ key: string; p: ReturnType<typeof validateDiscountCode> } | null>(null);
+  const getDiscount = (code: string) => {
+    const key = `${productSlug}:${code.toUpperCase()}`;
+    if (precheck.current?.key !== key) {
+      const p = validateDiscountCode({ data: { code, productSlug } });
+      p.catch(() => {
+        if (precheck.current?.key === key) precheck.current = null;
+      });
+      precheck.current = { key, p };
+    }
+    return precheck.current.p;
+  };
+  useEffect(() => {
+    const code = promoCode.trim();
+    if (!open || code.length < 4) return;
+    const t = setTimeout(() => {
+      void supabase.auth.getSession().then(({ data }) => {
+        if (data.session) getDiscount(code).catch(() => {});
+      });
+    }, 250);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [promoCode, open, productSlug]);
+
   const applyDiscountCode = async (code: string): Promise<boolean> => {
-    const discount = await validateDiscountCode({
-      data: { code, productSlug },
-    });
+    const discount = await getDiscount(code);
     if (discount.ok) {
       setAppliedPromoCode(discount.code);
       setDiscountPct(discount.discountPct);
-      const { saveAccountWidePromo, saveAppliedPromo: saveOne } = await import(
-        "@/lib/applied-promo"
-      );
       if (isAccountLimitedDiscountCode(discount.code)) {
         saveAccountWidePromo({
           code: discount.code,
