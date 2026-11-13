@@ -2,103 +2,115 @@ import type { ComponentType } from "react";
 import { getNewsPost } from "@/data/news/posts";
 import { isNewsPostPath, normalizeAppPath, type LocalizablePath } from "./locale-path";
 
-import { Index } from "@/routes/index";
-import { BbeLandingPage } from "@/routes/bbe";
-import { BbeEntranceExamHubPage } from "@/routes/bbe-entrance-exam";
-import { BbeExamScoringPage } from "@/routes/bbe-exam-scoring";
-import { BbeMathematicsPage } from "@/routes/bbe-mathematics";
-import { BbeEconomicsEnglishPage } from "@/routes/bbe-economics-english";
-import { BbeExamPreparationPage } from "@/routes/bbe-exam-preparation";
-import { BbeAdmissionPage } from "@/routes/bbe-admission";
-import { BbeVsWisoPage } from "@/routes/bbe-vs-wiso";
-import { WuViennaOverviewPage } from "@/routes/wu-vienna";
-import { HybridLandingPage } from "@/routes/hybrid.index";
-import { WisoLandingPage } from "@/routes/wiso.index";
-import { WisoEntranceExamPage } from "@/routes/wiso.entrance-exam";
-import { WisoExamScoringPage } from "@/routes/wiso.exam-scoring";
-import { WisoMathematicsPage } from "@/routes/wiso.mathematics";
-import { WisoEconomicsGermanPage } from "@/routes/wiso.economics-german";
-import { WisoExamPreparationPage } from "@/routes/wiso.exam-preparation";
-import { WisoAdmissionPage } from "@/routes/wiso.admission";
-import { WisoWuViennaPage } from "@/routes/wiso.wu-vienna";
-import { WisoFullCourseProduct } from "@/routes/wiso.products.full-course";
-import { WisoDemoPractice } from "@/routes/wiso.demo-practice.index";
-import { WisoDemoMockPage } from "@/routes/wiso.demo-mock";
-import { WisoMockExamsPage } from "@/routes/wiso.mock-exams";
-import { ParentsPage } from "@/routes/parents";
-import { ReviewsPage } from "@/routes/reviews";
-import { HowItWorksPage } from "@/routes/how-it-works";
-import { NewsPage } from "@/routes/news";
-import { NewsPostPage } from "@/routes/news.$slug";
-import { ImportantFeaturesPage } from "@/routes/important-features";
-import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
-import { TermsPage } from "@/routes/terms";
-import { PrivacyPage } from "@/routes/privacy";
-import { ProductsPage } from "@/routes/products.index";
-import { DemoPracticeProduct } from "@/routes/products.demo-practice";
-import { FullCourseProduct } from "@/routes/products.full-course";
-import { HybridCourseProductPage } from "@/routes/products.hybrid-course";
-import { DemoPractice } from "@/routes/demo-practice.index";
-import { DemoMockPage } from "@/routes/demo-mock";
-import { LoginPage } from "@/routes/login";
-import { SignupPage } from "@/routes/signup";
-import { ResetPasswordPage } from "@/routes/reset-password";
-import { AccountPage } from "@/routes/account";
-import { PaymentSuccessPage } from "@/routes/payment.success";
-import { PaymentFailedPage } from "@/routes/payment.failed";
-
-export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> = {
-  "/": Index,
-  "/bbe": BbeLandingPage,
-  "/bbe-entrance-exam": BbeEntranceExamHubPage,
-  "/bbe-exam-scoring": BbeExamScoringPage,
-  "/bbe-mathematics": BbeMathematicsPage,
-  "/bbe-economics-english": BbeEconomicsEnglishPage,
-  "/bbe-exam-preparation": BbeExamPreparationPage,
-  "/bbe-admission": BbeAdmissionPage,
-  "/bbe-vs-wiso": BbeVsWisoPage,
-  "/wu-vienna": WuViennaOverviewPage,
-  "/hybrid": HybridLandingPage,
-  "/wiso": WisoLandingPage,
-  "/wiso/entrance-exam": WisoEntranceExamPage,
-  "/wiso/exam-scoring": WisoExamScoringPage,
-  "/wiso/mathematics": WisoMathematicsPage,
-  "/wiso/economics-german": WisoEconomicsGermanPage,
-  "/wiso/exam-preparation": WisoExamPreparationPage,
-  "/wiso/admission": WisoAdmissionPage,
-  "/wiso/wu-vienna": WisoWuViennaPage,
-  "/wiso/products": ProductsPage,
-  "/wiso/products/full-course": WisoFullCourseProduct,
-  "/wiso/demo-practice": WisoDemoPractice,
-  "/wiso/demo-mock": WisoDemoMockPage,
-  "/wiso/mock-exams": WisoMockExamsPage,
-  "/parents": ParentsPage,
-  "/reviews": ReviewsPage,
-  "/how-it-works": HowItWorksPage,
-  "/news": NewsPage,
-  "/important-features": ImportantFeaturesPage,
-  "/features/answer-sheet": AnswerSheetFeaturePage,
-  "/terms": TermsPage,
-  "/privacy": PrivacyPage,
-  "/products": ProductsPage,
-  "/products/demo-practice": DemoPracticeProduct,
-  "/products/full-course": FullCourseProduct,
-  "/products/hybrid-course": HybridCourseProductPage,
-  "/demo-practice": DemoPractice,
-  "/demo-mock": DemoMockPage,
-  "/login": LoginPage,
-  "/signup": SignupPage,
-  "/reset-password": ResetPasswordPage,
-  "/account": AccountPage,
-  "/payment/success": PaymentSuccessPage,
-  "/payment/failed": PaymentFailedPage,
+/**
+ * DE/UK marketing pages resolve through /$lang and /$lang/$. Eagerly importing
+ * every page here pulled mock exams + exercise banks into memory on every
+ * locale visit (~16MB). Load only the path that was requested.
+ */
+const LOCALIZED_PAGE_LOADERS: Record<LocalizablePath, () => Promise<ComponentType>> = {
+  "/": () => import("@/routes/index").then((m) => m.Index),
+  "/bbe": () => import("@/routes/bbe").then((m) => m.BbeLandingPage),
+  "/bbe-entrance-exam": () =>
+    import("@/routes/bbe-entrance-exam").then((m) => m.BbeEntranceExamHubPage),
+  "/bbe-exam-scoring": () =>
+    import("@/routes/bbe-exam-scoring").then((m) => m.BbeExamScoringPage),
+  "/bbe-mathematics": () =>
+    import("@/routes/bbe-mathematics").then((m) => m.BbeMathematicsPage),
+  "/bbe-economics-english": () =>
+    import("@/routes/bbe-economics-english").then((m) => m.BbeEconomicsEnglishPage),
+  "/bbe-exam-preparation": () =>
+    import("@/routes/bbe-exam-preparation").then((m) => m.BbeExamPreparationPage),
+  "/bbe-admission": () => import("@/routes/bbe-admission").then((m) => m.BbeAdmissionPage),
+  "/bbe-vs-wiso": () => import("@/routes/bbe-vs-wiso").then((m) => m.BbeVsWisoPage),
+  "/wu-vienna": () => import("@/routes/wu-vienna").then((m) => m.WuViennaOverviewPage),
+  "/hybrid": () => import("@/routes/hybrid.index").then((m) => m.HybridLandingPage),
+  "/wiso": () => import("@/routes/wiso.index").then((m) => m.WisoLandingPage),
+  "/wiso/entrance-exam": () =>
+    import("@/routes/wiso.entrance-exam").then((m) => m.WisoEntranceExamPage),
+  "/wiso/exam-scoring": () =>
+    import("@/routes/wiso.exam-scoring").then((m) => m.WisoExamScoringPage),
+  "/wiso/mathematics": () =>
+    import("@/routes/wiso.mathematics").then((m) => m.WisoMathematicsPage),
+  "/wiso/economics-german": () =>
+    import("@/routes/wiso.economics-german").then((m) => m.WisoEconomicsGermanPage),
+  "/wiso/exam-preparation": () =>
+    import("@/routes/wiso.exam-preparation").then((m) => m.WisoExamPreparationPage),
+  "/wiso/admission": () =>
+    import("@/routes/wiso.admission").then((m) => m.WisoAdmissionPage),
+  "/wiso/wu-vienna": () =>
+    import("@/routes/wiso.wu-vienna").then((m) => m.WisoWuViennaPage),
+  "/wiso/products": () => import("@/routes/products.index").then((m) => m.ProductsPage),
+  "/wiso/products/full-course": () =>
+    import("@/routes/wiso.products.full-course").then((m) => m.WisoFullCourseProduct),
+  "/wiso/demo-practice": () =>
+    import("@/routes/wiso.demo-practice.index").then((m) => m.WisoDemoPractice),
+  "/wiso/demo-mock": () =>
+    import("@/routes/wiso.demo-mock").then((m) => m.WisoDemoMockPage),
+  "/wiso/mock-exams": () =>
+    import("@/routes/wiso.mock-exams").then((m) => m.WisoMockExamsPage),
+  "/parents": () => import("@/routes/parents").then((m) => m.ParentsPage),
+  "/reviews": () => import("@/routes/reviews").then((m) => m.ReviewsPage),
+  "/news": () => import("@/routes/news").then((m) => m.NewsPage),
+  "/important-features": () =>
+    import("@/routes/important-features").then((m) => m.ImportantFeaturesPage),
+  "/features/answer-sheet": () =>
+    import("@/routes/features.answer-sheet").then((m) => m.AnswerSheetFeaturePage),
+  "/terms": () => import("@/routes/terms").then((m) => m.TermsPage),
+  "/privacy": () => import("@/routes/privacy").then((m) => m.PrivacyPage),
+  "/products": () => import("@/routes/products.index").then((m) => m.ProductsPage),
+  "/products/demo-practice": () =>
+    import("@/routes/products.demo-practice").then((m) => m.DemoPracticeProduct),
+  "/products/full-course": () =>
+    import("@/routes/products.full-course").then((m) => m.FullCourseProduct),
+  "/products/hybrid-course": () =>
+    import("@/routes/products.hybrid-course").then((m) => m.HybridCourseProductPage),
+  "/demo-practice": () =>
+    import("@/routes/demo-practice.index").then((m) => m.DemoPractice),
+  "/demo-mock": () => import("@/routes/demo-mock").then((m) => m.DemoMockPage),
+  "/login": () => import("@/routes/login").then((m) => m.LoginPage),
+  "/signup": () => import("@/routes/signup").then((m) => m.SignupPage),
+  "/reset-password": () =>
+    import("@/routes/reset-password").then((m) => m.ResetPasswordPage),
+  "/account": () => import("@/routes/account").then((m) => m.AccountPage),
+  "/payment/success": () =>
+    import("@/routes/payment.success").then((m) => m.PaymentSuccessPage),
+  "/payment/failed": () =>
+    import("@/routes/payment.failed").then((m) => m.PaymentFailedPage),
 };
 
-export function getLocalizedPage(pathname: string): ComponentType | null {
+const pageCache = new Map<string, ComponentType>();
+
+/** Cheap existence check — does not import page modules or mock banks. */
+export function hasLocalizedPage(pathname: string): boolean {
   const path = normalizeAppPath(pathname);
   if (isNewsPostPath(path)) {
-    const slug = path.slice("/news/".length);
-    return getNewsPost(slug) ? NewsPostPage : null;
+    return Boolean(getNewsPost(path.slice("/news/".length)));
   }
-  return LOCALIZED_PAGE_COMPONENTS[path as LocalizablePath] ?? null;
+  return Object.prototype.hasOwnProperty.call(LOCALIZED_PAGE_LOADERS, path);
+}
+
+/** Sync read after `loadLocalizedPage` has run (e.g. in beforeLoad). */
+export function getCachedLocalizedPage(pathname: string): ComponentType | null {
+  return pageCache.get(normalizeAppPath(pathname)) ?? null;
+}
+
+/** Dynamically import only the component for `pathname`. */
+export async function loadLocalizedPage(pathname: string): Promise<ComponentType | null> {
+  const path = normalizeAppPath(pathname);
+  const cached = pageCache.get(path);
+  if (cached) return cached;
+
+  if (isNewsPostPath(path)) {
+    const slug = path.slice("/news/".length);
+    if (!getNewsPost(slug)) return null;
+    const { NewsPostPage } = await import("@/routes/news.$slug");
+    pageCache.set(path, NewsPostPage);
+    return NewsPostPage;
+  }
+
+  const loader = LOCALIZED_PAGE_LOADERS[path as LocalizablePath];
+  if (!loader) return null;
+  const Page = await loader();
+  pageCache.set(path, Page);
+  return Page;
 }

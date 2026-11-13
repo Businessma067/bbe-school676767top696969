@@ -7,11 +7,15 @@ import {
   isStudyContentPath,
   normalizeAppPath,
 } from "@/lib/i18n/locale-path";
-import { getLocalizedPage } from "@/lib/i18n/localized-pages";
+import {
+  getCachedLocalizedPage,
+  hasLocalizedPage,
+  loadLocalizedPage,
+} from "@/lib/i18n/localized-pages";
 import { isFullSiteProtectedPath } from "@/lib/site-access";
 
 export const Route = createFileRoute("/$lang/$")({
-  beforeLoad: ({ params, location }) => {
+  beforeLoad: async ({ params, location }) => {
     if (!isLocalePrefix(params.lang)) throw notFound();
     const path = normalizeAppPath(`/${params._splat ?? ""}`);
 
@@ -60,20 +64,25 @@ export const Route = createFileRoute("/$lang/$")({
     }
 
     if (!isLocalizablePath(path) || path === "/") throw notFound();
-    if (!getLocalizedPage(path)) throw notFound();
+    if (!hasLocalizedPage(path)) throw notFound();
+
+    // Load only this path's module (not the whole marketing site graph).
+    // Component stays in a module cache — beforeLoad return values must be
+    // serializable, so we only pass the path string through context.
+    if (!(await loadLocalizedPage(path))) throw notFound();
+    return { localizedPath: path };
   },
-  head: ({ params }) => {
+  head: async ({ params }) => {
     if (!isLocalePrefix(params.lang)) return {};
     const path = normalizeAppPath(`/${params._splat ?? ""}`);
-    return buildLocaleHead(params.lang, path, getEnglishHeadForPath(path));
+    return buildLocaleHead(params.lang, path, await getEnglishHeadForPath(path));
   },
   component: LocalizedSplatPage,
 });
 
 function LocalizedSplatPage() {
-  const { _splat } = Route.useParams();
-  const path = normalizeAppPath(`/${_splat ?? ""}`);
-  const Page = getLocalizedPage(path);
+  const { localizedPath } = Route.useRouteContext();
+  const Page = getCachedLocalizedPage(localizedPath);
   if (!Page) return null;
   return <Page />;
 }
