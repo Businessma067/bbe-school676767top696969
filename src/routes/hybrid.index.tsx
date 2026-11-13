@@ -3,7 +3,6 @@ import { Suspense, lazy } from "react";
 import { ArrowRight } from "lucide-react";
 
 import { ExamCountdown } from "@/components/ExamCountdown";
-import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { HybridFaqAccordion, hybridFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -15,6 +14,12 @@ import { pinnedNote } from "@/data/acceptance-notes";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+const CourseHighlightsSection = lazy(() =>
+  import("@/components/CourseHighlightsSection").then((m) => ({
+    default: m.CourseHighlightsSection,
+  })),
+);
 
 const HowItWorksSection = lazy(() =>
   import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
@@ -132,7 +137,9 @@ export function HybridLandingPage() {
             </div>
 
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
-              <CourseHighlightsSection track="hybrid" variant="landing" />
+              <Suspense fallback={<div className="min-h-[16rem]" aria-hidden />}>
+                <CourseHighlightsSection track="hybrid" variant="landing" />
+              </Suspense>
             </div>
           </div>
         </section>

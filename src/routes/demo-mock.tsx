@@ -17,7 +17,7 @@ import { useAuthGate } from "@/hooks/use-auth-gate";
 import { BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { MOCK_EXAM_DEMO_SECTION_COUNTS } from "@/lib/mock-exam-demo-content";
-import { getFreeDemoMockExam, type MockExamSummary } from "@/lib/mock-exams";
+import { getFreeDemoMockExam, type MockExamSummary } from "@/lib/mock-exam-catalog";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import { fetchMockAttempts, type MockAttempt } from "@/lib/user-progress";

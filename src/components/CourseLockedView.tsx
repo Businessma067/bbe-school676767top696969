@@ -7,7 +7,7 @@ import { WISO_FLASHCARD_SUBJECTS } from "@/data/wiso-flashcards";
 import type { AccessTier } from "@/lib/entitlements";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { isWisoPath } from "@/lib/exam-track";
-import { MOCK_EXAMS } from "@/lib/mock-exams";
+import { MOCK_EXAMS } from "@/lib/mock-exam-catalog";
 import { cn } from "@/lib/utils";
 
 export type CourseLockFeature =

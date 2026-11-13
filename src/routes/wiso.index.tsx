@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CourseCallCalendar } from "@/components/CourseCallCalendar";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
 import { ExamCountdown } from "@/components/ExamCountdown";
-import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -21,6 +20,12 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { WISO_KEYWORDS, wisoBreadcrumbScript, wisoShareMeta } from "@/lib/seo/wiso-seo";
 
 const PATH = "/wiso" as const;
+
+const CourseHighlightsSection = lazy(() =>
+  import("@/components/CourseHighlightsSection").then((m) => ({
+    default: m.CourseHighlightsSection,
+  })),
+);
 
 export const Route = createFileRoute("/wiso/")({
   head: () => ({
@@ -137,7 +142,9 @@ export function WisoLandingPage() {
             </div>
 
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
-              <CourseHighlightsSection track="wiso" variant="landing" />
+              <Suspense fallback={<div className="min-h-[16rem]" aria-hidden />}>
+                <CourseHighlightsSection track="wiso" variant="landing" />
+              </Suspense>
             </div>
 
             <CourseCallCalendar className="mx-auto mt-8 w-full max-w-md" />

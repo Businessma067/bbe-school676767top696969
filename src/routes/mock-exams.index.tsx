@@ -9,15 +9,15 @@ import {
 } from "@/components/ui/dialog";
 import { SiteHeader } from "@/components/SiteHeader";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
+import { isCustomExamId } from "@/config/custom-mock-builder";
 import { MOCK_EXAM_SECTION_COUNTS } from "@/lib/mock-exam-1-content";
 import {
   MOCK_EXAMS,
   getExamsForTier,
   getFreeDemoMockExam,
-  isCustomExamId,
   type MockExamSummary,
   type ProductTier,
-} from "@/lib/mock-exams";
+} from "@/lib/mock-exam-catalog";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import {
   fetchMockAttempts,

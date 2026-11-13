@@ -9,111 +9,31 @@ import {
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
 import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
-import {
-  MOCK_EXAM_1_CONTENT_REV,
-  MOCK_EXAM_1_POINTS_TOTAL,
-  MOCK_EXAM_1_QUESTION_COUNT,
-  buildMockExam1Questions,
-} from "@/lib/mock-exam-1-content";
-import {
-  MOCK_EXAM_2_CONTENT_REV,
-  MOCK_EXAM_2_POINTS_TOTAL,
-  MOCK_EXAM_2_QUESTION_COUNT,
-  buildMockExam2Questions,
-} from "@/lib/mock-exam-2-content";
-import {
-  MOCK_EXAM_3_CONTENT_REV,
-  MOCK_EXAM_3_POINTS_TOTAL,
-  MOCK_EXAM_3_QUESTION_COUNT,
-  buildMockExam3Questions,
-} from "@/lib/mock-exam-3-content";
-import {
-  MOCK_EXAM_4_CONTENT_REV,
-  MOCK_EXAM_4_POINTS_TOTAL,
-  MOCK_EXAM_4_QUESTION_COUNT,
-  buildMockExam4Questions,
-} from "@/lib/mock-exam-4-content";
-import {
-  MOCK_EXAM_5_CONTENT_REV,
-  MOCK_EXAM_5_POINTS_TOTAL,
-  MOCK_EXAM_5_QUESTION_COUNT,
-  buildMockExam5Questions,
-} from "@/lib/mock-exam-5-content";
-import {
-  MOCK_EXAM_6_CONTENT_REV,
-  MOCK_EXAM_6_POINTS_TOTAL,
-  MOCK_EXAM_6_QUESTION_COUNT,
-  buildMockExam6Questions,
-} from "@/lib/mock-exam-6-content";
-import {
-  MOCK_EXAM_DEMO_CONTENT_REV,
-  MOCK_EXAM_DEMO_POINTS_TOTAL,
-  MOCK_EXAM_DEMO_QUESTION_COUNT,
-  buildMockExamDemoQuestions,
-} from "@/lib/mock-exam-demo-content";
-import {
-  WISO_MOCK_EXAM_1_CONTENT_REV,
-  WISO_MOCK_EXAM_1_POINTS_TOTAL,
-  WISO_MOCK_EXAM_1_QUESTION_COUNT,
-  buildWisoMockExam1Questions,
-} from "@/lib/wiso-mock-exam-1-content";
-import {
-  WISO_MOCK_EXAM_2_CONTENT_REV,
-  WISO_MOCK_EXAM_2_POINTS_TOTAL,
-  WISO_MOCK_EXAM_2_QUESTION_COUNT,
-  buildWisoMockExam2Questions,
-} from "@/lib/wiso-mock-exam-2-content";
-import {
-  WISO_MOCK_EXAM_3_CONTENT_REV,
-  WISO_MOCK_EXAM_3_POINTS_TOTAL,
-  WISO_MOCK_EXAM_3_QUESTION_COUNT,
-  buildWisoMockExam3Questions,
-} from "@/lib/wiso-mock-exam-3-content";
-import {
-  WISO_MOCK_EXAM_4_CONTENT_REV,
-  WISO_MOCK_EXAM_4_POINTS_TOTAL,
-  WISO_MOCK_EXAM_4_QUESTION_COUNT,
-  buildWisoMockExam4Questions,
-} from "@/lib/wiso-mock-exam-4-content";
-import {
-  WISO_MOCK_EXAM_5_CONTENT_REV,
-  WISO_MOCK_EXAM_5_POINTS_TOTAL,
-  WISO_MOCK_EXAM_5_QUESTION_COUNT,
-  buildWisoMockExam5Questions,
-} from "@/lib/wiso-mock-exam-5-content";
-import {
-  WISO_MOCK_EXAM_6_CONTENT_REV,
-  WISO_MOCK_EXAM_6_POINTS_TOTAL,
-  WISO_MOCK_EXAM_6_QUESTION_COUNT,
-  buildWisoMockExam6Questions,
-} from "@/lib/wiso-mock-exam-6-content";
-import {
-  WISO_MOCK_EXAM_7_CONTENT_REV,
-  WISO_MOCK_EXAM_7_POINTS_TOTAL,
-  WISO_MOCK_EXAM_7_QUESTION_COUNT,
-  buildWisoMockExam7Questions,
-} from "@/lib/wiso-mock-exam-7-content";
-import {
-  WISO_MOCK_EXAM_DEMO_CONTENT_REV,
-  WISO_MOCK_EXAM_DEMO_POINTS_TOTAL,
-  WISO_MOCK_EXAM_DEMO_QUESTION_COUNT,
-  buildWisoMockExamDemoQuestions,
-} from "@/lib/wiso-mock-exam-demo-content";
+import { buildMockExam1Questions } from "@/lib/mock-exam-1-content";
+import { buildMockExam2Questions } from "@/lib/mock-exam-2-content";
+import { buildMockExam3Questions } from "@/lib/mock-exam-3-content";
+import { buildMockExam4Questions } from "@/lib/mock-exam-4-content";
+import { buildMockExam5Questions } from "@/lib/mock-exam-5-content";
+import { buildMockExam6Questions } from "@/lib/mock-exam-6-content";
+import { buildMockExamDemoQuestions } from "@/lib/mock-exam-demo-content";
+import { buildWisoMockExam1Questions } from "@/lib/wiso-mock-exam-1-content";
+import { buildWisoMockExamDemoQuestions } from "@/lib/wiso-mock-exam-demo-content";
+import type { MockExamSummary } from "@/lib/mock-exam-catalog";
 
-/** Paid course tiers plus free demo-mock access. */
-export type ProductTier = "full" | "lite" | "demo";
-
-export interface MockExamSummary {
-  id: string;
-  title: string;
-  questionCount: number;
-  durationMinutes: number;
-  tier: ProductTier;
-  /** Present for Custom Mock Builder exams — used for progress sync only. */
-  pointsTotal?: number;
-  /** Optional content stamp (Mock 1) to verify Lovable/Git sync. */
-  contentRev?: string;
-}
+export type { MockExamSummary, ProductTier } from "@/lib/mock-exam-catalog";
+export {
+  DEMO_MOCK_EXAM,
+  MOCK_EXAMS,
+  WISO_DEMO_MOCK_EXAM,
+  WISO_MOCK_EXAMS,
+  getExamById,
+  getExamsForTier,
+  getFreeDemoMockExam,
+  getFreeWisoDemoMockExam,
+  getWisoExamsForTier,
+  isFreeDemoMockId,
+  isWisoCuratedMockId,
+} from "@/lib/mock-exam-catalog";
 
 export interface CompletedExam {
   id: string;
@@ -148,190 +68,6 @@ export interface ExamQuestion {
   tablesMarkdown?: string;
   /** Shared worked solution shown with statement explanations on review. */
   solutionOverview?: string;
-}
-
-/** Free hard diagnostic — always unlocked (hero “Demo mock” CTA). */
-export const DEMO_MOCK_EXAM: MockExamSummary = {
-  id: "demo-mock",
-  title: "Demo Mock Exam",
-  questionCount: MOCK_EXAM_DEMO_QUESTION_COUNT,
-  durationMinutes: 120,
-  tier: "demo",
-  pointsTotal: MOCK_EXAM_DEMO_POINTS_TOTAL,
-  contentRev: MOCK_EXAM_DEMO_CONTENT_REV,
-};
-
-/** Available exams. Demo + mocks 1–6; Custom Mock Builder exams are separate. */
-export const MOCK_EXAMS: MockExamSummary[] = [
-  DEMO_MOCK_EXAM,
-  {
-    id: "mock-1",
-    title: "Mock Exam 1",
-    questionCount: MOCK_EXAM_1_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "lite",
-    pointsTotal: MOCK_EXAM_1_POINTS_TOTAL,
-    contentRev: MOCK_EXAM_1_CONTENT_REV,
-  },
-  {
-    id: "mock-2",
-    title: "Mock Exam 2",
-    questionCount: MOCK_EXAM_2_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "lite",
-    pointsTotal: MOCK_EXAM_2_POINTS_TOTAL,
-    contentRev: MOCK_EXAM_2_CONTENT_REV,
-  },
-  {
-    id: "mock-3",
-    title: "Mock Exam 3",
-    questionCount: MOCK_EXAM_3_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: MOCK_EXAM_3_POINTS_TOTAL,
-    contentRev: MOCK_EXAM_3_CONTENT_REV,
-  },
-  {
-    id: "mock-4",
-    title: "Mock Exam 4",
-    questionCount: MOCK_EXAM_4_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: MOCK_EXAM_4_POINTS_TOTAL,
-    contentRev: MOCK_EXAM_4_CONTENT_REV,
-  },
-  {
-    id: "mock-5",
-    title: "Mock Exam 5",
-    questionCount: MOCK_EXAM_5_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: MOCK_EXAM_5_POINTS_TOTAL,
-    contentRev: MOCK_EXAM_5_CONTENT_REV,
-  },
-  {
-    id: "mock-6",
-    title: "Mock Exam 6",
-    questionCount: MOCK_EXAM_6_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: MOCK_EXAM_6_POINTS_TOTAL,
-    contentRev: MOCK_EXAM_6_CONTENT_REV,
-  },
-];
-
-/** Free WiSo diagnostic — always unlocked (WiSo “Demo Exam” CTA). */
-export const WISO_DEMO_MOCK_EXAM: MockExamSummary = {
-  id: "wiso-demo-mock",
-  title: "WiSo Demo-Probeprüfung",
-  questionCount: WISO_MOCK_EXAM_DEMO_QUESTION_COUNT,
-  durationMinutes: 120,
-  tier: "demo",
-  pointsTotal: WISO_MOCK_EXAM_DEMO_POINTS_TOTAL,
-  contentRev: WISO_MOCK_EXAM_DEMO_CONTENT_REV,
-};
-
-/** Curated WiSo Aufnahmeprüfung mocks (German track). Demo + paid mocks. */
-export const WISO_MOCK_EXAMS: MockExamSummary[] = [
-  WISO_DEMO_MOCK_EXAM,
-  {
-    id: "wiso-mock-1",
-    title: "WiSo Mock Exam 1",
-    questionCount: WISO_MOCK_EXAM_1_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_1_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_1_CONTENT_REV,
-  },
-  {
-    id: "wiso-mock-2",
-    title: "WiSo Mock Exam 2",
-    questionCount: WISO_MOCK_EXAM_2_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_2_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_2_CONTENT_REV,
-  },
-  {
-    id: "wiso-mock-3",
-    title: "WiSo Mock Exam 3",
-    questionCount: WISO_MOCK_EXAM_3_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_3_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_3_CONTENT_REV,
-  },
-  {
-    id: "wiso-mock-4",
-    title: "WiSo Mock Exam 4",
-    questionCount: WISO_MOCK_EXAM_4_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_4_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_4_CONTENT_REV,
-  },
-  {
-    id: "wiso-mock-5",
-    title: "WiSo Mock Exam 5",
-    questionCount: WISO_MOCK_EXAM_5_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_5_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_5_CONTENT_REV,
-  },
-  {
-    id: "wiso-mock-6",
-    title: "WiSo Mock Exam 6",
-    questionCount: WISO_MOCK_EXAM_6_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_6_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_6_CONTENT_REV,
-  },
-  {
-    id: "wiso-mock-7",
-    title: "WiSo Mock Exam 7",
-    questionCount: WISO_MOCK_EXAM_7_QUESTION_COUNT,
-    durationMinutes: 120,
-    tier: "full",
-    pointsTotal: WISO_MOCK_EXAM_7_POINTS_TOTAL,
-    contentRev: WISO_MOCK_EXAM_7_CONTENT_REV,
-  },
-];
-
-export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
-  const paid = MOCK_EXAMS.filter((e) => e.tier !== "demo");
-  // lite users see mocks 1–2; full users see all paid curated mocks
-  if (tier === "full") return paid;
-  if (tier === "lite") return paid.filter((e) => e.tier === "lite");
-  return [];
-}
-
-/** Free demo mock is unlocked for every visitor. */
-export function getFreeDemoMockExam(): MockExamSummary {
-  return DEMO_MOCK_EXAM;
-}
-
-/** Free WiSo demo mock — unlocked for every visitor on the WiSo track. */
-export function getFreeWisoDemoMockExam(): MockExamSummary {
-  return WISO_DEMO_MOCK_EXAM;
-}
-
-export function isFreeDemoMockId(id: string): boolean {
-  return id === DEMO_MOCK_EXAM.id || id === WISO_DEMO_MOCK_EXAM.id;
-}
-
-export function getWisoExamsForTier(tier: ProductTier | "none"): MockExamSummary[] {
-  if (tier !== "full") return [];
-  return WISO_MOCK_EXAMS.filter((e) => e.tier !== "demo");
-}
-
-export function getExamById(id: string): MockExamSummary | undefined {
-  return MOCK_EXAMS.find((e) => e.id === id) ?? WISO_MOCK_EXAMS.find((e) => e.id === id);
-}
-
-export function isWisoCuratedMockId(id: string): boolean {
-  return id.startsWith("wiso-mock-") || id === WISO_DEMO_MOCK_EXAM.id;
 }
 
 export function summaryFromCustomMock(row: CustomMockRow): MockExamSummary {
@@ -396,24 +132,6 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   }
   if (examId === "wiso-mock-1") {
     return buildWisoMockExam1Questions(examId);
-  }
-  if (examId === "wiso-mock-2") {
-    return buildWisoMockExam2Questions(examId);
-  }
-  if (examId === "wiso-mock-3") {
-    return buildWisoMockExam3Questions(examId);
-  }
-  if (examId === "wiso-mock-4") {
-    return buildWisoMockExam4Questions(examId);
-  }
-  if (examId === "wiso-mock-5") {
-    return buildWisoMockExam5Questions(examId);
-  }
-  if (examId === "wiso-mock-6") {
-    return buildWisoMockExam6Questions(examId);
-  }
-  if (examId === "wiso-mock-7") {
-    return buildWisoMockExam7Questions(examId);
   }
 
   const rand = makeRandom(examId);

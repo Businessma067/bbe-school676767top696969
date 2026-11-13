@@ -17,7 +17,7 @@ import { useAuthGate } from "@/hooks/use-auth-gate";
 import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { WISO_MOCK_EXAM_DEMO_SECTION_COUNTS } from "@/lib/wiso-mock-exam-demo-content";
-import { getFreeWisoDemoMockExam, type MockExamSummary } from "@/lib/mock-exams";
+import { getFreeWisoDemoMockExam, type MockExamSummary } from "@/lib/mock-exam-catalog";
 import { storeExamTrack } from "@/lib/exam-track";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
