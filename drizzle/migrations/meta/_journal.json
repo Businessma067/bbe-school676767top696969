@@ -78,6 +78,13 @@
       "when": 1794484800000,
       "tag": "0010_studyguide_promo",
       "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1794500000000,
+      "tag": "0011_studycat_promo",
+      "breakpoints": true
     }
   ]
 }
