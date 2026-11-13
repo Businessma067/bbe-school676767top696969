@@ -345,7 +345,7 @@ export async function lookupDiscountPromo(input: {
     return { ok: false, error: "This promocode does not apply to this course." };
   }
 
-  // Partner codes (STUDYLINE / VSTUPUNI / STARTSTUDY / STUDYGUIDE) are resolved in code so a
+  // Partner codes (STUDYLINE / VSTUPUNI / STARTSTUDY / STUDYGUIDE / STUDYCAT) are resolved in code so a
   // missing or mis-typed DB row cannot show "unlock / Promo tab" for a discount.
   const partner = await resolvePartnerDiscount({
     code,

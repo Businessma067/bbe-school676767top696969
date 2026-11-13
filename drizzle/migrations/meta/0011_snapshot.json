@@ -1,0 +1,14 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "id": "0011_studycat_promo",
+  "prevId": "0010_studyguide_promo",
+  "tables": {},
+  "schemas": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
