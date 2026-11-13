@@ -11,14 +11,14 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
+import { isCustomExamId } from "@/config/custom-mock-builder";
 import {
   WISO_MOCK_EXAMS,
   getWisoExamsForTier,
-  isCustomExamId,
   isWisoCuratedMockId,
   type MockExamSummary,
   type ProductTier,
-} from "@/lib/mock-exams";
+} from "@/lib/mock-exam-catalog";
 import { WISO_MOCK_EXAM_1_SECTION_COUNTS } from "@/lib/wiso-mock-exam-1-content";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import { storeExamTrack } from "@/lib/exam-track";

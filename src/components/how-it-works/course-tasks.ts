@@ -1,7 +1,9 @@
-import econCh2 from "@/data/economics-cases-ch2-subtopics.json";
-import econCh3 from "@/data/economics-cases-ch3-subtopics.json";
-import mathCh12 from "@/data/math-cases-ch12-probability.json";
-import englishTexts from "@/data/english/texts.json";
+/**
+ * Marketing How-it-works demo tasks.
+ * Sourced from full banks via `src/data/marketing-demo-seeds.json` so SSR never
+ * loads multi-MB chapter JSON just to show one sample case.
+ */
+import seeds from "@/data/marketing-demo-seeds.json";
 
 export type CourseTask = {
   caseId: string;
@@ -38,36 +40,25 @@ function asTask(raw: RawTask, chapter: string): CourseTask {
   };
 }
 
-const builderRaw = (econCh2 as RawTask[])[0];
-const econRaw = (econCh3 as RawTask[]).find((task) => task.case_id === "CASE 3.1.01");
-const mathRaw = (mathCh12 as { tasks: RawTask[] }).tasks.find((task) => task.case_id === "MATH 12.01");
-const engRaw = (englishTexts as { tasks: RawTask[] }).tasks.find((task) => task.case_id === "ENG T.1.01");
-
-if (!builderRaw || !econRaw || !mathRaw || !engRaw) {
-  throw new Error("Course demo task missing from the bank");
-}
-
 /** First bank task of economics 2.1, the first subtopic the Mock Builder demo selects. */
-export const MOCK_BUILDER_FIRST = asTask(builderRaw, "Chapter 2 · Basic economic concepts");
+export const MOCK_BUILDER_FIRST = asTask(
+  seeds.mockBuilderFirst,
+  "Chapter 2 · Basic economic concepts",
+);
 
 /** First task of chapter 3 on the economics practice page. */
-export const COURSE_ECON = asTask(econRaw, "Chapter 3 · Focus on different types of businesses");
+export const COURSE_ECON = asTask(
+  seeds.courseEcon,
+  "Chapter 3 · Focus on different types of businesses",
+);
 
 /** First task of math chapter 12 on the math practice page. */
-export const COURSE_MATH = asTask(mathRaw, "Chapter 12 · Elementary probability");
+export const COURSE_MATH = asTask(seeds.courseMath, "Chapter 12 · Elementary probability");
 
 /** First Texts task. The paper is paragraphs 1–3 of the four-day workweek passage. */
-export const COURSE_ENGLISH = asTask(engRaw, "Texts · The Rise of the Four-Day Workweek");
-
-const passage = (
-  englishTexts as { subsections: { id: string; passage?: string }[] }
-).subsections.find((section) => section.id === "t.1")?.passage;
-
-if (!passage) throw new Error("English passage t.1 missing");
+export const COURSE_ENGLISH = asTask(seeds.courseEnglish, "Texts · The Rise of the Four-Day Workweek");
 
 /** Paragraphs 1–3, the slice ENG T.1.01 is written against. */
-export const COURSE_ENGLISH_PASSAGE = passage.split(/\n\n/).slice(0, 3).join("\n\n");
+export const COURSE_ENGLISH_PASSAGE = seeds.courseEnglishPassage;
 
-export const COURSE_ENGLISH_HIGHLIGHTS = (
-  englishTexts as { tasks: { case_id: string; highlights?: string[] }[] }
-).tasks.find((task) => task.case_id === "ENG T.1.01")?.highlights ?? [];
+export const COURSE_ENGLISH_HIGHLIGHTS = seeds.courseEnglishHighlights;

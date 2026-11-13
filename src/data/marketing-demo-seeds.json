@@ -1,0 +1,313 @@
+{
+  "mockBuilderFirst": {
+    "case_id": "CASE 2.1.02",
+    "title": "Goods, services, needs, and wants",
+    "context": "Analyze the distinction between goods, services, needs, and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "Goods must be intangible; any tangible item automatically counts as a service instead.",
+      "Services are intangible activities performed for someone, such as installing software or preparing a drink.",
+      "Needs are things necessary for well-being, whereas wants are desired but not essential for basic well-being.",
+      "Both households and businesses have needs that may be fulfilled through exchange with other economic actors.",
+      "Scarcity means resources are limited, so individuals and businesses must economise rather than assume unlimited supply."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Goods are tangible items such as bread, phones, or spare parts. Services are intangible activities such as repairs or tutoring. Calling every tangible item a service reverses the definitions. A loaf of bread remains a good even though it is physical.\n\nSo the statement is False.",
+      "Installing software, preparing a drink, or cutting hair are activities performed for someone, not physical objects handed over as stock. That intangibility is what makes them services. The café sells both roasted beans (a good) and barista labour (a service) side by side, which shows the split in one shop.\n\nSo the statement is True.",
+      "Needs cover what supports basic well-being: food, shelter, essential healthcare, reliable transport to work or school. Wants cover desired extras such as designer trainers, flavoured specialty drinks, or entertainment upgrades that life can continue without. The boundary can be fuzzy at the edges, yet the chapter still treats the distinction as useful. Craving a particular latte flavour is typically a want; securing calories and warmth is a need. Confusing the two labels muddles priorities when budgets are tight. The statement states the contrast cleanly and correctly.\n\nSo the statement is True.",
+      "Households need food and shelter; manufacturers need components and labour hours. Both sides meet those needs through buying and selling with other actors. Exchange is not reserved for one side of the market. Businesses purchase inputs just as families purchase groceries.\n\nSo the statement is True.",
+      "Scarcity means means are limited relative to uses. Individuals and firms therefore economise instead of assuming endless supply. Unlimited-stock thinking would erase the need to prioritise, which scarcity forbids.\n\nSo the statement is True."
+    ]
+  },
+  "courseEcon": {
+    "case_id": "CASE 3.1.01",
+    "title": "Labour as a Factor of Production",
+    "context": "Analyze how businesses classify human resources among the factors of production used to create goods and services. Evaluate the following economic assertions:",
+    "statements": [
+      "Managers who coordinate schedules supply labour as human resources alongside coordination duties.",
+      "Insurance claims handlers processing policies supply labour in a service firm.",
+      "Labour is restricted to manual shop-floor work and excludes planners or accountants.",
+      "Installing software is a want rather than labour because the service is intangible.",
+      "Seasonal pickers fall outside labour because their employment lasts only weeks."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Schedule coordination is still human effort applied to production. Managers who set shifts and allocate people are labour as a human resource, even when their work is desk-based rather than shop-floor.\n\nSo the statement is True.",
+      "Claims handlers who process insurance policies perform service work for the firm. That human input is labour, not capital or land. A service firm without people to handle policies cannot deliver the product, so the handlers sit squarely inside the labour factor.\n\nSo the statement is True.",
+      "Labour covers planners, accountants, supervisors, and shop-floor workers alike whenever human effort goes into production. Restricting labour to manual tasks invents a false split.\n\nA planner who sequences jobs and an accountant who tracks costs both supply human resources. Excluding them would leave most offices outside the labour factor, which contradicts how firms actually combine people with machines and materials.\n\nSo the statement is False.",
+      "Installing software is an activity performed for a client: human skills applied as labour. Intangibility makes it a service, not a \"want.\" Wants are consumption preferences; labour is a production factor. Mixing those categories mislabels the installer's work.\n\nSo the statement is False.",
+      "Seasonal pickers work for wages during harvest weeks and still supply labour. Contract length does not reclassify the factor. Short employment remains human effort in production.\n\nSo the statement is False."
+    ]
+  },
+  "courseMath": {
+    "case_id": "MATH 12.01",
+    "title": "A Committee Selection",
+    "context": "A club has 7 men and 5 women. A committee of 4 people is selected at random from the 12 members.",
+    "statements": [
+      "The total number of possible committees is 792.",
+      "There are fewer ways to form a committee with exactly 2 men and 2 women than a committee with exactly 3 men and 1 woman.",
+      "The probability that the committee consists of all men is less than 5%.",
+      "The probability that the committee contains at least one woman is greater than 90%.",
+      "The probability of selecting exactly 2 men and 2 women equals 14/33."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThis statement asks for the total number of possible committees. As determined in the solution overview, the total number of ways to select a committee of $4$ people from $12$ members is given by the combination formula $\\binom{12}{4}$.\n\n$$\nN(\\text{total committees}) = \\binom{12}{4}\n$$\n\n$$\n\\binom{12}{4} = \\dfrac{12!}{4!(12-4)!}\n$$\n\n$$\n\\dfrac{12!}{4!(8)!} = \\dfrac{12 \\cdot 11 \\cdot 10 \\cdot 9}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n12 \\cdot 11 = 132\n$$\n\n$$\n132 \\cdot 10 = 1320\n$$\n\n$$\n1320 \\cdot 9 = 11880\n$$\n\n$$\n\\dfrac{11880}{24} = 495\n$$\n\n$$\n\\binom{12}{4} = 495\n$$\n\nThe claim states that the total number of possible committees is $792$.\n\nSo the statement is False.\n",
+      "**B.** → False\n\nThis statement asks to compare the number of ways to form two different committee compositions. First, we calculate the number of ways to form a committee with exactly $2$ men and $2$ women. This involves choosing $2$ men from $7$ and $2$ women from $5$.\n\n$$\nN(\\text{2 men, 2 women}) = \\binom{7}{2} \\binom{5}{2}\n$$\n\n$$\n\\binom{7}{2} = \\dfrac{7!}{2!(7-2)!}\n$$\n\n$$\n\\dfrac{7!}{2!(5)!} = \\dfrac{7 \\cdot 6}{1 \\cdot 2}\n$$\n\n$$\n7 \\times 6 = 42\n$$\n\n$$\n\\dfrac{42}{2} = 21\n$$\n\n$$\n\\binom{7}{2} = 21\n$$\n\n$$\n\\binom{5}{2} = \\dfrac{5!}{2!(5-2)!}\n$$\n\n$$\n\\dfrac{5!}{2!(3)!} = \\dfrac{5 \\cdot 4}{1 \\cdot 2}\n$$\n\n$$\n5 \\times 4 = 20\n$$\n\n$$\n\\dfrac{20}{2} = 10\n$$\n\n$$\n\\binom{5}{2} = 10\n$$\n\n$$\nN(\\text{2 men, 2 women}) = 21 \\times 10\n$$\n\n$$\n21 \\times 10 = 210\n$$\n\n$$\nN(\\text{2 men, 2 women}) = 210\n$$\n\nNext, we calculate the number of ways to form a committee with exactly $3$ men and $1$ woman. This involves choosing $3$ men from $7$ and $1$ woman from $5$.\n\n$$\nN(\\text{3 men, 1 woman}) = \\binom{7}{3} \\binom{5}{1}\n$$\n\n$$\n\\binom{7}{3} = \\dfrac{7!}{3!(7-3)!}\n$$\n\n$$\n\\dfrac{7!}{3!(4)!} = \\dfrac{7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n7 \\times 6 = 42\n$$\n\n$$\n42 \\times 5 = 210\n$$\n\n$$\n\\dfrac{210}{6} = 35\n$$\n\n$$\n\\binom{7}{3} = 35\n$$\n\n$$\n\\binom{5}{1} = \\dfrac{5!}{1!(5-1)!}\n$$\n\n$$\n\\binom{5}{1} = 5\n$$\n\n$$\nN(\\text{3 men, 1 woman}) = 35 \\times 5\n$$\n\n$$\n35 \\times 5 = 175\n$$\n\n$$\nN(\\text{3 men, 1 woman}) = 175\n$$\n\nComparing these two numbers, $210$ ways to form a committee with $2$ men and $2$ women, and $175$ ways to form a committee with $3$ men and $1$ woman. The claim states that there are fewer ways to form a committee with $2$ men and $2$ women than with $3$ men and $1$ woman.\n\nSo the statement is False.\n",
+      "**C.** → False\n\nThis statement asks for the probability that the committee consists of all men. To find this probability, we divide the number of ways to select $4$ men from $7$ men by the total number of possible committees. From the solution overview, the number of ways to select $4$ men is $35$, and the total number of committees is $495$.\n\n$$\nN(\\text{4 men}) = \\binom{7}{4} \\binom{5}{0}\n$$\n\n$$\n\\binom{7}{4} = \\dfrac{7!}{4!(7-4)!}\n$$\n\n$$\n\\dfrac{7!}{4!(3)!} = \\dfrac{7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n7 \\cdot 6 = 42\n$$\n\n$$\n42 \\cdot 5 = 210\n$$\n\n$$\n\\dfrac{210}{6} = 35\n$$\n\n$$\n\\binom{7}{4} = 35\n$$\n\n$$\n\\binom{5}{0} = 1\n$$\n\n$$\n35 \\times 1 = 35\n$$\n\n$$\nN(\\text{4 women}) = \\binom{7}{0} \\binom{5}{4}\n$$\n\n$$\n\\binom{7}{0} = 1\n$$\n\n$$\n\\binom{5}{4} = \\dfrac{5!}{4!(5-4)!}\n$$\n\n$$\n\\binom{5}{4} = 5\n$$\n\n$$\n1 \\times 5 = 5\n$$\n\n$$\nN(\\text{4 men}) = \\binom{7}{4} \\binom{5}{0}\n$$\n\n$$\n35 \\times 1 = 35\n$$\n\n$$\n\\binom{12}{4} = \\dfrac{12!}{4!(12-4)!}\n$$\n\n$$\n\\dfrac{12!}{4!(8)!} = \\dfrac{12 \\cdot 11 \\cdot 10 \\cdot 9}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n12 \\times 11 = 132\n$$\n\n$$\n132 \\times 10 = 1320\n$$\n\n$$\n1320 \\times 9 = 11880\n$$\n\n$$\n\\dfrac{11880}{24} = 495\n$$\n\n$$\n\\binom{12}{4} = 495\n$$\n\n$$\nP(\\text{all men}) = \\frac{N(\\text{4 men})}{N(\\text{total committees})}\n$$\n\n$$\nP(\\text{all men}) = \\frac{35}{495}\n$$\n\n$$\nP(\\text{all men}) \\approx 0.070707\n$$\n\nExpressed as a percentage, this is approximately $7.07\\%$. The claim states that this probability is less than $5\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThis statement asks for the probability that the committee contains at least one woman. It is often easier to calculate the probability of the complementary event: that the committee contains no women (i.e., it consists of all men), and then subtract this from $1$. We have already calculated the probability of an all-men committee in statement C.\n\n$$\nP(\\text{at least one woman}) = 1 - P(\\text{all men})\n$$\n\nUsing the probability calculated in statement C:\n\n$$\nP(\\text{at least one woman}) = 1 - \\frac{35}{495}\n$$\n\n$$\nP(\\text{at least one woman}) = \\frac{495 - 35}{495}\n$$\n\n$$\nP(\\text{at least one woman}) = \\frac{460}{495}\n$$\n\n$$\nP(\\text{at least one woman}) \\approx 0.929293\n$$\n\nExpressed as a percentage, this is approximately $92.93\\%$. The claim states that this probability is greater than $90\\%$.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis statement asks for the probability of selecting exactly $2$ men and $2$ women. To find this probability, we divide the number of ways to select such a committee by the total number of possible committees. From the solution overview, the number of ways to select $2$ men and $2$ women is $210$, and the total number of committees is $495$.\n\n$$\nN(\\text{4 women}) = \\binom{7}{0} \\binom{5}{4}\n$$\n\n$$\n\\binom{7}{0} = 1\n$$\n\n$$\n\\binom{5}{4} = \\dfrac{5!}{4!(5-4)!}\n$$\n\n$$\n\\binom{5}{4} = 5\n$$\n\n$$\n1 \\times 5 = 5\n$$\n\n$$\nN(\\text{2 men, 2 women}) = \\binom{7}{2} \\binom{5}{2}\n$$\n\n$$\n\\binom{7}{2} = \\dfrac{7!}{2!(7-2)!}\n$$\n\n$$\n\\dfrac{7!}{2!(5)!} = \\dfrac{7 \\cdot 6}{1 \\cdot 2}\n$$\n\n$$\n7 \\times 6 = 42\n$$\n\n$$\n\\dfrac{42}{2} = 21\n$$\n\n$$\n\\binom{7}{2} = 21\n$$\n\n$$\n\\binom{5}{2} = \\dfrac{5!}{2!(5-2)!}\n$$\n\n$$\n\\dfrac{5!}{2!(3)!} = \\dfrac{5 \\cdot 4}{1 \\cdot 2}\n$$\n\n$$\n5 \\times 4 = 20\n$$\n\n$$\n\\dfrac{20}{2} = 10\n$$\n\n$$\n\\binom{5}{2} = 10\n$$\n\n$$\n21 \\times 10 = 210\n$$\n\n$$\n\\binom{12}{4} = \\dfrac{12!}{4!(12-4)!}\n$$\n\n$$\n\\dfrac{12!}{4!(8)!} = \\dfrac{12 \\cdot 11 \\cdot 10 \\cdot 9}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n12 \\times 11 = 132\n$$\n\n$$\n132 \\times 10 = 1320\n$$\n\n$$\n1320 \\times 9 = 11880\n$$\n\n$$\n\\dfrac{11880}{24} = 495\n$$\n\n$$\n\\binom{12}{4} = 495\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{N(\\text{2 men, 2 women})}{N(\\text{total committees})}\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{210}{495}\n$$\n\nTo simplify the fraction, we find the greatest common divisor of $210$ and $495$. Both numbers are divisible by $5$ and $3$, so they are divisible by $15$. Dividing the numerator and denominator by $15$:\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{210 \\div 15}{495 \\div 15}\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{14}{33}\n$$\n\nThe claim states that the probability of selecting exactly $2$ men and $2$ women equals $14/33$. This matches our calculated value.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview": "A club consists of $7$ men and $5$ women, making a total of $12$ members. A committee of $4$ people is to be selected at random from these $12$ members. Since the order in which the members are chosen for the committee does not matter, this problem involves combinations. We will use the combination formula, denoted as $\\binom{n}{k}$, which calculates the number of ways to choose $k$ items from a set of $n$ distinct items.\n\nFirst, we determine the total number of distinct ways to form a committee of $4$ people from the $12$ available members. This will serve as the size of our sample space for calculating probabilities.\n$$N(\\text{total committees}) = \\binom{12}{4}$$\n$$\nN(\\text{total committees}) = \\frac{12!}{4!(12-4)!} = \\frac{12 \\times 11 \\times 10 \\times 9}{4 \\times 3 \\times 2 \\times 1}\n$$\n$$N(\\text{total committees}) = 495$$\nThus, there are $495$ possible unique committees that can be formed.\n\nNext, to find the number of committees with a specific composition (e.g., a certain number of men and women), we apply the multiplication principle for combinations. For instance, to select $m$ men from $7$ and $w$ women from $5$, the number of ways is $\\binom{7}{m} \\binom{5}{w}$. We will calculate the number of ways to form committees with specific compositions, which will be useful for several statements:\n\nFor a committee of $4$ consisting of all men (i.e., $4$ men and $0$ women):\n$$N(\\text{4 men}) = \\binom{7}{4} \\binom{5}{0}$$\n$$\nN(\\text{4 men}) = \\frac{7!}{4!3!} \\times 1 = 35 \\times 1 = 35\n$$\n\nFor a committee of $4$ consisting of $3$ men and $1$ woman:\n$$N(\\text{3 men, 1 woman}) = \\binom{7}{3} \\binom{5}{1}$$\n$$\nN(\\text{3 men, 1 woman}) = \\frac{7!}{3!4!} \\times \\frac{5!}{1!4!} = 35 \\times 5 = 175\n$$\n\nFor a committee of $4$ consisting of $2$ men and $2$ women:\n$$N(\\text{2 men, 2 women}) = \\binom{7}{2} \\binom{5}{2}$$\n$$\nN(\\text{2 men, 2 women}) = \\frac{7!}{2!5!} \\times \\frac{5!}{2!3!} = 21 \\times 10 = 210\n$$\n\nFor a committee of $4$ consisting of $1$ man and $3$ women:\n$$N(\\text{1 man, 3 women}) = \\binom{7}{1} \\binom{5}{3}$$\n$$\nN(\\text{1 man, 3 women}) = \\frac{7!}{1!6!} \\times \\frac{5!}{3!2!} = 7 \\times 10 = 70\n$$\n\nFor a committee of $4$ consisting of all women (i.e., $0$ men and $4$ women):\n$$N(\\text{4 women}) = \\binom{7}{0} \\binom{5}{4}$$\n$$\nN(\\text{4 women}) = 1 \\times \\frac{5!}{4!1!} = 1 \\times 5 = 5\n$$\n\nThese values represent the number of favorable outcomes for various committee compositions, which we will use to calculate probabilities by dividing them by the total number of committees, $495$."
+  },
+  "courseEnglish": {
+    "case_id": "ENG T.1.01",
+    "title": "Task 1",
+    "exam_title": "Paragraphs 1–3",
+    "context": "Statements test close reading comprehension of the passage's opening claims regarding the history and rationale of the four-day workweek.",
+    "statements": [
+      "According to the passage, the five-day workweek was never formally established through legislation, but existed only as an informal social custom.",
+      "The UK trial described in the passage lasted for a full calendar year, from January to December 2022.",
+      "Employees in the UK trial worked a four-day week while continuing to receive their previous full salary.",
+      "The passage states that the majority of participating UK companies chose to abandon the four-day model after the trial concluded.",
+      "Proponents of the four-day week argue that much of a traditional working day is spent on low-value activities such as unnecessary meetings and email."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) According to the passage, the five-day workweek was never formally established through legislation, but existed only as an informal social custom.**\n\nParagraph 1 does not treat the five-day week as a soft custom. It was fought for by unions and then \"codified into law across dozens of countries,\" which is formal legal status.\n\nCalling it \"only\" informal invents a claim the text never makes and erases the legislation line. The word \"only\" is doing the damage here: it converts a description of two forces, union struggle plus law, into a single weaker one.\n\n**Trap:** \"Never formally established\" often flips a sentence that actually names law or policy.\n\nRead \"codified\" as your anchor verb — it means written into legal code, which is the exact opposite of an unwritten custom. The claim fails because the passage explicitly grounds the five-day week in law, not custom alone.",
+      "**B) The UK trial described in the passage lasted for a full calendar year, from January to December 2022.**\n\nParagraph 2 dates the trial \"between June and December 2022\" and later calls it a \"six-month trial.\" That is half a year, not January–December.\n\nThe January start and \"full calendar year\" are both invented dates. The passage even double-confirms the length by naming the months and then restating the duration as six months, so there are two independent checks against this statement.\n\n**Trap:** Stretching a named window into a whole year is a common chronology swap.\n\nWhen a text gives both endpoints and a duration, do the arithmetic before answering: June to December is six months, and six cannot become twelve. The claim fails: the text's window is June–December 2022, not a full year from January.",
+      "**C) Employees in the UK trial worked a four-day week while continuing to receive their previous full salary.**\n\nParagraph 2 says participants \"moved to a four-day schedule while maintaining one hundred percent of their previous salary.\" Same hours cut, same pay kept.\n\nThe statement simply restates that pairing without adding extras the text does not support. Note that \"one hundred percent of their previous salary\" and \"previous full salary\" are the same idea in different words, which is what a fair paraphrase should look like.\n\nThe phrase \"while maintaining\" is the grammatical hinge: it holds pay constant at the same time as the schedule changes. The claim matches the passage: reduced schedule with full prior salary is exactly what the UK trial did.",
+      "**D) The passage states that the majority of participating UK companies chose to abandon the four-day model after the trial concluded.**\n\nParagraph 2 reports the opposite outcome: \"the vast majority of participating companies chose to continue with the shortened week,\" and many planned to make it permanent.\n\n\"Abandon\" reverses continue/permanent into exit. A statement can copy the correct subject, the correct quantifier and the correct timing and still be false if one verb is inverted, which is precisely what happens here.\n\n**Trap:** Majority wording is often flipped from \"continue\" to \"stop.\"\n\nCheck the verb attached to the majority, not just the size of the majority. The claim fails because the passage says most firms kept the shortened week, not dropped it.",
+      "**E) Proponents of the four-day week argue that much of a traditional working day is spent on low-value activities such as unnecessary meetings and email.**\n\nParagraph 3 attributes to proponents the view that office days are often consumed by \"low-value activities such as unnecessary meetings, email correspondence, and general distraction.\"\n\nMeetings and email are named examples in that argument, so the paraphrase is faithful. The statement also keeps the attribution correct by assigning the view to proponents rather than presenting it as the author's own verdict.\n\nQuoting only two of the three listed examples is fine, because \"such as\" marks an open list rather than an exhaustive one. The claim matches the proponents' case in Paragraph 3: much of the day is spent on those low-value tasks."
+    ],
+    "highlights": [
+      "codified into law across dozens of countries",
+      "between June and December 2022",
+      "moved to a four-day schedule while maintaining one hundred percent of their previous salary",
+      "the vast majority of participating companies chose to continue with the shortened week",
+      "low-value activities such as unnecessary meetings, email correspondence, and general distraction"
+    ]
+  },
+  "courseEnglishPassage": "(1) For most of the twentieth century, the five-day, forty-hour workweek stood as an unquestioned pillar of industrial life. It was fought for by labour unions, codified into law across dozens of countries, and eventually became so deeply embedded in economic culture that few people paused to ask whether it was actually the most efficient way to organise work. In the past decade, however, a growing number of companies, researchers, and even national governments have begun to challenge that assumption, experimenting instead with a four-day working week in which employees work fewer hours for the same pay.\n\n(2) The most widely cited evidence comes from a large-scale trial conducted in the United Kingdom between June and December 2022, in which over sixty companies and roughly three thousand employees moved to a four-day schedule while maintaining one hundred percent of their previous salary. At the end of the six-month trial, the vast majority of participating companies chose to continue with the shortened week, and a significant number stated they would make the change permanent. Employees reported reduced burnout, improved sleep quality, and better work-life balance, while several firms noted that revenue had either stayed flat or increased slightly compared with the same period in the previous year.\n\n(3) Proponents of the four-day week argue that the traditional forty-hour structure was never designed around genuine productivity but rather around the rhythms of an industrial economy built on physical labour and shift work. In many modern office environments, they contend, a large share of the working day is consumed by low-value activities such as unnecessary meetings, email correspondence, and general distraction, meaning that a shorter week simply compresses genuine output into less time without any real loss.",
+  "courseEnglishHighlights": [
+    "codified into law across dozens of countries",
+    "between June and December 2022",
+    "moved to a four-day schedule while maintaining one hundred percent of their previous salary",
+    "the vast majority of participating companies chose to continue with the shortened week",
+    "low-value activities such as unnecessary meetings, email correspondence, and general distraction"
+  ],
+  "bbeGrammar": {
+    "case_id": "ENG G.1.01",
+    "title": "Task 1",
+    "context": "Decide whether each sentence is grammatically correct as written.",
+    "statements": [
+      "Maya has finished her chemistry lab report last Tuesday.",
+      "Our hiking club has met every Saturday since April.",
+      "While the band was rehearsing, the lights suddenly went out.",
+      "Leo used to swimming before school every morning.",
+      "By next Friday, the volunteers will plant fifty saplings."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Maya has finished her chemistry lab report last Tuesday.**\n\nPresent perfect \"has finished\" signals a past action with a link to now, but \"last Tuesday\" is a finished calendar anchor that closes the time frame. In exam English, an explicit finished time (yesterday, last week, in 2019) almost never pairs with present perfect. Repair to past simple: \"Maya finished her chemistry lab report last Tuesday.\"\n\n**Trap:** Learners often keep present perfect because the work is \"done,\" forgetting that a named finished day kills that tense.\n\nFinished-time last Tuesday needs past simple, so this is **false** — \"Maya finished her chemistry lab report last Tuesday.\"\n",
+      "**B) Our hiking club has met every Saturday since April.**\n\nPresent perfect \"has met\" with \"since April\" correctly shows a Saturday habit that began in the past and still continues. The starting point is named, but the period remains open into the present, so present perfect — not past simple — is the right tense. Frequency (\"every Saturday\") sits comfortably inside that open span.\n\nThe open span from April to now is exactly what present perfect marks, so the wording is **true**.\n",
+      "**C) While the band was rehearsing, the lights suddenly went out.**\n\nPast continuous \"was rehearsing\" paints the longer background scene; past simple \"went out\" marks the sudden blackout that cut across it. That continuous-plus-simple pairing is the standard past storytelling pattern for an interrupt. \"While\" cues the in-progress action, and \"suddenly\" cues the short past-simple event.\n\n**Tip:** Longer background action → continuous; shorter interrupt → simple past.\n\nContinuous background plus simple interrupt is the right pairing here, so the sentence is **true**.\n",
+      "**D) Leo used to swimming before school every morning.**\n\nPast habit needs \"used to\" + base verb, so \"used to swimming\" is broken. Repair to \"Leo used to swim before school every morning.\" Do not confuse this with \"be used to + -ing,\" which means familiarity, not past habit — different structure, different meaning.\n\n**Trap:** The -ing form after \"used to\" feels natural if you mix it up with \"be used to doing.\"\n\n\"Used to\" takes a bare infinitive, so the line is **false**; the **true** version is \"Leo used to swim before school every morning.\"\n",
+      "**E) By next Friday, the volunteers will plant fifty saplings.**\n\nThe cue \"by + future time\" signals completion before that deadline, which needs future perfect, not plain \"will plant.\" Repair to \"By next Friday, the volunteers will have planted fifty saplings.\" Plain will only talks about a future intention, not that the planting will already be done by Friday.\n\n**Trap:** \"Will plant by Friday\" looks acceptable in casual speech but fails the exam completion-before-deadline test.\n\nA deadline with by calls for future perfect, so plain will is **false**: \"By next Friday, the volunteers will have planted fifty saplings.\"\n"
+    ],
+    "solution_overview": "These five lines warm up classic tense traps: finished time versus present perfect with \"since,\" a continuous background interrupted by a sudden event, the form of \"used to,\" and future perfect with \"by.\"\n\n**Part 1: What to watch for.**\n\nMatch each verb to its time cue before you decide. Calendar anchors such as \"last Tuesday\" usually kill present perfect; \"since\" keeps a habit alive into the present; \"while\" often sets a continuous scene for a short past-simple interrupt; \"used to\" needs a base verb; and \"by + future time\" often wants future perfect, not plain will.\n\n**Part 2: How to decide.**\n\nRead the highlighted verb against the time expression in the same sentence. If they clash, mark false and name the repair; if they fit the standard pairing, mark true.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE",
+    "highlights": [
+      "has finished",
+      "has met",
+      "was rehearsing",
+      "used to swimming",
+      "will plant"
+    ]
+  },
+  "wisoEcon": {
+    "case_id": "WISO 1.1.01",
+    "title": "Privater Haushalt",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema privater Haushalt:",
+    "statements": [
+      "Auch eine allein lebende Person bildet einen privaten Haushalt.",
+      "Nur Familien mit Kindern gelten als private Haushalte.",
+      "Studierende in einer gemeinsamen Wohngemeinschaft bilden gemeinsam einen privaten Haushalt.",
+      "In jedem privaten Haushalt treten täglich viele Bedürfnisse auf – unabhängig von der Zahl der Personen.",
+      "Wer allein wohnt, ist kein Teil der Wirtschaft, weil ein Haushalt mindestens zwei Personen braucht."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Alleinwohnen ändert den Status nicht. Dazu zählen eine Person, die allein in einer Wohnung oder in einem Haus lebt, als privaten Haushalt, genau so wie eine Familie oder eine Wohngemeinschaft. Entscheidend ist die wirtschaftliche Einheit, in der täglich Bedürfnisse auftreten, nicht die Zahl der Mitbewohnerinnen und Mitbewohner. Auch wer allein frühstückt, heizt und zur Arbeit fährt, bleibt damit Teil der Wirtschaft.\n\nDie Aussage ist wahr.",
+      "Kinder sind keine Eintrittskarte in den Haushaltsbegriff. Eine vierköpfige Familie gilt als privater Haushalt, aber ebenso eine allein lebende Person und Studierende in einer Wohngemeinschaft. Die gemeinsame Klammer ist das tägliche Bündel an Bedürfnissen, nicht ein bestimmtes Verwandtschaftsverhältnis. Die Einschränkung auf Familien mit Kindern ist daher zu eng und falsch.\n\nDie Aussage ist falsch.",
+      "Mehrere Studierende unter einem Dach bilden keine Ausnahme vom Haushaltsbegriff. Leben sie in einer Wohngemeinschaft zusammen, gelten sie als ein privater Haushalt, analog zur Familie im Haus und zur allein lebenden Person. Geteilte Miete, Küche und Alltag machen sie zu einer Einheit mit gemeinsamen und individuellen Bedürfnissen nach Nahrung, Wärme, Bildung und Mobilität. Genau diese Einheit meint man mit privatem Haushalt.\n\nDie Aussage ist wahr.",
+      "Nahrung, Wohnung, Wärme, Sicherheit, Schlaf, Körperpflege, Bildung und Mobilität stehen nur als Beispiele. Festzuhalten ist, dass jeder private Haushalt, unabhängig von seiner Zusammensetzung, jeden Tag eine Vielzahl solcher Bedürfnisse hat. Manche davon lassen sich ohne Kauf stillen, viele aber über Produkte und Dienstleistungen. Die tägliche Vielfalt der Bedürfnisse ist also die gemeinsame Ausgangslage aller Haushalte, nicht ein Sonderfall großer Familien.\n\nDie Aussage ist wahr.",
+      "Wirtschaft beginnt nicht erst bei einer Paarbeziehung oder bei der Gründung einer Firma. Jeder Mensch ist Teil eines privaten Haushalts, egal ob allein, in Partnerschaft, Familie oder Wohngemeinschaft. Der allein lebende Mensch hat dieselben grundlegenden Bedürfnislagen wie andere Haushalte: Nahrung, Wohnung, Wärme, Sicherheit, Körperpflege, Bildung, Mobilität. Viele dieser Bedürfnisse erfüllt er über Produkte und Dienstleistungen, die er nicht selbst erstellt, sondern bei Unternehmen nachfragt. Die Mindestgröße von zwei Personen steht so nicht ökonomisch; sie würde Alleinlebende künstlich aus der Wirtschaft herausdefinieren, obwohl sie täglich Güter brauchen oder sich wünschen.\n\nDie Aussage ist falsch."
+    ]
+  },
+  "wisoMathDe": {
+    "title": "Eine Ausschussauswahl",
+    "context": "Ein Club hat 7 Männer und 5 Frauen. Ein Ausschuss von 4 Personen wird zufällig aus den 12 Mitgliedern ausgewählt.",
+    "statements": [
+      "Die Gesamtzahl der möglichen Ausschüsse beträgt 792.",
+      "Es gibt weniger Möglichkeiten, einen Ausschuss mit genau 2 Männern und 2 Frauen zu bilden, als einen Ausschuss mit genau 3 Männern und 1 Frau.",
+      "Die Wahrscheinlichkeit, dass der Ausschuss nur aus Männern besteht, ist kleiner als 5%.",
+      "Die Wahrscheinlichkeit, dass der Ausschuss mindestens eine Frau enthält, ist größer als 90%.",
+      "Die Wahrscheinlichkeit, genau 2 Männer und 2 Frauen auszuwählen, beträgt 14/33."
+    ],
+    "tactical_explanations": [
+      "**A.** → Falsch\n\nAussage A: Die Gesamtzahl der möglichen Ausschüsse beträgt 792. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(\\text{total committees}) = \\binom{12}{4}\n$$\n\n$$\n\\binom{12}{4} = \\dfrac{12!}{4!(12-4)!}\n$$\n\n$$\n\\dfrac{12!}{4!(8)!} = \\dfrac{12 \\cdot 11 \\cdot 10 \\cdot 9}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n12 \\cdot 11 = 132\n$$\n\n$$\n132 \\cdot 10 = 1320\n$$\n\n$$\n1320 \\cdot 9 = 11880\n$$\n\n$$\n\\dfrac{11880}{24} = 495\n$$\n\n$$\n\\binom{12}{4} = 495\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Falsch\n\nAussage B: Es gibt weniger Möglichkeiten, einen Ausschuss mit genau 2 Männern und 2 Frauen zu bilden, als einen Ausschuss mit genau 3 Männern und 1 Frau. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(\\text{2 men, 2 women}) = \\binom{7}{2} \\binom{5}{2}\n$$\n\n$$\n\\binom{7}{2} = \\dfrac{7!}{2!(7-2)!}\n$$\n\n$$\n\\dfrac{7!}{2!(5)!} = \\dfrac{7 \\cdot 6}{1 \\cdot 2}\n$$\n\n$$\n7 \\times 6 = 42\n$$\n\n$$\n\\dfrac{42}{2} = 21\n$$\n\n$$\n\\binom{7}{2} = 21\n$$\n\n$$\n\\binom{5}{2} = \\dfrac{5!}{2!(5-2)!}\n$$\n\n$$\n\\dfrac{5!}{2!(3)!} = \\dfrac{5 \\cdot 4}{1 \\cdot 2}\n$$\n\n$$\n5 \\times 4 = 20\n$$\n\n$$\n\\dfrac{20}{2} = 10\n$$\n\n$$\n\\binom{5}{2} = 10\n$$\n\n$$\nN(\\text{2 men, 2 women}) = 21 \\times 10\n$$\n\n$$\n21 \\times 10 = 210\n$$\n\n$$\nN(\\text{2 men, 2 women}) = 210\n$$\n\n$$\nN(\\text{3 men, 1 woman}) = \\binom{7}{3} \\binom{5}{1}\n$$\n\n$$\n\\binom{7}{3} = \\dfrac{7!}{3!(7-3)!}\n$$\n\n$$\n\\dfrac{7!}{3!(4)!} = \\dfrac{7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n7 \\times 6 = 42\n$$\n\n$$\n42 \\times 5 = 210\n$$\n\n$$\n\\dfrac{210}{6} = 35\n$$\n\n$$\n\\binom{7}{3} = 35\n$$\n\n$$\n\\binom{5}{1} = \\dfrac{5!}{1!(5-1)!}\n$$\n\n$$\n\\binom{5}{1} = 5\n$$\n\n$$\nN(\\text{3 men, 1 woman}) = 35 \\times 5\n$$\n\n$$\n35 \\times 5 = 175\n$$\n\n$$\nN(\\text{3 men, 1 woman}) = 175\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Ausschuss nur aus Männern besteht, ist kleiner als 5%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(\\text{4 men}) = \\binom{7}{4} \\binom{5}{0}\n$$\n\n$$\n\\binom{7}{4} = \\dfrac{7!}{4!(7-4)!}\n$$\n\n$$\n\\dfrac{7!}{4!(3)!} = \\dfrac{7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n7 \\cdot 6 = 42\n$$\n\n$$\n42 \\cdot 5 = 210\n$$\n\n$$\n\\dfrac{210}{6} = 35\n$$\n\n$$\n\\binom{7}{4} = 35\n$$\n\n$$\n\\binom{5}{0} = 1\n$$\n\n$$\n35 \\times 1 = 35\n$$\n\n$$\nN(\\text{4 women}) = \\binom{7}{0} \\binom{5}{4}\n$$\n\n$$\n\\binom{7}{0} = 1\n$$\n\n$$\n\\binom{5}{4} = \\dfrac{5!}{4!(5-4)!}\n$$\n\n$$\n\\binom{5}{4} = 5\n$$\n\n$$\n1 \\times 5 = 5\n$$\n\n$$\nN(\\text{4 men}) = \\binom{7}{4} \\binom{5}{0}\n$$\n\n$$\n35 \\times 1 = 35\n$$\n\n$$\n\\binom{12}{4} = \\dfrac{12!}{4!(12-4)!}\n$$\n\n$$\n\\dfrac{12!}{4!(8)!} = \\dfrac{12 \\cdot 11 \\cdot 10 \\cdot 9}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n12 \\times 11 = 132\n$$\n\n$$\n132 \\times 10 = 1320\n$$\n\n$$\n1320 \\times 9 = 11880\n$$\n\n$$\n\\dfrac{11880}{24} = 495\n$$\n\n$$\n\\binom{12}{4} = 495\n$$\n\n$$\nP(\\text{all men}) = \\frac{N(\\text{4 men})}{N(\\text{total committees})}\n$$\n\n$$\nP(\\text{all men}) = \\frac{35}{495}\n$$\n\n$$\nP(\\text{all men}) \\approx 0.070707\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass der Ausschuss mindestens eine Frau enthält, ist größer als 90%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{at least one woman}) = 1 - P(\\text{all men})\n$$\n\n$$\nP(\\text{at least one woman}) = 1 - \\frac{35}{495}\n$$\n\n$$\nP(\\text{at least one woman}) = \\frac{495 - 35}{495}\n$$\n\n$$\nP(\\text{at least one woman}) = \\frac{460}{495}\n$$\n\n$$\nP(\\text{at least one woman}) \\approx 0.929293\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, genau 2 Männer und 2 Frauen auszuwählen, beträgt 14/33. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{4 women}) = \\binom{7}{0} \\binom{5}{4}\n$$\n\n$$\n\\binom{7}{0} = 1\n$$\n\n$$\n\\binom{5}{4} = \\dfrac{5!}{4!(5-4)!}\n$$\n\n$$\n\\binom{5}{4} = 5\n$$\n\n$$\n1 \\times 5 = 5\n$$\n\n$$\nN(\\text{2 men, 2 women}) = \\binom{7}{2} \\binom{5}{2}\n$$\n\n$$\n\\binom{7}{2} = \\dfrac{7!}{2!(7-2)!}\n$$\n\n$$\n\\dfrac{7!}{2!(5)!} = \\dfrac{7 \\cdot 6}{1 \\cdot 2}\n$$\n\n$$\n7 \\times 6 = 42\n$$\n\n$$\n\\dfrac{42}{2} = 21\n$$\n\n$$\n\\binom{7}{2} = 21\n$$\n\n$$\n\\binom{5}{2} = \\dfrac{5!}{2!(5-2)!}\n$$\n\n$$\n\\dfrac{5!}{2!(3)!} = \\dfrac{5 \\cdot 4}{1 \\cdot 2}\n$$\n\n$$\n5 \\times 4 = 20\n$$\n\n$$\n\\dfrac{20}{2} = 10\n$$\n\n$$\n\\binom{5}{2} = 10\n$$\n\n$$\n21 \\times 10 = 210\n$$\n\n$$\n\\binom{12}{4} = \\dfrac{12!}{4!(12-4)!}\n$$\n\n$$\n\\dfrac{12!}{4!(8)!} = \\dfrac{12 \\cdot 11 \\cdot 10 \\cdot 9}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n12 \\times 11 = 132\n$$\n\n$$\n132 \\times 10 = 1320\n$$\n\n$$\n1320 \\times 9 = 11880\n$$\n\n$$\n\\dfrac{11880}{24} = 495\n$$\n\n$$\n\\binom{12}{4} = 495\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{N(\\text{2 men, 2 women})}{N(\\text{total committees})}\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{210}{495}\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{210 \\div 15}{495 \\div 15}\n$$\n\n$$\nP(\\text{2 men, 2 women}) = \\frac{14}{33}\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . recht . . . . . . . . . . . . . . . . . . . . Ein Komitee von $4$-Leuten soll zufällig aus diesen $12$-Mitgliedern ausgewählt werden. Da die Reihenfolge, in der die Mitglieder für den Ausschuss ausgewählt werden, keine Rolle spielt, handelt es sich bei diesem Problem um Kombinationen. Wir verwenden die Kombinationsformel, bezeichnet als $\\binom{n}{k}$, die die Anzahl der Möglichkeiten berechnet, $ k$ Objekte aus umzuwandeln.\n\nZuerst bestimmen wir die Gesamtzahl der verschiedenen Wege, ein Komitee von $4$ Leuten aus den $12$ verfügbaren Mitgliedern zu bilden. Dies wird als die Größe unseres Probenraums für die Berechnung von Wahrscheinlichkeiten dienen.\nKreis- und kern-\nto to tozellen to to to to to\n$$\nN(\\text{Ausschüsse gesamt}) = 495$$\nAufhint auch zum Ausge afrikanische\n\nAls nächstes, um die Anzahl der Ausschüsse mit einer bestimmten Zusammensetzung (z. Eck) zu finden, wenden wir das Multiplikationsprinzip für Kombinationen an. Um beispielsweise $m$ Männer $7$ und $ w$ Frauen aus $4$ ante, $\\binom{7}{m} \\binom{5}{w}$ auszuwählen. Wire, enseren, sene\n\nFür ein Komitee von $4$, bestehend aus allen Männern (dh $4$ Männer und $0$ Frauen):\n, wenn mich,\n$$\nN(\\text{4 men}) = \\frac{7!}{4!3!} \\times 1 = 35 \\times 1 = 35\n$$\n\nFür einen Ausschuss von $4$, bestehend aus ,K1 und $1$ ()\n, wenn mich,\n$$\nN(\\text{3 men, 1 woman}) = \\frac{7!}{3!4!} \\times \\frac{5!}{1!4!} = 35 \\times 5 = 175\n$$\n\nFür ein Komitee von $4$, bestehend aus $2$ Männern und $2$ Frauen:\n, wenn mich,\n$$\nN(\\text{2 men, 2 women}) = \\frac{7!}{2!5!} \\times \\frac{5!}{2!3!} = 21 \\times 10 = 210\n$$\n\nFür ein Komitee von $4$ bestehend aus $1$ Mann und $12$ Frauen:\n, wenn mich,\n$$\nN(\\text{1 man, 3 women}) = \\frac{7!}{1!6!} \\times \\frac{5!}{3!2!} = 7 \\times 10 = 70\n$$\n\nFür ein Komitee von $7$, das aus allen Frauen besteht (d.h. $0$ Männer und $4$ Frauen).\n, wenn mich,\n$$\nN(\\text{4 women}) = 1 \\times \\frac{5!}{4!1!} = 1 \\times 5 = 5\n$$\n\nDiese Werte"
+  },
+  "german": {
+    "case_id": "DE T.1.01",
+    "title": "Aufgabe 1",
+    "exam_title": "Absätze 1–3",
+    "context": "Die Aussagen prüfen das genaue Verständnis der einleitenden Absätze zur Geschichte und Begründung der Vier-Tage-Woche.",
+    "statements": [
+      "Laut Text war die Fünf-Tage-Woche nie gesetzlich geregelt, sondern bestand ausschließlich als informelle Gewohnheit.",
+      "Der beschriebene britische Versuch erstreckte sich über ein volles Kalenderjahr von Januar bis Dezember 2022.",
+      "Die Beschäftigten im britischen Versuch behielten ihr bisheriges Gehalt in voller Höhe.",
+      "Nach Abschluss des britischen Versuchs kehrte die Mehrheit der beteiligten Betriebe zur alten Regelung zurück.",
+      "Befürworter führen an, ein beträchtlicher Teil des Arbeitstages entfalle auf geringwertige Tätigkeiten wie überflüssige Besprechungen."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Laut Text war die Fünf-Tage-Woche nie gesetzlich geregelt, sondern bestand ausschließlich als informelle Gewohnheit.**\n\nAbsatz 1 beschreibt die Fünf-Tage-Woche gerade nicht als bloße Gepflogenheit: Sie wurde von Gewerkschaften erkämpft und „in zahlreichen Staaten gesetzlich verankert“.\n\nDas Wort „ausschließlich“ richtet hier den Schaden an, weil es zwei im Text genannte Kräfte – gewerkschaftlicher Kampf und Gesetzgebung – auf eine einzige, schwächere reduziert.\n\n**Falle:** Formulierungen wie „nie gesetzlich“ kippen häufig einen Satz, der ausdrücklich von Gesetz oder Politik spricht.\n\nDie Aussage hält dem Text nicht stand, weil Absatz 1 die Arbeitszeitordnung ausdrücklich rechtlich verankert sieht.",
+      "**B) Der beschriebene britische Versuch erstreckte sich über ein volles Kalenderjahr von Januar bis Dezember 2022.**\n\nAbsatz 2 datiert den Versuch „zwischen Juni und Dezember 2022“ und nennt ihn anschließend einen sechsmonatigen Versuch. Das sind sechs Monate, nicht zwölf.\n\nDer Text liefert damit zwei unabhängige Prüfmöglichkeiten: die genannten Monate und die ausdrückliche Dauerangabe.\n\n**Tipp:** Wenn Anfangs- und Endpunkt zugleich mit einer Dauer genannt werden, rechne kurz nach, bevor du entscheidest.\n\nDie Aussage scheitert an der Chronologie, denn Juni bis Dezember ergibt kein volles Kalenderjahr.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 2 und ist daher falsch.",
+      "**C) Die Beschäftigten im britischen Versuch behielten ihr bisheriges Gehalt in voller Höhe.**\n\nAbsatz 2 hält fest, dass die Betriebe auf eine Vier-Tage-Woche umstellten und dabei „hundert Prozent des bisherigen Gehalts beibehielten“.\n\n„Hundert Prozent des bisherigen Gehalts“ und „in voller Höhe“ bezeichnen denselben Sachverhalt in anderen Worten – genau das leistet eine saubere Paraphrase.\n\nEntscheidend ist die gleichzeitige Verbindung von verkürzter Arbeitszeit und unverändertem Entgelt. Die Aussage trifft zu, weil der Text beides ausdrücklich zusammenführt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+      "**D) Nach Abschluss des britischen Versuchs kehrte die Mehrheit der beteiligten Betriebe zur alten Regelung zurück.**\n\nAbsatz 2 berichtet das Gegenteil: „die große Mehrheit der teilnehmenden Betriebe“ entschied sich, das verkürzte Modell fortzuführen, ein erheblicher Teil sogar dauerhaft.\n\nDie Aussage übernimmt Subjekt, Mengenangabe und Zeitpunkt korrekt und dreht allein das Verb um – eine der häufigsten Manipulationen im Sprachverständnis.\n\n**Falle:** Prüfe bei Mehrheitsangaben immer das zugehörige Verb, nicht nur die Größe der Mehrheit.\n\nDie Aussage ist unzutreffend, weil im Text fortgeführt und nicht zurückgekehrt wird.",
+      "**E) Befürworter führen an, ein beträchtlicher Teil des Arbeitstages entfalle auf geringwertige Tätigkeiten wie überflüssige Besprechungen.**\n\nAbsatz 3 schreibt genau dies den Befürwortern zu: Es verschlinge ein beträchtlicher Teil des Arbeitstages „geringwertige Tätigkeiten wie überflüssige Besprechungen“, E-Mail-Korrespondenz und Ablenkung.\n\nDie Aussage bleibt auch in der Zuschreibung korrekt, weil sie die These den Befürwortern zuordnet und nicht als Urteil des Textes ausgibt.\n\nDass nur ein Beispiel aus der Aufzählung zitiert wird, ist unschädlich, da „wie“ eine offene Reihe einleitet. Die Aussage entspricht der in Absatz 3 referierten Position."
+    ],
+    "highlights": [
+      "in zahlreichen Staaten gesetzlich verankert",
+      "zwischen Juni und Dezember 2022",
+      "hundert Prozent des bisherigen Gehalts beibehielten",
+      "die große Mehrheit der teilnehmenden Betriebe, das verkürzte Modell fortzuführen",
+      "geringwertige Tätigkeiten wie überflüssige Besprechungen"
+    ]
+  },
+  "germanPassage": "(1) Die Fünf-Tage-Woche mit vierzig Wochenstunden galt über weite Strecken des zwanzigsten Jahrhunderts als selbstverständliche Ordnung des Erwerbslebens. Sie wurde von Gewerkschaften erkämpft, in zahlreichen Staaten gesetzlich verankert und schließlich so tief in die Wirtschaftskultur eingeschrieben, dass kaum jemand fragte, ob diese Einteilung tatsächlich die produktivste sei. Seit etwa einem Jahrzehnt jedoch stellen Unternehmen, Forschungsinstitute und vereinzelt auch Regierungen diese Annahme offen infrage und erproben eine Vier-Tage-Woche, in der bei vollem Lohnausgleich weniger gearbeitet wird.\n\n(2) Die am häufigsten zitierte Untersuchung stammt aus dem Vereinigten Königreich, wo zwischen Juni und Dezember 2022 über sechzig Unternehmen mit rund dreitausend Beschäftigten auf eine Vier-Tage-Woche umstellten und dabei hundert Prozent des bisherigen Gehalts beibehielten. Am Ende des sechsmonatigen Versuchs entschied sich die große Mehrheit der teilnehmenden Betriebe, das verkürzte Modell fortzuführen; ein erheblicher Teil kündigte an, es dauerhaft einzuführen. Die Beschäftigten berichteten von geringerer Erschöpfung, besserem Schlaf und einer ausgeglicheneren Verbindung von Arbeit und Privatleben, während mehrere Firmen angaben, ihr Umsatz sei im Vergleich zum Vorjahreszeitraum stabil geblieben oder leicht gestiegen.\n\n(3) Befürworter argumentieren, die Vierzigstundenwoche sei nie um tatsächliche Produktivität herum entworfen worden, sondern um die Taktung einer Industriegesellschaft, die auf körperlicher Arbeit und Schichtbetrieb beruhte. In vielen Büroberufen, so ihre These, verschlinge ein beträchtlicher Teil des Arbeitstages geringwertige Tätigkeiten wie überflüssige Besprechungen, ausufernde E-Mail-Korrespondenz und allgemeine Ablenkung; eine kürzere Woche verdichte daher lediglich die eigentliche Leistung, ohne sie zu schmälern.",
+  "germanParagraph": "(2) Die am häufigsten zitierte Untersuchung stammt aus dem Vereinigten Königreich, wo zwischen Juni und Dezember 2022 über sechzig Unternehmen mit rund dreitausend Beschäftigten auf eine Vier-Tage-Woche umstellten und dabei hundert Prozent des bisherigen Gehalts beibehielten. Am Ende des sechsmonatigen Versuchs entschied sich die große Mehrheit der teilnehmenden Betriebe, das verkürzte Modell fortzuführen; ein erheblicher Teil kündigte an, es dauerhaft einzuführen. Die Beschäftigten berichteten von geringerer Erschöpfung, besserem Schlaf und einer ausgeglicheneren Verbindung von Arbeit und Privatleben, während mehrere Firmen angaben, ihr Umsatz sei im Vergleich zum Vorjahreszeitraum stabil geblieben oder leicht gestiegen.",
+  "germanHighlightIndex": 2,
+  "wisoFlashcards": {
+    "Privater Haushalt": {
+      "term": "Privater Haushalt",
+      "explanation": "Wirtschaftliche Grundeinheit, in der eine oder mehrere Personen zusammenleben und täglich Bedürfnisse haben (Nahrung, Wohnung, Bildung, Mobilität usw.) — z. B. Familie, WG oder Alleinlebende."
+    },
+    "Bedürfnisse": {
+      "term": "Bedürfnisse",
+      "explanation": "Wünsche und Erfordernisse der Menschen (z. B. Nahrung, Wärme, Sicherheit, Bildung); viele davon werden durch Güter und Dienstleistungen erfüllt."
+    },
+    "Güter": {
+      "term": "Güter",
+      "explanation": "Oberbegriff für Produkte und Dienstleistungen, die produziert, angeboten, nachgefragt und gekauft werden, um Bedürfnisse zu erfüllen."
+    },
+    "Produkt": {
+      "term": "Produkt",
+      "explanation": "Ein physisches Gut (z. B. Fahrrad, Brot, Kleidung), das hergestellt und angeboten wird."
+    },
+    "Dienstleistung": {
+      "term": "Dienstleistung",
+      "explanation": "Eine nicht-körperliche Leistung (z. B. Reparatur, Haarschnitt, ärztliche Behandlung, Bankberatung)."
+    },
+    "Unternehmen": {
+      "term": "Unternehmen",
+      "explanation": "Organisation, die Güter und/oder Dienstleistungen für Kundinnen und Kunden anbietet (nicht primär für den Eigenbedarf), meist gegen Entgelt; erkennt Bedürfnisse und schafft Nutzen."
+    }
+  },
+  "wisoFlashSectionTitle": "1. Grundbegriffe der Wirtschaft",
+  "bbeFlashcards": {
+    "flashCards": [
+      {
+        "term": "Business",
+        "explanation": "An entity that offers goods and/or services to customers (not primarily for its own needs), usually in exchange for money."
+      },
+      {
+        "term": "Value creation",
+        "explanation": "A business creates value for customers by solving a problem or fulfilling a need better than the customer could alone."
+      },
+      {
+        "term": "Opportunity cost",
+        "explanation": "The (financial) benefit of the next best alternative that is given up in order to choose or achieve something else."
+      }
+    ],
+    "matchTerms": [
+      "Labour",
+      "Land",
+      "Entrepreneurship",
+      "Factors of production"
+    ],
+    "matchCards": {
+      "Labour": {
+        "term": "Labour",
+        "explanation": "All human resources contributed to production."
+      },
+      "Land": {
+        "term": "Land",
+        "explanation": "All natural resources used in production."
+      },
+      "Entrepreneurship": {
+        "term": "Entrepreneurship",
+        "explanation": "The factor of production that brings land, labour, and capital together and takes on business risk."
+      },
+      "Factors of production": {
+        "term": "Factors of production",
+        "explanation": "The resources combined to create goods and services: labour, land, capital, entrepreneurship, and knowledge/technology."
+      },
+      "Capital (factor of production)": {
+        "term": "Capital (factor of production)",
+        "explanation": "Resources such as machinery, plant, vehicles, and financial resources used in production."
+      }
+    },
+    "typesTitle": "3. Types of Businesses",
+    "deckTotal": 147,
+    "coreTitle": "1. Core Economic Concepts"
+  }
+}

@@ -4,7 +4,6 @@ import {
   BBE_EXAM_HUB_PATH,
   BBE_EXAM_HUB_SEGMENTS,
 } from "@/config/bbe-exam-hub";
-import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
 import type { Lang } from "@/lib/i18n/dictionary";
 import {
   getLocaleFromPath,
@@ -13,7 +12,30 @@ import {
   stripLocalePrefix,
   type LocalePrefix,
 } from "@/lib/i18n/locale-path";
-import { getExamById } from "@/lib/mock-exams";
+
+/**
+ * Titles only — never import `@/lib/mock-exams` or flashcard banks here.
+ * Breadcrumbs mount on every page (incl. /login); those modules pull ~1.5MB+ of
+ * sourced mock JSON into the Lovable worker and trip worker_memory_limit.
+ */
+const EXAM_TITLE_BY_ID: Record<string, string> = {
+  "demo-mock": "Demo Mock Exam",
+  "mock-1": "Mock Exam 1",
+  "mock-2": "Mock Exam 2",
+  "mock-3": "Mock Exam 3",
+  "mock-4": "Mock Exam 4",
+  "mock-5": "Mock Exam 5",
+  "mock-6": "Mock Exam 6",
+  "wiso-demo-mock": "WiSo Demo-Probeprüfung",
+  "wiso-mock-1": "WiSo Mock Exam 1",
+};
+
+const SUBJECT_TITLE: Record<string, string> = {
+  economics: "Economics",
+  math: "Math",
+  english: "English",
+  german: "Deutsch",
+};
 
 /** Known URL segment → label. Extend when adding new sections. */
 const SEGMENT_LABELS: Record<string, string> = {
@@ -60,7 +82,6 @@ const SEGMENT_LABELS: Record<string, string> = {
   "answer-sheet": "Answer Sheet",
   parents: "Parents",
   reviews: "Reviews",
-  "how-it-works": "How it works",
   account: "Account",
   practice: "Practice",
   admin: "Admin",
@@ -100,10 +121,6 @@ const WISO_SEGMENT_LABELS: Record<string, string> = {
   mathematics: "Mathematik",
   "economics-german": "Wirtschaft & Deutsch",
 };
-
-const SUBJECT_TITLE: Record<string, string> = Object.fromEntries([
-  ...FLASHCARD_SUBJECTS.map((s) => [s.id, s.title] as const),
-]);
 
 export type BreadcrumbCrumb = {
   label: string;
@@ -147,8 +164,8 @@ function labelForSegment(segment: string, ctx: BreadcrumbContext, wisoStudy = fa
   if (isCustomExamId(decoded)) {
     return ctx.customMockTitle ?? "Custom Mock";
   }
-  const exam = getExamById(decoded);
-  if (exam) return exam.title;
+  const examTitle = EXAM_TITLE_BY_ID[decoded];
+  if (examTitle) return examTitle;
   return prettifySegment(decoded, wisoStudy);
 }
 
@@ -188,7 +205,6 @@ export function buildBreadcrumbs(pathname: string, ctx: BreadcrumbContext = {}):
   if (catalogMock) {
     const examId = decodeURIComponent(catalogMock[1]!);
     const action = catalogMock[2];
-    const exam = getExamById(examId);
     const isDemo = examId === "demo-mock" || examId === "wiso-demo-mock";
     const trail: Omit<BreadcrumbCrumb, "isLast">[] = [
       {
@@ -202,7 +218,7 @@ export function buildBreadcrumbs(pathname: string, ctx: BreadcrumbContext = {}):
             : "/mock-exams",
       },
       {
-        label: exam?.title ?? prettifySegment(examId),
+        label: EXAM_TITLE_BY_ID[examId] ?? prettifySegment(examId),
         to: action
           ? isDemo
             ? examId === "wiso-demo-mock"

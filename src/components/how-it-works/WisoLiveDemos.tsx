@@ -1,8 +1,5 @@
-import { countCards } from "@/data/flashcards";
-import { WISO_ECONOMICS_FLASHCARD_SECTIONS } from "@/data/wiso-economics-flashcards";
-import econCh1 from "@/data/wiso-economics-cases-ch1-subtopics.json";
-import mathDe12 from "@/data/wiso/math-de-ch12.json";
-import germanTexts from "@/data/wiso/german/texts.json";
+import { useEffect, useState } from "react";
+import seeds from "@/data/marketing-demo-seeds.json";
 import {
   WISO_FLASHCARD_UI,
   WISO_MATCHING_UI,
@@ -14,7 +11,7 @@ import {
 } from "@/lib/wiso-study-ui";
 import { getWisoCustomMockChapters } from "@/data/wiso-custom-mock-catalog";
 import { WISO_MATH_COURSE_THEORY } from "@/data/wiso-math-course-theory";
-import { buildWisoMockExam1Questions } from "@/lib/wiso-mock-exam-1-content";
+import type { ExamQuestion } from "@/lib/mock-exams";
 import { CourseEconDemo } from "./CourseEconDemo";
 import { CourseEnglishDemo } from "./CourseEnglishDemo";
 import { CourseMathDemo } from "./CourseMathDemo";
@@ -35,100 +32,48 @@ import {
 const ECON_MARKS = [0, 2];
 const GERMAN_MARKS = [2, 4];
 
-type EconRaw = {
-  case_id: string;
-  title: string;
-  context: string;
-  statements: string[];
-  answer_key: boolean[];
-  tactical_explanations: string[];
-};
-
-const econRaw = (econCh1 as EconRaw[])[0];
-if (!econRaw) throw new Error("WiSo economics demo task missing");
-
 const WISO_ECON: CourseTask = {
-  caseId: econRaw.case_id,
-  title: econRaw.title,
-  context: econRaw.context,
-  statements: econRaw.statements,
-  answerKey: econRaw.answer_key,
-  explanations: econRaw.tactical_explanations,
+  caseId: seeds.wisoEcon.case_id,
+  title: seeds.wisoEcon.title,
+  context: seeds.wisoEcon.context,
+  statements: seeds.wisoEcon.statements,
+  answerKey: seeds.wisoEcon.answer_key,
+  explanations: seeds.wisoEcon.tactical_explanations,
   chapter: "Kapitel 1.1 · Jeder Mensch ist Teil der Wirtschaft",
 };
 
-type MathDe = {
-  title: string;
-  context: string;
-  statements: string[];
-  tactical_explanations: string[];
-};
-
-const mathRaw = (mathDe12 as Record<string, MathDe>)["MATH 12.01"];
-if (!mathRaw) throw new Error("WiSo math demo task missing");
-
 const WISO_MATH: CourseTask = {
   caseId: "MATH 12.01",
-  title: mathRaw.title,
-  context: mathRaw.context,
-  statements: mathRaw.statements,
+  title: seeds.wisoMathDe.title,
+  context: seeds.wisoMathDe.context,
+  statements: seeds.wisoMathDe.statements,
   answerKey: COURSE_MATH.answerKey,
-  explanations: mathRaw.tactical_explanations,
+  explanations: seeds.wisoMathDe.tactical_explanations,
   chapter: "Kapitel 12 · Elementare Wahrscheinlichkeitsrechnung",
 };
 
-type GermanFile = {
-  subsections: { id: string; title: string; passage?: string }[];
-  tasks: {
-    case_id: string;
-    title: string;
-    exam_title?: string;
-    context: string;
-    statements: string[];
-    answer_key: boolean[];
-    tactical_explanations: string[];
-    highlights?: string[];
-    subsection: string;
-  }[];
-};
-
-const german = germanTexts as GermanFile;
-const germanTask = german.tasks.find((task) => task.case_id === "DE T.1.01");
-const germanPassage = german.subsections.find((section) => section.id === "t.1")?.passage;
-if (!germanTask || !germanPassage) throw new Error("WiSo German demo task missing");
-
-const GERMAN_SHOW = 2;
-const GERMAN_HIGHLIGHT = germanTask.highlights?.[GERMAN_SHOW] ?? "";
-const GERMAN_PARAGRAPH =
-  germanPassage.split(/\n\n/).find((paragraph) => paragraph.includes(GERMAN_HIGHLIGHT)) ??
-  germanPassage.split(/\n\n/).slice(0, 3).join("\n\n");
+const GERMAN_SHOW = seeds.germanHighlightIndex;
+const GERMAN_HIGHLIGHT = seeds.german.highlights?.[GERMAN_SHOW] ?? "";
+const GERMAN_PARAGRAPH = seeds.germanParagraph;
 
 const WISO_GERMAN: CourseTask = {
-  caseId: germanTask.case_id,
-  title: germanTask.exam_title || germanTask.title,
-  context: germanTask.context,
-  statements: germanTask.statements,
-  answerKey: germanTask.answer_key,
-  explanations: germanTask.tactical_explanations,
+  caseId: seeds.german.case_id,
+  title: seeds.german.exam_title || seeds.german.title,
+  context: seeds.german.context,
+  statements: seeds.german.statements,
+  answerKey: seeds.german.answer_key,
+  explanations: seeds.german.tactical_explanations,
   chapter: "Texte · Die Vier-Tage-Woche",
 };
 
-const ECON_SECTION = WISO_ECONOMICS_FLASHCARD_SECTIONS[0];
-if (!ECON_SECTION) throw new Error("WiSo flashcard section missing");
-
-function cardOrThrow(term: string) {
-  const card = WISO_ECONOMICS_FLASHCARD_SECTIONS.flatMap((section) => section.cards).find(
-    (item) => item.term === term,
-  );
-  if (!card) throw new Error(`WiSo flashcard missing: ${term}`);
-  return card;
-}
+const ECON_SECTION_TITLE = seeds.wisoFlashSectionTitle;
+const card = (term: keyof typeof seeds.wisoFlashcards) => seeds.wisoFlashcards[term];
 
 const FLASH_TERMS = ["Privater Haushalt", "Bedürfnisse", "Güter"] as const;
-const FLASH_CARDS = FLASH_TERMS.map((term) => cardOrThrow(term));
+const FLASH_CARDS = FLASH_TERMS.map((term) => card(term));
 
 const MATCH_TERMS = ["Produkt", "Dienstleistung", "Güter", "Unternehmen"] as const;
-const MATCH_PAIRS = MATCH_TERMS.map((term, id) => ({ id, ...cardOrThrow(term) }));
+const MATCH_PAIRS = MATCH_TERMS.map((term, id) => ({ id, ...card(term) }));
 const MATCH_RIGHT = [1, 0, 3, 2];
 
 const FLASH_COPY: DemoFlashCopy = {
@@ -169,7 +114,6 @@ const TUTOR_COPY: DemoTutorCopy = {
   asking: (n) => `Tutor Bot · F${n}`,
 };
 
-const WISO_EXAM_QUESTIONS = buildWisoMockExam1Questions();
 const WISO_BUILDER_CHAPTERS = getWisoCustomMockChapters("economics").slice(0, 3);
 
 const DEFINE_TERMS = ["Produkt", "Dienstleistung", "Güter", "Unternehmen"] as const;
@@ -178,24 +122,27 @@ const TUTOR_QUESTIONS = [
   {
     mode: "define" as const,
     prompt: WISO_TUTOR_PROMPTS.define,
-    stem: cardOrThrow("Produkt").term,
-    choices: DEFINE_TERMS.map((term) => cardOrThrow(term).explanation),
+    stem: card("Produkt").term,
+    choices: DEFINE_TERMS.map((term) => card(term).explanation),
     correct: 0,
     revealTerm: "Produkt",
-    revealExplanation: cardOrThrow("Produkt").explanation,
-    sectionTitle: ECON_SECTION.title,
+    revealExplanation: card("Produkt").explanation,
+    sectionTitle: ECON_SECTION_TITLE,
   },
   {
     mode: "identify" as const,
     prompt: WISO_TUTOR_PROMPTS.identify,
-    stem: cardOrThrow("Dienstleistung").explanation,
+    stem: card("Dienstleistung").explanation,
     choices: ["Produkt", "Unternehmen", "Dienstleistung", "Güter"],
     correct: 2,
     revealTerm: "Dienstleistung",
-    revealExplanation: cardOrThrow("Dienstleistung").explanation,
-    sectionTitle: ECON_SECTION.title,
+    revealExplanation: card("Dienstleistung").explanation,
+    sectionTitle: ECON_SECTION_TITLE,
   },
 ];
+
+/** Demo flash deck size — keep UI stable without loading the full WiSo bank. */
+const WISO_FLASH_DECK_TOTAL = 277;
 
 export function WisoHowItWorksDemo({
   tab,
@@ -217,14 +164,7 @@ export function WisoHowItWorksDemo({
     );
   }
   if (tab === "mock-exams") {
-    return (
-      <CourseMockExamDemo
-        questions={WISO_EXAM_QUESTIONS}
-        copy={DE_MOCK_EXAM_COPY}
-        rest={rest}
-        lockCopy
-      />
-    );
+    return <WisoMockExamDemo rest={rest} />;
   }
   if (tab === "mock-builder") {
     return (
@@ -243,7 +183,7 @@ export function WisoHowItWorksDemo({
         <CourseMatchDemo
           pairs={MATCH_PAIRS}
           rightOrder={MATCH_RIGHT}
-          topic={ECON_SECTION.title}
+          topic={ECON_SECTION_TITLE}
           copy={MATCH_COPY}
           rest={rest}
           lockCopy
@@ -258,8 +198,8 @@ export function WisoHowItWorksDemo({
     return (
       <CourseFlashDemo
         cards={FLASH_CARDS}
-        deckTotal={countCards(WISO_ECONOMICS_FLASHCARD_SECTIONS)}
-        topic={ECON_SECTION.title}
+        deckTotal={WISO_FLASH_DECK_TOTAL}
+        topic={ECON_SECTION_TITLE}
         copy={FLASH_COPY}
         rest={rest}
         lockCopy
@@ -284,12 +224,32 @@ export function WisoHowItWorksDemo({
       />
     );
   }
+  return <CourseEconDemo task={WISO_ECON} markAt={ECON_MARKS} rest={rest} lockCopy />;
+}
+
+/** Load WiSo mock-1 only when the mock-exams tab is shown. */
+function WisoMockExamDemo({ rest }: { rest: number }) {
+  const [questions, setQuestions] = useState<ExamQuestion[] | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    void import("@/lib/wiso-mock-exam-1-content").then((mod) => {
+      if (!cancelled) setQuestions(mod.buildWisoMockExam1Questions());
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  if (!questions) {
+    return (
+      <div className="flex h-full min-h-[240px] items-center justify-center text-sm text-muted-foreground">
+        …
+      </div>
+    );
+  }
+
   return (
-    <CourseEconDemo
-      task={WISO_ECON}
-      markAt={ECON_MARKS}
-      rest={rest}
-      lockCopy
-    />
+    <CourseMockExamDemo questions={questions} copy={DE_MOCK_EXAM_COPY} rest={rest} lockCopy />
   );
 }

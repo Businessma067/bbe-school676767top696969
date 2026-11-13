@@ -1,30 +1,22 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { Check, Layers, ThumbsDown, ThumbsUp } from "lucide-react";
 import { FlashcardMath } from "@/components/FlashcardMath";
-import { countCards, ECONOMICS_FLASHCARD_SECTIONS } from "@/data/flashcards";
+import seeds from "@/data/marketing-demo-seeds.json";
 import { TUTOR_CORRECT, TUTOR_GREETINGS } from "@/lib/tutor-exam";
 import { cn } from "@/lib/utils";
 import { howItWorksGlide, useDemoPlayer, type DemoPlayerApi } from "@/components/news/demos/useDemoPlayer";
 import { CourseFrame } from "./CourseFrame";
 
 const ACCENT = "#c8763a";
-const DECK_TOTAL = countCards(ECONOMICS_FLASHCARD_SECTIONS);
+const DECK_TOTAL = seeds.bbeFlashcards.deckTotal;
+const TYPES_TITLE = seeds.bbeFlashcards.typesTitle;
 
-function sectionOrThrow(id: string) {
-  const section = ECONOMICS_FLASHCARD_SECTIONS.find((item) => item.id === id);
-  if (!section) throw new Error(`Economics flashcard section missing: ${id}`);
-  return section;
-}
+const FLASH_CARDS = seeds.bbeFlashcards.flashCards;
 
-const CORE = sectionOrThrow("econ-1");
-const TYPES = sectionOrThrow("econ-3");
-
-const FLASH_CARDS = CORE.cards.slice(0, 3);
-
-const MATCH_TERMS = ["Labour", "Land", "Entrepreneurship", "Factors of production"] as const;
+const MATCH_TERMS = seeds.bbeFlashcards.matchTerms;
 
 function pairByTerm(term: string) {
-  const card = TYPES.cards.find((item) => item.term === term);
+  const card = seeds.bbeFlashcards.matchCards[term as keyof typeof seeds.bbeFlashcards.matchCards];
   if (!card) throw new Error(`Missing flashcard: ${term}`);
   return card;
 }
@@ -55,7 +47,7 @@ function tutorDefine(term: string, choiceTerms: string[]): TutorQ {
     correct: choiceTerms.indexOf(term),
     revealTerm: stem.term,
     revealExplanation: stem.explanation,
-    sectionTitle: TYPES.title,
+    sectionTitle: TYPES_TITLE,
   };
 }
 
@@ -69,7 +61,7 @@ function tutorIdentify(term: string, choiceTerms: string[]): TutorQ {
     correct: choiceTerms.indexOf(term),
     revealTerm: stem.term,
     revealExplanation: stem.explanation,
-    sectionTitle: TYPES.title,
+    sectionTitle: TYPES_TITLE,
   };
 }
 
@@ -262,7 +254,7 @@ function TutorFace({ mood }: { mood: "idle" | "happy" | "sad" }) {
 export function CourseFlashDemo({
   cards = FLASH_CARDS,
   deckTotal = DECK_TOTAL,
-  topic = CORE.title,
+  topic = seeds.bbeFlashcards.coreTitle,
   copy = EN_FLASH,
   rest = 1,
   lockCopy = false,
@@ -484,7 +476,7 @@ function boardEdge(board: HTMLElement, el: HTMLElement, edge: "left" | "right") 
 export function CourseMatchDemo({
   pairs = MATCH_PAIRS,
   rightOrder = MATCH_RIGHT,
-  topic = TYPES.title,
+  topic = TYPES_TITLE,
   copy = EN_MATCH,
   rest = 1,
   lockCopy = false,

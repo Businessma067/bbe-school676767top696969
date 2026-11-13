@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { Calculator, Check, FileSpreadsheet, Flag, PenLine, StickyNote, Timer } from "lucide-react";
 import { AuthNav } from "@/components/AuthNav";
@@ -12,7 +12,6 @@ import { QuestionPalette } from "@/components/mock-exam/QuestionPalette";
 import { SUBJECT_META, subjectLabel } from "@/config/scoring-config";
 import { guestNavItems } from "@/config/site-nav";
 import { buildExamAnalytics } from "@/lib/mock-exam-analytics";
-import { buildMockExam1Questions } from "@/lib/mock-exam-1-content";
 import { formatExamTime, formatQuestionTime } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -23,7 +22,6 @@ import { glideFrame, glideRead } from "./course-motion";
 
 const DWELL = 40;
 const EXAM_SECONDS = 2 * 60 * 60;
-const BBE_QUESTIONS = buildMockExam1Questions();
 
 /**
  * A finished 34-question sitting. Reading runs longer than a short case,
@@ -33,10 +31,6 @@ const EXAM_TIMES = [
   128, 152, 114, 176, 139, 163, 102, 192, 133, 147, 246, 268, 214, 287, 233, 122, 101, 134, 111,
   144, 118, 214, 248, 192, 286, 231, 180, 322, 218, 254, 201, 268, 175, 234,
 ] as const;
-
-if (EXAM_TIMES.length !== BBE_QUESTIONS.length) {
-  throw new Error("Mock exam demo needs one time for every question");
-}
 
 export type MockExamDemoCopy = {
   locale: "en" | "de";
@@ -155,7 +149,7 @@ type Phase = "exam" | "check" | "stats" | "tasks";
 export function CourseMockExamDemo({
   rest = 1,
   lockCopy = false,
-  questions = BBE_QUESTIONS,
+  questions: questionsProp,
   copy = EN_EXAM,
 }: {
   rest?: number;
@@ -163,6 +157,54 @@ export function CourseMockExamDemo({
   questions?: ExamQuestion[];
   copy?: MockExamDemoCopy;
 } = {}) {
+  const [bbeQuestions, setBbeQuestions] = useState<ExamQuestion[] | null>(null);
+
+  useEffect(() => {
+    if (questionsProp) return;
+    let cancelled = false;
+    void import("@/lib/mock-exam-1-content").then((mod) => {
+      if (cancelled) return;
+      const loaded = mod.buildMockExam1Questions();
+      if (EXAM_TIMES.length !== loaded.length) {
+        throw new Error("Mock exam demo needs one time for every question");
+      }
+      setBbeQuestions(loaded);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [questionsProp]);
+
+  const questions = questionsProp ?? bbeQuestions;
+  if (!questions) {
+    return (
+      <div className="flex h-full min-h-[240px] items-center justify-center text-sm text-muted-foreground">
+        …
+      </div>
+    );
+  }
+
+  return (
+    <CourseMockExamDemoReady
+      rest={rest}
+      lockCopy={lockCopy}
+      questions={questions}
+      copy={copy}
+    />
+  );
+}
+
+function CourseMockExamDemoReady({
+  rest,
+  lockCopy,
+  questions,
+  copy,
+}: {
+  rest: number;
+  lockCopy: boolean;
+  questions: ExamQuestion[];
+  copy: MockExamDemoCopy;
+}) {
   const plan = useMemo(() => paperPlan(questions), [questions]);
   const completed = useMemo(() => completedAnswers(questions), [questions]);
   const guestNav = useMemo(() => guestNavItems(copy.navTrack), [copy.navTrack]);

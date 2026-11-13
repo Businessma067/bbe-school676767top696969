@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { ChevronLeft, ChevronRight, ArrowRight, Flame } from "lucide-react";
 import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
@@ -13,7 +13,6 @@ import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
-import { CourseHighlightsSection } from "@/components/CourseHighlightsSection";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -22,6 +21,12 @@ import { pinnedNote } from "@/data/acceptance-notes";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { storeExamTrack } from "@/lib/exam-track";
+
+const CourseHighlightsSection = lazy(() =>
+  import("@/components/CourseHighlightsSection").then((m) => ({
+    default: m.CourseHighlightsSection,
+  })),
+);
 
 export const Route = createFileRoute("/bbe")({
   head: () => ({
@@ -113,7 +118,9 @@ export function BbeLandingPage() {
             </div>
 
             <div className="mx-auto mt-8 max-w-5xl sm:mt-10">
-              <CourseHighlightsSection track="bbe" variant="landing" />
+              <Suspense fallback={<div className="min-h-[16rem]" aria-hidden />}>
+                <CourseHighlightsSection track="bbe" variant="landing" />
+              </Suspense>
             </div>
           </div>
         </section>
