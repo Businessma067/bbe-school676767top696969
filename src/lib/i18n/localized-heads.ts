@@ -1,49 +1,5 @@
 import { getNewsPost } from "@/data/news/posts";
 import { isNewsPostPath, type LocalizablePath } from "./locale-path";
-import { newsPostHead } from "@/routes/news.$slug";
-
-import { Route as BbeAdmissionRoute } from "@/routes/bbe-admission";
-import { Route as BbeEconomicsEnglishRoute } from "@/routes/bbe-economics-english";
-import { Route as BbeEntranceExamRoute } from "@/routes/bbe-entrance-exam";
-import { Route as BbeExamPreparationRoute } from "@/routes/bbe-exam-preparation";
-import { Route as BbeExamScoringRoute } from "@/routes/bbe-exam-scoring";
-import { Route as BbeMathematicsRoute } from "@/routes/bbe-mathematics";
-import { Route as BbeVsWisoRoute } from "@/routes/bbe-vs-wiso";
-import { Route as BbeLandingRoute } from "@/routes/bbe";
-import { Route as WuViennaRoute } from "@/routes/wu-vienna";
-import { Route as HybridLandingRoute } from "@/routes/hybrid.index";
-import { Route as WisoLandingRoute } from "@/routes/wiso.index";
-import { Route as WisoEntranceExamRoute } from "@/routes/wiso.entrance-exam";
-import { Route as WisoExamScoringRoute } from "@/routes/wiso.exam-scoring";
-import { Route as WisoMathematicsRoute } from "@/routes/wiso.mathematics";
-import { Route as WisoEconomicsGermanRoute } from "@/routes/wiso.economics-german";
-import { Route as WisoExamPreparationRoute } from "@/routes/wiso.exam-preparation";
-import { Route as WisoAdmissionRoute } from "@/routes/wiso.admission";
-import { Route as WisoWuViennaRoute } from "@/routes/wiso.wu-vienna";
-import { Route as WisoFullCourseRoute } from "@/routes/wiso.products.full-course";
-import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice.index";
-import { Route as WisoDemoMockRoute } from "@/routes/wiso.demo-mock";
-import { Route as WisoMockExamsRoute } from "@/routes/wiso.mock-exams";
-import { Route as DemoPracticeRoute } from "@/routes/demo-practice.index";
-import { Route as DemoMockRoute } from "@/routes/demo-mock";
-import { Route as AnswerSheetRoute } from "@/routes/features.answer-sheet";
-import { Route as ImportantFeaturesRoute } from "@/routes/important-features";
-import { Route as ParentsRoute } from "@/routes/parents";
-import { Route as ReviewsRoute } from "@/routes/reviews";
-import { Route as HowItWorksRoute } from "@/routes/how-it-works";
-import { Route as NewsRoute } from "@/routes/news";
-import { Route as DemoPracticeProductRoute } from "@/routes/products.demo-practice";
-import { Route as FullCourseRoute } from "@/routes/products.full-course";
-import { Route as HybridCourseProductRoute } from "@/routes/products.hybrid-course";
-import { Route as ProductsRoute } from "@/routes/products.index";
-import { Route as TermsRoute } from "@/routes/terms";
-import { Route as PrivacyRoute } from "@/routes/privacy";
-import { Route as LoginRoute } from "@/routes/login";
-import { Route as SignupRoute } from "@/routes/signup";
-import { Route as ResetPasswordRoute } from "@/routes/reset-password";
-import { Route as AccountRoute } from "@/routes/account";
-import { Route as PaymentSuccessRoute } from "@/routes/payment.success";
-import { Route as PaymentFailedRoute } from "@/routes/payment.failed";
 
 type HeadFnResult = {
   meta?: Array<Record<string, string>>;
@@ -61,58 +17,83 @@ function headFrom(route: unknown): HeadFnResult | undefined {
   return callHead(route as { options: { head?: (ctx: never) => unknown } });
 }
 
-const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult | undefined>> = {
-  "/bbe": () => headFrom(BbeLandingRoute),
-  "/bbe-entrance-exam": () => headFrom(BbeEntranceExamRoute),
-  "/bbe-exam-scoring": () => headFrom(BbeExamScoringRoute),
-  "/bbe-mathematics": () => headFrom(BbeMathematicsRoute),
-  "/bbe-economics-english": () => headFrom(BbeEconomicsEnglishRoute),
-  "/bbe-exam-preparation": () => headFrom(BbeExamPreparationRoute),
-  "/bbe-admission": () => headFrom(BbeAdmissionRoute),
-  "/bbe-vs-wiso": () => headFrom(BbeVsWisoRoute),
-  "/wu-vienna": () => headFrom(WuViennaRoute),
-  "/hybrid": () => headFrom(HybridLandingRoute),
-  "/wiso": () => headFrom(WisoLandingRoute),
-  "/wiso/entrance-exam": () => headFrom(WisoEntranceExamRoute),
-  "/wiso/exam-scoring": () => headFrom(WisoExamScoringRoute),
-  "/wiso/mathematics": () => headFrom(WisoMathematicsRoute),
-  "/wiso/economics-german": () => headFrom(WisoEconomicsGermanRoute),
-  "/wiso/exam-preparation": () => headFrom(WisoExamPreparationRoute),
-  "/wiso/admission": () => headFrom(WisoAdmissionRoute),
-  "/wiso/wu-vienna": () => headFrom(WisoWuViennaRoute),
-  "/wiso/products": () => headFrom(ProductsRoute),
-  "/wiso/products/full-course": () => headFrom(WisoFullCourseRoute),
-  "/wiso/demo-practice": () => headFrom(WisoDemoPracticeRoute),
-  "/wiso/demo-mock": () => headFrom(WisoDemoMockRoute),
-  "/wiso/mock-exams": () => headFrom(WisoMockExamsRoute),
-  "/parents": () => headFrom(ParentsRoute),
-  "/reviews": () => headFrom(ReviewsRoute),
-  "/how-it-works": () => headFrom(HowItWorksRoute),
-  "/news": () => headFrom(NewsRoute),
-  "/important-features": () => headFrom(ImportantFeaturesRoute),
-  "/features/answer-sheet": () => headFrom(AnswerSheetRoute),
-  "/terms": () => headFrom(TermsRoute),
-  "/privacy": () => headFrom(PrivacyRoute),
-  "/products": () => headFrom(ProductsRoute),
-  "/products/demo-practice": () => headFrom(DemoPracticeProductRoute),
-  "/products/full-course": () => headFrom(FullCourseRoute),
-  "/products/hybrid-course": () => headFrom(HybridCourseProductRoute),
-  "/demo-practice": () => headFrom(DemoPracticeRoute),
-  "/demo-mock": () => headFrom(DemoMockRoute),
-  "/login": () => headFrom(LoginRoute),
-  "/signup": () => headFrom(SignupRoute),
-  "/reset-password": () => headFrom(ResetPasswordRoute),
-  "/account": () => headFrom(AccountRoute),
-  "/payment/success": () => headFrom(PaymentSuccessRoute),
-  "/payment/failed": () => headFrom(PaymentFailedRoute),
+async function headFromImport(
+  loader: () => Promise<{ Route: unknown }>,
+): Promise<HeadFnResult | undefined> {
+  const mod = await loader();
+  return headFrom(mod.Route);
+}
+
+/**
+ * Import only the English route module whose head we need. Static imports of
+ * every Route previously evaluated all page graphs (including mock banks).
+ */
+const ENGLISH_HEAD_LOADERS: Partial<
+  Record<LocalizablePath, () => Promise<HeadFnResult | undefined>>
+> = {
+  "/bbe": () => headFromImport(() => import("@/routes/bbe")),
+  "/bbe-entrance-exam": () => headFromImport(() => import("@/routes/bbe-entrance-exam")),
+  "/bbe-exam-scoring": () => headFromImport(() => import("@/routes/bbe-exam-scoring")),
+  "/bbe-mathematics": () => headFromImport(() => import("@/routes/bbe-mathematics")),
+  "/bbe-economics-english": () =>
+    headFromImport(() => import("@/routes/bbe-economics-english")),
+  "/bbe-exam-preparation": () =>
+    headFromImport(() => import("@/routes/bbe-exam-preparation")),
+  "/bbe-admission": () => headFromImport(() => import("@/routes/bbe-admission")),
+  "/bbe-vs-wiso": () => headFromImport(() => import("@/routes/bbe-vs-wiso")),
+  "/wu-vienna": () => headFromImport(() => import("@/routes/wu-vienna")),
+  "/hybrid": () => headFromImport(() => import("@/routes/hybrid.index")),
+  "/wiso": () => headFromImport(() => import("@/routes/wiso.index")),
+  "/wiso/entrance-exam": () => headFromImport(() => import("@/routes/wiso.entrance-exam")),
+  "/wiso/exam-scoring": () => headFromImport(() => import("@/routes/wiso.exam-scoring")),
+  "/wiso/mathematics": () => headFromImport(() => import("@/routes/wiso.mathematics")),
+  "/wiso/economics-german": () =>
+    headFromImport(() => import("@/routes/wiso.economics-german")),
+  "/wiso/exam-preparation": () =>
+    headFromImport(() => import("@/routes/wiso.exam-preparation")),
+  "/wiso/admission": () => headFromImport(() => import("@/routes/wiso.admission")),
+  "/wiso/wu-vienna": () => headFromImport(() => import("@/routes/wiso.wu-vienna")),
+  "/wiso/products": () => headFromImport(() => import("@/routes/products.index")),
+  "/wiso/products/full-course": () =>
+    headFromImport(() => import("@/routes/wiso.products.full-course")),
+  "/wiso/demo-practice": () =>
+    headFromImport(() => import("@/routes/wiso.demo-practice.index")),
+  "/wiso/demo-mock": () => headFromImport(() => import("@/routes/wiso.demo-mock")),
+  "/wiso/mock-exams": () => headFromImport(() => import("@/routes/wiso.mock-exams")),
+  "/parents": () => headFromImport(() => import("@/routes/parents")),
+  "/reviews": () => headFromImport(() => import("@/routes/reviews")),
+  "/news": () => headFromImport(() => import("@/routes/news")),
+  "/important-features": () => headFromImport(() => import("@/routes/important-features")),
+  "/features/answer-sheet": () =>
+    headFromImport(() => import("@/routes/features.answer-sheet")),
+  "/terms": () => headFromImport(() => import("@/routes/terms")),
+  "/privacy": () => headFromImport(() => import("@/routes/privacy")),
+  "/products": () => headFromImport(() => import("@/routes/products.index")),
+  "/products/demo-practice": () =>
+    headFromImport(() => import("@/routes/products.demo-practice")),
+  "/products/full-course": () =>
+    headFromImport(() => import("@/routes/products.full-course")),
+  "/products/hybrid-course": () =>
+    headFromImport(() => import("@/routes/products.hybrid-course")),
+  "/demo-practice": () => headFromImport(() => import("@/routes/demo-practice.index")),
+  "/demo-mock": () => headFromImport(() => import("@/routes/demo-mock")),
+  "/login": () => headFromImport(() => import("@/routes/login")),
+  "/signup": () => headFromImport(() => import("@/routes/signup")),
+  "/reset-password": () => headFromImport(() => import("@/routes/reset-password")),
+  "/account": () => headFromImport(() => import("@/routes/account")),
+  "/payment/success": () => headFromImport(() => import("@/routes/payment.success")),
+  "/payment/failed": () => headFromImport(() => import("@/routes/payment.failed")),
 };
 
-export function getEnglishHeadForPath(pathname: string): HeadFnResult | undefined {
+export async function getEnglishHeadForPath(
+  pathname: string,
+): Promise<HeadFnResult | undefined> {
   if (isNewsPostPath(pathname)) {
     const slug = pathname.slice("/news/".length);
     if (!getNewsPost(slug)) return undefined;
+    const { newsPostHead } = await import("@/routes/news.$slug");
     return newsPostHead(slug);
   }
-  const getter = ENGLISH_HEAD_BY_PATH[pathname as LocalizablePath];
+  const getter = ENGLISH_HEAD_LOADERS[pathname as LocalizablePath];
   return getter?.();
 }
