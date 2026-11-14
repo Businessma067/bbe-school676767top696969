@@ -1,10 +1,15 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useCallback, useEffect, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
-import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
+
+const PracticeCalculatorInline = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({
+    default: m.PracticeCalculatorInline,
+  })),
+);
 
 export const Route = createFileRoute("/practice")({
   component: () => (
@@ -124,7 +129,9 @@ function PracticePage() {
         <div className="flex items-center justify-between gap-3">
           <h1 className="text-2xl font-bold">Practice</h1>
           <div className="flex items-center gap-2">
-            <PracticeCalculatorInline />
+            <Suspense fallback={null}>
+              <PracticeCalculatorInline />
+            </Suspense>
             {submitted && (
               <div className="rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold">
                 Score: {correctCount}/{statements.length} correct

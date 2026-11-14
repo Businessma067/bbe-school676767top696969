@@ -1,8 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Calculator, Check, Timer, X } from "lucide-react";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath as FlashcardMath } from "@/components/LazyFlashcardMath";
 import { ExplanationProse } from "@/components/ExplanationProse";
-import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { SIM_TASKS, type SimTask } from "@/data/how-it-works-tasks";
 import { cleanExplanation } from "@/lib/clean-explanation";
 import {
@@ -10,6 +9,10 @@ import {
   practiceSubmitButtonClass,
 } from "@/lib/practice-button-styles";
 import { cn } from "@/lib/utils";
+
+const Ti30MathPrint = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.Ti30MathPrint })),
+);
 
 export type SimSubject = "economics" | "math" | "english";
 
@@ -349,7 +352,9 @@ export default function PracticeSimulator({
 
             {calcOpen ? (
               <div className="mb-5 rounded-xl border border-border bg-background p-2">
-                <Ti30MathPrint compact className="w-full" />
+                <Suspense fallback={null}>
+                  <Ti30MathPrint compact className="w-full" />
+                </Suspense>
               </div>
             ) : null}
 

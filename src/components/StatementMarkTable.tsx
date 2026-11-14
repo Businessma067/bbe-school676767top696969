@@ -1,5 +1,5 @@
 import { Check, X } from "lucide-react";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath as FlashcardMath } from "@/components/LazyFlashcardMath";
 import { cn } from "@/lib/utils";
 
 /** Same statement table as Full Course practice and the mock-exam player: mark True, not a True/False pair. */

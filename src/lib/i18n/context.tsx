@@ -2,7 +2,6 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
   useLayoutEffect,
   useMemo,
   useState,
@@ -57,7 +56,10 @@ export function LanguageProvider({
   }, [lang]);
 
   // DE/UK need route-scoped packs; EN warms core+home after idle (not news/wiso).
-  useEffect(() => {
+  // Layout effect starts the fetch before paint so pack merges land ASAP after
+  // the core-stable first paint (see hasStaticTranslation). beforeLoad on
+  // /$lang already awaited the same scopes on the server.
+  useLayoutEffect(() => {
     if (isDictionaryLang(lang)) {
       const path =
         typeof window !== "undefined" ? window.location.pathname : "/";

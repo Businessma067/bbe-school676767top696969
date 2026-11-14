@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Check, X } from "lucide-react";
 
 import { ExplanationProse } from "@/components/ExplanationProse";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath as FlashcardMath } from "@/components/LazyFlashcardMath";
 import { StatementMarkTable } from "@/components/StatementMarkTable";
 import {
   courseHighlightBullets,

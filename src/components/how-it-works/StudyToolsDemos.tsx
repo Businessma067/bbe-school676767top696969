@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { Check, Layers, ThumbsDown, ThumbsUp } from "lucide-react";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath as FlashcardMath } from "@/components/LazyFlashcardMath";
 import seeds from "@/data/marketing-demo-seeds.json";
 import { TUTOR_CORRECT, TUTOR_GREETINGS } from "@/lib/tutor-exam";
 import { cn } from "@/lib/utils";

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
+import { lazy, Suspense, useState } from "react";
 import {
   practiceExplanationToggleClass,
   practiceSubmitButtonClass,
@@ -12,6 +11,10 @@ import { CourseTimedBar } from "./CourseTimedBar";
 import { parkCalcKeys, pressCalcKey, readPanel } from "./course-motion";
 import { COURSE_MATH, type CourseTask } from "./course-tasks";
 import { EN_CHROME, type CourseChrome } from "./course-copy";
+
+const Ti30MathPrint = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.Ti30MathPrint })),
+);
 
 const TASK = COURSE_MATH;
 const KEYS = ["1", "2", "×", "1", "1", "="];
@@ -99,7 +102,9 @@ export function CourseMathDemo({
           {calc ? (
             <div className="pointer-events-none absolute bottom-2 left-2 right-2 top-2 z-[8] sm:left-auto sm:top-[4.5rem] sm:w-[19rem]">
               <div data-d="calc-panel" className="pointer-events-auto h-full min-h-0">
-                <Ti30MathPrint compact hideChrome className="h-full shadow-xl" />
+                <Suspense fallback={null}>
+                  <Ti30MathPrint compact hideChrome className="h-full shadow-xl" />
+                </Suspense>
               </div>
             </div>
           ) : null}

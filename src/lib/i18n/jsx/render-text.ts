@@ -1,6 +1,6 @@
 import { createContext, createElement, useContext, type ReactNode } from "react";
 import { localizeAuto, noteEnglishSource, useAutoDictionaryVersion } from "../auto-translate";
-import { translate, type Lang } from "../dictionary";
+import { hasStaticTranslation, translate, type Lang } from "../dictionary";
 import { useDictionaryPackVersion } from "../dictionary-pack-version";
 import { isAutoLang } from "../languages";
 
@@ -18,8 +18,13 @@ const VERBATIM_SUBTREE_TAGS = new Set(["code", "pre", "svg", "math", "kbd", "sam
 /** Host tags that require plain-string children. */
 const STRING_ONLY_TAGS = new Set(["script", "style", "textarea", "title", "option"]);
 
+/**
+ * Wrap decision must be identical on SSR and the client's first paint.
+ * Never consult lazy-merged packs here — that made /de hydrate I18nText vs
+ * plain strings and white-screen the locale homes.
+ */
 function hasTranslation(text: string): boolean {
-  return translate(text, "de") !== null || translate(text, "uk") !== null;
+  return hasStaticTranslation(text);
 }
 
 function I18nText({ text }: { text: string }) {

@@ -859,3 +859,37 @@ export function translate(text: string, lang: Lang): string | null {
   const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(text) ?? [];
   return `${lead}${hit}${trail}`;
 }
+
+/** Collapsed-key index of sync core only — never grows with lazy packs. */
+const collapsedBaseDictionary: Record<EditedLang, Record<string, string>> = {
+  de: {},
+  uk: {},
+};
+for (const lang of ["de", "uk"] as const) {
+  for (const [key, value] of Object.entries(baseDictionary[lang])) {
+    const collapsed = key.replace(/\s+/g, " ").trim();
+    if (collapsed && !(collapsed in collapsedBaseDictionary[lang])) {
+      collapsedBaseDictionary[lang][collapsed] = value;
+    }
+  }
+}
+
+/**
+ * Whether JSX should wrap a string in `I18nText`.
+ * Uses ONLY the sync `baseDictionary` so SSR (packs already merged in
+ * beforeLoad) and the client's first paint (packs not yet in module state)
+ * build the same React tree. Lazy-pack hits still translate via `translate`
+ * inside already-wrapped nodes once packs merge, and via PageTranslator
+ * for strings that are pack-only.
+ */
+export function hasStaticTranslation(text: string): boolean {
+  const trimmed = text.trim();
+  if (!trimmed) return false;
+  const collapsed = trimmed.replace(/\s+/g, " ");
+  for (const lang of ["de", "uk"] as const) {
+    const hit =
+      baseDictionary[lang][trimmed] ?? collapsedBaseDictionary[lang][collapsed];
+    if (typeof hit === "string" && hit) return true;
+  }
+  return false;
+}

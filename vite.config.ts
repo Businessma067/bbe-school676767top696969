@@ -81,31 +81,12 @@ export default defineConfig({
             if (id.includes("node_modules/recharts") || id.includes("node_modules/d3-")) {
               return "charts";
             }
+            // Only vendor supabase — never force app modules (JSX/i18n) into a named chunk.
             if (
               id.includes("node_modules/@supabase/") ||
-              id.includes("node_modules\\@supabase\\") ||
-              id.includes("/integrations/supabase/") ||
-              id.includes("\\integrations\\supabase\\")
+              id.includes("node_modules\\@supabase\\")
             ) {
               return "supabase-client";
-            }
-            if (id.includes("FloatingAssistant")) {
-              return "floating-assistant";
-            }
-            if (
-              id.includes("CalendlyInlineEmbed") ||
-              id.includes("BookCallSection") ||
-              id.includes("BookCallTab")
-            ) {
-              return "calendly";
-            }
-            // Keep jsx runtime out of the i18n chunk — it is the app-wide import source.
-            if (
-              (id.includes("/src/lib/i18n/") || id.includes("\\src\\lib\\i18n\\")) &&
-              !id.includes("/src/lib/i18n/jsx") &&
-              !id.includes("\\src\\lib\\i18n\\jsx")
-            ) {
-              return "i18n";
             }
             if (
               id.includes("Ti30MathPrint") ||
@@ -114,7 +95,8 @@ export default defineConfig({
             ) {
               return "ti30-math";
             }
-            if (id.includes("FlashcardMath")) {
+            // Exact FlashcardMath.tsx only — do not swallow LazyFlashcardMath.
+            if (/[/\\]FlashcardMath\.tsx$/.test(id)) {
               return "flashcard-math";
             }
             if (
@@ -170,7 +152,8 @@ export default defineConfig({
             if (wisoMock) return `wiso-mock-exam-${wisoMock[1]}`;
             const bbeMock = id.match(/[/\\]mock-exam-(\d+|demo)(?:-content|-sourced)/);
             if (bbeMock) return `mock-exam-${bbeMock[1]}`;
-            // Heavy i18n packs — separate async chunks (not in EN first paint).
+            // Heavy i18n packs MUST be matched BEFORE the broad i18n core rule,
+            // otherwise Rollup collapses every pack into the sync "i18n" chunk.
             if (
               id.includes("/src/lib/i18n/generated") ||
               id.includes("\\src\\lib\\i18n\\generated")
@@ -201,6 +184,15 @@ export default defineConfig({
               id.includes("\\src\\data\\acceptance-notes")
             ) {
               return "i18n-acceptance";
+            }
+            // Core dictionary/context only — never Calendly / BookCall / FloatingAssistant
+            // app modules (those pull JSX runtime and create calendly↔i18n cycles).
+            if (
+              (id.includes("/src/lib/i18n/") || id.includes("\\src\\lib\\i18n\\")) &&
+              !id.includes("/src/lib/i18n/jsx") &&
+              !id.includes("\\src\\lib\\i18n\\jsx")
+            ) {
+              return "i18n";
             }
           },
         },

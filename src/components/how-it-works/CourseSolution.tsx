@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { ExplanationProse } from "@/components/ExplanationProse";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath as FlashcardMath } from "@/components/LazyFlashcardMath";
 import { practiceInlineLocateButtonClass } from "@/lib/practice-button-styles";
 import { cleanExplanation } from "@/lib/clean-explanation";
 import { englishBankExplanation, evenExplanation, fullExplanation } from "./course-motion";

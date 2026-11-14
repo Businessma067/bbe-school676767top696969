@@ -1,12 +1,17 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { buildLocaleHead } from "@/lib/i18n/locale-head";
 import { isLocalePrefix } from "@/lib/i18n/locale-path";
-import { getCachedLocalizedPage, loadLocalizedPage } from "@/lib/i18n/localized-pages";
+import {
+  getLocalizedLazyPage,
+  loadLocalizedPage,
+} from "@/lib/i18n/localized-pages";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/$lang/")({
   beforeLoad: async ({ params }) => {
     if (!isLocalePrefix(params.lang)) throw notFound();
+    // Warm the module on the server; the browser cannot reuse that Map
+    // (see localized-pages.ts), so the component must use lazy() too.
     if (!(await loadLocalizedPage("/"))) throw notFound();
     return { localizedPath: "/" as const };
   },
@@ -37,7 +42,8 @@ export const Route = createFileRoute("/$lang/")({
 
 function LocalizedHomePage() {
   const { localizedPath } = Route.useRouteContext();
-  const Page = getCachedLocalizedPage(localizedPath);
-  if (!Page) return null;
+  // Same pattern as /$lang/$ — never read the SSR-only pageCache synchronously
+  // or the client first paint is `null` (white screen) under LanguageProvider.
+  const Page = getLocalizedLazyPage(localizedPath);
   return <Page />;
 }

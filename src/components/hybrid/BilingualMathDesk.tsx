@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath as FlashcardMath } from "@/components/LazyFlashcardMath";
 import { StatementMarkTable } from "@/components/StatementMarkTable";
 import { HYBRID_ACCENT } from "@/lib/hybrid-course";
 import {
