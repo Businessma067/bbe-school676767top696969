@@ -1,9 +1,9 @@
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
-import { Suspense, lazy, useMemo } from "react";
+import { Suspense, lazy, useEffect, useMemo, useState } from "react";
 
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
-import { resolveExamTrack, type ExamTrack } from "@/lib/exam-track";
+import { getExamTrackFromPath, resolveExamTrack, type ExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -35,7 +35,17 @@ export const Route = createFileRoute("/how-it-works")({
 
 export function HowItWorksPage() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const track = useMemo<ExamTrack>(() => resolveExamTrack(pathname), [pathname]);
+  const [storageReady, setStorageReady] = useState(false);
+  useEffect(() => {
+    setStorageReady(true);
+  }, []);
+  const track = useMemo<ExamTrack>(
+    () =>
+      storageReady
+        ? resolveExamTrack(pathname)
+        : (getExamTrackFromPath(pathname) ?? "bbe"),
+    [pathname, storageReady],
+  );
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">

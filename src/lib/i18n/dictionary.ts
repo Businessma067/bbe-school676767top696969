@@ -181,8 +181,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Ein kostenloser Test mit 50+ Einstiegsaufgaben in allen drei Fächern samt Schritt-für-Schritt-Erklärungen zum Prüfungsformat.",
     "Visit for free": "Kostenlos ansehen",
     "Full BBE Course": "BBE-Vollkurs",
-    "3300+ questions across all three subjects, 5 mock exams, a study assistant, and detailed task breakdowns.":
-      "3300+ Fragen in allen drei Fächern, 5 Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
+    "3,512 questions across Economics, Mathematics and English, plus 6+ mock exams, a study assistant, and clear task breakdowns.":
+      "3.512 Fragen in Economics, Mathematik und Englisch, plus 6+ Probeprüfungen, ein Lernassistent und klare Aufgabenaufschlüsselungen.",
     "Buy course · €411": "Kurs kaufen · 411 €",
     "Unlock full access": "Vollzugang freischalten",
     "Start Practicing": "Jetzt üben",
@@ -192,14 +192,14 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "3 Subjects": "3 Fächer",
     "Math, English, and Business & Economics, fully covered.":
       "Mathematik, Englisch sowie Wirtschaft & Business, vollständig abgedeckt.",
-    "3300+ Questions": "3300+ Fragen",
+    "3,512 Questions": "3.512 Fragen",
     "A constantly growing question bank across every chapter.":
       "Eine ständig wachsende Fragendatenbank für jedes Kapitel.",
     "Direct Support": "Direkter Support",
     "Real answers from real people, not a bot ticket queue.":
       "Echte Antworten von echten Menschen, keine Bot-Warteschlange.",
     "A written explanation for every question.": "Eine schriftliche Erklärung zu jeder Frage.",
-    "5 Mock Exams": "5 Probeprüfungen",
+    "6+ Mock Exams": "6+ Probeprüfungen",
     "Full-length simulations under real exam conditions and timing.":
       "Vollständige Simulationen unter echten Prüfungsbedingungen und Zeitvorgaben.",
     "Special Features": "Besondere Funktionen",
@@ -412,8 +412,8 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
       "Безкоштовна проба: 50+ стартових завдань із трьох предметів і покрокові пояснення формату іспиту.",
     "Visit for free": "Відкрити безкоштовно",
     "Full BBE Course": "Повний курс BBE",
-    "3300+ questions across all three subjects, 5 mock exams, a study assistant, and detailed task breakdowns.":
-      "3300+ питань із трьох предметів, 5 пробних іспитів, навчальний асистент і детальні розбори.",
+    "3,512 questions across Economics, Mathematics and English, plus 6+ mock exams, a study assistant, and clear task breakdowns.":
+      "3 512 питань з Economics, математики й англійської, плюс 6+ пробних іспитів, навчальний асистент і зрозумілі розбори задач.",
     "Buy course · €411": "Купити курс · €411",
     "Unlock full access": "Відкрити повний доступ",
     "Start Practicing": "Почати практику",
@@ -423,14 +423,14 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
     "3 Subjects": "3 предмети",
     "Math, English, and Business & Economics, fully covered.":
       "Математика, англійська та бізнес і економіка, повністю покриті.",
-    "3300+ Questions": "3300+ питань",
+    "3,512 Questions": "3 512 питань",
     "A constantly growing question bank across every chapter.":
       "База питань, що постійно зростає, з кожного розділу.",
     "Direct Support": "Пряма підтримка",
     "Real answers from real people, not a bot ticket queue.":
       "Справжні відповіді від людей, а не черга ботів.",
     "A written explanation for every question.": "Письмове пояснення до кожного питання.",
-    "5 Mock Exams": "5 пробних іспитів",
+    "6+ Mock Exams": "6+ пробних іспитів",
     "Full-length simulations under real exam conditions and timing.":
       "Повноформатні симуляції у справжніх умовах і з таймінгом іспиту.",
     "Special Features": "Особливі можливості",
@@ -715,8 +715,10 @@ export function dictionaryScopesForPath(pathname: string): DictionaryScope[] {
   if (path === "/news" || path.startsWith("/news/")) {
     return ["core", "news"];
   }
+  // WiSo marketing shares FAQ/footer/chrome keys that live in home packs.
+  // `wiso` alone left those strings English on /de/wiso and /uk/wiso.
   if (path === "/wiso" || path.startsWith("/wiso/")) {
-    return ["core", "wiso"];
+    return ["core", "home", "wiso"];
   }
   if (
     path === "/" ||
@@ -735,11 +737,14 @@ export function dictionaryScopesForPath(pathname: string): DictionaryScope[] {
     path === "/demo-mock" ||
     path === "/login" ||
     path === "/signup" ||
+    path === "/reset-password" ||
     path === "/account" ||
     path === "/terms" ||
     path === "/privacy" ||
     path === "/wu-vienna" ||
-    path === "/bbe-vs-wiso"
+    path === "/bbe-vs-wiso" ||
+    path === "/payment/success" ||
+    path === "/payment/failed"
   ) {
     return ["core", "home"];
   }

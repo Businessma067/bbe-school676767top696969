@@ -1,5 +1,5 @@
 import { useRouterState } from "@tanstack/react-router";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { ExamTrackSwitcher, TrackBrandMark } from "@/components/ExamTrackSwitcher";
@@ -13,7 +13,7 @@ import {
   type NavItem,
 } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
-import { isHybridPath, resolveExamTrack } from "@/lib/exam-track";
+import { getExamTrackFromPath, isHybridPath, resolveExamTrack } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
@@ -49,9 +49,16 @@ export function SiteHeader({
 }: SiteHeaderProps) {
   void _maxWidthClassName;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  // Mount-gate session track so selective hydration cannot diverge nav items.
+  const [storageReady, setStorageReady] = useState(false);
+  useEffect(() => {
+    setStorageReady(true);
+  }, []);
   const pathForNav = stripLocalePrefix(pathname);
   const onHybrid = isHybridPath(pathname);
-  const track = resolveExamTrack(pathname);
+  const track = storageReady
+    ? resolveExamTrack(pathname)
+    : (getExamTrackFromPath(pathname) ?? "bbe");
   const { hasLite, hasFull, hasWisoFull, hasHybrid } = useAccountNavTier();
   const navItems =
     navItemsProp ??

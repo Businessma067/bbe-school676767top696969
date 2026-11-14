@@ -75,6 +75,12 @@ export function BbeGhostButton({
   );
 }
 
+/** True when label already ends with a text arrow (avoid ArrowRight → →). */
+function textAlreadyHasArrow(children: ReactNode): boolean {
+  if (typeof children === "string") return /(?:→|->)\s*$/u.test(children);
+  return false;
+}
+
 export function BbeTextLink({
   to,
   params,
@@ -86,6 +92,7 @@ export function BbeTextLink({
   children: ReactNode;
   className?: string;
 }) {
+  const skipIcon = textAlreadyHasArrow(children);
   return (
     <ExamHubLink
       to={to}
@@ -96,7 +103,7 @@ export function BbeTextLink({
       )}
     >
       {children}
-      <ArrowRight className="h-4 w-4" />
+      {skipIcon ? null : <ArrowRight className="h-4 w-4" />}
     </ExamHubLink>
   );
 }

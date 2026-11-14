@@ -192,12 +192,23 @@ export function TrackBrandMark({
   forceTrack?: ExamTrack;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  // Per-component mount gate: root LocaleSync can unlock sessionStorage before
+  // this header hydrates (selective hydration). Local false→true after useEffect
+  // keeps SSR + first client paint on path/default track (fixes /bbe-vs-wiso).
+  const [storageReady, setStorageReady] = useState(false);
+  useEffect(() => {
+    setStorageReady(true);
+  }, []);
   if (!forceTrack && isHybridPath(pathname)) {
     return <HybridBrandMark compact={compact} />;
   }
   const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
+  const pathTrack = getExamTrackFromPath(pathname);
   const track =
-    forceTrack ?? resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
+    forceTrack ??
+    (storageReady
+      ? resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull })
+      : (pathTrack ?? "bbe"));
   const home = track === "wiso" ? "/wiso" : "/bbe";
   const label = track === "wiso" ? "WiSo · BBE School" : "BBE School";
   const mark = track === "wiso" ? "WiSo" : "BBE";

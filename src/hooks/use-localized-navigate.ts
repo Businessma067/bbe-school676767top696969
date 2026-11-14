@@ -1,6 +1,10 @@
 import { useNavigate, useRouterState } from "@tanstack/react-router";
-import { useCallback } from "react";
-import { entryLangForDestination } from "@/lib/exam-track";
+import { useCallback, useSyncExternalStore } from "react";
+import {
+  entryLangForDestination,
+  getNavPrefsHydratedSnapshot,
+  subscribeNavPrefsHydrated,
+} from "@/lib/exam-track";
 import { useLanguage } from "@/lib/i18n/context";
 import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
 
@@ -25,6 +29,11 @@ export function useLocalizedNavigate() {
   const navigate = useNavigate();
   const { lang, setLang } = useLanguage();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const prefsHydrated = useSyncExternalStore(
+    subscribeNavPrefsHydrated,
+    getNavPrefsHydratedSnapshot,
+    () => false,
+  );
   const effective = effectiveLangFromLocation(pathname, lang);
 
   return useCallback(
@@ -42,6 +51,6 @@ export function useLocalizedNavigate() {
         ...(replace != null ? { replace } : {}),
       });
     },
-    [effective, navigate, pathname, setLang],
+    [effective, navigate, pathname, prefsHydrated, setLang],
   );
 }

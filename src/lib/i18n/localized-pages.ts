@@ -106,7 +106,12 @@ export function hasLocalizedPage(pathname: string): boolean {
   return Object.prototype.hasOwnProperty.call(LOCALIZED_PAGE_LOADERS, path);
 }
 
-/** Sync read after `loadLocalizedPage` has run (e.g. in beforeLoad). */
+/**
+ * Sync read after `loadLocalizedPage` has run (e.g. in beforeLoad).
+ * Do NOT use this in route components: the Map is not shared across the
+ * SSR→browser boundary, so the client first paint returns null (white screen).
+ * Use `getLocalizedLazyPage` + `<Suspense>` instead.
+ */
 export function getCachedLocalizedPage(pathname: string): ComponentType | null {
   return pageCache.get(normalizeAppPath(pathname)) ?? null;
 }

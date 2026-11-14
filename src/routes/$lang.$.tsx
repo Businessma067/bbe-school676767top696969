@@ -1,4 +1,5 @@
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
+import { Suspense } from "react";
 import { buildLocaleHead } from "@/lib/i18n/locale-head";
 import { getEnglishHeadForPath } from "@/lib/i18n/localized-heads";
 import {
@@ -82,6 +83,11 @@ export const Route = createFileRoute("/$lang/$")({
 
 function LocalizedSplatPage() {
   const { localizedPath } = Route.useRouteContext();
+  // React.lazy suspends until the warmed module resolves — wrap or /de|/uk white-screen.
   const Page = getLocalizedLazyPage(localizedPath);
-  return <Page />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background" aria-hidden />}>
+      <Page />
+    </Suspense>
+  );
 }

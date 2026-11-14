@@ -1,10 +1,14 @@
 import { Link, useRouterState } from "@tanstack/react-router";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 import { isNavItemActive, type NavItem } from "@/config/site-nav";
 import { useLanguage } from "@/lib/i18n/context";
 import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
 import {
   entryLangForDestination,
+  getExamTrackFromPath,
+  getNavPrefsHydratedSnapshot,
+  subscribeNavPrefsHydrated,
   userPickedNonEnglish,
   resolveExamTrack,
   trackHome,
@@ -35,16 +39,31 @@ export function NavItemLink({
     select: (s) => ({ pathname: s.location.pathname, search: s.location.search }),
   });
   const { lang, setLang, t } = useLanguage();
+  // Hook snapshot is false during this fiber's hydration even if root already unlocked.
+  const prefsHydrated = useSyncExternalStore(
+    subscribeNavPrefsHydrated,
+    getNavPrefsHydratedSnapshot,
+    () => false,
+  );
+  const [storageReady, setStorageReady] = useState(false);
+  useEffect(() => {
+    setStorageReady(true);
+  }, []);
   const pathForActive = stripLocalePrefix(pathname);
   const effective = effectiveLangFromLocation(pathname, lang);
   const isActive = isNavItemActive(item, pathForActive, search);
-  const track = resolveExamTrack(pathname);
+  const track =
+    storageReady || prefsHydrated
+      ? resolveExamTrack(pathname)
+      : (getExamTrackFromPath(pathname) ?? "bbe");
   const homePath = trackHome(track);
   const label = t(item.label);
 
   if (item.isRoute) {
     const { path, hash } = splitHref(item.href);
-    const entryLang = entryLangForDestination(path, pathname);
+    // Skip storage-backed user lang until this link has mounted.
+    const entryLang =
+      storageReady || prefsHydrated ? entryLangForDestination(path, pathname) : null;
     const linkLang = entryLang ?? effective;
     const link = getLocaleLinkProps(hash ? `${path}#${hash}` : path, linkLang);
     return (

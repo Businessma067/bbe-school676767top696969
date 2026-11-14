@@ -71,8 +71,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Es läuft auf Handy, Tablet und Laptop. Toggles, Erklärungen und Tracker bleiben auf kleinem Screen nutzbar, damit du auch ohne Schreibtisch eine kurze tägliche Session halten kannst.",
   "BBE and WiSo full courses: pick the exam track you are preparing for.":
     "BBE- und WiSo-Vollkurse: wähl den Prüfungstrack, für den du dich vorbereitest.",
-  "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.":
-    "3300+ Fragen in Economics, Mathematik und Englisch, plus 5 Probeprüfungen, ein Study Assistant und klare Aufgabenaufschlüsselungen.",
+  "3,512 questions across Economics, Mathematics and English, plus 6+ mock exams, a study assistant, and clear task breakdowns.":
+    "3.512 Fragen in Economics, Mathematik und Englisch, plus 6+ Probeprüfungen, ein Study Assistant und klare Aufgabenaufschlüsselungen.",
   "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.":
     "WiSo-Track-Prep für Wirtschaft verstehen, Mathematik und deutsches Leseverständnis auf eigenen /wiso-URLs, optisch klar von BBE getrennt.",
   "Free · Instant web access": "Kostenlos · Sofortiger Webzugang",
@@ -134,8 +134,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Ja. Deine History bleibt in der Datenbank und wird übernommen, wenn du Full Access freischaltest.",
 
   // Full BBE Course FAQs (rewritten)
-  "You get 3300+ questions across all subjects, explanations under each statement, 5 mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
-    "Du bekommst 3300+ Fragen über alle Fächer, Erklärungen unter jeder Aussage, 5 Probeprüfungen, den Highlighter, Speed-Drills und das digitale Antwortbogen-Übungstool.",
+  "You get 3,512 questions across all subjects, explanations under each statement, 6+ mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
+    "Du bekommst 3.512 Fragen über alle Fächer, Erklärungen unter jeder Aussage, 6+ Probeprüfungen, den Highlighter, Speed-Drills und das digitale Antwortbogen-Übungstool.",
   "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
     "Es ist eine Einmalzahlung von 411 € ohne Monatsgebühren und ohne Upsells. Du zahlst einmal und behältst Zugang durch den Prüfungszyklus 2026/2027.",
   "How do explanations work?": "Wie funktionieren die Erklärungen?",
@@ -185,8 +185,8 @@ export const copyVoiceExtraDe: Record<string, string> = {
     "Noch etwas: die Bewerber:innen, die am meisten aus der Prep geholt haben, waren nicht die, die Aufgaben passiv durchgearbeitet haben. Es waren die, die nachgefragt haben, wenn etwas nicht klickte, und drangeblieben sind, bis sie wirklich verstanden haben, warum. Deshalb ist direkter Support hier kein Nachgedanke. Jede Frage bekommt eine echte, detaillierte Antwort, weil ein halb verstandenes Konzept am Prüfungstag dasselbe ist wie gar nicht wissen.",
   "A free trial with 50+ starter cases across Economics, Mathematics and English with step-by-step explanations of the real WU Vienna BBE exam format.":
     "Kostenlose Trial mit 50+ Starter-Fällen in Economics, Mathematik und Englisch mit Schritt-für-Schritt-Erklärungen zum echten WU-Vienna-BBE-Prüfungsformat.",
-  "The complete WU Vienna BBE prep system: 3300+ questions, 5 mock exams, a study assistant and detailed task breakdowns.":
-    "Das komplette WU-Vienna-BBE-Prep-System: 3300+ Fragen, 5 Probeprüfungen, ein Study Assistant und detaillierte Aufgabenaufschlüsselungen.",
+  "The complete WU Vienna BBE prep system: 3,512 questions, 6+ mock exams, a study assistant and detailed task breakdowns.":
+    "Das komplette WU-Vienna-BBE-Prep-System: 3.512 Fragen, 6+ Probeprüfungen, ein Study Assistant und detaillierte Aufgabenaufschlüsselungen.",
 };
 
 export const copyVoiceExtraUk: Record<string, string> = {
@@ -255,8 +255,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Працює на телефоні, планшеті й ноутбуці. Перемикачі, пояснення й трекери лишаються зручними на маленькому екрані, тож коротку щоденну сесію можна тримати навіть не за столом.",
   "BBE and WiSo full courses: pick the exam track you are preparing for.":
     "Повні курси BBE і WiSo: обери трек іспиту, до якого готуєшся.",
-  "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.":
-    "3300+ питань з Economics, математики й англійської, плюс 5 пробних іспитів, study assistant і зрозумілі розбори задач.",
+  "3,512 questions across Economics, Mathematics and English, plus 6+ mock exams, a study assistant, and clear task breakdowns.":
+    "3 512 питань з Economics, математики й англійської, плюс 6+ пробних іспитів, study assistant і зрозумілі розбори задач.",
   "WiSo-track prep for Wirtschaft verstehen economics, mathematics, and German reading comprehension on dedicated /wiso URLs, kept visually distinct from BBE.":
     "Підготовка треку WiSo: Wirtschaft verstehen, математика й німецьке читання з розумінням на окремих /wiso URL, візуально відмінних від BBE.",
   "Free · Instant web access": "Безкоштовно · Миттєвий доступ у браузері",
@@ -318,8 +318,8 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Так. Історія лишається в базі й переноситься, коли відкриваєш повний доступ.",
 
   // Full BBE Course FAQs (rewritten)
-  "You get 3300+ questions across all subjects, explanations under each statement, 5 mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
-    "Отримуєш 3300+ питань з усіх предметів, пояснення під кожним твердженням, 5 пробних іспитів, highlighter, speed-drills і цифровий тренажер бланка відповідей.",
+  "You get 3,512 questions across all subjects, explanations under each statement, 6+ mock exams, the highlighter, speed drills, and the digital answer-sheet practice tool.":
+    "Отримуєш 3 512 питань з усіх предметів, пояснення під кожним твердженням, 6+ пробних іспитів, highlighter, speed-drills і цифровий тренажер бланка відповідей.",
   "It is a one-time payment of €411 with no monthly fees and no upsells. You pay once and keep access through the 2026/2027 exam cycle.":
     "Це одноразовий платіж 411 € без щомісячної плати й без upsell. Платиш раз і тримаєш доступ через цикл іспиту 2026/2027.",
   "How do explanations work?": "Як працюють пояснення?",
@@ -369,6 +369,6 @@ export const copyVoiceExtraUk: Record<string, string> = {
     "Ще одне: ті, хто найбільше виграв від підготовки, не були тими, хто пасивно проходив задачі. Це були ті, хто питав, коли щось не клікало, і тиснув, доки справді не зрозумів чому. Тому пряма підтримка тут не другорядна. На кожне питання є реальна детальна відповідь, бо напівзрозумілий концепт у день іспиту, це те саме, що не знати взагалі.",
   "A free trial with 50+ starter cases across Economics, Mathematics and English with step-by-step explanations of the real WU Vienna BBE exam format.":
     "Безкоштовний trial із 50+ стартовими кейсами з Economics, математики й англійської з покроковими поясненнями реального формату іспиту WU Vienna BBE.",
-  "The complete WU Vienna BBE prep system: 3300+ questions, 5 mock exams, a study assistant and detailed task breakdowns.":
-    "Повна система підготовки WU Vienna BBE: 3300+ питань, 5 пробних іспитів, study assistant і детальні розбори задач.",
+  "The complete WU Vienna BBE prep system: 3,512 questions, 6+ mock exams, a study assistant and detailed task breakdowns.":
+    "Повна система підготовки WU Vienna BBE: 3 512 питань, 6+ пробних іспитів, study assistant і детальні розбори задач.",
 };

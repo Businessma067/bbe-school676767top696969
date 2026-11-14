@@ -85,8 +85,42 @@ export function getExamTrackFromPath(pathname: string): ExamTrack | null {
   return "bbe";
 }
 
+/**
+ * Set after the first client layout pass (LocaleSync). Until then:
+ * - `userPickedNonEnglish` stays false (SSR/hydration agree on nav hrefs;
+ *   reading `bbe.lang` during render rewrote EN links to `/de` for stored DE)
+ * - `readStoredExamTrack` returns null (neutral pages like /bbe-vs-wiso must
+ *   not flip TrackBrandMark from SSR BBE → stored WiSo mid-hydration)
+ */
+let navPrefsHydrated = false;
+const navPrefsListeners = new Set<() => void>();
+
+/** Call once from LocaleSync after mount (useEffect — not layout). */
+export function markNavPrefsHydrated() {
+  if (navPrefsHydrated) return;
+  navPrefsHydrated = true;
+  for (const listener of navPrefsListeners) listener();
+}
+
+/** Subscribe so chrome re-renders once storage-backed lang/track prefs are safe. */
+export function subscribeNavPrefsHydrated(onStoreChange: () => void) {
+  navPrefsListeners.add(onStoreChange);
+  return () => {
+    navPrefsListeners.delete(onStoreChange);
+  };
+}
+
+export function getNavPrefsHydratedSnapshot() {
+  return navPrefsHydrated;
+}
+
 export function readStoredExamTrack(): ExamTrack | null {
-  if (typeof window === "undefined") return null;
+  // Gate on navPrefsHydrated so SSR + first client paint stay "bbe" on
+  // neutral paths; reading sessionStorage early mismatches TrackBrandMark
+  // (BBE vs WiSo) and trips the root error boundary ("This page didn't load").
+  // Callers in selectively-hydrated trees must ALSO mount-gate (local useState)
+  // — root LocaleSync can unlock this flag before a child finishes hydrating.
+  if (typeof window === "undefined" || !navPrefsHydrated) return null;
   try {
     const value = sessionStorage.getItem(TRACK_STORAGE_KEY);
     if (value === "bbe" || value === "wiso") return value;
@@ -217,7 +251,7 @@ export function counterpartPath(pathname: string, target: ExamTrack): string {
 
 /** True when the visitor chose a non-English language in the switcher. */
 export function userPickedNonEnglish(): boolean {
-  if (typeof window === "undefined") return false;
+  if (typeof window === "undefined" || !navPrefsHydrated) return false;
   try {
     const stored = window.localStorage.getItem("bbe.lang");
     return !!stored && stored !== "en";

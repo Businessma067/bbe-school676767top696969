@@ -15,6 +15,11 @@ type BbeExamShellProps = {
   heroActions?: ReactNode;
   children: ReactNode;
   className?: string;
+  /**
+   * Neutral/compare pages (e.g. /bbe-vs-wiso): hide the BBE|WiSo|Hybrid pills so
+   * the header is not “BBE logo + BBE pill” side-by-side.
+   */
+  hideTrackSwitcher?: boolean;
 };
 
 export function BbeExamShell({
@@ -28,6 +33,7 @@ export function BbeExamShell({
   heroActions,
   children,
   className,
+  hideTrackSwitcher = false,
 }: BbeExamShellProps) {
   return (
     <div className={cn("min-h-screen bg-background font-sans text-foreground antialiased", className)}>
@@ -37,7 +43,7 @@ export function BbeExamShell({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       ) : null}
-      <SiteHeader />
+      <SiteHeader hideTrackSwitcher={hideTrackSwitcher} />
       <BbeExamSubnav />
 
       <section

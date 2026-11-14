@@ -690,7 +690,7 @@ export const wisoHubExtraDe: Record<string, string> = {
   "WU Vienna BBE exam (Aufnahmetest) 2027: in-person test on July 7 at VIECON, format, topics, scoring, difficulty and a free timed mock with explanations.":
     "BBE Aufnahmetest der WU Wien 2027: Präsenzprüfung am 7. Juli im VIECON, Format, Themen, Bewertung, Schwierigkeit und ein gratis Timed Mock mit Erklärungen.",
   "BBE & WiSo Exam Prep Courses 2027 — Free Demo | BBE School": "Vorbereitung WU Aufnahmetest BBE & WiSo 2027 — gratis Demo | BBE School",
-  "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3300+ questions, timed mock exams and step-by-step explanations.": "Vorbereitung auf den WU Aufnahmetest (BBE & WiSo) 2027: gratis mit 50+ Übungsaufgaben starten, dann 3300+ Fragen, Probetests auf Zeit und Schritt-für-Schritt-Lösungen.",
+  "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3,512 questions, timed mock exams and step-by-step explanations.": "Vorbereitung auf den WU Aufnahmetest (BBE & WiSo) 2027: gratis mit 50+ Übungsaufgaben starten, dann 3.512 Fragen, Probetests auf Zeit und Schritt-für-Schritt-Lösungen.",
   "How to Pass the BBE Exam 2027: Study Plan & Free Mock | BBE School": "BBE Aufnahmetest 2027 bestehen: Lernplan & gratis Probetest | BBE School",
   "How to Pass the BBE Exam 2027: Study Plan & Free Mock": "BBE Aufnahmetest 2027 bestehen: Lernplan & gratis Probetest",
   "Step-by-step BBE exam study plan for WU Vienna 2027: 4/8/12-week timelines, math focus areas, timed practice and a free mock exam to find your weak spots.": "Lernplan für den BBE Aufnahmetest der WU Wien 2027: 4/8/12-Wochen-Pläne, Mathe-Schwerpunkte, Üben auf Zeit und ein gratis Probetest für deine Schwächen.",

@@ -46,7 +46,7 @@ const courseListJsonLd = [
     "@type": "Course",
     name: "Full BBE Course",
     description:
-      "The complete WU Vienna BBE prep system: 3300+ questions, 5 mock exams, a study assistant and detailed task breakdowns.",
+      "The complete WU Vienna BBE prep system: 3,512 questions, 6+ mock exams, a study assistant and detailed task breakdowns.",
     url: "https://bbe-school.com/products/full-course",
     provider: PROVIDER,
     offers: {
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/products/")({
       {
         name: "description",
         content:
-          "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3300+ questions, timed mock exams and step-by-step explanations.",
+          "WU Aufnahmetest prep for BBE and WiSo 2027: start free with 50+ practice cases, then 3,512 questions, timed mock exams and step-by-step explanations.",
       },
       { property: "og:title", content: "BBE & WiSo Exam Prep Courses 2027 — Free Demo | BBE School" },
       {
@@ -119,7 +119,7 @@ const products: Product[] = [
     title: "Full BBE Course",
     image: FULL_COURSE_IMAGE,
     description:
-      "3300+ questions across Economics, Mathematics and English, plus 5 mock exams, a study assistant, and clear task breakdowns.",
+      "3,512 questions across Economics, Mathematics and English, plus 6+ mock exams, a study assistant, and clear task breakdowns.",
     cta: "Buy course · €411",
     productSlug: "full-course",
     to: FULL_COURSE_PRODUCT_HREF,

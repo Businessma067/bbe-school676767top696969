@@ -177,6 +177,7 @@ const decideCards: { title: string; body: string; tone: "bbe" | "wiso" | "both" 
 export function BbeVsWisoPage() {
   return (
     <BbeExamShell
+      hideTrackSwitcher
       h1="BBE vs WISO at WU Vienna: Entrance Exam Comparison Guide"
       lead="Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation, so you can decide which path fits you."
       heroActions={

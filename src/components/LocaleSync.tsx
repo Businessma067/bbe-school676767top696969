@@ -1,6 +1,6 @@
 import { useRouterState } from "@tanstack/react-router";
-import { useLayoutEffect } from "react";
-import { isWisoPath } from "@/lib/exam-track";
+import { useEffect, useLayoutEffect } from "react";
+import { isWisoPath, markNavPrefsHydrated } from "@/lib/exam-track";
 import { warmLanguage } from "@/lib/i18n/auto-translate";
 import { readStoredLang, useLanguage } from "@/lib/i18n/context";
 import { isAutoLang } from "@/lib/i18n/languages";
@@ -23,6 +23,13 @@ import {
 export function LocaleSync() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { setLang } = useLanguage();
+
+  // useEffect (not layout): root shell can selectively hydrate before the route
+  // match. Unlocking session track in useLayoutEffect let TrackBrandMark on
+  // /bbe-vs-wiso read stored WiSo mid-hydration and crash the page.
+  useEffect(() => {
+    markNavPrefsHydrated();
+  }, []);
 
   useLayoutEffect(() => {
     let cancelled = false;

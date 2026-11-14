@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { Suspense } from "react";
 import { buildLocaleHead } from "@/lib/i18n/locale-head";
 import { isLocalePrefix } from "@/lib/i18n/locale-path";
 import {
@@ -19,13 +20,13 @@ export const Route = createFileRoute("/$lang/")({
     if (!isLocalePrefix(params.lang)) return {};
     return buildLocaleHead(params.lang, "/", {
       meta: [
-        { title: "WU Vienna Admission 2027 — BBE Exam & WiSo Prep | BBE School — Made by BBE Students" },
+        { title: "WU Vienna Admission 2027 — BBE Exam & WiSo Prep | BBE School" },
         {
           name: "description",
           content:
             "Prepare for WU Vienna admission in 2027: BBE exam (BBE Aufnahmetest) and WiSo entrance exam practice, timed mock exams, and study tools.",
         },
-        { property: "og:title", content: "WU Vienna Admission 2027 — BBE Exam & WiSo Prep | BBE School — Made by BBE Students" },
+        { property: "og:title", content: "WU Vienna Admission 2027 — BBE Exam & WiSo Prep | BBE School" },
         {
           property: "og:description",
           content:
@@ -44,6 +45,11 @@ function LocalizedHomePage() {
   const { localizedPath } = Route.useRouteContext();
   // Same pattern as /$lang/$ — never read the SSR-only pageCache synchronously
   // or the client first paint is `null` (white screen) under LanguageProvider.
+  // React.lazy still suspends on first resolve; Suspense is required or /de|/uk crash.
   const Page = getLocalizedLazyPage(localizedPath);
-  return <Page />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background" aria-hidden />}>
+      <Page />
+    </Suspense>
+  );
 }

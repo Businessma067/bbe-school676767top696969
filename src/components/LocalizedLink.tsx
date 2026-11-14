@@ -1,6 +1,10 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import type { ComponentPropsWithoutRef } from "react";
-import { entryLangForDestination } from "@/lib/exam-track";
+import { useSyncExternalStore, type ComponentPropsWithoutRef } from "react";
+import {
+  entryLangForDestination,
+  getNavPrefsHydratedSnapshot,
+  subscribeNavPrefsHydrated,
+} from "@/lib/exam-track";
 import { useLanguage } from "@/lib/i18n/context";
 import type { Lang } from "@/lib/i18n/dictionary";
 import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
@@ -23,7 +27,14 @@ type LocalizedLinkProps = {
 export function LocalizedLink({ to, hash, search, lang: langOverride, ...props }: LocalizedLinkProps) {
   const { lang, setLang } = useLanguage();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const entryLang = entryLangForDestination(to, pathname);
+  // getServerSnapshot stays false for this fiber's hydration pass even when the
+  // root store was unlocked earlier (selective hydration).
+  const prefsHydrated = useSyncExternalStore(
+    subscribeNavPrefsHydrated,
+    getNavPrefsHydratedSnapshot,
+    () => false,
+  );
+  const entryLang = prefsHydrated ? entryLangForDestination(to, pathname) : null;
   const effective =
     langOverride ?? entryLang ?? effectiveLangFromLocation(pathname, lang);
   const pathWithHash = hash ? `${to}#${hash}` : to;

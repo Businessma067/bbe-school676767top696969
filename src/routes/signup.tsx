@@ -239,18 +239,9 @@ export function AuthShell({
 }) {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+      {/* Brand lives in SiteHeader only — avoid a second circular BBE mark above the card. */}
       <SiteHeader compact maxWidthClassName="max-w-md" showNav={false} showMobileNav={false} />
       <div className="mx-auto flex min-h-[calc(100vh-4.5rem)] max-w-md flex-col justify-center px-6 py-16">
-        <LocalizedLink to="/" className="mb-8 flex items-center gap-3">
-          <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30">
-            <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">
-              BBE
-            </span>
-          </div>
-          <div className="flex items-center">
-            <span className="font-display text-base font-bold tracking-tight">BBE School</span>
-          </div>
-        </LocalizedLink>
         <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
           <h1 className="font-display text-2xl font-bold tracking-tight">{title}</h1>
           {subtitle && <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p>}

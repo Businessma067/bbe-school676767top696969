@@ -235,7 +235,7 @@ export function DemoPracticeProduct() {
               You get questions from all three parts of the entrance exam. Economics with the
               True/False statement blocks the professors love, math tasks written in the same style
               and difficulty as the real paper, and an English reading section with a full passage
-              and its statements. Nothing here is a warm up. These are the same traps, the same
+              and its statements. Nothing here is a warmup. These are the same traps, the same
               wording and the same partial points logic you will face at Messe Wien.
             </p>
             <p>
