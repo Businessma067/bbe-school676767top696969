@@ -101,6 +101,26 @@ function makeRandom(seed: string) {
 
 const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
+/** Load restored WiSo papers only when taking/reviewing that exam. */
+export async function loadExamQuestions(examId: string): Promise<ExamQuestion[]> {
+  switch (examId) {
+    case "wiso-mock-2":
+      return (await import("@/lib/wiso-mock-exam-2-content")).buildWisoMockExam2Questions(examId);
+    case "wiso-mock-3":
+      return (await import("@/lib/wiso-mock-exam-3-content")).buildWisoMockExam3Questions(examId);
+    case "wiso-mock-4":
+      return (await import("@/lib/wiso-mock-exam-4-content")).buildWisoMockExam4Questions(examId);
+    case "wiso-mock-5":
+      return (await import("@/lib/wiso-mock-exam-5-content")).buildWisoMockExam5Questions(examId);
+    case "wiso-mock-6":
+      return (await import("@/lib/wiso-mock-exam-6-content")).buildWisoMockExam6Questions(examId);
+    case "wiso-mock-7":
+      return (await import("@/lib/wiso-mock-exam-7-content")).buildWisoMockExam7Questions(examId);
+    default:
+      return buildExamQuestions(examId);
+  }
+}
+
 /**
  * Exam question set. Mocks 1–6 are curated real content; unknown ids stay
  * placeholders until their banks are authored (same ExamQuestion shape either way).

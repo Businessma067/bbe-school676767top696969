@@ -53,6 +53,8 @@ const LOCALIZED_PAGE_LOADERS: Record<LocalizablePath, () => Promise<ComponentTyp
   "/news": () => import("@/routes/news").then((m) => m.NewsPage),
   "/important-features": () =>
     import("@/routes/important-features").then((m) => m.ImportantFeaturesPage),
+  "/how-it-works": () =>
+    import("@/routes/how-it-works").then((m) => m.HowItWorksPage),
   "/features/answer-sheet": () =>
     import("@/routes/features.answer-sheet").then((m) => m.AnswerSheetFeaturePage),
   "/terms": () => import("@/routes/terms").then((m) => m.TermsPage),
