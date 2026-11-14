@@ -19,7 +19,7 @@ import {
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exam-catalog";
-import { WISO_MOCK_EXAM_1_SECTION_COUNTS } from "@/lib/wiso-mock-exam-1-content";
+import { WISO_MOCK_SECTION_COUNTS } from "@/lib/mock-exams";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import { storeExamTrack } from "@/lib/exam-track";
 import { fetchMockAttempts, type MockAttempt } from "@/lib/user-progress";
@@ -320,23 +320,23 @@ export function WisoMockExamsPage() {
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Wirtschaft</span>
               <span className="font-semibold">
-                {WISO_MOCK_EXAM_1_SECTION_COUNTS.economics} Fragen
+                {WISO_MOCK_SECTION_COUNTS.economics} Fragen
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Deutsch</span>
-              <span className="font-semibold">{WISO_MOCK_EXAM_1_SECTION_COUNTS.german} Fragen</span>
+              <span className="font-semibold">{WISO_MOCK_SECTION_COUNTS.german} Fragen</span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Mathematik</span>
-              <span className="font-semibold">{WISO_MOCK_EXAM_1_SECTION_COUNTS.math} Fragen</span>
+              <span className="font-semibold">{WISO_MOCK_SECTION_COUNTS.math} Fragen</span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="font-semibold">Gesamt</span>
               <span className="font-semibold">
-                {WISO_MOCK_EXAM_1_SECTION_COUNTS.economics +
-                  WISO_MOCK_EXAM_1_SECTION_COUNTS.german +
-                  WISO_MOCK_EXAM_1_SECTION_COUNTS.math}{" "}
+                {WISO_MOCK_SECTION_COUNTS.economics +
+                  WISO_MOCK_SECTION_COUNTS.german +
+                  WISO_MOCK_SECTION_COUNTS.math}{" "}
                 Fragen
               </span>
             </div>

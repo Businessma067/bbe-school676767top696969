@@ -10,7 +10,6 @@ import {
 import { SiteHeader } from "@/components/SiteHeader";
 import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
 import { isCustomExamId } from "@/config/custom-mock-builder";
-import { MOCK_EXAM_SECTION_COUNTS } from "@/lib/mock-exam-1-content";
 import {
   MOCK_EXAMS,
   getExamsForTier,
@@ -18,6 +17,7 @@ import {
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exam-catalog";
+import { BBE_MOCK_SECTION_COUNTS } from "@/lib/mock-exams";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import {
   fetchMockAttempts,
@@ -282,25 +282,25 @@ function MockExamsPage() {
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Economics</span>
               <span className="font-semibold">
-                {MOCK_EXAM_SECTION_COUNTS.economics} questions
+                {BBE_MOCK_SECTION_COUNTS.economics} questions
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">English</span>
               <span className="font-semibold">
-                {MOCK_EXAM_SECTION_COUNTS.english} questions
+                {BBE_MOCK_SECTION_COUNTS.english} questions
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Math</span>
-              <span className="font-semibold">{MOCK_EXAM_SECTION_COUNTS.math} questions</span>
+              <span className="font-semibold">{BBE_MOCK_SECTION_COUNTS.math} questions</span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="font-semibold">Total</span>
               <span className="font-semibold">
-                {MOCK_EXAM_SECTION_COUNTS.economics +
-                  MOCK_EXAM_SECTION_COUNTS.english +
-                  MOCK_EXAM_SECTION_COUNTS.math}{" "}
+                {BBE_MOCK_SECTION_COUNTS.economics +
+                  BBE_MOCK_SECTION_COUNTS.english +
+                  BBE_MOCK_SECTION_COUNTS.math}{" "}
                 questions
               </span>
             </div>

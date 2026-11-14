@@ -5,7 +5,7 @@
 
 import { loadMathChapterTasks, type MathTask } from "@/data/math-chapters";
 import { loadWisoMathChapterTasks } from "@/data/wiso-math-chapters";
-import { WISO_GERMAN_CHAPTERS, type WisoGermanTask } from "@/data/wiso-german-chapters";
+import type { WisoGermanTask } from "@/data/wiso-german-chapters";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import {
   hybridMockExamId,
@@ -18,6 +18,11 @@ import {
 } from "@/config/hybrid-mock-builder";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { logHybridPaper } from "@/lib/hybrid-progress";
+
+async function loadWisoGermanChapter() {
+  const mod = await import("@/data/wiso-german-chapters");
+  return mod.WISO_GERMAN_CHAPTERS[0];
+}
 
 const STORE_KEY = "hybrid.mock.papers.v1";
 
@@ -42,8 +47,10 @@ export type HybridPaperRequest = {
   germanTexts: string[];
 };
 
-export function germanTextCatalog(): { id: string; title: string; tasks: number }[] {
-  const chapter = WISO_GERMAN_CHAPTERS[0];
+export async function germanTextCatalog(): Promise<
+  { id: string; title: string; tasks: number }[]
+> {
+  const chapter = await loadWisoGermanChapter();
   if (!chapter) return [];
   return chapter.subsections.map((section) => ({
     id: section.id,
@@ -224,8 +231,9 @@ export async function buildHybridPaper(
     };
   }
 
-  const germanChapter = WISO_GERMAN_CHAPTERS[0];
-  const textOrder = germanTextCatalog().map((text) => text.id);
+  const germanChapter = await loadWisoGermanChapter();
+  const catalog = await germanTextCatalog();
+  const textOrder = catalog.map((text) => text.id);
   const selectedTexts = textOrder.filter((id) => texts.includes(id));
   const germanGroups = selectedTexts.map((id) =>
     (germanChapter?.tasks ?? [])

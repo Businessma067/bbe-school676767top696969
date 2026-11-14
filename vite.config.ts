@@ -84,6 +84,30 @@ export default defineConfig({
             ) {
               return "math-data";
             }
+            if (
+              id.includes("/src/data/english/") ||
+              id.includes("\\src\\data\\english\\")
+            ) {
+              return "english-banks";
+            }
+            if (
+              id.includes("/src/data/wiso/german/") ||
+              id.includes("\\src\\data\\wiso\\german\\")
+            ) {
+              return "wiso-german-bank";
+            }
+            if (
+              id.includes("economics-cases-ch") ||
+              id.includes("wiso-economics-cases-ch")
+            ) {
+              return "economics-banks";
+            }
+            if (
+              id.includes("mock-exam-") &&
+              (id.includes("-content") || id.includes("-sourced"))
+            ) {
+              return "mock-papers";
+            }
           },
         },
       },

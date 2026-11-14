@@ -9,15 +9,6 @@ import {
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
 import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
-import { buildMockExam1Questions } from "@/lib/mock-exam-1-content";
-import { buildMockExam2Questions } from "@/lib/mock-exam-2-content";
-import { buildMockExam3Questions } from "@/lib/mock-exam-3-content";
-import { buildMockExam4Questions } from "@/lib/mock-exam-4-content";
-import { buildMockExam5Questions } from "@/lib/mock-exam-5-content";
-import { buildMockExam6Questions } from "@/lib/mock-exam-6-content";
-import { buildMockExamDemoQuestions } from "@/lib/mock-exam-demo-content";
-import { buildWisoMockExam1Questions } from "@/lib/wiso-mock-exam-1-content";
-import { buildWisoMockExamDemoQuestions } from "@/lib/wiso-mock-exam-demo-content";
 import type { MockExamSummary } from "@/lib/mock-exam-catalog";
 
 export type { MockExamSummary, ProductTier } from "@/lib/mock-exam-catalog";
@@ -101,9 +92,30 @@ function makeRandom(seed: string) {
 
 const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
-/** Load restored WiSo papers only when taking/reviewing that exam. */
+/**
+ * Load one curated paper at a time. Never static-import every mock bank into the
+ * take/review client graph.
+ */
 export async function loadExamQuestions(examId: string): Promise<ExamQuestion[]> {
   switch (examId) {
+    case "demo-mock":
+      return (await import("@/lib/mock-exam-demo-content")).buildMockExamDemoQuestions(examId);
+    case "mock-1":
+      return (await import("@/lib/mock-exam-1-content")).buildMockExam1Questions(examId);
+    case "mock-2":
+      return (await import("@/lib/mock-exam-2-content")).buildMockExam2Questions(examId);
+    case "mock-3":
+      return (await import("@/lib/mock-exam-3-content")).buildMockExam3Questions(examId);
+    case "mock-4":
+      return (await import("@/lib/mock-exam-4-content")).buildMockExam4Questions(examId);
+    case "mock-5":
+      return (await import("@/lib/mock-exam-5-content")).buildMockExam5Questions(examId);
+    case "mock-6":
+      return (await import("@/lib/mock-exam-6-content")).buildMockExam6Questions(examId);
+    case "wiso-demo-mock":
+      return (await import("@/lib/wiso-mock-exam-demo-content")).buildWisoMockExamDemoQuestions(examId);
+    case "wiso-mock-1":
+      return (await import("@/lib/wiso-mock-exam-1-content")).buildWisoMockExam1Questions(examId);
     case "wiso-mock-2":
       return (await import("@/lib/wiso-mock-exam-2-content")).buildWisoMockExam2Questions(examId);
     case "wiso-mock-3":
@@ -122,38 +134,10 @@ export async function loadExamQuestions(examId: string): Promise<ExamQuestion[]>
 }
 
 /**
- * Exam question set. Mocks 1–6 are curated real content; unknown ids stay
- * placeholders until their banks are authored (same ExamQuestion shape either way).
+ * Placeholder paper for unknown ids. Curated banks must go through
+ * `loadExamQuestions` so Vite can code-split them.
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
-  if (examId === "demo-mock") {
-    return buildMockExamDemoQuestions(examId);
-  }
-  if (examId === "wiso-demo-mock") {
-    return buildWisoMockExamDemoQuestions(examId);
-  }
-  if (examId === "mock-1") {
-    return buildMockExam1Questions(examId);
-  }
-  if (examId === "mock-2") {
-    return buildMockExam2Questions(examId);
-  }
-  if (examId === "mock-3") {
-    return buildMockExam3Questions(examId);
-  }
-  if (examId === "mock-4") {
-    return buildMockExam4Questions(examId);
-  }
-  if (examId === "mock-5") {
-    return buildMockExam5Questions(examId);
-  }
-  if (examId === "mock-6") {
-    return buildMockExam6Questions(examId);
-  }
-  if (examId === "wiso-mock-1") {
-    return buildWisoMockExam1Questions(examId);
-  }
-
   const rand = makeRandom(examId);
   const questions: ExamQuestion[] = [];
   let index = 0;
@@ -194,3 +178,16 @@ export const SECTION_TOTALS: Record<SubjectKey, number> = {
   english: SCORING_CONFIG.english.totalPoints,
   german: SCORING_CONFIG.german.totalPoints,
 };
+
+/** Fixed curated paper shape (10+11+13) — keep list pages off content JSON modules. */
+export const BBE_MOCK_SECTION_COUNTS = {
+  economics: 10,
+  english: 11,
+  math: 13,
+} as const;
+
+export const WISO_MOCK_SECTION_COUNTS = {
+  economics: 10,
+  german: 11,
+  math: 13,
+} as const;

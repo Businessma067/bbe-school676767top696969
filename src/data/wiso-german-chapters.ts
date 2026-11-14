@@ -1,14 +1,16 @@
 /**
  * WiSo German (Sprachverständnis) syllabus for Full Course practice.
  * Single chapter: Texte — reading passages only (no grammar/vocab bank).
+ *
+ * Intentionally does not import English banks — hybrid/mocks must not pay for
+ * the BBE English corpus when they only need German reading.
  */
 
 import textsBank from "@/data/wiso/german/texts.json";
-import {
-  passageForTask,
-  type EnglishChapter,
-  type EnglishTask,
-  type EnglishSubsection,
+import type {
+  EnglishChapter,
+  EnglishSubsection,
+  EnglishTask,
 } from "@/data/english-chapters";
 
 export type WisoGermanTask = EnglishTask;
@@ -57,4 +59,15 @@ export const DEMO_WISO_GERMAN_SUBSECTION_FREE: Readonly<Record<string, number>> 
   "t.2": 3,
 };
 
-export { passageForTask };
+export function passageForTask(
+  task: EnglishTask | undefined,
+  chapters: EnglishChapter[],
+): string {
+  if (!task) return "";
+  if (task.passage) return task.passage;
+  for (const ch of chapters) {
+    const sub = ch.subsections.find((s) => s.id === task.subsection);
+    if (sub?.passage) return sub.passage;
+  }
+  return "";
+}

@@ -61,7 +61,17 @@ function leanLabel(id: HybridLeanId): string {
 
 export function HybridPaperBuilder({ initialLean = "half" }: { initialLean?: HybridLeanId }) {
   const navigate = useNavigate();
-  const texts = useMemo(() => germanTextCatalog(), []);
+  const [texts, setTexts] = useState<{ id: string; title: string; tasks: number }[]>([]);
+  useEffect(() => {
+    let cancel = false;
+    (async () => {
+      const catalog = await germanTextCatalog();
+      if (!cancel) setTexts(catalog);
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, []);
   const groups = useMemo<TopicGroup[]>(() => {
     const math = HYBRID_MATH_UNITS.map((unit) => ({
       key: unit.id,

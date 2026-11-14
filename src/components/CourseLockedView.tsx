@@ -2,13 +2,60 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { Clock, FileText, Layers, Lock, Shuffle, Sparkles } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
-import { WISO_FLASHCARD_SUBJECTS } from "@/data/wiso-flashcards";
 import type { AccessTier } from "@/lib/entitlements";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { isWisoPath } from "@/lib/exam-track";
 import { MOCK_EXAMS } from "@/lib/mock-exam-catalog";
 import { cn } from "@/lib/utils";
+
+/** Lightweight lock-screen subject cards — do not import flashcard banks here. */
+const LOCK_SUBJECTS_BBE = [
+  {
+    id: "economics",
+    title: "Economics",
+    description: "Core terminology, markets, business forms, marketing, and accounting.",
+    accent: "#c8763a",
+    cards: 420,
+  },
+  {
+    id: "math",
+    title: "Math",
+    description: "Essential BBE math formulas across the syllabus topics.",
+    accent: "#10b981",
+    cards: 528,
+  },
+  {
+    id: "english",
+    title: "English",
+    description: "Synonyms, meanings, and antonyms in business-news register.",
+    accent: "#0ea5e9",
+    cards: 200,
+  },
+] as const;
+
+const LOCK_SUBJECTS_WISO = [
+  {
+    id: "economics",
+    title: "Wirtschaft",
+    description: "Begriffe und Konzepte aus Wirtschaft verstehen.",
+    accent: "#c8763a",
+    cards: 280,
+  },
+  {
+    id: "math",
+    title: "Mathematik",
+    description: "Formeln und Kernideen der WiSo-Mathematik.",
+    accent: "#10b981",
+    cards: 260,
+  },
+  {
+    id: "german",
+    title: "Deutsch",
+    description: "Sprachverständnis und Lesetext-Strategien.",
+    accent: "#6366f1",
+    cards: 135,
+  },
+] as const;
 
 export type CourseLockFeature =
   | "mock-exams"
@@ -373,7 +420,7 @@ function SubjectsShell({
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isWiso = isWisoPath(pathname);
-  const subjects = isWiso ? WISO_FLASHCARD_SUBJECTS : FLASHCARD_SUBJECTS;
+  const subjects = isWiso ? LOCK_SUBJECTS_WISO : LOCK_SUBJECTS_BBE;
   const modeDe =
     mode === "Flashcards"
       ? "Karteikarten"
@@ -415,9 +462,7 @@ function SubjectsShell({
               <h2 className="font-display text-xl font-semibold">{s.title}</h2>
               <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.description}</p>
               <p className="mt-3 text-xs font-semibold text-muted-foreground">
-                {isWiso
-                  ? `${countCards(s.sections)} Karten`
-                  : `${countCards(s.sections)} cards`}
+                {isWiso ? `${s.cards} Karten` : `${s.cards} cards`}
               </p>
               <span
                 className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white"

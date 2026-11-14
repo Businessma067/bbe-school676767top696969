@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EconomicsTasksPage } from "@/components/EconomicsTasksPage";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
-import { loadAllWisoEconomicsChapterTasks } from "@/data/wiso-economics-chapters";
+import {
+  loadAllWisoEconomicsChapterTasks,
+  loadWisoEconomicsChapterTasks,
+} from "@/data/wiso-economics-chapters";
 import { WISO_ECONOMICS_BOOK_TOC } from "@/data/wiso-economics-subtopics";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
@@ -39,6 +42,7 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
         <EconomicsTasksPage
           chapters={CHAPTERS}
           loadAllChapters={loadAllWisoEconomicsChapterTasks}
+          loadChapter={loadWisoEconomicsChapterTasks}
           storageKey="wiso.economics.progress.v1"
           backTo="/wiso/products/full-course-subjects"
           enableTheory

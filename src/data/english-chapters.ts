@@ -1,11 +1,10 @@
 /**
  * English syllabus for Demo / Lite / Full practice pages.
  * Chapters: Texts · Grammar · Vocabulary (WU BBE English sections).
+ *
+ * Banks load on demand so opening German / hybrid / mocks does not parse
+ * the full English corpus.
  */
-
-import grammarBank from "@/data/english/grammar.json";
-import textsBank from "@/data/english/texts.json";
-import vocabularyBank from "@/data/english/vocabulary.json";
 
 export type EnglishTaskKind = "reading" | "grammar" | "vocabulary";
 
@@ -76,9 +75,25 @@ function loadBank(raw: BankFile): { subsections: EnglishSubsection[]; tasks: Eng
   };
 }
 
-const texts = loadBank(textsBank as BankFile);
-const grammar = loadBank(grammarBank as BankFile);
-const vocabulary = loadBank(vocabularyBank as BankFile);
+const BANK_LOADERS = {
+  texts: () => import("@/data/english/texts.json"),
+  grammar: () => import("@/data/english/grammar.json"),
+  vocabulary: () => import("@/data/english/vocabulary.json"),
+} as const;
+
+type ChapterKey = keyof typeof BANK_LOADERS;
+
+const bankCache = new Map<ChapterKey, { subsections: EnglishSubsection[]; tasks: EnglishTask[] }>();
+
+async function loadBankKey(key: ChapterKey) {
+  const hit = bankCache.get(key);
+  if (hit) return hit;
+  const mod = await BANK_LOADERS[key]();
+  const raw = (mod as { default?: BankFile }).default ?? (mod as BankFile);
+  const bank = loadBank(raw);
+  bankCache.set(key, bank);
+  return bank;
+}
 
 /**
  * Lite: difficulties 1–3.
@@ -95,39 +110,52 @@ export function filterEnglishTasksForTier(
   return tasks.filter((t) => t.sort_order <= maxSort);
 }
 
-export const ENGLISH_CHAPTERS: EnglishChapter[] = [
-  {
-    key: "texts",
-    num: 1,
-    title: "Texts",
-    subsections: texts.subsections,
-    tasks: texts.tasks,
-  },
-  {
-    key: "grammar",
-    num: 2,
-    title: "Grammar",
-    subsections: grammar.subsections,
-    tasks: grammar.tasks,
-  },
-  {
-    key: "vocabulary",
-    num: 3,
-    title: "Vocabulary",
-    subsections: vocabulary.subsections,
-    tasks: vocabulary.tasks,
-  },
-];
+export async function loadEnglishChapters(): Promise<EnglishChapter[]> {
+  const [texts, grammar, vocabulary] = await Promise.all([
+    loadBankKey("texts"),
+    loadBankKey("grammar"),
+    loadBankKey("vocabulary"),
+  ]);
+  return [
+    {
+      key: "texts",
+      num: 1,
+      title: "Texts",
+      subsections: texts.subsections,
+      tasks: texts.tasks,
+    },
+    {
+      key: "grammar",
+      num: 2,
+      title: "Grammar",
+      subsections: grammar.subsections,
+      tasks: grammar.tasks,
+    },
+    {
+      key: "vocabulary",
+      num: 3,
+      title: "Vocabulary",
+      subsections: vocabulary.subsections,
+      tasks: vocabulary.tasks,
+    },
+  ];
+}
 
-export function englishChaptersForTier(tier: EnglishTasksTier): EnglishChapter[] {
-  return ENGLISH_CHAPTERS.map((ch) => ({
+export async function loadEnglishChaptersForTier(
+  tier: EnglishTasksTier,
+): Promise<EnglishChapter[]> {
+  const chapters = await loadEnglishChapters();
+  return chapters.map((ch) => ({
     ...ch,
     tasks: filterEnglishTasksForTier(ch.tasks, tier, ch.key),
   }));
 }
 
-export function allEnglishTasks(tier: EnglishTasksTier = "full"): EnglishTask[] {
-  return englishChaptersForTier(tier).flatMap((ch) => ch.tasks);
+export async function loadAllEnglishTasks(
+  tier: EnglishTasksTier = "full",
+): Promise<EnglishTask[]> {
+  const chapters = await loadEnglishChaptersForTier(tier);
+  return chapters.flatMap((ch) => ch.tasks);
 }
 
 export function passageForTask(task: EnglishTask | undefined, chapters: EnglishChapter[]): string {

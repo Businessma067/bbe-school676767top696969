@@ -5,7 +5,7 @@
  */
 
 import {
-  ENGLISH_CHAPTERS,
+  loadEnglishChapters,
   type EnglishTask,
 } from "@/data/english-chapters";
 import {
@@ -84,5 +84,6 @@ export async function getLocalBuilderTasks(
     const loaded = await loadAllEconomicsChapterTasks();
     return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
   }
-  return ENGLISH_CHAPTERS.flatMap((ch) => ch.tasks.map(englishTaskToBank));
+  const chapters = await loadEnglishChapters();
+  return chapters.flatMap((ch) => ch.tasks.map(englishTaskToBank));
 }

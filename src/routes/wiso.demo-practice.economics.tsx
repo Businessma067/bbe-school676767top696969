@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EconomicsTasksPage } from "@/components/EconomicsTasksPage";
-import { loadAllWisoEconomicsChapterTasks } from "@/data/wiso-economics-chapters";
+import {
+  loadAllWisoEconomicsChapterTasks,
+  loadWisoEconomicsChapterTasks,
+} from "@/data/wiso-economics-chapters";
 import { WISO_ECONOMICS_BOOK_TOC } from "@/data/wiso-economics-subtopics";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -41,6 +44,7 @@ function WisoDemoEconomicsTasks() {
     <EconomicsTasksPage
       chapters={CHAPTERS}
       loadAllChapters={loadAllWisoEconomicsChapterTasks}
+      loadChapter={loadWisoEconomicsChapterTasks}
       storageKey="wiso.economics.demo.progress.v1"
       backTo="/wiso/demo-practice"
       enableTheory={false}

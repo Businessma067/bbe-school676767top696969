@@ -26,7 +26,6 @@ import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 import { SignupBite } from "../components/SignupBite";
-import { NewsFreshToast } from "../components/NewsFreshToast";
 import { CourseCallDock } from "../components/CourseCallCalendar";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
@@ -45,6 +44,10 @@ const FloatingAssistant = lazyNamed(
   "FloatingAssistant",
 );
 const SupportChat = lazyNamed(() => import("../components/SupportChat"), "SupportChat");
+const NewsFreshToast = lazyNamed(
+  () => import("../components/NewsFreshToast"),
+  "NewsFreshToast",
+);
 
 function NotFoundComponent() {
   return (

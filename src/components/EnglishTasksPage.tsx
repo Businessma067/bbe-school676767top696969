@@ -34,7 +34,7 @@ import {
 } from "@/components/UnansweredIndicator";
 import {
   DEMO_ENGLISH_FREE_LIMIT,
-  englishChaptersForTier,
+  loadEnglishChaptersForTier,
   passageForTask,
   type EnglishChapter,
   type EnglishTask,
@@ -193,19 +193,53 @@ export function EnglishTasksPage({
   contentLangStorageKey = "wiso.german.contentLang.v1",
   contentTranslationCacheKey = "wiso.german.enCache.v1",
 }: Props) {
-  const chapters = useMemo(
-    () => chaptersProp ?? englishChaptersForTier(tier),
-    [chaptersProp, tier],
+  const [loadedChapters, setLoadedChapters] = useState<EnglishChapter[] | null>(
+    chaptersProp ?? null,
   );
+  const chapters = chaptersProp ?? loadedChapters ?? [];
+  const [chaptersError, setChaptersError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (chaptersProp) {
+      setLoadedChapters(chaptersProp);
+      return;
+    }
+    let cancel = false;
+    setLoadedChapters(null);
+    setChaptersError(null);
+    (async () => {
+      try {
+        const next = await loadEnglishChaptersForTier(tier);
+        if (!cancel) setLoadedChapters(next);
+      } catch (err) {
+        if (!cancel) {
+          setChaptersError(err instanceof Error ? err.message : "Failed to load English tasks.");
+        }
+      }
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, [chaptersProp, tier]);
+
   const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
     null,
   );
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
   const [progress, setProgress] = useState<Progress>(() => loadProgress(storageKey));
-  const [expanded, setExpanded] = useState<Record<string, boolean>>(() =>
-    Object.fromEntries(chapters.map((c) => [c.key, false])),
-  );
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    if (!chapters.length) return;
+    setExpanded((prev) => {
+      const next = { ...prev };
+      for (const ch of chapters) {
+        if (next[ch.key] === undefined) next[ch.key] = false;
+      }
+      return next;
+    });
+  }, [chapters]);
   const [expandedSub, setExpandedSub] = useState<Record<string, boolean>>({});
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileChaptersOpen, setMobileChaptersOpen] = useState(false);
@@ -507,6 +541,24 @@ export function EnglishTasksPage({
       root.style.overscrollBehavior = "";
     };
   }, [textsWorkspace]);
+
+  if (!chaptersProp && !loadedChapters) {
+    return (
+      <div className={PRACTICE_PAGE}>
+        <SiteHeader maxWidthClassName="max-w-none" compact />
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 px-4 py-24 text-sm text-muted-foreground">
+          {chaptersError ? (
+            <p className="text-destructive">{chaptersError}</p>
+          ) : (
+            <>
+              <Loader2 className="h-5 w-5 animate-spin" aria-hidden="true" />
+              <p>Loading English tasks…</p>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <PracticeCalcProvider>

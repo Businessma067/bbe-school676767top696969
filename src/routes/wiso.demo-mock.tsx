@@ -16,8 +16,8 @@ import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
-import { WISO_MOCK_EXAM_DEMO_SECTION_COUNTS } from "@/lib/wiso-mock-exam-demo-content";
 import { getFreeWisoDemoMockExam, type MockExamSummary } from "@/lib/mock-exam-catalog";
+import { WISO_MOCK_SECTION_COUNTS } from "@/lib/mock-exams";
 import { storeExamTrack } from "@/lib/exam-track";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
@@ -410,19 +410,19 @@ export function WisoDemoMockPage() {
             {[
               {
                 subject: "Wirtschaft verstehen",
-                count: WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.economics,
+                count: WISO_MOCK_SECTION_COUNTS.economics,
                 detail:
                   "True/False-Aussagencluster unter gemeinsamen Stämmen, Definitionen, Märkte und Bilanzkennzahlen.",
               },
               {
                 subject: "Deutsch",
-                count: WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.german,
+                count: WISO_MOCK_SECTION_COUNTS.german,
                 detail:
                   "Leseverständnis zu „Nudging und die Grenzen verhaltensökonomischer Politik“, wie in der Prüfung.",
               },
               {
                 subject: "Mathematik",
-                count: WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.math,
+                count: WISO_MOCK_SECTION_COUNTS.math,
                 detail:
                   "Matura-Tiefe: Algebra, Funktionen, Wahrscheinlichkeit und Rechnen unter Zeitdruck.",
               },
@@ -694,19 +694,19 @@ export function WisoDemoMockPage() {
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Wirtschaft</span>
               <span className="font-semibold">
-                {WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.economics} Fragen
+                {WISO_MOCK_SECTION_COUNTS.economics} Fragen
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Deutsch</span>
               <span className="font-semibold">
-                {WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.german} Fragen
+                {WISO_MOCK_SECTION_COUNTS.german} Fragen
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Mathematik</span>
               <span className="font-semibold">
-                {WISO_MOCK_EXAM_DEMO_SECTION_COUNTS.math} Fragen
+                {WISO_MOCK_SECTION_COUNTS.math} Fragen
               </span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">

@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EconomicsTasksPage } from "@/components/EconomicsTasksPage";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
-import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
+import {
+  loadAllEconomicsChapterTasks,
+  loadEconomicsChapterTasks,
+} from "@/data/economics-chapters";
 
 export const Route = createFileRoute("/products/full-course-economics")({
   head: () => ({
@@ -27,6 +30,7 @@ export const Route = createFileRoute("/products/full-course-economics")({
             { num: 6, title: "Accounting – keeping record of business transactions" },
           ]}
           loadAllChapters={loadAllEconomicsChapterTasks}
+          loadChapter={loadEconomicsChapterTasks}
           storageKey="bbe.economics.progress.v1"
           backTo="/products/full-course-subjects"
         />

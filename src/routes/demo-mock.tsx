@@ -16,8 +16,8 @@ import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
-import { MOCK_EXAM_DEMO_SECTION_COUNTS } from "@/lib/mock-exam-demo-content";
 import { getFreeDemoMockExam, type MockExamSummary } from "@/lib/mock-exam-catalog";
+import { BBE_MOCK_SECTION_COUNTS } from "@/lib/mock-exams";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import { fetchMockAttempts, type MockAttempt } from "@/lib/user-progress";
@@ -395,19 +395,19 @@ export function DemoMockPage() {
             {[
               {
                 subject: "Economics & Business",
-                count: MOCK_EXAM_DEMO_SECTION_COUNTS.economics,
+                count: BBE_MOCK_SECTION_COUNTS.economics,
                 detail:
                   "True/False statement clusters under shared stems, definitions, markets, and accounting traps.",
               },
               {
                 subject: "English",
-                count: MOCK_EXAM_DEMO_SECTION_COUNTS.english,
+                count: BBE_MOCK_SECTION_COUNTS.english,
                 detail:
                   "Reading, vocabulary, and grammar tasks in the same mix style as the written exam.",
               },
               {
                 subject: "Mathematics",
-                count: MOCK_EXAM_DEMO_SECTION_COUNTS.math,
+                count: BBE_MOCK_SECTION_COUNTS.math,
                 detail:
                   "School-leaving depth: algebra, functions, probability, and calculation under time pressure.",
               },
@@ -657,18 +657,18 @@ export function DemoMockPage() {
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Economics</span>
               <span className="font-semibold">
-                {MOCK_EXAM_DEMO_SECTION_COUNTS.economics} questions
+                {BBE_MOCK_SECTION_COUNTS.economics} questions
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">English</span>
               <span className="font-semibold">
-                {MOCK_EXAM_DEMO_SECTION_COUNTS.english} questions
+                {BBE_MOCK_SECTION_COUNTS.english} questions
               </span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Math</span>
-              <span className="font-semibold">{MOCK_EXAM_DEMO_SECTION_COUNTS.math} questions</span>
+              <span className="font-semibold">{BBE_MOCK_SECTION_COUNTS.math} questions</span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="font-semibold">Total</span>

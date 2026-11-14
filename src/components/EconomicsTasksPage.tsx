@@ -41,7 +41,7 @@ import { guestAccessByTaskId } from "@/lib/guest-preview";
 import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
 import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
 import {
-  loadAllWisoEconomicsEnOverlays,
+  loadWisoEconomicsEnChapterOverlay,
   type WisoEconomicsEnOverlay,
 } from "@/data/wiso-economics-en-overlays";
 
@@ -53,6 +53,8 @@ export type EconomicsChapterMeta = { num: number; title: string };
 export type EconomicsTasksPageProps = {
   chapters: EconomicsChapterMeta[];
   loadAllChapters: () => Promise<{ num: number; tasks: EconomicsTask[] }[]>;
+  /** Prefer this for chapter practice so only one bank downloads at a time. */
+  loadChapter?: (num: number) => Promise<EconomicsTask[]>;
   storageKey: string;
   backTo: string;
   backLabel?: string;
@@ -131,6 +133,7 @@ function chapterOf(c: Case): number {
 export function EconomicsTasksPage({
   chapters: CHAPTERS,
   loadAllChapters,
+  loadChapter,
   storageKey: STORAGE_KEY,
   backTo,
   backLabel = "← Back",
@@ -153,8 +156,10 @@ export function EconomicsTasksPage({
     idx >= freeLimitOf(chapter);
   const guestGateOn = Number.isFinite(freeLimitPerChapter);
   const authGate = useAuthGate();
-  const [cases, setCases] = useState<Case[] | null>(null);
+  const [casesByChapter, setCasesByChapter] = useState<Map<number, Case[]>>(new Map());
+  const [allCases, setAllCases] = useState<Case[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [loadingChapter, setLoadingChapter] = useState(false);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
@@ -192,48 +197,108 @@ export function EconomicsTasksPage({
 
   useEffect(() => {
     if (!enableContentTranslation) return;
+    if (activeChapter === null || activeChapter === "revision") return;
     let cancel = false;
     (async () => {
       try {
-        const map = await loadAllWisoEconomicsEnOverlays();
-        if (!cancel) setEnOverlays(map);
+        const map = await loadWisoEconomicsEnChapterOverlay(activeChapter);
+        if (cancel) return;
+        setEnOverlays((prev) => {
+          const next = new Map(prev ?? []);
+          for (const [id, row] of map) next.set(id, row);
+          return next;
+        });
       } catch {
-        if (!cancel) setEnOverlays(new Map());
+        if (!cancel && !enOverlays) setEnOverlays(new Map());
       }
     })();
     return () => {
       cancel = true;
     };
-  }, [enableContentTranslation]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [enableContentTranslation, activeChapter]);
 
+  const toCases = (tasks: EconomicsTask[]): Case[] =>
+    tasks.map((t) => ({
+      id: t.id,
+      case_id: t.case_id,
+      title: t.title,
+      context: t.context,
+      statements: t.statements,
+      answer_key: t.answer_key,
+      tactical_explanations: t.tactical_explanations,
+      difficulty_level: t.difficulty_level,
+      sort_order: t.sort_order,
+      subsection: t.subsection,
+    }));
+
+  // Load only the active chapter (or all chapters for Revision).
   useEffect(() => {
+    if (activeChapter === null) return;
     let cancel = false;
-    (async () => {
-      try {
-        const loaded = await loadAllChapters();
-        if (cancel) return;
-        const rows: Case[] = loaded.flatMap(({ tasks }) =>
-          tasks.map((t) => ({
-            id: t.id,
-            case_id: t.case_id,
-            title: t.title,
-            context: t.context,
-            statements: t.statements,
-            answer_key: t.answer_key,
-            tactical_explanations: t.tactical_explanations,
-            difficulty_level: t.difficulty_level,
-            sort_order: t.sort_order,
-            subsection: t.subsection,
-          })),
-        );
-        setCases(rows);
-      } catch (err) {
-        if (cancel) return;
-        setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+
+    const run = async () => {
+      setError(null);
+      if (activeChapter === "revision") {
+        if (allCases) return;
+        setLoadingChapter(true);
+        try {
+          const loaded = await loadAllChapters();
+          if (cancel) return;
+          const nextMap = new Map<number, Case[]>();
+          const rows = loaded.flatMap(({ num, tasks }) => {
+            const mapped = toCases(tasks);
+            nextMap.set(num, mapped);
+            return mapped;
+          });
+          setCasesByChapter(nextMap);
+          setAllCases(rows);
+        } catch (err) {
+          if (!cancel) {
+            setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+          }
+        } finally {
+          if (!cancel) setLoadingChapter(false);
+        }
+        return;
       }
-    })();
-    return () => { cancel = true; };
-  }, []);
+
+      if (casesByChapter.has(activeChapter)) return;
+      setLoadingChapter(true);
+      try {
+        const tasks = loadChapter
+          ? await loadChapter(activeChapter)
+          : ((await loadAllChapters()).find((row) => row.num === activeChapter)?.tasks ?? []);
+        if (cancel) return;
+        setCasesByChapter((cur) => {
+          if (cur.has(activeChapter)) return cur;
+          const next = new Map(cur);
+          next.set(activeChapter, toCases(tasks));
+          return next;
+        });
+      } catch (err) {
+        if (!cancel) {
+          setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+        }
+      } finally {
+        if (!cancel) setLoadingChapter(false);
+      }
+    };
+
+    void run();
+    return () => {
+      cancel = true;
+    };
+    // casesByChapter intentionally omitted — we only read .has for the active key.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeChapter, allCases, loadAllChapters, loadChapter]);
+
+  const cases =
+    activeChapter === "revision"
+      ? allCases
+      : activeChapter != null
+        ? (casesByChapter.get(activeChapter) ?? null)
+        : null;
 
   useEffect(() => {
     if (skipNextIdxResetRef.current) {
@@ -276,14 +341,9 @@ export function EconomicsTasksPage({
 
   const byChapter = useMemo(() => {
     const map = new Map<number, Case[]>();
-    CHAPTERS.forEach((c) => map.set(c.num, []));
-    (cases ?? []).forEach((c) => {
-      const ch = chapterOf(c);
-      if (!map.has(ch)) map.set(ch, []);
-      map.get(ch)!.push(c);
-    });
+    CHAPTERS.forEach((c) => map.set(c.num, casesByChapter.get(c.num) ?? []));
     return map;
-  }, [cases]);
+  }, [CHAPTERS, casesByChapter]);
 
   const guestAccess = useMemo(() => {
     if (!guestGateOn) return null;
@@ -775,7 +835,7 @@ export function EconomicsTasksPage({
             </div>
           )}
 
-          {cases === null && !error && (
+          {(cases === null || loadingChapter) && !error && activeChapter != null && (
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Loader2 className="h-4 w-4 animate-spin" /> Loading cases…
             </div>
