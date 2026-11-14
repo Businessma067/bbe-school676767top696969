@@ -116,6 +116,15 @@ export const WISO_MOCK_EXAMS: MockExamSummary[] = [
     pointsTotal: WISO_POINTS,
     contentRev: "2026-09-21d · 34q · KaTeX audit · fix $20\\%$ close",
   },
+  ...Array.from({ length: 6 }, (_, index): MockExamSummary => ({
+    id: `wiso-mock-${index + 2}`,
+    title: `WiSo Mock Exam ${index + 2}`,
+    questionCount: 34,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: SCORING_CONFIG.economics.totalPoints + SCORING_CONFIG.german.totalPoints +
+      SCORING_CONFIG.math.pointsPerTask.slice(0, 13).reduce((sum, points) => sum + points, 0),
+  })),
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {

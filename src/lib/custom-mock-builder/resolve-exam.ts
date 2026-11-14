@@ -7,7 +7,7 @@ import {
 } from "@/lib/custom-mock-builder/client";
 import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
 import {
-  buildExamQuestions,
+  loadExamQuestions,
   getExamById,
   isWisoCuratedMockId,
   summaryFromCustomMock,
@@ -78,7 +78,7 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
   if (!summary) return null;
   let questions: ExamQuestion[];
   try {
-    questions = buildExamQuestions(examId);
+    questions = await loadExamQuestions(examId);
   } catch (err) {
     console.error("[resolveExam] failed to build questions", examId, err);
     return null;

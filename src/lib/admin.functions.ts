@@ -584,7 +584,7 @@ export const adminGetMockExamStats = createServerFn({ method: "GET" })
         const summary = mockExams.getExamById(examId);
         if (summary) title = summary.title;
         try {
-          questions = mockExams.buildExamQuestions(examId);
+          questions = await mockExams.loadExamQuestions(examId);
         } catch {
           questions = [];
         }

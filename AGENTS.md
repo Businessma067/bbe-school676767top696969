@@ -35,3 +35,4 @@
 - User CSV exports neutralize spreadsheet formula prefixes before CSV quoting to prevent exported profile text executing as formulas.
 - Monobank notifications must pass raw-body signature verification before payment synchronization so only the provider can trigger privileged updates.
 - Chat case context remains validated, structured user-role data, never system instructions, to preserve the tutor's trusted instruction boundary.
+- Keep the WiSo catalog independent of question banks and load curated papers asynchronously for take, review, and admin statistics; missing catalog entries must not be used to reduce startup memory.

@@ -135,7 +135,7 @@ export function WisoMockExamsPage() {
             WiSo Mock Exams
           </h1>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Drei volle Probeprüfungen: WiSo Mock Exam 1, WiSo Mock Exam 2 und WiSo Mock Exam 3.
+            Sieben volle Probeprüfungen: WiSo Mock Exam 1–7.
             Wirtschaft verstehen, Mathematik und deutsches Sprachverständnis, mit demselben
             Teilpunktesystem wie in der echten Prüfung.
           </p>

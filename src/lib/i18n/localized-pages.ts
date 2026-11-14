@@ -1,4 +1,4 @@
-import type { ComponentType } from "react";
+import { lazy, type ComponentType } from "react";
 import { getNewsPost } from "@/data/news/posts";
 import { isNewsPostPath, normalizeAppPath, type LocalizablePath } from "./locale-path";
 
@@ -53,6 +53,8 @@ const LOCALIZED_PAGE_LOADERS: Record<LocalizablePath, () => Promise<ComponentTyp
   "/news": () => import("@/routes/news").then((m) => m.NewsPage),
   "/important-features": () =>
     import("@/routes/important-features").then((m) => m.ImportantFeaturesPage),
+  "/how-it-works": () =>
+    import("@/routes/how-it-works").then((m) => m.HowItWorksPage),
   "/features/answer-sheet": () =>
     import("@/routes/features.answer-sheet").then((m) => m.AnswerSheetFeaturePage),
   "/terms": () => import("@/routes/terms").then((m) => m.TermsPage),
@@ -79,6 +81,21 @@ const LOCALIZED_PAGE_LOADERS: Record<LocalizablePath, () => Promise<ComponentTyp
 };
 
 const pageCache = new Map<string, ComponentType>();
+const lazyPageCache = new Map<string, ComponentType>();
+
+/** SSR route context is serialized, but its module cache is not shared with the browser. */
+export function getLocalizedLazyPage(pathname: string): ComponentType {
+  const path = normalizeAppPath(pathname);
+  const cached = lazyPageCache.get(path);
+  if (cached) return cached;
+  const Page = lazy(async () => {
+    const loaded = await loadLocalizedPage(path);
+    if (!loaded) throw new Error("Localized page unavailable");
+    return { default: loaded };
+  });
+  lazyPageCache.set(path, Page);
+  return Page;
+}
 
 /** Cheap existence check — does not import page modules or mock banks. */
 export function hasLocalizedPage(pathname: string): boolean {
