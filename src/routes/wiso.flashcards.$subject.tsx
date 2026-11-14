@@ -1,16 +1,17 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
 import { FlashcardSubjectView } from "@/components/study-modes/FlashcardSubjectView";
-import { getWisoFlashcardSubject } from "@/data/wiso-flashcards";
+import { getWisoFlashcardSubjectMeta } from "@/data/wiso-flashcards";
+import { useWisoFlashcardSubject } from "@/hooks/use-flashcard-subject";
 
 export const Route = createFileRoute("/wiso/flashcards/$subject")({
   beforeLoad: ({ params }) => {
-    const subject = getWisoFlashcardSubject(params.subject);
+    const subject = getWisoFlashcardSubjectMeta(params.subject);
     if (!subject || subject.comingSoon) {
       throw redirect({ to: "/wiso/flashcards" });
     }
   },
   head: ({ params }) => {
-    const subject = getWisoFlashcardSubject(params.subject);
+    const subject = getWisoFlashcardSubjectMeta(params.subject);
     const title = subject
       ? `${subject.title} Flashcards — WiSo · BBE School`
       : "WiSo Flashcards — BBE School";
@@ -32,7 +33,14 @@ export const Route = createFileRoute("/wiso/flashcards/$subject")({
 
 function WisoFlashcardSubjectPage() {
   const { subject: subjectId } = Route.useParams();
-  const subject = getWisoFlashcardSubject(subjectId)!;
+  const { subject, loading } = useWisoFlashcardSubject(subjectId);
+  if (loading || !subject) {
+    return (
+      <div className="flex min-h-[40vh] items-center justify-center text-sm text-muted-foreground">
+        Loading deck…
+      </div>
+    );
+  }
   return (
     <FlashcardSubjectView
       subjectId={subjectId}

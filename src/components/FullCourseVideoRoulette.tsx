@@ -266,6 +266,7 @@ export function FullCourseVideoRoulette({
                 }}
                 decoding="async"
                 loading={near || i === index ? "eager" : "lazy"}
+                fetchPriority={i === index ? "high" : near ? "auto" : "low"}
                 onDoubleClick={() => setImageOpen(true)}
                 draggable={false}
               />
@@ -379,6 +380,8 @@ export function FullCourseVideoRoulette({
                   )}
                   draggable={false}
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                 />
               </span>
               <span className="flex items-center gap-1.5 px-0.5 text-[11px] font-semibold leading-tight sm:text-xs">

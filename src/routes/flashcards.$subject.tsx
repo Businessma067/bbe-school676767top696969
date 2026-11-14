@@ -1,19 +1,17 @@
-import { createFileRoute, Link, redirect } from "@tanstack/react-router";
-import {
-  countCards,
-  getFlashcardSubject,
-} from "@/data/flashcards";
+import { createFileRoute, redirect } from "@tanstack/react-router";
+import { getFlashcardSubjectMeta } from "@/data/flashcards";
 import { FlashcardSubjectView } from "@/components/study-modes/FlashcardSubjectView";
+import { useFlashcardSubject } from "@/hooks/use-flashcard-subject";
 
 export const Route = createFileRoute("/flashcards/$subject")({
   beforeLoad: ({ params }) => {
-    const subject = getFlashcardSubject(params.subject);
+    const subject = getFlashcardSubjectMeta(params.subject);
     if (!subject || subject.comingSoon) {
       throw redirect({ to: "/flashcards" });
     }
   },
   head: ({ params }) => {
-    const subject = getFlashcardSubject(params.subject);
+    const subject = getFlashcardSubjectMeta(params.subject);
     const title = subject ? `${subject.title} Flashcards — BBE School` : "Flashcards — BBE School";
     return {
       links: [{ rel: "canonical", href: `https://bbe-school.com/flashcards/${params.subject}` }],
@@ -31,7 +29,14 @@ export const Route = createFileRoute("/flashcards/$subject")({
 
 function FlashcardSubjectPage() {
   const { subject: subjectId } = Route.useParams();
-  const subject = getFlashcardSubject(subjectId)!;
+  const { subject, loading } = useFlashcardSubject(subjectId);
+  if (loading || !subject) {
+    return (
+      <div className="flex min-h-[40vh] items-center justify-center text-sm text-muted-foreground">
+        Loading deck…
+      </div>
+    );
+  }
   return (
     <FlashcardSubjectView
       subjectId={subjectId}

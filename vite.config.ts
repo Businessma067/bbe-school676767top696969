@@ -58,6 +58,15 @@ export default defineConfig({
       rollupOptions: {
         output: {
           manualChunks(id) {
+            // AI SDK is server-route only — keep it out of shared client vendor chunks.
+            if (
+              id.includes("node_modules/ai/") ||
+              id.includes("node_modules\\ai\\") ||
+              id.includes("node_modules/@ai-sdk/") ||
+              id.includes("node_modules\\@ai-sdk\\")
+            ) {
+              return "ai-sdk-server";
+            }
             if (id.includes("node_modules/katex")) return "katex";
             if (
               id.includes("node_modules/react-markdown") ||
@@ -71,6 +80,24 @@ export default defineConfig({
             }
             if (id.includes("node_modules/recharts") || id.includes("node_modules/d3-")) {
               return "charts";
+            }
+            if (
+              id.includes("node_modules/@supabase/") ||
+              id.includes("node_modules\\@supabase\\") ||
+              id.includes("/integrations/supabase/") ||
+              id.includes("\\integrations\\supabase\\")
+            ) {
+              return "supabase-client";
+            }
+            if (id.includes("FloatingAssistant")) {
+              return "floating-assistant";
+            }
+            if (
+              id.includes("CalendlyInlineEmbed") ||
+              id.includes("BookCallSection") ||
+              id.includes("BookCallTab")
+            ) {
+              return "calendly";
             }
             // Keep jsx runtime out of the i18n chunk — it is the app-wide import source.
             if (
@@ -138,12 +165,11 @@ export default defineConfig({
             ) {
               return "economics-banks";
             }
-            if (
-              id.includes("mock-exam-") &&
-              (id.includes("-content") || id.includes("-sourced"))
-            ) {
-              return "mock-papers";
-            }
+            // One async chunk per mock paper (BBE + WiSo), not a single mock-papers bucket.
+            const wisoMock = id.match(/[/\\]wiso-mock-exam-(\d+|demo)(?:-content|-sourced|-math-de)/);
+            if (wisoMock) return `wiso-mock-exam-${wisoMock[1]}`;
+            const bbeMock = id.match(/[/\\]mock-exam-(\d+|demo)(?:-content|-sourced)/);
+            if (bbeMock) return `mock-exam-${bbeMock[1]}`;
             // Heavy i18n packs — separate async chunks (not in EN first paint).
             if (
               id.includes("/src/lib/i18n/generated") ||

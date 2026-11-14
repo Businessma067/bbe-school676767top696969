@@ -125,6 +125,9 @@ export function HybridCourseProductPage() {
             <img
               src={IMAGE}
               alt="Hybrid BBE + WiSo Course"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
               className="h-full w-full object-cover"
             />
           </div>

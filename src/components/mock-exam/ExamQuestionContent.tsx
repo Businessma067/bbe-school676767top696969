@@ -1,7 +1,7 @@
+import { lazy, Suspense } from "react";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
-import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import { MathMarkdownTable } from "@/components/mock-exam/MathMarkdownTable";
 import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
@@ -9,8 +9,12 @@ import type { ExamQuestion } from "@/lib/mock-exams";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import { cn } from "@/lib/utils";
 
+const CaseContextRich = lazy(() =>
+  import("@/components/CaseContextRich").then((m) => ({ default: m.CaseContextRich })),
+);
+
 function MathText({ text, className }: { text: string; className?: string }) {
-  return <FlashcardMath text={text.replace(/\*\*/g, "")} className={className} />;
+  return <LazyFlashcardMath text={text.replace(/\*\*/g, "")} className={className} />;
 }
 
 export function ExamQuestionBody({
@@ -66,7 +70,9 @@ export function ExamQuestionBody({
           {q.tablesMarkdown ? <MathMarkdownTable markdown={q.tablesMarkdown} /> : null}
         </div>
       ) : (
-        <CaseContextRich content={q.stem} emphasized={emphasized} className="text-foreground" />
+        <Suspense fallback={<div className="min-h-[4rem] text-sm text-muted-foreground">…</div>}>
+          <CaseContextRich content={q.stem} emphasized={emphasized} className="text-foreground" />
+        </Suspense>
       )}
     </div>
   );

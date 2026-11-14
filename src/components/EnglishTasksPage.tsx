@@ -82,6 +82,16 @@ function saveProgress(storageKey: string, p: Progress) {
   localStorage.setItem(storageKey, JSON.stringify(p));
 }
 
+/** Map revision task ids to English/German banks (`en-t-…`, `de-t-…`, `en-g-…`, `en-v-…`). */
+function bankKeyFromEnglishTaskId(id: string): EnglishChapter["key"] | null {
+  const m = /^(?:en|de)-([tgv])-/i.exec(id);
+  if (!m) return null;
+  if (m[1] === "t") return "texts";
+  if (m[1] === "g") return "grammar";
+  if (m[1] === "v") return "vocabulary";
+  return null;
+}
+
 function localIndexInSubsection(
   tasks: EnglishTask[],
   idx: number,
@@ -224,6 +234,7 @@ export function EnglishTasksPage({
   const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
     null,
   );
+  const [progress, setProgress] = useState<Progress>(() => loadProgress(storageKey));
 
   const ensureEnglishChapter = async (key: EnglishChapter["key"]) => {
     if (chaptersProp) return;
@@ -248,7 +259,7 @@ export function EnglishTasksPage({
     }
   };
 
-  /** Load the active bank (or all banks for Revision). Never Promise.all three on mount. */
+  /** Load the active bank (or only banks that own revision task ids). Never Promise.all three on mount. */
   useEffect(() => {
     if (chaptersProp) return;
     if (activeChapter === null) return;
@@ -271,16 +282,29 @@ export function EnglishTasksPage({
       let revisionFailed = false;
       try {
         if (activeChapter === "revision") {
-          revisionMissing = (["texts", "grammar", "vocabulary"] as const).filter(
-            (k) => !loadedChapterKeysRef.current.has(k),
-          );
+          const needed = new Set<EnglishChapter["key"]>();
+          let unresolved = 0;
+          for (const id of progress.revision) {
+            const key = bankKeyFromEnglishTaskId(id);
+            if (key) needed.add(key);
+            else unresolved += 1;
+          }
+          // Also keep banks already loaded that still contain revision items.
+          for (const ch of chapters) {
+            if (ch.tasks.some((t) => progress.revision.includes(t.id))) needed.add(ch.key);
+          }
+          const targets =
+            unresolved > 0
+              ? (["texts", "grammar", "vocabulary"] as const)
+              : ([...needed] as EnglishChapter["key"][]);
+          revisionMissing = targets.filter((k) => !loadedChapterKeysRef.current.has(k));
           if (revisionMissing.length === 0) return;
           setLoadingChapterKeys((prev) => {
             const next = { ...prev };
             for (const k of revisionMissing) next[k] = true;
             return next;
           });
-          // Revision needs every bank; load sequentially so the UI stays responsive.
+          // Load only needed banks sequentially so the UI stays responsive.
           for (const key of revisionMissing) {
             if (cancel) return;
             const next = await loadEnglishChapter(key, tier);
@@ -318,10 +342,9 @@ export function EnglishTasksPage({
       cancel = true;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeChapter, chaptersProp, tier]);
+  }, [activeChapter, chaptersProp, tier, progress.revision]);
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
-  const [progress, setProgress] = useState<Progress>(() => loadProgress(storageKey));
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
   useEffect(() => {

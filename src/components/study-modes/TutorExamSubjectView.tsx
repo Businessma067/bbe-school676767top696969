@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import { countCards } from "@/data/flashcards";
 import type { FlashcardSubjectViewModel } from "@/components/study-modes/FlashcardSubjectView";
 import {
@@ -426,7 +426,7 @@ function ExamCard({
             {question.prompt}
           </p>
           <div className="mt-2 rounded-xl border border-dashed border-border bg-background/80 px-4 py-3">
-            <FlashcardMath
+            <LazyFlashcardMath
               text={question.stem}
               className={
                 "text-base leading-snug " +
@@ -482,7 +482,7 @@ function ExamCard({
                       letter
                     )}
                   </span>
-                  <FlashcardMath
+                  <LazyFlashcardMath
                     text={c.label}
                     className="min-w-0 flex-1 leading-snug"
                   />
@@ -505,10 +505,10 @@ function ExamCard({
               {ui?.reveal ?? "Reveal"}
             </p>
             <p className="mt-1 font-semibold">
-              <FlashcardMath text={question.revealTerm} />
+              <LazyFlashcardMath text={question.revealTerm} />
             </p>
             <p className="mt-1 text-[13px] text-muted-foreground">
-              <FlashcardMath text={question.revealExplanation} />
+              <LazyFlashcardMath text={question.revealExplanation} />
             </p>
             <button
               type="button"

@@ -641,6 +641,8 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
           src={src}
           alt={`${name} logo`}
           loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           className="h-full w-auto max-w-full object-contain"
         />
       </div>

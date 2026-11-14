@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BookOpen, ClipboardList, Layers, Puzzle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -150,6 +150,8 @@ function StudyToolsCycle({
 }) {
   const [active, setActive] = useState(0);
   const [reduceMotion, setReduceMotion] = useState(false);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const visibleRef = useRef(true);
   const slideMs = 5200;
   const de = locale === "de";
 
@@ -163,10 +165,41 @@ function StudyToolsCycle({
 
   useEffect(() => {
     if (reduceMotion || tools.length < 2) return;
-    const id = window.setInterval(() => {
-      setActive((i) => (i + 1) % tools.length);
-    }, slideMs);
-    return () => window.clearInterval(id);
+    let id: number | null = null;
+    const start = () => {
+      if (id != null) return;
+      id = window.setInterval(() => {
+        if (!visibleRef.current) return;
+        setActive((i) => (i + 1) % tools.length);
+      }, slideMs);
+    };
+    const stop = () => {
+      if (id == null) return;
+      window.clearInterval(id);
+      id = null;
+    };
+
+    const el = rootRef.current;
+    let observer: IntersectionObserver | null = null;
+    if (el && typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          visibleRef.current = entry.isIntersecting;
+          if (entry.isIntersecting) start();
+          else stop();
+        },
+        { threshold: 0 },
+      );
+      observer.observe(el);
+      start();
+    } else {
+      start();
+    }
+
+    return () => {
+      stop();
+      observer?.disconnect();
+    };
   }, [reduceMotion, tools.length]);
 
   const renderVisual = (kind: StudyToolKind) => {
@@ -267,7 +300,7 @@ function StudyToolsCycle({
   );
 
   return (
-    <div className="study-tools-cycle mt-5 flex flex-1 flex-col" aria-hidden>
+    <div ref={rootRef} className="study-tools-cycle mt-5 flex flex-1 flex-col" aria-hidden>
       <div
         className={cn(
           "study-tools-cycle-stage relative flex flex-1 flex-col",

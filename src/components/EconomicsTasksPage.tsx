@@ -137,6 +137,15 @@ function chapterOf(c: Case): number {
   return m ? parseInt(m[1], 10) : 0;
 }
 
+/** Parse chapter from revision ids (`CASE 2.1.01`, `2.11`, subsection-style). */
+function chapterNumFromEconomicsTaskId(id: string): number | null {
+  const caseId = /(?:CASE\s*)?(\d+)\s*\.\s*\d+/i.exec(id);
+  if (caseId) return Number(caseId[1]);
+  const bare = /^(\d+)$/.exec(id.trim());
+  if (bare) return Number(bare[1]);
+  return null;
+}
+
 export function EconomicsTasksPage({
   chapters: CHAPTERS,
   loadAllChapters,
@@ -239,7 +248,7 @@ export function EconomicsTasksPage({
       subsection: t.subsection,
     }));
 
-  // Load only the active chapter (or all chapters for Revision).
+  // Load only the active chapter (or revision chapters that own revision ids).
   useEffect(() => {
     if (activeChapter === null) return;
     let cancel = false;
@@ -247,8 +256,51 @@ export function EconomicsTasksPage({
     const run = async () => {
       setError(null);
       if (activeChapter === "revision") {
-        // Clear stale spinner from a cancelled sibling load when cache already warm.
-        if (allCases) {
+        // Prefer per-chapter loads for chapters that appear in revision ids.
+        const owned = new Set<number>();
+        let unresolved = 0;
+        for (const id of progress.revision) {
+          const n = chapterNumFromEconomicsTaskId(id);
+          if (n != null && CHAPTERS.some((c) => c.num === n)) owned.add(n);
+          else unresolved += 1;
+        }
+        const preferPerChapter = !!loadChapter && unresolved === 0 && owned.size > 0;
+        if (preferPerChapter) {
+          const missing = [...owned].filter((n) => !casesByChapter.has(n));
+          if (missing.length === 0) {
+            // All owned chapters cached — assemble revision list without loadAll.
+            const rows = [...owned].flatMap((n) => casesByChapter.get(n) ?? []);
+            setAllCases(rows);
+            setLoadingChapter(false);
+            return;
+          }
+          setLoadingChapter(true);
+          try {
+            const loaded = await Promise.all(
+              missing.map(async (num) => ({ num, tasks: await loadChapter!(num) })),
+            );
+            if (cancel) return;
+            const next = new Map(casesByChapter);
+            for (const { num, tasks } of loaded) {
+              if (!next.has(num)) next.set(num, toCases(tasks));
+            }
+            setCasesByChapter(next);
+            setAllCases([...owned].flatMap((n) => next.get(n) ?? []));
+          } catch (err) {
+            if (!cancel) {
+              setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+            }
+          } finally {
+            if (!cancel) setLoadingChapter(false);
+          }
+          return;
+        }
+
+        // Clear stale spinner when every revision id is already present.
+        if (
+          allCases &&
+          progress.revision.every((id) => allCases.some((c) => c.id === id || c.case_id === id))
+        ) {
           setLoadingChapter(false);
           return;
         }
@@ -305,7 +357,7 @@ export function EconomicsTasksPage({
     };
     // casesByChapter intentionally omitted — we only read .has for the active key.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeChapter, allCases, loadAllChapters, loadChapter]);
+  }, [activeChapter, allCases, loadAllChapters, loadChapter, progress.revision]);
 
   const cases =
     activeChapter === "revision"

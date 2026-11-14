@@ -5,15 +5,19 @@
  */
 
 import {
+  ENGLISH_CHAPTER_META,
+  loadEnglishChapter,
   loadEnglishChapters,
   type EnglishTask,
 } from "@/data/english-chapters";
 import {
   loadAllEconomicsChapterTasks,
+  loadEconomicsChapterTasks,
   type EconomicsTask,
 } from "@/data/economics-chapters";
 import {
   loadAllMathChapterTasks,
+  loadMathChapterTasks,
   type MathTask,
 } from "@/data/math-chapters";
 
@@ -71,18 +75,55 @@ function economicsTaskToBank(t: EconomicsTask): CustomMockBankTask {
   };
 }
 
+/**
+ * Load Full Course tasks for the builder.
+ * When `chapterNums` is provided, only those chapter banks are imported.
+ */
 export async function getLocalBuilderTasks(
   subject: "economics" | "math" | "english",
+  chapterNums?: number[],
 ): Promise<CustomMockBankTask[]> {
+  const selected =
+    chapterNums && chapterNums.length > 0
+      ? [...new Set(chapterNums)].sort((a, b) => a - b)
+      : null;
+
   if (subject === "math") {
+    if (selected) {
+      const loaded = await Promise.all(
+        selected.map(async (num) => ({
+          num,
+          tasks: await loadMathChapterTasks(num),
+        })),
+      );
+      return loaded.flatMap(({ num, tasks }) =>
+        tasks.map((t) => mathTaskToBank(num, t)).filter((t): t is CustomMockBankTask => t != null),
+      );
+    }
     const loaded = await loadAllMathChapterTasks();
     return loaded.flatMap(({ num, tasks }) =>
       tasks.map((t) => mathTaskToBank(num, t)).filter((t): t is CustomMockBankTask => t != null),
     );
   }
+
   if (subject === "economics") {
+    if (selected) {
+      const loaded = await Promise.all(
+        selected.map(async (num) => ({
+          tasks: await loadEconomicsChapterTasks(num),
+        })),
+      );
+      return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
+    }
     const loaded = await loadAllEconomicsChapterTasks();
     return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
+  }
+
+  // English: chapter 1=texts, 2=grammar, 3=vocabulary
+  if (selected) {
+    const keys = ENGLISH_CHAPTER_META.filter((m) => selected.includes(m.num)).map((m) => m.key);
+    const chapters = await Promise.all(keys.map((key) => loadEnglishChapter(key)));
+    return chapters.flatMap((ch) => ch.tasks.map(englishTaskToBank));
   }
   const chapters = await loadEnglishChapters();
   return chapters.flatMap((ch) => ch.tasks.map(englishTaskToBank));

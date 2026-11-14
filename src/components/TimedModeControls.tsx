@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Clock, Gauge, Timer, TimerOff } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
 import {
   DIFFICULTY_LABEL,
   DIFFICULTY_MULTIPLIER,
@@ -12,6 +11,13 @@ import {
   type TimedDifficulty,
   type TimedSession,
 } from "@/lib/timed-practice";
+
+/** Lazy so English/Economics TimedModeBar never pulls Ti30 into the main chunk. */
+const PracticeCalculatorInline = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({
+    default: m.PracticeCalculatorInline,
+  })),
+);
 
 const LEVELS: TimedDifficulty[] = ["easy", "standard", "hard"];
 
@@ -53,7 +59,11 @@ export function TimedModeBar({
           {session.enabled ? "Timed Mode ON" : "Timed Mode"}
         </button>
 
-        {showCalculator && <PracticeCalculatorInline />}
+        {showCalculator ? (
+          <Suspense fallback={null}>
+            <PracticeCalculatorInline />
+          </Suspense>
+        ) : null}
 
         {session.enabled && (
           <>

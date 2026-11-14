@@ -1,4 +1,4 @@
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import { cn } from "@/lib/utils";
 
 /** Parse a GFM pipe table into rows (separator row dropped). */
@@ -57,7 +57,7 @@ export function MathMarkdownTable({
                 key={`h-${i}`}
                 className="border-b border-border px-3 py-2.5 text-left font-semibold text-foreground"
               >
-                <FlashcardMath text={header[i] ?? ""} />
+                <LazyFlashcardMath text={header[i] ?? ""} />
               </th>
             ))}
           </tr>
@@ -73,7 +73,7 @@ export function MathMarkdownTable({
                     ci > 0 && "tabular-nums",
                   )}
                 >
-                  <FlashcardMath text={row[ci] ?? ""} />
+                  <LazyFlashcardMath text={row[ci] ?? ""} />
                 </td>
               ))}
             </tr>

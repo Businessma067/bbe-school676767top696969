@@ -20,17 +20,9 @@ import { PageLangContext } from "../lib/i18n/jsx/render-text";
 import { THEME_INIT_SCRIPT } from "../lib/theme";
 import { LocaleSync } from "../components/LocaleSync";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
+import { DeferredGtag } from "../components/DeferredGtag";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
-
-/** Google Ads conversion / remarketing tag (gtag.js). */
-const GOOGLE_ADS_ID = "AW-18483566972";
-const GOOGLE_ADS_GTAG_INIT = `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${GOOGLE_ADS_ID}');
-`;
 
 const FloatingAssistant = lazyNamed(
   () => import("../components/FloatingAssistant"),
@@ -159,6 +151,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         // Institutional serif for headlines + Inter for UI chrome/data.
+        // Weight-subsetted via the CSS2 API (400/500/600/700); avoid unicode-range
+        // subsets here so Lovable preview / Cyrillic / DE copy keep working.
         href: "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap",
       },
 
@@ -199,9 +193,6 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        {/* Google tag (gtag.js) — must load on every page for Ads measurement */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`} />
-        <script dangerouslySetInnerHTML={{ __html: GOOGLE_ADS_GTAG_INIT }} />
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
@@ -241,6 +232,7 @@ function RootComponent() {
             {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
             <Outlet />
             <DeferredChrome>
+              <DeferredGtag />
               <IntroSplash />
               <ActivityTracker />
               <AuthReturnRedirect />

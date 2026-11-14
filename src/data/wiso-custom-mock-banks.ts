@@ -4,7 +4,10 @@
  * client does not download the entire course JSON.
  */
 
-import { loadAllWisoEconomicsChapterTasks } from "@/data/wiso-economics-chapters";
+import {
+  loadAllWisoEconomicsChapterTasks,
+  loadWisoEconomicsChapterTasks,
+} from "@/data/wiso-economics-chapters";
 import type { EconomicsTask } from "@/data/economics-chapters";
 import { loadWisoMathChapterTasks, WISO_MATH_CHAPTERS } from "@/data/wiso-math-chapters";
 import type { MathTask } from "@/data/math-chapters";
@@ -41,9 +44,13 @@ function economicsTaskToBank(t: EconomicsTask): WisoCustomMockBankTask {
   };
 }
 
-async function loadAllWisoMathTasks(): Promise<WisoCustomMockBankTask[]> {
+async function loadWisoMathTasks(chapterNums?: number[]): Promise<WisoCustomMockBankTask[]> {
+  const chapters =
+    chapterNums && chapterNums.length > 0
+      ? WISO_MATH_CHAPTERS.filter((ch) => chapterNums.includes(ch.num))
+      : WISO_MATH_CHAPTERS;
   const loaded = await Promise.all(
-    WISO_MATH_CHAPTERS.map(async (ch) => ({
+    chapters.map(async (ch) => ({
       num: ch.num,
       tasks: await loadWisoMathChapterTasks(ch.num, "de"),
     })),
@@ -53,11 +60,30 @@ async function loadAllWisoMathTasks(): Promise<WisoCustomMockBankTask[]> {
   );
 }
 
+/**
+ * Load WiSo Full Course tasks for the builder.
+ * When `chapterNums` is provided, only those chapter banks are imported.
+ */
 export async function getWisoLocalBuilderTasks(
   subject: WisoCustomMockSubjectId,
+  chapterNums?: number[],
 ): Promise<WisoCustomMockBankTask[]> {
+  const selected =
+    chapterNums && chapterNums.length > 0
+      ? [...new Set(chapterNums)].sort((a, b) => a - b)
+      : null;
+
   if (subject === "math") {
-    return loadAllWisoMathTasks();
+    return loadWisoMathTasks(selected ?? undefined);
+  }
+
+  if (selected) {
+    const loaded = await Promise.all(
+      selected.map(async (num) => ({
+        tasks: await loadWisoEconomicsChapterTasks(num),
+      })),
+    );
+    return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
   }
   const loaded = await loadAllWisoEconomicsChapterTasks();
   return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));

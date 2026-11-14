@@ -10,6 +10,7 @@ import {
 } from "react";
 import { localizeAuto, noteEnglishSource, useAutoDictionaryVersion } from "./auto-translate";
 import {
+  dictionaryScopesForPath,
   ensureDictionaryReady,
   scheduleDictionaryWarm,
   translate,
@@ -55,10 +56,12 @@ export function LanguageProvider({
     document.documentElement.dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
   }, [lang]);
 
-  // DE/UK need heavy packs; EN warms them after idle so a later switch is fast.
+  // DE/UK need route-scoped packs; EN warms core+home after idle (not news/wiso).
   useEffect(() => {
     if (isDictionaryLang(lang)) {
-      void ensureDictionaryReady(lang);
+      const path =
+        typeof window !== "undefined" ? window.location.pathname : "/";
+      void ensureDictionaryReady(lang, { scopes: dictionaryScopesForPath(path) });
       return;
     }
     scheduleDictionaryWarm();

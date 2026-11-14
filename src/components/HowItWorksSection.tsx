@@ -407,6 +407,8 @@ export function HowItWorksSection({
   );
   const [tool, setTool] = useState<StudyTool>("flashcards");
   const [zoomed, setZoomed] = useState(false);
+  /** Defer network fetch until the slide stage is visible (or zoom opens). */
+  const [videoSrcArmed, setVideoSrcArmed] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -509,12 +511,17 @@ export function HowItWorksSection({
 
   useEffect(() => {
     setZoomed(false);
-  }, [tab, subject, tool]);
+    setVideoSrcArmed(false);
+  }, [tab, subject, tool, slide.key]);
+
+  useEffect(() => {
+    if (zoomed && !liveStage) setVideoSrcArmed(true);
+  }, [zoomed, liveStage]);
 
   useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
-    if (!video || !stage || zoomed) return;
+    if (!video || !stage || zoomed || liveStage) return;
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduceMotion) {
@@ -525,6 +532,7 @@ export function HowItWorksSection({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+          setVideoSrcArmed(true);
           void video.play().catch(() => {});
         } else {
           video.pause();
@@ -534,7 +542,14 @@ export function HowItWorksSection({
     );
     observer.observe(stage);
     return () => observer.disconnect();
-  }, [tab, subject, tool, zoomed]);
+  }, [tab, subject, tool, zoomed, liveStage, slide.key]);
+
+  useEffect(() => {
+    if (!videoSrcArmed || zoomed || liveStage) return;
+    const video = videoRef.current;
+    if (!video) return;
+    void video.play().catch(() => {});
+  }, [videoSrcArmed, slide.key, zoomed, liveStage]);
 
   return (
     <section id="how-it-works" className="relative bg-background px-3 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
@@ -615,7 +630,7 @@ export function HowItWorksSection({
                       ref={videoRef}
                       className="pointer-events-none absolute inset-0 h-full w-full object-contain"
                       poster={slide.poster}
-                      src={slide.video}
+                      src={videoSrcArmed ? slide.video : undefined}
                       muted
                       loop
                       playsInline

@@ -1,7 +1,4 @@
-/** BBE flashcard decks for Economics, Math, and English. */
-
-import { ENGLISH_FLASHCARD_SECTIONS } from "./english-flashcards";
-export { ENGLISH_FLASHCARD_SECTIONS };
+/** BBE flashcard types, lightweight subject meta, and per-subject deck loaders. */
 
 export type Flashcard = {
   term: string;
@@ -16,7 +13,7 @@ export type FlashcardSection = {
 
 export type FlashcardSubjectId = "economics" | "math" | "english";
 
-export type FlashcardSubject = {
+export type FlashcardSubjectMeta = {
   id: FlashcardSubjectId;
   title: string;
   tag: string;
@@ -24,439 +21,18 @@ export type FlashcardSubject = {
   accent: string;
   downloadHref: string | null;
   downloadLabel: string | null;
-  sections: FlashcardSection[];
+  /** Precomputed so index routes never import deck modules. */
+  cardCount: number;
+  sectionCount: number;
   comingSoon?: boolean;
 };
 
-export const ECONOMICS_FLASHCARD_SECTIONS: FlashcardSection[] = [
-  {
-    id: "econ-1",
-    title: "1. Core Economic Concepts",
-    cards: [
-      { term: "Business", explanation: "An entity that offers goods and/or services to customers (not primarily for its own needs), usually in exchange for money." },
-      { term: "Value creation", explanation: "A business creates value for customers by solving a problem or fulfilling a need better than the customer could alone." },
-      { term: "Opportunity cost", explanation: "The (financial) benefit of the next best alternative that is given up in order to choose or achieve something else." },
-      { term: "Scarcity of resources", explanation: "Households, businesses, and governments have limited resources, forcing them to make choices about how to allocate them." },
-      { term: "Economics", explanation: "The study of how individuals and businesses make decisions to satisfy needs and wants with limited resources." },
-      { term: "Microeconomics", explanation: "The branch of economics focusing on the behaviour and decisions of individual households and businesses and how they interact." },
-      { term: "Macroeconomics", explanation: "The branch of economics dealing with the overall economy and aggregate quantities: growth, unemployment, interest rates, inflation." },
-      { term: "Circular flow of the economy", explanation: "The continuous exchange of goods, services, labour, and money between households, businesses, and government." },
-      { term: "Money \u2014 medium of exchange", explanation: "One of money's three functions: it allows flexible exchange without the need for barter." },
-      { term: "Money \u2014 unit of account", explanation: "One of money's three functions: it allows the value of goods and services to be expressed and compared." },
-      { term: "Money \u2014 store of value", explanation: "One of money's three functions: it allows value to be stored over time (works best when money's value is stable)." },
-      { term: "Inflation", explanation: "A general, sustained rise in the price level of goods and services, which reduces the purchasing power of money." },
-      { term: "Purchasing power", explanation: "The quantity of goods and services that can be bought with a given amount of money; it falls as inflation rises." },
-      { term: "Price index", explanation: "A measure used to track the extent of the general rise in prices (inflation) over time." },
-      { term: "Division of labour", explanation: "Splitting tasks among individuals, departments, businesses, or countries so each can specialise in what it does best." },
-      { term: "Specialisation", explanation: "Concentrating on a specific task, product, or skill, made possible by the division of labour and exchange." },
-      { term: "Free rider", explanation: "A person who benefits from a good or service (e.g. national defence) without paying for it and cannot be excluded from using it." },
-    ],
-  },
-  {
-    id: "econ-2",
-    title: "2. Economic Systems, Supply, Demand & Competition",
-    cards: [
-      { term: "Market economy", explanation: "An economic system in which individuals and businesses make most economic decisions themselves, with limited government involvement." },
-      { term: "Planned economy", explanation: "An economic system in which the government mainly decides what is produced, at what price, and controls the means of production." },
-      { term: "Social / eco-social market economy", explanation: "A market economy in which the government plays a more active role, e.g. supporting the poor and protecting the environment." },
-      { term: "Market", explanation: "Any place (physical or virtual) where buyers and sellers meet to exchange goods and services and agree on conditions of exchange." },
-      { term: "Law of supply", explanation: "All else equal, the higher the price of a good or service, the higher the quantity businesses are willing to supply." },
-      { term: "Marginal cost", explanation: "The cost of producing one additional unit of a good or providing one additional unit of a service." },
-      { term: "Law of demand", explanation: "All else equal, the higher the price of a good or service, the lower the quantity customers are willing and able to buy." },
-      { term: "Market equilibrium / equilibrium price", explanation: "The price at which quantity supplied equals quantity demanded; there is neither a surplus nor a shortage." },
-      { term: "Surplus", explanation: "A situation where the quantity supplied exceeds the quantity demanded at a given price." },
-      { term: "Shortage", explanation: "A situation where the quantity demanded exceeds the quantity supplied at a given price." },
-      { term: "Monopoly", explanation: "A market situation with only one supplier." },
-      { term: "Oligopoly", explanation: "A market situation with only a few suppliers, each holding a relatively large market share; competition can be intense." },
-      { term: "Cartel", explanation: "An (usually illegal) agreement between suppliers in an oligopoly to coordinate prices or output instead of competing." },
-      { term: "Perfect competition", explanation: "A theoretical market with so many buyers and sellers that no single one can influence price; free entry/exit and full information." },
-    ],
-  },
-  {
-    id: "econ-3",
-    title: "3. Types of Businesses",
-    cards: [
-      { term: "Factors of production", explanation: "The resources combined to create goods and services: labour, land, capital, entrepreneurship, and knowledge/technology." },
-      { term: "Labour", explanation: "All human resources contributed to production." },
-      { term: "Land", explanation: "All natural resources used in production." },
-      { term: "Capital (factor of production)", explanation: "Resources such as machinery, plant, vehicles, and financial resources used in production." },
-      { term: "Entrepreneurship", explanation: "The factor of production that brings land, labour, and capital together and takes on business risk." },
-      { term: "Primary sector", explanation: "The sector of the economy that extracts raw materials from the earth (farming, fishing, mining, forestry)." },
-      { term: "Secondary sector", explanation: "The sector of the economy that transforms raw materials into finished goods (manufacturing)." },
-      { term: "Tertiary sector", explanation: "The service sector of the economy (distribution, banking, insurance, coaching, etc.)." },
-      { term: "Three-sector model", explanation: "A model classifying economic activity into primary, secondary, and tertiary sectors." },
-      { term: "GDP (gross domestic product)", explanation: "The total monetary value of final goods and services produced within a country's borders in a given period; measures overall economic activity." },
-      { term: "Profit-oriented business", explanation: "A business that aims to generate higher revenues than costs, i.e. to make a profit." },
-      { term: "Not-for-profit organisation (NPO)", explanation: "An organisation that mainly aims to cover its costs rather than generate profit for owners; any surplus is reinvested (e.g. Red Cross)." },
-      { term: "SME (small/medium enterprise)", explanation: "Businesses classified by staff headcount and turnover/balance sheet total: micro (<10 staff), small (<50), medium (<250)." },
-      { term: "Local (regional) business", explanation: "A business operating in a small, limited area, serving mostly nearby customers." },
-      { term: "National business", explanation: "A business serving the home market (within one country) but not international markets." },
-      { term: "International / multinational business", explanation: "A business that makes and/or sells goods and services in more than one country." },
-      { term: "Globalisation", explanation: "The increasing international integration of markets, driven by the growth of multinational businesses." },
-      { term: "Stakeholder", explanation: "Anyone who is affected by, or has an interest in, the activities of a business (owners, managers, employees, suppliers, customers, communities, government)." },
-    ],
-  },
-  {
-    id: "econ-4",
-    title: "4. Business Ownership & Sources of Finance",
-    cards: [
-      { term: "Sole proprietorship (sole trader)", explanation: "A business owned and run by one person; not a separate legal entity; owner has unlimited liability." },
-      { term: "Partnership", explanation: "A business jointly founded by two or more persons who share rights, responsibilities, profits, and losses via a partnership agreement." },
-      { term: "General partnership (OG in Austria)", explanation: "A partnership in which all partners have equal rights, liabilities, and responsibilities (unlimited liability)." },
-      { term: "Limited partnership (KG in Austria)", explanation: "A partnership with at least one partner not involved in management whose liability is limited to their contribution." },
-      { term: "Corporation", explanation: "A business that is a legal entity of its own, separate from its owners, with rights and obligations similar to a natural person." },
-      { term: "Board of directors", explanation: "The persons elected by shareholders to make major business decisions and represent shareholders' interests." },
-      { term: "CEO / CFO / COO", explanation: "Chief Executive Officer (top manager); Chief Financial Officer (finance); Chief Operating Officer (operations)." },
-      { term: "Share capital", explanation: "The capital of a corporation divided into shares (stock); raised by selling shares to shareholders." },
-      { term: "Shareholder", explanation: "A person or entity that owns shares (stock) of a corporation." },
-      { term: "Initial public offering (IPO)", explanation: "The first sale/introduction of a corporation's shares on a stock exchange." },
-      { term: "Stock exchange", explanation: "A regulated financial market where shares and other securities (e.g. bonds) are bought and sold." },
-      { term: "Dividend", explanation: "Part of a corporation's profit paid out to shareholders; not obligatory." },
-      { term: "Market capitalisation (market cap)", explanation: "The total market value of a company's outstanding shares (shares held by shareholders x current market price)." },
-      { term: "Dividend yield", explanation: "The dividend expressed in relation to the share price." },
-      { term: "Price\u2013earnings ratio (P/E ratio)", explanation: "A company's current share price relative to its earnings per share; a low P/E may indicate undervaluation or strong earnings." },
-      { term: "Bond", explanation: "A loan from investors (creditors) to a corporation for a set period, to be repaid with interest." },
-      { term: "Private limited company (GmbH / LLC)", explanation: "A corporation whose shares are not sold to the public but held privately; owners have limited liability." },
-      { term: "Equity finance", explanation: "Funds provided by owners/investors (share capital) or generated internally (retained earnings); does not need to be repaid." },
-      { term: "Debt finance", explanation: "Funds borrowed from external sources (banks, bondholders) that must be repaid, usually with interest." },
-      { term: "Bank overdraft", explanation: "A flexible short-term credit facility allowing withdrawals beyond the account balance; interest paid only when overdrawn." },
-      { term: "Trade credit", explanation: "An agreement with a supplier allowing a business to pay for purchases after a delay rather than immediately." },
-      { term: "Collateral", explanation: "Assets pledged to a lender to secure a loan (e.g. property for a mortgage)." },
-      { term: "Internal vs. external sources of finance", explanation: "Internal: retained profit, sale of unused assets (no financial charges). External: funds from investors, banks, bondholders." },
-      { term: "Retained earnings", explanation: "Profit that is kept in the business and reinvested rather than distributed to owners." },
-    ],
-  },
-  {
-    id: "econ-5",
-    title: "5. Marketing",
-    cards: [
-      { term: "Marketing", explanation: "An ongoing management process that identifies customer needs/wants, develops products accordingly, and communicates them at a price customers are willing to pay, via a distribution network." },
-      { term: "Product (marketing sense)", explanation: "Any good and/or service exchanged to fulfil customer wishes and needs." },
-      { term: "B2B vs. B2C", explanation: "Business-to-business: products sold from one business to another. Business-to-consumer: products sold to private households." },
-      { term: "Unique selling proposition (USP)", explanation: "A characteristic that differentiates a product from competitors' products, supporting brand and customer loyalty." },
-      { term: "Brand", explanation: "A name, word(s), symbol, or sign that distinguishes a product/business from others and builds recognition, trust, and loyalty." },
-      { term: "Customer relationship management (CRM)", explanation: "A management approach that uses customer data to build long-term relationships and tailor offers to customers." },
-      { term: "Market research", explanation: "The process of gathering information about customers, competitors, and the industry to inform business decisions." },
-      { term: "Primary sources (market research)", explanation: "Original data collected specifically for the business's needs (e.g. surveys, interviews); more costly." },
-      { term: "Secondary sources (market research)", explanation: "Existing data collected by others (e.g. government, associations) for a different original purpose; cheaper but more general." },
-      { term: "Market size (market volume)", explanation: "The total sales of a product by all businesses in a market, expressed in value or quantity." },
-      { term: "Market potential", explanation: "Market volume plus potential customers not yet served." },
-      { term: "Absolute market share", explanation: "A business's (or brand's) sales volume divided by total market volume." },
-      { term: "Relative market share", explanation: "A business's market share divided by its largest competitor's market share." },
-      { term: "Market segmentation", explanation: "Dividing a market into relatively homogeneous subgroups of customers based on shared characteristics." },
-      { term: "Targeting", explanation: "Selecting which market segment(s) a business will focus its marketing efforts on." },
-      { term: "Positioning", explanation: "Creating a distinct image or identity for a product in the minds of the target market." },
-      { term: "Mass marketing", explanation: "Offering the same product, promoted in the same way, to an entire market without segmentation." },
-      { term: "Segment marketing", explanation: "Offering different products tailored to one or more specific market segments." },
-      { term: "Niche marketing", explanation: "Focusing on particular, narrow subgroups within a segment; common among small, specialised businesses." },
-      { term: "Product life cycle", explanation: "A model of a product's stages over time: introduction, growth, maturity, decline \u2014 each with different sales and profit patterns." },
-      { term: "BCG matrix", explanation: "A tool classifying products by market growth and relative market share: Question Marks, Stars, Cash Cows, Poor Dogs." },
-      { term: "Question mark (BCG)", explanation: "A product with low relative market share in a fast-growing market; typically loss-making early on." },
-      { term: "Star (BCG)", explanation: "A product with high relative market share in a fast-growing market; valuable but requires ongoing investment." },
-      { term: "Cash cow (BCG)", explanation: "A product with high relative market share in a slow-growing market; generates high revenue with lower investment needs." },
-      { term: "Poor dog (BCG)", explanation: "A product with low relative market share in a slow-growing market; falling sales and profits, nearing decline." },
-      { term: "Ansoff Matrix", explanation: "A growth-strategy tool with four options: market penetration, product development, market development, diversification." },
-      { term: "Market penetration (Ansoff)", explanation: "Growing sales of an existing product in an existing market; the lowest-risk strategy." },
-      { term: "Product development (Ansoff)", explanation: "Introducing a new product into an existing market." },
-      { term: "Market development (Ansoff)", explanation: "Selling an existing product into a new market." },
-      { term: "Diversification (Ansoff)", explanation: "Introducing a new product into a new market; the highest-risk strategy." },
-      { term: "Marketing mix (4 Ps)", explanation: "The blend of Product, Price, Place, and Promotion used to meet the needs of a targeted market." },
-      { term: "Cost-based pricing", explanation: "Setting price based on the cost of producing the good or service, e.g. by adding a markup." },
-      { term: "Break-even point", explanation: "The level of output at which total revenue equals total cost (no profit, no loss)." },
-      { term: "Contribution", explanation: "Selling price minus variable cost per unit; the amount that contributes to covering fixed costs and profit." },
-      { term: "Variable cost plus pricing (distribution pricing)", explanation: "Setting price by adding a markup percentage to the variable cost of a product." },
-      { term: "Price elasticity of demand", explanation: "The responsiveness of quantity demanded to a change in price; % change in quantity demanded \u00f7 % change in price." },
-      { term: "Elastic demand", explanation: "Demand where the percentage change in quantity demanded exceeds the percentage change in price (ratio > 1)." },
-      { term: "Inelastic demand", explanation: "Demand where the percentage change in quantity demanded is smaller than the percentage change in price (ratio < 1)." },
-      { term: "Place (distribution)", explanation: "The channels used to make a product available to customers (retailers, wholesalers, online, agents, etc.)." },
-      { term: "Promotion", explanation: "Activities that inform and persuade (potential) customers about a business and its products (advertising, PR, sales promotion, etc.)." },
-    ],
-  },
-  {
-    id: "econ-6",
-    title: "6. Accounting",
-    cards: [
-      { term: "Balance sheet", explanation: "A statement showing a business's assets, liabilities, and equity at a specific point in time." },
-      { term: "Balance sheet equation", explanation: "Assets = Liabilities + Owner's Equity." },
-      { term: "Assets", explanation: "Resources owned by a business and used in its operations." },
-      { term: "Fixed assets (non-current assets)", explanation: "Assets with a useful life of more than one year, not easily turned into cash (e.g. property, machinery, equipment)." },
-      { term: "Current assets", explanation: "Assets with high liquidity, normally used up or converted to cash within one year (e.g. inventory, receivables, cash)." },
-      { term: "Intangible assets", explanation: "Non-physical assets of value, such as trademarks, patents, and copyrights." },
-      { term: "Liabilities", explanation: "Debts and obligations owed to others (banks, suppliers) that must be repaid." },
-      { term: "Current liabilities", explanation: "Debts/obligations due within one year." },
-      { term: "Non-current liabilities", explanation: "Debts/obligations due in more than one year." },
-      { term: "Owner's equity", explanation: "The difference between assets and liabilities; the portion of assets financed by the owners themselves." },
-      { term: "Equity ratio", explanation: "Equity divided by total capital (assets); indicates the proportion of assets financed by the owners." },
-      { term: "Income statement (profit and loss account)", explanation: "A statement summarising revenues, costs, and expenses over a period, showing whether a profit or loss was made." },
-      { term: "Revenue", explanation: "Income generated from selling goods or services to customers." },
-      { term: "Depreciation", explanation: "The systematic allocation of a fixed asset's cost as an expense over its useful life, reflecting its loss of value from use." },
-      { term: "Cash flow statement", explanation: "A statement showing inflows and outflows of cash from operating, investing, and financing activities over a period." },
-      { term: "Cash flow from operations", explanation: "Cash generated or used by a business's core, day-to-day activities." },
-      { term: "Cash flow from investments", explanation: "Cash spent on or received from long-term investments (e.g. buying or selling equipment)." },
-      { term: "Cash flow from financing", explanation: "Cash flowing in from investors/creditors or out for interest, dividends, or debt repayment." },
-      { term: "Cost of sales (COGS)", explanation: "Costs directly tied to producing the goods sold (materials, direct labour, manufacturing overhead)." },
-      { term: "Gross profit", explanation: "Revenue minus cost of sales; profit before deducting operating expenses." },
-      { term: "EBITDA", explanation: "Earnings Before Interest, Taxes, Depreciation and Amortisation; measures operating performance including opex but excluding non-cash charges." },
-      { term: "EBIT (operating result)", explanation: "Earnings Before Interest and Taxes; gross profit minus operating expenses (after depreciation/amortisation)." },
-      { term: "Expenditure vs. expense", explanation: "Expenditure: a payment made to acquire an asset. Expense: a cost that has been used up in generating revenue." },
-      { term: "Working capital", explanation: "Current assets minus current liabilities; indicates ability to cover short-term obligations." },
-      { term: "Working capital ratio (current ratio)", explanation: "Current assets \u00f7 current liabilities; ideally between 1.5 and 2." },
-      { term: "Acid test ratio (quick ratio)", explanation: "(Current assets \u2212 inventory) \u00f7 current liabilities; a stricter liquidity test excluding inventory." },
-      { term: "Return on equity (ROE)", explanation: "EBIT \u00f7 equity; measures profitability relative to owners' investment." },
-      { term: "Return on capital employed (ROCE)", explanation: "EBIT \u00f7 capital employed (equity + non-current liabilities); measures profitability relative to long-term capital used." },
-      { term: "Asset turnover", explanation: "Turnover \u00f7 average (net) assets; measures how efficiently assets generate revenue." },
-      { term: "Inventory (stock) turnover", explanation: "Cost of sales \u00f7 average inventory; shows how many times inventory is sold/replaced per year." },
-      { term: "Liquidity", explanation: "A business's ability to pay its bills and debts on time." },
-      { term: "Auditing", explanation: "Independent verification of a company's accounts for accuracy and compliance, often mandatory for larger companies." },
-      { term: "Managerial accounting", explanation: "Accounting focused on providing information to internal management for decision-making." },
-      { term: "Financial accounting", explanation: "Accounting focused on producing statements (balance sheet, income statement) for external users (tax authorities, banks, investors)." },
-    ],
-  },
-];
+export type FlashcardSubject = FlashcardSubjectMeta & {
+  sections: FlashcardSection[];
+};
 
-export const MATH_FLASHCARD_SECTIONS: FlashcardSection[] = [
-  {
-    id: "math-1",
-    title: "Logic",
-    cards: [
-      { term: "Statement (proposition)", explanation: "A declarative sentence that is either true or false, never both. We write statements as $p$, $q$, $r$." },
-      { term: "Negation $\\neg p$", explanation: "The opposite of $p$: true when $p$ is false, and false when $p$ is true. Double negation: $\\neg(\\neg p)\\equiv p$." },
-      { term: "Conjunction $p\\land q$", explanation: "\"$p$ and $q$\". True only when both $p$ and $q$ are true. Symbol $\\land$ means \"and\"." },
-      { term: "Disjunction $p\\lor q$", explanation: "\"$p$ or $q$\" (inclusive). True if at least one of $p$, $q$ is true. Symbol $\\lor$ means \"or\"." },
-      { term: "Implication $p\\Rightarrow q$", explanation: "\"If $p$, then $q$\". False only when $p$ is true and $q$ is false. Equivalent to $\\neg p\\lor q$." },
-      { term: "Equivalence $p\\Leftrightarrow q$", explanation: "\"$p$ if and only if $q$\". True when $p$ and $q$ have the same truth value." },
-      { term: "Contrapositive", explanation: "The contrapositive of $p\\Rightarrow q$ is $\\neg q\\Rightarrow\\neg p$. It is logically equivalent to the original implication." },
-      { term: "Converse", explanation: "The converse of $p\\Rightarrow q$ is $q\\Rightarrow p$. It is not automatically equivalent to the original." },
-      { term: "Necessary vs. sufficient", explanation: "In $p\\Rightarrow q$: $p$ is a sufficient condition for $q$; $q$ is a necessary condition for $p$." },
-      { term: "Modus ponens", explanation: "From $p\\Rightarrow q$ and $p$, conclude $q$." },
-      { term: "Modus tollens", explanation: "From $p\\Rightarrow q$ and $\\neg q$, conclude $\\neg p$." },
-      { term: "De Morgan’s laws (logic)", explanation: "$\\neg(p\\land q)\\equiv\\neg p\\lor\\neg q$ and $\\neg(p\\lor q)\\equiv\\neg p\\land\\neg q$." },
-      { term: "Tautology / contradiction", explanation: "A tautology is always true; a contradiction is always false, for every truth assignment." },
-      { term: "Implication when solving equations", explanation: "Steps like squaring both sides give an implication $(\\Rightarrow)$, not always an equivalence. Always check candidate solutions in the original equation." },
-      { term: "Set membership $x\\in A$", explanation: "$x\\in A$ means element $x$ belongs to set $A$; $x\\notin A$ means it does not." },
-      { term: "Union and intersection", explanation: "$A\\cup B$ = elements in $A$ or $B$ (or both). $A\\cap B$ = elements in both $A$ and $B$." },
-      { term: "Complement $A^{c}$", explanation: "Relative to a universe $S$: $A^{c}$ is all elements of $S$ that are not in $A$." },
-      { term: "De Morgan’s laws (sets)", explanation: "$(A\\cup B)^{c}=A^{c}\\cap B^{c}$ and $(A\\cap B)^{c}=A^{c}\\cup B^{c}$." },
-    ],
-  },
-  {
-    id: "math-2",
-    title: "Elementary algebra",
-    cards: [
-      { term: "Commutative laws", explanation: "$a+b=b+a$ and $ab=ba$. Order of addition or multiplication does not matter." },
-      { term: "Associative laws", explanation: "$(a+b)+c=a+(b+c)$ and $(ab)c=a(bc)$. Grouping does not matter." },
-      { term: "Distributive law", explanation: "$a(b+c)=ab+ac$. Multiplication distributes over addition." },
-      { term: "Difference of squares", explanation: "$a^{2}-b^{2}=(a-b)(a+b)$." },
-      { term: "Perfect square expansion", explanation: "$(a\\pm b)^{2}=a^{2}\\pm 2ab+b^{2}$." },
-      { term: "Sum and difference of cubes", explanation: "$a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2})$ and $a^{3}+b^{3}=(a+b)(a^{2}-ab+b^{2})$." },
-      { term: "Adding fractions", explanation: "$\\dfrac{a}{b}+\\dfrac{c}{d}=\\dfrac{ad+bc}{bd}$ for $b,d\\neq 0$." },
-      { term: "Multiplying / dividing fractions", explanation: "$\\dfrac{a}{b}\\cdot\\dfrac{c}{d}=\\dfrac{ac}{bd}$ and $\\dfrac{a}{b}\\div\\dfrac{c}{d}=\\dfrac{a}{b}\\cdot\\dfrac{d}{c}$." },
-      { term: "Product and quotient of powers", explanation: "Same base: $a^{m}a^{n}=a^{m+n}$ and $\\dfrac{a^{m}}{a^{n}}=a^{m-n}$ ($a\\neq 0$)." },
-      { term: "Power of a power", explanation: "$(a^{m})^{n}=a^{mn}$." },
-      { term: "Zero and negative exponents", explanation: "$a^{0}=1$ for $a\\neq 0$, and $a^{-n}=\\dfrac{1}{a^{n}}$." },
-      { term: "Roots as fractional powers", explanation: "$\\sqrt[n]{a}=a^{1/n}$ and $a^{m/n}=\\bigl(\\sqrt[n]{a}\\bigr)^{m}=\\sqrt[n]{a^{m}}$ (where defined)." },
-      { term: "Absolute value $|x|$", explanation: "$|x|=x$ if $x\\ge 0$, and $|x|=-x$ if $x<0$. Always $|x|\\ge 0$." },
-      { term: "Percentage", explanation: "$p\\%$ of $x$ equals $\\dfrac{p}{100}\\cdot x$. Relative change $=\\dfrac{\\text{new}-\\text{old}}{\\text{old}}$." },
-      { term: "Sum of first $n$ naturals", explanation: "$\\sum_{k=1}^{n}k=\\dfrac{n(n+1)}{2}$." },
-      { term: "Arithmetic series sum", explanation: "$a+(a+d)+\\cdots+(a+(n-1)d)=\\dfrac{n}{2}\\bigl(2a+(n-1)d\\bigr)=\\dfrac{n}{2}(\\text{first}+\\text{last})$." },
-      { term: "Geometric series (finite)", explanation: "$a+ar+\\cdots+ar^{n-1}=a\\dfrac{1-r^{n}}{1-r}$ for $r\\neq 1$." },
-      { term: "Factorial $n!$", explanation: "$n!=1\\cdot 2\\cdots n$ for natural $n$, and $0!=1$." },
-    ],
-  },
-  {
-    id: "math-3",
-    title: "Financial mathematics",
-    cards: [
-      { term: "Simple interest", explanation: "Interest $I=Prt$, where $P$ is principal, $r$ is the interest rate per period, and $t$ is the number of periods. Future value: $FV=P(1+rt)$." },
-      { term: "Compound interest (discrete)", explanation: "$FV=P(1+r)^{n}$, where $r$ is the rate per compounding period and $n$ is the number of periods." },
-      { term: "Compounding $m$ times per year", explanation: "$FV=P\\Bigl(1+\\dfrac{i}{m}\\Bigr)^{mt}$, where $i$ is the nominal annual rate and $t$ is time in years." },
-      { term: "Effective annual rate (EAR)", explanation: "$\\mathrm{EAR}=\\Bigl(1+\\dfrac{i}{m}\\Bigr)^{m}-1$. The true yearly growth rate with $m$ compounds." },
-      { term: "Continuous compounding", explanation: "$FV=Pe^{rt}$. Here $e\\approx 2.71828$ is Euler’s number and $r$ is the continuous rate." },
-      { term: "Present value (discrete)", explanation: "$PV=\\dfrac{FV}{(1+r)^{n}}=FV(1+r)^{-n}$. Discount future money back to today." },
-      { term: "Continuous present value", explanation: "$PV=FV\\,e^{-rt}$." },
-      { term: "Ordinary annuity — present value", explanation: "Equal end-of-period payments $A$: $PV=A\\dfrac{1-(1+r)^{-n}}{r}$ ($r>0$)." },
-      { term: "Ordinary annuity — future value", explanation: "$FV=A\\dfrac{(1+r)^{n}-1}{r}$." },
-      { term: "Perpetuity", explanation: "Infinite ordinary annuity: $PV=\\dfrac{A}{r}$ for $r>0$." },
-      { term: "Loan / mortgage payment", explanation: "Payment on principal $P$ over $n$ periods: $A=P\\dfrac{r(1+r)^{n}}{(1+r)^{n}-1}$." },
-      { term: "Infinite geometric series in finance", explanation: "For $|r|<1$: $a+ar+ar^{2}+\\cdots=\\dfrac{a}{1-r}$. Used for perpetual cash-flow streams." },
-      { term: "Internal rate of return (IRR)", explanation: "The rate $r^{*}$ solving $\\mathrm{NPV}=0$, i.e. $\\sum_{t} \\dfrac{A_{t}}{(1+r^{*})^{t}}=0$ (or equal to the initial outlay)." },
-      { term: "Fisher equation (real vs nominal)", explanation: "$1+r_{\\mathrm{real}}=\\dfrac{1+r_{\\mathrm{nom}}}{1+\\pi}$, where $\\pi$ is the inflation rate." },
-      { term: "Nominal vs effective", explanation: "A stated (nominal) rate $i$ with $m$ compounds is not the same as EAR; always convert when comparing loans." },
-    ],
-  },
-  {
-    id: "math-4",
-    title: "Equations",
-    cards: [
-      { term: "Linear equation in one unknown", explanation: "$ax+b=0$ with $a\\neq 0$ has the unique solution $x=-\\dfrac{b}{a}$." },
-      { term: "Equivalent equations", explanation: "Equations with the same solution set. Adding the same number to both sides, or multiplying by a nonzero constant, preserves equivalence." },
-      { term: "Quadratic equation", explanation: "$ax^{2}+bx+c=0$ with $a\\neq 0$." },
-      { term: "Quadratic formula", explanation: "$$x=\\dfrac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}$$ Here $\\pm$ means two candidates (plus and minus the square root)." },
-      { term: "Discriminant $\\Delta$", explanation: "$\\Delta=b^{2}-4ac$. If $\\Delta>0$: two distinct real roots; $\\Delta=0$: one double real root; $\\Delta<0$: no real roots." },
-      { term: "Vieta’s formulas", explanation: "For $ax^{2}+bx+c=0$: sum of roots $= -\\dfrac{b}{a}$, product $=\\dfrac{c}{a}$." },
-      { term: "Completing the square", explanation: "$ax^{2}+bx+c=a\\Bigl(x+\\dfrac{b}{2a}\\Bigr)^{2}-\\dfrac{b^{2}}{4a}+c$." },
-      { term: "Zero-product property", explanation: "If $AB=0$, then $A=0$ or $B=0$ (or both). Used after factoring." },
-      { term: "Absolute-value equation", explanation: "$|f(x)|=k$ with $k\\ge 0$ means $f(x)=k$ or $f(x)=-k$." },
-      { term: "Extraneous solutions", explanation: "Candidates produced by non-reversible steps (e.g. squaring) that do not satisfy the original equation — always substitute back and check." },
-      { term: "Clearing denominators", explanation: "Multiply through by the least common denominator, then exclude any $x$ that made an original denominator zero." },
-      { term: "Equations with parameters", explanation: "Solve for the unknown in terms of parameters; treat separately the cases where a leading coefficient becomes zero." },
-    ],
-  },
-  {
-    id: "math-5",
-    title: "Linear equations in two unknowns",
-    cards: [
-      { term: "General form", explanation: "A linear equation in two unknowns: $ax+by=c$ (not both $a$ and $b$ zero). Its graph is a straight line in the plane." },
-      { term: "System of two equations", explanation: "$$\\begin{cases}a_{1}x+b_{1}y=c_{1}\\\\ a_{2}x+b_{2}y=c_{2}\\end{cases}$$ Find $(x,y)$ that satisfy both at once." },
-      { term: "Substitution method", explanation: "Solve one equation for one variable, substitute into the other, then back-substitute." },
-      { term: "Elimination method", explanation: "Multiply equations by constants so that adding (or subtracting) cancels one variable." },
-      { term: "Unique solution", explanation: "The two lines intersect at exactly one point (different slopes). Exactly one pair $(x,y)$." },
-      { term: "No solution (inconsistent)", explanation: "Parallel distinct lines: $\\dfrac{a_{1}}{a_{2}}=\\dfrac{b_{1}}{b_{2}}\\neq\\dfrac{c_{1}}{c_{2}}$ (when the ratios are defined)." },
-      { term: "Infinitely many solutions", explanation: "The same line twice: $\\dfrac{a_{1}}{a_{2}}=\\dfrac{b_{1}}{b_{2}}=\\dfrac{c_{1}}{c_{2}}$. One free variable; solutions form a line." },
-      { term: "Graphical meaning", explanation: "Each equation is a line; solutions are intersection points of the two lines." },
-      { term: "Economic example pattern", explanation: "Two budget/production constraints often yield a $2\\times 2$ linear system — solve by substitution or elimination." },
-      { term: "Checking a solution", explanation: "Substitute the found $(x,y)$ into both original equations to verify." },
-    ],
-  },
-  {
-    id: "math-6",
-    title: "Inequalities",
-    cards: [
-      { term: "Linear inequality", explanation: "Solve like an equation, but reverse the inequality when multiplying or dividing by a negative number." },
-      { term: "Interval notation", explanation: "$(a,b)$ open; $[a,b]$ closed; $(a,\\infty)$, $(-\\infty,b]$, etc. $\\infty$ is not a number — it marks unboundedness." },
-      { term: "Intersection of conditions (AND)", explanation: "$a<x<b$ means $x>a$ and $x<b$; solution is the overlap of both sets." },
-      { term: "Union of conditions (OR)", explanation: "$x<a$ or $x>b$ gives two separate rays; solution is their union." },
-      { term: "Absolute-value inequality $|x|<a$", explanation: "For $a>0$: $-a<x<a$." },
-      { term: "Absolute-value inequality $|x|>a$", explanation: "For $a>0$: $x<-a$ or $x>a$." },
-      { term: "Quadratic inequality", explanation: "Bring to one side, find roots of the related equation, then test the sign of $ax^{2}+bx+c$ on each interval." },
-      { term: "Sign chart", explanation: "Mark critical points (roots, points where expression is undefined) on a number line; pick a test point in each open interval." },
-      { term: "Rational inequality", explanation: "Write as $\\dfrac{f(x)}{g(x)}>0$ (or $<0$). Critical points: zeros of $f$ and of $g$; never include points where $g(x)=0$." },
-      { term: "Product inequality", explanation: "$(x-a)(x-b)>0$: same sign factors. $(x-a)(x-b)<0$: opposite signs." },
-    ],
-  },
-  {
-    id: "math-7",
-    title: "Linear and quadratic functions",
-    cards: [
-      { term: "Linear function", explanation: "$f(x)=mx+c$. Here $m$ is the slope and $c=f(0)$ is the $y$-intercept." },
-      { term: "Slope between two points", explanation: "$m=\\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}$ for $x_{1}\\neq x_{2}$. Rise over run." },
-      { term: "Point–slope form", explanation: "$y-y_{1}=m(x-x_{1})$." },
-      { term: "Parallel and perpendicular lines", explanation: "Parallel: same slope. Perpendicular: $m_{1}m_{2}=-1$ (neither line vertical)." },
-      { term: "Quadratic function", explanation: "$f(x)=ax^{2}+bx+c$ with $a\\neq 0$. Graph is a parabola." },
-      { term: "Vertex of a parabola", explanation: "$x_{v}=-\\dfrac{b}{2a}$, $y_{v}=f(x_{v})$. Vertex form: $f(x)=a(x-h)^{2}+k$ with vertex $(h,k)$." },
-      { term: "Axis of symmetry", explanation: "The vertical line $x=-\\dfrac{b}{2a}$." },
-      { term: "Opening direction", explanation: "If $a>0$ the parabola opens upward (minimum at the vertex). If $a<0$ it opens downward (maximum at the vertex)." },
-      { term: "Intercepts", explanation: "$y$-intercept: $f(0)=c$. $x$-intercepts: solutions of $ax^{2}+bx+c=0$." },
-      { term: "Discriminant and the graph", explanation: "$\\Delta>0$: two $x$-intercepts; $\\Delta=0$: touches once; $\\Delta<0$: no $x$-intercepts." },
-      { term: "Domain and range (quadratic)", explanation: "Domain: all real $x$. Range: $[y_{v},\\infty)$ if $a>0$; $(-\\infty,y_{v}]$ if $a<0$." },
-    ],
-  },
-  {
-    id: "math-8",
-    title: "Power functions",
-    cards: [
-      { term: "Power function", explanation: "$f(x)=ax^{b}$ with $a\\neq 0$ and constant exponent $b$." },
-      { term: "Domain depends on $b$", explanation: "Integer powers: usually all $x$ (except $x=0$ if $b$ negative). Even roots need $x\\ge 0$. Negative fractional powers exclude $x=0$." },
-      { term: "Positive vs negative exponent", explanation: "If $b>0$ and $a>0$, $f$ grows as $x$ grows on $(0,\\infty)$. If $b<0$, $f(x)=a/x^{|b|}$ decreases toward $0$ as $x\\to\\infty$." },
-      { term: "Even integer power", explanation: "$x^{2k}$ is even: $f(-x)=f(x)$. U-shaped for $a>0$." },
-      { term: "Odd integer power", explanation: "$x^{2k+1}$ is odd: $f(-x)=-f(x)$. Passes through the origin and is one-to-one on $\\mathbb{R}$ if $a\\neq 0$." },
-      { term: "Root functions", explanation: "$f(x)=\\sqrt[n]{x}=x^{1/n}$. For even $n$, domain $x\\ge 0$; for odd $n$, all real $x$." },
-      { term: "Asymptotes for negative powers", explanation: "$f(x)=\\dfrac{a}{x^{k}}$ ($k>0$): vertical asymptote $x=0$, horizontal asymptote $y=0$." },
-      { term: "Proportionality", explanation: "$y\\propto x^{b}$ means $y=ax^{b}$ for some constant $a$." },
-      { term: "Inverse of $x^{n}$ (selected cases)", explanation: "For odd $n$, or for $x\\ge 0$ when $n$ is even: inverse is $y^{1/n}$." },
-    ],
-  },
-  {
-    id: "math-9",
-    title: "Polynomial functions",
-    cards: [
-      { term: "Polynomial", explanation: "$p(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+\\cdots+a_{1}x+a_{0}$ with $a_{n}\\neq 0$. The degree is $n$." },
-      { term: "Leading term", explanation: "$a_{n}x^{n}$ dominates end behaviour for large $|x|$." },
-      { term: "End behaviour (even degree)", explanation: "If $n$ even and $a_{n}>0$: $p(x)\\to +\\infty$ as $|x|\\to\\infty$. If $a_{n}<0$: $p(x)\\to -\\infty$." },
-      { term: "End behaviour (odd degree)", explanation: "If $n$ odd and $a_{n}>0$: $p(x)\\to -\\infty$ as $x\\to -\\infty$ and $p(x)\\to +\\infty$ as $x\\to +\\infty$ (swap if $a_{n}<0$)." },
-      { term: "Root (zero) of a polynomial", explanation: "$r$ is a root if $p(r)=0$. The graph meets the $x$-axis at $x=r$." },
-      { term: "Factor theorem", explanation: "$r$ is a root $\\Leftrightarrow$ $(x-r)$ is a factor of $p(x)$." },
-      { term: "Remainder theorem", explanation: "When $p$ is divided by $(x-r)$, the remainder equals $p(r)$." },
-      { term: "Multiplicity", explanation: "If $(x-r)^{k}$ divides $p$ but $(x-r)^{k+1}$ does not, root $r$ has multiplicity $k$. Odd $k$: graph crosses; even $k$: touches and turns." },
-      { term: "Rational root theorem", explanation: "Any rational root $\\dfrac{p}{q}$ in lowest terms has $p$ dividing $a_{0}$ and $q$ dividing $a_{n}$." },
-      { term: "Number of roots", explanation: "A degree-$n$ polynomial has at most $n$ real roots (exactly $n$ complex roots counting multiplicity)." },
-    ],
-  },
-  {
-    id: "math-10",
-    title: "Exponential and logarithmic functions",
-    cards: [
-      { term: "Exponential function", explanation: "$f(x)=a\\cdot b^{x}$ with $b>0$, $b\\neq 1$. Domain: all real $x$. If $a>0$, range is $(0,\\infty)$." },
-      { term: "Growth and decay", explanation: "For $a>0$: $b>1$ means exponential growth; $0<b<1$ means exponential decay." },
-      { term: "Natural exponential $e^{x}$", explanation: "$e\\approx 2.71828\\ldots$. Key identity: $e^{\\ln x}=x$ for $x>0$, and $\\ln(e^{x})=x$." },
-      { term: "Logarithm definition", explanation: "$y=\\log_{b}(x)\\Leftrightarrow b^{y}=x$, for $x>0$, $b>0$, $b\\neq 1$. Read: \"log base $b$ of $x$\"." },
-      { term: "Common and natural logs", explanation: "$\\log_{10}x$ is the common log (often written $\\log x$). $\\ln x=\\log_{e}x$ is the natural log." },
-      { term: "Product rule for logs", explanation: "$\\log_{b}(xy)=\\log_{b}x+\\log_{b}y$." },
-      { term: "Quotient rule for logs", explanation: "$\\log_{b}\\!\\left(\\dfrac{x}{y}\\right)=\\log_{b}x-\\log_{b}y$." },
-      { term: "Power rule for logs", explanation: "$\\log_{b}(x^{k})=k\\,\\log_{b}x$." },
-      { term: "Change of base", explanation: "$\\log_{b}x=\\dfrac{\\ln x}{\\ln b}=\\dfrac{\\log_{c}x}{\\log_{c}b}$." },
-      { term: "Inverse relationship", explanation: "$\\log_{b}(b^{x})=x$ and $b^{\\log_{b}x}=x$ ($x>0$)." },
-      { term: "Solving $b^{x}=c$", explanation: "$x=\\log_{b}c=\\dfrac{\\ln c}{\\ln b}$ for $c>0$." },
-      { term: "Solving log equations", explanation: "Rewrite in exponential form and check the domain: every log argument must be positive." },
-    ],
-  },
-  {
-    id: "math-11",
-    title: "Differentiation and single variable optimization",
-    cards: [
-      { term: "Derivative definition", explanation: "$$f'(x)=\\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}$$ when the limit exists. Measures instantaneous rate of change." },
-      { term: "Tangent line", explanation: "At $x_{0}$: $y=f(x_{0})+f'(x_{0})(x-x_{0})$. The slope of the curve equals $f'(x_{0})$." },
-      { term: "Power rule", explanation: "$\\dfrac{d}{dx}x^{n}=nx^{n-1}$." },
-      { term: "Sum and constant multiple", explanation: "$(f\\pm g)'=f'\\pm g'$ and $(cf)'=cf'$." },
-      { term: "Product rule", explanation: "$(fg)'=f'g+fg'$." },
-      { term: "Quotient rule", explanation: "$\\left(\\dfrac{f}{g}\\right)'=\\dfrac{f'g-fg'}{g^{2}}$ for $g\\neq 0$." },
-      { term: "Chain rule", explanation: "$\\bigl(f(g(x))\\bigr)'=f'(g(x))\\cdot g'(x)$." },
-      { term: "Derivatives of $e^{x}$ and $\\ln x$", explanation: "$\\dfrac{d}{dx}e^{x}=e^{x}$, $\\dfrac{d}{dx}a^{x}=a^{x}\\ln a$, $\\dfrac{d}{dx}\\ln x=\\dfrac{1}{x}$ for $x>0$." },
-      { term: "Critical (stationary) point", explanation: "An interior point where $f'(x)=0$ or $f'$ does not exist — candidate for a local extremum." },
-      { term: "First-derivative test", explanation: "If $f'$ changes from negative to positive at $c$: local minimum. From positive to negative: local maximum." },
-      { term: "Second-derivative test", explanation: "At $f'(c)=0$: if $f''(c)>0$ local min; if $f''(c)<0$ local max; if $f''(c)=0$ the test is inconclusive." },
-      { term: "Extreme Value Theorem", explanation: "A continuous function on a closed bounded interval $[a,b]$ attains a global maximum and a global minimum." },
-      { term: "Extrema on $[a,b]$", explanation: "Compare $f$ at critical points in $(a,b)$ and at the endpoints $a$ and $b$." },
-      { term: "Inflection point", explanation: "A point where concavity changes ($f''$ changes sign). Not necessarily a max/min." },
-      { term: "Profit maximisation (interior)", explanation: "For $P(x)=R(x)-C(x)$, an interior candidate solves $P'(x)=0$, i.e. $R'(x)=C'(x)$ (marginal revenue $=$ marginal cost), then check second-order / endpoints." },
-    ],
-  },
-  {
-    id: "math-12",
-    title: "Elementary probability",
-    cards: [
-      { term: "Classical probability", explanation: "$P(A)=\\dfrac{|A|}{|S|}$ when all outcomes in a finite sample space $S$ are equally likely. $|A|$ means the number of elements in $A$." },
-      { term: "Probability axioms", explanation: "$0\\le P(A)\\le 1$, $P(S)=1$, and if $A$ and $B$ are disjoint then $P(A\\cup B)=P(A)+P(B)$." },
-      { term: "Complement rule", explanation: "$P(A^{c})=1-P(A)$, where $A^{c}$ is the complement of $A$." },
-      { term: "Addition rule", explanation: "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$." },
-      { term: "Conditional probability", explanation: "$P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}$ for $P(B)>0$. Read: probability of $A$ given $B$." },
-      { term: "Independence", explanation: "$A$ and $B$ are independent if $P(A\\cap B)=P(A)P(B)$ (equivalently $P(A\\mid B)=P(A)$)." },
-      { term: "Multiplication rule", explanation: "$P(A\\cap B)=P(A\\mid B)P(B)=P(B\\mid A)P(A)$." },
-      { term: "Bayes’ theorem", explanation: "$P(A\\mid B)=\\dfrac{P(B\\mid A)P(A)}{P(B)}$." },
-      { term: "Permutations", explanation: "$P(n,k)=\\dfrac{n!}{(n-k)!}$ — ordered selections of $k$ items from $n$." },
-      { term: "Combinations", explanation: "$C(n,k)=\\binom{n}{k}=\\dfrac{n!}{k!(n-k)!}$ — unordered selections." },
-      { term: "Expected value", explanation: "For a discrete random variable: $E[X]=\\sum_{i} x_{i}P(X=x_{i})$." },
-      { term: "Variance and standard deviation", explanation: "$\\mathrm{Var}(X)=E[X^{2}]-(E[X])^{2}$ and $\\sigma=\\sqrt{\\mathrm{Var}(X)}$." },
-    ],
-  },
-  {
-    id: "math-13",
-    title: "Binomial distribution",
-    cards: [
-      { term: "Bernoulli trial", explanation: "One experiment with two outcomes: success with probability $p$, failure with $q=1-p$." },
-      { term: "Binomial setting", explanation: "$n$ independent Bernoulli trials with the same $p$; $X$ = number of successes." },
-      { term: "Binomial probability mass function", explanation: "$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k},\\quad k=0,1,\\ldots,n$$ Here $\\binom{n}{k}$ counts ways to choose which $k$ trials succeed." },
-      { term: "Mean of $\\mathrm{Bin}(n,p)$", explanation: "$E[X]=np$." },
-      { term: "Variance of $\\mathrm{Bin}(n,p)$", explanation: "$\\mathrm{Var}(X)=np(1-p)$ and $\\sigma=\\sqrt{np(1-p)}$." },
-      { term: "At least one success", explanation: "$P(X\\ge 1)=1-P(X=0)=1-(1-p)^{n}$." },
-      { term: "All successes / all failures", explanation: "$P(X=n)=p^{n}$ and $P(X=0)=(1-p)^{n}$." },
-      { term: "Cumulative probability", explanation: "$P(X\\le k)=\\sum_{i=0}^{k}\\binom{n}{i}p^{i}(1-p)^{n-i}$." },
-      { term: "When to use the binomial model", explanation: "Fixed $n$, independent trials, two outcomes each time, constant success probability $p$." },
-    ],
-  },
-];
-
-export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
+/** Index / lock-screen subject cards — no deck payloads. */
+export const FLASHCARD_SUBJECTS: FlashcardSubjectMeta[] = [
   {
     id: "economics",
     title: "Economics",
@@ -466,7 +42,8 @@ export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
     accent: "#c8763a",
     downloadHref: "/flashcards/BBE_Economics_Flashcards.docx",
     downloadLabel: "Download Economics .docx",
-    sections: ECONOMICS_FLASHCARD_SECTIONS,
+    cardCount: 147,
+    sectionCount: 6,
   },
   {
     id: "math",
@@ -477,7 +54,8 @@ export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
     accent: "#10b981",
     downloadHref: "/flashcards/BBE_Math_Flashcards.docx",
     downloadLabel: "Download Math .docx",
-    sections: MATH_FLASHCARD_SECTIONS,
+    cardCount: 161,
+    sectionCount: 13,
   },
   {
     id: "english",
@@ -488,12 +66,41 @@ export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
     accent: "#0ea5e9",
     downloadHref: null,
     downloadLabel: null,
-    sections: ENGLISH_FLASHCARD_SECTIONS,
+    cardCount: 840,
+    sectionCount: 3,
   },
 ];
 
-export function getFlashcardSubject(id: string): FlashcardSubject | undefined {
+export function getFlashcardSubjectMeta(id: string): FlashcardSubjectMeta | undefined {
   return FLASHCARD_SUBJECTS.find((s) => s.id === id);
+}
+
+const DECK_LOADERS: Record<
+  FlashcardSubjectId,
+  () => Promise<{ sections: FlashcardSection[] }>
+> = {
+  economics: async () => {
+    const m = await import("./economics-flashcards");
+    return { sections: m.ECONOMICS_FLASHCARD_SECTIONS };
+  },
+  math: async () => {
+    const m = await import("./math-flashcards");
+    return { sections: m.MATH_FLASHCARD_SECTIONS };
+  },
+  english: async () => {
+    const m = await import("./english-flashcards");
+    return { sections: m.ENGLISH_FLASHCARD_SECTIONS };
+  },
+};
+
+/** Dynamic-import one subject deck (not the full barrel). */
+export async function getFlashcardSubject(
+  id: string,
+): Promise<FlashcardSubject | undefined> {
+  const meta = getFlashcardSubjectMeta(id);
+  if (!meta) return undefined;
+  const { sections } = await DECK_LOADERS[meta.id]();
+  return { ...meta, sections };
 }
 
 export function countCards(sections: FlashcardSection[]): number {

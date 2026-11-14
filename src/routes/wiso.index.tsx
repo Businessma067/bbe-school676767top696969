@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { lazy, Suspense, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -9,7 +8,6 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { PinnedReviewsBoard } from "@/components/PinnedReviewsBoard";
 import { pinnedNote } from "@/data/acceptance-notes";
 import { WisoDachAdvantageSlider } from "@/components/WisoDachAdvantageSlider";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
@@ -25,6 +23,12 @@ const CourseHighlightsSection = lazy(() =>
   import("@/components/CourseHighlightsSection").then((m) => ({
     default: m.CourseHighlightsSection,
   })),
+);
+const CourseCallCalendar = lazy(() =>
+  import("@/components/CourseCallCalendar").then((m) => ({ default: m.CourseCallCalendar })),
+);
+const PinnedReviewsBoard = lazy(() =>
+  import("@/components/PinnedReviewsBoard").then((m) => ({ default: m.PinnedReviewsBoard })),
 );
 
 export const Route = createFileRoute("/wiso/")({
@@ -147,7 +151,9 @@ export function WisoLandingPage() {
               </Suspense>
             </div>
 
-            <CourseCallCalendar className="mx-auto mt-8 w-full max-w-md" />
+            <Suspense fallback={<div className="mx-auto mt-8 min-h-[18rem] w-full max-w-md" aria-hidden />}>
+              <CourseCallCalendar className="mx-auto mt-8 w-full max-w-md" />
+            </Suspense>
           </div>
         </section>
 
@@ -187,12 +193,14 @@ export function WisoLandingPage() {
           </section>
         </div>
 
-        <PinnedReviewsBoard
-          title="What students told us after the WiSo Aufnahmeprüfung"
-          reports={wisoReports}
-          accent="wiso"
-          archiveHash="wiso"
-        />
+        <Suspense fallback={null}>
+          <PinnedReviewsBoard
+            title="What students told us after the WiSo Aufnahmeprüfung"
+            reports={wisoReports}
+            accent="wiso"
+            archiveHash="wiso"
+          />
+        </Suspense>
 
         <div id="faq">
           <WisoFaqAccordion />

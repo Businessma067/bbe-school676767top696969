@@ -6,7 +6,6 @@ import {
   TutorSubjectArt,
   type StudyArtSubjectId,
 } from "@/components/study-modes/ModeArt";
-import { countCards, type FlashcardSection } from "@/data/flashcards";
 import {
   WISO_STUDY_INDEX_COPY,
   type StudyUiLocale,
@@ -17,7 +16,9 @@ export type StudyToolSubjectCard = {
   title: string;
   description: string;
   accent: string;
-  sections: FlashcardSection[];
+  /** Prefer precomputed counts so index routes skip deck modules. */
+  cardCount: number;
+  sectionCount: number;
   comingSoon?: boolean;
   artSubject: StudyArtSubjectId;
 };
@@ -171,7 +172,6 @@ export function StudyToolsSubjectIndex({
 
           <div className="grid gap-6 md:grid-cols-3">
             {subjects.map((s) => {
-              const n = countCards(s.sections);
               const description =
                 blurbFor?.(s.title) ??
                 (kind === "flashcards"
@@ -202,7 +202,7 @@ export function StudyToolsSubjectIndex({
                     <p className="mt-3 text-xs font-semibold text-muted-foreground">
                       {s.comingSoon
                         ? copy.comingSoon
-                        : copy.pairLabel(n, s.sections.length)}
+                        : copy.pairLabel(s.cardCount, s.sectionCount)}
                     </p>
                     <span
                       className={

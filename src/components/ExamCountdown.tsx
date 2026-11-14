@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ClientOnly, ScriptOnce, useRouterState } from "@tanstack/react-router";
 
 import { cn } from "@/lib/utils";
@@ -165,16 +165,56 @@ function ExamCountdownLive({ className }: { className?: string }) {
   const kind = examKind(pathname);
   const examAt = examAtFor(kind);
   const [remaining, setRemaining] = useState<Remaining>(() => getRemaining(examAt));
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const visibleRef = useRef(true);
 
   useEffect(() => {
     setRemaining(getRemaining(examAt));
-    const id = window.setInterval(() => {
+    let id: number | null = null;
+
+    const start = () => {
+      if (id != null) return;
       setRemaining(getRemaining(examAt));
-    }, 1000);
-    return () => window.clearInterval(id);
+      id = window.setInterval(() => {
+        if (!visibleRef.current) return;
+        setRemaining(getRemaining(examAt));
+      }, 1000);
+    };
+    const stop = () => {
+      if (id == null) return;
+      window.clearInterval(id);
+      id = null;
+    };
+
+    const el = rootRef.current;
+    let observer: IntersectionObserver | null = null;
+    if (el && typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          visibleRef.current = entry.isIntersecting;
+          if (entry.isIntersecting) start();
+          else stop();
+        },
+        { threshold: 0 },
+      );
+      observer.observe(el);
+      // Start only once we know visibility; assume on-screen until first callback.
+      start();
+    } else {
+      start();
+    }
+
+    return () => {
+      stop();
+      observer?.disconnect();
+    };
   }, [examAt]);
 
-  return <CountdownView remaining={remaining} className={className} kind={kind} />;
+  return (
+    <div ref={rootRef}>
+      <CountdownView remaining={remaining} className={className} kind={kind} />
+    </div>
+  );
 }
 
 function ExamCountdownFallback({ className }: { className?: string }) {

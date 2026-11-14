@@ -1,12 +1,19 @@
+import { useEffect, useState } from "react";
 import { StudyToolsSubjectIndex } from "@/components/study-modes/StudyToolsSubjectIndex";
 import { FlashcardSubjectView } from "@/components/study-modes/FlashcardSubjectView";
 import { MatchingSubjectView } from "@/components/study-modes/MatchingSubjectView";
 import { TutorExamSubjectView } from "@/components/study-modes/TutorExamSubjectView";
-import { FLASHCARD_SUBJECTS, getFlashcardSubject } from "@/data/flashcards";
+import {
+  FLASHCARD_SUBJECTS,
+  getFlashcardSubject,
+  getFlashcardSubjectMeta,
+} from "@/data/flashcards";
 import {
   WISO_FLASHCARD_SUBJECTS,
   getWisoFlashcardSubject,
+  getWisoFlashcardSubjectMeta,
 } from "@/data/wiso-flashcards";
+import type { FlashcardSubjectViewModel } from "@/components/study-modes/FlashcardSubjectView";
 
 export type DemoStudyToolKind = "flashcards" | "matching" | "tutor-exam";
 export type DemoStudyTrack = "bbe" | "wiso";
@@ -59,7 +66,13 @@ export function DemoStudyToolIndexPage({
 }) {
   const isWiso = track === "wiso";
   const subjects = (isWiso ? WISO_FLASHCARD_SUBJECTS : FLASHCARD_SUBJECTS).map((s) => ({
-    ...s,
+    id: s.id,
+    title: s.title,
+    description: s.description,
+    accent: s.accent,
+    cardCount: s.cardCount,
+    sectionCount: s.sectionCount,
+    comingSoon: s.comingSoon,
     artSubject: s.id,
   }));
 
@@ -85,16 +98,32 @@ export function DemoStudyToolSubjectPage({
   subjectId: string;
 }) {
   const isWiso = track === "wiso";
-  const subject = isWiso
-    ? getWisoFlashcardSubject(subjectId)
-    : getFlashcardSubject(subjectId);
-  if (!subject) return null;
+  const [subject, setSubject] = useState<FlashcardSubjectViewModel | null>(null);
 
-  const demoSubject = {
-    ...subject,
-    downloadHref: null,
-    downloadLabel: null,
-  };
+  useEffect(() => {
+    let cancel = false;
+    setSubject(null);
+    const load = isWiso ? getWisoFlashcardSubject(subjectId) : getFlashcardSubject(subjectId);
+    void load.then((deck) => {
+      if (cancel || !deck) return;
+      setSubject({
+        ...deck,
+        downloadHref: null,
+        downloadLabel: null,
+      });
+    });
+    return () => {
+      cancel = true;
+    };
+  }, [isWiso, subjectId]);
+
+  if (!subject) {
+    return (
+      <div className="flex min-h-[40vh] items-center justify-center text-sm text-muted-foreground">
+        Loading deck…
+      </div>
+    );
+  }
 
   const href = subjectsHref(track, kind);
   const slug = productSlug(track);
@@ -104,7 +133,7 @@ export function DemoStudyToolSubjectPage({
     return (
       <MatchingSubjectView
         subjectId={subjectId}
-        subject={demoSubject}
+        subject={subject}
         subjectsHref={href}
         locale={locale}
         demoRevealLocked
@@ -117,7 +146,7 @@ export function DemoStudyToolSubjectPage({
     return (
       <TutorExamSubjectView
         subjectId={subjectId}
-        subject={demoSubject}
+        subject={subject}
         subjectsHref={href}
         locale={locale}
         demoRevealLocked
@@ -129,7 +158,7 @@ export function DemoStudyToolSubjectPage({
   return (
     <FlashcardSubjectView
       subjectId={subjectId}
-      subject={demoSubject}
+      subject={subject}
       progressSubjectId={isWiso ? `demo-wiso-${subjectId}` : `demo-${subjectId}`}
       subjectsHref={href}
       vocabularyModes={subjectId === "english"}
@@ -143,7 +172,7 @@ export function DemoStudyToolSubjectPage({
 export function isValidDemoStudySubject(track: DemoStudyTrack, subjectId: string) {
   const subject =
     track === "wiso"
-      ? getWisoFlashcardSubject(subjectId)
-      : getFlashcardSubject(subjectId);
+      ? getWisoFlashcardSubjectMeta(subjectId)
+      : getFlashcardSubjectMeta(subjectId);
   return !!subject && !subject.comingSoon;
 }

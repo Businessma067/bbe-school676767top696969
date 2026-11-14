@@ -9,7 +9,11 @@ import {
   warmLanguage,
 } from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
-import { ensureDictionaryReady, translate } from "@/lib/i18n/dictionary";
+import {
+  dictionaryScopesForPath,
+  ensureDictionaryReady,
+  translate,
+} from "@/lib/i18n/dictionary";
 import { useDictionaryPackVersion } from "@/lib/i18n/dictionary-pack-version";
 import { isAutoLang, isDictionaryLang } from "@/lib/i18n/languages";
 import { isStudyContentPath } from "@/lib/i18n/locale-path";
@@ -54,9 +58,11 @@ export function PageTranslator() {
 
   useLayoutEffect(() => {
     if (isDictionaryLang(effectiveLang)) {
-      void ensureDictionaryReady(effectiveLang);
+      void ensureDictionaryReady(effectiveLang, {
+        scopes: dictionaryScopesForPath(pathname),
+      });
     }
-  }, [effectiveLang]);
+  }, [effectiveLang, pathname]);
 
   useLayoutEffect(() => {
     if (typeof document === "undefined") return;

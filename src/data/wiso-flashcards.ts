@@ -1,14 +1,11 @@
-/** WiSo flashcard decks for Economics, Math, and German. */
+/** WiSo flashcard types, lightweight subject meta, and per-subject deck loaders. */
 
 import type { FlashcardSection } from "@/data/flashcards";
 import { countCards } from "@/data/flashcards";
-import { WISO_ECONOMICS_FLASHCARD_SECTIONS } from "@/data/wiso-economics-flashcards";
-import { WISO_MATH_FLASHCARD_SECTIONS } from "@/data/wiso-math-flashcards";
-import { WISO_GERMAN_FLASHCARD_SECTIONS } from "@/data/wiso-german-flashcards";
 
 export type WisoFlashcardSubjectId = "economics" | "math" | "german";
 
-export type WisoFlashcardSubject = {
+export type WisoFlashcardSubjectMeta = {
   id: WisoFlashcardSubjectId;
   title: string;
   tag: string;
@@ -16,11 +13,17 @@ export type WisoFlashcardSubject = {
   accent: string;
   downloadHref: string | null;
   downloadLabel: string | null;
-  sections: FlashcardSection[];
+  cardCount: number;
+  sectionCount: number;
   comingSoon?: boolean;
 };
 
-export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubject[] = [
+export type WisoFlashcardSubject = WisoFlashcardSubjectMeta & {
+  sections: FlashcardSection[];
+};
+
+/** Index / lock-screen subject cards — no deck payloads. */
+export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubjectMeta[] = [
   {
     id: "economics",
     title: "Wirtschaft",
@@ -30,7 +33,8 @@ export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubject[] = [
     accent: "#c8763a",
     downloadHref: null,
     downloadLabel: null,
-    sections: WISO_ECONOMICS_FLASHCARD_SECTIONS,
+    cardCount: 277,
+    sectionCount: 20,
   },
   {
     id: "math",
@@ -41,7 +45,8 @@ export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubject[] = [
     accent: "#10b981",
     downloadHref: null,
     downloadLabel: null,
-    sections: WISO_MATH_FLASHCARD_SECTIONS,
+    cardCount: 161,
+    sectionCount: 13,
   },
   {
     id: "german",
@@ -52,12 +57,43 @@ export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubject[] = [
     accent: "#6366f1",
     downloadHref: null,
     downloadLabel: null,
-    sections: WISO_GERMAN_FLASHCARD_SECTIONS,
+    cardCount: 237,
+    sectionCount: 4,
   },
 ];
 
-export function getWisoFlashcardSubject(id: string): WisoFlashcardSubject | undefined {
+export function getWisoFlashcardSubjectMeta(
+  id: string,
+): WisoFlashcardSubjectMeta | undefined {
   return WISO_FLASHCARD_SUBJECTS.find((s) => s.id === id);
+}
+
+const DECK_LOADERS: Record<
+  WisoFlashcardSubjectId,
+  () => Promise<{ sections: FlashcardSection[] }>
+> = {
+  economics: async () => {
+    const m = await import("./wiso-economics-flashcards");
+    return { sections: m.WISO_ECONOMICS_FLASHCARD_SECTIONS };
+  },
+  math: async () => {
+    const m = await import("./wiso-math-flashcards");
+    return { sections: m.WISO_MATH_FLASHCARD_SECTIONS };
+  },
+  german: async () => {
+    const m = await import("./wiso-german-flashcards");
+    return { sections: m.WISO_GERMAN_FLASHCARD_SECTIONS };
+  },
+};
+
+/** Dynamic-import one WiSo subject deck (not the full barrel). */
+export async function getWisoFlashcardSubject(
+  id: string,
+): Promise<WisoFlashcardSubject | undefined> {
+  const meta = getWisoFlashcardSubjectMeta(id);
+  if (!meta) return undefined;
+  const { sections } = await DECK_LOADERS[meta.id]();
+  return { ...meta, sections };
 }
 
 export { countCards };

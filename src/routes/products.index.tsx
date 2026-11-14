@@ -244,6 +244,8 @@ export function ProductsPage() {
                       src={p.image}
                       alt={p.title}
                       loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
                       className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                     />
                   </div>

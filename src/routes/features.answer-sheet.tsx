@@ -221,6 +221,8 @@ export function AnswerSheetFeaturePage() {
               src={examHallImg.url}
               alt="Hundreds of applicants seated at single desks in a large exam hall during the WU Vienna entrance exam"
               loading="lazy"
+              decoding="async"
+              fetchPriority="low"
               className="h-64 w-full object-cover sm:h-96"
             />
             <figcaption className="bg-card px-5 py-4 text-sm leading-relaxed text-muted-foreground">

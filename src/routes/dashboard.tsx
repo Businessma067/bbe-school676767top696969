@@ -28,7 +28,6 @@ import { WISO_CUSTOM_MOCK_SUBJECTS, wisoSubjectFromDb } from "@/config/wiso-cust
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
-import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { LockedFeaturePanel, LockedToolCard } from "@/components/CourseLockedView";
 import {
@@ -48,6 +47,10 @@ import {
 } from "lucide-react";
 import { BookCallTab, prefetchBookCallTab } from "@/components/BookCallTab";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+
+const MockScoreTrend = lazy(() =>
+  import("@/components/mock-exam/MockScoreTrend").then((m) => ({ default: m.MockScoreTrend })),
+);
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import {
   accessOwnsWisoFull,
@@ -1029,7 +1032,11 @@ function CustomMocksTab({
         </div>
       )}
 
-      {sortedAttempts.length > 0 && <MockScoreTrend attempts={sortedAttempts} />}
+      {sortedAttempts.length > 0 && (
+        <Suspense fallback={null}>
+          <MockScoreTrend attempts={sortedAttempts} />
+        </Suspense>
+      )}
 
       <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
         <h3 className="mb-3 px-3 pt-2 font-display text-lg font-bold tracking-tight">
@@ -1242,7 +1249,9 @@ function MocksTab({
         />
       </div>
 
-      <MockScoreTrend attempts={chronological} />
+      <Suspense fallback={null}>
+        <MockScoreTrend attempts={chronological} />
+      </Suspense>
 
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
         <h3 className="font-display text-lg font-bold tracking-tight">

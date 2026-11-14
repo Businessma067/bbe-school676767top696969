@@ -122,7 +122,7 @@ export const buildCustomMock = createServerFn({ method: "POST" })
     const topicCounts = cleanTopicCounts(data.topicCounts, subtopics, questionCount);
     const subjectLabel = CUSTOM_MOCK_SUBJECTS[subject].label;
 
-    const pool: CaseRow[] = (await getLocalBuilderTasks(subject)).filter((t) =>
+    const pool: CaseRow[] = (await getLocalBuilderTasks(subject, chapters)).filter((t) =>
       subtopics.includes(t.subsection),
     );
 

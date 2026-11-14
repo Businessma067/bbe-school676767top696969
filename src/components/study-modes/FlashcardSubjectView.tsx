@@ -8,7 +8,7 @@ import {
   type PointerEvent as ReactPointerEvent,
 } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import {
   countCards,
   type Flashcard,
@@ -756,7 +756,7 @@ export function FlashcardSubjectView({
                         {frontLabel}
                       </div>
                       <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
-                        <FlashcardMath
+                        <LazyFlashcardMath
                           text={card.term}
                           className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
                         />
@@ -771,7 +771,7 @@ export function FlashcardSubjectView({
                         {backLabel}
                       </div>
                       <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
-                        <FlashcardMath
+                        <LazyFlashcardMath
                           text={card.explanation}
                           className="text-base leading-relaxed text-foreground sm:text-lg"
                         />

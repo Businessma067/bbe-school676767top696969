@@ -142,7 +142,7 @@ export const buildWisoCustomMock = createServerFn({ method: "POST" })
     const subjectLabel = WISO_CUSTOM_MOCK_SUBJECTS[subject].label;
     const dbSubject = dbSubjectForWiso(subject);
 
-    const pool: CaseRow[] = (await getWisoLocalBuilderTasks(subject)).filter((t) =>
+    const pool: CaseRow[] = (await getWisoLocalBuilderTasks(subject, chapters)).filter((t) =>
       subtopics.includes(t.subsection),
     );
 

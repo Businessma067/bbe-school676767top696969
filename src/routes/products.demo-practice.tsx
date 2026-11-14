@@ -137,6 +137,9 @@ export function DemoPracticeProduct() {
                   src={src}
                   alt={`Slide ${i + 1}`}
                   className="w-full flex-shrink-0 object-cover"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={i === 0 ? "high" : "low"}
                   draggable={false}
                 />
               ))}

@@ -160,6 +160,8 @@ export function ZoomableImage({
           alt={alt}
           draggable={false}
           loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           className={cn("select-none", className)}
           style={{
             transform: `translate3d(${view.x}px, ${view.y}px, 0) scale(${view.scale})`,

@@ -495,6 +495,8 @@ export function BbeVsWisoPage() {
               alt="WU Vienna entrance exam hall with rows of desks at VIECON"
               className="h-auto max-h-[22rem] w-full object-cover"
               loading="lazy"
+              decoding="async"
+              fetchPriority="low"
             />
             <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
               The WU entrance exam hall: both pathways can lead here. Preparation quality matters more

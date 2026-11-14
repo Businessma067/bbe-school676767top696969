@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import { isHybridMockExamId } from "@/config/hybrid-mock-builder";
 import { isCustomExamId, isFreeDemoMockId, isWisoCuratedMockId } from "@/lib/mock-exams";
@@ -14,13 +14,18 @@ import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { TrackBrandMark } from "@/components/ExamTrackSwitcher";
 import { SiteHeader } from "@/components/SiteHeader";
-import { ExamResultOverview } from "@/components/mock-exam/ExamResultOverview";
 import { ReviewViewToggle, TaskReviewWorkspace } from "@/components/mock-exam/ExamTaskReview";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { storeExamTrack } from "@/lib/exam-track";
 import { navItemsForAccess } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { Button } from "@/components/ui/button";
+
+const ExamResultOverview = lazy(() =>
+  import("@/components/mock-exam/ExamResultOverview").then((m) => ({
+    default: m.ExamResultOverview,
+  })),
+);
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
   head: ({ params }) => ({
@@ -263,18 +268,20 @@ function ReviewExamPage() {
           />
         </div>
         {!showTaskReview ? (
-          <ExamResultOverview
-            examTitle={exam?.title ?? (de ? "Probeprüfung" : "Mock Exam")}
-            analytics={analytics}
-            locale={uiLocale}
-            onOpenTask={(index) => {
-              setCurrentIndex(index);
-              setShowTaskReview(true);
-              if (typeof window !== "undefined") {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }
-            }}
-          />
+          <Suspense fallback={<div className="min-h-[16rem]" aria-hidden />}>
+            <ExamResultOverview
+              examTitle={exam?.title ?? (de ? "Probeprüfung" : "Mock Exam")}
+              analytics={analytics}
+              locale={uiLocale}
+              onOpenTask={(index) => {
+                setCurrentIndex(index);
+                setShowTaskReview(true);
+                if (typeof window !== "undefined") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            />
+          </Suspense>
         ) : current ? (
           <TaskReviewWorkspace
             tasks={analytics.tasks}

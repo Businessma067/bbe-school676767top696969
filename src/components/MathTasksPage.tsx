@@ -2,11 +2,11 @@ import { lazy, memo, startTransition, Suspense, useCallback, useDeferredValue, u
 import { Link } from "@tanstack/react-router";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import {
-  FlashcardMath,
   indexOfUnescapedDollar,
   mergeContinuationDisplayParagraphs,
-} from "@/components/FlashcardMath";
+} from "@/lib/flashcard-math-helpers";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { useAuthGate } from "@/hooks/use-auth-gate";
@@ -103,6 +103,17 @@ function loadProgress(storageKey: string = STORAGE_KEY): Progress {
 function saveProgress(p: Progress, storageKey: string = STORAGE_KEY) {
   if (typeof window === "undefined") return;
   localStorage.setItem(storageKey, JSON.stringify(p));
+}
+
+/** Parse chapter from math task ids (`math-9-1`, `ch10-…`) or case ids (`MATH 9.01`). */
+function chapterNumFromMathTaskId(id: string): number | null {
+  const math = /^math-(\d+)-/i.exec(id);
+  if (math) return Number(math[1]);
+  const ch = /^ch(\d+)-/i.exec(id);
+  if (ch) return Number(ch[1]);
+  const caseId = /(?:^|\b)MATH\s+(\d+)\./i.exec(id);
+  if (caseId) return Number(caseId[1]);
+  return null;
 }
 
 function phantomCountFor(tier: MathTasksTier): number {
@@ -291,14 +302,35 @@ export function MathTasksPage({
   }, [loadChapterTasks]);
 
   /**
-   * Load only the active chapter (+ optional next). Others load on select / revision.
-   * Do not background-prefetch the entire syllabus on mount.
+   * Load only the active chapter (+ optional next). Revision loads only chapters
+   * that own revision task IDs (parsed from id / case_id / already-loaded metadata).
    */
   useEffect(() => {
     if (activeChapter === "revision") {
-      for (const ch of chapters) {
-        if (!ch.comingSoon) void ensureChapterLoaded(ch.num);
+      const owned = new Set<number>();
+      const unresolved: string[] = [];
+      for (const id of progress.revision) {
+        const fromId = chapterNumFromMathTaskId(id);
+        if (fromId != null) {
+          owned.add(fromId);
+          continue;
+        }
+        let found = false;
+        for (const [num, tasks] of Object.entries(loadedTasksRef.current)) {
+          if (tasks.some((t) => t.id === id || t.case_id === id)) {
+            owned.add(Number(num));
+            found = true;
+            break;
+          }
+        }
+        if (!found) unresolved.push(id);
       }
+      // Unknown legacy ids: only then fall back to remaining unloaded chapters.
+      const targets =
+        unresolved.length > 0
+          ? chapters.filter((ch) => !ch.comingSoon).map((ch) => ch.num)
+          : [...owned].filter((n) => chapters.some((ch) => ch.num === n && !ch.comingSoon));
+      for (const num of targets) void ensureChapterLoaded(num);
       return;
     }
     if (typeof activeChapter !== "number") return;
@@ -306,7 +338,7 @@ export function MathTasksPage({
     const idx = chapters.findIndex((c) => c.num === activeChapter);
     const next = chapters[idx + 1];
     if (next && !next.comingSoon) void ensureChapterLoaded(next.num);
-  }, [activeChapter, chapters, ensureChapterLoaded]);
+  }, [activeChapter, chapters, ensureChapterLoaded, progress.revision]);
 
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(chapters.map((c) => [c.num, false])),
@@ -1784,7 +1816,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
                 nextMath && "mb-0.5",
               )}
             >
-              <FlashcardMath text={chunk.text} displayPrefer />
+              <LazyFlashcardMath text={chunk.text} displayPrefer />
             </div>
           );
         }
@@ -1816,7 +1848,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
                         nextMath && "mb-0.5",
                       )}
                     >
-                      <FlashcardMath text={para} displayPrefer />
+                      <LazyFlashcardMath text={para} displayPrefer />
                     </div>
                   );
                 }
@@ -2019,7 +2051,7 @@ function RichMathLine({ text }: { text: string }) {
           if (kind === "step") {
             return (
               <strong key={idx} className="font-bold text-foreground">
-                <FlashcardMath text={value} />
+                <LazyFlashcardMath text={value} />
               </strong>
             );
           }
@@ -2032,18 +2064,18 @@ function RichMathLine({ text }: { text: string }) {
           }
           return (
             <strong key={idx} className="font-bold text-foreground">
-              <FlashcardMath text={value} />
+              <LazyFlashcardMath text={value} />
             </strong>
           );
         }
         if (p.kind === "italic") {
           return (
             <em key={idx} className="italic text-muted-foreground">
-              <FlashcardMath text={value} />
+              <LazyFlashcardMath text={value} />
             </em>
           );
         }
-        return <FlashcardMath key={idx} text={value} />;
+        return <LazyFlashcardMath key={idx} text={value} />;
       })}
     </span>
   );
@@ -2142,7 +2174,7 @@ function AllExplanationsPanel({
             Full solution · Task {index + 1}
           </p>
           <h3 className="mt-0.5 truncate font-display text-sm font-bold">
-            <FlashcardMath text={task.title} />
+            <LazyFlashcardMath text={task.title} />
           </h3>
         </div>
         <button
@@ -2394,7 +2426,7 @@ const MathTaskCard = memo(function MathTaskCard({
       </div>
 
       <h2 className="font-display text-lg font-bold tracking-tight">
-        <FlashcardMath text={task.title} />
+        <LazyFlashcardMath text={task.title} />
       </h2>
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
         <MathProse text={task.context} className="text-sm" />
@@ -2438,7 +2470,7 @@ const MathTaskCard = memo(function MathTaskCard({
                   {String.fromCharCode(65 + i)}.
                 </span>
                 <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground">
-                  <FlashcardMath text={stmt} />
+                  <LazyFlashcardMath text={stmt} />
                 </p>
                 <div className="flex w-11 shrink-0 justify-center lg:w-14">
                   <button

@@ -1,4 +1,14 @@
-import { memo, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import {
+  lazy,
+  memo,
+  Suspense,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -11,9 +21,26 @@ import {
   type MathCourseTheoryChapter,
 } from "@/data/math-course-theory";
 import { loadWisoEconomicsCourseTheory } from "@/data/wiso-economics-course-theory";
-import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
 import { trackEvent, upsertTheoryProgress } from "@/lib/activity-tracker";
+
+const TheoryFigureLazy = lazy(() =>
+  import("@/components/theory/TheoryFigure").then((m) => ({ default: m.TheoryFigure })),
+);
+
+function TheoryFigureSlot({
+  id,
+  caption,
+}: {
+  id: string;
+  caption?: string;
+}) {
+  return (
+    <Suspense fallback={<div className="my-5 min-h-[12rem] rounded-xl border border-border bg-secondary/20" aria-hidden />}>
+      <TheoryFigureLazy id={id} caption={caption} />
+    </Suspense>
+  );
+}
 
 const ECONOMICS_MATERIALS_PDF_URL = "/bbe-economics-textbook.pdf";
 const ECONOMICS_MATERIALS_PDF_NAME = "BBE-Economics-Full-Course-Theory.pdf";
@@ -306,7 +333,7 @@ export function TheoryArticle({
     <>
       {segments.slice(0, count).map((seg, i) => {
         if (seg.kind === "figure") {
-          return <TheoryFigure key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />;
+          return <TheoryFigureSlot key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />;
         }
         if (seg.kind === "note") {
           return (
@@ -670,7 +697,7 @@ export function TheoryReader({
         </div>
       );
       if (seg.kind === "figure") {
-        return wrap(<TheoryFigure id={seg.id} caption={seg.caption} />);
+        return wrap(<TheoryFigureSlot id={seg.id} caption={seg.caption} />);
       }
       if (seg.kind === "note") {
         return wrap(

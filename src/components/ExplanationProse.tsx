@@ -1,8 +1,8 @@
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import {
-  FlashcardMath,
   mergeContinuationDisplayParagraphs,
   unescapeProseLatex,
-} from "@/components/FlashcardMath";
+} from "@/lib/flashcard-math-helpers";
 import { MathMarkdownTable, parsePipeTable } from "@/components/mock-exam/MathMarkdownTable";
 import { cn } from "@/lib/utils";
 
@@ -152,7 +152,7 @@ export function ExplanationProse({
                 nextMath && "mb-0.5",
               )}
             >
-              <FlashcardMath text={chunk.text} displayPrefer />
+              <LazyFlashcardMath text={chunk.text} displayPrefer />
             </div>
           );
         }
@@ -191,10 +191,10 @@ function InlineMarks({ text }: { text: string }) {
   return (
     <span>
       {parts.map((p, i) => {
-        // Always run through FlashcardMath when `$` is present; otherwise still
-        // strip prose `\%` / `\$` that DE overlays leave outside math mode.
+        // Load katex/FlashcardMath only when `$` is present; otherwise strip
+        // prose `\%` / `\$` that DE overlays leave outside math mode.
         const body = p.value.includes("$") ? (
-          <FlashcardMath text={p.value} />
+          <LazyFlashcardMath text={p.value} />
         ) : (
           unescapeProseLatex(p.value)
         );

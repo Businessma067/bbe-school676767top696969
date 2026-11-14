@@ -125,6 +125,8 @@ export function ParentsPage() {
             src={clockAsset.url}
             alt="Clock on top of an exam answer sheet"
             loading="lazy"
+            decoding="async"
+            fetchPriority="low"
             className="h-72 w-full object-cover sm:h-96"
           />
           <figcaption className="bg-card px-5 py-3 text-xs text-muted-foreground">
@@ -188,6 +190,8 @@ export function ParentsPage() {
             src={moneyAsset.url}
             alt="Euro banknotes next to a graduation cap and calculator"
             loading="lazy"
+            decoding="async"
+            fetchPriority="low"
             className="h-72 w-full object-cover sm:h-96"
           />
           <figcaption className="bg-card px-5 py-3 text-xs text-muted-foreground">
@@ -275,6 +279,8 @@ export function ParentsPage() {
             src={wuAsset.url}
             alt="WU Vienna campus"
             loading="lazy"
+            decoding="async"
+            fetchPriority="low"
             className="h-72 w-full object-cover sm:h-96"
           />
           <figcaption className="bg-card px-5 py-3 text-xs text-muted-foreground">

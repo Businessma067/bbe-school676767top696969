@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   FileSpreadsheet,
   Flag,
@@ -30,7 +30,6 @@ import {
   type MockExamSession,
 } from "@/lib/mock-exam-session";
 import { fetchInProgressMockSession, upsertMockExamProgress } from "@/lib/user-progress";
-import { AnnotationLayer } from "@/components/mock-exam/AnnotationLayer";
 import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
 import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
 import { ExamReviewScreen } from "@/components/mock-exam/ExamReviewScreen";
@@ -40,7 +39,6 @@ import {
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
-import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
 import { CourseLockedView } from "@/components/CourseLockedView";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -55,6 +53,13 @@ import {
 } from "@/components/ui/sheet";
 import type { AccessTier } from "@/lib/entitlements";
 import { cn } from "@/lib/utils";
+
+const AnnotationLayer = lazy(() =>
+  import("@/components/mock-exam/AnnotationLayer").then((m) => ({ default: m.AnnotationLayer })),
+);
+const Ti30MathPrint = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.Ti30MathPrint })),
+);
 
 export const Route = createFileRoute("/mock-exams/$examId/take")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -811,12 +816,14 @@ function TakeExamPage() {
               </ol>
             </div>
 
-            <AnnotationLayer
-              key={q.id}
-              enabled={annotationMode}
-              strokes={session.annotations[q.id] ?? []}
-              onChange={setAnnotations}
-            />
+            <Suspense fallback={null}>
+              <AnnotationLayer
+                key={q.id}
+                enabled={annotationMode}
+                strokes={session.annotations[q.id] ?? []}
+                onChange={setAnnotations}
+              />
+            </Suspense>
           </div>
 
           <nav className="mt-4 flex items-center justify-between gap-3">
@@ -941,7 +948,9 @@ function TakeExamPage() {
             </SheetDescription>
           </SheetHeader>
           <div className="mt-4 flex justify-center pb-8">
-            <Ti30MathPrint className="w-full" />
+            <Suspense fallback={<div className="min-h-[20rem]" aria-hidden />}>
+              <Ti30MathPrint className="w-full" />
+            </Suspense>
           </div>
         </SheetContent>
       </Sheet>

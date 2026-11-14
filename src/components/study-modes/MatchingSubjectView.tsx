@@ -9,7 +9,7 @@ import {
   type PointerEvent as ReactPointerEvent,
 } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { LazyFlashcardMath } from "@/components/LazyFlashcardMath";
 import {
   countCards,
   type Flashcard,
@@ -287,7 +287,15 @@ export function MatchingSubjectView({
   }, []);
 
   useEffect(() => {
+    const onVisibility = () => {
+      if (document.hidden && rafRef.current != null) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
+    };
+    document.addEventListener("visibilitychange", onVisibility);
     return () => {
+      document.removeEventListener("visibilitychange", onVisibility);
       for (const t of lineDelayTimers.current.values()) window.clearTimeout(t);
       if (wrongLineTimer.current != null) window.clearTimeout(wrongLineTimer.current);
       if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
@@ -453,6 +461,10 @@ export function MatchingSubjectView({
     if (rafRef.current != null) return;
 
     const tick = () => {
+      if (typeof document !== "undefined" && document.hidden) {
+        rafRef.current = null;
+        return;
+      }
       const live = dragRef.current;
       if (!live) {
         rafRef.current = null;
@@ -880,7 +892,7 @@ function Column({
                       "·"
                     )}
                   </span>
-                  <FlashcardMath
+                  <LazyFlashcardMath
                     text={text}
                     className={
                       "min-w-0 flex-1 leading-snug " +

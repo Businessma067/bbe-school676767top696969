@@ -70,6 +70,23 @@ export async function loadWisoGermanChapters(): Promise<EnglishChapter[]> {
 }
 
 /**
+ * Load one German reading subsection (passage + its tasks) without callers
+ * holding the full Texte chapter. Still uses the shared bank file/cache —
+ * does not split or rewrite the JSON.
+ */
+export async function loadWisoGermanSubsection(id: string): Promise<{
+  subsection: EnglishSubsection | undefined;
+  tasks: EnglishTask[];
+}> {
+  const chapters = await loadWisoGermanChapters();
+  const chapter = chapters[0];
+  if (!chapter) return { subsection: undefined, tasks: [] };
+  const subsection = chapter.subsections.find((s) => s.id === id);
+  const tasks = chapter.tasks.filter((t) => t.subsection === id);
+  return { subsection, tasks };
+}
+
+/**
  * WiSo demo unlocks by text (subsection). Unlisted texts stay locked.
  * First text: first 5 tasks; second text: first 3 tasks.
  */

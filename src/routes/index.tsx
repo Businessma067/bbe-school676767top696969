@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
 } from "lucide-react";
@@ -11,13 +11,18 @@ import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteContacts } from "@/components/SiteContacts";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
-import { CourseCallCalendar } from "@/components/CourseCallCalendar";
 import { homepageNavItems } from "@/config/site-nav";
 import { PAID_PRODUCTS } from "@/lib/checkout-catalog";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+const CourseCallCalendar = lazy(() =>
+  import("@/components/CourseCallCalendar").then((m) => ({ default: m.CourseCallCalendar })),
+);
+const WhyChooseUsSection = lazy(() =>
+  import("@/components/WhyChooseUsSection").then((m) => ({ default: m.WhyChooseUsSection })),
+);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -149,7 +154,9 @@ export function Index() {
                   exam practice. Choose one track, or Hybrid to prepare for both together.
                 </p>
               </div>
-              <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
+              <Suspense fallback={<div className="min-h-[18rem]" aria-hidden />}>
+                <CourseCallCalendar className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none" />
+              </Suspense>
             </div>
 
             <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-4 md:mt-10 md:grid-cols-3 md:items-stretch md:gap-5">
@@ -279,7 +286,9 @@ export function Index() {
           </div>
         </section>
 
-        <WhyChooseUsSection className="pb-4 sm:pb-6 lg:pb-6" />
+        <Suspense fallback={null}>
+          <WhyChooseUsSection className="pb-4 sm:pb-6 lg:pb-6" />
+        </Suspense>
 
         <section className="bg-why-us-bg px-4 pb-10 pt-0 sm:px-6 sm:pb-12 lg:px-8 lg:pb-14">
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-12">

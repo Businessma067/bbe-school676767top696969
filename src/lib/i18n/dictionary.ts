@@ -8,8 +8,9 @@ export { LANGUAGES } from "./languages";
  * Anything missing simply stays in English.
  *
  * Sync core = chrome/nav/common UI in baseDictionary only. Heavy page packs
- * load via dynamic import() through ensureDictionaryReady() so English first
- * paint does not ship ~1.1MB of DE/UK copy.
+ * load via dynamic import() through ensureDictionaryReady(lang, { scopes })
+ * so English first paint does not ship ~1.1MB of DE/UK copy, and DE/UK
+ * routes only pull the packs their path needs (home / news / wiso / all).
  */
 type EditedLang = "de" | "uk";
 
@@ -546,113 +547,297 @@ function mergePack(lang: EditedLang, pack: Record<string, string>, protect: Set<
 
 type PackSlice = Record<string, string>;
 
+/** Route-scoped dictionary packs. `core` = sync baseDictionary only (no heavy load). */
+export type DictionaryScope = "core" | "home" | "news" | "wiso" | "all";
+
+type NamedPackLoader = {
+  id: string;
+  scope: Exclude<DictionaryScope, "core" | "all">;
+  load: () => Promise<{ de: PackSlice; uk: PackSlice }>;
+};
+
 /**
  * Dynamic imports keep these out of the English first-paint graph.
  * Order matches the former static spread (later wins, then core protects).
+ * Every pack still exists and loads when its scope (or `all`) is requested.
  */
-const HEAVY_PACK_LOADERS: Array<() => Promise<{ de: PackSlice; uk: PackSlice }>> = [
-  () =>
-    import("./generated").then((m) => ({ de: m.generatedDe, uk: m.generatedUk })),
-  () => import("./extra").then((m) => ({ de: m.extraDe, uk: m.extraUk })),
-  () => import("./ui-extra").then((m) => ({ de: m.uiExtraDe, uk: m.uiExtraUk })),
-  () =>
-    import("./features-extra").then((m) => ({
-      de: m.featuresExtraDe,
-      uk: m.featuresExtraUk,
-    })),
-  () =>
-    import("./bbe-vs-wiso-extra").then((m) => ({
-      de: m.bbeVsWisoExtraDe,
-      uk: m.bbeVsWisoExtraUk,
-    })),
-  () =>
-    import("./wu-vienna-extra").then((m) => ({
-      de: m.wuViennaExtraDe,
-      uk: m.wuViennaExtraUk,
-    })),
-  () =>
-    import("./hub-gap-extra").then((m) => ({
-      de: m.hubGapExtraDe,
-      uk: m.hubGapExtraUk,
-    })),
-  () =>
-    import("./home-extra").then((m) => ({ de: m.homeExtraDe, uk: m.homeExtraUk })),
-  () =>
-    import("./wiso-hub-extra").then((m) => ({
-      de: m.wisoHubExtraDe,
-      uk: m.wisoHubExtraUk,
-    })),
-  () =>
-    import("./copy-voice-extra").then((m) => ({
-      de: m.copyVoiceExtraDe,
-      uk: m.copyVoiceExtraUk,
-    })),
-  () =>
-    import("./news-extra").then((m) => ({ de: m.newsExtraDe, uk: m.newsExtraUk })),
-  () =>
-    import("./news-body-extra").then((m) => ({
-      de: m.newsBodyExtraDe,
-      uk: m.newsBodyExtraUk,
-    })),
-  () =>
-    import("./reviews-extra").then((m) => ({
-      de: m.reviewsChromeDe,
-      uk: m.reviewsChromeUk,
-    })),
-  () =>
-    import("@/data/acceptance-notes").then((m) => ({
-      de: m.acceptanceNoteDictionary("de"),
-      uk: m.acceptanceNoteDictionary("uk"),
-    })),
+const HEAVY_PACK_LOADERS: NamedPackLoader[] = [
+  {
+    id: "generated",
+    scope: "home",
+    load: () =>
+      import("./generated").then((m) => ({ de: m.generatedDe, uk: m.generatedUk })),
+  },
+  {
+    id: "extra",
+    scope: "home",
+    load: () => import("./extra").then((m) => ({ de: m.extraDe, uk: m.extraUk })),
+  },
+  {
+    id: "ui-extra",
+    scope: "home",
+    load: () => import("./ui-extra").then((m) => ({ de: m.uiExtraDe, uk: m.uiExtraUk })),
+  },
+  {
+    id: "features-extra",
+    scope: "home",
+    load: () =>
+      import("./features-extra").then((m) => ({
+        de: m.featuresExtraDe,
+        uk: m.featuresExtraUk,
+      })),
+  },
+  {
+    id: "bbe-vs-wiso-extra",
+    scope: "home",
+    load: () =>
+      import("./bbe-vs-wiso-extra").then((m) => ({
+        de: m.bbeVsWisoExtraDe,
+        uk: m.bbeVsWisoExtraUk,
+      })),
+  },
+  {
+    id: "wu-vienna-extra",
+    scope: "home",
+    load: () =>
+      import("./wu-vienna-extra").then((m) => ({
+        de: m.wuViennaExtraDe,
+        uk: m.wuViennaExtraUk,
+      })),
+  },
+  {
+    id: "hub-gap-extra",
+    scope: "home",
+    load: () =>
+      import("./hub-gap-extra").then((m) => ({
+        de: m.hubGapExtraDe,
+        uk: m.hubGapExtraUk,
+      })),
+  },
+  {
+    id: "home-extra",
+    scope: "home",
+    load: () => import("./home-extra").then((m) => ({ de: m.homeExtraDe, uk: m.homeExtraUk })),
+  },
+  {
+    id: "wiso-hub-extra",
+    scope: "wiso",
+    load: () =>
+      import("./wiso-hub-extra").then((m) => ({
+        de: m.wisoHubExtraDe,
+        uk: m.wisoHubExtraUk,
+      })),
+  },
+  {
+    id: "copy-voice-extra",
+    scope: "home",
+    load: () =>
+      import("./copy-voice-extra").then((m) => ({
+        de: m.copyVoiceExtraDe,
+        uk: m.copyVoiceExtraUk,
+      })),
+  },
+  {
+    id: "news-extra",
+    scope: "news",
+    load: () => import("./news-extra").then((m) => ({ de: m.newsExtraDe, uk: m.newsExtraUk })),
+  },
+  {
+    id: "news-body-extra",
+    scope: "news",
+    load: () =>
+      import("./news-body-extra").then((m) => ({
+        de: m.newsBodyExtraDe,
+        uk: m.newsBodyExtraUk,
+      })),
+  },
+  {
+    id: "reviews-extra",
+    scope: "home",
+    load: () =>
+      import("./reviews-extra").then((m) => ({
+        de: m.reviewsChromeDe,
+        uk: m.reviewsChromeUk,
+      })),
+  },
+  {
+    id: "acceptance-notes",
+    scope: "home",
+    load: () =>
+      import("@/data/acceptance-notes").then((m) => ({
+        de: m.acceptanceNoteDictionary("de"),
+        uk: m.acceptanceNoteDictionary("uk"),
+      })),
+  },
 ];
 
-let packsMerged = false;
+const loadedPackSlices = new Map<string, { de: PackSlice; uk: PackSlice }>();
+const mergedScopes = new Set<DictionaryScope>(["core"]);
 let packsInflight: Promise<void> | null = null;
+let packsInflightKey = "";
 
-async function mergeHeavyPacks(): Promise<void> {
-  if (packsMerged) return;
-  const slices = await Promise.all(HEAVY_PACK_LOADERS.map((load) => load()));
+function rebuildDictionaryFromLoadedPacks() {
   for (const lang of ["de", "uk"] as const) {
+    // Reset to sync core, then re-apply every loaded pack in canonical order
+    // so scoped loads never invert later-wins precedence.
+    dictionary[lang] = { ...baseDictionary[lang] };
     const protect = coreProtectedKeys[lang];
-    for (const slice of slices) {
+    for (const pack of HEAVY_PACK_LOADERS) {
+      const slice = loadedPackSlices.get(pack.id);
+      if (!slice) continue;
       mergePack(lang, slice[lang], protect);
     }
     rebuildCollapsed(lang);
   }
-  packsMerged = true;
   emitPackVersion();
 }
 
-/**
- * Ensures heavy DE/UK packs are loaded and merged. No-op for `en` / auto langs.
- * Safe to call from SSR beforeLoad (locale routes) and from the client.
- */
-export function ensureDictionaryReady(lang: Lang): Promise<void> {
-  if (!isDictionaryLang(lang)) return Promise.resolve();
-  if (packsMerged) return Promise.resolve();
-  if (!packsInflight) {
-    packsInflight = mergeHeavyPacks().finally(() => {
-      packsInflight = null;
-    });
+function normalizeScopes(scopes: DictionaryScope[] | undefined): DictionaryScope[] {
+  if (!scopes || scopes.length === 0) return ["all"];
+  const out = new Set<DictionaryScope>();
+  for (const s of scopes) {
+    if (s === "all") return ["all"];
+    out.add(s);
   }
+  out.add("core");
+  return [...out];
+}
+
+/** Pick dictionary scopes from a locale or app pathname (locale prefix stripped). */
+export function dictionaryScopesForPath(pathname: string): DictionaryScope[] {
+  let path = pathname || "/";
+  const m = path.match(/^\/(de|uk)(\/|$)/);
+  if (m) {
+    path = path.slice(m[1].length + 1) || "/";
+  }
+  path = path.replace(/\/+$/, "") || "/";
+
+  if (path === "/news" || path.startsWith("/news/")) {
+    return ["core", "news"];
+  }
+  if (path === "/wiso" || path.startsWith("/wiso/")) {
+    return ["core", "wiso"];
+  }
+  if (
+    path === "/" ||
+    path === "/products" ||
+    path.startsWith("/products/") ||
+    path === "/bbe" ||
+    path.startsWith("/bbe") ||
+    path === "/hybrid" ||
+    path === "/how-it-works" ||
+    path === "/reviews" ||
+    path === "/parents" ||
+    path === "/important-features" ||
+    path.startsWith("/features/") ||
+    path === "/demo-practice" ||
+    path.startsWith("/demo-practice/") ||
+    path === "/demo-mock" ||
+    path === "/login" ||
+    path === "/signup" ||
+    path === "/account" ||
+    path === "/terms" ||
+    path === "/privacy" ||
+    path === "/wu-vienna" ||
+    path === "/bbe-vs-wiso"
+  ) {
+    return ["core", "home"];
+  }
+  // Unknown / study surfaces: load everything so no strings are missing.
+  return ["all"];
+}
+
+function loadersForScopes(scopes: DictionaryScope[]): NamedPackLoader[] {
+  if (scopes.includes("all")) return HEAVY_PACK_LOADERS;
+  const wanted = new Set(scopes);
+  return HEAVY_PACK_LOADERS.filter((p) => wanted.has(p.scope));
+}
+
+async function mergeScopedPacks(scopes: DictionaryScope[]): Promise<void> {
+  const normalized = normalizeScopes(scopes);
+  if (normalized.includes("all") && loadedPackSlices.size === HEAVY_PACK_LOADERS.length) {
+    mergedScopes.add("all");
+    return;
+  }
+  if (
+    !normalized.includes("all") &&
+    normalized.every((s) => s === "core" || mergedScopes.has(s))
+  ) {
+    return;
+  }
+
+  const loaders = loadersForScopes(normalized).filter((p) => !loadedPackSlices.has(p.id));
+  if (loaders.length === 0) {
+    for (const s of normalized) mergedScopes.add(s);
+    if (loadedPackSlices.size === HEAVY_PACK_LOADERS.length) mergedScopes.add("all");
+    return;
+  }
+
+  const slices = await Promise.all(loaders.map((p) => p.load()));
+  loaders.forEach((p, i) => {
+    loadedPackSlices.set(p.id, slices[i]!);
+  });
+  for (const s of normalized) mergedScopes.add(s);
+  if (loadedPackSlices.size === HEAVY_PACK_LOADERS.length) mergedScopes.add("all");
+  rebuildDictionaryFromLoadedPacks();
+}
+
+export type EnsureDictionaryOptions = {
+  /** Which pack groups to load. Defaults to `all` for safety when unknown. */
+  scopes?: DictionaryScope[];
+};
+
+/**
+ * Ensures requested DE/UK packs are loaded and merged. No-op for `en` / auto langs.
+ * Safe to call from SSR beforeLoad (locale routes) and from the client.
+ * Packs are cumulative — later calls only fetch scopes not yet merged.
+ */
+export function ensureDictionaryReady(
+  lang: Lang,
+  opts?: EnsureDictionaryOptions,
+): Promise<void> {
+  if (!isDictionaryLang(lang)) return Promise.resolve();
+  const scopes = normalizeScopes(opts?.scopes);
+  if (
+    scopes.includes("all")
+      ? loadedPackSlices.size === HEAVY_PACK_LOADERS.length
+      : scopes.every((s) => s === "core" || mergedScopes.has(s))
+  ) {
+    return Promise.resolve();
+  }
+
+  const key = scopes.slice().sort().join(",");
+  if (packsInflight && packsInflightKey === key) return packsInflight;
+
+  // Coalesce overlapping in-flight work: await the prior batch, then merge.
+  const prior = packsInflight;
+  const run = async () => {
+    if (prior) await prior;
+    await mergeScopedPacks(scopes);
+  };
+  packsInflightKey = key;
+  packsInflight = run().finally(() => {
+    packsInflight = null;
+    packsInflightKey = "";
+  });
   return packsInflight;
 }
 
 /** True once every heavy pack has been merged (both DE and UK tables). */
 export function isDictionaryReady(): boolean {
-  return packsMerged;
+  return loadedPackSlices.size === HEAVY_PACK_LOADERS.length;
 }
 
 /**
- * Warm packs after idle on any session so a later DE/UK navigation is snappy.
- * Does nothing if packs already loaded.
+ * Warm core+home packs after idle on EN so a later DE/UK home nav is snappy.
+ * Does not pull news/wiso packs.
  */
 export function scheduleDictionaryWarm(): void {
-  if (packsMerged || packsInflight) return;
+  if (mergedScopes.has("home") && mergedScopes.has("core")) return;
   if (typeof window === "undefined") return;
 
   const start = () => {
-    void ensureDictionaryReady("de");
+    void ensureDictionaryReady("de", { scopes: ["core", "home"] });
   };
 
   if ("requestIdleCallback" in window) {
