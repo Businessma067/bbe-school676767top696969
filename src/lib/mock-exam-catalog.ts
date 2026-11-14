@@ -122,8 +122,8 @@ export const WISO_MOCK_EXAMS: MockExamSummary[] = [
     questionCount: 34,
     durationMinutes: 120,
     tier: "full",
-    // These original papers have 11 German tasks (one more than the base exam).
-    pointsTotal: WISO_POINTS + SCORING_CONFIG.german.defaultMaxPerTask,
+    pointsTotal: SCORING_CONFIG.economics.totalPoints + SCORING_CONFIG.german.totalPoints +
+      SCORING_CONFIG.math.pointsPerTask.slice(0, 13).reduce((sum, points) => sum + points, 0),
   })),
 ];
 

@@ -8,7 +8,7 @@ import {
   normalizeAppPath,
 } from "@/lib/i18n/locale-path";
 import {
-  getCachedLocalizedPage,
+  getLocalizedLazyPage,
   hasLocalizedPage,
   loadLocalizedPage,
 } from "@/lib/i18n/localized-pages";
@@ -82,7 +82,6 @@ export const Route = createFileRoute("/$lang/$")({
 
 function LocalizedSplatPage() {
   const { localizedPath } = Route.useRouteContext();
-  const Page = getCachedLocalizedPage(localizedPath);
-  if (!Page) return null;
+  const Page = getLocalizedLazyPage(localizedPath);
   return <Page />;
 }
