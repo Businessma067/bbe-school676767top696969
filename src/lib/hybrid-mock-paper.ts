@@ -21,7 +21,8 @@ import { logHybridPaper } from "@/lib/hybrid-progress";
 
 async function loadWisoGermanChapter() {
   const mod = await import("@/data/wiso-german-chapters");
-  return mod.WISO_GERMAN_CHAPTERS[0];
+  const chapters = await mod.loadWisoGermanChapters();
+  return chapters[0];
 }
 
 const STORE_KEY = "hybrid.mock.papers.v1";

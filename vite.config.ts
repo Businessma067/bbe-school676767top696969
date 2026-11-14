@@ -72,6 +72,42 @@ export default defineConfig({
             if (id.includes("node_modules/recharts") || id.includes("node_modules/d3-")) {
               return "charts";
             }
+            // Keep jsx runtime out of the i18n chunk — it is the app-wide import source.
+            if (
+              (id.includes("/src/lib/i18n/") || id.includes("\\src\\lib\\i18n\\")) &&
+              !id.includes("/src/lib/i18n/jsx") &&
+              !id.includes("\\src\\lib\\i18n\\jsx")
+            ) {
+              return "i18n";
+            }
+            if (
+              id.includes("Ti30MathPrint") ||
+              id.includes("/calculator/Ti30") ||
+              id.includes("\\calculator\\Ti30")
+            ) {
+              return "ti30-math";
+            }
+            if (id.includes("FlashcardMath")) {
+              return "flashcard-math";
+            }
+            if (
+              id.includes("/src/components/theory/") ||
+              id.includes("\\src\\components\\theory\\") ||
+              id.includes("TheoryFigure")
+            ) {
+              return "theory-figures";
+            }
+            if (
+              id.includes("course-theory") ||
+              id.includes("/math-theory/") ||
+              id.includes("\\math-theory\\") ||
+              id.includes("/economics-theory/") ||
+              id.includes("\\economics-theory\\") ||
+              id.includes("/wiso-economics-theory/") ||
+              id.includes("\\wiso-economics-theory\\")
+            ) {
+              return "course-theory";
+            }
             // Keep each math chapter bank in its own async chunk.
             const mathCh = id.match(/[/\\]src[/\\]data[/\\]math-ch(\d+)/);
             if (mathCh) return `math-ch${mathCh[1]}`;
@@ -107,6 +143,38 @@ export default defineConfig({
               (id.includes("-content") || id.includes("-sourced"))
             ) {
               return "mock-papers";
+            }
+            // Heavy i18n packs — separate async chunks (not in EN first paint).
+            if (
+              id.includes("/src/lib/i18n/generated") ||
+              id.includes("\\src\\lib\\i18n\\generated")
+            ) {
+              return "i18n-generated";
+            }
+            if (
+              id.includes("/src/lib/i18n/wiso-hub-extra") ||
+              id.includes("\\src\\lib\\i18n\\wiso-hub-extra")
+            ) {
+              return "i18n-wiso-hub";
+            }
+            if (
+              id.includes("/src/lib/i18n/news-body-extra") ||
+              id.includes("\\src\\lib\\i18n\\news-body-extra")
+            ) {
+              return "i18n-news-body";
+            }
+            if (
+              /[/\\]src[/\\]lib[/\\]i18n[/\\](extra|ui-extra|features-extra|bbe-vs-wiso-extra|wu-vienna-extra|hub-gap-extra|home-extra|copy-voice-extra|news-extra|reviews-extra)\.ts$/.test(
+                id,
+              )
+            ) {
+              return "i18n-extras";
+            }
+            if (
+              id.includes("/src/data/acceptance-notes") ||
+              id.includes("\\src\\data\\acceptance-notes")
+            ) {
+              return "i18n-acceptance";
             }
           },
         },

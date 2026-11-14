@@ -1,6 +1,10 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { BookOpen, ChevronDown, PanelLeftOpen } from "lucide-react";
-import { MATH_COURSE_THEORY, type MathCourseTheoryChapter } from "@/data/math-course-theory";
+import {
+  loadMathCourseTheory,
+  MATH_COURSE_THEORY,
+  type MathCourseTheoryChapter,
+} from "@/data/math-course-theory";
 import { TheoryArticle } from "@/components/TheoryReader";
 import type { DemoPlayerApi } from "@/components/news/demos/useDemoPlayer";
 import { howItWorksGlide, useDemoPlayer } from "@/components/news/demos/useDemoPlayer";
@@ -39,6 +43,13 @@ function Reader({
   onScroll: (pct: number) => void;
 }) {
   const markdown = chapter.markdown;
+  if (!markdown) {
+    return (
+      <div className="absolute inset-0 z-10 flex items-center justify-center bg-card text-sm text-muted-foreground">
+        Loading theory…
+      </div>
+    );
+  }
   const chip = useMemo(() => {
     const line = markdown.split("\n").find((item) => /^##\s+\d+\.\d+\b/.test(item));
     return line?.replace(/^##\s+/, "").replace(/^(\d+\.\d+)\s+/, "$1 · ") ?? "";
@@ -212,11 +223,13 @@ export function CourseTheoryDemo({
   rest = 1,
   lockCopy = false,
   catalog = MATH_COURSE_THEORY,
+  loadChapter = loadMathCourseTheory,
   copy = EN_THEORY,
 }: {
   rest?: number;
   lockCopy?: boolean;
   catalog?: Record<number, MathCourseTheoryChapter>;
+  loadChapter?: (num: number) => Promise<MathCourseTheoryChapter | undefined>;
   copy?: TheoryDemoCopy;
 } = {}) {
   const chapters = useMemo(
@@ -224,13 +237,40 @@ export function CourseTheoryDemo({
     [catalog],
   );
   const [open, setOpen] = useState<number | null>(null);
+  const [bodies, setBodies] = useState<Record<number, MathCourseTheoryChapter>>({});
+  const bodiesRef = useRef<Record<number, MathCourseTheoryChapter>>({});
   const barPct = useRef(0);
+
+  useEffect(() => {
+    let cancel = false;
+    (async () => {
+      const next: Record<number, MathCourseTheoryChapter> = {};
+      for (const num of READ) {
+        const loaded = await loadChapter(num);
+        if (cancel) return;
+        if (loaded) next[num] = loaded;
+      }
+      if (!cancel) {
+        bodiesRef.current = next;
+        setBodies(next);
+      }
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, [loadChapter]);
+
   const { stageRef, scrollRef, cursorRef, clicking, fade, setFade } = useDemoPlayer(async (api) => {
     const readChapter = async (num: (typeof READ)[number]) => {
       await aim(api, `[data-d="ch-${num}"]`);
       await api.click();
       setOpen(num);
       await api.flush();
+      // Wait briefly for the prefetched body to be present.
+      for (let i = 0; i < 40 && !bodiesRef.current[num]?.markdown; i++) {
+        if (api.cancelled()) return;
+        await api.wait(40);
+      }
       await readChapterGlide(api);
       await aim(api, '[data-d="chapters"]');
       await api.click();
@@ -253,7 +293,7 @@ export function CourseTheoryDemo({
     await api.wait(360);
   }, [rest], { rest, glideScale: howItWorksGlide(rest) });
 
-  const chapter = open == null ? null : catalog[open];
+  const chapter = open == null ? null : (bodies[open] ?? catalog[open]);
 
   return (
     <CourseFrame

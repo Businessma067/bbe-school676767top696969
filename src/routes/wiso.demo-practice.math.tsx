@@ -6,7 +6,10 @@ import {
 } from "@/data/wiso-math-chapters";
 import { withDemoMathChapterLayout } from "@/data/math-chapters";
 import { swapWisoDemoMathBlocks } from "@/data/wiso-demo-math";
-import { getWisoMathCourseTheory } from "@/data/wiso-math-course-theory";
+import {
+  getWisoMathCourseTheory,
+  loadWisoMathCourseTheory,
+} from "@/data/wiso-math-course-theory";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PATH = "/wiso/demo-practice/math" as const;
@@ -47,6 +50,7 @@ function WisoDemoMathTasks() {
       chapters={DEMO_WISO_MATH_CHAPTERS}
       loadChapterTasks={loadWisoDemoMathChapterTasksSwapped}
       getTheory={getWisoMathCourseTheory}
+      loadTheory={loadWisoMathCourseTheory}
       storageKey="wiso.math.demo.progress.v1"
       contentLang="de"
       fullCourseHref="/wiso/products/full-course"

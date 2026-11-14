@@ -3,18 +3,44 @@ import { flushSync } from "react-dom";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { CourseEconDemo } from "@/components/how-it-works/CourseEconDemo";
-import { CourseEnglishDemo } from "@/components/how-it-works/CourseEnglishDemo";
-import { CourseMathDemo } from "@/components/how-it-works/CourseMathDemo";
-import { CourseMockDemo } from "@/components/how-it-works/CourseMockDemo";
-import { CourseMockExamDemo } from "@/components/how-it-works/CourseMockExamDemo";
-import { CourseFlashDemo, CourseMatchDemo, CourseTutorDemo } from "@/components/how-it-works/StudyToolsDemos";
-import { CourseTheoryDemo } from "@/components/how-it-works/CourseTheoryDemo";
 import { DesktopDemoViewport } from "@/components/how-it-works/DesktopDemoViewport";
 import { FullscreenDemoViewer } from "@/components/how-it-works/FullscreenDemoViewer";
 
 const WisoHowItWorksDemo = lazy(() =>
   import("@/components/how-it-works/WisoLiveDemos").then((m) => ({ default: m.WisoHowItWorksDemo })),
+);
+const CourseEconDemo = lazy(() =>
+  import("@/components/how-it-works/CourseEconDemo").then((m) => ({ default: m.CourseEconDemo })),
+);
+const CourseEnglishDemo = lazy(() =>
+  import("@/components/how-it-works/CourseEnglishDemo").then((m) => ({
+    default: m.CourseEnglishDemo,
+  })),
+);
+const CourseMathDemo = lazy(() =>
+  import("@/components/how-it-works/CourseMathDemo").then((m) => ({ default: m.CourseMathDemo })),
+);
+const CourseMockDemo = lazy(() =>
+  import("@/components/how-it-works/CourseMockDemo").then((m) => ({ default: m.CourseMockDemo })),
+);
+const CourseMockExamDemo = lazy(() =>
+  import("@/components/how-it-works/CourseMockExamDemo").then((m) => ({
+    default: m.CourseMockExamDemo,
+  })),
+);
+const CourseTheoryDemo = lazy(() =>
+  import("@/components/how-it-works/CourseTheoryDemo").then((m) => ({
+    default: m.CourseTheoryDemo,
+  })),
+);
+const CourseFlashDemo = lazy(() =>
+  import("@/components/how-it-works/StudyToolsDemos").then((m) => ({ default: m.CourseFlashDemo })),
+);
+const CourseMatchDemo = lazy(() =>
+  import("@/components/how-it-works/StudyToolsDemos").then((m) => ({ default: m.CourseMatchDemo })),
+);
+const CourseTutorDemo = lazy(() =>
+  import("@/components/how-it-works/StudyToolsDemos").then((m) => ({ default: m.CourseTutorDemo })),
 );
 
 const BBE_REST = 2;
@@ -342,17 +368,17 @@ function HowItWorksLive({
   }
   const rest = track === "bbe" ? BBE_REST : 1;
   const lockCopy = track === "bbe";
-  if (tab === "theory") return <CourseTheoryDemo rest={rest} lockCopy={lockCopy} />;
-  if (tab === "mock-exams") return <CourseMockExamDemo rest={rest} lockCopy={lockCopy} />;
-  if (tab === "mock-builder") return <CourseMockDemo rest={rest} lockCopy={lockCopy} />;
-  if (tab === "games") {
-    if (slideKey === "matching") return <CourseMatchDemo rest={rest} lockCopy={lockCopy} />;
-    if (slideKey === "tutor-exam") return <CourseTutorDemo rest={rest} lockCopy={lockCopy} />;
-    return <CourseFlashDemo rest={rest} lockCopy={lockCopy} />;
-  }
-  if (slideKey === "math") return <CourseMathDemo rest={rest} lockCopy={lockCopy} />;
-  if (slideKey === "english") return <CourseEnglishDemo rest={rest} lockCopy={lockCopy} />;
-  return <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
+  let demo = <CourseEconDemo rest={rest} lockCopy={lockCopy} />;
+  if (tab === "theory") demo = <CourseTheoryDemo rest={rest} lockCopy={lockCopy} />;
+  else if (tab === "mock-exams") demo = <CourseMockExamDemo rest={rest} lockCopy={lockCopy} />;
+  else if (tab === "mock-builder") demo = <CourseMockDemo rest={rest} lockCopy={lockCopy} />;
+  else if (tab === "games") {
+    if (slideKey === "matching") demo = <CourseMatchDemo rest={rest} lockCopy={lockCopy} />;
+    else if (slideKey === "tutor-exam") demo = <CourseTutorDemo rest={rest} lockCopy={lockCopy} />;
+    else demo = <CourseFlashDemo rest={rest} lockCopy={lockCopy} />;
+  } else if (slideKey === "math") demo = <CourseMathDemo rest={rest} lockCopy={lockCopy} />;
+  else if (slideKey === "english") demo = <CourseEnglishDemo rest={rest} lockCopy={lockCopy} />;
+  return <Suspense fallback={null}>{demo}</Suspense>;
 }
 
 export function HowItWorksSection({
@@ -675,7 +701,7 @@ export function HowItWorksSection({
               className="absolute inset-0 h-full w-full object-contain"
               poster={slide.poster}
               src={slide.video}
-              muted loop playsInline autoPlay preload="metadata"
+              muted loop playsInline autoPlay preload="none"
               aria-label={`${slide.label} walkthrough enlarged`}
               onLoadedMetadata={(event) => { event.currentTarget.currentTime = videoRef.current?.currentTime ?? 0; }}
             />

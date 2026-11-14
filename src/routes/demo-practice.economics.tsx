@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
@@ -9,11 +9,13 @@ import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
-import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
-import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
+import {
+  loadAllEconomicsChapterTasks,
+  loadEconomicsChapterTasks,
+} from "@/data/economics-chapters";
 import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
 import { DemoLockNote } from "@/components/DemoLockNote";
 import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -24,7 +26,6 @@ import {
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
-import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import {
   PracticeChaptersOpenButton,
   PracticeChaptersShell,
@@ -38,6 +39,13 @@ import {
   countUnansweredTasks,
 } from "@/components/UnansweredIndicator";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
+
+const CaseContextRich = lazy(() =>
+  import("@/components/CaseContextRich").then((m) => ({ default: m.CaseContextRich })),
+);
+const PracticeRightSlot = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.PracticeRightSlot })),
+);
 
 const CHAPTER5_FREE_LIMIT = 8;
 const CHAPTER2_FREE_LIMIT = 6;
@@ -129,8 +137,26 @@ function chapterOf(c: Case): number {
   return m ? parseInt(m[1], 10) : 0;
 }
 
+function toCases(
+  tasks: Awaited<ReturnType<typeof loadEconomicsChapterTasks>>,
+): Case[] {
+  return tasks.map((t) => ({
+    id: t.id,
+    case_id: t.case_id,
+    title: t.title,
+    context: t.context,
+    statements: t.statements,
+    answer_key: t.answer_key,
+    tactical_explanations: t.tactical_explanations,
+    difficulty_level: t.difficulty_level,
+    sort_order: t.sort_order,
+  }));
+}
+
 function EconomicsTasks() {
-  const [cases, setCases] = useState<Case[] | null>(null);
+  const [casesByChapter, setCasesByChapter] = useState<Map<number, Case[]>>(new Map());
+  const [allCases, setAllCases] = useState<Case[] | null>(null);
+  const [loadingChapter, setLoadingChapter] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
@@ -164,33 +190,70 @@ function EconomicsTasks() {
     setMobileChaptersOpen(false);
   }, [activeChapter, activeIdx]);
 
+  /** Load only the active chapter (or all banks for Revision). Shell paints first. */
   useEffect(() => {
+    if (activeChapter === null) return;
     let cancel = false;
-    (async () => {
-      try {
-        const loaded = await loadAllEconomicsChapterTasks();
-        if (cancel) return;
-        const rows: Case[] = loaded.flatMap(({ tasks }) =>
-          tasks.map((t) => ({
-            id: t.id,
-            case_id: t.case_id,
-            title: t.title,
-            context: t.context,
-            statements: t.statements,
-            answer_key: t.answer_key,
-            tactical_explanations: t.tactical_explanations,
-            difficulty_level: t.difficulty_level,
-            sort_order: t.sort_order,
-          })),
-        );
-        setCases(rows);
-      } catch (err) {
-        if (cancel) return;
-        setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+
+    const run = async () => {
+      setError(null);
+      if (activeChapter === "revision") {
+        // Clear stale spinner from a cancelled sibling load when cache already warm.
+        if (allCases) {
+          setLoadingChapter(false);
+          return;
+        }
+        setLoadingChapter(true);
+        try {
+          const loaded = await loadAllEconomicsChapterTasks();
+          if (cancel) return;
+          const nextMap = new Map<number, Case[]>();
+          const rows = loaded.flatMap(({ num, tasks }) => {
+            const mapped = toCases(tasks);
+            nextMap.set(num, mapped);
+            return mapped;
+          });
+          setCasesByChapter(nextMap);
+          setAllCases(rows);
+        } catch (err) {
+          if (!cancel) {
+            setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+          }
+        } finally {
+          if (!cancel) setLoadingChapter(false);
+        }
+        return;
       }
-    })();
-    return () => { cancel = true; };
-  }, []);
+
+      if (casesByChapter.has(activeChapter)) {
+        setLoadingChapter(false);
+        return;
+      }
+      setLoadingChapter(true);
+      try {
+        const tasks = await loadEconomicsChapterTasks(activeChapter);
+        if (cancel) return;
+        setCasesByChapter((cur) => {
+          if (cur.has(activeChapter)) return cur;
+          const next = new Map(cur);
+          next.set(activeChapter, toCases(tasks));
+          return next;
+        });
+      } catch (err) {
+        if (!cancel) {
+          setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+        }
+      } finally {
+        if (!cancel) setLoadingChapter(false);
+      }
+    };
+
+    void run();
+    return () => {
+      cancel = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeChapter, allCases]);
 
   useEffect(() => {
     if (skipNextIdxResetRef.current) {
@@ -233,14 +296,16 @@ function EconomicsTasks() {
 
   const byChapter = useMemo(() => {
     const map = new Map<number, Case[]>();
-    CHAPTERS.forEach((c) => map.set(c.num, []));
-    (cases ?? []).forEach((c) => {
-      const ch = chapterOf(c);
-      if (!map.has(ch)) map.set(ch, []);
-      map.get(ch)!.push(c);
-    });
+    CHAPTERS.forEach((c) => map.set(c.num, casesByChapter.get(c.num) ?? []));
     return map;
-  }, [cases]);
+  }, [casesByChapter]);
+
+  const cases =
+    activeChapter === "revision"
+      ? allCases
+      : activeChapter != null
+        ? (casesByChapter.get(activeChapter) ?? null)
+        : [];
 
   const guestAccess = useMemo(() => {
     const ordered: { id: string; demoLocked: boolean }[] = [];
@@ -260,8 +325,8 @@ function EconomicsTasks() {
   };
 
   const revisionCases = useMemo(
-    () => (cases ?? []).filter((c) => progress.revision.includes(c.id)),
-    [cases, progress.revision],
+    () => (allCases ?? []).filter((c) => progress.revision.includes(c.id)),
+    [allCases, progress.revision],
   );
 
   const activeList: Case[] =
@@ -410,7 +475,12 @@ function EconomicsTasks() {
                   )}>
                   <div className="flex items-stretch">
                     <button
-                      onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
+                      onClick={() => {
+                        const nextOpen = !expanded[ch.num];
+                        setExpanded((e) => ({ ...e, [ch.num]: nextOpen }));
+                        // Selecting the chapter triggers the on-demand bank load.
+                        if (nextOpen) setActiveChapter(ch.num);
+                      }}
                       className="flex flex-1 items-center gap-2 rounded-l-xl px-3 py-2.5 text-left hover:bg-secondary/60"
                     >
                       <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
@@ -598,13 +668,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases === null && !error && (
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Loader2 className="h-4 w-4 animate-spin" /> Loading cases…
-            </div>
-          )}
-
-          {cases !== null && activeChapter === null && (
+          {activeChapter === null && (
             <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center sm:p-10">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                 <BookOpen className="h-6 w-6" />
@@ -617,7 +681,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && activeChapter !== null && (
+          {activeChapter !== null && (
             <div className="mb-5">
               <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
                 {activeChapter === "revision" ? "Revision folder" : `Chapter ${activeChapter}`}
@@ -630,7 +694,13 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && activeChapter !== null && activeList.length === 0 && (
+          {(cases === null || loadingChapter) && !error && activeChapter != null && (
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Loader2 className="h-4 w-4 animate-spin" /> Loading cases…
+            </div>
+          )}
+
+          {cases !== null && !loadingChapter && activeChapter !== null && activeList.length === 0 && (
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
                 ? "Nothing to revise: all attempted cases are clean. Keep going."
@@ -1001,7 +1071,9 @@ function CaseCard({
         )}
       </div>
 
-      <CaseContextRich content={data.context} className="mt-3" />
+      <Suspense fallback={<p className="mt-3 text-sm text-muted-foreground">Loading case…</p>}>
+        <CaseContextRich content={data.context} className="mt-3" />
+      </Suspense>
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
@@ -1319,7 +1391,11 @@ function DemoEconPracticeAside({
 }) {
   const calc = usePracticeCalcOptional();
   if (!hasExplanation && !calc?.open) return null;
-  return <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>{children}</PracticeRightSlot>;
+  return (
+    <Suspense fallback={null}>
+      <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>{children}</PracticeRightSlot>
+    </Suspense>
+  );
 }
 
 function ExplanationPanels({

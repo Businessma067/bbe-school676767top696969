@@ -1,6 +1,7 @@
 import { createContext, createElement, useContext, type ReactNode } from "react";
 import { localizeAuto, noteEnglishSource, useAutoDictionaryVersion } from "../auto-translate";
 import { translate, type Lang } from "../dictionary";
+import { useDictionaryPackVersion } from "../dictionary-pack-version";
 import { isAutoLang } from "../languages";
 
 /**
@@ -25,6 +26,7 @@ function I18nText({ text }: { text: string }) {
   const lang = useContext(PageLangContext);
   const verbatim = useContext(NoTranslateContext);
   useAutoDictionaryVersion();
+  useDictionaryPackVersion();
   noteEnglishSource(text);
   if (verbatim || lang === "en") return text;
   if (isAutoLang(lang)) return localizeAuto(lang, text);

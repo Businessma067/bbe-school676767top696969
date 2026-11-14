@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -10,8 +10,11 @@ import {
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode";
-import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
 import { isCustomExamId } from "@/config/custom-mock-builder";
+
+const MockScoreTrend = lazy(() =>
+  import("@/components/mock-exam/MockScoreTrend").then((m) => ({ default: m.MockScoreTrend })),
+);
 import {
   WISO_MOCK_EXAMS,
   getWisoExamsForTier,
@@ -262,7 +265,9 @@ export function WisoMockExamsPage() {
             </div>
           ) : (
             <div className="space-y-6">
-              <MockScoreTrend attempts={completed} />
+              <Suspense fallback={null}>
+                <MockScoreTrend attempts={completed} />
+              </Suspense>
               <div className="space-y-3">
                 {completed.map((c) => {
                   const pct = Math.round((c.points_earned / c.points_total) * 100);

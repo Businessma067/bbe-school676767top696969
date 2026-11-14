@@ -1,11 +1,10 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
-import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import {
   PracticeChaptersOpenButton,
@@ -34,7 +33,8 @@ import {
 } from "@/components/UnansweredIndicator";
 import {
   DEMO_ENGLISH_FREE_LIMIT,
-  loadEnglishChaptersForTier,
+  englishChapterShells,
+  loadEnglishChapter,
   passageForTask,
   type EnglishChapter,
   type EnglishTask,
@@ -56,6 +56,10 @@ import {
   PanelLeftOpen,
   Loader2,
 } from "lucide-react";
+
+const PracticeRightSlot = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.PracticeRightSlot })),
+);
 
 type Progress = { passed: string[]; revision: string[] };
 
@@ -193,38 +197,128 @@ export function EnglishTasksPage({
   contentLangStorageKey = "wiso.german.contentLang.v1",
   contentTranslationCacheKey = "wiso.german.enCache.v1",
 }: Props) {
-  const [loadedChapters, setLoadedChapters] = useState<EnglishChapter[] | null>(
-    chaptersProp ?? null,
+  const [loadedChapters, setLoadedChapters] = useState<EnglishChapter[] | null>(() =>
+    chaptersProp ?? englishChapterShells(),
   );
-  const chapters = chaptersProp ?? loadedChapters ?? [];
+  const chapters = chaptersProp ?? loadedChapters ?? englishChapterShells();
   const [chaptersError, setChaptersError] = useState<string | null>(null);
+  const [loadingChapterKeys, setLoadingChapterKeys] = useState<
+    Partial<Record<EnglishChapter["key"], boolean>>
+  >({});
+  const loadedChapterKeysRef = useRef<Set<EnglishChapter["key"]>>(
+    new Set(chaptersProp ? chaptersProp.map((c) => c.key) : []),
+  );
 
   useEffect(() => {
     if (chaptersProp) {
       setLoadedChapters(chaptersProp);
+      loadedChapterKeysRef.current = new Set(chaptersProp.map((c) => c.key));
       return;
     }
-    let cancel = false;
-    setLoadedChapters(null);
+    // Lightweight meta shells only — banks load when a chapter is selected.
+    setLoadedChapters(englishChapterShells());
+    loadedChapterKeysRef.current = new Set();
     setChaptersError(null);
+  }, [chaptersProp, tier]);
+
+  const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
+    null,
+  );
+
+  const ensureEnglishChapter = async (key: EnglishChapter["key"]) => {
+    if (chaptersProp) return;
+    if (loadedChapterKeysRef.current.has(key)) return;
+    setLoadingChapterKeys((prev) => (prev[key] ? prev : { ...prev, [key]: true }));
+    try {
+      const next = await loadEnglishChapter(key, tier);
+      loadedChapterKeysRef.current.add(key);
+      setLoadedChapters((prev) => {
+        const base = prev ?? englishChapterShells();
+        return base.map((ch) => (ch.key === key ? next : ch));
+      });
+    } catch (err) {
+      setChaptersError(err instanceof Error ? err.message : "Failed to load English tasks.");
+    } finally {
+      setLoadingChapterKeys((prev) => {
+        if (!prev[key]) return prev;
+        const copy = { ...prev };
+        delete copy[key];
+        return copy;
+      });
+    }
+  };
+
+  /** Load the active bank (or all banks for Revision). Never Promise.all three on mount. */
+  useEffect(() => {
+    if (chaptersProp) return;
+    if (activeChapter === null) return;
+    let cancel = false;
+    const clearLoadingKeys = (keys: EnglishChapter["key"][]) => {
+      setLoadingChapterKeys((prev) => {
+        let changed = false;
+        const copy = { ...prev };
+        for (const k of keys) {
+          if (copy[k]) {
+            delete copy[k];
+            changed = true;
+          }
+        }
+        return changed ? copy : prev;
+      });
+    };
     (async () => {
+      let revisionMissing: EnglishChapter["key"][] = [];
+      let revisionFailed = false;
       try {
-        const next = await loadEnglishChaptersForTier(tier);
-        if (!cancel) setLoadedChapters(next);
+        if (activeChapter === "revision") {
+          revisionMissing = (["texts", "grammar", "vocabulary"] as const).filter(
+            (k) => !loadedChapterKeysRef.current.has(k),
+          );
+          if (revisionMissing.length === 0) return;
+          setLoadingChapterKeys((prev) => {
+            const next = { ...prev };
+            for (const k of revisionMissing) next[k] = true;
+            return next;
+          });
+          // Revision needs every bank; load sequentially so the UI stays responsive.
+          for (const key of revisionMissing) {
+            if (cancel) return;
+            const next = await loadEnglishChapter(key, tier);
+            if (cancel) return;
+            loadedChapterKeysRef.current.add(key);
+            setLoadedChapters((prev) => {
+              const base = prev ?? englishChapterShells();
+              return base.map((ch) => (ch.key === key ? next : ch));
+            });
+            setLoadingChapterKeys((prev) => {
+              if (!prev[key]) return prev;
+              const copy = { ...prev };
+              delete copy[key];
+              return copy;
+            });
+          }
+          return;
+        }
+        await ensureEnglishChapter(activeChapter);
       } catch (err) {
+        revisionFailed = true;
         if (!cancel) {
           setChaptersError(err instanceof Error ? err.message : "Failed to load English tasks.");
+        }
+      } finally {
+        // Cancel / throw must not leave revision spinners stuck forever.
+        if ((cancel || revisionFailed) && revisionMissing.length > 0) {
+          clearLoadingKeys(
+            revisionMissing.filter((k) => !loadedChapterKeysRef.current.has(k)),
+          );
         }
       }
     })();
     return () => {
       cancel = true;
     };
-  }, [chaptersProp, tier]);
-
-  const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
-    null,
-  );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeChapter, chaptersProp, tier]);
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
   const [progress, setProgress] = useState<Progress>(() => loadProgress(storageKey));
@@ -542,24 +636,6 @@ export function EnglishTasksPage({
     };
   }, [textsWorkspace]);
 
-  if (!chaptersProp && !loadedChapters) {
-    return (
-      <div className={PRACTICE_PAGE}>
-        <SiteHeader maxWidthClassName="max-w-none" compact />
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 px-4 py-24 text-sm text-muted-foreground">
-          {chaptersError ? (
-            <p className="text-destructive">{chaptersError}</p>
-          ) : (
-            <>
-              <Loader2 className="h-5 w-5 animate-spin" aria-hidden="true" />
-              <p>Loading English tasks…</p>
-            </>
-          )}
-        </div>
-      </div>
-    );
-  }
-
   return (
     <PracticeCalcProvider>
       <div
@@ -690,7 +766,10 @@ export function EnglishTasksPage({
                           <ul className="border-t border-border/60 py-1">
                             {list.length === 0 && (
                               <li className="px-4 py-2 text-[11px] text-muted-foreground">
-                                No tasks yet.
+                                {loadingChapterKeys[ch.key] ||
+                                (!chaptersProp && !loadedChapterKeysRef.current.has(ch.key))
+                                  ? "Loading tasks…"
+                                  : "No tasks yet."}
                               </li>
                             )}
                             {ch.subsections.length > 0
@@ -1038,11 +1117,33 @@ export function EnglishTasksPage({
               </div>
             )}
 
+            {chaptersError && (
+              <div className="mb-4 rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
+                {chaptersError}
+              </div>
+            )}
+
             {activeChapter !== null && activeList.length === 0 && (
               <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
                 {activeChapter === "revision"
-                  ? "Nothing to revise: all attempted tasks are clean. Keep going."
-                  : "No tasks here yet. Content will be added soon."}
+                  ? Object.values(loadingChapterKeys).some(Boolean)
+                    ? (
+                        <span className="inline-flex items-center gap-2">
+                          <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                          Loading revision tasks…
+                        </span>
+                      )
+                    : "Nothing to revise: all attempted tasks are clean. Keep going."
+                  : activeChapter !== null &&
+                      (loadingChapterKeys[activeChapter] ||
+                        (!chaptersProp && !loadedChapterKeysRef.current.has(activeChapter)))
+                    ? (
+                        <span className="inline-flex items-center gap-2">
+                          <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                          Loading chapter tasks…
+                        </span>
+                      )
+                    : "No tasks here yet. Content will be added soon."}
               </div>
             )}
 
@@ -1300,9 +1401,11 @@ function EnglishPracticeAside({
   const calc = usePracticeCalcOptional();
   if (!showExplanations && !calc?.open) return null;
   return (
-    <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
-      {children}
-    </PracticeRightSlot>
+    <Suspense fallback={null}>
+      <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
+        {children}
+      </PracticeRightSlot>
+    </Suspense>
   );
 }
 

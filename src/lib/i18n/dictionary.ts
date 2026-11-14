@@ -1,17 +1,3 @@
-import { generatedDe, generatedUk } from "./generated";
-import { extraDe, extraUk } from "./extra";
-import { uiExtraDe, uiExtraUk } from "./ui-extra";
-import { featuresExtraDe, featuresExtraUk } from "./features-extra";
-import { bbeVsWisoExtraDe, bbeVsWisoExtraUk } from "./bbe-vs-wiso-extra";
-import { wuViennaExtraDe, wuViennaExtraUk } from "./wu-vienna-extra";
-import { hubGapExtraDe, hubGapExtraUk } from "./hub-gap-extra";
-import { homeExtraDe, homeExtraUk } from "./home-extra";
-import { wisoHubExtraDe, wisoHubExtraUk } from "./wiso-hub-extra";
-import { copyVoiceExtraDe, copyVoiceExtraUk } from "./copy-voice-extra";
-import { newsExtraDe, newsExtraUk } from "./news-extra";
-import { newsBodyExtraDe, newsBodyExtraUk } from "./news-body-extra";
-import { reviewsChromeDe, reviewsChromeUk } from "./reviews-extra";
-import { acceptanceNoteDictionary } from "@/data/acceptance-notes";
 import { isDictionaryLang, type Lang } from "./languages";
 
 export type { Lang } from "./languages";
@@ -20,6 +6,10 @@ export { LANGUAGES } from "./languages";
 /**
  * Translation dictionary keyed by the exact English source text as rendered.
  * Anything missing simply stays in English.
+ *
+ * Sync core = chrome/nav/common UI in baseDictionary only. Heavy page packs
+ * load via dynamic import() through ensureDictionaryReady() so English first
+ * paint does not ship ~1.1MB of DE/UK copy.
  */
 type EditedLang = "de" | "uk";
 
@@ -488,42 +478,19 @@ const baseDictionary: Record<EditedLang, Record<string, string>> = {
   },
 };
 
-/** Hand-written entries win over auto-generated page copy. */
+/**
+ * Sync seed only. Heavy packs merge in later (same precedence as before:
+ * later packs overwrite earlier; baseDictionary always wins).
+ */
 export const dictionary: Record<EditedLang, Record<string, string>> = {
-  de: {
-    ...generatedDe,
-    ...extraDe,
-    ...uiExtraDe,
-    ...featuresExtraDe,
-    ...bbeVsWisoExtraDe,
-    ...wuViennaExtraDe,
-    ...hubGapExtraDe,
-    ...homeExtraDe,
-    ...wisoHubExtraDe,
-    ...copyVoiceExtraDe,
-    ...newsExtraDe,
-    ...newsBodyExtraDe,
-    ...reviewsChromeDe,
-    ...acceptanceNoteDictionary("de"),
-    ...baseDictionary.de,
-  },
-  uk: {
-    ...generatedUk,
-    ...extraUk,
-    ...uiExtraUk,
-    ...featuresExtraUk,
-    ...bbeVsWisoExtraUk,
-    ...wuViennaExtraUk,
-    ...hubGapExtraUk,
-    ...homeExtraUk,
-    ...wisoHubExtraUk,
-    ...copyVoiceExtraUk,
-    ...newsExtraUk,
-    ...newsBodyExtraUk,
-    ...reviewsChromeUk,
-    ...acceptanceNoteDictionary("uk"),
-    ...baseDictionary.uk,
-  },
+  de: { ...baseDictionary.de },
+  uk: { ...baseDictionary.uk },
+};
+
+/** Keys that lazy packs must never overwrite (hand-written chrome wins). */
+const coreProtectedKeys: Record<EditedLang, Set<string>> = {
+  de: new Set(Object.keys(dictionary.de)),
+  uk: new Set(Object.keys(dictionary.uk)),
 };
 
 /** Same tables keyed by whitespace-collapsed text, for multi-line JSX nodes. */
@@ -531,12 +498,167 @@ const collapsedDictionary: Record<"de" | "uk", Record<string, string>> = {
   de: {},
   uk: {},
 };
-for (const lang of ["de", "uk"] as const) {
+
+function indexCollapsed(lang: EditedLang, key: string, value: string) {
+  const collapsed = key.replace(/\s+/g, " ").trim();
+  if (collapsed && !(collapsed in collapsedDictionary[lang])) {
+    collapsedDictionary[lang][collapsed] = value;
+  }
+}
+
+function rebuildCollapsed(lang: EditedLang) {
+  collapsedDictionary[lang] = {};
   for (const [key, value] of Object.entries(dictionary[lang])) {
-    const collapsed = key.replace(/\s+/g, " ").trim();
-    if (collapsed && !(collapsed in collapsedDictionary[lang])) {
-      collapsedDictionary[lang][collapsed] = value;
+    indexCollapsed(lang, key, value);
+  }
+}
+
+for (const lang of ["de", "uk"] as const) {
+  rebuildCollapsed(lang);
+}
+
+let packVersion = 0;
+const packListeners = new Set<() => void>();
+
+function emitPackVersion() {
+  packVersion += 1;
+  for (const listener of packListeners) listener();
+}
+
+/** Subscribe to lazy-pack merges (used by useDictionaryPackVersion). */
+export function subscribeDictionaryPacks(listener: () => void): () => void {
+  packListeners.add(listener);
+  return () => packListeners.delete(listener);
+}
+
+export function getDictionaryPackVersion(): number {
+  return packVersion;
+}
+
+function mergePack(lang: EditedLang, pack: Record<string, string>, protect: Set<string>) {
+  const table = dictionary[lang];
+  for (const [key, value] of Object.entries(pack)) {
+    if (protect.has(key)) continue;
+    if (typeof value !== "string" || !value) continue;
+    table[key] = value;
+  }
+}
+
+type PackSlice = Record<string, string>;
+
+/**
+ * Dynamic imports keep these out of the English first-paint graph.
+ * Order matches the former static spread (later wins, then core protects).
+ */
+const HEAVY_PACK_LOADERS: Array<() => Promise<{ de: PackSlice; uk: PackSlice }>> = [
+  () =>
+    import("./generated").then((m) => ({ de: m.generatedDe, uk: m.generatedUk })),
+  () => import("./extra").then((m) => ({ de: m.extraDe, uk: m.extraUk })),
+  () => import("./ui-extra").then((m) => ({ de: m.uiExtraDe, uk: m.uiExtraUk })),
+  () =>
+    import("./features-extra").then((m) => ({
+      de: m.featuresExtraDe,
+      uk: m.featuresExtraUk,
+    })),
+  () =>
+    import("./bbe-vs-wiso-extra").then((m) => ({
+      de: m.bbeVsWisoExtraDe,
+      uk: m.bbeVsWisoExtraUk,
+    })),
+  () =>
+    import("./wu-vienna-extra").then((m) => ({
+      de: m.wuViennaExtraDe,
+      uk: m.wuViennaExtraUk,
+    })),
+  () =>
+    import("./hub-gap-extra").then((m) => ({
+      de: m.hubGapExtraDe,
+      uk: m.hubGapExtraUk,
+    })),
+  () =>
+    import("./home-extra").then((m) => ({ de: m.homeExtraDe, uk: m.homeExtraUk })),
+  () =>
+    import("./wiso-hub-extra").then((m) => ({
+      de: m.wisoHubExtraDe,
+      uk: m.wisoHubExtraUk,
+    })),
+  () =>
+    import("./copy-voice-extra").then((m) => ({
+      de: m.copyVoiceExtraDe,
+      uk: m.copyVoiceExtraUk,
+    })),
+  () =>
+    import("./news-extra").then((m) => ({ de: m.newsExtraDe, uk: m.newsExtraUk })),
+  () =>
+    import("./news-body-extra").then((m) => ({
+      de: m.newsBodyExtraDe,
+      uk: m.newsBodyExtraUk,
+    })),
+  () =>
+    import("./reviews-extra").then((m) => ({
+      de: m.reviewsChromeDe,
+      uk: m.reviewsChromeUk,
+    })),
+  () =>
+    import("@/data/acceptance-notes").then((m) => ({
+      de: m.acceptanceNoteDictionary("de"),
+      uk: m.acceptanceNoteDictionary("uk"),
+    })),
+];
+
+let packsMerged = false;
+let packsInflight: Promise<void> | null = null;
+
+async function mergeHeavyPacks(): Promise<void> {
+  if (packsMerged) return;
+  const slices = await Promise.all(HEAVY_PACK_LOADERS.map((load) => load()));
+  for (const lang of ["de", "uk"] as const) {
+    const protect = coreProtectedKeys[lang];
+    for (const slice of slices) {
+      mergePack(lang, slice[lang], protect);
     }
+    rebuildCollapsed(lang);
+  }
+  packsMerged = true;
+  emitPackVersion();
+}
+
+/**
+ * Ensures heavy DE/UK packs are loaded and merged. No-op for `en` / auto langs.
+ * Safe to call from SSR beforeLoad (locale routes) and from the client.
+ */
+export function ensureDictionaryReady(lang: Lang): Promise<void> {
+  if (!isDictionaryLang(lang)) return Promise.resolve();
+  if (packsMerged) return Promise.resolve();
+  if (!packsInflight) {
+    packsInflight = mergeHeavyPacks().finally(() => {
+      packsInflight = null;
+    });
+  }
+  return packsInflight;
+}
+
+/** True once every heavy pack has been merged (both DE and UK tables). */
+export function isDictionaryReady(): boolean {
+  return packsMerged;
+}
+
+/**
+ * Warm packs after idle on any session so a later DE/UK navigation is snappy.
+ * Does nothing if packs already loaded.
+ */
+export function scheduleDictionaryWarm(): void {
+  if (packsMerged || packsInflight) return;
+  if (typeof window === "undefined") return;
+
+  const start = () => {
+    void ensureDictionaryReady("de");
+  };
+
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(() => start(), { timeout: 4000 });
+  } else {
+    setTimeout(start, 1500);
   }
 }
 

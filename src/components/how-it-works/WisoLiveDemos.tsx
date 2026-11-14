@@ -10,7 +10,10 @@ import {
   WISO_TUTOR_UI,
 } from "@/lib/wiso-study-ui";
 import { getWisoCustomMockChapters } from "@/data/wiso-custom-mock-catalog";
-import { WISO_MATH_COURSE_THEORY } from "@/data/wiso-math-course-theory";
+import {
+  loadWisoMathCourseTheory,
+  WISO_MATH_COURSE_THEORY,
+} from "@/data/wiso-math-course-theory";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { CourseEconDemo } from "./CourseEconDemo";
 import { CourseEnglishDemo } from "./CourseEnglishDemo";
@@ -157,6 +160,7 @@ export function WisoHowItWorksDemo({
     return (
       <CourseTheoryDemo
         catalog={WISO_MATH_COURSE_THEORY}
+        loadChapter={loadWisoMathCourseTheory}
         copy={DE_THEORY_COPY}
         rest={rest}
         lockCopy

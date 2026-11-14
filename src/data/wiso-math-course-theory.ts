@@ -1,60 +1,57 @@
 /**
  * German WiSo math theory guides — same chapter map as BBE, German markdown.
+ * Markdown loads per chapter so practice shells stay light.
  */
-
-import ch1 from "./wiso/math-theory/ch1.md?raw";
-import ch2 from "./wiso/math-theory/ch2.md?raw";
-import ch3 from "./wiso/math-theory/ch3.md?raw";
-import ch4 from "./wiso/math-theory/ch4.md?raw";
-import ch5 from "./wiso/math-theory/ch5.md?raw";
-import ch6 from "./wiso/math-theory/ch6.md?raw";
-import ch7 from "./wiso/math-theory/ch7.md?raw";
-import ch8 from "./wiso/math-theory/ch8.md?raw";
-import ch9 from "./wiso/math-theory/ch9.md?raw";
-import ch10 from "./wiso/math-theory/ch10.md?raw";
-import ch11 from "./wiso/math-theory/ch11.md?raw";
-import ch12 from "./wiso/math-theory/ch12.md?raw";
-import ch13 from "./wiso/math-theory/ch13.md?raw";
 
 import type { MathCourseTheoryChapter } from "@/data/math-course-theory";
 import { WISO_MATH_CHAPTER_TITLES } from "@/data/wiso-math-chapters";
 
-const MARKDOWN: Record<number, string> = {
-  1: ch1,
-  2: ch2,
-  3: ch3,
-  4: ch4,
-  5: ch5,
-  6: ch6,
-  7: ch7,
-  8: ch8,
-  9: ch9,
-  10: ch10,
-  11: ch11,
-  12: ch12,
-  13: ch13,
+const MD_LOADERS: Record<number, () => Promise<{ default: string }>> = {
+  1: () => import("./wiso/math-theory/ch1.md?raw"),
+  2: () => import("./wiso/math-theory/ch2.md?raw"),
+  3: () => import("./wiso/math-theory/ch3.md?raw"),
+  4: () => import("./wiso/math-theory/ch4.md?raw"),
+  5: () => import("./wiso/math-theory/ch5.md?raw"),
+  6: () => import("./wiso/math-theory/ch6.md?raw"),
+  7: () => import("./wiso/math-theory/ch7.md?raw"),
+  8: () => import("./wiso/math-theory/ch8.md?raw"),
+  9: () => import("./wiso/math-theory/ch9.md?raw"),
+  10: () => import("./wiso/math-theory/ch10.md?raw"),
+  11: () => import("./wiso/math-theory/ch11.md?raw"),
+  12: () => import("./wiso/math-theory/ch12.md?raw"),
+  13: () => import("./wiso/math-theory/ch13.md?raw"),
 };
 
+const chapterCache = new Map<number, MathCourseTheoryChapter>();
+
+/** Titles only until a chapter is loaded. */
 export const WISO_MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = Object.fromEntries(
   WISO_MATH_CHAPTER_TITLES.map((title, i) => {
     const num = i + 1;
-    return [
-      num,
-      {
-        num,
-        title,
-        markdown: MARKDOWN[num] ?? "",
-      } satisfies MathCourseTheoryChapter,
-    ];
+    return [num, { num, title, markdown: "" } satisfies MathCourseTheoryChapter];
   }),
 ) as Record<number, MathCourseTheoryChapter>;
+
+export async function loadWisoMathCourseTheory(
+  chapter: number,
+): Promise<MathCourseTheoryChapter | undefined> {
+  const hit = chapterCache.get(chapter);
+  if (hit) return hit;
+  const meta = WISO_MATH_COURSE_THEORY[chapter];
+  const loader = MD_LOADERS[chapter];
+  if (!meta || !loader) return undefined;
+  const mod = await loader();
+  const row: MathCourseTheoryChapter = { ...meta, markdown: mod.default };
+  chapterCache.set(chapter, row);
+  return row;
+}
 
 export function getWisoMathCourseTheory(
   chapter: number,
 ): MathCourseTheoryChapter | undefined {
-  return WISO_MATH_COURSE_THEORY[chapter];
+  return chapterCache.get(chapter) ?? WISO_MATH_COURSE_THEORY[chapter];
 }
 
 export function wisoMathChapterHasTheory(chapter: number): boolean {
-  return getWisoMathCourseTheory(chapter) != null;
+  return WISO_MATH_COURSE_THEORY[chapter] != null;
 }

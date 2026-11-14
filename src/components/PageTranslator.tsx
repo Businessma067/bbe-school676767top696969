@@ -9,8 +9,9 @@ import {
   warmLanguage,
 } from "@/lib/i18n/auto-translate";
 import { useLanguage } from "@/lib/i18n/context";
-import { translate } from "@/lib/i18n/dictionary";
-import { isAutoLang } from "@/lib/i18n/languages";
+import { ensureDictionaryReady, translate } from "@/lib/i18n/dictionary";
+import { useDictionaryPackVersion } from "@/lib/i18n/dictionary-pack-version";
+import { isAutoLang, isDictionaryLang } from "@/lib/i18n/languages";
 import { isStudyContentPath } from "@/lib/i18n/locale-path";
 
 const SKIP_TAGS = new Set([
@@ -44,11 +45,18 @@ export function PageTranslator() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const effectiveLang = isStudyContentPath(pathname) ? "en" : lang;
   const revision = useAutoDictionaryVersion();
+  const packVersion = useDictionaryPackVersion();
   // Persist across lang changes so DE↔UK can re-translate from English,
   // not from already-translated DOM text.
   const originalsRef = useRef(new WeakMap<Text, string>());
   const lastWrittenRef = useRef(new WeakMap<Text, string>());
   const translatedRef = useRef(new WeakMap<Text, string>());
+
+  useLayoutEffect(() => {
+    if (isDictionaryLang(effectiveLang)) {
+      void ensureDictionaryReady(effectiveLang);
+    }
+  }, [effectiveLang]);
 
   useLayoutEffect(() => {
     if (typeof document === "undefined") return;
@@ -214,13 +222,19 @@ export function PageTranslator() {
       alive = false;
       observer.disconnect();
     };
-  }, [effectiveLang, revision]);
+  }, [effectiveLang, revision, packVersion]);
 
   // On navigation in an automatic language, hide the new page body briefly
   // until its strings are translated so English never flashes.
+  // EN / study surfaces: clear any leftover pending flag immediately so first
+  // paint is never stalled by a prior DE/UK navigation.
   useLayoutEffect(() => {
-    if (typeof document === "undefined" || !isAutoLang(effectiveLang)) return;
+    if (typeof document === "undefined") return;
     const root = document.documentElement;
+    if (!isAutoLang(effectiveLang)) {
+      root.removeAttribute("data-i18n-pending");
+      return;
+    }
     root.setAttribute("data-i18n-pending", "");
     let done = false;
     const reveal = () => {

@@ -14,19 +14,12 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { HashScrollOnLoad } from "../components/HashScrollOnLoad";
-import { Breadcrumbs } from "../components/Breadcrumbs";
-import { IntroSplash } from "../components/IntroSplash";
-import { ActivityTracker } from "../components/ActivityTracker";
-import { AuthReturnRedirect } from "../components/AuthReturnRedirect";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 import { LanguageProvider, useLanguage } from "../lib/i18n/context";
 import { PageLangContext } from "../lib/i18n/jsx/render-text";
 import { THEME_INIT_SCRIPT } from "../lib/theme";
 import { LocaleSync } from "../components/LocaleSync";
-import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
-import { SignupBite } from "../components/SignupBite";
-import { CourseCallDock } from "../components/CourseCallCalendar";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 import { getLocaleFromPath, isStudyContentPath } from "@/lib/i18n/locale-path";
 
@@ -48,6 +41,25 @@ const NewsFreshToast = lazyNamed(
   () => import("../components/NewsFreshToast"),
   "NewsFreshToast",
 );
+const PageTranslator = lazyNamed(
+  () => import("../components/PageTranslator"),
+  "PageTranslator",
+);
+const SignupBite = lazyNamed(() => import("../components/SignupBite"), "SignupBite");
+const CourseCallDock = lazyNamed(
+  () => import("../components/CourseCallCalendar"),
+  "CourseCallDock",
+);
+const IntroSplash = lazyNamed(() => import("../components/IntroSplash"), "IntroSplash");
+const ActivityTracker = lazyNamed(
+  () => import("../components/ActivityTracker"),
+  "ActivityTracker",
+);
+const AuthReturnRedirect = lazyNamed(
+  () => import("../components/AuthReturnRedirect"),
+  "AuthReturnRedirect",
+);
+const Breadcrumbs = lazyNamed(() => import("../components/Breadcrumbs"), "Breadcrumbs");
 
 function NotFoundComponent() {
   return (
@@ -221,17 +233,18 @@ function RootComponent() {
         <PageLangProvider>
           <PracticeCaseProvider>
             <LocaleSync />
-            <DeferredChrome delayMs={400}>
+            {/* Translator after idle: EN routes never set data-i18n-pending; DE/UK still warm post-paint. */}
+            <DeferredChrome delayMs={urlLang === "en" ? 800 : 400}>
               <PageTranslator />
             </DeferredChrome>
-            <IntroSplash />
             <HashScrollOnLoad />
-            <ActivityTracker />
-            <AuthReturnRedirect />
-            <Breadcrumbs />
             {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
             <Outlet />
             <DeferredChrome>
+              <IntroSplash />
+              <ActivityTracker />
+              <AuthReturnRedirect />
+              <Breadcrumbs />
               <CourseCallDock />
               <SignupBite />
               <NewsFreshToast />

@@ -3,7 +3,7 @@
  * Chapters: Texts · Grammar · Vocabulary (WU BBE English sections).
  *
  * Banks load on demand so opening German / hybrid / mocks does not parse
- * the full English corpus.
+ * the full English corpus. Practice pages load one bank at a time.
  */
 
 export type EnglishTaskKind = "reading" | "grammar" | "vocabulary";
@@ -83,6 +83,17 @@ const BANK_LOADERS = {
 
 type ChapterKey = keyof typeof BANK_LOADERS;
 
+/** Lightweight sidebar meta — no JSON banks. */
+export const ENGLISH_CHAPTER_META: ReadonlyArray<{
+  key: ChapterKey;
+  num: number;
+  title: string;
+}> = [
+  { key: "texts", num: 1, title: "Texts" },
+  { key: "grammar", num: 2, title: "Grammar" },
+  { key: "vocabulary", num: 3, title: "Vocabulary" },
+];
+
 const bankCache = new Map<ChapterKey, { subsections: EnglishSubsection[]; tasks: EnglishTask[] }>();
 
 async function loadBankKey(key: ChapterKey) {
@@ -110,6 +121,41 @@ export function filterEnglishTasksForTier(
   return tasks.filter((t) => t.sort_order <= maxSort);
 }
 
+function chapterFromBank(
+  key: ChapterKey,
+  bank: { subsections: EnglishSubsection[]; tasks: EnglishTask[] },
+  tier: EnglishTasksTier = "full",
+): EnglishChapter {
+  const meta = ENGLISH_CHAPTER_META.find((m) => m.key === key)!;
+  return {
+    key: meta.key,
+    num: meta.num,
+    title: meta.title,
+    subsections: bank.subsections,
+    tasks: filterEnglishTasksForTier(bank.tasks, tier, key),
+  };
+}
+
+/** Load a single English bank (texts | grammar | vocabulary). */
+export async function loadEnglishChapter(
+  key: ChapterKey,
+  tier: EnglishTasksTier = "full",
+): Promise<EnglishChapter> {
+  const bank = await loadBankKey(key);
+  return chapterFromBank(key, bank, tier);
+}
+
+/** Empty shells for the sidebar before any bank downloads. */
+export function englishChapterShells(): EnglishChapter[] {
+  return ENGLISH_CHAPTER_META.map((m) => ({
+    key: m.key,
+    num: m.num,
+    title: m.title,
+    subsections: [],
+    tasks: [],
+  }));
+}
+
 export async function loadEnglishChapters(): Promise<EnglishChapter[]> {
   const [texts, grammar, vocabulary] = await Promise.all([
     loadBankKey("texts"),
@@ -117,27 +163,9 @@ export async function loadEnglishChapters(): Promise<EnglishChapter[]> {
     loadBankKey("vocabulary"),
   ]);
   return [
-    {
-      key: "texts",
-      num: 1,
-      title: "Texts",
-      subsections: texts.subsections,
-      tasks: texts.tasks,
-    },
-    {
-      key: "grammar",
-      num: 2,
-      title: "Grammar",
-      subsections: grammar.subsections,
-      tasks: grammar.tasks,
-    },
-    {
-      key: "vocabulary",
-      num: 3,
-      title: "Vocabulary",
-      subsections: vocabulary.subsections,
-      tasks: vocabulary.tasks,
-    },
+    chapterFromBank("texts", texts),
+    chapterFromBank("grammar", grammar),
+    chapterFromBank("vocabulary", vocabulary),
   ];
 }
 

@@ -4,9 +4,9 @@
  *
  * Intentionally does not import English banks — hybrid/mocks must not pay for
  * the BBE English corpus when they only need German reading.
+ * The texts bank is loaded asynchronously so practice shells paint first.
  */
 
-import textsBank from "@/data/wiso/german/texts.json";
 import type {
   EnglishChapter,
   EnglishSubsection,
@@ -38,17 +38,36 @@ function loadBank(raw: BankFile): { subsections: EnglishSubsection[]; tasks: Eng
   };
 }
 
-const texts = loadBank(textsBank as BankFile);
+let chaptersCache: EnglishChapter[] | null = null;
+let chaptersPromise: Promise<EnglishChapter[]> | null = null;
 
-export const WISO_GERMAN_CHAPTERS: EnglishChapter[] = [
-  {
-    key: "texts",
-    num: 1,
-    title: "Texte",
-    subsections: texts.subsections,
-    tasks: texts.tasks,
-  },
-];
+/**
+ * Async loader for the WiSo German Texte bank.
+ * Prefer this over sync imports so routes can paint a shell first.
+ * hybrid-mock-paper dynamic-imports this module and should call this loader.
+ */
+export async function loadWisoGermanChapters(): Promise<EnglishChapter[]> {
+  if (chaptersCache) return chaptersCache;
+  if (!chaptersPromise) {
+    chaptersPromise = (async () => {
+      const mod = await import("@/data/wiso/german/texts.json");
+      const raw = (mod as { default?: BankFile }).default ?? (mod as BankFile);
+      const texts = loadBank(raw);
+      const chapters: EnglishChapter[] = [
+        {
+          key: "texts",
+          num: 1,
+          title: "Texte",
+          subsections: texts.subsections,
+          tasks: texts.tasks,
+        },
+      ];
+      chaptersCache = chapters;
+      return chapters;
+    })();
+  }
+  return chaptersPromise;
+}
 
 /**
  * WiSo demo unlocks by text (subsection). Unlisted texts stay locked.

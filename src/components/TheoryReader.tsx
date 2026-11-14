@@ -4,10 +4,13 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
-import { BookOpen, Target, AlertTriangle, Download, Maximize2, Minimize2 } from "lucide-react";
-import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
-import { getMathCourseTheory, type MathCourseTheoryChapter } from "@/data/math-course-theory";
-import { getWisoEconomicsCourseTheory } from "@/data/wiso-economics-course-theory";
+import { BookOpen, Target, AlertTriangle, Download, Maximize2, Minimize2, Loader2 } from "lucide-react";
+import { loadEconomicsCourseTheory } from "@/data/economics-course-theory";
+import {
+  loadMathCourseTheory,
+  type MathCourseTheoryChapter,
+} from "@/data/math-course-theory";
+import { loadWisoEconomicsCourseTheory } from "@/data/wiso-economics-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
 import { trackEvent, upsertTheoryProgress } from "@/lib/activity-tracker";
@@ -334,10 +337,55 @@ export function TheoryReader({
   subject = "economics",
   theoryChapter: theoryOverride,
 }: Props) {
-  const mathTheory =
-    subject === "math" ? (theoryOverride ?? getMathCourseTheory(chapter)) : undefined;
-  const economicsTheory = subject === "economics" ? getEconomicsCourseTheory(chapter) : undefined;
-  const wisoTheory = subject === "wiso-economics" ? getWisoEconomicsCourseTheory(chapter) : undefined;
+  const [loadedTheory, setLoadedTheory] = useState<MathCourseTheoryChapter | null>(() =>
+    theoryOverride?.markdown ? theoryOverride : null,
+  );
+  const [theoryLoading, setTheoryLoading] = useState(() => !theoryOverride?.markdown);
+
+  useEffect(() => {
+    // Parent-supplied body (incl. WiSo DE math) wins — never replace with BBE English.
+    if (theoryOverride?.markdown) {
+      setLoadedTheory(theoryOverride);
+      setTheoryLoading(false);
+      return;
+    }
+    let cancel = false;
+    setTheoryLoading(true);
+    (async () => {
+      try {
+        if (subject === "math" && theoryOverride && !theoryOverride.markdown) {
+          // Parent (MathTasksPage) supplies WiSo DE / loaded markdown via override.
+          // Keep the spinner until that prop gains a body — do not fetch BBE English.
+          setLoadedTheory(theoryOverride);
+          return;
+        }
+        const next =
+          subject === "math"
+            ? await loadMathCourseTheory(chapter)
+            : subject === "wiso-economics"
+              ? await loadWisoEconomicsCourseTheory(chapter)
+              : await loadEconomicsCourseTheory(chapter);
+        if (cancel) return;
+        setLoadedTheory(next ?? null);
+      } catch {
+        if (!cancel) setLoadedTheory(null);
+      } finally {
+        if (!cancel) {
+          // Empty math override still waits on the parent; leave loading true.
+          if (!(subject === "math" && theoryOverride && !theoryOverride.markdown)) {
+            setTheoryLoading(false);
+          }
+        }
+      }
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, [chapter, subject, theoryOverride]);
+
+  const mathTheory = subject === "math" ? (loadedTheory ?? theoryOverride) : undefined;
+  const economicsTheory = subject === "economics" ? loadedTheory : undefined;
+  const wisoTheory = subject === "wiso-economics" ? loadedTheory : undefined;
   const markdown =
     (subject === "math"
       ? mathTheory?.markdown
@@ -644,6 +692,15 @@ export function TheoryReader({
         <MdBlock text={seg.text} dense={readerMode} enableMath={enableMath} />,
       );
     });
+  }
+
+  if (theoryLoading && !markdown) {
+    return (
+      <div className="flex items-center gap-2 rounded-2xl border border-border bg-card p-8 text-sm text-muted-foreground">
+        <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+        Loading theory…
+      </div>
+    );
   }
 
   return (

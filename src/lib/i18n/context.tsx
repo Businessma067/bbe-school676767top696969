@@ -2,14 +2,21 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useLayoutEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
 import { localizeAuto, noteEnglishSource, useAutoDictionaryVersion } from "./auto-translate";
-import { translate, type Lang } from "./dictionary";
-import { isAutoLang, isKnownLang, RTL_LANGS } from "./languages";
+import {
+  ensureDictionaryReady,
+  scheduleDictionaryWarm,
+  translate,
+  type Lang,
+} from "./dictionary";
+import { useDictionaryPackVersion } from "./dictionary-pack-version";
+import { isAutoLang, isDictionaryLang, isKnownLang, RTL_LANGS } from "./languages";
 
 const STORAGE_KEY = "bbe.lang";
 
@@ -48,6 +55,15 @@ export function LanguageProvider({
     document.documentElement.dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
   }, [lang]);
 
+  // DE/UK need heavy packs; EN warms them after idle so a later switch is fast.
+  useEffect(() => {
+    if (isDictionaryLang(lang)) {
+      void ensureDictionaryReady(lang);
+      return;
+    }
+    scheduleDictionaryWarm();
+  }, [lang]);
+
   // `persist: false` applies a language for the current view only (e.g. an
   // English marketing URL) without erasing the user's stored preference.
   const setLang = useCallback((next: Lang, options?: SetLangOptions) => {
@@ -61,6 +77,7 @@ export function LanguageProvider({
   }, []);
 
   const autoVersion = useAutoDictionaryVersion();
+  const packVersion = useDictionaryPackVersion();
   const value = useMemo<LanguageContextValue>(
     () => ({
       lang,
@@ -70,7 +87,7 @@ export function LanguageProvider({
         return isAutoLang(lang) ? localizeAuto(lang, text) : (translate(text, lang) ?? text);
       },
     }),
-    [lang, setLang, autoVersion],
+    [lang, setLang, autoVersion, packVersion],
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;

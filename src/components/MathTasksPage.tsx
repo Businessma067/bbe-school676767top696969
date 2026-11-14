@@ -1,4 +1,4 @@
-import { memo, startTransition, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { lazy, memo, startTransition, Suspense, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -8,9 +8,7 @@ import {
   mergeContinuationDisplayParagraphs,
 } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
-import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
-import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { guestAccessByTaskId } from "@/lib/guest-preview";
 import { remainingPhantomLocks, takeVisibleTasks } from "@/lib/visible-locked-tasks";
@@ -53,6 +51,7 @@ import {
 } from "@/data/math-chapters";
 import {
   getMathCourseTheory,
+  loadMathCourseTheory,
   type MathCourseTheoryChapter,
 } from "@/data/math-course-theory";
 import {
@@ -70,6 +69,13 @@ import {
   PanelLeftOpen,
   Sparkles,
 } from "lucide-react";
+
+const TheoryReader = lazy(() =>
+  import("@/components/TheoryReader").then((m) => ({ default: m.TheoryReader })),
+);
+const PracticeRightSlot = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.PracticeRightSlot })),
+);
 
 const DEFAULT_FULL_COURSE_BUY_HREF = "/products/full-course";
 
@@ -155,6 +161,8 @@ type Props = {
   storageKey?: string;
   /** Optional theory provider (WiSo German guides). Defaults to BBE English theory. */
   getTheory?: (chapter: number) => MathCourseTheoryChapter | undefined;
+  /** Async body loader — practice only downloads the open chapter's markdown. */
+  loadTheory?: (chapter: number) => Promise<MathCourseTheoryChapter | undefined>;
   /**
    * Practice chrome language for verdict labels / statement table.
    * WiSo Full Course uses German ("de" → Richtig/Falsch); BBE stays English.
@@ -176,6 +184,7 @@ export function MathTasksPage({
   loadChapterTasks = loadMathChapterTasks,
   storageKey = STORAGE_KEY,
   getTheory = getMathCourseTheory,
+  loadTheory = loadMathCourseTheory,
   contentLang = "en",
   fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
   headerActions,
@@ -188,10 +197,41 @@ export function MathTasksPage({
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
+  const [theoryData, setTheoryData] = useState<MathCourseTheoryChapter | undefined>();
+  const [theoryLoading, setTheoryLoading] = useState(false);
+  const [theoryError, setTheoryError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (theoryChapter == null) {
+      setTheoryData(undefined);
+      setTheoryLoading(false);
+      setTheoryError(null);
+      return;
+    }
+    let cancel = false;
+    setTheoryLoading(true);
+    setTheoryError(null);
+    (async () => {
+      try {
+        const loaded = await loadTheory(theoryChapter);
+        if (cancel) return;
+        setTheoryData(loaded ?? getTheory(theoryChapter));
+      } catch (err) {
+        if (!cancel) {
+          setTheoryData(undefined);
+          setTheoryError(err instanceof Error ? err.message : "Failed to load theory.");
+        }
+      } finally {
+        if (!cancel) setTheoryLoading(false);
+      }
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, [theoryChapter, loadTheory, getTheory]);
   const [progress, setProgress] = useState<Progress>({ passed: [], revision: [] });
   const [loadedTasks, setLoadedTasks] = useState<Record<number, MathTask[]>>({});
   const [loadingChapters, setLoadingChapters] = useState<Record<number, boolean>>({});
-  const [banksReady, setBanksReady] = useState(false);
   const loadedTasksRef = useRef(loadedTasks);
   loadedTasksRef.current = loadedTasks;
   const authGate = useAuthGate();
@@ -234,30 +274,6 @@ export function MathTasksPage({
     setProgress(loadProgress(storageKey));
   }, [storageKey]);
 
-  /** Prefetch banks gradually so the first paint stays light. */
-  useEffect(() => {
-    let cancelled = false;
-    const nums = chapters.filter((c) => !c.comingSoon).map((c) => c.num);
-    void (async () => {
-      for (const num of nums) {
-        if (cancelled) return;
-        try {
-          const tasks = await loadChapterTasks(num);
-          if (cancelled) return;
-          setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
-        } catch {
-          /* keep going — missing chapter should not block the shell */
-        }
-        // Yield between chapter parses so the UI stays responsive.
-        await new Promise((r) => setTimeout(r, 0));
-      }
-      if (!cancelled) setBanksReady(true);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [chapters]);
-
   const ensureChapterLoaded = useCallback(async (num: number) => {
     if (loadedTasksRef.current[num]) return;
     setLoadingChapters((prev) => (prev[num] ? prev : { ...prev, [num]: true }));
@@ -272,13 +288,25 @@ export function MathTasksPage({
         return next;
       });
     }
-  }, []);
+  }, [loadChapterTasks]);
 
-  /** Load the active chapter immediately (before full prefetch finishes). */
+  /**
+   * Load only the active chapter (+ optional next). Others load on select / revision.
+   * Do not background-prefetch the entire syllabus on mount.
+   */
   useEffect(() => {
+    if (activeChapter === "revision") {
+      for (const ch of chapters) {
+        if (!ch.comingSoon) void ensureChapterLoaded(ch.num);
+      }
+      return;
+    }
     if (typeof activeChapter !== "number") return;
     void ensureChapterLoaded(activeChapter);
-  }, [activeChapter, ensureChapterLoaded]);
+    const idx = chapters.findIndex((c) => c.num === activeChapter);
+    const next = chapters[idx + 1];
+    if (next && !next.comingSoon) void ensureChapterLoaded(next.num);
+  }, [activeChapter, chapters, ensureChapterLoaded]);
 
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(chapters.map((c) => [c.num, false])),
@@ -736,9 +764,7 @@ export function MathTasksPage({
                         <ul className="border-t border-border/60 py-1">
                           {list.length === 0 && (
                             <li className="px-4 py-2 text-[11px] text-muted-foreground">
-                              {loadingChapters[ch.num] || !banksReady
-                                ? "Loading tasks…"
-                                : "No tasks yet."}
+                              {loadingChapters[ch.num] ? "Loading tasks…" : "No tasks yet."}
                             </li>
                           )}
                           {ch.subsections && ch.subsections.length > 0
@@ -1094,17 +1120,46 @@ export function MathTasksPage({
           )}
 
           {showTheory && theoryChapter !== null ? (
-            <TheoryReader
-              subject="math"
-              chapter={theoryChapter}
-              title={chapters.find((c) => c.num === theoryChapter)?.title ?? ""}
-              theoryChapter={getTheory(theoryChapter)}
-              onGoToPractice={() => {
-                setTheoryChapter(null);
-                setActiveChapter(theoryChapter);
-                setActiveIdx(0);
-              }}
-            />
+            theoryLoading ? (
+              <div className="flex items-center gap-2 rounded-2xl border border-border bg-card p-8 text-sm text-muted-foreground">
+                Loading theory…
+              </div>
+            ) : theoryData?.markdown ? (
+              <Suspense
+                fallback={
+                  <div className="flex items-center gap-2 rounded-2xl border border-border bg-card p-8 text-sm text-muted-foreground">
+                    Loading theory…
+                  </div>
+                }
+              >
+                <TheoryReader
+                  subject="math"
+                  chapter={theoryChapter}
+                  title={chapters.find((c) => c.num === theoryChapter)?.title ?? ""}
+                  theoryChapter={theoryData}
+                  onGoToPractice={() => {
+                    setTheoryChapter(null);
+                    setActiveChapter(theoryChapter);
+                    setActiveIdx(0);
+                  }}
+                />
+              </Suspense>
+            ) : (
+              <div className="rounded-2xl border border-border bg-card p-8 text-sm text-muted-foreground">
+                {theoryError ?? "Theory for this chapter could not be loaded."}
+                <button
+                  type="button"
+                  className="mt-3 block text-xs font-semibold text-foreground underline"
+                  onClick={() => {
+                    setTheoryChapter(null);
+                    setActiveChapter(theoryChapter);
+                    setActiveIdx(0);
+                  }}
+                >
+                  Back to practice
+                </button>
+              </div>
+            )
           ) : (
             <>
           {activeChapter === null && (
@@ -1158,9 +1213,10 @@ export function MathTasksPage({
           {activeChapter !== null && activeList.length === 0 && (
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
-                ? "Nothing to revise: all attempted tasks are clean. Keep going."
-                : typeof activeChapter === "number" &&
-                    (loadingChapters[activeChapter] || !banksReady)
+                ? chapters.some((c) => !c.comingSoon && loadingChapters[c.num])
+                  ? "Loading revision tasks…"
+                  : "Nothing to revise: all attempted tasks are clean. Keep going."
+                : typeof activeChapter === "number" && loadingChapters[activeChapter]
                   ? "Loading chapter tasks…"
                   : "No tasks here yet. Content will be added soon."}
             </div>
@@ -2003,9 +2059,11 @@ function MathPracticeAside({
   const calc = usePracticeCalcOptional();
   if (!showExplanations && !calc?.open) return null;
   return (
-    <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
-      {children}
-    </PracticeRightSlot>
+    <Suspense fallback={null}>
+      <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
+        {children}
+      </PracticeRightSlot>
+    </Suspense>
   );
 }
 

@@ -1,10 +1,15 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { EnglishTasksPage } from "@/components/EnglishTasksPage";
 import {
   DEMO_WISO_GERMAN_SUBSECTION_FREE,
-  WISO_GERMAN_CHAPTERS,
+  loadWisoGermanChapters,
 } from "@/data/wiso-german-chapters";
+import type { EnglishChapter } from "@/data/english-chapters";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { PRACTICE_PAGE } from "@/lib/practice-layout";
+import { SiteHeader } from "@/components/SiteHeader";
+import { Loader2 } from "lucide-react";
 
 const PATH = "/wiso/demo-practice/german" as const;
 
@@ -31,11 +36,49 @@ export const Route = createFileRoute("/wiso/demo-practice/german")({
 });
 
 function WisoDemoGermanTasks() {
+  const [chapters, setChapters] = useState<EnglishChapter[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancel = false;
+    (async () => {
+      try {
+        const next = await loadWisoGermanChapters();
+        if (!cancel) setChapters(next);
+      } catch (err) {
+        if (!cancel) {
+          setError(err instanceof Error ? err.message : "Failed to load German texts.");
+        }
+      }
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, []);
+
+  if (!chapters) {
+    return (
+      <div className={PRACTICE_PAGE}>
+        <SiteHeader maxWidthClassName="max-w-none" compact />
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 px-4 py-24 text-sm text-muted-foreground">
+          {error ? (
+            <p className="text-destructive">{error}</p>
+          ) : (
+            <>
+              <Loader2 className="h-5 w-5 animate-spin" aria-hidden="true" />
+              <p>Loading German texts…</p>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <EnglishTasksPage
       tier="demo"
       backTo="/wiso/demo-practice"
-      chapters={WISO_GERMAN_CHAPTERS}
+      chapters={chapters}
       storageKey="wiso.german.demo.progress.v1"
       subjectLabel="Deutsch"
       progressSubject="german"

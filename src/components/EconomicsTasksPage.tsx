@@ -1,11 +1,9 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { startTransition, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { lazy, startTransition, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
-import { TheoryReader } from "@/components/TheoryReader";
-import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
@@ -21,7 +19,6 @@ import {
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
-import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import {
   PracticeChaptersOpenButton,
   PracticeChaptersShell,
@@ -44,6 +41,16 @@ import {
   loadWisoEconomicsEnChapterOverlay,
   type WisoEconomicsEnOverlay,
 } from "@/data/wiso-economics-en-overlays";
+
+const TheoryReader = lazy(() =>
+  import("@/components/TheoryReader").then((m) => ({ default: m.TheoryReader })),
+);
+const CaseContextRich = lazy(() =>
+  import("@/components/CaseContextRich").then((m) => ({ default: m.CaseContextRich })),
+);
+const PracticeRightSlot = lazy(() =>
+  import("@/components/calculator/Ti30MathPrint").then((m) => ({ default: m.PracticeRightSlot })),
+);
 
 // Full course: everything unlocked. Demo can pass freeLimitPerChapter (e.g. 8).
 const DEFAULT_PHANTOM_LOCKED_COUNT = 0;
@@ -240,7 +247,11 @@ export function EconomicsTasksPage({
     const run = async () => {
       setError(null);
       if (activeChapter === "revision") {
-        if (allCases) return;
+        // Clear stale spinner from a cancelled sibling load when cache already warm.
+        if (allCases) {
+          setLoadingChapter(false);
+          return;
+        }
         setLoadingChapter(true);
         try {
           const loaded = await loadAllChapters();
@@ -263,7 +274,10 @@ export function EconomicsTasksPage({
         return;
       }
 
-      if (casesByChapter.has(activeChapter)) return;
+      if (casesByChapter.has(activeChapter)) {
+        setLoadingChapter(false);
+        return;
+      }
       setLoadingChapter(true);
       try {
         const tasks = loadChapter
@@ -613,7 +627,12 @@ export function EconomicsTasksPage({
                   )}>
                   <div className="flex items-stretch">
                     <button
-                      onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
+                      onClick={() => {
+                        const nextOpen = !isOpen;
+                        setExpanded((e) => ({ ...e, [ch.num]: nextOpen }));
+                        // Expanding also selects the chapter so its bank loads on demand.
+                        if (nextOpen) setActiveChapter(ch.num);
+                      }}
                       className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
                       aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
                     >
@@ -817,16 +836,25 @@ export function EconomicsTasksPage({
             </button>
           )}
           {theoryChapter !== null ? (
-            <TheoryReader
-              chapter={theoryChapter}
-              title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
-              subject={theorySubject}
-              onGoToPractice={() => {
-                setTheoryChapter(null);
-                setActiveChapter(theoryChapter);
-                setActiveIdx(0);
-              }}
-            />
+            <Suspense
+              fallback={
+                <div className="flex items-center gap-2 rounded-2xl border border-border bg-card p-8 text-sm text-muted-foreground">
+                  <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                  Loading theory…
+                </div>
+              }
+            >
+              <TheoryReader
+                chapter={theoryChapter}
+                title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
+                subject={theorySubject}
+                onGoToPractice={() => {
+                  setTheoryChapter(null);
+                  setActiveChapter(theoryChapter);
+                  setActiveIdx(0);
+                }}
+              />
+            </Suspense>
           ) : (
             <>
           {error && (
@@ -1309,7 +1337,9 @@ function CaseCard({
         )}
       </div>
 
-      <CaseContextRich content={data.context} className="mt-3" />
+      <Suspense fallback={<p className="mt-3 text-sm text-muted-foreground">Loading case…</p>}>
+        <CaseContextRich content={data.context} className="mt-3" />
+      </Suspense>
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
@@ -1564,7 +1594,11 @@ function EconomicsPracticeAside({
 }) {
   const calc = usePracticeCalcOptional();
   if (!hasExplanation && !calc?.open) return null;
-  return <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>{children}</PracticeRightSlot>;
+  return (
+    <Suspense fallback={null}>
+      <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>{children}</PracticeRightSlot>
+    </Suspense>
+  );
 }
 
 function ExplanationPanels({

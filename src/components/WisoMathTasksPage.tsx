@@ -7,8 +7,11 @@ import {
   loadWisoMathChapterTasks,
   type WisoMathContentLang,
 } from "@/data/wiso-math-chapters";
-import { getWisoMathCourseTheory } from "@/data/wiso-math-course-theory";
-import { getMathCourseTheory } from "@/data/math-course-theory";
+import {
+  getWisoMathCourseTheory,
+  loadWisoMathCourseTheory,
+} from "@/data/wiso-math-course-theory";
+import { getMathCourseTheory, loadMathCourseTheory } from "@/data/math-course-theory";
 
 const LANG_STORAGE_KEY = "wiso.math.contentLang.v1";
 
@@ -46,6 +49,7 @@ export function WisoMathTasksPage() {
 
   const chapters = lang === "en" ? MATH_CHAPTERS : WISO_MATH_CHAPTERS;
   const getTheory = lang === "en" ? getMathCourseTheory : getWisoMathCourseTheory;
+  const loadTheory = lang === "en" ? loadMathCourseTheory : loadWisoMathCourseTheory;
 
   const loadChapterTasks = useMemo(
     () => (num: number) => loadWisoMathChapterTasks(num, lang),
@@ -68,6 +72,7 @@ export function WisoMathTasksPage() {
       chapters={chapters}
       loadChapterTasks={loadChapterTasks}
       getTheory={getTheory}
+      loadTheory={loadTheory}
       storageKey="wiso.math.progress.v1"
       contentLang={lang}
       examLabel="WU WiSo exam"
